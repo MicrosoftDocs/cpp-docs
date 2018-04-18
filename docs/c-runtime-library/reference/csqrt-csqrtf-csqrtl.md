@@ -53,22 +53,22 @@ A complex number.
 
 The square root of *z*. The result is in the right half-plane.
 
-|Input|SEH Exception|`_matherr` Exception|
+|Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND|none|_DOMAIN|
 |- ∞|none|_DOMAIN|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `csqrt` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `csqrt` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **csqrt** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **csqrt** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`csqrt`,               `csqrtf`, `csqrtl`|\<complex.h>|\<ccomplex>|
+|**csqrt**,               **csqrtf**, **csqrtl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

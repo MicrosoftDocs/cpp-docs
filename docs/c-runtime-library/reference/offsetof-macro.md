@@ -42,22 +42,22 @@ Name of the member in the parent data structure for which to determine the offse
 
 ## Return Value
 
-`offsetof` returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.
+**offsetof** returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.
 
 ## Remarks
 
-The `offsetof` macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type **size_t**. You can specify types with the **struct** keyword.
+The **offsetof** macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type **size_t**. You can specify types with the **struct** keyword.
 
 > [!NOTE]
->  `offsetof` is not a function and cannot be described using a C prototype.
+> **offsetof** is not a function and cannot be described using a C prototype.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`offsetof`|\<stddef.h>|
+|**offsetof**|\<stddef.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

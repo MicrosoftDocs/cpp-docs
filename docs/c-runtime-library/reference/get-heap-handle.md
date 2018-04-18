@@ -42,7 +42,7 @@ Use this function if you want to call [HeapSetInformation](http://msdn.microsoft
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_heap_handle`|\<malloc.h>|
+|**_get_heap_handle**|\<malloc.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

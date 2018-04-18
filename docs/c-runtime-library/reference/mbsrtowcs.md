@@ -66,7 +66,7 @@ The **mbsrtowcs** function converts a string of multibyte characters indirectly 
 
 Thus, the wide character string at *wcstr* is null-terminated only if **mbsrtowcs** encounters a multibyte null character during conversion. If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of **mbsrtowcs** is undefined. **mbsrtowcs** is affected by the LC_TYPE category of the current locale.
 
-The **mbsrtowcs** function differs from [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `mbsrlen` instead of `mbslen`, if a subsequent call to **mbsrtowcs** is used instead of `mbstowcs`.
+The **mbsrtowcs** function differs from [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **mbsrlen** instead of **mbslen**, if a subsequent call to **mbsrtowcs** is used instead of **mbstowcs**.
 
 If *wcstr* is not a null pointer, the pointer object pointed to by *mbstr* is assigned a null pointer if conversion stopped because a terminating null character was reached. Otherwise, it is assigned the address just past the last multibyte character converted, if any. This allows a subsequent function call to restart conversion where this call stopped.
 
@@ -78,7 +78,7 @@ In C++, this function has a template overload that invokes the newer, secure cou
 
 ## Exceptions
 
-The **mbsrtowcs** function is multithread safe as long as no function in the current thread calls `setlocale` as long as this function is executing and the *mbstate* argument is not a null pointer.
+The **mbsrtowcs** function is multithread safe as long as no function in the current thread calls **setlocale** as long as this function is executing and the *mbstate* argument is not a null pointer.
 
 ## Requirements
 

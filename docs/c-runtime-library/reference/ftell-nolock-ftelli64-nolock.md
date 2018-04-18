@@ -38,24 +38,24 @@ __int64 _ftelli64_nolock(
 ### Parameters
 
 *stream*<br/>
-Target the `FILE` structure.
+Target the **FILE** structure.
 
 ## Return Value
 
-Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](ftell-ftelli64.md)**.**
+Same as **ftell** and **_ftelli64**. For more information, see [ftell, _ftelli64](ftell-ftelli64.md).
 
 ## Remarks
 
-These functions are non-locking versions of `ftell` and `_ftelli64`, respectively. They are identical to `ftell` and `_ftelli64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+These functions are non-locking versions of **ftell** and **_ftelli64**, respectively. They are identical to **ftell** and **_ftelli64** except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ## Requirements
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|`ftell_nolock`|\<stdio.h>|\<errno.h>|
-|`_ftelli64_nolock`|\<stdio.h>|\<errno.h>|
+|**ftell_nolock**|\<stdio.h>|\<errno.h>|
+|**_ftelli64_nolock**|\<stdio.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

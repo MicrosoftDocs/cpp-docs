@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Converts a string to uppercase, by using the current locale or a specified locale that's passed in. These versions of [_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
->  `_mbsupr_s` and `_mbsupr_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsupr_s** and **_mbsupr_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -105,7 +105,7 @@ These functions validate their parameters. If *str* is a **NULL** pointer, the i
 
 ## Remarks
 
-The `_strupr_s` function converts, in place, each lowercase letter in *str* to uppercase. `_wcsupr_s` is the wide-character version of `_strupr_s`. `_mbsupr_s` is the multi-byte character version of `_strupr_s`.
+The **_strupr_s** function converts, in place, each lowercase letter in *str* to uppercase. **_wcsupr_s** is the wide-character version of **_strupr_s**. **_mbsupr_s** is the multi-byte character version of **_strupr_s**.
 
 The conversion is determined by the **LC_CTYPE** category setting of the locale. Other characters are not affected. For more information on **LC_CTYPE**, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale; the visions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -117,15 +117,15 @@ The debug versions of these functions first fill the buffer with 0xFD. To disabl
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsupr_s`|`_strupr_s`|`_mbsupr_s`|`_wcsupr_s`|
-|`_tcsupr_s_l`|`_strupr_s_l`|`_mbsupr_s_l`|`_wcsupr_s_l`|
+|**_tcsupr_s**|**_strupr_s**|**_mbsupr_s**|**_wcsupr_s**|
+|**_tcsupr_s_l**|**_strupr_s_l**|**_mbsupr_s_l**|**_wcsupr_s_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strupr_s`, `_strupr_s_l`|\<string.h>|
-|`_wcsupr_s`, `_wcsupr_s_l`, `_mbsupr_s`, `_mbsupr_s_l`|\<string.h> or \<wchar.h>|
+|**_strupr_s**, **_strupr_s_l**|\<string.h>|
+|**_wcsupr_s**, **_wcsupr_s_l**, **_mbsupr_s**, **_mbsupr_s_l**|\<string.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

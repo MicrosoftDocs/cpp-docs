@@ -93,7 +93,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 |**_mktemp**|\<io.h>|
 |**_wmktemp**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

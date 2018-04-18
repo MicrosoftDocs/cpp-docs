@@ -46,14 +46,14 @@ Locale to use.
 
 ## Return Value
 
-`_ismbbpunct` returns a nonzero value if the integer *c* is a non-ASCII punctuation symbol. `_ismbbpunct` uses the current locale for any locale-dependent character settings. `_ismbbpunct_l` is identical except that it uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_ismbbpunct** returns a nonzero value if the integer *c* is a non-ASCII punctuation symbol. **_ismbbpunct** uses the current locale for any locale-dependent character settings. **_ismbbpunct_l** is identical except that it uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_ismbbpunct`|\<mbctype.h>|
-|`_ismbbpunct_l`|\<mbctype.h>|
+|**_ismbbpunct**|\<mbctype.h>|
+|**_ismbbpunct_l**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

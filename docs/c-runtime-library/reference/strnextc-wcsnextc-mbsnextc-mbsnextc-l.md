@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Finds the next character in a string.
 
 > [!IMPORTANT]
->  `_mbsnextc` and `_mbsnextc_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnextc** and **_mbsnextc_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -60,7 +60,7 @@ Each of these functions returns the integer value of the next character in *str*
 
 ## Remarks
 
-The `_mbsnextc` function returns the integer value of the next multibyte character in *str*, without advancing the string pointer. `_mbsnextc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
+The **_mbsnextc** function returns the integer value of the next multibyte character in *str*, without advancing the string pointer. **_mbsnextc** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
 
 If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns 0.
 
@@ -70,20 +70,20 @@ If *str* is **NULL**, the invalid parameter handler is invoked, as described in 
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsnextc`|`_strnextc`|`_mbsnextc`|`_wcsnextc`|
+|**_tcsnextc**|**_strnextc**|**_mbsnextc**|**_wcsnextc**|
 
-`_strnextc` and `_wcsnextc` are single-byte-character string and wide-character string versions of `_mbsnextc`. `_wcsnextc` returns the integer value of the next wide character in *str*; `_strnextc` returns the integer value of the next single-byte character in *str*. `_strnextc` and `_wcsnextc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
+**_strnextc** and **_wcsnextc** are single-byte-character string and wide-character string versions of **_mbsnextc**. **_wcsnextc** returns the integer value of the next wide character in *str*; **_strnextc** returns the integer value of the next single-byte character in *str*. **_strnextc** and **_wcsnextc** are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
 
-`_mbsnextc_l` is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_mbsnextc_l** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mbsnextc`|\<mbstring.h>|
-|`_mbsnextc_l`|\<mbstring.h>|
-|`_strnextc`|\<tchar.h>|
-|`_wcsnextc`|\<tchar.h>|
+|**_mbsnextc**|\<mbstring.h>|
+|**_mbsnextc_l**|\<mbstring.h>|
+|**_strnextc**|\<tchar.h>|
+|**_wcsnextc**|\<tchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

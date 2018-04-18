@@ -35,19 +35,19 @@ int _findclose(
 ### Parameters
 
 *handle*<br/>
-Search handle returned by a previous call to `_findfirst`.
+Search handle returned by a previous call to **_findfirst**.
 
 ## Return Value
 
-If successful, `_findclose` returns 0. Otherwise, it returns -1 and sets **errno** to **ENOENT**, indicating that no more matching files could be found.
+If successful, **_findclose** returns 0. Otherwise, it returns -1 and sets **errno** to **ENOENT**, indicating that no more matching files could be found.
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_findclose`|\<io.h>|
+|**_findclose**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

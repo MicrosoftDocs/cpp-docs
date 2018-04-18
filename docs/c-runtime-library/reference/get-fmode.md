@@ -35,7 +35,7 @@ errno_t _get_fmode( 
 ### Parameters
 
 *pmode*<br/>
-A pointer to an integer to be filled with the current default mode: `_O_TEXT` or `_O_BINARY`.
+A pointer to an integer to be filled with the current default mode: **_O_TEXT** or **_O_BINARY**.
 
 ## Return Value
 
@@ -43,15 +43,15 @@ Returns zero if successful; an error code on failure. If *pmode* is **NULL**, th
 
 ## Remarks
 
-The function gets the value of the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as `_open`, `_pipe`, `fopen`, and [freopen](freopen-wfreopen.md).
+The function gets the value of the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as **_open**, **_pipe**, **fopen**, and [freopen](freopen-wfreopen.md).
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_get_fmode`|\<stdlib.h>|\<fcntl.h>|
+|**_get_fmode**|\<stdlib.h>|\<fcntl.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

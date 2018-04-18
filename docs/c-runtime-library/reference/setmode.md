@@ -51,18 +51,18 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_setmode` function sets to *mode* the translation mode of the file given by *fd*. Passing `_O_TEXT` as *mode* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.
+The **_setmode** function sets to *mode* the translation mode of the file given by *fd*. Passing **_O_TEXT** as *mode* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing **_O_BINARY** sets binary (untranslated) mode, in which these translations are suppressed.
 
-You can also pass `_O_U16TEXT`, `_O_U8TEXT`, or `_O_WTEXT` to enable Unicode mode, as demonstrated in the second example later in this document. `_setmode` is typically used to modify the default translation mode of `stdin` and `stdout`, but you can use it on any file. If you apply `_setmode` to the file descriptor for a stream, call `_setmode` before you perform any input or output operations on the stream.
+You can also pass **_O_U16TEXT**, **_O_U8TEXT**, or **_O_WTEXT** to enable Unicode mode, as demonstrated in the second example later in this document. **_setmode** is typically used to modify the default translation mode of **stdin** and **stdout**, but you can use it on any file. If you apply **_setmode** to the file descriptor for a stream, call **_setmode** before you perform any input or output operations on the stream.
 
 > [!CAUTION]
->  If you write data to a file stream, explicitly flush the code by using [fflush](fflush.md) before you use `_setmode` to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
+> If you write data to a file stream, explicitly flush the code by using [fflush](fflush.md) before you use **_setmode** to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
 
 ## Requirements
 
 |Routine|Required header|Optional Headers|
 |-------------|---------------------|----------------------|
-|`_setmode`|\<io.h>|\<fcntl.h>|
+|**_setmode**|\<io.h>|\<fcntl.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

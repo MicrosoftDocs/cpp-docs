@@ -60,13 +60,13 @@ Locale to use.
 
 ## Return Value
 
-`_mbclen` returns 1 or 2, according to whether the multibyte character *c* is 1 or 2 bytes long. There is no error return for `_mbclen`. If *mbstr* is not **NULL**, `mblen` returns the length, in bytes, of the multibyte character. If *mbstr* is **NULL** or it points to the wide-character null character, `mblen` returns 0. If the object that *mbstr* points to does not form a valid multibyte character within the first *count* characters, `mblen` returns -1.
+**_mbclen** returns 1 or 2, according to whether the multibyte character *c* is 1 or 2 bytes long. There is no error return for **_mbclen**. If *mbstr* is not **NULL**, **mblen** returns the length, in bytes, of the multibyte character. If *mbstr* is **NULL** or it points to the wide-character null character, **mblen** returns 0. If the object that *mbstr* points to does not form a valid multibyte character within the first *count* characters, **mblen** returns -1.
 
 ## Remarks
 
-The `_mbclen` function returns the length, in bytes, of the multibyte character *c*. If *c* does not point to the lead byte of a multibyte character as determined by an implicit call to `_ismbblead`, the result of `_mbclen` is unpredictable.
+The **_mbclen** function returns the length, in bytes, of the multibyte character *c*. If *c* does not point to the lead byte of a multibyte character as determined by an implicit call to **_ismbblead**, the result of **_mbclen** is unpredictable.
 
-`mblen` returns the length in bytes of *mbstr* if it is a valid multibyte character and determines multibyte-character validity associated with the code page. `mblen` examines *count* or fewer bytes contained in *mbstr*, but not more than `MB_CUR_MAX` bytes.
+**mblen** returns the length in bytes of *mbstr* if it is a valid multibyte character and determines multibyte-character validity associated with the code page. **mblen** examines *count* or fewer bytes contained in *mbstr*, but not more than **MB_CUR_MAX** bytes.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -74,15 +74,15 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tclen`|Maps to macro or inline function|`_mbclen`|Maps to macro or inline function|
+|**_tclen**|Maps to macro or inline function|**_mbclen**|Maps to macro or inline function|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mbclen`|\<mbstring.h>|
-|`mblen`|\<stdlib.h>|
-|`_mblen_l`|\<stdlib.h>|
+|**_mbclen**|\<mbstring.h>|
+|**mblen**|\<stdlib.h>|
+|**_mblen_l**|\<stdlib.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

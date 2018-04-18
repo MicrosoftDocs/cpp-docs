@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Gets a value from the current environment. These versions of [getenv, _wgetenv](getenv-wgetenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -88,21 +88,21 @@ Also, if the buffer is too small, these functions return **ERANGE**. They do not
 
 ## Remarks
 
-The `getenv_s` function searches the list of environment variables for *varname*. `getenv_s` is not case sensitive in the Windows operating system. `getenv_s` and `_putenv_s` use the copy of the environment that's pointed to by the global variable `_environ` to access the environment. `getenv_s` operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.
+The **getenv_s** function searches the list of environment variables for *varname*. **getenv_s** is not case sensitive in the Windows operating system. **getenv_s** and [_putenv_s](putenv-s-wputenv-s.md) use the copy of the environment that's pointed to by the global variable **_environ** to access the environment. **getenv_s** operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.
 
-`_wgetenv_s` is a wide-character version of `getenv_s`; the argument and return value of `_wgetenv_s` are wide-character strings. The `_wenviron` global variable is a wide-character version of `_environ`.
+**_wgetenv_s** is a wide-character version of **getenv_s**; the argument and return value of **_wgetenv_s** are wide-character strings. The **_wenviron** global variable is a wide-character version of **_environ**.
 
-In an MBCS program (for example, in an SBCS ASCII program), `_wenviron` is initially **NULL** because the environment is composed of multibyte-character strings. Then, on the first call to `_wputenv`, or on the first call to `_wgetenv_s`, if an (MBCS) environment already exists, a corresponding wide-character string environment is created and is then pointed to by `_wenviron`.
+In an MBCS program (for example, in an SBCS ASCII program), **_wenviron** is initially **NULL** because the environment is composed of multibyte-character strings. Then, on the first call to [_wputenv](putenv-wputenv.md), or on the first call to **_wgetenv_s**, if an (MBCS) environment already exists, a corresponding wide-character string environment is created and is then pointed to by **_wenviron**.
 
-Similarly in a Unicode `(_wmain`) program, `_environ` is initially **NULL** because the environment is composed of wide-character strings. Then, on the first call to `_putenv`, or on the first call to `getenv_s` if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by `_environ`.
+Similarly in a Unicode (**_wmain**) program, **_environ** is initially **NULL** because the environment is composed of wide-character strings. Then, on the first call to [_putenv](putenv-wputenv.md), or on the first call to **getenv_s** if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by **_environ**.
 
-When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, the run-time system must maintain both copies, and this causes slower execution time. For example, when you call `_putenv`, a call to `_wputenv` is also executed automatically so that the two environment strings correspond.
+When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, the run-time system must maintain both copies, and this causes slower execution time. For example, when you call **_putenv**, a call to **_wputenv** is also executed automatically so that the two environment strings correspond.
 
 > [!CAUTION]
->  In rare instances, when the run-time system is maintaining both a Unicode version and a multibyte version of the environment, the two environment versions may not correspond exactly. This happens because, although any unique multibyte-character string maps to a unique Unicode string, the mapping from a unique Unicode string to a multibyte-character string is not necessarily unique. For more information, see [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
+> In rare instances, when the run-time system is maintaining both a Unicode version and a multibyte version of the environment, the two environment versions may not correspond exactly. This happens because, although any unique multibyte-character string maps to a unique Unicode string, the mapping from a unique Unicode string to a multibyte-character string is not necessarily unique. For more information, see [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
 
 > [!NOTE]
->  The `_putenv_s` and `_getenv_s` families of functions are not thread-safe. `_getenv_s` could return a string pointer while `_putenv_s` is modifying the string and thereby cause random failures. Make sure that calls to these functions are synchronized.
+> The **_putenv_s** and **_getenv_s** families of functions are not thread-safe. **_getenv_s** could return a string pointer while **_putenv_s** is modifying the string and thereby cause random failures. Make sure that calls to these functions are synchronized.
 
 In C++, use of these functions is simplified by template overloads; the overloads can infer buffer length automatically and thereby eliminate the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -110,16 +110,16 @@ In C++, use of these functions is simplified by template overloads; the overload
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tgetenv_s`|`getenv_s`|`getenv_s`|`_wgetenv_s`|
+|**_tgetenv_s**|**getenv_s**|**getenv_s**|**_wgetenv_s**|
 
-To check or change the value of the `TZ` environment variable, use `getenv_s`, `_putenv`, and `_tzset`, as required. For more information about `TZ`, see [_tzset](tzset.md) and [_daylight, _dstbias, _timezone, and _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+To check or change the value of the **TZ** environment variable, use **getenv_s**, **_putenv**, and **_tzset**, as required. For more information about **TZ**, see [_tzset](tzset.md) and [_daylight, _dstbias, _timezone, and _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`getenv_s`|\<stdlib.h>|
-|`_wgetenv_s`|\<stdlib.h> or \<wchar.h>|
+|**getenv_s**|\<stdlib.h>|
+|**_wgetenv_s**|\<stdlib.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

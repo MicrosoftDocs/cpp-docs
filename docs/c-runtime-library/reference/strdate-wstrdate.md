@@ -56,11 +56,11 @@ Each of these functions returns a pointer to the resulting character string *dat
 
 More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.
 
-The `_strdate` function copies the current system date to the buffer pointed to by *datestr*, formatted `mm`/`dd`/`yy`, where `mm` is two digits representing the month, `dd` is two digits representing the day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least 9 bytes long.
+The **_strdate** function copies the current system date to the buffer pointed to by *datestr*, formatted **mm**/**dd**/**yy**, where **mm** is two digits representing the month, **dd** is two digits representing the day, and **yy** is the last two digits of the year. For example, the string **12/05/99** represents December 5, 1999. The buffer must be at least 9 bytes long.
 
 If *datestr* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
-`_wstrdate` is a wide-character version of `_strdate`; the argument and return value of `_wstrdate` are wide-character strings. These functions behave identically otherwise.
+**_wstrdate** is a wide-character version of **_strdate**; the argument and return value of **_wstrdate** are wide-character strings. These functions behave identically otherwise.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -68,16 +68,16 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstrdate`|`_strdate`|`_strdate`|`_wstrdate`|
+|**_tstrdate**|**_strdate**|**_strdate**|**_wstrdate**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strdate`|\<time.h>|
-|`_wstrdate`|\<time.h> or \<wchar.h>|
+|**_strdate**|\<time.h>|
+|**_wstrdate**|\<time.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

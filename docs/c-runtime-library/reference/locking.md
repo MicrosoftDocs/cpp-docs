@@ -80,7 +80,7 @@ Multiple regions of a file that do not overlap can be locked. A region being unl
 |-------------|---------------------|---------------------|
 |**_locking**|\<io.h> and \<sys/locking.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

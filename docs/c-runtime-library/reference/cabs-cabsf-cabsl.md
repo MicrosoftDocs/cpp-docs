@@ -55,15 +55,15 @@ The absolute value of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `cabs` that take `_Fcomplex` or `_Lcomplex` values, and return **float** or **long** **double** values. In a C program, `cabs` always takes a `_Dcomplex` value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **cabs** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long** **double** values. In a C program, **cabs** always takes a **_Dcomplex** value and returns a **double** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`cabs`,               `cabsf`, `cabsl`|\<complex.h>|\<ccomplex>|
+|**cabs**,               **cabsf**, **cabsl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

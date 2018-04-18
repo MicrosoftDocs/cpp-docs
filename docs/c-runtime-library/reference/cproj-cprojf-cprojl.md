@@ -55,15 +55,15 @@ The projection of *z* on the Reimann sphere.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `cproj` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cproj` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **cproj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cproj** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`cproj`,               `cprojf`, `cprojl`|\<complex.h>|\<ccomplex>|
+|**cproj**,               **cprojf**, **cprojl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

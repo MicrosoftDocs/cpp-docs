@@ -91,22 +91,22 @@ The destination string is always null-terminated (even in the case of an error).
 
 If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then **wcsrtombs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
-If **wcsrtombs_s** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not **NULL**). This occurs even if the *mbstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *mbstr* is **NULL**, *count* is ignored.
+If **wcsrtombs_s** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into *&#42;pReturnValue* (provided *pReturnValue* is not **NULL**). This occurs even if the *mbstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *mbstr* is **NULL**, *count* is ignored.
 
 If **wcsrtombs_s** encounters a wide character it cannot convert to a multibyte character, it puts -1 in *\*pReturnValue*, sets the destination buffer to an empty string, sets **errno** to **EILSEQ**, and returns **EILSEQ**.
 
 If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of **wcsrtombs_s** is undefined. **wcsrtombs_s** is affected by the LC_TYPE category of the current locale.
 
 > [!IMPORTANT]
->  Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of wide characters to convert.
+> Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of wide characters to convert.
 
-The **wcsrtombs_s** function differs from [wcstombs_s, _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to **wcsrtombs_s** were used instead of `wcstombs_s`.
+The **wcsrtombs_s** function differs from [wcstombs_s, _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use **wcsrlen** rather than **wcslen**, if a subsequent call to **wcsrtombs_s** were used instead of **wcstombs_s**.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ## Exceptions
 
-The **wcsrtombs_s** function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the *mbstate* is null.
+The **wcsrtombs_s** function is multithread safe as long as no function in the current thread calls **setlocale** while this function is executing and the *mbstate* is null.
 
 ## Example
 

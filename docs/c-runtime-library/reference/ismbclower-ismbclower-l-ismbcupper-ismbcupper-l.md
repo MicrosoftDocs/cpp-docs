@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Checks whether a multibyte character is lowercase or uppercase.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -56,7 +56,7 @@ Locale to use.
 
 ## Return Value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c*<= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
@@ -66,19 +66,19 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|
-|`_ismbclower`|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
-|`_ismbclower_l`|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
-|`_ismbcupper`|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
-|`_ismbcupper_l`|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
+|**_ismbclower**|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
+|**_ismbclower_l**|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
+|**_ismbcupper**|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
+|**_ismbcupper_l**|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_ismbclower`|\<mbstring.h>|
-|`_ismbclower_l`|\<mbstring.h>|
-|`_ismbcupper`|\<mbstring.h>|
-|`_ismbcupper_l`|\<mbstring.h>|
+|**_ismbclower**|\<mbstring.h>|
+|**_ismbclower_l**|\<mbstring.h>|
+|**_ismbcupper**|\<mbstring.h>|
+|**_ismbcupper_l**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

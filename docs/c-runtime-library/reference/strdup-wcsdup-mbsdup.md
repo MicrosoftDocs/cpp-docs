@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Duplicates strings.
 
 > [!IMPORTANT]
->  `_mbsdup` cannot be used in applications that execute in the                  Windows Runtime. For more information, see                  [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsdup** cannot be used in applications that execute in the                  Windows Runtime. For more information, see                  [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -52,27 +52,27 @@ Each of these functions returns a pointer to the storage location for the copied
 
 ## Remarks
 
-The `_strdup` function calls [malloc](malloc.md) to allocate storage space for a copy of *strSource* and then copies *strSource* to the allocated space.
+The **_strdup** function calls [malloc](malloc.md) to allocate storage space for a copy of *strSource* and then copies *strSource* to the allocated space.
 
-`_wcsdup` and `_mbsdup` are wide-character and multibyte-character versions of `_strdup`. The arguments and return value of `_wcsdup` are wide-character strings; those of `_mbsdup` are multibyte-character strings. These three functions behave identically otherwise.
+**_wcsdup** and **_mbsdup** are wide-character and multibyte-character versions of **_strdup**. The arguments and return value of **_wcsdup** are wide-character strings; those of **_mbsdup** are multibyte-character strings. These three functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsdup`|`_strdup`|`_mbsdup`|`_wcsdup`|
+|**_tcsdup**|**_strdup**|**_mbsdup**|**_wcsdup**|
 
-Because `_strdup` calls `malloc` to allocate storage space for the copy of *strSource*, it is good practice always to release this memory by calling the [free](free.md) routine on the pointer that's returned by the call to `_strdup`.
+Because **_strdup** calls **malloc** to allocate storage space for the copy of *strSource*, it is good practice always to release this memory by calling the [free](free.md) routine on the pointer that's returned by the call to **_strdup**.
 
-If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, `_strdup` and `_wcsdup` are replaced by calls to `_strdup_dbg` and `_wcsdup_dbg` to allow for debugging memory allocations. For more information, see [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md).
+If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, **_strdup** and **_wcsdup** are replaced by calls to **_strdup_dbg** and **_wcsdup_dbg** to allow for debugging memory allocations. For more information, see [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strdup`|\<string.h>|
-|`_wcsdup`|\<string.h> or \<wchar.h>|
-|`_mbsdup`|\<mbstring.h>|
+|**_strdup**|\<string.h>|
+|**_wcsdup**|\<string.h> or \<wchar.h>|
+|**_mbsdup**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

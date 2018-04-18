@@ -43,7 +43,7 @@ intptr_t _cwait(
 Pointer to a buffer where the result code of the specified process will be stored, or NULL.
 
 *procHandle*<br/>
-The handle to the process to wait on (that is, the process that has to terminate before `_cwait` can return).
+The handle to the process to wait on (that is, the process that has to terminate before **_cwait** can return).
 
 *action*<br/>
 NULL: Ignored by Windows operating system applications; for other applications: action code to perform on *procHandle*.
@@ -61,9 +61,9 @@ For more information about these and other return codes, see [errno, _doserrno, 
 
 ## Remarks
 
-The `_cwait` function waits for the termination of the process ID of the specified process that's provided by *procHandle*. The value of *procHandle* that's passed to `_cwait` should be the value that's returned by the call to the [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) function that created the specified process. If the process ID terminates before `_cwait` is called, `_cwait` returns immediately. `_cwait` can be used by any process to wait for any other known process for which a valid handle (*procHandle*) exists.
+The **_cwait** function waits for the termination of the process ID of the specified process that's provided by *procHandle*. The value of *procHandle* that's passed to **_cwait** should be the value that's returned by the call to the [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) function that created the specified process. If the process ID terminates before **_cwait** is called, **_cwait** returns immediately. **_cwait** can be used by any process to wait for any other known process for which a valid handle (*procHandle*) exists.
 
-*termstat* points to a buffer where the return code of the specified process will be stored. The value of *termstat* indicates whether the specified process terminated normally by calling the Windows [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. `ExitProcess` is called internally if the specified process calls `exit` or `_exit`, returns from `main`, or reaches the end of `main`. For more information about the value that's passed back through *termstat*, see [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). If `_cwait` is called by using a NULL value for *termstat*, the return code of the specified process is not stored.
+*termstat* points to a buffer where the return code of the specified process will be stored. The value of *termstat* indicates whether the specified process terminated normally by calling the Windows [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. **ExitProcess** is called internally if the specified process calls **exit** or **_exit**, returns from **main**, or reaches the end of **main**. For more information about the value that's passed back through *termstat*, see [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). If **_cwait** is called by using a NULL value for *termstat*, the return code of the specified process is not stored.
 
 The *action* parameter is ignored by the Windows operating system because parent-child relationships are not implemented in these environments.
 
@@ -73,7 +73,7 @@ Unless *procHandle* is -1 or -2 (handles to the current process or thread), the 
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_cwait`|\<process.h>|\<errno.h>|
+|**_cwait**|\<process.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

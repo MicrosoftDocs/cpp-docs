@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Returns the index of the first character, in a string, that does not belong to a set of characters.
 
 > [!IMPORTANT]
->  `_mbsspn` and `_mbsspn_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsspn** and **_mbsspn_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -66,9 +66,9 @@ Returns an integer value specifying the length of the substring in *str* that co
 
 ## Remarks
 
-The `strspn` function returns the index of the first character in *str* that does not belong to the set of characters in *strCharSet*. The search does not include terminating null characters.
+The **strspn** function returns the index of the first character in *str* that does not belong to the set of characters in *strCharSet*. The search does not include terminating null characters.
 
-`wcsspn` and `_mbsspn` are wide-character and multibyte-character versions of `strspn`. The arguments of `wcsspn` are wide-character strings; those of `_mbsspn` are multibyte-character strings. `_mbsspn` validates its parameters. If *str* or *strCharSet* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `_mbspn` sets **errno** to **EINVAL** and returns 0. `strspn` and `wcsspn` do not validate their parameters. These three functions behave identically otherwise.
+**wcsspn** and **_mbsspn** are wide-character and multibyte-character versions of **strspn**. The arguments of **wcsspn** are wide-character strings; those of **_mbsspn** are multibyte-character strings. **_mbsspn** validates its parameters. If *str* or *strCharSet* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, **_mbspn** sets **errno** to **EINVAL** and returns 0. **strspn** and **wcsspn** do not validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -76,16 +76,16 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsspn`|`strspn`|`_mbsspn`|`wcsspn`|
-|**n/a**|**n/a**|`_mbsspn_l`|**n/a**|
+|**_tcsspn**|**strspn**|**_mbsspn**|**wcsspn**|
+|**n/a**|**n/a**|**_mbsspn_l**|**n/a**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strspn`|\<string.h>|
-|`wcsspn`|\<string.h> or \<wchar.h>|
-|`_mbsspn`, `_mbsspn_l`|\<mbstring.h>|
+|**strspn**|\<string.h>|
+|**wcsspn**|\<string.h> or \<wchar.h>|
+|**_mbsspn**, **_mbsspn_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

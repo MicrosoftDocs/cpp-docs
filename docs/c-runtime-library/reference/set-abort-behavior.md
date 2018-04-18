@@ -48,13 +48,13 @@ The old value of the flags.
 
 ## Remarks
 
-There are two [abort](abort.md) flags: `_WRITE_ABORT_MSG` and `_CALL_REPORTFAULT`. `_WRITE_ABORT_MSG` determines whether a helpful text message is printed when a program is abnormally terminated. The message states that the application has called the [abort](abort.md) function. The default behavior is to print the message. `_CALL_REPORTFAULT`, if set, specifies that a Watson crash dump is generated and reported when [abort](abort.md) is called. By default, crash dump reporting is enabled in non-DEBUG builds.
+There are two [abort](abort.md) flags: **_WRITE_ABORT_MSG** and **_CALL_REPORTFAULT**. **_WRITE_ABORT_MSG** determines whether a helpful text message is printed when a program is abnormally terminated. The message states that the application has called the [abort](abort.md) function. The default behavior is to print the message. **_CALL_REPORTFAULT**, if set, specifies that a Watson crash dump is generated and reported when [abort](abort.md) is called. By default, crash dump reporting is enabled in non-DEBUG builds.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_set_abort_behavior`|\<stdlib.h>|
+|**_set_abort_behavior**|\<stdlib.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

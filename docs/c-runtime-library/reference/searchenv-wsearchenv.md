@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Uses environment paths to search for a file. More secure versions of these functions are available; see [_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -67,13 +67,13 @@ Buffer to store the complete path.
 
 ## Remarks
 
-The `_searchenv` routine searches for the target file in the specified domain. The *varname* variable can be any environment or user-defined variable—for example, `PATH`, `LIB`, or `INCLUDE`—that specifies a list of directory paths. Because `_searchenv` is case-sensitive, *varname* should match the case of the environment variable.
+The **_searchenv** routine searches for the target file in the specified domain. The *varname* variable can be any environment or user-defined variable—for example, **PATH**, **LIB**, or **INCLUDE**—that specifies a list of directory paths. Because **_searchenv** is case-sensitive, *varname* should match the case of the environment variable.
 
 The routine first searches for the file in the current working directory. If it does not find the file, it looks through the directories that are specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *pathname*. If the *filename* file is not found, *pathname* contains an empty null-terminated string.
 
-The *pathname* buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, `_searchenv` might overrun the *pathname* buffer and cause unexpected behavior.
+The *pathname* buffer should be at least **_MAX_PATH** characters long to accommodate the full length of the constructed path name. Otherwise, **_searchenv** might overrun the *pathname* buffer and cause unexpected behavior.
 
-`_wsearchenv` is a wide-character version of `_searchenv`, and the arguments to `_wsearchenv` are wide-character strings. `_wsearchenv` and `_searchenv` behave identically otherwise.
+**_wsearchenv** is a wide-character version of **_searchenv**, and the arguments to **_wsearchenv** are wide-character strings. **_wsearchenv** and **_searchenv** behave identically otherwise.
 
 If *filename* is an empty string, these functions return **ENOENT**.
 
@@ -87,14 +87,14 @@ In C++, these functions have template overloads that invoke the newer, more secu
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tsearchenv`|`_searchenv`|`_searchenv`|`_wsearchenv`|
+|**_tsearchenv**|**_searchenv**|**_searchenv**|**_wsearchenv**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_searchenv`|\<stdlib.h>|
-|`_wsearchenv`|\<stdlib.h> or \<wchar.h>|
+|**_searchenv**|\<stdlib.h>|
+|**_wsearchenv**|\<stdlib.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

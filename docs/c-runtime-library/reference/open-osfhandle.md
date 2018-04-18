@@ -43,11 +43,11 @@ Types of operations allowed.
 
 ## Return Value
 
-If successful, `_open_osfhandle` returns a C run-time file descriptor. Otherwise, it returns -1.
+If successful, **_open_osfhandle** returns a C run-time file descriptor. Otherwise, it returns -1.
 
 ## Remarks
 
-The `_open_osfhandle` function allocates a C run-time file descriptor and associates it with the operating-system file handle specified by *osfhandle*. The *flags* argument is an integer expression formed from one or more of the manifest constants defined in Fcntl.h. When two or more manifest constants are used to form the *flags* argument, the constants are combined with the bitwise-OR operator ( **&#124;** ).
+The **_open_osfhandle** function allocates a C run-time file descriptor and associates it with the operating-system file handle specified by *osfhandle*. The *flags* argument is an integer expression formed from one or more of the manifest constants defined in Fcntl.h. When two or more manifest constants are used to form the *flags* argument, the constants are combined with the bitwise-OR operator ( **&#124;** ).
 
 Fcntl.h defines the following manifest constants:
 
@@ -63,15 +63,15 @@ Opens the file in text (translated) mode.
 **\_O\_WTEXT**
 Opens the file in Unicode (translated UTF-16) mode.
 
-To close a file opened with `_open_osfhandle`, call [\_close](close.md). The underlying OS file handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](fclose-fcloseall.md) on that `FILE *` stream also closes both the file descriptor and the underlying handle. In this case, do not call `_close` on the file descriptor.
+To close a file opened with **_open_osfhandle**, call [\_close](close.md). The underlying OS file handle is also closed by a call to **_close**, so it is not necessary to call the Win32 function **CloseHandle** on the original handle. If the file descriptor is owned by a **FILE &#42;** stream, then calling [fclose](fclose-fcloseall.md) on that **FILE &#42;** stream also closes both the file descriptor and the underlying handle. In this case, do not call **_close** on the file descriptor.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_open_osfhandle`|\<io.h>|
+|**_open_osfhandle**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

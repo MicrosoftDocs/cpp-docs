@@ -48,15 +48,15 @@ The imaginary part of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `cimag` that take `_Fcomplex` or `_Lcomplex` values, and return **float** or **long** **double** values. In a C program, `cimag` always takes a `_Dcomplex` value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long** **double** values. In a C program, **cimag** always takes a **_Dcomplex** value and returns a **double** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`cimag`,               `cimagf`, `cimagl`|\<complex.h>|\<ccomplex>|
+|**cimag**,               **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

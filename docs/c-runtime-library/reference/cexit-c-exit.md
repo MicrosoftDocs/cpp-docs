@@ -33,16 +33,16 @@ void _c_exit( void );
 
 ## Remarks
 
-The `_cexit` function calls, in last-in, first-out (LIFO) order, the functions registered by `atexit` and `_onexit`. Then `_cexit` flushes all I/O buffers and closes all open streams before returning. `_c_exit` is the same as `_exit` but returns to the calling process without processing `atexit` or `_onexit` or flushing stream buffers. The behavior of `exit`, `_exit`, `_cexit`, and `_c_exit` is shown in the following table.
+The **_cexit** function calls, in last-in, first-out (LIFO) order, the functions registered by **atexit** and **_onexit**. Then **_cexit** flushes all I/O buffers and closes all open streams before returning. **_c_exit** is the same as **_exit** but returns to the calling process without processing **atexit** or **_onexit** or flushing stream buffers. The behavior of **exit**, **_exit**, **_cexit**, and **_c_exit** is shown in the following table.
 
 |Function|Behavior|
 |--------------|--------------|
-|`exit`|Performs complete C library termination procedures, terminates process, and exits with supplied status code.|
-|`_exit`|Performs quick C library termination procedures, terminates process, and exits with supplied status code.|
-|`_cexit`|Performs complete C library termination procedures and returns to caller, but does not terminate process.|
-|`_c_exit`|Performs quick C library termination procedures and returns to caller, but does not terminate process.|
+|**exit**|Performs complete C library termination procedures, terminates process, and exits with supplied status code.|
+|**_exit**|Performs quick C library termination procedures, terminates process, and exits with supplied status code.|
+|**_cexit**|Performs complete C library termination procedures and returns to caller, but does not terminate process.|
+|**_c_exit**|Performs quick C library termination procedures and returns to caller, but does not terminate process.|
 
-When you call the `_cexit` or `_c_exit` functions, the destructors for any temporary or automatic objects that exist at the time of the call are not called. An automatic object is an object that is defined in a function where the object is not declared to be static. A temporary object is an object created by the compiler. To destroy an automatic object before calling `_cexit` or `_c_exit`, explicitly call the destructor for the object, as follows:
+When you call the **_cexit** or **_c_exit** functions, the destructors for any temporary or automatic objects that exist at the time of the call are not called. An automatic object is an object that is defined in a function where the object is not declared to be static. A temporary object is an object created by the compiler. To destroy an automatic object before calling **_cexit** or **_c_exit**, explicitly call the destructor for the object, as follows:
 
 ```cpp
 myObject.myClass::~myClass( );
@@ -52,10 +52,10 @@ myObject.myClass::~myClass( );
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_cexit`|\<process.h>|
-|`_c_exit`|\<process.h>|
+|**_cexit**|\<process.h>|
+|**_c_exit**|\<process.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

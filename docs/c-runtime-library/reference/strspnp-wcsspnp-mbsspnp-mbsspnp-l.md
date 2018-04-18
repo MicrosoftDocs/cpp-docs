@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Returns a pointer to the first character in a given string that is not in another given string.
 
 > [!IMPORTANT]
->  `_mbsspnp` and `_mbsspnp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsspnp** and **_mbsspnp_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -63,11 +63,11 @@ Locale to use.
 
 ## Return Value
 
-`_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in *str* that does not belong to the set of characters in *charset*. Each of these functions returns **NULL** if *str* consists entirely of characters from *charset*. For each of these routines, no return value is reserved to indicate an error.
+**_strspnp**, **_wcsspnp**, and **_mbsspnp** return a pointer to the first character in *str* that does not belong to the set of characters in *charset*. Each of these functions returns **NULL** if *str* consists entirely of characters from *charset*. For each of these routines, no return value is reserved to indicate an error.
 
 ## Remarks
 
-The `_mbsspnp` function returns a pointer to the multibyte character that is the first character in *str* that does not belong to the set of characters in *charset*. `_mbsspnp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.
+The **_mbsspnp** function returns a pointer to the multibyte character that is the first character in *str* that does not belong to the set of characters in *charset*. **_mbsspnp** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.
 
 If either *str* or *charset* is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
 
@@ -75,19 +75,19 @@ If either *str* or *charset* is a null pointer, this function invokes the invali
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsspnp`|`_strspnp`|`_mbsspnp`|`_wcsspnp`|
+|**_tcsspnp**|**_strspnp**|**_mbsspnp**|**_wcsspnp**|
 
-`_strspnp` and `_wcsspnp` are single-byte character and wide-character versions of `_mbsspnp`. `_strspnp` and `_wcsspnp` behave identically to `_mbsspnp` otherwise; they are provided only for this mapping and should not be used for any other reason. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
+**_strspnp** and **_wcsspnp** are single-byte character and wide-character versions of **_mbsspnp**. **_strspnp** and **_wcsspnp** behave identically to **_mbsspnp** otherwise; they are provided only for this mapping and should not be used for any other reason. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
 
-`_mbsspnp_l` is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_mbsspnp_l** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mbsspnp`|\<mbstring.h>|
-|`_strspnp`|\<tchar.h>|
-|`_wcsspnp`|\<tchar.h>|
+|**_mbsspnp**|\<mbstring.h>|
+|**_strspnp**|\<tchar.h>|
+|**_wcsspnp**|\<tchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

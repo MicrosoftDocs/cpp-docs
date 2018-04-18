@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorFunc
 
-Designates a function as the handler for reporting run-time error checks (RTCs). This function is deprecated; use `_RTC_SetErrorFuncW` instead.
+Designates a function as the handler for reporting run-time error checks (RTCs). This function is deprecated; use **_RTC_SetErrorFuncW** instead.
 
 ## Syntax
 
@@ -43,13 +43,13 @@ The previously defined error function. If there is no previously defined functio
 
 ## Remarks
 
-Do not use this function; instead, use `_RTC_SetErrorFuncW`. It is retained only for backward compatibility.
+Do not use this function; instead, use **_RTC_SetErrorFuncW**. It is retained only for backward compatibility.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_RTC_SetErrorFunc`|\<rtcapi.h>|
+|**_RTC_SetErrorFunc**|\<rtcapi.h>|
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

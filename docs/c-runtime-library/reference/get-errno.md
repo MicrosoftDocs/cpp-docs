@@ -75,9 +75,9 @@ fyi, ENOENT = 2
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_get_errno`|\<stdlib.h>|\<errno.h>|
+|**_get_errno**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

@@ -70,7 +70,7 @@ Pending exceptions that are disabled are raised when you enable them. This can r
 |--------------|---------------------|
 |**_fpieee_flt**|\<fpieee.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

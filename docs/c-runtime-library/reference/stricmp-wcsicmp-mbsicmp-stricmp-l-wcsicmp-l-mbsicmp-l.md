@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Performs a case-insensitive comparison of strings.
 
 > [!IMPORTANT]
->  `_mbsicmp` and `_mbsicmp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsicmp** and **_mbsicmp_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -77,28 +77,28 @@ The return value indicates the relation of *string1* to *string2* as follows.
 |0|*string1* identical to *string2*|
 |> 0|*string1* greater than *string2*|
 
-On an error, `_mbsicmp` returns `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
+On an error, **_mbsicmp** returns **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The `_stricmp` function ordinally compares *string1* and *string2* after converting each character to lowercase, and returns a value indicating their relationship. `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is only affected by **LC_CTYPE**, which determines which characters are upper and lowercase. The `_stricoll` function compares strings according to both the **LC_CTYPE** and `LC_COLLATE` categories of the locale, which includes both the case and the collation order. For more information about the `LC_COLLATE` category, see [setlocale](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **_stricmp** function ordinally compares *string1* and *string2* after converting each character to lowercase, and returns a value indicating their relationship. **_stricmp** differs from **_stricoll** in that the **_stricmp** comparison is only affected by **LC_CTYPE**, which determines which characters are upper and lowercase. The **_stricoll** function compares strings according to both the **LC_CTYPE** and **LC_COLLATE** categories of the locale, which includes both the case and the collation order. For more information about the **LC_COLLATE** category, see [setlocale](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
->  `_stricmp` is equivalent to `_strcmpi`. They can be used interchangeably but `_stricmp` is the preferred standard.
+> **_stricmp** is equivalent to **_strcmpi**. They can be used interchangeably but **_stricmp** is the preferred standard.
 
-The `_strcmpi` function is equivalent to `_stricmp` and is provided for backward compatibility only.
+The **_strcmpi** function is equivalent to **_stricmp** and is provided for backward compatibility only.
 
-Because `_stricmp` does lowercase comparisons, it may result in unexpected behavior.
+Because **_stricmp** does lowercase comparisons, it may result in unexpected behavior.
 
-To illustrate when case conversion by `_stricmp` affects the outcome of a comparison, assume that you have the two strings JOHNSTON and JOHN_HENRY. The string JOHN_HENRY will be considered less than JOHNSTON because the "_" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
+To illustrate when case conversion by **_stricmp** affects the outcome of a comparison, assume that you have the two strings JOHNSTON and JOHN_HENRY. The string JOHN_HENRY will be considered less than JOHNSTON because the "_" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
 
-If the [strcmp](strcmp-wcscmp-mbscmp.md) function is used instead of `_stricmp`, JOHN_HENRY will be greater than JOHNSTON.
+If the [strcmp](strcmp-wcscmp-mbscmp.md) function is used instead of **_stricmp**, JOHN_HENRY will be greater than JOHNSTON.
 
-`_wcsicmp` and `_mbsicmp` are wide-character and multibyte-character versions of `_stricmp`. The arguments and return value of `_wcsicmp` are wide-character strings; those of `_mbsicmp` are multibyte-character strings. `_mbsicmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise.
+**_wcsicmp** and **_mbsicmp** are wide-character and multibyte-character versions of **_stricmp**. The arguments and return value of **_wcsicmp** are wide-character strings; those of **_mbsicmp** are multibyte-character strings. **_mbsicmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise.
 
-`_wcsicmp` and `wcscmp` behave identically except that `wcscmp` does not convert its arguments to lowercase before comparing them. `_mbsicmp` and `_mbscmp` behave identically except that `_mbscmp` does not convert its arguments to lowercase before comparing them.
+**_wcsicmp** and **wcscmp** behave identically except that **wcscmp** does not convert its arguments to lowercase before comparing them. **_mbsicmp** and **_mbscmp** behave identically except that **_mbscmp** does not convert its arguments to lowercase before comparing them.
 
-You will need to call [setlocale](setlocale-wsetlocale.md) for `_wcsicmp` to work with Latin 1 characters. The C locale is in effect by default, so, for example, ä will not compare equal to Ä. Call `setlocale` with any locale other than the C locale before the call to `_wcsicmp`. The following sample demonstrates how `_wcsicmp` is sensitive to the locale:
+You will need to call [setlocale](setlocale-wsetlocale.md) for **_wcsicmp** to work with Latin 1 characters. The C locale is in effect by default, so, for example, ä will not compare equal to Ä. Call **setlocale** with any locale other than the C locale before the call to **_wcsicmp**. The following sample demonstrates how **_wcsicmp** is sensitive to the locale:
 
 ```C
 // crt_stricmp_locale.c
@@ -114,23 +114,23 @@ int main() {
 }
 ```
 
-An alternative is to call [_create_locale, _wcreate_locale](create-locale-wcreate-locale.md) and pass the returned locale object as a parameter to `_wcsicmp_l`.
+An alternative is to call [_create_locale, _wcreate_locale](create-locale-wcreate-locale.md) and pass the returned locale object as a parameter to **_wcsicmp_l**.
 
-All of these functions validate their parameters. If either *string1* or *string2* are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
+All of these functions validate their parameters. If either *string1* or *string2* are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsicmp`|`_stricmp`|`_mbsicmp`|`_wcsicmp`|
+|**_tcsicmp**|**_stricmp**|**_mbsicmp**|**_wcsicmp**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_stricmp`, `_stricmp_l`|\<string.h>|
-|`_wcsicmp`, `_wcsicmp_l`|\<string.h> or \<wchar.h>|
-|`_mbsicmp`, `_mbsicmp_l`|\<mbstring.h>|
+|**_stricmp**, **_stricmp_l**|\<string.h>|
+|**_wcsicmp**, **_wcsicmp_l**|\<string.h> or \<wchar.h>|
+|**_mbsicmp**, **_mbsicmp_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

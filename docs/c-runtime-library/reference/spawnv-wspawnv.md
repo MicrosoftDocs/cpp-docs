@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Creates and executes a new process.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -51,11 +51,11 @@ Execution mode for the calling process.
 Path of the file to be executed.
 
 *argv*<br/>
-Array of pointers to arguments. The argument *argv*[0] is usually a pointer to a path in real mode or to the program name in protected mode, and *argv*[1] through *argv*[`n`] are pointers to the character strings forming the new argument list. The argument *argv*[`n` +1] must be a **NULL** pointer to mark the end of the argument list.
+Array of pointers to arguments. The argument *argv*[0] is usually a pointer to a path in real mode or to the program name in protected mode, and *argv*[1] through *argv*[**n**] are pointers to the character strings forming the new argument list. The argument *argv*[**n** +1] must be a **NULL** pointer to mark the end of the argument list.
 
 ## Return Value
 
-The return value from a synchronous `_spawnv` or `_wspawnv` (`_P_WAIT` specified for *mode*) is the exit status of the new process. The return value from an asynchronous `_spawnv` or `_wspawnv` (`_P_NOWAIT` or `_P_NOWAITO` specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values.
+The return value from a synchronous **_spawnv** or **_wspawnv** (**_P_WAIT** specified for *mode*) is the exit status of the new process. The return value from an asynchronous **_spawnv** or **_wspawnv** (**_P_NOWAIT** or **_P_NOWAITO** specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the **exit** routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values.
 
 |||
 |-|-|
@@ -71,14 +71,14 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 Each of these functions creates and executes a new process, passing an array of pointers to command-line arguments.
 
-These functions validate their parameters. If either *cmdname* or *argv* is a null pointer, or if *argv* points to null pointer, or `argv[0]` is an empty string, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL**, and return -1. No new process is spawned.
+These functions validate their parameters. If either *cmdname* or *argv* is a null pointer, or if *argv* points to null pointer, or *argv*[0] is an empty string, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL**, and return -1. No new process is spawned.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_spawnv`|\<stdio.h> or \<process.h>|
-|`_wspawnv`|\<stdio.h> or \<wchar.h>|
+|**_spawnv**|\<stdio.h> or \<process.h>|
+|**_wspawnv**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

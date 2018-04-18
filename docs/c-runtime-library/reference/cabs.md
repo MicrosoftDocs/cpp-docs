@@ -39,19 +39,19 @@ Complex number.
 
 ## Return Value
 
-`_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets **errno** to **ERANGE**. You can change error handling with [_matherr](matherr.md).
+**_cabs** returns the absolute value of its argument if successful. On overflow, **_cabs** returns **HUGE_VAL** and sets **errno** to **ERANGE**. You can change error handling with [_matherr](matherr.md).
 
 ## Remarks
 
-The `_cabs` function calculates the absolute value of a complex number, which must be a structure of type [_complex](../../c-runtime-library/standard-types.md). The structure *z* is composed of a real component *x* and an imaginary component *y*. A call to `_cabs` produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.
+The **_cabs** function calculates the absolute value of a complex number, which must be a structure of type [_complex](../../c-runtime-library/standard-types.md). The structure *z* is composed of a real component *x* and an imaginary component *y*. A call to **_cabs** produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_cabs`|\<math.h>|
+|**_cabs**|\<math.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

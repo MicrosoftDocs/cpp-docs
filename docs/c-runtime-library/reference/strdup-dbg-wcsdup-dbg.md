@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strdup_dbg, _wcsdup_dbg
 
-Versions of [_strdup and _wcsdup](strdup-wcsdup-mbsdup.md) that use the debug version of `malloc`.
+Versions of [_strdup and _wcsdup](strdup-wcsdup-mbsdup.md) that use the debug version of **malloc**.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ wchar_t *_wcsdup_dbg(
 Null-terminated source string.
 
 *blockType*<br/>
-Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
+Requested type of memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 *filename*<br/>
 Pointer to name of source file that requested allocation operation or NULL.
@@ -61,23 +61,23 @@ Each of these functions returns a pointer to the storage location for the copied
 
 ## Remarks
 
-The `_strdup_dbg` and `_wcsdup_dbg` functions are identical to `_strdup` and `_wcsdup` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc`, `_malloc_dbg`, to allocate memory for the duplicated string. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](malloc-dbg.md).
+The **_strdup_dbg** and **_wcsdup_dbg** functions are identical to **_strdup** and **_wcsdup** except that, when **_DEBUG** is defined, these functions use the debug version of **malloc**, **_malloc_dbg**, to allocate memory for the duplicated string. For information on the debugging features of **_malloc_dbg**, see [_malloc_dbg](malloc-dbg.md).
 
-You do not need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_strdup` and `_wcsdup` are remapped to `_strdup_dbg` and `_wcsdup_dbg`, respectively, with the *blockType* set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+You do not need to call these functions explicitly in most cases. Instead, you can define the flag **_CRTDBG_MAP_ALLOC**. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_strdup** and **_wcsdup** are remapped to **_strdup_dbg** and **_wcsdup_dbg**, respectively, with the *blockType* set to **_NORMAL_BLOCK**. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsdup_dbg`|`_strdup_dbg`|`_mbsdup`|`_wcsdup_dbg`|
+|**_tcsdup_dbg**|**_strdup_dbg**|**_mbsdup**|**_wcsdup_dbg**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strdup_dbg`, `_wcsdup_dbg`|\<crtdbg.h>|
+|**_strdup_dbg**, **_wcsdup_dbg**|\<crtdbg.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

@@ -109,7 +109,7 @@ When a file is opened by using the **"a"** access type or the **"a+"** access ty
 
 The **"a"** mode does not remove the EOF marker before it appends to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. Before it appends to the file, the **"a+"** mode does remove the EOF marker. After appending, the MS-DOS TYPE command shows all data in the file. The **"a+"** mode is required for appending to a stream file that is terminated with the CTRL+Z EOF marker.
 
-When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file positioning function. The file positioning functions are `fsetpos`, [fseek](fseek-fseeki64.md), and [rewind](rewind.md). When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file positioning function.
+When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file positioning function. The file positioning functions are **fsetpos**, [fseek](fseek-fseeki64.md), and [rewind](rewind.md). When you switch from writing to reading, you must use an intervening call to either **fflush** or to a file positioning function.
 
 In addition to the earlier values, the following characters can be appended to *mode* to specify the translation mode for newline characters.
 
@@ -118,9 +118,9 @@ In addition to the earlier values, the following characters can be appended to *
 **t**|Open in text (translated) mode.
 **b**|Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
 
-In text mode, CTRL+Z is interpreted as an EOF character on input. In files that are opened for reading/writing by using **"a+"**, **fopen** checks for a CTRL+Z at the end of the file and removes it, if it is possible. This is done because using [fseek](fseek-fseeki64.md) and `ftell` to move within a file that ends with CTRL+Z may cause [fseek](fseek-fseeki64.md) to behave incorrectly near the end of the file.
+In text mode, CTRL+Z is interpreted as an EOF character on input. In files that are opened for reading/writing by using **"a+"**, **fopen** checks for a CTRL+Z at the end of the file and removes it, if it is possible. This is done because using [fseek](fseek-fseeki64.md) and **ftell** to move within a file that ends with CTRL+Z may cause [fseek](fseek-fseeki64.md) to behave incorrectly near the end of the file.
 
-In text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).
+In text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **mbtowc** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **wctomb** function).
 
 If **t** or **b** is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If **t** or **b** is prefixed to the argument, the function fails and returns **NULL**.
 
@@ -130,7 +130,7 @@ The following options can be appended to *mode* to specify additional behaviors.
 
 |*mode* modifier|Behavior|
 |-|-|
-**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
 **n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 **N**|Specifies that the file is not inherited by child processes.
 **S**|Specifies that caching is optimized for, but not restricted to, sequential access from disk.
@@ -139,7 +139,7 @@ The following options can be appended to *mode* to specify additional behaviors.
 **D**|Specifies a file as temporary. It is deleted when the last file pointer is closed.
 **ccs=**_encoding_|Specifies the encoded character set to use (one of **UTF-8**, **UTF-16LE**, or **UNICODE**) for this file. Leave unspecified if you want ANSI encoding.
 
-Valid characters for the *mode* string that is used in **fopen** and `_fdopen` correspond to *oflag* arguments that are used in [_open](open-wopen.md) and [_sopen](sopen-wsopen.md), as follows.
+Valid characters for the *mode* string that is used in **fopen** and **_fdopen** correspond to *oflag* arguments that are used in [_open](open-wopen.md) and [_sopen](sopen-wsopen.md), as follows.
 
 |Characters in *mode* string|Equivalent *oflag* value for _open/_sopen|
 |-------------------------------|----------------------------------------------------|
@@ -172,11 +172,11 @@ If you are using **rb** mode, you do not have to port your code, and if you expe
 
 **_wfopen** is a Microsoft extension. For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-The **c**, **n**, **t**, **S**, **R**, **T**, and **D** *mode* options are Microsoft extensions for **fopen** and `_fdopen` and should not be used where ANSI portability is desired.
+The **c**, **n**, **t**, **S**, **R**, **T**, and **D** *mode* options are Microsoft extensions for **fopen** and **_fdopen** and should not be used where ANSI portability is desired.
 
 ## Example 1
 
-The following program opens two files.  It uses `fclose` to close the first file and `_fcloseall` to close all remaining files.
+The following program opens two files.  It uses **fclose** to close the first file and **_fcloseall** to close all remaining files.
 
 ```C
 // crt_fopen.c

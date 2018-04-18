@@ -32,19 +32,19 @@ int _getmaxstdio( void );
 
 ## Return Value
 
-Returns a number that represents the number of simultaneously open files currently permitted at the `stdio` level.
+Returns a number that represents the number of simultaneously open files currently permitted at the **stdio** level.
 
 ## Remarks
 
-Use [_setmaxstdio](setmaxstdio.md) to configure the number of simultaneously open files permitted at the `stdio` level.
+Use [_setmaxstdio](setmaxstdio.md) to configure the number of simultaneously open files permitted at the **stdio** level.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getmaxstdio`|\<stdio.h>|
+|**_getmaxstdio**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

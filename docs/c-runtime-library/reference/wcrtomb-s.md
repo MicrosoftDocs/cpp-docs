@@ -70,13 +70,13 @@ The **wcrtomb_s** function converts a wide character, beginning in the specified
 
 If *mbstate* is null, the internal **mbstate_t** conversion state is used. If the character contained in *wchar* does not have a corresponding multibyte character, the value of *pReturnValue* will be -1 and the function will return the **errno** value of **EILSEQ**.
 
-The **wcrtomb_s** function differs from [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of **wcstombs_s**.
+The **wcrtomb_s** function differs from [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use **wcsrlen** rather than **wcslen**, if a subsequent call to **wcsrtombs_s** were used instead of **wcstombs_s**.
 
 In C++, using this function is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ## Exceptions
 
-The **wcrtomb_s** function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the *mbstate* is null.
+The **wcrtomb_s** function is multithread safe as long as no function in the current thread calls **setlocale** while this function is executing and the *mbstate* is null.
 
 ## Example
 

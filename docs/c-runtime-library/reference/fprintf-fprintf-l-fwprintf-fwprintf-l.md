@@ -54,7 +54,7 @@ int _fwprintf_l(
 ### Parameters
 
 *stream*<br/>
-Pointer to `FILE` structure.
+Pointer to **FILE** structure.
 
 *format*<br/>
 Format-control string.
@@ -67,27 +67,27 @@ The locale to use.
 
 ## Return Value
 
-`fprintf` returns the number of bytes written. `fwprintf` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *stream* or *format* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**. The format string is not checked for valid formatting characters as it is when using `fprintf_s` or `fwprintf_s`.
+**fprintf** returns the number of bytes written. **fwprintf** returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *stream* or *format* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**. The format string is not checked for valid formatting characters as it is when using **fprintf_s** or **fwprintf_s**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 
 ## Remarks
 
-`fprintf` formats and prints a series of characters and values to the output *stream*. Each function *argument* (if any) is converted and output according to the corresponding format specification in *format*. For `fprintf`, the *format* argument has the same syntax and use that it has in `printf`.
+**fprintf** formats and prints a series of characters and values to the output *stream*. Each function *argument* (if any) is converted and output according to the corresponding format specification in *format*. For **fprintf**, the *format* argument has the same syntax and use that it has in **printf**.
 
-`fwprintf` is a wide-character version of `fprintf`; in `fwprintf`, *format* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `fprintf` does not currently support output into a UNICODE stream.
+**fwprintf** is a wide-character version of **fprintf**; in **fwprintf**, *format* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **fprintf** does not currently support output into a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_ftprintf`|`fprintf`|`fprintf`|`fwprintf`|
-|`_ftprintf_l`|`_fprintf_l`|`_fprintf_l`|`_fwprintf_l`|
+|**_ftprintf**|**fprintf**|**fprintf**|**fwprintf**|
+|**_ftprintf_l**|**_fprintf_l**|**_fprintf_l**|**_fwprintf_l**|
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
@@ -95,10 +95,10 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 |Function|Required header|
 |--------------|---------------------|
-|`fprintf`, `_fprintf_l`|\<stdio.h>|
-|`fwprintf`, `_fwprintf_l`|\<stdio.h> or \<wchar.h>|
+|**fprintf**, **_fprintf_l**|\<stdio.h>|
+|**fwprintf**, **_fwprintf_l**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

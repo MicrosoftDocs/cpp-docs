@@ -68,31 +68,31 @@ Error Conditions
 |*mbchar*|*sizeInBytes*|Return value|*pRetValue*|
 |--------------|-------------------|------------------|-----------------|
 |**NULL**|>0|**EINVAL**|not modified|
-|any|>`INT_MAX`|**EINVAL**|not modified|
+|any|>**INT_MAX**|**EINVAL**|not modified|
 |any|too small|**EINVAL**|not modified|
 
-If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `wctomb` returns **EINVAL** and sets **errno** to **EINVAL**.
+If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **wctomb** returns **EINVAL** and sets **errno** to **EINVAL**.
 
 ## Remarks
 
-The `wctomb_s` function converts its *wchar* argument to the corresponding multibyte character and stores the result at *mbchar*. You can call the function from any point in any program.
+The **wctomb_s** function converts its *wchar* argument to the corresponding multibyte character and stores the result at *mbchar*. You can call the function from any point in any program.
 
-If `wctomb_s` converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than `MB_CUR_MAX`) in the wide character into the integer pointed to by *pRetValue*. If *wchar* is the wide-character null character (L'\0'), `wctomb_s` fills *pRetValue* with 1. If the target pointer *mbchar* is NULL, `wctomb_s` puts 0 in *pRetValue*. If the conversion is not possible in the current locale, `wctomb_s` puts -1 in *pRetValue*.
+If **wctomb_s** converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than **MB_CUR_MAX**) in the wide character into the integer pointed to by *pRetValue*. If *wchar* is the wide-character null character (L'\0'), **wctomb_s** fills *pRetValue* with 1. If the target pointer *mbchar* is NULL, **wctomb_s** puts 0 in *pRetValue*. If the conversion is not possible in the current locale, **wctomb_s** puts -1 in *pRetValue*.
 
-`wctomb_s` uses the current locale for locale-dependent information; `_wctomb_s_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**wctomb_s** uses the current locale for locale-dependent information; **_wctomb_s_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`wctomb_s`|\<stdlib.h>|
-|`_wctomb_s_l`|\<stdlib.h>|
+|**wctomb_s**|\<stdlib.h>|
+|**_wctomb_s_l**|\<stdlib.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-This program illustrates the behavior of the `wctomb` function.
+This program illustrates the behavior of the **wctomb** function.
 
 ```cpp
 // crt_wctomb_s.cpp

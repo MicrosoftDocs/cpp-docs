@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Checks the console for keyboard input.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -36,17 +36,17 @@ int _kbhit( void );
 
 ## Return Value
 
-`_kbhit` returns a nonzero value if a key has been pressed. Otherwise, it returns 0.
+**_kbhit** returns a nonzero value if a key has been pressed. Otherwise, it returns 0.
 
 ## Remarks
 
-The `_kbhit` function checks the console for a recent keystroke. If the function returns a nonzero value, a keystroke is waiting in the buffer. The program can then call `_getch` or `_getche` to get the keystroke.
+The **_kbhit** function checks the console for a recent keystroke. If the function returns a nonzero value, a keystroke is waiting in the buffer. The program can then call **_getch** or **_getche** to get the keystroke.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_kbhit`|\<conio.h>|
+|**_kbhit**|\<conio.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

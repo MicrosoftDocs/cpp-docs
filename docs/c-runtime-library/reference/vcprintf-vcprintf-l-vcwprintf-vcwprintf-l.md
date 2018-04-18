@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Writes formatted output to the console by using a pointer to a list of arguments. More secure versions of these functions are available, see [_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l](vcprintf-s-vcprintf-s-l-vcwprintf-s-vcwprintf-s-l.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -69,26 +69,26 @@ The number of characters written, or a negative value if an output error occurs.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats and writes the given data to the console. `_vcwprintf` is the wide-character version of `_vcprintf`. It takes a wide-character string as an argument.
+Each of these functions takes a pointer to an argument list, then formats and writes the given data to the console. **_vcwprintf** is the wide-character version of **_vcprintf**. It takes a wide-character string as an argument.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtcprintf`|`_vcprintf`|`_vcprintf`|`_vcwprintf`|
-|`_vtcprintf_l`|`_vcprintf_l`|`_vcprintf_l`|`_vcwprintf_l`|
+|**_vtcprintf**|**_vcprintf**|**_vcprintf**|**_vcwprintf**|
+|**_vtcprintf_l**|**_vcprintf_l**|**_vcprintf_l**|**_vcwprintf_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`_vcprintf`, `_vcprintf_l`|\<conio.h> and \<stdarg.h>|\<varargs.h>*|
-|`_vcwprintf`, `_vcwprintf_l`|\<conio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**_vcprintf**, **_vcprintf_l**|\<conio.h> and \<stdarg.h>|\<varargs.h>*|
+|**_vcwprintf**, **_vcwprintf_l**|\<conio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 

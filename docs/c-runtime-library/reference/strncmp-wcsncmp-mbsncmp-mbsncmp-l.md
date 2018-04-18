@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Compares up to the specified count of characters of two strings.
 
 > [!IMPORTANT]
->  `_mbsncmp` and `_mbsncmp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncmp** and **_mbsncmp_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -78,34 +78,34 @@ The return value indicates the relation of the substrings of *string1* and *stri
 |0|*string1* substring identical to *string2* substring|
 |> 0|*string1* substring greater than *string2* substring|
 
-On a parameter validation error, `_mbsncmp` and `_mbsncmp_l` return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
+On a parameter validation error, **_mbsncmp** and **_mbsncmp_l** return **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The `strncmp` function performs an ordinal comparison of at most the first *count* characters in *string1* and *string2* and returns a value indicating the relationship between the substrings. `strncmp` is a case-sensitive version of `_strnicmp`. `wcsncmp` and `_mbsncmp` are case-sensitive versions of `_wcsnicmp` and `_mbsnicmp`.
+The **strncmp** function performs an ordinal comparison of at most the first *count* characters in *string1* and *string2* and returns a value indicating the relationship between the substrings. **strncmp** is a case-sensitive version of **_strnicmp**. **wcsncmp** and **_mbsncmp** are case-sensitive versions of **_wcsnicmp** and **_mbsnicmp**.
 
-`wcsncmp` and `_mbsncmp` are wide-character and multibyte-character versions of `strncmp`. The arguments of `wcsncmp` are wide-character strings; those of `_mbsncmp` are multibyte-character strings. `_mbsncmp` recognizes multibyte-character sequences according to a multibyte code page and returns `_NLSCMPERROR` on an error.
+**wcsncmp** and **_mbsncmp** are wide-character and multibyte-character versions of **strncmp**. The arguments of **wcsncmp** are wide-character strings; those of **_mbsncmp** are multibyte-character strings. **_mbsncmp** recognizes multibyte-character sequences according to a multibyte code page and returns **_NLSCMPERROR** on an error.
 
-Also, `_mbsncmp` and `_mbsncmp_l` validate parameters. If *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsncmp` and `_mbsncmp_l` return `_NLSCMPERROR` and set **errno** to **EINVAL**. `strncmp` and `wcsncmp` do not validate their parameters. These functions behave identically otherwise.
+Also, **_mbsncmp** and **_mbsncmp_l** validate parameters. If *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbsncmp** and **_mbsncmp_l** return **_NLSCMPERROR** and set **errno** to **EINVAL**. **strncmp** and **wcsncmp** do not validate their parameters. These functions behave identically otherwise.
 
-The comparison behavior of `_mbsncmp` and `_mbsncmp_l` is affected by the setting of the **LC_CTYPE** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The `_mbsncmp` function uses the current locale for this locale-dependent behavior. The `_mbsncmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to `strncmp`.
+The comparison behavior of **_mbsncmp** and **_mbsncmp_l** is affected by the setting of the **LC_CTYPE** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The **_mbsncmp** function uses the current locale for this locale-dependent behavior. The **_mbsncmp_l** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **strncmp**.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsnccmp`|`strncmp`|`_mbsncmp`|`wcsncmp`|
-|`_tcsncmp`|`strncmp`|`_mbsnbcmp`|`wcsncmp`|
-|`_tccmp`|Maps to macro or inline function|`_mbsncmp`|Maps to macro or inline function|
-|**not applicable**|**not applicable**|`_mbsncmp_l`|**not applicable**|
+|**_tcsnccmp**|**strncmp**|**_mbsncmp**|**wcsncmp**|
+|**_tcsncmp**|**strncmp**|**_mbsnbcmp**|**wcsncmp**|
+|**_tccmp**|Maps to macro or inline function|**_mbsncmp**|Maps to macro or inline function|
+|**not applicable**|**not applicable**|**_mbsncmp_l**|**not applicable**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strncmp`|\<string.h>|
-|`wcsncmp`|\<string.h> or \<wchar.h>|
-|`_mbsncmp`, `_mbsncmp_l`|\<mbstring.h>|
+|**strncmp**|\<string.h>|
+|**wcsncmp**|\<string.h> or \<wchar.h>|
+|**_mbsncmp**, **_mbsncmp_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

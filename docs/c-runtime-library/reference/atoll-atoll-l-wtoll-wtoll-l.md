@@ -53,9 +53,9 @@ Locale to use.
 
 ## Return Value
 
-Each function returns the **long** **long** value that's produced by interpreting the input characters as a number. The return value for `atoll` is 0 if the input cannot be converted to a value of that type.
+Each function returns the **long** **long** value that's produced by interpreting the input characters as a number. The return value for **atoll** is 0 if the input cannot be converted to a value of that type.
 
-For overflow with large positive integral values, `atoll` returns `LLONG_MAX`, and for overflow with large negative integral values, it returns `LLONG_MIN`.
+For overflow with large positive integral values, **atoll** returns **LLONG_MAX**, and for overflow with large negative integral values, it returns **LLONG_MIN**.
 
 In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter that's passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
@@ -65,13 +65,13 @@ These functions convert a character string to a **long** **long** integer value.
 
 The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character might be the null character ('\0' or L'\0') that terminates the string.
 
-The *str* argument to `atoll` has the following form:
+The *str* argument to **atoll** has the following form:
 
 > [*whitespace*] [*sign*] [*digits*]
 
 A *whitespace* consists of space or tab characters, which are ignored; *sign* is either plus (+) or minus (-); and *digits* are one or more digits.
 
-`_wtoll` is identical to `atoll` except that it takes a wide character string as a parameter.
+**_wtoll** is identical to **atoll** except that it takes a wide character string as a parameter.
 
 The versions of these functions that have the **_l** suffix are identical to the versions that don't have it, except that they use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -79,20 +79,20 @@ The versions of these functions that have the **_l** suffix are identical to the
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tstoll`|`atoll`|`atoll`|`_wtoll`|
-|`_tstoll_l`|`_atoll_l`|`_atoll_l`|`_wtoll_l`|
-|`_ttoll`|`_atoll`|`_atoll`|`_wtoll`|
+|**_tstoll**|**atoll**|**atoll**|**_wtoll**|
+|**_tstoll_l**|**_atoll_l**|**_atoll_l**|**_wtoll_l**|
+|**_ttoll**|**_atoll**|**_atoll**|**_wtoll**|
 
 ## Requirements
 
 |Routines|Required header|
 |--------------|---------------------|
-|`atoll`, `_atoll_l`|\<stdlib.h>|
-|`_wtoll`, `_wtoll_l`|\<stdlib.h> or \<wchar.h>|
+|**atoll**, **_atoll_l**|\<stdlib.h>|
+|**_wtoll**, **_wtoll_l**|\<stdlib.h> or \<wchar.h>|
 
 ## Example
 
-This program shows how to use the `atoll` functions to convert numbers stored as strings to numeric values.
+This program shows how to use the **atoll** functions to convert numbers stored as strings to numeric values.
 
 ```C
 // crt_atoll.c

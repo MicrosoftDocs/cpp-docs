@@ -22,10 +22,10 @@ ms.workload: ["cplusplus"]
 ---
 # _strninc, _wcsninc, _mbsninc, _mbsninc_l
 
-Advances a string pointer by `n` characters.
+Advances a string pointer by **n** characters.
 
 > [!IMPORTANT]
->  `_mbsninc` and `_mbsninc_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsninc** and **_mbsninc_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -66,26 +66,26 @@ Each of these routines returns a pointer to *str* after *str* has been increment
 
 ## Remarks
 
-The `_mbsninc` function increments *str* by *count* multibyte characters. `_mbsninc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
+The **_mbsninc** function increments *str* by *count* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsninc`|`_strninc`|`_mbsninc`|`_wcsninc`|
+|**_tcsninc**|**_strninc**|**_mbsninc**|**_wcsninc**|
 
-`_strninc` and `_wcsninc` are single-byte-character string and wide-character string versions of `_mbsninc`. `_wcsninc` and `_strninc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
+**_strninc** and **_wcsninc** are single-byte-character string and wide-character string versions of **_mbsninc**. **_wcsninc** and **_strninc** are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
 
-`_mbsninc_l` is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_mbsninc_l** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mbsninc`|\<mbstring.h>|
-|`_mbsninc_l`|\<mbstring.h>|
-|`_strninc`|\<tchar.h>|
-|`_wcsninc`|\<tchar.h>|
+|**_mbsninc**|\<mbstring.h>|
+|**_mbsninc_l**|\<mbstring.h>|
+|**_strninc**|\<tchar.h>|
+|**_wcsninc**|\<tchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

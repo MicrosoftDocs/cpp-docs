@@ -36,24 +36,24 @@ void setbuf(
 ### Parameters
 
 *stream*
-Pointer to `FILE` structure.
+Pointer to **FILE** structure.
 
 *buffer*
 User-allocated buffer.
 
 ## Remarks
 
-The `setbuf` function controls buffering for *stream*. The *stream* argument must refer to an open file that has not been read or written. If the *buffer* argument is **NULL**, the stream is un-buffered. If not, the buffer must point to a character array of length `BUFSIZ`, where `BUFSIZ` is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The `stderr` stream is un-buffered by default, but you can use `setbuf` to assign buffers to `stderr`.
+The **setbuf** function controls buffering for *stream*. The *stream* argument must refer to an open file that has not been read or written. If the *buffer* argument is **NULL**, the stream is un-buffered. If not, the buffer must point to a character array of length **BUFSIZ**, where **BUFSIZ** is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The **stderr** stream is un-buffered by default, but you can use **setbuf** to assign buffers to **stderr**.
 
-`setbuf` has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. `setbuf` is retained for compatibility with existing code.
+**setbuf** has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. **setbuf** is retained for compatibility with existing code.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`setbuf`|\<stdio.h>|
+|**setbuf**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

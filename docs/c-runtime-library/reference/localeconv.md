@@ -107,7 +107,7 @@ The values for **p_sign_posn** and **n_sign_posn** are interpreted according to 
 |-------------|---------------------|
 |**localeconv**|\<locale.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

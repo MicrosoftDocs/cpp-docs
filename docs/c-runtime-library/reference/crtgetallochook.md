@@ -36,7 +36,7 @@ Returns the currently defined allocation hook function.
 
 ## Remarks
 
-`_CrtGetAllocHook` retrieves the current client-defined application hook function for the C run-time debug library memory allocation process.
+**_CrtGetAllocHook** retrieves the current client-defined application hook function for the C run-time debug library memory allocation process.
 
 For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -44,9 +44,9 @@ For more information about using other hook-capable run-time functions and writi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_CrtGetAllocHook`|\<crtdbg.h>|
+|**_CrtGetAllocHook**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

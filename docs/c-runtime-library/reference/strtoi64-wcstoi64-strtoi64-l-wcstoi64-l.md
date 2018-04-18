@@ -67,9 +67,9 @@ The locale to use.
 
 ## Return Value
 
-`_strtoi64` returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns `_I64_MAX` or `_I64_MIN`. The function will return 0 if no conversion can be performed. `_wcstoi64` returns values analogously to `strtoi64`.
+**_strtoi64** returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns **_I64_MAX** or **_I64_MIN**. The function will return 0 if no conversion can be performed. **_wcstoi64** returns values analogously to **strtoi64**.
 
-`_I64_MAX` and `_I64_MIN` are defined in LIMITS.H.
+**_I64_MAX** and **_I64_MIN** are defined in LIMITS.H.
 
 If *strSource* is **NULL** or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
@@ -77,20 +77,20 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The `_strtoi64` function converts *strSource* to an **__int64**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. `_wcstoi64` is a wide-character version of `_strtoi64`; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+The **_strtoi64** function converts *strSource* to an **__int64**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. **_wcstoi64** is a wide-character version of **_strtoi64**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoi64`|`_strtoi64`|`_strtoi64`|`_wcstoi64`|
-|`_tcstoi64_l`|`_strtoi64_l`|`_strtoi64_l`|`_wcstoi64_l`|
+|**_tcstoi64**|**_strtoi64**|**_strtoi64**|**_wcstoi64**|
+|**_tcstoi64_l**|**_strtoi64_l**|**_strtoi64_l**|**_wcstoi64_l**|
 
-The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource**;* for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoi64_l` and `_wcstoi64_l` are identical to the corresponding function without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource**;* for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; **_strtoi64_l** and **_wcstoi64_l** are identical to the corresponding function without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
-`_strtoi64` expects *strSource* to point to a string of the following form:
+**_strtoi64** expects *strSource* to point to a string of the following form:
 
 > [*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*digits*  &#124; *letters*]
 
@@ -100,10 +100,10 @@ A *whitespace* may consist of space and tab characters, which are ignored; *digi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strtoi64`, `_strtoi64_l`|\<stdlib.h>|
-|`_wcstoi64`, `_wcstoi64_l`|\<stdlib.h> or \<wchar.h>|
+|**_strtoi64**, **_strtoi64_l**|\<stdlib.h>|
+|**_wcstoi64**, **_wcstoi64_l**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

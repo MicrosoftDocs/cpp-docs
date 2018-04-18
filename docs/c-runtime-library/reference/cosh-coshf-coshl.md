@@ -45,7 +45,7 @@ By default, if the result is too large in a **cosh**, **coshf**, or **coshl** ca
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± **QNAN**,**IND**|none|**_DOMAIN**|
+|± **QNAN**, **IND**|none|**_DOMAIN**|
 |*x* ≥ 7.104760e+002|**INEXACT**+**OVERFLOW**|**OVERFLOW**|
 
 ## Remarks

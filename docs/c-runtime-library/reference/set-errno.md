@@ -65,9 +65,9 @@ Oops: Illegal byte sequence
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_set_errno`|\<stdlib.h>|\<errno.h>|
+|**_set_errno**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

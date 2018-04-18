@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Reads formatted data from the console. More secure versions of these functions are available; see [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -67,7 +67,7 @@ The number of fields that were successfully converted and assigned. The return v
 
 ## Remarks
 
-The `_cscanf` function reads data directly from the console into the locations given by *argument*. The [_getche](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf](scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
+The **_cscanf** function reads data directly from the console into the locations given by *argument*. The [_getche](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf](scanf-scanf-l-wscanf-wscanf-l.md) function. While **_cscanf** normally echoes the input character, it does not do so if the last call was to **_ungetch**.
 
 This function validates its parameters. If format is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EOF**.
 
@@ -77,15 +77,15 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |TCHAR.H routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcscanf`|`_cscanf`|`_cscanf`|`_cwscanf`|
-|`_tcscanf_l`|`_cscanf_l`|`_cscanf_l`|`_cwscanf_l`|
+|**_tcscanf**|**_cscanf**|**_cscanf**|**_cwscanf**|
+|**_tcscanf_l**|**_cscanf_l**|**_cscanf_l**|**_cwscanf_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_cscanf`,`_cscanf_l`|\<conio.h>|
-|`_cwscanf`, `_cwscanf_l`|\<conio.h> or \<wchar.h>|
+|**_cscanf**, **_cscanf_l**|\<conio.h>|
+|**_cwscanf**, **_cwscanf_l**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

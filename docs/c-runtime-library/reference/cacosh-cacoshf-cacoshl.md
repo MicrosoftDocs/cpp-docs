@@ -55,15 +55,15 @@ The inverse hyperbolic cosine of *z*, in radians. The result is unbounded and no
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `cacosh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacosh` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **cacosh** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cacosh** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`cacosh`,               `cacoshf`, `cacoshl`|\<complex.h>|\<ccomplex>|
+|**cacosh**,               **cacoshf**, **cacoshl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

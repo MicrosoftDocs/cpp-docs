@@ -39,13 +39,13 @@ File descriptor referring to the open file.
 
 ## Return Value
 
-`_close` returns 0 if the file was successfully closed. A return value of -1 indicates an error.
+**_close** returns 0 if the file was successfully closed. A return value of -1 indicates an error.
 
 ## Remarks
 
-The `_close` function closes the file associated with *fd*.
+The **_close** function closes the file associated with *fd*.
 
-The file descriptor and the underlying OS file handle are closed. Thus, it is not necessary to call `CloseHandle` if the file was originally opened using the Win32 function `CreateFile` and converted to a file descriptor using `_open_osfhandle`.
+The file descriptor and the underlying OS file handle are closed. Thus, it is not necessary to call **CloseHandle** if the file was originally opened using the Win32 function **CreateFile** and converted to a file descriptor using **_open_osfhandle**.
 
 This function validates its parameters. If *fd* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions returns -1 and **errno** is set to **EBADF**.
 
@@ -53,9 +53,9 @@ This function validates its parameters. If *fd* is a bad file descriptor, the in
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_close`|\<io.h>|\<errno.h>|
+|**_close**|\<io.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

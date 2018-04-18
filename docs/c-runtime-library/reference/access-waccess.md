@@ -59,7 +59,7 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-When used with files, the **_access** function determines whether the specified file or directory exists and has the attributes specified by the value of *mode*. When used with directories, **_access** determines only whether the specified directory exists; in [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.
+When used with files, the **_access** function determines whether the specified file or directory exists and has the attributes specified by the value of *mode*. When used with directories, **_access** determines only whether the specified directory exists; in Windows 2000 and later operating systems, all directories have read and write access.
 
 |*mode* value|Checks file for|
 |------------------|---------------------|

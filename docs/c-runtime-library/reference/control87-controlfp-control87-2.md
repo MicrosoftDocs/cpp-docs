@@ -68,7 +68,7 @@ For **__control87_2**, the return value is 1, which indicates success.
 The **_control87** function gets and sets the floating-point control word. The floating-point control word enables the program to change the precision, rounding, and infinity modes in the floating-point math package, depending on the platform. You can also use **_control87** to mask or unmask floating-point exceptions. If the value for *mask* is equal to 0, **_control87** gets the floating-point control word. If *mask* is nonzero, a new value for the control word is set: For any bit that is on (that is, equal to 1) in *mask*, the corresponding bit in *new* is used to update the control word. In other words, **fpcntrl** = ((**fpcntrl** & ~*mask*) &#124; (*new* & *mask*)) where **fpcntrl** is the floating-point control word.
 
 > [!NOTE]
->  By default, the run-time libraries mask all floating-point exceptions.
+> By default, the run-time libraries mask all floating-point exceptions.
 
 **_controlfp** is a platform-independent, portable version of **_control87**. It is nearly identical to the **_control87** function on x86, x64, and ARM platforms. If you are targeting x86, x64, or ARM platforms, use **_control87** or **_controlfp**.
 
@@ -111,9 +111,9 @@ For the **_MCW_EM** mask, clearing the mask sets the exception, which allows the
 |----------|---------------|--------------|---------------|
 |**_MCW_DN** (Denormal control)|0x03000000|**_DN_SAVE**<br /><br /> **_DN_FLUSH**|0x00000000<br /><br /> 0x01000000|
 |**_MCW_EM** (Interrupt exception mask)|0x0008001F|**_EM_INVALID**<br /><br /> **_EM_DENORMAL**<br /><br /> **_EM_ZERODIVIDE**<br /><br /> **_EM_OVERFLOW**<br /><br /> **_EM_UNDERFLOW**<br /><br /> **_EM_INEXACT**|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
-|**_MCW_IC** (Infinity control)<br /><br /> (Not supported on ARM or [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platforms.)|0x00040000|**_IC_AFFINE**<br /><br /> **_IC_PROJECTIVE**|0x00040000<br /><br /> 0x00000000|
+|**_MCW_IC** (Infinity control)<br /><br /> (Not supported on ARM or x64] platforms.)|0x00040000|**_IC_AFFINE**<br /><br /> **_IC_PROJECTIVE**|0x00040000<br /><br /> 0x00000000|
 |**_MCW_RC** (Rounding control)|0x00000300|**_RC_CHOP**<br /><br /> **_RC_UP**<br /><br /> **_RC_DOWN**<br /><br /> **_RC_NEAR**|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
-|**_MCW_PC** (Precision control)<br /><br /> (Not supported on ARM or [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platforms.)|0x00030000|**_PC_24** (24 bits)<br /><br /> **_PC_53** (53 bits)<br /><br /> **_PC_64** (64 bits)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
+|**_MCW_PC** (Precision control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00030000|**_PC_24** (24 bits)<br /><br /> **_PC_53** (53 bits)<br /><br /> **_PC_64** (64 bits)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
 
 ## Requirements
 

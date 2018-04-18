@@ -67,9 +67,9 @@ The locale to use.
 
 ## Return Value
 
-`strtoll` returns the value that's represented in the string *strSource*, except when the representation would cause an overflow—in that case, it returns `LLONG_MAX` or `LLONG_MIN`. The function returns 0 if no conversion can be performed. `wcstoll` returns values analogously to `strtoll`.
+**strtoll** returns the value that's represented in the string *strSource*, except when the representation would cause an overflow—in that case, it returns **LLONG_MAX** or **LLONG_MIN**. The function returns 0 if no conversion can be performed. **wcstoll** returns values analogously to **strtoll**.
 
-`LLONG_MAX` and `LLONG_MIN` are defined in LIMITS.H.
+**LLONG_MAX** and **LLONG_MIN** are defined in LIMITS.H.
 
 If *strSource* is **NULL** or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
@@ -77,20 +77,20 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 
 ## Remarks
 
-The `strtoll` function converts *strSource* to a **long** **long**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*. `wcstoll` is a wide-character version of `strtoll`; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
+The **strtoll** function converts *strSource* to a **long** **long**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*. **wcstoll** is a wide-character version of **strtoll**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoll`|`strtoll`|`strtoll`|`wcstoll`|
-|`_tcstoll_l`|`_strtoll_l`|`_strtoll_l`|`_wcstoll_l`|
+|**_tcstoll**|**strtoll**|**strtoll**|**wcstoll**|
+|**_tcstoll_l**|**_strtoll_l**|**_strtoll_l**|**_wcstoll_l**|
 
-The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; `_strtoll_l` and `_wcstoll_l` are identical to the corresponding functions that don't have the suffix, except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; **_strtoll_l** and **_wcstoll_l** are identical to the corresponding functions that don't have the suffix, except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location that's pointed to by *endptr*.
 
-`strtoll` expects *strSource* to point to a string of the following form:
+**strtoll** expects *strSource* to point to a string of the following form:
 
 > [*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*digits*  &#124; *letters*]
 
@@ -100,8 +100,8 @@ A *whitespace* may consist of space and tab characters, which are ignored; *digi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strtoll`, `_strtoll_l`|\<stdlib.h>|
-|`wcstoll`, `_wcstoll_l`|\<stdlib.h> or \<wchar.h>|
+|**strtoll**, **_strtoll_l**|\<stdlib.h>|
+|**wcstoll**, **_wcstoll_l**|\<stdlib.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

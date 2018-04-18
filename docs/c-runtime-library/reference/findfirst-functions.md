@@ -155,7 +155,7 @@ Unless you have a specific reason to use the versions that specify the time size
 |**_wfindfirst32i64**|\<io.h> or \<wchar.h>|
 |**_wfindfirst64i32**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

@@ -73,9 +73,9 @@ Returns the length of the transformed string, not counting the terminating null 
 
 The **strxfrm** function transforms the string pointed to by *strSource* into a new collated form that is stored in *strDest*. No more than *count* characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's **LC_COLLATE** category setting. For more information on **LC_COLLATE**, see [setlocale](setlocale-wsetlocale.md). **strxfrm** uses the current locale for its locale-dependent behavior; **_strxfrm_l** is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-After the transformation, a call to `strcmp` with the two transformed strings yields results identical to those of a call to `strcoll` applied to the original two strings. As with `strcoll` and `stricoll`, **strxfrm** automatically handles multibyte-character strings as appropriate.
+After the transformation, a call to **strcmp** with the two transformed strings yields results identical to those of a call to **strcoll** applied to the original two strings. As with **strcoll** and **stricoll**, **strxfrm** automatically handles multibyte-character strings as appropriate.
 
-**wcsxfrm** is a wide-character version of **strxfrm**; the string arguments of **wcsxfrm** are wide-character pointers. For **wcsxfrm**, after the string transformation, a call to `wcscmp` with the two transformed strings yields results identical to those of a call to `wcscoll` applied to the original two strings. **wcsxfrm** and **strxfrm** behave identically otherwise. **wcsxfrm** uses the current locale for its locale-dependent behavior; **_wcsxfrm_l** uses the locale passed in instead of the current locale.
+**wcsxfrm** is a wide-character version of **strxfrm**; the string arguments of **wcsxfrm** are wide-character pointers. For **wcsxfrm**, after the string transformation, a call to **wcscmp** with the two transformed strings yields results identical to those of a call to **wcscoll** applied to the original two strings. **wcsxfrm** and **strxfrm** behave identically otherwise. **wcsxfrm** uses the current locale for its locale-dependent behavior; **_wcsxfrm_l** uses the locale passed in instead of the current locale.
 
 These functions validate their parameters. If *strSource* is a null pointer, or *strDest* is a NULL pointer (unless count is zero), or if *count* is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **INT_MAX**.
 
@@ -88,7 +88,7 @@ These functions validate their parameters. If *strSource* is a null pointer, or 
 
 In the "C" locale, the order of the characters in the character set (ASCII character set) is the same as the lexicographic order of the characters. However, in other locales, the order of characters in the character set may differ from the lexicographic character order. For example, in certain European locales, the character 'a' (value 0x61) precedes the character '&\#x00E4;' (value 0xE4) in the character set, but the character 'ä' precedes the character 'a' lexicographically.
 
-In locales for which the character set and the lexicographic character order differ, use **strxfrm** on the original strings and then `strcmp` on the resulting strings to produce a lexicographic string comparison according to the current locale's **LC_COLLATE** category setting. Thus, to compare two strings lexicographically in the above locale, use **strxfrm** on the original strings, then `strcmp` on the resulting strings. Alternately, you can use `strcoll` rather than `strcmp` on the original strings.
+In locales for which the character set and the lexicographic character order differ, use **strxfrm** on the original strings and then **strcmp** on the resulting strings to produce a lexicographic string comparison according to the current locale's **LC_COLLATE** category setting. Thus, to compare two strings lexicographically in the above locale, use **strxfrm** on the original strings, then **strcmp** on the resulting strings. Alternately, you can use **strcoll** rather than **strcmp** on the original strings.
 
 **strxfrm** is basically a wrapper around [LCMapString](http://msdn.microsoft.com/library/windows/desktop/dd318700) with **LCMAP_SORTKEY**.
 
@@ -112,7 +112,7 @@ return( strlen( _string1 ) );
 |**_strxfrm_l**|\<string.h>|
 |**_wcsxfrm_l**|\<string.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

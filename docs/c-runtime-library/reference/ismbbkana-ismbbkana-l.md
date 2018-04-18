@@ -46,14 +46,14 @@ Locale to use.
 
 ## Return Value
 
-`_ismbbkana` returns a nonzero value if the integer *c* is a katakana symbol or 0 if it is not. `_ismbbkana` uses the current locale for locale-dependent character information. `_ismbbkana_l` is identical except that it uses the locale object passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_ismbbkana** returns a nonzero value if the integer *c* is a katakana symbol or 0 if it is not. **_ismbbkana** uses the current locale for locale-dependent character information. **_ismbbkana_l** is identical except that it uses the locale object passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_ismbbkana`|\<mbctype.h>|
-|`_ismbbkana_l`|\<mbctype.h>|
+|**_ismbbkana**|\<mbctype.h>|
+|**_ismbbkana_l**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

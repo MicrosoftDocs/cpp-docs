@@ -91,20 +91,20 @@ Each of these functions returns 0 if the file-status information is obtained. A 
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.
 
-The date stamp on a file can be represented if it is later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use `_stat32` or `_wstat32`, or have defined `_USE_32BIT_TIME_T`, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
+The date stamp on a file can be represented if it is later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use **_stat32** or **_wstat32**, or have defined **_USE_32BIT_TIME_T**, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
 
 ## Remarks
 
-The `_stat` function obtains information about the file or directory specified by *path* and stores it in the structure pointed to by *buffer*. `_stat` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.
+The **_stat** function obtains information about the file or directory specified by *path* and stores it in the structure pointed to by *buffer*. **_stat** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.
 
-`_wstat` is a wide-character version of `_stat`; the *path* argument to `_wstat` is a wide-character string. `_wstat` and `_stat` behave identically except that `_wstat` does not handle multibyte-character strings.
+**_wstat** is a wide-character version of **_stat**; the *path* argument to **_wstat** is a wide-character string. **_wstat** and **_stat** behave identically except that **_wstat** does not handle multibyte-character strings.
 
-Variations of these functions support 32- or 64-bit time types, and 32- or 64-bit file lengths. The first numerical suffix (`32` or `64`) indicates the size of the time type used; the second suffix is either `i32` or `i64`, indicating whether the file size is represented as a 32-bit or 64-bit integer.
+Variations of these functions support 32- or 64-bit time types, and 32- or 64-bit file lengths. The first numerical suffix (**32** or **64**) indicates the size of the time type used; the second suffix is either **i32** or **i64**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
 
-`_stat` is equivalent to `_stat64i32`, and `struct _stat` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_stat` uses a 32-bit time, and `struct _stat` contains a 32-bit time. The same is true for `_stati64`.
+**_stat** is equivalent to **_stat64i32**, and **struct** **_stat** contains a 64-bit time. This is true unless **_USE_32BIT_TIME_T** is defined, in which case the old behavior is in effect; **_stat** uses a 32-bit time, and **struct** **_stat** contains a 32-bit time. The same is true for **_stati64**.
 
 > [!NOTE]
->  `_wstat` does not work with [!INCLUDE[wiprlhext](includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.
+> **_wstat** does not work with Windows Vista symbolic links. In these cases, **_wstat** will always report a file size of 0. **_stat** does work correctly with symbolic links.
 
 This function validates its parameters. If either *path* or *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
@@ -112,51 +112,51 @@ This function validates its parameters. If either *path* or *buffer* is **NULL**
 
 |Functions|_USE_32BIT_TIME_T defined?|Time type|File length type|
 |---------------|------------------------------------|---------------|----------------------|
-|`_stat`, `_wstat`|Not defined|64-bit|32-bit|
-|`_stat`, `_wstat`|Defined|32-bit|32-bit|
-|`_stat32`, `_wstat32`|Not affected by the macro definition|32-bit|32-bit|
-|`_stat64`, `_wstat64`|Not affected by the macro definition|64-bit|64-bit|
-|`_stati64`, `_wstati64`|Not defined|64-bit|64-bit|
-|`_stati64`, `_wstati64`|Defined|32-bit|64-bit|
-|`_stat32i64`, `_wstat32i64`|Not affected by the macro definition|32-bit|64-bit|
-|`_stat64i32`, `_wstat64i32`|Not affected by the macro definition|64-bit|32-bit|
+|**_stat**, **_wstat**|Not defined|64-bit|32-bit|
+|**_stat**, **_wstat**|Defined|32-bit|32-bit|
+|**_stat32**, **_wstat32**|Not affected by the macro definition|32-bit|32-bit|
+|**_stat64**, **_wstat64**|Not affected by the macro definition|64-bit|64-bit|
+|**_stati64**, **_wstati64**|Not defined|64-bit|64-bit|
+|**_stati64**, **_wstati64**|Defined|32-bit|64-bit|
+|**_stat32i64**, **_wstat32i64**|Not affected by the macro definition|32-bit|64-bit|
+|**_stat64i32**, **_wstat64i32**|Not affected by the macro definition|64-bit|32-bit|
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstat`|`_stat`|`_stat`|`_wstat`|
-|`_tstat64`|`_stat64`|`_stat64`|`_wstat64`|
-|`_tstati64`|`_stati64`|`_stati64`|`_wstati64`|
-|`_tstat32i64`|`_stat32i64`|`_stat32i64`|`_wstat32i64`|
-|`_tstat64i32`|`_stat64i32`|`_stat64i32`|`_wstat64i32`|
+|**_tstat**|**_stat**|**_stat**|**_wstat**|
+|**_tstat64**|**_stat64**|**_stat64**|**_wstat64**|
+|**_tstati64**|**_stati64**|**_stati64**|**_wstati64**|
+|**_tstat32i64**|**_stat32i64**|**_stat32i64**|**_wstat32i64**|
+|**_tstat64i32**|**_stat64i32**|**_stat64i32**|**_wstat64i32**|
 
-The `_stat` structure, defined in SYS\STAT.H, includes the following fields.
+The **_stat** structure, defined in SYS\STAT.H, includes the following fields.
 
 |Field||
 |-|-|
-`st_gid`|Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
-`st_atime`|Time of last access of file. Valid on NTFS but not on FAT formatted disk drives.
-`st_ctime`|Time of creation of file. Valid on NTFS but not on FAT formatted disk drives.
-`st_dev`|Drive number of the disk containing the file (same as `st_rdev`).
-`st_ino`|Number of the information node (the `inode`) for the file (UNIX-specific). On UNIX file systems, the `inode` describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same `inode`. The `inode`, and therefore `st_ino`, has no meaning in the FAT, HPFS, or NTFS file systems.
-`st_mode`|Bit mask for file-mode information. The `_S_IFDIR` bit is set if *path* specifies a directory; the `_S_IFREG` bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension.
-`st_mtime`|Time of last modification of file.
-`st_nlink`|Always 1 on non-NTFS file systems.
-`st_rdev`|Drive number of the disk containing the file (same as `st_dev`).
-`st_size`|Size of the file in bytes; a 64-bit integer for variations with the `i64` suffix**.**
-`st_uid`|Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
+**st_gid**|Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
+**st_atime**|Time of last access of file. Valid on NTFS but not on FAT formatted disk drives.
+**st_ctime**|Time of creation of file. Valid on NTFS but not on FAT formatted disk drives.
+**st_dev**|Drive number of the disk containing the file (same as **st_rdev**).
+**st_ino**|Number of the information node (the **inode**) for the file (UNIX-specific). On UNIX file systems, the **inode** describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same **inode**. The **inode**, and therefore **st_ino**, has no meaning in the FAT, HPFS, or NTFS file systems.
+**st_mode**|Bit mask for file-mode information. The **_S_IFDIR** bit is set if *path* specifies a directory; the **_S_IFREG** bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension.
+**st_mtime**|Time of last modification of file.
+**st_nlink**|Always 1 on non-NTFS file systems.
+**st_rdev**|Drive number of the disk containing the file (same as **st_dev**).
+**st_size**|Size of the file in bytes; a 64-bit integer for variations with the **i64** suffix.
+**st_uid**|Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
 
-If *path* refers to a device, the `st_size`, various time fields, `st_dev`, and `st_rdev` fields in the `_stat` structure are meaningless. Because STAT.H uses the [_dev_t](../../c-runtime-library/standard-types.md) type that is defined in TYPES.H, you must include TYPES.H before STAT.H in your code.
+If *path* refers to a device, the **st_size**, various time fields, **st_dev**, and **st_rdev** fields in the **_stat** structure are meaningless. Because STAT.H uses the [_dev_t](../../c-runtime-library/standard-types.md) type that is defined in TYPES.H, you must include TYPES.H before STAT.H in your code.
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`_stat`, `_stat32`, `_stat64`, `_stati64`, `_stat32i64`, `_stat64i32`|\<sys/types.h> followed by \<sys/stat.h>|\<errno.h>|
-|`_wstat`, `_wstat32`, `_wstat64`, `_wstati64`, `_wstat32i64`, `_wstat64i32`|\<sys/types.h> followed by \<sys/stat.h> or \<wchar.h>|\<errno.h>|
+|**_stat**, **_stat32**, **_stat64**, **_stati64**, **_stat32i64**, **_stat64i32**|\<sys/types.h> followed by \<sys/stat.h>|\<errno.h>|
+|**_wstat**, **_wstat32**, **_wstat64**, **_wstati64**, **_wstat32i64**, **_wstat64i32**|\<sys/types.h> followed by \<sys/stat.h> or \<wchar.h>|\<errno.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

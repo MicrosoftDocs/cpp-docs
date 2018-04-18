@@ -77,13 +77,13 @@ The locale to use.
 
 ## Return Value
 
-`_vsprintf_p` and `_vswprintf_p` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.
+**_vsprintf_p** and **_vswprintf_p** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.
 
 ## Remarks
 
 Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
-These functions differ from the `vsprintf_s` and `vswprintf_s` only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+These functions differ from the **vsprintf_s** and **vswprintf_s** only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -93,19 +93,19 @@ If the *buffer* or *format* parameters are NULL pointers, if count is zero, or i
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vstprintf_p`|`_vsprintf_p`|`_vsprintf_p`|`_vswprintf_p`|
-|`_vstprintf_p_l`|`_vsprintf_p_l`|`_vsprintf_p_l`|`_vswprintf_p_l`|
+|**_vstprintf_p**|**_vsprintf_p**|**_vsprintf_p**|**_vswprintf_p**|
+|**_vstprintf_p_l**|**_vsprintf_p_l**|**_vsprintf_p_l**|**_vswprintf_p_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`_vsprintf_p`, `_vsprintf_p_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`_vswprintf_p`, `_vswprintf_p_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**_vsprintf_p**, **_vsprintf_p_l**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

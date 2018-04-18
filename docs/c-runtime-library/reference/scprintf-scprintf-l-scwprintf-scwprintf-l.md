@@ -62,7 +62,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. `_scwprintf` performs the same function for wide characters.
+Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **_scwprintf** performs the same function for wide characters.
 
 If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
@@ -75,23 +75,23 @@ Each *argument* (if any) is converted according to the corresponding format spec
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sctprintf`|`_scprintf`|`_scprintf`|`_scwprintf`|
-|`_sctprintf_l`|`_scprintf_l`|`_scprintf_l`|`_scwprintf_l`|
+|**_sctprintf**|**_scprintf**|**_scprintf**|**_scwprintf**|
+|**_sctprintf_l**|**_scprintf_l**|**_scprintf_l**|**_scwprintf_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_scprintf`, `_scprintf_l`|\<stdio.h>|
-|`_scwprintf`, `_scwprintf_l`|\<stdio.h> or \<wchar.h>|
+|**_scprintf**, **_scprintf_l**|\<stdio.h>|
+|**_scwprintf**, **_scwprintf_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

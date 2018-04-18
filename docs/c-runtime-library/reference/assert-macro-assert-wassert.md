@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # assert Macro, _assert, _wassert
 
-Evaluates an expression and, when the result is `false`, prints a diagnostic message and aborts the program.
+Evaluates an expression and, when the result is **false**, prints a diagnostic message and aborts the program.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ void _wassert(
 ### Parameters
 
 *expression*
-A scalar expression (including pointer expressions) that evaluates to nonzero (`true`) or 0 (`false`).
+A scalar expression (including pointer expressions) that evaluates to nonzero (**true**) or 0 (**false**).
 
 *message*
 The message to display.
@@ -58,33 +58,33 @@ The line number in the source file of the failed assertion.
 
 ## Remarks
 
-The `assert` macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *expression* argument to evaluate to `false` only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro `NDEBUG`. You can turn off the `assert` macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the `assert` macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.
+The **assert** macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *expression* argument to evaluate to **false** only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro **NDEBUG**. You can turn off the **assert** macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the **assert** macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.
 
-The `assert` macro prints a diagnostic message when *expression* evaluates to `false` (0) and calls [abort](abort.md) to terminate program execution. No action is taken if *expression* is `true` (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
+The **assert** macro prints a diagnostic message when *expression* evaluates to **false** (0) and calls [abort](abort.md) to terminate program execution. No action is taken if *expression* is **true** (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
 
 The diagnostic message is printed in wide characters. Thus, it will work as expected even if there are Unicode characters in the expression.
 
-The destination of the diagnostic message depends on the type of application that called the routine. Console applications always receive the message through `stderr`. In a Windows-based application, `assert` calls the Windows [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) function to create a message box to display the message along with an **OK** button. When the user clicks **OK**, the program aborts immediately.
+The destination of the diagnostic message depends on the type of application that called the routine. Console applications always receive the message through **stderr**. In a Windows-based application, **assert** calls the Windows [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) function to create a message box to display the message along with an **OK** button. When the user clicks **OK**, the program aborts immediately.
 
-When the application is linked with a debug version of the run-time libraries, `assert` creates a message box with three buttons: **Abort**, **Retry**, and **Ignore**. If the user clicks **Abort**, the program aborts immediately. If the user clicks **Retry**, the debugger is called and the user can debug the program if just-in-time (JIT) debugging is enabled. If the user clicks **Ignore**, `assert` continues with its normal execution: creating the message box with the **OK** button. Note that clicking **Ignore** when an error condition exists can result in undefined behavior.
+When the application is linked with a debug version of the run-time libraries, **assert** creates a message box with three buttons: **Abort**, **Retry**, and **Ignore**. If the user clicks **Abort**, the program aborts immediately. If the user clicks **Retry**, the debugger is called and the user can debug the program if just-in-time (JIT) debugging is enabled. If the user clicks **Ignore**, **assert** continues with its normal execution: creating the message box with the **OK** button. Note that clicking **Ignore** when an error condition exists can result in undefined behavior.
 
 For more information about CRT debugging, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
 
-The `_assert` and `_wassert` functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We do not recommend that you call these functions directly.
+The **_assert** and **_wassert** functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We do not recommend that you call these functions directly.
 
-The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when `NDEBUG` is not defined. When `NDEBUG` is defined, the macro is available but does not evaluate its argument and has no effect. When it is enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [_ASSERT](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) and [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [_DEBUG](../../c-runtime-library/debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
+The **assert** macro is enabled in both the release and debug versions of the C run-time libraries when **NDEBUG** is not defined. When **NDEBUG** is defined, the macro is available but does not evaluate its argument and has no effect. When it is enabled, the **assert** macro calls **_wassert** for its implementation. Other assertion macros, [_ASSERT](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) and [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [_DEBUG](../../c-runtime-library/debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`assert`, `_wassert`|\<assert.h>|
+|**assert**, **_wassert**|\<assert.h>|
 
-The signature of the `_assert` function is not available in a header file. The signature of the `_wassert` function is only available when the `NDEBUG` macro is not defined.
+The signature of the **_assert** function is not available in a header file. The signature of the **_wassert** function is only available when the **NDEBUG** macro is not defined.
 
 ## Example
 
-In this program, the `analyze_string` function uses the `assert` macro to test several conditions related to string and length. If any of the conditions fails, the program prints a message indicating what caused the failure.
+In this program, the **analyze_string** function uses the **assert** macro to test several conditions related to string and length. If any of the conditions fails, the program prints a message indicating what caused the failure.
 
 ```C
 // crt_assert.c

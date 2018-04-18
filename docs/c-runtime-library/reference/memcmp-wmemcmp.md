@@ -48,7 +48,7 @@ First buffer.
 Second buffer.
 
 *count*<br/>
-Number of characters to compare. (Compares bytes for `memcmp`, wide characters for `wmemcmp`).
+Number of characters to compare. (Compares bytes for **memcmp**, wide characters for **wmemcmp**).
 
 ## Return Value
 
@@ -62,14 +62,14 @@ The return value indicates the relationship between the buffers.
 
 ## Remarks
 
-Compares the first *count* characters of *buffer1* and *buffer2* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as **unsigned** **char** for `memcmp`, and as **wchar_t** for `wmemcmp`.
+Compares the first *count* characters of *buffer1* and *buffer2* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as **unsigned** **char** for **memcmp**, and as **wchar_t** for **wmemcmp**.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`memcmp`|\<memory.h> or \<string.h>|
-|`wmemcmp`|\<wchar.h>|
+|**memcmp**|\<memory.h> or \<string.h>|
+|**wmemcmp**|\<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

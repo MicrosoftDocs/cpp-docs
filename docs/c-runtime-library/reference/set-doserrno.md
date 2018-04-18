@@ -33,7 +33,7 @@ errno_t _set_doserrno( int error_value );
 ### Parameters
 
 *error_value*<br/>
-The new value of `_doserrno`.
+The new value of **_doserrno**.
 
 ## Return Value
 
@@ -47,9 +47,9 @@ Possible values are defined in Errno.h.
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_set_doserrno`|\<stdlib.h>|\<errno.h>|
+|**_set_doserrno**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

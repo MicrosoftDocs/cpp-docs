@@ -66,9 +66,9 @@ For information on **errno** and error codes, see [_doserrno, errno, _sys_errlis
 
 ## Remarks
 
-The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.
+The **printf** function formats and prints a series of characters and values to the standard output stream, **stdout**. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments. **printf** and [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that **printf** writes output to **stdout** rather than to a destination of type **FILE**.
 
-`wprintf` is a wide-character version of `printf`; *format* is a wide-character string. `wprintf` and `printf` behave identically if the stream is opened in ANSI mode. `printf` does not currently support output into a UNICODE stream.
+**wprintf** is a wide-character version of **printf**; *format* is a wide-character string. **wprintf** and **printf** behave identically if the stream is opened in ANSI mode. **printf** does not currently support output into a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -76,9 +76,9 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_unicode defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tprintf`|`printf`|`printf`|`wprintf`|
+|**_tprintf**|**printf**|**printf**|**wprintf**|
 
-The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line:
+The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to **stdout** in order of their appearance. For example, the line:
 
 ```C
 printf("Line one\n\t\tLine two\n");
@@ -91,26 +91,26 @@ Line one
         Line two
 ```
 
-[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (`%`) and are read left to right. When `printf` encounters the first format specification (if any), it converts the value of the first argument after *format* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
+[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (**%**) and are read left to right. When **printf** encounters the first format specification (if any), it converts the value of the first argument after *format* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tprintf`|`printf`|`printf`|`wprintf`|
-|`_tprintf_l`|`_printf_l`|`_printf_l`|`_wprintf_l`|
+|**_tprintf**|**printf**|**printf**|**wprintf**|
+|**_tprintf_l**|**_printf_l**|**_printf_l**|**_wprintf_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`printf`, `_printf_l`|\<stdio.h>|
-|`wprintf`, `_wprintf_l`|\<stdio.h> or \<wchar.h>|
+|**printf**, **_printf_l**|\<stdio.h>|
+|**wprintf**, **_wprintf_l**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

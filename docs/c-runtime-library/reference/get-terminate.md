@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _get_terminate
 
-Returns the termination routine to be called by `terminate`.
+Returns the termination routine to be called by **terminate**.
 
 ## Syntax
 
@@ -38,9 +38,9 @@ Returns a pointer to the function registered by [set_terminate](set-terminate-cr
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_terminate`|\<eh.h>|
+|**_get_terminate**|\<eh.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

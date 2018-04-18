@@ -64,10 +64,10 @@ Sets the first *count* characters of *dest* to the character *c*.
 
 |Routine|Required header|
 |-------------|---------------------|
-|`memset`|\<memory.h> or \<string.h>|
-|`wmemset`|\<wchar.h>|
+|**memset**|\<memory.h> or \<string.h>|
+|**wmemset**|\<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

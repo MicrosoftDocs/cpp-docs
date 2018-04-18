@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Gets the length of a string, by using the current locale or a specified locale. More secure versions of these functions are available; see [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)
 
 > [!IMPORTANT]
->  `_mbslen`, `_mbslen_l`, `_mbstrlen`, and `_mbstrlen_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbslen**, **_mbslen_l**, **_mbstrlen**, and **_mbstrlen_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -62,11 +62,11 @@ Locale to use.
 
 ## Return Value
 
-Each of these functions returns the number of characters in *str*, excluding the terminal **NULL**. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
+Each of these functions returns the number of characters in *str*, excluding the terminal **NULL**. No return value is reserved to indicate an error, except for **_mbstrlen** and **_mbstrlen_l**, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
 
 ## Remarks
 
-`strlen` interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcslen` is a wide-character version of `strlen`; the argument of `wcslen` is a wide-character string and the count of characters is in wide (two-byte) characters. `wcslen` and `strlen` behave identically otherwise.
+**strlen** interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. **wcslen** is a wide-character version of **strlen**; the argument of **wcslen** is a wide-character string and the count of characters is in wide (two-byte) characters. **wcslen** and **strlen** behave identically otherwise.
 
 **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
@@ -74,11 +74,11 @@ Each of these functions returns the number of characters in *str*, excluding the
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcslen`|`strlen`|`strlen`|`wcslen`|
-|`_tcsclen`|`strlen`|`_mbslen`|`wcslen`|
-|`_tcsclen_l`|`strlen`|`_mbslen_l`|`wcslen`|
+|**_tcslen**|**strlen**|**strlen**|**wcslen**|
+|**_tcsclen**|**strlen**|**_mbslen**|**wcslen**|
+|**_tcsclen_l**|**strlen**|**_mbslen_l**|**wcslen**|
 
-`_mbslen` and `_mbslen_l` return the number of multibyte characters in a multibyte-character string but they do not test for multibyte-character validity. `_mbstrlen` and `_mbstrlen_l` test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to `_mbstrlen` or `_mbstrlen_l` contains an invalid multibyte character for the code page, the function returns -1 and sets **errno** to **EILSEQ**.
+**_mbslen** and **_mbslen_l** return the number of multibyte characters in a multibyte-character string but they do not test for multibyte-character validity. **_mbstrlen** and **_mbstrlen_l** test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to **_mbstrlen** or **_mbstrlen_l** contains an invalid multibyte character for the code page, the function returns -1 and sets **errno** to **EILSEQ**.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -86,10 +86,10 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strlen`|\<string.h>|
-|`wcslen`|\<string.h> or \<wchar.h>|
-|`_mbslen`, `_mbslen_l`|\<mbstring.h>|
-|`_mbstrlen`, `_mbstrlen_l`|\<stdlib.h>|
+|**strlen**|\<string.h>|
+|**wcslen**|\<string.h> or \<wchar.h>|
+|**_mbslen**, **_mbslen_l**|\<mbstring.h>|
+|**_mbstrlen**, **_mbstrlen_l**|\<stdlib.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

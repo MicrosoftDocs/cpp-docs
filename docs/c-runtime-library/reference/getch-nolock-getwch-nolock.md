@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Gets a character from the console without echo and without locking the thread.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -40,20 +40,20 @@ Returns the character read. There is no error return.
 
 ## Remarks
 
-`_getch_nolock` and `_getwch_nolock` are identical to `_getch` and `_getchw` except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**_getch_nolock** and **_getwch_nolock** are identical to **_getch** and **_getchw** except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_gettch_nolock`|`_getch_nolock`|`_getch_nolock`|`_getwch_nolock`|
+|**_gettch_nolock**|**_getch_nolock**|**_getch_nolock**|**_getwch_nolock**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getch_nolock`|\<conio.h>|
-|`_getwch_nolock`|\<conio.h> or \<wchar.h>|
+|**_getch_nolock**|\<conio.h>|
+|**_getwch_nolock**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

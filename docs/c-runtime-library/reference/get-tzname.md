@@ -67,7 +67,7 @@ If either *timeZoneName* is **NULL**, or *sizeInBytes* is zero or less than zero
 
 ## Remarks
 
-The `_get_tzname` function retrieves the character string representation of the time zone name or the daylight standard time zone name (DST) into the address of *timeZoneName* depending on the index value, along with the size of the string in *pReturnValue*. If *timeZoneName* is **NULL** and *sizeInBytes* is zero, just the size of the string of either time zone in bytes is returned in *pReturnValue*. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of index have undetermined results.
+The **_get_tzname** function retrieves the character string representation of the time zone name or the daylight standard time zone name (DST) into the address of *timeZoneName* depending on the index value, along with the size of the string in *pReturnValue*. If *timeZoneName* is **NULL** and *sizeInBytes* is zero, just the size of the string of either time zone in bytes is returned in *pReturnValue*. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of index have undetermined results.
 
 ### Index values
 
@@ -77,13 +77,13 @@ The `_get_tzname` function retrieves the character string representation of the 
 |1|Daylight standard time zone name|"PDT"|
 |> 1 or < 0|**errno** set to **EINVAL**|not modified|
 
-Unless the values are explicitly changed during run time, the default values are "PST" and "PDT" respectively.  The sizes of these character arrays are governed by `TZNAME_MAX` value.
+Unless the values are explicitly changed during run time, the default values are "PST" and "PDT" respectively.  The sizes of these character arrays are governed by **TZNAME_MAX** value.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_tzname`|\<time.h>|
+|**_get_tzname**|\<time.h>|
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

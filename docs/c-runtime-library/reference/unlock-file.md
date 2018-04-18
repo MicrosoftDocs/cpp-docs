@@ -39,15 +39,15 @@ File handle.
 
 ## Remarks
 
-The `_unlock_file` function unlocks the file specified by *file*. Unlocking a file allows access to the file by other processes. This function should not be called unless `_lock_file` was previously called on the *file* pointer. Calling `_unlock_file` on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](lock-file.md).
+The **_unlock_file** function unlocks the file specified by *file*. Unlocking a file allows access to the file by other processes. This function should not be called unless **_lock_file** was previously called on the *file* pointer. Calling **_unlock_file** on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](lock-file.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_unlock_file`|\<stdio.h>|
+|**_unlock_file**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

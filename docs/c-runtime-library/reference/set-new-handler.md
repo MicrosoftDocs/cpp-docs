@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _set_new_handler
 
-Transfers control to your error-handling mechanism if the `new` operator fails to allocate memory.
+Transfers control to your error-handling mechanism if the **new** operator fails to allocate memory.
 
 ## Syntax
 
@@ -37,17 +37,17 @@ Pointer to the application-supplied memory handling function. An argument of 0 c
 
 ## Return Value
 
-Returns a pointer to the previous exception handling function registered by `_set_new_handler`, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be **NULL**.
+Returns a pointer to the previous exception handling function registered by **_set_new_handler**, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be **NULL**.
 
 ## Remarks
 
-The C++ `_set_new_handler` function specifies an exception-handling function that gains control if the `new` operator fails to allocate memory. If `new` fails, the run-time system automatically calls the exception-handling function that was passed as an argument to `_set_new_handler`. `_PNH`, defined in New.h, is a pointer to a function that returns type **int** and takes an argument of type **size_t**. Use **size_t** to specify the amount of space to be allocated.
+The C++ **_set_new_handler** function specifies an exception-handling function that gains control if the **new** operator fails to allocate memory. If **new** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **_set_new_handler**. **_PNH**, defined in New.h, is a pointer to a function that returns type **int** and takes an argument of type **size_t**. Use **size_t** to specify the amount of space to be allocated.
 
 There is no default handler.
 
-`_set_new_handler` is essentially a garbage-collection scheme. The run-time system retries allocation each time your function returns a nonzero value and fails if your function returns 0.
+**_set_new_handler** is essentially a garbage-collection scheme. The run-time system retries allocation each time your function returns a nonzero value and fails if your function returns 0.
 
-An occurrence of the `_set_new_handler` function in a program registers the exception-handling function specified in the argument list with the run-time system:
+An occurrence of the **_set_new_handler** function in a program registers the exception-handling function specified in the argument list with the run-time system:
 
 ```cpp
 // set_new_handler1.cpp
@@ -65,7 +65,7 @@ int main( void )
 }
 ```
 
-You can save the function address that was last passed to the `_set_new_handler` function and reinstate it later:
+You can save the function address that was last passed to the **_set_new_handler** function and reinstate it later:
 
 ```cpp
    _PNH old_handler = _set_new_handler( my_handler );
@@ -76,7 +76,7 @@ You can save the function address that was last passed to the `_set_new_handler`
    // . . .
 ```
 
-The C++ [_set_new_mode](set-new-mode.md) function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by `_set_new_handler`. By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `malloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call:
+The C++ [_set_new_mode](set-new-mode.md) function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by **_set_new_handler**. By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **malloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call:
 
 ```cpp
 _set_new_mode(1);
@@ -88,15 +88,15 @@ If a user-defined `operator new` is provided, the new handler functions are not 
 
 For more information, see [new](../../cpp/new-operator-cpp.md) and [delete](../../cpp/delete-operator-cpp.md) in the *C++ Language Reference*.
 
-There is a single `_set_new_handler` handler for all dynamically linked DLLs or executables; even if you call `_set_new_handler` your handler might be replaced by another or that you are replacing a handler set by another DLL or executable.
+There is a single **_set_new_handler** handler for all dynamically linked DLLs or executables; even if you call **_set_new_handler** your handler might be replaced by another or that you are replacing a handler set by another DLL or executable.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_set_new_handler`|\<new.h>|
+|**_set_new_handler**|\<new.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

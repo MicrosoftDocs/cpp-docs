@@ -40,7 +40,7 @@ An integer whose value represents the total number of errors that can be detecte
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_RTC_NumErrors`|\<rtcapi.h>|
+|**_RTC_NumErrors**|\<rtcapi.h>|
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

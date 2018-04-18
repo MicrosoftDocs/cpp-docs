@@ -48,22 +48,22 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The `_unlink` function deletes the file specified by *filename*. `_wunlink` is a wide-character version of `_unlink`; the *filename* argument to `_wunlink` is a wide-character string. These functions behave identically otherwise.
+The **_unlink** function deletes the file specified by *filename*. **_wunlink** is a wide-character version of **_unlink**; the *filename* argument to **_wunlink** is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tunlink`|`_unlink`|`_unlink`|`_wunlink`|
+|**_tunlink**|**_unlink**|**_unlink**|**_wunlink**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_unlink`|\<io.h> and \<stdio.h>|
-|`_wunlink`|\<io.h> or \<wchar.h>|
+|**_unlink**|\<io.h> and \<stdio.h>|
+|**_wunlink**|\<io.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Code Example
 

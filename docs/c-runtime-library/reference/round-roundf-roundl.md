@@ -55,7 +55,7 @@ The **round** functions return a floating-point value that represents the neares
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± **QNAN**,**IND**|none|**_DOMAIN**|
+|± **QNAN**, **IND**|none|**_DOMAIN**|
 
 ## Remarks
 

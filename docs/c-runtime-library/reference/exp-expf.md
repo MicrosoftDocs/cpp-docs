@@ -72,7 +72,7 @@ C++ allows overloading, so you can call overloads of **exp** that take a **float
 |--------------|---------------------|---|
 |**exp**, **expf**, **expl**|\<math.h>|\<cmath> or \<math.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

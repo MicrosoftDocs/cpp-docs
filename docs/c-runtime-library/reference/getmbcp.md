@@ -38,9 +38,9 @@ Returns the current multibyte code page. A return value of 0 indicates that a si
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getmbcp`|\<mbctype.h>|
+|**_getmbcp**|\<mbctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

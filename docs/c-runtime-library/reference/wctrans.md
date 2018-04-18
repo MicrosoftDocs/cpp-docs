@@ -56,9 +56,9 @@ The following pairs of calls have the same behavior in all locales, but it is po
 
 |Routine|Required Header|
 |-------------|---------------------|
-|`wctrans`|\<wctype.h>|
+|**wctrans**|\<wctype.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

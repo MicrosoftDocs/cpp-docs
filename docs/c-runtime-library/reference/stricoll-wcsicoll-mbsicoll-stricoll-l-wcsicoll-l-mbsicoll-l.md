@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Compares strings by using locale-specific information.
 
 > [!IMPORTANT]
->  `_mbsicoll` and `_mbsicoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsicoll** and **_mbsicoll_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -76,31 +76,31 @@ Each of these functions returns a value indicating the relationship of *string1*
 |< 0|*string1* less than *string2*|
 |0|*string1* identical to *string2*|
 |> 0|*string1* greater than *string2*|
-|`_NLSCMPERROR`|An error occurred.|
+|**_NLSCMPERROR**|An error occurred.|
 
-Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either `STRING.H` or `MBSTRING.H`. `_wcsicoll` can fail if either *string1* or *string2* contains wide-character codes outside the domain of the collating sequence. When an error occurs, `_wcsicoll` may set **errno** to **EINVAL**. To check for an error on a call to `_wcsicoll`, set **errno** to 0 and then check **errno** after calling `_wcsicoll`.
+Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, include either \<string.h> or \<mbstring.h>. **_wcsicoll** can fail if either *string1* or *string2* contains wide-character codes outside the domain of the collating sequence. When an error occurs, **_wcsicoll** may set **errno** to **EINVAL**. To check for an error on a call to **_wcsicoll**, set **errno** to 0 and then check **errno** after calling **_wcsicoll**.
 
 ## Remarks
 
 Each of these functions performs a case-insensitive comparison of *string1* and *string2* according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
-`_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is affected by **LC_CTYPE**, whereas the `_stricoll` comparison is according to the **LC_CTYPE** and `LC_COLLATE` categories of the locale. For more information on the `LC_COLLATE` category, see [setlocale](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_stricmp** differs from **_stricoll** in that the **_stricmp** comparison is affected by **LC_CTYPE**, whereas the **_stricoll** comparison is according to the **LC_CTYPE** and **LC_COLLATE** categories of the locale. For more information on the **LC_COLLATE** category, see [setlocale](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* are **NULL** pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
+All of these functions validate their parameters. If either *string1* or *string2* are **NULL** pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsicoll`|`_stricoll`|`_mbsicoll`|`_wcsicoll`|
+|**_tcsicoll**|**_stricoll**|**_mbsicoll**|**_wcsicoll**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_stricoll`, `_stricoll_l`|\<string.h>|
-|`_wcsicoll`, `_wcsicoll_l`|\<wchar.h>, \<string.h>|
-|`_mbsicoll`, `_mbsicoll_l`|\<mbstring.h>|
+|**_stricoll**, **_stricoll_l**|\<string.h>|
+|**_wcsicoll**, **_wcsicoll_l**|\<wchar.h>, \<string.h>|
+|**_mbsicoll**, **_mbsicoll_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

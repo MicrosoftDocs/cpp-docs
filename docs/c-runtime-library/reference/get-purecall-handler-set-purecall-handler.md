@@ -37,27 +37,27 @@ _purecall_handler __cdecl _set_purecall_handler(
 ### Parameters
 
 *function*<br/>
-The function to be called when a pure virtual function is called. A `_purecall_handler` function must have a void return type.
+The function to be called when a pure virtual function is called. A **_purecall_handler** function must have a void return type.
 
 ## Return Value
 
-The previous `_purecall_handler`. Returns **nullptr** if there was no previous handler.
+The previous **_purecall_handler**. Returns **nullptr** if there was no previous handler.
 
 ## Remarks
 
-The `_get_purecall_handler` and `_set_purecall_handler` functions are Microsoft-specific and apply only to C++ code.
+The **_get_purecall_handler** and **_set_purecall_handler** functions are Microsoft-specific and apply only to C++ code.
 
-A call to a pure virtual function is an error because it has no implementation. By default, the compiler generates code to invoke an error handler function when a pure virtual function is called, which terminates the program. You can install your own error handler function for pure virtual function calls, to catch them for debugging or reporting purposes. To use your own error handler, create a function that has the `_purecall_handler` signature, then use `_set_purecall_handler` to make it the current handler.
+A call to a pure virtual function is an error because it has no implementation. By default, the compiler generates code to invoke an error handler function when a pure virtual function is called, which terminates the program. You can install your own error handler function for pure virtual function calls, to catch them for debugging or reporting purposes. To use your own error handler, create a function that has the **_purecall_handler** signature, then use **_set_purecall_handler** to make it the current handler.
 
-Because there is only one `_purecall_handler` for each process, when you call `_set_purecall_handler` it immediately impacts all threads. The last caller on any thread sets the handler.
+Because there is only one **_purecall_handler** for each process, when you call **_set_purecall_handler** it immediately impacts all threads. The last caller on any thread sets the handler.
 
-To restore the default behavior, call `_set_purecall_handler` by using a **nullptr** argument.
+To restore the default behavior, call **_set_purecall_handler** by using a **nullptr** argument.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_purecall_handler`, `_set_purecall_handler`|\<cstdlib> or \<stdlib.h>|
+|**_get_purecall_handler**, **_set_purecall_handler**|\<cstdlib> or \<stdlib.h>|
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

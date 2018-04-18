@@ -54,7 +54,7 @@ int _fwprintf_p_l(
 ### Parameters
 
 *stream*<br/>
-Pointer to the `FILE` structure.
+Pointer to the **FILE** structure.
 
 *format*<br/>
 Format-control string.
@@ -67,18 +67,18 @@ The locale to use.
 
 ## Return Value
 
-`_fprintf_p` and `_fwprintf_p` return the number of characters written or return a negative value when an output error occurs.
+**_fprintf_p** and **_fwprintf_p** return the number of characters written or return a negative value when an output error occurs.
 
 ## Remarks
 
-`_fprintf_p` formats and prints a series of characters and values to the output *stream*. Each function *argument* (if any) is converted and output according to the corresponding format specification in *format*. For `_fprintf_p`, the *format* argument has the same syntax and use that it has in `_printf_p`. These functions support positional parameters, meaning that the order of the parameters used by the format string can be changed. For more information about positional parameters, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+**_fprintf_p** formats and prints a series of characters and values to the output *stream*. Each function *argument* (if any) is converted and output according to the corresponding format specification in *format*. For **_fprintf_p**, the *format* argument has the same syntax and use that it has in **_printf_p**. These functions support positional parameters, meaning that the order of the parameters used by the format string can be changed. For more information about positional parameters, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-`_fwprintf_p` is a wide-character version of `_fprintf_p`; in `_fwprintf_p`, *format* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `_fprintf_p` doesn't currently support output into a UNICODE stream.
+**_fwprintf_p** is a wide-character version of **_fprintf_p**; in **_fwprintf_p**, *format* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **_fprintf_p** doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
 Like the non-secure versions (see [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if either *stream* or *format* is a null pointer or if there are any unknown or badly formed formatting specifiers. If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
@@ -86,8 +86,8 @@ Like the non-secure versions (see [fprintf, _fprintf_l, fwprintf, _fwprintf_l](f
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_ftprintf_p`|`_fprintf_p`|`_fprintf_p`|`_fwprintf_p`|
-|`_ftprintf_p_l`|`_fprintf_p_l`|`_fprintf_p_l`|`_fwprintf_p_l`|
+|**_ftprintf_p**|**_fprintf_p**|**_fprintf_p**|**_fwprintf_p**|
+|**_ftprintf_p_l**|**_fprintf_p_l**|**_fprintf_p_l**|**_fwprintf_p_l**|
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
@@ -95,10 +95,10 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 |Function|Required header|
 |--------------|---------------------|
-|`_fprintf_p`, `_fprintf_p_l`|\<stdio.h>|
-|`_fwprintf_p`, `_fwprintf_p_l`|\<stdio.h> or \<wchar.h>|
+|**_fprintf_p**, **_fprintf_p_l**|\<stdio.h>|
+|**_fwprintf_p**, **_fwprintf_p_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

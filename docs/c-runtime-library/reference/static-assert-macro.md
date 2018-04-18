@@ -66,7 +66,7 @@ int main()
 
 |Macro|Required header|
 |-----------|---------------------|
-|`_STATIC_ASSERT`|\<crtdbg.h>|
+|**_STATIC_ASSERT**|\<crtdbg.h>|
 
 ## See also
 

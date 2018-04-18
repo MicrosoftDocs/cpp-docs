@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 Copies a string. These versions of [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> `_mbscpy_s` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscpy_s** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -87,9 +87,9 @@ Zero if successful; otherwise, an error.
 
 ## Remarks
 
-The `strcpy_s` function copies the contents in the address of *src*, including the terminating null character, to the location that's specified by *dest*. The destination string must be large enough to hold the source string and its terminating null character. The behavior of `strcpy_s` is undefined if the source and destination strings overlap.
+The **strcpy_s** function copies the contents in the address of *src*, including the terminating null character, to the location that's specified by *dest*. The destination string must be large enough to hold the source string and its terminating null character. The behavior of **strcpy_s** is undefined if the source and destination strings overlap.
 
-`wcscpy_s` is the wide-character version of `strcpy_s`, and `_mbscpy_s` is the multibyte-character version. The arguments of `wcscpy_s` are wide-character strings; those of `_mbscpy_s` are multibyte-character strings. These three functions behave identically otherwise.
+**wcscpy_s** is the wide-character version of **strcpy_s**, and **_mbscpy_s** is the multibyte-character version. The arguments of **wcscpy_s** are wide-character strings; those of **_mbscpy_s** are multibyte-character strings. These three functions behave identically otherwise.
 
 If *dest* or *src* is a null pointer, or if the destination string size *dest_size* is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL** when *dest* or *src* is a null pointer, and they return **ERANGE** and set **errno** to **ERANGE** when the destination string is too small.
 
@@ -103,15 +103,15 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscpy_s`|`strcpy_s`|`_mbscpy_s`|`wcscpy_s`|
+|**_tcscpy_s**|**strcpy_s**|**_mbscpy_s**|**wcscpy_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strcpy_s`|\<string.h>|
-|`wcscpy_s`|\<string.h> or \<wchar.h>|
-|`_mbscpy_s`|\<mbstring.h>|
+|**strcpy_s**|\<string.h>|
+|**wcscpy_s**|\<string.h> or \<wchar.h>|
+|**_mbscpy_s**|\<mbstring.h>|
 
 These functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

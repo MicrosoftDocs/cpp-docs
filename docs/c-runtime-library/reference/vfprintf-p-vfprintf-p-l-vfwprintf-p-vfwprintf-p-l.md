@@ -54,7 +54,7 @@ int _vfwprintf_p_l(
 ### Parameters
 
 *stream*<br/>
-Pointer to `FILE` structure.
+Pointer to **FILE** structure.
 
 *format*<br/>
 Format specification.
@@ -69,18 +69,18 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-`_vfprintf_p` and `_vfwprintf_p` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.
+**_vfprintf_p** and **_vfwprintf_p** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats and writes the given data to *stream*. These functions differ from the `_vfprint_s` and `_vfwprint_s` versions only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+Each of these functions takes a pointer to an argument list, then formats and writes the given data to *stream*. These functions differ from the **_vfprint_s** and **_vfwprint_s** versions only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-`_vfwprintf_p` is the wide-character version of `_vprintf_p`; the two functions behave identically if the stream is opened in ANSI mode. `_vprintf_p` doesn't currently support output into a UNICODE stream.
+**_vfwprintf_p** is the wide-character version of **_vprintf_p**; the two functions behave identically if the stream is opened in ANSI mode. **_vprintf_p** doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 If either *stream* or *format* is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
@@ -88,19 +88,19 @@ If either *stream* or *format* is a null pointer, or if the format string contai
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftprintf_p`|`_vfprintf_p`|`_vfprintf_p`|`_vfwprintf_p`|
-|`_vftprintf_p_l`|`_vfprintf_p_l`|`_vfprintf_p_l`|`_vfwprintf_p_l`|
+|**_vftprintf_p**|**_vfprintf_p**|**_vfprintf_p**|**_vfwprintf_p**|
+|**_vftprintf_p_l**|**_vfprintf_p_l**|**_vfprintf_p_l**|**_vfwprintf_p_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`_vfprintf_p`, `_vfprintf_p_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`_vfwprintf_p`, `_vfwprintf_p_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**_vfprintf_p**, **_vfprintf_p_l**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**_vfwprintf_p**, **_vfwprintf_p_l**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

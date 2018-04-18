@@ -48,7 +48,7 @@ Pointer to a buffer containing the absolute or full path name, or NULL.
 Relative path name.
 
 *maxLength*<br/>
-Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (**wchar_t**) for `_wfullpath`.
+Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for **_fullpath** but in wide characters (**wchar_t**) for **_wfullpath**.
 
 ## Return Value
 
@@ -56,7 +56,7 @@ Each of these functions returns a pointer to a buffer containing the absolute pa
 
 ## Remarks
 
-The `_fullpath` function expands the relative path name in *relPath* to its fully qualified or absolute path and stores this name in *absPath*. If *absPath* is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (*relPath*) that include "./" or "../" in their names.
+The **_fullpath** function expands the relative path name in *relPath* to its fully qualified or absolute path and stores this name in *absPath*. If *absPath* is NULL, **malloc** is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike **_makepath**, **_fullpath** can be used to obtain the absolute path name for relative paths (*relPath*) that include "./" or "../" in their names.
 
 For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):
 
@@ -68,9 +68,9 @@ when the absolute path (actual file system location) of the file might be:
 
 `\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h`
 
-`_fullpath` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wfullpath` is a wide-character version of `_fullpath`; the string arguments to `_wfullpath` are wide-character strings. `_wfullpath` and `_fullpath` behave identically except that `_wfullpath` does not handle multibyte-character strings.
+**_fullpath** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **_wfullpath** is a wide-character version of **_fullpath**; the string arguments to **_wfullpath** are wide-character strings. **_wfullpath** and **_fullpath** behave identically except that **_wfullpath** does not handle multibyte-character strings.
 
-If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to `_fullpath` and `_wfullpath` are replaced by calls to `_fullpath_dbg` and `_wfullpath_dbg` to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
+If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are both defined, calls to **_fullpath** and **_wfullpath** are replaced by calls to **_fullpath_dbg** and **_wfullpath_dbg** to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
 
 This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
 
@@ -78,18 +78,18 @@ This function invokes the invalid parameter handler, as described in [Parameter 
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tfullpath`|`_fullpath`|`_fullpath`|`_wfullpath`|
+|**_tfullpath**|**_fullpath**|**_fullpath**|**_wfullpath**|
 
-If the *absPath* buffer is **NULL**, `_fullpath` calls [malloc](malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
+If the *absPath* buffer is **NULL**, **_fullpath** calls [malloc](malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_fullpath`|\<stdlib.h>|
-|`_wfullpath`|\<stdlib.h> or \<wchar.h>|
+|**_fullpath**|\<stdlib.h>|
+|**_wfullpath**|\<stdlib.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

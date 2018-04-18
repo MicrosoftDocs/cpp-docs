@@ -82,7 +82,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 ## Remarks
 
-This function is like `sscanf` except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
+This function is like **sscanf** except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -90,17 +90,17 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sntscanf`|`_snscanf`|`_snscanf`|`_snwscanf`|
-|`_sntscanf_l`|`_snscanf_l`|`_snscanf_l`|`_snwscanf_l`|
+|**_sntscanf**|**_snscanf**|**_snscanf**|**_snwscanf**|
+|**_sntscanf_l**|**_snscanf_l**|**_snscanf_l**|**_snwscanf_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_snscanf`, `_snscanf_l`|\<stdio.h>|
-|`_snwscanf`, `_snwscanf_l`|\<stdio.h> or \<wchar.h>|
+|**_snscanf**, **_snscanf_l**|\<stdio.h>|
+|**_snwscanf**, **_snwscanf_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

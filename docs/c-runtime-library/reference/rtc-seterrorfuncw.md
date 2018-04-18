@@ -43,11 +43,11 @@ The previously defined error function; or **NULL** if there is no previously def
 
 ## Remarks
 
-In new code, use only `_RTC_SetErrorFuncW`. `_RTC_SetErrorFunc` is only included in the library for backward compatibility.
+In new code, use only **_RTC_SetErrorFuncW**. **_RTC_SetErrorFunc** is only included in the library for backward compatibility.
 
-The `_RTC_SetErrorFuncW` callback applies only to the component that it was linked in, but not globally.
+The **_RTC_SetErrorFuncW** callback applies only to the component that it was linked in, but not globally.
 
-Make sure that the address that you pass to `_RTC_SetErrorFuncW` is that of a valid error handling function.
+Make sure that the address that you pass to **_RTC_SetErrorFuncW** is that of a valid error handling function.
 
 If an error has been assigned a type of -1 by using [_RTC_SetErrorType](rtc-seterrortype.md), the error handling function is not called.
 
@@ -80,7 +80,7 @@ For an example that shows how to use **_RTC_error_fnW**, see [Native Run-Time Ch
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_RTC_SetErrorFuncW`|\<rtcapi.h>|
+|**_RTC_SetErrorFuncW**|\<rtcapi.h>|
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

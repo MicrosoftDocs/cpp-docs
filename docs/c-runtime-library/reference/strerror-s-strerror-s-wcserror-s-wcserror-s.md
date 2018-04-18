@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
-Get a system error message (`strerror_s`, `_wcserror_s`) or print a user-supplied error message (`_strerror_s`, `__wcserror_s`). These are versions of [strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Get a system error message (**strerror_s**, **_wcserror_s**) or print a user-supplied error message (**_strerror_s**, **__wcserror_s**). These are versions of [strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -96,7 +96,7 @@ Zero if successful, an error code on failure.
 
 ## Remarks
 
-The `strerror_s` function maps *errnum* to an error-message string, returning the string in *buffer*. `_strerror_s` doesn't take the error number; it uses the current value of **errno** to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The **strerror_s** function maps *errnum* to an error-message string, returning the string in *buffer*. **_strerror_s** doesn't take the error number; it uses the current value of **errno** to determine the appropriate message. Neither **strerror_s** nor **_strerror_s** actually prints the message: For that, you need to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
 if (( _access( "datafile",2 )) == -1 )
@@ -106,17 +106,17 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-If *strErrMsg* is **NULL**, `_strerror_s` returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then `_strerror_s` returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is **NULL**, **_strerror_s** returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then **_strerror_s** returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
 
 These functions truncate the error message if its length exceeds *numberOfElements* -1. The resulting string in *buffer* is always null-terminated.
 
-The actual error number for `_strerror_s` is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. `_strerror_s` accesses the appropriate error message by using the **errno** value as an index to the variable `_sys_errlist`. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array. To produce accurate results, call `_strerror_s` immediately after a library routine returns with an error. Otherwise, subsequent calls to `strerror_s` or `_strerror_s` can overwrite the **errno** value.
+The actual error number for **_strerror_s** is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **_strerror_s** accesses the appropriate error message by using the **errno** value as an index to the variable **_sys_errlist**. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the **_sys_errlist** array. To produce accurate results, call **_strerror_s** immediately after a library routine returns with an error. Otherwise, subsequent calls to **strerror_s** or **_strerror_s** can overwrite the **errno** value.
 
-`_wcserror_s` and `__wcserror_s` are wide-character versions of `strerror_s` and `_strerror_s`, respectively.
+**_wcserror_s** and **__wcserror_s** are wide-character versions of **strerror_s** and **_strerror_s**, respectively.
 
 These functions validate their parameters. If buffer is **NULL** or if the size parameter is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return **EINVAL** and set **errno** to **EINVAL**.
 
-`_strerror_s`, `_wcserror_s`, and `__wcserror_s` are not part of the ANSI definition but are instead Microsoft extensions to it. Do not use them where portability is desired; for ANSI compatibility, use `strerror_s` instead.
+**_strerror_s**, **_wcserror_s**, and **__wcserror_s** are not part of the ANSI definition but are instead Microsoft extensions to it. Do not use them where portability is desired; for ANSI compatibility, use **strerror_s** instead.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -126,16 +126,16 @@ The debug versions of these functions first fill the buffer with 0xFD. To disabl
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcserror_s`|`strerror_s`|`strerror_s`|`_wcserror_s`|
+|**_tcserror_s**|**strerror_s**|**strerror_s**|**_wcserror_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strerror_s`, `_strerror_s`|\<string.h>|
-|`_wcserror_s`, `__wcserror_s`|\<string.h> or \<wchar.h>|
+|**strerror_s**, **_strerror_s**|\<string.h>|
+|**_wcserror_s**, **__wcserror_s**|\<string.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

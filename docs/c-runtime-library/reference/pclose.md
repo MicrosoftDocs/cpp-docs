@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Waits for a new command processor and closes the stream on the associated pipe.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -38,23 +38,23 @@ FILE *stream
 ### Parameters
 
 *stream*<br/>
-Return value from the previous call to `_popen`.
+Return value from the previous call to **_popen**.
 
 ## Return Value
 
-Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for `_cwait`, except the low-order and high-order bytes are swapped. If stream is **NULL**, `_pclose` sets **errno** to **EINVAL** and returns -1.
+Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for **_cwait**, except the low-order and high-order bytes are swapped. If stream is **NULL**, **_pclose** sets **errno** to **EINVAL** and returns -1.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `_pclose` function looks up the process ID of the command processor (Cmd.exe) started by the associated `_popen` call, executes a [_cwait](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
+The **_pclose** function looks up the process ID of the command processor (Cmd.exe) started by the associated **_popen** call, executes a [_cwait](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_pclose`|\<stdio.h>|
+|**_pclose**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

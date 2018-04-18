@@ -51,9 +51,9 @@ Pointer to a user-supplied routine that compares two array elements and returns 
 
 ## Remarks
 
-The `qsort` function implements a quick-sort algorithm to sort an array of *number* elements, each of *width* bytes. The argument *base* is a pointer to the base of the array to be sorted. `qsort` overwrites this array by using the sorted elements.
+The **qsort** function implements a quick-sort algorithm to sort an array of *number* elements, each of *width* bytes. The argument *base* is a pointer to the base of the array to be sorted. **qsort** overwrites this array by using the sorted elements.
 
-`qsort` calls the *compare* routine one or more times during the sort, and passes pointers to two array elements on each call.
+**qsort** calls the *compare* routine one or more times during the sort, and passes pointers to two array elements on each call.
 
 ```C
 compare( (void *) & elem1, (void *) & elem2 );
@@ -63,9 +63,9 @@ The routine compares the elements and returns one of the following values.
 
 |Compare function return value|Description|
 |-----------------------------------|-----------------|
-|< 0|`elem1` less than `elem2`|
-|0|`elem1` equivalent to `elem2`|
-|> 0|`elem1` greater than `elem2`|
+|< 0|**elem1** less than **elem2**|
+|0|**elem1** equivalent to **elem2**|
+|> 0|**elem1** greater than **elem2**|
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
@@ -75,7 +75,7 @@ This function validates its parameters. If *compare* or *number* is **NULL**, or
 
 |Routine|Required header|
 |-------------|---------------------|
-|`qsort`|\<stdlib.h> and \<search.h>|
+|**qsort**|\<stdlib.h> and \<search.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

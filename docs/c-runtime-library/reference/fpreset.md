@@ -42,7 +42,7 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 |--------------|---------------------|
 |**_fpreset**|\<float.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

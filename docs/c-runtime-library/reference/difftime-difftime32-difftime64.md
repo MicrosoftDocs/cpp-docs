@@ -42,15 +42,15 @@ Beginning time.
 
 ## Return Value
 
-`difftime` returns the elapsed time in seconds, from *timeStart* to *timeEnd*. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
+**difftime** returns the elapsed time in seconds, from *timeStart* to *timeEnd*. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
 
 ## Remarks
 
-The `difftime` function computes the difference between the two supplied time values *timeStart* and *timeEnd*.
+The **difftime** function computes the difference between the two supplied time values *timeStart* and *timeEnd*.
 
-The time value supplied must fit within the range of `time_t`. `time_t` is a 64-bit value. Thus, the end of the range was extended from 23:59:59 January 18, 2038, UTC to 23:59:59, December 31, 3000. The lower range of `time_t` is still midnight, January 1, 1970.
+The time value supplied must fit within the range of **time_t**. **time_t** is a 64-bit value. Thus, the end of the range was extended from 23:59:59 January 18, 2038, UTC to 23:59:59, December 31, 3000. The lower range of **time_t** is still midnight, January 1, 1970.
 
-`difftime` is an inline function that evaluates to either `_difftime32` or `_difftime64` depending on whether `_USE_32BIT_TIME_T` is defined. _difftime32 and _difftime64 can be used directly to force the use of a particular size of the time type.
+**difftime** is an inline function that evaluates to either **_difftime32** or **_difftime64** depending on whether **_USE_32BIT_TIME_T** is defined. _difftime32 and _difftime64 can be used directly to force the use of a particular size of the time type.
 
 These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return 0 and set **errno** to **EINVAL**.
 
@@ -58,11 +58,11 @@ These functions validate their parameters. If either of the parameters is zero o
 
 |Routine|Required header|
 |-------------|---------------------|
-|`difftime`|\<time.h>|
-|`_difftime32`|\<time.h>|
-|`_difftime64`|\<time.h>|
+|**difftime**|\<time.h>|
+|**_difftime32**|\<time.h>|
+|**_difftime64**|\<time.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

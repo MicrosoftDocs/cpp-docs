@@ -35,23 +35,23 @@ int _fclose_nolock(
 ### Parameters
 
 *stream*<br/>
-Pointer to the `FILE` structure.
+Pointer to the **FILE** structure.
 
 ## Return Value
 
-`fclose` returns 0 if the stream is successfully closed. Returns **EOF** to indicate an error.
+**fclose** returns 0 if the stream is successfully closed. Returns **EOF** to indicate an error.
 
 ## Remarks
 
-This functions is a non-locking version of `fclose`. It is identical except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+This functions is a non-locking version of **fclose**. It is identical except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_fclose_nolock`|\<stdio.h>|
+|**_fclose_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

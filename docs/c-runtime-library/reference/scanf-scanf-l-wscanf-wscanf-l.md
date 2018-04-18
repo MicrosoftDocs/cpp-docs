@@ -68,12 +68,12 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 
 ## Remarks
 
-The `scanf` function reads data from the standard input stream `stdin` and writes the data into the location given by *argument*. Each *argument* must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying takes place between strings that overlap, the behavior is undefined.
+The **scanf** function reads data from the standard input stream **stdin** and writes the data into the location given by *argument*. Each *argument* must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  When reading a string with `scanf`, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) or [fgets](fgets-fgetws.md).
+> When reading a string with **scanf**, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) or [fgets](fgets-fgetws.md).
 
-`wscanf` is a wide-character version of `scanf`; the *format* argument to `wscanf` is a wide-character string. `wscanf` and `scanf` behave identically if the stream is opened in ANSI mode. `scanf` doesn't currently support input from a UNICODE stream.
+**wscanf** is a wide-character version of **scanf**; the *format* argument to **wscanf** is a wide-character string. **wscanf** and **scanf** behave identically if the stream is opened in ANSI mode. **scanf** doesn't currently support input from a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -81,8 +81,8 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tscanf`|`scanf`|`scanf`|`wscanf`|
-|`_tscanf_l`|`_scanf_l`|`_scanf_l`|`_wscanf_l`|
+|**_tscanf**|**scanf**|**scanf**|**wscanf**|
+|**_tscanf_l**|**_scanf_l**|**_scanf_l**|**_wscanf_l**|
 
 For more information, see [Format Specification Fields — scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
@@ -90,10 +90,10 @@ For more information, see [Format Specification Fields — scanf functions and w
 
 |Routine|Required header|
 |-------------|---------------------|
-|`scanf`, `_scanf_l`|\<stdio.h>|
-|`wscanf`, `_wscanf_l`|\<stdio.h> or \<wchar.h>|
+|**scanf**, **_scanf_l**|\<stdio.h>|
+|**wscanf**, **_wscanf_l**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

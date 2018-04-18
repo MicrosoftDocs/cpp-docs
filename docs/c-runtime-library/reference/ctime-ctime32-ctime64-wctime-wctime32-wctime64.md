@@ -89,7 +89,7 @@ These functions validate their parameters. If *sourceTime* is a null pointer, or
 |**_wctime32**|\<time.h> or \<wchar.h>|
 |**_wctime64**|\<time.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

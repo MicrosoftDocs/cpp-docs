@@ -36,7 +36,7 @@ Returns the current client-defined reporting function.
 
 ## Remarks
 
-`_CrtGetReportHook` allows an application to retrieve the current reporting function for the C run-time debug library reporting process.
+**_CrtGetReportHook** allows an application to retrieve the current reporting function for the C run-time debug library reporting process.
 
 For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -44,9 +44,9 @@ For more information about using other hook-capable run-time functions and writi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_CrtGetReportHook`|\<crtdbg.h>|
+|**_CrtGetReportHook**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 
@@ -54,7 +54,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-For a sample of how to use `_CrtSetReportHook`, see [report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
+For a sample of how to use **_CrtSetReportHook**, see [report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
 
 ## See also
 

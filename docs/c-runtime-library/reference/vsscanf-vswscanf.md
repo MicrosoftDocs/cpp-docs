@@ -60,25 +60,25 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 
 ## Remarks
 
-The `vsscanf` function reads data from *buffer* into the locations that are given by each argument in the *arglist* argument list. Every argument in the list must be a pointer to a variable that has a type that corresponds to a type specifier in *format*. The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the `scanf` function. If copying takes place between strings that overlap, the behavior is undefined.
+The **vsscanf** function reads data from *buffer* into the locations that are given by each argument in the *arglist* argument list. Every argument in the list must be a pointer to a variable that has a type that corresponds to a type specifier in *format*. The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf** function. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  When you use `vsscanf` to read a string, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, incorrectly formatted input can cause a buffer overrun.
+> When you use **vsscanf** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun.
 
-`vswscanf` is a wide-character version of `vsscanf`; the arguments to `vswscanf` are wide-character strings. `vsscanf` does not handle multibyte hexadecimal characters. `vswscanf` does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, `vswscanf` and `vsscanf` behave identically.
+**vswscanf** is a wide-character version of **vsscanf**; the arguments to **vswscanf** are wide-character strings. **vsscanf** does not handle multibyte hexadecimal characters. **vswscanf** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **vswscanf** and **vsscanf** behave identically.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vstscanf`|`vsscanf`|`vsscanf`|`vswscanf`|
+|**_vstscanf**|**vsscanf**|**vsscanf**|**vswscanf**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`vsscanf`|\<stdio.h>|
-|`vswscanf`|\<stdio.h> or \<wchar.h>|
+|**vsscanf**|\<stdio.h>|
+|**vswscanf**|\<stdio.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

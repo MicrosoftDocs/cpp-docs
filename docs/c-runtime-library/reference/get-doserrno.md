@@ -35,27 +35,27 @@ errno_t _get_doserrno( 
 ### Parameters
 
 *pValue*<br/>
-A pointer to an integer to be filled with the current value of the `_doserrno` global macro.
+A pointer to an integer to be filled with the current value of the **_doserrno** global macro.
 
 ## Return Value
 
-If `_get_doserrno` succeeds, it returns zero; if it fails, it returns an error code. If *pValue* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If **_get_doserrno** succeeds, it returns zero; if it fails, it returns an error code. If *pValue* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 
-The `_doserrno` global macro is set to zero during CRT initialization, before process execution begins. It is set to the operating-system error value returned by any system-level function call that returns an operating-system error, and it is never reset to zero during execution. When you write code to check the error value returned by a function, always clear `_doserrno` by using [_set_doserrno](set-doserrno.md) before the function call. Because another function call may overwrite `_doserrno`, check the value by using `_get_doserrno` immediately after the function call.
+The **_doserrno** global macro is set to zero during CRT initialization, before process execution begins. It is set to the operating-system error value returned by any system-level function call that returns an operating-system error, and it is never reset to zero during execution. When you write code to check the error value returned by a function, always clear **_doserrno** by using [_set_doserrno](set-doserrno.md) before the function call. Because another function call may overwrite **_doserrno**, check the value by using **_get_doserrno** immediately after the function call.
 
-We recommend [_get_errno](get-errno.md) instead of `_get_doserrno` for portable error codes.
+We recommend [_get_errno](get-errno.md) instead of **_get_doserrno** for portable error codes.
 
-Possible values of `_doserrno` are defined in \<errno.h>.
+Possible values of **_doserrno** are defined in \<errno.h>.
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_get_doserrno`|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
+|**_get_doserrno**|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
 
-`_get_doserrno` is a Microsoft extension. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+**_get_doserrno** is a Microsoft extension. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

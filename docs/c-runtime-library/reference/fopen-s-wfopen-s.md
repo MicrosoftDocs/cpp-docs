@@ -85,7 +85,7 @@ Allowed values of *encoding* are **UNICODE**, **UTF-8**, and **UTF-16LE**. If th
 If the file already exists and is opened for reading or appending, the Byte Order Mark (BOM), if present in the file, determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the *ccs* flag. The *ccs* encoding is only used when no BOM is present or if the file is a new file.
 
 > [!NOTE]
->  BOM-detection only applies to files that are opened in Unicode mode; that is, by passing the *ccs* flag.
+> BOM-detection only applies to files that are opened in Unicode mode; that is, by passing the *ccs* flag.
 
 The following table summarizes the modes for various *ccs* flags that are given to **fopen_s** and for Byte Order Marks in the file.
 
@@ -122,7 +122,7 @@ When a file is opened by using the **"a"** or **"a+"** access type, all write op
 
 The **"a"** mode does not remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data that's appended to the file. The **"a+"** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The **"a+"** mode is required for appending to a stream file that is terminated by using the CTRL+Z EOF marker.
 
-When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are `fsetpos`, [fseek](fseek-fseeki64.md), and [rewind](rewind.md). When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file-positioning function.
+When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are **fsetpos**, [fseek](fseek-fseeki64.md), and [rewind](rewind.md). When you switch from writing to reading, you must use an intervening call to either **fflush** or to a file-positioning function.
 
 In addition to the above values, the following characters can be included in *mode* to specify the translation mode for newline characters:
 
@@ -131,9 +131,9 @@ In addition to the above values, the following characters can be included in *mo
 **t**|Open in text (translated) mode.
 **b**|Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
 
-In text (translated) mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with **"a+"**, **fopen_s** checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and `ftell` to move within a file that ends with a CTRL+Z, may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file.
+In text (translated) mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with **"a+"**, **fopen_s** checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and **ftell** to move within a file that ends with a CTRL+Z, may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file.
 
-Also, in text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).
+Also, in text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **mbtowc** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **wctomb** function).
 
 If **t** or **b** is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If **t** or **b** is prefixed to the argument, the function fails and returns **NULL**.
 
@@ -141,7 +141,7 @@ For more information about using text and binary modes in Unicode and multibyte 
 
 |*mode* modifier|Behavior|
 |-|-|
-**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
 **n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 **N**|Specifies that the file is not inherited by child processes.
 **S**|Specifies that caching is optimized for, but not restricted to, sequential access from disk.
@@ -181,7 +181,7 @@ If you are using **rb** mode, won't need to port your code, and expect to read a
 |**fopen_s**|\<stdio.h>|
 |**_wfopen_s**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

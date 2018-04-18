@@ -53,24 +53,24 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_mkdir` function creates a new directory with the specified *dirname.* `_mkdir` can create only one new directory per call, so only the last component of *dirname* can name a new directory. `_mkdir` does not translate path delimiters. In Windows NT, both the backslash ( \\) and the forward slash (/ ) are valid path delimiters in character strings in run-time routines.
+The **_mkdir** function creates a new directory with the specified *dirname.* **_mkdir** can create only one new directory per call, so only the last component of *dirname* can name a new directory. **_mkdir** does not translate path delimiters. In Windows NT, both the backslash ( \\) and the forward slash (/ ) are valid path delimiters in character strings in run-time routines.
 
-`_wmkdir` is a wide-character version of `_mkdir`; the *dirname* argument to `_wmkdir` is a wide-character string. `_wmkdir` and `_mkdir` behave identically otherwise.
+**_wmkdir** is a wide-character version of **_mkdir**; the *dirname* argument to **_wmkdir** is a wide-character string. **_wmkdir** and **_mkdir** behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tmkdir`|`_mkdir`|`_mkdir`|`_wmkdir`|
+|**_tmkdir**|**_mkdir**|**_mkdir**|**_wmkdir**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mkdir`|\<direct.h>|
-|`_wmkdir`|\<direct.h> or \<wchar.h>|
+|**_mkdir**|\<direct.h>|
+|**_wmkdir**|\<direct.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

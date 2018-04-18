@@ -22,10 +22,10 @@ ms.workload: ["cplusplus"]
 ---
 # _mbsnbcat_s, _mbsnbcat_s_l
 
-Appends to a multibyte character string, at most, the first `n` bytes of another multibyte-character string. These are versions of [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md) that have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Appends to a multibyte character string, at most, the first **n** bytes of another multibyte-character string. These are versions of [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md) that have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -81,7 +81,7 @@ Zero if successful; otherwise, an error code.
 
 ### Error Conditions
 
-|`Dest`|*sizeInBytes*|*src*|Return value|
+|**Dest**|*sizeInBytes*|*src*|Return value|
 |------------|-------------------|-----------|------------------|
 |**NULL**|any|any|**EINVAL**|
 |Any|<= 0|any|**EINVAL**|
@@ -91,7 +91,7 @@ If any of the error conditions occurs, the function generates an invalid paramet
 
 ## Remarks
 
-The `_mbsnbcat_s` function appends to *dest*, at most, the first *count* bytes of *src*. If the byte that immediately precedes the null character in *dest* is a lead byte, it is overwritten by the initial byte of *src*. Otherwise, the initial byte of *src* overwrites the terminating null character of *dest*. If a null byte appears in *src* before *count* bytes are appended, `_mbsnbcat_s` appends all bytes from *src*, up to the null character. If *count* is greater than the length of *src*, the length of *src* is used in place of *count*. The resulting string is terminated by a null character. If copying takes place between strings that overlap, the behavior is undefined.
+The **_mbsnbcat_s** function appends to *dest*, at most, the first *count* bytes of *src*. If the byte that immediately precedes the null character in *dest* is a lead byte, it is overwritten by the initial byte of *src*. Otherwise, the initial byte of *src* overwrites the terminating null character of *dest*. If a null byte appears in *src* before *count* bytes are appended, **_mbsnbcat_s** appends all bytes from *src*, up to the null character. If *count* is greater than the length of *src*, the length of *src* is used in place of *count*. The resulting string is terminated by a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -103,15 +103,15 @@ The debug versions of these functions first fill the buffer with 0xFD. To disabl
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsncat`|[strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)|`_mbsnbcat_s`|[wcsncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)|
-|`_tcsncat_s_l`|`_strncat_s_l`|`_mbsnbcat_s_l`|`_wcsncat_s_l`|
+|**_tcsncat**|[strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)|**_mbsnbcat_s**|[wcsncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)|
+|**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mbsnbcat_s`|\<mbstring.h>|
-|`_mbsnbcat_s_l`|\<mbstring.h>|
+|**_mbsnbcat_s**|\<mbstring.h>|
+|**_mbsnbcat_s_l**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

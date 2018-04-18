@@ -52,27 +52,27 @@ Locale to use.
 
 ## Return Value
 
-Each of these routines returns nonzero if *c* is a particular representation of a space or horizontal tab character, or is one of a locale-specific set of characters that are used to separate words within a line of text. `isblank` returns a nonzero value if *c* is a space character (0x20) or horizontal tab character (0x09). The result of the test condition for the `isblank` functions depends on the **LC_CTYPE** category setting of the locale; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for any locale-dependent behavior; the versions that do have the **_l** suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+Each of these routines returns nonzero if *c* is a particular representation of a space or horizontal tab character, or is one of a locale-specific set of characters that are used to separate words within a line of text. **isblank** returns a nonzero value if *c* is a space character (0x20) or horizontal tab character (0x09). The result of the test condition for the **isblank** functions depends on the **LC_CTYPE** category setting of the locale; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for any locale-dependent behavior; the versions that do have the **_l** suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-`iswblank` returns a nonzero value if *c* is a wide character that corresponds to a standard space or horizontal tab character.
+**iswblank** returns a nonzero value if *c* is a wide character that corresponds to a standard space or horizontal tab character.
 
-The behavior of `isblank` and `_isblank_l` is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
+The behavior of **isblank** and **_isblank_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_istblank`|`isblank`|[_ismbcblank](ismbcgraph-functions.md)|`iswblank`|
-|`_istblank_l`|`_isblank_l`|[_ismbcblank_l](ismbcgraph-functions.md)|`_iswblank_l`|
+|**_istblank**|**isblank**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
+|**_istblank_l**|**_isblank_l**|[_ismbcblank_l](ismbcgraph-functions.md)|**_iswblank_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`isblank`|\<ctype.h>|
-|`iswblank`|\<ctype.h> or \<wchar.h>|
-|`_isblank_l`|\<ctype.h>|
-|`_iswblank_l`|\<ctype.h> or \<wchar.h>|
+|**isblank**|\<ctype.h>|
+|**iswblank**|\<ctype.h> or \<wchar.h>|
+|**_isblank_l**|\<ctype.h>|
+|**_iswblank_l**|\<ctype.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

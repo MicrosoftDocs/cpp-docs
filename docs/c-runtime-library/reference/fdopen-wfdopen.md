@@ -55,7 +55,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 The **_fdopen** function associates an I/O stream with the file that is identified by *fd*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **_wfdopen** is a wide-character version of **_fdopen**; the *mode* argument to **_wfdopen** is a wide-character string. **_wfdopen** and **_fdopen** otherwise behave identically.
 
-File descriptors passed into **_fdopen** are owned by the returned `FILE *` stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
+File descriptors passed into **_fdopen** are owned by the returned **FILE &#42;** stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned **FILE &#42;** also closes the file descriptor.
 
 ### Generic-Text Routine Mappings
 
@@ -74,7 +74,7 @@ The *mode* character string specifies the type of file access requested for the 
 **"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
 **"a+"**|Opens for reading and appending. Creates the file if it does not exist.
 
-When a file is opened with the **"a"** or **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening `fflush`, `fsetpos`, [fseek](fseek-fseeki64.md), or [rewind](rewind.md) operation. You can specify the current position for the `fsetpos` or [fseek](fseek-fseeki64.md) operation, if you want to.
+When a file is opened with the **"a"** or **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fflush](fflush.md), [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), or [rewind](rewind.md) operation. You can specify the current position for the [fsetpos](fsetpos.md) or [fseek](fseek-fseeki64.md) operation, if you want to.
 
 In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
 
@@ -82,16 +82,16 @@ In addition to the above values, the following characters can also be included i
 |-|-|
 **t**|Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input.
 **b**|Open in binary (untranslated) mode. Any translations from **t** mode are suppressed.
-**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
 **n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
 
-The **t**, **c**, and **n** *mode* options are Microsoft extensions for `fopen` and **_fdopen**. Do not use them if you want to preserve ANSI portability.
+The **t**, **c**, and **n** *mode* options are Microsoft extensions for **fopen** and **_fdopen**. Do not use them if you want to preserve ANSI portability.
 
 If **t** or **b** is not given in *mode*, the default translation mode is defined by the global variable [\_fmode](../../c-runtime-library/fmode.md). If **t** or **b** is prefixed to the argument, the function fails and returns NULL. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-Valid characters for the *mode* string used in `fopen` and **_fdopen** correspond to *oflag* arguments used in [\_open](open-wopen.md) and [\_sopen](sopen-wsopen.md), as shown in this table:
+Valid characters for the *mode* string used in **fopen** and **_fdopen** correspond to *oflag* arguments used in [\_open](open-wopen.md) and [\_sopen](sopen-wsopen.md), as shown in this table:
 
-|Characters in *mode* string|Equivalent *oflag* value for `_open` and `_sopen`|
+|Characters in *mode* string|Equivalent *oflag* value for **_open** and **_sopen**|
 |---------------------------------|---------------------------------------------------|
 |**a**|**\_O\_WRONLY &#124; \_O\_APPEND** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_APPEND**)|
 |**a+**|**\_O\_RDWR &#124; \_O\_APPEND** (usually **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_CREAT** )|

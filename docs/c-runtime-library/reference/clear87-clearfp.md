@@ -50,7 +50,7 @@ These functions are deprecated when compiling with [/clr (Common Language Runtim
 |**_clear87**|\<float.h>|
 |**_clearfp**|\<float.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

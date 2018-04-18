@@ -59,15 +59,15 @@ A pointer to the memory block that was allocated or **NULL** if the operation fa
 
 ## Remarks
 
-`_aligned_offset_malloc_dbg` is a debug version of the [_aligned_offset_malloc](aligned-offset-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_offset_malloc_dbg` is reduced to a call to `_aligned_offset_malloc`. Both `_aligned_offset_malloc` and `_aligned_offset_malloc_dbg` allocate a block of memory in the base heap, but `_aligned_offset_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+**_aligned_offset_malloc_dbg** is a debug version of the [_aligned_offset_malloc](aligned-offset-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_offset_malloc_dbg** is reduced to a call to **_aligned_offset_malloc**. Both **_aligned_offset_malloc** and **_aligned_offset_malloc_dbg** allocate a block of memory in the base heap, but **_aligned_offset_malloc_dbg** offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
-`_aligned_offset_malloc_dbg` allocates the memory block with slightly more space than the requested *size*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
+**_aligned_offset_malloc_dbg** allocates the memory block with slightly more space than the requested *size*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
 
-`_aligned_offset_malloc_dbg` is useful in situations where alignment is needed on a nested element; for example, if alignment was needed on a nested class.
+**_aligned_offset_malloc_dbg** is useful in situations where alignment is needed on a nested element; for example, if alignment was needed on a nested class.
 
-`_aligned_offset_malloc_dbg` is based on `malloc`; for more information, see [malloc](malloc.md).
+**_aligned_offset_malloc_dbg** is based on **malloc**; for more information, see [malloc](malloc.md).
 
-This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_malloc` validates its parameters. If *alignment* is not a power of 2 or if *offset* is greater than or equal to *size* and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
+This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_offset_malloc** validates its parameters. If *alignment* is not a power of 2 or if *offset* is greater than or equal to *size* and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
 
@@ -77,9 +77,9 @@ For information about the allocation block types and how they are used, see [Typ
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_aligned_offset_malloc_dbg`|\<crtdbg.h>|
+|**_aligned_offset_malloc_dbg**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

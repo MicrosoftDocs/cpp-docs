@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Recovers from stack overflow.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -39,7 +39,7 @@ Nonzero if the function succeeds, zero if it fails.
 
 ## Remarks
 
-The `_resetstkoflw` function recovers from a stack overflow condition, allowing a program to continue instead of failing with a fatal exception error. If the `_resetstkoflw` function is not called, there are no guard pages after the previous exception. The next time that there is a stack overflow, there are no exceptions at all and the process terminates without warning.
+The **_resetstkoflw** function recovers from a stack overflow condition, allowing a program to continue instead of failing with a fatal exception error. If the **_resetstkoflw** function is not called, there are no guard pages after the previous exception. The next time that there is a stack overflow, there are no exceptions at all and the process terminates without warning.
 
 If a thread in an application causes an **EXCEPTION_STACK_OVERFLOW** exception, the thread has left its stack in a damaged state. This is in contrast to other exceptions such as **EXCEPTION_ACCESS_VIOLATION** or **EXCEPTION_INT_DIVIDE_BY_ZERO**, where the stack is not damaged. The stack is set to an arbitrarily small value when the program is first loaded. The stack then grows on demand to meet the needs of the thread. This is implemented by placing a page with PAGE_GUARD access at the end of the current stack. For more information, see [Creating Guard Pages](http://msdn.microsoft.com/library/windows/desktop/aa366549).
 
@@ -63,7 +63,7 @@ When this maximum stack size is exceeded, the system does the following three th
 
 Note that, at that point, the stack no longer has a guard page. The next time that the program grows the stack all the way to the end, where there should be a guard page, the program writes beyond the end of the stack and causes an access violation.
 
-Call `_resetstkoflw` to restore the guard page whenever recovery is done after a stack overflow exception. This function can be called from inside the main body of an `__except` block or outside an **__except** block. However, there are some restrictions on when it should be used. `_resetstkoflw` should never be called from:
+Call **_resetstkoflw** to restore the guard page whenever recovery is done after a stack overflow exception. This function can be called from inside the main body of an **__except** block or outside an **__except** block. However, there are some restrictions on when it should be used. **_resetstkoflw** should never be called from:
 
 - A filter expression.
 
@@ -73,23 +73,23 @@ Call `_resetstkoflw` to restore the guard page whenever recovery is done after a
 
 - A **catch** block.
 
-- A `__finally` block.
+- A **__finally** block.
 
 At these points, the stack is not yet sufficiently unwound.
 
-Stack overflow exceptions are generated as structured exceptions, not C++ exceptions, so `_resetstkoflw` is not useful in an ordinary **catch** block because it will not catch a stack overflow exception. However, if [_set_se_translator](set-se-translator.md) is used to implement a structured exception translator that throws C++ exceptions (as in the second example), a stack overflow exception results in a C++ exception that can be handled by a C++ catch block.
+Stack overflow exceptions are generated as structured exceptions, not C++ exceptions, so **_resetstkoflw** is not useful in an ordinary **catch** block because it will not catch a stack overflow exception. However, if [_set_se_translator](set-se-translator.md) is used to implement a structured exception translator that throws C++ exceptions (as in the second example), a stack overflow exception results in a C++ exception that can be handled by a C++ catch block.
 
 It is not safe to call **_resetstkoflw** in a C++ catch block that is reached from an exception thrown by the structured exception translator function. In this case, the stack space is not freed and the stack pointer is not reset until outside the catch block, even though destructors have been called for any destructible objects before the catch block. This function should not be called until the stack space is freed and the stack pointer has been reset. Therefore, it should be called only after exiting the catch block. As little stack space as possible should be used in the catch block because a stack overflow that occurs in the catch block that is itself attempting to recover from a previous stack overflow is not recoverable and can cause the program to stop responding as the overflow in the catch block triggers an exception that itself is handled by the same catch block.
 
 There are situations where **_resetstkoflw** can fail even if used in a correct location, such as within an **__except** block. If, even after unwinding the stack, there is still not enough stack space left to execute **_resetstkoflw** without writing into the last page of the stack, **_resetstkoflw** fails to reset the last page of the stack as the guard page and returns 0, indicating failure. Therefore, safe usage of this function should include checking the return value instead of assuming that the stack is safe to use.
 
-Structured exception handling will not catch a `STATUS_STACK_OVERFLOW` exception when the application is compiled with `/clr` (see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).
+Structured exception handling will not catch a **STATUS_STACK_OVERFLOW** exception when the application is compiled with **/clr** (see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_resetstkoflw`|\<malloc.h>|
+|**_resetstkoflw**|\<malloc.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -97,7 +97,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-The following example shows the recommended usage of the `_resetstkoflw` function.
+The following example shows the recommended usage of the **_resetstkoflw** function.
 
 ```C
 // crt_resetstkoflw.c
@@ -201,7 +201,7 @@ resetting stack overflow
 
 ### Description
 
-The following example shows the recommended use of `_resetstkoflw` in a program where structured exceptions are converted to C++ exceptions.
+The following example shows the recommended use of **_resetstkoflw** in a program where structured exceptions are converted to C++ exceptions.
 
 ### Code
 

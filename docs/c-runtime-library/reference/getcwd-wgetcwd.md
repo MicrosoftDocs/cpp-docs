@@ -43,7 +43,7 @@ wchar_t *_wgetcwd(
 Storage location for the path.
 
 *maxlen*<br/>
-Maximum length of the path in characters: **char** for `_getcwd` and **wchar_t** for `_wgetcwd`.
+Maximum length of the path in characters: **char** for **_getcwd** and **wchar_t** for **_wgetcwd**.
 
 ## Return Value
 
@@ -53,26 +53,26 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_getcwd` function gets the full path of the current working directory for the default drive and stores it at *buffer*. The integer argument *maxlen* specifies the maximum length for the path. An error occurs if the length of the path (including the terminating null character) exceeds *maxlen*. The *buffer* argument can be **NULL**; a buffer of at least size *maxlen* (more only if necessary) is automatically allocated, using `malloc`, to store the path. This buffer can later be freed by calling `free` and passing it the `_getcwd` return value (a pointer to the allocated buffer).
+The **_getcwd** function gets the full path of the current working directory for the default drive and stores it at *buffer*. The integer argument *maxlen* specifies the maximum length for the path. An error occurs if the length of the path (including the terminating null character) exceeds *maxlen*. The *buffer* argument can be **NULL**; a buffer of at least size *maxlen* (more only if necessary) is automatically allocated, using **malloc**, to store the path. This buffer can later be freed by calling **free** and passing it the **_getcwd** return value (a pointer to the allocated buffer).
 
-`_getcwd` returns a string that represents the path of the current working directory. If the current working directory is the root, the string ends with a backslash ( `\` ). If the current working directory is a directory other than the root, the string ends with the directory name and not with a backslash.
+**_getcwd** returns a string that represents the path of the current working directory. If the current working directory is the root, the string ends with a backslash ( **\\** ). If the current working directory is a directory other than the root, the string ends with the directory name and not with a backslash.
 
-`_wgetcwd` is a wide-character version of `_getcwd`; the *buffer* argument and return value of `_wgetcwd` are wide-character strings. `_wgetcwd` and `_getcwd` behave identically otherwise.
+**_wgetcwd** is a wide-character version of **_getcwd**; the *buffer* argument and return value of **_wgetcwd** are wide-character strings. **_wgetcwd** and **_getcwd** behave identically otherwise.
 
-When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to `_getcwd` and `_wgetcwd` are replaced by calls to `_getcwd_dbg` and `_wgetcwd_dbg` to allow for debugging memory allocations. For more information, see [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
+When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getcwd** and **_wgetcwd** are replaced by calls to **_getcwd_dbg** and **_wgetcwd_dbg** to allow for debugging memory allocations. For more information, see [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tgetcwd`|`_getcwd`|`_getcwd`|`_wgetcwd`|
+|**_tgetcwd**|**_getcwd**|**_getcwd**|**_wgetcwd**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getcwd`|\<direct.h>|
-|`_wgetcwd`|\<direct.h> or \<wchar.h>|
+|**_getcwd**|\<direct.h>|
+|**_wgetcwd**|\<direct.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

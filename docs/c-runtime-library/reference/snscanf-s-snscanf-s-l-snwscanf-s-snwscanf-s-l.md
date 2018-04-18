@@ -78,12 +78,12 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 ## Remarks
 
-This function is like `sscanf_s` except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
+This function is like **sscanf_s** except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-The buffer size parameter is required with the type field characters `c`, `C`, `s`, `S`, and `[`. For more information, see [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
+The buffer size parameter is required with the type field characters **c**, **C**, **s**, **S**, and **[**. For more information, see [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
->  The size parameter is of type **unsigned**, not **size_t**.
+> The size parameter is of type **unsigned**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -91,17 +91,17 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sntscanf_s`|`_snscanf_s`|`_snscanf_s`|`_snwscanf_s`|
-|`_sntscanf_s_l`|`_snscanf_s_l`|`_snscanf_s_l`|`_snwscanf_s_l`|
+|**_sntscanf_s**|**_snscanf_s**|**_snscanf_s**|**_snwscanf_s**|
+|**_sntscanf_s_l**|**_snscanf_s_l**|**_snscanf_s_l**|**_snwscanf_s_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_snscanf_s`, `_snscanf_s_l`|\<stdio.h>|
-|`_snwscanf_s`, `_snwscanf_s_l`|\<stdio.h> or \<wchar.h>|
+|**_snscanf_s**, **_snscanf_s_l**|\<stdio.h>|
+|**_snwscanf_s**, **_snwscanf_s_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

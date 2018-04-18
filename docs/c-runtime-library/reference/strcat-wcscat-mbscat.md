@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Appends a string. More secure versions of these functions are available; see [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md).
 
 > [!IMPORTANT]
->  `_mbscat_s` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -73,12 +73,12 @@ Each of these functions returns the destination string (*strDestination*). No re
 
 ## Remarks
 
-The `strcat` function appends *strSource* to *strDestination* and terminates the resulting string with a null character. The initial character of *strSource* overwrites the terminating null character of *strDestination*. The behavior of `strcat` is undefined if the source and destination strings overlap.
+The **strcat** function appends *strSource* to *strDestination* and terminates the resulting string with a null character. The initial character of *strSource* overwrites the terminating null character of *strDestination*. The behavior of **strcat** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
->  Because `strcat` does not check for sufficient space in *strDestination* before appending *strSource*, it is a potential cause of buffer overruns. Consider using [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) instead.
+> Because **strcat** does not check for sufficient space in *strDestination* before appending *strSource*, it is a potential cause of buffer overruns. Consider using [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) instead.
 
-`wcscat` and `_mbscat` are wide-character and multibyte-character versions of `strcat`. The arguments and return value of `wcscat` are wide-character strings; those of `_mbscat` are multibyte-character strings. These three functions behave identically otherwise.
+**wcscat** and **_mbscat** are wide-character and multibyte-character versions of **strcat**. The arguments and return value of **wcscat** are wide-character strings; those of **_mbscat** are multibyte-character strings. These three functions behave identically otherwise.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -86,15 +86,15 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscat`|`strcat`|`_mbscat`|`wcscat`|
+|**_tcscat**|**strcat**|**_mbscat**|**wcscat**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strcat`|\<string.h>|
-|`wcscat`|\<string.h> or \<wchar.h>|
-|`_mbscat`|\<mbstring.h>|
+|**strcat**|\<string.h>|
+|**wcscat**|\<string.h> or \<wchar.h>|
+|**_mbscat**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -36,15 +36,15 @@ The number of elements in the array, expressed as a **size_t**.
 
 ## Remarks
 
-`_countof` is implemented as a function-like preprocessor macro. The C++ version has extra template machinery to detect at compile time if a pointer is passed instead of a statically declared array.
+**_countof** is implemented as a function-like preprocessor macro. The C++ version has extra template machinery to detect at compile time if a pointer is passed instead of a statically declared array.
 
-Ensure that *array* is actually an array, not a pointer. In C, `_countof` produces erroneous results if *array* is a pointer. In C++, `_countof` fails to compile if *array* is a pointer.  An array passed as a parameter to a function *decays to a pointer*, which means that within the function, you can't use `_countof` to determine the extent of the array.
+Ensure that *array* is actually an array, not a pointer. In C, **_countof** produces erroneous results if *array* is a pointer. In C++, **_countof** fails to compile if *array* is a pointer.  An array passed as a parameter to a function *decays to a pointer*, which means that within the function, you can't use **_countof** to determine the extent of the array.
 
 ## Requirements
 
 |Macro|Required header|
 |-----------|---------------------|
-|`_countof`|\<stdlib.h>|
+|**_countof**|\<stdlib.h>|
 
 ## Example
 

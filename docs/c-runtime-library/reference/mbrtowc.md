@@ -47,7 +47,7 @@ Address of a sequence of bytes (a multibyte character).
 Number of bytes to check.
 
 *mbstate*<br/>
-Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always pass your own *mbstate* argument.
+Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* argument.
 
 ## Return Value
 
@@ -75,7 +75,7 @@ In this case, the value of the arguments *wchar* and *count* are ignored.
 
 If *mbchar* is not a null pointer, the function examines *count* bytes from *mbchar* to determine the required number of bytes that are required to complete the next multibyte character. If the next character is valid, the corresponding multibyte character is stored in *wchar* if it is not a null pointer. If the character is the corresponding wide null character, the resulting state of *mbstate* is the initial conversion state.
 
-The `mbrtowc` function differs from [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs`.
+The **mbrtowc** function differs from [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
 
 ## Example
 
@@ -200,7 +200,7 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 |Routine|Required header|
 |-------------|---------------------|
-|`mbrtowc`|\<wchar.h>|
+|**mbrtowc**|\<wchar.h>|
 
 ## See also
 

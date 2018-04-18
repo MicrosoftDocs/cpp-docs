@@ -60,9 +60,9 @@ The locale to use.
 
 ## Return Value
 
-Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. `_scwprintf_p` performs the same function for wide characters.
+Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **_scwprintf_p** performs the same function for wide characters.
 
-The difference between `_scprintf_p` and `_scprintf` is that `_scprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+The difference between **_scprintf_p** and **_scprintf** is that **_scprintf_p** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
 If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
@@ -75,23 +75,23 @@ Each *argument* (if any) is converted according to the corresponding format spec
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sctprintf_p`|`_scprintf_p`|`_scprintf_p`|`_scwprintf_p`|
-|`_sctprintf_p_l`|`_scprintf_p_l`|`_scprintf_p_l`|`_scwprintf_p_l`|
+|**_sctprintf_p**|**_scprintf_p**|**_scprintf_p**|**_scwprintf_p**|
+|**_sctprintf_p_l**|**_scprintf_p_l**|**_scprintf_p_l**|**_scwprintf_p_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_scprintf_p`, `_scprintf_p_l`|\<stdio.h>|
-|`_scwprintf_p`, `_scwprintf_p_l`|\<stdio.h> or \<wchar.h>|
+|**_scprintf_p**, **_scprintf_p_l**|\<stdio.h>|
+|**_scwprintf_p**, **_scwprintf_p_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

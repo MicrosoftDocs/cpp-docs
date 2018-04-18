@@ -67,28 +67,28 @@ Locale to use.
 
 ## Return Value
 
-`strtol` returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns `LONG_MAX` or `LONG_MIN`. `strtol` returns 0 if no conversion can be performed. `wcstol` returns values analogously to `strtol`. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs.
+**strtol** returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns **LONG_MAX** or **LONG_MIN**. **strtol** returns 0 if no conversion can be performed. **wcstol** returns values analogously to **strtol**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these and other return codes.
 
 ## Remarks
 
-The `strtol` function converts *strSource* to a **long**. `strtol` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*.
+The **strtol** function converts *strSource* to a **long**. **strtol** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*.
 
-`wcstol` is a wide-character version of `strtol`; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+**wcstol** is a wide-character version of **strtol**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstol`|`strtol`|`strtol`|`wcstol`|
-|`_tcstol_l`|`_strtol_l`|`_strtol_l`|`_wcstol_l`|
+|**_tcstol**|**strtol**|**strtol**|**wcstol**|
+|**_tcstol_l**|**_strtol_l**|**_strtol_l**|**_wcstol_l**|
 
-The current locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource**;* for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; `_strtol_l` and `_wcstol_l` are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The current locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource**;* for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtol_l** and **_wcstol_l** are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
-`strtol` expects *strSource* to point to a string of the following form:
+**strtol** expects *strSource* to point to a string of the following form:
 
 > [*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*digits*  &#124; *letters*]
 
@@ -98,11 +98,11 @@ A *whitespace* may consist of space and tab characters, which are ignored; *digi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strtol`|\<stdlib.h>|
-|`wcstol`|\<stdlib.h> or \<wchar.h>|
-|`_strtol_l`|\<stdlib.h>|
+|**strtol**|\<stdlib.h>|
+|**wcstol**|\<stdlib.h> or \<wchar.h>|
+|**_strtol_l**|\<stdlib.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -59,7 +59,7 @@ For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../
 
 ## Remarks
 
-When used with files, the **_access_s** function determines whether the specified file exists and can be accessed as specified by the value of *mode*. When used with directories, **_access_s** determines only whether the specified directory exists. In [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.
+When used with files, the **_access_s** function determines whether the specified file exists and can be accessed as specified by the value of *mode*. When used with directories, **_access_s** determines only whether the specified directory exists. In Windows 2000 and later operating systems, all directories have read and write access.
 
 |mode value|Checks file for|
 |----------------|---------------------|

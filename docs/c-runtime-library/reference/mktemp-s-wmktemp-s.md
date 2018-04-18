@@ -106,7 +106,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 |**_mktemp_s**|\<io.h>|
 |**_wmktemp_s**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

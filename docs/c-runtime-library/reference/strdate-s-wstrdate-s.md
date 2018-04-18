@@ -74,9 +74,9 @@ Passing values for size that is greater than the actual size of the *buffer* wil
 
 ## Remarks
 
-These functions provide more secure versions of `_strdate` and `_wstrdate`. The `_strdate_s` function copies the current system date to the buffer pointed to by *buffer*, formatted `mm`/`dd`/`yy`, where `mm` is two digits representing the month, `dd` is two digits representing the day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least 9 characters long.
+These functions provide more secure versions of **_strdate** and **_wstrdate**. The **_strdate_s** function copies the current system date to the buffer pointed to by *buffer*, formatted **mm**/**dd**/**yy**, where **mm** is two digits representing the month, **dd** is two digits representing the day, and **yy** is the last two digits of the year. For example, the string **12/05/99** represents December 5, 1999. The buffer must be at least 9 characters long.
 
-`_wstrdate_s` is a wide-character version of `_strdate_s`; the argument and return value of `_wstrdate_s` are wide-character strings. These functions behave identically otherwise.
+**_wstrdate_s** is a wide-character version of **_strdate_s**; the argument and return value of **_wstrdate_s** are wide-character strings. These functions behave identically otherwise.
 
 If *buffer* is a **NULL** pointer, or if *numberOfElements* is less than 9 characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL** if the buffer is **NULL** or if *numberOfElements* is less than or equal to 0, or set **errno** to **ERANGE** if *numberOfElements* is less than 9.
 
@@ -86,15 +86,15 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstrdate_s`|`_strdate_s`|`_strdate_s`|`_wstrdate_s`|
+|**_tstrdate_s**|**_strdate_s**|**_strdate_s**|**_wstrdate_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strdate`|\<time.h>|
-|`_wstrdate`|\<time.h> or \<wchar.h>|
-|`_strdate_s`|\<time.h>|
+|**_strdate**|\<time.h>|
+|**_wstrdate**|\<time.h> or \<wchar.h>|
+|**_strdate_s**|\<time.h>|
 
 ## Example
 

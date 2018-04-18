@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Gets the process identification.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -39,13 +39,13 @@ Returns the process ID obtained from the system. There is no error return.
 
 ## Remarks
 
-The `_getpid` function obtains the process ID from the system. The process ID uniquely identifies the calling process.
+The **_getpid** function obtains the process ID from the system. The process ID uniquely identifies the calling process.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getpid`|\<process.h>|
+|**_getpid**|\<process.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

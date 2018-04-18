@@ -55,13 +55,13 @@ Pointer to the comparison routine. The first parameter is a pointer to the key f
 
 ## Return Value
 
-If the key is found, `_lsearch` returns a pointer to the element of the array at *base* that matches *key*. If the key is not found, `_lsearch` returns a pointer to the newly added item at the end of the array.
+If the key is found, **_lsearch** returns a pointer to the element of the array at *base* that matches *key*. If the key is not found, **_lsearch** returns a pointer to the newly added item at the end of the array.
 
 ## Remarks
 
-The `_lsearch` function performs a linear search for the value *key* in an array of *number* elements, each of *width* bytes. Unlike `bsearch`, `_lsearch` does not require the array to be sorted. If *key* is not found, `_lsearch` adds it to the end of the array and increments *number*.
+The **_lsearch** function performs a linear search for the value *key* in an array of *number* elements, each of *width* bytes. Unlike **bsearch**, **_lsearch** does not require the array to be sorted. If *key* is not found, **_lsearch** adds it to the end of the array and increments *number*.
 
-The *compare* argument is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `_lsearch` calls the *compare* routine one or more times during the search, passing pointers to two array elements on each call. *compare* must compare the elements and return either nonzero (meaning the elements are different) or 0 (meaning the elements are identical).
+The *compare* argument is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. **_lsearch** calls the *compare* routine one or more times during the search, passing pointers to two array elements on each call. *compare* must compare the elements and return either nonzero (meaning the elements are different) or 0 (meaning the elements are identical).
 
 This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is NULL and **number* is nonzero, or if *width* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
 
@@ -69,9 +69,9 @@ This function validates its parameters. If *compare*, *key* or *number* is **NUL
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_lsearch`|\<search.h>|
+|**_lsearch**|\<search.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

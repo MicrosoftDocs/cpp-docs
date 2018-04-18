@@ -46,7 +46,7 @@ size_t mbrtoc32(
 ### Parameters
 
 *destination*<br/>
-Pointer to the `char16_t` or `char32_t` equivalent of the multibyte character to convert. If null, the function does not store a value.
+Pointer to the **char16_t** or **char32_t** equivalent of the multibyte character to convert. If null, the function does not store a value.
 
 *source*<br/>
 Pointer to the multibyte character string to convert.
@@ -55,7 +55,7 @@ Pointer to the multibyte character string to convert.
 The maximum number of bytes in *source* to examine for a character to convert. This should be a value between one and the number of bytes, including any null terminator, remaining in *source*.
 
 *state*<br/>
-Pointer to a `mbstate_t` conversion state object used to interpret the multibyte string to one or more output characters.
+Pointer to a **mbstate_t** conversion state object used to interpret the multibyte string to one or more output characters.
 
 ## Return Value
 
@@ -71,9 +71,9 @@ On success, returns the value of the first of these conditions that applies, giv
 
 ## Remarks
 
-The `mbrtoc16` function reads up to *max_bytes* bytes from *source* to find  the first complete, valid multibyte character, and then stores the equivalent UTF-16 character in *destination*. The source bytes are interpreted according to the current thread multibyte locale. If the multibyte character requires more than one UTF-16 output character, such as a surrogate pair, then the *state* value is set to store the next UTF-16 character in *destination* on the next call to `mbrtoc16`. The `mbrtoc32` function is identical, but output is stored as a UTF-32 character.
+The **mbrtoc16** function reads up to *max_bytes* bytes from *source* to find  the first complete, valid multibyte character, and then stores the equivalent UTF-16 character in *destination*. The source bytes are interpreted according to the current thread multibyte locale. If the multibyte character requires more than one UTF-16 output character, such as a surrogate pair, then the *state* value is set to store the next UTF-16 character in *destination* on the next call to **mbrtoc16**. The **mbrtoc32** function is identical, but output is stored as a UTF-32 character.
 
-If *source* is null, these functions return the equivalent of a call made using arguments of **NULL** for *destination*, `""` for *source*,  and `1` for *max_bytes*. The passed values of *destination* and *max_bytes* are ignored.
+If *source* is null, these functions return the equivalent of a call made using arguments of **NULL** for *destination*, **""** for *source*,  and 1 for *max_bytes*. The passed values of *destination* and *max_bytes* are ignored.
 
 If *source* is not null, the function starts at the beginning of the string and inspects up to *max_bytes* bytes to determine the number of bytes required to complete the next multibyte character, including any shift sequences. If the examined bytes contain a valid and complete multibyte character, the function converts the character into the equivalent 16-bit or 32-bit wide character or characters. If *destination* is not null, the function stores the first (and possibly only) result character in destination. If additional output characters are required, a value is set in *state*, so that subsequent calls to the function output the additional characters and return the value -3. If no more output characters are required, then *state* is set to the initial shift state.
 
@@ -81,7 +81,7 @@ If *source* is not null, the function starts at the beginning of the string and 
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|`mbrtoc16`,                `mbrtoc32`|\<uchar.h>|\<cuchar>|
+|**mbrtoc16**, **mbrtoc32**|\<uchar.h>|\<cuchar>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

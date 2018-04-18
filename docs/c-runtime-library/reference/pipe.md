@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Creates a pipe for reading and writing.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -62,19 +62,19 @@ For more information about these and other return codes, see [errno, _doserrno, 
 
 ## Remarks
 
-The `_pipe` function creates a *pipe*, which is an artificial I/O channel that a program uses to pass information to other programs. A pipe resembles a file because it has a file pointer, a file descriptor, or both, and it can be read from or written to by using the Standard Library input and output functions. However, a pipe does not represent a specific file or device. Instead, it represents temporary storage in memory that is independent of the program's own memory and is controlled entirely by the operating system.
+The **_pipe** function creates a *pipe*, which is an artificial I/O channel that a program uses to pass information to other programs. A pipe resembles a file because it has a file pointer, a file descriptor, or both, and it can be read from or written to by using the Standard Library input and output functions. However, a pipe does not represent a specific file or device. Instead, it represents temporary storage in memory that is independent of the program's own memory and is controlled entirely by the operating system.
 
-`_pipe` resembles `_open` but opens the pipe for reading and writing and returns two file descriptors instead of one. The program can use both sides of the pipe or close the one that it doesn't need. For example, the command processor in Windows creates a pipe when it executes a command such as `PROGRAM1 | PROGRAM2`.
+**_pipe** resembles **_open** but opens the pipe for reading and writing and returns two file descriptors instead of one. The program can use both sides of the pipe or close the one that it doesn't need. For example, the command processor in Windows creates a pipe when it executes a command such as **PROGRAM1** | **PROGRAM2**.
 
-The standard output descriptor of `PROGRAM1` is attached to the pipe's write descriptor. The standard input descriptor of `PROGRAM2` is attached to the pipe's read descriptor. This eliminates the need to create temporary files to pass information to other programs.
+The standard output descriptor of **PROGRAM1** is attached to the pipe's write descriptor. The standard input descriptor of **PROGRAM2** is attached to the pipe's read descriptor. This eliminates the need to create temporary files to pass information to other programs.
 
-The `_pipe` function returns two file descriptors to the pipe in the *pfds* argument. The element *pfds*[0] contains the read descriptor, and the element *pfds*[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions `_read` and `_write` can read from and write to a pipe.) To detect the end-of-pipe condition, check for a `_read` request that returns 0 as the number of bytes read.
+The **_pipe** function returns two file descriptors to the pipe in the *pfds* argument. The element *pfds*[0] contains the read descriptor, and the element *pfds*[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions **_read** and **_write** can read from and write to a pipe.) To detect the end-of-pipe condition, check for a **_read** request that returns 0 as the number of bytes read.
 
-The *psize* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *textmode* argument specifies the translation mode for the pipe. The manifest constant `_O_TEXT` specifies a text translation, and the constant `_O_BINARY` specifies binary translation. (See [fopen, _wfopen](fopen-wfopen.md) for a description of text and binary modes.) If the *textmode* argument is 0, `_pipe` uses the default translation mode that's specified by the default-mode variable [_fmode](../../c-runtime-library/fmode.md).
+The *psize* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *textmode* argument specifies the translation mode for the pipe. The manifest constant **_O_TEXT** specifies a text translation, and the constant **_O_BINARY** specifies binary translation. (See [fopen, _wfopen](fopen-wfopen.md) for a description of text and binary modes.) If the *textmode* argument is 0, **_pipe** uses the default translation mode that's specified by the default-mode variable [_fmode](../../c-runtime-library/fmode.md).
 
-In multithreaded programs, no locking is performed. The file descriptors that are returned are newly opened and should not be referenced by any thread until after the `_pipe` call is complete.
+In multithreaded programs, no locking is performed. The file descriptors that are returned are newly opened and should not be referenced by any thread until after the **_pipe** call is complete.
 
-To use the `_pipe` function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. The easiest way to do this is to `OR` (`|`) the `_O_NOINHERIT` flag with *textmode*. Then, use `_dup` or `_dup2` to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
+To use the **_pipe** function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. The easiest way to do this is to bitwise or (**|**) the **_O_NOINHERIT** flag with *textmode*. Then, use **_dup** or **_dup2** to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
 
 In the Windows operating system, a pipe is destroyed when all of its descriptors have been closed. (If all read descriptors on the pipe have been closed, then writing to the pipe causes an error.) All read and write operations on the pipe wait until there is enough data or enough buffer space to complete the I/O request.
 
@@ -82,9 +82,9 @@ In the Windows operating system, a pipe is destroyed when all of its descriptors
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_pipe`|\<io.h>|\<fcntl.h>,1 \<errno.h>2|
+|**_pipe**|\<io.h>|\<fcntl.h>,1 \<errno.h>2|
 
-1 For `_O_BINARY` and `_O_TEXT` definitions.
+1 For **_O_BINARY** and **_O_TEXT** definitions.
 
 2 **errno** definitions.
 

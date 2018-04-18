@@ -55,15 +55,15 @@ The complex conjugate  of *z*.  The result has the same real and imaginary part 
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `conj` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `conj` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **conj** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`conj`,               `conjf`, `conjl`|\<complex.h>|\<ccomplex>|
+|**conj**,               **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

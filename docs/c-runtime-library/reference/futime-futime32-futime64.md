@@ -55,19 +55,19 @@ Return 0 if successful. If an error occurs, the invalid parameter handler is inv
 
 ## Remarks
 
-The `_futime` routine sets the modification date and the access time on the open file associated with *fd*. `_futime` is identical to [_utime](utime-utime32-utime64-wutime-wutime32-wutime64.md), except that its argument is the file descriptor of an open file, rather than the name of a file or a path to a file. The `_utimbuf` structure contains fields for the new modification date and access time. Both fields must contain valid values. `_utimbuf32` and `_utimbuf64` are identical to `_utimbuf` except for the use of the 32-bit and 64-bit time types, respectively. `_futime` and `_utimbuf` use a 64-bit time type and `_futime` is identical in behavior to `_futime64`. If you need to force the old behavior, define `_USE_32BIT_TIME_T`. Doing this causes `_futime` to be identical in behavior to `_futime32` and causes the `_utimbuf` structure to use the 32-bit time type, making it equivalent to `__utimbuf32`.
+The **_futime** routine sets the modification date and the access time on the open file associated with *fd*. **_futime** is identical to [_utime](utime-utime32-utime64-wutime-wutime32-wutime64.md), except that its argument is the file descriptor of an open file, rather than the name of a file or a path to a file. The **_utimbuf** structure contains fields for the new modification date and access time. Both fields must contain valid values. **_utimbuf32** and **_utimbuf64** are identical to **_utimbuf** except for the use of the 32-bit and 64-bit time types, respectively. **_futime** and **_utimbuf** use a 64-bit time type and **_futime** is identical in behavior to **_futime64**. If you need to force the old behavior, define **_USE_32BIT_TIME_T**. Doing this causes **_futime** to be identical in behavior to **_futime32** and causes the **_utimbuf** structure to use the 32-bit time type, making it equivalent to **__utimbuf32**.
 
-`_futime64`, which uses the `__utimbuf64` structure, can read and modify file dates through 23:59:59, December 31, 3000, UTC; whereas a call to `_futime32` fails if the date on the file is later than 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for these functions.
+**_futime64**, which uses the **__utimbuf64** structure, can read and modify file dates through 23:59:59, December 31, 3000, UTC; whereas a call to **_futime32** fails if the date on the file is later than 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for these functions.
 
 ## Requirements
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|`_futime`|\<sys/utime.h>|\<errno.h>|
-|`_futime32`|\<sys/utime.h>|\<errno.h>|
-|`_futime64`|\<sys/utime.h>|\<errno.h>|
+|**_futime**|\<sys/utime.h>|\<errno.h>|
+|**_futime32**|\<sys/utime.h>|\<errno.h>|
+|**_futime64**|\<sys/utime.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

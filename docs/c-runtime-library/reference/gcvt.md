@@ -63,7 +63,7 @@ This function validates its parameters. If *buffer* is **NULL**, the invalid par
 |-------------|---------------------|
 |**_gcvt**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

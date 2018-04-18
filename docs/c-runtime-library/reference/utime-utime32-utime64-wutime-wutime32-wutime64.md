@@ -74,46 +74,46 @@ Each of these functions returns 0 if the file-modification time was changed. A r
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
 
-The date can be changed for a file if the change date is after midnight, January 1, 1970, and before the end date of the function used. `_utime` and `_wutime` use a 64-bit time value, so the end date is 23:59:59, December 31, 3000, UTC. If `_USE_32BIT_TIME_T` is defined to force the old behavior, the end date is 23:59:59 January 18, 2038, UTC. `_utime32` or `_wutime32` use a 32-bit time type regardless of whether `_USE_32BIT_TIME_T` is defined, and always have the earlier end date. `_utime64` or `_wutime64` always use the 64-bit time type, so these functions always support the later end date.
+The date can be changed for a file if the change date is after midnight, January 1, 1970, and before the end date of the function used. **_utime** and **_wutime** use a 64-bit time value, so the end date is 23:59:59, December 31, 3000, UTC. If **_USE_32BIT_TIME_T** is defined to force the old behavior, the end date is 23:59:59 January 18, 2038, UTC. **_utime32** or **_wutime32** use a 32-bit time type regardless of whether **_USE_32BIT_TIME_T** is defined, and always have the earlier end date. **_utime64** or **_wutime64** always use the 64-bit time type, so these functions always support the later end date.
 
 ## Remarks
 
-The `_utime` function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If *times* is a **NULL** pointer, the modification time is set to the current local time. Otherwise, *times* must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
+The **_utime** function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the **_utimbuf** structure. If *times* is a **NULL** pointer, the modification time is set to the current local time. Otherwise, *times* must point to a structure of type **_utimbuf**, defined in SYS\UTIME.H.
 
-The `_utimbuf` structure stores file access and modification times used by `_utime` to change file-modification dates. The structure has the following fields, which are both of type `time_t`:
+The **_utimbuf** structure stores file access and modification times used by **_utime** to change file-modification dates. The structure has the following fields, which are both of type **time_t**:
 
 |Field||
 |-|-|
-`actime`|Time of file access
-`modtime`|Time of file modification
+**actime**|Time of file access
+**modtime**|Time of file modification
 
-Specific versions of the `_utimbuf` structure (`_utimebuf32` and `__utimbuf64`) are defined using the 32-bit and 64-bit versions of the time type. These are used in the 32-bit and 64-bit specific versions of this function. `_utimbuf` itself by default uses a 64-bit time type unless `_USE_32BIT_TIME_T` is defined.
+Specific versions of the **_utimbuf** structure (**_utimebuf32** and **__utimbuf64**) are defined using the 32-bit and 64-bit versions of the time type. These are used in the 32-bit and 64-bit specific versions of this function. **_utimbuf** itself by default uses a 64-bit time type unless **_USE_32BIT_TIME_T** is defined.
 
-`_utime` is identical to `_futime` except that the *filename* argument of `_utime` is a filename or a path to a file, rather than a file descriptor of an open file.
+**_utime** is identical to **_futime** except that the *filename* argument of **_utime** is a filename or a path to a file, rather than a file descriptor of an open file.
 
-`_wutime` is a wide-character version of `_utime`; the *filename* argument to `_wutime` is a wide-character string. These functions behave identically otherwise.
+**_wutime** is a wide-character version of **_utime**; the *filename* argument to **_wutime** is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tutime`|`_utime`|`_utime`|`_wutime`|
-|`_tutime32`|`_utime32`|`_utime32`|`_wutime32`|
-|`_tutime64`|`_utime64`|`_utime64`|`_wutime64`|
+|**_tutime**|**_utime**|**_utime**|**_wutime**|
+|**_tutime32**|**_utime32**|**_utime32**|**_wutime32**|
+|**_tutime64**|**_utime64**|**_utime64**|**_wutime64**|
 
 ## Requirements
 
 |Routine|Required headers|Optional headers|
 |-------------|----------------------|----------------------|
-|`_utime`, `_utime32`, `_utime64`|\<sys/utime.h>|\<errno.h>|
-|`_utime64`|\<sys/utime.h>|\<errno.h>|
-|`_wutime`|\<utime.h> or \<wchar.h>|\<errno.h>|
+|**_utime**, **_utime32**, **_utime64**|\<sys/utime.h>|\<errno.h>|
+|**_utime64**|\<sys/utime.h>|\<errno.h>|
+|**_wutime**|\<utime.h> or \<wchar.h>|\<errno.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-This program uses `_utime` to set the file-modification time to the current time.
+This program uses **_utime** to set the file-modification time to the current time.
 
 ```C
 // crt_utime.c

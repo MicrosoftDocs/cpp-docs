@@ -54,7 +54,7 @@ int _vfwprintf_s_l(
 ### Parameters
 
 *stream*<br/>
-Pointer to `FILE` structure.
+Pointer to **FILE** structure.
 
 *format*<br/>
 Format specification.
@@ -69,7 +69,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-`vfprintf_s` and `vfwprintf_s` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If either *stream* or *format* is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
+**vfprintf_s** and **vfwprintf_s** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If either *stream* or *format* is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -79,30 +79,30 @@ Each of these functions takes a pointer to an argument list, then formats and wr
 
 These functions differ from the non-secure versions only in that the secure versions check that the *format* string contains valid formatting characters.
 
-`vfwprintf_s` is the wide-character version of `vfprintf_s`; the two functions behave identically if the stream is opened in ANSI mode. `vfprintf_s` doesn't currently support output into a UNICODE stream.
+**vfwprintf_s** is the wide-character version of **vfprintf_s**; the two functions behave identically if the stream is opened in ANSI mode. **vfprintf_s** doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftprintf_s`|`vfprintf_s`|`vfprintf_s`|`vfwprintf_s`|
-|`_vftprintf_s_l`|`_vfprintf_s_l`|`_vfprintf_s_l`|`_vfwprintf_s_l`|
+|**_vftprintf_s**|**vfprintf_s**|**vfprintf_s**|**vfwprintf_s**|
+|**_vftprintf_s_l**|**_vfprintf_s_l**|**_vfprintf_s_l**|**_vfwprintf_s_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`vfprintf_s`, `_vfprintf_s_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`vfwprintf_s`, `_vfwprintf_s_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**vfprintf_s**, **_vfprintf_s_l**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**vfwprintf_s**, **_vfwprintf_s_l**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

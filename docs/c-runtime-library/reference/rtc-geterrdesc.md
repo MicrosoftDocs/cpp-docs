@@ -35,17 +35,17 @@ const char * _RTC_GetErrDesc(
 ### Parameters
 
 *errnum*<br/>
-A number between zero and one less than the value returned by `_RTC_NumErrors`.
+A number between zero and one less than the value returned by **_RTC_NumErrors**.
 
 ## Return Value
 
-A character string that contains a short description of one of the error types detected by the run-time error check system. If error is less than zero or greater than or equal to the value returned by [_RTC_NumErrors](rtc-numerrors.md), `_RTC_GetErrDesc` returns NULL.
+A character string that contains a short description of one of the error types detected by the run-time error check system. If error is less than zero or greater than or equal to the value returned by [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** returns NULL.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_RTC_GetErrDesc`|\<rtcapi.h>|
+|**_RTC_GetErrDesc**|\<rtcapi.h>|
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -56,15 +56,15 @@ The possible return values are:
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `clog10` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `clog10` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **clog10** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **clog10** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`clog10`,               `clog10f`, `clogl`|\<complex.h>|\<ccomplex>|
+|**clog10**,               **clog10f**, **clogl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

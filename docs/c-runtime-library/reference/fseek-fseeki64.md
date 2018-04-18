@@ -87,7 +87,7 @@ This function locks out other threads during execution and is therefore thread-s
 |**fseek**|\<stdio.h>|
 |**_fseeki64**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

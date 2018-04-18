@@ -42,23 +42,23 @@ Pointer to a function to be called at exit.
 
 ## Return Value
 
-`_onexit` returns a pointer to the function if successful or **NULL** if there is no space to store the function pointer.
+**_onexit** returns a pointer to the function if successful or **NULL** if there is no space to store the function pointer.
 
 ## Remarks
 
-The `_onexit` function is passed the address of a function (*function*) to be called when the program terminates normally. Successive calls to `_onexit` create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to `_onexit` cannot take parameters.
+The **_onexit** function is passed the address of a function (*function*) to be called when the program terminates normally. Successive calls to **_onexit** create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to **_onexit** cannot take parameters.
 
-In the case when `_onexit` is called from within a DLL, routines registered with `_onexit` run on a DLL's unloading after `DllMain` is called with DLL_PROCESS_DETACH.
+In the case when **_onexit** is called from within a DLL, routines registered with **_onexit** run on a DLL's unloading after **DllMain** is called with DLL_PROCESS_DETACH.
 
-`_onexit` is a Microsoft extension. For ANSI portability, use [atexit](atexit.md). The `_onexit_m` version of the function is for mixed mode use.
+**_onexit** is a Microsoft extension. For ANSI portability, use [atexit](atexit.md). The **_onexit_m** version of the function is for mixed mode use.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_onexit`|\<stdlib.h>|
+|**_onexit**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

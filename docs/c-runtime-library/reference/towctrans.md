@@ -43,7 +43,7 @@ An identifier that contains the return value of [wctrans](wctrans.md).
 
 ## Return Value
 
-The character *c*, after `towctrans` used the transform rule in *category*.
+The character *c*, after **towctrans** used the transform rule in *category*.
 
 ## Remarks
 
@@ -53,13 +53,13 @@ The value of *category* must have been returned by an earlier successful call to
 
 |Routine|Required header|
 |-------------|---------------------|
-|`towctrans`|\<wctype.h>|
+|**towctrans**|\<wctype.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-See `wctrans` for a sample that uses `towctrans`.
+See **wctrans** for a sample that uses **towctrans**.
 
 ## See also
 

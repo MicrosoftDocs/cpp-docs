@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Appends a string. These versions of [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
->  `_mbscat_s` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -87,7 +87,7 @@ Zero if successful; an error code on failure.
 
 ## Remarks
 
-The `strcat_s` function appends *strSource* to *strDestination* and terminates the resulting string with a null character. The initial character of *strSource* overwrites the terminating null character of *strDestination*. The behavior of `strcat_s` is undefined if the source and destination strings overlap.
+The **strcat_s** function appends *strSource* to *strDestination* and terminates the resulting string with a null character. The initial character of *strSource* overwrites the terminating null character of *strDestination*. The behavior of **strcat_s** is undefined if the source and destination strings overlap.
 
 Note that the second parameter is the total size of the buffer, not the remaining size:
 
@@ -98,7 +98,7 @@ strcat_s(buf, 16, " End");               // Correct
 strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 ```
 
-`wcscat_s` and `_mbscat_s` are wide-character and multibyte-character versions of `strcat_s`. The arguments and return value of `wcscat_s` are wide-character strings; those of `_mbscat_s` are multibyte-character strings. These three functions behave identically otherwise.
+**wcscat_s** and **_mbscat_s** are wide-character and multibyte-character versions of **strcat_s**. The arguments and return value of **wcscat_s** are wide-character strings; those of **_mbscat_s** are multibyte-character strings. These three functions behave identically otherwise.
 
 If *strDestination* is a null pointer, or is not null-terminated, or if *strSource* is a **NULL** pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
 
@@ -110,15 +110,15 @@ The debug versions of these functions first fill the buffer with 0xFD. To disabl
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscat_s`|`strcat_s`|`_mbscat_s`|`wcscat_s`|
+|**_tcscat_s**|**strcat_s**|**_mbscat_s**|**wcscat_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strcat_s`|\<string.h>|
-|`wcscat_s`|\<string.h> or \<wchar.h>|
-|`_mbscat_s`|\<mbstring.h>|
+|**strcat_s**|\<string.h>|
+|**wcscat_s**|\<string.h> or \<wchar.h>|
+|**_mbscat_s**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

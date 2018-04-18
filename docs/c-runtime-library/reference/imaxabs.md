@@ -42,7 +42,7 @@ Integer value.
 The **imaxabs** function returns the absolute value of the argument. There is no error return.
 
 > [!NOTE]
->  Because the range of negative integers that can be represented by using **intmax_t** is larger than the range of positive integers that can be represented, it's possible to supply an argument to **imaxabs** that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the behavior of **imaxabs** is undefined.
+> Because the range of negative integers that can be represented by using **intmax_t** is larger than the range of positive integers that can be represented, it's possible to supply an argument to **imaxabs** that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the behavior of **imaxabs** is undefined.
 
 ## Requirements
 

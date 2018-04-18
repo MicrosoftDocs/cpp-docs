@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Creates and executes a new process.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -66,7 +66,7 @@ Array of pointers to environment settings.
 
 ## Return Value
 
-The return value from a synchronous `_spawnle` or `_wspawnle` (`_P_WAIT` specified for *mode*) is the exit status of the new process. The return value from an asynchronous `_spawnle` or `_wspawnle` (`_P_NOWAIT` or `_P_NOWAITO` specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values.
+The return value from a synchronous **_spawnle** or **_wspawnle** (**_P_WAIT** specified for *mode*) is the exit status of the new process. The return value from an asynchronous **_spawnle** or **_wspawnle** (**_P_NOWAIT** or **_P_NOWAITO** specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the **exit** routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values.
 
 |||
 |-|-|
@@ -88,8 +88,8 @@ These functions validate their parameters. If either *cmdname* or *arg0* is an e
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_spawnle`|\<process.h>|
-|`_wspawnle`|\<stdio.h> or \<wchar.h>|
+|**_spawnle**|\<process.h>|
+|**_wspawnle**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

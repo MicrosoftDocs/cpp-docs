@@ -33,11 +33,11 @@ wint_t getwchar();
 
 ## Return Value
 
-Returns the character read. To indicate a read error or end-of-file condition, `getchar` returns **EOF**, and `getwchar` returns **WEOF**. For `getchar`, use `ferror` or `feof` to check for an error or for end of file.
+Returns the character read. To indicate a read error or end-of-file condition, **getchar** returns **EOF**, and **getwchar** returns **WEOF**. For **getchar**, use **ferror** or **feof** to check for an error or for end of file.
 
 ## Remarks
 
-Each routine reads a single character from `stdin` and increments the associated file pointer to point to the next character. `getchar` is the same as [_fgetchar](fgetc-fgetwc.md), but it is implemented as a function and as a macro.
+Each routine reads a single character from **stdin** and increments the associated file pointer to point to the next character. **getchar** is the same as [_fgetchar](fgetc-fgetwc.md), but it is implemented as a function and as a macro.
 
 These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
 
@@ -45,16 +45,16 @@ These functions lock the calling thread and are therefore thread-safe. For a non
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_gettchar`|`getchar`|`getchar`|`getwchar`|
+|**_gettchar**|**getchar**|**getchar**|**getwchar**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`getchar`|\<stdio.h>|
-|`getwchar`|\<stdio.h> or \<wchar.h>|
+|**getchar**|\<stdio.h>|
+|**getwchar**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

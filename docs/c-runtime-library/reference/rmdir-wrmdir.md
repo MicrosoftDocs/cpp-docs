@@ -54,24 +54,24 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_rmdir` function deletes the directory specified by *dirname*. The directory must be empty, and it must not be the current working directory or the root directory.
+The **_rmdir** function deletes the directory specified by *dirname*. The directory must be empty, and it must not be the current working directory or the root directory.
 
-`_wrmdir` is a wide-character version of `_rmdir`; the *dirname* argument to `_wrmdir` is a wide-character string. `_wrmdir` and `_rmdir` behave identically otherwise.
+**_wrmdir** is a wide-character version of **_rmdir**; the *dirname* argument to **_wrmdir** is a wide-character string. **_wrmdir** and **_rmdir** behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_trmdir`|`_rmdir`|`_rmdir`|`_wrmdir`|
+|**_trmdir**|**_rmdir**|**_rmdir**|**_wrmdir**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_rmdir`|\<direct.h>|
-|`_wrmdir`|\<direct.h> or \<wchar.h>|
+|**_rmdir**|\<direct.h>|
+|**_wrmdir**|\<direct.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

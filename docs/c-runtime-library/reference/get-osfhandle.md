@@ -39,19 +39,19 @@ An existing file descriptor.
 
 ## Return Value
 
-Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets **errno** to **EBADF**, indicating an invalid file handle.
+Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **INVALID_HANDLE_VALUE** (-1) and sets **errno** to **EBADF**, indicating an invalid file handle.
 
 ## Remarks
 
-To close a file whose operating system (OS) file handle is obtained by `_get_osfhandle`, call [\_close](close.md) on the file descriptor *fd*. Do not call `CloseHandle` on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when `_close` is called on *fd*. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](fclose-fcloseall.md) on that `FILE *` stream closes both the file descriptor and the underlying OS file handle. In this case, do not call `_close` on the file descriptor.
+To close a file whose operating system (OS) file handle is obtained by **_get_osfhandle**, call [_close](close.md) on the file descriptor *fd*. Do not call **CloseHandle** on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when [_close](close.md) is called on *fd*. If the file descriptor is owned by a **FILE \*** stream, then calling [fclose](fclose-fcloseall.md) on that **FILE \*** stream closes both the file descriptor and the underlying OS file handle. In this case, do not call [_close](close.md) on the file descriptor.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_osfhandle`|\<io.h>|
+|**_get_osfhandle**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

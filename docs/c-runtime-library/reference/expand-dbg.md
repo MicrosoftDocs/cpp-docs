@@ -45,7 +45,7 @@ Pointer to the previously allocated memory block.
 Requested new size for the block (in bytes).
 
 *blockType*<br/>
-Requested type for resized block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
+Requested type for resized block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 *filename*<br/>
 Pointer to the name of the source file that requested expand operation or **NULL**.
@@ -53,29 +53,29 @@ Pointer to the name of the source file that requested expand operation or **NULL
 *linenumber*<br/>
 Line number in the source file where the expand operation was requested or **NULL**.
 
-The *filename* and *linenumber* parameters are only available when `_expand_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.
+The *filename* and *linenumber* parameters are only available when **_expand_dbg** has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return Value
 
-On successful completion, `_expand_dbg` returns a pointer to the resized memory block. Because the memory is not moved, the address is the same as the userData. If an error occurred or the block could not be expanded to the requested size, it returns **NULL**. If a failure occurs, **errno** is with information from the operating system about the nature of the failure. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+On successful completion, **_expand_dbg** returns a pointer to the resized memory block. Because the memory is not moved, the address is the same as the userData. If an error occurred or the block could not be expanded to the requested size, it returns **NULL**. If a failure occurs, **errno** is with information from the operating system about the nature of the failure. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `_expand_dbg` function is a debug version of the _[expand](expand.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_expand_dbg` is reduced to a call to `_expand`. Both `_expand` and `_expand_dbg` resize a memory block in the base heap, but `_expand_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+The **_expand_dbg** function is a debug version of the _[expand](expand.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_expand_dbg** is reduced to a call to **_expand**. Both **_expand** and **_expand_dbg** resize a memory block in the base heap, but **_expand_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
-`_expand_dbg` resizes the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. `_expand_dbg` does not move the memory block, as does the [_realloc_dbg](realloc-dbg.md) function.
+**_expand_dbg** resizes the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. **_expand_dbg** does not move the memory block, as does the [_realloc_dbg](realloc-dbg.md) function.
 
 When *newSize* is greater than the original block size, the memory block is expanded. During an expansion, if the memory block cannot be expanded to accommodate the requested size, **NULL** is returned. When *newSize* is less than the original block size, the memory block is contracted until the new size is obtained.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
-This function validates its parameters. If *memblock* is a null pointer, or if size is greater than `_HEAP_MAXREQ`, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
+This function validates its parameters. If *memblock* is a null pointer, or if size is greater than **_HEAP_MAXREQ**, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_expand_dbg`|\<crtdbg.h>|
+|**_expand_dbg**|\<crtdbg.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

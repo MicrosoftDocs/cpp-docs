@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _CrtGetDumpClient
 
-Retrieves the current application-defined function for dumping the `_CLIENT_BLOCK` type memory blocks (debug version only).
+Retrieves the current application-defined function for dumping the **_CLIENT_BLOCK** type memory blocks (debug version only).
 
 ## Syntax
 
@@ -36,7 +36,7 @@ Returns the current dump routine.
 
 ## Remarks
 
-The `_CrtGetDumpClient` function retrieves the current hook function for dumping objects stored in the `_CLIENT_BLOCK` memory blocks for the C run-time debug memory dump process.
+The **_CrtGetDumpClient** function retrieves the current hook function for dumping objects stored in the **_CLIENT_BLOCK** memory blocks for the C run-time debug memory dump process.
 
 For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -44,9 +44,9 @@ For more information about using other hook-capable run-time functions and writi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_CrtGetDumpClient`|\<crtdbg.h>|
+|**_CrtGetDumpClient**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

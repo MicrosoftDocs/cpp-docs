@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # strerror, _strerror, _wcserror, __wcserror
 
-Gets a system error message string (`strerror`, `_wcserror`) or formats a user-supplied error message string (`_strerror`, `__wcserror`). More secure versions of these functions are available; see [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](strerror-s-strerror-s-wcserror-s-wcserror-s.md).
+Gets a system error message string (**strerror**, **_wcserror**) or formats a user-supplied error message string (**_strerror**, **__wcserror**). More secure versions of these functions are available; see [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](strerror-s-strerror-s-wcserror-s-wcserror-s.md).
 
 ## Syntax
 
@@ -55,36 +55,36 @@ All of these functions return a pointer to the error-message string. Subsequent 
 
 ## Remarks
 
-The `strerror` function maps *errnum* to an error-message string and returns a pointer to the string. Neither `strerror` nor `_strerror` actually prints the message: For that, you have to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The **strerror** function maps *errnum* to an error-message string and returns a pointer to the string. Neither **strerror** nor **_strerror** actually prints the message: For that, you have to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
 if (( _access( "datafile",2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-If *strErrMsg* is passed as **NULL**, `_strerror` returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then `_strerror` returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is passed as **NULL**, **_strerror** returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then **_strerror** returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
 
-The actual error number for `_strerror` is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call `_strerror` immediately after a library routine returns with an error. Otherwise, subsequent calls to `strerror` or `_strerror` can overwrite the **errno** value.
+The actual error number for **_strerror** is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **_strerror** immediately after a library routine returns with an error. Otherwise, subsequent calls to **strerror** or **_strerror** can overwrite the **errno** value.
 
-`_wcserror` and `__wcserror` are wide-character versions of `strerror` and `_strerror`, respectively.
+**_wcserror** and **__wcserror** are wide-character versions of **strerror** and **_strerror**, respectively.
 
-`_strerror`, `_wcserror`, and `__wcserror` are not part of the ANSI definition; they are Microsoft extensions and we recommend that you do not use them where you want portable code. For ANSI compatibility, use `strerror` instead.
+**_strerror**, **_wcserror**, and **__wcserror** are not part of the ANSI definition; they are Microsoft extensions and we recommend that you do not use them where you want portable code. For ANSI compatibility, use **strerror** instead.
 
-To get error strings, we recommend `strerror` or `_wcserror` instead of the deprecated macros [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions `__sys_errlist` and `__sys_nerr`.
+To get error strings, we recommend **strerror** or **_wcserror** instead of the deprecated macros [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions **__sys_errlist** and **__sys_nerr**.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcserror`|`strerror`|`strerror`|`_wcserror`|
+|**_tcserror**|**strerror**|**strerror**|**_wcserror**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strerror`|\<string.h>|
-|`_strerror`|\<string.h>|
-|`_wcserror`, `__wcserror`|\<string.h>|
+|**strerror**|\<string.h>|
+|**_strerror**|\<string.h>|
+|**_wcserror**, **__wcserror**|\<string.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

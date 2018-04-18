@@ -66,26 +66,26 @@ Parameter that precedes the first optional argument.
 
 ## Return Value
 
-`va_arg` returns the current argument. `va_copy`, `va_start` and `va_end` do not return values.
+**va_arg** returns the current argument. **va_copy**, **va_start** and **va_end** do not return values.
 
 ## Remarks
 
-The `va_arg`, `va_copy`, `va_end`, and `va_start` macros provide a portable way to access the arguments to a function when the function takes a variable number of arguments. There are two versions of the macros: The macros defined in STDARG.H conform to the ISO C99 standard; the macros defined in VARARGS.H are deprecated but are retained for backward compatibility with code that was written before the ANSI C89 standard.
+The **va_arg**, **va_copy**, **va_end**, and **va_start** macros provide a portable way to access the arguments to a function when the function takes a variable number of arguments. There are two versions of the macros: The macros defined in STDARG.H conform to the ISO C99 standard; the macros defined in VARARGS.H are deprecated but are retained for backward compatibility with code that was written before the ANSI C89 standard.
 
 These macros assume that the function takes a fixed number of required arguments, followed by a variable number of optional arguments. The required arguments are declared as ordinary parameters to the function and can be accessed through the parameter names. The optional arguments are accessed through the macros in STDARG.H (or VARARGS.H for code that was written before the ANSI C89 standard), which sets a pointer to the first optional argument in the argument list, retrieves arguments from the list, and resets the pointer when argument processing is completed.
 
 The C standard macros, defined in STDARG.H, are used as follows:
 
-- `va_start` sets *arg_ptr* to the first optional argument in the list of arguments that's passed to the function. The argument *arg_ptr* must have the `va_list` type. The argument *prev_param* is the name of the required parameter that immediately precedes the first optional argument in the argument list. If *prev_param* is declared with the register storage class, the macro's behavior is undefined. `va_start` must be used before `va_arg` is used for the first time.
+- **va_start** sets *arg_ptr* to the first optional argument in the list of arguments that's passed to the function. The argument *arg_ptr* must have the **va_list** type. The argument *prev_param* is the name of the required parameter that immediately precedes the first optional argument in the argument list. If *prev_param* is declared with the register storage class, the macro's behavior is undefined. **va_start** must be used before **va_arg** is used for the first time.
 
-- `va_arg` retrieves a value of *type* from the location that's given by *arg_ptr*, and increments *arg_ptr* to point to the next argument in the list by using the size of *type* to determine where the next argument starts. `va_arg` can be used any number of times in the function to retrieve arguments from the list.
+- **va_arg** retrieves a value of *type* from the location that's given by *arg_ptr*, and increments *arg_ptr* to point to the next argument in the list by using the size of *type* to determine where the next argument starts. **va_arg** can be used any number of times in the function to retrieve arguments from the list.
 
-- `va_copy` makes a copy of a list of arguments in its current state. The *src* parameter must already be initialized with `va_start`; it may have been updated with `va_arg` calls, but must not have been reset with `va_end`. The next argument that's retrieved by `va_arg` from *dest* is the same as the next argument that's retrieved from *src*.
+- **va_copy** makes a copy of a list of arguments in its current state. The *src* parameter must already be initialized with **va_start**; it may have been updated with **va_arg** calls, but must not have been reset with **va_end**. The next argument that's retrieved by **va_arg** from *dest* is the same as the next argument that's retrieved from *src*.
 
-- After all arguments have been retrieved, `va_end` resets the pointer to **NULL**. `va_end` must be called on each argument list that's initialized with `va_start` or `va_copy` before the function returns.
+- After all arguments have been retrieved, **va_end** resets the pointer to **NULL**. **va_end** must be called on each argument list that's initialized with **va_start** or **va_copy** before the function returns.
 
 > [!NOTE]
->  The macros in VARARGS.H are deprecated and are retained only for backwards compatibility with code that was written before the ANSI C89 standard. In all other cases, use the macros in STDARGS.H.
+> The macros in VARARGS.H are deprecated and are retained only for backwards compatibility with code that was written before the ANSI C89 standard. In all other cases, use the macros in STDARGS.H.
 
 When they are compiled by using [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), programs that use these macros may generate unexpected results because of differences between native and common language runtime (CLR) type systems. Consider this program:
 
@@ -119,7 +119,7 @@ int main()
 }
 ```
 
-Notice that `testit` expects its second parameter to be either an **int** or a **char\***. The arguments being passed are 0xffffffff (an **unsigned** **int**, not an **int**) and **NULL** (actually an **int**, not a **char\***). When the program is compiled for native code, it produces this output:
+Notice that **testit** expects its second parameter to be either an **int** or a **char\***. The arguments being passed are 0xffffffff (an **unsigned** **int**, not an **int**) and **NULL** (actually an **int**, not a **char\***). When the program is compiled for native code, it produces this output:
 
 ```Output
 -1

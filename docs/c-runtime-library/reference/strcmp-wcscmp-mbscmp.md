@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Compare strings.
 
 > [!IMPORTANT]
->  `_mbscmp` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscmp** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -59,33 +59,33 @@ The return value for each of these functions indicates the ordinal relation of *
 |0|*string1* is identical to *string2*|
 |> 0|*string1* is greater than *string2*|
 
-On a parameter validation error, `_mbscmp` returns `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
+On a parameter validation error, **_mbscmp** returns **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The `strcmp` function performs an ordinal comparison of *string1* and *string2* and returns a value that indicates their relationship. `wcscmp` and `_mbscmp` are, respectively, wide-character and multibyte-character versions of `strcmp`. `_mbscmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *string1* or *string2* is a null pointer, `_mbscmp` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbscmp` returns `_NLSCMPERROR` and sets **errno** to **EINVAL**. `strcmp` and `wcscmp` do not validate their parameters. These three functions behave identically otherwise.
+The **strcmp** function performs an ordinal comparison of *string1* and *string2* and returns a value that indicates their relationship. **wcscmp** and **_mbscmp** are, respectively, wide-character and multibyte-character versions of **strcmp**. **_mbscmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *string1* or *string2* is a null pointer, **_mbscmp** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbscmp** returns **_NLSCMPERROR** and sets **errno** to **EINVAL**. **strcmp** and **wcscmp** do not validate their parameters. These three functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscmp`|`strcmp`|`_mbscmp`|`wcscmp`|
+|**_tcscmp**|**strcmp**|**_mbscmp**|**wcscmp**|
 
-The `strcmp` functions differ from the `strcoll` functions in that `strcmp` comparisons are ordinal, and are not affected by locale. `strcoll` compares strings lexicographically by using the `LC_COLLATE` category of the current locale. For more information about the `LC_COLLATE` category, see [setlocale, _wsetlocale](setlocale-wsetlocale.md).
+The **strcmp** functions differ from the **strcoll** functions in that **strcmp** comparisons are ordinal, and are not affected by locale. **strcoll** compares strings lexicographically by using the **LC_COLLATE** category of the current locale. For more information about the **LC_COLLATE** category, see [setlocale, _wsetlocale](setlocale-wsetlocale.md).
 
 In the "C" locale, the order of characters in the character set (ASCII character set) is the same as the lexicographic character order. However, in other locales, the order of characters in the character set may differ from the lexicographic order. For example, in certain European locales, the character 'a' (value 0x61) comes before the character 'ä' (value 0xE4) in the character set, but the character 'ä' comes in front of the character 'a' lexicographically.
 
-In locales for which the character set and the lexicographic character order differ, you can use `strcoll` instead of `strcmp` for lexicographic comparison of strings. Alternatively, you can use `strxfrm` on the original strings, and then use `strcmp` on the resulting strings.
+In locales for which the character set and the lexicographic character order differ, you can use **strcoll** instead of **strcmp** for lexicographic comparison of strings. Alternatively, you can use **strxfrm** on the original strings, and then use **strcmp** on the resulting strings.
 
-The `strcmp` functions are case-sensitive. `_stricmp`, `_wcsicmp`, and `_mbsicmp` compare strings by first converting them to their lowercase forms. Two strings that contain characters that are located between 'Z' and 'a' in the ASCII table ('[', '`\`', ']', '`^`', '`_`', and '```') compare differently, depending on their case. For example, the two strings `"ABCDE"` and `"ABCD^"` compare one way if the comparison is lowercase (`"abcde"` > `"abcd^"`) and the other way (`"ABCDE"` < `"ABCD^"`) if the comparison is uppercase.
+The **strcmp** functions are case-sensitive. **_stricmp**, **_wcsicmp**, and **_mbsicmp** compare strings by first converting them to their lowercase forms. Two strings that contain characters that are located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if the comparison is uppercase.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strcmp`|<string.h>|
-|`wcscmp`|<string.h> or <wchar.h>|
-|`_mbscmp`|\<mbstring.h>|
+|**strcmp**|<string.h>|
+|**wcscmp**|<string.h> or <wchar.h>|
+|**_mbscmp**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

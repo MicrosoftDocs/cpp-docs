@@ -86,7 +86,7 @@ The locale to use.
 
 ## Return Value
 
-`vsprintf_s` and `vswprintf_s` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *buffer* or *format* is a null pointer, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
+**vsprintf_s** and **vswprintf_s** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *buffer* or *format* is a null pointer, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -94,7 +94,7 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 
 Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
-`vswprintf_s` conforms to the ISO C Standard for `vswprintf`, which requires the second parameter, *count*, of type **size_t**.
+**vswprintf_s** conforms to the ISO C Standard for **vswprintf**, which requires the second parameter, *count*, of type **size_t**.
 
 These functions differ from the non-secure versions only in that the secure versions support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
@@ -106,19 +106,19 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vstprintf_s`|`vsprintf_s`|`vsprintf_s`|`vswprintf_s`|
-|`_vstprintf_s_l`|`_vsprintf_s_l`|`_vsprintf_s_l`|`_vswprintf_s_l`|
+|**_vstprintf_s**|**vsprintf_s**|**vsprintf_s**|**vswprintf_s**|
+|**_vstprintf_s_l**|**_vsprintf_s_l**|**_vsprintf_s_l**|**_vswprintf_s_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`vsprintf_s`, `_vsprintf_s_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`vswprintf_s`, `_vswprintf_s_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**vsprintf_s**, **_vsprintf_s_l**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**vswprintf_s**, **_vswprintf_s_l**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Pushes back the last character that's read from the console.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -51,27 +51,27 @@ Character to be pushed.
 
 ## Return Value
 
-Both functions return the character *c* if successful. If there is an error, `_ungetch` returns a value of **EOF** and `_ungetwch` returns **WEOF**.
+Both functions return the character *c* if successful. If there is an error, **_ungetch** returns a value of **EOF** and **_ungetwch** returns **WEOF**.
 
 ## Remarks
 
-These functions push the character *c* back to the console, causing *c* to be the next character read by `_getch` or `_getche` (or `_getwch` or `_getwche`). `_ungetch` and `_ungetwch` fail if they are called more than once before the next read. The *c* argument may not be **EOF** (or **WEOF**).
+These functions push the character *c* back to the console, causing *c* to be the next character read by **_getch** or **_getche** (or **_getwch** or **_getwche**). **_ungetch** and **_ungetwch** fail if they are called more than once before the next read. The *c* argument may not be **EOF** (or **WEOF**).
 
-The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_ungettch`|`_ungetch`|`_ungetch`|`_ungetwch`|
-|`_ungettch_nolock`|`_ungetch_nolock`|`_ungetch_nolock`|`_ungetwch_nolock`|
+|**_ungettch**|**_ungetch**|**_ungetch**|**_ungetwch**|
+|**_ungettch_nolock**|**_ungetch_nolock**|**_ungetch_nolock**|**_ungetwch_nolock**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_ungetch`, `_ungetch_nolock`|\<conio.h>|
-|`_ungetwch`, `_ungetwch_nolock`|\<conio.h> or \<wchar.h>|
+|**_ungetch**, **_ungetch_nolock**|\<conio.h>|
+|**_ungetwch**, **_ungetwch_nolock**|\<conio.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

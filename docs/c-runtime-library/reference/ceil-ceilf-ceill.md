@@ -55,7 +55,7 @@ The **ceil** functions return a floating-point value that represents the smalles
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± **QNAN**,**IND**|none|**_DOMAIN**|
+|± **QNAN**, **IND**|none|**_DOMAIN**|
 
 **ceil** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
 

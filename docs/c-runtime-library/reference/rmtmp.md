@@ -33,19 +33,19 @@ int _rmtmp( void );
 
 ## Return Value
 
-`_rmtmp` returns the number of temporary files closed and deleted.
+**_rmtmp** returns the number of temporary files closed and deleted.
 
 ## Remarks
 
-The `_rmtmp` function cleans up all temporary files in the current directory. The function removes only those files created by `tmpfile`; use it only in the same directory in which the temporary files were created.
+The **_rmtmp** function cleans up all temporary files in the current directory. The function removes only those files created by **tmpfile**; use it only in the same directory in which the temporary files were created.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_rmtmp`|\<stdio.h>|
+|**_rmtmp**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

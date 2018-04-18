@@ -47,7 +47,7 @@ Item size in bytes.
 Maximum number of items to be read.
 
 *stream*<br/>
-Pointer to the `FILE` structure.
+Pointer to the **FILE** structure.
 
 ## Return Value
 
@@ -55,15 +55,15 @@ See [fread](fread.md).
 
 ## Remarks
 
-This function is a non-locking version of `fread`. It is identical to `fread` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+This function is a non-locking version of **fread**. It is identical to **fread** except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_fread_nolock`|\<stdio.h>|
+|**_fread_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

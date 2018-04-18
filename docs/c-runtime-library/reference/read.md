@@ -47,7 +47,7 @@ Maximum number of bytes.
 
 ## Return Value
 
-`_read` returns the number of bytes read, which might be less than *count* if there are fewer than *count* bytes left in the file or if the file was opened in text mode, in which case each carriage return-line feed pair `\r\n` is replaced with a single linefeed character `\n`. Only the single linefeed character is counted in the return value. The replacement does not affect the file pointer.
+**_read** returns the number of bytes read, which might be less than *count* if there are fewer than *count* bytes left in the file or if the file was opened in text mode, in which case each carriage return-line feed pair '\r\n' is replaced with a single linefeed character '\n'. Only the single linefeed character is counted in the return value. The replacement does not affect the file pointer.
 
 If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file is not open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EBADF**.
 
@@ -57,15 +57,15 @@ For more information about this and other return codes, see [_doserrno, errno, _
 
 ## Remarks
 
-The `_read` function reads a maximum of *count* bytes into *buffer* from the file associated with *fd*. The read operation begins at the current position of the file pointer associated with the given file. After the read operation, the file pointer points to the next unread character.
+The **_read** function reads a maximum of *count* bytes into *buffer* from the file associated with *fd*. The read operation begins at the current position of the file pointer associated with the given file. After the read operation, the file pointer points to the next unread character.
 
-If the file was opened in text mode, the read terminates when `_read` encounters a CTRL+Z character, which is treated as an end-of-file indicator. Use [_lseek](lseek-lseeki64.md) to clear the end-of-file indicator.
+If the file was opened in text mode, the read terminates when **_read** encounters a CTRL+Z character, which is treated as an end-of-file indicator. Use [_lseek](lseek-lseeki64.md) to clear the end-of-file indicator.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_read`|\<io.h>|
+|**_read**|\<io.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

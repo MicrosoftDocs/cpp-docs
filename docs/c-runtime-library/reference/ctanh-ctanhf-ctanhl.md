@@ -53,20 +53,20 @@ A complex number that represents an angle, in radians.
 
 The complex hyperbolic tangent of *z*.
 
-|Input|SEH Exception|`_matherr` Exception|
+|Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|none|_DOMAIN|
 |± ∞ (tan, tanf)|INVALID|_DOMAIN|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `ctanh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `ctanh` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **ctanh** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **ctanh** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`ctanh`,               `ctanhf`, `ctanhl`|\<complex.h>|\<ccomplex>|
+|**ctanh**,               **ctanhf**, **ctanhl**|\<complex.h>|\<ccomplex>|
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

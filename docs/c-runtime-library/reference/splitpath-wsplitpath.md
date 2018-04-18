@@ -49,10 +49,10 @@ void _wsplitpath(
 Full path.
 
 *drive*
-Drive letter, followed by a colon (`:`). You can pass **NULL** for this parameter if you do not need the drive letter.
+Drive letter, followed by a colon (**:**). You can pass **NULL** for this parameter if you do not need the drive letter.
 
 *dir*
-Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
+Directory path, including trailing slash. Forward slashes ( **/** ), backslashes ( **\\** ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
 
 *fname*
 Base filename (no extension). You can pass **NULL** for this parameter if you do not need the filename.
@@ -62,7 +62,7 @@ Filename extension, including leading period (**.**). You can pass **NULL** for 
 
 ## Remarks
 
-The `_splitpath` function breaks a path into its four components. `_splitpath` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath` is a wide-character version of `_splitpath`; the arguments to `_wsplitpath` are wide-character strings. These functions behave identically otherwise.
+The **_splitpath** function breaks a path into its four components. **_splitpath** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **_wsplitpath** is a wide-character version of **_splitpath**; the arguments to **_wsplitpath** are wide-character strings. These functions behave identically otherwise.
 
 **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). More secure versions of these functions are available; see [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
@@ -70,9 +70,9 @@ The `_splitpath` function breaks a path into its four components. `_splitpath` a
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tsplitpath`|`_splitpath`|`_splitpath`|`_wsplitpath`|
+|**_tsplitpath**|**_splitpath**|**_splitpath**|**_wsplitpath**|
 
-Each component of the full path is stored in a separate buffer; the manifest constants `_MAX_DRIVE`, `_MAX_DIR`, `_MAX_FNAME`, and `_MAX_EXT` (defined in STDLIB.H) specify the maximum size for each file component. File components that are larger than the corresponding manifest constants cause heap corruption.
+Each component of the full path is stored in a separate buffer; the manifest constants **_MAX_DRIVE**, **_MAX_DIR**, **_MAX_FNAME**, and **_MAX_EXT** (defined in STDLIB.H) specify the maximum size for each file component. File components that are larger than the corresponding manifest constants cause heap corruption.
 
 Each buffer must be as large as its corresponding manifest constant to avoid potential buffer overrun.
 
@@ -80,14 +80,14 @@ The following table lists the values of the manifest constants.
 
 |Name|Value|
 |----------|-----------|
-|_MAX_DRIVE|3|
-|_MAX_DIR|256|
-|_MAX_FNAME|256|
-|_MAX_EXT|256|
+|**_MAX_DRIVE**|3|
+|**_MAX_DIR**|256|
+|**_MAX_FNAME**|256|
+|**_MAX_EXT**|256|
 
-If the full path does not contain a component (for example, a filename), `_splitpath` assigns empty strings to the corresponding buffers.
+If the full path does not contain a component (for example, a filename), **_splitpath** assigns empty strings to the corresponding buffers.
 
-You can pass **NULL** to `_splitpath` for any parameter other than *path* that you do not need.
+You can pass **NULL** to **_splitpath** for any parameter other than *path* that you do not need.
 
 If *path* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
 
@@ -95,10 +95,10 @@ If *path* is **NULL**, the invalid parameter handler is invoked, as described in
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_splitpath`|\<stdlib.h>|
-|`_wsplitpath`|\<stdlib.h> or \<wchar.h>|
+|**_splitpath**|\<stdlib.h>|
+|**_wsplitpath**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

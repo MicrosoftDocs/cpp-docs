@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Loads and runs new child processes.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -70,16 +70,16 @@ For more information about these and other return codes, see [errno, _doserrno, 
 
 ## Remarks
 
-Each of these functions loads and executes a new process, and passes an array of pointers to command-line arguments and an array of pointers to environment settings. These functions use the `PATH` environment variable to find the file to execute.
+Each of these functions loads and executes a new process, and passes an array of pointers to command-line arguments and an array of pointers to environment settings. These functions use the **PATH** environment variable to find the file to execute.
 
-The `_execvpe` functions validate their parameters. If the *cmdname* is a null pointer, or if *argv* is a null pointer, a pointer to an empty array, or a pointer to an array that contains an empty string as the first argument, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
+The **_execvpe** functions validate their parameters. If the *cmdname* is a null pointer, or if *argv* is a null pointer, a pointer to an empty array, or a pointer to an array that contains an empty string as the first argument, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
 
 ## Requirements
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|`_execvpe`|\<process.h>|\<errno.h>|
-|`_wexecvpe`|\<process.h> or \<wchar.h>|\<errno.h>|
+|**_execvpe**|\<process.h>|\<errno.h>|
+|**_wexecvpe**|\<process.h> or \<wchar.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

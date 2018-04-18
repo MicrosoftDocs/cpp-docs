@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Loads and executes new child processes.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -70,16 +70,16 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter and using the `PATH` environment variable to find the file to execute.
+Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter and using the **PATH** environment variable to find the file to execute.
 
-The `_execlp` functions validate their parameters. If *cmdname* or *arg0* is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is launched.
+The **_execlp** functions validate their parameters. If *cmdname* or *arg0* is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is launched.
 
 ## Requirements
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|`_execlp`|\<process.h>|\<errno.h>|
-|`_wexeclp`|\<process.h> or \<wchar.h>|\<errno.h>|
+|**_execlp**|\<process.h>|\<errno.h>|
+|**_wexeclp**|\<process.h> or \<wchar.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

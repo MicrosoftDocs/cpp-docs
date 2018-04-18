@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Sets characters of a string to a character. These versions of [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
->  `_mbsset_s` and `_mbsset_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsset_s** and **_mbsset_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -87,7 +87,7 @@ These functions validate their arguments. If *str* is a null pointer, or the *nu
 
 ## Remarks
 
-The `_strset_s` function sets all the characters of *str* to *c* (converted to **char**), except the terminating null character. `_wcsset_s` and `_mbsset_s` are wide-character and multibyte-character versions of `_strset_s`. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The **_strset_s** function sets all the characters of *str* to *c* (converted to **char**), except the terminating null character. **_wcsset_s** and **_mbsset_s** are wide-character and multibyte-character versions of **_strset_s**. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -97,18 +97,18 @@ The debug versions of these functions first fill the buffer with 0xFD. To disabl
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsset_s`|`_strset_s`|`_mbsset_s`|`_wcsset_s`|
-|`_tcsset_s_l`|`_strset_s_l`|`_mbsset_s_l`|`_wcsset_s_l`|
+|**_tcsset_s**|**_strset_s**|**_mbsset_s**|**_wcsset_s**|
+|**_tcsset_s_l**|**_strset_s_l**|**_mbsset_s_l**|**_wcsset_s_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strset_s`|\<string.h>|
-|`_strset_s_l`|\<tchar.h>|
-|`_wcsset_s`|\<string.h> or \<wchar.h>|
-|`_wcsset_s_l`|\<tchar.h>|
-|`_mbsset_s`, `_mbsset_s_l`|\<mbstring.h>|
+|**_strset_s**|\<string.h>|
+|**_strset_s_l**|\<tchar.h>|
+|**_wcsset_s**|\<string.h> or \<wchar.h>|
+|**_wcsset_s_l**|\<tchar.h>|
+|**_mbsset_s**, **_mbsset_s_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

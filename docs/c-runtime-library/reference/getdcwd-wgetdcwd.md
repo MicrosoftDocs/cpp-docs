@@ -49,10 +49,10 @@ If the specified drive is not available, or the kind of drive (for example, remo
 *buffer*<br/>
 Storage location for the path, or **NULL**.
 
-If **NULL** is specified, this function allocates a buffer of at least *maxlen* size by using **malloc**, and the return value of `_getdcwd` is a pointer to the allocated buffer. The buffer can be freed by calling `free` and passing it the pointer.
+If **NULL** is specified, this function allocates a buffer of at least *maxlen* size by using **malloc**, and the return value of **_getdcwd** is a pointer to the allocated buffer. The buffer can be freed by calling **free** and passing it the pointer.
 
 *maxlen*<br/>
-A nonzero positive integer that specifies the maximum length of the path, in characters: **char** for `_getdcwd` and **wchar_t** for `_wgetdcwd`.
+A nonzero positive integer that specifies the maximum length of the path, in characters: **char** for **_getdcwd** and **wchar_t** for **_wgetdcwd**.
 
 If *maxlen* is not greater than zero, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.
 
@@ -64,28 +64,28 @@ If *buffer* is specified as **NULL** and there is insufficient memory to allocat
 
 ## Remarks
 
-The `_getdcwd` function gets the full path of the current working directory on the specified drive and stores it at *buffer*. If the current working directory is set to the root, the string ends with a backslash (\\). If the current working directory is set to a directory other than the root, the string ends with the name of the directory and not with a backslash.
+The **_getdcwd** function gets the full path of the current working directory on the specified drive and stores it at *buffer*. If the current working directory is set to the root, the string ends with a backslash (\\). If the current working directory is set to a directory other than the root, the string ends with the name of the directory and not with a backslash.
 
-`_wgetdcwd` is a wide-character version of `_getdcwd`, and its *buffer* parameter and return value are wide-character strings. Otherwise, `_wgetdcwd` and `_getdcwd` behave identically.
+**_wgetdcwd** is a wide-character version of **_getdcwd**, and its *buffer* parameter and return value are wide-character strings. Otherwise, **_wgetdcwd** and **_getdcwd** behave identically.
 
 This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **GetFullPathName**.
 
-The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md).
+The version of this function that has the **_nolock** suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md).
 
-When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to `_getdcwd` and `_wgetdcwd` are replaced by calls to `_getdcwd_dbg` and `_wgetdcwd_dbg` so that you can debug memory allocations. For more information, see[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md).
+When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getdcwd** and **_wgetdcwd** are replaced by calls to **_getdcwd_dbg** and **_wgetdcwd_dbg** so that you can debug memory allocations. For more information, see[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md).
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tgetdcwd`|`_getdcwd`|`_getdcwd`|`_wgetdcwd`|
+|**_tgetdcwd**|**_getdcwd**|**_getdcwd**|**_wgetdcwd**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getdcwd`|\<direct.h>|
-|`_wgetdcwd`|\<direct.h> or \<wchar.h>|
+|**_getdcwd**|\<direct.h>|
+|**_wgetdcwd**|\<direct.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

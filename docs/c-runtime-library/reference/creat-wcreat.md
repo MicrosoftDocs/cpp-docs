@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _creat, _wcreat
 
-Creates a new file. `_creat` and `_wcreat` have been deprecated; use [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md) instead.
+Creates a new file. **_creat** and **_wcreat** have been deprecated; use [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md) instead.
 
 ## Syntax
 
@@ -61,34 +61,34 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_creat` function creates a new file or opens and truncates an existing one. `_wcreat` is a wide-character version of `_creat`; the *filename* argument to `_wcreat` is a wide-character string. `_wcreat` and `_creat` behave identically otherwise.
+The **_creat** function creates a new file or opens and truncates an existing one. **_wcreat** is a wide-character version of **_creat**; the *filename* argument to **_wcreat** is a wide-character string. **_wcreat** and **_creat** behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcreat`|`_creat`|`_creat`|`_wcreat`|
+|**_tcreat**|**_creat**|**_creat**|**_wcreat**|
 
-If the file specified by *filename* does not exist, a new file is created with the given permission setting and is opened for writing. If the file already exists and its permission setting allows writing, `_creat` truncates the file to length 0, destroying the previous contents, and opens it for writing. The permission setting, *pmode*, applies to newly created files only. The new file receives the specified permission setting after it is closed for the first time. The integer expression *pmode* contains one or both of the manifest constants `_S_IWRITE` and `_S_IREAD`, defined in SYS\Stat.h. When both constants are given, they are joined with the bitwise `OR` operator ( **&#124;** ). The *pmode* parameter is set to one of the following values.
+If the file specified by *filename* does not exist, a new file is created with the given permission setting and is opened for writing. If the file already exists and its permission setting allows writing, **_creat** truncates the file to length 0, destroying the previous contents, and opens it for writing. The permission setting, *pmode*, applies to newly created files only. The new file receives the specified permission setting after it is closed for the first time. The integer expression *pmode* contains one or both of the manifest constants **_S_IWRITE** and **_S_IREAD**, defined in SYS\Stat.h. When both constants are given, they are joined with the bitwise or operator ( **&#124;** ). The *pmode* parameter is set to one of the following values.
 
 |Value|Definition|
 |-----------|----------------|
-|`_S_IWRITE`|Writing permitted.|
-|`_S_IREAD`|Reading permitted.|
-|`_S_IREAD &#124; _S_IWRITE`|Reading and writing permitted.|
+|**_S_IWRITE**|Writing permitted.|
+|**_S_IREAD**|Reading permitted.|
+|**_S_IREAD** &#124; **_S_IWRITE**|Reading and writing permitted.|
 
-If write permission is not given, the file is read-only. All files are always readable; it is impossible to give write-only permission. The modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are then equivalent. Files opened using `_creat` are always opened in compatibility mode (see [_sopen](sopen-wsopen.md)) with `_SH_DENYNO`.
+If write permission is not given, the file is read-only. All files are always readable; it is impossible to give write-only permission. The modes **_S_IWRITE** and **_S_IREAD** | **_S_IWRITE** are then equivalent. Files opened using **_creat** are always opened in compatibility mode (see [_sopen](sopen-wsopen.md)) with **_SH_DENYNO**.
 
-`_creat` applies the current file-permission mask to *pmode* before setting the permissions (see [_umask](umask.md)). `_creat` is provided primarily for compatibility with previous libraries. A call to `_open` with `_O_CREAT` and `_O_TRUNC` in the *oflag* parameter is equivalent to `_creat` and is preferable for new code.
+**_creat** applies the current file-permission mask to *pmode* before setting the permissions (see [_umask](umask.md)). **_creat** is provided primarily for compatibility with previous libraries. A call to **_open** with **_O_CREAT** and **_O_TRUNC** in the *oflag* parameter is equivalent to **_creat** and is preferable for new code.
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_creat`|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
-|`_wcreat`|\<io.h> or \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+|**_creat**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+|**_wcreat**|\<io.h> or \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

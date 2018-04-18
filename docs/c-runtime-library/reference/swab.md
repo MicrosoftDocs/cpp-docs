@@ -61,7 +61,7 @@ If *n* is even, the **_swab** function copies *n* bytes from *src*, swaps each p
 |-------------|---------------------|
 |**_swab**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

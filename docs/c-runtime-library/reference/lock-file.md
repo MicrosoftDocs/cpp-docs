@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _lock_file
 
-Locks a `FILE` object to ensure consistency for threads accessing the `FILE` object concurrently.
+Locks a **FILE** object to ensure consistency for threads accessing the **FILE** object concurrently.
 
 ## Syntax
 
@@ -37,15 +37,15 @@ File handle.
 
 ## Remarks
 
-The `_lock_file` function locks the `FILE` object specified by *file*. The underlying file is not locked by `_lock_file`. Use [_unlock_file](unlock-file.md) to release the lock on the file. Calls to `_lock_file` and `_unlock_file` must be matched in a thread.
+The **_lock_file** function locks the **FILE** object specified by *file*. The underlying file is not locked by **_lock_file**. Use [_unlock_file](unlock-file.md) to release the lock on the file. Calls to **_lock_file** and **_unlock_file** must be matched in a thread.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_lock_file`|\<stdio.h>|
+|**_lock_file**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

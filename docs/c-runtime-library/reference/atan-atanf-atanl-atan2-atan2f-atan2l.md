@@ -57,7 +57,7 @@ Any numbers.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± **QNAN**,**IND**|none|**_DOMAIN**|
+|± **QNAN**, **IND**|none|**_DOMAIN**|
 
 ## Remarks
 

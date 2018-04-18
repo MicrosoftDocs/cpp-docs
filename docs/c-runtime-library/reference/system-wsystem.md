@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Executes a command.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -45,7 +45,7 @@ The command to be executed.
 
 ## Return Value
 
-If *command* is **NULL** and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets **errno** to **ENOENT**. If *command* is not **NULL**, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and **errno** is set to one of the following values:
+If *command* is **NULL** and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets **errno** to **ENOENT**. If *command* is not **NULL**, **system** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and **errno** is set to one of the following values:
 
 |||
 |-|-|
@@ -58,30 +58,30 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The `system` function passes *command* to the command interpreter, which executes the string as an operating-system command. `system` uses the `COMSPEC` and `PATH` environment variables to locate the command-interpreter file CMD.exe. If *command* is **NULL**, the function just checks whether the command interpreter exists.
+The **system** function passes *command* to the command interpreter, which executes the string as an operating-system command. **system** uses the **COMSPEC** and **PATH** environment variables to locate the command-interpreter file CMD.exe. If *command* is **NULL**, the function just checks whether the command interpreter exists.
 
-You must explicitly flush—by using `fflush` or `_flushall`—or close any stream before you call `system`.
+You must explicitly flush, by using [fflush](fflush.md) or [_flushall](flushall.md), or close any stream before you call **system**.
 
-`_wsystem` is a wide-character version of `system`; the *command* argument to `_wsystem` is a wide-character string. These functions behave identically otherwise.
+**_wsystem** is a wide-character version of **system**; the *command* argument to **_wsystem** is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tsystem`|`system`|`system`|`_wsystem`|
+|**_tsystem**|**system**|**system**|**_wsystem**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`system`|\<process.h> or \<stdlib.h>|
-|`_wsystem`|\<process.h> or \<stdlib.h> or \<wchar.h>|
+|**system**|\<process.h> or \<stdlib.h>|
+|**_wsystem**|\<process.h> or \<stdlib.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-This example uses `system` to TYPE a text file.
+This example uses **system** to TYPE a text file.
 
 ```C
 // crt_system.c

@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Converts a double-byte multibyte character to a corresponding single-byte multibyte character.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -49,22 +49,22 @@ Locale to use.
 
 ## Return Value
 
-If successful, `_mbctombb` and `_mbctombb_l` returns the single-byte character that corresponds to *c*; otherwise it returns *c*.
+If successful, **_mbctombb** and **_mbctombb_l** returns the single-byte character that corresponds to *c*; otherwise it returns *c*.
 
 ## Remarks
 
-The `_mbctombb` and `_mbctombb_l` functions convert a given multibyte character to a corresponding single-byte multibyte character. Characters must correspond to single-byte characters within the range 0x20 - 0x7E or 0xA1 - 0xDF to be converted.
+The **_mbctombb** and **_mbctombb_l** functions convert a given multibyte character to a corresponding single-byte multibyte character. Characters must correspond to single-byte characters within the range 0x20 - 0x7E or 0xA1 - 0xDF to be converted.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The version of this function without the **_l** suffix uses the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-In previous versions, `_mbctombb` was called `zentohan`. Use `_mbctombb` instead.
+In previous versions, **_mbctombb** was called **zentohan**. Use **_mbctombb** instead.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mbctombb`|\<mbstring.h>|
-|`_mbctombb_l`|\<mbstring.h>|
+|**_mbctombb**|\<mbstring.h>|
+|**_mbctombb_l**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

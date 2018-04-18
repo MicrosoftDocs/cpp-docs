@@ -53,27 +53,27 @@ The locale to use.
 
 ## Return Value
 
-Each of these routines returns nonzero if *c* is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if *c* is a decimal digit (0 - 9). `iswdigit` returns a nonzero value if *c* is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if *c* does not satisfy the test condition.
+Each of these routines returns nonzero if *c* is a particular representation of a decimal-digit character. **isdigit** returns a nonzero value if *c* is a decimal digit (0 - 9). **iswdigit** returns a nonzero value if *c* is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if *c* does not satisfy the test condition.
 
 The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-The behavior of `isdigit` and `_isdigit_l` is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
+The behavior of **isdigit** and **_isdigit_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_istdigit`|`isdigit`|[_ismbcdigit](ismbcalnum-functions.md)|`iswdigit`|
-|`_istdigit_l`|`_isdigit_l`|[_ismbcdigit_l](ismbcalnum-functions.md)|`_iswdigit_l`|
+|**_istdigit**|**isdigit**|[_ismbcdigit](ismbcalnum-functions.md)|**iswdigit**|
+|**_istdigit_l**|**_isdigit_l**|[_ismbcdigit_l](ismbcalnum-functions.md)|**_iswdigit_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`isdigit`|\<ctype.h>|
-|`iswdigit`|\<ctype.h> or \<wchar.h>|
-|`_isdigit_l`|\<ctype.h>|
-|`_iswdigit_l`|\<ctype.h> or \<wchar.h>|
+|**isdigit**|\<ctype.h>|
+|**iswdigit**|\<ctype.h> or \<wchar.h>|
+|**_isdigit_l**|\<ctype.h>|
+|**_iswdigit_l**|\<ctype.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

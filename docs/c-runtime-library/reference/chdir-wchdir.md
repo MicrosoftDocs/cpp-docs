@@ -46,28 +46,28 @@ These functions return a value of 0 if successful. A return value of -1 indicate
 
 ## Remarks
 
-The `_chdir` function changes the current working directory to the directory specified by *dirname*. The *dirname* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *dirname*, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:
+The **_chdir** function changes the current working directory to the directory specified by *dirname*. The *dirname* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *dirname*, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:
 
 ```C
-_chdir("c:\\temp");
+_chdir("c:\temp");
 ```
 
-When you use the optional backslash character (`\`) in paths, you must place two backslashes (`\\`) in a C string literal to represent a single backslash (`\`).
+When you use the optional backslash character (**&#92;**) in paths, you must place two backslashes (**&#92;&#92;**) in a C string literal to represent a single backslash (**&#92;**).
 
-`_wchdir` is a wide-character version of `_chdir`; the *dirname* argument to `_wchdir` is a wide-character string`. _wchdir` and `_chdir` behave identically otherwise.
+**_wchdir** is a wide-character version of **_chdir**; the *dirname* argument to **_wchdir** is a wide-character string. **_wchdir** and **_chdir** behave identically otherwise.
 
 ### Generic-Text Routine Mapping:
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tchdir`|`_chdir`|`_chdir`|`_wchdir`|
+|**_tchdir**|**_chdir**|**_chdir**|**_wchdir**|
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_chdir`|\<direct.h>|\<errno.h>|
-|`_wchdir`|\<direct.h> or \<wchar.h>|\<errno.h>|
+|**_chdir**|\<direct.h>|\<errno.h>|
+|**_wchdir**|\<direct.h> or \<wchar.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

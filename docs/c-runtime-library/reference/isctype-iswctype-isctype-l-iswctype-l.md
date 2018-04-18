@@ -68,8 +68,8 @@ The behavior of **_isctype** and **_isctype_l** is undefined if *c* is not EOF o
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`n/a`|**_isctype**|`n/a`|**_iswctype**|
-|`n/a`|**_isctype_l**|`n/a`|**_iswctype_l**|
+|n/a|**_isctype**|n/a|**_iswctype**|
+|n/a|**_isctype_l**|n/a|**_iswctype_l**|
 
 ## Requirements
 
@@ -80,7 +80,7 @@ The behavior of **_isctype** and **_isctype_l** is undefined if *c* is not EOF o
 |**_isctype_l**|\<ctype.h>|
 |**_iswctype_l**|\<ctype.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

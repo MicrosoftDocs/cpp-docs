@@ -42,7 +42,7 @@ Input stream.
 
 ## Return Value
 
-Returns the character read. To indicate a read error or end-of-file condition, `getc` returns **EOF**, and `getwc` returns **WEOF**. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If *stream* is **NULL**, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** (or **WEOF** for `getwc`) and set **errno** to **EINVAL**.
+Returns the character read. To indicate a read error or end-of-file condition, **getc** returns **EOF**, and **getwc** returns **WEOF**. For **getc**, use **ferror** or **feof** to check for an error or for end of file. If *stream* is **NULL**, **getc** and **getwc** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** (or **WEOF** for **getwc**) and set **errno** to **EINVAL**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 
@@ -56,23 +56,23 @@ Routine-specific remarks follow.
 
 |Routine|Remarks|
 |-------------|-------------|
-|`getc`|Same as `fgetc`, but implemented as a function and as a macro.|
-|`getwc`|Wide-character version of `getc`. Reads a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.|
+|**getc**|Same as **fgetc**, but implemented as a function and as a macro.|
+|**getwc**|Wide-character version of **getc**. Reads a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.|
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_gettc`|`getc`|`getc`|`getwc`|
+|**_gettc**|**getc**|**getc**|**getwc**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`getc`|\<stdio.h>|
-|`getwc`|\<stdio.h> or \<wchar.h>|
+|**getc**|\<stdio.h>|
+|**getwc**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

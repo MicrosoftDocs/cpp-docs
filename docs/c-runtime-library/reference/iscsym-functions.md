@@ -69,21 +69,21 @@ The locale to use.
 
 ## Return Value
 
-Both `__iscsym` and `__iswcsym` return a nonzero value if *c* is a letter, underscore, or digit. Both `__iscsymf` and `__iswcsymf` return a nonzero value if *c* is a letter or an underscore. Each of these routines returns 0 if *c* does not satisfy the test condition. The versions of these functions with the **_l** suffix are identical except that they use the *locale* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+Both **__iscsym** and **__iswcsym** return a nonzero value if *c* is a letter, underscore, or digit. Both **__iscsymf** and **__iswcsymf** return a nonzero value if *c* is a letter or an underscore. Each of these routines returns 0 if *c* does not satisfy the test condition. The versions of these functions with the **_l** suffix are identical except that they use the *locale* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Remarks
 
 These routines are defined as macros unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined. When you use the macro versions of these routines, the arguments can be evaluated more than once. Be careful when you use expressions that have side effects within the argument list.
 
-For backward compatibility, `iscsym` and `iscsymf` are defined as macros only when [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise they are undefined.
+For backward compatibility, **iscsym** and **iscsymf** are defined as macros only when [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise they are undefined.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
+|**iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
 
-The `iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, and `_iswcsymf_l` routines are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, and **_iswcsymf_l** routines are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

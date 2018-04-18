@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Reads formatted data from the console. These more secure versions of [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -69,12 +69,12 @@ These functions validate their parameters. If *format* is a null pointer, these 
 
 ## Remarks
 
-The `_cscanf_s` function reads data directly from the console into the locations given by *argument*. The [_getche](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf_s` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
+The **_cscanf_s** function reads data directly from the console into the locations given by *argument*. The [_getche](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) function. While **_cscanf_s** normally echoes the input character, it does not do so if the last call was to **_ungetch**.
 
-Like other secure versions of functions in the `scanf` family, `_cscanf_s` and `_cswscanf_s` require size arguments for the type field characters `c`, `C`, `s`, `S`, and `[`. For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
+Like other secure versions of functions in the **scanf** family, **_cscanf_s** and **_cswscanf_s** require size arguments for the type field characters **c**, **C**, **s**, **S**, and **[**. For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
->  The size parameter is of type **unsigned**, not **size_t**.
+> The size parameter is of type **unsigned**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -82,15 +82,15 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |TCHAR.H routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcscanf_s`|`_cscanf_s`|`_cscanf_s`|`_cwscanf_s`|
-|`_tcscanf_s_l`|`_cscanf_s_l`|`_cscanf_s_l`|`_cwscanf_s_l`|
+|**_tcscanf_s**|**_cscanf_s**|**_cscanf_s**|**_cwscanf_s**|
+|**_tcscanf_s_l**|**_cscanf_s_l**|**_cscanf_s_l**|**_cwscanf_s_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_cscanf_s`,`_cscanf_s_l`|\<conio.h>|
-|`_cwscanf_s`, `_cwscanf_s_l`|\<conio.h> or \<wchar.h>|
+|**_cscanf_s**, **_cscanf_s_l**|\<conio.h>|
+|**_cwscanf_s**, **_cwscanf_s_l**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

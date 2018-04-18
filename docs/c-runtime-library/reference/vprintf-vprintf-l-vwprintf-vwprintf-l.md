@@ -62,38 +62,38 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-`vprintf` and `vwprintf` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *format* is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
+**vprintf** and **vwprintf** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *format* is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats and writes the given data to `stdout`.
+Each of these functions takes a pointer to an argument list, then formats and writes the given data to **stdout**.
 
-`vwprintf` is the wide-character version of `vprintf`; the two functions behave identically if the stream is opened in ANSI mode. `vprintf` doesn't currently support output into a UNICODE stream.
+**vwprintf** is the wide-character version of **vprintf**; the two functions behave identically if the stream is opened in ANSI mode. **vprintf** doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). Note that invalid format strings are detected and result in an error.
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). Note that invalid format strings are detected and result in an error.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtprintf`|`vprintf`|`vprintf`|`vwprintf`|
-|`_vtprintf_l`|`_vprintf_l`|`_vprintf_l`|`_vwprintf_l`|
+|**_vtprintf**|**vprintf**|**vprintf**|**vwprintf**|
+|**_vtprintf_l**|**_vprintf_l**|**_vprintf_l**|**_vwprintf_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`vprintf`, `_vprintf_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`vwprintf`, `_vwprintf_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**vprintf**, **_vprintf_l**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**vwprintf**, **_vwprintf_l**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

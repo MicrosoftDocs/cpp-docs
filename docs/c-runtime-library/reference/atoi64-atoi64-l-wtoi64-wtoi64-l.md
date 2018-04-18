@@ -53,9 +53,9 @@ Locale to use.
 
 ## Return Value
 
-Each function returns the **__int64** value produced by interpreting the input characters as a number. The return value is 0 for `_atoi64` if the input cannot be converted to a value of that type.
+Each function returns the **__int64** value produced by interpreting the input characters as a number. The return value is 0 for **_atoi64** if the input cannot be converted to a value of that type.
 
-In the case of overflow with large positive integral values, `_atoi64` returns `I64_MAX` and `I64_MIN` in the case of overflow with large negative integral values.
+In the case of overflow with large positive integral values, **_atoi64** returns **I64_MAX** and **I64_MIN** in the case of overflow with large negative integral values.
 
 In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
@@ -65,13 +65,13 @@ These functions convert a character string to a 64-bit integer value.
 
 The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character might be the null character ('\0' or L'\0') terminating the string.
 
-The *str* argument to `_atoi64` has the following form:
+The *str* argument to **_atoi64** has the following form:
 
 > [*whitespace*] [*sign*] [*digits*]
 
 A *whitespace* consists of space or tab characters, which are ignored; *sign* is either plus (+) or minus (-); and *digits* are one or more digits.
 
-`_wtoi64` is identical to `_atoi64` except that it takes a wide character string as a parameter.
+**_wtoi64** is identical to **_atoi64** except that it takes a wide character string as a parameter.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -79,19 +79,19 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tstoi64`|`_atoi64`|`_atoi64`|`_wtoi64`|
-|`_ttoi64`|`_atoi64`|`_atoi64`|`_wtoi64`|
+|**_tstoi64**|**_atoi64**|**_atoi64**|**_wtoi64**|
+|**_ttoi64**|**_atoi64**|**_atoi64**|**_wtoi64**|
 
 ## Requirements
 
 |Routines|Required header|
 |--------------|---------------------|
-|`_atoi64`, `_atoi64_l`|\<stdlib.h>|
-|`_wtoi64`, `_wtoi64_l`|\<stdlib.h> or \<wchar.h>|
+|**_atoi64**, **_atoi64_l**|\<stdlib.h>|
+|**_wtoi64**, **_wtoi64_l**|\<stdlib.h> or \<wchar.h>|
 
 ## Example
 
-This program shows how numbers stored as strings can be converted to numeric values using the `_atoi64` functions.
+This program shows how numbers stored as strings can be converted to numeric values using the **_atoi64** functions.
 
 ```C
 // crt_atoi64.c

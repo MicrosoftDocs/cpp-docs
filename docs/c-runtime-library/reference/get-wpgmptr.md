@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _get_wpgmptr
 
-Gets the current value of the `_wpgmptr` global variable.
+Gets the current value of the **_wpgmptr** global variable.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ errno_t _get_wpgmptr( 
 ### Parameters
 
 *pValue*<br/>
-A pointer to a string to be filled with the current value of the `_wpgmptr` variable.
+A pointer to a string to be filled with the current value of the **_wpgmptr** variable.
 
 ## Return Value
 
@@ -43,15 +43,15 @@ Returns zero if successful; an error code on failure. If *pValue* is **NULL**, t
 
 ## Remarks
 
-Only call `_get_wpgmptr` if your program has a wide entry point, like `wmain()` or `wWinMain()`. The `_wpgmptr` global variable contains the full path to the executable associated with the process as a wide-character string. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
+Only call **_get_wpgmptr** if your program has a wide entry point, like **wmain()** or **wWinMain()**. The **_wpgmptr** global variable contains the full path to the executable associated with the process as a wide-character string. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_wpgmptr`|\<stdlib.h>|
+|**_get_wpgmptr**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

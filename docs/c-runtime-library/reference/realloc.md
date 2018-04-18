@@ -43,7 +43,7 @@ New size in bytes.
 
 ## Return Value
 
-`realloc` returns a **void** pointer to the reallocated (and possibly moved) memory block.
+**realloc** returns a **void** pointer to the reallocated (and possibly moved) memory block.
 
 If there is not enough available memory to expand the block to the given size, the original block is left unchanged, and **NULL** is returned.
 
@@ -53,13 +53,13 @@ The return value points to a storage space that is guaranteed to be suitably ali
 
 ## Remarks
 
-The `realloc` function changes the size of an allocated memory block. The *memblock* argument points to the beginning of the memory block. If *memblock* is **NULL**, `realloc` behaves the same way as `malloc` and allocates a new block of *size* bytes. If *memblock* is not **NULL**, it should be a pointer returned by a previous call to `calloc`, `malloc`, or `realloc`.
+The **realloc** function changes the size of an allocated memory block. The *memblock* argument points to the beginning of the memory block. If *memblock* is **NULL**, **realloc** behaves the same way as **malloc** and allocates a new block of *size* bytes. If *memblock* is not **NULL**, it should be a pointer returned by a previous call to **calloc**, **malloc**, or **realloc**.
 
-The *size* argument gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes, although the new block can be in a different location. Because the new block can be in a new memory location, the pointer returned by `realloc` is not guaranteed to be the pointer passed through the *memblock* argument. `realloc` does not zero newly allocated memory in the case of buffer growth.
+The *size* argument gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes, although the new block can be in a different location. Because the new block can be in a new memory location, the pointer returned by **realloc** is not guaranteed to be the pointer passed through the *memblock* argument. **realloc** does not zero newly allocated memory in the case of buffer growth.
 
-`realloc` sets **errno** to **ENOMEM** if the memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**realloc** sets **errno** to **ENOMEM** if the memory allocation fails or if the amount of memory requested exceeds **_HEAP_MAXREQ**. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-`realloc` calls `malloc` in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `realloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call
+**realloc** calls **malloc** in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **realloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call
 
 ```C
 _set_new_mode(1);
@@ -67,17 +67,17 @@ _set_new_mode(1);
 
 early in ones program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 
-When the application is linked with a debug version of the C run-time libraries, `realloc` resolves to [_realloc_dbg](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **realloc** resolves to [_realloc_dbg](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
-`realloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
+**realloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`realloc`|\<stdlib.h> and \<malloc.h>|
+|**realloc**|\<stdlib.h> and \<malloc.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

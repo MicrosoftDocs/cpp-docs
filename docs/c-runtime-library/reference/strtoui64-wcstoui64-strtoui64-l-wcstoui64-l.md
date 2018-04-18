@@ -67,9 +67,9 @@ Locale to use.
 
 ## Return Value
 
-`_strtoui64` returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns `_UI64_MAX`. `_strtoui64` returns 0 if no conversion can be performed.
+**_strtoui64** returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns **_UI64_MAX**. **_strtoui64** returns 0 if no conversion can be performed.
 
-`_UI64_MAX` is defined in LIMITS.H.
+**_UI64_MAX** is defined in LIMITS.H.
 
 If *strSource* is **NULL** or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
@@ -77,7 +77,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The `_strtoui64` function converts *strSource* to an **unsigned** **__int64**. `_wcstoui64` is a wide-character version of `_strtoui64`; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
+The **_strtoui64** function converts *strSource* to an **unsigned** **__int64**. **_wcstoui64** is a wide-character version of **_strtoui64**; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
 
 Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*.
 
@@ -85,14 +85,14 @@ Both functions stop reading the string *strSource* at the first character they c
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoui64`|`_strtoui64`|`_strtoui64`|`_wstrtoui64`|
-|`_tcstoui64_l`|`_strtoui64_l`|`_strtoui64_l`|`_wstrtoui64_l`|
+|**_tcstoui64**|**_strtoui64**|**_strtoui64**|**_wstrtoui64**|
+|**_tcstoui64_l**|**_strtoui64_l**|**_strtoui64_l**|**_wstrtoui64_l**|
 
-The current locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoui64_l` and `_wcstoui64_l` are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The current locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; **_strtoui64_l** and **_wcstoui64_l** are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
-`_strtoui64` expects *strSource* to point to a string of the following form:
+**_strtoui64** expects *strSource* to point to a string of the following form:
 
 > [*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*digits*  &#124; *letters*]
 
@@ -102,12 +102,12 @@ A *whitespace* may consist of space and tab characters, which are ignored. *digi
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strtoui64`|\<stdlib.h>|
-|`_wcstoui64`|\<stdlib.h> or \<wchar.h>|
-|`_strtoui64_l`|\<stdlib.h>|
-|`_wcstoui64_l`|\<stdlib.h> or \<wchar.h>|
+|**_strtoui64**|\<stdlib.h>|
+|**_wcstoui64**|\<stdlib.h> or \<wchar.h>|
+|**_strtoui64_l**|\<stdlib.h>|
+|**_wcstoui64_l**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

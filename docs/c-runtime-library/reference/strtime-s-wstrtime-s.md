@@ -76,9 +76,9 @@ Passing a value for *numberOfElements* that is greater than the actual size of t
 
 ## Remarks
 
-These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
+These functions provide more secure versions of [_strtime](strtime-wstrtime.md) and [_wstrtime](strtime-wstrtime.md). The **_strtime_s** function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as **hh:mm:ss** where **hh** is two digits representing the hour in 24-hour notation, **mm** is two digits representing the minutes past the hour, and **ss** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
 
-`_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.
+**_wstrtime** is a wide-character version of **_strtime**; the argument and return value of **_wstrtime** are wide-character strings. These functions behave identically otherwise.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -86,16 +86,16 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstrtime_s`|`_strtime_s`|`_strtime_s`|`_wstrtime_s`|
+|**_tstrtime_s**|**_strtime_s**|**_strtime_s**|**_wstrtime_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strtime_s`|\<time.h>|
-|`_wstrtime_s`|\<time.h> or \<wchar.h>|
+|**_strtime_s**|\<time.h>|
+|**_wstrtime_s**|\<time.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

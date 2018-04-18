@@ -41,7 +41,7 @@ int vfwscanf(
 ### Parameters
 
 *stream*<br/>
-Pointer to `FILE` structure.
+Pointer to **FILE** structure.
 
 *format*<br/>
 Format-control string.
@@ -51,21 +51,21 @@ Variable argument list.
 
 ## Return Value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that are read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is **EOF** for `vfscanf` and `vfwscanf`.
+Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that are read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is **EOF** for **vfscanf** and **vfwscanf**.
 
 These functions validate their parameters. If *stream* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
 ## Remarks
 
-The `vfscanf` function reads data from the current position of *stream* into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for `scanf`; see [scanf](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
+The **vfscanf** function reads data from the current position of *stream* into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [scanf](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
 
-`vfwscanf` is a wide-character version of `vfscanf`; the format argument to `vfwscanf` is a wide-character string. These functions behave identically identically if the stream is opened in ANSI mode. `vfscanf` doesn't support input from a UNICODE stream.
+**vfwscanf** is a wide-character version of **vfscanf**; the format argument to **vfwscanf** is a wide-character string. These functions behave identically identically if the stream is opened in ANSI mode. **vfscanf** doesn't support input from a UNICODE stream.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftscanf`|`vfscanf`|`vfscanf`|`vfwscanf`|
+|**_vftscanf**|**vfscanf**|**vfscanf**|**vfwscanf**|
 
 For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
@@ -73,8 +73,8 @@ For more information, see [Format Specification Fields: scanf and wscanf Functio
 
 |Function|Required header|
 |--------------|---------------------|
-|`vfscanf`|\<stdio.h>|
-|`vfwscanf`|\<stdio.h> or \<wchar.h>|
+|**vfscanf**|\<stdio.h>|
+|**vfwscanf**|\<stdio.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

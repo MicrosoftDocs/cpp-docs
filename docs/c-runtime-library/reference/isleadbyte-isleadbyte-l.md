@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Determines whether a character is the lead byte of a multibyte character.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -41,13 +41,13 @@ Integer to test.
 
 ## Return Value
 
-`isleadbyte` returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, `isleadbyte` always returns 0.
+**isleadbyte** returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, **isleadbyte** always returns 0.
 
 ## Remarks
 
-The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from -1 (**EOF**) to `UCHAR_MAX` (0xFF), inclusive.
+The **isleadbyte** macro returns a nonzero value if its argument is the first byte of a multibyte character. **isleadbyte** produces a meaningful result for any integer argument from -1 (**EOF**) to **UCHAR_MAX** (0xFF), inclusive.
 
-The expected argument type of `isleadbyte` is **int**; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.
+The expected argument type of **isleadbyte** is **int**; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.
 
 The version of this function with the **_l** suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
 
@@ -61,8 +61,8 @@ The version of this function with the **_l** suffix is identical except that it 
 
 |Routine|Required header|
 |-------------|---------------------|
-|`isleadbyte`|\<ctype.h>|
-|`_isleadbyte_l`|\<ctype.h>|
+|**isleadbyte**|\<ctype.h>|
+|**_isleadbyte_l**|\<ctype.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

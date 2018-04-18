@@ -73,13 +73,13 @@ errno_t _wsplitpath_s(
 Full path.
 
 *drive*<br/>
-Drive letter, followed by a colon (`:`). You can pass **NULL** for this parameter if you do not need the drive letter.
+Drive letter, followed by a colon (**:**). You can pass **NULL** for this parameter if you do not need the drive letter.
 
 *driveNumberOfElements*<br/>
 The size of the *drive* buffer in single-byte or wide characters. If *drive* is **NULL**, this value must be 0.
 
 *dir*<br/>
-Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
+Directory path, including trailing slash. Forward slashes ( **/** ), backslashes ( **\\** ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
 
 *dirNumberOfElements*<br/>
 The size of the *dir* buffer in single-byte or wide characters. If *dir* is **NULL**, this value must be 0.
@@ -120,15 +120,15 @@ If any of the buffers is too short to hold the result, these functions clear all
 
 ## Remarks
 
-The `_splitpath_s` function breaks a path into its four components. `_splitpath_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath_s` is a wide-character version of `_splitpath_s`; the arguments to `_wsplitpath_s` are wide-character strings. These functions behave identically otherwise
+The **_splitpath_s** function breaks a path into its four components. **_splitpath_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **_wsplitpath_s** is a wide-character version of **_splitpath_s**; the arguments to **_wsplitpath_s** are wide-character strings. These functions behave identically otherwise
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tsplitpath_s`|`_splitpath_s`|`_splitpath_s`|`_wsplitpath_s`|
+|**_tsplitpath_s**|**_splitpath_s**|**_splitpath_s**|**_wsplitpath_s**|
 
-Each component of the full path is stored in a separate buffer; the manifest constants `_MAX_DRIVE`, `_MAX_DIR`, `_MAX_FNAME`, and `_MAX_EXT` (defined in STDLIB.H) specify the maximum allowable size for each file component. File components larger than the corresponding manifest constants cause heap corruption.
+Each component of the full path is stored in a separate buffer; the manifest constants **_MAX_DRIVE**, **_MAX_DIR**, **_MAX_FNAME**, and **_MAX_EXT** (defined in STDLIB.H) specify the maximum allowable size for each file component. File components larger than the corresponding manifest constants cause heap corruption.
 
 The following table lists the values of the manifest constants.
 
@@ -139,7 +139,7 @@ The following table lists the values of the manifest constants.
 |_MAX_FNAME|256|
 |_MAX_EXT|256|
 
-If the full path does not contain a component (for example, a filename), `_splitpath_s` assigns an empty string to the corresponding buffer.
+If the full path does not contain a component (for example, a filename), **_splitpath_s** assigns an empty string to the corresponding buffer.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -149,10 +149,10 @@ The debug versions of these functions first fill the buffer with 0xFD. To disabl
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_splitpath_s`|\<stdlib.h>|
-|`_wsplitpath_s`|\<stdlib.h> or \<wchar.h>|
+|**_splitpath_s**|\<stdlib.h>|
+|**_wsplitpath_s**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

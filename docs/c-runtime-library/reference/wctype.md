@@ -63,9 +63,9 @@ The function determines a classification rule for wide-character codes. The foll
 
 |Routine|Required header|
 |-------------|---------------------|
-|`wctype`|\<wctype.h>|
+|**wctype**|\<wctype.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

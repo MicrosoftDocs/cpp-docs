@@ -43,7 +43,7 @@ Returns 0 if the code page is set successfully. If an invalid code page value is
 
 ## Remarks
 
-The `_setmbcp` function specifies a new multibyte code page. By default, the run-time system automatically sets the multibyte code page to the system-default ANSI code page. The multibyte code page setting affects all multibyte routines that are not locale dependent. However, it is possible to instruct `_setmbcp` to use the code page defined for the current locale (see the following list of manifest constants and associated behavior results). For a list of the multibyte routines that are dependent on the locale code page rather than the multibyte code page, see [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
+The **_setmbcp** function specifies a new multibyte code page. By default, the run-time system automatically sets the multibyte code page to the system-default ANSI code page. The multibyte code page setting affects all multibyte routines that are not locale dependent. However, it is possible to instruct **_setmbcp** to use the code page defined for the current locale (see the following list of manifest constants and associated behavior results). For a list of the multibyte routines that are dependent on the locale code page rather than the multibyte code page, see [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
 
 The multibyte code page also affects multibyte-character processing by the following run-time library routines:
 
@@ -53,17 +53,17 @@ The multibyte code page also affects multibyte-character processing by the follo
 |[_fullpath](fullpath-wfullpath.md)|[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 |[_makepath](makepath-wmakepath.md)|[_splitpath](splitpath-wsplitpath.md)|[tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 
-In addition, all run-time library routines that receive multibyte-character *argv* or *envp* program arguments as parameters (such as the `_exec` and `_spawn` families) process these strings according to the multibyte code page. Therefore, these routines are also affected by a call to `_setmbcp` that changes the multibyte code page.
+In addition, all run-time library routines that receive multibyte-character *argv* or *envp* program arguments as parameters (such as the **_exec** and **_spawn** families) process these strings according to the multibyte code page. Therefore, these routines are also affected by a call to **_setmbcp** that changes the multibyte code page.
 
 The *codepage* argument can be set to any of the following values:
 
-- `_MB_CP_ANSI` Use ANSI code page obtained from operating system at program startup.
+- **_MB_CP_ANSI** Use ANSI code page obtained from operating system at program startup.
 
-- `_MB_CP_LOCALE` Use the current locale's code page obtained from a previous call to [setlocale](setlocale-wsetlocale.md).
+- **_MB_CP_LOCALE** Use the current locale's code page obtained from a previous call to [setlocale](setlocale-wsetlocale.md).
 
-- `_MB_CP_OEM` Use OEM code page obtained from operating system at program startup.
+- **_MB_CP_OEM** Use OEM code page obtained from operating system at program startup.
 
-- `_MB_CP_SBCS` Use single-byte code page. When the code page is set to `_MB_CP_SBCS`, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
+- **_MB_CP_SBCS** Use single-byte code page. When the code page is set to **_MB_CP_SBCS**, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
 
 - Any other valid code page value, regardless of whether the value is an ANSI, OEM, or other operating-system-supported code page (except UTF-7 and UTF-8, which are not supported).
 
@@ -71,9 +71,9 @@ The *codepage* argument can be set to any of the following values:
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_setmbcp`|\<mbctype.h>|
+|**_setmbcp**|\<mbctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

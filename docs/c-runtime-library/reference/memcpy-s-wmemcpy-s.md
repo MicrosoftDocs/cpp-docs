@@ -70,7 +70,7 @@ Zero if successful; an error code on failure.
 
 ## Remarks
 
-`memcpy_s` copies *count* bytes from *src* to *dest*; `wmemcpy_s` copies *count* wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy_s` is undefined. Use `memmove_s` to handle overlapping regions.
+**memcpy_s** copies *count* bytes from *src* to *dest*; **wmemcpy_s** copies *count* wide characters (two bytes). If the source and destination overlap, the behavior of **memcpy_s** is undefined. Use **memmove_s** to handle overlapping regions.
 
 These functions validate their parameters. If *count* is non-zero and *dest* or *src* is a null pointer, or *destSize* is smaller than *count*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** or **ERANGE** and set **errno** to the return value.
 
@@ -78,10 +78,10 @@ These functions validate their parameters. If *count* is non-zero and *dest* or 
 
 |Routine|Required header|
 |-------------|---------------------|
-|`memcpy_s`|\<memory.h> or \<string.h>|
-|`wmemcpy_s`|\<wchar.h>|
+|**memcpy_s**|\<memory.h> or \<string.h>|
+|**wmemcpy_s**|\<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

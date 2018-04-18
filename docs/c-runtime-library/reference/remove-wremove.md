@@ -48,22 +48,22 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The **remove** function deletes the file specified by *path.* `_wremove` is a wide-character version of **_remove**; the *path* argument to `_wremove` is a wide-character string. `_wremove` and **_remove** behave identically otherwise. All handles to a file must be closed before it can be deleted.
+The **remove** function deletes the file specified by *path.* **_wremove** is a wide-character version of **_remove**; the *path* argument to **_wremove** is a wide-character string. **_wremove** and **_remove** behave identically otherwise. All handles to a file must be closed before it can be deleted.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tremove`|**remove**|**remove**|`_wremove`|
+|**_tremove**|**remove**|**remove**|**_wremove**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
 |**remove**|\<stdio.h> or \<io.h>|
-|`_wremove`|\<stdio.h> or \<wchar.h>|
+|**_wremove**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

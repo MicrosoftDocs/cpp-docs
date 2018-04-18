@@ -35,34 +35,34 @@ void _ftime64( struct __timeb64 *timeptr );
 ### Parameters
 
 *timeptr*
-Pointer to a `_timeb`, `__timeb32`, or `__timeb64` structure.
+Pointer to a **_timeb**, **__timeb32**, or **__timeb64** structure.
 
 ## Remarks
 
-The `_ftime` function gets the current local time and stores it in the structure pointed to by *timeptr*. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in \<sys\\timeb.h>. They contain four fields, which are listed in the following table.
+The **_ftime** function gets the current local time and stores it in the structure pointed to by *timeptr*. The **_timeb**, **__timeb32**, and **__timeb64** structures are defined in \<sys\\timeb.h>. They contain four fields, which are listed in the following table.
 
 |Field|Description|
 |-|-|
 |**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](tzset.md) for an explanation of how daylight savings time is determined.)|
 |**millitm**|Fraction of a second in milliseconds.|
 |**time**|Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).|
-|**timezone**|Difference in minutes, moving westward, between UTC and local time. The value of `timezone` is set from the value of the global variable `_timezone` (see `_tzset`).|
+|**timezone**|Difference in minutes, moving westward, between UTC and local time. The value of **timezone** is set from the value of the global variable **_timezone** (see **_tzset**).|
 
-The `_ftime64` function, which uses the `__timeb64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas `_ftime32` only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
+The **_ftime64** function, which uses the **__timeb64** structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **_ftime32** only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-The `_ftime` function is equivalent to `_ftime64`, and `_timeb` contains a 64-bit time unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_ftime` uses a 32-bit time and `_timeb` contains a 32-bit time.
+The **_ftime** function is equivalent to **_ftime64**, and **_timeb** contains a 64-bit time unless **_USE_32BIT_TIME_T** is defined, in which case the old behavior is in effect; **_ftime** uses a 32-bit time and **_timeb** contains a 32-bit time.
 
-`_ftime` validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
+**_ftime** validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_ftime`|\<sys/types.h> and \<sys/timeb.h>|
-|`_ftime32`|\<sys/types.h> and \<sys/timeb.h>|
-|`_ftime64`|\<sys/types.h> and \<sys/timeb.h>|
+|**_ftime**|\<sys/types.h> and \<sys/timeb.h>|
+|**_ftime32**|\<sys/types.h> and \<sys/timeb.h>|
+|**_ftime64**|\<sys/types.h> and \<sys/timeb.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

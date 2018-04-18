@@ -90,13 +90,13 @@ Zero if successful, an error code on failure.
 |---------------------|------------------------------|
 |*mbstr* is **NULL** and *sizeInBytes* > 0|**EINVAL**|
 |*wcstr* is **NULL**|**EINVAL**|
-|The destination buffer is too small to contain the converted string (unless *count* is `_TRUNCATE`; see Remarks below)|**ERANGE**|
+|The destination buffer is too small to contain the converted string (unless *count* is **_TRUNCATE**; see Remarks below)|**ERANGE**|
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets **errno** as indicated in the table.
 
 ## Remarks
 
-The `wcstombs_s` function converts a string of wide characters pointed to by *wcstr* into multibyte characters stored in the buffer pointed to by *mbstr*. The conversion will continue for each character until one of these conditions is met:
+The **wcstombs_s** function converts a string of wide characters pointed to by *wcstr* into multibyte characters stored in the buffer pointed to by *mbstr*. The conversion will continue for each character until one of these conditions is met:
 
 - A null wide character is encountered
 
@@ -106,18 +106,18 @@ The `wcstombs_s` function converts a string of wide characters pointed to by *wc
 
 The destination string is always null-terminated (even in the case of an error).
 
-If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `wcstombs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator. If the string is truncated, the return value is `STRUNCATE`, and the conversion is considered successful.
+If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then **wcstombs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator. If the string is truncated, the return value is **STRUNCATE**, and the conversion is considered successful.
 
-If `wcstombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not **NULL**). This occurs even if the *mbstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *mbstr* is **NULL**, *count* is ignored.
+If **wcstombs_s** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into *&#42;pReturnValue* (provided *pReturnValue* is not **NULL**). This occurs even if the *mbstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *mbstr* is **NULL**, *count* is ignored.
 
-If `wcstombs_s` encounters a wide character it cannot convert to a multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets **errno** to **EILSEQ**, and returns **EILSEQ**.
+If **wcstombs_s** encounters a wide character it cannot convert to a multibyte character, it puts 0 in *&#42;pReturnValue*, sets the destination buffer to an empty string, sets **errno** to **EILSEQ**, and returns **EILSEQ**.
 
-If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of `wcstombs_s` is undefined.
+If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of **wcstombs_s** is undefined.
 
 > [!IMPORTANT]
->  Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of wide characters to convert.
+> Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of wide characters to convert.
 
-`wcstombs_s` uses the current locale for any locale-dependent behavior; `_wcstombs_s_l` is identical to `wcstombs` except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**wcstombs_s** uses the current locale for any locale-dependent behavior; **_wcstombs_s_l** is identical to **wcstombs** except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -125,13 +125,13 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |Routine|Required header|
 |-------------|---------------------|
-|`wcstombs_s`|\<stdlib.h>|
+|**wcstombs_s**|\<stdlib.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-This program illustrates the behavior of the `wcstombs_s` function.
+This program illustrates the behavior of the **wcstombs_s** function.
 
 ```C
 // crt_wcstombs_s.c

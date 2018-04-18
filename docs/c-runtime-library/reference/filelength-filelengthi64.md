@@ -42,16 +42,16 @@ Target the file descriptor.
 
 ## Return Value
 
-Both `_filelength` and `_filelengthi64` return the file length, in bytes, of the target file associated with *fd*. If *fd* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
+Both **_filelength** and **_filelengthi64** return the file length, in bytes, of the target file associated with *fd*. If *fd* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_filelength`|\<io.h>|
-|`_filelengthi64`|\<io.h>|
+|**_filelength**|\<io.h>|
+|**_filelengthi64**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

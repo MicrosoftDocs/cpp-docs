@@ -62,7 +62,7 @@ The **mbrlen** function inspects at most *count* bytes starting with the byte po
 
 The **mbrlen** function saves and uses the shift state of an incomplete multibyte character in the *mbstate* parameter. This gives **mbrlen** the capability of restarting in the middle of a multibyte character if need be, examining at most *count* bytes. If *mbstate* is a null pointer, **mbrlen** uses an internal, static **mbstate_t** object to store the shift state. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always allocate and pass your own *mbstate* parameter.
 
-The **mbrlen** function differs from [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md) by its restartability. The shift state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs`.
+The **mbrlen** function differs from [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md) by its restartability. The shift state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
 
 ### Generic-Text Routine Mappings
 
@@ -76,7 +76,7 @@ The **mbrlen** function differs from [_mbclen, mblen, _mblen_l](mbclen-mblen-mbl
 |-------------|---------------------|
 |**mbrlen**|\<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

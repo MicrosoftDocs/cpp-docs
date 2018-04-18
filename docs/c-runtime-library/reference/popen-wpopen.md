@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Creates a pipe and executes a command.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -56,7 +56,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 ## Remarks
 
-The `_popen` function creates a pipe and asynchronously executes a spawned copy of the command processor with the specified string *command*. The character string *mode* specifies the type of access requested, as follows.
+The **_popen** function creates a pipe and asynchronously executes a spawned copy of the command processor with the specified string *command*. The character string *mode* specifies the type of access requested, as follows.
 
 **"r"**
 The calling process can read the spawned command's standard output using the returned stream.
@@ -71,22 +71,22 @@ Open in binary mode.
 Open in text mode.
 
 > [!NOTE]
->  If used in a Windows program, the `_popen` function returns an invalid file pointer that causes the program to stop responding indefinitely. `_popen` works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](http://msdn.microsoft.com/library/windows/desktop/ms682499) in the Windows SDK.
+> If used in a Windows program, the **_popen** function returns an invalid file pointer that causes the program to stop responding indefinitely. **_popen** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](http://msdn.microsoft.com/library/windows/desktop/ms682499) in the Windows SDK.
 
-`_wpopen` is a wide-character version of `_popen`; the *path* argument to `_wpopen` is a wide-character string. `_wpopen` and `_popen` behave identically otherwise.
+**_wpopen** is a wide-character version of **_popen**; the *path* argument to **_wpopen** is a wide-character string. **_wpopen** and **_popen** behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tpopen`|`_popen`|`_popen`|`_wpopen`|
+|**_tpopen**|**_popen**|**_popen**|**_wpopen**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_popen`|\<stdio.h>|
-|`_wpopen`|\<stdio.h> or \<wchar.h>|
+|**_popen**|\<stdio.h>|
+|**_wpopen**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

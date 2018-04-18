@@ -104,7 +104,7 @@ The debug version of this function first fills the buffer with 0xFD. To disable 
 |--------------|---------------------|---------------------|
 |**_fcvt_s**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 **Libraries:** All versions of the [CRT Library Features](../../c-runtime-library/crt-library-features.md).
 

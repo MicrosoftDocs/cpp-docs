@@ -44,17 +44,17 @@ A complex number that represents the exponent.
 
 ## Return Value
 
-The value of `e` raised to the power of *z*.
+The value of **e** raised to the power of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `cexp` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cexp` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **cexp** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cexp** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`cexp`, `cexpf`, `cexpl`|\<complex.h>|\<complex.h>|
+|**cexp**, **cexpf**, **cexpl**|\<complex.h>|\<complex.h>|
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

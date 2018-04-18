@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # gets_s, _getws_s
 
-Gets a line from the `stdin` stream. These versions of [gets, _getws](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Gets a line from the **stdin** stream. These versions of [gets, _getws](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -59,11 +59,11 @@ Returns *buffer* if successful. A **NULL** pointer indicates an error or end-of-
 
 ## Remarks
 
-The `gets_s` function reads a line from the standard input stream `stdin` and stores it in *buffer*. The line consists of all characters up to and including the first newline character ('\n'). `gets_s` then replaces the newline character with a null character ('\0') before returning the line. In contrast, the `fgets_s` function retains the newline character.
+The **gets_s** function reads a line from the standard input stream **stdin** and stores it in *buffer*. The line consists of all characters up to and including the first newline character ('\n'). **gets_s** then replaces the newline character with a null character ('\0') before returning the line. In contrast, the **fgets_s** function retains the newline character.
 
 If the first character read is the end-of-file character, a null character is stored at the beginning of *buffer* and **NULL** is returned.
 
-`_getws_s` is a wide-character version of `gets_s`; its argument and return value are wide-character strings.
+**_getws_s** is a wide-character version of **gets_s**; its argument and return value are wide-character strings.
 
 If *buffer* is **NULL** or *sizeInCharacters* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set errno to **ERANGE**.
 
@@ -73,16 +73,16 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_getts_s`|`gets_s`|`gets_s`|`_getws_s`|
+|**_getts_s**|**gets_s**|**gets_s**|**_getws_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`gets_s`|\<stdio.h>|
-|`_getws_s`|\<stdio.h> or \<wchar.h>|
+|**gets_s**|\<stdio.h>|
+|**_getws_s**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

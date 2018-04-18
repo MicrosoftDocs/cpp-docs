@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Loads and executes new child processes.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -66,16 +66,16 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments and using the `PATH` environment variable to find the file to execute.
+Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments and using the **PATH** environment variable to find the file to execute.
 
-The `_execvp` functions validate their parameters. If the *cmdname* is a null pointer, or *argv* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
+The **_execvp** functions validate their parameters. If the *cmdname* is a null pointer, or *argv* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
 
 ## Requirements
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|`_execvp`|\<process.h>|\<errno.h>|
-|`_wexecvp`|\<process.h> or \<wchar.h>|\<errno.h>|
+|**_execvp**|\<process.h>|\<errno.h>|
+|**_wexecvp**|\<process.h> or \<wchar.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -57,7 +57,7 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 |-------------|---------------------|
 |**rewind**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

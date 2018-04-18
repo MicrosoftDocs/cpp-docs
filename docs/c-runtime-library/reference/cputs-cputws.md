@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Puts a string to the console.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -45,11 +45,11 @@ Output string.
 
 ## Return Value
 
-If successful, `_cputs` returns 0. If the function fails, it returns a nonzero value.
+If successful, **_cputs** returns 0. If the function fails, it returns a nonzero value.
 
 ## Remarks
 
-The `_cputs` function writes the null-terminated string that's pointed to by *str* directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.
+The **_cputs** function writes the null-terminated string that's pointed to by *str* directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.
 
 This function validates its parameter. If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and -1 is returned.
 
@@ -57,14 +57,14 @@ This function validates its parameter. If *str* is **NULL**, the invalid paramet
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_cputts**|`_cputs`|`_cputs`|`_cputws`|
+|**_cputts**|**_cputs**|**_cputs**|**_cputws**|
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_cputs`|\<conio.h>|\<errno.h>|
-|`_cputws`|\<conio.h>|\<errno.h>|
+|**_cputs**|\<conio.h>|\<errno.h>|
+|**_cputws**|\<conio.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

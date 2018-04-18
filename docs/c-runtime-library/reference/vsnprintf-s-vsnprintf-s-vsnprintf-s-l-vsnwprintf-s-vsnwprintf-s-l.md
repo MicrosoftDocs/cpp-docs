@@ -104,7 +104,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-`vsnprintf_s`,`_vsnprintf_s` and `_vsnwprintf_s` return the number of characters written, not including the terminating null, or a negative value if an output error occurs. `vsnprintf_s` is identical to `_vsnprintf_s`. `vsnprintf_s` is included for compliance to the ANSI standard. `_vnsprintf` is retained for backward compatibility.
+**vsnprintf_s**, **_vsnprintf_s** and **_vsnwprintf_s** return the number of characters written, not including the terminating null, or a negative value if an output error occurs. **vsnprintf_s** is identical to **_vsnprintf_s**. **vsnprintf_s** is included for compliance to the ANSI standard. **_vnsprintf** is retained for backward compatibility.
 
 If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in *buffer* is written and -1 returned. If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1.
 
@@ -112,12 +112,12 @@ If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equ
 
 ### Error Conditions
 
-|`Condition`|Return|**errno**|
+|**Condition**|Return|**errno**|
 |-----------------|------------|-------------|
 |*buffer* is **NULL**|-1|**EINVAL**|
 |*format* is **NULL**|-1|**EINVAL**|
 |*count* <= 0|-1|**EINVAL**|
-|*sizeOfBuffer* too small (and *count* != `_TRUNCATE`)|-1 (and *buffer* set to an empty string)|**ERANGE**|
+|*sizeOfBuffer* too small (and *count* != **_TRUNCATE**)|-1 (and *buffer* set to an empty string)|**ERANGE**|
 
 ## Remarks
 
@@ -128,10 +128,10 @@ If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then these funct
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 > [!NOTE]
->  To ensure that there is room for the terminating null, be sure that *count* is strictly less than the buffer length, or use `_TRUNCATE`.
+> To ensure that there is room for the terminating null, be sure that *count* is strictly less than the buffer length, or use **_TRUNCATE**.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -139,20 +139,20 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vsntprintf_s`|`_vsnprintf_s`|`_vsnprintf_s`|`_vsnwprintf_s`|
-|`_vsntprintf_s_l`|`_vsnprintf_s_l`|`_vsnprintf_s_l`|`_vsnwprintf_s_l`|
+|**_vsntprintf_s**|**_vsnprintf_s**|**_vsnprintf_s**|**_vsnwprintf_s**|
+|**_vsntprintf_s_l**|**_vsnprintf_s_l**|**_vsnprintf_s_l**|**_vsnwprintf_s_l**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`vsnprintf_s`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`_vsnprintf_s`, `_vsnprintf_s_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|`_vsnwprintf_s`, `_vsnwprintf_s_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**vsnprintf_s**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**_vsnprintf_s**, **_vsnprintf_s_l**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
+|**_vsnwprintf_s**, **_vsnwprintf_s_l**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

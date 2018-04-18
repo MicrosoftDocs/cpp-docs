@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -69,7 +69,7 @@ The number of characters that are written, or a negative value if an output erro
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, and then uses the `_putch` function to format and write the given data to the console. (`_vcwprintf_p` uses `_putwch` instead of `_putch`. `_vcwprintf_p` is the wide-character version of `_vcprintf_p`. It takes a wide-character string as an argument.)
+Each of these functions takes a pointer to an argument list, and then uses the **_putch** function to format and write the given data to the console. (**_vcwprintf_p** uses **_putwch** instead of **_putch**. **_vcwprintf_p** is the wide-character version of **_vcprintf_p**. It takes a wide-character string as an argument.)
 
 The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
 
@@ -78,7 +78,7 @@ Each *argument* (if any) is converted and is output according to the correspondi
 These functions do not translate line-feed characters into carriage return-line feed (CR-LF) combinations when they are output.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 These functions validate the input pointer and the format string. If *format* or *argument* is **NULL**, or if the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
@@ -86,15 +86,15 @@ These functions validate the input pointer and the format string. If *format* or
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_vtcprintf_p`|`_vcprintf_p`|`_vcprintf_p`|`_vcwprintf_p`|
-|`_vtcprintf_p_l`|`_vcprintf_p_l`|`_vcprintf_p_l`|`_vcwprintf_p_l`|
+|**_vtcprintf_p**|**_vcprintf_p**|**_vcprintf_p**|**_vcwprintf_p**|
+|**_vtcprintf_p_l**|**_vcprintf_p_l**|**_vcprintf_p_l**|**_vcwprintf_p_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_vcprintf_p`, `_vcprintf_p_l`|\<conio.h> and \<stdarg.h>|
-|`_vcwprintf_p`, `_vcwprintf_p_l`|\<conio.h> and \<stdarg.h>|
+|**_vcprintf_p**, **_vcprintf_p_l**|\<conio.h> and \<stdarg.h>|
+|**_vcwprintf_p**, **_vcwprintf_p_l**|\<conio.h> and \<stdarg.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

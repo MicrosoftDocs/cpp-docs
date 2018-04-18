@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Gets the current disk drive.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -41,7 +41,7 @@ Returns the current (default) drive (1=A, 2=B, and so on). There is no error ret
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getdrive`|\<direct.h>|
+|**_getdrive**|\<direct.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

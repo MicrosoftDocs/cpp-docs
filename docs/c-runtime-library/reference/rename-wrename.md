@@ -61,22 +61,22 @@ For other possible return values, see [_doserrno, _errno, syserrlist, and _sys_n
 
 The **rename** function renames the file or directory specified by *oldname* to the name given by *newname*. The old name must be the path of an existing file or directory. The new name must not be the name of an existing file or directory. You can use **rename** to move a file from one directory or device to another by giving a different path in the *newname* argument. However, you cannot use **rename** to move a directory. Directories can be renamed, but not moved.
 
-`_wrename` is a wide-character version of **_rename**; the arguments to `_wrename` are wide-character strings. `_wrename` and **_rename** behave identically otherwise.
+**_wrename** is a wide-character version of **_rename**; the arguments to **_wrename** are wide-character strings. **_wrename** and **_rename** behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_trename`|**rename**|**rename**|`_wrename`|
+|**_trename**|**rename**|**rename**|**_wrename**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
 |**rename**|\<io.h> or \<stdio.h>|
-|`_wrename`|\<stdio.h> or \<wchar.h>|
+|**_wrename**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

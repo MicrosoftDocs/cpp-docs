@@ -75,7 +75,7 @@ You can use **_lseek** to reposition the pointer anywhere in a file or beyond th
 |**_lseek**|\<io.h>|
 |**_lseeki64**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

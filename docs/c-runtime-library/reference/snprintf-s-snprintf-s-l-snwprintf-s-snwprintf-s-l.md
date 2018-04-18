@@ -79,7 +79,7 @@ int _snwprintf_s(
 Storage location for the output.
 
 *sizeOfBuffer*<br/>
-The size of the storage location for output. Size in `bytes` for `_snprintf_s` or size in `words` for `_snwprintf_s`.
+The size of the storage location for output. Size in **bytes** for **_snprintf_s** or size in **words** for **_snwprintf_s**.
 
 *count*<br/>
 Maximum number of characters to store, or [_TRUNCATE](../../c-runtime-library/truncate.md).
@@ -95,7 +95,7 @@ The locale to use.
 
 ## Return Value
 
-`_snprintf_s` returns the number of characters stored in *buffer*, not counting the terminating null character. `_snwprintf_s` returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
+**_snprintf_s** returns the number of characters stored in *buffer*, not counting the terminating null character. **_snwprintf_s** returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
 
 If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1.
 
@@ -105,14 +105,14 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 ## Remarks
 
-The `_snprintf_s` function formats and stores *count* or fewer characters in *buffer* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *format*. The formatting is consistent with the `printf` family of functions; see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
+The **_snprintf_s** function formats and stores *count* or fewer characters in *buffer* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *format*. The formatting is consistent with the **printf** family of functions; see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
 
-If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then `_snprintf_s` writes as much of the string as will fit in *buffer* while leaving room for a terminating null. If the entire string (with terminating null) fits in *buffer*, then `_snprintf_s` returns the number of characters written (not including the terminating null); otherwise, `_snprintf_s` returns -1 to indicate that truncation occurred.
+If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then **_snprintf_s** writes as much of the string as will fit in *buffer* while leaving room for a terminating null. If the entire string (with terminating null) fits in *buffer*, then **_snprintf_s** returns the number of characters written (not including the terminating null); otherwise, **_snprintf_s** returns -1 to indicate that truncation occurred.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
-`_snwprintf_s` is a wide-character version of `_snprintf_s`; the pointer arguments to `_snwprintf_s` are wide-character strings. Detection of encoding errors in `_snwprintf_s` might differ from that in `_snprintf_s`. `_snwprintf_s`, like `swprintf_s`, writes output to a string rather than to a destination of type `FILE`.
+**_snwprintf_s** is a wide-character version of **_snprintf_s**; the pointer arguments to **_snwprintf_s** are wide-character strings. Detection of encoding errors in **_snwprintf_s** might differ from that in **_snprintf_s**. **_snwprintf_s**, like **swprintf_s**, writes output to a string rather than to a destination of type **FILE**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -122,17 +122,17 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sntprintf_s`|`_snprintf_s`|`_snprintf_s`|`_snwprintf_s`|
-|`_sntprintf_s_l`|`_snprintf_s_l`|`_snprintf_s_l`|`_snwprintf_s_l`|
+|**_sntprintf_s**|**_snprintf_s**|**_snprintf_s**|**_snwprintf_s**|
+|**_sntprintf_s_l**|**_snprintf_s_l**|**_snprintf_s_l**|**_snwprintf_s_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_snprintf_s`, `_snprintf_s_l`|\<stdio.h>|
-|`_snwprintf_s`, `_snwprintf_s_l`|\<stdio.h> or \<wchar.h>|
+|**_snprintf_s**, **_snprintf_s_l**|\<stdio.h>|
+|**_snwprintf_s**, **_snwprintf_s_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

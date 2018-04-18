@@ -73,7 +73,7 @@ This function validates its parameters. If *dec* or *sign* is NULL, or *count* i
 |--------------|---------------------|
 |**_fcvt**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

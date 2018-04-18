@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _get_unexpected
 
-Returns the termination routine to be called by `unexpected`.
+Returns the termination routine to be called by **unexpected**.
 
 ## Syntax
 
@@ -38,9 +38,9 @@ Returns a pointer to the function registered by [set_unexpected](set-unexpected-
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_get_unexpected`|\<eh.h>|
+|**_get_unexpected**|\<eh.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

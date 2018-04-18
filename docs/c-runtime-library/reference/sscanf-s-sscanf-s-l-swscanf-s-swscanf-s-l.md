@@ -75,7 +75,7 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 
 ## Remarks
 
-The **sscanf_s** function reads data from *buffer* into the location that's given by each *argument*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version `sscanf`, a buffer size parameter is required when you use the type field characters **c**, **C**, **s**, **S**, or string control sets that are enclosed in `[]`. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it. For example, if you are reading into a string, the buffer size for that string is passed as follows:
+The **sscanf_s** function reads data from *buffer* into the location that's given by each *argument*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **c**, **C**, **s**, **S**, or string control sets that are enclosed in **[]**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it. For example, if you are reading into a string, the buffer size for that string is passed as follows:
 
 ```C
 wchar_t ws[10];
@@ -105,7 +105,7 @@ For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-s
 
 The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf_s** function. If copying occurs between strings that overlap, the behavior is undefined.
 
-**swscanf_s** is a wide-character version of `sscanf_s;` the arguments to **swscanf_s** are wide-character strings. **sscanf_s** does not handle multibyte hexadecimal characters. **swscanf_s** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **swscanf_s** and **sscanf_s** behave identically.
+**swscanf_s** is a wide-character version of **sscanf_s**; the arguments to **swscanf_s** are wide-character strings. **sscanf_s** does not handle multibyte hexadecimal characters. **swscanf_s** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **swscanf_s** and **sscanf_s** behave identically.
 
 The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter that's passed in instead of the current thread locale.
 

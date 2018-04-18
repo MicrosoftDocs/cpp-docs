@@ -48,15 +48,15 @@ The arccosine of *z*, in radians. The result is unbounded along the imaginary ax
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `cacos` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacos` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **cacos** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cacos** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`cacos`,               `cacosf`, `cacosl`|\<complex.h>|\<ccomplex>|
+|**cacos**,               **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

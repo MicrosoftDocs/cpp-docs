@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 **Code Page 932 Specific functions**, using the current locale or a specified LC_CTYPE conversion state category.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -63,7 +63,7 @@ Locale to use.
 
 ## Return Value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c* <= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c* <= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
@@ -73,12 +73,12 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 |Routine|Test condition (code page 932 only)|
 |-------------|-------------------------------------------|
-|`_ismbcl0`|JIS non-Kanji: 0x8140<=*c*<=0x889E.|
-|`_ismbcl0_l`|JIS non-Kanji: 0x8140<=*c*<=0x889E.|
-|`_ismbcl1`|JIS level-1: 0x889F<=*c*<=0x9872.|
-|`_ismbcl1_l`|JIS level-1: 0x889F<=*c*<=0x9872.|
-|`_ismbcl2`|JIS level-2: 0x989F<=*c*<=0xEAA4.|
-|`_ismbcl2_l`|JIS level-2: 0x989F<=*c*<=0xEAA4.|
+|**_ismbcl0**|JIS non-Kanji: 0x8140<=*c*<=0x889E.|
+|**_ismbcl0_l**|JIS non-Kanji: 0x8140<=*c*<=0x889E.|
+|**_ismbcl1**|JIS level-1: 0x889F<=*c*<=0x9872.|
+|**_ismbcl1_l**|JIS level-1: 0x889F<=*c*<=0x9872.|
+|**_ismbcl2**|JIS level-2: 0x989F<=*c*<=0xEAA4.|
+|**_ismbcl2_l**|JIS level-2: 0x989F<=*c*<=0xEAA4.|
 
 The functions check that the specified value *c* matches the test conditions described above, but do not check that *c* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [_ismbbtrail](ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
 
@@ -88,12 +88,12 @@ The functions check that the specified value *c* matches the test conditions des
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_ismbcl0`|\<mbstring.h>|
-|`_ismbcl0_l`|\<mbstring.h>|
-|`_ismbcl1`|\<mbstring.h>|
-|`_ismbcl1_l`|\<mbstring.h>|
-|`_ismbcl2`|\<mbstring.h>|
-|`_ismbcl2_l`|\<mbstring.h>|
+|**_ismbcl0**|\<mbstring.h>|
+|**_ismbcl0_l**|\<mbstring.h>|
+|**_ismbcl1**|\<mbstring.h>|
+|**_ismbcl1_l**|\<mbstring.h>|
+|**_ismbcl2**|\<mbstring.h>|
+|**_ismbcl2_l**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

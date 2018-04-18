@@ -87,14 +87,14 @@ Zero if successful, an error code on failure.
 |---------------------|------------------------------|
 |*wcstr* is **NULL** and *sizeInWords* > 0|**EINVAL**|
 |*mbstr* is **NULL**|**EINVAL**|
-|The destination buffer is too small to contain the converted string (unless *count* is `_TRUNCATE`; see Remarks below)|**ERANGE**|
+|The destination buffer is too small to contain the converted string (unless *count* is **_TRUNCATE**; see Remarks below)|**ERANGE**|
 |*wcstr* is not **NULL** and *sizeInWords* == 0|**EINVAL**|
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets **errno** as indicated in the table.
 
 ## Remarks
 
-The `mbstowcs_s` function converts a string of multibyte characters pointed to by *mbstr* into wide characters stored in the buffer pointed to by *wcstr*. The conversion will continue for each character until one of these conditions is met:
+The **mbstowcs_s** function converts a string of multibyte characters pointed to by *mbstr* into wide characters stored in the buffer pointed to by *wcstr*. The conversion will continue for each character until one of these conditions is met:
 
 - A multibyte null character is encountered
 
@@ -104,18 +104,18 @@ The `mbstowcs_s` function converts a string of multibyte characters pointed to b
 
 The destination string is always null-terminated (even in the case of an error).
 
-If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `mbstowcs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
+If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then **mbstowcs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
-If `mbstowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not **NULL**). This occurs even if the *wcstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *wcstr* is **NULL**, *count* is ignored, and *sizeInWords* must be 0.
+If **mbstowcs_s** successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into *&#42;pReturnValue* (provided *pReturnValue* is not **NULL**). This occurs even if the *wcstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *wcstr* is **NULL**, *count* is ignored, and *sizeInWords* must be 0.
 
-If `mbstowcs_s` encounters an invalid multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets **errno** to **EILSEQ**, and returns **EILSEQ**.
+If **mbstowcs_s** encounters an invalid multibyte character, it puts 0 in *&#42;pReturnValue*, sets the destination buffer to an empty string, sets **errno** to **EILSEQ**, and returns **EILSEQ**.
 
-If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of `mbstowcs_s` is undefined.
+If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of **mbstowcs_s** is undefined.
 
 > [!IMPORTANT]
->  Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of multibyte characters to convert.
+> Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of multibyte characters to convert.
 
-`mbstowcs_s` uses the current locale for any locale-dependent behavior; `_mbstowcs_s_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**mbstowcs_s** uses the current locale for any locale-dependent behavior; **_mbstowcs_s_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -123,10 +123,10 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |Routine|Required header|
 |-------------|---------------------|
-|`mbstowcs_s`|\<stdlib.h>|
-|`_mbstowcs_s_l`|\<stdlib.h>|
+|**mbstowcs_s**|\<stdlib.h>|
+|**_mbstowcs_s_l**|\<stdlib.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

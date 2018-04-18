@@ -48,7 +48,7 @@ Pointer to an array to store the multibyte converted character.
 A wide character to convert.
 
 *state*<br/>
-A pointer to an `mbstate_t` object.
+A pointer to an **mbstate_t** object.
 
 ## Return Value
 
@@ -56,17 +56,17 @@ The number of bytes stored in array object *mbchar*, including any shift sequenc
 
 ## Remarks
 
-The `c16rtomb` function converts the UTF-16 character *wchar* to the equivalent multibyte narrow character sequence in the current locale. If *mbchar* is not a null pointer, the function stores the converted sequence in the array object pointed to by *mbchar*. Up to `MB_CUR_MAX` bytes are stored in *mbchar*, and *state* is set to the resulting multibyte shift state.    If *wchar* is a null wide character, a sequence required to restore the initial shift state is stored, if needed, followed by the null character, and *state* is set to the initial conversion state. The `c32rtomb` function is identical, but converts a UTF-32 character.
+The **c16rtomb** function converts the UTF-16 character *wchar* to the equivalent multibyte narrow character sequence in the current locale. If *mbchar* is not a null pointer, the function stores the converted sequence in the array object pointed to by *mbchar*. Up to **MB_CUR_MAX** bytes are stored in *mbchar*, and *state* is set to the resulting multibyte shift state.    If *wchar* is a null wide character, a sequence required to restore the initial shift state is stored, if needed, followed by the null character, and *state* is set to the initial conversion state. The **c32rtomb** function is identical, but converts a UTF-32 character.
 
 If *mbchar* is a null pointer, the behavior is equivalent to a call to the function that substitutes an internal buffer for *mbchar* and a wide null character for *wchar*.
 
-The *state* conversion state object allows you to make subsequent calls to this function and other restartable functions that maintain the shift state of the multibyte output characters. Results are undefined when you mix the use of restartable and non-restartable functions, or if a call to `setlocale` is made between restartable function calls.
+The *state* conversion state object allows you to make subsequent calls to this function and other restartable functions that maintain the shift state of the multibyte output characters. Results are undefined when you mix the use of restartable and non-restartable functions, or if a call to **setlocale** is made between restartable function calls.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`c16rtomb`, `c32rtomb`|C, C++: \<uchar.h>|
+|**c16rtomb**, **c32rtomb**|C, C++: \<uchar.h>|
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

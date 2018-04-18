@@ -63,24 +63,24 @@ The return value indicates the relationship between the buffers.
 |< 0|*buffer1* less than *buffer2*.|
 |0|*buffer1* identical to *buffer2*.|
 |> 0|*buffer1* greater than *buffer2*.|
-|`_NLSCMPERROR`|An error occurred.|
+|**_NLSCMPERROR**|An error occurred.|
 
 ## Remarks
 
-The `_memicmp` function compares the first *count* characters of the two buffers *buffer1* and *buffer2* byte by byte. The comparison is not case-sensitive.
+The **_memicmp** function compares the first *count* characters of the two buffers *buffer1* and *buffer2* byte by byte. The comparison is not case-sensitive.
 
-If either *buffer1* or *buffer2* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets **errno** to **EINVAL**.
+If either *buffer1* or *buffer2* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **_NLSCMPERROR** and sets **errno** to **EINVAL**.
 
-`_memicmp` uses the current locale for locale-dependent behavior; `_memicmp_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_memicmp** uses the current locale for locale-dependent behavior; **_memicmp_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_memicmp`|\<memory.h> or \<string.h>|
-|`_memicmp_l`|\<memory.h> or \<string.h>|
+|**_memicmp**|\<memory.h> or \<string.h>|
+|**_memicmp_l**|\<memory.h> or \<string.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

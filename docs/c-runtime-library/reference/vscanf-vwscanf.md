@@ -55,18 +55,18 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 
 ## Remarks
 
-The `vscanf` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
+The **vscanf** function reads data from the standard input stream **stdin** and writes the data into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  When you use `vscanf` to read a string, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, incorrectly formatted input can cause a buffer overrun. As an alternative, you can use [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) or [fgets](fgets-fgetws.md).
+> When you use **vscanf** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun. As an alternative, you can use [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) or [fgets](fgets-fgetws.md).
 
-`vwscanf` is a wide-character version of `vscanf`; the *format* argument to `vwscanf` is a wide-character string. `vwscanf` and `vscanf` behave identically if the stream is opened in ANSI mode. `vscanf` doesn't support input from a UNICODE stream.
+**vwscanf** is a wide-character version of **vscanf**; the *format* argument to **vwscanf** is a wide-character string. **vwscanf** and **vscanf** behave identically if the stream is opened in ANSI mode. **vscanf** doesn't support input from a UNICODE stream.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtscanf`|`vscanf`|`vscanf`|`vwscanf`|
+|**_vtscanf**|**vscanf**|**vscanf**|**vwscanf**|
 
 For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
@@ -74,10 +74,10 @@ For more information, see [Format Specification Fields: scanf and wscanf Functio
 
 |Routine|Required header|
 |-------------|---------------------|
-|`vscanf`|\<stdio.h>|
-|`vwscanf`|\<stdio.h> or \<wchar.h>|
+|**vscanf**|\<stdio.h>|
+|**vwscanf**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

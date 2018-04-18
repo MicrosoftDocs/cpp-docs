@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Creates and executes a new process.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -61,7 +61,7 @@ List of pointers to arguments. The *arg0* argument is usually a pointer to *cmdn
 
 ## Return Value
 
-The return value from a synchronous `_spawnlp` or `_wspawnlp` (`_P_WAIT` specified for *mode*) is the exit status of the new process. The return value from an asynchronous `_spawnlp` or `_wspawnlp` (`_P_NOWAIT` or `_P_NOWAITO` specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values.
+The return value from a synchronous **_spawnlp** or **_wspawnlp** (**_P_WAIT** specified for *mode*) is the exit status of the new process. The return value from an asynchronous **_spawnlp** or **_wspawnlp** (**_P_NOWAIT** or **_P_NOWAITO** specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the **exit** routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values.
 
 |||
 |-|-|
@@ -75,7 +75,7 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-Each of these functions creates and executes a new process, passing each command-line argument as a separate parameter and using the `PATH` environment variable to find the file to execute.
+Each of these functions creates and executes a new process, passing each command-line argument as a separate parameter and using the **PATH** environment variable to find the file to execute.
 
 These functions validate their parameters. If either *cmdname* or *arg0* is an empty string or a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL**, and return -1. No new process is spawned.
 
@@ -83,8 +83,8 @@ These functions validate their parameters. If either *cmdname* or *arg0* is an e
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_spawnlp`|\<process.h>|
-|`_wspawnlp`|\<stdio.h> or \<wchar.h>|
+|**_spawnlp**|\<process.h>|
+|**_wspawnlp**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

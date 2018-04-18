@@ -67,7 +67,7 @@ The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first 
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± **QNAN**,**IND**|**INVALID**|**_DOMAIN**|
+|± **QNAN**, **IND**|**INVALID**|**_DOMAIN**|
 
 The **_y0**, **_y1**, and **_yn** routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.
 

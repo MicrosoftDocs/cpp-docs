@@ -36,7 +36,7 @@ int fwide(
 ### Parameters
 
 *stream*<br/>
-Pointer to `FILE` structure (ignored).
+Pointer to **FILE** structure (ignored).
 
 *mode*<br/>
 The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)
@@ -53,6 +53,6 @@ The current version of this function does not comply with the Standard.
 
 |Function|Required header|
 |--------------|---------------------|
-|`fwide`|\<wchar.h>|
+|**fwide**|\<wchar.h>|
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).

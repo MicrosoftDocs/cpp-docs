@@ -55,15 +55,15 @@ The cosine of *z*, in radians.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `ccos` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `ccos` always takes and returns a `_Dcomplex` value.
+Because C++ allows overloading, you can call overloads of **ccos** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **ccos** always takes and returns a **_Dcomplex** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`ccos`,               `ccosf`, `ccosl`|\<complex.h>|\<ccomplex>|
+|**ccos**,               **ccosf**, **ccosl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

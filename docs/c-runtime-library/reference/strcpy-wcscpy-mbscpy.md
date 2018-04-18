@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Copies a string. More secure versions of these functions are available; see [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md).
 
 > [!IMPORTANT]
->  `_mbscpy` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscpy** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -73,12 +73,12 @@ Each of these functions returns the destination string. No return value is reser
 
 ## Remarks
 
-The `strcpy` function copies *strSource*, including the terminating null character, to the location that's specified by *strDestination*. The behavior of `strcpy` is undefined if the source and destination strings overlap.
+The **strcpy** function copies *strSource*, including the terminating null character, to the location that's specified by *strDestination*. The behavior of **strcpy** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
->  Because `strcpy` does not check for sufficient space in *strDestination* before it copies *strSource*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
+> Because **strcpy** does not check for sufficient space in *strDestination* before it copies *strSource*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
 
-`wcscpy` and `_mbscpy` are, respectively, wide-character and multibyte-character versions of `strcpy`. The arguments and return value of `wcscpy` are wide-character strings; those of `_mbscpy` are multibyte-character strings. These three functions behave identically otherwise.
+**wcscpy** and **_mbscpy** are, respectively, wide-character and multibyte-character versions of **strcpy**. The arguments and return value of **wcscpy** are wide-character strings; those of **_mbscpy** are multibyte-character strings. These three functions behave identically otherwise.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -86,15 +86,15 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscpy`|`strcpy`|`_mbscpy`|`wcscpy`|
+|**_tcscpy**|**strcpy**|**_mbscpy**|**wcscpy**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strcpy`|\<string.h>|
-|`wcscpy`|\<string.h> or \<wchar.h>|
-|`_mbscpy`|\<mbstring.h>|
+|**strcpy**|\<string.h>|
+|**wcscpy**|\<string.h> or \<wchar.h>|
+|**_mbscpy**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
