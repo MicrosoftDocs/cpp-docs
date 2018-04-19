@@ -1,7 +1,7 @@
 ---
 title: "How to: Use the Windows 10 SDK in a Windows Desktop Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/19/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
@@ -22,8 +22,8 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
 ### To target the Windows 10 SDK  
   
-1.  Make sure the Windows 10 SDK is installed. The Windows 10 SDK is installed as part of the [Tools for Windows 10](http://go.microsoft.com/fwlink/p/?linkid=617631).
-<!---Loc Comment: [Tools for Windows 10] link does not wirk properly--->  
+1.  Make sure the Windows 10 SDK is installed. The Windows 10 SDK is installed as part of the **Desktop development with C++** workload. A standalone version is available at [Downloads and tools for Windows 10](https://developer.microsoft.com/windows/downloads).
+
   
 2.  Open the shortcut menu for the project node, and choose **Retarget SDK Version**.  
   
