@@ -21,30 +21,34 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # btowc
-Determine whether an integer represents a valid single-byte character in the initial shift state.  
-  
-## Syntax  
-  
-```  
-wint_t btowc(  
-   int c  
-);  
-```  
-  
-#### Parameters  
- `c`  
- Integer to test.  
-  
-## Return Value  
- Returns the wide-character representation of the character if the integer represents a valid single-byte character in the initial shift state. Returns WEOF if the integer is EOF or is not a valid single-byte character in the initial shift state. The output of this function is affected by the current `LC_TYPE` locale.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`btowc`|\<stdio.h> or \<wchar.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)
+
+Determine whether an integer represents a valid single-byte character in the initial shift state.
+
+## Syntax
+
+```C
+wint_t btowc(
+   int character
+);
+```
+
+### Parameters
+
+*character*<br/>
+Integer to test.
+
+## Return Value
+
+Returns the wide-character representation of the character if the integer represents a valid single-byte character in the initial shift state. Returns WEOF if the integer is EOF or is not a valid single-byte character in the initial shift state. The output of this function is affected by the current **LC_TYPE** locale.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**btowc**|\<stdio.h> or \<wchar.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

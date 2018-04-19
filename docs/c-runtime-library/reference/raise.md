@@ -35,7 +35,7 @@ int raise(
 
 ### Parameters
 
-*sig*  
+*sig*<br/>
 Signal to be raised.
 
 ## Return Value
@@ -48,14 +48,14 @@ The **raise** function sends *sig* to the executing program. If a previous call 
 
 |Signal|Meaning|Default|
 |------------|-------------|-------------|
-|`SIGABRT`|Abnormal termination|Terminates the calling program with exit code 3|
-|`SIGFPE`|Floating-point error|Terminates the calling program|
-|`SIGILL`|Illegal instruction|Terminates the calling program|
-|`SIGINT`|CTRL+C interrupt|Terminates the calling program|
-|`SIGSEGV`|Illegal storage access|Terminates the calling program|
-|`SIGTERM`|Termination request sent to the program|Ignores the signal|
+|**SIGABRT**|Abnormal termination|Terminates the calling program with exit code 3|
+|**SIGFPE**|Floating-point error|Terminates the calling program|
+|**SIGILL**|Illegal instruction|Terminates the calling program|
+|**SIGINT**|CTRL+C interrupt|Terminates the calling program|
+|**SIGSEGV**|Illegal storage access|Terminates the calling program|
+|**SIGTERM**|Termination request sent to the program|Ignores the signal|
 
-If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If not handled, the function sets `errno` to `EINVAL` and returns a nonzero value.
+If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If not handled, the function sets **errno** to **EINVAL** and returns a nonzero value.
 
 ## Requirements
 
@@ -67,6 +67,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)  
-[abort](../../c-runtime-library/reference/abort.md)  
-[signal](../../c-runtime-library/reference/signal.md)  
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[abort](abort.md)<br/>
+[signal](signal.md)<br/>

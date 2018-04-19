@@ -21,7 +21,8 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # execle
-This POSIX function is deprecated. Use the ISO C++ conformant [_execle](../../c-runtime-library/reference/execle-wexecle.md) instead.  
-  
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_execle](execle-wexecle.md) instead.
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

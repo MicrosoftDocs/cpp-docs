@@ -21,51 +21,56 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # conj, conjf, conjl
-Retrieves the complex conjugate of a complex number.  
-  
-## Syntax  
-  
-```  
-_Dcomplex conj(   
-   _Dcomplex z   
-);  
-_Fcomplex conj(   
-   _Fcomplex z   
-);  // C++ only  
-_Lcomplex conj(   
-   _Lcomplex z   
-);  // C++ only  
-_Fcomplex conjf(   
-   _Fcomplex z   
-);  
-_Lcomplex conjl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### Parameters  
- `z`  
- A complex number.  
-  
-## Return Value  
- The complex conjugate  of `z`.  The result has the same real and imaginary part as `z`, but with the opposite sign.  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `conj` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `conj` always takes and returns a `_Dcomplex` value.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|`conj`,               `conjf`, `conjl`|\<complex.h>|\<ccomplex>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
- [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
- [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
- [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
- [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)   
- [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+
+Retrieves the complex conjugate of a complex number.
+
+## Syntax
+
+```C
+_Dcomplex conj(
+   _Dcomplex z
+);
+_Fcomplex conj(
+   _Fcomplex z
+);  // C++ only
+_Lcomplex conj(
+   _Lcomplex z
+);  // C++ only
+_Fcomplex conjf(
+   _Fcomplex z
+);
+_Lcomplex conjl(
+   _Lcomplex z
+);
+```
+
+### Parameters
+
+*z*<br/>
+A complex number.
+
+## Return Value
+
+The complex conjugate  of *z*.  The result has the same real and imaginary part as *z*, but with the opposite sign.
+
+## Remarks
+
+Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **conj** always takes and returns a **_Dcomplex** value.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|**conj**,               **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[norm, normf, norml](norm-normf-norml1.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>

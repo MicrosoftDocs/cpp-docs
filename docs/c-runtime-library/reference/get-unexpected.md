@@ -21,28 +21,31 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_unexpected
-Returns the termination routine to be called by `unexpected`.  
-  
-## Syntax  
-  
-```  
-unexpected_function _get_unexpected( void );  
-```  
-  
-## Return Value  
- Returns a pointer to the function registered by [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_get_unexpected`|\<eh.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
- [abort](../../c-runtime-library/reference/abort.md)   
- [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   
- [terminate](../../c-runtime-library/reference/terminate-crt.md)   
- [unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+
+Returns the termination routine to be called by **unexpected**.
+
+## Syntax
+
+```C
+unexpected_function _get_unexpected( void );
+```
+
+## Return Value
+
+Returns a pointer to the function registered by [set_unexpected](set-unexpected-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_get_unexpected**|\<eh.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
+[abort](abort.md)<br/>
+[set_terminate](set-terminate-crt.md)<br/>
+[terminate](terminate-crt.md)<br/>
+[unexpected](unexpected-crt.md)<br/>

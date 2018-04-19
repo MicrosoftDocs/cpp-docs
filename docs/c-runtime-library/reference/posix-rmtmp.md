@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # rmtmp
-This POSIX function is deprecated. Use the ISO C++ conformant [_rmtmp](../../c-runtime-library/reference/rmtmp.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_rmtmp](rmtmp.md) instead.

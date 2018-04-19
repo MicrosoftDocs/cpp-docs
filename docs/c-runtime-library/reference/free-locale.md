@@ -21,33 +21,37 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _free_locale
-Frees a locale object.  
-  
-## Syntax  
-  
-```  
-void _free_locale(  
-   _locale_t locale  
-);  
-```  
-  
-#### Parameters  
- `locale`  
- Locale object to free.  
-  
-## Remarks  
- The `_free_locale` function is used to free the locale object obtained from a call to `_get_current_locale` or `_create_locale`.  
-  
- The previous name of this function, `__free_locale` (with two leading underscores) has been deprecated.  
-  
-## Requirements  
-  
-|`Routine`|Required header|  
-|---------------|---------------------|  
-|`_free_locale`|\<locale.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [_get_current_locale](../../c-runtime-library/reference/get-current-locale.md)   
- [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)
+
+Frees a locale object.
+
+## Syntax
+
+```C
+void _free_locale(
+   _locale_t locale
+);
+```
+
+### Parameters
+
+*locale*
+Locale object to free.
+
+## Remarks
+
+The **_free_locale** function is used to free the locale object obtained from a call to **_get_current_locale** or **_create_locale**.
+
+The previous name of this function, **__free_locale** (with two leading underscores) has been deprecated.
+
+## Requirements
+
+|**Routine**|Required header|
+|---------------|---------------------|
+|**_free_locale**|\<locale.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[_get_current_locale](get-current-locale.md)<br/>
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>

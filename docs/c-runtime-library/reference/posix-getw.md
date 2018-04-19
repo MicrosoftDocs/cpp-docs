@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getw
-This POSIX function is deprecated. Use the ISO C++ conformant [_getw](../../c-runtime-library/reference/getw.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_getw](getw.md) instead.

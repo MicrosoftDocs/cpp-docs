@@ -21,58 +21,63 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # clog, clogf, clogl
-Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.  
-  
-## Syntax  
-  
-```  
-_Dcomplex clog(   
-   _Dcomplex z   
-);  
-_Fcomplex clog(   
-   _Fcomplex z   
-);  // C++ only  
-_Lcomplex clog(   
-   _Lcomplex z   
-);  // C++ only  
-_Fcomplex clogf(   
-   _Fcomplex z   
-);  
-_Lcomplex clogl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### Parameters  
- `z`  
- The base of the logarithm.  
-  
-## Return Value  
- The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.  
-  
- The possible return values are:  
-  
-|z parameter|Return value|  
-|-----------------|------------------|  
-|Positive|The base 10 logarithm of z|  
-|Zero|- ∞|  
-|Negative|NaN|  
-|NaN|NaN|  
-|+ ∞|+ ∞|  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `clog` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `clog` always takes and returns a `_Dcomplex` value.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|`clog`,               `clogf`, `clogl`|\<complex.h>|\<ccomplex>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [cexp, cexpf, cexpl](../../c-runtime-library/reference/cexp-cexpf-cexpl.md)   
- [cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)   
- [clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)
+
+Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.
+
+## Syntax
+
+```C
+_Dcomplex clog(
+   _Dcomplex z
+);
+_Fcomplex clog(
+   _Fcomplex z
+);  // C++ only
+_Lcomplex clog(
+   _Lcomplex z
+);  // C++ only
+_Fcomplex clogf(
+   _Fcomplex z
+);
+_Lcomplex clogl(
+   _Lcomplex z
+);
+```
+
+### Parameters
+
+*z*<br/>
+The base of the logarithm.
+
+## Return Value
+
+The natural logarithm of *z*. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.
+
+The possible return values are:
+
+|z parameter|Return value|
+|-----------------|------------------|
+|Positive|The base 10 logarithm of z|
+|Zero|- ∞|
+|Negative|NaN|
+|NaN|NaN|
+|+ ∞|+ ∞|
+
+## Remarks
+
+Because C++ allows overloading, you can call overloads of **clog** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **clog** always takes and returns a **_Dcomplex** value.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|**clog**,               **clogf**, **clogl**|\<complex.h>|\<ccomplex>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
+[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
+[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>

@@ -21,49 +21,55 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _endthread, _endthreadex
-Terminates a thread; `_endthread` terminates a thread that's created by `_beginthread` and  `_endthreadex` terminates a thread that's created by `_beginthreadex`.  
-  
-## Syntax  
-  
-```  
-void _endthread( void );  
-void _endthreadex(   
-   unsigned retval   
-);  
-```  
-  
-#### Parameters  
- `retval`  
- Thread exit code.  
-  
-## Remarks  
- You can call `_endthread` or `_endthreadex` explicitly to terminate a thread; however, `_endthread` or `_endthreadex` is called automatically when the thread returns from the routine passed as a parameter to `_beginthread` or `_beginthreadex`. Terminating a thread with a call to `endthread` or `_endthreadex` helps ensure proper recovery of resources allocated for the thread.  
-  
+
+Terminates a thread; **_endthread** terminates a thread that's created by **_beginthread** and  **_endthreadex** terminates a thread that's created by **_beginthreadex**.
+
+## Syntax
+
+```C
+void _endthread( void );
+void _endthreadex(
+   unsigned retval
+);
+```
+
+### Parameters
+
+*retval*
+Thread exit code.
+
+## Remarks
+
+You can call **_endthread** or **_endthreadex** explicitly to terminate a thread; however, **_endthread** or **_endthreadex** is called automatically when the thread returns from the routine passed as a parameter to **_beginthread** or **_beginthreadex**. Terminating a thread with a call to **endthread** or **_endthreadex** helps ensure proper recovery of resources allocated for the thread.
+
 > [!NOTE]
->  For an executable file linked with Libcmt.lib, do not call the Win32 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API; this prevents the run-time system from reclaiming allocated resources. `_endthread` and `_endthreadex` reclaim allocated thread resources and then call `ExitThread`.  
-  
- `_endthread` automatically closes the thread handle. (This behavior differs from the Win32 `ExitThread` API.) Therefore, when you use `_beginthread` and `_endthread`, do not explicitly close the thread handle by calling the Win32 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.  
-  
- Like the Win32 `ExitThread` API, `_endthreadex` does not close the thread handle. Therefore, when you use `_beginthreadex` and `_endthreadex`, you must close the thread handle by calling the Win32 `CloseHandle` API.  
-  
+> For an executable file linked with Libcmt.lib, do not call the Win32 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API; this prevents the run-time system from reclaiming allocated resources. **_endthread** and **_endthreadex** reclaim allocated thread resources and then call **ExitThread**.
+
+**_endthread** automatically closes the thread handle. (This behavior differs from the Win32 **ExitThread** API.) Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
+
+Like the Win32 **ExitThread** API, **_endthreadex** does not close the thread handle. Therefore, when you use **_beginthreadex** and **_endthreadex**, you must close the thread handle by calling the Win32 **CloseHandle** API.
+
 > [!NOTE]
->  `_endthread` and `_endthreadex` cause C++ destructors pending in the thread not to be called.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_endthread`|\<process.h>|  
-|`_endthreadex`|\<process.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Libraries  
- Multithreaded versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
-  
-## Example  
- See the example for [_beginthread](../../c-runtime-library/reference/beginthread-beginthreadex.md).  
-  
-## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
- [_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md)
+> **_endthread** and **_endthreadex** cause C++ destructors pending in the thread not to be called.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|**_endthread**|\<process.h>|
+|**_endthreadex**|\<process.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+Multithreaded versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+
+## Example
+
+See the example for [_beginthread](beginthread-beginthreadex.md).
+
+## See also
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_beginthread, _beginthreadex](beginthread-beginthreadex.md)<br/>

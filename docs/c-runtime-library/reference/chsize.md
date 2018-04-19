@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 ---
 # _chsize
 
-Changes the size of a file. A more secure version is available; see [_chsize_s](../../c-runtime-library/reference/chsize-s.md).
+Changes the size of a file. A more secure version is available; see [_chsize_s](chsize-s.md).
 
 ## Syntax
 
@@ -31,6 +31,7 @@ int _chsize(
 ```
 
 ### Parameters
+
 *fd*<br/>
 File descriptor referring to an open file.
 
@@ -39,21 +40,21 @@ New length of the file in bytes.
 
 ## Return Value
 
-_chsize` returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: `errno` is set to `EACCES` if the specified file is read-only or the specified file is locked against access, to `EBADF` if the descriptor is invalid, `ENOSPC` if no space is left on the device, or `EINVAL` if `size` is less than zero.
+**_chsize** returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: **errno** is set to **EACCES** if the specified file is read-only or the specified file is locked against access, to **EBADF** if the descriptor is invalid, **ENOSPC** if no space is left on the device, or **EINVAL** if *size* is less than zero.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
 
 ## Remarks
 
-The `_chsize` function extends or truncates the file associated with `fd` to the length specified by `size`. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
+The **_chsize** function extends or truncates the file associated with *fd* to the length specified by *size*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
 
-This function validates its parameters. If `size` is less than zero or `fd` is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If *size* is less than zero or *fd* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_chsize`|\<io.h>|\<errno.h>|
+|**_chsize**|\<io.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -100,6 +101,6 @@ File length after:  329678
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_close](close.md)<br/>
+[_sopen, _wsopen](sopen-wsopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

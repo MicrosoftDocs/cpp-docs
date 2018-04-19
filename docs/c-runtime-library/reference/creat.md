@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # creat
-This POSIX function is deprecated. Use the ISO C++ conformant [_creat](../../c-runtime-library/reference/creat-wcreat.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_creat](creat-wcreat.md) instead.
