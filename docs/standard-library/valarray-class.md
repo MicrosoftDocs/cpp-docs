@@ -1003,7 +1003,7 @@ int main( )
 The initial valarray is: ( 100 -100 100 -100 100 -100 ).  
 The initial Right valarray is: ( 0 2 4 6 8 10 ).  
 The element-by-element result of the quotient is the  
- valarray: ( 1.#INF -50 25 -16.6667 12.5 -10 ).  
+ valarray: ( inf -50 25 -16.6667 12.5 -10 ).  
 *\  
 ```  
   

@@ -527,9 +527,9 @@ int main( )
 1  
 0  
 0  
-The representation of infinity for type float is: 1.#INF  
-The representation of infinity for type double is: 1.#INF  
-The representation of infinity for type long double is: 1.#INF  
+The representation of infinity for type float is: inf  
+The representation of infinity for type double is: inf  
+The representation of infinity for type long double is: inf  
 ```  
   
 ##  <a name="is_bounded"></a>  numeric_limits::is_bounded  

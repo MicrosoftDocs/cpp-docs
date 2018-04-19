@@ -1,5 +1,5 @@
 ---
-title: "Run-time routines by category | Microsoft Docs"
+title: "Universal C runtime routines by category | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/06/2018"
 ms.technology: ["cpp-standard-libraries"]
@@ -13,11 +13,13 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Run-time routines by category
+# Universal C runtime routines by category
 
-This section lists and describes Microsoft run-time library routines by category. For reference convenience, some routines are listed in more than one category. Multibyte-character routines and wide-character routines are grouped with single-byte character counterparts, where they exist.
+This section lists and describes Universal C runtime (UCRT) library routines by category. For reference convenience, some routines are listed in more than one category. Multibyte-character routines and wide-character routines are grouped with single-byte character counterparts, where they exist.
 
-## Routine categories
+## UCRT library routine categories
+
+The main categories of UCRT library routines are:
 
 |||
 |-|-|

@@ -21,48 +21,51 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbbgraph, _ismbbgraph_l
-Determines whether a particular multibyte character is a graphical character.  
-  
-## Syntax  
-  
-```  
-int _ismbbgraph (  
-   unsigned int c   
-);  
-int _ismbbgraph_l (  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-#### Parameters  
- `c`  
- Integer to be tested.  
-  
- `locale`  
- Locale to use.  
-  
-## Return Value  
- Returns a nonzero value if the expression:  
-  
-```  
-( _PUNCT | _UPPER | _LOWER | _DIGIT ) || _ismbbkprint  
-```  
-  
- is nonzero for `c`, or 0 if it is not. `_ismbbgraph` uses the current locale for any locale-dependent behavior. `_ismbbgraph_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_ismbbgraph`|\<mbctype.h>|  
-|`_ismbbgraph_l`|\<mbctype.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+
+Determines whether a particular multibyte character is a graphical character.
+
+## Syntax
+
+```C
+int _ismbbgraph (
+   unsigned int c
+);
+int _ismbbgraph_l (
+   unsigned int c,
+   _locale_t locale
+);
+```
+
+### Parameters
+
+*c*<br/>
+Integer to be tested.
+
+*locale*<br/>
+Locale to use.
+
+## Return Value
+
+Returns a nonzero value if the expression:
+
+`isctype(c, ( _PUNCT | _UPPER | _LOWER | _DIGIT )) || _ismbbkprint(c)`
+
+is nonzero for *c*, or 0 if it is not. **_ismbbgraph** uses the current locale for any locale-dependent behavior. **_ismbbgraph_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_ismbbgraph**|\<mbctype.h>|
+|**_ismbbgraph_l**|\<mbctype.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## See also
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

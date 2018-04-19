@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fgetchar
-This POSIX function is deprecated. Use the ISO C++ conformant [_fgetchar](../../c-runtime-library/reference/fgetchar-fgetwchar.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_fgetchar](fgetchar-fgetwchar.md) instead.

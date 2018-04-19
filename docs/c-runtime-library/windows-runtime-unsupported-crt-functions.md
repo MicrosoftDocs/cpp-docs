@@ -17,10 +17,12 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Runtime Unsupported CRT Functions
-Many C run-time (CRT) APIs can’t be used in Universal Windows Platform (UWP) apps that execute in the Windows Runtime. These apps are built by using the /ZW compiler flag. For a list of unsupported CRT functions, see [CRT functions not supported by /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
-  
- All CRT APIs are described in the [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md) section of the documentation.  
-  
-## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+
+Many C run-time (CRT) APIs can’t be used in Universal Windows Platform (UWP) apps that execute in the Windows Runtime. These apps are built by using the /ZW compiler flag. For a list of unsupported CRT functions, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+All CRT APIs are described in the [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md) section of the documentation.
+
+## See Also
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

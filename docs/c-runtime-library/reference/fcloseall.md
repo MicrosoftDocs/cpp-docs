@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fcloseall
-This POSIX function is deprecated. Use the ISO C++ conformant [_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_fcloseall](fclose-fcloseall.md) instead.

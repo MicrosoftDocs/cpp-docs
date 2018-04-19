@@ -21,37 +21,43 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _rmtmp
-Removes temporary files.  
-  
-## Syntax  
-  
-```  
-  
-int _rmtmp( void );  
-```  
-  
-## Return Value  
- `_rmtmp` returns the number of temporary files closed and deleted.  
-  
-## Remarks  
- The `_rmtmp` function cleans up all temporary files in the current directory. The function removes only those files created by `tmpfile`; use it only in the same directory in which the temporary files were created.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_rmtmp`|\<stdio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## Example  
- See the example for [tmpfile](../../c-runtime-library/reference/tmpfile.md).  
-  
-## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [_flushall](../../c-runtime-library/reference/flushall.md)   
- [tmpfile](../../c-runtime-library/reference/tmpfile.md)   
- [_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)
+
+Removes temporary files.
+
+## Syntax
+
+```C
+
+int _rmtmp( void );
+```
+
+## Return Value
+
+**_rmtmp** returns the number of temporary files closed and deleted.
+
+## Remarks
+
+The **_rmtmp** function cleans up all temporary files in the current directory. The function removes only those files created by **tmpfile**; use it only in the same directory in which the temporary files were created.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_rmtmp**|\<stdio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## Example
+
+See the example for [tmpfile](tmpfile.md).
+
+## See also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[_flushall](flushall.md)<br/>
+[tmpfile](tmpfile.md)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

@@ -21,51 +21,49 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cimag, cimagf, cimagl
-Retrieves the imaginary part of a complex number.  
-  
-## Syntax  
-  
-```  
-double cimag(   
-   _Dcomplex z   
-);  
-float cimag(   
-   _Fcomplex z   
-);  // C++  
-long double cimag(   
-  _Lcomplex z   
-);  // C++  
-float cimagf(   
-   _Fcomplex z   
-);  
-long double cimagl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### Parameters  
- `z`  
- A complex number.  
-  
-## Return Value  
- The imaginary part of `z`.  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `cimag` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `cimag` always takes a `_Dcomplex` value and returns a `double` value.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|`cimag`,               `cimagf`, `cimagl`|\<complex.h>|\<ccomplex>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
- [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
- [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
- [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
- [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)   
- [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+
+Retrieves the imaginary part of a complex number.
+
+## Syntax
+
+```C
+double cimag( _Dcomplex z );
+float cimagf( _Fcomplex z );
+long double cimagl( _Lcomplex z );
+```
+
+```cpp
+float cimag( _Fcomplex z );  // C++
+long double cimag( _Lcomplex z );  // C++
+```
+
+### Parameters
+
+*z*<br/>
+A complex number.
+
+## Return Value
+
+The imaginary part of *z*.
+
+## Remarks
+
+Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long** **double** values. In a C program, **cimag** always takes a **_Dcomplex** value and returns a **double** value.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|**cimag**,               **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[norm, normf, norml](norm-normf-norml1.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>

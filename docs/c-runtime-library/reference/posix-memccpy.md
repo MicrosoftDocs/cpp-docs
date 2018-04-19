@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memccpy
-This POSIX function is deprecated. Use the ISO C++ conformant [_memccpy](../../c-runtime-library/reference/memccpy.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_memccpy](memccpy.md) instead.

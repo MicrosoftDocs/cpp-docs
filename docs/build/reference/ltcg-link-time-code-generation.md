@@ -34,7 +34,7 @@ Specifies that the linker only applies whole program optimization or link-time c
 Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information is not displayed.
 
 **OFF** (optional)<br/>
-Disables link-time code generation. This behavior is the same as when /LTCG is not specified on the command line.
+Disables link-time code generation. This behavior is the same as when **/LTCG** is not specified on the command line.
 
 **PGINSTRUMENT** (optional)<br/>
 This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile Guided Optimization](profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
@@ -139,7 +139,7 @@ Modules that are compiled by using [/GL](../../build/reference/gl-whole-program-
 
 You can also apply **/LTCG** to specific builds by choosing **Build** > **Profile Guided Optimization** on the menu bar, or by choosing one of the Profile Guided Optimization options on the shortcut menu for the project.
 
-#### To set this compiler option programmatically
+### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkTimeCodeGeneration%2A>.
 
