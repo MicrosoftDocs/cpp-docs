@@ -94,7 +94,7 @@ Directories to search for WinRT library files for use in Universal Windows Platf
 Directories in which to search for source files to use for IntelliSense.
 
 **Exclude Directories**<br/>
-Directories not to search when checking for build dependencies.
+Directories not to search when checking for build dependencies. If your project has large stable libraries (such as Boost), you can potentially speed up build times by excluding those directories from the dependency check that is performed before each compilation. 
 
 ## Sharing the Settings
 
