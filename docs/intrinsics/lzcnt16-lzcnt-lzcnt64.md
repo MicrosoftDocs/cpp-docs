@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 # __lzcnt16, __lzcnt, __lzcnt64
 **Microsoft Specific**  
   
- Counts the number of leading zeros in a 16-, 32-, or 64-byte integer.  
+ Counts the number of leading zeros in a 16-, 32-, or 64-bit integer.  
   
 ## Syntax  
   
