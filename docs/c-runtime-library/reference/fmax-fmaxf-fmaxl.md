@@ -1,7 +1,7 @@
 ---
 title: "fmax, fmaxf, fmaxl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
@@ -21,69 +21,74 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fmax, fmaxf, fmaxl
-Determine the larger of two specified numeric values.  
-  
-## Syntax  
-  
-```  
-double fmax(  
-   double x,   
-   double y  
-);  
-  
-float fmax(  
-   float x,   
-   float y  
-); //C++ only  
-  
-long double fmax(  
-   long double x,   
-   long double y  
-); //C++ only  
-  
-float fmaxf(  
-   float x,   
-   float y  
-);  
-  
-long double fmaxl(  
-   long double x,   
-   long double y  
-);  
-  
-```  
-  
-#### Parameters  
- [in] `x`  
- The first value to compare.  
-  
- [in] `y`  
- The second value to compare.  
-  
-## Return Value  
- If successful, returns the larger of `x` or `y`. The value returned is exact, and does not depend on any form of rounding.  
-  
- Otherwise, may return one of the following values:  
-  
-|Issue|Return|  
-|-----------|------------|  
-|`x` = NaN|`y`|  
-|`y` = NaN|`x`|  
-|`x` and `y` = NaN|NaN|  
-  
- This function does not use the errors specified in  [_matherr](../../c-runtime-library/reference/matherr.md).  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of fmax that take and return float and long double types. In a C program, fmax always takes and returns a double.  
-  
-## Requirements  
-  
-|Function|C header|C++ header|  
-|--------------|--------------|------------------|  
-|`fmax`, `fmaxf`, `fmaxl`|\<math.h>|\<cmath> or \<math.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [fmin, fminf, fminl](fmin-fminf-fminl.md)  
+
+Determine the larger of two specified numeric values.
+
+## Syntax
+
+```C
+double fmax(
+   double x,
+   double y
+);
+
+float fmax(
+   float x,
+   float y
+); //C++ only
+
+long double fmax(
+   long double x,
+   long double y
+); //C++ only
+
+float fmaxf(
+   float x,
+   float y
+);
+
+long double fmaxl(
+   long double x,
+   long double y
+);
+
+```
+
+### Parameters
+
+*x*<br/>
+The first value to compare.
+
+*y*<br/>
+The second value to compare.
+
+## Return Value
+
+If successful, returns the larger of *x* or *y*. The value returned is exact, and does not depend on any form of rounding.
+
+Otherwise, may return one of the following values:
+
+|Issue|Return|
+|-----------|------------|
+|*x* = NaN|*y*|
+|*y* = NaN|*x*|
+|*x* and *y* = NaN|NaN|
+
+This function does not use the errors specified in  [_matherr](matherr.md).
+
+## Remarks
+
+Because C++ allows overloading, you can call overloads of fmax that take and return float and long double types. In a C program, fmax always takes and returns a double.
+
+## Requirements
+
+|Function|C header|C++ header|
+|--------------|--------------|------------------|
+|**fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> or \<math.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>

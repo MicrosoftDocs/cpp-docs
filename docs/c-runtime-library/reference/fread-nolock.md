@@ -21,47 +21,52 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fread_nolock
-Reads data from a stream, without locking other threads.  
-  
-## Syntax  
-  
-```  
-size_t _fread_nolock(   
-   void *buffer,  
-   size_t size,  
-   size_t count,  
-   FILE *stream   
-);  
-```  
-  
-#### Parameters  
- `buffer`  
- Storage location for data.  
-  
- `size`  
- Item size in bytes.  
-  
- `count`  
- Maximum number of items to be read.  
-  
- `stream`  
- Pointer to the `FILE` structure.  
-  
-## Return Value  
- See [fread](../../c-runtime-library/reference/fread.md).  
-  
-## Remarks  
- This function is a non-locking version of `fread`. It is identical to `fread` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_fread_nolock`|\<stdio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [fwrite](../../c-runtime-library/reference/fwrite.md)   
- [_read](../../c-runtime-library/reference/read.md)
+
+Reads data from a stream, without locking other threads.
+
+## Syntax
+
+```C
+size_t _fread_nolock(
+   void *buffer,
+   size_t size,
+   size_t count,
+   FILE *stream
+);
+```
+
+### Parameters
+
+*buffer*<br/>
+Storage location for data.
+
+*size*<br/>
+Item size in bytes.
+
+*count*<br/>
+Maximum number of items to be read.
+
+*stream*<br/>
+Pointer to the **FILE** structure.
+
+## Return Value
+
+See [fread](fread.md).
+
+## Remarks
+
+This function is a non-locking version of **fread**. It is identical to **fread** except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|**_fread_nolock**|\<stdio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[fwrite](fwrite.md)<br/>
+[_read](read.md)<br/>

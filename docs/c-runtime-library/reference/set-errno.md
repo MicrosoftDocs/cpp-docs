@@ -21,52 +21,55 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_errno
-Set the value of the `errno` global variable.  
-  
-## Syntax  
-  
-```  
-errno_t _set_errno(   
-   int value   
-);  
-```  
-  
-#### Parameters  
- [in] `value`  
- The new value of `errno`.  
-  
-## Return Value  
- Returns zero if successful.  
-  
-## Remarks  
- Possible values are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).  
-  
-## Example  
-  
-```  
-// crt_set_errno.c  
-#include <stdio.h>  
-#include <errno.h>  
-  
-int main()  
-{  
-   _set_errno( EILSEQ );  
-   perror( "Oops" );  
-}  
-```  
-  
-```Output  
-Oops: Illegal byte sequence  
-```  
-  
-## Requirements  
-  
-|Routine|Required header|Optional header|  
-|-------------|---------------------|---------------------|  
-|`_set_errno`|\<stdlib.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [_get_errno](../../c-runtime-library/reference/get-errno.md)   
- [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+
+Set the value of the **errno** global variable.
+
+## Syntax
+
+```C
+errno_t _set_errno( int error_value );
+```
+
+### Parameters
+
+*error_value*<br/>
+The new value of **errno**.
+
+## Return Value
+
+Returns zero if successful.
+
+## Remarks
+
+Possible values are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).
+
+## Example
+
+```C
+// crt_set_errno.c
+#include <stdio.h>
+#include <errno.h>
+
+int main()
+{
+   _set_errno( EILSEQ );
+   perror( "Oops" );
+}
+```
+
+```Output
+Oops: Illegal byte sequence
+```
+
+## Requirements
+
+|Routine|Required header|Optional header|
+|-------------|---------------------|---------------------|
+|**_set_errno**|\<stdlib.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[_get_errno](get-errno.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

@@ -21,33 +21,37 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _unlock_file
-Unlocks a file, allowing other processes to access the file.  
-  
-## Syntax  
-  
-```  
-void _unlock_file(  
-   FILE* file  
-);  
-```  
-  
-#### Parameters  
- `file`  
- File handle.  
-  
-## Remarks  
- The `_unlock_file` function unlocks the file specified by `file`. Unlocking a file allows access to the file by other processes. This function should not be called unless `_lock_file` was previously called on the `file` pointer. Calling `_unlock_file` on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](../../c-runtime-library/reference/lock-file.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_unlock_file`|\<stdio.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
- [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
- [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)   
- [_lock_file](../../c-runtime-library/reference/lock-file.md)
+
+Unlocks a file, allowing other processes to access the file.
+
+## Syntax
+
+```C
+void _unlock_file(
+   FILE* file
+);
+```
+
+### Parameters
+
+*file*
+File handle.
+
+## Remarks
+
+The **_unlock_file** function unlocks the file specified by *file*. Unlocking a file allows access to the file by other processes. This function should not be called unless **_lock_file** was previously called on the *file* pointer. Calling **_unlock_file** on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](lock-file.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_unlock_file**|\<stdio.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[File Handling](../../c-runtime-library/file-handling.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_lock_file](lock-file.md)<br/>

@@ -21,31 +21,35 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _findclose
-Closes the specified search handle and releases associated resources.  
-  
-## Syntax  
-  
-```  
-int _findclose(   
-   intptr_t handle   
-);  
-```  
-  
-#### Parameters  
- `handle`  
- Search handle returned by a previous call to `_findfirst`.  
-  
-## Return Value  
- If successful, `_findclose` returns 0. Otherwise, it returns -1 and sets `errno` to `ENOENT`, indicating that no more matching files could be found.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_findclose`|\<io.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [System Calls](../../c-runtime-library/system-calls.md)   
- [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)
+
+Closes the specified search handle and releases associated resources.
+
+## Syntax
+
+```C
+int _findclose(
+   intptr_t handle
+);
+```
+
+### Parameters
+
+*handle*<br/>
+Search handle returned by a previous call to **_findfirst**.
+
+## Return Value
+
+If successful, **_findclose** returns 0. Otherwise, it returns -1 and sets **errno** to **ENOENT**, indicating that no more matching files could be found.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|**_findclose**|\<io.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[System Calls](../../c-runtime-library/system-calls.md)<br/>
+[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>

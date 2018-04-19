@@ -21,48 +21,53 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wctype
-Determines a classification rule for wide-character codes.  
-  
-## Syntax  
-  
-```  
-wctype_t wctype(  
-   const char * property   
-);  
-```  
-  
-#### Parameters  
- `property`  
- Property string.  
-  
-## Return Value  
- If the `LC_CTYPE` category of the current locale does not define a classification rule whose name matches the property string `property`, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](../../c-runtime-library/reference/towctrans.md).  
-  
-## Remarks  
- The function determines a classification rule for wide-character codes. The following pairs of calls have the same behavior in all locales (but an implementation can define additional classification rules even in the "C" locale):  
-  
-|Function|Same as|  
-|--------------|-------------|  
-|`iswalnum(`  `c`  `)`|`iswctype(`  `c` `, wctype( "alnum" ) )`|  
-|`iswalpha(`  `c`  `)`|`iswctype(`  `c` `, wctype( "alpha" ) )`|  
-|`iswcntrl(`  `c`  `)`|`iswctype(`  `c` `, wctype( "cntrl" ) )`|  
-|`iswdigit(`  `c`  `)`|`iswctype(`  `c` `, wctype( "digit" ) )`|  
-|`iswgraph(`  `c`  `)`|`iswctype(`  `c` `, wctype( "graph" ) )`|  
-|`iswlower(`  `c`  `)`|`iswctype(`  `c` `, wctype( "lower" ) )`|  
-|`iswprint(`  `c`  `)`|`iswctype(`  `c` `, wctype( "print" ) )`|  
-|`iswpunct(`  `c`  `)`|`iswctype(`  `c` `, wctype( "punct" ) )`|  
-|`iswspace(`  `c`  `)`|`iswctype(`  `c` `, wctype( "space" ) )`|  
-|`iswupper(`  `c`  `)`|`iswctype(`  `c` `, wctype( "upper" ) )`|  
-|`iswxdigit(`  `c`  `)`|`iswctype(`  `c` `, wctype( "xdigit" ) )`|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`wctype`|\<wctype.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
- [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)
+
+Determines a classification rule for wide-character codes.
+
+## Syntax
+
+```C
+wctype_t wctype(
+   const char * property
+);
+```
+
+### Parameters
+
+*property*<br/>
+Property string.
+
+## Return Value
+
+If the **LC_CTYPE** category of the current locale does not define a classification rule whose name matches the property string *property*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](towctrans.md).
+
+## Remarks
+
+The function determines a classification rule for wide-character codes. The following pairs of calls have the same behavior in all locales (but an implementation can define additional classification rules even in the "C" locale):
+
+|Function|Same as|
+|--------------|-------------|
+|iswalnum(c)|iswctype(c, wctype( "alnum" ) )|
+|iswalpha(c)|iswctype(c, wctype( "alpha" ) )|
+|iswcntrl(c)|iswctype(c, wctype( "cntrl" ) )|
+|iswdigit(c)|iswctype(c, wctype( "digit" ) )|
+|iswgraph(c)|iswctype(c, wctype( "graph" ) )|
+|iswlower(c)|iswctype(c, wctype( "lower" ) )|
+|iswprint(c)|iswctype(c, wctype( "print" ) )|
+|iswpunct(c)|iswctype(c, wctype( "punct" ) )|
+|iswspace(c)|iswctype(c, wctype( "space" ) )|
+|iswupper(c)|iswctype(c, wctype( "upper" ) )|
+|iswxdigit(c)|iswctype(c, wctype( "xdigit" ) )|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**wctype**|\<wctype.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

@@ -21,39 +21,43 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbbkana, _ismbbkana_l
-Tests for a katakana symbol and is specific to code page 932.  
-  
-## Syntax  
-  
-```  
-int _ismbbkana(  
-   unsigned int c   
-);  
-int _ismbbkana_l(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-#### Parameters  
- `c`  
- Integer to be tested.  
-  
- `locale`  
- Locale to use.  
-  
-## Return Value  
- `_ismbbkana` returns a nonzero value if the integer `c` is a katakana symbol or 0 if it is not. `_ismbbkana` uses the current locale for locale-dependent character information. `_ismbbkana_l` is identical except that it uses the locale object passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_ismbbkana`|\<mbctype.h>|  
-|`_ismbbkana_l`|\<mbctype.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+
+Tests for a katakana symbol and is specific to code page 932.
+
+## Syntax
+
+```C
+int _ismbbkana(
+   unsigned int c
+);
+int _ismbbkana_l(
+   unsigned int c,
+   _locale_t locale
+);
+```
+
+### Parameters
+
+*c*<br/>
+Integer to be tested.
+
+*locale*<br/>
+Locale to use.
+
+## Return Value
+
+**_ismbbkana** returns a nonzero value if the integer *c* is a katakana symbol or 0 if it is not. **_ismbbkana** uses the current locale for locale-dependent character information. **_ismbbkana_l** is identical except that it uses the locale object passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_ismbbkana**|\<mbctype.h>|
+|**_ismbbkana_l**|\<mbctype.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wcsicoll
-This POSIX function is deprecated. Use the ISO C++ conformant [_wcsicoll](../../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_wcsicoll](stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md) instead.

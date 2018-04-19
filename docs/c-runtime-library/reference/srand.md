@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 ---
 # srand
 
-Sets the starting seed value for the pseudorandom number generator used by the `rand` function.
+Sets the starting seed value for the pseudorandom number generator used by the **rand** function.
 
 ## Syntax
 
@@ -32,26 +32,26 @@ void srand(
 
 ### Parameters
 
-*seed*  
+*seed*
 Seed for pseudorandom number generation
 
 ## Remarks
 
-The `srand` function sets the starting point for generating a series of pseudorandom integers in the current thread. To reinitialize the generator to create the same sequence of results, call the `srand` function and use the same *seed* argument again. Any other value for *seed* sets the generator to a different starting point in the pseudorandom sequence. `rand` retrieves the pseudorandom numbers that are generated. Calling `rand` before any call to `srand` generates the same sequence as calling `srand` with *seed* passed as 1.
+The **srand** function sets the starting point for generating a series of pseudorandom integers in the current thread. To reinitialize the generator to create the same sequence of results, call the **srand** function and use the same *seed* argument again. Any other value for *seed* sets the generator to a different starting point in the pseudorandom sequence. **rand** retrieves the pseudorandom numbers that are generated. Calling **rand** before any call to **srand** generates the same sequence as calling **srand** with *seed* passed as 1.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`srand`|\<stdlib.h>|
+|**srand**|\<stdlib.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-See the example for [rand](../../c-runtime-library/reference/rand.md).
+See the example for [rand](rand.md).
 
-## See Also
+## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
-[rand](../../c-runtime-library/reference/rand.md)  
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](rand.md)<br/>

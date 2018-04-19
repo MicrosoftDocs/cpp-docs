@@ -1,7 +1,7 @@
 ---
 title: "norm, normf, norml | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2018"
+ms.date: "04/05/2018"
 ms.technology: ["cpp", "devlang-cpp"]
 ms.topic: "reference"
 apiname: ["norm", "normf", "norml"]
@@ -44,22 +44,22 @@ The squared magnitude of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `norm` that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long double** values. In a C program, `norm` always takes a **_Dcomplex** value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **norm** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long double** values. In a C program, **norm** always takes a **_Dcomplex** value and returns a **double** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`norm`, `normf`, `norml`|\<complex.h>|\<ccomplex>|
+|**norm**, **normf**, **norml**|\<complex.h>|\<complex.h>|
 
 The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
-[cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>

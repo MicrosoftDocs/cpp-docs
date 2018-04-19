@@ -21,50 +21,56 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fwrite_nolock
-Writes data to a stream, without locking the thread.  
-  
-## Syntax  
-  
-```  
-size_t _fwrite_nolock(  
-   const void *buffer,  
-   size_t size,  
-   size_t count,  
-   FILE *stream   
-);  
-```  
-  
-#### Parameters  
- `buffer`  
- Pointer to the data to be written.  
-  
- `size`  
- Item size in bytes.  
-  
- `count`  
- Maximum number of items to be written.  
-  
- `stream`  
- Pointer to the `FILE` structure.  
-  
-## Return Value  
- Same as [fwrite](../../c-runtime-library/reference/fwrite.md).  
-  
-## Remarks  
- This function is a non-locking version of `fwrite`. It is identical to `fwrite` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_fwrite_nolock`|\<stdio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
- See the example for [fread](../../c-runtime-library/reference/fread.md).  
-  
-## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [fread](../../c-runtime-library/reference/fread.md)   
- [_write](../../c-runtime-library/reference/write.md)
+
+Writes data to a stream, without locking the thread.
+
+## Syntax
+
+```C
+size_t _fwrite_nolock(
+   const void *buffer,
+   size_t size,
+   size_t count,
+   FILE *stream
+);
+```
+
+### Parameters
+
+*buffer*<br/>
+Pointer to the data to be written.
+
+*size*<br/>
+Item size in bytes.
+
+*count*<br/>
+Maximum number of items to be written.
+
+*stream*<br/>
+Pointer to the **FILE** structure.
+
+## Return Value
+
+Same as [fwrite](fwrite.md).
+
+## Remarks
+
+This function is a non-locking version of **fwrite**. It is identical to **fwrite** except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|**_fwrite_nolock**|\<stdio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Example
+
+See the example for [fread](fread.md).
+
+## See also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[fread](fread.md)<br/>
+[_write](write.md)<br/>

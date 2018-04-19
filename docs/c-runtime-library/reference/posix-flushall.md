@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # flushall
-This POSIX function is deprecated. Use the ISO C++ conformant [_flushall](../../c-runtime-library/reference/flushall.md) instead.
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_flushall](flushall.md) instead.

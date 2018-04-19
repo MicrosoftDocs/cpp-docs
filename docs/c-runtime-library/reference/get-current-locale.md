@@ -21,31 +21,35 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_current_locale
-Gets a locale object representing the current locale.  
-  
-## Syntax  
-  
-```  
-_locale_t _get_current_locale(void);  
-```  
-  
-## Return Value  
- A locale object representing the current locale.  
-  
-## Remarks  
- The `_get_current_locale` function gets the currently set locale for the thread and returns a locale object representing that locale.  
-  
- The previous name of this function, `__get_current_locale` (with two leading underscores) has been deprecated.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_get_current_locale`|\<locale.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   
- [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)   
- [_free_locale](../../c-runtime-library/reference/free-locale.md)
+
+Gets a locale object representing the current locale.
+
+## Syntax
+
+```C
+_locale_t _get_current_locale(void);
+```
+
+## Return Value
+
+A locale object representing the current locale.
+
+## Remarks
+
+The **_get_current_locale** function gets the currently set locale for the thread and returns a locale object representing that locale.
+
+The previous name of this function, **__get_current_locale** (with two leading underscores) has been deprecated.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_get_current_locale**|\<locale.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
+[_free_locale](free-locale.md)<br/>

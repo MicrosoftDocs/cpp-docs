@@ -669,7 +669,7 @@ int main( )
 ```Output
 Initial valarray: 0 10 20 30 40 50 60 70 80
 The natural logarithm of the initial valarray is:
--1.#INF
+-inf
 2.30259
 2.99573
 3.4012
@@ -732,7 +732,7 @@ int main( )
 ```Output
 Initial valarray: 0 10 20 30 40 50 60 70 80 90 100
 The common logarithm of the initial valarray is:
--1.#INF
+-inf
 1
 1.30103
 1.47712
