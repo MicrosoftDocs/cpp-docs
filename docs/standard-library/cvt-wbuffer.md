@@ -18,17 +18,16 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;cvt/wbuffer&gt;
-The header `<cvt/wstring>` in previous versions of Visual Studio defined the template class [wbuffer_convert Class](../standard-library/wbuffer-convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [\<locale>](../standard-library/locale.md) in the `std` namespace  
-  
-## Syntax  
-  
-```  
-#include <cvt/wbuffer>  
-  
-```  
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
 
+The header `<cvt/wstring>` in previous versions of Visual Studio defined the template class [wbuffer_convert Class](../standard-library/wbuffer-convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [\<locale>](../standard-library/locale.md) in the `std` namespace
 
+## Syntax
 
+```cpp
+#include <cvt/wbuffer>
+
+```
+
+## See also
+
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>

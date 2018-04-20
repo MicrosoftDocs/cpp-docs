@@ -16,4 +16,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Sample Container Typedefs
+
 For more information about the typedefs in the sample container class, see [Sample Container Class](../standard-library/sample-container-class.md)

@@ -18,52 +18,55 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # hash Class
-Computes hash code for a value.  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
-struct hash {  
-    size_t operator()(Ty val) const; 
-};  
-```  
-  
-## Remarks  
-The function object defines a hash function, suitable for mapping values of type *Ty* to a distribution of index values. The member `operator()` returns a hash code for *val*, suitable for use with template classes `unordered_map`, `unordered_multimap`, `unordered_set`, and `unordered_multiset`. The standard library provides specializations for basic types: *Ty* may be any scalar type, including pointer types and enumeration types. In addition, there are specializations for the library types `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant`, and `vector<bool>`.  
-  
-## Example  
-  
-```cpp  
-// std__functional__hash.cpp   
-// compile with: /EHsc   
-#include <functional>   
-#include <iostream>   
-#include <unordered_set>   
-  
-int main()   
-    {   
-    std::unordered_set<int, std::hash<int> > c0;   
-    c0.insert(3);   
-    std::cout << *c0.find(3) << std::endl;   
-  
-    return (0);   
-    }  
-  
-```  
-  
-```Output  
-3  
-```  
-  
-## Requirements  
-**Header:** \<functional>  
-  
-**Namespace:** std  
-  
-## See Also  
- [<unordered_map>](../standard-library/unordered-map.md)   
- [unordered_multimap Class](../standard-library/unordered-multimap-class.md)   
- [unordered_multiset Class](../standard-library/unordered-multiset-class.md)   
- [<unordered_set>](../standard-library/unordered-set.md)
 
+Computes hash code for a value.
+
+## Syntax
+
+```cpp
+template <class Ty>
+struct hash {
+    size_t operator()(Ty val) const;
+};
+```
+
+## Remarks
+
+The function object defines a hash function, suitable for mapping values of type *Ty* to a distribution of index values. The member `operator()` returns a hash code for *val*, suitable for use with template classes `unordered_map`, `unordered_multimap`, `unordered_set`, and `unordered_multiset`. The standard library provides specializations for basic types: *Ty* may be any scalar type, including pointer types and enumeration types. In addition, there are specializations for the library types `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant`, and `vector<bool>`.
+
+## Example
+
+```cpp
+// std__functional__hash.cpp
+// compile with: /EHsc
+#include <functional>
+#include <iostream>
+#include <unordered_set>
+
+int main()
+    {
+    std::unordered_set<int, std::hash<int> > c0;
+    c0.insert(3);
+    std::cout << *c0.find(3) << std::endl;
+
+    return (0);
+    }
+
+```
+
+```Output
+3
+```
+
+## Requirements
+
+**Header:** \<functional>
+
+**Namespace:** std
+
+## See also
+
+[<unordered_map>](../standard-library/unordered-map.md)<br/>
+[unordered_multimap Class](../standard-library/unordered-multimap-class.md)<br/>
+[unordered_multiset Class](../standard-library/unordered-multiset-class.md)<br/>
+[<unordered_set>](../standard-library/unordered-set.md)<br/>

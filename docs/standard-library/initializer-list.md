@@ -16,22 +16,21 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;initializer_list&gt;
-Defines the container template class `initializer_list` and several supporting templates.  
-  
-## Syntax  
-  
-```  
-#include <initializer_list>  
-```  
-  
-### Classes  
-  
-|||  
-|-|-|  
-|[initializer_list](../standard-library/initializer-list-class.md)|Provides access to an array of elements in which each member is of the specified type.|  
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
 
+Defines the container template class `initializer_list` and several supporting templates.
 
+## Syntax
 
+```cpp
+#include <initializer_list>
+```
+
+### Classes
+
+|||
+|-|-|
+|[initializer_list](../standard-library/initializer-list-class.md)|Provides access to an array of elements in which each member is of the specified type.|
+
+## See also
+
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>

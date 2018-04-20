@@ -18,56 +18,59 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # underflow_error Class
-The class serves as the base class for all exceptions thrown to report an arithmetic underflow.  
-  
-## Syntax  
-  
-```  
-class underflow_error : public runtime_error {  
-public:  
+
+The class serves as the base class for all exceptions thrown to report an arithmetic underflow.
+
+## Syntax
+
+```cpp
+class underflow_error : public runtime_error {
+public:
     explicit underflow_error(const string& message);
 
     explicit underflow_error(const char *message);
 
-};  
-```  
-  
-## Remarks  
- The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).  
-  
-## Example  
-  
-```cpp  
-// underflow_error.cpp  
-// compile with: /EHsc /GR  
-#include <iostream>  
-  
-using namespace std;  
-  
-int main( )  
-{  
-   try   
-   {  
-      throw underflow_error( "The number's a bit small, captain!" );  
-   }  
-   catch ( exception &e ) {  
-      cerr << "Caught: " << e.what( ) << endl;  
-      cerr << "Type: " << typeid( e ).name( ) << endl;  
-   };  
-}  
-\* Output:   
-Caught: The number's a bit small, captain!  
-Type: class std::underflow_error  
-*\  
-```  
-  
-## Requirements  
- **Header:** \<stdexcept>  
-  
- **Namespace:** std  
-  
-## See Also  
- [\<stdexcept> Members](http://msdn.microsoft.com/en-us/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)   
- [runtime_error Class](../standard-library/runtime-error-class.md)   
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+};
+```
 
+## Remarks
+
+The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).
+
+## Example
+
+```cpp
+// underflow_error.cpp
+// compile with: /EHsc /GR
+#include <iostream>
+
+using namespace std;
+
+int main( )
+{
+   try
+   {
+      throw underflow_error( "The number's a bit small, captain!" );
+   }
+   catch ( exception &e ) {
+      cerr << "Caught: " << e.what( ) << endl;
+      cerr << "Type: " << typeid( e ).name( ) << endl;
+   };
+}
+\* Output:
+Caught: The number's a bit small, captain!
+Type: class std::underflow_error
+*\
+```
+
+## Requirements
+
+**Header:** \<stdexcept>
+
+**Namespace:** std
+
+## See also
+
+[\<stdexcept> Members](http://msdn.microsoft.com/en-us/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)<br/>
+[runtime_error Class](../standard-library/runtime-error-class.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

@@ -12,25 +12,27 @@ caps.latest.revision: 7
 manager: "ghogen"
 ---
 # &lt;new&gt; typedefs
-||  
-|-|  
-|[new_handler](#new_handler)|  
-  
-##  <a name="new_handler"></a>  new_handler  
- The type points to a function suitable for use as a new handler.  
-  
-```
+
+||
+|-|
+|[new_handler](#new_handler)|
+
+## <a name="new_handler"></a>  new_handler
+
+The type points to a function suitable for use as a new handler.
+
+```cpp
 typedef void (*new_handler)();
-```  
-  
-### Remarks  
- This type of handler function is called by **operatornew** or `operator new[]` when they cannot satisfy a request for additional storage.  
-  
-### Example  
-  See [set_new_handler](../standard-library/new-functions.md#set_new_handler) for an example using `new_handler` as a return value.  
-  
-## See Also  
- [\<new>](../standard-library/new.md)
+```
 
+### Remarks
 
+This type of handler function is called by **operatornew** or `operator new[]` when they cannot satisfy a request for additional storage.
 
+### Example
+
+See [set_new_handler](../standard-library/new-functions.md#set_new_handler) for an example using `new_handler` as a return value.
+
+## See also
+
+[\<new>](../standard-library/new.md)<br/>

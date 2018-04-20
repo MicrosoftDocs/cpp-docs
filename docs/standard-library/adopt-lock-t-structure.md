@@ -17,22 +17,22 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # adopt_lock_t Structure
-Represents a type that is used to define an [adopt_lock](../standard-library/mutex-functions.md#adopt_lock).  
-  
-## Syntax  
-  
-```cpp  
+
+Represents a type that is used to define an [adopt_lock](../standard-library/mutex-functions.md#adopt_lock).
+
+## Syntax
+
+```cpp
 struct adopt_lock_t;
-```  
-  
-## Requirements  
- **Header:** \<mutex>  
-  
- **Namespace:** std  
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [\<mutex>](../standard-library/mutex.md)
+```
 
+## Requirements
 
+**Header:** \<mutex>
 
+**Namespace:** std
+
+## See also
+
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<mutex>](../standard-library/mutex.md)<br/>

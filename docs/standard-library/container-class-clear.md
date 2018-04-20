@@ -17,17 +17,19 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Container Class::clear
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Calls [erase](../standard-library/container-class-erase.md)([begin](../standard-library/container-class-begin.md), [end](../standard-library/container-class-end.md)).  
-  
-## Syntax  
-  
-```  
- 
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Calls [erase](../standard-library/container-class-erase.md)([begin](../standard-library/container-class-begin.md), [end](../standard-library/container-class-end.md)).
+
+## Syntax
+
+```
+
 void clear();
-```  
-  
-## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+```
+
+## See also
+
+[Sample Container Class](../standard-library/sample-container-class.md)<br/>
