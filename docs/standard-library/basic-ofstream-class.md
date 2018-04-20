@@ -66,13 +66,13 @@ int main(int argc, char **argv)
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_ofstream](#basic_ofstream)|Creates an object of type `basic_ofstream`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[close](#close)|Closes a file.|
 |[is_open](#is_open)|Determines if a file is open.|
@@ -82,7 +82,7 @@ int main(int argc, char **argv)
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue reference` that does not leave a copy behind.|
 

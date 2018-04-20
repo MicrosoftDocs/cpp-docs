@@ -129,19 +129,19 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[locale](#locale)|Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[category](#category)|An integer type that provides bitmask values to denote standard facet families.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[combine](#combine)|Inserts a facet from a specified locale into a target locale.|
 |[name](#name)|Returns the stored locale name.|
@@ -155,7 +155,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](#op_neq)|Tests two locales for inequality.|
 |[operator( )](#op_call)|Compares two `basic_string` objects.|
@@ -163,7 +163,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[facet](#facet_class)|A class that serves as the base class for all locale facets.|
 |[id](#id_class)|The member class provides a unique facet identification used as an index for looking up facets in a locale.|

@@ -85,7 +85,7 @@ Objects of type `char *` can use the functionality in [\<strstream>](../standard
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Creates a type `basic_istringstream` specialized on a `char` template parameter.|
 |[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Creates a type `basic_ostringstream` specialized on a `char` template parameter.|
@@ -104,7 +104,7 @@ Objects of type `char *` can use the functionality in [\<strstream>](../standard
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Describes a stream buffer that controls the transmission of elements of type **Elem**, whose character traits are determined by the class **Tr**, to and from a sequence of elements stored in an array object.|
 |[basic_istringstream](../standard-library/basic-istringstream-class.md)|Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type **Elem**, whose character traits are determined by the class **Tr**, and whose elements are allocated by an allocator of class `Alloc`.|

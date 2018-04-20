@@ -80,13 +80,13 @@ The iterator provided by the hash_map class is a bidirectional iterator, but the
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[hash_map](#hash_map)|Constructs a `hash_map` that is empty or that is a copy of all or part of some other `hash_map`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_map` object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `hash_map`.|
@@ -104,9 +104,9 @@ The iterator provided by the hash_map class is a bidirectional iterator, but the
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `hash_map`.|
 |[value_type](#value_type)|A type that provides a function object that can compare two elements as sort keys to determine their relative order in the `hash_map`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[at](#at)|Finds an element in a `hash_map` with a specified key value.|
 |[begin](#begin)|Returns an iterator addressing the first element in the `hash_map`.|
@@ -137,7 +137,7 @@ The iterator provided by the hash_map class is a bidirectional iterator, but the
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Inserts an element into a `hash_map` with a specified key value.|
 |[hash_map::operator=](#op_eq)|Replaces the elements of a `hash_map` with a copy of another `hash_map`.|
@@ -178,9 +178,8 @@ const Type& at(const Key& key) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`key`|The key value of the element that is to be found.|
 
 ### Return Value
@@ -813,9 +812,8 @@ emplace(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
 
 ### Return Value
@@ -873,9 +871,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
 |`_Where`|A hint regarding the place to start searching for the correct point of insertion.|
 
@@ -1459,9 +1456,8 @@ hash_map(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The storage allocator class to be used for this hash_map object, which defaults to **Allocator**.|
 |`Comp`|The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.|
 |`Right`|The hash_map of which the constructed map is to be a copy.|
@@ -1518,9 +1514,8 @@ iterator insert(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|
 |`_Where`|A hint regarding the place to start searching for the correct point of insertion.|
 |`first`|The position of the first element to be copied from a hash_map.|
@@ -1946,9 +1941,8 @@ Type& operator[](Key&& key);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`key`|The key value of the element that is to be inserted.|
 
 ### Return Value
@@ -2044,9 +2038,8 @@ hash_map& operator=(hash_map&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|
 
 ### Remarks

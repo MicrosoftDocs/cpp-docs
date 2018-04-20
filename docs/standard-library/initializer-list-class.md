@@ -47,13 +47,13 @@ The compiler transforms braced initializer lists with homogeneous elements into 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[initializer_list](../standard-library/forward-list-class.md#forward_list)|Constructs an object of type `initializer_list`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |value_type|The type of the elements in the `initializer_list`.|
 |reference|A type that provides a reference to an element in the `initializer_list`.|
@@ -62,9 +62,9 @@ The compiler transforms braced initializer lists with homogeneous elements into 
 |iterator|A type that provides an iterator for the `initializer_list`.|
 |const_iterator|A type that provides a constant iterator for the `initializer_list`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[begin](#begin)|Returns a pointer to the first element in an `initializer_list`.|
 |[end](#end)|Returns a pointer to one past the last element in an `initializer_list`.|

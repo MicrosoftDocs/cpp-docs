@@ -41,13 +41,13 @@ class basic_string;
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_string](#basic_string)|Constructs a string that is empty or initialized by specific characters or that is a copy of all or part of some other string object or C-string.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for a string object.|
 |[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read a `const` element in the string.|
@@ -64,9 +64,9 @@ class basic_string;
 |[traits_type](#traits_type)|A type for the character traits of the elements stored in a string.|
 |[value_type](#value_type)|A type that represents the type of characters stored in a string.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[append](#append)|Adds characters to the end of a string.|
 |[assign](#assign)|Assigns new character values to the contents of a string.|
@@ -112,7 +112,7 @@ class basic_string;
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator+=](#op_add_eq)|Appends characters to a string.|
 |[operator=](#op_eq)|Assigns new character values to the contents of a string.|

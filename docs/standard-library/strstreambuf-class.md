@@ -50,13 +50,13 @@ The object also stores pointers to two functions that control `strstreambuf` all
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[strstreambuf](#strstreambuf)|Constructs an object of type `strstreambuf`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[freeze](#freeze)|Causes a stream buffer to be unavailable through stream buffer operations.|
 |[overflow](#overflow)|A protected virtual function that can be called when a new character is inserted into a full buffer.|

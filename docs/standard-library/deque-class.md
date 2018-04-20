@@ -56,13 +56,13 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[deque](#deque)|Constructs a `deque.` Several constructors are provided to set up the contents of the new `deque` in different ways: empty; loaded with a specified number of empty elements; contents moved or copied from another `deque`; contents copied or moved by using an iterator; and one element copied into the `deque` `count` times. Some of the constructors enable using a custom `allocator` to create elements.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `deque` object.|
 |[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as `const`|
@@ -77,9 +77,9 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 |[size_type](#size_type)|A type that counts the number of elements in a `deque`.|
 |[value_type](#value_type)|A type that represents the data type stored in a `deque`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[assign](#assign)|Erases elements from a `deque` and copies a new sequence of elements to the target `deque`.|
 |[at](#at)|Returns a reference to the element at a specified location in the `deque`.|
@@ -113,7 +113,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Returns a reference to the `deque` element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|
@@ -692,9 +692,8 @@ deque(initializer_list<value_type> IList, const Allocator& Al);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The allocator class to use with this object.|
 |`Count`|The number of elements in the constructed deque.|
 |`Val`|The value of the elements in the constructed deque.|
@@ -994,9 +993,8 @@ iterator emplace(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`_Where`|The position in the [deque](../standard-library/deque-class.md) where the first element is inserted.|
 |`val`|The value of the element being inserted into the `deque`.|
 
@@ -1060,9 +1058,8 @@ void emplace_back(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the end of the [deque](../standard-library/deque-class.md).|
 
 ### Example
@@ -1111,9 +1108,8 @@ void emplace_front(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the beginning of the [deque](../standard-library/deque-class.md).|
 
 ### Example
@@ -1442,9 +1438,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Where`|The position in the target deque where the first element is inserted.|
 |`Val`|The value of the element being inserted into the deque.|
 |`Count`|The number of elements being inserted into the deque.|
@@ -1571,9 +1566,8 @@ deque& operator=(deque&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The deque that provides the new content.|
 
 ### Remarks
@@ -1743,9 +1737,8 @@ void push_back(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the end of the deque.|
 
 ### Remarks
@@ -1763,9 +1756,8 @@ void push_front(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the beginning of the deque.|
 
 ### Remarks

@@ -29,13 +29,13 @@ class max_variable_size
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[max_variable_size](#max_variable_size)|Constructs an object of type `max_variable_size`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocated](#allocated)|Increments the count of allocated memory blocks.|
 |[deallocated](#deallocated)|Decrements the count of allocated memory blocks.|

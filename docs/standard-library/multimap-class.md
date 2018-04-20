@@ -77,13 +77,13 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[multimap](#multimap)|Constructs a `multimap` that is empty or that is a copy of all or part of some other `multimap`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `multimap` object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `multimap`.|
@@ -101,9 +101,9 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[size_type](#size_type)|An unsigned integer type that provides a pointer to a `const` element in a `multimap`.|
 |[value_type](#value_type)|A type that provides a function object that can compare two elements as sort keys to determine their relative order in the `multimap`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[begin](#begin)|Returns an iterator addressing the first element in the `multimap`.|
 |[cbegin](#cbegin)|Returns a const iterator addressing the first element in the `multimap`.|
@@ -133,7 +133,7 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of a `multimap` with a copy of another `multimap`.|
 
@@ -659,9 +659,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the multimap.|
 
 ### Return Value
@@ -731,9 +730,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the multimap.|
 |`where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `where`, insertion can occur in amortized constant time instead of logarithmic time.)|
 
@@ -1146,9 +1144,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the multimap.|
 |`Where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `Where`, insertion can occur in amortized constant time instead of logarithmic time.)|
 |`ValTy`|Template parameter that specifies the argument type that the map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
@@ -1588,9 +1585,8 @@ multimap(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The storage allocator class to be used for this multimap object, which defaults to Allocator.|
 |`Comp`|The comparison function of type **constTraits** used to order the elements in the map, which defaults to **Traits**.|
 |`Right`|The map of which the constructed set is to be a copy.|
@@ -1737,9 +1733,8 @@ multimap& operator=(multimap&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [multimap](../standard-library/multimap-class.md) being copied into the `multimap`.|
 
 ### Remarks

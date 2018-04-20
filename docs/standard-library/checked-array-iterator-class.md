@@ -138,27 +138,27 @@ int main()
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[checked_array_iterator](#checked_array_iterator)|Constructs a default `checked_array_iterator` or a `checked_array_iterator` from an underlying iterator.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[difference_type](#difference_type)|A type that provides the difference between two `checked_array_iterator`s referring to elements within the same container.|
 |[pointer](#pointer)|A type that provides a pointer to an element addressed by a `checked_array_iterator`.|
 |[reference](#reference)|A type that provides a reference to an element addressed by a `checked_array_iterator`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[base](#base)|Recovers the underlying iterator from its `checked_array_iterator`.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](#op_eq_eq)|Tests two `checked_array_iterator`s for equality.|
 |[operator!=](#op_neq)|Tests two `checked_array_iterator`s for inequality.|

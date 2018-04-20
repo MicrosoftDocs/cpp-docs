@@ -39,7 +39,7 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the template class `basic_string` with elements of type `char` as a `string`.|
 |[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the template class `basic_string` with elements of type `wchar_t` as a `wstring`.|
@@ -48,7 +48,7 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator+](../standard-library/string-operators.md#op_add)|Concatenates two string objects.|
 |[operator!=](../standard-library/string-operators.md#op_neq)|Tests if the string object on the left side of the operator is not equal to the string object on the right side.|
@@ -83,7 +83,7 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[basic_string Class](../standard-library/basic-string-class.md)|A template class that describes objects that can store a sequence of arbitrary character-like objects.|
 |[char_traits Struct](../standard-library/char-traits-struct.md)|A template class that describes attributes associated with a character of type CharType|

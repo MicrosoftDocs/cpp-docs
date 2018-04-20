@@ -34,9 +34,8 @@ class unordered_multimap;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Key`|The key type.|
 |`Ty`|The mapped type.|
 |`Hash`|The hash function object type.|
@@ -45,9 +44,8 @@ class unordered_multimap;
 
 ## Members
 
-|||
-|-|-|
 |Type Definition|Description|
+|-|-|
 |[allocator_type](#allocator_type)|The type of an allocator for managing storage.|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
 |[const_local_iterator](#const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|
@@ -65,9 +63,8 @@ class unordered_multimap;
 |[size_type](#size_type)|The type of an unsigned distance between two elements.|
 |[value_type](#value_type)|The type of an element.|
 
-|||
-|-|-|
 |Member Function|Description|
+|-|-|
 |[begin](#begin)|Designates the beginning of the controlled sequence.|
 |[bucket](#bucket)|Gets the bucket number for a key value.|
 |[bucket_count](#bucket_count)|Gets the number of buckets.|
@@ -96,9 +93,8 @@ class unordered_multimap;
 |[swap](#swap)|Swaps the contents of two containers.|
 |[unordered_multimap](#unordered_multimap)|Constructs a container object.|
 
-|||
-|-|-|
 |Operator|Description|
+|-|-|
 |[unordered_multimap::operator=](#op_eq)|Copies a hash table.|
 
 ## Remarks
@@ -173,9 +169,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`nbucket`|The bucket number.|
 
 ### Remarks
@@ -865,9 +860,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the unordered_multimap.|
 
 ### Return Value
@@ -897,9 +891,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the unordered.|
 |`where`|A hint regarding the place to start searching for the correct point of insertion.|
 
@@ -1002,9 +995,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`nbucket`|The bucket number.|
 
 ### Remarks
@@ -1393,9 +1385,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the unordered_multimap.|
 |`Where`|The place to start searching for the correct point of insertion.|
 |`ValTy`|Template parameter that specifies the argument type that the unordered_multimap can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
@@ -2014,9 +2005,8 @@ unordered_multimap& operator=(unordered_multimap&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The unordered_multimap being copied into the unordered_multimap.|
 
 ### Remarks
@@ -2464,9 +2454,8 @@ unordered_multimap(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`InputIterator`|The iterator type.|
 |`Al`|The allocator object to store.|
 |`Comp`|The comparison function object to store.|

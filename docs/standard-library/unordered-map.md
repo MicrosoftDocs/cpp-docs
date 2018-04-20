@@ -29,7 +29,7 @@ Defines the container template classes [unordered_map](../standard-library/unord
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[unordered_map Class](../standard-library/unordered-map-class.md)|Stores hash table of {key, mapped} pairs.|
 |[unordered_multimap Class](../standard-library/unordered-multimap-class.md)|Stores hash table of {key, mapped} pairs.|

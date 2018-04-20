@@ -80,13 +80,13 @@ The iterator provided by the hash_multimap class is a bidirectional iterator, bu
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[hash_multimap](#hash_multimap)|Constructs a list of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other `hash_multimap`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_multimap` object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `hash_multimap`.|
@@ -104,9 +104,9 @@ The iterator provided by the hash_multimap class is a bidirectional iterator, bu
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `hash_multimap`.|
 |[value_type](#value_type)|A type that provides a function object that can compare two elements as sort keys to determine their relative order in the `hash_multimap`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[begin](#begin)|Returns an iterator addressing the first element in the `hash_multimap`.|
 |[cbegin](#cbegin)|Returns a const iterator addressing the first element in the `hash_multimap`.|
@@ -136,7 +136,7 @@ The iterator provided by the hash_multimap class is a bidirectional iterator, bu
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[hash_multimap::operator=](#op_eq)|Replaces the elements of a `hash_multimap` with a copy of another `hash_multimap`.|
 
@@ -771,9 +771,8 @@ iterator emplace(ValTy&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).|
 
 ### Return Value
@@ -829,9 +828,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).|
 |`_Where`|A hint regarding the place to start searching for the correct point of insertion.|
 
@@ -1440,9 +1438,8 @@ hash_multimap(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The storage allocator class to be used for this hash_multimap object, which defaults to `Allocator`.|
 |`Comp`|The comparison function of type `const Traits` used to order the elements in the map, which defaults to `Traits`.|
 |`Right`|The map of which the constructed set is to be a copy.|
@@ -1501,9 +1498,8 @@ iterator insert(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the hash_multimap unless it already contains that element, or more generally, unless it already contains an element whose key is equivalently ordered.|
 |`Where`|A hint about where to start searching for the correct point of insertion.|
 |`First`|The position of the first element to be copied from a map.|
@@ -1833,9 +1829,8 @@ hash_multimap& operator=(hash_multimap&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.|
 
 ### Remarks

@@ -53,19 +53,19 @@ All other operations are performed on `char` values in the same way as for the e
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[ctype](#ctype)|Constructor for objects of class `ctype` that serve as locale facets for characters.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that describes a character used by a locale.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[do_is](#do_is)|A virtual function called to test whether a single character has a particular attribute, or classify the attributes of each character in a range and stores them in an array.|
 |[do_narrow](#do_narrow)|A virtual function called to convert a character of type `CharType` used by a locale to the corresponding character of type `char` in the native character set.|

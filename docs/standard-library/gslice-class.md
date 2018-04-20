@@ -39,13 +39,13 @@ Operations on valarrays are guaranteed only if the source and destination subset
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[gslice](#gslice)|Defines a subset of a `valarray` that consists of multiple slices of the `valarray` that all start at a specified element.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[size](#size)|Finds the array values specifying the numbers of elements in a general slice of a `valarray`.|
 |[start](#start)|Finds the starting index of a general slice of a `valarray`.|

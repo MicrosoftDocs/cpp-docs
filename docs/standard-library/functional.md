@@ -77,7 +77,7 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|A class that describes an exception thrown to indicate that a call to `operator()` on a [function](../standard-library/function-class.md) object failed because the object was empty.|
 |[binary_negate](../standard-library/binary-negate-class.md)|A template class providing a member function that negates the return value of a specified binary function.|
@@ -151,7 +151,7 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](../standard-library/functional-operators.md#op_eq_eq)|Disallows equality comparison of callable objects.|
 |[operator!=](../standard-library/functional-operators.md#op_neq)|Disallows inequality comparison of callable objects.|

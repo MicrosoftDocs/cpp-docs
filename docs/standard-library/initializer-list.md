@@ -27,7 +27,7 @@ Defines the container template class `initializer_list` and several supporting t
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[initializer_list](../standard-library/initializer-list-class.md)|Provides access to an array of elements in which each member is of the specified type.|
 

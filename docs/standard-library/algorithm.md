@@ -43,9 +43,9 @@ C++ Standard Library algorithms are often classified into groups that indicate s
 
 The C++ Standard Library numeric algorithms that are provided for numerical processing have their own header file [\<numeric>](../standard-library/numeric.md), and function objects and adaptors are defined in the header [\<functional>](../standard-library/functional.md) Function objects that return Boolean values are known as predicates. The default binary predicate is the comparison `operator<`. In general, the elements being ordered need to be less than comparable so that, given any two elements, it can be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering among the nonequivalent elements.
 
-### Functions
+### Function templates
 
-|||
+|Function template|Description|
 |-|-|
 |[adjacent_find](../standard-library/algorithm-functions.md#adjacent_find)|Searches for two adjacent elements that are either equal or satisfy a specified condition.|
 |[all_of](../standard-library/algorithm-functions.md#all_of)|Returns `true` when a condition is present at each element in the given range.|

@@ -53,26 +53,26 @@ The helper functions [std::ref](functional-functions.md#ref) and [std::cref](fun
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[result_type](#result_type)|The weak result type of the wrapped reference.|
 |[type](#type)|The type of the wrapped reference.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[get](#get)|Obtains the wrapped reference.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Gets a pointer to the wrapped reference.|
 |[reference_wrapper::operator()](#op_call)|Calls the wrapped reference.|

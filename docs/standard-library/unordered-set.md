@@ -29,7 +29,7 @@ Defines the container template classes [unordered_multiset](../standard-library/
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[unordered_multiset Class](../standard-library/unordered-multiset-class.md)|Stores hash table of keys.|
 |[unordered_set Class](../standard-library/unordered-set-class.md)|Stores hash table of keys.|

@@ -29,7 +29,7 @@ Defines the container template class `array` and several supporting templates.
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[array](../standard-library/array-class-stl.md)|Stores a fixed-length sequence of elements.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Wraps the type of an array element.|
@@ -37,7 +37,7 @@ Defines the container template class `array` and several supporting templates.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](../standard-library/array-operators.md#op_eq_eq)|array comparison, equal|
 |[operator!=](../standard-library/array-operators.md#op_neq)|array comparison, not equal|

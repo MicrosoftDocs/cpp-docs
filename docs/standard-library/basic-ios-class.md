@@ -53,13 +53,13 @@ An object of class **basic_ios\<class Elem, class Traits>** stores:
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_ios](#basic_ios)|Constructs the `basic_ios` class.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A synonym for the template parameter `Elem`.|
 |[int_type](#int_type)|A synonym for `Traits::int_type`.|
@@ -67,9 +67,9 @@ An object of class **basic_ios\<class Elem, class Traits>** stores:
 |[pos_type](#pos_type)|A synonym for `Traits::pos_type`.|
 |[traits_type](#traits_type)|A synonym for the template parameter `Traits`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[bad](#bad)|Indicates a loss of integrity of the stream buffer.|
 |[clear](#clear)|Clears all error flags.|
@@ -93,7 +93,7 @@ An object of class **basic_ios\<class Elem, class Traits>** stores:
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[explicit operator bool](#op_bool)|Allows use of a `basic_ios` object as a `bool`. Automatic type conversion is disabled to prevent common, unintended side effects.|
 |[operator void *](#op_void_star)|Indicates if the stream is still good.|

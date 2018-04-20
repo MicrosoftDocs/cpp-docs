@@ -30,10 +30,10 @@ class wstring_convert
 
 ### Parameters
 
-Codecvt
+`Codecvt`
  The [locale](../standard-library/locale-class.md) facet that represents the conversion object.
 
-Elem
+`Elem`
  The wide-character element type.
 
 ## Remarks
@@ -54,22 +54,22 @@ An object of this template class stores:
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[wstring_convert](#wstring_convert)|Constructs an object of type `wstring_convert`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[byte_string](#byte_string)|A type that represents a byte string.|
 |[wide_string](#wide_string)|A type that represents a wide string.|
 |[state_type](#state_type)|A type that represents the conversion state.|
 |[int_type](#int_type)|A type that represents an integer.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[from_bytes](#from_bytes)|Converts a byte string to a wide string.|
 |[to_bytes](#to_bytes)|Converts a wide string to a byte string.|

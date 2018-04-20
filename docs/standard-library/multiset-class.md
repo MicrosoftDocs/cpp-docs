@@ -69,13 +69,13 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[multiset](#multiset)|Constructs a `multiset` that is empty or that is a copy of all or part of a specified `multiset`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A typedef for the `allocator` class for the `multiset` object.|
 |[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a `const` element in the `multiset`.|
@@ -93,9 +93,9 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[value_compare](#value_compare)|The typedef for a function object that can compare two elements as sort keys to determine their relative order in the `multiset`.|
 |[value_type](#value_type)|A typedef that describes an object stored as an element as a `multiset` in its capacity as a value.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[begin](#begin)|Returns an iterator that points to the first element in the `multiset`.|
 |[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the `multiset`.|
@@ -125,7 +125,7 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of a `multiset` with a copy of another `multiset`.|
 
@@ -627,9 +627,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the multiset.|
 
 ### Return Value
@@ -697,9 +696,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the multiset.|
 |`where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `where`, insertion can occur in amortized constant time instead of logarithmic time.)|
 
@@ -1100,9 +1098,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the multiset.|
 |`Where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `Where`, insertion can occur in amortized constant time instead of logarithmic time.)|
 |`ValTy`|Template parameter that specifies the argument type that the multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
@@ -1499,9 +1496,8 @@ multiset (
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The storage allocator class to be used for this multiset object, which defaults to `Allocator`.|
 |`Comp`|The comparison function of type `const Compare` used to order the elements in the multiset, which defaults to `Compare`.|
 |`Right`|The multiset of which the constructed multiset is to be a copy.|
@@ -1640,9 +1636,8 @@ multiset& operator=(multiset&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The `multiset` from which elements are copied or moved.|
 
 ### Remarks

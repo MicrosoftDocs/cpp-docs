@@ -29,7 +29,7 @@ typedef enum memory_order {
 } memory_order;
 ```
 
-### Remarks
+### Enumeration members
 
 |||
 |-|-|

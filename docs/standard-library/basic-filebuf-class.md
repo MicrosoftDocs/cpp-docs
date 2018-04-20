@@ -166,13 +166,13 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_filebuf](#basic_filebuf)|Constructs an object of type `basic_filebuf`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|Associates a type name with the `Elem` template parameter.|
 |[int_type](#int_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the `Tr` scope.|
@@ -180,9 +180,9 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
 |[pos_type](#pos_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the `Tr` scope.|
 |[traits_type](#traits_type)|Associates a type name with the `Tr` template parameter.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[close](#close)|Closes a file.|
 |[is_open](#is_open)|Indicates whether a file is open.|

@@ -41,20 +41,20 @@ class fpos
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[fpos](#fpos)|Create an object that contains information about a position (offset) in a stream.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[seekpos](#seekpos)|Used internally by the C++ Standard Library only. Do not call this method from your code.|
 |[state](#state)|Sets or returns the conversion state.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](#op_neq)|Tests file-position indicators for inequality.|
 |[operator+](#op_add)|Increments a file-position indicator.|

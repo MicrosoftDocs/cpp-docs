@@ -34,9 +34,8 @@ class unordered_map;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Key`|The key type.|
 |`Ty`|The mapped type.|
 |`Hash`|The hash function object type.|
@@ -45,9 +44,8 @@ class unordered_map;
 
 ## Members
 
-|||
-|-|-|
 |Type Definition|Description|
+|-|-|
 |[allocator_type](#allocator_type)|The type of an allocator for managing storage.|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
 |[const_local_iterator](#const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|
@@ -65,9 +63,8 @@ class unordered_map;
 |[size_type](#size_type)|The type of an unsigned distance between two elements.|
 |[value_type](#value_type)|The type of an element.|
 
-|||
-|-|-|
 |Member Function|Description|
+|-|-|
 |[at](#at)|Finds an element with the specified key.|
 |[begin](#begin)|Designates the beginning of the controlled sequence.|
 |[bucket](#bucket)|Gets the bucket number for a key value.|
@@ -97,9 +94,8 @@ class unordered_map;
 |[swap](#swap)|Swaps the contents of two containers.|
 |[unordered_map](#unordered_map)|Constructs a container object.|
 
-|||
-|-|-|
 |Operator|Description|
+|-|-|
 |[unordered_map::operator[]](#op_at)|Finds or inserts an element with the specified key.|
 |[unordered_map::operator=](#op_eq)|Copies a hash table.|
 
@@ -169,9 +165,8 @@ const Ty& at(const Key& key) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`key`|The key value to find.|
 
 ### Return Value
@@ -222,9 +217,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`nbucket`|The bucket number.|
 
 ### Remarks
@@ -909,9 +903,8 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the unordered_map unless it already contains an element whose value is equivalently ordered.|
 
 ### Return Value
@@ -939,9 +932,8 @@ iterator emplace_hint(const_iterator where, Args&&... args);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
 |`where`|A hint regarding the place to start searching for the correct point of insertion.|
 
@@ -1041,9 +1033,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`nbucket`|The bucket number.|
 
 ### Remarks
@@ -1370,9 +1361,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.|
 |`Where`|The place to start searching for the correct point of insertion.|
 |`ValTy`|Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
@@ -2012,9 +2002,8 @@ Ty& operator[](Key&& keyval);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Keyval`|The key value to find or insert.|
 
 ### Return Value
@@ -2101,9 +2090,8 @@ unordered_map& operator=(unordered_map&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The unordered_map that the operator function assigns content from.|
 
 ### Remarks
@@ -2549,9 +2537,8 @@ unordered_map(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The allocator object to store.|
 |`Comp`|The comparison function object to store.|
 |`Hash`|The hash function object to store.|

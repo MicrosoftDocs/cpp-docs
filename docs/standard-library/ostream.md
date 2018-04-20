@@ -30,7 +30,7 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[ostream](../standard-library/ostream-typedefs.md#ostream)|Creates a type from `basic_ostream` that is specialized on `char` and `char_traits` specialized on `char`.|
 |[wostream](../standard-library/ostream-typedefs.md#wostream)|Creates a type from `basic_ostream` that is specialized on `wchar_t` and `char_traits` specialized on `wchar_t`.|
@@ -46,13 +46,13 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator<<](../standard-library/ostream-operators.md#op_lt_lt)|Writes various types to the stream.|
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[basic_ostream](../standard-library/basic-ostream-class.md)|The template class describes an object that controls insertion of elements and encoded objects into a stream buffer.|
 

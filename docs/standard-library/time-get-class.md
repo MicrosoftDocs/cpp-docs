@@ -43,20 +43,20 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[time_get](#time_get)|The constructor for objects of type `time_get`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[iter_type](#iter_type)|A type that describes an input iterator.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[date_order](#date_order)|Returns the date order used by a facet.|
 |[do_date_order](#do_date_order)|A protected virtual member function that is called to return the date order used by a facet.|

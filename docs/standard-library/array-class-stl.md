@@ -30,17 +30,15 @@ class array;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Ty`|The type of an element.|
 |`N`|The number of elements.|
 
 ## Members
 
-|||
-|-|-|
 |Type Definition|Description|
+|-|-|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
 |[const_pointer](#const_pointer)|The type of a constant pointer to an element.|
 |[const_reference](#const_reference)|The type of a constant reference to an element.|
@@ -53,9 +51,8 @@ class array;
 |[size_type](#size_type)|The type of an unsigned distance between two elements.|
 |[value_type](#value_type)|The type of an element.|
 
-|||
-|-|-|
 |Member Function|Description|
+|-|-|
 |[array](#array)|Constructs an array object.|
 |[assign](#assign)|Replaces all elements.|
 |[at](#at)|Accesses an element at a specified position.|
@@ -76,9 +73,8 @@ class array;
 |[size](#size)|Counts the number of elements.|
 |[swap](#swap)|Swaps the contents of two containers.|
 
-|||
-|-|-|
 |Operator|Description|
+|-|-|
 |[array::operator=](#op_eq)|Replaces the controlled sequence.|
 |[array::operator[]](#op_at)|Accesses an element at a specified position.|
 
@@ -892,9 +888,8 @@ void fill(const Type& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value of the element being inserted into the array.|
 
 ### Remarks

@@ -39,20 +39,20 @@ The container of type **Container** must satisfy the requirements for a variable
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[insert_iterator](#insert_iterator)|Constructs an `insert_iterator` that inserts an element into a specified position in a container.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[container_type](#container_type)|A type that represents the container into which a general insertion is to be made.|
 |[reference](#reference)|A type that provides a reference to an element in a sequence controlled by the associated container.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a general insertion.|
 |[operator++](#op_add_add)|Increments the `insert_iterator` to the next location into which a value may be stored.|

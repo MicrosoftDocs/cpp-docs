@@ -50,13 +50,13 @@ After constructing or incrementing an object of class istream_iterator with a no
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[istream_iterator](#istream_iterator)|Constructs either an end-of-stream iterator as the default `istream_iterator` or a `istream_iterator` initialized to the iterator's stream type from which it reads.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that provides for the character type of the `istream_iterator`.|
 |[istream_type](#istream_type)|A type that provides for the stream type of the `istream_iterator`.|
@@ -64,7 +64,7 @@ After constructing or incrementing an object of class istream_iterator with a no
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|The dereferencing operator returns the stored object of type `Type` addressed by the `istream_iterator`.|
 |[operator->](#operator-_gt)|Returns the value of a member, if any.|

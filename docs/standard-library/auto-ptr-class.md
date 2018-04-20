@@ -67,19 +67,19 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[auto_ptr](#auto_ptr)|The constructor for objects of type `auto_ptr`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[element_type](#element_type)|The type is a synonym for the template parameter `Type`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[get](#get)|The member function returns the stored pointer `myptr`.|
 |[release](#release)|The member replaces the stored pointer `myptr` with a null pointer and returns the previously stored pointer.|
@@ -87,7 +87,7 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|An assignment operator that transfers ownership from one `auto_ptr` object to another.|
 |[operator*](#op_star)|The dereferencing operator for objects of type `auto_ptr`.|

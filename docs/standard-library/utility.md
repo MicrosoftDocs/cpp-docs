@@ -34,7 +34,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|A class that wraps the type of a `pair` element.|
 |[tuple_size](../standard-library/tuple-size-class-tuple.md)|A class that wraps `pair` element count.|
@@ -51,7 +51,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](../standard-library/utility-operators.md#op_neq)|Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.|
 |[operator==](../standard-library/utility-operators.md#op_eq_eq)|Tests if the pair object on the left side of the operator is equal to the pair object on the right side.|

@@ -42,21 +42,21 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[money_get](#money_get)|The constructor for objects of type `money_get` that are used to extract numerical values from sequences representing monetary values.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[iter_type](#iter_type)|A type that describes an input iterator.|
 |[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[do_get](#do_get)|A virtual function called to extracts a numerical value from a character sequence that represents a monetary value.|
 |[get](#get)|Extracts a numerical value from a character sequence that represents a monetary value.|

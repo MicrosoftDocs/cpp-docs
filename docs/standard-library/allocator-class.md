@@ -59,13 +59,13 @@ These **Type**s specify the form that pointers and references must take for allo
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[allocator](#allocator)|Constructors used to create `allocator` objects.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[const_pointer](#const_pointer)|A type that provides a constant pointer to the type of object managed by the allocator.|
 |[const_reference](#const_reference)|A type that provides a constant reference to type of object managed by the allocator.|
@@ -75,9 +75,9 @@ These **Type**s specify the form that pointers and references must take for allo
 |[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of template class `allocator` can allocate.|
 |[value_type](#value_type)|A type that is managed by the allocator.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[address](#address)|Finds the address of an object whose value is specified.|
 |[allocate](#allocate)|Allocates a block of memory large enough to store at least some specified number of elements.|
@@ -89,7 +89,7 @@ These **Type**s specify the form that pointers and references must take for allo
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Assigns one `allocator` object to another `allocator` object.|
 

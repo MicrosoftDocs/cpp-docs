@@ -39,13 +39,13 @@ An object of class ios_base also stores stream state information, in an object o
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[ios_base](#ios_base)|Constructs `ios_base` objects.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[event_callback](#event_callback)|Describes a function passed to [register_call](#register_callback).|
 |[fmtflags](#fmtflags)|Constants to specify the appearance of output.|
@@ -95,9 +95,9 @@ An object of class ios_base also stores stream state information, in an object o
 |[unitbuf](#fmtflags)|Causes output to be flushed after each insertion.|
 |[uppercase](#fmtflags)|Specifies insertion of uppercase equivalents of lowercase letters in certain insertions.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[failure](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in template class [basic_ios](../standard-library/basic-ios-class.md).|
 |[flags](#flags)|Sets or returns the current flag settings.|
@@ -116,7 +116,7 @@ An object of class ios_base also stores stream state information, in an object o
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|The assignment operator for `ios_base` objects.|
 

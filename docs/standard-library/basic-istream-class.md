@@ -109,13 +109,13 @@ See the example for [basic_ifstream Class](../standard-library/basic-ifstream-cl
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_istream](#basic_istream)|Constructs an object of type `basic_istream`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[gcount](#gcount)|Returns the number of characters read during the last unformatted input.|
 |[get](#get)|Reads one or more characters from the input stream.|
@@ -134,7 +134,7 @@ See the example for [basic_ifstream Class](../standard-library/basic-ifstream-cl
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator>>](#op_gt_gt)|Calls a function on the input stream or reads formatted data from the input stream.|
 |[operator=](#op_eq)|Assigns the `basic_istream` on the right side of the operator to this object. This is a move assignment involving an `rvalue` reference that does not leave a copy behind.|

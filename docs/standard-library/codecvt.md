@@ -32,29 +32,17 @@ Defines several template classes that describe objects based on template class [
 
 The locale facets declared in this header convert between several character encodings. For wide characters (stored within the program in fixed-size integers):
 
-- UCS-4 is Unicode (ISO 10646) encoded within the program
-
 - UCS-4 is Unicode (ISO 10646) encoded within the program as a 32-bit integer.
 
-- UCS-2 is Unicode encoded within the program
-
 - UCS-2 is Unicode encoded within the program as a 16-bit integer.
-
-- UTF-16 is Unicode encoded within the program as either one
 
 - UTF-16 is Unicode encoded within the program as either one or two 16-bit integers. (Note that this does not meet all the requirements of a valid wide-character encoding for Standard C or Standard C++. Nevertheless it is widely used as such.)
 
 For byte streams (stored in a file, transmitted as a byte sequence, or stored within the program in an array of `char`):
 
-- UTF-8 is Unicode encoded
-
 - UTF-8 is Unicode encoded within a byte stream as one or more eight-bit bytes with a deterministic byte order.
 
-- UTF-16LE is Unicode encoded
-
 - UTF-16LE is Unicode encoded within a byte stream as UTF-16 with each 16-bit integer presented as two eight-bit bytes, less significant byte first.
-
-- UTF-16BE is Unicode encoded
 
 - UTF-16BE is Unicode encoded within a byte stream as UTF-16 with each 16-bit integer presented as two eight-bit bytes, more significant byte first.
 
@@ -66,12 +54,11 @@ For byte streams (stored in a file, transmitted as a byte sequence, or stored wi
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[codecvt_utf8](codecvt-utf8-class.md)|Represents a locale facet that converts between wide characters encoded as UCS-2 or UCS-4, and a byte stream encoded as UTF-8.|
 |[codecvt_utf8_utf16](codecvt-utf8-utf16-class.md)|Represents a locale facet that converts between wide characters encoded as UTF-16 and a byte stream encoded as UTF-8.|
 |[codecvt_utf16](codecvt-utf16-class.md)|Represents a locale facet that converts between wide characters encoded as UCS-2 or UCS-4 and a byte stream encoded as UTF-16LE or UTF-16BE.|
-
 
 ## Requirements
 

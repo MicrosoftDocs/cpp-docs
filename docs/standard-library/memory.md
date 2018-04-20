@@ -61,7 +61,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](../standard-library/memory-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|
 |[operator==](../standard-library/memory-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|
@@ -73,7 +73,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|The template class describes an object that manages storage allocation and freeing for arrays of objects of type **Type**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Describes an object that determines all the information that is needed by an allocator-enabled container.|

@@ -32,9 +32,9 @@ bool* pb = &vb[1]; // conversion error - do not use
 bool& refb = vb[1];   // conversion error - do not use
 ```
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[flip](../standard-library/vector-bool-reference-flip.md)|Inverts the Boolean value of a vector element.|
 |[operator bool](../standard-library/vector-bool-reference-operator-bool.md)|Provides an implicit conversion from `vector<bool>::reference` to `bool`.|

@@ -108,7 +108,7 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[shared_ptr](#shared_ptr)|Constructs a `shared_ptr`.|
 |[shared_ptr::~shared_ptr](#dtorshared_ptr)|Destroys a `shared_ptr`.|
@@ -127,7 +127,7 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[shared_ptr::operator boolean-type](#op_boolean-type)|Tests if an owned resource exists.|
 |[shared_ptr::operator*](#op_star)|Gets the designated value.|

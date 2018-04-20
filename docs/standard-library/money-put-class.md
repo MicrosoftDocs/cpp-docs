@@ -43,21 +43,21 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[money_put](#money_put)|The constructor for objects of type `money_put`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[iter_type](#iter_type)|A type that describes an output iterator.|
 |[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[do_put](#do_put)|A virtual function called to convert either number or a string to a character sequence that represents a monetary value.|
 |[put](#put)|Converts either number or a string to a character sequence that represents a monetary value.|
