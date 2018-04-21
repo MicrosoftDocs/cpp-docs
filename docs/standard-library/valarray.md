@@ -34,7 +34,7 @@ These template classes and functions are permitted unusual latitude in the inter
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[abs](../standard-library/valarray-functions.md#abs)|Operates on the elements of an input valarray, returning a valarray whose elements are equal to the absolute value of the elements of the input valarray.|
 |[acos](../standard-library/valarray-functions.md#acos)|Operates on the elements of an input valarray, returning a valarray whose elements are equal to the arccosine of the elements of the input valarray.|

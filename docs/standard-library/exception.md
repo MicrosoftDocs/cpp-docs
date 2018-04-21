@@ -38,7 +38,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[current_exception](../standard-library/exception-functions.md#current_exception)|Obtains a pointer to the current exception.|
 |[get_terminate](../standard-library/exception-functions.md#get_terminate)|Obtains the current `terminate_handler` function.|

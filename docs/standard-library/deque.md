@@ -41,7 +41,7 @@ Defines the container template class deque and several supporting templates.
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[swap](../standard-library/deque-functions.md#swap)|Exchanges the elements of two deques.|
 

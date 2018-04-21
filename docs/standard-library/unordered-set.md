@@ -36,7 +36,7 @@ Defines the container template classes [unordered_multiset](../standard-library/
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Tests if the unordered_multiset object on the left side of the operator is not equal to the unordered_multiset object on the right side.|
 |[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Tests if the unordered_multiset object on the left side of the operator is equal to the unordered_multiset object on the right side.|

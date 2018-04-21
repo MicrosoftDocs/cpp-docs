@@ -40,7 +40,7 @@ Defines the container template class forward_list and several supporting templat
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[swap](../standard-library/forward-list-functions.md#swap)|Exchanges the elements of two forward lists.|
 

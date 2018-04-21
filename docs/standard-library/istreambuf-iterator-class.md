@@ -71,7 +71,7 @@ After constructing or incrementing an object of class istreambuf_iterator with a
 |-|-|
 |[operator*](#op_star)|The dereferencing operator returns the next character in the stream.|
 |[operator++](#op_add_add)|Either returns the next character from the input stream or copies the object before incrementing it and returns the copy.|
-|[operator->](#operator-_gt)|Returns the value of a member, if any.|
+|[operator->](#op_arrow)|Returns the value of a member, if any.|
 
 ## Requirements
 
@@ -358,7 +358,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iterator__operator-_gt"></a>  istreambuf_iterator::operator-&gt;
+## <a name="op_arrow"></a>  istreambuf_iterator::operator-&gt;
 
 Returns the value of a member, if any.
 

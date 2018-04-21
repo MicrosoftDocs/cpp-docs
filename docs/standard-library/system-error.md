@@ -42,7 +42,7 @@ Include the header \<system_error> to define the exception class `system_error` 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[make_error_code](../standard-library/system-error-functions.md#make_error_code)|Creates an `error_code` object.|
 |[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|Creates an `error_condition` object.|

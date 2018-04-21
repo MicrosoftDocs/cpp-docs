@@ -48,7 +48,7 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[advance](../standard-library/iterator-functions.md#advance)|Increments an iterator by a specified number of positions.|
 |[back_inserter](../standard-library/iterator-functions.md#back_inserter)|Creates an iterator that can insert elements at the back of a specified container.|

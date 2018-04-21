@@ -77,7 +77,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[abs](../standard-library/complex-functions.md#abs)|Calculates the modulus of a complex number.|
 |[arg](../standard-library/complex-functions.md#arg)|Extracts the argument from a complex number.|

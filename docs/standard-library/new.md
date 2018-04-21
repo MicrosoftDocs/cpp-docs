@@ -46,7 +46,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[set_new_handler](../standard-library/new-functions.md#set_new_handler)|Installs a user function that is called when new fails in its attempt to allocate memory.|
 

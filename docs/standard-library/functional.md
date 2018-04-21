@@ -102,7 +102,7 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[bind](../standard-library/functional-functions.md#bind)|Binds arguments to a callable object.|
 |[bind1st](../standard-library/functional-functions.md#bind1st)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.|

@@ -63,7 +63,7 @@ A `move_iterator` might be capable of operations that are not defined by the wra
 |[move_iterator::operator*](#op_star)|Returns `(reference)*base().`|
 |[move_iterator::operator++](#op_add_add)|Increments the stored iterator. Exact behavior depends on whether it is a preincrement or a postincrement operation.|
 |[move_iterator::operator--](#operator--)|Decrements the stored iterator. Exact behavior depends on whether it is a predecrement or a postdecrement operation.|
-|[move_iterator::operator-&gt;](#operator-_gt)|Returns `&**this`.|
+|[move_iterator::operator-&gt;](#op_arrow)|Returns `&**this`.|
 |[move_iterator::operator-](#operator-)|Returns `move_iterator(*this) -=` by first subtracting the right-hand value from the current position.|
 |[move_iterator::operator[]](#op_at)|Returns `(reference)*(*this + off)`. Allows you to specify an offset from the current base to obtain the value at that location.|
 |[move_iterator::operator+](#op_add)|Returns `move_iterator(*this) +=` the value. Allows you to add an offset to the base to obtain the value at that location.|
@@ -267,7 +267,7 @@ reference operator*() const;
 
 The operator returns `(reference)*base()`.
 
-## <a name="move_iterator__operator-_gt"></a>  move_iterator::operator-&gt;
+## <a name="op_arrow"></a>  move_iterator::operator-&gt;
 
 Like a normal `RandomIterator` `operator->`, it provides access to the fields that belong to the current element.
 

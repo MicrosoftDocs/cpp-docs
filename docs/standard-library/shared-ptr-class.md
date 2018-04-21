@@ -113,11 +113,16 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 |[shared_ptr](#shared_ptr)|Constructs a `shared_ptr`.|
 |[shared_ptr::~shared_ptr](#dtorshared_ptr)|Destroys a `shared_ptr`.|
 
-### Methods
+### Types
 
-|||
+|Type name|Description|
 |-|-|
 |[element_type](#element_type)|The type of an element.|
+
+### Functions
+
+|Function|Description|
+|-|-|
 |[get](#get)|Gets address of owned resource.|
 |[owner_before](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
 |[reset](#reset)|Replace owned resource.|
@@ -129,10 +134,10 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 |Operator|Description|
 |-|-|
-|[shared_ptr::operator boolean-type](#op_boolean-type)|Tests if an owned resource exists.|
+|[shared_ptr::operator bool](#op_bool)|Tests if an owned resource exists.|
 |[shared_ptr::operator*](#op_star)|Gets the designated value.|
 |[shared_ptr::operator=](#op_eq)|Replaces the owned resource.|
-|[shared_ptr::operator-&gt;](#operator-_gt)|Gets a pointer to the designated value.|
+|[shared_ptr::operator-&gt;](#op_arrow)|Gets a pointer to the designated value.|
 
 ## Requirements
 
@@ -215,17 +220,17 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-## <a name="shared_ptr__operator_boolean-type"></a>  shared_ptr::operator boolean-type
+## <a name="op_bool"></a>  shared_ptr::operator bool
 
 Tests if an owned resource exists.
 
 ```cpp
-operator boolean-type() const;
+explicit operator bool() const noexcept;
 ```
 
 ### Remarks
 
-The operator returns a value of a type that is convertible to `bool`. The result of the conversion to `bool` is `true` when `get() != 0`, otherwise `false`.
+The operator returns a value of `true` when `get() != nullptr`, otherwise `false`.
 
 ### Example
 
@@ -355,7 +360,7 @@ int main()
 *sp0 == 10
 ```
 
-## <a name="shared_ptr__operator-_gt"></a>  shared_ptr::operator-&gt;
+## <a name="op_arrow"></a>  shared_ptr::operator-&gt;
 
 Gets a pointer to the designated value.
 

@@ -767,7 +767,7 @@ match == z
 
 ```
 
-## <a name="regex_token_iterator__operator-_gt"></a>  regex_token_iterator::operator-&gt;
+## <a name="op_arrow"></a>  regex_token_iterator::operator-&gt;
 
 Accesses the designated submatch.
 

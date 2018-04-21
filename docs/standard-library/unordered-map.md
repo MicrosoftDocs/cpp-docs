@@ -36,7 +36,7 @@ Defines the container template classes [unordered_map](../standard-library/unord
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Tests if the unordered_map object on the left side of the operator is not equal to the unordered_map object on the right side.|
 |[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Tests if the unordered_map object on the left side of the operator is equal to the unordered_map object on the right side.|

@@ -41,7 +41,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[forward](../standard-library/utility-functions.md#forward)|Preserves the reference type (either `lvalue` or `rvalue`) of the argument from being obscured by perfect forwarding.|
 |[get](../standard-library/utility-functions.md#get)|A function that gets an element from a `pair` object.|

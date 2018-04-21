@@ -695,7 +695,7 @@ After the -2 offset, the iterator rVPOS1 now points
  to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iterator__operator-_gt"></a>  reverse_iterator::operator-&gt;
+## <a name="op_arrow"></a>  reverse_iterator::operator-&gt;
 
 Returns a pointer to the element addressed by the `reverse_iterator`.
 

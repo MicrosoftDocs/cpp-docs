@@ -79,7 +79,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[regex_match](../standard-library/regex-functions.md#regex_match)|Exactly matches a regular expression.|
 |[regex_replace](../standard-library/regex-functions.md#regex_replace)|Replaces matched regular expressions.|

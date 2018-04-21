@@ -30,7 +30,7 @@ Defines template classes and functions that C++ programs can use to encapsulate 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[has_facet](../standard-library/locale-functions.md#has_facet)|Tests if a particular facet is stored in a specified locale.|
 |[isalnum](../standard-library/locale-functions.md#isalnum)|Tests whether an element in a locale is an alphabetic or a numeric character.|

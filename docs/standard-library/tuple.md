@@ -48,7 +48,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[get](../standard-library/tuple-functions.md#get)|Gets an element from a `tuple` object.|
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Makes a `tuple` from element values.|

@@ -91,7 +91,7 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 |-|-|
 |[operator=](#op_eq)|An assignment operator that transfers ownership from one `auto_ptr` object to another.|
 |[operator*](#op_star)|The dereferencing operator for objects of type `auto_ptr`.|
-|[operator->](#operator-_gt)|The operator for allowing member access.|
+|[operator->](#op_arrow)|The operator for allowing member access.|
 |[operator auto_ptr\<Other>](#op_auto_ptr_lt_other_gt)|Casts from one kind of `auto_ptr` to another kind of `auto_ptr`.|
 |[operator auto_ptr_ref\<Other>](#op_auto_ptr_ref_lt_other_gt)|Casts from an `auto_ptr` to an `auto_ptr_ref`.|
 
@@ -307,7 +307,7 @@ The indirection operator returns `*`[get](#get). Hence, the stored pointer must 
 
 For an example of how to use the member function, see [auto_ptr::auto_ptr](#auto_ptr).
 
-## <a name="auto_ptr__operator-_gt"></a>  auto_ptr::operator-&gt;
+## <a name="op_arrow"></a>  auto_ptr::operator-&gt;
 
 The operator for allowing member access.
 

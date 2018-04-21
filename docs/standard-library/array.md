@@ -48,7 +48,7 @@ Defines the container template class `array` and several supporting templates.
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Get specified array element.|
 |[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|

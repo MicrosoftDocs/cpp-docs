@@ -32,7 +32,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[addressof](../standard-library/memory-functions.md#addressof)|Gets the true address of an object.|
 |[align](../standard-library/memory-functions.md#align)|Returns a pointer to a range of a given size, based on the provided alignment and starting address.|

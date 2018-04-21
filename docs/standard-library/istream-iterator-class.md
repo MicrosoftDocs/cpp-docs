@@ -67,7 +67,7 @@ After constructing or incrementing an object of class istream_iterator with a no
 |Operator|Description|
 |-|-|
 |[operator*](#op_star)|The dereferencing operator returns the stored object of type `Type` addressed by the `istream_iterator`.|
-|[operator->](#operator-_gt)|Returns the value of a member, if any.|
+|[operator->](#op_arrow)|Returns the value of a member, if any.|
 |[operator++](#op_add_add)|Either extracts an incremented object from the input stream or copies the object before incrementing it and returns the copy.|
 
 ## Requirements
@@ -239,7 +239,7 @@ int main( )
 }
 ```
 
-## <a name="istream_iterator__operator-_gt"></a>  istream_iterator::operator-&gt;
+## <a name="op_arrow"></a>  istream_iterator::operator-&gt;
 
 Returns the value of a member, if any.
 

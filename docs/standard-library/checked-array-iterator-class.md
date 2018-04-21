@@ -167,7 +167,7 @@ int main()
 |[operator<=](#op_lt_eq)|Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.|
 |[operator>=](#op_gt_eq)|Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.|
 |[operator*](#op_star)|Returns the element that a `checked_array_iterator` addresses.|
-|[operator->](#operator-_gt)|Returns a pointer to the element addressed by the `checked_array_iterator`.|
+|[operator->](#op_arrow)|Returns a pointer to the element addressed by the `checked_array_iterator`.|
 |[operator++](#op_add_add)|Increments the `checked_array_iterator` to the next element.|
 |[operator--](#operator--)|Decrements the `checked_array_iterator` to the previous element.|
 |[operator+=](#op_add_eq)|Adds a specified offset to a `checked_array_iterator`.|
@@ -628,7 +628,7 @@ c[0].first = 10
 *\
 ```
 
-## <a name="checked_array_iterator__operator-_gt"></a>  checked_array_iterator::operator-&gt;
+## <a name="op_arrow"></a>  checked_array_iterator::operator-&gt;
 
 Returns a pointer to the element addressed by the `checked_array_iterator`.
 
