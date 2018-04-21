@@ -74,13 +74,13 @@ The iterator provided by the hash_set class is a bidirectional iterator, but the
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[hash_set](#hash_set)|Constructs a `hash_set` that is empty or that is a copy of all or part of some other `hash_set`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_set` object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `hash_set`.|
@@ -98,9 +98,9 @@ The iterator provided by the hash_set class is a bidirectional iterator, but the
 |[value_compare](#value_compare)|A type that provides two function objects, a binary predicate of class compare that can compare two element values of a `hash_set` to determine their relative order and a unary predicate that hashes the elements.|
 |[value_type](#value_type)|A type that describes an object stored as an element of a `hash_set` in its capacity as a value.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[begin](#begin)|Returns an iterator that addresses the first element in the `hash_set`.|
 |[cbegin](#cbegin)|Returns a const iterator addressing the first element in the `hash_set`.|
@@ -130,7 +130,7 @@ The iterator provided by the hash_set class is a bidirectional iterator, but the
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[hash_set::operator=](#op_eq)|Replaces the elements of a `hash_set` with a copy of another `hash_set`.|
 
@@ -725,9 +725,8 @@ emplace(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
 
 ### Return Value
@@ -778,9 +777,8 @@ iterator emplace(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
 |`_Where`|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)|
 
@@ -1345,9 +1343,8 @@ hash_set(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The storage allocator class to be used for this `hash_set` object, which defaults to `Allocator`.|
 |`Comp`|The comparison function of type `const Traits` used to order the elements in the `hash_set`, which defaults to `hash_compare`.|
 |`Right`|The `hash_set` of which the constructed `hash_set` is to be a copy.|
@@ -1399,9 +1396,8 @@ void insert(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the `hash_set` unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
 |`Where`|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)|
 |`First`|The position of the first element to be copied from a `hash_set`.|
@@ -1690,9 +1686,8 @@ hash_set& operator=(hash_set&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.|
 
 ### Remarks

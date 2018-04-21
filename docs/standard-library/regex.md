@@ -41,7 +41,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[basic_regex](../standard-library/basic-regex-class.md)|Wraps a regular expression.|
 |[match_results](../standard-library/match-results-class.md)|Holds a sequence of submatches.|
@@ -79,7 +79,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[regex_match](../standard-library/regex-functions.md#regex_match)|Exactly matches a regular expression.|
 |[regex_replace](../standard-library/regex-functions.md#regex_replace)|Replaces matched regular expressions.|
@@ -88,7 +88,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](../standard-library/regex-operators.md#op_eq_eq)|Comparison of various objects, equal.|
 |[operator!=](../standard-library/regex-operators.md#op_neq)|Comparison of various objects, not equal.|

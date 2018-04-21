@@ -41,28 +41,28 @@ The ostreambuf_iterator class must satisfy the requirements for an output iterat
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator)|Constructs an `ostreambuf_iterator` that is initialized to write characters to the output stream.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that provides for the character type of the `ostreambuf_iterator`.|
 |[ostream_type](#ostreambuf_iterator_ostream_type)|A type that provides for the stream type of the `ostream_iterator`.|
 |[streambuf_type](#streambuf_type)|A type that provides for the stream type of the `ostreambuf_iterator`.|
 |[traits_type](#traits_type)|A type that provides for the character traits type of the `ostream_iterator`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[failed](#failed)|Tests for failure of an insertion into the output stream buffer.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostreambuf_iterator` to the same object it addressed before the operation was called.|

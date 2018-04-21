@@ -34,9 +34,9 @@ class max_none
 |---------------|-----------------|
 |`Max`|The max class that determines the maximum number of elements to store in the `freelist`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocated](#allocated)|Increments the count of allocated memory blocks.|
 |[deallocated](#deallocated)|Decrements the count of allocated memory blocks.|

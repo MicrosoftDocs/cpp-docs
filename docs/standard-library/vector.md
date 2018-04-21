@@ -91,7 +91,7 @@ Allocator
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator! =](../standard-library/vector-operators.md#op_neq)|Tests if the vector object on the left side of the operator is not equal to the vector object on the right side.|
 |[operator<](../standard-library/vector-operators.md#op_lt)|Tests if the vector object on the left side of the operator is less than the vector object on the right side.|
@@ -102,7 +102,7 @@ Allocator
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[vector Class](../standard-library/vector-class.md)|A template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
 

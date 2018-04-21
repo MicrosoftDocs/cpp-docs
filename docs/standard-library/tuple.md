@@ -29,7 +29,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[tuple](../standard-library/tuple-class.md)|Wraps a fixed-length sequence of elements.|
 |[tuple_element Class](../standard-library/tuple-element-class-tuple.md)|Wraps the type of a `tuple` element.|
@@ -37,7 +37,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](../standard-library/tuple-operators.md#op_eq_eq)|Comparison of `tuple` objects, equal|
 |[operator!=](../standard-library/tuple-operators.md#op_neq)|Comparison of `tuple` objects, not equal|
@@ -48,7 +48,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[get](../standard-library/tuple-functions.md#get)|Gets an element from a `tuple` object.|
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Makes a `tuple` from element values.|

@@ -43,13 +43,13 @@ Each memory block holds `Sz` bytes of usable memory and the data that `operator 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[cache_freelist](#cache_freelist)|Constructs an object of type `cache_freelist`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocate](#allocate)|Allocates a block of memory.|
 |[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|

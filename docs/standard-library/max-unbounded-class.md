@@ -27,9 +27,9 @@ Describes a [max class](../standard-library/allocators-header.md) object that do
 class max_unbounded
 ```
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocated](#allocated)|Increments the count of allocated memory blocks.|
 |[deallocated](#deallocated)|Decrements the count of allocated memory blocks.|

@@ -77,7 +77,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[abs](../standard-library/complex-functions.md#abs)|Calculates the modulus of a complex number.|
 |[arg](../standard-library/complex-functions.md#arg)|Extracts the argument from a complex number.|
@@ -100,7 +100,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](../standard-library/complex-operators.md#op_neq)|Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|
 |[operator*](../standard-library/complex-operators.md#op_star)|Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|
@@ -113,7 +113,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **double**, where the first represents the real part of a complex number and the second represents the imaginary part.|
 |[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **float**, where the first represents the real part of a complex number and the second represents the imaginary part.|

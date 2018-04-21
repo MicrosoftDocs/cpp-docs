@@ -38,9 +38,9 @@ class sync_per_thread
 
 Allocators that use `sync_per_thread` can compare equal even though blocks allocated in one thread cannot be deallocated from another thread. When using one of these allocators memory blocks allocated in one thread should not be made visible to other threads. In practice this means that a container that uses one of these allocators should only be accessed by a single thread.
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocate](#allocate)|Allocates a block of memory.|
 |[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|

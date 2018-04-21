@@ -37,13 +37,13 @@ class allocator_base
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[allocator_base](#allocator_base)|Constructs an object of type `allocator_base`.|
 
-### TypeDefs
+### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[const_pointer](#const_pointer)|A type that provides a constant pointer to the type of object managed by the allocator.|
 |[const_reference](#const_reference)|A type that provides a constant reference to type of object managed by the allocator.|
@@ -53,9 +53,9 @@ class allocator_base
 |[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of template class `allocator_base` can allocate.|
 |[value_type](#value_type)|A type that is managed by the allocator.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[_Charalloc](#charalloc)|Allocates storage for an array of type `char`.|
 |[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type `char`.|

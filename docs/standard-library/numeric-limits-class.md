@@ -479,7 +479,7 @@ static const bool has_signaling_NaN = false;
 
 ### Remarks
 
-A signaling NAN is an encoding for not a number, which signals its presence in an expression. The return value is **true**[is_iec559](#is_iec559) is true.
+A signaling NAN is an encoding for not a number, which signals its presence in an expression. The return value is **true** if [is_iec559](#is_iec559) is true.
 
 ### Example
 

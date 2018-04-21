@@ -54,21 +54,21 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[queue](#queue)|Constructs a `queue` that is empty or that is a copy of a base container object.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by the `queue`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `queue`.|
 |[value_type](#value_type)|A type that represents the type of object stored as an element in a `queue`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[back](#back)|Returns a reference to the last and most recently added element at the back of the `queue`.|
 |[empty](#empty)|Tests if the `queue` is empty.|

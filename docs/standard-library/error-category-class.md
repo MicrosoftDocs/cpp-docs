@@ -31,15 +31,15 @@ class error_category;
 
 Two predefined objects implement `error_category`: [generic_category](../standard-library/system-error-functions.md#generic_category) and [system_category](../standard-library/system-error-functions.md#system_category).
 
-### TypeDefs
+### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[default_error_condition](#default_error_condition)|Stores the error code value for an error condition object.|
 |[equivalent](#equivalent)|Returns a value that specifies whether error objects are equivalent.|
@@ -48,7 +48,7 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](#op_eq_eq)|Tests for equality between `error_category` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_category` objects.|

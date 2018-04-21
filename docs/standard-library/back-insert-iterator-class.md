@@ -39,20 +39,20 @@ The container must satisfy the requirements for a back insertion sequence where 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[back_insert_iterator](#back_insert_iterator)|Constructs a `back_insert_iterator` that inserts elements after the last element in a container.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[container_type](#container_type)|A type that provides a container for the `back_insert_iterator`.|
 |[reference](#reference)|A type that provides a reference for the `back_insert_iterator`.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|
 |[operator++](#op_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|

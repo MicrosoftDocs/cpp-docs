@@ -50,13 +50,13 @@ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#ref
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[vector](#vector)|Constructs a vector of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other vector.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the vector object.|
 |[const_iterator](#const_iterator)|A type that provides a random-access iterator that can read a `const` element in a vector.|
@@ -73,7 +73,7 @@ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#ref
 
 ### Member Functions
 
-|||
+|Member function|Description|
 |-|-|
 |[assign](#assign)|Erases a vector and copies the specified elements to the empty vector.|
 |[at](#at)|Returns a reference to the element at a specified location in the vector.|
@@ -107,7 +107,7 @@ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#ref
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Returns a reference to the vector element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the vector with a copy of another vector.|
@@ -822,9 +822,8 @@ iterator emplace(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`_Where`|The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.|
 |`val`|The value of the element being inserted into the `vector`.|
 
@@ -1007,9 +1006,8 @@ iterator erase(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`_Where`|Position of the element to be removed from the vector.|
 |`first`|Position of the first element removed from the vector.|
 |`last`|Position just beyond the last element removed from the vector.|
@@ -1175,9 +1173,8 @@ void insert(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`_Where`|The position in the vector where the first element is inserted.|
 |`val`|The value of the element being inserted into the vector.|
 |`count`|The number of elements being inserted into the vector.|
@@ -1315,9 +1312,8 @@ const_reference operator[](size_type Pos) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Pos`|The position of the vector element.|
 
 ### Return Value
@@ -1363,9 +1359,8 @@ vector& operator=(vector&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [vector](../standard-library/vector-class.md) being copied into the `vector`.|
 
 ### Remarks
@@ -2030,9 +2025,8 @@ vector(InputIterator First, InputIterator Last, const Allocator& Al);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The allocator class to use with this object. [get_allocator](#get_allocator) returns the allocator class for the object.|
 |`Count`|The number of elements in the constructed vector.|
 |`Val`|The value of the elements in the constructed vector.|

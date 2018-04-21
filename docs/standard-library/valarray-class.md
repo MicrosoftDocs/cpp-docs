@@ -39,19 +39,19 @@ In particular, no subtle differences may exist between copy construction and def
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[valarray](#valarray)|Constructs a `valarray` of a specific size or with elements of a specific value or as a copy of another `valarray` or subset of another `valarray`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the type of element stored in a `valarray`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[apply](#apply)|Applies a specified function to each element of a `valarray`.|
 |[cshift](#cshift)|Cyclically shifts all the elements in a `valarray` by a specified number of positions.|
@@ -66,7 +66,7 @@ In particular, no subtle differences may exist between copy construction and def
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!](#op_not)|A unary operator that obtains the logical `NOT` values of each element in a `valarray`.|
 |[operator%=](#op_mod_eq)|Obtains the remainder of dividing the elements of an array element-wise either by a specified `valarray` or by a value of the element type.|

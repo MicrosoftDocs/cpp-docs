@@ -29,14 +29,14 @@ Defines the container template class scoped_allocator.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!=](../standard-library/scoped-allocator-operators.md#op_neq)|Tests if the scoped_allocator object on the left side of the operator is not equal to the list object on the right side.|
 |[operator==](../standard-library/scoped-allocator-operators.md#op_eq_eq)|Tests if the scoped_allocator object on the left side of the operator is equal to the list object on the right side.|
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[scoped_allocator_adaptor Class](../standard-library/scoped-allocator-adaptor-class.md)|A template class that encapsulates a nest of one or more allocators.|
 

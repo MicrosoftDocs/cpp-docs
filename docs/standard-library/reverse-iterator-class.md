@@ -47,28 +47,28 @@ In practice, this means that in the reversed sequence the reverse_iterator will 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[reverse_iterator](#reverse_iterator)|Constructs a default `reverse_iterator` or a `reverse_iterator` from an underlying iterator.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[difference_type](#difference_type)|A type that provides the difference between two `reverse_iterator`s referring to elements within the same container.|
 |[iterator_type](#iterator_type)|A type that provides the underlying iterator for a `reverse_iterator`.|
 |[pointer](#pointer)|A type that provides a pointer to an element addressed by a `reverse_iterator`.|
 |[reference](#reference)|A type that provides a reference to an element addressed by a `reverse_iterator`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[base](#base)|Recovers the underlying iterator from its `reverse_iterator`.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator_star](#op_star)|Returns the element that a `reverse_iterator` addresses.|
 |[operator+](#op_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|
@@ -695,7 +695,7 @@ After the -2 offset, the iterator rVPOS1 now points
  to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iterator__operator-_gt"></a>  reverse_iterator::operator-&gt;
+## <a name="op_arrow"></a>  reverse_iterator::operator-&gt;
 
 Returns a pointer to the element addressed by the `reverse_iterator`.
 

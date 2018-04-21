@@ -69,13 +69,13 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[set](#set)|Constructs a set that is empty or that is a copy of all or part of some other set.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the set object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the set.|
@@ -93,9 +93,9 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |[value_compare](#value_compare)|The type that provides a function object that can compare two elements to determine their relative order in the set.|
 |[value_type](#value_type)|The type describes an object stored as an element of a set in its capacity as a value.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[begin](#begin)|Returns an iterator that addresses the first element in the set.|
 |[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the set.|
@@ -125,7 +125,7 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of a set with a copy of another set.|
 
@@ -625,9 +625,8 @@ emplace(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
 
 ### Return Value
@@ -708,9 +707,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the set unless the set already contains that element or, more generally, unless it already contains an element whose value is equivalently ordered.|
 |`where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `where`, insertion can occur in amortized constant time instead of logarithmic time.)|
 
@@ -1240,9 +1238,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
 |`Where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `Where`, insertion can occur in amortized constant time instead of logarithmic time.)|
 |`ValTy`|Template parameter that specifies the argument type that the set can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
@@ -1611,9 +1608,8 @@ set& operator=(set&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The `set` providing new elements to be assigned to this `set`.|
 
 ### Remarks
@@ -1928,9 +1924,8 @@ set(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The storage allocator class to be used for this set object, which defaults to **Allocator**.|
 |`Comp`|The comparison function of type `const Traits` used to order the elements in the set, which defaults to `Compare`.|
 |`Rght`|The set of which the constructed set is to be a copy.|

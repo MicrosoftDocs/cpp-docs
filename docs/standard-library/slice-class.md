@@ -37,13 +37,13 @@ Operations on valarrays are guaranteed only if the source and destination subset
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[slice](#slice)|Defines a subset of a `valarray` that consists of a number of elements that are an equal distance apart and that start at a specified element.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[size](#size)|Finds the number of elements in a slice of a `valarray`.|
 |[start](#start)|Finds the starting index of a slice of a `valarray`.|

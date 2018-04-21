@@ -42,19 +42,19 @@ The template class describes an object that controls insertions, through its bas
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_iostream](#basic_iostream)|Create a `basic_iostream` object.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[swap](#swap)|Exchanges the contents of the provided `basic_iostream` object for the contents of this object.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Assigns the value of a specified `basic_iostream` object to this object. This is a move assignment involving an `rvalue` that does not leave a copy behind.|
 

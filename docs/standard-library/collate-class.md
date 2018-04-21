@@ -39,20 +39,20 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[collate](#collate)|The constructor for objects of class `collate` that serves as a locale facet to handle string sorting conventions.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that describes a character of type `CharType`.|
 |[string_type](#string_type)|A type that describes a string of type `basic_string` containing characters of type `CharType`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[compare](#compare)|Compares two character sequences according to their facet-specific rules for equality or inequality.|
 |[do_compare](#do_compare)|A virtual function called to compare two character sequences according to their facet-specific rules for equality or inequality.|

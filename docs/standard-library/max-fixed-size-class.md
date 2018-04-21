@@ -36,13 +36,13 @@ class max_fixed_size
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[max_fixed_size](#max_fixed_size)|Constructs an object of type `max_fixed_size`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocated](#allocated)|Increments the count of allocated memory blocks.|
 |[deallocated](#deallocated)|Decrements the count of allocated memory blocks.|

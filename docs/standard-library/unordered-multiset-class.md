@@ -33,9 +33,8 @@ class unordered_multiset;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Key`|The key type.|
 |`Hash`|The hash function object type.|
 |`Pred`|The equality comparison function object type.|
@@ -43,9 +42,8 @@ class unordered_multiset;
 
 ## Members
 
-|||
-|-|-|
 |Type Definition|Description|
+|-|-|
 |[allocator_type](#allocator_type)|The type of an allocator for managing storage.|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
 |[const_local_iterator](#const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|
@@ -62,9 +60,8 @@ class unordered_multiset;
 |[size_type](#size_type)|The type of an unsigned distance between two elements.|
 |[value_type](#value_type)|The type of an element.|
 
-|||
-|-|-|
 |Member Function|Description|
+|-|-|
 |[begin](#begin)|Designates the beginning of the controlled sequence.|
 |[bucket](#bucket)|Gets the bucket number for a key value.|
 |[bucket_count](#bucket_count)|Gets the number of buckets.|
@@ -93,9 +90,8 @@ class unordered_multiset;
 |[swap](#swap)|Swaps the contents of two containers.|
 |[unordered_multiset](#unordered_multiset)|Constructs a container object.|
 
-|||
-|-|-|
 |Operator|Description|
+|-|-|
 |[unordered_multiset::operator=](#op_eq)|Copies a hash table.|
 
 ## Remarks
@@ -170,9 +166,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`nbucket`|The bucket number.|
 
 ### Remarks
@@ -862,9 +857,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
 
 ### Return Value
@@ -892,9 +886,8 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`args`|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
 |`where`|A hint regarding the place to start searching for the correct point of insertion.|
 
@@ -1380,9 +1373,8 @@ IList);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Val`|The value of an element to be inserted into the unordered_multiset.|
 |`Where`|The place to start searching for the correct point of insertion.|
 |`ValTy`|Template parameter that specifies the argument type that the unordered_multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
@@ -1912,9 +1904,8 @@ unordered_multiset& operator=(unordered_multiset&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.|
 
 ### Remarks
@@ -2365,9 +2356,8 @@ unordered_multiset(
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`InputIterator`|The iterator type.|
 |`Al`|The allocator object to store.|
 |`Comp`|The comparison function object to store.|

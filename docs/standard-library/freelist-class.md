@@ -42,13 +42,13 @@ This template class manages a list of memory blocks of size `Sz` with the maximu
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[freelist](#freelist)|Constructs an object of type `freelist`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[pop](#pop)|Removes the first memory block from the free list.|
 |[push](#push)|Adds a memory block to the list.|

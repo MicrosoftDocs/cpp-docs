@@ -36,15 +36,15 @@ Operations that deal with the `bool` type correspond to values in the container 
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[const_pointer](#const_pointer)|A typedef to a `const_iterator` that can serve as a constant pointer to a Boolean element of the `vector<bool>`.|
 |[const_reference](#const_reference)|A typedef for `bool`. After initialization, it does not observe updates to the original value.|
 |[pointer](#pointer)|A typedef to an `iterator` that can serve as a pointer to a Boolean element of the `vector<bool>`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[flip](#flip)|Reverses all bits in the `vector<bool>`.|
 |[swap](#swap)|Exchanges the elements of two `vector<bool>`s.|
@@ -136,9 +136,8 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Pos`|The position of the `vector<bool>` element.|
 
 ### Return Value

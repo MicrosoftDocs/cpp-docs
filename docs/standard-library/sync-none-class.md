@@ -34,9 +34,9 @@ class sync_none
 |---------------|-----------------|
 |`Cache`|The type of cache associated with the synchronization filter. This can be [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), or [cache_suballoc](../standard-library/cache-suballoc-class.md).|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocate](#allocate)|Allocates a block of memory.|
 |[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|

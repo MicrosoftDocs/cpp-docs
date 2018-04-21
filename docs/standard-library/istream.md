@@ -30,7 +30,7 @@ Defines the template class basic_istream, which mediates extractions for the ios
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[iostream](../standard-library/istream-typedefs.md#iostream)|A type `basic_iostream` specialized on `char`.|
 |[istream](../standard-library/istream-typedefs.md#istream)|A type `basic_istream` specialized on `char`.|
@@ -46,13 +46,13 @@ Defines the template class basic_istream, which mediates extractions for the ios
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator>>](../standard-library/istream-operators.md#op_gt_gt)|Extracts characters and strings from the stream.|
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[basic_iostream](../standard-library/basic-iostream-class.md)|A stream class that can do both input and output.|
 |[basic_istream](../standard-library/basic-istream-class.md)|The template class describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type **Elem**, also known as [char_type](../standard-library/basic-ios-class.md#char_type), whose character traits are determined by the class **Tr**, also known as [traits_type](../standard-library/basic-ios-class.md#traits_type).|

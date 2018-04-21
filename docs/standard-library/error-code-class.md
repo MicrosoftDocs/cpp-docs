@@ -33,19 +33,19 @@ An object of type `error_code` class stores an error code value and a pointer to
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[error_code](#error_code)|Constructs an object of type `error_code`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[assign](#assign)|Assigns an error code value and category to an error code.|
 |[category](#category)|Returns the error category.|
@@ -55,7 +55,7 @@ An object of type `error_code` class stores an error code value and a pointer to
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](#op_eq_eq)|Tests for equality between `error_code` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_code` objects.|

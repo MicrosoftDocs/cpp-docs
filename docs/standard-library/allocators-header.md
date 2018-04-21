@@ -123,7 +123,7 @@ The cache template `cache_freelist` takes a max class argument which determines 
 
 ### Macros
 
-|||
+|Macro|Description|
 |-|-|
 |[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)|Yields an allocator template class.|
 |[CACHE_CHUNKLIST](../standard-library/allocators-functions.md#cache_chunklist)|Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.|
@@ -133,14 +133,14 @@ The cache template `cache_freelist` takes a max class argument which determines 
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator!= (\<allocators>)](../standard-library/allocators-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|
 |[operator== (\<allocators>)](../standard-library/allocators-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[allocator_base](../standard-library/allocator-base-class.md)|Defines the base class and common functions needed to create a user-defined allocator from a synchronization filter.|
 |[allocator_chunklist](../standard-library/allocator-chunklist-class.md)|Describes an object that manages storage allocation and freeing for objects using a cache of type [cache_chunklist](../standard-library/cache-chunklist-class.md).|

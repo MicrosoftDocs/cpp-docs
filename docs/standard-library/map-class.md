@@ -82,13 +82,13 @@ The map orders the elements it controls by calling a stored function object of t
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[map](#map)|Constructs a list of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other map.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A typedef for the `allocator` class for the map object.|
 |[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a `const` element in the map.|
@@ -106,9 +106,9 @@ The map orders the elements it controls by calling a stored function object of t
 |[size_type](#size_type)|An unsigned integer typedef for the number of elements in a map|
 |[value_type](#value_type)|A typedef for the type of object stored as an element in a map.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[at](#at)|Finds an element with a specified key value.|
 |[begin](#begin)|Returns an iterator that points to the first element in the map.|
@@ -139,7 +139,7 @@ The map orders the elements it controls by calling a stored function object of t
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Inserts an element into a map with a specified key value.|
 |[operator=](#op_eq)|Replaces the elements of a map with a copy of another map.|
@@ -174,7 +174,7 @@ const Type& at(const Key& key) const;
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`key`|The key value to find.|
@@ -718,7 +718,7 @@ emplace(
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`args`|The arguments forwarded to construct an element to be inserted into the map unless it already contains an element whose value is equivalently ordered.|
@@ -807,7 +807,7 @@ iterator emplace_hint(
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`args`|The arguments forwarded to construct an element to be inserted into the map unless the map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
@@ -1342,7 +1342,7 @@ IList);
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`Val`|The value of an element to be inserted into the map unless it already contains an element whose key is equivalently ordered.|
@@ -1725,7 +1725,7 @@ map(
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`Al`|The storage allocator class to be used for this map object, which defaults to `Allocator`.|
@@ -1933,7 +1933,7 @@ Type& operator[](Key&& key);
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`key`|The key value of the element that is to be inserted.|
@@ -2033,7 +2033,7 @@ map& operator=(map&& right);
 
 ### Parameters
 
-|||
+|Parameter|Description|
 |-|-|
 |Parameter|Description|
 |`right`|The [map](../standard-library/map-class.md) being copied into the `map`.|

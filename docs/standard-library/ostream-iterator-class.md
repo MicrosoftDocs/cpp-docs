@@ -43,13 +43,13 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[ostream_iterator](#ostream_iterator)|Constructs an `ostream_iterator` that is initialized and delimited to write to the output stream.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that provides for the character type of the `ostream_iterator`.|
 |[ostream_type](#ostream_type)|A type that provides for the stream type of the `ostream_iterator`.|
@@ -57,7 +57,7 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.|

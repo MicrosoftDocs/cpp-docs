@@ -45,13 +45,13 @@ After constructing or incrementing an object of class istreambuf_iterator with a
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[istreambuf_iterator](#istreambuf_iterator)|Constructs an `istreambuf_iterator` that is initialized to read characters from the input stream.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that provides for the character type of the `ostreambuf_iterator`.|
 |[int_type](#int_type)|A type that provides an integer type for an `istreambuf_iterator`.|
@@ -59,19 +59,19 @@ After constructing or incrementing an object of class istreambuf_iterator with a
 |[streambuf_type](#streambuf_type)|A type that provides for the stream type of the `istreambuf_iterator`.|
 |[traits_type](../standard-library/istream-iterator-class.md#traits_type)|A type that provides for the character traits type of the `istream_iterator`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[equal](#equal)|Tests for equality between two input stream buffer iterators.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|The dereferencing operator returns the next character in the stream.|
 |[operator++](#op_add_add)|Either returns the next character from the input stream or copies the object before incrementing it and returns the copy.|
-|[operator->](#operator-_gt)|Returns the value of a member, if any.|
+|[operator->](#op_arrow)|Returns the value of a member, if any.|
 
 ## Requirements
 
@@ -358,7 +358,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iterator__operator-_gt"></a>  istreambuf_iterator::operator-&gt;
+## <a name="op_arrow"></a>  istreambuf_iterator::operator-&gt;
 
 Returns the value of a member, if any.
 

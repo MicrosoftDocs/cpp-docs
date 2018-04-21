@@ -36,13 +36,13 @@ The object stores an object of class `strstreambuf`.
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[istrstream](#istrstream)|Constructs an object of type `istrstream`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[rdbuf](#rdbuf)|Returns a pointer to the stream's associated `strstreambuf` object.|
 |[str](#str)|Calls [freeze](../standard-library/strstreambuf-class.md#freeze), and then returns a pointer to the beginning of the controlled sequence.|

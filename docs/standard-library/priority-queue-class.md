@@ -59,21 +59,21 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[priority_queue](#priority_queue)|Constructs a `priority_queue` that is empty or that is a copy of a range of a base container object or of other `priority_queue`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by a `priority_queue`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `priority_queue`.|
 |[value_type](#value_type)|A type that represents the type of object stored as an element in a `priority_queue`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[empty](#empty)|Tests if the `priority_queue` is empty.|
 |[pop](#pop)|Removes the largest element of the `priority_queue` from the top position.|

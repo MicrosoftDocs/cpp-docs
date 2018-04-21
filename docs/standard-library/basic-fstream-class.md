@@ -79,13 +79,13 @@ Writing to a basic_fstream object...
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_fstream](#basic_fstream)|Constructs an object of type `basic_fstream`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[close](#close)|Closes a file.|
 |[is_open](#is_open)|Determines if a file is open.|

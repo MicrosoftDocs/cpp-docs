@@ -49,13 +49,13 @@ Additions to the controlled sequence might occur by calls to [forward_list::inse
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[forward_list](#forward_list)|Constructs an object of type `forward_list`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the allocator class for a forward list object.|
 |[const_iterator](#const_iterator)|A type that provides a constant iterator for the forward list.|
@@ -68,9 +68,9 @@ Additions to the controlled sequence might occur by calls to [forward_list::inse
 |[size_type](#size_type)|A type that represents the unsigned distance between two elements.|
 |[value_type](#value_type)|A type that represents the type of element stored in a forward list.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[assign](#assign)|Erases elements from a forward list and copies a new set of elements to a target forward list.|
 |[before_begin](#before_begin)|Returns an iterator addressing the position before the first element in a forward list.|
@@ -102,7 +102,7 @@ Additions to the controlled sequence might occur by calls to [forward_list::inse
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of the forward list with a copy of another forward list.|
 

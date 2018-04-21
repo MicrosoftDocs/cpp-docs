@@ -30,7 +30,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)|A type that describes a pointer to an exception.|
 |[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|A type that describes a pointer to a function suitable for use as a `terminate_handler`.|
@@ -38,7 +38,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[current_exception](../standard-library/exception-functions.md#current_exception)|Obtains a pointer to the current exception.|
 |[get_terminate](../standard-library/exception-functions.md#get_terminate)|Obtains the current `terminate_handler` function.|
@@ -53,7 +53,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[bad_exception Class](../standard-library/bad-exception-class.md)|The class describes an exception that can be thrown from an `unexpected_handler`.|
 |[exception Class](../standard-library/exception-class.md)|The class serves as the base class for all exceptions thrown by certain expressions and by the C++ Standard Library.|

@@ -100,13 +100,13 @@ See the example for [basic_ofstream Class](../standard-library/basic-ofstream-cl
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_ostream](#basic_ostream)|Constructs a `basic_ostream` object.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[flush](#flush)|Flushes the buffer.|
 |[put](#put)|Puts a character in a stream.|
@@ -118,7 +118,7 @@ See the example for [basic_ofstream Class](../standard-library/basic-ofstream-cl
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#basic_ostream_operator_eq)|Assigns the value of the provided `basic_ostream` object parameter to this object.|
 |[operator<<](#basic_ostream_operator_lt_lt)|Writes to the stream.|

@@ -433,7 +433,7 @@ match == a
 match == a
 ```
 
-## <a name="regex_iterator__operator-_gt"></a>  regex_iterator::operator-&gt;
+## <a name="op_arrow"></a>  regex_iterator::operator-&gt;
 
 Accesses the designated match.
 

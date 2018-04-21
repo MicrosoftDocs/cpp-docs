@@ -45,19 +45,19 @@ The template class describes an object that controls insertion and extraction of
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_stringstream](#basic_stringstream)|Constructs an object of type `basic_stringstream`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|The type is a synonym for the template parameter `Alloc`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[rdbuf](#rdbuf)|Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|
 |[str](#str)|Sets or gets the text in a string buffer without changing the write position.|

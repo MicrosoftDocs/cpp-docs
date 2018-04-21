@@ -46,20 +46,20 @@ This adaptor class is used when it is necessary to separate memory allocation an
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[raw_storage_iterator](#raw_storage_iterator)|Constructs a raw storage iterator with a specified underlying output iterator.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[element_type](#element_type)|Provides a type that describes an element to be stored a raw storage iterator.|
 |[iter_type](#iter_type)|Provides a type that describes an iterator that underlies a raw storage iterator.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|A dereferencing operator used to implement the output iterator expression * `ii` = `x`.|
 |[operator=](#op_eq)|An assignment operator used to implement the raw storage iterator expression * `i` = `x` for storing in memory.|

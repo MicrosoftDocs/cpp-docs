@@ -36,13 +36,13 @@ The object stores an object of class `strstreambuf`.
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[strstream](#strstream)|Constructs an object of type `strstream`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[freeze](#freeze)|Causes a stream buffer to be unavailable through stream buffer operations.|
 |[pcount](#pcount)|Returns a count of the number of elements written to the controlled sequence.|

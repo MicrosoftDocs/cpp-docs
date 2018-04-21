@@ -76,13 +76,13 @@ An object of class `basic_streambuf`< `Elem`, `Tr`> stores the six pointers prev
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_streambuf](#basic_streambuf)|Constructs an object of type `basic_streambuf`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|Associates a type name with the `Elem` template parameter.|
 |[int_type](#int_type)|Associates a type name within `basic_streambuf` scope with the `Elem` template parameter.|
@@ -90,9 +90,9 @@ An object of class `basic_streambuf`< `Elem`, `Tr`> stores the six pointers prev
 |[pos_type](#pos_type)|Associates a type name within `basic_streambuf` scope with the `Elem` template parameter.|
 |[traits_type](#traits_type)|Associates a type name with the `Tr` template parameter.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[eback](#eback)|A protected function that returns a pointer to the beginning of the input buffer.|
 |[egptr](#egptr)|A protected function that returns a pointer just past the end of the input buffer.|
@@ -136,7 +136,7 @@ An object of class `basic_streambuf`< `Elem`, `Tr`> stores the six pointers prev
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Assigns the values of this object from another `basic_streambuf` object.|
 

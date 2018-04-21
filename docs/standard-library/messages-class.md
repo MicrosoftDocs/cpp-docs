@@ -43,20 +43,20 @@ This facet basically opens a catalog of messages defined in the base class messa
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[messages](#messages)|The message facet constructor function.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A character type that is used display messages.|
 |[string_type](#string_type)|A type that describes a string of type `basic_string` containing characters of type `CharType`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[close](#close)|Closes the message catalog.|
 |[do_close](#do_close)|A virtual function called to lose the message catalog.|

@@ -66,7 +66,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[weak_ptr](#weak_ptr)|Constructs a `weak_ptr`.|
 
@@ -84,7 +84,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces owned resource.|
 

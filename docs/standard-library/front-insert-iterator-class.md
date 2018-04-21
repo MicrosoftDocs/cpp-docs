@@ -39,20 +39,20 @@ The container must satisfy the requirements for a front insertion sequence where
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[front_insert_iterator](#front_insert_iterator)|Creates an iterator that can insert elements at the front of a specified container object.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[container_type](#container_type)|A type that represents the container into which a front insertion is to be made.|
 |[reference](#reference)|A type that provides a reference to an element in a sequence controlled by the associated container.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a front insertion.|
 |[operator++](#op_add_add)|Increments the `front_insert_iterator` to the next location into which a value may be stored.|

@@ -71,21 +71,21 @@ converts between `char32_t` sequences encoded as UTF-32 (UCS-4) and `char` seque
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[codecvt](#codecvt)|The constructor for objects of class `codecvt` that serves as a locale facet to handle conversions.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[extern_type](#extern_type)|A character type that is used for external representations.|
 |[intern_type](#intern_type)|A character type that is used for internal representations.|
 |[state_type](#state_type)|A character type that is used to represent intermediate states during conversions between internal and external representations.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[always_noconv](#always_noconv)|Tests whether no conversions need be done.|
 |[do_always_noconv](#do_always_noconv)|A virtual function called to test whether no conversions need be done.|

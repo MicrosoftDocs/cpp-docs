@@ -36,20 +36,20 @@ Include the header \<system_error> to define the exception class `system_error` 
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[generic_errno](../standard-library/system-error-typedefs.md#generic_errno)|A type that represents the enumeration that provides the symbolic names for all the error-code macros defined by Posix in `<errno.h>`.|
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[make_error_code](../standard-library/system-error-functions.md#make_error_code)|Creates an `error_code` object.|
 |[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|Creates an `error_condition` object.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator==](../standard-library/system-error-operators.md#op_eq_eq)|Tests if the object on the left side of the operator is equal to the object on the right side.|
 |[operator!=](../standard-library/system-error-operators.md#op_neq)|Tests if the object on the left side of the operator is not equal to the object on the right side.|

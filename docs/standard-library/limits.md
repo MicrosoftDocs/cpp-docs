@@ -41,7 +41,7 @@ Explicit specializations of the `numeric_limits` class describe many properties 
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[numeric_limits Class](../standard-library/numeric-limits-class.md)|The template class describes arithmetic properties of built-in numerical types.|
 

@@ -39,7 +39,7 @@ The template struct describes various character traits for type **CharType**. Th
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type of character.|
 |[int_type](#int_type)|An integer type that can represent a character of type `char_type` or an end-of-file (EOF) character.|
@@ -47,9 +47,9 @@ The template struct describes various character traits for type **CharType**. Th
 |[pos_type](#pos_type)|An integer type that can represent positions in a stream.|
 |[state_type](#state_type)|A type that represents the conversion state in for multibyte characters in a stream.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[assign](#assign)|Assigns one character value to another.|
 |[compare](#compare)|Compares up to a specified number of characters in two strings.|

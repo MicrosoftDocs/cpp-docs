@@ -52,13 +52,13 @@ An object of class basic_stringbuf< `Elem`, `Tr`, `Alloc`> stores a copy of the 
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_stringbuf](#basic_stringbuf)|Constructs an object of type `basic_stringbuf`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|The type is a synonym for the template parameter `Alloc`.|
 |[char_type](#char_type)|Associates a type name with the `Elem` template parameter.|
@@ -67,9 +67,9 @@ An object of class basic_stringbuf< `Elem`, `Tr`, `Alloc`> stores a copy of the 
 |[pos_type](#pos_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the `Tr` scope.|
 |[traits_type](#traits_type)|Associates a type name with the `Tr` template parameter.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[overflow](#overflow)|A protected, virtual function that can be called when a new character is inserted into a full buffer.|
 |[pbackfail](#pbackfail)|The protected virtual member function tries to put back an element into the input buffer, then makes it the current element (pointed to by the next pointer).|

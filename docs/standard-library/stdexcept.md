@@ -39,7 +39,7 @@ The run-time errors occur because of mistakes in either the library functions or
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[domain_error Class](../standard-library/domain-error-class.md)|The class serves as the base class for all exceptions thrown to report a domain error.|
 |[invalid_argument Class](../standard-library/invalid-argument-class.md)|The class serves as the base class for all exceptions thrown to report an invalid argument.|

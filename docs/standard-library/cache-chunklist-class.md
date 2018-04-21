@@ -42,13 +42,13 @@ Each memory block holds `Sz` bytes of usable memory and a pointer to the chunk t
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[cache_chunklist](#cache_chunklist)|Constructs an object of type `cache_chunklist`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[allocate](#allocate)|Allocates a block of memory.|
 |[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|

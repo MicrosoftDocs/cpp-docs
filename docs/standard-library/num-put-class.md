@@ -43,20 +43,20 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[num_put](#num_put)|The constructor for objects of type `num_put`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[iter_type](#iter_type)|A type that describes an output iterator.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[do_put](#do_put)|A virtual function that is called to convert a number into a sequence of `CharType`s that represents the number formatted for a given locale.|
 |[put](#put)|Converts a number into a sequence of `CharType`s which represents the number formatted for a given locale.|

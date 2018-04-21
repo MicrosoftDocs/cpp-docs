@@ -42,7 +42,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[ios](../standard-library/ios-typedefs.md#ios)|Supports the ios class from the old iostream library.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|Supports internal operations.|
@@ -81,7 +81,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters.|
 |[fpos](../standard-library/fpos-class.md)|The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream.|

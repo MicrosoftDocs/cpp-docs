@@ -44,20 +44,20 @@ The const static object intl stores the value of the template parameter **Intl**
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[moneypunct](#moneypunct)|Constructor of objects of type `moneypunct`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[curr_symbol](#curr_symbol)|Returns a locale-specific sequence of elements to use as a currency symbol.|
 |[decimal_point](#decimal_point)|Returns a locale-specific sequence of elements to use as a decimal point symbol.|

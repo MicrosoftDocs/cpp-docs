@@ -43,20 +43,20 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[time_put](#time_put)|The constructor for objects of type `time_put`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[iter_type](#iter_type)|A type that describes an output iterator.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[do_put](#do_put)|A virtual function that outputs time and date information as a sequence of `CharType`s.|
 |[put](#put)|Outputs time and date information as a sequence of `CharType`s.|

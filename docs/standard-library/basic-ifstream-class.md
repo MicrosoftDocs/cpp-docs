@@ -79,13 +79,13 @@ This is the contents of basic_ifstream_class.txt.
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[basic_ifstream](#basic_ifstream)|Initializes a new instance of a `basic_ifstream` object.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[close](#close)|Closes a file.|
 |[is_open](#is_open)|Determines if a file is open.|
@@ -95,7 +95,7 @@ This is the contents of basic_ifstream_class.txt.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue` that does not leave a copy behind.|
 

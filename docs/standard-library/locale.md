@@ -30,7 +30,7 @@ Defines template classes and functions that C++ programs can use to encapsulate 
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[has_facet](../standard-library/locale-functions.md#has_facet)|Tests if a particular facet is stored in a specified locale.|
 |[isalnum](../standard-library/locale-functions.md#isalnum)|Tests whether an element in a locale is an alphabetic or a numeric character.|
@@ -50,7 +50,7 @@ Defines template classes and functions that C++ programs can use to encapsulate 
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[codecvt](../standard-library/codecvt-class.md)|A template class that provides a facet used to convert between internal and external character encodings.|
 |[codecvt_base](../standard-library/codecvt-base-class.md)|A base class for the codecvt class that is used to define an enumeration type referred to as **result**, used as the return type for the facet member functions to indicate the result of a conversion.|

@@ -39,20 +39,20 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[numpunct](#numpunct)|The constructor for objects of type `numpunct`.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[char_type](#char_type)|A type that is used to describe a character used by a locale.|
 |[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[decimal_point](#decimal_point)|Returns a locale-specific element to use as a decimal point.|
 |[do_decimal_point](#do_decimal_point)|A protected virtual member function that is called to return a locale-specific element to use as a decimal point.|

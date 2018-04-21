@@ -40,19 +40,19 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[new_handler](../standard-library/new-typedefs.md#new_handler)|A type that points to a function suitable for use as a new handler.|
 
 ### Functions
 
-|||
+|Function|Description|
 |-|-|
 |[set_new_handler](../standard-library/new-functions.md#set_new_handler)|Installs a user function that is called when new fails in its attempt to allocate memory.|
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator delete](../standard-library/new-operators.md#op_delete)|The function called by a delete expression to deallocate storage for individual of objects.|
 |[operator delete&#91;&#93;](../standard-library/new-operators.md#op_delete_arr)|The function called by a delete expression to deallocate storage for an array of objects.|
@@ -61,7 +61,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[bad_alloc Class](../standard-library/bad-alloc-class.md)|The class describes an exception thrown to indicate that an allocation request did not succeed.|
 |[nothrow_t Class](../standard-library/nothrow-t-structure.md)|The class is used as a function parameter to operator new to indicate that the function should return a null pointer to report an allocation failure, rather than throw an exception.|

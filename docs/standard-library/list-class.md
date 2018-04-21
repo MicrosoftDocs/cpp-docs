@@ -48,13 +48,13 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 
 ### Constructors
 
-|||
+|Constructor|Description|
 |-|-|
 |[list](#list)|Constructs a list of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other list.|
 
 ### Typedefs
 
-|||
+|Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for a list object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in a list.|
@@ -69,9 +69,9 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 |[size_type](#size_type)|A type that counts the number of elements in a list.|
 |[value_type](#value_type)|A type that represents the data type stored in a list.|
 
-### Member Functions
+### Member functions
 
-|||
+|Member function|Description|
 |-|-|
 |[assign](#assign)|Erases elements from a list and copies a new set of elements to the target list.|
 |[back](#back)|Returns a reference to the last element of a list.|
@@ -110,7 +110,7 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[list::operator=](#op_eq)|Replaces the elements of the list with a copy of another list.|
 
@@ -667,9 +667,8 @@ void emplace(iterator Where, Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Where`|The position in the target [list](../standard-library/list-class.md) where the first element is inserted.|
 |`val`|The element added to the end of the `list`.|
 
@@ -711,9 +710,8 @@ void emplace_back(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the end of the [list](../standard-library/list-class.md).|
 
 ### Remarks
@@ -754,9 +752,8 @@ void emplace_front(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the beginning of the [list](../standard-library/list-class.md).|
 
 ### Remarks
@@ -1063,9 +1060,8 @@ void insert(iterator Where, InputIterator First, InputIterator Last);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Where`|The position in the target list where the first element is inserted.|
 |`Val`|The value of the element being inserted into the list.|
 |`Count`|The number of elements being inserted into the list.|
@@ -1186,9 +1182,8 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`Al`|The allocator class to use with this object.|
 |`Count`|The number of elements in the list constructed.|
 |`Val`|The value of the elements in the list.|
@@ -1436,9 +1431,8 @@ list& operator=(list&& right);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`right`|The [list](../standard-library/list-class.md) being copied into the `list`.|
 
 ### Remarks
@@ -1594,9 +1588,8 @@ void push_back(void push_back(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the end of the list.|
 
 ### Remarks
@@ -1651,9 +1644,8 @@ void push_front(Type&& val);
 
 ### Parameters
 
-|||
-|-|-|
 |Parameter|Description|
+|-|-|
 |`val`|The element added to the beginning of the list.|
 
 ### Remarks

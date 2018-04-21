@@ -37,7 +37,7 @@ Objects of type `strstream` work with `char` *, which are C strings. Use [\<sstr
 
 ### Classes
 
-|||
+|Class|Description|
 |-|-|
 |[strstreambuf Class](../standard-library/strstreambuf-class.md)|The class describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a `char` array object.|
 |[istrstream Class](../standard-library/istrstream-class.md)|The class describes an object that controls extraction of elements and encoded objects from a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).|
