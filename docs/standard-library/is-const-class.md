@@ -18,29 +18,32 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_const Class
-Tests if type is const.  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
+
+Tests if type is const.
+
+## Syntax
+
+```cpp
+template <class Ty>
 struct is_const;
-```  
-  
-#### Parameters  
- `Ty`  
- The type to query.  
-  
-## Remarks  
- An instance of the type predicate holds true if `Ty` is `const-qualified`.  
-  
-## Example  
-  
-```cpp  
-// std__type_traits__is_const.cpp   
-// compile with: /EHsc   
-#include <type_traits>   
-#include <iostream>   
+```
+
+### Parameters
+
+`Ty`
+ The type to query.
+
+## Remarks
+
+An instance of the type predicate holds true if `Ty` is `const-qualified`.
+
+## Example
+
+```cpp
+// std__type_traits__is_const.cpp
+// compile with: /EHsc
+#include <type_traits>
+#include <iostream>
 
 struct trivial
 {
@@ -61,20 +64,22 @@ int main()
     return (0);
 }
 
-```  
-  
-```Output  
-is_const<trivial> == false  
-is_const<const trivial> == true  
-is_const<int> == false  
-is_const<const int> == true  
-```  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)   
- [is_volatile Class](../standard-library/is-volatile-class.md)
+```
+
+```Output
+is_const<trivial> == false
+is_const<const trivial> == true
+is_const<int> == false
+is_const<const int> == true
+```
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>
+[is_volatile Class](../standard-library/is-volatile-class.md)<br/>

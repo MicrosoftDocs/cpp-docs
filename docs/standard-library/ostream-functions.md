@@ -26,20 +26,20 @@ These are the global template functions defined in &lt;ostream&gt;. For member f
 Terminates a line and flushes the buffer.
 
 ```cpp
-template class<Elem, Tr> 
+template class<Elem, Tr>
 basic_ostream<Elem, Tr>& endl(
    basic_ostream<Elem, Tr>& Ostr);
 ```
 
 ### Parameters
 
-*Elem*  
+*Elem*
 The element type.
 
-*Ostr*  
+*Ostr*
 An object of type **basic_ostream**.
 
-*Tr*  
+*Tr*
 Character traits.
 
 ### Return Value
@@ -73,20 +73,20 @@ testing
 Terminates a string.
 
 ```cpp
-template class<Elem, Tr> 
+template class<Elem, Tr>
 basic_ostream<Elem, Tr>& ends(
    basic_ostream<Elem, Tr>& Ostr);
 ```
 
 ### Parameters
 
-*Elem*  
+*Elem*
 The element type.
 
-*Ostr*  
+*Ostr*
 An object of type **basic_ostream**.
 
-*Tr*  
+*Tr*
 Character traits.
 
 ### Return Value
@@ -129,13 +129,13 @@ basic_ostream<Elem, Tr>& flush(
 
 ### Parameters
 
-*Elem*  
+*Elem*
 The element type.
 
-*Ostr*  
+*Ostr*
 An object of type **basic_ostream**.
 
-*Tr*  
+*Tr*
 Character traits.
 
 ### Return Value
@@ -177,16 +177,16 @@ void swap(
 
 ### Parameters
 
-*Elem*  
+*Elem*
 The element type.
 
-*Tr*  
+*Tr*
 Character traits.
 
-*left*  
+*left*
 An lvalue reference to a **basic_ostream** object.
 
-*right*  
+*right*
 An lvalue reference to a **basic_ostream** object.
 
 ### Remarks
@@ -195,4 +195,4 @@ The template function **swap** executes `left.swap(right)`.
 
 ## See also
 
-[\<ostream>](../standard-library/ostream.md)  
+[\<ostream>](../standard-library/ostream.md)

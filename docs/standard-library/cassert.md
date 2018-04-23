@@ -18,23 +18,23 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;cassert&gt;
-Includes the Standard C library header \<assert.h> and adds the associated names to the `std` namespace.  
-  
-## Syntax  
-  
-```  
-#include <cassert>  
-  
-```  
-  
-## Remarks  
- Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.  
-  
-## See Also  
- [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)   
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
+Includes the Standard C library header \<assert.h> and adds the associated names to the `std` namespace.
 
+## Syntax
 
+```cpp
+#include <cassert>
+
+```
+
+## Remarks
+
+Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+
+## See also
+
+[assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

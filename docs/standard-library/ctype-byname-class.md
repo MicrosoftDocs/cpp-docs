@@ -18,11 +18,12 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ctype_byname Class
-The derived template class describes an object that can serve as a ctype facet of a given locale, enabling the classification of characters and conversion of characters between case and native and locale specified character sets.  
-  
-## Syntax  
-  
-```
+
+The derived template class describes an object that can serve as a ctype facet of a given locale, enabling the classification of characters and conversion of characters between case and native and locale specified character sets.
+
+## Syntax
+
+```cpp
 template <class _Elem>
 class ctype_byname : public ctype<_Elem>
 {
@@ -39,18 +40,18 @@ protected:
     virtual __CLR_OR_THIS_CALL ~ctype_byname();
 
 };
-```  
-  
-## Remarks  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [ctype](../standard-library/ctype-class.md)\<CharType>( `_Refs`) or the equivalent for base class `ctype<char>`.  
-  
-## Requirements  
- **Header:** \<locale>  
-  
- **Namespace:** std  
-  
-## See Also  
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+```
 
+## Remarks
 
+Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [ctype](../standard-library/ctype-class.md)\<CharType>( `_Refs`) or the equivalent for base class `ctype<char>`.
 
+## Requirements
+
+**Header:** \<locale>
+
+**Namespace:** std
+
+## See also
+
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

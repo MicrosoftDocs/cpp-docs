@@ -12,22 +12,23 @@ caps.latest.revision: 11
 manager: "ghogen"
 ---
 # &lt;system_error&gt; typedefs
-||  
-|-|  
-|[generic_errno](#generic_errno)|  
-  
-##  <a name="generic_errno"></a>  generic_errno  
- A type that represents the enumeration that provides the symbolic names for all the error-code macros defined by Posix in `<errno.h>`.  
-  
-```
+
+||
+|-|
+|[generic_errno](#generic_errno)|
+
+## <a name="generic_errno"></a>  generic_errno
+
+A type that represents the enumeration that provides the symbolic names for all the error-code macros defined by Posix in `<errno.h>`.
+
+```cpp
 typedef errc generic_error;
-```  
-  
-### Remarks  
- The type is a synonym for [errc](../standard-library/system-error-enums.md#errc).  
-  
-## See Also  
- [<system_error>](../standard-library/system-error.md)
+```
 
+### Remarks
 
+The type is a synonym for [errc](../standard-library/system-error-enums.md#errc).
 
+## See also
+
+[<system_error>](../standard-library/system-error.md)<br/>

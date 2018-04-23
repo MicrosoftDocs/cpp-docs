@@ -18,18 +18,19 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;iosfwd&gt;
-Declares forward references to several template classes used throughout iostreams. All such template classes are defined in other standard headers. You include this header explicitly only when you need one of its declarations, but not its definition.  
-  
-## Syntax  
-  
-```  
-#include <iosfwd>  
-  
-```  
-  
-## Typedefs  
-  
+
+Declares forward references to several template classes used throughout iostreams. All such template classes are defined in other standard headers. You include this header explicitly only when you need one of its declarations, but not its definition.
+
+## Syntax
+
+```cpp
+#include <iosfwd>
+
 ```
+
+## Typedefs
+
+```cpp
 typedef T1 streamoff;
 typedef T2 streamsize;
 typedef fpos streampos;
@@ -64,11 +65,11 @@ typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 };
-```  
-  
-## Forward Declarations/Template Classes  
-  
 ```
+
+## Forward Declarations/Template Classes
+
+```cpp
 template <class _Statetype>
 class fpos;
 
@@ -128,13 +129,11 @@ class basic_ofstream;
 
 template <class Elem, class Tr = char_traits<Elem>>
 class basic_fstream;
-```  
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [iostream Programming](../standard-library/iostream-programming.md)   
- [iostreams Conventions](../standard-library/iostreams-conventions.md)
+```
 
+## See also
 
-
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[iostream Programming](../standard-library/iostream-programming.md)<br/>
+[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>

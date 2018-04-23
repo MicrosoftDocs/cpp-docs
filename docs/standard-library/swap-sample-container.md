@@ -18,19 +18,21 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # swap (&lt;sample container&gt;)
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Executes `left.`[swap](../standard-library/container-class-swap.md)`(right)`.  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Executes `left.`[swap](../standard-library/container-class-swap.md)`(right)`.
+
+## Syntax
+
+```cpp
+template <class Ty>
 void swap(
-    Container <Ty>& left,  
+    Container <Ty>& left,
     Container <Ty>& right);
-```  
-  
-## See Also  
- [\<sample container>](../standard-library/sample-container.md)
+```
+
+## See also
+
+[\<sample container>](../standard-library/sample-container.md)<br/>

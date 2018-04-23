@@ -18,66 +18,71 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_union Class
-Tests if type is a union.  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
-struct is_union;  
-```  
-  
-#### Parameters  
- `Ty`  
- The type to query.  
-  
-## Remarks  
- An instance of the type predicate holds true if the type `Ty` is a union type or a `cv-qualified` form of a union type, otherwise it holds false.  
-  
-## Example  
-  
-```cpp  
-// std__type_traits__is_union.cpp   
-// compile with: /EHsc   
-#include <type_traits>   
-#include <iostream>   
-  
-struct trivial   
-    {   
-    int val;   
-    };   
-  
-union ints   
-    {   
-    int in;   
-    long lo;   
-    };   
-  
-int main()   
-    {   
-    std::cout << "is_union<trivial> == " << std::boolalpha   
-        << std::is_union<trivial>::value << std::endl;   
-    std::cout << "is_union<int> == " << std::boolalpha   
-        << std::is_union<int>::value << std::endl;   
-    std::cout << "is_union<ints> == " << std::boolalpha   
-        << std::is_union<ints>::value << std::endl;   
-  
-    return (0);   
-    }  
-  
-```  
-  
-```Output  
-is_union<trivial> == false  
-is_union<int> == false  
-is_union<ints> == true  
-```  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)   
- [is_class Class](../standard-library/is-class-class.md)
+
+Tests if type is a union.
+
+## Syntax
+
+```cpp
+template <class Ty>
+struct is_union;
+```
+
+### Parameters
+
+`Ty`
+ The type to query.
+
+## Remarks
+
+An instance of the type predicate holds true if the type `Ty` is a union type or a `cv-qualified` form of a union type, otherwise it holds false.
+
+## Example
+
+```cpp
+// std__type_traits__is_union.cpp
+// compile with: /EHsc
+#include <type_traits>
+#include <iostream>
+
+struct trivial
+    {
+    int val;
+    };
+
+union ints
+    {
+    int in;
+    long lo;
+    };
+
+int main()
+    {
+    std::cout << "is_union<trivial> == " << std::boolalpha
+        << std::is_union<trivial>::value << std::endl;
+    std::cout << "is_union<int> == " << std::boolalpha
+        << std::is_union<int>::value << std::endl;
+    std::cout << "is_union<ints> == " << std::boolalpha
+        << std::is_union<ints>::value << std::endl;
+
+    return (0);
+    }
+
+```
+
+```Output
+is_union<trivial> == false
+is_union<int> == false
+is_union<ints> == true
+```
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>
+[is_class Class](../standard-library/is-class-class.md)<br/>
