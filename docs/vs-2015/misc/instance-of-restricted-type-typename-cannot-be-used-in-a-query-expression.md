@@ -26,5 +26,5 @@ Instances of restricted types, such as <xref:System.ArgIterator>, <xref:System.R
  **Error ID:** BC36598  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)   
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

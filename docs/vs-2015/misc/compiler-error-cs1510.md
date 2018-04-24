@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1510
 A ref or out argument must be an assignable variable  
   
- Only a variable can be passed as a [ref](../Topic/ref%20\(C%23%20Reference\).md) parameter in a method call. A `ref` value is like passing a pointer.  
+ Only a variable can be passed as a [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) parameter in a method call. A `ref` value is like passing a pointer.  
   
 ## Example  
  The following sample generates CS1510:  

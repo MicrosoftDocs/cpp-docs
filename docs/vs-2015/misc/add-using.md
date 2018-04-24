@@ -19,4 +19,4 @@ ms.author: "billchi"
 manager: "douge"
 ---
 # Add using
-This content has moved to [Visual C# IntelliSense](../Topic/Visual%20C%23%20IntelliSense.md).
+This content has moved to [Visual C# IntelliSense](http://msdn.microsoft.com/library/79ca304d-dc1e-4dc9-a2a6-7808df2e588e).

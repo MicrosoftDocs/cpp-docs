@@ -16,4 +16,4 @@ caps.latest.revision: 39
 manager: "douge"
 ---
 # Walkthrough: Deploying a VSPackage
-Starting with Visual Studio 2010, you should use VSIX technology to deploy your VSPackage. For more information about VSIX, see [Shipping Visual Studio Extensions](../Topic/Shipping%20Visual%20Studio%20Extensions.md).
+Starting with Visual Studio 2010, you should use VSIX technology to deploy your VSPackage. For more information about VSIX, see [Shipping Visual Studio Extensions](http://msdn.microsoft.com/library/13cd263d-25f7-488e-9c1a-cff908caedb6).

@@ -29,4 +29,4 @@ You attempted to write to a field that is declared `ReadOnly`.
 -   Do not attempt to write to this field.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)

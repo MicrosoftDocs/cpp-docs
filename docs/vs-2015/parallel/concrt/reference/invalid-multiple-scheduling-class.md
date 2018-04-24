@@ -66,8 +66,8 @@ invalid_multiple_scheduling() throw();
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
  [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
- [task_group::run Method](../Topic/task_group%20Class.md#task_group__run_method)   
- [task_group::wait Method](../Topic/task_group%20Class.md#task_group__wait_method)   
- [task_group::run_and_wait Method](../Topic/task_group%20Class.md#task_group__run_and_wait_method)   
+ [task_group Class](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)   
+ [task_group::run Method](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7#task_group__run_method)   
+ [task_group::wait Method](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7#task_group__wait_method)   
+ [task_group::run_and_wait Method](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7#task_group__run_and_wait_method)   
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)

@@ -29,5 +29,5 @@ manager: "douge"
 ## See Also  
  <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>   
  <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653)   
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

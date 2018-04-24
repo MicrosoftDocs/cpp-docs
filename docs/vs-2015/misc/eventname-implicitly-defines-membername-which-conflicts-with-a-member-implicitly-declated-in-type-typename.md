@@ -31,4 +31,4 @@ The name of a type member conflicts with the name of a member implicitly created
   
 ## See Also  
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

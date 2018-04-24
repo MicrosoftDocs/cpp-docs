@@ -34,4 +34,4 @@ manager: "wpickett"
 3.  If everything else is in order, add an `#If` directive to the beginning of the conditional compilation block.  
   
 ## See Also  
- [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)
+ [#If...Then...#Else Directives](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502)

@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Conflict between the default property and the &#39;DefaultMemberAttribute&#39; defined on &#39;|1&#39;
-A class, structure, or interface declares a default property with the [Default](../Topic/Default%20\(Visual%20Basic\).md) keyword but also applies the <xref:System.Reflection.DefaultMemberAttribute> to designate a different member as the default member.  
+A class, structure, or interface declares a default property with the [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af) keyword but also applies the <xref:System.Reflection.DefaultMemberAttribute> to designate a different member as the default member.  
   
  A type can have at most one default member. When you declare a default property, Visual Basic automatically applies the <xref:System.Reflection.DefaultMemberAttribute> to the class, structure, or interface designating that property.  
   
@@ -35,6 +35,6 @@ A class, structure, or interface declares a default property with the [Default](
   
 ## See Also  
  <xref:System.Reflection.DefaultMemberAttribute>   
- [Default](../Topic/Default%20\(Visual%20Basic\).md)   
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
- [How to: Declare and Call a Default Property in Visual Basic](../Topic/How%20to:%20Declare%20and%20Call%20a%20Default%20Property%20in%20Visual%20Basic.md)
+ [How to: Declare and Call a Default Property in Visual Basic](http://msdn.microsoft.com/library/68b4026e-09ef-4613-808e-f6287494ff63)

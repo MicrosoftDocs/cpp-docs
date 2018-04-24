@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS2019
 Invalid target type for /target: must specify 'exe', 'winexe', 'library', or 'module'  
   
- The [/target](../Topic/-target%20\(C%23%20Compiler%20Options\).md) compiler option was used, but an invalid parameter was passed. To resolve this error, recompile the program using the form of the **/target** option that is appropriate to your output file.  
+ The [/target](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f) compiler option was used, but an invalid parameter was passed. To resolve this error, recompile the program using the form of the **/target** option that is appropriate to your output file.  
   
  The following sample generates CS2017:  
   

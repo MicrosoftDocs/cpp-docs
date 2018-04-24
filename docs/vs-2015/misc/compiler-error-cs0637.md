@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0637
 The FieldOffset attribute is not allowed on static or const fields  
   
- The [FieldOffset](frlrfsystemruntimeinteropservicesfieldoffsetattributeclasstopic) attribute cannot be used on fields marked with [static](../Topic/static%20\(C%23%20Reference\).md) or [const](../Topic/const%20\(C%23%20Reference\).md).  
+ The [FieldOffset](frlrfsystemruntimeinteropservicesfieldoffsetattributeclasstopic) attribute cannot be used on fields marked with [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf) or [const](http://msdn.microsoft.com/library/79eb447c-117b-4418-933f-97c50aa472db).  
   
  The following sample generates CS0637:  
   

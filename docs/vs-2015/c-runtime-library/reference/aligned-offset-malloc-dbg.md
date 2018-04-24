@@ -89,9 +89,9 @@ void * _aligned_offset_malloc_dbg(
   
  This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_malloc` validates its parameters. If `alignment` is not a power of 2 or if `offset` is greater than or equal to `size` and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.  
   
- For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
- For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](../Topic/CRT%20Debug%20Heap%20Details.md#BKMK_Types_of_blocks_on_the_debug_heap).  
+ For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4#BKMK_Types_of_blocks_on_the_debug_heap).  
   
 ## Requirements  
   
@@ -105,7 +105,7 @@ void * _aligned_offset_malloc_dbg(
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

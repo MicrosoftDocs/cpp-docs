@@ -16,4 +16,4 @@ caps.latest.revision: 11
 manager: "douge"
 ---
 # Deploying an Isolated Shell-Based Application on a 64-Bit Operating System
-This content has been removed. For information on deploying an isolated shell application, see [Installing an Isolated Shell Application](../Topic/Installing%20an%20Isolated%20Shell%20Application.md).
+This content has been removed. For information on deploying an isolated shell application, see [Installing an Isolated Shell Application](http://msdn.microsoft.com/library/33416226-9083-41b5-b153-10d2bf35c012).

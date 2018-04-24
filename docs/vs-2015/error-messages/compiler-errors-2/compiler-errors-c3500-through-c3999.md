@@ -51,7 +51,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3533](../../error-messages/compiler-errors-2/compiler-error-c3533.md)  
   
- [Compiler Error C3534](../Topic/Compiler%20Error%20C3534.md)  
+ [Compiler Error C3534](http://msdn.microsoft.com/library/41d4328b-8ce3-4a11-bb0c-c96f6af03b01)  
   
  [Compiler Error C3535](../../error-messages/compiler-errors-2/compiler-error-c3535.md)  
   
@@ -79,7 +79,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3612](../../error-messages/compiler-errors-2/compiler-error-c3612.md)  
   
- [Compiler Error C3616](../Topic/Compiler%20Error%20C3616.md)  
+ [Compiler Error C3616](http://msdn.microsoft.com/library/85dcc5e3-5648-4f54-9c09-8e26c8fc61d0)  
   
  [Compiler Error C3618](../../error-messages/compiler-errors-2/compiler-error-c3618.md)  
   
@@ -143,7 +143,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3657](../../error-messages/compiler-errors-2/compiler-error-c3657.md)  
   
- [Compiler Error C3658](../Topic/Compiler%20Error%20C3658.md)  
+ [Compiler Error C3658](http://msdn.microsoft.com/library/2a06872a-81a3-4407-8e99-6b48aa13ae86)  
   
  [Compiler Error C3661](../../error-messages/compiler-errors-2/compiler-error-c3661.md)  
   
@@ -221,7 +221,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3728](../../error-messages/compiler-errors-2/compiler-error-c3728.md)  
   
- [Compiler Error C3730](../Topic/Compiler%20Error%20C3730.md)  
+ [Compiler Error C3730](http://msdn.microsoft.com/library/25b9b93d-179c-4ed8-9dbe-a0bda995db00)  
   
  [Compiler Error C3731](../../error-messages/compiler-errors-2/compiler-error-c3731.md)  
   
@@ -289,7 +289,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3800](../../error-messages/compiler-errors-2/compiler-error-c3800.md)  
   
- [Compiler Error C3802](../Topic/Compiler%20Error%20C3802.md)  
+ [Compiler Error C3802](http://msdn.microsoft.com/library/42504e06-87be-4763-9b5c-2af8f7360ed4)  
   
  [Compiler Error C3803](../../error-messages/compiler-errors-2/compiler-error-c3803.md)  
   
@@ -303,13 +303,13 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3809](../../error-messages/compiler-errors-2/compiler-error-c3809.md)  
   
- [Compiler Error C3811](../Topic/Compiler%20Error%20C3811.md)  
+ [Compiler Error C3811](http://msdn.microsoft.com/library/fbb98c21-f8d0-4910-91fa-570508c8f658)  
   
  [Compiler Error C3812](../../error-messages/compiler-errors-2/compiler-error-c3812.md)  
   
  [Compiler Error C3813](../../error-messages/compiler-errors-2/compiler-error-c3813.md)  
   
- [Compiler Error C3814](../Topic/Compiler%20Error%20C3814.md)  
+ [Compiler Error C3814](http://msdn.microsoft.com/library/bac2a329-5cdd-4092-bf75-233ecbad056b)  
   
  [Compiler Error C3815](../../error-messages/compiler-errors-2/compiler-error-c3815.md)  
   
@@ -319,19 +319,19 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3818](../../error-messages/compiler-errors-2/compiler-error-c3818.md)  
   
- [Compiler Error C3819](../Topic/Compiler%20Error%20C3819.md)  
+ [Compiler Error C3819](http://msdn.microsoft.com/library/fc279aa6-bcc1-4f99-88e5-cf9a2a1913dd)  
   
  [Compiler Error C3821](../../error-messages/compiler-errors-2/compiler-error-c3821.md)  
   
- [Compiler Error C3822](../Topic/Compiler%20Error%20C3822.md)  
+ [Compiler Error C3822](http://msdn.microsoft.com/library/e4346fed-d640-4126-a14c-180919a48fdd)  
   
- [Compiler Error C3823](../Topic/Compiler%20Error%20C3823.md)  
+ [Compiler Error C3823](http://msdn.microsoft.com/library/3df1dc87-fd30-41e5-9c29-aaf8f8f01898)  
   
  [Compiler Error C3824](../../error-messages/compiler-errors-2/compiler-error-c3824.md)  
   
  [Compiler Error C3825](../../error-messages/compiler-errors-2/compiler-error-c3825.md)  
   
- [Compiler Error C3826](../Topic/Compiler%20Error%20C3826.md)  
+ [Compiler Error C3826](http://msdn.microsoft.com/library/243a32f1-c999-46d9-95a1-45cd6e993dfe)  
   
  [Compiler Error C3828](../../error-messages/compiler-errors-2/compiler-error-c3828.md)  
   
@@ -351,7 +351,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3839](../../error-messages/compiler-errors-2/compiler-error-c3839.md)  
   
- [Compiler Error C3840](../Topic/Compiler%20Error%20C3840.md)  
+ [Compiler Error C3840](http://msdn.microsoft.com/library/dfde76dd-a920-4228-9125-aa081a0de738)  
   
  [Compiler Error C3842](../../error-messages/compiler-errors-2/compiler-error-c3842.md)  
   
@@ -463,9 +463,9 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3920](../../error-messages/compiler-errors-2/compiler-error-c3920.md)  
   
- [Compiler Error C3921](../Topic/Compiler%20Error%20C3921.md)  
+ [Compiler Error C3921](http://msdn.microsoft.com/library/2424fa74-2833-4cc7-867d-c6ca685b75a9)  
   
  [Compiler Error C3923](../../error-messages/compiler-errors-2/compiler-error-c3923.md)  
   
- [Compiler Error C3996](../Topic/Compiler%20Error%20C3996.md)
+ [Compiler Error C3996](http://msdn.microsoft.com/library/3ae574ed-aba2-4054-8a44-b82a187b5d9e)
 

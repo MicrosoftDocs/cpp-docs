@@ -26,4 +26,4 @@ MRU lists can contain up to twenty-four items. This error generally occurs when 
 1.  Enter a number between one and twenty-four in the box.  
   
 ## See Also  
- [General, Environment, Options Dialog Box](../Topic/General,%20Environment,%20Options%20Dialog%20Box.md)
+ [General, Environment, Options Dialog Box](http://msdn.microsoft.com/library/90fc2e6f-572f-4384-96d8-5678299ce58e)

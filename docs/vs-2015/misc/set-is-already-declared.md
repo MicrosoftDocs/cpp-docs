@@ -30,4 +30,4 @@ A `Set` statement appears more than once in a code block. The `Set` statement de
 -   Remove the redundant `Set` statement.  
   
 ## See Also  
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)
+ [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd)

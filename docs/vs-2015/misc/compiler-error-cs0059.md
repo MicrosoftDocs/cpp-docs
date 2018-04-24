@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0059
 Inconsistent accessibility: parameter type 'type' is less accessible than delegate 'delegate'  
   
- The return type and each of the types referenced in the formal parameter list of a method must be at least as accessible as the method itself. For more information, see [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+ The return type and each of the types referenced in the formal parameter list of a method must be at least as accessible as the method itself. For more information, see [Access Modifiers](http://msdn.microsoft.com/library/6e81ee82-224f-4a12-9baf-a0dca2656c5b).  
   
 ## Example  
  The following sample generates CS0059:  

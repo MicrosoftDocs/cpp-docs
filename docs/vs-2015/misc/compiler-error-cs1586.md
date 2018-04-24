@@ -43,4 +43,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md)
+ [Arrays](http://msdn.microsoft.com/library/bb79bdde-e570-4c30-adb0-1dd5759ae041)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1017
 Catch clauses cannot follow the general catch clause of a try statement  
   
- A `catch` block that does not take any parameters must be the last in a series of `catch` blocks. For more information on exceptions, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md).  
+ A `catch` block that does not take any parameters must be the last in a series of `catch` blocks. For more information on exceptions, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c).  
   
 ## Example  
  The following sample generates CS1017:  

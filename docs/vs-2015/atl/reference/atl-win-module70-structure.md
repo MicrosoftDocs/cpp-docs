@@ -57,7 +57,7 @@ struct _ATL_WIN_MODULE70 {
  Used to track window class registrations so that they can be properly unregistered at termination. Used internally by ATL.  
   
 ## Remarks  
- [_ATL_WIN_MODULE](../Topic/_ATL_WIN_MODULE.md) is defined as a typedef of `_ATL_WIN_MODULE70`.  
+ [_ATL_WIN_MODULE](http://msdn.microsoft.com/library/fcfb5891-d0fc-4d9b-9e69-9e3cbd63f958) is defined as a typedef of `_ATL_WIN_MODULE70`.  
   
 ## Requirements  
  **Header:** atlbase.h  

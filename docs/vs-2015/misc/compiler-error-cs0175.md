@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0175
 Use of keyword 'base' is not valid in this context  
   
- The [base](../Topic/base%20\(C%23%20Reference\).md) keyword must be used to specify a particular member of the base class. For more information, see [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md).  
+ The [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5) keyword must be used to specify a particular member of the base class. For more information, see [Constructors](http://msdn.microsoft.com/library/df2e2e9d-7998-418b-8e7d-890c17ff6c95).  
   
  The following sample generates CS0175:  
   

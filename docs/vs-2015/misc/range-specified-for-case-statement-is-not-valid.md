@@ -32,6 +32,6 @@ An invalid range has been specified for a `Case` statement.
 -   Modify the range to include all values, or use a `Case Else` statement to catch an undefined value.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)   
- [Decision Structures](../Topic/Decision%20Structures%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)
+ [Select...Case Statement](http://msdn.microsoft.com/library/68877b65-5419-4bf0-a465-20cd0e4c7d44)   
+ [Decision Structures](http://msdn.microsoft.com/library/2e2e0895-4483-442a-b17c-26aead751ec2)   
+ [Widening and Narrowing Conversions](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)

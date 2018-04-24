@@ -39,4 +39,4 @@ The initializer list in an anonymous type declaration cannot be empty.
     ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Anonymous Types](http://msdn.microsoft.com/library/7b87532c-4b3e-4398-8503-6ea9d67574a4)

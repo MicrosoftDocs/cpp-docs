@@ -23,12 +23,12 @@ manager: "wpickett"
 # Type &#39;&lt;typename&gt;&#39; and partial type &#39;&lt;typename&gt;&#39; declared in &#39;&lt;filename&gt;&#39; conflict in container &#39;&lt;containername&gt;&#39;, but are being merged because one of them is declared partial
 A class or structure is appears in multiple definitions in the same container type, and more than one definition is not marked `Partial`.  
   
- You must use the [Partial](../Topic/Partial%20\(Visual%20Basic\).md) keyword on at least one of the multiple definitions of a class or structure, but it is recommended that you use it on all the partial definitions.  
+ You must use the [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) keyword on at least one of the multiple definitions of a class or structure, but it is recommended that you use it on all the partial definitions.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40047  
   
 ### To correct this error  
   
--   Use the [Partial](../Topic/Partial%20\(Visual%20Basic\).md) keyword on every partial definition of the class or structure.
+-   Use the [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) keyword on every partial definition of the class or structure.

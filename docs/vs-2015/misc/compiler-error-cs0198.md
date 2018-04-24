@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0198
 Fields of static readonly field 'name' cannot be assigned to (except in a static constructor or a variable initializer)  
   
- A [readonly](../Topic/readonly%20\(C%23%20Reference\).md) variable must have the same [static](../Topic/static%20\(C%23%20Reference\).md) usage as the constructor in which you want to initialize it. For more information, see [Static Constructors](../Topic/Static%20Constructors%20\(C%23%20Programming%20Guide\).md).  
+ A [readonly](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) variable must have the same [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf) usage as the constructor in which you want to initialize it. For more information, see [Static Constructors](http://msdn.microsoft.com/library/151ec95e-3c4d-4ed7-885d-95b7a3be2e7d).  
   
  The following sample generates CS0198:  
   

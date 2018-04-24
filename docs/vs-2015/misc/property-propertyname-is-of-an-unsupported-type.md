@@ -30,4 +30,4 @@ A property in a referenced assembly contains a type that cannot be represented.
 -   Specify a type that can be used with your application.  
   
 ## See Also  
- [Data Types](../Topic/Data%20Types%20in%20Visual%20Basic.md)
+ [Data Types](http://msdn.microsoft.com/library/5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2)

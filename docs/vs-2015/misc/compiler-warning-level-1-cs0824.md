@@ -48,5 +48,5 @@ public class C
 ```  
   
 ## See Also  
- [extern](../Topic/extern%20\(C%23%20Reference\).md)   
- [#pragma warning](../Topic/%23pragma%20warning%20\(C%23%20Reference\).md)
+ [extern](http://msdn.microsoft.com/library/9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7)   
+ [#pragma warning](http://msdn.microsoft.com/library/723493d5-9753-4cec-babb-54e2b8eb36b6)

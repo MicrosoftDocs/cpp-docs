@@ -31,7 +31,7 @@ Non-invocable member 'name' cannot be used like a method.
 1.  Remove the parentheses from the expression.  
   
 ## Example  
- The following code generates CS1955 because the code is trying to invoke a field and a property by using the method call operator [()](../Topic/\(\)%20Operator%20\(C%23%20Reference\).md). You cannot call a field or property, but you can access the value it stores by using the member access operator ( [.](../Topic/.%20Operator%20\(C%23%20Reference\).md) ).  
+ The following code generates CS1955 because the code is trying to invoke a field and a property by using the method call operator [()](http://msdn.microsoft.com/library/846e1f94-8a8c-42fc-a42c-fbd38e70d8cc). You cannot call a field or property, but you can access the value it stores by using the member access operator ( [.](http://msdn.microsoft.com/library/a1f54b52-b686-4ae5-a48e-a2a9ebd0eb7b) ).  
   
 ```  
 // cs1955.cs  

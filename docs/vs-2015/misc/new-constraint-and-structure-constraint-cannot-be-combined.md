@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &#39;New&#39; constraint and &#39;Structure&#39; constraint cannot be combined
-A constraint list includes both the [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) constraint and the [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0) constraint.  
+A constraint list includes both the [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0) constraint and the [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0) constraint.  
   
  A constraint list on a type parameter can specify that the type argument passed to that type parameter must be a value type (with the `Structure` constraint) or must be a reference type (with the [Class (Visual Basic)](http://msdn.microsoft.com/en-us/0777c6e6-46bc-451b-ad70-57b49d4ef4f7) constraint). You cannot specify both constraints on the same type parameter, and you cannot specify either one more than once.  
   
@@ -38,5 +38,5 @@ A constraint list includes both the [New Operator](../Topic/New%20Operator%20\(V
 3.  If you want the type argument to be a reference type, remove the `Structure` keyword from the constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Value Types and Reference Types](http://msdn.microsoft.com/library/fc82ce15-5a40-4c5c-a1e1-a556830e7391)

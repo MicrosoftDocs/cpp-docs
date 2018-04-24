@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS1590
 Invalid XML include element -- Missing file attribute  
   
- A path or doc attribute, passed to the [\<include>](../Topic/%3Cinclude%3E%20\(C%23%20Programming%20Guide\).md) tag, was missing or incomplete.  
+ A path or doc attribute, passed to the [\<include>](http://msdn.microsoft.com/library/a8a70302-6196-4643-bd09-ef33f411f18f) tag, was missing or incomplete.  
   
  The following sample generates CS1590:  
   

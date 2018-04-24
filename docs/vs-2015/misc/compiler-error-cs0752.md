@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0752
 A partial method cannot have out parameters  
   
- A partial method cannot have an [out](../Topic/out%20\(C%23%20Reference\).md) parameter. Out parameters are not allowed because if the partial method is removed by the compiler then there is no guarantee that the out parameter is ever assigned.  
+ A partial method cannot have an [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameter. Out parameters are not allowed because if the partial method is removed by the compiler then there is no guarantee that the out parameter is ever assigned.  
   
 ### To correct this error  
   
@@ -49,4 +49,4 @@ public partial class C
 ```  
   
 ## See Also  
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)

@@ -35,4 +35,4 @@ The version of the .NET Compact Framework you are working with does not support 
   
 ## See Also  
  [NotInBuild:Objects in Visual Basic](http://msdn.microsoft.com/en-us/85bd757a-a19e-45e1-af89-d68765f5ee3c)   
- [Special Characters in Code](../Topic/Special%20Characters%20in%20Code%20\(Visual%20Basic\).md)
+ [Special Characters in Code](http://msdn.microsoft.com/library/310dce0c-45b5-4e0d-83e9-32df258d2a3e)

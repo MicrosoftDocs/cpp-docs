@@ -30,4 +30,4 @@ Attributes must be public.
 1.  Add the `Public` modifier to the attribute class.  
   
 ## See Also  
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

@@ -37,5 +37,5 @@ Only `Sub` procedures can be declared to be partial methods. For example, the fo
 -   Do not use a partial method in this case.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)   
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)   
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)

@@ -30,5 +30,5 @@ You attempted to use a modifier, such as `Shared`, on a delegate declaration. De
 1.  Remove the modifier.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [How to: Invoke a Delegate Method](../Topic/How%20to:%20Invoke%20a%20Delegate%20Method%20\(Visual%20Basic\).md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [How to: Invoke a Delegate Method](http://msdn.microsoft.com/library/b56866ae-abf9-4a5a-a855-486359455e9c)

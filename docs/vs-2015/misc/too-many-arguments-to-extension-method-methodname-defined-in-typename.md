@@ -30,5 +30,5 @@ The number of arguments supplied in a call to an extension method exceeds the nu
 -   Consult the definition of the extension method, and remove the extra arguments from the call.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)   
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](http://msdn.microsoft.com/library/ff275aff-aa13-40df-bd4c-63486db8c1e9)   
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)

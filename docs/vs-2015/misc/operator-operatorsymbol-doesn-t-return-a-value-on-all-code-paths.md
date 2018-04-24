@@ -25,11 +25,11 @@ Operator '\<operatorsymbol>' doesn't return a value on all code paths. A null re
   
  An operator procedure has at least one possible path through its code that does not return a value.  
   
- You can return a value from an operator procedure only by including it in a [Return Statement](../Topic/Return%20Statement%20\(Visual%20Basic\).md).  
+ You can return a value from an operator procedure only by including it in a [Return Statement](http://msdn.microsoft.com/library/ac86e7f0-5a67-42c3-9834-0e0381efa3ec).  
   
- If control passes to the `End Operator` statement, the operator procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md).  
+ If control passes to the `End Operator` statement, the operator procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9).  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42106  
   
@@ -38,5 +38,5 @@ Operator '\<operatorsymbol>' doesn't return a value on all code paths. A null re
 -   Check your control flow logic and make sure every possible path ends with a `Return` statement. In particular, the last statement before `End Operator` should be a `Return` statement.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0538
 'name' in explicit interface declaration is not an interface  
   
- An attempt was made to explicitly declare an [interface](../Topic/interface%20\(C%23%20Reference\).md), but an interface was not specified.  
+ An attempt was made to explicitly declare an [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba), but an interface was not specified.  
   
  The following sample generates CS0538:  
   

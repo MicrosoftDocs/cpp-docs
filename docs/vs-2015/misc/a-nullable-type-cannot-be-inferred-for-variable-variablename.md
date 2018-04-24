@@ -41,4 +41,4 @@ Dim intVar? = 10
 -   Remove the nullable designation.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)
+ [Nullable Value Types](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

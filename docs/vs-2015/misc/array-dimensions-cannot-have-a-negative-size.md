@@ -30,4 +30,4 @@ One or more of the array bounds specified is a negative number. You can specify 
 -   Replace the negative array bound with a positive number.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

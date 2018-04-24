@@ -30,6 +30,6 @@ manager: "wpickett"
 -   Remove the `MustOverride` modifier, or declare the method in a base class and inherit and override that class.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)   
+ [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)   
+ [NotOverridable](http://msdn.microsoft.com/library/66ec6984-f5f5-4857-b362-6a3907aaf9e0)

@@ -30,5 +30,5 @@ Required arguments must be supplied when the procedure is called, and they do no
 -   Declare the argument to be `Optional` or remove the default value.  
   
 ## See Also  
- [Optional Parameters](../Topic/Optional%20Parameters%20\(Visual%20Basic\).md)   
- [Optional](../Topic/Optional%20\(Visual%20Basic\).md)
+ [Optional Parameters](http://msdn.microsoft.com/library/398d2845-1069-4e94-b934-a73b545c8b87)   
+ [Optional](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)

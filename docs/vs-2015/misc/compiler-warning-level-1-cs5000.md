@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS5000
 Unknown compiler option '/option'  
   
- An invalid [compiler option](../Topic/C%23%20Compiler%20Options.md) was specified.
+ An invalid [compiler option](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44) was specified.

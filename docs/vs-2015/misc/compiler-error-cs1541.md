@@ -24,6 +24,6 @@ manager: "wpickett"
 # Compiler Error CS1541
 Invalid reference option: 'symbol' — cannot reference directories  
   
- The compiler detected an attempt to specify a directory rather than a specific file. For example, when you use the [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md) compiler option, you must specify a file; it is not possible to specify a directory.  
+ The compiler detected an attempt to specify a directory rather than a specific file. For example, when you use the [/reference](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4) compiler option, you must specify a file; it is not possible to specify a directory.  
   
  For example, passing `/reference:c:\` to the compiler would generate CS1541.

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 2) CS1572
 XML comment on 'construct' has a param tag for 'parameter', but there is no parameter by that name  
   
- When using the [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) compiler option, a comment was specified for a parameter that does not exist for the method. Change the value passed to the name attribute or remove one of the comment lines.  
+ When using the [/doc](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a) compiler option, a comment was specified for a parameter that does not exist for the method. Change the value passed to the name attribute or remove one of the comment lines.  
   
  The following sample generates CS1572:  
   

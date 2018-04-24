@@ -29,11 +29,11 @@ manager: "wpickett"
   
 ### To correct this error  
   
--   Explicitly convert collection objects by using one of the type conversion keywords. The [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md) and [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md) keywords throw a run-time exception if the conversion fails. The [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md) keyword returns [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md) if the conversion fails.  
+-   Explicitly convert collection objects by using one of the type conversion keywords. The [CType Function](http://msdn.microsoft.com/library/dd4b29e7-6fa1-428c-877e-69955420bb72) and [DirectCast Operator](http://msdn.microsoft.com/library/63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8) keywords throw a run-time exception if the conversion fails. The [TryCast Operator](http://msdn.microsoft.com/library/d1ef5d47-fef4-491e-b014-1d910628f65c) keyword returns [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f) if the conversion fails.  
   
 ## See Also  
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)   
- [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md)   
- [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md)   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [CType Function](http://msdn.microsoft.com/library/dd4b29e7-6fa1-428c-877e-69955420bb72)   
+ [DirectCast Operator](http://msdn.microsoft.com/library/63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8)   
+ [TryCast Operator](http://msdn.microsoft.com/library/d1ef5d47-fef4-491e-b014-1d910628f65c)   
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)   
  [NIB Collections in Visual Basic](http://msdn.microsoft.com/en-us/8b2b7845-2251-4573-8dd3-c9f9c0a66a21)

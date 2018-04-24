@@ -43,5 +43,5 @@ When you run Setup for Visual C++ .NET, the following database components are in
  If you are redistributing data access applications, you should also have the MDAC 2.7 redistribution program. The MDAC 2.7 SDK is designed for use with the MDAC 2.7 redistribution program (Mdac_typ.exe) included in the MDAC directory on the Visual Studio .NET Prerequisites CD-ROM. You can also download Mdac_typ.exe from the MDAC 2.7 SDK download link previously listed. For more information about redistributing components, see [Redistributing Controls](../data/ado-rdo/redistributing-controls.md).  
   
 ## See Also  
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)
+ [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 

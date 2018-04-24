@@ -30,10 +30,10 @@ An <xref:System.Deployment.Application.InvalidDeploymentException> exception is 
  An application manifest is an XML file that describes and identifies the shared and private side-by-side assemblies that an application should bind to at run time. These should be the same assembly versions that were used to test the application. Application manifests may also describe metadata for files that are private to the application.  
   
  **Use the ClickOnce feature to deploy the application.**  
- Use ClickOnce to publish Windows applications to a Web server or network file share for simplified installation. For more information, see [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md).  
+ Use ClickOnce to publish Windows applications to a Web server or network file share for simplified installation. For more information, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a).  
   
 ## See Also  
  <xref:System.Deployment.Application.InvalidDeploymentException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Troubleshooting ClickOnce Deployments](../Topic/Troubleshooting%20ClickOnce%20Deployments.md)   
- [ClickOnce Deployment for Windows Forms](../Topic/ClickOnce%20Deployment%20for%20Windows%20Forms.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32)   
+ [ClickOnce Deployment for Windows Forms](http://msdn.microsoft.com/library/1451fce9-1965-4a03-b4d3-831b5fe4ad66)

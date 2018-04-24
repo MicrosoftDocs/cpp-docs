@@ -42,7 +42,7 @@ To add commands to a menu
 3.  In the new item box, type a name for the new menu command.  
   
     > [!NOTE]
-    >  The text you type appears in both the Menu editor and in the **Caption** box in the [Properties Window](../Topic/Properties%20Window.md). You can edit the properties for your new menu in either location.  
+    >  The text you type appears in both the Menu editor and in the **Caption** box in the [Properties Window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca). You can edit the properties for your new menu in either location.  
   
     > [!TIP]
     >  You can define a mnemonic key (hot key) that allows the user to select the menu command. Type an ampersand (&) in front of a letter to specify it as the mnemonic. The user can select the menu command by typing that letter.  
@@ -60,7 +60,7 @@ To add commands to a menu
   
      The new item box is selected so you can create additional menu commands.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  **Requirements**  
   

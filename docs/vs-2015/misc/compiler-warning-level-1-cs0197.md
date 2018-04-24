@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS0197
 Passing 'argument' as ref or out or taking its address may cause a runtime exception because it is a field of a marshal-by-reference class  
   
- Any class that derives, directly or indirectly, from <xref:System.MarshalByRefObject> is a marshal-by-reference class. Such a class can be marshaled by reference across process and machine boundaries. Thus, instances of this class could be proxies to remote objects. You cannot pass a field of a proxy object as [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md). So, you cannot pass fields of such a class as `ref` or `out`, unless the instance is [this](../Topic/this%20\(C%23%20Reference\).md), which can not be a proxy object.  
+ Any class that derives, directly or indirectly, from <xref:System.MarshalByRefObject> is a marshal-by-reference class. Such a class can be marshaled by reference across process and machine boundaries. Thus, instances of this class could be proxies to remote objects. You cannot pass a field of a proxy object as [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8). So, you cannot pass fields of such a class as `ref` or `out`, unless the instance is [this](http://msdn.microsoft.com/library/d4f827fe-4710-410b-89b8-867dad44b8a3), which can not be a proxy object.  
   
 ## Example  
  The following sample generates CS0197.  

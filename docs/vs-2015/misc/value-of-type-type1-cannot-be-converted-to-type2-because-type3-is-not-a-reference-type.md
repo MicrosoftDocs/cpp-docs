@@ -30,5 +30,5 @@ A statement attempts to convert an array type to another array type where the da
 -   Check the data types of the elements of both arrays to determine the source of the error.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)   
- [Array Conversions](../Topic/Array%20Conversions%20\(Visual%20Basic\).md)
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)   
+ [Array Conversions](http://msdn.microsoft.com/library/fceff7d2-a1b7-44c7-b9aa-8bd831d8a444)

@@ -30,4 +30,4 @@ An empty enumeration occurs. At least one member must be declared between the `E
 1.  Add a member declaration to the enumeration.  
   
 ## See Also  
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Enum Statement](http://msdn.microsoft.com/library/a45e51f1-65ff-48e1-bf32-79130f137377)

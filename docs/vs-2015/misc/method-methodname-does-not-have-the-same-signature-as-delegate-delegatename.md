@@ -30,4 +30,4 @@ There is a mismatch between the signatures of the method and delegate you are at
 -   Check the signatures to find the mismatch, and correct it.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)

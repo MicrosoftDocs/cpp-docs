@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1010
 Newline in constant  
   
- A [string](../Topic/string%20\(C%23%20Reference\).md) was not properly delimited.  
+ A [string](http://msdn.microsoft.com/library/3037e558-fb22-494d-bca1-a15ade11b11a) was not properly delimited.  
   
  The following sample generates CS1010:  
   

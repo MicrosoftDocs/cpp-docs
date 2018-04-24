@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0247
 Cannot use a negative size with stackalloc  
   
- A negative number was passed to a [stackalloc](../Topic/stackalloc%20\(C%23%20Reference\).md) statement.  
+ A negative number was passed to a [stackalloc](http://msdn.microsoft.com/library/adc04c28-3ed2-4326-807a-7545df92b852) statement.  
   
  The following sample generates CS0247:  
   

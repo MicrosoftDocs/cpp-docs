@@ -31,4 +31,4 @@ This error generally occurs when the item is corrupted or the machine has run ou
   
 ## See Also  
  [How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)   
- [Toolbox](../Topic/Toolbox.md)
+ [Toolbox](http://msdn.microsoft.com/library/b754dad3-1f32-464f-8b9f-065e17e0bc22)

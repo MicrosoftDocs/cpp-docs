@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0522
 'constructor' : structs cannot call base class constructors  
   
- A [struct](../Topic/struct%20\(C%23%20Reference\).md) cannot call a base class constructor; remove the call to the base class constructor.  
+ A [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) cannot call a base class constructor; remove the call to the base class constructor.  
   
  The following sample generates CS0522:  
   

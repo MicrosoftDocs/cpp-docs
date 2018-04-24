@@ -30,4 +30,4 @@ The `GoTo` statement performs branching and is not permitted in a debugging cont
 -   Do not issue a `GoTo` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](../Topic/Immediate%20Window.md)
+ [Immediate Window](http://msdn.microsoft.com/library/d33e7937-73f3-4c69-9df0-777a8713c6f2)

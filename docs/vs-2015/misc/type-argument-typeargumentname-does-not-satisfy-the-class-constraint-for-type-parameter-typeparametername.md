@@ -38,6 +38,6 @@ A type argument supplied to a generic type does not satisfy the reference type c
 -   Select a type argument of any reference type.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)   
- [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Value Types and Reference Types](http://msdn.microsoft.com/library/fc82ce15-5a40-4c5c-a1e1-a556830e7391)   
+ [How to: Use a Generic Class](http://msdn.microsoft.com/library/242dd2a6-86c4-4ce7-83f2-f2661803f752)

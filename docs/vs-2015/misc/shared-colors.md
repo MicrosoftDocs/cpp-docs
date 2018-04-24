@@ -19,7 +19,7 @@ Insert introduction here.
 ## Shared colors  
  When you are designing UI that uses common Visual Studio shell elements, or you would like your interface element to be consistent with similar features, use existing token names in package definition files to choose and assign colors. This ensures that your UI stays consistent with the overall Visual Studio environment and that it updates automatically when themes are added or updated.  
   
- This article describes common UI elements and the token names that they use, which you can reference when building similar UI. For specific information about how to access these color tokens, see [The VSColor Service](../Topic/Colors%20and%20Styling%20for%20Visual%20Studio.md#BKMK_TheVSColorService).  
+ This article describes common UI elements and the token names that they use, which you can reference when building similar UI. For specific information about how to access these color tokens, see [The VSColor Service](http://msdn.microsoft.com/library/0e384ea1-4d9e-4307-8884-6e183900732c).  
   
  Make sure to use token names correctly:  
   
@@ -1415,7 +1415,7 @@ Insert introduction here.
 |Selected (inactive)|Border|None|  
   
 ### Manifest Designer  
- The Manifest Designer was designed as a way to make it easier to edit the manifest file in Windows 8 and Windows Phone 8 projects. While there is no shared framework available for consumption, it might be appropriate for you to match the design layout and colors of the orientation/navigation tabs and overall structure. For more information about layout details, see [Layout for Visual Studio](../Topic/Layout%20for%20Visual%20Studio.md).  
+ The Manifest Designer was designed as a way to make it easier to edit the manifest file in Windows 8 and Windows Phone 8 projects. While there is no shared framework available for consumption, it might be appropriate for you to match the design layout and colors of the orientation/navigation tabs and overall structure. For more information about layout details, see [Layout for Visual Studio](http://msdn.microsoft.com/library/c19e3022-047c-43b6-a046-a82717efed4f).  
   
  ![Manifest Designer redline](../misc/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")  
   

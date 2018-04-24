@@ -23,7 +23,7 @@ manager: "wpickett"
 # Type characters are not allowed on Imports aliases
 An import alias in an `Imports` statement contains at least one identifier type character.  
   
- An import alias must be a valid Visual Basic name. The allowed characters do not include any of the identifier type characters (`%`, `&`, `@`, `!`, `#`, and `$`). See [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md).  
+ An import alias must be a valid Visual Basic name. The allowed characters do not include any of the identifier type characters (`%`, `&`, `@`, `!`, `#`, and `$`). See [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
  **Error ID:** BC31398  
   
@@ -32,7 +32,7 @@ An import alias in an `Imports` statement contains at least one identifier type 
 -   Remove the type identifier character or characters from the import alias.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)   
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)   
+ [Type Characters](http://msdn.microsoft.com/library/6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5)   
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

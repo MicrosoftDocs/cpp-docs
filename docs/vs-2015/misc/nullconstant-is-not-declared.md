@@ -48,7 +48,7 @@ manager: "wpickett"
     End Sub  
     ```  
   
-2.  Use the [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md) keyword for assignments and comparisons when you use object variables. The following example demonstrates this.  
+2.  Use the [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f) keyword for assignments and comparisons when you use object variables. The following example demonstrates this.  
   
     ```  
     Sub TestNothing()  
@@ -63,5 +63,5 @@ manager: "wpickett"
   
 ## See Also  
  <xref:System.DBNull>   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)   
  [Programming Element Support Changes Summary](http://msdn.microsoft.com/en-us/0483590a-6309-449c-a2fa-effa26a03b95)

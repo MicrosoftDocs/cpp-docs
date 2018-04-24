@@ -30,5 +30,5 @@ A constant occurs in a context that assigns a value to it. Only writable variabl
 -   Replace the constant with a single writable variable, property, or array element.  
   
 ## See Also  
- [Constants and Enumerations](../Topic/Constants%20and%20Enumerations%20in%20Visual%20Basic.md)   
+ [Constants and Enumerations](http://msdn.microsoft.com/library/c8aba36e-fa47-4a33-8b68-cb2009218270)   
  [NotInBuild:Assignment Statements](http://msdn.microsoft.com/en-us/eb4f91e9-fbbf-45ca-b21d-e8ae069de4f9)

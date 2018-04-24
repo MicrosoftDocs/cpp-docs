@@ -39,5 +39,5 @@ If you want to work with the **Properties** window or the **Property** pages, fo
      If you specify a multiple selection, then the **Properties** window finds the intersection between common properties for the objects. If you specify a single object selection, then the **Properties** window displays all of the properties for the one object.  
   
 ## See Also  
- [Extending Properties](../Topic/Extending%20Properties.md)   
- [Property Pages](../Topic/Property%20Pages.md)
+ [Extending Properties](http://msdn.microsoft.com/library/68e2cbd4-861c-453f-8c9f-4ab6afc80e67)   
+ [Property Pages](http://msdn.microsoft.com/library/b9b3e6e8-1e30-4c89-9862-330265dcf38c)

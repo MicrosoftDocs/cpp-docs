@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0159
 No such label 'label' within the scope of the goto statement  
   
- The label referenced by the [goto](../Topic/goto%20\(C%23%20Reference\).md) statement could not be found within the scope of the `goto` statement.  
+ The label referenced by the [goto](http://msdn.microsoft.com/library/2c03c9c1-8119-44ef-b740-fb3d287a42fe) statement could not be found within the scope of the `goto` statement.  
   
  The following sample generates CS0159:  
   

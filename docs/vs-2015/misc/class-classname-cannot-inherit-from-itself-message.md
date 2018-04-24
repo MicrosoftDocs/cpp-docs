@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Class &#39;&lt;classname&gt;&#39; cannot inherit from itself: &lt;message&gt;
-An [Inherits Statement](../Topic/Inherits%20Statement.md) in a class definition specifies its own class.  
+An [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2) in a class definition specifies its own class.  
   
  A class can inherit from another class, which provides it with all the members of the class it inherits from, so it does not have to define those members again. Such a class is called a *derived class*, and the class it inherits from is called the *base class*.  
   

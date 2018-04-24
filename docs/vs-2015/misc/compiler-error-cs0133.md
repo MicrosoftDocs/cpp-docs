@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0133
 The expression being assigned to 'variable' must be constant  
   
- A [const](../Topic/const%20\(C%23%20Reference\).md) variable cannot take as its value an expression that is not constant. For more information, see [Constants](../Topic/Constants%20\(C%23%20Programming%20Guide\).md).  
+ A [const](http://msdn.microsoft.com/library/79eb447c-117b-4418-933f-97c50aa472db) variable cannot take as its value an expression that is not constant. For more information, see [Constants](http://msdn.microsoft.com/library/1fb39621-1738-49b1-a1b3-8587f109123f).  
   
  The following sample generates CS0133:  
   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1534
 Overloaded binary operator 'operator' takes two parameters  
   
- The definition of a binary [overloadable operator](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md) must take two parameters.  
+ The definition of a binary [overloadable operator](http://msdn.microsoft.com/library/390d9d01-79fc-40ab-9ed3-0bf448da1b6a) must take two parameters.  
   
  The following sample generates CS1534:  
   

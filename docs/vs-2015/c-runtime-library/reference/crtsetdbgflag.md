@@ -96,7 +96,7 @@ Retrieves or modifies the state of the **_crtDbgFlag** flag to control the alloc
 ## Remarks  
  The `_CrtSetDbgFlag` function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **_crtDbgFlag** flag. By setting the bits (turning on), the application can instruct the debug heap manager to perform special debugging operations, including checking for memory leaks when the application exits and reporting if any are found, simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list, and verifying the integrity of the heap by inspecting each memory block at every allocation request. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDbgFlag` are removed during preprocessing.  
   
- The following table lists the bit fields for **_crtDbgFlag** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits are not set (turned off) by default. For more information about these bit fields, see [Heap State Reporting Functions](../Topic/CRT%20Debug%20Heap%20Details.md#BKMK_Heap_State_Reporting_Functions).  
+ The following table lists the bit fields for **_crtDbgFlag** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits are not set (turned off) by default. For more information about these bit fields, see [Heap State Reporting Functions](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
 |Bit field|Default|Description|  
 |---------------|-------------|-----------------|  
@@ -173,7 +173,7 @@ tmpFlag &= ~_CRTDBG_CHECK_ALWAYS_DF;
 _CrtSetDbgFlag( tmpFlag );  
 ```  
   
- For an overview of memory management and the debug heap, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ For an overview of memory management and the debug heap, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
  To disable a flag with the `_CrtSetDbgFlag` function, you should **AND** the variable with the bitwise **NOT** of the bitmask.  
   
@@ -269,7 +269,7 @@ int main( )
 ```  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

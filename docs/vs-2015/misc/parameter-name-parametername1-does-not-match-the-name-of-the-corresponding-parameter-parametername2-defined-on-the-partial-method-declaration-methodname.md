@@ -51,4 +51,4 @@ End Class
 1.  Change the parameter name or names in the declaration or in the implementation so that corresponding parameters have the same name.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)

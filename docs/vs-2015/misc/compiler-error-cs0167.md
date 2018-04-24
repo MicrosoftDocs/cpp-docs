@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0167
 The delegate 'delegate' is missing the Invoke method  
   
- You imported and used a managed program (one that uses the .NET Framework common language runtime) that was created with another compiler. That compiler allowed an ill-formed [delegate](../Topic/delegate%20\(C%23%20Reference\).md). Therefore, the `Invoke` method was not available. For more information, see [Delegates](../Topic/Delegates%20\(C%23%20Programming%20Guide\).md).
+ You imported and used a managed program (one that uses the .NET Framework common language runtime) that was created with another compiler. That compiler allowed an ill-formed [delegate](http://msdn.microsoft.com/library/0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f). Therefore, the `Invoke` method was not available. For more information, see [Delegates](http://msdn.microsoft.com/library/97de039b-c76b-4b9c-a27d-8c1e1c8d93da).

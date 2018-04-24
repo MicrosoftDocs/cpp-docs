@@ -32,5 +32,5 @@ The `/noconfig` option tells the compiler not to compile with the Vbc.rsp file. 
 2.  Specify the `/noconfig` option when invoking the command-line compiler.  
   
 ## See Also  
- [/noconfig](../Topic/-noconfig.md)   
- [@ (Specify Response File)](../Topic/@%20\(Specify%20Response%20File\)%20\(Visual%20Basic\).md)
+ [/noconfig](http://msdn.microsoft.com/library/a7405067-bd21-4171-adf4-a126fa3ad6c3)   
+ [@ (Specify Response File)](http://msdn.microsoft.com/library/a6847eaa-e5f9-4303-9421-45b55484b9ca)

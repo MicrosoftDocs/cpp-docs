@@ -49,9 +49,9 @@ Managed VSPackages can use the COM-based interop assemblies of the [!INCLUDE[vsi
  To register the page, you can either manually edit the registry or use a registry script (.rgs file). For more information, see [Creating Registrar Scripts](../atl/creating-registrar-scripts.md).  
   
 ## See Also  
- [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)   
+ [Extending the Visual Studio Environment](http://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)   
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)   
- [Automation Support for Options Pages](../Topic/Automation%20Support%20for%20Options%20Pages.md)   
+ [Automation Support for Options Pages](http://msdn.microsoft.com/library/0b25b82c-7432-4e0a-9e84-350269ba8260)   
  [Using Options Pages](../misc/using-options-pages.md)   
- [Creating Options Pages](../Topic/Creating%20Options%20Pages.md)   
+ [Creating Options Pages](http://msdn.microsoft.com/library/1bf11fec-dece-4943-8053-6de1483c43eb)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)

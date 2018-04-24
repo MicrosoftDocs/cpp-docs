@@ -80,6 +80,6 @@ End Class
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)   
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)

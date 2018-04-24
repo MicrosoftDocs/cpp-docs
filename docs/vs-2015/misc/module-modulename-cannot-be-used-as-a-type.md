@@ -30,4 +30,4 @@ You have attempted to use a module as a type. A module cannot be used except as 
 -   Replace the module with something that can be used as a valid type.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

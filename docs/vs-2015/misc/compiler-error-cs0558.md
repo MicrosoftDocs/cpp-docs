@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0558
 User-defined operator 'operator' must be declared static and public  
   
- Both the **static** and **public** access [modifiers](../Topic/Modifiers%20\(C%23%20Reference\).md) must be specified on user-defined operators.  
+ Both the **static** and **public** access [modifiers](http://msdn.microsoft.com/library/c96691dd-b357-49ec-b5ae-03ca214fadfb) must be specified on user-defined operators.  
   
  The following sample generates CS0558:  
   

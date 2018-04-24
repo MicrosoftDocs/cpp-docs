@@ -27,7 +27,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Adding an Event (Visual C++)](https://docs.microsoft.com/cpp/ide/adding-an-event-visual-cpp).  
   
   
-From Class View, you can add an event using the [Add Event Wizard](../ide/add-event-wizard.md) only to the control class in your [MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md) project. If you want to add an event to another type of project, use the **Events** button in the [Properties window](../Topic/Properties%20Window.md).  
+From Class View, you can add an event using the [Add Event Wizard](../ide/add-event-wizard.md) only to the control class in your [MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md) project. If you want to add an event to another type of project, use the **Events** button in the [Properties window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca).  
   
 ### To add an event to your MFC ActiveX control project  
   

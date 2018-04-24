@@ -27,7 +27,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [InsertIntoFunction](https://docs.microsoft.com/cpp/ide/insertintofunction).  
   
   
-Used by [AddATLSupportToProject](../ide/addatlsupporttoproject.md) to insert code into [InitInstance](../Topic/CWinApp::InitInstance.md).  
+Used by [AddATLSupportToProject](../ide/addatlsupporttoproject.md) to insert code into [InitInstance](http://msdn.microsoft.com/library/0dcf01bb-276d-4615-ba6b-ef9bafaa80ba).  
   
 ## Syntax  
   

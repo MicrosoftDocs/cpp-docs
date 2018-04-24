@@ -26,7 +26,7 @@ This content has been removed. For information about extending Tools Options pag
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)  
  Explains how an application can create and manage new **Tools Options** pages by using interop assemblies.  
   
- [Creating Options Pages](../Topic/Creating%20Options%20Pages.md)  
+ [Creating Options Pages](http://msdn.microsoft.com/library/1bf11fec-dece-4943-8053-6de1483c43eb)  
  Explains how an application can create and manage new **Tools Options** pages by using the managed package framework.  
   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)  
@@ -39,5 +39,5 @@ This content has been removed. For information about extending Tools Options pag
  Shows how to open the **Tools Options** dialog to a specified page.  
   
 ## Related Sections  
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)  
+ [Extending User Settings and Options](http://msdn.microsoft.com/library/5bb6277a-8c9d-48c8-9b4e-1cb3052caded)  
  Describes how to program your VSPackage to obtain and preserve user preferences.

@@ -38,11 +38,11 @@ class task_continuation_context : public details::_ContextCallback;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_continuation_context::get_current_winrt_context Method](../Topic/task_continuation_context::get_current_winrt_context%20Method.md)|Returns a task continuation context object that represents the current winrt thread context.|  
+|[task_continuation_context::get_current_winrt_context Method](http://msdn.microsoft.com/library/da44d4ef-44cd-49bb-b4d0-8721fa6dc976)|Returns a task continuation context object that represents the current winrt thread context.|  
 |[task_continuation_context::use_arbitrary Method](#task_continuation_context__use_arbitrary_method)|Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.|  
 |[task_continuation_context::use_current Method](#task_continuation_context__use_current_method)|Returns a task continuation context object that represents the current execution context.|  
 |[task_continuation_context::use_default Method](#task_continuation_context__use_default_method)|Creates the default task continuation context.|  
-|[task_continuation_context::use_synchronous_execution Method](../Topic/task_continuation_context::use_synchronous_execution%20Method.md)|Returns a task continuation context object that represents the synchronous execution context.|  
+|[task_continuation_context::use_synchronous_execution Method](http://msdn.microsoft.com/library/88a0a1e0-fb27-4e2c-87a1-1f3e44ecf839)|Returns a task continuation context object that represents the synchronous execution context.|  
   
 ## Inheritance Hierarchy  
  `_ContextCallback`  

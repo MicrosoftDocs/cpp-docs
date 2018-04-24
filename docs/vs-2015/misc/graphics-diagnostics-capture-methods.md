@@ -31,5 +31,5 @@ Insert introduction here.
  Legacy capture supports [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] and [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] graphics diagnostics on [!INCLUDE[win8](../includes/win8-md.md)], Windows RT 8, and [!INCLUDE[win7](../includes/win7-md.md)]. It supports DirectX 10.0 through DirectX 11.1. Legacy capture doesn't support any Direct3D 11.2 features and is deprecated except for scenarios in which robust capture is not available. Legacy capture uses the capture API defined in the `vsgcapture.h` header file to support its programmatic capture scenarios. This kind of programmatic capture is also deprecated except for scenarios in which robust capture is not available.  
   
 ## See Also  
- [Capturing Graphics Information](../Topic/Capturing%20Graphics%20Information.md)   
- [Walkthrough: Capturing Graphics Information](../Topic/Walkthrough:%20Capturing%20Graphics%20Information.md)
+ [Capturing Graphics Information](http://msdn.microsoft.com/library/187ce86e-e340-4f6c-8937-8e8f1027a17f)   
+ [Walkthrough: Capturing Graphics Information](http://msdn.microsoft.com/library/48f12f6e-57b4-48ec-a145-89fa71a42424)

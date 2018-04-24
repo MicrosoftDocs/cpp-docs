@@ -60,21 +60,21 @@ class CComCurrency
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCurrency::operator -](../Topic/CComCurrency::operator%20-2.md)|This operator is used to perform subtraction on a `CComCurrency` object.|  
-|[CComCurrency::operator !=](../Topic/CComCurrency::operator%20!=.md)|Compares two `CComCurrency` objects for inequality.|  
+|[CComCurrency::operator -](http://msdn.microsoft.com/library/4051fd7c-76c9-427c-b9d6-208ce8ecb5a6)|This operator is used to perform subtraction on a `CComCurrency` object.|  
+|[CComCurrency::operator !=](http://msdn.microsoft.com/library/d1776841-b1c9-4fcc-bbc5-5e7df27d06d6)|Compares two `CComCurrency` objects for inequality.|  
 |[CComCurrency::operator *](#ccomcurrency__operator__star)|This operator is used to perform multiplication on a `CComCurrency` object.|  
 |[CComCurrency::operator *=](#ccomcurrency__operator__star_eq)|This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator /](../Topic/CComCurrency::operator%20-1.md)|This operator is used to perform division on a `CComCurrency` object.|  
-|[CComCurrency::operator /=](../Topic/CComCurrency::operator%20-=2.md)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator /](http://msdn.microsoft.com/library/59fe428d-f3a7-4caf-a420-c606409607b7)|This operator is used to perform division on a `CComCurrency` object.|  
+|[CComCurrency::operator /=](http://msdn.microsoft.com/library/41ad5f89-b795-40f0-94c9-6792d3487712)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
 |[CComCurrency::operator +](#ccomcurrency__operator__add)|This operator is used to perform addition on a `CComCurrency` object.|  
 |[CComCurrency::operator +=](#ccomcurrency__operator__add_eq)|This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.|  
-|[CComCurrency::operator <](../Topic/CComCurrency::operator%20%3C.md)|This operator compares two `CComCurrency` objects to determine the lesser.|  
-|[CComCurrency::operator <=](../Topic/CComCurrency::operator%20%3C=.md)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
+|[CComCurrency::operator <](http://msdn.microsoft.com/library/eb288bc5-e6db-4c6c-9f5e-0933cf8f75a3)|This operator compares two `CComCurrency` objects to determine the lesser.|  
+|[CComCurrency::operator <=](http://msdn.microsoft.com/library/5cc6646a-bf45-4557-a3ef-8641c02660ff)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
 |[CComCurrency::operator =](#ccomcurrency__operator__eq)|This operator assigns the `CComCurrency` object to a new value.|  
-|[CComCurrency::operator -=](../Topic/CComCurrency::operator%20-=1.md)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator -=](http://msdn.microsoft.com/library/f826a7f1-d6bb-4495-a31a-513a1e2e6b3f)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
 |[CComCurrency::operator ==](#ccomcurrency__operator__eq_eq)|This operator compares two `CComCurrency` objects for equality.|  
-|[CComCurrency::operator >](../Topic/CComCurrency::operator%20%3E.md)|This operator compares two `CComCurrency` objects to determine the larger.|  
-|[CComCurrency::operator >=](../Topic/CComCurrency::operator%20%3E=.md)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
+|[CComCurrency::operator >](http://msdn.microsoft.com/library/29d4d42c-b503-4bb0-a64e-f2918c8af208)|This operator compares two `CComCurrency` objects to determine the larger.|  
+|[CComCurrency::operator >=](http://msdn.microsoft.com/library/efd3b538-8c1f-4590-925c-97cb6b8231d9)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
 |[CComCurrency::operator CURRENCY](#ccomcurrency__operator_currency)|Casts a `CURRENCY` object.|  
   
 ### Public Data Members  

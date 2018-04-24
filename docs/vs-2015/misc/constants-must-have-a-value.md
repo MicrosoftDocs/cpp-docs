@@ -31,4 +31,4 @@ You declared a constant without assigning it a value.
   
 ## See Also  
  [NOTINBUILD Constants Overview](http://msdn.microsoft.com/en-us/5c7f57fb-48b2-4a2f-afee-79d8e3adf15b)   
- [Constants and Enumerations](../Topic/Constants%20and%20Enumerations%20\(Visual%20Basic\).md)
+ [Constants and Enumerations](http://msdn.microsoft.com/library/309c0ad5-83e4-4f96-99ea-83cd95107417)

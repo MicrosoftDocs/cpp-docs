@@ -80,7 +80,7 @@ int _CrtIsValidPointer(
 _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );  
 ```  
   
- For more information about how `_CrtIsValidPointer` can be used with other debug functions and macros, see [Macros for Reporting](../Topic/Macros%20for%20Reporting.md). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ For more information about how `_CrtIsValidPointer` can be used with other debug functions and macros, see [Macros for Reporting](http://msdn.microsoft.com/library/f2085314-a3a8-4caf-a5a4-2af9ad5aad05). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
 ## Requirements  
   

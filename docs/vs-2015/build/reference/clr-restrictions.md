@@ -29,7 +29,7 @@ Note the following restrictions on the use of **/clr**:
   
 -   In a structured exception handler, there are restrictions on using `_alloca` when compiling with **/clr**. For more information, see [_alloca](../../c-runtime-library/reference/alloca.md).  
   
--   The use of run-time error checks is not valid with **/clr**. For more information, see [Run-Time Error Checks](../Topic/How%20to:%20Use%20Native%20Run-Time%20Checks.md).  
+-   The use of run-time error checks is not valid with **/clr**. For more information, see [Run-Time Error Checks](http://msdn.microsoft.com/library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1).  
   
 -   When **/clr** is used to compile a program that only uses standard C++ syntax, the following guidelines apply to the use of inline assembly:  
   

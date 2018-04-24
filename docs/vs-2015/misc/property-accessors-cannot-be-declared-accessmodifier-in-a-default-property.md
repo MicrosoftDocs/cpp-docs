@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Property accessors cannot be declared &#39;&lt;accessmodifier&gt;&#39; in a &#39;Default&#39; property
-A [Get Statement](../Topic/Get%20Statement.md) or [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md) in a default property includes the `Private` keyword.  
+A [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94) or [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd) in a default property includes the `Private` keyword.  
   
  A default property cannot be `Private`, and neither can its individual property procedures (`Get` or `Set`).  
   
@@ -29,9 +29,9 @@ A [Get Statement](../Topic/Get%20Statement.md) or [Set Statement](../Topic/Set%2
   
 ### To correct this error  
   
--   Remove the `Private` keyword from the `Get` or `Set` statement, or remove `Default` from the [Property Statement](../Topic/Property%20Statement.md).  
+-   Remove the `Private` keyword from the `Get` or `Set` statement, or remove `Default` from the [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38).  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)   
- [How to: Declare and Call a Default Property in Visual Basic](../Topic/How%20to:%20Declare%20and%20Call%20a%20Default%20Property%20in%20Visual%20Basic.md)
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)   
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)   
+ [How to: Declare and Call a Default Property in Visual Basic](http://msdn.microsoft.com/library/68b4026e-09ef-4613-808e-f6287494ff63)

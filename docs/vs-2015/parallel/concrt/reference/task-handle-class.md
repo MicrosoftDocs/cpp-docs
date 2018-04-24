@@ -103,5 +103,5 @@ task_handle(const _Function& _Func);
   
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
+ [task_group Class](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)   
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)

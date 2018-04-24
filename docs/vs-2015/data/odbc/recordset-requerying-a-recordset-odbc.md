@@ -31,7 +31,7 @@ The latest version of this topic can be found at [Recordset: Requerying a Record
   
 This topic applies to the MFC ODBC classes.  
   
- This topic explains how you can use a recordset object to requery (that is, refresh) itself from the database and when you might want to do that with the [Requery](../Topic/CRecordset::Requery.md) member function.  
+ This topic explains how you can use a recordset object to requery (that is, refresh) itself from the database and when you might want to do that with the [Requery](http://msdn.microsoft.com/library/b9428878-1f85-4b0f-b897-8d9cdc6b7c3a) member function.  
   
  The principal reasons for requerying a recordset are to:  
   
@@ -43,7 +43,7 @@ This topic applies to the MFC ODBC classes.
  Frequently, you will want to requery your recordset object to bring it up to date. In a multiuser database environment, other users can make changes to the data during the life of your recordset. For more information about when your recordset reflects changes made by other users and when other users' recordsets reflect your changes, see [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) and [Dynaset](../../data/odbc/dynaset.md).  
   
 ##  <a name="_core_requerying_based_on_new_parameters"></a> Requerying Based on New Parameters  
- Another frequent — and equally important — use of [Requery](../Topic/CRecordset::Requery.md) is to select a new set of records based on changing parameter values.  
+ Another frequent — and equally important — use of [Requery](http://msdn.microsoft.com/library/b9428878-1f85-4b0f-b897-8d9cdc6b7c3a) is to select a new set of records based on changing parameter values.  
   
 > [!TIP]
 >  Query speed is probably significantly faster if you call **Requery** with changing parameter values than if you call **Open** again.  
@@ -53,7 +53,7 @@ This topic applies to the MFC ODBC classes.
   
 #### To requery a recordset object  
   
-1.  Call the [Requery](../Topic/CRecordset::Requery.md) member function of the object.  
+1.  Call the [Requery](http://msdn.microsoft.com/library/b9428878-1f85-4b0f-b897-8d9cdc6b7c3a) member function of the object.  
   
  Alternatively, you can close and reopen the original recordset. In either case, the new recordset represents the current state of the data source.  
   

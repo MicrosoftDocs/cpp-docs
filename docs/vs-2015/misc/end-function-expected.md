@@ -30,5 +30,5 @@ An `End` statement must match the block it terminates. A `Function` procedure de
 -   Add an `End Function` statement to the end of the procedure.  
   
 ## See Also  
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)   
+ [End Statement](http://msdn.microsoft.com/library/0e64467c-0f34-4aab-9ddd-43f8b9d55d90)

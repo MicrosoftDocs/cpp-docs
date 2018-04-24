@@ -26,7 +26,7 @@ No enclosing loop out of which to break or continue
   
  A break or continue statement was encountered outside of a loop.  
   
- For more information, see [Jump Statements](../Topic/Jump%20Statements%20\(C%23%20Reference\).md).  
+ For more information, see [Jump Statements](http://msdn.microsoft.com/library/58da6ae7-7388-491e-828f-e74485d87d53).  
   
  The following sample generates CS0139 twice:  
   

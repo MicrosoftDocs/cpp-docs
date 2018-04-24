@@ -25,9 +25,9 @@ manager: "wpickett"
   
  A declaration or assignment statement attempts to assign a value of `Empty` to a variable, constant, enumeration member, property, or function return.  
   
- Previous versions of [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] used the `Empty` keyword to represent uninitialized data storage. The current version of Visual Basic does not support `Empty`. An uninitialized variable holds the default value for its data type. For more information about default values, see "Default Values" in [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md).  
+ Previous versions of [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] used the `Empty` keyword to represent uninitialized data storage. The current version of Visual Basic does not support `Empty`. An uninitialized variable holds the default value for its data type. For more information about default values, see "Default Values" in [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448).  
   
- The [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md) keyword represents the default value of any data type. You can use it instead of `Empty`.  
+ The [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f) keyword represents the default value of any data type. You can use it instead of `Empty`.  
   
  **Error ID:** BC30823  
   
@@ -44,5 +44,5 @@ manager: "wpickett"
 -   If this is a variable declaration, do not assign an initial value. This causes the variable to be initialized to its default value.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)   
  [Programming Element Support Changes Summary](http://msdn.microsoft.com/en-us/0483590a-6309-449c-a2fa-effa26a03b95)

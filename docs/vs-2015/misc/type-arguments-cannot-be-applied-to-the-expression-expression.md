@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Type arguments cannot be applied to the expression &#39;&lt;expression&gt;&#39;
-An import alias is defined with an [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md) clause that passes type arguments to the import alias.  
+An import alias is defined with an [Of](http://msdn.microsoft.com/library/0db8f65c-65af-4089-ab7f-6fcfecb60444) clause that passes type arguments to the import alias.  
   
  Type arguments are used for generic types, and only classes, structures, interfaces, procedures, and delegates can be generic. Neither namespaces nor import aliases can be generic.  
   
@@ -32,8 +32,8 @@ An import alias is defined with an [Of](../Topic/Of%20Clause%20\(Visual%20Basic\
 -   Remove the `Of` clause and its type arguments from the import alias.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)   
- [References and the Imports Statement](../Topic/References%20and%20the%20Imports%20Statement%20\(Visual%20Basic\).md)   
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)   
+ [References and the Imports Statement](http://msdn.microsoft.com/library/38149bd4-0a6f-4b31-b5f8-94a8c33f1600)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)

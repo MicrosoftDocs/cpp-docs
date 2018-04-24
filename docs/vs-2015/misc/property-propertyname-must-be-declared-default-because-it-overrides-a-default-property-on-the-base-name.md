@@ -30,4 +30,4 @@ A `Property` statement in your code overrides a `Default` property on the base c
 -   Declare the property `Default`.  
   
 ## See Also  
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

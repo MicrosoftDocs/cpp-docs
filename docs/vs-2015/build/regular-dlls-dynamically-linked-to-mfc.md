@@ -55,7 +55,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 -   This type of DLL uses the `DllMain` provided by MFC. Place all DLL-specific initialization code in the `InitInstance` member function and termination code in `ExitInstance` as in a normal MFC application.  
   
- Because this kind of DLL uses the dynamic-link library version of MFC, you must explicitly set the current module state to the one for the DLL. To do this, use the [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_STATE.md) macro at the beginning of every function exported from the DLL.  
+ Because this kind of DLL uses the dynamic-link library version of MFC, you must explicitly set the current module state to the one for the DLL. To do this, use the [AFX_MANAGE_STATE](http://msdn.microsoft.com/library/620cb840-4227-4a75-b36d-f7d507f44606) macro at the beginning of every function exported from the DLL.  
   
  Regular DLLs must have a `CWinApp`-derived class and a single object of that application class, as does an MFC application. However, the `CWinApp` object of the DLL does not have a main message pump, as does the `CWinApp` object of an application.  
   
@@ -83,7 +83,7 @@ extern "C" __declspec(dllexport) MyExportedFunction( );
   
  It is safe to pass pointers to memory that were allocated by the C run-time libraries between an application and a DLL only if you make a copy of the data. You must not delete or resize these pointers or use them without making a copy of the memory.  
   
- When building a regular DLL that dynamically links to MFC, you need to use the macro [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_STATE.md) to switch the MFC module state correctly. This is done by adding the following line of code to the beginning of functions exported from the DLL:  
+ When building a regular DLL that dynamically links to MFC, you need to use the macro [AFX_MANAGE_STATE](http://msdn.microsoft.com/library/620cb840-4227-4a75-b36d-f7d507f44606) to switch the MFC module state correctly. This is done by adding the following line of code to the beginning of functions exported from the DLL:  
   
 ```  
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ))  

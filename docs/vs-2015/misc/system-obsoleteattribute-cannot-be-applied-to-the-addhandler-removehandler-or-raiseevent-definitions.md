@@ -37,7 +37,7 @@ manager: "wpickett"
   
 ## See Also  
  <xref:System.ObsoleteAttribute>   
- [Event Statement](../Topic/Event%20Statement.md)   
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
- [RaiseEvent Statement](../Topic/RaiseEvent%20Statement.md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
+ [AddHandler Statement](http://msdn.microsoft.com/library/cfe69799-2a0f-42c0-a99e-09fed954da01)   
+ [RemoveHandler Statement](http://msdn.microsoft.com/library/647cd825-e877-4910-b4f1-8d168beebe6a)   
+ [RaiseEvent Statement](http://msdn.microsoft.com/library/f82e380a-1e6b-4047-bea8-c853f4d2c742)

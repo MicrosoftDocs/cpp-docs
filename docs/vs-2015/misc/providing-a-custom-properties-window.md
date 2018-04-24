@@ -44,5 +44,5 @@ It is possible to provide your own **Properties** window for a given project sys
 -   You can obtain the active document window by calling <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> through SVsMonitorSelection service. Set the parameter `elementid` to `SEID_WindowFrame`, taken from the <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> enumeration.  
   
 ## See Also  
- [Extending Properties](../Topic/Extending%20Properties.md)   
- [Properties Window Fields and Interfaces](../Topic/Properties%20Window%20Fields%20and%20Interfaces.md)
+ [Extending Properties](http://msdn.microsoft.com/library/68e2cbd4-861c-453f-8c9f-4ab6afc80e67)   
+ [Properties Window Fields and Interfaces](http://msdn.microsoft.com/library/0328f0e5-2380-4a7a-a872-b547cb775050)

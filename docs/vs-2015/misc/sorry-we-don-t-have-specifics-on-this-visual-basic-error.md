@@ -3078,8 +3078,8 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
  Also see:  
- [Additional Resources for Visual Basic Programmers](../Topic/Additional%20Resources%20for%20Visual%20Basic%20Programmers.md)  
+ [Additional Resources for Visual Basic Programmers](http://msdn.microsoft.com/library/9bfb42e9-327f-439b-935e-8884f6aca80c)  
   
 ## See Also  
- [Visual Basic Programming Guide](../Topic/Visual%20Basic%20Programming%20Guide.md)   
- [Visual Basic Reference](../Topic/Reference%20\(Visual%20Basic\).md)
+ [Visual Basic Programming Guide](http://msdn.microsoft.com/library/640e5796-2796-433c-af37-4d2a2334895b)   
+ [Visual Basic Reference](http://msdn.microsoft.com/library/df6e7c50-5f3e-4381-98ed-ba5c3e9fe228)

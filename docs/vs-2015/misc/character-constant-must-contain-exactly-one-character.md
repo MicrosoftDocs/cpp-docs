@@ -30,4 +30,4 @@ A character constant is not valid because either it contains more than one chara
 -   Change the character constant to a single character or change the null character to a valid character.  
   
 ## See Also  
- [Char Data Type](../Topic/Char%20Data%20Type%20\(Visual%20Basic\).md)
+ [Char Data Type](http://msdn.microsoft.com/library/cd7547a9-7855-4e8e-b216-35d74a362657)

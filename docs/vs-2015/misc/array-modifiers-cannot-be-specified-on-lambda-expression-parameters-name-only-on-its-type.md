@@ -39,4 +39,4 @@ Dim arrayexample3 = Function(arrayPara As Integer()) arrayPara.Length > 0
 -   Specify the type of the elements in the array parameter.  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)

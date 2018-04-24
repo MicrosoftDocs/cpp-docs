@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1032
 Cannot define/undefine preprocessor symbols after first token in file  
   
- The `#define` and `#undef` [preprocessor directives](../Topic/C%23%20Preprocessor%20Directives.md) must be used at the beginning of a program, before any other keywords, such as those used in the namespace declaration.  
+ The `#define` and `#undef` [preprocessor directives](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724) must be used at the beginning of a program, before any other keywords, such as those used in the namespace declaration.  
   
  The following sample generates CS1032:  
   

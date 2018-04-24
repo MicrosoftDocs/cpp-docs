@@ -23,4 +23,4 @@ A value that is less than zero has been supplied, but the argument cannot be les
 -   Check how the value in question is calculated, to make sure it is correct.  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](http://msdn.microsoft.com/library/4da42a10-384d-44d7-b4dc-032202ff784b)

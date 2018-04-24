@@ -37,7 +37,7 @@ template<class _FwdIt, class _Fn0> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `generate`. For more information, see [generate](../Topic/generate.md).  
+ This function behaves the same as the STL function `generate`. For more information, see [generate](http://msdn.microsoft.com/library/0353f358-9651-4e00-b0c9-5bca720539a3).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

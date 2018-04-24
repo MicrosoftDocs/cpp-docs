@@ -30,4 +30,4 @@ A circular structure definition occurs when a structure designates itself as one
 -   Change the name of the structure member.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0068
 'event': event in interface cannot have initializer  
   
- An event in an interface cannot have an initializer. For more information, see [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md).  
+ An event in an interface cannot have an initializer. For more information, see [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  The following sample generates CS0068:  
   

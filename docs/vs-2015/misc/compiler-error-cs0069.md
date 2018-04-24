@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0069
 An event in an interface cannot have add or remove accessors  
   
- You cannot define an event's accessor functions in an [interface](../Topic/interface%20\(C%23%20Reference\).md). For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md) and [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md).  
+ You cannot define an event's accessor functions in an [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba). For more information, see [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3) and [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  The following sample generates CS0069:  
   

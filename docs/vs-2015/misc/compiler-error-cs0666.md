@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0666
 'member' : new protected member declared in struct  
   
- A [struct](../Topic/struct%20\(C%23%20Reference\).md) cannot be [abstract](../Topic/abstract%20\(C%23%20Reference\).md) and is always implicitly [sealed](../Topic/sealed%20\(C%23%20Reference\).md). Because structs do not support inheritance, the concept of a [protected](../Topic/protected%20\(C%23%20Reference\).md) member in a struct makes no sense. For more information, see [Inheritance](../Topic/Inheritance%20\(C%23%20Programming%20Guide\).md).  
+ A [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) cannot be [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) and is always implicitly [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f). Because structs do not support inheritance, the concept of a [protected](http://msdn.microsoft.com/library/05ce3794-6675-4025-bddb-eaaa0ec22892) member in a struct makes no sense. For more information, see [Inheritance](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea).  
   
 ## Example  
  The following sample generates CS0666:  

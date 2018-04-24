@@ -32,4 +32,4 @@ A character other than a double quotation mark (") occurs where the context requ
 2.  Supply a string constant.  
   
 ## See Also  
- [Constant and Literal Data Types](../Topic/Constant%20and%20Literal%20Data%20Types%20\(Visual%20Basic\).md)
+ [Constant and Literal Data Types](http://msdn.microsoft.com/library/057206d2-3a5b-40b9-b3af-57446f9b52fa)

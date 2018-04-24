@@ -155,5 +155,5 @@ Exit returning EXIT_SUCCESS
  [/Zc (Conformance)](../../build/reference/zc-conformance.md)   
  [noexcept](../../cpp/noexcept-cpp.md)   
  [Exception Specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)   
- [terminate](../Topic/terminate%20\(%3Cexception%3E\).md)
+ [terminate](http://msdn.microsoft.com/library/cd8f9085-254f-4948-9be2-ddbec3ad07ee)
 

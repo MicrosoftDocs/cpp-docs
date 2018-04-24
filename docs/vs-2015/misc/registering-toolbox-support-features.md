@@ -59,14 +59,14 @@ VSPackages must update the registry if they extend the default set of **Toolbox*
 ## Registering a Package as Providing Toolbox Items  
   
 > [!NOTE]
->  Controls created with the Toolbox Control templates in the Visual Studio 10 SDK register automatically. For more information, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md).  
+>  Controls created with the Toolbox Control templates in the Visual Studio 10 SDK register automatically. For more information, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](http://msdn.microsoft.com/library/9cc34db9-b0d1-4951-a02f-7537fbbb51ad).  
   
  Any VSPackage providing <xref:System.Drawing.Design.ToolboxItem> objects must have a subkey, *Toolbox*, under its own package key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Packages\\*\<Package GUID*>, where *\<Version>* is the version number of the release of Visual Studio, such as 8.0, and *\<Package GUID>* is the GUID of the package that provides **Toolbox** items.  
   
  This Toolbox subkey must contain at least one entry, a DWORD entry named *Default**Items*.  
   
 > [!NOTE]
->  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or you can use <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information, see [Command-Line Switches](../Topic/Command-Line%20Switches%20\(Visual%20Studio%20SDK\).md).  
+>  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or you can use <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information, see [Command-Line Switches](http://msdn.microsoft.com/library/0a22516f-f60e-4476-ac5b-f41e5ffaaf8b).  
   
  For the entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Packages\\*\<Package GUID*>:  
   

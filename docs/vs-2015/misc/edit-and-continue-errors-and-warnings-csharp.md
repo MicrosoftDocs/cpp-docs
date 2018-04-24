@@ -74,7 +74,7 @@ You have made an edit to a section of code that is not allowed in Visual C# Edit
   
  Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message.  
   
- For more information about supported edits in Edit and Continue for [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], see [Supported Code Changes (C#)](../Topic/Supported%20Code%20Changes%20\(C%23\).md). If you need more information about a specific error or warning, you can search or post on the MSDN [Visual C# IDE forum](http://go.microsoft.com/fwlink/?LinkId=214693).  
+ For more information about supported edits in Edit and Continue for [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], see [Supported Code Changes (C#)](http://msdn.microsoft.com/library/c7a48ea9-5a7f-4328-a9d7-f0e76fac399d). If you need more information about a specific error or warning, you can search or post on the MSDN [Visual C# IDE forum](http://go.microsoft.com/fwlink/?LinkId=214693).  
   
 ### To correct this error  
   
@@ -85,4 +85,4 @@ You have made an edit to a section of code that is not allowed in Visual C# Edit
 2.  Stop the debugging session, make your edits, and start a new debugging session.  
   
 ## See Also  
- [Edit and Continue (Visual C#)](../Topic/Edit%20and%20Continue%20\(Visual%20C%23\).md)
+ [Edit and Continue (Visual C#)](http://msdn.microsoft.com/library/591bd1b7-ef10-4d10-817b-3f92ca4be006)

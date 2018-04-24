@@ -33,7 +33,7 @@ The Designer region of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] status b
  [!code-vb[VSSDKDesignerStatusBar#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkdesignerstatusbar/vb/vssdkdesignerstatusbarpackage.vb#1)]  
   
 ## See Also  
- [Extending the Status Bar](../Topic/Extending%20the%20Status%20Bar.md)   
+ [Extending the Status Bar](http://msdn.microsoft.com/library/f955115c-4c5f-45ec-b41b-365868c5ec0c)   
  [How to: Read from and Write to the Feedback Region of the Status Bar](../misc/how-to-read-from-and-write-to-the-feedback-region-of-the-status-bar.md)   
  [How to: Program the Progress Bar Region of the Status Bar](../misc/how-to-program-the-progress-bar-region-of-the-status-bar.md)   
  [How to: Use the Animation Region of the Status Bar](../misc/how-to-use-the-animation-region-of-the-status-bar.md)

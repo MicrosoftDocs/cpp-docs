@@ -59,5 +59,5 @@ public class C
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)   
- [join clause](../Topic/join%20clause%20\(C%23%20Reference\).md)
+ [LINQ Query Expressions](http://msdn.microsoft.com/library/40638f19-fb46-4d26-a2d9-a383b48f5ed4)   
+ [join clause](http://msdn.microsoft.com/library/76e9df84-092c-41a6-9537-c3f1cbd7f0fb)

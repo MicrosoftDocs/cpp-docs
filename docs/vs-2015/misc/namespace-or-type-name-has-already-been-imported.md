@@ -30,4 +30,4 @@ An attempt was made to import a namespace more than once.
 -   Remove redundant `Imports` statements.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)

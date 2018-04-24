@@ -64,34 +64,34 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tiled_index Constructor](../Topic/tiled_index::tiled_index%20Constructor.md)|Initializes a new instance of the `tile_index` class.|  
+|[tiled_index::tiled_index Constructor](http://msdn.microsoft.com/library/1f43e0fe-eab7-4e1d-8fd1-bb84c790b01c)|Initializes a new instance of the `tile_index` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::get_tile_extent Method](../Topic/tiled_index::get_tile_extent%20Method.md)|Returns an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_index::get_tile_extent Method](http://msdn.microsoft.com/library/978ed5bd-51ef-49e4-b88f-794ea694dad2)|Returns an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::barrier Constant](../Topic/tiled_index::barrier%20Constant.md)|Stores a [tile_barrier](../../../parallel/amp/reference/tile-barrier-class.md) object that represents a barrier in the current tile of threads.|  
+|[tiled_index::barrier Constant](http://msdn.microsoft.com/library/cb39d964-6b37-4755-bf7f-13a6d47b6038)|Stores a [tile_barrier](../../../parallel/amp/reference/tile-barrier-class.md) object that represents a barrier in the current tile of threads.|  
 |||  
-|[tiled_index::global Constant](../Topic/tiled_index::global%20Constant.md)|Stores an [index](../../../parallel/amp/reference/index-class.md) object of rank 1, 2, or 3 that represents the global index in a [grid](http://msdn.microsoft.com/en-us/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) object.|  
-|[tiled_index::local Constant](../Topic/tiled_index::local%20Constant.md)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](../../../parallel/amp/reference/tiled-extent-class.md) object.|  
-|[tiled_index::rank Constant](../Topic/tiled_index::rank%20Constant.md)|Stores the rank of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) object.|  
-|[tiled_index::tile Constant](../Topic/tiled_index::tile%20Constant.md)|Stores an `index` object of rank 1, 2, or 3 that represents the coordinates of the current tile of a `tiled_extent` object.|  
-|[tiled_index::tile_dim0 Constant](../Topic/tiled_index::tile_dim0%20Constant.md)|Stores the length of the most significant dimension.|  
-|[tiled_index::tile_dim1 Constant](../Topic/tiled_index::tile_dim1%20Constant.md)|Stores the length of the next-to-most significant dimension.|  
-|[tiled_index::tile_dim2 Constant](../Topic/tiled_index::tile_dim2%20Constant.md)|Stores the length of the least significant dimension.|  
-|[tiled_index::tile_origin Constant](../Topic/tiled_index::tile_origin%20Constant.md)|Stores an `index` object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile in a `tiled_extent` object.|  
+|[tiled_index::global Constant](http://msdn.microsoft.com/library/ec271bc0-e6ea-4aef-80f6-6f5e570affbb)|Stores an [index](../../../parallel/amp/reference/index-class.md) object of rank 1, 2, or 3 that represents the global index in a [grid](http://msdn.microsoft.com/en-us/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) object.|  
+|[tiled_index::local Constant](http://msdn.microsoft.com/library/d64a029a-a1f9-4944-b9da-2c282b5d7585)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](../../../parallel/amp/reference/tiled-extent-class.md) object.|  
+|[tiled_index::rank Constant](http://msdn.microsoft.com/library/35de521b-99db-48d7-a1ac-c39cdd61b3ff)|Stores the rank of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) object.|  
+|[tiled_index::tile Constant](http://msdn.microsoft.com/library/49115bad-22d0-4e52-bac4-d075f909a990)|Stores an `index` object of rank 1, 2, or 3 that represents the coordinates of the current tile of a `tiled_extent` object.|  
+|[tiled_index::tile_dim0 Constant](http://msdn.microsoft.com/library/3b3f4abf-5176-49a6-81a7-931201a6cb29)|Stores the length of the most significant dimension.|  
+|[tiled_index::tile_dim1 Constant](http://msdn.microsoft.com/library/568e7f2b-7506-4909-953f-2c8730a8472c)|Stores the length of the next-to-most significant dimension.|  
+|[tiled_index::tile_dim2 Constant](http://msdn.microsoft.com/library/2bcb155b-8169-489e-ad1b-692daa6183bf)|Stores the length of the least significant dimension.|  
+|[tiled_index::tile_origin Constant](http://msdn.microsoft.com/library/1cb713c5-1124-445e-8ef7-cc2a7509fa24)|Stores an `index` object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile in a `tiled_extent` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tile_extent Data Member](../Topic/tiled_index::tile_extent%20Data%20Member.md)|Gets an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_index::tile_extent Data Member](http://msdn.microsoft.com/library/e37334a4-0926-4a09-be43-137d8d6ef682)|Gets an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
   
 ## Inheritance Hierarchy  
  `_Tiled_index_base`  

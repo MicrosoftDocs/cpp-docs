@@ -46,7 +46,7 @@ DECLARE_OBJECT_DESCRIPTION(Â
 ### Remarks  
  ATL enters this description into the object map through the [OBJECT_ENTRY](http://msdn.microsoft.com/en-us/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) macro.  
   
- `DECLARE_OBJECT_DESCRIPTION` implements a `GetObjectDescription` function, which you can use to override the [CComCoClass::GetObjectDescription](../Topic/CComCoClass::GetObjectDescription.md) method.  
+ `DECLARE_OBJECT_DESCRIPTION` implements a `GetObjectDescription` function, which you can use to override the [CComCoClass::GetObjectDescription](http://msdn.microsoft.com/library/37de0261-53cd-485a-b308-8c605bd20844) method.  
   
  The `GetObjectDescription` function is called by **IComponentRegistrar::GetComponents**. **IComponentRegistrar** is an Automation interface that allows you to register and unregister individual components in a DLL. When you create a Component Registrar object with the ATL Project Wizard, the wizard will automatically implement the **IComponentRegistrar** interface. **IComponentRegistrar** is typically used by Microsoft Transaction Server.  
   
@@ -74,7 +74,7 @@ OBJECT_ENTRY_AUTO(Â
 ### Remarks  
  Object entry macros are placed at global scope in the project to provide support for the registration, initialization, and creation of a class.  
   
- `OBJECT_ENTRY_AUTO` enters the function pointers of the creator class and class-factory creator class `CreateInstance` functions for this object into the auto-generated ATL object map. When [CAtlComModule::RegisterServer](../Topic/CAtlComModule::RegisterServer.md) is called, it updates the system registry for each object in the object map.  
+ `OBJECT_ENTRY_AUTO` enters the function pointers of the creator class and class-factory creator class `CreateInstance` functions for this object into the auto-generated ATL object map. When [CAtlComModule::RegisterServer](http://msdn.microsoft.com/library/dd64994c-c820-4992-9b17-b8bd2dedd496) is called, it updates the system registry for each object in the object map.  
   
  The table below describes how the information added to the object map is obtained from the class given as the second parameter to this macro.  
   
@@ -84,7 +84,7 @@ OBJECT_ENTRY_AUTO(Â
 |Class factory creation|[Class Factory Macros](../../atl/reference/aggregation-and-class-factory-macros.md)|  
 |Instance creation|[Aggregation Macros](../../atl/reference/aggregation-and-class-factory-macros.md)|  
 |Component category registration|[Category Macros](../../atl/reference/category-macros.md)|  
-|Class-level initialization and cleanup|[ObjectMain](../Topic/CComObjectRootEx::ObjectMain.md)|  
+|Class-level initialization and cleanup|[ObjectMain](http://msdn.microsoft.com/library/c388d5d6-a67c-4296-ac19-1af7ca9d3ebd)|  
   
 ##  <a name="object_entry_non_createable_ex_auto"></a>  OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO  
  Allows you to specify that the object should be registered and initialized, but it should not be externally creatable via `CoCreateInstance`.  

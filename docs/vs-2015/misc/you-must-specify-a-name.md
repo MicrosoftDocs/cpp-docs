@@ -23,5 +23,5 @@ When performing file operations such as renaming a file, you must specify the na
 -   Specify the name.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)

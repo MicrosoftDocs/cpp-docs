@@ -56,11 +56,11 @@ NOTE]
   
 1.  From the **Project** menu, choose **Add Resource**.  
   
- When you create a new resource, Visual C++ assigns a unique name to it, for example, IDD_Dialog1. You can customize this resource ID by editing the properties for the resource either in the associated resource editor or in the [Properties Window](../Topic/Properties%20Window.md).  
+ When you create a new resource, Visual C++ assigns a unique name to it, for example, IDD_Dialog1. You can customize this resource ID by editing the properties for the resource either in the associated resource editor or in the [Properties Window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca).  
   
  You can create a resource as a new default resource (a resource that is not based on a template) or as a resource patterned after a [template](../windows/how-to-use-resource-templates.md).  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
   
  **Requirements**  
   

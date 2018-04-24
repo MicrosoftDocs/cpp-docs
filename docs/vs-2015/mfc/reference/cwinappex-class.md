@@ -628,7 +628,7 @@ BOOL InitContextMenuManager();
 ### Remarks  
  If you call [CWinAppEx::GetContextMenuManager](#cwinappex__getcontextmenumanager), the default implementation of that method calls `InitContextMenuManager`.  
   
- If your application already has a context menu manager and you call `InitContextMenuManager`, your application will have an [ASSERT](../Topic/ASSERT%20\(MFC\).md) failure. Therefore, you should not call `InitContextMenuManager` if you create a `CContextMenuManager` object directly. If you are not using a custom `CContextMenuManager`, you should use `GetContextMenuManager` to create a `CContextMenuManager` object.  
+ If your application already has a context menu manager and you call `InitContextMenuManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, you should not call `InitContextMenuManager` if you create a `CContextMenuManager` object directly. If you are not using a custom `CContextMenuManager`, you should use `GetContextMenuManager` to create a `CContextMenuManager` object.  
   
 ##  <a name="cwinappex__initkeyboardmanager"></a>  CWinAppEx::InitKeyboardManager  
  Initializes the [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) object.  
@@ -643,7 +643,7 @@ BOOL InitKeyboardManager();
 ### Remarks  
  If you call [CWinAppEx::GetKeyboardManager](#cwinappex__getkeyboardmanager), the default implementation of that method calls `InitKeyboardManager`.  
   
- If your application already has a keyboard manager and you call `InitKeyboardManager`, your application will have an [ASSERT](../Topic/ASSERT%20\(MFC\).md) failure. Therefore, you should not call `InitKeyboardManager` if you create a `CKeyboardManager` object directly. If you are not using a custom `CKeyboardManager`, you should use `GetKeyboardManager` to create a `CKeyboardManager` object.  
+ If your application already has a keyboard manager and you call `InitKeyboardManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, you should not call `InitKeyboardManager` if you create a `CKeyboardManager` object directly. If you are not using a custom `CKeyboardManager`, you should use `GetKeyboardManager` to create a `CKeyboardManager` object.  
   
 ##  <a name="cwinappex__initmousemanager"></a>  CWinAppEx::InitMouseManager  
  Initializes the [CMouseManager](../../mfc/reference/cmousemanager-class.md) object.  
@@ -658,7 +658,7 @@ BOOL InitMouseManager();
 ### Remarks  
  If you call [CWinAppEx::GetMouseManager](#cwinappex__getmousemanager), the default implementation of that method calls `InitMouseManager`.  
   
- If your application already has a mouse manager and you call `InitMouseManager`, your application will have an [ASSERT](../Topic/ASSERT%20\(MFC\).md) failure. Therefore you should not call `InitMouseManager` if you create a `CMouseManager` object directly. If you are not using a custom `CMouseManager`, you should use `GetMouseManager` to create a `CMouseManager` object.  
+ If your application already has a mouse manager and you call `InitMouseManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore you should not call `InitMouseManager` if you create a `CMouseManager` object directly. If you are not using a custom `CMouseManager`, you should use `GetMouseManager` to create a `CMouseManager` object.  
   
 ##  <a name="cwinappex__initshellmanager"></a>  CWinAppEx::InitShellManager  
  Initializes the [CShellManager](../../mfc/reference/cshellmanager-class.md) object.  
@@ -673,7 +673,7 @@ BOOL InitShellManager();
 ### Remarks  
  If you call [CWinAppEx::GetShellManager](#cwinappex__getshellmanager), the default implementation of that method calls `InitShellManager`.  
   
- If your application already has a shell manager and you call `InitShellManager`, your application raises an [ASSERT](../Topic/ASSERT%20\(MFC\).md) failure. Therefore, do not call `InitShellManager` if you create a `CShellManager` object directly. If you are not using a custom `CShellManager`, use `GetShellManager` to create a `CShellManager` object.  
+ If your application already has a shell manager and you call `InitShellManager`, your application raises an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, do not call `InitShellManager` if you create a `CShellManager` object directly. If you are not using a custom `CShellManager`, use `GetShellManager` to create a `CShellManager` object.  
   
 ##  <a name="cwinappex__inittooltipmanager"></a>  CWinAppEx::InitTooltipManager  
  Initializes the [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) object.  
@@ -688,7 +688,7 @@ BOOL InitTooltipManager();
 ### Remarks  
  If you call [CWinAppEx::GetTooltipManager](#cwinappex__gettooltipmanager), the default implementation of that method calls `InitTooltipManager`.  
   
- If your application already has a tooltip manager and you call `InitTooltipManager`, your application will have an [ASSERT](../Topic/ASSERT%20\(MFC\).md) failure. Therefore, you should not call `InitTooltipManager` if you create a `CTooltipManager` object directly. If you are not using a custom `CTooltipManager`, you should use `GetTooltipManager` to create a `CTooltipManager` object.  
+ If your application already has a tooltip manager and you call `InitTooltipManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, you should not call `InitTooltipManager` if you create a `CTooltipManager` object directly. If you are not using a custom `CTooltipManager`, you should use `GetTooltipManager` to create a `CTooltipManager` object.  
   
 ##  <a name="cwinappex__isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate  
  [!INCLUDE[cpp_fp_under_construction](../../includes/cpp-fp-under-construction-md.md)]  

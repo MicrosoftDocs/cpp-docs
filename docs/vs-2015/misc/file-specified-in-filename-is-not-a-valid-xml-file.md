@@ -19,7 +19,7 @@ manager: "wpickett"
 The file name that you supplied is not a valid XML file. To specify the allowed structure and content of an XML document, you can use a Document Type Definition (DTD), a Microsoft XML-Data Reduced (XDR) schema, or an XML Schema definition language (XSD) schema. XSD schemas are the preferred way to specify XML grammars in the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
 > [!NOTE]
->  In some earlier versions of Visual Studio, the **XML Designer** is the designer for typed datasets and XML schema. The **XML Designer** can still be used to create and edit XML schema files. However, in [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)], the designer for creating and editing typed datasets is the **Dataset Designer**. For more information, see [Creating and Editing Typed Datasets](../Topic/Creating%20and%20Editing%20Typed%20Datasets.md).  
+>  In some earlier versions of Visual Studio, the **XML Designer** is the designer for typed datasets and XML schema. The **XML Designer** can still be used to create and edit XML schema files. However, in [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)], the designer for creating and editing typed datasets is the **Dataset Designer**. For more information, see [Creating and Editing Typed Datasets](http://msdn.microsoft.com/library/cd0dbe93-be9b-41e4-bc39-e9300678c1f2).  
   
 ### To correct this error  
   
@@ -31,4 +31,4 @@ The file name that you supplied is not a valid XML file. To specify the allowed 
   
 ## See Also  
  <xref:System.Xml>   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)

@@ -182,9 +182,9 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
   
 -   Supply type information for each event by passing a pointer to an [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) structure as a parameter to each entry. On the x86 platform, the `_ATL_FUNC_INFO.cc` value must be CC_CDECL with the callback function calling method of __stdcall.  
   
--   Call [DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md) to establish the connection between the source object and the base class.  
+-   Call [DispEventAdvise](http://msdn.microsoft.com/library/ae1a44dd-f7cb-4ad0-90b7-bacb865076bf) to establish the connection between the source object and the base class.  
   
--   Call [DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md) to break the connection.  
+-   Call [DispEventUnadvise](http://msdn.microsoft.com/library/dca9e50a-89bd-4643-82ba-a692087e9dda) to break the connection.  
   
  You must derive from `IDispEventSimpleImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventSimpleImpl` base classes.  
   

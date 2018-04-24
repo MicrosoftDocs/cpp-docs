@@ -23,7 +23,7 @@ manager: "ghogen"
 # How to: Write a parallel_for Loop
 [!INCLUDE[blank_token](../../includes/blank-token.md)]
 
-This example demonstrates how to use [concurrency::parallel_for](../Topic/parallel_for%20Function.md) to compute the product of two matrices.  
+This example demonstrates how to use [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) to compute the product of two matrices.  
   
 ## Example  
  The following example shows the `matrix_multiply` function, which computes the product of two square matrices.  
@@ -56,5 +56,5 @@ parallel: 1311
   
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_for Function](../Topic/parallel_for%20Function.md)
+ [parallel_for Function](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d)
 

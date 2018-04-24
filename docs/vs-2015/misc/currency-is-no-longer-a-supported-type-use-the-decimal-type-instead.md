@@ -30,5 +30,5 @@ The `Currency` data type has been replaced by the `Decimal` data type.
 -   Use the `Decimal` data type instead of `Currency`.  
   
 ## See Also  
- [Decimal Data Type](../Topic/Decimal%20Data%20Type%20\(Visual%20Basic\).md)   
+ [Decimal Data Type](http://msdn.microsoft.com/library/1d855b45-afe2-45b0-a623-96b6f63a43d5)   
  [Data Type Changes in Visual Basic](http://msdn.microsoft.com/en-us/0aca9f54-7231-49a5-ab26-a68ca79d08f3)

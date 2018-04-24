@@ -27,9 +27,9 @@ An <xref:System.OutOfMemoryException> exception is thrown when an attempt to all
   
 ## Associated Tips  
  **If you are creating an array, make sure the size is correct.**  
- For more information, Visual Basic users can see [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md).  
+ For more information, Visual Basic users can see [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e).  
   
- For more information, C# users can see [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md).  
+ For more information, C# users can see [Arrays](http://msdn.microsoft.com/library/bb79bdde-e570-4c30-adb0-1dd5759ae041).  
   
  **Be sure you have enough memory for internal purposes and new managed objects.**  
  If you are programming on the [!INCLUDE[Compact](../includes/compact-md.md)], the common language runtime throws this exception when there is not enough memory for internal purposes or new managed objects. To prevent the exception, avoid programming large methods that consume 64 or more kilobytes of memory.  
@@ -53,4 +53,4 @@ An <xref:System.OutOfMemoryException> exception is thrown when an attempt to all
   
 ## See Also  
  <xref:System.OutOfMemoryException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

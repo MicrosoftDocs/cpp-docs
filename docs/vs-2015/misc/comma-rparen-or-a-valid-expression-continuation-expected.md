@@ -30,5 +30,5 @@ A list, such as an argument list in a procedure definition or a procedure call, 
 -   Use a comma (,) to separate list members and a closing parentheses ()) to terminate the list.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)   
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)

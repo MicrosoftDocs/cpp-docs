@@ -26,18 +26,18 @@ The topics in this section describe the overall structure of [!INCLUDE[vsprvs](.
  [Implementation Strategies](../misc/implementation-strategies.md)  
  Describes the extension of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] by using add-ins or VSPackages, or a combination of both.  
   
- [The Experimental Instance](../Topic/The%20Experimental%20Instance.md)  
+ [The Experimental Instance](http://msdn.microsoft.com/library/ead0df4e-6f88-4b42-9297-581b7902f050)  
  Explains the experimental build of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. When you develop an application that might change [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], the [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] provides the experimental build for you to use instead of the released build.  
   
- [Visual Studio Shell](../Topic/Visual%20Studio%20Shell.md)  
+ [Visual Studio Shell](http://msdn.microsoft.com/library/cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36)  
  Describes the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE, which is the primary agent of integration in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Visual Studio SDK and Automation](../Topic/Visual%20Studio%20SDK%20and%20Automation.md)  
+ [Visual Studio SDK and Automation](http://msdn.microsoft.com/library/918cf97f-53f4-4fb5-8639-88f0b2852846)  
  Discusses using automation, VSPackages, or a combination to create [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibility applications.  
   
  [Visual Studio SDK and Managed Code](../misc/visual-studio-sdk-and-managed-code.md)  
  Compares the different ways to write a VSPackage in managed code.  
   
 ## Related Sections  
- [VSSDK Utilities](../Topic/VSSDK%20Utilities.md)  
+ [VSSDK Utilities](http://msdn.microsoft.com/library/a469208a-cb70-4d87-a79b-d2086fc4fae4)  
  Describes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] and its IDE, and introduces strategies and techniques for extending the IDE.

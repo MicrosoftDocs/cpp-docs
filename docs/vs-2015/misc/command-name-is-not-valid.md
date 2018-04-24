@@ -26,4 +26,4 @@ This error generally occurs when a command or alias of a command not recognized 
 1.  Re-enter the command name or choose a valid command name.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a)

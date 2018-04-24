@@ -34,4 +34,4 @@ The code has a `Handles` clause that contains an exclamation point (`!`).
      [!code-vb[VbVbalrEventError#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#21)]  
   
 ## See Also  
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1040
 Preprocessor directives must appear as the first non-whitespace character on a line  
   
- A [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md) was found on a line and was not the first token on the line. A directive must be the first token on the line.  
+ A [preprocessor directive](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724) was found on a line and was not the first token on the line. A directive must be the first token on the line.  
   
  The following sample generates CS1040:  
   

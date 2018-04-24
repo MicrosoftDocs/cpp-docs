@@ -30,4 +30,4 @@ Use the `#Region` directive to specify a block of code that you can expand or co
 1.  Insert `#End Region` at the appropriate place in the code after the `#Region` statement.  
   
 ## See Also  
- [#Region Directive](../Topic/%23Region%20Directive.md)
+ [#Region Directive](http://msdn.microsoft.com/library/90a6a104-3cbf-47d0-bdc4-b585d0921b87)

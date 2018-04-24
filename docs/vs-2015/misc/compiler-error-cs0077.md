@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0077
 The as operator must be used with a reference type or nullable type ('int' is a non-nullable value type).  
   
- The [as](../Topic/as%20\(C%23%20Reference\).md) operator was passed a [value type](../Topic/Value%20Types%20\(C%23%20Reference\).md). Because `as` can return [null](../Topic/null%20\(C%23%20Reference\).md), it can only be passed [reference types](../Topic/Reference%20Types%20\(C%23%20Reference\).md) or nullable type. For more information about nullable types, see [Nullable Types](../Topic/Nullable%20Types%20\(C%23%20Programming%20Guide\).md).  
+ The [as](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) operator was passed a [value type](http://msdn.microsoft.com/library/471eb994-2958-49d5-a6be-19b4313f80a3). Because `as` can return [null](http://msdn.microsoft.com/library/fecb1c60-6232-4efe-87f7-9a86ba2e9119), it can only be passed [reference types](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) or nullable type. For more information about nullable types, see [Nullable Types](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6).  
   
  The following sample generates CS0077:  
   

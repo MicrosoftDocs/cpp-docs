@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1565
 Conflicting options specified: Win32 resource file; Win32 icon  
   
- It is not valid to specify both the [/win32res](../Topic/-win32res%20\(C%23%20Compiler%20Options\).md) compiler option and the [/win32ico](../Topic/-win32icon%20\(C%23%20Compiler%20Options\).md) compiler option in the same compilation.
+ It is not valid to specify both the [/win32res](http://msdn.microsoft.com/library/3c33f750-6948-4c7e-a27e-bef98f77255b) compiler option and the [/win32ico](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) compiler option in the same compilation.

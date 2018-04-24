@@ -26,8 +26,8 @@ manager: "douge"
   
 ### To correct this error  
   
--   Set the [ClickOnce Deployment Manifest](../Topic/ClickOnce%20Deployment%20Manifest.md)`extension` attribute to a value that starts with a period character (.), for example, ".doc".  
+-   Set the [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b)`extension` attribute to a value that starts with a period character (.), for example, ".doc".  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243)

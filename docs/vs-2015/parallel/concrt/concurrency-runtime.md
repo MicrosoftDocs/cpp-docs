@@ -111,7 +111,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
 |[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/LinkID=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
 |[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/LinkID=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
 |[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/LinkID=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
-|[Parallel Programming](../Topic/Parallel%20Programming%20in%20the%20.NET%20Framework.md)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)].|  
+|[Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)].|  
   
 ## See Also  
  [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md)

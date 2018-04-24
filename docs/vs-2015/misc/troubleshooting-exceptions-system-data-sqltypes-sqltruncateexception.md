@@ -23,5 +23,5 @@ The exception that is thrown when setting a value into a <xref:System.Data.SqlTy
   
 ## See Also  
  <xref:System.Data.SqlTypes.SqlTruncateException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [SqlTypes and the DataSet](../Topic/SqlTypes%20and%20the%20DataSet.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [SqlTypes and the DataSet](http://msdn.microsoft.com/library/9172c20a-9876-4b3b-9c97-1963c02b1993)

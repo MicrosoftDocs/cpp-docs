@@ -27,14 +27,14 @@ A <xref:System.RankException> exception is thrown when an array with the wrong n
   
 ## Associated Tips  
  **Make sure your array has the required number of dimensions.**  
- For more information, Visual Basic users can see [Array Dimensions in Visual Basic](../Topic/Array%20Dimensions%20in%20Visual%20Basic.md).  
+ For more information, Visual Basic users can see [Array Dimensions in Visual Basic](http://msdn.microsoft.com/library/385e911b-18c1-4e98-9924-c6d279101dd9).  
   
- For more information, C# users can see [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md).  
+ For more information, C# users can see [Arrays](http://msdn.microsoft.com/library/bb79bdde-e570-4c30-adb0-1dd5759ae041).  
   
 ## Remarks  
  Since array subscripts start at 0, the lowest available subscript for every dimension is always 0.  
   
 ## See Also  
  <xref:System.RankException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

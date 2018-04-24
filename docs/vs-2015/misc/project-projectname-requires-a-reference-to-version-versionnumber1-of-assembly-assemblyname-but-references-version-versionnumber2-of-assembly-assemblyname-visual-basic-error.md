@@ -32,8 +32,8 @@ A project makes an indirect reference to an assembly that is defined elsewhere, 
 -   Remove the indirect reference to the earlier version of the assembly, and use the direct reference to the later version.  
   
 ## See Also  
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
+ [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676)   
  [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
  [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

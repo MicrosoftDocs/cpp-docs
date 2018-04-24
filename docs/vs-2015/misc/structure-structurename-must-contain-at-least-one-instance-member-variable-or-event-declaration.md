@@ -30,6 +30,6 @@ A functionally empty structure occurs. At least one variable member must be decl
 -   Add a `Dim` statement or an `Event` statement to the structure.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

@@ -19,7 +19,7 @@ ms.author: "mblome"
 manager: "douge"
 ---
 # Command &lt;name&gt; does not accept arguments or switches.
-This error generally occurs when a switch or argument has been entered with a command or alias that does not use arguments or switches. If an alias has been entered, the full command name appears in the error message text, not the alias name. For a list of valid commands that use switches and arguments, see [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md).  
+This error generally occurs when a switch or argument has been entered with a command or alias that does not use arguments or switches. If an alias has been entered, the full command name appears in the error message text, not the alias name. For a list of valid commands that use switches and arguments, see [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1).  
   
 ### To correct this error  
   
@@ -27,5 +27,5 @@ This error generally occurs when a switch or argument has been entered with a co
   
 ## See Also  
  [PAVE Visual Studio Commands and Switches](http://msdn.microsoft.com/en-us/262ad510-8ba0-4b39-a9cf-4fb8f891e63c)   
- [Command Window](../Topic/Command%20Window.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a)   
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

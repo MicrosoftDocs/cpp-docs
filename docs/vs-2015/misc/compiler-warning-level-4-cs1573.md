@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 4) CS1573
 Parameter 'parameter' has no matching param tag in the XML comment for 'parameter' (but other parameters do)  
   
- When using the [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) compiler option, a comment was specified for some but not all parameters in a method. You may have forgotten to enter a comment for these parameters.  
+ When using the [/doc](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a) compiler option, a comment was specified for some but not all parameters in a method. You may have forgotten to enter a comment for these parameters.  
   
  The following sample generates CS1573:  
   

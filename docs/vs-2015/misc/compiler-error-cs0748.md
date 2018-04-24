@@ -43,4 +43,4 @@ class CS0748
 ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md)
+ [Lambda Expressions](http://msdn.microsoft.com/library/57e3ba27-9a82-4067-aca7-5ca446b7bf93)

@@ -34,5 +34,5 @@ manager: "wpickett"
 ## See Also  
  [MyClass - delete](http://msdn.microsoft.com/en-us/5db36f9b-f796-4b6a-ba34-cac1fde6eb62)   
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [NotOverridable](http://msdn.microsoft.com/library/66ec6984-f5f5-4857-b362-6a3907aaf9e0)   
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

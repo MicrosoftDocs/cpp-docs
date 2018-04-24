@@ -48,7 +48,7 @@ DELAYSIGN[:NO]
   
  For example, using **/DELAYSIGN** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly.  
   
- See [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) and [Delay Signing an Assembly](../Topic/Delay%20Signing%20an%20Assembly.md) for more information on signing an assembly.  
+ See [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) and [Delay Signing an Assembly](http://msdn.microsoft.com/library/9d300e17-5bf1-4360-97da-2aa55efd9070) for more information on signing an assembly.  
   
  Other linker options that affect assembly generation are:  
   

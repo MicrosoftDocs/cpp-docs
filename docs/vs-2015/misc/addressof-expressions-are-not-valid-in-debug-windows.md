@@ -30,5 +30,5 @@ manager: "wpickett"
 1.  Remove `AddressOf` statements from debugging code.  
   
 ## See Also  
- [AddressOf Operator](../Topic/AddressOf%20Operator%20\(Visual%20Basic\).md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [AddressOf Operator](http://msdn.microsoft.com/library/8105a59d-60d8-4ab5-b221-5899cdfacbf4)   
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

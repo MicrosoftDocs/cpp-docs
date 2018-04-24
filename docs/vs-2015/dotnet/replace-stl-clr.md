@@ -38,7 +38,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `replace`. For more information, see [replace](../Topic/replace.md).  
+ This function behaves the same as the STL function `replace`. For more information, see [replace](http://msdn.microsoft.com/library/8324dd0c-f3f7-4035-9fbe-654010366149).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

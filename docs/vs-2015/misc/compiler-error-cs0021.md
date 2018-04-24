@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0021
 Cannot apply indexing with [] to an expression of type 'type'  
   
- An attempt was made to access a value through an indexer on a data type that does not support [Indexers](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md).  
+ An attempt was made to access a value through an indexer on a data type that does not support [Indexers](http://msdn.microsoft.com/library/022cd27d-d5e0-4cfe-8b97-dc018cc3355d).  
   
  You may get CS0021 when trying to use an indexer in a C++ assembly. In this case, decorate the C++ class with the `DefaultMember` attribute so the C# compiler knows which indexer is the default. The following sample generates CS0021.  
   

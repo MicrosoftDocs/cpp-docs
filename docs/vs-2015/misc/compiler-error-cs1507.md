@@ -24,10 +24,10 @@ manager: "wpickett"
 # Compiler Error CS1507
 Cannot link resource file 'file' when building a module  
   
- [/linkresource](../Topic/-linkresource%20\(C%23%20Compiler%20Options\).md) was used in the same compilation with [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md), which is not allowed. For example, the following options would generate CS1507:  
+ [/linkresource](http://msdn.microsoft.com/library/440c26c2-77c1-4811-a0a3-57cce3f5fc96) was used in the same compilation with [/target:module](http://msdn.microsoft.com/library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72), which is not allowed. For example, the following options would generate CS1507:  
   
 ```  
 csc /linkresource:rf.resource /target:module in.cs  
 ```  
   
- Embeding resourrces ([/resource](../Topic/-resource%20\(C%23%20Compiler%20Options\).md)), however, is allowed.
+ Embeding resourrces ([/resource](http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f)), however, is allowed.

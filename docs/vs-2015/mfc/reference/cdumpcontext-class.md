@@ -66,7 +66,7 @@ class CDumpContext
 ## Remarks  
  `CDumpContext` does not have a base class.  
   
- You can use [afxDump](../Topic/afxDump%20\(CDumpContext%20in%20MFC\).md), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
+ You can use [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
   
  Several of the memory [diagnostic services](../../mfc/reference/diagnostic-services.md) use `afxDump` for their output.  
   
@@ -82,7 +82,7 @@ class CDumpContext
   
  Before you create your own `CDumpContext` object, you must create a `CFile` object that serves as the dump destination.  
   
- For more information on `CDumpContext`, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For more information on `CDumpContext`, see [Debugging MFC Applications](http://msdn.microsoft.com/library/b154fc31-5e90-4734-8cbd-58dd9fe1f750).  
   
  **#define _DEBUG**  
   

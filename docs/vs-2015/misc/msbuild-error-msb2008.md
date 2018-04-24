@@ -31,4 +31,4 @@ manager: "douge"
 -   If the project is not a [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../includes/csprcs-md.md)] project, use the appropriate tool to convert it.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

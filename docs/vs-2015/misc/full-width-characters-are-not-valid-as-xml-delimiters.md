@@ -30,6 +30,6 @@ An XML literal has been defined that includes a full-width character as a delimi
 -   Remove the full-width character from the XML literal definition and replace it with a valid ANSI delimiter character. Valid delimiter characters include the following: `<`, `>`, `=`, `:`, `/`.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [Character Encoding in the .NET Framework](http://msdn.microsoft.com/library/bf6d9823-4c2d-48af-b280-919c5af66ae9)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

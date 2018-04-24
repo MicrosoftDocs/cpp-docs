@@ -40,7 +40,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `nth_element`. For more information, see [nth_element](../Topic/nth_element.md).  
+ This function behaves the same as the STL function `nth_element`. For more information, see [nth_element](http://msdn.microsoft.com/library/eda88e94-8840-4568-a83b-d03deeda9cf6).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

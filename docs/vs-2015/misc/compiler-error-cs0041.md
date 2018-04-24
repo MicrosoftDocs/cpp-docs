@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0041
 The fully qualified name for 'type' is too long for debug information. Compile without '/debug' option.  
   
- This error can occur when using the [/debug](../Topic/-debug%20\(C%23%20Compiler%20Options\).md) compiler option. If you encounter this error, try to delete the PDB files in the bin directory and recompiling. If you are still encountering this error, you may have to repair or reinstall [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ This error can occur when using the [/debug](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) compiler option. If you encounter this error, try to delete the PDB files in the bin directory and recompiling. If you are still encountering this error, you may have to repair or reinstall [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].

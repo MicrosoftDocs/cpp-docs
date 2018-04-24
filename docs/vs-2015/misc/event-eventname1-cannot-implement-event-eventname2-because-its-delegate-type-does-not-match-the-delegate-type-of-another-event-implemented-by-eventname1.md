@@ -30,4 +30,4 @@ manager: "wpickett"
 -   Implement the events separately.  
   
 ## See Also  
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

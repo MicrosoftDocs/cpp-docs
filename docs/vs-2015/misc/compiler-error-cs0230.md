@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0230
 Type and identifier are both required in a foreach statement  
   
- A [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) statement was poorly formed.  
+ A [foreach](http://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec) statement was poorly formed.  
   
  The following sample generates CS0230:  
   

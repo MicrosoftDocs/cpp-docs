@@ -31,5 +31,5 @@ An attempt was made to use default property syntax with a structure that has no 
   
 ## See Also  
  [Default Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/9b8cfad7-40ac-4b83-affb-1ff781755a4c)   
- [Structures and Other Programming Elements](../Topic/Structures%20and%20Other%20Programming%20Elements%20\(Visual%20Basic\).md)   
+ [Structures and Other Programming Elements](http://msdn.microsoft.com/library/0f849313-ccd2-4c9a-acb9-69de6751c088)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)

@@ -26,4 +26,4 @@ Internal Compiler Error. An internal error has occurred in the compiler. To work
   
  Please create a bug report file with the '/bugreport' option, and submit the report to your assigned problem reporting contact.  
   
- Use the [/bugreport](../Topic/-bugreport%20\(C%23%20Compiler%20Options\).md) compiler option to capture the problem.
+ Use the [/bugreport](http://msdn.microsoft.com/library/f39665e3-4f6f-4357-88a2-3274c7bec0c1) compiler option to capture the problem.

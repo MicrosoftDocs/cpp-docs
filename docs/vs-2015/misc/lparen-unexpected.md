@@ -34,6 +34,6 @@ manager: "wpickett"
 -   If you need a group of elements of the data type that is to be supplied for a data-type parameter, you must use a collection instead of an array.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
  [NIB Collections in Visual Basic](http://msdn.microsoft.com/en-us/8b2b7845-2251-4573-8dd3-c9f9c0a66a21)   
  [Managing Groups of Objects in Visual Basic](http://msdn.microsoft.com/en-us/50be4910-4732-4d5f-a18a-055a162e9037)

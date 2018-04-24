@@ -38,16 +38,16 @@ The Concurrency Runtime provides several data structures that let you synchroniz
 ##  <a name="critical_section"></a> critical_section  
  The [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) class represents a cooperative mutual exclusion object that yields to other tasks instead of preempting them. Critical sections are useful when multiple threads require exclusive read and write access to shared data.  
   
- The `critical_section` class is non-reentrant. The [concurrency::critical_section::lock](../Topic/critical_section::lock%20Method.md) method throws an exception of type [concurrency::improper_lock](../../parallel/concrt/reference/improper-lock-class.md) if it is called by the thread that already owns the lock.  
+ The `critical_section` class is non-reentrant. The [concurrency::critical_section::lock](http://msdn.microsoft.com/library/62cc3d7b-4331-403e-8595-d07ff24023e4) method throws an exception of type [concurrency::improper_lock](../../parallel/concrt/reference/improper-lock-class.md) if it is called by the thread that already owns the lock.  
   
 ### Methods and Features  
  The following table shows the important methods that are defined by the `critical_section` class.  
   
 |Method|Description|  
 |------------|-----------------|  
-|[lock](../Topic/critical_section::lock%20Method.md)|Acquires the critical section. The calling context blocks until it acquires the lock.|  
-|[try_lock](../Topic/critical_section::try_lock%20Method.md)|Tries to acquire the critical section, but does not block.|  
-|[unlock](../Topic/critical_section::unlock%20Method.md)|Releases the critical section.|  
+|[lock](http://msdn.microsoft.com/library/62cc3d7b-4331-403e-8595-d07ff24023e4)|Acquires the critical section. The calling context blocks until it acquires the lock.|  
+|[try_lock](http://msdn.microsoft.com/library/a63f3229-2bad-4250-a35d-4c0a38b1e78a)|Tries to acquire the critical section, but does not block.|  
+|[unlock](http://msdn.microsoft.com/library/a2c8a43e-c016-4562-b015-0b7e087737ff)|Releases the critical section.|  
   
  [[Top](#top)]  
   
@@ -60,7 +60,7 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
  When a thread that must write to a shared resource acquires a reader/writer lock, other threads that also must access the resource are blocked until the writer releases the lock. The `reader_writer_lock` class is an example of a *write-preference* lock, which is a lock that unblocks waiting writers before it unblocks waiting readers.  
   
- Like the `critical_section` class, the `reader_writer_lock` class is non-reentrant. The [concurrency::reader_writer_lock::lock](../Topic/reader_writer_lock::lock%20Method.md) and [concurrency::reader_writer_lock::lock_read](../Topic/reader_writer_lock::lock_read%20Method.md) methods throw an exception of type `improper_lock` if they are called by a thread that already owns the lock.  
+ Like the `critical_section` class, the `reader_writer_lock` class is non-reentrant. The [concurrency::reader_writer_lock::lock](http://msdn.microsoft.com/library/2785cfe2-772f-434e-b553-ece90c880536) and [concurrency::reader_writer_lock::lock_read](http://msdn.microsoft.com/library/8a3e6f7e-1bca-450b-9135-52455375a10d) methods throw an exception of type `improper_lock` if they are called by a thread that already owns the lock.  
   
 > [!NOTE]
 >  Because the `reader_writer_lock` class is non-reentrant, you cannot upgrade a read-only lock to a reader/writer lock or downgrade a reader/writer lock to a read-only lock. Performing either of these operations produces unspecified behavior.  
@@ -70,18 +70,18 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
 |Method|Description|  
 |------------|-----------------|  
-|[lock](../Topic/reader_writer_lock::lock%20Method.md)|Acquires read/write access to the lock.|  
-|[try_lock](../Topic/reader_writer_lock::try_lock%20Method.md)|Tries to acquire read/write access to the lock, but does not block.|  
-|[lock_read](../Topic/reader_writer_lock::lock_read%20Method.md)|Acquires read-only access to the lock.|  
-|[try_lock_read](../Topic/reader_writer_lock::try_lock_read%20Method.md)|Tries to acquire read-only access to the lock, but does not block.|  
-|[unlock](../Topic/reader_writer_lock::unlock%20Method.md)|Releases the lock.|  
+|[lock](http://msdn.microsoft.com/library/2785cfe2-772f-434e-b553-ece90c880536)|Acquires read/write access to the lock.|  
+|[try_lock](http://msdn.microsoft.com/library/3dc29ace-f1da-4827-803a-f3f243e6951e)|Tries to acquire read/write access to the lock, but does not block.|  
+|[lock_read](http://msdn.microsoft.com/library/8a3e6f7e-1bca-450b-9135-52455375a10d)|Acquires read-only access to the lock.|  
+|[try_lock_read](http://msdn.microsoft.com/library/558021f3-d86b-4cd7-91be-e3fed8a69ef9)|Tries to acquire read-only access to the lock, but does not block.|  
+|[unlock](http://msdn.microsoft.com/library/91aef6f4-4b07-492b-bba9-788e1bbfeddc)|Releases the lock.|  
   
  [[Top](#top)]  
   
 ##  <a name="scoped_lock"></a> scoped_lock and scoped_lock_read  
  The `critical_section` and `reader_writer_lock` classes provide nested helper classes that simplify the way you work with mutual exclusion objects. These helper classes are known as *scoped locks*.  
   
- The `critical_section` class contains the [concurrency::critical_section::scoped_lock](../Topic/critical_section::scoped_lock%20Class.md) class. The constructor acquires access to the provided `critical_section` object; the destructor releases access to that object. The `reader_writer_lock` class contains the [concurrency::reader_writer_lock::scoped_lock](../Topic/reader_writer_lock::scoped_lock%20Class.md) class, which resembles `critical_section::scoped_lock`, except that it manages write access to the provided `reader_writer_lock` object. The `reader_writer_lock` class also contains the [concurrency::reader_writer_lock::scoped_lock_read](../Topic/reader_writer_lock::scoped_lock_read%20Class.md) class. This class manages read access to the provided `reader_writer_lock` object.  
+ The `critical_section` class contains the [concurrency::critical_section::scoped_lock](http://msdn.microsoft.com/library/9564437e-8df7-4eb7-b60c-842c27ac4bb6) class. The constructor acquires access to the provided `critical_section` object; the destructor releases access to that object. The `reader_writer_lock` class contains the [concurrency::reader_writer_lock::scoped_lock](http://msdn.microsoft.com/library/35a8af75-1c30-4ce5-890d-ad0385f7a004) class, which resembles `critical_section::scoped_lock`, except that it manages write access to the provided `reader_writer_lock` object. The `reader_writer_lock` class also contains the [concurrency::reader_writer_lock::scoped_lock_read](http://msdn.microsoft.com/library/808cf852-b770-448c-80d2-e15ee4c0d208) class. This class manages read access to the provided `reader_writer_lock` object.  
   
  Scoped locks provide several benefits when you are working with `critical_section` and `reader_writer_lock` objects manually. Typically, you allocate a scoped lock on the stack. A scoped lock releases access to its mutual exclusion object automatically when it is destroyed; therefore, you do not manually unlock the underlying object. This is useful when a function contains multiple `return` statements. Scoped locks can also help you write exception-safe code. When a `throw` statement causes the stack to unwind, the destructor for any active scoped lock is called, and therefore the mutual exclusion object is always correctly released.  
   
@@ -98,10 +98,10 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
 |Method|Description|  
 |------------|-----------------|  
-|[wait](../Topic/event::wait%20Method.md)|Waits for the event to become signaled.|  
-|[set](../Topic/event::set%20Method.md)|Sets the event to the signaled state.|  
-|[reset](../Topic/event::reset%20Method.md)|Sets the event to the non-signaled state.|  
-|[wait_for_multiple](../Topic/event::wait_for_multiple%20Method.md)|Waits for multiple events to become signaled.|  
+|[wait](http://msdn.microsoft.com/library/ecb63000-4ed0-4e3c-890a-d9662c182ad5)|Waits for the event to become signaled.|  
+|[set](http://msdn.microsoft.com/library/8555fca6-fed7-48d8-8136-311742c1fe3b)|Sets the event to the signaled state.|  
+|[reset](http://msdn.microsoft.com/library/b171c7b3-3a49-4dbd-97f5-69c2219988d2)|Sets the event to the non-signaled state.|  
+|[wait_for_multiple](http://msdn.microsoft.com/library/61f627f6-b2a3-4884-a75d-07cc970156d8)|Waits for multiple events to become signaled.|  
   
 ### Example  
  For an example that shows how to use the `event` class, see [Comparing Synchronization Data Structures to the Windows API](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).  

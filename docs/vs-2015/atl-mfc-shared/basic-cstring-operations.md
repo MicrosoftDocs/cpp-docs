@@ -42,7 +42,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
   
 - [Converting CString objects](#_core_converting_cstring_objects)  
   
- `Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a `typedef` of `CStringT`. More exactly, `CString` is a `typedef` of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`. For more information on explicit specialization, see [Class Template Instantiation](../Topic/Class%20Template%20Instantiation.md).  
+ `Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a `typedef` of `CStringT`. More exactly, `CString` is a `typedef` of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`. For more information on explicit specialization, see [Class Template Instantiation](http://msdn.microsoft.com/library/750cb629-24bd-449f-a7f1-9dcb27ecf940).  
   
  `CString`, `CStringA`, and `CStringW` are defined in atlstr.h. `CStringT` is defined in cstringt.h.  
   
@@ -109,8 +109,8 @@ CString cs("meow");
 ## See Also  
  [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)   
- [Class Template Instantiation](../Topic/Class%20Template%20Instantiation.md)   
- [Explicit Specialization of Class Templates](../Topic/Explicit%20Specialization%20of%20Class%20Templates.md)   
+ [Class Template Instantiation](http://msdn.microsoft.com/library/750cb629-24bd-449f-a7f1-9dcb27ecf940)   
+ [Explicit Specialization of Class Templates](http://msdn.microsoft.com/library/7ad67abd-5cb5-4d36-a3df-31a71ca9c49b)   
  [Template Specialization](../cpp/template-specialization-cpp.md)   
  [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md)
 

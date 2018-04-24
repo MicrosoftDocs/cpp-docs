@@ -25,7 +25,7 @@ An expression in an assignment statement or a declaration uses <xref:System.Void
   
  The <xref:System.Void> structure is a specialized type used internally by the .NET Framework and particularly by Visual C# and Visual C++. It represents a return value type for a method that does not return a value. Visual Basic uses a `Sub` procedure when a value is not returned and a `Function` procedure when a value is returned.  
   
- You can test a reference variable with the [GetType Operator](../Topic/GetType%20Operator%20\(Visual%20Basic\).md) operator to see if its run-time type is <xref:System.Void>, but you cannot use <xref:System.Void> in any other context.  
+ You can test a reference variable with the [GetType Operator](http://msdn.microsoft.com/library/4f733297-2503-4607-850c-15eba65fff90) operator to see if its run-time type is <xref:System.Void>, but you cannot use <xref:System.Void> in any other context.  
   
  **Error ID:** BC31422  
   
@@ -37,4 +37,4 @@ An expression in an assignment statement or a declaration uses <xref:System.Void
   
 ## See Also  
  <xref:System.Void>   
- [GetType Operator](../Topic/GetType%20Operator%20\(Visual%20Basic\).md)
+ [GetType Operator](http://msdn.microsoft.com/library/4f733297-2503-4607-850c-15eba65fff90)

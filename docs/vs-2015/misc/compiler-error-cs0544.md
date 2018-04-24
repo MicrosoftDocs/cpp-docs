@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0544
 'property override': cannot override because 'non-property' is not a property  
   
- An attempt was made to override a nonproperty data type as a [property](../Topic/Properties%20\(C%23%20Programming%20Guide\).md), which is not allowed.  
+ An attempt was made to override a nonproperty data type as a [property](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8), which is not allowed.  
   
  The following sample generates CS0544:  
   

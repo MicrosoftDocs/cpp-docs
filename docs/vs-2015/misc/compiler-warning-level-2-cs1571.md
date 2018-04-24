@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 2) CS1571
 XML comment on 'construct' has a duplicate param tag for 'parameter'  
   
- When using the [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) compiler option, multiple comments were found for the same method parameter. Remove one of the duplicate lines.  
+ When using the [/doc](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a) compiler option, multiple comments were found for the same method parameter. Remove one of the duplicate lines.  
   
  The following sample generates CS1571:  
   

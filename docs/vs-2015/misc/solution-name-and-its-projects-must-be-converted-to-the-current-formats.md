@@ -42,4 +42,4 @@ You have opened a solution that was created in a previous version of Visual Stud
   
 ## See Also  
  [Project Dependencies Dialog Box](http://msdn.microsoft.com/en-us/d66e48c3-3722-40dd-99b4-53d93cac128e)   
- [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md)
+ [Compiling and Building](http://msdn.microsoft.com/library/c7958821-285f-4e28-9e7a-b5d8b40336a1)

@@ -32,4 +32,4 @@ A `While` statement occurs without a corresponding `End While` statement. An `En
 2.  Add an `End While` statement to the end of the `While` block.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)
+ [While...End While Statement](http://msdn.microsoft.com/library/b931d1ce-e8ed-44d8-a13d-92a4f5458a1e)

@@ -29,7 +29,7 @@ The latest version of this topic can be found at [Compiler Error C2094](https://
   
 label 'identifier' was undefined  
   
- The label used by a [goto](../Topic/goto%20\(C%23%20Reference\).md) statement does not exist in the function.  
+ The label used by a [goto](http://msdn.microsoft.com/library/2c03c9c1-8119-44ef-b740-fb3d287a42fe) statement does not exist in the function.  
   
  The following sample generates C2094:  
   

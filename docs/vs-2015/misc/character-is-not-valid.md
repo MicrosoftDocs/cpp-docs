@@ -32,4 +32,4 @@ The current context does not permit this character. For example, a tilde (`~`) o
 2.  Check that the programming element is spelled or constructed using only characters that are valid for that kind of element.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)

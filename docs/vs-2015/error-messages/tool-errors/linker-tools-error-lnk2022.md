@@ -37,7 +37,7 @@ metadata operation failed (HRESULT) : error_message
   
  Another possible cause for LNK2022 is when the linker finds a metadata file in a different location than was specified to the compiler (with [#using](../../preprocessor/hash-using-directive-cpp.md) ). Make sure that the metadata file (.dll or .netmodule) is in the same location when passed to the linker, as it was when it was passed to the compiler.  
   
- When building an ATL application, the use of [_ATL_MIXED](../Topic/_ATL_MIXED.md) is required in all compilands, if it is used in at least one.  
+ When building an ATL application, the use of [_ATL_MIXED](http://msdn.microsoft.com/library/11b59a83-7098-43e2-9f7b-408299930966) is required in all compilands, if it is used in at least one.  
   
 ## Example  
  The following sample defines an empty type.  

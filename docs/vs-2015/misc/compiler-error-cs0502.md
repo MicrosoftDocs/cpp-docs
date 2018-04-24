@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0502
 'member' cannot be both abstract and sealed  
   
- A class member cannot be both [abstract](../Topic/abstract%20\(C%23%20Reference\).md) and [sealed](../Topic/sealed%20\(C%23%20Reference\).md).  
+ A class member cannot be both [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) and [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f).  
   
  The following sample generates CS0502:  
   

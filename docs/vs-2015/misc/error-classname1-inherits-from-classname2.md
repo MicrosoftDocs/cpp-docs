@@ -32,4 +32,4 @@ A circular inheritance hierarchy has been detected. A class is designated as inh
 -   Break the circularity by removing at least one `Inherits` statement in the circular inheritance path.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

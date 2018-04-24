@@ -30,5 +30,5 @@ A `ReadOnly` property occurs in a context that assigns a value to it. Only writa
 -   Remove the `ReadOnly` keyword from the `Property` statement declaring the variable, or remove the statement that assigns a value to it.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
- [Property Statement](../Topic/Property%20Statement.md)
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)   
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)

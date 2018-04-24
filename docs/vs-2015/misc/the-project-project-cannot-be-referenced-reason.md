@@ -23,4 +23,4 @@ A project-to-project reference to a particular project could not be made.
  Referencing a project that builds an .exe file is the most common reason for this error. This error also indicates that a project references a project whose output is not an assembly (for example, a native C++ application).  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)

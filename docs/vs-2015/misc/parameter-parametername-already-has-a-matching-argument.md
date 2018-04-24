@@ -32,4 +32,4 @@ An argument is passed by name more than one time in the same procedure call.
 -   Remove the duplicated argument from the argument list.  
   
 ## See Also  
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [Passing Arguments by Position and by Name](http://msdn.microsoft.com/library/1ad7358f-1da9-48da-a95b-f3c7ed41eff3)

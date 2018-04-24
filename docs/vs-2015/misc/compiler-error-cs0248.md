@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0248
 Cannot create an array with a negative size  
   
- An array size was specified with a negative number. For more information, see [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md).  
+ An array size was specified with a negative number. For more information, see [Arrays](http://msdn.microsoft.com/library/bb79bdde-e570-4c30-adb0-1dd5759ae041).  
   
 ## Example  
  The following sample generates CS0248:  

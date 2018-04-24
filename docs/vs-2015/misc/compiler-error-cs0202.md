@@ -27,7 +27,7 @@ foreach requires that the return type 'type' of 'type.GetEnumerator()' must have
  A <xref:System.Collections.IEnumerable.GetEnumerator%2A> function, used to enable the use of foreach statements, cannot return a pointer or array; it must return an instance of a class that is able to act as an enumerator. The proper requirements to serve as an enumerator include a public Current property and a public MoveNext method.  
   
 > [!NOTE]
->  In C# 2.0, the compiler will automatically generate Current and MoveNext for you. For more information, see the code example in [Generic Interfaces](../Topic/Generic%20Interfaces%20\(C%23%20Programming%20Guide\).md).  
+>  In C# 2.0, the compiler will automatically generate Current and MoveNext for you. For more information, see the code example in [Generic Interfaces](http://msdn.microsoft.com/library/a8fa49a1-6e78-4a09-87e5-84a0b9f5ffbe).  
   
  The following sample generates CS0202:  
   

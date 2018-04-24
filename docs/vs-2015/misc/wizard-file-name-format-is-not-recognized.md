@@ -30,4 +30,4 @@ The wizard cannot be opened. This error is generally caused by a corrupted wizar
      Re-install Visual Studio to repair the corrupted file.  
   
 ## See Also  
- [Walkthrough: Creating a Wizard](../Topic/Walkthrough:%20Creating%20a%20Wizard.md)
+ [Walkthrough: Creating a Wizard](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)

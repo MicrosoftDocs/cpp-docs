@@ -35,6 +35,6 @@ Const c As String = .name
 -   Specify the instance that contains the member that you want to access.  
   
 ## See Also  
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
  [How to: Declare an Instance of an Anonymous Type (Visual Basic)](http://msdn.microsoft.com/en-us/119f616c-9bcd-4731-ac00-4285be5959f7)   
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)

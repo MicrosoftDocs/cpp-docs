@@ -32,4 +32,4 @@ The `Private` modifier was used on a type not inside another type.
 2.  Declare the type within another type.  
   
 ## See Also  
- [Private](../Topic/Private%20\(Visual%20Basic\).md)
+ [Private](http://msdn.microsoft.com/library/aba74a2e-5824-4613-bf63-b9ec7787f4e6)

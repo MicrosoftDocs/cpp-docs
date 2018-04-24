@@ -25,4 +25,4 @@ A conversion attempts to change an argument to a type that is not valid.
 -   Change the type to one that is valid.  
   
 ## See Also  
- [Conversion Functions](../Topic/Conversion%20Functions%20\(Visual%20Basic\).md)
+ [Conversion Functions](http://msdn.microsoft.com/library/8a8fb553-a8ac-424e-8103-26eea25eaa71)

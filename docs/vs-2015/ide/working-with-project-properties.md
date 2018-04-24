@@ -73,7 +73,7 @@ In the IDE, all information that is needed to build a project is exposed as     
  ![Project property pages](../ide/media/project-property-pages-vc.png "Project_Property_Pages_VC")  
   
 > [!WARNING]
->  The                      **Common Properties** configurations in earlier versions of Visual Studio have been removed. To add a reference to a project, you now use the                      **Add Reference** dialog in the same way as for managed languages. See                      [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md).  
+>  The                      **Common Properties** configurations in earlier versions of Visual Studio have been removed. To add a reference to a project, you now use the                      **Add Reference** dialog in the same way as for managed languages. See                      [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62).  
   
 #### To set a property for a project  
   
@@ -93,7 +93,7 @@ In the IDE, all information that is needed to build a project is exposed as     
   
 -   [Command Line Property Pages](../ide/command-line-property-pages.md)  
   
--   [Project Settings for a C++ Debug Configuration](../Topic/Project%20Settings%20for%20a%20C++%20Debug%20Configuration.md)  
+-   [Project Settings for a C++ Debug Configuration](http://msdn.microsoft.com/library/860c7f13-a108-4fe5-8fca-d235cd3ca1cb)  
   
 -   [NMake Property Page](../ide/nmake-property-page.md)  
   
@@ -127,7 +127,7 @@ In the IDE, all information that is needed to build a project is exposed as     
  Applies to all items in a project configuration. Has the syntax                                  `$(name)`. An example of a global macro is                                  `$(VCInstallDir)`, which stores the root directory of your Visual Studio installation. A global macro corresponds to a                                  `PropertyGroup` in MSBuild.  
   
  item macros  
- Has the syntax                                  `%(name)`. For a file, an item macro applies only to that file—for example, you can use                                  `%(AdditionalIncludeDirectories)` to specify include directories that apply only to a particular file. This kind of item macro corresponds to an                                  `ItemGroup` metadata in MSBuild. When it's used in the context of a project configuration, an item macro applies to all files of a certain type. For example, the C/C++                                  **Preprocessor Definitions** configuration property can take a                                  `%(PreprocessorDefinitions)` item macro that applies to all .cpp files in the project. This kind of item macro corresponds to an                                  `ItemDefinitionGroup` metadata in MSBuild. For more information, see                                  [Item Definitions](../Topic/Item%20Definitions.md).  
+ Has the syntax                                  `%(name)`. For a file, an item macro applies only to that file—for example, you can use                                  `%(AdditionalIncludeDirectories)` to specify include directories that apply only to a particular file. This kind of item macro corresponds to an                                  `ItemGroup` metadata in MSBuild. When it's used in the context of a project configuration, an item macro applies to all files of a certain type. For example, the C/C++                                  **Preprocessor Definitions** configuration property can take a                                  `%(PreprocessorDefinitions)` item macro that applies to all .cpp files in the project. This kind of item macro corresponds to an                                  `ItemDefinitionGroup` metadata in MSBuild. For more information, see                                  [Item Definitions](http://msdn.microsoft.com/library/8e3dc223-f9e5-4974-aa0e-5dc7967419cb).  
   
 ### User-defined macros  
  You can create                          *user-defined macros* to use as variables in project builds. For example, you could create a user-defined macro that provides a value to a custom build step or a custom build tool. A user-defined macro is a name/value pair. In a project file, use the                          **$(***name***)** notation to access the value.  

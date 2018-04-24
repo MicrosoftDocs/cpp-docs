@@ -30,5 +30,5 @@ You have attempted to inherit from something that is not an interface.
 -   Make sure that the base interface or interfaces from which you are attempting to inherit are actually interfaces.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)   
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

@@ -30,4 +30,4 @@ The item being referenced has either not been assigned a value, or it was assign
 -   Verify that item's name is spelled and set correctly.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)

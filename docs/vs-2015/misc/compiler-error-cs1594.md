@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1594
 Delegate 'delegate' has some invalid arguments  
   
- The type of an argument passed to a [delegate](../Topic/delegate%20\(C%23%20Reference\).md) invocation does not agree with the type of the parameter in the delegate declaration.  
+ The type of an argument passed to a [delegate](http://msdn.microsoft.com/library/0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f) invocation does not agree with the type of the parameter in the delegate declaration.  
   
  The following sample generates CS1594:  
   

@@ -30,7 +30,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Adding a New Interface in an ATL Project](https://docs.microsoft.com/cpp/atl/reference/adding-a-new-interface-in-an-atl-project).  
   
   
-When you add an interface to your object or control, you create stubbed-out functions for each method in that interface. In your object or control, you can add only interfaces currently found in an existing type library. Also, the class in which you add the interface must implement the [BEGIN_COM_MAP](../Topic/BEGIN_COM_MAP.md) macro or, if the project is attributed, it must have the `coclass` attribute.  
+When you add an interface to your object or control, you create stubbed-out functions for each method in that interface. In your object or control, you can add only interfaces currently found in an existing type library. Also, the class in which you add the interface must implement the [BEGIN_COM_MAP](http://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333) macro or, if the project is attributed, it must have the `coclass` attribute.  
   
  You can add a new interface to your control in one of two ways: manually or using code wizards in Class View.  
   
@@ -48,7 +48,7 @@ When you add an interface to your object or control, you create stubbed-out func
   
 2.  Derive your object or control from the interface.  
   
-3.  Create a new [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20\(ATL\).md) for the interface or, if the project is attributed, add the `coclass` attribute.  
+3.  Create a new [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/c5363b8b-a1a2-471e-ad3a-d472f6c356c5) for the interface or, if the project is attributed, add the `coclass` attribute.  
   
 4.  Implement methods on the interface.  
   

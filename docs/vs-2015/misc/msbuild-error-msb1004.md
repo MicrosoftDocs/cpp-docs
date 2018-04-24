@@ -29,5 +29,5 @@ manager: "douge"
 1.  Specify a target or targets. You can use either a comma or a semicolon to separate a list of targets, for example, `/target:Clean;Compile`. Alternatively, you can repeat the switch, for example, `/t:Clean /t:``Compile`  
   
 ## See Also  
- [Targets](../Topic/MSBuild%20Targets.md)   
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Targets](http://msdn.microsoft.com/library/8060b4d2-e4a9-48cf-a437-852649ceb417)   
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)

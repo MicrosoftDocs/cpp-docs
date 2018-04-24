@@ -30,5 +30,5 @@ You have attempted to use the `New` keyword to implement an interface method, wh
 -   Implement interfaces with the `Implements` keyword.  
   
 ## See Also  
- [Implements Statement](../Topic/Implements%20Statement.md)   
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)   
  [NOT IN BUILD: Interfaces Overview](http://msdn.microsoft.com/en-us/f96bb470-c1b8-4c73-89bc-6f536b798da1)

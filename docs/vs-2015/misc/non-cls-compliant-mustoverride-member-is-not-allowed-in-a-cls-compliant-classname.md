@@ -23,13 +23,13 @@ manager: "wpickett"
 # Non-CLS-compliant &#39;MustOverride&#39; member is not allowed in a CLS-compliant &lt;classname&gt;
 A class is marked as `<CLSCompliant(True)>`, but it contains a `MustOverride` property or procedure that is marked as `<CLSCompliant(False)>` or is not marked.  
   
- When a class is compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), an application that uses that class accesses only the members that are also marked as `<CLSCompliant(True)>` and ignores the members that are not. However, the application cannot ignore a `MustOverride` property or procedure, because it must access that property or procedure to override it.  
+ When a class is compliant with the [Language Independence and Language-Independent Components](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), an application that uses that class accesses only the members that are also marked as `<CLSCompliant(True)>` and ignores the members that are not. However, the application cannot ignore a `MustOverride` property or procedure, because it must access that property or procedure to override it.  
   
  When you apply the <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   
  If you do not apply the <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40034  
   
@@ -42,5 +42,5 @@ A class is marked as `<CLSCompliant(True)>`, but it contains a `MustOverride` pr
 -   If you require that this member remain noncompliant, remove the `MustOverride` keyword from its definition, remove the <xref:System.CLSCompliantAttribute> from the class definition, or mark the class as `<CLSCompliant(False)>`.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)   
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

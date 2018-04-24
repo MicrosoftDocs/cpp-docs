@@ -30,4 +30,4 @@ You attempted to use an array initializer in a `Const` declaration.
 -   Change the initializer to a valid expression by removing the surrounding braces.  
   
 ## See Also  
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)

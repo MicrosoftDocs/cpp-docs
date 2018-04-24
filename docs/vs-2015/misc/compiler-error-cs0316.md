@@ -47,5 +47,5 @@ public class Test
 ```  
   
 ## See Also  
- [Indexers](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md)   
- [C# Keywords](../Topic/C%23%20Keywords.md)
+ [Indexers](http://msdn.microsoft.com/library/022cd27d-d5e0-4cfe-8b97-dc018cc3355d)   
+ [C# Keywords](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)

@@ -30,5 +30,5 @@ You have attempted to overload two methods that differ from each other only by a
 -   Make sure the methods are differentiated by more than the `ParamArray` parameters.  
   
 ## See Also  
- [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)   
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)
+ [Considerations in Overloading Procedures](http://msdn.microsoft.com/library/a2001248-10d0-42c5-b0ce-eeedc987319f)   
+ [Parameter Arrays](http://msdn.microsoft.com/library/c43edfae-9114-4096-9ebc-8c5c957a1067)

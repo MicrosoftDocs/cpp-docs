@@ -23,7 +23,7 @@ manager: "wpickett"
 # Attribute &#39;&lt;attributename&gt;&#39; cannot be specified more than once in this project, even with identical parameter values
 A custom attribute is specified more than once on the same programming element, but an <xref:System.AttributeUsageAttribute> is applied to the custom attribute, and its <xref:System.AttributeUsageAttribute.AllowMultiple%2A> property is set to `False`. <xref:System.AttributeUsageAttribute.AllowMultiple%2A> controls whether the attribute is multi-use.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC41000  
   

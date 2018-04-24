@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Generic methods cannot use &#39;Handles&#39; clause
-A generic `Sub` procedure includes a [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md) clause in its declaration.  
+A generic `Sub` procedure includes a [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40) clause in its declaration.  
   
  A `Handles` clause specifies a list of events that the `Sub` procedure handles. To be an event handler, the `Sub` procedure must have the same signature as each event it is to handle. A generic procedure can be created more than once, with signatures that [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] cannot predict at compile time. Therefore, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] cannot guarantee a signature that matches those of the events in the `Handles` clause.  
   
@@ -29,10 +29,10 @@ A generic `Sub` procedure includes a [Handles](../Topic/Handles%20Clause%20\(Vis
   
 ### To correct this error  
   
--   If the `Sub` procedure needs to be generic, remove the `Handles` clause from its declaration. Use the [AddHandler Statement](../Topic/AddHandler%20Statement.md) to associate this event handler with an event.  
+-   If the `Sub` procedure needs to be generic, remove the `Handles` clause from its declaration. Use the [AddHandler Statement](http://msdn.microsoft.com/library/cfe69799-2a0f-42c0-a99e-09fed954da01) to associate this event handler with an event.  
   
--   If the `Sub` procedure needs to use the `Handles` clause to associate events, remove the [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md) clause from its declaration. You must use a nongeneric procedure with `Handles`.  
+-   If the `Sub` procedure needs to use the `Handles` clause to associate events, remove the [Of](http://msdn.microsoft.com/library/0db8f65c-65af-4089-ab7f-6fcfecb60444) clause from its declaration. You must use a nongeneric procedure with `Handles`.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
  [NOT IN BUILD:Events and Event Handlers](http://msdn.microsoft.com/en-us/95074a0d-1cbc-4221-a95a-964185c7f962)

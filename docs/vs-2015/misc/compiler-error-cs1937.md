@@ -55,4 +55,4 @@ class Test
  The left side is generally called the "outer" side and the right is generally called the "inner" side.  
   
 ## See Also  
- [join clause](../Topic/join%20clause%20\(C%23%20Reference\).md)
+ [join clause](http://msdn.microsoft.com/library/76e9df84-092c-41a6-9537-c3f1cbd7f0fb)

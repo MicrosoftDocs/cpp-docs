@@ -30,6 +30,6 @@ A `Case` statement contains an `Is` clause but no comparison operator such as `=
 -   Remove the `Is` keyword or follow it with a comparison operator.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)   
- [Comparison Operators in Visual Basic](../Topic/Comparison%20Operators%20in%20Visual%20Basic.md)   
- [Comparison Operators](../Topic/Comparison%20Operators%20\(Visual%20Basic\).md)
+ [Select...Case Statement](http://msdn.microsoft.com/library/68877b65-5419-4bf0-a465-20cd0e4c7d44)   
+ [Comparison Operators in Visual Basic](http://msdn.microsoft.com/library/0b570339-5407-474f-8421-e183a8b303ee)   
+ [Comparison Operators](http://msdn.microsoft.com/library/d6cb12a8-e52e-46a7-8aaf-f804d634a825)

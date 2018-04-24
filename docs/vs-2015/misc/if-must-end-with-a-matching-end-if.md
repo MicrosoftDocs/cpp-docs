@@ -32,4 +32,4 @@ An `If` statement occurs without a corresponding `End If` statement. An `End If`
 2.  Add an `End If` statement to the end of the `If` block.  
   
 ## See Also  
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)

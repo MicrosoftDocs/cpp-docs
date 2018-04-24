@@ -48,7 +48,7 @@ ADO.NET is the .NET Framework API for data access and provides power and ease of
   
 |Section|Description|  
 |-------------|-----------------|  
-|[ADO.NET](../Topic/ADO.NET.md)|Provides an overview of ADO.NET, a set of classes that expose data access services to the .NET programmer.|  
+|[ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)|Provides an overview of ADO.NET, a set of classes that expose data access services to the .NET programmer.|  
   
 ## See Also  
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   

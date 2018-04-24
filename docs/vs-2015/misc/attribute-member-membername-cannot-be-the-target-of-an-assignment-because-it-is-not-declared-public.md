@@ -33,4 +33,4 @@ An attempt was made to assign a value to a private member of an attribute.
   
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

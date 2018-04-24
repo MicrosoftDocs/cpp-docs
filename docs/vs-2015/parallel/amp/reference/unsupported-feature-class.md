@@ -38,7 +38,7 @@ class unsupported_feature : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_feature::unsupported_feature Constructor](../Topic/unsupported_feature::unsupported_feature%20Constructor.md)|Constructs a new instance of the `unsupported_feature` exception.|  
+|[unsupported_feature::unsupported_feature Constructor](http://msdn.microsoft.com/library/c105205e-0712-4a75-89c4-6960812c5a64)|Constructs a new instance of the `unsupported_feature` exception.|  
   
 ## Inheritance Hierarchy  
  `exception`  

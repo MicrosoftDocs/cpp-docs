@@ -16,4 +16,4 @@ ms.author: "ahomer"
 manager: "kamrani"
 ---
 # How to: Add UI Controls and Validation Code Using the Coded UI Test Builder
-The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](../Topic/Use%20UI%20Automation%20To%20Test%20Your%20Code.md#VerifyingCodeUsingCUITGenerateAssertions).
+The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](http://msdn.microsoft.com/library/ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a).

@@ -23,5 +23,5 @@ The exception that is thrown when an attempt is made to access an unloaded appli
   
 ## See Also  
  <xref:System.AppDomainUnloadedException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [How to: Unload an Application Domain](../Topic/How%20to:%20Unload%20an%20Application%20Domain.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [How to: Unload an Application Domain](http://msdn.microsoft.com/library/f356116d-e415-4f7c-a332-6e6a60227192)

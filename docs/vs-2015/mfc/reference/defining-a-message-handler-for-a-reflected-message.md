@@ -43,7 +43,7 @@ Once you have created a new MFC control class, you can define message handlers f
   
 2.  In Class View, click the name of your control class.  
   
-3.  In the [Properties window](../Topic/Properties%20Window.md), the control class name appears in the **Class Name** list.  
+3.  In the [Properties window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca), the control class name appears in the **Class Name** list.  
   
 4.  Click the **Messages** button to display the Windows messages available to add to the control.  
   

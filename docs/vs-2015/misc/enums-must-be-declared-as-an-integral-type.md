@@ -30,5 +30,5 @@ The only valid types you can use in enumerations are `SByte`, `Byte`, `Short`, `
 -   Specify a data type of `SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, or `ULong`.  
   
 ## See Also  
- [Data Types](../Topic/Data%20Type%20Summary%20\(Visual%20Basic\).md)   
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Data Types](http://msdn.microsoft.com/library/e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0)   
+ [Enum Statement](http://msdn.microsoft.com/library/a45e51f1-65ff-48e1-bf32-79130f137377)

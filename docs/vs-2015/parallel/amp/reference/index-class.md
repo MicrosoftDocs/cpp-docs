@@ -45,33 +45,33 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::index Constructor](../Topic/index::index%20Constructor.md)|Initializes a new instance of the `index` class.|  
+|[index::index Constructor](http://msdn.microsoft.com/library/b8bb7854-eb96-4fe6-8d86-54efba3f56d5)|Initializes a new instance of the `index` class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::operator-- Operator](../Topic/index::operator--%20Operator.md)|Decrements each element of the `index` object.|  
-|[index::operator(mod)= Operator](../Topic/index::operator\(mod\)=%20Operator.md)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
-|[index::operator*= Operator](../Topic/index::operator*=%20Operator.md)|Multiplies each element of the `index` object by a number.|  
-|[index::operator/= Operator](../Topic/index::operator-=%20Operator2.md)|Divides each element of the `index` object by a number.|  
-|[index::operatorOperator](../Topic/index::operatorOperator.md)|Returns the element that's at the specified index.|  
-|[index::operator++ Operator](../Topic/index::operator++%20Operator.md)|Increments each element of the `index` object.|  
-|[index::operator+= Operator](../Topic/index::operator+=%20Operator.md)|Adds the specified number to each element of the `index` object.|  
-|[index::operator= Operator](../Topic/index::operator=%20Operator.md)|Copies the contents of the specified `index` object into this one.|  
-|[index::operator-= Operator](../Topic/index::operator-=%20Operator1.md)|Subtracts the specified number from each element of the `index` object.|  
+|[index::operator-- Operator](http://msdn.microsoft.com/library/b859aab2-6b4d-450f-9f0b-4d15da29a61f)|Decrements each element of the `index` object.|  
+|[index::operator(mod)= Operator](http://msdn.microsoft.com/library/f36dd4b7-0815-4e70-b5a9-7f8d81995b8a)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
+|[index::operator*= Operator](http://msdn.microsoft.com/library/a4290f9a-e3d8-4c68-bfe2-ff38e905b57d)|Multiplies each element of the `index` object by a number.|  
+|[index::operator/= Operator](http://msdn.microsoft.com/library/48191629-07ee-45cc-b4de-ba48acacbe9a)|Divides each element of the `index` object by a number.|  
+|[index::operatorOperator](http://msdn.microsoft.com/library/cfcc905c-e573-4607-b7de-8ed7661410ae)|Returns the element that's at the specified index.|  
+|[index::operator++ Operator](http://msdn.microsoft.com/library/6ea31225-fecc-4bcf-a497-aad2a4a861f9)|Increments each element of the `index` object.|  
+|[index::operator+= Operator](http://msdn.microsoft.com/library/08c6c3a4-7d65-4870-8213-4cda9132895c)|Adds the specified number to each element of the `index` object.|  
+|[index::operator= Operator](http://msdn.microsoft.com/library/26b659c5-a288-4045-8185-3204ed05e830)|Copies the contents of the specified `index` object into this one.|  
+|[index::operator-= Operator](http://msdn.microsoft.com/library/ee9f8b24-7309-4f1c-b845-4436d0d4f0ca)|Subtracts the specified number from each element of the `index` object.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::rank Constant](../Topic/index::rank%20Constant.md)|Stores the rank of the `index` object.|  
+|[index::rank Constant](http://msdn.microsoft.com/library/2decd0b3-b903-4745-ba76-205e0a2b3ef4)|Stores the rank of the `index` object.|  
   
 ## Inheritance Hierarchy  
  `index`  
   
 ## Remarks  
- The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](../Topic/index::operator=%20Operator.md).  
+ The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](http://msdn.microsoft.com/library/26b659c5-a288-4045-8185-3204ed05e830).  
   
 ## Requirements  
  **Header:** amp.h  

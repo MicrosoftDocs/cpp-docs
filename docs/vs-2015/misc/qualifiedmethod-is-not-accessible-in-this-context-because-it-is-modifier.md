@@ -31,6 +31,6 @@ You have attempted to access a method that is not accessible in this context due
   
 ## See Also  
  [NOT IN BUILD: Considerations for Choosing Access Levels for Methods](http://msdn.microsoft.com/en-us/8b696461-2191-4cea-bb64-5fa3449da2ff)   
- [Private](../Topic/Private%20\(Visual%20Basic\).md)   
- [Protected](../Topic/Protected%20\(Visual%20Basic\).md)   
- [Friend](../Topic/Friend%20\(Visual%20Basic\).md)
+ [Private](http://msdn.microsoft.com/library/aba74a2e-5824-4613-bf63-b9ec7787f4e6)   
+ [Protected](http://msdn.microsoft.com/library/74ad3d56-309f-49d2-b60c-1d0157d010e8)   
+ [Friend](http://msdn.microsoft.com/library/b664605e-1c79-4728-b996-aa59c50846bc)

@@ -30,6 +30,6 @@ The `Erase` and `ReDim` statements require array data types. The type supplied i
 -   Change the data type to an array type.  
   
 ## See Also  
- [Erase Statement](../Topic/Erase%20Statement%20\(Visual%20Basic\).md)   
- [ReDim Statement](../Topic/ReDim%20Statement%20\(Visual%20Basic\).md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Erase Statement](http://msdn.microsoft.com/library/7a8133d7-b750-4d74-8b66-ba1dd9778d4b)   
+ [ReDim Statement](http://msdn.microsoft.com/library/ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083)   
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

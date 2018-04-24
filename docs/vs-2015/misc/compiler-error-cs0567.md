@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0567
 Interfaces cannot contain operators  
   
- Operators are not permitted in [interface](../Topic/interface%20\(C%23%20Reference\).md) definitions.  
+ Operators are not permitted in [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) definitions.  
   
  The following sample generates CS0567:  
   

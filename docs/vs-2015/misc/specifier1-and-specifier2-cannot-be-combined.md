@@ -30,5 +30,5 @@ Two incompatible specifiers, such as `Shadows` and `Overrides` are used together
 -   Remove one or the other specifier.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)

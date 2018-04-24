@@ -31,9 +31,9 @@ The `Option Strict` statement takes only `On` and `Off` as arguments; `Option St
   
 1.  Remove `Option Strict Custom` from the source code.  
   
-2.  Specify the `/optionstrict:custom` option. For more information, see [/optionstrict](../Topic/-optionstrict.md).  
+2.  Specify the `/optionstrict:custom` option. For more information, see [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
   
 ## See Also  
- [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [/optionstrict](../Topic/-optionstrict.md)
+ [Option \<keyword> Statement](http://msdn.microsoft.com/library/6b2f41c4-2403-43b6-8a14-94a3775e5b47)   
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)   
+ [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da)

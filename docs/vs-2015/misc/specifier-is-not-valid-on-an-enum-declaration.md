@@ -30,4 +30,4 @@ You have used a specifier that is not valid on an `Enum` declaration.
 1.  Remove the specifier.  
   
 ## See Also  
- [Enumerations Overview](../Topic/Enumerations%20Overview%20\(Visual%20Basic\).md)
+ [Enumerations Overview](http://msdn.microsoft.com/library/b42a38ee-5e77-4f99-a037-e3a127ead89c)

@@ -49,8 +49,8 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[address_mode Enumeration](../Topic/address_mode%20Enumeration.md)|Specifies address modes supported for texture sampling.|  
-|[filter_mode Enumeration](../Topic/filter_mode%20Enumeration.md)|Specifies filter modes supported for texture sampling.|  
+|[address_mode Enumeration](http://msdn.microsoft.com/library/01cad955-e7ad-429d-a911-9d38420ed544)|Specifies address modes supported for texture sampling.|  
+|[filter_mode Enumeration](http://msdn.microsoft.com/library/ccf92beb-e324-44e4-81b0-6ef8799ee8b1)|Specifies filter modes supported for texture sampling.|  
   
 ### Classes  
   
@@ -85,8 +85,8 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy Function](../Topic/copy%20Function.md)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
-|[copy_async Function](../Topic/copy_async%20Function.md)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
+|[copy Function](http://msdn.microsoft.com/library/cf3cda4b-5c64-4083-a0aa-39de2b378802)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
+|[copy_async Function](http://msdn.microsoft.com/library/6f06115b-1b85-43f4-a3b7-019af90748ec)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
   
 ## Requirements  
  **Header:** amp_graphics.h  

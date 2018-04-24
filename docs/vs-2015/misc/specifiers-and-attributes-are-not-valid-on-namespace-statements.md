@@ -30,7 +30,7 @@ Namespaces are used for hierarchical organization of program blocks and programm
 -   Remove all keywords and attribute blocks from the `Namespace` statement.  
   
 ## See Also  
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)   
+ [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)   
+ [Namespace Statement](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)   
  [NOT IN BUILD: Attributes Overview in Visual Basic](http://msdn.microsoft.com/en-us/0d0cff64-892d-4f57-83bd-bef388553d4f)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)

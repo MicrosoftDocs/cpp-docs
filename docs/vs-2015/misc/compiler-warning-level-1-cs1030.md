@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS1030
 \#warning: 'text'  
   
- Displays the text of a warning defined with the [#warning](../Topic/%23warning%20\(C%23%20Reference\).md) directive.  
+ Displays the text of a warning defined with the [#warning](http://msdn.microsoft.com/library/e6fb496d-bb8b-4018-baf6-5b60a0c8902b) directive.  
   
  The following sample shows how to create a user-defined warning:  
   

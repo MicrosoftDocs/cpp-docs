@@ -89,4 +89,4 @@ The Windows Forms Toolbox Control template that is included in the [!INCLUDE[vss
      If you upload the file to the [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Web site, other users can use **Extension Manager** in Visual Studio to find the control and install it.  
   
 ## See Also  
- [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md)
+ [Creating a WPF Toolbox Control](http://msdn.microsoft.com/library/9cc34db9-b0d1-4951-a02f-7537fbbb51ad)

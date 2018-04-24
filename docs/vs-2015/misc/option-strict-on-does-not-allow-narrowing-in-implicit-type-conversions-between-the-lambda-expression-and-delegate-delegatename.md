@@ -51,7 +51,7 @@ Dim example3 As Del = Function(n As Short) "Not Valid"
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [Delegates](../Topic/Delegates%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [Relaxed Delegate Conversion](../Topic/Relaxed%20Delegate%20Conversion%20\(Visual%20Basic\).md)
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)   
+ [Delegates](http://msdn.microsoft.com/library/410b60dc-5e60-4ec0-bfae-426755a2ee28)   
+ [Widening and Narrowing Conversions](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)   
+ [Relaxed Delegate Conversion](http://msdn.microsoft.com/library/64f371d0-5416-4f65-b23b-adcbf556e81c)

@@ -60,4 +60,4 @@ public class TestClass
 ```  
   
 ## See Also  
- [Object and Collection Initializers](../Topic/Object%20and%20Collection%20Initializers%20\(C%23%20Programming%20Guide\).md)
+ [Object and Collection Initializers](http://msdn.microsoft.com/library/c58f3db5-d7d4-4651-bd2d-5a3a97357f61)

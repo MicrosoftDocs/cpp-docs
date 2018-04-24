@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0753
 Only methods, classes, structs, or interfaces may be partial.  
   
- The [partial](../Topic/partial%20\(Type\)%20\(C%23%20Reference\).md) modifier can only be used with classes, structs, interfaces, and methods.  
+ The [partial](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334) modifier can only be used with classes, structs, interfaces, and methods.  
   
 ### To correct this error  
   
@@ -48,4 +48,4 @@ using System;
 ```  
   
 ## See Also  
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)

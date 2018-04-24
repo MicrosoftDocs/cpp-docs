@@ -34,7 +34,7 @@ This topic shows how to use parallel containers to efficiently store and access 
  [!code-cpp[concrt-carmichael-primes#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-carmichael-primes/cpp/carmichael-primes.cpp#1)]  
   
 ## Example  
- The following example uses the `is_prime` and `is_carmichael` functions to compute the sets of prime and Carmichael numbers. The example uses the [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) and [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithms to compute each set in parallel. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+ The following example uses the `is_prime` and `is_carmichael` functions to compute the sets of prime and Carmichael numbers. The example uses the [concurrency::parallel_invoke](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b) and [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) algorithms to compute each set in parallel. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
  This example uses a [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) object to hold the set of Carmichael numbers because it will later use that object as a work queue. It uses a [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) object to hold the set of prime numbers because it will later iterate through this set to find prime factors.  
   
@@ -43,7 +43,7 @@ This topic shows how to use parallel containers to efficiently store and access 
 ## Example  
  The following example shows the `prime_factors_of` function, which uses trial division to find all prime factors of the given value.  
   
- This function uses the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm to iterate through the collection of prime numbers. The `concurrent_vector` object enables the parallel loop to concurrently add prime factors to the result.  
+ This function uses the [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) algorithm to iterate through the collection of prime numbers. The `concurrent_vector` object enables the parallel loop to concurrently add prime factors to the result.  
   
  [!code-cpp[concrt-carmichael-primes#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-carmichael-primes/cpp/carmichael-primes.cpp#3)]  
   
@@ -77,6 +77,6 @@ Prime factors of 1050985 are: 5 13 19 23 37.
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [concurrent_vector Class](../../parallel/concrt/reference/concurrent-vector-class.md)   
  [concurrent_queue Class](../../parallel/concrt/reference/concurrent-queue-class.md)   
- [parallel_invoke Function](../Topic/parallel_invoke%20Function.md)   
- [parallel_for Function](../Topic/parallel_for%20Function.md)   
- [task_group Class](../Topic/task_group%20Class.md)
+ [parallel_invoke Function](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b)   
+ [parallel_for Function](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d)   
+ [task_group Class](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)

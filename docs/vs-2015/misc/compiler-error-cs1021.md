@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1021
 Integral constant is too large  
   
- A value assigned to an [integral type](../Topic/Integral%20Types%20Table%20\(C%23%20Reference\).md) is larger than the largest possible unsigned integer value.  
+ A value assigned to an [integral type](http://msdn.microsoft.com/library/62e86126-46ff-40b0-9028-e61d7558268c) is larger than the largest possible unsigned integer value.  
   
  The following sample generates CS1021:  
   

@@ -21,13 +21,13 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Delegate type &#39;&lt;delegatename&gt;&#39; of event &#39;&lt;eventname&gt;&#39; is not CLS-compliant
-An [Event Statement](../Topic/Event%20Statement.md) uses a delegate to specify its signature, but the [Delegate Statement](../Topic/Delegate%20Statement.md) is marked as `<CLSCompliant(False)>` or is not marked.  
+An [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042) uses a delegate to specify its signature, but the [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57) is marked as `<CLSCompliant(False)>` or is not marked.  
   
  When you apply the <xref:System.CLSCompliantAttribute> attribute to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   
  If you do not apply <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40050  
   

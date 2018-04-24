@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0110
 The evaluation of the constant value for 'const declaration' involves a circular definition  
   
- The declaration of a [const](../Topic/const%20\(C%23%20Reference\).md) variable (`a`) cannot reference another const variable (`b`) that also references (`a`).  
+ The declaration of a [const](http://msdn.microsoft.com/library/79eb447c-117b-4418-933f-97c50aa472db) variable (`a`) cannot reference another const variable (`b`) that also references (`a`).  
   
  The following sample generates CS0110:  
   
@@ -50,4 +50,4 @@ namespace MyNamespace
 ```  
   
 ## See Also  
- [Constants](../Topic/Constants%20\(C%23%20Programming%20Guide\).md)
+ [Constants](http://msdn.microsoft.com/library/1fb39621-1738-49b1-a1b3-8587f109123f)

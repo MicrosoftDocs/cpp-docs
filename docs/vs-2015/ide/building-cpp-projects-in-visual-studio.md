@@ -37,9 +37,9 @@ In the Visual Studio integrated development environment (IDE), there are several
   
 -   Or, press F7. (This is the default keyboard shortcut for the C/C++ development settings.)  
   
--   Or, in the [Command Window](../Topic/Command%20Window.md) (on the menu bar, choose **View**, **Other Windows**, **Command Window**), enter `Build.BuildSolution`.  
+-   Or, in the [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a) (on the menu bar, choose **View**, **Other Windows**, **Command Window**), enter `Build.BuildSolution`.  
   
--   Or, in the [Quick Launch](../Topic/Quick%20Launch,%20Environment,%20Options%20Dialog%20Box.md) box, enter `build build solution`.  
+-   Or, in the [Quick Launch](http://msdn.microsoft.com/library/4200f297-d065-4723-9a30-d91ff2e26c9d) box, enter `build build solution`.  
   
  To build a project that's selected in **Solution Explorer**, you can:  
   
@@ -53,7 +53,7 @@ In the Visual Studio integrated development environment (IDE), there are several
   
  When you build a Visual C++ application in Visual Studio, you can modify many of the build's settings in the project's Property Pages dialog box. For information about how to set project properties, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
- For an example about how to use the IDE to create, build, and debug a C++ project, see [Walkthrough: Explore the Visual Studio IDE with C++](../Topic/Getting%20Started%20with%20C++%20in%20Visual%20Studio.md). For an example about how to use the IDE to build a C++/CLR project, see [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). For an example about how to use the IDE to create a Windows Runtime app, see [Create your first Windows Runtime app using C++](http://msdn.microsoft.com/library/windows/apps/hh974580.aspx).  
+ For an example about how to use the IDE to create, build, and debug a C++ project, see [Walkthrough: Explore the Visual Studio IDE with C++](http://msdn.microsoft.com/library/99c73344-86ba-4b08-9e15-f6111cc04185). For an example about how to use the IDE to build a C++/CLR project, see [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). For an example about how to use the IDE to create a Windows Runtime app, see [Create your first Windows Runtime app using C++](http://msdn.microsoft.com/library/windows/apps/hh974580.aspx).  
   
  To read more about how to build, modify build settings, and specify custom build steps, see the following articles.  
   
@@ -74,7 +74,7 @@ In the Visual Studio integrated development environment (IDE), there are several
  [VC++ Directories, Projects, Options Dialog Box](http://msdn.microsoft.com/en-us/e027448b-c811-4c3d-8531-4325ad3f6e02)  
  Discusses how to modify the search path for executable files, include files, library files, and source code files during a build  
   
- [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md)  
+ [Compiling and Building](http://msdn.microsoft.com/library/c7958821-285f-4e28-9e7a-b5d8b40336a1)  
  Provides information on building within Visual Studio.  
   
  [Building C/C++ Programs](../build/building-c-cpp-programs.md)  

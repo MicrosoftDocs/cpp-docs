@@ -23,10 +23,10 @@ manager: "ghogen"
 # How to: Write a parallel_for_each Loop
 [!INCLUDE[blank_token](../../includes/blank-token.md)]
 
-This example shows how to use the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object in parallel.  
+This example shows how to use the [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) algorithm to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object in parallel.  
   
 ## Example  
- The following example computes the count of prime numbers in an array two times. The example first uses the [std::for_each](../Topic/for_each.md) algorithm to compute the count serially. The example then uses the `parallel_for_each` algorithm to perform the same task in parallel. The example also prints to the console the time that is required to perform both computations.  
+ The following example computes the count of prime numbers in an array two times. The example first uses the [std::for_each](http://msdn.microsoft.com/library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm to compute the count serially. The example then uses the `parallel_for_each` algorithm to perform the same task in parallel. The example also prints to the console the time that is required to perform both computations.  
   
  [!code-cpp[concrt-parallel-count-primes#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-parallel-count-primes/cpp/parallel-count-primes.cpp#1)]  
   
@@ -52,5 +52,5 @@ took 1653 ms
   
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_for_each Function](../Topic/parallel_for_each%20Function.md)
+ [parallel_for_each Function](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28)
 

@@ -30,6 +30,6 @@ The `Set` procedure writes the value of a property. `ReadOnly` properties cannot
 -   Remove the `ReadOnly` keyword from the `Property` statement, or remove the `Set` procedure from the property body.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)   
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
+ [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd)   
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)

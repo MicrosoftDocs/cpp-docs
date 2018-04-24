@@ -18,7 +18,7 @@ You can create a VSIX package to wrap a [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 -   Create a VSIX package project by using one of the extensibility templates that are included in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. This is the easiest option for most scenarios.  
   
--   Wrap the output of your extension project in an empty [VSIX Project](../Topic/VSIX%20Project%20Template.md). We recommend this option for templates, unsupported assemblies, and custom types.  
+-   Wrap the output of your extension project in an empty [VSIX Project](http://msdn.microsoft.com/library/b6c82167-e2a5-4cff-8c8b-2d72e2a9092c). We recommend this option for templates, unsupported assemblies, and custom types.  
   
 -   Manually create a VSIX package. We recommend this option only when the other two options are not available.  
   
@@ -53,6 +53,6 @@ You can create a VSIX package to wrap a [!INCLUDE[vsprvs](../includes/vsprvs-md.
 8.  Rename the resulting .zip file to *Filename*.vsix, where *Filename* is the name of the redistributable file that installs your package.  
   
 ## See Also  
- [Shipping Visual Studio Extensions](../Topic/Shipping%20Visual%20Studio%20Extensions.md)   
- [Anatomy of a VSIX Package](../Topic/Anatomy%20of%20a%20VSIX%20Package.md)   
+ [Shipping Visual Studio Extensions](http://msdn.microsoft.com/library/13cd263d-25f7-488e-9c1a-cff908caedb6)   
+ [Anatomy of a VSIX Package](http://msdn.microsoft.com/library/8b86d62f-c274-4e91-82e0-38cdb9a423d5)   
  [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)

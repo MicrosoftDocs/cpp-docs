@@ -27,14 +27,14 @@ This topic describes how to implement the producer-consumer pattern in your appl
   
  The topic demonstrates two scenarios. In the first scenario, the consumer must receive each message that the producer sends. In the second scenario, the consumer periodically polls for data, and therefore does not have to receive each message.  
   
- Both examples in this topic use agents, message blocks, and message-passing functions to transmit messages from the producer to the consumer. The producer agent uses the [concurrency::send](../Topic/send%20Function.md) function to write messages to a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object. The consumer agent uses the [concurrency::receive](../Topic/receive%20Function.md) function to read messages from a [concurrency::ISource](../../parallel/concrt/reference/isource-class.md) object. Both agents hold a sentinel value to coordinate the end of processing.  
+ Both examples in this topic use agents, message blocks, and message-passing functions to transmit messages from the producer to the consumer. The producer agent uses the [concurrency::send](http://msdn.microsoft.com/library/8713fb36-066b-47de-af12-589fa74805d6) function to write messages to a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object. The consumer agent uses the [concurrency::receive](http://msdn.microsoft.com/library/f36bbca1-97ac-4343-bfac-ea71ca2139e9) function to read messages from a [concurrency::ISource](../../parallel/concrt/reference/isource-class.md) object. Both agents hold a sentinel value to coordinate the end of processing.  
   
  For more information about asynchronous agents, see [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md). For more information about message blocks and message-passing functions, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md) and [Message Passing Functions](../../parallel/concrt/message-passing-functions.md).  
   
 ## Example  
  In this example, the producer agent sends a series of numbers to the consumer agent. The consumer receives each of these numbers and computes their average. The application writes the average to the console.  
   
- This example uses a [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object to enable the producer to queue messages. The `unbounded_buffer` class implements `ITarget` and `ISource` so that the producer and the consumer can send and receive messages to and from a shared buffer. The `send` and `receive` functions coordinate the task of propagating the data from the producer to the consumer.  
+ This example uses a [concurrency::unbounded_buffer](~/parallel/concrt/reference/unbounded-buffer-class.md) object to enable the producer to queue messages. The `unbounded_buffer` class implements `ITarget` and `ISource` so that the producer and the consumer can send and receive messages to and from a shared buffer. The `send` and `receive` functions coordinate the task of propagating the data from the producer to the consumer.  
   
  [!code-cpp[concrt-producer-consumer-average#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-producer-consumer-average/cpp/producer-consumer-average.cpp#1)]  
   

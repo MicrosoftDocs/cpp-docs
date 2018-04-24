@@ -30,5 +30,5 @@ This error generally occurs when the settings file is not readable, does not exi
 3.  Verify that the file contains correctly formed XML.  
   
 ## See Also  
- [/ResetSettings (devenv.exe)](../Topic/-ResetSettings%20\(devenv.exe\).md)   
- [Devenv Command Line Switches](../Topic/Devenv%20Command%20Line%20Switches.md)
+ [/ResetSettings (devenv.exe)](http://msdn.microsoft.com/library/1d41021c-6f58-4bd5-b122-d1c995812192)   
+ [Devenv Command Line Switches](http://msdn.microsoft.com/library/e12bc6ed-74fd-4bea-8d7c-89b99c20bad8)

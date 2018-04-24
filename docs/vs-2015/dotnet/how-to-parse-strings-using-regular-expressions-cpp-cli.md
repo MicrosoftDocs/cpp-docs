@@ -65,6 +65,6 @@ int main( )
 ```  
   
 ## See Also  
- [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md)   
+ [.NET Framework Regular Expressions](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

@@ -30,17 +30,17 @@ Introduces a response to a run-time error or turns a compiler option on.
 ## Remarks  
  The `On` keyword is used in these contexts:  
   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)  
+ [Group Join Clause](http://msdn.microsoft.com/library/37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c)  
   
- [Join Clause](../Topic/Join%20Clause%20\(Visual%20Basic\).md)  
+ [Join Clause](http://msdn.microsoft.com/library/6dd37936-b27c-4e00-98ad-154b23f4de64)  
   
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)  
+ [On Error Statement](http://msdn.microsoft.com/library/ff947930-fb84-40cf-bd66-1ea219561d5c)  
   
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)  
+ [Option Explicit Statement](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc)  
   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)  
+ [Option Infer Statement](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)  
   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)  
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)  
   
 ## See Also  
- [Keywords](../Topic/Keywords%20\(Visual%20Basic\).md)
+ [Keywords](http://msdn.microsoft.com/library/b5a65ef0-c408-4836-afb6-e6828c0771ca)

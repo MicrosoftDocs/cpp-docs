@@ -30,4 +30,4 @@ This error generally occurs when a switch is specified without a required value.
      Re-enter the command and omit the switch.  
   
 ## See Also  
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

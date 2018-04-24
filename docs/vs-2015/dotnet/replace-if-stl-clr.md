@@ -38,7 +38,7 @@ template<class _FwdIt, class _Pr, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `replace_if`. For more information, see [replace_if](../Topic/replace_if.md).  
+ This function behaves the same as the STL function `replace_if`. For more information, see [replace_if](http://msdn.microsoft.com/library/3d01105a-046d-42aa-9dc9-a6b1c53ec802).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -26,4 +26,4 @@ Response file 'file' included multiple times
   
  A response file was passed to the compiler more than once. A response file can only be passed to the compiler once per output file.  
   
- For more on response files, see [@ (Specify Response File)](../Topic/@%20\(C%23%20Compiler%20Options\).md).
+ For more on response files, see [@ (Specify Response File)](http://msdn.microsoft.com/library/dda4fa9f-a02c-400f-8b6a-d58834e13d7f).

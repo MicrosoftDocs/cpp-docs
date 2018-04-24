@@ -30,5 +30,5 @@ An invalid modifier was specified with a delegate declared in an interface.
 1.  Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, and `Overridable`.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
  [NOT IN BUILD: Interfaces Overview](http://msdn.microsoft.com/en-us/f96bb470-c1b8-4c73-89bc-6f536b798da1)

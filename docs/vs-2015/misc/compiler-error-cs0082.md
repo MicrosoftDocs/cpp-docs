@@ -57,4 +57,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md)
+ [Properties](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)

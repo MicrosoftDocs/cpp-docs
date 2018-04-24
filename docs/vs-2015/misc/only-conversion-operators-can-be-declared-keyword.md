@@ -21,11 +21,11 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Only conversion operators can be declared &#39;&lt;keyword&gt;&#39;
-An [Operator Statement](../Topic/Operator%20Statement.md) specifies [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md) when the operator is not a conversion operator.  
+An [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5) specifies [Widening](http://msdn.microsoft.com/library/646ae263-94d3-40a2-b0cc-64f619292f56) or [Narrowing](http://msdn.microsoft.com/library/a207ee91-aca4-4771-b4e2-713f029bf2bb) when the operator is not a conversion operator.  
   
- Every operator must be declared as both [Public](../Topic/Public%20\(Visual%20Basic\).md) and [Shared](../Topic/Shared%20\(Visual%20Basic\).md). However, only a conversion operator can be declared with [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md), but not both.  
+ Every operator must be declared as both [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5) and [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd). However, only a conversion operator can be declared with [Widening](http://msdn.microsoft.com/library/646ae263-94d3-40a2-b0cc-64f619292f56) or [Narrowing](http://msdn.microsoft.com/library/a207ee91-aca4-4771-b4e2-713f029bf2bb), but not both.  
   
- An operator definition can optionally include the [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md) and [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md) keywords. No other keywords are permitted in an [Operator Statement](../Topic/Operator%20Statement.md).  
+ An operator definition can optionally include the [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042) and [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6) keywords. No other keywords are permitted in an [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5).  
   
  **Error ID:** BC33019  
   
@@ -34,8 +34,8 @@ An [Operator Statement](../Topic/Operator%20Statement.md) specifies [Widening](.
 1.  Remove the `Widening` or `Narrowing` keyword from the operator definition. These do not apply, because no type conversion is taking place.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)   
+ [How to: Define an Operator](http://msdn.microsoft.com/library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/library/54203dfa-c24b-463f-9942-d5153e89e762)   
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

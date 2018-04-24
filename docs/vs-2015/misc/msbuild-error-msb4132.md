@@ -28,4 +28,4 @@ manager: "douge"
   
 ## See Also  
  <xref:Microsoft.Build.Tasks.MSBuild.ToolsVersion%2A>   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

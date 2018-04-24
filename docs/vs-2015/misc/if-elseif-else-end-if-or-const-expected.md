@@ -34,4 +34,4 @@ A source line begins with a `#` character, but a valid conditional compilation d
 3.  Remove the `#` character or add a valid directive immediately after it.  
   
 ## See Also  
- [Directives](../Topic/Directives%20\(Visual%20Basic\).md)
+ [Directives](http://msdn.microsoft.com/library/20d5fe65-490a-4c23-88c2-ee4f490ed762)

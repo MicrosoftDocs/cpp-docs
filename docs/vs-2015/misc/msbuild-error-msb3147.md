@@ -25,4 +25,4 @@ manager: "douge"
  This error occurs when the bootstrapper cannot find setup.bin on the disk.  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

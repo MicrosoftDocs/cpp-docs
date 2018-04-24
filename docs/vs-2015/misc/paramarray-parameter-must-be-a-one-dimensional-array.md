@@ -30,6 +30,6 @@ A `ParamArray` argument must be declared as a one-dimensional array type. The de
 -   Remove all commas inside the parentheses following the `ParamArray` argument name.  
   
 ## See Also  
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)   
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Parameter Arrays](http://msdn.microsoft.com/library/c43edfae-9114-4096-9ebc-8c5c957a1067)   
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)   
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

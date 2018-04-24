@@ -24,7 +24,7 @@ The managed package framework (MPF) provides attributes to control the registrat
  [!code-csharp[VSSDKRegisterService#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkregisterservice/cs/vssdkregisterservicepackage.cs#1)]
  [!code-vb[VSSDKRegisterService#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkregisterservice/vb/vssdkregisterservicepackage.vb#1)]  
   
- The <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> registers the SMyGlobalService service with [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. For more information about <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> and <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, see [Registering and Unregistering VSPackages](../Topic/Registering%20and%20Unregistering%20VSPackages.md).  
+ The <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> registers the SMyGlobalService service with [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. For more information about <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> and <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, see [Registering and Unregistering VSPackages](http://msdn.microsoft.com/library/e25e7a46-6a55-4726-8def-ca316f553d6b).  
   
  To register a service that replaces another service with the same name, use the <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> instead of the <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>.  
   
@@ -41,4 +41,4 @@ The managed package framework (MPF) provides attributes to control the registrat
   
 ## See Also  
  [Registering VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [Service Essentials](http://msdn.microsoft.com/library/fbe84ad9-efe1-48b1-aba3-b50b90424d47)

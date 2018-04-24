@@ -51,6 +51,6 @@ End Class
 -   Do not implement this base class. You cannot implement it with the set of type arguments you are using, because you must implement every one of its members.  
   
 ## See Also  
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)   
+ [Implements](http://msdn.microsoft.com/library/5252cdf9-964d-4fc6-af0f-0449b7126b5a)   
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

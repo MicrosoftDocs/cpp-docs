@@ -108,4 +108,4 @@ VSCT has become the new way of defining commands. Because of this, a change has 
  `<Bitmap guid="guidGenericCmdBmp" href="GenericCmd.bmp"    usedList="bmpArrow"/>`  
   
 ## See Also  
- [Visual Studio Command Table (.Vsct) Files](../Topic/Visual%20Studio%20Command%20Table%20\(.Vsct\)%20Files.md)
+ [Visual Studio Command Table (.Vsct) Files](http://msdn.microsoft.com/library/1313adb4-add4-4e74-90e2-f4be522f5259)

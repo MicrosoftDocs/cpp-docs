@@ -26,7 +26,7 @@ manager: "wpickett"
   
  A declaration in a class conflicts with a declaration in a base class such that the base class member will be hidden.  
   
- For more information, see [base](../Topic/base%20\(C%23%20Reference\).md).  
+ For more information, see [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5).  
   
  The following sample generates CS0114:  
   

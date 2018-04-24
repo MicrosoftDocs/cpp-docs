@@ -60,7 +60,7 @@ class directory_entry;
 ```  
   
 ## Remarks  
- The class stores an object of type [path](../standard-library/path-class-cpp-standard-template-library.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class-cpp-standard-template-library.md) or of a type that is derived from `path`. It also stores two [file_type](../Topic/file_type%20Enumeration.md) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.  
+ The class stores an object of type [path](../standard-library/path-class-cpp-standard-template-library.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class-cpp-standard-template-library.md) or of a type that is derived from `path`. It also stores two [file_type](http://msdn.microsoft.com/library/a6a35986-167a-4142-9de4-ccfe5c1576f8) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.  
   
  For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  
   

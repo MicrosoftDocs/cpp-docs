@@ -43,4 +43,4 @@ namespace x
 ```  
   
 ## See Also  
- [Operators](../Topic/Operators%20\(C%23%20Programming%20Guide\).md)
+ [Operators](http://msdn.microsoft.com/library/214e7b83-1a41-4f7c-9867-64e9c0bab39f)

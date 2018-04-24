@@ -175,7 +175,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2696](../../error-messages/compiler-errors-2/compiler-error-c2696.md)  
   
- [Compiler Error C2697](../Topic/Compiler%20Error%20C2697.md)  
+ [Compiler Error C2697](http://msdn.microsoft.com/library/0f55b263-4fe0-410c-8e6a-a0943bc61ff4)  
   
  [Compiler Error C2698](../../error-messages/compiler-errors-2/compiler-error-c2698.md)
 

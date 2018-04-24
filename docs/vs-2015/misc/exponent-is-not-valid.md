@@ -30,4 +30,4 @@ You attempted to use an exponent that is not valid with a floating-point literal
 1.  Check the floating-point literal's type and change it to a valid type.  
   
 ## See Also  
- [How to: Calculate Numeric Values](../Topic/How%20to:%20Calculate%20Numeric%20Values%20\(Visual%20Basic\).md)
+ [How to: Calculate Numeric Values](http://msdn.microsoft.com/library/ba6bf43d-bd96-49b8-b1de-4a7797551372)

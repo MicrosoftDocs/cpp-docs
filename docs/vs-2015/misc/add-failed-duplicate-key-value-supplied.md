@@ -25,4 +25,4 @@ An `Add` operation failed because the key value is the same as another key value
 -   Ensure that the key value is unique.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

@@ -30,4 +30,4 @@ An `End Event` statement occurs without a corresponding `Custom Event` statement
 -   Ensure that a preceding `Custom Event` statement is valid and correctly spelled.  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Type argument &#39;&lt;typeargumentname&gt;&#39; must have a public parameterless instance constructor to satisfy the &#39;New&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39;
-A type argument supplies a type without an accessible parameterless constructor to a type parameter with the [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) constraint.  
+A type argument supplies a type without an accessible parameterless constructor to a type parameter with the [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0) constraint.  
   
  A constraint list imposes requirements on the type argument passed to the type parameter. One possible requirement is that the type argument must expose a parameterless constructor that the creating code can access. To specify this requirement, the constraint list includes the `New` constraint.  
   
@@ -34,6 +34,6 @@ A type argument supplies a type without an accessible parameterless constructor 
 2.  Choose a type for the type argument that exposes an accessible parameterless constructor. You cannot invoke this particular generic type unless you can supply such a type argument to this type parameter.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)   
- [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)   
+ [How to: Use a Generic Class](http://msdn.microsoft.com/library/242dd2a6-86c4-4ce7-83f2-f2661803f752)

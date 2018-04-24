@@ -38,4 +38,4 @@ An expression evaluates to a type that cannot be boxed by the common language ru
 3.  Rewrite the statement to avoid the boxing conversion.  
   
 ## See Also  
- [Implicit and Explicit Conversions](../Topic/Implicit%20and%20Explicit%20Conversions%20\(Visual%20Basic\).md)
+ [Implicit and Explicit Conversions](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66)

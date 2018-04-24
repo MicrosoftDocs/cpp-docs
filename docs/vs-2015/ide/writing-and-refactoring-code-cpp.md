@@ -35,10 +35,10 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
   
  ![C&#43;&#43; member list drop down](../ide/media/vs2015-cpp-statement-completion.png "vs2015_cpp_statement_completion")  
   
- For complete information see [Visual C++ Intellisense](../Topic/Visual%20C++%20Intellisense.md).  
+ For complete information see [Visual C++ Intellisense](http://msdn.microsoft.com/library/9d7c6414-4e6c-4889-a74c-a6033795eccc).  
   
 ### Insert Snippets  
- A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](../Topic/Code%20Snippets.md).  
+ A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](http://msdn.microsoft.com/library/85976ad9-4c9a-4e7b-896e-66ec6f955199).  
   
  ![Visual C&#43;&#43; Insert Snippet Drop&#45;down](../ide/media/vs2015-cpp-surround-with.png "vs2015_cpp_surround_with")  
   
@@ -53,7 +53,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  ![Visual C&#43;&#43; Class Wizard](../ide/media/vs2015-cpp-class-wizard.png "vs2015_cpp_class_wizard")  
   
 ## Refactoring  
- Refactorings are available under the Quick Action context menu item, or by clicking on a [light bulb](../Topic/Perform%20quick%20actions%20with%20light%20bulbs.md) in the editor.  
+ Refactorings are available under the Quick Action context menu item, or by clicking on a [light bulb](http://msdn.microsoft.com/library/990ee487-cf9a-4b89-9784-e7b47c220e8c) in the editor.  
   
 ### Rename  
  Rename a type or function or variable wherever it is used in the specified scope. In the following illustration, the `Eat` method will be renamed to `Devour` in both the derived and base class.  
@@ -98,7 +98,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  ![Visual C&#43;&#43; Open Document menu option](../ide/media/vs2015-cpp-open-document.png "vs2015_cpp_open_document")  
   
 ### Peek Definition  
- Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition. For more information, see [Peek Definition (Alt+F12)](../Topic/How%20to:%20View%20and%20Edit%20Code%20by%20Using%20Peek%20Definition%20\(Alt+F12\).md).  
+ Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition. For more information, see [Peek Definition (Alt+F12)](http://msdn.microsoft.com/library/45f3dd20-902a-4047-8cca-9f18216123f4).  
   
  ![Visual C&#43;&#43; Peek Definition](../ide/media/vs2015-cpp-peek-definition.png "vs2015_cpp_peek_definition")  
   
@@ -106,7 +106,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  Hover over a variable or function declaration, right-click, then choose **Go To Definition** to open the document where the object is defined.  
   
 ### View Call Hierarchy  
- Right click on any function call and view a resursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](../Topic/Call%20Hierarchy.md).  
+ Right click on any function call and view a resursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](http://msdn.microsoft.com/library/c55bda01-d7de-4823-8f9a-1bcc37dbb74a).  
   
  ![Visual C&#43;&#43; Call Hierarchy](../ide/media/vs2015-cpp-call-hierarchy.png "vs2015_cpp_call_hierarchy")  
   
@@ -114,7 +114,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  Right-click and choose Toggle Header / Code File to switch back and forth between a header file and its associated code file.  
   
 ### Outlining  
- Right-click anywhere in a source code file and choose **Outlining** to collapse or expand definitions and/or custom regions to make it easier to browse only the parts you are interested in. For more information, see [Outlining](../Topic/Outlining.md).  
+ Right-click anywhere in a source code file and choose **Outlining** to collapse or expand definitions and/or custom regions to make it easier to browse only the parts you are interested in. For more information, see [Outlining](http://msdn.microsoft.com/library/d1476758-9d35-4d74-b63c-310661932ecd).  
   
  ![Visual C&#43;&#43; Outlining](../ide/media/vs2015-cpp-outlining.png "vs2015_cpp_outlining")  
   

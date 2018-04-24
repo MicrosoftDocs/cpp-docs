@@ -29,7 +29,7 @@ The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Toolbox** provides a collecti
  [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  
  Describes out to create a Toolbox control by using the Windows Forms Toolbox Control template.  
   
- [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md)  
+ [Creating a WPF Toolbox Control](http://msdn.microsoft.com/library/9cc34db9-b0d1-4951-a02f-7537fbbb51ad)  
  Describes out to create a Toolbox control by using the WPF Toolbox Control template.  
   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)  
@@ -39,8 +39,8 @@ The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Toolbox** provides a collecti
  [How to: Manage the Toolbox Window](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  Describes how to work with the **Toolbox** in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrated development environment (IDE).  
   
- [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)  
+ [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  Describes how to manage the **Toolbox** using the automation programming model.  
   
- [Extending Other Parts of Visual Studio](../Topic/Extending%20Other%20Parts%20of%20Visual%20Studio.md)  
+ [Extending Other Parts of Visual Studio](http://msdn.microsoft.com/library/27d2f1e1-2503-4aca-9cfc-707abd07ccf0)  
  Explains how to use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] services to create UI elements that match the rest of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].

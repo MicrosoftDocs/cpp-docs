@@ -906,10 +906,10 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
  Also see:  
- [Additional Resources for Visual C# Programmers](../Topic/Additional%20Resources%20for%20Visual%20C%23%20Programmers.md)  
+ [Additional Resources for Visual C# Programmers](http://msdn.microsoft.com/library/cdec0df0-89ef-4ff1-8ccf-26fef47e61cb)  
   
 ## See Also  
- [C# Programming Guide](../Topic/C%23%20Programming%20Guide.md)   
- [C# Reference](../Topic/C%23%20Reference.md)   
- [Talk to Us](../Topic/Talk%20to%20Us.md)   
- [Talk to Us](../Topic/Talk%20to%20Us.md)
+ [C# Programming Guide](http://msdn.microsoft.com/library/ac0f23a2-6bf3-4077-be99-538ae5fd3bc5)   
+ [C# Reference](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)   
+ [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e)   
+ [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e)

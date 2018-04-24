@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0568
 Structs cannot contain explicit parameterless constructors  
   
- Each [struct](../Topic/struct%20\(C%23%20Reference\).md) already has a default constructor that initializes the object to zero. Therefore, the constructors that you can create for a struct must take one or more parameters.  
+ Each [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) already has a default constructor that initializes the object to zero. Therefore, the constructors that you can create for a struct must take one or more parameters.  
   
  The following sample generates CS0568:  
   

@@ -28,8 +28,8 @@ manager: "wpickett"
 1.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)   
- [Local Type Inference](../Topic/Local%20Type%20Inference%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [Anonymous Types](http://msdn.microsoft.com/library/7b87532c-4b3e-4398-8503-6ea9d67574a4)   
+ [Local Type Inference](http://msdn.microsoft.com/library/b8307f18-2e56-4ab3-a45a-826873f400f6)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)   
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)

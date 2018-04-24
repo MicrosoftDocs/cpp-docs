@@ -45,4 +45,4 @@ namespace x
 ```  
   
 ## See Also  
- [Statements](../Topic/Statements%20\(C%23%20Programming%20Guide\).md)
+ [Statements](http://msdn.microsoft.com/library/901bcde7-87de-4e15-833c-f9cfd40c8ce3)

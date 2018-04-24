@@ -76,7 +76,7 @@ To find an ATL macro by category, see the following topics.
  [Snap-In Object Macros](../../atl/reference/snap-in-object-macros.md)  
  Provide support for snap-in extensions.  
   
- [String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)  
+ [String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)  
  Provide string conversion features.  
   
  [Window Class Macros](../../atl/reference/window-class-macros.md)  
@@ -86,7 +86,7 @@ To find an ATL macro by category, see the following topics.
  Forward window messages.  
   
 ## See Also  
- [ATL Macros Alphabetical Reference](../Topic/ATL%20Macros%20Alphabetical%20Reference.md)   
+ [ATL Macros Alphabetical Reference](http://msdn.microsoft.com/library/a272684a-9ce7-43cb-93af-a48279ef82ed)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   

@@ -30,6 +30,6 @@ An `End AddHandler` statement follows a colon (:) statement separator. `End AddH
 -   Separate the multiple statements onto different lines.  
   
 ## See Also  
- [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
+ [AddHandler Statement](http://msdn.microsoft.com/library/cfe69799-2a0f-42c0-a99e-09fed954da01)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

@@ -30,4 +30,4 @@ A type name occurs where an expression is required. An expression must consist o
 -   Remove the type name and construct the expression using valid elements.  
   
 ## See Also  
- [Operators and Expressions](../Topic/Operators%20and%20Expressions%20in%20Visual%20Basic.md)
+ [Operators and Expressions](http://msdn.microsoft.com/library/b86f3131-94ee-448f-96cd-79611e028b26)

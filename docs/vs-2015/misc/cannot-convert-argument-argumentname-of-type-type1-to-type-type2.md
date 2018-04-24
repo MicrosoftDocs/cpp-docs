@@ -25,4 +25,4 @@ A conversion operation attempts to convert an argument to an incompatible type.
 1.  Ensure that the type to which you are trying to convert the argument is valid.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

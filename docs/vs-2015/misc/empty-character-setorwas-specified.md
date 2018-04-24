@@ -26,7 +26,7 @@ This error generally occurs when the regular expressions option has been selecte
 1.  Review the topic Regular Expressions for information on the correct syntax for the pattern and enter the string again.  
   
 ## See Also  
- [Using Regular Expressions in Visual Studio](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md)   
+ [Using Regular Expressions in Visual Studio](http://msdn.microsoft.com/library/718a617d-0e05-47e1-a218-9746971527f4)   
  [NIB: Find and Replace, Quick Find](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600)   
- [Find in Files](../Topic/Find%20in%20Files.md)   
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)
+ [Find in Files](http://msdn.microsoft.com/library/989e0737-46d7-4474-8453-fad52a74669d)   
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)

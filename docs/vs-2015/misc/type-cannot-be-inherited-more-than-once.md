@@ -30,4 +30,4 @@ You have duplicated an `Inherits` statement.
 -   Remove the redundant `Inherits` statement.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)

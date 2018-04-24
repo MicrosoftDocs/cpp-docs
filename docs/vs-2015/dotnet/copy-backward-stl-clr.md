@@ -38,7 +38,7 @@ template<class _BidIt1, class _BidIt2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `copy_backward`. For more information, see [copy_backward](../Topic/copy_backward.md).  
+ This function behaves the same as the STL function `copy_backward`. For more information, see [copy_backward](http://msdn.microsoft.com/library/ddfab855-25a3-44db-a3cd-2b05ae97ea20).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -34,4 +34,4 @@ An `End While` statement occurs without a corresponding `While` statement. `End 
 3.  Ensure that this `While` block is correctly formatted.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)
+ [While...End While Statement](http://msdn.microsoft.com/library/b931d1ce-e8ed-44d8-a13d-92a4f5458a1e)

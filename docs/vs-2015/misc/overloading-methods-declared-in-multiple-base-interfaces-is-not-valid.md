@@ -30,5 +30,5 @@ Multiple inherited interfaces implicitly overload the same method.
 -   Use the `Shadows` modifier instead of the `Overloads` modifier.  
   
 ## See Also  
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)   
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)

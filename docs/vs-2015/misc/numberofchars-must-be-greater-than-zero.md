@@ -25,8 +25,8 @@ When using the `PeekChars` method of the `TextFieldParser` object, you must supp
 -   Change `NumberOfChars` to a value that is greater than `0`.  
   
 ## See Also  
- [How to: Read From Text Files with Multiple Formats](../Topic/How%20to:%20Read%20From%20Text%20Files%20with%20Multiple%20Formats%20in%20Visual%20Basic.md)   
+ [How to: Read From Text Files with Multiple Formats](http://msdn.microsoft.com/library/8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8)   
  [My.Computer.FileSystem.OpenTextFieldParser Method](http://msdn.microsoft.com/en-us/e5869f85-c078-485f-8323-8dc716494546)   
  [TextFieldParser.PeekChars Method](http://msdn.microsoft.com/en-us/4a180d26-d46d-4cc1-9af7-d23abe27c89b)   
- [Parsing Text Files with the TextFieldParser Object](../Topic/Parsing%20Text%20Files%20with%20the%20TextFieldParser%20Object%20\(Visual%20Basic\).md)   
- [TextFieldParser Object](../Topic/TextFieldParser%20Object.md)
+ [Parsing Text Files with the TextFieldParser Object](http://msdn.microsoft.com/library/fc31d6e6-af0c-403f-8a00-d556b2c57567)   
+ [TextFieldParser Object](http://msdn.microsoft.com/library/d44bd2b0-7dfc-410b-a48b-534c1e97460b)

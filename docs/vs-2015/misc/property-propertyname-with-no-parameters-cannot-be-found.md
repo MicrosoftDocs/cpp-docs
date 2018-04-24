@@ -30,4 +30,4 @@ The attribute being used has a property that requires one or more parameters.
 1.  Specify parameters for the property.  
   
 ## See Also  
- [Properties](../Topic/Properties%20\(Visual%20Basic\).md)
+ [Properties](http://msdn.microsoft.com/library/c995caf9-8d0e-4fb8-ae02-e9e6087d7651)

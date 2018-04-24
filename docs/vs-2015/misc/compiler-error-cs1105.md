@@ -42,5 +42,5 @@ public class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)   
- [static](../Topic/static%20\(C%23%20Reference\).md)
+ [Extension Methods](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)   
+ [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)

@@ -32,6 +32,6 @@ A member of this class or structure attempts to implement a member of an interfa
 -   Remove the `Implements` keyword from the member that causes this error.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
+ [Implements](http://msdn.microsoft.com/library/5252cdf9-964d-4fc6-af0f-0449b7126b5a)   
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)

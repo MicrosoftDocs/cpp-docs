@@ -30,5 +30,5 @@ An invalid modifier was specified with a class declared in an interface.
 -   Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, or `Overridable`.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)

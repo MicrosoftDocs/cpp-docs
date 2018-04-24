@@ -25,7 +25,7 @@ manager: "wpickett"
   
  A programming element is declared with the same name as an overridable procedure or property defined in the base class. In this situation, the element in this class should shadow the base class element.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40005  
   
@@ -39,6 +39,6 @@ manager: "wpickett"
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Shadowing in Visual Basic](http://msdn.microsoft.com/library/54bb4c25-12c4-4181-b4a0-93546053964e)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)

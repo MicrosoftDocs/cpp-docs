@@ -110,7 +110,7 @@ class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
  [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../top/visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
+ [CComObjectThreadModel](http://msdn.microsoft.com/library/69f1e800-c802-4068-9f37-75d59bfc4595)   
  [IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)
 
 

@@ -38,8 +38,8 @@ A custom event cannot be declared in an interface because a custom event must pr
   
 ## See Also  
  [Custom - delete](http://msdn.microsoft.com/en-us/dc62be07-c896-4866-a533-982a661d143f)   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

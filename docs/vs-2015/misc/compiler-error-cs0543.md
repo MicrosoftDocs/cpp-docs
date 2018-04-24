@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0543
 'enumeration' : the enumerator value is too large to fit in its type  
   
- A value that was assigned to an element in an [enumeration](../Topic/enum%20\(C%23%20Reference\).md) is outside the range of the data type.  
+ A value that was assigned to an element in an [enumeration](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c) is outside the range of the data type.  
   
  The following sample generates CS0543:  
   

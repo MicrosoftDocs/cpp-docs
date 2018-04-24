@@ -38,6 +38,6 @@ This error generally occurs when the `/stop` switch has been entered, along with
 3.  If you want to start a new Find in Files or Replace in Files operation, re-enter the command, omitting `/stop`.  
   
 ## See Also  
- [Replace In Files Command](../Topic/Replace%20In%20Files%20Command.md)   
- [Find in Files Command](../Topic/Find%20in%20Files%20Command.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Replace In Files Command](http://msdn.microsoft.com/library/f116066a-4f65-4f2c-94ef-12cbd8cfb598)   
+ [Find in Files Command](http://msdn.microsoft.com/library/2fc78bfe-b339-4599-97f9-4cafd8a194d9)   
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

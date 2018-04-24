@@ -32,4 +32,4 @@ An `Exit While` statement occurs outside a `While` block. `Exit While` is valid 
 2.  Verify that other control structures within the `While` block are correctly terminated.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)
+ [While...End While Statement](http://msdn.microsoft.com/library/b931d1ce-e8ed-44d8-a13d-92a4f5458a1e)

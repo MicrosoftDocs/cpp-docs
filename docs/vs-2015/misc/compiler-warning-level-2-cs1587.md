@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 2) CS1587
 XML comment is not placed on a valid language element  
   
- Recommended tags for documentation comments are not allowed on all language elements. For example, a tag is not allowed on a namespace. For more information on XML comments, see [Recommended Tags for Documentation Comments](../Topic/Recommended%20Tags%20for%20Documentation%20Comments%20\(C%23%20Programming%20Guide\).md).  
+ Recommended tags for documentation comments are not allowed on all language elements. For example, a tag is not allowed on a namespace. For more information on XML comments, see [Recommended Tags for Documentation Comments](http://msdn.microsoft.com/library/6e98f7a9-38f4-4d74-b644-1ff1b23320fd).  
   
 ## Example  
  The following sample generates CS1587:  

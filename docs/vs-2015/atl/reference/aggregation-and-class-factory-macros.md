@@ -314,7 +314,7 @@ DECLARE_POLY_AGGREGATABLE(Ã‚
  The `DECLARE_POLY_AGGREGATABLE` macro is automatically declared in your object if you use the ATL Control Wizard to create a full control.  
   
 ##  <a name="declare_protect_final_construct"></a>  DECLARE_PROTECT_FINAL_CONSTRUCT  
- Protects your object from being deleted if (during [FinalConstruct](../Topic/CComObjectRootEx::FinalConstruct.md)) the internal aggregated object increments the reference count then decrements the count to 0.  
+ Protects your object from being deleted if (during [FinalConstruct](http://msdn.microsoft.com/library/ab9f38e6-c5d0-4b70-b2f5-977e79b858c1)) the internal aggregated object increments the reference count then decrements the count to 0.  
   
 ```
 DECLARE_PROTECT_FINAL_CONSTRUCT()

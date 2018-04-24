@@ -24,7 +24,7 @@ manager: "ghogen"
 # task_canceled Class
 [!INCLUDE[blank_token](../../../includes/blank-token.md)]
 
-This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](../Topic/Task%20Class%20-%20Internal%20Members.md), for a canceled task.  
+This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](http://msdn.microsoft.com/library/28e47c3b-9323-424a-80ac-6cc3bf19e09b), for a canceled task.  
   
 ## Syntax  
   

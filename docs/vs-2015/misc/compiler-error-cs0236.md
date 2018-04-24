@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0236
 A field initializer cannot reference the nonstatic field, method, or property 'field'  
   
- Instance fields cannot be used to initialize other instance fields outside a method. If you are trying to initialize a variable outside a method, consider performing the initialization inside the class constructor. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ Instance fields cannot be used to initialize other instance fields outside a method. If you are trying to initialize a variable outside a method, consider performing the initialization inside the class constructor. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0236:  
   

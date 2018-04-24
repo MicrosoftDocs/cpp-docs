@@ -30,5 +30,5 @@ Visual Studio Library is a set of template-based C++ classes for the easy creati
  [Introduction to ATL](../atl/introduction-to-atl.md)  
  Introduces the Active Template Library (ATL), which is a set of template-based C++ classes for creating small, fast Component Object Model (COM) objects.  
   
- [Starting to Develop Visual Studio Extensions](../Topic/Starting%20to%20Develop%20Visual%20Studio%20Extensions.md)  
+ [Starting to Develop Visual Studio Extensions](http://msdn.microsoft.com/library/8fe5e2ab-a424-4173-9d39-dd082c4d58d0)  
  Provides an overview of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Development Environment SDK.

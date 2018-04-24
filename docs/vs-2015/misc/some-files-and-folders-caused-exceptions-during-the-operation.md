@@ -24,4 +24,4 @@ Directories and files may cause exceptions when an operation is attempted but th
   
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>   
- [Troubleshooting: Reading from and Writing to Text Files](../Topic/Troubleshooting:%20Reading%20from%20and%20Writing%20to%20Text%20Files%20\(Visual%20Basic\).md)
+ [Troubleshooting: Reading from and Writing to Text Files](http://msdn.microsoft.com/library/a8e9b44d-facb-4718-8c0f-466537171182)

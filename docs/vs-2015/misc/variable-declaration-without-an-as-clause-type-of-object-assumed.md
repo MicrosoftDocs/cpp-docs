@@ -23,9 +23,9 @@ manager: "wpickett"
 # Variable declaration without an &#39;As&#39; clause; type of Object assumed
 A variable declaration does not specify an `As` clause.  
   
- An `As` clause identifies a data type to be associated with a programming element. In a [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md), it specifies the data type of the variable or variables. If you do not include an `As` clause in the `Dim` statement, the variable's data type defaults to `Object`.  
+ An `As` clause identifies a data type to be associated with a programming element. In a [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448), it specifies the data type of the variable or variables. If you do not include an `As` clause in the `Dim` statement, the variable's data type defaults to `Object`.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42020  
   
@@ -34,5 +34,5 @@ A variable declaration does not specify an `As` clause.
 -   Include an `As` clause in the `Dim` statement to specify the variable's data type.  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [Variable Declaration](http://msdn.microsoft.com/library/d8f10226-92b1-480f-9f53-df377b2d7e15)

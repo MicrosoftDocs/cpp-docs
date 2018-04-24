@@ -37,7 +37,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `partition`. For more information, see [partition](../Topic/partition.md).  
+ This function behaves the same as the STL function `partition`. For more information, see [partition](http://msdn.microsoft.com/library/01a91b09-7950-4f5e-921d-3b2457ed5be4).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

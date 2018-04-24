@@ -43,6 +43,6 @@ A parameter included in a LINQ query is a pointer type. Parameters used in query
 1.  Replace the `ByRef` keyword with the `ByVal` keyword for the parameter used in the query.  
   
 ## See Also  
- [Differences Between Passing an Argument By Value and By Reference](../Topic/Differences%20Between%20Passing%20an%20Argument%20By%20Value%20and%20By%20Reference%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Differences Between Passing an Argument By Value and By Reference](http://msdn.microsoft.com/library/5f5c38fe-3e2d-494c-8fff-f4025b55ec93)   
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)

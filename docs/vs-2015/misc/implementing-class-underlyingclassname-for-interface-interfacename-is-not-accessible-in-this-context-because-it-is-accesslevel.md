@@ -37,5 +37,5 @@ An interface is declared with the <xref:System.Runtime.InteropServices.CoClassAt
   
 ## See Also  
  <xref:System.Runtime.InteropServices.CoClassAttribute>   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)   
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)
+ [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0)   
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)

@@ -23,4 +23,4 @@ This error generally occurs when a switch has been supplied for a command that r
   
 ### To correct this error  
   
-1.  Review the syntax requirements for the command. For more information, see [Visual Studio Commands with Arguments](../Topic/Visual%20Studio%20Commands.md).
+1.  Review the syntax requirements for the command. For more information, see [Visual Studio Commands with Arguments](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1).

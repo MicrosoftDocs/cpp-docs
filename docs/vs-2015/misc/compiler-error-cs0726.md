@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0726
 'format specifier' is not a valid format specifier  
   
- This error occurs in the debugger. When you type a variable name into one of the debugger windows, you can follow it with a comma, and then a format specifier. Examples are: `myInt, h` or `myString,nq`. This error arises when the compiler does not recognize the [Format Specifiers in C#](../Topic/Format%20Specifiers%20in%20C%23.md).
+ This error occurs in the debugger. When you type a variable name into one of the debugger windows, you can follow it with a comma, and then a format specifier. Examples are: `myInt, h` or `myString,nq`. This error arises when the compiler does not recognize the [Format Specifiers in C#](http://msdn.microsoft.com/library/345c8589-5f36-4d34-a58c-e56271687dd6).

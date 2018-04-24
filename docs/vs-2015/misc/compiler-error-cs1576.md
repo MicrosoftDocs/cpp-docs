@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1576
 The line number specified for #line directive is missing or invalid  
   
- The compiler detected an error with the value passed to the [#line](../Topic/%23line%20\(C%23%20Reference\).md) directive.  
+ The compiler detected an error with the value passed to the [#line](http://msdn.microsoft.com/library/6439e525-5dd5-4acb-b8ea-efabb32ff95b) directive.  
   
  The following sample generates CS1576:  
   

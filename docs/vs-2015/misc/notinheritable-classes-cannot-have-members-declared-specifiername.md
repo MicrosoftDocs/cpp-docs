@@ -30,7 +30,7 @@ Override modifiers cannot be used with `NotInheritable` classes because their me
 -   Remove override modifiers, such as `Overridable`, `NotOverridable`, or `MustOverride`, from the class definition.  
   
 ## See Also  
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)   
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
+ [Overridable](http://msdn.microsoft.com/library/612581e7-8a4c-4a5d-beff-3402fffa6f35)   
+ [NotOverridable](http://msdn.microsoft.com/library/66ec6984-f5f5-4857-b362-6a3907aaf9e0)   
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

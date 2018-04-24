@@ -30,4 +30,4 @@ You have attempted to combine the `Shared` modifier with a specifier that is not
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)
+ [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd)

@@ -78,8 +78,8 @@ coinCollection.Item(1) = aCoinObject
   
 ## See Also  
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)   
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [How to: Call a Property Procedure](../Topic/How%20to:%20Call%20a%20Property%20Procedure%20\(Visual%20Basic\).md)   
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
+ [How to: Call a Property Procedure](http://msdn.microsoft.com/library/96bc4d74-d9c3-4b7a-954d-58ac8553cd94)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)   
+ [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a)

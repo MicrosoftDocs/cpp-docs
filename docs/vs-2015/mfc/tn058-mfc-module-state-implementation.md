@@ -52,7 +52,7 @@ NOTE]
   
  The current module state is switched by calling **AfxSetModuleState**. For the most part, you will never deal directly with the API. MFC, in many cases, will call it for you (at WinMain, OLE entry-points, **AfxWndProc**, etc.). This is done in any component you write by statically linking in a special **WndProc**, and a special `WinMain` (or `DllMain`) that knows which module state should be current. You can see this code by looking at DLLMODUL.CPP or APPMODUL.CPP in the MFC\SRC directory.  
   
- It is rare that you want to set the module state and then not set it back. Most of the time you want to "push" your own module state as the current one and then, after you are done, "pop" the original context back. This is done by the macro [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_STATE.md) and the special class **AFX_MAINTAIN_STATE**.  
+ It is rare that you want to set the module state and then not set it back. Most of the time you want to "push" your own module state as the current one and then, after you are done, "pop" the original context back. This is done by the macro [AFX_MANAGE_STATE](http://msdn.microsoft.com/library/620cb840-4227-4a75-b36d-f7d507f44606) and the special class **AFX_MAINTAIN_STATE**.  
   
  `CCmdTarget` has special features for supporting module state switching. In particular, a `CCmdTarget` is the root class used for OLE automation and OLE COM entry points. Like any other entry point exposed to the system, these entry points must set the correct module state. How does a given `CCmdTarget` know what the "correct" module state should be The answer is that it "remembers" what the "current" module state is when it is constructed, such that it can set the current module state to that "remembered" value when it is later called. As a result, the module state that a given `CCmdTarget` object is associated with is the module state that was current when the object was constructed. Take a simple example of loading an INPROC server, creating an object, and calling its methods.  
   
@@ -64,7 +64,7 @@ NOTE]
   
 4. `DllGetClassObject` is called to obtain the class factory. MFC searches the class factory list associated with this module and returns it.  
   
-5. **COleObjectFactory::XClassFactory2::CreateInstance** is called. Before creating the object and returning it, this function sets the module state to the module state that was current in step 3 (the one that was current when the `COleObjectFactory` was instantiated). This is done inside of [METHOD_PROLOGUE](../Topic/METHOD_PROLOGUE.md).  
+5. **COleObjectFactory::XClassFactory2::CreateInstance** is called. Before creating the object and returning it, this function sets the module state to the module state that was current in step 3 (the one that was current when the `COleObjectFactory` was instantiated). This is done inside of [METHOD_PROLOGUE](http://msdn.microsoft.com/library/e94c4939-64ea-42de-a501-55594c952828).  
   
 6.  When the object is created, it too is a `CCmdTarget` derivative and in the same way `COleObjectFactory` remembered which module state was active, so does this new object. Now the object knows which module state to switch to whenever it is called.  
   
@@ -82,7 +82,7 @@ NOTE]
 AFX_MANAGE_STATE(AfxGetStaticModuleState())  
 ```  
   
- This swaps the current module state with the state returned from [AfxGetStaticModuleState](../Topic/AfxGetStaticModuleState.md) until the end of the current scope.  
+ This swaps the current module state with the state returned from [AfxGetStaticModuleState](http://msdn.microsoft.com/library/8b6c7c95-9d57-4337-9378-9b65e60d5c3b) until the end of the current scope.  
   
  Problems with resources in DLLs will occur if the `AFX_MODULE_STATE` macro is not used. By default, MFC uses the resource handle of the main application to load the resource template. This template is actually stored in the DLL. The root cause is that MFC's module state information has not been switched by the `AFX_MODULE_STATE` macro. The resource handle is recovered from MFC's module state. Not switching the module state causes the wrong resource handle to be used.  
   

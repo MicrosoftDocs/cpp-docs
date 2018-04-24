@@ -31,7 +31,7 @@ A range variable in a LINQ query matches the name of a member of the <xref:Syste
   
 ## See Also  
  <xref:System.Object>   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [From Clause](../Topic/From%20Clause%20\(Visual%20Basic\).md)   
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [Select Clause](../Topic/Select%20Clause%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [From Clause](http://msdn.microsoft.com/library/83e3665e-68a0-4540-a3a3-3d777a0f95d5)   
+ [Aggregate Clause](http://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb)   
+ [Select Clause](http://msdn.microsoft.com/library/27a3f61c-5960-4692-9b91-4d0c4b6178fe)

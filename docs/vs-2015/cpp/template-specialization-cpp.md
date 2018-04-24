@@ -339,7 +339,7 @@ Sorted list:
 ```  
   
 ## See Also  
- [Explicit Specialization of Class Templates](../Topic/Explicit%20Specialization%20of%20Class%20Templates.md)
+ [Explicit Specialization of Class Templates](http://msdn.microsoft.com/library/7ad67abd-5cb5-4d36-a3df-31a71ca9c49b)
 
 
 

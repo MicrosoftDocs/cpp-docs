@@ -18,7 +18,7 @@ caps.latest.revision: 24
 manager: "douge"
 ---
 # Visual Studio Interop Assembly Parameter Marshaling
-VSPackages that are written in managed code might have to call or be called by unmanaged COM code. Typically, method arguments are transformed, or marshaled, automatically by the interop marshaler. However, sometimes arguments cannot be transformed in a straightforward manner. In those cases, the interop assembly method prototype parameters are used to match the COM function parameters as closely as possible. For more information, see [Interop Marshaling](../Topic/Interop%20Marshaling.md).  
+VSPackages that are written in managed code might have to call or be called by unmanaged COM code. Typically, method arguments are transformed, or marshaled, automatically by the interop marshaler. However, sometimes arguments cannot be transformed in a straightforward manner. In those cases, the interop assembly method prototype parameters are used to match the COM function parameters as closely as possible. For more information, see [Interop Marshaling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## General Suggestions  
   
@@ -123,6 +123,6 @@ else
   
 ## See Also  
  [Interop Marshaling](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Interop Marshaling](../Topic/Interop%20Marshaling.md)   
- [Troubleshooting Interoperability](../Topic/Troubleshooting%20Interoperability%20\(Visual%20Basic\).md)   
+ [Interop Marshaling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Troubleshooting Interoperability](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Managed VSPackages](../misc/managed-vspackages.md)

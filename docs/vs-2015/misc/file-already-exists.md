@@ -25,4 +25,4 @@ This error occurs as a result of either naming a new file with the name of an ex
 -   Check the name and either change it to one that does not conflict, or delete the pre-existing file or project if it is no longer needed.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

@@ -30,7 +30,7 @@ Interface members must be implemented by classes or structures.
 -   Implement interface members from classes or structures.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Implements Statement](../Topic/Implements%20Statement.md)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)   
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)   
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)

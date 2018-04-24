@@ -122,9 +122,9 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
 ##  <a name="removing-work"></a> Removing Work from the UI Thread  
  This section shows how to remove the drawing work from the UI thread in the Mandelbrot application. By moving drawing work from the UI thread to a worker thread, the UI thread can process messages as the worker thread generates the image in the background.  
   
- The Concurrency Runtime provides three ways to run tasks: [task groups](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [asynchronous agents](../../parallel/concrt/asynchronous-agents.md), and [lightweight tasks](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Although you can use any one of these mechanisms to remove work from the UI thread, this example uses a [concurrency::task_group](../Topic/task_group%20Class.md) object because task groups support cancellation. This walkthrough later uses cancellation to reduce the amount of work that is performed when the client window is resized, and to perform cleanup when the window is destroyed.  
+ The Concurrency Runtime provides three ways to run tasks: [task groups](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [asynchronous agents](../../parallel/concrt/asynchronous-agents.md), and [lightweight tasks](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Although you can use any one of these mechanisms to remove work from the UI thread, this example uses a [concurrency::task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) object because task groups support cancellation. This walkthrough later uses cancellation to reduce the amount of work that is performed when the client window is resized, and to perform cleanup when the window is destroyed.  
   
- This example also uses a [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object to enable the UI thread and the worker thread to communicate with each other. After the worker thread produces the image, it sends a pointer to the `Bitmap` object to the `unbounded_buffer` object and then posts a paint message to the UI thread. The UI thread then receives from the `unbounded_buffer` object the `Bitmap` object and draws it to the client window.  
+ This example also uses a [concurrency::unbounded_buffer](~/parallel/concrt/reference/unbounded-buffer-class.md) object to enable the UI thread and the worker thread to communicate with each other. After the worker thread produces the image, it sends a pointer to the `Bitmap` object to the `unbounded_buffer` object and then posts a paint message to the UI thread. The UI thread then receives from the `unbounded_buffer` object the `Bitmap` object and draws it to the client window.  
   
 #### To remove the drawing work from the UI thread  
   
@@ -140,7 +140,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
   
      [!code-cpp[concrt-mandelbrot#103](../../snippets/cpp/VS_Snippets_ConcRT/concrt-mandelbrot/cpp/parallelmandelbrot/childview.cpp#103)]  
   
-4.  In the `CChildView::DrawMandelbrot` method, after the call to `Bitmap::UnlockBits`, call the [concurrency::send](../Topic/send%20Function.md) function to pass the `Bitmap` object to the UI thread. Then post a paint message to the UI thread and invalidate the client area.  
+4.  In the `CChildView::DrawMandelbrot` method, after the call to `Bitmap::UnlockBits`, call the [concurrency::send](http://msdn.microsoft.com/library/8713fb36-066b-47de-af12-589fa74805d6) function to pass the `Bitmap` object to the UI thread. Then post a paint message to the UI thread and invalidate the client area.  
   
      [!code-cpp[concrt-mandelbrot#104](../../snippets/cpp/VS_Snippets_ConcRT/concrt-mandelbrot/cpp/parallelmandelbrot/childview.cpp#104)]  
   
@@ -157,7 +157,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
  [[Top](#top)]  
   
 ##  <a name="performance"></a> Improving Drawing Performance  
- The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm, as follows.  
+ The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) algorithm, as follows.  
   
  [!code-cpp[concrt-mandelbrot#301](../../snippets/cpp/VS_Snippets_ConcRT/concrt-mandelbrot/cpp/parallelmandelbrot/childview.cpp#301)]  
   
@@ -173,7 +173,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
 ### Cancelling Active Tasks  
  The Mandelbrot application creates `Bitmap` objects whose dimensions match the size of the client window. Every time the client window is resized, the application creates an additional background task to generate an image for the new window size. The application does not require these intermediate images; it requires only the image for the final window size. To prevent the application from performing this additional work, you can cancel any active drawing tasks in the message handlers for the `WM_SIZE` and `WM_SIZING` messages and then reschedule drawing work after the window is resized.  
   
- To cancel active drawing tasks when the window is resized, the application calls the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) method in the handlers for the `WM_SIZING` and `WM_SIZE` messages. The handler for the `WM_SIZE` message also calls the [concurrency::task_group::wait](../Topic/task_group::wait%20Method.md) method to wait for all active tasks to complete and then reschedules the drawing task for the updated window size.  
+ To cancel active drawing tasks when the window is resized, the application calls the [concurrency::task_group::cancel](http://msdn.microsoft.com/library/4f808727-92cd-4158-bc80-dac982c9630e) method in the handlers for the `WM_SIZING` and `WM_SIZE` messages. The handler for the `WM_SIZE` message also calls the [concurrency::task_group::wait](http://msdn.microsoft.com/library/19ee5bbc-8654-40a7-9f22-d5329cec6e96) method to wait for all active tasks to complete and then reschedules the drawing task for the updated window size.  
   
  When the client window is destroyed, it is good practice to cancel any active drawing tasks. Canceling any active drawing tasks makes sure that worker threads do not post messages to the UI thread after the client window is destroyed. The application cancels any active drawing tasks in the handler for the `WM_DESTROY` message.  
   

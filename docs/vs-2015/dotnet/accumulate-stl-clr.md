@@ -39,7 +39,7 @@ template<class _InIt, class _Ty, class _Fn2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `accumulate`. For more information, see [accumulate](../Topic/accumulate.md).  
+ This function behaves the same as the STL numeric function `accumulate`. For more information, see [accumulate](http://msdn.microsoft.com/library/9908525b-967c-402d-9ee9-aadacc241efc).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

@@ -39,12 +39,12 @@ To prepare a computer to test the debug version of an application that is built 
     > [!NOTE]
     >  For remote debugging of your application built by using Visual C++ 2005 or Visual C++ 2008 on another computer, you have to deploy debug versions of Visual C++ library DLLs as shared side-by-side assemblies. You can use either a Setup project or Windows Installer to install corresponding merge modules.  
   
--   Use the_**Deploy** option in the **Configuration Manager** dialog box in Visual Studio to copy the project output and other files to the remote computer. An example of this deployment may be found in [Set Up Remote Debugging for a Visual Studio Project](../Topic/Set%20Up%20Remote%20Debugging%20for%20a%20Visual%20Studio%20Project.md).  
+-   Use the_**Deploy** option in the **Configuration Manager** dialog box in Visual Studio to copy the project output and other files to the remote computer. An example of this deployment may be found in [Set Up Remote Debugging for a Visual Studio Project](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
- After Visual C++ DLLs are installed, you can run a remote debugger on a network share. For more information about remote debugging, see [Set Up the Remote Tools on the Device](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md).  
+ After Visual C++ DLLs are installed, you can run a remote debugger on a network share. For more information about remote debugging, see [Set Up the Remote Tools on the Device](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 ## See Also  
- [Set Up the Remote Tools on the Device](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)   
+ [Set Up the Remote Tools on the Device](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
  [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md)   
  [Windows Installer Command line options](http://msdn.microsoft.com/library/windows/desktop/aa367988.aspx)   
  [Deployment Examples](../ide/deployment-examples.md)

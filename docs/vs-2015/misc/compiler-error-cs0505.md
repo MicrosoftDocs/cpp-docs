@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0505
 'member1': cannot override because 'member2' is not a function  
   
- A class declaration attempted to override a non-method in a base class. Overrides must match the member type. If a method with the same name as a method in a base class is desired, use [new](../Topic/new%20\(C%23%20Reference\).md) (and not [override](../Topic/override%20\(C%23%20Reference\).md)) on the method declaration in the base class.  
+ A class declaration attempted to override a non-method in a base class. Overrides must match the member type. If a method with the same name as a method in a base class is desired, use [new](http://msdn.microsoft.com/library/e4136516-f058-45a8-84e5-da00a5cf9b6a) (and not [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)) on the method declaration in the base class.  
   
  The following sample generates CS0505:  
   

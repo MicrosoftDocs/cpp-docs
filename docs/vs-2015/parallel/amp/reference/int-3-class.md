@@ -110,7 +110,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::int_3 Constructor](../Topic/int_3::int_3%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_3::int_3 Constructor](http://msdn.microsoft.com/library/3416e61c-4755-4f54-996d-206e11ffa730)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -177,7 +177,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::size Constant](../Topic/int_3::size%20Constant.md)||  
+|[int_3::size Constant](http://msdn.microsoft.com/library/b1291eb0-67f7-4e0d-b6fa-00bb35a158d6)||  
   
 ### Public Data Members  
   

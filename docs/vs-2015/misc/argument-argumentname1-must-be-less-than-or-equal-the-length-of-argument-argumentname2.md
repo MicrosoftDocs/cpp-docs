@@ -23,4 +23,4 @@ The length of a supplied argument exceeds the length of the argument it is repla
 -   Make the length of the first argument less than or equal to the length of the second argument.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

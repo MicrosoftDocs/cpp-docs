@@ -32,5 +32,5 @@ Operator 'operator' is not defined for types 'type1' and 'type2'. You can use th
 -   Use the `Value` property of the XML literal for the binary or `Boolean` comparison.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

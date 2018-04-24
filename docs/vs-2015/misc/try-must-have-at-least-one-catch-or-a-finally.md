@@ -30,4 +30,4 @@ A `Try` block must include either a `Finally` block or at least one `Catch` bloc
 -   Add a `Catch` or `Finally` block within the `Try` block.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)

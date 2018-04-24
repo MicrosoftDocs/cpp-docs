@@ -56,7 +56,7 @@ This topic applies to the MFC ODBC classes.
   
 -   Passing run-time arguments to a predefined query.  
   
-     To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call **Open**, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](../Topic/CRecordset::Open.md) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
+     To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call **Open**, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](http://msdn.microsoft.com/library/fb837c3c-133d-45e9-8f6c-aeb276193081) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
   
 -   Efficiently performing numerous requeries with different parameter information.  
   
@@ -124,7 +124,7 @@ This topic applies to the MFC ODBC classes.
   
      Add your parameter data members after the wizard-generated field data members. The convention is to append the word "Param" to each user-defined parameter name.  
   
-4.  Modify the [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) member function definition in the .cpp file. Add an RFX function call for each parameter data member you added to the class. For information about writing your RFX functions, see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). Precede the RFX calls for the parameters with a single call to:  
+4.  Modify the [DoFieldExchange](http://msdn.microsoft.com/library/197fb2fb-7752-4830-8188-589b4d4ce7e8) member function definition in the .cpp file. Add an RFX function call for each parameter data member you added to the class. For information about writing your RFX functions, see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). Precede the RFX calls for the parameters with a single call to:  
   
     ```  
     pFX->SetFieldType( CFieldExchange::param );  
@@ -137,13 +137,13 @@ This topic applies to the MFC ODBC classes.
   
 6.  When you write the code that creates a recordset object of this class, place a "?" (question mark) symbol in each place in your SQL statement strings where a parameter is to be replaced.  
   
-     At run time, "?" placeholders are filled, in order, by the parameter values you pass. The first parameter data member set after the [SetFieldType](../Topic/CFieldExchange::SetFieldType.md) call replaces the first "?" in the SQL string, the second parameter data member replaces the second "?", and so on.  
+     At run time, "?" placeholders are filled, in order, by the parameter values you pass. The first parameter data member set after the [SetFieldType](http://msdn.microsoft.com/library/3d9619e4-1ce0-4ca5-a5fe-5cbe0a0b0d19) call replaces the first "?" in the SQL string, the second parameter data member replaces the second "?", and so on.  
   
 > [!NOTE]
 >  Parameter order is important: the order of RFX calls for parameters in your `DoFieldExchange` function must match the order of the parameter placeholders in your SQL string.  
   
 > [!TIP]
->  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../Topic/CRecordset::m_strFilter.md) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
+>  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](http://msdn.microsoft.com/library/d483ec4f-2dd1-4544-9eca-1c3df2228df4) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
   
 ##  <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time  
  You must specify parameter values before you call **Open** (for a new recordset object) or **Requery** (for an existing one).  
@@ -180,7 +180,7 @@ if( !rsStudents.Requery( ) )
  The recordset contains records for those students whose records meet the conditions specified by the filter, which was constructed from run-time parameters. In this case, the recordset contains records for all senior students.  
   
 > [!NOTE]
->  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../Topic/CRecordset::SetParamNull.md). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../Topic/CRecordset::IsFieldNull.md).  
+>  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](http://msdn.microsoft.com/library/d24a7cec-3fdf-4a7d-8cfb-571fc101e2ae). You can likewise check whether a parameter data member is Null, using [IsFieldNull](http://msdn.microsoft.com/library/4409d56b-5870-4b37-adb4-d8d6d4732f0a).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

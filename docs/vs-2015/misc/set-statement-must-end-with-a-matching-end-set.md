@@ -30,5 +30,5 @@ manager: "wpickett"
 -   Make sure that the `Set` property procedure ends with an `End Set` construct.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
  [Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/1c138efa-9bc2-44d7-80a0-f3a7c2510264)

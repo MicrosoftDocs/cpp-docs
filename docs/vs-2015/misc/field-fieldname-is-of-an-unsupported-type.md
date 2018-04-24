@@ -32,4 +32,4 @@ A field is declared as a type that cannot be represented by [!INCLUDE[vsprvs](..
 2.  Develop a new type that describes the data in the field.  
   
 ## See Also  
- [Data Types](../Topic/Data%20Type%20Summary%20\(Visual%20Basic\).md)
+ [Data Types](http://msdn.microsoft.com/library/e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0)

@@ -42,5 +42,5 @@ Dim number As Integer
 -   Supply the argument by position, or remove the comma that omits it.  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
+ [Passing Arguments by Position and by Name](http://msdn.microsoft.com/library/1ad7358f-1da9-48da-a95b-f3c7ed41eff3)

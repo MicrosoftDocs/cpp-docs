@@ -58,5 +58,5 @@ End Module
     ```  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)   
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)

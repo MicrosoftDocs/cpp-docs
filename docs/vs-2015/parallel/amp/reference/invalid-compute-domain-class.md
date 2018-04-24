@@ -24,7 +24,7 @@ manager: "ghogen"
 # invalid_compute_domain Class
 [!INCLUDE[blank_token](../../../includes/blank-token.md)]
 
-The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the [parallel_for_each](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md) call site.  
+The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the [parallel_for_each](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160) call site.  
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ class invalid_compute_domain : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_compute_domain::invalid_compute_domain Constructor](../Topic/invalid_compute_domain::invalid_compute_domain%20Constructor.md)|Initializes a new instance of the `invalid_compute_domain` class.|  
+|[invalid_compute_domain::invalid_compute_domain Constructor](http://msdn.microsoft.com/library/d304a551-19da-4191-90fe-1cbaf4a737f7)|Initializes a new instance of the `invalid_compute_domain` class.|  
   
 ## Inheritance Hierarchy  
  `exception`  

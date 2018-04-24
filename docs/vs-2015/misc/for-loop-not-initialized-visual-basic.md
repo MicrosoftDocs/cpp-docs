@@ -25,5 +25,5 @@ You jumped into the middle of a `For...Next` loop.
 1.  Remove the jump into the loop.  
   
 ## See Also  
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [For Each...Next Statement](http://msdn.microsoft.com/library/ebce3120-95c3-42b1-b70b-fa7da40c75e2)   
+ [How to: Label Statements](http://msdn.microsoft.com/library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

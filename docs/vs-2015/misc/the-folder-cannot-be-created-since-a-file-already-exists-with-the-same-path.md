@@ -25,9 +25,9 @@ An attempt has been made to create a directory, but a file already exists with t
 -   Remove the redundant file if it is no longer needed.  
   
 ## See Also  
- [How to: Create a Directory](../Topic/How%20to:%20Create%20a%20Directory%20in%20Visual%20Basic.md)   
+ [How to: Create a Directory](http://msdn.microsoft.com/library/0351a2ca-24d8-43b5-bb39-9b99e6401cff)   
  [How to: Rename a Directory in Visual Basic](http://msdn.microsoft.com/en-us/780c7afc-a03c-4b01-865a-510fe331b1cc)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)   
  [My.Computer.FileSystem.CreateDirectory Method](http://msdn.microsoft.com/en-us/2c1688d2-a60c-4e68-9a1a-4006917b28e1)   
  [My.Computer.FileSystem.RenameDirectory Method](http://msdn.microsoft.com/en-us/14700cb3-9d29-46e2-af8d-61970d7e251b)   
- [Creating, Deleting, and Moving Files and Directories](../Topic/Creating,%20Deleting,%20and%20Moving%20Files%20and%20Directories%20in%20Visual%20Basic.md)
+ [Creating, Deleting, and Moving Files and Directories](http://msdn.microsoft.com/library/8f814fcc-4c42-4dbb-a131-005ec445ac9e)

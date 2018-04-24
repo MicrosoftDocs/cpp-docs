@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0172
 Type of conditional expression cannot be determined because 'type1' and 'type2' implicitly convert to one another  
   
- In a conditional statement, you must be able to convert the types on either side of the `:` operator. Also, there cannot be mutual conversion routines; you only need one conversion. For more information, see [Conversion Operators](../Topic/Conversion%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ In a conditional statement, you must be able to convert the types on either side of the `:` operator. Also, there cannot be mutual conversion routines; you only need one conversion. For more information, see [Conversion Operators](http://msdn.microsoft.com/library/c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc).  
   
  The following sample generates CS0172:  
   

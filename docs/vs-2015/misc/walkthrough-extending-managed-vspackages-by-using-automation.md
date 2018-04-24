@@ -21,7 +21,7 @@ manager: "douge"
 This walkthrough illustrates how to use automation to create a managed VSPackage that manipulates the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrated development environment (IDE). You create a sample managed VSPackage and then use automation methods in the resulting VSPackage to display [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] properties in the **Output** window.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](http://msdn.microsoft.com/library/1f7c348a-114c-4243-b392-3531e9c9c6fd).  
   
 ## Locations for the Visual Studio Package Project Template  
  The Visual Studio Package project template can be found in three different locations in the **New Project** dialog:  
@@ -36,7 +36,7 @@ This walkthrough illustrates how to use automation to create a managed VSPackage
   
 1.  Create a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project named `Auto`.  
   
-     For more information about how to create a managed VSPackage, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](../Topic/Walkthrough:%20Creating%20a%20Menu%20Command%20By%20Using%20the%20Visual%20Studio%20Package%20Template.md).  
+     For more information about how to create a managed VSPackage, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2.  On the **Select a Programming Language** page, set the language to [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
@@ -93,4 +93,4 @@ This walkthrough illustrates how to use automation to create a managed VSPackage
      For more information about automation samples, see [Automation Samples for Visual Studio](http://www.microsoft.com/downloads/details.aspx?familyid=3ff9c915-30e5-430e-95b3-621dccd25150&displaylang=en).  
   
 ## See Also  
- [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)
+ [Extending the Visual Studio Environment](http://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)

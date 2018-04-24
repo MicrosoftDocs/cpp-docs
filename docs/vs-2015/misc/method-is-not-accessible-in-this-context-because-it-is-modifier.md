@@ -32,4 +32,4 @@ You have attempted to access a method that is not accessible in this context bec
 -   If the error is caused by a name collision, differentiate the colliding names by more than case.  
   
 ## See Also  
- [Private](../Topic/Private%20\(Visual%20Basic\).md)
+ [Private](http://msdn.microsoft.com/library/aba74a2e-5824-4613-bf63-b9ec7787f4e6)

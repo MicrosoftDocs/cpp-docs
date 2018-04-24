@@ -27,4 +27,4 @@ This error occurs when the devenv command-line switch /AssociateFiles is used, b
   
 ## See Also  
  [User Rights and Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [Devenv Command Line Switches](../Topic/Devenv%20Command%20Line%20Switches.md)
+ [Devenv Command Line Switches](http://msdn.microsoft.com/library/e12bc6ed-74fd-4bea-8d7c-89b99c20bad8)

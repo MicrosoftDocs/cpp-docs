@@ -70,7 +70,7 @@ In mixed mode, you sometimes must marshal your data between native and managed t
   
  The marshaling library is extensible so that you can add your own marshaling types. For more information about extending the marshaling library, see [How to: Extend the Marshaling Library](../dotnet/how-to-extend-the-marshaling-library.md).  
   
- In earlier versions, you could marshal data by using [Platform Invoke](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md). For more information about `PInvoke`, see [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md).  
+ In earlier versions, you could marshal data by using [Platform Invoke](http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045). For more information about `PInvoke`, see [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md).  
   
 ## See Also  
  [C++ Support Library](../dotnet/cpp-support-library.md)   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1025
 Single-line comment or end-of-line expected  
   
- A line with a [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md) cannot have a multiline comment.  
+ A line with a [preprocessor directive](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724) cannot have a multiline comment.  
   
  The following sample generates CS1025:  
   

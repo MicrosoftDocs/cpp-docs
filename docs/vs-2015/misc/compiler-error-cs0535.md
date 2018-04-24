@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0535
 'class' does not implement interface member 'member'  
   
- A [class](../Topic/class%20\(C%23%20Reference\).md) derived from an [interface](../Topic/interface%20\(C%23%20Reference\).md), but the class did not implement one or more of the interface's members. A class must implement all members of interfaces from which it derives or else be declared `abstract`.  
+ A [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) derived from an [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba), but the class did not implement one or more of the interface's members. A class must implement all members of interfaces from which it derives or else be declared `abstract`.  
   
 ## Example  
  The following sample generates CS0535.  

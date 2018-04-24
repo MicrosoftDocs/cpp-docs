@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # XML descendant elements cannot be selected from type &#39;type&#39;
-An XML descendant has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Descendant Axis Property](../Topic/XML%20Descendant%20Axis%20Property%20\(Visual%20Basic\).md).  
+An XML descendant has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Descendant Axis Property](http://msdn.microsoft.com/library/a178f85b-5d54-438f-8479-40b62af6fe76).  
   
 ```vb  
 ' Generates an error.  
@@ -42,6 +42,6 @@ Dim var = "sample text"...<childElement>
     ```  
   
 ## See Also  
- [XML Descendant Axis Property](../Topic/XML%20Descendant%20Axis%20Property%20\(Visual%20Basic\).md)   
- [XML Axis Properties](../Topic/XML%20Axis%20Properties%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Descendant Axis Property](http://msdn.microsoft.com/library/a178f85b-5d54-438f-8479-40b62af6fe76)   
+ [XML Axis Properties](http://msdn.microsoft.com/library/7e400e20-5d1e-4d22-a65c-9df79d5c1621)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

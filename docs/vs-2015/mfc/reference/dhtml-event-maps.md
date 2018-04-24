@@ -120,7 +120,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 ### Remarks  
  Add a DHTML event map to your class to provide information to **CDHtmlDialog** that can be used to route events fired by HTML elements or ActiveX controls in a web page to handler functions in your class.  
   
- Place the `BEGIN_DHTML_EVENT_MAP` macro in the class's definition (.h) file followed by `DHTML_EVENT` macros for the events the class is to handle (for example, `DHTML_EVENT_ONMOUSEOVER` for mouseover events). Use the [END_DHTML_EVENT_MAP_INLINE](../Topic/END_DHTML_EVENT_MAP_INLINE.md) macro to mark the end of the event map. These macros implement the following function:  
+ Place the `BEGIN_DHTML_EVENT_MAP` macro in the class's definition (.h) file followed by `DHTML_EVENT` macros for the events the class is to handle (for example, `DHTML_EVENT_ONMOUSEOVER` for mouseover events). Use the [END_DHTML_EVENT_MAP_INLINE](http://msdn.microsoft.com/library/0cfec092-20ee-49f3-bc38-56d6a5572db2) macro to mark the end of the event map. These macros implement the following function:  
   
  `virtual const DHtmlEventMapEntry* GetDHtmlEventMap();`  
   

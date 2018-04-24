@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &#39;Widening&#39; and &#39;Narrowing&#39; cannot be combined
-An [Operator Statement](../Topic/Operator%20Statement.md) specifies both [Widening](../Topic/Widening%20\(Visual%20Basic\).md) and [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md).  
+An [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5) specifies both [Widening](http://msdn.microsoft.com/library/646ae263-94d3-40a2-b0cc-64f619292f56) and [Narrowing](http://msdn.microsoft.com/library/a207ee91-aca4-4771-b4e2-713f029bf2bb).  
   
  When you define a conversion operator, you must declare it as either `Widening` or `Narrowing`. These are mutually exclusive characteristics, so you cannot specify both.  
   
@@ -32,7 +32,7 @@ An [Operator Statement](../Topic/Operator%20Statement.md) specifies both [Wideni
 -   Remove either the `Widening` or the `Narrowing` keyword from the `Operator` statement. You must specify one or the other.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)   
+ [How to: Define an Operator](http://msdn.microsoft.com/library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/library/54203dfa-c24b-463f-9942-d5153e89e762)

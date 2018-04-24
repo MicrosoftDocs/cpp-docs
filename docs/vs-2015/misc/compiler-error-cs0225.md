@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0225
 The params parameter must be a single dimensional array  
   
- When using the [params](../Topic/params%20\(C%23%20Reference\).md) keyword, you must specify a single-dimensional array of the data type. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ When using the [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) keyword, you must specify a single-dimensional array of the data type. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
 ## Example  
  The following sample generates CS0225:  

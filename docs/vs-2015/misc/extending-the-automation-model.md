@@ -26,9 +26,9 @@ This section discusses how the automation model and the VSPackage model represen
  [Automation Model](../misc/automation-model.md)  
  Provides an overview of the automation model and discusses how the automation model lets you customize, adjust, and automate the environment.  
   
- [Contributing to the Automation Model](../Topic/Contributing%20to%20the%20Automation%20Model.md)  
+ [Contributing to the Automation Model](http://msdn.microsoft.com/library/44de482d-93c8-41a4-843c-cefda995a03e)  
  Provides a more detailed view of the automation model and discusses the ways to provide automation for your VSPackage. This section also provides code examples that show how an automation consumer obtains the initial project automation objects.  
   
 ## Related Sections  
- [Visual Studio SDK and Automation](../Topic/Visual%20Studio%20SDK%20and%20Automation.md)  
+ [Visual Studio SDK and Automation](http://msdn.microsoft.com/library/918cf97f-53f4-4fb5-8639-88f0b2852846)  
  Discusses using automation, VSPackages, or a combination to create [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibility applications.

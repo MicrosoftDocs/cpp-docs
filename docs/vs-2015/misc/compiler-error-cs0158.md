@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0158
 The label 'label' shadows another label by the same name in a contained scope  
   
- A label in an inner scope hides a label with the same name in an outer scope. For more information, see [goto](../Topic/goto%20\(C%23%20Reference\).md).  
+ A label in an inner scope hides a label with the same name in an outer scope. For more information, see [goto](http://msdn.microsoft.com/library/2c03c9c1-8119-44ef-b740-fb3d287a42fe).  
   
  The following sample generates CS0158:  
   

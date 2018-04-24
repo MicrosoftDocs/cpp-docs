@@ -45,5 +45,5 @@ End Sub
 -   Examine the type parameters to determine where they do not match. Change the names as necessary to make them the same.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)   
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)

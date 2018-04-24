@@ -26,7 +26,7 @@ Source file 'file' specified multiple times
   
  A source file name was passed to the compiler more than once. You can only specify a file once to the compiler to build an output file.  
   
- This warning cannot be suppressed by the [/nowarn](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) option.  
+ This warning cannot be suppressed by the [/nowarn](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4) option.  
   
  The following sample generates CS2002:  
   

@@ -69,7 +69,7 @@ class X {
 ```  
   
 ## See Also  
- [Template Specifications](../Topic/Template%20Specifications.md)   
+ [Template Specifications](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753)   
  [Template Specialization](../../cpp/template-specialization-cpp.md)   
- [Explicit Specialization of Class Templates](../Topic/Explicit%20Specialization%20of%20Class%20Templates.md)
+ [Explicit Specialization of Class Templates](http://msdn.microsoft.com/library/7ad67abd-5cb5-4d36-a3df-31a71ca9c49b)
 

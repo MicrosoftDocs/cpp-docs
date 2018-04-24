@@ -37,7 +37,7 @@ This topic applies to the MFC ODBC classes.
   
 1.  Construct a new recordset object (or prepare to call **Requery** for an existing one).  
   
-2.  Set the value of the object's [m_strSort](../Topic/CRecordset::m_strSort.md) data member.  
+2.  Set the value of the object's [m_strSort](http://msdn.microsoft.com/library/34dc533c-a670-4208-91a9-b63b38944d9c) data member.  
   
      The sort is a null-terminated string. It contains the contents of the **ORDER BY** clause but not the keyword **ORDER BY**. For example, use:  
   

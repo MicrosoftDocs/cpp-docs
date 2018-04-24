@@ -26,6 +26,6 @@ This error generally occurs when a complex regular expression has been used in a
 1.  Reduce the number of closures and clauses and try again.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
- [Using Regular Expressions in Visual Studio](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md)   
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)   
+ [Using Regular Expressions in Visual Studio](http://msdn.microsoft.com/library/718a617d-0e05-47e1-a218-9746971527f4)   
  [Wildcards (Visual Studio)](http://msdn.microsoft.com/en-us/9745c56f-0b73-44e1-b393-c17e39670c26)

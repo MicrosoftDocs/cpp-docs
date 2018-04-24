@@ -32,5 +32,5 @@ Unlike classes, structures do not support inheritance.
 -   Redesign your application to use classes instead.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)   
+ [Structures and Classes](http://msdn.microsoft.com/library/a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc)

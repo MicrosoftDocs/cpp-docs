@@ -25,7 +25,7 @@ manager: "wpickett"
   
  The `Class_Initialize` event of previous versions of [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] is replaced by class constructors.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42001  
   

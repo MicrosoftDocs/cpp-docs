@@ -30,4 +30,4 @@ You have used a specifier, such as `Dim` or `Override`, that is not valid on a `
 -   Remove the specifier.  
   
 ## See Also  
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)
+ [Structures and Classes](http://msdn.microsoft.com/library/a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc)

@@ -37,7 +37,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `remove_if`. For more information, see [remove_if](../Topic/remove_if.md).  
+ This function behaves the same as the STL function `remove_if`. For more information, see [remove_if](http://msdn.microsoft.com/library/3b784953-0db6-42a8-84fc-865101abf901).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

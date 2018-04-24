@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0584
 Internal Compiler Error: stage 'stage' symbol 'symbol'  
   
- Try to determine whether the compiler is failing because of its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](../Topic/Talk%20to%20Us.md).
+ Try to determine whether the compiler is failing because of its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e).

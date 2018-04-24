@@ -32,5 +32,5 @@ The `If` operator accepts only two or three arguments.
 -   Consider using another conditional construction, such as an `If...Then...Else` statement or a nested `If...Then...Else` statement to organize the arguments.  
   
 ## See Also  
- [If Operator](../Topic/If%20Operator%20\(Visual%20Basic\).md)   
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)
+ [If Operator](http://msdn.microsoft.com/library/dd56c9df-7cd4-442c-9ba6-20c70ee44c8f)   
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)

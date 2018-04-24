@@ -30,4 +30,4 @@ You have tried to assign a value to a property that is declared `ReadOnly`.
 -   Remove the `ReadOnly` specifier from the property declaration.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)

@@ -30,4 +30,4 @@ There is an error in the XML file being used.
 -   Verify that the XML is well formed, valid, and that the file is not damaged.  
   
 ## See Also  
- [XML Documents and Data](../Topic/XML%20Documents%20and%20Data.md)
+ [XML Documents and Data](http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380)

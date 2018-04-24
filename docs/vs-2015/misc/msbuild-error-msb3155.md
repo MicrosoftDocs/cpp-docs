@@ -32,7 +32,7 @@ manager: "douge"
 -   Remove the package from the list of packages to install, or add the package to the cache. Also, make sure that the manifest is formatted correctly with valid XML tags.  
   
 ## See Also  
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)   
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
- [Prerequisites Dialog Box](../Topic/Prerequisites%20Dialog%20Box.md)   
- [Creating Bootstrapper Packages](../Topic/Creating%20Bootstrapper%20Packages.md)
+ [Product and Package Schema Reference](http://msdn.microsoft.com/library/5a74878f-b896-4cca-b968-98d00fe78fb0)   
+ [\<PackageFiles> Element](http://msdn.microsoft.com/library/3ea252d7-18a3-47d8-af83-47feebcfe82b)   
+ [Prerequisites Dialog Box](http://msdn.microsoft.com/library/53ac863c-77a0-409b-91e5-7a4bd8b8474e)   
+ [Creating Bootstrapper Packages](http://msdn.microsoft.com/library/ba1a785b-693d-446b-bcae-b88cadee73d1)

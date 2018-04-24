@@ -32,4 +32,4 @@ A `With` statement occurs without a corresponding `End With` statement. An `End 
 -   Add an `End With` statement to the end of the `With` block.  
   
 ## See Also  
- [With...End With Statement](../Topic/With...End%20With%20Statement%20\(Visual%20Basic\).md)
+ [With...End With Statement](http://msdn.microsoft.com/library/340d5fbb-4f43-48ec-a024-80843c137817)

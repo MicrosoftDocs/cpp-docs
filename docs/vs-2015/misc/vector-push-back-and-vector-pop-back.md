@@ -18,6 +18,6 @@ ms.author: "douge"
 manager: "douge"
 ---
 # vector::push_back and vector::pop_back
-Topic deprecated, see [vector::push_back](../Topic/vector::push_back.md) and [vector::pop_back](../Topic/vector::pop_back.md).  
+Topic deprecated, see [vector::push_back](http://msdn.microsoft.com/library/d63f0648-25f2-4272-b3a3-466e2cf7e570) and [vector::pop_back](http://msdn.microsoft.com/library/eea7c58c-2bb3-4d9b-bda0-9f5659955cc9).  
   
 ## Syntax

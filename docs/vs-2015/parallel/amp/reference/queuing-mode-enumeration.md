@@ -38,8 +38,8 @@ enum queuing_mode;
   
 |Name|Description|  
 |----------|-----------------|  
-|`queuing_mode_immediate`|A queuing mode that specifies that any commands, for example, [parallel_for_each Function (C++ AMP)](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md), are sent to the corresponding accelerator device as soon as they return to the caller.|  
-|`queuing_mode_automatic`|A queuing mode that specifies that commands be queued up on a command queue that corresponds to the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object. Commands are sent to the device when [accelerator_view::flush](../Topic/accelerator_view::flush%20Method.md) is called.|  
+|`queuing_mode_immediate`|A queuing mode that specifies that any commands, for example, [parallel_for_each Function (C++ AMP)](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160), are sent to the corresponding accelerator device as soon as they return to the caller.|  
+|`queuing_mode_automatic`|A queuing mode that specifies that commands be queued up on a command queue that corresponds to the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object. Commands are sent to the device when [accelerator_view::flush](http://msdn.microsoft.com/library/914020f3-c6f4-47ec-8826-74d580807145) is called.|  
   
 ## Requirements  
  **Header:** amprt.h  

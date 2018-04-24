@@ -47,7 +47,7 @@ manager: "douge"
 # Edit and Continue Errors and Warnings (C++)
 [!INCLUDE[cpp_current_short](../includes/cpp-current-short-md.md)] Edit and Continue lets you stop program execution in Break mode, make changes to the executing code, and then resume program execution with the newly incorporated changes.  
   
- Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message. For more information about unsupported edits in Edit and Continue for [!INCLUDE[cpp_current_short](../includes/cpp-current-short-md.md)], see [Edit and Continue (Visual C++)](../Topic/Edit%20and%20Continue%20\(Visual%20C++\).md).  
+ Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message. For more information about unsupported edits in Edit and Continue for [!INCLUDE[cpp_current_short](../includes/cpp-current-short-md.md)], see [Edit and Continue (Visual C++)](http://msdn.microsoft.com/library/1815251e-a877-433e-9e5e-69bd9ba254c7).  
   
  Edit and Continue errors and warnings can be resolved in one of the following ways:  
   
@@ -108,5 +108,5 @@ manager: "douge"
 |2008|Could not load debug symbols for file *file* in module *module*.<br /><br /> To resolve this issue, Rebuild the specified module with the current version of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].|  
   
 ## See Also  
- [Edit and Continue (Visual C++)](../Topic/Edit%20and%20Continue%20\(Visual%20C++\).md)   
- [Edit and Continue](../Topic/Edit%20and%20Continue.md)
+ [Edit and Continue (Visual C++)](http://msdn.microsoft.com/library/1815251e-a877-433e-9e5e-69bd9ba254c7)   
+ [Edit and Continue](http://msdn.microsoft.com/library/2cdd4531-7117-4221-a809-8447812de2a1)

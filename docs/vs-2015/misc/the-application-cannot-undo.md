@@ -26,4 +26,4 @@ This error generally occurs when an undo operation has been attempted for an ite
 1.  Manually reverse the change.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)

@@ -26,7 +26,7 @@ The base class or interface 'class' in assembly 'assembly' referenced by type 't
   
  A class that was imported from a file with **/reference**, is derived from a class or implements an interface that is not found. This can occur if a required DLL is not also included in the compilation with **/reference**.  
   
- For more information, see [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) and [/reference (C# Compiler Options)](../Topic/-reference%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) and [/reference (C# Compiler Options)](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4).  
   
 ## Example  
   
@@ -80,4 +80,4 @@ class M
   
 ## See Also  
  [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7)   
- [/reference (C# Compiler Options)](../Topic/-reference%20\(C%23%20Compiler%20Options\).md)
+ [/reference (C# Compiler Options)](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4)

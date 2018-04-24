@@ -58,5 +58,5 @@ This error occurs when you attempt to create a new file from the Command window,
 -   Enter the command with a new file name that does not contain the characters listed above.  
   
 ## See Also  
- [New File Command](../Topic/New%20File%20Command.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [New File Command](http://msdn.microsoft.com/library/767868d6-a525-425b-a43b-2198f636ab6b)   
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

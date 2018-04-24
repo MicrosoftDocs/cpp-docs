@@ -25,7 +25,7 @@ manager: "wpickett"
   
  The first parameter of an extension method specifies the data type that the method extends. When the method is executed, the first parameter is bound to the instance of the data type that invokes the method. Therefore, the first parameter is required and cannot be optional.  
   
- The restriction applies only to the first parameter. Other parameters can be optional or not, following the same rules as in any other method. For more information, see [Parameter List](../Topic/Parameter%20List%20\(Visual%20Basic\).md).  
+ The restriction applies only to the first parameter. Other parameters can be optional or not, following the same rules as in any other method. For more information, see [Parameter List](http://msdn.microsoft.com/library/5d737319-0c34-4df9-a23d-188fc840becd).  
   
  **Error ID:** BC36553  
   
@@ -53,6 +53,6 @@ greeting.Print()
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
  [How to: Define Optional Parameters for a Procedure (Visual Basic)](http://msdn.microsoft.com/en-us/0b32b312-0da0-489b-96ad-7dcb1f1f8f88)   
- [Optional Parameters](../Topic/Optional%20Parameters%20\(Visual%20Basic\).md)
+ [Optional Parameters](http://msdn.microsoft.com/library/398d2845-1069-4e94-b934-a73b545c8b87)

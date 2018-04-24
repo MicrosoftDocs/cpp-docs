@@ -46,6 +46,6 @@ public class MyClass2
 }  
 ```  
   
- From the [C# Language Specification](../Topic/C%23%20Language%20Specification.md), Section 7.5.2.1:  
+ From the [C# Language Specification](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), Section 7.5.2.1:  
   
  For each occurrence of a given identifier as a simple-name in an expression or declarator, within the local variable declaration space (§3.3) immediately enclosing that occurrence, every other occurrence of the same identifier as a simple-name in an expression or declarator must refer to the same entity. This rule ensures that the meaning of a name is always the same within a given block, switch block, for-, foreach- or using-statement, or anonymous function.

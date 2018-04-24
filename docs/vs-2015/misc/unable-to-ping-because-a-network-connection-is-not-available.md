@@ -28,4 +28,4 @@ The operation cannot be performed because no network connection is available.
  [My.Computer.Network.Ping Method](http://msdn.microsoft.com/en-us/5f1eff72-3882-44a4-8234-ac21daac464c)   
  [My.Computer.Network.IsAvailable Property](http://msdn.microsoft.com/en-us/29f9361e-8c62-4d2e-a4f0-44b2dc43b9aa)   
  [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/en-us/c5379021-44ef-4d6a-acf5-e951fdcab6b2)   
- [My.Computer.Network Object](../Topic/My.Computer.Network%20Object.md)
+ [My.Computer.Network Object](http://msdn.microsoft.com/library/94ddbade-aff1-42f8-a6c8-88b78c28c0db)

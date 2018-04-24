@@ -43,5 +43,5 @@ A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but it 
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0631
 ref and out are not valid in this context  
   
- The declaration for an [indexer](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md) cannot include the use of [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) parameters.  
+ The declaration for an [indexer](http://msdn.microsoft.com/library/022cd27d-d5e0-4cfe-8b97-dc018cc3355d) cannot include the use of [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameters.  
   
 ## Example  
  The following sample generates CS0631:  

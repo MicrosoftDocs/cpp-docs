@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0072
 'event' : cannot override; 'method' is not an event  
   
- An [event](../Topic/event%20\(C%23%20Reference\).md) can only override another event. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ An [event](http://msdn.microsoft.com/library/7858fd85-153b-4259-85d0-6aa13c35f174) can only override another event. For more information, see [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3).  
   
  The following sample generates CS0072:  
   

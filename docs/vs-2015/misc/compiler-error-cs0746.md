@@ -54,4 +54,4 @@ public class C
 ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(C%23%20Programming%20Guide\).md)
+ [Anonymous Types](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

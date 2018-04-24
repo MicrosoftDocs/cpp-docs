@@ -37,7 +37,7 @@ template<class _FwdIt1, class _FwdIt2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `iter_swap`. For more information, see [iter_swap](../Topic/iter_swap.md).  
+ This function behaves the same as the STL function `iter_swap`. For more information, see [iter_swap](http://msdn.microsoft.com/library/c29e658c-0e99-4f11-ad60-d09301a15e1d).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

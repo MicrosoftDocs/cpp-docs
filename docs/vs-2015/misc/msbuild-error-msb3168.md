@@ -26,4 +26,4 @@ manager: "douge"
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48).

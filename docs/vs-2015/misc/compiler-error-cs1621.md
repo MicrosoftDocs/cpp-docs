@@ -58,7 +58,7 @@ class C : IEnumerable
 ```  
   
 ## See Also  
- [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
- [yield](../Topic/yield%20\(C%23%20Reference\).md)   
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md)   
- [Anonymous Methods](../Topic/Anonymous%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
+ [yield](http://msdn.microsoft.com/library/1089194f-9e53-46a2-8642-53ccbe9d414d)   
+ [Lambda Expressions](http://msdn.microsoft.com/library/57e3ba27-9a82-4067-aca7-5ca446b7bf93)   
+ [Anonymous Methods](http://msdn.microsoft.com/library/a62441fa-f0a3-4acb-9aa6-93762a635275)

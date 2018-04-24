@@ -18,4 +18,4 @@ caps.latest.revision: 33
 manager: "douge"
 ---
 # How to: Create Toolbars in the IDE
-This content has been removed. For information, see [Adding a Toolbar](../Topic/Adding%20a%20Toolbar.md).
+This content has been removed. For information, see [Adding a Toolbar](http://msdn.microsoft.com/library/17302c25-6f59-4e97-8c85-54f95336a07f).

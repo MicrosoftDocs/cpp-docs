@@ -29,5 +29,5 @@ The latest version of this topic can be found at [Compiler Error C2830](https://
   
 only placement parameters to 'operator new' can have default values  
   
- The standard formal parameters for [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) cannot have default values. Only user-defined placement parameters can specify defaults.
+ The standard formal parameters for [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507) cannot have default values. Only user-defined placement parameters can specify defaults.
 

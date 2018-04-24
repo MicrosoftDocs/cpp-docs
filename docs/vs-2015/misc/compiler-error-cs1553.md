@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1553
 Declaration is not valid; use 'modifier operator \<dest-type> (...' instead  
   
- The return type for an [operator](../Topic/operator%20\(C%23%20Reference\)2.md) must immediately precede the parameter list, and *modifier* is either `implicit` or **explicit**.  
+ The return type for an [operator](http://msdn.microsoft.com/library/59218cce-e90e-42f6-a6bb-30300981b86a) must immediately precede the parameter list, and *modifier* is either `implicit` or **explicit**.  
   
  The following sample generates CS1553:  
   

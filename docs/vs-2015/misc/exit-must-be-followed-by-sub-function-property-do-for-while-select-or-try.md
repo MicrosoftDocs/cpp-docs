@@ -30,4 +30,4 @@ An `Exit` statement contains an invalid keyword. `Exit` must specify the block f
 -   Add a valid keyword following `Exit`, or remove the `Exit` statement.  
   
 ## See Also  
- [Exit Statement](../Topic/Exit%20Statement%20\(Visual%20Basic\).md)
+ [Exit Statement](http://msdn.microsoft.com/library/760bfb32-5c3f-4bdb-a432-9a6001c92db7)

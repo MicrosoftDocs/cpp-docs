@@ -31,4 +31,4 @@ manager: "douge"
 -   Check whether the project file has been modified or corrupted. If it has been modified or corrupted, open the project in the version of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in which it was created, save it, and then attempt to convert it again.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

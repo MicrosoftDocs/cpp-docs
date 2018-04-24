@@ -30,4 +30,4 @@ With `#Region` you can specify a block of code to expand or collapse when using 
 -   Insert `#Region` at the appropriate place before the corresponding `#End``Region` statement.  
   
 ## See Also  
- [#Region Directive](../Topic/%23Region%20Directive.md)
+ [#Region Directive](http://msdn.microsoft.com/library/90a6a104-3cbf-47d0-bdc4-b585d0921b87)

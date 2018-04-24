@@ -32,6 +32,6 @@ The specified method name conflicts with a `MustOverride` method implicitly gene
 2.  Remove the `MustOverride` modifier from the property in the base class.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)   
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

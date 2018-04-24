@@ -45,4 +45,4 @@ public class MyClass2 : MyClass   // CS0060
 ```  
   
 ## See Also  
- [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md)
+ [Access Modifiers](http://msdn.microsoft.com/library/6e81ee82-224f-4a12-9baf-a0dca2656c5b)

@@ -46,4 +46,4 @@ There are two ways to keep the **Properties** window in sync with property value
   
 ## See Also  
  [Announcing Property Window Selection Tracking](../misc/announcing-property-window-selection-tracking.md)   
- [Extending Properties](../Topic/Extending%20Properties.md)
+ [Extending Properties](http://msdn.microsoft.com/library/68e2cbd4-861c-453f-8c9f-4ab6afc80e67)

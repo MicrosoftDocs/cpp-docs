@@ -25,6 +25,6 @@ A `Stop` statement, which suspends execution, was encountered.
 1.  Remove the `Stop` statement.  
   
 ## See Also  
- [Stop Statement](../Topic/Stop%20Statement%20\(Visual%20Basic\).md)   
- [Control Flow Summary](../Topic/Control%20Flow%20Summary%20\(Visual%20Basic\).md)   
- [Stop Statements in Visual Basic](../Topic/Stop%20Statements%20in%20Visual%20Basic.md)
+ [Stop Statement](http://msdn.microsoft.com/library/c9a9fde0-d649-4662-9bef-bd0146ebc2a7)   
+ [Control Flow Summary](http://msdn.microsoft.com/library/6885d426-fa87-4e1c-881f-f0e9ec8d98af)   
+ [Stop Statements in Visual Basic](http://msdn.microsoft.com/library/4ad3fe5c-3dfb-4913-b2eb-a0b635751c18)

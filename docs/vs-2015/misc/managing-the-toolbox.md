@@ -19,14 +19,14 @@ manager: "douge"
 # Managing the Toolbox
 The [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] allows a VSPackage, such as an editor or designer, to manage the membership and appearance of the **Toolbox**.  
   
- In addition, The **Toolbox** itself can be managed using automation. For more information on managing a Toolbox through automation, see [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md).  
+ In addition, The **Toolbox** itself can be managed using automation. For more information on managing a Toolbox through automation, see [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## Automatic Toolbox Tab Selection  
  A particular **Toolbox** tab or category can be automatically made active based on which editor or designer is currently active. For example, if a forms designer is activated, you may want the **All Windows Forms** tab selected.  
   
  This support is limited to editors and designers requiring:  
   
-1.  The implementation of a factory object to provide instances of the editor or designer. For more information on implementing a designer or editor factory object, see [Editor Factories](../Topic/Editor%20Factories.md).  
+1.  The implementation of a factory object to provide instances of the editor or designer. For more information on implementing a designer or editor factory object, see [Editor Factories](http://msdn.microsoft.com/library/cf4e8164-3546-441d-b465-e8a836ae7216).  
   
 2.  Registration of the toolbox tab that automatically is activated if the editor or designer is present.  
   
@@ -50,7 +50,7 @@ The [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] allows a VSPackage, such as a
   
 -   A VSPackage must either use <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> to add controls or host the control in a wrapper control that derives from <xref:System.Windows.Forms.AxHost>.  
   
-     Visual Studio provides the `Aximp.exe` tool for automating the wrapping of an ActiveX control in a control derived from <xref:System.Windows.Forms.AxHost>. For more information, see [Aximp.exe (Windows Forms ActiveX Control Importer)](../Topic/Aximp.exe%20\(Windows%20Forms%20ActiveX%20Control%20Importer\).md).  
+     Visual Studio provides the `Aximp.exe` tool for automating the wrapping of an ActiveX control in a control derived from <xref:System.Windows.Forms.AxHost>. For more information, see [Aximp.exe (Windows Forms ActiveX Control Importer)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> are COM-based interfaces available through the interop assemblies.  
   
@@ -66,7 +66,7 @@ The [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] allows a VSPackage, such as a
   
 -   When using <xref:System.Drawing.Design.IToolboxService>, it is up to the implementer to manage localized information, such as names of categories.  
   
- Use the settings mechanism to enable users to save **Toolbox** settings accessed by users from the **Import/Export Settings** command, found on the IDE's **Tools** menu. For more information on how to use settings, see [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md).  
+ Use the settings mechanism to enable users to save **Toolbox** settings accessed by users from the **Import/Export Settings** command, found on the IDE's **Tools** menu. For more information on how to use settings, see [Extending User Settings and Options](http://msdn.microsoft.com/library/5bb6277a-8c9d-48c8-9b4e-1cb3052caded).  
   
 ## See Also  
  [Extending the Toolbox](../misc/extending-the-toolbox.md)

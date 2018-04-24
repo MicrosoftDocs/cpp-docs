@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0185
 'type' is not a reference type as required by the lock statement  
   
- The [lock](../Topic/lock%20Statement%20\(C%23%20Reference\).md) statement can only evaluate reference types. For more information, see [Thread Synchronization](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md) and [Reference Types](../Topic/Reference%20Types%20\(C%23%20Reference\).md).  
+ The [lock](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) statement can only evaluate reference types. For more information, see [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4) and [Reference Types](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47).  
   
 ## Example  
  The following sample generates CS0185:  

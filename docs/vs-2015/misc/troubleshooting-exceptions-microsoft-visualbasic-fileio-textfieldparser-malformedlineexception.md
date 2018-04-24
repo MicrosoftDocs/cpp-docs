@@ -33,6 +33,6 @@ A <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown
   
 ## See Also  
  <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>   
- [Parsing Text Files with the TextFieldParser Object](../Topic/Parsing%20Text%20Files%20with%20the%20TextFieldParser%20Object%20\(Visual%20Basic\).md)   
- [How to: Read From Comma-Delimited Text Files](../Topic/How%20to:%20Read%20From%20Comma-Delimited%20Text%20Files%20in%20Visual%20Basic.md)   
- [How to: Read From Fixed-width Text Files](../Topic/How%20to:%20Read%20From%20Fixed-width%20Text%20Files%20in%20Visual%20Basic.md)
+ [Parsing Text Files with the TextFieldParser Object](http://msdn.microsoft.com/library/fc31d6e6-af0c-403f-8a00-d556b2c57567)   
+ [How to: Read From Comma-Delimited Text Files](http://msdn.microsoft.com/library/a8413fe4-0dba-49c8-8692-44fb67a9ec4f)   
+ [How to: Read From Fixed-width Text Files](http://msdn.microsoft.com/library/99be5692-967a-4e85-993e-cd18139a5a69)

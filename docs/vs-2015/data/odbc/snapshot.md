@@ -35,7 +35,7 @@ The latest version of this topic can be found at [Snapshot](https://docs.microso
 A snapshot is a recordset that reflects a static view of the data as it existed at the time the snapshot was created. When you open the snapshot and move to all the records, the set of records it contains and their values do not change until you rebuild the snapshot by calling **Requery**.  
   
 > [!NOTE]
->  This topic applies to the MFC ODBC classes. If you are using the MFC DAO classes instead of the MFC ODBC classes, see [CDaoRecordset::Open](../Topic/CDaoRecordset::Open.md) for a description of snapshot-type recordsets.  
+>  This topic applies to the MFC ODBC classes. If you are using the MFC DAO classes instead of the MFC ODBC classes, see [CDaoRecordset::Open](http://msdn.microsoft.com/library/e2163c6b-08e0-43cd-b06f-bbff8ed2c14f) for a description of snapshot-type recordsets.  
   
  You can create updateable or read-only snapshots with the database classes. Unlike a dynaset, an updateable snapshot does not reflect changes to record values made by other users, but it does reflect updates and deletions made by your program. Records added to a snapshot do not become visible to the snapshot until you call **Requery**.  
   

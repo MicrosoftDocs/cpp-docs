@@ -30,4 +30,4 @@ manager: "wpickett"
 -   Specify either `Option Explicit On` or `Option Explicit Off`.  
   
 ## See Also  
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)
+ [Option Explicit Statement](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc)

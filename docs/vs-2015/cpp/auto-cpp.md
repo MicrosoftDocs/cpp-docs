@@ -55,7 +55,7 @@ auto declarator initializer;
   
  To use the `auto` keyword, use it instead of a type to declare a variable, and specify an initialization expression. In addition, you can modify the `auto` keyword by using specifiers and declarators such as `const`, `volatile`, pointer (`*`), reference (`&`), and rvalue reference `(&&`). The compiler evaluates the initialization expression and then uses that information to deduce the type of the variable.  
   
- The initialization expression can be an assignment (equal-sign syntax), a direct initialization (function-style syntax), an [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) expression, or the initialization expression can be the *for-range-declaration* parameter in a [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) statement. For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.  
+ The initialization expression can be an assignment (equal-sign syntax), a direct initialization (function-style syntax), an [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507) expression, or the initialization expression can be the *for-range-declaration* parameter in a [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) statement. For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.  
   
  The `auto` keyword is a placeholder for a type, but it is not itself a type. Therefore, the `auto` keyword cannot be used in casts or operators such as [sizeof](../cpp/sizeof-operator.md) and [typeid](../windows/typeid-cpp-component-extensions.md).  
   
@@ -132,7 +132,7 @@ int main()
 |[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|A symbol that is declared with the `auto` keyword must have an initializer.|  
 |[C3532](../error-messages/compiler-errors-2/compiler-error-c3532.md)|You incorrectly used the `auto` keyword to declare a type. For example, you declared a method return type or an array.|  
 |[C3533](../error-messages/compiler-errors-2/compiler-error-c3533.md), [C3539](../error-messages/compiler-errors-2/compiler-error-c3539.md)|A parameter or template argument cannot be declared with the `auto` keyword.|  
-|[C3534](../Topic/Compiler%20Error%20C3534.md)|A symbol that is declared with the `auto` keyword in a `new` expression must have an initializer. For more information, see [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md).|  
+|[C3534](http://msdn.microsoft.com/library/41d4328b-8ce3-4a11-bb0c-c96f6af03b01)|A symbol that is declared with the `auto` keyword in a `new` expression must have an initializer. For more information, see [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507).|  
 |[C3535](../error-messages/compiler-errors-2/compiler-error-c3535.md)|A method or template parameter cannot be declared with the `auto` keyword.|  
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|A symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.|  
 |[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|You cannot cast to a type that is declared with the `auto` keyword.|  
@@ -237,7 +237,7 @@ int main()
  [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)   
  [sizeof Operator](../cpp/sizeof-operator.md)   
  [typeid](../windows/typeid-cpp-component-extensions.md)   
- [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md)   
+ [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507)   
  [Declarations](../misc/declarations.md)   
  [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)   
  [Initializers](../cpp/initializers.md)   

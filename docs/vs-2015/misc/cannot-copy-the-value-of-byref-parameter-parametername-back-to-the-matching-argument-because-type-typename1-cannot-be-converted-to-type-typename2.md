@@ -25,7 +25,7 @@ A procedure is declared with a parameter type which cannot be converted back to 
   
  When you define a class or structure, you can define one or more conversion operators to convert that class or structure type to other types. You can also define reverse conversion operators to convert those other types back to your class or structure type. When you use your class or structure type in a procedure call, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] can use these conversion operators to convert the type of an argument to the type of its corresponding parameter.  
   
- If you pass the argument [ByRef](../Topic/ByRef%20\(Visual%20Basic\).md), [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sometimes copies the argument value into a local variable in the procedure instead of passing a reference. In such a case, when the procedure returns, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] must then copy the local variable value back into the argument in the calling code.  
+ If you pass the argument [ByRef](http://msdn.microsoft.com/library/4692e032-46f3-4e41-b0fa-3004364d9138), [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sometimes copies the argument value into a local variable in the procedure instead of passing a reference. In such a case, when the procedure returns, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] must then copy the local variable value back into the argument in the calling code.  
   
  If a `ByRef` argument value is copied into the procedure and the argument and parameter are of the same type, no conversion is necessary. But if the types are different, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] must convert in both directions. If one of the types is your class or structure type, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] must convert it both to and from the other type. This means you must define conversion operators in both directions.  
   
@@ -35,15 +35,15 @@ A procedure is declared with a parameter type which cannot be converted back to 
   
 -   If possible, use a calling argument of the same type as the procedure parameter, so [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] does not need to do any conversion.  
   
--   If you need to call the procedure with an argument type different from the parameter type but do not need to return a value into the calling argument, define the parameter to be [ByVal](../Topic/ByVal%20\(Visual%20Basic\).md) instead of `ByRef`.  
+-   If you need to call the procedure with an argument type different from the parameter type but do not need to return a value into the calling argument, define the parameter to be [ByVal](http://msdn.microsoft.com/library/1eaf4e58-b305-4785-9e3d-e416b9c75598) instead of `ByRef`.  
   
 -   If you need to return a value into the calling argument, define the reverse conversion operator so [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] can convert back to the calling argument type.  
   
 ## See Also  
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)   
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)   
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)   
+ [Procedure Parameters and Arguments](http://msdn.microsoft.com/library/ff275aff-aa13-40df-bd4c-63486db8c1e9)   
+ [Passing Arguments by Value and by Reference](http://msdn.microsoft.com/library/fd8a9de6-7178-44d5-a9bf-458d4ad907c2)   
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)   
+ [How to: Define an Operator](http://msdn.microsoft.com/library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/library/54203dfa-c24b-463f-9942-d5153e89e762)

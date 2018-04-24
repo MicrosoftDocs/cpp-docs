@@ -29,5 +29,5 @@ manager: "douge"
 1.  Check the spelling of the verbosity level. The available verbosity levels are: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic], for example, `/verbosity:quiet`, `/verbosity:q`, or `/v:q`  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)   
- [Build Loggers](../Topic/Build%20Loggers.md)
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)   
+ [Build Loggers](http://msdn.microsoft.com/library/fa34810d-185a-4d22-92bd-9852915e5f1d)

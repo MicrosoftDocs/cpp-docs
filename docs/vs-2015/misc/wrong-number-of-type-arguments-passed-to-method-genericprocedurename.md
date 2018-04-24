@@ -34,7 +34,7 @@ A generic procedure is called with a number of type arguments that does not matc
 -   Call the generic procedure with no type arguments at all, and let the compiler attempt to infer the type arguments.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [AddressOf Operator](../Topic/AddressOf%20Operator%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [AddressOf Operator](http://msdn.microsoft.com/library/8105a59d-60d8-4ab5-b221-5899cdfacbf4)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)   
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)

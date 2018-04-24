@@ -33,8 +33,8 @@ There is a conflict between references; more than one distinct dependency with t
 -   Make sure that both copies of the assembly are strong-named and in the global assembly cache. This eliminates the need to copy the assemblies to the bin directory.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
- [Global Assembly Cache](../Topic/Global%20Assembly%20Cache.md)   
- [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md)   
- [Assembly Versioning](../Topic/Assembly%20Versioning.md)   
- [How to: Create and Remove Project Dependencies](../Topic/How%20to:%20Create%20and%20Remove%20Project%20Dependencies.md)
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
+ [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
+ [Strong-Named Assemblies](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Assembly Versioning](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
+ [How to: Create and Remove Project Dependencies](http://msdn.microsoft.com/library/e2a0a8ff-dae7-40a8-b774-b88aa5235183)

@@ -32,5 +32,5 @@ When you divide the definition of a class or structure among several declaration
 2.  Make sure every partial definition uses the identical type parameter list.  
   
 ## See Also  
- [Partial](../Topic/Partial%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

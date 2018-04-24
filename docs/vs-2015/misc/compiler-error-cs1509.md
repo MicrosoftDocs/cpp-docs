@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1509
 Referenced file 'file' is not an assembly; use '/addmodule' option instead  
   
- An output file (output file 1), produced in a compilation that used [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) (does not have an assembly manifest), was specified to [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md). So, rather than appending an assembly to the assembly for the current program, the metadata information in output file 1 will be added to the assembly for the current program.
+ An output file (output file 1), produced in a compilation that used [/target:module](http://msdn.microsoft.com/library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72) (does not have an assembly manifest), was specified to [/reference](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4). So, rather than appending an assembly to the assembly for the current program, the metadata information in output file 1 will be added to the assembly for the current program.

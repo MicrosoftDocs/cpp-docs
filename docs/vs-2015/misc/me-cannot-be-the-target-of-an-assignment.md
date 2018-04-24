@@ -31,4 +31,4 @@ The `Me` keyword always refers to the specific instance of a class where the cod
   
 ## See Also  
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
- [Object Variable Assignment](../Topic/Object%20Variable%20Assignment%20\(Visual%20Basic\).md)
+ [Object Variable Assignment](http://msdn.microsoft.com/library/3706811d-fd40-44fe-8727-d692e8e55d6d)

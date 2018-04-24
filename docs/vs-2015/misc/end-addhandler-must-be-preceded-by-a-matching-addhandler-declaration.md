@@ -30,5 +30,5 @@ An `End AddHandler` statement occurred without a corresponding `AddHandler` stat
 -   Check that a preceding `AddHandler` statement is valid and correctly spelled.  
   
 ## See Also  
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [AddHandler Statement](http://msdn.microsoft.com/library/cfe69799-2a0f-42c0-a99e-09fed954da01)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

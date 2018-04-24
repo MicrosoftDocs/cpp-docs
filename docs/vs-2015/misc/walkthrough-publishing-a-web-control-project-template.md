@@ -21,7 +21,7 @@ You can create a web control project template to use as the basis for other web 
   
  To distribute a VSIX extension, we recommend that you add it to the Visual Studio Gallery website because developers can use Extension Manager to browse there for new and updated extensions. You can also distribute an extension by putting it on a different server, or by burning it on a CD or other media.  
   
- This walkthrough, which is one of two related walkthroughs, teaches how to create a web control project template and then distribute it. The other walkthrough, [Walkthrough: Publishing a Visual Studio Extension](../Topic/Walkthrough:%20Publishing%20a%20Visual%20Studio%20Extension.md), teaches how to create and distribute a web control.  
+ This walkthrough, which is one of two related walkthroughs, teaches how to create a web control project template and then distribute it. The other walkthrough, [Walkthrough: Publishing a Visual Studio Extension](http://msdn.microsoft.com/library/a7816161-0490-4043-86f5-0f7331ed83b3), teaches how to create and distribute a web control.  
   
  This walkthrough contains these sections:  
   
@@ -36,10 +36,10 @@ You can create a web control project template to use as the basis for other web 
 -   Adding a Debug Action Wizard to the Template  
   
 ## Prerequisites  
- To complete this walkthrough, you must understand web controls and know how to create projects, set project properties, and use the Visual Studio experimental instance. Both Visual Studio and the Visual Studio SDK must be installed on the computer. Before you start this walkthrough, you must complete [Walkthrough: Publishing a Visual Studio Extension](../Topic/Walkthrough:%20Publishing%20a%20Visual%20Studio%20Extension.md).  
+ To complete this walkthrough, you must understand web controls and know how to create projects, set project properties, and use the Visual Studio experimental instance. Both Visual Studio and the Visual Studio SDK must be installed on the computer. Before you start this walkthrough, you must complete [Walkthrough: Publishing a Visual Studio Extension](http://msdn.microsoft.com/library/a7816161-0490-4043-86f5-0f7331ed83b3).  
   
 ## Creating a Web Control Project Template in a VSIX Extension  
- To create a web control project template, first create a web control project. For this walkthrough, start with the ColorTextControl web control project that you created in [Walkthrough: Publishing a Visual Studio Extension](../Topic/Walkthrough:%20Publishing%20a%20Visual%20Studio%20Extension.md).  
+ To create a web control project template, first create a web control project. For this walkthrough, start with the ColorTextControl web control project that you created in [Walkthrough: Publishing a Visual Studio Extension](http://msdn.microsoft.com/library/a7816161-0490-4043-86f5-0f7331ed83b3).  
   
  Before you publish a project template to the Visual Studio Gallery, use the **Export Template as VSIX** wizard to export the template as a VSIX extension and give it an icon to help identify it in **Extension Manager** and an image to illustrate what it does.  
   
@@ -329,4 +329,4 @@ You can create a web control project template to use as the basis for other web 
  This walkthrough showed how to use the **Export Template as VSIX** wizard to create and distribute a project template. If you require more control of the project template, for example, to choose the icon that appears in the **New Project** dialog box, you must explicitly create the project template and wrap it in a VSIX extension. For more information, see [Creating and Sharing Project & Item Templates](http://go.microsoft.com/fwlink/?LinkId=194551) on The Visual Studio Blog website.  
   
 ## See Also  
- [Shipping Visual Studio Extensions](../Topic/Shipping%20Visual%20Studio%20Extensions.md)
+ [Shipping Visual Studio Extensions](http://msdn.microsoft.com/library/13cd263d-25f7-488e-9c1a-cff908caedb6)

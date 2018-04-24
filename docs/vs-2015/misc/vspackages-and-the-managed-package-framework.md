@@ -24,7 +24,7 @@ You can reduce development time by creating a VSPackage with the managed package
   
 -   Use the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project template  
   
-     For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](../Topic/Walkthrough:%20Creating%20a%20Menu%20Command%20By%20Using%20the%20Visual%20Studio%20Package%20Template.md).  
+     For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 -   Build your VSPackage without the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package project template  
   
@@ -35,7 +35,7 @@ You can reduce development time by creating a VSPackage with the managed package
  Describes and lists the MPF class namespaces and DLL files.  
   
 ## Related Sections  
- [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](../Topic/Walkthrough:%20Creating%20a%20Menu%20Command%20By%20Using%20the%20Visual%20Studio%20Package%20Template.md)  
+ [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Explains how to create a managed VSPackage.  
   
  [Managed VSPackages](../misc/managed-vspackages.md)  

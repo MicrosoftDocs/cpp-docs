@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS2013
 Invalid image base number 'value'  
   
- An invalid value (not a number) was passed to the [/baseaddress](../Topic/-baseaddress%20\(C%23%20Compiler%20Options\).md) compiler option.  
+ An invalid value (not a number) was passed to the [/baseaddress](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608) compiler option.  
   
  The following sample generates CS2013:  
   

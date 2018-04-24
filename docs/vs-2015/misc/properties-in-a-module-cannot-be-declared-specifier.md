@@ -30,5 +30,5 @@ You have attempted to use a specifier, such as `MustOverride`, `NotOverridable`,
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)   
- [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)   
+ [Module \<keyword>](http://msdn.microsoft.com/library/d971b940-05ab-4d56-8485-e3b8a661906b)

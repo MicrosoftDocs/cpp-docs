@@ -71,8 +71,8 @@ __nogc pointer-specifier
   
 |Managed Extensions for C++|C#|For more information|  
 |----------------------------------|---------|--------------------------|  
-|__gc struct<br /><br /> -or-<br /><br /> \__gc class|class|[class](../Topic/class%20\(C%23%20Reference\).md) keyword|  
-|__value struct<br /><br /> -or-<br /><br /> \__value class|struct|[struct](../Topic/struct%20\(C%23%20Reference\).md) keyword|  
+|__gc struct<br /><br /> -or-<br /><br /> \__gc class|class|[class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) keyword|  
+|__value struct<br /><br /> -or-<br /><br /> \__value class|struct|[struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) keyword|  
   
 ## Example  
  In the following example, a `__value` type (`V`) is declared and then two instances of the `__value` type are manipulated:  

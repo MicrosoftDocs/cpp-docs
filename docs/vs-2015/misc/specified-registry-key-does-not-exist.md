@@ -26,6 +26,6 @@ The registry key that has been specified does not exist.
   
 ## See Also  
  <xref:Microsoft.Win32.RegistryKey>   
- [My.Computer.Registry Object](../Topic/My.Computer.Registry%20Object.md)   
+ [My.Computer.Registry Object](http://msdn.microsoft.com/library/afd9edf9-ef9b-438b-a390-d71a02dc8203)   
  [Common Registry Tasks (Visual Basic)](http://msdn.microsoft.com/en-us/0bde9f77-b38b-4c76-bac2-ff6cda3087c4)   
  [Walkthrough: Creating a Registry Key and Changing Its Values (Visual Basic)](http://msdn.microsoft.com/en-us/d8c890a1-d1b7-4c4f-bc16-1ccf16158b79)

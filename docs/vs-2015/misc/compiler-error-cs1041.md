@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1041
 Identifier expected, 'keyword' is a keyword  
   
- A reserved word for the C# language was found where an identifier was expected. Replace the [keyword](../Topic/C%23%20Keywords.md) with a user-specified identifier.  
+ A reserved word for the C# language was found where an identifier was expected. Replace the [keyword](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad) with a user-specified identifier.  
   
 ## Example  
  The following sample generates CS1041:  

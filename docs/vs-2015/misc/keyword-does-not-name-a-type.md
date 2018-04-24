@@ -30,8 +30,8 @@ A keyword appears where a type name is required. The context calls for either an
 -   Replace the keyword with a valid type name.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Property Statement](../Topic/Property%20Statement.md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)   
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)

@@ -30,4 +30,4 @@ The syntax for this line is incorrect.
 -   Check the syntax of the code that raised this error.  
   
 ## See Also  
- [Program Structure and Code Conventions](../Topic/Program%20Structure%20and%20Code%20Conventions%20\(Visual%20Basic\).md)
+ [Program Structure and Code Conventions](http://msdn.microsoft.com/library/dd9be76f-6944-4e78-ad72-0b6084a3fc13)

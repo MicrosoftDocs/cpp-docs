@@ -26,4 +26,4 @@ Compiler option 'compiler_option' must be followed by an argument
   
  Some compiler options require parameters. If you do not pass the arguments required by the compiler option, CS0005 is generated.  
   
- For more information, see [C# Compiler Options](../Topic/C%23%20Compiler%20Options.md).
+ For more information, see [C# Compiler Options](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44).

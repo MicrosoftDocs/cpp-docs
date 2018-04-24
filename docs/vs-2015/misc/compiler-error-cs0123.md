@@ -26,7 +26,7 @@ No overload for 'method' matches delegate 'delegate'
   
  An attempt to create a delegate failed because the correct signature was not used. Instances of a delegate must be declared with the same signature as the delegate declaration.  
   
- You can resolve this error by adjusting either the method or delegate signature. For more information, see [Delegates](../Topic/Delegates%20\(C%23%20Programming%20Guide\).md).  
+ You can resolve this error by adjusting either the method or delegate signature. For more information, see [Delegates](http://msdn.microsoft.com/library/97de039b-c76b-4b9c-a27d-8c1e1c8d93da).  
   
  The following sample generates CS0123.  
   

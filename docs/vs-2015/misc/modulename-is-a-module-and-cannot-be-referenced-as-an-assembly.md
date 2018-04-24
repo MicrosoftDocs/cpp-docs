@@ -30,5 +30,5 @@ An attempt was made to use a module as an assembly.
 -   Change the reference to an assembly.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)   
- [Assembly](../Topic/Assembly%20\(Visual%20Basic\).md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)   
+ [Assembly](http://msdn.microsoft.com/library/925e7471-3bdf-4b51-bb93-cbcfc6efc52f)

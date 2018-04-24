@@ -30,5 +30,5 @@ manager: "wpickett"
 -   Restructure your code so that the `GoTo` statement and the label are both inside the `For` block.  
   
 ## See Also  
- [GoTo Statement](../Topic/GoTo%20Statement.md)   
+ [GoTo Statement](http://msdn.microsoft.com/library/313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d)   
  [For (Visual Basic)](http://msdn.microsoft.com/en-us/c470a263-9b49-4308-8fd6-8592b84a7980)

@@ -30,4 +30,4 @@ A `Declare` statement does not specify either `Sub` or `Function`. `Declare` ide
 -   Add either the `Sub` or `Function` keyword to the `Declare` statement.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [Declare Statement](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0145
 A const field requires a value to be provided  
   
- You must initialize a [const](../Topic/const%20\(C%23%20Reference\).md) variable. For more information, see [Constants](../Topic/Constants%20\(C%23%20Programming%20Guide\).md).  
+ You must initialize a [const](http://msdn.microsoft.com/library/79eb447c-117b-4418-933f-97c50aa472db) variable. For more information, see [Constants](http://msdn.microsoft.com/library/1fb39621-1738-49b1-a1b3-8587f109123f).  
   
  The following sample generates CS0145:  
   

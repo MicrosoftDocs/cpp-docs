@@ -144,7 +144,7 @@ int _ismbcdigit_l
   
 -   [System::Char::IsDigit](https://msdn.microsoft.com/library/system.char.isdigit.aspx)  
   
--   For `_ismbcalnum`: Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+-   For `_ismbcalnum`: Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

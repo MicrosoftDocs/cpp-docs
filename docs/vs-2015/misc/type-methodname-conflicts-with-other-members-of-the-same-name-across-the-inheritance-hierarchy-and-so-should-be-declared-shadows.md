@@ -23,7 +23,7 @@ manager: "wpickett"
 # &lt;type&gt; &#39;&lt;methodname&gt;&#39; conflicts with other members of the same name across the inheritance hierarchy and so should be declared &#39;Shadows&#39;
 An interface inheriting from two or more interfaces defines a procedure with the same name as a procedure already defined in more than one of the base interfaces. The procedure in this interface should shadow one of the base interface procedures.  
   
- This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42000  
   
@@ -34,5 +34,5 @@ An interface inheriting from two or more interfaces defines a procedure with the
 -   If you do not intend to hide any of the base interface procedures, change the name of the new procedure.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)   
+ [Shadowing in Visual Basic](http://msdn.microsoft.com/library/54bb4c25-12c4-4181-b4a0-93546053964e)

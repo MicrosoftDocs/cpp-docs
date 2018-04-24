@@ -28,5 +28,5 @@ manager: "wpickett"
 1.  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)   
- [/moduleassemblyname](../Topic/-moduleassemblyname.md)
+ [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [/moduleassemblyname](http://msdn.microsoft.com/library/013a57b6-f425-4dd3-b333-512d72c42f55)

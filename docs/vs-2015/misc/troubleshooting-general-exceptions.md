@@ -24,5 +24,5 @@ We're sorry! We're not able to look up the help page for this exception. Your be
   
 ## See Also  
  [How to: Test Code with a Try…Catch Block in Visual Basic](http://msdn.microsoft.com/en-us/8368e205-ed73-4185-a247-af84fb4fafa9)   
- [Continuing Execution After an Exception](../Topic/Continuing%20Execution%20After%20an%20Exception.md)   
+ [Continuing Execution After an Exception](http://msdn.microsoft.com/library/6fe97aac-2131-4615-bd92-d3afee741558)   
  [How to: Break When an Exception is Thrown](../misc/how-to-break-when-an-exception-is-thrown.md)

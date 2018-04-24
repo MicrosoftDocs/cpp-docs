@@ -99,13 +99,13 @@ This topic describes how to create a basic agent-based application. In this walk
   
      The `get_error` method retrieves any error that occurs during the life of the agent.  
   
-7.  Implement the [concurrency::agent::run](../Topic/agent::run%20Method.md) method in the `protected` section of your class.  
+7.  Implement the [concurrency::agent::run](http://msdn.microsoft.com/library/21882c7a-3428-4671-ad3d-de1c83eda21f) method in the `protected` section of your class.  
   
  [!code-cpp[concrt-basic-agent#6](../../snippets/cpp/VS_Snippets_ConcRT/concrt-basic-agent/cpp/basicagent/file_reader.h#6)]  
   
      The `run` method opens the file and reads data from it. The `run` method uses exception handling to capture any errors that occur during file processing.  
   
-     Each time this method reads data from the file, it calls the [concurrency::asend](../Topic/asend%20Function.md) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.  
+     Each time this method reads data from the file, it calls the [concurrency::asend](http://msdn.microsoft.com/library/920dc665-7e23-4bd7-8c74-3e74067aa52a) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.  
   
  The following example shows the complete contents of file_reader.h.  
   
@@ -177,7 +177,7 @@ Adler-32 sum is fefb0d75
 ## Robust Programming  
  To prevent concurrent access to data members, we recommend that you add methods that perform work to the `protected` or `private` section of your class. Only add methods that send or receive messages to or from the agent to the `public` section of your class.  
   
- Always call the [concurrency::agent::done](../Topic/agent::done%20Method.md) method to move your agent to the completed state. You typically call this method before you return from the `run` method.  
+ Always call the [concurrency::agent::done](http://msdn.microsoft.com/library/557df23a-bd24-48ac-a336-5f12d9cdc542) method to move your agent to the completed state. You typically call this method before you return from the `run` method.  
   
 ## Next Steps  
  For another example of an agent-based application, see [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).  

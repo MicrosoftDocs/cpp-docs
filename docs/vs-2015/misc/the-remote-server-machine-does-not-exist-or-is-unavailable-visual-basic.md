@@ -25,4 +25,4 @@ You are trying to connect to a remote server that is unavailable or does not exi
 -   Reconnect to the network and try again.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

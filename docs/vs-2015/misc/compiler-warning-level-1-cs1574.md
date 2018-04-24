@@ -26,7 +26,7 @@ XML comment on 'construct' has syntactically incorrect cref attribute 'name'
   
  A string passed to a cref tag, for example, within an \<exception> tag, referred to a member that is not available within the current build environment. The string that you pass to a cref tag must be the syntactically correct name of a member or field.  
   
- For more information, see [Recommended Tags for Documentation Comments](../Topic/Recommended%20Tags%20for%20Documentation%20Comments%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Recommended Tags for Documentation Comments](http://msdn.microsoft.com/library/6e98f7a9-38f4-4d74-b644-1ff1b23320fd).  
   
  The following sample generates CS1574:  
   

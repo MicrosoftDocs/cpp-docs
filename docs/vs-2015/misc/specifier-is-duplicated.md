@@ -30,4 +30,4 @@ A keyword appears more than once in the same declaration.
 -   Remove duplicate appearances of the keyword from the declaration.  
   
 ## See Also  
- [Declared Elements](../Topic/Declared%20Elements%20in%20Visual%20Basic.md)
+ [Declared Elements](http://msdn.microsoft.com/library/0d1d1bb5-ac0b-485f-8922-cdcec5574c79)

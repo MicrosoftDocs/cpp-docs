@@ -41,7 +41,7 @@ The `struct` keyword defines a structure type and/or a variable of a structure t
   
 #### Parameters  
  `template-spec`  
- Optional template specifications. For more information, refer to [Template Specifications](../Topic/Template%20Specifications.md).  
+ Optional template specifications. For more information, refer to [Template Specifications](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753).  
   
  `struct`  
  The `struct` keyword.  

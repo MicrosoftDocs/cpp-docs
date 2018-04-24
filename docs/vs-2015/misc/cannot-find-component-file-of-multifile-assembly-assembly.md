@@ -29,6 +29,6 @@ One file in a multifile assembly could not be found. A multifile assembly refere
      The project may build, but it might not run.  
   
 ## See Also  
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)   
+ [Troubleshooting Broken References](http://msdn.microsoft.com/library/00a9ade9-652e-40de-8ada-85f63cd183ee)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/en-us/33a0bc6a-6bb3-44c7-ada7-4a046e8c0945)

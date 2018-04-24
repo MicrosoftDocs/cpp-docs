@@ -69,7 +69,7 @@ class CAtlMap
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::CPair Class](../Topic/CAtlMap::CPair%20Class.md)|A class containing the key and value elements.|  
+|[CAtlMap::CPair Class](http://msdn.microsoft.com/library/f4033089-e9cd-4bb9-ac48-304f9cb68a9a)|A class containing the key and value elements.|  
   
 ### CPair Data Members  
   
@@ -117,7 +117,7 @@ class CAtlMap
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::operator](../Topic/CAtlMap::operator.md)|Replaces or adds a new element to the `CAtlMap`.|  
+|[CAtlMap::operator](http://msdn.microsoft.com/library/17bd98b6-b60a-4421-8b83-54329aec2dee)|Replaces or adds a new element to the `CAtlMap`.|  
   
 ## Remarks  
  `CAtlMap` provides support for a mapping array of any given type, managing an unordered array of key elements and their associated values. Elements (consisting of a key and a value) are stored using a hashing algorithm, allowing a large amount of data to be efficiently stored and retrieved.  
@@ -484,7 +484,7 @@ CPair* Lookup(KINARGTYPE key) throw();
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](../Topic/CAtlMap::CPair%20Class.md) which can be used as a position for calls to [CAtlMap::GetNext](#catlmap__getnext) and so on.  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](http://msdn.microsoft.com/library/f4033089-e9cd-4bb9-ac48-304f9cb68a9a) which can be used as a position for calls to [CAtlMap::GetNext](#catlmap__getnext) and so on.  
   
 ### Remarks  
  `Lookup` uses a hashing algorithm to quickly find the map element containing a key that exactly matches the given key parameter.  

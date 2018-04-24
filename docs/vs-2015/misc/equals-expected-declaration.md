@@ -31,6 +31,6 @@ A `Mid` statement or a `#Const` compilation directive does not include an assign
   
 ## See Also  
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
- [Mid Statement](../Topic/Mid%20Statement.md)   
- [#Const Directive](../Topic/%23Const%20Directive.md)   
+ [Mid Statement](http://msdn.microsoft.com/library/2b82d7a8-9646-4cb0-bec5-80abc98297bf)   
+ [#Const Directive](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386)   
  [NotInBuild:Assignment Statements](http://msdn.microsoft.com/en-us/eb4f91e9-fbbf-45ca-b21d-e8ae069de4f9)

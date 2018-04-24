@@ -51,7 +51,7 @@ The Feedback region of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] status b
 -   Clears the contents of the status bar by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.Clear%2A> method.  
   
 ## See Also  
- [Extending the Status Bar](../Topic/Extending%20the%20Status%20Bar.md)   
+ [Extending the Status Bar](http://msdn.microsoft.com/library/f955115c-4c5f-45ec-b41b-365868c5ec0c)   
  [How to: Program the Progress Bar Region of the Status Bar](../misc/how-to-program-the-progress-bar-region-of-the-status-bar.md)   
  [How to: Use the Animation Region of the Status Bar](../misc/how-to-use-the-animation-region-of-the-status-bar.md)   
  [How to: Program the Designer Region of the Status Bar](../misc/how-to-program-the-designer-region-of-the-status-bar.md)

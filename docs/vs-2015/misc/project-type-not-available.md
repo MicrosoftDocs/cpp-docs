@@ -31,5 +31,5 @@ This dialog box appears with the error "The project \<project> cannot be opened 
 -   Install the correct version of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## See Also  
- [Porting, Migrating, and Upgrading Visual Studio Projects](../Topic/Porting,%20Migrating,%20and%20Upgrading%20Visual%20Studio%20Projects.md)   
- [Project Properties Reference](../Topic/Project%20Properties%20Reference.md)
+ [Porting, Migrating, and Upgrading Visual Studio Projects](http://msdn.microsoft.com/library/bee759bd-6ff5-4c2e-913a-ea7d3c906c29)   
+ [Project Properties Reference](http://msdn.microsoft.com/library/eec49aec-5474-48a7-889d-709045b9a475)

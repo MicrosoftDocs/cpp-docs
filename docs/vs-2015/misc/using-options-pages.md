@@ -22,11 +22,11 @@ The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automation model provides the <
   
 -   The settings of the **Dynamic Help** page cannot be accessed programmatically. The **Dynamic Help** feature can be controlled by using the automation model, but control must be accomplished directly in code. For more information, see [How to: Control the Dynamic Help Window](http://msdn.microsoft.com/en-us/7f5777aa-c270-4058-a175-8ce8a4ed25eb).  
   
--   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](../Topic/Using%20Fonts%20and%20Colors.md).  
+-   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](http://msdn.microsoft.com/library/d1a9b99f-fbdc-45ed-920a-e08c3d931ac9).  
   
 -   Language-specific properties cannot be obtained through the automation model.  
   
- **Options** pages that do not support the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automation model may not return an automation <xref:EnvDTE.Properties> collection when queried. If the collection is returned, not all features are present. For information about how to manage these features, see [DTE Properties Collections](../Topic/DTE%20Properties%20Collections.md).  
+ **Options** pages that do not support the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automation model may not return an automation <xref:EnvDTE.Properties> collection when queried. If the collection is returned, not all features are present. For information about how to manage these features, see [DTE Properties Collections](http://msdn.microsoft.com/library/c062b48c-d104-4560-a3fe-f9e2f56ca4c6).  
   
 ## Managing Options Pages  
  To manage **Options** pages, a VSPackage must get a <xref:EnvDTE.DTE> object from the automation model.  
@@ -87,7 +87,7 @@ hr= srpProperty.set_Value(4);
  [!code-csharp[UI_UserSettings_ToolsOptionPages#03](../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs#03)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#03](../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb#03)]  
   
- For more information, see [Controlling Options Settings](../Topic/Controlling%20Options%20Settings.md).  
+ For more information, see [Controlling Options Settings](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d).  
   
 ## Persisting Options Page Settings  
  The IDE implements state persistence of **Options** pages that fully support the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automation model.  
@@ -98,9 +98,9 @@ hr= srpProperty.set_Value(4);
   
 ## See Also  
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [Creating Options Pages](../Topic/Creating%20Options%20Pages.md)   
+ [Creating Options Pages](http://msdn.microsoft.com/library/1bf11fec-dece-4943-8053-6de1483c43eb)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)   
- [Controlling Options Settings](../Topic/Controlling%20Options%20Settings.md)   
+ [Controlling Options Settings](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [Registering Custom Options Pages](../misc/registering-custom-options-pages.md)   
  [Opening an Options Page](../misc/opening-an-options-page.md)   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)
+ [Extending User Settings and Options](http://msdn.microsoft.com/library/5bb6277a-8c9d-48c8-9b4e-1cb3052caded)

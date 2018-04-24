@@ -30,8 +30,8 @@ VSPackages are ordinarily loaded only when their accompanying functionality is r
      When the VSPackage is initialized, it will force `PackageToBeLoaded` to load.  
   
 ## Robust Programming  
- Force loading should not be used for VSPackage communication. Use [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md) instead.  
+ Force loading should not be used for VSPackage communication. Use [Using and Providing Services](http://msdn.microsoft.com/library/c0b415ba-b825-4da0-9faf-8a60a663e302) instead.  
   
 ## See Also  
- [Managing VSPackages](../Topic/Managing%20VSPackages.md)   
- [VSPackages](../Topic/VSPackages.md)
+ [Managing VSPackages](http://msdn.microsoft.com/library/386e0ce5-4107-4164-b0cd-1cf43eb5e7cf)   
+ [VSPackages](http://msdn.microsoft.com/library/cad0893a-9c5f-45b7-952a-e2294f83e324)

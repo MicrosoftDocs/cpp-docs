@@ -23,8 +23,8 @@ You are specifying a file while attempting to perform a folder-related action.
 -   Check the path you are supplying to make sure you are specifying a folder rather than a file.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
- [Creating, Deleting, and Moving Files and Directories](../Topic/Creating,%20Deleting,%20and%20Moving%20Files%20and%20Directories%20in%20Visual%20Basic.md)   
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)   
+ [Creating, Deleting, and Moving Files and Directories](http://msdn.microsoft.com/library/8f814fcc-4c42-4dbb-a131-005ec445ac9e)   
  [File, Directory, and Drive Properties in Visual Basic](http://msdn.microsoft.com/en-us/131593e9-d1b0-4c89-9c03-ae8afc458829)   
  [How to: Determine the Absolute Path of a File in Visual Basic](http://msdn.microsoft.com/en-us/4c6769df-e9b9-4b69-bfdf-ce4cfbda30ff)

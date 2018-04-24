@@ -29,7 +29,7 @@ The latest version of this topic can be found at [Compiler Error C2871](https://
   
 name' : a namespace with this name does not exist  
   
- This error will occur when you pass an identifier that is not a namespace to a [using](../Topic/using%20Directive%20\(C%23%20Reference\).md) directive.  
+ This error will occur when you pass an identifier that is not a namespace to a [using](http://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8) directive.  
   
  The following sample generates C2871:  
   

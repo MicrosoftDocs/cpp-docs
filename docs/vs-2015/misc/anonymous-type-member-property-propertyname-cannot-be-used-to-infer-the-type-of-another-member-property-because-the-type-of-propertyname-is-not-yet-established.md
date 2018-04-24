@@ -39,5 +39,5 @@ Until the type of an anonymous type property is established, it cannot be used t
     ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)   
- [How to: Infer Property Names and Types in Anonymous Type Declarations](../Topic/How%20to:%20Infer%20Property%20Names%20and%20Types%20in%20Anonymous%20Type%20Declarations%20\(Visual%20Basic\).md)
+ [Anonymous Types](http://msdn.microsoft.com/library/7b87532c-4b3e-4398-8503-6ea9d67574a4)   
+ [How to: Infer Property Names and Types in Anonymous Type Declarations](http://msdn.microsoft.com/library/7c748b22-913f-4d9d-b747-6b7bf296a0bc)

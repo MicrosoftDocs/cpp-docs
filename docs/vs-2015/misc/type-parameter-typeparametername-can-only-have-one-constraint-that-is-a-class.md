@@ -34,4 +34,4 @@ A constraint list includes more than one class.
 -   You might be able to define additional type parameters to accommodate the class or classes that you could not include in this constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

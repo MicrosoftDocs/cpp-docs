@@ -26,7 +26,7 @@ Invalid preprocessor expression
   
  The compiler encountered an invalid preprocessor expression.  
   
- For more information, see [Preprocessor Directives](../Topic/C%23%20Preprocessor%20Directives.md).  
+ For more information, see [Preprocessor Directives](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724).  
   
  The following sample shows some valid and invalid preprocessor expressions:  
   

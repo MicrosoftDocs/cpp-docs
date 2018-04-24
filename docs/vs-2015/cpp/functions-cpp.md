@@ -194,7 +194,7 @@ int DoMore(int num = 5, // Not a trailing parameter!
 {...}  
 ```  
   
- For more information, see [Default Arguments](../cpp/default-arguments.md) and [Default Arguments for Class Templates](../Topic/Default%20Arguments%20for%20Class%20Templates.md).  
+ For more information, see [Default Arguments](../cpp/default-arguments.md) and [Default Arguments for Class Templates](http://msdn.microsoft.com/library/358144eb-a8b1-4666-8007-fb6f1a11aaa0).  
   
 ## Function return types  
  A function may not return another function, or a built-in array; however it can return pointers to these types, or a *lambda*, which produces a function object. Except for these cases, a function may return a value of any type that is in scope, or it may return no value, in which case the return type is `void`.  

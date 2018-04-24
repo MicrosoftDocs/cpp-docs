@@ -34,7 +34,7 @@ These macros provide useful debugging and trace facilities.
 |[ATLASSERT](#atlassert)|Performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.|  
 |[ATLENSURE](#atlensure)|Performs parameters validation. Call `AtlThrow` if needed|  
 |[ATLTRACENOTIMPL](#atltracenotimpl)|Sends a message to the dump device that the specified function is not implemented.|  
-|[ATLTRACE](../Topic/ATLTRACE%20\(ATL\).md)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
+|[ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
 |[ATLTRACE2](#atltrace2)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|  
   
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES  

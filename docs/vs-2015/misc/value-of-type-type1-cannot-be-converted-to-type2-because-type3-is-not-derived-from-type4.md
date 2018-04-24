@@ -30,5 +30,5 @@ A statement attempts to convert an array type to another array type in a situati
 -   Check the data types of the elements of both arrays to determine the source of the error.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [Array Conversions](../Topic/Array%20Conversions%20\(Visual%20Basic\).md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)   
+ [Array Conversions](http://msdn.microsoft.com/library/fceff7d2-a1b7-44c7-b9aa-8bd831d8a444)

@@ -30,5 +30,5 @@ The `Object` data type replaces `Variant`.
 -   Declare item as `Object`.  
   
 ## See Also  
- [Object Data Type](../Topic/Object%20Data%20Type.md)   
+ [Object Data Type](http://msdn.microsoft.com/library/61ea4a7c-3b3d-48d4-adc4-eacfa91779b2)   
  [Data Type Changes in Visual Basic](http://msdn.microsoft.com/en-us/0aca9f54-7231-49a5-ab26-a68ca79d08f3)

@@ -30,4 +30,4 @@ A variable inside a procedure is used before its declaration.
 -   Move the declaration to precede the first reference to the variable.  
   
 ## See Also  
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)
+ [Variable Declaration](http://msdn.microsoft.com/library/d8f10226-92b1-480f-9f53-df377b2d7e15)

@@ -29,7 +29,7 @@ The latest version of this topic can be found at [Compiler Error C2815](https://
   
 operator delete' : first formal parameter must be 'void *', but 'param' was used  
   
- Any user-defined [operator delete](../Topic/operator%20delete%20\(%3Cnew%3E\).md) function must take a first formal parameter of type `void *`.  
+ Any user-defined [operator delete](http://msdn.microsoft.com/library/7c45e232-ceb2-4a77-b0af-da2a935d46a2) function must take a first formal parameter of type `void *`.  
   
  The following sample generates C2815:  
   

@@ -30,5 +30,5 @@ The `SyncLock` statement synchronizes threads and is not permitted in a debuggin
 -   Do not issue a `SyncLock` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](../Topic/Immediate%20Window.md)   
- [SyncLock Statement](../Topic/SyncLock%20Statement.md)
+ [Immediate Window](http://msdn.microsoft.com/library/d33e7937-73f3-4c69-9df0-777a8713c6f2)   
+ [SyncLock Statement](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

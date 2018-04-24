@@ -28,7 +28,7 @@ The **Import/Export Settings** command on the **Tools** menu of the integrated d
 >  The standard implementations of the **ToolsOptions** pages, the **Toolbox**, and the `Microsoft.VisualStudio.Shell.DialogPage` automatically provide support for persistence. The settings API can override the default mechanism. For more information, see [Extending the Toolbox](../misc/extending-the-toolbox.md), [Options Pages](../misc/options-pages.md), and <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
 ## In This Section  
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)  
+ [Support for User Settings](http://msdn.microsoft.com/library/ad9beac3-4f8d-4093-ad0e-6fb00444a709)  
  Describes the registry settings (Custom Settings Point) and attributes used to specify a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] settings implementation used by a given VSPackage.  
   
  [How to: Export Settings By Using Interop Assemblies](../misc/how-to-export-settings-by-using-interop-assemblies.md)  
@@ -53,5 +53,5 @@ The **Import/Export Settings** command on the **Tools** menu of the integrated d
  [Extending the Toolbox](../misc/extending-the-toolbox.md)  
  Explains the support that the [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] automatically provides for managing or extending the **Toolbox**.  
   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)  
+ [Extending User Settings and Options](http://msdn.microsoft.com/library/5bb6277a-8c9d-48c8-9b4e-1cb3052caded)  
  Describes how to program your VSPackage to obtain and preserve user preferences.

@@ -71,7 +71,7 @@ class CSimpleArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::operator](../Topic/CSimpleArray::operator.md)|Retrieves an element from the array.|  
+|[CSimpleArray::operator](http://msdn.microsoft.com/library/074a23c8-e767-4461-8785-2b9c19cdb043)|Retrieves an element from the array.|  
 |[CSimpleArray::operator =](#csimplearray__operator__eq)|Assignment operator.|  
   
 ## Remarks  

@@ -30,5 +30,5 @@ The name or identifier of every variable declared using `WithEvents` is limited 
 -   Reduce the length of the identifier.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [WithEvents](http://msdn.microsoft.com/library/19d461f5-d72f-4de9-8c1d-0a6650316990)

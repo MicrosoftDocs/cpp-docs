@@ -32,9 +32,9 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](..
   
 |||  
 |-|-|  
-|[CPath](../Topic/CPath.md)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CString`.|  
-|[CPathA](../Topic/CPathA.md)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.|  
-|[CPathW](../Topic/CPathW.md)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.|  
+|[CPath](http://msdn.microsoft.com/library/80db7964-9948-406b-ae9d-8cf11cfbbe28)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CString`.|  
+|[CPathA](http://msdn.microsoft.com/library/5e3ac7a5-f94b-405f-8ea8-e0ab8ee78e22)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.|  
+|[CPathW](http://msdn.microsoft.com/library/554fd5a9-11e8-4374-ac6c-dfb0093f22ad)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.|  
   
 ### Functions  
   

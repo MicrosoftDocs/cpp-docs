@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &#39;&lt;elementname&gt;&#39; for the Imports alias to &#39;&lt;qualifiedelementname&gt;&#39; does not refer to a Namespace, Class, Structure, Interface, Enum or Module
-An [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md) specifies a programming element that cannot be imported.  
+An [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e) specifies a programming element that cannot be imported.  
   
  The `Imports` statement is used to reduce or remove the need for a qualifying string in front of an element name. You qualify the element in the `Imports` statement itself to provide an unambiguous path to a unique declaration of the element. Thereafter, you do not need to qualify references to the element.  
   
@@ -38,4 +38,4 @@ An [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20
 2.  Verify that the element you are qualifying is of an eligible type (namespace, class, module, structure, interface, or enumeration). If it is not, remove the `Imports` statement.  
   
 ## See Also  
- [References and the Imports Statement](../Topic/References%20and%20the%20Imports%20Statement%20\(Visual%20Basic\).md)
+ [References and the Imports Statement](http://msdn.microsoft.com/library/38149bd4-0a6f-4b31-b5f8-94a8c33f1600)

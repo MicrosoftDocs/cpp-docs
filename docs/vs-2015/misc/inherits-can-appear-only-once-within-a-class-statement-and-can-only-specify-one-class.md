@@ -30,5 +30,5 @@ More than one `Inherits` statement appears in the same class, or an `Inherits` s
 -   Remove any extra `Inherits` statements and make sure the remaining `Inherits` statement specifies only one base class.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)   
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

@@ -26,7 +26,7 @@ Possible mistaken empty statement
   
  A semicolon after a conditional statement may cause your code to execute differently than intended.  
   
- You can use **/nowarn** compiler option or `#pragmas warning` to disable this warning; see [/nowarn (C# Compiler Options)](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) or [#pragma warning](../Topic/%23pragma%20warning%20\(C%23%20Reference\).md) for more information.  
+ You can use **/nowarn** compiler option or `#pragmas warning` to disable this warning; see [/nowarn (C# Compiler Options)](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4) or [#pragma warning](http://msdn.microsoft.com/library/723493d5-9753-4cec-babb-54e2b8eb36b6) for more information.  
   
  The following sample generates CS0642:  
   

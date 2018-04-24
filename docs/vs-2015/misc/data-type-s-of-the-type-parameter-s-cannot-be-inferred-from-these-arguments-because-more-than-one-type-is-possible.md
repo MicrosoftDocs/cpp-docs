@@ -36,5 +36,5 @@ Data type(s) of the type parameter(s) cannot be inferred from these arguments be
  **Error ID:** BC36653 and BC36650  
   
 ## See Also  
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)   
- [Overload Resolution](../Topic/Overload%20Resolution%20\(Visual%20Basic\).md)
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)   
+ [Overload Resolution](http://msdn.microsoft.com/library/766115d1-4352-45fb-859f-6063e0de0ec0)

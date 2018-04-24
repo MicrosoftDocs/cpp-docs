@@ -26,8 +26,8 @@ manager: "douge"
   
 ### To correct this error  
   
--   Set the **Install Mode and Settings** to **The application is available offline as well (launchable from Start menu)**. For more information, see [How to: Specify the ClickOnce Offline or Online Install Mode](../Topic/How%20to:%20Specify%20the%20ClickOnce%20Offline%20or%20Online%20Install%20Mode.md).  
+-   Set the **Install Mode and Settings** to **The application is available offline as well (launchable from Start menu)**. For more information, see [How to: Specify the ClickOnce Offline or Online Install Mode](http://msdn.microsoft.com/library/0aee5fc1-e966-4bda-9b8f-d9997aeaa779).  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243)

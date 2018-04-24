@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0261
 Partial declarations of 'type' must be all classes, all structs, or all interfaces  
   
- This error occurs if a partial type is declared as a different type of construct in various places. For more information, see [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md).  
+ This error occurs if a partial type is declared as a different type of construct in various places. For more information, see [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
  The following sample generates CS0261:  
   

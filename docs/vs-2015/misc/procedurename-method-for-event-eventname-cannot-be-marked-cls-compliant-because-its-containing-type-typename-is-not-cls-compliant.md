@@ -27,7 +27,7 @@ A custom event declares an `AddHandler` or `RemoveHandler` procedure and marks i
   
  If you do not apply <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40053  
   
@@ -38,7 +38,7 @@ A custom event declares an `AddHandler` or `RemoveHandler` procedure and marks i
 -   If you require that the event remain within its containing type, remove <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`.  
   
 ## See Also  
- [How to: Declare Custom Events To Avoid Blocking](../Topic/How%20to:%20Declare%20Custom%20Events%20To%20Avoid%20Blocking%20\(Visual%20Basic\).md)   
- [How to: Declare Custom Events To Conserve Memory](../Topic/How%20to:%20Declare%20Custom%20Events%20To%20Conserve%20Memory%20\(Visual%20Basic\).md)   
+ [How to: Declare Custom Events To Avoid Blocking](http://msdn.microsoft.com/library/998b6a90-67c5-4d2c-8b11-366d3e355505)   
+ [How to: Declare Custom Events To Conserve Memory](http://msdn.microsoft.com/library/87ebee87-260c-462f-979c-407874debd19)   
  [NOT IN BUILD:AddHandler and RemoveHandler](http://msdn.microsoft.com/en-us/a7a24bd2-519a-46fe-8a2c-2b9df2ca28ef)   
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

@@ -49,5 +49,5 @@ class Test
 ```  
   
 ## See Also  
- [/pdb (C# Compiler Options)](../Topic/-pdb%20\(C%23%20Compiler%20Options\).md)   
- [/debug (C# Compiler Options)](../Topic/-debug%20\(C%23%20Compiler%20Options\).md)
+ [/pdb (C# Compiler Options)](http://msdn.microsoft.com/library/e9d0f96a-5b75-45d6-9765-92538dd5f823)   
+ [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0080
 Constraints are not allowed on non-generic declarations  
   
- The syntax found may only be used in a generic declaration to apply constraints to the type parameter. For more information, see [Generics](../Topic/Generics%20\(C%23%20Programming%20Guide\).md).  
+ The syntax found may only be used in a generic declaration to apply constraints to the type parameter. For more information, see [Generics](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282).  
   
  The following sample generates CS0080 because MyClass is not a generic class and Foo is not a generic method.  
   

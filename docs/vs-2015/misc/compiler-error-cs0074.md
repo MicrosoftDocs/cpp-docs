@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0074
 'event': abstract event cannot have initializer  
   
- If an [event](../Topic/event%20\(C%23%20Reference\).md) is marked as **abstract**, it cannot be initialized. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ If an [event](http://msdn.microsoft.com/library/7858fd85-153b-4259-85d0-6aa13c35f174) is marked as **abstract**, it cannot be initialized. For more information, see [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3).  
   
  The following sample generates CS0074:  
   

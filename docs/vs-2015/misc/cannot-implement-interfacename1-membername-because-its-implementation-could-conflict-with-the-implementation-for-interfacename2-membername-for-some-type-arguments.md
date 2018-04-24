@@ -54,8 +54,8 @@ End Class
 -   Remove from the `Implements` statement one of the interfaces resulting in the implementation conflict.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)   
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)   
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

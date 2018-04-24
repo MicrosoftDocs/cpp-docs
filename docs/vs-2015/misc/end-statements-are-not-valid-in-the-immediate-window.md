@@ -30,4 +30,4 @@ The `Stop` and `End` statements suspend execution and are not permitted in a deb
 -   Do not issue a `End` or `Stop` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](../Topic/Immediate%20Window.md)
+ [Immediate Window](http://msdn.microsoft.com/library/d33e7937-73f3-4c69-9df0-777a8713c6f2)

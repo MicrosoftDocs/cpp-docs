@@ -32,5 +32,5 @@ A `Const` statement does not properly initialize a constant, or an array declara
 2.  If the declaration specifies an array, check to see if a variable is being used to specify the number of elements. If so, replace the variable with a constant expression.  
   
 ## See Also  
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)   
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)   
  [NOTINBUILD  an Array Variable](http://msdn.microsoft.com/en-us/c2da78bd-6928-46ba-805f-44f819dfaf93)

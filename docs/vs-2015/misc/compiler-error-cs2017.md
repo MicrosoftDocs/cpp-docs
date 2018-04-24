@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS2017
 Cannot specify /main if building a module or library  
   
- You cannot specify a main entry point when you are building a [/target:library](../Topic/-target:library%20\(C%23%20Compiler%20Options\).md).  
+ You cannot specify a main entry point when you are building a [/target:library](http://msdn.microsoft.com/library/c5670e88-2126-47c1-8d1c-217923837d17).  
   
  The following sample generates CS2017:  
   

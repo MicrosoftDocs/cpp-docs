@@ -27,4 +27,4 @@ This error generally occurs when a file name is entered which is actually a char
   
 ## See Also  
  [NIB: Save File As Dialog Box](http://msdn.microsoft.com/en-us/22380a20-2858-4391-b2f2-80c6bce64f14)   
- [Solutions and Projects](../Topic/Solutions%20and%20Projects%20in%20Visual%20Studio.md)
+ [Solutions and Projects](http://msdn.microsoft.com/library/aeaf56cb-c2dd-47f6-b012-23b84b7a7254)

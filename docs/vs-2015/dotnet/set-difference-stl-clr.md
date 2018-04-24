@@ -41,7 +41,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `set_difference`. For more information, see [set_difference](../Topic/set_difference.md).  
+ This function behaves the same as the STL function `set_difference`. For more information, see [set_difference](http://msdn.microsoft.com/library/cd96abfe-5028-47de-ae29-cb9aa4a0acf3).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

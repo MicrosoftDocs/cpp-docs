@@ -23,29 +23,29 @@ You can create menu commands by deriving either from <xref:System.ComponentModel
  The commands that a VSPackage makes available to the IDE must be visible and enabled before a user can use them. When commands are created in a .vsct file by using the Visual Studio Package project template, they are visible and enabled by default. Setting some command flags, such as `DynamicItemStart`, can change the default behavior. The visibility, enabled status, and other properties of a command can also be changed in code at run time by accessing the <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> object that is associated with the command.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](http://msdn.microsoft.com/library/1f7c348a-114c-4243-b392-3531e9c9c6fd).  
   
 ## Template Locations for the Visual Studio Package Template  
  You can find the Visual Studio Package template in the **New Project** dialog under **Visual Basic / Extensibility**, **C# / Extensibility**, or **Other Project Types / Extensibility**.  
   
 ## Creating a Command  
- All commands, command groups, menus, toolbars, and tool windows are defined in the .vsct file. For more information, see [Visual Studio Command Table (.Vsct) Files](../Topic/Visual%20Studio%20Command%20Table%20\(.Vsct\)%20Files.md).  
+ All commands, command groups, menus, toolbars, and tool windows are defined in the .vsct file. For more information, see [Visual Studio Command Table (.Vsct) Files](http://msdn.microsoft.com/library/1313adb4-add4-4e74-90e2-f4be522f5259).  
   
- If you are creating a VSPackage by using the package template, select **Menu Command** to create a .vsct file and define a default menu command. For more information, see [Creating an Extension with a Menu Command](../Topic/Creating%20an%20Extension%20with%20a%20Menu%20Command.md).  
+ If you are creating a VSPackage by using the package template, select **Menu Command** to create a .vsct file and define a default menu command. For more information, see [Creating an Extension with a Menu Command](http://msdn.microsoft.com/library/f97104c8-2bcb-45c7-a3c9-85abeda8df98).  
   
 #### To add a command to the IDE  
   
 1.  Open the .vsct file.  
   
-2.  In the `Symbols` section, find the [GuidSymbol](../Topic/GuidSymbol%20Element.md) element that contains the groups and commands.  
+2.  In the `Symbols` section, find the [GuidSymbol](http://msdn.microsoft.com/library/11fb3545-8974-4776-9a54-6b6e7739ae31) element that contains the groups and commands.  
   
-3.  Create an [IDSymbol](../Topic/IDSymbol%20Element.md) element for each menu, group, or command that you want to add, as shown in the following example.  
+3.  Create an [IDSymbol](http://msdn.microsoft.com/library/760cfd20-3c06-422c-9103-98bfa1f387f8) element for each menu, group, or command that you want to add, as shown in the following example.  
   
      [!code[ButtonGroup#01](../snippets/common/VS_Snippets_VSSDK/buttongroup/common/buttongroup.vsct#01)]  
   
      The `name` attributes of the `GuidSymbol` and `IDSymbol` elements provide the GUID:ID pair for each new menu, group, or command. The `guid` represents a command set that is defined for your VSPackage. You can define multiple command sets. Each GUID:ID pair must be unique.  
   
-4.  In the [Buttons](../Topic/Buttons%20Element.md) section, create a [Button](../Topic/Button%20Element.md) element to define the command, as shown in the following example.  
+4.  In the [Buttons](http://msdn.microsoft.com/library/9f2cf94d-dec5-4776-a836-9a89c75f0c87) section, create a [Button](http://msdn.microsoft.com/library/96dccf51-2b00-4700-9d28-924b34c21ecd) element to define the command, as shown in the following example.  
   
      [!code[ButtonGroup#03](../snippets/common/VS_Snippets_VSSDK/buttongroup/common/buttongroup.vsct#03)]  
   
@@ -59,35 +59,35 @@ You can create menu commands by deriving either from <xref:System.ComponentModel
   
          Omitting the `priority` attribute sets its value to 0.  
   
-    3.  Set the `type` attribute. In most cases, its value will be `"Button"`. For descriptions of other valid button types, see [Button Element](../Topic/Button%20Element.md).  
+    3.  Set the `type` attribute. In most cases, its value will be `"Button"`. For descriptions of other valid button types, see [Button Element](http://msdn.microsoft.com/library/96dccf51-2b00-4700-9d28-924b34c21ecd).  
   
-5.  In the button definition, create a [Strings](../Topic/Strings%20Element.md) element that contains a [ButtonText](../Topic/ButtonText%20Element.md) element to contain the name of the menu as it appears in the IDE, and a [CommandName](../Topic/CommandName%20Element.md) element to contain the name of the command that is used to access the menu in the **Command** window.  
+5.  In the button definition, create a [Strings](http://msdn.microsoft.com/library/23a42074-a689-481d-824f-b43aa448f266) element that contains a [ButtonText](http://msdn.microsoft.com/library/56aba884-0356-4894-ae4e-32d3938f6865) element to contain the name of the menu as it appears in the IDE, and a [CommandName](http://msdn.microsoft.com/library/a338b767-aa7e-4536-9908-e19a50ab60ac) element to contain the name of the command that is used to access the menu in the **Command** window.  
   
      If the button text string includes the '&' character, the user can open the menu by pressing ALT plus the character that immediately follows the '&'.  
   
      Adding a `Tooltip` element will cause the contained text to appear when a user hovers the pointer over the button.  
   
-6.  Add an [Icon](../Topic/Icon%20Element.md) element to specify the icon, if any, to be displayed with the command. Icons are required for buttons on toolbars but not for menu items. The `guid` and `id` of the `Icon` element must match those of a [Bitmap](../Topic/Bitmap%20Element.md) element defined in the `Bitmaps` section.  
+6.  Add an [Icon](http://msdn.microsoft.com/library/73c58fe3-d53c-4f4e-b025-29567c6cbb7c) element to specify the icon, if any, to be displayed with the command. Icons are required for buttons on toolbars but not for menu items. The `guid` and `id` of the `Icon` element must match those of a [Bitmap](http://msdn.microsoft.com/library/edcd7891-f4e7-416d-809d-5e2eed9f17e4) element defined in the `Bitmaps` section.  
   
-7.  Add command flags, as appropriate, to change the appearance and behavior of the button. To do this, add a [CommandFlag](../Topic/Command%20Flag%20Element.md) element in the menu definition.  
+7.  Add command flags, as appropriate, to change the appearance and behavior of the button. To do this, add a [CommandFlag](http://msdn.microsoft.com/library/5ef63399-d2db-4dc1-97ce-be1bd4ef4e39) element in the menu definition.  
   
 8.  Set the parent group of the command. The parent group can be a group that you create, a group from another package, or a group from the IDE. For example, to add your command to the Visual Studio editing toolbar, next to the **Comment** and **Remove Comment** buttons, set the parent to guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT. If the parent is a user-defined group, it must be the child of a menu, toolbar, or tool window that appears in the IDE.  
   
      You can do this in one of two ways, depending on your design:  
   
-    -   In the `Button` element, create a [Parent](../Topic/Parent%20Element.md) element and set its `guid` and `id` fields to the Guid and ID of the group that will host the command, also known as the *primary parent group*.  
+    -   In the `Button` element, create a [Parent](http://msdn.microsoft.com/library/e4624ac8-1b9a-4940-910a-528a661cefad) element and set its `guid` and `id` fields to the Guid and ID of the group that will host the command, also known as the *primary parent group*.  
   
          The following example defines a command that will appear on a user-defined menu.  
   
          [!code[TopLevelMenu#03](../snippets/common/VS_Snippets_VSSDK/toplevelmenu/common/toplevelmenu.vsct#03)]  
   
-    -   You may omit the `Parent` element if the command is to be positioned by using command placement. Create a [CommandPlacements](../Topic/CommandPlacements%20Element.md) element before the `Symbols` section, and add a [CommandPlacement](../Topic/CommandPlacement%20Element.md) element that has the `guid` and `id` of the command, a `priority`, and a parent, as shown in the following example.  
+    -   You may omit the `Parent` element if the command is to be positioned by using command placement. Create a [CommandPlacements](http://msdn.microsoft.com/library/78a5724a-3b9f-4c78-9c0d-8faa3924f81c) element before the `Symbols` section, and add a [CommandPlacement](http://msdn.microsoft.com/library/2cbd7ac8-c55a-43d8-a26d-713b3d790016) element that has the `guid` and `id` of the command, a `priority`, and a parent, as shown in the following example.  
   
          [!code[ButtonGroup#04](../snippets/common/VS_Snippets_VSSDK/buttongroup/common/buttongroup.vsct#04)]  
   
-         Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../Topic/CommandPlacements%20Element.md) element.  
+         Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](http://msdn.microsoft.com/library/78a5724a-3b9f-4c78-9c0d-8faa3924f81c) element.  
   
-     For more information about command groups and parenting, see [Creating Reusable Groups of Buttons](../Topic/Creating%20Reusable%20Groups%20of%20Buttons.md).  
+     For more information about command groups and parenting, see [Creating Reusable Groups of Buttons](http://msdn.microsoft.com/library/0c561617-fb86-476d-8bd1-c6e5e7464c65).  
   
  At this point, the command will be visible in the IDE, but will have no functionality. If the command was created by the package template, by default it will have a click handler that displays a message.  
   
@@ -157,7 +157,7 @@ You can create menu commands by deriving either from <xref:System.ComponentModel
 ### Handling Commands By Using the IOleCommandTarget Interface  
  For code that uses the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface directly, the VSPackage must implement both the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> and <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> methods of the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. If the VSPackage implements a project hierarchy, the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> methods of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface should be implemented instead.  
   
- Both the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> and <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> methods are designed to receive a single command set `GUID` and an array of command IDs as input. We recommend that VSPackages fully support this concept of multiple IDs in one call. However, as long as a VSPackage is not called from other VSPackages, you can assume that the command array contains only one command ID because the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> and <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> methods are executed in a well-defined order. For more information about routing, see [Command Routing in VSPackages](../Topic/Command%20Routing%20in%20VSPackages.md).  
+ Both the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> and <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> methods are designed to receive a single command set `GUID` and an array of command IDs as input. We recommend that VSPackages fully support this concept of multiple IDs in one call. However, as long as a VSPackage is not called from other VSPackages, you can assume that the command array contains only one command ID because the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> and <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> methods are executed in a well-defined order. For more information about routing, see [Command Routing in VSPackages](http://msdn.microsoft.com/library/a9c7f9ae-3594-4557-a314-8cf76f5f8772).  
   
  For code that uses the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface directly for command handling, you must implement the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> method in the VSPackage as follows to handle commands.  
   
@@ -183,7 +183,7 @@ You can create menu commands by deriving either from <xref:System.ComponentModel
   
          `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-         In the case of processing commands that are hosted on a menu of type `MenuControllerLatched`, the first command that is marked by the `OLECMDF_LATCHED` flag is the default command that is displayed by the menu on start-up. For more information about `MenuController` menu types, see [Menu Element](../Topic/Menu%20Element.md).  
+         In the case of processing commands that are hosted on a menu of type `MenuControllerLatched`, the first command that is marked by the `OLECMDF_LATCHED` flag is the default command that is displayed by the menu on start-up. For more information about `MenuController` menu types, see [Menu Element](http://msdn.microsoft.com/library/ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0).  
   
     -   If the command is currently enabled:  
   
@@ -212,5 +212,5 @@ You can create menu commands by deriving either from <xref:System.ComponentModel
 -   If the `GUID` and command ID match the GUID:ID pair that is used by the command in the .vsct file, execute the code that is associated with the command and return <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
 ## See Also  
- [VSCT XML Schema Reference](../Topic/VSCT%20XML%20Schema%20Reference.md)   
- [Extending Menus and Commands](../Topic/Extending%20Menus%20and%20Commands.md)
+ [VSCT XML Schema Reference](http://msdn.microsoft.com/library/49e7efae-e713-4762-a824-96fdaf92cdc9)   
+ [Extending Menus and Commands](http://msdn.microsoft.com/library/7b2be4b9-e3fe-4412-874f-ae72ebc84c4b)

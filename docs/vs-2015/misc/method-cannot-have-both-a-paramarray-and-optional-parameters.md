@@ -30,5 +30,5 @@ A `ParamArray` argument is automatically optional, and it must be the only optio
 -   Remove the optional arguments in the declaration.  
   
 ## See Also  
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)   
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)
+ [Parameter Arrays](http://msdn.microsoft.com/library/c43edfae-9114-4096-9ebc-8c5c957a1067)   
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)

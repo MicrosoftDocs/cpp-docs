@@ -32,5 +32,5 @@ The `End` keyword is used incorrectly or is inappropriate in the current context
 2.  Use `End` with other keywords to terminate a block of code such as a structure or property.  
   
 ## See Also  
- [End Statement](../Topic/End%20Statement.md)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End Statement](http://msdn.microsoft.com/library/0e64467c-0f34-4aab-9ddd-43f8b9d55d90)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

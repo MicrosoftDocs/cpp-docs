@@ -29,5 +29,5 @@ manager: "douge"
 1.  In the project file, specify the attribute `Command` for the `Exec` task.  
   
 ## See Also  
- [Exec Task](../Topic/Exec%20Task.md)   
- [Tasks](../Topic/MSBuild%20Tasks.md)
+ [Exec Task](http://msdn.microsoft.com/library/c9b7525a-b1c9-40fc-8bce-77a5b8f960d8)   
+ [Tasks](http://msdn.microsoft.com/library/5d3cc4a7-e5db-4f73-b707-8b6882fddcf8)

@@ -30,5 +30,5 @@ A date constant is declared with an invalid date.
 -   Correct the date used in the constant.  
   
 ## See Also  
- [Date Data Type](../Topic/Date%20Data%20Type%20\(Visual%20Basic\).md)   
- [Constants and Enumerations](../Topic/Constants%20and%20Enumerations%20\(Visual%20Basic\).md)
+ [Date Data Type](http://msdn.microsoft.com/library/d9edf5b0-e85e-438b-a1cf-1f321e7c831b)   
+ [Constants and Enumerations](http://msdn.microsoft.com/library/309c0ad5-83e4-4f96-99ea-83cd95107417)

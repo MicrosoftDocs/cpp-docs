@@ -35,6 +35,6 @@ The `Global` keyword is used in a statement where it is not allowed.
   
 ## See Also  
  [Global - delete](http://msdn.microsoft.com/en-us/18c8ba14-40f6-4978-8096-6a5852324635)   
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)   
- [References and the Imports Statement](../Topic/References%20and%20the%20Imports%20Statement%20\(Visual%20Basic\).md)
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)   
+ [Namespace Statement](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)   
+ [References and the Imports Statement](http://msdn.microsoft.com/library/38149bd4-0a6f-4b31-b5f8-94a8c33f1600)

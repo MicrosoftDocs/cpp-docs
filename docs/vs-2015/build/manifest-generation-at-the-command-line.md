@@ -32,6 +32,6 @@ When building C/C++ applications from the command line using nmake or similar to
  [Manifests](http://msdn.microsoft.com/library/aa375365)   
  [/INCREMENTAL (Link Incrementally)](../build/reference/incremental-link-incrementally.md)   
  [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)   
- [Edit and Continue](../Topic/Edit%20and%20Continue.md)   
+ [Edit and Continue](http://msdn.microsoft.com/library/2cdd4531-7117-4221-a809-8447812de2a1)   
  [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)
 

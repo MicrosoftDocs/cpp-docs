@@ -30,4 +30,4 @@ An enumeration member has been declared more than one time in this structure.
 -   Remove the extraneous declaration.  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](http://msdn.microsoft.com/library/4da42a10-384d-44d7-b4dc-032202ff784b)

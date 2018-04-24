@@ -30,5 +30,5 @@ A `ReadOnly` property has been found in a context that assigns a value to it. On
 -   Remove the `ReadOnly` keyword from the `Dim` statement declaring the variable, or remove the statement that assigns it a value.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)

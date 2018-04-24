@@ -29,4 +29,4 @@ The pattern string specified in the `Like` operation of a search is invalid.
 4.  End pattern ranges with a closing bracket.  
   
 ## See Also  
- [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md)
+ [Like Operator](http://msdn.microsoft.com/library/966283ec-80e2-4294-baa8-c75baff804f9)

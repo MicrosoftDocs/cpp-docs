@@ -29,4 +29,4 @@ manager: "douge"
 1.  Specify only one schema to validate the project against using the format `/validate:<schema>`, for example, `/validate:MyExtendedBuildSchema.xsd`  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)

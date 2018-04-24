@@ -61,7 +61,7 @@ struct _ATL_COM_MODULE70 {
  Critical section to serialize access to the object map entries. Used internally by ATL.  
   
 ## Remarks  
- [_ATL_COM_MODULE](../Topic/_ATL_COM_MODULE.md) is defined as a typedef of `_ATL_COM_MODULE70`.  
+ [_ATL_COM_MODULE](http://msdn.microsoft.com/library/3b93b150-742d-4f62-8f37-ee764860a64a) is defined as a typedef of `_ATL_COM_MODULE70`.  
   
 ## Requirements  
  **Header:** atlbase.h  

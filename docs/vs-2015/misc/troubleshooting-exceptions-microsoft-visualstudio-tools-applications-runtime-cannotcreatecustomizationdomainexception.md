@@ -23,4 +23,4 @@ The exception that is thrown when an application domain cannot be created and th
   
 ## See Also  
  <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CannotCreateCustomizationDomainException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

@@ -520,7 +520,7 @@ ATLAPI AtlGetObjectSourceInterface(
 >  For this function to successfully retrieve the requested information, the object represented by `punkObj` must implement `IDispatch` (and return type information through **IDispatch::GetTypeInfo**) plus it must also implement either `IProvideClassInfo2` or `IPersist`. The type information for the source interface must be in the same type library as the type information for `IDispatch`.  
   
 ### Example  
- The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) members before calling [DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md) or [DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md).  
+ The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) members before calling [DispEventAdvise](http://msdn.microsoft.com/library/ae1a44dd-f7cb-4ad0-90b7-bacb865076bf) or [DispEventUnadvise](http://msdn.microsoft.com/library/dca9e50a-89bd-4643-82ba-a692087e9dda).  
   
  [!code-cpp[NVC_ATL_Windowing#93](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Buddy.h#93)]  
   

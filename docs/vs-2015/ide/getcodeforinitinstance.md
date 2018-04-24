@@ -27,7 +27,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [GetCodeForInitInstance](https://docs.microsoft.com/cpp/ide/getcodeforinitinstance).  
   
   
-Retrieves the specified code for [InitInstance](../Topic/CWinApp::InitInstance.md).  
+Retrieves the specified code for [InitInstance](http://msdn.microsoft.com/library/0dcf01bb-276d-4615-ba6b-ef9bafaa80ba).  
   
 ## Syntax  
   

@@ -93,7 +93,7 @@ int _setmaxstdio(
  See [_getmaxstdio](../../c-runtime-library/reference/getmaxstdio.md) for an example of using `_setmaxstdio`.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)

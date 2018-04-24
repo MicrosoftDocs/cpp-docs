@@ -34,5 +34,5 @@ The text that follows the option is not a plus sign (+) or a minus sign (-).
 -   Replace the text that follows the option with a minus sign (-) to turn the option off.  
   
 ## See Also  
- [Visual Basic Compiler Options Listed Alphabetically](../Topic/Visual%20Basic%20Compiler%20Options%20Listed%20Alphabetically.md)   
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Visual Basic Compiler Options Listed Alphabetically](http://msdn.microsoft.com/library/e67febba-bacf-4e1f-a143-c141e063f90e)   
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

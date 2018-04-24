@@ -25,5 +25,5 @@ An attempt has been made to perform an operation that can only be performed on a
 ## See Also  
  [NOT IN BUILD: FileOpen Function](http://msdn.microsoft.com/en-us/0f07e1df-d4ea-44a9-a21c-76aa2e242f81)   
  [NOT IN BUILD: FileClose Function](http://msdn.microsoft.com/en-us/f307b39f-a996-4ff6-ab13-e0b05ea5ab91)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)   
+ [File Access with Visual Basic](http://msdn.microsoft.com/library/231533bf-d049-4345-befa-3fb78fe6517d)

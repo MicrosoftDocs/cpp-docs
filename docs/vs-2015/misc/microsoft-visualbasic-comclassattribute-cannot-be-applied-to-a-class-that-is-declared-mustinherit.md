@@ -43,5 +43,5 @@ A class is declared with the <xref:Microsoft.VisualBasic.ComClassAttribute>, but
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)

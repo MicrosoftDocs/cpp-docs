@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1039
 Unterminated string literal  
   
- The compiler detected an ill-formed [string](../Topic/string%20\(C%23%20Reference\).md) literal.  
+ The compiler detected an ill-formed [string](http://msdn.microsoft.com/library/3037e558-fb22-494d-bca1-a15ade11b11a) literal.  
   
 ## Example  
  The following sample generates CS1039. To resolve the error, add the terminating quotation mark.  

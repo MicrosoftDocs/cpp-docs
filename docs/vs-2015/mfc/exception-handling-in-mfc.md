@@ -86,7 +86,7 @@ This article explains the exception-handling mechanisms available in MFC. Two me
   
 -   Erroneous execution  
   
-     The caller makes some mistake in passing arguments to the function or calls the function in an inappropriate context. This situation causes an error, and it should be detected by an assertion during program development. (For more information on assertions, see [C/C++ Assertions](../Topic/C-C++%20Assertions.md).)  
+     The caller makes some mistake in passing arguments to the function or calls the function in an inappropriate context. This situation causes an error, and it should be detected by an assertion during program development. (For more information on assertions, see [C/C++ Assertions](http://msdn.microsoft.com/library/2d7b0121-71aa-414b-bbb6-ede1093d0bfc).)  
   
 -   Abnormal execution  
   

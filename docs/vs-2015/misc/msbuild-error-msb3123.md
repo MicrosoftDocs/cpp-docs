@@ -29,5 +29,5 @@ manager: "douge"
 -   Limit the number of file associations to the specified number.  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243)

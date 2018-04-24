@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0026
 Keyword 'this' is not valid in a static property, static method, or static field initializer  
   
- The [this](../Topic/this%20\(C%23%20Reference\).md) keyword refers to an object, which is an instance of a type. Since static methods are independent of any instance of the containing class, the "this" keyword is meaningless and is therefore not allowed. For more information, see [Static Classes and Static Class Members](../Topic/Static%20Classes%20and%20Static%20Class%20Members%20\(C%23%20Programming%20Guide\).md) and [Objects](../Topic/Objects%20\(C%23%20Programming%20Guide\).md).  
+ The [this](http://msdn.microsoft.com/library/d4f827fe-4710-410b-89b8-867dad44b8a3) keyword refers to an object, which is an instance of a type. Since static methods are independent of any instance of the containing class, the "this" keyword is meaningless and is therefore not allowed. For more information, see [Static Classes and Static Class Members](http://msdn.microsoft.com/library/235614b5-1371-4dbd-9abd-b406a8b0298b) and [Objects](http://msdn.microsoft.com/library/af4a5230-fbf3-4eea-95e1-8b883c2f845c).  
   
 ## Example  
  The following example generates CS0026:  

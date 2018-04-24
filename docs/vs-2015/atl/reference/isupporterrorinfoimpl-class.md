@@ -130,7 +130,7 @@ STDMETHOD(SetSize)(int nNumThreads);
   
  If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](../Topic/ATLS_DEFAULT_THREADSPERPROC.md) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

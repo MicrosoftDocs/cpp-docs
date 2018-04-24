@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS2014
 Compiler option 'old option' is obsolete, please use 'new option' instead  
   
- The form of the compiler option is deprecated. See [C# Compiler Options](../Topic/C%23%20Compiler%20Options.md) for more information.
+ The form of the compiler option is deprecated. See [C# Compiler Options](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44) for more information.

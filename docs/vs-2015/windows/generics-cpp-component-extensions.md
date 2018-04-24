@@ -62,16 +62,16 @@ Generics are parameterized types and methods. In this section, find out which ge
  [How to: Iterate Over a Generic Collection with for each](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
  Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collection.  
   
- [Generics in the .NET Framework Class Library](../Topic/Generics%20in%20the%20.NET%20Framework%20Class%20Library%20\(C%23%20Programming%20Guide\).md)  
+ [Generics in the .NET Framework Class Library](http://msdn.microsoft.com/library/afdd5477-6770-4686-8297-f58a4d749daf)  
  Discusses .NET Framework class library's `System.Collections.Generic`, namespace, which includes several ready-to-use generic collection classes and associated interfaces.  
   
- [Introduction to Generics](../Topic/Introduction%20to%20Generics%20\(C%23%20Programming%20Guide\).md)  
+ [Introduction to Generics](http://msdn.microsoft.com/library/a1ad761e-42f7-41dd-a62f-452a2de26b9d)  
  The generics section in the C# documentation.  
   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)  
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)  
  The generics section in the Visual Basic documentation.  
   
- [Templates Overview](../Topic/Templates%20Overview.md)  
+ [Templates Overview](http://msdn.microsoft.com/library/a8a5779b-ba5c-42ed-bec3-0e4a672128f5)  
  Information on templates in C++.  
   
 ## See Also  

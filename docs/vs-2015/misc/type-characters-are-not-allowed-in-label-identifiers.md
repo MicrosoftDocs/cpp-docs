@@ -23,7 +23,7 @@ manager: "wpickett"
 # Type characters are not allowed in label identifiers
 A statement label contains at least one identifier type character.  
   
- A statement label must be a valid Visual Basic name. The allowed characters do not include any of the identifier type characters (`%`, `&`, `@`, `!`, `#`, and `$`). See [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md).  
+ A statement label must be a valid Visual Basic name. The allowed characters do not include any of the identifier type characters (`%`, `&`, `@`, `!`, `#`, and `$`). See [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
  **Error ID:** BC31395  
   
@@ -32,6 +32,6 @@ A statement label contains at least one identifier type character.
 -   Remove the type identifier character or characters from the statement label.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)   
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [Type Characters](http://msdn.microsoft.com/library/6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5)   
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [How to: Label Statements](http://msdn.microsoft.com/library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

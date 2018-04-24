@@ -23,7 +23,7 @@ This section contains several examples illustrating basic methods for adding and
  [Walkthrough: Creating a WPF Toolbox Control](../misc/walkthrough-creating-a-wpf-toolbox-control.md)  
  Shows how to create a control and add it to the Toolbox by using the WPF Toolbox Control template.  
   
- [Creating a Windows Forms Toolbox Control](../Topic/Creating%20a%20Windows%20Forms%20Toolbox%20Control.md)  
+ [Creating a Windows Forms Toolbox Control](http://msdn.microsoft.com/library/0be6ffc1-8afd-4d02-9a5d-e27dde05fde6)  
  Shows how to create a control and add it to the Toolbox by using the Windows Forms Toolbox Control template.  
   
  [Walkthrough: Autoloading Toolbox Items](../misc/walkthrough-autoloading-toolbox-items.md)  

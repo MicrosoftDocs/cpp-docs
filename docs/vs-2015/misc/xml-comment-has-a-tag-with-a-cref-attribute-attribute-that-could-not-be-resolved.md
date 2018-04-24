@@ -32,5 +32,5 @@ XML comment has a tag with a 'cref' attribute \<attribute> that could not be res
 -   Validate the `cref` attribute so that it points to a valid code element.  
   
 ## See Also  
- [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)   
- [XML Comment Tags](../Topic/Recommended%20XML%20Tags%20for%20Documentation%20Comments%20\(Visual%20Basic\).md)
+ [How to: Create XML Documentation](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)   
+ [XML Comment Tags](http://msdn.microsoft.com/library/294e0736-ff1e-498e-af83-6db71ed41a72)

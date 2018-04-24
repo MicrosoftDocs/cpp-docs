@@ -31,5 +31,5 @@ You declared a variable that is typed as a structure in conjunction with `WithEv
   
 ## See Also  
  [NOT IN BUILD:WithEvents and the Handles Clause](http://msdn.microsoft.com/en-us/072b9cf6-6298-46f1-849e-4edc1631564c)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [AddHandler Statement](http://msdn.microsoft.com/library/cfe69799-2a0f-42c0-a99e-09fed954da01)

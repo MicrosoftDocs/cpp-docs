@@ -41,7 +41,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `set_union`. For more information, see [set_union](../Topic/set_union.md).  
+ This function behaves the same as the STL function `set_union`. For more information, see [set_union](http://msdn.microsoft.com/library/6b714f7b-8585-4a1c-9cfb-e10f02d6547a).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

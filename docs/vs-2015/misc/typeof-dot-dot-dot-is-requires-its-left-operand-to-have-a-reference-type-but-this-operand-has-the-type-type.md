@@ -32,7 +32,7 @@ The `TypeOf...Is` expression checks an object variable's run-time type compatibi
 -   If `Option Strict` is `On`, the variable declaration determines the variable's data type.  
   
 ## See Also  
- [Comparison Operators in Visual Basic](../Topic/Comparison%20Operators%20in%20Visual%20Basic.md)   
+ [Comparison Operators in Visual Basic](http://msdn.microsoft.com/library/0b570339-5407-474f-8421-e183a8b303ee)   
  [NOT IN BUILD: TypeName Function (Visual Basic)](http://msdn.microsoft.com/en-us/6197bc6c-e8a6-4711-883c-0c95e94e272c)   
  [NOT IN BUILD: VarType Function (Visual Basic)](http://msdn.microsoft.com/en-us/e820b6fc-faa6-4de4-836a-0466032dc190)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)

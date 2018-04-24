@@ -24,6 +24,6 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS2029
 Invalid value for '/define'; 'identifier' is not a valid identifier  
   
- This warning occurs if the value that is used in the [/define](../Topic/-define%20\(C%23%20Compiler%20Options\).md) option has some invalid characters.  
+ This warning occurs if the value that is used in the [/define](http://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e) option has some invalid characters.  
   
- This warning cannot be suppressed by the [/nowarn](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) option.
+ This warning cannot be suppressed by the [/nowarn](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4) option.

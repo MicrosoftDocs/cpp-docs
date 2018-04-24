@@ -29,9 +29,9 @@ An `End Using` statement appears with no matching `Using` declaration preceding 
   
 -   Remove the `End Using` statement if it is redundant.  
   
--   Supply the missing [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md) if one is missing.  
+-   Supply the missing [Using Statement](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1) if one is missing.  
   
 -   Move the `End Using` statement to the appropriate place in the code.  
   
 ## See Also  
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

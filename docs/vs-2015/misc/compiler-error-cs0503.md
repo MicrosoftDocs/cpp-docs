@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0503
 The abstract method 'method' cannot be marked virtual  
   
- It is redundant to mark a member method as both [abstract](../Topic/abstract%20\(C%23%20Reference\).md) and [virtual](../Topic/virtual%20\(C%23%20Reference\).md) because **abstract** implies **virtual**.  
+ It is redundant to mark a member method as both [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) and [virtual](http://msdn.microsoft.com/library/5da9abae-bc1e-434f-8bea-3601b8dcb3b2) because **abstract** implies **virtual**.  
   
  The following sample generates CS0503:  
   

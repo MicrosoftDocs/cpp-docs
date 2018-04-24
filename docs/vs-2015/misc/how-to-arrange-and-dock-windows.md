@@ -39,4 +39,4 @@ ms.author: "mblome"
 manager: "douge"
 ---
 # How to: Arrange and Dock Windows
-This content has moved to [Customizing window layouts](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md)
+This content has moved to [Customizing window layouts](http://msdn.microsoft.com/library/7517ff13-76de-4ecf-9c1b-eb9b7ff4d718)

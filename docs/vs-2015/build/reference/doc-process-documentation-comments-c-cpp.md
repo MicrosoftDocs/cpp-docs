@@ -51,7 +51,7 @@ Causes the compiler to process documentation comments in source code files and t
   
  **/doc** is not compatible with **/clr:oldSyntax**.  See [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) for more information.  
   
- To use the generated .xml file with IntelliSense, make the file name of the .xml file the same as the assembly that you want to support and put the .xml file is in the same directory as the assembly. When the assembly is referenced in the Visual Studio project, the .xml file is also found. For more information, see [Using IntelliSense](../Topic/Using%20IntelliSense.md) and [Supplying XML Code Comments](../Topic/Supplying%20XML%20Code%20Comments.md).  
+ To use the generated .xml file with IntelliSense, make the file name of the .xml file the same as the assembly that you want to support and put the .xml file is in the same directory as the assembly. When the assembly is referenced in the Visual Studio project, the .xml file is also found. For more information, see [Using IntelliSense](http://msdn.microsoft.com/library/9fdb489b-8b46-4b92-9ccc-c8f8cc184081) and [Supplying XML Code Comments](http://msdn.microsoft.com/library/f36b46af-443a-4fa6-a2c3-0c4962bbd4aa).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

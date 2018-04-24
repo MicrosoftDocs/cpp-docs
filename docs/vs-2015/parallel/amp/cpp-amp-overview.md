@@ -34,7 +34,7 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
   
 -   DirectX 11 Feature Level 11.0 or later hardware  
   
--   For debugging on the software emulator, [!INCLUDE[win8](../../includes/win8-md.md)] or [!INCLUDE[winserver8](../../includes/winserver8-md.md)] is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](../Topic/Debugging%20GPU%20Code.md).  
+-   For debugging on the software emulator, [!INCLUDE[win8](../../includes/win8-md.md)] or [!INCLUDE[winserver8](../../includes/winserver8-md.md)] is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](http://msdn.microsoft.com/library/c7e77a5a-cb57-4b11-9187-ecc89acc8775).  
   
 ## Introduction  
  The following two examples illustrate the primary components of C++ AMP. Assume that you want to add the corresponding elements of two one-dimensional arrays. For example, you might want to add `{1, 2, 3, 4, 5}` and `{6, 7, 8, 9, 10}` to obtain `{7, 9, 11, 13, 15}`. Without using C++ AMP, you might write the following code to add the numbers and display the results.  
@@ -113,7 +113,7 @@ void CppAmpMethod() {
   
 -   Data: You use C++ arrays to construct three C++ AMP [array_view](../../parallel/amp/reference/array-view-class.md) objects. You supply four values to construct an `array_view` object: the data values, the rank, the element type, and the length of the `array_view` object in each dimension. The rank and type are passed as type parameters. The data and length are passed as constructor parameters. In this example, the C++ array that is passed to the constructor is one-dimensional. The rank and length are used to construct the rectangular shape of the data in the `array_view` object, and the data values are used to fill the array. The runtime library also includes the [array Class](../../parallel/amp/reference/array-class.md), which has an interface that resembles the `array_view` class and is discussed later in this article.  
   
--   Iteration: The [parallel_for_each Function (C++ AMP)](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md) provides a mechanism for iterating through the data elements, or *compute domain*. In this example, the compute domain is specified by `sum.extent`. The code that you want to execute is contained in a lambda expression, or *kernel function*. The `restrict(amp)` indicates that only the subset of the C++ language that C++ AMP can accelerate is used.  
+-   Iteration: The [parallel_for_each Function (C++ AMP)](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160) provides a mechanism for iterating through the data elements, or *compute domain*. In this example, the compute domain is specified by `sum.extent`. The code that you want to execute is contained in a lambda expression, or *kernel function*. The `restrict(amp)` indicates that only the subset of the C++ language that C++ AMP can accelerate is used.  
   
 -   Index: The [index Class](../../parallel/amp/reference/index-class.md) variable, `idx`, is declared with a rank of one to match the rank of the `array_view` object. By using the index, you can access the individual elements of the `array_view` objects.  
   
@@ -121,7 +121,7 @@ void CppAmpMethod() {
  You must define the data values and declare the shape of the data before you can run the kernel code. All data is defined to be an array (rectangular), and you can define the array to have any rank (number of dimensions). The data can be any size in any of the dimensions.  
   
 ### index Class  
- The [index Class](../../parallel/amp/reference/index-class.md) specifies a location in the `array` or `array_view` object by encapsulating the offset from the origin in each dimension into one object. When you access a location in the array, you pass an `index` object to the indexing operator, `[]`, instead of a list of integer indexes. You can access the elements in each dimension by using the [array::operator() Operator](../Topic/array::operator\(\)%20Operator.md) or the [array_view::operator() Operator](../Topic/array_view::operator\(\)%20Operator.md).  
+ The [index Class](../../parallel/amp/reference/index-class.md) specifies a location in the `array` or `array_view` object by encapsulating the offset from the origin in each dimension into one object. When you access a location in the array, you pass an `index` object to the indexing operator, `[]`, instead of a list of integer indexes. You can access the elements in each dimension by using the [array::operator() Operator](http://msdn.microsoft.com/library/aea59605-4038-4826-9dfb-99babc971ac3) or the [array_view::operator() Operator](http://msdn.microsoft.com/library/e83cbd21-b9bd-4b17-a654-8ae08296a8c2).  
   
  The following example creates a one-dimensional index that specifies the third element in a one-dimensional `array_view` object. The index is used to print the third element in the `array_view` object. The output is 3.  
   
@@ -251,14 +251,14 @@ for (int i = 0; i <5; i++)
 |Shape|Rectangular.|Rectangular.|  
 |Data storage|Is a data container.|Is a data wrapper.|  
 |Copy|Explicit and deep copy at definition.|Implicit copy when it is accessed by the kernel function.|  
-|Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](../Topic/array_view::synchronize%20Method.md) to continue accessing the data on the original container.|  
+|Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](http://msdn.microsoft.com/library/124cc736-d511-42cb-8e2b-17bb75a6c2de) to continue accessing the data on the original container.|  
   
 ### Shared memory with array and array_view  
  Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior.  
   
- `array` objects can be used to specify fine-grained control over the use of shared memory if the associated accelerator supports it. Whether an accelerator supports shared memory is determined by the accelerator’s [supports_cpu_shared_memory](../Topic/accelerator::supports_cpu_shared_memory%20Data%20Member.md) property, which returns `true` when shared memory is supported. If shared memory is supported, the default [access_type Enumeration](../Topic/access_type%20Enumeration.md) for memory allocations on the accelerator is determined by the `default_cpu_access_type` property. By default, `array` and `array_view` objects take on the same `access_type` as the primary associated `accelerator`.  
+ `array` objects can be used to specify fine-grained control over the use of shared memory if the associated accelerator supports it. Whether an accelerator supports shared memory is determined by the accelerator’s [supports_cpu_shared_memory](http://msdn.microsoft.com/library/ce1961f7-7a5c-4f62-ac92-4b890f961340) property, which returns `true` when shared memory is supported. If shared memory is supported, the default [access_type Enumeration](http://msdn.microsoft.com/library/a1b2d084-38dd-4fb6-b268-48e3ab15d634) for memory allocations on the accelerator is determined by the `default_cpu_access_type` property. By default, `array` and `array_view` objects take on the same `access_type` as the primary associated `accelerator`.  
   
- By setting the [array::cpu_access_type Data Member](../Topic/array::cpu_access_type%20Data%20Member.md) property of an `array` explicitly, you can exercise fine-grained control over how shared memory is used, so that you can optimize the app for the hardware’s performance characteristics, based on the memory access patterns of its computation kernels. An `array_view` reflects the same `cpu_access_type` as the `array` that it’s associated with; or, if the array_view is constructed without a data source, its `access_type` reflects the environment that first causes it to allocate storage. That is, if it’s first accessed by the host (CPU), then it behaves as if it were created over a CPU data source and shares the `access_type` of the `accelerator_view` associated by capture; however, if it's first accessed by an `accelerator_view`, then it behaves as if it were created over an `array` created on that `accelerator_view` and shares the `array`’s `access_type`.  
+ By setting the [array::cpu_access_type Data Member](http://msdn.microsoft.com/library/1f012ae2-4adf-4ea1-8f25-a33e20665ae8) property of an `array` explicitly, you can exercise fine-grained control over how shared memory is used, so that you can optimize the app for the hardware’s performance characteristics, based on the memory access patterns of its computation kernels. An `array_view` reflects the same `cpu_access_type` as the `array` that it’s associated with; or, if the array_view is constructed without a data source, its `access_type` reflects the environment that first causes it to allocate storage. That is, if it’s first accessed by the host (CPU), then it behaves as if it were created over a CPU data source and shares the `access_type` of the `accelerator_view` associated by capture; however, if it's first accessed by an `accelerator_view`, then it behaves as if it were created over an `array` created on that `accelerator_view` and shares the `array`’s `access_type`.  
   
  The following code example shows how to determine whether the default accelerator supports shared memory, and then creates several arrays that have different cpu_access_type configurations.  
   
@@ -302,7 +302,7 @@ int main()
 ```  
   
 ## Executing Code over Data: parallel_for_each  
- The [parallel_for_each](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md) function defines the code that you want to run on the accelerator against the data in the `array` or `array_view` object. Consider the following code from the introduction of this topic.  
+ The [parallel_for_each](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160) function defines the code that you want to run on the accelerator against the data in the `array` or `array_view` object. Consider the following code from the introduction of this topic.  
   
 ```cpp  
   
@@ -379,9 +379,9 @@ void AddArraysWithFunction() {
 ```  
   
 ## Accelerating Code: Tiles and Barriers  
- You can gain additional acceleration by using tiling. Tiling divides the threads into equal rectangular subsets or *tiles*. You determine the appropriate tile size based on your data set and the algorithm that you are coding. For each thread, you have access to the *global* location of a data element relative to the whole `array` or `array_view` and access to the *local* location relative to the tile. Using the local index value simplifies your code because you don't have to write the code to translate index values from global to local. To use tiling, call the [extent::tile Method](../Topic/extent::tile%20Method.md) on the compute domain in the `parallel_for_each` method, and use a [tiled_index](../../parallel/amp/reference/tiled-index-class.md) object in the lambda expression.  
+ You can gain additional acceleration by using tiling. Tiling divides the threads into equal rectangular subsets or *tiles*. You determine the appropriate tile size based on your data set and the algorithm that you are coding. For each thread, you have access to the *global* location of a data element relative to the whole `array` or `array_view` and access to the *local* location relative to the tile. Using the local index value simplifies your code because you don't have to write the code to translate index values from global to local. To use tiling, call the [extent::tile Method](http://msdn.microsoft.com/library/208390e6-dfe8-4abf-9d4c-54f2405d8b35) on the compute domain in the `parallel_for_each` method, and use a [tiled_index](../../parallel/amp/reference/tiled-index-class.md) object in the lambda expression.  
   
- In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](../Topic/tile_barrier::wait%20Method.md) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](../Topic/tile_barrier::wait%20Method.md) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
+ In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](http://msdn.microsoft.com/library/98aa8ef0-ed25-49c1-90ab-c6516c3a7a8f) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](http://msdn.microsoft.com/library/98aa8ef0-ed25-49c1-90ab-c6516c3a7a8f) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
   
  The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.  
   
@@ -446,7 +446,7 @@ for (int i = 0; i <4; i++) {
 ```  
   
 ## Math Libraries  
- C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](http://go.microsoft.com/fwlink/LinkId=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](../Topic/accelerator::supports_double_precision%20Data%20Member.md). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The `restrict` keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.  
+ C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](http://go.microsoft.com/fwlink/LinkId=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](http://msdn.microsoft.com/library/8d075a9b-b202-4ba2-be82-bd43222287e9). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The `restrict` keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.  
   
 ```cpp  
   
@@ -501,15 +501,15 @@ void MathExample() {
 ## C++ AMP and Concurrency Visualizer  
  The Concurrency Visualizer includes support for analyzing performance of C++ AMP code. These articles describe these features:  
   
-- [GPU Activity Graph](../Topic/GPU%20Activity%20Graph.md)  
+- [GPU Activity Graph](http://msdn.microsoft.com/library/d7c769af-95fb-49a3-b5ab-deafecee46fa)  
   
-- [GPU Activity (Paging)](../Topic/GPU%20Activity%20\(Paging\).md)  
+- [GPU Activity (Paging)](http://msdn.microsoft.com/library/95284ac5-3492-4f7b-a79f-7d2840a07679)  
   
-- [GPU Activity (This Process)](../Topic/GPU%20Activity%20\(This%20Process\).md)  
+- [GPU Activity (This Process)](http://msdn.microsoft.com/library/0956edbf-9bcd-4afe-9287-fda628648ca0)  
   
-- [GPU Activity (Other Processes)](../Topic/GPU%20Activity%20\(Other%20Processes\).md)  
+- [GPU Activity (Other Processes)](http://msdn.microsoft.com/library/8a68df65-eb63-452f-9285-fb4ffc92f2b2)  
   
-- [Channels (Threads View)](../Topic/Channels%20\(Threads%20View\).md)  
+- [Channels (Threads View)](http://msdn.microsoft.com/library/2f798c17-2363-42a4-be94-a5751d208eac)  
   
 - [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)  
   

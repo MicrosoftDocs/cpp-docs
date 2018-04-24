@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 3) CS0665
 Assignment in conditional expression is always constant; did you mean to use == instead of = ?  
   
- A conditional expression used the [= operator](../Topic/=%20Operator%20\(C%23%20Reference\).md) and not the [== operator](../Topic/==%20Operator%20\(C%23%20Reference\).md).  
+ A conditional expression used the [= operator](http://msdn.microsoft.com/library/d802a6d5-32f0-42b8-b180-12f5a081bfc1) and not the [== operator](http://msdn.microsoft.com/library/34c6b597-caa2-4855-a7cd-38ecdd11bd07).  
   
  The following sample generates CS0665:  
   

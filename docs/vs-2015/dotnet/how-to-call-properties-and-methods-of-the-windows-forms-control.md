@@ -30,7 +30,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [How to: Call Properties and Methods of the Windows Forms Control](https://docs.microsoft.com/cpp/dotnet/how-to-call-properties-and-methods-of-the-windows-forms-control).  
   
   
-Because [CWinFormsView::GetControl](../Topic/CWinFormsView::GetControl.md) returns a pointer to <xref:System.Windows.Forms.Control?displayProperty=fullName>, and not a pointer to `WindowsControlLibrary1::UserControl1`, it is advisable to add a member of the user control type and initialize it in [IView::OnInitialUpdate](../Topic/IView::OnInitialUpdate.md). Now you can call methods and properties using `m_ViewControl`.  
+Because [CWinFormsView::GetControl](http://msdn.microsoft.com/library/ebda9030-42b2-45b1-94f3-730b95da7dba) returns a pointer to <xref:System.Windows.Forms.Control?displayProperty=fullName>, and not a pointer to `WindowsControlLibrary1::UserControl1`, it is advisable to add a member of the user control type and initialize it in [IView::OnInitialUpdate](http://msdn.microsoft.com/library/21dac456-961d-4ec3-85ef-7f5d00374119). Now you can call methods and properties using `m_ViewControl`.  
   
  This topic assumes you have previously completed [How to: Create the User Control and Host in a Dialog Box](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) and [How to: Create the User Control and Host MDI View](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).  
   

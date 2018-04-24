@@ -30,5 +30,5 @@ You have attempted to declare a `Class` or `Module` with an invalid specifier.
 -   Remove the specifier.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

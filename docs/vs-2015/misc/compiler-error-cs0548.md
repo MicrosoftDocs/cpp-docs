@@ -26,7 +26,7 @@ manager: "wpickett"
   
  A property must have at least one accessor (get or set) method.  
   
- For more information, see and [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see and [Using Properties](http://msdn.microsoft.com/library/f7f67b05-0983-4cdb-96af-1855d24c967c).  
   
 ## Example  
  The following sample generates CS0548.  

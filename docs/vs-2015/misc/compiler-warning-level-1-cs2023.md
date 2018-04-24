@@ -24,6 +24,6 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS2023
 Ignoring /noconfig option because it was specified in a response file  
   
- The [/noconfig](../Topic/-noconfig%20\(C%23%20Compiler%20Options\).md) compiler option was specified in a response file, which is not allowed.  
+ The [/noconfig](http://msdn.microsoft.com/library/cd26967e-e494-4c8c-b5c9-af13b2f78b2e) compiler option was specified in a response file, which is not allowed.  
   
- This warning cannot be suppressed by the [/nowarn](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) option.
+ This warning cannot be suppressed by the [/nowarn](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4) option.

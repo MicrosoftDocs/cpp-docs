@@ -30,4 +30,4 @@ A parameter specifier is applied more than once to the parameter.
 -   Remove the duplicate specifiers.  
   
 ## See Also  
- [Parameter List](../Topic/Parameter%20List%20\(Visual%20Basic\).md)
+ [Parameter List](http://msdn.microsoft.com/library/5d737319-0c34-4df9-a23d-188fc840becd)

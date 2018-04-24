@@ -30,4 +30,4 @@ You have attempted to declare a `Function New`. Constructors must be declared as
 -   Use `Sub` instead of `Function`.  
   
 ## See Also  
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)

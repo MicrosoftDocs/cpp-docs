@@ -26,13 +26,13 @@ manager: "wpickett"
   
  An attempt to override one of the accessor methods for a property failed because the accessor cannot be overridden. This error can occur if:  
   
--   the base class property is not declared as [virtual](../Topic/virtual%20\(C%23%20Reference\).md).  
+-   the base class property is not declared as [virtual](http://msdn.microsoft.com/library/5da9abae-bc1e-434f-8bea-3601b8dcb3b2).  
   
--   the base class property does not declare the [get](../Topic/get%20\(C%23%20Reference\).md) or [set](../Topic/set%20\(C%23%20Reference\).md) accessor you are trying to override.  
+-   the base class property does not declare the [get](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71) or [set](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) accessor you are trying to override.  
   
- If you do not want to override the base class property, you can use the [new](../Topic/new%20\(C%23%20Reference\).md) keyword before the property in derived class.  
+ If you do not want to override the base class property, you can use the [new](http://msdn.microsoft.com/library/e4136516-f058-45a8-84e5-da00a5cf9b6a) keyword before the property in derived class.  
   
- For more information, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Using Properties](http://msdn.microsoft.com/library/f7f67b05-0983-4cdb-96af-1855d24c967c).  
   
 ## Example  
  The following sample generates CS0546 because the base class does not declare a set accessor for the property.  
@@ -76,4 +76,4 @@ public class b : a
 ```  
   
 ## See Also  
- [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md)
+ [Properties](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)

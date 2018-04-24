@@ -34,4 +34,4 @@ manager: "wpickett"
 2.  Use an `Imports` statement or fully qualify members defined in other namespaces. For example, the `WriteLine` function is declared in the `System.Diagnostics.Debug` namespace.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

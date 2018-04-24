@@ -28,11 +28,11 @@ Turns a compiler option off.
 ## Remarks  
  The `Off` keyword can be used in these contexts:  
   
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)  
+ [Option Explicit Statement](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc)  
   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)  
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)  
   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)  
+ [Option Infer Statement](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)  
   
 ## See Also  
- [Keywords](../Topic/Keywords%20\(Visual%20Basic\).md)
+ [Keywords](http://msdn.microsoft.com/library/b5a65ef0-c408-4836-afb6-e6828c0771ca)

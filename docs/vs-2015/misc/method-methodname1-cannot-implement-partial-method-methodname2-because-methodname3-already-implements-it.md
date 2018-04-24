@@ -54,4 +54,4 @@ End Class
  **Error ID:** BC31434  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)

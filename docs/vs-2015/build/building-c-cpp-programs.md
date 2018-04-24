@@ -32,7 +32,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Building C/C++ Programs](https://docs.microsoft.com/cpp/build/building-c-cpp-programs).  
   
   
-You can build Visual C++ projects either in Visual Studio or on the command line. The Visual Studio IDE uses [MSBuild](../build/msbuild-visual-cpp.md) to build projects and solutions. On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](../build/nmake-reference.md). For an overview about how to use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to build projects and solutions, see [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md).  
+You can build Visual C++ projects either in Visual Studio or on the command line. The Visual Studio IDE uses [MSBuild](../build/msbuild-visual-cpp.md) to build projects and solutions. On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](../build/nmake-reference.md). For an overview about how to use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to build projects and solutions, see [Compiling and Building](http://msdn.microsoft.com/library/c7958821-285f-4e28-9e7a-b5d8b40336a1).  
   
 ## In This Section  
  [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)  
@@ -60,6 +60,6 @@ You can build Visual C++ projects either in Visual Studio or on the command line
  [NIB: Samples Included in Visual C++](http://msdn.microsoft.com/en-us/c9ec56b3-2bbd-49b4-8a4c-9ed4b78b7a84)  
  Provides links to sample code that shows the capabilities of Visual C++ and the libraries and technologies it supports.  
   
- [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md)  
+ [Compiling and Building](http://msdn.microsoft.com/library/c7958821-285f-4e28-9e7a-b5d8b40336a1)  
  Describes the Visual Studio build system and tools.
 

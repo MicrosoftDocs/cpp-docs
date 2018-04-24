@@ -24,6 +24,6 @@ manager: "wpickett"
 # Compiler Error CS1617
 Invalid option 'option' for /langversion; must be ISO-1, ISO-2 or Default  
   
- This error occurs if you used the [/langversion](../Topic/-langversion%20\(C%23%20Compiler%20Options\).md) command line switch or project setting but didn't specify a valid language option. To resolve this error, check the command line syntax or project setting and change it to one of the listed options.  
+ This error occurs if you used the [/langversion](http://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94) command line switch or project setting but didn't specify a valid language option. To resolve this error, check the command line syntax or project setting and change it to one of the listed options.  
   
  For example, compiling with `csc /langversion:ISO` will generate error CS1617.

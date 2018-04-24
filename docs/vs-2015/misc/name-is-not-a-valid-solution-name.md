@@ -30,4 +30,4 @@ This error generally occurs when the command `File.NewProject` has been entered 
      Check that the solution name does not contain leading or trailing spaces and is not a reserved word. Reserved words include NUL, CON, AUX, COM*x*, or LPT*x*, where *x* is a digit 1-9.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a)

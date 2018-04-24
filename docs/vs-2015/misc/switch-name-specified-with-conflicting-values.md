@@ -26,4 +26,4 @@ This error occurs when you enter a switch twice in the Command window, and the v
 -   Re-enter the command, but use each switch only once.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a)

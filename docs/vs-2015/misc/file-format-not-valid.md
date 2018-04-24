@@ -27,4 +27,4 @@ Either you tried to load a file into a component, but the format of the data in 
 2.  Consult the documentation for the component to determine whether it provides support for converting from one format to another.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

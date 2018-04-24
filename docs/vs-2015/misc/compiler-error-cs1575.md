@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1575
 A stackalloc expression requires [] after type  
   
- The size of the requested allocation, with [stackalloc](../Topic/stackalloc%20\(C%23%20Reference\).md), must be specified in square brackets.  
+ The size of the requested allocation, with [stackalloc](http://msdn.microsoft.com/library/adc04c28-3ed2-4326-807a-7545df92b852), must be specified in square brackets.  
   
  The following sample generates CS1575:  
   

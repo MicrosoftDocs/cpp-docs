@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0271
 The property or indexer 'property/indexer' cannot be used in this context because the get accessor is inaccessible  
   
- This error occurs when you try to access an inaccessible `get` accessor. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Accessor Accessibility](../Topic/Restricting%20Accessor%20Accessibility%20\(C%23%20Programming%20Guide\).md) and [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md).  
+ This error occurs when you try to access an inaccessible `get` accessor. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Accessor Accessibility](http://msdn.microsoft.com/library/6e655798-e112-4301-a680-6310a6e012e1) and [Properties](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8).  
   
  The following example generates CS0271:  
   

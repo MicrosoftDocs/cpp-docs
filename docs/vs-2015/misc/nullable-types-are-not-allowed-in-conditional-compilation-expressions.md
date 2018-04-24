@@ -39,6 +39,6 @@ A nullable type cannot be used in the expression of a conditional compilation di
 -   Remove the nullable type designation.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)   
- [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)   
- [Conditional Compilation](../Topic/Conditional%20Compilation%20in%20Visual%20Basic.md)
+ [Nullable Value Types](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)   
+ [#If...Then...#Else Directives](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502)   
+ [Conditional Compilation](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)

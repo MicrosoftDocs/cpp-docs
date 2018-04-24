@@ -55,6 +55,6 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)   
- [Optional Parameters](../Topic/Optional%20Parameters%20\(Visual%20Basic\).md)
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
+ [Parameter Arrays](http://msdn.microsoft.com/library/c43edfae-9114-4096-9ebc-8c5c957a1067)   
+ [Optional Parameters](http://msdn.microsoft.com/library/398d2845-1069-4e94-b934-a73b545c8b87)

@@ -30,5 +30,5 @@ A parameter in a `Property` statement is named `Value`. This name is reserved wi
 -   Change the name of the parameter in the `Property` statement.  
   
 ## See Also  
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

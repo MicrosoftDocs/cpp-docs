@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0100
 The parameter name 'parameter name' is a duplicate  
   
- A method declaration used the same parameter name more than once. Parameter names must be unique in a method declaration. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ A method declaration used the same parameter name more than once. Parameter names must be unique in a method declaration. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0100:  
   

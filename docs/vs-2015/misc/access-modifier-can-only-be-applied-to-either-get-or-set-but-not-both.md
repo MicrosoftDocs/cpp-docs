@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Access modifier can only be applied to either &#39;Get&#39; or Set&#39;, but not both
-A property declaration specifies access levels in the [Property Statement](../Topic/Property%20Statement.md), the [Get Statement](../Topic/Get%20Statement.md), and the [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md).  
+A property declaration specifies access levels in the [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38), the [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94), and the [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd).  
   
  You can always specify an access level for the property. In addition, you can specify a different access level for at most one of its property procedures (`Get` or `Set`), provided it is more restrictive than the property's access level. You cannot specify access levels for both of the property procedures.  
   
@@ -32,5 +32,5 @@ A property declaration specifies access levels in the [Property Statement](../To
 -   Remove the access modifier from either the `Get` statement or the `Set` statement.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)   
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)

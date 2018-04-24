@@ -30,6 +30,6 @@ manager: "wpickett"
 -   Remove `Exit` statements from the debugging code.  
   
 ## See Also  
- [Exit Statement](../Topic/Exit%20Statement%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Exit Statement](http://msdn.microsoft.com/library/760bfb32-5c3f-4bdb-a432-9a6001c92db7)   
+ [End Statement](http://msdn.microsoft.com/library/0e64467c-0f34-4aab-9ddd-43f8b9d55d90)   
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

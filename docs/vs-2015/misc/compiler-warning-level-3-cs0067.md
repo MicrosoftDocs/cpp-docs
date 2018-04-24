@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 3) CS0067
 The event 'event' is never used  
   
- An [event](../Topic/event%20\(C%23%20Reference\).md) was declared but never used in the class in which it was declared.  
+ An [event](http://msdn.microsoft.com/library/7858fd85-153b-4259-85d0-6aa13c35f174) was declared but never used in the class in which it was declared.  
   
  The following sample generates CS0067:  
   

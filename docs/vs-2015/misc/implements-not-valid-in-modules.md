@@ -30,5 +30,5 @@ An `Implements` statement or clause occurs inside a module. Modules cannot imple
 -   Remove the `Implements` statement or clause, or retype the module as a class.  
   
 ## See Also  
- [Implements Statement](../Topic/Implements%20Statement.md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)   
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

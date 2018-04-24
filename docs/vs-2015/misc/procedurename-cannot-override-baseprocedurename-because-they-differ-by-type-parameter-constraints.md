@@ -27,7 +27,7 @@ A generic procedure attempts to override a generic base class procedure, but the
   
  To override a generic base class procedure, the overriding procedure must additionally match the number of type parameters and the constraint list of each one.  
   
- For more information on overriding requirements, see [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md).  
+ For more information on overriding requirements, see [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90).  
   
  **Error ID:** BC32077  
   
@@ -38,4 +38,4 @@ A generic procedure attempts to override a generic base class procedure, but the
 -   If the type parameter constraints must remain as you have them, you cannot override the base class procedure. Remove the `Overrides` keyword from the declaration.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

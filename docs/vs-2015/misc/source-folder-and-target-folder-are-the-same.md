@@ -25,6 +25,6 @@ An attempt has been made to copy or move a file, but the specified source direct
 ## See Also  
  [My.Computer.FileSystem.MoveFile Method](http://msdn.microsoft.com/en-us/f13ecad9-b95f-4923-9f05-c061a1617756)   
  [My.Computer.FileSystem.CopyFile Method](http://msdn.microsoft.com/en-us/a3728536-7ad8-4279-8a07-dd4776d3b33c)   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [How to: Move a File](../Topic/How%20to:%20Move%20a%20File%20in%20Visual%20Basic.md)   
- [How to: Copy Files with a Specific Pattern to a Directory](../Topic/How%20to:%20Copy%20Files%20with%20a%20Specific%20Pattern%20to%20a%20Directory%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [How to: Move a File](http://msdn.microsoft.com/library/53a7457b-5815-41ad-b37d-28537c1fb77a)   
+ [How to: Copy Files with a Specific Pattern to a Directory](http://msdn.microsoft.com/library/f205d2ad-bbe5-4d55-8a40-acda21aa82dd)

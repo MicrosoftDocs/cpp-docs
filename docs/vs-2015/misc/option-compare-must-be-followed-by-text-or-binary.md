@@ -32,4 +32,4 @@ An `Option Compare` statement contains an incorrect setting or no setting. The o
 2.  Add either `Text` or `Binary` to the `Option Compare` statement; for example, `Option Compare Text`.  
   
 ## See Also  
- [Option Compare Statement](../Topic/Option%20Compare%20Statement.md)
+ [Option Compare Statement](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e)

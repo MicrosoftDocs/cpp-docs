@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0111
 Type 'class' already defines a member called 'member' with the same parameter types  
   
- CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
 ## Example  
  The following sample generates CS0111.  

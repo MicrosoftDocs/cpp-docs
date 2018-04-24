@@ -33,4 +33,4 @@ A class using a `COMClassAttribute` attribute block is declared inside a class t
  [NOT IN BUILD: Attributes Used in Visual Basic](http://msdn.microsoft.com/en-us/22231318-8a40-49af-9245-e0aab723563b)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
  [ComClassAttribute Class](http://msdn.microsoft.com/en-us/5c2f0835-9210-47dc-bc59-5c1769953574)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

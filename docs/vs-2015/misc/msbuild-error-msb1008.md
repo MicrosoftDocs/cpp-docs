@@ -29,6 +29,6 @@ manager: "douge"
 1.  Specify only one project to build. If you want to build two projects, build one project then build the other project. For example, instead of typing `msbuild myapp1.proj myapp2.proj`, build the first project by typing `msbuild myapp1.proj`, and then, when that build is complete, build the second project by typing `msbuild myapp2.proj`.  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)   
- [MSBuild Task](../Topic/MSBuild%20Task.md)
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)   
+ [MSBuild Task](http://msdn.microsoft.com/library/76577f6c-7669-44ad-a840-363e37a04d34)
  [MSBuild](MSBuild1.md)

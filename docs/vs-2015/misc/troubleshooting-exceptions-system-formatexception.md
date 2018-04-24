@@ -47,29 +47,29 @@ A <xref:System.FormatException> exception is thrown by a method that parses or f
 ## Avoiding FormatExceptions  
  The <xref:System.FormatException> class reference article includes the common causes and solutions of <xref:System.FormatException> errors.  
   
- The MSDN Library sections [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) and [Parsing Strings](../Topic/Parsing%20Strings%20in%20the%20.NET%20Framework.md) contain information about correctly formatting and parsing types.  
+ The MSDN Library sections [Formatting Types](http://msdn.microsoft.com/library/0d1364da-5b30-4d42-8e6b-03378343343f) and [Parsing Strings](http://msdn.microsoft.com/library/5e758b41-db93-456b-8999-99b7304b090d) contain information about correctly formatting and parsing types.  
   
  **Composite formatting**  
   
- [Composite Formatting](../Topic/Composite%20Formatting.md)  
+ [Composite Formatting](http://msdn.microsoft.com/library/87b7d528-73f6-43c6-b71a-f23043039a49)  
   
  **Numeric types**  
   
 |||  
 |-|-|  
-|[Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md)|[Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md)|  
-|[Parsing Numeric Strings](../Topic/Parsing%20Numeric%20Strings%20in%20the%20.NET%20Framework.md)||  
+|[Standard Numeric Format Strings](http://msdn.microsoft.com/library/580e57eb-ac47-4ffd-bccd-3a1637c2f467)|[Custom Numeric Format Strings](http://msdn.microsoft.com/library/6f74fd32-6c6b-48ed-8241-3c2b86dea5f4)|  
+|[Parsing Numeric Strings](http://msdn.microsoft.com/library/e39324ee-72e5-42d4-a80d-bf3ee7fc6c59)||  
   
  **Date and Time and Timespan types**  
   
 |||  
 |-|-|  
-|[Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md)|[Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md)|  
-|[Standard TimeSpan Format Strings](../Topic/Standard%20TimeSpan%20Format%20Strings.md)|[Custom TimeSpan Format Strings](../Topic/Custom%20TimeSpan%20Format%20Strings.md)|  
-|[Parsing Date and Time Strings](../Topic/Parsing%20Date%20and%20Time%20Strings%20in%20the%20.NET%20Framework.md)||  
+|[Standard Date and Time Format Strings](http://msdn.microsoft.com/library/bb79761a-ca08-44ee-b142-b06b3e2fc22b)|[Custom Date and Time Format Strings](http://msdn.microsoft.com/library/98b374e3-0cc2-4c78-ab44-efb671d71984)|  
+|[Standard TimeSpan Format Strings](http://msdn.microsoft.com/library/9f6c95eb-63ae-4dcc-9c32-f81985c75794)|[Custom TimeSpan Format Strings](http://msdn.microsoft.com/library/a63ebf55-7269-416b-b4f5-286f6c03bf0e)|  
+|[Parsing Date and Time Strings](http://msdn.microsoft.com/library/43bae51e-9b1d-41a6-a187-772c0d096d90)||  
   
  **Other types**  
   
 |||  
 |-|-|  
-|[Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md)|[Parsing Other Strings](../Topic/Parsing%20Other%20Strings%20in%20the%20.NET%20Framework.md)|
+|[Enumeration Format Strings](http://msdn.microsoft.com/library/dd1ff672-1052-42cf-8666-4924fb6cd1a1)|[Parsing Other Strings](http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28)|

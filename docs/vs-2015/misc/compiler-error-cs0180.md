@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0180
 'member' cannot be both extern and abstract  
   
- The [abstract](../Topic/abstract%20\(C%23%20Reference\).md) and [extern](../Topic/extern%20\(C%23%20Reference\).md) keywords are mutually exclusive. The `extern` keyword means that the member is defined outside the file, and **abstract** means that the implementation is provided in a derived class. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ The [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) and [extern](http://msdn.microsoft.com/library/9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7) keywords are mutually exclusive. The `extern` keyword means that the member is defined outside the file, and **abstract** means that the implementation is provided in a derived class. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0180:  
   

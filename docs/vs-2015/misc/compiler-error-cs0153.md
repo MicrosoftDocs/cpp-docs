@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0153
 A goto case is only valid inside a switch statement  
   
- An attempt was made to use [switch](../Topic/switch%20\(C%23%20Reference\).md) syntax outside of a **switch** statement. For more information, see [switch](../Topic/switch%20\(C%23%20Reference\).md).  
+ An attempt was made to use [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb) syntax outside of a **switch** statement. For more information, see [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).  
   
  The following sample generates CS0153:  
   

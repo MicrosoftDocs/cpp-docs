@@ -31,7 +31,7 @@ A method contains both an `On Error Goto` statement and either a lambda expressi
   
 ## See Also  
  [Introduction to Exception Handling (Visual Basic)](http://msdn.microsoft.com/en-us/9792f16a-0cd2-40bd-ace2-f7a4344c0e52)   
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)   
+ [On Error Statement](http://msdn.microsoft.com/library/ff947930-fb84-40cf-bd66-1ea219561d5c)

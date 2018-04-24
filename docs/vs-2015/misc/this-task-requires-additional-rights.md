@@ -22,7 +22,7 @@ This error is displayed if a Visual Studio command is invoked by a user whose ac
   
  Some Visual Studio commands must be run with an account that has user access rights sufficient to enable the command to read or write all of the necessary files and registry keys. To gain these rights, you must close and then re-open Visual Studio with an account that has elevated access, such as an Administrator.  
   
- For more information about permissions when running Visual Studio, see [User Permissions](../Topic/User%20Permissions%20and%20Visual%20Studio.md).  
+ For more information about permissions when running Visual Studio, see [User Permissions](http://msdn.microsoft.com/library/70485ed7-6342-41bf-8250-7a6826e21b98).  
   
 ### To correct this error  
   

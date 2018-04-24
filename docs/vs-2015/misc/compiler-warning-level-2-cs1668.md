@@ -24,8 +24,8 @@ manager: "wpickett"
 # Compiler Warning (level 2) CS1668
 Invalid search path 'path' specified in 'path string' --  'system error message'  
   
- The path supplied to [/lib](../Topic/-lib%20\(C%23%20Compiler%20Options\).md) at the command line was not valid, or a path in the LIB environment variable is invalid. Check the path used to verify that it exists and can be accessed. The error message in single quotation marks is the error returned from the operating system.  
+ The path supplied to [/lib](http://msdn.microsoft.com/library/b0efcc88-e8aa-4df4-a00b-8bdef70b7673) at the command line was not valid, or a path in the LIB environment variable is invalid. Check the path used to verify that it exists and can be accessed. The error message in single quotation marks is the error returned from the operating system.  
   
 ## See Also  
- [C# Compiler Options Listed Alphabetically](../Topic/C%23%20Compiler%20Options%20Listed%20Alphabetically.md)   
- [C# Compiler Errors](../Topic/C%23%20Compiler%20Errors.md)
+ [C# Compiler Options Listed Alphabetically](http://msdn.microsoft.com/library/43535ea0-ca47-4a15-b528-615087a86092)   
+ [C# Compiler Errors](http://msdn.microsoft.com/library/57262ab1-6c50-4f9c-81ad-9fba48477416)

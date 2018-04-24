@@ -38,7 +38,7 @@ This example shows how to use the [concurrency::choice](../../parallel/concrt/re
   
  For the first two cases, the example uses a [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) object to hold the identifier and another `single_assignment` object to hold the salary. The example uses a `join` object for the third case. The `join` object is composed of two additional `single_assignment` objects, one for the case where no employee who has the provided identifier exists, and one for the case where no employee who has the provided salary exists. The `join` object sends a message when each of its members receives a message. In this example, the `join` object sends a message when no employee who has the provided identifier or salary exists.  
   
- The example uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to run both search algorithms in parallel. Each search task writes to one of the `single_assignment` objects to indicate whether the given employee exists. The example uses the [concurrency::receive](../Topic/receive%20Function.md) function to obtain the index of the first buffer that contains a message and a `switch` block to print the result.  
+ The example uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to run both search algorithms in parallel. Each search task writes to one of the `single_assignment` objects to indicate whether the given employee exists. The example uses the [concurrency::receive](http://msdn.microsoft.com/library/f36bbca1-97ac-4343-bfac-ea71ca2139e9) function to obtain the index of the first buffer that contains a message and a `switch` block to print the result.  
   
  [!code-cpp[concrt-find-employee#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-find-employee/cpp/concrt-find-employee.cpp#1)]  
   
@@ -51,7 +51,7 @@ Employee with id 61935 has salary 29905.00.
 No employee has id 899 or salary 31223.00.  
 ```  
   
- This example uses the [concurrency::make_choice](../Topic/make_choice%20Function.md) helper function to create `choice` objects and the [concurrency::make_join](../Topic/make_join%20Function.md) helper function to create `join` objects.  
+ This example uses the [concurrency::make_choice](http://msdn.microsoft.com/library/98c33b3f-e8e5-4302-ba91-b56515c00066) helper function to create `choice` objects and the [concurrency::make_join](http://msdn.microsoft.com/library/8634413d-05fd-42c7-8a35-c7f8a0fff980) helper function to create `join` objects.  
   
 ## Compiling the Code  
  Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `find-employee.cpp` and then run the following command in a Visual Studio Command Prompt window.  

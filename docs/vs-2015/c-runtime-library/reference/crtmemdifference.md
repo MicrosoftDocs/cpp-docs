@@ -80,7 +80,7 @@ int _CrtMemDifference(
   
  By default, internal C run-time blocks (`_CRT_BLOCK`) are not included in memory state operations. The [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md) function can be used to turn on the `_CRTDBG_CHECK_CRT_DF` bit of `_crtDbgFlag` to include these blocks in leak detection and other memory state operations. Freed memory blocks (`_FREE_BLOCK`) do not cause `_CrtMemDifference` to return TRUE.  
   
- For more information about heap state functions and the `_CrtMemState` structure, see [Heap State Reporting Functions](../Topic/CRT%20Debug%20Heap%20Details.md#BKMK_Heap_State_Reporting_Functions). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ For more information about heap state functions and the `_CrtMemState` structure, see [Heap State Reporting Functions](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
 ## Requirements  
   

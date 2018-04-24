@@ -53,5 +53,5 @@ using System;
 ```  
   
 ## See Also  
- [Explicit Interface Implementation](../Topic/Explicit%20Interface%20Implementation%20\(C%23%20Programming%20Guide\).md)   
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Explicit Interface Implementation](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)   
+ [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)

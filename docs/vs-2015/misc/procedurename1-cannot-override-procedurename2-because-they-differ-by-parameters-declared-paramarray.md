@@ -23,7 +23,7 @@ manager: "wpickett"
 # &lt;procedurename1&gt; cannot override &lt;procedurename2&gt; because they differ by parameters declared &#39;ParamArray&#39;
 A procedure in a derived class overrides an identically named procedure in the base class, but the parameter lists are different.  
   
- To override a procedure in an inherited class, the overriding procedure must match its parameter list, access level, and return type (if any). In particular, it must match any [Optional](../Topic/Optional%20\(Visual%20Basic\).md) or [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md) declaration.  
+ To override a procedure in an inherited class, the overriding procedure must match its parameter list, access level, and return type (if any). In particular, it must match any [Optional](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) or [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635) declaration.  
   
  **Error ID:** BC30906  
   
@@ -31,8 +31,8 @@ A procedure in a derived class overrides an identically named procedure in the b
   
 -   If you want to override the procedure, make the parameter list exactly the same as the parameter list in the base class procedure. If the last parameter is declared with `ParamArray` in the base class procedure, declare it with `ParamArray` in the overriding procedure.  
   
--   If you want a different parameter list from the base class version, you cannot override it. Consider overloading it instead. For more information, see [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md).  
+-   If you want a different parameter list from the base class version, you cannot override it. Consider overloading it instead. For more information, see [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a).  
   
 ## See Also  
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

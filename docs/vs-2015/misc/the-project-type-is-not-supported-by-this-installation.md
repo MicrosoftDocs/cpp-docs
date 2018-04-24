@@ -34,5 +34,5 @@ This error occurs when you try to open a type of project that requires a softwar
  If you can't find the type of project that you're trying to open, you don't have the associated SDK installed. You must locate and install the associated SDK to open the project type.  
   
 ## See Also  
- [What's New in Visual Studio 2015](../Topic/What's%20New%20in%20Visual%20Studio%202015.md)   
- [Porting, Migrating, and Upgrading Visual Studio Projects](../Topic/Porting,%20Migrating,%20and%20Upgrading%20Visual%20Studio%20Projects.md)
+ [What's New in Visual Studio 2015](http://msdn.microsoft.com/library/7307e180-ba28-4774-8a43-cbb980085a71)   
+ [Porting, Migrating, and Upgrading Visual Studio Projects](http://msdn.microsoft.com/library/bee759bd-6ff5-4c2e-913a-ea7d3c906c29)

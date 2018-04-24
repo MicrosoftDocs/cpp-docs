@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0662
 'method' cannot specify only Out attribute on a ref parameter. Use both In and Out attributes, or neither.  
   
- An interface method has a parameter that uses [ref](../Topic/ref%20\(C%23%20Reference\).md) with just the [Out](frlrfSystemRuntimeInteropServicesOutAttributeClassTopic) attribute. A `ref` parameter that uses the **Out** attribute must also use the [In](frlrfSystemRuntimeInteropServicesInAttributeClassTopic) attribute.  
+ An interface method has a parameter that uses [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) with just the [Out](frlrfSystemRuntimeInteropServicesOutAttributeClassTopic) attribute. A `ref` parameter that uses the **Out** attribute must also use the [In](frlrfSystemRuntimeInteropServicesInAttributeClassTopic) attribute.  
   
  The following sample generates CS0662:  
   

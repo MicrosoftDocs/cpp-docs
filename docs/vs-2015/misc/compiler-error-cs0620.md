@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0620
 Indexers cannot have void type  
   
- The return type of an [indexer](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md) cannot be `void`. An indexer must return a value.  
+ The return type of an [indexer](http://msdn.microsoft.com/library/022cd27d-d5e0-4cfe-8b97-dc018cc3355d) cannot be `void`. An indexer must return a value.  
   
  The following sample generates CS0620:  
   
@@ -49,4 +49,4 @@ class MyClass
 ```  
   
 ## See Also  
- [void](../Topic/void%20\(C%23%20Reference\).md)
+ [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4)

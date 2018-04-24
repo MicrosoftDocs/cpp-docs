@@ -36,9 +36,9 @@ A value in parentheses follows an expression that is not a procedure, property, 
 -   Remove the parentheses and any value they contain.  
   
 ## See Also  
- [How to: Call a Procedure That Returns a Value](../Topic/How%20to:%20Call%20a%20Procedure%20That%20Returns%20a%20Value%20\(Visual%20Basic\).md)   
- [How to: Call a Procedure that Does Not Return a Value](../Topic/How%20to:%20Call%20a%20Procedure%20that%20Does%20Not%20Return%20a%20Value%20\(Visual%20Basic\).md)   
+ [How to: Call a Procedure That Returns a Value](http://msdn.microsoft.com/library/a445127b-0f5f-465a-98fb-3e514b93d115)   
+ [How to: Call a Procedure that Does Not Return a Value](http://msdn.microsoft.com/library/259b49a3-a3c1-4254-ba8c-73cdc4127703)   
  [NOTINBUILD How to: Put a Value into an Array](http://msdn.microsoft.com/en-us/6dddc79c-cf60-41c2-b572-8bfa49b4fe7e)   
  [NOTINBUILD How to: Get a Value from an Array](http://msdn.microsoft.com/en-us/202a6468-8ccb-4864-bd8b-eab3b42d4288)   
- [How to: Put a Value in a Property](../Topic/How%20to:%20Put%20a%20Value%20in%20a%20Property%20\(Visual%20Basic\).md)   
- [How to: Get a Value from a Property](../Topic/How%20to:%20Get%20a%20Value%20from%20a%20Property%20\(Visual%20Basic\).md)
+ [How to: Put a Value in a Property](http://msdn.microsoft.com/library/c39401e5-b5fc-4439-8f31-ed640f7ce6ed)   
+ [How to: Get a Value from a Property](http://msdn.microsoft.com/library/3954423e-6ab7-4a4c-b55c-a8d27be47891)

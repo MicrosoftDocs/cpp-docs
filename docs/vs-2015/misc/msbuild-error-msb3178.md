@@ -26,7 +26,7 @@ manager: "douge"
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48).  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

@@ -38,7 +38,7 @@ class uninitialized_object : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uninitialized_object::uninitialized_object Constructor](../Topic/uninitialized_object::uninitialized_object%20Constructor.md)|Initializes a new instance of the `uninitialized_object` class.|  
+|[uninitialized_object::uninitialized_object Constructor](http://msdn.microsoft.com/library/bef90a88-1796-4bc0-bf44-1e656f012e34)|Initializes a new instance of the `uninitialized_object` class.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -27,4 +27,4 @@ ms.author: "susanno"
 manager: "douge"
 ---
 # How to: Break on User-Unhandled Exceptions
-This content has been removed. Please see [Managing Exceptions with the Debugger](../Topic/Managing%20Exceptions%20with%20the%20Debugger.md).
+This content has been removed. Please see [Managing Exceptions with the Debugger](http://msdn.microsoft.com/library/43a77fa8-37d0-4c98-a334-0134dbca4ece).

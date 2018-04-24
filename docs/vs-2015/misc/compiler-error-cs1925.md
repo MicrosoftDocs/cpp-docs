@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1925
 Cannot initialize object of type 'type' with a collection initializer.  
   
- Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](../Topic/Object%20and%20Collection%20Initializers%20\(C%23%20Programming%20Guide\).md). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.  
+ Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](http://msdn.microsoft.com/library/c58f3db5-d7d4-4651-bd2d-5a3a97357f61). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.  
   
 ### To correct this error  
   

@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Type constraint cannot be a &#39;NotInheritable&#39; class
-A constraint list includes a class that is marked as [NotInheritable](../Topic/NotInheritable%20\(Visual%20Basic\).md).  
+A constraint list includes a class that is marked as [NotInheritable](http://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9).  
   
  A constraint list on a type parameter can accept at most one class. A type argument supplied for that type parameter must inherit from that class. Therefore, the type parameter cannot accept a *sealed*, or `NotInheritable`, class as a constraint.  
   
@@ -34,4 +34,4 @@ A constraint list includes a class that is marked as [NotInheritable](../Topic/N
 -   If the class must remain `NotInheritable`, you cannot use it as a constraint. Remove the class name from the constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

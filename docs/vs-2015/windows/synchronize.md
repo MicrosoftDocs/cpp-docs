@@ -39,7 +39,7 @@ Synchronizes access to the target method.
 ## Remarks  
  The **synchronize** C++ attribute implements support for synchronizing the target method of an object. Synchronization allows multiple objects to use a common resource (such as a method of a class) by controlling the access of the target method.  
   
- The code inserted by this attribute calls the proper `Lock` method (determined by the threading model) at the beginning of the target method. When the method is exited, `Unlock` is automatically called. For more information on these functions, see [CComAutoThreadModule::Lock](../Topic/CComAutoThreadModule::Lock.md)  
+ The code inserted by this attribute calls the proper `Lock` method (determined by the threading model) at the beginning of the target method. When the method is exited, `Unlock` is automatically called. For more information on these functions, see [CComAutoThreadModule::Lock](http://msdn.microsoft.com/library/7dd467c6-314f-43de-95f4-f2f99aeea4bf)  
   
  This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
   

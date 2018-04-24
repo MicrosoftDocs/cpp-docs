@@ -21,4 +21,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Walkthrough: Creating Text Templates for Domain-Specific Languages
-This topic has been consolidated with other content. Please go to [Generating Code from a Domain-Specific Language](../Topic/Generating%20Code%20from%20a%20Domain-Specific%20Language.md).
+This topic has been consolidated with other content. Please go to [Generating Code from a Domain-Specific Language](http://msdn.microsoft.com/library/e3706cc9-2afd-456a-a879-68425a248ebc).

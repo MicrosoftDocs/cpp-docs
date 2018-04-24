@@ -26,4 +26,4 @@ You are attempting to use `VbStrConv`, but your system does not support the spec
   
 ## See Also  
  <xref:System.Globalization>   
- [Introduction to International Applications Based on the .NET Framework](../Topic/Introduction%20to%20International%20Applications%20Based%20on%20the%20.NET%20Framework.md)
+ [Introduction to International Applications Based on the .NET Framework](http://msdn.microsoft.com/library/b0788993-e62d-4f68-8235-5f87b1d48525)

@@ -25,7 +25,7 @@ A local variable in a procedure is declared but never used.
   
  One possibility is that there is a spelling mistake among the local variables in the procedure. If this variable is in fact used in another statement but spelled differently, it will appear to the compiler as two different variables.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42024  
   
@@ -36,5 +36,5 @@ A local variable in a procedure is declared but never used.
 2.  If there is no spelling mistake, either remove the declaration of this variable or use it in another statement in the procedure.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)

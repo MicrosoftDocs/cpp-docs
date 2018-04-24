@@ -141,4 +141,4 @@ m_bstrStartBrowse);
 ```  
   
 ## See Also  
- [How to: Add or Remove References By Using the Reference Manager](../Topic/How%20to:%20Add%20or%20Remove%20References%20By%20Using%20the%20Reference%20Manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](http://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb)

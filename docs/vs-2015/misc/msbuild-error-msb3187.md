@@ -29,5 +29,5 @@ manager: "douge"
 -   Make sure that the application's target platform (processor architecture) matches all referenced assemblies and the entry point assembly architecture.  
   
 ## See Also  
- [Advanced Compiler Settings Dialog Box (Visual Basic)](../Topic/Advanced%20Compiler%20Settings%20Dialog%20Box%20\(Visual%20Basic\).md)   
- [Build Page, Project Designer (C#)](../Topic/Build%20Page,%20Project%20Designer%20\(C%23\).md)
+ [Advanced Compiler Settings Dialog Box (Visual Basic)](http://msdn.microsoft.com/library/1f81133a-293f-4dba-bc1c-8baafb01d857)   
+ [Build Page, Project Designer (C#)](http://msdn.microsoft.com/library/77ff1bfc-d633-4634-ba29-9afdb6d7e362)

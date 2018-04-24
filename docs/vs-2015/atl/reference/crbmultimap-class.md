@@ -197,7 +197,7 @@ CPair* GetNextWithKey(
  Specifies the key that identifies the element to be found.  
   
 ### Return Value  
- Returns the next [CRBTree::CPair Class](../Topic/CRBTree::CPair%20Class.md) element associated with the given key.  
+ Returns the next [CRBTree::CPair Class](http://msdn.microsoft.com/library/35e224ed-407e-4864-90ee-2dac2432ad41) element associated with the given key.  
   
 ### Remarks  
  The position value is updated to point to the next value associated with the key. If no more values exist, the position value is set to NULL.  

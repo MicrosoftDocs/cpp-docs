@@ -28,4 +28,4 @@ The `NPer` function, which returns a `Double` specifying the number of periods f
   
 ## See Also  
  [NOT IN BUILD: NPer Function](http://msdn.microsoft.com/en-us/56567d16-29f7-4928-b05f-b4cd56d4fd42)   
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)
+ [Passing Arguments by Value and by Reference](http://msdn.microsoft.com/library/fd8a9de6-7178-44d5-a9bf-458d4ad907c2)

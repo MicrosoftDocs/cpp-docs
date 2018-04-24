@@ -30,5 +30,5 @@ A local constant has been declared that is not used anywhere in your code.
 1.  This error is a warning and can be ignored. To remove the warning, remove the unused constant declaration from your code.  
   
 ## See Also  
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)   
- [Constants Overview](../Topic/Constants%20Overview%20\(Visual%20Basic\).md)
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)   
+ [Constants Overview](http://msdn.microsoft.com/library/29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9)

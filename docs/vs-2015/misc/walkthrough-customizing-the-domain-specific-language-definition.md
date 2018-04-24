@@ -19,4 +19,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Walkthrough: Customizing the Domain-Specific Language Definition
-This content is obsolete. Please see [Customizing and Extending a Domain-Specific Language](../Topic/Customizing%20and%20Extending%20a%20Domain-Specific%20Language.md).
+This content is obsolete. Please see [Customizing and Extending a Domain-Specific Language](http://msdn.microsoft.com/library/b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca).

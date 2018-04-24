@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 3) CS0105
 The using directive for 'namespace' appeared previously in this namespace  
   
- A [namespace](../Topic/namespace%20\(C%23%20Reference\).md), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
+ A [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
   
  The following sample generates CS0105:  
   

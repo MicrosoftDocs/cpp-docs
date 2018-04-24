@@ -31,4 +31,4 @@ A procedure or property declaration attempts to override an inherited element of
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)

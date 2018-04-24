@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0751
 A partial method must be declared in a partial class or partial struct  
   
- It is not possible to declare a [partial](../Topic/partial%20\(Method\)%20\(C%23%20Reference\).md) method unless it is encapsulated inside a partial class or partial struct.  
+ It is not possible to declare a [partial](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137) method unless it is encapsulated inside a partial class or partial struct.  
   
 ### To correct this error  
   
@@ -48,4 +48,4 @@ public class C
 ```  
   
 ## See Also  
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)

@@ -32,5 +32,5 @@ Optional parameters cannot be of the data type of a structure.
 2.  Use `CType` to cast the parameter to that structure type within the procedure.  
   
 ## See Also  
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)   
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)
+ [Structures and Classes](http://msdn.microsoft.com/library/a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc)   
+ [CType Function](http://msdn.microsoft.com/library/dd4b29e7-6fa1-428c-877e-69955420bb72)

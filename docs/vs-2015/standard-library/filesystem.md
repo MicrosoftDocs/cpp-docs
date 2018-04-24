@@ -127,10 +127,10 @@ using namespace std::experimental::filesystem::v1;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy_option Enumeration](../Topic/copy_option%20Enumeration%20%3Cfilesystem%3E.md)|An enumeration that is used with [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and determines behavior if a destination file already exists.|  
-|[directory_options Enumeration](../Topic/directory_options%20Enumeration.md)|An enumeration that specifies options for directory iterators.|  
-|[file_type Enumeration](../Topic/file_type%20Enumeration.md)|An enumeration for file types.|  
-|[perms Enumeration](../Topic/perms%20Enumeration.md)|A bitmask type used to convey permissions and options to permissions|  
+|[copy_option Enumeration](http://msdn.microsoft.com/library/351bcdc5-a013-440a-a1d2-d34dfbd92540)|An enumeration that is used with [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and determines behavior if a destination file already exists.|  
+|[directory_options Enumeration](http://msdn.microsoft.com/library/cabb8a38-3916-48e3-9d3c-514f29b90f4b)|An enumeration that specifies options for directory iterators.|  
+|[file_type Enumeration](http://msdn.microsoft.com/library/a6a35986-167a-4142-9de4-ccfe5c1576f8)|An enumeration for file types.|  
+|[perms Enumeration](http://msdn.microsoft.com/library/94d4d669-db45-432d-9576-489a138896ec)|A bitmask type used to convey permissions and options to permissions|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

@@ -64,10 +64,10 @@ manager: "douge"
   
 ## See Also  
  [Introduction to Code Signing](https://msdn.microsoft.com/en-us/library/ms537361\(v=vs.85\).aspx)   
- [SignTool.exe (Sign Tool)](../Topic/SignTool.exe%20\(Sign%20Tool\).md)   
- [Signing Page, Project Designer](../Topic/Signing%20Page,%20Project%20Designer.md)   
+ [SignTool.exe (Sign Tool)](http://msdn.microsoft.com/library/0c25ff6c-bff3-422e-b017-146a3ee86cb9)   
+ [Signing Page, Project Designer](http://msdn.microsoft.com/library/dab3ba13-2f92-4827-92bd-1be3c35bc48b)   
  [How to: Sign an Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [How to: Sign an Assembly with a Strong Name](../Topic/How%20to:%20Sign%20an%20Assembly%20with%20a%20Strong%20Name.md)   
- [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md)   
+ [How to: Sign an Assembly with a Strong Name](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Strong-Named Assemblies](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [Strong-Name Signing for Managed Applications](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

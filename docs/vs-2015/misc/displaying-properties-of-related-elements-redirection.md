@@ -18,4 +18,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Displaying Properties of Related Elements - redirection
-This topic has been replaced. Please go to [Customizing the Properties Window](../Topic/Customizing%20the%20Properties%20Window.md).
+This topic has been replaced. Please go to [Customizing the Properties Window](http://msdn.microsoft.com/library/b6658de5-4e85-4628-93b2-5cc12f63d25b).

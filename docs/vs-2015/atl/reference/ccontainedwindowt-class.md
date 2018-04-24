@@ -51,7 +51,7 @@ class CContainedWindowT : public TBase
  A traits class that defines styles for your window. The default is `CControlWinTraits`.  
   
 > [!NOTE]
-> [CContainedWindow](../Topic/CContainedWindow.md) is a specialization of `CContainedWindowT`. If you want to change the base class or traits, use `CContainedWindowT` directly.  
+> [CContainedWindow](http://msdn.microsoft.com/library/c2ee637f-92cf-40ea-b46f-554d0586b2fc) is a specialization of `CContainedWindowT`. If you want to change the base class or traits, use `CContainedWindowT` directly.  
   
 ## Members  
   
@@ -139,7 +139,7 @@ CContainedWindowT(
  [in] A pointer to the containing object that declares the message map. This object's class must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
  `dwMsgMapID`  
- [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](../Topic/ALT_MSG_MAP.md), pass `msgMapID`.  
+ [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), pass `msgMapID`.  
   
 ### Remarks  
  If you want to create a new window through [Create](#ccontainedwindowt__create), you must pass the name of an existing window class for the `lpszClassName` parameter. For an example, see the [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) overview.  
@@ -199,7 +199,7 @@ HWND Create(
  [in] A pointer to the containing object that declares the message map. This object's class must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
  `dwMsgMapID`  
- [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](../Topic/ALT_MSG_MAP.md), pass `msgMapID`.  
+ [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), pass `msgMapID`.  
   
  `hWndParent`  
  [in] The handle to the parent or owner window.  
@@ -281,7 +281,7 @@ DWORD m_dwMsgMapID;
 ### Remarks  
  This message map must be declared in the containing object.  
   
- The default message map, declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md), is always identified by zero. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](../Topic/ALT_MSG_MAP.md), is identified by `msgMapID`.  
+ The default message map, declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554), is always identified by zero. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), is identified by `msgMapID`.  
   
  `m_dwMsgMapID` is first initialized by the constructor and can be changed by calling [SwitchMessageMap](#ccontainedwindowt__switchmessagemap). For an example, see the [CContainedWindowT Overview](../../atl/reference/ccontainedwindowt-class.md).  
   
@@ -363,7 +363,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
   
 ### Parameters  
  `dwMsgMapID`  
- [in] The message map identifier. To use the default message map declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md), pass zero. To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](../Topic/ALT_MSG_MAP.md), pass `msgMapID`.  
+ [in] The message map identifier. To use the default message map declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554), pass zero. To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), pass `msgMapID`.  
   
 ### Remarks  
  The message map must be defined in the containing object.  
@@ -421,8 +421,8 @@ static LRESULT CALLBACK WindowProc(
  [CWindow Class](../../atl/reference/cwindow-class.md)   
  [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)   
  [CMessageMap Class](../../atl/reference/cmessagemap-class.md)   
- [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)   
- [ALT_MSG_MAP](../Topic/ALT_MSG_MAP.md)   
+ [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
+ [ALT_MSG_MAP](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8)   
  [Class Overview](../../atl/atl-class-overview.md)
 
 

@@ -34,5 +34,5 @@ bad format string
   
  This error is identical to CAN0026.  
   
- For more information, see [Format Specifiers in C++](../Topic/Format%20Specifiers%20in%20C++.md).
+ For more information, see [Format Specifiers in C++](http://msdn.microsoft.com/library/0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444).
 

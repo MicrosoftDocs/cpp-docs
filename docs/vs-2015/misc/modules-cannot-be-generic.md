@@ -31,10 +31,10 @@ A `Module` statement uses the `Of` keyword to introduce generic type parameters.
   
 1.  Remove the `Of` keyword from the `Module` statement.  
   
-2.  If you want the functionality of a generic module, the closest approximation is a generic class. Use a [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md) instead of a `Module` statement.  
+2.  If you want the functionality of a generic module, the closest approximation is a generic class. Use a [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c) instead of a `Module` statement.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)   
- [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../Topic/How%20to:%20Define%20a%20Class%20That%20Can%20Provide%20Identical%20Functionality%20on%20Different%20Data%20Types%20\(Visual%20Basic\).md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)   
+ [Of](http://msdn.microsoft.com/library/0db8f65c-65af-4089-ab7f-6fcfecb60444)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](http://msdn.microsoft.com/library/a914adf8-e68f-4819-a6b1-200d1cf1c21c)

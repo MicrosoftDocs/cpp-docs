@@ -31,4 +31,4 @@ You have attempted to use `MyBase` with a method that has been declared `MustOve
   
 ## See Also  
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)   
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)

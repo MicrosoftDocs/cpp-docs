@@ -30,6 +30,6 @@ An argument for a required parameter in an extension method has not been supplie
 -   Supply an argument for the specified parameter.  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
  [NOT IN BUILD: Class Methods](http://msdn.microsoft.com/en-us/326214bb-6367-48e7-bb24-714844791400)   
- [Troubleshooting Procedures](../Topic/Troubleshooting%20Procedures%20\(Visual%20Basic\).md)
+ [Troubleshooting Procedures](http://msdn.microsoft.com/library/525721e8-2e02-4f75-b5d8-6b893462cf2b)

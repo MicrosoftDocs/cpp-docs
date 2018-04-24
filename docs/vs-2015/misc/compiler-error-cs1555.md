@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1555
 Could not find 'class' specified for Main method  
   
- A class was specified to the [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option, but the class name was not found in the source code.
+ A class was specified to the [/main](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) compiler option, but the class name was not found in the source code.

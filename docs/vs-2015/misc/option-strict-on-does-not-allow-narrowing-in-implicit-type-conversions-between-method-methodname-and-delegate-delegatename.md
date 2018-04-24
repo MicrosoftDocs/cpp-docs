@@ -61,7 +61,7 @@ Dim funDel3 As Del = AddressOf Conversion3
 -   Change the data type of the parameter in the delegate or the method so that the required widening relationship exists.  
   
 ## See Also  
- [Relaxed Delegate Conversion](../Topic/Relaxed%20Delegate%20Conversion%20\(Visual%20Basic\).md)   
- [Delegates](../Topic/Delegates%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
+ [Relaxed Delegate Conversion](http://msdn.microsoft.com/library/64f371d0-5416-4f65-b23b-adcbf556e81c)   
+ [Delegates](http://msdn.microsoft.com/library/410b60dc-5e60-4ec0-bfae-426755a2ee28)   
+ [Widening and Narrowing Conversions](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

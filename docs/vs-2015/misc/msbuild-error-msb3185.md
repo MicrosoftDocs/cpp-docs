@@ -33,8 +33,8 @@ manager: "douge"
 ## See Also  
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A>   
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [\<PackageFiles> Element](http://msdn.microsoft.com/library/3ea252d7-18a3-47d8-af83-47feebcfe82b)   
  [MSBuild Error MSB3116](../misc/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3117](../misc/msbuild-error-msb3117.md)   
  [MSBuild Error MSB3118](../misc/msbuild-error-msb3118.md)   

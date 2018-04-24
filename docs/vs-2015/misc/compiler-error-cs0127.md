@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0127
 Since 'function' returns void, a return keyword must not be followed by an object expression  
   
- A method with a [void](../Topic/void%20\(C%23%20Reference\).md) return type cannot return a value. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ A method with a [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) return type cannot return a value. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0127:  
   

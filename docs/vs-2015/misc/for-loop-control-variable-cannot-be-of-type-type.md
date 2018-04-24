@@ -31,5 +31,5 @@ You have attempted to use a loop control variable that is not a valid type. At t
   
 ## See Also  
  [For (Visual Basic)](http://msdn.microsoft.com/en-us/c470a263-9b49-4308-8fd6-8592b84a7980)   
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)   
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)
+ [Do...Loop Statement](http://msdn.microsoft.com/library/892f9096-b3e2-4aee-834d-83bc4e2c379d)   
+ [For...Next Statement](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9)

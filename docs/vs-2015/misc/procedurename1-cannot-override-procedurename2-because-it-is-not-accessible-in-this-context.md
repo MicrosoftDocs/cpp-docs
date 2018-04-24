@@ -36,6 +36,6 @@ A procedure or property overrides a procedure or property with an access level t
 -   Remove the `Overrides` keyword.  
   
 ## See Also  
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

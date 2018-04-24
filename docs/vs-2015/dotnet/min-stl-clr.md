@@ -39,7 +39,7 @@ template<class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `min`. For more information, see [min](../Topic/min.md).  
+ This function behaves the same as the STL function `min`. For more information, see [min](http://msdn.microsoft.com/library/636d6d14-3957-43c0-a197-653afa45e2d7).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

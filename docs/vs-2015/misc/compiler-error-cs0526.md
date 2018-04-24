@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0526
 Interfaces cannot contain constructors  
   
- Constructors cannot be defined for [interfaces](../Topic/interface%20\(C%23%20Reference\).md). A method is considered a constructor if it has the same name as the class and no return type.  
+ Constructors cannot be defined for [interfaces](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba). A method is considered a constructor if it has the same name as the class and no return type.  
   
  The following sample generates CS0526:  
   

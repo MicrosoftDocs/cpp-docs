@@ -30,6 +30,6 @@ manager: "wpickett"
 -   Replace the `Exit Function` with the `Exit Sub` or `Exit Property` statement as appropriate.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)   
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

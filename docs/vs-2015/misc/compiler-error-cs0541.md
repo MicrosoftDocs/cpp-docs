@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0541
 'declaration' : explicit interface declaration can only be declared in a class or struct  
   
- An explicit [interface](../Topic/interface%20\(C%23%20Reference\).md) declaration was found outside a [class](../Topic/class%20\(C%23%20Reference\).md) or [struct](../Topic/struct%20\(C%23%20Reference\).md).  
+ An explicit [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) declaration was found outside a [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) or [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).  
   
  The following sample generates CS0541:  
   

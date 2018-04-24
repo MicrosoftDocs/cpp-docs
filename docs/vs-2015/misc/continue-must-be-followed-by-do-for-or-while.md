@@ -36,4 +36,4 @@ A `Continue` statement must be followed by `Do`, `For`, or `While`, depending on
 4.  Otherwise, remove the `Continue` statement.  
   
 ## See Also  
- [Continue Statement](../Topic/Continue%20Statement%20\(Visual%20Basic\).md)
+ [Continue Statement](http://msdn.microsoft.com/library/3ad00103-358b-4af3-a3a8-1b9ea0e995d3)

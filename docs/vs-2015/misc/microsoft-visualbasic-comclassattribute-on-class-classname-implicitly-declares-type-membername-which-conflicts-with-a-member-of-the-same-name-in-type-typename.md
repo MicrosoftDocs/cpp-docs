@@ -22,7 +22,7 @@ manager: "wpickett"
   
  A class using a `COMClassAttribute` attribute block implicitly defines an interface with the same name as a member of the base class. In this situation, the interface name should shadow the base class member.  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42101  
   

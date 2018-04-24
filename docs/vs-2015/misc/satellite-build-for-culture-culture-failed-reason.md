@@ -33,4 +33,4 @@ A satellite assembly for a particular culture could not be built. This error wil
 -   When \<reason> is reported as "The assembly linker could not be launched. The file exists," empty the Temp folder in which the files are generated (for example, C:\Documents and Settings\\<user\>\Local Settings\Temp).  
   
 ## See Also  
- [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md)
+ [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)

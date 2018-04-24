@@ -32,5 +32,5 @@ A generic procedure defines a normal parameter or a local variable with the same
 -   Change the name of the normal parameter or local variable.  
   
 ## See Also  
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)   
- [Parameter List](../Topic/Parameter%20List%20\(Visual%20Basic\).md)
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)   
+ [Parameter List](http://msdn.microsoft.com/library/5d737319-0c34-4df9-a23d-188fc840becd)

@@ -27,7 +27,7 @@ The latest version of this topic can be found at [Generics and Templates (Visual
   
 Generics and templates are both language features that provide support for parameterized types. However, they are different and have different uses. This topic provides an overview of the many differences.  
   
- For more information, see [Windows Runtime and Managed Templates](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md) and [Templates Overview](../Topic/Templates%20Overview.md).  
+ For more information, see [Windows Runtime and Managed Templates](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md) and [Templates Overview](http://msdn.microsoft.com/library/a8a5779b-ba5c-42ed-bec3-0e4a672128f5).  
   
 ## Comparing Templates and Generics  
  Key differences between generics and C++ templates:  

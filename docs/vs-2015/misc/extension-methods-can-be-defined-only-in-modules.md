@@ -48,6 +48,6 @@ End Namespace
   
 ## See Also  
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
+ [Module \<keyword>](http://msdn.microsoft.com/library/d971b940-05ab-4d56-8485-e3b8a661906b)   
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

@@ -31,4 +31,4 @@ You have attempted to override a property with a second property that differs fr
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)

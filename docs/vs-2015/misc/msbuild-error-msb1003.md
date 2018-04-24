@@ -33,6 +33,6 @@ manager: "douge"
 -   If the project or solution file has a file extension that does not end in "proj", change the file extension so that it does end in "proj".  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)  
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)  
  [MSBuild](MSBuild1.md)   
- [Project File Schema Reference](../Topic/MSBuild%20Project%20File%20Schema%20Reference.md)
+ [Project File Schema Reference](http://msdn.microsoft.com/library/d9a68146-1f43-4621-ac78-2c8c3f400936)

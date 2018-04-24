@@ -26,5 +26,5 @@ This error generally occurs when the Browse box in the Look In dialog box is emp
 1.  Type a path or directory and press ENTER.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)

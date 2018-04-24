@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0057
 Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'  
   
- A public construct must return a publicly accessible object. For more information, see [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+ A public construct must return a publicly accessible object. For more information, see [Access Modifiers](http://msdn.microsoft.com/library/6e81ee82-224f-4a12-9baf-a0dca2656c5b).  
   
  The following sample generates CS0057:  
   

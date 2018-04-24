@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS2007
 Unrecognized command-line option: 'option'  
   
- The compiler was passed a string that was not a [compiler option](../Topic/C%23%20Compiler%20Options.md), even though it began with a forward slash (/).  
+ The compiler was passed a string that was not a [compiler option](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44), even though it began with a forward slash (/).  
   
  The following sample generates CS2007:  
   

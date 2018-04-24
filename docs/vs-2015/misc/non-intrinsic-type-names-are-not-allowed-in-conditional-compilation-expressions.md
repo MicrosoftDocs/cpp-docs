@@ -23,7 +23,7 @@ manager: "wpickett"
 # Non-intrinsic type names are not allowed in conditional compilation expressions
 The conditional compilation expression refers to a non-intrinsic type, but only intrinsic types are allowed.  
   
- For more information about the intrinsic type in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], see [Data Types Summary](../Topic/Data%20Types%20Summary%20\(Visual%20Basic\).md).  
+ For more information about the intrinsic type in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], see [Data Types Summary](http://msdn.microsoft.com/library/4ea2ef2a-3d4d-42d9-9f8f-173a37c96e53).  
   
  **Error ID:** BC31426  
   
@@ -33,4 +33,4 @@ The conditional compilation expression refers to a non-intrinsic type, but only 
   
 ## See Also  
  [NOTINBUILD Conditional Compilation (Visual Basic)](http://msdn.microsoft.com/en-us/ad1e35e0-935e-4a35-a2ae-738bcf2a9240)   
- [Data Types Summary](../Topic/Data%20Types%20Summary%20\(Visual%20Basic\).md)
+ [Data Types Summary](http://msdn.microsoft.com/library/4ea2ef2a-3d4d-42d9-9f8f-173a37c96e53)

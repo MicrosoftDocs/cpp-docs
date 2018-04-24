@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0066
 'event': event must be of a delegate type  
   
- The event keyword requires a [delegate](../Topic/delegate%20\(C%23%20Reference\).md) type. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md) and [Delegates](../Topic/Delegates%20\(C%23%20Programming%20Guide\).md).  
+ The event keyword requires a [delegate](http://msdn.microsoft.com/library/0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f) type. For more information, see [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3) and [Delegates](http://msdn.microsoft.com/library/97de039b-c76b-4b9c-a27d-8c1e1c8d93da).  
   
  The following sample generates CS0066:  
   

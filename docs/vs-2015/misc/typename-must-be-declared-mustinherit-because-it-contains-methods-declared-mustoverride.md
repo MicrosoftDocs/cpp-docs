@@ -30,5 +30,5 @@ Types that contain `MustOverride` members must be declared `MustInherit`.
 -   Add the `MustInherit` modifier to the type.  
   
 ## See Also  
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)
+ [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)   
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)

@@ -23,27 +23,27 @@ manager: "wpickett"
 # Inappropriate use of &lt;keyword&gt; keyword in a module
 Modules do not have instances, support inheritance, or implement interfaces. Therefore, the following keywords do not apply to a module declaration:  
   
--   [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)  
+-   [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)  
   
--   [NotInheritable](../Topic/NotInheritable%20\(Visual%20Basic\).md)  
+-   [NotInheritable](http://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)  
   
--   [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)  
+-   [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)  
   
--   [Private](../Topic/Private%20\(Visual%20Basic\).md)  
+-   [Private](http://msdn.microsoft.com/library/aba74a2e-5824-4613-bf63-b9ec7787f4e6)  
   
--   [Protected](../Topic/Protected%20\(Visual%20Basic\).md)  
+-   [Protected](http://msdn.microsoft.com/library/74ad3d56-309f-49d2-b60c-1d0157d010e8)  
   
--   [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)  
+-   [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)  
   
--   [Shared](../Topic/Shared%20\(Visual%20Basic\).md)  
+-   [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd)  
   
--   [Static](../Topic/Static%20\(Visual%20Basic\).md)  
+-   [Static](http://msdn.microsoft.com/library/19013910-4658-47b6-a22e-1744b527979e)  
   
- The only keywords supported in a [Module Statement](../Topic/Module%20Statement.md) are [Public](../Topic/Public%20\(Visual%20Basic\).md) and [Friend](../Topic/Friend%20\(Visual%20Basic\).md).  
+ The only keywords supported in a [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362) are [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5) and [Friend](http://msdn.microsoft.com/library/b664605e-1c79-4728-b996-aa59c50846bc).  
   
- In addition, you cannot use the [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md) statement or the [Inherits Statement](../Topic/Inherits%20Statement.md) in the statement block of the module.  
+ In addition, you cannot use the [Implements](http://msdn.microsoft.com/library/5252cdf9-964d-4fc6-af0f-0449b7126b5a) statement or the [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2) in the statement block of the module.  
   
- By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42028  
   
@@ -54,4 +54,4 @@ Modules do not have instances, support inheritance, or implement interfaces. The
 -   If you intend to create instances of this programming element, declare it as a class. You can then use the keywords that apply to a class declaration.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0218
 The type ('type') must contain declarations of operator true and operator false  
   
- If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have operator true and operator false defined. For more information on short-circuit operators, see [&& Operator](../Topic/&&%20Operator%20\(C%23%20Reference\).md) and [&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md).  
+ If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have operator true and operator false defined. For more information on short-circuit operators, see [&& Operator](http://msdn.microsoft.com/library/2e4f0a1c-92a3-40f8-8e3b-17b607f20c31) and [&#124;&#124; Operator](http://msdn.microsoft.com/library/7d442d8e-400d-421f-b4d2-034bf82bcbdc).  
   
  The following sample generates CS0218:  
   
@@ -65,4 +65,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Conversion Operators](../Topic/Conversion%20Operators%20\(C%23%20Programming%20Guide\).md)
+ [Conversion Operators](http://msdn.microsoft.com/library/c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc)

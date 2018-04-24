@@ -40,7 +40,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `upper_bound`. For more information, see [upper_bound](../Topic/upper_bound.md).  
+ This function behaves the same as the STL function `upper_bound`. For more information, see [upper_bound](http://msdn.microsoft.com/library/dc465786-0704-42b4-af2a-3fabc917c928).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

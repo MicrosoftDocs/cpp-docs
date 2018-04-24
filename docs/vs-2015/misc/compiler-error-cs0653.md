@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0653
 Cannot apply attribute class 'class' because it is abstract  
   
- An [abstract](../Topic/abstract%20\(C%23%20Reference\).md) custom attribute class cannot be used as an attribute.  
+ An [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) custom attribute class cannot be used as an attribute.  
   
  The following sample generates CS0653:  
   

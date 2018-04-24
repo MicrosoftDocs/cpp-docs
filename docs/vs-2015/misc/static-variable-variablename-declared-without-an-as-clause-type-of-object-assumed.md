@@ -29,7 +29,7 @@ Sub Main()
 End Sub  
 ```  
   
- By default, this message is a warning. For information about how to hide warnings or how to treat warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information about how to hide warnings or how to treat warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42111  
   
@@ -47,8 +47,8 @@ End Sub
     ```  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
  [NOTINBUILD How to: Lengthen a Variable's Lifetime](http://msdn.microsoft.com/en-us/04e7c56c-1db0-4fe5-a678-859a39ec654b)   
- [Local Type Inference](../Topic/Local%20Type%20Inference%20\(Visual%20Basic\).md)   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)   
- [Static](../Topic/Static%20\(Visual%20Basic\).md)
+ [Local Type Inference](http://msdn.microsoft.com/library/b8307f18-2e56-4ab3-a45a-826873f400f6)   
+ [Option Infer Statement](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)   
+ [Static](http://msdn.microsoft.com/library/19013910-4658-47b6-a22e-1744b527979e)

@@ -60,8 +60,8 @@ The compiler cannot infer the data type of a variable if the variable is used in
 -   Use an `As` clause to specify the type of the variable you are declaring.  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)   
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)   
- [Local Type Inference](../Topic/Local%20Type%20Inference%20\(Visual%20Basic\).md)   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [For Each...Next Statement](http://msdn.microsoft.com/library/ebce3120-95c3-42b1-b70b-fa7da40c75e2)   
+ [For...Next Statement](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9)   
+ [Local Type Inference](http://msdn.microsoft.com/library/b8307f18-2e56-4ab3-a45a-826873f400f6)   
+ [Option Infer Statement](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)

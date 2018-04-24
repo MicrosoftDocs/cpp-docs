@@ -34,4 +34,4 @@ You must specify the new size of an array as part of a `ReDim` statement.
     ```  
   
 ## See Also  
- [ReDim Statement](../Topic/ReDim%20Statement%20\(Visual%20Basic\).md)
+ [ReDim Statement](http://msdn.microsoft.com/library/ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083)

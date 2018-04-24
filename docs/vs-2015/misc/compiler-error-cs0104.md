@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0104
 'reference' is an ambiguous reference between 'identifier' and 'identifier'  
   
- Your program contains [using](../Topic/using%20\(C%23%20Reference\).md) directives for two namespaces and your code references a name that appears in both namespaces.  
+ Your program contains [using](http://msdn.microsoft.com/library/124e1a63-2a4b-4132-b269-3b6d8d3ef72d) directives for two namespaces and your code references a name that appears in both namespaces.  
   
  The following sample generates CS0104:  
   

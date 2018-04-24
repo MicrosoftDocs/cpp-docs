@@ -35,7 +35,7 @@ You can create a wizard in any language for which Visual Studio provides support
 > [!NOTE]
 >  For a list of decimal language values, see [Wizard Support for Other Languages](../ide/wizard-support-for-other-languages.md).  
   
- The language ID is specified as a custom parameter in the .[vsz file](../Topic/Configuring%20.Vsz%20Files%20to%20Start%20Wizards.md) in the paths where the [HTML files](../ide/html-files.md) and the [Template files](../ide/template-files.md) reside.  
+ The language ID is specified as a custom parameter in the .[vsz file](http://msdn.microsoft.com/library/3af817d8-8179-416f-bf54-0b70a007ca77) in the paths where the [HTML files](../ide/html-files.md) and the [Template files](../ide/template-files.md) reside.  
   
  You should specify paths for each language for which you provide an .htm file.  
   

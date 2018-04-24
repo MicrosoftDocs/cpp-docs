@@ -301,7 +301,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     |has_trivial_move_assign|is_trivially_move_assignable|  
     |has_trivial_destructor|is_trivially_destructible|  
   
--   **launch::any and launch::sync policies** The nonstandard launch::any and launch::sync policies were removed. Instead, for launch::any, use launch:async &#124; launch:deferred. For launch::sync, use launch::deferred. See [launch Enumeration](../Topic/launch%20Enumeration.md).  
+-   **launch::any and launch::sync policies** The nonstandard launch::any and launch::sync policies were removed. Instead, for launch::any, use launch:async &#124; launch:deferred. For launch::sync, use launch::deferred. See [launch Enumeration](http://msdn.microsoft.com/library/d1620731-40bc-4e83-b0aa-51a8fd52d111).  
   
 ####  <a name="BK_MFC"></a> MFC and ATL  
   
@@ -311,7 +311,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 ####  <a name="BK_ConcRT"></a> Concurrency Runtime  
   
--   **Yield macro from Windows.h conflicting with concurrency::Context::Yield** The Concurrency Runtime previously used #undef to undefine the Yield macro to avoid conflicts between the Yield macro defined in Windows.h h and the concurrency::Context::Yield function. This #undef has been removed and a new non-conflicting equivalent API call [concurrency::Context::YieldExecution](../Topic/Context::YieldExecution%20Method.md) has been added. To work around conflicts with Yield, you can either update your code to call the YieldExecution function instead, or surround the Yield function name with parentheses at call sites, as in the following example:  
+-   **Yield macro from Windows.h conflicting with concurrency::Context::Yield** The Concurrency Runtime previously used #undef to undefine the Yield macro to avoid conflicts between the Yield macro defined in Windows.h h and the concurrency::Context::Yield function. This #undef has been removed and a new non-conflicting equivalent API call [concurrency::Context::YieldExecution](http://msdn.microsoft.com/library/e92707b3-0e23-4e78-af3d-4eeb34bf5709) has been added. To work around conflicts with Yield, you can either update your code to call the YieldExecution function instead, or surround the Yield function name with parentheses at call sites, as in the following example:  
   
     ```cpp  
     (concurrency::Context::Yield)();  
@@ -361,7 +361,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
      The /Zg compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.  
   
--   You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe. See [VSTest.Console.exe command-line options](../Topic/VSTest.Console.exe%20command-line%20options.md).  
+-   You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe. See [VSTest.Console.exe command-line options](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
 -   **mutable keyword**  
   

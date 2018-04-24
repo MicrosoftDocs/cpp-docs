@@ -33,7 +33,7 @@ An expression within an operator procedure uses the operator being defined. This
   
  A *recursive call* is when a procedure calls itself. Recursive calls can result in an *infinite loop*, in which control passes through the same set of statements repeatedly until your application is terminated externally. If your code does not include one or more tests that can be used to terminate recursion, you risk an infinite loop.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42004  
   
@@ -44,7 +44,7 @@ An expression within an operator procedure uses the operator being defined. This
 -   If your logic does not require the operator procedure to call itself, then remove any recursive calls or replace them with statements that do not call their own procedure.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)   
+ [How to: Define an Operator](http://msdn.microsoft.com/library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/library/54203dfa-c24b-463f-9942-d5153e89e762)

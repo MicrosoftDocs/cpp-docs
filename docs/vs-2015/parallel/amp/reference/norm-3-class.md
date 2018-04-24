@@ -110,7 +110,7 @@ class norm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_3::norm_3 Constructor](../Topic/norm_3::norm_3%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[norm_3::norm_3 Constructor](http://msdn.microsoft.com/library/f39832ca-ad11-4d0c-a021-967531533889)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -170,7 +170,7 @@ class norm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_3::size Constant](../Topic/norm_3::size%20Constant.md)||  
+|[norm_3::size Constant](http://msdn.microsoft.com/library/e67d415d-60b2-429d-8b16-fcd834c667e1)||  
   
 ### Public Data Members  
   

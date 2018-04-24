@@ -35,7 +35,7 @@ A <xref:System.BadImageFormatException> exception is thrown when the file image 
  **Make sure that the file image is a valid managed assembly or module.**  
  This exception is thrown when an unmanaged dynamic link library or executable is passed to the <xref:System.Reflection.Assembly.Load%2A> method for loading.  
   
- For more information, Visual Basic users can refer to [Troubleshooting Interoperability](../Topic/Troubleshooting%20Interoperability%20\(Visual%20Basic\).md).  
+ For more information, Visual Basic users can refer to [Troubleshooting Interoperability](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37).  
   
 ## Remarks  
  Reflecting on C++ executable files may throw this exception. This is most likely caused by the C++ compiler stripping the relocation addresses or the .Reloc section from the executable file. To preserve the .relocation address in a C++ executable file, specify **/fixed:no** when linking.  
@@ -44,4 +44,4 @@ A <xref:System.BadImageFormatException> exception is thrown when the file image 
   
 ## See Also  
  <xref:System.BadImageFormatException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

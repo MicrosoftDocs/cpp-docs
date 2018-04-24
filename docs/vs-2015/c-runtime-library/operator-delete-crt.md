@@ -74,7 +74,7 @@ void __cdecl operator delete(
   
  The first form of the operator is defined by the compiler and does not require new.h to be included in your program.  
   
- With the exception of throwing or no-throwing behavior, the CRT **operator delete** behaves like [operator delete](../Topic/operator%20delete%20\(%3Cnew%3E\).md) in the Standard C++ Library.  
+ With the exception of throwing or no-throwing behavior, the CRT **operator delete** behaves like [operator delete](http://msdn.microsoft.com/library/7c45e232-ceb2-4a77-b0af-da2a935d46a2) in the Standard C++ Library.  
   
 ## Requirements  
   

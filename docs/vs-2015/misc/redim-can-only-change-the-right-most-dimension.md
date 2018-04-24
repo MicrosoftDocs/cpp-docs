@@ -27,6 +27,6 @@ A `ReDim` statement attempted to use the `Preserve` keyword to change a dimensio
 ## See Also  
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
  [NOTINBUILD Multidimensional Arrays in Visual Basic](http://msdn.microsoft.com/en-us/d92cad25-07e2-4d79-8ea4-ab269700f5de)   
- [ReDim Statement](../Topic/ReDim%20Statement%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
+ [ReDim Statement](http://msdn.microsoft.com/library/ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
  [Preserve - delete](http://msdn.microsoft.com/en-us/91badeab-b4e0-48b6-92c9-9f0c8f995d81)

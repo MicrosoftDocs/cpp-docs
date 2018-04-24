@@ -25,4 +25,4 @@ One of the properties of an object or control was set to a value outside its ran
 -   Change the property value to a valid setting.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

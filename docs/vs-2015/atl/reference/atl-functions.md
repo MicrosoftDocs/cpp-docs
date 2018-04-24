@@ -71,7 +71,7 @@ To find an ATL function by category, see the following topics.
  Provide support for `_AtlCreateWndData` structure operations.  
   
 ## See Also  
- [ATL Functions Alphabetical Reference](../Topic/ATL%20Functions%20Alphabetical%20Reference.md)   
+ [ATL Functions Alphabetical Reference](http://msdn.microsoft.com/library/8968fe02-2a8a-4b72-9c58-c6c19e9f703c)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Macros](../../atl/reference/atl-macros.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   

@@ -30,5 +30,5 @@ A `MustInherit` class cannot be instantiated directly, and therefore the `New` o
 -   Remove the `New` operator.  
   
 ## See Also  
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)
+ [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)   
+ [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0)

@@ -38,39 +38,39 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::accelerator_view Constructor](../Topic/accelerator_view::accelerator_view%20Constructor.md)|Initializes a new instance of the `accelerator_view` class.|  
-|[accelerator_view::~accelerator_view Destructor](../Topic/accelerator_view::~accelerator_view%20Destructor.md)|Destroys the `accelerator_view` object.|  
+|[accelerator_view::accelerator_view Constructor](http://msdn.microsoft.com/library/22342bbd-02db-4337-b88c-3d74792811ff)|Initializes a new instance of the `accelerator_view` class.|  
+|[accelerator_view::~accelerator_view Destructor](http://msdn.microsoft.com/library/c4a0056d-3c25-485b-8e0a-5a3fb5d747e3)|Destroys the `accelerator_view` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::create_marker Method](../Topic/accelerator_view::create_marker%20Method.md)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
-|[accelerator_view::flush Method](../Topic/accelerator_view::flush%20Method.md)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
-|[accelerator_view::get_accelerator Method](../Topic/accelerator_view::get_accelerator%20Method.md)|Returns the `accelerator` object for the `accelerator_view` object.|  
-|[accelerator_view::get_is_auto_selection Method](../Topic/accelerator_view::get_is_auto_selection%20Method.md)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md).|  
-|[accelerator_view::get_is_debug Method](../Topic/accelerator_view::get_is_debug%20Method.md)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[accelerator_view::get_queuing_mode Method](../Topic/accelerator_view::get_queuing_mode%20Method.md)|Returns the queuing mode for the `accelerator_view` object.|  
-|[accelerator_view::get_version Method](../Topic/accelerator_view::get_version%20Method.md)|Returns the version of the `accelerator_view`.|  
-|[accelerator_view::wait Method](../Topic/accelerator_view::wait%20Method.md)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
+|[accelerator_view::create_marker Method](http://msdn.microsoft.com/library/6a5fc539-b5a4-4ddf-8201-a5fa633385ee)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
+|[accelerator_view::flush Method](http://msdn.microsoft.com/library/914020f3-c6f4-47ec-8826-74d580807145)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
+|[accelerator_view::get_accelerator Method](http://msdn.microsoft.com/library/59af4efb-18f0-47f6-a1e9-a3a6933cdc26)|Returns the `accelerator` object for the `accelerator_view` object.|  
+|[accelerator_view::get_is_auto_selection Method](http://msdn.microsoft.com/library/6389fb49-122d-4bbc-b5cb-b792a571ff4e)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160).|  
+|[accelerator_view::get_is_debug Method](http://msdn.microsoft.com/library/3de75c76-715b-44c2-a8b0-0b576e4722a4)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
+|[accelerator_view::get_queuing_mode Method](http://msdn.microsoft.com/library/6f0b7fc3-157d-4e3a-a6a5-c4f61ccd4299)|Returns the queuing mode for the `accelerator_view` object.|  
+|[accelerator_view::get_version Method](http://msdn.microsoft.com/library/c51826b5-09fd-403e-8e6e-e514a0b03772)|Returns the version of the `accelerator_view`.|  
+|[accelerator_view::wait Method](http://msdn.microsoft.com/library/c34ac1b3-e5bf-4a4e-86a3-420d23f0e2e9)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::operator!= Operator](../Topic/accelerator_view::operator!=%20Operator.md)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
-|[accelerator_view::operator= Operator](../Topic/accelerator_view::operator=%20Operator.md)|Copies the contents of the specified `accelerator_view` object into this one.|  
-|[accelerator_view::operator== Operator](../Topic/accelerator_view::operator==%20Operator.md)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
+|[accelerator_view::operator!= Operator](http://msdn.microsoft.com/library/e27cc235-d333-453c-b5d6-2eacb6c9fb9d)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
+|[accelerator_view::operator= Operator](http://msdn.microsoft.com/library/ac4aa0a2-6da9-4aea-a2e0-06b81abb81ab)|Copies the contents of the specified `accelerator_view` object into this one.|  
+|[accelerator_view::operator== Operator](http://msdn.microsoft.com/library/bd8db2fd-1c44-4e9a-ae1b-1995e915b142)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::accelerator Data Member](../Topic/accelerator_view::accelerator%20Data%20Member.md)|Gets the `accelerator` object for the `accelerator_view` object.|  
-|[accelerator_view::is_auto_selection Data Member](../Topic/accelerator_view::is_auto_selection%20Data%20Member.md)|Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md).|  
-|[accelerator_view::is_debug Data Member](../Topic/accelerator_view::is_debug%20Data%20Member.md)|Gets a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[accelerator_view::queuing_mode Data Member](../Topic/accelerator_view::queuing_mode%20Data%20Member.md)|Gets the queuing mode for the `accelerator_view` object.|  
-|[accelerator_view::version Data Member](../Topic/accelerator_view::version%20Data%20Member.md)|Gets the version of the accelerator.|  
+|[accelerator_view::accelerator Data Member](http://msdn.microsoft.com/library/1772c499-7fc0-4a14-9220-3726e17cc91f)|Gets the `accelerator` object for the `accelerator_view` object.|  
+|[accelerator_view::is_auto_selection Data Member](http://msdn.microsoft.com/library/aeccabce-3d77-4e19-9334-eb881acf073f)|Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160).|  
+|[accelerator_view::is_debug Data Member](http://msdn.microsoft.com/library/a6340f3b-48bd-4a95-9e5e-bd3780132da7)|Gets a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
+|[accelerator_view::queuing_mode Data Member](http://msdn.microsoft.com/library/1bde0543-f974-4a9c-8457-52a28014683b)|Gets the queuing mode for the `accelerator_view` object.|  
+|[accelerator_view::version Data Member](http://msdn.microsoft.com/library/d2f8717b-1dca-4157-a061-f559166cbee1)|Gets the version of the accelerator.|  
   
 ## Inheritance Hierarchy  
  `accelerator_view`  

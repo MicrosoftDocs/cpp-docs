@@ -30,5 +30,5 @@ manager: "wpickett"
 -   Remove `Implements` statements from `Sub New` procedures.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
+ [Implements](http://msdn.microsoft.com/library/5252cdf9-964d-4fc6-af0f-0449b7126b5a)

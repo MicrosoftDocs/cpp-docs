@@ -50,7 +50,7 @@ Visual C++ includes a variety of material to help you use attributes in your pro
  [Attributes Reference](../windows/cpp-attributes-reference.md)  
  Provides links to reference topic describing the individual attributes and their use.  
   
- [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md)  
+ [Debugging Injected Code](http://msdn.microsoft.com/library/a1b4104d-d49e-451f-a91e-e39ceaf35875)  
  Describes debugging attributed programs.  
   
  [__super](../cpp/super.md)and [__interface](../cpp/interface.md)  

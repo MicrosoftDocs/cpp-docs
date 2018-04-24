@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &#39;New&#39; cannot be used on an interface
-A [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md) uses a [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) clause when declaring a variable to be of an interface type.  
+A [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448) uses a [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0) clause when declaring a variable to be of an interface type.  
   
  Although an interface is a reference type, you cannot create an instance of it. You can use `New` only to create an instance of a class or a structure.  
   
@@ -34,6 +34,6 @@ A [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md) uses a [New 
 2.  If the variable is to refer to an instance, declare it to be of a class or structure type. Retain the `New` keyword to create an instance.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)   
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)

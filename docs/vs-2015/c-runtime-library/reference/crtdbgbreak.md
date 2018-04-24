@@ -60,10 +60,10 @@ void _CrtDbgBreak( void );
 ## Remarks  
  The `_CrtDbgBreak` function sets a debug breakpoint on the particular line of code where the function resides. This function is used in debug mode only and is dependent on `_DEBUG` being previously defined.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Writing Your Own Debug Hook Functions](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Writing Your Own Debug Hook Functions](http://msdn.microsoft.com/library/5510635f-cf69-4907-b72d-ae27af1f19af).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## Requirements  
   

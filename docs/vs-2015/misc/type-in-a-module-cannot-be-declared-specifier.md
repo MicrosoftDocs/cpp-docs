@@ -30,5 +30,5 @@ A type with invalid modifiers was declared within a module.
 -   Do not use `Protected` or `Protected Friend` modifiers on types declared within a module.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)

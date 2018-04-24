@@ -30,4 +30,4 @@ Extra characters were found at the end of an otherwise complete expression.
 -   Verify the syntax of the object or statement.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

@@ -30,4 +30,4 @@ The class or module where this attribute is defined is not declared using the `P
 1.  Add the `Public` modifier to the class or module where this attribute is defined.  
   
 ## See Also  
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

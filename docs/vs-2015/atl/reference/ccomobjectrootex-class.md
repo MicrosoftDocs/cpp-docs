@@ -42,7 +42,7 @@ class CComObjectRootEx : public CComObjectRootBase
   
 #### Parameters  
  `ThreadModel`  
- The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting `ThreadModel` to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting `ThreadModel` to [CComObjectThreadModel](../Topic/CComObjectThreadModel.md) or [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md).  
+ The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting `ThreadModel` to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting `ThreadModel` to [CComObjectThreadModel](http://msdn.microsoft.com/library/69f1e800-c802-4068-9f37-75d59bfc4595) or [CComGlobalsThreadModel](http://msdn.microsoft.com/library/f112382f-da0a-4bfe-bb49-80f9fd908d47).  
   
 ## Members  
   
@@ -85,7 +85,7 @@ class CComObjectRootEx : public CComObjectRootBase
   
  A class that implements a COM server must inherit from `CComObjectRootEx` or [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md).  
   
- If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](../Topic/DECLARE_POLY_AGGREGATABLE.md) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
+ If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
   
  If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject\<CYourClass>** for aggregated objects or an instance of **CComObject\<CYourClass>** for nonaggregated objects.  
   
@@ -133,7 +133,7 @@ HRESULT FinalConstruct();
   
  [!code-cpp[NVC_ATL_COM#40](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_COM/Cpp/MyAggObject.h#40)]  
   
- If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](../Topic/DECLARE_PROTECT_FINAL_CONSTRUCT.md) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
+ If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](http://msdn.microsoft.com/library/2d2e5ddc-057a-43ca-87c8-d3477a8193a0) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
   
  Here is a typical way to create an aggregate:  
   
@@ -141,7 +141,7 @@ HRESULT FinalConstruct();
   
 -   Override `FinalConstruct` to create the aggregate.  
   
--   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md) macro.  
+-   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](http://msdn.microsoft.com/library/c671fa40-a57b-4797-ae88-c9762dabd4dc) macro.  
   
 -   Override `FinalRelease` to release the **IUnknown** pointer.  
   
@@ -198,7 +198,7 @@ static HRESULT InternalQueryInterface(
  One of the standard `HRESULT` values.  
   
 ### Remarks  
- `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20Macros.md) or one of its variants.  
+ `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](~/atl/reference/com-interface-entry-macros.md) or one of its variants.  
   
 ##  <a name="ccomobjectrootex__internalrelease"></a>  CComObjectRootEx::InternalRelease  
  Decrements the reference count of a nonaggregated object by 1.  

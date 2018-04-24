@@ -30,5 +30,5 @@ manager: "wpickett"
 -   Use the file I/O functions defined in `My.Computer.FileSystem`, the `System.IO` namespace, Visual Basic run-time functions, or the `Microsoft.VisualBasic.FileSystem` object.  
   
 ## See Also  
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [File Access with Visual Basic](http://msdn.microsoft.com/library/231533bf-d049-4345-befa-3fb78fe6517d)   
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)

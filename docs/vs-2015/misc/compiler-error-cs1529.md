@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1529
 A using clause must precede all other elements defined in the namespace except extern alias declarations  
   
- A [using](../Topic/using%20\(C%23%20Reference\).md) clause must appear first in a namespace.  
+ A [using](http://msdn.microsoft.com/library/124e1a63-2a4b-4132-b269-3b6d8d3ef72d) clause must appear first in a namespace.  
   
 ## Example  
  The following sample generates CS1529:  

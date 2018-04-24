@@ -18,4 +18,4 @@ caps.latest.revision: 42
 manager: "douge"
 ---
 # How to: Add Menu Controllers to Toolbars
-This content has been removed. For information, see [Adding a Menu Controller to a Toolbar](../Topic/Adding%20a%20Menu%20Controller%20to%20a%20Toolbar.md).
+This content has been removed. For information, see [Adding a Menu Controller to a Toolbar](http://msdn.microsoft.com/library/6af9b0b4-037f-404c-bb40-aaa1970768ea).

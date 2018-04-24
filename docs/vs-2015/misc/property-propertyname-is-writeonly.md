@@ -30,4 +30,4 @@ You have tried to retrieve a value from a property that is declared `WriteOnly`.
 -   Remove the `WriteOnly` specifier from the property declaration.  
   
 ## See Also  
- [WriteOnly](../Topic/WriteOnly%20\(Visual%20Basic\).md)
+ [WriteOnly](http://msdn.microsoft.com/library/488d2899-b09f-4cee-92f0-6f9f9fc4f944)

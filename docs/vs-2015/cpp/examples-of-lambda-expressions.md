@@ -179,7 +179,7 @@ The first even number in the list is 42.
 ```  
   
 ### Remarks  
- For more information about the `find_if` function, see [find_if](../Topic/find_if.md). For more information about the STL functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
+ For more information about the `find_if` function, see [find_if](http://msdn.microsoft.com/library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a). For more information about the STL functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
   
  [[In This Article](#top)]  
   
@@ -515,7 +515,7 @@ Hello!
  [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)   
  [auto](../cpp/auto-cpp.md)   
  [function Class](../standard-library/function-class.md)   
- [find_if](../Topic/find_if.md)   
+ [find_if](http://msdn.microsoft.com/library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a)   
  [\<algorithm>](../standard-library/algorithm.md)   
  [Function Call](../cpp/function-call-cpp.md)   
  [Templates](../cpp/templates-cpp.md)   

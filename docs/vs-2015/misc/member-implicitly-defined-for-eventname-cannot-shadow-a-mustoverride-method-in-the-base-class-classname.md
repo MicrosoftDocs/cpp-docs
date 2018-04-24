@@ -30,5 +30,5 @@ The specified event implicitly declares a member with the same name as a method 
 -   Remove the `MustOverride` modifier from the method in the base class or give the property or method a unique name.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

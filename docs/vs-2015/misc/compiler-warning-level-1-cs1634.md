@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS1634
 Expected disable or restore  
   
- This error occurs if a #pragma warning clause is badly formed, such as if disable or restore was omitted. For more information, see the [#pragma warning](../Topic/%23pragma%20warning%20\(C%23%20Reference\).md) topic.  
+ This error occurs if a #pragma warning clause is badly formed, such as if disable or restore was omitted. For more information, see the [#pragma warning](http://msdn.microsoft.com/library/723493d5-9753-4cec-babb-54e2b8eb36b6) topic.  
   
 ## Example  
  The following sample generates CS1634:  

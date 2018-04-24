@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0528
 'interface' is already listed in interface list  
   
- An interface-inheritance list includes a duplicate. An [interface](../Topic/interface%20\(C%23%20Reference\).md) can only be specified once in the inheritance list.  
+ An interface-inheritance list includes a duplicate. An [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) can only be specified once in the inheritance list.  
   
  The following sample generates CS0528:  
   

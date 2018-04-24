@@ -18,4 +18,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Library Example Dsl Definition
-This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](../Topic/How%20to%20Define%20a%20Domain-Specific%20Language.md).
+This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](http://msdn.microsoft.com/library/d1772463-0eb1-40a5-b7c0-9a008bc76760).

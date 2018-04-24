@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1620
 Argument 'number' must be passed with the 'keyword' keyword  
   
- This error occurs if you are passing an argument to a function that takes a [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) parameter and you don't include the `ref` or `out` keyword at the point of call, or you include the wrong keyword. The error text indicates the appropriate keyword to use and which argument caused the failure.  
+ This error occurs if you are passing an argument to a function that takes a [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameter and you don't include the `ref` or `out` keyword at the point of call, or you include the wrong keyword. The error text indicates the appropriate keyword to use and which argument caused the failure.  
   
  The following sample generates CS1620:  
   

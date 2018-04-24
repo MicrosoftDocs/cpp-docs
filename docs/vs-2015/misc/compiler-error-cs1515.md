@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1515
 'in' expected  
   
- In a [foreach, in](../Topic/foreach,%20in%20\(C%23%20Reference\).md) statement, the "in" part is missing.  
+ In a [foreach, in](http://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec) statement, the "in" part is missing.  
   
 ## Example  
  The following sample generates CS1515:  

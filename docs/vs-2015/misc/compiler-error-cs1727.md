@@ -40,4 +40,4 @@ class Test
 ```  
   
 ## See Also  
- [/errorreport (C# Compiler Options)](../Topic/-errorreport%20\(C%23%20Compiler%20Options\).md)
+ [/errorreport (C# Compiler Options)](http://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf)

@@ -26,7 +26,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [ATL Predefined Symbols](https://docs.microsoft.com/cpp/windows/atl-predefined-symbols).  
   
   
-These symbols are defined in the ATL header files, but they support standard Windows application functions and actions. These symbols are mainly used with dialog boxes. When you are working with dialogs and controls in the [Dialog editor](../mfc/dialog-editor.md), these symbols will appear in the Properties window associated with common controls. For instance, if your dialog box has a Cancel button, that command will be associated with the symbol IDCANCEL in the [Properties Window](../Topic/Properties%20Window.md).  
+These symbols are defined in the ATL header files, but they support standard Windows application functions and actions. These symbols are mainly used with dialog boxes. When you are working with dialogs and controls in the [Dialog editor](../mfc/dialog-editor.md), these symbols will appear in the Properties window associated with common controls. For instance, if your dialog box has a Cancel button, that command will be associated with the symbol IDCANCEL in the [Properties Window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca).  
   
 |||  
 |-|-|  

@@ -26,5 +26,5 @@ This error generally occurs when a search has been attempted with the search sco
 1.  Open a file and try the search again or change the scope of the search.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
- [Find in Files](../Topic/Find%20in%20Files.md)
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)   
+ [Find in Files](http://msdn.microsoft.com/library/989e0737-46d7-4474-8453-fad52a74669d)

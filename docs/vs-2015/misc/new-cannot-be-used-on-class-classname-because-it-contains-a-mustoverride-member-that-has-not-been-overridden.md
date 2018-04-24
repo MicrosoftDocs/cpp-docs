@@ -30,4 +30,4 @@ You have attempted to use `New` on a class that contains a `MustOverride` member
 -   Remove the `New` statement.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)

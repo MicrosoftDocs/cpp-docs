@@ -26,7 +26,7 @@ manager: "ghogen"
 
 The latest version of this topic can be found at [file_status Class](https://docs.microsoft.com/cpp/standard-library/file-status-class).  
   
-Wraps a [file_type](../Topic/file_type%20Enumeration.md).  
+Wraps a [file_type](http://msdn.microsoft.com/library/a6a35986-167a-4142-9de4-ccfe5c1576f8).  
   
 ## Syntax  
   

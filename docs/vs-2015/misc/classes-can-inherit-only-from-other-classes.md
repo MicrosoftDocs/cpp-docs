@@ -30,4 +30,4 @@ An `Inherits` statement specifies a type other than a class as its base type.
 -   Change the base type to a class that is already defined.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

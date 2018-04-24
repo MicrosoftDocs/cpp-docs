@@ -26,9 +26,9 @@ manager: "douge"
   
 ### To correct this error  
   
--   Enable ClickOnce security settings and set the application to a full trust application. For more information, see [How to: Enable ClickOnce Security Settings](../Topic/How%20to:%20Enable%20ClickOnce%20Security%20Settings.md).  
+-   Enable ClickOnce security settings and set the application to a full trust application. For more information, see [How to: Enable ClickOnce Security Settings](http://msdn.microsoft.com/library/73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0).  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)   
- [Code Access Security for ClickOnce Applications](../Topic/Code%20Access%20Security%20for%20ClickOnce%20Applications.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243)   
+ [Code Access Security for ClickOnce Applications](http://msdn.microsoft.com/library/04b104d0-0bd3-4ccb-b164-1de92d234487)

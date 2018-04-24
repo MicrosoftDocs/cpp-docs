@@ -40,7 +40,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `inplace_merge` For more information, see [inplace_merge](../Topic/inplace_merge.md).  
+ This function behaves the same as the STL function `inplace_merge` For more information, see [inplace_merge](http://msdn.microsoft.com/library/a3a7d861-2b47-4b0c-a2ac-df805c813437).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

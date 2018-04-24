@@ -40,7 +40,7 @@ This example shows how to use the [concurrency::task](../../parallel/concrt/refe
   
  [!code-cpp[concrt-task-delay#2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-task-delay/cpp/task-delay.cpp#2)]  
   
- When you use this technique to cancel tasks after a delay, any unstarted tasks will not start after the overall task is canceled. However, it is important for any long-running tasks to respond to cancellation in a timely manner. In this example, the `count_primes` method calls the [concurrency::is_task_cancellation_requested](../../misc/is-task-cancellation-requested-function.md) and `cancel_current_task` functions to respond to cancellation. (Alternatively, you can call the [concurrency::interruption_point](../Topic/interruption_point%20Function.md) function). For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+ When you use this technique to cancel tasks after a delay, any unstarted tasks will not start after the overall task is canceled. However, it is important for any long-running tasks to respond to cancellation in a timely manner. In this example, the `count_primes` method calls the [concurrency::is_task_cancellation_requested](../../misc/is-task-cancellation-requested-function.md) and `cancel_current_task` functions to respond to cancellation. (Alternatively, you can call the [concurrency::interruption_point](http://msdn.microsoft.com/library/350f062c-3ff5-45bc-9718-fece1ede9cdb) function). For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
   
 ## Example  
  Here is the complete code for this example:  
@@ -59,8 +59,8 @@ This example shows how to use the [concurrency::task](../../parallel/concrt/refe
  [cancellation_token Class](../../parallel/concrt/reference/cancellation-token-class.md)   
  [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)   
  [is_task_cancellation_requested Function](../../misc/is-task-cancellation-requested-function.md)   
- [cancel_current_task Function](../Topic/cancel_current_task%20Function.md)   
- [interruption_point Function](../Topic/interruption_point%20Function.md)   
+ [cancel_current_task Function](http://msdn.microsoft.com/library/03a5e7bb-20bc-49b7-b119-83421845769b)   
+ [interruption_point Function](http://msdn.microsoft.com/library/350f062c-3ff5-45bc-9718-fece1ede9cdb)   
  [timer Class](../../parallel/concrt/reference/timer-class.md)   
  [call Class](../../parallel/concrt/reference/call-class.md)   
  [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)   

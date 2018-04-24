@@ -30,4 +30,4 @@ manager: "wpickett"
 -   Add an `#End If` directive to the end of the conditional compilation block.  
   
 ## See Also  
- [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)
+ [#If...Then...#Else Directives](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502)

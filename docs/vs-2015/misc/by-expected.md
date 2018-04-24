@@ -38,8 +38,8 @@ An `Order By` or `Group By` clause has been specified without the `By` keyword.
     ```  
   
 ## See Also  
- [How to: Sort Query Results](../Topic/How%20to:%20Sort%20Query%20Results%20by%20Using%20LINQ%20\(Visual%20Basic\).md)   
- [Order By Clause](../Topic/Order%20By%20Clause%20\(Visual%20Basic\).md)   
- [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [How to: Sort Query Results](http://msdn.microsoft.com/library/07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e)   
+ [Order By Clause](http://msdn.microsoft.com/library/fa911282-6b81-44c7-acfa-46b5bb93df75)   
+ [Group By Clause](http://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7)   
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)

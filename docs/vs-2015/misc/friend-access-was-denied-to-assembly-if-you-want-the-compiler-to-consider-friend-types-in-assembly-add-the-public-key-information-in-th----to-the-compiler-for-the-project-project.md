@@ -30,4 +30,4 @@ manager: "wpickett"
 ## See Also  
  <xref:System.Reflection.AssemblyName>   
  [NOT IN BUILD: Friend Assemblies (Visual Basic)](http://msdn.microsoft.com/en-us/80e7a33a-ca91-450b-a00e-c5a7986e228c)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)
+ [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)

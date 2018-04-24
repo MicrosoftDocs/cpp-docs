@@ -33,5 +33,5 @@ The name of a type member conflicts with the name of a member implicitly declare
   
 ## See Also  
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
- [Enumerations Overview](../Topic/Enumerations%20Overview%20\(Visual%20Basic\).md)   
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)
+ [Enumerations Overview](http://msdn.microsoft.com/library/b42a38ee-5e77-4f99-a037-e3a127ead89c)   
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)

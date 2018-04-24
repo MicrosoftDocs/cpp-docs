@@ -31,5 +31,5 @@ bad provider interaction: 'file'
   
  This error indicates the failure of an attribute provider.  
   
- Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Talk to Us](../Topic/Talk%20to%20Us.md).
+ Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e).
 

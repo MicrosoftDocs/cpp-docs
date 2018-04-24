@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1520
 Method must have a return type  
   
- A method that is declared in a class, struct, or interface must have an explicit return type. In the following example, the Square method has a return value of [string](../Topic/string%20\(C%23%20Reference\).md):  
+ A method that is declared in a class, struct, or interface must have an explicit return type. In the following example, the Square method has a return value of [string](http://msdn.microsoft.com/library/3037e558-fb22-494d-bca1-a15ade11b11a):  
   
 ```  
 class Test  
@@ -72,5 +72,5 @@ public class Class1
 ```  
   
 ## See Also  
- [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md)   
- [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md)
+ [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37)   
+ [Constructors](http://msdn.microsoft.com/library/df2e2e9d-7998-418b-8e7d-890c17ff6c95)

@@ -51,9 +51,9 @@ Checked iterators ensure that the bounds of your container are not overwritten. 
   
 |||||  
 |-|-|-|-|  
-|[basic_string::operator](../Topic/basic_string::operator.md)|[bitset::operator](../Topic/bitset::operator.md)|[deque::back](../standard-library/deque-class.md#deque__back)|[deque::front](../standard-library/deque-class.md#deque__front)|  
-|[deque::operator](../Topic/deque::operator.md)|[list::back](../standard-library/list-class.md#list__back)|[list::front](../standard-library/list-class.md#list__front)|[queue::back](../standard-library/queue-class.md#queue__back)|  
-|[queue::front](../standard-library/queue-class.md#queue__front)|[vector::operator](../Topic/vector::operator.md)|[vector::back](../standard-library/vector-class.md#vector__back)|[vector::front](../standard-library/vector-class.md#vector__front)|  
+|[basic_string::operator](http://msdn.microsoft.com/library/1907e077-6848-40bb-a6f7-2f6ba6439ee9)|[bitset::operator](http://msdn.microsoft.com/library/b3bc20eb-4a13-4f3e-bf6b-6c3bd6d7ae06)|[deque::back](../standard-library/deque-class.md#deque__back)|[deque::front](../standard-library/deque-class.md#deque__front)|  
+|[deque::operator](http://msdn.microsoft.com/library/49e561ef-f3e6-4bd5-8fd6-2ee6c3e55485)|[list::back](../standard-library/list-class.md#list__back)|[list::front](../standard-library/list-class.md#list__front)|[queue::back](../standard-library/queue-class.md#queue__back)|  
+|[queue::front](../standard-library/queue-class.md#queue__front)|[vector::operator](http://msdn.microsoft.com/library/9f19d479-152d-40c6-aab8-d7e5b62a41ed)|[vector::back](../standard-library/vector-class.md#vector__back)|[vector::front](../standard-library/vector-class.md#vector__front)|  
   
  When `_ITERATOR_DEBUG_LEVEL` is defined as 0:  
   

@@ -25,7 +25,7 @@ An expression accesses a programming element defined in a class, structure, modu
   
  The most likely cause of this error is *case sensitivity*. Visual Basic names are case-insensitive, which means you can capitalize them differently at different places in your code. For example, if you define a variable with the name `XYZ` and later access it as `xyz`, the compiler considers the two names to be equivalent.  
   
- However, other languages, such as [C#](../Topic/C%23.md) and [Visual C++](../top/visual-cpp-in-visual-studio-2015.md), are case-sensitive. In such a language, `XYZ` and `xyz` are not considered to be the same name. Therefore, a class written in such a language could define a variable named `XYZ` and a property named `xyz`. The common language runtime (CLR) preserves case sensitivity in assemblies. However, if a Visual Basic application accesses an assembly with names `XYZ` and `xyz`, they appear as the same name.  
+ However, other languages, such as [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc) and [Visual C++](../top/visual-cpp-in-visual-studio-2015.md), are case-sensitive. In such a language, `XYZ` and `xyz` are not considered to be the same name. Therefore, a class written in such a language could define a variable named `XYZ` and a property named `xyz`. The common language runtime (CLR) preserves case sensitivity in assemblies. However, if a Visual Basic application accesses an assembly with names `XYZ` and `xyz`, they appear as the same name.  
   
  **Error ID:** BC31429  
   
@@ -36,6 +36,6 @@ An expression accesses a programming element defined in a class, structure, modu
 2.  If you cannot rename the members in the defining type, remove the cited programming element from your code. You cannot access an element that appears to Visual Basic to have multiple definitions.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [Troubleshooting Variables](../Topic/Troubleshooting%20Variables%20in%20Visual%20Basic.md)   
- [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [Troubleshooting Variables](http://msdn.microsoft.com/library/928a2dc8-e565-4ae4-8ba3-80cc0cb50090)   
+ [Common Language Runtime](http://msdn.microsoft.com/library/059a624e-f7db-4134-ba9f-08b676050482)

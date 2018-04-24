@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0215
 The return type of operator True or False must be bool  
   
- User-defined [true](../Topic/true%20\(C%23%20Reference\).md) and [false](../Topic/false%20\(C%23%20Reference\).md) operators must have a return type of [bool](../Topic/bool%20\(C%23%20Reference\).md). For more information, see [Overloadable Operators](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ User-defined [true](http://msdn.microsoft.com/library/7d0adcdb-02e9-478c-8c84-2e671d4acef3) and [false](http://msdn.microsoft.com/library/a11aa532-efe2-442b-9fcc-8fdb33b8c8b4) operators must have a return type of [bool](http://msdn.microsoft.com/library/551cfe35-2632-4343-af49-33ad12da08e2). For more information, see [Overloadable Operators](http://msdn.microsoft.com/library/390d9d01-79fc-40ab-9ed3-0bf448da1b6a).  
   
  The following sample generates CS0215:  
   

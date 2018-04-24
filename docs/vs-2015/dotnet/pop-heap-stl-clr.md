@@ -39,7 +39,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `pop_heap`. For more information, see [pop_heap](../Topic/pop_heap.md).  
+ This function behaves the same as the STL function `pop_heap`. For more information, see [pop_heap](http://msdn.microsoft.com/library/38f6eea3-d192-4597-aae7-c3ec2e659107).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

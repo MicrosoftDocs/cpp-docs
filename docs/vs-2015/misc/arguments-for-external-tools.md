@@ -22,4 +22,4 @@ ms.author: "mblome"
 manager: "douge"
 ---
 # Arguments for External Tools
-This content has moved to [Managing External Tools](../Topic/Managing%20External%20Tools.md).
+This content has moved to [Managing External Tools](http://msdn.microsoft.com/library/f382fd40-a98f-4934-8c9a-5aeae881acde).

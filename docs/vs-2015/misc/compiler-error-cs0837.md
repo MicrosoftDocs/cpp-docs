@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0837
 The first operand of an "is" or "as" operator may not be a lambda expression or anonymous method.  
   
- Lambda expressions and anonymous methods may not be used on the left side of [is](../Topic/is%20\(C%23%20Reference\).md) or [as](../Topic/as%20\(C%23%20Reference\).md).  
+ Lambda expressions and anonymous methods may not be used on the left side of [is](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43) or [as](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e).  
   
 ### To correct this error  
   

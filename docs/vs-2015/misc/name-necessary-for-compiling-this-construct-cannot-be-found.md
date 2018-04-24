@@ -32,4 +32,4 @@ An element necessary for compilation cannot be found.
 2.  Make sure the code is valid managed code.  
   
 ## See Also  
- [Managed Execution Process](../Topic/Managed%20Execution%20Process.md)
+ [Managed Execution Process](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

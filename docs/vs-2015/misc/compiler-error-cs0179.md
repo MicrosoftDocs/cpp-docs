@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0179
 'member' cannot be extern and declare a body  
   
- When a class member is marked [extern](../Topic/extern%20\(C%23%20Reference\).md), it means that the member's definition is located in another file. Therefore, a class member marked as **extern** cannot be defined in the class. Either remove the `extern` keyword or delete the definition. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ When a class member is marked [extern](http://msdn.microsoft.com/library/9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7), it means that the member's definition is located in another file. Therefore, a class member marked as **extern** cannot be defined in the class. Either remove the `extern` keyword or delete the definition. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0179:  
   

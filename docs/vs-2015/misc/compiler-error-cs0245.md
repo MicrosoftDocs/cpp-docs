@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0245
 Destructors and object.Finalize cannot be called directly. Consider calling IDisposable.Dispose if available.  
   
- For more information, see [Programming Essentials for Garbage Collection](../Topic/Garbage%20Collection.md) and [Destructors](../Topic/Destructors%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Programming Essentials for Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) and [Destructors](http://msdn.microsoft.com/library/1ae6e46d-a4b1-4a49-abe5-b97f53d9e049).  
   
  The following sample generates CS0245:  
   

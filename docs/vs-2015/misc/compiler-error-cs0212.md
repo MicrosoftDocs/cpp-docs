@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0212
 You can only take the address of an unfixed expression inside of a fixed statement initializer  
   
- For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Unsafe Code and Pointers](http://msdn.microsoft.com/library/b0fcca10-a92d-4f2a-835b-b0ccae6739ee).  
   
  The following sample shows how to take the address of an unfixed expression. The following sample generates CS0212.  
   

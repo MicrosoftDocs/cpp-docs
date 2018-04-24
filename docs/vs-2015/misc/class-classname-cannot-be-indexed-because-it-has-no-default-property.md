@@ -31,4 +31,4 @@ You have failed to supply a default property for a class.
   
 ## See Also  
  [Default Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/9b8cfad7-40ac-4b83-affb-1ff781755a4c)   
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

@@ -25,4 +25,4 @@ A string's length exceeds the maximum length of 32767 characters.
 1.  Shorten the string.  
   
 ## See Also  
- [Strings](../Topic/Strings%20in%20Visual%20Basic.md)
+ [Strings](http://msdn.microsoft.com/library/7e4c777c-ad69-46e2-8b9e-9be4033b1c96)

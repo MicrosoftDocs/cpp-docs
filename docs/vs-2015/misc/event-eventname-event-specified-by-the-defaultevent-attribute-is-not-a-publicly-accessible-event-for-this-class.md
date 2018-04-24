@@ -33,6 +33,6 @@ The <xref:System.ComponentModel.DefaultEventAttribute> attribute must specify th
   
 ## See Also  
  <xref:System.ComponentModel.DefaultEventAttribute>   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

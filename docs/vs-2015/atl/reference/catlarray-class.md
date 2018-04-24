@@ -74,7 +74,7 @@ class CAtlArray
   
 |||  
 |-|-|  
-|[operator &#91;&#93;](../Topic/CAtlArray::operator.md)|Call this operator to return a reference to an element in the array.|  
+|[operator &#91;&#93;](http://msdn.microsoft.com/library/d2914763-300b-4af1-8a68-a3b47a5a494a)|Call this operator to return a reference to an element in the array.|  
   
 ### Typedefs  
   
@@ -111,7 +111,7 @@ size_t Add();
  Returns the index of the added element.  
   
 ### Remarks  
- The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](../Topic/AtlThrow.md) is called with the argument E_OUTOFMEMORY.  
+ The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7) is called with the argument E_OUTOFMEMORY.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#1](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Utilities/Cpp/NVC_ATL_Utilities.cpp#1)]  

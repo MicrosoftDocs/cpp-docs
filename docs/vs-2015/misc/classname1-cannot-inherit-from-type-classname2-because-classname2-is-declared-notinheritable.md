@@ -30,6 +30,6 @@ A class attempts to inherit from another class, but the desired base class is sp
 -   Remove the `NotInheritable` keyword from the definition of the desired base class, or remove the `Inherits` statement.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)   
- [NotInheritable](../Topic/NotInheritable%20\(Visual%20Basic\).md)   
- [Inherits Statement](../Topic/Inherits%20Statement.md)
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [NotInheritable](http://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)   
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)

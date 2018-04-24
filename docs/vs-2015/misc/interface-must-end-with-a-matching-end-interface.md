@@ -32,4 +32,4 @@ An `Interface` statement occurs without a corresponding `End Interface` statemen
 2.  Add an `End Interface` statement tot the end of the interface definition.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)

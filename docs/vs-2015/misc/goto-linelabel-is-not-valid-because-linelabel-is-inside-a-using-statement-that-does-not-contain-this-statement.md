@@ -36,5 +36,5 @@ A `GoTo` statement outside a `Using` construction attempts to branch to a line l
 -   Remove the `GoTo` statement entirely. The only way you can enter a `Using`...`End Using` construction is to allow control to pass to the `Using` statement itself.  
   
 ## See Also  
- [GoTo Statement](../Topic/GoTo%20Statement.md)   
- [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md)
+ [GoTo Statement](http://msdn.microsoft.com/library/313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d)   
+ [Using Statement](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)

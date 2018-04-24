@@ -30,6 +30,6 @@ The only operators defined for object variables are `Is` and `TypeOf...Is`. When
 -   Use the appropriate type conversion functions, such as `CInt` or `CStr`, to convert the operands to data types defined for the operator.  
   
 ## See Also  
- [Is Operator](../Topic/Is%20Operator%20\(Visual%20Basic\).md)   
- [Comparison Operators in Visual Basic](../Topic/Comparison%20Operators%20in%20Visual%20Basic.md)   
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)
+ [Is Operator](http://msdn.microsoft.com/library/8045a6c8-2a83-45b6-ad47-d09a704c656d)   
+ [Comparison Operators in Visual Basic](http://msdn.microsoft.com/library/0b570339-5407-474f-8421-e183a8b303ee)   
+ [Type Conversion Functions](http://msdn.microsoft.com/library/d9d8d165-f967-44ff-a6cd-598e4740a99e)

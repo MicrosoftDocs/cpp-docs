@@ -36,9 +36,9 @@ manager: "wpickett"
 2.  In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
  [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)
+ [Troubleshooting Broken References](http://msdn.microsoft.com/library/00a9ade9-652e-40de-8ada-85f63cd183ee)

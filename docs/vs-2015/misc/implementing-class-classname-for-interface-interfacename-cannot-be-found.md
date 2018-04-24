@@ -32,6 +32,6 @@ An implementing class in the interop assembly is not available.
 2.  Use the Type Library Importer (Tlbimp.exe) to manually create an interop assembly, and then add a reference to that interop assembly from your project.  
   
 ## See Also  
- [Implements Statement](../Topic/Implements%20Statement.md)   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
- [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)   
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)

@@ -27,7 +27,7 @@ The latest version of this topic can be found at [How to: Create a C++ Project f
   
 In [!INCLUDE[vsPro](../includes/vspro-md.md)] and [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] you can port your existing code files into a Visual C++ project using the **Create New Project From Existing Code Files** wizard. This wizard is not available in Express editions.  
   
- Porting your existing code files into a Visual C++ project enables you to use IDE features such as [IntelliSense](../Topic/Using%20IntelliSense.md), **Call Browser**, and [Property Manager](../misc/property-manager.md).  
+ Porting your existing code files into a Visual C++ project enables you to use IDE features such as [IntelliSense](http://msdn.microsoft.com/library/9fdb489b-8b46-4b92-9ccc-c8f8cc184081), **Call Browser**, and [Property Manager](../misc/property-manager.md).  
   
 ### To create a C++ project from existing code  
   

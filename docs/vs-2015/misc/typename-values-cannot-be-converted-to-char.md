@@ -33,5 +33,5 @@ manager: "wpickett"
   
 ## See Also  
  [NOT IN BUILD: Chr, ChrW Functions](http://msdn.microsoft.com/en-us/37f3c707-8a6f-4c51-9b02-9e634c4299ab)   
- [Implicit and Explicit Conversions](../Topic/Implicit%20and%20Explicit%20Conversions%20\(Visual%20Basic\).md)   
- [Char Data Type](../Topic/Char%20Data%20Type%20\(Visual%20Basic\).md)
+ [Implicit and Explicit Conversions](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66)   
+ [Char Data Type](http://msdn.microsoft.com/library/cd7547a9-7855-4e8e-b216-35d74a362657)

@@ -28,4 +28,4 @@ This error generally occurs when the name entered for the build configuration in
 2.  Re-type the name.  
   
 ## See Also  
- [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md)
+ [Compiling and Building](http://msdn.microsoft.com/library/c7958821-285f-4e28-9e7a-b5d8b40336a1)

@@ -26,6 +26,6 @@ A call has been made to an overloaded method, but the compiler cannot find a met
  **Error ID:** BC36711  
   
 ## See Also  
- [Overloaded Properties and Methods](../Topic/Overloaded%20Properties%20and%20Methods%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Overloaded Properties and Methods](http://msdn.microsoft.com/library/b686fb97-e7d7-4001-afaa-6650cba08f0d)   
+ [Widening and Narrowing Conversions](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)   
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)

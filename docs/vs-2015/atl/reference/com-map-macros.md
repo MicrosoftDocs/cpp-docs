@@ -30,7 +30,7 @@ These macros define COM interface maps.
 |||  
 |-|-|  
 |[BEGIN_COM_MAP](#begin_com_map)|Marks the beginning of the COM interface map entries.|  
-|[COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20Macros.md)|Enters interfaces into the COM interface map.|  
+|[COM_INTERFACE_ENTRY](~/atl/reference/com-interface-entry-macros.md)|Enters interfaces into the COM interface map.|  
 |[COM_INTERFACE_ENTRY2](#com_interface_entry2)|Use this macro to disambiguate two branches of inheritance.|  
 |[COM_INTERFACE_ENTRY_IID](#com_interface_entry_iid)|Use this macro to enter the interface into the COM map and specify its IID.|  
 |[COM_INTERFACE_ENTRY2_IID](#com_interface_entry2_iid)|Same as [COM_INTERFACE_ENTRY2](#com_interface_entry2), except you can specify a different IID.|  
@@ -59,7 +59,7 @@ BEGIN_COM_MAP(x)
  [in] The name of the class object you are exposing interfaces on.  
   
 ### Remarks  
- [CComObjectRootEx::InternalQueryInterface](../Topic/CComObjectRootEx::InternalQueryInterface.md) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20\(ATL\).md) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
+ [CComObjectRootEx::InternalQueryInterface](http://msdn.microsoft.com/library/0d90c9b1-ebf9-4e70-8513-aa96e366879a) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/c5363b8b-a1a2-471e-ad3a-d472f6c356c5) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
   
 ### Example  
  From the ATL [BEEPER](../../top/visual-cpp-samples.md) sample:  
@@ -86,7 +86,7 @@ COM_INTERFACE_ENTRY2(x, x2)
 ### Remarks  
  For example, if you derive your class object from two dual interfaces, you expose `IDispatch` using `COM_INTERFACE_ENTRY2` since `IDispatch` can be obtained from either one of the interfaces.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#118](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/ThisExample.h#118)]  
@@ -106,7 +106,7 @@ COM_INTERFACE_ENTRY_IID(iid, x)
  [in] The name of the class whose vtable will be exposed as the interface identified by `iid`.  
   
 ### Remarks  
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#117](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/ThisExample.h#117)]  
@@ -129,7 +129,7 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
  [in] The name of a second interface that your class object derives from directly.  
   
 ### Remarks  
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry2"></a>  COM_INTERFACE_ENTRY2  
  Use this macro to disambiguate two branches of inheritance.  
@@ -148,7 +148,7 @@ COM_INTERFACE_ENTRY2(x, x2)
 ### Remarks  
  For example, if you derive your class object from two dual interfaces, you expose `IDispatch` using `COM_INTERFACE_ENTRY2` since `IDispatch` can be obtained from either one of the interfaces.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#118](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/ThisExample.h#118)]  
@@ -170,7 +170,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 ### Remarks  
  The `punk` parameter is assumed to point to the inner unknown of an aggregate or to **NULL**, in which case the entry is ignored. Typically, you would **CoCreate** the aggregate in `FinalConstruct`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#112](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#112)]  
@@ -189,7 +189,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
 ### Remarks  
  If the interface query fails, processing of the COM map continues.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#113](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#113)]  
@@ -211,7 +211,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 ### Remarks  
  The `punk` parameter is assumed to point to the inner unknown of an aggregate or to **NULL**, in which case the entry is ignored. Typically, you would **CoCreate** the aggregate in `FinalConstruct`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#112](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#112)]  
@@ -234,7 +234,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
  [in] The identifier of the aggregate that will be created if `punk` is **NULL**.  
   
 ### Remarks  
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#114](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#114)]  
@@ -256,7 +256,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 ### Remarks  
  The `punk` parameter is assumed to point to the inner unknown of an aggregate or to **NULL**, in which case the entry is ignored. Typically, you would **CoCreate** the aggregate in `FinalConstruct`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#112](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#112)]  
@@ -278,7 +278,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 ### Remarks  
  If the interface query fails, processing of the COM map continues.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#115](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#115)]  
@@ -301,7 +301,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
  [in] The identifier of the aggregate that will be created if `punk` is **NULL**.  
   
 ### Remarks  
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#114](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/Aggs.h#114)]  
@@ -320,7 +320,7 @@ COM_INTERFACE_ENTRY_BREAK(x)
 ### Remarks  
  The interface IID will be constructed by appending *x* to `IID_`. For example, if *x* is `IPersistStorage`, the IID will be `IID_IPersistStorage`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry_cached_tear_off"></a>  COM_INTERFACE_ENTRY_CACHED_TEAR_OFF  
  Saves the interface-specific data for every instance.  
@@ -342,7 +342,7 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 ### Remarks  
  If the interface is not used, this lowers the overall instance size of your object.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#54](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_COM/Cpp/Outer.h#54)]  
@@ -364,7 +364,7 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 ### Remarks  
  A tear-off interface is implemented as a separate object that is instantiated every time the interface it represents is queried for. Typically, you build your interface as a tear-off if the interface is rarely used, since this saves a vtable pointer in every instance of your main object. The tear-off is deleted when its reference count becomes zero. The class implementing the tear-off should be derived from `CComTearOffObjectBase` and have its own COM map.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#1](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_COM/Cpp/Beeper.h#1)]  
@@ -389,7 +389,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
   
  [!code-cpp[NVC_ATL_Windowing#111](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/OtherObject.h#111)]  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry_func2"></a>  COM_INTERFACE_ENTRY_FUNC  
  A general mechanism for hooking into ATL's `QueryInterface` logic.  
@@ -415,7 +415,7 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
   
  When your function is called, `pv` points to your class object. The `riid` parameter refers to the interface being queried for, `ppv` is the pointer to the location where the function should store the pointer to the interface, and `dw` is the parameter you specified in the entry. The function should set \* `ppv` to **NULL** and return **E_NOINTERFACE** or **S_FALSE** if it chooses not to return an interface. With **E_NOINTERFACE**, COM map processing terminates. With **S_FALSE**, COM map processing continues, even though no interface pointer was returned. If the function returns an interface pointer, it should return `S_OK`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry_func_blind"></a>  COM_INTERFACE_ENTRY_FUNC_BLIND  
  Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to `func`.  
@@ -434,7 +434,7 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 ### Remarks  
  Any failure will cause processing to continue on the COM map. If the function returns an interface pointer, it should return `S_OK`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry_func"></a>  COM_INTERFACE_ENTRY_FUNC  
  A general mechanism for hooking into ATL's `QueryInterface` logic.  
@@ -460,7 +460,7 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
   
  When your function is called, `pv` points to your class object. The `riid` parameter refers to the interface being queried for, `ppv` is the pointer to the location where the function should store the pointer to the interface, and `dw` is the parameter you specified in the entry. The function should set \* `ppv` to **NULL** and return **E_NOINTERFACE** or **S_FALSE** if it chooses not to return an interface. With **E_NOINTERFACE**, COM map processing terminates. With **S_FALSE**, COM map processing continues, even though no interface pointer was returned. If the function returns an interface pointer, it should return `S_OK`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry_nointerface"></a>  COM_INTERFACE_ENTRY_NOINTERFACE  
  Returns **E_NOINTERFACE** and terminates COM map processing when the specified interface is queried for.  
@@ -478,7 +478,7 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
   
  The interface IID will be constructed by appending *x* to `IID_`. For example, if *x* is `IPersistStorage`, the IID will be `IID_IPersistStorage`.  
   
- See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
+ See [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md) for remarks about COM map entries.  
   
 ##  <a name="end_com_map"></a>  END_COM_MAP  
  Ends the definition of your COM interface map.  

@@ -30,4 +30,4 @@ The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package Template creates a basi
  Moves to the next step.  
   
 ## See Also  
- [Creating an Extension with a Menu Command](../Topic/Creating%20an%20Extension%20with%20a%20Menu%20Command.md)
+ [Creating an Extension with a Menu Command](http://msdn.microsoft.com/library/f97104c8-2bcb-45c7-a3c9-85abeda8df98)

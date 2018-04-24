@@ -51,4 +51,4 @@ namespace MyNamespace
 ```  
   
 ## See Also  
- [Casting and Type Conversions](../Topic/Casting%20and%20Type%20Conversions%20\(C%23%20Programming%20Guide\).md)
+ [Casting and Type Conversions](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)

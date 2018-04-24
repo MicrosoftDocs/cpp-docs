@@ -56,7 +56,7 @@ inline BOOL AtlCanonicalizeUrl(
  Pointer to a variable that contains the length in characters of `szCanonicalized`. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATL_URL Flags](../Topic/ATL_URL%20Flags.md).  
+ Flags controlling the behavior of this function. See [ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7).  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
@@ -98,7 +98,7 @@ inline BOOL AtlCombineUrl(
  Pointer to a variable that contains the length in characters of `szBuffer`. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATL_URL Flags](../Topic/ATL_URL%20Flags.md).  
+ Flags controlling the behavior of this function. See [ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7).  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
@@ -144,7 +144,7 @@ inline BOOL AtlEscapeUrl(
  The size of the buffer `lpszStringOut`.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATL_URL Flags](../Topic/ATL_URL%20Flags.md).  
+ Flags controlling the behavior of this function. See [ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7).  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
@@ -163,10 +163,10 @@ inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
   
 ### Parameters  
  *m_nScheme*  
- The [ATL_URL_SCHEME](../Topic/ATL_URL_SCHEME.md) value identifying the scheme for which you want to obtain the port number.  
+ The [ATL_URL_SCHEME](~/atl/reference/atl-url-scheme-enum.md) value identifying the scheme for which you want to obtain the port number.  
   
 ### Return Value  
- The [ATL_URL_PORT](../Topic/ATL_URL_PORT.md) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
+ The [ATL_URL_PORT](http://msdn.microsoft.com/library/11aeed23-5948-410b-9ce4-c7670a1151f6) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
   
 ### Requirements  
  **Header:** atlutil.h  

@@ -30,6 +30,6 @@ A method in a structure was declared as `Protected` or `Protected Friend`.
 -   Declare methods inside structures as `Public` or `Private`.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Protected](../Topic/Protected%20\(Visual%20Basic\).md)   
- [Friend](../Topic/Friend%20\(Visual%20Basic\).md)
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)   
+ [Protected](http://msdn.microsoft.com/library/74ad3d56-309f-49d2-b60c-1d0157d010e8)   
+ [Friend](http://msdn.microsoft.com/library/b664605e-1c79-4728-b996-aa59c50846bc)

@@ -35,7 +35,7 @@ A `From` or `Aggregate` clause has been specified without an `In` operator. You 
     ```  
   
 ## See Also  
- [From Clause](../Topic/From%20Clause%20\(Visual%20Basic\).md)   
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [From Clause](http://msdn.microsoft.com/library/83e3665e-68a0-4540-a3a3-3d777a0f95d5)   
+ [Aggregate Clause](http://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb)   
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)

@@ -30,6 +30,6 @@ manager: "wpickett"
 -   Declare `ParamArray` parameters using the `ByVal` modifier.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [ByRef](../Topic/ByRef%20\(Visual%20Basic\).md)   
- [ByVal](../Topic/ByVal%20\(Visual%20Basic\).md)
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)   
+ [ByRef](http://msdn.microsoft.com/library/4692e032-46f3-4e41-b0fa-3004364d9138)   
+ [ByVal](http://msdn.microsoft.com/library/1eaf4e58-b305-4785-9e3d-e416b9c75598)

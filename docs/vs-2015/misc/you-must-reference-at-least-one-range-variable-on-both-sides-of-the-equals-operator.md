@@ -30,9 +30,9 @@ You must reference at least one range variable on both sides of the 'Equals' ope
  **Error ID:** BC36622  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)   
- [Join Clause](../Topic/Join%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)   
- [From Clause](../Topic/From%20Clause%20\(Visual%20Basic\).md)   
- [Select Clause](../Topic/Select%20Clause%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)   
+ [Join Clause](http://msdn.microsoft.com/library/6dd37936-b27c-4e00-98ad-154b23f4de64)   
+ [Group Join Clause](http://msdn.microsoft.com/library/37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c)   
+ [From Clause](http://msdn.microsoft.com/library/83e3665e-68a0-4540-a3a3-3d777a0f95d5)   
+ [Select Clause](http://msdn.microsoft.com/library/27a3f61c-5960-4692-9b91-4d0c4b6178fe)

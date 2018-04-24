@@ -24,13 +24,13 @@ manager: "wpickett"
 # Compiler Error CS0208
 Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')  
   
- Even when used with the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword, taking the address of a managed object, getting the size of a managed object, or declaring a pointer to a managed type is not allowed. A managed type is:  
+ Even when used with the [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) keyword, taking the address of a managed object, getting the size of a managed object, or declaring a pointer to a managed type is not allowed. A managed type is:  
   
 -   any reference type  
   
 -   any struct that contains a reference type as a field or property  
   
- For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md) and [sizeof](../Topic/sizeof%20\(C%23%20Reference\).md).  
+ For more information, see [Unsafe Code and Pointers](http://msdn.microsoft.com/library/b0fcca10-a92d-4f2a-835b-b0ccae6739ee) and [sizeof](http://msdn.microsoft.com/library/c548592c-677c-4f40-a4ce-e613f7529141).  
   
 ## Example  
  The following sample generates CS0208:  
@@ -76,4 +76,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [sizeof](../Topic/sizeof%20\(C%23%20Reference\).md)
+ [sizeof](http://msdn.microsoft.com/library/c548592c-677c-4f40-a4ce-e613f7529141)

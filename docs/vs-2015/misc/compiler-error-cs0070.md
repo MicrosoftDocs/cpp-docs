@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0070
 The event 'event' can only appear on the left hand side of += or -= (except when used from within the type 'type')  
   
- Outside of the class it is defined in, an [event](../Topic/event%20\(C%23%20Reference\).md) can only add or subtract references. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ Outside of the class it is defined in, an [event](http://msdn.microsoft.com/library/7858fd85-153b-4259-85d0-6aa13c35f174) can only add or subtract references. For more information, see [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3).  
   
  The following sample generates CS0070:  
   

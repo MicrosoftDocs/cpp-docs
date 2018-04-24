@@ -30,4 +30,4 @@ The parameters or parameter types for the specified event handler do not match t
 -   Redefine the event or event handler so that the parameter lists match.  
   
 ## See Also  
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

@@ -18,14 +18,14 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # The stream passed to TextFieldParser cannot be read
-The [TextFieldParser Object](../Topic/TextFieldParser%20Object.md) cannot read the stream that has been passed to it. This may be a result of attempting to read a file that is not a text file.  
+The [TextFieldParser Object](http://msdn.microsoft.com/library/d44bd2b0-7dfc-410b-a48b-534c1e97460b) cannot read the stream that has been passed to it. This may be a result of attempting to read a file that is not a text file.  
   
 ### To correct this error  
   
 -   Check to make sure the file is a text file.  
   
 ## See Also  
- [How to: Read From Text Files with Multiple Formats](../Topic/How%20to:%20Read%20From%20Text%20Files%20with%20Multiple%20Formats%20in%20Visual%20Basic.md)   
+ [How to: Read From Text Files with Multiple Formats](http://msdn.microsoft.com/library/8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8)   
  [My.Computer.FileSystem.OpenTextFieldParser Method](http://msdn.microsoft.com/en-us/e5869f85-c078-485f-8323-8dc716494546)   
- [Parsing Text Files with the TextFieldParser Object](../Topic/Parsing%20Text%20Files%20with%20the%20TextFieldParser%20Object%20\(Visual%20Basic\).md)   
- [TextFieldParser Object](../Topic/TextFieldParser%20Object.md)
+ [Parsing Text Files with the TextFieldParser Object](http://msdn.microsoft.com/library/fc31d6e6-af0c-403f-8a00-d556b2c57567)   
+ [TextFieldParser Object](http://msdn.microsoft.com/library/d44bd2b0-7dfc-410b-a48b-534c1e97460b)

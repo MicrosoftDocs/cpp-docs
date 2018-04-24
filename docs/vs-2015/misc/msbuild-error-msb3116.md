@@ -31,4 +31,4 @@ manager: "douge"
 ## See Also  
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A>   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A>   
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)

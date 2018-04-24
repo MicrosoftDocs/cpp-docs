@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1556
 'construct' specified for Main method must be a valid class or struct  
   
- The [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option was passed an identifier that was not a class name.
+ The [/main](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) compiler option was passed an identifier that was not a class name.

@@ -80,7 +80,7 @@ void DumpClientFunction( void *userPortion, size_t blockSize );
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );  
 ```  
   
- For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client Block Hook Functions](../Topic/Client%20Block%20Hook%20Functions.md). The [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md) function can be used to return information about block types and subtypes.  
+ For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client Block Hook Functions](http://msdn.microsoft.com/library/f21c197e-565d-4e3f-9b27-4c018c9b87fc). The [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md) function can be used to return information about block types and subtypes.  
   
 ## Requirements  
   
@@ -94,7 +94,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

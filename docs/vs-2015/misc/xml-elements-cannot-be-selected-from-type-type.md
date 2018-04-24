@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # XML elements cannot be selected from type &#39;type&#39;
-An XML child element has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Child Axis Property](../Topic/XML%20Child%20Axis%20Property%20\(Visual%20Basic\).md).  
+An XML child element has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Child Axis Property](http://msdn.microsoft.com/library/89a59d00-985e-4f5c-b59f-29b47bad11cb).  
   
 ```vb  
 ' Generates an error.  
@@ -42,6 +42,6 @@ Dim var = "sample text".<child>
     ```  
   
 ## See Also  
- [XML Child Axis Property](../Topic/XML%20Child%20Axis%20Property%20\(Visual%20Basic\).md)   
- [XML Axis Properties](../Topic/XML%20Axis%20Properties%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Child Axis Property](http://msdn.microsoft.com/library/89a59d00-985e-4f5c-b59f-29b47bad11cb)   
+ [XML Axis Properties](http://msdn.microsoft.com/library/7e400e20-5d1e-4d22-a65c-9df79d5c1621)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

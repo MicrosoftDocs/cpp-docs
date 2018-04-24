@@ -40,5 +40,5 @@ A <xref:System.Net.CookieException> exception is thrown when an error is made ad
   
 ## See Also  
  <xref:System.Net.CookieException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [How to: Write a Cookie](../Topic/How%20to:%20Write%20a%20Cookie.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [How to: Write a Cookie](http://msdn.microsoft.com/library/0b155ea3-ea96-401c-977e-81cbdf7bb486)

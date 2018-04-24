@@ -34,5 +34,5 @@ A `Continue While` statement can only appear within a `For...Next` loop.
 3.  Otherwise, remove the `Continue While` statement.  
   
 ## See Also  
- [Continue Statement](../Topic/Continue%20Statement%20\(Visual%20Basic\).md)   
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)
+ [Continue Statement](http://msdn.microsoft.com/library/3ad00103-358b-4af3-a3a8-1b9ea0e995d3)   
+ [While...End While Statement](http://msdn.microsoft.com/library/b931d1ce-e8ed-44d8-a13d-92a4f5458a1e)

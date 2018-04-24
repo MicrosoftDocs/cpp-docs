@@ -20,4 +20,4 @@ caps.latest.revision: 25
 manager: "douge"
 ---
 # Walkthrough: Extending the Tool Window
-The content in this topic has been removed. To find out how to create a tool window, see [Adding a Tool Window](../Topic/Adding%20a%20Tool%20Window.md). To find out how to give dynamic visibility to a menu command, see [Dynamically Adding Menu Items](../Topic/Dynamically%20Adding%20Menu%20Items.md).
+The content in this topic has been removed. To find out how to create a tool window, see [Adding a Tool Window](http://msdn.microsoft.com/library/8e16c381-03c8-404e-92ef-3614cdf3150a). To find out how to give dynamic visibility to a menu command, see [Dynamically Adding Menu Items](http://msdn.microsoft.com/library/d281e9c9-b289-4d64-8d0a-094bac6c333c).

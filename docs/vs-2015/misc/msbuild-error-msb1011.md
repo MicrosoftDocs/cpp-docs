@@ -29,4 +29,4 @@ manager: "douge"
 1.  Include the project file name on the command line. For example, instead of typing `msbuild`, type `msbuild myapp.proj`.  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)

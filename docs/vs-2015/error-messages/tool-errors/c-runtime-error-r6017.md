@@ -42,5 +42,5 @@ unexpected multithread lock error
   
  The process received an unexpected error while trying to access a C runtime multithread lock on a system resource. This error usually occurs if the process inadvertently alters the runtime heap data. However, it can also be caused by an internal error in the runtime library or operating-system code.  
   
- To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../ide/deployment-in-visual-cpp.md).
+ To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../ide/deployment-in-visual-cpp.md).
 

@@ -26,8 +26,8 @@ manager: "douge"
   
 ### To correct this error  
   
--   Set the [\<entryPoint> Element](../Topic/%3CentryPoint%3E%20Element%20\(ClickOnce%20Application\).md) to a valid value. For more information, see [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md).  
+-   Set the [\<entryPoint> Element](http://msdn.microsoft.com/library/10ad3083-10c1-4189-a870-9bba2eab244f) to a valid value. For more information, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243)

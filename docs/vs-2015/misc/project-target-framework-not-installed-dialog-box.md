@@ -45,6 +45,6 @@ You have opened a project which targets a framework that is not installed on you
  Leaves the project unloaded from the solution. You can later install the desired Framework and then reload the project.  
   
 ## See Also  
- [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md)   
- [Troubleshooting .NET Framework Targeting Errors](../Topic/Troubleshooting%20.NET%20Framework%20Targeting%20Errors.md)   
+ [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a)   
+ [Troubleshooting .NET Framework Targeting Errors](http://msdn.microsoft.com/library/830e3e45-9a93-4279-a249-75b84599aefb)   
  [Adding references](../ide/adding-references-in-visual-cpp-projects.md)

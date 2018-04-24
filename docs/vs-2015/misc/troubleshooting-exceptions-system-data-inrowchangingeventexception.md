@@ -23,5 +23,5 @@ The exception that is thrown when calling the <xref:System.Data.DataRow.EndEdit%
   
 ## See Also  
  <xref:System.Data.InRowChangingEventException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Editing Data in Your Application](../Topic/Editing%20Data%20in%20Your%20Application.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Editing Data in Your Application](http://msdn.microsoft.com/library/87191abd-a7e7-4e2d-a010-902b7cbc91ef)

@@ -28,4 +28,4 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
   
 ## See Also  
  [NOT IN BUILD: FileGetObject Function](http://msdn.microsoft.com/en-us/3eda786b-d1ee-4b44-9dd7-0ea6bff072c0)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)

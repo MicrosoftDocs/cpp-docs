@@ -30,4 +30,4 @@ A warning ID is not valid. IDs must be integer values greater than 0.
 -   Check the warning ID supplied to make sure it is valid.  
   
 ## See Also  
- [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md)
+ [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82)

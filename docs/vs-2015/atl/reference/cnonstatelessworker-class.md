@@ -53,15 +53,15 @@ class CNonStatelessWorker
   
 |Name|Description|  
 |----------|-----------------|  
-|[CNonStatelessWorker::RequestType](#cnonstatelessworker__requesttype)|Implementation of [WorkerArchetype::RequestType](../Topic/WorkerArchetype::RequestType.md).|  
+|[CNonStatelessWorker::RequestType](#cnonstatelessworker__requesttype)|Implementation of [WorkerArchetype::RequestType](http://msdn.microsoft.com/library/22a4a478-9cbe-4230-b0b7-0f85ecb219dc).|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CNonStatelessWorker::Execute](#cnonstatelessworker__execute)|Implementation of [WorkerArchetype::Execute](../Topic/WorkerArchetype::Execute.md).|  
-|[CNonStatelessWorker::Initialize](#cnonstatelessworker__initialize)|Implementation of [WorkerArchetype::Initialize](../Topic/WorkerArchetype::Initialize.md).|  
-|[CNonStatelessWorker::Terminate](#cnonstatelessworker__terminate)|Implementation of [WorkerArchetype::Terminate](../Topic/WorkerArchetype::Terminate.md).|  
+|[CNonStatelessWorker::Execute](#cnonstatelessworker__execute)|Implementation of [WorkerArchetype::Execute](http://msdn.microsoft.com/library/f5d1de03-b034-4d54-898f-cbdedd68e04d).|  
+|[CNonStatelessWorker::Initialize](#cnonstatelessworker__initialize)|Implementation of [WorkerArchetype::Initialize](http://msdn.microsoft.com/library/5d82463f-dba9-461c-bc8d-692ff15ed17e).|  
+|[CNonStatelessWorker::Terminate](#cnonstatelessworker__terminate)|Implementation of [WorkerArchetype::Terminate](http://msdn.microsoft.com/library/9bb841f2-fed6-4808-a2af-440b25ec91db).|  
   
 ## Remarks  
  This class is a simple worker thread for use with [CThreadPool](../../atl/reference/cthreadpool-class.md). This class doesn't provide any request-handling capabilities of its own. Instead, it instantiates one instance of *Worker* per request and delegates the implementation of its methods to that instance.  
@@ -72,7 +72,7 @@ class CNonStatelessWorker
  **Header:** atlutil.h  
   
 ##  <a name="cnonstatelessworker__execute"></a>  CNonStatelessWorker::Execute  
- Implementation of [WorkerArchetype::Execute](../Topic/WorkerArchetype::Execute.md).  
+ Implementation of [WorkerArchetype::Execute](http://msdn.microsoft.com/library/f5d1de03-b034-4d54-898f-cbdedd68e04d).  
   
 ```
 void Execute(
@@ -82,10 +82,10 @@ void Execute(
 ```  
   
 ### Remarks  
- This method creates an instance of the *Worker* class on the stack and calls [Initialize](../Topic/WorkerArchetype::Initialize.md) on that object. If the initialization is successful, this method also calls [Execute](../Topic/WorkerArchetype::Execute.md) and [Terminate](../Topic/WorkerArchetype::Terminate.md) on the same object.  
+ This method creates an instance of the *Worker* class on the stack and calls [Initialize](http://msdn.microsoft.com/library/5d82463f-dba9-461c-bc8d-692ff15ed17e) on that object. If the initialization is successful, this method also calls [Execute](http://msdn.microsoft.com/library/f5d1de03-b034-4d54-898f-cbdedd68e04d) and [Terminate](http://msdn.microsoft.com/library/9bb841f2-fed6-4808-a2af-440b25ec91db) on the same object.  
   
 ##  <a name="cnonstatelessworker__initialize"></a>  CNonStatelessWorker::Initialize  
- Implementation of [WorkerArchetype::Initialize](../Topic/WorkerArchetype::Initialize.md).  
+ Implementation of [WorkerArchetype::Initialize](http://msdn.microsoft.com/library/5d82463f-dba9-461c-bc8d-692ff15ed17e).  
   
 ```
 BOOL Initialize(void* /* pvParam */) throw();
@@ -98,7 +98,7 @@ BOOL Initialize(void* /* pvParam */) throw();
  This class does not do any initialization in `Initialize`.  
   
 ##  <a name="cnonstatelessworker__requesttype"></a>  CNonStatelessWorker::RequestType  
- Implementation of [WorkerArchetype::RequestType](../Topic/WorkerArchetype::RequestType.md).  
+ Implementation of [WorkerArchetype::RequestType](http://msdn.microsoft.com/library/22a4a478-9cbe-4230-b0b7-0f85ecb219dc).  
   
 ```
 typedef Worker::RequestType RequestType;
@@ -108,7 +108,7 @@ typedef Worker::RequestType RequestType;
  This class handles the same type of work item as the class used for the *Worker* template parameter. See [CNonStatelessWorker Overview](../../atl/reference/cnonstatelessworker-class.md) for details.  
   
 ##  <a name="cnonstatelessworker__terminate"></a>  CNonStatelessWorker::Terminate  
- Implementation of [WorkerArchetype::Terminate](../Topic/WorkerArchetype::Terminate.md).  
+ Implementation of [WorkerArchetype::Terminate](http://msdn.microsoft.com/library/9bb841f2-fed6-4808-a2af-440b25ec91db).  
   
 ```
 void Terminate(void* /* pvParam */) throw();

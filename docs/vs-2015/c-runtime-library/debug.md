@@ -31,7 +31,7 @@ The latest version of this topic can be found at [_DEBUG](https://docs.microsoft
   
 The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These options specify debug versions of the C run-time library.  
   
- For more information, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+ For more information, see [CRT Debugging Techniques](http://msdn.microsoft.com/library/9be561f6-14a8-44ff-925d-d911d5b8e6ff).  
   
 ## See Also  
  [Control Flags](../c-runtime-library/control-flags.md)

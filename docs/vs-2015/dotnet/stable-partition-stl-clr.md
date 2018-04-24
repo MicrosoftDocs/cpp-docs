@@ -37,7 +37,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `stable_partition`. For more information, see [stable_partition](../Topic/stable_partition.md).  
+ This function behaves the same as the STL function `stable_partition`. For more information, see [stable_partition](http://msdn.microsoft.com/library/224e97bf-b752-4c10-aa8c-95031dd535de).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

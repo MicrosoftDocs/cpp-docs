@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS2012
 Cannot open 'file' for writing  
   
- While using the [/bugreport:](../Topic/-bugreport%20\(C%23%20Compiler%20Options\).md)`file` compiler option, the file could not be opened for writing. Make sure you specified a valid file name and that the file is not read-only.
+ While using the [/bugreport:](http://msdn.microsoft.com/library/f39665e3-4f6f-4357-88a2-3274c7bec0c1)`file` compiler option, the file could not be opened for writing. Make sure you specified a valid file name and that the file is not read-only.

@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0009
 Metadata file 'file' could not be opened — 'description'  
   
- The file specified with the [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md) compiler option does not contain valid metadata.
+ The file specified with the [/reference](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4) compiler option does not contain valid metadata.

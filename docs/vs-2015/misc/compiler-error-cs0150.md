@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0150
 A constant value is expected  
   
- A variable was found where a constant was expected. For more information, see [switch](../Topic/switch%20\(C%23%20Reference\).md).  
+ A variable was found where a constant was expected. For more information, see [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).  
   
  The following sample generates CS0150:  
   

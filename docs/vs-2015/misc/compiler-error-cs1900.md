@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1900
 Warning level must be in the range 0-4  
   
- The [/warn](../Topic/-warn%20\(C%23%20Compiler%20Options\).md) compiler option can only take one of five possible values (0, 1, 2, 3, or 4). Any other value passed to **/warn** will result in CS1900.  
+ The [/warn](http://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71) compiler option can only take one of five possible values (0, 1, 2, 3, or 4). Any other value passed to **/warn** will result in CS1900.  
   
  The following sample generates CS1900:  
   

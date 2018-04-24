@@ -32,5 +32,5 @@ A declaration statement is missing a declaration keyword. One possible cause is 
 2.  Start the statement with the appropriate declaration keyword.  
   
 ## See Also  
- [Declared Elements](../Topic/Declared%20Elements%20in%20Visual%20Basic.md)   
+ [Declared Elements](http://msdn.microsoft.com/library/0d1d1bb5-ac0b-485f-8922-cdcec5574c79)   
  [Arrays cannot be declared with 'New'](../misc/arrays-cannot-be-declared-with-new.md)

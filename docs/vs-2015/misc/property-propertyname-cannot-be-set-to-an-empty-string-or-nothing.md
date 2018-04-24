@@ -23,6 +23,6 @@ The property requires a value other than an empty string ("") or `Nothing`. This
 -   Supply a valid value.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

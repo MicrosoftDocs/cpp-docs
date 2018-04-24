@@ -29,7 +29,7 @@ The latest version of this topic can be found at [Compiler Error C3205](https://
   
 argument list for template parameter 'parameter' is missing  
   
- A [template](../Topic/Template%20Specifications.md) parameter is missing.  
+ A [template](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753) parameter is missing.  
   
  The following sample generates C3205:  
   

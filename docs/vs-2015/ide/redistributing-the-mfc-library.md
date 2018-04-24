@@ -41,7 +41,7 @@ If you dynamically link your application to the MFC library, you must redistribu
   
  If your application uses the MFC database classes (for example, [CRecordset Class](../mfc/reference/crecordset-class.md) and [CRecordView Class](../mfc/reference/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
   
- If your MFC application uses Windows Forms controls, you must redistribute mfcmifc80.dll with your application. This DLL is a strong-name-signed .NET assembly that can be redistributed with an application in its application local folder or by deploying it to the Global Assembly Cache (GAC) by using the [Gacutil.exe (Global Assembly Cache Tool)](../Topic/Gacutil.exe%20\(Global%20Assembly%20Cache%20Tool\).md).  
+ If your MFC application uses Windows Forms controls, you must redistribute mfcmifc80.dll with your application. This DLL is a strong-name-signed .NET assembly that can be redistributed with an application in its application local folder or by deploying it to the Global Assembly Cache (GAC) by using the [Gacutil.exe (Global Assembly Cache Tool)](http://msdn.microsoft.com/library/4c7be9c8-72ae-481f-a01c-1a4716806e99).  
   
  If you redistribute an MFC DLL, make sure to redistribute the retail version and not the debug version. Debug versions of the DLLs are not redistributable. The names of debug versions of the MFC DLLs end with a "d", for example, Mfc140d.dll.  
   

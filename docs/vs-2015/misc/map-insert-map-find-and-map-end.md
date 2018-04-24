@@ -20,6 +20,6 @@ ms.author: "ghogen"
 manager: "douge"
 ---
 # map::insert, map::find, and map::end
-Topic deprecated, see [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md), [map::insert](../Topic/map::insert.md), [map::find](../Topic/map::find.md), and [map::end](../Topic/map::end.md).  
+Topic deprecated, see [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md), [map::insert](http://msdn.microsoft.com/library/44e98187-779a-49e6-9d27-654754f2f1b4), [map::find](http://msdn.microsoft.com/library/c4fa43ca-21a0-4bf5-ba71-e757a6e8bdca), and [map::end](http://msdn.microsoft.com/library/cdb836d4-47c7-4907-b2d3-f7f3672e0504).  
   
 ## Syntax

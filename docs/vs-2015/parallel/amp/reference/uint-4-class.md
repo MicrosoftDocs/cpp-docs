@@ -306,7 +306,7 @@ class uint_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_4::uint_4 Constructor](../Topic/uint_4::uint_4%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_4::uint_4 Constructor](http://msdn.microsoft.com/library/1f9cb0da-7a7e-4353-a9b7-de114eb68c56)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -466,7 +466,7 @@ class uint_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_4::size Constant](../Topic/uint_4::size%20Constant.md)||  
+|[uint_4::size Constant](http://msdn.microsoft.com/library/cd6c630c-d3a5-4f9c-8a0d-f9ba3f0931da)||  
   
 ### Public Data Members  
   

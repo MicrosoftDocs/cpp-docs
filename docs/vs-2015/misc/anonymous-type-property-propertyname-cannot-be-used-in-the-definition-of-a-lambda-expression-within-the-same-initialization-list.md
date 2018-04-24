@@ -65,5 +65,5 @@ Properties defined in the initialization list of an anonymous type cannot be par
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)   
+ [Anonymous Types](http://msdn.microsoft.com/library/7b87532c-4b3e-4398-8503-6ea9d67574a4)

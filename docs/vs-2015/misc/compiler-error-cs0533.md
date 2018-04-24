@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS0533
 'derived-class member' hides inherited abstract member 'base-class member'  
   
- A base [class](../Topic/class%20\(C%23%20Reference\).md) method is hidden. Check the syntax of your declaration to see if it is correct.  
+ A base [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) method is hidden. Check the syntax of your declaration to see if it is correct.  
   
- For more information, see [base](../Topic/base%20\(C%23%20Reference\).md).  
+ For more information, see [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5).  
   
  The following sample generates CS0533:  
   

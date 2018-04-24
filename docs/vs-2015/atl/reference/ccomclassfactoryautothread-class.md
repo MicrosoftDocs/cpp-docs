@@ -53,7 +53,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 ## Remarks  
  `CComClassFactoryAutoThread` is similar to [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), but allows objects to be created in multiple apartments. To take advantage of this support, derive your EXE module from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
   
- ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](../Topic/DECLARE_CLASSFACTORY.md), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactoryAutoThread`, specify the [DECLARE_CLASSFACTORY_AUTO_THREAD](../Topic/DECLARE_CLASSFACTORY_AUTO_THREAD.md) macro in your object's class definition. For example:  
+ ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/library/51a6b925-07c0-4d3a-9174-0b8c808975e4), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactoryAutoThread`, specify the [DECLARE_CLASSFACTORY_AUTO_THREAD](http://msdn.microsoft.com/library/19d7105e-03e8-4412-9f5e-5384c8a5e18f) macro in your object's class definition. For example:  
   
  [!code-cpp[NVC_ATL_COM#9](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_COM/Cpp/MyAutoClass.h#9)]  
   
@@ -119,7 +119,7 @@ STDMETHODIMP LockServer(BOOL fLock);
  [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
+ [CComGlobalsThreadModel](http://msdn.microsoft.com/library/f112382f-da0a-4bfe-bb49-80f9fd908d47)   
  [Class Overview](../../atl/atl-class-overview.md)
 
 

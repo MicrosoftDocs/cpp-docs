@@ -239,7 +239,7 @@ The articles in this part of the documentation contain information about a subse
 |Fatal Error C1508|compiler limit: '`function`': more than 65535 argument bytes|  
 |[Fatal Error C1509](../../error-messages/compiler-errors-1/fatal-error-c1509.md)|compiler limit: too many exception handler states in function '`function`'; simplify function|  
 |Fatal Error C1510|Cannot open language resource clui.dll|  
-|[Fatal Error C1600](../Topic/Fatal%20Error%20C1600.md)|unsupported data type|  
+|[Fatal Error C1600](http://msdn.microsoft.com/library/9176fb6c-75ee-46db-aea0-4188db4d4de6)|unsupported data type|  
 |[Fatal Error C1601](../../error-messages/compiler-errors-1/fatal-error-c1601.md)|unsupported inline assembly opcode|  
 |[Fatal Error C1602](../../error-messages/compiler-errors-1/fatal-error-c1602.md)|unsupported intrinsic|  
 |[Fatal Error C1603](../../error-messages/compiler-errors-1/fatal-error-c1603.md)|inline assembly branch target out of range by `number` bytes|  

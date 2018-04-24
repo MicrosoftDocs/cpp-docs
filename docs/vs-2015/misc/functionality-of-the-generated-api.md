@@ -18,4 +18,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Functionality of the Generated API
-This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](../Topic/Navigating%20and%20Updating%20a%20Model%20in%20Program%20Code.md).
+This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](http://msdn.microsoft.com/library/1427ae91-be8a-4ce7-85df-00038faa2cbb).

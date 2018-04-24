@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1011
 Empty character literal  
   
- A [char](../Topic/char%20\(C%23%20Reference\).md) was declared and initialized to a null. The initialization of a `char` must specify a character.  
+ A [char](http://msdn.microsoft.com/library/b51cf4fb-124c-4067-af48-afbac122b228) was declared and initialized to a null. The initialization of a `char` must specify a character.  
   
  The following sample generates CS1011:  
   

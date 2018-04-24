@@ -27,6 +27,6 @@ manager: "douge"
 -   If you have defined a custom Toolset in the registry, make sure that it is in valid registry format, that is has the correct `ToolsVersion` name and that the correct `MSBuildBinPath` or `MSBuildToolsPath` value.  
   
 ## See Also  
- [Standard and Custom Toolset Configurations](../Topic/Standard%20and%20Custom%20Toolset%20Configurations.md)   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Standard and Custom Toolset Configurations](http://msdn.microsoft.com/library/15a048c8-5ad3-448e-b6e9-e3c5d7147ed2)   
+ [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653)   
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

@@ -30,4 +30,4 @@ The `Static` modifier cannot be applied to entire procedures.
 -   Use the `Static` modifier to declare individual items within a procedure as static.  
   
 ## See Also  
- [Static](../Topic/Static%20\(Visual%20Basic\).md)
+ [Static](http://msdn.microsoft.com/library/19013910-4658-47b6-a22e-1744b527979e)

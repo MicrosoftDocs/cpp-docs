@@ -30,5 +30,5 @@ If a property specifies `Default`, all properties overloaded on that name must a
 -   Make sure all of the overloaded properties are declared `Default`.  
   
 ## See Also  
- [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)   
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Considerations in Overloading Procedures](http://msdn.microsoft.com/library/a2001248-10d0-42c5-b0ce-eeedc987319f)   
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

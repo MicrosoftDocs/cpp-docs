@@ -34,5 +34,5 @@ An `End Function` statement appears in your code with no matching `Function` pro
 3.  Move the `End Function` to the appropriate place in the code.  
   
 ## See Also  
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

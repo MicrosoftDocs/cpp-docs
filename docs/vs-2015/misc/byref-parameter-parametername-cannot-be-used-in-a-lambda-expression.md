@@ -48,4 +48,4 @@ A lambda expression declared within a `Sub` or function cannot use any `ByRef` p
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)

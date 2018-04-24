@@ -25,4 +25,4 @@ The record number in `a FileGet`, `FilePut`, `FileGetObject`, or `FilePutObject`
 1.  Check the calculations used in generating the record number. Verify spelling of the variables containing the record number or used in calculating record numbers. A misspelled variable name is implicitly declared and initialized to zero, unless you used `Option Explicit On` in the module.  
   
 ## See Also  
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)
+ [Option Explicit Statement](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc)

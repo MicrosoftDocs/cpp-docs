@@ -76,7 +76,7 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
  This class replaces the obsolete [CComModule Class](../../atl/reference/ccommodule-class.md) used in earlier versions of ATL.  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](http://msdn.microsoft.com/library/23af4915-ecdb-4ca6-9c89-7e01c3e762e7)  
   
  `CAtlModule`  
   
@@ -313,7 +313,7 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
  Similar to [CAtlModule::UpdateRegistryFromResourceD](#catlmodule__updateregistryfromresourced) except `CAtlModule::UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).  
   
 ## See Also  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)   
+ [_ATL_MODULE](http://msdn.microsoft.com/library/23af4915-ecdb-4ca6-9c89-7e01c3e762e7)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)   
  [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)

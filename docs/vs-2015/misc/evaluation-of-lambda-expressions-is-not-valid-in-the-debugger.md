@@ -30,6 +30,6 @@ A lambda expression has been entered in the **Watch** or **Immediate** window du
 -   Test lambda expressions in the Code Editor.  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
+ [Lambda Expressions](http://msdn.microsoft.com/library/137064b0-3928-4bfa-ba71-c3f9cbd951e2)   
  [Closer Look: What If... Testing Code in the Immediate Window](http://msdn.microsoft.com/en-us/3613a627-09a4-44e1-9cc2-f2a29f4e0744)   
- [Debugging Your Visual Basic Application](../Topic/Debugging%20Your%20Visual%20Basic%20Application.md)
+ [Debugging Your Visual Basic Application](http://msdn.microsoft.com/library/904760b8-9fe9-42a7-9d65-d93774253219)

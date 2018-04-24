@@ -30,6 +30,6 @@ An `On Error` statement does not contain either a `Resume` clause or a `GoTo` cl
 -   Add either a `Resume` clause or a `GoTo` clause to the `On Error` statement.  
   
 ## See Also  
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)   
- [Resume Statement](../Topic/Resume%20Statement.md)   
- [GoTo Statement](../Topic/GoTo%20Statement.md)
+ [On Error Statement](http://msdn.microsoft.com/library/ff947930-fb84-40cf-bd66-1ea219561d5c)   
+ [Resume Statement](http://msdn.microsoft.com/library/e24d058b-1a5c-4274-acb9-7d295d3ea537)   
+ [GoTo Statement](http://msdn.microsoft.com/library/313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d)

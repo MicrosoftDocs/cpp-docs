@@ -30,4 +30,4 @@ Module blocks begin with a `Module` statement and end with an `End Module` const
 -   Make sure that the module block begins with a `Module` statement.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

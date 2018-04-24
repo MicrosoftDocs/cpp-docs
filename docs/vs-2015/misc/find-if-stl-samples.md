@@ -20,6 +20,6 @@ ms.author: "ghogen"
 manager: "douge"
 ---
 # find_if (STL Samples)
-Topic deprecated, see [find_if](../Topic/find_if.md).  
+Topic deprecated, see [find_if](http://msdn.microsoft.com/library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a).  
   
 ## Syntax

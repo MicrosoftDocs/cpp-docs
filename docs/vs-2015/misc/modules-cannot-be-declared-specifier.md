@@ -30,4 +30,4 @@ A module was declared with an invalid access modifier.
 -   Replace the access modifier with a valid access modifier, such as `Public` or `Friend`.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

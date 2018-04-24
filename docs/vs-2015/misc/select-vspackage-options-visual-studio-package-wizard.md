@@ -58,4 +58,4 @@ This step lets you select optional components for your VSPackage.
  [Command Options, Visual Studio Package Wizard](../misc/command-options-visual-studio-package-wizard.md)   
  [Tool Window Options, Visual Studio Package Wizard](../misc/tool-window-options-visual-studio-package-wizard.md)   
  [Editor Options, Visual Studio Package Wizard](../misc/editor-options-visual-studio-package-wizard.md)   
- [Creating an Extension with a Menu Command](../Topic/Creating%20an%20Extension%20with%20a%20Menu%20Command.md)
+ [Creating an Extension with a Menu Command](http://msdn.microsoft.com/library/f97104c8-2bcb-45c7-a3c9-85abeda8df98)

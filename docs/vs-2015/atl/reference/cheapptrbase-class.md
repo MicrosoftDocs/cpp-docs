@@ -71,8 +71,8 @@ class CHeapPtrBase
 |Name|Description|  
 |----------|-----------------|  
 |[CHeapPtrBase::operator T*](#cheapptrbase__operator_t_star)|The cast operator.|  
-|[CHeapPtrBase::operator &](../Topic/CHeapPtrBase::operator%20&.md)|The & operator.|  
-|[CHeapPtrBase::operator ->](../Topic/CHeapPtrBase::operator%20-%3E.md)|The pointer-to-member operator.|  
+|[CHeapPtrBase::operator &](http://msdn.microsoft.com/library/a6cc3bd5-45e7-4933-8702-547ce726ae43)|The & operator.|  
+|[CHeapPtrBase::operator ->](http://msdn.microsoft.com/library/e2d981d9-88cb-4004-aad4-7e23045e5c30)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   

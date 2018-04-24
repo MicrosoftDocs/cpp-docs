@@ -30,4 +30,4 @@ You have provided an argument list for an expression that is not an array or met
 -   Remove the argument list.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](http://msdn.microsoft.com/library/ff275aff-aa13-40df-bd4c-63486db8c1e9)

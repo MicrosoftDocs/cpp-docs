@@ -32,4 +32,4 @@ You would want to hide properties that have child properties:
 2.  Set the `pfHide` parameter in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> to `TRUE`.  
   
 ## See Also  
- [Properties Display Grid](../Topic/Properties%20Display%20Grid.md)
+ [Properties Display Grid](http://msdn.microsoft.com/library/318e41b0-acf5-4842-b85e-421c9d5927c5)

@@ -23,6 +23,6 @@ ms.author: "susanno"
 manager: "douge"
 ---
 # Configuring code coverage
-The material in this group of topics has been consolidated into [Using Code Coverage to Determine How Much Code is being Tested](../Topic/Using%20Code%20Coverage%20to%20Determine%20How%20Much%20Code%20is%20being%20Tested.md).  
+The material in this group of topics has been consolidated into [Using Code Coverage to Determine How Much Code is being Tested](http://msdn.microsoft.com/library/800fc739-acd2-4242-84cb-1d83b4d82cf9).  
   
 ## Related Sections

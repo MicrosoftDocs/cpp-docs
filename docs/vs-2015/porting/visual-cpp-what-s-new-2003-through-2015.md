@@ -67,7 +67,7 @@ In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes c
   
      The /Zg compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.  
   
--   You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe. See [VSTest.Console.exe command-line options](../Topic/VSTest.Console.exe%20command-line%20options.md).  
+-   You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe. See [VSTest.Console.exe command-line options](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
 -   **mutable keyword**  
   

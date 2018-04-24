@@ -25,4 +25,4 @@ An error occurred at the printer, but no other information was returned to the c
 -   Physically examine the printer. Make sure all connections between the computer and the printer are solid. Most printers provide a display for error information such as "Offline" or "Out of paper."  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

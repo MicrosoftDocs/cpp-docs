@@ -26,16 +26,16 @@ manager: "ghogen"
 The latest version of this topic can be found at [How to: Do DDX-DDV Data Binding with Windows Forms](https://docs.microsoft.com/cpp/dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms).  
   
   
-DDX_ManagedControl](../Topic/DDX_ManagedControl.md) calls [CWinFormsControl::CreateManagedControl](../Topic/CWinFormsControl::CreateManagedControl.md) to create a control matching the resource control ID. If you use `DDX_ManagedControl` for a `CWinFormsControl` control (in wizard-generated code), you should not call `CreateManagedControl` explicitly for the same control.  
+DDX_ManagedControl](http://msdn.microsoft.com/library/61b55a90-c993-478e-9dea-db27fbf0e193) calls [CWinFormsControl::CreateManagedControl](http://msdn.microsoft.com/library/066d3e8d-d912-45c7-b36b-f7a48dd75ce7) to create a control matching the resource control ID. If you use `DDX_ManagedControl` for a `CWinFormsControl` control (in wizard-generated code), you should not call `CreateManagedControl` explicitly for the same control.  
   
- Call `DDX_ManagedControl` in [CWnd::DoDataExchange](../Topic/CWnd::DoDataExchange.md) to create controls from resource IDs. For data exchange, you do not need to use the DDX/DDV functions with Windows Forms controls. Instead, you can place code to access the properties of the managed control in the `DoDataExchange` method of your dialog (or view) class, as in the following example.  
+ Call `DDX_ManagedControl` in [CWnd::DoDataExchange](http://msdn.microsoft.com/library/40b0821d-9e57-46ed-9522-b57b367ab08d) to create controls from resource IDs. For data exchange, you do not need to use the DDX/DDV functions with Windows Forms controls. Instead, you can place code to access the properties of the managed control in the `DoDataExchange` method of your dialog (or view) class, as in the following example.  
   
  The following example shows how to bind a native C++ string to a .NET user control.  
   
 ## Example  
  The following is an example of DDX/DDV data binding of an MFC string `m_str` with the user-defined `NameText` property of a .NET user control.  
   
- The control is created when [CDialog::OnInitDialog](../Topic/CDialog::OnInitDialog.md) calls `CMyDlg::DoDataExchange` for the first time, so any code that references `m_UserControl` must come after the `DDX_ManagedControl` call.  
+ The control is created when [CDialog::OnInitDialog](http://msdn.microsoft.com/library/76d86e5f-435d-44d0-89ec-c2296367d058) calls `CMyDlg::DoDataExchange` for the first time, so any code that references `m_UserControl` must come after the `DDX_ManagedControl` call.  
   
  You can implement this code in the MFC01 application you created in [How to: Create the User Control and Host in a Dialog Box](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).  
   
@@ -91,6 +91,6 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
   
 ## See Also  
  [CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)   
- [DDX_ManagedControl](../Topic/DDX_ManagedControl.md)   
- [CWnd::DoDataExchange](../Topic/CWnd::DoDataExchange.md)
+ [DDX_ManagedControl](http://msdn.microsoft.com/library/61b55a90-c993-478e-9dea-db27fbf0e193)   
+ [CWnd::DoDataExchange](http://msdn.microsoft.com/library/40b0821d-9e57-46ed-9522-b57b367ab08d)
 

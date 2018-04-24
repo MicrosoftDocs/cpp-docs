@@ -26,5 +26,5 @@ This error generally occurs when the directory or files listed in the **Look in*
 1.  Use the **Look In** dialog box to browse to the directory or file name to search rather than typing in the path or file name. You can access the **Look In** dialog box by choosing the ellipsis button next to the **Look in** list.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)

@@ -41,7 +41,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 -   [Subclass an existing window](#_atl_subclassing_an_existing_window)  
   
 ##  <a name="_atl_creating_a_window_based_on_a_new_windows_class"></a> Creating a Window Based on a New Windows Class  
- `CWindowImpl` contains the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) macro to declare Windows class information. This macro implements the `GetWndClassInfo` function, which uses [CWndClassInfo](../atl/reference/cwndclassinfo-class.md) to define the information of a new Windows class. When `CWindowImpl::Create` is called, this Windows class is registered and a new window is created.  
+ `CWindowImpl` contains the [DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971) macro to declare Windows class information. This macro implements the `GetWndClassInfo` function, which uses [CWndClassInfo](../atl/reference/cwndclassinfo-class.md) to define the information of a new Windows class. When `CWindowImpl::Create` is called, this Windows class is registered and a new window is created.  
   
 > [!NOTE]
 >  `CWindowImpl` passes **NULL** to the `DECLARE_WND_CLASS` macro, which means ATL will generate a Windows class name. To specify your own name, pass a string to `DECLARE_WND_CLASS` in your `CWindowImpl`-derived class.  
@@ -57,7 +57,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 >  To override the default Windows class information, implement the `GetWndClassInfo` method in your derived class by setting the `CWndClassInfo` members to the appropriate values.  
   
 ##  <a name="_atl_superclassing_an_existing_windows_class"></a> Superclassing an Existing Windows Class  
- The [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro allows you to create a window that superclasses an existing Windows class. Specify this macro in your `CWindowImpl`-derived class. Like any other ATL window, messages are handled by a message map.  
+ The [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd) macro allows you to create a window that superclasses an existing Windows class. Specify this macro in your `CWindowImpl`-derived class. Like any other ATL window, messages are handled by a message map.  
   
  When you use `DECLARE_WND_SUPERCLASS`, a new Windows class will be registered. This new class will be the same as the existing class you specify, but will replace the window procedure with `CWindowImpl::WindowProc` (or with your function that overrides this method).  
   

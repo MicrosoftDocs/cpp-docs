@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0023
 Operator 'operator' cannot be applied to operand of type 'type'  
   
- An attempt was made to apply an operator to a variable whose type was not designed to work with the operator. For more information, see [Types](../Topic/Types%20\(C%23%20Programming%20Guide\).md) and [C# Operators](../Topic/C%23%20Operators.md).  
+ An attempt was made to apply an operator to a variable whose type was not designed to work with the operator. For more information, see [Types](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad) and [C# Operators](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43).  
   
  The following sample generates CS0023:  
   

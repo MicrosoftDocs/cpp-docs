@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1630
 Invalid option 'option' for /errorreport; must be prompt, send, queue, or none  
   
- The command line option [/errorreport](../Topic/-errorreport%20\(C%23%20Compiler%20Options\).md) must be followed by **prompt**, **send**, **queue**, or **none**, specifying what action you want taken when an internal compiler error occurs.
+ The command line option [/errorreport](http://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf) must be followed by **prompt**, **send**, **queue**, or **none**, specifying what action you want taken when an internal compiler error occurs.

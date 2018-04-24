@@ -24,6 +24,6 @@ An attempt has been made to read from a file, but the specified encoding is not 
   
 ## See Also  
  [My.Computer.FileSystem.ReadAllText Method](http://msdn.microsoft.com/en-us/3a7ac8be-fb1d-4087-bc65-167d6754d57f)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
- [File Encodings](../Topic/File%20Encodings%20\(Visual%20Basic\).md)   
- [How to: Read from Text Files](../Topic/How%20to:%20Read%20From%20Text%20Files%20in%20Visual%20Basic.md)
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)   
+ [File Encodings](http://msdn.microsoft.com/library/ea2c5f5f-bbb1-4150-9928-b9951fa6bc57)   
+ [How to: Read from Text Files](http://msdn.microsoft.com/library/735fe9d7-0f7a-4185-ba02-f35e580ec4b8)

@@ -181,7 +181,7 @@ C:\Documents\2014\ <D:\Documents\2013\Reports\: true
  To run this code, paste it into the full example above and uncomment the line that calls it in main.  
   
 ### Converting between path and string types  
- A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](../Topic/basic_ofstream::open.md), as shown in this example:  
+ A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](http://msdn.microsoft.com/library/beb5b59b-2357-4088-a894-b56a0e06c1df), as shown in this example:  
   
 ```cpp  
 wchar_t* p = L"C:/test";  

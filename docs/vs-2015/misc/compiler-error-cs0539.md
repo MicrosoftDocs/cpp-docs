@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0539
 'member' in explicit interface declaration is not a member of interface  
   
- An attempt was made to explicitly declare an [interface](../Topic/interface%20\(C%23%20Reference\).md) member that does not exist. You should either delete the declaration or change it so that it refers to a valid interface member.  
+ An attempt was made to explicitly declare an [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) member that does not exist. You should either delete the declaration or change it so that it refers to a valid interface member.  
   
  The following sample generates CS0539:  
   

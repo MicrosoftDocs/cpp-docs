@@ -27,5 +27,5 @@ The exception that is thrown when one thread is waiting on a Mutex object, and a
 ## See Also  
  <xref:System.Threading.AbandonedMutexException>   
  <xref:System.Threading.Mutex>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)

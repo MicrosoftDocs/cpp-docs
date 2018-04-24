@@ -52,5 +52,5 @@ public class Test
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](../Topic/Constraints%20on%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md)   
- [Boxing and Unboxing](../Topic/Boxing%20and%20Unboxing%20\(C%23%20Programming%20Guide\).md)
+ [Constraints on Type Parameters](http://msdn.microsoft.com/library/141b003e-1ddb-4e1c-bcb2-e1c3870e6a51)   
+ [Boxing and Unboxing](http://msdn.microsoft.com/library/8da9bbf4-bce9-4b08-b2e5-f64c11c56514)

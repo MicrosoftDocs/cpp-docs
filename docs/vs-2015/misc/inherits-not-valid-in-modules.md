@@ -30,5 +30,5 @@ An `Inherits` statement occurs inside a module. Modules cannot inherit from clas
 -   Remove the `Inherits` statement, or retype the module as a class.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)   
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

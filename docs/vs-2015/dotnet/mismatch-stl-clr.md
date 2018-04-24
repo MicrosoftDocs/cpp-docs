@@ -42,7 +42,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `mismatch`. For more information, see [mismatch](../Topic/mismatch.md).  
+ This function behaves the same as the STL function `mismatch`. For more information, see [mismatch](http://msdn.microsoft.com/library/a9fe78f3-9a86-44dc-9400-0c2ed1083323).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

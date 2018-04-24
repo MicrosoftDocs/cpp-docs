@@ -218,7 +218,7 @@ lazy found at position 36
  [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](../../c-runtime-library/reference/strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)   
  [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)   
  [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)   
- [basic_string::find](../Topic/basic_string::find.md)
+ [basic_string::find](http://msdn.microsoft.com/library/e8254589-ae65-4414-b28f-54ba8f544656)
 
 
 

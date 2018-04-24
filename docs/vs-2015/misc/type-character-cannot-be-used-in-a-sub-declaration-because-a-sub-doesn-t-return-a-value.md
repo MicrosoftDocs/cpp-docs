@@ -30,5 +30,5 @@ A `Sub` procedure, like a `Function` procedure, is a separate procedure that can
 -   Change the `Sub` procedure to a `Function` procedure.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)   
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)

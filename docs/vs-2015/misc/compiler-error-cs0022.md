@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0022
 Wrong number of indices inside [], expected 'number'  
   
- An array-access operation specified the incorrect number of dimensions within the square brackets. For more information, see [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md).  
+ An array-access operation specified the incorrect number of dimensions within the square brackets. For more information, see [Arrays](http://msdn.microsoft.com/library/bb79bdde-e570-4c30-adb0-1dd5759ae041).  
   
 ## Example  
  The following sample generates CS0022:  

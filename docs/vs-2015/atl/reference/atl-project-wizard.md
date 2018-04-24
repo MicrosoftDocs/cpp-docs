@@ -55,7 +55,7 @@ The Active Template Library (ATL) is a set of template-based C++ classes that si
   
 -   [Optimize the compiler for an ATL project](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)  
   
- You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../ide/general-property-page-project.md) page, and you can set [build configurations](../Topic/Understanding%20Build%20Configurations.md) for an ATL project. See [Using Projects to Build Applications](http://msdn.microsoft.com/en-us/3339fa90-bac2-4b95-8361-662a2e0e7dfe) for more information.  
+ You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../ide/general-property-page-project.md) page, and you can set [build configurations](http://msdn.microsoft.com/library/934c727d-3a22-429c-bd13-3552cecf2e24) for an ATL project. See [Using Projects to Build Applications](http://msdn.microsoft.com/en-us/3339fa90-bac2-4b95-8361-662a2e0e7dfe) for more information.  
   
 ## See Also  
  [Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)   

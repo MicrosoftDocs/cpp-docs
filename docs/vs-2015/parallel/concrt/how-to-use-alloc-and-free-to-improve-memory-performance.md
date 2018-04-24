@@ -23,7 +23,7 @@ manager: "ghogen"
 # How to: Use Alloc and Free to Improve Memory Performance
 [!INCLUDE[blank_token](../../includes/blank-token.md)]
 
-This document shows how to use the [concurrency::Alloc](../Topic/Alloc%20Function.md) and [concurrency::Free](../Topic/Free%20Function.md) functions to improve memory performance. It compares the time that is required to reverse the elements of an array in parallel for three different types that each specify the `new` and `delete` operators.  
+This document shows how to use the [concurrency::Alloc](http://msdn.microsoft.com/library/41246453-c699-4a73-9234-f952efbd9106) and [concurrency::Free](http://msdn.microsoft.com/library/cde873ad-874b-482d-aae3-451f2e380d2b) functions to improve memory performance. It compares the time that is required to reverse the elements of an array in parallel for three different types that each specify the `new` and `delete` operators.  
   
  The `Alloc` and `Free` functions are most useful when multiple threads frequently call both `Alloc` and `Free`. The runtime holds a separate memory cache for each thread; therefore, the runtime manages memory without the use of locks or memory barriers.  
   
@@ -64,6 +64,6 @@ Took 656 ms with Alloc/Free.
   
 ## See Also  
  [Memory Management Functions](../../parallel/concrt/memory-management-functions.md)   
- [Alloc Function](../Topic/Alloc%20Function.md)   
- [Free Function](../Topic/Free%20Function.md)
+ [Alloc Function](http://msdn.microsoft.com/library/41246453-c699-4a73-9234-f952efbd9106)   
+ [Free Function](http://msdn.microsoft.com/library/cde873ad-874b-482d-aae3-451f2e380d2b)
 

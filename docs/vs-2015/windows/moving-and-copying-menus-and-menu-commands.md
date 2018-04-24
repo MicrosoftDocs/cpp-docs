@@ -46,7 +46,7 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
   
 2.  From the shortcut menu, choose **Cut** (to move) or **Copy**.  
   
-3.  If you are moving the items to another menu resource or resource script file, [open it in another window](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md).  
+3.  If you are moving the items to another menu resource or resource script file, [open it in another window](http://msdn.microsoft.com/library/7517ff13-76de-4ecf-9c1b-eb9b7ff4d718).  
   
 4.  Select the position of the menu or menu command you want to move or copy to.  
   
@@ -55,7 +55,7 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
     > [!NOTE]
     >  You can also drag, copy, and paste to other menus in other menu windows.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  **Requirements**  
   

@@ -22,7 +22,7 @@ The custom tool cannot be created by the project system. The requested custom to
   
  This error may have been caused by specifying an invalid custom tool name for the `CustomTool` property for a particular file. It is also possible that the project file (.vbproj/.csproj) was edited, making the value for the `CustomTool` property invalid. Or you may be using a project developed on another computer, which has the custom tool, but the custom tool is not installed on your computer. For more information about the `CustomTool` property, see [File Properties](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959).  
   
- This error could also occur if [CComPtrBase::CoCreateInstance](../Topic/CComPtrBase::CoCreateInstance.md) fails for the custom tool. For example, it may not be registered or a required DLL may be missing.  
+ This error could also occur if [CComPtrBase::CoCreateInstance](http://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6) fails for the custom tool. For example, it may not be registered or a required DLL may be missing.  
   
 ## See Also  
- [CComPtrBase::CoCreateInstance](../Topic/CComPtrBase::CoCreateInstance.md)
+ [CComPtrBase::CoCreateInstance](http://msdn.microsoft.com/library/c0965041-6cb6-40c5-b272-2b99f02668a6)

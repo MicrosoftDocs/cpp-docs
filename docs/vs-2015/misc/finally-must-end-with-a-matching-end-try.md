@@ -32,5 +32,5 @@ A `Finally` statement appears in your code without a matching `End Try`statement
 2.  Add an `End Try` statement to conclude the block.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
  [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

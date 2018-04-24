@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1043
 { or ; expected  
   
- A property accessor was declared incorrectly. For more information, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ A property accessor was declared incorrectly. For more information, see [Using Properties](http://msdn.microsoft.com/library/f7f67b05-0983-4cdb-96af-1855d24c967c).  
   
 ## Example  
  The following sample generates CS1043.  

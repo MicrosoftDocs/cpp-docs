@@ -186,6 +186,6 @@ The following tables show Visual C++ features that are available in Visual Studi
   
 ## See Also  
  [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)   
- [What's New in Visual Studio 2015](../Topic/What's%20New%20in%20Visual%20Studio%202015.md)   
+ [What's New in Visual Studio 2015](http://msdn.microsoft.com/library/7307e180-ba28-4774-8a43-cbb980085a71)   
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Visual Database Tools Editions](http://msdn.microsoft.com/en-us/a7689adc-f16b-4cc7-b6fe-39ca0c711161)

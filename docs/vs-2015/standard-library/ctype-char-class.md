@@ -154,7 +154,7 @@ protected:
  **Namespace:** std  
   
 ## See Also  
- [facet Class](../Topic/facet%20Class.md)   
+ [facet Class](http://msdn.microsoft.com/library/dd4f12f5-cb1b-457f-af56-2fb204216ec1)   
  [ctype_base Class](../standard-library/ctype-base-class.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

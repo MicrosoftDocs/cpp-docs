@@ -32,4 +32,4 @@ A class or interface either inherits from itself or from another class or interf
 -   Change the inheritance structure so that it is built on a base class or interface that does not inherit from any other class or interface.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

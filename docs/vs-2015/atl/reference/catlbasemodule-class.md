@@ -68,7 +68,7 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
  This class replaces the obsolete [CComModule](../../atl/reference/ccommodule-class.md) class used in earlier versions of ATL.  
   
 ## Inheritance Hierarchy  
- [_ATL_BASE_MODULE](../Topic/_ATL_BASE_MODULE.md)  
+ [_ATL_BASE_MODULE](http://msdn.microsoft.com/library/2b34139a-bee7-41be-8907-b02d9996b0fd)  
   
  `CAtlBaseModule`  
   

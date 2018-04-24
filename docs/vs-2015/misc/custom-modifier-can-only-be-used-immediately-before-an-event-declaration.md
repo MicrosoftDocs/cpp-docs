@@ -35,5 +35,5 @@ The `Custom` keyword must precede only the `Event` keyword in a custom event dec
   
 ## See Also  
  [Custom - delete](http://msdn.microsoft.com/en-us/dc62be07-c896-4866-a533-982a661d143f)   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

@@ -30,5 +30,5 @@ A `Declare` declaration has a specifier that is not valid within a `Module` decl
 -   Remove the specifier.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

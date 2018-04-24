@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0524
 'type' : interfaces cannot declare types  
   
- An [interface](../Topic/interface%20\(C%23%20Reference\).md) cannot contain a user-defined type; it should contain only methods and properties.  
+ An [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) cannot contain a user-defined type; it should contain only methods and properties.  
   
 ## Example  
  The following sample generates CS0524:  

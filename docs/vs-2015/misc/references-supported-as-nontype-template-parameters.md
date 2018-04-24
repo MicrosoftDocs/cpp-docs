@@ -18,4 +18,4 @@ ms.author: "mblome"
 manager: "douge"
 ---
 # References Supported as Nontype Template Parameters
-This content has been removed. For more information, see [Template Specifications](../Topic/Template%20Specifications.md).
+This content has been removed. For more information, see [Template Specifications](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753).

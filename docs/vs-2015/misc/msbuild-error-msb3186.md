@@ -25,4 +25,4 @@ manager: "douge"
  This error is generated when the build process cannot infer an assembly name for the application or deployment manifest. The assembly name is not given explicitly; there is no identity in the base manifest, and the entry point identity is not specified either.  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

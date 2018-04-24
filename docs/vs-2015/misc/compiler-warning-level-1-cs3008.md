@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS3008
 Identifier 'identifier' differing only in case is not CLS-compliant  
   
- A [public](../Topic/public%20\(C%23%20Reference\).md), [protected](../Topic/protected%20\(C%23%20Reference\).md), or `protected``internal` identifier breaks compliance with the Common Language Specification (CLS) if it begins with an underscore character (_).For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ A [public](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), [protected](http://msdn.microsoft.com/library/05ce3794-6675-4025-bddb-eaaa0ec22892), or `protected``internal` identifier breaks compliance with the Common Language Specification (CLS) if it begins with an underscore character (_).For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6).  
   
 ## Example  
  The following example generates CS3008:  

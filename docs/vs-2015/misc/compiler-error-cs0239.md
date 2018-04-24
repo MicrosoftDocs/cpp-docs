@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0239
 'member' : cannot override inherited member 'inherited member' because it is sealed  
   
- A member cannot [override](../Topic/override%20\(C%23%20Reference\).md) a [sealed](../Topic/sealed%20\(C%23%20Reference\).md) inherited member. For more information, see [Checked and Unchecked](../Topic/Checked%20and%20Unchecked%20\(C%23%20Reference\).md).  
+ A member cannot [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) a [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) inherited member. For more information, see [Checked and Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e).  
   
  The following sample generates CS0239:  
   

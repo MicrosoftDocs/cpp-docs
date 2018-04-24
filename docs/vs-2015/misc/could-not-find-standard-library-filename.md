@@ -25,7 +25,7 @@ manager: "wpickett"
   
  The unusable library is most likely to be either mscorlib.dll or microsoft.visualbasic.dll.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40049  
   
@@ -42,6 +42,6 @@ manager: "wpickett"
 5.  Note the exact file name and extension and contact Microsoft Product Support Services.  
   
 ## See Also  
- [Building from the Command Line](../Topic/Building%20from%20the%20Command%20Line%20\(Visual%20Basic\).md)   
- [How to: Invoke the Command-Line Compiler](../Topic/How%20to:%20Invoke%20the%20Command-Line%20Compiler%20\(Visual%20Basic\).md)   
- [Talk to Us](../Topic/Talk%20to%20Us.md)
+ [Building from the Command Line](http://msdn.microsoft.com/library/e61947e9-a42e-4717-a699-5f70a98cdd03)   
+ [How to: Invoke the Command-Line Compiler](http://msdn.microsoft.com/library/0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9)   
+ [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e)

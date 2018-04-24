@@ -25,5 +25,5 @@ The member you are trying to access cannot be found. This error can occur when a
 1.  If the member exists, ensure that it is declared as `Public`.  
   
 ## See Also  
- [Public](../Topic/Public%20\(Visual%20Basic\).md)   
- [Early and Late Binding](../Topic/Early%20and%20Late%20Binding%20\(Visual%20Basic\).md)
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)   
+ [Early and Late Binding](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724)

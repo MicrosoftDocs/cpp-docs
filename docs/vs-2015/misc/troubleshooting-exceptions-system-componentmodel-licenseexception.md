@@ -23,5 +23,5 @@ The exception that is thrown when a component cannot be granted a valid license.
   
 ## See Also  
  <xref:System.ComponentModel.LicenseException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [How to: License Components and Controls](../Topic/How%20to:%20License%20Components%20and%20Controls.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57)

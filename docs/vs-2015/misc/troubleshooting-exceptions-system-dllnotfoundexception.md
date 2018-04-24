@@ -23,4 +23,4 @@ The exception that is thrown when a DLL specified in a DLL import cannot be foun
   
 ## See Also  
  <xref:System.DllNotFoundException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

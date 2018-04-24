@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS2005
 Missing file specification for 'option' option  
   
- A [compiler option](../Topic/C%23%20Compiler%20Options.md) was only partially specified.  
+ A [compiler option](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44) was only partially specified.  
   
- For example, when using [/recurse](../Topic/-recurse%20\(C%23%20Compiler%20Options\).md), you must specify the file to search: **/recurse:***filename***.cs**.  
+ For example, when using [/recurse](http://msdn.microsoft.com/library/4e8212e5-04e3-45b1-8a42-41bc50e683b0), you must specify the file to search: **/recurse:***filename***.cs**.  
   
 ## Example  
  The following sample generates CS2005.  

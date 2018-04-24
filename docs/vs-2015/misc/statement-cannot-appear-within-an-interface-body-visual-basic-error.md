@@ -32,5 +32,5 @@ An unexpected language construct was encountered. It is assumed that an `End Int
 2.  Make sure that the interface definition ends with an `End Interface` construct.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)

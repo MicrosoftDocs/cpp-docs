@@ -34,4 +34,4 @@ A type was referenced that has not been loaded by the runtime.
 3.  Try accessing one of the members declared in the module. In some cases, the debugging environment cannot locate members because the modules where they are declared are not loaded.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

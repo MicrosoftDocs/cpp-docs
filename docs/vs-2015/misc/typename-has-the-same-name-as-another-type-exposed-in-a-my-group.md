@@ -45,4 +45,4 @@ manager: "wpickett"
  <xref:System.Windows.Forms.Form>   
  <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute>   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [My.Forms Object](../Topic/My.Forms%20Object.md)
+ [My.Forms Object](http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a)

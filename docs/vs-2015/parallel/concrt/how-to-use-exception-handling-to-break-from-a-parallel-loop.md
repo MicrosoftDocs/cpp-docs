@@ -25,7 +25,7 @@ manager: "ghogen"
 
 This topic shows how to write a search algorithm for a basic tree structure.  
   
- The topic [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) and [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.  
+ The topic [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](http://msdn.microsoft.com/library/4f808727-92cd-4158-bc80-dac982c9630e) and [concurrency::structured_task_group::cancel](http://msdn.microsoft.com/library/8b6015cd-cc68-4fe8-9467-a34386adbd69) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.  
   
 ## Example  
  The following example shows a basic `tree` type that contains a data element and a list of child nodes. The following section shows the body of the `for_all` method, which recursively performs a work function on each child node.  
@@ -33,7 +33,7 @@ This topic shows how to write a search algorithm for a basic tree structure.
  [!code-cpp[concrt-task-tree-search#2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-task-tree-search/cpp/task-tree-search.cpp#2)]  
   
 ## Example  
- The following example shows the `for_all` method. It uses the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm to perform a work function on each node of the tree in parallel.  
+ The following example shows the `for_all` method. It uses the [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) algorithm to perform a work function on each node of the tree in parallel.  
   
  [!code-cpp[concrt-task-tree-search#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-task-tree-search/cpp/task-tree-search.cpp#1)]  
   
@@ -51,7 +51,7 @@ This topic shows how to write a search algorithm for a basic tree structure.
   
  [!code-cpp[concrt-task-tree-search#4](../../snippets/cpp/VS_Snippets_ConcRT/concrt-task-tree-search/cpp/task-tree-search.cpp#4)]  
   
- This example uses the [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) algorithm to search for values in parallel. For more information about this algorithm, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+ This example uses the [concurrency::parallel_invoke](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b) algorithm to search for values in parallel. For more information about this algorithm, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
 ## Example  
  The following complete example uses exception handling to search for values in a basic tree structure.  
@@ -76,7 +76,7 @@ Did not find node with value 17522.
  [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
+ [task_group Class](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)   
  [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)   
- [parallel_for_each Function](../Topic/parallel_for_each%20Function.md)
+ [parallel_for_each Function](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28)
 

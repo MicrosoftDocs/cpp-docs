@@ -21,13 +21,13 @@ manager: "douge"
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK, which include drag and drop support. This topic is retained only for backward compatibility, and for working with existing controls.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](http://msdn.microsoft.com/library/9cc34db9-b0d1-4951-a02f-7537fbbb51ad).  
   
  VSPackages must implement drag-and-drop support if they are to use **Toolbox** controls on document views, such as editors or designers.  
   
  By default, all [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] objects derived from <xref:System.Windows.Forms.Control?displayProperty=fullName> automatically and transparently provide support for consuming **Toolbox** controls, and the procedures described below are unnecessary. The basic functionality can be extended by creating a designer.  
   
- For more information, see [Windows Forms Overview](../Topic/Windows%20Forms%20Overview.md) and [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ For more information, see [Windows Forms Overview](http://msdn.microsoft.com/library/3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4) and [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
 ### To implement basic drag-and-drop functionality  
   

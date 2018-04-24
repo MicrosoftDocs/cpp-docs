@@ -47,5 +47,5 @@ regasm /tlb MyAssembly.dll
 ```  
   
 ## See Also  
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [Using and Providing Services](http://msdn.microsoft.com/library/c0b415ba-b825-4da0-9faf-8a60a663e302)   
+ [Service Essentials](http://msdn.microsoft.com/library/fbe84ad9-efe1-48b1-aba3-b50b90424d47)

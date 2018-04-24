@@ -28,7 +28,7 @@ A query body must end with a select clause or a group clause
   
 ### To correct this error  
   
-1.  Add a [select clause](../Topic/select%20clause%20\(C%23%20Reference\).md) or [group clause](../Topic/group%20clause%20\(C%23%20Reference\).md) to the query.  
+1.  Add a [select clause](http://msdn.microsoft.com/library/df01e266-5781-4aaa-80c4-67cf28ea093f) or [group clause](http://msdn.microsoft.com/library/c817242e-b12c-4baa-a57e-73ee138f34d1) to the query.  
   
 ## Example  
  The following code generates CS0742:  
@@ -47,7 +47,7 @@ public class Test
 }  
 ```  
   
- If the `group` clause uses the [into](../Topic/into%20\(C%23%20Reference\).md) keyword to store the results of the grouping into a temporary identifier, it cannot be the last clause in a query. A `select` or second `group` clause is still required.  
+ If the `group` clause uses the [into](http://msdn.microsoft.com/library/81ec62c1-f0b1-4755-8a31-959876e77f65) keyword to store the results of the grouping into a temporary identifier, it cannot be the last clause in a query. A `select` or second `group` clause is still required.  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)
+ [LINQ Query Expressions](http://msdn.microsoft.com/library/40638f19-fb46-4d26-a2d9-a383b48f5ed4)

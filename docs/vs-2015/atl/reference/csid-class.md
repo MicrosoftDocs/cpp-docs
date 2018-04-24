@@ -84,16 +84,16 @@ class CSid
 |||  
 |-|-|  
 |[operator ==](#csid__operator__eq_eq)|Tests two security descriptor objects for equality|  
-|[operator !=](../Topic/CSid::operator%20!=.md)|Tests two security descriptor objects for inequality|  
-|[operator \<](../Topic/CSid::operator%20%3C.md)|Compares relative value of two security descriptor objects.|  
-|[operator >](../Topic/CSid::operator%20%3E.md)|Compares relative value of two security descriptor objects.|  
-|[operator \<=](../Topic/CSid::operator%20%3C=.md)|Compares relative value of two security descriptor objects.|  
-|[operator >=](../Topic/CSid::operator%20%3E=.md)|Compares relative value of two security descriptor objects.|  
+|[operator !=](http://msdn.microsoft.com/library/16e5d1d4-e205-4056-baa2-f0f824cb5d33)|Tests two security descriptor objects for inequality|  
+|[operator \<](http://msdn.microsoft.com/library/cfc83869-778b-466c-840e-9e4cf24342b9)|Compares relative value of two security descriptor objects.|  
+|[operator >](http://msdn.microsoft.com/library/3dd32e32-87f7-4677-8c29-8f20dc85acb1)|Compares relative value of two security descriptor objects.|  
+|[operator \<=](http://msdn.microsoft.com/library/8fa00e77-f24d-47ae-b863-8cdab0a5a0cf)|Compares relative value of two security descriptor objects.|  
+|[operator >=](http://msdn.microsoft.com/library/c19cdb65-8477-45ad-936f-db9376ea0d2d)|Compares relative value of two security descriptor objects.|  
   
 ## Remarks  
  The `SID` structure is a variable-length structure used to uniquely identify users or groups.  
   
- Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](../Topic/AtlGetOwnerSid.md), [AtlSetGroupSid](../Topic/AtlSetGroupSid.md), [AtlGetGroupSid](../Topic/AtlGetGroupSid.md), and [AtlSetOwnerSid](../Topic/AtlSetOwnerSid.md).  
+ Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](http://msdn.microsoft.com/library/0e3a2606-74b8-4412-9803-bb437e22da85), [AtlSetGroupSid](http://msdn.microsoft.com/library/83531d32-11ab-4a68-a3c6-1bfa54ab8dfa), [AtlGetGroupSid](http://msdn.microsoft.com/library/8e7ec6b9-15c8-4a8a-977e-1e4c853d0be7), and [AtlSetOwnerSid](http://msdn.microsoft.com/library/3a8abb76-1d2c-465d-a5e8-62a12a3c37f3).  
   
  For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../includes/winsdk-md.md)].  
   

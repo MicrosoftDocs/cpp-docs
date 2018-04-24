@@ -30,4 +30,4 @@ manager: "wpickett"
 -   Use the appropriate function from the `Microsoft.VisualBasic` namespace.  
   
 ## See Also  
- [Visual Basic Runtime Library Members](../Topic/Visual%20Basic%20Runtime%20Library%20Members.md)
+ [Visual Basic Runtime Library Members](http://msdn.microsoft.com/library/f5e82c6e-3500-452b-bdb8-78f0d5477604)

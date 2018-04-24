@@ -30,4 +30,4 @@ The procedure name could not be found in the specified DLL.
 1.  Verify that the procedure name is spelled correctly, and that the casing matches that of the function in the DLL.  
   
 ## See Also  
- [Walkthrough: Calling Windows APIs](../Topic/Walkthrough:%20Calling%20Windows%20APIs%20\(Visual%20Basic\).md)
+ [Walkthrough: Calling Windows APIs](http://msdn.microsoft.com/library/9280ca96-7a93-47a3-8d01-6d01be0657cb)

@@ -25,8 +25,8 @@ The automation model provides an alternative to VSPackages for extending [!INCLU
   
  Add-ins and wizards use the automation model to control or extend the functionality of the IDE by using its automation interfaces. Typically, Microsoft includes many add-ins with [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. You can use add-ins to integrate new commands on the toolbars and menus, to add tool windows, or to automate certain tasks that you perform regularly in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- As a VSPackage developer, you should contribute to the automation model. For example, if you add a new language to [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] by using the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK, your language should provide a robust code model that extends the pre-existing one. For more information, see [Contributing to the Automation Model](../Topic/Contributing%20to%20the%20Automation%20Model.md).  
+ As a VSPackage developer, you should contribute to the automation model. For example, if you add a new language to [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] by using the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK, your language should provide a robust code model that extends the pre-existing one. For more information, see [Contributing to the Automation Model](http://msdn.microsoft.com/library/44de482d-93c8-41a4-843c-cefda995a03e).  
   
 ## See Also  
- [VSPackages](../Topic/VSPackages.md)   
- [Contributing to the Automation Model](../Topic/Contributing%20to%20the%20Automation%20Model.md)
+ [VSPackages](http://msdn.microsoft.com/library/cad0893a-9c5f-45b7-952a-e2294f83e324)   
+ [Contributing to the Automation Model](http://msdn.microsoft.com/library/44de482d-93c8-41a4-843c-cefda995a03e)

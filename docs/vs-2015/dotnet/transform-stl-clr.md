@@ -41,7 +41,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Fn2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `transform`. For more information, see [transform](../Topic/transform.md).  
+ This function behaves the same as the STL function `transform`. For more information, see [transform](http://msdn.microsoft.com/library/99396865-54fb-47dd-a661-38ce03467854).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

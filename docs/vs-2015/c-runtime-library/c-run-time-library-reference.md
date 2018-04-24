@@ -68,7 +68,7 @@ The Microsoft run-time library provides routines for programming for the Microso
  [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
  Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the Standard C++ Library.  
   
- [Debugging](../Topic/Debugging%20in%20Visual%20Studio.md)  
+ [Debugging](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)  
  Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.  
   
 ## See Also  

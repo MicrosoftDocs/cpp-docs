@@ -29,4 +29,4 @@ manager: "douge"
 1.  Check the spelling of the project file name.  
   
 ## See Also  
- [Project File Schema Reference](../Topic/MSBuild%20Project%20File%20Schema%20Reference.md)
+ [Project File Schema Reference](http://msdn.microsoft.com/library/d9a68146-1f43-4621-ac78-2c8c3f400936)

@@ -28,7 +28,7 @@ The latest version of this topic can be found at [Visual Studio 2017 Documentati
 Setup installs all the necessary components to support OLE DB programming as part of the baseline installation. The OLE DB interfaces are installed as part of the MDAC SDK. The OLE DB templates, which support OLE DB programming in Visual C++ .NET, are installed as part of the ATL library. Visual C++ .NET Setup installs both the MDAC SDK (version 2.8) and the ATL library.  
   
 ## See Also  
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)   
+ [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)   
  [OLE DB Programming](../data/oledb/ole-db-programming.md)   
  [OLE DB Consumer Templates](../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Provider Templates](../data/oledb/ole-db-provider-templates-cpp.md)

@@ -38,16 +38,16 @@ class tile_barrier;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tile_barrier::tile_barrier Constructor](../Topic/tile_barrier::tile_barrier%20Constructor.md)|Initializes a new instance of the `tile_barrier` class.|  
+|[tile_barrier::tile_barrier Constructor](http://msdn.microsoft.com/library/75891361-0a6a-4870-8b74-2ddeb9d50d5d)|Initializes a new instance of the `tile_barrier` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tile_barrier::wait Method](../Topic/tile_barrier::wait%20Method.md)|Instructs all threads in the thread group (tile) to stop executing until all threads in the tile have finished waiting.|  
-|[tile_barrier::wait_with_all_memory_fence Method](../Topic/tile_barrier::wait_with_all_memory_fence%20Method.md)|Blocks execution of all threads in a tile until all memory accesses have been completed and all threads in the tile have reached this call.|  
-|[tile_barrier::wait_with_global_memory_fence Method](../Topic/tile_barrier::wait_with_global_memory_fence%20Method.md)|Blocks execution of all threads in a tile until all global memory accesses have been completed and all threads in the tile have reached this call.|  
-|[tile_barrier::wait_with_tile_static_memory_fence Method](../Topic/tile_barrier::wait_with_tile_static_memory_fence%20Method.md)|Blocks execution of all threads in a tile until all `tile_static` memory accesses have been completed and all threads in the tile have reached this call.|  
+|[tile_barrier::wait Method](http://msdn.microsoft.com/library/98aa8ef0-ed25-49c1-90ab-c6516c3a7a8f)|Instructs all threads in the thread group (tile) to stop executing until all threads in the tile have finished waiting.|  
+|[tile_barrier::wait_with_all_memory_fence Method](http://msdn.microsoft.com/library/2116d010-fdbb-4eea-af46-de3d82276932)|Blocks execution of all threads in a tile until all memory accesses have been completed and all threads in the tile have reached this call.|  
+|[tile_barrier::wait_with_global_memory_fence Method](http://msdn.microsoft.com/library/fc3b89f4-0865-40d3-90f7-c3fc8686e4e9)|Blocks execution of all threads in a tile until all global memory accesses have been completed and all threads in the tile have reached this call.|  
+|[tile_barrier::wait_with_tile_static_memory_fence Method](http://msdn.microsoft.com/library/65109506-63a0-4219-ae61-03974355c09c)|Blocks execution of all threads in a tile until all `tile_static` memory accesses have been completed and all threads in the tile have reached this call.|  
   
 ## Inheritance Hierarchy  
  `tile_barrier`  

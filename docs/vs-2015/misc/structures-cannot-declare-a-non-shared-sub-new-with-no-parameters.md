@@ -32,5 +32,5 @@ manager: "wpickett"
 -   Apply the `Shared` modifier to make the constructor shared.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)   
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)

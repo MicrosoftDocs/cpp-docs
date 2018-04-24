@@ -30,5 +30,5 @@ An invalid modifier was specified with a structure declared in an interface.
 -   Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, or `Overridable`.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)

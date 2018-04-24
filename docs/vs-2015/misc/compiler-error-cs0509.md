@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0509
 'class1' : cannot derive from sealed type 'class2'  
   
- A [sealed](../Topic/sealed%20\(C%23%20Reference\).md) class cannot act as a [base](../Topic/base%20\(C%23%20Reference\).md) class. Structs are sealed by default.  
+ A [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) class cannot act as a [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5) class. Structs are sealed by default.  
   
  The following sample generates CS0509:  
   

@@ -69,7 +69,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
  `CAtlModuleT` provides support for initializing, registering, and unregistering of the module.  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](http://msdn.microsoft.com/library/23af4915-ecdb-4ca6-9c89-7e01c3e762e7)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

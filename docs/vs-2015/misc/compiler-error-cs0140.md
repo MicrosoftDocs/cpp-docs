@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0140
 The label 'label' is a duplicate  
   
- A label with the same name appeared twice. For more information, see [goto](../Topic/goto%20\(C%23%20Reference\).md).  
+ A label with the same name appeared twice. For more information, see [goto](http://msdn.microsoft.com/library/2c03c9c1-8119-44ef-b740-fb3d287a42fe).  
   
  The following sample generates CS0140:  
   

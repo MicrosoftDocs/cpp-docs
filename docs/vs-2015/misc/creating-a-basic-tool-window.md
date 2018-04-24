@@ -35,7 +35,7 @@ Tool windows are common Visual Studio: the **Solution Explorer**, **Task List**,
   
 6.  On the **Select a Programming Language** page, select C# or Visual Basic. Have the template generate a key.snk file to sign the assembly. Alternately, **Browse** to your own key file. The template makes a copy of your key file and names it key.snk.  
   
-7.  On the **Basic VSPackage Information** page, specify any details about the VSPackage or accept the defaults. For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](../Topic/Walkthrough:%20Creating%20a%20Menu%20Command%20By%20Using%20the%20Visual%20Studio%20Package%20Template.md).  
+7.  On the **Basic VSPackage Information** page, specify any details about the VSPackage or accept the defaults. For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 8.  On the **Select VSPackage Options** page, check Tool Window.  
   

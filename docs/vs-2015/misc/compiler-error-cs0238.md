@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0238
 'member' cannot be sealed because it is not an override  
   
- [sealed](../Topic/sealed%20\(C%23%20Reference\).md) was used on a member that was not also marked with [override](../Topic/override%20\(C%23%20Reference\).md). For more information, see [Inheritance](../Topic/Inheritance%20\(C%23%20Programming%20Guide\).md).  
+ [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) was used on a member that was not also marked with [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8). For more information, see [Inheritance](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea).  
   
  The following sample generates CS0238:  
   

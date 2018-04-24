@@ -25,4 +25,4 @@ manager: "douge"
  This warning is generated when the build process detects that the application tried to redirect some of its assemblies to another version inside the app.config file. This will not work for partially trusted applications.  
   
 ## See Also  
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)
+ [Product and Package Schema Reference](http://msdn.microsoft.com/library/5a74878f-b896-4cca-b968-98d00fe78fb0)

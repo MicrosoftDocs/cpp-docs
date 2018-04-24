@@ -30,4 +30,4 @@ An `Option` statement specifies `Text` or `Binary`, but not `Compare`.
 -   Add the `Compare` keyword to the `Option` statement; for example, `Option Compare Binary`.  
   
 ## See Also  
- [Option Compare Statement](../Topic/Option%20Compare%20Statement.md)
+ [Option Compare Statement](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1015
 An object, string, or class type expected  
   
- An attempt was made to pass a predefined data type into a [catch](../Topic/try-catch%20\(C%23%20Reference\).md) block. Only data types that derive from <xref:System.Exception?displayProperty=fullName> can be passed into a `catch` block. For more information on exceptions, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md).  
+ An attempt was made to pass a predefined data type into a [catch](http://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438) block. Only data types that derive from <xref:System.Exception?displayProperty=fullName> can be passed into a `catch` block. For more information on exceptions, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c).  
   
 ## Example  
  The following sample generates CS1015:  

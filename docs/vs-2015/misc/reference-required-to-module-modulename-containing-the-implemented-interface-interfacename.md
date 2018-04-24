@@ -33,4 +33,4 @@ Reference required to module '\<modulename>' containing the implemented interfac
   
 ## See Also  
  [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)
+ [Troubleshooting Broken References](http://msdn.microsoft.com/library/00a9ade9-652e-40de-8ada-85f63cd183ee)

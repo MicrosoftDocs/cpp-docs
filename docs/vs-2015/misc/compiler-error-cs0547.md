@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS0547
 'property' : property or indexer cannot have void type  
   
- [void](../Topic/void%20\(C%23%20Reference\).md) is invalid as a return value for a property.  
+ [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) is invalid as a return value for a property.  
   
- For more information, see [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Properties](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8).  
   
  The following sample generates CS0547:  
   

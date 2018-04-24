@@ -104,7 +104,7 @@ The [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] programming language and develo
  [Cloud and Web Programming](../top/cloud-and-web-programming-in-visual-cpp.md)  
  In C++, you have several options for connecting to the web and the cloud.  
   
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)  
+ [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)  
  Connect to databases using ODBC and other database access technologies.  
   
  [Text and Strings](../text/text-and-strings-in-visual-cpp.md)  

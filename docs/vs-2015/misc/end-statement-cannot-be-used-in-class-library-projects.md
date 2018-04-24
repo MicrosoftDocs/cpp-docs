@@ -30,4 +30,4 @@ Class library projects used to create DLLs do not allow the use of the `End` key
 -   Use control structures such as `While` and `For` to control the flow of program execution.  
   
 ## See Also  
- [Control Flow](../Topic/Control%20Flow%20in%20Visual%20Basic.md)
+ [Control Flow](http://msdn.microsoft.com/library/5623ef47-52b1-4202-befd-9af36422ec6f)

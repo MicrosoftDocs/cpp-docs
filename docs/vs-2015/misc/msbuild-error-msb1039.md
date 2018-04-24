@@ -27,6 +27,6 @@ manager: "douge"
 -   When you use the **/ToolsVersion** switch, make sure that you specify a valid, non-empty value for `ToolsVersion`.  
   
 ## See Also  
- [Toolset (ToolsVersion)](../Topic/MSBuild%20Toolset%20\(ToolsVersion\).md)   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Toolset (ToolsVersion)](http://msdn.microsoft.com/library/40040ee7-4620-4043-a6d8-ccba921421d1)   
+ [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653)   
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

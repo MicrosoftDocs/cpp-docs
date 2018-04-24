@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0267
 The partial modifier can only appear immediately before 'class', 'struct', or 'interface'  
   
- The placement of the **partial** modifier was incorrect in the declaration of the class, struct or interface. To fix the error, reorder the modifiers. For more information, see [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md).  
+ The placement of the **partial** modifier was incorrect in the declaration of the class, struct or interface. To fix the error, reorder the modifiers. For more information, see [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
  The following sample generates CS0267:  
   

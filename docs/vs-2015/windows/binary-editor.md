@@ -33,7 +33,7 @@ The latest version of this topic can be found at [Binary Editor](https://docs.mi
 > [!WARNING]
 >  The Binary Editor is not available in Express editions.  
   
- The Binary editor allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](../Topic/Find%20Command.md) to search for either ASCII strings or hexadecimal bytes. You should use the Binary editor only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment.  
+ The Binary editor allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](http://msdn.microsoft.com/library/f0c705dc-2b97-423d-abbf-5584d4827208) to search for either ASCII strings or hexadecimal bytes. You should use the Binary editor only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment.  
   
  To open the Binary Editor, first choose **File &#124; New &#124; File** from the main menu, select the file you want to edit, then click on the drop arrow next to the **Open** button, and choose **Open With &#124; Binary Editor**.  
   
@@ -56,7 +56,7 @@ The latest version of this topic can be found at [Binary Editor](https://docs.mi
 ## Managed Resources  
  You can use the [Image editor](../mfc/image-editor-for-icons.md) and the Binary editor to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ### Requirements  
  None  

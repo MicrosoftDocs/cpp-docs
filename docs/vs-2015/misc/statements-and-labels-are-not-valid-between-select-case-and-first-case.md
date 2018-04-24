@@ -30,4 +30,4 @@ A statement that is not a comment appears between the opening `Select` or `Selec
 -   If the intervening statement is a comment, precede it with a comment delimiter (`'` or `REM`). Otherwise, move or delete the statement.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [Select...Case Statement](http://msdn.microsoft.com/library/68877b65-5419-4bf0-a465-20cd0e4c7d44)

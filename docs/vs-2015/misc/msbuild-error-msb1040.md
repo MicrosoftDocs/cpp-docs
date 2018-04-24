@@ -27,6 +27,6 @@ manager: "douge"
 -   Specify a valid `ToolsVersion` value when you build by using the **/ToolsVersion** switch on the command line.  
   
 ## See Also  
- [Overriding ToolsVersion Settings](../Topic/Overriding%20ToolsVersion%20Settings.md)   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Overriding ToolsVersion Settings](http://msdn.microsoft.com/library/ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e)   
+ [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653)   
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)

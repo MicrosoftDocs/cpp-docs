@@ -24,7 +24,7 @@ ms.author: "ghogen"
 manager: "douge"
 ---
 # unchecked_adjacent_difference
-Same as [adjacent_difference](../Topic/adjacent_difference.md), but allows the use of an unchecked iterator as output iterator when _SECURE_SCL=1 is defined.  `unchecked_adjacent_difference` is defined in the `stdext` namespace.  
+Same as [adjacent_difference](http://msdn.microsoft.com/library/f44e205d-d480-4336-b6a6-5af60ced58e3), but allows the use of an unchecked iterator as output iterator when _SECURE_SCL=1 is defined.  `unchecked_adjacent_difference` is defined in the `stdext` namespace.  
   
 > [!NOTE]
 >  This algorithm is a Microsoft extension to the Standard C++ Library. Code implemented using this algorithm will not be portable.  
@@ -65,7 +65,7 @@ template<class InputIterator, class OutputIterator, class BinaryOperation>
  An output iterator addressing the end of the destination range: `_Result` + (`_Last` - `_First`).  
   
 ## Remarks  
- See [adjacent_difference](../Topic/adjacent_difference.md) for a code sample.  
+ See [adjacent_difference](http://msdn.microsoft.com/library/f44e205d-d480-4336-b6a6-5af60ced58e3) for a code sample.  
   
  For more information on checked iterators, see [Checked Iterators](../standard-library/checked-iterators.md).  
   

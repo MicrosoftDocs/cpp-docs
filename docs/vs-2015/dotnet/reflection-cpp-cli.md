@@ -33,7 +33,7 @@ The latest version of this topic can be found at [Reflection (C++/CLI)](https://
   
 Reflection allows known data types to be inspected at runtime. Reflection allows the enumeration of data types in a given assembly, and the members of a given class or value type can be discovered. This is true regardless of whether the type was known or referenced at compile time. This makes reflection a useful feature for development and code management tools.  
   
- Note that the assembly name provided is the strong name (see [Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md)), which includes the assembly version, culture, and signing information. Note also that the name of the namespace in which the data type is defined can be retrieved, along with the name of the base class.  
+ Note that the assembly name provided is the strong name (see [Strong-Named Assemblies](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)), which includes the assembly version, culture, and signing information. Note also that the name of the namespace in which the data type is defined can be retrieved, along with the name of the base class.  
   
  The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by [System::Object](https://msdn.microsoft.com/library/system.object.aspx), from which all garbage-collected classes derive.  
   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0674
 Do not use 'System.ParamArrayAttribute'. Use the 'params' keyword instead.  
   
- The C# compiler does not allow for the use of <xref:System.ParamArrayAttribute?displayProperty=fullName>; use [params](../Topic/params%20\(C%23%20Reference\).md) instead.  
+ The C# compiler does not allow for the use of <xref:System.ParamArrayAttribute?displayProperty=fullName>; use [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) instead.  
   
  The following sample generates CS0674:  
   

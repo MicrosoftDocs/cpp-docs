@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0534
 'function1' does not implement inherited abstract member 'function2'  
   
- A class is required to implement all the [abstract](../Topic/abstract%20\(C%23%20Reference\).md) members in the base class, unless the class is also abstract.  
+ A class is required to implement all the [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) members in the base class, unless the class is also abstract.  
   
  The following sample generates CS0534:  
   

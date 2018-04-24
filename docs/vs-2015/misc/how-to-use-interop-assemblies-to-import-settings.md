@@ -29,7 +29,7 @@ A VSPackage may import settings from the [!INCLUDE[vsprvs](../includes/vsprvs-md
   
     -   Register the VSPackage as supporting the settings mechanism by defining one or more Custom Settings Points.  
   
-         For more information, see [Support for User Settings](../Topic/Support%20for%20User%20Settings.md).  
+         For more information, see [Support for User Settings](http://msdn.microsoft.com/library/ad9beac3-4f8d-4093-ad0e-6fb00444a709).  
   
     -   Declare that the VSPackage implements the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface, for instance:  
   
@@ -348,6 +348,6 @@ HRESULT ImportSettings_KeyBindings(IVsSettingsReader *pSettings, UserSettings
   
 ## See Also  
  [How to: Export Settings By Using Interop Assemblies](../misc/how-to-export-settings-by-using-interop-assemblies.md)   
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)   
+ [Support for User Settings](http://msdn.microsoft.com/library/ad9beac3-4f8d-4093-ad0e-6fb00444a709)   
+ [Extending User Settings and Options](http://msdn.microsoft.com/library/5bb6277a-8c9d-48c8-9b4e-1cb3052caded)   
  [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

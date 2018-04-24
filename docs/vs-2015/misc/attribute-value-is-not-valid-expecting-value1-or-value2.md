@@ -30,6 +30,6 @@ An invalid value for an attribute in an XML document literal has been specified.
 -   Change the attribute value to a value that is valid per the XML 1.0 specification.  
   
 ## See Also  
- [XML Literals and the XML 1.0 Specification](../Topic/XML%20Literals%20and%20the%20XML%201.0%20Specification%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals and the XML 1.0 Specification](http://msdn.microsoft.com/library/46f046e5-293c-41a3-b893-4e5f6e32e78a)   
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

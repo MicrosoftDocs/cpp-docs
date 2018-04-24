@@ -96,7 +96,7 @@ CComSafeDeleteCriticalSection();
  Releases the internal **CRITICAL_SECTION** object from memory if the [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) data member is set to **true**.  
   
 ##  <a name="ccomsafedeletecriticalsection__init"></a>  CComSafeDeleteCriticalSection::Init  
- Calls the base class implementation of [Init](../Topic/CComCriticalSection::Init.md) and sets [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) to **true** if successful.  
+ Calls the base class implementation of [Init](http://msdn.microsoft.com/library/762a16b7-a8a5-4176-ac3b-84f6e0aa576f) and sets [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) to **true** if successful.  
   
 ```
 HRESULT Init() throw();
@@ -106,7 +106,7 @@ HRESULT Init() throw();
  Returns the result of [CComCriticalSection::Init](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__init).  
   
 ##  <a name="ccomsafedeletecriticalsection__lock"></a>  CComSafeDeleteCriticalSection::Lock  
- Calls the base class implementation of [Lock](../Topic/CComCriticalSection::Lock.md).  
+ Calls the base class implementation of [Lock](http://msdn.microsoft.com/library/98e84134-93b2-4bb2-b7a6-be3877bcdec7).  
   
 ```
 HRESULT Lock();

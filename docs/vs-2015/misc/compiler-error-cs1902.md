@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1902
 Invalid option 'option' for /debug; must be full or pdbonly  
   
- An invalid option was passed to the [/debug](../Topic/-debug%20\(C%23%20Compiler%20Options\).md) compiler option.  
+ An invalid option was passed to the [/debug](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) compiler option.  
   
  The following sample generates CS1902:  
   

@@ -25,7 +25,7 @@ The samples included in the [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] make 
 |Service|Sample|  
 |-------------|------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry>|BscEdit, ProjectSubtype|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>|[How to: Use the Activity Log](../Topic/How%20to:%20Use%20the%20Activity%20Log.md)|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>|[How to: Use the Activity Log](http://msdn.microsoft.com/library/bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd)|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg>|BscPrj, FigPkg|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject>|BscPrj|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange>|Deprecated. Use <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> instead.|  
@@ -48,5 +48,5 @@ The samples included in the [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] make 
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame>|Reference.ToolWindow|  
   
 ## See Also  
- [List of Available Services](../Topic/List%20of%20Available%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [List of Available Services](http://msdn.microsoft.com/library/724eb24b-b87c-4971-a2e7-adee7afc03b2)   
+ [Service Essentials](http://msdn.microsoft.com/library/fbe84ad9-efe1-48b1-aba3-b50b90424d47)

@@ -30,5 +30,5 @@ The `Optional` and `ParamArray` modifiers are mutually exclusive.
 -   Specify either `ParamArray` or `Optional`, but not both.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Optional](../Topic/Optional%20\(Visual%20Basic\).md)
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)   
+ [Optional](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)

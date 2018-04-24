@@ -30,5 +30,5 @@ manager: "wpickett"
 -   Remove `Throw` statements from debugging code.  
   
 ## See Also  
- [Throw Statement](../Topic/Throw%20Statement%20\(Visual%20Basic\).md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Throw Statement](http://msdn.microsoft.com/library/a6e07406-5c8a-4498-87a2-8339f3651d62)   
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

@@ -30,4 +30,4 @@ The method called did not return a value as expected.
 -   Verify that the method called is a function that returns a value.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

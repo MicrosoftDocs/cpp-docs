@@ -18,6 +18,6 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # How to: Remove a Domain-Specific Language
-This topic is obsolete from Visual Studio 2010. For more information, see [Deploying Domain-Specific Language Solutions](../Topic/Deploying%20Domain-Specific%20Language%20Solutions.md).  
+This topic is obsolete from Visual Studio 2010. For more information, see [Deploying Domain-Specific Language Solutions](http://msdn.microsoft.com/library/160a9022-ab2f-47db-9d04-4c63fef0ee7d).  
   
 ## Example

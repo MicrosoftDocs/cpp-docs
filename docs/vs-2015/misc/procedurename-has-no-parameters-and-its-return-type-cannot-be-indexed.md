@@ -30,7 +30,7 @@ A call to a `Function` or `Sub` procedure supplies one or more arguments, but th
 -   Remove the argument or arguments from the procedure call.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)   
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)   
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)   
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)

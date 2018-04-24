@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0231
 A params parameter must be the last parameter in a formal parameter list.  
   
- The [params](../Topic/params%20\(C%23%20Reference\).md) parameter supports a variable numbers of arguments and must be after all other parameters. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ The [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) parameter supports a variable numbers of arguments and must be after all other parameters. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0231:  
   

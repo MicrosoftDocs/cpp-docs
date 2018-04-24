@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0193
 The * or -> operator must be applied to a pointer  
   
- The **\*** or **->** operator was used with a nonpointer type. For more information, see [Pointer types](../Topic/Pointer%20types%20\(C%23%20Programming%20Guide\).md).  
+ The **\*** or **->** operator was used with a nonpointer type. For more information, see [Pointer types](http://msdn.microsoft.com/library/3319faf9-336d-4148-9af2-1da2579cdd1e).  
   
  The following sample generates CS0193:  
   

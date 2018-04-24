@@ -59,5 +59,5 @@ namespace NB {
 ```  
   
 ## See Also  
- [Template Specifications](../Topic/Template%20Specifications.md)
+ [Template Specifications](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753)
 

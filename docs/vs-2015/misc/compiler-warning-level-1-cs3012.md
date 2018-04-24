@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS3012
 You cannot specify the CLSCompliant attribute on a module that differs from the CLSCompliant attribute on the assembly  
   
- In order for a module to be compliant with the Common Language Specification (CLS) through `[module:System.CLCSompliant(true)]`, it must be built with the [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) compiler option. For more information on the CLS, see [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ In order for a module to be compliant with the Common Language Specification (CLS) through `[module:System.CLCSompliant(true)]`, it must be built with the [/target:module](http://msdn.microsoft.com/library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72) compiler option. For more information on the CLS, see [Language Independence and Language-Independent Components](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6).  
   
 ## Example  
  The following example, when built without `/target:module`, generates CS3012:  

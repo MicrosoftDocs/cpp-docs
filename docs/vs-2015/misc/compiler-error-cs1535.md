@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1535
 Overloaded unary operator 'operator' takes one parameter  
   
- The definition of a unary [overloadable operator](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md) must take one parameter.  
+ The definition of a unary [overloadable operator](http://msdn.microsoft.com/library/390d9d01-79fc-40ab-9ed3-0bf448da1b6a) must take one parameter.  
   
 ## Example  
  The following sample generates CS1535:  

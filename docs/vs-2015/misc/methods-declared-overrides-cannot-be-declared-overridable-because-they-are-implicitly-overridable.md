@@ -30,5 +30,5 @@ Unlike most methods, methods marked with the `Overrides` modifier are overridabl
 -   Omit the `Overridable` modifier from methods marked with the `Overrides` modifier.  
   
 ## See Also  
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
+ [Overridable](http://msdn.microsoft.com/library/612581e7-8a4c-4a5d-beff-3402fffa6f35)

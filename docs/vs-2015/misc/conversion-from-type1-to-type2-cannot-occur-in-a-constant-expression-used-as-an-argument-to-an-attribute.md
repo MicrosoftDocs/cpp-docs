@@ -36,5 +36,5 @@ An expression used for an attribute argument evaluates to a data type different 
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)   
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)   
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

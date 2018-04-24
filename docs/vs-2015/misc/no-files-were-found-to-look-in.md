@@ -34,6 +34,6 @@ This error generally occurs when a file name or directory has been specified in 
      This cancels the dialog.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
- [Find in Files](../Topic/Find%20in%20Files.md)   
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)   
+ [Find in Files](http://msdn.microsoft.com/library/989e0737-46d7-4474-8453-fad52a74669d)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)

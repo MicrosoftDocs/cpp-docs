@@ -69,7 +69,7 @@ class IErrorRecordsImpl : public IErrorRecords
 |[GetCustomErrorObject](../../data/oledb/cdberrorinfo-getcustomerrorobject.md)|Returns a pointer to an interface on a custom error object.|  
 |[GetErrorInfo](../../data/oledb/cdberrorinfo-geterrorinfo.md)|Returns an [IErrorInfo](https://msdn.microsoft.com/library/ms718112.aspx) interface pointer on the specified record.|  
 |[GetErrorParameters](../../data/oledb/cdberrorinfo-geterrorparameters.md)|Returns the error parameters.|  
-|[GetRecordCount](../Topic/CDaoRecordset::GetRecordCount.md)|Returns the number of records in the OLE DB record object.|  
+|[GetRecordCount](http://msdn.microsoft.com/library/60b8aea9-1a47-4a83-af61-514c075ae25d)|Returns the number of records in the OLE DB record object.|  
   
 ### Data Members  
   

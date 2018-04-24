@@ -31,4 +31,4 @@ You lost your connection to the remote process's object library or type library.
 4.  In the **References** dialog box, select the check box for the `Application` object.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

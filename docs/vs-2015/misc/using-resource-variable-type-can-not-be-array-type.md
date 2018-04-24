@@ -32,6 +32,6 @@ A `Using` statement specifies an array variable for a resource.
 -   Use a different type of system resource in the `Using` block.  
   
 ## See Also  
- [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md)   
- [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)   
+ [Using Statement](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)   
+ [How to: Dispose of a System Resource](http://msdn.microsoft.com/library/8be2b239-8090-419b-8e7e-bcaa75b0ecc8)   
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)

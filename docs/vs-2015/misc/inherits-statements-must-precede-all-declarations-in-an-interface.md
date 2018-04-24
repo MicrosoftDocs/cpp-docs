@@ -30,4 +30,4 @@ An `Inherits` statement must be the first non-blank, non-comment line in a class
 -   Move your `Inherits` statement so that it precedes all declarations.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)

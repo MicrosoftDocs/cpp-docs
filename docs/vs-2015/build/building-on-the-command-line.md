@@ -50,7 +50,7 @@ You can build C and C++ applications on the command line by using tools that are
  [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)  
  Use MSBuild (msbuild.exe) to build [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projects and [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solutions. This is equivalent to running the **Build** project or **Build Solution** command in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
- [DEVENV](../Topic/Devenv%20Command%20Line%20Switches.md)  
+ [DEVENV](http://msdn.microsoft.com/library/e12bc6ed-74fd-4bea-8d7c-89b99c20bad8)  
  Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
  [NMAKE](../build/nmake-reference.md)  

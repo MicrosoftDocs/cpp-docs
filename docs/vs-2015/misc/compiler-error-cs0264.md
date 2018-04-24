@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0264
 Partial declarations of 'type' must have the same type parameter names in the same order  
   
- This error occurs if you are defining a generic type in partial declarations and the type parameters are not consistent in name or order throughout all of the partial declarations. To get rid of this error, check the type parameters for each partial declaration and make sure the same name and order of parameters is used. For more information, see [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md).and [Generic Type Parameters](../Topic/Generic%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md).  
+ This error occurs if you are defining a generic type in partial declarations and the type parameters are not consistent in name or order throughout all of the partial declarations. To get rid of this error, check the type parameters for each partial declaration and make sure the same name and order of parameters is used. For more information, see [Partial Classes and Methods](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).and [Generic Type Parameters](http://msdn.microsoft.com/library/a03b0ab2-0606-4b41-b7bf-e64d5bb4d18f).  
   
 ## Example  
  The following example generates CS0264.  

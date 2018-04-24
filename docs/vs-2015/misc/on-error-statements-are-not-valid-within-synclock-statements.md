@@ -30,4 +30,4 @@ manager: "wpickett"
 1.  Place `On Error` statements outside `SyncLock` blocks.  
   
 ## See Also  
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)
+ [On Error Statement](http://msdn.microsoft.com/library/ff947930-fb84-40cf-bd66-1ea219561d5c)

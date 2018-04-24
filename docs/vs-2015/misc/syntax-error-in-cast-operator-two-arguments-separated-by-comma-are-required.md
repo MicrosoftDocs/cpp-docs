@@ -31,10 +31,10 @@ An expression uses the `CType` conversion function or the `DirectCast` or `TryCa
   
 -   Supply both arguments as required for the conversion.  
   
--   If you intend to use one of the specific [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md) such as `CString`, you must use that function name instead of `CType`. Then only one argument is required.  
+-   If you intend to use one of the specific [Type Conversion Functions](http://msdn.microsoft.com/library/d9d8d165-f967-44ff-a6cd-598e4740a99e) such as `CString`, you must use that function name instead of `CType`. Then only one argument is required.  
   
 ## See Also  
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)   
- [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md)   
- [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md)   
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)
+ [CType Function](http://msdn.microsoft.com/library/dd4b29e7-6fa1-428c-877e-69955420bb72)   
+ [DirectCast Operator](http://msdn.microsoft.com/library/63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8)   
+ [TryCast Operator](http://msdn.microsoft.com/library/d1ef5d47-fef4-491e-b014-1d910628f65c)   
+ [Type Conversion Functions](http://msdn.microsoft.com/library/d9d8d165-f967-44ff-a6cd-598e4740a99e)

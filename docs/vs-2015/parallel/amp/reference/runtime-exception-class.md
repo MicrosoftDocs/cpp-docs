@@ -38,20 +38,20 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::runtime_exception Constructor](../Topic/runtime_exception::runtime_exception%20Constructor.md)|Initializes a new instance of the `runtime_exception` class.|  
-|[runtime_exception::~runtime_exception Destructor](../Topic/runtime_exception::~runtime_exception%20Destructor.md)|Destroys the `runtime_exception` object.|  
+|[runtime_exception::runtime_exception Constructor](http://msdn.microsoft.com/library/192dce0f-36e4-40e8-8f1b-42910b89bb6b)|Initializes a new instance of the `runtime_exception` class.|  
+|[runtime_exception::~runtime_exception Destructor](http://msdn.microsoft.com/library/b7164f00-ea8f-496e-9dbd-008fd626462a)|Destroys the `runtime_exception` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::get_error_code Method](../Topic/runtime_exception::get_error_code%20Method.md)|Returns the error code that caused the exception.|  
+|[runtime_exception::get_error_code Method](http://msdn.microsoft.com/library/b383ddce-aacd-45ed-8ecf-f83d89f37df7)|Returns the error code that caused the exception.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::operator= Operator](../Topic/runtime_exception::operator=%20Operator.md)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[runtime_exception::operator= Operator](http://msdn.microsoft.com/library/6d767645-b9c6-41c0-aa24-1bbb10a0952b)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1583
 'file' is not a valid Win32 resource file  
   
- This error occurs when you specify a filename with the [/win32res](../Topic/-win32res%20\(C%23%20Compiler%20Options\).md) compiler option that is not a valid or correctly formatted Win32 resource file. In Visual Studio, the filename is specified in the Application pane of the Project Designer.  
+ This error occurs when you specify a filename with the [/win32res](http://msdn.microsoft.com/library/3c33f750-6948-4c7e-a27e-bef98f77255b) compiler option that is not a valid or correctly formatted Win32 resource file. In Visual Studio, the filename is specified in the Application pane of the Project Designer.  
   
 ## See Also  
- [Application Page, Project Designer (C#)](../Topic/Application%20Page,%20Project%20Designer%20\(C%23\).md)
+ [Application Page, Project Designer (C#)](http://msdn.microsoft.com/library/f13701a8-4e2e-4474-9d60-bb43decbe0c1)

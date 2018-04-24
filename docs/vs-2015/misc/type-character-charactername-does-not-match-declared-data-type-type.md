@@ -30,4 +30,4 @@ A variable is declared with one data type but referred to with a type character 
 -   Change the declared data type of the variable, or change or remove the type character in the reference.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)
+ [Type Characters](http://msdn.microsoft.com/library/6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5)

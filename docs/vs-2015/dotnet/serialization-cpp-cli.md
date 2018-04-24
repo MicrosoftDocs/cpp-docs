@@ -58,7 +58,7 @@ private:
 ```  
   
 ### Comments  
- Note that both attributes can be referenced using their "short name" (**Serializable** and **NonSerialized**). This is further explained in [Applying Attributes](../Topic/Applying%20Attributes.md).  
+ Note that both attributes can be referenced using their "short name" (**Serializable** and **NonSerialized**). This is further explained in [Applying Attributes](http://msdn.microsoft.com/library/dd7604eb-9fa3-4b60-b2dd-b47739fa3148).  
   
 ## See Also  
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

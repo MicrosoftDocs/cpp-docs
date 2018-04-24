@@ -34,4 +34,4 @@ An `Else` statement occurs without a corresponding `If` statement. `Else` must b
 3.  Ensure that this `If` block is correctly formatted.  
   
 ## See Also  
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)

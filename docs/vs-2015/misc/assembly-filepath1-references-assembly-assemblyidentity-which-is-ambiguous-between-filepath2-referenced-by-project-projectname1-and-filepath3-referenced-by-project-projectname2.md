@@ -29,7 +29,7 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
   
  The *assembly identity* includes the assembly's name, version, public key if any, and culture. This information uniquely identifies the assembly.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42204  
   
@@ -41,8 +41,8 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
   
 ## See Also  
  [NOT IN BUILD: Assemblies](http://msdn.microsoft.com/en-us/6c5c7b30-fa78-4f40-b908-120d0743b0e6)   
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
- [Assembly Benefits](../Topic/Assembly%20Benefits.md)   
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676)   
+ [Assembly Benefits](http://msdn.microsoft.com/library/77e1831e-9b6d-4a86-91a6-51e1a64271d9)   
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
  [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

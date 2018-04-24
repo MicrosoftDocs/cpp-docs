@@ -40,6 +40,6 @@ Expression cannot appear inside a quoted attribute value. Try removing quotes.
     ```  
   
 ## See Also  
- [Embedded Expressions in XML](../Topic/Embedded%20Expressions%20in%20XML%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Embedded Expressions in XML](http://msdn.microsoft.com/library/bf2eb779-b751-4b7c-854f-9f2161482352)   
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

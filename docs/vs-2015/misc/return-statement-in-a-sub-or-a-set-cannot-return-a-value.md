@@ -32,7 +32,7 @@ manager: "wpickett"
 -   You can effectively return values from `Sub` procedures by modifying the value of parameters passed by reference using the `ByRef` keyword.  
   
 ## See Also  
- [Return Statement](../Topic/Return%20Statement%20\(Visual%20Basic\).md)   
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Return Statement](http://msdn.microsoft.com/library/ac86e7f0-5a67-42c3-9834-0e0381efa3ec)   
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)   
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

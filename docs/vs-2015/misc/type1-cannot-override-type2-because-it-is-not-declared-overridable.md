@@ -32,6 +32,6 @@ A member in a derived class overrides a base class member that is not marked wit
 2.  Use the `Shadows` keyword to shadow the item in the base class.  
   
 ## See Also  
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Overridable](http://msdn.microsoft.com/library/612581e7-8a4c-4a5d-beff-3402fffa6f35)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)

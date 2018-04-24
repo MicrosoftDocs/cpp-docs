@@ -34,4 +34,4 @@ manager: "wpickett"
 ## See Also  
  [NOT IN BUILD: Asc, AscW Functions](http://msdn.microsoft.com/en-us/6814bfec-12ba-41fb-b10e-bec99750d5e1)   
  [NOT IN BUILD: Val Function](http://msdn.microsoft.com/en-us/81650f77-9242-4ec1-8e04-e93b5daa451d)   
- [Char Data Type](../Topic/Char%20Data%20Type%20\(Visual%20Basic\).md)
+ [Char Data Type](http://msdn.microsoft.com/library/cd7547a9-7855-4e8e-b216-35d74a362657)

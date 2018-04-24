@@ -64,4 +64,4 @@ unsafe class Test
  This code is a valid expression tree because no type arguments are pointer types. They are arrays of pointers, and arrays are not pointer types. Also, the body of the expression tree does not do anything dangerous with any pointer.  
   
 ## See Also  
- [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md)
+ [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)

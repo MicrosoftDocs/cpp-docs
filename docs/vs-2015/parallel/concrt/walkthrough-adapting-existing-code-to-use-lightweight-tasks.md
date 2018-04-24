@@ -65,11 +65,11 @@ Parameters = 50, 100
   
  [!code-cpp[concrt-migration-lwt#5](../../snippets/cpp/VS_Snippets_ConcRT/concrt-migration-lwt/cpp/migration-lwt.cpp#5)]  
   
-5.  Replace the call to `CreateThread` with a call to the [concurrency::CurrentScheduler::ScheduleTask](../Topic/CurrentScheduler::ScheduleTask%20Method.md) method.  
+5.  Replace the call to `CreateThread` with a call to the [concurrency::CurrentScheduler::ScheduleTask](http://msdn.microsoft.com/library/194110b6-182e-4d5e-8c34-11763f9fd3d7) method.  
   
  [!code-cpp[concrt-migration-lwt#6](../../snippets/cpp/VS_Snippets_ConcRT/concrt-migration-lwt/cpp/migration-lwt.cpp#6)]  
   
-6.  Replace the call to `WaitForSingleObject` with a call to the [concurrency::event::wait](../Topic/event::wait%20Method.md) method to wait for the task to finish.  
+6.  Replace the call to `WaitForSingleObject` with a call to the [concurrency::event::wait](http://msdn.microsoft.com/library/ecb63000-4ed0-4e3c-890a-d9662c182ad5) method to wait for the task to finish.  
   
  [!code-cpp[concrt-migration-lwt#7](../../snippets/cpp/VS_Snippets_ConcRT/concrt-migration-lwt/cpp/migration-lwt.cpp#7)]  
   
@@ -79,7 +79,7 @@ Parameters = 50, 100
   
  [!code-cpp[concrt-migration-lwt#8](../../snippets/cpp/VS_Snippets_ConcRT/concrt-migration-lwt/cpp/migration-lwt.cpp#8)]  
   
-9. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](../Topic/event::set%20Method.md) method to signal to the main application that the task has finished.  
+9. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](http://msdn.microsoft.com/library/8555fca6-fed7-48d8-8136-311742c1fe3b) method to signal to the main application that the task has finished.  
   
  [!code-cpp[concrt-migration-lwt#9](../../snippets/cpp/VS_Snippets_ConcRT/concrt-migration-lwt/cpp/migration-lwt.cpp#9)]  
   

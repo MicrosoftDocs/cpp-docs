@@ -30,8 +30,8 @@ A pleasant and robust setup experience forms a lasting impression in your usersâ
 |Task|For more information, see|  
 |----------|-------------------------------|  
 |Learn more about Windows Installer.|[Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx)|  
-|Determine your VSPackage's system requirements.|-   [Detecting System Requirements](../Topic/Detecting%20System%20Requirements.md)|  
-|Learn how to register a VSPackage in a setup package.|-   [VSPackage Registration](../Topic/VSPackage%20Registration.md)<br />-   [Commands That Must Be Run After Installation](../Topic/Commands%20That%20Must%20Be%20Run%20After%20Installation.md)|  
+|Determine your VSPackage's system requirements.|-   [Detecting System Requirements](http://msdn.microsoft.com/library/0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737)|  
+|Learn how to register a VSPackage in a setup package.|-   [VSPackage Registration](http://msdn.microsoft.com/library/ecd20da8-b04b-4141-a8f4-a2ef91dd597a)<br />-   [Commands That Must Be Run After Installation](http://msdn.microsoft.com/library/c9601f2e-2c6e-4da9-9a6e-e707319b39e2)|  
 |See a sample installation package.|-   IronPython Integration Setup Sample|  
   
 ## Supporting Side-by-Side Products  
@@ -39,8 +39,8 @@ A pleasant and robust setup experience forms a lasting impression in your usersâ
   
 |Task|For more information, see|  
 |----------|-------------------------------|  
-|Learn about supporting multiple versions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in your [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integration product.|-   [Choosing Between Shared and Versioned VSPackages](../Topic/Choosing%20Between%20Shared%20and%20Versioned%20VSPackages.md)<br />-   [Component Management](../Topic/Component%20Management.md)|  
-|Learn about supporting multiple versions of your [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integration product.|-   [Choosing Between Shared and Versioned VSPackages](../Topic/Choosing%20Between%20Shared%20and%20Versioned%20VSPackages.md)<br />-   [Registering File Name Extensions for Side-By-Side Deployments](../Topic/Registering%20File%20Name%20Extensions%20for%20Side-By-Side%20Deployments.md)<br />-   [Detecting System Requirements](../Topic/Detecting%20System%20Requirements.md)<br />-   [Commands That Must Be Run After Installation](../Topic/Commands%20That%20Must%20Be%20Run%20After%20Installation.md)|  
+|Learn about supporting multiple versions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in your [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integration product.|-   [Choosing Between Shared and Versioned VSPackages](http://msdn.microsoft.com/library/e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9)<br />-   [Component Management](http://msdn.microsoft.com/library/029bffa2-6841-4caa-a41a-442467e1aedc)|  
+|Learn about supporting multiple versions of your [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integration product.|-   [Choosing Between Shared and Versioned VSPackages](http://msdn.microsoft.com/library/e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9)<br />-   [Registering File Name Extensions for Side-By-Side Deployments](http://msdn.microsoft.com/library/9ab046a2-147d-4167-aa14-7d661b1eaaa5)<br />-   [Detecting System Requirements](http://msdn.microsoft.com/library/0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737)<br />-   [Commands That Must Be Run After Installation](http://msdn.microsoft.com/library/c9601f2e-2c6e-4da9-9a6e-e707319b39e2)|  
   
 ## Testing Your Visual Studio Integration Product  
  The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Test (VSIT) suite is a series of tests that verifies that a VSPackage correctly integrates into [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. VSIT does not test a VSPackageâ€™s functionality, but helps ensure that a VSPackage does not adversely affect other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] functionality. For more information, see [Visual Studio Integration Tests](http://msdn.microsoft.com/en-us/8d741735-7d93-46c2-ab93-01da7a0e016d).

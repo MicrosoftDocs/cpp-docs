@@ -31,5 +31,5 @@ A `Handles` clause must refer to a local event. The `Global` keyword provides ac
   
 ## See Also  
  [Global - delete](http://msdn.microsoft.com/en-us/18c8ba14-40f6-4978-8096-6a5852324635)   
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

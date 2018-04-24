@@ -36,6 +36,6 @@ Project already has a reference to assembly \<assemblyidentity>. A second refere
 -   Remove the second reference. It is unnecessary because it refers to the same assembly.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)
+ [Troubleshooting Broken References](http://msdn.microsoft.com/library/00a9ade9-652e-40de-8ada-85f63cd183ee)

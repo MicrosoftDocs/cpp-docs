@@ -46,6 +46,6 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)   
- [this](../Topic/this%20\(C%23%20Reference\).md)   
- [ref](../Topic/ref%20\(C%23%20Reference\).md)
+ [Extension Methods](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)   
+ [this](http://msdn.microsoft.com/library/d4f827fe-4710-410b-89b8-867dad44b8a3)   
+ [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd)

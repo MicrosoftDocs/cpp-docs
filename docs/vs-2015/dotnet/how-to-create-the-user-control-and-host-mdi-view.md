@@ -28,7 +28,7 @@ The latest version of this topic can be found at [How to: Create the User Contro
   
 The following steps show how to create a .NET Framework user control, author the user control in a control class library (specifically, a Windows Control Library project), and then compile the project into an assembly. The control can then be consumed from an MFC application that uses classes derived from [CView Class](../mfc/reference/cview-class.md) and [CWinFormsView Class](../mfc/reference/cwinformsview-class.md).  
   
- For information about how to create a Windows Forms user control and author a control class library, see [How to: Author User Controls](../Topic/How%20to:%20Author%20Composite%20Controls.md).  
+ For information about how to create a Windows Forms user control and author a control class library, see [How to: Author User Controls](http://msdn.microsoft.com/library/79c9cf05-5ab6-4a18-886d-88a64748b098).  
   
 > [!NOTE]
 >  In some cases, Windows Forms controls, such as a third-party Grid control, might not behave reliably when hosted in an MFC application. A recommended workaround is to place a Windows Forms User Control in the MFC application and place the third-party Grid control inside the User control.  
@@ -89,7 +89,7 @@ The following steps show how to create a .NET Framework user control, author the
     };  
     ```  
   
-     If you want add additional views to your MDI application, you will need to call [CWinApp::AddDocTemplate](../Topic/CWinApp::AddDocTemplate.md) for each view you create.  
+     If you want add additional views to your MDI application, you will need to call [CWinApp::AddDocTemplate](http://msdn.microsoft.com/library/9bc1fc63-1cff-4301-b8e9-c4bdda3c8fea) for each view you create.  
   
 7.  Modify the MFC02View.cpp file to change CView to CWinFormsView in the IMPLEMENT_DYNCREATE macro and message map and replace the existing empty constructor with the constructor shown below:  
   

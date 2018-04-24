@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS0192
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)  
   
- A field (variable) marked with the [readonly](../Topic/readonly%20\(C%23%20Reference\).md) keyword cannot be passed either to a [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) parameter except inside a constructor. For more information, see [Fields](../Topic/Fields%20\(C%23%20Programming%20Guide\).md).  
+ A field (variable) marked with the [readonly](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) keyword cannot be passed either to a [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameter except inside a constructor. For more information, see [Fields](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7).  
   
- CS0192 also results if the `readonly` field is [static](../Topic/static%20\(C%23%20Reference\).md) and the constructor is not marked `static`.  
+ CS0192 also results if the `readonly` field is [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf) and the constructor is not marked `static`.  
   
 ## Example  
  The following sample generates CS0192.  

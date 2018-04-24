@@ -79,7 +79,7 @@ class CAutoVectorPtr
 |[CAutoVectorPtr::m_p](#cautovectorptr__m_p)|The pointer data member variable.|  
   
 ## Remarks  
- This class provides methods for creating and managing a smart pointer, which will help protect against memory leaks by automatically freeing resources when it falls out of scope. `CAutoVectorPtr` is similar to `CAutoPtr`, the only difference being that `CAutoVectorPtr` uses [vector new&#91;&#93;](../Topic/operator%20new\(%3Cnew%3E\).md) and [vector delete&#91;&#93;](../Topic/operator%20delete\(%3Cnew%3E\).md) to allocate and free memory instead of the C++ **new** and **delete** operators. See [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) if collection classes of `CAutoVectorPtr` are required.  
+ This class provides methods for creating and managing a smart pointer, which will help protect against memory leaks by automatically freeing resources when it falls out of scope. `CAutoVectorPtr` is similar to `CAutoPtr`, the only difference being that `CAutoVectorPtr` uses [vector new&#91;&#93;](http://msdn.microsoft.com/library/c98bb1c9-6d7f-42c2-8366-f2f3eeb71a31) and [vector delete&#91;&#93;](http://msdn.microsoft.com/library/fa28d7d3-27a0-43e6-880b-4b7c8169b489) to allocate and free memory instead of the C++ **new** and **delete** operators. See [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) if collection classes of `CAutoVectorPtr` are required.  
   
  See [CAutoPtr](../../atl/reference/cautoptr-class.md) for an example of using a smart pointer class.  
   

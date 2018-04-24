@@ -140,7 +140,7 @@ CPair* Lookup(KINARGTYPE key) throw();
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](../Topic/CRBTree::CPair%20Class.md).  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](http://msdn.microsoft.com/library/35e224ed-407e-4864-90ee-2dac2432ad41).  
   
 ### Remarks  
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  

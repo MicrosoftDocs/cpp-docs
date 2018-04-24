@@ -35,29 +35,29 @@ INCLUDE[vsprvs](../includes/vsprvs-md.md)] provides two different technologies f
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] does support [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] in the [!INCLUDE[csprcs](../includes/csprcs-md.md)] and [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] development environments. If your [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] project is a dependency of a [!INCLUDE[csprcs](../includes/csprcs-md.md)] project, you can publish the application (including its dependencies) using [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment from the [!INCLUDE[csprcs](../includes/csprcs-md.md)] development environment.  
   
- To deploy a [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] application using [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], you first have to build a [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md) and a [ClickOnce Deployment Manifest](../Topic/ClickOnce%20Deployment%20Manifest.md) using the [Mage.exe (Manifest Generation and Editing Tool)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)).  
+ To deploy a [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] application using [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], you first have to build a [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243) and a [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) using the [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)).  
   
  You first use Mage.exe to build the application manifest; the resulting file will have the extension .manifest. You then use Mage.exe to build the deployment manifest; the resulting file will have the extension .application. You then sign the manifests.  
   
- The application manifest must specify the target processor (**x86**, **x64**, or **ARM**). See [Deploying Prerequisites for 64-bit Applications](../Topic/Deploying%20Prerequisites%20for%2064-bit%20Applications.md) for information on these options.  
+ The application manifest must specify the target processor (**x86**, **x64**, or **ARM**). See [Deploying Prerequisites for 64-bit Applications](http://msdn.microsoft.com/library/87399e20-5510-41e4-b5b7-4a87c5773f21) for information on these options.  
   
  Also, the name of the application and deployment manifests must be different from the name of the C++ application. This avoids conflict between the application manifest created by Mage.exe and the external manifest that is part of the C++ application.  
   
  Your deployment will need to install any [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] libraries on which your application depends. To determine the dependencies for a particular application, you can use depends.exe or the DUMPBIN utility with the /DEPENDENTS option. For more information on dependencies, see [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). You might need to run VCRedist.exe; this utility installs [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] libraries on the target computer.  
   
- You may also need to build a bootstrapper (prerequisites installer) for your application to deploy prerequisite components; for information on the bootstrapper, see [Creating Bootstrapper Packages](../Topic/Creating%20Bootstrapper%20Packages.md).  
+ You may also need to build a bootstrapper (prerequisites installer) for your application to deploy prerequisite components; for information on the bootstrapper, see [Creating Bootstrapper Packages](http://msdn.microsoft.com/library/ba1a785b-693d-446b-bcae-b88cadee73d1).  
   
- For a more detailed description of the technology, see [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md). For a detailed example of [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](../Topic/Walkthrough:%20Manually%20Deploying%20a%20ClickOnce%20Application.md).  
+ For a more detailed description of the technology, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a). For a detailed example of [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](http://msdn.microsoft.com/library/ccee6551-a1b9-4ca2-8845-9c1cf4ac2560).  
   
 ## See Also  
- [Mage.exe (Manifest Generation and Editing Tool)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)   
+ [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)   
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
- [Deploying Applications, Services, and Components](../Topic/Deploying%20Applications,%20Services,%20and%20Components.md)   
+ [Deploying Applications, Services, and Components](http://msdn.microsoft.com/library/63fcdd5b-2e54-4210-9038-65bc23167725)   
  [Windows Installer Deployment](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md)   
- [Creating Bootstrapper Packages](../Topic/Creating%20Bootstrapper%20Packages.md)   
+ [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)   
+ [Creating Bootstrapper Packages](http://msdn.microsoft.com/library/ba1a785b-693d-446b-bcae-b88cadee73d1)   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   
  [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
 

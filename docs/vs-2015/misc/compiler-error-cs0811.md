@@ -28,7 +28,7 @@ The fully qualified name for 'name' is too long for debug information. Compile w
   
 ### To correct this error  
   
-1.  If modifying the name is not possible, the only alternative is to compile without the [/debug](../Topic/-debug%20\(C%23%20Compiler%20Options\).md) option.  
+1.  If modifying the name is not possible, the only alternative is to compile without the [/debug](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) option.  
   
 ## Example  
  The following code generates CS0811:  

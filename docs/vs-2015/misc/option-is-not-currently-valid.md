@@ -23,7 +23,7 @@ This error generally occurs when an argument or switch for a command has been sp
   
 ### To correct this error  
   
-1.  Verify that the arguments and switches entered are currently available. For more information, see [Visual Studio Commands with Arguments](../Topic/Visual%20Studio%20Commands.md).  
+1.  Verify that the arguments and switches entered are currently available. For more information, see [Visual Studio Commands with Arguments](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1).  
   
 ## See Also  
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

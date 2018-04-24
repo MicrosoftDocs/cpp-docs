@@ -27,4 +27,4 @@ The value of the `Period` argument, which specifies the period for which asset d
 ## See Also  
  [NOT IN BUILD: DDB Function](http://msdn.microsoft.com/en-us/c7cf8929-d158-4399-b3cb-31d897d12556)   
  [NOT IN BUILD: SYD Function](http://msdn.microsoft.com/en-us/23c25672-f5dd-49ac-9893-4faa82634181)   
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)
+ [Passing Arguments by Value and by Reference](http://msdn.microsoft.com/library/fd8a9de6-7178-44d5-a9bf-458d4ad907c2)

@@ -26,7 +26,7 @@ The accessibility modifier of the 'property_accessor' accessor must be more rest
   
  The accessibility modifier of the set/get accessor must be more restrictive than the property or indexer 'property/indexer'  
   
- This error occurs when you declare a property or indexer with an access modifier that is less restrictive than the access modifier on one of its accessors. To resolve this error, use the appropriate access modifier on either the property or the set accessor. For more information, see [Accessor Accessibility](../Topic/Restricting%20Accessor%20Accessibility%20\(C%23%20Programming%20Guide\).md).  
+ This error occurs when you declare a property or indexer with an access modifier that is less restrictive than the access modifier on one of its accessors. To resolve this error, use the appropriate access modifier on either the property or the set accessor. For more information, see [Accessor Accessibility](http://msdn.microsoft.com/library/6e655798-e112-4301-a680-6310a6e012e1).  
   
 ## Example  
  This sample contains an internal property with an internal set method. The following sample generates CS0273.  

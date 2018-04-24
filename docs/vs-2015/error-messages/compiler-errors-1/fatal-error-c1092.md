@@ -47,5 +47,5 @@ Edit and Continue does not support changes to data types; build required
   
 2.  From the **Build** menu, choose **Build**.  
   
- For further information, see the [Supported Code Changes](../Topic/Supported%20Code%20Changes%20\(C++\).md).
+ For further information, see the [Supported Code Changes](http://msdn.microsoft.com/library/f5754363-8a56-417b-b904-b05d9dd26d03).
 

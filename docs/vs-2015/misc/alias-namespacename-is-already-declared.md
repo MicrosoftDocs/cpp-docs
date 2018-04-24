@@ -30,5 +30,5 @@ You have attempted to use `Imports` to import a namespace that is already declar
 -   Check the namespace you are attempting to import.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)   
- [Alias](../Topic/Alias%20Clause%20\(Visual%20Basic\).md)
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)   
+ [Alias](http://msdn.microsoft.com/library/58c06b11-465d-4d87-906a-73200a3d7f19)

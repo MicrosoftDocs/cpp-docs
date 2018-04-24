@@ -26,4 +26,4 @@ The structure you are attempting to write to a file contains an unsupported type
   
 ## See Also  
  [My.Computer.FileSystem.WriteAllBytes Method](http://msdn.microsoft.com/en-us/b1a24dc1-eac8-4e22-8ffa-cc3bacbaf826)   
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

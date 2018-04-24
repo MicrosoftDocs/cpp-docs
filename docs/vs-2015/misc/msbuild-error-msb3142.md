@@ -31,4 +31,4 @@ manager: "douge"
  These are the same potential reasons that file.copy or directory.createdirectory fail.  
   
 ## See Also  
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)
+ [Product and Package Schema Reference](http://msdn.microsoft.com/library/5a74878f-b896-4cca-b968-98d00fe78fb0)

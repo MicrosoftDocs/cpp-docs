@@ -30,4 +30,4 @@ Statements that change the state of an object are not allowed in this context.
 -   Change your code so that statements are evaluated without changing the state of other items.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)

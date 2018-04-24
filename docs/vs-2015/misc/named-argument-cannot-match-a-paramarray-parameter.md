@@ -30,5 +30,5 @@ You have supplied a named argument (specified with the argument's declared name 
 -   Pass the argument by position, rather than by name.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)   
+ [Passing Arguments by Position and by Name](http://msdn.microsoft.com/library/1ad7358f-1da9-48da-a95b-f3c7ed41eff3)

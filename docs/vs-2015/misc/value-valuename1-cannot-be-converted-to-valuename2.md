@@ -30,4 +30,4 @@ A type conversion was attempted between two incompatible types.
 -   Verify the types that are being cast.  
   
 ## See Also  
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)
+ [CType Function](http://msdn.microsoft.com/library/dd4b29e7-6fa1-428c-877e-69955420bb72)

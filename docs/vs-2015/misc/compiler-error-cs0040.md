@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0040
 Unexpected error creating debug information file — 'reason'  
   
- This error can occur when using the [/debug](../Topic/-debug%20\(C%23%20Compiler%20Options\).md) compiler option and indicates that the compiler was unable to write to the .pdb file. Possible resolutions to this error include reinstalling Visual Studio, ensuring that the compiler has write access to a file or directory, or not compiling with /debug.
+ This error can occur when using the [/debug](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) compiler option and indicates that the compiler was unable to write to the .pdb file. Possible resolutions to this error include reinstalling Visual Studio, ensuring that the compiler has write access to a file or directory, or not compiling with /debug.

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0594
 Floating-point constant is outside the range of type 'type'  
   
- A value was assigned to a floating-point variable that is too large for the variables of this data type. See [Integral Types Table](../Topic/Integral%20Types%20Table%20\(C%23%20Reference\).md) for information about the range of values allowed in data types.  
+ A value was assigned to a floating-point variable that is too large for the variables of this data type. See [Integral Types Table](http://msdn.microsoft.com/library/62e86126-46ff-40b0-9028-e61d7558268c) for information about the range of values allowed in data types.  
   
  The following sample generates CS0594:  
   

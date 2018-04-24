@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0030
 Cannot convert type 'type' to 'type'  
   
- You must provide conversion routines to support certain operator overloads. For more information, see [Conversion Operators](../Topic/Conversion%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ You must provide conversion routines to support certain operator overloads. For more information, see [Conversion Operators](http://msdn.microsoft.com/library/c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc).  
   
  The following sample generates CS0030:  
   

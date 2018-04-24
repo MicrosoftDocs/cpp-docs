@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1055
 An add or remove accessor expected  
   
- If your [event](../Topic/event%20\(C%23%20Reference\).md) is not declared as a field, it must define both **add** and **remove** accessor functions.  
+ If your [event](http://msdn.microsoft.com/library/7858fd85-153b-4259-85d0-6aa13c35f174) is not declared as a field, it must define both **add** and **remove** accessor functions.  
   
  The following sample generates CS1055:  
   

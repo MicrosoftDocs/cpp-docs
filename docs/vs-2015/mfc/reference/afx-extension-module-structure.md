@@ -61,7 +61,7 @@ struct AFX_EXTENSION_MODULE
 ## Remarks  
  MFC extension DLLs need to do two things in their `DllMain` function:  
   
--   Call [AfxInitExtensionModule](../Topic/AfxInitExtensionModule.md) and check the return value.  
+-   Call [AfxInitExtensionModule](http://msdn.microsoft.com/library/15f0c820-ff34-4da6-8077-79afbbb8dac1) and check the return value.  
   
 -   Create a **CDynLinkLibrary** object if the DLL will be exporting [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) objects or has its own custom resources.  
   
@@ -78,8 +78,8 @@ struct AFX_EXTENSION_MODULE
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [AfxInitExtensionModule](../Topic/AfxInitExtensionModule.md)   
- [AfxTermExtensionModule](../Topic/AfxTermExtensionModule.md)
+ [AfxInitExtensionModule](http://msdn.microsoft.com/library/15f0c820-ff34-4da6-8077-79afbbb8dac1)   
+ [AfxTermExtensionModule](http://msdn.microsoft.com/library/b64de402-f1e3-4c26-9823-08c07876aaaa)
 
 
 

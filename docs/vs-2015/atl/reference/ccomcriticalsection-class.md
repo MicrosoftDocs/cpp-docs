@@ -63,7 +63,7 @@ class CComCriticalSection
 ## Remarks  
  `CComCriticalSection` is similar to class [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md), except that you must explicitly initialize and release the critical section.  
   
- Typically, you use `CComCriticalSection` through the `typedef` name [CriticalSection](../Topic/CComMultiThreadModel::CriticalSection.md). This name references `CComCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
+ Typically, you use `CComCriticalSection` through the `typedef` name [CriticalSection](http://msdn.microsoft.com/library/ecf6edcb-a1cd-4054-800c-5f2614e9b9f3). This name references `CComCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
   
  See [CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md) for a safer way to use this class than calling `Lock` and `Unlock` directly.  
   

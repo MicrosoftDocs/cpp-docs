@@ -24,9 +24,9 @@ manager: "ghogen"
 
 The latest version of this topic can be found at [Member Function Templates](https://docs.microsoft.com/cpp/cpp/member-function-templates).  
   
-The term member template refers to both member function templates and nested class templates. Member function templates are template functions that are members of a class or class template. For more information, see [Nested Class Templates](../Topic/Nested%20Class%20Templates.md).  
+The term member template refers to both member function templates and nested class templates. Member function templates are template functions that are members of a class or class template. For more information, see [Nested Class Templates](http://msdn.microsoft.com/library/b3b53e03-950d-4699-b07b-41219dbc2d9f).  
   
- Member functions can be function templates in several contexts. All functions of class templates are generic but are not referred to as member templates or member function templates. If these member functions take their own template arguments, they are considered to be member function templates. For details, see [Member Functions of Template Classes](../Topic/Member%20Functions%20of%20Template%20Classes.md).  
+ Member functions can be function templates in several contexts. All functions of class templates are generic but are not referred to as member templates or member function templates. If these member functions take their own template arguments, they are considered to be member function templates. For details, see [Member Functions of Template Classes](http://msdn.microsoft.com/library/296430a6-c6a5-4c83-8569-4d85433eb8a1).  
   
 ## Example  
  Member function templates of nontemplate or template classes are declared as function templates with their template parameters.  

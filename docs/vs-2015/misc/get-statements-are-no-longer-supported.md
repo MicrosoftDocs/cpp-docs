@@ -32,6 +32,6 @@ manager: "wpickett"
 1.  Perform file operations using the members of `System.IO`, `FileSystemObject`, and [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] run-time functions.  
   
 ## See Also  
- [Processing Drives, Directories, and Files](../Topic/Processing%20Drives,%20Directories,%20and%20Files%20\(Visual%20Basic\).md)   
- [Get Statement](../Topic/Get%20Statement.md)   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [Processing Drives, Directories, and Files](http://msdn.microsoft.com/library/f1db14c8-a4fd-4d0b-8323-c7cb29d688c2)   
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)   
+ [File Access with Visual Basic](http://msdn.microsoft.com/library/231533bf-d049-4345-befa-3fb78fe6517d)

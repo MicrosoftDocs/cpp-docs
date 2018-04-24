@@ -50,7 +50,7 @@ manager: "ghogen"
 
 The latest version of this topic can be found at [y0, y1, yn](https://docs.microsoft.com/cpp/c-runtime-library/reference/y0-y1-yn).  
   
-These POSIX functions are deprecated. Use the ISO C++ conformant [Bessel Functions: _y0, _y1, _yn](../Topic/Bessel%20Functions:%20_y0,%20_y1,%20_yn.md) instead.
+These POSIX functions are deprecated. Use the ISO C++ conformant [Bessel Functions: _y0, _y1, _yn](http://msdn.microsoft.com/library/96581b10-7ef1-43c5-80c0-5622b2d97bbe) instead.
 
 
 

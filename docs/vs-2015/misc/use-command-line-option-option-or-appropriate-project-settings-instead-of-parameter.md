@@ -27,11 +27,11 @@ The preferred way to specify a file that contains a public key for an assembly, 
   
 ### To correct this error  
   
-1.  Use the [/keyfile](../Topic/-keyfile.md), [/keycontainer](../Topic/-keycontainer.md), or [/delaysign](../Topic/-delaysign.md)[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiler options instead of the <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute>, or <xref:System.Reflection.AssemblyDelaySignAttribute> attributes in your code.  
+1.  Use the [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8), [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc), or [/delaysign](http://msdn.microsoft.com/library/c76e61a4-1884-4252-9fb2-377f99caa690)[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiler options instead of the <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute>, or <xref:System.Reflection.AssemblyDelaySignAttribute> attributes in your code.  
   
 ## See Also  
- [How to: Create Signed Friend Assemblies](../Topic/How%20to:%20Create%20Signed%20Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)   
- [/keyfile](../Topic/-keyfile.md)   
- [/keycontainer](../Topic/-keycontainer.md)   
- [/delaysign](../Topic/-delaysign.md)
+ [How to: Create Signed Friend Assemblies](http://msdn.microsoft.com/library/f5542300-58b4-4e1c-b809-8df11e95e69b)   
+ [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)   
+ [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc)   
+ [/delaysign](http://msdn.microsoft.com/library/c76e61a4-1884-4252-9fb2-377f99caa690)

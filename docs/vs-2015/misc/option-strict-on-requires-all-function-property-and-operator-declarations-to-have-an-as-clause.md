@@ -32,6 +32,6 @@ A declaration contains a declared property or function return without an `As` cl
 2.  Supply an `As` clause for the declared property or function return, or turn `Option Strict Off`.  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)   
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)

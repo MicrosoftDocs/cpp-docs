@@ -26,5 +26,5 @@ This error generally occurs when you attempt to launch an external tool and the 
 1.  Check that the external tool is a valid executable or batch file using the **ExternalTools** dialog box available from the **Tools** menu.  
   
 ## See Also  
- [Managing External Tools](../Topic/Managing%20External%20Tools.md)   
+ [Managing External Tools](http://msdn.microsoft.com/library/f382fd40-a98f-4934-8c9a-5aeae881acde)   
  [Arguments for External Tools](../misc/arguments-for-external-tools.md)

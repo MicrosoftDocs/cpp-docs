@@ -34,6 +34,6 @@ manager: "wpickett"
     ```  
   
 ## See Also  
- [Arrays Summary](../Topic/Arrays%20Summary%20\(Visual%20Basic\).md)   
- [ReDim Statement](../Topic/ReDim%20Statement%20\(Visual%20Basic\).md)   
+ [Arrays Summary](http://msdn.microsoft.com/library/167f77d4-7cb2-4a31-9dc9-0fd0b26fda7e)   
+ [ReDim Statement](http://msdn.microsoft.com/library/ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083)   
  [ReDim Statement Changes in Visual Basic](http://msdn.microsoft.com/en-us/b4da14db-ff23-490f-b3c6-d7ae1b649532)

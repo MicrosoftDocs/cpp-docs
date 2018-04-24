@@ -32,5 +32,5 @@ A type within a module was declared as `Protected`.
 2.  Remove the `Protected` modifier.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Protected](../Topic/Protected%20\(Visual%20Basic\).md)
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Protected](http://msdn.microsoft.com/library/74ad3d56-309f-49d2-b60c-1d0157d010e8)

@@ -31,4 +31,4 @@ The <xref:System.Diagnostics.ConditionalAttribute> attribute has been applied to
   
 ## See Also  
  <xref:System.Diagnostics.ConditionalAttribute>   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)

@@ -30,6 +30,6 @@ The Visual Basic compiler has been passed the `/moduleassemblyname` compiler opt
 1.  Remove the `/moduleassemblyname` compiler option or set the `/target` option to `module`.  
   
 ## See Also  
- [/target (Visual Basic)](../Topic/-target%20\(Visual%20Basic\).md)   
- [/moduleassemblyname](../Topic/-moduleassemblyname.md)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)
+ [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)   
+ [/moduleassemblyname](http://msdn.microsoft.com/library/013a57b6-f425-4dd3-b333-512d72c42f55)   
+ [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)

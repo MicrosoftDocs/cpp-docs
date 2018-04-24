@@ -35,7 +35,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
 ## Known Issues Compiling Library Projects with /clr  
  Visual Studio contains some known issues when compiling library projects with **/clr**:  
   
--   Your code may query types at runtime with [CRuntimeClass::FromName](../Topic/CRuntimeClass::FromName.md). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to [CRuntimeClass::FromName](../Topic/CRuntimeClass::FromName.md) may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
+-   Your code may query types at runtime with [CRuntimeClass::FromName](http://msdn.microsoft.com/library/513566ec-9d7e-43b5-a46c-2821af3d76c5). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to [CRuntimeClass::FromName](http://msdn.microsoft.com/library/513566ec-9d7e-43b5-a46c-2821af3d76c5) may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
   
     ```  
     // Extension DLL Header file:  
@@ -142,7 +142,7 @@ COMObj2->Method(args);  // C++ equivalent
  When moving from native to MSIL, you will notice an increase in the size of your working set. This is because the common language runtime provides many features to ensure that programs run correctly. If your **/clr** application is not running correctly, you may want to enable C4793 (off by default), see [Compiler Warning (level 1 and 3) C4793](../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md) for more information.  
   
 ### Program Crashes on Shutdown  
- In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](../Topic/set_terminate%20\(%3Cexception%3E\).md) for more information.  
+ In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](http://msdn.microsoft.com/library/b949bd45-75ae-4fe8-af2c-f6ce67167d67) for more information.  
   
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  

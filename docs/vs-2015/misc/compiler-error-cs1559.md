@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1559
 Cannot use 'object' for Main method because it is imported  
   
- An invalid class was specified to the [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option; the class cannot be used as a location for the [Main](../Topic/Main\(\)%20and%20Command-Line%20Arguments%20\(C%23%20Programming%20Guide\).md) method.
+ An invalid class was specified to the [/main](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) compiler option; the class cannot be used as a location for the [Main](http://msdn.microsoft.com/library/73a17231-cf96-44ea-aa8a-54807c6fb1f4) method.

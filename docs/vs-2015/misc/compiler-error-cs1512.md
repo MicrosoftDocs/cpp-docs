@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1512
 Keyword 'base' is not available in the current context  
   
- The [base](../Topic/base%20\(C%23%20Reference\).md) keyword was used outside of a method, property, or constructor.  
+ The [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5) keyword was used outside of a method, property, or constructor.  
   
  The following example generates CS1512:  
   

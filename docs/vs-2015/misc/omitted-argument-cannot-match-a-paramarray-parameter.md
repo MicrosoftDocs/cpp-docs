@@ -30,4 +30,4 @@ You have omitted an argument required to match a `ParamArray` parameter. `ParamA
 -   Supply the omitted argument.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)

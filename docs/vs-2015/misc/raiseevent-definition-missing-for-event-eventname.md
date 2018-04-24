@@ -32,5 +32,5 @@ If an event is declared as `Custom`, it must supply a procedure for raising the 
 2.  Verify that other procedures within the event declaration are correctly terminated.  
   
 ## See Also  
- [RaiseEvent Statement](../Topic/RaiseEvent%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [RaiseEvent Statement](http://msdn.microsoft.com/library/f82e380a-1e6b-4047-bea8-c853f4d2c742)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

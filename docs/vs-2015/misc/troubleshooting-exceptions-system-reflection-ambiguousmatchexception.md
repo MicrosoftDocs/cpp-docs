@@ -26,4 +26,4 @@ The exception that is thrown when binding to a method results in more than one m
   
 ## See Also  
  <xref:System.Reflection.AmbiguousMatchException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

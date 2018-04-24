@@ -30,6 +30,6 @@ This error generally occurs when an unknown template name has been entered for t
 2.  Check the "New File Command" or "Add New Solution Item Command" topics for the correct syntax.  
   
 ## See Also  
- [New File Command](../Topic/New%20File%20Command.md)   
- [Add New Item Command](../Topic/Add%20New%20Item%20Command.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [New File Command](http://msdn.microsoft.com/library/767868d6-a525-425b-a43b-2198f636ab6b)   
+ [Add New Item Command](http://msdn.microsoft.com/library/63b7df32-db83-463b-bbe7-7ff011fe5298)   
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

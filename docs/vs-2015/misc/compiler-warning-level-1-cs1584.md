@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS1584
 XML comment on 'member' has syntactically incorrect cref attribute 'invalid_syntax'  
   
- One of the parameters passed to a tag for documentation comments has invalid syntax. For more information, see [Recommended Tags for Documentation Comments](../Topic/Recommended%20Tags%20for%20Documentation%20Comments%20\(C%23%20Programming%20Guide\).md).  
+ One of the parameters passed to a tag for documentation comments has invalid syntax. For more information, see [Recommended Tags for Documentation Comments](http://msdn.microsoft.com/library/6e98f7a9-38f4-4d74-b644-1ff1b23320fd).  
   
 ## Example  
  The following sample generates CS1584.  

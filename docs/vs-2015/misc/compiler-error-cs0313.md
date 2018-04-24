@@ -64,4 +64,4 @@ public class NullableTest
 ```  
   
 ## See Also  
- [Nullable Types](../Topic/Nullable%20Types%20\(C%23%20Programming%20Guide\).md)
+ [Nullable Types](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)

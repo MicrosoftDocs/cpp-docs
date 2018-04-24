@@ -16,4 +16,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Walkthrough: Getting Information from a Selected Link
-This topic is obsolete. Please see [Navigating and Updating a Model in Program Code](../Topic/Navigating%20and%20Updating%20a%20Model%20in%20Program%20Code.md).
+This topic is obsolete. Please see [Navigating and Updating a Model in Program Code](http://msdn.microsoft.com/library/1427ae91-be8a-4ce7-85df-00038faa2cbb).

@@ -30,6 +30,6 @@ A line label or line number is referred to but not defined within the scope of t
 -   Restructure the code so the line label and the reference are in the same procedure.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)   
+ [How to: Label Statements](http://msdn.microsoft.com/library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

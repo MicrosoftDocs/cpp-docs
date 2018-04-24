@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0036
 An out parameter cannot have the '[In]' attribute  
   
- Currently, the **In** attribute is not permitted on an [out](../Topic/out%20\(C%23%20Reference\).md) parameter.  
+ Currently, the **In** attribute is not permitted on an [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameter.  
   
  The following sample generates CS0036:  
   

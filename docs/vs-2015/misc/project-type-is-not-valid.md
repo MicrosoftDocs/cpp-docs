@@ -26,4 +26,4 @@ This error generally occurs when an incorrect value was entered for the argument
 1.  Check the documentation for the correct syntax for the **Add New Project** command and try again.  
   
 ## See Also  
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

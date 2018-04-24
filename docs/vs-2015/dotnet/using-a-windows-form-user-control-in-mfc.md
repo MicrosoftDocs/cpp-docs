@@ -44,7 +44,7 @@ Using the MFC Windows Forms support classes, you can host Windows Forms controls
 >  MFC Windows Forms integration works only in projects that link dynamically with MFC (projects in which AFXDLL is defined).  
   
 > [!NOTE]
->  When you build your application using a private (modified) copy of the MFC Windows Forms interfaces DLL (mfcmifc80.dll), it will fail to install in the GAC unless you replace the Microsoft key with your own vendor key. For more information on assembly signing, see [Programming with Assemblies](../Topic/Programming%20with%20Assemblies.md) and [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
+>  When you build your application using a private (modified) copy of the MFC Windows Forms interfaces DLL (mfcmifc80.dll), it will fail to install in the GAC unless you replace the Microsoft key with your own vendor key. For more information on assembly signing, see [Programming with Assemblies](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6) and [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
   
  For sample applications using Windows Forms, see [BirthdayPicker Sample: Demonstrates .NET Framework Resources with Windows Forms](http://msdn.microsoft.com/en-us/ac932aed-5502-4667-be29-709bca435317), [Calculator Sample: Windows Forms Pocket Calculator](http://msdn.microsoft.com/en-us/2283b516-3b7e-45f2-80c4-fdcfb366ce25), and [Scribble Sample: MDI Drawing Application](http://msdn.microsoft.com/en-us/f025da3e-659b-4222-b991-554a1b8b2358).  
   
@@ -74,20 +74,20 @@ Using the MFC Windows Forms support classes, you can host Windows Forms controls
   
  [IView Interface](../mfc/reference/iview-interface.md)  
   
- [CommandHandler](../Topic/CommandHandler%20Delegate.md)  
+ [CommandHandler](http://msdn.microsoft.com/library/22096734-e074-4aca-8523-4b15590109f9)  
   
- [CommandUIHandler](../Topic/CommandUIHandler%20Delegate.md)  
+ [CommandUIHandler](http://msdn.microsoft.com/library/2da11ecc-20d6-4a53-97fc-08b48f06d71a)  
   
- [DDX_ManagedControl](../Topic/DDX_ManagedControl.md)  
+ [DDX_ManagedControl](http://msdn.microsoft.com/library/61b55a90-c993-478e-9dea-db27fbf0e193)  
   
- [UICheckState](../Topic/UICheckState%20Enumeration.md)  
+ [UICheckState](http://msdn.microsoft.com/library/68d84834-e7f9-4ccb-8126-d492e27073e9)  
   
 ## Related Sections  
- [Windows Forms](../Topic/Windows%20Forms.md)  
+ [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)  
   
- [Windows Forms Controls](../Topic/Windows%20Forms%20Controls.md)  
+ [Windows Forms Controls](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)  
   
- [ASP.NET User Controls](../Topic/ASP.NET%20User%20Controls.md)  
+ [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca)  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

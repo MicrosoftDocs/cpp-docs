@@ -30,5 +30,5 @@ A `Function` or `Sub` statement contains an invalid keyword.
 -   Remove the invalid keyword from the `Function` or `Sub` statement.  
   
 ## See Also  
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)   
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)

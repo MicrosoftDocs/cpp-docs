@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0609
 Cannot set the IndexerName attribute on an indexer marked override  
   
- The name attribute (**IndexerNameAttribute**) cannot be applied to an indexed property that is an override. For more information, see [Indexers](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md).  
+ The name attribute (**IndexerNameAttribute**) cannot be applied to an indexed property that is an override. For more information, see [Indexers](http://msdn.microsoft.com/library/022cd27d-d5e0-4cfe-8b97-dc018cc3355d).  
   
  The following sample generates CS0609:  
   

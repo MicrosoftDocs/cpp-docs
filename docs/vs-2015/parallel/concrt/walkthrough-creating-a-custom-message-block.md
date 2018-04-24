@@ -56,7 +56,7 @@ This document describes how to create a custom message block type that orders in
   
  The `transformer` class derives from `propagator_block`, and therefore acts as both a source block and as a target block. It accepts messages of type `_Input` and sends messages of type `_Output`. The `transformer` class specifies `single_link_registry` as the link manager for any target blocks and `multi_link_registry` as the link manager for any source blocks. Therefore, a `transformer` object can have up to one target and an unlimited number of sources.  
   
- A class that derives from `source_block` must implement six methods: [propagate_to_any_targets](../Topic/source_block::propagate_to_any_targets%20Method.md), [accept_message](../Topic/source_block::accept_message%20Method.md), [reserve_message](../Topic/source_block::reserve_message%20Method.md), [consume_message](../Topic/source_block::consume_message%20Method.md), [release_message](../Topic/source_block::release_message%20Method.md), and [resume_propagation](../Topic/source_block::resume_propagation%20Method.md). A class that derives from `target_block` must implement the [propagate_message](../Topic/propagator_block::propagate_message%20Method.md) method and can optionally implement the [send_message](../Topic/propagator_block::send_message%20Method.md) method. Deriving from `propagator_block` is functionally equivalent to deriving from both `source_block` and `target_block`.  
+ A class that derives from `source_block` must implement six methods: [propagate_to_any_targets](http://msdn.microsoft.com/library/d7e2b8e8-3788-4a44-af96-58a1a16eb1f0), [accept_message](http://msdn.microsoft.com/library/7c1f52be-d7be-42ff-bf33-d59bb2466f13), [reserve_message](http://msdn.microsoft.com/library/94c8348f-3bc0-4a30-8608-b1d48a90e789), [consume_message](http://msdn.microsoft.com/library/1d20e951-ef02-40c3-aa61-048723623ca9), [release_message](http://msdn.microsoft.com/library/c48db15b-5bc8-4f73-86d4-ade1bc076392), and [resume_propagation](http://msdn.microsoft.com/library/81625251-040d-42f6-b6fb-acb8185a630f). A class that derives from `target_block` must implement the [propagate_message](http://msdn.microsoft.com/library/9e868729-9235-481f-84c9-589b5befd2ce) method and can optionally implement the [send_message](http://msdn.microsoft.com/library/ac572d55-13ee-46a3-95ed-8880995d749d) method. Deriving from `propagator_block` is functionally equivalent to deriving from both `source_block` and `target_block`.  
   
  The `propagate_to_any_targets` method is called by the runtime to asynchronously or synchronously process any incoming messages and propagate out any outgoing messages. The `accept_message` method is called by target blocks to accept messages. Many message block types, such as `unbounded_buffer`, send messages only to the first target that would receive it. Therefore, it transfers ownership of the message to the target. Other message block types, such as [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md), offer messages to each of its target blocks. Therefore, `overwrite_buffer` creates a copy of the message for each of its targets.  
   
@@ -67,7 +67,7 @@ This document describes how to create a custom message block type that orders in
  [[Top](#top)]  
   
 ##  <a name="class"></a> Defining the priority_buffer Class  
- The `priority_buffer` class is a custom message block type that orders incoming messages first by priority, and then by the order in which messages are received. The `priority_buffer` class resembles the [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) class because it holds a queue of messages, and also because it acts as both a source and a target message block and can have both multiple sources and multiple targets. However, `unbounded_buffer` bases message propagation only on the order in which it receives messages from its sources.  
+ The `priority_buffer` class is a custom message block type that orders incoming messages first by priority, and then by the order in which messages are received. The `priority_buffer` class resembles the [concurrency::unbounded_buffer](~/parallel/concrt/reference/unbounded-buffer-class.md) class because it holds a queue of messages, and also because it acts as both a source and a target message block and can have both multiple sources and multiple targets. However, `unbounded_buffer` bases message propagation only on the order in which it receives messages from its sources.  
   
  The `priority_buffer` class receives messages of type std::[tuple](../../standard-library/tuple-class.md) that contain `PriorityType` and `Type` elements. `PriorityType` refers to the type that holds the priority of each message; `Type` refers to the data portion of the message. The `priority_buffer` class sends messages of type `Type`. The `priority_buffer` class also manages two message queues: a [std::priority_queue](../../standard-library/priority-queue-class.md) object for incoming messages and a std::[queue](../../standard-library/queue-class.md) object for outgoing messages. Ordering messages by priority is useful when a `priority_buffer` object receives multiple messages simultaneously or when it receives multiple messages before any messages are read by consumers.  
   
@@ -167,7 +167,7 @@ This document describes how to create a custom message block type that orders in
   
      The `propagate_message` method enables the `priority_buffer` class to act as a message receiver, or target. This method receives the message that is offered by the provided source block and inserts that message into the priority queue. The `propagate_message` method then asynchronously sends all output messages to the target blocks.  
   
-     The runtime calls this method when you call the [concurrency::asend](../Topic/asend%20Function.md) function or when the message block is connected to other message blocks.  
+     The runtime calls this method when you call the [concurrency::asend](http://msdn.microsoft.com/library/920dc665-7e23-4bd7-8c74-3e74067aa52a) function or when the message block is connected to other message blocks.  
   
 18. In the `protected` section, define the `send_message` method.  
   
@@ -175,11 +175,11 @@ This document describes how to create a custom message block type that orders in
   
      The `send_message` method resembles `propagate_message`. However it sends the output messages synchronously instead of asynchronously.  
   
-     The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](../Topic/send%20Function.md) function.  
+     The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](http://msdn.microsoft.com/library/8713fb36-066b-47de-af12-589fa74805d6) function.  
   
  The `priority_buffer` class contains constructor overloads that are typical in many message block types. Some constructor overloads take [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) or [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) objects, which enable the message block to be managed by a specific task scheduler. Other constructor overloads take a filter function. Filter functions enable message blocks to accept or reject a message on the basis of its payload. For more information about message filters, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md). For more information about task schedulers, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
- Because the `priority_buffer` class orders messages by priority and then by the order in which messages are received, this class is most useful when it receives messages asynchronously, for example, when you call the [concurrency::asend](../Topic/asend%20Function.md) function or when the message block is connected to other message blocks.  
+ Because the `priority_buffer` class orders messages by priority and then by the order in which messages are received, this class is most useful when it receives messages asynchronously, for example, when you call the [concurrency::asend](http://msdn.microsoft.com/library/920dc665-7e23-4bd7-8c74-3e74067aa52a) function or when the message block is connected to other message blocks.  
   
  [[Top](#top)]  
   
@@ -188,7 +188,7 @@ This document describes how to create a custom message block type that orders in
   
  [!code-cpp[concrt-priority-buffer#18](../../snippets/cpp/VS_Snippets_ConcRT/concrt-priority-buffer/cpp/priority_buffer.h#18)]  
   
- The following example concurrently performs a number of `asend` and [concurrency::receive](../Topic/receive%20Function.md) operations on a `priority_buffer` object.  
+ The following example concurrently performs a number of `asend` and [concurrency::receive](http://msdn.microsoft.com/library/f36bbca1-97ac-4343-bfac-ea71ca2139e9) operations on a `priority_buffer` object.  
   
  [!code-cpp[concrt-priority-buffer#19](../../snippets/cpp/VS_Snippets_ConcRT/concrt-priority-buffer/cpp/priority_buffer.cpp#19)]  
   

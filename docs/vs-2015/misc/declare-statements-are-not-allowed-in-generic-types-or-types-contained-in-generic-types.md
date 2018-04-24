@@ -32,5 +32,5 @@ A `Declare` statement appears as part of a generic class or structure, or a clas
 -   Move the `Declare` statement outside the scope of any generic type, or remove it altogether.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Declare Statement](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

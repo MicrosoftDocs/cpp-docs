@@ -34,4 +34,4 @@ The `Line` statement is no longer supported. File I/O functionality is normally 
 ## See Also  
  <xref:System.IO>   
  <xref:System.Drawing>   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [File Access with Visual Basic](http://msdn.microsoft.com/library/231533bf-d049-4345-befa-3fb78fe6517d)

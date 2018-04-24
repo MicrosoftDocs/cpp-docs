@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0113
 A member 'function' marked as override cannot be marked as new or virtual  
   
- It is mutually exclusive to mark a method with the [new](../Topic/new%20\(C%23%20Reference\).md) and [override](../Topic/override%20\(C%23%20Reference\).md) keywords.  
+ It is mutually exclusive to mark a method with the [new](http://msdn.microsoft.com/library/e4136516-f058-45a8-84e5-da00a5cf9b6a) and [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) keywords.  
   
  The following sample generates CS0113:  
   

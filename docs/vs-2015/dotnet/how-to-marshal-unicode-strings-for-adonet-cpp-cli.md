@@ -151,12 +151,12 @@ StringCol: This is string 2.
     ```  
   
 ## .NET Framework Security  
- For information on security issues involving ADO.NET, see [Securing ADO.NET Applications](../Topic/Securing%20ADO.NET%20Applications.md).  
+ For information on security issues involving ADO.NET, see [Securing ADO.NET Applications](http://msdn.microsoft.com/library/005a1d43-6ee5-471e-ad98-1d30a44d49d5).  
   
 ## See Also  
  <xref:System.Runtime.InteropServices>   
  [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md)   
- [ADO.NET](../Topic/ADO.NET.md)   
+ [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)   
  [Interoperability](http://msdn.microsoft.com/en-us/afcc2e7d-3f32-48d2-8141-1c42acf29084)   
  [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
 

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0210
 You must provide an initializer in a fixed or using statement declaration  
   
- You must declare and initialize the variable in a [fixed statement](../Topic/fixed%20Statement%20\(C%23%20Reference\).md). For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ You must declare and initialize the variable in a [fixed statement](http://msdn.microsoft.com/library/7ea6db08-ad49-4a7a-b934-d8c4acad1c3a). For more information, see [Unsafe Code and Pointers](http://msdn.microsoft.com/library/b0fcca10-a92d-4f2a-835b-b0ccae6739ee).  
   
  The following sample generates CS0210:  
   
@@ -59,7 +59,7 @@ public class MyClass
 }  
 ```  
   
- The following sample also generates CS0210 because the [using statement](../Topic/using%20Statement%20\(C%23%20Reference\).md) has no initializer.  
+ The following sample also generates CS0210 because the [using statement](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3) has no initializer.  
   
 ```  
 // CS0210b.cs  

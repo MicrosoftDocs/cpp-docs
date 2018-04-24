@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0149
 Method name expected  
   
- When creating a [delegate](../Topic/delegate%20\(C%23%20Reference\).md), specify a method. For more information, see [Delegates](../Topic/Delegates%20\(C%23%20Programming%20Guide\).md).  
+ When creating a [delegate](http://msdn.microsoft.com/library/0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f), specify a method. For more information, see [Delegates](http://msdn.microsoft.com/library/97de039b-c76b-4b9c-a27d-8c1e1c8d93da).  
   
  The following sample generates CS0149:  
   

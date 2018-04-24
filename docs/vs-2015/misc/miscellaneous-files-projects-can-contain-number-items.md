@@ -26,4 +26,4 @@ The Miscellaneous Files project can save up to 256 items. This error generally o
 1.  Enter a number between one and 256 in the box.  
   
 ## See Also  
- [Documents, Environment, Options Dialog Box](../Topic/Documents,%20Environment,%20Options%20Dialog%20Box.md)
+ [Documents, Environment, Options Dialog Box](http://msdn.microsoft.com/library/4e3ccf1b-cd68-4db6-9470-710c911b47fc)

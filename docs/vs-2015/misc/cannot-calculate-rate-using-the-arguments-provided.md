@@ -27,4 +27,4 @@ The rate calculation does not contain the required arguments.
 2.  Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See Also  
- [Financial Summary](../Topic/Financial%20Summary%20\(Visual%20Basic\).md)
+ [Financial Summary](http://msdn.microsoft.com/library/474f973e-7103-42b7-aa4d-367c935e07e1)

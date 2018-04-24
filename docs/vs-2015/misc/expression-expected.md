@@ -30,5 +30,5 @@ An operator such as `+` or `=` requires an expression for its right operand, but
 -   Supply a valid expression for the right operand of the operator.  
   
 ## See Also  
- [Operators and Expressions](../Topic/Operators%20and%20Expressions%20in%20Visual%20Basic.md)   
+ [Operators and Expressions](http://msdn.microsoft.com/library/b86f3131-94ee-448f-96cd-79611e028b26)   
  [NotInBuild:Assignment Statements](http://msdn.microsoft.com/en-us/eb4f91e9-fbbf-45ca-b21d-e8ae069de4f9)

@@ -284,7 +284,7 @@ goodbye)";
 ```  
   
 ### std::string Literals (C++14)  
- std::string literals are Standard Library implementations of user-defined literals (see below) that are represented as "xyx"s (with a `s` suffix). This kind of string literal produces a temporary object of type std::string, std::wstring, std::u32string or std::u16string depending on the prefix that is specified. When no prefix is used, as above, a std::string is produced. L"xyz"s produces a std::wstring. u"xyz"s produces a [std::u16string](../Topic/u16string.md), and U"xyz"s produces a [std::u32string](../Topic/u32string.md).  
+ std::string literals are Standard Library implementations of user-defined literals (see below) that are represented as "xyx"s (with a `s` suffix). This kind of string literal produces a temporary object of type std::string, std::wstring, std::u32string or std::u16string depending on the prefix that is specified. When no prefix is used, as above, a std::string is produced. L"xyz"s produces a std::wstring. u"xyz"s produces a [std::u16string](http://msdn.microsoft.com/library/5e1dcd3a-b1e4-4ee0-8389-629f7c2061c1), and U"xyz"s produces a [std::u32string](http://msdn.microsoft.com/library/fd3970a3-a8b2-42ff-aadd-1cc99045f88a).  
   
 ```cpp  
 //#include <string>  

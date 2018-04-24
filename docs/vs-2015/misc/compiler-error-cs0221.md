@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0221
 Constant value 'value' cannot be converted to a 'type' (use 'unchecked' syntax to override)  
   
- An assignment operation that would result in a data loss was detected by [checked](../Topic/checked%20\(C%23%20Reference\).md), which is on by default. Either correct the assignment or use [unchecked](../Topic/unchecked%20\(C%23%20Reference\).md) to resolve this error. For more information, see [Checked and Unchecked](../Topic/Checked%20and%20Unchecked%20\(C%23%20Reference\).md).  
+ An assignment operation that would result in a data loss was detected by [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d), which is on by default. Either correct the assignment or use [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) to resolve this error. For more information, see [Checked and Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e).  
   
  The following sample generates CS0221:  
   

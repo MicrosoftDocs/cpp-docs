@@ -32,5 +32,5 @@ The declaration of an interface member includes a statement terminating the memb
 -   Remove the `End`*membername* statement from the interface definition.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

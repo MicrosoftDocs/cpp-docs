@@ -38,5 +38,5 @@ Initialization is not allowed when multiple variables are declared on the same l
     ```  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [Variable Declaration](http://msdn.microsoft.com/library/d8f10226-92b1-480f-9f53-df377b2d7e15)

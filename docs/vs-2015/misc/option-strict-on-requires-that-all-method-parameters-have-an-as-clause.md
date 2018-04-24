@@ -32,6 +32,6 @@ A method contains a parameter without an `As` clause. When `Option Strict` is on
 -   Supply an `As` clause for the declared variable, or turn `Option Strict` off.  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)   
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)   
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)

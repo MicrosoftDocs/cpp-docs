@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1655
 Cannot pass fields of 'variable' as a ref or out argument because it is a 'readonly variable type'  
   
- This error occurs if you are attempting to pass a member of a [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) variable, a [using](../Topic/using%20Statement%20\(C%23%20Reference\).md) variable, or a [fixed](../Topic/fixed%20Statement%20\(C%23%20Reference\).md) variable to a function as a ref or out argument. Because these variables are considered read-only in these contexts, this is not allowed.  
+ This error occurs if you are attempting to pass a member of a [foreach](http://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec) variable, a [using](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3) variable, or a [fixed](http://msdn.microsoft.com/library/7ea6db08-ad49-4a7a-b934-d8c4acad1c3a) variable to a function as a ref or out argument. Because these variables are considered read-only in these contexts, this is not allowed.  
   
  The following sample generates CS1655:  
   

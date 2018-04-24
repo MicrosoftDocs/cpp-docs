@@ -82,7 +82,7 @@ void abort( void );
   
  If the Windows error reporting handler is not invoked, then `abort` calls [_exit](../../c-runtime-library/reference/exit-exit-exit.md) to terminate the process with exit code 3 and returns control to the parent process or the operating system. `_exit` does not flush stream buffers or do `atexit`/`_onexit` processing.  
   
- For more information about CRT debugging, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+ For more information about CRT debugging, see [CRT Debugging Techniques](http://msdn.microsoft.com/library/9be561f6-14a8-44ff-925d-d911d5b8e6ff).  
   
  **End Microsoft Specific**  
   

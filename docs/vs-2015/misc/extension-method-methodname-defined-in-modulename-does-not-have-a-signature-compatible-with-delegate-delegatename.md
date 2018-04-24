@@ -26,6 +26,6 @@ There is a mismatch between the signatures of the extension method and the deleg
  **Error ID:** BC36710  
   
 ## See Also  
- [Relaxed Delegate Conversion](../Topic/Relaxed%20Delegate%20Conversion%20\(Visual%20Basic\).md)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
+ [Relaxed Delegate Conversion](http://msdn.microsoft.com/library/64f371d0-5416-4f65-b23b-adcbf556e81c)   
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

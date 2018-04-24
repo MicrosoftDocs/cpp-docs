@@ -27,11 +27,11 @@ Represents errors that occur during application execution. This is the base clas
  To fix the error, you might need information about the inner (or previous) exception that led to the current exception. The current exception's <xref:System.Exception.InnerException%2A> property contains the inner exception. You can use the **View Detail** link in the **Exception Assistant** dialog box to access the <xref:System.Exception.InnerException%2A> property.  
   
  **Temporarily turn off Just My Code debugging.**  
- The exception may have occurred in code that you did not write. To debug that code, you may have to turn off Just My Code debugging. For more information, see [General, Debugging, Options Dialog Box](../Topic/General,%20Debugging,%20Options%20Dialog%20Box.md).  
+ The exception may have occurred in code that you did not write. To debug that code, you may have to turn off Just My Code debugging. For more information, see [General, Debugging, Options Dialog Box](http://msdn.microsoft.com/library/b33aee0b-43c3-4c26-8ed4-bc673f491503).  
   
 ## See Also  
  <xref:System.Exception>   
  <xref:System.Exception.InnerException%2A>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
  [How to: Break When an Exception is Thrown](../misc/how-to-break-when-an-exception-is-thrown.md)   
- [General, Debugging, Options Dialog Box](../Topic/General,%20Debugging,%20Options%20Dialog%20Box.md)
+ [General, Debugging, Options Dialog Box](http://msdn.microsoft.com/library/b33aee0b-43c3-4c26-8ed4-bc673f491503)

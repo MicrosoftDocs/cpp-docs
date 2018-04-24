@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1508
 Resource identifier 'identifier' has already been used in this assembly  
   
- In a compilation, the same identifier (***identifier***) was passed to two or more [/resource](../Topic/-resource%20\(C%23%20Compiler%20Options\).md) or [/linkresource](../Topic/-linkresource%20\(C%23%20Compiler%20Options\).md) compiler options.  
+ In a compilation, the same identifier (***identifier***) was passed to two or more [/resource](http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f) or [/linkresource](http://msdn.microsoft.com/library/440c26c2-77c1-4811-a0a3-57cce3f5fc96) compiler options.  
   
  For example, the following options would generate CS1508:  
   

@@ -30,5 +30,5 @@ Parameters for properties must be declared using the `ByVal` modifier.
 -   Define property parameters as `ByVal`.  
   
 ## See Also  
- [ByVal](../Topic/ByVal%20\(Visual%20Basic\).md)   
- [ByRef](../Topic/ByRef%20\(Visual%20Basic\).md)
+ [ByVal](http://msdn.microsoft.com/library/1eaf4e58-b305-4785-9e3d-e416b9c75598)   
+ [ByRef](http://msdn.microsoft.com/library/4692e032-46f3-4e41-b0fa-3004364d9138)

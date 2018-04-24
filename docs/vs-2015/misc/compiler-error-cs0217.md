@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0217
 In order to be applicable as a short circuit operator a user-defined logical operator ('operator') must have the same return type as the type of its 2 parameters.  
   
- If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have parameters and return values of the same type. For more information on short-circuit operators, see [&& Operator](../Topic/&&%20Operator%20\(C%23%20Reference\).md) and [&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md).  
+ If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have parameters and return values of the same type. For more information on short-circuit operators, see [&& Operator](http://msdn.microsoft.com/library/2e4f0a1c-92a3-40f8-8e3b-17b607f20c31) and [&#124;&#124; Operator](http://msdn.microsoft.com/library/7d442d8e-400d-421f-b4d2-034bf82bcbdc).  
   
  The following sample generates CS0217:  
   
@@ -65,4 +65,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Overloadable Operators](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md)
+ [Overloadable Operators](http://msdn.microsoft.com/library/390d9d01-79fc-40ab-9ed3-0bf448da1b6a)

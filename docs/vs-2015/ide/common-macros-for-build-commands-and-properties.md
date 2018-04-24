@@ -117,13 +117,13 @@ Depending on your installation options, Visual Studio can make hundreds of macro
   
  To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md).  
   
- Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](../Topic/ItemMetadata%20Element%20\(MSBuild\).md) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
+ Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](http://msdn.microsoft.com/library/e3db5122-202d-43a9-b2f4-3e0ec4ed3d08) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
   
  The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](MSBuild%20Properties.md).  
   
 |Macro|Description|  
 |-----------|-----------------|  
-|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](../Topic/Project%20Settings%20for%20a%20C++%20Debug%20Configuration.md) for more information.|  
+|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](http://msdn.microsoft.com/library/860c7f13-a108-4fe5-8fca-d235cd3ca1cb) for more information.|  
 |**$(Configuration)**|The name of the current project configuration, for example, "Debug".|  
 |**$(Platform)**|The name of current project platform, for example, "Win32".|  
 |**$(ParentName)**|(Deprecated.) Name of the item containing this project item. This will be the parent folder name, or project name.|  

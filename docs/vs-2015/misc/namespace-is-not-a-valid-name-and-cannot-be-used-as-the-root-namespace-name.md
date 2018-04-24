@@ -30,5 +30,5 @@ A qualifying namespace name is not a valid element name. A name must contain onl
 -   If the namespace is part of a set of nested namespaces, check to see if any of the outer names contain invalid characters.  
   
 ## See Also  
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)   
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)
+ [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)   
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1560
 Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename  
   
- The file name that was specified with [#line](../Topic/%23line%20\(C%23%20Reference\).md) exceeded _MAX_PATH (256 characters) or the line on which `#line` was found exceeded 2000 characters.  
+ The file name that was specified with [#line](http://msdn.microsoft.com/library/6439e525-5dd5-4acb-b8ea-efabb32ff95b) exceeded _MAX_PATH (256 characters) or the line on which `#line` was found exceeded 2000 characters.  
   
 ## Example  
  The following sample generates CS1560.  

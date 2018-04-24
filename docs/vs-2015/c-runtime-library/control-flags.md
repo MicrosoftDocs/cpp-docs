@@ -30,7 +30,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Control Flags](https://docs.microsoft.com/cpp/c-runtime-library/control-flags).  
   
   
-The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](http://msdn.microsoft.com/library/9be561f6-14a8-44ff-925d-d911d5b8e6ff).  
   
 |Flag|Description|  
 |----------|-----------------|  

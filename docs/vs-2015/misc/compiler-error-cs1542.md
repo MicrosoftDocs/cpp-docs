@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1542
 'dll' cannot be added to this assembly because it already is an assembly; use '/R' option instead  
   
- The file that was referenced with the [/addmodule](../Topic/-addmodule%20\(C%23%20Compiler%20Options\).md) compiler option was not built with [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md); use [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md) to reference the file in this compilation.
+ The file that was referenced with the [/addmodule](http://msdn.microsoft.com/library/ed604546-0dc2-4bd4-9a3e-610a8d973e58) compiler option was not built with [/target:module](http://msdn.microsoft.com/library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72); use [/reference](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4) to reference the file in this compilation.

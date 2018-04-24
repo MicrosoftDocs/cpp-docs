@@ -41,7 +41,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `find_end`. For more information, see [find_end](../Topic/find_end.md).  
+ This function behaves the same as the STL function `find_end`. For more information, see [find_end](http://msdn.microsoft.com/library/831c0501-75d0-4ed8-9519-9b8c1dfef98a).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

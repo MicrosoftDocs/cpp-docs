@@ -22,12 +22,12 @@ manager: "douge"
 # MSBuild Error MSB3121
 **MSB3121: The file association element in the application manifest is missing one or more of the following required attributes: extension, description, progid, or default icon.**  
   
- The [ClickOnce Deployment Manifest](../Topic/ClickOnce%20Deployment%20Manifest.md) must contain values for all four attributes.  
+ The [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) must contain values for all four attributes.  
   
 ### To correct this error  
   
--   Set each [ClickOnce Deployment Manifest](../Topic/ClickOnce%20Deployment%20Manifest.md) attribute to a valid value.  
+-   Set each [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) attribute to a valid value.  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
+ [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243)

@@ -49,4 +49,4 @@ public class Test: ITest
 ```  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md)
+ [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)

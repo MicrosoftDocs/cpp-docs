@@ -37,7 +37,7 @@ NOTE]
 >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 > [!TIP]
->  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md).  
+>  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](http://msdn.microsoft.com/library/7517ff13-76de-4ecf-9c1b-eb9b7ff4d718).  
   
 #### To open the resource view window  
   
@@ -47,7 +47,7 @@ NOTE]
   
 2.  Press **CTRL+SHIFT+E**.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ### Requirements  
  Win32  

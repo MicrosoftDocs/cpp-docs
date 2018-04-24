@@ -28,7 +28,7 @@ manager: "ghogen"
 
 The latest version of this topic can be found at [Run-Time Error Checking](https://docs.microsoft.com/cpp/c-runtime-library/run-time-error-checking).  
   
-The C run-time library contains the functions that support run-time error checks (RTC). Run-time error checking allows you to build your program such that certain kinds of run-time errors are reported. You specify how the errors are reported and which kinds of errors are reported. For more information, see [Run-Time Error Checks](../Topic/How%20to:%20Use%20Native%20Run-Time%20Checks.md).  
+The C run-time library contains the functions that support run-time error checks (RTC). Run-time error checking allows you to build your program such that certain kinds of run-time errors are reported. You specify how the errors are reported and which kinds of errors are reported. For more information, see [Run-Time Error Checks](http://msdn.microsoft.com/library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1).  
   
  Use the following functions to customize the way your program does run-time error checking.  
   

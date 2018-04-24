@@ -30,4 +30,4 @@ A library referenced by this project could not be loaded.
 1.  Verify that the file is in the specified location, and is not locked by another application.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)

@@ -32,5 +32,5 @@ A declaration contains a declared variable without an `As` clause. When `Option 
 2.  Supply an `As` clause for the declared variable, or turn `Option Strict Off`.  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)   
+ [Variable Declaration](http://msdn.microsoft.com/library/d8f10226-92b1-480f-9f53-df377b2d7e15)

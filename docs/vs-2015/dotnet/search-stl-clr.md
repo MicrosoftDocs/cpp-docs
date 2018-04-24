@@ -41,7 +41,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `search`. For more information, see [search](../Topic/search.md).  
+ This function behaves the same as the STL function `search`. For more information, see [search](http://msdn.microsoft.com/library/fe692c77-c55e-4f4c-b6da-9fe456fff540).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

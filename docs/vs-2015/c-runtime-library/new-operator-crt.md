@@ -73,11 +73,11 @@ void *__cdecl operator new[] (
   
  The first form of the operator is defined by the compiler and does not require new.h to be included in your program.  
   
- [operator delete&#91;&#93;](../Topic/operator%20delete\(%3Cnew%3E\).md) frees memory allocated with operator new.  
+ [operator delete&#91;&#93;](http://msdn.microsoft.com/library/fa28d7d3-27a0-43e6-880b-4b7c8169b489) frees memory allocated with operator new.  
   
  You can configure whether `operator new[]` returns null or throws an exception on failure. See [The new and delete Operators](../cpp/new-and-delete-operators.md) for more information.  
   
- With the exception of throwing or no-throwing behavior, the CRT `operator new` behaves like [operator new&#91;&#93;](../Topic/operator%20new\(%3Cnew%3E\).md) in the Standard C++ Library.  
+ With the exception of throwing or no-throwing behavior, the CRT `operator new` behaves like [operator new&#91;&#93;](http://msdn.microsoft.com/library/c98bb1c9-6d7f-42c2-8366-f2f3eeb71a31) in the Standard C++ Library.  
   
 ## Requirements  
   

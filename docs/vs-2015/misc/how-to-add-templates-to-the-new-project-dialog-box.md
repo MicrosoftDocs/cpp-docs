@@ -18,7 +18,7 @@ caps.latest.revision: 26
 manager: "douge"
 ---
 # How to: Add Templates to the New Project Dialog Box
-A number of predefined project templates are installed during [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installation. For a complete list of predefined project templates, see [NIB Creating Projects from Templates](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2). In addition to default project templates you can create custom or subtype-specific project templates. For example, the **Smart Device** subtype provides its own templates for [!INCLUDE[csprcs](../includes/csprcs-md.md)] and [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projects. For instructions on how to create a custom template, see [How to: Create Project Templates](../Topic/How%20to:%20Create%20Project%20Templates.md).  
+A number of predefined project templates are installed during [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installation. For a complete list of predefined project templates, see [NIB Creating Projects from Templates](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2). In addition to default project templates you can create custom or subtype-specific project templates. For example, the **Smart Device** subtype provides its own templates for [!INCLUDE[csprcs](../includes/csprcs-md.md)] and [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projects. For instructions on how to create a custom template, see [How to: Create Project Templates](http://msdn.microsoft.com/library/a1a6999d-a34c-48a8-b1cf-027eb5c76398).  
   
 ## Adding a Template to the New Project Dialog Box  
   
@@ -33,4 +33,4 @@ A number of predefined project templates are installed during [!INCLUDE[vsprvs](
 ## See Also  
  [Project Subtypes](d235b47b-cf11-4d47-a63f-e33d9d16105d2044a030-0795-4940-bd65-a6e44de98a0f)   
  [NIB: Visual Studio Templates](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)   
- [Contributing to the Add New Item Dialog Box](../Topic/Contributing%20to%20the%20Add%20New%20Item%20Dialog%20Box.md)
+ [Contributing to the Add New Item Dialog Box](http://msdn.microsoft.com/library/b2e53175-9372-4d17-8c2b-9264c9e51e9c)

@@ -35,7 +35,7 @@ A settings category consists of a group of options that customize the integrated
 -   You connect the two with the <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## Support for Settings Categories  
- The <xref:Microsoft.VisualStudio.Shell.Package> class provides support for creating categories. The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements a category. The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage> offers its public properties to a user as a category. For more information, see [Creating a Settings Category](../Topic/Creating%20a%20Settings%20Category.md).  
+ The <xref:Microsoft.VisualStudio.Shell.Package> class provides support for creating categories. The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements a category. The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage> offers its public properties to a user as a category. For more information, see [Creating a Settings Category](http://msdn.microsoft.com/library/97c88693-05ff-499e-8c43-352ee073dcb7).  
   
  The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements <xref:Microsoft.VisualStudio.Shell.IProfileManager>, which provides persistence for both options pages and user settings. The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> and <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> methods persist settings into a .vssettings file that [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provides as an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> or <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>, respectively. The <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> method resets settings to their default values.  
   
@@ -60,7 +60,7 @@ A settings category consists of a group of options that customize the integrated
  In the **Import and Export Settings Wizard**, the settings point has the name, My Settings. When the settings point is selected, the description, **Various Options**, appears. The settings point name and description are taken from localized string resources.  
   
 ## See Also  
- [Creating an Options Page](../Topic/Creating%20an%20Options%20Page.md)   
+ [Creating an Options Page](http://msdn.microsoft.com/library/9f4e210c-4b47-4daa-91fa-1c301c4587f9)   
  [VSSDK Samples](../misc/vssdk-samples.md)   
  [VSPackage State](../misc/vspackage-state.md)   
  [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

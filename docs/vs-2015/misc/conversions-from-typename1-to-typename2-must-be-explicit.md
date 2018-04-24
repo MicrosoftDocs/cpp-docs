@@ -30,4 +30,4 @@ This conversion cannot be accomplished implicitly.
 -   Use the `CType`, or one of the specific conversion functions, such as `CInt` or `CDec`.  
   
 ## See Also  
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)
+ [Type Conversion Functions](http://msdn.microsoft.com/library/d9d8d165-f967-44ff-a6cd-598e4740a99e)

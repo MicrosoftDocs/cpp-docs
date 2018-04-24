@@ -39,5 +39,5 @@ The managed package framework (MPF) classes can be used to create VSPackages usi
   
 ## See Also  
  [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Using Visual Studio Interop Assemblies](../Topic/Using%20Visual%20Studio%20Interop%20Assemblies.md)   
+ [Using Visual Studio Interop Assemblies](http://msdn.microsoft.com/library/1043eb95-4f0d-4861-be21-2a25395b3b3c)   
  [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)

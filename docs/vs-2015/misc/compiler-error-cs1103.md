@@ -38,5 +38,5 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)   
- [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md)
+ [Extension Methods](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)   
+ [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)

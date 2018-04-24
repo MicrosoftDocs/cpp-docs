@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1008
 Type byte, sbyte, short, ushort, int, uint, long, or ulong expected  
   
- Certain data types, such as [enums](../Topic/enum%20\(C%23%20Reference\).md), can only be declared to hold data of specified types.  
+ Certain data types, such as [enums](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c), can only be declared to hold data of specified types.  
   
  The following sample generates CS1008:  
   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0214
 Pointers and fixed size buffers may only be used in an unsafe context  
   
- Pointers can only be used with the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword. For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ Pointers can only be used with the [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) keyword. For more information, see [Unsafe Code and Pointers](http://msdn.microsoft.com/library/b0fcca10-a92d-4f2a-835b-b0ccae6739ee).  
   
  The following sample generates CS0214:  
   

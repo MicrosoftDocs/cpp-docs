@@ -38,5 +38,5 @@ manager: "wpickett"
 4.  Use `Set` property procedures for all property assignments. `Let` property procedures are no longer necessary, or supported.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
  [Language Changes for Visual Basic 6.0 Users](https://msdn.microsoft.com/en-us/library/skw8dhdd\(v=vs.90\).aspx)

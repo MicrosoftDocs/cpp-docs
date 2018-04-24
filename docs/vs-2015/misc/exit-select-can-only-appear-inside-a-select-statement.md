@@ -32,4 +32,4 @@ An `Exit Select` statement occurs outside a `Select` block. `Exit Select` is val
 2.  Verify that other control structures within the `Select` block are correctly terminated.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [Select...Case Statement](http://msdn.microsoft.com/library/68877b65-5419-4bf0-a465-20cd0e4c7d44)

@@ -92,7 +92,7 @@ void f(T1, T2)
 ## See Also  
  [Name Resolution](../cpp/templates-and-name-resolution.md)   
  [typename](../cpp/typename.md)   
- [Template Argument Deduction](../Topic/Template%20Argument%20Deduction.md)
+ [Template Argument Deduction](http://msdn.microsoft.com/library/c4aad83b-fc4f-4a20-9603-1939342c6ce1)
 
 
 

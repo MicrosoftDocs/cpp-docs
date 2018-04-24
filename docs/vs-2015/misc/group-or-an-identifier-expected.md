@@ -37,6 +37,6 @@ The `Into` portion of a `Group By` or `Group Join` clause does not include the `
     ```  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [Group By Clause](http://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7)   
+ [Group Join Clause](http://msdn.microsoft.com/library/37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c)

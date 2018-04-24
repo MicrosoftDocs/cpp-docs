@@ -70,7 +70,7 @@ int _CrtCheckMemory( void );
 _ASSERTE( _CrtCheckMemory( ) );  
 ```  
   
- For more information about how `_CrtCheckMemory` can be used with other debug functions, see [Heap State Reporting Functions](../Topic/CRT%20Debug%20Heap%20Details.md#BKMK_Heap_State_Reporting_Functions). For an overview of memory management and the debug heap, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ For more information about how `_CrtCheckMemory` can be used with other debug functions, see [Heap State Reporting Functions](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4). For an overview of memory management and the debug heap, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
 ## Requirements  
   

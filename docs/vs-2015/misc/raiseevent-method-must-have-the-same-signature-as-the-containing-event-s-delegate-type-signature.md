@@ -37,7 +37,7 @@ A `Custom Event` declaration must have `RaiseEvent` declaration that has the sam
  [!code-vb[VbVbalrEventError#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#2)]  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
  [RaiseEvent - delete](http://msdn.microsoft.com/en-us/7f765da0-5491-40b6-9ed5-24c98f9daad9)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

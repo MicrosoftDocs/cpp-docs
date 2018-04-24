@@ -30,6 +30,6 @@ The Visual Basic compiler has been passed both a `/win32manifest` compiler optio
 1.  Remove either the `/win32manifest` compiler option or the `/nowin32manifest` compiler option.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](../Topic/-win32manifest%20\(Visual%20Basic\).md)   
- [/nowin32manifest (Visual Basic)](../Topic/-nowin32manifest%20\(Visual%20Basic\).md)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)
+ [/win32manifest (Visual Basic)](http://msdn.microsoft.com/library/9e3191b4-90db-41c8-966a-28036fd20005)   
+ [/nowin32manifest (Visual Basic)](http://msdn.microsoft.com/library/c0528aae-83b3-4425-99f0-19448e9843e3)   
+ [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)

@@ -45,7 +45,7 @@ Normally all symbol definitions are saved in Resource.h. However, you may need t
   
 2.  In the **Symbol header file** box, type the new name for the include file.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
   
  Requirements  
   

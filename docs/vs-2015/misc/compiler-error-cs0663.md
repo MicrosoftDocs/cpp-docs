@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0663
 Cannot define overloaded methods that differ only on ref and out.  
   
- Methods that differ only on their use of [ref](../Topic/ref%20\(C%23%20Reference\).md) and [out](../Topic/out%20\(C%23%20Reference\).md) on a parameter are not allowed.  
+ Methods that differ only on their use of [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) and [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) on a parameter are not allowed.  
   
  The following sample generates CS0663:  
   

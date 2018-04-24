@@ -30,4 +30,4 @@ You have provided a name that is ambiguous and therefore conflicts with another 
 -   Fully qualify the name.  
   
 ## See Also  
- [Namespace Statement](../Topic/Namespace%20Statement.md)
+ [Namespace Statement](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)

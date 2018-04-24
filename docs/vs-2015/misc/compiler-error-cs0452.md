@@ -38,4 +38,4 @@ public class Derived2<S> : BaseClass<S> where S : struct { } // CS0452
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](../Topic/Constraints%20on%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md)
+ [Constraints on Type Parameters](http://msdn.microsoft.com/library/141b003e-1ddb-4e1c-bcb2-e1c3870e6a51)

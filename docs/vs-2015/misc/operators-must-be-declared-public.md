@@ -21,9 +21,9 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Operators must be declared &#39;Public&#39;
-An [Operator Statement](../Topic/Operator%20Statement.md) does not include the [Public](../Topic/Public%20\(Visual%20Basic\).md) keyword.  
+An [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5) does not include the [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5) keyword.  
   
- An `Operator` procedure requires both the `Public` and [Shared](../Topic/Shared%20\(Visual%20Basic\).md) keywords, and a conversion operator also requires either the [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or the [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md) keyword.  
+ An `Operator` procedure requires both the `Public` and [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd) keywords, and a conversion operator also requires either the [Widening](http://msdn.microsoft.com/library/646ae263-94d3-40a2-b0cc-64f619292f56) or the [Narrowing](http://msdn.microsoft.com/library/a207ee91-aca4-4771-b4e2-713f029bf2bb) keyword.  
   
  **Error ID:** BC33011  
   
@@ -32,7 +32,7 @@ An [Operator Statement](../Topic/Operator%20Statement.md) does not include the [
 -   Add the `Public` keyword to the `Operator` statement.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)   
+ [How to: Define an Operator](http://msdn.microsoft.com/library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/library/54203dfa-c24b-463f-9942-d5153e89e762)

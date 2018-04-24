@@ -30,4 +30,4 @@ A `Loop` statement contains a `While` or `Until` clause, and the corresponding `
 -   Remove the `While` or `Until` clause from either the `Do` statement or the `Loop` statement.  
   
 ## See Also  
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)
+ [Do...Loop Statement](http://msdn.microsoft.com/library/892f9096-b3e2-4aee-834d-83bc4e2c379d)

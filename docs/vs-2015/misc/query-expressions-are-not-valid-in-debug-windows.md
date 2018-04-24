@@ -26,5 +26,5 @@ A LINQ query has been entered in the **Watch** or **Immediate** window during a 
  **Error ID:** BC36609  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)

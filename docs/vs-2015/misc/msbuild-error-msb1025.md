@@ -32,4 +32,4 @@ manager: "douge"
   
 ## See Also  
 [MSBuild](MSBuild1.md)
- [Talk to Us](../Topic/Talk%20to%20Us.md)
+ [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e)

@@ -94,7 +94,7 @@ _set_new_mode(1)
   
  early in the program, or link with NEWMODE.OBJ.  
   
- When the application is linked with a debug version of the C run-time libraries, _`recalloc` resolves to [_recalloc_dbg](../../c-runtime-library/reference/recalloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ When the application is linked with a debug version of the C run-time libraries, _`recalloc` resolves to [_recalloc_dbg](../../c-runtime-library/reference/recalloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
  `_recalloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).  
   
@@ -107,7 +107,7 @@ _set_new_mode(1)
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Memory Allocation](../../c-runtime-library/memory-allocation.md)   

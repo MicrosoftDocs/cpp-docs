@@ -32,6 +32,6 @@ Classes derived from base classes that contain `MustOverride` members must eithe
 -   Declare an override using the `Overrides` keyword.  
   
 ## See Also  
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
+ [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)   
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)

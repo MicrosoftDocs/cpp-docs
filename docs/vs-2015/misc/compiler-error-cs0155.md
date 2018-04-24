@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0155
 The type caught or thrown must be derived from System.Exception  
   
- An attempt was made to pass a data type that does not derive from **System.Exception** into a [catch](../Topic/try-catch%20\(C%23%20Reference\).md) block. Only data types that derive from **System.Exception** can be passed into a **catch** block. For more information, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md) and [Exceptions and Exception Handling](../Topic/Exceptions%20and%20Exception%20Handling%20\(C%23%20Programming%20Guide\).md).  
+ An attempt was made to pass a data type that does not derive from **System.Exception** into a [catch](http://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438) block. Only data types that derive from **System.Exception** can be passed into a **catch** block. For more information, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c) and [Exceptions and Exception Handling](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344).  
   
  The following sample generates CS0155:  
   

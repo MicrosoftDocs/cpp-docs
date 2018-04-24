@@ -52,4 +52,4 @@ class G
 ```  
   
 ## See Also  
- [Implicitly Typed Local Variables](../Topic/Implicitly%20Typed%20Local%20Variables%20\(C%23%20Programming%20Guide\).md)
+ [Implicitly Typed Local Variables](http://msdn.microsoft.com/library/b9218fb2-ef5d-4814-8a8e-2bc29b0bbc9b)

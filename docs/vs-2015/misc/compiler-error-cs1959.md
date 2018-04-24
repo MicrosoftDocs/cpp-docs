@@ -45,5 +45,5 @@ class Program
 ```  
   
 ## See Also  
- [Constants](../Topic/Constants%20\(C%23%20Programming%20Guide\).md)   
- [null](../Topic/null%20\(C%23%20Reference\).md)
+ [Constants](http://msdn.microsoft.com/library/1fb39621-1738-49b1-a1b3-8587f109123f)   
+ [null](http://msdn.microsoft.com/library/fecb1c60-6232-4efe-87f7-9a86ba2e9119)

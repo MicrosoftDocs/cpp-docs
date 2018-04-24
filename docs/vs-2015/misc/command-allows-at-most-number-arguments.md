@@ -26,5 +26,5 @@ This error generally occurs when too many arguments have been entered for a comm
 1.  Check the documentation for the correct syntax for the command and try again.  
   
 ## See Also  
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)   
+ [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1)

@@ -55,13 +55,13 @@ This topic applies to the MFC ODBC classes.
   
 2.  Optionally modify the default recordset behavior. For the available options, see [Setting Recordset Options](#_core_setting_recordset_options).  
   
-3.  Call the object's [Open](../Topic/CRecordset::Open.md) member function.  
+3.  Call the object's [Open](http://msdn.microsoft.com/library/fb837c3c-133d-45e9-8f6c-aeb276193081) member function.  
   
- In the constructor, pass a pointer to a `CDatabase` object or pass **NULL** to use a temporary database object that the framework constructs and opens based on the connection string returned by the [GetDefaultConnect](../Topic/CRecordset::GetDefaultConnect.md) member function. The `CDatabase` object might already be connected to a data source.  
+ In the constructor, pass a pointer to a `CDatabase` object or pass **NULL** to use a temporary database object that the framework constructs and opens based on the connection string returned by the [GetDefaultConnect](http://msdn.microsoft.com/library/67499451-fe0e-4324-92a9-70e3d813be10) member function. The `CDatabase` object might already be connected to a data source.  
   
  The call to **Open** uses SQL to select records from the data source. The first record selected (if any) is the current record. The values of this record's fields are stored in the recordset object's field data members. If any records were selected, both the `IsBOF` and `IsEOF` member functions return 0.  
   
- In your [Open](../Topic/CRecordset::Open.md) call, you can:  
+ In your [Open](http://msdn.microsoft.com/library/fb837c3c-133d-45e9-8f6c-aeb276193081) call, you can:  
   
 -   Specify whether the recordset is a dynaset or snapshot. Recordsets open as snapshots by default. Or, you can specify a forward-only recordset, which allows only forward scrolling, one record at a time.  
   
@@ -108,7 +108,7 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
   
 #### To close a recordset  
   
-1.  Call its [Close](../Topic/CRecordset::Close.md) member function.  
+1.  Call its [Close](http://msdn.microsoft.com/library/6534443b-8816-447d-ae36-76f11b6016ee) member function.  
   
 2.  Destroy the recordset object.  
   

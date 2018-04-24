@@ -36,6 +36,6 @@ Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typena
      [!code-vb[VbVbalrOOP#89](../snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#89)]  
   
 ## See Also  
- [Is Operator](../Topic/Is%20Operator%20\(Visual%20Basic\).md)   
- [= Operator](../Topic/=%20Operator%20\(Visual%20Basic\).md)   
- [Not Operator](../Topic/Not%20Operator%20\(Visual%20Basic\).md)
+ [Is Operator](http://msdn.microsoft.com/library/8045a6c8-2a83-45b6-ad47-d09a704c656d)   
+ [= Operator](http://msdn.microsoft.com/library/2dac2e49-86c8-42f8-80c1-458452fb5e29)   
+ [Not Operator](http://msdn.microsoft.com/library/8f2ea83c-d2ed-480a-a474-3042a1cad9b5)

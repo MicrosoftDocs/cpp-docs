@@ -121,7 +121,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[sealed](../windows/sealed-cpp-component-extensions.md)|[selectany](../cpp/selectany.md) <sup>1</sup>|[short](../cpp/fundamental-types-cpp.md)|  
 |[signed](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[static](../misc/static-cpp.md)|  
 |[static_assert](../cpp/static-assert.md)|[static_cast](../cpp/static-cast-operator.md)|[struct](../cpp/struct-cpp.md)|  
-|[switch](../cpp/switch-statement-cpp.md)|[template](../Topic/Template%20Specifications.md)|[this](../cpp/this-pointer.md)|  
+|[switch](../cpp/switch-statement-cpp.md)|[template](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753)|[this](../cpp/this-pointer.md)|  
 |[thread](../cpp/thread.md) <sup>1</sup>|[throw](../cpp/try-throw-and-catch-statements-cpp.md)|[true](../cpp/true-cpp.md)|  
 |[try](../cpp/try-throw-and-catch-statements-cpp.md)|[typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)|[typeid](../cpp/typeid-operator.md)|  
 |[typeid](../windows/typeid-cpp-component-extensions.md)|[typename](../cpp/typename.md)|[union](../cpp/unions.md)|  

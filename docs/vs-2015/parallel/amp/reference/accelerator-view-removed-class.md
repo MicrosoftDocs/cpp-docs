@@ -38,13 +38,13 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::accelerator_view_removed Constructor](../Topic/accelerator_view_removed::accelerator_view_removed%20Constructor.md)|Initializes a new instance of the `accelerator_view_removed` class.|  
+|[accelerator_view_removed::accelerator_view_removed Constructor](http://msdn.microsoft.com/library/1f4d541e-da9c-4fbd-be32-758b91ef0648)|Initializes a new instance of the `accelerator_view_removed` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::get_view_removed_reason Method](../Topic/accelerator_view_removed::get_view_removed_reason%20Method.md)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
+|[accelerator_view_removed::get_view_removed_reason Method](http://msdn.microsoft.com/library/fdd6e450-58f8-4338-8968-1d77de598124)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -32,4 +32,4 @@ Type '\<typename>' is imported from different versions of assembly '\<assemblyna
 -   Remove references to multiple versions of the same assembly.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)

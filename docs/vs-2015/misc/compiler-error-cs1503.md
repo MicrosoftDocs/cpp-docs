@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1503
 Argument 'number' cannot convert from TypeA to TypeB  
   
- The type of one argument in a method does not match the type that was passed when the class was instantiated. This error typically appears along with CS1502. See [CS1502](../Topic/Compiler%20Error%20CS1502.md) for a discussion of how to resolve this error.
+ The type of one argument in a method does not match the type that was passed when the class was instantiated. This error typically appears along with CS1502. See [CS1502](http://msdn.microsoft.com/library/f302f00a-5fe1-4e42-b91c-f185d6311671) for a discussion of how to resolve this error.

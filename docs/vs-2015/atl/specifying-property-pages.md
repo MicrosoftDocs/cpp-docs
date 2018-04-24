@@ -36,7 +36,7 @@ When you create an ActiveX control, you will often want to associate it with pro
   
 2.  Add an entry for **ISpecifyPropertyPages** to your class's COM map.  
   
-3.  Add a [PROP_PAGE](../Topic/PROP_PAGE.md) entry to the property map for each page associated with your control.  
+3.  Add a [PROP_PAGE](http://msdn.microsoft.com/library/2155973e-b96c-4385-bf85-5d6112c969b8) entry to the property map for each page associated with your control.  
   
 > [!NOTE]
 >  When generating a standard control using the [ATL Control Wizard](../atl/reference/atl-control-wizard.md), you will only have to add the `PROP_PAGE` entries to the property map. The wizard generates the necessary code for the other steps.  

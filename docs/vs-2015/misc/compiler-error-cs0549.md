@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0549
 'function' is a new virtual member in sealed class 'class'  
   
- A [sealed](../Topic/sealed%20\(C%23%20Reference\).md)[class](../Topic/class%20\(C%23%20Reference\).md) cannot be used as a base class.  Therefore, it is useless to have a virtual method in sealed class.  
+ A [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f)[class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) cannot be used as a base class.  Therefore, it is useless to have a virtual method in sealed class.  
   
  The following sample generates CS0549:  
   

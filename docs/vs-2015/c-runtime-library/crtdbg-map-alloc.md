@@ -32,7 +32,7 @@ The latest version of this topic can be found at [_CRTDBG_MAP_ALLOC](https://doc
   
 When the **_CRTDBG_MAP_ALLOC** flag is defined in the debug version of an application, the base version of the heap functions are directly mapped to their debug versions. The flag is used in Crtdbg.h to do the mapping. This flag is only available when the [_DEBUG](../c-runtime-library/debug.md) flag has been defined in the application.  
   
- For more information about using the debug version versus the base version of a heap function, see [Using the Debug Version Versus the Base Version](../Topic/Debug%20Versions%20of%20Heap%20Allocation%20Functions.md).  
+ For more information about using the debug version versus the base version of a heap function, see [Using the Debug Version Versus the Base Version](http://msdn.microsoft.com/library/91748bdc-f4cd-4d8b-ab98-0493dab7ed0d).  
   
 ## See Also  
  [Control Flags](../c-runtime-library/control-flags.md)

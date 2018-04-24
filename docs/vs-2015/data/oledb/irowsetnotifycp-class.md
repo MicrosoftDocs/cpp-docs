@@ -83,8 +83,8 @@ class IRowsetNotifyCP :
  [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)   
  [Notifications (COM)](http://msdn.microsoft.com/library/windows/desktop/ms678433)   
  [Overview of Notifications (OLE DB)](https://msdn.microsoft.com/library/ms725406.aspx)   
- [BEGIN_CONNECTION_POINT_MAP](../Topic/BEGIN_CONNECTION_POINT_MAP.md)   
- [END_CONNECTION_POINT_MAP](../Topic/END_CONNECTION_POINT_MAP.md)   
- [CONNECTION_POINT_ENTRY](../Topic/CONNECTION_POINT_ENTRY.md)   
+ [BEGIN_CONNECTION_POINT_MAP](http://msdn.microsoft.com/library/3896cda6-a8e2-4ed1-ac38-befbe2352034)   
+ [END_CONNECTION_POINT_MAP](http://msdn.microsoft.com/library/807c5233-b58c-49a2-a34f-3b5f4a7b1b82)   
+ [CONNECTION_POINT_ENTRY](http://msdn.microsoft.com/library/0a7f3053-6433-49b2-a9b5-8a307e8efe14)   
  [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)
 

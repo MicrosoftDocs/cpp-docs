@@ -35,5 +35,5 @@ The 'D' character cannot be used to indicate exponentiation.
     ```  
   
 ## See Also  
- [^ Operator](../Topic/%5E%20Operator%20\(Visual%20Basic\).md)   
- [Numeric Data Types](../Topic/Numeric%20Data%20Types%20\(Visual%20Basic\).md)
+ [^ Operator](http://msdn.microsoft.com/library/d89a1ca8-83da-4784-a87b-a9d7dceb3f62)   
+ [Numeric Data Types](http://msdn.microsoft.com/library/a27bd4d0-7e14-43eb-9cc4-b42eaab323c9)

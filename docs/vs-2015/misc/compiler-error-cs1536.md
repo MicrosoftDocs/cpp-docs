@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1536
 Invalid parameter type void  
   
- It is not necessary or valid to specify a [void](../Topic/void%20\(C%23%20Reference\).md) parameter other than a void pointer.  
+ It is not necessary or valid to specify a [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) parameter other than a void pointer.  
   
  The following sample generates CS1536:  
   

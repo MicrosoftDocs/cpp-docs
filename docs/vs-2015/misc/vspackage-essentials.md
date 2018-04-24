@@ -20,7 +20,7 @@ VSPackages are software modules that make up and extend Visual Studio with UI el
   
  To create a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibility application, you first create a VSPackage. You can then add menu commands, tool windows, document windows, or other code to extend the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
- To use VSPackages, you need to install the Visual Studio SDK. To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To use VSPackages, you need to install the Visual Studio SDK. To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](http://msdn.microsoft.com/library/1f7c348a-114c-4243-b392-3531e9c9c6fd).  
   
 ## See Also  
- [VSPackages](../Topic/VSPackages.md)
+ [VSPackages](http://msdn.microsoft.com/library/cad0893a-9c5f-45b7-952a-e2294f83e324)

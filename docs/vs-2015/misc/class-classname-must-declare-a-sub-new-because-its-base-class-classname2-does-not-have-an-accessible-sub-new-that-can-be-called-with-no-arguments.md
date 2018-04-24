@@ -34,9 +34,9 @@ A derived class does not declare a constructor, and [!INCLUDE[vbprvb](../include
 2.  Add a call to a base class constructor, `MyBase.New()`, as the first line of every `Sub New`.  
   
 ## See Also  
- [Object Lifetime: How Objects Are Created and Destroyed](../Topic/Object%20Lifetime:%20How%20Objects%20Are%20Created%20and%20Destroyed%20\(Visual%20Basic\).md)   
+ [Object Lifetime: How Objects Are Created and Destroyed](http://msdn.microsoft.com/library/f1ee8458-b156-44e0-9a8a-5dd171648cd8)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)   
- [Optional](../Topic/Optional%20\(Visual%20Basic\).md)   
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Optional Parameters](../Topic/Optional%20Parameters%20\(Visual%20Basic\).md)   
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)
+ [Optional](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)   
+ [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635)   
+ [Optional Parameters](http://msdn.microsoft.com/library/398d2845-1069-4e94-b934-a73b545c8b87)   
+ [Parameter Arrays](http://msdn.microsoft.com/library/c43edfae-9114-4096-9ebc-8c5c957a1067)

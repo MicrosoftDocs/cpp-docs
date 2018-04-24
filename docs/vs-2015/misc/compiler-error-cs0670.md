@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0670
 Field cannot have void type  
   
- A field was declared to be of type [void](../Topic/void%20\(C%23%20Reference\).md).  
+ A field was declared to be of type [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4).  
   
  The following sample generates CS0670:  
   

@@ -30,5 +30,5 @@ The `Inherits` statements must be at the beginning of class definitions.
 -   Move the `Inherits` statement to the top of your class.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)   
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)

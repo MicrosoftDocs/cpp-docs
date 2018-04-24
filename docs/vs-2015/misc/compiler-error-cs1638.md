@@ -48,4 +48,4 @@ class CMain
 ```  
   
 ## See Also  
- [/langversion (C# Compiler Options)](../Topic/-langversion%20\(C%23%20Compiler%20Options\).md)
+ [/langversion (C# Compiler Options)](http://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94)

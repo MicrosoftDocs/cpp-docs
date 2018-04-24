@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS1522
 Empty switch block  
   
- The compiler detected a [switch](../Topic/switch%20\(C%23%20Reference\).md) block with no **case** or **default** statement. A `switch` block must have one or more **case** or **default** statements.  
+ The compiler detected a [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb) block with no **case** or **default** statement. A `switch` block must have one or more **case** or **default** statements.  
   
  The following sample generates CS1522:  
   

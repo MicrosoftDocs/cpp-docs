@@ -44,6 +44,6 @@ Arrays always have a lower bound of zero. You can specify zero as the lower boun
     ```  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [Array Dimensions in Visual Basic](../Topic/Array%20Dimensions%20in%20Visual%20Basic.md)   
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)   
+ [Array Dimensions in Visual Basic](http://msdn.microsoft.com/library/385e911b-18c1-4e98-9924-c6d279101dd9)   
  [NOTINBUILD How to: Specify a Zero Lower Bound on an Array](http://msdn.microsoft.com/en-us/20ffd49a-64f7-4634-8ed0-46ba1049d935)

@@ -30,4 +30,4 @@ Your statement fails to supply either a `Get` or `Set` declaration statement aro
 -   Supply a `Get` or `Set` declaration statement.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

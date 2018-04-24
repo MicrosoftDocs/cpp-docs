@@ -53,6 +53,6 @@ Dim second As String = "First is Nothing"
     ```  
   
 ## See Also  
- [If Operator](../Topic/If%20Operator%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)
+ [If Operator](http://msdn.microsoft.com/library/dd56c9df-7cd4-442c-9ba6-20c70ee44c8f)   
+ [Widening and Narrowing Conversions](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)   
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)

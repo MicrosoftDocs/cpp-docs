@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1038
 \#endregion directive expected  
   
- A [#region](../Topic/%23region%20\(C%23%20Reference\).md) directive did not have a matching [#endregion](../Topic/%23endregion%20\(C%23%20Reference\).md) directive.  
+ A [#region](http://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) directive did not have a matching [#endregion](http://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526) directive.  
   
  The following sample generates CS1038:  
   

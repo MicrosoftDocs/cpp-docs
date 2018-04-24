@@ -31,4 +31,4 @@ A DLL referenced by this project could not be loaded.
   
 ## See Also  
  [File Types and File Extensions in Visual Basic and Visual C#](http://msdn.microsoft.com/en-us/f793852c-da06-4d52-a826-65f635844772)   
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)

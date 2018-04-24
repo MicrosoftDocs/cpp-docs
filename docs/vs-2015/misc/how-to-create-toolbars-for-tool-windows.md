@@ -18,4 +18,4 @@ caps.latest.revision: 36
 manager: "douge"
 ---
 # How to: Create Toolbars for Tool Windows
-This content has been removed. For information, see [Adding a Toolbar to a Tool Window](../Topic/Adding%20a%20Toolbar%20to%20a%20Tool%20Window.md).
+This content has been removed. For information, see [Adding a Toolbar to a Tool Window](http://msdn.microsoft.com/library/172f64b3-87f8-4292-9c1c-65bffa2b0970).

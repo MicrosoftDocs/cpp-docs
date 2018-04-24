@@ -30,4 +30,4 @@ A `Get` statement appears more than once in a code block. The `Get` statement de
 -   Remove the redundant `Get` statement.  
   
 ## See Also  
- [Get Statement](../Topic/Get%20Statement.md)
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)

@@ -30,5 +30,5 @@ The name for a specified resource in a dynamic-linked library or executable file
 -   Uniquely name resources.  
   
 ## See Also  
- [/linkresource (Visual Basic)](../Topic/-linkresource%20\(Visual%20Basic\).md)   
- [/resource (Visual Basic)](../Topic/-resource%20\(Visual%20Basic\).md)
+ [/linkresource (Visual Basic)](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15)   
+ [/resource (Visual Basic)](http://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858)

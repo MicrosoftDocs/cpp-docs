@@ -60,7 +60,7 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 ## Remarks  
  `_CrtGetAllocHook` retrieves the current client-defined application hook function for the C run-time debug library memory allocation process.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](http://msdn.microsoft.com/library/5510635f-cf69-4907-b72d-ae27af1f19af).  
   
 ## Requirements  
   
@@ -74,7 +74,7 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

@@ -30,5 +30,5 @@ An `End Get` statement follows a colon (:) statement separator. `End Get` must b
 -   Separate the multiple statements onto different lines.  
   
 ## See Also  
- [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [Get Statement](../Topic/Get%20Statement.md)
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)

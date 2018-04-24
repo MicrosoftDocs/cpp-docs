@@ -30,5 +30,5 @@ This error generally occurs when an alias has been defined that directly or indi
 2.  Review the current list of aliases and their definitions by entering `>alias` in the **Command** window and try again.  
   
 ## See Also  
- [Alias Command](../Topic/Alias%20Command.md)   
- [Visual Studio Command Aliases](../Topic/Visual%20Studio%20Command%20Aliases.md)
+ [Alias Command](http://msdn.microsoft.com/library/bdf857df-b5d5-450f-8c10-a6fd4dccc130)   
+ [Visual Studio Command Aliases](http://msdn.microsoft.com/library/de8bb378-8c1c-4087-a9a5-537fa8314c19)

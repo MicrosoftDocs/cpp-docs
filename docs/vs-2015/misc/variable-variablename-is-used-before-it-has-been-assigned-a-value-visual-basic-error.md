@@ -30,5 +30,5 @@ A variable is being used before it has been assigned a value, resulting in a <xr
 -   Make sure the variable has been assigned a value.  
   
 ## See Also  
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)   
+ [Variable Declaration](http://msdn.microsoft.com/library/d8f10226-92b1-480f-9f53-df377b2d7e15)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

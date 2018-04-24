@@ -48,4 +48,4 @@ class D
 ```  
   
 ## See Also  
- [Classes and Structs](../Topic/Classes%20and%20Structs%20\(C%23%20Programming%20Guide\).md)
+ [Classes and Structs](http://msdn.microsoft.com/library/cc39dbda-8754-423e-b5b1-16a1db0734c0)

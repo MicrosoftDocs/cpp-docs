@@ -27,7 +27,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [GetCodeForExitInstance](https://docs.microsoft.com/cpp/ide/getcodeforexitinstance).  
   
   
-Gets the [ExitInstance](../Topic/CWinApp::ExitInstance.md) code for terminating the wizard.  
+Gets the [ExitInstance](http://msdn.microsoft.com/library/b4ddbbee-88eb-41cf-91b5-03cf5791d747) code for terminating the wizard.  
   
 ## Syntax  
   

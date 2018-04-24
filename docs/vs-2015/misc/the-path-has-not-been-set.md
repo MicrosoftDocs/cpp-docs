@@ -23,5 +23,5 @@ A file operation, such as moving or copying a file, has been attempted without s
 -   Check that the file path has been supplied and is correct.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [File Access with Visual Basic](http://msdn.microsoft.com/library/231533bf-d049-4345-befa-3fb78fe6517d)

@@ -27,5 +27,5 @@ An overloaded method was called, but no method could be matched with the list of
 -   Change the arguments to match one of the signatures of the overloaded method.  
   
 ## See Also  
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Widening and Narrowing Conversions](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)   
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)

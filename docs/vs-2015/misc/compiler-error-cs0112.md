@@ -26,7 +26,7 @@ A static member 'function' cannot be marked as override, virtual or abstract
   
  Any method declaration that uses the `override`, **virtual**, or **abstract** keyword cannot also use the **static** keyword.  
   
- For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0112:  
   

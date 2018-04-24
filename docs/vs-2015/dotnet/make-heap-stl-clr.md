@@ -39,7 +39,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `make_heap`. For more information, see [make_heap](../Topic/make_heap.md).  
+ This function behaves the same as the STL function `make_heap`. For more information, see [make_heap](http://msdn.microsoft.com/library/b09f795c-f368-4aa8-b57e-61ee6100ddc2).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -30,5 +30,5 @@ You have attempted to use a specifier in a `Shared Sub New` declaration, which i
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd)   
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)

@@ -77,13 +77,13 @@ class CComBSTR
 |----------|-----------------|  
 |[CComBSTR::operator BSTR](#ccombstr__operator_bstr)|Casts a `CComBSTR` object to a `BSTR`.|  
 |[CComBSTR::operator !](#ccombstr__operator__not)|Returns `true` or `false`, depending on whether `m_str`is `NULL`.|  
-|[CComBSTR::operator !=](../Topic/CComBSTR::operator%20!=.md)|Compares a `CComBSTR` with a string.|  
-|[CComBSTR::operator &](../Topic/CComBSTR::operator%20&.md)|Returns the address of `m_str`.|  
+|[CComBSTR::operator !=](http://msdn.microsoft.com/library/69888f59-8701-4471-bf99-522244ecf5f7)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator &](http://msdn.microsoft.com/library/143ad1cf-d83e-4d6d-806e-a04a1712c857)|Returns the address of `m_str`.|  
 |[CComBSTR::operator +=](#ccombstr__operator__add_eq)|Appends a `CComBSTR` to the object.|  
-|[CComBSTR::operator <](../Topic/CComBSTR::operator%20%3C.md)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator <](http://msdn.microsoft.com/library/f535d2e4-49f9-4b79-86d4-d8518bf2462e)|Compares a `CComBSTR` with a string.|  
 |[CComBSTR::operator =](#ccombstr__operator__eq)|Assigns a value to `m_str`.|  
 |[CComBSTR::operator ==](#ccombstr__operator__eq_eq)|Compares a `CComBSTR` with a string.|  
-|[CComBSTR::operator >](../Topic/CComBSTR::operator%20%3E.md)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator >](http://msdn.microsoft.com/library/fc423f87-001f-4bb0-8103-1f07a9421b6c)|Compares a `CComBSTR` with a string.|  
   
 ### Public Data Members  
   
@@ -646,7 +646,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
- [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)
+ [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)
 
 
 

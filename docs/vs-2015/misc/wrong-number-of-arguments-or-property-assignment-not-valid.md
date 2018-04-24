@@ -27,4 +27,4 @@ An assignment has been attempted that is not valid.
 2.  Check the property assignment.  
   
 ## See Also  
- [Assignment Operators](../Topic/Assignment%20Operators%20\(Visual%20Basic\).md)
+ [Assignment Operators](http://msdn.microsoft.com/library/43b7e40c-b7af-45f6-b100-198a90f2561e)

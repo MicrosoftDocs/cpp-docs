@@ -21,4 +21,4 @@ manager: "kamrani"
 # Customizing Link Creation - redirection
 The content of this topic has been merged with the following topic:  
   
- [Customizing Tools and the Toolbox](../Topic/Customizing%20Tools%20and%20the%20Toolbox.md)
+ [Customizing Tools and the Toolbox](http://msdn.microsoft.com/library/2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d)

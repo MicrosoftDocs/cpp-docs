@@ -30,5 +30,5 @@ An `End` statement must match the block it terminates. A `Property` definition h
 -   Add an `End Property` statement to the end of the property definition.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)   
+ [End Statement](http://msdn.microsoft.com/library/0e64467c-0f34-4aab-9ddd-43f8b9d55d90)

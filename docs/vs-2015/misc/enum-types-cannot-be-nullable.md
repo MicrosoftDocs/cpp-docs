@@ -37,5 +37,5 @@ The underlying type that is used to declare an enumeration cannot be nullable. F
 -   Do not use a nullable underlying type in an `Enum` declaration.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)   
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Nullable Value Types](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)   
+ [Enum Statement](http://msdn.microsoft.com/library/a45e51f1-65ff-48e1-bf32-79130f137377)

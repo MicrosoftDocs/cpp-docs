@@ -27,5 +27,5 @@ An argument value is less than zero. Argument values must be greater than or equ
 2.  If the argument is supplied by a calculation, check the values being processed by the calculation.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
+ [Passing Arguments by Value and by Reference](http://msdn.microsoft.com/library/fd8a9de6-7178-44d5-a9bf-458d4ad907c2)   
  [Parameter Passing Mechanism for Visual Basic 6.0 Users](http://msdn.microsoft.com/en-us/0fa2b0dc-aa1c-4797-bbd6-aa13c611cab2)

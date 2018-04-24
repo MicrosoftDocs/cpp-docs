@@ -109,7 +109,7 @@ CComObject();
 ```  
   
 ### Remarks  
- Frees all allocated resources, calls [FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md), and decrements the module lock count.  
+ Frees all allocated resources, calls [FinalRelease](http://msdn.microsoft.com/library/52481a2e-e5f8-4fad-9814-362e62f4eed9), and decrements the module lock count.  
   
 ##  <a name="ccomobject__createinstance"></a>  CComObject::CreateInstance  
  This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
@@ -170,8 +170,8 @@ STDMETHOD_(ULONG, Release)();
 ## See Also  
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
- [DECLARE_AGGREGATABLE](../Topic/DECLARE_AGGREGATABLE.md)   
- [DECLARE_NOT_AGGREGATABLE](../Topic/DECLARE_NOT_AGGREGATABLE.md)   
+ [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
+ [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
  [Class Overview](../../atl/atl-class-overview.md)
 
 

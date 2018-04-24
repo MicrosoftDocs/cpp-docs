@@ -32,5 +32,5 @@ If a property is declared as `ReadOnly`, it must supply a procedure for reading 
 2.  Verify that other procedures within the `Property` declaration are correctly terminated.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Get Statement](../Topic/Get%20Statement.md)
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)

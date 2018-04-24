@@ -30,5 +30,5 @@ A `Declare` declaration has a specifier that is not valid within a `Structure` d
 -   Remove the specifier.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)

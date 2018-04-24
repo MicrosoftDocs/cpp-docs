@@ -87,7 +87,7 @@ void *_expand(
 > [!NOTE]
 >  On 64-bit platforms, `_expand` might not contract the block if the new size is less than the current size; in particular, if the block was less than 16K in size and therefore allocated in the Low Fragmentation Heap, `_expand` leaves the block unchanged and returns `memblock`.  
   
- When the application is linked with a debug version of the C run-time libraries, `_expand` resolves to [_expand_dbg](../../c-runtime-library/reference/expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ When the application is linked with a debug version of the C run-time libraries, `_expand` resolves to [_expand_dbg](../../c-runtime-library/reference/expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
  This function validates its parameters. If `memblock` is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. If `size` is greater than `_HEAP_MAXREQ`, `errno` is set to `ENOMEM` and the function returns `NULL`.  
   

@@ -32,6 +32,6 @@ The value supplied for the file's open mode was not valid. The following table s
   
 ## See Also  
  [NOTINBUILD OpenMode Enumeration](http://msdn.microsoft.com/en-us/e995bd42-d11f-455c-88c4-308345172633)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
- [Reading from Files](../Topic/Reading%20from%20Files%20in%20Visual%20Basic.md)   
- [Writing to Files](../Topic/Writing%20to%20Files%20in%20Visual%20Basic.md)
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)   
+ [Reading from Files](http://msdn.microsoft.com/library/ad831a1b-7d01-4f07-a47b-799f3037df19)   
+ [Writing to Files](http://msdn.microsoft.com/library/ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e)

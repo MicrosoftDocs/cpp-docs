@@ -25,4 +25,4 @@ An operator is not appropriate for the types.
 -   Ensure that the operator is appropriate for the types being operated on.  
   
 ## See Also  
- [Operators](../Topic/Operators%20\(Visual%20Basic\).md)
+ [Operators](http://msdn.microsoft.com/library/3d3421df-fcc5-4888-9249-d78f16774ce6)

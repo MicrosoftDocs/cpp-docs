@@ -30,5 +30,5 @@ The `End While` construct replaces the `Wend` keyword.
 -   Use `End While` to end a `While` block.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [While...End While Statement](http://msdn.microsoft.com/library/b931d1ce-e8ed-44d8-a13d-92a4f5458a1e)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

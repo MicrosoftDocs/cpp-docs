@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1007
 Property accessor already defined  
   
- When you declare a [property](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md), you must also declare its accessor methods. However, a property cannot have more than one `get` accessor method or more than one `set` accessor method.  
+ When you declare a [property](http://msdn.microsoft.com/library/f7f67b05-0983-4cdb-96af-1855d24c967c), you must also declare its accessor methods. However, a property cannot have more than one `get` accessor method or more than one `set` accessor method.  
   
 ## Example  
  The following sample generates CS1007:  

@@ -51,9 +51,9 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2715](../../error-messages/compiler-errors-2/compiler-error-c2715.md)  
   
- [Compiler Error C2716](../Topic/Compiler%20Error%20C2716.md)  
+ [Compiler Error C2716](http://msdn.microsoft.com/library/6a99a5ae-3a16-47bd-9f24-1e5c939fa304)  
   
- [Compiler Error C2717](../Topic/Compiler%20Error%20C2717.md)  
+ [Compiler Error C2717](http://msdn.microsoft.com/library/bfb96328-440e-4b41-9370-15e430454d56)  
   
  [Compiler Error C2718](../../error-messages/compiler-errors-2/compiler-error-c2718.md)  
   
@@ -73,7 +73,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2726](../../error-messages/compiler-errors-2/compiler-error-c2726.md)  
   
- [Compiler Error C2727](../Topic/Compiler%20Error%20C2727.md)  
+ [Compiler Error C2727](http://msdn.microsoft.com/library/68127a8e-c090-440e-9e87-c36f65651a35)  
   
  [Compiler Error C2728](../../error-messages/compiler-errors-2/compiler-error-c2728.md)  
   

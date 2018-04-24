@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0540
 'interface member' : containing type does not implement interface 'interface'  
   
- You attempted to implement an interface member in a [class](../Topic/class%20\(C%23%20Reference\).md) that does not derive from the [interface](../Topic/interface%20\(C%23%20Reference\).md). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.  
+ You attempted to implement an interface member in a [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) that does not derive from the [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.  
   
 ## Example  
  The following sample generates CS0540.  

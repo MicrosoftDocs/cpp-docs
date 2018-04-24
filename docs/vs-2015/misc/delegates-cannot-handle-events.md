@@ -31,6 +31,6 @@ A delegate is a reference type that points to a shared procedure or to an instan
   
 ## See Also  
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)   
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)

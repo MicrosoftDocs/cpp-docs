@@ -48,10 +48,10 @@ Use this wizard to add a property to an interface.
  MFC dispinterfaces only. Available only if you specify **Member variable** under **Implementation type**. Sets the name of the notification function called if the property changes. By default, the name of the notification function is set to On*PropertyName*Changed. You can edit this name.  
   
  **Get function**  
- For MFC dispinterfaces. Available only if you specify **Get/Set methods** under **Implementation type**. Sets the name of the function to get the property. By default, the name of the Get function is set to Get*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../Topic/COleControl::GetNotSupported.md) is inserted into the interface dispatch map. The Get*PropertyName* function specifies that the property as readable.  
+ For MFC dispinterfaces. Available only if you specify **Get/Set methods** under **Implementation type**. Sets the name of the function to get the property. By default, the name of the Get function is set to Get*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](http://msdn.microsoft.com/library/c2dbc2d3-8f1c-4b12-b014-4262486af586) is inserted into the interface dispatch map. The Get*PropertyName* function specifies that the property as readable.  
   
  **Set function**  
- MFC dispinterfaces only. Available only if you specify **Get/Set methods** under **Implementation type**. Sets the name of the function to set the property. By default, the name of the Set function is set to Set*PropertyName*. You can edit this name. If you delete the name, the function [SetNotSupported](../Topic/COleControl::SetNotSupported.md) is inserted into the interface dispatch map. The Set*PropertyName* function specifies that the property is writable.  
+ MFC dispinterfaces only. Available only if you specify **Get/Set methods** under **Implementation type**. Sets the name of the function to set the property. By default, the name of the Set function is set to Set*PropertyName*. You can edit this name. If you delete the name, the function [SetNotSupported](http://msdn.microsoft.com/library/910ecffb-d7d6-4d5a-b809-716d4ed1a1ee) is inserted into the interface dispatch map. The Set*PropertyName* function specifies that the property is writable.  
   
  **Implementation type**  
  MFC dispinterfaces only. Specifies how to implement the property you are adding.  

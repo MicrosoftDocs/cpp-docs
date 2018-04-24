@@ -16,4 +16,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # How to: Program Copy and Paste Behavior - redirect
-The content of this topic has been merged with a similar topic. Please see [Customizing Copy Behavior](../Topic/Customizing%20Copy%20Behavior.md).
+The content of this topic has been merged with a similar topic. Please see [Customizing Copy Behavior](http://msdn.microsoft.com/library/87fff01c-60ba-440a-b8a0-185edcef83ac).

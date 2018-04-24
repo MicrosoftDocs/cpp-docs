@@ -77,7 +77,7 @@ void *__cdecl operator new(
   
  You can configure whether operator new returns null or throws an exception on failure. See [The new and delete Operators](../cpp/new-and-delete-operators.md) for more information.  
   
- With the exception of throwing or no-throwing behavior, the CRT `operator new` behaves like [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) in the Standard C++ Library.  
+ With the exception of throwing or no-throwing behavior, the CRT `operator new` behaves like [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507) in the Standard C++ Library.  
   
 ## Requirements  
   
@@ -135,7 +135,7 @@ int main() {
 ```  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Memory Allocation](../c-runtime-library/memory-allocation.md)

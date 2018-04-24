@@ -32,6 +32,6 @@ A statement attempts to convert an `AddressOf` expression to a type that can onl
 -   Assign the `AddressOf` expression to a specific delegate type.  
   
 ## See Also  
- [AddressOf Operator](../Topic/AddressOf%20Operator%20\(Visual%20Basic\).md)   
+ [AddressOf Operator](http://msdn.microsoft.com/library/8105a59d-60d8-4ab5-b221-5899cdfacbf4)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)   
- [Delegates](../Topic/Delegates%20\(Visual%20Basic\).md)
+ [Delegates](http://msdn.microsoft.com/library/410b60dc-5e60-4ec0-bfae-426755a2ee28)

@@ -30,4 +30,4 @@ A file has been specified multiple times.
 -   Remove redundant file specifiers.  
   
 ## See Also  
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)

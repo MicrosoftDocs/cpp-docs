@@ -38,7 +38,7 @@ template<class _FwdIt, class _OutIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `rotate_copy`. For more information, see [rotate_copy](../Topic/rotate_copy.md).  
+ This function behaves the same as the STL function `rotate_copy`. For more information, see [rotate_copy](http://msdn.microsoft.com/library/06c5bb1d-3b44-4c06-8f39-e926c0829bae).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

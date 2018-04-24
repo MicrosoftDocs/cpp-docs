@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0646
 Cannot specify the DefaultMember attribute on a type containing an indexer  
   
- If a class or other type specifies **System.Reflection.DefaultMemberAttribute**, it cannot contain an indexer. For more information, see [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md).  
+ If a class or other type specifies **System.Reflection.DefaultMemberAttribute**, it cannot contain an indexer. For more information, see [Properties](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8).  
   
  The following sample generates CS0646:  
   

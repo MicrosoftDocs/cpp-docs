@@ -41,8 +41,8 @@ An <xref:System.OverflowException> exception is thrown when an arithmetic, casti
   
 -   In an unchecked context, the result is truncated by discarding any high-order bits that do not fit in the destination type.  
   
- For information about the value ranges of data types, see [Data Types](../Topic/Data%20Type%20Summary%20\(Visual%20Basic\).md), [Integral Types Table](../Topic/Integral%20Types%20Table%20\(C%23%20Reference\).md), or [Floating-Point Types Table](../Topic/Floating-Point%20Types%20Table%20\(C%23%20Reference\).md).  
+ For information about the value ranges of data types, see [Data Types](http://msdn.microsoft.com/library/e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0), [Integral Types Table](http://msdn.microsoft.com/library/62e86126-46ff-40b0-9028-e61d7558268c), or [Floating-Point Types Table](http://msdn.microsoft.com/library/da886cc5-e01e-4f62-b3ec-6428c8f7a102).  
   
 ## See Also  
  <xref:System.OverflowException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

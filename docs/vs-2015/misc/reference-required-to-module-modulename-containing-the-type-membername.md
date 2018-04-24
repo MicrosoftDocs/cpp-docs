@@ -32,4 +32,4 @@ Reference required to module '\<modulename>' containing the type '\<membername>'
 -   Add a project reference for the dependent types in the project.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)

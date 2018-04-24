@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0513
 'function' is abstract but it is contained in nonabstract class 'class'  
   
- A method cannot be an [abstract](../Topic/abstract%20\(C%23%20Reference\).md) member of a nonabstract class.  
+ A method cannot be an [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) member of a nonabstract class.  
   
  The following sample generates CS0513:  
   

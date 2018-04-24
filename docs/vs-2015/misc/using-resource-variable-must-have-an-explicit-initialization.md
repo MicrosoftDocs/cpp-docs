@@ -40,6 +40,6 @@ A `Using` statement specifies at least one resource that it does not initialize 
      `Using newFont as`   `New`   `System.Drawing.Font`  
   
 ## See Also  
- [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md)   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)   
- [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)
+ [Using Statement](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)   
+ [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0)   
+ [How to: Dispose of a System Resource](http://msdn.microsoft.com/library/8be2b239-8090-419b-8e7e-bcaa75b0ecc8)

@@ -30,4 +30,4 @@ This property or procedure has the same name as another property or procedure ma
 -   Use the `Shadows` modifier.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)

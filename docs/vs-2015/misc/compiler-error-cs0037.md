@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0037
 Cannot convert null to 'type' because it is a non-nullable value type  
   
- The compiler cannot assign null to a value type; null can only be assigned to a [reference type](../Topic/Reference%20Types%20\(C%23%20Reference\).md) or to a Nullable type. [struct](../Topic/struct%20\(C%23%20Reference\).md) is a value type. For more information, see [Nullable Types](../Topic/Nullable%20Types%20\(C%23%20Programming%20Guide\).md).  
+ The compiler cannot assign null to a value type; null can only be assigned to a [reference type](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) or to a Nullable type. [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) is a value type. For more information, see [Nullable Types](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6).  
   
  The following sample generates CS0037:  
   

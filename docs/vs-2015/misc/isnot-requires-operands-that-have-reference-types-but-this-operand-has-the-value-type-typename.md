@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &#39;IsNot&#39; requires operands that have reference types, but this operand has the value type &#39;&lt;typename&gt;&#39;.
-An expression uses the [IsNot Operator](../Topic/IsNot%20Operator%20\(Visual%20Basic\).md) with at least one value type operand.  
+An expression uses the [IsNot Operator](http://msdn.microsoft.com/library/8dd2bcdb-0166-48a2-9094-60dfb448f36c) with at least one value type operand.  
   
  The `IsNot` operator determines whether two object references refer to different objects. It compares the pointer values of reference types and is meaningless with value types.  
   
@@ -34,5 +34,5 @@ An expression uses the [IsNot Operator](../Topic/IsNot%20Operator%20\(Visual%20B
 -   If you intend to compare the pointers of two reference types, be sure you are using object references for both operands. You can use reference variables or elements, such as the [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2) keyword, that behave like reference variables.  
   
 ## See Also  
- [Comparison Operators in Visual Basic](../Topic/Comparison%20Operators%20in%20Visual%20Basic.md)   
- [How to: Test Whether Two Objects Are the Same](../Topic/How%20to:%20Test%20Whether%20Two%20Objects%20Are%20the%20Same%20\(Visual%20Basic\).md)
+ [Comparison Operators in Visual Basic](http://msdn.microsoft.com/library/0b570339-5407-474f-8421-e183a8b303ee)   
+ [How to: Test Whether Two Objects Are the Same](http://msdn.microsoft.com/library/f760e828-8704-4256-bc2d-c22a4c93b524)

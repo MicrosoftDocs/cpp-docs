@@ -18,4 +18,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # How to: Add XML Relationship Data - redirection
-This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](../Topic/Customizing%20File%20Storage%20and%20XML%20Serialization.md).
+This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](http://msdn.microsoft.com/library/76c53ef1-e3b9-45da-b425-1bddb3c01395).

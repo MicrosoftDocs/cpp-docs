@@ -27,7 +27,7 @@ Generalized view of the Visual Studio architecture
   
  Notice that the relationship between VSPackages and services is bidirectional. Although VSPackages use services offered by others, they also can offer services of their own by using the <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface. This service-based architecture grew out of the Microsoft ActiveX Designer implementation, in which a service is a group of related interfaces that perform a task. From a strict COM viewpoint, all the interfaces of a particular service must be implemented in a single COM class.  
   
- The standard IDE offers important services, such as <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, and <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>, which are used by VSPackages. The following table lists and describes some of these services. For more information, see [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md).  
+ The standard IDE offers important services, such as <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, and <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>, which are used by VSPackages. The following table lists and describes some of these services. For more information, see [Using and Providing Services](http://msdn.microsoft.com/library/c0b415ba-b825-4da0-9faf-8a60a663e302).  
   
 |IDE service|Description|  
 |-----------------|-----------------|  
@@ -68,7 +68,7 @@ Generalized view of the Visual Studio architecture
 -   Providing extensions for built-in UI elements, such as task items, toolbox items, and the Options dialog box.  
   
 ## See Also  
- [Visual Studio Shell](../Topic/Visual%20Studio%20Shell.md)   
- [VSPackages](../Topic/VSPackages.md)   
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [How to: Get a Service](../Topic/How%20to:%20Get%20a%20Service.md)
+ [Visual Studio Shell](http://msdn.microsoft.com/library/cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36)   
+ [VSPackages](http://msdn.microsoft.com/library/cad0893a-9c5f-45b7-952a-e2294f83e324)   
+ [Using and Providing Services](http://msdn.microsoft.com/library/c0b415ba-b825-4da0-9faf-8a60a663e302)   
+ [How to: Get a Service](http://msdn.microsoft.com/library/1f000020-8fb7-4e39-8e1e-2e38c7fec3d4)

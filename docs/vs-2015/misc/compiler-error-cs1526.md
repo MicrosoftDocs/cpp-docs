@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1526
 A new expression requires (), [], or {} after type  
   
- The [new](../Topic/new%20\(C%23%20Reference\).md) operator, used to dynamically allocate memory for an object, was not specified correctly.  
+ The [new](http://msdn.microsoft.com/library/e4136516-f058-45a8-84e5-da00a5cf9b6a) operator, used to dynamically allocate memory for an object, was not specified correctly.  
   
 ## Example  
  The following sample shows how to use `new` to allocate space for an array and an object.  

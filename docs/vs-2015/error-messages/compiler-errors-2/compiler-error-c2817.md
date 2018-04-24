@@ -29,5 +29,5 @@ The latest version of this topic can be found at [Compiler Error C2817](https://
   
 return type for 'operator delete' must be 'void'  
   
- An overloaded [operator delete](../Topic/operator%20delete%20\(%3Cnew%3E\).md) function cannot return a value.
+ An overloaded [operator delete](http://msdn.microsoft.com/library/7c45e232-ceb2-4a77-b0af-da2a935d46a2) function cannot return a value.
 

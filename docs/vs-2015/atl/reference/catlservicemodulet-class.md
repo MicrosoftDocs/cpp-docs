@@ -99,7 +99,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
  This class replaces the obsolete [CComModule Class](../../atl/reference/ccommodule-class.md) used in earlier versions of ATL. See [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](http://msdn.microsoft.com/library/23af4915-ecdb-4ca6-9c89-7e01c3e762e7)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

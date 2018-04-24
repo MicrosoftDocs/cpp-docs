@@ -30,5 +30,5 @@ You have attempted to overload a method with another method that differs from th
 -   Ensure that the methods are differentiated by their argument lists.  
   
 ## See Also  
- [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)   
- [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)
+ [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a)   
+ [Considerations in Overloading Procedures](http://msdn.microsoft.com/library/a2001248-10d0-42c5-b0ce-eeedc987319f)

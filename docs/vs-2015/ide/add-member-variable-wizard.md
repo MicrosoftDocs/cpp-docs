@@ -61,7 +61,7 @@ This wizard adds a member variable declaration to the header file and, depending
  Sets the name of the member variable you are adding. Member variables typically begin with the identifying string "m_," which is provided for you by default.  
   
  **Control variable**  
- Indicates that the member variable manages a control within a dialog box with [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md) support. See [DoDataExchange](../Topic/CWnd::DoDataExchange.md) for more information. This option is available only for member variables added to classes derived from [CDialog](../mfc/reference/cdialog-class.md). Select this box to activate the **Control ID** and **Control type** options.  
+ Indicates that the member variable manages a control within a dialog box with [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md) support. See [DoDataExchange](http://msdn.microsoft.com/library/40b0821d-9e57-46ed-9522-b57b367ab08d) for more information. This option is available only for member variables added to classes derived from [CDialog](../mfc/reference/cdialog-class.md). Select this box to activate the **Control ID** and **Control type** options.  
   
  **Control ID**  
  Sets the ID for the control variable you are adding. Select from the list the ID for the type of control for which you are adding the member variable. The list is active only when the **Control variable** box is selected, and it is limited to IDs for the controls already added to the dialog box. For example, for the standard **OK** button, the Control ID is **IDOK**.  

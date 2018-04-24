@@ -33,4 +33,4 @@ Statement cannot appear within an event body. End of event assumed.
   
 ## See Also  
  [Application Events Sample](http://msdn.microsoft.com/en-us/289a787f-b97e-43c8-a304-fe95e45f4a0d)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

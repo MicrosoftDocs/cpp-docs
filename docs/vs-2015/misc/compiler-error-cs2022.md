@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS2022
 Options '/out' and '/target' must appear before source file names  
   
- The [/out (Set Output Filename)](../Topic/-out%20\(C%23%20Compiler%20Options\).md) and [/target (Specify Output File Format)](../Topic/-target%20\(C%23%20Compiler%20Options\).md) compiler options, when specified on the command line, must precede the source code files.
+ The [/out (Set Output Filename)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) and [/target (Specify Output File Format)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f) compiler options, when specified on the command line, must precede the source code files.

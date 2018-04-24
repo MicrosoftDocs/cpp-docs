@@ -34,10 +34,10 @@ A generic class or structure is defined in multiple partial declarations with co
 -   Decide what name the type parameter should have, and use the same name in every partial declaration.  
   
 ## See Also  
- [Partial](../Topic/Partial%20\(Visual%20Basic\).md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Structure Statement](../Topic/Structure%20Statement.md)   
+ [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)   
+ [Class Statement](http://msdn.microsoft.com/library/f2664f38-eb5a-4d4b-a374-1d041521fb6c)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)   
  [NOT IN BUILD: Classes: Blueprints for Objects](http://msdn.microsoft.com/en-us/2c86373d-0333-4616-a7d8-4790c4e89f7b)   
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)

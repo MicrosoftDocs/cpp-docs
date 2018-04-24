@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS0017
 Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.  
   
- A program can only have one [Main](../Topic/Main\(\)%20and%20Command-Line%20Arguments%20\(C%23%20Programming%20Guide\).md) method.  
+ A program can only have one [Main](http://msdn.microsoft.com/library/73a17231-cf96-44ea-aa8a-54807c6fb1f4) method.  
   
- To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option to specify which Main method you want to use.  
+ To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [/main](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) compiler option to specify which Main method you want to use.  
   
  The following sample generates CS0017:  
   

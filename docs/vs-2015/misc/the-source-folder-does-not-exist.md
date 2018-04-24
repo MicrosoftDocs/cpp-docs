@@ -23,6 +23,6 @@ You attempted an operation that references a source folder that does not exist. 
 -   Check that you are using the correct path, particularly if you are using relative paths.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Reading from Files](../Topic/Reading%20from%20Files%20in%20Visual%20Basic.md)   
- [Creating, Deleting, and Moving Files and Directories](../Topic/Creating,%20Deleting,%20and%20Moving%20Files%20and%20Directories%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [Reading from Files](http://msdn.microsoft.com/library/ad831a1b-7d01-4f07-a47b-799f3037df19)   
+ [Creating, Deleting, and Moving Files and Directories](http://msdn.microsoft.com/library/8f814fcc-4c42-4dbb-a131-005ec445ac9e)

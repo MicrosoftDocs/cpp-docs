@@ -30,5 +30,5 @@ A parameter list contains an unexpected element. Use commas (`,`) to separate pa
 -   Add a comma and continue the type parameter list, or add a closing parenthesis character to terminate the list.  
   
 ## See Also  
- [How to: Define a Parameter for a Procedure](../Topic/How%20to:%20Define%20a%20Parameter%20for%20a%20Procedure%20\(Visual%20Basic\).md)   
- [Parameter List](../Topic/Parameter%20List%20\(Visual%20Basic\).md)
+ [How to: Define a Parameter for a Procedure](http://msdn.microsoft.com/library/7962808d-407e-4e84-984e-43e9857c53c9)   
+ [Parameter List](http://msdn.microsoft.com/library/5d737319-0c34-4df9-a23d-188fc840becd)

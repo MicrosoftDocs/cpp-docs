@@ -86,7 +86,7 @@ This topic uses the dining philosophers problem to illustrate how to use the [co
 ##  <a name="solution"></a> Using join to Prevent Deadlock  
  This section shows how to use message buffers and message-passing functions to eliminate the chance of deadlock.  
   
- To relate this example to the earlier one, the `philosopher` class replaces each `critical_section` object by using a [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object and a `join` object. The `join` object serves as an arbiter that provides the chopsticks to the philosopher.  
+ To relate this example to the earlier one, the `philosopher` class replaces each `critical_section` object by using a [concurrency::unbounded_buffer](~/parallel/concrt/reference/unbounded-buffer-class.md) object and a `join` object. The `join` object serves as an arbiter that provides the chopsticks to the philosopher.  
   
  This example uses the `unbounded_buffer` class because when a target receives a message from an `unbounded_buffer` object, the message is removed from the message queue. This enables an `unbounded_buffer` object that holds a message to indicate that the chopstick is available. An `unbounded_buffer` object that holds no message indicates that the chopstick is being used.  
   

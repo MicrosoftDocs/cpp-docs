@@ -25,4 +25,4 @@ A file name is incorrect or the file does not exist.
 1.  Ensure that the file name is correct and that it exists.  
   
 ## See Also  
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [My.Computer.FileSystem Object](http://msdn.microsoft.com/library/4c145456-5453-4bda-aab5-578dc8bee59a)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0216
 The operator 'operator' requires a matching operator 'missing_operator' to also be defined  
   
- A user-defined [true](../Topic/true%20\(C%23%20Reference\).md) operator requires a user-defined [false](../Topic/false%20\(C%23%20Reference\).md) operator, and vice versa. For more information, see [Operators](../Topic/Operators%20\(C%23%20Programming%20Guide\).md).  
+ A user-defined [true](http://msdn.microsoft.com/library/7d0adcdb-02e9-478c-8c84-2e671d4acef3) operator requires a user-defined [false](http://msdn.microsoft.com/library/a11aa532-efe2-442b-9fcc-8fdb33b8c8b4) operator, and vice versa. For more information, see [Operators](http://msdn.microsoft.com/library/214e7b83-1a41-4f7c-9867-64e9c0bab39f).  
   
  The following sample generates CS0216:  
   

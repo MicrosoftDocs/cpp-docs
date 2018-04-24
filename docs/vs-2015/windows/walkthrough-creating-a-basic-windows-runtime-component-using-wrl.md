@@ -48,7 +48,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../includes/cppwrl-md.md)] 
     > [!IMPORTANT]
     >  Because you’re creating a COM component, remember to use the `__stdcall` calling convention.  
   
-     We recommend that you use `_Out_` and other source annotation language (SAL) annotations to describe how a function uses its parameters. SAL annotations also describe return values. SAL annotations work with the [C/C++ Code Analysis tool](../Topic/Code%20Analysis%20for%20C-C++%20Overview.md) to discover possible defects in C and C++ source code. Common coding errors that are reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks.  
+     We recommend that you use `_Out_` and other source annotation language (SAL) annotations to describe how a function uses its parameters. SAL annotations also describe return values. SAL annotations work with the [C/C++ Code Analysis tool](http://msdn.microsoft.com/library/81f0c9e8-f471-4de5-aac4-99db336a8809) to discover possible defects in C and C++ source code. Common coding errors that are reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks.  
   
 ### To use the component from a [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app that uses JavaScript  
   
@@ -121,5 +121,5 @@ This document shows how to use the [!INCLUDE[cppwrl](../includes/cppwrl-md.md)] 
 ## See Also  
  [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)   
  [Class Library Project Template](../windows/wrl-class-library-project-template.md)   
- [C/C++ Code Analysis tool](../Topic/Code%20Analysis%20for%20C-C++%20Overview.md)
+ [C/C++ Code Analysis tool](http://msdn.microsoft.com/library/81f0c9e8-f471-4de5-aac4-99db336a8809)
 

@@ -20,10 +20,10 @@ manager: "douge"
 This section discusses how to build and install VSPackages and how to support users who are running multiple versions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] at the same time.  
   
 ## In This Section  
- [Supporting Multiple Versions of Visual Studio](../Topic/Supporting%20Multiple%20Versions%20of%20Visual%20Studio.md)  
+ [Supporting Multiple Versions of Visual Studio](http://msdn.microsoft.com/library/0047aa90-1ed4-40d3-8772-622b2719a4b1)  
  Describes issues related to multiple versions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] and your VSPackage during development and deployment to end users.  
   
- [Installing VSPackages With Windows Installer](../Topic/Installing%20VSPackages%20With%20Windows%20Installer.md)  
+ [Installing VSPackages With Windows Installer](http://msdn.microsoft.com/library/41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a)  
  Describes how to release your VSPackages as an installable product.  
   
 ## Related Sections  

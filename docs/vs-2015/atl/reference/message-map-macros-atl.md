@@ -76,7 +76,7 @@ ALT_MSG_MAP(msgMapID)
 ### Remarks  
  ATL identifies each message map by a number. The default message map (declared with the `BEGIN_MSG_MAP` macro) is identified by 0. An alternate message map is identified by `msgMapID`.  
   
- Message maps are used to process messages sent to a window. For example, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) allows you to specify the identifier of a message map in the containing object. [CContainedWindow::WindowProc](../Topic/CContainedWindowT::WindowProc.md) then uses this message map to direct the contained window's messages either to the appropriate handler function or to another message map. For a list of macros that declare handler functions, see [BEGIN_MSG_MAP](#begin_msg_map).  
+ Message maps are used to process messages sent to a window. For example, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) allows you to specify the identifier of a message map in the containing object. [CContainedWindow::WindowProc](http://msdn.microsoft.com/library/9e9435b2-f767-4d73-be2b-92b7e4334640) then uses this message map to direct the contained window's messages either to the appropriate handler function or to another message map. For a list of macros that declare handler functions, see [BEGIN_MSG_MAP](#begin_msg_map).  
   
  Always begin a message map with `BEGIN_MSG_MAP`. You can then declare subsequent alternate message maps.  
   
@@ -105,7 +105,7 @@ BEGIN_MSG_MAP(theClass)
  [in] The name of the class containing the message map.  
   
 ### Remarks  
- [CWindowImpl::WindowProc](../Topic/CWindowImpl::WindowProc.md) uses the default message map to process messages sent to the window. The message map directs messages either to the appropriate handler function or to another message map.  
+ [CWindowImpl::WindowProc](http://msdn.microsoft.com/library/ba0dff17-bbd7-41b2-9fc9-2caaf142133f) uses the default message map to process messages sent to the window. The message map directs messages either to the appropriate handler function or to another message map.  
   
  The following macros map a message to a handler function. This function must be defined in `theClass`.  
   
@@ -250,7 +250,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
  [in] The unique identifier for an object's message map.  
   
 ### Remarks  
- `CHAIN_MSG_MAP_DYNAMIC` directs messages, at run time, to the default message map in another object. The object and its message map are associated with *dynaChainID*, which you define through [CDynamicChain::SetChainEntry](../Topic/CDynamicChain::SetChainEntry.md). You must derive your class from `CDynamicChain` in order to use `CHAIN_MSG_MAP_DYNAMIC`. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+ `CHAIN_MSG_MAP_DYNAMIC` directs messages, at run time, to the default message map in another object. The object and its message map are associated with *dynaChainID*, which you define through [CDynamicChain::SetChainEntry](http://msdn.microsoft.com/library/712bde44-ee9b-4990-8bbf-3add4c47a9f0). You must derive your class from `CDynamicChain` in order to use `CHAIN_MSG_MAP_DYNAMIC`. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
   
 > [!NOTE]
 >  Always begin a message map with [BEGIN_MSG_MAP](#begin_msg_map). You can then declare subsequent alternate message maps with `ALT_MSG_MAP`. The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Every message map must have exactly one instance of `BEGIN_MSG_MAP` and `END_MSG_MAP`.  

@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1566
 Error reading resource file 'file' — 'reason'  
   
- The compiler had trouble with the file name passed to the [/resource](../Topic/-resource%20\(C%23%20Compiler%20Options\).md) compiler option.
+ The compiler had trouble with the file name passed to the [/resource](http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f) compiler option.

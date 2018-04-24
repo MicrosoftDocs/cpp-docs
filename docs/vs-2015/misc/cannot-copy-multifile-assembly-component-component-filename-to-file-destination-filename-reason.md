@@ -35,4 +35,4 @@ The specified component was not copied to the bin directory.
 -   Restart [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## See Also  
- [Debugging Web Applications: Errors and Troubleshooting](../Topic/Debugging%20Web%20Applications:%20Errors%20and%20Troubleshooting.md)
+ [Debugging Web Applications: Errors and Troubleshooting](http://msdn.microsoft.com/library/63f2742e-2031-48a8-9773-d9b547c62230)

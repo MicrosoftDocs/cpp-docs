@@ -40,5 +40,5 @@ A variable declared as nullable has been compared to an expression other than `N
     ```  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)   
- [Is Operator](../Topic/Is%20Operator%20\(Visual%20Basic\).md)
+ [Nullable Value Types](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)   
+ [Is Operator](http://msdn.microsoft.com/library/8045a6c8-2a83-45b6-ad47-d09a704c656d)

@@ -50,10 +50,10 @@ This topic explains the RFX process. This is an advanced topic covering:
  Your recordset class's override of `DoFieldExchange` does all the work, moving data in both directions. Like dialog data exchange (DDX), RFX needs information about the data members of your class. The wizard provides the necessary information by writing a recordset-specific implementation of `DoFieldExchange` for you, based on the field data member names and data types you specify with the wizard.  
   
 ##  <a name="_core_the_record_field_exchange_process"></a> Record Field Exchange Process  
- This section describes the sequence of RFX events as a recordset object is opened and as you add, update, and delete records. The table [Sequence of RFX Operations During Recordset Open](#_core_sequence_of_rfx_operations_during_recordset_open) and the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling) in this topic show the process as RFX processes a **Move** command in the recordset and as RFX manages an update. During these processes, [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) is called to perform many different operations. The **m_nOperation** data member of the [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) object determines which operation is requested. You might find it helpful to read [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) and [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) before you read this material.  
+ This section describes the sequence of RFX events as a recordset object is opened and as you add, update, and delete records. The table [Sequence of RFX Operations During Recordset Open](#_core_sequence_of_rfx_operations_during_recordset_open) and the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling) in this topic show the process as RFX processes a **Move** command in the recordset and as RFX manages an update. During these processes, [DoFieldExchange](http://msdn.microsoft.com/library/197fb2fb-7752-4830-8188-589b4d4ce7e8) is called to perform many different operations. The **m_nOperation** data member of the [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) object determines which operation is requested. You might find it helpful to read [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) and [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) before you read this material.  
   
 ###  <a name="_mfc_rfx.3a_.initial_binding_of_columns_and_parameters"></a> RFX: Initial Binding of Columns and Parameters  
- The following RFX activities occur, in the order shown, when you call a recordset object's [Open](../Topic/CRecordset::Open.md) member function:  
+ The following RFX activities occur, in the order shown, when you call a recordset object's [Open](http://msdn.microsoft.com/library/fb837c3c-133d-45e9-8f6c-aeb276193081) member function:  
   
 -   If the recordset has parameter data members, the framework calls `DoFieldExchange` to bind the parameters to parameter placeholders in the recordset's SQL statement string. A data type-dependent representation of the value of the parameter is used for each placeholder found in the **SELECT** statement. This occurs after the SQL statement is prepared but before it is executed. For information about statement preparation, see the **::SQLPrepare** function in the ODBC *Programmer's Reference*.  
   
@@ -93,7 +93,7 @@ This topic explains the RFX process. This is an advanced topic covering:
 ###  <a name="_mfc_rfx.3a_.adding_new_records_and_editing_existing_records"></a> RFX: Adding New Records and Editing Existing Records  
  If you add a new record, the recordset operates as an edit buffer to build up the contents of the new record. As with adding records, editing records involves changing the values of the recordset's field data members. From the RFX perspective, the sequence is as follows:  
   
-1.  Your call to the recordset's [AddNew](../Topic/CRecordset::AddNew.md) or [Edit](../Topic/CRecordset::Edit.md) member function causes RFX to store the current edit buffer so it can be restored later.  
+1.  Your call to the recordset's [AddNew](http://msdn.microsoft.com/library/2db92826-51bc-46c0-924e-22986554bb1b) or [Edit](http://msdn.microsoft.com/library/23e34175-5af8-4b65-9551-d6983d718ac7) member function causes RFX to store the current edit buffer so it can be restored later.  
   
 2.  `AddNew` or **Edit** prepares the fields in the edit buffer so RFX can detect changed field data members.  
   
@@ -103,7 +103,7 @@ This topic explains the RFX process. This is an advanced topic covering:
   
 3.  You directly set the values of field data members whose values you want to edit or that you want filled for a new record. This can include calling `SetFieldNull`.  
   
-4.  Your call to [Update](../Topic/CRecordset::Update.md) checks for changed field data members, as described in step 2 (see the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling)). If none have changed, **Update** returns 0. If some field data members have changed, **Update** prepares and executes a SQL **INSERT** statement that contains values for all updated fields in the record.  
+4.  Your call to [Update](http://msdn.microsoft.com/library/2ed347a4-c7a8-4dad-b84d-cf85f1959eb6) checks for changed field data members, as described in step 2 (see the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling)). If none have changed, **Update** returns 0. If some field data members have changed, **Update** prepares and executes a SQL **INSERT** statement that contains values for all updated fields in the record.  
   
 5.  For `AddNew`, **Update** concludes by restoring the previously stored values of the record that was current before the `AddNew` call. For **Edit**, the new, edited values remain in place.  
   
@@ -129,7 +129,7 @@ This topic explains the RFX process. This is an advanced topic covering:
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)   
  [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)   
- [Macros, Global Functions, and Global Variables](../Topic/Macros,%20Global%20Functions,%20and%20Global%20Variables.md)   
+ [Macros, Global Functions, and Global Variables](http://msdn.microsoft.com/library/2b248a3a-8b21-4ba0-a014-260a0debc586)   
  [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)   
- [CRecordset::DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md)
+ [CRecordset::DoFieldExchange](http://msdn.microsoft.com/library/197fb2fb-7752-4830-8188-589b4d4ce7e8)
 

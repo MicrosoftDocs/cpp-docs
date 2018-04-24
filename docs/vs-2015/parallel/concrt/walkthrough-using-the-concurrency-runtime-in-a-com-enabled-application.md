@@ -71,7 +71,7 @@ This document demonstrates how to use the Concurrency Runtime in an application 
  For more information about cancellation in the Concurrency Runtime, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
   
 ### Using COM with Asynchronous Agents  
- When you use COM with asynchronous agents, call `CoInitializeEx` before you use the COM library in the [concurrency::agent::run](../Topic/agent::run%20Method.md) method for your agent. Then call `CoUninitialize` before the `run` method returns. Do not use COM management routines in the constructor or destructor of your agent, and do not override the [concurrency::agent::start](../Topic/agent::start%20Method.md) or [concurrency::agent::done](../Topic/agent::done%20Method.md) methods because these methods are called from a different thread than the `run` method.  
+ When you use COM with asynchronous agents, call `CoInitializeEx` before you use the COM library in the [concurrency::agent::run](http://msdn.microsoft.com/library/21882c7a-3428-4671-ad3d-de1c83eda21f) method for your agent. Then call `CoUninitialize` before the `run` method returns. Do not use COM management routines in the constructor or destructor of your agent, and do not override the [concurrency::agent::start](http://msdn.microsoft.com/library/d2444e25-a9ed-4305-8cb1-cadcf8e3235c) or [concurrency::agent::done](http://msdn.microsoft.com/library/557df23a-bd24-48ac-a336-5f12d9cdc542) methods because these methods are called from a different thread than the `run` method.  
   
  The following example shows a basic agent class, named `CCoAgent`, which manages the COM library in the `run` method.  
   
@@ -96,7 +96,7 @@ This document demonstrates how to use the Concurrency Runtime in an application 
  [!code-cpp[concrt-parallel-scripts#8](../../snippets/cpp/VS_Snippets_ConcRT/concrt-parallel-scripts/cpp/parallel-scripts.cpp#8)]  
   
 ### Calling the Script from the PPL  
- The following function, `ParallelFibonacci`, uses the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm to call the script in parallel. This function uses the `CCoInitializer` class to manage the lifetime of the COM library during every iteration of the task.  
+ The following function, `ParallelFibonacci`, uses the [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) algorithm to call the script in parallel. This function uses the `CCoInitializer` class to manage the lifetime of the COM library during every iteration of the task.  
   
  [!code-cpp[concrt-parallel-scripts#9](../../snippets/cpp/VS_Snippets_ConcRT/concrt-parallel-scripts/cpp/parallel-scripts.cpp#9)]  
   

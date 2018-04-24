@@ -38,7 +38,7 @@ template<class _InIt, class _OutIt, class _Pr, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `replace_copy_if`. For more information, see [replace_copy_if](../Topic/replace_copy_if.md).  
+ This function behaves the same as the STL function `replace_copy_if`. For more information, see [replace_copy_if](http://msdn.microsoft.com/library/3541f157-b8e0-4f83-bfdf-3e786ed26a3b).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

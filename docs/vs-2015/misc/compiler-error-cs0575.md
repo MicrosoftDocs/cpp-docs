@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0575
 Only class types can contain destructors  
   
- A [struct](../Topic/struct%20\(C%23%20Reference\).md) cannot contain a destructor.  
+ A [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) cannot contain a destructor.  
   
  The following sample generates CS0575:  
   

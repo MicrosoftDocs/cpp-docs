@@ -32,5 +32,5 @@ One of the names being used is already declared as the name of a type, and canno
 -   Use square brackets around the name of the member.  
   
 ## See Also  
- [Keywords as Element Names in Code](../Topic/Keywords%20as%20Element%20Names%20in%20Code%20\(Visual%20Basic\).md)   
- [Visual Basic Naming Conventions](../Topic/Visual%20Basic%20Naming%20Conventions.md)
+ [Keywords as Element Names in Code](http://msdn.microsoft.com/library/2e4e8e02-23f7-49b9-a1c8-2b0402b6b525)   
+ [Visual Basic Naming Conventions](http://msdn.microsoft.com/library/164949a4-2a7c-4736-9d82-9c3078e2e56c)

@@ -30,4 +30,4 @@ In evaluating this expression, you attempted to divide a number by zero.
 1.  Check your constant and variable values to determine how zero occurs in your expression's denominator.  
   
 ## See Also  
- [Assignment Operators](../Topic/Assignment%20Operators%20\(Visual%20Basic\).md)
+ [Assignment Operators](http://msdn.microsoft.com/library/43b7e40c-b7af-45f6-b100-198a90f2561e)

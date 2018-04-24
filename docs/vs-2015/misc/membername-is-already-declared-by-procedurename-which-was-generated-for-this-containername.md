@@ -30,4 +30,4 @@ A member was declared that has the same name as a member that is declared by the
 -   Change the name of the member to remove the conflict.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

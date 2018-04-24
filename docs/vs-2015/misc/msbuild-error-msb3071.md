@@ -31,4 +31,4 @@ manager: "douge"
 -   Specify a local working directory before attempting this command again.  
   
 ## See Also  
- [Exec Task](../Topic/Exec%20Task.md)
+ [Exec Task](http://msdn.microsoft.com/library/c9b7525a-b1c9-40fc-8bce-77a5b8f960d8)

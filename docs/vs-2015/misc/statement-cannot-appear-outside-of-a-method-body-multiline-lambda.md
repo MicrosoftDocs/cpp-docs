@@ -30,4 +30,4 @@ Executable statements must be used within procedures.
 -   Move the statement into a procedure or subroutine.  
   
 ## See Also  
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)

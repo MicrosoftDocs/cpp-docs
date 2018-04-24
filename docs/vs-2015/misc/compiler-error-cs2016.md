@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS2016
 Code page 'codepage' is invalid or not installed  
   
- The [/codepage](../Topic/-codepage%20\(C%23%20Compiler%20Options\).md) compiler option was passed an invalid value.  
+ The [/codepage](http://msdn.microsoft.com/library/75942989-b69a-4308-90a0-840c73d2c478) compiler option was passed an invalid value.  
   
  The following sample generates CS2016:  
   

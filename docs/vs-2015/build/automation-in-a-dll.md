@@ -36,7 +36,7 @@ When you choose the Automation option in the MFC DLL Wizard, the wizard provides
   
 -   An implementation of the `DllCanUnloadNow` function, which calls the **AfxDllCanUnloadNow** function  
   
--   An implementation of the `DllRegisterServer` function, which calls the [COleObjectFactory::UpdateRegistryAll](../Topic/COleObjectFactory::UpdateRegistryAll.md) function  
+-   An implementation of the `DllRegisterServer` function, which calls the [COleObjectFactory::UpdateRegistryAll](http://msdn.microsoft.com/library/60adcf43-f9f7-45ee-a09d-df9ccc6e1c77) function  
   
 ## What do you want to know more about?  
   

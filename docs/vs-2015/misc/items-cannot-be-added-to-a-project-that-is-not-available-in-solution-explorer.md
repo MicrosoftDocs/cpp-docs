@@ -27,4 +27,4 @@ This error generally occurs when a project that has been specified is not open i
   
 ## See Also  
  [Solution Explorer](http://msdn.microsoft.com/en-us/ca0ad8e7-eda8-40d4-a76e-2a6864b16e00)   
- [Solutions and Projects](../Topic/Solutions%20and%20Projects%20in%20Visual%20Studio.md)
+ [Solutions and Projects](http://msdn.microsoft.com/library/aeaf56cb-c2dd-47f6-b012-23b84b7a7254)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0058
 Inconsistent accessibility: return type 'type' is less accessible than delegate 'delegate'  
   
- A public construct must return a publicly accessible object. For more information, see [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+ A public construct must return a publicly accessible object. For more information, see [Access Modifiers](http://msdn.microsoft.com/library/6e81ee82-224f-4a12-9baf-a0dca2656c5b).  
   
  The following sample generates CS0058 because no access modifier is applied to MyClass and therefore it is given private accessibility by default:  
   
@@ -47,4 +47,4 @@ public class A
 ```  
   
 ## See Also  
- [private](../Topic/private%20\(C%23%20Reference\).md)
+ [private](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)

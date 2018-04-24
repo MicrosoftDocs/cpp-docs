@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0255
 stackalloc may not be used in a catch or finally block  
   
- The [stackalloc](../Topic/stackalloc%20\(C%23%20Reference\).md) keyword may not be used in a [catch](../Topic/try-catch%20\(C%23%20Reference\).md) or [finally](../Topic/try-catch-finally%20\(C%23%20Reference\).md) block. For more information, see [Exceptions and Exception Handling](../Topic/Exceptions%20and%20Exception%20Handling%20\(C%23%20Programming%20Guide\).md).  
+ The [stackalloc](http://msdn.microsoft.com/library/adc04c28-3ed2-4326-807a-7545df92b852) keyword may not be used in a [catch](http://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438) or [finally](http://msdn.microsoft.com/library/a1b443b0-ff7a-43ab-b835-0cc9bfbd15ca) block. For more information, see [Exceptions and Exception Handling](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344).  
   
  The following sample generates CS0255:  
   

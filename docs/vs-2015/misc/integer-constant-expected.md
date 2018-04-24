@@ -32,4 +32,4 @@ An `#ExternalSource` directive occurs in which the second argument is not an int
 2.  Supply an integer literal as the second argument to the `#ExternalSource` directive.  
   
 ## See Also  
- [#ExternalSource Directive](../Topic/%23ExternalSource%20Directive.md)
+ [#ExternalSource Directive](http://msdn.microsoft.com/library/243bc6a2-34c3-4eeb-a776-9fd2bf988149)

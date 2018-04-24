@@ -34,5 +34,5 @@ Project '<`projectname`>' cannot generate a reference to file '<`filename`>'. Yo
 2.  Restore the reference by right clicking **References** in the **Solution Explorer** and then clicking **Add Reference**.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

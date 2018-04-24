@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0161
 'method': not all code paths return a value  
   
- A method that returns a value must have a `return` statement in all code paths. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ A method that returns a value must have a `return` statement in all code paths. For more information, see [Methods](http://msdn.microsoft.com/library/cc738f07-e8cd-4683-9585-9f40c0667c37).  
   
  The following sample generates CS0161:  
   

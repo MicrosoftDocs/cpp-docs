@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0500
 'class member' cannot declare a body because it is marked abstract  
   
- An [abstract](../Topic/abstract%20\(C%23%20Reference\).md) method cannot contain its implementation.  
+ An [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) method cannot contain its implementation.  
   
  The following sample generates CS0500:  
   

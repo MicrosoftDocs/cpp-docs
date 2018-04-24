@@ -30,4 +30,4 @@ You have attempted to cast a `Date` value to a `Double` value, which cannot be d
 -   Use the <xref:System.DateTime.FromOADate%2A> method to convert the value.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

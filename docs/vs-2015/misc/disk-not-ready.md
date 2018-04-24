@@ -27,4 +27,4 @@ For the specified drive, either there is no disk or the drive door is open.
 2.  Close the drive door.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

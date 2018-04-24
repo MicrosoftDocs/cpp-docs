@@ -25,8 +25,8 @@ An attempt to read from or write to a file has failed because the parameter `enc
 -   Supply a valid value for the `encoding` parameter.  
   
 ## See Also  
- [File Encodings](../Topic/File%20Encodings%20\(Visual%20Basic\).md)   
- [Reading from Files](../Topic/Reading%20from%20Files%20in%20Visual%20Basic.md)   
- [Writing to Files](../Topic/Writing%20to%20Files%20in%20Visual%20Basic.md)   
+ [File Encodings](http://msdn.microsoft.com/library/ea2c5f5f-bbb1-4150-9928-b9951fa6bc57)   
+ [Reading from Files](http://msdn.microsoft.com/library/ad831a1b-7d01-4f07-a47b-799f3037df19)   
+ [Writing to Files](http://msdn.microsoft.com/library/ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e)   
  [My.Computer.FileSystem.ReadAllText Method](http://msdn.microsoft.com/en-us/3a7ac8be-fb1d-4087-bc65-167d6754d57f)   
  [My.Computer.FileSystem.WriteAllText Method](http://msdn.microsoft.com/en-us/f507460c-87d9-4504-b74f-3ff825c7d5c4)

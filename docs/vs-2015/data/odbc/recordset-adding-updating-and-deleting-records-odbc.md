@@ -74,11 +74,11 @@ This topic applies to the MFC ODBC classes.
   
 #### To determine whether your recordset is updatable  
   
-1.  Call the recordset object's [CanUpdate](../Topic/CRecordset::CanUpdate.md) member function.  
+1.  Call the recordset object's [CanUpdate](http://msdn.microsoft.com/library/397dbf6d-305c-46f5-96c4-1b9822303557) member function.  
   
      `CanUpdate` returns a nonzero value if the recordset is updateable.  
   
- By default, recordsets are fully updateable (you can perform `AddNew`, **Edit**, and **Delete** operations). But you can also use the [appendOnly](../Topic/CRecordset::Open.md) option to open updateable recordsets. A recordset opened this way allows only the addition of new records with `AddNew`. You cannot edit or delete existing records. You can test whether a recordset is open only for appending by calling the [CanAppend](../Topic/CRecordset::CanAppend.md) member function. `CanAppend` returns a nonzero value if the recordset is either fully updateable or open only for appending.  
+ By default, recordsets are fully updateable (you can perform `AddNew`, **Edit**, and **Delete** operations). But you can also use the [appendOnly](http://msdn.microsoft.com/library/fb837c3c-133d-45e9-8f6c-aeb276193081) option to open updateable recordsets. A recordset opened this way allows only the addition of new records with `AddNew`. You cannot edit or delete existing records. You can test whether a recordset is open only for appending by calling the [CanAppend](http://msdn.microsoft.com/library/4c055286-dd80-4088-9e22-8872c0fafa2e) member function. `CanAppend` returns a nonzero value if the recordset is either fully updateable or open only for appending.  
   
  The following code shows how you might use `CanUpdate` for a recordset object called `rsStudentSet`:  
   
@@ -96,15 +96,15 @@ if( !rsStudentSet.CanUpdate( ) )
 >  When you prepare to update a recordset by calling **Update**, take care that your recordset includes all columns making up the primary key of the table (or all of the columns of any unique index on the table). In some cases, the framework can use only the columns selected in your recordset to identify which record in your table to update. Without all the necessary columns, multiple records might be updated in the table, possibly damaging the referential integrity of the table. In this case, the framework throws exceptions when you call **Update**.  
   
 ##  <a name="_core_adding_a_record_to_a_recordset"></a> Adding a Record to a Recordset  
- You can add new records to a recordset if its [CanAppend](../Topic/CRecordset::CanAppend.md) member function returns a nonzero value.  
+ You can add new records to a recordset if its [CanAppend](http://msdn.microsoft.com/library/4c055286-dd80-4088-9e22-8872c0fafa2e) member function returns a nonzero value.  
   
 #### To add a new record to a recordset  
   
 1.  Make sure the recordset is appendable.  
   
-2.  Call the recordset object's [AddNew](../Topic/CRecordset::AddNew.md) member function.  
+2.  Call the recordset object's [AddNew](http://msdn.microsoft.com/library/2db92826-51bc-46c0-924e-22986554bb1b) member function.  
   
-     `AddNew` prepares the recordset to act as an edit buffer. All field data members are set to the special value Null and marked as unchanged so only changed (dirty) values are written to the data source when you call [Update](../Topic/CRecordset::Update.md).  
+     `AddNew` prepares the recordset to act as an edit buffer. All field data members are set to the special value Null and marked as unchanged so only changed (dirty) values are written to the data source when you call [Update](http://msdn.microsoft.com/library/2ed347a4-c7a8-4dad-b84d-cf85f1959eb6).  
   
 3.  Set the values of the new record's field data members.  
   
@@ -138,7 +138,7 @@ if( !rsStudent.Update( ) )
 >  To cancel an `AddNew` or **Edit** call, simply make another call to `AddNew` or **Edit** or call **Move** with the **AFX_MOVE_REFRESH** parameter. Data members are reset to their previous values and you are still in **Edit** or **Add** mode.  
   
 ##  <a name="_core_editing_a_record_in_a_recordset"></a> Editing a Record in a Recordset  
- You can edit existing records if your recordset's [CanUpdate](../Topic/CRecordset::CanUpdate.md) member function returns a nonzero value.  
+ You can edit existing records if your recordset's [CanUpdate](http://msdn.microsoft.com/library/397dbf6d-305c-46f5-96c4-1b9822303557) member function returns a nonzero value.  
   
 #### To edit an existing record in a recordset  
   
@@ -146,9 +146,9 @@ if( !rsStudent.Update( ) )
   
 2.  Scroll to the record you want to update.  
   
-3.  Call the recordset object's [Edit](../Topic/CRecordset::Edit.md) member function.  
+3.  Call the recordset object's [Edit](http://msdn.microsoft.com/library/23e34175-5af8-4b65-9551-d6983d718ac7) member function.  
   
-     **Edit** prepares the recordset to act as an edit buffer. All field data members are marked so that the recordset can tell later whether they were changed. The new values for changed field data members are written to the data source when you call [Update](../Topic/CRecordset::Update.md).  
+     **Edit** prepares the recordset to act as an edit buffer. All field data members are marked so that the recordset can tell later whether they were changed. The new values for changed field data members are written to the data source when you call [Update](http://msdn.microsoft.com/library/2ed347a4-c7a8-4dad-b84d-cf85f1959eb6).  
   
 4.  Set the values of the new record's field data members.  
   
@@ -179,7 +179,7 @@ if( !rsStudent.Update( ) )
 >  To cancel an `AddNew` or **Edit** call, simply make another call to `AddNew` or **Edit** or call **Move** with the **AFX_MOVE_REFRESH** parameter. Data members are reset to their previous values and you are still in **Edit** or **Add** mode.  
   
 ##  <a name="_core_deleting_a_record_from_a_recordset"></a> Deleting a Record from a Recordset  
- You can delete records if your recordset's [CanUpdate](../Topic/CRecordset::CanUpdate.md) member function returns a nonzero value.  
+ You can delete records if your recordset's [CanUpdate](http://msdn.microsoft.com/library/397dbf6d-305c-46f5-96c4-1b9822303557) member function returns a nonzero value.  
   
 #### To delete a record  
   
@@ -187,7 +187,7 @@ if( !rsStudent.Update( ) )
   
 2.  Scroll to the record you want to update.  
   
-3.  Call the recordset object's [Delete](../Topic/CRecordset::Delete.md) member function.  
+3.  Call the recordset object's [Delete](http://msdn.microsoft.com/library/b979f1fc-a45a-4d2e-8860-176a0d7af0ac) member function.  
   
      **Delete** immediately marks the record as deleted, both in the recordset and on the data source.  
   
@@ -196,7 +196,7 @@ if( !rsStudent.Update( ) )
 4.  Scroll to another record.  
   
     > [!NOTE]
-    >  When moving through the recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../Topic/CRecordset::IsDeleted.md) member function.  
+    >  When moving through the recordset, deleted records might not be skipped. For more information, see the [IsDeleted](http://msdn.microsoft.com/library/45fbb3c3-6f3e-4775-8dce-cecbdf71af1e) member function.  
   
  The following example shows a **Delete** operation. It assumes that the user has moved to a record that the user wants to delete. After **Delete** is called, it is important to move to a new record.  
   

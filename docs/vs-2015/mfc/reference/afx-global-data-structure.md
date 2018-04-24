@@ -266,13 +266,13 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
  `TRUE` to enable accessibility support; `FALSE` to disable accessibility support. The default value is `TRUE`.  
   
 ## Remarks  
- Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md).  
+ Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321).  
   
  Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__IsAccessibilitySupport.md) method to determine whether Microsoft Active Accessibility support is enabled.  
   
  
 ## See Also  
- [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md)   
+ [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321)   
  [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__IsAccessibilitySupport.md)
 
 ## <a name="afx_global_data__excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
@@ -468,13 +468,13 @@ BOOL IsAccessibilitySupport() const;
  `TRUE` if accessibility support is enabled; otherwise, `FALSE`.  
   
 ## Remarks  
- Microsoft Active Accessibility was the earlier solution for making applications accessible. Microsoft UI Automation is the new accessibility model for Microsoft Windows and is intended to address the needs of assistive technology products and automated testing tools. For more information, see [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md).  
+ Microsoft Active Accessibility was the earlier solution for making applications accessible. Microsoft UI Automation is the new accessibility model for Microsoft Windows and is intended to address the needs of assistive technology products and automated testing tools. For more information, see [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321).  
   
  Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#afx_global_data__EnableAccessibilitySupport.md) method to enable or disable Active Accessibility support.  
   
 
 ## See Also  
- [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md)
+ [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321)
 
 ## <a name="afx_global_data__isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
  Determines whether the D2D was initialized  
@@ -654,7 +654,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  The name of the window class to register.  
   
 ## Return Value  
- The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](../Topic/AfxThrowResourceException.md).  
+ The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](http://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
   
 ## Remarks  
  The return value is a colon-delimited list of the `lpszClassNamePrefix` parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  

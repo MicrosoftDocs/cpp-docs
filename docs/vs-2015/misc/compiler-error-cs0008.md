@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0008
 Unexpected error reading metadata from file 'file' — 'description'  
   
- A DLL was successfully opened for retrieving metadata but is corrupted, such that data could not be read from it. For more information, see [/reference (C# Compiler Options)](../Topic/-reference%20\(C%23%20Compiler%20Options\).md).
+ A DLL was successfully opened for retrieving metadata but is corrupted, such that data could not be read from it. For more information, see [/reference (C# Compiler Options)](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4).

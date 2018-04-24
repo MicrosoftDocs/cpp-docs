@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Arguments cannot be passed to a &#39;New&#39; used on a type parameter
-A declaration or assignment statement invokes a generic type and supplies constructor arguments to a type parameter that has the [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) constraint.  
+A declaration or assignment statement invokes a generic type and supplies constructor arguments to a type parameter that has the [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0) constraint.  
   
  A constraint list on a type parameter can specify that the type argument passed to that type parameter must expose a parameterless constructor that the creating code can access. A type parameter cannot require a constructor that takes parameters, and a type parameter with the `New` constraint cannot accept such a constructor.  
   
@@ -32,5 +32,5 @@ A declaration or assignment statement invokes a generic type and supplies constr
 -   Remove the argument list following the type argument in the statement invoking the generic type. You cannot pass constructor arguments to the corresponding type parameter.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Value Types and Reference Types](http://msdn.microsoft.com/library/fc82ce15-5a40-4c5c-a1e1-a556830e7391)

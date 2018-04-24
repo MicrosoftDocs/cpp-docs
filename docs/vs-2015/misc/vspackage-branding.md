@@ -41,5 +41,5 @@ VSPackages can display icons and textual information about products (together ca
  [VSPackage State](../misc/vspackage-state.md)  
  Lists common strategies for saving, restoring, and resetting the state of a VSPackage.  
   
- [VSPackages](../Topic/VSPackages.md)  
+ [VSPackages](http://msdn.microsoft.com/library/cad0893a-9c5f-45b7-952a-e2294f83e324)  
  VSPackages extend the integrated development environment (IDE) by providing UI elements, services, projects, editors, and designers.

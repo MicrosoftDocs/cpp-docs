@@ -23,7 +23,7 @@ manager: "wpickett"
 # &#39;Microsoft.VisualBasic.ComClassAttribute&#39; is specified for class &#39;&lt;classname&gt;&#39; but it has no public members that can be exposed to COM; therefore no COM interfaces are generated
 A class using a `COMClassAttribute` attribute block does not define any `Public` properties or methods. If a class is to be exposed as a COM object, its properties and methods must be declared with `Public` access.  
   
- The message is a warning by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ The message is a warning by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40011  
   
@@ -34,5 +34,5 @@ A class using a `COMClassAttribute` attribute block does not define any `Public`
 ## See Also  
  [NOT IN BUILD: Attributes Used in Visual Basic](http://msdn.microsoft.com/en-us/22231318-8a40-49af-9245-e0aab723563b)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)   
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)   
  [ComClassAttribute Class](http://msdn.microsoft.com/en-us/5c2f0835-9210-47dc-bc59-5c1769953574)

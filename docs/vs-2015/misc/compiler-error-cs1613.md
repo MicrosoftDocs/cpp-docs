@@ -28,7 +28,7 @@ The managed coclass wrapper class 'class' for interface 'interface' cannot be fo
   
  To resolve this error, you can try one of the following:  
   
--   Add a reference to the assembly that has the coclass (most of the time the interface and coclass should be in the same assembly). See [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md) or [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) for information.  
+-   Add a reference to the assembly that has the coclass (most of the time the interface and coclass should be in the same assembly). See [/reference](http://msdn.microsoft.com/library/8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4) or [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) for information.  
   
 -   Fix the `CoClass` attribute on the interface.  
   

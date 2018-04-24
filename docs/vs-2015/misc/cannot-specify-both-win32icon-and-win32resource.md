@@ -34,5 +34,5 @@ The `/win32resource` and `/win32icon` options are mutually exclusive, because th
 -   Use only the `/win32resource` option to insert a Win32 resource file in the output file. A Win32 resource can contain version or bitmap (icon) information that helps identify your application in Windows Explorer.  
   
 ## See Also  
- [/win32icon](../Topic/-win32icon.md)   
- [/win32resource](../Topic/-win32resource.md)
+ [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92)   
+ [/win32resource](http://msdn.microsoft.com/library/e226946d-19ce-4cc9-91f5-aed24f77aa2b)

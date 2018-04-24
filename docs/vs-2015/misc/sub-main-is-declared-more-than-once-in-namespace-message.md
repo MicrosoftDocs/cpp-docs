@@ -30,4 +30,4 @@ manager: "wpickett"
 -   Make sure there is only a single `Sub Main` procedure in your project.  
   
 ## See Also  
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)

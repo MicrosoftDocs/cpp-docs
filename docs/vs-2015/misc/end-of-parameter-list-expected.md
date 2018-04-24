@@ -30,4 +30,4 @@ A `ParamArray` specification is followed by one or more other argument specifica
 -   Move the `ParamArray` to the end of the argument list.  
   
 ## See Also  
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)
+ [Parameter Arrays](http://msdn.microsoft.com/library/c43edfae-9114-4096-9ebc-8c5c957a1067)

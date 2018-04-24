@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1530
 Keyword 'new' is not allowed on elements defined in a namespace  
   
- It is not necessary to specify the [new](../Topic/new%20\(C%23%20Reference\).md) keyword on any construct that is in a [namespace](../Topic/namespace%20\(C%23%20Reference\).md).  
+ It is not necessary to specify the [new](http://msdn.microsoft.com/library/e4136516-f058-45a8-84e5-da00a5cf9b6a) keyword on any construct that is in a [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).  
   
  The following sample generates CS1530:  
   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0274
 Cannot specify accessibility modifiers for both accessors of the property or indexer 'property/indexer'  
   
- This error occurs when you declare a property or indexer with access modifiers on both its accessors. To resolve this error, use an access modifier on only one of the two accessors. For more information, see [Accessor Accessibility](../Topic/Restricting%20Accessor%20Accessibility%20\(C%23%20Programming%20Guide\).md).  
+ This error occurs when you declare a property or indexer with access modifiers on both its accessors. To resolve this error, use an access modifier on only one of the two accessors. For more information, see [Accessor Accessibility](http://msdn.microsoft.com/library/6e655798-e112-4301-a680-6310a6e012e1).  
   
  The following example generates CS0274:  
   

@@ -32,6 +32,6 @@ If a property is not declared as `ReadOnly` or `WriteOnly`, it must supply proce
 2.  Verify that other procedures within the `Property` declaration are correctly terminated.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Get Statement](../Topic/Get%20Statement.md)   
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)   
+ [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd)

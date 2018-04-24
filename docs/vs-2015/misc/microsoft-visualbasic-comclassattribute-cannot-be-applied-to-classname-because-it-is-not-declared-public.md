@@ -43,5 +43,5 @@ A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but its
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

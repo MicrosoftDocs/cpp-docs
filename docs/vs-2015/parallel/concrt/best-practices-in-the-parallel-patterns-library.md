@@ -68,7 +68,7 @@ This document describes how best to make effective use of the Parallel Patterns 
   
  [!code-cpp[concrt-image-processing-filter#20](../../snippets/cpp/VS_Snippets_ConcRT/concrt-image-processing-filter/cpp/image-processing-filter.cpp#20)]  
   
- Because each loop iteration is independent, you can parallelize much of the work, as shown in the following example. This example uses the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm to parallelize the outer loop.  
+ Because each loop iteration is independent, you can parallelize much of the work, as shown in the following example. This example uses the [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) algorithm to parallelize the outer loop.  
   
  [!code-cpp[concrt-image-processing-filter#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-image-processing-filter/cpp/image-processing-filter.cpp#3)]  
   
@@ -78,7 +78,7 @@ This document describes how best to make effective use of the Parallel Patterns 
   
  If each iteration of the parallel loop either performs almost no work, or the work that is performed by the parallel loop is imbalanced, that is, some loop iterations take longer than others, the scheduling overhead that is required to frequently fork and join work can outweigh the benefit to parallel execution. This overhead increases as the number of processors increases.  
   
- To reduce the amount of scheduling overhead in this example, you can parallelize outer loops before you parallelize inner loops or use another parallel construct such as pipelining. The following example modifies the `ProcessImages` function to use the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm to parallelize the outer loop.  
+ To reduce the amount of scheduling overhead in this example, you can parallelize outer loops before you parallelize inner loops or use another parallel construct such as pipelining. The following example modifies the `ProcessImages` function to use the [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) algorithm to parallelize the outer loop.  
   
  [!code-cpp[concrt-image-processing-filter#22](../../snippets/cpp/VS_Snippets_ConcRT/concrt-image-processing-filter/cpp/image-processing-filter.cpp#22)]  
   
@@ -87,7 +87,7 @@ This document describes how best to make effective use of the Parallel Patterns 
  [[Top](#top)]  
   
 ##  <a name="divide-and-conquer"></a> Use parallel_invoke to Solve Divide-and-Conquer Problems  
- A *divide-and-conquer* problem is a form of the fork-join construct that uses recursion to break a task into subtasks. In addition to the [concurrency::task_group](../Topic/task_group%20Class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes, you can also use the [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) algorithm to solve divide-and-conquer problems. The `parallel_invoke` algorithm has a more succinct syntax than task group objects, and is useful when you have a fixed number of parallel tasks.  
+ A *divide-and-conquer* problem is a form of the fork-join construct that uses recursion to break a task into subtasks. In addition to the [concurrency::task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes, you can also use the [concurrency::parallel_invoke](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b) algorithm to solve divide-and-conquer problems. The `parallel_invoke` algorithm has a more succinct syntax than task group objects, and is useful when you have a fixed number of parallel tasks.  
   
  The following example illustrates the use of the `parallel_invoke` algorithm to implement the bitonic sorting algorithm.  
   
@@ -100,9 +100,9 @@ This document describes how best to make effective use of the Parallel Patterns 
  [[Top](#top)]  
   
 ##  <a name="breaking-loops"></a> Use Cancellation or Exception Handling to Break from a Parallel Loop  
- The PPL provides two ways to cancel the parallel work that is performed by a task group or parallel algorithm. One way is to use the cancellation mechanism that is provided by the [concurrency::task_group](../Topic/task_group%20Class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes. The other way is to throw an exception in the body of a task work function. The cancellation mechanism is more efficient than exception handling at canceling a tree of parallel work. A *parallel work tree* is a group of related task groups in which some task groups contain other task groups. The cancellation mechanism cancels a task group and its child task groups in a top-down manner. Conversely, exception handling works in a bottom-up manner and must cancel each child task group independently as the exception propagates upward.  
+ The PPL provides two ways to cancel the parallel work that is performed by a task group or parallel algorithm. One way is to use the cancellation mechanism that is provided by the [concurrency::task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes. The other way is to throw an exception in the body of a task work function. The cancellation mechanism is more efficient than exception handling at canceling a tree of parallel work. A *parallel work tree* is a group of related task groups in which some task groups contain other task groups. The cancellation mechanism cancels a task group and its child task groups in a top-down manner. Conversely, exception handling works in a bottom-up manner and must cancel each child task group independently as the exception propagates upward.  
   
- When you work directly with a task group object, use the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) or [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) methods to cancel the work that belongs to that task group. To cancel a parallel algorithm, for example, `parallel_for`, create a parent task group and cancel that task group. For example, consider the following function, `parallel_find_any`, which searches for a value in an array in parallel.  
+ When you work directly with a task group object, use the [concurrency::task_group::cancel](http://msdn.microsoft.com/library/4f808727-92cd-4158-bc80-dac982c9630e) or [concurrency::structured_task_group::cancel](http://msdn.microsoft.com/library/8b6015cd-cc68-4fe8-9467-a34386adbd69) methods to cancel the work that belongs to that task group. To cancel a parallel algorithm, for example, `parallel_for`, create a parent task group and cancel that task group. For example, consider the following function, `parallel_find_any`, which searches for a value in an array in parallel.  
   
  [!code-cpp[concrt-parallel-array-search#2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-parallel-array-search/cpp/parallel-array-search.cpp#2)]  
   
@@ -141,7 +141,7 @@ Container 1: Freeing resources...Exiting program...
   
  This code example contains the following issues that may cause it to behave differently than you expect:  
   
--   The cancellation of the parent task causes the child task, the call to [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md), to also be canceled. Therefore, these two resources are not freed.  
+-   The cancellation of the parent task causes the child task, the call to [concurrency::parallel_invoke](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b), to also be canceled. Therefore, these two resources are not freed.  
   
 -   The cancellation of the parent task causes the child task to throw an internal exception. Because the `Container` destructor does not handle this exception, the exception is propagated upward and the third resource is not freed.  
   
@@ -152,13 +152,13 @@ Container 1: Freeing resources...Exiting program...
  [[Top](#top)]  
   
 ##  <a name="repeated-blocking"></a> Do Not Block Repeatedly in a Parallel Loop  
- A parallel loop such as [concurrency::parallel_for](../Topic/parallel_for%20Function.md) or [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) that is dominated by blocking operations may cause the runtime to create many threads over a short time.  
+ A parallel loop such as [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) or [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) that is dominated by blocking operations may cause the runtime to create many threads over a short time.  
   
  The Concurrency Runtime performs additional work when a task finishes or cooperatively blocks or yields. When one parallel loop iteration blocks, the runtime might begin another iteration. When there are no available idle threads, the runtime creates a new thread.  
   
  When the body of a parallel loop occasionally blocks, this mechanism helps maximize the overall task throughput. However, when many iterations block, the runtime may create many threads to run the additional work. This could lead to low-memory conditions or poor utilization of hardware resources.  
   
- Consider the following example that calls the [concurrency::send](../Topic/send%20Function.md) function in each iteration of a `parallel_for` loop. Because `send` blocks cooperatively, the runtime creates a new thread to run additional work every time `send` is called.  
+ Consider the following example that calls the [concurrency::send](http://msdn.microsoft.com/library/8713fb36-066b-47de-af12-589fa74805d6) function in each iteration of a `parallel_for` loop. Because `send` blocks cooperatively, the runtime creates a new thread to run additional work every time `send` is called.  
   
  [!code-cpp[concrt-repeated-blocking#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-repeated-blocking/cpp/repeated-blocking.cpp#1)]  
   
@@ -167,7 +167,7 @@ Container 1: Freeing resources...Exiting program...
  [[Top](#top)]  
   
 ##  <a name="blocking"></a> Do Not Perform Blocking Operations When You Cancel Parallel Work  
- When possible, do not perform blocking operations before you call the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) or [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) method to cancel parallel work.  
+ When possible, do not perform blocking operations before you call the [concurrency::task_group::cancel](http://msdn.microsoft.com/library/4f808727-92cd-4158-bc80-dac982c9630e) or [concurrency::structured_task_group::cancel](http://msdn.microsoft.com/library/8b6015cd-cc68-4fe8-9467-a34386adbd69) method to cancel parallel work.  
   
  When a task performs a cooperative blocking operation, the runtime can perform other work while the first task waits for data. The runtime reschedules the waiting task when it unblocks. The runtime typically reschedules tasks that were more recently unblocked before it reschedules tasks that were less recently unblocked. Therefore, the runtime could schedule unnecessary work during the blocking operation, which leads to decreased performance. Accordingly, when you perform a blocking operation before you cancel parallel work, the blocking operation can delay the call to `cancel`. This causes other tasks to perform unnecessary work.  
   
@@ -175,7 +175,7 @@ Container 1: Freeing resources...Exiting program...
   
  [!code-cpp[concrt-blocking-cancel#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-blocking-cancel/cpp/blocking-cancel.cpp#1)]  
   
- The `new` operator performs a heap allocation, which might block. The runtime performs other work only when the task performs a cooperative blocking call, such as a call to [concurrency::critical_section::lock](../Topic/critical_section::lock%20Method.md).  
+ The `new` operator performs a heap allocation, which might block. The runtime performs other work only when the task performs a cooperative blocking call, such as a call to [concurrency::critical_section::lock](http://msdn.microsoft.com/library/62cc3d7b-4331-403e-8595-d07ff24023e4).  
   
  The following example shows how to prevent unnecessary work, and thereby improve performance. This example cancels the task group before it allocates the storage for the `Answer` object.  
   
@@ -186,7 +186,7 @@ Container 1: Freeing resources...Exiting program...
 ##  <a name="shared-writes"></a> Do Not Write to Shared Data in a Parallel Loop  
  The Concurrency Runtime provides several data structures, for example, [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), that synchronize concurrent access to shared data. These data structures are useful in many cases, for example, when multiple tasks infrequently require shared access to a resource.  
   
- Consider the following example that uses the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm and a `critical_section` object to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object. This example does not scale because each thread must wait to access the shared variable `prime_sum`.  
+ Consider the following example that uses the [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) algorithm and a `critical_section` object to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object. This example does not scale because each thread must wait to access the shared variable `prime_sum`.  
   
  [!code-cpp[concrt-parallel-sum-of-primes#2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-parallel-sum-of-primes/cpp/parallel-sum-of-primes.cpp#2)]  
   
@@ -194,7 +194,7 @@ Container 1: Freeing resources...Exiting program...
   
  The PPL defines the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class, which helps you eliminate shared state by providing access to shared resources in a lock-free manner. The `combinable` class provides thread-local storage that lets you perform fine-grained computations and then merge those computations into a final result. You can think of a `combinable` object as a reduction variable.  
   
- The following example modifies the previous one by using a `combinable` object instead of a `critical_section` object to compute the sum. This example scales because each thread holds its own local copy of the sum. This example uses the [concurrency::combinable::combine](../Topic/combinable::combine%20Method.md) method to merge the local computations into the final result.  
+ The following example modifies the previous one by using a `combinable` object instead of a `critical_section` object to compute the sum. This example scales because each thread holds its own local copy of the sum. This example uses the [concurrency::combinable::combine](http://msdn.microsoft.com/library/492e55cc-c1f8-4e0e-8356-2636f25563de) method to merge the local computations into the final result.  
   
  [!code-cpp[concrt-parallel-sum-of-primes#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-parallel-sum-of-primes/cpp/parallel-sum-of-primes.cpp#3)]  
   
@@ -238,7 +238,7 @@ Container 1: Freeing resources...Exiting program...
   
  Because the `object` variable is passed by value, any state changes that occur to this variable do not appear in the original copy.  
   
- The following example uses the [concurrency::task_group::wait](../Topic/task_group::wait%20Method.md) method to make sure that the task finishes before the `perform_action` function returns.  
+ The following example uses the [concurrency::task_group::wait](http://msdn.microsoft.com/library/19ee5bbc-8654-40a7-9f22-d5329cec6e96) method to make sure that the task finishes before the `perform_action` function returns.  
   
  [!code-cpp[concrt-lambda-lifetime#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-lambda-lifetime/cpp/lambda-lifetime.cpp#3)]  
   

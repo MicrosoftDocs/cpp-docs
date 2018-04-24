@@ -28,4 +28,4 @@ This error generally occurs when a tool has been added to the External Tools dia
 2.  If you do not intent to save the tool, click **OK** and then click **Delete** in the **External Tools** dialog box.  
   
 ## See Also  
- [Managing External Tools](../Topic/Managing%20External%20Tools.md)
+ [Managing External Tools](http://msdn.microsoft.com/library/f382fd40-a98f-4934-8c9a-5aeae881acde)

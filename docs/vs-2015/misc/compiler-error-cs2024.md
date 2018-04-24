@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS2024
 Invalid file section alignment number '#'  
   
- An invalid value was passed to the [/filealign](../Topic/-filealign%20\(C%23%20Compiler%20Options\).md) compiler option.  
+ An invalid value was passed to the [/filealign](http://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073) compiler option.  
   
  The following sample generates CS2024:  
   

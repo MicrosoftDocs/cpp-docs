@@ -33,6 +33,6 @@ manager: "douge"
 3.  On the **Project** menu, click **Properties** to re-open the Project Designer.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)   
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)   
  [There was an error trying to open or create the application definition file for this project. '\<error>'](../misc/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project-error.md)   
  [An error occurred trying to create the application events file. '\<error>'](../misc/an-error-occurred-trying-to-create-the-application-events-file-error.md)

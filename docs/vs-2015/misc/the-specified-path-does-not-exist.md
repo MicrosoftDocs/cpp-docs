@@ -23,6 +23,6 @@ A specified path does not exist, perhaps due to an error combining strings.
 -   Make sure that the path is correct.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Conversions Between Strings and Other Types](../Topic/Conversions%20Between%20Strings%20and%20Other%20Types%20\(Visual%20Basic\).md)   
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [Conversions Between Strings and Other Types](http://msdn.microsoft.com/library/c3a99596-f09a-44a5-81dd-1b89a094f1df)   
  [Parsing Strings in Visual Basic](http://msdn.microsoft.com/en-us/927a4b26-5388-458c-85d8-aaf0851457e3)

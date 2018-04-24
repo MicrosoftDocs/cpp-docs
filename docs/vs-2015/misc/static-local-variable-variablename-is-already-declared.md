@@ -32,4 +32,4 @@ Another static local variable with the same name has already been declared.
 2.  Give each static local variable a unique name.  
   
 ## See Also  
- [Static](../Topic/Static%20\(Visual%20Basic\).md)
+ [Static](http://msdn.microsoft.com/library/19013910-4658-47b6-a22e-1744b527979e)

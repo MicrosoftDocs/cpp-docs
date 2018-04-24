@@ -33,4 +33,4 @@ manager: "douge"
 3.  Set the **Hash** value to **Include** for all files that are to be published.  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)

@@ -30,5 +30,5 @@ You have used a type character, such as `$`, when explicitly specifying a type.
 -   Remove the type character or remove the `As <Type>` clause from the declaration.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)   
+ [Type Characters](http://msdn.microsoft.com/library/6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5)   
  [Implicit and Explicit Declaration (Visual Basic)](http://msdn.microsoft.com/en-us/7260dafd-c1d5-46fc-98bf-2ea0fb94996c)

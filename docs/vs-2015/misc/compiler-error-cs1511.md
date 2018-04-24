@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1511
 Keyword 'base' is not available in a static method  
   
- The [base](../Topic/base%20\(C%23%20Reference\).md) keyword was used in a [static](../Topic/static%20\(C%23%20Reference\).md) method. `base` can only be called in an instance constructor, instance method, or instance accessor.  
+ The [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5) keyword was used in a [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf) method. `base` can only be called in an instance constructor, instance method, or instance accessor.  
   
 ## Example  
  The following sample generates CS1511.  

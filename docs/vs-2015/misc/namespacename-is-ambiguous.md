@@ -30,5 +30,5 @@ You have provided a name that is ambiguous and therefore conflicts with another 
 -   Fully qualify the name.  
   
 ## See Also  
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)
+ [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)   
+ [Namespace Statement](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)

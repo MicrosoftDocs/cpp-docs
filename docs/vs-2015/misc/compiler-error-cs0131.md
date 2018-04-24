@@ -26,7 +26,7 @@ The left-hand side of an assignment must be a variable, property or indexer
   
  In an assignment statement, the value of the right-hand side is assigned to the left-hand side. The left-hand side must be a variable, property, or indexer.  
   
- To fix this error, make sure that all operators are on the right-hand side and that the left-hand side is a variable, property, or indexer. For more information, see [Statements, Expressions, and Operators](../Topic/Statements,%20Expressions,%20and%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ To fix this error, make sure that all operators are on the right-hand side and that the left-hand side is a variable, property, or indexer. For more information, see [Statements, Expressions, and Operators](http://msdn.microsoft.com/library/20f8469d-5a6a-4084-ad90-0856b7e97e45).  
   
 ## Example  
  The following sample generates CS0131.  

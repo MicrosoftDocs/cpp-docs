@@ -30,4 +30,4 @@ This error generally occurs when the `File.NewProject` command is issued from th
      Re-type the command, omitting the project name.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a)

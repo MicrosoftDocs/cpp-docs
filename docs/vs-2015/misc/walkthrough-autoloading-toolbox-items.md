@@ -22,7 +22,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio SDK, which includes auto-loading support. This topic is retained for backward compatibility, for adding existing controls to the Toolbox, and for advanced Toolbox development.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](http://msdn.microsoft.com/library/9cc34db9-b0d1-4951-a02f-7537fbbb51ad).  
   
  This walkthrough guides you through the following steps:  
   
@@ -43,7 +43,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
 6.  Implement a command on the VSPackage to force re-initialization of the **Toolbox**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Extending Visual Studio Overview](../Topic/Extending%20Visual%20Studio%20Overview.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Extending Visual Studio Overview](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59).  
   
 ## Locations for the Visual Studio Package Project Template  
  The Visual Studio Package project template can be found in three different locations in the **New Project** dialog:  
@@ -58,7 +58,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
   
 #### To create the LoadToolboxMembers VSPackage  
   
-1.  Create a VSPackage named `LoadToolboxMembers`. For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](../Topic/Walkthrough:%20Creating%20a%20Menu%20Command%20By%20Using%20the%20Visual%20Studio%20Package%20Template.md).  
+1.  Create a VSPackage named `LoadToolboxMembers`. For more information, see [Walkthrough: Creating a Menu Command By Using the Visual Studio Package Template](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2.  Add a menu command.  
   
@@ -117,7 +117,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
 3.  Close the experimental version of [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 ## Creating a Toolbox Control  
- In this section, you create and register a user control, `Control1`, that declares an associated default **Toolbox** item. For more information about how to author Windows Form controls and the <xref:System.Drawing.Design.ToolboxItem> class, see [Developing Windows Forms Controls at Design Time](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ In this section, you create and register a user control, `Control1`, that declares an associated default **Toolbox** item. For more information about how to author Windows Form controls and the <xref:System.Drawing.Design.ToolboxItem> class, see [Developing Windows Forms Controls at Design Time](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
 #### To create a Toolbox control that will be used with a default ToolboxItem  
   
@@ -302,7 +302,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
   
 2.  Press F5 to start a second instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in the experimental registry hive.  
   
-     For more information about how to use the experimental hive, see [The Experimental Instance](../Topic/The%20Experimental%20Instance.md).  
+     For more information about how to use the experimental hive, see [The Experimental Instance](http://msdn.microsoft.com/library/ead0df4e-6f88-4b42-9297-581b7902f050).  
   
 3.  Click the **Tools** menu.  
   

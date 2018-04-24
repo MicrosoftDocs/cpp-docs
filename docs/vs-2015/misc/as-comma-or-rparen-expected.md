@@ -30,5 +30,5 @@ The type parameter that has been supplied is lacking an `As`, comma (`,`), or cl
 -   Supply the missing `As`, comma, or closing parenthesis.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
- [Troubleshooting Data Types](../Topic/Troubleshooting%20Data%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Troubleshooting Data Types](http://msdn.microsoft.com/library/90040d67-b630-4125-a6ae-37195b079042)

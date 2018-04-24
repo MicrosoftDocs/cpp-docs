@@ -21,6 +21,6 @@ ms.author: "ghogen"
 manager: "douge"
 ---
 # find (STL Samples)
-Topic deprecated, see [find](../Topic/find%20\(STL\).md).  
+Topic deprecated, see [find](http://msdn.microsoft.com/library/021e9ef9-8817-409f-92ee-cd7104867361).  
   
 ## Syntax

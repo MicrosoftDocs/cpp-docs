@@ -26,8 +26,8 @@ manager: "douge"
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48).  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)   
- [Build Loggers](../Topic/Build%20Loggers.md)
+ [Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584)   
+ [Build Loggers](http://msdn.microsoft.com/library/fa34810d-185a-4d22-92bd-9852915e5f1d)

@@ -33,7 +33,7 @@ Cannot convert 'type1' to 'type2'. You can use the 'Value' property to get the s
   
 ## See Also  
  <xref:System.Convert>   
- [Accessing XML in Visual Basic](../Topic/Accessing%20XML%20in%20Visual%20Basic.md)   
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Accessing XML in Visual Basic](http://msdn.microsoft.com/library/c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a)   
+ [Type Conversion Functions](http://msdn.microsoft.com/library/d9d8d165-f967-44ff-a6cd-598e4740a99e)   
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

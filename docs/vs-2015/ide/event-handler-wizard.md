@@ -27,7 +27,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Event Handler Wizard](https://docs.microsoft.com/cpp/ide/event-handler-wizard).  
   
   
-This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](../Topic/Properties%20Window.md), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
+This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
   
  **Command name**  
  Identifies the selected control, for which the event handler is added. This box is unavailable.  

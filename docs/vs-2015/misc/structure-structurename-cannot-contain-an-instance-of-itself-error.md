@@ -34,5 +34,5 @@ A structure declares a variable and initializes it with an instance of itself.
 2.  If you intend to create another instance of the same structure, you must declare and create it outside the structure.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)

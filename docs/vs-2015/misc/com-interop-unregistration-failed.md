@@ -33,4 +33,4 @@ A problem occurred when trying to unregister an old copy of the assembly.
  If the unregistration process fails, a leak of the GUID for CoCreatable objects may occur, as well as for any type library GUIDs. However, the overall build process will still succeed.  
   
 ## See Also  
- [COM Interoperability in .NET Framework Applications](../Topic/COM%20Interoperability%20in%20.NET%20Framework%20Applications%20\(Visual%20Basic\).md)
+ [COM Interoperability in .NET Framework Applications](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)

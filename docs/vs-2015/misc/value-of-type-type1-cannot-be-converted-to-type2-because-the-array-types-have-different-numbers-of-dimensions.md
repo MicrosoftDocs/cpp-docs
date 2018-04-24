@@ -30,4 +30,4 @@ You have tried to convert one array to another with a different number of dimens
 -   Change one or both arrays so that the number of dimensions matches.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

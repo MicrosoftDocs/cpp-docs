@@ -28,4 +28,4 @@ manager: "wpickett"
 1.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](../Topic/-win32manifest%20\(Visual%20Basic\).md)
+ [/win32manifest (Visual Basic)](http://msdn.microsoft.com/library/9e3191b4-90db-41c8-966a-28036fd20005)

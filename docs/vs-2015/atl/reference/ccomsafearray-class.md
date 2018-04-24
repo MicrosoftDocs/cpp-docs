@@ -78,7 +78,7 @@ class CComSafeArray
 |Name|Description|  
 |----------|-----------------|  
 |[CComSafeArray::operator LPSAFEARRAY](#ccomsafearray__operator_lpsafearray)|Casts a value to a **SAFEARRAY** pointer.|  
-|[CComSafeArray::operator](../Topic/CComSafeArray::operator.md)|Retrieves an element from the array.|  
+|[CComSafeArray::operator](http://msdn.microsoft.com/library/701b3117-4e34-4076-b9fe-63f244bd5215)|Retrieves an element from the array.|  
 |[CComSafeArray::operator =](#ccomsafearray__operator__eq)|Assignment operator.|  
   
 ### Public Data Members  

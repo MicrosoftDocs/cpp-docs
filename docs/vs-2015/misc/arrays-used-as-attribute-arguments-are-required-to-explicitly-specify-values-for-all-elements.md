@@ -30,5 +30,5 @@ An array used as an attribute argument has an element with an unspecified value.
 -   Specify all element values.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [Troubleshooting Arrays](../Topic/Troubleshooting%20Arrays%20\(Visual%20Basic\).md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)   
+ [Troubleshooting Arrays](http://msdn.microsoft.com/library/f4e971c7-c0a4-4ed7-a77a-8d71039f266f)

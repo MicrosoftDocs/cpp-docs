@@ -30,5 +30,5 @@ An `End Function` statement follows a colon (:) statement separator. `End Functi
 -   Separate the multiple statements onto different lines.  
   
 ## See Also  
- [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)

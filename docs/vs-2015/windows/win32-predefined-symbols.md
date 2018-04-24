@@ -27,7 +27,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Win32 Predefined Symbols](https://docs.microsoft.com/cpp/windows/win32-predefined-symbols).  
   
   
-These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](../Topic/Properties%20Window.md) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  
+These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  
   
 |||  
 |-|-|  

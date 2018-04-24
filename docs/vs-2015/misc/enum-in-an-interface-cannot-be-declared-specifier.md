@@ -30,5 +30,5 @@ An invalid modifier was specified with an enumeration declared in an interface.
 -   Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, or `Overridable`.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)   
+ [Enum Statement](http://msdn.microsoft.com/library/a45e51f1-65ff-48e1-bf32-79130f137377)

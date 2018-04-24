@@ -60,5 +60,5 @@ Generate enhanced debugging information for optimized code in non-debug builds.
 ## See Also  
  [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   
  [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md)   
- [Edit and Continue](../Topic/Edit%20and%20Continue.md)
+ [Edit and Continue](http://msdn.microsoft.com/library/2cdd4531-7117-4221-a809-8447812de2a1)
 

@@ -30,4 +30,4 @@ The specified file could not be located. This may be a result of supplying an in
 -   Check that the file name and path are correct.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)

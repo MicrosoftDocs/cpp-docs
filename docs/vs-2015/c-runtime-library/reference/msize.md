@@ -70,7 +70,7 @@ Returns the size of a memory block allocated in the heap.
 ## Remarks  
  The `_msize` function returns the size, in bytes, of the memory block allocated by a call to `calloc`, `malloc`, or `realloc`.  
   
- When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
  This function validates its parameter. If `memblock` is a null pointer, `_msize` invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.  
   
@@ -89,7 +89,7 @@ Returns the size of a memory block allocated in the heap.
  See the example for [realloc](../../c-runtime-library/reference/realloc.md).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Memory Allocation](../../c-runtime-library/memory-allocation.md)   

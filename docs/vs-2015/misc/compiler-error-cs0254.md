@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0254
 The right hand side of a fixed statement assignment may not be a cast expression  
   
- The right side of a [fixed](../Topic/fixed%20Statement%20\(C%23%20Reference\).md) expression may not use a cast. For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ The right side of a [fixed](http://msdn.microsoft.com/library/7ea6db08-ad49-4a7a-b934-d8c4acad1c3a) expression may not use a cast. For more information, see [Unsafe Code and Pointers](http://msdn.microsoft.com/library/b0fcca10-a92d-4f2a-835b-b0ccae6739ee).  
   
  The following sample generates CS0254:  
   

@@ -31,5 +31,5 @@ The group variable specified in a `For Each` statement is not a collection objec
   
 ## See Also  
  <xref:System.Collections.IEnumerable>   
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)   
+ [For Each...Next Statement](http://msdn.microsoft.com/library/ebce3120-95c3-42b1-b70b-fa7da40c75e2)   
  [Visual Basic Collection Class](http://msdn.microsoft.com/en-us/0cb2d1ad-c58d-42c0-8e69-d81f5a15e532)

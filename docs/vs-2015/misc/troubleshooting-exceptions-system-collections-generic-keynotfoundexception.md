@@ -30,4 +30,4 @@ A <xref:System.Collections.Generic.KeyNotFoundException> is thrown when an attem
 ## See Also  
  <xref:System.Collections.Generic>   
  <xref:System.Collections.Generic.KeyNotFoundException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

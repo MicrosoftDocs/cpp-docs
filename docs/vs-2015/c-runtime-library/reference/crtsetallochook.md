@@ -84,7 +84,7 @@ lineNumber);
   
  To clear the hook function, pass `NULL` to `_CrtSetAllocHook`.  
   
- For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](http://msdn.microsoft.com/library/5510635f-cf69-4907-b72d-ae27af1f19af).  
   
 > [!NOTE]
 >  `_CrtSetAllocHook` is not supported under `/clr:pure`.  
@@ -104,7 +104,7 @@ lineNumber);
  For a sample of how to use `_CrtSetAllocHook`, see [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

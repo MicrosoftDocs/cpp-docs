@@ -44,7 +44,7 @@ The `class` keyword declares a class type or defines an object of a class type.
   
 #### Parameters  
  `template-spec`  
- Optional template specifications. For more information, refer to [Template Specifications](../Topic/Template%20Specifications.md).  
+ Optional template specifications. For more information, refer to [Template Specifications](http://msdn.microsoft.com/library/8c31924a-5c08-4d2d-aa54-543d7f744753).  
   
  `class`  
  The `class` keyword.  

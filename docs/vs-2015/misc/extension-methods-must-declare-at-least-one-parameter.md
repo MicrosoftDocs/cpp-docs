@@ -49,6 +49,6 @@ greeting.Print()
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
+ [Procedure Parameters and Arguments](http://msdn.microsoft.com/library/ff275aff-aa13-40df-bd4c-63486db8c1e9)   
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)

@@ -35,4 +35,4 @@ A procedure is defined inside an interface, but the procedure definition applies
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)

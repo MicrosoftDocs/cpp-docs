@@ -37,7 +37,7 @@ To add formatting or special characters to a string
   
 2.  Select the string you want to modify.  
   
-3.  In the [Properties Window](../Topic/Properties%20Window.md), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
+3.  In the [Properties Window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
   
     |To get this|Type this|  
     |-----------------|---------------|  
@@ -51,7 +51,7 @@ To add formatting or special characters to a string
 > [!NOTE]
 >  The String editor does not support the full set of escaped ASCI characters. You can only use those listed above.  
   
- For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  **Requirements**  
   

@@ -53,5 +53,5 @@ class C
  **Note** If the variable `i` is declared as `protected or public`, no error will be generated because the compiler cannot know whether a derived class might use it or some other client code might instantiate the class and reference the variable  
   
 ## See Also  
- [C# Compiler Errors](../Topic/C%23%20Compiler%20Errors.md)   
- [C# Compiler Options](../Topic/C%23%20Compiler%20Options.md)
+ [C# Compiler Errors](http://msdn.microsoft.com/library/57262ab1-6c50-4f9c-81ad-9fba48477416)   
+ [C# Compiler Options](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

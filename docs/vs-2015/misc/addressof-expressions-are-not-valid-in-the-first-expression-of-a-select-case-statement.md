@@ -30,6 +30,6 @@ You cannot use an `AddressOf` expression for the test expression in a `Select Ca
 -   Examine your code to determine whether a different conditional construction, such as an `If...Then...Else` statement, would work for you.  
   
 ## See Also  
- [AddressOf Operator](../Topic/AddressOf%20Operator%20\(Visual%20Basic\).md)   
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)   
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [AddressOf Operator](http://msdn.microsoft.com/library/8105a59d-60d8-4ab5-b221-5899cdfacbf4)   
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)   
+ [Select...Case Statement](http://msdn.microsoft.com/library/68877b65-5419-4bf0-a465-20cd0e4c7d44)

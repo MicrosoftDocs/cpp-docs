@@ -26,6 +26,6 @@ manager: "wpickett"
 1.  
   
 ## See Also  
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)   
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)   
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)   
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)

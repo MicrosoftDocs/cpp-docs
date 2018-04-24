@@ -42,7 +42,7 @@ template<class _InIt1, class _InIt2, class _Ty, class _Fn21,
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `inner_product`. For more information, see [inner_product](../Topic/inner_product.md).  
+ This function behaves the same as the STL numeric function `inner_product`. For more information, see [inner_product](http://msdn.microsoft.com/library/5b14ed8f-a284-442e-863c-7106e670fa5a).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

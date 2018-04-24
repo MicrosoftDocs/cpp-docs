@@ -30,4 +30,4 @@ The array element being referenced has not been set, or it was previously set to
 -   Verify that the values in the array are being set correctly.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)

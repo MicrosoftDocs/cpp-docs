@@ -23,7 +23,7 @@ This error generally occurs when an empty string has been entered into the **Com
   
 ### To correct this error  
   
-1.  Enter a valid command. For more information, see [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md).  
+1.  Enter a valid command. For more information, see [Visual Studio Commands](http://msdn.microsoft.com/library/76ffa394-ee89-4629-aba9-1a62b72e6cc1).  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](http://msdn.microsoft.com/library/48711628-1909-4713-a73e-d7b714c77f8a)

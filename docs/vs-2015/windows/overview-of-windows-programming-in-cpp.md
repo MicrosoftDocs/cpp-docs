@@ -75,7 +75,7 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 -   Device drivers. For more information, see [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p/?LinkId=256421)  
   
--   Windows services. For more information, see [Introduction to Windows Service Applications](../Topic/Introduction%20to%20Windows%20Service%20Applications.md).  
+-   Windows services. For more information, see [Introduction to Windows Service Applications](http://msdn.microsoft.com/library/1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae).  
   
  You can use Visual C++ to package almost any kind of custom high-performance functionality in Win32 DLLs or in COM DLLs that can be consumed by C++ apps or by apps that are written in other languages—for example, C# or Visual Basic. For more information about WIn32 DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about COM development, see [Component Object Model (COM)](http://msdn.microsoft.com/en-us/375d29a7-a1f3-4bd8-8621-bad7a049b2aa).  
   
@@ -90,7 +90,7 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 -   Concurrency Runtime: A library that simplifies the work of parallel and asynchronous programming for multicore and many-core devices. For more information, see [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md).  
   
- Many Windows programming scenarios also require the Windows SDK, which includes the header files that enable access to the Windows operating system components. By default, all editions of [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] install the Windows SDK, which enables development of Universal Windows apps. To develop Universal Windows apps for Windows 10, you need the Windows 10 version of the Windows SDK. For information about the Windows 10 SDK, see [Windows 10 SDK](http://go.microsoft.com/fwlink/p/?LinkId=534603). (For more information about the Windows SDKs for earlier versions of Windows, see [Overview of the Windows SDK](../Topic/Overview%20of%20the%20Windows%20SDK.md)).  
+ Many Windows programming scenarios also require the Windows SDK, which includes the header files that enable access to the Windows operating system components. By default, all editions of [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] install the Windows SDK, which enables development of Universal Windows apps. To develop Universal Windows apps for Windows 10, you need the Windows 10 version of the Windows SDK. For information about the Windows 10 SDK, see [Windows 10 SDK](http://go.microsoft.com/fwlink/p/?LinkId=534603). (For more information about the Windows SDKs for earlier versions of Windows, see [Overview of the Windows SDK](http://msdn.microsoft.com/library/9a2db508-5b77-43f8-afa4-1ca82d24bb83)).  
   
  Other platforms such as Xbox and Azure have their own SDKs that you may have to install. For more information, see the DirectX Developer Center and the Azure Developer Center.  
   

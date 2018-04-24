@@ -29,4 +29,4 @@ manager: "douge"
 -   Check whether the project file has been modified or corrupted. If it has been modified or corrupted, open the project in the version of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in which it was created, save it, and then attempt to convert it again.  
   
 ## See Also  
- [Devenv Command Line Switches](../Topic/Devenv%20Command%20Line%20Switches.md)
+ [Devenv Command Line Switches](http://msdn.microsoft.com/library/e12bc6ed-74fd-4bea-8d7c-89b99c20bad8)

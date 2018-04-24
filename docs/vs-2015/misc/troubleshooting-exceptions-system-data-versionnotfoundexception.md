@@ -23,5 +23,5 @@ The exception that is thrown when attempting to return a version of a <xref:Syst
   
 ## See Also  
  <xref:System.Data.VersionNotFoundException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [How to: Get Specific Versions of a DataRow](../Topic/How%20to:%20Get%20Specific%20Versions%20of%20a%20DataRow.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [How to: Get Specific Versions of a DataRow](http://msdn.microsoft.com/library/d7cde25e-cef5-4559-b994-be00e258ac1f)

@@ -30,5 +30,5 @@ A declaration occurs that does not supply an `As` clause for one or more of the 
 -   Furnish the `As` clause as required, or turn `Option Strict Off`.  
   
 ## See Also  
- [As](../Topic/As%20Clause%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [As](http://msdn.microsoft.com/library/b4281ec8-2be5-49f7-aae8-ae0a96265b0d)   
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)

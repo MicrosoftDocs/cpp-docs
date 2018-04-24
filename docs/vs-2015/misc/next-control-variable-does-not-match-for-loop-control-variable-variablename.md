@@ -34,4 +34,4 @@ The control variable in the `Next` statement of a `For...Next` loop must match t
 3.  If this loop is part of a set of nested loops, check that every loop is properly terminated.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9)

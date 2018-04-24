@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1578
 Filename, single-line comment or end-of-line expected  
   
- After a [#line](../Topic/%23line%20\(C%23%20Reference\).md) directive, only a file name (in double quotation marks) or a single-line comment is allowed.  
+ After a [#line](http://msdn.microsoft.com/library/6439e525-5dd5-4acb-b8ea-efabb32ff95b) directive, only a file name (in double quotation marks) or a single-line comment is allowed.  
   
  The following sample generates CS1578:  
   

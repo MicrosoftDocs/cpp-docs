@@ -32,5 +32,5 @@ The event specified is not declared for the object.
 2.  Check that you are accessing the correct object. Use fully qualified references to the object or use the `Imports` statement to import the appropriate namespace if necessary.  
   
 ## See Also  
- [Events](../Topic/Events%20\(Visual%20Basic\).md)   
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)   
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)

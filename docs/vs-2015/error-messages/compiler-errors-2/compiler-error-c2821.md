@@ -29,7 +29,7 @@ The latest version of this topic can be found at [Compiler Error C2821](https://
   
 first formal parameter to 'operator new' must be 'unsigned int'  
   
- The first formal parameter of the [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) must be an unsigned `int`.  
+ The first formal parameter of the [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507) must be an unsigned `int`.  
   
  The following sample generates C2821:  
   

@@ -54,7 +54,7 @@ Enables code analysis and control options.
  Turns off analyzer output to the **Output** window.  
   
  /analyze:stacksize `number`  
- The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](../Topic/C6262.md) is generated. If this parameter is not specified, the stack frame size is 16KB by default.  
+ The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](http://msdn.microsoft.com/library/3eddc74e-2b05-4159-a093-fd469fdcebbb) is generated. If this parameter is not specified, the stack frame size is 16KB by default.  
   
  /analyze:max_paths `number`  
  The `number` parameter that is used with this option specifies the maximum number of code paths to be analyzed. If this parameter is not specified, the number is 256 by default. Larger values perform more thorough checking, but the analysis might take longer.  
@@ -63,7 +63,7 @@ Enables code analysis and control options.
  Typically, the compiler generates code and does more syntax checking after it runs the analyzer. The **/analyze:only** option turns off this code generation pass; this makes analysis faster but compile errors and warnings that might have been discovered by the code generation pass of the compiler are not emitted. If the program is not free of code-generation errors, analysis results might be unreliable; therefore, we recommend that you use this option only if the code already passes code-generation syntax checking without errors.  
   
 ## Remarks  
- For more information, see [Code Analysis for C/C++ Overview](../Topic/Code%20Analysis%20for%20C-C++%20Overview.md) and [Code Analysis for C/C++ Warnings](../Topic/Code%20Analysis%20for%20C-C++%20Warnings.md).  
+ For more information, see [Code Analysis for C/C++ Overview](http://msdn.microsoft.com/library/81f0c9e8-f471-4de5-aac4-99db336a8809) and [Code Analysis for C/C++ Warnings](http://msdn.microsoft.com/library/28f3fda6-35e8-485b-9755-1991aaccec3f).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

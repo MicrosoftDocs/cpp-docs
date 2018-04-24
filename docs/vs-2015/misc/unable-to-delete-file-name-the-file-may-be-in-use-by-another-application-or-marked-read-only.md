@@ -30,4 +30,4 @@ This error generally occurs when the keyboard scheme selected to be deleted is e
      If the file is read-only, remove the read-only attribute. You can modify the read-only attribute in the Properties dialog box for the file, available in File Explorer.  
   
 ## See Also  
- [Identifying and Customizing Keyboard Shortcuts](../Topic/Identifying%20and%20Customizing%20Keyboard%20Shortcuts%20in%20Visual%20Studio.md)
+ [Identifying and Customizing Keyboard Shortcuts](http://msdn.microsoft.com/library/d2774be2-60a4-4d6f-95f1-79d0d9e55b56)

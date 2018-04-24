@@ -38,11 +38,11 @@ When you add radio buttons to a dialog box, treat them as a group by setting a G
   
 ### To add a group of radio buttons to a dialog box  
   
-1.  Select the radio button control in the [Toolbox Window](../Topic/Toolbox.md) and click the location in the dialog box where you want to place the control.  
+1.  Select the radio button control in the [Toolbox Window](http://msdn.microsoft.com/library/b754dad3-1f32-464f-8b9f-065e17e0bc22) and click the location in the dialog box where you want to place the control.  
   
 2.  Repeat Step 1 to add as many radio buttons as you need. Make sure that the radio buttons in the group are consecutive in the tab order (for more information, see [Changing the Tab Order of Controls](../mfc/changing-the-tab-order-of-controls.md)).  
   
-3.  In the [Properties Window](../Topic/Properties%20Window.md), set the **Group** property of the *first* radio button in the tab order to **True**.  
+3.  In the [Properties Window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca), set the **Group** property of the *first* radio button in the tab order to **True**.  
   
      Changing the **Group** property to **True** adds the WS_GROUP style to the button's entry in the dialog object of the resource script and ensures that a user can only select one radio button at a time in the button group (when the user clicks one radio button, the others in the group are cleared).  
   
@@ -63,7 +63,7 @@ When you add radio buttons to a dialog box, treat them as a group by setting a G
   
 6.  You can now modify your code to specify which radio button should appear selected. For example, m_radioBox1 = 0; selects the first radio button in the group.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  Requirements  
   

@@ -36,5 +36,5 @@ cannot send error report automatically. Please visit 'http://go.microsoft.com/fw
 -   Enable automatic error reporting by following the instructions at [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039).  
   
 ## See Also  
- [/errorreport](../Topic/-errorreport.md)   
+ [/errorreport](http://msdn.microsoft.com/library/a7fe83a2-a6d8-460c-8dad-79a8f433f501)   
  [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039)

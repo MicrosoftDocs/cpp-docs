@@ -72,11 +72,11 @@ class CComPtrBase
 |----------|-----------------|  
 |[CComPtrBase::operator T*](#ccomptrbase__operator_t_star)|The cast operator.|  
 |[CComPtrBase::operator !](#ccomptrbase__operator__not)|The NOT operator.|  
-|[CComPtrBase::operator &](../Topic/CComPtrBase::operator%20&.md)|The & operator.|  
+|[CComPtrBase::operator &](http://msdn.microsoft.com/library/4179df7c-6428-435b-bec3-981d9b402779)|The & operator.|  
 |[CComPtrBase::operator *](#ccomptrbase__operator__star)|The * operator.|  
-|[CComPtrBase::operator \<](../Topic/CComPtrBase::operator%20%3C.md)|The less-than operator.|  
+|[CComPtrBase::operator \<](http://msdn.microsoft.com/library/3d06be72-f7cc-4127-a33f-2ac7cf6c1583)|The less-than operator.|  
 |[CComPtrBase::operator ==](#ccomptrbase__operator__eq_eq)|The equality operator.|  
-|[CComPtrBase::operator ->](../Topic/CComPtrBase::operator%20-%3E.md)|The pointer-to-members operator.|  
+|[CComPtrBase::operator ->](http://msdn.microsoft.com/library/9ce396e3-f682-432b-9e29-2fb6affb22c7)|The pointer-to-members operator.|  
   
 ### Public Data Members  
   
@@ -114,7 +114,7 @@ HRESULT Advise(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- See [AtlAdvise](../Topic/AtlAdvise.md) for more information.  
+ See [AtlAdvise](http://msdn.microsoft.com/library/625a2f03-6b7f-4761-be5d-d2871d1d3254) for more information.  
   
 ##  <a name="ccomptrbase__attach"></a>  CComPtrBase::Attach  
  Call this method to take ownership of an existing pointer.  
@@ -363,7 +363,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method calls [AtlSetChildSite](../Topic/AtlSetChildSite.md).  
+ This method calls [AtlSetChildSite](http://msdn.microsoft.com/library/2a8ece19-6bfd-4e89-9d1d-e5a78f95e2df).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

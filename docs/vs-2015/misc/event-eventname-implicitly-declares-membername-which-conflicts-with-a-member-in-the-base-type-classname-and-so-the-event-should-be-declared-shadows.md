@@ -23,7 +23,7 @@ manager: "wpickett"
 # Event &#39;&lt;eventname&gt;&#39; implicitly declares &#39;&lt;membername&gt;&#39;, which conflicts with a member in the base &lt;type&gt; &#39;&lt;classname&gt;&#39;, and so the event should be declared &#39;Shadows&#39;
 An event is declared with a name that combines to form an implicit member with the same name as a member of the base class. For example, if you declare an event named `Event1`, the compiler generates the implicit procedures `add_Event1` and `remove_Event1`. If the base class has a member with one of these names, the event in this class should shadow the base class member.  
   
- This message is a warning. `Shadows` is assumed by default. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ This message is a warning. `Shadows` is assumed by default. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40012  
   
@@ -34,6 +34,6 @@ An event is declared with a name that combines to form an implicit member with t
 2.  If you do not intend to hide the base class member, change the name of the event.  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)   
+ [Shadowing in Visual Basic](http://msdn.microsoft.com/library/54bb4c25-12c4-4181-b4a0-93546053964e)

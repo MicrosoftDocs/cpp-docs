@@ -34,7 +34,7 @@ This topic explains what can happen when the version of an assembly referenced a
   
  However, if the referenced assembly is changed and recompiled, and you do not recompile the referencing assembly that is dependent on it, the assemblies might not still be compatible. Optimization decisions that were valid at first might not be correct with respect to the new assembly version. Various runtime errors might occur due to these incompatibilities. There is no specific exception that will be produced in such cases. The way the failure is reported at runtime depends on the nature of the code change that caused the problem.  
   
- These errors should not be a problem in your final production code as long as the entire application is rebuilt for the released version of your product. Assemblies that are released to the public should be marked with an official version number, which will ensure that these problems are avoided. For more information, see [Assembly Versioning](../Topic/Assembly%20Versioning.md).  
+ These errors should not be a problem in your final production code as long as the entire application is rebuilt for the released version of your product. Assemblies that are released to the public should be marked with an official version number, which will ensure that these problems are avoided. For more information, see [Assembly Versioning](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903).  
   
 ### Diagnosing and fixing an incompatibility error  
   

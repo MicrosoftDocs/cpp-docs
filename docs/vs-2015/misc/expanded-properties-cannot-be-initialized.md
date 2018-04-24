@@ -62,6 +62,6 @@ End Class
 ```  
   
 ## See Also  
- [Auto-Implemented Properties](../Topic/Auto-Implemented%20Properties%20\(Visual%20Basic\).md)   
- [How to: Create a Property](../Topic/How%20to:%20Create%20a%20Property%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Auto-Implemented Properties](http://msdn.microsoft.com/library/5c669f0b-cf95-4b4e-ae84-9cc55212ca87)   
+ [How to: Create a Property](http://msdn.microsoft.com/library/4d229712-6be8-4c5c-bac5-06995ce9185a)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

@@ -49,5 +49,5 @@ class Test
 ```  
   
 ## See Also  
- [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)   
- [Statements, Expressions, and Operators](../Topic/Statements,%20Expressions,%20and%20Operators%20\(C%23%20Programming%20Guide\).md)
+ [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
+ [Statements, Expressions, and Operators](http://msdn.microsoft.com/library/20f8469d-5a6a-4084-ad90-0856b7e97e45)

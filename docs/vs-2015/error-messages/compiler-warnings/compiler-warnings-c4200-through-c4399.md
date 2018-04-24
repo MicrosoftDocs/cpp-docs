@@ -180,7 +180,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (level 1) C4346](../../error-messages/compiler-warnings/compiler-warning-level-1-c4346.md)|'name': dependent name is not a type|  
 |[Compiler Warning (level 1) C4348](../../error-messages/compiler-warnings/compiler-warning-level-1-c4348.md)|'type': redefinition of default parameter: parameter 'parameter_number'|  
 |[Compiler Warning (level 1) C4350](../../error-messages/compiler-warnings/compiler-warning-level-1-c4350.md)|behavior change: 'member1' called instead of 'member2'|  
-|[Compiler Warning (level 1) C4351](../Topic/Compiler%20Warning%20\(level%201\)%20C4351.md)|new behavior: elements of array 'array' will be default initialized|  
+|[Compiler Warning (level 1) C4351](http://msdn.microsoft.com/library/c2e0e34e-fc20-4812-9613-26c387356c92)|new behavior: elements of array 'array' will be default initialized|  
 |Compiler warning (level 1) C4352|'%$I': intrinsic function already defined|  
 |[Compiler Warning (level 1) C4353](../../error-messages/compiler-warnings/compiler-warning-level-1-c4353.md)|nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead|  
 |[Compiler Warning C4355](../../error-messages/compiler-warnings/compiler-warning-c4355.md)Compiler warning (level 1 and level 4) C4355|'this': used in base member initializer list|  

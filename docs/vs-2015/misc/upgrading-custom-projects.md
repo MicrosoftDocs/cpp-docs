@@ -119,4 +119,4 @@ If you change the information persisted in the project file between different Vi
 ## See Also  
  [Visual Studio Conversion Wizard](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Upgrading Project Items](../misc/upgrading-project-items.md)   
- [Projects](../Topic/Projects.md)
+ [Projects](http://msdn.microsoft.com/library/237742e4-a638-4d5b-a9b3-6a69d627763c)

@@ -42,5 +42,5 @@ A `TypeOf`...`Is` expression tests an object reference variable to a data type t
 -   Test the variable for a realistic data type, or remove the `TypeOf`...`Is` test altogether.  
   
 ## See Also  
- [TypeOf Operator](../Topic/TypeOf%20Operator%20\(Visual%20Basic\).md)   
- [How to: Determine What Type an Object Variable Refers To](../Topic/How%20to:%20Determine%20What%20Type%20an%20Object%20Variable%20Refers%20To%20\(Visual%20Basic\).md)
+ [TypeOf Operator](http://msdn.microsoft.com/library/33f65296-659a-4b9a-9a29-c2a91cff68b2)   
+ [How to: Determine What Type an Object Variable Refers To](http://msdn.microsoft.com/library/6f6a138d-58a4-40d1-9f4e-0a3c598eaf81)

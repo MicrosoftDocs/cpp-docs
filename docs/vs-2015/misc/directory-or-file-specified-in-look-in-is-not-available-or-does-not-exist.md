@@ -30,6 +30,6 @@ This error generally occurs when the path or file name specified in the Browse l
 2.  Navigate to the correct file or folder using the Browse list and **Available items** box.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)   
- [Find in Files](../Topic/Find%20in%20Files.md)
+ [Find in Files](http://msdn.microsoft.com/library/989e0737-46d7-4474-8453-fad52a74669d)

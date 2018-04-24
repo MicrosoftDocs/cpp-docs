@@ -25,5 +25,5 @@ A late-bound index `Get` or `Set` call has been attempted.
 1.  Ensure that the object has a default property with a `Get` or `Set`, depending on which you are trying to make.  
   
 ## See Also  
- [Get Statement](../Topic/Get%20Statement.md)   
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)   
+ [Set Statement](http://msdn.microsoft.com/library/9ecc27b4-df84-420d-9075-db25455fb3cd)

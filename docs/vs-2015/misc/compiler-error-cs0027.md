@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0027
 Keyword 'this' is not available in the current context  
   
- The [this](../Topic/this%20\(C%23%20Reference\).md) keyword was found outside of a property, method, or constructor.  
+ The [this](http://msdn.microsoft.com/library/d4f827fe-4710-410b-89b8-867dad44b8a3) keyword was found outside of a property, method, or constructor.  
   
  To fix this error, either modify the statement to eliminate use of the `this` keyword, and/or move part or all of the statement inside a property, method, or constructor.  
   

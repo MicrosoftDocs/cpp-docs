@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &#39;Of&#39; required when specifying type arguments for a generic type or method
-A statement attempts to construct a type from a generic type, or call a generic method, without using an [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md) clause.  
+A statement attempts to construct a type from a generic type, or call a generic method, without using an [Of](http://msdn.microsoft.com/library/0db8f65c-65af-4089-ab7f-6fcfecb60444) clause.  
   
  The [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] syntax for generic types calls for the type parameters and type arguments to be introduced by the `Of` keyword. In addition, the type parameter list or type argument list must be enclosed within parentheses.  
   
@@ -32,5 +32,5 @@ A statement attempts to construct a type from a generic type, or call a generic 
 -   Include the `Of` keyword at the beginning of the type argument list, and enclose the entire list within parentheses.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [How to: Use a Generic Class](http://msdn.microsoft.com/library/242dd2a6-86c4-4ce7-83f2-f2661803f752)

@@ -32,5 +32,5 @@ A constructor is declared with the `Overloads` keyword.
 -   Remove the `Overloads` keyword from all constructor declarations.  
   
 ## See Also  
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)

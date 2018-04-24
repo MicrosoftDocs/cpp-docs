@@ -91,7 +91,7 @@ _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
 &filename, &linenumber ) );  
 ```  
   
- For more information about how `_CrtIsMemoryBlock` can be used with other debug functions and macros, see [Macros for Reporting](../Topic/Macros%20for%20Reporting.md). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ For more information about how `_CrtIsMemoryBlock` can be used with other debug functions and macros, see [Macros for Reporting](http://msdn.microsoft.com/library/f2085314-a3a8-4caf-a5a4-2af9ad5aad05). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
 ## Requirements  
   
@@ -108,7 +108,7 @@ _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
  See the example for the [_CrtIsValidHeapPointer](../../c-runtime-library/reference/crtisvalidheappointer.md) topic.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

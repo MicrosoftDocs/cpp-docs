@@ -62,4 +62,4 @@ public class Test
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Extension Methods](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)

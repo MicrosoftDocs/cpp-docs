@@ -34,5 +34,5 @@ You have tried to access a property without assigning to it or using its value.
 -   Use the value of the property.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [Assignment Operators](../Topic/Assignment%20Operators%20\(Visual%20Basic\).md)
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)   
+ [Assignment Operators](http://msdn.microsoft.com/library/43b7e40c-b7af-45f6-b100-198a90f2561e)

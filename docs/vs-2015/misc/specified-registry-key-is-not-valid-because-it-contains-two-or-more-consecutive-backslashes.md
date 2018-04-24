@@ -23,5 +23,5 @@ A registry key specified with a path contains two or more consecutive backslashe
 -   Examine the registry key being specified to determine where and why the extra backslashes are being inserted.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [My.Computer.Registry Object](../Topic/My.Computer.Registry%20Object.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [My.Computer.Registry Object](http://msdn.microsoft.com/library/afd9edf9-ef9b-438b-a390-d71a02dc8203)

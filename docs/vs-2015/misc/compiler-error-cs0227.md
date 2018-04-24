@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0227
 Unsafe code may only appear if compiling with /unsafe  
   
- If source code contains the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword, then the [/unsafe](../Topic/-unsafe%20\(C%23%20Compiler%20Options\).md) compiler option must also be used. For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ If source code contains the [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) keyword, then the [/unsafe](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc) compiler option must also be used. For more information, see [Unsafe Code and Pointers](http://msdn.microsoft.com/library/b0fcca10-a92d-4f2a-835b-b0ccae6739ee).  
   
  To set the unsafe option in [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)], click on **Project** in the main menu, select the **Build** pane, and check the box that says "allow unsafe code."  
   
@@ -41,4 +41,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [C# Compiler Errors](../Topic/C%23%20Compiler%20Errors.md)
+ [C# Compiler Errors](http://msdn.microsoft.com/library/57262ab1-6c50-4f9c-81ad-9fba48477416)

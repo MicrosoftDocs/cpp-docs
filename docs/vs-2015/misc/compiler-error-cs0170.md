@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0170
 Use of possibly unassigned field 'field'  
   
- A field in a structure was used without first being initialized. To solve this problem, first determine which field was uninitialized and then initialize it before you try to access it. For more information about initializing structs, see [Structs](../Topic/Structs%20\(C%23%20Programming%20Guide\).md) and [Using Structs](../Topic/Using%20Structs%20\(C%23%20Programming%20Guide\).md).  
+ A field in a structure was used without first being initialized. To solve this problem, first determine which field was uninitialized and then initialize it before you try to access it. For more information about initializing structs, see [Structs](http://msdn.microsoft.com/library/b7cf4ff2-0eb7-4e5c-93d5-b2196b4f5d89) and [Using Structs](http://msdn.microsoft.com/library/cea4a459-9eb9-442b-8d08-490e0797ba38).  
   
  The following sample generates CS0170:  
   

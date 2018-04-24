@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1037
 Overloadable operator expected  
   
- When specifying a comment with [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md), the compiler encountered an invalid link.
+ When specifying a comment with [/doc](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a), the compiler encountered an invalid link.

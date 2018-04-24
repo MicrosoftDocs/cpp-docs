@@ -23,9 +23,9 @@ manager: "wpickett"
 # Function without an &#39;As&#39; clause; return type of Object assumed
 A `Function` procedure does not specify an `As` clause.  
   
- An `As` clause identifies a data type to be associated with a programming element. In a [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md), it specifies the data type of the value the `Function` procedure returns to the calling code. If you do not include an `As` clause in the `Function` statement, the return data type defaults to `Object`.  
+ An `As` clause identifies a data type to be associated with a programming element. In a [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9), it specifies the data type of the value the `Function` procedure returns to the calling code. If you do not include an `As` clause in the `Function` statement, the return data type defaults to `Object`.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42021  
   
@@ -34,4 +34,4 @@ A `Function` procedure does not specify an `As` clause.
 -   Include an `As` clause in the `Function` statement to specify the return data type.  
   
 ## See Also  
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)
+ [Function Procedures](http://msdn.microsoft.com/library/1b9f632c-553b-4cb6-920a-ded117ead8c0)

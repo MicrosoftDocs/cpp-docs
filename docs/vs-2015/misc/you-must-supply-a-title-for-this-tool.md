@@ -26,5 +26,5 @@ This error generally occurs when the **Title** field within the **External Tools
 1.  Enter a name for the new external tool in the **Title** text box.  
   
 ## See Also  
- [Managing External Tools](../Topic/Managing%20External%20Tools.md)   
+ [Managing External Tools](http://msdn.microsoft.com/library/f382fd40-a98f-4934-8c9a-5aeae881acde)   
  [Arguments for External Tools](../misc/arguments-for-external-tools.md)

@@ -25,7 +25,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Implementing a Property Page (ATL)](https://docs.microsoft.com/cpp/atl/example-implementing-a-property-page).  
   
   
-This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](../Topic/Common%20Environment%20Object%20Model%20Examples.md) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
+This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](http://msdn.microsoft.com/library/919cdb58-9f6d-45e6-a0f1-9ca8f6e7051f) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
   
  The example is based on the [ATLPages sample](../top/visual-cpp-samples.md).  
   
@@ -80,7 +80,7 @@ This example shows how to build a property page that displays (and allows you to
   
  [!code-cpp[NVC_ATL_Windowing#73](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/DocProperties.h#73)]  
   
- This code responds to changes made to the edit control or check box by calling [IPropertyPageImpl::SetDirty](../Topic/IPropertyPageImpl::SetDirty.md), which informs the page site that the page has changed. Typically the page site will respond by enabling or disabling an **Apply** button on the property page frame.  
+ This code responds to changes made to the edit control or check box by calling [IPropertyPageImpl::SetDirty](http://msdn.microsoft.com/library/a7510487-5db6-4940-be4e-e07b2ef4da8b), which informs the page site that the page has changed. Typically the page site will respond by enabling or disabling an **Apply** button on the property page frame.  
   
 > [!NOTE]
 >  In your own property pages, you might need to keep track of precisely which properties have been altered by the user so that you can avoid updating properties that haven't been changed. This example implements that code by keeping track of the original property values and comparing them with the current values from the UI when it's time to apply the changes.  
@@ -95,7 +95,7 @@ This example shows how to build a property page that displays (and allows you to
  [!code-cpp[NVC_ATL_Windowing#75](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/DocProperties.h#75)]  
   
 ##  <a name="vcconoverriding_ipropertypageimpl_setobjects"></a> Overriding IPropertyPageImpl::SetObjects  
- The first `IPropertyPageImpl` method that you need to override is [SetObjects](../Topic/IPropertyPageImpl::SetObjects.md). Here you'll add code to check that only a single object has been passed and that it supports the **Document** interface that you're expecting:  
+ The first `IPropertyPageImpl` method that you need to override is [SetObjects](http://msdn.microsoft.com/library/1ddb75b7-5944-4c55-bdb2-79c3e088f898). Here you'll add code to check that only a single object has been passed and that it supports the **Document** interface that you're expecting:  
   
  [!code-cpp[NVC_ATL_Windowing#76](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/DocProperties.h#76)]  
   
@@ -109,19 +109,19 @@ This example shows how to build a property page that displays (and allows you to
   
  [!code-cpp[NVC_ATL_Windowing#77](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/DocProperties.h#77)]  
   
- The base class implementation of the [Activate](../Topic/IPropertyPageImpl::Activate.md) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
+ The base class implementation of the [Activate](http://msdn.microsoft.com/library/e9486c5d-e70a-4801-9168-f6a0eb9dd813) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
   
  [!code-cpp[NVC_ATL_Windowing#78](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/DocProperties.h#78)]  
   
  This code uses the COM methods of the **Document** interface to get the properties that you're interested in. It then uses the Win32 API wrappers provided by [CDialogImpl](../atl/reference/cdialogimpl-class.md) and its base classes to display the property values to the user.  
   
 ##  <a name="vcconoverride_ipropertypageimpl_apply"></a> Overriding IPropertyPageImpl::Apply  
- When users want to apply their changes to the objects, the property page site will call the [Apply](../Topic/IPropertyPageImpl::Apply.md) method. This is the place to do the reverse of the code in **Activate** — whereas **Activate** took values from the object and pushed them into the controls on the property page, **Apply** takes values from the controls on the property page and pushes them into the object.  
+ When users want to apply their changes to the objects, the property page site will call the [Apply](http://msdn.microsoft.com/library/b7a0aff3-f7ee-401e-97ea-01a305fb1232) method. This is the place to do the reverse of the code in **Activate** — whereas **Activate** took values from the object and pushed them into the controls on the property page, **Apply** takes values from the controls on the property page and pushes them into the object.  
   
  [!code-cpp[NVC_ATL_Windowing#79](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_Windowing/Cpp/DocProperties.h#79)]  
   
 > [!NOTE]
->  The check against [m_bDirty](../Topic/IPropertyPageImpl::m_bDirty.md) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
+>  The check against [m_bDirty](http://msdn.microsoft.com/library/7d261929-9460-48db-a271-e51437edbbb8) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
   
 > [!NOTE]
 > **Document** exposes **FullName** as a read-only property. To update the file name of the document based on changes made to the property page, you have to use the **Save** method to save the file with a different name. Thus, the code in a property page doesn't have to limit itself to getting or setting properties.  

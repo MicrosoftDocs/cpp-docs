@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0196
 A pointer must be indexed by only one value  
   
- A pointer cannot have multiple indices. For more information, see [Pointer types](../Topic/Pointer%20types%20\(C%23%20Programming%20Guide\).md)  
+ A pointer cannot have multiple indices. For more information, see [Pointer types](http://msdn.microsoft.com/library/3319faf9-336d-4148-9af2-1da2579cdd1e)  
   
  The following sample generates CS0196:  
   

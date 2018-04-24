@@ -30,6 +30,6 @@ You have attempted to use a unary operator (`+`, `-`, or `Not`) on a type, such 
 -   Replace the unary operator with an appropriate operator for the expression.  
   
 ## See Also  
- [Operators and Expressions](../Topic/Operators%20and%20Expressions%20in%20Visual%20Basic.md)   
- [Efficient Combination of Operators](../Topic/Efficient%20Combination%20of%20Operators%20\(Visual%20Basic\).md)   
- [Operator Precedence in Visual Basic](../Topic/Operator%20Precedence%20in%20Visual%20Basic.md)
+ [Operators and Expressions](http://msdn.microsoft.com/library/b86f3131-94ee-448f-96cd-79611e028b26)   
+ [Efficient Combination of Operators](http://msdn.microsoft.com/library/bd22340e-b5be-458b-8772-3916c02309a4)   
+ [Operator Precedence in Visual Basic](http://msdn.microsoft.com/library/cbbdb282-f572-458e-a520-008a675f8063)

@@ -48,33 +48,33 @@ Many factors determine the set of persisted values, or state, of a [!INCLUDE[vsp
  [Support for State Persistence](../misc/support-for-state-persistence.md)  
  Lists common strategies for saving, restoring, and resetting the state of a VSPackage.  
   
- [Options and Options Pages](../Topic/Options%20and%20Options%20Pages.md)  
+ [Options and Options Pages](http://msdn.microsoft.com/library/e6c0e636-5ec3-450e-b395-fc4bb9d75918)  
  Introduces general and custom Options pages and explains how to implement them.  
   
- [Creating an Options Page](../Topic/Creating%20an%20Options%20Page.md)  
+ [Creating an Options Page](http://msdn.microsoft.com/library/9f4e210c-4b47-4daa-91fa-1c301c4587f9)  
  Explains how to create two Options pages, a simple page and a custom page.  
   
  [Support for Settings Categories](../misc/support-for-settings-categories.md)  
  Discusses user settings and how they are created and persisted.  
   
- [Creating a Settings Category](../Topic/Creating%20a%20Settings%20Category.md)  
+ [Creating a Settings Category](http://msdn.microsoft.com/library/97c88693-05ff-499e-8c43-352ee073dcb7)  
  Explains how to create a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] settings category and use it to save values to and restore values from a settings file.  
   
- [Extending Properties and the Property Window](../Topic/Extending%20Properties%20and%20the%20Property%20Window.md)  
+ [Extending Properties and the Property Window](http://msdn.microsoft.com/library/1e925025-3d21-4cdb-a917-78db7bb78fe9)  
  Explains how to display and change the value of an object in the **Properties** window.  
   
- [Exposing Properties to the Properties Window](../Topic/Exposing%20Properties%20to%20the%20Properties%20Window.md)  
+ [Exposing Properties to the Properties Window](http://msdn.microsoft.com/library/47f295b5-1ca5-4e7b-bb52-7b926b136622)  
  Explains how to expose the public properties of an object to the **Properties** window.  
   
- [Support for Project and Configuration Properties](../Topic/Support%20for%20Project%20and%20Configuration%20Properties.md)  
+ [Support for Project and Configuration Properties](http://msdn.microsoft.com/library/9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e)  
  Explains how to display and change project and configuration properties.  
   
- [Getting Project Properties](../Topic/Getting%20Project%20Properties.md)  
+ [Getting Project Properties](http://msdn.microsoft.com/library/96ba07ca-0811-4013-8602-12550ac4ba79)  
  Guides you through the steps of creating a managed VSPackage that displays project properties in a tool window.  
   
- [Using the Settings Store](../Topic/Using%20the%20Settings%20Store.md)  
+ [Using the Settings Store](http://msdn.microsoft.com/library/447ec08a-eca5-40b8-89b0-f98fdf3d39a4)  
  Explains the Settings Store persistence mechanism and how to use it.  
   
 ## Related Sections  
- [VSPackages](../Topic/VSPackages.md)  
+ [VSPackages](http://msdn.microsoft.com/library/cad0893a-9c5f-45b7-952a-e2294f83e324)  
  Provides a general orientation to topics that explain how to create and use VSPackages.

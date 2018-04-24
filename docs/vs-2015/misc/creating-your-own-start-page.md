@@ -63,7 +63,7 @@ You can create a custom Start Page either by using the Start Page Project Templa
   
      You should keep the .vsix and .pkgdef files for deployment purposes.  
   
- Alternatively, you can create a blank Start Page by creating a XAML file with the correct tag structure to be recognized by Visual Studio. You can then add markup and code-behind to get the desired appearance and functionality. For more information, see [Creating a Custom Start Page](../Topic/Creating%20a%20Custom%20Start%20Page.md).  
+ Alternatively, you can create a blank Start Page by creating a XAML file with the correct tag structure to be recognized by Visual Studio. You can then add markup and code-behind to get the desired appearance and functionality. For more information, see [Creating a Custom Start Page](http://msdn.microsoft.com/library/d67e0c53-9f5a-45fb-a929-b9d2125c3c82).  
   
 ## Testing and Applying the Custom Start Page  
  Do not set the primary instance to run the custom Start Page until you verify that it does not crash. When you have tested your custom Start Page, you can apply it to your system by repeating the last three steps of this procedure in the primary instance of Visual Studio.  
@@ -82,8 +82,8 @@ You can create a custom Start Page either by using the Start Page Project Templa
   
      The working Start Page is displayed. You must close the experimental instance, re-copy any changed files, and then re-open the experimental instance to see new changes.  
   
- You can share your custom Start Page by uploading the .vsix file from your bin\debug directory to the [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Web site, or to another Web site or intranet share. For more information, see [Deploying Custom Start Pages](../Topic/Deploying%20Custom%20Start%20Pages.md).  
+ You can share your custom Start Page by uploading the .vsix file from your bin\debug directory to the [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Web site, or to another Web site or intranet share. For more information, see [Deploying Custom Start Pages](http://msdn.microsoft.com/library/4a7eb360-de83-41d5-be53-3cfb160d19f9).  
   
 ## See Also  
- [Customizing the Start Page](../Topic/Customizing%20the%20Start%20Page%20for%20Visual%20Studio.md)   
- [Walkthrough: Adding Custom XAML to the Start Page](../Topic/Walkthrough:%20Adding%20Custom%20XAML%20to%20the%20Start%20Page.md)
+ [Customizing the Start Page](http://msdn.microsoft.com/library/925d42eb-ec34-426e-ad81-19db8630e536)   
+ [Walkthrough: Adding Custom XAML to the Start Page](http://msdn.microsoft.com/library/9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6)

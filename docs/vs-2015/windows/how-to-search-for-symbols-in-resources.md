@@ -33,7 +33,7 @@ To find symbols in resources
 2.  In the [Find Symbol dialog box](http://msdn.microsoft.com/en-us/63e93d9c-784f-418d-a76a-723da5ff5d96), in the **Find What** box, select a previous search string from the drop-down list or type the accelerator key you want to find (for example, ID_ACCEL1).  
   
     > [!TIP]
-    >  To use [regular expressions](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md) for your search, you must use the [Find in Files command](../Topic/Find%20Command.md) from the **Edit** menu instead of the **Find Symbol** command. To enable regular expressions, you must have the **Use: Regular Expressions** check box selected in the [Find dialog box](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600). Then you can click the right-arrow button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box.  
+    >  To use [regular expressions](http://msdn.microsoft.com/library/718a617d-0e05-47e1-a218-9746971527f4) for your search, you must use the [Find in Files command](http://msdn.microsoft.com/library/f0c705dc-2b97-423d-abbf-5584d4827208) from the **Edit** menu instead of the **Find Symbol** command. To enable regular expressions, you must have the **Use: Regular Expressions** check box selected in the [Find dialog box](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600). Then you can click the right-arrow button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box.  
   
 3.  Select any of the **Find** options.  
   
@@ -42,7 +42,7 @@ To find symbols in resources
     > [!NOTE]
     >  You cannot search for symbols in string, accelerator, or binary resources.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  **Requirements**  
   

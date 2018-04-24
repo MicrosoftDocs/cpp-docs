@@ -36,6 +36,6 @@ Dim anon = New With {.ID = 123456}
 -   Include an initialization list after `With`, enclosed in braces.  
   
 ## See Also  
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
  [NOT IN BUILD: Property Procedures vs. Fields](http://msdn.microsoft.com/en-us/da1c05c1-87c7-40fa-b92c-e9c7e4d170f7)   
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Anonymous Types](http://msdn.microsoft.com/library/7b87532c-4b3e-4398-8503-6ea9d67574a4)

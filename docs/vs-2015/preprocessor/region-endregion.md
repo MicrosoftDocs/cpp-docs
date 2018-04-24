@@ -33,7 +33,7 @@ manager: "ghogen"
 
 The latest version of this topic can be found at [region, endregion](https://docs.microsoft.com/cpp/preprocessor/region-endregion).  
   
-**#pragma region** lets you specify a block of code that you can expand or collapse when using the [outlining feature](../Topic/Outlining.md) of the Visual Studio Code Editor.  
+**#pragma region** lets you specify a block of code that you can expand or collapse when using the [outlining feature](http://msdn.microsoft.com/library/d1476758-9d35-4d74-b63c-310661932ecd) of the Visual Studio Code Editor.  
   
 ## Syntax  
   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1611
 The params parameter cannot be declared as ref or out  
   
- The keywords [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) cannot be used with the [params](../Topic/params%20\(C%23%20Reference\).md) keyword.  
+ The keywords [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) cannot be used with the [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) keyword.  
   
  The following sample generates CS1611:  
   

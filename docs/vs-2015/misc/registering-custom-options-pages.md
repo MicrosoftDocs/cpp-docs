@@ -66,7 +66,7 @@ For a **Tools Options** page to be available to users and support automation, it
 |Page|REG_SZ|GUID|The GUID of the object implementing the custom **Tools Options** page.<br /><br /> Implementations based on the managed package framework using <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> use the constructor's `pageType` argument containing the VSPackage's <xref:System.Type> and reflection to obtain this value.|  
 |Package|REG_SZ|GUID|Implementations based on the managed package framework using <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> use reflection to obtain this value.|  
 |ResourcePackage|REG_SZ|GUID|Optional.<br /><br /> A satellite DLL containing localized strings if the implementing VSPackage does not supply them.<br /><br /> The managed package framework uses reflection to obtain the correct resource DLL, so <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> does not set this argument.|  
-|NoShowAllView|REG_DWORD|0 or 1|Optional.<br /><br /> Indicates whether a given **Tools Options** page should appear in the complex (default) view of **Tools Options** pages. Supports programming environments, such as Visual Basic, which have special **Tools Options** pages to aggregate common settings to provide users with specialized simplified views of options.<br /><br /> If the REG_DWORD entry is non-zero, the **Tools Options** page does not appear in a complex view.<br /><br /> For more information, see [Options Dialog Box](../Topic/Options%20Dialog%20Box%20\(Visual%20Studio\).md).<br /><br /> Implementations based on the managed package framework can set this value by setting the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.NoShowAllView%2A> property to `true` in the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> constructor.|  
+|NoShowAllView|REG_DWORD|0 or 1|Optional.<br /><br /> Indicates whether a given **Tools Options** page should appear in the complex (default) view of **Tools Options** pages. Supports programming environments, such as Visual Basic, which have special **Tools Options** pages to aggregate common settings to provide users with specialized simplified views of options.<br /><br /> If the REG_DWORD entry is non-zero, the **Tools Options** page does not appear in a complex view.<br /><br /> For more information, see [Options Dialog Box](http://msdn.microsoft.com/library/02b09877-1df1-4531-a0d1-a4ca17c7f857).<br /><br /> Implementations based on the managed package framework can set this value by setting the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.NoShowAllView%2A> property to `true` in the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> constructor.|  
   
  A VSPackage or object based on a single interop assembly may implement more than one **Tools Options** page. Each implementation requires a new entry in HKLM\Software\Microsoft\VisualStudio\\*\<Version>*\ToolsOptionsPages.  
   
@@ -86,7 +86,7 @@ For a **Tools Options** page to be available to users and support automation, it
  The entry for registering a VSPackage as an automation provider is of the form HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Packages\\*\<PackageGUID>*\Automation, where *\<Version>* is the version of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (such as 8.0) and *\<PackageGUID>* is the GUID of the VSPackage implementing the automation object.  
   
 > [!NOTE]
->  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized. For more information, see [Command-Line Switches](../Topic/Command-Line%20Switches%20\(Visual%20Studio%20SDK\).md).  
+>  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized. For more information, see [Command-Line Switches](http://msdn.microsoft.com/library/0a22516f-f60e-4476-ac5b-f41e5ffaaf8b).  
   
  The structure of the registry entry is:  
   
@@ -109,7 +109,7 @@ For a **Tools Options** page to be available to users and support automation, it
  The registry entry is found in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\AutomationProperties, where *\<Version>* is the version of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], for example 8.0.  
   
 > [!NOTE]
->  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, for more information see, [Command-Line Switches](../Topic/Command-Line%20Switches%20\(Visual%20Studio%20SDK\).md).  
+>  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, for more information see, [Command-Line Switches](http://msdn.microsoft.com/library/0a22516f-f60e-4476-ac5b-f41e5ffaaf8b).  
   
  The structure of the registry entry is below:  
   
@@ -147,6 +147,6 @@ For a **Tools Options** page to be available to users and support automation, it
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)   
  [Using Options Pages](../misc/using-options-pages.md)   
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [How to: Create Custom Options Pages](../Topic/How%20to:%20Create%20Custom%20Options%20Pages.md)   
+ [How to: Create Custom Options Pages](http://msdn.microsoft.com/library/850b7335-2677-40d7-8604-27fcab93a589)   
  [Options Pages](../misc/options-pages.md)   
- [Automation Support for Options Pages](../Topic/Automation%20Support%20for%20Options%20Pages.md)
+ [Automation Support for Options Pages](http://msdn.microsoft.com/library/0b25b82c-7432-4e0a-9e84-350269ba8260)

@@ -30,6 +30,6 @@ You attempted to combine `Sub New` with `Handles`, which is invalid. Use the `Ha
 1.  Do not use `New` in this context.  
   
 ## See Also  
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)   
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)   
+ [WithEvents](http://msdn.microsoft.com/library/19d461f5-d72f-4de9-8c1d-0a6650316990)

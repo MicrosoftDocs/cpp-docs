@@ -30,11 +30,11 @@ An <xref:System.ArgumentOutOfRangeException> is thrown when a method is invoked 
  Arguments that are not null references must contain valid values.  
   
  **If you are working with a collection, make sure that the index is less than the size of the collection.**  
- The index must be within the size range of the collection and cannot exceed the size range or be less than zero. For more information, see [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md).  
+ The index must be within the size range of the collection and cannot exceed the size range or be less than zero. For more information, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
  **When using the overloaded two-argument FindString or FindStringExact methods of the ComboBox or ListBox class, check the startIndex parameter**.  
- This exception may be thrown if `startIndex` is equal to the index value of the last item of the associated list. To work around this, pass 0 as the `startIndex` parameter or use the one-argument `FindString` or `FindStringExact` method. For more information, see [CComboBox::FindString](../Topic/CComboBox::FindString.md) or [CListBox::FindString](../Topic/CListBox::FindString.md).  
+ This exception may be thrown if `startIndex` is equal to the index value of the last item of the associated list. To work around this, pass 0 as the `startIndex` parameter or use the one-argument `FindString` or `FindStringExact` method. For more information, see [CComboBox::FindString](http://msdn.microsoft.com/library/1568ca40-c990-4922-9bba-9532a6bc6610) or [CListBox::FindString](http://msdn.microsoft.com/library/8d9d2a00-e102-4097-8eed-dbe84dfe84ff).  
   
 ## See Also  
  <xref:System.ArgumentOutOfRangeException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

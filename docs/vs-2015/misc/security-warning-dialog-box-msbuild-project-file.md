@@ -40,5 +40,5 @@ The **Security Warning** dialog box warns developers about security issues with 
   
 ## See Also  
 [MSBuild](MSBuild1.md)  
- [MSBuild Reference](../Topic/MSBuild%20Reference.md)   
- [MSBuild Concepts](../Topic/MSBuild%20Concepts.md)
+ [MSBuild Reference](http://msdn.microsoft.com/library/093395e1-70da-4f74-b34d-046c5e2b32e8)   
+ [MSBuild Concepts](http://msdn.microsoft.com/library/083b8ba3-e4ad-45af-bb5d-3bc81d406131)

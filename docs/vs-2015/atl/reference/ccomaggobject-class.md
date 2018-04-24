@@ -216,9 +216,9 @@ STDMETHOD_(ULONG, Release)();
 ## See Also  
  [CComObject Class](../../atl/reference/ccomobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
- [DECLARE_AGGREGATABLE](../Topic/DECLARE_AGGREGATABLE.md)   
- [DECLARE_ONLY_AGGREGATABLE](../Topic/DECLARE_ONLY_AGGREGATABLE.md)   
- [DECLARE_NOT_AGGREGATABLE](../Topic/DECLARE_NOT_AGGREGATABLE.md)   
+ [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
+ [DECLARE_ONLY_AGGREGATABLE](http://msdn.microsoft.com/library/a54220df-4330-4e4d-b7fb-8b63dd62d337)   
+ [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
  [Class Overview](../../atl/atl-class-overview.md)
 
 

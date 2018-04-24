@@ -41,5 +41,5 @@ End Module
  **Error ID:** BC36604  
   
 ## See Also  
- [Early and Late Binding](../Topic/Early%20and%20Late%20Binding%20\(Visual%20Basic\).md)   
+ [Early and Late Binding](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724)   
  [NOT IN BUILD: Expression Trees in LINQ](http://msdn.microsoft.com/en-us/1a2e8e74-4bbc-45ab-9a46-2b6cfce3bcb2)

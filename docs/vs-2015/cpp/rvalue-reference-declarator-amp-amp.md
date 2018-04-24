@@ -133,7 +133,7 @@ T* factory(A1&& a1, A2&& a2)
 }  
 ```  
   
- This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../Topic/forward.md) function is to forward the parameters of the factory function to the constructor of the template class.  
+ This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](http://msdn.microsoft.com/library/29089bd6-b556-4eb7-8e74-5cdb8137930e) function is to forward the parameters of the factory function to the constructor of the template class.  
   
  The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.  
   
@@ -248,7 +248,7 @@ In g(MemoryBlock&&).
   
 -   **You can cast an lvalue to an rvalue reference.**  
   
- The STL [std::move](../Topic/move.md) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
+ The STL [std::move](http://msdn.microsoft.com/library/e6d5bd4f-b2fb-4826-9541-018fac5996dd) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
   
 ```  
 // cast-reference.cpp  
@@ -418,8 +418,8 @@ print_type_and_value<string&>(string& t)
  [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)   
  [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   
- [move](../Topic/move.md)   
- [forward](../Topic/forward.md)
+ [move](http://msdn.microsoft.com/library/e6d5bd4f-b2fb-4826-9541-018fac5996dd)   
+ [forward](http://msdn.microsoft.com/library/29089bd6-b556-4eb7-8e74-5cdb8137930e)
 
 
 

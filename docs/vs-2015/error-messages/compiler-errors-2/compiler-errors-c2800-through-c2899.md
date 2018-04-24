@@ -69,7 +69,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2825](../../error-messages/compiler-errors-2/compiler-error-c2825.md)  
   
- [Compiler Error C2826](../Topic/Compiler%20Error%20C2826.md)  
+ [Compiler Error C2826](http://msdn.microsoft.com/library/55862a2c-7b26-4e22-b514-1e02bb9530c0)  
   
  [Compiler Error C2827](../../error-messages/compiler-errors-2/compiler-error-c2827.md)  
   
@@ -131,7 +131,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2865](../../error-messages/compiler-errors-2/compiler-error-c2865.md)  
   
- [Compiler Error C2866](../Topic/Compiler%20Error%20C2866.md)  
+ [Compiler Error C2866](http://msdn.microsoft.com/library/f2c1e6b2-9d79-4723-9cae-4aed4ab102c0)  
   
  [Compiler Error C2867](../../error-messages/compiler-errors-2/compiler-error-c2867.md)  
   

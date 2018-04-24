@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1027
 \#endif directive expected  
   
- A matching `#endif` [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md) was not found for a specified `#if` directive. Or, the compiler may have found a `#endregion` directive when there was no matching `#region` directive inside a `#if` block.  
+ A matching `#endif` [preprocessor directive](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724) was not found for a specified `#if` directive. Or, the compiler may have found a `#endregion` directive when there was no matching `#region` directive inside a `#if` block.  
   
  The following sample generates CS1027:  
   

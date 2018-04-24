@@ -31,5 +31,5 @@ A programming element is defined in a project to which the current project does 
   
 ## See Also  
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [/reference (Visual Basic)](../Topic/-reference%20\(Visual%20Basic\).md)   
+ [/reference (Visual Basic)](http://msdn.microsoft.com/library/66bdfced-bbf6-43d1-a554-bc0990315737)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

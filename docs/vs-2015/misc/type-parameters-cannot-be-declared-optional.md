@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # &lt;type&gt; parameters cannot be declared &#39;Optional&#39;
-A definition of a delegate, event, or operator declares an [Optional](../Topic/Optional%20\(Visual%20Basic\).md) parameter.  
+A definition of a delegate, event, or operator declares an [Optional](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) parameter.  
   
  `Optional` parameters are allowed only on `Declare`, `Function`, `Property`, and `Sub` parameters.  
   
@@ -33,9 +33,9 @@ A definition of a delegate, event, or operator declares an [Optional](../Topic/O
   
 -   If you are defining an operator, you might be able to achieve the `Optional` functionality with a series of overloads.  
   
--   If you are defining a delegate or event, you must rework the overall logic of this part of your application. You cannot use `Optional` or [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md) parameters, or overloaded versions, on delegate or event parameters.  
+-   If you are defining a delegate or event, you must rework the overall logic of this part of your application. You cannot use `Optional` or [ParamArray](http://msdn.microsoft.com/library/a5f18789-92bd-488f-9c7e-cf3719963635) parameters, or overloaded versions, on delegate or event parameters.  
   
 ## See Also  
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)   
+ [Operator Procedures](http://msdn.microsoft.com/library/8c513d38-246b-4fb7-8b75-29e1364e555b)   
+ [Operator Statement](http://msdn.microsoft.com/library/b12ec4af-1ad7-4a17-865b-c5ee96320ae5)

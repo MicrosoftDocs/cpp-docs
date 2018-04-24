@@ -23,7 +23,7 @@ manager: "wpickett"
 # option &#39;&lt;option&gt;&#39; cannot be followed by &#39;+&#39; or &#39;-&#39;; ignored
 The compiler option was specified with the value `+` or `-`; these values are not supported.  
   
- For more information about the compiler options and the values they support, see [Visual Basic Compiler Options Listed Alphabetically](../Topic/Visual%20Basic%20Compiler%20Options%20Listed%20Alphabetically.md).  
+ For more information about the compiler options and the values they support, see [Visual Basic Compiler Options Listed Alphabetically](http://msdn.microsoft.com/library/e67febba-bacf-4e1f-a143-c141e063f90e).  
   
  **Error ID:** BC2028  
   
@@ -36,4 +36,4 @@ The compiler option was specified with the value `+` or `-`; these values are no
 -   Remove the compiler option.  
   
 ## See Also  
- [Visual Basic Compiler Options Listed Alphabetically](../Topic/Visual%20Basic%20Compiler%20Options%20Listed%20Alphabetically.md)
+ [Visual Basic Compiler Options Listed Alphabetically](http://msdn.microsoft.com/library/e67febba-bacf-4e1f-a143-c141e063f90e)

@@ -32,7 +32,7 @@ The item specified for the event argument to `AddHandler` or `RemoveHandler` is 
      [!code-vb[VbVbalrEventError#30](../snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#30)]  
   
 ## See Also  
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
+ [AddHandler Statement](http://msdn.microsoft.com/library/cfe69799-2a0f-42c0-a99e-09fed954da01)   
+ [RemoveHandler Statement](http://msdn.microsoft.com/library/647cd825-e877-4910-b4f1-8d168beebe6a)   
  [NOT IN BUILD:AddHandler and RemoveHandler](http://msdn.microsoft.com/en-us/a7a24bd2-519a-46fe-8a2c-2b9df2ca28ef)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

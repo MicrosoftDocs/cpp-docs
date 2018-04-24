@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1521
 Invalid base type  
   
- A [base](../Topic/base%20\(C%23%20Reference\).md) class specification was ill formed.  
+ A [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5) class specification was ill formed.  
   
  The following sample generates CS1521:  
   

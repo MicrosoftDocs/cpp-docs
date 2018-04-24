@@ -30,4 +30,4 @@ manager: "wpickett"
 -   Make sure that `SyncLock` block ends with a `End SyncLock` construct.  
   
 ## See Also  
- [SyncLock Statement](../Topic/SyncLock%20Statement.md)
+ [SyncLock Statement](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 1) CS3015
 'method signature' has no accessible constructors which use only CLS-compliant types  
   
- To be compliant with the Common Language Specification (CLS), the argument list of an attribute class cannot contain an array. For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ To be compliant with the Common Language Specification (CLS), the argument list of an attribute class cannot contain an array. For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6).  
   
 ## Example  
  The following sample generates C3015.  

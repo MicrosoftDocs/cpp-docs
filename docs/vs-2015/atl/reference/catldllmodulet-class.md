@@ -70,7 +70,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
  For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-module-classes.md).  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](http://msdn.microsoft.com/library/23af4915-ecdb-4ca6-9c89-7e01c3e762e7)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

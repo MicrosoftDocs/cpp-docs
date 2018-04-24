@@ -32,4 +32,4 @@ An `Exit Do` statement occurs outside of a `Do` loop. `Exit Do` is valid only be
 2.  Verify that other control structures within the `Do` loop are correctly terminated.  
   
 ## See Also  
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)
+ [Do...Loop Statement](http://msdn.microsoft.com/library/892f9096-b3e2-4aee-834d-83bc4e2c379d)

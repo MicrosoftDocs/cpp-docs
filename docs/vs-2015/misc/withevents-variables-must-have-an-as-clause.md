@@ -31,4 +31,4 @@ You did not supply an `As` clause with the keyword `WithEvents`. Declare the var
   
 ## See Also  
  [NOT IN BUILD:WithEvents and the Handles Clause](http://msdn.microsoft.com/en-us/072b9cf6-6298-46f1-849e-4edc1631564c)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)

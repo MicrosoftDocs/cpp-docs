@@ -30,5 +30,5 @@ A class cannot inherit from `System.Array`, `System.Delegate`, `System.Enum`, or
 -   Remove the `Inherits` statement or change it to inherit from a valid base class.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)   
- [Object Variable Declaration](../Topic/Object%20Variable%20Declaration%20\(Visual%20Basic\).md)
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [Object Variable Declaration](http://msdn.microsoft.com/library/2a5a41a3-1aa8-4236-b1f0-2382af7bf715)

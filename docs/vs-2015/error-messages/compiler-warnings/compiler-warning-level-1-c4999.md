@@ -29,5 +29,5 @@ The latest version of this topic can be found at [Compiler Warning (level 1) C49
   
 UNKNOWN WARNING From the Help menu choose the Technical Support command or open the Technical Support help file for more information  
   
- Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](../Topic/Talk%20to%20Us.md).
+ Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e).
 

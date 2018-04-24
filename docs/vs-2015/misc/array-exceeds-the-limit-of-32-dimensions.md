@@ -30,4 +30,4 @@ Arrays cannot have more than 32 dimensions.
 -   Reduce the number of dimensions in the declaration of the array.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

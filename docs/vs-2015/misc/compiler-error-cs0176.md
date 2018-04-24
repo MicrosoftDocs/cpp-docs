@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0176
 Static member 'member' cannot be accessed with an instance reference; qualify it with a type name instead  
   
- Only a class name can be used to qualify a [static](../Topic/static%20\(C%23%20Reference\).md) variable; an instance name cannot be a qualifier. For more information, see [Static Classes and Static Class Members](../Topic/Static%20Classes%20and%20Static%20Class%20Members%20\(C%23%20Programming%20Guide\).md).  
+ Only a class name can be used to qualify a [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf) variable; an instance name cannot be a qualifier. For more information, see [Static Classes and Static Class Members](http://msdn.microsoft.com/library/235614b5-1371-4dbd-9abd-b406a8b0298b).  
   
  The following sample generates CS0176:  
   

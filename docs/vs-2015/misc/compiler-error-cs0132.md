@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0132
 'constructor' : a static constructor must be parameterless  
   
- A [static](../Topic/static%20\(C%23%20Reference\).md) constructor cannot be declared with one or more parameters. For more information, see [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md).  
+ A [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf) constructor cannot be declared with one or more parameters. For more information, see [Constructors](http://msdn.microsoft.com/library/df2e2e9d-7998-418b-8e7d-890c17ff6c95).  
   
  The following sample generates CS0132:  
   

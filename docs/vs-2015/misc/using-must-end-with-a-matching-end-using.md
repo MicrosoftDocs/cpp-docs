@@ -34,5 +34,5 @@ A `Using` statement occurs without a corresponding `End Using` statement.
 2.  Add an `End Using` statement to the end of the `Using` block.  
   
 ## See Also  
- [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md)   
- [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)
+ [Using Statement](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)   
+ [How to: Dispose of a System Resource](http://msdn.microsoft.com/library/8be2b239-8090-419b-8e7e-bcaa75b0ecc8)

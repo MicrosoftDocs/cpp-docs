@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0529
 Inherited interface 'interface1' causes a cycle in the interface hierarchy of 'interface2'  
   
- The inheritance list for an [interface](../Topic/interface%20\(C%23%20Reference\).md) includes a direct or indirect reference to itself. An interface cannot inherit from itself.  
+ The inheritance list for an [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) includes a direct or indirect reference to itself. An interface cannot inherit from itself.  
   
  The following sample generates CS0529:  
   

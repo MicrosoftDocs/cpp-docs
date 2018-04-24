@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 4) CS0628
 'member' : new protected member declared in sealed class  
   
- A [sealed](../Topic/sealed%20\(C%23%20Reference\).md) class cannot introduce a [protected](../Topic/protected%20\(C%23%20Reference\).md) member because no other class will be able to inherit from the `sealed` class and use the `protected` member.  
+ A [sealed](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) class cannot introduce a [protected](http://msdn.microsoft.com/library/05ce3794-6675-4025-bddb-eaaa0ec22892) member because no other class will be able to inherit from the `sealed` class and use the `protected` member.  
   
  The following sample generates CS0628:  
   

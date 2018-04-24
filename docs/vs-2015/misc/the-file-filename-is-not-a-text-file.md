@@ -30,7 +30,7 @@ The specified file cannot be written to because it is a binary file.
 -   Check that you are supplying the correct file name and path.  
   
 ## See Also  
- [Writing to Files](../Topic/Writing%20to%20Files%20in%20Visual%20Basic.md)   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
+ [Writing to Files](http://msdn.microsoft.com/library/ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e)   
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
  [My.Computer.FileSystem.WriteAllText Method](http://msdn.microsoft.com/en-us/f507460c-87d9-4504-b74f-3ff825c7d5c4)   
  [My.Computer.FileSystem.WriteAllBytes Method](http://msdn.microsoft.com/en-us/b1a24dc1-eac8-4e22-8ffa-cc3bacbaf826)

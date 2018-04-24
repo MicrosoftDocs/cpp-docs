@@ -30,6 +30,6 @@ The version of the .NET Compact Framework you are working with does not support 
 -   Remove the modifier.  
   
 ## See Also  
- [Ansi](../Topic/Ansi%20\(Visual%20Basic\).md)   
- [Auto](../Topic/Auto%20\(Visual%20Basic\).md)   
- [Unicode](../Topic/Unicode%20\(Visual%20Basic\).md)
+ [Ansi](http://msdn.microsoft.com/library/4f1fa6ff-5557-41ab-b6da-90baf4c15917)   
+ [Auto](http://msdn.microsoft.com/library/bf79ba95-a62c-48a5-916f-0ac7a52c13ec)   
+ [Unicode](http://msdn.microsoft.com/library/0021d5ff-3209-444e-8497-420f3e6ee075)

@@ -25,5 +25,5 @@ The type of your array cannot be determined because it has been set to the value
 1.  Provide a value other than `Nothing` for the array.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)   
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)

@@ -26,7 +26,7 @@ A get or set accessor expected
   
  A method declaration was found in a property declaration. You can only declare `get` and `set` methods in a property.  
   
- For more information on properties, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information on properties, see [Using Properties](http://msdn.microsoft.com/library/f7f67b05-0983-4cdb-96af-1855d24c967c).  
   
 ## Example  
  The following sample generates CS1014.  

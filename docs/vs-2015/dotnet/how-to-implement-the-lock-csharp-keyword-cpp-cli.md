@@ -26,7 +26,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [How to: Implement the lock C# Keyword (C++/CLI)](https://docs.microsoft.com/cpp/dotnet/how-to-implement-the-lock-csharp-keyword-cpp-cli).  
   
   
-This topic shows how to implement the C# `lock` keyword in Visual C++. For more information, see [lock Statement](../Topic/lock%20Statement%20\(C%23%20Reference\).md).  
+This topic shows how to implement the C# `lock` keyword in Visual C++. For more information, see [lock Statement](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).  
   
  You can also use the `lock` class in the C++ Support Library. See [Synchronization (lock Class)](../dotnet/synchronization-lock-class.md) for more information.  
   

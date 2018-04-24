@@ -34,6 +34,6 @@ Option Strict On disallows operands of type Object for operator '\<operatorname>
 2.  Use the `Is` operator to compare for object identity.  
   
 ## See Also  
- [Comparison Operators](../Topic/Comparison%20Operators%20\(Visual%20Basic\).md)   
- [Is Operator](../Topic/Is%20Operator%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Comparison Operators](http://msdn.microsoft.com/library/d6cb12a8-e52e-46a7-8aaf-f804d634a825)   
+ [Is Operator](http://msdn.microsoft.com/library/8045a6c8-2a83-45b6-ad47-d09a704c656d)   
+ [Option Strict Statement](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)

@@ -39,7 +39,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `stable_sort`. For more information, see [stable_sort](../Topic/stable_sort.md).  
+ This function behaves the same as the STL function `stable_sort`. For more information, see [stable_sort](http://msdn.microsoft.com/library/5af850b2-7556-42a9-be78-0ba2557fe7f7).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

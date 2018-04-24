@@ -33,4 +33,4 @@ A <xref:System.IdentityModel.Selectors.PolicyValidationException> exception is t
   
 ## See Also  
  <xref:System.IdentityModel.Selectors.PolicyValidationException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

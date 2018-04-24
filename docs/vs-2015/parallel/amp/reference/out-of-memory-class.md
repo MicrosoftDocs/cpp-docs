@@ -38,7 +38,7 @@ class out_of_memory : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[out_of_memory::out_of_memory Constructor](../Topic/out_of_memory::out_of_memory%20Constructor.md)|Initializes a new instance of the `out_of_memory` class.|  
+|[out_of_memory::out_of_memory Constructor](http://msdn.microsoft.com/library/139eae79-378f-4fa6-b907-1eaef8d69744)|Initializes a new instance of the `out_of_memory` class.|  
   
 ## Inheritance Hierarchy  
  `exception`  

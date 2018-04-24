@@ -34,5 +34,5 @@ A `Continue Do` statement can only appear within a `Do...Loop` loop.
 3.  Otherwise, remove the `Continue Do` statement.  
   
 ## See Also  
- [Continue Statement](../Topic/Continue%20Statement%20\(Visual%20Basic\).md)   
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)
+ [Continue Statement](http://msdn.microsoft.com/library/3ad00103-358b-4af3-a3a8-1b9ea0e995d3)   
+ [Do...Loop Statement](http://msdn.microsoft.com/library/892f9096-b3e2-4aee-834d-83bc4e2c379d)

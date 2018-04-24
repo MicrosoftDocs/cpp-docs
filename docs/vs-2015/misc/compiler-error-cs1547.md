@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1547
 Keyword 'void' cannot be used in this context  
   
- The compiler detected an invalid use of the [void](../Topic/void%20\(C%23%20Reference\).md) keyword.  
+ The compiler detected an invalid use of the [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) keyword.  
   
  The following sample generates CS1547:  
   

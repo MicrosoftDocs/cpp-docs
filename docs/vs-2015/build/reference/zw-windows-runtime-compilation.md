@@ -56,7 +56,7 @@ Compiles source code to support [!INCLUDE[cppwrt](../../includes/cppwrt-md.md)] 
   
  Because the incremental linker does not support the Windows metadata included in .obj files by using the **/ZW** option, the [/Gm (Enable Minimal Rebuild)](../../build/reference/gm-enable-minimal-rebuild.md) option is incompatible with **/ZW**.  
   
- For more information, see [Visual C++ Language Reference](../Topic/Visual%20C++%20Language%20Reference%20\(C++-CX\).md).  
+ For more information, see [Visual C++ Language Reference](~/cppcx/visual-c-language-reference-c-cx.md).  
   
 ## Requirements  
   

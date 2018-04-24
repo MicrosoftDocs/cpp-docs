@@ -22,7 +22,7 @@ You can display an options page programmatically so that users of your package c
   
 ### To display a custom options page  
   
-1.  Create an options page. For more information, see [Creating Options Pages](../Topic/Creating%20Options%20Pages.md).  
+1.  Create an options page. For more information, see [Creating Options Pages](http://msdn.microsoft.com/library/1bf11fec-dece-4943-8053-6de1483c43eb).  
   
 2.  Get the <xref:System.Type> of the options page by applying the `typeof` keyword to the name of the class that defines the options page.  
   

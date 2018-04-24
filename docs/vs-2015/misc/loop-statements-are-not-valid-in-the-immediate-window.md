@@ -31,4 +31,4 @@ manager: "wpickett"
   
 ## See Also  
  [Loop - delete](http://msdn.microsoft.com/en-us/707e1afe-71d1-4ebd-83fd-3fa6a8e38e57)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

@@ -32,4 +32,4 @@ An attempt has been made to declare a file, but the file already exists with a d
 -   Delete the redundant file if it is not needed.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

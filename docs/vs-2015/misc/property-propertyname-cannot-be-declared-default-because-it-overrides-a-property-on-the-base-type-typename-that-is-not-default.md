@@ -30,4 +30,4 @@ You have attempted to declare a property `Default`, which is not a valid declara
 -   Remove the `Default` declaration.  
   
 ## See Also  
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

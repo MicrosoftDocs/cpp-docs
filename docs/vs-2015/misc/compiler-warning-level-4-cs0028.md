@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 4) CS0028
 'function declaration' has the wrong signature to be an entry point  
   
- The method declaration for `Main` was invalid: it was declared with an invalid signature. `Main` must be declared as static and it must return either [int](../Topic/int%20\(C%23%20Reference\).md) or [void](../Topic/void%20\(C%23%20Reference\).md). For more information, see [Main() and Command-Line Arguments](../Topic/Main\(\)%20and%20Command-Line%20Arguments%20\(C%23%20Programming%20Guide\).md).  
+ The method declaration for `Main` was invalid: it was declared with an invalid signature. `Main` must be declared as static and it must return either [int](http://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) or [void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4). For more information, see [Main() and Command-Line Arguments](http://msdn.microsoft.com/library/73a17231-cf96-44ea-aa8a-54807c6fb1f4).  
   
  The following sample generates CS0028:  
   

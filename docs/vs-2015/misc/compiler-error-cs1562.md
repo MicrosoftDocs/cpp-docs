@@ -26,4 +26,4 @@ Outputs without source must have the /out option specified
   
  The compilation could create an output file, but there was no source code file as input from which the name of the output file could be implied. For example, you may be trying to compile a metadata- or resource-only file.  
   
- Use the [/out](../Topic/-out%20\(C%23%20Compiler%20Options\).md) compiler option to specify the name of the output file.
+ Use the [/out](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) compiler option to specify the name of the output file.

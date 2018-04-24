@@ -71,7 +71,7 @@ Returns the block type/subtype associated with a given debug heap block pointer.
 ## Remarks  
  To extract the type and subtype returned by `_CrtReportBlockType`, use the macros **_BLOCK_TYPE** and **_BLOCK_SUBTYPE** (both defined in Crtdbg.h) on the return value.  
   
- For information about the allocation block types and how they are used, see [Types of Blocks on the Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md#BKMK_Types_of_blocks_on_the_debug_heap).  
+ For information about the allocation block types and how they are used, see [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/library/bf78ace6-28e4-4a04-97c6-39e0cdd00ba4).  
   
 ## Requirements  
   

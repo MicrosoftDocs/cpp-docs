@@ -32,4 +32,4 @@ An attempt has been made from inside a form to refer to that form as a default i
 -   Use `Me` to refer to the object.  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](http://msdn.microsoft.com/library/4da42a10-384d-44d7-b4dc-032202ff784b)

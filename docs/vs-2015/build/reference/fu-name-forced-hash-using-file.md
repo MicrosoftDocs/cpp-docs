@@ -48,7 +48,7 @@ A compiler option that you can use as an alternative to passing a file name to [
   
  If you are using [!INCLUDE[cppcli](../../includes/cppcli-md.md)] and are referencing metadata to use the [Friend Assemblies](../../dotnet/friend-assemblies-cpp.md) feature, you can't use **/FU**. You must reference the metadata in code by using `#using`—together with the `[as friend]` attribute. Friend assemblies are not supported in [!INCLUDE[cppwrt](../../includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../../includes/cppwrt-short-md.md)]).  
   
- For information about how to create an assembly or module for the common language runtime (CLR), see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). For information about how to build in [!INCLUDE[cppwrt_short](../../includes/cppwrt-short-md.md)], see [Building apps and libraries](../Topic/Building%20apps%20and%20libraries%20\(C++-CX\).md).  
+ For information about how to create an assembly or module for the common language runtime (CLR), see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). For information about how to build in [!INCLUDE[cppwrt_short](../../includes/cppwrt-short-md.md)], see [Building apps and libraries](~/cppcx/building-apps-and-libraries-c-cx.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

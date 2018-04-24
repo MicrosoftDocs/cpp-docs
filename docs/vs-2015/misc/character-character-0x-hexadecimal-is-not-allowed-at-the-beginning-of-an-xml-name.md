@@ -30,6 +30,6 @@ An unsupported character is included at the beginning of the name of an XML lite
 -   Remove the unsupported character from the beginning of the name of the XML literal or XML axis property.  
   
 ## See Also  
- [Names of Declared XML Elements and Attributes](../Topic/Names%20of%20Declared%20XML%20Elements%20and%20Attributes%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Names of Declared XML Elements and Attributes](http://msdn.microsoft.com/library/cc110118-b6cf-4ff9-a4e4-6233c90c9fbf)   
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

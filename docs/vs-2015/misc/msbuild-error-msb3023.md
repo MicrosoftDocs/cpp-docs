@@ -29,5 +29,5 @@ manager: "douge"
 -   Specify either `DestinationFiles`or`DestinationDirectory`for the `Copy` task.  
   
 ## See Also  
- [Copy Task](../Topic/Copy%20Task.md)   
- [Tasks](../Topic/MSBuild%20Tasks.md)
+ [Copy Task](http://msdn.microsoft.com/library/a46ba9da-3e4e-4890-b4ea-09a099b6bc40)   
+ [Tasks](http://msdn.microsoft.com/library/5d3cc4a7-e5db-4f73-b707-8b6882fddcf8)

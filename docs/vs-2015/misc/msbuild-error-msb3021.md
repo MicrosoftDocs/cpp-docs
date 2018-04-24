@@ -29,5 +29,5 @@ manager: "douge"
 -   Check to see if the target file is locked (in use) by another application. Be sure you have permission to read the source file and to write the target file to the target folder. If the destination file path is extremely long, you may need to copy to a different location.  
   
 ## See Also  
- [Copy Task](../Topic/Copy%20Task.md)   
- [Tasks](../Topic/MSBuild%20Tasks.md)
+ [Copy Task](http://msdn.microsoft.com/library/a46ba9da-3e4e-4890-b4ea-09a099b6bc40)   
+ [Tasks](http://msdn.microsoft.com/library/5d3cc4a7-e5db-4f73-b707-8b6882fddcf8)

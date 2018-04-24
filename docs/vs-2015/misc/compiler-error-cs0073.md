@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0073
 An add or remove accessor must have a body  
   
- An **add** or **remove** keyword in an [event](../Topic/event%20\(C%23%20Reference\).md) definition must have a body. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ An **add** or **remove** keyword in an [event](http://msdn.microsoft.com/library/7858fd85-153b-4259-85d0-6aa13c35f174) definition must have a body. For more information, see [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3).  
   
  The following sample generates CS0073:  
   

@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Base class &#39;&lt;baseclassname1&gt;&#39; specified for class &#39;&lt;partialclassname&gt;&#39; cannot be different from the base class &#39;&lt;baseclassname2&gt;&#39; of one of its other partial types
-A class is defined in two or more partial declarations, which contain more than one [Inherits Statement](../Topic/Inherits%20Statement.md) specifying more than one base class.  
+A class is defined in two or more partial declarations, which contain more than one [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2) specifying more than one base class.  
   
  When you divide the definition of a class among several partial declarations, the compiler treats the class as the union of all its partial declarations. This applies not only to the members but also to the implementation, inheritance, and access level.  
   
@@ -34,6 +34,6 @@ A class is defined in two or more partial declarations, which contain more than 
 -   Decide which class should be the base class of your partial class, and remove from its partial declarations any `Inherits` statement that specifies a different base class.  
   
 ## See Also  
- [Partial](../Topic/Partial%20\(Visual%20Basic\).md)   
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)   
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)   
+ [Inheritance Basics](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)

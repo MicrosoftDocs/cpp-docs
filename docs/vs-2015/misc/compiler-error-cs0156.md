@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS0156
 A throw statement with no arguments is not allowed in a finally clause that is nested inside the nearest enclosing catch clause  
   
- A [throw](../Topic/throw%20\(C%23%20Reference\).md) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
+ A [throw](http://msdn.microsoft.com/library/5ac4feef-4b1a-4c61-aeb4-61d549e5dd42) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
   
- For more information, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md) and [Exceptions and Exception Handling](../Topic/Exceptions%20and%20Exception%20Handling%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c) and [Exceptions and Exception Handling](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344).  
   
  The following sample generates CS0156:  
   

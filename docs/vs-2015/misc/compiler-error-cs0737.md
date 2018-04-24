@@ -28,7 +28,7 @@ manager: "wpickett"
   
 ### To correct this error  
   
-1.  Add the [public](../Topic/public%20\(C%23%20Reference\).md) access modifier to the method.  
+1.  Add the [public](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e) access modifier to the method.  
   
 ## Example  
  The following code generates CS0737:  
@@ -61,4 +61,4 @@ public class Test
 ```  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md)
+ [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)

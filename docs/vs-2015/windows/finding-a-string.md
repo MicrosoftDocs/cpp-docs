@@ -28,7 +28,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Finding a String](https://docs.microsoft.com/cpp/windows/finding-a-string).  
   
   
-You can search for one or more strings in the string table, and use [regular expressions](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.  
+You can search for one or more strings in the string table, and use [regular expressions](http://msdn.microsoft.com/library/718a617d-0e05-47e1-a218-9746971527f4) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.  
   
 ### To find a string in the string table  
   
@@ -48,7 +48,7 @@ You can search for one or more strings in the string table, and use [regular exp
     > [!TIP]
     >  To use regular expressions when searching files, use the **Find in Files** command. Type a regular expression to match a pattern or click the button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box. If you use regular expressions, be sure the **Use: Regular Expressions** check box is selected.  
   
- For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  **Requirements**  
   

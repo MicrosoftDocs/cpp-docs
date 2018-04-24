@@ -32,7 +32,7 @@ A type was specified that is not a delegate.
 2.  Specify a delegate with the `As` clause.  
   
 ## See Also  
- [Events](../Topic/Events%20\(Visual%20Basic\).md)   
- [Delegates](../Topic/Delegates%20\(Visual%20Basic\).md)   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)   
+ [Delegates](http://msdn.microsoft.com/library/410b60dc-5e60-4ec0-bfae-426755a2ee28)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)   
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)

@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS0076
 The enumerator name 'value__' is reserved and cannot be used  
   
- An item in an [enumeration](../Topic/enum%20\(C%23%20Reference\).md) cannot have an identifier called **value__**.
+ An item in an [enumeration](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c) cannot have an identifier called **value__**.

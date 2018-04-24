@@ -24,9 +24,9 @@ manager: "wpickett"
 # Compiler Error CS0061
 Inconsistent accessibility: base interface 'interface 1' is less accessible than interface 'interface 2'  
   
- A [public](../Topic/public%20\(C%23%20Reference\).md) construct must return a publicly accessible object.  
+ A [public](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e) construct must return a publicly accessible object.  
   
- Interface accessibility cannot be narrowed in a derived interface. For more information, see [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md) and [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+ Interface accessibility cannot be narrowed in a derived interface. For more information, see [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) and [Access Modifiers](http://msdn.microsoft.com/library/6e81ee82-224f-4a12-9baf-a0dca2656c5b).  
   
  The following sample generates CS0061.  
   

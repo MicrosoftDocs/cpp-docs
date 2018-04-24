@@ -32,5 +32,5 @@ A `Delegate` statement does not specify a `Sub` or `Function` procedure. The `Su
 2.  Specify a procedure name, argument list, and return type as appropriate.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)

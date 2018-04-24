@@ -42,10 +42,10 @@ Keywords are predefined, reserved identifiers that have special meanings. They c
   
 5.  On the **Tools** menu, click **Options**. In the **Options** dialog box, click **Environment**, then click **Fonts and Colors**, and then in the **Display items:** list, click **C/C++ User Keywords**.  
   
-6.  Set the font and color properties of your user-defined keywords as described in [Fonts and Colors, Environment, Options Dialog Box](../Topic/Fonts%20and%20Colors,%20Environment,%20Options%20Dialog%20Box.md).  
+6.  Set the font and color properties of your user-defined keywords as described in [Fonts and Colors, Environment, Options Dialog Box](http://msdn.microsoft.com/library/c767d302-51ed-47a8-a527-c07bce2aa485).  
   
  For more information, see [Keywords](../cpp/keywords-cpp.md).  
   
 ## See Also  
  [Running as a Member of the Users Group](../top/running-as-a-member-of-the-users-group.md)   
- [Default Keyboard Shortcuts](../Topic/Default%20Keyboard%20Shortcuts%20in%20Visual%20Studio.md)
+ [Default Keyboard Shortcuts](http://msdn.microsoft.com/library/c2c64648-00f8-4e48-a8a0-96c67cfd968c)

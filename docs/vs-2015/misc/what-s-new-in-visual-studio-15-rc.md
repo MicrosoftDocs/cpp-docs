@@ -24,7 +24,7 @@ This page highlights some of the most important features that are new in the rel
 ## Sign in across multiple accounts  
  With Visual Studio 2015, the new streamlined sign-in experience is designed to greatly simplify your access to online resources, even when you have multiple Visual Studio accounts. After you sign-in to Visual Studio, you are automatically signed in to all instances of Visual Studio 2015 and Blend on your machine. Signing in automatically starts roaming your settings for you. In Visual Studio 2015, your account is shared across features so, as long as you have a good token, you can access your Visual Studio Team Services account(s) from **Team Explorer**, and resources and websites from your Microsoft Azure subscription in Server Explorer. You’ll also see your Azure resources in the New Project Dialog for Application Insights projects, and you’ll see your Azure Mobile, Azure Storage, [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) and [Saleforce.com developer](https://developer.salesforce.com/) accounts in the new **Add a Connected Service** dialog.  
   
- You can work with multiple user accounts in Visual Studio by adding them as you go or through the new Account Manager. Then, you can switch between those accounts on the fly when connecting to services or accessing online resources. Visual Studio remembers the accounts you add so you can use them from any instance of Visual Studio or Blend. Visual Studio will also roam the list of accounts (though we won’t roam your valuable credentials) with your Personalization account so you can quickly start working with one of those accounts on another device. Of course, you can remove accounts from the Account Settings dialog at any time. To get started, see [Work with multiple user accounts](../Topic/Work%20with%20multiple%20user%20accounts.md).  
+ You can work with multiple user accounts in Visual Studio by adding them as you go or through the new Account Manager. Then, you can switch between those accounts on the fly when connecting to services or accessing online resources. Visual Studio remembers the accounts you add so you can use them from any instance of Visual Studio or Blend. Visual Studio will also roam the list of accounts (though we won’t roam your valuable credentials) with your Personalization account so you can quickly start working with one of those accounts on another device. Of course, you can remove accounts from the Account Settings dialog at any time. To get started, see [Work with multiple user accounts](http://msdn.microsoft.com/library/b73c865c-74e0-420e-89cc-43524f4aafd0).  
   
  ![Account Manager](../misc/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
@@ -34,10 +34,10 @@ This page highlights some of the most important features that are new in the rel
  And—of course—support for classic desktop applications is better than ever, with lots of improvements to languages, libraries, and tools.  
   
 ### Cross-platform mobile apps in C# with Xamarin for Visual Studio  
- Xamarin is a mobile framework that enables you to write code in C# that binds natively to iOS and Android APIs. Microsoft has partnered closely with Xamarin on their release of Xamarin for Visual Studio, an extension that enables you to develop for Android, iOS, and Windows Phone in a single solution with shared code. With Xamarin, you’ll use one  language and one code base with minimal deltas between the platforms.  Xamarin for Visual Studio is supported on Visual Studio 2010 and later. The starter edition of Xamarin is  is included in Visual Studio 2015. To get started, see [Build apps with native UI using Xamarin in Visual Studio](../Topic/Build%20apps%20with%20native%20UI%20using%20Xamarin%20in%20Visual%20Studio.md).  
+ Xamarin is a mobile framework that enables you to write code in C# that binds natively to iOS and Android APIs. Microsoft has partnered closely with Xamarin on their release of Xamarin for Visual Studio, an extension that enables you to develop for Android, iOS, and Windows Phone in a single solution with shared code. With Xamarin, you’ll use one  language and one code base with minimal deltas between the platforms.  Xamarin for Visual Studio is supported on Visual Studio 2010 and later. The starter edition of Xamarin is  is included in Visual Studio 2015. To get started, see [Build apps with native UI using Xamarin in Visual Studio](http://msdn.microsoft.com/library/30f137e6-595d-4ce7-b8f5-415b07c1caa2).  
   
 ### Cross-platform mobile apps in HTML/JavaScript with Apache Cordova  
- Visual Studio Tools for Apache Cordova is the result of close collaboration between Microsoft and the open source Apache Cordova community. The tools enable cross-platform mobile development using HTML, CSS, and JavaScript (or Typescript). You can target Android, iOS, and Windows with a single code base and enjoy the richness of the Visual Studio IDE including JavaScript IntelliSense, the DOM Explorer, JavaScript Console, breakpoints, watches, locals, Just My Code, and more.  With Visual Studio Tools for Apache Cordova, your apps have access to native device capabilities on all platforms through plugins that provide a common JavaScript API. To get started, see [Get Started with Visual Studio Tools for Apache Cordova](../Topic/Get%20Started%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova1.md).  
+ Visual Studio Tools for Apache Cordova is the result of close collaboration between Microsoft and the open source Apache Cordova community. The tools enable cross-platform mobile development using HTML, CSS, and JavaScript (or Typescript). You can target Android, iOS, and Windows with a single code base and enjoy the richness of the Visual Studio IDE including JavaScript IntelliSense, the DOM Explorer, JavaScript Console, breakpoints, watches, locals, Just My Code, and more.  With Visual Studio Tools for Apache Cordova, your apps have access to native device capabilities on all platforms through plugins that provide a common JavaScript API. To get started, see [Get Started with Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).  
   
 ### Cross-platform mobile games in C# with Unity  
  Unity is a widely-used platform for multiplatform 2D and 3D game development. You can write your game in C# and run it natively on Android, iOS, Windows Phone, and many other platforms. Visual Studio Tools for Unity is an extension that integrates Unity with the Visual Studio IDE. With this extension, you get all the features of the Visual Studio IDE and debugger, in addition to productivity features that are designed for Unity developers. Visual Studio Tools for Unity 2.0 Preview 2 adds support for Visual Studio 2015, in addition to a number of new features, such as better visualization for objects in the Locals and Watch windows. Microsoft has recently acquired SyntaxTree, the creators of Visual Studio Tools for Unity. To download Visual Studio Tools for Unity 2.0 Preview 2, and for more information about Visual Studio Tools for Unity, see [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu).  
@@ -71,7 +71,7 @@ This page highlights some of the most important features that are new in the rel
   
  The C# and Visual Basic languages both contain many smallish improvements in the core language and in IDE support. These improvements all add up to make your .NET coding experience even more intuitive, convenient, and productive.  
   
- For more information, see [What's New](../Topic/What's%20New%20in%20the%20.NET%20Framework.md) and the [.NET Blog](http://blogs.msdn.com/b/dotnet/).  
+ For more information, see [What's New](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) and the [.NET Blog](http://blogs.msdn.com/b/dotnet/).  
   
 #### C++  
  Visual C++ provides significant advances in C++11/14 language conformance, support for cross-platform mobile device development, support for resumable functions and await (currently planned for standardization in C++17), improvements and bug fixes in the C Runtime Library (CRT) and C++ standard library (STL) implementations, resizeable dialogs in MFC, new compiler optimizations, better build performance, new diagnostics capabilities and new productivity tools in the code editor.  
@@ -84,7 +84,7 @@ This page highlights some of the most important features that are new in the rel
  ![Device Preview menu](../misc/media/vs2015-device-preview.png "vs2015_device_preview")  
   
 ## Visual Studio Graphics Diagnostics  
- Since Visual Studio 2013, Visual Studio Graphics Diagnostics has added many new features, including Frame Analysis, Windows Phone support, shader edit & apply, and command line capture tools. It has also added support for debugging DirectX12 apps. For more information, see [Visual Studio Graphics Diagnostics](../Topic/Visual%20Studio%20Graphics%20Diagnostics.md).  
+ Since Visual Studio 2013, Visual Studio Graphics Diagnostics has added many new features, including Frame Analysis, Windows Phone support, shader edit & apply, and command line capture tools. It has also added support for debugging DirectX12 apps. For more information, see [Visual Studio Graphics Diagnostics](http://msdn.microsoft.com/library/fa69c550-62a7-41b5-bb1f-7eb04af1a6e8).  
   
 ## Connect to Services  
  Visual Studio 2015 makes it easier than ever to connect your app to services.  The new Add Connected Service wizard configures your project, adds the necessary authentication support, and downloads the necessary NuGet packages to get you started coding against your service quickly and painlessly. The Add Connected Service wizard also integrates with the new Account Manager to make it easy to work with multiple user accounts and subscriptions. In Visual Studio 2015, support for the following services is provided out of the box (assuming that you have an account):  
@@ -102,14 +102,14 @@ This page highlights some of the most important features that are new in the rel
  ![Add Connected Services Dialog](../misc/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## Design your UI  
- The Blend experience for designing XAML user interfaces has been significantly enhanced. Blend has been completely redesigned to provide a more intuitive UI, more powerful XAML editing capabilities including IntelliSense, and better integration with Visual Studio. For more information, see [Designing XAML in Visual Studio and Blend for Visual Studio](../Topic/Designing%20XAML%20in%20Visual%20Studio.md).  
+ The Blend experience for designing XAML user interfaces has been significantly enhanced. Blend has been completely redesigned to provide a more intuitive UI, more powerful XAML editing capabilities including IntelliSense, and better integration with Visual Studio. For more information, see [Designing XAML in Visual Studio and Blend for Visual Studio](http://msdn.microsoft.com/library/288e2415-9fcf-408e-bc35-9848315e14fd).  
   
 ## Cross-platform debugging support  
  You can use Visual Studio to create and debug native mobile apps that run on Windows, iOS, and Android devices. Use the [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), or connect a device and debug your code directly in Visual Studio.  
   
 -   **JavaScript / Cordova**. Use the [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) to build native apps for Windows, iOS, and Android with JavaScript.  
   
-     [Debug Your App](../Topic/Debug%20Your%20App%20Built%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md) in the MSDN Library is a detailed look at Visual Studio debugging support for Cordova.  
+     [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) in the MSDN Library is a detailed look at Visual Studio debugging support for Cordova.  
   
 -   **C# / Xamarin**. Use [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) to build native apps for Windows, iOS, and Android in Visual Studio with C#.  
   
@@ -118,9 +118,9 @@ This page highlights some of the most important features that are new in the rel
 -   **C++ / Android**. Use the [Visual C++ for Cross-Platform Mobile Development](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) templates along with third-party tools like the [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) to create native apps for Windows and Android.  
   
 ## Debugging and Diagnostics  
- For information about what’s new in debugging, see [What’s New for the Debugger in Visual Studio 2015](../Topic/What%E2%80%99s%20New%20for%20the%20Debugger%20in%20Visual%20Studio%202015.md).  
+ For information about what’s new in debugging, see [What’s New for the Debugger in Visual Studio 2015](http://msdn.microsoft.com/library/2aed9caa-2384-4e49-8595-82d8b06cf271).  
   
- For information about what’s new in diagnostics, see [What's New in Profiling Tools](../Topic/What's%20New%20in%20Profiling%20Tools.md).  
+ For information about what’s new in diagnostics, see [What's New in Profiling Tools](http://msdn.microsoft.com/library/d4736cc8-8961-4089-be9e-d5190ce8353c).  
   
  The following are new or improved tools that perform different types of diagnosis and analysis on your code:  
   
@@ -128,7 +128,7 @@ This page highlights some of the most important features that are new in the rel
  PerfTips display the execution time of methods during debugging, enabling you to quickly spot bottlenecks without having to invoke the profiler. To get started, see [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
 ### Error List  
- The error list now supports filtering on any column. It also shows a live view of errors, warnings, and code analysis across your entire C# or Visual Basic solution as you type, even when a code change produces thousands of warnings. The new Error List is back-compatible with existing usage. For more information, see [Error List Window](../Topic/Error%20List%20Window.md).  
+ The error list now supports filtering on any column. It also shows a live view of errors, warnings, and code analysis across your entire C# or Visual Basic solution as you type, even when a code change produces thousands of warnings. The new Error List is back-compatible with existing usage. For more information, see [Error List Window](http://msdn.microsoft.com/library/b7f6d45a-733b-4ad8-bc2f-737a37509e56).  
   
 ### GPU Usage Tool  
  The GPU Usage Tool helps you collect and analyze GPU usage data in DirectX apps and games and troubleshoot whether performance bottlenecks are originating in the CPU or GPU. To get started with the tool, see the [Visual C++ team blog post](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx).  
@@ -144,7 +144,7 @@ This page highlights some of the most important features that are new in the rel
  Visual Studio 2013 introduced Synchronized Settings for some of the most commonly configured settings such as Text Editor, Keybindings, Theme & Fonts & Colors, Startup, and Environment Aliases.  Visual Studio 2015 improves on this experience by synchronizing more of your settings and synchronizing settings across Visual Studio family of applications like Professional, Enterprise, Express SKUs, and Blend. When you sign into Visual Studio 2015 for the first time with the same account as you used in Visual Studio 2013, you will see your synchronized settings applied from Visual Studio 2013. You can access your settings by typing “sync” in **Quick Launch**, or navigating to **Tools > Options > Environment > Synchronized Settings**.  
   
 ### Automatic Extension Updates  
- Your installed Visual Studio extensions will now be automatically updated when a new version is available on the Visual Studio Gallery. See [Finding and Using Visual Studio Extensions](../Topic/Finding%20and%20Using%20Visual%20Studio%20Extensions.md) for details on how you can customize automatic extension updates.  
+ Your installed Visual Studio extensions will now be automatically updated when a new version is available on the Visual Studio Gallery. See [Finding and Using Visual Studio Extensions](http://msdn.microsoft.com/library/4ca92d93-31b9-47ef-8109-4a429d9e2ca3) for details on how you can customize automatic extension updates.  
   
 ### Title Case Menus  
  You spoke, we listened. Visual Studio menus are once again title-case by default. However if you happen to like the ALL CAPS style, you can set it on start up or in the **Tools > Options > General** property page:  
@@ -162,7 +162,7 @@ This page highlights some of the most important features that are new in the rel
  ![Visual Studio Custom Layout menu item](../misc/media/vs2015-customlayout.png "VS2015_CustomLayout")  
   
 ### Notification Hub  
- The UI for the notification hub has been streamlined to make it easier to scan quickly. Additional kinds of notifications have been added including performance issues, rendering issues, and crashes, and you can now tell Visual Studio to stop showing a notification. For more information, see [Visual Studio Notifications](../Topic/Visual%20Studio%20Notifications.md).  
+ The UI for the notification hub has been streamlined to make it easier to scan quickly. Additional kinds of notifications have been added including performance issues, rendering issues, and crashes, and you can now tell Visual Studio to stop showing a notification. For more information, see [Visual Studio Notifications](http://msdn.microsoft.com/library/cfbbc30a-bb61-42e6-b58e-b4ea9d33c440).  
   
 ### CodeLens: Find what happened to your code (Enterprise and Professional editions only)  
  Stay focused on your work while you find information about your code - without leaving the editor. You can review changes and other history for work items, bugs, code reviews, and so on for code that’s stored in Visual Studio Team Services (VSTS) or in Team Foundation Server (TFS).  
@@ -181,7 +181,7 @@ This page highlights some of the most important features that are new in the rel
   
 -   Find changes in other branches that affect your code.  
   
- See [CodeLens](../Topic/Find%20code%20changes%20and%20other%20history%20with%20CodeLens.md).  
+ See [CodeLens](http://msdn.microsoft.com/library/f697d7b4-704e-4cac-b13a-bc57d2ff8318).  
   
 ### Design and modeling tools (Enterprise edition only)  
  **Code maps and dependency graphs**  
@@ -214,7 +214,7 @@ This page highlights some of the most important features that are new in the rel
   
 -   **Create diagrams from the Class View and Object Browser**. Drag and drop files and assemblies into a new or an existing map from the Class View and Object Browser windows.  
   
- See [Map dependencies across your solutions](../Topic/Map%20dependencies%20across%20your%20solutions.md).  
+ See [Map dependencies across your solutions](http://msdn.microsoft.com/library/e04850a2-17c5-459b-93ec-6c74143b3292).  
   
  **Other design and modeling changes in this release:**  
   
@@ -225,7 +225,7 @@ This page highlights some of the most important features that are new in the rel
 -   **Architecture Explorer**. You can no longer use Architecture Explorer to create diagrams. But you can still use Solution Explorer.  
   
 ## Visual Studio Extensibility Tools  
- It’s never been easier to install the Visual Studio Extensibility Tools (VS SDK and templates) as they are now included as an optional component during setup.  The Extensibility Tools allow developers to write extensions to customize and add features to Visual Studio. For more information about Visual Studio extensibility, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md)  
+ It’s never been easier to install the Visual Studio Extensibility Tools (VS SDK and templates) as they are now included as an optional component during setup.  The Extensibility Tools allow developers to write extensions to customize and add features to Visual Studio. For more information about Visual Studio extensibility, see [Visual Studio SDK](http://msdn.microsoft.com/library/1f7c348a-114c-4243-b392-3531e9c9c6fd)  
   
  If you’d like to include the Extensibility Tools with your custom installation, you can find them under **Features / Common Tools / Visual Studio Extensibility Tools**.  You can also install the Extensibility Tools at a later time by opening the **New Project** dialog and selecting the **Install Visual Studio Extensibility Tools** item under **Visual C# / Extensibility**.  
   
@@ -242,24 +242,24 @@ This page highlights some of the most important features that are new in the rel
 ### Send a frown  
  Hearing where we need to make improvements in the product helps us to manage our backlog by focusing first on the things that are most important to our customers. If there is something that’s bugging you, tell us about it by using the **Send a Frown** feature from directly within the IDE. We’ve made this a super simple process too:  
   
- Click the yellow smiley face on the title bar, then click **Send a Frown**. Tell us what you did not like then click the Send a frown button. For more information, see [Talk to Us](../Topic/Talk%20to%20Us.md).  
+ Click the yellow smiley face on the title bar, then click **Send a Frown**. Tell us what you did not like then click the Send a frown button. For more information, see [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e).  
   
 ### Report crashes, hangs and performance issues  
  Sometimes, a quick note in a frown just isn’t enough to convey the full impact of something that you do not like. For the times when you have a hang, crash or performance issue, you can easily share repro steps, crash dumps and trace files by using the dialog that’s displayed after you send a frown.  
   
- First, send a frown as described above. On the dialog that pops up, you can tag your feedback with either one of the default tags or create your own tag. Tags help us route your feedback to the appropriate feature team. In the **Choose a category** drop down list, select the option that represents the issue you’re reporting then follow the steps to reproduce the issue. Detailed steps on how to use Visual Studio to report feedback are also available. For more information, see [Visual Studio Send a Smile Instructions](../Topic/Visual%20Studio%20Send%20a%20Smile%20Instructions.md).  
+ First, send a frown as described above. On the dialog that pops up, you can tag your feedback with either one of the default tags or create your own tag. Tags help us route your feedback to the appropriate feature team. In the **Choose a category** drop down list, select the option that represents the issue you’re reporting then follow the steps to reproduce the issue. Detailed steps on how to use Visual Studio to report feedback are also available. For more information, see [Visual Studio Send a Smile Instructions](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).  
   
 ### Track your issue in Connect  
  If you’d like to track the status of your Visual Studio 2015 feedback, go to [Connect](http://connect.microsoft.com/) and report the bug there. After reporting the bug, you’ll be able to return to Connect to track its status.  
   
 ## See Also  
- [Build cross-platform apps with Apache Cordova](../Topic/Build%20cross-platform%20apps%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md)   
- [Build apps with native UI using Xamarin in Visual Studio](../Topic/Build%20apps%20with%20native%20UI%20using%20Xamarin%20in%20Visual%20Studio.md)   
+ [Build cross-platform apps with Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)   
+ [Build apps with native UI using Xamarin in Visual Studio](http://msdn.microsoft.com/library/30f137e6-595d-4ce7-b8f5-415b07c1caa2)   
  [Build cross-platform mobile apps with Visual C++](../misc/build-cross-platform-mobile-apps-with-visual-cpp.md)   
- [Generate unit tests for your code with IntelliTest](../Topic/Generate%20unit%20tests%20for%20your%20code%20with%20IntelliTest.md)   
- [Work with multiple user accounts](../Topic/Work%20with%20multiple%20user%20accounts.md)   
+ [Generate unit tests for your code with IntelliTest](http://msdn.microsoft.com/library/cd9ff940-e948-4d28-a72c-b291ef5c1e90)   
+ [Work with multiple user accounts](http://msdn.microsoft.com/library/b73c865c-74e0-420e-89cc-43524f4aafd0)   
  [Create custom window layouts](../misc/create-custom-window-layouts.md)   
- [Perform quick actions with light bulbs](../Topic/Perform%20quick%20actions%20with%20light%20bulbs.md)   
+ [Perform quick actions with light bulbs](http://msdn.microsoft.com/library/990ee487-cf9a-4b89-9784-e7b47c220e8c)   
  [What's new for Application Lifecycle Management in Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
 
   

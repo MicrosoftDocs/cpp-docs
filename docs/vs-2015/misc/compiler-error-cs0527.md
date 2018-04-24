@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0527
 Type 'type' in interface list is not an interface  
   
- It is possible for a [struct](../Topic/struct%20\(C%23%20Reference\).md) or [interface](../Topic/interface%20\(C%23%20Reference\).md) to inherit from another interface but not from any other type.  
+ It is possible for a [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) or [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) to inherit from another interface but not from any other type.  
   
  The following sample generates CS0527:  
   

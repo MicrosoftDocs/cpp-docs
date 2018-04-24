@@ -30,7 +30,7 @@ An XML literal or XML axis property has been referenced in the **Watch** or **Im
 -   Start a new debugging session using the debug build of the assembly.  
   
 ## See Also  
- [Debugging Your Visual Basic Application](../Topic/Debugging%20Your%20Visual%20Basic%20Application.md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML Axis Properties](../Topic/XML%20Axis%20Properties%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Debugging Your Visual Basic Application](http://msdn.microsoft.com/library/904760b8-9fe9-42a7-9d65-d93774253219)   
+ [XML Literals](http://msdn.microsoft.com/library/16b28c40-8768-423f-bd9c-22ff10de2b54)   
+ [XML Axis Properties](http://msdn.microsoft.com/library/7e400e20-5d1e-4d22-a65c-9df79d5c1621)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

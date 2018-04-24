@@ -40,5 +40,5 @@ A statement attempts to convert one data type to another in a way that is not de
     ```  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)   
- [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)   
+ [How to: Initialize an Array Variable in Visual Basic](http://msdn.microsoft.com/library/aadd7a60-7ca4-4608-b986-091f19e7fc10)

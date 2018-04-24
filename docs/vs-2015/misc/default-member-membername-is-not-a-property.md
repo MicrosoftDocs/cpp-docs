@@ -30,4 +30,4 @@ You have tried to declare a member `Default`. However, the `Default` keyword is 
 -   Check to make sure you are identifying a property with `Default`, or else remove the `Default` keyword.  
   
 ## See Also  
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

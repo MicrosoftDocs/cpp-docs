@@ -69,7 +69,7 @@ This document provides an overview of the Concurrency Runtime. It describes the 
 ### Parallel Patterns Library  
  The Parallel Patterns Library (PPL) provides general-purpose containers and algorithms for performing fine-grained parallelism. The PPL enables *imperative data parallelism* by providing parallel algorithms that distribute computations on collections or on sets of data across computing resources. It also enables *task parallelism* by providing task objects that distribute multiple independent operations across computing resources.  
   
- Use the Parallel Patterns Library when you have a local computation that can benefit from parallel execution. For example, you can use the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm to transform an existing `for` loop to act in parallel.  
+ Use the Parallel Patterns Library when you have a local computation that can benefit from parallel execution. For example, you can use the [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) algorithm to transform an existing `for` loop to act in parallel.  
   
  For more information about the Parallel Patterns Library, see [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).  
   
@@ -99,7 +99,7 @@ This document provides an overview of the Concurrency Runtime. It describes the 
   
  Lambda expressions are an important new Visual C++ language feature because they provide a succinct way to define work functions for parallel processing. Function objects and function pointers enable you to use the Concurrency Runtime with your existing code. However, we recommend that you use lambda expressions when you write new code because of the safety and productivity benefits that they provide.  
   
- The following example compares the syntax of lambda functions, function objects, and function pointers in multiple calls to the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm. Each call to `parallel_for_each` uses a different technique to compute the square of each element in a [std::array](../../standard-library/array-class-stl.md) object.  
+ The following example compares the syntax of lambda functions, function objects, and function pointers in multiple calls to the [concurrency::parallel_for_each](http://msdn.microsoft.com/library/ff7ec2dd-63fd-4838-b202-225036b30f28) algorithm. Each call to `parallel_for_each` uses a different technique to compute the square of each element in a [std::array](../../standard-library/array-class-stl.md) object.  
   
  [!code-cpp[concrt-comparing-work-functions#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-comparing-work-functions/cpp/comparing-work-functions.cpp#1)]  
   

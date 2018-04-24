@@ -32,5 +32,5 @@ You attempted to override a delegate on the base class name that was declared wi
 2.  Do not try to override this method.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)   
+ [Declare Statement](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

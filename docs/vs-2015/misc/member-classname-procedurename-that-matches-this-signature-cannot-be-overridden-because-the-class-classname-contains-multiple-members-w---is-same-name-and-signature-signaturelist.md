@@ -52,6 +52,6 @@ End Class
 -   If you need to inherit the base class with the set of type arguments you are using, then do not override the procedure or property cited in this error message.  
   
 ## See Also  
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
+ [Overridable](http://msdn.microsoft.com/library/612581e7-8a4c-4a5d-beff-3402fffa6f35)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS2006
 Command-line syntax error: Missing 'text' for 'option' option  
   
- The syntax for *option* requires additional text. For information, see [Compiler Options](../Topic/C%23%20Compiler%20Options.md).
+ The syntax for *option* requires additional text. For information, see [Compiler Options](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44).

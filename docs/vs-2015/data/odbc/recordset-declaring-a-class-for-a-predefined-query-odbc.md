@@ -41,7 +41,7 @@ This topic applies to the MFC ODBC classes.
  The database classes do not support updating predefined queries. The difference between a snapshot predefined query and a dynaset predefined query is not updateability but whether changes made by other users (or other recordsets in your program) are visible in your recordset.  
   
 > [!TIP]
->  You do not need a recordset to call a predefined query that does not return records. Prepare the SQL statement as described below, but execute it by calling the `CDatabase` member function [ExecuteSQL](../Topic/CDatabase::ExecuteSQL.md).  
+>  You do not need a recordset to call a predefined query that does not return records. Prepare the SQL statement as described below, but execute it by calling the `CDatabase` member function [ExecuteSQL](http://msdn.microsoft.com/library/f019e896-136b-4e35-bb78-08f87dac2054).  
   
  You can create a single recordset class to manage calling a predefined query, but you must do some of the work yourself. The wizards do not support creating a class specifically for this purpose.  
   
@@ -53,7 +53,7 @@ This topic applies to the MFC ODBC classes.
   
      For example, if the query returns three columns each from two additional tables, add six field data members (of the appropriate data types) to the class.  
   
-3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) member function of the class, one corresponding to the data type of each added field data member.  
+3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](http://msdn.microsoft.com/library/197fb2fb-7752-4830-8188-589b4d4ce7e8) member function of the class, one corresponding to the data type of each added field data member.  
   
     ```  
     Immediately before these RFX calls, call <MSHelp:link keywords="_mfc_CFieldExchange.3a3a.SetFieldType" TABINDEX="0">SetFieldType</MSHelp:link>, as shown here:   
@@ -65,7 +65,7 @@ This topic applies to the MFC ODBC classes.
   
 4.  Manually add initializations for the new field data members in the recordset class constructor.  
   
-     You must also increment the initialization value for the [m_nFields](../Topic/CRecordset::m_nFields.md) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
+     You must also increment the initialization value for the [m_nFields](http://msdn.microsoft.com/library/ee7088af-bd8a-4984-81d3-897910d492b5) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
   
     ```  
     m_nFields += 6;  
@@ -126,7 +126,7 @@ CDelinquents::CDelinquents(CDatabase* pdb)
 }  
 ```  
   
- Note the initializations for [m_nFields](../Topic/CRecordset::m_nFields.md) and [m_nParams](../Topic/CRecordset::m_nParams.md). The wizard initializes `m_nFields`; you initialize `m_nParams`.  
+ Note the initializations for [m_nFields](http://msdn.microsoft.com/library/ee7088af-bd8a-4984-81d3-897910d492b5) and [m_nParams](http://msdn.microsoft.com/library/b49ec433-08de-47b5-a9c7-32c50a33b5a1). The wizard initializes `m_nFields`; you initialize `m_nParams`.  
   
  The next example shows the RFX functions in `CDelinquents::DoFieldExchange`:  
   
@@ -160,7 +160,7 @@ if( rsDel.Open( CRecordset::snapshot, strSQL ) )
  This code constructs a snapshot, passes it a parameter obtained earlier from the user, and calls the predefined query. When the query runs, it returns records for the specified sales district. Each record contains columns for the account number, customer's last name, and customer's phone number.  
   
 > [!TIP]
->  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../Topic/CFieldExchange::SetFieldType.md).  
+>  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](http://msdn.microsoft.com/library/3d9619e4-1ce0-4ca5-a5fe-5cbe0a0b0d19).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

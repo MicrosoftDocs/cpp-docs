@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0107
 More than one protection modifier  
   
- Only one access modifier ([public](../Topic/public%20\(C%23%20Reference\).md), [private](../Topic/private%20\(C%23%20Reference\).md), [protected](../Topic/protected%20\(C%23%20Reference\).md), or [internal](../Topic/internal%20\(C%23%20Reference\).md)) is allowed on a class member, with the exception of except **internal protected**.  
+ Only one access modifier ([public](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), [private](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), [protected](http://msdn.microsoft.com/library/05ce3794-6675-4025-bddb-eaaa0ec22892), or [internal](http://msdn.microsoft.com/library/6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461)) is allowed on a class member, with the exception of except **internal protected**.  
   
  The following sample generates CS0107:  
   

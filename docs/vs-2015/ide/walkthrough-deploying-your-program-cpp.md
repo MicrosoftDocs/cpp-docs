@@ -32,7 +32,7 @@ The latest version of this topic can be found at [Walkthrough: Deploying Your Pr
   
 Now that you've created your application by completing the earlier related walkthroughs, which are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), the last step is to create an installer so that other users can install the program on their computers. To do this, you'll add a new project to your existing solution. The output of this new project is a setup.exe file that will install your app on another computer.  
   
- This walkthrough shows how to use Windows Installer to deploy your application. You can also use ClickOnce to deploy an application. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md). For more information about deployment in general, see [Deploying Applications, Services, and Components](../Topic/Deploying%20Applications,%20Services,%20and%20Components.md).  
+ This walkthrough shows how to use Windows Installer to deploy your application. You can also use ClickOnce to deploy an application. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md). For more information about deployment in general, see [Deploying Applications, Services, and Components](http://msdn.microsoft.com/library/63fcdd5b-2e54-4210-9038-65bc23167725).  
   
 ## Prerequisites  
   

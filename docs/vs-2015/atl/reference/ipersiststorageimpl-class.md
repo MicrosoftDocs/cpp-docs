@@ -65,7 +65,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ## Remarks  
  `IPersistStorageImpl` implements the [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) interface, which allows a client to request that your object load and save its persistent data using a storage.  
   
- The implementation of this class requires class `T` to make an implementation of the `IPersistStreamInit` interface available via `QueryInterface`. Typically this means that class `T` should derive from [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), provide an entry for `IPersistStreamInit` in the [COM map](../Topic/BEGIN_COM_MAP.md), and use a [property map](../Topic/BEGIN_PROP_MAP.md) to describe the class's persistent data.  
+ The implementation of this class requires class `T` to make an implementation of the `IPersistStreamInit` interface available via `QueryInterface`. Typically this means that class `T` should derive from [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), provide an entry for `IPersistStreamInit` in the [COM map](http://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333), and use a [property map](http://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427) to describe the class's persistent data.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   

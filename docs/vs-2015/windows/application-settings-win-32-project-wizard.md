@@ -60,4 +60,4 @@ Use this page of the wizard to set options for the Win32 project.
   
 ## See Also  
  [Win32 Application Wizard](../windows/win32-application-wizard.md)   
- [How to: Create a Windows Desktop Application](../Topic/How%20to:%20Create%20a%20Windows%20Desktop%20Application.md)
+ [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)

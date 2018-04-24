@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1036
 ( or . expected  
   
- The XML in a [doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) comment was badly formed.
+ The XML in a [doc](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a) comment was badly formed.

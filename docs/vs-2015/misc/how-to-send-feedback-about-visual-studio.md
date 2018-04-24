@@ -22,4 +22,4 @@ ms.author: "mblome"
 manager: "douge"
 ---
 # How to: Send Feedback About Visual Studio
-This content has been removed. For information, see [Talk to Us](../Topic/Talk%20to%20Us.md).
+This content has been removed. For information, see [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e).

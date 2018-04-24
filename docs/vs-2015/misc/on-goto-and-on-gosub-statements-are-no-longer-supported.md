@@ -30,6 +30,6 @@ It is no longer valid to use the value of a variable or expression with the `GoT
 -   Restructure your application to use `If...Then...Else` or `Case` statements.  
   
 ## See Also  
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)   
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)   
+ [On Error Statement](http://msdn.microsoft.com/library/ff947930-fb84-40cf-bd66-1ea219561d5c)   
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)   
  [Case (Visual Basic)](http://msdn.microsoft.com/en-us/a14efce6-5057-4b7d-8afd-056dd4abdcee)

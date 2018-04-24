@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1949
 The contextual keyword 'var' cannot be used in a range variable declaration.  
   
- A range variable is implicitly typed by the compiler. There is no need to use [var](../Topic/var%20\(C%23%20Reference\).md) with a range variable.  
+ A range variable is implicitly typed by the compiler. There is no need to use [var](http://msdn.microsoft.com/library/0777850a-2691-4e3e-927f-0c850f5efe15) with a range variable.  
   
 ### To correct this error  
   
@@ -48,5 +48,5 @@ class Test
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)   
- [Introduction to LINQ Queries (C#)](../Topic/Introduction%20to%20LINQ%20Queries%20\(C%23\).md)
+ [LINQ Query Expressions](http://msdn.microsoft.com/library/40638f19-fb46-4d26-a2d9-a383b48f5ed4)   
+ [Introduction to LINQ Queries (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)

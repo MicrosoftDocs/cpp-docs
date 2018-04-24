@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1601
 Method or delegate parameter cannot be of type 'type'  
   
- Some types in the .NET Framework class library, for example, <xref:System.TypedReference>, <xref:System.RuntimeArgumentHandle> and <xref:System.ArgIterator> cannot be used as [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) parameters because they could potentially be used to perform unsafe operations.  
+ Some types in the .NET Framework class library, for example, <xref:System.TypedReference>, <xref:System.RuntimeArgumentHandle> and <xref:System.ArgIterator> cannot be used as [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameters because they could potentially be used to perform unsafe operations.  
   
  The following sample generates CS1601:  
   

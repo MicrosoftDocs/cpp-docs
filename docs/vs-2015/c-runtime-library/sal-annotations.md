@@ -70,7 +70,7 @@ The latest version of this topic can be found at [SAL Annotations](https://docs.
   
 If you examine the library header files, you may notice some unusual annotations, for example, `_In_z` and `_Out_z_cap_(_Size)`. These are examples of the Microsoft source-code annotation language (SAL), which provides a set of annotations to describe how a function uses its parameters, for example, the assumptions it makes about them and the guarantees it makes on finishing. The header file \<sal.h> defines the annotations.  
   
- For more information about using SAL annotations in Visual Studio, see [Using SAL Annotations to Reduce C/C++ Code Defects](../Topic/Using%20SAL%20Annotations%20to%20Reduce%20C-C++%20Code%20Defects.md).  
+ For more information about using SAL annotations in Visual Studio, see [Using SAL Annotations to Reduce C/C++ Code Defects](http://msdn.microsoft.com/library/a16e47d0-6f3e-4ed6-8883-459b2874e9a4).  
   
 ## See Also  
  [CRT Library Features](../c-runtime-library/crt-library-features.md)

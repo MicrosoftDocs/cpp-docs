@@ -33,4 +33,4 @@ An attempt was made to assign a value to a constant declared in an attribute.
   
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Constants and Enumerations](../Topic/Constants%20and%20Enumerations%20\(Visual%20Basic\).md)
+ [Constants and Enumerations](http://msdn.microsoft.com/library/309c0ad5-83e4-4f96-99ea-83cd95107417)

@@ -33,7 +33,7 @@ manager: "douge"
   
 -   Generate an external UAC manifest (app.manifest) that specifies that the application run as the current user (`asInvoker`).  
   
-     In Visual C# projects, go to the **Application** page of the Project Designer and click **Properties\app.manifest** in the **Manifest** list. For more information, see [Application Page, Project Designer (C#)](../Topic/Application%20Page,%20Project%20Designer%20\(C%23\).md).  
+     In Visual C# projects, go to the **Application** page of the Project Designer and click **Properties\app.manifest** in the **Manifest** list. For more information, see [Application Page, Project Designer (C#)](http://msdn.microsoft.com/library/f13701a8-4e2e-4474-9d60-bb43decbe0c1).  
   
      In Visual Basic projects, go to the **Application** page of the Project Designer and click the **View UAC Settings** button. This opens app.manifest for editing. Edit the following tag in the manifest to read as follows:  
   
@@ -41,11 +41,11 @@ manager: "douge"
     <requestedExecutionLevel level="asInvoker" />  
     ```  
   
-     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+     For more information, see [Application Page, Project Designer (Visual Basic)](http://msdn.microsoft.com/library/8cec9fea-cd92-47ff-88dd-7c928f0b4a74).  
   
--   For more information about how to generate a UAC manifest and specify the execution level, see [ClickOnce Deployment on Windows Vista](../Topic/ClickOnce%20Deployment%20on%20Windows%20Vista.md).  
+-   For more information about how to generate a UAC manifest and specify the execution level, see [ClickOnce Deployment on Windows Vista](http://msdn.microsoft.com/library/b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2).  
   
 ## See Also  
- [Application Page, Project Designer (C#)](../Topic/Application%20Page,%20Project%20Designer%20\(C%23\).md)   
- [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md)   
- [ClickOnce Deployment on Windows Vista](../Topic/ClickOnce%20Deployment%20on%20Windows%20Vista.md)
+ [Application Page, Project Designer (C#)](http://msdn.microsoft.com/library/f13701a8-4e2e-4474-9d60-bb43decbe0c1)   
+ [Application Page, Project Designer (Visual Basic)](http://msdn.microsoft.com/library/8cec9fea-cd92-47ff-88dd-7c928f0b4a74)   
+ [ClickOnce Deployment on Windows Vista](http://msdn.microsoft.com/library/b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2)

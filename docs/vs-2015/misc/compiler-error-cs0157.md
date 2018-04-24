@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0157
 Control cannot leave the body of a finally clause  
   
- All of the statements in a [finally](../Topic/try-catch-finally%20\(C%23%20Reference\).md) clause must execute. For more information, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md) and [Exceptions and Exception Handling](../Topic/Exceptions%20and%20Exception%20Handling%20\(C%23%20Programming%20Guide\).md).  
+ All of the statements in a [finally](http://msdn.microsoft.com/library/a1b443b0-ff7a-43ab-b835-0cc9bfbd15ca) clause must execute. For more information, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c) and [Exceptions and Exception Handling](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344).  
   
  The following sample generates CS0157:  
   

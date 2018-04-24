@@ -159,7 +159,7 @@ for (int i = 0; i < 4; i++) {
 ## See Also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)   
  [C++ AMP Overview](../parallel/amp/cpp-amp-overview.md)   
- [parallel_for_each Function (C++ AMP)](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md)   
+ [parallel_for_each Function (C++ AMP)](http://msdn.microsoft.com/library/449013a2-5f16-4280-ac1a-0d850f7d5160)   
  [Walkthrough: Matrix Multiplication](../parallel/amp/walkthrough-matrix-multiplication.md)
 
 

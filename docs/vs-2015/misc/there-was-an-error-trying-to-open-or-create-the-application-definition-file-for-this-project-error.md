@@ -27,6 +27,6 @@ This error occurs when you try to open the application definition file, but it i
 -   Re-create the application definition file.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)   
+ [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48)   
  [The application definition file is already opened in an incompatible editor](../misc/the-application-definition-file-is-already-opened-in-an-incompatible-editor.md)   
  [An error occurred trying to create the application events file. '\<error>'](../misc/an-error-occurred-trying-to-create-the-application-events-file-error.md)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0205
 Cannot call an abstract base member: 'method'  
   
- You cannot call an [abstract](../Topic/abstract%20\(C%23%20Reference\).md) method because it does not have a method body. For more information, see [Abstract and Sealed Classes and Class Members](../Topic/Abstract%20and%20Sealed%20Classes%20and%20Class%20Members%20\(C%23%20Programming%20Guide\).md).  
+ You cannot call an [abstract](http://msdn.microsoft.com/library/b0797770-c1f3-4b4d-9441-b9122602a6bb) method because it does not have a method body. For more information, see [Abstract and Sealed Classes and Class Members](http://msdn.microsoft.com/library/99aa52f7-b435-43f9-936e-2470af734c4e).  
   
  The following sample generates CS0205:  
   

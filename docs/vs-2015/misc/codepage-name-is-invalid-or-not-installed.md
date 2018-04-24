@@ -30,4 +30,4 @@ The specified codepage is not valid or cannot be found.
 -   Examine your code and determine the solution that is appropriate to your specific case  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](http://msdn.microsoft.com/library/4da42a10-384d-44d7-b4dc-032202ff784b)

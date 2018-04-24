@@ -30,5 +30,5 @@ manager: "wpickett"
 -   Remove `With` statements from debugging code.  
   
 ## See Also  
- [With...End With Statement](../Topic/With...End%20With%20Statement%20\(Visual%20Basic\).md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [With...End With Statement](http://msdn.microsoft.com/library/340d5fbb-4f43-48ec-a024-80843c137817)   
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

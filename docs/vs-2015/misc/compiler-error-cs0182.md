@@ -26,15 +26,15 @@ An attribute argument must be a constant expression, typeof expression or array 
   
  Certain restrictions apply to what kinds of arguments may be used with attributes. Note that in addition to the restrictions specified in the error message, the following types are NOT allowed as attribute arguments:  
   
--   [sbyte](../Topic/sbyte%20\(C%23%20Reference\).md)  
+-   [sbyte](http://msdn.microsoft.com/library/1a9c7b48-73d1-4d33-b485-c4faf0a816bc)  
   
--   [ushort](../Topic/ushort%20\(C%23%20Reference\).md)  
+-   [ushort](http://msdn.microsoft.com/library/1a7dbaae-b7a0-4111-872a-c88a6d3981ac)  
   
--   [uint](../Topic/uint%20\(C%23%20Reference\).md)  
+-   [uint](http://msdn.microsoft.com/library/e93e42c6-ec72-4b0b-89df-2fd8d36f7a7b)  
   
--   [ulong](../Topic/ulong%20\(C%23%20Reference\).md)  
+-   [ulong](http://msdn.microsoft.com/library/f2ece624-837a-40cf-92c5-343e7f33397c)  
   
--   [decimal](../Topic/decimal%20\(C%23%20Reference\).md)  
+-   [decimal](http://msdn.microsoft.com/library/b6522132-b5ee-4be3-ad13-3adfdb7de7a1)  
   
  For more information, see [NOT IN BUILD: Global Attributes (C# Programming Guide)](http://msdn.microsoft.com/en-us/7c6c41f8-f0d5-4345-8987-3d91f9bae136).  
   

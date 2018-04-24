@@ -78,5 +78,5 @@ End Module
   
 ## See Also  
  <xref:System.IndexOutOfRangeException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

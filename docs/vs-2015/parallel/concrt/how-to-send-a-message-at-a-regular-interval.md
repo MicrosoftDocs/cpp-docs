@@ -26,7 +26,7 @@ manager: "ghogen"
 This example shows how to use the concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) to send a message at a regular interval.  
   
 ## Example  
- The following example uses a `timer` object to report progress during a lengthy operation. This example links the `timer` object to a [concurrency::call](../../parallel/concrt/reference/call-class.md) object. The `call` object prints a progress indicator to the console at a regular interval. The [concurrency::timer::start](../Topic/timer::start%20Method.md) method runs the timer on a separate context. The `perform_lengthy_operation` function calls the [concurrency::wait](../Topic/wait%20Function.md) function on the main context to simulate a time-consuming operation.  
+ The following example uses a `timer` object to report progress during a lengthy operation. This example links the `timer` object to a [concurrency::call](../../parallel/concrt/reference/call-class.md) object. The `call` object prints a progress indicator to the console at a regular interval. The [concurrency::timer::start](http://msdn.microsoft.com/library/127e5cb4-6d78-472f-8518-b364ab496499) method runs the timer on a separate context. The `perform_lengthy_operation` function calls the [concurrency::wait](http://msdn.microsoft.com/library/a8a326d1-854d-4462-b705-36d3a2a6fb2b) function on the main context to simulate a time-consuming operation.  
   
  [!code-cpp[concrt-report-progress#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-report-progress/cpp/report-progress.cpp#1)]  
   

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0617
 'reference' is not a valid named attribute argument because it is not a valid attribute parameter type  
   
- An attempt was made to access a [private](../Topic/private%20\(C%23%20Reference\).md) member of an attribute class.  
+ An attempt was made to access a [private](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8) member of an attribute class.  
   
 ## Example  
  The following sample generates CS0617.  

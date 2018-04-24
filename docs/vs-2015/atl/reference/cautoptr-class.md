@@ -66,7 +66,7 @@ class CAutoPtr
 |----------|-----------------|  
 |[CAutoPtr::operator T*](#cautoptr__operator_t_star)|The cast operator.|  
 |[CAutoPtr::operator =](#cautoptr__operator__eq)|The assignment operator.|  
-|[CAutoPtr::operator ->](../Topic/CAutoPtr::operator%20-%3E.md)|The pointer-to-member operator.|  
+|[CAutoPtr::operator ->](http://msdn.microsoft.com/library/ec818fcb-166e-4f53-a961-b17774a05f6f)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   

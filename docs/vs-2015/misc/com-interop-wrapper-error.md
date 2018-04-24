@@ -21,7 +21,7 @@ ms.author: "mblome"
 manager: "douge"
 ---
 # COM Interop Wrapper Error
-This message box is displayed when the project system could not create a COM interop wrapper for a particular component.  COM interop wrappers are required by the common language runtime (CLR) to manage and communicate with COM components.  For more information, see [COM Interoperability in Visual Basic and Visual C#](../Topic/COM%20Interoperability%20in%20.NET%20Framework%20Applications%20\(Visual%20Basic\).md).  
+This message box is displayed when the project system could not create a COM interop wrapper for a particular component.  COM interop wrappers are required by the common language runtime (CLR) to manage and communicate with COM components.  For more information, see [COM Interoperability in Visual Basic and Visual C#](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
   
  Common causes for the failure include:  
   
@@ -39,7 +39,7 @@ This message box is displayed when the project system could not create a COM int
   
 ## See Also  
  [Component Model Namespaces in Visual Studio](http://msdn.microsoft.com/en-us/705d0add-0707-44ba-a6de-637381d9c937)   
- [Component Authoring](../Topic/Component%20Authoring.md)   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
- [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)   
- [COM Interoperability in .NET Framework Applications](../Topic/COM%20Interoperability%20in%20.NET%20Framework%20Applications%20\(Visual%20Basic\).md)
+ [Component Authoring](http://msdn.microsoft.com/library/4a5a5e49-0378-4a31-83bc-24da0f1a727d)   
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [Common Language Runtime](http://msdn.microsoft.com/library/059a624e-f7db-4134-ba9f-08b676050482)   
+ [COM Interoperability in .NET Framework Applications](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)

@@ -32,4 +32,4 @@ A procedure is declared with parameters or a return type that cannot be represen
 -   Develop a new type that describes the data used by this procedure.  
   
 ## See Also  
- [Data Types](../Topic/Data%20Type%20Summary%20\(Visual%20Basic\).md)
+ [Data Types](http://msdn.microsoft.com/library/e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0)

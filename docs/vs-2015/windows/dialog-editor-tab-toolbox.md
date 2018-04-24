@@ -34,7 +34,7 @@ The latest version of this topic can be found at [Dialog Editor Tab, Toolbox](ht
 The latest version of this topic can be found at [Dialog Editor Tab, Toolbox](https://docs.microsoft.com/cpp/windows/dialog-editor-tab-toolbox).  
   
   
-The Dialog Editor tab appears in the [Toolbox window](../Topic/Toolbox.md) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](../mfc/adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
+The Dialog Editor tab appears in the [Toolbox window](http://msdn.microsoft.com/library/b754dad3-1f32-464f-8b9f-065e17e0bc22) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](../mfc/adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
   
  The standard controls available in the Toolbox are:  
   
@@ -96,7 +96,7 @@ The Dialog Editor tab appears in the [Toolbox window](../Topic/Toolbox.md) when 
   
  For more information on using the RichEdit 1.0 control with MFC, see [Using the RichEdit 1.0 Control with MFC](../mfc/using-the-richedit-1-0-control-with-mfc.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ## Requirements  
  Win32  

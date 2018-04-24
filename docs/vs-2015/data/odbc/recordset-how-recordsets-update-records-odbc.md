@@ -71,13 +71,13 @@ This topic applies to the MFC ODBC classes.
   
 -   When you update (edit) a record, the edit buffer is used to set the field data members of the recordset to new values. When you finish updating, the updated record is still current.  
   
- When you call [AddNew](../Topic/CRecordset::AddNew.md) or [Edit](../Topic/CRecordset::Edit.md), the current record is stored so it can be restored later as needed. When you call [Delete](../Topic/CRecordset::Delete.md), the current record is not stored but is marked as deleted and you must scroll to another record.  
+ When you call [AddNew](http://msdn.microsoft.com/library/2db92826-51bc-46c0-924e-22986554bb1b) or [Edit](http://msdn.microsoft.com/library/23e34175-5af8-4b65-9551-d6983d718ac7), the current record is stored so it can be restored later as needed. When you call [Delete](http://msdn.microsoft.com/library/b979f1fc-a45a-4d2e-8860-176a0d7af0ac), the current record is not stored but is marked as deleted and you must scroll to another record.  
   
 > [!NOTE]
 >  The edit buffer plays no role in record deletion. When you delete the current record, the record is marked as deleted, and the recordset is "not on a record" until you scroll to a different record.  
   
 ##  <a name="_core_dynasets_and_snapshots"></a> Dynasets and Snapshots  
- [Dynasets](../../data/odbc/dynaset.md) refresh a record's contents as you scroll to the record. [Snapshots](../../data/odbc/snapshot.md) are static representations of the records, so a record's contents are not refreshed unless you call [Requery](../Topic/CRecordset::Requery.md). To use all the functionality of dynasets, you must be working with an ODBC driver that conforms to the correct level of ODBC API support. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [Dynaset](../../data/odbc/dynaset.md).  
+ [Dynasets](../../data/odbc/dynaset.md) refresh a record's contents as you scroll to the record. [Snapshots](../../data/odbc/snapshot.md) are static representations of the records, so a record's contents are not refreshed unless you call [Requery](http://msdn.microsoft.com/library/b9428878-1f85-4b0f-b897-8d9cdc6b7c3a). To use all the functionality of dynasets, you must be working with an ODBC driver that conforms to the correct level of ODBC API support. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [Dynaset](../../data/odbc/dynaset.md).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

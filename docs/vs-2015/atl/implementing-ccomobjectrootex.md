@@ -32,7 +32,7 @@ CComObjectRootEx](../Topic/CComObjectRootEx%20Class.md) is essential; all ATL ob
   
  Through its COM map, an object's interfaces are exposed to a client when the client queries for an interface. The query is performed through `CComObjectRootEx::InternalQueryInterface`. `InternalQueryInterface` only handles interfaces in the COM map table.  
   
- You can enter interfaces into the COM map table with the [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20\(ATL\).md) macro or one of its variants. For example, the following code enters the interfaces `IDispatch`, `IBeeper`, and `ISupportErrorInfo` into the COM map table:  
+ You can enter interfaces into the COM map table with the [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/c5363b8b-a1a2-471e-ad3a-d472f6c356c5) macro or one of its variants. For example, the following code enters the interfaces `IDispatch`, `IBeeper`, and `ISupportErrorInfo` into the COM map table:  
   
  [!code-cpp[NVC_ATL_COM#1](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_COM/Cpp/Beeper.h#1)]  
   

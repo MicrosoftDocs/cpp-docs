@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0031
 Constant value 'value' cannot be converted to a 'type'. (use 'unchecked' syntax to override)  
   
- An attempt was made to assign a value to a variable whose type cannot store the value. For more information, see [Types](../Topic/Types%20\(C%23%20Programming%20Guide\).md).  
+ An attempt was made to assign a value to a variable whose type cannot store the value. For more information, see [Types](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad).  
   
  The following sample generates CS0031 in both checked and unchecked contexts:  
   
@@ -53,4 +53,4 @@ namespace CS0031
 ```  
   
 ## See Also  
- [unchecked](../Topic/unchecked%20\(C%23%20Reference\).md)
+ [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e)

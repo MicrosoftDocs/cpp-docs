@@ -24,4 +24,4 @@ manager: "wpickett"
 # Compiler Error CS1906
 Invalid option 'option'; Resource visibility must be either 'public' or 'private'  
   
- This error indicates an invalid [/resource (Embed Resource File to Output)](../Topic/-resource%20\(C%23%20Compiler%20Options\).md) or [/linkresource (Link to .NET Framework Resource)](../Topic/-linkresource%20\(C%23%20Compiler%20Options\).md) command line option. Check the syntax of the **/resource** or **/linkresource** command line option, and make sure that the accessibility modifier used is either **public** or `private`.
+ This error indicates an invalid [/resource (Embed Resource File to Output)](http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f) or [/linkresource (Link to .NET Framework Resource)](http://msdn.microsoft.com/library/440c26c2-77c1-4811-a0a3-57cce3f5fc96) command line option. Check the syntax of the **/resource** or **/linkresource** command line option, and make sure that the accessibility modifier used is either **public** or `private`.

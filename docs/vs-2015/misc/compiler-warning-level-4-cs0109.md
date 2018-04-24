@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Warning (level 4) CS0109
 The member 'member' does not hide an inherited member. The new keyword is not required  
   
- A class declaration included the [new](../Topic/new%20\(C%23%20Reference\).md) keyword even though the declaration does not override an existing declaration in a base class. You can delete the **new** keyword.  
+ A class declaration included the [new](http://msdn.microsoft.com/library/e4136516-f058-45a8-84e5-da00a5cf9b6a) keyword even though the declaration does not override an existing declaration in a base class. You can delete the **new** keyword.  
   
  The following sample generates CS0109:  
   

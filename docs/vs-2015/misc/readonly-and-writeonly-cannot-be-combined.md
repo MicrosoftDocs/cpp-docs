@@ -30,5 +30,5 @@ The `ReadOnly` and `WriteOnly` modifiers are mutually exclusive.
 -   Specify either `ReadOnly` or `WriteOnly`, but not both.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
- [WriteOnly](../Topic/WriteOnly%20\(Visual%20Basic\).md)
+ [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)   
+ [WriteOnly](http://msdn.microsoft.com/library/488d2899-b09f-4cee-92f0-6f9f9fc4f944)

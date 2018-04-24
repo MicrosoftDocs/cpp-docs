@@ -42,7 +42,7 @@ Public Class dictionaryMaker(Of t As {IComparable, IDisposable, New})
 -   Use "}" to end the array initializer or constraint list.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)   
+ [How to: Initialize an Array Variable in Visual Basic](http://msdn.microsoft.com/library/aadd7a60-7ca4-4608-b986-091f19e7fc10)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

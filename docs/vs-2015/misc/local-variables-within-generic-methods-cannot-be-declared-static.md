@@ -32,7 +32,7 @@ The declaration of a local variable within a generic procedure specifies `Static
 -   Remove the `Static` keyword from the variable declaration.  
   
 ## See Also  
- [Static](../Topic/Static%20\(Visual%20Basic\).md)   
+ [Static](http://msdn.microsoft.com/library/19013910-4658-47b6-a22e-1744b527979e)   
  [NOTINBUILD How to: Lengthen a Variable's Lifetime](http://msdn.microsoft.com/en-us/04e7c56c-1db0-4fe5-a678-859a39ec654b)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)

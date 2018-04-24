@@ -29,9 +29,9 @@ Generics authored in one .NET language may be used in other .NET languages. Unli
 ## Remarks  
  For more information, see:  
   
--   [Introduction to Generics](../Topic/Introduction%20to%20Generics%20\(C%23%20Programming%20Guide\).md)  
+-   [Introduction to Generics](http://msdn.microsoft.com/library/a1ad761e-42f7-41dd-a62f-452a2de26b9d)  
   
--   [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)  
+-   [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)  
   
 ## Example  
   

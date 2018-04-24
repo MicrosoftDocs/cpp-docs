@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1024
 Preprocessor directive expected  
   
- A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md).  
+ A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724).  
   
  The following sample generates CS1024:  
   

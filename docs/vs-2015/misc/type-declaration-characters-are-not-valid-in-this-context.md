@@ -30,4 +30,4 @@ You attempted to use a character that is not valid in this context, such as $.
 1.  Remove the character.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)
+ [Type Characters](http://msdn.microsoft.com/library/6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5)

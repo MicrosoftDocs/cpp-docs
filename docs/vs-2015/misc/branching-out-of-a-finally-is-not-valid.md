@@ -30,6 +30,6 @@ A `GoTo` statement inside a `Finally` block branches outside the block. It is no
 -   Remove the `GoTo` statement, and consider implementing the program logic with decision or loop control structures.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
- [GoTo Statement](../Topic/GoTo%20Statement.md)   
- [Control Flow](../Topic/Control%20Flow%20in%20Visual%20Basic.md)
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [GoTo Statement](http://msdn.microsoft.com/library/313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d)   
+ [Control Flow](http://msdn.microsoft.com/library/5623ef47-52b1-4202-befd-9af36422ec6f)

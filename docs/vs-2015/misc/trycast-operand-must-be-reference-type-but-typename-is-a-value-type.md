@@ -23,7 +23,7 @@ manager: "wpickett"
 # &#39;TryCast&#39; operand must be reference type, but &#39;&lt;typename&gt;&#39; is a value type
 The `TryCast` operator is used with a value type for at least one of the arguments.  
   
- `TryCast` tests for an inheritance or implementation relationship between the two arguments. Therefore, it allows only reference types for the arguments. For more information, see [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md).  
+ `TryCast` tests for an inheritance or implementation relationship between the two arguments. Therefore, it allows only reference types for the arguments. For more information, see [Value Types and Reference Types](http://msdn.microsoft.com/library/fc82ce15-5a40-4c5c-a1e1-a556830e7391).  
   
  **Error ID:** BC30792  
   
@@ -32,7 +32,7 @@ The `TryCast` operator is used with a value type for at least one of the argumen
 -   Use `DirectCast` or `CType` to perform the conversion. They both allow value types.  
   
 ## See Also  
- [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md)   
- [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md)   
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [TryCast Operator](http://msdn.microsoft.com/library/d1ef5d47-fef4-491e-b014-1d910628f65c)   
+ [DirectCast Operator](http://msdn.microsoft.com/library/63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8)   
+ [CType Function](http://msdn.microsoft.com/library/dd4b29e7-6fa1-428c-877e-69955420bb72)   
+ [Value Types and Reference Types](http://msdn.microsoft.com/library/fc82ce15-5a40-4c5c-a1e1-a556830e7391)

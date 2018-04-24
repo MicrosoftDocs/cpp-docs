@@ -30,4 +30,4 @@ A keyword occurs where an element name is required. The context calls for an ele
 -   Replace the keyword with a valid element name.  
   
 ## See Also  
- [Operators and Expressions](../Topic/Operators%20and%20Expressions%20in%20Visual%20Basic.md)
+ [Operators and Expressions](http://msdn.microsoft.com/library/b86f3131-94ee-448f-96cd-79611e028b26)

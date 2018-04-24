@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0101
 The namespace 'namespace' already contains a definition for 'type'  
   
- A [namespace](../Topic/namespace%20\(C%23%20Reference\).md) has duplicate identifiers. Rename or delete one of the duplicate identifiers. For more information, see [Namespaces](../Topic/Namespaces%20\(C%23%20Programming%20Guide\).md)  
+ A [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) has duplicate identifiers. Rename or delete one of the duplicate identifiers. For more information, see [Namespaces](http://msdn.microsoft.com/library/b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a)  
   
  The following sample generates CS0101:  
   

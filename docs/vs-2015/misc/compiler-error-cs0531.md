@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0531
 'member' : interface members cannot have a definition  
   
- Methods that are declared in an [interface](../Topic/interface%20\(C%23%20Reference\).md) must be implemented in a class that inherits from it and not in the interface itself.  
+ Methods that are declared in an [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) must be implemented in a class that inherits from it and not in the interface itself.  
   
  The following sample generates CS0531:  
   

@@ -34,4 +34,4 @@ Statement cannot occur within an Enum body. End of Enum assumed.
 2.  Make sure that the interface definition ends with an `End Enum` construct.  
   
 ## See Also  
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Enum Statement](http://msdn.microsoft.com/library/a45e51f1-65ff-48e1-bf32-79130f137377)

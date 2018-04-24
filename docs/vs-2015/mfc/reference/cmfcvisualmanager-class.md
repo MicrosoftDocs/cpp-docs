@@ -3148,7 +3148,7 @@ virtual void OnDrawSpinButtons(
  Override this method in a derived visual manager to customize the appearance of a spin control.  
   
 ##  <a name="cmfcvisualmanager__ondrawsplitterborder"></a>  CMFCVisualManager::OnDrawSplitterBorder  
- The framework calls this method when it draws the border around an instance of the [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md).  
+ The framework calls this method when it draws the border around an instance of the [CSplitterWndEx Class](~/mfc/reference/csplitterwndex-class.md).  
   
 ```  
 virtual void OnDrawSplitterBorder(
@@ -3171,7 +3171,7 @@ virtual void OnDrawSplitterBorder(
  Override this method in a derived visual manager to customize the appearance of the border for a splitter window.  
   
 ##  <a name="cmfcvisualmanager__ondrawsplitterbox"></a>  CMFCVisualManager::OnDrawSplitterBox  
- The framework calls this method when it draws the drag box for an instance of the [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md). The drag box appears when the user selects the splitter bar and changes the dimensions of the child windows.  
+ The framework calls this method when it draws the drag box for an instance of the [CSplitterWndEx Class](~/mfc/reference/csplitterwndex-class.md). The drag box appears when the user selects the splitter bar and changes the dimensions of the child windows.  
   
 ```  
 virtual void OnDrawSplitterBox(
@@ -4120,7 +4120,7 @@ virtual void OnFillSplitterBackground(
  A pointer to a device context.  
   
  [in] `pSplitterWnd`  
- A pointer to an instance of the [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md). The framework fills the background for this splitter window.  
+ A pointer to an instance of the [CSplitterWndEx Class](~/mfc/reference/csplitterwndex-class.md). The framework fills the background for this splitter window.  
   
  [in] `rect`  
  A rectangle that specifies the boundaries of the splitter window.  

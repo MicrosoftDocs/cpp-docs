@@ -34,4 +34,4 @@ A `Loop` statement occurs without a corresponding `Do` statement. `Loop` must be
 3.  Ensure that this `Do` loop is correctly formatted.  
   
 ## See Also  
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)
+ [Do...Loop Statement](http://msdn.microsoft.com/library/892f9096-b3e2-4aee-834d-83bc4e2c379d)

@@ -58,7 +58,7 @@ You can use a visualizer to display the contents of a variable or object in a wa
      `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
   
 ## See Also  
- [Create Custom Visualizers](../Topic/Create%20Custom%20Visualizers%20of%20Data.md)   
- [How to: Install a Visualizer](../Topic/How%20to:%20Install%20a%20Visualizer.md)   
- [How to: Write a Visualizer](../Topic/How%20to:%20Write%20a%20Visualizer.md)   
- [View data values in Data Tips](../Topic/View%20data%20values%20in%20Data%20Tips%20%20in%20the%20code%20editor.md)
+ [Create Custom Visualizers](http://msdn.microsoft.com/library/c24c006f-f2ac-429f-89db-677fc0c6e1ea)   
+ [How to: Install a Visualizer](http://msdn.microsoft.com/library/3310ef43-515c-4d97-b0f9-51047247d3da)   
+ [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e)   
+ [View data values in Data Tips](http://msdn.microsoft.com/library/ffa7bd18-439b-4685-a9b3-c7884b5de41f)

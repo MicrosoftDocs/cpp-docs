@@ -27,5 +27,5 @@ The exception that is thrown when there is an error downloading ClickOnce manife
   
 ## See Also  
  <xref:System.Deployment.Application.DeploymentDownloadException>   
- [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md)
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)

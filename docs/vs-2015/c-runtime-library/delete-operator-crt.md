@@ -68,7 +68,7 @@ void __cdecl operator delete[](void * object,
   
  The first form of the operator is defined by the compiler and does not require new.h to be included in your program.  
   
- With the exception of throwing or no-throwing behavior, the CRT **operator** `delete[]` behaves like [operator delete&#91;&#93;](../Topic/operator%20delete\(%3Cnew%3E\).md) in the Standard C++ Library.  
+ With the exception of throwing or no-throwing behavior, the CRT **operator** `delete[]` behaves like [operator delete&#91;&#93;](http://msdn.microsoft.com/library/fa28d7d3-27a0-43e6-880b-4b7c8169b489) in the Standard C++ Library.  
   
 ## Requirements  
   

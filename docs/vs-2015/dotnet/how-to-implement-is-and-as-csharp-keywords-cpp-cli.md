@@ -28,7 +28,7 @@ The latest version of this topic can be found at [How to: Implement is and as C#
   
 This topic shows how to implement the functionality of the `is` and `as` C# keywords in Visual C++.  
   
- For more information, see [is](../Topic/is%20\(C%23%20Reference\).md) and [as](../Topic/as%20\(C%23%20Reference\).md).  
+ For more information, see [is](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43) and [as](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e).  
   
 ## Example  
   

@@ -25,13 +25,13 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [A delimiter cannot be Nothing or an empty String](../misc/a-delimiter-cannot-be-nothing-or-an-empty-string.md)  
   
- [A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True](../Topic/A%20double%20quote%20is%20not%20a%20valid%20comment%20token%20for%20delimited%20fields%20where%20EscapeQuote%20is%20set%20to%20True.md)  
+ [A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True](http://msdn.microsoft.com/library/636d4b81-00ba-4cfd-98f7-4d57036f494d)  
   
  [A log has already been created with this name on this machine](../misc/a-log-has-already-been-created-with-this-name-on-this-machine.md)  
   
- [A property or method call cannot include a reference to a private object, either as an argument or as a return value](../Topic/A%20property%20or%20method%20call%20cannot%20include%20a%20reference%20to%20a%20private%20object,%20either%20as%20an%20argument%20or%20as%20a%20return%20value.md)  
+ [A property or method call cannot include a reference to a private object, either as an argument or as a return value](http://msdn.microsoft.com/library/059b43e1-202d-4fa2-806b-7bad63c1e7ca)  
   
- [A startup form has not been specified](../Topic/A%20startup%20form%20has%20not%20been%20specified.md)  
+ [A startup form has not been specified](http://msdn.microsoft.com/library/8e04af49-4bef-49de-a7ec-e407e9873da7)  
   
  [Access denied to '\<name>'](../misc/access-denied-to-name.md)  
   
@@ -41,7 +41,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [An invalid name was specified for the event log](../misc/an-invalid-name-was-specified-for-the-event-log.md)  
   
- [An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired](../Topic/An%20unexpected%20error%20has%20occurred%20because%20an%20operating%20system%20resource%20required%20for%20single%20instance%20startup%20cannot%20be%20acquired.md)  
+ [An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired](http://msdn.microsoft.com/library/0d9f2a30-ff72-4355-8060-744f22339359)  
   
  [Another event log has already registered a source with this name](../misc/another-event-log-has-already-registered-a-source-with-this-name.md)  
   
@@ -105,7 +105,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Argument 'Life' cannot be zero](../misc/argument-life-cannot-be-zero.md)  
   
- [Argument not optional (Visual Basic)](../Topic/Argument%20not%20optional%20\(Visual%20Basic\).md)  
+ [Argument not optional (Visual Basic)](http://msdn.microsoft.com/library/76e7bcf3-24ed-4cd5-945b-b98f1c76944b)  
   
  [Argument 'NPer' must be greater than zero](../misc/argument-nper-must-be-greater-than-zero.md)  
   
@@ -121,17 +121,17 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Array dimensions do not match those specified in the 'VBFixedArray' attribute](../misc/array-dimensions-do-not-match-those-specified-in-the-vbfixedarray-attribute.md)  
   
- [Automation error](../Topic/Automation%20error.md)  
+ [Automation error](http://msdn.microsoft.com/library/2c4be5c5-2f0d-4a2b-96fe-d1b24f08fc4c)  
   
  [Automation object does not have a default value](../misc/automation-object-does-not-have-a-default-value.md)  
   
- [Bad DLL calling convention](../Topic/Bad%20DLL%20calling%20convention.md)  
+ [Bad DLL calling convention](http://msdn.microsoft.com/library/7c7def45-b0ab-450f-ad3f-4383dfd9aed7)  
   
- [Bad file mode](../Topic/Bad%20file%20mode.md)  
+ [Bad file mode](http://msdn.microsoft.com/library/74891e96-884b-4c8d-872d-cd11ae272372)  
   
- [Bad file name or number](../Topic/Bad%20file%20name%20or%20number.md)  
+ [Bad file name or number](http://msdn.microsoft.com/library/d0e96aea-7621-48f6-a78b-5d37d18aaa4e)  
   
- [Bad record length](../Topic/Bad%20record%20length.md)  
+ [Bad record length](http://msdn.microsoft.com/library/0926a3a4-177b-4452-9b33-d8a01e24cc21)  
   
  [Bad record number](../misc/bad-record-number.md)  
   
@@ -153,7 +153,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Cannot convert start value of type '\<type1>', limit value of '\<type2>' and step value of '\<type3>' to a common type](../misc/cannot-convert-start-value-of-type-type1-limit-value-of-type2-and-step-value-of-type3-to-a-common-type.md)  
   
- [Cannot create ActiveX Component](../Topic/Cannot%20create%20ActiveX%20Component.md)  
+ [Cannot create ActiveX Component](http://msdn.microsoft.com/library/7fc5a271-8195-40a2-89f9-e05fd71bb8e0)  
   
  [Cannot delete a registry hive](../misc/cannot-delete-a-registry-hive.md)  
   
@@ -163,7 +163,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Cannot save file to TEMP](../misc/cannot-save-file-to-temp.md)  
   
- [Can't create necessary temporary file](../Topic/Can't%20create%20necessary%20temporary%20file.md)  
+ [Can't create necessary temporary file](http://msdn.microsoft.com/library/53617b5b-eb06-4188-b4c2-8607cb9fbc79)  
   
  [Can't perform requested operation (Visual Basic)](../misc/can-t-perform-requested-operation-visual-basic.md)  
   
@@ -173,11 +173,11 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Class '\<classname>' does not implement the System.Collections.ICollection interface](../misc/class-classname-does-not-implement-the-system-collections-icollection-interface.md)  
   
- [Class does not support Automation or does not support expected interface](../Topic/Class%20does%20not%20support%20Automation%20or%20does%20not%20support%20expected%20interface.md)  
+ [Class does not support Automation or does not support expected interface](http://msdn.microsoft.com/library/d985bb7e-e48e-443e-86f2-ddb86758757c)  
   
  [Class not registered on local machine](../misc/class-not-registered-on-local-machine.md)  
   
- [Clipboard format is not valid](../Topic/Clipboard%20format%20is%20not%20valid.md)  
+ [Clipboard format is not valid](http://msdn.microsoft.com/library/71a4a045-65bb-417d-b3bd-99a9fa3c53f6)  
   
  [Code resource lock error](../misc/code-resource-lock-error.md)  
   
@@ -195,11 +195,11 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [DataBits must be greater than 0](../misc/databits-must-be-greater-than-0.md)  
   
- [Device I/O error](../Topic/Device%20I-O%20error.md)  
+ [Device I/O error](http://msdn.microsoft.com/library/17d22252-f374-400b-9ddb-be5367dd7278)  
   
  [Device unavailable](../misc/device-unavailable.md)  
   
- ['Dir' function must first be called with a 'PathName' argument](../Topic/'Dir'%20function%20must%20first%20be%20called%20with%20a%20'PathName'%20argument.md)  
+ ['Dir' function must first be called with a 'PathName' argument](http://msdn.microsoft.com/library/7b5d149f-be91-4ac3-8262-86a360894e7d)  
   
  [Disk full (Visual Basic)](../misc/disk-full-visual-basic.md)  
   
@@ -213,13 +213,13 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Encoding cannot be set to Nothing](../misc/encoding-cannot-be-set-to-nothing.md)  
   
- [Error in loading DLL (Visual Basic)](../Topic/Error%20in%20loading%20DLL%20\(Visual%20Basic\).md)  
+ [Error in loading DLL (Visual Basic)](http://msdn.microsoft.com/library/4226cd1f-028c-477d-88a5-cb57f7e0cdc8)  
   
  [Error number must be within the range 0 and 65535](../misc/error-number-must-be-within-the-range-0-and-65535.md)  
   
  [Expression '\<name>' is not a procedure, but occurs as the target of a procedure call](../misc/expression-name-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call.md)  
   
- [Expression too complex](../Topic/Expression%20too%20complex.md)  
+ [Expression too complex](http://msdn.microsoft.com/library/736847d1-5e03-44c8-95e4-3ed2cef2746b)  
   
  [Feature not yet implemented](../misc/feature-not-yet-implemented.md)  
   
@@ -233,7 +233,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [File already exists](../misc/file-already-exists.md)  
   
- [File already open](../Topic/File%20already%20open.md)  
+ [File already open](http://msdn.microsoft.com/library/d674a0fb-ef16-4cc2-9da7-709a8a07dbea)  
   
  [File format not valid](../misc/file-format-not-valid.md)  
   
@@ -245,11 +245,11 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [File information cannot be queried while open for writing](../misc/file-information-cannot-be-queried-while-open-for-writing.md)  
   
- [File is too large to read into a byte array](../Topic/File%20is%20too%20large%20to%20read%20into%20a%20byte%20array.md)  
+ [File is too large to read into a byte array](http://msdn.microsoft.com/library/686630a6-a439-46c7-8d7b-34613ae4c5d8)  
   
- [File name or class name not found during Automation operation (Visual Basic)](../Topic/File%20name%20or%20class%20name%20not%20found%20during%20Automation%20operation%20\(Visual%20Basic\).md)  
+ [File name or class name not found during Automation operation (Visual Basic)](http://msdn.microsoft.com/library/6883c208-de5e-44da-a525-b50122e5a170)  
   
- [File not found (Visual Basic Run-Time Error)](../Topic/File%20not%20found%20\(Visual%20Basic%20Run-Time%20Error\).md)  
+ [File not found (Visual Basic Run-Time Error)](http://msdn.microsoft.com/library/57addb16-6f9a-444d-8af8-dda52431daca)  
   
  [File specified by FileName does not use the encoding specified by FileEncoding](../misc/file-specified-by-filename-does-not-use-the-encoding-specified-by-fileencoding.md)  
   
@@ -267,7 +267,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Implicit reference to object under construction is not valid when calling another constructor](../misc/implicit-reference-to-object-under-construction-is-not-valid-when-calling-another-constructor.md)  
   
- [Input past end of file](../Topic/Input%20past%20end%20of%20file.md)  
+ [Input past end of file](http://msdn.microsoft.com/library/65292704-6e7d-4622-9f50-eb655a59b016)  
   
  [Insufficient security permissions to set the system date](../misc/insufficient-security-permissions-to-set-the-system-date.md)  
   
@@ -275,7 +275,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Internal error (Visual Basic)](../misc/internal-error-visual-basic.md)  
   
- [Internal error happened at \<location>](../Topic/Internal%20error%20happened%20at%20%3Clocation%3E.md)  
+ [Internal error happened at \<location>](http://msdn.microsoft.com/library/0af78cbc-89ec-40ea-9dee-bac9f2cb7c1e)  
   
  [Internal error in the Microsoft Visual Basic runtime](../misc/internal-error-in-the-microsoft-visual-basic-runtime.md)  
   
@@ -313,7 +313,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Named arguments cannot match ParamArray parameters](../misc/named-arguments-cannot-match-paramarray-parameters.md)  
   
- [Need property array index](../Topic/Need%20property%20array%20index.md)  
+ [Need property array index](http://msdn.microsoft.com/library/69ec6d59-ffc4-48ac-8a28-fe6853389843)  
   
  [No accessible overloaded '\<methodname>' can be called with these arguments without a narrowing conversion](../misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments-without-a-narrowing-conversion.md)  
   
@@ -343,11 +343,11 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Object doesn't support this property or method (Visual Basic)](../misc/object-doesn-t-support-this-property-or-method-visual-basic.md)  
   
- [Object or class does not support the set of events](../Topic/Object%20or%20class%20does%20not%20support%20the%20set%20of%20events.md)  
+ [Object or class does not support the set of events](http://msdn.microsoft.com/library/785df3f3-2aae-4a25-af36-1f9879d4e5fd)  
   
- [Object required](../Topic/Object%20required%20\(Visual%20Basic\).md)  
+ [Object required](http://msdn.microsoft.com/library/afdc660b-81a5-4c92-ac7e-9c3a3105fc16)  
   
- [Object variable or With block variable not set](../Topic/Object%20variable%20or%20With%20block%20variable%20not%20set.md)  
+ [Object variable or With block variable not set](http://msdn.microsoft.com/library/2f03e611-f0ed-465c-99a2-a816e034faa3)  
   
  [One or more folders in the target path do not exist](../misc/one-or-more-folders-in-the-target-path-do-not-exist.md)  
   
@@ -357,29 +357,29 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Operator is not valid for type '\<typename>'](../misc/operator-is-not-valid-for-type-typename.md)  
   
- [Ordinal is not valid](../Topic/Ordinal%20is%20not%20valid.md)  
+ [Ordinal is not valid](http://msdn.microsoft.com/library/7459562b-cd4f-4590-95e0-6126ae3589a5)  
   
  [Out of memory (Visual Basic Run-Time Error)](../misc/out-of-memory-visual-basic-run-time-error.md)  
   
- [Out of stack space (Visual Basic)](../Topic/Out%20of%20stack%20space%20\(Visual%20Basic\).md)  
+ [Out of stack space (Visual Basic)](http://msdn.microsoft.com/library/bfcd792b-ac29-4158-81fc-ea0c13f4ffa2)  
   
- [Out of string space (Visual Basic)](../Topic/Out%20of%20string%20space%20\(Visual%20Basic\).md)  
+ [Out of string space (Visual Basic)](http://msdn.microsoft.com/library/16681c75-a400-422d-9351-c691d3c7614e)  
   
- [Overflow (Visual Basic Run-Time Error)](../Topic/Overflow%20\(Visual%20Basic%20Run-Time%20Error\).md)  
+ [Overflow (Visual Basic Run-Time Error)](http://msdn.microsoft.com/library/c6a23279-3086-412a-bcff-ff8ed2cb8c6f)  
   
  [Path '\<pathname>' not found](../misc/path-pathname-not-found.md)  
   
- [Path not found](../Topic/Path%20not%20found.md)  
+ [Path not found](http://msdn.microsoft.com/library/644c45d5-4ffa-47e2-96db-6c4d2d5ae815)  
   
- [Path/File access error](../Topic/Path-File%20access%20error.md)  
+ [Path/File access error](http://msdn.microsoft.com/library/6ce3a161-7316-46bd-a785-0d50e5414020)  
   
- [Permission denied (Visual Basic)](../Topic/Permission%20denied%20\(Visual%20Basic\).md)  
+ [Permission denied (Visual Basic)](http://msdn.microsoft.com/library/71f46756-f522-4814-aab4-492bf9924245)  
   
  [Picture is not valid](../misc/picture-is-not-valid.md)  
   
  [Printer error](../misc/printer-error.md)  
   
- [Procedure call or argument is not valid (Visual Basic)](../Topic/Procedure%20call%20or%20argument%20is%20not%20valid%20\(Visual%20Basic\).md)  
+ [Procedure call or argument is not valid (Visual Basic)](http://msdn.microsoft.com/library/9b07d280-66c6-4ea5-a8ed-5ddb0036f877)  
   
  [Process '\<processname>' was not found](../misc/process-processname-was-not-found.md)  
   
@@ -387,13 +387,13 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Property \<propertyname> cannot be set to Nothing](../misc/property-propertyname-cannot-be-set-to-nothing.md)  
   
- [Property array index is not valid](../Topic/Property%20array%20index%20is%20not%20valid.md)  
+ [Property array index is not valid](http://msdn.microsoft.com/library/77c14680-bc61-4f46-9529-bb9fe366c18e)  
   
- [Property let procedure not defined and property get procedure did not return an object](../Topic/Property%20let%20procedure%20not%20defined%20and%20property%20get%20procedure%20did%20not%20return%20an%20object.md)  
+ [Property let procedure not defined and property get procedure did not return an object](http://msdn.microsoft.com/library/8542382a-689f-4e1b-abc0-c1e2dadb92f4)  
   
- [Property not found](../Topic/Property%20not%20found.md)  
+ [Property not found](http://msdn.microsoft.com/library/127e0f5f-0997-4ac5-b9af-2e6a2eb513a2)  
   
- [Property or method not found](../Topic/Property%20or%20method%20not%20found.md)  
+ [Property or method not found](http://msdn.microsoft.com/library/471d8c1d-9edf-4014-8427-1a01b634a72d)  
   
  [Property value is not valid](../misc/property-value-is-not-valid.md)  
   
@@ -411,7 +411,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Replacements too long](../misc/replacements-too-long.md)  
   
- [Resume without error](../Topic/Resume%20without%20error.md)  
+ [Resume without error](http://msdn.microsoft.com/library/f9631804-fd36-4443-b36c-30db827e6176)  
   
  [Root folder cannot be renamed](../misc/root-folder-cannot-be-renamed.md)  
   
@@ -427,7 +427,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Some files and folders caused exceptions during the operation](../misc/some-files-and-folders-caused-exceptions-during-the-operation.md)  
   
- [Some subkeys cannot be deleted](../Topic/Some%20subkeys%20cannot%20be%20deleted.md)  
+ [Some subkeys cannot be deleted](http://msdn.microsoft.com/library/14562137-af43-4972-84c1-a380a90f7d6c)  
   
  [Source folder and target folder are the same](../misc/source-folder-and-target-folder-are-the-same.md)  
   
@@ -449,9 +449,9 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [String length exceeds maximum length of 32767 characters for 'FileSystem' APIs](../misc/string-length-exceeds-maximum-length-of-32767-characters-for-filesystem-apis.md)  
   
- [Sub or Function not defined (Visual Basic)](../Topic/Sub%20or%20Function%20not%20defined%20\(Visual%20Basic\).md)  
+ [Sub or Function not defined (Visual Basic)](http://msdn.microsoft.com/library/661fdb90-ee7d-40ce-b30b-5e7267bd957a)  
   
- [Subscript out of range (Visual Basic)](../Topic/Subscript%20out%20of%20range%20\(Visual%20Basic\).md)  
+ [Subscript out of range (Visual Basic)](http://msdn.microsoft.com/library/d0344a65-ec02-4caf-8d3c-9977392ca353)  
   
  [System event log cannot be deleted](../misc/system-event-log-cannot-be-deleted.md)  
   
@@ -463,7 +463,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [TextFieldParser does not support delimiters that contain endline characters](../misc/textfieldparser-does-not-support-delimiters-that-contain-endline-characters.md)  
   
- [TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded](../Topic/TextFieldParser%20is%20unable%20to%20complete%20the%20read%20operation%20because%20maximum%20buffer%20size%20has%20been%20exceeded.md)  
+ [TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded](http://msdn.microsoft.com/library/36565e82-8458-4a08-86af-d9a7a2c32937)  
   
  [The address for UploadFile needs to include a filename](../misc/the-address-for-uploadfile-needs-to-include-a-filename.md)  
   
@@ -495,9 +495,9 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [The value of \<argumentname> must be greater than or equal to 1000](../misc/the-value-of-argumentname-must-be-greater-than-or-equal-to-1000.md)  
   
- [This array is fixed or temporarily locked (Visual Basic)](../Topic/This%20array%20is%20fixed%20or%20temporarily%20locked%20\(Visual%20Basic\).md)  
+ [This array is fixed or temporarily locked (Visual Basic)](http://msdn.microsoft.com/library/de6713a6-51d7-4edb-8515-d5fb544e2091)  
   
- [This key is already associated with an element of this collection](../Topic/This%20key%20is%20already%20associated%20with%20an%20element%20of%20this%20collection.md)  
+ [This key is already associated with an element of this collection](http://msdn.microsoft.com/library/52e15795-907e-4b10-acb7-5c37a76ce594)  
   
  [This operation can only be done when the File is closed](../misc/this-operation-can-only-be-done-when-the-file-is-closed.md)  
   
@@ -513,13 +513,13 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [Too many DLL application clients](../misc/too-many-dll-application-clients.md)  
   
- [Too many files](../Topic/Too%20many%20files.md)  
+ [Too many files](http://msdn.microsoft.com/library/2ff203e2-bba6-43ae-b72f-8e92a881c98f)  
   
- [Type mismatch (Visual Basic)](../Topic/Type%20mismatch%20\(Visual%20Basic\).md)  
+ [Type mismatch (Visual Basic)](http://msdn.microsoft.com/library/f72e9e21-f475-43f2-9464-29c8ad27b6c2)  
   
  [Type of argument '\<argumentname>' is '\<typename>', which is not numeric](../misc/type-of-argument-argumentname-is-typename-which-is-not-numeric.md)  
   
- [Unable to get serial port names because of an internal system error](../Topic/Unable%20to%20get%20serial%20port%20names%20because%20of%20an%20internal%20system%20error.md)  
+ [Unable to get serial port names because of an internal system error](http://msdn.microsoft.com/library/789a1e94-28c2-4c20-8ee4-ad65fea37812)  
   
  [Unable to obtain a stream for the log](../misc/unable-to-obtain-a-stream-for-the-log.md)  
   
@@ -545,7 +545,7 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
  [User interrupt occurred](../misc/user-interrupt-occurred.md)  
   
- [Variable uses an Automation type not supported in Visual Basic](../Topic/Variable%20uses%20an%20Automation%20type%20not%20supported%20in%20Visual%20Basic.md)  
+ [Variable uses an Automation type not supported in Visual Basic](http://msdn.microsoft.com/library/bde4f4da-493b-452c-b6e4-1d370edba4cd)  
   
  [VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified](../misc/vbstrconv-wide-and-vbstrconv-narrow-are-not-applicable-to-the-locale-specified.md)  
   
@@ -561,4 +561,4 @@ This section contains the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] error mes
   
 ## See Also  
  [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)   
- [Error Messages](../Topic/Error%20Messages%20\(Visual%20Basic\).md)
+ [Error Messages](http://msdn.microsoft.com/library/f2dda05b-baef-41f5-8bb1-598bd7cf239f)

@@ -26,8 +26,8 @@ manager: "douge"
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](http://msdn.microsoft.com/library/29dd85ee-1530-43c1-b085-bb2330ac5a48).  
   
 ## See Also  
- [Tasks](../Topic/MSBuild%20Tasks.md)   
- [Delete Task](../Topic/Delete%20Task.md)
+ [Tasks](http://msdn.microsoft.com/library/5d3cc4a7-e5db-4f73-b707-8b6882fddcf8)   
+ [Delete Task](http://msdn.microsoft.com/library/916bb2e3-3017-4828-ae27-c0b5c99bbb48)

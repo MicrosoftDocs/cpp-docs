@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0146
 Circular base class dependency involving 'class1' and 'class2'  
   
- The inheritance list for a class includes a direct or indirect reference to itself. A class cannot inherit from itself. For more information, see [Inheritance](../Topic/Inheritance%20\(C%23%20Programming%20Guide\).md).  
+ The inheritance list for a class includes a direct or indirect reference to itself. A class cannot inherit from itself. For more information, see [Inheritance](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea).  
   
  The following sample generates CS0146:  
   

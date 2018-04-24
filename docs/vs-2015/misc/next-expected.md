@@ -30,7 +30,7 @@ An `On Error Resume` construct occurs without a concluding `Next`.
 -   Add the `Next` keyword to the end of the `On Error` statement.  
   
 ## See Also  
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)   
- [Error Statement](../Topic/Error%20Statement.md)   
- [Resume Statement](../Topic/Resume%20Statement.md)   
+ [On Error Statement](http://msdn.microsoft.com/library/ff947930-fb84-40cf-bd66-1ea219561d5c)   
+ [Error Statement](http://msdn.microsoft.com/library/85cd5c59-5224-4f02-aaf5-fcfefab17a29)   
+ [Resume Statement](http://msdn.microsoft.com/library/e24d058b-1a5c-4274-acb9-7d295d3ea537)   
  [Unstructured Exception Handling Overview (Visual Basic)](http://msdn.microsoft.com/en-us/d2d84b66-ff3a-4878-a578-484c0c6d5c3d)

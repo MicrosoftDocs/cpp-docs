@@ -30,6 +30,6 @@ The `Get` procedure reads the value of a property. `WriteOnly` properties cannot
 -   Remove the `WriteOnly` keyword from the `Property` statement, or remove the `Get` procedure from the property body.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Get Statement](../Topic/Get%20Statement.md)   
- [WriteOnly](../Topic/WriteOnly%20\(Visual%20Basic\).md)
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)   
+ [Get Statement](http://msdn.microsoft.com/library/56b05cdc-bd64-4dfd-bb12-824eacec6f94)   
+ [WriteOnly](http://msdn.microsoft.com/library/488d2899-b09f-4cee-92f0-6f9f9fc4f944)

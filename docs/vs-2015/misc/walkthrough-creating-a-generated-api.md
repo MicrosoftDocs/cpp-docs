@@ -18,4 +18,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Walkthrough: Creating a Generated API
-This topic is obsolete. Instead, please see [Writing Code to Customise a Domain-Specific Language](../Topic/Writing%20Code%20to%20Customise%20a%20Domain-Specific%20Language.md).
+This topic is obsolete. Instead, please see [Writing Code to Customise a Domain-Specific Language](http://msdn.microsoft.com/library/a4a17f5b-9c97-4575-b2d1-3182c1896b72).

@@ -21,7 +21,7 @@ manager: "douge"
 ## Environment Support for Managed VSPackages  
  To support creating a VSPackage or project with a managed language such as [!INCLUDE[csprcs](../includes/csprcs-md.md)], the [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] provides the following:  
   
--   The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interop assemblies, which enable VSPackages written in managed code to interoperate with the unmanaged (COM) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrated development environment (IDE). For more information, see [Using Visual Studio Interop Assemblies](../Topic/Using%20Visual%20Studio%20Interop%20Assemblies.md).  
+-   The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interop assemblies, which enable VSPackages written in managed code to interoperate with the unmanaged (COM) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrated development environment (IDE). For more information, see [Using Visual Studio Interop Assemblies](http://msdn.microsoft.com/library/1043eb95-4f0d-4861-be21-2a25395b3b3c).  
   
 -   A set of Managed Package Framework (MPF) classes that provides a higher-level abstraction for working with the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. These classes encapsulate some of the most frequently used interfaces and types in the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interop assemblies. They greatly reduce the amount of work that you must do to provide the basic functionality of a VSPackage or project. For more information, see [Managed Package Framework Classes](../misc/managed-package-framework-classes.md).  
   
@@ -29,5 +29,5 @@ manager: "douge"
   
 ## See Also  
  [Managed VSPackages](../misc/managed-vspackages.md)   
- [Using Visual Studio Interop Assemblies](../Topic/Using%20Visual%20Studio%20Interop%20Assemblies.md)   
+ [Using Visual Studio Interop Assemblies](http://msdn.microsoft.com/library/1043eb95-4f0d-4861-be21-2a25395b3b3c)   
  [Managed Package Framework Classes](../misc/managed-package-framework-classes.md)

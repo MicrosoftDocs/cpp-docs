@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0138
 A using namespace directive can only be applied to namespaces; 'type' is a type not a namespace  
   
- A [using](../Topic/using%20\(C%23%20Reference\).md) directive can only take the name of a namespace as a parameter. For more information, see [Namespaces](../Topic/Namespaces%20\(C%23%20Programming%20Guide\).md).  
+ A [using](http://msdn.microsoft.com/library/124e1a63-2a4b-4132-b269-3b6d8d3ef72d) directive can only take the name of a namespace as a parameter. For more information, see [Namespaces](http://msdn.microsoft.com/library/b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a).  
   
  The following sample generates CS0138:  
   

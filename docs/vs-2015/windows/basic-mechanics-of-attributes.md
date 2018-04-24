@@ -36,7 +36,7 @@ There are three ways to insert attributes into your project. First, you can inse
  ![Component attribute communication](../windows/media/vccompattrcomm.gif "vcCompAttrComm")  
   
 > [!NOTE]
->  Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md).  
+>  Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](http://msdn.microsoft.com/library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
   
  Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](../windows/coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](../windows/cpp-quote.md) attribute, which can be inserted anywhere within a C++ source file.  
   

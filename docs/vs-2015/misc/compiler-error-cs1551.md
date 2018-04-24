@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1551
 Indexers must have at least one parameter  
   
- An [indexer](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md) that takes no arguments was declared.  
+ An [indexer](http://msdn.microsoft.com/library/022cd27d-d5e0-4cfe-8b97-dc018cc3355d) that takes no arguments was declared.  
   
  The following sample generates CS1551:  
   

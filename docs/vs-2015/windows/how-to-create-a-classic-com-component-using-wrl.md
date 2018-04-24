@@ -61,7 +61,7 @@ You can use the [!INCLUDE[cppwrl](../includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_s
   
   
   
-2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](../Topic/Pre-build%20Event-Post-build%20Event%20Command%20Line%20Dialog%20Box.md).  
+2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](http://msdn.microsoft.com/library/d49b2c57-24bf-4fb2-8351-5c4b6cca938f).  
   
 3.  Add a **Win32 Console Application** project to the solution. Name the project, for example, `Calculator`.  
   

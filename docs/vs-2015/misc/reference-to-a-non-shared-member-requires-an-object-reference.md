@@ -34,5 +34,5 @@ You have referenced a non-shared member within your code and failed to supply an
 ## See Also  
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)   
  [NOT IN BUILD: Shared Members in Visual Basic](http://msdn.microsoft.com/en-us/dbc3783f-83a2-4225-995d-c2d6d025663d)   
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)   
+ [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

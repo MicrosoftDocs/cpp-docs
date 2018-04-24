@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1518
 Expected class, delegate, enum, interface, or struct  
   
- A declaration was found that is not supported in a [namespace](../Topic/namespace%20\(C%23%20Reference\).md). Inside a namespace, the compiler accepts only classes, structs, enums, interfaces, namespaces, and delegates.  
+ A declaration was found that is not supported in a [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f). Inside a namespace, the compiler accepts only classes, structs, enums, interfaces, namespaces, and delegates.  
   
 ## Example  
  The following sample generates CS1518:  

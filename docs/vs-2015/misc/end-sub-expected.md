@@ -30,5 +30,5 @@ An `End` statement must match the block it terminates. A `Sub` procedure definit
 -   Add an `End Sub` statement to the end of the procedure.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)
+ [Sub Procedures](http://msdn.microsoft.com/library/6a0a4958-ed0a-4d3d-8d31-0772c82bda58)   
+ [End Statement](http://msdn.microsoft.com/library/0e64467c-0f34-4aab-9ddd-43f8b9d55d90)

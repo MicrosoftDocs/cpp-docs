@@ -30,4 +30,4 @@ You have used a specifier, such as `MustInherit`, on a variable in a `Module` st
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

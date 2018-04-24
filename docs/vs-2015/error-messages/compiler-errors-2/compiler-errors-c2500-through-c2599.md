@@ -79,7 +79,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2535](../../error-messages/compiler-errors-2/compiler-error-c2535.md)  
   
- [Compiler Error C2536](../Topic/Compiler%20Error%20C2536.md)  
+ [Compiler Error C2536](http://msdn.microsoft.com/library/b14a60a3-f2cb-4f22-8a2e-a247f0d7db01)  
   
  [Compiler Error C2537](../../error-messages/compiler-errors-2/compiler-error-c2537.md)  
   
@@ -117,7 +117,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2563](../../error-messages/compiler-errors-2/compiler-error-c2563.md)  
   
- [Compiler Error C2564](../Topic/Compiler%20Error%20C2564.md)  
+ [Compiler Error C2564](http://msdn.microsoft.com/library/c27e7514-549a-4b78-bdcc-fa8ce8e59159)  
   
  [Compiler Error C2566](../../error-messages/compiler-errors-2/compiler-error-c2566.md)  
   

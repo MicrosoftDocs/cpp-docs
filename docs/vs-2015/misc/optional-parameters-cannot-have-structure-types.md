@@ -32,5 +32,5 @@ Optional parameters cannot be structure types.
 2.  Declare a static class member to take the place of a structure.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Static](../Topic/Static%20\(Visual%20Basic\).md)
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)   
+ [Static](http://msdn.microsoft.com/library/19013910-4658-47b6-a22e-1744b527979e)

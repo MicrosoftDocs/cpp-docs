@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1012
 Too many characters in character literal  
   
- An attempt was made to initialize a [char](../Topic/char%20\(C%23%20Reference\).md) constant with more than one character.  
+ An attempt was made to initialize a [char](http://msdn.microsoft.com/library/b51cf4fb-124c-4067-af48-afbac122b228) constant with more than one character.  
   
  CS1012 can also occur when doing data binding. For example the following line will give an error:  
   

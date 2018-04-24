@@ -28,9 +28,9 @@ The latest version of this topic can be found at [How to: Create a Message Map f
   
 Message mapping in MFC provides an efficient way to direct Windows messages to an appropriate C++ object instance. Examples of MFC message map targets include application classes, document and view classes, control classes, and so on.  
   
- Traditional MFC message maps are declared using the [BEGIN_MESSAGE_MAP](../Topic/BEGIN_MESSAGE_MAP.md) macro to declare the start of the message map, a macro entry for each message-handler class method, and finally the [END_MESSAGE_MAP](../Topic/END_MESSAGE_MAP.md) macro to declare the end of the message map.  
+ Traditional MFC message maps are declared using the [BEGIN_MESSAGE_MAP](http://msdn.microsoft.com/library/d9201e18-04e0-4639-9810-f15768627fc2) macro to declare the start of the message map, a macro entry for each message-handler class method, and finally the [END_MESSAGE_MAP](http://msdn.microsoft.com/library/40f611f1-a3b4-4097-b683-091bf7cfab8b) macro to declare the end of the message map.  
   
- One limitation with the [BEGIN_MESSAGE_MAP](../Topic/BEGIN_MESSAGE_MAP.md) macro occurs when it is used in conjunction with a class containing template arguments. When used with a template class, this macro will cause a compile-time error due to the missing template parameters during macro expansion. The [BEGIN_TEMPLATE_MESSAGE_MAP](../Topic/BEGIN_TEMPLATE_MESSAGE_MAP.md) macro was designed to allow classes containing a single template argument to declare their own message maps.  
+ One limitation with the [BEGIN_MESSAGE_MAP](http://msdn.microsoft.com/library/d9201e18-04e0-4639-9810-f15768627fc2) macro occurs when it is used in conjunction with a class containing template arguments. When used with a template class, this macro will cause a compile-time error due to the missing template parameters during macro expansion. The [BEGIN_TEMPLATE_MESSAGE_MAP](http://msdn.microsoft.com/library/972e730b-5f7b-413b-938d-13a367db6a36) macro was designed to allow classes containing a single template argument to declare their own message maps.  
   
 ## Example  
  Consider an example where the MFC [CListBox](../mfc/reference/clistbox-class.md) class is extended to provide synchronization with an external data source. The fictitious **CSyncListBox** class is declared as follows:  
@@ -74,7 +74,7 @@ Message mapping in MFC provides an efficient way to direct Windows messages to a
  [!code-cpp[NVC_MFC_CListBox#48](../snippets/cpp/VS_Snippets_Cpp/NVC_MFC_CListBox/Cpp/ListBoxDlg.cpp#48)]  
   
 ## See Also  
- [BEGIN_TEMPLATE_MESSAGE_MAP](../Topic/BEGIN_TEMPLATE_MESSAGE_MAP.md)   
+ [BEGIN_TEMPLATE_MESSAGE_MAP](http://msdn.microsoft.com/library/972e730b-5f7b-413b-938d-13a367db6a36)   
  [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
 
 

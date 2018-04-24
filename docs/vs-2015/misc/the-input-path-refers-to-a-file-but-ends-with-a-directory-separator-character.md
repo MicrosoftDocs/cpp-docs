@@ -25,6 +25,6 @@ An operation was attempted requiring that a filename be supplied, but the suppli
 -   Remove the extraneous character.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Reading from Files](../Topic/Reading%20from%20Files%20in%20Visual%20Basic.md)   
- [Writing to Files](../Topic/Writing%20to%20Files%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [Reading from Files](http://msdn.microsoft.com/library/ad831a1b-7d01-4f07-a47b-799f3037df19)   
+ [Writing to Files](http://msdn.microsoft.com/library/ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e)

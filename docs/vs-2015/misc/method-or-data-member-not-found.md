@@ -25,4 +25,4 @@ The method or data member you have tried to access was not found.
 -   Make sure you did not misspell the name of the method or data member.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

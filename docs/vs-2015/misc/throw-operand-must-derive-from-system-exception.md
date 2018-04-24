@@ -34,7 +34,7 @@ The argument supplied to `Throw` must either be an instance of `System.Exception
     ```  
   
 ## See Also  
- [Throw Statement](../Topic/Throw%20Statement%20\(Visual%20Basic\).md)   
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
+ [Throw Statement](http://msdn.microsoft.com/library/a6e07406-5c8a-4498-87a2-8339f3651d62)   
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
  [Exception Class in Visual Basic](http://msdn.microsoft.com/en-us/9aac396f-34ca-4afb-8e6c-e523cb690ba9)   
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)

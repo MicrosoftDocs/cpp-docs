@@ -26,8 +26,8 @@ manager: "wpickett"
 1.  
   
 ## See Also  
- [Friend](../Topic/Friend%20\(Visual%20Basic\).md)   
- [Protected](../Topic/Protected%20\(Visual%20Basic\).md)   
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)   
+ [Friend](http://msdn.microsoft.com/library/b664605e-1c79-4728-b996-aa59c50846bc)   
+ [Protected](http://msdn.microsoft.com/library/74ad3d56-309f-49d2-b60c-1d0157d010e8)   
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)   
+ [Procedures](http://msdn.microsoft.com/library/9effbcf0-80a0-4d1a-98f4-2c6920592766)   
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)

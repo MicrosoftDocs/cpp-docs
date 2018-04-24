@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1028
 Unexpected preprocessor directive  
   
- A [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md) was found but not expected.  
+ A [preprocessor directive](http://msdn.microsoft.com/library/f2406090-b244-4f7e-ab72-3698fefed724) was found but not expected.  
   
  For example, a `#endif` was found with no preceding `#if`.  
   

@@ -41,5 +41,5 @@ You cannot initialize an instance of `Object` by using object initializer syntax
     ```  
   
 ## See Also  
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [Object Data Type](../Topic/Object%20Data%20Type.md)
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
+ [Object Data Type](http://msdn.microsoft.com/library/61ea4a7c-3b3d-48d4-adc4-eacfa91779b2)

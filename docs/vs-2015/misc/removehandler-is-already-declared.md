@@ -30,5 +30,5 @@ More than one `RemoveHandler` declaration appeared in a custom event declaration
 -   Remove the redundant `RemoveHandler` statement.  
   
 ## See Also  
- [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [RemoveHandler Statement](http://msdn.microsoft.com/library/647cd825-e877-4910-b4f1-8d168beebe6a)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

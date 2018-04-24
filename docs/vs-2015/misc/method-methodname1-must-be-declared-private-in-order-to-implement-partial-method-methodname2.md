@@ -58,5 +58,5 @@ End Class
     ```  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)   
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)   
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)

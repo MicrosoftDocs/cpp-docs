@@ -83,11 +83,11 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 -   A `concurrent_vector` object does not use [move semantics](../../cpp/rvalue-reference-declarator-amp-amp.md) when you append to it.  
   
--   The `concurrent_vector` class does not provide the `erase` or `pop_back` methods. As with `vector`, use the [clear](../Topic/concurrent_vector::clear%20Method.md) method to remove all elements from a `concurrent_vector` object.  
+-   The `concurrent_vector` class does not provide the `erase` or `pop_back` methods. As with `vector`, use the [clear](http://msdn.microsoft.com/library/a54a5b8e-eee6-4d41-9192-76c88a3e484a) method to remove all elements from a `concurrent_vector` object.  
   
 -   The `concurrent_vector` class does not store its elements contiguously in memory. Therefore, you cannot use the `concurrent_vector` class in all the ways that you can use an array. For example, for a variable named `v` of type `concurrent_vector`, the expression `&v[0]+2` produces undefined behavior.  
   
--   The `concurrent_vector` class defines the [grow_by](../Topic/concurrent_vector::grow_by%20Method.md) and [grow_to_at_least](../Topic/concurrent_vector::grow_to_at_least%20Method.md) methods. These methods resemble the [resize](../Topic/concurrent_vector::resize%20Method.md) method, except that they are concurrency-safe.  
+-   The `concurrent_vector` class defines the [grow_by](http://msdn.microsoft.com/library/3aef8f98-e5a8-40a6-8db8-91315f41dadc) and [grow_to_at_least](http://msdn.microsoft.com/library/d514c0d3-3d22-44b5-b651-1290ffac7c40) methods. These methods resemble the [resize](http://msdn.microsoft.com/library/7338d31b-ee0b-46b7-a9f4-2c6c255f29e3) method, except that they are concurrency-safe.  
   
 -   A `concurrent_vector` object does not relocate its elements when you append to it or resize it. This enables existing pointers and iterators to remain valid during concurrent operations.  
   
@@ -100,19 +100,19 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 ||||  
 |-|-|-|  
-|[at](../Topic/concurrent_vector::at%20Method.md)|[end](../Topic/concurrent_vector::end%20Method.md)|[operator&#91;&#93;](../Topic/concurrent_vector::operatorOperator.md)|  
-|[begin](../Topic/concurrent_vector::begin%20Method.md)|[front](../Topic/concurrent_vector::front%20Method.md)|[push_back](../Topic/concurrent_vector::push_back%20Method.md)|  
-|[back](../Topic/concurrent_vector::back%20Method.md)|[grow_by](../Topic/concurrent_vector::grow_by%20Method.md)|[rbegin](../Topic/concurrent_vector::rbegin%20Method.md)|  
-|[capacity](../Topic/concurrent_vector::capacity%20Method.md)|[grow_to_at_least](../Topic/concurrent_vector::grow_to_at_least%20Method.md)|[rend](../Topic/concurrent_vector::rend%20Method.md)|  
-|[empty](../Topic/concurrent_vector::empty%20Method.md)|[max_size](../Topic/concurrent_vector::max_size%20Method.md)|[size](../Topic/concurrent_vector::size%20Method.md)|  
+|[at](http://msdn.microsoft.com/library/c3663c3a-1342-4f56-86ef-3f33d19af211)|[end](http://msdn.microsoft.com/library/a8e71845-f5a4-4333-9598-8a1732cb8724)|[operator&#91;&#93;](http://msdn.microsoft.com/library/1875880f-643b-4d60-ab59-a27f480313e5)|  
+|[begin](http://msdn.microsoft.com/library/fd3a7972-420e-4622-928c-60d97da55953)|[front](http://msdn.microsoft.com/library/8cd9c8b9-895c-4153-b22a-bafca902b93c)|[push_back](http://msdn.microsoft.com/library/d85745f0-7e1a-4000-8a99-5710d4f05103)|  
+|[back](http://msdn.microsoft.com/library/fa42a458-b358-4037-b65b-e48b21a1609d)|[grow_by](http://msdn.microsoft.com/library/3aef8f98-e5a8-40a6-8db8-91315f41dadc)|[rbegin](http://msdn.microsoft.com/library/ae710418-a6cb-4370-b71b-a4915ee2e709)|  
+|[capacity](http://msdn.microsoft.com/library/99ac661c-09b7-43a4-a331-7baf0bdee6a5)|[grow_to_at_least](http://msdn.microsoft.com/library/d514c0d3-3d22-44b5-b651-1290ffac7c40)|[rend](http://msdn.microsoft.com/library/6582437f-942f-4fa7-bad6-60de775afb1e)|  
+|[empty](http://msdn.microsoft.com/library/e9f9bee2-d482-44ba-9eb4-0a3205baf6c8)|[max_size](http://msdn.microsoft.com/library/4f064522-5e52-4e3b-ba40-4aa432c56ba8)|[size](http://msdn.microsoft.com/library/3231e1e5-546d-449a-b7b4-fadaa0bb817d)|  
   
  Operations that the runtime provides for compatibility with the STL, for example, `reserve`, are not concurrency-safe. The following table shows the common methods and operators that are not concurrency-safe.  
   
 |||  
 |-|-|  
-|[assign](../Topic/concurrent_vector::assign%20Method.md)|[reserve](../Topic/concurrent_vector::reserve%20Method.md)|  
-|[clear](../Topic/concurrent_vector::clear%20Method.md)|[resize](../Topic/concurrent_vector::resize%20Method.md)|  
-|[operator=](../Topic/concurrent_vector::operator=%20Operator.md)|[shrink_to_fit](../Topic/concurrent_vector::shrink_to_fit%20Method.md)|  
+|[assign](http://msdn.microsoft.com/library/cd9aa3dc-8845-4bd9-a0b8-0fda4a19da6a)|[reserve](http://msdn.microsoft.com/library/3f531d7f-87ce-4a8c-aff2-daa00b14edd6)|  
+|[clear](http://msdn.microsoft.com/library/a54a5b8e-eee6-4d41-9192-76c88a3e484a)|[resize](http://msdn.microsoft.com/library/7338d31b-ee0b-46b7-a9f4-2c6c255f29e3)|  
+|[operator=](http://msdn.microsoft.com/library/8547f316-2473-439f-8fee-39180d7843e5)|[shrink_to_fit](http://msdn.microsoft.com/library/b5b67a00-6198-4feb-8b78-de1ee29e4229)|  
   
  Operations that modify the value of existing elements are not concurrency-safe. Use a synchronization object such as a [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) object to synchronize concurrent read and write operations to the same data element. For more information about synchronization objects, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md).  
   
@@ -120,7 +120,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  [!code-cpp[concrt-vector-safety#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-vector-safety/cpp/vector-safety.cpp#1)]  
   
- Although the `end` method is concurrency-safe, a concurrent call to the [push_back](../Topic/concurrent_vector::push_back%20Method.md) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
+ Although the `end` method is concurrency-safe, a concurrent call to the [push_back](http://msdn.microsoft.com/library/d85745f0-7e1a-4000-8a99-5710d4f05103) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
   
 ###  <a name="vector-exceptions"></a> Exception Safety  
  If a growth or assignment operation throws an exception, the state of the `concurrent_vector` object becomes invalid. The behavior of a `concurrent_vector` object that is in an invalid state is undefined unless stated otherwise. However, the destructor always frees the memory that the object allocates, even if the object is in an invalid state.  
@@ -143,11 +143,11 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 -   The `concurrent_queue` class provides iterator support that is not concurrency-safe.  
   
--   The `concurrent_queue` class does not provide the `front` or `pop` methods. The `concurrent_queue` class replaces these methods by defining the [try_pop](../Topic/concurrent_queue::try_pop%20Method.md) method.  
+-   The `concurrent_queue` class does not provide the `front` or `pop` methods. The `concurrent_queue` class replaces these methods by defining the [try_pop](http://msdn.microsoft.com/library/cae07ea0-5fe0-468d-90c9-641a953b755b) method.  
   
 -   The `concurrent_queue` class does not provide the `back` method. Therefore, you cannot reference the end of the queue.  
   
--   The `concurrent_queue` class provides the [unsafe_size](../Topic/concurrent_queue::unsafe_size%20Method.md) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.  
+-   The `concurrent_queue` class provides the [unsafe_size](http://msdn.microsoft.com/library/cea93331-3c14-4db3-96ca-3a3f8ed75c9b) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.  
   
 ###  <a name="queue-safety"></a> Concurrency-Safe Operations  
  All methods that enqueue to or dequeue from a `concurrent_queue` object are concurrency-safe.  
@@ -156,8 +156,8 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||  
 |-|-|  
-|[empty](../Topic/concurrent_queue::empty%20Method.md)|[push](../Topic/concurrent_queue::push%20Method.md)|  
-|[get_allocator](../Topic/concurrent_queue::get_allocator%20Method.md)|[try_pop](../Topic/concurrent_queue::try_pop%20Method.md)|  
+|[empty](http://msdn.microsoft.com/library/6e50bf38-1be9-4c1d-a6d9-9c7195543cbf)|[push](http://msdn.microsoft.com/library/a0013721-3a3b-4307-a29e-710d8c39d8a9)|  
+|[get_allocator](http://msdn.microsoft.com/library/7f8e77ba-cf82-45ca-ba99-437e7bf763c9)|[try_pop](http://msdn.microsoft.com/library/cae07ea0-5fe0-468d-90c9-641a953b755b)|  
   
  Although the `empty` method is concurrency-safe, a concurrent operation may cause the queue to grow or shrink before the `empty` method returns.  
   
@@ -165,8 +165,8 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||  
 |-|-|  
-|[clear](../Topic/concurrent_queue::clear%20Method.md)|[unsafe_end](../Topic/concurrent_queue::unsafe_end%20Method.md)|  
-|[unsafe_begin](../Topic/concurrent_queue::unsafe_begin%20Method.md)|[unsafe_size](../Topic/concurrent_queue::unsafe_size%20Method.md)|  
+|[clear](http://msdn.microsoft.com/library/9318f907-95f3-4e09-bc26-ba7218854e23)|[unsafe_end](http://msdn.microsoft.com/library/498dbad1-b8e2-4487-98e9-0d0ddcfc9fbb)|  
+|[unsafe_begin](http://msdn.microsoft.com/library/91524d7e-689c-4837-b8d8-00c00e6d7816)|[unsafe_size](http://msdn.microsoft.com/library/cea93331-3c14-4db3-96ca-3a3f8ed75c9b)|  
   
 ###  <a name="queue-iterators"></a> Iterator Support  
  The `concurrent_queue` provides iterators that are not concurrency-safe. We recommend that you use these iterators for debugging only.  
@@ -208,10 +208,10 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||||  
 |-|-|-|-|  
-|[at](../Topic/concurrent_unordered_map::at%20Method.md)|`count`|`find`|[key_eq](../Topic/concurrent_unordered_map::key_eq%20Method.md)|  
+|[at](http://msdn.microsoft.com/library/e64bf194-8ea3-4344-bbbd-73d528394654)|`count`|`find`|[key_eq](http://msdn.microsoft.com/library/86357e58-500c-4f22-9cdb-8dfe1ce8cd3f)|  
 |`begin`|`empty`|`get_allocator`|`max_size`|  
-|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](../Topic/concurrent_unordered_map::operatorOperator.md)|  
-|`cend`|`equal_range`|[insert](../Topic/concurrent_unordered_map::insert%20Method.md)|`size`|  
+|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](http://msdn.microsoft.com/library/e2179a8f-fe44-4239-8c4b-7ed5dfc2c668)|  
+|`cend`|`equal_range`|[insert](http://msdn.microsoft.com/library/d729352a-5292-400c-8f89-c7cd805bb6fa)|`size`|  
   
  Although the `count` method can be called safely from concurrently running threads, different threads can receive different results if a new value is simultaneously inserted into the container.  
   
@@ -220,7 +220,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ||||  
 |-|-|-|  
 |`clear`|`max_load_factor`|`rehash`|  
-|`load_factor`|[operator=](../Topic/concurrent_unordered_map::operator=%20Operator.md)|[swap](../Topic/concurrent_unordered_map::swap%20Method.md)|  
+|`load_factor`|[operator=](http://msdn.microsoft.com/library/9f1a017d-886e-4419-9494-55f937779422)|[swap](http://msdn.microsoft.com/library/115aa8a0-c542-4874-8bf5-c7dedb26ca95)|  
   
  In addition to these methods, any method that begins with `unsafe_` is also not concurrency-safe.  
   
@@ -229,7 +229,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ##  <a name="unordered_multimap"></a> concurrent_unordered_multimap Class  
  The [concurrency::concurrent_unordered_multimap](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md) class closely resembles the `concurrent_unordered_map` class except that it allows for multiple values to map to the same key. It also differs from `concurrent_unordered_map` in the following ways:  
   
--   The [concurrent_unordered_multimap::insert](../Topic/concurrent_unordered_multimap::insert%20Method.md) method returns an iterator instead of `std::pair<iterator, bool>`.  
+-   The [concurrent_unordered_multimap::insert](http://msdn.microsoft.com/library/6da233d1-1809-42c6-a8ab-75959c3891c1) method returns an iterator instead of `std::pair<iterator, bool>`.  
   
 -   The `concurrent_unordered_multimap` class does not provide `operator[]` nor the `at` method.  
   
@@ -251,7 +251,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ##  <a name="unordered_multiset"></a> concurrent_unordered_multiset Class  
  The [concurrency::concurrent_unordered_multiset](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md) class closely resembles the `concurrent_unordered_set` class except that it allows for duplicate values. It also differs from `concurrent_unordered_set` in the following ways:  
   
--   The [concurrent_unordered_multiset::insert](../Topic/concurrent_unordered_multiset::insert%20Method.md) method returns an iterator instead of `std::pair<iterator, bool>`.  
+-   The [concurrent_unordered_multiset::insert](http://msdn.microsoft.com/library/0aefda94-617d-4754-ae3c-7cdc52b01933) method returns an iterator instead of `std::pair<iterator, bool>`.  
   
 -   The `concurrent_unordered_multiset` class does not provide `operator[]` nor the `at` method.  
   
@@ -271,13 +271,13 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |Method|Description|  
 |------------|-----------------|  
-|[local](../Topic/combinable::local%20Method.md)|Retrieves a reference to the local variable that is associated with the current thread context.|  
-|[clear](../Topic/combinable::clear%20Method.md)|Removes all thread-local variables from the `combinable` object.|  
-|[combine](../Topic/combinable::combine%20Method.md)<br /><br /> [combine_each](../Topic/combinable::combine_each%20Method.md)|Uses the provided combine function to generate a final value from the set of all thread-local computations.|  
+|[local](http://msdn.microsoft.com/library/496c298e-f159-44f3-8c25-ebf8f5b175be)|Retrieves a reference to the local variable that is associated with the current thread context.|  
+|[clear](http://msdn.microsoft.com/library/e5f0de02-0557-4876-b4f5-244580536d60)|Removes all thread-local variables from the `combinable` object.|  
+|[combine](http://msdn.microsoft.com/library/492e55cc-c1f8-4e0e-8356-2636f25563de)<br /><br /> [combine_each](http://msdn.microsoft.com/library/ac44fbc7-69b5-44dc-86f8-b772dab6729b)|Uses the provided combine function to generate a final value from the set of all thread-local computations.|  
   
  The `combinable` class is a template class that is parameterized on the final merged result. If you call the default constructor, the `T` template parameter type must have a default constructor and a copy constructor. If the `T` template parameter type does not have a default constructor, call the overloaded version of the constructor that takes an initialization function as its parameter.  
   
- You can store additional data in a `combinable` object after you call the [combine](../Topic/combinable::combine%20Method.md) or [combine_each](../Topic/combinable::combine_each%20Method.md) methods. You can also call the `combine` and `combine_each` methods multiple times. If no local value in a `combinable` object changes, the `combine` and `combine_each` methods produce the same result every time that they are called.  
+ You can store additional data in a `combinable` object after you call the [combine](http://msdn.microsoft.com/library/492e55cc-c1f8-4e0e-8356-2636f25563de) or [combine_each](http://msdn.microsoft.com/library/ac44fbc7-69b5-44dc-86f8-b772dab6729b) methods. You can also call the `combine` and `combine_each` methods multiple times. If no local value in a `combinable` object changes, the `combine` and `combine_each` methods produce the same result every time that they are called.  
   
 ###  <a name="combinable-examples"></a> Examples  
  For examples about how to use the `combinable` class, see the following topics:  

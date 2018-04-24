@@ -19,7 +19,7 @@ manager: "douge"
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK. This topic is retained only for backward compatibility, and for adding existing controls to the Toolbox.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](http://msdn.microsoft.com/library/9cc34db9-b0d1-4951-a02f-7537fbbb51ad).  
   
  A VSPackage based on an interop assembly can extend [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Toolbox** functionality by adding ActiveX controls.  
   
@@ -27,7 +27,7 @@ manager: "douge"
   
  For information on how a VSPackage manages the **Toolbox** using [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], see [Managing the Toolbox](../misc/managing-the-toolbox.md).  
   
- For information on managing the **Toolbox** through automation, see [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md).  
+ For information on managing the **Toolbox** through automation, see [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## Procedures  
  Items added to the **Toolbox** should implement the standard **Toolbox** Clipboard formats unless the VSPackage adding the items acts as a **Toolbox** item provider — providing implementation support for the new format.  
@@ -140,4 +140,4 @@ manager: "douge"
  [Registering Toolbox Support Features](../misc/registering-toolbox-support-features.md)   
  [Advanced Toolbox Control Development](../misc/advanced-toolbox-control-development.md)   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)   
- [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)
+ [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)

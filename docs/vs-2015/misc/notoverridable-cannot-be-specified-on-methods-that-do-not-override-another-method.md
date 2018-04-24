@@ -30,7 +30,7 @@ Properties and methods are `NotOverridable` by default. The `NotOverridable` mod
 -   Remove the `NotOverridable` modifier from properties and methods that do not override another member.  
   
 ## See Also  
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)   
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)   
+ [NotOverridable](http://msdn.microsoft.com/library/66ec6984-f5f5-4857-b362-6a3907aaf9e0)   
+ [Overridable](http://msdn.microsoft.com/library/612581e7-8a4c-4a5d-beff-3402fffa6f35)

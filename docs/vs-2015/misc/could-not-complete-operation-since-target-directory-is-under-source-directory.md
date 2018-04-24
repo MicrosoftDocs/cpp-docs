@@ -25,5 +25,5 @@ A cyclic operation has failed. Cyclic operations cycle and therefore cannot comp
 -   When inheriting, make sure that there are no cyclic references.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
  [Debugging Basics: Breakpoints](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)

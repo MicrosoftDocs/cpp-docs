@@ -31,7 +31,7 @@ The latest version of this topic can be found at [Properties and Property Pages 
   
 The following classes support properties and property pages:  
   
--   [CComDispatchDriver](../Topic/CComDispatchDriver.md) Retrieves or sets an object's properties through an `IDispatch` pointer.  
+-   [CComDispatchDriver](http://msdn.microsoft.com/library/3c1171f6-0f5b-439d-bd5f-30e8ac5a7245) Retrieves or sets an object's properties through an `IDispatch` pointer.  
   
 -   [CStockPropImpl](../atl/reference/cstockpropimpl-class.md) Implements the stock properties supported by ATL.  
   

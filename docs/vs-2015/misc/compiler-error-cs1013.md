@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1013
 Invalid number  
   
- The compiler detected a malformed number. For more information on integral types, see the [Integral Types Table](../Topic/Integral%20Types%20Table%20\(C%23%20Reference\).md).  
+ The compiler detected a malformed number. For more information on integral types, see the [Integral Types Table](http://msdn.microsoft.com/library/62e86126-46ff-40b0-9028-e61d7558268c).  
   
 ## Example  
  The following sample generates CS1013:  

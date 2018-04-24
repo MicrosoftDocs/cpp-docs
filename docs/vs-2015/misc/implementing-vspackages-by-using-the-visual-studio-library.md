@@ -51,7 +51,7 @@ BEGIN_COM_MAP(BasicPackage)
 END_COM_MAP()  
 ```  
   
- For more information about COM maps, see [Implementing CComObjectRootEx](../atl/implementing-ccomobjectrootex.md) and [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md).  
+ For more information about COM maps, see [Implementing CComObjectRootEx](../atl/implementing-ccomobjectrootex.md) and [COM_INTERFACE_ENTRY Macros](~/atl/reference/com-interface-entry-macros.md).  
   
 ## Supporting Registration with Registry Maps  
  Visual Studio Library uses ATL-style .RGS files to support registration of COM objects. To support token replacement in the .RGS file, Visual Studio Library uses registry maps. Registry maps list symbols to be replaced and support the use of IDs for string table resources.  

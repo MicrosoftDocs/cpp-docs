@@ -29,7 +29,7 @@ The latest version of this topic can be found at [Compiler Error C2842](https://
   
 class' : a managed or WinRT type may not define its own 'operator new' or 'operator delete'  
   
- You can define your own [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) or [operator delete](../Topic/operator%20delete%20\(%3Cnew%3E\).md) to manage memory allocation on the native heap. However, reference classes cannot define these operators because they are only allocated on the managed heap.  
+ You can define your own [operator new](http://msdn.microsoft.com/library/2476d0f9-59df-485c-981e-ba9f7ee83507) or [operator delete](http://msdn.microsoft.com/library/7c45e232-ceb2-4a77-b0af-da2a935d46a2) to manage memory allocation on the native heap. However, reference classes cannot define these operators because they are only allocated on the managed heap.  
   
  For more information, see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).  
   

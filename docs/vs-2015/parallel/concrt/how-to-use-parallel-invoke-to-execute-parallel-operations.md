@@ -23,7 +23,7 @@ manager: "ghogen"
 # How to: Use parallel_invoke to Execute Parallel Operations
 [!INCLUDE[blank_token](../../includes/blank-token.md)]
 
-This example shows how to use the [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) algorithm to improve the performance of a program that performs multiple operations on a shared data source. Because no operations modify the source, they can be executed in parallel in a straightforward manner.  
+This example shows how to use the [concurrency::parallel_invoke](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b) algorithm to improve the performance of a program that performs multiple operations on a shared data source. Because no operations modify the source, they can be executed in parallel in a straightforward manner.  
   
 ## Example  
  Consider the following code example that creates a variable of type `MyDataType`, calls a function to initialize that variable, and then performs multiple lengthy operations on that data.  
@@ -74,7 +74,7 @@ The following palindromes appear in the text:
   
  Because this example performs three tasks in parallel, you should not expect performance to scale on computers that have more than three processors. To improve performance more, you can break the longest-running tasks into smaller tasks and run those tasks in parallel.  
   
- You can use the `parallel_invoke` algorithm instead of the [concurrency::task_group](../Topic/task_group%20Class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes if you do not require support for cancellation. For an example that compares the usage of the `parallel_invoke` algorithm versus task groups, see [How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md).  
+ You can use the `parallel_invoke` algorithm instead of the [concurrency::task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes if you do not require support for cancellation. For an example that compares the usage of the `parallel_invoke` algorithm versus task groups, see [How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md).  
   
 ## Compiling the Code  
  To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `parallel-word-mining.cpp` and then run the following command in a Visual Studio Command Prompt window.  
@@ -83,5 +83,5 @@ The following palindromes appear in the text:
   
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_invoke Function](../Topic/parallel_invoke%20Function.md)
+ [parallel_invoke Function](http://msdn.microsoft.com/library/8c8fe553-f372-4138-b9c6-e31b0e83eb9b)
 

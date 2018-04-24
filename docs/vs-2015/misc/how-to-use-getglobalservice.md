@@ -16,7 +16,7 @@ caps.latest.revision: 14
 manager: "douge"
 ---
 # How to: Use GetGlobalService
-Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md).  
+Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](http://msdn.microsoft.com/library/001551da-4847-4f59-a0b2-fcd327d7f5ca).  
   
  You can get most [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] services by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method.  
   
@@ -37,9 +37,9 @@ Sometimes you may need to get a service from a tool window or control container 
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  
   
-     This code obtains an SVsActivityLog service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](../Topic/How%20to:%20Use%20the%20Activity%20Log.md).  
+     This code obtains an SVsActivityLog service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](http://msdn.microsoft.com/library/bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd).  
   
 ## See Also  
- [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md)   
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [How to: Troubleshoot Services](http://msdn.microsoft.com/library/001551da-4847-4f59-a0b2-fcd327d7f5ca)   
+ [Using and Providing Services](http://msdn.microsoft.com/library/c0b415ba-b825-4da0-9faf-8a60a663e302)   
+ [Service Essentials](http://msdn.microsoft.com/library/fbe84ad9-efe1-48b1-aba3-b50b90424d47)

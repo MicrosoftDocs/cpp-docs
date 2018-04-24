@@ -23,11 +23,11 @@ manager: "wpickett"
 # &lt;type1&gt; &#39;&lt;membername&gt;&#39; shadows an overloadable member declared in the base &lt;type2&gt; &#39;&lt;classname&gt;&#39;
 \<type1> '\<membername>' shadows an overloadable member declared in the base \<type2> '\<classname>. If you want to overload the base method, this method must be declared 'Overloads'.  
   
- A derived class defines a `Function` or `Sub` procedure or a `Property` with the same name as a procedure or property defined in the base class. Because procedures and properties are overloadable members, the derived class can either overload or shadow the base class member. However, the derived class code does not specify either [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md) or [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md) in the declaration. In the absence of either keyword, the compiler assumes `Shadows`.  
+ A derived class defines a `Function` or `Sub` procedure or a `Property` with the same name as a procedure or property defined in the base class. Because procedures and properties are overloadable members, the derived class can either overload or shadow the base class member. However, the derived class code does not specify either [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042) or [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6) in the declaration. In the absence of either keyword, the compiler assumes `Shadows`.  
   
  It is good programming practice to specify either `Overloads` or `Shadows`. This makes your code easier to read and understand.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC40003  
   
@@ -40,10 +40,10 @@ manager: "wpickett"
 -   If you do not want to either overload or shadow the base class member, change the name of the derived class member.  
   
 ## See Also  
- [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)   
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)   
- [Property Statement](../Topic/Property%20Statement.md)
+ [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a)   
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)   
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)   
+ [Shadowing in Visual Basic](http://msdn.microsoft.com/library/54bb4c25-12c4-4181-b4a0-93546053964e)   
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)   
+ [Sub Statement](http://msdn.microsoft.com/library/e347d700-d06c-405b-b302-e9b1edb57dfc)   
+ [Property Statement](http://msdn.microsoft.com/library/3155edaf-8ebd-45c6-9cef-11d5d2dc8d38)

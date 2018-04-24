@@ -16,4 +16,4 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # How to: Nest Shapes - redirect
-This topic has been merged with others. Please see [Customizing Presentation on the Diagram](../Topic/Customizing%20Presentation%20on%20the%20Diagram.md).
+This topic has been merged with others. Please see [Customizing Presentation on the Diagram](http://msdn.microsoft.com/library/259836b0-783c-46a0-b7c7-dc4b2f7b4a81).

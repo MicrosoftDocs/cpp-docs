@@ -29,7 +29,7 @@ manager: "ghogen"
 The latest version of this topic can be found at [Overriding a Virtual Function (Visual C++)](https://docs.microsoft.com/cpp/ide/overriding-a-virtual-function-visual-cpp).  
   
   
-You can override virtual functions defined in a base class from the Visual Studio [Properties window](../Topic/Properties%20Window.md).  
+You can override virtual functions defined in a base class from the Visual Studio [Properties window](http://msdn.microsoft.com/library/e6e0fa4f-75c4-4a52-af15-281cd61876ca).  
   
 ### To override a virtual function in the Properties window  
   

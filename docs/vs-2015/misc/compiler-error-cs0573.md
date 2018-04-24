@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0573
 'field declaration' : cannot have instance field initializers in structs  
   
- You cannot initialize an instance field of a [struct](../Topic/struct%20\(C%23%20Reference\).md). Fields of value types will be initialized to their default values, and reference-type fields will be initialized to `null`.  
+ You cannot initialize an instance field of a [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c). Fields of value types will be initialized to their default values, and reference-type fields will be initialized to `null`.  
   
 ## Example  
  The following sample generates CS0573:  

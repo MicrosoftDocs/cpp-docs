@@ -32,4 +32,4 @@ A `Const` statement contains an invalid keyword. A `Const` statement can include
 2.  Remove the invalid keyword from the `Const` statement.  
   
 ## See Also  
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)

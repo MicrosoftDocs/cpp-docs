@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0515
 'function' : access modifiers are not allowed on static constructors  
   
- A static constructor cannot have an [access modifier](../Topic/Modifiers%20\(C%23%20Reference\).md).  
+ A static constructor cannot have an [access modifier](http://msdn.microsoft.com/library/c96691dd-b357-49ec-b5ae-03ca214fadfb).  
   
 ## Example  
  The following sample generates CS0515:  

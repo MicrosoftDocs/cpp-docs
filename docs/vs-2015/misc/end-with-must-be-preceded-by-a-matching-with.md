@@ -34,4 +34,4 @@ An `End With` statement occurs without a corresponding `With` statement. `End Wi
 3.  Ensure that this `With` block is correctly formatted.  
   
 ## See Also  
- [With...End With Statement](../Topic/With...End%20With%20Statement%20\(Visual%20Basic\).md)
+ [With...End With Statement](http://msdn.microsoft.com/library/340d5fbb-4f43-48ec-a024-80843c137817)

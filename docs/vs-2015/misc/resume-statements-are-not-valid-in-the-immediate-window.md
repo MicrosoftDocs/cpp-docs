@@ -31,4 +31,4 @@ Resume statements can only be used in source code.
   
 ## See Also  
  [Resume - delete](http://msdn.microsoft.com/en-us/fc82a786-a342-49d0-82a3-63f33e28f00f)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

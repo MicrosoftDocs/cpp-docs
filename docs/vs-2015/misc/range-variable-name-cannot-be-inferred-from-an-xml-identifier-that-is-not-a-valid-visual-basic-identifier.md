@@ -28,8 +28,8 @@ manager: "wpickett"
 1.  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)   
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [XML Literals and the XML 1.0 Specification](../Topic/XML%20Literals%20and%20the%20XML%201.0%20Specification%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)   
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)   
+ [XML Literals and the XML 1.0 Specification](http://msdn.microsoft.com/library/46f046e5-293c-41a3-b893-4e5f6e32e78a)

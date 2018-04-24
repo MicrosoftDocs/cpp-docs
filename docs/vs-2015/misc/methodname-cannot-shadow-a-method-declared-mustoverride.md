@@ -32,4 +32,4 @@ A property or method with the `MustOverride` modifier and the same name is decla
 2.  Remove the `MustOverride` modifier from the property or method in the base class.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)

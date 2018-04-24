@@ -54,8 +54,8 @@ manager: "douge"
 ## See Also  
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A>   
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)   
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
+ [Product and Package Schema Reference](http://msdn.microsoft.com/library/5a74878f-b896-4cca-b968-98d00fe78fb0)   
+ [Publish Page, Project Designer](http://msdn.microsoft.com/library/153527c6-8b95-4003-8e8e-03a489d0a629)   
  [MSBuild Error MSB3116](../misc/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3117](../misc/msbuild-error-msb3117.md)   
  [MSBuild Error MSB3118](../misc/msbuild-error-msb3118.md)   

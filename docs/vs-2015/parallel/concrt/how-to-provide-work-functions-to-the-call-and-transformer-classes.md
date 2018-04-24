@@ -47,7 +47,7 @@ This topic illustrates several ways to provide work functions to the [concurrenc
  [!code-cpp[concrt-call-functor#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-call-functor/cpp/concrt-call-functor.cpp#1)]  
   
 ## Example  
- The following example resembles the previous one, except that it uses the [std::bind1st](../Topic/bind1st%20Function.md) and [std::mem_fun](../Topic/mem_fun%20Function.md) functions to bind a `call` object to a class method.  
+ The following example resembles the previous one, except that it uses the [std::bind1st](http://msdn.microsoft.com/library/4fd982e2-3588-47e9-b5a9-84ba4fff1923) and [std::mem_fun](http://msdn.microsoft.com/library/a4c82726-ab74-4265-845b-229004e63e9d) functions to bind a `call` object to a class method.  
   
  Use this technique if you have to bind a `call` or `transformer` object to a specific class method instead of the function call operator, `operator()`.  
   

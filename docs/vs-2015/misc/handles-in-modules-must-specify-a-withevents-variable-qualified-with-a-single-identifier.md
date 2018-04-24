@@ -30,6 +30,6 @@ To specify an event handler, `Handles` statements must specify an object variabl
 -   Use the `WithEvents` modifier to declare variables that will be used with the `Handles` statement.  
   
 ## See Also  
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)   
+ [WithEvents](http://msdn.microsoft.com/library/19d461f5-d72f-4de9-8c1d-0a6650316990)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

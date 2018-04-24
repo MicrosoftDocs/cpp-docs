@@ -38,5 +38,5 @@ The following messages may appear with this error. See the individual topic for 
  **Error ID:** BC42304  
   
 ## See Also  
- [XML Comment Tags](../Topic/Recommended%20XML%20Tags%20for%20Documentation%20Comments%20\(Visual%20Basic\).md)   
- [Documenting Your Code with XML](../Topic/Documenting%20Your%20Code%20with%20XML%20\(Visual%20Basic\).md)
+ [XML Comment Tags](http://msdn.microsoft.com/library/294e0736-ff1e-498e-af83-6db71ed41a72)   
+ [Documenting Your Code with XML](http://msdn.microsoft.com/library/a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235)

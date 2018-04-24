@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1020
 Overloadable binary operator expected  
   
- An attempt was made to define an [operator overload](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md), but the operator was not a binary operator, which takes two parameters.  
+ An attempt was made to define an [operator overload](http://msdn.microsoft.com/library/390d9d01-79fc-40ab-9ed3-0bf448da1b6a), but the operator was not a binary operator, which takes two parameters.  
   
  The following sample generates CS1020:  
   

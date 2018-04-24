@@ -25,7 +25,7 @@ manager: "wpickett"
   
  Two procedure declarations specify the same name and argument list, and the only difference is in the specification of `ByRef` or `ByVal` for one or more of the arguments. Overloaded versions of a procedure must differ from each other in the number, order, or data types of the arguments.  
   
- This message is a warning. `Shadows` is assumed by default. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ This message is a warning. `Shadows` is assumed by default. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
   
  **Error ID:** BC42003  
   
@@ -36,4 +36,4 @@ manager: "wpickett"
 -   If you do not intend to overload a procedure, change the procedure name in one of the declarations.  
   
 ## See Also  
- [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)
+ [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a)

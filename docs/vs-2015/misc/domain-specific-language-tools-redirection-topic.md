@@ -18,6 +18,6 @@ ms.author: "awills"
 manager: "kamrani"
 ---
 # Domain-Specific Language Tools - redirection topic
-This page has been superseded. Please go to [Modeling SDK for Visual Studio - Domain-Specific Languages](../Topic/Modeling%20SDK%20for%20Visual%20Studio%20-%20Domain-Specific%20Languages.md).  
+This page has been superseded. Please go to [Modeling SDK for Visual Studio - Domain-Specific Languages](http://msdn.microsoft.com/library/17a531e2-1964-4a9d-84fd-6fb1b4aee662).  
   
  Download the Visualization and Modeling SDK (DSL Tools) at [http://go.microsoft.com/fwlink/?LinkID=156073](http://go.microsoft.com/fwlink/?LinkID=156073).

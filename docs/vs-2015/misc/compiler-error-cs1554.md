@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS1554
 Declaration is not valid; use '\<type> operator op (...' instead  
   
- The return type for a user-defined [operator](../Topic/operator%20\(C%23%20Reference\)2.md) must appear before the keyword operator.  
+ The return type for a user-defined [operator](http://msdn.microsoft.com/library/59218cce-e90e-42f6-a6bb-30300981b86a) must appear before the keyword operator.  
   
  The following sample generates CS1554:  
   

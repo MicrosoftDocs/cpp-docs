@@ -30,5 +30,5 @@ An XML namespace prefix defined by an `Imports` statement matches a previously d
 -   Use a unique name for the XML namespace prefix.  
   
 ## See Also  
- [Imports Statement (XML Namespace)](../Topic/Imports%20Statement%20\(XML%20Namespace\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Imports Statement (XML Namespace)](http://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)   
+ [XML](http://msdn.microsoft.com/library/954b6e40-1246-4185-a018-4061724fcae9)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0152
 The label 'label' already occurs in this switch statement  
   
- A label was repeated in a [switch](../Topic/switch%20\(C%23%20Reference\).md) statement. For more information, see [switch](../Topic/switch%20\(C%23%20Reference\).md).  
+ A label was repeated in a [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb) statement. For more information, see [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).  
   
  The following sample generates CS0152:  
   

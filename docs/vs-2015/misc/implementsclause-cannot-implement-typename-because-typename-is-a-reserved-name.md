@@ -30,4 +30,4 @@ An `Implements` statement specified a reserved name.
 -   Rename the interface member that could not be implemented.  
   
 ## See Also  
- [Implements Statement](../Topic/Implements%20Statement.md)
+ [Implements Statement](http://msdn.microsoft.com/library/1fafb83f-f55a-4215-8ea9-681e8622613d)

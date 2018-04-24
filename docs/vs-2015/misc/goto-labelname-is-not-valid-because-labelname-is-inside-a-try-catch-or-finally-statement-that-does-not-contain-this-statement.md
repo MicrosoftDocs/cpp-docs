@@ -30,4 +30,4 @@ You cannot branch into a `Try...Catch...Finally` block.
 -   Restructure your code so that the label precedes the `Try...Catch...Finally` block.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)

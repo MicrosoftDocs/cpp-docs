@@ -25,4 +25,4 @@ An attempt to convert a variable from one type to another is not valid.
 1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

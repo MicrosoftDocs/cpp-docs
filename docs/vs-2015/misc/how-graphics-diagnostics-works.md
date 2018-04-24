@@ -38,4 +38,4 @@ Insert introduction here.
 2.  Specify a graphics log (.vsglog) file to open, and then choose the **Open** button.  
   
 > [!NOTE]
->  You can extract, modify, and save copies of meshes and textures from a graphics log by using graphics tools that are a part of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. However, the contents of the graphics log are not affected by these modifications. For information about these graphics tools, see [Working with 3-D Assets for Games and Apps](../Topic/Working%20with%203-D%20Assets%20for%20Games%20and%20Apps.md).
+>  You can extract, modify, and save copies of meshes and textures from a graphics log by using graphics tools that are a part of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. However, the contents of the graphics log are not affected by these modifications. For information about these graphics tools, see [Working with 3-D Assets for Games and Apps](http://msdn.microsoft.com/library/910d673b-c884-4eeb-9928-0e89f3d38cb6).

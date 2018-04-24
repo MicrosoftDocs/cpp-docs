@@ -30,4 +30,4 @@ Array modifiers are present on both the variable and its type, indicating an arr
 -   Remove the array modifier from the type specifier.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

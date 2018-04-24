@@ -32,4 +32,4 @@ An `End Enum` statement occurs without a corresponding `Enum` statement. `End En
 2.  Ensure that the `Enum` members are correctly formatted.  
   
 ## See Also  
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Enum Statement](http://msdn.microsoft.com/library/a45e51f1-65ff-48e1-bf32-79130f137377)

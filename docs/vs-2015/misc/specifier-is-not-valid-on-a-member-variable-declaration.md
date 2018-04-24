@@ -36,4 +36,4 @@ A `Dim` statement contains an invalid keyword. A `Dim` statement can include onl
 2.  If you have declared a `Static` variable outside of a procedure, either move the declaration inside a procedure or remove the `Static` keyword.  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)

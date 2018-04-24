@@ -40,6 +40,6 @@ A nonshared variable in a structure is declared with a `New` clause.
 -   Remove either the `Shared` modifier or the `New` keyword from the reference variable declaration.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)   
+ [Shared](http://msdn.microsoft.com/library/2bf7cf2c-b0dd-485e-8749-b5d674dab4cd)   
+ [New Operator](http://msdn.microsoft.com/library/d7d566d7-fe0e-4336-91f7-641a542de4d0)

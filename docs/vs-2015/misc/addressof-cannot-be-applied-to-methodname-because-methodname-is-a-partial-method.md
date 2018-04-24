@@ -42,5 +42,5 @@ A partial method has been passed to the `AddressOf` operator. Partial methods ar
     ```  
   
 ## See Also  
- [AddressOf Operator](../Topic/AddressOf%20Operator%20\(Visual%20Basic\).md)   
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [AddressOf Operator](http://msdn.microsoft.com/library/8105a59d-60d8-4ab5-b221-5899cdfacbf4)   
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)

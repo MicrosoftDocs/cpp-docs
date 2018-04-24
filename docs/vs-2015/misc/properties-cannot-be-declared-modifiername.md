@@ -30,4 +30,4 @@ There is an error in the syntax used in the `Property` declaration. This error g
 -   Check the syntax for the `Property` declaration.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

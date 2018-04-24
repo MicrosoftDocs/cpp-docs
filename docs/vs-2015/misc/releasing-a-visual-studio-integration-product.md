@@ -23,7 +23,7 @@ The topics in this section show you how to release your Visual Studio integratio
  [Installing VSPackages](../misc/installing-vspackages.md)  
  Discusses how to build and install VSPackages and how to support users who are running multiple versions of Visual Studio at the same time.  
   
- [RegPkg Utility](../Topic/RegPkg%20Utility.md)  
+ [RegPkg Utility](http://msdn.microsoft.com/library/1683ee18-59d1-4bab-a674-dd00dd960de3)  
  Describes the RegPkg utility, which is used to register a VSPackage and prepare it for deployment.  
   
  [Premier Partner Edition Setup and User Guide](http://msdn.microsoft.com/en-us/8ee4dad7-95d3-4f2d-a8d4-3ba9a80ecae2)  

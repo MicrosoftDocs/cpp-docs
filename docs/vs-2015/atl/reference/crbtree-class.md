@@ -69,7 +69,7 @@ class CRBTree
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBTree::CPair Class](../Topic/CRBTree::CPair%20Class.md)|A class containing the key and value elements.|  
+|[CRBTree::CPair Class](http://msdn.microsoft.com/library/35e224ed-407e-4864-90ee-2dac2432ad41)|A class containing the key and value elements.|  
   
 ### Public Constructors  
   
@@ -122,8 +122,8 @@ class CPair : public __POSITION
   
 |||  
 |-|-|  
-|[m_key](../Topic/CAtlMap::CPair::m_key.md)|The data member storing the key element.|  
-|[m_value](../Topic/CAtlMap::CPair::m_value.md)|The data member storing the value element.|  
+|[m_key](http://msdn.microsoft.com/library/2cfecf75-2479-40d9-b31e-1ea73900b843)|The data member storing the key element.|  
+|[m_value](http://msdn.microsoft.com/library/7415586d-1a85-4c60-a9d8-65ac08d36716)|The data member storing the value element.|  
   
 ##  <a name="crbtree___dtorcrbtree"></a>  CRBTree::~CRBTree  
  The destructor.  
@@ -172,7 +172,7 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
  The variable that receives the value.  
   
 ### Return Value  
- The first two forms return a pointer to a [CPair](../Topic/CRBTree::CPair%20Class.md). The third form obtains a key and a value for the given position.  
+ The first two forms return a pointer to a [CPair](http://msdn.microsoft.com/library/35e224ed-407e-4864-90ee-2dac2432ad41). The third form obtains a key and a value for the given position.  
   
 ### Remarks  
  The position value can be previously determined with a call to a method such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::GetTailPosition](#crbtree__gettailposition).  
@@ -232,7 +232,7 @@ CPair* GetNext(POSITION& pos) throw();
  The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::FindFirstKeyAfter](#crbtree__findfirstkeyafter).  
   
 ### Return Value  
- Returns a pointer to the next [CPair](../Topic/CRBTree::CPair%20Class.md) value in the tree.  
+ Returns a pointer to the next [CPair](http://msdn.microsoft.com/library/35e224ed-407e-4864-90ee-2dac2432ad41) value in the tree.  
   
 ### Remarks  
  The `pos` position counter is updated after each call. If the retrieved element is the last in the tree, `pos` is set to NULL.  
@@ -308,7 +308,7 @@ CPair* GetPrev(POSITION& pos) throw();
  The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::FindFirstKeyAfter](#crbtree__findfirstkeyafter).  
   
 ### Return Value  
- Returns a pointer to the previous [CPair](../Topic/CRBTree::CPair%20Class.md) value stored in the tree.  
+ Returns a pointer to the previous [CPair](http://msdn.microsoft.com/library/35e224ed-407e-4864-90ee-2dac2432ad41) value stored in the tree.  
   
 ### Remarks  
  Updates the current position counter, `pos`. If there are no more entries in the tree, the position counter is set to NULL.  

@@ -41,7 +41,7 @@ This topic shows how to use the concurrency::Context class to implement a cooper
   
  [!code-cpp[concrt-cooperative-semaphore#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-cooperative-semaphore/cpp/cooperative-semaphore.cpp#3)]  
   
-4.  In the `public` section of the `semaphore` class, implement the `acquire` method. This method decrements the semaphore count as an atomic operation. If the semaphore count becomes negative, add the current context to the end of the wait queue and call the [concurrency::Context::Block](../Topic/Context::Block%20Method.md) method to block the current context.  
+4.  In the `public` section of the `semaphore` class, implement the `acquire` method. This method decrements the semaphore count as an atomic operation. If the semaphore count becomes negative, add the current context to the end of the wait queue and call the [concurrency::Context::Block](http://msdn.microsoft.com/library/9c7a473a-dbea-4d08-961d-114223c4e135) method to block the current context.  
   
  [!code-cpp[concrt-cooperative-semaphore#4](../../snippets/cpp/VS_Snippets_ConcRT/concrt-cooperative-semaphore/cpp/cooperative-semaphore.cpp#4)]  
   
@@ -52,11 +52,11 @@ This topic shows how to use the concurrency::Context class to implement a cooper
 ## Example  
  The `semaphore` class in this example behaves cooperatively because the `Context::Block` and `Context::Yield` methods yield execution so that the runtime can perform other tasks.  
   
- The `acquire` method decrements the counter, but it might not finish adding the context to the wait queue before another context calls the `release` method. To account for this, the `release` method uses a spin loop that calls the [concurrency::Context::Yield](../Topic/Context::Yield%20Method.md) method to wait for the `acquire` method to finish adding the context.  
+ The `acquire` method decrements the counter, but it might not finish adding the context to the wait queue before another context calls the `release` method. To account for this, the `release` method uses a spin loop that calls the [concurrency::Context::Yield](http://msdn.microsoft.com/library/5759ad0a-b97a-4f86-8015-cd8d40256383) method to wait for the `acquire` method to finish adding the context.  
   
  The `release` method can call the `Context::Unblock` method before the `acquire` method calls the `Context::Block` method. You do not have to protect against this race condition because the runtime allows for these methods to be called in any order. If the `release` method calls `Context::Unblock` before the `acquire` method calls `Context::Block` for the same context, that context remains unblocked. The runtime only requires that each call to `Context::Block` is matched with a corresponding call to `Context::Unblock`.  
   
- The following example shows the complete `semaphore` class. The `wmain` function shows basic usage of this class. The `wmain` function uses the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm to create several tasks that require access to the semaphore. Because three threads can hold the lock at any time, some tasks must wait for another task to finish and release the lock.  
+ The following example shows the complete `semaphore` class. The `wmain` function shows basic usage of this class. The `wmain` function uses the [concurrency::parallel_for](http://msdn.microsoft.com/library/97521998-db27-4a52-819a-17c9cfe09b2d) algorithm to create several tasks that require access to the semaphore. Because three threads can hold the lock at any time, some tasks must wait for another task to finish and release the lock.  
   
  [!code-cpp[concrt-cooperative-semaphore#6](../../snippets/cpp/VS_Snippets_ConcRT/concrt-cooperative-semaphore/cpp/cooperative-semaphore.cpp#6)]  
   
@@ -85,7 +85,7 @@ In loop iteration 4...
 ## Robust Programming  
  You can use the *Resource Acquisition Is Initialization* (RAII) pattern to limit access to a `semaphore` object to a given scope. Under the RAII pattern, a data structure is allocated on the stack. That data structure initializes or acquires a resource when it is created and destroys or releases that resource when the data structure is destroyed. The RAII pattern guarantees that the destructor is called before the enclosing scope exits. Therefore, the resource is correctly managed when an exception is thrown or when a function contains multiple `return` statements.  
   
- The following example defines a class that is named `scoped_lock`, which is defined in the `public` section of the `semaphore` class. The `scoped_lock` class resembles the [concurrency::critical_section::scoped_lock](../Topic/critical_section::scoped_lock%20Class.md) and [concurrency::reader_writer_lock::scoped_lock](../Topic/reader_writer_lock::scoped_lock%20Class.md) classes. The constructor of the `semaphore::scoped_lock` class acquires access to the given `semaphore` object and the destructor releases access to that object.  
+ The following example defines a class that is named `scoped_lock`, which is defined in the `public` section of the `semaphore` class. The `scoped_lock` class resembles the [concurrency::critical_section::scoped_lock](http://msdn.microsoft.com/library/9564437e-8df7-4eb7-b60c-842c27ac4bb6) and [concurrency::reader_writer_lock::scoped_lock](http://msdn.microsoft.com/library/35a8af75-1c30-4ce5-890d-ad0385f7a004) classes. The constructor of the `semaphore::scoped_lock` class acquires access to the given `semaphore` object and the destructor releases access to that object.  
   
  [!code-cpp[concrt-cooperative-semaphore#7](../../snippets/cpp/VS_Snippets_ConcRT/concrt-cooperative-semaphore/cpp/cooperative-semaphore.cpp#7)]  
   

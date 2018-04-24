@@ -24,7 +24,7 @@ manager: "wpickett"
 # Compiler Error CS0171
 Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller. Consider calling the default constructor from a constructor initializer.  
   
- A constructor in a [struct](../Topic/struct%20\(C%23%20Reference\).md) must initialize all fields in the struct. For more information, see [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md).  
+ A constructor in a [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) must initialize all fields in the struct. For more information, see [Constructors](http://msdn.microsoft.com/library/df2e2e9d-7998-418b-8e7d-890c17ff6c95).  
   
  The following sample generates CS0171:  
   
