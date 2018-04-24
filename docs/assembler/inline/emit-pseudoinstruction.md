@@ -2,19 +2,14 @@
 title: "_emit Pseudoinstruction | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["_emit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["byte defining (inline assembly)", "_emit pseudoinstruction"]
 ms.assetid: 004c48f3-364c-4e82-9a51-e326f9cc7b2b
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _emit Pseudoinstruction

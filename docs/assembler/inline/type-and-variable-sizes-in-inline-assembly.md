@@ -2,19 +2,14 @@
 title: "Type and Variable Sizes in Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["length", "Type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["variables, length", "size, getting in inline assembly", "size", "LENGTH operator", "TYPE operator", "SIZE operator", "inline assembly, operators", "variables, type", "variables, size"]
 ms.assetid: b62c2f2b-a7ad-4145-bae4-d890db86d348
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Type and Variable Sizes in Inline Assembly

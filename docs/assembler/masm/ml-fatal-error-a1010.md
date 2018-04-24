@@ -2,19 +2,14 @@
 title: "ML Fatal Error A1010 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: ["A1010"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A1010"]
 ms.assetid: 9e0b5241-67f4-4740-8701-3b2d2d1ad9e4
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1010

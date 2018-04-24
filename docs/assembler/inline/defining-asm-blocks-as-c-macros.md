@@ -2,18 +2,13 @@
 title: "Defining __asm Blocks as C Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
 helpviewer_keywords: ["macros, __asm blocks", "Visual C, macros", "__asm keyword [C++], as C macros"]
 ms.assetid: 677ba11c-21c8-4609-bba7-cd47312243b0
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Defining __asm Blocks as C Macros

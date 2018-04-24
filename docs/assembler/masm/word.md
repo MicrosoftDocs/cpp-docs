@@ -2,19 +2,14 @@
 title: "WORD | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["WORD"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["WORD directive"]
 ms.assetid: 36f7ac49-480d-4d67-8967-3a62acb8f4df
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # WORD
