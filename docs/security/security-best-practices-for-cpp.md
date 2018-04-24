@@ -90,7 +90,7 @@ This article contains information about security tools and practices. Using them
 
 ## Guidance for Speculative Execution Side Channels
 
-For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](C:\Users\mblome\cpp-docs-pr\docs\security\)developer-guidance-speculative-execution.md).
+For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
 
   
 ## See Also  
