@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices", "Spectre", "CVE-2017-5753", "Speculative Execution"]
-author: "mamill"
+author: "mamillmsft"
 ms.author: "mikeblome"
 manager: "wpickett"
 ms.workload: ["cplusplus"]
