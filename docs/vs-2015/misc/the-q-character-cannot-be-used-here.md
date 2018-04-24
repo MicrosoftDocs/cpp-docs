@@ -1,0 +1,38 @@
+---
+title: "The &#39;?&#39; character cannot be used here | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc36637"
+  - "vbc36637"
+helpviewer_keywords: 
+  - "BC36637"
+ms.assetid: a54c46e7-8fd8-4941-9fce-72f2b41b5e24
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# The &#39;?&#39; character cannot be used here
+The '?' character can be used to specify that a value type or structure is nullable. Its use in other circumstances is limited. For example, the following code will cause this exception.  
+  
+```  
+' Not valid.  
+' #Const found = True?  
+```  
+  
+ **Error ID:** BC36637  
+  
+### To correct this error  
+  
+-   Remove the '?' character from the declaration.  
+  
+## See Also  
+ [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)

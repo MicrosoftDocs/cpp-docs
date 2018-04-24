@@ -1,0 +1,33 @@
+---
+title: "MSBuild Error MSB3141 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "MSBuild.GenerateBootstrapper.MissingVerificationInformation"
+  - "vsdeploy.chm:13141"
+helpviewer_keywords: 
+  - "MSB3141"
+ms.assetid: f32ce5fd-bb82-4a8b-aebe-61efef89cdc1
+caps.latest.revision: 6
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# MSBuild Error MSB3141
+**MSB3141: No 'PublicKey' or 'Hash' attribute specified for file '\<file>' in item '\<package>'."**  
+  
+ This error occurs when you attempt to use HomeSite for the bootstrapper packages. However, the bootstrapper manifest does not contain the correct information for file verification (either a public key or a hash) at run time.  
+  
+### To correct this error  
+  
+-   Download the package file for which the information is missing and copy it into the bootstrapper cache.  
+  
+## See Also  
+ [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)

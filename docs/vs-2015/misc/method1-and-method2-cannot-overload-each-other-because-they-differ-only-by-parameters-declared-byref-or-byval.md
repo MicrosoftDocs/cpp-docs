@@ -1,0 +1,34 @@
+---
+title: "&#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30345"
+  - "vbc30345"
+helpviewer_keywords: 
+  - "BC30345"
+ms.assetid: 82af13b1-2641-4881-b25a-c782974bded1
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39;
+You have attempted to overload a method with another method that differs from the first only by a parameter declared as `ByRef` or `ByVal`.  
+  
+ **Error ID:** BC30345  
+  
+### To correct this error  
+  
+-   Ensure that the methods are differentiated by more than the name of the `ByRef` or `ByVal` parameter.  
+  
+## See Also  
+ [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)   
+ [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)

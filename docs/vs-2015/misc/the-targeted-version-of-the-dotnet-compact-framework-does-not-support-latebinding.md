@@ -1,0 +1,38 @@
+---
+title: "The targeted version of the .NET Compact Framework does not support latebinding | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30762"
+  - "bc30762"
+helpviewer_keywords: 
+  - "BC30762"
+ms.assetid: b433014d-8422-46e8-ad55-321146a48186
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# The targeted version of the .NET Compact Framework does not support latebinding
+The version of the .NET Compact Framework you are working with does not support late binding.  
+  
+ **Error ID:** BC30762  
+  
+### To correct this error  
+  
+1.  Avoid calling functions, subs or properties on a variable declared as object.  
+  
+2.  Avoid using the object variable as an array.  
+  
+3.  Avoid using dictionary member access expressions with object variables.  
+  
+## See Also  
+ [NotInBuild:Objects in Visual Basic](http://msdn.microsoft.com/en-us/85bd757a-a19e-45e1-af89-d68765f5ee3c)   
+ [Special Characters in Code](../Topic/Special%20Characters%20in%20Code%20\(Visual%20Basic\).md)

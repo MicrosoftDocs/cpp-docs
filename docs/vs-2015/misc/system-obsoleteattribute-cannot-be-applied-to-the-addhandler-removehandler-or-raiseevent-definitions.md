@@ -1,0 +1,43 @@
+---
+title: "&#39;System.ObsoleteAttribute&#39; cannot be applied to the &#39;AddHandler&#39;, &#39;RemoveHandler&#39;, or &#39;RaiseEvent&#39; definitions | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31142"
+  - "vbc31142"
+helpviewer_keywords: 
+  - "BC31142"
+ms.assetid: 2bddde2e-9ca0-4f72-8910-0789a6350af8
+caps.latest.revision: 5
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;System.ObsoleteAttribute&#39; cannot be applied to the &#39;AddHandler&#39;, &#39;RemoveHandler&#39;, or &#39;RaiseEvent&#39; definitions
+'System.ObsoleteAttribute' cannot be applied to the 'AddHandler', 'RemoveHandler', or 'RaiseEvent' definitions. If required, apply the attribute directly to the event.  
+  
+ A custom event applies the <xref:System.ObsoleteAttribute> to its `AddHandler`, `RemoveHandler`, or `RaiseEvent` procedure.  
+  
+ The <xref:System.ObsoleteAttribute> marks a programming element as no longer in use and informs users that the element is to be removed in future versions of the product.  
+  
+ It is not meaningful to have certain parts of a custom event still in use while others are no longer in use.  
+  
+ **Error ID:** BC31142  
+  
+### To correct this error  
+  
+-   Remove the <xref:System.ObsoleteAttribute> from the individual procedure declaration and apply it to the overall event declaration.  
+  
+## See Also  
+ <xref:System.ObsoleteAttribute>   
+ [Event Statement](../Topic/Event%20Statement.md)   
+ [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
+ [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
+ [RaiseEvent Statement](../Topic/RaiseEvent%20Statement.md)

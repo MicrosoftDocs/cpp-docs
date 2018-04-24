@@ -1,0 +1,98 @@
+---
+title: "Using IDispEventSimpleImpl | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDispEventSimpleImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDispEventSimpleImpl class, using"
+ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
+caps.latest.revision: 16
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Using IDispEventSimpleImpl
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Using IDispEventSimpleImpl (ATL)](https://docs.microsoft.com/cpp/atl/using-idispeventsimpleimpl).  
+  
+  
+When using `IDispEventSimpleImpl` to handle events, you will need to:  
+  
+-   Derive your class from [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md).  
+  
+-   Add an [event sink map](../Topic/BEGIN_SINK_MAP.md) to your class.  
+  
+-   Define [_ATL_FUNC_INFO](../atl/reference/atl-func-info-structure.md) structures describing the events.  
+  
+-   Add entries to the event sink map using the [SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md) macro.  
+  
+-   Implement the methods that you're interested in handling.  
+  
+-   Advise and unadvise the event source.  
+  
+## Example  
+ The example below shows you how to handle the **DocumentChange** event fired by Word's **Application** object. This event is defined as a method on the **ApplicationEvents** dispinterface.  
+  
+ The example is from the [ATLEventHandling sample](../top/visual-cpp-samples.md).  
+  
+ `[`  
+  
+ `uuid(000209F7-0000-0000-C000-000000000046),`  
+  
+ `hidden`  
+  
+ `]`  
+  
+ `dispinterface ApplicationEvents {`  
+  
+ `properties:`  
+  
+ `methods:`  
+  
+ `[id(0x00000001), restricted, hidden]`  
+  
+ `void Startup();`  
+  
+ `[id(0x00000002)]`  
+  
+ `void Quit();`  
+  
+ `[id(0x00000003)]`  
+  
+ `void DocumentChange();`  
+  
+ `};`  
+  
+ The example uses `#import` to generate the required header files from Word's type library. If you want to use this example with other versions of Word, you must specify the correct mso dll file. For example, Office 2000 provides mso9.dll and OfficeXP provides mso.dll. This code is simplified from stdafx.h:  
+  
+ [!code-cpp[NVC_ATL_EventHandlingSample#1](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_EventHandlingSample/Cpp/StdAfx.h#1)]  
+  
+ The only information from the type library actually used in this example is the CLSID of the Word **Application** object and the IID of the **ApplicationEvents** interface. This information is only used at compile time.  
+  
+ The following code appears in Simple.h. The relevant code is noted by comments:  
+  
+ [!code-cpp[NVC_ATL_EventHandlingSample#3](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_EventHandlingSample/Cpp/Simple.h#3)]  
+  
+ The following code is from Simple.cpp:  
+  
+ [!code-cpp[NVC_ATL_EventHandlingSample#4](../snippets/cpp/VS_Snippets_Cpp/NVC_ATL_EventHandlingSample/Cpp/Simple.cpp#4)]  
+  
+## See Also  
+ [Event Handling](../atl/event-handling-and-atl.md)   
+ [ATLEventHandling Sample](../top/visual-cpp-samples.md)
+
+
+
+
+

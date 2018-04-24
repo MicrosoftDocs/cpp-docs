@@ -1,0 +1,53 @@
+---
+title: "ComPtrRefBase::operator IInspectable** Operator | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+f1_keywords: 
+  - "client/Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable**"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator IInspectable** operator"
+ms.assetid: 06ac1051-606c-449b-a566-cac78ca53762
+caps.latest.revision: 9
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# ComPtrRefBase::operator IInspectable** Operator
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [ComPtrRefBase::operator IInspectable** Operator](https://docs.microsoft.com/cpp/windows/comptrrefbase-operator-iinspectable-star-star-operator).  
+  
+  
+Supports the WRL infrastructure and is not intended to be used directly from your code.  
+  
+## Syntax  
+  
+```  
+operator IInspectable**() const;  
+```  
+  
+## Remarks  
+ Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.  
+  
+ An error is emitted if the current ComPtrRefBase doesn't derive from IInspectable.  
+  
+ This cast is available only if **__WRL_CLASSIC_COM\_\_** is defined.  
+  
+## Requirements  
+ **Header:** client.h  
+  
+ **Namespace:** Microsoft::WRL::Details  
+  
+## See Also  
+ [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+

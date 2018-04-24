@@ -1,0 +1,36 @@
+---
+title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the definition for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30005"
+  - "bc30005"
+helpviewer_keywords: 
+  - "BC30005"
+ms.assetid: 843b0b2f-0f93-41c3-8727-13a2138e8140
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the definition for event &#39;&lt;eventname&gt;&#39;
+Reference required to assembly '<`assemblyname`>' containing the definition for event '<`eventname`>'. Add a reference to your project.  
+  
+ The event is defined in a dynamic-link library (DLL) or assembly that is not directly referenced in your project. The [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiler requires a reference to avoid ambiguity in case the event is defined in more than one DLL or assembly.  
+  
+ **Error ID:** BC30005  
+  
+### To correct this error  
+  
+-   Include the name of the unreferenced DLL or assembly in your project references.  
+  
+## See Also  
+ [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
+ [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)

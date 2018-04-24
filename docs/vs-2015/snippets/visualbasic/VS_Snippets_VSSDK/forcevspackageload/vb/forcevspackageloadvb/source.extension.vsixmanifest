@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="b16cb2f7-0e4a-40b0-a6b9-208590da9ad5">
+    <Name>Package Name</Name>
+    <Author>Company</Author>
+    <Version>1.0</Version>
+    <Description>Information about my package</Description>
+    <Locale>1033</Locale>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.5" MaxVersion="4.05" />
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>|ForceVSPackageLoadVB;PkgdefProjectOutputGroup|</VsPackage>
+  </Content>
+</Vsix>

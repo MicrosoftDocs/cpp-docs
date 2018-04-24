@@ -1,0 +1,46 @@
+// CMFCAutomation.idl : type library source for CMFCAutomation.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (CMFCAutomation.tlb).
+
+#include "olectl.h"
+[ uuid(77E58ED8-A2C0-4C13-B6C1-BAD119AFE3F1), version(1.0) ]
+library CMFCAutomation
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CCMFCAutomationDoc
+	
+	[ uuid(470F7C5E-655C-4B64-9C98-11B4DA4FE3BB) ]
+	dispinterface ICMFCAutomation
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CCMFCAutomationDoc
+	
+	[ uuid(BE2A65F8-94E3-44BD-AAA8-071263C5B578) ]
+	coclass CCMFCAutomationDoc
+	{
+		[default] dispinterface ICMFCAutomation;
+	};
+	//  Primary dispatch interface for MyServerDoc
+		
+	[ uuid(AA694AFA-6208-4165-B8F4-0AF0CD9897CE) ]
+	dispinterface IMyServerDoc
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for MyServerDoc
+
+	[ uuid(EA90DF12-96E1-42FA-8992-668C80C45DCD) ]
+	coclass MyServerDoc
+	{
+		[default] dispinterface IMyServerDoc;
+	};
+};

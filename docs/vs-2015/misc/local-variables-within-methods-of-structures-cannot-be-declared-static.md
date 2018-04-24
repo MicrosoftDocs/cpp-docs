@@ -1,0 +1,35 @@
+---
+title: "Local variables within methods of structures cannot be declared &#39;Static&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31400"
+  - "bc31400"
+helpviewer_keywords: 
+  - "BC31400"
+ms.assetid: 38b8adee-3593-40fb-b0a4-e2a47599567f
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Local variables within methods of structures cannot be declared &#39;Static&#39;
+The `Static` modifier cannot be used with local variables in structures.  
+  
+ **Error ID:** BC31400  
+  
+### To correct this error  
+  
+1.  Remove the `Static` modifier from the local variable.  
+  
+2.  Declare the variable as a static variable with broader scope.  
+  
+## See Also  
+ [Static](../Topic/Static%20\(Visual%20Basic\).md)

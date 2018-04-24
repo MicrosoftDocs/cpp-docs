@@ -1,0 +1,55 @@
+---
+title: "Creating Your Dialog Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "dialog boxes [C++], creating"
+  - "MFC dialog boxes, creating"
+  - "files [C++], creating"
+  - "dialog classes, Add Class Wizard"
+  - "dialog classes, creating"
+ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
+caps.latest.revision: 12
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Creating Your Dialog Class
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Creating Your Dialog Class](https://docs.microsoft.com/cpp/mfc/creating-your-dialog-class).  
+  
+  
+For each dialog box in your program, create a new dialog class to work with the dialog resource.  
+  
+ [Adding a Class](../ide/adding-a-class-visual-cpp.md) explains how to create a new dialog class. When you create a dialog class with the Add Class Wizard, it writes the following items in the .H and .CPP files you specify:  
+  
+ In the .H file:  
+  
+-   A class declaration for the dialog class. The class is derived from [CDialog](../mfc/reference/cdialog-class.md).  
+  
+ In the .CPP file:  
+  
+-   A message map for the class.  
+  
+-   A standard constructor for the dialog box.  
+  
+-   An override of the [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](../mfc/dialog-data-exchange-and-validation.md).  
+  
+## See Also  
+ [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)   
+ [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+
+
+
+
+

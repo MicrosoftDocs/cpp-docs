@@ -1,0 +1,41 @@
+---
+title: "Compiler Error CS1039 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1039"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1039"
+ms.assetid: 266e9f7f-fe17-445a-aefd-6b7795167d68
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1039
+Unterminated string literal  
+  
+ The compiler detected an ill-formed [string](../Topic/string%20\(C%23%20Reference\).md) literal.  
+  
+## Example  
+ The following sample generates CS1039. To resolve the error, add the terminating quotation mark.  
+  
+```  
+// CS1039.cs  
+public class MyClass  
+{  
+    public static void Main()  
+    {  
+        string b = @"hello, world;   // CS1039  
+    }  
+}  
+```

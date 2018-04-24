@@ -1,0 +1,36 @@
+HKCR
+{
+	NVC_ATL_Windowing.PolyCtl.1 = s 'PolyCtl Class'
+	{
+		CLSID = s '{2CE1C12D-FD89-42C9-BE5B-2116AE21CF04}'
+		'Insertable'
+	}
+	NVC_ATL_Windowing.PolyCtl = s 'PolyCtl Class'
+	{
+		CLSID = s '{2CE1C12D-FD89-42C9-BE5B-2116AE21CF04}'
+		CurVer = s 'NVC_ATL_Windowing.PolyCtl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2CE1C12D-FD89-42C9-BE5B-2116AE21CF04} = s 'PolyCtl Class'
+		{
+			ProgID = s 'NVC_ATL_Windowing.PolyCtl.1'
+			VersionIndependentProgID = s 'NVC_ATL_Windowing.PolyCtl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 115'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+			'Version' = s '1.0'
+		}
+	}
+}

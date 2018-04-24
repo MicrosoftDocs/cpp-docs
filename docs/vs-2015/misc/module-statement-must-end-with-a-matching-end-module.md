@@ -1,0 +1,33 @@
+---
+title: "&#39;Module&#39; statement must end with a matching &#39;End Module&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30625"
+  - "bc30625"
+helpviewer_keywords: 
+  - "BC30625"
+ms.assetid: d51d5f1c-16f5-401c-be3a-0470eb9bb812
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Module&#39; statement must end with a matching &#39;End Module&#39;
+Module blocks must end with an `End``Module` statement.  
+  
+ **Error ID:** BC30625  
+  
+### To correct this error  
+  
+-   Add an `End Module` statement to the end of the `Module` block.  
+  
+## See Also  
+ [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

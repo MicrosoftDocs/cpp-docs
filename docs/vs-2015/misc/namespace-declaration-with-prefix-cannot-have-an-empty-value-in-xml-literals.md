@@ -1,0 +1,45 @@
+---
+title: "Namespace declaration with prefix cannot have an empty value in XML literals | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31184"
+  - "vbc31184"
+helpviewer_keywords: 
+  - "BC31184"
+ms.assetid: dde656b4-df3b-4a2e-8871-4e14832ca778
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Namespace declaration with prefix cannot have an empty value in XML literals
+An XML namespace declaration in an XML literal does not include a namespace value. For example, the following code will cause this error:  
+  
+```vb  
+Dim book = <book xmlns:ns=""/>  
+```  
+  
+ **Error ID:** BC31184  
+  
+### To correct this error  
+  
+-   Include a valid namespace in the XML namespace declaration, or remove the XML namespace declaration from the XML literal.  
+  
+     As an alternative, you can use the `Imports` statement to identify a namespace prefix for the empty namespace. For example:  
+  
+    ```vb  
+    Imports <xmlns:ns="">  
+    ```  
+  
+## See Also  
+ [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
+ [XML](../Topic/XML%20in%20Visual%20Basic.md)   
+ [Imports Statement (XML Namespace)](../Topic/Imports%20Statement%20\(XML%20Namespace\).md)

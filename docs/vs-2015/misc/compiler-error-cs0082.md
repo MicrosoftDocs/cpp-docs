@@ -1,0 +1,60 @@
+---
+title: "Compiler Error CS0082 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0082"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0082"
+ms.assetid: 7612976f-de2c-4f6b-87c9-43175821650c
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0082
+Type 'type' already reserves a member called 'name' with the same parameter types  
+  
+ Properties at compile time are translated to methods with `get_` and/or `set_` in front of the identifier. If you define your own method that conflicts with the method name, an error is generated.  
+  
+## Example  
+ The following example generates CS0082:  
+  
+```  
+//cs0082.cs  
+class MyClass  
+{  
+  
+    //property  
+    public int MyProp  
+    {  
+        get //CS0082  
+        {  
+            return 1;  
+        }  
+    }  
+  
+    //conflicting Get  
+    public int get_MyProp()  
+    {  
+        return 2;  
+    }  
+  
+    public static int Main()  
+    {  
+        return 1;  
+    }  
+}  
+```  
+  
+## See Also  
+ [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md)

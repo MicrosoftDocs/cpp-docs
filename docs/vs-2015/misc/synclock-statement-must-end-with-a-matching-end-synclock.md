@@ -1,0 +1,33 @@
+---
+title: "&#39;SyncLock&#39; statement must end with a matching &#39;End SyncLock&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30675"
+  - "vbc30675"
+helpviewer_keywords: 
+  - "BC30675"
+ms.assetid: bf687e99-1503-45fe-ad70-ad622ee7746e
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;SyncLock&#39; statement must end with a matching &#39;End SyncLock&#39;
+`SyncLock` blocks begin with the `SyncLock` keyword and end with the `End SyncLock` construct.  
+  
+ **Error ID:** BC30675  
+  
+### To correct this error  
+  
+-   Make sure that `SyncLock` block ends with a `End SyncLock` construct.  
+  
+## See Also  
+ [SyncLock Statement](../Topic/SyncLock%20Statement.md)

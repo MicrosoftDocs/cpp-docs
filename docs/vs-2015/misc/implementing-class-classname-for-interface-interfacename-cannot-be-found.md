@@ -1,0 +1,37 @@
+---
+title: "Implementing class &#39;&lt;classname&gt;&#39; for interface &lt;interfacename&gt; cannot be found | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31094"
+  - "bc31094"
+helpviewer_keywords: 
+  - "BC31094"
+ms.assetid: 262cb67e-2930-4a4a-a63e-bb2e201b3b93
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Implementing class &#39;&lt;classname&gt;&#39; for interface &lt;interfacename&gt; cannot be found
+An implementing class in the interop assembly is not available.  
+  
+ **Error ID:** BC31094  
+  
+### To correct this error  
+  
+1.  Verify that the type library for the COM object is valid.  
+  
+2.  Use the Type Library Importer (Tlbimp.exe) to manually create an interop assembly, and then add a reference to that interop assembly from your project.  
+  
+## See Also  
+ [Implements Statement](../Topic/Implements%20Statement.md)   
+ [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
+ [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)

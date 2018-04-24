@@ -1,0 +1,48 @@
+---
+title: "Compiler Error C2601 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2601"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2601"
+ms.assetid: 88275582-5f37-45d7-807d-05f06ba00965
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C2601
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C2601](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c2601).  
+  
+  
+function' : local function definitions are illegal  
+  
+ Code tries to define a function within a function.  
+  
+ Or, there may be an extra brace in your source code before the location of the C2601 error.  
+  
+ The following sample generates C2601:  
+  
+```  
+// C2601.cpp  
+int main() {  
+   int i = 0;  
+  
+   void funcname(int j) {   // C2601  
+      j++;  
+   }  
+}  
+```
+

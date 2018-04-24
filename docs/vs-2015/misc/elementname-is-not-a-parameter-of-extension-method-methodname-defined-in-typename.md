@@ -1,0 +1,35 @@
+---
+title: "&#39;&lt;elementname&gt;&#39; is not a parameter of extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc36585"
+  - "bc36585"
+helpviewer_keywords: 
+  - "BC36585"
+ms.assetid: c83fb679-3559-473c-aaa9-6ff21e515f97
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;elementname&gt;&#39; is not a parameter of extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39;
+A procedure call supplies an additional argument that is not defined by the extension method.  
+  
+ **Error ID:** BC36585  
+  
+### To correct this error  
+  
+-   Remove the superfluous argument from the argument list.  
+  
+## See Also  
+ [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
+ [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)   
+ [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

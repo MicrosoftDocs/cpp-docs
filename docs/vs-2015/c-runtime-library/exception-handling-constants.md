@@ -1,0 +1,45 @@
+---
+title: "Exception-Handling Constants | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "EXCEPTION_CONTINUE_SEARCH"
+  - "c.constants"
+  - "EXCEPTION_CONTINUE_EXECUTION"
+  - "EXCEPTION_EXECUTE_HANDLER"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "exception handling, constants"
+  - "EXCEPTION_CONTINUE_SEARCH constant"
+  - "EXCEPTION_EXECUTE_HANDLER constant"
+  - "EXCEPTION_CONTINUE_EXECUTION constant"
+  - "EH constants"
+ms.assetid: e1870f41-be9e-46a3-a2ea-830dfbaa18fb
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Exception-Handling Constants
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Exception-Handling Constants](https://docs.microsoft.com/cpp/c-runtime-library/exception-handling-constants).  
+  
+The constant `EXCEPTION_CONTINUE_SEARCH`, `EXCEPTION_CONTINUE_EXECUTION`, or `EXCEPTION_EXECUTE_HANDLER` is returned when an exception occurs during execution of the guarded section of a **try-except** statement. The return value determines how the exception is handled. For more information, see [try-except Statement](../cpp/try-except-statement.md) in the *C++ Language Reference*.  
+  
+## See Also  
+ [Global Constants](../c-runtime-library/global-constants.md)
+
+
+
+
+

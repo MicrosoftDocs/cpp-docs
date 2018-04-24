@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_Windowing.ThisExample.1 = s 'ThisExample Class'
+	{
+		CLSID = s '{0A9B3801-9D4E-4D93-8BF3-39BDB2B7C651}'
+	}
+	NVC_ATL_Windowing.ThisExample = s 'ThisExample Class'
+	{
+		CLSID = s '{0A9B3801-9D4E-4D93-8BF3-39BDB2B7C651}'
+		CurVer = s 'NVC_ATL_Windowing.ThisExample.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0A9B3801-9D4E-4D93-8BF3-39BDB2B7C651} = s 'ThisExample Class'
+		{
+			ProgID = s 'NVC_ATL_Windowing.ThisExample.1'
+			VersionIndependentProgID = s 'NVC_ATL_Windowing.ThisExample'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+		}
+	}
+}

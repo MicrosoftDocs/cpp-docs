@@ -1,0 +1,86 @@
+---
+title: "hash_multimap::value_compare (STL-CLR) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+f1_keywords: 
+  - "cliext::hash_multimap::value_compare"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "value_compare member [STL/CLR]"
+ms.assetid: 64daa1b6-3019-4850-9ec5-ae63c01fe819
+caps.latest.revision: 10
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# hash_multimap::value_compare (STL/CLR)
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [hash_multimap::value_compare (STL/CLR)](https://docs.microsoft.com/cpp/dotnet/hash-multimap-value-compare-stl-clr).  
+  
+  
+The ordering delegate for two element values.  
+  
+## Syntax  
+  
+```  
+Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>  
+    value_compare;  
+```  
+  
+## Remarks  
+ The type is a synonym for the delegate that determines the ordering of its value arguments.  
+  
+## Example  
+  
+```  
+// cliext_hash_multimap_value_compare.cpp   
+// compile with: /clr   
+#include <cliext/hash_map>   
+  
+typedef cliext::hash_map<wchar_t, int> Myhash_multimap;   
+int main()   
+    {   
+    Myhash_multimap c1;   
+    Myhash_multimap::value_compare^ kcomp = c1.value_comp();   
+  
+    System::Console::WriteLine("compare([L'a', 1], [L'a', 1]) = {0}",   
+        kcomp(Myhash_multimap::make_value(L'a', 1),   
+            Myhash_multimap::make_value(L'a', 1)));   
+    System::Console::WriteLine("compare([L'a', 1], [L'b', 2]) = {0}",   
+        kcomp(Myhash_multimap::make_value(L'a', 1),   
+            Myhash_multimap::make_value(L'b', 2)));   
+    System::Console::WriteLine("compare([L'b', 2], [L'a', 1]) = {0}",   
+        kcomp(Myhash_multimap::make_value(L'b', 2),   
+            Myhash_multimap::make_value(L'a', 1)));   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+compare([L'a', 1], [L'a', 1]) = True  
+compare([L'a', 1], [L'b', 2]) = True  
+compare([L'b', 2], [L'a', 1]) = False  
+```  
+  
+## Requirements  
+ **Header:** \<cliext/hash_map>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [hash_multimap (STL/CLR)](../dotnet/hash-multimap-stl-clr.md)   
+ [hash_multimap::key_compare (STL/CLR)](../dotnet/hash-multimap-key-compare-stl-clr.md)   
+ [hash_multimap::value_comp (STL/CLR)](../dotnet/hash-multimap-value-comp-stl-clr.md)   
+ [hash_multimap::value_type (STL/CLR)](../dotnet/hash-multimap-value-type-stl-clr.md)
+

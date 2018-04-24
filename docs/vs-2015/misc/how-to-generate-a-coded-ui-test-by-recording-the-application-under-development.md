@@ -1,0 +1,19 @@
+---
+title: "How to: Generate a Coded UI Test by Recording the Application Under Development | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: 3c874d1f-6bde-4e24-93fc-9407eda4025e
+caps.latest.revision: 55
+author: "alexhomer1"
+ms.author: "ahomer"
+manager: "kamrani"
+---
+# How to: Generate a Coded UI Test by Recording the Application Under Development
+The content of this topic has been consolidated with the parent page. See [Creating Coded UI Tests](../Topic/Use%20UI%20Automation%20To%20Test%20Your%20Code.md#VerifyingCodeUsingCUITCreate).

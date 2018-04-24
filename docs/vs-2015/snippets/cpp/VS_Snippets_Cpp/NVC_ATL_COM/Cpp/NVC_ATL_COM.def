@@ -1,0 +1,9 @@
+; NVC_ATL_COM.def : Declares the module parameters.
+
+LIBRARY      "NVC_ATL_COM.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

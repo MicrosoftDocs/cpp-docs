@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by MFCControlLadenDialog.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_MFCCONTROLLADENDIALOG_DIALOG 102
+#define IDD_CUSTOMDIALOG                103
+#define IDD_SUBDIALOG                   104
+#define IDD_DIALOGBAR                   105
+#define IDC_MYCHECKLISTBOX              108
+#define IDC_DATETIMECTRL                110
+#define IDC_MONTHCALCTRL1               111
+#define IDC_MONTHCALCTRL2               112
+#define IDD_MYLISTCTRL                  116
+#define IDD_MYVIRTUALLISTCTRL           117
+#define IDC_PROGRESSCTRL                118
+#define IDC_SCROLLBARCTRL               120
+#define IDC_STATICCTRL                  121
+#define IDC_MYTAB                       123
+#define IDC_MYBUTTON			124
+#define IDR_MAINFRAME                   128
+#define IDI_ICON1                       133
+#define IDI_ICON2                       134
+#define IDI_ICON3                       135
+#define IDB_BITMAP1                     136
+#define IDI_BLK                         139
+#define IDI_RED                         140
+#define IDI_YELL                        141
+#define IDI_WHI                         142
+#define IDI_DIS_BLK                     143
+#define IDI_DIS_RED                     144
+#define IDI_DIS_YELL                    145
+#define IDI_DIS_WHI                     146
+#define IDR_MENU1                       147
+#define IDD_TESTDIALOG                  148
+#define IDD_ANIMDIALOG                  149
+#define IDD_EXTRADIALOG                 155
+#define IDB_UP                          156
+#define IDB_DOWN                        158
+#define IDB_FOCUS                       159
+#define IDB_DISABLE                     160
+#define IDB_ALBUTTU			161
+#define IDD_DATETIMEDIALOG              163
+#define IDD_SIMPLEDIALOG                164
+#define IDD_EDITDIALOG                  165
+#define IDD_HEADERDIALOG                166
+#define IDD_MONTHCALDIALOG              167
+#define IDD_LISTBOXDIALOG               169
+#define IDI_LARGEICON1                  171
+#define IDI_ICON4                       172
+#define IDI_LARGEICON2                  172
+#define IDI_                            179
+#define IDD_TABDIALOG                   180
+#define IDD_TREEDIALOG                  181
+#define IDC_EXTRA_EDIT                  1000
+#define IDC_MYBTN                       1001
+#define IDC_CUSTOM1                     1002
+#define IDC_TREE1                       1003
+#define IDC_DATETIMEPICKER1             1004
+#define IDC_COMBOBOXEX1                 1005
+#define IDC_LIST1                       1006
+#define IDC_LIST2                       1007
+#define IDC_HOTKEY1                     1008
+#define IDC_HOTKEYASSIGN                1009
+#define IDC_LIST3                       1011
+#define IDC_MONTHCALENDAR1              1012
+#define IDC_BUTTON1                     1013
+#define IDC_BUTTON2                     1014
+#define IDC_TAB1                        1016
+#define IDC_TOOLBAR1                    1017
+#define IDC_MY_CHECKBOX                 1020
+#define IDC_MY_TEXTBOX                  1021
+#define IDC_MYCHECKBOX                  1022
+#define IDC_CHECKBOX                    1022
+#define IDC_ANIMATE1                    1024
+#define IDC_RANGESBUTTON                1025
+#define IDC_TIMEBUTTON                  1026
+#define IDC_EDIT1                       1027
+#define IDC_SIMPLEEDIT                  1027
+#define IDC_EDITDLGEDIT                 1027
+#define IDC_SIMPLELIST                  1028
+#define ID_MENU_OTHERITEM               32772
+#define ID_MENU_THISISNOTANITEM         32773
+#define ID_MENU_SHOWDIALOG              32774
+#define ID_MENU_SHOWMODELESSDIALOG      32775
+#define ID_MENU_SHOWANIMDIALOG          32776
+#define ID_MENU_SHOWEXTRADIALOG         32777
+#define ID_MENU_SHOWDATETIMEDIALOG      32780
+#define ID_MENU_SHOWMODELESSTESTDIALOG  32781
+#define ID_MENU_SHOWSIMPLEDIALOG        32782
+#define ID_MENU_SHOWABOUTDIALOG         32783
+#define ID_MENU_SHOWSIMPLEMODAL         32784
+#define ID_MENU_SHOWEDITDIALOG          32785
+#define ID_MENU_SHOWHEADERDIALOG        32786
+#define ID_MENU_SHOWMOCALDIALOG         32787
+#define ID_MENU_SHOWIMAGELISTDIALOG     32788
+#define ID_MENU_SHOWLISTBOXDIALOG       32789
+#define ID_MENU_SHOWLISTCTRLDIALOG      32790
+#define ID_MENU_SHOWPROGRESSDIALOG      32791
+#define ID_MENU_SHOWREBARDIALOG         32792
+#define ID_MENU_SHOWRICHEDITDIALOG      32793
+#define ID_MENU_SHOWSCROLLBARDIALOG     32794
+#define ID_MENU_SHOWSTATICDIALOG        32795
+#define ID_MENU_SHOWSTATUSBARCTRLDIALOG 32796
+#define ID_MENU_SHOWTABDIALOG           32797
+#define ID_MENU_SHOWTREEDIALOG          32798
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        183
+#define _APS_NEXT_COMMAND_VALUE         32834
+#define _APS_NEXT_CONTROL_VALUE         1035
+#define _APS_NEXT_SYMED_VALUE           125
+#endif
+#endif

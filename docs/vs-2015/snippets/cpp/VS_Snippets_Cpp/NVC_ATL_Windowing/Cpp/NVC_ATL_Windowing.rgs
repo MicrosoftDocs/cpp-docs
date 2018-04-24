@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'NVC_ATL_Windowing'
+		'NVC_ATL_Windowing.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="HighlightWordTest.Microsoft.732fa6d6-22eb-4595-ab16-96b1fd0df1e8">
+    <Name>HighlightWordTest</Name>
+    <Author>Microsoft</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">This is a sample classifier extension to the Visual Studio Editor.</Description>
+    <Locale>1033</Locale>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+
+  <Content>
+    <MefComponent>|%CurrentProject%|</MefComponent>
+  </Content>
+</Vsix>

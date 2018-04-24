@@ -1,0 +1,70 @@
+---
+title: "simple_partitioner Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "ppl/concurrency::simple_partitioner"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "simple_partitioner class"
+ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
+caps.latest.revision: 8
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# simple_partitioner Class
+[!INCLUDE[blank_token](../../../includes/blank-token.md)]
+
+The `simple_partitioner` class represents a static partitioning of the range iterated over by `parallel_for`. The partitioner divides the range into chunks such that each chunk has at least the number of iterations specified by the chunk size.  
+  
+## Syntax  
+  
+```
+class simple_partitioner;
+```  
+  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[simple_partitioner::simple_partitioner Constructor](#simple_partitioner__simple_partitioner_constructor)|Constructs a `simple_partitioner` object.|  
+|[simple_partitioner::~simple_partitioner Destructor](#simple_partitioner___dtorsimple_partitioner_destructor)|Destroys a `simple_partitioner` object.|  
+  
+## Inheritance Hierarchy  
+ `simple_partitioner`  
+  
+## Requirements  
+ **Header:** ppl.h  
+  
+ **Namespace:** concurrency  
+  
+##  <a name="simple_partitioner___dtorsimple_partitioner_destructor"></a>  simple_partitioner::~simple_partitioner Destructor  
+ Destroys a `simple_partitioner` object.  
+  
+```
+~simple_partitioner();
+```  
+  
+##  <a name="simple_partitioner__simple_partitioner_constructor"></a>  simple_partitioner::simple_partitioner Constructor  
+ Constructs a `simple_partitioner` object.  
+  
+```
+explicit simple_partitioner(_Size_type _Chunk_size);
+```  
+  
+### Parameters  
+ `_Chunk_size`  
+  
+## See Also  
+ [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)

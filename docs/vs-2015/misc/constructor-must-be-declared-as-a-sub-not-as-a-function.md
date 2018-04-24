@@ -1,0 +1,33 @@
+---
+title: "Constructor must be declared as a Sub, not as a Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30493"
+  - "vbc30493"
+helpviewer_keywords: 
+  - "BC30493"
+ms.assetid: bcacfd4b-cac0-4ad3-a6df-5fb37c189e8f
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Constructor must be declared as a Sub, not as a Function
+You have attempted to declare a `Function New`. Constructors must be declared as `Sub New`.  
+  
+ **Error ID:** BC30493  
+  
+### To correct this error  
+  
+-   Use `Sub` instead of `Function`.  
+  
+## See Also  
+ [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)

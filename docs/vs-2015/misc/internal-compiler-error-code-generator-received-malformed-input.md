@@ -1,0 +1,37 @@
+---
+title: "Internal compiler error: code generator received malformed input | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30011"
+  - "vbc30011"
+helpviewer_keywords: 
+  - "BC30011"
+ms.assetid: 859bb8f7-869e-46f0-8017-c88cdf92f324
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Internal compiler error: code generator received malformed input
+The [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiler cannot successfully interpret one of its internally written files.  
+  
+ **Error ID:** BC30011  
+  
+### To correct this error  
+  
+1.  Compile the program again to see if the error recurs.  
+  
+2.  If the error recurs, reinstall the [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiler.  
+  
+3.  If the error persists after reinstallation, gather information about the circumstances and notify Microsoft Product Support Services.  
+  
+## See Also  
+ [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

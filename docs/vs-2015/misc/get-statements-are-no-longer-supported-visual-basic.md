@@ -1,0 +1,35 @@
+---
+title: "&#39;Get&#39; statements are no longer supported (Visual Basic) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30767"
+  - "bc30767"
+helpviewer_keywords: 
+  - "BC30767"
+ms.assetid: 6aa62dcc-99aa-4051-a81e-3bbb6a8c355f
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Get&#39; statements are no longer supported (Visual Basic)
+`Get` statements are no longer supported. File I/O functionality is normally available in the `Microsoft.VisualBasic` namespace, but the targeted version of the .NET Compact Framework does not support it.  
+  
+ **Error ID:** BC30767  
+  
+### To correct this error  
+  
+-   Perform file operations with functions defined in the <xref:System.IO> namespace.  
+  
+## See Also  
+ <xref:System.IO>   
+ [Get Statement](../Topic/Get%20Statement.md)   
+ [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)

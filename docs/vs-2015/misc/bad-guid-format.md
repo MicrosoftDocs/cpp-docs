@@ -1,0 +1,33 @@
+---
+title: "Bad GUID format | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc42035"
+  - "bc42035"
+helpviewer_keywords: 
+  - "BC42035"
+ms.assetid: a0da14b2-effc-41db-8506-0f372c60256d
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Bad GUID format
+A GUID has been supplied with an incorrect format.  
+  
+ **Error ID:** BC42035  
+  
+### To correct this error  
+  
+-   Check the GUID format.  
+  
+## See Also  
+ [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)

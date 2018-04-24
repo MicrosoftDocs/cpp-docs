@@ -1,0 +1,9 @@
+; NVC_MFC_AxFont.def : Declares the module parameters.
+
+LIBRARY      "NVC_MFC_AxFont.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

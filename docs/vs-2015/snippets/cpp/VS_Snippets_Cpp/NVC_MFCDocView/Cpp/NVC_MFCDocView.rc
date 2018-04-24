@@ -1,0 +1,854 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\NVC_MFCDocView.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NVC_MFCDocView.ico"
+IDR_CMyDocTypeTYPE      ICON                    "res\\NVC_MFCDocViewDoc.ico"
+IDR_BRUSHDOCTYPE        ICON                    "res\\icon1.ico"
+IDR_DCDOCTYPE           ICON                    "res\\ico00001.ico"
+IDR_RICHEDITDOCTYPE     ICON                    "res\\ico00002.ico"
+IDR_EXAMPLEDOCTYPE      ICON                    "res\\ico00003.ico"
+IDR_MYEDITDOCTYPE       ICON                    "res\\ico00004.ico"
+IDR_FONTDOCTYPE         ICON                    "res\\ico00005.ico"
+IDR_SHEETDOCTYPE        ICON                    "res\\ico00006.ico"
+IDR_RGNDOCTYPE          ICON                    "res\\ico00007.ico"
+IDR_MYSCROLLDOCTYPE     ICON                    "res\\ico00008.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BRUSH               BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bmp00001.bmp"
+IDR_MYTOOLBAR           BITMAP                  "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MYTOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_SPIRALLYTHINGY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&DHTML"
+    BEGIN
+        MENUITEM "&MultiPageDlg",               ID_DHTML_MULTIPAGEDLG
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Set&PaneText",                ID_VIEW_SETPANETEXT
+        MENUITEM "St&artTimer",                 ID_VIEW_STARTTIMER
+        MENUITEM "&KillTimer",                  ID_VIEW_KILLTIMER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NVC_MFCDocView...",    ID_APP_ABOUT
+    END
+END
+
+IDR_CMyDocTypeTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Send Mail",                   ID_FILE_SENDMAIL
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Clear A&ll",                  ID_EDIT_CLEARALL
+        MENUITEM SEPARATOR
+        MENUITEM "P&roperties",                 ID_EDIT_PROPERTIES
+        MENUITEM "Wi&zard",                     ID_EDIT_WIZARD
+        MENUITEM "&Idle Processing",            ID_EDIT_IDLEPROCESSING
+        MENUITEM "C&WindowDC",                  ID_EDIT_CWINDOWDC
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Cursor"
+    BEGIN
+        MENUITEM "&BeginSleepEnd",              ID_CURSOR_BEGINSLEEPEND
+        MENUITEM "Begin&DlgRestore",            ID_CURSOR_BEGINDLGRESTORE
+        MENUITEM "D&lgRestore",                 ID_CURSOR_DLGRESTORE
+        MENUITEM "DlgDo&Wait",                  ID_CURSOR_DLGDOWAIT
+    END
+    POPUP "&Shape"
+    BEGIN
+        MENUITEM "&Color",                      ID_SHAPE_COLOR
+        MENUITEM "&New Shape",                  ID_SHAPE_NEWSHAPE
+        MENUITEM "&Delete Shape",               ID_SHAPE_DELETESHAPE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NVC_MFCDocView...",    ID_APP_ABOUT
+    END
+    POPUP "Color &Dialog"
+    BEGIN
+        MENUITEM "&DoModal",                    ID_COLORDIALOG_DOMODAL
+        MENUITEM "&GetColor",                   ID_COLORDIALOG_GETCOLOR
+        MENUITEM "Get&SavedCustomColors",       ID_COLORDIALOG_GETSAVEDCUSTOMCOLORS
+        MENUITEM "&OnColorOK",                  ID_COLORDIALOG_ONCOLOROK
+        MENUITEM "&m_cc",                       ID_COLORDIALOG_M
+    END
+    POPUP "C&PropertyPage"
+    BEGIN
+        MENUITEM "&Construct",                  ID_PROPPAGE_CONSTRUCT
+        MENUITEM "C&tor",                       ID_CPROPERTYPAGE_CTOR
+    END
+END
+
+IDR_BRUSHDOCTYPE MENU 
+BEGIN
+    POPUP "&Brush"
+    BEGIN
+        MENUITEM "&Variety",                    ID_BRUSH_VARIETY
+        MENUITEM "&Indirect",                   ID_BRUSH_INDIRECT
+        MENUITEM "&DIBPattern",                 ID_BRUSH_DIBPATTERN
+        MENUITEM "&Hatch",                      ID_BRUSH_HATCH
+        MENUITEM "&Pattern",                    ID_BRUSH_PATTERN
+        MENUITEM "&SysColor",                   ID_BRUSH_SYSCOLOR
+        MENUITEM "&Log",                        ID_BRUSH_LOG
+        MENUITEM "&Handle",                     ID_BRUSH_HANDLE
+    END
+END
+
+IDR_DCDOCTYPE MENU 
+BEGIN
+    POPUP "&DC"
+    BEGIN
+        MENUITEM "&Arc",                        ID_DC_ARC
+        MENUITEM "&Path",                       ID_DC_PATH
+        MENUITEM "&Chord",                      ID_DC_CHORD
+        MENUITEM "&Bitmap",                     ID_DC_BITMAP
+        MENUITEM "&3dRect",                     ID_DC_3DRECT
+        MENUITEM "&FrameCtl",                   ID_DC_FRAMECTL
+        MENUITEM "&InvertRect",                 ID_DC_INVERTRECT
+        MENUITEM "Pi&e",                        ID_DC_PIE
+        MENUITEM "P&olygon",                    ID_DC_POLYGON
+        MENUITEM "&Rectangle",                  ID_DC_RECTANGLE
+        MENUITEM "Ro&undRect",                  ID_DC_RONDRECT
+        MENUITEM "C&lientDC",                   ID_DC_CLIENTDC
+    END
+    POPUP "&Stuff"
+    BEGIN
+        MENUITEM "&EnumPens",                   ID_STUFF_ENUMPENS
+        MENUITEM "&StartDoc",                   ID_STUFF_STARTDOC
+        MENUITEM "&CPaintDC",                   ID_STUFF_CPAINTDC
+        MENUITEM "&DoPenStuff",                 ID_STUFF_DOPENSTUFF
+    END
+    POPUP "&Afx"
+    BEGIN
+        MENUITEM "&AfxDrawDitheredBitmap",      ID_AFX_AFXDRAWDITHEREDBITMAP
+        MENUITEM "A&fxDrawGrayBitmap",          ID_AFX_AFXDRAWGRAYBITMAP
+        MENUITEM "Af&xGetDitheredBitmap",       ID_AFX_AFXGETDITHEREDBITMAP
+        MENUITEM "Afx&GetGrayBitmap",           ID_AFX_AFXGETGRAYBITMAP
+    END
+END
+
+IDR_RICHEDITDOCTYPE MENU 
+BEGIN
+    POPUP "&Info"
+    BEGIN
+        MENUITEM "&Line Number",                ID_INFO_LINENUMBER
+        MENUITEM "&FindReplace",                ID_INFO_FINDREPLACE
+    END
+    POPUP "&PSD"
+    BEGIN
+        MENUITEM "&Ctor",                       ID_PSD_CTO
+        MENUITEM "&MyPSD",                      ID_PSD_MYPSD
+    END
+    POPUP "Print&Dlg"
+    BEGIN
+        MENUITEM "&Ctor",                       ID_PRINTDLG_CREATEANDCTOR
+        MENUITEM "CreatePrinter&DC",            ID_PRINTDLG_CREATEPINTERDC
+        MENUITEM "&GetDefaults",                ID_PRINTDLG_GETDEFAULTS
+        MENUITEM "GetDevice&Name",              ID_PRINTDLG_GETDEVICENAME
+        MENUITEM "Get&PrinterDC",               ID_PRINTDLG_GETPRINTERDC
+        MENUITEM "PrintC&ollate",               ID_PRINTDLG_PRINTCOLLATE
+        MENUITEM "&m_pd",                       ID_PRINTDLG_M
+    END
+    POPUP "&CRichEditView"
+    BEGIN
+        MENUITEM "Char&Underline",              ID_CRICHEDITVIEW_CHARUNDERLINE
+        MENUITEM "Char&Italic",                 ID_CRICHEDITVIEW_CHARITALIC
+        MENUITEM "&ParaCenter",                 ID_CRICHEDITVIEW_PARACENTER
+        MENUITEM "Add&Bullets",                 ID_CRICHEDITVIEW_ADDBULLETS
+        MENUITEM "&WordWrap",                   ID_CRICHEDITVIEW_WORDWRAP
+        MENUITEM "&Replace 'hi'",               ID_CRICHEDITVIEW_REPLACE32887
+    END
+END
+
+IDR_EXAMPLEDOCTYPE MENU 
+BEGIN
+    POPUP "&Doc"
+    BEGIN
+        MENUITEM "&ClearAll",                   ID_DOC_CLEARALL
+        MENUITEM "&DefaultName",                ID_DOC_DEFAULTNAME
+        MENUITEM "&RepaintAll",                 ID_DOC_REPAINTALL
+        MENUITEM "&UpdateAll",                  ID_DOC_UPDATEALL
+    END
+END
+
+IDR_MYEDITDOCTYPE MENU 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&SetLimitText",               ID_EDIT_SETLIMITTEXT
+        MENUITEM "Set&TabStops",                ID_EDIT_SETTABSTOPS
+    END
+END
+
+IDR_FONTDOCTYPE MENU 
+BEGIN
+    POPUP "&Font"
+    BEGIN
+        MENUITEM "&Font",                       ID_FONT_FONT
+        MENUITEM "Font&Indirect",               ID_FONT_FONTINDIRECT
+        MENUITEM "&PointFont",                  ID_FONT_POINTFONT
+        MENUITEM "P&ointFontIndirect",          ID_FONT_POINTFONTINDIRECT
+        MENUITEM "&Handle",                     ID_FONT_HANDLE
+        MENUITEM "HFO&NT",                      ID_FONT_HFONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Trace Font Name",            ID_FONT_TRACEFONTNAME
+    END
+    POPUP "Font&Dialog"
+    BEGIN
+        MENUITEM "&CFontDialog",                ID_FONTDIALOG_CFONTDIALOG
+        MENUITEM "&GetColor",                   ID_FONTDIALOG_GETCOLOR
+        MENUITEM "Get&CurrentFont",             ID_FONTDIALOG_GETCURRENTFONT
+        MENUITEM "Get&FaceName",                ID_FONTDIALOG_GETFACENAME
+        MENUITEM "Get&Size",                    ID_FONTDIALOG_GETSIZE
+        MENUITEM "GetSt&yleName",               ID_FONTDIALOG_GETSTYLENAME
+        MENUITEM "Get&Weight",                  ID_FONTDIALOG_GETWEIGHT
+        MENUITEM "Is&Bold",                     ID_FONTDIALOG_ISBOLD
+        MENUITEM "Is&Italic",                   ID_FONTDIALOG_ISITALIC
+        MENUITEM "IsStri&keout",                ID_FONTDIALOG_ISSTRIKEOUT
+        MENUITEM "Is&Underline",                ID_FONTDIALOG_ISUNDERLINE
+        MENUITEM "&m_cf",                       ID_FONTDIALOG_M32843
+    END
+END
+
+IDR_SHEETDOCTYPE MENU 
+BEGIN
+    POPUP "&CPropertyPage"
+    BEGIN
+        MENUITEM "&Construct",                  ID_CPROPERTYPAGE_CONSTRUCT
+        MENUITEM "C&tor",                       ID_CPROPERTYPAGE_CTOR32860
+        MENUITEM "Do &Wizard",                  ID_CPROPERTYPAGE_DOWIZARD
+    END
+    POPUP "CProperty&Sheet"
+    BEGIN
+        MENUITEM "&AddPage",                    ID_CPROPERTYSHEET_ADDPAGE
+        MENUITEM "&Construct",                  ID_CPROPERTYSHEET_CONSTRUCT
+        MENUITEM "C&tor",                       ID_CPROPERTYSHEET_CTOR
+        MENUITEM "C&reate",                     ID_CPROPERTYSHEET_CREATE
+        MENUITEM "Create My&PS",                ID_CPROPERTYSHEET_CREATEMYPS
+        MENUITEM "&GetTabControl",              ID_CPROPERTYSHEET_GETTABCONTROL
+        MENUITEM "&SetTitle",                   ID_CPROPERTYSHEET_SETTITLE
+        MENUITEM "Set&WizardMode",              ID_CPROPERTYSHEET_SETWIZARDMODE
+        MENUITEM "&m_psh",                      ID_CPROPERTYSHEET_M
+    END
+END
+
+IDR_RGNDOCTYPE MENU 
+BEGIN
+    POPUP "&Draw"
+    BEGIN
+        MENUITEM "&CombineRgn",                 ID_RGN_COMBINERGN
+        MENUITEM "Create&EllipticRgn",          ID_RGN_CREATEELLIPTICRGN
+        MENUITEM "Create&PolygonRgn",           ID_RGN_CREATEPOLYGONRGN
+        MENUITEM "Create&RectRgnIndirect",      ID_DRAW_CREATERECTRGNINDIRECT
+        MENUITEM "CreateR&oundRectRgn",         ID_DRAW_CREATEROUNDRECTRGN
+    END
+    POPUP "&CRgn"
+    BEGIN
+        MENUITEM "Create&RectRgn",              ID_CRGN_CREATERECTRGN
+        MENUITEM "&EqualRgn",                   ID_CRGN_EQUALRGN
+    END
+END
+
+IDR_MYSCROLLDOCTYPE MENU 
+BEGIN
+    POPUP "&Scroll"
+    BEGIN
+        MENUITEM "&RecalcLayout",               ID_SCROLL_RECALCLAYOUT
+        MENUITEM "&SetScrollSizes",             ID_SCROLL_SETSCROLLSIZES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NVC_MFCDocView"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NVC_MFCDocView Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_PROPPAGE1 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Page 1"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,41,47,100,15
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,16,100,15
+END
+
+IDD_PROPPAGE2 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Page 2"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    EDITTEXT        IDC_EDIT1,35,19,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,35,46,40,14,ES_AUTOHSCROLL
+END
+
+IDD_MYFORMVIEW DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place form controls on this dialog.",IDC_STATIC,24,42,280,8
+END
+
+IDD_COLOR DIALOGEX 0, 0, 264, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Color"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Red:",IDC_STATIC,14,11,16,8
+    CONTROL         "",IDC_REDSLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,22,100,15
+    LTEXT           "&Green:",IDC_STATIC,12,44,23,8
+    CONTROL         "",IDC_GREENSLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,55,100,15
+    LTEXT           "&Blue:",IDC_STATIC,14,75,17,8
+    CONTROL         "",IDC_BLUESLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,9,88,100,15
+    GROUPBOX        "B&asic Colors",IDC_STATIC,135,11,49,64
+    CONTROL         "B&lack",IDC_RADIOBLACK,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,141,23,32,10
+    CONTROL         "R&ed",IDC_RADIORED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,35,29,10
+    CONTROL         "Bl&ue",IDC_RADIOBLUE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,47,29,10
+    CONTROL         "Gree&n",IDC_RADIOGREEN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,141,58,35,10
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_STYLE DIALOGEX 0, 0, 195, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Style"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Number of shapes: ",IDC_STATIC,10,17,64,8
+    EDITTEXT        IDC_NUMOBJECTS,71,14,32,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_SHAPE DIALOGEX 0, 0, 195, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Shape"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Select a shape!",IDC_STATIC,13,12,90,8
+    CONTROL         "&Rectangle",IDC_RECTANGLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,26,48,10
+    CONTROL         "R&ound Rectangle",IDC_ROUND_RECTANGLE,"Button",BS_AUTORADIOBUTTON,13,39,71,10
+    CONTROL         "&Ellipse",IDC_ELLIPSE,"Button",BS_AUTORADIOBUTTON,13,52,35,10
+END
+
+IDD_MYMULTIPAGEDLG DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NVC_MFCDocView.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "NVC_MFCDocView.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PROPPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_MYFORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_STYLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_SHAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_MYMULTIPAGEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_PAGE1               HTML                    "res\\html1.htm"
+IDR_PAGE2               HTML                    "res\\html2.htm"
+IDR_PAGE3               HTML                    "res\\htm00001.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_INDICATOR_PAGE       "Page "
+    IDS_FIRST_TOOLTIP       "Sets the style."
+    IDS_SECOND_TOOLTIP      "Sets the color."
+    IDS_THIRD_TOOLTIP       "Sets the shape."
+    IDS_PROPERTYSHEET_TITLE "String table title!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "NVC_MFCDocView"
+    IDR_CMyDocTypeTYPE      "\nCMyDocType\nMyFileType\n\n\nNVCMFCDocView.Document\nMyFileType.Document"
+    IDR_BRUSHDOCTYPE        "\nBrushDocType\nBrushFileType\n\n\nNVCMFCDocView.Document\nBrushFileType.Document"
+    IDR_DCDOCTYPE           "\nDCDocType\nDCFileType\n\n\nNVCMFCDocView.Document\nDCFileType.Document"
+    IDR_RICHEDITDOCTYPE     "\nRichEditDocType\nRichEditFileType\n\n\nNVCMFCDocView.Document\nRichEditFileType.Document"
+    IDR_EXAMPLEDOCTYPE      "\nExampleDocType\nExampleFileType\n\n\nNVCMFCDocView.Document\nExampleFileType.Document"
+    IDR_MYEDITDOCTYPE       "\nMyEditDocType\nMyEditFileType\n\n\nNVCMFCDocView.Document\nMyEditFileType.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NVC_MFCDocView"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "\nExampleDocType\nExampleFileType\n\n\nNVCMFCDocView.Document\nExampleFileType.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_FONTDOCTYPE         "\nFontDocType\nFontType\n\n\nNVCMFCDocView.Document\nFontType.Document"
+    IDR_SHEETDOCTYPE        "\nSheetDocType\nSheetFileType\n\n\nNVCMFCDocView.Document\nSheetFileType.Document"
+    IDR_RGNDOCTYPE          "\nRgnDocType\nRgnFileType\n\n\nNVCMFCDocView.Document\nRgnFileType.Document"
+    IDR_MYSCROLLDOCTYPE     "\nMyScrollDocType\nMyScrollFileType\n\n\nNVCMFCDocView.Document\nMyScrollFileType.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SPIRALLYTHINGY       "Spirally!"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\NVC_MFCDocView.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

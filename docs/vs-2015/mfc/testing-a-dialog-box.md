@@ -1,0 +1,73 @@
+---
+title: "Testing a Dialog Box | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+  - "C++"
+helpviewer_keywords: 
+  - "Test Dialog command"
+  - "testing, dialog boxes"
+  - "dialog boxes, testing"
+ms.assetid: 45034ee9-c554-4f4b-8c46-6ddefdee8951
+caps.latest.revision: 16
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Testing a Dialog Box
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Testing a Dialog Box](https://docs.microsoft.com/cpp/windows/testing-a-dialog-box).  
+  
+  
+The latest version of this topic can be found at [Testing a Dialog Box](https://docs.microsoft.com/cpp/windows/testing-a-dialog-box).  
+  
+  
+When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:  
+  
+-   Type text, select from combo-box lists, turn options on or off, and choose commands.  
+  
+-   Test the tab order.  
+  
+-   Test the grouping of controls such as radio buttons and check boxes.  
+  
+-   Test the keyboard shortcuts for controls in the dialog box.  
+  
+    > [!NOTE]
+    >  Connections to dialog box code made by using wizards are not included in the simulation.  
+  
+ When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box's Absolute Align property to True, the dialog box displays at a position that's relative to the upper-left corner of the screen.  
+  
+### To test a dialog box  
+  
+1.  When the Dialog editor is the active window, on the menu bar, choose **Format**, **Test Dialog**.  
+  
+2.  To end the simulation, press Esc, or just choose the **Close** button in the dialog box you are testing.  
+  
+ For information about how to add resources to managed projects, see [Resources in Desktop Apps](../Topic/Resources%20in%20Desktop%20Apps.md).  
+  
+ Requirements  
+  
+ Win32  
+  
+## See Also  
+ [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Dialog Editor](../mfc/dialog-editor.md)   
+ [Showing or Hiding the Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md)
+
+
+
+
+
+
+
+
+

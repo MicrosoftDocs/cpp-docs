@@ -1,0 +1,39 @@
+---
+title: "Storage of Arrays | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "storage, arrays"
+  - "arrays [C], storage"
+  - "arrays [C]"
+  - "storing arrays"
+ms.assetid: c1331216-cf51-45f6-8072-a3fedc7cb367
+caps.latest.revision: 13
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Storage of Arrays
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Storage of Arrays](https://docs.microsoft.com/cpp/c-language/storage-of-arrays).  
+  
+The storage associated with an array type is the storage required for all of its elements. The elements of an array are stored in contiguous and increasing memory locations, from the first element to the last.  
+  
+## See Also  
+ [Array Declarations](../c-language/array-declarations.md)
+
+
+
+
+

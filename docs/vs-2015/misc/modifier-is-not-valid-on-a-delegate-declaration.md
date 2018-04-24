@@ -1,0 +1,34 @@
+---
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a Delegate declaration | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30385"
+  - "vbc30385"
+helpviewer_keywords: 
+  - "BC30385"
+ms.assetid: cacbcdc7-dca9-4a22-b3bf-7e264308c031
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;modifier&gt;&#39; is not valid on a Delegate declaration
+You attempted to use a modifier, such as `Shared`, on a delegate declaration. Delegates are objects used to call the methods of other objects, by defining a constructor that is passed the specification of an object method. It is not valid to specify a modifier on a delegate declaration.  
+  
+ **Error ID:** BC30385  
+  
+### To correct this error  
+  
+1.  Remove the modifier.  
+  
+## See Also  
+ [Delegate Statement](../Topic/Delegate%20Statement.md)   
+ [How to: Invoke a Delegate Method](../Topic/How%20to:%20Invoke%20a%20Delegate%20Method%20\(Visual%20Basic\).md)

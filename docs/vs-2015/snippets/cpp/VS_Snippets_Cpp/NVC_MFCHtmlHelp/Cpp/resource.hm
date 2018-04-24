@@ -1,0 +1,6 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by NVC_MFCHtmlHelp.rc
+//
+#define HIDC_BUTTON1                    0x806603ea    // IDD_NVC_MFCHTMLHELP_DIALOG
+#define HIDC_CHECK1                     0x806603e8    // IDD_NVC_MFCHTMLHELP_DIALOG
+#define HIDC_EDIT1                      0x806603e9    // IDD_NVC_MFCHTMLHELP_DIALOG

@@ -1,0 +1,34 @@
+HKCR
+{
+	NVC_ATL_Windowing.ATLAsync.1 = s 'ATLAsync Class'
+	{
+		CLSID = s '{33DEFD0E-104D-4B7C-B024-520C13395FF3}'
+	}
+	NVC_ATL_Windowing.ATLAsync = s 'ATLAsync Class'
+	{
+		CLSID = s '{33DEFD0E-104D-4B7C-B024-520C13395FF3}'
+		CurVer = s 'NVC_ATL_Windowing.ATLAsync.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {33DEFD0E-104D-4B7C-B024-520C13395FF3} = s 'ATLAsync Class'
+		{
+			ProgID = s 'NVC_ATL_Windowing.ATLAsync.1'
+			VersionIndependentProgID = s 'NVC_ATL_Windowing.ATLAsync'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 142'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+			'Version' = s '1.0'
+		}
+	}
+}

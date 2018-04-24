@@ -1,0 +1,33 @@
+---
+title: "&#39;Select&#39; statements are not valid in the Immediate window | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30718"
+  - "vbc30718"
+helpviewer_keywords: 
+  - "BC30718"
+ms.assetid: 71990af6-8aaa-484a-a5a8-6ac399978537
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Select&#39; statements are not valid in the Immediate window
+`Select` statements can only be used in source code.  
+  
+ **Error ID:** BC30718  
+  
+### To correct this error  
+  
+-   Remove `Select` statements from debugging code.  
+  
+## See Also  
+ [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)

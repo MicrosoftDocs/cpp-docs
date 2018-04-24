@@ -1,0 +1,26 @@
+HKCR
+{
+	NVC_ATL_WindowingLib.DatePage.1 = s 'DatePage Class'
+	{
+		CLSID = s '{A79495A0-610C-4C0A-828A-589455C60E5D}'
+	}
+	NVC_ATL_WindowingLib.DatePage = s 'DatePage Class'
+	{
+		CLSID = s '{A79495A0-610C-4C0A-828A-589455C60E5D}'
+		CurVer = s 'NVC_ATL_WindowingLib.DatePage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A79495A0-610C-4C0A-828A-589455C60E5D} = s 'DatePage Class'
+		{
+			ProgID = s 'NVC_ATL_WindowingLib.DatePage.1'
+			VersionIndependentProgID = s 'NVC_ATL_WindowingLib.DatePage'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+		}
+	}
+}

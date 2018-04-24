@@ -1,0 +1,34 @@
+HKCR
+{
+	NVC_ATL_Windowing.MyCompositeCtrl.1 = s 'MyCompositeCtrl Class'
+	{
+		CLSID = s '{63367FFE-D85C-47F9-BD65-26A8B199E05C}'
+	}
+	NVC_ATL_Windowing.MyCompositeCtrl = s 'MyCompositeCtrl Class'
+	{
+		CLSID = s '{63367FFE-D85C-47F9-BD65-26A8B199E05C}'
+		CurVer = s 'NVC_ATL_Windowing.MyCompositeCtrl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {63367FFE-D85C-47F9-BD65-26A8B199E05C} = s 'MyCompositeCtrl Class'
+		{
+			ProgID = s 'NVC_ATL_Windowing.MyCompositeCtrl.1'
+			VersionIndependentProgID = s 'NVC_ATL_Windowing.MyCompositeCtrl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 164'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '%OLEMISC%'
+			}
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+			'Version' = s '1.0'
+		}
+	}
+}

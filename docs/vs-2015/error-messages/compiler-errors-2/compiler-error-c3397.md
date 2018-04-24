@@ -1,0 +1,48 @@
+---
+title: "Compiler Error C3397 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "C3397"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3397"
+ms.assetid: a8536e87-79c4-4ed7-bd96-42704d06391f
+caps.latest.revision: 7
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C3397
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C3397](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c3397).  
+  
+  
+Aggregate initialization is not allowed in default arguments  
+  
+ An array was declared incorrectly.  See [Arrays](../../windows/arrays-cpp-component-extensions.md) for more information.  
+  
+## Example  
+ The following sample generates C3397.  
+  
+```  
+// C3397.cpp  
+// compile with: /clr  
+// /clr /c  
+void Func(array<int> ^p = gcnew array<int> { 1, 2, 3 });   // C3397  
+void Func2(array<int> ^p = gcnew array<int> (3));   // OK  
+  
+int main() {  
+   array<int> ^p = gcnew array<int> { 1, 2, 3};   // OK  
+}  
+```
+

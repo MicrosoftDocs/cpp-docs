@@ -1,0 +1,35 @@
+---
+title: "String constant expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30217"
+  - "vbc30217"
+helpviewer_keywords: 
+  - "BC30217"
+ms.assetid: 02e4f418-fd5d-41a4-8896-70d06eb5035a
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# String constant expected
+A character other than a double quotation mark (") occurs where the context requires a string constant. One possible cause is that the quotation marks are missing from the string.  
+  
+ **Error ID:** BC30217  
+  
+### To correct this error  
+  
+1.  Ensure that the string is properly enclosed in double quotation marks.  
+  
+2.  Supply a string constant.  
+  
+## See Also  
+ [Constant and Literal Data Types](../Topic/Constant%20and%20Literal%20Data%20Types%20\(Visual%20Basic\).md)

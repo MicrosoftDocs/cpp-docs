@@ -1,0 +1,21 @@
+---
+title: "Functionality of the Generated API | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Domain-Specific Language, generated code"
+ms.assetid: 2c5505da-deaa-4dd1-9ea8-e22025b04bc3
+caps.latest.revision: 16
+author: "alancameronwills"
+ms.author: "awills"
+manager: "kamrani"
+---
+# Functionality of the Generated API
+This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](../Topic/Navigating%20and%20Updating%20a%20Model%20in%20Program%20Code.md).

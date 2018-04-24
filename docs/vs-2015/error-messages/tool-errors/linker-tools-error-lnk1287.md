@@ -1,0 +1,33 @@
+---
+title: "Linker Tools Error LNK1287 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "LNK1287"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "LNK1287"
+ms.assetid: 48dc379d-370c-42f6-8028-5bbcf1cc88bd
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Linker Tools Error LNK1287
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Linker Tools Error LNK1287](https://docs.microsoft.com/cpp/error-messages/tool-errors/linker-tools-error-lnk1287).  
+  
+  
+invalid managed entry point function  
+  
+ The entry point is not valid for a managed image. The return type of a managed entry point function can only be `void` or `int`. The type of the parameter of a managed entry point function can only be `void` or `String []`.
+

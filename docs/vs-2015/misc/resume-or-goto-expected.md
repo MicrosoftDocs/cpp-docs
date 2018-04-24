@@ -1,0 +1,35 @@
+---
+title: "&#39;Resume&#39; or &#39;GoTo&#39; expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc32019"
+  - "bc32019"
+helpviewer_keywords: 
+  - "BC32019"
+ms.assetid: c28a3a7f-cd11-4657-bf76-b9daccc383bc
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Resume&#39; or &#39;GoTo&#39; expected
+An `On Error` statement does not contain either a `Resume` clause or a `GoTo` clause. It must use one clause or the other.  
+  
+ **Error ID:** BC32019  
+  
+### To correct this error  
+  
+-   Add either a `Resume` clause or a `GoTo` clause to the `On Error` statement.  
+  
+## See Also  
+ [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)   
+ [Resume Statement](../Topic/Resume%20Statement.md)   
+ [GoTo Statement](../Topic/GoTo%20Statement.md)

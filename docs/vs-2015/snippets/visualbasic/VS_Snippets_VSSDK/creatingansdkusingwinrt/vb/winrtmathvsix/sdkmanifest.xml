@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- <snippet1> -->
+<FileList
+  DisplayName="WinRT Math Library (VB)"
+  MinVSVersion="11.0"
+  TargetFramework=".NETCore,version=v4.5"
+  AppliesTo="WindowsAppContainer"
+  SupportsMultipleVersions="Error"
+  MoreInfo="http://www.msdn.microsoft.com/">
+</FileList>
+<!-- </snippet1> -->

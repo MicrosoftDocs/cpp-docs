@@ -1,0 +1,27 @@
+---
+title: "Compiler Warning (level 1) CS5000 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS5000"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS5000"
+ms.assetid: 8751c338-8cf4-41b3-9565-f65ffda4744a
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Warning (level 1) CS5000
+Unknown compiler option '/option'  
+  
+ An invalid [compiler option](../Topic/C%23%20Compiler%20Options.md) was specified.

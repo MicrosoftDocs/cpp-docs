@@ -1,0 +1,48 @@
+---
+title: "Compiler Error CS0059 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0059"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0059"
+ms.assetid: 25a8624b-7f7b-4487-ba80-413d57f9132b
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0059
+Inconsistent accessibility: parameter type 'type' is less accessible than delegate 'delegate'  
+  
+ The return type and each of the types referenced in the formal parameter list of a method must be at least as accessible as the method itself. For more information, see [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+  
+## Example  
+ The following sample generates CS0059:  
+  
+```  
+// CS0059.cs  
+class MyClass //defaults to private accessibility  
+// try the following line instead  
+// public class MyClass  
+{  
+}  
+  
+public delegate void MyClassDel( MyClass myClass);   // CS0059  
+  
+public class Program  
+{  
+    public static void Main()  
+    {  
+    }  
+}  
+```

@@ -1,0 +1,31 @@
+---
+title: "No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a narrowing conversion: &lt;list&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbrAmbiguousCall2"
+ms.assetid: 13b20ffa-9f02-4971-a3cb-e08b402fd971
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a narrowing conversion: &lt;list&gt;
+An overloaded method was called, but the method cannot be matched with the list of provided arguments without a narrowing conversion.  
+  
+### To correct this error  
+  
+1.  Specify `Option``Strict` `Off`.  
+  
+2.  Change the arguments to match a signature of the overloaded method.  
+  
+## See Also  
+ [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
+ [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)

@@ -1,0 +1,33 @@
+---
+title: "Event &#39;&lt;eventname1&gt;&#39; cannot implement event &#39;&lt;eventname2&gt;&#39; because its delegate type does not match the delegate type of another event implemented by &#39;&lt;eventname1&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31407"
+  - "vbc31407"
+helpviewer_keywords: 
+  - "BC31407"
+ms.assetid: 0b9ffddb-4759-438b-b569-beac7062e986
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Event &#39;&lt;eventname1&gt;&#39; cannot implement event &#39;&lt;eventname2&gt;&#39; because its delegate type does not match the delegate type of another event implemented by &#39;&lt;eventname1&gt;&#39;
+[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] cannot implement an event because the delegate type of the event does not match the delegate type of another event. This error can occur when you define multiple events in an interface and then attempt to implement them together with the same event. An event can implement two or more events only if all implemented events are declared using the `As` syntax and specify the same delegate type.  
+  
+ **Error ID:** BC31407  
+  
+### To correct this error  
+  
+-   Implement the events separately.  
+  
+## See Also  
+ [Events](../Topic/Events%20\(Visual%20Basic\).md)

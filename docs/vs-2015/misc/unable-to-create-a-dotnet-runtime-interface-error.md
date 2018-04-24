@@ -1,0 +1,37 @@
+---
+title: "Unable to create a .NET Runtime interface: &lt;error&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31024"
+  - "vbc31024"
+helpviewer_keywords: 
+  - "BC31024"
+ms.assetid: 9647a7f7-26a3-44b7-ae6a-0bc3324dd096
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Unable to create a .NET Runtime interface: &lt;error&gt;
+There was an internal compiler error creating an interface, or a method call on an interface failed.  
+  
+ **Error ID:** BC31024  
+  
+### To correct this error  
+  
+1.  Save your work and restart [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  
+2.  If the error recurs, reinstall [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  
+3.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
+  
+## See Also  
+ [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

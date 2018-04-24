@@ -1,0 +1,59 @@
+---
+title: "Compiler Error CS0766 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0766"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0766"
+ms.assetid: 4574e30b-3e76-42cd-90e8-31c72126a08c
+caps.latest.revision: 4
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0766
+Partial methods must have a void return type.  
+  
+ A partial method cannot return a value. Its return type must be void.  
+  
+### To correct this error  
+  
+1.  Give the partial method a void return type, or else convert the method to a regular (not partial) method.  
+  
+## Example  
+ The following example generates CS0766:  
+  
+```  
+// cs0766.cs  
+using System;  
+  
+    public partial class C  
+    {  
+        partial int Part(); // CS0766  
+  
+        // Typically the implementing declaration  
+        // is contained in a separate file.  
+        partial int Part() //CS0766  
+        {  
+        }  
+  
+        public static int Main()  
+        {  
+            return 1;  
+        }  
+  
+    }  
+```  
+  
+## See Also  
+ [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)

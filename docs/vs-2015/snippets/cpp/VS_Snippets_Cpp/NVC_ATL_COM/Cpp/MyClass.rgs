@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_COM.MyClass.1 = s 'MyClass Class'
+	{
+		CLSID = s '{FD3714A6-066C-4719-B201-6EAD240AD33E}'
+	}
+	NVC_ATL_COM.MyClass = s 'MyClass Class'
+	{
+		CLSID = s '{FD3714A6-066C-4719-B201-6EAD240AD33E}'
+		CurVer = s 'NVC_ATL_COM.MyClass.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FD3714A6-066C-4719-B201-6EAD240AD33E} = s 'MyClass Class'
+		{
+			ProgID = s 'NVC_ATL_COM.MyClass.1'
+			VersionIndependentProgID = s 'NVC_ATL_COM.MyClass'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{DB9F12A2-CECC-4159-B5D8-B5BA358AAFA9}'
+		}
+	}
+}

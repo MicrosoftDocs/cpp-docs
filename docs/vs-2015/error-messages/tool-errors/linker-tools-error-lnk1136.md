@@ -1,0 +1,35 @@
+---
+title: "Linker Tools Error LNK1136 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "LNK1136"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "LNK1136"
+ms.assetid: 40c6d909-eb3f-4045-a0fc-4caa2f6db506
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Linker Tools Error LNK1136
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Linker Tools Error LNK1136](https://docs.microsoft.com/cpp/error-messages/tool-errors/linker-tools-error-lnk1136).  
+  
+  
+invalid or corrupt file  
+  
+ The input file either has a corrupt header or is zero size or abnormally small.  
+  
+ LNK1136 may also be caused if the file was incorrectly specified as an additional dependency.
+

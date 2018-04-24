@@ -1,0 +1,33 @@
+---
+title: "For loop control variable &#39;&lt;variablename&gt;&#39; already in use by an enclosing For loop | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30069"
+  - "vbc30069"
+helpviewer_keywords: 
+  - "BC30069"
+ms.assetid: e12c8cd5-55ad-4d10-8a3b-7b27f3716c8c
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# For loop control variable &#39;&lt;variablename&gt;&#39; already in use by an enclosing For loop
+Nested `For` loops all must use unique control variables.  
+  
+ **Error ID:** BC30069  
+  
+### To correct this error  
+  
+-   Change one of the control variable names.  
+  
+## See Also  
+ [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)

@@ -1,0 +1,411 @@
+// NVC_ATL_COM.idl : IDL source for NVC_ATL_COM
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (NVC_ATL_COM.tlb) and marshalling code.
+
+#include "olectl.h"
+#include "olectl.h"
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+   object,
+   uuid(F569DD4E-7FCC-4F43-BF2B-0BC17C9B93F4),
+   dual,
+   nonextensible,
+   helpstring("IBeeper Interface"),
+   pointer_default(unique)
+]
+interface IBeeper : IDispatch{
+};
+[
+   object,
+   uuid(6A9A51A8-926A-4E6B-A088-62247A7CDF31),
+   dual,
+   nonextensible,
+   helpstring("IMyClass Interface"),
+   pointer_default(unique)
+]
+interface IMyClass : IDispatch{
+};
+[
+   object,
+   uuid(E7FDE75A-EAED-4D58-81D7-9DBBF71921C0),
+   dual,
+   nonextensible,
+   helpstring("IMyDHTMLCtrl Interface"),
+   pointer_default(unique)
+]
+interface IMyDHTMLCtrl : IDispatch{
+   [id(1), helpstring("method MethodInvoked")] HRESULT MethodInvoked(void);
+   [id(2), helpstring("method GoToURL")] HRESULT GoToURL(void);
+};
+
+[
+   object, 
+   dual,
+   nonextensible,
+   uuid(2F85C7D2-5205-4C0C-9A77-25B2A61E037A),
+   helpstring("IMyDHTMLCtrlUI Interface"),
+   pointer_default(unique)
+]
+interface IMyDHTMLCtrlUI : IDispatch
+{
+   // Example method that will be called by the HTML
+   HRESULT OnClick([in]IDispatch* pdispBody, [in]VARIANT varColor);
+   [id(1), helpstring("method HelloHTML")] HRESULT HelloHTML(void);
+};
+[
+   object,
+   uuid(B658482C-9F52-4936-A7B5-B8CDC485BF23),
+   dual,
+   nonextensible,
+   helpstring("IMyCustomClass Interface"),
+   pointer_default(unique)
+]
+interface IMyCustomClass : IDispatch{
+};
+[
+   object,
+   uuid(EDDF2F5B-AF32-430C-B8C1-086F0252EADC),
+   helpstring("IMyAutoClass Interface"),
+   pointer_default(unique)
+]
+interface IMyAutoClass : IUnknown{
+};
+[
+   object,
+   uuid(AC7E47E1-0B2B-4F27-942C-E2F4D6BAFEA5),
+   helpstring("IMySingletonClass Interface"),
+   pointer_default(unique)
+]
+interface IMySingletonClass : IUnknown{
+};
+[
+   object,
+   uuid(61CAAA52-9355-4C00-8314-E1C085EFAE43),
+   helpstring("IDocument Interface"),
+   pointer_default(unique)
+]
+interface IDocument : IUnknown{
+};
+[
+   object,
+   uuid(D98006CD-C4E7-4E25-BCCF-4CFAC700F6A1),
+   helpstring("IMyApp Interface"),
+   pointer_default(unique)
+]
+interface IMyApp : IUnknown{
+   [, helpstring("method CreateDocument")] HRESULT CreateDocument([out,retval] IDocument** ppDoc);
+};
+[
+   object,
+   uuid(45F797F5-FBC9-4844-AEB9-A1E9049161AD),
+   dual,
+   nonextensible,
+   helpstring("IMyComposite Interface"),
+   pointer_default(unique)
+]
+interface IMyComposite : IDispatch{
+};
+
+[
+   object,
+   uuid(9C16F37D-98D6-49FF-887A-FB5771C88C0B),
+   dual,
+   nonextensible,
+   helpstring("IMyControl Interface"),
+   pointer_default(unique)
+]
+interface IMyControl : IDispatch{
+   [id(1), helpstring("method GetIOleObject")] HRESULT GetIOleObject(void);
+   [id(2), helpstring("method CComControlCreateControlWindow")] HRESULT CComControlCreateControlWindow(void);
+   [propput, id(3), helpstring("property MyText")] HRESULT MyText([in] BSTR newVal);
+   [propput, id(4), helpstring("property MyTitle")] HRESULT MyTitle([in] BSTR newVal);
+   [propput, id(5), helpstring("property Shape")] HRESULT Shape([in] int newVal);
+   [id(6), helpstring("method TestCWords")] HRESULT TestCWords(void);
+   [id(7), helpstring("method TestVAC")] HRESULT TestVAC(void);
+   [id(8), helpstring("method TestVC")] HRESULT TestVC(void);
+   [id(9), helpstring("method TestMyAutoCrit")] HRESULT TestMyAutoCrit(void);
+   [id(10), helpstring("method TestMyCircle")] HRESULT TestMyCircle(void);
+   [id(11), helpstring("method TestMyAggObject")] HRESULT TestMyAggObject(void);
+   [id(12), helpstring("method UseCComObjectStack")] HRESULT UseCComObjectStack(void);
+   [id(13), helpstring("method CComUnkArrayEnd")] HRESULT CComUnkArrayEnd(void);
+   [id(14), helpstring("method DoAtlHiMetricToPixel")] HRESULT DoAtlHiMetricToPixel(void);
+   [id(15), helpstring("method DoAtlMarshalPtrInProc")] HRESULT DoAtlMarshalPtrInProc(void);
+   [id(16), helpstring("method MyErrorProneMethod")] HRESULT MyErrorProneMethod(void);
+   [id(17), helpstring("method TestMyService")] HRESULT TestMyService(void);
+};
+
+[
+   object,
+   uuid(BC637BDB-7B0D-4a50-AA9F-B88286D4B05C),
+   dual,
+   nonextensible,
+   helpstring("IMyControl Interface"),
+   pointer_default(unique)
+]
+interface IMyDualInterface : IDispatch{
+};
+
+// <Snippet24>
+[
+   object,
+   uuid(7B3AC376-509F-4068-87BA-03B73ADC359B),
+   dual,                                                    // (1)
+   nonextensible,                                           // (2)
+   pointer_default(unique)
+]
+interface IWords : IDispatch
+{
+   [id(DISPID_NEWENUM), propget]                            // (3)
+   HRESULT _NewEnum([out, retval] IUnknown** ppUnk);
+
+   [id(DISPID_VALUE), propget]                              // (4)
+   HRESULT Item([in] long Index, [out, retval] BSTR* pVal); // (5)
+
+   [id(0x00000001), propget]                                // (6)
+   HRESULT Count([out, retval] long* pVal);
+
+};
+// </Snippet24>
+
+[
+   object,
+   uuid(7A0C5DD6-9256-4308-A710-26C89F69C7A3),
+   dual,
+   nonextensible,
+   helpstring("IVariantArrayCollection Interface"),
+   pointer_default(unique)
+]
+interface IVariantArrayCollection : IDispatch{
+};
+[
+   object,
+   uuid(2A19DF96-93DF-4EDC-969C-533913BA32F9),
+   dual,
+   nonextensible,
+   helpstring("IVariantCollection Interface"),
+   pointer_default(unique)
+]
+interface IVariantCollection : IDispatch{
+};
+[
+   object,
+   uuid(384AEFC2-31D3-49CF-B49A-96AD263CA828),
+   dual,
+   nonextensible,
+   helpstring("IMyCircle Interface"),
+   pointer_default(unique)
+]
+interface IMyCircle : IDispatch{
+   [propget, id(1), helpstring("property XCenter")] HRESULT XCenter([out, retval] double* pVal);
+};
+[
+   object,
+   uuid(93D430C1-6B86-4272-804E-63FA53DBA533),
+   dual,
+   nonextensible,
+   helpstring("IMyAggObject Interface"),
+   pointer_default(unique)
+]
+interface IMyAggObject : IDispatch{
+};
+[
+   object,
+   uuid(309E27BB-5D58-477E-AA01-4D8E0328D70F),
+   dual,
+   nonextensible,
+   helpstring("IMySuppErrClass Interface"),
+   pointer_default(unique)
+]
+interface IMySuppErrClass : IDispatch{
+};
+[
+	object,
+	uuid(A2D72770-25F8-4B0A-9C45-4485226513EB),
+	helpstring("IOuter Interface"),
+	pointer_default(unique)
+]
+interface IOuter : IUnknown{
+};
+[
+   uuid(94B5AD9F-4236-4e36-8B47-854D9C0D8A5D)
+]
+interface ITearOff : IUnknown
+{}
+[
+	object,
+	uuid(CEBD575E-4AF5-45DF-AD11-1E473E52E689),
+	helpstring("IMyService Interface"),
+	pointer_default(unique)
+]
+interface IMyService : IUnknown{
+};
+[
+   uuid(DB9F12A2-CECC-4159-B5D8-B5BA358AAFA9),
+   version(1.0),
+   helpstring("NVC_ATL_COM 1.0 Type Library")
+]
+library NVC_ATL_COMLib
+{
+   importlib("stdole2.tlb");
+   [
+      uuid(A34E1893-58A9-4934-930A-391FAE583500),
+      helpstring("Beeper Class")
+   ]
+   coclass Beeper
+   {
+      [default] interface IBeeper;
+   };
+   [
+      uuid(FD3714A6-066C-4719-B201-6EAD240AD33E),
+      helpstring("MyClass Class")
+   ]
+   coclass MyClass
+   {
+      [default] interface IMyClass;
+   };
+   [
+      uuid(BEE5B039-A698-4376-B8AE-C850875F3599),
+      control,
+      helpstring("MyDHTMLCtrl Class")
+   ]
+   coclass MyDHTMLCtrl
+   {
+      [default] interface IMyDHTMLCtrl;
+      interface IMyDHTMLCtrlUI;
+   };
+   [
+      uuid(EA612909-54F7-4BC7-B084-96C02B6DC51E),
+      helpstring("MyCustomClass Class")
+   ]
+   coclass MyCustomClass
+   {
+      [default] interface IMyCustomClass;
+   };
+   [
+      uuid(96A92004-D662-4E34-AF6C-2080444996A1),
+      helpstring("MyAutoClass Class")
+   ]
+   coclass MyAutoClass
+   {
+      [default] interface IMyAutoClass;
+   };
+   [
+      uuid(4DD71FFF-F780-4F32-8EEA-DAB1163A346A),
+      helpstring("MySingletonClass Class")
+   ]
+   coclass MySingletonClass
+   {
+      [default] interface IMySingletonClass;
+   };
+   [
+      uuid(9E14EDA9-24BC-4E29-B9AA-AD7234FD5765),
+      helpstring("MyDoc Class")
+   ]
+   coclass MyDoc
+   {
+      [default] interface IDocument;
+   };
+   [
+      uuid(F4589FC9-2873-425A-8AB3-989DEE6C0F57),
+      helpstring("MyApp Class")
+   ]
+   coclass MyApp
+   {
+      [default] interface IMyApp;
+   };
+   [
+      uuid(74359E1E-65D8-46AB-ADEB-166274CA304E),
+      control,
+      helpstring("MyComposite Class")
+   ]
+   coclass MyComposite
+   {
+      [default] interface IMyComposite;
+   };
+   [
+      uuid(F7B6C98A-9FC2-42A0-B369-34A8940CEDAB),
+      helpstring("MyCompositeProps Class")
+   ]
+   coclass MyCompositeProps
+   {
+      [default] interface IUnknown;
+   };
+   [
+      uuid(3A1B9E65-0AC1-4CA7-B267-3CED1AB06094),
+      control,
+      helpstring("MyControl Class")
+   ]
+   coclass MyControl
+   {
+      [default] interface IMyControl;
+   };
+   [
+      uuid(655D85F1-6B54-4B8B-9058-8045D7664E55),
+      helpstring("Words Class")
+   ]
+   coclass Words
+   {
+      [default] interface IWords;
+   };
+   [
+      uuid(D02E342D-0072-4C65-BB3D-341B00A873D8),
+      helpstring("VariantArrayCollection Class")
+   ]
+   coclass VariantArrayCollection
+   {
+      [default] interface IVariantArrayCollection;
+   };
+   [
+      uuid(CFEBC2FF-23DC-4C9B-B70D-AA4602697DE7),
+      helpstring("VariantCollection Class")
+   ]
+   coclass VariantCollection
+   {
+      [default] interface IVariantCollection;
+   };
+   [
+      uuid(87FD69A6-396A-40F8-8334-CF407A883E4C),
+      helpstring("MyCircle Class")
+   ]
+   coclass MyCircle
+   {
+      [default] interface IMyCircle;
+   };
+   [
+      uuid(4CBC1A47-F3E3-4E87-814B-DEF4748B9779),
+      helpstring("MyAggObject Class")
+   ]
+   coclass MyAggObject
+   {
+      [default] interface IMyAggObject;
+   };
+   [
+      uuid(810FFA0A-C845-4DEA-A675-C78E135661D3),
+      helpstring("MySuppErrClass Class")
+   ]
+   coclass MySuppErrClass
+   {
+      [default] interface IMySuppErrClass;
+   };
+	[
+		uuid(976ECCDB-7680-497D-9013-630C7DC3CA6E),
+		helpstring("Outer Class")
+	]
+	coclass Outer
+	{
+		[default] interface IOuter;
+	};
+	[
+		uuid(9C156C6A-F453-404D-BDD4-0EAD456E87D4),
+		helpstring("MyService Class")
+	]
+	coclass MyService
+	{
+		[default] interface IMyService;
+	};
+};

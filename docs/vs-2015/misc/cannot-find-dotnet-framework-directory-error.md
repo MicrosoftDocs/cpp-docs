@@ -1,0 +1,39 @@
+---
+title: "Cannot find .NET Framework directory: &lt;error&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31508"
+  - "vbc31508"
+helpviewer_keywords: 
+  - "BC31508"
+ms.assetid: d1571dd4-b57f-43b1-b296-22e9eb518fc0
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Cannot find .NET Framework directory: &lt;error&gt;
+The directory where the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] assemblies are stored could not be located.  
+  
+ **Error ID:** BC31508  
+  
+### To correct this error  
+  
+1.  Compile the program again to see if the error recurs.  
+  
+2.  If the error continues, save your work and restart [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  
+3.  If the error recurs, reinstall [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+  
+4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
+  
+## See Also  
+ [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

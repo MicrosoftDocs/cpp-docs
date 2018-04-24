@@ -1,0 +1,32 @@
+---
+title: "Project Load Failure Dialog Box | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Project Load Failure dialog box"
+ms.assetid: 660c6521-cc74-480a-a24d-e62b75d8d510
+caps.latest.revision: 5
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# Project Load Failure Dialog Box
+This dialog box will appear if a project file cannot be loaded.  
+  
+ **Please correct the specified error(s) and reload the project.**  
+ Provides information regarding the error. Use the information in this dialog box to locate and resolve the error in the project file. Save your project, and then reload it in the IDE.  
+  
+ **Do not show this dialog again this session**  
+ When selected, the **Project Load Failure** dialog box will not appear until the next time you open the IDE.  
+  
+## See Also  
+ [Property Inheritance](../misc/property-inheritance.md)

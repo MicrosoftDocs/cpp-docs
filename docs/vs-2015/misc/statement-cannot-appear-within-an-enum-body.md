@@ -1,0 +1,37 @@
+---
+title: "Statement cannot appear within an Enum body | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30619"
+  - "bc30619"
+helpviewer_keywords: 
+  - "BC30619"
+ms.assetid: 5d91d601-2a2d-418c-ae26-791d14a6f3cd
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Statement cannot appear within an Enum body
+Statement cannot occur within an Enum body. End of Enum assumed.  
+  
+ An unexpected language construct was encountered. It is assumed that an `End Enum` construct is missing and that any source code after this point is outside the enumeration.  
+  
+ **Error ID:** BC30619  
+  
+### To correct this error  
+  
+1.  Verify the syntax of the code used inside the enumeration.  
+  
+2.  Make sure that the interface definition ends with an `End Enum` construct.  
+  
+## See Also  
+ [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)

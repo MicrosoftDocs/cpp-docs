@@ -1,0 +1,34 @@
+---
+title: "Declare statements in a Module cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30786"
+  - "bc30786"
+helpviewer_keywords: 
+  - "BC30786"
+ms.assetid: 488b855f-72ea-414b-bffc-a5b63e97d289
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Declare statements in a Module cannot be declared &#39;&lt;specifier&gt;&#39;
+A `Declare` declaration has a specifier that is not valid within a `Module` declaration. Modules can never be instantiated, do not support inheritance, and cannot implement interfaces.  
+  
+ **Error ID:** BC30786  
+  
+### To correct this error  
+  
+-   Remove the specifier.  
+  
+## See Also  
+ [Delegate Statement](../Topic/Delegate%20Statement.md)   
+ [Module Statement](../Topic/Module%20Statement.md)

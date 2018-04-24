@@ -1,0 +1,1 @@
+Visual Studio Team Edition for Testers

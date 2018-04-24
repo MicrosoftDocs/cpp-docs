@@ -1,0 +1,9 @@
+; NVC_MFC_AxSub.def : Declares the module parameters.
+
+LIBRARY      "NVC_MFC_AxSub.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

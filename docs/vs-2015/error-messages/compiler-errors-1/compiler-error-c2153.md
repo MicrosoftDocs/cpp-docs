@@ -1,0 +1,43 @@
+---
+title: "Compiler Error C2153 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2153"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2153"
+ms.assetid: cfc50cb7-9a0f-4b5b-879a-d419c99f7be1
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C2153
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C2153](https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/compiler-error-c2153).  
+  
+  
+hex constants must have at least one hex digit  
+  
+ Hexadecimal constants 0x, 0X, and \x are not valid. At least one hex digit must follow x or X.  
+  
+ The following sample generates C2153:  
+  
+```  
+// C2153.cpp  
+int main() {  
+   int a= 0x;    // C2153  
+   int b= 0xA;   // OK  
+}  
+```
+
