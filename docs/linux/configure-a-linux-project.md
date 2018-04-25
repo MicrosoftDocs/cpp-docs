@@ -36,7 +36,7 @@ To change settings pertaining to the remote Linux computer, configure the remote
 > [!NOTE]
 > To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section.  These could be set to use a certain version of GCC, or even the Clang compiler, for example.
 
-## <a name="include_dirs"></a> Include directories and IntelliSense support
+## Include directories and IntelliSense support
 
 **Visual Studio 2017 version 15.2 and earlier:**
 By default, Visual Studio does not include any system-level include files from the Linux computer.  For example, items in the **/usr/include** directory are not present in Visual Studio.
@@ -71,7 +71,7 @@ Since all compilation is happening on a remote computer, several additional Buil
 
 ![Build Events](media/settings_buildevents.png)
 
-## IntelliSense for remote headers (Visual Studio 2017 version 15.3 and later)
+## <a name="remote_intellisense"></a> IntelliSense for remote headers (Visual Studio 2017 version 15.3 and later)
 
 When you add a new connection in **Connection Manager**, Visual Studio automatically detects the include directories for the compiler on the remote system. Visual Studio then zips up and copies those files to a directory on your local Windows machine. After that, whenever you use that connection in a Visual Studio or CMake project, the headers in those directories are used to provide IntelliSense.
 
@@ -83,7 +83,7 @@ apt install zip
 
 To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created prior to version 15.3, select the connect and then select **Download**.
 
-![Remote Header IntelliSense](media/remote_header_intellisense.png)
+![Remote Header IntelliSense](media/remote-header-intellisense.png)
 
 ## See Also
 [Working with Project Properties](../ide/working-with-project-properties.md)  
