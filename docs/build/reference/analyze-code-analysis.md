@@ -51,7 +51,10 @@ Enables code analysis and control options.
  Typically, the compiler generates code and does more syntax checking after it runs the analyzer. The **/analyze:only** option turns off this code generation pass; this makes analysis faster but compile errors and warnings that might have been discovered by the code generation pass of the compiler are not emitted. If the program is not free of code-generation errors, analysis results might be unreliable; therefore, we recommend that you use this option only if the code already passes code-generation syntax checking without errors.
 
  /analyze:ruleset `<file_path>.ruleset`
-Enables you to specify which rule sets to analyze, including custom rule sets that you can create yourself. When this switch is set, the rules engine is more efficient because it excludes non-members of the specified rule set before running. When the switch is not set, the engine checks all rules and then excludes results for non-members before displaying the output. 
+Enables you to specify which rule sets to analyze, including custom rule sets that you can create yourself. When this switch is set, the rules engine is more efficient because it excludes non-members of the specified rule set before running. When the switch is not set, the engine checks all rules.
+
+ /analyze:plugin
+
 
 The rulesets that ship with Visual Studio are found in **%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets.**
 
