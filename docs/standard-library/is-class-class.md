@@ -18,58 +18,63 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_class Class
-Tests if type is a class.  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
-struct is_class;  
-```  
-  
-### Parameters  
- `Ty`  
- The type to query.  
-  
-## Remarks  
- An instance of the type predicate holds true if the type `Ty` is a type defined as a `class` or a `struct`, or a `cv-qualified` form of one of them, otherwise it holds false.  
-  
-## Example  
-  
-```cpp  
-// std__type_traits__is_class.cpp   
-// compile with: /EHsc   
-#include <type_traits>   
-#include <iostream>   
-  
-struct trivial   
-    {   
-    int val;   
-    };   
-  
-int main()   
-    {   
-    std::cout << "is_class<trivial> == " << std::boolalpha   
-        << std::is_class<trivial>::value << std::endl;   
-    std::cout << "is_class<int> == " << std::boolalpha   
-        << std::is_class<int>::value << std::endl;   
-  
-    return (0);   
-    }  
-  
-```  
-  
-```Output  
-is_class<trivial> == true  
-is_class<int> == false  
-```  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)   
- [is_compound Class](../standard-library/is-compound-class.md)   
- [is_union Class](../standard-library/is-union-class.md)
+
+Tests if type is a class.
+
+## Syntax
+
+```cpp
+template <class Ty>
+struct is_class;
+```
+
+### Parameters
+
+`Ty`
+ The type to query.
+
+## Remarks
+
+An instance of the type predicate holds true if the type `Ty` is a type defined as a `class` or a `struct`, or a `cv-qualified` form of one of them, otherwise it holds false.
+
+## Example
+
+```cpp
+// std__type_traits__is_class.cpp
+// compile with: /EHsc
+#include <type_traits>
+#include <iostream>
+
+struct trivial
+    {
+    int val;
+    };
+
+int main()
+    {
+    std::cout << "is_class<trivial> == " << std::boolalpha
+        << std::is_class<trivial>::value << std::endl;
+    std::cout << "is_class<int> == " << std::boolalpha
+        << std::is_class<int>::value << std::endl;
+
+    return (0);
+    }
+
+```
+
+```Output
+is_class<trivial> == true
+is_class<int> == false
+```
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>
+[is_compound Class](../standard-library/is-compound-class.md)<br/>
+[is_union Class](../standard-library/is-union-class.md)<br/>

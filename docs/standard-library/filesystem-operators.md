@@ -17,105 +17,100 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt; operators
-The operators perform a lexical comparison of two paths as strings. Use the **equivalent** function to determine whether two paths (for example a relative path and an absolute path) refer to the same file or directory on disk.  
-  
-```  
-C:\root> D:\root: false  
-C:\root> C:\root\sub: false  
-C:\root> C:\roo: true  
-```  
-  
- For more information, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  
-  
-## operator==  
-  
-```  
-bool operator==(const path& left, const path& right) noexcept;  
-```  
-  
- The function returns left.native() == right.native().  
-  
-## operator!=  
-  
-```  
-bool operator!=(const path& left, const path& right) noexcept;  
-```  
-  
- The function returns !(left == right).  
-  
-## operator<  
-  
-```  
-bool operator<(const path& left, const path& right) noexcept;  
-```  
-  
- The function returns left.native() < right.native().  
-  
-## operator<=  
-  
-```  
-bool operator<=(const path& left, const path& right) noexcept;  
-```  
-  
- The function returns !(right \< left).  
-  
-## operator>  
-  
-```  
-bool operator>(const path& left, const path& right) noexcept;  
-```  
-  
- The function returns right \< left.  
-  
-## operator>=  
-  
-```  
-bool operator>=(const path& left, const path& right) noexcept;  
-```  
-  
- The function returns !(left < right).  
-  
-## operator/  
-  
-```  
-path operator/(const path& left, const path& right);
-```  
-  
- The function executes:  
-  
-```  
-basic_string<Elem, Traits> str;  
-path ans = left;  
-return (ans /= right);
-```  
-  
-## operator<<  
-  
-```  
-template <class Elem, class Traits>  
-basic_ostream<Elem, Traits>& operator<<(basic_ostream<Elem, Traits>& os, const path& pval);
-```  
-  
- The function returns os << pval.string\<Elem, Traits>().  
-  
-## operator>>  
-  
-```  
-template <class Elem, class Traits>  
-basic_istream<Elem, Traits>& operator<<(basic_istream<Elem, Traits>& is, const path& pval);
-```  
-  
- The function executes:  
-  
-```  
-basic_string<Elem, Traits> str;  
-is>> str;  
-pval = str;  
-return (is);
-```  
-  
-## See Also  
- [path Class (C++ Standard Library)](../standard-library/path-class.md)   
- [File System Navigation (C++)](../standard-library/file-system-navigation.md)   
- [\<filesystem>](../standard-library/filesystem.md)
 
+The operators perform a lexical comparison of two paths as strings. Use the **equivalent** function to determine whether two paths (for example a relative path and an absolute path) refer to the same file or directory on disk.
+
+For more information, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
+
+## operator==
+
+```cpp
+bool operator==(const path& left, const path& right) noexcept;
+```
+
+The function returns left.native() == right.native().
+
+## operator!=
+
+```cpp
+bool operator!=(const path& left, const path& right) noexcept;
+```
+
+The function returns !(left == right).
+
+## operator<
+
+```cpp
+bool operator<(const path& left, const path& right) noexcept;
+```
+
+The function returns left.native() < right.native().
+
+## operator<=
+
+```cpp
+bool operator<=(const path& left, const path& right) noexcept;
+```
+
+The function returns !(right \< left).
+
+## operator>
+
+```cpp
+bool operator>(const path& left, const path& right) noexcept;
+```
+
+The function returns right \< left.
+
+## operator>=
+
+```cpp
+bool operator>=(const path& left, const path& right) noexcept;
+```
+
+The function returns !(left < right).
+
+## operator/
+
+```cpp
+path operator/(const path& left, const path& right);
+```
+
+The function executes:
+
+```cpp
+basic_string<Elem, Traits> str;
+path ans = left;
+return (ans /= right);
+```
+
+## operator<<
+
+```cpp
+template <class Elem, class Traits>
+basic_ostream<Elem, Traits>& operator<<(basic_ostream<Elem, Traits>& os, const path& pval);
+```
+
+The function returns os << pval.string\<Elem, Traits>().
+
+## operator>>
+
+```cpp
+template <class Elem, class Traits>
+basic_istream<Elem, Traits>& operator<<(basic_istream<Elem, Traits>& is, const path& pval);
+```
+
+The function executes:
+
+```cpp
+basic_string<Elem, Traits> str;
+is>> str;
+pval = str;
+return (is);
+```
+
+## See also
+
+[path Class (C++ Standard Library)](../standard-library/path-class.md)<br/>
+[File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>
+[\<filesystem>](../standard-library/filesystem.md)<br/>

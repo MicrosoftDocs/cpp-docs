@@ -21,52 +21,57 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _putch_nolock, _putwch_nolock
-Writes a character to the console without locking the thread.  
-  
+
+Writes a character to the console without locking the thread.
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## Syntax  
-  
-```  
-  
-      int _putch_nolock(  
-int c  
-);  
-wint_t _putwch_nolock(  
-wchar_t c  
-);  
-```  
-  
-#### Parameters  
- *c*  
- Character to be output.  
-  
-## Return Value  
- Returns *c* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.  
-  
-## Remarks  
- **_putch_nolock** and **_putwch_nolock** are identical to **_putch** and **_putwch**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-### Generic-Text Routine Mappings  
-  
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|**_puttch_nolock**|**_putch_nolock**|**_putch_nolock**|**_putwch_nolock**|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|**_putch_nolock**|\<conio.h>|  
-|**_putwch_nolock**|\<conio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
- [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
- [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## Syntax
+
+```C
+int _putch_nolock(
+int c
+);
+wint_t _putwch_nolock(
+wchar_t c
+);
+```
+
+### Parameters
+
+*c*<br/>
+Character to be output.
+
+## Return Value
+
+Returns *c* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.
+
+## Remarks
+
+**_putch_nolock** and **_putwch_nolock** are identical to **_putch** and **_putwch**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+### Generic-Text Routine Mappings
+
+|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_puttch_nolock**|**_putch_nolock**|**_putch_nolock**|**_putwch_nolock**|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**_putch_nolock**|\<conio.h>|
+|**_putwch_nolock**|\<conio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## See also
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
+[_getch, _getwch](getch-getwch.md)<br/>

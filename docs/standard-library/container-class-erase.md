@@ -17,27 +17,30 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Container Class::erase
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Erases an element.  
-  
-## Syntax  
-  
-```  
- 
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Erases an element.
+
+## Syntax
+
+```
+
     iterator erase(
     iterator _Where);
 
 iterator erase(
-    iterator first,  
+    iterator first,
     iterator last);
-```  
-  
-## Remarks  
- The first member function removes the element of the controlled sequence pointed to by *_Where*. The second member function removes the elements of the controlled sequence in the range [`first`, `last`). Both return an iterator that designates the first element remaining beyond any elements removed, or [end](../standard-library/container-class-end.md) if no such element exists.  
-  
- The member functions throw an exception only if a copy operation throws an exception.  
-  
-## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+```
+
+## Remarks
+
+The first member function removes the element of the controlled sequence pointed to by *_Where*. The second member function removes the elements of the controlled sequence in the range [`first`, `last`). Both return an iterator that designates the first element remaining beyond any elements removed, or [end](../standard-library/container-class-end.md) if no such element exists.
+
+The member functions throw an exception only if a copy operation throws an exception.
+
+## See also
+
+[Sample Container Class](../standard-library/sample-container-class.md)<br/>

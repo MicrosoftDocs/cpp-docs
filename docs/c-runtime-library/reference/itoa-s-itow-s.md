@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 ---
 # _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s
 
-Converts an integer to a string. These are versions of the [_itoa, _itow functions](../../c-runtime-library/reference/itoa-itow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts an integer to a string. These are versions of the [_itoa, _itow functions](itoa-itow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -85,22 +85,22 @@ Zero if successful; an error code on failure. If any of the following conditions
 
 |value|buffer|size|radix|Return|
 |-----------|------------|----------------------|-----------|------------|
-|any|`NULL`|any|any|`EINVAL`|
-|any|any|<=0|any|`EINVAL`|
-|any|any|<= length of the result string required|any|`EINVAL`|
-|any|any|any|*radix* < 2 or *radix* > 36|`EINVAL`|
+|any|**NULL**|any|any|**EINVAL**|
+|any|any|<=0|any|**EINVAL**|
+|any|any|<= length of the result string required|any|**EINVAL**|
+|any|any|any|*radix* < 2 or *radix* > 36|**EINVAL**|
 
 ### Security issues
 
-These functions can generate an access violation if *buffer* does not point to valid memory and is not `NULL`, or if the length of the buffer is not long enough to hold the result string.
+These functions can generate an access violation if *buffer* does not point to valid memory and is not **NULL**, or if the length of the buffer is not long enough to hold the result string.
 
 ## Remarks
 
-Except for the parameters and return value, the `_itoa_s` and `_itow_s` function families have the same behavior as the corresponding less secure `_itoa` and `_itow` versions.
+Except for the parameters and return value, the **_itoa_s** and **_itow_s** function families have the same behavior as the corresponding less secure **_itoa** and **_itow** versions.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug library versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 The CRT includes convenient macros to define the size of the buffer required to convert the longest possible value of each integer type, including the null terminator and sign character, for several common bases. For information, see [Maximum conversion count macros](itoa-itow.md#maximum-conversion-count-macros).
 
@@ -108,18 +108,18 @@ The CRT includes convenient macros to define the size of the buffer required to 
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_itot_s`|`_itoa_s`|`_itoa_s`|`_itow_s`|
-|`_ltot_s`|`_ltoa_s`|`_ltoa_s`|`_ltow_s`|
-|`_ultot_s`|`_ultoa_s`|`_ultoa_s`|`_ultow_s`|
-|`_i64tot_s`|`_i64toa_s`|`_i64toa_s`|`_i64tow_s`|
-|`_ui64tot_s`|`_ui64toa_s`|`_ui64toa_s`|`_ui64tow_s`|
+|**_itot_s**|**_itoa_s**|**_itoa_s**|**_itow_s**|
+|**_ltot_s**|**_ltoa_s**|**_ltoa_s**|**_ltow_s**|
+|**_ultot_s**|**_ultoa_s**|**_ultoa_s**|**_ultow_s**|
+|**_i64tot_s**|**_i64toa_s**|**_i64toa_s**|**_i64tow_s**|
+|**_ui64tot_s**|**_ui64toa_s**|**_ui64toa_s**|**_ui64tow_s**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_itoa_s`, `_ltoa_s`, `_ultoa_s`, `_i64toa_s`, `_ui64toa_s`|\<stdlib.h>|
-|`_itow_s`, `_ltow_s`, `_ultow_s`, `_i64tow_s`, `_ui64tow_s`|\<stdlib.h> or \<wchar.h>|
+|**_itoa_s**, **_ltoa_s**, **_ultoa_s**, **_i64toa_s**, **_ui64toa_s**|\<stdlib.h>|
+|**_itow_s**, **_ltow_s**, **_ultow_s**, **_i64tow_s**, **_ui64tow_s**|\<stdlib.h> or \<wchar.h>|
 
 These functions are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -196,4 +196,4 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 ## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_itoa, _itow functions](../../c-runtime-library/reference/itoa-itow.md)<br/>
+[_itoa, _itow functions](itoa-itow.md)<br/>

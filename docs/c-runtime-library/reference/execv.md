@@ -21,7 +21,8 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # execv
-This POSIX function is deprecated. Use the ISO C++ conformant [_execv](../../c-runtime-library/reference/execv-wexecv.md) instead.  
-  
+
+This POSIX function is deprecated. Use the ISO C++ conformant [_execv](execv-wexecv.md) instead.
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

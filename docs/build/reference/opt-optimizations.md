@@ -32,7 +32,7 @@ Controls the optimizations that LINK performs during a build.
  **REF** &#124; **NOREF**  
  **/OPT:REF** eliminates functions and data that are never referenced; **/OPT:NOREF** keeps functions and data that are never referenced.  
   
- When /OFT:REF is enabled, LINK removes unreferenced packaged functions and data. An object contains packaged functions and data (COMDATs) if it was compiled by using the [/Gy](../../build/reference/gy-enable-function-level-linking.md) option. This optimization is known as transitive COMDAT elimination. By default, **/OPT:REF** is enabled in non-debug builds. To override this default and keep unreferenced COMDATs in the program, specify **/OPT:NOREF**. You can use the [/INCLUDE](../../build/reference/include-force-symbol-references.md) option to override the removal of a specific symbol.  
+ When /OPT:REF is enabled, LINK removes unreferenced packaged functions and data. An object contains packaged functions and data (COMDATs) if it was compiled by using the [/Gy](../../build/reference/gy-enable-function-level-linking.md) option. This optimization is known as transitive COMDAT elimination. By default, **/OPT:REF** is enabled in non-debug builds. To override this default and keep unreferenced COMDATs in the program, specify **/OPT:NOREF**. You can use the [/INCLUDE](../../build/reference/include-force-symbol-references.md) option to override the removal of a specific symbol.  
   
  When **/OPT:REF** is enabled either explicitly or by default, a limited form of **/OPT:ICF** is enabled that only folds identical functions. If you want **/OPT:REF** but not **/OPT:ICF**, you must specify either **/OPT:REF,NOICF** or **/OPT:NOICF**.  
   

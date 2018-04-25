@@ -18,31 +18,32 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # allocator_variable_size Class
-Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_variable_size](../standard-library/max-variable-size-class.md).  
-  
-## Syntax  
-  
-```
-template <class Type>  
+
+Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_variable_size](../standard-library/max-variable-size-class.md).
+
+## Syntax
+
+```cpp
+template <class Type>
 class allocator_variable_size;
-```  
-  
-#### Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|`Type`|The type of elements allocated by the allocator.|  
-  
-## Remarks  
- The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_variable_size), SYNC_DEFAULT, allocator_variable_size);`  
-  
-## Requirements  
- **Header:** \<allocators>  
-  
- **Namespace:** stdext  
-  
-## See Also  
- [\<allocators>](../standard-library/allocators-header.md)
+```
 
+### Parameters
 
+|Parameter|Description|
+|---------------|-----------------|
+|`Type`|The type of elements allocated by the allocator.|
 
+## Remarks
+
+The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_variable_size), SYNC_DEFAULT, allocator_variable_size);`
+
+## Requirements
+
+**Header:** \<allocators>
+
+**Namespace:** stdext
+
+## See also
+
+[\<allocators>](../standard-library/allocators-header.md)<br/>

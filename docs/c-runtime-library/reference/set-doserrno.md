@@ -21,34 +21,37 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_doserrno
-Sets the value of the [_doserrno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.  
-  
-## Syntax  
-  
-```  
-errno_t _set_doserrno(   
-   int value   
-);  
-```  
-  
-#### Parameters  
- [in] `value`  
- The new value of `_doserrno`.  
-  
-## Return Value  
- Returns zero if successful.  
-  
-## Remarks  
- Possible values are defined in Errno.h.  
-  
-## Requirements  
-  
-|Routine|Required header|Optional header|  
-|-------------|---------------------|---------------------|  
-|`_set_doserrno`|\<stdlib.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
- [_get_doserrno](../../c-runtime-library/reference/get-doserrno.md)   
- [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+
+Sets the value of the [_doserrno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.
+
+## Syntax
+
+```C
+errno_t _set_doserrno( int error_value );
+```
+
+### Parameters
+
+*error_value*<br/>
+The new value of **_doserrno**.
+
+## Return Value
+
+Returns zero if successful.
+
+## Remarks
+
+Possible values are defined in Errno.h.
+
+## Requirements
+
+|Routine|Required header|Optional header|
+|-------------|---------------------|---------------------|
+|**_set_doserrno**|\<stdlib.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[_get_doserrno](get-doserrno.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

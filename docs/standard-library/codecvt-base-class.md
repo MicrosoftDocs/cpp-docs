@@ -18,11 +18,12 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # codecvt_base Class
-A base class for the codecvt class that is used to define an enumeration type referred to as **result**, used as the return type for the facet member functions to indicate the result of a conversion.  
-  
-## Syntax  
-  
-```
+
+A base class for the codecvt class that is used to define an enumeration type referred to as **result**, used as the return type for the facet member functions to indicate the result of a conversion.
+
+## Syntax
+
+```cpp
 class codecvt_base : public locale::facet {
 public:
     enum result {ok, partial, error, noconv};
@@ -37,26 +38,26 @@ protected:
     virtual int do_max_length() const;
     virtual int do_encoding() const;
 };
-```  
-  
-## Remarks  
- The class describes an enumeration common to all specializations of template class [codecvt](../standard-library/codecvt-class.md). The enumeration result describes the possible return values from [do_in](../standard-library/codecvt-class.md#do_in) or [do_out](../standard-library/codecvt-class.md#do_out):  
-  
-- **ok** if the conversion between internal and external character encodings succeeds.  
-  
-- **partial** if the destination is not large enough for the conversion to succeed.  
-  
-- **error** if the source sequence is ill formed.  
-  
-- **noconv** if the function performs no conversion.  
-  
-## Requirements  
- **Header:** \<locale>  
-  
- **Namespace:** std  
-  
-## See Also  
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+```
 
+## Remarks
 
+The class describes an enumeration common to all specializations of template class [codecvt](../standard-library/codecvt-class.md). The enumeration result describes the possible return values from [do_in](../standard-library/codecvt-class.md#do_in) or [do_out](../standard-library/codecvt-class.md#do_out):
 
+- **ok** if the conversion between internal and external character encodings succeeds.
+
+- **partial** if the destination is not large enough for the conversion to succeed.
+
+- **error** if the source sequence is ill formed.
+
+- **noconv** if the function performs no conversion.
+
+## Requirements
+
+**Header:** \<locale>
+
+**Namespace:** std
+
+## See also
+
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

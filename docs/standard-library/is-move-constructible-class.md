@@ -18,29 +18,31 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_move_constructible Class
-Tests whether the type has a move constructor.  
-  
-## Syntax  
-  
-```
-template <class T>  
+
+Tests whether the type has a move constructor.
+
+## Syntax
+
+```cpp
+template <class T>
 struct is_move_constructible;
-```  
-  
-#### Parameters  
- T  
- The type to be evaluated  
-  
-## Remarks  
- A type predicate that evaluates to true if the type `T` can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)
+```
 
+### Parameters
 
+T
+ The type to be evaluated
 
+## Remarks
+
+A type predicate that evaluates to true if the type `T` can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>

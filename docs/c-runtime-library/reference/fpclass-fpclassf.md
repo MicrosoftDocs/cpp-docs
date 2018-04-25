@@ -1,7 +1,7 @@
 ---
 title: "_fpclass, _fpclassf | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -21,52 +21,57 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fpclass, _fpclassf
-Returns a value indicating the floating-point classification of the argument.  
-  
-## Syntax  
-  
-```  
-int _fpclass(   
-   double x   
-);  
-  
-int _fpclassf(   
-   float x   
-); /* x64 only */  
-```  
-  
-#### Parameters  
- `x`  
- The floating-point value to test.  
-  
-## Return Value  
- The `_fpclass` and `_fpclassf` functions return an integer value that indicates the floating-point classification of the argument `x`. The classification may have one of the following values, defined in \<float.h>.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|`_FPCLASS_SNAN`|Signaling NaN|  
-|`_FPCLASS_QNAN`|Quiet NaN|  
-|`_FPCLASS_NINF`|Negative infinity ( -INF)|  
-|`_FPCLASS_NN`|Negative normalized non-zero|  
-|`_FPCLASS_ND`|Negative denormalized|  
-|`_FPCLASS_NZ`|Negative zero ( - 0)|  
-|`_FPCLASS_PZ`|Positive 0 (+0)|  
-|`_FPCLASS_PD`|Positive denormalized|  
-|`_FPCLASS_PN`|Positive normalized non-zero|  
-|`_FPCLASS_PINF`|Positive infinity (+INF)|  
-  
-## Remarks  
- The `_fpclass` and `_fpclassf` functions are Microsoft specific. They are similar to [fpclassify](../../c-runtime-library/reference/fpclassify.md), but return more detailed information about the argument. The `_fpclassf` function is only available when compiled for the x64 platform.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_fpclass`|\<float.h>|  
-  
- For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)   
- [fpclassify](../../c-runtime-library/reference/fpclassify.md)
+
+Returns a value indicating the floating-point classification of the argument.
+
+## Syntax
+
+```C
+int _fpclass(
+   double x
+);
+
+int _fpclassf(
+   float x
+); /* x64 only */
+```
+
+### Parameters
+
+*x*<br/>
+The floating-point value to test.
+
+## Return Value
+
+The **_fpclass** and **_fpclassf** functions return an integer value that indicates the floating-point classification of the argument *x*. The classification may have one of the following values, defined in \<float.h>.
+
+|Value|Description|
+|-----------|-----------------|
+|**_FPCLASS_SNAN**|Signaling NaN|
+|**_FPCLASS_QNAN**|Quiet NaN|
+|**_FPCLASS_NINF**|Negative infinity ( -INF)|
+|**_FPCLASS_NN**|Negative normalized non-zero|
+|**_FPCLASS_ND**|Negative denormalized|
+|**_FPCLASS_NZ**|Negative zero ( - 0)|
+|**_FPCLASS_PZ**|Positive 0 (+0)|
+|**_FPCLASS_PD**|Positive denormalized|
+|**_FPCLASS_PN**|Positive normalized non-zero|
+|**_FPCLASS_PINF**|Positive infinity (+INF)|
+
+## Remarks
+
+The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are similar to [fpclassify](fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|**_fpclass**, **_fpclassf**|\<float.h>|
+
+For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
+[fpclassify](fpclassify.md)<br/>

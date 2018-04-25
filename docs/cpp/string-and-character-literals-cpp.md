@@ -63,7 +63,7 @@ int main()
 }  
 ```  
   
- String literals can have no prefix, or `u8`, `L`, `u`, and  `U` prefixes to denote narrow character (single-byte or multi-byte), UTF-8, wide character (UCS-2 or UTF-16), UTF-16 and UTF-32 encodings, respectively. A raw string literal can have `R`, `u8R`, `LR`, `uR` and `UR` prefixes for the raw version equivalents of these encodings.  To create temporary or static std::string values, you can use string literals or raw string literals with an `s` suffix. For more information, see the String literals section below. For more information on the basic source character set, universal character names, and using characters from extended codepages in your source code, see [Character Sets](../cpp/character-sets2.md).  
+ String literals can have no prefix, or `u8`, `L`, `u`, and  `U` prefixes to denote narrow character (single-byte or multi-byte), UTF-8, wide character (UCS-2 or UTF-16), UTF-16 and UTF-32 encodings, respectively. A raw string literal can have `R`, `u8R`, `LR`, `uR` and `UR` prefixes for the raw version equivalents of these encodings.  To create temporary or static std::string values, you can use string literals or raw string literals with an `s` suffix. For more information, see the String literals section below. For more information on the basic source character set, universal character names, and using characters from extended codepages in your source code, see [Character Sets](../cpp/character-sets.md).  
   
 ## Character literals  
  A *character literal* is composed of a constant character. It is represented by the character surrounded by single quotation marks. There are five kinds of character literals:  
@@ -190,7 +190,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
   
  Universal character names cannot encode values in the surrogate code point range D800-DFFF. For Unicode surrogate pairs, specify the universal character name by using `\UNNNNNNNN`, where NNNNNNNN is the eight-digit code point for the character. The compiler generates a surrogate pair if required.  
   
- In C++03, the language only allowed a subset of characters to be represented by their universal character names, and allowed some universal character names that didn’t actually represent any valid Unicode characters. This was fixed in the C++11 standard. In C++11, both character and string literals and identifiers can use universal character names.  For more information on universal character names, see [Character Sets](../cpp/character-sets2.md). For more information about Unicode, see [Unicode](http://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). For more information about surrogate pairs, see [Surrogate Pairs and Supplementary Characters](http://msdn.microsoft.com/library/dd374069\(v=vs.85\).aspx).  
+ In C++03, the language only allowed a subset of characters to be represented by their universal character names, and allowed some universal character names that didn’t actually represent any valid Unicode characters. This was fixed in the C++11 standard. In C++11, both character and string literals and identifiers can use universal character names.  For more information on universal character names, see [Character Sets](../cpp/character-sets.md). For more information about Unicode, see [Unicode](http://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). For more information about surrogate pairs, see [Surrogate Pairs and Supplementary Characters](http://msdn.microsoft.com/library/dd374069\(v=vs.85\).aspx).  
   
 ## String literals  
  A string literal represents a sequence of characters that together form a null-terminated string. The characters must be enclosed between double quotation marks. There are the following kinds of string literals:  
@@ -384,6 +384,6 @@ const char32_t* s5 = U"😎 = \U0001F60E is B-)";
 ```  
   
 ## See Also  
- [Character Sets](../cpp/character-sets2.md)   
+ [Character Sets](../cpp/character-sets.md)   
  [Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)   
  [User-Defined Literals](../cpp/user-defined-literals-cpp.md)

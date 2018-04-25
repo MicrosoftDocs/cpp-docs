@@ -18,7 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # deprecated (C++)
-This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes2.md).
+This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes.md).
 
  With the exceptions noted below, the **deprecated** declaration offers the same functionality as the [deprecated](../preprocessor/deprecated-c-cpp.md) pragma:  
   
@@ -28,7 +28,7 @@ This topic is about the Microsoft-specific deprecated declspec declaration. For 
   
 -   Macros can only be marked as deprecated with the **deprecated** pragma.  
   
- If the compiler encounters the use of a deprecated identifier or the standard [`[[deprecated]]`](attributes2.md) attribute, a [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) warning is thrown.  
+ If the compiler encounters the use of a deprecated identifier or the standard [`[[deprecated]]`](attributes.md) attribute, a [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) warning is thrown.  
   
 ## Example  
  The following sample shows how to mark functions as deprecated, and how to specify a message that will be displayed at compile time, when the deprecated function is used.  
