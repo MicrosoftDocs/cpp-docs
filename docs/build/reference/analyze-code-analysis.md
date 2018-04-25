@@ -54,7 +54,23 @@ Enables code analysis and control options.
 Enables you to specify which rule sets to analyze, including custom rule sets that you can create yourself. When this switch is set, the rules engine is more efficient because it excludes non-members of the specified rule set before running. When the switch is not set, the engine checks all rules.
 
  /analyze:plugin
+Enables the specified PREfast plugin as part of code analysis runs. LocalEspC.dll is the plugin that implements concurrency-related code analysis checks in the range [C26100](c26100.md) through C26199. To run LocalEspC.dll, use this compiler option:
 
+```cmd
+/analyze:plugin LocalEspC.dll
+```
+
+To run CppCoreCheck.dll, first run this command from a developer command prompt:
+
+```cmd
+set Esp.Extensions=CppCoreCheck.dll
+```
+
+Then use this compiler option:
+
+```cmd
+/analyze:plugin EspXEngine.dll
+```
 
 The rulesets that ship with Visual Studio are found in **%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets.**
 
