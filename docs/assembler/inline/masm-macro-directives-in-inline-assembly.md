@@ -3,7 +3,7 @@ title: "MASM Macro Directives in Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["directives, macros", "inline assembly, macro directives", "macros, directives", "MASM (Microsoft Macro Assembler), inline assembly macro directives"]
 ms.assetid: 83643a09-1699-40a8-8ef2-13502bc4ac2c

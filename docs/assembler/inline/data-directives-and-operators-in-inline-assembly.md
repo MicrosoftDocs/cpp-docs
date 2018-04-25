@@ -3,7 +3,7 @@ title: "Data Directives and Operators in Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data directives [C++]", "__asm keyword [C++], referencing limitations", "MASM (Microsoft Macro Assembler), directives", "directives [C++], MASM", "MASM (Microsoft Macro Assembler), structures", "operators [MASM]", "inline assembly, operators", "inline assembly, data directives", "MASM (Microsoft Macro Assembler), operators", "structures [C++], MASM"]
 ms.assetid: fb7410c7-156a-4131-bcfc-211aa70533e3

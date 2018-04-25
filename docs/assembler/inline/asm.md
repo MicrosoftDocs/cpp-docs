@@ -3,7 +3,7 @@ title: "__asm | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["__asm", "__asm_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]

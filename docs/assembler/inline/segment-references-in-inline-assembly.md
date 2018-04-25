@@ -3,7 +3,7 @@ title: "Segment References in Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["references, inline assembly", "segment references in inline assembly", "inline assembly, segment references", "registers", "inline assembly, registers", "registers, inline assembly"]
 ms.assetid: c63e6bb4-49d9-4fa1-bb22-eea21b5cbc0f

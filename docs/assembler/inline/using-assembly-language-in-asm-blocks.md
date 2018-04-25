@@ -3,7 +3,7 @@ title: "Using Assembly Language in __asm Blocks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["assembly language [C++], features", "assembly language [C++]", "__asm keyword [C++], assembly language in"]
 ms.assetid: ad699356-1d16-4984-871f-c5fd7797c1fb

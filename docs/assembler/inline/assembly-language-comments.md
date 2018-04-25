@@ -3,7 +3,7 @@ title: "Assembly-Language Comments | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["assembly language [C++], comments", "comments [C++], assembly language", "macros [C++], assembly language", "__asm keyword [C++], instructions"]
 ms.assetid: 0dc10850-77f5-426e-9dab-185ea28e06e4

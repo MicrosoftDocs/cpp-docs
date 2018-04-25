@@ -3,7 +3,7 @@ title: "EVEN and ALIGN Directives | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["align", "EVEN"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["EVEN directive", "directives, MASM", "MASM (Microsoft Macro Assembler), directives", "NOP (no operation instruction)", "ALIGN directive"]

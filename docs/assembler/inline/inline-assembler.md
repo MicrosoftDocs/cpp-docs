@@ -3,7 +3,7 @@ title: "Inline Assembler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["assembler [C++]", "assembler [C++], inline", "assembly language [C++], inline", "inline assembler [C++]", "inline assembly [C++]"]
 ms.assetid: 7e13f18f-3628-4306-8b81-4a6d09c043fe
