@@ -1,7 +1,7 @@
 ---
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2107"
+ms.date: "04/28/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -41,7 +41,8 @@ int main(int argc, char* argv[])
 }
 ```
 
-CMakeLists.txt: 
+CMakeLists.txt:
+
 ```cmd
 project (hello-cmake)
 add_executable(hello-cmake hello.cpp)
@@ -55,6 +56,9 @@ By default, Visual Studio chooses the first remote system in the list (under **T
 After you specify a Linux target, your source is copied to your Linux machine. Then, CMake is run on the Linux machine to generate the CMake cache for your project.  
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")  
+
+**Visual Studio 2017 version 15.3 and later:**
+To provide IntelliSense support for remote headers, Visual Studio automatically copies them to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ## Debug the project  
 To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and click run (or press F5).
@@ -81,6 +85,7 @@ To change the default CMake settings, choose **CMake | Change CMake Settings | C
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 The `name` value can be whatever you like. The `remoteMachineName` value specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system. The field `remoteCMakeListsRoot` specifies where your project sources will be copied to on the remote system. The field `remoteBuildRoot` is where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`.
 
 ## Building a supported CMake release from source
