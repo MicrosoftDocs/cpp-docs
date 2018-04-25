@@ -18,31 +18,32 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # allocator_chunklist Class
-Describes an object that manages storage allocation and freeing for objects using a cache of type [cache_chunklist](../standard-library/cache-chunklist-class.md).  
-  
-## Syntax  
-  
-```
-template <class Type>  
+
+Describes an object that manages storage allocation and freeing for objects using a cache of type [cache_chunklist](../standard-library/cache-chunklist-class.md).
+
+## Syntax
+
+```cpp
+template <class Type>
 class allocator_chunklist;
-```  
-  
-#### Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|`Type`|The type of elements allocated by the allocator.|  
-  
-## Remarks  
- The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`  
-  
-## Requirements  
- **Header:** \<allocators>  
-  
- **Namespace:** stdext  
-  
-## See Also  
- [\<allocators>](../standard-library/allocators-header.md)
+```
 
+### Parameters
 
+|Parameter|Description|
+|---------------|-----------------|
+|`Type`|The type of elements allocated by the allocator.|
 
+## Remarks
+
+The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
+
+## Requirements
+
+**Header:** \<allocators>
+
+**Namespace:** stdext
+
+## See also
+
+[\<allocators>](../standard-library/allocators-header.md)<br/>

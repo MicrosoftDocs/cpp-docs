@@ -18,24 +18,27 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator&lt; (&lt;sample container&gt;)
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Overloads **operator<** to compare two objects of template class [Container](../standard-library/sample-container-class.md).  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Overloads **operator<** to compare two objects of template class [Container](../standard-library/sample-container-class.md).
+
+## Syntax
+
+```cpp
+template <class Ty>
 bool operator<(
-    const Container <Ty>& left,  
+    const Container <Ty>& left,
     const Container <Ty>& right);
-```  
-  
-## Return Value  
- Returns `lexicographical_compare(left.begin, left.end, right.begin, right.end)`.  
-  
-## See Also  
-[\<sample container>](../standard-library/sample-container.md)  
-[begin](../standard-library/container-class-begin.md)  
+```
+
+## Return Value
+
+Returns `lexicographical_compare(left.begin, left.end, right.begin, right.end)`.
+
+## See also
+
+[\<sample container>](../standard-library/sample-container.md)<br/>
+[begin](../standard-library/container-class-begin.md)<br/>
 [end](../standard-library/container-class-end.md)  

@@ -18,32 +18,34 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_trivially_constructible Class
-Tests whether a type is trivially constructible when the specified argument types are used.  
-  
-## Syntax  
-  
-```
-template <class T, class... Args>  
+
+Tests whether a type is trivially constructible when the specified argument types are used.
+
+## Syntax
+
+```cpp
+template <class T, class... Args>
 struct is_trivially_constructible;
-```  
-  
-#### Parameters  
- `T`  
- The type to query.  
-  
- `Args`  
- The argument types to match in a constructor of `T`.  
-  
-## Remarks  
- An instance of the type predicate holds true if the type `T` is trivially constructible by using the argument types in `Args`, otherwise it holds false. Type `T` is trivially constructible if the variable definition `T t(std::declval<Args>()...);` is well-formed and is known to call no non-trivial operations. Both `T` and all the types in `Args` must be complete types, `void`, or arrays of unknown bound.  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)
+```
 
+### Parameters
 
+`T`
+ The type to query.
 
+`Args`
+ The argument types to match in a constructor of `T`.
+
+## Remarks
+
+An instance of the type predicate holds true if the type `T` is trivially constructible by using the argument types in `Args`, otherwise it holds false. Type `T` is trivially constructible if the variable definition `T t(std::declval<Args>()...);` is well-formed and is known to call no non-trivial operations. Both `T` and all the types in `Args` must be complete types, `void`, or arrays of unknown bound.
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>

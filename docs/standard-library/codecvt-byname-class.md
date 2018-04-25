@@ -18,51 +18,53 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # codecvt_byname Class
-A derived template class that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning conversions.  
-  
-## Syntax  
-  
-```
+
+A derived template class that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning conversions.
+
+## Syntax
+
+```cpp
 template <class CharType, class Byte, class StateType>
 class codecvt_byname: public codecvt<CharType, Byte, StateType> {
 public:
     explicit codecvt_byname(
     const char* _Locname,
     size_t _Refs = 0);
-```  
-  
 ```
+
+```cpp
 explicit codecvt_byname(
     const string& _Locname,
     size_t _Refs = 0);
-```  
-  
 ```
+
+```cpp
 protected:
     virtual ~codecvt_byname();
 
 };
-```  
-  
-#### Parameters  
- `_Locname`  
- A named locale.  
-  
- `_Refs`  
- An initial reference count.  
-  
-## Remarks  
- Byname facets are automatically created when a named locale is constructed.  
-  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType>( `_Refs`).  
-  
-## Requirements  
- **Header:** \<locale>  
-  
- **Namespace:** std  
-  
-## See Also  
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+```
 
+### Parameters
 
+`_Locname`
+ A named locale.
 
+`_Refs`
+ An initial reference count.
+
+## Remarks
+
+Byname facets are automatically created when a named locale is constructed.
+
+Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType>( `_Refs`).
+
+## Requirements
+
+**Header:** \<locale>
+
+**Namespace:** std
+
+## See also
+
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

@@ -18,62 +18,66 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_copy_constructible Class
-Tests if type has a copy constructor.  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
-struct is_copy_constructible;  
-```  
-  
-#### Parameters  
- `Ty`  
- The type to query.  
-  
-## Remarks  
- An instance of the type predicate holds true if the type `Ty` is a class that has a copy constructor, otherwise it holds false.  
-  
-## Example  
-  
-```cpp  
-#include <type_traits>   
-#include <iostream>   
-  
-struct Copyable  
-{  
-    int val;  
-};  
-  
-struct NotCopyable  
-{  
-   NotCopyable(const NotCopyable&) = delete;  
-   int val;  
-  
-};  
-  
-int main()  
-{  
-    std::cout << "is_copy_constructible<Copyable> == " << std::boolalpha  
-        << std::is_copy_constructible<Copyable>::value << std::endl;  
-    std::cout << "is_copy_constructible<NotCopyable> == " << std::boolalpha  
-        << std::is_copy_constructible<NotCopyable>::value << std::endl;  
-  
-    return (0);  
-}  
-  
-```  
-  
-```Output  
-is_copy_constructible<Copyable> == true  
-is_copy_constructible<NotCopyable > == false  
-```  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)
 
+Tests if type has a copy constructor.
+
+## Syntax
+
+```cpp
+template <class Ty>
+struct is_copy_constructible;
+```
+
+### Parameters
+
+`Ty`
+ The type to query.
+
+## Remarks
+
+An instance of the type predicate holds true if the type `Ty` is a class that has a copy constructor, otherwise it holds false.
+
+## Example
+
+```cpp
+#include <type_traits>
+#include <iostream>
+
+struct Copyable
+{
+    int val;
+};
+
+struct NotCopyable
+{
+   NotCopyable(const NotCopyable&) = delete;
+   int val;
+
+};
+
+int main()
+{
+    std::cout << "is_copy_constructible<Copyable> == " << std::boolalpha
+        << std::is_copy_constructible<Copyable>::value << std::endl;
+    std::cout << "is_copy_constructible<NotCopyable> == " << std::boolalpha
+        << std::is_copy_constructible<NotCopyable>::value << std::endl;
+
+    return (0);
+}
+
+```
+
+```Output
+is_copy_constructible<Copyable> == true
+is_copy_constructible<NotCopyable > == false
+```
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>

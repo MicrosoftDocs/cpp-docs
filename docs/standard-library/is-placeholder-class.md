@@ -18,27 +18,29 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_placeholder Class
-Tests if type is a placeholder.  
-  
-## Syntax  
-  
-struct is_placeholder {  
-   static const int value;  
-   };  
-  
-## Remarks  
- The constant value `value` is 0 if the type `Ty` is not a placeholder; otherwise, its value is the position of the function call argument that it binds to. You use it to determine the value `N` for the Nth placeholder `_N`.  
-  
-## Example  
-  
-```cpp  
-// std__functional__is_placeholder.cpp   
-// compile with: /EHsc   
-#include <functional>   
-#include <iostream>   
-  
-using namespace std::placeholders;   
-  
+
+Tests if type is a placeholder.
+
+## Syntax
+
+struct is_placeholder {
+   static const int value;
+   };
+
+## Remarks
+
+The constant value `value` is 0 if the type `Ty` is not a placeholder; otherwise, its value is the position of the function call argument that it binds to. You use it to determine the value `N` for the Nth placeholder `_N`.
+
+## Example
+
+```cpp
+// std__functional__is_placeholder.cpp
+// compile with: /EHsc
+#include <functional>
+#include <iostream>
+
+using namespace std::placeholders;
+
 template<class Expr>
 void test_for_placeholder(const Expr&)
 {
@@ -51,19 +53,20 @@ int main()
     test_for_placeholder(_3);
 
     return (0);
-}  
-```  
-  
-```Output  
-0  
-3  
-```  
-  
-## Requirements  
- **Header:** \<functional>  
-  
- **Namespace:** std  
-  
-## See Also  
- [_1 Object](../standard-library/1-object.md)
+}
+```
 
+```Output
+0
+3
+```
+
+## Requirements
+
+**Header:** \<functional>
+
+**Namespace:** std
+
+## See also
+
+[_1 Object](../standard-library/1-object.md)<br/>

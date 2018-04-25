@@ -18,30 +18,32 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # bad_weak_ptr Class
-Reports bad weak_ptr exception.  
-  
-## Syntax  
-  
-```  
-class bad_weak_ptr : public std::exception 
- {  
-public:  
+
+Reports bad weak_ptr exception.
+
+## Syntax
+
+```cpp
+class bad_weak_ptr : public std::exception
+ {
+public:
     bad_weak_ptr();
     const char *what() throw();
- };  
-```  
-  
-## Remarks  
- The class describes an exception that can be thrown from the [shared_ptr Class](../standard-library/shared-ptr-class.md) constructor that takes an argument of type [weak_ptr Class](../standard-library/weak-ptr-class.md). The member function `what` returns `"bad_weak_ptr"`.  
-  
-## Example  
-  
-```cpp  
-// std__memory__bad_weak_ptr.cpp   
-// compile with: /EHsc   
-#include <memory>   
-#include <iostream>   
- 
+ };
+```
+
+## Remarks
+
+The class describes an exception that can be thrown from the [shared_ptr Class](../standard-library/shared-ptr-class.md) constructor that takes an argument of type [weak_ptr Class](../standard-library/weak-ptr-class.md). The member function `what` returns `"bad_weak_ptr"`.
+
+## Example
+
+```cpp
+// std__memory__bad_weak_ptr.cpp
+// compile with: /EHsc
+#include <memory>
+#include <iostream>
+
 int main()
 {
     std::weak_ptr<int> wp;
@@ -53,7 +55,7 @@ int main()
 
     try
     {
-        std::shared_ptr<int> sp1(wp); // weak_ptr has expired   
+        std::shared_ptr<int> sp1(wp); // weak_ptr has expired
     }
     catch (const std::bad_weak_ptr&)
     {
@@ -66,16 +68,18 @@ int main()
 
     return (0);
 }
-```  
-  
-```Output  
-bad weak pointer  
-```  
-  
-## Requirements  
- **Header:** \<memory>  
-  
- **Namespace:** std  
-  
-## See Also  
- [weak_ptr Class](../standard-library/weak-ptr-class.md)
+```
+
+```Output
+bad weak pointer
+```
+
+## Requirements
+
+**Header:** \<memory>
+
+**Namespace:** std
+
+## See also
+
+[weak_ptr Class](../standard-library/weak-ptr-class.md)<br/>

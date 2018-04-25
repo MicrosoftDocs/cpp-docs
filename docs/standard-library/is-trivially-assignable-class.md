@@ -18,32 +18,34 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_trivially_assignable Class
-Tests whether a value of `From` type can be trivially assigned to `To` type  
-  
-## Syntax  
-  
-```
-template <class To, class From>  
+
+Tests whether a value of `From` type can be trivially assigned to `To` type
+
+## Syntax
+
+```cpp
+template <class To, class From>
 struct is_trivially_assignable;
-```  
-  
-#### Parameters  
- To  
- The type of the object that receives the assignment.  
-  
- From  
- The type of the object that provides the value.  
-  
-## Remarks  
- The expression `declval<To>() = declval<From>()` must be well-formed, and must be known to the compiler to require no non-trivial operations. Both `From` and `To` must be complete types, `void`, or arrays of unknown bound.  
-  
-## Requirements  
- **Header:** \<type_traits>  
-  
- **Namespace:** std  
-  
-## See Also  
- [<type_traits>](../standard-library/type-traits.md)
+```
 
+### Parameters
 
+To
+ The type of the object that receives the assignment.
 
+From
+ The type of the object that provides the value.
+
+## Remarks
+
+The expression `declval<To>() = declval<From>()` must be well-formed, and must be known to the compiler to require no non-trivial operations. Both `From` and `To` must be complete types, `void`, or arrays of unknown bound.
+
+## Requirements
+
+**Header:** \<type_traits>
+
+**Namespace:** std
+
+## See also
+
+[<type_traits>](../standard-library/type-traits.md)<br/>
