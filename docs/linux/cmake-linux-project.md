@@ -57,7 +57,7 @@ After you specify a Linux target, your source is copied to your Linux machine. T
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")  
 
-**Visual Studio 2017 version 15.3 and later:**
+**Visual Studio 2017 version 15.7 and later:**
 To provide IntelliSense support for remote headers, Visual Studio automatically copies them to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ## Debug the project  

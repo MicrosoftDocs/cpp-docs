@@ -38,7 +38,7 @@ To change settings pertaining to the remote Linux computer, configure the remote
 
 ## Include directories and IntelliSense support
 
-**Visual Studio 2017 version 15.2 and earlier:**
+**Visual Studio 2017 version 15.6 and earlier:**
 By default, Visual Studio does not include any system-level include files from the Linux computer.  For example, items in the **/usr/include** directory are not present in Visual Studio.
 For full [IntelliSense](/visualstudio/ide/using-intellisense) support, you will need to copy those files to some location on your development computer and point Visual Studio to this location.  One option is to use scp (Secure Copy) to copy the files.  On Windows 10, you can use [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about) to run scp.  For previous versions of Windows, you could use something like [PSCP (PuTTY Secure Copy)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
@@ -52,7 +52,7 @@ Once the files are copied, use the **VC++ Directories** item in Project properti
 
 ![VC++ Directories](media/settings_directories.png)
 
-**Visual Studio 2017 version 15.3 and later:**
+**Visual Studio 2017 version 15.7 and later:**
 See [Manage Remote Headers for IntelliSense](#remote_intellisense).
 
 ## Copy sources
@@ -71,7 +71,7 @@ Since all compilation is happening on a remote computer, several additional Buil
 
 ![Build Events](media/settings_buildevents.png)
 
-## <a name="remote_intellisense"></a> IntelliSense for remote headers (Visual Studio 2017 version 15.3 and later)
+## <a name="remote_intellisense"></a> IntelliSense for remote headers (Visual Studio 2017 version 15.7 and later)
 
 When you add a new connection in **Connection Manager**, Visual Studio automatically detects the include directories for the compiler on the remote system. Visual Studio then zips up and copies those files to a directory on your local Windows machine. After that, whenever you use that connection in a Visual Studio or CMake project, the headers in those directories are used to provide IntelliSense.
 
