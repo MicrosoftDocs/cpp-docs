@@ -1,7 +1,7 @@
 ---
 title: "VC++ Directories Property Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/09/2018"
+ms.date: "04/26/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
