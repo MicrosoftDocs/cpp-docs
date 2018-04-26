@@ -37,6 +37,7 @@
 ## [Compiler Warning (level 2) C4051](compiler-warning-level-2-c4051.md)
 ## [Compiler Warning (level 1) C4052](compiler-warning-level-1-c4052.md)
 ## [Compiler Warning (level 4) C4053](compiler-warning-level-4-c4053.md)
+## [Compiler warning (level 1) C4055](compiler-warning-level-1-c4055.md)
 ## [Compiler Warning (level 2) C4056](compiler-warning-level-2-c4056.md)
 ## [Compiler Warning (level 4) C4057](compiler-warning-level-4-c4057.md)
 ## [Compiler Warning (level 4) C4061](compiler-warning-level-4-c4061.md)

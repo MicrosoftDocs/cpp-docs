@@ -65,6 +65,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4051|type conversion; possible loss of data|
 |Compiler warning (level 4) C4052|function declarations different; one contains variable arguments|
 |Compiler warning (level 4) C4053|one void operand for '?:'|
+|[Compiler warning (level 1) C4055](compiler-warning-level-1-c4055.md)|'conversion' : from data pointer '*type1*' to function pointer '*type2*'|
 |[Compiler Warning (level 2) C4056](../../error-messages/compiler-warnings/compiler-warning-level-2-c4056.md)|overflow in floating-point constant arithmetic|
 |Compiler warning (level 4) C4057|'operator': 'identifier1' differs in indirection to slightly different base types from 'identifier2'|
 |Compiler warning C4060|switch statement contains no 'case' or 'default' labels|
