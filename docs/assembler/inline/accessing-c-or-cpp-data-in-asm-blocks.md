@@ -2,7 +2,7 @@
 title: "Accessing C or C++ Data in __asm Blocks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data members [C++], in __asm blocks", "data access [C++], in __asm blocks", "__asm keyword [C++], data members", "structure types in __asm blocks"]

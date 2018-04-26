@@ -2,7 +2,7 @@
 title: "Using C or C++ Symbols in __asm Blocks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C++], syntax", "symbols, in __asm blocks", "Visual C, symbols in __asm blocks", "__asm keyword [C++], C/C++ elements in", "Visual C++, in __asm blocks"]

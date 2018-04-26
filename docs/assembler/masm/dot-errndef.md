@@ -2,7 +2,7 @@
 title: ".ERRNDEF | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ERRNDEF"]
 dev_langs: ["C++"]

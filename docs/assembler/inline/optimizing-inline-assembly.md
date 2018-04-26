@@ -2,7 +2,7 @@
 title: "Optimizing Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["storage, optimizing in inline assembly", "optimization, inline assembly", "inline assembly, optimizing", "optimizing performance, inline assembly", "__asm keyword [C++], optimizing"]

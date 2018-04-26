@@ -2,7 +2,7 @@
 title: ".XMM | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".XMM"]
 dev_langs: ["C++"]

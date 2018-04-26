@@ -2,7 +2,7 @@
 title: "Operators (MASM) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: f30adee8-1566-4fc4-9eef-1ec8bde6c716

@@ -2,7 +2,7 @@
 title: "operator HIGH32 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["HIGH32", "operator HIGH32"]
 dev_langs: ["C++"]

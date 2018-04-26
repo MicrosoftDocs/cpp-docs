@@ -2,7 +2,7 @@
 title: "ML Fatal Errors | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: 5a5b0a84-f84d-494d-a8ff-69c53b88451d

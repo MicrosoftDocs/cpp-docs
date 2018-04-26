@@ -2,7 +2,7 @@
 title: "Using Operators in __asm Blocks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["brackets [ ]", "brackets [ ], __asm blocks", "__asm keyword [C++], operators", "square brackets [ ], __asm blocks", "operators [C++], using in __asm blocks", "square brackets [ ]"]

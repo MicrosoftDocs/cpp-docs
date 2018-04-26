@@ -2,7 +2,7 @@
 title: "Calling C Functions in Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools", "cpp-masm"]
+ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["function calls, C functions", "function calls, in inline assembly", "functions [C], calling in inline assembly", "Visual C, functions", "inline assembly, calling functions", "__asm keyword [C++], calling functions"]
