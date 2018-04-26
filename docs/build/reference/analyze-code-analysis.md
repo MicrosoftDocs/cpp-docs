@@ -1,7 +1,7 @@
 ---
 title: "-analyze (Code Analysis) | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/20/2018"
+ms.date: "04/26/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
@@ -71,11 +71,7 @@ The following sample custom rule set tells the rules engine to check for C6001 a
 Enables the specified PREfast plugin as part of code analysis runs. 
 LocalEspC.dll is the plugin that implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](/visualstudio/code-quality/c26100), [C26101](/visualstudio/code-quality/c26101), ...,  [C26167](/visualstudio/code-quality/c26167).
 
-To run LocalEspC.dll, use this compiler option:
-
-```cmd
-/analyze:plugin LocalEspC.dll
-```
+To run LocalEspC.dll, use this compiler option: **/analyze:plugin LocalEspC.dll**
 
 To run CppCoreCheck.dll, first run this command from a developer command prompt:
 
@@ -83,11 +79,7 @@ To run CppCoreCheck.dll, first run this command from a developer command prompt:
 set Esp.Extensions=CppCoreCheck.dll
 ```
 
-Then use this compiler option:
-
-```cmd
-/analyze:plugin EspXEngine.dll
-```
+Then use this compiler option: **/analyze:plugin EspXEngine.dll**.
 
 ## Remarks
 
