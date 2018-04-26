@@ -2,7 +2,7 @@
 title: "operator LENGTH | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator LENGTH", "length"]
 dev_langs: ["C++"]

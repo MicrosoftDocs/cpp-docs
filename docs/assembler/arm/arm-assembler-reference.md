@@ -2,7 +2,7 @@
 title: "ARM Assembler Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/28/2017"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: f8a076cc-9627-4328-a34a-9c44f7a3aab1

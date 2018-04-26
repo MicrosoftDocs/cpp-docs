@@ -2,7 +2,7 @@
 title: "Run-Time Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: ac73d2db-ffc6-4eab-b37b-bc51488a7d2e

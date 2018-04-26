@@ -2,7 +2,7 @@
 title: "Processor Manufacturer Programming Manuals | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf

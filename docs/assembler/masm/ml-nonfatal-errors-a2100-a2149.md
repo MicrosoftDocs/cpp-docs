@@ -2,7 +2,7 @@
 title: "ML Nonfatal Errors A2100-A2149 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: 75f08cb1-b149-4bfd-9d36-77948977968b

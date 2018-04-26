@@ -2,7 +2,7 @@
 title: "ARM Assembler Directives | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 9cfa8896-ec10-4e77-855a-3135c40d7d2a

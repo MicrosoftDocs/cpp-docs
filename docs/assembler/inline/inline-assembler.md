@@ -2,7 +2,7 @@
 title: "Inline Assembler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["assembler [C++]", "assembler [C++], inline", "assembly language [C++], inline", "inline assembler [C++]", "inline assembly [C++]"]

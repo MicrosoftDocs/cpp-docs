@@ -2,7 +2,7 @@
 title: "Microsoft Macro Assembler Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), reference", "MASM (Microsoft Macro Assembler), overview", "MASM (Microsoft Macro Assembler)", "MASM (Microsoft Macro Assembler), documentation overview"]

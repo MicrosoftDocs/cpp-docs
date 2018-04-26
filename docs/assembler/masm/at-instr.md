@@ -2,7 +2,7 @@
 title: "@InStr | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@InStr"]
 dev_langs: ["C++"]

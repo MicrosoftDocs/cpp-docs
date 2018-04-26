@@ -2,7 +2,7 @@
 title: "Instruction Set for Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline assembly [C++], instruction set", "instruction set [C++], inline assembly", "assembler [C++], instruction set", "instruction set [C++]"]

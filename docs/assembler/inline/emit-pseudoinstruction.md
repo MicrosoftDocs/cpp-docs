@@ -2,7 +2,7 @@
 title: "_emit Pseudoinstruction | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "conceptual"
 f1_keywords: ["_emit"]
 dev_langs: ["C++"]

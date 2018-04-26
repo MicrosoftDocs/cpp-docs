@@ -2,7 +2,7 @@
 title: "MASM for x64 (ml64.exe) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]

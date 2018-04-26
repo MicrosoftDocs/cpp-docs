@@ -2,7 +2,7 @@
 title: "ML Fatal Error A1016 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1016"]
 dev_langs: ["C++"]

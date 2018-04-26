@@ -2,7 +2,7 @@
 title: "Writing Functions with Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], inline assembly", "inline assembly [C++], writing functions", "assembler [C++], writing functions", "__asm keyword [C++], in functions"]

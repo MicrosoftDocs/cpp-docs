@@ -2,7 +2,7 @@
 title: "ARM Assembler Diagnostic Messages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec

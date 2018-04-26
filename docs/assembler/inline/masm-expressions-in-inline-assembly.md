@@ -2,7 +2,7 @@
 title: "MASM Expressions in Inline Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], MASM", "expressions [C++], inline assembly", "inline assembly, MASM expressions", "MASM (Microsoft Macro Assembler), expressions"]

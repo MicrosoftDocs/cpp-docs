@@ -2,7 +2,7 @@
 title: "EVEN and ALIGN Directives | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-tools", "cpp-masm"]
 ms.topic: "conceptual"
 f1_keywords: ["align", "EVEN"]
 dev_langs: ["C++"]
