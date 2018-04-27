@@ -1,7 +1,7 @@
 ---
 title: "VC++ Directories Property Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/09/2018"
+ms.date: "04/26/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -94,7 +94,7 @@ Directories to search for WinRT library files for use in Universal Windows Platf
 Directories in which to search for source files to use for IntelliSense.
 
 **Exclude Directories**<br/>
-Directories not to search when checking for build dependencies.
+Before each compilation, Visual Studio queries the timestamp on all files to determine whether any have been modified since the previous compilation. If your project has large stable libraries, you can potentially speed up build times by excluding those directories from the timestamp check.
 
 ## Sharing the Settings
 

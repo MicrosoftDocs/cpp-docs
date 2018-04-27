@@ -2,19 +2,14 @@
 title: "operator CARRY? | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["CARRY?", "operator CARRY?"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator CARRY?", "CARRY? operator"]
 ms.assetid: 5b195de7-3f66-436a-b75a-4b8d7c3c83b7
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator CARRY?

@@ -2,19 +2,14 @@
 title: "ML Fatal Error A1000 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1000"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A1000"]
 ms.assetid: 4fc77a83-8796-4dcf-9c37-6395d635b817
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1000
