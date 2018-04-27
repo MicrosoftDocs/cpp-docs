@@ -2,10 +2,7 @@
 title: "_mbsnbcat, _mbsnbcat_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_mbsnbcat_l", "_mbsnbcat"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["mbsnbcat", "mbsnbcat_l", "_mbsnbcat", "_mbsnbcat_l"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tcsncat_l function", "_tcsncat function", "mbsnbcat_l function", "mbsnbcat function", "_mbsnbcat_l function", "_tcsncat_l function", "_mbsnbcat function", "tcsncat function"]
 ms.assetid: aa0f1d30-0ddd-48d1-88eb-c6884b20fd91
-caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcat, _mbsnbcat_l

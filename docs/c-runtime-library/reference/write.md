@@ -2,10 +2,7 @@
 title: "_write | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_write"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_write"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_write function", "write function", "files [C++], writing to"]
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _write

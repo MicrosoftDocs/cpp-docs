@@ -2,10 +2,7 @@
 title: "iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_iswcsym_l", "__iswcsym", "__iscsym", "_iswcsymf_l", "_iscsym_l", "__iswcsymf", "__iscsymf", "_iscsymf_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_iswcsym_l", "_iswcsymf_l", "iscsymf", "iswcsymf", "__iswcsym", "
 dev_langs: ["C++"]
 helpviewer_keywords: ["iscsymf_l function", "iswsym_l function", "_iswcsym_l function", "iscsym_l function", "_iscsymf_l function", "_iswcsymf_l function", "_iscsym_l function", "__iscsym function", "__iswcsymf function", "iswsymf_l function", "__iscsymf function", "__iswcsym function", "iscsym function", "iscsymf function"]
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l

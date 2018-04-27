@@ -2,10 +2,7 @@
 title: "imaxabs | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["imaxabs"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["imaxabs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["imaxabs function"]
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # imaxabs

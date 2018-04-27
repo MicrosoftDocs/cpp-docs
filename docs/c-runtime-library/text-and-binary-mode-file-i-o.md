@@ -2,19 +2,14 @@
 title: "Text and Binary Mode File I/O | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/11/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.io"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], open functions", "I/O [CRT], text files", "functions [CRT], file access", "binary access, binary mode file I/O", "translation, modes", "I/O [CRT], binary", "text files, I/O", "I/O [CRT], translation modes", "translation modes (file I/O)", "binary access"]
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Text and Binary Mode File I/O

@@ -2,10 +2,7 @@
 title: "_spawnl, _wspawnl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_wspawnl", "_spawnl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["spawnl", "wspawnl", "_wspawnl", "_spawnl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["spawnl function", "processes, creating", "_spawnl function", "processes, executing new", "_wspawnl function", "wspawnl function", "process creation"]
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _spawnl, _wspawnl

@@ -2,19 +2,14 @@
 title: "_CRTDBG_MAP_ALLOC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["CRTDBG_MAP_ALLOC", "_CRTDBG_MAP_ALLOC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_CRTDBG_MAP_ALLOC macro", "memory allocation, in debug builds", "CRTDBG_MAP_ALLOC macro"]
 ms.assetid: 435242b8-caea-4063-b765-4a608200312b
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CRTDBG_MAP_ALLOC

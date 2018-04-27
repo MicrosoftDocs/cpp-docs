@@ -2,10 +2,7 @@
 title: "cpow, cpowf, cpowl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["cpow", "cpowf", "cpowl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["cpow", "cpowf", "cpowl", "complex/cpow", "complex/cpowf", "comple
 dev_langs: ["C++"]
 helpviewer_keywords: ["cpow function", "cpowf function", "complex/cpowl function"]
 ms.assetid: 83fe2187-22b7-4295-ab16-4d77abdbb80b
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cpow, cpowf, cpowl

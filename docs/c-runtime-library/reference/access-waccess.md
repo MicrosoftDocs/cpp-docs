@@ -2,10 +2,7 @@
 title: "_access, _waccess | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_access", "_waccess"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_waccess", "_access", "taccess", "waccess", "_taccess"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["access function", "_taccess function", "waccess function", "_access function", "_waccess function", "taccess function"]
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _access, _waccess

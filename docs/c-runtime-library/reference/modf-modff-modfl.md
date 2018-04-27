@@ -13,7 +13,6 @@ helpviewer_keywords: ["modf function", "modff function", "modfl function"]
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # modf, modff, modfl

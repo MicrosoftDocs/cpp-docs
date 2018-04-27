@@ -2,10 +2,7 @@
 title: "strlwr, wcslwr | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["strlwr", "wcslwr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["wcslwr", "strlwr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["strlwr function", "wcslwr function"]
 ms.assetid: b9274824-4365-4674-b656-823c89653656
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strlwr, wcslwr

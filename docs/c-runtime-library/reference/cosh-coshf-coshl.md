@@ -12,7 +12,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["cosh function", "coshf function", "coshl function", "trigonometric functions", "hyperbolic functions"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cosh, coshf, coshl

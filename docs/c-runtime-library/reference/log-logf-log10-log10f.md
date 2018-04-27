@@ -13,7 +13,6 @@ helpviewer_keywords: ["calculating logarithms", "log10f function", "log10 functi
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # log, logf, logl, log10, log10f, log10l

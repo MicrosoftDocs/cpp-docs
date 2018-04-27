@@ -2,10 +2,7 @@
 title: "_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_atoldbl", "_atoldbl_l", "_atodbl", "_atoflt", "_atoflt_l", "_atodbl_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_atoflt", "_atoflt_l", "atodbl_l", "atoflt_l", "_atoldbl", "_atol
 dev_langs: ["C++"]
 helpviewer_keywords: ["_atodbl function", "_atoldbl_l function", "atoflt function", "atoflt_l function", "atoldbl function", "_atoldbl function", "atodbl_l function", "_atoflt_l function", "atoldbl_l function", "atodbl function", "string conversion, to floating point values", "_atoflt function", "_atodbl_l function"]
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l

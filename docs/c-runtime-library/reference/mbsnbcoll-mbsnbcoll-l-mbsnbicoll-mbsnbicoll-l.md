@@ -2,10 +2,7 @@
 title: "_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_mbsnbicoll_l", "_mbsnbcoll_l", "_mbsnbcoll", "_mbsnbicoll"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["mbsnbicoll", "mbsnbcoll", "mbsnbicoll_l", "_mbsnbcoll", "_mbsnbic
 dev_langs: ["C++"]
 helpviewer_keywords: ["_mbsnbcoll_l function", "mbsnbcoll_l function", "_mbsnbcoll function", "_tcsnicoll function", "mbsnbcoll function", "mbsnbicoll_l function", "mbsnbicoll function", "_tcsncoll function", "_mbsnbicoll function", "_mbsnbicoll_l function", "tcsncoll function", "tcsnicoll function"]
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l

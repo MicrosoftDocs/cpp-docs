@@ -10,7 +10,6 @@ helpviewer_keywords: ["debugging [CRT], using macros", "macros, debugging with",
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Debug routines

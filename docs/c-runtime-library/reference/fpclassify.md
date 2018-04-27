@@ -2,9 +2,6 @@
 title: "fpclassify | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["fpclassify"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -12,10 +9,8 @@ apitype: "HeaderDef"
 f1_keywords: ["fpclassify", "math/fpclassify"]
 helpviewer_keywords: ["fpclassify macro", "fpclassify function"]
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fpclassify

@@ -13,7 +13,6 @@ helpviewer_keywords: ["creal function", "crealf function", "creall function"]
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # creal, crealf, creall

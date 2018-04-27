@@ -2,19 +2,14 @@
 title: "_daylight, _dstbias, _timezone, and _tzname | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["tzname", "_timezone", "timezone", "_daylight", "_tzname", "daylight"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["time zones", "time adjustments", "timezone variables", "_tzname function", "_daylight function", "_timezone function", "daylight function", "local time adjustments", "timezone function", "tzname function", "time-zone variables"]
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _daylight, _dstbias, _timezone, and _tzname

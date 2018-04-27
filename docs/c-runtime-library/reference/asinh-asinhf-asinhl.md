@@ -2,10 +2,7 @@
 title: "asinh, asinhf, asinhl | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["asinh", "asinhf", "asinhl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -16,7 +13,6 @@ helpviewer_keywords: ["asinh function", "asinhl function", "asinhf function"]
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # asinh, asinhf, asinhl

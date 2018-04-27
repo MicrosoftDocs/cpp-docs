@@ -2,19 +2,14 @@
 title: "File Permission Constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["_S_IWRITE", "_S_IREAD"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["S_IWRITE constant", "constants [C++], file attributes", "S_IREAD constant", "file permissions [C++]", "_S_IWRITE constant", "_S_IREAD constant"]
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # File Permission Constants

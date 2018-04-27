@@ -2,11 +2,8 @@
 title: "___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["___mb_cur_max_l_func", "__p___mb_cur_max", "___mb_cur_max_func", "__mb_cur_max"]
 apilocation: ["msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max", 
 dev_langs: ["C++"]
 helpviewer_keywords: ["__mb_cur_max", "___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max"]
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max

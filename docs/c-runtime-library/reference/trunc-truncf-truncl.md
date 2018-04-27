@@ -2,10 +2,7 @@
 title: "trunc, truncf, truncl | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["trunc", "truncf", "truncl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["trunc", "truncf", "truncl", "math/trunc", "math/truncf", "math/tr
 dev_langs: ["C++"]
 helpviewer_keywords: ["trunc function", "truncf function", "truncl function"]
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # trunc, truncf, truncl

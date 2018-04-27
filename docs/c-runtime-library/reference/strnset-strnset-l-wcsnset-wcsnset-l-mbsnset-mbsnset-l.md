@@ -2,10 +2,7 @@
 title: "_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_mbsnset", "_strnset", "_mbsnset_l", "_wcsnset_l", "_wcsnset", "_strnset_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_tcsncset_l", "mbsnset_l", "_tcsnset_l", "_fstrnset", "_wcsnset_l
 dev_langs: ["C++"]
 helpviewer_keywords: ["_wcsnset function", "strnset_l function", "tcsnset function", "tcsncset function", "characters [C++], initializing to formats", "mbsnset function", "_tcsnset_l function", "_mbsnset function", "_strnset function", "_tcsncset_l function", "mbsnset_l function", "_tcsnset function", "initializing characters", "_tcsncset function", "ftcsnset function", "wcsnset_l function", "_ftcsnset function", "_wcsnset_l function", "_fstrnset function", "_mbsnset_l function", "_strnset_l function", "fstrnset function", "strings [C++], initializing", "tcsnset_l function"]
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
-caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l

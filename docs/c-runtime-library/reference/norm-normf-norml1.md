@@ -13,7 +13,6 @@ helpviewer_keywords: ["norm function", "normf function", "norml function"]
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # norm, normf, norml

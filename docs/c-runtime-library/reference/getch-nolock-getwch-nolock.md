@@ -2,10 +2,7 @@
 title: "_getch_nolock, _getwch_nolock | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_getwch_nolock", "_getch_nolock"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_getch_nolock", "getwch_nolock", "getch_nolock", "_getwch_nolock"
 dev_langs: ["C++"]
 helpviewer_keywords: ["characters, getting from console", "_getwch_nolock function", "_getch_nolock function", "getwch_nolock function", "_gettch_nolock function", "console, reading from", "getch_nolock function", "gettch_nolock function"]
 ms.assetid: 9d248546-26ca-482c-b0c6-55812a987e83
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getch_nolock, _getwch_nolock

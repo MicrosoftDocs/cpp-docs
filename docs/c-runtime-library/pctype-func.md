@@ -2,11 +2,8 @@
 title: "__pctype_func | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["__pctype_func"]
 apilocation: ["msvcrt.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll", "msvcr80.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["__pctype_func"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__pctype_func"]
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __pctype_func

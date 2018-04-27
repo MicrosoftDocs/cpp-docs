@@ -2,10 +2,7 @@
 title: "_CrtGetReportHook | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_CrtGetReportHook"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["CrtGetReportHook", "_CrtGetReportHook"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CrtGetReportHook function", "_CrtGetReportHook function"]
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtGetReportHook
