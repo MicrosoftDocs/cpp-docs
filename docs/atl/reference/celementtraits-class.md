@@ -2,19 +2,14 @@
 title: "CElementTraits Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CElementTraits", "atlcoll/ATL::CElementTraits"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CElementTraits class"]
 ms.assetid: 496528e5-7f80-4b45-be0c-6f646feb43c5
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CElementTraits Class

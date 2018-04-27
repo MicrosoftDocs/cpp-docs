@@ -2,19 +2,14 @@
 title: "CAutoPtr Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CAutoPtr", "ATLBASE/ATL::CAutoPtr", "ATLBASE/ATL::CAutoPtr::CAutoPtr", "ATLBASE/ATL::CAutoPtr::Attach", "ATLBASE/ATL::CAutoPtr::Detach", "ATLBASE/ATL::CAutoPtr::Free", "ATLBASE/ATL::CAutoPtr::m_p"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoPtr class"]
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAutoPtr Class

@@ -2,19 +2,14 @@
 title: "CAtlServiceModuleT::Run Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 f1_keywords: ["CServiceModule::Run", "CServiceModule.Run", "CSecurityDescriptor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL services, security"]
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::Run Function

@@ -2,19 +2,14 @@
 title: "CComEnumImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComEnumImpl", "ATLCOM/ATL::CComEnumImpl", "ATLCOM/ATL::CComEnumImpl::CComEnumImpl", "ATLCOM/ATL::CComEnumImpl::Clone", "ATLCOM/ATL::CComEnumImpl::Init", "ATLCOM/ATL::CComEnumImpl::Next", "ATLCOM/ATL::CComEnumImpl::Reset", "ATLCOM/ATL::CComEnumImpl::Skip", "ATLCOM/ATL::CComEnumImpl::m_begin", "ATLCOM/ATL::CComEnumImpl::m_dwFlags", "ATLCOM/ATL::CComEnumImpl::m_end", "ATLCOM/ATL::CComEnumImpl::m_iter", "ATLCOM/ATL::CComEnumImpl::m_spUnk"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComEnumImpl class"]
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CComEnumImpl Class

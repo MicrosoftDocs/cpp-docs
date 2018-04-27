@@ -2,19 +2,14 @@
 title: "IAtlAutoThreadModule Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["IAtlAutoThreadModule", "atlbase/ATL::IAtlAutoThreadModule"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IAtlAutoThreadModule class"]
 ms.assetid: fcb58cf9-a427-4be9-89eb-04e1ab5cc3a1
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IAtlAutoThreadModule Class
