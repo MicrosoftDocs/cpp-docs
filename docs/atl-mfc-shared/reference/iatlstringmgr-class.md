@@ -2,19 +2,14 @@
 title: "IAtlStringMgr Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["IAtlStringMgr", "ATLSIMPSTR/ATL::IAtlStringMgr", "ATLSIMPSTR/ATL::Allocate", "ATLSIMPSTR/ATL::Clone", "ATLSIMPSTR/ATL::Free", "ATLSIMPSTR/ATL::GetNilString", "ATLSIMPSTR/ATL::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, IAtlStringMgr", "memory, managing", "IAtlStringMgr class"]
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IAtlStringMgr Class
