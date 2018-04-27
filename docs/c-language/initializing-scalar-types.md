@@ -2,18 +2,13 @@
 title: "Initializing Scalar Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["initializing scalar types", "register variables", "initialization, scalar types", "initializing variables, scalar types", "scalar types", "static variables, initializing", "automatic storage class, initializing scalar types", "automatic storage class", "types [C], initializing"]
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Initializing Scalar Types

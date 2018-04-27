@@ -2,18 +2,13 @@
 title: "Declarations and Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data types [C]", "types [C]", "declarations [C++], C", "declarations [C++], types"]
 ms.assetid: 432a2286-cf42-42ce-8baf-c908ffb57ca8
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Declarations and Types

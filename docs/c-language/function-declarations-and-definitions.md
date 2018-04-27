@@ -2,18 +2,13 @@
 title: "Function Declarations and Definitions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["local declarations", "function definitions, function declarations", "declaring functions, function definitions", "internal declarations", "external declarations", "function prototypes, basics", "external linkage, function declarations", "declaring functions"]
 ms.assetid: 43fd98eb-7441-4473-a5d9-fc88c75577f7
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Function Declarations and Definitions
