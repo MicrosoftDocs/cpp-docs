@@ -2,18 +2,13 @@
 title: "Pointer Arithmetic | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["pointer arithmetic", "arithmetic pointer"]
 ms.assetid: eb924a29-59d3-48a5-9d62-9424790730eb
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Pointer Arithmetic

@@ -2,18 +2,13 @@
 title: "Type double | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["mantissas, floating-point variables", "type double", "portability [C++], type double", "double data type"]
 ms.assetid: 17c85b24-1475-4d41-a03c-ddf2d6561d34
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Type double

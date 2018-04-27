@@ -2,18 +2,13 @@
 title: "Usual Arithmetic Conversions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["arithmetic conversions [C++]", "type conversion [C++], arithmetic", "operators [C], arithmetic conversions", "data type conversion [C++], arithmetic", "conversions [C++], arithmetic", "arithmetic operators [C++], type conversions"]
 ms.assetid: bfa49803-0efd-45d0-b987-111412a140d7
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Usual Arithmetic Conversions

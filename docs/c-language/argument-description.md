@@ -2,18 +2,13 @@
 title: "Argument Description | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["envp argument", "main function, syntax", "arguments [C++], for main function", "argv argument", "argc argument"]
 ms.assetid: 91c2cbe3-9aca-4277-afa1-6137eb8fb704
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Argument Description

@@ -2,18 +2,13 @@
 title: "Obsolete Forms of Function Declarations and Definitions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["old style function declarations"]
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Obsolete Forms of Function Declarations and Definitions

@@ -2,18 +2,13 @@
 title: "Prefix Increment and Decrement Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["increment operators, types of", "decrement operators, syntax", "decrement operators"]
 ms.assetid: 9a441bb9-d94a-4b6a-9db2-0d0d76bc480d
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Prefix Increment and Decrement Operators

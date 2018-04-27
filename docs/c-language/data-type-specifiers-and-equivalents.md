@@ -2,18 +2,13 @@
 title: "Data Type Specifiers and Equivalents | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["type specifiers [C++], list", "widening integers", "data types [C++], equivalents", "sign-extending integral types", "zero-extending", "identifiers, data type", "data types [C++], specifiers", "simple types, names", "type names [C++], simple"]
 ms.assetid: 0d4b515a-4f68-4786-83cf-a5d43c7cb6f3
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Data Type Specifiers and Equivalents
