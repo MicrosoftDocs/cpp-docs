@@ -2,17 +2,12 @@
 title: "Configuring Programs for Windows XP | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/02/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Configuring Programs for Windows XP

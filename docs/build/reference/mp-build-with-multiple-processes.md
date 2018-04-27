@@ -9,7 +9,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["-MP compiler option (C++)", "/MP compiler option (C++)", "MP compiler option (C++)", "cl.exe compiler, multi-process build"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /MP (Build with Multiple Processes)

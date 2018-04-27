@@ -2,13 +2,12 @@
 title: "/Zc:ternary (Enforce conditional operator rules) | Microsoft Docs"
 ms.date: "3/06/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/Zc:ternary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:ternary", "Zc:ternary", "-Zc:ternary"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ---
 # /Zc:ternary (Enforce conditional operator rules)
 

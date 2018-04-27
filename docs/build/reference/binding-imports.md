@@ -2,18 +2,13 @@
 title: "Binding Imports | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["/DELAY:NOBIND linker option", "DELAY:NOBIND linker option"]
 ms.assetid: bb766038-deb1-41b1-bcbc-29a30e8c1e2a
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Binding Imports

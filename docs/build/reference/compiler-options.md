@@ -2,18 +2,13 @@
 title: "Compiler Options | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/29/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler", "x86 Visual C++ compiler", "ARM Visual C++ compiler", "compiler options, C++", "x64 Visual C++ compiler"]
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Options

@@ -2,19 +2,14 @@
 title: "Importing Data Using __declspec(dllimport) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["dllimport"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["importing data [C++]", "dllimport attribute [C++], data imports", "__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Importing Data Using __declspec(dllimport)

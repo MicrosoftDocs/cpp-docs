@@ -2,19 +2,14 @@
 title: "-analyze (Code Analysis) | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/26/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /analyze (Code Analysis)

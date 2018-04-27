@@ -2,19 +2,14 @@
 title: "Running LIB | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-MACHINE target platform option", "command files, LIB", "MACHINE target platform option", "colon command files", "VERBOSE library manager option", "/NOLOGO library manager option", "dash option specifier", "/MACHINE target platform option", "forward slash option specifier", "-NOLOGO library manager option", "LIB [C++], running LIB", "-VERBOSE library manager option", "/VERBOSE library manager option", "command files", "NOLOGO library manager option", "slash (/)", "semicolon, command files", "/ command files"]
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Running LIB

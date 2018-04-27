@@ -2,19 +2,14 @@
 title: "-Fe (Name EXE File) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/fe"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-Fe compiler option [C++]", "executable files, renaming", "rename file compiler option [C++]", "/Fe compiler option [C++]", "Fe compiler option [C++]"]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Fe (Name EXE File)

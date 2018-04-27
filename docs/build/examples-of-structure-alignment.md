@@ -3,13 +3,12 @@ title: "Examples of Structure Alignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/26/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["structure alignment", "examples [C++], structure alignment"]
 ms.assetid: 03d137bf-5cc4-472e-9583-6498f2534199
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Examples of Structure Alignment

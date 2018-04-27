@@ -2,18 +2,13 @@
 title: "Date and Time: Database Support | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["tables [C++]", "dates [C++], database support", "COleDateTime class, database programming", "time [C++], database support", "database tables [C++], date/time data", "tables [C++], date/time data", "databases [C++], date/time data", "COleDateTimeSpan class, database programming"]
 ms.assetid: 4a57a1bb-fad5-4b70-b32c-42ad75c710c8
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Date and Time: Database Support

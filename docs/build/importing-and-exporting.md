@@ -2,18 +2,13 @@
 title: "Importing and Exporting | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], importing", "exporting DLLs [C++]", "importing DLLs [C++]", "DLLs [C++], exporting from", "__declspec(dllimport) keyword [C++]"]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Importing and Exporting
