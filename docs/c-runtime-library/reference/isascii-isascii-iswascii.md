@@ -2,10 +2,7 @@
 title: "isascii, __isascii, iswascii | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["iswascii", "__isascii"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["iswascii", "istascii", "__isascii", "_istascii", "isascii", "ctyp
 dev_langs: ["C++"]
 helpviewer_keywords: ["__isascii function", "_isascii function", "isascii function", "_istascii function", "istascii function", "iswascii function"]
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isascii, __isascii, iswascii

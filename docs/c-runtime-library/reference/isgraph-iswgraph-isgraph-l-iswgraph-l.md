@@ -2,10 +2,7 @@
 title: "isgraph, iswgraph, _isgraph_l, _iswgraph_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["isgraph", "iswgraph", "_iswgraph_l", "_isgraph_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_isgraph_l", "_iswgraph_l", "_ismbcgraph_l", "Isgraph", "_istgrap
 dev_langs: ["C++"]
 helpviewer_keywords: ["isgraph function", "_istgraph_l function", "istgraph function", "_isgraph_l function", "iswgraph function", "_iswgraph_l function", "_istgraph function", "_ismbcgraph_l function"]
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isgraph, iswgraph, _isgraph_l, _iswgraph_l

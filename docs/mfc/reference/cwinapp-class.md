@@ -533,7 +533,7 @@ virtual CDataRecoveryHandler *GetDataRecoveryHandler();
 ### Remarks  
  Each application that uses the restart manager must have one instance of the [CDataRecoveryHandler Class](../../mfc/reference/cdatarecoveryhandler-class.md). This class is responsible for monitoring open documents and autosaving files. The behavior of the `CDataRecoveryHandler` depends on the configuration of the restart manager. For more information, see [CDataRecoveryHandler Class](../../mfc/reference/cdatarecoveryhandler-class.md).  
   
- This method returns `NULL` on operating systems earlier than [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. The restart manager is not supported on operating systems earlier than [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
+ This method returns `NULL` on operating systems earlier than Windows Vista. The restart manager is not supported on operating systems earlier than Windows Vista.  
   
  If the application does not currently have a data recovery handler, this method creates one and returns a pointer to it.  
   

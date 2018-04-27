@@ -2,19 +2,14 @@
 title: "Console and Port I/O | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.io"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["routines, console and port I/O", "routines", "ports, I/O routines", "I/O [CRT], console", "I/O [CRT], port", "I/O routines, console and port I/O"]
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Console and Port I/O

@@ -2,19 +2,14 @@
 title: "Code Pages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.international"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["character sets [C++], code pages", "ANSI [C++], code pages", "system-default code page", "multibyte code pages [C++]", "localization [C++], code pages", "code pages [C++], types of", "locale code pages [C++]"]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Code Pages

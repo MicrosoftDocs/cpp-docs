@@ -2,19 +2,14 @@
 title: "Controlling Streams | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["Controlling Streams"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["streams, controlling", "controlling streams", "streams"]
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Controlling Streams

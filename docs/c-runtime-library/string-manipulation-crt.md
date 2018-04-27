@@ -2,19 +2,14 @@
 title: "String Manipulation (CRT) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.strings"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], manipulating", "string manipulation", "manipulating strings"]
 ms.assetid: 6545861a-59e7-408d-9d29-2ec9134fc91a
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # String Manipulation (CRT)

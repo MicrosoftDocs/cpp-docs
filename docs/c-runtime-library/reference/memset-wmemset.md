@@ -2,10 +2,7 @@
 title: "memset, wmemset | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["wmemset", "memset"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["memset", "wmemset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["wmemset function", "memset function"]
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memset, wmemset

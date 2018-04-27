@@ -627,7 +627,7 @@ static BOOL Is32BitTransparencySupported();
  `TRUE` if 32-bit alpha blending is supported; otherwise `FALSE`.  
   
 ### Remarks  
- Use this static method to determine at runtime whether the operating system supports 32-bit alpha blending. This feature is supported on [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later versions.  
+ Use this static method to determine at runtime whether the operating system supports 32-bit alpha blending. This feature is supported on Windows 2000 and later versions.  
   
 ##  <a name="ispremultiplyautocheck"></a>  CMFCToolBarImages::IsPreMultiplyAutoCheck  
 

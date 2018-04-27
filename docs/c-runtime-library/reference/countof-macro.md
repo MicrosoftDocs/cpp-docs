@@ -12,7 +12,6 @@ helpviewer_keywords: ["countof macro", "_countof macro"]
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _countof Macro

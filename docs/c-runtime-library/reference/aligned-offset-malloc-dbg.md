@@ -2,10 +2,7 @@
 title: "_aligned_offset_malloc_dbg | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_aligned_offset_malloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_aligned_offset_malloc_dbg", "aligned_offset_malloc_dbg"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_aligned_offset_malloc_dbg function", "aligned_offset_malloc_dbg function"]
 ms.assetid: 6c242307-c59e-4d63-aae5-d8cbec8e021c
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_malloc_dbg

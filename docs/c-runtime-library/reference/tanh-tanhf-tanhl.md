@@ -12,7 +12,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["tanhl function", "_tanhl function", "tanh function", "tanhf function", "trigonometric functions", "hyperbolic functions"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tanh, tanhf, tanhl

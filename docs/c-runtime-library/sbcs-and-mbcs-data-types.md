@@ -2,19 +2,14 @@
 title: "SBCS and MBCS Data Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/11/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["MBCS", "SBCS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SBCS and MBCS data types", "data types [C], MBCS and SBCS"]
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # SBCS and MBCS Data Types

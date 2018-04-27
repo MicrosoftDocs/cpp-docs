@@ -2,10 +2,7 @@
 title: "strncmp, wcsncmp, _mbsncmp, _mbsncmp_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["strncmp", "_mbsncmp", "wcsncmp", "_mbsncmp_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_ftcsnccmp", "_ftcsncmp", "_tcsncmp", "_tcsnccmp", "strncmp", "_m
 dev_langs: ["C++"]
 helpviewer_keywords: ["_tcsnccmp function", "ftcsncmp function", "wcsncmp function", "_ftcsncmp function", "_mbsncmp function", "tcsncmp function", "mbsncmp function", "_mbsncmp_l function", "mbsncmp_l function", "strncmp function", "strings [C++], comparing characters of", "string comparison [C++], strncmp function", "_tcsncmp function", "tcsnccmp function", "ftcsnccmp function", "characters [C++], comparing", "_ftcsnccmp function"]
 ms.assetid: 2fdbf4e6-77da-4b59-9086-488f6066b8af
-caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strncmp, wcsncmp, _mbsncmp, _mbsncmp_l

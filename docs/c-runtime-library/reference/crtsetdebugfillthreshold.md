@@ -13,7 +13,6 @@ helpviewer_keywords: ["debug, buffer-filling behavior", "CrtSetDebugFillThreshol
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetDebugFillThreshold

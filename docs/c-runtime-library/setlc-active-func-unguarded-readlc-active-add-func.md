@@ -2,11 +2,8 @@
 title: "___setlc_active_func, ___unguarded_readlc_active_add_func | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]
 apilocation: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr100.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["___unguarded_readlc_active_add_func", "___setlc_active_func"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ___setlc_active_func, ___unguarded_readlc_active_add_func

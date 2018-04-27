@@ -2,21 +2,16 @@
 title: "Format Specification Fields: scanf and wscanf Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apilocation: ["msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr120.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wscanf", "scanf"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["width, specifications in scanf function", "scanf format specifications", "scanf width specifications", "scanf type field characters", "type fields, scanf function", "format specification fields for scanf function", "type fields"]
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Format Specification Fields: scanf and wscanf Functions

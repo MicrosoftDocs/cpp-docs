@@ -37,7 +37,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### Per-user Redirection
 
-Registration in Visual Studio has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)], to access HKCR you must run Visual Studio in elevated mode. Developers do not always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in this mode.
+Registration in Visual Studio has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With Windows Vista and later operating systems, to access HKCR you must run Visual Studio in elevated mode. Developers do not always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in this mode.
 
 Per-user redirection forces any writes to HKCR to be redirected to HKEY\_CURRENT\_USER (HKCU). If per-user redirection is turned off, it can cause [Project Build Error PRJ0050](../error-messages/tool-errors/project-build-error-prj0050.md) when the program tries to write to HKCR.
 
