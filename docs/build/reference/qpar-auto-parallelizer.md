@@ -2,18 +2,13 @@
 title: "-Qpar (Auto-Parallelizer) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"]
 dev_langs: ["C++"]
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Qpar (Auto-Parallelizer)

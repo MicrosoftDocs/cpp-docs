@@ -2,19 +2,14 @@
 title: "-openmp (Enable OpenMP 2.0 Support) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/openmp", "VC.Project.VCCLCompilerTool.OpenMP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/openmp compiler option [C++]", "-openmp compiler option [C++]"]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /openmp (Enable OpenMP 2.0 Support)

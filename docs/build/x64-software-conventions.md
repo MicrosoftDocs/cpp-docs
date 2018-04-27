@@ -2,18 +2,13 @@
 title: "x64 Software Conventions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["x64 coding conventions", "Visual C++, x64 calling conventions"]
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # x64 Software Conventions

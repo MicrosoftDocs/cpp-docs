@@ -3,14 +3,13 @@ title: "/Zc:externConstexpr (Enable extern constexpr variables) | Microsoft Docs
 ms.custom: ""
 ms.date: "02/28/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/Zc:externConstexpr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc:externConstexpr compiler option (C++)", "extern constexpr variables (C++)"]
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Zc:externConstexpr (Enable extern constexpr variables)

@@ -2,16 +2,12 @@
 title: ".Obj Files as Linker Input | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/29/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["linker [C++], OBJ files as input", "object files, linker output", "OMF object files", "LINK tool [C++], .obj files", "COFF files", "OBJ files as linker input", ".obj files as linker input"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # .Obj Files as Linker Input

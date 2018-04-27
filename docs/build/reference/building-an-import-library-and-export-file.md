@@ -2,19 +2,14 @@
 title: "Building an Import Library and Export File | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLibrarianTool.ModuleDefinitionFile", "VC.Project.VCLibrarianTool.ExportNamedFunctions", "VC.Project.VCLibrarianTool.GenerateDebug", "VC.Project.VCLibrarianTool.ForceSymbolReferences"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OUT library manager option", "INCLUDE library manager option", "/DEF library manager option", "exporting data", "import libraries, building", "-INCLUDE library manager option", "/OUT library manager option", "DEF library manager option", "-DEF library manager option", "-OUT library manager option", "/INCLUDE library manager option", "-EXPORT library manager option", "exporting data, export (.exp) files", "/EXPORT library manager option", "EXPORT library manager option", ".lib files", "EXP files"]
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Building an Import Library and Export File

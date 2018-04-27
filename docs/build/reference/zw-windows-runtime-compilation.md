@@ -2,19 +2,14 @@
 title: "-ZW (Windows Runtime Compilation) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.CompileAsWinRT", "/zw"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/ZW", "-ZW compiler option", "/ZW compiler option", "-ZW", "Windows Runtime compiler option"]
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ZW (Windows Runtime Compilation)

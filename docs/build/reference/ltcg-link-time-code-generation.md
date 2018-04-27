@@ -3,14 +3,13 @@ title: "/LTCG (Link-time Code Generation) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/14/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /LTCG (Link-time Code Generation)

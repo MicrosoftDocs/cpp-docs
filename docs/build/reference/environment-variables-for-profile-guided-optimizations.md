@@ -9,7 +9,6 @@ helpviewer_keywords: ["profile-guided optimizations, environment variables"]
 ms.assetid: f95a6d1e-49a4-4802-a144-092026b600a3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Environment Variables for Profile-Guided Optimizations

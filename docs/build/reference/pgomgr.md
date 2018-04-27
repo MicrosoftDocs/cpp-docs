@@ -9,7 +9,6 @@ helpviewer_keywords: ["pgomgr program", "profile-guided optimizations, pgomgr"]
 ms.assetid: 74589126-df18-42c9-8739-26d60e148d6a
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # pgomgr
