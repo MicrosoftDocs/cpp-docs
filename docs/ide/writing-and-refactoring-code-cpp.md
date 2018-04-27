@@ -1,7 +1,7 @@
 ---
 title: "Writing and refactoring code (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/27/2017"
+ms.date: "04/30/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -17,15 +17,20 @@ ms.workload: ["cplusplus"]
 ---
 # Writing and refactoring code (C++)
 
-The Visual C++ code editor and IDE provide many coding aids. Some are unique to C++, and some are essentially the same for all Visual Studio languages. For more information about the shared features, see [Writing Code in the Code and Text Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Options for enabling and configuring C++-specific features are located in the [Text Editor C++ Advanced](/visualstudio/ide/reference/options-text-editor-c-cpp-advanced) dialog (**Tools &#124; Options &#124; Text Editor &#124; C/C++ &#124; Advanced** or type "C++ Advanced" in **Quick Launch**). After choosing which option you want to set, you can get more help by pressing **F1** when the dialog is in focus. For general code formatting options, type `Editor C++` into **QuickLaunch**.
+The Visual C++ code editor and IDE provide many coding aids. Some are unique to C++, and some are essentially the same for all Visual Studio languages. For more information about the shared features, see [Writing Code in the Code and Text Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Options for enabling and configuring C++-specific features are located under **Tools &#124; Options &#124; Text Editor &#124; C/C++**. After choosing which option you want to set, you can get more help by pressing **F1** when the dialog is in focus. For general code formatting options, type `Editor C++` into **QuickLaunch**.
 
 Experimental features, which may or may not be included in a future version of Visual Studio, are found in the [Text Editor C++ Experimental](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) dialog. In Visual Studio 2017 you can enable **Predictive Intellisense** in this dialog.
 
-## Adding new code
+## Adding new files
 
-After creating a project, you can start coding in the files that were generated for you. To add new files, right-click on the project node in Solution Explorer and choose **Add &#124; New**.
+To add new files to a project, right-click on the project node in Solution Explorer and choose **Add &#124; New**.
 
-To set formatting options such as indents, brace completion, and colorization, type `C++ Formatting` into the **QuickLaunch** window.
+## Formatting options
+
+To set formatting options such as indents, brace completion, and colorization, type "C++ Formatting" into the **QuickLaunch** window. Visual Studio 2017 version 15.7 and later supports ClangFormat. You can configure it in the [C/C++ Formatting Property Page](visualstudio/ide/reference/options-text-editor-c-cpp-formatting) under **Tools &#124; Options &#124; Text Editor &#124; C/C++ &#124; Formatting**.
+
+![C++ formatting options](media/cpp-formatting-options.png)
+
 
 ### IntelliSense
 
@@ -47,11 +52,11 @@ Add a new class from the **Project** menu by using the Class Wizard.
 
 ![Add New Class in Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_class.png "vs2015_cpp_add_class")
 
-### Class Wizard
-
-Modify or examine an existing class, or add a new class, using the Class Wizard. For more information, see [Adding Functionality with Code Wizards (C++)](../ide/adding-functionality-with-code-wizards-cpp.md).
+You can also use Class Wizard to modify or examine an existing class.
 
 ![Visual C&#43;&#43; Class Wizard](../ide/media/vs2015_cpp_class_wizard.png "vs2015_cpp_class_wizard")
+
+For more information, see [Adding Functionality with Code Wizards (C++)](../ide/adding-functionality-with-code-wizards-cpp.md).
 
 ## Refactoring
 
