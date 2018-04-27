@@ -2,18 +2,13 @@
 title: "Implementing a Window (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "CWindowImpl class, using", "windows [C++], implementing in ATL"]
 ms.assetid: eb1ce8d6-72f9-4894-aae7-e60a61665628
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Implementing a Window

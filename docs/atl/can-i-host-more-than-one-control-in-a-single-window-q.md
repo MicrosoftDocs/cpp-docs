@@ -2,18 +2,13 @@
 title: "Can I Host More Than One Control in a Single Window? | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["controls [ATL], hosting multiple", "windows [C++], hosting multiple controls"]
 ms.assetid: 3a967a1a-7e7e-42e3-8eed-f7bde912363f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Can I Host More Than One Control in a Single Window?

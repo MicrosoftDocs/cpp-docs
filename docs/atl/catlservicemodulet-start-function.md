@@ -2,19 +2,14 @@
 title: "CAtlServiceModuleT::Start Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 f1_keywords: ["CServiceModule.Start", "CServiceModule::Start"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Start method"]
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::Start Function

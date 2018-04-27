@@ -2,19 +2,14 @@
 title: "CComClassFactory2 Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComClassFactory2", "ATLCOM/ATL::CComClassFactory2", "ATLCOM/ATL::CComClassFactory2::CreateInstance", "ATLCOM/ATL::CComClassFactory2::CreateInstanceLic", "ATLCOM/ATL::CComClassFactory2::GetLicInfo", "ATLCOM/ATL::CComClassFactory2::LockServer", "ATLCOM/ATL::CComClassFactory2::RequestLicKey"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactory2 class"]
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CComClassFactory2 Class

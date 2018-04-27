@@ -2,18 +2,13 @@
 title: "Running the Program as a Local Server | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [ATL], running services as local server", "ATL services, running as local servers"]
 ms.assetid: eb9701e6-e2a8-4666-897f-0c893aec8ac7
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Running the Program as a Local Server

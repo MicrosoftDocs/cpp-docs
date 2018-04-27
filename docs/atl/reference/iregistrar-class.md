@@ -2,10 +2,7 @@
 title: "IRegistrar Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2/1/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["IRegistrar", "ATLIFASE/ATL::IRegistrar", "ATLIFASE/ATL::IRegistrar::ResourceRegisterSz", "ATLIFASE/ATL::IRegistrar::ResourceUnregisterSz", "ATLIFASE/ATL::IRegistrar::FileRegister", "ATLIFASE/ATL::IRegistrar::FileUnregister", "ATLIFASE/ATL::IRegistrar::StringRegister", "ATLIFASE/ATL::IRegistrar::StringUnregister", "ATLIFASE/ATL::IRegistrar::ResourceRegister", "ATLIFASE/ATL::IRegistrar::ResourceUnregister"]
 dev_langs: ["C++"]
@@ -13,7 +10,6 @@ helpviewer_keywords: ["Iregistrar Interface"]
 ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IRegistrar Interface

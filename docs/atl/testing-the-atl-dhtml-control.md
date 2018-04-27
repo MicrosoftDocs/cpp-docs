@@ -2,18 +2,13 @@
 title: "Testing the ATL DHTML Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["HTML controls, testing", "testing controls", "DHTML controls", "DHTML controls, testing"]
 ms.assetid: 0e4b4358-80ce-4505-8b06-ef4f30b1d1f0
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Testing the ATL DHTML Control

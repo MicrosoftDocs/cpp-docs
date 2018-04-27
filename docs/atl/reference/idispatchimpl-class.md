@@ -2,19 +2,14 @@
 title: "IDispatchImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["IDispatchImpl", "ATLCOM/ATL::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::GetIDsOfNames", "ATLCOM/ATL::IDispatchImpl::GetTypeInfo", "ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispatchImpl::Invoke"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dual interfaces, classes", "IDispatchImpl class", "IDispatch class support in ATL"]
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IDispatchImpl Class

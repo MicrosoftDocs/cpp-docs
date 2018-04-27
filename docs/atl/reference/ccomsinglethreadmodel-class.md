@@ -2,19 +2,14 @@
 title: "CComSingleThreadModel Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComSingleThreadModel::CriticalSection", "ATLBASE/ATL::CComSingleThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComSingleThreadModel::Decrement", "ATLBASE/ATL::CComSingleThreadModel::Increment"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["single-threaded applications", "CComSingleThreadModel class", "single-threaded applications, ATL"]
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ---
 # CComSingleThreadModel Class
 This class provides methods for incrementing and decrementing the value of a variable.  

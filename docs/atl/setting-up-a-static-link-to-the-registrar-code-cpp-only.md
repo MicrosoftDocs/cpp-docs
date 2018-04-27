@@ -2,18 +2,13 @@
 title: "Setting Up a Static Link to the Registrar Code (C++ Only) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["statically linking to ATL Registrar code", "linking [C++], to ATL Registrar code"]
 ms.assetid: 835f5885-87a6-48fa-91e6-60988ee65538
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Setting Up a Static Link to the Registrar Code (C++ Only)

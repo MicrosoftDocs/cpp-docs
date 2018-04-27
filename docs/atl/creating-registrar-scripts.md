@@ -2,18 +2,13 @@
 title: "Creating Scripts for ATL Registrar | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "scripts, Registrar scripts", "scripts, creating"]
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating Registrar Scripts

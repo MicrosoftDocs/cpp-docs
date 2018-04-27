@@ -2,19 +2,14 @@
 title: "CComPtrBase Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComPtrBase", "ATLCOMCLI/ATL::CComPtrBase", "ATLCOMCLI/ATL::CComPtrBase::Advise", "ATLCOMCLI/ATL::CComPtrBase::Attach", "ATLCOMCLI/ATL::CComPtrBase::CoCreateInstance", "ATLCOMCLI/ATL::CComPtrBase::CopyTo", "ATLCOMCLI/ATL::CComPtrBase::Detach", "ATLCOMCLI/ATL::CComPtrBase::IsEqualObject", "ATLCOMCLI/ATL::CComPtrBase::QueryInterface", "ATLCOMCLI/ATL::CComPtrBase::Release", "ATLCOMCLI/ATL::CComPtrBase::SetSite", "ATLCOMCLI/ATL::CComPtrBase::p"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComPtrBase class"]
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CComPtrBase Class

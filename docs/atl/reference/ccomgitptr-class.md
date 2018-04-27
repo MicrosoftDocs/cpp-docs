@@ -2,19 +2,14 @@
 title: "CComGITPtr Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComGITPtr", "ATLBASE/ATL::CComGITPtr", "ATLBASE/ATL::CComGITPtr::CComGITPtr", "ATLBASE/ATL::CComGITPtr::Attach", "ATLBASE/ATL::CComGITPtr::CopyTo", "ATLBASE/ATL::CComGITPtr::Detach", "ATLBASE/ATL::CComGITPtr::GetCookie", "ATLBASE/ATL::CComGITPtr::Revoke", "ATLBASE/ATL::CComGITPtr::m_dwCookie"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComGITPtr class"]
 ms.assetid: af895acb-525a-4555-bb67-b241b7df515b
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CComGITPtr Class

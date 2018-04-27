@@ -2,19 +2,14 @@
 title: "CAtlServiceModuleT::Handler Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 f1_keywords: ["CServiceModule::Handler", "CServiceModule.Handler", "Handler"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Handler method"]
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::Handler Function
