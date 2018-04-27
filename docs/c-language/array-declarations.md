@@ -2,18 +2,13 @@
 title: "Array Declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["multidimensional arrays", "declaring arrays", "arrays [C++], declaring"]
 ms.assetid: 5f958b97-cef0-4058-bbc6-37c460aaed9b
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Array Declarations

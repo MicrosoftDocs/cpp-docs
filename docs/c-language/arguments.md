@@ -2,18 +2,13 @@
 title: "Arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "function parameters", "functions [C], parameters", "function parameters, about function parameters", "function arguments", "function calls, arguments"]
 ms.assetid: 14cf0389-2265-41f0-9a96-f2223eb406ca
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Arguments

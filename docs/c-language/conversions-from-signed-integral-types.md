@@ -2,18 +2,13 @@
 title: "Conversions from Signed Integral Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["integral conversions, from signed", "integers, converting", "conversions [C++], integral", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers"]
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Conversions from Signed Integral Types

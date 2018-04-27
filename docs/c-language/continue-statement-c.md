@@ -2,19 +2,14 @@
 title: "continue Statement (C) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 f1_keywords: ["continue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["loop structures, continue keyword", "continue keyword [C]"]
 ms.assetid: 969f293a-45fe-48a7-b4c6-287ba27a631d
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # continue Statement (C)

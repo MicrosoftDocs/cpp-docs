@@ -2,18 +2,13 @@
 title: "C String Literals | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["string literals, syntax", "strings [C++], string literals", "literal strings, C"]
 ms.assetid: 4b05523e-49a2-4900-b21a-754350af3328
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C String Literals

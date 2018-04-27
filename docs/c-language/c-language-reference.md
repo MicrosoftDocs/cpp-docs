@@ -1,20 +1,15 @@
 ---
 title: "C Language Reference | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 f1_keywords: ["c"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C", "C, language reference", "Visual C, language reference", "language reference, C"]
 ms.assetid: 3a306c30-8dd2-435b-bd1c-c143b02c0872
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Language Reference
