@@ -1,7 +1,7 @@
 ---
 title: "Security Best Practices for C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/25/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
@@ -12,15 +12,17 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
 caps.latest.revision: 45
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
+manager: "wpickett"
 ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++
+
 This article contains information about security tools and practices. Using them does not make applications immune from attack, but it makes successful attacks less likely.  
   
-## Visual C++ Security Features  
+## Visual C++ Security Features
+
  These security features are built into the Visual C++ compiler and linker:  
   
  [/guard (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md)  
@@ -84,7 +86,12 @@ This article contains information about security tools and practices. Using them
   
 
 ## Windows User Accounts  
- Using Windows user accounts that belong to the Administrators group exposes developers and--by extension--customers to security risks. For more information, see [Running as a Member of the Users Group](running-as-a-member-of-the-users-group.md) and [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md).  
+ Using Windows user accounts that belong to the Administrators group exposes developers and--by extension--customers to security risks. For more information, see [Running as a Member of the Users Group](running-as-a-member-of-the-users-group.md) and [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md).
+
+## Guidance for Speculative Execution Side Channels
+
+For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
+
   
 ## See Also  
  <xref:System.Security>   
