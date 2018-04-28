@@ -2,17 +2,12 @@
 title: "auto Keyword | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: 744a41c0-2510-4140-a1be-96257e722908
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # auto Keyword

@@ -2,18 +2,13 @@
 title: "How Catch Blocks are Evaluated (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["try-catch keyword [C++], catchable types", "catch keyword [C++], types of catch handlers", "C++ exception handling, catch handlers", "exception handling, catching and deleting exceptions", "types [C++], exception handling"]
 ms.assetid: 202dbf07-8ace-4b3b-b3ae-4b45c275e0b4
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How Catch Blocks are Evaluated (C++)

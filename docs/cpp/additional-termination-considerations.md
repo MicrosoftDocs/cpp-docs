@@ -2,18 +2,13 @@
 title: "Additional Termination Considerations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["quitting applications", "exiting applications", "programs [C++], terminating"]
 ms.assetid: acbe2332-9d8a-4a58-a471-dd652a837384
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Additional Termination Considerations

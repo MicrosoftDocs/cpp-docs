@@ -2,19 +2,14 @@
 title: "auto (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 f1_keywords: ["auto_CPP", "auto"]
 helpviewer_keywords: ["auto keyword [C++]"]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # auto (C++)

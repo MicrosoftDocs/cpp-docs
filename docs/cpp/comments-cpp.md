@@ -2,18 +2,13 @@
 title: "Comments (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["code comments, C++", "comments, documenting code", "comments, C++ code", "white space, C++ comments"]
 ms.assetid: 6fcb906c-c264-4083-84bc-373800b2e514
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Comments (C++)

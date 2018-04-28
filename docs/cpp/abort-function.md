@@ -2,18 +2,13 @@
 title: "abort Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/01/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["abort function"]
 ms.assetid: 3352bcc4-1a8a-4e1f-8dcc-fe30f6b50f2d
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # abort Function

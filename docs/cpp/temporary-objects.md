@@ -2,18 +2,13 @@
 title: "Temporary Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["temporary objects", "objects [C++], temporary"]
 ms.assetid: 4c8cec02-391e-4225-9bc6-06d150201412
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Temporary Objects

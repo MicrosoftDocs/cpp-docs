@@ -2,18 +2,13 @@
 title: "Using Structured Exception Handling with C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++ exception handling, mixed with SEH", "structured exception handling [C++], with C++ exception handling"]
 ms.assetid: ec34b528-8c26-4429-b24a-6a68553aaa91
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Structured Exception Handling with C++

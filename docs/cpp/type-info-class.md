@@ -2,19 +2,14 @@
 title: "type_info Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["type_info"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["class type_info", "type_info class"]
 ms.assetid: 894ddda2-7de4-4da3-9404-d2c74e356c16
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # type_info Class

@@ -2,19 +2,14 @@
 title: "Member Access Operators: . and -&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: [".", "->"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["member access, expressions", "operators [C++], member access", "dot operator (.)", "-> operator", "member access, operators", "postfix operators [C++]", ". operator", "member access"]
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Member Access Operators: . and -&gt;

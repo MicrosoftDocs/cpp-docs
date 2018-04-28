@@ -2,17 +2,12 @@
 title: "Program and Linkage  (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/09/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Program and Linkage  (C++)

@@ -1,18 +1,13 @@
 ---
 title: "How to: Interface Between Exceptional and Non-Exceptional Code | Microsoft Docs"
-ms.custom: ""
+ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Interface Between Exceptional and Non-Exceptional Code
