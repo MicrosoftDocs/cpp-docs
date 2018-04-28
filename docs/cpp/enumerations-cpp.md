@@ -2,19 +2,14 @@
 title: "Enumerations (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["enum_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, enumerations", "enumerators, declaring", "enum keyword [C++]", "named constants, enumeration declarations", "declaring enumerations"]
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Enumerations (C++)

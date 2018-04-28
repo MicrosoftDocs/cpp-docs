@@ -2,19 +2,14 @@
 title: "return Statement (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["return_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["return keyword [C++], syntax", "return keyword [C++]"]
 ms.assetid: a498903a-056a-4df0-a6cf-72f633a62210
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # return Statement (C++)

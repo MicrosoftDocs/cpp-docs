@@ -2,17 +2,13 @@
 title: "spectre | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/23/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["spectre_cpp", "spectre", "nomitigation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword (C++), spectre", "spectre __declspec keyword"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # spectre
