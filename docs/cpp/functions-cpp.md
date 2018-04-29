@@ -298,7 +298,6 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-<<<<<<< HEAD
 4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).  
   
 ## Function pointers  
@@ -326,7 +325,7 @@ int (*myFunction(char* s))(int);
  [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)   
  [Default Arguments](../cpp/default-arguments.md)   
  [Inline Functions](../cpp/inline-functions-cpp.md)
-=======
+
 ## Returning multiple values from a function
 
 There are various ways to return more than one value from a function:
@@ -463,4 +462,3 @@ The preceding declaration is equivalent to the declaration using typedef above.
 - [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
 - [Default Arguments](../cpp/default-arguments.md)
 - [Inline Functions](../cpp/inline-functions-cpp.md)
->>>>>>> master
