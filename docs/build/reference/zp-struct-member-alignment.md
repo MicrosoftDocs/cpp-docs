@@ -66,7 +66,11 @@ Controls how the members of a structure are packed into memory and specifies the
 ### To set this compiler option programmatically  
   
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.  
+
+### Packing and Windows SDK Headers  
   
+C++ headers in the Windows SDK assume **/Zp8** packing. Memory corruption may occur if this setting is changed when using Windows SDK headers.
+
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
