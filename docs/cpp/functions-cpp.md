@@ -298,34 +298,6 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).  
-  
-## Function pointers  
- C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.  
-  
- It is recommended that `typedef` be used to declare an alias for the function pointer type if declaring a function that returns a function pointer type.  For example  
-  
-```  
-typedef int (*fp)(int);  
-fp myFunction(char* s); // function returning function pointer  
-```  
-  
- If this is not done, the proper syntax for the function declaration may be deduced from the declarator syntax for the function pointer by replacing the identifier (`fp` in the above example) with the functions name and argument list, as follows:  
-  
-```  
-int (*myFunction(char* s))(int);  
-```  
-  
- The preceding declaration is equivalent to the declaration using typedef above.  
-  
-## See Also  
- [Function Overloading](../cpp/function-overloading.md)   
- [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)   
- [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)   
- [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)   
- [Default Arguments](../cpp/default-arguments.md)   
- [Inline Functions](../cpp/inline-functions-cpp.md)
-
 ## Returning multiple values from a function
 
 There are various ways to return more than one value from a function:
