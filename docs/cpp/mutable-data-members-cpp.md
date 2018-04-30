@@ -2,19 +2,14 @@
 title: "Mutable Data Members (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["mutable_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mutable keyword [C++]"]
 ms.assetid: ebe89746-3d36-43a8-8d69-f426af23f551
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Mutable Data Members (C++)

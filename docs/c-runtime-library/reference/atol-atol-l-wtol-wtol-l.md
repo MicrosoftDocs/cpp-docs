@@ -2,10 +2,7 @@
 title: "atol, _atol_l, _wtol, _wtol_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["atol", "_wtol_l", "_wtol", "_atol_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_atol_l", "_ttol_l", "_tstol_l", "_tstol", "_wtol", "_ttol", "_wt
 dev_langs: ["C++"]
 helpviewer_keywords: ["tstol function", "atol function", "ttol function", "_atol_l function", "_tstol_l function", "string conversion, to integers", "_tstol function", "_ttol function", "_ttol_l function", "atol_l function", "wtol_l function", "_wtol_l function", "wtol function", "_wtol function"]
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # atol, _atol_l, _wtol, _wtol_l

@@ -2,19 +2,14 @@
 title: "CDefaultCharTraits Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits::CharToLower", "ATLCOLL/ATL::CDefaultCharTraits::CharToUpper"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultCharTraits class"]
 ms.assetid: f94a3934-597f-401d-8513-ed6924ae069a
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDefaultCharTraits Class

@@ -2,19 +2,14 @@
 title: "CStringRefElementTraits Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStringRefElementTraits class"]
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CStringRefElementTraits Class

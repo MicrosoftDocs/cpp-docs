@@ -2,19 +2,14 @@
 title: "-PDBALTPATH (Use Alternate PDB Path) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/pdbaltpath"]
 dev_langs: ["C++"]
 helpviewer_keywords: [".pdb files, path", "PDBALTPATH dumpbin option", "-PDBALTPATH dumpbin option", "/PDBALTPATH dumpbin option", "PDB files, path"]
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /PDBALTPATH (Use Alternate PDB Path)

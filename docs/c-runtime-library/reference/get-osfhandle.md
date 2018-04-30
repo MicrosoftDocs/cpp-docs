@@ -2,10 +2,7 @@
 title: "_get_osfhandle | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/12/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_get_osfhandle"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["get_osfhandle", "_get_osfhandle"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operating systems, getting file handles", "get_osfhandle function", "_get_osfhandle function", "file handles [C++], operating system"]
 ms.assetid: 0bdd728a-4fd8-410b-8c9f-01a121135196
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_osfhandle

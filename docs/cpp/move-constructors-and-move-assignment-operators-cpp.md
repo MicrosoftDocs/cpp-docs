@@ -2,18 +2,13 @@
 title: "How to: Define move constructors and move assignment operators (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["move constructor [C++]"]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Move Constructors and Move Assignment Operators (C++)

@@ -2,10 +2,7 @@
 title: "_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_mbctolower_l", "_mbctoupper_l", "_mbctoupper", "_mbctolower"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["mbctoupper_l", "mbctolower_l", "_mbctolower", "_mbctolower_l", "_
 dev_langs: ["C++"]
 helpviewer_keywords: ["_mbctolower function", "mbctolower_l function", "totupper function", "_mbctoupper function", "totlower function", "_mbctoupper_l function", "mbctolower function", "_totupper function", "_mbctolower_l function", "mbctoupper_l function", "_totlower function", "mbctoupper function"]
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l

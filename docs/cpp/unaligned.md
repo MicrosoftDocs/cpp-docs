@@ -10,7 +10,6 @@ helpviewer_keywords: ["__unaligned keyword [C++]"]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __unaligned

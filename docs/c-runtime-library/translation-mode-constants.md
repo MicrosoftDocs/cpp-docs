@@ -2,19 +2,14 @@
 title: "Translation Mode Constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["_O_BINARY", "_O_TEXT", "_O_RAW"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["O_BINARY constant", "O_TEXT constant", "O_RAW constant", "_O_TEXT constant", "_O_RAW constant", "translation constants", "_O_BINARY constant", "translation, constants", "translation, modes", "translation modes (file I/O)"]
 ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Translation Mode Constants

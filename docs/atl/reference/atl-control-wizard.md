@@ -2,19 +2,14 @@
 title: "ATL Control Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects", "ATL Control Wizard"]
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Control Wizard

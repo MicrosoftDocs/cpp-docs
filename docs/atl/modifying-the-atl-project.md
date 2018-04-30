@@ -2,18 +2,13 @@
 title: "Modifying the ATL Project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["controls [ATL], adding to composite controls", "Dialog editor, working with composite controls", "composite controls, adding controls"]
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL Project

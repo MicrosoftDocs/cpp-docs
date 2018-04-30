@@ -2,18 +2,13 @@
 title: "C Type Specifiers | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/29/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["type specifiers, C", "specifiers, type"]
 ms.assetid: fbe13441-04c3-4829-b047-06d374adc2b6
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Type Specifiers

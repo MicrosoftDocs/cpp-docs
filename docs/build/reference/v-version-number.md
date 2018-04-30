@@ -2,19 +2,14 @@
 title: "-V (Version Number) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/v"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["embedding version strings", "/V compiler option [C++]", "version numbers, specifying for .obj", "V compiler option [C++]", "-V compiler option [C++]"]
 ms.assetid: 3e93fb7a-5dfd-49a6-bd49-3dca8052e0f3
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /V (Version Number)

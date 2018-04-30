@@ -2,19 +2,14 @@
 title: "-D (Preprocessor Definitions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCNMakeTool.PreprocessorDefinitions", "VC.Project.VCCLCompilerTool.PreprocessorDefinitions", "/d"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor definition symbols", "constants, defining", "macros, compiling", "/D compiler option [C++]", "-D compiler option [C++]", "D compiler option [C++]"]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /D (Preprocessor Definitions)

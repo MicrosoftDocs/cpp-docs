@@ -13,7 +13,6 @@ helpviewer_keywords: ["_CIcos intrinsic", "CIcos intrinsic"]
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CIcos

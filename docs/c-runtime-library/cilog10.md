@@ -2,11 +2,8 @@
 title: "_CIlog10 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["_CIlog10"]
 apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["CIlog10", "_CIlog10"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_CIlog10 intrinsic", "CIlog10 intrinsic"]
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CIlog10

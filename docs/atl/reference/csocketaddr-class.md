@@ -2,19 +2,14 @@
 title: "CSocketAddr Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CSocketAddr", "ATLSOCKET/ATL::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::FindAddr", "ATLSOCKET/ATL::CSocketAddr::FindINET4Addr", "ATLSOCKET/ATL::CSocketAddr::FindINET6Addr", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfo", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSocketAddr class"]
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSocketAddr Class

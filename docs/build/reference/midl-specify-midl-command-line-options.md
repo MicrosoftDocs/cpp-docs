@@ -2,19 +2,14 @@
 title: "-MIDL (Specify MIDL Command Line Options) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/midl", "VC.Project.VCLinkerTool.MidlCommandFile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-MIDL linker option", "MIDL", "/MIDL linker option", "MIDL linker option", "MIDL, command line options"]
 ms.assetid: 22dc259e-b34c-4ed3-a380-4beb734482c1
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /MIDL (Specify MIDL Command Line Options)

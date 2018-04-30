@@ -2,19 +2,14 @@
 title: "_fmode | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["fmode", "_fmode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["file translation [C++], default mode", "fmode function", "_fmode function"]
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fmode

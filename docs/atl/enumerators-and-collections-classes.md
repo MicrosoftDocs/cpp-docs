@@ -2,19 +2,14 @@
 title: "Enumerators and Collections Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.enum"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["enumerators, ATL classes"]
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Enumerators and Collections Classes

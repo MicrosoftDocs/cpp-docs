@@ -2,17 +2,13 @@
 title: "-w, -W0, -W1, -W2, -W3, -W4, -w1, -w2, -w3, -w4, -Wall, -wd, -we, -wo, -Wv, -WX (Warning Level) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/31/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.DisableSpecificWarnings", "VC.Project.VCCLCompilerTool.WarningLevel", "VC.Project.VCCLWCECompilerTool.DisableSpecificWarnings", "VC.Project.VCCLCompilerTool.WarnAsError", "VC.Project.VCCLWCECompilerTool.WarnAsError", "/wx", "VC.Project.VCCLWCECompilerTool.WarningLevel", "/wall", "VC.Project.VCCLCompilerTool.TreatSpecificWarningsAsErrors", "/Wv", "/w0", "/w1", "/w2", "/w3", "/w4", "/wd", "/we", "/wo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/W1 compiler option [C++]", "w compiler option [C++]", "-wo compiler option [C++]", "Warning Level compiler option", "W1 compiler option [C++]", "-we compiler option [C++]", "/WX compiler option [C++]", "-wd compiler option [C++]", "WX compiler option [C++]", "wo compiler option [C++]", "Wall compiler option [C++]", "/w compiler option", "W2 compiler option [C++]", "-W2 compiler option [C++]", "wd compiler option [C++]", "/we compiler option [C++]", "we compiler option [C++]", "-W1 compiler option [C++]", "-W4 compiler option [C++]", "-Wall compiler option [C++]", "/Wall compiler option [C++]", "-W0 compiler option [C++]", "W0 compiler option [C++]", "-WX compiler option [C++]", "/wo compiler option [C++]", "W4 compiler option [C++]", "W3 compiler option [C++]", "/wd compiler option [C++]", "warnings, as errors compiler option", "/W3 compiler option [C++]", "/W0 compiler option [C++]", "/W4 compiler option [C++]", "-W3 compiler option [C++]", "-w compiler option [C++]", "/W2 compiler option [C++]", "/Wv compiler option [C++]"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)

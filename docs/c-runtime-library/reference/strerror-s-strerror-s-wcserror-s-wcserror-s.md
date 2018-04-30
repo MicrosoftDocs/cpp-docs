@@ -2,10 +2,7 @@
 title: "strerror_s, _strerror_s, _wcserror_s, __wcserror_s | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["__wcserror_s", "_strerror_s", "_wcserror_s", "strerror_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["wcserror_s", "__wcserror_s", "_tcserror_s", "_wcserror_s", "tcser
 dev_langs: ["C++"]
 helpviewer_keywords: ["__wcserror_s function", "error messages, printing", "tcserror_s function", "printing error messages", "strerror_s function", "_wcserror_s function", "_tcserror_s function", "_strerror_s function", "wcserror_s function", "error messages, getting"]
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strerror_s, _strerror_s, _wcserror_s, __wcserror_s

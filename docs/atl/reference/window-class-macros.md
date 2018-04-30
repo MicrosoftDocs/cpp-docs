@@ -2,18 +2,13 @@
 title: "Window Class Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["atlwin/ATL::DECLARE_WND_CLASS", "atlwin/ATL::DECLARE_WND_SUPERCLASS", "atlwin/ATL::DECLARE_WND_CLASS_EX"]
 dev_langs: ["C++"]
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Window Class Macros

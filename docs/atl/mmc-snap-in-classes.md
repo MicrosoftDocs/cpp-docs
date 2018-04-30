@@ -2,19 +2,14 @@
 title: "MMC Snap-In Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.MMC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MMC Snap-In classes"]
 ms.assetid: 4af1d5af-687f-48b1-b2c5-fa252241b4d6
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MMC Snap-In Classes

@@ -2,18 +2,13 @@
 title: "Calling DLL Functions from Visual Basic Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], calling DLL functions from Visual Basic", "DLL functions [C++]", "function calls [C++], DLL functions", "DLLs [C++], calling", "calling DLL functions from VB applications [C++]", "__stdcall keyword [C++]", "DLL functions [C++], calling"]
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Calling DLL Functions from Visual Basic Applications

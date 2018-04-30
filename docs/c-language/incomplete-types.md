@@ -2,18 +2,13 @@
 title: "Incomplete Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["void keyword [C], incomplete", "types [C], incomplete", "incomplete types", "unions, incomplete", "arrays [C], incomplete types", "void keyword [C]", "structures, incomplete"]
 ms.assetid: 01bc0cf6-9fa7-458c-9371-ecbe54ea6aee
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Incomplete Types

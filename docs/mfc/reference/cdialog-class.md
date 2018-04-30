@@ -401,7 +401,7 @@ virtual BOOL OnInitDialog();
  Windows calls the `OnInitDialog` function by using the standard global dialog-box procedure common to all Microsoft Foundation Class Library dialog boxes. It does not call this function through your message map, and therefore you do not need a message map entry for this method.  
   
 > [!NOTE]
->  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. For more information about changes to `CFileDialog` under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
+> You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows Vista or later operating systems. For more information about changes to `CFileDialog` under Windows Vista and later, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#67](../../mfc/codesnippet/cpp/cdialog-class_6.cpp)]  
@@ -441,7 +441,7 @@ Virtual void OnSetFont(CFont* pFont);
  The dialog editor typically sets the dialog-box font as part of the dialog-box template resource.  
   
 > [!NOTE]
->  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. For more information about changes to `CFileDialog` under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
+> You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows Vista or later operating systems. For more information about changes to `CFileDialog` under Windows Vista and later, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
   
 ##  <a name="prevdlgctrl"></a>  CDialog::PrevDlgCtrl  
  Sets the focus to the previous control in the dialog box.  

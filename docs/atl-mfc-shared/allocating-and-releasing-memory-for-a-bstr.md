@@ -2,19 +2,14 @@
 title: "Allocating and Releasing Memory for a BSTR | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["bstr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BSTRs, memory allocation", "memory deallocation, string memory", "memory [C++], releasing", "memory allocation, BSTRs", "memory deallocation, BSTR memory", "strings [C++], releasing"]
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Allocating and Releasing Memory for a BSTR

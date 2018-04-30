@@ -2,15 +2,11 @@
 title: "/Qsafe_fp_loads | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/24/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Qsafe_fp_loads

@@ -3,14 +3,13 @@ title: "/Zc:throwingNew (Assume operator new throws) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/01/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["throwingNew", "/Zc:throwingNew"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "throwingNew", "Assume operator new Throws", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 20ff0101-9677-4d83-8c7b-8ec9ca49f04f
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Zc:throwingNew (Assume operator new throws)

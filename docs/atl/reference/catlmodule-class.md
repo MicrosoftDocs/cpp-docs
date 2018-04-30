@@ -2,19 +2,14 @@
 title: "CAtlModule Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CAtlModule", "ATLBASE/ATL::CAtlModule", "ATLBASE/ATL::CAtlModule::CAtlModule", "ATLBASE/ATL::CAtlModule::AddCommonRGSReplacements", "ATLBASE/ATL::CAtlModule::AddTermFunc", "ATLBASE/ATL::CAtlModule::GetGITPtr", "ATLBASE/ATL::CAtlModule::GetLockCount", "ATLBASE/ATL::CAtlModule::Lock", "ATLBASE/ATL::CAtlModule::Term", "ATLBASE/ATL::CAtlModule::Unlock", "ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceD", "ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceDHelper", "ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceS", "ATLBASE/ATL::CAtlModule::m_libid", "ATLBASE/ATL::CAtlModule::m_pGIT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlModule class"]
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAtlModule Class

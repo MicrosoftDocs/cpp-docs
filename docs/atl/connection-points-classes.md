@@ -2,19 +2,14 @@
 title: "Connection Points Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.connection"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], connection points", "connection points classes"]
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Connection Points Classes

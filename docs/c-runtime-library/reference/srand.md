@@ -2,10 +2,7 @@
 title: "srand | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/02/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["srand"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
@@ -15,7 +12,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["random starting point", "random starting point, setting", "random numbers, generating", "srand function", "numbers, pseudorandom", "numbers, random", "pseudorandom numbers", "starting points, setting random", "starting points"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # srand

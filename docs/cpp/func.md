@@ -2,18 +2,13 @@
 title: "__func__ | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/19/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__func__"]
 dev_langs: ["C++"]
 ms.assetid: a5299b8d-f0ee-4af2-91dd-8fb165e68798
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __func__

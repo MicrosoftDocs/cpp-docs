@@ -2,18 +2,13 @@
 title: "Exception Handling Differences | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["structured exception handling [C++], vs. C++ exception handling", "structured exception handling [C++], vs. unstructured", "exceptions [C++], wrapper class", "C++ exception handling [C++], vs. structured exception handling", "wrapper classes [C++], C exception"]
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling Differences

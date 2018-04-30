@@ -3,13 +3,12 @@ title: "How to: Merge Multiple PGO Profiles into a Single Profile | Microsoft Do
 ms.custom: ""
 ms.date: "03/14/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["merging profiles", "profile-guided optimizations, merging profiles"]
 ms.assetid: aab686b5-59dd-40d1-a04b-5064690f65a6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Merge Multiple PGO Profiles into a Single Profile

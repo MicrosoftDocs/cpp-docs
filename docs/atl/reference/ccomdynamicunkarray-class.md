@@ -2,19 +2,14 @@
 title: "CComDynamicUnkArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray::CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray::Add", "ATLCOM/ATL::CComDynamicUnkArray::begin", "ATLCOM/ATL::CComDynamicUnkArray::clear", "ATLCOM/ATL::CComDynamicUnkArray::end", "ATLCOM/ATL::CComDynamicUnkArray::GetAt", "ATLCOM/ATL::CComDynamicUnkArray::GetCookie", "ATLCOM/ATL::CComDynamicUnkArray::GetSize", "ATLCOM/ATL::CComDynamicUnkArray::GetUnknown", "ATLCOM/ATL::CComDynamicUnkArray::Remove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], managing", "CComDynamicUnkArray class"]
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CComDynamicUnkArray Class

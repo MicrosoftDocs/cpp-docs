@@ -2,19 +2,14 @@
 title: "-Ob (Inline Function Expansion) | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/25/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.InlineFunctionExpansion", "VC.Project.VCCLCompilerTool.InlineFunctionExpansion", "/ob"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline functions, function expansion compiler option [C++]", "-Ob1 compiler option [C++]", "-Ob0 compiler option [C++]", "/Ob0 compiler option [C++]", "/Ob1 compiler option [C++]", "any suitable compiler option [C++]", "Ob2 compiler option [C++]", "Ob1 compiler option [C++]", "/Ob2 compiler option [C++]", "Ob compiler option [C++]", "-Ob2 compiler option [C++]", "disable compiler option [C++]", "-Ob compiler option [C++]", "/Ob compiler option [C++]", "only __inline compiler option [C++]", "Ob0 compiler option [C++]", "inline expansion, compiler option"]
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Ob (Inline Function Expansion)

@@ -2,10 +2,7 @@
 title: "memcmp, wmemcmp | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["memcmp", "wmemcmp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["memcmp", "wmemcmp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["wmemcmp function", "memcmp function"]
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memcmp, wmemcmp

@@ -2,19 +2,14 @@
 title: "reinterpret_cast Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["reinterpret_cast_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reinterpret_cast keyword [C++]"]
 ms.assetid: eb3283c7-7f88-467e-affd-407d37b46d6c
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # reinterpret_cast Operator

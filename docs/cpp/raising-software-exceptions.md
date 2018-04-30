@@ -2,18 +2,13 @@
 title: "Raising Software Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["run-time errors, treating as exceptions", "exception handling [C++], errors as exceptions", "exceptions [C++], flagging errors as exceptions", "errors [C++], treating as exceptions", "exception handling [C++], detecting errors", "structured exception handling [C++], errors as exceptions", "exceptions [C++], software", "RaiseException function", "software exceptions [C++]", "formats [C++], exception codes"]
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Raising Software Exceptions

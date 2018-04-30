@@ -2,19 +2,14 @@
 title: "Error Handling (CRT) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.errors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["error handling, C routines for", "logic errors", "error handling, library routines", "testing, for program errors"]
 ms.assetid: 125ac697-9eb0-4152-a440-b7842f23d97f
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Error Handling (CRT)

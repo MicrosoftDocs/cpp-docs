@@ -2,10 +2,7 @@
 title: "_rotl, _rotl64, _rotr, _rotr64 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_rotr64", "_rotl", "_rotr", "_rotl64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_rotr64", "rotl64", "_rotl64", "rotr64", "rotr", "_rotr", "_rotl"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rotl64 function", "_rotl function", "rotr function", "rotr64 function", "_rotr function", "rotl function", "_rotl64 function", "rotating bits", "_rotr64 function", "bits, rotating"]
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _rotl, _rotl64, _rotr, _rotr64

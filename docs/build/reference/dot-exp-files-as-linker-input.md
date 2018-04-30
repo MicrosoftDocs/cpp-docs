@@ -2,18 +2,13 @@
 title: ".Exp Files as Linker Input | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["exporting functions", "import libraries, linker files", "linking [C++], exports", "exporting functions, information about exported functions", "exporting data, export (.exp) files", "functions [C++], exporting", ".exp files [C++]", "EXP files"]
 ms.assetid: 399f5636-0a4d-462e-b500-5f5b9ae5ad22
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # .Exp Files as Linker Input

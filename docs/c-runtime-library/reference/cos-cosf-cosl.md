@@ -13,7 +13,6 @@ helpviewer_keywords: ["cosines", "cosl function", "calculating cosine", "cosf fu
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cos, cosf, cosl
