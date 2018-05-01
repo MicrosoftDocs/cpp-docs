@@ -81,7 +81,7 @@ int const *x;      /* Declares a pointer variable, x,
 const int some_object = 5 ;  
 int other_object = 37;  
 int *const y = &fixed_object;  
-int volatile *const z = &some_object;  
+const int volatile *z = &some_object;  
 int *const volatile w = &some_object;  
 ```  
   
