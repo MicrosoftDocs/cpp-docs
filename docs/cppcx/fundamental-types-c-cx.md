@@ -3,15 +3,10 @@ title: "Fundamental types (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
-caps.latest.revision: 14
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Fundamental types (C++/CX)

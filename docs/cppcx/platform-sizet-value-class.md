@@ -3,18 +3,13 @@ title: "Platform::SizeT value class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformSizeT::SizeT constructor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::SizeT Struct"]
 ms.assetid: 0803612c-8ba1-430c-9b7b-1bebae88608d
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::SizeT value class

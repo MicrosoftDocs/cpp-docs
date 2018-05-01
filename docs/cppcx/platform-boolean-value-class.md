@@ -3,18 +3,13 @@ title: "Platform::Boolean value class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Boolean"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Boolean Struct"]
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Boolean value class

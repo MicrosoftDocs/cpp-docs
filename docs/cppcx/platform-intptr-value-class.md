@@ -3,18 +3,13 @@ title: "Platform::IntPtr value class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformIntPtr::IntPtr", "VCCORLIB/PlatformIntPtr::op_explicit Operator", "VCCORLIB/PlatformIntPtr::ToInt32"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IntPtr Struct"]
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IntPtr value class

@@ -3,18 +3,13 @@ title: "Platform namespace (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["Platform/Platform"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform Namespace (C++/CX)"]
 ms.assetid: b160e822-d424-43d2-ba60-57b0e81f259c
-caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform namespace (C++/CX)

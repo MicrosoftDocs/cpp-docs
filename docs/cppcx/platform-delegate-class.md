@@ -3,18 +3,13 @@ title: "Platform::Delegate Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Delegate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Delegate Class"]
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
-caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Delegate Class

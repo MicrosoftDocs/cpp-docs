@@ -3,15 +3,10 @@ title: "Ref classes and structs (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-caps.latest.revision: 42
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Ref classes and structs (C++/CX)
