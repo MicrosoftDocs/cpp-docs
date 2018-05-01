@@ -1,0 +1,35 @@
+---
+title: "&#39;If&#39; must end with a matching &#39;End If&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30081"
+  - "vbc30081"
+helpviewer_keywords: 
+  - "BC30081"
+ms.assetid: e5905d59-56bb-4daf-aca5-5ff847fc62f6
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;If&#39; must end with a matching &#39;End If&#39;
+An `If` statement occurs without a corresponding `End If` statement. An `End If` statement must be used to end the `If` block.  
+  
+ **Error ID:** BC30081  
+  
+### To correct this error  
+  
+1.  If this `If` block is part of a set of nested `If` blocks, make sure each block is properly terminated.  
+  
+2.  Add an `End If` statement to the end of the `If` block.  
+  
+## See Also  
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)

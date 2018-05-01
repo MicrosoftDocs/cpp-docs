@@ -1,0 +1,41 @@
+---
+title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;typename1&gt;&#39; and &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31080"
+  - "bc31080"
+helpviewer_keywords: 
+  - "BC31080"
+ms.assetid: d2f77450-2bf2-4b1e-b95f-dbc7878f2777
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;typename1&gt;&#39; and &#39;&lt;typename2&gt;&#39;
+Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typename2>'. Use 'Is' operator to compare two reference types.  
+  
+ An attempt was made to use an operator in a way that is inappropriate for the specified types. This error can be caused by using the "=" operator instead of using the `Is` operator to compare two objects.  
+  
+ **Error ID:** BC31080  
+  
+### To correct this error  
+  
+1.  Use `Is` operator to compare two reference types.  
+  
+2.  Use the `Not` operator in conjunction with the `Is` operator to denote inequality. For example:  
+  
+     [!code-vb[VbVbalrOOP#89](../snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#89)]  
+  
+## See Also  
+ [Is Operator](http://msdn.microsoft.com/library/8045a6c8-2a83-45b6-ad47-d09a704c656d)   
+ [= Operator](http://msdn.microsoft.com/library/2dac2e49-86c8-42f8-80c1-458452fb5e29)   
+ [Not Operator](http://msdn.microsoft.com/library/8f2ea83c-d2ed-480a-a474-3042a1cad9b5)

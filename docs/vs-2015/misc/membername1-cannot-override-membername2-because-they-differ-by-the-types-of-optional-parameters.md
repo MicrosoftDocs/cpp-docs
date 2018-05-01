@@ -1,0 +1,33 @@
+---
+title: "&#39;&lt;membername1&gt;&#39; cannot override &#39;&lt;membername2&gt;&#39; because they differ by the types of optional parameters | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30697"
+  - "bc30697"
+helpviewer_keywords: 
+  - "BC30697"
+ms.assetid: 286bc9e0-2e20-4dd5-9f5a-fb917a5c1375
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;membername1&gt;&#39; cannot override &#39;&lt;membername2&gt;&#39; because they differ by the types of optional parameters
+Overloaded members must have different data types for one or more required parameters.  
+  
+ **Error ID:** BC30697  
+  
+### To correct this error  
+  
+-   Define at least one required parameter as a different data type.  
+  
+## See Also  
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)

@@ -1,0 +1,40 @@
+---
+title: "&#39;Continue For&#39; can only appear inside a &#39;For&#39; statement | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30783"
+  - "vbc30783"
+helpviewer_keywords: 
+  - "BC30783"
+ms.assetid: 70891018-27c8-4d36-b168-8cc7177d70cb
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Continue For&#39; can only appear inside a &#39;For&#39; statement
+A `Continue For` statement can only appear within a `For...Next` loop.  
+  
+ **Error ID:** BC30783  
+  
+### To correct this error  
+  
+1.  If the `Continue For` statement is in a `Do...Loop`, change the statement to `Continue Do`.  
+  
+     —or—  
+  
+     If the `Continue For` statement is in a `While...End While` loop, change the statement to `Continue While`.  
+  
+2.  Otherwise, remove the `Continue For` statement.  
+  
+## See Also  
+ [Continue Statement](http://msdn.microsoft.com/library/3ad00103-358b-4af3-a3a8-1b9ea0e995d3)   
+ [For...Next Statement](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9)

@@ -1,0 +1,34 @@
+---
+title: "&#39;Resume&#39; statements are not valid in the Immediate window | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30714"
+  - "bc30714"
+helpviewer_keywords: 
+  - "BC30714"
+ms.assetid: 8d16ad8f-6c2f-47bd-beb0-4b2dde465726
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Resume&#39; statements are not valid in the Immediate window
+Resume statements can only be used in source code.  
+  
+ **Error ID:** BC30714  
+  
+### To correct this error  
+  
+-   Remove `Resume` statements from the debugging code.  
+  
+## See Also  
+ [Resume - delete](http://msdn.microsoft.com/en-us/fc82a786-a342-49d0-82a3-63f33e28f00f)   
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

@@ -1,0 +1,79 @@
+---
+title: "How to: Create a Classic COM Component Using WRL | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+dev_langs: 
+  - "C++"
+ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
+caps.latest.revision: 9
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# How to: Create a Classic COM Component Using WRL
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [How to: Create a Classic COM Component Using WRL](https://docs.microsoft.com/cpp/windows/how-to-create-a-classic-com-component-using-wrl).  
+  
+  
+You can use the [!INCLUDE[cppwrl](../includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)]) to create basic classic COM components for use in desktop apps, in addition to using it for [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] apps. For the creation of COM components, the [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] may require less code than the ATL. For information about the subset of COM that the [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] supports, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+  
+ This document shows how to use the [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] to create a basic COM component. Although you can use the deployment mechanism that best fits your needs, this document also shows a basic way to register and consume the COM component from a desktop app.  
+  
+### To use the [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] to create a basic classic COM component  
+  
+1.  In Visual Studio, create a **Blank Solution** project. Name the project, for example, `WRLClassicCOM`.  
+  
+2.  Add a **Win32 Project** to the solution. Name the project, for example, `CalculatorComponent`. On the **Application Settings** tab, select **DLL**.  
+  
+3.  Add a **Midl File (.idl)** file to the project. Name the file, for example, `CalculatorComponent.idl`.  
+  
+4.  Add this code to CalculatorComponent.idl:  
+  
+     [!code-cpp[wrl-classic-com-component#1](../snippets/cpp/VS_Snippets_Misc/wrl-classic-com-component/cpp/wrlclassiccom/calculatorcomponent/calculatorcomponent.idl#1)]  
+  
+5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to [!INCLUDE[win8_appstore_short](../includes/win8-appstore-short-md.md)] app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
+  
+     [!code-cpp[wrl-classic-com-component#2](../snippets/cpp/VS_Snippets_Misc/wrl-classic-com-component/cpp/wrlclassiccom/calculatorcomponent/calculatorcomponent.cpp#2)]  
+  
+6.  Use the following code to replace the code in dllmain.cpp. This file defines the DLL export functions. These functions use the [Microsoft::WRL::Module](../windows/module-class.md) class to manage the class factories for the module.  
+  
+     [!code-cpp[wrl-classic-com-component#3](../snippets/cpp/VS_Snippets_Misc/wrl-classic-com-component/cpp/wrlclassiccom/calculatorcomponent/dllmain.cpp#3)]  
+  
+7.  Add a **Module-Definition File (.def)** file to the project. Name the file, for example, `CalculatorComponent.def`. This file gives the linker the names of the functions to be exported.  
+  
+8.  Add this code to CalculatorComponent.def:  
+  
+  
+  
+9. Add runtimeobject.lib to the linker line. To learn how, see [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md).  
+  
+### To consume the COM component from a desktop app  
+  
+1.  Register the COM component with the Windows Registry. To do so, create a registration entries file, name it `RegScript.reg`, and add the following text. Replace *\<dll-path>* with the path of your DLL—for example, `C:\\temp\\WRLClassicCOM\\Debug\\CalculatorComponent.dll`.  
+  
+  
+  
+2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](http://msdn.microsoft.com/library/d49b2c57-24bf-4fb2-8351-5c4b6cca938f).  
+  
+3.  Add a **Win32 Console Application** project to the solution. Name the project, for example, `Calculator`.  
+  
+4.  Use this code to replace the contents of Calculator.cpp:  
+  
+     [!code-cpp[wrl-classic-com-component#6](../snippets/cpp/VS_Snippets_Misc/wrl-classic-com-component/cpp/wrlclassiccom/calculator/calculator.cpp#6)]  
+  
+## Robust Programming  
+ This document uses standard COM functions to demonstrate that you can use the [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] to author a COM component and make it available to any COM-enabled technology. You can also use [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] types such as [Microsoft::WRL::ComPtr](../windows/comptr-class.md) in your desktop app to manage the lifetime of COM and other objects. The following code uses the [!INCLUDE[cppwrl_short](../includes/cppwrl-short-md.md)] to manage the lifetime of the `ICalculatorComponent` pointer. The `CoInitializeWrapper` class is an RAII wrapper that guarantees that the COM library is freed and also guarantees that the lifetime of the COM library outlives the `ComPtr` smart pointer object.  
+  
+ [!code-cpp[wrl-classic-com-component#7](../snippets/cpp/VS_Snippets_Misc/wrl-classic-com-component/cpp/wrlclassiccom/calculator/calculator.cpp#7)]  
+  
+## See Also  
+ [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)
+

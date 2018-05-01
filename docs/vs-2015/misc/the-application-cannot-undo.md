@@ -1,0 +1,29 @@
+---
+title: "The application cannot undo. | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.message.VS_E_MULTIDOCUNDO_BLOCKED"
+  - "vs.message.0x800A00AB"
+ms.assetid: c2b5e2af-0e64-4cff-9814-b80e26cd240e
+caps.latest.revision: 6
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# The application cannot undo.
+This error generally occurs when an undo operation has been attempted for an item that has a linked undo to another file. If an action has taken place since the linked modification, Visual Studio cannot roll back the change.  
+  
+### To correct this error  
+  
+1.  Manually reverse the change.  
+  
+## See Also  
+ [Finding and Replacing Text](http://msdn.microsoft.com/library/a62545c3-1570-4d12-99fb-a82607eb35a1)

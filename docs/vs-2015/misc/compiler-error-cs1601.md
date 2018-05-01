@@ -1,0 +1,45 @@
+---
+title: "Compiler Error CS1601 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1601"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1601"
+ms.assetid: 5efa1d2d-c70c-446d-a51f-d23d8a3be22e
+caps.latest.revision: 10
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1601
+Method or delegate parameter cannot be of type 'type'  
+  
+ Some types in the .NET Framework class library, for example, <xref:System.TypedReference>, <xref:System.RuntimeArgumentHandle> and <xref:System.ArgIterator> cannot be used as [ref](http://msdn.microsoft.com/library/b8a5e59c-907d-4065-b41d-95bf4273c0bd) or [out](http://msdn.microsoft.com/library/7e911a0c-3f98-4536-87be-d539b7536ca8) parameters because they could potentially be used to perform unsafe operations.  
+  
+ The following sample generates CS1601:  
+  
+```  
+// CS1601.cs  
+using System;  
+  
+class MyClass  
+{  
+   public void Test1 (ref TypedReference t)   // CS1601  
+   {  
+   }  
+  
+   public void Test2 (out ArgIterator t)   // CS1601  
+   {  
+   }  
+}  
+```

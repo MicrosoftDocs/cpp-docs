@@ -1,0 +1,34 @@
+---
+title: "&lt;type1&gt; &#39;&lt;typename1&gt;&#39; conflicts with a member implicitly declared for event &#39;&lt;eventname&gt;&#39; in &lt;type2&gt; &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31061"
+  - "bc31061"
+helpviewer_keywords: 
+  - "BC31061"
+ms.assetid: de5b1121-8c8f-4aba-a3e7-1e3e60df0dc5
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &lt;type1&gt; &#39;&lt;typename1&gt;&#39; conflicts with a member implicitly declared for event &#39;&lt;eventname&gt;&#39; in &lt;type2&gt; &#39;&lt;typename2&gt;&#39;
+The name of a type member conflicts with the name of a member implicitly created for an event. Events implicitly create several implicit variables. For example, the declaration `Event X` implicitly declares the names `XEventHandler`, `XEvent`, `add_X`, and `remove_X`.  
+  
+ **Error ID:** BC31061  
+  
+### To correct this error  
+  
+-   Rename the explicitly declared member to remove the naming conflict.  
+  
+## See Also  
+ [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

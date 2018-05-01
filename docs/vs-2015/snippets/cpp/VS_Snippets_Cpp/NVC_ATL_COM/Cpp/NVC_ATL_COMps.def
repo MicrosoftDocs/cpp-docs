@@ -1,0 +1,9 @@
+
+LIBRARY      "NVC_ATL_COMPS"
+
+EXPORTS
+	DllGetClassObject       PRIVATE
+	DllCanUnloadNow         PRIVATE
+	GetProxyDllInfo         PRIVATE
+	DllRegisterServer		PRIVATE
+	DllUnregisterServer		PRIVATE

@@ -1,0 +1,33 @@
+---
+title: "Property &#39;&lt;propertyname&gt;&#39; cannot be declared &#39;Default&#39; because it overrides a Property on the base &lt;type&gt; &#39;&lt;typename&gt;&#39; that is not default | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30504"
+  - "vbc30504"
+helpviewer_keywords: 
+  - "BC30504"
+ms.assetid: af5d55b7-80bc-4085-8fcf-01d8acbe9290
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Property &#39;&lt;propertyname&gt;&#39; cannot be declared &#39;Default&#39; because it overrides a Property on the base &lt;type&gt; &#39;&lt;typename&gt;&#39; that is not default
+You have attempted to declare a property `Default`, which is not a valid declaration because it overrides a property that has not been declared `Default` on the base class.  
+  
+ **Error ID:** BC30504  
+  
+### To correct this error  
+  
+-   Remove the `Default` declaration.  
+  
+## See Also  
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

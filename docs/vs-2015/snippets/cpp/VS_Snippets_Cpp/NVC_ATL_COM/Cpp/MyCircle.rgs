@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_COM.MyCircle.1 = s 'MyCircle Class'
+	{
+		CLSID = s '{87FD69A6-396A-40F8-8334-CF407A883E4C}'
+	}
+	NVC_ATL_COM.MyCircle = s 'MyCircle Class'
+	{
+		CLSID = s '{87FD69A6-396A-40F8-8334-CF407A883E4C}'
+		CurVer = s 'NVC_ATL_COM.MyCircle.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {87FD69A6-396A-40F8-8334-CF407A883E4C} = s 'MyCircle Class'
+		{
+			ProgID = s 'NVC_ATL_COM.MyCircle.1'
+			VersionIndependentProgID = s 'NVC_ATL_COM.MyCircle'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{DB9F12A2-CECC-4159-B5D8-B5BA358AAFA9}'
+		}
+	}
+}

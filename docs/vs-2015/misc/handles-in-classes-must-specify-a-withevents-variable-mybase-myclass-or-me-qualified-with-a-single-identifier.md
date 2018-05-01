@@ -1,0 +1,37 @@
+---
+title: "&#39;Handles&#39; in classes must specify a &#39;WithEvents&#39; variable, &#39;MyBase&#39;, &#39;MyClass&#39; or &#39;Me&#39; qualified with a single identifier | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31412"
+  - "vbc31412"
+helpviewer_keywords: 
+  - "BC31412"
+ms.assetid: acbefc38-448a-4afa-90c2-77389415d618
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Handles&#39; in classes must specify a &#39;WithEvents&#39; variable, &#39;MyBase&#39;, &#39;MyClass&#39; or &#39;Me&#39; qualified with a single identifier
+To specify an event handler, `Handles` statements must either specify an object variable declared with the `WithEvents` keyword, or a member qualified with the `MyBase` keyword.  
+  
+ **Error ID:** BC31412  
+  
+### To correct this error  
+  
+1.  Use the `WithEvents` modifier to declare the variables to be used with the `Handles` statement.  
+  
+2.  Specify the name of an event for the current class in the base class.  
+  
+## See Also  
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)   
+ [WithEvents](http://msdn.microsoft.com/library/19d461f5-d72f-4de9-8c1d-0a6650316990)   
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)

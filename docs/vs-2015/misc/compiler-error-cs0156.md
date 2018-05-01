@@ -1,0 +1,59 @@
+---
+title: "Compiler Error CS0156 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0156"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0156"
+ms.assetid: 32026b1b-bcd7-4464-b63f-3b38c00452a6
+caps.latest.revision: 9
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0156
+A throw statement with no arguments is not allowed in a finally clause that is nested inside the nearest enclosing catch clause  
+  
+ A [throw](http://msdn.microsoft.com/library/5ac4feef-4b1a-4c61-aeb4-61d549e5dd42) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
+  
+ For more information, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c) and [Exceptions and Exception Handling](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344).  
+  
+ The following sample generates CS0156:  
+  
+```  
+// CS0156.cs  
+using System;  
+  
+namespace MyNamespace  
+{  
+   public class MyClass2 : Exception  
+   {  
+   }  
+  
+   public class MyClass  
+   {  
+      public static void Main()  
+      {  
+         try  
+         {  
+            throw;   // CS0156  
+         }  
+  
+         catch(MyClass2)  
+         {  
+            throw;   // this throw is valid  
+         }  
+      }  
+   }  
+}  
+```

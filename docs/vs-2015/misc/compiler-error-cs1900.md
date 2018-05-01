@@ -1,0 +1,41 @@
+---
+title: "Compiler Error CS1900 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1900"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1900"
+ms.assetid: 08141138-bfea-4af3-a9a0-ec54cf2caa13
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1900
+Warning level must be in the range 0-4  
+  
+ The [/warn](http://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71) compiler option can only take one of five possible values (0, 1, 2, 3, or 4). Any other value passed to **/warn** will result in CS1900.  
+  
+ The following sample generates CS1900:  
+  
+```  
+// CS1900.cs  
+// compile with: /W:5  
+// CS1900 expected  
+class x  
+{  
+   public static void Main()  
+   {  
+   }  
+}  
+```

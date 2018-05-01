@@ -1,0 +1,41 @@
+---
+title: "&#39;&lt;procedurename1&gt;&#39; cannot override &#39;&lt;procedurename2&gt;&#39; because it is not accessible in this context | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31417"
+  - "vbc31417"
+helpviewer_keywords: 
+  - "BC31417"
+ms.assetid: 1a36acbf-cead-43a0-b12f-f52f94d09124
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;procedurename1&gt;&#39; cannot override &#39;&lt;procedurename2&gt;&#39; because it is not accessible in this context
+A procedure or property overrides a procedure or property with an access level that prevents access by the overriding procedure or property.  
+  
+ For example, if a procedure is declared as `Friend` in one assembly, it cannot be accessed outside that assembly. If a procedure in another assembly in the same project attempts to override the `Friend` procedure, it cannot access it to override it.  
+  
+ **Error ID:** BC31417  
+  
+### To correct this error  
+  
+-   Move the overriding procedure or property to the same assembly as the procedure or property it is to override.  
+  
+     -or-  
+  
+-   Remove the `Overrides` keyword.  
+  
+## See Also  
+ [Access Levels in Visual Basic](http://msdn.microsoft.com/library/6e06c1ab-fd78-47f0-83a8-1152780b5e1a)   
+ [Overrides](http://msdn.microsoft.com/library/9f5e6144-ce10-465e-842b-1a8f8760af90)   
+ [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

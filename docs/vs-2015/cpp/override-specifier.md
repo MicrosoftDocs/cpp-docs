@@ -1,0 +1,104 @@
+---
+title: "override Specifier | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "override Identifier"
+ms.assetid: b286fb46-9374-4ad8-b2e7-4607119b6133
+caps.latest.revision: 13
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# override Specifier
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [override Specifier](https://docs.microsoft.com/cpp/cpp/override-specifier).  
+  
+You can use the `override` keyword to designate member functions that override a virtual function in a base class.  
+  
+## Syntax  
+  
+```  
+  
+function-declaration override;  
+```  
+  
+## Remarks  
+ `override` is context-sensitive and has special meaning only when it's used after a member function declaration; otherwise, it's not a reserved keyword.  
+  
+## Example  
+ Use `override` to help prevent inadvertent inheritance behavior in your code. The following example shows where, without using `override`, the member function behavior of the derived class may not have been intended. The compiler doesn't emit any errors for this code.  
+  
+```cpp  
+class BaseClass  
+{  
+    virtual void funcA();  
+    virtual void funcB() const;  
+    virtual void funcC(int = 0);  
+    void funcD();  
+};  
+  
+class DerivedClass: public BaseClass  
+{  
+    virtual void funcA(); // ok, works as intended  
+  
+    virtual void funcB(); // DerivedClass::funcB() is non-const, so it does not  
+                          // override BaseClass::funcB() const and it is a new member function  
+  
+    virtual void funcC(double = 0.0); // DerivedClass::funcC(double) has a different  
+                                      // parameter type than BaseClass::funcC(int), so  
+                                      // DerivedClass::funcC(double) is a new member function  
+  
+};  
+  
+```  
+  
+ When you use `override`, the compiler generates errors instead of silently creating new member functions.  
+  
+```cpp  
+class BaseClass  
+{  
+    virtual void funcA();  
+    virtual void funcB() const;  
+    virtual void funcC(int = 0);  
+    void funcD();  
+};  
+  
+class DerivedClass: public BaseClass  
+{  
+    virtual void funcA() override; // ok  
+  
+    virtual void funcB() override; // compiler error: DerivedClass::funcB() does not   
+                                   // override BaseClass::funcB() const  
+  
+    virtual void funcC( double = 0.0 ) override; // compiler error:   
+                                                 // DerivedClass::funcC(double) does not   
+                                                 // override BaseClass::funcC(int)  
+  
+    void funcD() override; // compiler error: DerivedClass::funcD() does not   
+                           // override the non-virtual BaseClass::funcD()  
+};  
+  
+```  
+  
+ To specify that functions cannot be overridden and that classes cannot be inherited, use the [final](../cpp/final-specifier.md) keyword.  
+  
+## See Also  
+ [final Specifier](../cpp/final-specifier.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
+ [(NOTINBUILD) C++ Type Names](http://msdn.microsoft.com/en-us/b53ba470-e583-4e5c-b634-6018f6110674)
+
+
+
+
+

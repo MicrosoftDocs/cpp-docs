@@ -1,0 +1,65 @@
+---
+title: "Using the 256-Color Palette (Image Editor for Icons) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+  - "C++"
+helpviewer_keywords: 
+  - "256-color palette"
+  - "colors, icons and cursors"
+  - "cursors, color"
+  - "color palettes, 256-color"
+  - "palettes, 256-color"
+  - "icons, color"
+ms.assetid: 1506ed00-669b-4a21-b1a4-39b6a84a78bb
+caps.latest.revision: 14
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Using the 256-Color Palette (Image Editor for Icons)
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Using the 256-Color Palette (Image Editor for Icons)](https://docs.microsoft.com/cpp/windows/using-the-256-color-palette-image-editor-for-icons).  
+  
+  
+To draw with a selection from the 256-color palette, you need to select the colors from the Colors palette in the [Colors window](../windows/colors-window-image-editor-for-icons.md).  
+  
+### To choose a color from the 256-color palette for large icons  
+  
+1.  Select the large icon or cursor, or create a new large icon or cursor.  
+  
+2.  Choose a color from the 256 colors displayed in the **Colors** palette in the **Colors** window.  
+  
+     The color selected will become the current color in the colors palette in the **Colors** window.  
+  
+    > [!NOTE]
+    >  The initial palette used for 256-color images matches the palette returned by the CreateHalftonePalette Windows API. All icons intended for the Windows shell should use this palette to prevent flicker during palette realization.  
+  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+  
+ Requirements  
+  
+ None  
+  
+## See Also  
+ [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
+ [Creating a 256-Color Icon or Cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md)   
+ [Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
+
+
+
+
+
+
+
+
+

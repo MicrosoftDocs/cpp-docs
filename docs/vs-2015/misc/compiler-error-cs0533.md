@@ -1,0 +1,55 @@
+---
+title: "Compiler Error CS0533 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0533"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0533"
+ms.assetid: f8b38c5a-d365-4081-a101-6282bdd19069
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0533
+'derived-class member' hides inherited abstract member 'base-class member'  
+  
+ A base [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690) method is hidden. Check the syntax of your declaration to see if it is correct.  
+  
+ For more information, see [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5).  
+  
+ The following sample generates CS0533:  
+  
+```  
+// CS0533.cs  
+namespace x  
+{  
+   abstract public class a  
+   {  
+      abstract public void f();  
+   }  
+  
+   abstract public class b : a  
+   {  
+      new abstract public void f();   // CS0533  
+      // try the following lines instead  
+      // override public void f()  
+      // {  
+      // }  
+  
+      public static void Main()  
+      {  
+      }  
+   }  
+}  
+```

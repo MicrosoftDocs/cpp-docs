@@ -1,0 +1,50 @@
+// NVC_MFC_AxLoc.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (NVC_MFC_AxLoc.tlb) that will become a resource in
+// NVC_MFC_AxLoc.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+// <Snippet1>
+[ uuid(F8068FFB-9F76-4471-BD76-F3F7ADCD05BB), version(1.0), lcid(0x040c),
+  control ]
+library NVC_MFC_AxLocLib
+// </Snippet1>
+{
+   importlib(STDOLE_TLB);
+
+   //  Primary dispatch interface for CMyAxLocCtrl
+
+   [ uuid(6FFE13B8-00E5-4549-AC01-76BBA495D572),
+     helpstring("Dispatch interface for MyAxLoc Control")]
+   dispinterface _DNVC_MFC_AxLoc
+   {
+      properties:
+      methods:
+   };
+
+   //  Event dispatch interface for CMyAxLocCtrl
+
+   [ uuid(60441EA8-F747-4ECF-AED4-3CB566B386BA),
+     helpstring("Event interface for MyAxLoc Control") ]
+   dispinterface _DNVC_MFC_AxLocEvents
+   {
+      properties:
+         //  Event interface has no properties
+
+      methods:
+   };
+
+   //  Class information for CMyAxLocCtrl
+
+   [ uuid(1ACBA89F-FB9B-450C-8699-C68DB4EEC8DF),
+     helpstring("MyAxLoc Control"), control ]
+   coclass NVC_MFC_AxLoc
+   {
+      [default] dispinterface _DNVC_MFC_AxLoc;
+      [default, source] dispinterface _DNVC_MFC_AxLocEvents;
+   };
+
+};

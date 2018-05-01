@@ -1,0 +1,94 @@
+---
+title: "auto_gcroot::operator auto_gcroot | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+f1_keywords: 
+  - "auto_gcroot.operator auto_gcroot"
+  - "auto_gcroot::operator auto_gcroot"
+  - "msclr.auto_gcroot.operator auto_gcroot"
+  - "msclr::auto_gcroot::operator auto_gcroot"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "auto_gcroot operator"
+ms.assetid: 43e3f27a-9f68-444f-9149-a9282a9b935a
+caps.latest.revision: 14
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# auto_gcroot::operator auto_gcroot
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [auto_gcroot::operator auto_gcroot](https://docs.microsoft.com/cpp/dotnet/auto-gcroot-operator-auto-gcroot).  
+  
+  
+Type-cast operator between `auto_gcroot` and compatible types.  
+  
+## Syntax  
+  
+```  
+template<typename _other_type>  
+operator auto_gcroot<_other_type>();  
+```  
+  
+## Return Value  
+ The current `auto_gcroot` cast to `auto_gcroot<_other_type>`.  
+  
+## Example  
+  
+```  
+// msl_auto_gcroot_op_auto_gcroot.cpp  
+// compile with: /clr  
+#include <msclr\auto_gcroot.h>  
+  
+using namespace System;  
+using namespace msclr;  
+  
+ref class ClassA {  
+protected:     
+   String^ m_s;  
+public:  
+   ClassA( String^ s ) : m_s( s ) {}  
+  
+   virtual void PrintHello() {  
+      Console::WriteLine( "Hello from {0} A!", m_s );  
+   }  
+};  
+  
+ref class ClassB : ClassA {  
+public:  
+   ClassB( String ^ s) : ClassA( s ) {}  
+   virtual void PrintHello() new {  
+      Console::WriteLine( "Hello from {0} B!", m_s );  
+   }  
+};  
+  
+int main() {  
+   auto_gcroot<ClassB^> b = gcnew ClassB("first");  
+   b->PrintHello();  
+   auto_gcroot<ClassA^> a = (auto_gcroot<ClassA^>)b;  
+   a->PrintHello();  
+}  
+```  
+  
+```Output  
+Hello from first B!  
+Hello from first A!  
+```  
+  
+## Requirements  
+ **Header file** \<msclr\auto_gcroot.h>  
+  
+ **Namespace** msclr  
+  
+## See Also  
+ [auto_gcroot Members](../dotnet/auto-gcroot-members.md)
+

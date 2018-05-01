@@ -1,0 +1,33 @@
+---
+title: "Compiler Error C2692 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2692"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2692"
+ms.assetid: 02ade3b4-b757-448b-b065-d7d71bc3f441
+caps.latest.revision: 14
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C2692
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C2692](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c2692).  
+  
+  
+function_name' : fully prototyped functions required in C compiler with the '/clr' option  
+  
+ When compiling for .NET managed code, the C compiler requires ANSI function declarations. In addition, if a function takes no parameters, it must explicitly declare `void` as the parameter type.
+

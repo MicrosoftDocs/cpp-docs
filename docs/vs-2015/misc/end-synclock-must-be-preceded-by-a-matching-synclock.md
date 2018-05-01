@@ -1,0 +1,33 @@
+---
+title: "&#39;End SyncLock&#39; must be preceded by a matching &#39;SyncLock&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30674"
+  - "bc30674"
+helpviewer_keywords: 
+  - "BC30674"
+ms.assetid: 2d473b0b-ca9e-43b5-9bcb-b00766bc90a4
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;End SyncLock&#39; must be preceded by a matching &#39;SyncLock&#39;
+`SyncLock` blocks begin with the `SyncLock` keyword and end with the `End``SyncLock` construct.  
+  
+ **Error ID:** BC30674  
+  
+### To correct this error  
+  
+-   Make sure that the `SyncLock` block begins with a `SyncLock` statement.  
+  
+## See Also  
+ [SyncLock Statement](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

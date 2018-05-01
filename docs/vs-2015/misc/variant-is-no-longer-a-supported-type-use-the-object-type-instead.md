@@ -1,0 +1,34 @@
+---
+title: "&#39;Variant&#39; is no longer a supported type; use the &#39;Object&#39; type instead | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30804"
+  - "vbc30804"
+helpviewer_keywords: 
+  - "BC30804"
+ms.assetid: 89835f93-6f51-4193-b2dd-1454b7094996
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Variant&#39; is no longer a supported type; use the &#39;Object&#39; type instead
+The `Object` data type replaces `Variant`.  
+  
+ **Error ID:** BC30804  
+  
+### To correct this error  
+  
+-   Declare item as `Object`.  
+  
+## See Also  
+ [Object Data Type](http://msdn.microsoft.com/library/61ea4a7c-3b3d-48d4-adc4-eacfa91779b2)   
+ [Data Type Changes in Visual Basic](http://msdn.microsoft.com/en-us/0aca9f54-7231-49a5-ab26-a68ca79d08f3)

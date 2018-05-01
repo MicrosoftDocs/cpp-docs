@@ -1,0 +1,70 @@
+---
+title: "Compiler Error C3160 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3160"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3160"
+ms.assetid: a250c433-8adf-43b9-8dee-c3794e09b0a5
+caps.latest.revision: 11
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C3160
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C3160](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c3160).  
+  
+  
+pointer' : a data member of a managed or WinRT class cannot have this type  
+  
+ Interior garbage collection pointers may point to the interior of a managed or WinRT class. Because they are slower than whole-object pointers and require special handling by the garbage collector, you cannot declare interior managed pointers as members of a class.  
+  
+ The following sample generates C3160:  
+  
+```  
+// C3160.cpp  
+// compile with: /clr  
+ref struct A {  
+   // cannot create interior pointers inside a class  
+   interior_ptr<int> pg;   // C3160  
+   int g;   // OK  
+   int* pg2;   // OK  
+};  
+  
+int main() {  
+   interior_ptr<int> pg2;   // OK  
+}  
+```  
+  
+ **Managed Extensions for C++**  
+  
+ The following sample generates C3160:  
+  
+```  
+// C3160b.cpp  
+// compile with: /clr:oldSyntax  
+  
+__gc struct A {  
+   // cannot create interior pointers inside a class  
+   int __gc* pg; // C3160  
+   int g;   // OK  
+   int __nogc *pg2;   // OK  
+};  
+  
+int main() {  
+   int __gc* pg2;   // OK  
+}  
+```
+

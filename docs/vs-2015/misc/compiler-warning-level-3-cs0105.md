@@ -1,0 +1,43 @@
+---
+title: "Compiler Warning (level 3) CS0105 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0105"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0105"
+ms.assetid: 96d1d5d7-79e9-424f-bbde-f87e88b70003
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Warning (level 3) CS0105
+The using directive for 'namespace' appeared previously in this namespace  
+  
+ A [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
+  
+ The following sample generates CS0105:  
+  
+```  
+// CS0105.cs  
+// compile with: /W:3  
+using System;  
+using System;   // CS0105  
+  
+public class a  
+{  
+   public static void Main()  
+   {  
+   }  
+}  
+```

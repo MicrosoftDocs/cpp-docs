@@ -1,0 +1,38 @@
+---
+title: "Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is not a field or property | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30990"
+  - "vbc30990"
+helpviewer_keywords: 
+  - "BC30990"
+ms.assetid: 3be2c135-20f6-49b2-a324-d213cfdf9ee3
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is not a field or property
+An object initializer list cannot include shared members, constants, or method calls. The members in the initializer list must be fields or properties, and property members cannot require arguments.  
+  
+ **Error ID:** BC30990  
+  
+### To correct this error  
+  
+-   Remove from the object initializer list all shared members, constants, method calls, or properties that have parameters.  
+  
+## See Also  
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
+ [NOT IN BUILD: Shared Members in Visual Basic](http://msdn.microsoft.com/en-us/dbc3783f-83a2-4225-995d-c2d6d025663d)   
+ [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)   
+ [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
+ [NotInBuild:Object Members](http://msdn.microsoft.com/en-us/dfc2cc12-0e66-44fb-a78e-14f931db2309)   
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)

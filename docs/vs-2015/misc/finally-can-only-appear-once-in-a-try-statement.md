@@ -1,0 +1,34 @@
+---
+title: "&#39;Finally&#39; can only appear once in a &#39;Try&#39; statement | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30381"
+  - "bc30381"
+helpviewer_keywords: 
+  - "BC30381"
+ms.assetid: 4fa1d5fa-c54a-4f8c-9d66-9dbcc38c53bf
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Finally&#39; can only appear once in a &#39;Try&#39; statement
+`Finally` is used to complete a `Try...Catch...Finally` block; hence it can only appear once at the end of the block.  
+  
+ **Error ID:** BC30381  
+  
+### To correct this error  
+  
+1.  Locate and remove the redundant `Finally`.  
+  
+## See Also  
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

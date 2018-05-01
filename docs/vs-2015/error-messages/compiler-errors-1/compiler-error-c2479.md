@@ -1,0 +1,43 @@
+---
+title: "Compiler Error C2479 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2479"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2479"
+ms.assetid: c74c7869-e65b-4ca1-b6fa-eb39fed4458a
+caps.latest.revision: 11
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C2479
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C2479](https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/compiler-error-c2479).  
+  
+  
+identifier' : 'allocate( )' is only valid for data items of static extent  
+  
+ The `__declspec( allocate())` syntax can be used for static data only.  
+  
+ The following sample generates C2479:  
+  
+```  
+// C2479.cpp  
+// compile with: /c  
+#pragma section("mycode", read)  
+static __declspec(allocate("mycode")) void DoNothing() {}   // C2479  
+__declspec(allocate("mycode"))  int i = 0;   // OK  
+```
+

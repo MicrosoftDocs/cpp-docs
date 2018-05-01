@@ -1,0 +1,438 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.rc"" // Standard components\r\n"
+    "#include ""afxprint.rc"" // Printing support\r\n"
+    "#include ""afxolecl.rc"" // OLE Client support\r\n"
+    "#include ""afxolesv.rc"" // OLE Server support\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "RES\\OCLIENT.ICO"
+IDR_OCLIENTTYPE         ICON                    "RES\\OCLIENT.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About MFC Container...",     ID_APP_ABOUT
+    END
+END
+
+IDR_OCLIENTTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM "Paste &Link",                 ID_EDIT_PASTE_LINK
+        MENUITEM "C&lone",                      ID_EDIT_CLONE
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM "Delete &All",                 ID_EDIT_CLEAR_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Change &Icon...",             ID_OLE_EDIT_CHANGE_ICON
+        MENUITEM "Properties...\tAlt+Enter",    ID_OLE_EDIT_PROPERTIES
+        MENUITEM "Change Source...",            ID_OLE_CHANGE_SOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Object"
+    BEGIN
+        MENUITEM "&Display Content",            ID_OBJECT_DISPLAYCONTENT
+        MENUITEM "Display as &Icon",            ID_OBJECT_DISPLAYASICON
+        MENUITEM "&Reset Size",                 ID_OBJECT_RESETSIZE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About MFC Container...",     ID_APP_ABOUT
+    END
+END
+
+ID_OBJECT_POPUP_MENU MENU 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM "&Reset Size",                 ID_OBJECT_RESETSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               ID_OLE_EDIT_PROPERTIES
+        MENUITEM "Change Source...",            ID_OLE_CHANGE_SOURCE
+    END
+END
+
+IDR_OCLIENTTYPE_CNTR_IP MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_INPLACE,      VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+IDR_OCLIENTTYPE_CNTR_IP ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_INPLACE,      VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+IDR_OCLIENTTYPE ACCELERATORS 
+BEGIN
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 217, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OCLIENT"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MFC Container Version 7.0",IDC_STATIC,40,10,119,8
+    LTEXT           "© 1992 - 2001 Microsoft Corporation.  All rights reserved.",
+                    IDC_STATIC,40,25,123,20
+    DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "RES\\TOOLBAR.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_BUSY                "Server is still busy."
+    IDS_PRIVATE_CF_DESCR    "MFC 4.0 Container Object\nan MFC 4.0 Container Object"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MFC Container"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_CLIPBOARD_CUT_FAILED "Cut to clipboard failed."
+    IDP_CLIPBOARD_COPY_FAILED "Copy to clipboard failed."
+    IDP_GET_FROM_CLIPBOARD_FAILED "Failed to paste object from clipboard."
+    IDP_FAILED_TO_CREATE    "Failed to create object."
+    IDP_SAVEINCOMPLETE      "Document is incomplete, save anyway?"
+    IDP_CLIPBOARD_ZERO_SIZE "Item on the clipboard has zero size"
+    IDP_AFXOLEINIT_FAILED   "Failed to initialize Object Linking and Embedding"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "MFC Container"
+    IDR_OCLIENTTYPE         "\nCntr\nContainer Document\nContainer Files (*.ocf)\n.ocf\nContainer.Document.4\nMFC 4.0 Container Document\nOCLI\nContainer Files"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document"
+    ID_FILE_OPEN            "Open an existing document"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "List Help topics"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and puts it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and puts it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source"
+    ID_EDIT_PASTE_SPECIAL   "Inserts Clipboard contents as a linked object,embedded object, or other format"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects"
+    ID_OLE_EDIT_CONVERT     "Convert selected object between types"
+    ID_OLE_EDIT_CHANGE_ICON "Change the icon displayed for the current selection"
+    ID_OLE_EDIT_PROPERTIES  "Change properties of the selected OLE object"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_TRACK_SIZE    "Toggle whether client object tracks server size or not."
+    ID_OBJECT_DISPLAYCONTENT "Display the current selection as content"
+    ID_OBJECT_DISPLAYASICON "Display the current selection as an icon"
+    ID_OBJECT_CHANGEICON    "Change object's iconic representation"
+    ID_EDIT_CLONE           "Create a copy of the current selection"
+    ID_OBJECT_RESETSIZE     "Set object scaling to 100%"
+    ID_OLE_CHANGE_SOURCE    "Change source of selected link object"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "afxres.rc" // Standard components
+#include "afxprint.rc" // Printing support
+#include "afxolecl.rc" // OLE Client support
+#include "afxolesv.rc" // OLE Server support
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

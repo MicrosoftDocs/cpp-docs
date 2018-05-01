@@ -1,0 +1,47 @@
+---
+title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to a class that is generic or nested inside a generic type | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31527"
+  - "bc31527"
+helpviewer_keywords: 
+  - "BC31527"
+ms.assetid: ea125bff-d020-4933-b277-6e24943eea88
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to a class that is generic or nested inside a generic type
+A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but it is either generic or contained in a generic class or structure.  
+  
+ To be eligible for COM interop, a .NET Framework class must satisfy the following requirements:  
+  
+-   It must be `Public`, all its containers must be `Public`, and it must expose at least one `Public` member.  
+  
+-   It must not be *abstract*, that is, it must not be declared with `MustInherit`.  
+  
+-   It must not be generic or be declared within a generic container type.  
+  
+ **Error ID:** BC31527  
+  
+### To correct this error  
+  
+-   Change the declaration of the class so that it is not generic, and make sure its containing element is not generic.  
+  
+     -or-  
+  
+-   If the class or its containing element must be generic, remove <xref:Microsoft.VisualBasic.ComClassAttribute> from the class declaration. You cannot expose it to COM.  
+  
+## See Also  
+ <xref:Microsoft.VisualBasic.ComClassAttribute>   
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)

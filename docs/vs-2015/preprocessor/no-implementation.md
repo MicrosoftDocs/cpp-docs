@@ -1,0 +1,52 @@
+---
+title: "no_implementation | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "no_implementation"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "no_implementation attribute"
+ms.assetid: bdc67785-e131-409c-87bc-f4d2f4abb07b
+caps.latest.revision: 6
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# no_implementation
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [no_implementation](https://docs.microsoft.com/cpp/preprocessor/no-implementation).  
+  
+**C++ Specific**  
+  
+ Suppresses the generation of the .tli header, which contains the implementations of the wrapper member functions.  
+  
+## Syntax  
+  
+```  
+no_implementation  
+```  
+  
+## Remarks  
+ If this attribute is specified, the .tlh header, with the declarations to expose type-library items, will be generated without an `#include` statement to include the .tli header file.  
+  
+ This attribute is used in conjunction with [implementation_only](../preprocessor/implementation-only.md).  
+  
+ **END C++ Specific**  
+  
+## See Also  
+ [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+
+
+

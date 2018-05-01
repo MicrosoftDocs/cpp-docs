@@ -1,0 +1,37 @@
+---
+title: "&#39;End While&#39; must be preceded by a matching &#39;While&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30090"
+  - "bc30090"
+helpviewer_keywords: 
+  - "BC30090"
+ms.assetid: 302b26b8-8fa4-4e49-86f0-d7c49fec485f
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;End While&#39; must be preceded by a matching &#39;While&#39;
+An `End While` statement occurs without a corresponding `While` statement. `End While` must be preceded by a corresponding `While` statement.  
+  
+ **Error ID:** BC30090  
+  
+### To correct this error  
+  
+1.  If this `While` block is part of a set of nested `While` blocks, make sure each block is properly terminated.  
+  
+2.  Verify that other control structures within the `While` block are correctly terminated.  
+  
+3.  Ensure that this `While` block is correctly formatted.  
+  
+## See Also  
+ [While...End While Statement](http://msdn.microsoft.com/library/b931d1ce-e8ed-44d8-a13d-92a4f5458a1e)

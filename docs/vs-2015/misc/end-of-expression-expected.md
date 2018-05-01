@@ -1,0 +1,33 @@
+---
+title: "End of expression expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30710"
+  - "vbc30710"
+helpviewer_keywords: 
+  - "BC30710"
+ms.assetid: 72b29abc-675b-4a68-a466-0dca5b09b9b3
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# End of expression expected
+Extra characters were found at the end of an otherwise complete expression.  
+  
+ **Error ID:** BC30710  
+  
+### To correct this error  
+  
+-   Verify the syntax of the object or statement.  
+  
+## See Also  
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

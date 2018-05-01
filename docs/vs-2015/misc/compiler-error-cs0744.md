@@ -1,0 +1,63 @@
+---
+title: "Compiler Error CS0744 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0744"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0744"
+ms.assetid: 7ce430d6-737a-4103-9116-d9a4a69f8af3
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0744
+Expected contextual keyword 'equals'  
+  
+ The pattern for a `join` clause is `join`...`in`...`on`...`equals`, as shown in this example:  
+  
+```  
+var query = from x in array1  
+            join y in array2 on x equals y  
+            select x;  
+```  
+  
+### To correct this error  
+  
+1.  Add the `equals` keyword to the `join` clause.  
+  
+## Example  
+ The following code generates CS0744:  
+  
+```  
+// cs0744.cs  
+using System;  
+using System.Linq;  
+  
+public class C  
+{  
+    public static int Main()  
+    {  
+        int[] array1 = { 1, 2, 3 ,4, 5, 6,};  
+        int[] array2 = { 5, 6, 7, 8, 9 };  
+        var c = from x in array1  
+                join y in array2 on x y // CS0744  
+                select x;  
+        return 1;  
+    }  
+}  
+```  
+  
+## See Also  
+ [LINQ Query Expressions](http://msdn.microsoft.com/library/40638f19-fb46-4d26-a2d9-a383b48f5ed4)   
+ [join clause](http://msdn.microsoft.com/library/76e9df84-092c-41a6-9537-c3f1cbd7f0fb)

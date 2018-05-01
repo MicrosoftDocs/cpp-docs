@@ -1,0 +1,36 @@
+---
+title: "&#39;RemoveHandler&#39; definition missing for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31131"
+  - "vbc31131"
+helpviewer_keywords: 
+  - "BC31131"
+ms.assetid: 0ef68daf-b66e-4ecf-bf2c-dcacabd8aa3d
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;RemoveHandler&#39; definition missing for event &#39;&lt;eventname&gt;&#39;
+If an event is declared as `Custom`, it must supply a procedure for removing an event handler.  
+  
+ **Error ID:** BC31131  
+  
+### To correct this error  
+  
+1.  Include a `RemoveHandler` declaration between the `Custom Event` statement and the `End Event` statement.  
+  
+2.  Verify that other procedures within the event declaration are correctly terminated.  
+  
+## See Also  
+ [RemoveHandler Statement](http://msdn.microsoft.com/library/647cd825-e877-4910-b4f1-8d168beebe6a)   
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

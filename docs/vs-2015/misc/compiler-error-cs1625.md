@@ -1,0 +1,54 @@
+---
+title: "Compiler Error CS1625 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1625"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1625"
+ms.assetid: 0b25b7f9-a585-49b0-9ee6-4384e87fcea6
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1625
+Cannot yield in the body of a finally clause  
+  
+ A yield statement is not allowed in the body of a finally clause. To avoid this error, move the yield statement out of the finally clause.  
+  
+ The following sample generates CS1625:  
+  
+```  
+// CS1625.cs  
+using System.Collections;  
+  
+class C : IEnumerable  
+{  
+   public IEnumerator GetEnumerator()  
+   {  
+      try  
+      {  
+      }  
+      finally  
+      {  
+        yield return this;  // CS1625  
+      }  
+   }  
+}  
+  
+public class CMain  
+{  
+   public static void Main() { }  
+}  
+  
+```

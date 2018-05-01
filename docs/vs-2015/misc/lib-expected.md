@@ -1,0 +1,33 @@
+---
+title: "&#39;Lib&#39; expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30218"
+  - "vbc30218"
+helpviewer_keywords: 
+  - "BC30218"
+ms.assetid: 0a757d84-a3c4-4878-bd65-9e7be0b8d52b
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Lib&#39; expected
+A `Declare` statement specifies a library name without using the `Lib` keyword.  
+  
+ **Error ID:** BC30218  
+  
+### To correct this error  
+  
+-   Add the `Lib` keyword before the library name.  
+  
+## See Also  
+ [Declare Statement](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)

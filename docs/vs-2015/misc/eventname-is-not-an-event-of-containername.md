@@ -1,0 +1,36 @@
+---
+title: "&#39;&lt;eventname&gt;&#39; is not an event of &#39;&lt;containername&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30676"
+  - "bc30676"
+helpviewer_keywords: 
+  - "BC30676"
+ms.assetid: 16875ec2-94bd-45fd-9198-cc72772d4878
+caps.latest.revision: 12
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;eventname&gt;&#39; is not an event of &#39;&lt;containername&gt;&#39;
+The event specified is not declared for the object.  
+  
+ **Error ID:** BC30676  
+  
+### To correct this error  
+  
+1.  Check the spelling of the event's name.  
+  
+2.  Check that you are accessing the correct object. Use fully qualified references to the object or use the `Imports` statement to import the appropriate namespace if necessary.  
+  
+## See Also  
+ [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)   
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)

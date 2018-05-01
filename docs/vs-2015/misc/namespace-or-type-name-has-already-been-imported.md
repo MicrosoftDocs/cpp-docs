@@ -1,0 +1,33 @@
+---
+title: "Namespace or type &#39;&lt;name&gt;&#39; has already been imported | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31051"
+  - "bc31051"
+helpviewer_keywords: 
+  - "BC31051"
+ms.assetid: e10f9047-6de5-486c-9c6d-bcbad03f824c
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Namespace or type &#39;&lt;name&gt;&#39; has already been imported
+An attempt was made to import a namespace more than once.  
+  
+ **Error ID:** BC31051  
+  
+### To correct this error  
+  
+-   Remove redundant `Imports` statements.  
+  
+## See Also  
+ [Imports Statement (.NET Namespace and Type)](http://msdn.microsoft.com/library/7062f8aa-d890-4232-9eed-92836e13fb6e)

@@ -1,0 +1,42 @@
+---
+title: "Type parameter already declared with name &#39;&lt;typeparametername&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc32049"
+  - "bc32049"
+helpviewer_keywords: 
+  - "BC32049"
+ms.assetid: d7affad0-0c3d-4fce-a1c2-a17f65514471
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Type parameter already declared with name &#39;&lt;typeparametername&gt;&#39;
+A type parameter of a generic type is declared with the same name as another type parameter of that same generic type.  
+  
+ In the type parameter list of a generic type, each type parameter must have a name distinct from all of the following names:  
+  
+-   Every other type parameter in the same type parameter list,  
+  
+-   Every type parameter in the type parameter list of any containing generic type, and  
+  
+-   The name of the generic type itself.  
+  
+ **Error ID:** BC32049  
+  
+### To correct this error  
+  
+-   Rename the type parameter to be distinct from every name cited in the list on this Help page.  
+  
+## See Also  
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)

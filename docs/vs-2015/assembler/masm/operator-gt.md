@@ -1,0 +1,43 @@
+---
+title: "operator GT | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "operator GT"
+  - "GT"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator GT"
+  - "GT operator"
+ms.assetid: 48194297-7bf9-42f9-957a-e1a5b6d7be7c
+caps.latest.revision: 9
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# operator GT
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [operator GT](https://docs.microsoft.com/cpp/assembler/masm/operator-gt).  
+  
+  
+Returns true (–1) if *expression1* is greater than *expression2*, or returns false (0) if it is not.  
+  
+## Syntax  
+  
+```  
+  
+expression1 GT expression2  
+```  
+  
+## See Also  
+ [Operators Reference](../../assembler/masm/operators-reference.md)
+

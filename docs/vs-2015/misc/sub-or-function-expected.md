@@ -1,0 +1,33 @@
+---
+title: "&#39;Sub&#39; or &#39;Function&#39; expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30215"
+  - "bc30215"
+helpviewer_keywords: 
+  - "BC30215"
+ms.assetid: 013f4200-b3cf-4cd8-a235-15067ca773fc
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Sub&#39; or &#39;Function&#39; expected
+A `Declare` statement does not specify either `Sub` or `Function`. `Declare` identifies an external procedure and must specify which kind of procedure.  
+  
+ **Error ID:** BC30215  
+  
+### To correct this error  
+  
+-   Add either the `Sub` or `Function` keyword to the `Declare` statement.  
+  
+## See Also  
+ [Declare Statement](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)

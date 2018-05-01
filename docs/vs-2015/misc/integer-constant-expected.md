@@ -1,0 +1,35 @@
+---
+title: "Integer constant expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30204"
+  - "vbc30204"
+helpviewer_keywords: 
+  - "BC30204"
+ms.assetid: e8d2fe24-7e63-4c30-b022-3b0323f00f4e
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Integer constant expected
+An `#ExternalSource` directive occurs in which the second argument is not an integer literal. Only an integer literal is valid in this context. A named constant or enumeration member is not valid.  
+  
+ **Error ID:** BC30204  
+  
+### To correct this error  
+  
+1.  Use a named constant or enumeration member instead of a literal.  
+  
+2.  Supply an integer literal as the second argument to the `#ExternalSource` directive.  
+  
+## See Also  
+ [#ExternalSource Directive](http://msdn.microsoft.com/library/243bc6a2-34c3-4eeb-a776-9fd2bf988149)

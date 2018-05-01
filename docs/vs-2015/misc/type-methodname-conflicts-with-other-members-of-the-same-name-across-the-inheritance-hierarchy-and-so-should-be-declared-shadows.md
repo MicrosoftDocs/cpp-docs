@@ -1,0 +1,38 @@
+---
+title: "&lt;type&gt; &#39;&lt;methodname&gt;&#39; conflicts with other members of the same name across the inheritance hierarchy and so should be declared &#39;Shadows&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc42000"
+  - "bc42000"
+helpviewer_keywords: 
+  - "BC42000"
+ms.assetid: 3081635f-99a9-4e90-997f-82251144d80f
+caps.latest.revision: 12
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &lt;type&gt; &#39;&lt;methodname&gt;&#39; conflicts with other members of the same name across the inheritance hierarchy and so should be declared &#39;Shadows&#39;
+An interface inheriting from two or more interfaces defines a procedure with the same name as a procedure already defined in more than one of the base interfaces. The procedure in this interface should shadow one of the base interface procedures.  
+  
+ This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
+  
+ **Error ID:** BC42000  
+  
+### To correct this error  
+  
+-   If you intend to hide one of the base interface procedures, add the `Shadows` keyword to the new procedure declaration.  
+  
+-   If you do not intend to hide any of the base interface procedures, change the name of the new procedure.  
+  
+## See Also  
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)   
+ [Shadowing in Visual Basic](http://msdn.microsoft.com/library/54bb4c25-12c4-4181-b4a0-93546053964e)

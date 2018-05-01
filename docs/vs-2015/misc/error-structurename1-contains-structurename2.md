@@ -1,0 +1,33 @@
+---
+title: "&lt;error&gt;: &#39;&lt;structurename1&gt;&#39; contains &#39;&lt;structurename2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30293"
+  - "bc30293"
+helpviewer_keywords: 
+  - "BC30293"
+ms.assetid: c9d225e7-0627-4682-97f2-fd9c7be2842b
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &lt;error&gt;: &#39;&lt;structurename1&gt;&#39; contains &#39;&lt;structurename2&gt;&#39;
+A circular structure definition occurs when a structure designates itself as one of its own members.  
+  
+ **Error ID:** BC30293  
+  
+### To correct this error  
+  
+-   Change the name of the structure member.  
+  
+## See Also  
+ [Structures](http://msdn.microsoft.com/library/55e86462-5e99-4d33-8018-6d097ca491b2)

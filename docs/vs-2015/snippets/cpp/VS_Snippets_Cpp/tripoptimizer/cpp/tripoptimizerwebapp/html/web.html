@@ -1,0 +1,166 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+<html>
+<head>
+    <title>Bing Maps Trip Optimizer</title>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <link rel="stylesheet" type="text/css" href="/css/web.css" media="screen">
+    <script type="text/javascript" src="/js/web.js"></script>
+</head>
+<body onload="webContext.onLoad();" style="overflow: hidden">
+    <div id="outerFrame">
+        <div id="leftFrame" style="overflow-x: hidden">
+            <div id="taskHostTurns" style="height: 0px; visibility: hidden;">
+                <div>
+                    <span class="leftFrameTop"><a href="javascript:webContext.onEditRoute()">Edit route</a></span>
+                </div>
+                <div id="directions"></div>
+            </div>
+            <div id="taskHostWelcomeTask">
+                <p class="leftFrameTop" style="font-size: 150%">Bing Maps Trip Optimizer</p>
+                <div id="progressDiv" class="module" style="visibility: hidden">
+                    <p style="font-size: 100%">
+                        Optimizing your trip<span id="progressLabel"></span><a class="commandButton" id="cancelButton"
+                            href="javascript:webContext.onCancel()" style="background-color: #884022; color: white"
+                            title="Cancel this task and start over">Cancel</a>
+                    </p>
+                </div>
+                <div id="inputArea" class="module">
+                    <p style="font-size: 120%; margin-left: 10px; margin-right: 10px">
+                        Enter up to 25 locations for your trip. The first location that you specify will
+                        be the start and end points.
+                    </p>
+                    <div id="waypointsArea">
+                    </div>
+                    <div id="addToRoute">
+                        <a href="javascript:webContext.addWaypoint('')">Add destination</a>
+                    </div>
+                    <div class="elementContainer" style="display: table; margin-top: 0px; width: 100%">
+                        <div class="elementContainer" style="display: table-row">
+                            <a class="elementContainer commandButton" href="javascript:webContext.getDirections()" style="background-color: #ef9631;
+                                color: white; display: table-cell">Get Directions</a><a class="elementContainer commandButton"
+                                    style="display: table-cell" href="javascript:webContext.resetWaypoints()">Clear</a>
+                        </div>
+                        <div class="elementContainer" style="display: table-row">
+                            <a class="elementContainer commandButton" href="javascript:webContext.addDeliveryWaypoints()"
+                                style="background-color: #7092be; color: white; display: table-cell" title="Populates the route with a local delivery route">
+                                Delivery Demo</a><a class="elementContainer commandButton" href="javascript:webContext.addParkWaypoints()"
+                                    style="background-color: #224022; color: white; display: table-cell" title="Populates the route with interesting parks and destinations in the Pacific Northwest">
+                                    Parks Demo</a>
+                        </div>
+                    </div>
+                    <div class="elementContainer" style="margin-top: 20px">
+                        <select id="travelUnit">
+                            <option value="Miles">Miles</option>
+                            <option value="Kilometers">Km</option>
+                        </select>
+                        <select id="travelModeSelect">
+                            <option value="Driving">Driving</option>
+                            <option value="Walking">Walking</option>
+                        </select>
+                        <select id="optimizeSelect">
+                            <option value="distance">Minimize distance</option>
+                            <option value="time">Minimize time</option>
+                            <option value="timeWithTraffic">Avoid traffic</option>
+                        </select>
+                    </div>
+                    <div class="elementContainer">
+                        <hr />
+                        <div style="margin-top: 5px; margin-left: 5px; margin-bottom: -10px; font-size: 115%">
+                            Advanced Options:
+                        </div>
+                        <div style="float: left; width: 100%; margin-left: 20px; margin-top: 10px">
+                            <input type="checkbox" id="parallelProcessingCheckbox" style="border: none; background: #ffffff"
+                                checked="checked" />
+                            <label for="parallelProcessingCheckbox">Use parallel processing</label>
+                        </div>
+                        <ul>
+                            <li>
+                                <label for="alphaSelect" title="Pheromone influence">Alpha</label>
+                                <select id="alphaSelect" name="alphaSelect">
+                                    <option value="1.0">1.0</option>
+                                    <option value="0.9">0.9</option>
+                                    <option value="0.8">0.8</option>
+                                    <option value="0.7">0.7</option>
+                                    <option value="0.6">0.6</option>
+                                    <option value="0.5">0.5</option>
+                                    <option value="0.4">0.4</option>
+                                    <option value="0.3">0.3</option>
+                                    <option value="0.2">0.2</option>
+                                    <option value="0.1">0.1</option>
+                                    <option value="0.0">0.0</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="betaSelect" title="Distance influence">Beta</label>
+                                <select id="betaSelect" name="betaSelect">
+                                    <option value="1.0">1.0</option>
+                                    <option value="0.9">0.9</option>
+                                    <option value="0.8">0.8</option>
+                                    <option value="0.7">0.7</option>
+                                    <option value="0.6">0.6</option>
+                                    <option value="0.5">0.5</option>
+                                    <option value="0.4">0.4</option>
+                                    <option value="0.3">0.3</option>
+                                    <option value="0.2">0.2</option>
+                                    <option value="0.1">0.1</option>
+                                    <option value="0.0">0.0</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="rhoSelect" title="The rate of pheromone evaporation">Rho</label>
+                                <select id="rhoSelect" name="rhoSelect">
+                                    <option value="0.9">0.9</option>
+                                    <option value="0.8">0.8</option>
+                                    <option value="0.7">0.7</option>
+                                    <option value="0.6" selected="selected">0.6</option>
+                                    <option value="0.5">0.5</option>
+                                    <option value="0.4">0.4</option>
+                                    <option value="0.3">0.3</option>
+                                    <option value="0.2">0.2</option>
+                                    <option value="0.1">0.1</option>
+                                    <option value="0.0">0.0</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="iterationsText" style="font-size: 115%; margin-left: 5px" title="The number of iterations to perform in the simulation">
+                                    Iterations
+                                </label>
+                                <input type="text" id="iterationsText" maxlength="6" value="1000" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bingDevKey">
+            <p style="font-size: 110%; text-align: center; margin-right: 300px">
+                Please enter your Bing Maps developer key:
+            </p>
+            <div id="bingDevKeyInput">
+                <input id="bingMapsKeyInput" type="password" style="border: none; font-size: 125%;
+                    width: 100%" value="" />
+            </div>
+            <a class="commandButton" style="margin-right: 500px; margin-top: 10px; font-size: 125%;
+                background-color: #0080ff; color: white" href="javascript:webContext.onBingMapsKey()">OK
+            </a>
+        </div>
+        <div id="frameSep">
+        </div>
+        <div id="rightFrame">
+            <div id="mapDiv" style="position: relative; width: 100%; height: 100%">
+            </div>
+            <div id="progressStatus">
+                <p id="progressMessageText"></p>
+                <p id="errorMessageText" style="color: red"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

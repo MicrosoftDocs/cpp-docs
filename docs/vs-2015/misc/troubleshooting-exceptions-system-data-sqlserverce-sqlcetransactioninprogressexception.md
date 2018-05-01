@@ -1,0 +1,25 @@
+---
+title: "Troubleshooting Exceptions: System.Data.SqlServerCe.SqlCeTransactionInProgressException | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "SqlCeTransactionInProgressException exception"
+  - "System.Data.SqlServerCe.SqlCeTransactionInProgressException exception"
+ms.assetid: 5e2c8882-81fd-4398-8bdf-4b8d42de71eb
+caps.latest.revision: 9
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# Troubleshooting Exceptions: System.Data.SqlServerCe.SqlCeTransactionInProgressException
+A `System.Data.SqlServerCe.SqlCeTransactionInProgressException` exception occurs when an application attempts to modify a database while another transaction is in progress. For more information, see [SQL Server Compact 3.5 Class Library](http://go.microsoft.com/fwlink/?LinkID=102595).  
+  
+## See Also  
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

@@ -1,0 +1,51 @@
+---
+title: "Type argument inference failed for type parameter &#39;&lt;typeparametername&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc32051"
+  - "bc32051"
+helpviewer_keywords: 
+  - "BC32051"
+ms.assetid: a9c2a0ce-e225-4549-bfd8-d42df5d16bfd
+caps.latest.revision: 12
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Type argument inference failed for type parameter &#39;&lt;typeparametername&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39;
+Type argument inference failed for type parameter '\<typeparametername>' of '\<genericproceduresignature>'. Type argument could not be inferred from the argument passed to parameter '\<parametername>'.  
+  
+ A generic procedure is called without supplying any type arguments, and the compiler cannot infer the type to pass to one of the parameters.  
+  
+ Normally, when you call a generic procedure, you supply a type argument for each type parameter that the generic procedure defines. If you do not supply any type arguments, then the compiler attempts to infer the types to be passed to the type parameters. If the context of the call provides conflicting data type information for a type parameter, then the type inference fails.  
+  
+ The following code can generate this error.  
+  
+```  
+Public Sub doSomething(Of t)(ByVal arg1 As t(), ByVal arg2 As t)  
+End Sub  
+Call doSomething(6, 42)  
+```  
+  
+ In the preceding example, the compiler infers type `Integer` for `t` based on the value of 42 passed to `arg2`. However, that inference would require `arg1` to be of type `Integer()`, that is, an array of `Integer`, and the value 6 passed to `arg1` does not match that type.  
+  
+ **Error ID:** BC32051  
+  
+### To correct this error  
+  
+-   Supply type arguments to the generic procedure, so that the compiler does not have to infer them.  
+  
+-   Supply normal arguments with types that match those of the type arguments.  
+  
+## See Also  
+ [Generic Types in Visual Basic](http://msdn.microsoft.com/library/89f771d9-ecbb-4737-88b8-116b63c6cf4d)   
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)   
+ [Type List](http://msdn.microsoft.com/library/56db947a-2ae8-40f2-a70a-960764e9d0db)

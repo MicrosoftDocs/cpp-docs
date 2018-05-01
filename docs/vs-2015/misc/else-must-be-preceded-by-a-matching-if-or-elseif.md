@@ -1,0 +1,37 @@
+---
+title: "&#39;Else&#39; must be preceded by a matching &#39;If&#39; or &#39;ElseIf&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30086"
+  - "vbc30086"
+helpviewer_keywords: 
+  - "BC30086"
+ms.assetid: 5e76b3c6-571f-4a6f-b524-26150cb6e986
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Else&#39; must be preceded by a matching &#39;If&#39; or &#39;ElseIf&#39;
+An `Else` statement occurs without a corresponding `If` statement. `Else` must be preceded by an `If` statement.  
+  
+ **Error ID:** BC30086  
+  
+### To correct this error  
+  
+1.  If this `If` block is part of a set of nested `If` blocks, make sure each block is properly terminated.  
+  
+2.  Verify that other control structures within the `If` block are correctly terminated.  
+  
+3.  Ensure that this `If` block is correctly formatted.  
+  
+## See Also  
+ [If...Then...Else Statement](http://msdn.microsoft.com/library/790068a2-1307-4e28-8a72-be5ebda099e9)

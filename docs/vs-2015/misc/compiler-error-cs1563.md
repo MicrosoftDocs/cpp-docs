@@ -1,0 +1,27 @@
+---
+title: "Compiler Error CS1563 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1563"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1563"
+ms.assetid: 67f84cd5-9209-43d6-b642-3628ef84ce4c
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1563
+Output 'output file' does not have any source files  
+  
+ The [/out](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) compiler option was specified, but no source code files follow. You should either not use **/out**, or you should specify the source code files following **/out**.

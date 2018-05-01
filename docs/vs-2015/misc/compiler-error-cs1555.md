@@ -1,0 +1,27 @@
+---
+title: "Compiler Error CS1555 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1555"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1555"
+ms.assetid: 1919c8b8-d72c-44af-91d0-674ccde77c3f
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1555
+Could not find 'class' specified for Main method  
+  
+ A class was specified to the [/main](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) compiler option, but the class name was not found in the source code.

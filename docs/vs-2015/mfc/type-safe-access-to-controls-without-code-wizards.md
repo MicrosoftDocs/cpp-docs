@@ -1,0 +1,44 @@
+---
+title: "Type-Safe Access to Controls Without Code Wizards | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "dialog boxes, accessing controls"
+  - "dialog box controls, accessing"
+ms.assetid: 325b4927-d49b-42b4-8e0b-fc84f31fb059
+caps.latest.revision: 14
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Type-Safe Access to Controls Without Code Wizards
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Type-Safe Access to Controls Without Code Wizards](https://docs.microsoft.com/cpp/mfc/type-safe-access-to-controls-without-code-wizards).  
+  
+  
+The first approach to creating type-safe access to controls uses an inline member function to cast the return type of class `CWnd`'s `GetDlgItem` member function to the appropriate C++ control type, as in this example:  
+  
+ [!code-cpp[NVC_MFCControlLadenDialog#50](../snippets/cpp/VS_Snippets_Cpp/NVC_MFCControlLadenDialog/Cpp/MFCControlLadenDialogDlg.cpp#50)]  
+  
+ You can then use this member function to access the control in a type-safe manner with code similar to the following:  
+  
+ [!code-cpp[NVC_MFCControlLadenDialog#51](../snippets/cpp/VS_Snippets_Cpp/NVC_MFCControlLadenDialog/Cpp/MFCControlLadenDialogDlg.cpp#51)]  
+  
+## See Also  
+ [Type-Safe Access to Controls in a Dialog Box](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)   
+ [Type-Safe Access to Controls With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)
+
+
+
+
+

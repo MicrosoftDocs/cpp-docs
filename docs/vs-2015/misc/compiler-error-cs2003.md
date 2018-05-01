@@ -1,0 +1,29 @@
+---
+title: "Compiler Error CS2003 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS2003"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS2003"
+ms.assetid: 87ce44c8-ed0f-40d1-8c13-8edb998fabb8
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS2003
+Response file 'file' included multiple times  
+  
+ A response file was passed to the compiler more than once. A response file can only be passed to the compiler once per output file.  
+  
+ For more on response files, see [@ (Specify Response File)](http://msdn.microsoft.com/library/dda4fa9f-a02c-400f-8b6a-d58834e13d7f).

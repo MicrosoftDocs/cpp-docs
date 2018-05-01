@@ -1,0 +1,34 @@
+---
+title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a Sub, Function, or Operator with a non-empty body | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31522"
+  - "vbc31522"
+helpviewer_keywords: 
+  - "BC31522"
+ms.assetid: 9548cf98-8a13-4f09-b6b5-2f57273c1571
+caps.latest.revision: 10
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a Sub, Function, or Operator with a non-empty body
+The `DllImportAttribute` attribute was applied to a `Sub`, `Function`, or `Operator` that is not empty.  
+  
+ **Error ID:** BC31522  
+  
+### To correct this error  
+  
+-   Remove all code from the `Sub`, `Function`, or `Operator` to use this attribute.  
+  
+## See Also  
+ <xref:System.Runtime.InteropServices.DllImportAttribute>   
+ [Declare Statement](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)

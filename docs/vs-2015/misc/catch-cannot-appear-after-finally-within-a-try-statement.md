@@ -1,0 +1,34 @@
+---
+title: "&#39;Catch&#39; cannot appear after &#39;Finally&#39; within a &#39;Try&#39; statement | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30379"
+  - "bc30379"
+helpviewer_keywords: 
+  - "BC30379"
+ms.assetid: 33d1278b-cf10-4c66-aaf8-08a4372f370b
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Catch&#39; cannot appear after &#39;Finally&#39; within a &#39;Try&#39; statement
+A `Catch` statement appears in the code after the `Finally` ending a `Try` statement block. `Catch` must appear within a `Try...Catch...Finally` statement block.  
+  
+ **Error ID:** BC30379  
+  
+### To correct this error  
+  
+1.  Move the `Catch` statement to a more appropriate place in the code.  
+  
+## See Also  
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

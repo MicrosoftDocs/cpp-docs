@@ -1,0 +1,56 @@
+---
+title: "auto_gcroot Members | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+dev_langs: 
+  - "C++"
+ms.assetid: fb51ff14-a497-4f7a-8d7e-c3cfcaf9f8df
+caps.latest.revision: 7
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# auto_gcroot Members
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [auto_gcroot Members](https://docs.microsoft.com/cpp/dotnet/auto-gcroot-members).  
+  
+  
+Members of `auto_gcroot`.  
+  
+## In This Section  
+ [auto_gcroot::auto_gcroot](../dotnet/auto-gcroot-auto-gcroot.md)  
+  
+ [auto_gcroot::~auto_gcroot](../dotnet/auto-gcroot-tilde-auto-gcroot.md)  
+  
+ [auto_gcroot::attach](../dotnet/auto-gcroot-attach.md)  
+  
+ [auto_gcroot::get](../dotnet/auto-gcroot-get.md)  
+  
+ [auto_gcroot::release](../dotnet/auto-gcroot-release.md)  
+  
+ [auto_gcroot::reset](../dotnet/auto-gcroot-reset.md)  
+  
+ [auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)  
+  
+ [auto_gcroot::operator=](../dotnet/auto-gcroot-operator-assign.md)  
+  
+ [auto_gcroot::operator->](../dotnet/auto-gcroot-operator-arrow.md)  
+  
+ [auto_gcroot::operator!](../dotnet/auto-gcroot-operator-logical-not.md)  
+  
+ [auto_gcroot::operator auto_gcroot](../dotnet/auto-gcroot-operator-auto-gcroot.md)  
+  
+ [auto_gcroot::operator bool](../dotnet/auto-gcroot-operator-bool.md)  
+  
+## See Also  
+ [auto_gcroot Class](../dotnet/auto-gcroot-class.md)   
+ [auto_gcroot](../dotnet/auto-gcroot.md)
+

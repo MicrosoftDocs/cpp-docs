@@ -1,0 +1,45 @@
+---
+title: "How to: Use GetGlobalService | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "services, GetGlobalService"
+ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
+caps.latest.revision: 14
+manager: "douge"
+---
+# How to: Use GetGlobalService
+Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](http://msdn.microsoft.com/library/001551da-4847-4f59-a0b2-fcd327d7f5ca).  
+  
+ You can get most [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] services by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> relies on a cached service provider that is initialized the first time any VSPackage derived from <xref:Microsoft.VisualStudio.Shell.Package> is sited. You must guarantee that this condition is met, or else be prepared for a null service.  
+  
+ Fortunately, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> works correctly most of the time.  
+  
+-   If a VSPackage provides a service known only to another VSPackage, the VSPackage requesting the service is sited before the VSPackage providing the service is loaded.  
+  
+-   If a tool window is created by a VSPackage, the VSPackage is sited before the tool window is created.  
+  
+-   If a control container is hosted by a tool window created by a VSPackage, the VSPackage is sited before the control container is created.  
+  
+### To get a service from within a tool window or control container  
+  
+-   Insert this code in the constructor, tool window, or control container:  
+  
+     [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
+     [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  
+  
+     This code obtains an SVsActivityLog service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](http://msdn.microsoft.com/library/bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd).  
+  
+## See Also  
+ [How to: Troubleshoot Services](http://msdn.microsoft.com/library/001551da-4847-4f59-a0b2-fcd327d7f5ca)   
+ [Using and Providing Services](http://msdn.microsoft.com/library/c0b415ba-b825-4da0-9faf-8a60a663e302)   
+ [Service Essentials](http://msdn.microsoft.com/library/fbe84ad9-efe1-48b1-aba3-b50b90424d47)

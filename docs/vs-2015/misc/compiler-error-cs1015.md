@@ -1,0 +1,46 @@
+---
+title: "Compiler Error CS1015 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1015"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1015"
+ms.assetid: 53179feb-e8be-41e0-bb0b-f7879e9fa613
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1015
+An object, string, or class type expected  
+  
+ An attempt was made to pass a predefined data type into a [catch](http://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438) block. Only data types that derive from <xref:System.Exception?displayProperty=fullName> can be passed into a `catch` block. For more information on exceptions, see [Exception Handling Statements](http://msdn.microsoft.com/library/6d0323a3-3164-411c-9b84-a3606bd0e13c).  
+  
+## Example  
+ The following sample generates CS1015:  
+  
+```  
+// CS1015.cs  
+class Sample  
+{  
+    static void Main()  
+    {  
+        try   
+        {  
+        }  
+        catch(int)   // CS1015, int is not derived from System.Exception  
+        {  
+        }  
+    }  
+}  
+```

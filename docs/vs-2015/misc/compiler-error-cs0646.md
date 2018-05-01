@@ -1,0 +1,75 @@
+---
+title: "Compiler Error CS0646 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0646"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0646"
+ms.assetid: 48ea306f-b4a0-4988-8d2b-ca9d38e9bdad
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0646
+Cannot specify the DefaultMember attribute on a type containing an indexer  
+  
+ If a class or other type specifies **System.Reflection.DefaultMemberAttribute**, it cannot contain an indexer. For more information, see [Properties](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8).  
+  
+ The following sample generates CS0646:  
+  
+```  
+// CS0646.cs  
+// compile with: /target:library  
+[System.Reflection.DefaultMemberAttribute("x")]   // CS0646  
+class MyClass  
+{  
+   public int this[int index]   // an indexer  
+   {  
+      get  
+      {  
+         return 0;  
+      }  
+   }  
+  
+   public int x = 0;  
+}  
+  
+// OK  
+[System.Reflection.DefaultMemberAttribute("x")]  
+class MyClass2  
+{  
+   public int prop  
+   {  
+      get  
+      {  
+         return 0;  
+      }  
+   }  
+  
+   public int x = 0;  
+}  
+  
+class MyClass3  
+{  
+   public int this[int index]   // an indexer  
+   {  
+      get  
+      {  
+         return 0;  
+      }  
+   }  
+  
+   public int x = 0;  
+}  
+```

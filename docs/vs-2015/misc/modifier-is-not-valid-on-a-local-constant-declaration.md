@@ -1,0 +1,33 @@
+---
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a local constant declaration | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30246"
+  - "vbc30246"
+helpviewer_keywords: 
+  - "BC30246"
+ms.assetid: 1a4a8570-2f04-4a8f-a110-47d97448fb7a
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;modifier&gt;&#39; is not valid on a local constant declaration
+A `Const` statement inside a procedure contains an invalid keyword, such as `Overloads`.  
+  
+ **Error ID:** BC30246  
+  
+### To correct this error  
+  
+1.  Remove the invalid keyword from the `Const` statement.  
+  
+## See Also  
+ [Const Statement](http://msdn.microsoft.com/library/495b318d-b7c5-4198-94f8-0790a541b07a)

@@ -1,0 +1,47 @@
+---
+title: "Compiler Error CS0515 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0515"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0515"
+ms.assetid: 0f8c0253-218d-4c21-b22c-fa5802ba4e7f
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0515
+'function' : access modifiers are not allowed on static constructors  
+  
+ A static constructor cannot have an [access modifier](http://msdn.microsoft.com/library/c96691dd-b357-49ec-b5ae-03ca214fadfb).  
+  
+## Example  
+ The following sample generates CS0515:  
+  
+```  
+// CS0515.cs  
+public class Clx  
+{  
+    public static void Main()  
+    {  
+    }  
+}  
+  
+public class Clz  
+{  
+    public static Clz()   // CS0515, remove public keyword  
+    {  
+    }  
+}  
+```

@@ -1,0 +1,43 @@
+---
+title: "Compiler Error CS1575 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1575"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1575"
+ms.assetid: 76a9c57c-8f79-482e-9ae8-c70e8f199dd7
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1575
+A stackalloc expression requires [] after type  
+  
+ The size of the requested allocation, with [stackalloc](http://msdn.microsoft.com/library/adc04c28-3ed2-4326-807a-7545df92b852), must be specified in square brackets.  
+  
+ The following sample generates CS1575:  
+  
+```  
+// CS1575.cs  
+// compile with: /unsafe  
+public class MyClass  
+{  
+   unsafe public static void Main()  
+   {  
+      int *p = stackalloc int (30);   // CS1575  
+      // try the following line instead  
+      // int *p = stackalloc int [30];  
+   }  
+}  
+```

@@ -1,0 +1,28 @@
+---
+title: "Method or data member not found | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbrID461"
+ms.assetid: 40b178c3-7dc4-4216-8460-17ff8d9aedf1
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Method or data member not found
+The method or data member you have tried to access was not found.  
+  
+### To correct this error  
+  
+-   Make sure you did not misspell the name of the method or data member.  
+  
+## See Also  
+ [Error Types](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

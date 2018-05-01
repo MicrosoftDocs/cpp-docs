@@ -1,0 +1,51 @@
+---
+title: "ComPtrRefBase::operator IUnknown** Operator | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+f1_keywords: 
+  - "client/Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown**"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator IUnknown** operator"
+ms.assetid: c2950abf-a7aa-480a-ba41-615703e7f931
+caps.latest.revision: 8
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# ComPtrRefBase::operator IUnknown** Operator
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [ComPtrRefBase::operator IUnknown** Operator](https://docs.microsoft.com/cpp/windows/comptrrefbase-operator-iunknown-star-star-operator).  
+  
+  
+Supports the WRL infrastructure and is not intended to be used directly from your code.  
+  
+## Syntax  
+  
+```  
+operator IUnknown**() const;  
+```  
+  
+## Remarks  
+ Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IUnknown interface.  
+  
+ An error is emitted if the current ComPtrRefBase doesn't derive from IUnknown.  
+  
+## Requirements  
+ **Header:** client.h  
+  
+ **Namespace:** Microsoft::WRL::Details  
+  
+## See Also  
+ [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+

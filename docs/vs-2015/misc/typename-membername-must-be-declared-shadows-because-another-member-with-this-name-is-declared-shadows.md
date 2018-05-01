@@ -1,0 +1,33 @@
+---
+title: "&lt;typename&gt; &#39;&lt;membername&gt;&#39; must be declared &#39;Shadows&#39; because another member with this name is declared &#39;Shadows&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30695"
+  - "vbc30695"
+helpviewer_keywords: 
+  - "BC30695"
+ms.assetid: 9bbef69f-e7b9-4952-bbdf-c66c891f9067
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &lt;typename&gt; &#39;&lt;membername&gt;&#39; must be declared &#39;Shadows&#39; because another member with this name is declared &#39;Shadows&#39;
+This property or procedure has the same name as another property or procedure marked with the `Shadows` modifier.  
+  
+ **Error ID:** BC30695  
+  
+### To correct this error  
+  
+-   Use the `Shadows` modifier.  
+  
+## See Also  
+ [Shadows](http://msdn.microsoft.com/library/6bf687cd-0544-4797-b51b-911125ec57c6)

@@ -1,0 +1,33 @@
+---
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a local variable declaration | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30247"
+  - "bc30247"
+helpviewer_keywords: 
+  - "BC30247"
+ms.assetid: 8c43503c-71a4-47d8-97f7-67658da774b1
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;modifier&gt;&#39; is not valid on a local variable declaration
+A `Dim` statement inside a procedure contains an invalid keyword, such as `Overloads`.  
+  
+ **Error ID:** BC30247  
+  
+### To correct this error  
+  
+-   Remove the invalid keyword from the `Dim` statement.  
+  
+## See Also  
+ [Dim Statement](http://msdn.microsoft.com/library/fae3eca1-f0b2-4400-994b-7aa58a848448)

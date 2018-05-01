@@ -1,0 +1,46 @@
+---
+title: "Expression of type &#39;&lt;typename1&gt;&#39; can never be of type &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31430"
+  - "bc31430"
+helpviewer_keywords: 
+  - "BC31430"
+ms.assetid: 1d527033-3f6f-4945-b1d3-5ef59a1e1b53
+caps.latest.revision: 5
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Expression of type &#39;&lt;typename1&gt;&#39; can never be of type &#39;&lt;typename2&gt;&#39;
+A `TypeOf`...`Is` expression tests an object reference variable to a data type that it cannot hold.  
+  
+ In some cases the compiler can determine that a `TypeOf`...`Is` test can only fail, for example if there is no inheritance relationship between two classes.  
+  
+ The following code can generate this error.  
+  
+ `Dim refVar as System.Windows.Forms.Form`  
+  
+ `If TypeOf refVar Is System.Array`  
+  
+ `End If`  
+  
+ Because <xref:System.Windows.Forms.Form> and <xref:System.Array> are totally unrelated types, the compiler can determine that the `TypeOf`...`Is` expression returns `False` for any value of `refVar`.  
+  
+ **Error ID:** BC31430  
+  
+### To correct this error  
+  
+-   Test the variable for a realistic data type, or remove the `TypeOf`...`Is` test altogether.  
+  
+## See Also  
+ [TypeOf Operator](http://msdn.microsoft.com/library/33f65296-659a-4b9a-9a29-c2a91cff68b2)   
+ [How to: Determine What Type an Object Variable Refers To](http://msdn.microsoft.com/library/6f6a138d-58a4-40d1-9f4e-0a3c598eaf81)

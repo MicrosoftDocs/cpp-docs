@@ -1,0 +1,41 @@
+---
+title: "Compiler Error CS0524 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0524"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0524"
+ms.assetid: a5cd8fb0-f5df-4580-9116-a6be4dffd1cb
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0524
+'type' : interfaces cannot declare types  
+  
+ An [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) cannot contain a user-defined type; it should contain only methods and properties.  
+  
+## Example  
+ The following sample generates CS0524:  
+  
+```  
+// CS0524.cs  
+public interface Clx  
+{  
+    public class Cly   // CS0524, delete user-defined type  
+    {  
+    }  
+}  
+  
+```

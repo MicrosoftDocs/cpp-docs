@@ -1,0 +1,35 @@
+---
+title: "Parameter &#39;&lt;parametername&gt;&#39; already has a matching argument | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc36567"
+  - "bc36567"
+helpviewer_keywords: 
+  - "BC36567"
+ms.assetid: f01fc8d8-924a-4492-add1-db06604edcbf
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Parameter &#39;&lt;parametername&gt;&#39; already has a matching argument
+An argument is passed by name more than one time in the same procedure call.  
+  
+ **Error ID:** BC36567  
+  
+### To correct this error  
+  
+-   Check to see whether one of the argument names is misspelled.  
+  
+-   Remove the duplicated argument from the argument list.  
+  
+## See Also  
+ [Passing Arguments by Position and by Name](http://msdn.microsoft.com/library/1ad7358f-1da9-48da-a95b-f3c7ed41eff3)

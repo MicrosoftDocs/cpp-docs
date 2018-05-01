@@ -1,0 +1,27 @@
+---
+title: "Compiler Error CS0589 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0589"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0589"
+ms.assetid: dbe1aa49-d793-4096-ae77-141c724a5813
+caps.latest.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0589
+Internal Compiler Error: stage 'PARSE'  
+  
+ Try to determine if the compiler is failing due to its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](http://msdn.microsoft.com/library/e0846d4d-2ce1-48e3-b219-674ff070bf4e).

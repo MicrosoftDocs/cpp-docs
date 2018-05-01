@@ -1,0 +1,60 @@
+---
+title: "Compiler Warning (level 4) C4564 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4564"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4564"
+ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Warning (level 4) C4564
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Warning (level 4) C4564](https://docs.microsoft.com/cpp/error-messages/compiler-warnings/compiler-warning-level-4-c4564).  
+  
+  
+method 'method' of class 'class' defines unsupported default parameter 'parameter'  
+  
+ The compiler detected a method with one or more parameters with default values. The default value(s) for the parameters will be ignored when the method is invoked; explicitly specify values for those parameters. If you do not explicitly specify values for those parameters, the C++ compiler will generate an error.  
+  
+ Given the following .dll created with Visual Basic, which allows default parameters on method arguments:  
+  
+```  
+' C4564.vb  
+' compile with: vbc /t:library C4564.vb  
+Public class TestClass  
+   Public Sub MyMethod (a as Integer, _  
+                        Optional c as Integer=1)  
+   End Sub  
+End class  
+```  
+  
+ And the following C++ sample that uses the .dll created with Visual Basic,  
+  
+```  
+// C4564.cpp  
+// compile with: /clr /W4 /WX  
+#using <C4564.dll>  
+  
+int main() {  
+   TestClass ^ myx = gcnew TestClass();   // C4564  
+   myx->MyMethod(9);  
+   // try the following line instead, to avoid an error  
+   // myx->MyMethod(9, 1);  
+}  
+```
+

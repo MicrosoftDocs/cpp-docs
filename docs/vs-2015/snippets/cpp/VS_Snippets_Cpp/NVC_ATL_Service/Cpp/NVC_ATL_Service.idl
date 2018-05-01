@@ -1,0 +1,18 @@
+// NVC_ATL_Service.idl : IDL source for NVC_ATL_Service
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (NVC_ATL_Service.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(5CE3D8BF-0854-477A-B760-44CB6528129D),
+	version(1.0),
+	helpstring("NonAttribService 1.0 Type Library")
+]
+library NonAttribServiceLib
+{
+	importlib("stdole2.tlb");
+};

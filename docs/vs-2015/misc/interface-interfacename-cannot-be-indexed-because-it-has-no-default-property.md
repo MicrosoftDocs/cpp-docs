@@ -1,0 +1,33 @@
+---
+title: "Interface &#39;&lt;interfacename&gt;&#39; cannot be indexed because it has no default property | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30547"
+  - "vbc30547"
+helpviewer_keywords: 
+  - "BC30547"
+ms.assetid: d9d83868-5e81-4ec5-878e-2303489d8f2f
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Interface &#39;&lt;interfacename&gt;&#39; cannot be indexed because it has no default property
+Index expressions must result in a value whose type is an array, in a value whose type has a set of overloaded default properties, or in a set of overloaded properties. An interface can have only one default method or property. This means that it can either inherit an interface containing a default method or property, or its definition block can contain one method or property that is marked as default.  
+  
+ **Error ID:** BC30547  
+  
+### To correct this error  
+  
+-   Supply a default property in the interface.  
+  
+## See Also  
+ [Interface Statement](http://msdn.microsoft.com/library/8997af73-bda3-4f79-bd41-ca396b610260)

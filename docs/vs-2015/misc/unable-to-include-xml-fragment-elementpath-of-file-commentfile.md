@@ -1,0 +1,35 @@
+---
+title: "Unable to include XML fragment &#39;&lt;elementpath&gt;&#39; of file &#39;&lt;commentfile&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc42320"
+  - "bc42320"
+helpviewer_keywords: 
+  - "BC42320"
+ms.assetid: e8a5c353-86ee-454d-a15c-cb1d8e8346e6
+caps.latest.revision: 5
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Unable to include XML fragment &#39;&lt;elementpath&gt;&#39; of file &#39;&lt;commentfile&gt;&#39;
+An `<include>` tag in an XML comment contains an XPath expression for an element that does not exist, or the file contains badly formed XML.  
+  
+ **Error ID:** BC42320  
+  
+### To correct this error  
+  
+1.  Verify that the XML in the file is valid.  
+  
+2.  Verify that the XML fragment exists in the file.  
+  
+## See Also  
+ [\<include>](http://msdn.microsoft.com/library/ba8e9173-82cd-460b-8938-a075a2dfb36d)

@@ -1,0 +1,33 @@
+---
+title: "&#39;&lt;modifier&gt;&#39; is not valid on an event declaration | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30243"
+  - "bc30243"
+helpviewer_keywords: 
+  - "BC30243"
+ms.assetid: 7e7c886e-34f5-44a0-b278-5ba7354ea2ad
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;modifier&gt;&#39; is not valid on an event declaration
+An `Event` statement contains an invalid keyword, such as `ReadOnly`.  
+  
+ **Error ID:** BC30243  
+  
+### To correct this error  
+  
+1.  Remove the invalid keyword from the `Event` statement.  
+  
+## See Also  
+ [Event Statement](http://msdn.microsoft.com/library/306ff8ed-74dd-4b6a-bd2f-e91b17474042)

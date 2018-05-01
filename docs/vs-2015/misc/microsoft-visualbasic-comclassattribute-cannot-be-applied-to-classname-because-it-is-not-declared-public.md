@@ -1,0 +1,47 @@
+---
+title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to &#39;&lt;classname&gt;&#39; because it is not declared &#39;Public&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc32509"
+  - "vbc32509"
+helpviewer_keywords: 
+  - "BC32509"
+ms.assetid: ac46851f-53ab-4ce6-87b1-4c4d29508527
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to &#39;&lt;classname&gt;&#39; because it is not declared &#39;Public&#39;
+A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but its declaration does not specify `Public`.  
+  
+ To be eligible for COM interop, a .NET Framework class must satisfy the following requirements:  
+  
+-   It must be `Public`, all its containers must be `Public`, and it must expose at least one `Public` member.  
+  
+-   It must not be *abstract*, that is, it must not be declared with `MustInherit`.  
+  
+-   It must not be generic or be declared within a generic container type.  
+  
+ **Error ID:** BC32509  
+  
+### To correct this error  
+  
+-   Add the `Public` keyword to the class declaration.  
+  
+     -or-  
+  
+-   If the class or its containing element cannot be `Public`, then remove <xref:Microsoft.VisualBasic.ComClassAttribute> from the class declaration. You cannot expose it to COM.  
+  
+## See Also  
+ <xref:Microsoft.VisualBasic.ComClassAttribute>   
+ [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [Public](http://msdn.microsoft.com/library/284c9e1b-ed23-499b-9bc9-ad87c11485a5)

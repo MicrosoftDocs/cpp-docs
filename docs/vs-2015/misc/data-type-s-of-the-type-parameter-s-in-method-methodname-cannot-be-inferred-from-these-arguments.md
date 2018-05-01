@@ -1,0 +1,62 @@
+---
+title: "Data type(s) of the type parameter(s) in method &#39;&lt;methodname&gt;&#39; cannot be inferred from these arguments | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc36648"
+  - "bc36645"
+  - "bc36648"
+  - "vbc36645"
+helpviewer_keywords: 
+  - "BC36648"
+  - "BC36645"
+ms.assetid: cc8c67bb-6cbb-4d7c-ba26-fe1d38908434
+caps.latest.revision: 5
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Data type(s) of the type parameter(s) in method &#39;&lt;methodname&gt;&#39; cannot be inferred from these arguments
+Data type(s) of the type parameter(s) in method '\<methodname>' cannot be inferred from these arguments. Specifying the data type(s) explicitly might correct this error.  
+  
+ An attempt has been made to use type inference to determine the data type (or types) of the type parameter (or parameters) when evaluating a call to a generic procedure. However, the compiler is not able to find a data type for the type parameters in this method, and it reports the error.  
+  
+> [!NOTE]
+>  When specifying arguments is not an option (for example, for query operators in query expressions), the error message appears without the second sentence.  
+  
+ For example, the following code demonstrates the error.  
+  
+```vb  
+Module Module1  
+  
+    Sub Main()  
+        '' Not valid.  
+        'GenericMethod("Hello", "World")  
+    End Sub  
+  
+    Sub GenericMethod(Of T)(ByVal x As String, ByVal y As _  
+                            InterfaceExample(Of T))  
+    End Sub  
+  
+End Module  
+  
+Interface InterfaceExample(Of T)  
+End Interface  
+```  
+  
+ **Error ID:** BC36648 and BC36645  
+  
+### To correct this error  
+  
+-   You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
+  
+## See Also  
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)   
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

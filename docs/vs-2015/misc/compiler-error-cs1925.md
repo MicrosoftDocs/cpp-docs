@@ -1,0 +1,50 @@
+---
+title: "Compiler Error CS1925 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1925"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1925"
+ms.assetid: b60806a5-2ccf-47f5-873b-7ac2292fdb54
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1925
+Cannot initialize object of type 'type' with a collection initializer.  
+  
+ Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](http://msdn.microsoft.com/library/c58f3db5-d7d4-4651-bd2d-5a3a97357f61). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.  
+  
+### To correct this error  
+  
+1.  Initialize the object by calling its constructors and methods.  
+  
+## Example  
+ The following code generates CS1925:  
+  
+```  
+// cs1925.cs  
+public class Student  
+{  
+    public int[] Scores;  
+}  
+  
+class Test  
+{  
+    static void Main(string[] args)  
+    {  
+        Student student = new Student { Scores = { 1, 2, 3 } }; // CS1925  
+    }  
+}  
+```
