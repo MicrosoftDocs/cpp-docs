@@ -1,4 +1,4 @@
-    vector<shared_ptr<Song>> v{
+    vector<shared_ptr<Song>> v {
       make_shared<Song>(L"Bob Dylan", L"The Times They Are A Changing"),
       make_shared<Song>(L"Aretha Franklin", L"Bridge Over Troubled Water"),
       make_shared<Song>(L"Thal�a", L"Entre El Mar y Una Estrella")
