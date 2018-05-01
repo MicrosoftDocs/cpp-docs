@@ -31,7 +31,6 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # CImage Class
-[!INCLUDE[blank_token](../../includes/blank-token.md)]
 
 The latest version of this topic can be found at [CImage Class](https://docs.microsoft.com/cpp/atl-mfc-shared/reference/cimage-class).  
   
@@ -254,7 +253,7 @@ BOOL AlphaBlend(
   
  When `bBlendOp` is set to the default of **AC_SRC_OVER**, the source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.  
   
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the Windows SDK and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
   
 ##  <a name="cimage__attach"></a>  CImage::Attach  
  Attaches `hBitmap` to a `CImage` object.  
@@ -322,7 +321,7 @@ BOOL BitBlt(
  The logical y-coordinate of the upper left corner of the destination rectangle.  
   
  `dwROP`  
- The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)] for a list of other raster-operation codes and their descriptions.  
+ The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK for a list of other raster-operation codes and their descriptions.  
   
  `pointDest`  
  A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure indicating the upper left corner of the destination rectangle.  
@@ -349,7 +348,7 @@ BOOL BitBlt(
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- For more information, see [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+ For more information, see [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK.  
   
 ##  <a name="cimage__cimage"></a>  CImage::CImage  
  Constructs a `CImage` object.  
@@ -428,7 +427,7 @@ BOOL CreateEx(
 - **BI_BITFIELDS** The format is uncompressed and the color table consists of three `DWORD` color masks that specify the red, green, and blue components, respectively, of each pixel. This is valid when used with 16- and 32-bpp bitmaps.  
   
  *pdwBitfields*  
- Only used if `eCompression` is set to **BI_BITFIELDS**, otherwise it must be **NULL**. A pointer to an array of three `DWORD` bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+ Only used if `eCompression` is set to **BI_BITFIELDS**, otherwise it must be **NULL**. A pointer to an array of three `DWORD` bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) in the Windows SDK.  
   
  `dwFlags`  
  Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:  
@@ -578,7 +577,7 @@ int GetBPP() const throw();
 ### Remarks  
  This value determines the number of bits that define each pixel and the maximum number of colors in the bitmap.  
   
- The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the **biBitCount** member of [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)] for more information about this value.  
+ The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the **biBitCount** member of [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) in the Windows SDK for more information about this value.  
   
 ##  <a name="cimage__getcolortable"></a>  CImage::GetColorTable  
  Retrieves red, green, blue (RGB) color values from a range of entries in the palette of the DIB section.  
@@ -631,7 +630,7 @@ static HRESULT GetExporterFilterString(CSimpleString& strExporters,
  An array of GUIDs, with each element corresponding to one of the file types in the string. In the example in `pszAllFilesDescription` below, `aguidFileTypes`[0] is `GUID_NULL` and the remaining array values are the image file formats supported by the current operating system.  
   
 > [!NOTE]
->  For a complete list of constants, see **Image File Format Constants** in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+>  For a complete list of constants, see **Image File Format Constants** in the Windows SDK.  
   
  `pszAllFilesDescription`  
  If this parameter is not **NULL**, the filter string will have one additional filter at the beginning of the list. This filter will have the current value of `pszAllFilesDescription` for its description, and accepts files of any extension supported by any other exporter in the list.  
@@ -713,7 +712,7 @@ static HRESULT GetImporterFilterString(CSimpleString& strImporters,
  An array of GUIDs, with each element corresponding to one of the file types in the string. In the example in `pszAllFilesDescription` below, `aguidFileTypes`[0] is `GUID_NULL` with the remaining array values are the image file formats supported by the current operating system.  
   
 > [!NOTE]
->  For a complete list of constants, see **Image File Format Constants** in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+>  For a complete list of constants, see **Image File Format Constants** in the Windows SDK.  
   
  `pszAllFilesDescription`  
  If this parameter is not **NULL**, the filter string will have one additional filter at the beginning of the list. This filter will have the current value of `pszAllFilesDescription` for its description, and accepts files of any extension supported by any other exporter in the list.  
@@ -1043,7 +1042,7 @@ BOOL MaskBlt(
  The vertical pixel offset for the mask bitmap specified by the `hbmMask` parameter.  
   
  `dwROP`  
- Specifies both foreground and background ternary raster operation codes that the method uses to control the combination of source and destination data. The background raster operation code is stored in the high-order byte of the high-order word of this value; the foreground raster operation code is stored in the low-order byte of the high-order word of this value; the low-order word of this value is ignored, and should be zero. For a discussion of foreground and background in the context of this method, see `MaskBlt` in the [!INCLUDE[winSDK](../Token/winSDK_md.md)]. For a list of common raster operation codes, see `BitBlt` in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+ Specifies both foreground and background ternary raster operation codes that the method uses to control the combination of source and destination data. The background raster operation code is stored in the high-order byte of the high-order word of this value; the foreground raster operation code is stored in the low-order byte of the high-order word of this value; the low-order word of this value is ignored, and should be zero. For a discussion of foreground and background in the context of this method, see `MaskBlt` in the Windows SDK. For a list of common raster operation codes, see `BitBlt` in the Windows SDK.  
   
  `rectDest`  
  A reference to a `RECT` structure, identifying the destination.  
@@ -1136,7 +1135,7 @@ BOOL PlgBlt(
 ### Remarks  
  If `hbmMask` identifies a valid monochrome bitmap, **PlgBit** uses this bitmap to mask the bits of color data from the source rectangle.  
   
- This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) in the Windows SDK and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
   
 ##  <a name="cimage__releasedc"></a>  CImage::ReleaseDC  
  Releases the device context.  
@@ -1188,7 +1187,7 @@ HRESULT Save(LPCTSTR pszFileName,
 - **ImageFormatGIF** A GIF compressed image.  
   
 > [!NOTE]
->  For a complete list of constants, see **Image File Format Constants** in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+>  For a complete list of constants, see **Image File Format Constants** in the Windows SDK.  
   
 ### Return Value  
  A standard `HRESULT`.  
@@ -1354,7 +1353,7 @@ BOOL StretchBlt(
  The height, in logical units, of the destination rectangle.  
   
  `dwROP`  
- The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)] for a list of other raster-operation codes and their descriptions.  
+ The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK for a list of other raster-operation codes and their descriptions.  
   
  `rectDest`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.  
@@ -1378,7 +1377,7 @@ BOOL StretchBlt(
  Nonzero if successful, otherwise 0.  
   
 ### Remarks  
- For more information, see [StretchBlt](http://msdn.microsoft.com/library/windows/desktop/dd145120) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
+ For more information, see [StretchBlt](http://msdn.microsoft.com/library/windows/desktop/dd145120) in the Windows SDK.  
   
 ##  <a name="cimage__transparentblt"></a>  CImage::TransparentBlt  
  Copies a bitmap from the source device context to this current device context.  
@@ -1459,7 +1458,7 @@ BOOL TransparentBlt(
 ### Remarks  
  `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#cimage__alphablend) to specify 32 bits-per-pixel bitmaps with transparency.  
   
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the Windows SDK and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#199](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATLMFC_Utilities/Cpp/MyDlg.cpp#199)]  
