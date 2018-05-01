@@ -1062,7 +1062,7 @@ BOOL MaskBlt(
 ### Remarks  
  This method applies to Windows NT, versions 4.0 and later only.  
   
- See `MaskBlt` in the [!INCLUDE[winsdkshort](../Token/winsdkshort_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ See `MaskBlt` in the Windows SDK and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
   
 ##  <a name="cimage__operator_hbitmap"></a>  CImage::operator HBITMAP  
  Use this operator to get the attached Windows GDI handle of the `CImage` object. This operator is a casting operator, which supports direct use of an `HBITMAP` object.  

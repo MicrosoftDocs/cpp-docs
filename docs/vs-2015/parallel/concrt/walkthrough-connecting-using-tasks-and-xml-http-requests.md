@@ -57,15 +57,15 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
 3.  In pch.h, add this code:  
   
-     [!code-cpp[concrt-using-ixhr2#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/pch.h#1)]  
+     [!code-cpp[concrt-using-ixhr2#1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/pch.h#1)]  
   
 4.  In HttpRequest.h, add this code:  
   
-     [!code-cpp[concrt-using-ixhr2#2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/HttpRequest.h#2)]  
+     [!code-cpp[concrt-using-ixhr2#2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/HttpRequest.h#2)]  
   
 5.  In HttpRequest.cpp, add this code:  
   
-     [!code-cpp[concrt-using-ixhr2#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/HttpRequest.cpp#3)]  
+     [!code-cpp[concrt-using-ixhr2#3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/HttpRequest.cpp#3)]  
   
 ## Using the HttpRequest Class in a [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] App  
  This section demonstrates how to use the `HttpRequest` class in a [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] app. The app provides an input box that defines a URL resource, and button commands that perform GET and POST operations, and a button command that cancels the current operation.  
@@ -74,34 +74,34 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
 1.  In MainPage.xaml, define the [StackPanel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.stackpanel.aspx) element as follows.  
   
-     [!code-xml[concrt-using-ixhr2#A1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml#a1)]  
+     [!code-xml[concrt-using-ixhr2#A1](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml#a1)]  
   
 2.  In MainPage.xaml.h, add this `#include` directive:  
   
-     [!code-cpp[concrt-using-ixhr2#A2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml.h#a2)]  
+     [!code-cpp[concrt-using-ixhr2#A2](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml.h#a2)]  
   
 3.  In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:  
   
-     [!code-cpp[concrt-using-ixhr2#A3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml.h#a3)]  
+     [!code-cpp[concrt-using-ixhr2#A3](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml.h#a3)]  
   
 4.  In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:  
   
-     [!code-cpp[concrt-using-ixhr2#A4](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml.h#a4)]  
+     [!code-cpp[concrt-using-ixhr2#A4](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml.h#a4)]  
   
 5.  In MainPage.xaml.cpp, add these `using` statements:  
   
-     [!code-cpp[concrt-using-ixhr2#A5](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml.cpp#a5)]  
+     [!code-cpp[concrt-using-ixhr2#A5](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml.cpp#a5)]  
   
 6.  In MainPage.xaml.cpp, implement the `GetButton_Click`, `PostButton_Click`, and `CancelButton_Click` methods of the `MainPage` class.  
   
-     [!code-cpp[concrt-using-ixhr2#A6](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml.cpp#a6)]  
+     [!code-cpp[concrt-using-ixhr2#A6](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml.cpp#a6)]  
   
     > [!TIP]
     >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](http://msdn.microsoft.com/library/1181bb2a-b7a8-4a00-b437-b54e79c8b429) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
   
 7.  In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.  
   
-     [!code-cpp[concrt-using-ixhr2#A7](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/concrt-using-ixhr2/cpp/MainPage.xaml.cpp#a7)]  
+     [!code-cpp[concrt-using-ixhr2#A7](../../snippets/cpp/VS_Snippets_ConcRT/concrt-using-ixhr2/cpp/MainPage.xaml.cpp#a7)]  
   
 8.  In the project properties, under **Linker**, **Input**, specify `shcore.lib` and `msxml6.lib`.  
   
