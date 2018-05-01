@@ -198,7 +198,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
     > [!NOTE]
     >  The constructor using **DBTIMESTAMP** parameter is only available when OLEDB.h is included.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the [!INCLUDE[winSDK](../../includes/winsdk-md.md)]. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)].  
+ For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the [!INCLUDE[winSDK](../../includes/winsdk-md.md)]. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#148](../../snippets/cpp/VS_Snippets_Cpp/NVC_ATLMFC_Utilities/Cpp/NVC_ATLMFC_Utilities.cpp#148)]  
