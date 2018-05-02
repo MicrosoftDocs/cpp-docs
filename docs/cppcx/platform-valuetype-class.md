@@ -3,18 +3,13 @@ title: "Platform::ValueType Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ValueType::ToString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ValueType Class"]
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ValueType Class

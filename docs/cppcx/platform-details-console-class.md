@@ -3,18 +3,13 @@ title: "Platform::Details::Console Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::Console"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::Console Class"]
 ms.assetid: e8d01367-d8c8-4211-9b9e-3f93c8115dae
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::Console Class

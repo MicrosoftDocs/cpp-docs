@@ -3,15 +3,10 @@ title: "DLLs (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/06/2018"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 5b8bcc57-64dd-4c54-9f24-26a25bd5dddd
-caps.latest.revision: 21
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # DLLs (C++/CX)

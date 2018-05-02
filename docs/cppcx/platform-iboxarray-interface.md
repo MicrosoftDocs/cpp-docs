@@ -3,18 +3,13 @@ title: "Platform::IBoxArray Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IBoxArray"]
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IBoxArray Interface
