@@ -2,18 +2,13 @@
 title: "OLE DB Provider Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers [C++], about providers", "databases [C++], OLE DB templates", "OLE DB provider templates [C++], about OLE DB provider templates", "templates [C++], OLE DB"]
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Templates (C++)

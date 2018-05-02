@@ -2,18 +2,13 @@
 title: "Connecting to a Data Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["database connections [C++], ODBC", "ODBC connections [C++], using", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Connecting to a Data Source

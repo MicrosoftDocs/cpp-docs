@@ -2,18 +2,13 @@
 title: "ODBC: Configuring an ODBC Data Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources, configuring", "ODBC connections, configuring", "configuring ODBC data sources"]
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: Configuring an ODBC Data Source
