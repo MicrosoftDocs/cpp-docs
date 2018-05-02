@@ -2,19 +2,14 @@
 title: "Compiler Errors C2400 Through C2499 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
 helpviewer_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
 dev_langs: ["C++"]
 ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2400 Through C2499

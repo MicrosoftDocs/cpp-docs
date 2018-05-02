@@ -2,19 +2,14 @@
 title: "NMAKE Warning U4010 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["U4010"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["U4010"]
 ms.assetid: 99d8eb9a-ae31-40d1-b8c5-8c66732127d3
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4010

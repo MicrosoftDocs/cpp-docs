@@ -2,19 +2,14 @@
 title: "Fatal Error C1189 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/27/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C1189"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C1189"]
 ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1189

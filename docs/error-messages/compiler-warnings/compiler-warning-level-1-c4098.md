@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4098 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4098"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4098"]
 ms.assetid: 8c8aef1c-1639-44ec-a3dd-c0dfe9aa727d
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4098

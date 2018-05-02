@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 2) C4653 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4653"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4653"]
 ms.assetid: 90ec3317-3d39-4b4c-bcd1-97e7c799e1b6
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4653

@@ -2,19 +2,14 @@
 title: "Compiler Error C2439 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2439"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2439"]
 ms.assetid: 3c5dbe5c-b7d3-4bb0-8619-92f6e280461e
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2439

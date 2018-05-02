@@ -2,19 +2,14 @@
 title: "Compiler Error C3197 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3197"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3197"]
 ms.assetid: 4e385c3b-222e-425c-9612-46e83ed41650
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3197

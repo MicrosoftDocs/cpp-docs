@@ -2,19 +2,14 @@
 title: "Compiler Errors C2300 Through C2399 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
 helpviewer_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
 dev_langs: ["C++"]
 ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2300 Through C2399

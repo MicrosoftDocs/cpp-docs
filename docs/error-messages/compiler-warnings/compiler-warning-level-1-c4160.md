@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4160 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4160"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4160"]
 ms.assetid: a9610cb7-cac4-4a74-8b4e-049030ebb92b
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4160

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 3) C4646 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4646"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4646"]
 ms.assetid: 23677e8e-603e-40e0-b99a-2e4894a1278e
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4646

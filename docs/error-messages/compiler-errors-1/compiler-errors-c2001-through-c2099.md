@@ -2,19 +2,14 @@
 title: "Compiler Errors C2000 through C2099 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2000", "C2016", "C2023", "C2024", "C2025", "C2029", "C2031", "C2035", "C2037", "C2038", "C2049", "C2068", "C2076", "C2080", "C2096", "C2098"]
 helpviewer_keywords: ["C2000", "C2016", "C2023", "C2024", "C2025", "C2029", "C2031", "C2035", "C2037", "C2038", "C2049", "C2068", "C2076", "C2080", "C2096", "C2098"]
 dev_langs: ["C++"]
 ms.assetid: d99a19eb-eeeb-4181-9b33-9cbe4459767b
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2000 through C2099

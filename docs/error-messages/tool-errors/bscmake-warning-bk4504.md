@@ -2,19 +2,14 @@
 title: "BSCMAKE Warning BK4504 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["BK4504"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BK4504"]
 ms.assetid: b56ee2d4-ad44-40f4-98c0-75934ea44a6c
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Warning BK4504

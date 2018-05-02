@@ -2,19 +2,14 @@
 title: "Compiler Errors C2500 Through C2599 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2501", "C2508", "C2515", "C2519", "C2520", "C2522", "C2525", "C2527", "C2536", "C2538", "C2539", "C2546", "C2547", "C2559", "C2560", "C2564", "C2565", "C2576", "C2578", "C2580", "C2590", "C2591", "C2595", "C2596"]
 helpviewer_keywords: ["C2501", "C2508", "C2515", "C2519", "C2520", "C2522", "C2525", "C2527", "C2536", "C2538", "C2539", "C2546", "C2547", "C2559", "C2560", "C2564", "C2565", "C2576", "C2578", "C2580", "C2590", "C2591", "C2595", "C2596"]
 dev_langs: ["C++"]
 ms.assetid: a869aaed-e9f6-49e3-b273-00ea7f45bed7
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2500 Through C2599

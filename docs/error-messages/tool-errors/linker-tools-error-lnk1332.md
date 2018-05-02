@@ -2,19 +2,14 @@
 title: "Linker Tools Error LNK1332 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1332"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1332"]
 ms.assetid: b31d5ca0-c27f-4177-896b-2637dccbde24
-caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1332

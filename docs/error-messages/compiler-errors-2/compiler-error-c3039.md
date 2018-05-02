@@ -2,19 +2,14 @@
 title: "Compiler Error C3039 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3039"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3039"]
 ms.assetid: 02776f16-f57a-4ffd-b7f7-9c696b633e08
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3039

@@ -2,7 +2,7 @@
 title: "Compiler Error C2429 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2017"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2429"]
 dev_langs: ["C++"]

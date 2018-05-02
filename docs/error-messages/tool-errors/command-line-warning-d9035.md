@@ -2,19 +2,14 @@
 title: "Command-Line Warning D9035 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["D9035"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["D9035"]
 ms.assetid: 6254f933-e37a-45ba-b860-1a870d1bc8e8
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9035

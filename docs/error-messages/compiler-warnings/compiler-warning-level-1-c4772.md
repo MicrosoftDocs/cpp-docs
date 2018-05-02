@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) C4772 | Microsoft Docs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4772"]
 dev_langs: ["C++"]
@@ -9,7 +9,6 @@ helpviewer_keywords: ["C4772"]
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4772

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4208 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4208"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4208"]
 ms.assetid: 5cb0a36e-3fb5-422f-a5f9-e40b70776c27
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4208
