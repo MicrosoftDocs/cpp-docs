@@ -72,7 +72,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler Error C3442|Initializing multiple members of union: '*member1*' and '*member2*'|
 |Compiler Error C3443|The default member initializer for '*class*' is recursive|
 |Compiler Error C3444|Empty aggregate class '*class*' must be initialized with '{}'|
-|Compiler Error C3445|copy-list-initialization of '*type*' cannot use an explicit constructor|
+|[Compiler Error C3445](compiler-error-c3445.md)|copy-list-initialization of '*type*' cannot use an explicit constructor|
 |[Compiler Error C3446](compiler-error-c3446.md)|'*class*': a default member initializer is not allowed for a member of a value class|
 |Compiler Error C3447|Obsolete.|
 |Compiler Error C3448|Obsolete.|
