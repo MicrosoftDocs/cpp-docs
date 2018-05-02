@@ -2,19 +2,14 @@
 title: "&lt;include&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["include", "<include>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["include C++ XML tag", "<include> C++ XML tag"]
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;include&gt; (Visual C++)

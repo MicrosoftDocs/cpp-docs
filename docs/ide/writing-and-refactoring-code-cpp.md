@@ -2,17 +2,12 @@
 title: "Writing and refactoring code (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/27/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Writing and refactoring code (C++)

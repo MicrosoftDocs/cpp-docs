@@ -2,18 +2,13 @@
 title: "Walkthrough: Working with Projects and Solutions (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/13/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["solutions [C++]", "projects [C++], about projects", "projects [C++]", "solutions [C++], about solutions"]
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Working with Projects and Solutions (C++)
