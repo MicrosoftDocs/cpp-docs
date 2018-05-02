@@ -2,18 +2,13 @@
 title: "How to: Enumerate Files in a Directory (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], listing files", "directories [C++], listing files"]
 ms.assetid: ebfc2666-229f-4b94-a9a1-e8f1b5d946d6
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Enumerate Files in a Directory (C++/CLI)

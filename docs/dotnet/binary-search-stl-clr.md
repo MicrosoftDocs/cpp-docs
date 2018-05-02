@@ -2,19 +2,14 @@
 title: "binary_search (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::binary_search"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary_search function [STL/CLR]"]
 ms.assetid: 520869cc-7cd3-4c81-b439-05f042474416
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # binary_search (STL/CLR)

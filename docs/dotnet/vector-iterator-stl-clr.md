@@ -2,19 +2,14 @@
 title: "vector::iterator (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::vector::iterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iterator member [STL/CLR]"]
 ms.assetid: a99932ac-c29e-4851-9331-9367f4dd9440
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::iterator (STL/CLR)

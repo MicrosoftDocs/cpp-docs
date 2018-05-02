@@ -2,19 +2,14 @@
 title: "map::generic_container (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::generic_container"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["generic_container member [STL/CLR]"]
 ms.assetid: fba16c90-475c-4c06-9b1b-f2c015f0d801
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::generic_container (STL/CLR)

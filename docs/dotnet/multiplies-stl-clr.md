@@ -2,19 +2,14 @@
 title: "multiplies (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiplies"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["multiplies function [STL/CLR]"]
 ms.assetid: 76d23149-789a-48a1-89f8-9103df82a1df
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiplies (STL/CLR)

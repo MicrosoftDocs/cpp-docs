@@ -2,19 +2,14 @@
 title: "priority_queue::const_reference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::priority_queue::const_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_reference member [STL/CLR]"]
 ms.assetid: 53829d08-f875-497a-bb90-655e7f1fd213
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # priority_queue::const_reference (STL/CLR)

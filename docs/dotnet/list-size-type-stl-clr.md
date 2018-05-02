@@ -2,19 +2,14 @@
 title: "list::size_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list::size_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size_type member [STL/CLR]"]
 ms.assetid: bfdf869f-fd7e-47b4-9ce9-68f7146dc3ed
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::size_type (STL/CLR)
