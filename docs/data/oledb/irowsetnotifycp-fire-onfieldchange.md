@@ -2,19 +2,14 @@
 title: "IRowsetNotifyCP::Fire_OnFieldChange | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP::Fire_OnFieldChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Fire_OnFieldChange method"]
 ms.assetid: 03dad058-8d4f-4113-aea4-ef7764eab9ec
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP::Fire_OnFieldChange

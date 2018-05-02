@@ -2,19 +2,14 @@
 title: "IRowsetLocateImpl::GetRowsByBookmark | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowsByBookmark method"]
 ms.assetid: 07906e42-3582-427e-812a-aa19791e3c56
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetLocateImpl::GetRowsByBookmark

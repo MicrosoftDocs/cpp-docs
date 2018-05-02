@@ -2,18 +2,13 @@
 title: "User-Interface Updating for Record Views  (MFC Data Access) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["user interfaces, updating", "menus, updating as context changes", "record views, user interface"]
 ms.assetid: 2c7914b6-2dc3-40c3-b2f2-8371da2a4063
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # User-Interface Updating for Record Views  (MFC Data Access)
