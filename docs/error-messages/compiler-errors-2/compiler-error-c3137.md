@@ -2,19 +2,14 @@
 title: "Compiler Error C3137 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3137"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3137"]
 ms.assetid: 70bb1313-2e87-43ed-a0d8-33fa6ff475e4
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3137

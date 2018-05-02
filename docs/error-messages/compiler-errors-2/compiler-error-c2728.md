@@ -2,19 +2,14 @@
 title: "Compiler Error C2728 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2728"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2728"]
 ms.assetid: 65635f91-1cd1-46e4-9ad7-14726d0546af
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2728

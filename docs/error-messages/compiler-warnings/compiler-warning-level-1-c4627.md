@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4627 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4627"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4627"]
 ms.assetid: 8840f3e6-b496-423a-8635-eb55d5f854a2
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4627

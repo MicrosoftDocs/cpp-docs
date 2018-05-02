@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4817 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4817"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4817"]
 ms.assetid: a68f5486-6940-4934-9f93-bfd4d71f92a9
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4817

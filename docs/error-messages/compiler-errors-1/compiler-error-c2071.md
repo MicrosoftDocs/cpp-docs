@@ -2,19 +2,14 @@
 title: "Compiler Error C2071 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2071"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2071"]
 ms.assetid: f8c09255-a5c4-47e3-8089-3d875ae43cc5
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2071

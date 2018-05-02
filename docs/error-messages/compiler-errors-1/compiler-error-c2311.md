@@ -2,19 +2,14 @@
 title: "Compiler Error C2311 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2311"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2311"]
 ms.assetid: 1aff9bd5-ed0b-4db6-bbc0-01ac89850cf2
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2311

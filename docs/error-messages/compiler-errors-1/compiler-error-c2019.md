@@ -2,19 +2,14 @@
 title: "Compiler Error C2019 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2019"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2019"]
 ms.assetid: 4f37b1e1-9eca-418f-a4c3-141e8512d7b6
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2019

@@ -2,19 +2,14 @@
 title: "Compiler Error C2599 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2599"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2599"]
 ms.assetid: 88515f36-7589-47e2-862e-0de8b18d6668
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2599

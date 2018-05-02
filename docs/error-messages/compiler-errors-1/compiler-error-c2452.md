@@ -2,19 +2,14 @@
 title: "Compiler Error C2452 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2452"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2452"]
 ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2452

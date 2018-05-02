@@ -2,19 +2,14 @@
 title: "Compiler Error C2978 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C2978"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2978"]
 ms.assetid: 5e7bee82-e266-4ccd-ad2e-ee89606ec5bf
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2978

@@ -2,19 +2,14 @@
 title: "Compiler Error C3459 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3459"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3459"]
 ms.assetid: 3d290a20-d313-4c07-9bd8-c5c159cb169f
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3459

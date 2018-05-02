@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4382 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4382"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4382"]
 ms.assetid: 34be9ad3-bae6-411a-8f80-0c8fd0d2c092
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4382

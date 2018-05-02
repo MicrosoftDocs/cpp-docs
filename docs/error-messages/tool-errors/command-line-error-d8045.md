@@ -2,19 +2,14 @@
 title: "Command-Line Error D8045 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["D8045"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["D8045"]
 ms.assetid: 01c8808c-bac1-4b4d-8a90-b595f95e9318
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8045

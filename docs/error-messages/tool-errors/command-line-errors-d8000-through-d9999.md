@@ -2,17 +2,12 @@
 title: "Command-Line Errors D8000 Through D9999 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: d02ec7df-26a5-4198-ac92-87b29ec9d5c8
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Errors D8000 Through D9999

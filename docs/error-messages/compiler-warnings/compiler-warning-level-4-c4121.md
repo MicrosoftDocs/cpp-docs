@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4121 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4121"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4121"]
 ms.assetid: 8c5b85c9-2543-426b-88bc-319c50158c7e
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4121

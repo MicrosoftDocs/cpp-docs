@@ -2,18 +2,13 @@
 title: "Project Build Warning PRJ0049 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0049"]
 ms.assetid: 8b38afa1-e080-4efd-ae89-776cfd044413
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Project Build Warning PRJ0049

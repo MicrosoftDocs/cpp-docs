@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4233 | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/25/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4233"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4233"]
 ms.assetid: 9aa51fc6-8ef3-43b5-bafb-c9333cf60de3
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4233

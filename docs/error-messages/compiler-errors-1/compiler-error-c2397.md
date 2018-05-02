@@ -2,17 +2,12 @@
 title: "Compiler Error C2397 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: ["C2397"]
 dev_langs: ["C++"]
 ms.assetid: b418cf5a-d50d-4a6c-98a7-994ae35046d1
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2397
