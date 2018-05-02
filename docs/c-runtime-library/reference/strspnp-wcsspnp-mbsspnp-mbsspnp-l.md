@@ -2,10 +2,7 @@
 title: "_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_mbsspnp", "_wcsspnp", "_mbsspnp_l", "_strspnp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_tcsspnp", "_mbsspnp", "strspnp", "_ftcsspnp", "_mbsspnp_l", "wcs
 dev_langs: ["C++"]
 helpviewer_keywords: ["_strspnp function", "_wcsspnp function", "_mbsspnp_l function", "strspnp function", "mbsspnp function", "wcsspnp function", "_mbsspnp function", "mbsspnp_l function", "_tcsspnp function", "tcsspnp function"]
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l

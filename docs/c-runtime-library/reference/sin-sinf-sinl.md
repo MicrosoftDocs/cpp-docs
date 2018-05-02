@@ -13,7 +13,6 @@ helpviewer_keywords: ["_sinl function", "sinl function", "calculating sines", "s
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # sin, sinf, sinl

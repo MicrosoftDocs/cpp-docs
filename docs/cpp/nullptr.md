@@ -2,19 +2,14 @@
 title: "nullptr | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["nullptr_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["nullptr keyword [C++]"]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # nullptr

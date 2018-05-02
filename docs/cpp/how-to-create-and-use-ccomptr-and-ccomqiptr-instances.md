@@ -1,18 +1,13 @@
 ---
 title: "How to: Create and Use CComPtr and CComQIPtr Instances | Microsoft Docs"
-ms.custom: ""
+ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use CComPtr and CComQIPtr Instances

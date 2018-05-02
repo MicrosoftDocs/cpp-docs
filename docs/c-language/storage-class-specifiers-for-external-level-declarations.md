@@ -2,18 +2,13 @@
 title: "Storage-Class Specifiers for External-Level Declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["external definitions", "linkage [C++], external", "external linkage, variable declarations", "declaring variables, external variables", "declarations [C++], external", "declarations [C++], specifiers", "external declarations", "static variables, external declarations", "variables, visibility", "external linkage, storage-class specifiers", "referencing declarations", "visibility, variables", "static storage class specifiers"]
 ms.assetid: b76b623a-80ec-4d5d-859b-6cef422657ee
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Storage-Class Specifiers for External-Level Declarations

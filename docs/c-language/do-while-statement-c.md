@@ -2,19 +2,14 @@
 title: "do-while Statement (C) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 f1_keywords: ["do", "while"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["do-while keyword [C]"]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # do-while Statement (C)

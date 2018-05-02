@@ -2,18 +2,13 @@
 title: "Interpretation of Subscript Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["subscript operator [C++], interpretation of", "arrays [C++], subscripting", "interpreting subscript operators [C++]", "operators [C++], interpretation of subscript"]
 ms.assetid: 8852ca18-9d5b-43f7-b8bd-abc89364fbf2
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Interpretation of Subscript Operator

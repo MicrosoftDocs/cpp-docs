@@ -3,18 +3,13 @@ title: "Platform::Details Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details Namespace"]
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details Namespace

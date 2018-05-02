@@ -2,19 +2,14 @@
 title: "Directory Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], directory", "directory control routines"]
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Directory Control

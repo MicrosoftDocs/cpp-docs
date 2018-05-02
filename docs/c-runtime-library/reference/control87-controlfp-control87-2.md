@@ -2,10 +2,7 @@
 title: "_control87, _controlfp, __control87_2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_control87", "_controlfp", "__control87_2"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_control87", "__control87_2", "control87", "_controlfp", "control
 dev_langs: ["C++"]
 helpviewer_keywords: ["floating-point numbers, control word", "_control87 function", "control87 function", "controlfp function", "_controlfp function", "__control87_2 function", "floating-point functions, setting control word", "floating-point functions", "EM_AMBIGUOUS", "control87_2 function"]
 ms.assetid: 0d09729d-d9a0-43d6-864c-43ff25e7e0c5
-caps.latest.revision: 34
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _control87, _controlfp, __control87_2

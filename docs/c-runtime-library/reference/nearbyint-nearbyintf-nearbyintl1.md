@@ -2,10 +2,7 @@
 title: "nearbyint, nearbyintf, nearbyintl | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["nearbyint", "nearbyintf", "nerabyintl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["nearbyint", "nearbyintf", "nearbyintl", "math/nearbyint", "math/n
 dev_langs: ["C++"]
 helpviewer_keywords: ["nearbyint function", "nearbyintf function", "nearbyintl function"]
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # nearbyint, nearbyintf, nearbyintl

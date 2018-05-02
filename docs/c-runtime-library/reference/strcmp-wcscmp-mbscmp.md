@@ -2,10 +2,7 @@
 title: "strcmp, wcscmp, _mbscmp | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["wcscmp", "_mbscmp", "strcmp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
@@ -14,10 +11,8 @@ f1_keywords: ["_mbscmp", "wcscmp", "strcmp", "_tcscmp", "_ftcscmp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tcscmp function", "strcmp function", "strings [C++], comparing", "mbscmp function", "string comparison [C++]", "_mbscmp function", "wcscmp function", "_tcscmp function", "_ftcscmp function", "ftcscmp function"]
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcmp, wcscmp, _mbscmp

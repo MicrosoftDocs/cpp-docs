@@ -2,10 +2,7 @@
 title: "lrint, lrintf, lrintl, llrint, llrintf, llrintl | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["lrint", "lrintl", "lrintf", "llrint", "llrintf", "llrintl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["lrint", "lrintf", "lrintl", "llrint", "llrintf", "llrintl", "math
 dev_langs: ["C++"]
 helpviewer_keywords: ["lrint function", "lrintf function", "lrintl function", "llrint function", "llrintf function", "llrintl function"]
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # lrint, lrintf, lrintl, llrint, llrintf, llrintl

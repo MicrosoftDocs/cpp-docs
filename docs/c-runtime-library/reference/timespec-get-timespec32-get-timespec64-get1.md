@@ -2,10 +2,7 @@
 title: "timespec_get, _timespec32_get, _timespec64_get1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["timespec_get", "_timespec32_get", "_timespec64_get"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["timespec_get", "_timespec32_get", "_timespec64_get", "time/timesp
 dev_langs: ["C++"]
 helpviewer_keywords: ["timespec_get function", "_timespec32_get function", "_timespec64_get function"]
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # timespec_get, _timespec32_get, _timespec64_get

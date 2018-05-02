@@ -2,10 +2,7 @@
 title: "_CrtSetDumpClient | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_CrtSetDumpClient"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_CrtSetDumpClient", "CrtSetDumpClient"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_CrtSetDumpClient function", "CrtSetDumpClient function"]
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetDumpClient

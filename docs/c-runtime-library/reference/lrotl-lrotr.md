@@ -13,7 +13,6 @@ helpviewer_keywords: ["lrotl function", "bits", "_lrotr function", "lrotr functi
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _lrotl, _lrotr

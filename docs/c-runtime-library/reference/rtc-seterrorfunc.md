@@ -2,10 +2,7 @@
 title: "_RTC_SetErrorFunc | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_RTC_SetErrorFunc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["RTC_SetErrorFunc", "_RTC_SetErrorFunc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RTC_SetErrorFunc function", "_RTC_SetErrorFunc function"]
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorFunc

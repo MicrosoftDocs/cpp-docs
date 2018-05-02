@@ -3,18 +3,13 @@ title: "Platform::OutOfBoundsException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::OutOfBoundsException", "VCCORLIB/Platform::OutOfBoundsException::OutOfBoundsException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfBoundsException"]
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfBoundsException Class

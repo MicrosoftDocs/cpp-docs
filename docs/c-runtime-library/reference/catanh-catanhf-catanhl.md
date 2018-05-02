@@ -2,10 +2,7 @@
 title: "catanh, catanhf, catanhl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["catanh", "catanhf", "catanhl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["catanh", "catanhf", "catanhl", "complex/catanh", "complex/catanhf
 dev_langs: ["C++"]
 helpviewer_keywords: ["catanh function", "catanhf function", "catanhl function"]
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # catanh, catanhf, catanhl

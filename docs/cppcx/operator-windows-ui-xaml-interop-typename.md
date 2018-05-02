@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/cppcx/operator-windows-ui-xaml-interop-typename.md
 ---
 title: "operator Windows::UI::Xaml::Interop::TypeName | Microsoft Docs"
 ms.custom: ""
@@ -15,6 +16,20 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator Windows::UI::Xaml::Interop::TypeName
+=======
+---
+title: "operator Windows::UI::Xaml::Interop::TypeName | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/30/2016"
+ms.technology: "cpp-windows"
+ms.topic: "language-reference"
+ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
+author: "ghogen"
+ms.author: "ghogen"
+ms.workload: ["cplusplus"]
+---
+# operator Windows::UI::Xaml::Interop::TypeName
+>>>>>>> master:docs/cppcx/operator-subtractwindows-ui-xaml-interop-typename.md
 Enables conversion from `Platform::Type` to [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).  
   
 ## Syntax  

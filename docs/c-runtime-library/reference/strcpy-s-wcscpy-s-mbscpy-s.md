@@ -13,7 +13,6 @@ helpviewer_keywords: ["strcpy_s function", "_tcscpy_s function", "_mbscpy_s func
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcpy_s, wcscpy_s, _mbscpy_s

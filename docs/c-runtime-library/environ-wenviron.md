@@ -2,19 +2,14 @@
 title: "_environ, _wenviron | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["environ", "wenviron", "_wenviron", "_environ"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["environ function", "_environ function", "_wenviron function", "process environment", "wenviron function"]
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _environ, _wenviron

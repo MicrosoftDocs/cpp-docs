@@ -3,15 +3,10 @@ title: "Visual C++ Language Reference (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/15/2017"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-caps.latest.revision: 27
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Language Reference (C++/CX)

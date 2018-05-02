@@ -634,7 +634,8 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
  `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### Remarks  
- Before [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], applications that access the registry usually use the **HKEY_CLASSES_ROOT** node. However, with [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], you must run an application in elevated mode to write to **HKCR**.  
+
+Before Windows Vista, applications that accessed the registry usually used the **HKEY_CLASSES_ROOT** node. However, with Windows Vista or later operating systems, you must run an application in elevated mode to write to **HKCR**.  
   
  This method enables your application to read and write to the registry without running in elevated mode by redirecting registry access from **HKCR** to **HKCU**. For more information, see [Linker Property Pages](../../ide/linker-property-pages.md).  
   

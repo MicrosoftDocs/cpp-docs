@@ -2,19 +2,14 @@
 title: "_com_ptr_t::QueryInterface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::QueryInterface", "_com_ptr_t.QueryInterface"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["QueryInterface method [C++]"]
 ms.assetid: d03292f1-6b02-40db-9756-8b0837a97319
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t::QueryInterface

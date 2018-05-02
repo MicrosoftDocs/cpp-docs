@@ -2,10 +2,7 @@
 title: "_scalb, _scalbf | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_scalb", "_scalbf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["scalb", "_scalb", "_scalbf"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exponential calculations", "_scalb function", "_scalbf function", "scalb function"]
 ms.assetid: 148cf5a8-b405-44bf-a1f0-7487adba2421
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _scalb, _scalbf

@@ -2,10 +2,7 @@
 title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function"]
 apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -13,10 +10,8 @@ f1_keywords: ["_execute_onexit_table", "process/_execute_onexit_table", "_initia
 dev_langs: ["C++"]
 helpviewer_keywords: ["_execute_onexit_table function", "_initialize_onexit_table function", "_register_onexit_function function"]
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _execute_onexit_table, _initialize_onexit_table, _register_onexit_function

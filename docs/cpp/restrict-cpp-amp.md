@@ -2,19 +2,14 @@
 title: "restrict (C++ AMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["cpu_CPP", "amp_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["restrict clause (C++ AMP)"]
 ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # restrict (C++ AMP)

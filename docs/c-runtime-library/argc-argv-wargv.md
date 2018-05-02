@@ -2,11 +2,8 @@
 title: "__argc, __argv, __wargv | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["__wargv", "__argv", "__argc"]
 apilocation: ["msvcrt120.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["__argv", "__argc", "__wargv"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__argv", "__wargv", "__argc"]
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __argc, __argv, __wargv

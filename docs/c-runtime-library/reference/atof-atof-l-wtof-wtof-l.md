@@ -2,10 +2,7 @@
 title: "atof, _atof_l, _wtof, _wtof_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_wtof_l", "atof", "_atof_l", "_wtof"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_tstof", "_ttof", "atof", "stdlib/atof", "math/atof", "_atof_l", 
 dev_langs: ["C++"]
 helpviewer_keywords: ["tstof function", "atof_l function", "_atof_l function", "atof function", "_tstof function", "_ttof function", "wtof function", "_wtof_l function", "ttof function", "wtof_l function", "_wtof function", "string conversion, to floating point values"]
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75
-caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # atof, _atof_l, _wtof, _wtof_l

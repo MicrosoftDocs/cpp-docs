@@ -2,19 +2,14 @@
 title: "true (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["true_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["true keyword [C++]"]
 ms.assetid: 96be2a70-51c3-4250-9752-874d25a5a11e
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # true (C++)
