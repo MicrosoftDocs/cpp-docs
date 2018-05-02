@@ -2,19 +2,14 @@
 title: "auto_gcroot | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_gcroot"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["auto_gcroot"]
 ms.assetid: 1084ff0f-3094-4d19-8646-1314c0733355
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot

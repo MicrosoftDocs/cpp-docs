@@ -2,19 +2,14 @@
 title: "vector::size (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::vector::size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size member [STL/CLR]"]
 ms.assetid: 3d2a156e-5871-4441-9307-21a20cd1430f
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::size (STL/CLR)

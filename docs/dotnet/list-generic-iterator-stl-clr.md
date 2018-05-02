@@ -2,19 +2,14 @@
 title: "list::generic_iterator (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list::generic_iterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["generic_iterator member [STL/CLR]"]
 ms.assetid: 4d54a5f4-a792-48a2-9142-34c4a09bd305
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::generic_iterator (STL/CLR)

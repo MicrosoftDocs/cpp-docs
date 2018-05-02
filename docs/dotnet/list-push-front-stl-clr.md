@@ -2,19 +2,14 @@
 title: "list::push_front (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list::push_front"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["push_front member [STL/CLR]"]
 ms.assetid: 47525641-1139-44fc-ac62-bdc04876d9e0
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::push_front (STL/CLR)

@@ -2,19 +2,14 @@
 title: "deque::erase (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::deque::erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 831fbc2b-604f-446b-88bc-b37531304c33
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::erase (STL/CLR)

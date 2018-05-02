@@ -2,19 +2,14 @@
 title: "multimap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multimap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<map> header [STL/CLR]", "<cliext/map> header [STL/CLR]", "multimap class [STL/CLR]"]
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap (STL/CLR)

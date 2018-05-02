@@ -2,19 +2,14 @@
 title: "queue::push (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::queue::push"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["push member [STL/CLR]"]
 ms.assetid: 97cf1f98-d4c4-417f-b57a-89cdd351ef65
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue::push (STL/CLR)

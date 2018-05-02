@@ -2,19 +2,14 @@
 title: "stack::const_reference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::stack::const_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_reference member [STL/CLR]"]
 ms.assetid: 36be8e21-f2b8-4c2e-a00e-276e73f0d802
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::const_reference (STL/CLR)

@@ -2,19 +2,14 @@
 title: "map::swap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["swap member [STL/CLR]"]
 ms.assetid: b36ed982-21ce-40e5-9636-ecdbaf1b7eec
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::swap (STL/CLR)

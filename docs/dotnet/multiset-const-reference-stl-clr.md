@@ -2,19 +2,14 @@
 title: "multiset::const_reference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiset::const_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_reference member [STL/CLR]"]
 ms.assetid: 6eb23893-ba20-4ddd-8206-60a9bacb8b1a
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::const_reference (STL/CLR)

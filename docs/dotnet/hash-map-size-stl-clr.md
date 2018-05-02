@@ -2,19 +2,14 @@
 title: "hash_map::size (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_map::size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size member [STL/CLR]"]
 ms.assetid: 5eb91502-1b11-4703-b473-eb609c181b74
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::size (STL/CLR)
