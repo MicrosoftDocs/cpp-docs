@@ -2,15 +2,12 @@
 title: "Create a new C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/15/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 

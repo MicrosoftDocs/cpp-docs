@@ -2,16 +2,12 @@
 title: "Copy Sources Project Properties (Linux C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: 1a44230d-5dd8-4d33-93b4-e77e03e00150
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
-#f1_keywords: [VC.Project.VCConfiguration.BuildLogFile]
 ms.workload: ["cplusplus", "linux"]
 ---
 # Copy Sources Project Properties (Linux C++)
