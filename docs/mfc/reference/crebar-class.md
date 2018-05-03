@@ -2,19 +2,14 @@
 title: "CReBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CReBar", "AFXEXT/CReBar", "AFXEXT/CReBar::AddBar", "AFXEXT/CReBar::Create", "AFXEXT/CReBar::GetReBarCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CReBar [MFC], AddBar", "CReBar [MFC], Create", "CReBar [MFC], GetReBarCtrl"]
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CReBar Class

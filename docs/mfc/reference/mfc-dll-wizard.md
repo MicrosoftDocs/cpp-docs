@@ -2,19 +2,14 @@
 title: "MFC DLL Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.dll.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLLs [MFC], creating", "MFC DLL Wizard", "DLLs [MFC], MFC", "DLL wizard [MFC]", "MFC DLLs [MFC]", "DLLs [MFC], creating"]
 ms.assetid: 4e936031-7e39-4f40-a295-42a09c5ff264
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC DLL Wizard

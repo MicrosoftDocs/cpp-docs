@@ -2,19 +2,14 @@
 title: "MFC ActiveX Controls: Using Pictures in an ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["LPPICTUREDISP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnDraw method, MFC ActiveX controls", "MFC ActiveX controls [MFC], pictures", "OnDraw method [MFC]", "OnResetState method [MFC]", "CLSID_CPicturePropPage [MFC]"]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Pictures in an ActiveX Control

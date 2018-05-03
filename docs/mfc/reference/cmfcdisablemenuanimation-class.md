@@ -2,19 +2,14 @@
 title: "CMFCDisableMenuAnimation Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDisableMenuAnimation [MFC], Restore"]
 ms.assetid: c6eb07da-c382-43d6-8028-007f2320e50e
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDisableMenuAnimation Class

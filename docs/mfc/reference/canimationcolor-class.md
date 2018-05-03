@@ -2,19 +2,14 @@
 title: "CAnimationColor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationColor::GetB", "AFXANIMATIONCONTROLLER/CAnimationColor::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetG", "AFXANIMATIONCONTROLLER/CAnimationColor::GetR", "AFXANIMATIONCONTROLLER/CAnimationColor::GetValue", "AFXANIMATIONCONTROLLER/CAnimationColor::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationColor [MFC], CAnimationColor", "CAnimationColor [MFC], AddTransition", "CAnimationColor [MFC], GetB", "CAnimationColor [MFC], GetDefaultValue", "CAnimationColor [MFC], GetG", "CAnimationColor [MFC], GetR", "CAnimationColor [MFC], GetValue", "CAnimationColor [MFC], SetDefaultValue", "CAnimationColor [MFC], GetAnimationVariableList", "CAnimationColor [MFC], m_bValue", "CAnimationColor [MFC], m_gValue", "CAnimationColor [MFC], m_rValue"]
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationColor Class

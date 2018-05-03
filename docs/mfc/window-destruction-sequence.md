@@ -2,18 +2,13 @@
 title: "Window Destruction Sequence | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["destruction, windows", "destroying windows", "sequence [MFC], window destruction", "CWnd objects [MFC], destruction sequence", "sequence [MFC]", "windows [MFC], destroying"]
 ms.assetid: 2d819196-6240-415f-a308-db43745e616c
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Window Destruction Sequence

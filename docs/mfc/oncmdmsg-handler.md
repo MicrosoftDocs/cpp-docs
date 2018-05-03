@@ -2,19 +2,14 @@
 title: "OnCmdMsg Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["OnCmdMsg"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["messages, routing", "handlers [MFC]", "command routing [MFC], OnCmdMsg handler", "handlers, OnCmdMessage [MFC]", "OnCmdMessage method [MFC]"]
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OnCmdMsg Handler

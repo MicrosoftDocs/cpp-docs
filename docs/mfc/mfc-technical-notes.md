@@ -2,19 +2,14 @@
 title: "MFC Technical Notes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.technotes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, technical notes", "technical notes, MFC", "technical notes [MFC]"]
 ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC Technical Notes

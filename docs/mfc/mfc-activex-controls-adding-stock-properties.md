@@ -2,18 +2,13 @@
 title: "MFC ActiveX Controls: Adding Stock Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["BackColor property [MFC]", "properties [MFC], adding stock", "ForeColor property [MFC]", "MFC ActiveX controls [MFC], properties", "foreground colors, ActiveX controls", "foreground colors [MFC]"]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Properties

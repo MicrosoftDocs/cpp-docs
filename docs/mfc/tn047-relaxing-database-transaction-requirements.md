@@ -2,19 +2,14 @@
 title: "TN047: Relaxing Database Transaction Requirements | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.data"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN047"]
 ms.assetid: f93c51cf-a8c0-43d0-aa47-7bcb8333d693
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN047: Relaxing Database Transaction Requirements

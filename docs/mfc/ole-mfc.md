@@ -2,18 +2,13 @@
 title: "OLE (MFC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE [MFC], user-interface topics", "OLE applications [MFC], user interface", "user interfaces, OLE", "applications [OLE], user interface"]
 ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OLE (MFC)

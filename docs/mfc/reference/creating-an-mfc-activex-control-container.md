@@ -2,19 +2,14 @@
 title: "Creating an MFC ActiveX Control Container | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.activex.container"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], containers", "ActiveX control containers [MFC], creating", "containers [MFC], creating", "OLE controls [MFC], containers"]
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating an MFC ActiveX Control Container

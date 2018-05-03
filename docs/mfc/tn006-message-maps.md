@@ -2,19 +2,14 @@
 title: "TN006: Message Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.messages.maps"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "ON_NOTIFY_RANGE macro [MFC]", "ON_COMMAND macro [MFC]", "ON_CONTROL_RANGE macro [MFC]", "ON_REGISTERED_MESSAGE macro [MFC]", "ON_NOTIFY message [MFC]", "ON_COMMAND_RANGE_EX macro [MFC]", "ON_MESSAGE macro [MFC]", "Windows messages [MFC], message maps", "ON_COMMAND_RANGE macro [MFC]", "TN006", "ON_CONTROL macro [MFC]", "ON_COMMAND_EX macro [MFC]", "message maps [MFC], Windows messaging"]
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN006: Message Maps
