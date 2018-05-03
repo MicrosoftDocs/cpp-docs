@@ -220,8 +220,6 @@
             "redirect_url": "cpp/cppcx/operator-windows-ui-xaml-interop-typename",
             "redirect_document_id": false
         },
-        docs/cppcx/.md
-docs/cppcx/operator-subtractwindows-ui-xaml-interop-typename.md
         {
             "source_path": "docs/c-runtime-library/flag-directives.md",
             "redirect_url": "/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions#flags",
