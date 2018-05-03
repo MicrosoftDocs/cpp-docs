@@ -2,19 +2,14 @@
 title: "Project and Solution Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.files.projectandsolution"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["project files [C++]", "file types [C++], makefiles", ".sdf, browsing database file", "Makefile projects", "browsing database file, .sdf", "file types [C++], project files"]
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Project and Solution Files

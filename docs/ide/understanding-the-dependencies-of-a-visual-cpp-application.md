@@ -2,18 +2,13 @@
 title: "Understanding the Dependencies of a Visual C++ Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["application deployment [C++], dependencies", "Dependency Walker", "dependencies [C++], application deployment and", "deploying applications [C++], dependencies", "DUMPBIN utility", "DLLs [C++], dependencies", "depends.exe", "libraries [C++], application deployment issues"]
 ms.assetid: 62a44c95-c389-4c5f-82fd-07d7ef09dbf9
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Understanding the Dependencies of a Visual C++ Application
