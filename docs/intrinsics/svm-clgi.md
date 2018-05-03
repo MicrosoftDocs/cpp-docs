@@ -2,19 +2,14 @@
 title: "__svm_clgi | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__svm_clgi"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLGI instruction", "__svm_clgi intrinsic"]
 ms.assetid: 6640f5ab-9472-46f9-a042-e15c4f1ff858
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __svm_clgi
