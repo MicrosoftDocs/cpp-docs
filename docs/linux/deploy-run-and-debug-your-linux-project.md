@@ -2,15 +2,12 @@
 title: "Deploy, run, and debug Your Linux project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/06/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 
