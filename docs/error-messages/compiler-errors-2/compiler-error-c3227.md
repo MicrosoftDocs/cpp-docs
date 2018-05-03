@@ -2,19 +2,14 @@
 title: "Compiler Error C3227 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3227"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3227"]
 ms.assetid: 7939c23a-96c8-43c2-89e9-f217d132d155
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3227

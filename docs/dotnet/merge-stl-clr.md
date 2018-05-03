@@ -2,19 +2,14 @@
 title: "merge (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::merge"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["merge function [STL/CLR]"]
 ms.assetid: e42d3396-63a4-438a-964d-83e90405102e
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # merge (STL/CLR)

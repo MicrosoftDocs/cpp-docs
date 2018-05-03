@@ -2,19 +2,14 @@
 title: "collection_adapter (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::collection_adapter"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["collection_adapter class [STL/CLR]"]
 ms.assetid: 31964058-1f50-48bf-82c2-b0b3cc8a7887
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # collection_adapter (STL/CLR)

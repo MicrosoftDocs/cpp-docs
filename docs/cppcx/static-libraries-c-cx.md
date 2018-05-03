@@ -3,15 +3,10 @@ title: "Static libraries (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Static libraries (C++/CX)

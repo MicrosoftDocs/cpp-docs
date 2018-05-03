@@ -2,19 +2,14 @@
 title: "Adding an MFC Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.codewiz.classes.adding.mfc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["classes [MFC], adding MFC", "MFC, adding classes"]
 ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding an MFC Class

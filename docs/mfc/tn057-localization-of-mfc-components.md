@@ -2,19 +2,14 @@
 title: "TN057: Localization of MFC Components | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.components"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["components [MFC], localizing", "TN057", "resources [MFC], localization", "localization [MFC], MFC resources", "localization [MFC], MFC components", "MFC DLLs [MFC], localizing", "DLLs [MFC], localizing MFC", "localization [MFC], resources"]
 ms.assetid: 5376d329-bd45-41bd-97f5-3d895a9a0af5
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN057: Localization of MFC Components

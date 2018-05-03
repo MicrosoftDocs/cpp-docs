@@ -2,18 +2,13 @@
 title: "Property Index Declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["indexers", "default indexers", "defaults, indexers", "indexed properties, C++"]
 ms.assetid: d898fdbc-2106-4b6a-8c5c-9f511d80fc2f
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Property Index Declaration

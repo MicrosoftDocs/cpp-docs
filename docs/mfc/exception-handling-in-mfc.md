@@ -2,18 +2,13 @@
 title: "Exception Handling in MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["DAO [MFC], exceptions", "assertions [MFC], When to use exceptions", "exception handling [MFC], MFC", "resource allocation exception", "resources [MFC], allocating", "keywords [MFC], exception handling", "errors [MFC], detected by assertions", "ODBC exceptions [MFC]", "serialization [MFC], exceptions", "Automation [MFC], exceptions", "exception macros [MFC]", "predefined exceptions [MFC]", "C++ exception handling [MFC], enabling", "C++ exception handling [MFC], MFC applications", "requests for unsupported services [MFC]", "database exceptions [MFC]", "archive exceptions [MFC]", "MFC, exceptions", "C++ exception handling [MFC], types of", "macros [MFC], exception handling", "abnormal program execution [MFC]", "OLE exceptions [MFC], MFC exception handling", "error handling [MFC], exceptions and", "class libraries [MFC], exception support", "exceptions [MFC], MFC macros vs. C++ keywords", "memory [MFC], out-of-memory exceptions", "Windows [MFC], resource allocation exceptions", "macros [MFC], MFC exception macros", "function calls [MFC], results", "out-of-memory exceptions [MFC]"]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling in MFC

@@ -2,19 +2,14 @@
 title: "Linker Tools Error LNK2001 | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK2001"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2001"]
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2001

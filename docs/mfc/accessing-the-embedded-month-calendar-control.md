@@ -2,18 +2,13 @@
 title: "Accessing the Embedded Month Calendar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["DateTimePicker control [MFC], accessing month calendar", "CDateTimeCtrl class [MFC], accessing embedded control", "month calendar controls [MFC], embedded in date/time picker", "CMonthCalCtrl class [MFC], changing the font", "month calendar controls [MFC], changing the font", "DateTimePicker control [MFC]"]
 ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Accessing the Embedded Month Calendar Control

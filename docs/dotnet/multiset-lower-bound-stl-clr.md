@@ -2,19 +2,14 @@
 title: "multiset::lower_bound (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiset::lower_bound"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["lower_bound member [STL/CLR]"]
 ms.assetid: 5e3d1ba0-8b03-436e-b502-dbdb764f452b
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::lower_bound (STL/CLR)

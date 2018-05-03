@@ -2,19 +2,14 @@
 title: "Fatal Error C1510 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/11/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C1510"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C1510"]
 ms.assetid: 150c827f-9514-41a9-8d7e-82f820749bcb
-caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1510

@@ -2,19 +2,14 @@
 title: "CDocObjectServerItem Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem::GetDocument", "AFXDOCOB/CDocObjectServerItem::OnHide", "AFXDOCOB/CDocObjectServerItem::OnShow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDocObjectServerItem [MFC], CDocObjectServerItem", "CDocObjectServerItem [MFC], GetDocument", "CDocObjectServerItem [MFC], OnHide", "CDocObjectServerItem [MFC], OnShow"]
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDocObjectServerItem Class

@@ -2,18 +2,13 @@
 title: "Header Items in a Header Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["header controls [MFC], header items in", "header items in header controls [MFC]", "CHeaderCtrl class [MFC], header items in", "controls [MFC], header"]
 ms.assetid: ac79ef1f-a671-4ab2-93e9-b1aa016a48bf
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Header Items in a Header Control

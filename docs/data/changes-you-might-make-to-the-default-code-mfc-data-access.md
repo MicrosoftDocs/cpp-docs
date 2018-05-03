@@ -2,18 +2,13 @@
 title: "Changes You Might Make to the Default Code  (MFC Data Access) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["record views [C++], customizing default code"]
 ms.assetid: 9992ed37-a6bf-45a5-a572-5c14e42b6628
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Changes You Might Make to the Default Code  (MFC Data Access)

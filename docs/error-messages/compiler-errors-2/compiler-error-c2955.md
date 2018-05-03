@@ -2,19 +2,14 @@
 title: "Compiler Error C2955 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/28/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2955"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2955"]
 ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2955

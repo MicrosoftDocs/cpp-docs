@@ -2,19 +2,14 @@
 title: "MFC ActiveX Controls: Licensing an ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["COleObjectFactory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleObjectFactory class [MFC], licensing controls", "MFC ActiveX controls [MFC], licensing", "VerifyLicenseKey method [MFC]", "VerifyUserLicense method [MFC]", "GetLicenseKey method [MFC]", "licensing ActiveX controls"]
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Licensing an ActiveX Control

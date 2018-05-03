@@ -2,19 +2,14 @@
 title: "numeric (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["<cliext/numeric>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["numeric functions [STL/CLR]", "<cliext/numeric> header [STL/CLR]", "<numeric> header [STL/CLR]"]
 ms.assetid: 1dc4d9a3-e734-459c-9678-5d9be0ef4c79
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # numeric (STL/CLR)

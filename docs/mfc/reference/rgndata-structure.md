@@ -2,19 +2,14 @@
 title: "RGNDATA Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["RGNDATA"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RGNDATA structure [MFC]"]
 ms.assetid: 72257c00-f440-4dca-979e-9b6b5b2d5f2f
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # RGNDATA Structure

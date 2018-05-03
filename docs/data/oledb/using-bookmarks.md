@@ -2,18 +2,13 @@
 title: "Using Bookmarks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "OLE DB providers, bookmark support"]
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Bookmarks

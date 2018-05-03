@@ -2,19 +2,14 @@
 title: "Variant Parameter Type Constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["VTS_YPOS_HIMETRIC", "VTS_PICTURE", "VTS_FONT", "VTS_XPOS_HIMETRIC", "VTS_XPOS_PIXELS", "VTS_XSIZE_HIMETRIC", "VTS_YPOS_PIXELS", "VTS_TRISTATE", "VTS_HANDLE", "VTS_YSIZE_HIMETRIC", "VTS_COLOR", "VTS_OPTEXCLUSIVE", "VTS_YSIZE_PIXELS", "VTS_XSIZE_PIXELS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VTS_XPOS_HIMETRIC constant [MFC]", "VTS_FONT constant [MFC]", "VTS_XPOS_PIXELS constant [MFC]", "VTS_COLOR constant [MFC]", "Variants [MFC]", "VTS_YPOS_PIXELS constant [MFC]", "VTS_YSIZE_HIMETRIC constant [MFC]", "VTS_YPOS_HIMETRIC constant [MFC]", "Variants, parameter type constants", "Variant data constants [MFC]", "VTS_PICTURE constant [MFC]", "VTS_TRISTATE constant [MFC]", "VTS_XSIZE_HIMETRIC constant [MFC]", "VTS_HANDLE constant [MFC]", "VTS_XSIZE_PIXELS constant [MFC]", "VTS_OPTEXCLUSIVE constant [MFC]", "VTS_YSIZE_PIXELS constant [MFC]"]
 ms.assetid: de99c7a9-7aae-4dc4-b723-40c6380543ab
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Variant Parameter Type Constants

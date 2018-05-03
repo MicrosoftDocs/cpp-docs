@@ -2,19 +2,14 @@
 title: "CBulkRowset Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL::CBulkRowset", "ATL.CBulkRowset", "ATL::CBulkRowset<TAccessor>", "CBulkRowset", "ATL.CBulkRowset<TAccessor>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBulkRowset class"]
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset Class

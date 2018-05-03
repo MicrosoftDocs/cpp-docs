@@ -2,19 +2,14 @@
 title: "CDocItem Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDocItem", "AFXOLE/CDocItem", "AFXOLE/CDocItem::GetDocument", "AFXOLE/CDocItem::IsBlank"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDocItem [MFC], GetDocument", "CDocItem [MFC], IsBlank"]
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDocItem Class

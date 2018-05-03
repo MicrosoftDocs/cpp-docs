@@ -2,19 +2,14 @@
 title: "BOOKMARK_ENTRY | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BOOKMARK_ENTRY"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BOOKMARK_ENTRY macro"]
 ms.assetid: ec8222f5-9d90-46cb-989e-23f24465083f
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BOOKMARK_ENTRY

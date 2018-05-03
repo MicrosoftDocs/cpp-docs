@@ -2,19 +2,14 @@
 title: "deque (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::deque"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["deque class [STL/CLR]", "<deque> header [STL/CLR]", "<cliext/deque> header [STL/CLR]"]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque (STL/CLR)

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4701 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4701"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4701"]
 ms.assetid: d7c76c66-1f3f-4d3c-abe4-5d94c84a5a1f
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4701

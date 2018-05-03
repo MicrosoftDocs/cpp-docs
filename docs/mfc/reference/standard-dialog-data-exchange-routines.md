@@ -2,18 +2,13 @@
 title: "Standard Dialog Data Exchange Routines | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["standard dialog, data exchange routines"]
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Exchange Routines

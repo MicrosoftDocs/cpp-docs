@@ -2,18 +2,13 @@
 title: "Creating an Updatable Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, updatable", "notifications, support in providers", "OLE DB providers, creating"]
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an Updatable Provider

@@ -2,19 +2,14 @@
 title: "Compiler Error C2440 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/28/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2440"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2440"]
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2440

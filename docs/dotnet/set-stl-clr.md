@@ -2,19 +2,14 @@
 title: "set (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::set"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<cliext/set> header [STL/CLR]", "<set> header [STL/CLR]", "set class [STL/CLR]"]
 ms.assetid: 27d3628c-741a-43a7-bef1-5085536f679e
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # set (STL/CLR)

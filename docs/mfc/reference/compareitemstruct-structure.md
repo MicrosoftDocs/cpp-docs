@@ -2,19 +2,14 @@
 title: "COMPAREITEMSTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["COMPAREITEMSTRUCT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COMPAREITEMSTRUCT structure [MFC]"]
 ms.assetid: 4b7131a5-5c7d-4e98-aac7-e85650262b52
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COMPAREITEMSTRUCT Structure

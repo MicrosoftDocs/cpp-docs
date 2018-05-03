@@ -2,18 +2,13 @@
 title: "ActiveX Control Containers: Handling Events from an ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [MFC], ActiveX controls", "ActiveX control containers [MFC], event sinks", "event handling [MFC], ActiveX controls", "ON_EVENT macro [MFC]", "ActiveX controls [MFC], events [MFC]", "END_EVENTSINK_MAP macro, using", "events [MFC], ActiveX controls", "BEGIN_EVENTSINK_MAP macro"]
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Handling Events from an ActiveX Control

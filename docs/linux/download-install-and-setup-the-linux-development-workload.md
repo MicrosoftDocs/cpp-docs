@@ -2,15 +2,12 @@
 title: "Download, install, and setup the Linux workload | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 

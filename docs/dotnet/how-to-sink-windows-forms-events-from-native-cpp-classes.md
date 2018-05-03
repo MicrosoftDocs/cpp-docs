@@ -1,19 +1,14 @@
 ---
 title: "How to: Sink Windows Forms Events from Native C++ Classes | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, managed/native interop", "event handling, sinking .NET in C++", "event handling, .NET/native interop", "event handling, Windows Forms in C++"]
 ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Sink Windows Forms Events from Native C++ Classes

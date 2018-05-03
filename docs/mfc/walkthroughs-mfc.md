@@ -2,18 +2,13 @@
 title: "Walkthroughs (MFC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Feature Pack, walkthroughs"]
 ms.assetid: 20d5756f-ad58-46f4-8b6c-c7a1020b72eb
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthroughs (MFC)

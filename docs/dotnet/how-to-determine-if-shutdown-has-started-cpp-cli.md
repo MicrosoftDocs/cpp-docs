@@ -2,18 +2,13 @@
 title: "How to: Determine if Shutdown Has Started (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: [".NET Framework, shutdown", "shutdown", "termination", "applications [C++], shutdown"]
 ms.assetid: a8d39731-dea8-4f0a-96b7-2a5de09b21d7
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Determine if Shutdown Has Started (C++/CLI)

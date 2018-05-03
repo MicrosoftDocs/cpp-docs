@@ -2,19 +2,14 @@
 title: "Linker Tools Error LNK1218 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1218"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1218"]
 ms.assetid: bf599350-be03-4344-be43-91e29c4f1556
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1218

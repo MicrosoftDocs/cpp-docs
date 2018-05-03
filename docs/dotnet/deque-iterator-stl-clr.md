@@ -2,19 +2,14 @@
 title: "deque::iterator (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::deque::iterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iterator member [STL/CLR]"]
 ms.assetid: 3529e793-5d56-4cb2-898d-fdedb90b5c0c
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::iterator (STL/CLR)

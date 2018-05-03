@@ -2,18 +2,13 @@
 title: "Drawing in a View | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["drawing [MFC], in views", "views [MFC], printing", "views [MFC], updating", "printing [MFC], views", "views [MFC], rendering", "printing views [MFC]", "paint messages in view class [MFC]", "device contexts, screen drawings"]
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Drawing in a View

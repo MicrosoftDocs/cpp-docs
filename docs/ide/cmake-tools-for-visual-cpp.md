@@ -2,17 +2,13 @@
 title: "CMake Projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/08/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMake projects in Visual C++

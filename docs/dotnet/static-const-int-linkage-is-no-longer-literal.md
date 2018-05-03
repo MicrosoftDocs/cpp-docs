@@ -2,18 +2,13 @@
 title: "Static Const Int Linkage Is No Longer Literal | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["literal attribute [C++]", "constants, declaring", "integral constant expressions"]
 ms.assetid: d2a5e3d2-ffb0-4b61-8114-bec5993a1195
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Static Const Int Linkage Is No Longer Literal

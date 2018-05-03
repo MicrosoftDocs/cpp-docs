@@ -2,19 +2,14 @@
 title: "CBaseTabbedPane Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CBaseTabbedPane", "AFXBASETABBEDPANE/CBaseTabbedPane", "AFXBASETABBEDPANE/CBaseTabbedPane::AddTab", "AFXBASETABBEDPANE/CBaseTabbedPane::AllowDestroyEmptyTabbedPane", "AFXBASETABBEDPANE/CBaseTabbedPane::ApplyRestoredTabInfo", "AFXBASETABBEDPANE/CBaseTabbedPane::CanFloat", "AFXBASETABBEDPANE/CBaseTabbedPane::CanSetCaptionTextToTabName", "AFXBASETABBEDPANE/CBaseTabbedPane::ConvertToTabbedDocument", "AFXBASETABBEDPANE/CBaseTabbedPane::DetachPane", "AFXBASETABBEDPANE/CBaseTabbedPane::EnableSetCaptionTextToTabName", "AFXBASETABBEDPANE/CBaseTabbedPane::FillDefaultTabsOrderArray", "AFXBASETABBEDPANE/CBaseTabbedPane::FindBarByTabNumber", "AFXBASETABBEDPANE/CBaseTabbedPane::FindPaneByID", "AFXBASETABBEDPANE/CBaseTabbedPane::FloatTab", "AFXBASETABBEDPANE/CBaseTabbedPane::GetDefaultTabsOrder", "AFXBASETABBEDPANE/CBaseTabbedPane::GetFirstVisibleTab", "AFXBASETABBEDPANE/CBaseTabbedPane::GetMinSize", "AFXBASETABBEDPANE/CBaseTabbedPane::GetPaneIcon", "AFXBASETABBEDPANE/CBaseTabbedPane::GetPaneList", "AFXBASETABBEDPANE/CBaseTabbedPane::GetTabArea", "AFXBASETABBEDPANE/CBaseTabbedPane::GetTabsNum", "AFXBASETABBEDPANE/CBaseTabbedPane::GetUnderlyingWindow", "AFXBASETABBEDPANE/CBaseTabbedPane::GetVisibleTabsNum", "AFXBASETABBEDPANE/CBaseTabbedPane::HasAutoHideMode", "AFXBASETABBEDPANE/CBaseTabbedPane::IsHideSingleTab", "AFXBASETABBEDPANE/CBaseTabbedPane::RecalcLayout", "AFXBASETABBEDPANE/CBaseTabbedPane::RemovePane", "AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoDestroy", "AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoHideMode", "AFXBASETABBEDPANE/CBaseTabbedPane::ShowTab"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBaseTabbedPane [MFC], AddTab", "CBaseTabbedPane [MFC], AllowDestroyEmptyTabbedPane", "CBaseTabbedPane [MFC], ApplyRestoredTabInfo", "CBaseTabbedPane [MFC], CanFloat", "CBaseTabbedPane [MFC], CanSetCaptionTextToTabName", "CBaseTabbedPane [MFC], ConvertToTabbedDocument", "CBaseTabbedPane [MFC], DetachPane", "CBaseTabbedPane [MFC], EnableSetCaptionTextToTabName", "CBaseTabbedPane [MFC], FillDefaultTabsOrderArray", "CBaseTabbedPane [MFC], FindBarByTabNumber", "CBaseTabbedPane [MFC], FindPaneByID", "CBaseTabbedPane [MFC], FloatTab", "CBaseTabbedPane [MFC], GetDefaultTabsOrder", "CBaseTabbedPane [MFC], GetFirstVisibleTab", "CBaseTabbedPane [MFC], GetMinSize", "CBaseTabbedPane [MFC], GetPaneIcon", "CBaseTabbedPane [MFC], GetPaneList", "CBaseTabbedPane [MFC], GetTabArea", "CBaseTabbedPane [MFC], GetTabsNum", "CBaseTabbedPane [MFC], GetUnderlyingWindow", "CBaseTabbedPane [MFC], GetVisibleTabsNum", "CBaseTabbedPane [MFC], HasAutoHideMode", "CBaseTabbedPane [MFC], IsHideSingleTab", "CBaseTabbedPane [MFC], RecalcLayout", "CBaseTabbedPane [MFC], RemovePane", "CBaseTabbedPane [MFC], SetAutoDestroy", "CBaseTabbedPane [MFC], SetAutoHideMode", "CBaseTabbedPane [MFC], ShowTab"]
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CBaseTabbedPane Class

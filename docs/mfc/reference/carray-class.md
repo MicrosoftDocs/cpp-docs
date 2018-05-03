@@ -2,19 +2,14 @@
 title: "CArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CArray", "AFXTEMPL/CArray", "AFXTEMPL/CArray::CArray", "AFXTEMPL/CArray::Add", "AFXTEMPL/CArray::Append", "AFXTEMPL/CArray::Copy", "AFXTEMPL/CArray::ElementAt", "AFXTEMPL/CArray::FreeExtra", "AFXTEMPL/CArray::GetAt", "AFXTEMPL/CArray::GetCount", "AFXTEMPL/CArray::GetData", "AFXTEMPL/CArray::GetSize", "AFXTEMPL/CArray::GetUpperBound", "AFXTEMPL/CArray::InsertAt", "AFXTEMPL/CArray::IsEmpty", "AFXTEMPL/CArray::RemoveAll", "AFXTEMPL/CArray::RemoveAt", "AFXTEMPL/CArray::SetAt", "AFXTEMPL/CArray::SetAtGrow", "AFXTEMPL/CArray::SetSize"]
 dev_langs: ["CPP"]
 helpviewer_keywords: ["CArray [MFC], CArray", "CArray [MFC], Add", "CArray [MFC], Append", "CArray [MFC], Copy", "CArray [MFC], ElementAt", "CArray [MFC], FreeExtra", "CArray [MFC], GetAt", "CArray [MFC], GetCount", "CArray [MFC], GetData", "CArray [MFC], GetSize", "CArray [MFC], GetUpperBound", "CArray [MFC], InsertAt", "CArray [MFC], IsEmpty", "CArray [MFC], RemoveAll", "CArray [MFC], RemoveAt", "CArray [MFC], SetAt", "CArray [MFC], SetAtGrow", "CArray [MFC], SetSize"]
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CArray Class

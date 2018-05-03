@@ -2,18 +2,13 @@
 title: "HLSL Property Pages: General | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.FXCompilerTool.ShaderModel", "VC.Project.FXCompilerTool.PreprocessorDefinitions", "VC.Project.FXCompilerTool.ShaderType", "VC.Project.FXCompilerTool.EnableDebuggingInformation", "VC.Project.FXCompilerTool.AdditionalIncludeDirectories", "VC.Project.FXCompilerTool.DisableOptimizations", "VC.Project.FXCompilerTool.EntryPointName"]
 dev_langs: ["C++"]
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages: General

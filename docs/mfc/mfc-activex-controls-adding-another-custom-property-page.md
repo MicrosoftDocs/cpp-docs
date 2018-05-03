@@ -2,18 +2,13 @@
 title: "MFC ActiveX Controls: Adding Another Custom Property Page | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["property pages [MFC], MFC ActiveX controls", "custom property pages [MFC]", "ActiveX controls [MFC], property pages", "MFC ActiveX controls [MFC], property pages"]
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Another Custom Property Page

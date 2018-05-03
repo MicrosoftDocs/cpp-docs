@@ -2,19 +2,14 @@
 title: "SET_PARAM_TYPE | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["SET_PARAM_TYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SET_PARAM_TYPE macro"]
 ms.assetid: 85979070-2d55-4c67-94b1-9b9058babc59
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # SET_PARAM_TYPE

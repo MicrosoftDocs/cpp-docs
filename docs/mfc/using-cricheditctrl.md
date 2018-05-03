@@ -2,19 +2,14 @@
 title: "Using CRichEditCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CRichEditCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rich edit controls [MFC], using", "CRichEditCtrl class [MFC], using"]
 ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CRichEditCtrl

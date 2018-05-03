@@ -2,19 +2,14 @@
 title: "Using Your Old Toolbars | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["COldToolBar"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["toolbars [MFC], backward compatibility", "COldToolBar class [MFC]"]
 ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Your Old Toolbars

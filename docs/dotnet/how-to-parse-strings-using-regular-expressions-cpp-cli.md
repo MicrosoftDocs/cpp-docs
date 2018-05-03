@@ -2,18 +2,13 @@
 title: "How to: Parse Strings Using Regular Expressions (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parsing strings [C++]", "examples [C++], strings", "regular expressions [C++], parsing strings", "strings [C++], parsing"]
 ms.assetid: 5b0c7ca3-9bba-4389-a45c-6d373cff91b0
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Parse Strings Using Regular Expressions (C++/CLI)

@@ -2,18 +2,13 @@
 title: "OLE Background: Containers and Servers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE full-server applications [MFC]", "server applications [MFC], communication with containers", "full-server [MFC]", "server applications [MFC], requirements", "server applications [MFC], defined", "OLE server applications [MFC], about server applications", "server applications [MFC], full-server vs. mini-server", "OLE server applications [MFC], mini-server applications", "OLE containers [MFC], container applications", "containers [MFC], OLE container applications", "server applications [MFC]"]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OLE Background: Containers and Servers

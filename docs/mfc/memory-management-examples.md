@@ -2,18 +2,13 @@
 title: "Memory Management: Examples | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], memory allocation", "data structures [MFC]", "arrays [MFC], allocating resources", "objects [MFC], allocating memory", "data structures [MFC], allocating memory", "examples [MFC], memory allocation", "heap allocation [MFC], examples", "memory allocation [MFC], arrays", "MFC, memory management", "struct memory allocation [MFC]", "types [MFC], memory allocation", "memory allocation [MFC], objects", "memory allocation [MFC], examples", "arrays [MFC], memory management", "frame allocation [MFC]", "memory allocation [MFC], data structures"]
 ms.assetid: f10240f8-b698-4c83-9288-97a54318930b
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Memory Management: Examples

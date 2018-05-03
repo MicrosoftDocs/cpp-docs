@@ -2,19 +2,14 @@
 title: "rotate_copy (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::rotate_copy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rotate_copy function [STL/CLR]"]
 ms.assetid: ed697552-130f-474f-9ab6-133332bb2587
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # rotate_copy (STL/CLR)

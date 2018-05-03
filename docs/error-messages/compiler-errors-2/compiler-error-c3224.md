@@ -2,19 +2,14 @@
 title: "Compiler Error C3224 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3224"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3224"]
 ms.assetid: 129be22f-8f3e-4fc6-9ccd-d27d8ef91251
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3224

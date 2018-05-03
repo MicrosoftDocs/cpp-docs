@@ -2,19 +2,14 @@
 title: "Resource Compiler Warning RC4093 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["RC4093"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RC4093"]
 ms.assetid: 3c61b4a4-b418-465b-a4fd-cb1ff0adb8dd
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Warning RC4093

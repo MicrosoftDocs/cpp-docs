@@ -2,19 +2,14 @@
 title: "list::reference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reference member [STL/CLR]"]
 ms.assetid: 318a4566-63f2-4744-8e06-14f7c5608d82
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::reference (STL/CLR)

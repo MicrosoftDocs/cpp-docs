@@ -2,19 +2,14 @@
 title: "Project Build Error PRJ0006 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["PRJ0006"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0006"]
 ms.assetid: ce092be4-1652-414f-8cb5-b97ef5841f89
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0006

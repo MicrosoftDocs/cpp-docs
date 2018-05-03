@@ -3,18 +3,13 @@ title: "Platform::Collections Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2018"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Collections Namespace"]
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
-caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections Namespace

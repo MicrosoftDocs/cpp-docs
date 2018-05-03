@@ -3,18 +3,13 @@ title: "Platform::Object Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Object::Object", "VCCORLIB/Platform::Object::Equals", "VCCORLIB/Platform::Object::GetHashCode", "VCCORLIB/Platform::Object::ReferenceEquals", "VCCORLIB/Platform::ToString", "VCCORLIB/Platform::GetType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Object class"]
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Object Class

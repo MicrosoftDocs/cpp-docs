@@ -2,18 +2,13 @@
 title: "Accessing Run-Time Class Information | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObject class [MFC], and RTTI", "CObject class [MFC], using IsKindOf method [MFC]", "run time [MFC], class information", "RUNTIME_CLASS macro [MFC]", "CObject class [MFC], using RUNTIME_CLASS macro [MFC]", "RTTI compiler option [MFC]", "CObject class [MFC], accessing run-time class information", "run time [MFC]", "IsKindOf method method [MFC]", "run-time class [MFC], accessing information", "classes [MFC], run-time class information", "run-time class [MFC]", "RUNTIME_CLASS macro, using"]
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Accessing Run-Time Class Information

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4365 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4365"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4365"]
 ms.assetid: af4b4191-bdfd-4dbb-8229-3ba4405df257
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4365

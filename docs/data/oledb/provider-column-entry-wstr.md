@@ -2,19 +2,14 @@
 title: "PROVIDER_COLUMN_ENTRY_WSTR | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["PROVIDER_COLUMN_ENTRY_WSTR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY_WSTR macro"]
 ms.assetid: 70630bd5-d782-473b-9777-aebbbf5321c5
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # PROVIDER_COLUMN_ENTRY_WSTR

@@ -2,19 +2,14 @@
 title: "RECT Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["LPRECT", "RECT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RECT structure [MFC]", "LPRECT structure [MFC]"]
 ms.assetid: 1b3160de-64e9-40d1-89eb-af3e0fd6acf0
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # RECT Structure1

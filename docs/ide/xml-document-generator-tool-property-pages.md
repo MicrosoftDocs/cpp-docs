@@ -2,18 +2,13 @@
 title: "XML Document Generator Tool Property Pages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCXDCMakeTool.ValidateIntelliSense", "VC.Project.VCXDCMakeTool.SuppressStartupBanner", "VC.Project.VCXDCMakeTool.DocumentLibraryDependencies", "VC.Project.VCXDCMakeTool.OutputDocumentFile", "VC.Project.VCXDCMakeTool.AdditionalDocumentFiles"]
 dev_langs: ["C++"]
 ms.assetid: 645912b5-197a-4c36-ba58-64df09444ca0
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # XML Document Generator Tool Property Pages

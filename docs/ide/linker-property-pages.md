@@ -2,19 +2,14 @@
 title: "Linker Property Pages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/21/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCLinkerTool.RegisterOutput", "VC.Project.VCLinkerTool.OVERWRITEImportLibrary", "VC.Project.VCLinkerTool.UseLibraryDependencyInputs", "VC.Project.VCLinkerTool.LinkLibraryDependencies"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["per-user redirection", "Linker property pages"]
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Property Pages

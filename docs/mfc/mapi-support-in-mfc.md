@@ -2,18 +2,13 @@
 title: "MAPI Support in MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, MAPI support", "MAPI support in MFC", "CDocument class [MFC], and MAPI", "OnUpdateFileSendMail method [MFC]", "MAPI, MFC", "OnFileSendMail method [MFC]"]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MAPI Support in MFC

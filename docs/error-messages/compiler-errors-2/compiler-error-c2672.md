@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2672 | Microsoft Docs"
 ms.date: "10/24/2017"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2672"]
 dev_langs: ["C++"]
@@ -9,7 +9,6 @@ helpviewer_keywords: ["C2672"]
 ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2672

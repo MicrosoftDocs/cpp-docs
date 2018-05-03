@@ -2,19 +2,14 @@
 title: "Compiler Error C3017 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3017"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3017"]
 ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3017

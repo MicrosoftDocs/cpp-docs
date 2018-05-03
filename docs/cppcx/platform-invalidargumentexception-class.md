@@ -3,18 +3,13 @@ title: "Platform::InvalidArgumentException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::InvalidArgumentException", "VCCORLIB/Platform::InvalidArgumentException::InvalidArgumentException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::InvalidArgumentException"]
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidArgumentException Class

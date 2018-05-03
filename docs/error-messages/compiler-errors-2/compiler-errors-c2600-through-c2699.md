@@ -1,7 +1,7 @@
 ---
 title: "Compiler Errors C2600 Through C2699 | Microsoft Docs"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2604", "C2606", "C2607", "C2608", "C2609", "C2610", "C2615", "C2618", "C2620", "C2621", "C2622", "C2623", "C2625", "C2629", "C2631", "C2639", "C2641", "C2642", "C2643", "C2644", "C2684", "C2685", "C2686", "C2697"]
 helpviewer_keywords: ["C2604", "C2606", "C2607", "C2608", "C2609", "C2610", "C2615", "C2618", "C2620", "C2621", "C2622", "C2623", "C2625", "C2629", "C2631", "C2639", "C2641", "C2642", "C2643", "C2644", "C2684", "C2685", "C2686", "C2697"]
@@ -9,7 +9,6 @@ dev_langs: ["C++"]
 ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2600 Through C2699

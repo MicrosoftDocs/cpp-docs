@@ -2,19 +2,14 @@
 title: "TN003: Mapping of Windows Handles to Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mapping"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN003", "handle maps", "Windows handles to objects [MFC]", "mappings [MFC], Windows handles to objects"]
 ms.assetid: fbea9f38-992c-4091-8dbc-f29e288617d6
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN003: Mapping of Windows Handles to Objects

@@ -2,18 +2,13 @@
 title: "Framework (MFC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["encapsulation [MFC], Win32 API", "MFC, application framework", "wrapper classes [MFC], explained", "Win32 [MFC], API encapsulation by MFC", "application framework [MFC], about MFC application framework", "APIs [MFC], encapsulation by MFC Win32", "encapsulation [MFC]", "Windows API [MFC], encapsulation by MFC", "encapsulated Win32 API [MFC]"]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Framework (MFC)

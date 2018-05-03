@@ -2,18 +2,13 @@
 title: "ActiveX Control Containers: Viewing and Modifying Control Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["properties [MFC], viewing and modifying", "ActiveX control containers [MFC], viewing and modifying properties", "resource editors, viewing and modifying ActiveX controls", "ActiveX controls [MFC], properties", "controls [MFC], properties"]
 ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Viewing and Modifying Control Properties

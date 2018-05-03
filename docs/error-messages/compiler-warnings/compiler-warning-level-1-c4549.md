@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4549 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4549"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4549"]
 ms.assetid: 81a07676-625b-4f58-9b0c-3ee22830b04a
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4549

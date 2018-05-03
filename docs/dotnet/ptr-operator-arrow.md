@@ -2,19 +2,14 @@
 title: "ptr::operator-&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr.com.ptr.operator->", "ptr.operator->", "ptr::operator->", "msclr::com::ptr::operator->"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ptr::operator->"]
 ms.assetid: e752b549-74ed-430d-9a60-6c8e0e441998
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::operator-&gt;

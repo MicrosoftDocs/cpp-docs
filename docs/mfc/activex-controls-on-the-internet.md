@@ -2,18 +2,13 @@
 title: "ActiveX Controls on the Internet | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], creating", "ActiveX controls [MFC], Internet", "downloading data with ActiveX controls", "OLE controls [MFC], upgrading to ActiveX", "Internet applications [MFC], ActiveX controls", "networks [MFC], downloading with ActiveX controls"]
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Controls on the Internet

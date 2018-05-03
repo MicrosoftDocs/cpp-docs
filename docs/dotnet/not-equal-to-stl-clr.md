@@ -2,19 +2,14 @@
 title: "not_equal_to (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::not_equal_to"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["not_equal_to function [STL/CLR]"]
 ms.assetid: 1b66e0ca-eace-4672-8da9-ed16f8608bca
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # not_equal_to (STL/CLR)

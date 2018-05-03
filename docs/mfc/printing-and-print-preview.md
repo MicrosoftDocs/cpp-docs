@@ -2,18 +2,13 @@
 title: "Printing and Print Preview | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["printing [MFC]", "previewing printing", "printing [MFC]", "print preview", "printing [MFC], print preview"]
 ms.assetid: d15059cd-32de-4450-95f7-e73aece238f6
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Printing and Print Preview

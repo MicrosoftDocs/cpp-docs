@@ -2,19 +2,14 @@
 title: "Compiler Error C3860 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3860"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3860"]
 ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3860

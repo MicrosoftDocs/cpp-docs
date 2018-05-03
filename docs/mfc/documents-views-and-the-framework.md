@@ -2,18 +2,13 @@
 title: "Documents, Views, and the Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["document templates [MFC], template objects", "applications [MFC]", "MFC, application framework", "application objects [MFC], relation to other MFC objects", "documents [MFC]", "MFC, documents", "document objects [MFC], in relation to other MFC objects", "view objects [MFC], relation to other MFC objects", "MFC, views", "document/view architecture [MFC], about document/view architecture", "objects [MFC], MFC applications", "MFC object relationships", "thread objects [MFC]"]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Documents, Views, and the Framework

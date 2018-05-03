@@ -2,19 +2,14 @@
 title: "Message Map Macros (MFC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["AFXWIN/DECLARE_MESSAGE_MAP", "AFXWIN/BEGIN_MESSAGE_MAP", "AFXWIN/BEGIN_TEMPLATE_MESSAGE_MAP", "AFXWIN/END_MESSAGE_MAP", "AFXWIN/ON_COMMAND", "AFXWIN/ON_COMMAND_EX", "AFXWIN/ON_CONTROL", "AFXWIN/ON_MESSAGE", "AFXWIN/ON_OLECMD", "AFXWIN/ON_REGISTERED_MESSAGE", "AFXWIN/ON_REGISTERED_THREAD_MESSAGE", "AFXWIN/ON_THREAD_MESSAGE", "AFXWIN/ON_UPDATE_COMMAND_UI", "AFXWIN/ON_COMMAND_RANGE", "AFXWIN/ON_UPDATE_COMMAND_UI_RANGE", "AFXWIN/ON_CONTROL_RANGE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message map macros", "Windows messages [MFC], declaration", "demarcating Windows messages", "message maps [MFC], macros", "message maps [MFC], declaration and demarcation", "message mapping macros", "ranges, message map", "message map ranges"]
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Message Map Macros (MFC)

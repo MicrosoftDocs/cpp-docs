@@ -2,19 +2,14 @@
 title: "Compiler Error C2521 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2521"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2521"]
 ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2521

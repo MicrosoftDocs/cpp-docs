@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 3) C4641 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4641"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4641"]
 ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4641

@@ -2,19 +2,14 @@
 title: "BLOB_NAME_STATUS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BLOB_NAME_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_NAME_STATUS macro"]
 ms.assetid: 4564e4a0-8e5e-436a-bd1e-012d2a1b8642
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_NAME_STATUS
