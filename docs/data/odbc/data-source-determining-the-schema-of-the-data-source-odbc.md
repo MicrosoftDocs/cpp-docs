@@ -2,18 +2,13 @@
 title: "Data Source: Determining the Schema of the Data Source (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources [C++], schema", "schemas [C++], data sources", "data sources [C++], determining schema"]
 ms.assetid: 17284acb-eb10-4f27-9944-ad1d973c0b05
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Determining the Schema of the Data Source (ODBC)

@@ -2,19 +2,14 @@
 title: "Compiler Error C2614 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2614"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2614"]
 ms.assetid: a550c1d5-8718-4e17-a888-b2619e00fe11
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2614

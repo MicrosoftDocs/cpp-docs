@@ -2,19 +2,14 @@
 title: "CDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDialog", "AFXWIN/CDialog", "AFXWIN/CDialog::CDialog", "AFXWIN/CDialog::Create", "AFXWIN/CDialog::CreateIndirect", "AFXWIN/CDialog::DoModal", "AFXWIN/CDialog::EndDialog", "AFXWIN/CDialog::GetDefID", "AFXWIN/CDialog::GotoDlgCtrl", "AFXWIN/CDialog::InitModalIndirect", "AFXWIN/CDialog::MapDialogRect", "AFXWIN/CDialog::NextDlgCtrl", "AFXWIN/CDialog::OnInitDialog", "AFXWIN/CDialog::OnSetFont", "AFXWIN/CDialog::PrevDlgCtrl", "AFXWIN/CDialog::SetDefID", "AFXWIN/CDialog::SetHelpID", "AFXWIN/CDialog::OnCancel", "AFXWIN/CDialog::OnOK"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDialog [MFC], CDialog", "CDialog [MFC], Create", "CDialog [MFC], CreateIndirect", "CDialog [MFC], DoModal", "CDialog [MFC], EndDialog", "CDialog [MFC], GetDefID", "CDialog [MFC], GotoDlgCtrl", "CDialog [MFC], InitModalIndirect", "CDialog [MFC], MapDialogRect", "CDialog [MFC], NextDlgCtrl", "CDialog [MFC], OnInitDialog", "CDialog [MFC], OnSetFont", "CDialog [MFC], PrevDlgCtrl", "CDialog [MFC], SetDefID", "CDialog [MFC], SetHelpID", "CDialog [MFC], OnCancel", "CDialog [MFC], OnOK"]
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDialog Class

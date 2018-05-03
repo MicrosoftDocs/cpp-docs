@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4829 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4829"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4829"]
 ms.assetid: 4ffabe2b-2ddc-4c52-8564-d1355c93cfa6
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4829

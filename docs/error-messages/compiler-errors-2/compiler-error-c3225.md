@@ -2,19 +2,14 @@
 title: "Compiler Error C3225 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3225"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3225"]
 ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3225

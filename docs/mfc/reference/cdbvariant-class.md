@@ -2,19 +2,14 @@
 title: "CDBVariant Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDBVariant", "AFXDB/CDBVariant", "AFXDB/CDBVariant::CDBVariant", "AFXDB/CDBVariant::Clear", "AFXDB/CDBVariant::m_dwType", "AFXDB/CDBVariant::m_boolVal", "AFXDB/CDBVariant::m_chVal", "AFXDB/CDBVariant::m_dblVal", "AFXDB/CDBVariant::m_fltVal", "AFXDB/CDBVariant::m_iVal", "AFXDB/CDBVariant::m_lVal", "AFXDB/CDBVariant::m_pbinary", "AFXDB/CDBVariant::m_pdate", "AFXDB/CDBVariant::m_pstring", "AFXDB/CDBVariant::m_pstringA", "AFXDB/CDBVariant::m_pstringW"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBVariant [MFC], CDBVariant", "CDBVariant [MFC], Clear", "CDBVariant [MFC], m_dwType", "CDBVariant [MFC], m_boolVal", "CDBVariant [MFC], m_chVal", "CDBVariant [MFC], m_dblVal", "CDBVariant [MFC], m_fltVal", "CDBVariant [MFC], m_iVal", "CDBVariant [MFC], m_lVal", "CDBVariant [MFC], m_pbinary", "CDBVariant [MFC], m_pdate", "CDBVariant [MFC], m_pstring", "CDBVariant [MFC], m_pstringA", "CDBVariant [MFC], m_pstringW"]
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDBVariant Class

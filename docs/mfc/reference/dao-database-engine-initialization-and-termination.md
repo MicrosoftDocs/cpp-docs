@@ -2,19 +2,14 @@
 title: "DAO Database Engine Initialization and Termination | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.data"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # DAO Database Engine Initialization and Termination

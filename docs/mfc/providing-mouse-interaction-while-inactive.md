@@ -2,18 +2,13 @@
 title: "Providing Mouse Interaction While Inactive | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], mouse interaction"]
 ms.assetid: b09106bf-44c7-4b9b-a6d9-0d624f16f5b3
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Providing Mouse Interaction While Inactive

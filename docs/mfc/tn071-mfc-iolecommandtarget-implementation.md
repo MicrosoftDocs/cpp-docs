@@ -2,19 +2,14 @@
 title: "TN071: MFC IOleCommandTarget Implementation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["IOleCommandTarget"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN071 [MFC]", "IOleCommandTarget interface [MFC]"]
 ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN071: MFC IOleCommandTarget Implementation

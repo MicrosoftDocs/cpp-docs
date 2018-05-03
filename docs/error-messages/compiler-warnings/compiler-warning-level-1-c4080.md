@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4080 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4080"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4080"]
 ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4080

@@ -2,8 +2,8 @@
 title: "Compiler Error C3445 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/10/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3445"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3445"]

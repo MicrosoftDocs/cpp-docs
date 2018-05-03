@@ -2,19 +2,14 @@
 title: "Creating a Web Browser-Style MFC Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcweb.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, Web applications", "Web browsers, creating from MFC architecture", "Web browsers", "Web applications [MFC], creating"]
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating a Web Browser-Style MFC Application

@@ -2,16 +2,12 @@
 title: "Remote Build Events (Linux C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
-#f1_keywords: [VC.Project.IVCEventTool.CommandLine, VC.Project.IVCEventTool.Description, VC.Project.IVCEventTool.ExcludedFromBuild, VC.Project.VCConfiguration.BuildLogFile]
 ms.workload: ["cplusplus", "linux"]
 ---
 # Build Event Properties (Linux C++) 

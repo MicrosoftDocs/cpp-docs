@@ -2,19 +2,14 @@
 title: "CMFCPropertyGridColorProperty Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty", "CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton", "CMFCPropertyGridColorProperty [MFC], EnableOtherButton", "CMFCPropertyGridColorProperty [MFC], GetColor", "CMFCPropertyGridColorProperty [MFC], SetColor", "CMFCPropertyGridColorProperty [MFC], SetColumnsNumber", "CMFCPropertyGridColorProperty [MFC], SetOriginalValue"]
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridColorProperty Class

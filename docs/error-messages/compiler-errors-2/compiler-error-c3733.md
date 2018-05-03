@@ -2,19 +2,14 @@
 title: "Compiler Error C3733 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3733"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3733"]
 ms.assetid: 0cc1a9fe-1400-4be3-b35a-16435cba7a5a
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3733

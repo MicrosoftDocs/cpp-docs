@@ -2,19 +2,14 @@
 title: "vector::operator= (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::vector::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator= member [STL/CLR]"]
 ms.assetid: c2de9d74-9de7-4560-866f-3d55952e9bd7
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::operator= (STL/CLR)

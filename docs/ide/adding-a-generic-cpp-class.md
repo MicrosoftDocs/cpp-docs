@@ -2,19 +2,14 @@
 title: "Adding a Generic C++ Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes.adding.generic"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, classes", "generic classes, adding", "generic classes"]
 ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Generic C++ Class

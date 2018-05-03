@@ -2,18 +2,13 @@
 title: "Active Documents on the Internet | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], creating", "application wizards [MFC], active documents", "active documents [MFC], programming steps", "application wizards [MFC]", "active documents [MFC], using application wizards"]
 ms.assetid: a46bd8a0-e27a-4116-b1bf-dacdb7ae78d1
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Active Documents on the Internet

@@ -2,19 +2,14 @@
 title: "Compiler Error C3045 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3045"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3045"]
 ms.assetid: 9351ba3e-3d3f-455f-ac90-a810fa9fd947
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3045

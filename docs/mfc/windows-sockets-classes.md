@@ -2,19 +2,14 @@
 title: "Windows Sockets Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.net"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["sockets classes [MFC]", "Windows Sockets [MFC], classes"]
 ms.assetid: 58b9ab8d-9e44-4db3-8265-e04e713d2e9a
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets Classes

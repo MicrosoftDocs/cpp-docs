@@ -2,19 +2,14 @@
 title: "CObject Class: Frequently Asked Questions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObject class [MFC], FAQ"]
 ms.assetid: 809a8b99-a2f8-4e16-8b4b-023c94f4125c
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CObject Class: Frequently Asked Questions

@@ -2,19 +2,14 @@
 title: "Message Handling and Command Targets | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["IOleCommandTarget"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["command targets [MFC]", "message handling [MFC], active documents", "IOleCommandTarget interface [MFC]", "command routing [MFC], command targets"]
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Message Handling and Command Targets

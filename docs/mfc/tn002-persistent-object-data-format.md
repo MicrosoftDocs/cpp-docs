@@ -2,19 +2,14 @@
 title: "TN002: Persistent Object Data Format | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.data"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VERSIONABLE_SCHEMA macro [MFC]", "persistent object data", "CArchive class [MFC], support for persistent data", "persistent C++ objects [MFC]", "TN002"]
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN002: Persistent Object Data Format

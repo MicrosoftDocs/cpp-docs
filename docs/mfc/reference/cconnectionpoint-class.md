@@ -2,19 +2,14 @@
 title: "CConnectionPoint Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CConnectionPoint", "AFXDISP/CConnectionPoint", "AFXDISP/CConnectionPoint::CConnectionPoint", "AFXDISP/CConnectionPoint::GetConnections", "AFXDISP/CConnectionPoint::GetContainer", "AFXDISP/CConnectionPoint::GetIID", "AFXDISP/CConnectionPoint::GetMaxConnections", "AFXDISP/CConnectionPoint::GetNextConnection", "AFXDISP/CConnectionPoint::GetStartPosition", "AFXDISP/CConnectionPoint::OnAdvise", "AFXDISP/CConnectionPoint::QuerySinkInterface"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CConnectionPoint [MFC], CConnectionPoint", "CConnectionPoint [MFC], GetConnections", "CConnectionPoint [MFC], GetContainer", "CConnectionPoint [MFC], GetIID", "CConnectionPoint [MFC], GetMaxConnections", "CConnectionPoint [MFC], GetNextConnection", "CConnectionPoint [MFC], GetStartPosition", "CConnectionPoint [MFC], OnAdvise", "CConnectionPoint [MFC], QuerySinkInterface"]
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CConnectionPoint Class

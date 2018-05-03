@@ -2,19 +2,14 @@
 title: "stack::assign (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::stack::assign"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["assign member [STL/CLR]"]
 ms.assetid: 18cc35ad-23cf-4a5a-adae-d967dc5d6980
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::assign (STL/CLR)

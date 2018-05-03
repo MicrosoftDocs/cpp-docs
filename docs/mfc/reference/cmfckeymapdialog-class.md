@@ -2,19 +2,14 @@
 title: "CMFCKeyMapDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::DoModal", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::FormatItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::GetCommandKeys", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnInsertItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintHeader", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnSetColumns", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::PrintKeyMap", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::SetColumnsWidth"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCKeyMapDialog [MFC], CMFCKeyMapDialog", "CMFCKeyMapDialog [MFC], DoModal", "CMFCKeyMapDialog [MFC], FormatItem", "CMFCKeyMapDialog [MFC], GetCommandKeys", "CMFCKeyMapDialog [MFC], OnInsertItem", "CMFCKeyMapDialog [MFC], OnPrintHeader", "CMFCKeyMapDialog [MFC], OnPrintItem", "CMFCKeyMapDialog [MFC], OnSetColumns", "CMFCKeyMapDialog [MFC], PrintKeyMap", "CMFCKeyMapDialog [MFC], SetColumnsWidth"]
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCKeyMapDialog Class

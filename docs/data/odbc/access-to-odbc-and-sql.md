@@ -2,18 +2,13 @@
 title: "Access to ODBC and SQL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["API calls [C++], calling DAO or ODBC directly", "Windows API [C++], calling from MFC", "ODBC API functions [C++]", "ODBC API functions [C++], calling from MFC", "SQL [C++], calling ODBC API functions", "ODBC [C++], API functions"]
 ms.assetid: 5613d7dc-00b7-4646-99ae-1116c05c52b4
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Access to ODBC and SQL

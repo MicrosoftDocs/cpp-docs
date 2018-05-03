@@ -2,18 +2,13 @@
 title: "Drag and Drop (OLE) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE server applications [MFC], drag and drop", "drag and drop [MFC]", "OLE applications [MFC], drag and drop", "File Manager drag and drop support [MFC]", "drag and drop [MFC], about OLE drag and drop", "OLE drag and drop [MFC]"]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Drag and Drop (OLE)

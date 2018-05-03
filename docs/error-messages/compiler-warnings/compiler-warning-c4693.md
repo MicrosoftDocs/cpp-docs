@@ -1,19 +1,14 @@
 ---
 title: "Compiler Warning C4693 | Microsoft Docs"
 ms.date: "10/25/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4693"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4693"]
 ms.assetid: 72d8db01-5e6f-4794-8731-76107e8f064a
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4693

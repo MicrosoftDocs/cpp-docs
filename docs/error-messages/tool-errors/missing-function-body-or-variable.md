@@ -2,18 +2,13 @@
 title: "Missing Function Body or Variable | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["function body", "variables, missing"]
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Missing Function Body or Variable

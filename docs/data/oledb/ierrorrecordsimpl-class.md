@@ -2,19 +2,14 @@
 title: "IErrorRecordsImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL::IErrorRecordsImpl", "ATL.IErrorRecordsImpl", "IErrorRecordsImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IErrorRecordsImpl class"]
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl Class

@@ -2,19 +2,14 @@
 title: "vector::const_reverse_iterator (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::vector::const_reverse_iterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_reverse_iterator member [STL/CLR]"]
 ms.assetid: 5e0a8597-7da4-4545-8826-446a8ee6412d
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::const_reverse_iterator (STL/CLR)

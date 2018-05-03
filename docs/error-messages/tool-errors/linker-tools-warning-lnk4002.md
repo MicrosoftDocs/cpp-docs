@@ -2,19 +2,14 @@
 title: "Linker Tools Warning LNK4002 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK4002"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4002"]
 ms.assetid: 09f81af5-e51c-496c-a6eb-2863e85375c3
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4002

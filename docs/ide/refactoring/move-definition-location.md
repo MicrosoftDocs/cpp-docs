@@ -2,15 +2,11 @@
 title: "Move Definition Location | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 

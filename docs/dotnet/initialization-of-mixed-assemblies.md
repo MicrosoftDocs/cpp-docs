@@ -2,14 +2,13 @@
 title: "Initialization of Mixed Assemblies | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/09/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["mixed assemblies [C++], loader lock", "loader lock [C++]", "initializing mixed assemblies", "deadlocks [C++]", ".cctor [C++]", "custom locales [C++]", "mixed assemblies [C++], initilizing"]
 ms.assetid: bfab7d9e-f323-4404-bcb8-712b15f831eb
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Initialization of Mixed Assemblies

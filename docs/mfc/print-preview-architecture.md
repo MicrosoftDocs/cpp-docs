@@ -2,18 +2,13 @@
 title: "Print Preview Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["print preview [MFC], process", "previewing printing", "print preview [MFC], architecture", "printing [MFC], print preview", "print preview [MFC], modifications to MFC"]
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Print Preview Architecture

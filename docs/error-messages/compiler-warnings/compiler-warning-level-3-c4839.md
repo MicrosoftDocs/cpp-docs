@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4839 | Microsoft Docs"
 ms.date: "10/25/2017"
-ms.technology: ["cpp-tools"]
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4839"]
 dev_langs: ["C++"]
@@ -9,7 +9,6 @@ helpviewer_keywords: ["C4839"]
 ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4839

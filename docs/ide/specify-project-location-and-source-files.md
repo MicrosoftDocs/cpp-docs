@@ -2,18 +2,13 @@
 title: "New Project From Existing Code - Source Files (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.importwiz.location"]
 dev_langs: ["C++"]
 ms.assetid: 29ddffb9-5918-4d72-8c7a-a365f9de96dd
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Specify Project Location and Source Files, Create New Project From Existing Code Files Wizard

@@ -2,19 +2,14 @@
 title: "Compiler Error C2790 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2790"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2790"]
 ms.assetid: 38d4fce1-ba00-413d-8bc1-e8aa43d7bc1f
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2790

@@ -2,15 +2,13 @@
 title: "Linker Tools Error LNK2019 | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/15/2017"
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK2019"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["nochkclr.obj", "LNK2019", "_check_commonlanguageruntime_version"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2019

@@ -2,19 +2,14 @@
 title: "list::insert (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list::insert"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: 399ed30f-6b76-41a8-b180-6070e3ca1c68
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::insert (STL/CLR)

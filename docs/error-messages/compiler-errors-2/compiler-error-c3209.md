@@ -2,19 +2,14 @@
 title: "Compiler Error C3209 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3209"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3209"]
 ms.assetid: 1de44e39-69d1-4894-8f89-ff92136e8e5d
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3209

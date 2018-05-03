@@ -2,18 +2,13 @@
 title: "Trackers: Implementing Trackers in Your OLE Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CRectTracker class [MFC], implementing trackers"]
 ms.assetid: 5103a517-65bd-441a-8a53-02915ff3ef08
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Trackers: Implementing Trackers in Your OLE Application

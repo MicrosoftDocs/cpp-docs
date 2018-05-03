@@ -2,19 +2,14 @@
 title: "Compiler Warning (levels 1 and 4) C4112 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4112"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4112"]
 ms.assetid: aff64897-bb79-4a67-9b6f-902c6d44f3dc
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (levels 1 and 4) C4112

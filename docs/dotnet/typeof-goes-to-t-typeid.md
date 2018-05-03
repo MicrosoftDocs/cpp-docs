@@ -2,18 +2,13 @@
 title: "typeof Goes to T::typeid | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["typeid operator", "__typeof keyword", "typeid keyword [C++]"]
 ms.assetid: 6a0d35a7-7a1a-4070-b187-cff37cfdc205
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # typeof Goes to T::typeid

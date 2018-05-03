@@ -2,19 +2,14 @@
 title: "COLUMN_NAME_STATUS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["COLUMN_NAME_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_NAME_STATUS macro"]
 ms.assetid: a6204755-6739-4116-b414-9b8fa7ab6549
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_NAME_STATUS

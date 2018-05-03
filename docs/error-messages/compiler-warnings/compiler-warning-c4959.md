@@ -2,19 +2,14 @@
 title: "Compiler Warning C4959 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4959"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4959"]
 ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4959

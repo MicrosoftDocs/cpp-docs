@@ -2,10 +2,7 @@
 title: "Fatal Error C1052 | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/08/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C1052"]
 dev_langs: ["C++"]

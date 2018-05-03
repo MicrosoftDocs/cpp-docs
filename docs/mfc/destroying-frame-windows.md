@@ -2,19 +2,14 @@
 title: "Destroying Frame Windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["PostNcDestroy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Default method [MFC]", "DestroyWindow method [MFC]", "frame windows [MFC], destroying", "OnNcDestroy method, and frame windows", "document frame windows [MFC], destroying", "destroying frame windows", "MFC, frame windows", "windows [MFC], destroying", "OnClose method [MFC]", "PostNcDestroy method [MFC]"]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Destroying Frame Windows

@@ -2,18 +2,13 @@
 title: "Calling Native Functions from Managed Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["native functions called from managed code [C++]", "managed code [C++], interoperability", "platform invoke [C++], interoperability", "interoperabiliy [C++], calling native functions from managed code", "calling native functions from managed code", "interop [C++], calling native functions from managed code"]
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Calling Native Functions from Managed Code

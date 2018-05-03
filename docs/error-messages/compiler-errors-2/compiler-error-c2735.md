@@ -2,19 +2,14 @@
 title: "Compiler Error C2735 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2735"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2735"]
 ms.assetid: 6ce45600-7148-4bc0-8699-af0ef137571e
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2735

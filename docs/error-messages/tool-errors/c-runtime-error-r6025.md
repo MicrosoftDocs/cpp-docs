@@ -2,19 +2,14 @@
 title: "C Runtime Error R6025 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["R6025"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["R6025"]
 ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6025

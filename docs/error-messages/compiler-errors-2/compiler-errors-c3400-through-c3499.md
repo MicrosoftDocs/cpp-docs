@@ -2,19 +2,14 @@
 title: "Compiler Errors C3400 Through C3499 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3401", "C3402", "C3403", "C3404", "C3405", "C3406", "C3407", "C3410", "C3411", "C3416", "C3419", "C3422", "C3424", "C3425", "C3426", "C3427", "C3428", "C3429", "C3430", "C3431", "C3432", "C3433", "C3434", "C3435", "C3436", "C3437", "C3438", "C3439", "C3440", "C3441", "C3442", "C3443", "C3444", "C3445", "C3446", "C3471", "C3472", "C3473", "C3474", "C3475", "C3476", "C3477", "C3478", "C3479", "C3486", "C3494", "C3497"]
 helpviewer_keywords: ["C3401", "C3402", "C3403", "C3404", "C3405", "C3406", "C3407", "C3410", "C3411", "C3416", "C3419", "C3422", "C3424", "C3425", "C3426", "C3427", "C3428", "C3429", "C3430", "C3431", "C3432", "C3433", "C3434", "C3435", "C3436", "C3437", "C3438", "C3439", "C3440", "C3441", "C3442", "C3443", "C3444", "C3445", "C3446", "C3471", "C3472", "C3473", "C3474", "C3475", "C3476", "C3477", "C3478", "C3479", "C3486", "C3494", "C3497"]
 dev_langs: ["C++"]
 ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
-caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C3400 Through C3499

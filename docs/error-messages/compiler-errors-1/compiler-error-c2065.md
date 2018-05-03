@@ -2,19 +2,14 @@
 title: "Compiler Error C2065 | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/01/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2065"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2065"]
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2065

@@ -2,19 +2,14 @@
 title: "CInternetSession Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CInternetSession", "AFXINET/CInternetSession", "AFXINET/CInternetSession::CInternetSession", "AFXINET/CInternetSession::Close", "AFXINET/CInternetSession::EnableStatusCallback", "AFXINET/CInternetSession::GetContext", "AFXINET/CInternetSession::GetCookie", "AFXINET/CInternetSession::GetCookieLength", "AFXINET/CInternetSession::GetFtpConnection", "AFXINET/CInternetSession::GetGopherConnection", "AFXINET/CInternetSession::GetHttpConnection", "AFXINET/CInternetSession::OnStatusCallback", "AFXINET/CInternetSession::OpenURL", "AFXINET/CInternetSession::SetCookie", "AFXINET/CInternetSession::SetOption"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetSession [MFC], CInternetSession", "CInternetSession [MFC], Close", "CInternetSession [MFC], EnableStatusCallback", "CInternetSession [MFC], GetContext", "CInternetSession [MFC], GetCookie", "CInternetSession [MFC], GetCookieLength", "CInternetSession [MFC], GetFtpConnection", "CInternetSession [MFC], GetGopherConnection", "CInternetSession [MFC], GetHttpConnection", "CInternetSession [MFC], OnStatusCallback", "CInternetSession [MFC], OpenURL", "CInternetSession [MFC], SetCookie", "CInternetSession [MFC], SetOption"]
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CInternetSession Class

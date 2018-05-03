@@ -2,14 +2,12 @@
 title: "Using the Visual Studio IDE for C++ Desktop Development | Microsoft Docs"
 ms.date: "11/27/2017"
 ms.technology: ["cpp-ide"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDE [C++]", "Visual Studio IDE [C++]"]
 ms.assetid: d985c230-8e81-49d6-92be-2db9cac8d023
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using the Visual Studio IDE for C++ Desktop Development

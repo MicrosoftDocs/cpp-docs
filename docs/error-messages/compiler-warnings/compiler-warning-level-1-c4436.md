@@ -2,17 +2,12 @@
 title: "Compiler Warning (level 1) C4436 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: 2b54a1fc-c9c6-4cc9-90be-faa44fc715d5
-caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4436

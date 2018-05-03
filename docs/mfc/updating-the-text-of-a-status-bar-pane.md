@@ -2,18 +2,13 @@
 title: "Updating the Text of a Status-Bar Pane | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["updating user interface objects [MFC]", "ON_UPDATE_COMMAND_UI macro [MFC]", "user interface objects [MFC], updating", "text, status bar", "CStatusBar class [MFC], updating", "SetText method [MFC]", "panes, status bar", "status bars [MFC], updating"]
 ms.assetid: 4984a3f4-9905-4d8c-a927-dca19781053b
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Updating the Text of a Status-Bar Pane

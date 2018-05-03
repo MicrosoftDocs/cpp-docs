@@ -2,18 +2,13 @@
 title: "How to: Iterate Over a User-Defined Collection with for each | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["collections, iterating over"]
 ms.assetid: 0efd9e3c-d7bb-4f6c-9938-e0e65d191433
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Iterate Over a User-Defined Collection with for each

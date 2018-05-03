@@ -2,18 +2,13 @@
 title: "Creating the Month Calendar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], creating", "month calendar controls [MFC], creating", "month calendar controls [MFC]"]
 ms.assetid: 185cc642-85e9-4365-8a4c-d90b75b010f7
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating the Month Calendar Control

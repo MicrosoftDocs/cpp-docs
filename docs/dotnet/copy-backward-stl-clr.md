@@ -2,19 +2,14 @@
 title: "copy_backward (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::copy_backward"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["copy_backward function [STL/CLR]"]
 ms.assetid: 649db3fd-5a79-44b6-bea9-ecbcbeba1f32
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # copy_backward (STL/CLR)

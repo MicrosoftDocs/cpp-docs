@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4256 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4256"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4256"]
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4256

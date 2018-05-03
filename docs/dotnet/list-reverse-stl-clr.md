@@ -2,19 +2,14 @@
 title: "list::reverse (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list::reverse"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reverse member [STL/CLR]"]
 ms.assetid: de3bce1e-01fe-461d-a785-5cf4fcea988f
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::reverse (STL/CLR)

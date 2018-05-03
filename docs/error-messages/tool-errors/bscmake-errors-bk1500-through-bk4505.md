@@ -2,17 +2,12 @@
 title: "BSCMAKE Errors BK1500 through BK4505 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: 3767baa6-e639-472e-99fd-7543fd945cd3
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Errors BK1500 through BK4505

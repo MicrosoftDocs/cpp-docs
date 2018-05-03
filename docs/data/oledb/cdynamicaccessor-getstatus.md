@@ -2,19 +2,14 @@
 title: "CDynamicAccessor::GetStatus | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::GetStatus", "CDynamicAccessor.GetStatus", "ATL.CDynamicAccessor.GetStatus", "CDynamicAccessor::GetStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetStatus method"]
 ms.assetid: 8f1aba69-5c2c-4ca7-ad84-7b4b27995eb8
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetStatus

@@ -2,19 +2,14 @@
 title: "multiset::insert (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiset::insert"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: 7a3b1cc8-ec60-4ed0-ace5-46cb5872e6e7
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::insert (STL/CLR)

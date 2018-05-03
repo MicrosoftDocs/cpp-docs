@@ -2,18 +2,13 @@
 title: "Data Objects and Data Sources (OLE) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data objects [MFC], definition", "data transfer [MFC]", "OLE [MFC], data transfer", "data sources [MFC], definition", "data transfer [MFC], definition", "OLE [MFC], data objects", "OLE [MFC], data sources"]
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources (OLE)

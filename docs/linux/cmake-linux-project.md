@@ -2,15 +2,12 @@
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/25/2107"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 

@@ -2,19 +2,14 @@
 title: "Compiler Error C3896 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3896"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3896"]
 ms.assetid: eb8be0f6-5b4e-4d71-8285-8a2a94f8ba29
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3896

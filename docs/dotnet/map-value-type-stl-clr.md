@@ -2,19 +2,14 @@
 title: "map::value_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::value_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value_type member [STL/CLR]"]
 ms.assetid: 9f02ac42-c1e0-4671-bed3-72d6c06a1e66
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::value_type (STL/CLR)

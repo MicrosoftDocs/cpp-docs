@@ -2,19 +2,14 @@
 title: "plus (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::plus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["plus function [STL/CLR]"]
 ms.assetid: 7ec8228a-72c7-4e47-9e63-23525d4a5416
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # plus (STL/CLR)

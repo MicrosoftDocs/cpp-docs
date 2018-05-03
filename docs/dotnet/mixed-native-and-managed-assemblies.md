@@ -2,18 +2,13 @@
 title: "Mixed (Native and Managed) Assemblies | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], mixed assemblies", "/clr compiler option [C++], mixed assemblies", "managed code [C++], interoperability", "interoperability [C++], mixed assemblies", "mixed DLL loading [C++]", "mixed assemblies [C++], about mixed assemblies", "assemblies [C++], mixed", "mixed assemblies [C++]", "native code [C++], .NET interoperatibility"]
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Mixed (Native and Managed) Assemblies

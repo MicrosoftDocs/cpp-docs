@@ -2,19 +2,14 @@
 title: "Windows Sockets: Using Class CAsyncSocket | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CAsyncSocket"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAsyncSocket class [MFC], programming model", "Windows Sockets [MFC], asynchronous", "sockets [MFC], converting between Unicode and MBCS strings", "SOCKET handle", "sockets [MFC], asynchronous operation", "Windows Sockets [MFC], converting Unicode and MBCS strings"]
 ms.assetid: 825dae17-7c1b-4b86-8d6c-da7f1afb5d8d
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Using Class CAsyncSocket

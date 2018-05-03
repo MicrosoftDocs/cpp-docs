@@ -2,19 +2,14 @@
 title: "How to: Enable IntelliSense for Makefile Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCNMakeTool.IntelliSense"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Makefile projects, IntelliSense", "IntelliSense, Makefile projects"]
 ms.assetid: 9443f453-f18f-4f12-a9a1-ef9dbf8b188f
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Enable IntelliSense for Makefile Projects

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4264 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4264"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4264"]
 ms.assetid: 315a13c1-ca54-4a90-9d2b-dd996463af5d
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4264

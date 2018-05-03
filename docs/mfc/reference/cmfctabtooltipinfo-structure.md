@@ -2,19 +2,14 @@
 title: "CMFCTabToolTipInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCTabToolTipInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCTabToolTipInfo struct"]
 ms.assetid: 9c3b3fb9-1497-4d59-932b-0da9348dd5e2
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCTabToolTipInfo Structure

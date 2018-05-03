@@ -2,19 +2,14 @@
 title: "Add Member Variable Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.variable.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Add Member Variable Wizard [C++]"]
 ms.assetid: 73e8fa99-ac1a-42e2-8fc2-4684b9eb6d4d
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Add Member Variable Wizard

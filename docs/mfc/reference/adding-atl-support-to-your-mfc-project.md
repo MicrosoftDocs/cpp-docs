@@ -2,19 +2,14 @@
 title: "Adding ATL Support to Your MFC Project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.codewiz.adding.atl.mfc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, ATL support", "ATL, MFC projects"]
 ms.assetid: b5fe15d6-7752-4818-b9f9-62482ad35c95
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding ATL Support to Your MFC Project

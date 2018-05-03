@@ -2,19 +2,14 @@
 title: "NMAKE Warning U4007 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["U4007"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["U4007"]
 ms.assetid: 61ec0417-6961-43c1-ade8-f9d6e93289e9
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4007

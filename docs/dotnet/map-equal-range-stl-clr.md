@@ -2,19 +2,14 @@
 title: "map::equal_range (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::equal_range"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["equal_range member [STL/CLR]"]
 ms.assetid: c0d7409c-344d-4102-99c4-aeab8643a073
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::equal_range (STL/CLR)

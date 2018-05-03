@@ -2,19 +2,14 @@
 title: "&lt;value&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["value", "<value>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value C++ XML tag", "<value> C++ XML tag"]
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;value&gt; (Visual C++)

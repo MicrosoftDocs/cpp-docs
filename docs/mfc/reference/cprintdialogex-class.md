@@ -2,19 +2,14 @@
 title: "CPrintDialogEx Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPrintDialogEx", "AFXDLGS/CPrintDialogEx", "AFXDLGS/CPrintDialogEx::CPrintDialogEx", "AFXDLGS/CPrintDialogEx::CreatePrinterDC", "AFXDLGS/CPrintDialogEx::DoModal", "AFXDLGS/CPrintDialogEx::GetCopies", "AFXDLGS/CPrintDialogEx::GetDefaults", "AFXDLGS/CPrintDialogEx::GetDeviceName", "AFXDLGS/CPrintDialogEx::GetDevMode", "AFXDLGS/CPrintDialogEx::GetDriverName", "AFXDLGS/CPrintDialogEx::GetPortName", "AFXDLGS/CPrintDialogEx::GetPrinterDC", "AFXDLGS/CPrintDialogEx::PrintAll", "AFXDLGS/CPrintDialogEx::PrintCollate", "AFXDLGS/CPrintDialogEx::PrintCurrentPage", "AFXDLGS/CPrintDialogEx::PrintRange", "AFXDLGS/CPrintDialogEx::PrintSelection", "AFXDLGS/CPrintDialogEx::m_pdex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPrintDialogEx [MFC], CPrintDialogEx", "CPrintDialogEx [MFC], CreatePrinterDC", "CPrintDialogEx [MFC], DoModal", "CPrintDialogEx [MFC], GetCopies", "CPrintDialogEx [MFC], GetDefaults", "CPrintDialogEx [MFC], GetDeviceName", "CPrintDialogEx [MFC], GetDevMode", "CPrintDialogEx [MFC], GetDriverName", "CPrintDialogEx [MFC], GetPortName", "CPrintDialogEx [MFC], GetPrinterDC", "CPrintDialogEx [MFC], PrintAll", "CPrintDialogEx [MFC], PrintCollate", "CPrintDialogEx [MFC], PrintCurrentPage", "CPrintDialogEx [MFC], PrintRange", "CPrintDialogEx [MFC], PrintSelection", "CPrintDialogEx [MFC], m_pdex"]
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPrintDialogEx Class

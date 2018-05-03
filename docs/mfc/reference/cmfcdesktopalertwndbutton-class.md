@@ -2,19 +2,14 @@
 title: "CMFCDesktopAlertWndButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertWndButton [MFC], IsCaptionButton", "CMFCDesktopAlertWndButton [MFC], IsCloseButton"]
 ms.assetid: df39a0c8-0c39-4ab0-8c64-78c5b2c4ecaf
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWndButton Class

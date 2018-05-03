@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4337 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4337"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4337"]
 ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4337

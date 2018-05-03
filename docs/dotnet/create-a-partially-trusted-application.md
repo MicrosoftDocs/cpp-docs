@@ -1,19 +1,14 @@
 ---
 title: "How to: Create a Partially Trusted Application (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["partially trusted applications [C++]", "mixed assemblies [C++], partially trusted applications", "msvcm90[d].dll", "interoperability [C++], partially trusted applications", "interop [C++], partially trusted applications", "/clr compiler option [C++], partially trusted applications"]
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL

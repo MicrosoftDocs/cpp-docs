@@ -2,19 +2,14 @@
 title: "ICommandUI Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandUI interface [MFC]"]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ICommandUI Interface

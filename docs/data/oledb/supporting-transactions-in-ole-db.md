@@ -2,18 +2,13 @@
 title: "Supporting Transactions in OLE DB | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates [C++], transaction support", "transactions [C++], OLE DB support for", "nested transactions [C++]", "OLE DB [C++], transaction support", "databases [C++], transactions", "distributed transactions [C++]"]
 ms.assetid: 3d72e583-ad38-42ff-8f11-e2166d60a5a7
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Transactions in OLE DB

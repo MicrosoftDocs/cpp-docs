@@ -2,19 +2,14 @@
 title: "hash_map::mapped_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_map::mapped_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mapped_type member [STL/CLR]"]
 ms.assetid: 00c8738f-7dd9-418d-9566-a2e05fd7e7f6
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::mapped_type (STL/CLR)
