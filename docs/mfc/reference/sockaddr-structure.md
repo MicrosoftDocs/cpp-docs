@@ -2,19 +2,14 @@
 title: "SOCKADDR Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["SOCKADDR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SOCKADDR structure [MFC]"]
 ms.assetid: df1ed66a-f4b8-43f8-8db8-8c2533d25f68
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # SOCKADDR Structure

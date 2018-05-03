@@ -2,19 +2,14 @@
 title: "TN042: ODBC Driver Developer Recommendations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.odbc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC drivers [MFC], writing", "databases [MFC], ODBC", "TN042"]
 ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN042: ODBC Driver Developer Recommendations

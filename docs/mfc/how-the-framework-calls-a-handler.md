@@ -2,18 +2,13 @@
 title: "How the Framework Calls a Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "handler functions, MFC framework", "command handling [MFC], calling handlers and code in MFC", "command routing [MFC], MFC"]
 ms.assetid: d79bceba-4ff6-417a-9d52-6b6af62a909d
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How the Framework Calls a Handler

@@ -2,18 +2,13 @@
 title: "Standard Commands | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["File menu", "identifiers [MFC], command IDs", "command IDs, standard commands", "OLE commands", "commands [MFC], standard", "standard command IDs", "Window menu commands", "standard commands", "View menu commands", "Edit menu standard commands", "Help [MFC], menus", "programmer-defined IDs [MFC]"]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Standard Commands

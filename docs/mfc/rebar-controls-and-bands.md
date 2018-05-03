@@ -2,18 +2,13 @@
 title: "Rebar Controls and Bands | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rebar controls [MFC], working with bands in", "bands, in rebar controls"]
 ms.assetid: b647e7a5-9ea7-48b1-8e5f-096d104748f0
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Rebar Controls and Bands

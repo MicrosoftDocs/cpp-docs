@@ -2,19 +2,14 @@
 title: "COleControlContainer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleControlContainer", "AFXOCC/COleControlContainer", "AFXOCC/COleControlContainer::COleControlContainer", "AFXOCC/COleControlContainer::AttachControlSite", "AFXOCC/COleControlContainer::BroadcastAmbientPropertyChange", "AFXOCC/COleControlContainer::CheckDlgButton", "AFXOCC/COleControlContainer::CheckRadioButton", "AFXOCC/COleControlContainer::CreateControl", "AFXOCC/COleControlContainer::CreateOleFont", "AFXOCC/COleControlContainer::FindItem", "AFXOCC/COleControlContainer::FreezeAllEvents", "AFXOCC/COleControlContainer::GetAmbientProp", "AFXOCC/COleControlContainer::GetDlgItem", "AFXOCC/COleControlContainer::GetDlgItemInt", "AFXOCC/COleControlContainer::GetDlgItemText", "AFXOCC/COleControlContainer::HandleSetFocus", "AFXOCC/COleControlContainer::HandleWindowlessMessage", "AFXOCC/COleControlContainer::IsDlgButtonChecked", "AFXOCC/COleControlContainer::OnPaint", "AFXOCC/COleControlContainer::OnUIActivate", "AFXOCC/COleControlContainer::OnUIDeactivate", "AFXOCC/COleControlContainer::ScrollChildren", "AFXOCC/COleControlContainer::SendDlgItemMessage", "AFXOCC/COleControlContainer::SetDlgItemInt", "AFXOCC/COleControlContainer::SetDlgItemText", "AFXOCC/COleControlContainer::m_crBack", "AFXOCC/COleControlContainer::m_crFore", "AFXOCC/COleControlContainer::m_listSitesOrWnds", "AFXOCC/COleControlContainer::m_nWindowlessControls", "AFXOCC/COleControlContainer::m_pOleFont", "AFXOCC/COleControlContainer::m_pSiteCapture", "AFXOCC/COleControlContainer::m_pSiteFocus", "AFXOCC/COleControlContainer::m_pSiteUIActive", "AFXOCC/COleControlContainer::m_pWnd", "AFXOCC/COleControlContainer::m_siteMap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleControlContainer [MFC], COleControlContainer", "COleControlContainer [MFC], AttachControlSite", "COleControlContainer [MFC], BroadcastAmbientPropertyChange", "COleControlContainer [MFC], CheckDlgButton", "COleControlContainer [MFC], CheckRadioButton", "COleControlContainer [MFC], CreateControl", "COleControlContainer [MFC], CreateOleFont", "COleControlContainer [MFC], FindItem", "COleControlContainer [MFC], FreezeAllEvents", "COleControlContainer [MFC], GetAmbientProp", "COleControlContainer [MFC], GetDlgItem", "COleControlContainer [MFC], GetDlgItemInt", "COleControlContainer [MFC], GetDlgItemText", "COleControlContainer [MFC], HandleSetFocus", "COleControlContainer [MFC], HandleWindowlessMessage", "COleControlContainer [MFC], IsDlgButtonChecked", "COleControlContainer [MFC], OnPaint", "COleControlContainer [MFC], OnUIActivate", "COleControlContainer [MFC], OnUIDeactivate", "COleControlContainer [MFC], ScrollChildren", "COleControlContainer [MFC], SendDlgItemMessage", "COleControlContainer [MFC], SetDlgItemInt", "COleControlContainer [MFC], SetDlgItemText", "COleControlContainer [MFC], m_crBack", "COleControlContainer [MFC], m_crFore", "COleControlContainer [MFC], m_listSitesOrWnds", "COleControlContainer [MFC], m_nWindowlessControls", "COleControlContainer [MFC], m_pOleFont", "COleControlContainer [MFC], m_pSiteCapture", "COleControlContainer [MFC], m_pSiteFocus", "COleControlContainer [MFC], m_pSiteUIActive", "COleControlContainer [MFC], m_pWnd", "COleControlContainer [MFC], m_siteMap"]
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleControlContainer Class

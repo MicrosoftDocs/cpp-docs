@@ -2,19 +2,14 @@
 title: "Creating the Tab Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["TCS_EX_REGISTERDROP", "TCS_EX_FLATSEPARATORS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TCS_EX_REGISTERDROP extended style [MFC]", "tab controls [MFC], creating", "CTabCtrl class [MFC], creating", "TCS_EX_FLATSEPARATORS extended style"]
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating the Tab Control

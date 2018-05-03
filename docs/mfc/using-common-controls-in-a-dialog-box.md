@@ -2,18 +2,13 @@
 title: "Using Common Controls in a Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["common controls [MFC], in dialog boxes", "dialog box controls [MFC], common controls", "Windows common controls [MFC], in dialog boxes"]
 ms.assetid: 17713caf-09f8-484a-bf54-5f48bf09cce9
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Common Controls in a Dialog Box

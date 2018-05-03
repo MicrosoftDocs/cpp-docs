@@ -2,19 +2,14 @@
 title: "CRuntimeClass Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRuntimeClass"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRuntimeClass structure [MFC]", "dynamic class information [MFC]", "runtime [MFC], class information", "run-time class [MFC], CRuntimeClass structure"]
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRuntimeClass Structure

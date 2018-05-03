@@ -2,18 +2,13 @@
 title: "Type-Safe Access to Controls in a Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["common controls [MFC], in dialog boxes", "Windows common controls [MFC], in dialog boxes", "safe access to dialog box controls", "dialog boxes [MFC], type-safe access to controls", "controls [MFC], accessing in dialog boxes", "type-safe access to dialog box controls", "MFC dialog boxes [MFC], type-safe access to controls"]
 ms.assetid: 67021025-dd93-4d6a-8bed-a1348fe50685
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Type-Safe Access to Controls in a Dialog Box

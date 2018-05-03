@@ -2,18 +2,13 @@
 title: "Windows Sockets: Datagram Sockets | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], datagram", "Windows Sockets [MFC], bi-directional data flow", "datagram sockets [MFC]", "Windows Sockets [MFC], datagram", "sockets [MFC], bi-directional data flow"]
 ms.assetid: bec16a1c-74c0-4ff9-8c18-c2d87897d264
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Datagram Sockets

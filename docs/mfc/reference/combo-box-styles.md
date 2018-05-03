@@ -2,19 +2,14 @@
 title: "Combo-Box Styles | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CBS_LOWERCASE", "CBS_SORT", "CBS_OWNERDRAWVARIABLE", "CBS_OEMCONVERT", "CBS_AUTOHSCROLL", "CBS_NOINTEGRALHEIGHT", "CBS_SIMPLE", "CBS_DROPDOWNLIST", "CBS_DROPDOWN", "CBS_UPPERCASE", "CBS_HASSTRINGS", "CBS_DISABLENOSCROLL", "CBS_OWNERDRAWFIXED"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBS_OWNERDRAWVARIABLE constant [MFC]", "CBS_NOINTEGRALHEIGHT constant [MFC]", "CBS_SIMPLE constant [MFC]", "CBS_AUTOHSCROLL constant [MFC]", "CBS_OEMCONVERT constant [MFC]", "CBS_DISABLENOSCROLL constant [MFC]", "CBS_HASSTRINGS constant [MFC]", "CBS_LOWERCASE constant [MFC]", "CBS_SORT constant [MFC]", "CBS_DROPDOWN constant [MFC]", "CBS_OWNERDRAWFIXED constant [MFC]", "combo boxes [MFC], styles", "CBS_UPPERCASE constant [MFC]", "CBS_DROPDOWNLIST constant"]
 ms.assetid: d21a5023-e6a2-495b-a6bd-010a515cbc63
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Combo-Box Styles

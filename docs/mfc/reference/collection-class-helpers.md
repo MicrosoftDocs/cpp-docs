@@ -2,19 +2,14 @@
 title: "Collection Class Helpers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.classes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DestructElements function", "ConstructElements function", "SerializeElements function", "collection classes [MFC], helper functions", "helper functions collection class [MFC]"]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Collection Class Helpers

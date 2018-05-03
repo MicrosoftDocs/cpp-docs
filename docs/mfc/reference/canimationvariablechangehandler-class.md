@@ -2,19 +2,14 @@
 title: "CAnimationVariableChangeHandler Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationVariableChangeHandler [MFC], OnValueChanged", "CAnimationVariableChangeHandler [MFC], SetAnimationController"]
 ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationVariableChangeHandler Class

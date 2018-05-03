@@ -2,19 +2,14 @@
 title: "CRecordView Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRecordView", "AFXDB/CRecordView", "AFXDB/CRecordView::CRecordView", "AFXDB/CRecordView::IsOnFirstRecord", "AFXDB/CRecordView::IsOnLastRecord", "AFXDB/CRecordView::OnGetRecordset", "AFXDB/CRecordView::OnMove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRecordView [MFC], CRecordView", "CRecordView [MFC], IsOnFirstRecord", "CRecordView [MFC], IsOnLastRecord", "CRecordView [MFC], OnGetRecordset", "CRecordView [MFC], OnMove", "CRecordView [MFC], OnMove"]
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRecordView Class

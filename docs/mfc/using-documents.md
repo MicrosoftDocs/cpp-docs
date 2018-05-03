@@ -2,18 +2,13 @@
 title: "Using Documents | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], C++ applications", "data [MFC], reading", "documents [MFC]", "files [MFC], writing to", "data [MFC], documents", "files [MFC]", "views [MFC], C++ applications", "document/view architecture [MFC], documents", "reading data [MFC], documents and views", "printing [MFC], documents", "writing to files [MFC]"]
 ms.assetid: f390d6d8-d0e1-4497-9b6a-435f7ce0776c
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Documents

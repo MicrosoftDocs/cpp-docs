@@ -2,19 +2,14 @@
 title: "Creating a File Explorer-Style MFC Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcexplorer.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["browsers [MFC], Explorer-style applications", "MFC applications [MFC], Windows Explorer-style", "Explorer-style applications [MFC], creating"]
 ms.assetid: f843ab5d-2d5d-41ca-88a4-badc0d2f8052
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating a File Explorer-Style MFC Application

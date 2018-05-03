@@ -2,19 +2,14 @@
 title: "Setting the Day State of a Month Calendar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["MCN_GETDAYSTATE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], setting day state info", "MCN_GETDAYSTATE notification [MFC]", "month calendar controls [MFC], day state info"]
 ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Setting the Day State of a Month Calendar Control

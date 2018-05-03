@@ -2,19 +2,14 @@
 title: "MFC ActiveX Controls: Using Fonts | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["OnFontChanged", "HeadingFont", "InternalFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [MFC], MFC ActiveX controls fonts", "OnDraw method, MFC ActiveX controls", "InternalFont method [MFC]", "SetFont method [MFC]", "OnFontChanged method [MFC]", "IPropertyNotifySink class [MFC]", "MFC ActiveX controls [MFC], fonts", "Stock Font property [MFC]", "HeadingFont property [MFC]", "GetFont method [MFC]", "SelectStockFont method [MFC]", "fonts [MFC], ActiveX controls"]
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Fonts

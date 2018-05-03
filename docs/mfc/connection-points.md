@@ -2,19 +2,14 @@
 title: "Connection Points | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["IConnectionPoint"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IConnectionPoint interface", "connections, connection points", "OLE COM connection points", "MFC COM, connection points", "COM, connection points", "interfaces, IConnectionPoint", "MFC, COM support", "connection points [MFC]", "CCmdTarget class [MFC], and connection points", "sinks, connection points"]
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Connection Points

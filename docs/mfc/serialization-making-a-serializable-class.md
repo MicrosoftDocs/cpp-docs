@@ -2,18 +2,13 @@
 title: "Serialization: Making a Serializable Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["serializable class [MFC]", "DECLARE_SERIAL macro [MFC]", "default constructor [MFC]", "VERSIONABLE_SCHEMA macro [MFC]", "classes [MFC], derived", "IMPLEMENT_SERIAL macro [MFC]", "no-arguments constructor [MFC]", "Serialize method, overriding", "defaults [MFC], constructor", "CObject class [MFC], deriving serializable classes", "constructors [MFC], defining with no arguments", "serialization [MFC], serializable classes", "no default constructor"]
 ms.assetid: 59a14d32-1cc8-4275-9829-99639beee27c
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Serialization: Making a Serializable Class

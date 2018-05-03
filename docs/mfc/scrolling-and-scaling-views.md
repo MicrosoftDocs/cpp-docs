@@ -2,18 +2,13 @@
 title: "Scrolling and Scaling Views | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "scaling views [MFC]", "message handling [MFC], scroll bars in view class [MFC]", "scroll bars [MFC], messages", "scrolling views [MFC]"]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Scrolling and Scaling Views

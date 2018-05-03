@@ -2,19 +2,14 @@
 title: "Using CDateTimeCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CDateTimeCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DateTimePicker control [MFC], CDateTimeCtrl class"]
 ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CDateTimeCtrl

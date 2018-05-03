@@ -2,18 +2,13 @@
 title: "Containers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["containers [MFC]", "OLE containers", "application containers [MFC]", "containers [MFC], OLE container applications", "containers [MFC], container applications"]
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Containers

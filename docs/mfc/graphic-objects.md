@@ -2,19 +2,14 @@
 title: "Graphic Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["HRGN", "HFONT", "HBITMAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRgn class [MFC], HRGN handle type", "HPEN [MFC]", "objects [MFC], graphic", "palettes [MFC], creating in device context", "pens [MFC], creating in device context", "bitmaps [MFC], creating in device contexts", "palette objects [MFC]", "memory [MFC], display contexts", "MFC, graphic objects", "regions [MFC], creating in device context", "CPen class [MFC], HPEN handle type", "GDI objects [MFC]", "HRGN [MFC]", "graphic objects [MFC]", "GDI objects [MFC], graphic-object classes", "CFont class [MFC], HFONT handle type", "HFONT and class CFont [MFC]", "HBITMAP and class CBitmap [MFC]", "fonts [MFC], creating in device context", "images [MFC], graphic objects [MFC]", "CBitmap class [MFC], HBITMAP handle type", "HPALETTE and class CPalette [MFC]", "CBrush class [MFC], HBRUSH handle type", "objects [MFC], graphic objects", "drawing [MFC], in device contexts", "device contexts [MFC], graphic objects [MFC]", "brushes [MFC], creating in device context", "region objects [MFC]", "pen objects [MFC]", "GDI [MFC], graphic-object classes", "graphic objects [MFC], creating in device context", "HBRUSH and class CBrush [MFC]", "painting and device context [MFC]", "CPalette class [MFC], HPALETTE handle type"]
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Graphic Objects
