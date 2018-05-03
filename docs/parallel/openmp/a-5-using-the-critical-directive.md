@@ -2,17 +2,12 @@
 title: "A.5   Using the critical Directive | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 14423018-25b9-4f98-92f2-34c9b0ac0ce0
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # A.5   Using the critical Directive

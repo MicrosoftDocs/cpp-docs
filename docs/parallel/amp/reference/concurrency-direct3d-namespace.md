@@ -2,19 +2,14 @@
 title: "Concurrency::direct3d Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-amp"]
 ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::direct3d", "amprt/Concurrency::direct3d", "amp_short_vectors/Concurrency::direct3d", "amp_graphics/Concurrency::direct3d", "amp_math/Concurrency::direct3d"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["direct3d namespace"]
 ms.assetid: 9566a2f1-4d5f-43e4-a3ac-676643d38420
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Concurrency::direct3d Namespace

@@ -2,18 +2,13 @@
 title: "Multithreading and Locales | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["locales [C++], multithreading", "multithreading [C++], locales", "threading [C++], locales", "per-thread locale"]
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading and Locales

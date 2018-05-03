@@ -2,18 +2,13 @@
 title: "Multithreading: Programming Tips | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], programming tips", "handle maps [C++]", "access control [C++], multithreading", "objects [C++], multiple threads and", "non-MFC threads [C++]", "threading [MFC], programming tips", "critical sections [C++]", "synchronization [C++], multithreading", "programming [C++], multithreaded", "communications [C++], between threads", "threading [C++], best practices", "troubleshooting [C++], multithreading", "Windows handle maps [C++]"]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading: Programming Tips

@@ -2,18 +2,13 @@
 title: "norm_2 Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-amp"]
 ms.topic: "reference"
 f1_keywords: ["amp_short_vectors/Concurrency::graphics::norm_2::set_x", "amp_short_vectors/Concurrency::graphics::norm_2::set_xy", "amp_short_vectors/Concurrency::graphics::norm_2::g", "amp_short_vectors/Concurrency::graphics::norm_2::get_yx", "amp_short_vectors/Concurrency::graphics::norm_2::set_yx", "amp_short_vectors/Concurrency::graphics::norm_2::operator-=", "amp_short_vectors/Concurrency::graphics::norm_2::operator/=", "amp_short_vectors/Concurrency::graphics::norm_2::operator*=", "amp_short_vectors/Concurrency::graphics::norm_2::yx", "amp_short_vectors/Concurrency::graphics::norm_2::y", "amp_short_vectors/Concurrency::graphics::norm_2::xy", "amp_short_vectors/Concurrency::graphics::norm_2::operator++", "amp_short_vectors/Concurrency::graphics::norm_2::operator-", "amp_short_vectors/Concurrency::graphics::norm_2::rg", "amp_short_vectors/Concurrency::graphics::norm_2::operator=", "amp_short_vectors/Concurrency::graphics::norm_2::get_y", "amp_short_vectors/Concurrency::graphics::norm_2::r", "amp_short_vectors/Concurrency::graphics::norm_2::get_x", "amp_short_vectors/Concurrency::graphics::norm_2::get_xy", "amp_short_vectors/Concurrency::graphics::norm_2::gr", "amp_short_vectors/Concurrency::graphics::norm_2::set_y", "amp_short_vectors/Concurrency::graphics::norm_2::x", "amp_short_vectors/Concurrency::graphics::norm_2::operator+=", "amp_short_vectors/Concurrency::graphics::norm_2", "amp_short_vectors/Concurrency::graphics::norm_2::operator--"]
 dev_langs: ["C++"]
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # norm_2 Class

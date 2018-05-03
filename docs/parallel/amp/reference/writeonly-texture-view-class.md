@@ -2,18 +2,13 @@
 title: "writeonly_texture_view Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-amp"]
 ms.topic: "reference"
 f1_keywords: ["writeonly_texture_view", "AMP_GRAPHICS/writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::rank Constant"]
 dev_langs: ["C++"]
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # writeonly_texture_view Class

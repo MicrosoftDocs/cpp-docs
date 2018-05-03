@@ -2,19 +2,14 @@
 title: "extent Class (C++ AMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-amp"]
 ms.topic: "reference"
 f1_keywords: ["extent", "AMP/extent", "AMP/Concurrency::extent::extent", "AMP/Concurrency::extent::contains", "AMP/Concurrency::extent::size", "AMP/Concurrency::extent::tile", "AMP/Concurrency::extent::rank Constant"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["extent structure"]
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # extent Class (C++ AMP)
