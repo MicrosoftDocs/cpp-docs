@@ -1,7 +1,7 @@
 ---
-title: "ATL Classes | Microsoft Docs"
+title: "ATL classes and structs| Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "05/03/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 dev_langs: ["C++"]
