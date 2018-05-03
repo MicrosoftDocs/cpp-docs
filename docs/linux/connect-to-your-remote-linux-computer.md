@@ -2,15 +2,12 @@
 title: "Connect to your remote Linux computer | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/06/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 
