@@ -136,7 +136,7 @@ void createTextureWithBPC() { *// Create the source data.
   
  There are limits on the size of each dimension of the `texture` object, as shown in the following table. A run-time error is generated if you exceed the limits.  
   
-|Texture|Size limitation|  
+|Texture|Size limitation per dimension|  
 |-------------|---------------------|  
 |texture\<T,1>|16384|  
 |texture\<T,2>|16384|  
