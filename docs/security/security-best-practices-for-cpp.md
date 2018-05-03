@@ -88,10 +88,6 @@ This article contains information about security tools and practices. Using them
 ## Windows User Accounts  
  Using Windows user accounts that belong to the Administrators group exposes developers and--by extension--customers to security risks. For more information, see [Running as a Member of the Users Group](running-as-a-member-of-the-users-group.md) and [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md).
 
-## Guidance for Speculative Execution Side Channels
-
-For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
-
   
 ## See Also  
  <xref:System.Security>   
