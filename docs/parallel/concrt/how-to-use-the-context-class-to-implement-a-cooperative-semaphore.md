@@ -2,18 +2,13 @@
 title: "How to: Use the Context Class to Implement a Cooperative Semaphore | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cooperative semaphore implementing", "context class"]
 ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use the Context Class to Implement a Cooperative Semaphore

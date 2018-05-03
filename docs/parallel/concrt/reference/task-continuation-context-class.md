@@ -2,19 +2,14 @@
 title: "task_continuation_context Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["task_continuation_context", "PPLTASKS/concurrency::task_continuation_context", "PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context", "PPLTASKS/concurrency::task_continuation_context::use_arbitrary", "PPLTASKS/concurrency::task_continuation_context::use_current", "PPLTASKS/concurrency::task_continuation_context::use_default", "PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_continuation_context class"]
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # task_continuation_context Class

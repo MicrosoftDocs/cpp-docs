@@ -2,18 +2,13 @@
 title: "Multithreading: Creating Worker Threads | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], worker threads", "background tasks [C++]", "threading [C++], worker threads", "worker threads [C++]", "threading [C++], creating threads", "threading [MFC], worker threads", "threading [C++], user input not required"]
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading: Creating Worker Threads

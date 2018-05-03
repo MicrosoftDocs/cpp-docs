@@ -2,18 +2,13 @@
 title: "Walkthrough: Removing Work from a User-Interface Thread | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Removing Work from a User-Interface Thread

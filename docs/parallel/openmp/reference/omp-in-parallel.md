@@ -2,19 +2,14 @@
 title: "omp_in_parallel | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["omp_in_parallel"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["omp_in_parallel OpenMP function"]
 ms.assetid: 1f01a1b4-78c5-496a-afb7-a43ecdad83d6
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # omp_in_parallel

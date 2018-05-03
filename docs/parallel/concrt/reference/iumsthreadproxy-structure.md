@@ -2,19 +2,14 @@
 title: "IUMSThreadProxy Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["IUMSThreadProxy", "CONCRTRM/concurrency::IUMSThreadProxy", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::EnterCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::EnterHyperCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitHyperCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::GetCriticalRegionType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSThreadProxy structure"]
 ms.assetid: 61c69b7e-5c37-4048-bcb4-e75c536afd86
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IUMSThreadProxy Structure

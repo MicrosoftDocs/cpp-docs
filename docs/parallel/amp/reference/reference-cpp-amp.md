@@ -2,19 +2,14 @@
 title: "Reference (C++ AMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-amp"]
 ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::Reference (C++ AMP)"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, reference"]
 ms.assetid: 372a8aed-8a53-48c9-996f-9c3cf09c9fa8
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Reference (C++ AMP)

@@ -2,19 +2,14 @@
 title: "concurrent_unordered_multimap Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_multimap class"]
 ms.assetid: 4dada5d7-15df-4382-b9c9-348e75b2f3c1
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_multimap Class

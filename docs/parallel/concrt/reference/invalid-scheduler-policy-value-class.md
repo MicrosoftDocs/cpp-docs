@@ -2,19 +2,14 @@
 title: "invalid_scheduler_policy_value Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::invalid_scheduler_policy_value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_scheduler_policy_value class"]
 ms.assetid: 8c533e3f-2774-4192-8616-b2313b859bf7
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # invalid_scheduler_policy_value Class
