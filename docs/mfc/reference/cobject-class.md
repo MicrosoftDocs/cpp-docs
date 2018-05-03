@@ -2,19 +2,14 @@
 title: "CObject Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CObject", "AFX/CObject", "AFX/CObject::CObject", "AFX/CObject::AssertValid", "AFX/CObject::Dump", "AFX/CObject::GetRuntimeClass", "AFX/CObject::IsKindOf", "AFX/CObject::IsSerializable", "AFX/CObject::Serialize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObject [MFC], CObject", "CObject [MFC], AssertValid", "CObject [MFC], Dump", "CObject [MFC], GetRuntimeClass", "CObject [MFC], IsKindOf", "CObject [MFC], IsSerializable", "CObject [MFC], Serialize"]
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CObject Class

@@ -2,18 +2,13 @@
 title: "Steps in a Typical Gopher Client Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["WinInet classes [MFC], gopher", "Internet applications [MFC], gopher client applications", "Gopher client applications [MFC]", "Internet client applications [MFC], gopher table"]
 ms.assetid: 3e4e1869-5da0-453d-8ba9-b648c894bb90
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical Gopher Client Application

@@ -2,19 +2,14 @@
 title: "Docking and Floating Toolbars | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CBRS_SIZE_DYNAMIC", "CBRS_SIZE_FIXED"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size [MFC], toolbars", "size", "frame windows [MFC], toolbar docking", "CBRS_ALIGN_ANY constant [MFC]", "palettes, floating", "toolbars [MFC], docking", "CBRS_SIZE_DYNAMIC constant [MFC]", "floating toolbars", "toolbars [MFC], size", "toolbars [MFC], floating", "fixed-size toolbars", "CBRS_SIZE_FIXED constant [MFC]", "toolbar controls [MFC], wrapping", "toolbars [MFC], wrapping", "floating palettes"]
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Docking and Floating Toolbars

@@ -2,19 +2,14 @@
 title: "CDaoTableDef Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDaoTableDef", "AFXDAO/CDaoTableDef", "AFXDAO/CDaoTableDef::CDaoTableDef", "AFXDAO/CDaoTableDef::Append", "AFXDAO/CDaoTableDef::CanUpdate", "AFXDAO/CDaoTableDef::Close", "AFXDAO/CDaoTableDef::Create", "AFXDAO/CDaoTableDef::CreateField", "AFXDAO/CDaoTableDef::CreateIndex", "AFXDAO/CDaoTableDef::DeleteField", "AFXDAO/CDaoTableDef::DeleteIndex", "AFXDAO/CDaoTableDef::GetAttributes", "AFXDAO/CDaoTableDef::GetConnect", "AFXDAO/CDaoTableDef::GetDateCreated", "AFXDAO/CDaoTableDef::GetDateLastUpdated", "AFXDAO/CDaoTableDef::GetFieldCount", "AFXDAO/CDaoTableDef::GetFieldInfo", "AFXDAO/CDaoTableDef::GetIndexCount", "AFXDAO/CDaoTableDef::GetIndexInfo", "AFXDAO/CDaoTableDef::GetName", "AFXDAO/CDaoTableDef::GetRecordCount", "AFXDAO/CDaoTableDef::GetSourceTableName", "AFXDAO/CDaoTableDef::GetValidationRule", "AFXDAO/CDaoTableDef::GetValidationText", "AFXDAO/CDaoTableDef::IsOpen", "AFXDAO/CDaoTableDef::Open", "AFXDAO/CDaoTableDef::RefreshLink", "AFXDAO/CDaoTableDef::SetAttributes", "AFXDAO/CDaoTableDef::SetConnect", "AFXDAO/CDaoTableDef::SetName", "AFXDAO/CDaoTableDef::SetSourceTableName", "AFXDAO/CDaoTableDef::SetValidationRule", "AFXDAO/CDaoTableDef::SetValidationText", "AFXDAO/CDaoTableDef::m_pDAOTableDef", "AFXDAO/CDaoTableDef::m_pDatabase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoTableDef [MFC], CDaoTableDef", "CDaoTableDef [MFC], Append", "CDaoTableDef [MFC], CanUpdate", "CDaoTableDef [MFC], Close", "CDaoTableDef [MFC], Create", "CDaoTableDef [MFC], CreateField", "CDaoTableDef [MFC], CreateIndex", "CDaoTableDef [MFC], DeleteField", "CDaoTableDef [MFC], DeleteIndex", "CDaoTableDef [MFC], GetAttributes", "CDaoTableDef [MFC], GetConnect", "CDaoTableDef [MFC], GetDateCreated", "CDaoTableDef [MFC], GetDateLastUpdated", "CDaoTableDef [MFC], GetFieldCount", "CDaoTableDef [MFC], GetFieldInfo", "CDaoTableDef [MFC], GetIndexCount", "CDaoTableDef [MFC], GetIndexInfo", "CDaoTableDef [MFC], GetName", "CDaoTableDef [MFC], GetRecordCount", "CDaoTableDef [MFC], GetSourceTableName", "CDaoTableDef [MFC], GetValidationRule", "CDaoTableDef [MFC], GetValidationText", "CDaoTableDef [MFC], IsOpen", "CDaoTableDef [MFC], Open", "CDaoTableDef [MFC], RefreshLink", "CDaoTableDef [MFC], SetAttributes", "CDaoTableDef [MFC], SetConnect", "CDaoTableDef [MFC], SetName", "CDaoTableDef [MFC], SetSourceTableName", "CDaoTableDef [MFC], SetValidationRule", "CDaoTableDef [MFC], SetValidationText", "CDaoTableDef [MFC], m_pDAOTableDef", "CDaoTableDef [MFC], m_pDatabase"]
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoTableDef Class

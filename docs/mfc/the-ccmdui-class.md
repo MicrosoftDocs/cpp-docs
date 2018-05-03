@@ -2,19 +2,14 @@
 title: "The CCmdUI Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CCmdUI"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["updating user interface objects [MFC]", "user interface objects [MFC], updating", "CCmdUI class [MFC], menu updating", "update handlers [MFC]", "toolbars [MFC], updating"]
 ms.assetid: 2f2bae62-8c29-45a4-bbce-490eb01907d5
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # The CCmdUI Class

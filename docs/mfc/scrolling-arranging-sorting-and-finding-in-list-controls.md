@@ -2,18 +2,13 @@
 title: "Scrolling, Arranging, Sorting, and Finding in List Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["image lists [MFC], sorting", "image lists [MFC], arranging", "image lists [MFC], scrolling", "CListCtrl class [MFC], finding items in", "image lists [MFC], finding items", "CListCtrl class [MFC], scrolling", "CListCtrl class [MFC], sorting", "CListCtrl class [MFC], arranging the list"]
 ms.assetid: dcc51e4c-0ca8-4319-bec5-6994cc8ac9e5
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Scrolling, Arranging, Sorting, and Finding in List Controls

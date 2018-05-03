@@ -2,18 +2,13 @@
 title: "How to: Add Ribbon Controls and Event Handlers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [MFC], adding", "ribbon controls [MFC], adding"]
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Add Ribbon Controls and Event Handlers

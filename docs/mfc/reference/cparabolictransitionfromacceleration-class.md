@@ -2,19 +2,14 @@
 title: "CParabolicTransitionFromAcceleration Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CParabolicTransitionFromAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::Create", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalVelocity"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CParabolicTransitionFromAcceleration [MFC], CParabolicTransitionFromAcceleration", "CParabolicTransitionFromAcceleration [MFC], Create", "CParabolicTransitionFromAcceleration [MFC], m_dblAcceleration", "CParabolicTransitionFromAcceleration [MFC], m_dblFinalValue", "CParabolicTransitionFromAcceleration [MFC], m_dblFinalVelocity"]
 ms.assetid: 1e59b86f-358b-4da0-a4fd-8eaf5e85e00f
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CParabolicTransitionFromAcceleration Class

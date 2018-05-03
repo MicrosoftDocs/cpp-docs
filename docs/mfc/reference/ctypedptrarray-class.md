@@ -2,19 +2,14 @@
 title: "CTypedPtrArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrArray [MFC], Add", "CTypedPtrArray [MFC], Append", "CTypedPtrArray [MFC], Copy", "CTypedPtrArray [MFC], ElementAt", "CTypedPtrArray [MFC], GetAt", "CTypedPtrArray [MFC], InsertAt", "CTypedPtrArray [MFC], SetAt", "CTypedPtrArray [MFC], SetAtGrow"]
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CTypedPtrArray Class

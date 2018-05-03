@@ -2,19 +2,14 @@
 title: "CD2DTextFormat Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat::CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat::Create", "AFXRENDERTARGET/CD2DTextFormat::Destroy", "AFXRENDERTARGET/CD2DTextFormat::Get", "AFXRENDERTARGET/CD2DTextFormat::GetFontFamilyName", "AFXRENDERTARGET/CD2DTextFormat::GetLocaleName", "AFXRENDERTARGET/CD2DTextFormat::IsValid", "AFXRENDERTARGET/CD2DTextFormat::ReCreate", "AFXRENDERTARGET/CD2DTextFormat::m_pTextFormat"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DTextFormat [MFC], CD2DTextFormat", "CD2DTextFormat [MFC], Create", "CD2DTextFormat [MFC], Destroy", "CD2DTextFormat [MFC], Get", "CD2DTextFormat [MFC], GetFontFamilyName", "CD2DTextFormat [MFC], GetLocaleName", "CD2DTextFormat [MFC], IsValid", "CD2DTextFormat [MFC], ReCreate", "CD2DTextFormat [MFC], m_pTextFormat"]
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DTextFormat Class

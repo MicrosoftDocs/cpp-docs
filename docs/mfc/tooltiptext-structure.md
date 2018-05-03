@@ -2,19 +2,14 @@
 title: "TOOLTIPTEXT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["TOOLTIPTEXT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "tool tips [MFC], notifications"]
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TOOLTIPTEXT Structure

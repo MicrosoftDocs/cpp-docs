@@ -2,19 +2,14 @@
 title: "CMFCPopupMenuBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPopupMenuBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::AdjustSizeImmediate", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::BuildOrigItems", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::CloseDelayedSubMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::ExportToMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::FindDestintationToolBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetCurrentMenuImageSize", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetDefaultMenuId", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetLastCommandIndex", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetOffset", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::ImportFromMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsDropDownListMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsPaletteMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanel", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanelInRegularMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::LoadFromHash", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::RestoreDelayedSubMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetButtonStyle", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetOffset", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::StartPopupMenuTimer", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::m_bDisableSideBarInXPMode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPopupMenuBar [MFC], AdjustSizeImmediate", "CMFCPopupMenuBar [MFC], BuildOrigItems", "CMFCPopupMenuBar [MFC], CloseDelayedSubMenu", "CMFCPopupMenuBar [MFC], ExportToMenu", "CMFCPopupMenuBar [MFC], FindDestintationToolBar", "CMFCPopupMenuBar [MFC], GetCurrentMenuImageSize", "CMFCPopupMenuBar [MFC], GetDefaultMenuId", "CMFCPopupMenuBar [MFC], GetLastCommandIndex", "CMFCPopupMenuBar [MFC], GetOffset", "CMFCPopupMenuBar [MFC], ImportFromMenu", "CMFCPopupMenuBar [MFC], IsDropDownListMode", "CMFCPopupMenuBar [MFC], IsPaletteMode", "CMFCPopupMenuBar [MFC], IsRibbonPanel", "CMFCPopupMenuBar [MFC], IsRibbonPanelInRegularMode", "CMFCPopupMenuBar [MFC], LoadFromHash", "CMFCPopupMenuBar [MFC], RestoreDelayedSubMenu", "CMFCPopupMenuBar [MFC], SetButtonStyle", "CMFCPopupMenuBar [MFC], SetOffset", "CMFCPopupMenuBar [MFC], StartPopupMenuTimer", "CMFCPopupMenuBar [MFC], m_bDisableSideBarInXPMode"]
 ms.assetid: 4c93c459-7f70-4240-8c63-280bb811e374
-caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenuBar Class

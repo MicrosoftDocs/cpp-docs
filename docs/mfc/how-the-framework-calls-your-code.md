@@ -2,18 +2,13 @@
 title: "How the Framework Calls Your Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["control flow [MFC], MFC framework and your code", "events [MFC], command routing in MFC", "command routing [MFC], framework", "command handling [MFC], calling handlers and code in MFC", "events [MFC], event-driven programming", "MFC, calling code from", "MFC, calling code", "application-specific events [MFC]", "command routing [MFC], MFC"]
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How the Framework Calls Your Code

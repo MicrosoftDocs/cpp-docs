@@ -2,18 +2,13 @@
 title: "MAPI | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["messaging [MFC], client applications", "enabling applications for MAPI [MFC]", "MAPI support in MFC", "e-mail [MFC], enabling", "mail [MFC], enabling your application", "MAPI, MFC", "enabling applications for mail [MFC]"]
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MAPI

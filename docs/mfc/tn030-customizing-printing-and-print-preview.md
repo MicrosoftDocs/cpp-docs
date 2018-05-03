@@ -2,19 +2,14 @@
 title: "TN030: Customizing Printing and Print Preview | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.print"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN030", "customizing printing and print preview", "printing [MFC], views", "printing views [MFC]", "print preview [MFC], customizing"]
 ms.assetid: 32744697-c91c-41b6-9a12-b8ec01e0d438
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN030: Customizing Printing and Print Preview

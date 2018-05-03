@@ -2,18 +2,13 @@
 title: "Build Requirements for Windows Vista Common Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["common controls (MFC), build requirements", "common controls (MFC)"]
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Build Requirements for Windows Vista Common Controls

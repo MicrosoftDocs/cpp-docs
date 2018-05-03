@@ -2,19 +2,14 @@
 title: "Using Tooltips in a CStatusBarCtrl Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tool tips [MFC], using in status bars", "status bars [MFC], tool tips", "CStatusBarCtrl class [MFC], tool tips"]
 ms.assetid: a77597a7-43ef-4b8f-87bc-a8ea1dc63dc3
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Tooltips in a CStatusBarCtrl Object

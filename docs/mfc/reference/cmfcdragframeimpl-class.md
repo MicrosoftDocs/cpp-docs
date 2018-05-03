@@ -2,19 +2,14 @@
 title: "CMFCDragFrameImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDragFrameImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDragFrameImpl class [MFC]"]
 ms.assetid: 500cd824-8188-43c2-8754-b7bb46b5648a
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDragFrameImpl Class

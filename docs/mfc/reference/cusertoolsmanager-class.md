@@ -2,19 +2,14 @@
 title: "CUserToolsManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CUserToolsManager", "AFXUSERTOOLSMANAGER/CUserToolsManager", "AFXUSERTOOLSMANAGER/CUserToolsManager::CUserToolsManager", "AFXUSERTOOLSMANAGER/CUserToolsManager::CreateNewTool", "AFXUSERTOOLSMANAGER/CUserToolsManager::FindTool", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetArgumentsMenuID", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetDefExt", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetFilter", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetInitialDirMenuID", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetMaxTools", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetToolsEntryCmd", "AFXUSERTOOLSMANAGER/CUserToolsManager::GetUserTools", "AFXUSERTOOLSMANAGER/CUserToolsManager::InvokeTool", "AFXUSERTOOLSMANAGER/CUserToolsManager::IsUserToolCmd", "AFXUSERTOOLSMANAGER/CUserToolsManager::LoadState", "AFXUSERTOOLSMANAGER/CUserToolsManager::MoveToolDown", "AFXUSERTOOLSMANAGER/CUserToolsManager::MoveToolUp", "AFXUSERTOOLSMANAGER/CUserToolsManager::RemoveTool", "AFXUSERTOOLSMANAGER/CUserToolsManager::SaveState", "AFXUSERTOOLSMANAGER/CUserToolsManager::SetDefExt", "AFXUSERTOOLSMANAGER/CUserToolsManager::SetFilter"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CUserToolsManager [MFC], CUserToolsManager", "CUserToolsManager [MFC], CreateNewTool", "CUserToolsManager [MFC], FindTool", "CUserToolsManager [MFC], GetArgumentsMenuID", "CUserToolsManager [MFC], GetDefExt", "CUserToolsManager [MFC], GetFilter", "CUserToolsManager [MFC], GetInitialDirMenuID", "CUserToolsManager [MFC], GetMaxTools", "CUserToolsManager [MFC], GetToolsEntryCmd", "CUserToolsManager [MFC], GetUserTools", "CUserToolsManager [MFC], InvokeTool", "CUserToolsManager [MFC], IsUserToolCmd", "CUserToolsManager [MFC], LoadState", "CUserToolsManager [MFC], MoveToolDown", "CUserToolsManager [MFC], MoveToolUp", "CUserToolsManager [MFC], RemoveTool", "CUserToolsManager [MFC], SaveState", "CUserToolsManager [MFC], SetDefExt", "CUserToolsManager [MFC], SetFilter"]
 ms.assetid: bdfa37ae-efca-4616-abb5-9d0dcd2d335b
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CUserToolsManager Class

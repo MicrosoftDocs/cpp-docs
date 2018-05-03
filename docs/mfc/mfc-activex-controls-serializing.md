@@ -2,19 +2,14 @@
 title: "MFC ActiveX Controls: Serializing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["_wVerMinor", "DoPropExchange", "_wVerMajor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], version support", "wVerMinor global constant [MFC]", "GetVersion method [MFC]", "ExchangeVersion method [MFC]", "MFC ActiveX controls [MFC], serializing", "DoPropExchange method [MFC]", "versioning ActiveX controls", "wVerMajor global constant"]
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Serializing

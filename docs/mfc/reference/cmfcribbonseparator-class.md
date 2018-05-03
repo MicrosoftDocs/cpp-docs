@@ -2,19 +2,14 @@
 title: "CMFCRibbonSeparator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::AddToListBox", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CopyFrom", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::GetRegularSize", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsTabStop", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDraw", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDrawOnList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonSeparator [MFC], CMFCRibbonSeparator", "CMFCRibbonSeparator [MFC], AddToListBox", "CMFCRibbonSeparator [MFC], CopyFrom", "CMFCRibbonSeparator [MFC], GetRegularSize", "CMFCRibbonSeparator [MFC], IsSeparator", "CMFCRibbonSeparator [MFC], IsTabStop", "CMFCRibbonSeparator [MFC], OnDraw", "CMFCRibbonSeparator [MFC], OnDrawOnList"]
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonSeparator Class

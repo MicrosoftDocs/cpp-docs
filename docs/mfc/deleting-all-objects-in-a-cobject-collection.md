@@ -2,18 +2,13 @@
 title: "Deleting All Objects in a CObject Collection | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], deleting in collections", "objects in CObject collections, deleting", "CObject class [MFC], deleting in collection", "collection classes [MFC], deleting all objects", "CObject class collection", "objects in CObject collections", "collection classes [MFC], shared objects"]
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Deleting All Objects in a CObject Collection

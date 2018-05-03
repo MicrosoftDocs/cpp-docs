@@ -2,19 +2,14 @@
 title: "Ready-to-Use Map Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.map"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["collection classes [MFC], maps", "classes [MFC], map", "map classes [MFC]"]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Map Classes

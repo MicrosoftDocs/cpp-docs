@@ -2,19 +2,14 @@
 title: "COleControlModule Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["OleControlModule"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE control modules [MFC]", "MFC ActiveX controls [MFC], OLE control modules", "COleControlModule class [MFC]", "control modules [MFC]"]
 ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleControlModule Class

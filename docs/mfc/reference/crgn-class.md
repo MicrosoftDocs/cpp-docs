@@ -2,19 +2,14 @@
 title: "CRgn Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRgn", "AFXWIN/CRgn", "AFXWIN/CRgn::CRgn", "AFXWIN/CRgn::CombineRgn", "AFXWIN/CRgn::CopyRgn", "AFXWIN/CRgn::CreateEllipticRgn", "AFXWIN/CRgn::CreateEllipticRgnIndirect", "AFXWIN/CRgn::CreateFromData", "AFXWIN/CRgn::CreateFromPath", "AFXWIN/CRgn::CreatePolygonRgn", "AFXWIN/CRgn::CreatePolyPolygonRgn", "AFXWIN/CRgn::CreateRectRgn", "AFXWIN/CRgn::CreateRectRgnIndirect", "AFXWIN/CRgn::CreateRoundRectRgn", "AFXWIN/CRgn::EqualRgn", "AFXWIN/CRgn::FromHandle", "AFXWIN/CRgn::GetRegionData", "AFXWIN/CRgn::GetRgnBox", "AFXWIN/CRgn::OffsetRgn", "AFXWIN/CRgn::PtInRegion", "AFXWIN/CRgn::RectInRegion", "AFXWIN/CRgn::SetRectRgn"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRgn [MFC], CRgn", "CRgn [MFC], CombineRgn", "CRgn [MFC], CopyRgn", "CRgn [MFC], CreateEllipticRgn", "CRgn [MFC], CreateEllipticRgnIndirect", "CRgn [MFC], CreateFromData", "CRgn [MFC], CreateFromPath", "CRgn [MFC], CreatePolygonRgn", "CRgn [MFC], CreatePolyPolygonRgn", "CRgn [MFC], CreateRectRgn", "CRgn [MFC], CreateRectRgnIndirect", "CRgn [MFC], CreateRoundRectRgn", "CRgn [MFC], EqualRgn", "CRgn [MFC], FromHandle", "CRgn [MFC], GetRegionData", "CRgn [MFC], GetRgnBox", "CRgn [MFC], OffsetRgn", "CRgn [MFC], PtInRegion", "CRgn [MFC], RectInRegion", "CRgn [MFC], SetRectRgn"]
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRgn Class

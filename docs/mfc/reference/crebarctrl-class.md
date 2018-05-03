@@ -2,19 +2,14 @@
 title: "CReBarCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CReBarCtrl", "AFXCMN/CReBarCtrl", "AFXCMN/CReBarCtrl::CReBarCtrl", "AFXCMN/CReBarCtrl::BeginDrag", "AFXCMN/CReBarCtrl::Create", "AFXCMN/CReBarCtrl::CreateEx", "AFXCMN/CReBarCtrl::DeleteBand", "AFXCMN/CReBarCtrl::DragMove", "AFXCMN/CReBarCtrl::EndDrag", "AFXCMN/CReBarCtrl::GetBandBorders", "AFXCMN/CReBarCtrl::GetBandCount", "AFXCMN/CReBarCtrl::GetBandInfo", "AFXCMN/CReBarCtrl::GetBandMargins", "AFXCMN/CReBarCtrl::GetBarHeight", "AFXCMN/CReBarCtrl::GetBarInfo", "AFXCMN/CReBarCtrl::GetBkColor", "AFXCMN/CReBarCtrl::GetColorScheme", "AFXCMN/CReBarCtrl::GetDropTarget", "AFXCMN/CReBarCtrl::GetExtendedStyle", "AFXCMN/CReBarCtrl::GetImageList", "AFXCMN/CReBarCtrl::GetPalette", "AFXCMN/CReBarCtrl::GetRect", "AFXCMN/CReBarCtrl::GetRowCount", "AFXCMN/CReBarCtrl::GetRowHeight", "AFXCMN/CReBarCtrl::GetTextColor", "AFXCMN/CReBarCtrl::GetToolTips", "AFXCMN/CReBarCtrl::HitTest", "AFXCMN/CReBarCtrl::IDToIndex", "AFXCMN/CReBarCtrl::InsertBand", "AFXCMN/CReBarCtrl::MaximizeBand", "AFXCMN/CReBarCtrl::MinimizeBand", "AFXCMN/CReBarCtrl::MoveBand", "AFXCMN/CReBarCtrl::PushChevron", "AFXCMN/CReBarCtrl::RestoreBand", "AFXCMN/CReBarCtrl::SetBandInfo", "AFXCMN/CReBarCtrl::SetBandWidth", "AFXCMN/CReBarCtrl::SetBarInfo", "AFXCMN/CReBarCtrl::SetBkColor", "AFXCMN/CReBarCtrl::SetColorScheme", "AFXCMN/CReBarCtrl::SetExtendedStyle", "AFXCMN/CReBarCtrl::SetImageList", "AFXCMN/CReBarCtrl::SetOwner", "AFXCMN/CReBarCtrl::SetPalette", "AFXCMN/CReBarCtrl::SetTextColor", "AFXCMN/CReBarCtrl::SetToolTips", "AFXCMN/CReBarCtrl::SetWindowTheme", "AFXCMN/CReBarCtrl::ShowBand", "AFXCMN/CReBarCtrl::SizeToRect"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CReBarCtrl [MFC], CReBarCtrl", "CReBarCtrl [MFC], BeginDrag", "CReBarCtrl [MFC], Create", "CReBarCtrl [MFC], CreateEx", "CReBarCtrl [MFC], DeleteBand", "CReBarCtrl [MFC], DragMove", "CReBarCtrl [MFC], EndDrag", "CReBarCtrl [MFC], GetBandBorders", "CReBarCtrl [MFC], GetBandCount", "CReBarCtrl [MFC], GetBandInfo", "CReBarCtrl [MFC], GetBandMargins", "CReBarCtrl [MFC], GetBarHeight", "CReBarCtrl [MFC], GetBarInfo", "CReBarCtrl [MFC], GetBkColor", "CReBarCtrl [MFC], GetColorScheme", "CReBarCtrl [MFC], GetDropTarget", "CReBarCtrl [MFC], GetExtendedStyle", "CReBarCtrl [MFC], GetImageList", "CReBarCtrl [MFC], GetPalette", "CReBarCtrl [MFC], GetRect", "CReBarCtrl [MFC], GetRowCount", "CReBarCtrl [MFC], GetRowHeight", "CReBarCtrl [MFC], GetTextColor", "CReBarCtrl [MFC], GetToolTips", "CReBarCtrl [MFC], HitTest", "CReBarCtrl [MFC], IDToIndex", "CReBarCtrl [MFC], InsertBand", "CReBarCtrl [MFC], MaximizeBand", "CReBarCtrl [MFC], MinimizeBand", "CReBarCtrl [MFC], MoveBand", "CReBarCtrl [MFC], PushChevron", "CReBarCtrl [MFC], RestoreBand", "CReBarCtrl [MFC], SetBandInfo", "CReBarCtrl [MFC], SetBandWidth", "CReBarCtrl [MFC], SetBarInfo", "CReBarCtrl [MFC], SetBkColor", "CReBarCtrl [MFC], SetColorScheme", "CReBarCtrl [MFC], SetExtendedStyle", "CReBarCtrl [MFC], SetImageList", "CReBarCtrl [MFC], SetOwner", "CReBarCtrl [MFC], SetPalette", "CReBarCtrl [MFC], SetTextColor", "CReBarCtrl [MFC], SetToolTips", "CReBarCtrl [MFC], SetWindowTheme", "CReBarCtrl [MFC], ShowBand", "CReBarCtrl [MFC], SizeToRect"]
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CReBarCtrl Class

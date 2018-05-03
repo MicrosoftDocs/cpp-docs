@@ -2,18 +2,13 @@
 title: "General Window Creation Sequence | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["sequence [MFC], window creation", "frame windows [MFC], creating", "windows [MFC], creating", "sequence [MFC]"]
 ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # General Window Creation Sequence

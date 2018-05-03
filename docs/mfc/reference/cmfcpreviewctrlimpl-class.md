@@ -2,19 +2,14 @@
 title: "CMFCPreviewCtrlImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPreviewCtrlImpl", "AFXWIN/CMFCPreviewCtrlImpl", "AFXWIN/CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl", "AFXWIN/CMFCPreviewCtrlImpl::Create", "AFXWIN/CMFCPreviewCtrlImpl::Destroy", "AFXWIN/CMFCPreviewCtrlImpl::Focus", "AFXWIN/CMFCPreviewCtrlImpl::GetDocument", "AFXWIN/CMFCPreviewCtrlImpl::Redraw", "AFXWIN/CMFCPreviewCtrlImpl::SetDocument", "AFXWIN/CMFCPreviewCtrlImpl::SetHost", "AFXWIN/CMFCPreviewCtrlImpl::SetPreviewVisuals", "AFXWIN/CMFCPreviewCtrlImpl::SetRect", "AFXWIN/CMFCPreviewCtrlImpl::DoPaint", "AFXWIN/CMFCPreviewCtrlImpl::m_clrBackColor", "AFXWIN/CMFCPreviewCtrlImpl::m_clrTextColor", "AFXWIN/CMFCPreviewCtrlImpl::m_font", "AFXWIN/CMFCPreviewCtrlImpl::m_pDocument"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPreviewCtrlImpl [MFC], CMFCPreviewCtrlImpl", "CMFCPreviewCtrlImpl [MFC], Create", "CMFCPreviewCtrlImpl [MFC], Destroy", "CMFCPreviewCtrlImpl [MFC], Focus", "CMFCPreviewCtrlImpl [MFC], GetDocument", "CMFCPreviewCtrlImpl [MFC], Redraw", "CMFCPreviewCtrlImpl [MFC], SetDocument", "CMFCPreviewCtrlImpl [MFC], SetHost", "CMFCPreviewCtrlImpl [MFC], SetPreviewVisuals", "CMFCPreviewCtrlImpl [MFC], SetRect", "CMFCPreviewCtrlImpl [MFC], DoPaint", "CMFCPreviewCtrlImpl [MFC], m_clrBackColor", "CMFCPreviewCtrlImpl [MFC], m_clrTextColor", "CMFCPreviewCtrlImpl [MFC], m_font", "CMFCPreviewCtrlImpl [MFC], m_pDocument"]
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPreviewCtrlImpl Class

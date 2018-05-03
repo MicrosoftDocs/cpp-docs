@@ -2,19 +2,14 @@
 title: "Combo Box Handlers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["ON_CBN_KILLFOCUS", "ON_CBN_ERRSPACE", "ON_CBN_EDITCHANGE", "ON_CBN_CLOSEUP", "ON_CBN_DBLCLK", "ON_CBN_EDITUPDATE", "ON_CBN_DROPDOWN", "ON_CBN_SELENDOK", "ON_CBN_SELCHANGE", "ON_CBN_SETFOCUS", "ON_CBN_SELENDCANCEL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ON_CBN_CLOSEUP", "ON_CBN_SETFOCUS", "ON_CBN_DBLCLK", "ON_CBN_SELENDCANCEL", "ON_CBN_DROPDOWN", "ON_CBN_EDITUPDATE", "ON_CBN_KILLFOCUS", "combo boxes [MFC], handlers", "ON_CBN_EDITCHANGE", "ON_CBN_ERRSPACE", "ON_CBN_SELENDOK", "ON_CBN_SELCHANGE"]
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Combo Box Handlers

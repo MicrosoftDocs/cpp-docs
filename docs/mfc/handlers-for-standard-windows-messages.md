@@ -2,19 +2,14 @@
 title: "Handlers for Standard Windows Messages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["afx_msg"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Windows messages [MFC], handlers", "message handling [MFC], Windows message handlers", "handler functions, standard Windows messages", "functions [MFC], handler", "messages [MFC], Windows"]
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Handlers for Standard Windows Messages

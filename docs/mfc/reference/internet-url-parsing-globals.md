@@ -2,19 +2,14 @@
 title: "Internet URL Parsing Globals and Helpers | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/03/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.isapi"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Internet URL Parsing Globals and Helpers

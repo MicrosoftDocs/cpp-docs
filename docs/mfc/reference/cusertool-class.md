@@ -2,19 +2,14 @@
 title: "CUserTool Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CUserTool", "AFXUSERTOOL/CUserTool", "AFXUSERTOOL/CUserTool::CopyIconToClipboard", "AFXUSERTOOL/CUserTool::DrawToolIcon", "AFXUSERTOOL/CUserTool::GetCommand", "AFXUSERTOOL/CUserTool::GetCommandId", "AFXUSERTOOL/CUserTool::Invoke", "AFXUSERTOOL/CUserTool::Serialize", "AFXUSERTOOL/CUserTool::SetCommand", "AFXUSERTOOL/CUserTool::SetToolIcon", "AFXUSERTOOL/CUserTool::LoadDefaultIcon", "AFXUSERTOOL/CUserTool::m_strArguments", "AFXUSERTOOL/CUserTool::m_strInitialDirectory", "AFXUSERTOOL/CUserTool::m_strLabel"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CUserTool [MFC], CopyIconToClipboard", "CUserTool [MFC], DrawToolIcon", "CUserTool [MFC], GetCommand", "CUserTool [MFC], GetCommandId", "CUserTool [MFC], Invoke", "CUserTool [MFC], Serialize", "CUserTool [MFC], SetCommand", "CUserTool [MFC], SetToolIcon", "CUserTool [MFC], LoadDefaultIcon", "CUserTool [MFC], m_strArguments", "CUserTool [MFC], m_strInitialDirectory", "CUserTool [MFC], m_strLabel"]
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CUserTool Class
