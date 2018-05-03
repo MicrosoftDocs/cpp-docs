@@ -11,11 +11,18 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# ATL Classes
-The Active Template Library (ATL) includes the following classes. To find a particular class by category, see the [ATL Class Overview](../../atl/atl-class-overview.md).  
+# ATL classes and structs
+The Active Template Library (ATL) includes the following classes and structs. To find a particular class by category, see the [ATL Class Overview](../../atl/atl-class-overview.md).  
   
-|Class|Description|Header file|  
+|Class / struct|Description|Header file|  
 |-----------|-----------------|-----------------|  
+|[ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md)|Contains information used for rendering to various targets, such as a printer, metafile, or ActiveX control.|atlctl.h|
+|[_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md)|Contains class instance data in windowing code in ATL.|atlbase.h|
+|[_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)|Used by any project that uses ATL.|atlbase.h|  
+|[_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)|Used by COM-related code in ATL.| atlbase.h|  
+|[_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md)|Contains type information used to describe a method or property on a dispinterface.|atlcom.h|  
+|[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)|Contains data used by every ATL module.|atlbase.h|  
+|[_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)|Used by windowing code in ATL.|atlbase.h|  
 |[CA2AEX](../../atl/reference/ca2aex-class.md)|This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and the typedef **CA2A**.|atlconv.h|  
 |[CA2CAEX](../../atl/reference/ca2caex-class.md)|This class is used by string conversion macros `CA2CTEX` and `CT2CAEX`, and the typedef **CA2CA**.|atlconv.h|  
 |[CA2WEX](../../atl/reference/ca2wex-class.md)|This class is used by the string conversion macros `CA2TEX`, `CA2CTEX`, `CT2WEX`, and `CT2CWEX`, and the typedef **CA2W**.|atlconv.h|  
@@ -214,7 +221,6 @@ The Active Template Library (ATL) includes the following classes. To find a part
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
  [Typedefs](../../atl/reference/atl-typedefs.md)   
  [Class Overview](../../atl/atl-class-overview.md)
 

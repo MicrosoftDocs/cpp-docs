@@ -281,6 +281,5 @@ typedef CUrl* LPURL;
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
+ [Classes and structs](../../atl/reference/atl-classes.md)
  [Macros](../../atl/reference/atl-macros.md)   
- [Classes](../../atl/reference/atl-classes.md)
