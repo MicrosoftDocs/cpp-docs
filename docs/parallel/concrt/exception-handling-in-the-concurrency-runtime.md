@@ -2,18 +2,13 @@
 title: "Exception Handling in the Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["lightweight tasks, exception handling [Concurrency Runtime]", "exception handling [Concurrency Runtime]", "structured task groups, exception handling [Concurrency Runtime]", "agents, exception handling [Concurrency Runtime]", "task groups, exception handling [Concurrency Runtime]"]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling in the Concurrency Runtime

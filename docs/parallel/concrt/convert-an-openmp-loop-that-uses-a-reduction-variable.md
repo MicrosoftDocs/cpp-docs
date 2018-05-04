@@ -2,18 +2,13 @@
 title: "How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, reduction variables", "reduction variables, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime

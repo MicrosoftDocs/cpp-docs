@@ -2,18 +2,13 @@
 title: "Multithreading: How to Use the Synchronization Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], multithreading", "threading [MFC], synchronization classes", "resources [C++], multithreading", "thread-safe classes [C++]", "synchronization classes [C++]", "synchronization [C++], multithreading", "threading [MFC], thread-safe class design", "threading [C++], synchronization", "multithreading [C++], synchronization classes", "threading [C++], thread-safe class design"]
 ms.assetid: f266d4c6-0454-4bda-9758-26157ef74cc5
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading: How to Use the Synchronization Classes
