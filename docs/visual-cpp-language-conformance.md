@@ -26,7 +26,7 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |----|---|
 |__C++03/11 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;Everything else|VS 2015 <sup>[A](#note_A)</sup>|
-|&nbsp;&nbsp;Two-phase name lookup|Partial <sup>[B](#note_B)</sup>|
+|&nbsp;&nbsp;Two-phase name lookup|VS 2017 15.7 <sup>[B](#note_B)</sup>|
 |&nbsp;&nbsp;[N2634 Expression SFINAE](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2634.html)|Partial <sup>[C](#note_C)</sup>|
 |&nbsp;&nbsp;[N1653 C99 preprocessor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm)|Partial <sup>[D](#note_D)</sup>|
 |&nbsp;&nbsp;[N1988 Extended integer types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1988.pdf)|N/A <sup>[E](#note_E)</sup>|
@@ -227,8 +227,8 @@ __VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 ver
 ### Notes
 
 <a name="note_A"></a>__A__ This ignores C++03’s dynamic exception specifications, which were deprecated in C++11. There is no plan to implement them, in expectation they’ll be removed from a future C++ Standard.  
-<a name="note_B"></a>__B__ The compiler’s support for two-phase name lookup is improved but remains incomplete.  
-<a name="note_C"></a>__C__ The compiler’s support for Expression SFINAE has been sufficient for the Standard Library since Visual Studio 2015 Update 2, but support remains incomplete.  
+<a name="note_B"></a>__B__ Supported in /permissive- mode in Visual Studio 2017 version 15.7.  
+<a name="note_C"></a>__C__ The compiler’s support for Expression SFINAE has been sufficient for the Standard Library since Visual Studio 2015 Update 2. Supported in Visual Studio 2017 15.7 regardless of whether /permissive- mode is set.  
 <a name="note_D"></a>__D__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. Variadic macros are supported, but there are many bugs in the preprocessor’s behavior.  
 <a name="note_E"></a>__E__ This is marked as Not Applicable because compilers are permitted, but not required, to support extended integer types.  Like GCC and Clang, we’ve chosen not to support them.  
 <a name="note_F"></a>__F__ Similarly, this is marked as Not Applicable because compilers are permitted, but not required, to implement this optimization.  
