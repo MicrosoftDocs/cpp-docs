@@ -135,7 +135,7 @@ void createTextureWithBPC() { // Create the source data.
 |-------------|---------------------|  
 |texture\<T,1>|16384|  
 |texture\<T,2>|16384|  
-|texture\<T,2>|2048|  
+|texture\<T,3>|2048|  
   
 ### Reading from Texture Objects  
  You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#operator_at), [texture::operator() Operator](reference/texture-class.md#operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
