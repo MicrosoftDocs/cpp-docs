@@ -26,7 +26,7 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |----|---|
 |__C++03/11 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;Everything else|VS 2015 <sup>[A](#note_A)</sup>|
-|&nbsp;&nbsp;Two-phase name lookup|VS 2017 15.7 <sup>[B](#note_B)</sup>|
+|&nbsp;&nbsp;Two-phase name lookup|VS 2017 15.3 <sup>[B](#note_B)</sup>|
 |&nbsp;&nbsp;[N2634 Expression SFINAE](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2634.html)|Partial <sup>[C](#note_C)</sup>|
 |&nbsp;&nbsp;[N1653 C99 preprocessor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm)|Partial <sup>[D](#note_D)</sup>|
 |&nbsp;&nbsp;[N1988 Extended integer types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1988.pdf)|N/A <sup>[E](#note_E)</sup>|
@@ -107,7 +107,8 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[P0426R1 constexpr For char_traits](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0030R1 hypot(x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0220R1 Library Fundamentals V1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html)|VS 2017 15.6 <sup>[J](#note_J)</sup>|
-|&nbsp;&nbsp;[P0067R5 Elementary String Conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|VS 2017 15.7 (Partial)|
+|&nbsp;&nbsp;[P0067R5 Elementary String Conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|VS 2017 15.7 <sup>[charconv](#note_charconv)</sup>|
+|&nbsp;&nbsp;*P0777R1 Avoiding Unnecessary Decay*|VS 2017 15.7 <sup>[charconv](#note_14)</sup>|
 |&nbsp;&nbsp;[N4562 Library Fundamentals: \<memory_resource>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#memory.resource.synop)<br />&nbsp;&nbsp;[P0337R0 Deleting polymorphic_allocator Assignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html)|VS 2017 15.6|
 |&nbsp;&nbsp;[P0024R2 Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html)<br />&nbsp;&nbsp;[P0336R1 Renaming Parallel Execution Policies](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf)<br />&nbsp;&nbsp;[P0394R4 Parallel Algorithms Should terminate() For Exceptions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html)<br />&nbsp;&nbsp;[P0452R1 Unifying \<numeric> Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0452r1.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0226R1 Mathematical Special Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0226r1.pdf)|VS 2017 15.7|
@@ -226,27 +227,25 @@ __VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 ver
 
 ### Notes
 
-<a name="note_A"></a>__A__ This ignores C++03’s dynamic exception specifications, which were deprecated in C++11. There is no plan to implement them, in expectation they’ll be removed from a future C++ Standard.  
-<a name="note_B"></a>__B__ Supported in /permissive- mode in Visual Studio 2017 version 15.7.  
-<a name="note_C"></a>__C__ The compiler’s support for Expression SFINAE has been sufficient for the Standard Library since Visual Studio 2015 Update 2. Supported in Visual Studio 2017 15.7 regardless of whether /permissive- mode is set.  
-<a name="note_D"></a>__D__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. Variadic macros are supported, but there are many bugs in the preprocessor’s behavior.  
+<a name="note_A"></a>__A__ In /std:c++14 mode, dynamic exception specifications remain unimplemented, and throw() is still treated as a synonym for __declspec(nothrow). In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: throw() is deprecated and required to behave as a synonym for noexcept. In /std:c++17 mode, MSVC now conforms to the Standard by giving throw() the same behavior as noexcept, i.e. enforcement via termination.
+The compiler option /Zc:noexceptTypes- requests our old behavior of __declspec(nothrow). It’s likely that throw() will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under **/std:c++17** and **/permissive-**.
+<a name="note_B"></a>__B__ Supported in /permissive- mode in Visual Studio 2017 version 15.3. See [Two-phase name lookup support comes to MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/) for more information.  
+<a name="note_C"></a>__C__ The compiler’s support for Expression SFINAE has been sufficient for the Standard Library since Visual Studio 2015 Update 2. Supported in Visual Studio 2017 15.7 regardless of whether /permissive- mode is set. Some bugs remain to be fixed. The “unique tag type” workaround is no longer necessary, and we’ve removed this workaround from our STL implementation. 
+<a name="note_D"></a>__D__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. Variadic macros are supported, but there are many bugs in the preprocessor’s behavior.  We are overhauling the preprocessor, and will experimentally ship those changes under the **/permissive-** mode soon.
 <a name="note_E"></a>__E__ This is marked as Not Applicable because compilers are permitted, but not required, to support extended integer types.  Like GCC and Clang, we’ve chosen not to support them.  
 <a name="note_F"></a>__F__ Similarly, this is marked as Not Applicable because compilers are permitted, but not required, to implement this optimization.  
 <a name="note_G"></a>__G__ Supported under [/std:c++14](./build/reference/std-specify-language-standard-version.md) with a suppressible warning.  
 <a name="note_J"></a>__J__ Features that were not completed in Visual Studio 2015 are broken out elsewhere in this table.  
 <a name="note_K"></a>__K__ This is a completely new implementation, incompatible with the
-previous std::experimental version, necessitated by symlink support, bug fixes, and changes in standard-
-required behavior. Currently, including \<filesystem> provides the new std::filesystem and the previous
-std::experimental::filesystem, and including \<experimental/filesystem> provides only the old experimental
-implementation. The experimental implementation will be REMOVED in the next ABIbreaking
-release of the libraries.  
+previous std::experimental version, necessitated by symlink support, bug fixes, and changes in standard-required behavior. Currently, including \<filesystem> provides the new std::filesystem and the previous std::experimental::filesystem, and including \<experimental/filesystem> provides only the old experimental implementation. The experimental implementation will be REMOVED in the next ABI-breaking release of the libraries.  
 <a name="note_L"></a>__L__ Supported by a compiler intrinsic. This intrinsic is not yet available in Clang. The feature is available but not yet enabled in Intellisense.   
-<a name="note_14"></a>__14__ These C++17 features are always enabled, even when [/std:c++14](./build/reference/std-specify-language-standard-version.md) (the default) is specified. This is either because the feature was implemented before the introduction of the **/std** options, or because conditional implementation was undesirably complex.  
+<a name="note_14"></a>__14__ These C++17/20 features are always enabled, even when [/std:c++14](./build/reference/std-specify-language-standard-version.md) (the default) is specified. This is either because the feature was implemented before the introduction of the **/std** options, or because conditional implementation was undesirably complex.  
 <a name="note_17"></a>__17__ These features are enabled by the [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) compiler option.  
 <a name="note_byte"></a>__byte__ `std::byte` is enabled by [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)), but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. It can be disabled by defining `_HAS_STD_BYTE` as `0`.  
 <a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`, namely, that `free()` must be able to handle highly aligned allocations.  
 <a name="note_rem"></a>__rem__ Features removed when the [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features have opt-out macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
-  
+<a name="note_charconv"></a>__charconv__  from_chars() and to_chars() are available for integers. We’re currently working on floating-point from_chars(), to be followed by floating-point to_chars(). 
+
 ## See also
 
 [C++ Language Reference](cpp/cpp-language-reference.md)  
