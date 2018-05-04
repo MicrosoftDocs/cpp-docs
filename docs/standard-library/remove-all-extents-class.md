@@ -2,19 +2,14 @@
 title: "remove_all_extents Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_all_extents"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_all_extents class", "remove_all_extents"]
 ms.assetid: 548dc536-82e7-423a-b8c1-443d66d9632e
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # remove_all_extents Class

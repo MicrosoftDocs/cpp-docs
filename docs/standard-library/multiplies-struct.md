@@ -2,19 +2,14 @@
 title: "multiplies Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::multiplies"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["multiplies class", "multiplies struct"]
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # multiplies Struct

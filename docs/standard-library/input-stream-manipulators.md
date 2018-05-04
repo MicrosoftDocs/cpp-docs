@@ -2,18 +2,13 @@
 title: "Input Stream Manipulators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["input streams, manipulators", "input stream objects"]
 ms.assetid: 0addcacb-7b7b-4d70-9775-a59abc400fb3
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Input Stream Manipulators

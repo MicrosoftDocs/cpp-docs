@@ -2,19 +2,14 @@
 title: "aligned_union Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::aligned_union"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_union"]
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # aligned_union Class

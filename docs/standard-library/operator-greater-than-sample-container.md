@@ -2,19 +2,14 @@
 title: "operator&gt; (&lt;sample container&gt;) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["std::operator>", "operator>", "std::>", ">"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["> operator, comparing specific objects", "operator >"]
 ms.assetid: 49bd417a-3305-4ffa-9884-39d3904ed87d
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator&gt; (&lt;sample container&gt;)

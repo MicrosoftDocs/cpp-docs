@@ -2,19 +2,14 @@
 title: "&lt;fstream&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<fstream>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["fstream header"]
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;fstream&gt;

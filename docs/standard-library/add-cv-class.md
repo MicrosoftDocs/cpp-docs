@@ -2,19 +2,14 @@
 title: "add_cv Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_cv"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_cv class", "add_cv"]
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # add_cv Class
