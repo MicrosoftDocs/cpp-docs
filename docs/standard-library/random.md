@@ -2,19 +2,14 @@
 title: "&lt;random&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/24/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<random>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["random header"]
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-caps.latest.revision: 58
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;random&gt;

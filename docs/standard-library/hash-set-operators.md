@@ -2,15 +2,10 @@
 title: "&lt;hash_set&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-caps.latest.revision: 13
-manager: "ghogen"
 ---
 # &lt;hash_set&gt; operators
 

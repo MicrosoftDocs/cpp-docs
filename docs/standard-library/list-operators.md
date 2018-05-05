@@ -2,15 +2,10 @@
 title: "&lt;list&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["list/std::operator!=", "list/std::operator&gt;", "list/std::operator&gt;=", "list/std::operator&lt;", "list/std::operator&lt;=", "list/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 8103d8f2-c30f-49ad-ac50-b3ba6a907ebe
-caps.latest.revision: 7
-manager: "ghogen"
 helpviewer_keywords: ["std::operator!= (list)", "std::operator&gt; (list)", "std::operator&gt;= (list)", "std::operator&lt; (list)", "std::operator&lt;= (list)", "std::operator== (list)"]
 ---
 # &lt;list&gt; operators

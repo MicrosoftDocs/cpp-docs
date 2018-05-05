@@ -2,19 +2,14 @@
 title: "add_rvalue_reference Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_rvalue_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_rvalue_reference Class"]
 ms.assetid: 76b0cb7c-1031-45d0-b409-f03ab0297580
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # add_rvalue_reference Class

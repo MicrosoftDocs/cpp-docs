@@ -2,14 +2,9 @@
 title: "&lt;chrono&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast"]
 ms.assetid: d6800e15-77a1-4df3-900e-d8b2fee190c7
-caps.latest.revision: 10
-manager: "ghogen"
 ---
 # &lt;chrono&gt; functions
 

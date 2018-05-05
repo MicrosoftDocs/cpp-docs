@@ -2,19 +2,14 @@
 title: "random_access_iterator_tag Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xutility/std::random_access_iterator_tag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["random_access_iterator_tag class", "random_access_iterator_tag struct"]
 ms.assetid: 59f5b741-c5b4-459c-ad0a-3b67cddeea23
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # random_access_iterator_tag Struct

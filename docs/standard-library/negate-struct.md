@@ -2,19 +2,14 @@
 title: "negate Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::negate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["negate struct", "negate class"]
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # negate Struct

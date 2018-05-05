@@ -2,19 +2,14 @@
 title: "logical_not Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::logical_not"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["logical_not class", "logical_not struct"]
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # logical_not Struct

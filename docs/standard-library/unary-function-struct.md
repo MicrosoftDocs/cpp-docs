@@ -2,19 +2,14 @@
 title: "unary_function Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["functional/std::unary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unary_function class"]
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # unary_function Struct

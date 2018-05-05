@@ -2,19 +2,14 @@
 title: "operator&gt;= | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["operator>=", "std::>=", "std.operator>=", ">=", "std.>=", "std::operator>="]
 dev_langs: ["C++"]
 helpviewer_keywords: [">= operator, comparing specific objects", "operator >=", "operator>="]
 ms.assetid: 14fbebf5-8b75-4afa-a51b-3112d31c07cf
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator&gt;=
