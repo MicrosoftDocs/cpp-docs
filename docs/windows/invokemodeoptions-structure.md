@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "03/22/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["event/Microsoft::WRL::InvokeModeOptions",
+f1_keywords: ["event/Microsoft::WRL::InvokeModeOptions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["InvokeModeOptions structure", "InvokeMode enum"]
 author: "mikeblome"
@@ -17,7 +17,7 @@ Specifies whether to fire all events in the delegate queue, or to stop firing af
 
 ## Syntax
 
-```
+```cpp
 enum InvokeMode
 {
    StopOnFirstError = 1,
@@ -32,9 +32,9 @@ struct InvokeModeOptions
 
 ## Requirements
 
- **Header:** event.h
+**Header:** event.h
 
- **Namespace:** Microsoft::WRL
+**Namespace:** Microsoft::WRL
 
 ## See Also
 
