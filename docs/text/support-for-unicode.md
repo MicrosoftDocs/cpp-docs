@@ -2,16 +2,12 @@
 title: "Support for Unicode | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/09/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "portable data types [MFC]", "Unicode [C++]", "wide characters [C++], about wide characters", "character sets [C++], Unicode", "localization [C++], character sets", "Unicode [C++], installing support"]
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Support for Unicode

@@ -2,19 +2,14 @@
 title: "MBCS Support in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["_mbcs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tools [C++], MBCS support", "Asian languages [C++]", "Code Editor [C++], MBCS support", "IME [C++]", "Chinese characters [C++]", "Input Method Editor [C++], MBCS", "resource editors [C++], MBCS support", "debugger [C++], MBCS support", "character sets [C++], multibyte", "Japanese characters [C++]", "multibyte characters [C++]", "Kanji character support [C++]", "NMAKE program, MBCS support", "double-byte character sets [C++]", "IME [C++], MBCS", "Input Method Editor [C++]", "MBCS [C++], enabling"]
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MBCS Support in Visual C++
