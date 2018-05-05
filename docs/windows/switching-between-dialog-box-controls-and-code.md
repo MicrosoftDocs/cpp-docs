@@ -2,18 +2,13 @@
 title: "Switching Between Dialog Box Controls and Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["events [C++], viewing for controls", "Windows messages [C++], controls", "messages [C++], viewing for dialog boxes", "Dialog editor, accessing code", "code [C++], switching from Dialog Editor", "controls [C++], jumping to code", "Dialog editor, switching between controls and code"]
 ms.assetid: 7da73815-b853-4203-ba45-bbe570695122
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Switching Between Dialog Box Controls and Code

@@ -2,18 +2,13 @@
 title: "Creating Transparent or Inverse Regions in Device Images (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cursors [C++], screen regions", "inverse colors, device images", "transparent regions, device images", "transparency, device images", "Image editor [C++], device images", "inverse regions, device images", "cursors [C++], transparent regions", "screen colors", "regions, transparent", "icons [C++], transparent regions", "display devices, transparent and screen regions", "transparent regions in devices", "regions, inverse", "colors [C++], Image editor", "device projects, transparent images", "icons [C++], screen regions"]
 ms.assetid: a994954b-b039-4391-a535-58d1fa10fc3b
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating Transparent or Inverse Regions in Device Images (Image Editor for Icons)

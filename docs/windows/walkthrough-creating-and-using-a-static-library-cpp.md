@@ -1,19 +1,14 @@
 ---
 title: "Walkthrough: Creating and Using a Static Library (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["libraries [C++], static", "static libraries [C++]"]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
-caps.latest.revision: 38
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating and Using a Static Library (C++)

@@ -2,19 +2,14 @@
 title: "IsSame::value Constant | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsSame::value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value constant"]
 ms.assetid: ee72deff-54a2-4482-9967-49a86d07f834
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # IsSame::value Constant

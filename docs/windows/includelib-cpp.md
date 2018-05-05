@@ -2,19 +2,14 @@
 title: "includelib (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.includelib"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["includelib attribute"]
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # includelib (C++)

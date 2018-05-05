@@ -2,19 +2,14 @@
 title: "Module::UnregisterObjects Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::UnregisterObjects"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["UnregisterObjects method"]
 ms.assetid: 3d8119a7-991d-45e9-b8c5-ed36c0be0332
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::UnregisterObjects Method

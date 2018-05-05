@@ -2,19 +2,14 @@
 title: "Resource View Window | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vs.resourceview.F1"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [Visual Studio], viewing", "Resource View window"]
 ms.assetid: 10be7ff6-195f-4783-9ec5-87e5e06a7369
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource View Window

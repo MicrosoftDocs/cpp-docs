@@ -2,19 +2,14 @@
 title: "SafeInt::SafeInt | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["SafeInt::SafeInt", "SafeInt", "SafeInt.SafeInt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeInt class, constructor"]
 ms.assetid: 39e6f632-a396-40e6-9ece-cc3d4c5a78ef
-caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt::SafeInt

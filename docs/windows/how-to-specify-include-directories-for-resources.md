@@ -2,18 +2,13 @@
 title: "How to: Specify Include Directories for Resources | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["directories [C++], specifying include paths for resources", "include files, specifying for resources", "resources [Visual Studio], including in projects"]
 ms.assetid: d6a7c0f6-4810-4bb0-b4b7-7d2476a20ca2
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Specify Include Directories for Resources

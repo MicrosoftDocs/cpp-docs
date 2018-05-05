@@ -2,18 +2,13 @@
 title: "Generic Classes (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], generic", "generic classes [C++], about generic classes", "data types [C++], generic", "generic classes", "generics [C++], declaring generic classes"]
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Classes (C++/CLI)

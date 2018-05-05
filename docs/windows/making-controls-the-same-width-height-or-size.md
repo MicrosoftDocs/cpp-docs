@@ -2,18 +2,13 @@
 title: "Making Controls the Same Width, Height, or Size | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Make Same Size command", "controls [C++], sizing"]
 ms.assetid: 94b50613-67e2-497b-a2b6-6d98dccfd345
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Making Controls the Same Width, Height, or Size

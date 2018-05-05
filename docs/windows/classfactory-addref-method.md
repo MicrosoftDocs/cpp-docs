@@ -2,19 +2,14 @@
 title: "ClassFactory::AddRef Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory::AddRef"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddRef method"]
 ms.assetid: 5b091785-dea4-42b6-a502-0db5fc7a5a2e
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::AddRef Method

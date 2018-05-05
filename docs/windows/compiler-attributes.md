@@ -2,18 +2,13 @@
 title: "Compiler Attributes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, attributes", "attributes [C++], compiler"]
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Compiler Attributes

@@ -2,19 +2,14 @@
 title: "Viewing and Adding ActiveX Controls to a Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.controls.activex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [C++], adding ActiveX controls", "Insert ActiveX Control command", "ActiveX controls [C++], adding to dialog boxes"]
 ms.assetid: e1c2e3ae-e1b0-40d3-9766-623007073856
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing and Adding ActiveX Controls to a Dialog Box

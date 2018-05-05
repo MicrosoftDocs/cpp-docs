@@ -2,18 +2,13 @@
 title: "Converting Bitmaps to Toolbars | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["bitmaps [C++], converting to toolbars", "Toolbar editor, converting bitmaps", "toolbars [C++], converting bitmaps"]
 ms.assetid: 971c181b-40f5-44be-843d-677a7c235667
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Converting Bitmaps to Toolbars

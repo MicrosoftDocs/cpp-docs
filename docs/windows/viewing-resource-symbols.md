@@ -2,19 +2,14 @@
 title: "Viewing Resource Symbols | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.managing"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [Visual Studio], viewing", "resource symbols", "symbols, viewing"]
 ms.assetid: 4bcc06d9-7d36-486a-8a37-71da0541643c
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing Resource Symbols
