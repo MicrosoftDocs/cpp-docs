@@ -2,19 +2,14 @@
 title: "Security Best Practices for C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/25/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["securitybestpracticesVC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-caps.latest.revision: 45
 author: "mikeblome"
 ms.author: "mikeblome"
-manager: "wpickett"
 ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++
