@@ -2,19 +2,14 @@
 title: "Constraints on Generic Type Parameters (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["where"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["where keyword [C++]", "constraints, C++"]
 ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Constraints on Generic Type Parameters (C++/CLI)

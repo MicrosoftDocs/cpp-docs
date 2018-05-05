@@ -2,18 +2,13 @@
 title: "ComPtr::operator!= Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::operator!="]
 dev_langs: ["C++"]
 ms.assetid: 63647240-dec7-4eb9-9272-96c07d01493c
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator!= Operator

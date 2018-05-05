@@ -2,19 +2,14 @@
 title: "Open &lt;Device&gt; Image Dialog Box (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.opendeviceimage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open <Device> Image dialog box"]
 ms.assetid: 27cb60ec-8704-4e58-ab1c-8cc3b34e66be
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Open &lt;Device&gt; Image Dialog Box (Image Editor for Icons)

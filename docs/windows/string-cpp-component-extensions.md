@@ -2,18 +2,13 @@
 title: "String  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # String  (C++ Component Extensions)

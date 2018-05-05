@@ -2,19 +2,14 @@
 title: "Compiler Support for Type Traits (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["__is_simple_value_class", "__has_trivial_destructor", "__has_assign", "__is_union", "__is_class", "__is_abstract", "__has_trivial_assign", "__has_virtual_destructor", "__is_ref_array", "__is_base_of", "__has_copy", "__is_polymorphic", "__has_nothrow_constructor", "__is_ref_class", "__is_delegate", "__is_convertible_to", "__is_value_class", "__is_interface_class", "__has_nothrow_copy", "__is_sealed", "__has_trivial_constructor", "__has_trivial_copy", "__is_enum", "__has_nothrow_assign", "__has_finalizer", "__is_empty", "__is_pod", "__has_user_destructor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__is_class keyword [C++]", "__is_pod keyword [C++]", "__is_delegate keyword [C++]", "__is_value_class keyword [C++]", "__has_copy keyword [C++]", "__has_nothrow_copy keyword [C++]", "__is_interface_class keyword [C++]", "__is_sealed keyword [C++]", "__is_convertible_to keyword [C++]", "__is_ref_class keyword [C++]", "__has_trivial_copy keyword [C++]", "__has_user_destructor keyword [C++]", "__is_abstract keyword [C++]", "__is_empty keyword [C++]", "__has_trivial_assign keyword [C++]", "__has_nothrow_constructor keyword [C++]", "__is_ref_array keyword [C++]", "__is_base_of keyword [C++]", "__has_nothrow_assign keyword [C++]", "__has_virtual_destructor keyword [C++]", "__has_finalizer keyword [C++]", "__is_union keyword [C++]", "__has_assign keyword [C++]", "__has_trivial_destructor keyword [C++]", "__is_polymorphic keyword [C++]", "__is_enum keyword [C++]", "__is_simple_value_class keyword [C++]", "__has_trivial_constructor keyword [C++]"]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Compiler Support for Type Traits (C++ Component Extensions)

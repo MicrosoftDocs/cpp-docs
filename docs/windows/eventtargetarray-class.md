@@ -2,19 +2,14 @@
 title: "EventTargetArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["EventTargetArray class"]
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray Class

@@ -2,18 +2,13 @@
 title: "SafeInt Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["functions, SafeInt"]
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-caps.latest.revision: 13
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Functions

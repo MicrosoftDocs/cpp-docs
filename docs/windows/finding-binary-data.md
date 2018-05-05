@@ -2,19 +2,14 @@
 title: "Finding Binary Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["hexadecimal bytes in binary data", "strings [C++], searching for", "file searches [C++]", "binary data, finding", "ASCII characters, finding in binary data"]
 ms.assetid: 1675b19c-66e3-4040-82c2-5dde4b1793f8
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Finding Binary Data

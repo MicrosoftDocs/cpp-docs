@@ -2,18 +2,13 @@
 title: "Building an Attributed Program | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["tlb files", "MIDL", "MIDL, linker output", "IDL files", "tlb files, building attributed programs", ".tlb files, building attributed programs", "IDL files, building", "attributes [C++], building type libraries and .idl files", ".tlb files", ".idl files, building", "type libraries, linker options for building"]
 ms.assetid: 04997b5f-bf2c-46ec-b868-c4adebbef5f4
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Building an Attributed Program

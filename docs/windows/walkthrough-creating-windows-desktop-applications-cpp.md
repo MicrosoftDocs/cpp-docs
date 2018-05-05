@@ -1,16 +1,13 @@
 ---
 title: "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "1/11/2018"
-ms.reviewer: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)

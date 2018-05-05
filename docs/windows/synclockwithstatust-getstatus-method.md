@@ -2,19 +2,14 @@
 title: "SyncLockWithStatusT::GetStatus Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetStatus method"]
 ms.assetid: d448b51d-a63d-40d9-a9ee-4aad3204118d
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockWithStatusT::GetStatus Method

@@ -2,19 +2,14 @@
 title: "WeakRef::As Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::WeakRef::As"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["As method"]
 ms.assetid: 7173da62-b3fe-44d6-aea4-1aa97e69b221
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::As Method
