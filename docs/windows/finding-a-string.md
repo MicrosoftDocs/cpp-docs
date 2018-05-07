@@ -2,19 +2,14 @@
 title: "Finding a String | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], searching", "strings [C++]"]
 ms.assetid: c2497173-f356-4f77-97d6-f0ac41782510
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Finding a String

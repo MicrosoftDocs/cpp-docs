@@ -2,19 +2,14 @@
 title: "Add Resource Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.insertresource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [Visual Studio], adding", "Add Resource dialog box"]
 ms.assetid: e9fb6967-738f-47e8-ab58-728cf35b3af0
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Add Resource Dialog Box

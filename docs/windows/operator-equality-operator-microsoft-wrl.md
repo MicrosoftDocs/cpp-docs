@@ -2,18 +2,13 @@
 title: "operator== Operator (Microsoft::WRL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # operator== Operator (Microsoft::WRL)

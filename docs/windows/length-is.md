@@ -2,19 +2,14 @@
 title: "length_is | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.length_is"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["length_is attribute"]
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # length_is

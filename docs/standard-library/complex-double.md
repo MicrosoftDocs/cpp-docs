@@ -2,19 +2,14 @@
 title: "complex&lt;double&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["complex/std::complex<double>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex<double> function"]
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # complex&lt;double&gt;

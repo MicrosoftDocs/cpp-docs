@@ -2,19 +2,14 @@
 title: "remove_pointer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_pointer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_pointer class", "remove_pointer"]
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # remove_pointer Class

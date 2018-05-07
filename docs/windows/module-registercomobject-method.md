@@ -2,19 +2,14 @@
 title: "Module::RegisterCOMObject Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::RegisterCOMObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RegisterCOMObject method"]
 ms.assetid: 59f223dc-03c6-429d-95da-b74b3f73b702
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::RegisterCOMObject Method

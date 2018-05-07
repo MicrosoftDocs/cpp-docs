@@ -2,18 +2,13 @@
 title: "Accelerator Type Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Type property", "VIRTKEY"]
 ms.assetid: 8c349bc4-e6ad-43fa-959e-f29168af35b8
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Accelerator Type Property

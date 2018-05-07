@@ -37,7 +37,7 @@
             "ms.topic": "conceptual",
             "audience": "developer",
             "ms.prod": "visual-cpp",
-            "ms.tgt_pltfrm": "Windows",
+            "ms.tgt_pltfrm": "",
             "searchScope": ["C++"]
     },
     "fileMetadata": {},

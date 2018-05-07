@@ -1,19 +1,14 @@
 ---
 title: "How to: Convert Between Various String Types | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-caps.latest.revision: 13
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Convert Between Various String Types

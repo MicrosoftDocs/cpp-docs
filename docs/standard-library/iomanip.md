@@ -2,19 +2,14 @@
 title: "&lt;iomanip&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["iomanip/std::<iomanip>", "<iomanip>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iomanip header"]
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;iomanip&gt;

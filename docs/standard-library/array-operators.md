@@ -2,15 +2,10 @@
 title: "&lt;array&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["array/std::array::operator!=", "array/std::array::operator<", "array/std::array::operator<=", "array/std::array::operator>", "array/std::array::operator>=", "array/std::array::operator=="]
 dev_langs: ["C++"]
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-caps.latest.revision: 12
-manager: "ghogen"
 ---
 # &lt;array&gt; operators
 

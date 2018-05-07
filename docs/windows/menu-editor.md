@@ -2,19 +2,14 @@
 title: "Menu Editor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.menu.F1"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resource editors, Menu editor", "editors, menus", "Menu editor", "menus, Menu editor"]
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Menu Editor

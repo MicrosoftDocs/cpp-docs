@@ -2,18 +2,13 @@
 title: "Creating a Custom Brush (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["colors [C++], brush", "brushes, colors", "brushes, creating custom", "images [C++], creating custom brushes", "graphics [C++], custom brushes", "custom brushes"]
 ms.assetid: 750881aa-6f47-4de9-8ca6-a7a12afc6383
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Custom Brush (Image Editor for Icons)

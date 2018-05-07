@@ -1,20 +1,15 @@
 ---
 title: "Attributes Alphabetical Reference | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "conceptual"
 f1_keywords: ["vc.attributes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++]"]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributes Alphabetical Reference

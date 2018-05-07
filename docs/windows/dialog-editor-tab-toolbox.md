@@ -2,18 +2,13 @@
 title: "Dialog Editor Tab, Toolbox | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls ino dialog boxes", "custom controls [Visual Studio], dialog boxes", "controls [C++], standard", "Dialog editor, creating controls", "controls [C++], adding to dialog boxes"]
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor Tab, Toolbox

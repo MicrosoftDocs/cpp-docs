@@ -2,18 +2,13 @@
 title: "Specifying the Dominant Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["dominant controls", "Dialog editor, dominant control", "controls [C++], dominant"]
 ms.assetid: 42b523a7-192a-417b-9512-d4af795e002f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Specifying the Dominant Control

@@ -2,14 +2,9 @@
 title: "&lt;chrono&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["chrono/std::operator modulo"]
 ms.assetid: c5a19267-4684-40c1-b7a9-cc1012b058f3
-caps.latest.revision: 8
-manager: "ghogen"
 ---
 # &lt;chrono&gt; operators
 

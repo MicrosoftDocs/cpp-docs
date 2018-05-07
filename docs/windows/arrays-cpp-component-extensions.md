@@ -2,19 +2,14 @@
 title: "Arrays (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["cli::array", "details::array", "lang::array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["array keyword [C++]", "declaring arrays, about declaring arrays", "arrays [C++], multidimensional", "multidimensional arrays", "arrays [C++]"]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Arrays (C++ Component Extensions)

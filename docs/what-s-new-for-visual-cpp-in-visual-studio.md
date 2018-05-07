@@ -1,12 +1,11 @@
 ---
 title: "What's New for Visual C++ in Visual Studio | Microsoft Docs"
 ms.date: "11/15/2017"
-ms.technology: ["vs-ide-general"]
-ms.topic: "article"
+ms.technology: ["cpp-ide"]
+ms.topic: "conceptual"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # What's New for Visual C++ in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]

@@ -2,19 +2,14 @@
 title: "exclude (#import) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["exclude"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exclude attribute"]
 ms.assetid: 0883248a-d4bf-420e-9848-807b28fa976e
-caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # exclude (#import)

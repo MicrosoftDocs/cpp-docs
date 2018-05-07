@@ -2,18 +2,13 @@
 title: "Guide Settings Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["DLUs (dialog units)", "Dialog editor, snap to guides", "grid spacing", "guides, settings", "dialog units (DLUs)", "layout grid in Dialog Editor", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid", "Guide Settings dialog box (Dialog editor)"]
 ms.assetid: 55381e1c-146a-4fa7-b1b3-b1492817615f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Guide Settings Dialog Box

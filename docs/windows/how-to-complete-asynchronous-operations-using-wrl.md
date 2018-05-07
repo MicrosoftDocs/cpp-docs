@@ -2,17 +2,12 @@
 title: "How to: Complete Asynchronous Operations Using WRL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 02173eae-731b-49bc-b412-f1f69388b99d
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Complete Asynchronous Operations Using WRL

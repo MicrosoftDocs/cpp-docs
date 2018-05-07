@@ -2,17 +2,12 @@
 title: "Visual C++ Help and Community | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/30/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-ide"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Help and Community

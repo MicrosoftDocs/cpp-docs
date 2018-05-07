@@ -2,14 +2,9 @@
 title: "&lt;numeric&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "numeric/std::inner_product", "numeric/std::iota", "numeric/std::partial_sum"]
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
-caps.latest.revision: 13
-manager: "ghogen"
 helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]", "std::inner_product [C++]", "std::iota [C++]", "std::partial_sum [C++]"]
 ---
 # &lt;numeric&gt; functions

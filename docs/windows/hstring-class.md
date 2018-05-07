@@ -2,18 +2,13 @@
 title: "HString Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HString"]
 dev_langs: ["C++"]
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString Class

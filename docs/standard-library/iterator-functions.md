@@ -2,14 +2,9 @@
 title: "&lt;iterator&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
-caps.latest.revision: 16
-manager: "ghogen"
 helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::begin [C++]", "std::cbegin [C++]", "std::cend [C++]", "std::distance [C++]", "std::end [C++]", "std::front_inserter [C++]", "std::inserter [C++]", "std::make_checked_array_iterator [C++]", "std::make_move_iterator [C++]", "std::make_unchecked_array_iterator [C++]", "std::next [C++]", "std::prev [C++]"]
 ---
 # &lt;iterator&gt; functions

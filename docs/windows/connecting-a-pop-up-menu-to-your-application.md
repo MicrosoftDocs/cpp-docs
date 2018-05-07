@@ -2,18 +2,13 @@
 title: "Connecting a Pop-up Menu to Your Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["pop-up menus, connecting to applications", "context menus, connecting to applications", "menus, pop-up", "shortcut menus, connecting to applications"]
 ms.assetid: 295cbf0e-6416-478e-bc3d-472fb98e0e52
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Connecting a Pop-up Menu to Your Application

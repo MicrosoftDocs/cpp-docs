@@ -2,19 +2,14 @@
 title: "add_const Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_const"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_const class", "add_const"]
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # add_const Class

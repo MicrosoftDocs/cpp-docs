@@ -2,19 +2,14 @@
 title: "strstreambuf Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["strstream/std::strstreambuf::freeze", "strstream/std::strstreambuf::overflow", "strstream/std::strstreambuf::pbackfail", "strstream/std::strstreambuf::pcount", "strstream/std::strstreambuf::seekoff", "strstream/std::strstreambuf::seekpos", "strstream/std::strstreambuf::str", "strstream/std::strstreambuf::underflow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::strstreambuf [C++], freeze", "std::strstreambuf [C++], overflow", "std::strstreambuf [C++], pbackfail", "std::strstreambuf [C++], pcount", "std::strstreambuf [C++], seekoff", "std::strstreambuf [C++], seekpos", "std::strstreambuf [C++], str", "std::strstreambuf [C++], underflow"]
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strstreambuf Class

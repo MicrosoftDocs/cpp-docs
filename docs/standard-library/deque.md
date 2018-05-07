@@ -2,19 +2,14 @@
 title: "&lt;deque&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<deque>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["deque header"]
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;deque&gt;

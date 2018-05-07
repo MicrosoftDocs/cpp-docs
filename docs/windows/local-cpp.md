@@ -2,19 +2,14 @@
 title: "local (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.local"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["local attribute"]
 ms.assetid: 35cdd668-bd8e-492a-b7b8-263e7b662437
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # local (C++)

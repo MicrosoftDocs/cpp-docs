@@ -2,19 +2,14 @@
 title: "basic_fstream Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_fstream", "fstream/std::basic_fstream::close", "fstream/std::basic_fstream::is_open", "fstream/std::basic_fstream::open", "fstream/std::basic_fstream::rdbuf", "fstream/std::basic_fstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_fstream [C++]", "std::basic_fstream [C++], close", "std::basic_fstream [C++], is_open", "std::basic_fstream [C++], open", "std::basic_fstream [C++], rdbuf", "std::basic_fstream [C++], swap"]
 ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # basic_fstream Class

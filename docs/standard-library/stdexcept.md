@@ -2,19 +2,14 @@
 title: "&lt;stdexcept&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<stdexcept>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdexcept header"]
 ms.assetid: 495c10b1-1e60-4514-9f8f-7fda11a2f522
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;stdexcept&gt;

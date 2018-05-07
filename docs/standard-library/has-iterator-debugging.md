@@ -2,19 +2,14 @@
 title: "_HAS_ITERATOR_DEBUGGING | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["_HAS_ITERATOR_DEBUGGING"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_HAS_ITERATOR_DEBUGGING"]
 ms.assetid: 90077dbb-8a76-4963-83a6-29f4854007a8
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _HAS_ITERATOR_DEBUGGING

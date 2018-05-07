@@ -2,19 +2,14 @@
 title: "Insert ActiveX Control Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.insertActiveXControls"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Insert ActiveX Control dialog box", "ActiveX controls [C++], adding to dialog boxes"]
 ms.assetid: 06638ea3-0726-40da-a989-9b89292d0e3d
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Insert ActiveX Control Dialog Box

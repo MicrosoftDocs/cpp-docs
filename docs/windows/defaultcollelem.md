@@ -2,19 +2,14 @@
 title: "defaultcollelem | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultcollelem"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["defaultcollelem attribute"]
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # defaultcollelem

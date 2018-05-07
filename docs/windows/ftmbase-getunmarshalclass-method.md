@@ -2,19 +2,14 @@
 title: "FtmBase::GetUnmarshalClass Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase::GetUnmarshalClass"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetUnmarshalClass method"]
 ms.assetid: 535fc539-5b97-4967-b158-f7568f13d341
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::GetUnmarshalClass Method

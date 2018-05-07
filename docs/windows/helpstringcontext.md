@@ -2,19 +2,14 @@
 title: "helpstringcontext | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.helpstringcontext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["helpstringcontext attribute [C++]"]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # helpstringcontext

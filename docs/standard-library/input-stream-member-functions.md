@@ -2,18 +2,13 @@
 title: "Input Stream Member Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["input stream objects", "input streams, member functions"]
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Input Stream Member Functions

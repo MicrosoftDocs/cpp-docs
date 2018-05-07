@@ -2,18 +2,13 @@
 title: "&lt;filesystem&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::recursive_directory_iterator", "filesystem/std::experimental::filesystem::path", "filesystem/std::experimental::filesystem::filesystem_error", "filesystem/std::experimental::filesystem::directory_iterator", "<filesystem>"]
 dev_langs: ["C++"]
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt;

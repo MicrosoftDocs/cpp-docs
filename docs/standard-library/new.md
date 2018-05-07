@@ -2,19 +2,14 @@
 title: "&lt;new&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<new>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["new header"]
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;new&gt;

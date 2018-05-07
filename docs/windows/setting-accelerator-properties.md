@@ -2,18 +2,13 @@
 title: "Setting Accelerator Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator properties", "properties [C++], accelerator properties", "Type property", "Key property", "Modifier property"]
 ms.assetid: 0fce9156-3025-4e18-b034-e219a4c65812
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Setting Accelerator Properties

@@ -2,18 +2,13 @@
 title: "Phases of Translation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["translation phases", "preprocessor, translation", "translation, compiler process", "preprocessor", "file translation [C++], compiler process", "files [C++], translation"]
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Phases of Translation

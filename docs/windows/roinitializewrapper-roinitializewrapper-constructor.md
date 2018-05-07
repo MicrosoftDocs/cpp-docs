@@ -2,18 +2,13 @@
 title: "RoInitializeWrapper::RoInitializeWrapper Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper"]
 dev_langs: ["C++"]
 ms.assetid: c6f7fb07-14af-4574-9135-cea164607f30
-caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper::RoInitializeWrapper Constructor

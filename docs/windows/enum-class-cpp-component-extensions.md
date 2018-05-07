@@ -2,17 +2,12 @@
 title: "enum class  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # enum class  (C++ Component Extensions)

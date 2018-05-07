@@ -2,19 +2,14 @@
 title: "Icons and Cursors: Image Resources for Display Devices (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.icon"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cursors [C++], creating", "image resources, display devices", "icons [C++], creating", "cursors [C++], types", "icons [C++]", "Image editor [C++], icons and cursors", "cursors [C++]", "display devices, creating icons for", "cursors [C++], hot spots", "icons [C++], types"]
 ms.assetid: 8f0809a8-0cf0-4da9-b23d-51f28bf15f5b
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Icons and Cursors: Image Resources for Display Devices (Image Editor for Icons)

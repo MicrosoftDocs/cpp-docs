@@ -2,18 +2,13 @@
 title: "MFC Windows Programming Symbols | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC symbols", "symbols, MFC", "Windows programming MFC symbols [C++]"]
 ms.assetid: fcc2194d-b639-4e0c-be2c-75f5579f2780
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Windows Programming Symbols
