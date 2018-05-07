@@ -10,7 +10,6 @@ helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++],
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
 author: "mikeblome"
 ms.author: "mikeblome"
-manager: "wpickett"
 ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++

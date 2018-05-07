@@ -2,16 +2,12 @@
 title: "C++ Developer Guidance for Speculative Execution Side Channels | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/03/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices", "Spectre", "CVE-2017-5753", "Speculative Execution"]
 author: "mamillmsft"
 ms.author: "mikeblome"
-manager: "wpickett"
 ms.workload: ["cplusplus"]
 ---
 # C++ Developer Guidance for Speculative Execution Side Channels
