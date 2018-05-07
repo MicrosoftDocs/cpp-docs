@@ -2,18 +2,13 @@
 title: "Choosing a Transparent or Opaque Background (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["opaque backgrounds", "background colors, images", "colors [C++], image", "Image editor [C++], transparent or opague backgrounds", "background images", "images [C++], transparency", "images [C++], opaque background", "transparent backgrounds", "transparency, background", "transparent backgrounds, images"]
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Choosing a Transparent or Opaque Background (Image Editor for Icons)

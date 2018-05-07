@@ -2,19 +2,14 @@
 title: "SafeInt Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["SafeInt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeInt class"]
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Class

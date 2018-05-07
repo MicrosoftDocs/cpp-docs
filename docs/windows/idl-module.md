@@ -2,19 +2,14 @@
 title: "idl_module | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.idl_module"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["idl_module attribute"]
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # idl_module

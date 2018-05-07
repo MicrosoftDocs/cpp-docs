@@ -2,19 +2,14 @@
 title: "improper_lock Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["improper_lock", "CONCRT/concurrency::improper_lock", "CONCRT/concurrency::improper_lock::improper_lock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_lock class"]
 ms.assetid: 8f494942-7748-4a2a-8de2-23414bfe6346
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # improper_lock Class

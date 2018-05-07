@@ -2,19 +2,14 @@
 title: "&lt;complex&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<complex>", "std::<complex>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex header"]
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;complex&gt;

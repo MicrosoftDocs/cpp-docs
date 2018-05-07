@@ -2,18 +2,13 @@
 title: "How to: Write a parallel_for Loop | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["writing a parallel_for loop [Concurrency Runtime]", "parallel_for function, example"]
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Write a parallel_for Loop

@@ -2,19 +2,14 @@
 title: "Colors Window (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.colorswindow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], Colors Palette", "Colors Palette", "colors [C++], image", "Image editor [C++], Colors window", "Screen-Color Selector", "Colors Palette, Image editor", "Colors window", "colors [C++], inverting", "colors [C++]", "Color Indicator"]
 ms.assetid: 1d9b6c16-bf1d-4488-a19b-5d6fe601846a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Colors Window (Image Editor for Icons)

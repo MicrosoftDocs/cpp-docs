@@ -2,19 +2,14 @@
 title: "conform | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["conform_CPP", "vc-pragma.conform"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["conform pragma", "forScope conform pragma", "pragmas, conform"]
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # conform

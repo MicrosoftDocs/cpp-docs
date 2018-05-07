@@ -2,19 +2,14 @@
 title: "Using a Drawing Tool (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.drawing"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], selecting drawing tools", "Image editor [C++], toolbar", "drawing tools"]
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Using a Drawing Tool (Image Editor for Icons)

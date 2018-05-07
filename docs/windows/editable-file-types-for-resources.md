@@ -2,19 +2,14 @@
 title: "Editable File Types for Resources | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["file types [C++], for resources", "resources [Visual Studio], editing", "files [C++], editable types"]
 ms.assetid: c40f9204-f2f2-400b-9f53-53b7bf291356
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Editable File Types for Resources

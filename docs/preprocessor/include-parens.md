@@ -2,19 +2,14 @@
 title: "include() | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["include()"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["include() attribute"]
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # include()

@@ -2,19 +2,14 @@
 title: "AsyncBase::get_ErrorCode Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::get_ErrorCode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["get_ErrorCode method"]
 ms.assetid: 50b4f8a2-9a21-4ea0-bb5d-7ff524d62aea
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::get_ErrorCode Method

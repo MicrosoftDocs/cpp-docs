@@ -2,18 +2,13 @@
 title: "Editing Parts of an Image (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], editing images", "Clipboard [C++], pasting", "images [C++], editing", "images [C++], deleting selected parts", "images [C++], copying selected parts", "images [C++], moving selected parts", "images [C++], dragging and replicating selected parts", "images [C++], pasting into", "graphics [C++], editing"]
 ms.assetid: ff4f5fef-71a4-4fd8-825e-049399fed391
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Parts of an Image (Image Editor for Icons)

@@ -2,19 +2,14 @@
 title: "basic_ofstream Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_ofstream", "fstream/std::basic_ofstream::close", "fstream/std::basic_ofstream::is_open", "fstream/std::basic_ofstream::open", "fstream/std::basic_ofstream::rdbuf", "fstream/std::basic_ofstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ofstream [C++]", "std::basic_ofstream [C++], close", "std::basic_ofstream [C++], is_open", "std::basic_ofstream [C++], open", "std::basic_ofstream [C++], rdbuf", "std::basic_ofstream [C++], swap"]
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # basic_ofstream Class

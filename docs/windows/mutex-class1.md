@@ -2,19 +2,14 @@
 title: "Mutex Class1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Mutex class"]
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Mutex Class1

@@ -2,18 +2,13 @@
 title: "Moving and Copying Menus and Menu Commands | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["commands, copying on menus", "menu items, moving", "commands, moving on menus", "menu items, copying"]
 ms.assetid: 1d8df535-9922-4579-a9c2-37aeac1856eb
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Moving and Copying Menus and Menu Commands

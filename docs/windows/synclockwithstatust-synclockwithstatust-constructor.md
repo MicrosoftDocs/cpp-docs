@@ -2,19 +2,14 @@
 title: "SyncLockWithStatusT::SyncLockWithStatusT Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SyncLockWithStatusT, constructor"]
 ms.assetid: 5d2fb820-ae1b-495f-8084-ebb4fecc3104
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockWithStatusT::SyncLockWithStatusT Constructor

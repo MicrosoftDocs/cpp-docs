@@ -2,19 +2,14 @@
 title: "Opening a Resource for Binary Editing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary data, editing", "resources [Visual Studio], opening for binary editing"]
 ms.assetid: d3cdb0e4-da66-410d-8e49-b29073ff2929
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Opening a Resource for Binary Editing

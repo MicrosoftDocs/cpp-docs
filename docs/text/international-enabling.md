@@ -2,18 +2,13 @@
 title: "International Enabling | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "strings [C++], international enabling", "localization [C++], character sets", "MBCS [C++], enabling", "Unicode [C++], enabling"]
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # International Enabling

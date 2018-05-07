@@ -2,19 +2,14 @@
 title: "task Class (Concurrency Runtime) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["task", "PPLTASKS/concurrency::task", "PPLTASKS/concurrency::task::task", "PPLTASKS/concurrency::task::get", "PPLTASKS/concurrency::task::is_apartment_aware", "PPLTASKS/concurrency::task::is_done", "PPLTASKS/concurrency::task::scheduler", "PPLTASKS/concurrency::task::then", "PPLTASKS/concurrency::task::wait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task class"]
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # task Class (Concurrency Runtime)

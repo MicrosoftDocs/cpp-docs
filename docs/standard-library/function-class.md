@@ -2,19 +2,14 @@
 title: "function Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["functional/std::function", "functional/std::function::result_type", "functional/std::function::assign", "functional/std::function::swap", "functional/std::function::target", "functional/std::function::target_type", "functional/std::function::operator unspecified", "functional/std::function::operator()"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::function [C++]", "std::function [C++], result_type", "std::function [C++], assign", "std::function [C++], swap", "std::function [C++], target", "std::function [C++], target_type"]
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # function Class

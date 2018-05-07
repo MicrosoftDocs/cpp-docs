@@ -2,18 +2,13 @@
 title: "&lt;mutex&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<mutex>"]
 dev_langs: ["C++"]
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;mutex&gt;

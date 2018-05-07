@@ -2,15 +2,10 @@
 title: "&lt;forward_list&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operatoroperator&gt;", "forward_list/std::operatoroperator&gt=;", "forward_list/std::operatoroperator&lt;", "forward_list/std::operatoroperator&lt;="]
 dev_langs: ["C++"]
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
-caps.latest.revision: 11
-manager: "ghogen"
 helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operatoroperator&gt; (forward_list)", "std::operatoroperator&gt=; (forward_list)", "std::operatoroperator&lt; (forward_list)", "std::operatoroperator&lt;= (forward_list)"]
 ---
 # &lt;forward_list&gt; operators

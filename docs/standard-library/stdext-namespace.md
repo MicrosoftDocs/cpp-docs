@@ -2,19 +2,14 @@
 title: "stdext Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/06/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["stdext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_DEFINE_DEPRECATED_HASH_CLASSES symbol", "stdext namespace"]
 ms.assetid: 3e94fc89-0584-424f-bc09-081b73379545
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # stdext Namespace

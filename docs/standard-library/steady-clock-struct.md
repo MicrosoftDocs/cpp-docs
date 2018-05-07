@@ -2,18 +2,13 @@
 title: "steady_clock struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::steady_clock"]
 dev_langs: ["C++"]
 ms.assetid: 970d12ec-fc80-4391-a2f7-b57b2aec668d
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # steady_clock struct

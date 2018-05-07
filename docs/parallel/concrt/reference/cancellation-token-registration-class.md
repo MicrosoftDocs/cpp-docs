@@ -2,19 +2,14 @@
 title: "cancellation_token_registration Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token_registration class"]
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cancellation_token_registration Class

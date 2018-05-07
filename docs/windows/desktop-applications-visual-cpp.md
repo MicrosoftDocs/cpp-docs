@@ -2,17 +2,12 @@
 title: "Desktop Applications (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
-caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Desktop Applications (Visual C++)

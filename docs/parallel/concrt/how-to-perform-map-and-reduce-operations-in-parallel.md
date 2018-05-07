@@ -2,18 +2,13 @@
 title: "How to: Perform Map and Reduce Operations in Parallel | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parallel_transform function, example", "parallel map and reduce, example", "parallel_reduce function, example"]
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Perform Map and Reduce Operations in Parallel

@@ -2,19 +2,14 @@
 title: "How to: Open a Resource Script File in Text Format | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resource script files, opening in text format", ".rc files, opening in text format", "rc files, opening in text format"]
 ms.assetid: 0bc57527-f53b-40c9-99a9-4dcbc5c9af57
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Open a Resource Script File in Text Format

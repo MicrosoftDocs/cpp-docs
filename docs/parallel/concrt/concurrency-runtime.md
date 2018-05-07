@@ -2,18 +2,13 @@
 title: "Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, getting started", "ConcRT (see Concurrency Runtime)", "Concurrency Runtime"]
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-caps.latest.revision: 40
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime

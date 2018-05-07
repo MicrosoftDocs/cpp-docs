@@ -36,15 +36,15 @@ All assignment operators in the following table except the = and &&= operators a
 |--------------|-------------|  
 |**=**|Store the value of the second operand in the object specified by the first operand (simple assignment).|  
 |**\*=**|Multiply the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
-|`/=`|Divide the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
-|`%=`|Take modulus of the first operand specified by the value of the second operand; store the result in the object specified by the first operand.|  
-|`+=`|Add the value of the second operand to the value of the first operand; store the result in the object specified by the first operand.|  
+|**/=**|Divide the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
+|**%=**|Take modulus of the first operand specified by the value of the second operand; store the result in the object specified by the first operand.|  
+|**+=**|Add the value of the second operand to the value of the first operand; store the result in the object specified by the first operand.|  
 |**-=**|Subtract the value of the second operand from the value of the first operand; store the result in the object specified by the first operand.|  
 |**<\<=**|Shift the value of the first operand left the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**>>=**|Shift the value of the first operand right the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**&=**|Obtain the bitwise AND of the first and second operands; store the result in the object specified by the first operand.|  
-|`^=`|Obtain the bitwise exclusive OR of the first and second operands; store the result in the object specified by the first operand.|  
-|`&#124;=`|Obtain the bitwise inclusive OR of the first and second operands; store the result in the object specified by the first operand.|
+|**^=**|Obtain the bitwise exclusive OR of the first and second operands; store the result in the object specified by the first operand.|  
+|**\|=**|Obtain the bitwise inclusive OR of the first and second operands; store the result in the object specified by the first operand.|
 |**&&=**| Move assignment operator (for class types only). If the second operand is an rvalue, move its resources to the first operand (without copying them). See [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md) for more information.|
   
  **Operator Keywords**  
@@ -54,8 +54,8 @@ All assignment operators in the following table except the = and &&= operators a
 |Operator|Equivalent|  
 |--------------|----------------|  
 |**&=**|`and_eq`|  
-|`&#124;=`|`or_eq`|  
-|`^=`|`xor_eq`|  
+|**\|=**|`or_eq`|  
+|**^=**|`xor_eq`|  
   
  There are two ways to access these operator keywords in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
   

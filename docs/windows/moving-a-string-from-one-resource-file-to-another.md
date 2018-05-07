@@ -2,18 +2,13 @@
 title: "Moving a String from One Resource File to Another | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], moving between files", "resource script files, moving strings", "string editing, moving strings between resources", "String editor, moving strings between files"]
 ms.assetid: 94f8ee81-9b4c-4788-ba95-68c58db38029
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Moving a String from One Resource File to Another

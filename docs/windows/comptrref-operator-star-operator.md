@@ -2,19 +2,14 @@
 title: "ComPtrRef::operator* Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::operator*"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator* operator"]
 ms.assetid: 0287ca7a-4ce1-47f7-bab6-714fca3e04bb
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRef::operator* Operator

@@ -2,18 +2,13 @@
 title: "promise Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["future/std::promise", "future/std::promise::promise", "future/std::promise::get_future", "future/std::promise::set_exception", "future/std::promise::set_exception_at_thread_exit", "future/std::promise::set_value", "future/std::promise::set_value_at_thread_exit", "future/std::promise::swap"]
 dev_langs: ["C++"]
 ms.assetid: 2931558c-d94a-4ba1-ac4f-20bf7b6e23f9
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::promise [C++]", "std::promise [C++], promise", "std::promise [C++], get_future", "std::promise [C++], set_exception", "std::promise [C++], set_exception_at_thread_exit", "std::promise [C++], set_value", "std::promise [C++], set_value_at_thread_exit", "std::promise [C++], swap"]
 ms.workload: ["cplusplus"]
 ---

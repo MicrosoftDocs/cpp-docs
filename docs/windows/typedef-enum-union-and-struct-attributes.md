@@ -2,18 +2,13 @@
 title: "Typedef, Enum, Union, and Struct Attributes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["union attributes", "attributes [C++], reference topics", "struct attributes", "typedef attributes", "enum attributes"]
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Typedef, Enum, Union, and Struct Attributes

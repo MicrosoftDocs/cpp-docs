@@ -2,19 +2,14 @@
 title: "task_completion_event Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["task_completion_event", "PPLTASKS/concurrency::task_completion_event", "PPLTASKS/concurrency::task_completion_event::task_completion_event", "PPLTASKS/concurrency::task_completion_event::set", "PPLTASKS/concurrency::task_completion_event::set_exception"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_completion_event class"]
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # task_completion_event Class

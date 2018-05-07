@@ -2,18 +2,13 @@
 title: "&lt;filesystem&gt; enumerations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::filesystem::copy_options", "filesystem/std::experimental::filesystem::copy_options", "filesystem/std::filesystem::directory_options", "filesystem/std::experimental::filesystem::directory_options", "filesystem/std::filesystem::file_type", "filesystem/std::experimental::filesystem::file_type", "filesystem/std::filesystem::perms", "filesystem/std::experimental::filesystem::perms"]
 dev_langs: ["C++"]
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt; enumerations

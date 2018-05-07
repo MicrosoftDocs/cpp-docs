@@ -2,19 +2,14 @@
 title: "time_get_byname Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xloctime/std::time_get_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["time_get_byname class"]
 ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # time_get_byname Class

@@ -2,18 +2,13 @@
 title: "Best Practices in the Parallel Patterns Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Parallel Patterns Library, practices to avoid", "practices to avoid, Parallel Patterns Library", "best practices, Parallel Patterns Library", "Parallel Patterns Library, best practices"]
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Best Practices in the Parallel Patterns Library

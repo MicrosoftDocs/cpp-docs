@@ -2,19 +2,14 @@
 title: "&lt;csetjmp&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<csetjmp>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["csetjmp header"]
 ms.assetid: 8f21fddd-5e9b-4219-a848-581cdd3569d9
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;csetjmp&gt;

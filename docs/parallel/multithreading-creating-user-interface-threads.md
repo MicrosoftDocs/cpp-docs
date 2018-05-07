@@ -2,19 +2,14 @@
 title: "Multithreading: Creating User-Interface Threads | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], user interface threads", "threading [C++], creating threads", "threading [C++], user interface threads", "user interface threads [C++]", "threading [MFC], user interface threads"]
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading: Creating User-Interface Threads

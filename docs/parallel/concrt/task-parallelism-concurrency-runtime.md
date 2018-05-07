@@ -2,18 +2,13 @@
 title: "Task Parallelism (Concurrency Runtime) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["structured task groups [Concurrency Runtime]", "structured tasks [Concurrency Runtime]", "task groups [Concurrency Runtime]", "task parallelism", "tasks [Concurrency Runtime]"]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
-caps.latest.revision: 56
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Task Parallelism (Concurrency Runtime)

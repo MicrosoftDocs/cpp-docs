@@ -2,19 +2,14 @@
 title: "for (OpenMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["for"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["for OpenMP directive"]
 ms.assetid: 8b54e034-9db2-4c1a-a2b1-72e14e930506
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # for (OpenMP)

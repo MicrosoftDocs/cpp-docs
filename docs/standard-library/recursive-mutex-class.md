@@ -2,18 +2,13 @@
 title: "recursive_mutex Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["mutex/std::recursive_mutex", "mutex/std::recursive_mutex::recursive_mutex", "mutex/std::recursive_mutex::lock", "mutex/std::recursive_mutex::try_lock", "mutex/std::recursive_mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: eb5ffd1b-7e78-4559-8391-bb220ead42fc
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::recursive_mutex [C++]", "std::recursive_mutex [C++], recursive_mutex", "std::recursive_mutex [C++], lock", "std::recursive_mutex [C++], try_lock", "std::recursive_mutex [C++], unlock"]
 ms.workload: ["cplusplus"]
 ---
