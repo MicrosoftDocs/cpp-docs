@@ -83,6 +83,16 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[P0195R2 Pack expansions in using-declarations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r2.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0283R2 Ignoring unrecognized attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0283r2.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0702R1 Fixing class template argument deduction for initializer-list ctors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
+
+|__C++217 Core Language Features (Defect Reports)__|__Supported__|
+|&nbsp;&nbsp;[P0702R1 Fixing class template argument deduction for initializer-list ctors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0588R1 Simplifying implicit lambda capture](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0588r1.html)|No|
+|&nbsp;&nbsp;[CWG 1581: When are constexpr member functions defined?](https://wg21.cmeerw.net/cwg/issue1581)|No|
+|&nbsp;&nbsp;[P0962R1 Relaxing the structured bindings customization point finding rules](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0961r1.html)|No|
+|&nbsp;&nbsp;[P0962R2 Relaxing the range-for loop customization point finding rules](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0962r1.html)|No|
+|&nbsp;&nbsp;[P0969R0 Allowing structured bindings to accessible members](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0969r0.pdf)|No|
+
+
 |__C++20 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;[P0306R4 Adding &#95;&#95;VA_OPT&#95;&#95; for comma omission and comma deletion](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r4.pdf)|No|
 |&nbsp;&nbsp;[P0329R4 Designated initialization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|No|
@@ -242,12 +252,28 @@ previous std::experimental version, necessitated by symlink support, bug fixes, 
 <a name="note_byte"></a>__byte__ `std::byte` is enabled by [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)), but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. It can be disabled by defining `_HAS_STD_BYTE` as `0`.  
 <a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`, namely, that `free()` must be able to handle highly aligned allocations.  
 <a name="note_rem"></a>__rem__ Features removed when the [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features have opt-out macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
-<a name="note_charconv"></a>__charconv__  from_chars() and to_chars() are available for integers. We’re currently working on floating-point from_chars(), to be followed by floating-point to_chars(). 
+<a name="note_charconv"></a>__charconv__  from_chars() and to_chars() are available for integers. We’re currently working on floating-point from_chars(), to be followed by floating-point to_chars().  
+<name ="note_parallel"></a> __parallel__  C++17’s parallel algorithms library is complete. Note that this doesn’t mean every algorithm is parallelized in every case; the most important algorithms have been parallelized and execution policy signatures are provided even where algorithms are not parallelized. Our STL implementation’s central internal header, yvals.h, contains the following “Parallel Algorithms Notes”: C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms.   This implementation parallelizes several common algorithm calls, but not all.
+
+The following algorithms are parallelized:
+
+- adjacent_difference, adjacent_find, all_of, any_of, count, count_if, equal, exclusive_scan, find, find_end, find_first_of, find_if, for_each, for_each_n, inclusive_scan, mismatch, none_of, reduce, remove, remove_if, search, search_n, sort, stable_sort, transform, transform_exclusive_scan, transform_inclusive_scan, transform_reduce.
+
+The following are not presently parallelized:
+
+- No apparent parallelism performance improvement on target hardware; all algorithms which merely copy or permute elements with no branches are typically memory bandwidth limited:
+  - copy, copy_backward, copy_n, fill, fill_n, move, move_backward, remove, remove_if, replace, replace_if, reverse, reverse_copy, rotate, rotate_copy, swap_ranges
+- Confusion over user parallelism requirements exists; likely in the above category anyway:
+  - generate, generate_n
+- Effective parallelism suspected to be infeasible:
+  - partial_sort, partial_sort_copy
+- Not yet evaluated; parallelism may be implemented in a future release and is suspected to be beneficial:
+  - copy_if, includes, inplace_merge, is_heap, is_heap_until, is_partitioned, is_sorted, is_sorted_until, lexicographical_compare, max_element, merge, min_element, minmax_element, nth_element, partition_copy, remove_copy, remove_copy_if, replace_copy, replace_copy_if, set_difference, set_intersection, set_symmetric_difference, set_union, stable_partition, unique, unique_copy
 
 ## See also
 
 [C++ Language Reference](cpp/cpp-language-reference.md)  
-[C++ Standard Library](standard-library/cpp-standard-library-reference.md)   
+[C++ Standard Library](standard-library/cpp-standard-library-reference.md)  
 [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)  
 [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)  
 [Visual C++ change history 2003 through 2015](porting/visual-cpp-change-history-2003-2015.md)  
