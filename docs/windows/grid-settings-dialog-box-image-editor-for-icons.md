@@ -2,19 +2,14 @@
 title: "Grid Settings Dialog Box (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.GridSettings", "vc.editors.gridsettings"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Grid Settings dialog box"]
 ms.assetid: 59ce033a-ff10-48cd-b414-f9cb74da6789
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Grid Settings Dialog Box (Image Editor for Icons)

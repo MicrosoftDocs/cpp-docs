@@ -2,19 +2,14 @@
 title: "remove_const Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_const"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_const class", "remove_const"]
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # remove_const Class

@@ -2,18 +2,13 @@
 title: "HStringReference::HStringReference Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference"]
 dev_langs: ["C++"]
 ms.assetid: 29f5fe11-3928-4f60-9861-f0894247bfcb
-caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::HStringReference Constructor

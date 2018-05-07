@@ -10,7 +10,6 @@ helpviewer_keywords: ["pragmas, fenv_access", "fenv_access pragma"]
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fenv_access

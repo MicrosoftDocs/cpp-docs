@@ -2,19 +2,14 @@
 title: "greater Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::greater"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["greater struct", "greater function"]
 ms.assetid: ebc348e1-edcd-466b-b21a-db95bd8f9079
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # greater Struct

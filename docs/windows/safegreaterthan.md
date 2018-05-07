@@ -2,19 +2,14 @@
 title: "SafeGreaterThan | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["SafeGreaterThan"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeGreaterThan function"]
 ms.assetid: 32cecac9-ba88-43eb-a7a4-30e390456739
-caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeGreaterThan

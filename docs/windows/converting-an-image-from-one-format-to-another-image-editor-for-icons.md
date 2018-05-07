@@ -2,18 +2,13 @@
 title: "Converting an Image From One Format to Another (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["images [C++], stand-alone editing", "Image editor [C++], converting image formats", "graphics [C++], converting formats", "images [C++], converting formats"]
 ms.assetid: 0409c2bd-3bd8-4d72-9c71-c683b6cf51be
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Converting an Image From One Format to Another (Image Editor for Icons)

@@ -2,19 +2,14 @@
 title: "is_trivially_move_assignable Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_trivially_move_assignable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_move_assignable"]
 ms.assetid: 374f7322-0706-4bc1-a1a5-4191d0315e28
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_trivially_move_assignable Class

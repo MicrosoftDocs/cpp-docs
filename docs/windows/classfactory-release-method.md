@@ -2,19 +2,14 @@
 title: "ClassFactory::Release Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory::Release"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Release method"]
 ms.assetid: 49da2002-f9d6-4d7f-8a65-48c20b1bf99f
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::Release Method

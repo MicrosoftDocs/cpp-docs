@@ -2,19 +2,14 @@
 title: "Viewing and Editing Resources in a Resource Editor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vs.resourceview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [Visual Studio], viewing", "rc files, viewing resources", "Resource View pane", "layouts, previewing resource", "code, viewing resources", "resource editors, viewing resources", ".rc files, viewing resources", "resources [Visual Studio], editing"]
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing and Editing Resources in a Resource Editor

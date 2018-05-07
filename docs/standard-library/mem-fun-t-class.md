@@ -2,19 +2,14 @@
 title: "mem_fun_t Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::mem_fun_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mem_fun_t class"]
 ms.assetid: 242566d4-750c-4c87-9d63-2e2c9d19ca2a
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mem_fun_t Class

@@ -2,19 +2,14 @@
 title: "ModuleBase::DecrementObjectCount Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase::DecrementObjectCount"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DecrementObjectCount method"]
 ms.assetid: a016fb07-a36e-40cd-bc7b-8f6e85e256e7
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleBase::DecrementObjectCount Method

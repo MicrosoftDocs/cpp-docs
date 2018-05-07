@@ -2,16 +2,11 @@
 title: "&lt;deque&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["deque/std::swap"]
 ms.assetid: 1d14be53-b0b7-4f66-90cc-65bdeac563fd
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;deque&gt; functions

@@ -2,19 +2,14 @@
 title: "is_constructible Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_constructible"]
 ms.assetid: 7cdec5ff-73cf-4f78-a9db-ced2e9c0fd7f
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_constructible Class

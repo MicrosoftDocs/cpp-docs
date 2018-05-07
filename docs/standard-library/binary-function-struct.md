@@ -2,19 +2,14 @@
 title: "binary_function Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["functional/std::binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary_function class"]
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # binary_function Struct

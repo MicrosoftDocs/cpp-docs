@@ -2,19 +2,14 @@
 title: "const_mem_fun1_ref_t Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::const_mem_fun1_ref_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_mem_fun1_ref_t class"]
 ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # const_mem_fun1_ref_t Class

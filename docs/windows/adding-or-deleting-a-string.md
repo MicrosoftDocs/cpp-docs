@@ -2,19 +2,14 @@
 title: "Adding or Deleting a String | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], adding to string tables", "string tables, deleting strings", "strings [C++], deleting in string tables", "string tables, adding strings"]
 ms.assetid: 077077b4-0f4b-4633-92d6-60b321164cab
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding or Deleting a String

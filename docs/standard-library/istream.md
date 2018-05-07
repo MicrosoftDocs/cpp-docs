@@ -2,19 +2,14 @@
 title: "&lt;istream&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["istream/std::<istream>", "<istream>", "std::<istream>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["istream header"]
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;istream&gt;

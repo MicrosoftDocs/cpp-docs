@@ -2,19 +2,14 @@
 title: "WeakReference::WeakReference Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::WeakReference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["WeakReference, constructor"]
 ms.assetid: 4959a9d7-78ea-423d-a46b-50d010d29fff
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::WeakReference Constructor

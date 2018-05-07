@@ -2,19 +2,14 @@
 title: "first_is | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.first_is"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["first_is attribute"]
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # first_is

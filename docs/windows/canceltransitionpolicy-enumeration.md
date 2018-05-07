@@ -2,19 +2,14 @@
 title: "CancelTransitionPolicy Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::CancelTransitionPolicy::TransitionFromCanceled", "module/Microsoft::WRL::CancelTransitionPolicy::RemainCanceled", "module/Microsoft::WRL::CancelTransitionPolicy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CancelTransitionPolicy Enumeration"]
 ms.assetid: 5de49f7d-e5e3-43e9-bbca-666caf226cef
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CancelTransitionPolicy Enumeration

@@ -2,19 +2,14 @@
 title: "FactoryCache::cookie Data Member | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::FactoryCache::cookie"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cookie data member"]
 ms.assetid: b1bc79af-a896-4e3b-8afa-64733022eddf
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FactoryCache::cookie Data Member

@@ -2,19 +2,14 @@
 title: "id | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.id"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["id attribute"]
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # id

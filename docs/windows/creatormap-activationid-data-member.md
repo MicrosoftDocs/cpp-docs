@@ -2,19 +2,14 @@
 title: "CreatorMap::activationId Data Member | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap::activationId"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["activationId data member"]
 ms.assetid: 77518b76-6e6a-4b48-8e2e-a4c7c67769e0
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CreatorMap::activationId Data Member

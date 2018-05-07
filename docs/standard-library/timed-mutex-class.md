@@ -2,18 +2,13 @@
 title: "timed_mutex Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["mutex/std::timed_mutex", "mutex/std::timed_mutex::timed_mutex", "mutex/std::timed_mutex::lock", "mutex/std::timed_mutex::try_lock", "mutex/std::timed_mutex::try_lock_for", "mutex/std::timed_mutex::try_lock_until", "mutex/std::timed_mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: cd198081-6f38-447a-9dba-e06dfbfafe59
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::timed_mutex [C++]", "std::timed_mutex [C++], timed_mutex", "std::timed_mutex [C++], lock", "std::timed_mutex [C++], try_lock", "std::timed_mutex [C++], try_lock_for", "std::timed_mutex [C++], try_lock_until", "std::timed_mutex [C++], unlock"]
 ms.workload: ["cplusplus"]
 ---

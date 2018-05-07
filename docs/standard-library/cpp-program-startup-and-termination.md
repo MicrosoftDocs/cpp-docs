@@ -2,18 +2,13 @@
 title: "C++ Program Startup and Termination | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Standard Library, program startup and termination", "terminating execution", "Function Main procedures", "control text streams", "startup code, and C++ program termination", "main function, program startup"]
 ms.assetid: f72c8f76-f507-4ddd-a270-7b60f4fed625
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C++ Program Startup and Termination

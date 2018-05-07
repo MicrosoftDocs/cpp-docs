@@ -2,19 +2,14 @@
 title: "invalid_argument Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["stdexcept/std::invalid_argument"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_argument class"]
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # invalid_argument Class
