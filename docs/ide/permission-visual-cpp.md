@@ -2,19 +2,14 @@
 title: "&lt;permission&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["permission", "<permission>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<permission> C++ XML tag", "permission C++ XML tag"]
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;permission&gt; (Visual C++)

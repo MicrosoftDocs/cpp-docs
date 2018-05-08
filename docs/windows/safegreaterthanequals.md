@@ -2,19 +2,14 @@
 title: "SafeGreaterThanEquals | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["SafeGreaterThanEquals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeGreaterThanEquals function"]
 ms.assetid: 43312fa9-d925-4f9f-a352-a190c02b3005
-caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeGreaterThanEquals

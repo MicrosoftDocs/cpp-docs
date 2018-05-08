@@ -2,19 +2,14 @@
 title: "detect_mismatch | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["vc-pragma.detect_mismatch", "detect_mismatch_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, detect_mismatch", "detect_mismatch pragma"]
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # detect_mismatch

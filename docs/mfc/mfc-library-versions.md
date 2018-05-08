@@ -2,16 +2,12 @@
 title: "MFC Library Versions | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/09/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["class libraries [MFC], building versions", "version information [MFC], MFC library", "MFC class library", "MFC class library, building", "MFC libraries", "MFC, library versions", "libraries [MFC], versions"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC Library Versions

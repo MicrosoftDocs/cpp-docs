@@ -2,18 +2,13 @@
 title: "When to Initialize CWnd Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["window objects [MFC], when to initialize CWnd", "initializing CWnd objects [MFC]", "initializing objects [MFC], CWnd", "CWnd objects [MFC], when HWND is attached", "HWND, when attached to CWnd object", "CWnd objects [MFC], when to initialize"]
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # When to Initialize CWnd Objects

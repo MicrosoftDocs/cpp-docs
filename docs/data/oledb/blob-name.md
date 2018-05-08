@@ -2,19 +2,14 @@
 title: "BLOB_NAME | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BLOB_NAME"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_NAME macro"]
 ms.assetid: 757acd0d-946d-447d-937e-94ecd700ba38
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_NAME

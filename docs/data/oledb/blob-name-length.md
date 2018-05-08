@@ -2,19 +2,14 @@
 title: "BLOB_NAME_LENGTH | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BLOB_NAME_LENGTH"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_NAME_LENGTH macro"]
 ms.assetid: 38150260-a127-486d-a7ab-0d01b731b6fd
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_NAME_LENGTH

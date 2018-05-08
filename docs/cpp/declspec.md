@@ -2,17 +2,13 @@
 title: "__declspec | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/23/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__declspec_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++]"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __declspec

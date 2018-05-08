@@ -2,19 +2,14 @@
 title: "Button Styles | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["BS_DEFPUSHBUTTON", "BS_NOTIFY", "BS_MULTILINE", "BS_AUTOCHECKBOX", "BS_3STATE", "BS_BITMAP", "BS_TOP", "BS_PUSHBUTTON", "BS_PUSHLIKE", "BS_AUTO3STATE", "BS_CHECKBOX", "BS_AUTORADIOBUTTON", "BS_RADIOBUTTON", "BS_OWNERDRAW", "BS_LEFT", "BS_USERBUTTON", "BS_RIGHTBUTTON", "BS_RIGHT", "BS_LEFTTEXT", "BS_TEXT", "BS_BOTTOM", "BS_GROUPBOX", "BS_FLAT", "BS_VCENTER", "BS_ICON", "BS_CENTER"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BS_NOTIFY constant [MFC]", "BS_RIGHTBUTTON constant [MFC]", "styles [MFC], button objects", "BS_USERBUTTON constant [MFC]", "BS_VCENTER constant [MFC]", "BS_PUSHLIKE constant [MFC]", "BS_RADIOBUTTON constant [MFC]", "BS_PUSHBUTTON constant [MFC]", "BS_DEFPUSHBUTTON constant [MFC]", "BS_LEFTTEXT constant [MFC]", "button objects (CButton), button styles", "BS_AUTO3STATE constant [MFC]", "BS_3STATE constant [MFC]", "BS_OWNERDRAW constant [MFC]", "BS_AUTORADIOBUTTON constant [MFC]", "BS_GROUPBOX constant [MFC]", "BS_BITMAP constant [MFC]", "BS_CENTER constant [MFC]", "BS_MULTILINE constant [MFC]", "BS_BOTTOM constant [MFC]", "BS_FLAT constant [MFC]", "BS_AUTOCHECKBOX constant [MFC]", "BS_RIGHT constant [MFC]", "BS_CHECKBOX constant [MFC]", "BS_LEFT constant [MFC]", "BS_ICON constant [MFC]", "BS_TOP constant [MFC]", "BS_TEXT constant"]
 ms.assetid: 41206f72-2b92-4250-ae32-31184046402f
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Button Styles

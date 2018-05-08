@@ -2,18 +2,13 @@
 title: "Inline Assembler Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-masm"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline assembler", "__asm keyword [C++], invoking inline assembler", "invoking inline assembler", "inline assembly, inline assembler"]
 ms.assetid: d990331a-0e33-4760-8d7a-b720b0288335
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Inline Assembler Overview

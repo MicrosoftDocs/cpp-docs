@@ -2,19 +2,14 @@
 title: "-OPT (Optimizations) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.OptimizeReferences", "/opt", "VC.Project.VCLinkerTool.OptimizeForWindows98", "VC.Project.VCLinkerTool.EnableCOMDATFolding", "VC.Project.VCLinkerTool.OptimizeFolding", "VC.Project.VCLinkerTool.FoldingIterations", "VC.Project.VCLinkerTool.OptimizeFoldingIterations"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LINK tool [C++], controlling optimizations", "-OPT linker option", "linker [C++], optimizations", "OPT linker option", "optimization, linker", "/OPT linker option"]
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /OPT (Optimizations)
@@ -32,7 +27,7 @@ Controls the optimizations that LINK performs during a build.
  **REF** &#124; **NOREF**  
  **/OPT:REF** eliminates functions and data that are never referenced; **/OPT:NOREF** keeps functions and data that are never referenced.  
   
- When /OFT:REF is enabled, LINK removes unreferenced packaged functions and data. An object contains packaged functions and data (COMDATs) if it was compiled by using the [/Gy](../../build/reference/gy-enable-function-level-linking.md) option. This optimization is known as transitive COMDAT elimination. By default, **/OPT:REF** is enabled in non-debug builds. To override this default and keep unreferenced COMDATs in the program, specify **/OPT:NOREF**. You can use the [/INCLUDE](../../build/reference/include-force-symbol-references.md) option to override the removal of a specific symbol.  
+ When /OPT:REF is enabled, LINK removes unreferenced packaged functions and data. An object contains packaged functions and data (COMDATs) if it was compiled by using the [/Gy](../../build/reference/gy-enable-function-level-linking.md) option. This optimization is known as transitive COMDAT elimination. By default, **/OPT:REF** is enabled in non-debug builds. To override this default and keep unreferenced COMDATs in the program, specify **/OPT:NOREF**. You can use the [/INCLUDE](../../build/reference/include-force-symbol-references.md) option to override the removal of a specific symbol.  
   
  When **/OPT:REF** is enabled either explicitly or by default, a limited form of **/OPT:ICF** is enabled that only folds identical functions. If you want **/OPT:REF** but not **/OPT:ICF**, you must specify either **/OPT:REF,NOICF** or **/OPT:NOICF**.  
   

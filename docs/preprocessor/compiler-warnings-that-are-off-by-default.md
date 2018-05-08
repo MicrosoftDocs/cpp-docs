@@ -8,7 +8,6 @@ helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler warnings that are off by default
@@ -59,7 +58,7 @@ The following warnings are turned off by default.
 |[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4)|'*class1*' : Object layout under /vd2 will change due to virtual base '*class2*'|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (level 4)|dynamic_cast from virtual base '*class1*' to '*class2*' could fail in some contexts|
 |C4444 (level 3)|top level '__unaligned' is not implemented in this context|
-|C4464 (level 4)|relative include path contains '..'|
+|[C4464](../error-messages/compiler-warnings/c4464.md) (level 4)|relative include path contains '..'|
 |C4472 (level 1)|'*identifier*' is a native enum: add an access specifier (private/public) to declare a managed enum|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (level 4)|'*function*': unreferenced inline function has been removed|
 |[C4536](../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md) (level 4)|'type name': type-name exceeds meta-data limit of '*limit*' characters|

@@ -2,10 +2,7 @@
 title: "_fdopen, _wfdopen | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/12/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_fdopen", "_wfdopen"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_tfdopen", "_fdopen", "_wfdopen", "wfdopen", "tfdopen"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["wfdopen function", "_fdopen function", "_wfdopen function", "tfdopen function", "fdopen function", "_tfdopen function", "streams, associating with files"]
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fdopen, _wfdopen
@@ -26,7 +21,7 @@ Associates a stream with a file that was previously opened for low-level I/O.
 
 ## Syntax
 
-```c
+```C
 FILE *_fdopen(
    int fd,
    const char *mode
@@ -39,91 +34,77 @@ FILE *_wfdopen(
 
 ### Parameters
 
-*fd*  
+*fd*
 File descriptor of the open file.
 
-*mode*  
+*mode*
 Type of file access.
 
 ## Return Value
 
-Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that `mode` was a null pointer.
+Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set either to **EBADF**, which indicates a bad file descriptor, or **EINVAL**, which indicates that *mode* was a null pointer.
 
 For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `_fdopen` function associates an I/O stream with the file that is identified by *fd*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. `_wfdopen` is a wide-character version of `_fdopen`; the *mode* argument to `_wfdopen` is a wide-character string. `_wfdopen` and `_fdopen` otherwise behave identically.
+The **_fdopen** function associates an I/O stream with the file that is identified by *fd*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **_wfdopen** is a wide-character version of **_fdopen**; the *mode* argument to **_wfdopen** is a wide-character string. **_wfdopen** and **_fdopen** otherwise behave identically.
 
-File descriptors passed into `_fdopen` are owned by the returned `FILE *` stream. If `_fdopen` is successful, do not call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor. Calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
+File descriptors passed into **_fdopen** are owned by the returned **FILE &#42;** stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned **FILE &#42;** also closes the file descriptor.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|\_UNICODE and \_MBCS not defined|\_MBCS defined|\_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tfdopen`|`_fdopen`|`_fdopen`|`_wfdopen`|
+|**_tfdopen**|**_fdopen**|**_fdopen**|**_wfdopen**|
 
-The *mode* character string specifies the type of file access requested for the file:  
+The *mode* character string specifies the type of file access requested for the file:
 
-`"r"`  
-Opens for reading. If the file does not exist or cannot be found, the `fopen` call fails.
+|*mode*|Access|
+|-|-|
+**"r"**|Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails.
+**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.
+**"a"**|Opens for writing at the end of the file (appending). Creates the file if it does not exist.
+**"r+"**|Opens for both reading and writing. The file must exist.
+**"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
+**"a+"**|Opens for reading and appending. Creates the file if it does not exist.
 
-`"w"`  
-Opens an empty file for writing. If the given file exists, its contents are destroyed.
-
-`"a"`  
-Opens for writing, at the end of the file (appending). Creates the file if it does not exist.
-
-`"r+"`  
-Opens for both reading and writing. (The file must exist.)
-
-`"w+"`  
-Opens an empty file for both reading and writing. If the given file exists, its contents are destroyed.
-
-`"a+"`  
-Opens for reading and appending. Creates the file if it does not exist.
-
-When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned by using `fseek` or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening `fflush`, `fsetpos`, `fseek`, or `rewind` operation. You can specify the current position for the `fsetpos` or `fseek` operation, if you want to.
+When a file is opened with the **"a"** or **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fflush](fflush.md), [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), or [rewind](rewind.md) operation. You can specify the current position for the [fsetpos](fsetpos.md) or [fseek](fseek-fseeki64.md) operation, if you want to.
 
 In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
 
-`t`  
-Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, `fopen` checks for a Ctrl+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file that ends with a Ctrl+Z might cause `fseek` to behave incorrectly near the end of the file.
+|*mode* modifier|Behavior|
+|-|-|
+**t**|Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input.
+**b**|Open in binary (untranslated) mode. Any translations from **t** mode are suppressed.
+**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
+**n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
 
-`b`  
-Open in binary (untranslated) mode. Any translations from `t` mode are suppressed.
+The **t**, **c**, and **n** *mode* options are Microsoft extensions for **fopen** and **_fdopen**. Do not use them if you want to preserve ANSI portability.
 
-`c`  
-Enable the commit flag for the associated `filename` so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+If **t** or **b** is not given in *mode*, the default translation mode is defined by the global variable [\_fmode](../../c-runtime-library/fmode.md). If **t** or **b** is prefixed to the argument, the function fails and returns NULL. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-`n`  
-Reset the commit flag for the associated `filename` to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
+Valid characters for the *mode* string used in **fopen** and **_fdopen** correspond to *oflag* arguments used in [\_open](open-wopen.md) and [\_sopen](sopen-wsopen.md), as shown in this table:
 
-The `t`, `c`, and `n` *mode* options are Microsoft extensions for `fopen` and `_fdopen`. Do not use them if you want to preserve ANSI portability.
-
-If `t` or `b` is not given in *mode*, the default translation mode is defined by the global variable [\_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns NULL. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
-
-Valid characters for the *mode* string used in `fopen` and `_fdopen` correspond to *oflag* arguments used in [\_open](../../c-runtime-library/reference/open-wopen.md) and [\_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as shown in this table:
-
-|Characters in *mode* string|Equivalent *oflag* value for `_open` and `_sopen`|
+|Characters in *mode* string|Equivalent *oflag* value for **_open** and **_sopen**|
 |---------------------------------|---------------------------------------------------|
-|`a`|**\_O\_WRONLY &#124; \_O\_APPEND** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_APPEND**)|
-|`a+`|**\_O\_RDWR &#124; \_O\_APPEND** (usually **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_CREAT** )|
-|`r`|**\_O\_RDONLY**|
-|`r+`|**\_O\_RDWR**|
-|`w`|**\_O\_WRONLY** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
-|`w+`|**\_O\_RDWR** (usually **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
-|`b`|**\_O\_BINARY**|
-|`t`|**\_O\_TEXT**|
-|`c`|None|
-|`n`|None|
+|**a**|**\_O\_WRONLY &#124; \_O\_APPEND** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_APPEND**)|
+|**a+**|**\_O\_RDWR &#124; \_O\_APPEND** (usually **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_CREAT** )|
+|**r**|**\_O\_RDONLY**|
+|**r+**|**\_O\_RDWR**|
+|**w**|**\_O\_WRONLY** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|**w+**|**\_O\_RDWR** (usually **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|**b**|**\_O\_BINARY**|
+|**t**|**\_O\_TEXT**|
+|**c**|None|
+|**n**|None|
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|`_fdopen`|\<stdio.h>|
-|`_wfdopen`|\<stdio.h> or \<wchar.h>|
+|**_fdopen**|\<stdio.h>|
+|**_wfdopen**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -166,22 +147,22 @@ int main( void )
 
 ### Input: crt_fdopen.txt
 
-```
+```Input
 Line one
 Line two
 ```
 
 ### Output
 
-```
+```Output
 Lines in file: 2
 ```
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
-[\_dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)   
-[fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
-[fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
-[freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)   
-[\_open, \_wopen](../../c-runtime-library/reference/open-wopen.md)
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[\_dup, \_dup2](dup-dup2.md)<br/>
+[fclose, \_fcloseall](fclose-fcloseall.md)<br/>
+[fopen, \_wfopen](fopen-wfopen.md)<br/>
+[freopen, \_wfreopen](freopen-wfreopen.md)<br/>
+[\_open, \_wopen](open-wopen.md)<br/>

@@ -2,19 +2,14 @@
 title: "LINK Environment Variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["link"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["variables, environment", "LINK tool [C++], environment variables", "LIB environment variable", "environment variables [C++], LINK"]
 ms.assetid: 9a3d3291-0cc4-4a7d-9d50-80e351b90708
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # LINK Environment Variables

@@ -2,15 +2,12 @@
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/25/2107"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 
@@ -98,19 +95,13 @@ cmake -E capabilities
 
 In the output, look for “serverMode”:true. Note that even when you compile CMake from source as described below you should check the capabilities when done. Your Linux system may have limitations that prevent server mode from being enabled.
 
-To get started building from source in the shell for your Linux system make sure your package manager is up to date, and that you have git and cmake available. First, clone the CMake sources:
+To get started building from source in the shell for your Linux system make sure your package manager is up to date, and that you have git and cmake available. First, clone the CMake sources from our repo where we use for Visual Studio's CMake support:
 
 ```cmd
 sudo apt-get update
 sudo apt-get install -y git cmake
-git clone https://github.com/Kitware/CMake.git
+git clone https://github.com/Microsoft/CMake.git
 cd CMake
-```
-
-Next, make sure you are on a supported release of CMake for Visual Studio. We are actively tracking CMake development, but we cannot guarantee we support the latest. To build CMake 3.9.0 (for example), first run:
-
-```cmd
-git checkout tags/v3.9.0
 ```
 
 Next, run the following commands:

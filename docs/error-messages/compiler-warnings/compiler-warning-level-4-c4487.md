@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4487 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4487"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4487"]
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
-caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4487

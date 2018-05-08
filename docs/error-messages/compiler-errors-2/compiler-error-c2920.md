@@ -2,19 +2,14 @@
 title: "Compiler Error C2920 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2920"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2920"]
 ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2920

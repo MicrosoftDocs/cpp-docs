@@ -2,19 +2,14 @@
 title: "CDaoWorkspace Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDaoWorkspace", "AFXDAO/CDaoWorkspace", "AFXDAO/CDaoWorkspace::CDaoWorkspace", "AFXDAO/CDaoWorkspace::Append", "AFXDAO/CDaoWorkspace::BeginTrans", "AFXDAO/CDaoWorkspace::Close", "AFXDAO/CDaoWorkspace::CommitTrans", "AFXDAO/CDaoWorkspace::CompactDatabase", "AFXDAO/CDaoWorkspace::Create", "AFXDAO/CDaoWorkspace::GetDatabaseCount", "AFXDAO/CDaoWorkspace::GetDatabaseInfo", "AFXDAO/CDaoWorkspace::GetIniPath", "AFXDAO/CDaoWorkspace::GetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::GetLoginTimeout", "AFXDAO/CDaoWorkspace::GetName", "AFXDAO/CDaoWorkspace::GetUserName", "AFXDAO/CDaoWorkspace::GetVersion", "AFXDAO/CDaoWorkspace::GetWorkspaceCount", "AFXDAO/CDaoWorkspace::GetWorkspaceInfo", "AFXDAO/CDaoWorkspace::Idle", "AFXDAO/CDaoWorkspace::IsOpen", "AFXDAO/CDaoWorkspace::Open", "AFXDAO/CDaoWorkspace::RepairDatabase", "AFXDAO/CDaoWorkspace::Rollback", "AFXDAO/CDaoWorkspace::SetDefaultPassword", "AFXDAO/CDaoWorkspace::SetDefaultUser", "AFXDAO/CDaoWorkspace::SetIniPath", "AFXDAO/CDaoWorkspace::SetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::SetLoginTimeout", "AFXDAO/CDaoWorkspace::m_pDAOWorkspace"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoWorkspace [MFC], CDaoWorkspace", "CDaoWorkspace [MFC], Append", "CDaoWorkspace [MFC], BeginTrans", "CDaoWorkspace [MFC], Close", "CDaoWorkspace [MFC], CommitTrans", "CDaoWorkspace [MFC], CompactDatabase", "CDaoWorkspace [MFC], Create", "CDaoWorkspace [MFC], GetDatabaseCount", "CDaoWorkspace [MFC], GetDatabaseInfo", "CDaoWorkspace [MFC], GetIniPath", "CDaoWorkspace [MFC], GetIsolateODBCTrans", "CDaoWorkspace [MFC], GetLoginTimeout", "CDaoWorkspace [MFC], GetName", "CDaoWorkspace [MFC], GetUserName", "CDaoWorkspace [MFC], GetVersion", "CDaoWorkspace [MFC], GetWorkspaceCount", "CDaoWorkspace [MFC], GetWorkspaceInfo", "CDaoWorkspace [MFC], Idle", "CDaoWorkspace [MFC], IsOpen", "CDaoWorkspace [MFC], Open", "CDaoWorkspace [MFC], RepairDatabase", "CDaoWorkspace [MFC], Rollback", "CDaoWorkspace [MFC], SetDefaultPassword", "CDaoWorkspace [MFC], SetDefaultUser", "CDaoWorkspace [MFC], SetIniPath", "CDaoWorkspace [MFC], SetIsolateODBCTrans", "CDaoWorkspace [MFC], SetLoginTimeout", "CDaoWorkspace [MFC], m_pDAOWorkspace"]
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoWorkspace Class

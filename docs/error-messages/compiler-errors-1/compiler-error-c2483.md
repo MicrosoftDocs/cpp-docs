@@ -2,19 +2,14 @@
 title: "Compiler Error C2483 | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/15/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2483"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2483"]
 ms.assetid: 5762b325-914b-442d-a604-e4617ba04038
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2483

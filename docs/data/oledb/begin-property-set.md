@@ -2,19 +2,14 @@
 title: "BEGIN_PROPERTY_SET | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BEGIN_PROPERTY_SET"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_PROPERTY_SET macro"]
 ms.assetid: 5995f21a-5161-4ecf-b9da-e2ff6754d40e
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_PROPERTY_SET

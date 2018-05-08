@@ -2,18 +2,13 @@
 title: "Message Map Macros (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["atlwin/ATL::ALT_MSG_MAP", "atlwin/ATL::BEGIN_MSG_MAP", "atlwin/ATL::CHAIN_MSG_MAP_ALT", "atlwin/ATL::CHAIN_MSG_MAP_ALT_MEMBER", "atlwin/ATL::CHAIN_MSG_MAP", "atlwin/ATL::CHAIN_MSG_MAP_DYNAMIC", "atlwin/ATL::CHAIN_MSG_MAP_MEMBER", "atlwin/ATL::COMMAND_CODE_HANDLER", "atlwin/ATL::COMMAND_HANDLER", "atlwin/ATL::COMMAND_ID_HANDLER", "atlwin/ATL::COMMAND_RANGE_CODE_HANDLER", "atlwin/ATL::COMMAND_RANGE_HANDLER", "atlwin/ATL::DECLARE_EMPTY_MSG_MAP", "atlwin/ATL::DEFAULT_REFLECTION_HANDLER", "atlwin/ATL::END_MSG_MAP", "atlwin/ATL::FORWARD_NOTIFICATIONS", "atlwin/ATL::MESSAGE_HANDLER", "atlwin/ATL::MESSAGE_RANGE_HANDLER", "atlwin/ATL::NOTIFY_CODE_HANDLER", "atlwin/ATL::NOTIFY_HANDLER", "atlwin/ATL::NOTIFY_ID_HANDLER", "atlwin/ATL::NOTIFY_RANGE_CODE_HANDLER", "atlwin/ATL::NOTIFY_RANGE_HANDLER", "atlwin/ATL::REFLECT_NOTIFICATIONS", "atlwin/ATL::REFLECTED_COMMAND_CODE_HANDLER", "atlwin/ATL::REFLECTED_COMMAND_HANDLER", "atlwin/ATL::REFLECTED_COMMAND_ID_HANDLER", "atlwin/ATL::REFLECTED_COMMAND_RANGE_CODE_HANDLER", "atlwin/ATL::REFLECTED_COMMAND_RANGE_HANDLER", "atlwin/ATL::REFLECTED_NOTIFY_CODE_HANDLER", "atlwin/ATL::REFLECTED_NOTIFY_HANDLER", "atlwin/ATL::REFLECTED_NOTIFY_ID_HANDLER", "atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER", "atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER"]
 dev_langs: ["C++"]
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Message Map Macros (ATL)

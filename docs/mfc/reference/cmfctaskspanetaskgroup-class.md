@@ -2,19 +2,14 @@
 title: "CMFCTasksPaneTaskGroup Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsBottom", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsCollapsed", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsSpecial", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_lstTasks", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCTasksPaneTaskGroup [MFC], CMFCTasksPaneTaskGroup", "CMFCTasksPaneTaskGroup [MFC], SetACCData", "CMFCTasksPaneTaskGroup [MFC], m_bIsBottom", "CMFCTasksPaneTaskGroup [MFC], m_bIsCollapsed", "CMFCTasksPaneTaskGroup [MFC], m_bIsSpecial", "CMFCTasksPaneTaskGroup [MFC], m_lstTasks", "CMFCTasksPaneTaskGroup [MFC], m_rect", "CMFCTasksPaneTaskGroup [MFC], m_rectGroup", "CMFCTasksPaneTaskGroup [MFC], m_strName"]
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCTasksPaneTaskGroup Class

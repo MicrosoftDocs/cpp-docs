@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4460 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4460"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4460"]
 ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4460

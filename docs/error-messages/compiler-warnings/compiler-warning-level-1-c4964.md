@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4964 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4964"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4964"]
 ms.assetid: b89c9274-8a92-4b7c-aa30-3fbb1b68ac73
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4964

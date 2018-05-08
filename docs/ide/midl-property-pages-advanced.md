@@ -2,19 +2,14 @@
 title: "MIDL Property Pages: Advanced | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCMidlTool.ErrorCheckBounds", "VC.Project.VCMidlTool.ErrorCheckStubData", "VC.Project.VCMidlTool.ErrorCheckAllocations", "VC.Project.VCMidlTool.CPreprocessOptions", "VC.Project.VCMidlTool.UndefinePreprocessorDefinitions", "VC.Project.VCMidlTool.EnableErrorChecks", "VC.Project.VCMidlTool.RedirectOutputAndErrors", "VC.Project.VCMidlTool.ErrorCheckEnumRange", "VC.Project.VCMidlTool.StructMemberAlignment", "VC.Project.VCMidlTool.ErrorCheckRefPointers", "VC.Project.VCMidlTool.ValidateParameters"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MIDL, property pages"]
 ms.assetid: d1c92e01-f403-4ed6-ab45-4043a3c9c6bb
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MIDL Property Pages: Advanced

@@ -2,19 +2,14 @@
 title: "__vmx_vmwrite | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__vmx_vmwrite"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__vmx_vmwrite intrinsic", "VMWRITE instruction"]
 ms.assetid: 88139792-fd3f-4210-97ca-9d84f43a0252
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __vmx_vmwrite

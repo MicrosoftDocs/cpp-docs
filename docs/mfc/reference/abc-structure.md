@@ -2,19 +2,14 @@
 title: "ABC Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["ABC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ABC structure [MFC]"]
 ms.assetid: 32663839-c3b7-4f47-896c-b15329c96bc8
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ABC Structure

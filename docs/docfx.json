@@ -32,14 +32,11 @@
     "globalMetadata": {
             "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "ROBOTS": "INDEX,FOLLOW",
-            "author": "",
-            "ms.author": "",
-            "manager": "ghogen",
+            "manager": "wpickett",
             "ms.date": "11/16/2016",
-            "ms.topic": "article",
+            "ms.topic": "conceptual",
             "audience": "developer",
-            "ms.reviewer": "",
-            "ms.prod": "visual-cpp-dev15",
+            "ms.prod": "visual-cpp",
             "ms.tgt_pltfrm": "",
             "searchScope": ["C++"]
     },

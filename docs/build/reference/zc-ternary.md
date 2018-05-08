@@ -1,14 +1,13 @@
 ---
 title: "/Zc:ternary (Enforce conditional operator rules) | Microsoft Docs"
-ms.date: "1/12/2018"
+ms.date: "3/06/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/Zc:ternary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:ternary", "Zc:ternary", "-Zc:ternary"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ---
 # /Zc:ternary (Enforce conditional operator rules)
 
@@ -22,7 +21,7 @@ Enable enforcement of C++ Standard rules for the types and const or volatile (cv
 
 Visual Studio version 15.3 enables compiler support for C++ standard conditional (or ternary) operator (**?:**) behavior. The C++ Standard requires either the operands to be of the same type and cv-qualification, or for only one operand to be unambiguously convertible to the same type and cv-qualification as the other, or for one or both operands to be a throw expression. In versions before Visual Studio version 15.5, the compiler allowed conversions that are considered ambiguous by the standard. When the **/Zc:ternary** option is specified, the compiler conforms to the standard and rejects code that does not satisfy the rules for matched types and cv-qualification of the second and third operands.
 
-The **/Zc:ternary** option is off by default. Use **/Zc:ternary** to enable conforming behavior, or **/Zc:ternary-** to explicitly specify the previous non-conforming compiler behavior. The [/permissive-](permissive-standards-conformance.md) option enables **/Zc:ternary**. 
+The **/Zc:ternary** option is off by default. Use **/Zc:ternary** to enable conforming behavior, or **/Zc:ternary-** to explicitly specify the previous non-conforming compiler behavior. The [/permissive-](permissive-standards-conformance.md) option implicitly enables this option, but it can be overridden by using **/Zc:ternary-**.
 
 ### Examples
 

@@ -1,20 +1,15 @@
 ---
 title: "VC++ Directories Property Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/28/2017"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "04/26/2018"
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VC++ Directories Property Page"]
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # VC++ Directories Property Page (Windows)
@@ -25,23 +20,25 @@ For the Linux version of this page, see [VC++ Directories (Linux C++)](../linux/
 
 To access the **VC++ Directories** property page:
 
-1. from the main menu choose **View | Solution Explorer**
-1. right-click on the project node (not the top-level solution) and choose **Properties**
-1. in the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and select **VC++ Directories**.  
+1. If the **Solution Explorer** window is not visible, then on the main menu choose **View** > **Solution Explorer**.
+1. Right-click on a project node (not the top-level solution) and choose **Properties**.
+1. In the left pane of the **Property Pages** dialog box, select **Configuration Properties** > **VC++ Directories**.  
 
-VC++ Directories properties apply to a project, not the top-level solution node:
+VC++ Directories properties apply to a project, not the top-level solution node. If you do not see **VC++ Directories** under **Configuration Properties**, select a C++ project node in the **Solution Explorer** window: 
 
 ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
-If you don't see the property page, make sure you have the project node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For non-Windows projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md) or . 
+Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md). 
  
 If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md). 
  
-The default settings for VC++ directories depend on project type. For desktop projects they include the VC++ tools locations for a particular Platform Toolset and the Windows SDK location. You can change the **Platform Toolset** and **Windows SDK version** on the **Configuration Properties – General** page. To view the values for any of the directories:
+The default settings for **VC++ Directories** properties depend on project type. For desktop projects they include the C++ tools locations for a particular Platform Toolset and the Windows SDK location. You can change the **Platform Toolset** and **Windows SDK version** on the **Configuration Properties** > **General** page. 
 
-1. in the right pane of the **VC++ Directories** page, select a row. For example, **Library Directories**
-1. choose the down-arrow button on the right
-1. choose **Edit**.
+To view the values for any of the directories:
+
+1. Select one of the properties in the **VC++ Directories** page. For example, choose **Library Directories**.
+1. Choose the down-arrow button at the end of the property value field.
+1. In the drop-down menu, choose **Edit**.
 
 ![Edit Library Directories](media/vcppdir_libdir_edit.png "Dialog to edit library paths")
 
@@ -57,7 +54,7 @@ You can search for partial or complete matches in the edit box. The following il
 
 ![See macro values](media/vcppdir_libdir_macros.png "Dialog to edit macros")
 
-Note: The list will populate as you type. Don't press **Enter**.
+Note: The list is populated as you type. Don't press **Enter**.
 
 For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros). 
 
@@ -73,23 +70,26 @@ For more information, see these blog posts: [VC++ Directories](http://blogs.msdn
 
 You can also specify other directories, as follows.  
   
-**Executable Directories**  
+**Executable Directories**<br/>
 Directories in which to search for executable files. Corresponds to the **PATH** environment variable.
 
-**Include Directories**  
+**Include Directories**<br/>
 Directories in which to search for include files that are referenced in the source code. Corresponds to the **INCLUDE** environment variable.
 
-**Reference Directories**  
+**Reference Directories**<br/>
  Directories in which to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **LIBPATH** environment variable.
 
-**Library Directories**  
-Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the [Linker](../ide/linker-property-pages.md)**General** property page, select **Additional Library Dependencies** and then specify the relative path of the file.
+**Library Directories**<br/>
+Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the  **Configuration Properties** > **Linker** > **General** property page, select **Additional Library Dependencies** and then specify the relative path of the file. For more information, see [Linker property pages](../ide/linker-property-pages.md).
 
-**Source Directories**  
+**Library WinRT Directories**<br/>
+Directories to search for WinRT library files for use in Universal Windows Platform (UWP) apps. 
+
+**Source Directories**<br/>
 Directories in which to search for source files to use for IntelliSense.
 
-**Exclude Directories**  
-Directories not to search when checking for build dependencies.
+**Exclude Directories**<br/>
+Before each compilation, Visual Studio queries the timestamp on all files to determine whether any have been modified since the previous compilation. If your project has large stable libraries, you can potentially speed up build times by excluding those directories from the timestamp check.
 
 ## Sharing the Settings
 

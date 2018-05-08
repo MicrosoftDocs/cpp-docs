@@ -2,19 +2,14 @@
 title: "Security Features in the CRT | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["_CRT_SECURE_NO_DEPRECATE", "_CRT_NONSTDC_NO_WARNINGS", "_CRT_SECURE_NO_WARNINGS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["security deprecation warnings [C++]", "CRT_NONSTDC_NO_DEPRECATE", "buffers [C++], buffer overruns", "deprecation warnings (security-related), disabling", "_CRT_NONSTDC_NO_WARNINGS", "security [CRT]", "_CRT_SECURE_NO_WARNINGS", "_CRT_NONSTDC_NO_DEPRECATE", "_CRT_SECURE_NO_DEPRECATE", "security-enhanced CRT", "CRT_SECURE_NO_WARNINGS", "CRT_SECURE_NO_DEPRECATE", "deprecation warnings (security-related)", "buffer overruns", "CRT_NONSTDC_NO_WARNINGS", "CRT, security enhancements", "parameters [C++], validation"]
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Security Features in the CRT

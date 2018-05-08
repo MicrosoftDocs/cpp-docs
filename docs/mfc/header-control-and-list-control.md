@@ -2,18 +2,13 @@
 title: "Header Control and List Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], with CHeaderCtrl", "CListCtrl class [MFC], header controls", "CHeaderCtrl class [MFC], with CListCtrl", "controls [MFC], header", "header controls [MFC]", "header controls [MFC], list controls used with"]
 ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Header Control and List Control

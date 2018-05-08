@@ -2,19 +2,14 @@
 title: "upper_bound (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::upper_bound"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["upper_bound function [STL/CLR]"]
 ms.assetid: a377a77b-8005-496e-85ae-b431a9b2f0b9
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # upper_bound (STL/CLR)

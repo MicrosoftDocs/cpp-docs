@@ -1,14 +1,13 @@
 ---
 title: "/Zf (Faster PDB generation) | Microsoft Docs"
-ms.date: "02/22/2018"
+ms.date: "03/29/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/Zf"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/Zf", "-Zf"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ---
 # /Zf (Faster PDB generation)
 
@@ -24,7 +23,7 @@ The **/Zf** option enables compiler support for faster generation of PDB files w
 
 Because the **/Zf** option only applies to PDB generation, it requires the [/Zi](z7-zi-zi-debug-information-format.md) or [/ZI](z7-zi-zi-debug-information-format.md) option.
 
-The **/Zf** option is available beginning in Visual Studio 2017 version 15.1, and is off by default.
+The **/Zf** option is available beginning in Visual Studio 2017 version 15.1, where it is off by default. Starting in Visual Studio 2017 version 15.7 Preview 3, this option is on by default when the **/Zi** or **/ZI** option is enabled.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -36,5 +35,5 @@ The **/Zf** option is available beginning in Visual Studio 2017 version 15.1, an
 
 ## See also
 
-[Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)  
-[/MP (Build with Multiple Processes)](mp-build-with-multiple-processes.md)  
+[Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)<br/>
+[/MP (Build with Multiple Processes)](mp-build-with-multiple-processes.md)<br/>

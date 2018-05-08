@@ -2,19 +2,14 @@
 title: "WeakRef::CopyTo Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::WeakRef::CopyTo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CopyTo method"]
 ms.assetid: f83de6da-b3d4-41a6-9845-cd725ecf3b75
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::CopyTo Method
@@ -28,9 +23,7 @@ HRESULT CopyTo(
    _Deref_out_ IInspectable** ptr  
 );  
   
-template<  
-   typename U  
->  
+template<typename U>  
 HRESULT CopyTo(  
    _Deref_out_ U** ptr  
 );  

@@ -2,19 +2,14 @@
 title: "CUserException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CUserException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operations [MFC], stopping", "exceptions [MFC], throwing", "CUserException class [MFC]", "errors [MFC], trapping", "operations [MFC]", "throwing exceptions [MFC], stopping user operations"]
 ms.assetid: 2156ba6d-2cce-415a-9000-6f02c26fcd7d
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CUserException Class

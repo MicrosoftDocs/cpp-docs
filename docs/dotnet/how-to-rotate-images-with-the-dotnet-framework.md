@@ -2,18 +2,13 @@
 title: "How to: Rotate Images with the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["GDI+ [C++], rotating images", "graphics [C++], rotating images"]
 ms.assetid: e32104d5-87d0-47a9-a22f-9bc835b7e8d7
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Rotate Images with the .NET Framework

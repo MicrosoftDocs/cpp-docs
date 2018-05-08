@@ -2,19 +2,14 @@
 title: "C Runtime Error R6026 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["R6026"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["R6026"]
 ms.assetid: 7ea751f8-fc20-46ab-99ef-84c95ca0b6b4
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6026

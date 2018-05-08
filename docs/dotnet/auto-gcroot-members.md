@@ -2,17 +2,12 @@
 title: "auto_gcroot Members | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: fb51ff14-a497-4f7a-8d7e-c3cfcaf9f8df
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot Members

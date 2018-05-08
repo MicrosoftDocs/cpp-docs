@@ -2,19 +2,14 @@
 title: "Compiler Error C2293 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C2293"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2293"]
 ms.assetid: 17e7b4e2-368b-4dd7-a01b-d82be60f8e56
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2293

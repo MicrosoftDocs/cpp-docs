@@ -3,18 +3,13 @@ title: "Platform::DisconnectedException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::DisconnectedException", "VCCORLIB/Platform::DisconnectedException::DisconnectedException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::DisconnectedException"]
 ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::DisconnectedException Class

@@ -2,19 +2,14 @@
 title: "Tracking Reference Operator (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["%"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tracking references", "% tracking reference [C++]"]
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
-caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Tracking Reference Operator (C++ Component Extensions)
@@ -128,7 +123,7 @@ int main() {
 using namespace System;  
   
 int main() {  
-   array<int> ^ a = ref new array< Int32 >(5);  
+   array<int> ^ a = ref new array<Int32>(5);  
    a[0] = 21;  
    Console::WriteLine(a[0]);  
    array<int> ^% arr = a;  

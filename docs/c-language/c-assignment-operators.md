@@ -2,18 +2,13 @@
 title: "C Assignment Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["remainder assignment operator (%=)", "&= operator", "bitwise-AND assignment operator", "operators [C], assignment", "operators [C], shift", "^= operator, assignment operators", "+= operator", ">>= operator", "|= operator", "division assignment operator", "subtraction operator", "right shift operators", "subtraction operator, C assignment operators", "= operator, assignment operators", "*= operator", ">> operator", "%= operator", "assignment operators, C", "= operator", "assignment operators", "assignment conversions", "-= operator", "multiplication assignment operator (*=)", "shift operators, right", "/= operator", "operator >>=, C assignment operators", "<<= operator"]
 ms.assetid: 11688dcb-c941-44e7-a636-3fc98e7dac40
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Assignment Operators

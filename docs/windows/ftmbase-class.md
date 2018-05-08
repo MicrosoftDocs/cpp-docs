@@ -2,19 +2,14 @@
 title: "FtmBase Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FtmBase class"]
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase Class
@@ -25,8 +20,8 @@ Represents a free-threaded marshaler object.
 ```  
   
 class FtmBase : public Microsoft::WRL::Implements<  
-   Microsoft::WRL::RuntimeClassFlags< WinRtClassicComMix >,   
-   Microsoft::WRL::CloakedIid< IMarshal > >;  
+   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
+   Microsoft::WRL::CloakedIid<IMarshal> >;  
 ```  
   
 ## Remarks  

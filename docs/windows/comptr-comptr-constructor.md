@@ -2,19 +2,14 @@
 title: "ComPtr::ComPtr Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::ComPtr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ComPtr, constructor"]
 ms.assetid: eaf70907-beac-458f-a503-2e5e27b0c196
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ComPtr Constructor
@@ -27,18 +22,14 @@ WRL_NOTHROW ComPtr();
 WRL_NOTHROW ComPtr(  
    decltype(__nullptr)  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr(  
    _In_opt_ U *other  
 );  
 WRL_NOTHROW ComPtr(  
    const ComPtr& other  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr(  
    const ComPtr<U> &other,  
    typename ENABLE_IF<__is_convertible_to(U*,  
@@ -47,9 +38,7 @@ WRL_NOTHROW ComPtr(
 WRL_NOTHROW ComPtr(  
    _Inout_ ComPtr &&other  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr(  
    _Inout_ ComPtr<U>&& other,  
    typename ENABLE_IF<__is_convertible_to(U*,  

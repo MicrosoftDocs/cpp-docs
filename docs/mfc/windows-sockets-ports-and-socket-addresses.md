@@ -2,18 +2,13 @@
 title: "Windows Sockets: Ports and Socket Addresses | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ports [MFC], definition", "Windows Sockets [MFC], ports", "Windows Sockets [MFC], addresses", "ports [MFC]", "addresses [MFC], socket", "sockets [MFC], addresses", "sockets [MFC], ports"]
 ms.assetid: e050261a-9285-4f31-a1c5-6c8033af5b4a
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Ports and Socket Addresses

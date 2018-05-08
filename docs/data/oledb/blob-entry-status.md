@@ -2,19 +2,14 @@
 title: "BLOB_ENTRY_STATUS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BLOB_ENTRY_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_ENTRY_STATUS macro"]
 ms.assetid: 191007f4-dfcc-4ae2-a7fc-6f7899accc9f
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_ENTRY_STATUS

@@ -2,18 +2,13 @@
 title: "Exceptions: Exceptions in Constructors | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["constructors [MFC], exceptions", "throwing exceptions [MFC], in constructors", "exceptions [MFC], in constructors"]
 ms.assetid: a78eae5a-5821-4b27-9478-1436320ed1e1
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions: Exceptions in Constructors

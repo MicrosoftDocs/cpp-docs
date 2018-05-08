@@ -2,18 +2,13 @@
 title: "Data Objects and Data Sources: Manipulation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data objects [MFC], manipulating", "data sources [MFC], data operations", "data sources [MFC], inserting data", "Clipboard [MFC], determining available formats", "OLE [MFC], data objects", "Clipboard [MFC], passing format information", "data sources [MFC], determining available formats", "delayed rendering [MFC]", "OLE [MFC], data sources"]
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources: Manipulation

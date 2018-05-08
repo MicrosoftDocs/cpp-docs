@@ -2,19 +2,14 @@
 title: "COleResizeBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleResizeBar", "AFXOLE/COleResizeBar", "AFXOLE/COleResizeBar::COleResizeBar", "AFXOLE/COleResizeBar::Create"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleResizeBar [MFC], COleResizeBar", "COleResizeBar [MFC], Create"]
 ms.assetid: 56a708d9-28c5-4eb0-9404-77b688d91c63
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleResizeBar Class

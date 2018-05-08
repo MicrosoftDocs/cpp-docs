@@ -2,19 +2,14 @@
 title: "SafeInt Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["SafeInt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeInt class"]
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Class
@@ -167,7 +162,7 @@ class SafeInt;
   
  The Operators table in this topic lists the mathematical and comparison operators supported by the `SafeInt` class. Most mathematical operators return a `SafeInt` object of type `T`.  
   
- Comparison operations between a `SafeInt` and an integral type can be performed in either direction. For example, both `SafeInt<int>(x) < y` and `y > SafeInt<int>(x)` are valid and will return the same result.  
+ Comparison operations between a `SafeInt` and an integral type can be performed in either direction. For example, both `SafeInt<int>(x) < y` and `y> SafeInt<int>(x)` are valid and will return the same result.  
   
  Many binary operators do not support using two different `SafeInt` types. One example of this is the `&` operator. `SafeInt<T, E> & int` is supported, but `SafeInt<T, E> & SafeInt<U, E>` is not. In the latter example, the compiler does not know what type of parameter to return. One solution to this problem is to cast the second parameter back to the base type. By using the same parameters, this can be done with `SafeInt<T, E> & (U)SafeInt<U, E>`.  
   

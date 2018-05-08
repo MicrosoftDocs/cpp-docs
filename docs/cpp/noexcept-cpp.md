@@ -2,18 +2,13 @@
 title: "noexcept (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/12/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["noexcept_cpp"]
 dev_langs: ["C++"]
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # noexcept (C++)

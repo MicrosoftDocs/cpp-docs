@@ -2,19 +2,14 @@
 title: "__stosb | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__stosb"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rep stosb instruction", "__stosb intrinsic", "stosb instruction"]
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __stosb

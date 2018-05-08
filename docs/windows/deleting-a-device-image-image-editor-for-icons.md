@@ -2,18 +2,13 @@
 title: "Deleting a Device Image (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cursors, deleting", "display devices, deleting device image", "icons, erasing", "icons, deleting", "cursors, undoing changes", "icons, undoing changes"]
 ms.assetid: aab1031c-da95-49cf-aabc-46e127b11399
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting a Device Image (Image Editor for Icons)

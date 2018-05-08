@@ -2,18 +2,13 @@
 title: "C Run-Time Library Functions for Thread Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["_beginthread function", "_endthread function", "threading [C++], controlling threads", "multithreading [C++], controlling threads", "_beginthreadex function", "_endthreadex function"]
 ms.assetid: 39d0529c-c392-4c6f-94f5-105d1e8054e4
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Run-Time Library Functions for Thread Control

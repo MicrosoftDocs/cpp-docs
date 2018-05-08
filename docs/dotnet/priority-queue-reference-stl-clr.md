@@ -2,19 +2,14 @@
 title: "priority_queue::reference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::priority_queue::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reference member [STL/CLR]"]
 ms.assetid: b063eaf1-c238-4aef-ac54-a81d0f671418
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # priority_queue::reference (STL/CLR)

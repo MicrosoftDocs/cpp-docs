@@ -2,19 +2,14 @@
 title: "Dialog Data Exchange Functions for CRecordView and CDaoRecordView | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["AFXDAO/DDX_FieldCBIndex", "AFXDAO/DDX_FieldCBString", "AFXDAO/DDX_FieldCBStringExact", "AFXDAO/DDX_FieldCheck", "AFXDAO/DDX_FieldLBIndex", "AFXDAO/DDX_FieldLBString", "AFXDAO/DDX_FieldLBStringExact", "AFXDAO/DDX_FieldRadio", "AFXDAO/DDX_FieldScroll", "AFXDAO/DDX_FieldText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DDX_Field functions [MFC]", "ODBC [MFC], dialog data exchange (DDX) support", "DDX (dialog data exchange) [MFC], database support", "DDX (dialog data exchange) [MFC], functions", "databases [MFC], dialog data exchange (DDX) support", "DAO [MFC], dialog data exchange (DDX) support"]
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange Functions for CRecordView and CDaoRecordView
@@ -399,7 +394,7 @@ void AFXAPI DDX_FieldScroll(
  `pDX`  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- *nIDC\**  
+ `nIDC`  
  The ID of the first in a group (with style **WS_GROUP**) of adjacent radio button controls in the [CRecordView](../../mfc/reference/crecordview-class.md) or [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) object.  
   
  *value*  

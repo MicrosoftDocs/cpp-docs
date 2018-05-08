@@ -2,19 +2,14 @@
 title: "IPropertyNotifySinkCP Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["IPropertyNotifySinkCP", "atlctl/ATL::IPropertyNotifySinkCP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], managing", "sinks, notifying of changes", "IPropertyNotifySinkCP class"]
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IPropertyNotifySinkCP Class

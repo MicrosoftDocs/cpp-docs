@@ -1,28 +1,22 @@
 ---
 title: "Using extern to Specify Linkage | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "04/06/2018"
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["extern"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["extern keyword [C++], linkage to non-C++ functions", "declarations, external", "external linkage, extern modifier"]
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using extern to Specify Linkage
 ## Syntax  
   
 ```  
-  
-      extern string-literal { declaration-list }  
+extern string-literal { declaration-list }  
 extern string-literal declaration  
 ```  
   

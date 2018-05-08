@@ -2,19 +2,14 @@
 title: "hash_multimap::hash_delegate (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_multimap::hash_delegate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["hash_delegate member [STL/CLR]"]
 ms.assetid: 2a459f6d-9bb1-4b03-a013-0998ba842c25
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap::hash_delegate (STL/CLR)

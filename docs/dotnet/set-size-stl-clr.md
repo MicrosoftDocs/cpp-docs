@@ -2,19 +2,14 @@
 title: "set::size (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::set::size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size member [STL/CLR]"]
 ms.assetid: f231c515-b07e-4e18-90fd-535b13c2db70
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::size (STL/CLR)

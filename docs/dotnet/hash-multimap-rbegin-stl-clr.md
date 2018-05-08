@@ -2,19 +2,14 @@
 title: "hash_multimap::rbegin (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_multimap::rbegin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rbegin member [STL/CLR]"]
 ms.assetid: f5ce0614-3c73-4cec-9fa2-efadf0fd36c7
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap::rbegin (STL/CLR)

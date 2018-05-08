@@ -2,18 +2,13 @@
 title: "How to: Create a Resource Script File | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rc files, creating", ".rc files, creating", "resource script files, creating"]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Create a Resource Script File

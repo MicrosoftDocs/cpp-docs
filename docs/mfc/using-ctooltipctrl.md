@@ -2,19 +2,14 @@
 title: "Using CToolTipCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CToolTipCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CToolTipCtrl class [MFC], creating tool tips", "CToolTipCtrl class"]
 ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CToolTipCtrl

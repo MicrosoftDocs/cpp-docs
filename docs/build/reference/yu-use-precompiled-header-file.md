@@ -2,19 +2,14 @@
 title: "-Yu (Use Precompiled Header File) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/yu"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Yu compiler option [C++]", "/Yu compiler option [C++]", "-Yu compiler option [C++]", "PCH files, use existing", ".pch files, use existing", "precompiled header files, use existing"]
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Yu (Use Precompiled Header File)

@@ -2,19 +2,14 @@
 title: "Compiler Errors C2900 Through C2999 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2956", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997", "C2999"]
 helpviewer_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2956", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997", "C2999"]
 dev_langs: ["C++"]
 ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2900 Through C2999

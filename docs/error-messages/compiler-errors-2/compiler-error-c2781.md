@@ -2,19 +2,14 @@
 title: "Compiler Error C2781 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2781"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2781"]
 ms.assetid: f29b9963-f55b-427c-8db6-50f37713df5a
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2781

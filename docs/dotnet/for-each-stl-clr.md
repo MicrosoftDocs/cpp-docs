@@ -2,19 +2,14 @@
 title: "for_each (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::for_each"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["for_each function [STL/CLR]"]
 ms.assetid: 4c391ecf-cd35-499e-a3f5-35b965e0da9b
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # for_each (STL/CLR)

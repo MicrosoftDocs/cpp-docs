@@ -2,19 +2,14 @@
 title: "CTaskDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CTaskDialog", "AFXTASKDIALOG/CTaskDialog", "AFXTASKDIALOG/CTaskDialog::CTaskDialog", "AFXTASKDIALOG/CTaskDialog::AddCommandControl", "AFXTASKDIALOG/CTaskDialog::AddRadioButton", "AFXTASKDIALOG/CTaskDialog::ClickCommandControl", "AFXTASKDIALOG/CTaskDialog::ClickRadioButton", "AFXTASKDIALOG/CTaskDialog::DoModal", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonCount", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonFlag", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonId", "AFXTASKDIALOG/CTaskDialog::GetOptions", "AFXTASKDIALOG/CTaskDialog::GetSelectedCommandControlID", "AFXTASKDIALOG/CTaskDialog::GetSelectedRadioButtonID", "AFXTASKDIALOG/CTaskDialog::GetVerificationCheckboxState", "AFXTASKDIALOG/CTaskDialog::IsCommandControlEnabled", "AFXTASKDIALOG/CTaskDialog::IsRadioButtonEnabled", "AFXTASKDIALOG/CTaskDialog::IsSupported", "AFXTASKDIALOG/CTaskDialog::LoadCommandControls", "AFXTASKDIALOG/CTaskDialog::LoadRadioButtons", "AFXTASKDIALOG/CTaskDialog::NavigateTo", "AFXTASKDIALOG/CTaskDialog::OnCommandControlClick", "AFXTASKDIALOG/CTaskDialog::OnCreate", "AFXTASKDIALOG/CTaskDialog::OnDestroy", "AFXTASKDIALOG/CTaskDialog::OnExpandButtonClick", "AFXTASKDIALOG/CTaskDialog::OnHelp", "AFXTASKDIALOG/CTaskDialog::OnHyperlinkClick", "AFXTASKDIALOG/CTaskDialog::OnInit", "AFXTASKDIALOG/CTaskDialog::OnNavigatePage", "AFXTASKDIALOG/CTaskDialog::OnRadioButtonClick", "AFXTASKDIALOG/CTaskDialog::OnTimer", "AFXTASKDIALOG/CTaskDialog::OnVerificationCheckboxClick", "AFXTASKDIALOG/CTaskDialog::RemoveAllCommandControls", "AFXTASKDIALOG/CTaskDialog::RemoveAllRadioButtons", "AFXTASKDIALOG/CTaskDialog::SetCommandControlOptions", "AFXTASKDIALOG/CTaskDialog::SetCommonButtonOptions", "AFXTASKDIALOG/CTaskDialog::SetCommonButtons", "AFXTASKDIALOG/CTaskDialog::SetContent", "AFXTASKDIALOG/CTaskDialog::SetDefaultCommandControl", "AFXTASKDIALOG/CTaskDialog::SetDefaultRadioButton", "AFXTASKDIALOG/CTaskDialog::SetDialogWidth", "AFXTASKDIALOG/CTaskDialog::SetExpansionArea", "AFXTASKDIALOG/CTaskDialog::SetFooterIcon", "AFXTASKDIALOG/CTaskDialog::SetFooterText", "AFXTASKDIALOG/CTaskDialog::SetMainIcon", "AFXTASKDIALOG/CTaskDialog::SetMainInstruction", "AFXTASKDIALOG/CTaskDialog::SetOptions", "AFXTASKDIALOG/CTaskDialog::SetProgressBarMarquee", "AFXTASKDIALOG/CTaskDialog::SetProgressBarPosition", "AFXTASKDIALOG/CTaskDialog::SetProgressBarRange", "AFXTASKDIALOG/CTaskDialog::SetProgressBarState", "AFXTASKDIALOG/CTaskDialog::SetRadioButtonOptions", "AFXTASKDIALOG/CTaskDialog::SetVerificationCheckbox", "AFXTASKDIALOG/CTaskDialog::SetVerificationCheckboxText", "AFXTASKDIALOG/CTaskDialog::SetWindowTitle", "AFXTASKDIALOG/CTaskDialog::ShowDialog", "AFXTASKDIALOG/CTaskDialog::TaskDialogCallback"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTaskDialog [MFC], CTaskDialog", "CTaskDialog [MFC], AddCommandControl", "CTaskDialog [MFC], AddRadioButton", "CTaskDialog [MFC], ClickCommandControl", "CTaskDialog [MFC], ClickRadioButton", "CTaskDialog [MFC], DoModal", "CTaskDialog [MFC], GetCommonButtonCount", "CTaskDialog [MFC], GetCommonButtonFlag", "CTaskDialog [MFC], GetCommonButtonId", "CTaskDialog [MFC], GetOptions", "CTaskDialog [MFC], GetSelectedCommandControlID", "CTaskDialog [MFC], GetSelectedRadioButtonID", "CTaskDialog [MFC], GetVerificationCheckboxState", "CTaskDialog [MFC], IsCommandControlEnabled", "CTaskDialog [MFC], IsRadioButtonEnabled", "CTaskDialog [MFC], IsSupported", "CTaskDialog [MFC], LoadCommandControls", "CTaskDialog [MFC], LoadRadioButtons", "CTaskDialog [MFC], NavigateTo", "CTaskDialog [MFC], OnCommandControlClick", "CTaskDialog [MFC], OnCreate", "CTaskDialog [MFC], OnDestroy", "CTaskDialog [MFC], OnExpandButtonClick", "CTaskDialog [MFC], OnHelp", "CTaskDialog [MFC], OnHyperlinkClick", "CTaskDialog [MFC], OnInit", "CTaskDialog [MFC], OnNavigatePage", "CTaskDialog [MFC], OnRadioButtonClick", "CTaskDialog [MFC], OnTimer", "CTaskDialog [MFC], OnVerificationCheckboxClick", "CTaskDialog [MFC], RemoveAllCommandControls", "CTaskDialog [MFC], RemoveAllRadioButtons", "CTaskDialog [MFC], SetCommandControlOptions", "CTaskDialog [MFC], SetCommonButtonOptions", "CTaskDialog [MFC], SetCommonButtons", "CTaskDialog [MFC], SetContent", "CTaskDialog [MFC], SetDefaultCommandControl", "CTaskDialog [MFC], SetDefaultRadioButton", "CTaskDialog [MFC], SetDialogWidth", "CTaskDialog [MFC], SetExpansionArea", "CTaskDialog [MFC], SetFooterIcon", "CTaskDialog [MFC], SetFooterText", "CTaskDialog [MFC], SetMainIcon", "CTaskDialog [MFC], SetMainInstruction", "CTaskDialog [MFC], SetOptions", "CTaskDialog [MFC], SetProgressBarMarquee", "CTaskDialog [MFC], SetProgressBarPosition", "CTaskDialog [MFC], SetProgressBarRange", "CTaskDialog [MFC], SetProgressBarState", "CTaskDialog [MFC], SetRadioButtonOptions", "CTaskDialog [MFC], SetVerificationCheckbox", "CTaskDialog [MFC], SetVerificationCheckboxText", "CTaskDialog [MFC], SetWindowTitle", "CTaskDialog [MFC], ShowDialog", "CTaskDialog [MFC], TaskDialogCallback"]
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CTaskDialog Class
@@ -126,7 +121,7 @@ class CTaskDialog : public CObject
 |`m_strVerification`|The string that the `CTaskDialog` displays to the right of the verification check box.|  
   
 ## Remarks  
- The `CTaskDialog` class replaces the standard Windows message box and has additional functionality such as new controls to gather information from the user. This class is in the MFC library in [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)]. The `CTaskDialog` is available starting with [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Earlier versions of Windows cannot display the `CTaskDialog` object. Use `CTaskDialog::IsSupported` to determine at runtime whether the current user can display the task dialog box. The standard Windows message box is still supported in [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)].  
+ The `CTaskDialog` class replaces the standard Windows message box and has additional functionality such as new controls to gather information from the user. This class is in the MFC library in [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)]. The `CTaskDialog` is available starting with Windows Vista. Earlier versions of Windows cannot display the `CTaskDialog` object. Use `CTaskDialog::IsSupported` to determine at runtime whether the current user can display the task dialog box. The standard Windows message box is still supported in [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)].  
   
  The `CTaskDialog` is available only when you build your application by using the Unicode library.  
   
@@ -138,7 +133,7 @@ class CTaskDialog : public CObject
 CTaskDialog Sample  
   
 ## Requirements  
- **Minimum required operating system:** [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]  
+ **Minimum required operating system:** Windows Vista  
   
  **Header:** afxtaskdialog.h  
   
@@ -1081,7 +1076,7 @@ void SetProgressBarMarquee(
 ### Remarks  
  The marquee bar appears underneath the main text of the `CTaskDialog Class`.  
   
- Use `nMarqueeSpeed` to set the speed of the marquee bar; larger values indicate a slower speed. A value of 0 for `nMarqueeSpeed` makes the marquee bar move at the default speed for [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
+ Use `nMarqueeSpeed` to set the speed of the marquee bar; larger values indicate a slower speed. A value of 0 for `nMarqueeSpeed` makes the marquee bar move at the default speed for Windows.  
   
  This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if `nMarqueeSpeed` is less than 0.  
   

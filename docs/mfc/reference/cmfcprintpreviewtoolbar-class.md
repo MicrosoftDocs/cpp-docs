@@ -2,18 +2,13 @@
 title: "CMFCPrintPreviewToolBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPrintPreviewToolBar class [MFC]", "CMFCPrintPreviewToolBar class [MFC], destructor"]
 ms.assetid: 7b9f641b-d402-4339-8815-e5247237e7e5
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPrintPreviewToolBar Class

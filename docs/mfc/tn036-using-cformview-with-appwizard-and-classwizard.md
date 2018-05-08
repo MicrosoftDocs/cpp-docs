@@ -2,19 +2,14 @@
 title: "TN036: Using CFormView with AppWizard and ClassWizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CFormView"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN036"]
 ms.assetid: dd54053f-ae80-4d23-9180-c7d07ddf2290
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN036: Using CFormView with AppWizard and ClassWizard

@@ -2,19 +2,14 @@
 title: "set::to_array (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::set::to_array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["to_array member [STL/CLR]"]
 ms.assetid: 62ee03ce-5bf0-4235-9835-8b77929702c9
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::to_array (STL/CLR)

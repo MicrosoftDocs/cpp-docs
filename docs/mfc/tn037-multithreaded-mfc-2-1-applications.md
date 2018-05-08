@@ -2,19 +2,14 @@
 title: "TN037: Multithreaded MFC 2.1 Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.multithread"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN037"]
 ms.assetid: 05ee204c-700a-4c40-957c-dc2d0db1249d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN037: Multithreaded MFC 2.1 Applications

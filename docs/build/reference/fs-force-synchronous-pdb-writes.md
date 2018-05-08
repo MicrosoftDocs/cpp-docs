@@ -2,19 +2,14 @@
 title: "-FS (Force Synchronous PDB Writes) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/FS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-FS compiler option [C++]", "/FS compiler option [C++]"]
 ms.assetid: b2caaffe-f6e1-4963-b068-648f06b105e0
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /FS (Force Synchronous PDB Writes)

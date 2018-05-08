@@ -2,17 +2,13 @@
 title: "/INTEGRITYCHECK | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/28/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/INTEGRITYCHECK"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-INTEGRITYCHECK editbin options", "/INTEGRITYCHECK editbin options", "INTEGRITYCHECK editbin options"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /INTEGRITYCHECK

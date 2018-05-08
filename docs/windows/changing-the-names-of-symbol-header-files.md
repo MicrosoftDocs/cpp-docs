@@ -2,19 +2,14 @@
 title: "Changing the Names of Symbol Header Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.changing.header"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resource files, multiple", "Resource Includes dialog box", "symbol header files, changing names", "symbol header files", "header files, changing names", "names [C++], symbol header files", "symbols, symbol header files", "Resource.h"]
 ms.assetid: b948284a-7899-402e-ab12-9f2c8480ca9d
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Names of Symbol Header Files

@@ -2,19 +2,14 @@
 title: "vector::insert (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::vector::insert"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: f240cabf-f9d1-40c1-9cfb-975a90955546
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::insert (STL/CLR)

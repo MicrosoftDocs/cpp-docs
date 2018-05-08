@@ -2,19 +2,14 @@
 title: "-GX (Enable Exception Handling) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/gx"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, enabling", "/GX compiler option [C++]", "-GX compiler option [C++]", "cl.exe compiler, exception handling", "enable exception handling compiler option [C++]", "GX compiler option [C++]"]
 ms.assetid: 933b43ba-de77-4ff8-a48b-7074de90bc1c
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /GX (Enable Exception Handling)

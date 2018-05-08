@@ -2,19 +2,14 @@
 title: "_bstr_t Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BSTR object", "_bstr_t class", "BSTR object [C++], COM encapsulation"]
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t Class

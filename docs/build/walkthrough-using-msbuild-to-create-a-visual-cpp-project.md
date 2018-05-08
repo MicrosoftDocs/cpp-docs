@@ -2,19 +2,14 @@
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["msbuild (c++), walkthrough: create a project"]
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
-caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using MSBuild to Create a Visual C++ Project

@@ -2,19 +2,14 @@
 title: "Compiler Error C2862 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2862"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2862"]
 ms.assetid: c04d8499-b799-48a1-9fb4-7902a0b0ac8e
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2862

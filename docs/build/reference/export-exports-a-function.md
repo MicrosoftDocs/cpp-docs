@@ -2,19 +2,14 @@
 title: "-EXPORT (Exports a Function) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.ExportFunctions", "/export"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/EXPORT linker option", "EXPORT linker option", "-EXPORT linker option"]
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /EXPORT (Exports a Function)

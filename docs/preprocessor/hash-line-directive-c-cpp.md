@@ -2,19 +2,14 @@
 title: "#line Directive (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "10/18/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["#line"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, directives", "line directive (#line)", "#line directive"]
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # #line Directive (C/C++)

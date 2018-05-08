@@ -2,19 +2,14 @@
 title: "Editing a COM Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.com.editing.interfaces"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["methods [C++], adding to COM interfaces", "COM interfaces, editing", "properties [C++], adding to COM interfaces"]
 ms.assetid: 6c2909e0-af2d-4a37-bb39-ed372e6129cf
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Editing a COM Interface

@@ -2,18 +2,13 @@
 title: "How to: Create a Resource | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["toolbars [C++], resources", "resource toolbars", "resources [Visual Studio], creating"]
 ms.assetid: aad44914-9145-45a3-a7d8-9de89b366716
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Create a Resource

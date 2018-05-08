@@ -2,19 +2,14 @@
 title: "multimap::erase (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multimap::erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 94623cfc-4464-44a6-afd4-90a36828ac2b
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::erase (STL/CLR)

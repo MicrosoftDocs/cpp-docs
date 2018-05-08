@@ -2,19 +2,14 @@
 title: "invalid_scheduler_policy_thread_specification Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::invalid_scheduler_policy_thread_specification"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_scheduler_policy_thread_specification class"]
 ms.assetid: 2d0fafb2-18f8-4284-8040-3db640d33303
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # invalid_scheduler_policy_thread_specification Class

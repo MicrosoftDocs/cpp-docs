@@ -2,19 +2,14 @@
 title: "_bittest, _bittest64 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["_bittest64", "_bittest_cpp", "_bittest64_cpp", "_bittest"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_bittest intrinsic", "_bittest64 intrinsic", "bt instruction"]
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _bittest, _bittest64

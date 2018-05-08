@@ -2,18 +2,13 @@
 title: "Retrieving Data from the Dialog Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], retrieving user data", "dialog box data [MFC]", "data [MFC], retrieving", "GetDlgItemText method [MFC]", "SetDlgItemText method [MFC]", "SetWindowText method [MFC]", "dialog box data [MFC], retrieving", "retrieving data [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "dialog box controls [MFC], initializing values", "DDX (dialog data exchange) [MFC]", "MFC dialog boxes [MFC], retrieving user input", "data retrieval [MFC], dialog boxes", "data [MFC], dialog boxes", "DDX (dialog data exchange) [MFC], about DDX", "DDX (dialog data exchange) [MFC], retrieving data from Dialog object", "GetWindowText method [MFC]"]
 ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Retrieving Data from the Dialog Object

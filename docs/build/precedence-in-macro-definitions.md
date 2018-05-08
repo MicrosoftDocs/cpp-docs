@@ -2,18 +2,13 @@
 title: "Precedence in Macro Definitions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, precedence in macro definitions", "macros, precedence"]
 ms.assetid: 0c13182d-83cb-4cbd-af2d-f4c916b62aeb
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Precedence in Macro Definitions

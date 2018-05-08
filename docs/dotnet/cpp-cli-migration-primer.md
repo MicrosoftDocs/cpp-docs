@@ -2,18 +2,13 @@
 title: "C++/CLI Migration Primer | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++/CLI Version 2", "upgrading Visual C++ applications, Managed Extensions for C++ to Visual C++ 2005 syntax", "migration [C++], C++/CLI Version 2", "Managed Extensions for C++, upgrading syntax", "C++/CLI Version 2, managed extensions"]
 ms.assetid: 8ec926b5-73f6-4f0c-bcdf-5203d293849a
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # C++/CLI Migration Primer

@@ -2,19 +2,14 @@
 title: "&lt;paramref&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["paramref", "<paramref>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["paramref C++ XML tag", "<paramref> C++ XML tag"]
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;paramref&gt; (Visual C++)

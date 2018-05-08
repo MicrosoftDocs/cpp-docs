@@ -2,19 +2,14 @@
 title: "Compiler Error C2280 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/25/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C2280"]
 helpviewer_keywords: ["C2280"]
 dev_langs: ["C++"]
 ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2280  

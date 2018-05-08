@@ -2,19 +2,14 @@
 title: "Linker Property Pages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/21/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCLinkerTool.RegisterOutput", "VC.Project.VCLinkerTool.OVERWRITEImportLibrary", "VC.Project.VCLinkerTool.UseLibraryDependencyInputs", "VC.Project.VCLinkerTool.LinkLibraryDependencies"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["per-user redirection", "Linker property pages"]
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Property Pages
@@ -37,7 +32,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### Per-user Redirection
 
-Registration in Visual Studio has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)], to access HKCR you must run Visual Studio in elevated mode. Developers do not always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in this mode.
+Registration in Visual Studio has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With Windows Vista and later operating systems, to access HKCR you must run Visual Studio in elevated mode. Developers do not always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in this mode.
 
 Per-user redirection forces any writes to HKCR to be redirected to HKEY\_CURRENT\_USER (HKCU). If per-user redirection is turned off, it can cause [Project Build Error PRJ0050](../error-messages/tool-errors/project-build-error-prj0050.md) when the program tries to write to HKCR.
 

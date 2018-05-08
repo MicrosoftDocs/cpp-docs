@@ -2,19 +2,14 @@
 title: "Implement Connection Point Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.impl.cp.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Implement Connection Point Wizard [C++]"]
 ms.assetid: c117f6c6-30f0-4adb-82b4-b1f34e0f0fa8
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Implement Connection Point Wizard

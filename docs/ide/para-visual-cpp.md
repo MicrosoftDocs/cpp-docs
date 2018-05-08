@@ -2,19 +2,14 @@
 title: "&lt;para&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["<para>", "para"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<para> C++ XML tag", "para C++ XML tag"]
 ms.assetid: 35f2a1b3-bc14-4f13-bcb0-c39ccbf74d59
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;para&gt; (Visual C++)

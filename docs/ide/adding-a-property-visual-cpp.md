@@ -2,18 +2,13 @@
 title: "Adding a Property (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces"]
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Property (Visual C++)

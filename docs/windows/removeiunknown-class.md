@@ -2,18 +2,13 @@
 title: "RemoveIUnknown Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::RemoveIUnknown"]
 dev_langs: ["C++"]
 ms.assetid: 998e711a-7d1a-44c6-a016-e6167aa40863
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RemoveIUnknown Class

@@ -3,13 +3,11 @@ title: "Compiler Options Listed Alphabetically | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/22/2018"
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["compiler options, C++"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Options Listed Alphabetically

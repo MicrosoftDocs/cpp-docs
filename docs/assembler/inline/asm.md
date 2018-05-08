@@ -2,19 +2,14 @@
 title: "__asm | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-masm"]
+ms.topic: "conceptual"
 f1_keywords: ["__asm", "__asm_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __asm

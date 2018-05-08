@@ -2,19 +2,14 @@
 title: "Namespaces (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/30/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["namespace_CPP", "using_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["namespaces [C++], C++", "namespaces [C++]", "namespaces [C++], global", "global namespace", "Visual C++, namespaces"]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Namespaces (C++)

@@ -2,18 +2,13 @@
 title: "Clipboard: Using the Windows Clipboard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Clipboard commands", "Cut/Copy and Paste command handler functions [MFC]", "handler functions, Cut/Copy and Paste commands", "Clipboard [MFC], commands", "commands [MFC], implementing Edit", "Clipboard commands [MFC], implementing", "Windows Clipboard [MFC]", "Clipboard [MFC], Windows Clipboard API"]
 ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Clipboard: Using the Windows Clipboard

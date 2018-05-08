@@ -2,18 +2,13 @@
 title: "BSCMAKE Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["BSCMAKE, reference", "Microsoft Browse Information Maintenance Utility", "browse windows", "browse information files (.bsc), building", ".bsc files, building", "bsc files, building", "BSCMAKE"]
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Reference

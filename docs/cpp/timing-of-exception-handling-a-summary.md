@@ -2,18 +2,13 @@
 title: "Timing of Exception Handling: A Summary | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["sequence [C++]", "sequence, of handlers", "exception handling [C++], timing", "setjmpex.h", "termination handlers [C++], timing", "setjmp.h", "handlers [C++], order of exception", "structured exception handling [C++], timing"]
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Timing of Exception Handling: A Summary

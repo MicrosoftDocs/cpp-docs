@@ -2,19 +2,14 @@
 title: "CMFCRibbonSlider Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonSlider", "AFXRIBBONSLIDER/CMFCRibbonSlider", "AFXRIBBONSLIDER/CMFCRibbonSlider::CMFCRibbonSlider", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetPos", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetRangeMax", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetRangeMin", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetRegularSize", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetZoomIncrement", "AFXRIBBONSLIDER/CMFCRibbonSlider::HasZoomButtons", "AFXRIBBONSLIDER/CMFCRibbonSlider::OnDraw", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetPos", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetRange", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomButtons", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomIncrement"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonSlider [MFC], CMFCRibbonSlider", "CMFCRibbonSlider [MFC], GetPos", "CMFCRibbonSlider [MFC], GetRangeMax", "CMFCRibbonSlider [MFC], GetRangeMin", "CMFCRibbonSlider [MFC], GetRegularSize", "CMFCRibbonSlider [MFC], GetZoomIncrement", "CMFCRibbonSlider [MFC], HasZoomButtons", "CMFCRibbonSlider [MFC], OnDraw", "CMFCRibbonSlider [MFC], SetPos", "CMFCRibbonSlider [MFC], SetRange", "CMFCRibbonSlider [MFC], SetZoomButtons", "CMFCRibbonSlider [MFC], SetZoomIncrement"]
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
-caps.latest.revision: 43
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonSlider Class

@@ -2,19 +2,14 @@
 title: "Compiler Error C2912 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2912"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2912"]
 ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2912

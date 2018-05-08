@@ -2,18 +2,13 @@
 title: "How to: Improve Performance with Generics (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["performance, C++", "Visual C++, performance", "Visual C++, generics", "generics [C++], performance"]
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Improve Performance with Generics (Visual C++)
@@ -53,7 +48,7 @@ int main()
     // Pop the items off the Stack.  
     // The item is returned as an Object, so a cast is  
     // necessary to convert it to its proper type.  
-    while (s->Count > 0)  
+    while (s->Count> 0)  
     {  
         Object ^o = s->Pop();  
         if (o->GetType() == Type::GetType("System.String"))  

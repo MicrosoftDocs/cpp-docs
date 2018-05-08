@@ -1,20 +1,15 @@
 ---
-title: "-Zc (Conformance) | Microsoft Docs"
+title: "/Zc (Conformance) | Microsoft Docs"
 ms.custom: ""
-ms.date: "9/29/2017"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "03/06/2018"
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/zc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Zc (Conformance)
@@ -23,11 +18,11 @@ You can use the **/Zc** compiler options to specify standard or Microsoft-specif
 
 ## Syntax
 
-> /Zc:_option_{,_option_}
+> **/Zc:**_option_{,_option_}
 
 ## Remarks
 
-When Visual Studio has implemented an extension to C or C++ that is not compatible with the standard, you can use a `/Zc` conformance option to specify standard-conforming or Microsoft-specific behavior. For some options, the Microsoft-specific behavior is the default, to prevent large-scale breaking changes to existing code. In other cases, the default is the standard behavior, where improvements in security, performance, or compatibility outweigh the costs of breaking changes. The default setting of each conformance option may change in newer versions of Visual Studio. For more information about each conformance option, see the topic for the specific option.
+When Visual Studio has implemented an extension to C or C++ that is not compatible with the standard, you can use a `/Zc` conformance option to specify standard-conforming or Microsoft-specific behavior. For some options, the Microsoft-specific behavior is the default, to prevent large-scale breaking changes to existing code. In other cases, the default is the standard behavior, where improvements in security, performance, or compatibility outweigh the costs of breaking changes. The default setting of each conformance option may change in newer versions of Visual Studio. For more information about each conformance option, see the topic for the specific option. The [/permissive-](permissive-standards-conformance.md) compiler option implicitly sets the conformance options that are not set by default to their conformant setting.
 
 These are the `/Zc` compiler options:
 
@@ -48,6 +43,7 @@ These are the `/Zc` compiler options:
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|Enable thread-safe local static initialization (on by default).|
 |[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|Assume `operator new` throws on failure (off by default).|
 |[trigraphs\[-\]](zc-trigraphs-trigraphs-substitution.md)|Enable trigraphs (obsolete, off by default).|
+|[twoPhase-](zc-twophase.md)|Use non-conforming template parsing behavior (conforming by default).|
 |[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` is a native type, not a typedef (on by default).|
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).

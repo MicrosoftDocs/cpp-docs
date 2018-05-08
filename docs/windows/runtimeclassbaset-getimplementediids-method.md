@@ -2,19 +2,14 @@
 title: "RuntimeClassBaseT::GetImplementedIIDS Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetImplementedIIDS method"]
 ms.assetid: adae54da-521d-4add-87f5-242fbd85f33b
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassBaseT::GetImplementedIIDS Method
@@ -23,9 +18,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 __forceinline static HRESULT GetImplementedIIDS(  
    _In_ T* implements,  
    _Out_ ULONG *iidCount,  

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4513 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4513"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4513"]
 ms.assetid: 6877334a-f30a-4184-9483-dac3348737a4
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4513

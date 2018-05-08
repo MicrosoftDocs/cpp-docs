@@ -2,19 +2,14 @@
 title: "CD2DGeometrySink Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DGeometrySink", "AFXRENDERTARGET/CD2DGeometrySink", "AFXRENDERTARGET/CD2DGeometrySink::CD2DGeometrySink", "AFXRENDERTARGET/CD2DGeometrySink::AddArc", "AFXRENDERTARGET/CD2DGeometrySink::AddBezier", "AFXRENDERTARGET/CD2DGeometrySink::AddBeziers", "AFXRENDERTARGET/CD2DGeometrySink::AddLine", "AFXRENDERTARGET/CD2DGeometrySink::AddLines", "AFXRENDERTARGET/CD2DGeometrySink::AddQuadraticBezier", "AFXRENDERTARGET/CD2DGeometrySink::AddQuadraticBeziers", "AFXRENDERTARGET/CD2DGeometrySink::BeginFigure", "AFXRENDERTARGET/CD2DGeometrySink::Close", "AFXRENDERTARGET/CD2DGeometrySink::EndFigure", "AFXRENDERTARGET/CD2DGeometrySink::Get", "AFXRENDERTARGET/CD2DGeometrySink::IsValid", "AFXRENDERTARGET/CD2DGeometrySink::SetFillMode", "AFXRENDERTARGET/CD2DGeometrySink::SetSegmentFlags", "AFXRENDERTARGET/CD2DGeometrySink::m_pSink"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DGeometrySink [MFC], CD2DGeometrySink", "CD2DGeometrySink [MFC], AddArc", "CD2DGeometrySink [MFC], AddBezier", "CD2DGeometrySink [MFC], AddBeziers", "CD2DGeometrySink [MFC], AddLine", "CD2DGeometrySink [MFC], AddLines", "CD2DGeometrySink [MFC], AddQuadraticBezier", "CD2DGeometrySink [MFC], AddQuadraticBeziers", "CD2DGeometrySink [MFC], BeginFigure", "CD2DGeometrySink [MFC], Close", "CD2DGeometrySink [MFC], EndFigure", "CD2DGeometrySink [MFC], Get", "CD2DGeometrySink [MFC], IsValid", "CD2DGeometrySink [MFC], SetFillMode", "CD2DGeometrySink [MFC], SetSegmentFlags", "CD2DGeometrySink [MFC], m_pSink"]
 ms.assetid: e5e07f41-0343-4ab1-9d6b-8c62ed33c04a
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DGeometrySink Class

@@ -2,19 +2,14 @@
 title: "Compiler Error C3234 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3234"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3234"]
 ms.assetid: ebefc15a-e40d-424b-a3dd-d7e185d0ed7b
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3234

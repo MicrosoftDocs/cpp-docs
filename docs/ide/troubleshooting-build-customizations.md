@@ -2,18 +2,13 @@
 title: "Troubleshooting Build Customizations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["build events [C++], troubleshooting", "builds [C++], build events", "troubleshooting [C++], builds", "build steps [C++], troubleshooting", "events [C++], build", "builds [C++], troubleshooting", "custom build steps [C++], troubleshooting"]
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Troubleshooting Build Customizations

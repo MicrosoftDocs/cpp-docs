@@ -2,19 +2,14 @@
 title: "Unicode and MBCS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["_mbcs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], Unicode", "MFC [C++], character sets", "character sets [C++], multibyte", "run-time libraries [C++], language portability", "character sets [C++], Unicode", "Unicode [C++], MFC and C run-time functions", "multibyte characters [C++]", "runtime [C++], language portability"]
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
-caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Unicode and MBCS

@@ -2,19 +2,14 @@
 title: "Invoking Scripts (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 f1_keywords: ["StringRegister"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["StringRegister method", "scripts, invoking registry in ATL"]
 ms.assetid: eabd41ee-586b-4266-9e92-5aaad04b73a4
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Invoking Scripts

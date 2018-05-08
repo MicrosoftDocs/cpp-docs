@@ -2,19 +2,14 @@
 title: "TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.odbc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DAO [MFC], migration", "TN055", "migration [MFC], ODBC database applications", "ODBC classes [MFC], DAO classes", "migrating ODBC database applications [MFC]", "porting database applications to DAO", "ODBC [MFC], DAO", "porting ODBC database applications to DAO", "migrating database applications [MFC]"]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes

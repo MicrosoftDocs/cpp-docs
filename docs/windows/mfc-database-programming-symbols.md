@@ -2,18 +2,13 @@
 title: "MFC Database Programming Symbols | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC database programming symbols", "symbols [C++], MFC", "databases [C++], MFC programming model"]
 ms.assetid: 3f676a2c-cf07-415e-a336-680abdc42a5e
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Database Programming Symbols

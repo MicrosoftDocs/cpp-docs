@@ -2,18 +2,13 @@
 title: "Compiling and Linking Multithread Programs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["compiling multithreaded programs", "multithreading [C++], linking programs", "threading [C++], linking programs", "multithreading [C++], compiled programs", "threading [C++], compiled programs", "compiling source code [C++], multithread programs", "linking [C++], multithread programs"]
 ms.assetid: 27589afc-daf2-4f26-b868-a99de5c9dfec
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiling and Linking Multithread Programs

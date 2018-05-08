@@ -2,19 +2,14 @@
 title: "ComPtrRef::ComPtrRef Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::ComPtrRef"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ComPtrRef, constructor"]
 ms.assetid: ce2d2533-fef6-4b2d-b088-6f3db01df5a5
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRef::ComPtrRef Constructor

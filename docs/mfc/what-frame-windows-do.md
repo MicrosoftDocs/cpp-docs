@@ -2,18 +2,13 @@
 title: "What Frame Windows Do | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["frame windows [MFC], about frame widows", "frame windows [MFC], tasks", "MFC, frame windows"]
 ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # What Frame Windows Do

@@ -2,16 +2,12 @@
 title: "Linker Properties (Linux C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
-#f1_keywords: [VC.Project.VCLinkerTool.OutputFile, VC.Project.VCLinkerTool.ShowProgress, VC.Project.VCLinkerTool.Version, VC.Project.VCLinkerTool.VerboseOutput, VC.Project.VCLinkerTool.UnresolvedReferences, VC.Project.VCLinkerTool.OptimizeForMemory, VC.Project.VCLinkerTool.SharedLibrarySearchPath, VC.Project.VCLinkerTool.AdditionalLibraryDirectories, VC.Project.VCConfiguration.BuildLogFile, VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames, VC.Project.VCLinkerTool.ForceSymbolReferences, VC.Project.VCLinkerTool.LibraryDependencies, VC.Project.VCLinkerTool.ForceFileOutput, VC.Project.VCLinkerTool.GenerateMapFile, VC.Project.VCLinkerTool.Relocation, VC.Project.VCLinkerTool.FunctionBinding, VC.Project.VCLinkerTool.NoExecStackRequired, VC.Project.WholeArchive, VC.Project.AdditionalOptionsPage, VC.Project.VCLinkerTool.AdditionalDependencies]
 ms.workload: ["cplusplus", "linux"]
 ---
 # Linker Properties (Linux C++)

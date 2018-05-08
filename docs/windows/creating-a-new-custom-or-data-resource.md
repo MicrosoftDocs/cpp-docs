@@ -2,19 +2,14 @@
 title: "Creating a New Custom or Data Resource | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["custom resources [C++]", "data resources [C++]", "resources [Visual Studio], creating"]
 ms.assetid: 9918bf96-38fa-43a1-a384-572f95d84950
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a New Custom or Data Resource

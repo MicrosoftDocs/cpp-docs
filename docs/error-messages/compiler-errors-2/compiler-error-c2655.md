@@ -2,19 +2,14 @@
 title: "Compiler Error C2655 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2655"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2655"]
 ms.assetid: beaefa6e-51b3-4df9-9150-960f3fbf40e0
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2655

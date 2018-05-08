@@ -2,19 +2,14 @@
 title: "BSCMAKE Error BK1507 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["BK1507"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BK1507"]
 ms.assetid: 3c5220d7-ccb3-45b4-9da0-cb06147311f6
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1507
