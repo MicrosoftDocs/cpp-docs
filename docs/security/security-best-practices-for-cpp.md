@@ -74,7 +74,7 @@ This article contains information about security tools and practices. Using them
 -   Test for potential application compatibility errors that are caused by common programming mistakes.  
   
 -   Examine an application for memory-related issues.  
-  s
+
 -   Identify potential security issues in an application.  
   
  The AppVerifier is part of the Application Compatibility Toolkit, which is available from the [Application Compatibility](http://go.microsoft.com/fwlink/p/?linkid=91277) on the TechNet web site.  
