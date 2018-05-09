@@ -53,6 +53,7 @@
 #### [/favor (Optimize for Architecture Specifics)](favor-optimize-for-architecture-specifics.md)
 #### [/FC (Full Path of Source Code File in Diagnostics)](fc-full-path-of-source-code-file-in-diagnostics.md)
 #### [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md)
+##### [Microsoft Visual C++ floating point optimization](floating-point-optimization.md)
 #### [/FS (Force Synchronous PDB Writes)](fs-force-synchronous-pdb-writes.md)
 #### [/GA (Optimize for Windows Application)](ga-optimize-for-windows-application.md)
 #### [/Gd, /Gr, /Gv, /Gz (Calling Convention)](gd-gr-gv-gz-calling-convention.md)
