@@ -361,7 +361,7 @@ basic_string<CharType, Traits, Allocator>& assign(
  A pointer to the characters of the C-string to be assigned to the target string.
 
 `count`
- The number of characters to be appended, at most, from the source string.
+ The number of characters to be assigned, from the source string.
 
 `str`
  The source string whose characters are to be assigned to the target string.
