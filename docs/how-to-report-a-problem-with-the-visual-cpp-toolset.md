@@ -1,6 +1,6 @@
 ---
-title: "How to Report a Problem with the Visual C++ Toolset | Microsoft Docs"
-ms.date: "1/11/2018"
+title: "How to report a problem with the Visual C++ toolset | Microsoft Docs"
+ms.date: "5/11/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -8,21 +8,21 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# How to Report a Problem with the Visual C++ Toolset
+# How to report a problem with the Visual C++ toolset or documentation
 
-If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them.
+If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them. If the issue is in our documentation, we want to know about that, too.
+
+## How to report a C++ documentation issue
+
+We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already, but once you do, you can see all of our documentation issues, their status, and get notifications when changes are made for the issue you reported. For more information, see [A New Feedback System Is Coming to docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
+
+When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Please don't edit this information. Just append the details about what's wrong and, if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
+
+## How to report a C++ product issue
 
 The best way to let us know about a problem is to send us a report that includes a description of the problem you've encountered, details about how you're building your program, and a *repro*, a complete test case we can use to reproduce the problem on our own machines. This information lets us quickly verify that the problem exists in our code and is not local to your environment, to determine whether it affects other versions of the compiler, and to diagnose its cause.
 
-In this document, you'll read about
-
-- [How to prepare your report](#how-to-prepare-your-report), and what makes a good report.
-
-- [How to generate a repro](#how-to-generate-a-repro), and different kinds of repros.
-
-- [Ways to send your report](#ways-to-send-your-report), and what makes them different.
-
-Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
+In thie sections below, you'll read about what makes a good report, how to generate a repro for the kind of issue you've found, and how to send your report to the product team. Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
 
 ## How to prepare your report
 
@@ -283,7 +283,7 @@ Create your repro as a minimal IDE project, then package it by compressing the e
 
 ## Ways to send your report
 
-There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. It's also possible to send an email with your report, but the first two methods are preferred. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
+There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. It's also possible to send an email with your report, but the first two methods are preferred. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
 
 > [!NOTE]
 > Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
@@ -326,4 +326,4 @@ Source code and repro steps:
 ```
 
 > [!TIP]
-> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the Report a Problem tool can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.
+> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the **Report a Problem tool** can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. These kinds of errors can also be reported on the [Developer Community](https://developercommunity.visualstudio.com/) site. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.
