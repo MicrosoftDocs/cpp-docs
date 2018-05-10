@@ -38,7 +38,10 @@
             "audience": "developer",
             "ms.prod": "visual-cpp",
             "ms.tgt_pltfrm": "",
-            "searchScope": ["C++"]
+            "searchScope": ["C++"],
+            "feedback_system": "GitHub",
+            "feedback_github_repo": "MicrosoftDocs/cpp-docs",
+            "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
     "fileMetadata": {},
     "template": [],
