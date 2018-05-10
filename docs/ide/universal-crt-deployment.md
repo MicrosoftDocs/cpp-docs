@@ -16,7 +16,7 @@ From Visual Studio .NET through Visual Studio 2013, each major release of the C+
 
 The Universal CRT is a Microsoft Windows operating system component. It is included as part of the operating system in Windows 10 and is available for older operating systems, Windows Vista through Windows 8.1, by using Windows Update. In addition, local deployment of the Universal CRT is supported, with some restrictions.
 
-## Central Deployment
+## Central deployment
 
 The preferred method to centrally install the Universal CRT is to use Microsoft Windows Update. The Universal CRT is a Recommended update for all supported Microsoft Windows operating systems, so by default, most machines install it as part of the regular update process. The initial release of the Universal CRT was [KB2999226](https://support.microsoft.com/en-us/kb/2999226); a subsequent update with various bug fixes was made in [KB3118401](https://support.microsoft.com/en-us/kb/3118401), and there have been additional updates with further bug fixes and new features. For more recent updates, search [support.microsoft.com](https://support.microsoft.com) for Universal C Runtime or Universal CRT.
 
