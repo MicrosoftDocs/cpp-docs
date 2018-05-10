@@ -44,6 +44,10 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 - [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] allows using [/sdl](build/reference/sdl-enable-additional-security-checks.md) with [/await](build/reference/await-enable-coroutine-support.md). We removed the [/RTC](build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
 
+   **Visual Studio 2017 version 15.7**:
+The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
+
+
 ### Codegen, security, diagnostics and versioning
 
 This release brings several improvements in optimization, code generation, toolset versioning, and diagnostics. Some notable improvements include:
@@ -66,6 +70,14 @@ Visual C++ runtime performance continues to improve due to better generated code
 Visual C++ supports Intel's AVX-512, including the Vector Length instructions that bring new functions in AVX-512 to 128- and 256-bit wide registers.
 
 The [/Zc:noexceptTypes-](build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](cpp-conformance-improvements-2017.md#noexcept_removal).
+
+**Visual Studio 2017 version 15.7**:
+
+New compiler switch [/Qspectre ](build/reference/qspectre.md) to help mitigate against speculative execution side-channel attacks. See [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) for more information.
+
+New diagnostic warning for Spectre migitation. See [Spectre diagnostic in Visual Studio 2017 Version 15.7 Preview 4](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) for more information.
+
+A new value for /Zc, **/Zc:__cplusplus**, enables correct reporting of the C++ standard support. For example, when the switch is set and the compiler is in /std:c++17 mode the value expands to **201703L**. See [MSVC now correctly reports __cplusplus](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) for more information.
 
 ## C++ Standard Library improvements
 
@@ -213,6 +225,30 @@ Several Standard Library features have been added, deprecated or removed in acco
 - `basic_string::npos` is now available as a compile time constant.
 - `std::allocator` in C++17 mode now properly handles allocation of over-aligned types, that is, types whose alignment is greater than `max_align_t`, unless disabled by **/Zc:alignedNew-**.  For example, vectors of objects with 16 or 32-byte alignment will now be properly aligned for SSE and AVX instructions.
 
+### Visual Studio 2017 version 15.6
+
+- \<memory_resource>
+- Library Fundamentals V1
+- Deleting polymorphic_allocator assignment
+- Improving class template argument deduction
+
+See [Visual C++ language conformance](visual-cpp-language-conformance.md) for more information.
+
+### Visual Studio 2017 version 15.7
+
+- Support for parallel algorithms is no longer experiemental
+- a new implementation of \<filesystem>
+- elementary string conversions (partial)
+- std::launder()
+- std::byte
+- hypot(x,y,z)
+- avoiding unnecessary decay
+- mathematical special functions
+- constexpr char_traits
+- deduction guides for STL
+
+See [Visual C++ language conformance](visual-cpp-language-conformance.md) for more information.
+
 ## Other Libraries
 
 ### Open source library support
@@ -288,6 +324,8 @@ The new SQLite-based database engine is now being used by default. This will spe
 
 Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio "15"](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/).
 
+**Visual Studio 1027 version 15.7**: Support added for ClangFormat. For more information, see [ClangFormat Support in Visual Studio 2017](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/clangformat-support-in-visual-studio-2017-15-7-preview-1/).
+
 ## Non-MSBuild projects with Open Folder
 
 Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects in Visual C++](ide/non-msbuild-projects.md).
@@ -313,9 +351,11 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
   ![Cmake Open Folder](media/cmake_cpp.png "CMake Open Folder")
 
-**Visual Studio 2017 version 15.3**: Support added for the CMake Ninja generator. For more information, see [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md).
+**Visual Studio 2017 version 15.3**: Support added for the CMake Ninja generator. 
 
-**Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches. For more information, see [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md).
+**Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches. 
+
+**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md).
 
 ## Windows desktop development with C++
 
@@ -341,6 +381,12 @@ Improvements have been made in cross-platform code sharing and type visualizatio
 - Support is added for cross compilation targeting ARM microcontrollers. To enable this in the installation, choose the **Linux development with C++** workload and select the option for **Embedded and IoT Development**. This adds the ARM GCC cross compilation tools and Make to your installation. For more information, see [ARM GCC Cross Compilation in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/10/23/arm-gcc-cross-compilation-in-visual-studio/).
 - Support added for CMake. You can now work on your existing CMake code base without having to convert it to a Visual Studio project. For more information, see [Configure a Linux CMake Project](linux/cmake-linux-project.md).
 - Support added for running remote tasks. This capability allows you to run any command on a remote system that is defined in Visual Studio’s Connection Manager. Remote tasks also provide the capability to copy files to the remote system.
+For more information, see [Configure a Linux CMake Project](linux/cmake-linux-project.md).
+
+**Visual Studio 2017 version 15.7**:
+
+- Various improvements to Linux workload scenarios. For more information, see [Linux C++ Workload improvements to the Project System, Linux Console Window, rsync and Attach to Process](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
+- IntelliSense for headers on remote Linux connections. For more information, see [IntelliSense for Remote Linux Headers](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/intellisense-for-remote-linux-headers/) and [Configure a Linux CMake Project](linux/cmake-linux-project.md).
 
 ## Game development with C++
 
@@ -377,20 +423,37 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck properties page")
 
 **Visual Studio 2017 version 15.3**:
-
 Support added for rules related to resource management.
 
 **Visual Studio 2017 version 15.5**:
-
 New C++ Core Guidelines checks cover smart pointer correctness, correct use of global initializers, and flagging uses of constructs like `goto` and bad casts.
 
 Some warning numbers you may find in 15.3 are no longer available in 15.5. These warnings were replaced with more specific checks.
+
+**Visual Studio 2017 version 15.6**:
+Support added for single-file analysis, and improvements in analysis run-time performance. For more information, see [C++ Static Analysis Improvements for Visual Studio 2017 15.6 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
+
+**Visual Studio 2017 version 15.7**:
+Support added for [/analyze:ruleset](build/reference/analyze-code-analysis.md) which enables you to specify which code analysis rules to run.
+
+Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing
 
 **Visual Studio 2017 version 15.5**:
 
 Google Test Adapter and Boost.Test Adapter are now available as components of the **Desktop Development with C++** workload, and are integrated with **Test Explorer**. CTest support is added for Cmake projects (using Open Folder) although full integration with **Test Explorer** is not yet available. For more information, see [Writing unit tests for C/C++](/visualstudio/test/writing-unit-tests-for-c-cpp).
+
+**Visual Studio 2017 version 15.6**:
+
+- Support added for Boost.Test dynamic library support.
+- A Boost.Test item template is now available in the IDE.
+
+For more information, see [Boost.Test Unit Testing: Dynamic Library support and New Item Template](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/). 
+
+**Visual Studio 2017 version 15.7**:
+
+[CodeLens](https://docs.microsoft.com/en-us/visualstudio/ide/find-code-changes-and-other-history-with-codelens) supported added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
 
 ## Visual Studio graphics diagnostics
 
