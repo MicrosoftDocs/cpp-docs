@@ -73,11 +73,9 @@ The [/Zc:noexceptTypes-](build/reference/zc-noexcepttypes.md) option can be used
 
 **Visual Studio 2017 version 15.7**:
 
-New compiler switch [/Qspectre ](build/reference/qspectre.md) to help mitigate against speculative execution side-channel attacks. See [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) for more information.
-
-New diagnostic warning for Spectre migitation. See [Spectre diagnostic in Visual Studio 2017 Version 15.7 Preview 4](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) for more information.
-
-A new value for /Zc, **/Zc:__cplusplus**, enables correct reporting of the C++ standard support. For example, when the switch is set and the compiler is in /std:c++17 mode the value expands to **201703L**. See [MSVC now correctly reports __cplusplus](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) for more information.
+- New compiler switch [/Qspectre ](build/reference/qspectre.md) to help mitigate against speculative execution side-channel attacks. See [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) for more information.
+- New diagnostic warning for Spectre migitation. See [Spectre diagnostic in Visual Studio 2017 Version 15.7 Preview 4](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) for more information.
+- A new value for /Zc, **/Zc:__cplusplus**, enables correct reporting of the C++ standard support. For example, when the switch is set and the compiler is in /std:c++17 mode the value expands to **201703L**. See [MSVC now correctly reports __cplusplus](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) for more information.
 
 ## C++ Standard Library improvements
 
@@ -232,8 +230,6 @@ Several Standard Library features have been added, deprecated or removed in acco
 - Deleting polymorphic_allocator assignment
 - Improving class template argument deduction
 
-See [Visual C++ language conformance](visual-cpp-language-conformance.md) for more information.
-
 ### Visual Studio 2017 version 15.7
 
 - Support for parallel algorithms is no longer experiemental
@@ -298,7 +294,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 ## IntelliSense
 
-The new SQLite-based database engine is now being used by default. This will speed up database operations like **Go To Definition** and **Find All References**, and will significantly improve initial solution parse time. The setting has been moved to **Tools > Options > Text Editor > C/C++ > Advanced** (it was formerly under ...C/C++ | Experimental).
+- The new SQLite-based database engine is now being used by default. This will speed up database operations like **Go To Definition** and **Find All References**, and will significantly improve initial solution parse time. The setting has been moved to **Tools > Options > Text Editor > C/C++ > Advanced** (it was formerly under ...C/C++ | Experimental).
 
 - We've improved IntelliSense performance on projects and files not using precompiled headers - an Automatic Precompiled Header will be created for headers in the current file.
 
@@ -313,16 +309,11 @@ The new SQLite-based database engine is now being used by default. This will spe
   ![Member List Filtering](media/mlfiltering.png "Member List Filtering")
 
 - Added a new experimental Predictive IntelliSense feature that provides contextually-aware filtering of what appears in the Member List. See [C++ IntelliSense Improvements - Predictive IntelliSense & Filtering](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-intellisense-improvements-predictive-intellisense-filtering/)
-
 - **Find All References** (Shift+F12) now helps you get around easily, even in complex codebases. It provides advanced grouping, filtering, sorting, searching within results, and (for some languages) colorization, so you can get a clear understanding of your references. For C++, the new UI includes information about whether we are reading from or writing to a variable.
-
 - The Dot-to-Arrow IntelliSense feature has been moved from experimental to advanced, and is now enabled by default. The editor features **Expand Scopes** and **Expand Precedence** have also been moved from experimental to advanced.
-
 - The experimental refactoring features **Change Signature** and **Extract Function** are now available by default.
-
 - The experimental 'Faster project load' feature for C++ projects. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
-
-Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio "15"](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/).
+- Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio "15"](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/).
 
 **Visual Studio 1027 version 15.7**: Support added for ClangFormat. For more information, see [ClangFormat Support in Visual Studio 2017](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/clangformat-support-in-visual-studio-2017-15-7-preview-1/).
 
