@@ -80,8 +80,13 @@
       {
         "**/*.md": "_breadcrumb/toc.json",
         "vs-2015/**/*.md": "vs-2015/_breadcrumb/toc.json"
-      }
+      },
+      "monikerRange": {
+
+        "mfc/**/*.md": "= vs-2015 || >= vs-2017"
+    }
     },
+
 
     "template": [],
     "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
