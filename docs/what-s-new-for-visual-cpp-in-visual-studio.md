@@ -22,21 +22,7 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 ### New compiler options
 
-- **/std:c++14** and **/std:c++latest**: These compiler options enable you to opt-in to specific versions of the ISO C++ programming language in a project. For more information, see [/std (Specify Language Standard Version)](build/reference/std-specify-language-standard-version.md). Most of the new draft standard features are guarded by the **/std:c++latest** option.
-
-   **Visual Studio 2017 version 15.3**:
-
-   The **/std:c++17** option enables the set of C++17 features implemented by the compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
-
-   **Visual Studio 2017 version 15.5**:
-
-   The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
-
-- [/permissive-](build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is off by default but will be on by default at some point in the future.
-
-   **Visual Studio 2017 version 15.5**:
-
-   The **/permissive-** conformance mode includes partial support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
+- [/permissive-](build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
 
 - [/diagnostics](build/reference/diagnostics-compiler-diagnostic-options.md): Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
 
@@ -44,7 +30,17 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 - [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] allows using [/sdl](build/reference/sdl-enable-additional-security-checks.md) with [/await](build/reference/await-enable-coroutine-support.md). We removed the [/RTC](build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
 
-   **Visual Studio 2017 version 15.7**:
+   **Visual Studio 2017 version 15.3**:  
+- [/std:c++14 and /std:c++latest](build/reference/std-specify-language-standard-version.md): These compiler options enable you to opt-in to specific versions of the ISO C++ programming language in a project. Most of the new draft standard features are guarded by the **/std:c++latest** option.
+
+- [/std:c++17](build/reference/std-specify-language-standard-version.md) enables the set of C++17 features implemented by the compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
+
+   **Visual Studio 2017 version 15.5**:  
+
+   The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
+
+   **Visual Studio 2017 version 15.7**:  
+
 The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
 
 
@@ -232,7 +228,7 @@ Several Standard Library features have been added, deprecated or removed in acco
 
 ### Visual Studio 2017 version 15.7
 
-- Support for parallel algorithms is no longer experiemental
+- support for parallel algorithms is no longer experiemental
 - a new implementation of \<filesystem>
 - elementary string conversions (partial)
 - std::launder()
@@ -421,13 +417,13 @@ New C++ Core Guidelines checks cover smart pointer correctness, correct use of g
 
 Some warning numbers you may find in 15.3 are no longer available in 15.5. These warnings were replaced with more specific checks.
 
-**Visual Studio 2017 version 15.6**:
+**Visual Studio 2017 version 15.6**:  
 Support added for single-file analysis, and improvements in analysis run-time performance. For more information, see [C++ Static Analysis Improvements for Visual Studio 2017 15.6 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
 
-**Visual Studio 2017 version 15.7**:
-Support added for [/analyze:ruleset](build/reference/analyze-code-analysis.md) which enables you to specify which code analysis rules to run.
+**Visual Studio 2017 version 15.7**:  
 
-Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
+- Support added for [/analyze:ruleset](build/reference/analyze-code-analysis.md) which enables you to specify which code analysis rules to run.
+- Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing
 
