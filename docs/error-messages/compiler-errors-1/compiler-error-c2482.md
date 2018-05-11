@@ -14,20 +14,21 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2482
 
->'*identifier*' : dynamic initialization of 'thread' data not allowed
+>'*identifier*' : dynamic initialization of 'thread' data not allowed in managed/WinRT code
 
-This error message is obsolete in Visual Studio 2015 and later versions. In previous versions, variables declared by using the `thread` attribute cannot be initialized with an expression that requires run-time evaluation. A static expression is required to initialize `thread` data.
+In managed or WinRT code, variables declared by using the [__declspec(thread)](../../cpp/thread.md) storage class modifier attribute or the [thread_local](../../cpp/storage-classes-cpp.md#thread_local) storage class specifier cannot be initialized with an expression that requires run-time evaluation. A static expression is required to initialize `__declspec(thread)` or `thread_local` data.
 
 ## Example
 
-The following sample generates C2482 in Visual Studio 2013 and earlier:
+The following sample generates C2482 in managed (**/clr**) and and WinRT (**/ZW**) code:
 
 ```cpp
 // C2482.cpp
-// compile with: /c
+// For managed example, compile with: /EHsc /c /clr C2482.cpp
+// For WinRT example, compile with: /EHsc /c /ZW C2482.cpp
 #define Thread __declspec( thread )
-Thread int tls_i = tls_i;   // C2482
+Thread int tls_i1 = tls_i1;   // C2482
 
 int j = j;   // OK in C++; C error
-Thread int tls_i = sizeof( tls_i );   // Okay in C and C++
+Thread int tls_i2 = sizeof( tls_i2 );   // Okay in C and C++
 ```
