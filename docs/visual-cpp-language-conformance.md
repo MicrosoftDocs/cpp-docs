@@ -115,7 +115,7 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |Feature Area| |
 |---|---|
 |__C++20 Standard Library Features__|__Supported__|
-|&nbsp;&nbsp;*P0777R1 [Avoiding Unnecessary Decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf)|VS 2017 15.7|
+|&nbsp;&nbsp; [P0777R1 Avoiding Unnecessary Decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0463R1 endian](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html)|No|
 |&nbsp;&nbsp;[P0674R1 make_shared() For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|No|
 |&nbsp;&nbsp;[P0858R0 Constexpr Iterator Requirements](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0858r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
@@ -241,11 +241,12 @@ __VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual S
 __VS 2017__ indicates features that are supported in Visual Studio 2017 RTM.  
 __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 version 15.3.  
 __VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.
+__VS 2017 15.7__ indicates features that are supported in Visual Studio 2017 version 15.7.
 
 ### Notes
 
-<a name="note_A"></a>__A__ In /std:c++14 mode, dynamic exception specifications remain unimplemented, and throw() is still treated as a synonym for \__declspec(nothrow). In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: throw() is deprecated and required to behave as a synonym for noexcept. In /std:c++17 mode, MSVC now conforms to the Standard by giving throw() the same behavior as noexcept, i.e. enforcement via termination.
-The compiler option /Zc:noexceptTypes- requests our old behavior of \__declspec(nothrow). It’s likely that throw() will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under **/std:c++17** and **/permissive-**.  
+<a name="note_A"></a>__A__ In /std:c++14 mode, dynamic exception specifications remain unimplemented, and throw() is still treated as a synonym for \_\_declspec(nothrow). In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: throw() is deprecated and required to behave as a synonym for noexcept. In /std:c++17 mode, MSVC now conforms to the Standard by giving throw() the same behavior as noexcept, i.e. enforcement via termination.
+The compiler option /Zc:noexceptTypes- requests our old behavior of \_\_declspec(nothrow). It’s likely that throw() will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under **/std:c++17** and **/permissive-**.  
 <a name="note_B"></a>__B__ Supported in /permissive- mode in Visual Studio 2017 version 15.3. See [Two-phase name lookup support comes to MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/) for more information.  
 <a name="note_C"></a>__C__ The compiler’s support for Expression SFINAE has been sufficient for the Standard Library since Visual Studio 2015 Update 2. Supported in Visual Studio 2017 15.7 regardless of whether /permissive- mode is set. Some bugs remain to be fixed. The “unique tag type” workaround is no longer necessary, and we’ve removed this workaround from our STL implementation.  
 <a name="note_D"></a>__D__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. Variadic macros are supported, but there are many bugs in the preprocessor’s behavior.  We are overhauling the preprocessor, and will experimentally ship those changes under the **/permissive-** mode soon.  
