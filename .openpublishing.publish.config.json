@@ -23,6 +23,8 @@
       "build_source_folder": "docs",
       "build_output_subfolder": "vcppdocs",
       "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": ["vs-2015", ">= vs-2017"],
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -30,6 +32,7 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
+      "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
