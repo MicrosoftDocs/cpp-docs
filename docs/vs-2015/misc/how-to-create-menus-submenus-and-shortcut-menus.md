@@ -50,7 +50,12 @@ To add a menu to the Visual Studio integrated development environment (IDE), a V
   
 3.  Create an [IDSymbol](http://msdn.microsoft.com/library/760cfd20-3c06-422c-9103-98bfa1f387f8) element for each menu, group, or command that you want to add, as shown in the following example.  
   
-     [!code[ButtonGroup#01](../snippets/common/VS_Snippets_VSSDK/buttongroup/common/buttongroup.vsct#01)]  
+     ```xml
+    <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="cmdidMyCommand" value="0x0100" />
+    </GuidSymbol>
+     ```  
   
      The `name` attributes of the `GuidSymbol` and `IDSymbol` elements provide the GUID:ID pair for each new menu, group, or command. The `GUID` represents a command set that is defined for your VSPackage. You can define multiple command sets. Each GUID:ID pair must be unique.  
   
@@ -82,11 +87,27 @@ To add a menu to the Visual Studio integrated development environment (IDE), a V
   
          The following example shows a menu that will appear on the Visual Studio menu bar.  
   
-         [!code[TopLevelMenu#01](../snippets/common/VS_Snippets_VSSDK/toplevelmenu/common/toplevelmenu.vsct#01)]  
+         ```xml
+      <Menu guid="guidTopLevelMenuCmdSet"
+      id="TopLevelMenu" priority="0x700" type="Menu">
+        <Parent guid="guidSHLMainMenu"
+                id="IDG_VS_MM_TOOLSADDINS" />
+        <Strings>
+          <ButtonText>TestMenu</ButtonText>
+          <CommandName>TestMenu</CommandName>
+        </Strings>
+      </Menu>
+     ```  
   
     -   You may omit the `Parent` element if the menu is to be positioned by using command placement. Create a [CommandPlacements](http://msdn.microsoft.com/library/78a5724a-3b9f-4c78-9c0d-8faa3924f81c) section before the `Symbols` section, and add a [CommandPlacement](http://msdn.microsoft.com/library/2cbd7ac8-c55a-43d8-a26d-713b3d790016) element that has the GUID:ID of the menu, a priority, and a parent, as shown in the following example.  
   
-         [!code[ButtonGroup#04](../snippets/common/VS_Snippets_VSSDK/buttongroup/common/buttongroup.vsct#04)]  
+         ```xml
+          <CommandPlacements>
+            <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
+              <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+            </CommandPlacement>
+          </CommandPlacements>
+         ``` 
   
          Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements Element](http://msdn.microsoft.com/library/78a5724a-3b9f-4c78-9c0d-8faa3924f81c).  
   
@@ -94,7 +115,15 @@ To add a menu to the Visual Studio integrated development environment (IDE), a V
   
      Shortcut menus do not have parents or command placements. Instead, they must be activated in code. Typically, a shortcut menu is activated in response to a right-click on a control surface. The following example defines a shortcut menu.  
   
-     [!code[ButtonGroup#06](../snippets/common/VS_Snippets_VSSDK/buttongroup/common/buttongroup.vsct#06)]  
+     ```xml
+      <Menu guid="guidButtonGroupCmdSet" id="ShortcutMenu"
+            type="Context">
+        <Strings>
+          <ButtonText>Shortcut Menu</ButtonText>
+          <CommandName>ShortcutMenu</CommandName>
+        </Strings>
+      </Menu>
+     ```  
   
 6.  In the [Groups](http://msdn.microsoft.com/library/740ca4ec-79fa-4b98-8f9a-2a137f9f7f98) section, create a [Group](http://msdn.microsoft.com/library/69faee18-cbf4-470a-b952-c1919c583df8) element to contain the commands that are to appear on your menu. The `Symbols` section must include an entry that has the same GUID:ID as the new `Group` element.  
   
@@ -106,11 +135,25 @@ To add a menu to the Visual Studio integrated development environment (IDE), a V
   
      The group in the following example appears on the top-level menu that was shown in an earlier example.  
   
-     [!code[TopLevelMenu#02](../snippets/common/VS_Snippets_VSSDK/toplevelmenu/common/toplevelmenu.vsct#02)]  
+     ```xml
+        <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"
+       priority="0x0600">
+          <Parent guid="guidTopLevelMenuCmdSet" id="TopLevelMenu"/>
+        </Group>
+     ```  
   
      Menus can contain both commands and submenus. A submenu (sometimes referred to as a cascading menu) is just a menu, but it is one that is added to another menu's group and is exposed only when that other menu is invoked. By putting the menu that is shown in the following example in a group in the top-level menu, it becomes a submenu.  
   
-     [!code[TopLevelMenu#06](../snippets/common/VS_Snippets_VSSDK/toplevelmenu/common/toplevelmenu.vsct#06)]  
+     ```xml
+      <Menu guid="guidTopLevelMenuCmdSet" id="SubMenu"
+      priority="0x0100" type="Menu">
+        <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>Sub Menu</ButtonText>
+          <CommandName>Sub Menu</CommandName>
+        </Strings>
+      </Menu>
+     ```  
   
 7.  Add commands to the menu by creating command entries in the [Buttons](http://msdn.microsoft.com/library/9f2cf94d-dec5-4776-a836-9a89c75f0c87) section and setting the parent of each to the GUID:ID of your group. Each [Button](http://msdn.microsoft.com/library/96dccf51-2b00-4700-9d28-924b34c21ecd) element must have a GUID:ID that corresponds to an entry in the `Symbols` section.  
   
@@ -118,7 +161,16 @@ To add a menu to the Visual Studio integrated development environment (IDE), a V
   
      The following example defines a command that will appear on the top-level menu.  
   
-     [!code[TopLevelMenu#03](../snippets/common/VS_Snippets_VSSDK/toplevelmenu/common/toplevelmenu.vsct#03)]  
+     ```xml
+      <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
+        <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <CommandName>cmdidTestCommand</CommandName>
+          <ButtonText>Test Command</ButtonText>
+        </Strings>
+      </Button>
+     ```  
   
      For more information about buttons and menu items, see [Button Element](http://msdn.microsoft.com/library/96dccf51-2b00-4700-9d28-924b34c21ecd).  
   

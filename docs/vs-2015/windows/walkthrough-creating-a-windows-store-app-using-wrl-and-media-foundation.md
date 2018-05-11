@@ -87,7 +87,13 @@ Learn how to use the [!INCLUDE[cppwrl](../includes/cppwrl-md.md)] ([!INCLUDE[cpp
   
 9. Add a new module-definition file to the project, name it `GrayscaleTransform.def`, and then add this code:  
   
-     [!code-cpp[wrl-media-capture#5](../snippets/cpp/VS_Snippets_Misc/wrl-media-capture/cpp/grayscaletransform/grayscaletransform.def#5)]  
+   ```output
+    EXPORTS
+        DllCanUnloadNow                     PRIVATE
+        DllGetActivationFactory             PRIVATE
+        DllGetClassObject                   PRIVATE
+    ;
+```  
   
 10. Use the following code to replace the contents of dllmain.cpp.  
   
