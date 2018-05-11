@@ -1,3 +1,0 @@
-BEGIN_MESSAGE_MAP(CMyDoc, CDocument)
-   ON_COMMAND(ID_MYCMD, &CMyDoc::OnMyCommand)
-END_MESSAGE_MAP()

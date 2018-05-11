@@ -1,4 +1,0 @@
-CMyClass::CMyClass()
-{
-   EnableConnections();
-}

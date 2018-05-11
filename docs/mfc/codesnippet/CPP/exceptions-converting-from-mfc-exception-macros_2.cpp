@@ -1,1 +1,0 @@
-   catch(CException* e)

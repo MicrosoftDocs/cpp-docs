@@ -1,1 +1,0 @@
-   SetFieldNull(NULL);
