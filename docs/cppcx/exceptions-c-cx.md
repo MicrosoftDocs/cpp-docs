@@ -3,15 +3,10 @@ title: "Exceptions (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2018"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-caps.latest.revision: 22
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions (C++/CX)

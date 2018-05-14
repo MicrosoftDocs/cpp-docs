@@ -2,19 +2,14 @@
 title: "subtract_with_carry_engine Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["random/std::subtract_with_carry_engine", "random/std::subtract_with_carry_engine::default_seed", "random/std::subtract_with_carry_engine::discard", "random/std::subtract_with_carry_engine::min", "random/std::subtract_with_carry_engine::max", "random/std::subtract_with_carry_engine::seed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::subtract_with_carry_engine [C++]", "std::subtract_with_carry_engine [C++], default_seed", "std::subtract_with_carry_engine [C++], discard", "std::subtract_with_carry_engine [C++], min", "std::subtract_with_carry_engine [C++], max", "std::subtract_with_carry_engine [C++], seed"]
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # subtract_with_carry_engine Class

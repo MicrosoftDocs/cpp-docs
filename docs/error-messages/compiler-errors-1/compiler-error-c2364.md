@@ -2,19 +2,14 @@
 title: "Compiler Error C2364 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2364"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2364"]
 ms.assetid: 4f550571-94b5-42ca-84cb-663fecbead44
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2364

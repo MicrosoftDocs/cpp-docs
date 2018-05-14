@@ -2,19 +2,14 @@
 title: "barrier | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["barrier"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["barrier OpenMP directive"]
 ms.assetid: 5c73ad4f-c768-443a-8f9e-4fd8bc2253c7
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # barrier

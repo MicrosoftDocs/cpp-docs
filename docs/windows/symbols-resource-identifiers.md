@@ -2,19 +2,14 @@
 title: "Symbols: Resource Identifiers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.identifiers"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["symbols, resource identifiers", "symbols, creating", "resource symbols", "symbols, editing", "resource editors, resource symbols"]
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Symbols: Resource Identifiers

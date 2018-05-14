@@ -2,19 +2,14 @@
 title: "Implements Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Implements"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Implements structure"]
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements Structure

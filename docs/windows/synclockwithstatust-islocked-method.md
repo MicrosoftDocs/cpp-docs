@@ -2,19 +2,14 @@
 title: "SyncLockWithStatusT::IsLocked Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::IsLocked"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IsLocked method"]
 ms.assetid: e1b75b7b-c145-471a-aa5d-71abf31f5990
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockWithStatusT::IsLocked Method

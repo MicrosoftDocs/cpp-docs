@@ -2,18 +2,13 @@
 title: "Output Stream Manipulators with One Argument (int or long) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["output streams, int or long argument manipulators"]
 ms.assetid: 338f3164-b5e2-4c5a-a605-7d9dc3629ca1
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Output Stream Manipulators with One Argument (int or long)

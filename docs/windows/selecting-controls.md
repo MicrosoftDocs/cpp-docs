@@ -2,18 +2,13 @@
 title: "Selecting Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog editor, selecting controls", "dominant controls", "dialog box controls, selecting in editor", "controls [C++], selecting", "size, controls", "controls [C++], dominant"]
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Selecting Controls

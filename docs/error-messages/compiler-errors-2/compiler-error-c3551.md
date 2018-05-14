@@ -2,19 +2,14 @@
 title: "Compiler Error C3551 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3551"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3551"]
 ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3551

@@ -2,19 +2,14 @@
 title: "hash_set::value_compare (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_set::value_compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value_compare member [STL/CLR]"]
 ms.assetid: fac89cb4-79de-44be-8ef0-202e278d0401
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::value_compare (STL/CLR)

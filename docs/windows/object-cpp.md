@@ -2,19 +2,14 @@
 title: "object (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.object"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["object attribute"]
 ms.assetid: f2d3c231-630d-4b4c-bd15-b1c30df362dd
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # object (C++)

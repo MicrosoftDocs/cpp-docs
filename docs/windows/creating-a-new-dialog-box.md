@@ -2,19 +2,14 @@
 title: "Creating a New Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes, creating", "Dialog editor, creating dialog boxes"]
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a New Dialog Box

@@ -2,19 +2,14 @@
 title: "transformer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["transformer", "AGENTS/concurrency::transformer", "AGENTS/concurrency::transformer::transformer", "AGENTS/concurrency::transformer::accept_message", "AGENTS/concurrency::transformer::consume_message", "AGENTS/concurrency::transformer::link_target_notification", "AGENTS/concurrency::transformer::propagate_message", "AGENTS/concurrency::transformer::propagate_to_any_targets", "AGENTS/concurrency::transformer::release_message", "AGENTS/concurrency::transformer::reserve_message", "AGENTS/concurrency::transformer::resume_propagation", "AGENTS/concurrency::transformer::send_message", "AGENTS/concurrency::transformer::supports_anonymous_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["transformer class"]
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # transformer Class

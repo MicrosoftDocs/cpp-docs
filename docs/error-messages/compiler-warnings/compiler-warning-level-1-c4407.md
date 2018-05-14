@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4407 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4407"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4407"]
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4407

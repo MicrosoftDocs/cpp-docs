@@ -3,18 +3,13 @@ title: "Platform::ChangedStateException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ChangedStateException", "VCCORLIB/Platform::ChangedStateException::ChangedStateException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ChangedStateException"]
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ChangedStateException Class

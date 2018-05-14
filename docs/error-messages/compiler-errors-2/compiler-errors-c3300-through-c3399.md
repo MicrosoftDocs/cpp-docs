@@ -2,19 +2,14 @@
 title: "Compiler Errors C3300 Through C3399 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3300", "C3301", "C3302", "C3304", "C3305", "C3306", "C3307", "C3308", "C3310", "C3311", "C3312", "C3313", "C3314", "C3315", "C3316", "C3317", "C3318", "C3319", "C3321", "C3323", "C3324", "C3325", "C3326", "C3327", "C3328", "C3329", "C3330", "C3331", "C3332", "C3335", "C3336", "C3337", "C3338", "C3339", "C3341", "C3343", "C3344", "C3346", "C3348", "C3349", "C3355", "C3357", "C3359", "C3361", "C3362", "C3376", "C3377", "C3378"]
 helpviewer_keywords: ["C3300", "C3301", "C3302", "C3304", "C3305", "C3306", "C3307", "C3308", "C3310", "C3311", "C3312", "C3313", "C3314", "C3315", "C3316", "C3317", "C3318", "C3319", "C3321", "C3323", "C3324", "C3325", "C3326", "C3327", "C3328", "C3329", "C3330", "C3331", "C3332", "C3335", "C3336", "C3337", "C3338", "C3339", "C3341", "C3343", "C3344", "C3346", "C3348", "C3349", "C3355", "C3357", "C3359", "C3361", "C3362", "C3376", "C3377", "C3378"]
 dev_langs: ["C++"]
 ms.assetid: 190b7d29-ffe6-4261-921d-140da1935d00
-caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C3300 Through C3399

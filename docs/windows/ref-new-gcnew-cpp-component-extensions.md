@@ -2,19 +2,14 @@
 title: "ref new, gcnew  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ref new, gcnew  (C++ Component Extensions)

@@ -2,19 +2,14 @@
 title: "logical_or Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::logical_or"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["logical_or class", "logical_or struct"]
 ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # logical_or Struct

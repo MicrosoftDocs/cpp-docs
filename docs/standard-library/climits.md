@@ -2,19 +2,14 @@
 title: "&lt;climits&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<climits>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["climits header"]
 ms.assetid: 7ca8a539-aa45-4ac3-86e8-74513be3f07e
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;climits&gt;

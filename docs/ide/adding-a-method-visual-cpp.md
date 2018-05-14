@@ -2,18 +2,13 @@
 title: "Adding a Method  (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Add Method Wizard [C++]", "methods [C++], adding"]
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Method  (Visual C++)

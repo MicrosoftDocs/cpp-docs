@@ -2,14 +2,9 @@
 title: "&lt;valarray&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "valarray/std::atan", "valarray/std::atan2", "valarray/std::cos", "valarray/std::cosh", "valarray/std::exp", "valarray/std::log", "valarray/std::log10", "valarray/std::pow", "valarray/std::sin", "valarray/std::sinh", "valarray/std::sqrt", "valarray/std::swap", "valarray/std::tan", "valarray/std::tanh"]
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
-caps.latest.revision: 12
-manager: "ghogen"
 helpviewer_keywords: ["std::abs [C++]", "std::acos [C++]", "std::asin [C++]", "std::atan [C++]", "std::atan2", "std::cos [C++]", "std::cosh [C++]", "std::exp [C++]", "std::log [C++]", "std::log10", "std::pow [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::swap [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---
 # &lt;valarray&gt; functions

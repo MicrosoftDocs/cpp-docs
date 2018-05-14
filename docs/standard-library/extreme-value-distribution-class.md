@@ -2,19 +2,14 @@
 title: "extreme_value_distribution Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["random/std::extreme_value_distribution", "random/std::extreme_value_distribution::reset", "random/std::extreme_value_distribution::a", "random/std::extreme_value_distribution::b", "random/std::extreme_value_distribution::param", "random/std::extreme_value_distribution::min", "random/std::extreme_value_distribution::max", "random/std::extreme_value_distribution::operator()", "random/std::extreme_value_distribution::param_type", "random/std::extreme_value_distribution::param_type::a", "random/std::extreme_value_distribution::param_type::b", "random/std::extreme_value_distribution::param_type::operator==", "random/std::extreme_value_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::extreme_value_distribution [C++]", "std::extreme_value_distribution [C++], reset", "std::extreme_value_distribution [C++], a", "std::extreme_value_distribution [C++], b", "std::extreme_value_distribution [C++], param", "std::extreme_value_distribution [C++], min", "std::extreme_value_distribution [C++], max", "std::extreme_value_distribution [C++], param_type", "std::extreme_value_distribution [C++], param_type"]
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # extreme_value_distribution Class

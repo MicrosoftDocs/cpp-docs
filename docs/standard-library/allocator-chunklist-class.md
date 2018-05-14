@@ -2,19 +2,14 @@
 title: "allocator_chunklist Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocator_chunklist", "allocators/stdext::allocators::allocator_chunklist"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocator_chunklist", "stdext::allocators [C++], allocator_chunklist"]
 ms.assetid: ea72ed0a-dfdb-4c8b-8096-e4baf567b80f
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # allocator_chunklist Class

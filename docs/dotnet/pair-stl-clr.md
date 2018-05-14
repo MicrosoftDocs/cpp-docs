@@ -2,19 +2,14 @@
 title: "pair (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::pair"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pair class [STL/CLR]"]
 ms.assetid: 3326b4d9-a52a-49e5-8103-9aa5e8b352de
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # pair (STL/CLR)

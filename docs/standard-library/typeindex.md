@@ -2,18 +2,13 @@
 title: "&lt;typeindex&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<typeindex>"]
 dev_langs: ["C++"]
 ms.assetid: a9551137-f74b-4f02-af64-ff00214cea1f
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;typeindex&gt;

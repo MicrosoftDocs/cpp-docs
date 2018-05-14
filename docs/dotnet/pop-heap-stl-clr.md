@@ -2,19 +2,14 @@
 title: "pop_heap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::pop_heap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pop_heap function [STL/CLR]"]
 ms.assetid: d9bde0ed-2122-4d83-b4b3-f47f6fb3729a
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # pop_heap (STL/CLR)

@@ -2,19 +2,14 @@
 title: "queue::to_array (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::queue::to_array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["to_array member [STL/CLR]"]
 ms.assetid: a76a9add-659c-4dcc-a342-de7263946496
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue::to_array (STL/CLR)

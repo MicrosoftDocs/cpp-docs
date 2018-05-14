@@ -103,6 +103,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/PDBALTPATH](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)|Uses an alternate location to save a PDB file.|
 |[/PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)|Creates a program database (PDB) file that has no private symbols.|
 |[/PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)|Specifies a .pgd file for profile-guided optimizations.|
+|[/POGOSAFEMODE](../../build/reference/pogosafemode-linker-option.md)|**Obsolete** Creates a thread-safe PGO instrumented build.|
 |[/PROFILE](../../build/reference/profile-performance-tools-profiler.md)|Produces an output file that can be used with the Performance Tools profiler.|
 |[/RELEASE](../../build/reference/release-set-the-checksum.md)|Sets the Checksum in the .exe header.|
 |[/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|Specifies that the image will contain a table of safe exception handlers.|
@@ -114,6 +115,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md)|Specifies the resource ID of the linker-generated type library.|
 |[/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)|Specifies the name of the .tlb file and other MIDL output files.|
 |[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|Creates an application that is designed specifically to run under Terminal Server.|
+|[/USEPROFILE](../../build/reference/useprofile.md)|Uses profile-guided optimization training data to create an optimized image.|
 |[/VERBOSE](../../build/reference/verbose-print-progress-messages.md)|Prints linker progress messages.|
 |[/VERSION](../../build/reference/version-version-information.md)|Assigns a version number.|
 |[/WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|Includes every object file from specified static libraries.|

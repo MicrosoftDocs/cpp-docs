@@ -2,19 +2,14 @@
 title: "Platform, default, and cli Namespaces  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["lang", "cli"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["lang namespace", "cli namespace"]
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Platform, default, and cli Namespaces  (C++ Component Extensions)

@@ -2,19 +2,14 @@
 title: "OMP_NESTED | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["OMP_NESTED"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OMP_NESTED OpenMP environment variable"]
 ms.assetid: c43f5287-a548-40d0-bd54-0c6b2b9f9a53
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OMP_NESTED

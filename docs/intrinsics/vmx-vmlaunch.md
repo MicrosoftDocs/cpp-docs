@@ -2,19 +2,14 @@
 title: "__vmx_vmlaunch | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__vmx_vmlaunch"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VMLAUNCH instruction", "__vmx_vmlaunch intrinsic"]
 ms.assetid: 708f7c38-b7c1-4ee7-bfc4-0daeb9cc9360
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __vmx_vmlaunch

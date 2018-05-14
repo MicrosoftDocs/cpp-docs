@@ -2,14 +2,9 @@
 title: "&lt;limits&gt; enums | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["limits/std::float_denorm_style", "limits/std::float_round_style"]
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-caps.latest.revision: 11
-manager: "ghogen"
 ---
 # &lt;limits&gt; enums
 

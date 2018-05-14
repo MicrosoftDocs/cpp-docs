@@ -2,19 +2,14 @@
 title: "reverse (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::reverse"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reverse function [STL/CLR]"]
 ms.assetid: dce0c588-fd18-45fa-b8c6-feccb9f15bb7
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # reverse (STL/CLR)

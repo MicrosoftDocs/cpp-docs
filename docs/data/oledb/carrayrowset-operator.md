@@ -2,19 +2,14 @@
 title: "CArrayRowset::operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CArrayRowset::operator[]", "CArrayRowset.operator[]"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator [], arrays", "[] operator", "operator[], arrays"]
 ms.assetid: 3bb8c310-cc1e-46e8-9711-9b565488acaa
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset::operator

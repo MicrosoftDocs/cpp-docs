@@ -2,19 +2,14 @@
 title: "greater_equal Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xfunctional/std::greater_equal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["greater_equal struct", "greater_equal function"]
 ms.assetid: a8ba911b-7af8-4653-b972-d8618f4df7d5
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # greater_equal Struct

@@ -2,19 +2,14 @@
 title: "is_unsigned Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_unsigned"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_unsigned class", "is_unsigned"]
 ms.assetid: ba5bec3d-796b-4e54-8595-a3941ec6a8dc
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_unsigned Class

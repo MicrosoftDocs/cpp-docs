@@ -2,19 +2,14 @@
 title: "BLOB_ENTRY_LENGTH | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BLOB_ENTRY_LENGTH"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_ENTRY_LENGTH macro"]
 ms.assetid: 832d21ab-5fdd-49ad-af6e-4fca5722ec93
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_ENTRY_LENGTH

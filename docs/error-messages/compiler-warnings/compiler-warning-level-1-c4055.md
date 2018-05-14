@@ -2,8 +2,8 @@
 title: "Compiler Warning (level 1) C4052 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4055"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4055"]

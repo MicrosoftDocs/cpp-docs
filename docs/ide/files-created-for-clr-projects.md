@@ -2,18 +2,13 @@
 title: "Files Created for CLR Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++ projects, CLR programming", ".NET applications, C++"]
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Files Created for CLR Projects

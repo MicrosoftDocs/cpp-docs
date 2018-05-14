@@ -2,19 +2,14 @@
 title: "__vmx_vmclear | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__vmx_vmclear"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VMCLEAR instruction", "__vmx_vmclear intrinsic"]
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __vmx_vmclear

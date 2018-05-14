@@ -2,18 +2,13 @@
 title: "Deleting Menus and Menu Commands | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["menu items, deleting", "commands, deleting from menus", "menus, deleting"]
 ms.assetid: bdfd5b6e-3275-4597-a8bb-cd19bea9f9ad
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting Menus and Menu Commands

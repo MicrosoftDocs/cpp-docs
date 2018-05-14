@@ -2,19 +2,14 @@
 title: "CriticalSection::TryLock Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection::TryLock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TryLock method"]
 ms.assetid: 504bb87c-2cd0-4f54-b458-b3efb9789053
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::TryLock Method

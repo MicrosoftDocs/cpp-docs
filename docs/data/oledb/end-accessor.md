@@ -2,19 +2,14 @@
 title: "END_ACCESSOR | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["END_ACCESSOR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["END_ACCESSOR macro"]
 ms.assetid: 26f74167-68c4-4909-a474-73dc7ebc9542
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # END_ACCESSOR

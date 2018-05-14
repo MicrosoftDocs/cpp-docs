@@ -2,19 +2,14 @@
 title: "CCollations, CCollationInfo | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["COLLATION_CATALOG", "m_szCatalog", "CCollationInfo", "CCollations", "CHARACTER_SET_NAME", "CHARACTER_SET_SCHEMA", "m_szCharSetName", "m_szSchema", "CHARACTER_SET_CATALOG", "m_szCharSetSchema", "m_szCharSetCatalog", "m_szPadAttribute", "COLLATION_NAME", "COLLATION_SCHEMA", "m_szName", "COLLATIONS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szSchema", "COLLATION_SCHEMA", "m_szCharSetCatalog", "m_szCatalog", "COLLATIONS recordset", "COLLATION_CATALOG", "CCollationInfo parameter class", "m_szName", "COLLATION_NAME", "m_szPadAttribute", "CHARACTER_SET_NAME", "m_szCharSetName", "CHARACTER_SET_SCHEMA", "CHARACTER_SET_CATALOG", "m_szCharSetSchema", "CCollations typedef class"]
 ms.assetid: d8b43c4d-9dd5-4043-b4c8-38c03bfa0c72
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCollations, CCollationInfo

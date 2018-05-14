@@ -2,18 +2,13 @@
 title: "Avoiding Exceptions thrown by COM Objects Built with -clr | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], CLR shutdown exceptions", "/clr compiler option [C++], CLR shutdown exceptions", "mixed assemblies [C++], CLR shutdown exceptions", "/clr compiler option [C++], COM objects", "interoperability [C++], CLR shutdown exceptions", "CLR shutdown exceptions [C++]"]
 ms.assetid: 41249d83-4b51-4e46-866f-27f475f2498c
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Avoiding Exceptions on CLR Shutdown When Consuming COM Objects Built with /clr

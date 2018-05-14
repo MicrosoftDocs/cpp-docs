@@ -2,18 +2,13 @@
 title: "mutex Class (C++ Standard Library)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["mutex/std::mutex", "mutex/std::mutex::mutex", "mutex/std::mutex::lock", "mutex/std::mutex::native_handle", "mutex/std::mutex::try_lock", "mutex/std::mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: 7999d055-f74f-4303-810f-8d3c9cde2f69
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::mutex [C++]", "std::mutex [C++], mutex", "std::mutex [C++], lock", "std::mutex [C++], native_handle", "std::mutex [C++], try_lock", "std::mutex [C++], unlock"]
 ms.workload: ["cplusplus"]
 ---

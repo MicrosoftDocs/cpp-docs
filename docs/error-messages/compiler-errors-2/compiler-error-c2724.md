@@ -2,19 +2,14 @@
 title: "Compiler Error C2724 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2724"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2724"]
 ms.assetid: 4e4664bc-8c96-4156-b79f-03436f532ea8
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2724

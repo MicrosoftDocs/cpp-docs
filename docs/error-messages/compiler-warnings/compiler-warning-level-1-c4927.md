@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4927 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4927"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4927"]
 ms.assetid: 7009e740-a2ef-4130-96ba-482e092f717a
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4927

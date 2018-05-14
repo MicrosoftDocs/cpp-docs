@@ -2,18 +2,13 @@
 title: "atomic_flag Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["atomic/std::atomic_flag", "atomic/std::atomic_flag::clear", "atomic/std::atomic_flag::test_and_set"]
 dev_langs: ["C++"]
 ms.assetid: 17f0c2f5-fd39-4a44-873a-b569720a670e
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # atomic_flag Structure

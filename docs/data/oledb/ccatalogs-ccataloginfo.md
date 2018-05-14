@@ -2,19 +2,14 @@
 title: "CCatalogs, CCatalogInfo | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CCatalogs", "m_szName", "CCatalogInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DESCRIPTION class data member", "CCatalogInfo parameter class", "CCatalogs typedef class", "m_szName", "m_szDescription"]
 ms.assetid: 8362cbbd-2f00-4272-8518-fc235c4de193
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCatalogs, CCatalogInfo

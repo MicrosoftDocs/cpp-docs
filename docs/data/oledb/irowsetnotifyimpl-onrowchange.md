@@ -2,19 +2,14 @@
 title: "IRowsetNotifyImpl::OnRowChange | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["IRowsetNotifyImpl::OnRowChange", "IRowsetNotifyImpl.OnRowChange", "OnRowChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnRowChange method"]
 ms.assetid: 148bee03-3707-4bbf-8c51-657efc63645f
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyImpl::OnRowChange

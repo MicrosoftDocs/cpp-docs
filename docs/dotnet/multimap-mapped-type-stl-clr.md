@@ -2,19 +2,14 @@
 title: "multimap::mapped_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multimap::mapped_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mapped_type member [STL/CLR]"]
 ms.assetid: 0b59c9a9-7f6a-4c3d-bdc6-0b90c28eff34
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::mapped_type (STL/CLR)

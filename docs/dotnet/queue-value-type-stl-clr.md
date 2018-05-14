@@ -2,19 +2,14 @@
 title: "queue::value_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::queue::value_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value_type member [STL/CLR]"]
 ms.assetid: f1abde03-982c-4aaf-91a6-cc613df9690e
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue::value_type (STL/CLR)

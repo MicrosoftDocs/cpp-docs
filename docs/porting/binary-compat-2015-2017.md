@@ -2,18 +2,13 @@
 title: "C++ Binary Compatibility between Visual Studio 2015 and Visual Studio 2017 | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/21/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C++ Binary Compatibility between Visual Studio 2015 and Visual Studio 2017

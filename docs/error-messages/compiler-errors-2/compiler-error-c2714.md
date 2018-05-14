@@ -2,19 +2,14 @@
 title: "Compiler Error C2714 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2714"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2714"]
 ms.assetid: 401a5a42-660c-4bad-9d63-1a2d092bc489
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2714

@@ -2,19 +2,14 @@
 title: "find (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::find"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["find function [STL/CLR]"]
 ms.assetid: 88391e24-1239-4087-b1c2-96efba0337c1
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # find (STL/CLR)

@@ -2,19 +2,14 @@
 title: "Linker Tools Error LNK1200 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1200"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1200"]
 ms.assetid: 55771145-915e-4006-ac6c-ac702041eb2f
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1200

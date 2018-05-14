@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4821 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4821"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4821"]
 ms.assetid: c7768e77-0ee5-491e-8aa4-3915bf5bcbdf
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4821  
