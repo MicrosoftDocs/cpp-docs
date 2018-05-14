@@ -28,19 +28,19 @@ Because the Universal CRT is a fundamental dependency of the C++ libraries, the 
 
 Local deployment of the Universal CRT is supported, but not recommended for both performance and security reasons.  The DLLs for local deployment are included as part of the Windows SDK, in the Windows Kits\\10\\Redist\\ucrt\\DLLs subdirectory, by computer architecture. The DLLs required include ucrtbase.dll and a set of APISet forwarder DLLs named api-ms-win-\*.dll. The set of DLLs required on each operating system varies, so it is highly recommended that you include all of the DLLs when you deploy locally.
 
-There are two restrictions on local deployment you need to be aware of:
+There are two restrictions on local deployment to be aware of:
 
-1. On Windows 10, the Universal CRT in the system directory is always used, even if an application includes an application-local copy of the Universal CRT. This is true even if the local copy of the Universal CRT is newer. This is because the Universal CRT is a core operating system component on Windows 10.
+- On Windows 10, the Universal CRT in the system directory is always used, even if an application includes an application-local copy of the Universal CRT. This is true even if the local copy of the Universal CRT is newer. This is because the Universal CRT is a core operating system component on Windows 10.
 
-1. On versions of Windows before Windows 8, the Universal CRT cannot be packaged locally with a plugin that is located in a directory other than the directory that contains the main executable for your app. The APISet forwarder DLLs are unable to resolve the ucrtbase.dll successfully in this case. Some recommended alternative solutions include:
+- On versions of Windows before Windows 8, the Universal CRT cannot be packaged locally with a plugin that is located in a directory other than the directory that contains the main executable for your app. The APISet forwarder DLLs are unable to resolve the ucrtbase.dll successfully in this case. Some recommended alternative solutions include:
 
-   - Statically link the Universal CRT,
-   - Centrally deploy the Universal CRT, or
-   - Place the Universal CRT files in the same directory as the app.
+  - Statically link the Universal CRT,
+  - Centrally deploy the Universal CRT, or
+  - Place the Universal CRT files in the same directory as the app.
 
 ## Deployment on Microsoft Windows XP
 
-Visual Studio 2015 and Visual Studio 2017 continue to support development of software for use on Microsoft Windows XP. To support this, a version of the Universal CRT does work on Microsoft Windows XP. The Microsoft Windows XP operating system is no longer in mainstream or extended support, so central deployment of the Universal CRT onto Microsoft Windows XP is different from other operating systems. 
+Visual Studio 2015 and Visual Studio 2017 continue to support development of software for use on Microsoft Windows XP. To support this, a version of the Universal CRT does work on Microsoft Windows XP. The Microsoft Windows XP operating system is no longer in mainstream or extended support, so central deployment of the Universal CRT onto Microsoft Windows XP is different from other operating systems.
 
 When the Visual C++ redistributable is installed on Windows XP, it directly installs the Universal CRT and all of its dependencies into the system directory, without installing or depending on any Windows Update. The Redistributable merge modules, the Microsoft_VC*version*_CRT_\*.msm files, do the same.
 
