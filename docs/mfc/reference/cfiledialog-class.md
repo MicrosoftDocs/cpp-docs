@@ -938,8 +938,8 @@ virtual void OnControlActivating(DWORD dwIDCtl);
   
 ### Remarks  
   
-##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNY` `Change  
- Override this method if you want to handle the `WM_NOTIFY` `CDN_SELCHANGE` message.  
+##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNameChange  
+Override this method if you want to handle the `WM_NOTIFY` `CDN_SELCHANGE` message.  
   
 ```  
 virtual void OnFileNameChange();
