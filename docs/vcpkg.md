@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # vcpkg: C++ package manager
 
-vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows, Linux and MacOS. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg public catalog have been tested for compatibility with Visual Studio 2015 and Visual Studio 2017. As of May 2018 there are over 900 libraries in the Windows catalog and 350 in the Linux/MacOS catalog. The C++ community is adding more libraries to both catalogs on an ongoing basis.
+vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows, Linux and MacOS. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg Windows catalog have been tested for compatibility with Visual Studio 2015 and Visual Studio 2017. As of May 2018 there are over 900 libraries in the Windows catalog and over 350 in the Linux/MacOS catalog. The C++ community is adding more libraries to both catalogs on an ongoing basis.
 
 ## Simple yet flexible
 
@@ -22,7 +22,7 @@ With a single command, you can download sources and build a library. vcpkg is it
 
 ## Sources not binaries
 
-For libraries in the public catalog, vcpkg downloads sources instead of binaries[1]. It compiles those sources using Visual Studio 2017, or Visual Studio 2015 if 2017 is not installed. In C++, it is very important that any libraries you use are complied with the same compiler, and compiler version, as the application code that links to it. By using vcpkg, you eliminate or at least greatly reduce the potential for mismatched binaries and the problems they can cause. In teams that are standardized on a specific version of the Visual C++ compiler, one team member can use vcpkg to download sources and compile a set of binaries and then use the export command to zip up the binaries and headers for other team members. For more information, see [Export compiled binaries and headers](#export_binaries_per_project) below.
+For libraries in the Windows catalog, vcpkg downloads sources instead of binaries[1]. It compiles those sources using Visual Studio 2017, or Visual Studio 2015 if 2017 is not installed. In C++, it is very important that any libraries you use are complied with the same compiler, and compiler version, as the application code that links to it. By using vcpkg, you eliminate or at least greatly reduce the potential for mismatched binaries and the problems they can cause. In teams that are standardized on a specific version of the Visual C++ compiler, one team member can use vcpkg to download sources and compile a set of binaries and then use the export command to zip up the binaries and headers for other team members. For more information, see [Export compiled binaries and headers](#export_binaries_per_project) below.
 
 If you create a vcpkg clone with private libraries in the ports collection, you can add a port that downloads prebuilt binaries and headers and write a portfile.cmake file that simply copies those files to the desired location.
 
@@ -66,7 +66,11 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 
 ### Install a library on your local machine
 
-After you get the name of a library by using **vcpkg search**, you use **vcpkg install** to download the library and compile it. vcpkg uses the library's portfile in the ports directory. If no triplet is specified, vcpkg will install and compile for x86-windows. If the portfile specifies dependencies, vcpkg downloads and installs those also. After downloading, vcpkg builds the library by using whatever build system the library uses. CMake and MSBuild projects (on Windows) are preferred, but MAKE is supported along with any other build system. If vcpkg cannot find the specified build system on the local machine, it downloads and installs it.
+After you get the name of a library by using **vcpkg search**, you use **vcpkg install** to download the library and compile it. vcpkg uses the library's portfile in the ports directory. If no triplet is specified, vcpkg will install and compile for the default triplet for the target platform: x86-windows, x64-linux.cmake, or x64-osx.cmake.
+
+For Linux libraries, vcpkg depends on gcc being installed on the local machine. On MacOS, vcpkg uses Clang. 
+
+If the portfile specifies dependencies, vcpkg downloads and installs those also. After downloading, vcpkg builds the library by using whatever build system the library uses. CMake and (on Windows) MSBuild projects are preferred, but MAKE is supported along with any other build system. If vcpkg cannot find the specified build system on the local machine, it downloads and installs it.
 
 ```cmd
 > vcpkg install boost:x86-windows
@@ -79,7 +83,7 @@ Additional packages (*) will be installed to complete this operation.
 
 ```
 
-For CMAKE projects, use use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example,  
+For CMAKE projects, use use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example:  
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)
@@ -101,7 +105,7 @@ websocketpp:x86-windows 0.7.0    Library that implements RFC6455 The WebSocket P
 zlib:x86-windows        1.2.11   A compression library
 ```
 
-## Integrate with Visual Studio
+## Integrate with Visual Studio (Windows)
 
 ### Per-user
 
@@ -119,6 +123,11 @@ If you need to use a specific version of a library that is different from the ve
 1. Modify the portfile for the library to obtain the version you need
 1. Run **vcpkg install \<library>**.
 1. Use **vcpkg integrate project** to create a NuGet package that references that library on a per-project basis.
+
+## Target Linux from Windows via WSL
+
+You can produce Linux binaries from a Windows machine by using the Windows Subsystem for Linux (WSL). Follow the instructions to [Set up WSL on Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10), and configure it with the [Visual Studio extension for Linux](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). You can put all your built libraries for both Windows and Linux into the same folder and access it from both Windows and WSL.
+
 
 ## <a name="export_binaries_per_project"></a> Export compiled binaries and headers
 
