@@ -1,7 +1,7 @@
 ---
 title: "Deployment in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/13/2018"
+ms.date: "05/11/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -14,6 +14,8 @@ ms.workload: ["cplusplus"]
 # Deployment in Visual C++
 
 Installation of your application on a computer other than your development computer is known as *deployment*. When you deploy a Visual C++ application to another computer, you must install both the application and any library files it depends on. Visual Studio enables three ways to deploy the Visual C++ libraries together with your application: *central deployment*, *local deployment*, and *static linking*. Central deployment puts the library files under the Windows directory, where the Windows Update service can update them automatically. Local deployment puts the library files in the same directory as your application. You must redeploy any locally deployed libraries yourself to update them. Static linking binds the library code into your application. You must recompile and redeploy your application to take advantage of any updates to the libraries when you use static linking.
+
+In Visual Studio 2015, the Microsoft C Runtime library was refactored into version-specific local library components, and a new Universal C Runtime library that is now part of Windows. For details on deployment of the Universal CRT, see [Universal CRT deployment](universal-crt-deployment.md).
 
 ## Central Deployment
 
@@ -47,6 +49,7 @@ In addition to dynamically linked libraries, Visual Studio supplies most of its 
 
 The load order of Visual C++ libraries is system-dependent. To diagnose loader issues, use depends.exe or where.exe. For more information, see [Dynamic-Link Library Search Order (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms682586.aspx).
 
-## See Also
+## See also
 
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [Universal CRT deployment](universal-crt-deployment.md)
