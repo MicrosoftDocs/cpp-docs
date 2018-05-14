@@ -2,18 +2,13 @@
 title: "ComPtrRef::operator== Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 95fcf781-b473-4317-88cd-e938778d3c3e
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRef::operator== Operator

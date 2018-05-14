@@ -2,19 +2,14 @@
 title: "is_trivially_copy_constructible Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_trivially_copy_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_copy_constructible"]
 ms.assetid: 4274cef5-afdd-4f2d-bc83-7562e7944ddf
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_trivially_copy_constructible Class

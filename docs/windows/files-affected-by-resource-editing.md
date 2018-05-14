@@ -2,18 +2,13 @@
 title: "Files Affected by Resource Editing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["resource editing", "resources [Visual Studio], editing"]
 ms.assetid: d0820df1-ba84-40ac-bce9-29ea5ee7e3f8
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Files Affected by Resource Editing

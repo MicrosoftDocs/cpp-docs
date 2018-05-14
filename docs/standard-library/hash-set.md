@@ -2,19 +2,14 @@
 title: "&lt;hash_set&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<hash_set>", "std::<hash_set>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["hash_set header"]
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;hash_set&gt;

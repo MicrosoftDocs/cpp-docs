@@ -2,19 +2,14 @@
 title: "General MBCS Programming Advice | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["_mbcs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], dialog box fonts", "MS Shell Dlg", "MBCS [C++], programming", "dialog boxes [C++], fonts"]
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
-caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # General MBCS Programming Advice

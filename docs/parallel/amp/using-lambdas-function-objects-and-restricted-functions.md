@@ -2,17 +2,12 @@
 title: "Using Lambdas, Function Objects, and Restricted Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-amp"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 25346cc9-869d-4ada-aad3-e2228cad3d6c
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Lambdas, Function Objects, and Restricted Functions

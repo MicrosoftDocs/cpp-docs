@@ -2,19 +2,14 @@
 title: "Generic-Text Mappings in Tchar.h | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["tchar.h"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mapping generic-text", "generic-text mappings [C++]", "character sets [C++], generic-text mappings", "Unicode [C++], generic-text mappings", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Generic-Text Mappings in Tchar.h

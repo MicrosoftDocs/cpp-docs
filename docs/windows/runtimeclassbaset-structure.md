@@ -2,18 +2,13 @@
 title: "RuntimeClassBaseT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBaseT"]
 dev_langs: ["C++"]
 ms.assetid: a62775fb-3359-4f45-9ff1-c07fa8da464b
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassBaseT Structure

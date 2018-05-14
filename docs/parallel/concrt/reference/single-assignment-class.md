@@ -2,19 +2,14 @@
 title: "single_assignment Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["single_assignment", "AGENTS/concurrency::single_assignment", "AGENTS/concurrency::single_assignment::single_assignment", "AGENTS/concurrency::single_assignment::has_value", "AGENTS/concurrency::single_assignment::value", "AGENTS/concurrency::single_assignment::accept_message", "AGENTS/concurrency::single_assignment::consume_message", "AGENTS/concurrency::single_assignment::link_target_notification", "AGENTS/concurrency::single_assignment::propagate_message", "AGENTS/concurrency::single_assignment::propagate_to_any_targets", "AGENTS/concurrency::single_assignment::release_message", "AGENTS/concurrency::single_assignment::reserve_message", "AGENTS/concurrency::single_assignment::resume_propagation", "AGENTS/concurrency::single_assignment::send_message"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["single_assignment class"]
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # single_assignment Class

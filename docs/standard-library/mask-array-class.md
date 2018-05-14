@@ -2,19 +2,14 @@
 title: "mask_array Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["valarray/std::mask_array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mask_array class"]
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mask_array Class

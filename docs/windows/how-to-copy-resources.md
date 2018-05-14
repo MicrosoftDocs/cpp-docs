@@ -2,19 +2,14 @@
 title: "How to: Copy Resources | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.copying", "vs.resvw.resource.copying"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [Visual Studio], moving between files", "resources [Visual Studio], copying", "resource files, copying or moving resources between", "resource files, tiling", ".rc files, copying resources between", "rc files, copying resources between"]
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Copy Resources

@@ -2,18 +2,13 @@
 title: "Disabling Guides | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["guides, disabling snapping", "Dialog editor, snap to guides", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid"]
 ms.assetid: 51efa07b-8684-474e-a0b4-191ec5d91d1a
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Disabling Guides

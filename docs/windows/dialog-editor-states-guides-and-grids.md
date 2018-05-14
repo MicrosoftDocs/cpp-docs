@@ -2,18 +2,13 @@
 title: "Dialog Editor States (Guides and Grids) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog editor, guides and margins"]
 ms.assetid: dbacf9ef-e8b0-4125-a7ce-84911c482e98
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor States (Guides and Grids)

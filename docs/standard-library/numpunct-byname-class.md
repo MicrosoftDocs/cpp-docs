@@ -2,19 +2,14 @@
 title: "numpunct_byname Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xlocnum/std::numpunct_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["numpunct_byname class"]
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # numpunct_byname Class

@@ -2,19 +2,14 @@
 title: "is_default_constructible Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_default_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_default_constructible"]
 ms.assetid: dd8f1c44-dae5-4258-891f-c5e048d94092
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_default_constructible Class

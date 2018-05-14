@@ -2,19 +2,14 @@
 title: "region, endregion | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["vc-pragma.endregion", "endregion_CPP", "region_CPP", "vc-pragma.region"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, region", "pragmas, endregion", "endregion pragma", "region pragma"]
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # region, endregion

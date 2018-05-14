@@ -2,18 +2,13 @@
 title: "time_point Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
 dev_langs: ["C++"]
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::chrono [C++], time_point"]
 ms.workload: ["cplusplus"]
 ---

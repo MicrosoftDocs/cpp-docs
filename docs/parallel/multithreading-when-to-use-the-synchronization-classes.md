@@ -2,18 +2,13 @@
 title: "Multithreading: When to Use the Synchronization Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["threading [MFC], synchronization classes", "resources [C++], multithreading", "synchronization classes [C++]", "synchronization [C++], multithreading", "controlled resource access [C++]", "synchronization access classes [C++]", "threading [C++], synchronization", "multithreading [C++], synchronization classes"]
 ms.assetid: 4914f54e-68ac-438f-93c9-c013455a657e
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading: When to Use the Synchronization Classes

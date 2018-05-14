@@ -1,8 +1,8 @@
-    vector<shared_ptr<MediaAsset>> assets;
-
-    assets.push_back(shared_ptr<Song>(new Song(L"Himesh Reshammiya", L"Tera Surroor")));
-    assets.push_back(shared_ptr<Song>(new Song(L"Penaz Masani", L"Tu Dil De De")));
-    assets.push_back(shared_ptr<Photo>(new Photo(L"2011-04-06", L"Redmond, WA", L"Soccer field at Microsoft.")));
+    vector<shared_ptr<MediaAsset>> assets {
+      make_shared<Song>(L"Himesh Reshammiya", L"Tera Surroor"),
+      make_shared<Song>(L"Penaz Masani", L"Tu Dil De De")),
+      make_shared<Photo>(L"2011-04-06", L"Redmond, WA", L"Soccer field at Microsoft.")
+    };
 
     vector<shared_ptr<MediaAsset>> photos;
 

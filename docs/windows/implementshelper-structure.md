@@ -2,19 +2,14 @@
 title: "ImplementsHelper Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsHelper"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ImplementsHelper structure"]
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsHelper Structure

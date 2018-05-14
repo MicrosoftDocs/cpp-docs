@@ -2,18 +2,13 @@
 title: "Inserting a New Menu Between Existing Menus | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["menus, adding items", "commands, adding to menus"]
 ms.assetid: 7a6c807f-3839-40dc-97c9-dedb0e33dcde
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Inserting a New Menu Between Existing Menus

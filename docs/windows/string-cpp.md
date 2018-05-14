@@ -2,19 +2,14 @@
 title: "string (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.string"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["string attribute"]
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # string (C++)

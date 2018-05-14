@@ -2,19 +2,14 @@
 title: "EventSource Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/22/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["EventSource class"]
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource Class

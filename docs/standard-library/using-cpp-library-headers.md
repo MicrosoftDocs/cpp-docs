@@ -2,18 +2,13 @@
 title: "Using C++ Library Headers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["headers, naming in C++ include directive", "standard header in C++", "headers", "INCLUDE directive", "headers, C++ Standard Library", "library headers", "C++ Standard Library, headers"]
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using C++ Library Headers

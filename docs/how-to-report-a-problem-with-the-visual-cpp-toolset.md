@@ -1,13 +1,11 @@
 ---
 title: "How to Report a Problem with the Visual C++ Toolset | Microsoft Docs"
 ms.date: "1/11/2018"
-ms.technology: ["cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-ide"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to Report a Problem with the Visual C++ Toolset
@@ -100,7 +98,7 @@ A repro is a complete, self-contained source code example that reproducibly demo
 
 A good repro is:
 
-- **Minimal.** Repros should be as small as possible yet still demonstrate exactly the problem you encountered. Repros do not need to be complex or realistic; they only need to show code that conforms to the Standard or the documented compiler implementation, or in the case of a missing diagnostic, the code that is not conformant. Simple, to-the-point repros that contain just enough code to demonstrate the problem are best. If you can eliminate or simplify the code and remain conformant and also leave the issue unchanged, please do so. You do not need to include counter-examples of code that works. 
+- **Minimal.** Repros should be as small as possible yet still demonstrate exactly the problem you encountered. Repros do not need to be complex or realistic; they only need to show code that conforms to the Standard or the documented compiler implementation, or in the case of a missing diagnostic, the code that is not conformant. Simple, to-the-point repros that contain just enough code to demonstrate the problem are best. If you can eliminate or simplify the code and remain conformant and also leave the issue unchanged, please do so. You do not need to include counter-examples of code that works.
 
 - **Self-Contained.** Repros should avoid unnecessary dependencies. If you can reproduce the problem without third-party libraries, please do so. If you can reproduce the problem without any library code besides simple output statements (for example, `puts("this shouldn't compile");`, `std::cout << value;`, and `printf("%d\n", value);` are okay), please do so. It's ideal if the example can be condensed to a single source code file, without reference to any user headers. Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us.
 
@@ -108,13 +106,13 @@ A good repro is:
 
 - **Checked against other compilers** if relevant. Repros that involve portable C++ code should verify behavior against other compilers if possible. The Standard ultimately determines program correctness, and no compiler is perfect, but when Clang and GCC accept your code without a diagnostic and MSVC does not, it's likely you're looking at a bug in our compiler. (Other possibilities include differences in Unix and Windows behavior, or different levels of C++ standards implementation, and so on.) On the other hand, if all the compilers reject your code, then it's likely that your code is incorrect. Seeing different error messages may help you diagnose the issue yourself.
 
-   You can find lists of online compilers to test your code against in [Online C++ compilers](https://isocpp.org/blog/2013/01/online-c-compilers) on the ISO C++ website, or this curated [List of Online C++ Compilers](https://arnemertz.github.io/online-compilers/) on GitHub. Some specific examples include [Wandbox](https://wandbox.org/), [Compiler Explorer](https://godbolt.org/), and [Coliru](http://coliru.stacked-crooked.com/). 
+   You can find lists of online compilers to test your code against in [Online C++ compilers](https://isocpp.org/blog/2013/01/online-c-compilers) on the ISO C++ website, or this curated [List of Online C++ Compilers](https://arnemertz.github.io/online-compilers/) on GitHub. Some specific examples include [Wandbox](https://wandbox.org/), [Compiler Explorer](https://godbolt.org/), and [Coliru](http://coliru.stacked-crooked.com/).
 
    > [!NOTE]
    > The online compiler websites are not affiliated with Microsoft. Many online compiler websites are run as personal projects, and some of these sites may not be available when you read this, but a search should find others you can use.
 
 Problems in the compiler, linker, and in the libraries, tend to show themselves in particular ways. The kind of problem you encounter will determine what kind of repro you should include in your report. Without an appropriate repro, we have nothing to investigate. Here are a few of the kinds of issues that you may see, and instructions for generating the kinds of repros you should use to report each kind of problems.
- 
+
 #### Frontend (parser) crash
 
 Frontend crashes occur during the parsing phase of the compiler. Typically, the compiler will emit [Fatal Error C1001](error-messages/compiler-errors-1/fatal-error-c1001.md) and reference the source code file and line number on which the error occurred; it will often mention a file msc1.cpp, but you can ignore this detail.

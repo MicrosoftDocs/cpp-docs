@@ -2,19 +2,14 @@
 title: "ChainInterfaces Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ChainInterfaces structure"]
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces Structure

@@ -2,19 +2,14 @@
 title: "decay Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::decay"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["decay class"]
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # decay Class

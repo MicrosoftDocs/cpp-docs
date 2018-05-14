@@ -2,18 +2,13 @@
 title: "Setting the Width of a Horizontal Scroll Bar | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["list controls, scroll bar width", "CListBox::SetHorizontalExtent", "controls [C++], scroll bar", "scroll bars, displaying in controls", "horizontal scroll bar width", "CListBox class, scroll bar width", "scroll bars, width"]
 ms.assetid: 51dad141-aa0b-46a3-a82c-46b80d603d94
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Setting the Width of a Horizontal Scroll Bar

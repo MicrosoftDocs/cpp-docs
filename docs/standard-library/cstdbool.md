@@ -2,17 +2,12 @@
 title: "&lt;cstdbool&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 44ccb8b2-d808-4715-8097-58ba09ab33ed
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;cstdbool&gt;

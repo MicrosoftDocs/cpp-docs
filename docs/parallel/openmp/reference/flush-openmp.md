@@ -2,19 +2,14 @@
 title: "flush (OpenMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["Flush"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["flush OpenMP directive"]
 ms.assetid: 150ca46e-d4f7-4423-b0a4-838df40aeb67
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # flush (OpenMP)

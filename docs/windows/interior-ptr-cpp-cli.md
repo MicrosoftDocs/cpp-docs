@@ -2,19 +2,14 @@
 title: "interior_ptr (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["stdcli::language::interior_ptr", "interior_ptr_cpp", "interior_ptr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["interior_ptr keyword [C++]"]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # interior_ptr (C++/CLI)

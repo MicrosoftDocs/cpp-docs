@@ -2,19 +2,14 @@
 title: "hdrstop | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["hdrstop_CPP", "vc-pragma.hdrstop"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["hdrstop pragma", "pragmas, hdrstop"]
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # hdrstop

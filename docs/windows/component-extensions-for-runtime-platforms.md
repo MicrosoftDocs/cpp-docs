@@ -2,18 +2,13 @@
 title: "Component Extensions for Runtime Platforms | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "Visual C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-caps.latest.revision: 77
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Component Extensions for Runtime Platforms

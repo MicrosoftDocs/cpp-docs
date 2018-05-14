@@ -2,19 +2,14 @@
 title: "&lt;algorithm&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["<algorithm>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["algorithm header [C++]", "C++ Standard Library, algorithms", "<algorithm> header"]
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;algorithm&gt;

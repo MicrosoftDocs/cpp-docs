@@ -2,18 +2,13 @@
 title: "How to: Use parallel_invoke to Write a Parallel Sort Routine | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_handle class, example", "task_group class, example", "make_task function, example", "structured_task_group class, example", "improving parallel performance with task groups [Concurrency Runtime]"]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use parallel_invoke to Write a Parallel Sort Routine

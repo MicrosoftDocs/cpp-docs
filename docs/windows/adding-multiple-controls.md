@@ -2,18 +2,13 @@
 title: "Adding Multiple Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["controls [Visual Studio], adding multiple", "dialog box controls, adding to dialog boxes"]
 ms.assetid: cc100201-0669-4e74-bb08-f7134ddd03aa
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Multiple Controls

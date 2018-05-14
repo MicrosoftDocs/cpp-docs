@@ -2,18 +2,13 @@
 title: "Asynchronous Agents Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Agents Library", "Asynchronous Agents Library"]
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Asynchronous Agents Library

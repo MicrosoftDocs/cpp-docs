@@ -2,18 +2,13 @@
 title: "Adding Files to an Empty Win32 Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["empty projects, adding files", "projects [C++], adding items", "blank projects", "files [C++], adding to projects"]
 ms.assetid: 070098e8-0396-49fe-a697-3daa2f1be6de
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Files to an Empty Win32 Applications

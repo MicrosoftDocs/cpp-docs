@@ -2,18 +2,13 @@
 title: "Visual C++ change history 2003 - 2015 | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/30/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["breaking changes [C++]"]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-caps.latest.revision: 124
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ change history 2003 - 2015

@@ -2,19 +2,14 @@
 title: "ImplementsBase Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsBase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ImplementsBase structure"]
 ms.assetid: f898eb17-136d-4c87-b3ea-771319314641
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsBase Structure

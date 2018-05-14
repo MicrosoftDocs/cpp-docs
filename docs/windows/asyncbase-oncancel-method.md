@@ -2,19 +2,14 @@
 title: "AsyncBase::OnCancel Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::OnCancel"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnCancel method"]
 ms.assetid: 4bd0b68e-a9df-4913-9f6c-e093ed55c3f9
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::OnCancel Method

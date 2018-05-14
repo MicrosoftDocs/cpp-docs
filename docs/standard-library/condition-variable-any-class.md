@@ -2,18 +2,13 @@
 title: "condition_variable_any Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["condition_variable/std::condition_variable_any", "condition_variable/std::condition_variable_any::condition_variable_any", "condition_variable/std::condition_variable_any::notify_all", "condition_variable/std::condition_variable_any::notify_one", "condition_variable/std::condition_variable_any::wait", "condition_variable/std::condition_variable_any::wait_for", "condition_variable/std::condition_variable_any::wait_until"]
 dev_langs: ["C++"]
 ms.assetid: d8afe5db-1561-4ec2-8e85-21ea03ee4321
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::condition_variable_any", "std::condition_variable_any::condition_variable_any", "std::condition_variable_any::notify_all", "std::condition_variable_any::notify_one", "std::condition_variable_any::wait", "std::condition_variable_any::wait_for", "std::condition_variable_any::wait_until"]
 ms.workload: ["cplusplus"]
 ---

@@ -2,18 +2,13 @@
 title: "Filling a Bounded Area of an Image with a Color (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["colors [C++], image", "images [C++], colors", "Image editor [C++], colors", "Fill tool"]
 ms.assetid: e647ef83-421b-4818-855d-249b4c4cb5f2
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Filling a Bounded Area of an Image with a Color (Image Editor for Icons)

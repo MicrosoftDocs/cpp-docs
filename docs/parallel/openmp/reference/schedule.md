@@ -2,19 +2,14 @@
 title: "schedule | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["schedule"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["schedule OpenMP clause"]
 ms.assetid: 286f1fc3-6598-4837-b4c8-8b1fa3193965
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # schedule

@@ -2,19 +2,14 @@
 title: "EventTargetArray::Begin Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray::Begin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Begin method"]
 ms.assetid: 1cc7fdfd-a2c4-4b28-93cf-1c82842294ba
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray::Begin Method
