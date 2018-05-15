@@ -1,5 +1,5 @@
 ---
-title: vcpkg\: a C++ package manager for Windows, Linux and MacOS | Microsoft Docs
+title: vcpkg-- A C++ package manager for Windows, Linux and MacOS | Microsoft Docs
 description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
 keywords: vcpkg
 author: mikeblome
@@ -12,7 +12,7 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.workload: ["cplusplus"]
 ---
-# vcpkg: C++ package manager
+# vcpkg: A C++ package manager for Windows, Linux and MacOS
 
 vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows, Linux and MacOS. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg Windows catalog have been tested for compatibility with Visual Studio 2015 and Visual Studio 2017. As of May 2018 there are over 900 libraries in the Windows catalog and over 350 in the Linux/MacOS catalog. The C++ community is adding more libraries to both catalogs on an ongoing basis.
 
