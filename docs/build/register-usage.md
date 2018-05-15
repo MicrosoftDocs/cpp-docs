@@ -10,7 +10,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# Register Usage
+# Register usage
 
 The x64 architecture provides for 16 general-purpose registers (hereafter referred to as integer registers) as well as 16 XMM/YMM registers available for floating-point use. Volatile registers are scratch registers presumed by the caller to be destroyed across a call. Nonvolatile registers are required to retain their values across a function call and must be saved by the callee if used.
 
