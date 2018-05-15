@@ -252,7 +252,6 @@ The contents of a vcpkg instance are:
 |**vcpkg integrate project**|Generate a referencing NuGet package for individual VS project use|
 |**vcpkg export \<pkg>... [opt]...**|Export a package|
 |**vcpkg edit \<pkg>**|Open up a port for editing (uses %EDITOR%, default 'code')|
-|**vcpkg import \<pkg>**|Import a pre-built library|
 |**vcpkg create \<pkg> \<url> [archivename]**|Create a new package|
 |**vcpkg owns \<pat>**|Search for files in installed packages|
 |**vcpkg cache**|List cached compiled packages|
