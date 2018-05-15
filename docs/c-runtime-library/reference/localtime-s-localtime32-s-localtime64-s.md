@@ -23,16 +23,16 @@ Converts a **time_t** time value to a **tm** structure, and corrects for the loc
 
 ```C
 errno_t localtime_s(
-   struct tm* tmDest,
-   const time_t *sourceTime
+   struct tm* const tmDest,
+   time_t const* const sourceTime
 );
 errno_t _localtime32_s(
    struct tm* tmDest,
-   const time32_t *sourceTime
+   __time32_t const* sourceTime
 );
 errno_t _localtime64_s(
    struct tm* tmDest,
-   const _time64_t *sourceTime
+   __time64_t const* sourceTime
 );
 ```
 
