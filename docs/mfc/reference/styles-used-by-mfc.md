@@ -1,7 +1,7 @@
 ---
 title: "Styles Used by MFC | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "05/03/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["vc.mfc.styles"]
@@ -16,9 +16,7 @@ ms.workload: ["cplusplus"]
   
 Use the following style flags to specify window or control appearance and behavior when you create the corresponding MFC object. In most cases, these styles are set in the `dwStyle` parameter of the class `Create` function.  
   
-<a name="button-styles"></a>  
-  
-## Button styles  
+## <a name="button-styles"></a> Button styles  
   
 Button styles apply to [CButton Class](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the `dwStyle` parameter of [CButton::Create](../../mfc/reference/cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951).  
   
@@ -87,9 +85,7 @@ The following table lists additional options that you can use with any button ty
 |`BS_MULTILINE`|Wraps the button text to multiple lines if the text string is too long to fit on a single line in the button rectangle.|  
 |`BS_NOTIFY`|Enables a button to send `BN_DBLCLK`, `BN_KILLFOCUS`, and `BN_SETFOCUS` notification messages to its parent window. Note that buttons send the `BN_CLICKED` notification regardless of whether this style is specified.|  
   
-<a name="combo-box-styles"></a>  
-  
-## Combo-box styles  
+## <a name="combo-box-styles"></a>  Combo-box styles  
   
 The following combo-box styles are available in MFC. For more information about combo-box styles in Windows, see [Combo Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796).  
   
@@ -109,9 +105,7 @@ The following combo-box styles are available in MFC. For more information about 
 |`CBS_SORT`|Automatically sorts strings entered into the list box.|  
 |`CBS_UPPERCASE`|Converts to uppercase all text in both the selection field and the list.|  
   
-<a name="edit-styles"></a>  
-  
-## Edit styles  
+## <a name="edit-styles"></a>  Edit styles  
   
 Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
@@ -132,9 +126,7 @@ Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. 
 |`ES_UPPERCASE`|Converts all characters to uppercase as they are typed into the edit control.|  
 |`ES_WANTRETURN`|Specifies that a carriage return be inserted when the user presses the ENTER key while entering text into a multiple-line edit control in a dialog box. Without this style, pressing the ENTER key has the same effect as pressing the dialog boxs default pushbutton. This style has no effect on a single-line edit control.|  
   
-<a name="frame-window-styles-mfc"></a>  
-  
-## Frame-window styles  
+## <a name="frame-window-styles-mfc"></a> Frame-window styles  
   
 Frame-window styles apply to [CFrameWnd Class](../../mfc/reference/cframewnd-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create).  
   
@@ -142,11 +134,9 @@ Frame-window styles apply to [CFrameWnd Class](../../mfc/reference/cframewnd-cla
 |-----------|-----------------|  
 |`FWS_ADDTOTITLE`|Specifies information to append to the end of a frame window title. For example, "Microsoft Draw - Drawing in Document1". You can specify the strings displayed in the Document Template Strings tab in the Application Wizard. If you need to turn this option off, override the `CWnd::PreCreateWindow` member function.|  
 |`FWS_PREFIXTITLE`|Shows the document name before the application name in a frame window title. For example, "Document - WordPad". You can specify the strings displayed in the Document Template Strings tab in the Application Wizard. If you need to turn this option off, override the `CWnd::PreCreateWindow` member function.|  
-|`FWS_SNAPTOBARS`|Controls sizing of the frame window that encloses a control bar when it is in a floating window rather than docked to a frame window. This style sizes the window to fit the control bar.|  
+|`FWS_SNAPTOBARS`|Controls sizing of the frame window that encloses a control bar when it is in a floating window rather than docked to a frame window. This style sizes the window to fit the control bar.|
   
-<a name="list-box-styles"></a>  
-  
-## List-box styles  
+## <a name="list-box-styles"></a> List-box styles  
   
 List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CListBox::Create](../../mfc/reference/clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149).  
   
@@ -169,9 +159,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 |`LBS_USETABSTOPS`|Allows a list box to recognize and expand tab characters when drawing its strings. The default tab positions are 32 dialog units. (A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit. The dialog base units are computed based on the height and width of the current system font. The `GetDialogBaseUnits` Windows function returns the current dialog base units in pixels.) This style should not be used with `LBS_OWNERDRAWFIXED`.|  
 |`LBS_WANTKEYBOARDINPUT`|The owner of the list box receives `WM_VKEYTOITEM` or `WM_CHARTOITEM` messages whenever the user presses a key while the list box has input focus. This allows an application to perform special processing on the keyboard input.|  
   
-<a name="message-box-styles"></a>  
-  
-## Message-box styles  
+##<a name="message-box-styles"></a>  Message-box styles  
   
 Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the `nType` parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505).  
   
@@ -212,9 +200,7 @@ The following message-box styles are available.
 |`MB_DEFBUTTON2`|The second button is the default.|  
 |`MB_DEFBUTTON3`|The third button is the default.|  
   
-<a name="scroll-bar-styles"></a>  
-  
-## Scroll-bar styles  
+## <a name="scroll-bar-styles"></a> Scroll-bar styles  
   
 Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
   
@@ -231,9 +217,7 @@ Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-cla
 |`SBS_TOPALIGN`|Used with the `SBS_HORZ` style. The top edge of the scroll bar is aligned with the top edge of the rectangle specified in the `Create` member function. The scroll bar has the default height for system scroll bars.|  
 |`SBS_VERT`|Designates a vertical scroll bar. If neither the `SBS_RIGHTALIGN` nor `SBS_LEFTALIGN` style is specified, the scroll bar has the height, width, and position given in the `Create` member function.|  
   
-<a name="static-styles"></a>  
-  
-## Static styles  
+## <a name="static-styles"></a> Static styles  
   
 Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
   
@@ -267,9 +251,7 @@ Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) obj
 |`SS_WHITERECT`|Specifies a rectangle filled with the color used to fill the window background. The default is white.|  
 |`SS_WORDELLIPSIS`|Truncates text that does not fit and adds ellipses.|  
   
-<a name="window-styles"></a>  
-  
-## Window styles  
+## <a name="window-styles"></a> Window styles  
   
 Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
   
@@ -303,9 +285,7 @@ Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. 
 |`WS_VISIBLE`|Creates a window that is initially visible.|  
 |`WS_VSCROLL`|Creates a window that has a vertical scroll bar.|  
   
-<a name="extended-window-styles"></a>  
-  
-## Extended window styles  
+## <a name="extended-window-styles"></a> Extended window styles  
   
 Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwExStyle` parameter of [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543).  
   

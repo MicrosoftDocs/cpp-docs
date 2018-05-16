@@ -76,6 +76,6 @@ To find an ATL macro by category, see the following topics.
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
+ [Classes and structs](../../atl/reference/atl-classes.md)  
  [Typedefs](../../atl/reference/atl-typedefs.md)   
- [Classes](../../atl/reference/atl-classes.md)
+

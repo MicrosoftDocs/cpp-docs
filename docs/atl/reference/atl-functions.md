@@ -63,6 +63,5 @@ To find an ATL function by category, see the following topics.
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Macros](../../atl/reference/atl-macros.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
  [Typedefs](../../atl/reference/atl-typedefs.md)   
- [Classes](../../atl/reference/atl-classes.md)
+ [Classes and structs](../../atl/reference/atl-classes.md)

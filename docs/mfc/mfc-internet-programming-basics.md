@@ -32,8 +32,6 @@ Microsoft provides many APIs for programming both client and server applications
   
 -   [HTML Basics](../mfc/html-basics.md)  
   
--   [HTTP Basics](../mfc/http-basics.md)  
-  
 ## Related Sections  
   
 -   [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)  
