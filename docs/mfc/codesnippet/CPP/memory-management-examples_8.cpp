@@ -1,0 +1,1 @@
+         CMyClass myClass("Joe Smith");

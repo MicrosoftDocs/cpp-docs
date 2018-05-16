@@ -1,0 +1,4 @@
+BEGIN_PROPPAGEIDS(CMyAxUICtrl, 2)
+   PROPPAGEID(CMyAxUIPropPage::guid)
+   PROPPAGEID(CAddtlPropPage::guid)
+END_PROPPAGEIDS(CMyAxUICtrl)
