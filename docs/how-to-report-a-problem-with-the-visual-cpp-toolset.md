@@ -338,6 +338,8 @@ Create your repro as a minimal IDE project, then package it by compressing the e
 
 There are a couple of good ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
 
+If you're concerned about making your data public, it's possible to specify who can see replies and attachments once you've created a problem report. Don't put the data in the initial report, which is public. In the report you created, in the reply editor, use the dropdown control below the **Submit** and **Cancel** buttons to specify the audience for your reply. Only the people you specify can see these private replies and any images, links, or code you include.
+
 > [!NOTE]
 > Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
 
