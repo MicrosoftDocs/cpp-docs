@@ -276,9 +276,11 @@ To prepare to validate that the preprocessed file still reproduces the problem,
 
 Confirm that the preprocessed file still reproduces the problem, as above.
 
-#### Steps for C++ Modules repros
+### Preprocessed C++ Modules repros
 
 If you're using the Modules feature of the C++ compiler, there are some different steps required to create and validate a preprocessed repro.
+
+#### To preprocess a source code file that uses a module
 
 1. Capture the command line arguments used to build your repro, as described in [To report the contents of the command line](#to-report-the-contents-of-the-command-line).
 
@@ -294,7 +296,7 @@ If you're using the Modules feature of the C++ compiler, there are some differen
 
 1. In the developer command prompt console window, enter the command **cl /P** *arguments* *modulename.ixx*, where *arguments* is the list of arguments captured above, and *modulename.ixx* is the name of the file that creates the module interface.
 
-Finally, attach the preprocessed repros (filename.i and modulename.i) along with the .ifc output to your report.
+Finally, attach the preprocessed repros (*filename*.i and *modulename*.i) along with the .ifc output to your report.
 
 ### Link repros
 
