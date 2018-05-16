@@ -12,17 +12,11 @@ ms.workload: ["cplusplus"]
 
 If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them. If the issue is in our documentation, we want to know about that, too.
 
-## How to report a C++ documentation issue
-
-We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already, but once you do, you can see all of our documentation issues, their status, and get notifications when changes are made for the issue you reported. For more information, see [A New Feedback System Is Coming to docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
-
-When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Please don't edit this information. Just append the details about what's wrong and, if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
-
-## How to report a C++ product issue
+## How to report a C++ toolset issue
 
 The best way to let us know about a problem is to send us a report that includes a description of the problem you've encountered, details about how you're building your program, and a *repro*, a complete test case we can use to reproduce the problem on our own machines. This information lets us quickly verify that the problem exists in our code and is not local to your environment, to determine whether it affects other versions of the compiler, and to diagnose its cause.
 
-In thie sections below, you'll read about what makes a good report, how to generate a repro for the kind of issue you've found, and how to send your report to the product team. Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
+In the sections below, you'll read about what makes a good report, how to generate a repro for the kind of issue you've found, and how to send your report to the product team. Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
 
 ## How to prepare your report
 
@@ -48,16 +42,25 @@ We need the full version information and the target architecture of the toolset 
 
 1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project. For example, if you build by using Visual Studio 2017 on x64 for x64 targets, choose **x64 Native Tools Command Prompt for VS 2017**. For more information, see [Developer command prompt shortcuts](build/building-on-the-command-line.md#developer-command-prompt-shortcuts).
 
-1. In the developer command prompt console window, enter the command **cl**.
+1. In the developer command prompt console window, enter the command **cl /Bv**.
 
 The output should look similar to this:
 
 ```Output
-C:\Users\username\Source>cl
-Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x64
+C:\Users\username\Source>cl /Bv
+Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26428.1 for x86
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
-usage: cl [ option... ] filename... [ /link linkoption... ]
+Compiler Passes:
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\cl.exe:        Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\c1.dll:        Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\c1xx.dll:      Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\c2.dll:        Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\link.exe:      Version 14.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\mspdb140.dll:  Version 14.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\1033\clui.dll: Version 19.14.26428.1
+
+cl : Command line error D8003 : missing source filename
 ```
 
 Copy and paste the entire output into your report.
@@ -243,11 +246,55 @@ After you have generated the preprocessed file, its a good idea to make sure tha
 
 #### To confirm that the error still repros with the preprocessed file
 
-1. In the developer command prompt console window, enter the command **cl** *arguments* **/TP** *filename***.i** to tell cl.exe to compile the preprocessed file as a C++ source file, where *arguments* is the list of arguments captured above, but with any **/D** and **/I** arguments removed (because they have already been included in the preprocessed file); and where *filename***.i** is the name of your preprocessed file.
+1. In the developer command prompt console window, enter the command **cl** *arguments* **/TP** *filename*.i to tell cl.exe to compile the preprocessed file as a C++ source file, where *arguments* is the list of arguments captured above, but with any **/D** and **/I** arguments removed (because they have already been included in the preprocessed file); and where *filename*.i is the name of your preprocessed file.
 
 1. Confirm that the problem is reproduced.
 
 Finally, attach the preprocessed repro *filename*.i to your report.
+
+#### Extra steps for C++/CX and WinRT / UWP repros
+
+If you're using C++/CX to build your executable, there are some extra steps required to create and validate a preprocessed repro.
+
+1. Create a preprocessed source file as described in [To preprocess a source code file](#to-preprocess-a-source-code-file).
+
+1. Search the generated _filename_.i file for **#using** directives.
+
+1. Make a list of all of the referenced files. Leave out any Windows\*.winmd files, platform.winmd files, and mscorlib.dll.
+
+To prepare to validate that the preprocessed file still reproduces the problem,
+
+1. Create a new directory for the preprocessed file and copy it to the new directory.
+
+1. Copy the .winmd files from your **#using** list to the new directory.
+
+1. Create an empty vccorlib.h file in the new directory.
+
+1. Edit the preprocessed file to remove any **#using** directives for mscorlib.dll.
+
+1. Edit the preprocessed file to change any absolute paths to just the bare filenames for the copied .winmd files.
+
+Confirm that the preprocessed file still reproduces the problem, as above.
+
+#### Steps for C++ Modules repros
+
+If you're using the Modules feature of the C++ compiler, there are some different steps required to create and validate a preprocessed repro.
+
+1. Capture the command line arguments used to build your repro, as described in [To report the contents of the command line](#to-report-the-contents-of-the-command-line).
+
+1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project.
+
+1. Change to the directory that contains your repro project.
+
+1. In the developer command prompt console window, enter the command **cl /P** *arguments* *filename.cpp*, where *arguments* is the list of arguments captured above, and *filename.cpp* is the name of the source file that consumes the module.
+
+1. Change to the directory that contains the repro project that built the module interface (the .ifc output).
+
+1. Capture the command line arguments used to build your module interface.
+
+1. In the developer command prompt console window, enter the command **cl /P** *arguments* *modulename.ixx*, where *arguments* is the list of arguments captured above, and *modulename.ixx* is the name of the file that creates the module interface.
+
+Finally, attach the preprocessed repros (filename.i and modulename.i) along with the .ifc output to your report.
 
 ### Link repros
 
@@ -283,7 +330,7 @@ Create your repro as a minimal IDE project, then package it by compressing the e
 
 ## Ways to send your report
 
-There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. It's also possible to send an email with your report, but the first two methods are preferred. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
+There are a couple of good ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
 
 > [!NOTE]
 > Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
@@ -304,26 +351,12 @@ In the Developer Community banner near the top of each page is a search box you 
 
 If your problem has not been reported before, choose the **Report a problem** button next to the search box on the Developer Community page. You may be asked to sign in to your Visual Studio account and to agree to give the Developer Community app access to your profile. When you are signed in, you go directly to a page where you can report the problem. You can include your repro code and command line, screen shots, links to related discussions, and any other information you think is relevant and useful.
 
-### Send an Email
-
-Email is another way to send your report directly to the Visual C++ team. You can reach us at [compilercrash@microsoft.com](mailto:compilercrash@microsoft.com). Use this method only if the other two are unavailable, since email is not tracked as closely as the problems reported to the Developer Community by using the **Report a Problem** tool or the web pages, and comments and solutions are not visible to other Visual Studio users.
-
-If you choose to send your report by email, you can use the following template as the body of your email message. Don't forget to attach source code or other files if you aren't including that information in the email body.
-
-```Example
-To: compilercrash@microsoft.com
-Subject: Visual C++ Error Report
------
-
-Compiler version:
-
-CL.EXE command line:
-
-Problem description:
-
-Source code and repro steps:
-
-```
-
 > [!TIP]
-> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the **Report a Problem tool** can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. These kinds of errors can also be reported on the [Developer Community](https://developercommunity.visualstudio.com/) site. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.
+> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the **Report a Problem tool** can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. These kinds of errors can also be reported on the [Developer Community](https://developercommunity.visualstudio.com/) site.
+
+## How to report a C++ documentation issue
+
+We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already, but once you do, you can see all of our documentation issues, their status, and get notifications when changes are made for the issue you reported. For more information, see [A New Feedback System Is Coming to docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
+
+When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Please don't edit this information. Just append the details about what's wrong and, if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
+
