@@ -2,18 +2,13 @@
 title: "Mapping Windows Messages to Your Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "message maps [MFC], in dialog class", "Windows messages [MFC], mapping in dialog classes", "messages to dialog class [MFC]", "mappings [MFC], messages to dialog class [MFC]", "message maps [MFC], mapping Windows messages to classes", "messages to dialog class [MFC], mapping"]
 ms.assetid: a4c6fd1f-1d33-47c9-baa0-001755746d6d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Mapping Windows Messages to Your Class

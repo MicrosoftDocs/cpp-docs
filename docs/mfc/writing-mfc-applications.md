@@ -2,18 +2,13 @@
 title: "Writing MFC Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Internet applications [MFC], MFC", "MFC, Internet applications", "application wizards [MFC], Internet applications", "MFC, application development"]
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Writing MFC Applications

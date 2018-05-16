@@ -2,19 +2,14 @@
 title: "File I-O Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.file"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["disk file classes [MFC]", "stdio classes [MFC]", "OLE streams [MFC]", "I/O [MFC], MFC classes", "translated stream classes [MFC]", "file I/O classes [MFC]", "I/O [MFC], classes", "sockets classes [MFC]", "stream classes [MFC]", "memory file classes [MFC]"]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # File I/O Classes

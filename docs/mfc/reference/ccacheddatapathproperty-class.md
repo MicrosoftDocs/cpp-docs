@@ -2,19 +2,14 @@
 title: "CCachedDataPathProperty Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty::CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty::m_Cache"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCachedDataPathProperty [MFC], CCachedDataPathProperty", "CCachedDataPathProperty [MFC], m_Cache"]
 ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CCachedDataPathProperty Class

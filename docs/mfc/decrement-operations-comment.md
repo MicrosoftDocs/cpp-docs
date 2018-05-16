@@ -2,18 +2,13 @@
 title: "-- Operations Comment | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Operations comment in MFC source files", "comments, MFC", "MFC source files, Operations comments"]
 ms.assetid: f3bff48d-26be-4db6-8435-9e4d079838c9
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # // Operations Comment

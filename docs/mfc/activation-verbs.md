@@ -2,18 +2,13 @@
 title: "Activation: Verbs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["verbs [MFC]", "OLE [MFC], activation", "edit verb [MFC]", "activation [MFC], verbs", "OLE [MFC], editing", "Primary verb [MFC]", "OLE activation {MFC]"]
 ms.assetid: eb56ff23-1de8-43ad-abeb-dc7346ba7b70
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Activation: Verbs

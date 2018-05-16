@@ -2,19 +2,14 @@
 title: "CNetAddressCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CNetAddressCtrl", "AFXCMN/CNetAddressCtrl", "AFXCMN/CNetAddressCtrl::CNetAddressCtrl", "AFXCMN/CNetAddressCtrl::Create", "AFXCMN/CNetAddressCtrl::CreateEx", "AFXCMN/CNetAddressCtrl::DisplayErrorTip", "AFXCMN/CNetAddressCtrl::GetAddress", "AFXCMN/CNetAddressCtrl::GetAllowType", "AFXCMN/CNetAddressCtrl::SetAllowType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNetAddressCtrl [MFC], CNetAddressCtrl", "CNetAddressCtrl [MFC], Create", "CNetAddressCtrl [MFC], CreateEx", "CNetAddressCtrl [MFC], DisplayErrorTip", "CNetAddressCtrl [MFC], GetAddress", "CNetAddressCtrl [MFC], GetAllowType", "CNetAddressCtrl [MFC], SetAllowType"]
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CNetAddressCtrl Class

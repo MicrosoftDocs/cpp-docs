@@ -2,18 +2,13 @@
 title: "Creating Modeless Dialog Boxes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], modeless", "modeless dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating"]
 ms.assetid: 70d78c7f-3d40-477b-9f78-0f33c359f88b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating Modeless Dialog Boxes

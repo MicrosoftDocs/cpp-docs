@@ -2,19 +2,14 @@
 title: "CDaoFieldExchange Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoFieldExchange Class

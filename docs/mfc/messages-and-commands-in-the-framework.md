@@ -2,18 +2,13 @@
 title: "Messages and Commands in the Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["events [MFC], command routing in MFC", "event-driven programming [MFC]", "events [MFC], event-driven programming", "message-driven programming [MFC]"]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Messages and Commands in the Framework

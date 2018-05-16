@@ -2,19 +2,14 @@
 title: "CD2DBrush Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DBrush", "AFXRENDERTARGET/CD2DBrush", "AFXRENDERTARGET/CD2DBrush::CD2DBrush", "AFXRENDERTARGET/CD2DBrush::Attach", "AFXRENDERTARGET/CD2DBrush::Destroy", "AFXRENDERTARGET/CD2DBrush::Detach", "AFXRENDERTARGET/CD2DBrush::Get", "AFXRENDERTARGET/CD2DBrush::GetOpacity", "AFXRENDERTARGET/CD2DBrush::GetTransform", "AFXRENDERTARGET/CD2DBrush::IsValid", "AFXRENDERTARGET/CD2DBrush::SetOpacity", "AFXRENDERTARGET/CD2DBrush::SetTransform", "AFXRENDERTARGET/CD2DBrush::m_pBrush", "AFXRENDERTARGET/CD2DBrush::m_pBrushProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DBrush [MFC], CD2DBrush", "CD2DBrush [MFC], Attach", "CD2DBrush [MFC], Destroy", "CD2DBrush [MFC], Detach", "CD2DBrush [MFC], Get", "CD2DBrush [MFC], GetOpacity", "CD2DBrush [MFC], GetTransform", "CD2DBrush [MFC], IsValid", "CD2DBrush [MFC], SetOpacity", "CD2DBrush [MFC], SetTransform", "CD2DBrush [MFC], m_pBrush", "CD2DBrush [MFC], m_pBrushProperties"]
 ms.assetid: 0d2c0857-2261-48a8-8ee0-a88cbf08499a
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DBrush Class

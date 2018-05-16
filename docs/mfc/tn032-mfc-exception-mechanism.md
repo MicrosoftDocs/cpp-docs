@@ -2,19 +2,14 @@
 title: "TN032: MFC Exception Mechanism | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.exceptions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN032", "MFC, exceptions", "CException class [MFC], using"]
 ms.assetid: 0271f0aa-82cb-47a2-b7ea-e88126fc7e43
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN032: MFC Exception Mechanism

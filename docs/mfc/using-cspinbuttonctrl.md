@@ -2,19 +2,14 @@
 title: "Using CSpinButtonCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CSpinButtonCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["up-down controls [MFC], spin button control", "up-down controls", "spin button control", "CSpinButtonCtrl class [MFC], using"]
 ms.assetid: a91db36b-e11e-42ef-8e89-51915cc486d2
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CSpinButtonCtrl

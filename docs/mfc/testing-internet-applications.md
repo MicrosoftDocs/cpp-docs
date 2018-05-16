@@ -2,18 +2,13 @@
 title: "Testing Internet Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Web applications [MFC], testing", "debugging Web applications [MFC], testing applications", "testing [MFC], Internet applications", "debugging [MFC], Web applications", "Internet debugging and testing"]
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Testing Internet Applications

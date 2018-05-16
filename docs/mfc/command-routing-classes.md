@@ -2,19 +2,14 @@
 title: "Command Routing Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.command"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], classes"]
 ms.assetid: 4b50e689-2c54-4e6c-90f0-37333e22b2a1
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command Routing Classes

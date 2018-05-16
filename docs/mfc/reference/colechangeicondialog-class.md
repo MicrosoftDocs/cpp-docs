@@ -2,19 +2,14 @@
 title: "COleChangeIconDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::DoChangeIcon", "AFXODLGS/COleChangeIconDialog::DoModal", "AFXODLGS/COleChangeIconDialog::GetIconicMetafile", "AFXODLGS/COleChangeIconDialog::m_ci"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleChangeIconDialog [MFC], COleChangeIconDialog", "COleChangeIconDialog [MFC], DoChangeIcon", "COleChangeIconDialog [MFC], DoModal", "COleChangeIconDialog [MFC], GetIconicMetafile", "COleChangeIconDialog [MFC], m_ci"]
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleChangeIconDialog Class

@@ -2,18 +2,13 @@
 title: "Technical Notes by Number | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.tables.mfc.technotes"]
 dev_langs: ["C++"]
 ms.assetid: aaa449be-9167-4510-a490-af872c4f60a2
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Technical Notes by Number

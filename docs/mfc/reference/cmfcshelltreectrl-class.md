@@ -2,19 +2,14 @@
 title: "CMFCShellTreeCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::EnableShellContextMenu", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetItemPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetRelatedList", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnChildNotify", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemIcon", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemText", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::Refresh", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SelectPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetRelatedList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCShellTreeCtrl [MFC], EnableShellContextMenu", "CMFCShellTreeCtrl [MFC], GetFlags", "CMFCShellTreeCtrl [MFC], GetItemPath", "CMFCShellTreeCtrl [MFC], GetRelatedList", "CMFCShellTreeCtrl [MFC], OnChildNotify", "CMFCShellTreeCtrl [MFC], OnGetItemIcon", "CMFCShellTreeCtrl [MFC], OnGetItemText", "CMFCShellTreeCtrl [MFC], Refresh", "CMFCShellTreeCtrl [MFC], SelectPath", "CMFCShellTreeCtrl [MFC], SetFlags", "CMFCShellTreeCtrl [MFC], SetRelatedList"]
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCShellTreeCtrl Class

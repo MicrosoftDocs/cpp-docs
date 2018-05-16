@@ -2,18 +2,13 @@
 title: "Accessing File Status | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["files [MFC], status information", "examples [MFC], file status", "files [MFC], accessing", "file status [MFC]", "status of files [MFC]"]
 ms.assetid: 1b8891d6-eb0f-4037-a837-4928fe595222
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Accessing File Status

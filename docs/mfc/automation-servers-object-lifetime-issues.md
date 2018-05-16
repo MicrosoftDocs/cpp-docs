@@ -2,18 +2,13 @@
 title: "Automation Servers: Object-Lifetime Issues | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], lifetime", "lifetime, automation server", "Automation servers, object lifetime", "servers, lifetime of Automation"]
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Automation Servers: Object-Lifetime Issues

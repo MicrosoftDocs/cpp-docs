@@ -2,18 +2,13 @@
 title: "Printing in Rich Edit Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["printing [MFC], CRichEditCtrl", "rich edit controls [MFC], printing", "CRichEditCtrl class [MFC], printing"]
 ms.assetid: dbda0e40-018f-424e-b5d8-7b489aaf27af
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Printing in Rich Edit Controls

@@ -2,19 +2,14 @@
 title: "List-Box Styles | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["LBS_STANDARD", "LBS_NODATA", "LBS_OWNERDRAWVARIABLE", "LBS_EXTENDEDSEL", "LBS_USETABSTOPS", "LBS_WANTKEYBOARDINPUT", "LBS_NOTIFY", "LBS_DISABLENOSCROLL", "LBS_HASSTRINGS", "LBS_NOREDRAW", "LBS_NOSEL", "LBS_NOINTEGRALHEIGHT", "LBS_MULTICOLUMN", "LBS_SORT", "LBS_MULTIPLESEL", "LBS_OWNERDRAWFIXED"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LBS_NOSEL constant [MFC]", "LBS_NOREDRAW constant [MFC]", "LBS_HASSTRINGS constant [MFC]", "LBS_OWNERDRAWFIXED constant [MFC]", "LBS_WANTKEYBOARDINPUT constant [MFC]", "LBS_STANDARD constant [MFC]", "LBS_MULTIPLESEL constant [MFC]", "LBS_OWNERDRAWVARIABLE constant [MFC]", "LBS_DISABLENOSCROLL constant [MFC]", "LBS_NODATA constant [MFC]", "list boxes [MFC], styles", "LBS_EXTENDEDSEL constant [MFC]", "LBS_MULTICOLUMN constant [MFC]", "LBS_NOTIFY constant [MFC]", "LBS_USETABSTOPS constant [MFC]", "LBS_NOINTEGRALHEIGHT constant [MFC]", "LBS_SORT constant"]
 ms.assetid: 3f357b8d-9118-4f41-9e28-02ed92d1e88f
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # List-Box Styles

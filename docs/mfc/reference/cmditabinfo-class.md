@@ -2,19 +2,14 @@
 title: "CMDITabInfo Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMDITabInfo", "AFXMDICLIENTAREAWND/CMDITabInfo", "AFXMDICLIENTAREAWND/CMDITabInfo::Serialize", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bAutoColor", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bDocumentMenu", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bEnableTabSwap", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bFlatFrame", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCloseButton", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCustomTooltips", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabIcons", "AFXMDICLIENTAREAWND/CMDITabInfo::m_nTabBorderSize", "AFXMDICLIENTAREAWND/CMDITabInfo::m_style", "AFXMDICLIENTAREAWND/CMDITabInfo::m_tabLocation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMDITabInfo [MFC], Serialize", "CMDITabInfo [MFC], m_bAutoColor", "CMDITabInfo [MFC], m_bDocumentMenu", "CMDITabInfo [MFC], m_bEnableTabSwap", "CMDITabInfo [MFC], m_bFlatFrame", "CMDITabInfo [MFC], m_bTabCloseButton", "CMDITabInfo [MFC], m_bTabCustomTooltips", "CMDITabInfo [MFC], m_bTabIcons", "CMDITabInfo [MFC], m_nTabBorderSize", "CMDITabInfo [MFC], m_style", "CMDITabInfo [MFC], m_tabLocation"]
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMDITabInfo Class

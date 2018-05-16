@@ -2,18 +2,13 @@
 title: "Active Document Containers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], containers", "active document containers [MFC]", "containers [MFC], active document", "MFC COM, active document containment"]
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Active Document Containers

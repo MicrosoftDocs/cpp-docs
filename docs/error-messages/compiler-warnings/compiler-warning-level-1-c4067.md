@@ -13,35 +13,45 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4067
-unexpected tokens following preprocessor directive - expected a newline  
-  
- The compiler found and ignored extra characters following a preprocessor directive. This warning appears only under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).  
-  
-```  
-// C4067a.cpp  
-// compile with: /DX /Za /W1  
-#pragma warning(default:4067)  
-#if defined(X)  
-#else  
-#endif v   // C4067  
-int main()  
-{  
-}  
-```  
-  
-### To resolve this warning, try the following:  
-  
-1.  Compile with **/Ze**.  
-  
-2.  Use comment delimiters:  
-  
-```  
-// C4067b.cpp  
-// compile with: /DX /Za /W1  
-#if defined(X)  
-#else  
-#endif  
-int main()  
-{  
-}  
+
+> unexpected tokens following preprocessor directive - expected a newline
+
+## Remarks
+
+The compiler found and ignored extra characters following a preprocessor directive. This can be caused by any unexpected characters, though a common cause is a stray semicolon after the directive. Comments do not cause this warning. The **/Za** compiler option enables this warning for more preprocessor directives than the default setting.
+
+## Example
+
+```cpp
+// C4067a.cpp
+// compile with: cl /EHsc /DX /W1 /Za C4067a.cpp
+#include <iostream>
+#include <string> s     // C4067
+#if defined(X);         // C4067
+std::string s{"X is defined"};
+#else
+std::string s{"X is not defined"};
+#endif;                 // C4067 only under /Za
+int main()
+{
+    std::cout << s << std::endl;
+}
+```
+
+To resolve this warning, delete the stray characters, or move them into a comment block. Certain C4067 warnings may be disabled by removing the **/Za** compiler option.
+
+```cpp
+// C4067b.cpp
+// compile with: cl /EHsc /DX /W1 C4067b.cpp
+#include <iostream>
+#include <string>
+#if defined(X)
+std::string s{"X is defined"};
+#else
+std::string s{"X is not defined"};
+#endif
+int main()
+{
+    std::cout << s << std::endl;
+}
 ```

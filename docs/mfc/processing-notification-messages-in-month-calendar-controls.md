@@ -2,18 +2,13 @@
 title: "Processing Notification Messages in Month Calendar Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], notifications", "CMonthCalCtrl class [MFC], day states", "month calendar controls [MFC], notification messages", "notifications [MFC], for CMonthCalCtrl", "notifications [MFC], month calendar control"]
 ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in Month Calendar Controls

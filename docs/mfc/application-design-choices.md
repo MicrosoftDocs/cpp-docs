@@ -2,18 +2,13 @@
 title: "Application Design Choices | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Application Design Choices

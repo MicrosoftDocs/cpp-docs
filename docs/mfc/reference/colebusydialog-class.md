@@ -2,19 +2,14 @@
 title: "COleBusyDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleBusyDialog", "AFXODLGS/COleBusyDialog", "AFXODLGS/COleBusyDialog::COleBusyDialog", "AFXODLGS/COleBusyDialog::DoModal", "AFXODLGS/COleBusyDialog::GetSelectionType", "AFXODLGS/COleBusyDialog::m_bz"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleBusyDialog [MFC], COleBusyDialog", "COleBusyDialog [MFC], DoModal", "COleBusyDialog [MFC], GetSelectionType", "COleBusyDialog [MFC], m_bz"]
 ms.assetid: c881a532-9672-4c41-b51b-5ce4a7246a6b
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleBusyDialog Class

@@ -2,18 +2,13 @@
 title: "Sequence of Operations for Creating Database Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], database", "database applications [MFC]", "database applications [MFC], creating", "MFC, database applications"]
 ms.assetid: 9371da59-8536-43cd-8314-706ad320e2ec
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Creating Database Applications

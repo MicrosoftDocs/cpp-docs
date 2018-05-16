@@ -2,19 +2,14 @@
 title: "Using CObject | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["examples [MFC], CObject", "root base class for MFC", "derived classes [MFC], from CObject", "MFC, base class", "CObject class [MFC]"]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CObject

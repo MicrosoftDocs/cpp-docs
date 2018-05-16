@@ -2,19 +2,14 @@
 title: "Using CHeaderCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CHeaderCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["header controls [MFC], using", "CHeaderCtrl class [MFC]"]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CHeaderCtrl

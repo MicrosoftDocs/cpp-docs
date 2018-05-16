@@ -2,19 +2,14 @@
 title: "CMemFile Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMemFile", "AFX/CMemFile", "AFX/CMemFile::CMemFile", "AFX/CMemFile::Attach", "AFX/CMemFile::Detach", "AFX/CMemFile::Alloc", "AFX/CMemFile::Free", "AFX/CMemFile::GrowFile", "AFX/CMemFile::Memcpy", "AFX/CMemFile::Realloc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMemFile [MFC], CMemFile", "CMemFile [MFC], Attach", "CMemFile [MFC], Detach", "CMemFile [MFC], Alloc", "CMemFile [MFC], Free", "CMemFile [MFC], GrowFile", "CMemFile [MFC], Memcpy", "CMemFile [MFC], Realloc"]
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMemFile Class

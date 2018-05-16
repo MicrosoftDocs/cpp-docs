@@ -2,18 +2,13 @@
 title: "Document-View Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CView class [MFC], view architecture", "CDocument class [MFC]", "MFC, views", "views [MFC], MFC document/view model", "document objects [MFC]", "document objects [MFC], MFC document/view model", "MFC, documents", "documents [MFC], MFC document/view model", "document objects [MFC], document/view architecture"]
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Document/View Architecture
