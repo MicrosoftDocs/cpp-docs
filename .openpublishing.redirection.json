@@ -32,7 +32,7 @@
         },
         {
             "source_path": "docs/atl/reference/atl-archetypes.md",
-            "redirect_url": "cpp/atl/reference/worker-archetype",
+            "redirect_url": "/cpp/atl/reference/worker-archetype",
             "redirect_document_id": false
         },
         {
@@ -207,17 +207,17 @@
         },
         {
             "source_path": "docs/cppcx/index.md",
-            "redirect_url": "cpp/cppcx/visual-c-language-reference-c-cx",
+            "redirect_url": "/cpp/cppcx/visual-c-language-reference-c-cx",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/cppcx/operator-subtracttype-hat.md",
-            "redirect_url": "cpp/cppcx/operator-type-hat",
+            "redirect_url": "/cpp/cppcx/operator-type-hat",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/cppcx/operator-subtractwindows-ui-xaml-interop-typename.md",
-            "redirect_url": "cpp/cppcx/operator-windows-ui-xaml-interop-typename",
+            "redirect_url": "/cpp/cppcx/operator-windows-ui-xaml-interop-typename",
             "redirect_document_id": false
         },
         {
