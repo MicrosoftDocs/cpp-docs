@@ -22,8 +22,6 @@
 # [tool-errors](error-messages\tool-errors\TOC.md)
 # [ide](ide\TOC.md)
 # [intrinsics](intrinsics\TOC.md)
-# [mfc](mfc\TOC.md)
-# [reference](mfc\reference\TOC.md)
 # [misc](misc\TOC.md)
 # [parallel](parallel\TOC.md)
 # [amp](parallel\amp\TOC.md)
