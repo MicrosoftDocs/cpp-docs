@@ -291,7 +291,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnChangeCbChain](#onchangecbchain)|Notifies that a specified window is being removed from the chain.|  
 |[CWnd::OnChangeUIState](#onchangeuistate)|Called when the user interface (UI) state should be changed.|  
 |[CWnd::OnChar](#onchar)|Called when a keystroke translates to a non-system character.|  
-|[CWnd::OnCharToItem](#onchartoitem)|Called by a child list box with the [LBS_WANTKEYBOARDINPUT](list-box-styles.md) style in response to a [WM_CHAR](#onchar) message.|  
+|[CWnd::OnCharToItem](#onchartoitem)|Called by a child list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style in response to a [WM_CHAR](#onchar) message.|  
 |[CWnd::OnChildActivate](#onchildactivate)|Called for multiple document interface (MDI) child windows whenever the size or position of `CWnd` changes or `CWnd` is activated.|  
 |[CWnd::OnChildNotify](#onchildnotify)|Called by a parent window to give a notifying control a chance to respond to a control notification.|  
 |[CWnd::OnClipboardUpdate](#onclipboardupdate)|Called when the contents of the clipboard have changed.|  

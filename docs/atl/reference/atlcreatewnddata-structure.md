@@ -39,7 +39,7 @@ This structure contains class instance data in windowing code in ATL.
  **Header:** atlbase.h  
   
 ## See Also  
- [Structures](../../atl/reference/atl-structures.md)
+ [Classes and structs](../../atl/reference/atl-classes.md)
 
 
 

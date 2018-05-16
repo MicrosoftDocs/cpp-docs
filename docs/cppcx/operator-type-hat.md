@@ -47,5 +47,5 @@ Type^ tx2 = (Type^)(tn);
 ### Requirements  
   
 ## See Also  
- [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)   
+ [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)   
  [Platform::Type Class](../cppcx/platform-type-class.md)
