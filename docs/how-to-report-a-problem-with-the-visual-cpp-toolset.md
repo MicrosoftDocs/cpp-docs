@@ -85,11 +85,11 @@ Copy and paste the entire command line into your report.
 
 We need a detailed description of the problem you've encountered so that we can verify that we see the same effect on our machines; its also sometimes useful for us to know what you were trying to accomplish, and what you expected to happen.
 
-Please provide the exact error messages given by the toolset, or the exact runtime behavior you see. We need this information to verify that we've properly reproduced the issue. Please include all of the compiler output, not just the last error message. We need to see everything that led up to the issue you report. If you can duplicate the issue by using the command line compiler, that compiler output is preferred; the IDE and other build systems may filter the error messages you see, or only capture the first line of an error message.
+Please provide the **exact error messages** given by the toolset, or the exact runtime behavior you see. We need this information to verify that we've properly reproduced the issue. Please include **all** of the compiler output, not just the last error message. We need to see everything that led up to the issue you report. If you can duplicate the issue by using the command line compiler, that compiler output is preferred; the IDE and other build systems may filter the error messages you see, or only capture the first line of an error message.
 
 If the issue is that the compiler accepts invalid code and does not generate a diagnostic, please note this in your report.
 
-To report a runtime behavior problem, include an exact copy of what the program prints out, and what you expect to see. Ideally, this is embedded in the output statement itself, for example, `printf("This should be 5: %d\n", actual_result);`. If your program crashes or hangs, mention that as well.
+To report a runtime behavior problem, include an **exact copy** of what the program prints out, and what you expect to see. Ideally, this is embedded in the output statement itself, for example, `printf("This should be 5: %d\n", actual_result);`. If your program crashes or hangs, mention that as well.
 
 Add any other details that might help us diagnose the problem you experienced, such as any work-arounds you may have found. Avoid repeating information found elsewhere in your report.
 
@@ -242,6 +242,8 @@ A *preprocessed repro* is a single source file that demonstrates a problem, gene
 
 1. In the developer command prompt console window, enter the command **cl /P** *arguments* *filename.cpp*, where *arguments* is the list of arguments captured above, and *filename.cpp* is the name of your repro source file. This command replicates the command line used for the repro, but stops the compilation after the preprocessor pass, and outputs the preprocessed source code to *filename*.i.
 
+If you are preprocessing a C++/CX source code file, or you are using the C++ Modules feature, some additional steps are required. For more information, see the sections below.
+
 After you have generated the preprocessed file, its a good idea to make sure that the problem still repros using the preprocessed file.
 
 #### To confirm that the error still repros with the preprocessed file
@@ -252,9 +254,11 @@ After you have generated the preprocessed file, its a good idea to make sure tha
 
 Finally, attach the preprocessed repro *filename*.i to your report.
 
-#### Extra steps for C++/CX and WinRT / UWP repros
+### Preprocessed C++/CX WinRT/UWP code repros
 
 If you're using C++/CX to build your executable, there are some extra steps required to create and validate a preprocessed repro.
+
+#### To preprocess C++/CX source code
 
 1. Create a preprocessed source file as described in [To preprocess a source code file](#to-preprocess-a-source-code-file).
 
