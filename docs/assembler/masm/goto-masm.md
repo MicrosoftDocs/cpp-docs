@@ -13,7 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # GOTO (MASM)
-Transfers assembly to the line marked **:***macrolabel*.  
+Transfers assembly to the line marked **:** *macrolabel*  
   
 ## Syntax  
   
