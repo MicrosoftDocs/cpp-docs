@@ -336,12 +336,10 @@ Create your repro as a minimal IDE project, then package it by compressing the e
 
 ## Ways to send your report
 
-There are a couple of good ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
-
-If you're concerned about making your data public, it's possible to specify who can see replies and attachments once you've created a problem report. Don't put the data in the initial report, which is public. In the report you created, in the reply editor, use the dropdown control below the **Submit** and **Cancel** buttons to specify the audience for your reply. Only the people you specify can see these private replies and any images, links, or code you include.
+There are a couple of good ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. The choice depends on whether you want to use the tools built into the IDE for capturing screenshots and organizing your report for posting on the Developer Community pages, or if you'd prefer to use the website directly.
 
 > [!NOTE]
-> Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
+> Regardless of how you submit your report, Microsoft respects your privacy. Microsoft is committed to compliance with all data privacy laws and regulations. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
 
 ### Use the Report a Problem tool
 
@@ -361,6 +359,28 @@ If your problem has not been reported before, choose the **Report a problem** bu
 
 > [!TIP]
 > For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the **Report a Problem tool** can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. These kinds of errors can also be reported on the [Developer Community](https://developercommunity.visualstudio.com/) site.
+
+### Reports and privacy
+
+By default, **all information in reports and any comments and replies are publicly visible**. Normally, this is a benefit, because it allows the entire community to see the issues, solutions, and workarounds other users have found. However, if you're concerned about making your data or identity public, for privacy or intellectual property reasons, you have options.
+
+If you are concerned about revealing your identity, [create a new Microsoft account](https://signup.live.com/) that does not disclose any details about you. Use this account to create your report. 
+
+**Don't put anything you want to keep private in the title or content of the initial report, which is public.** Instead, note that you will send details privately in a separate comment. To make sure that your report is directed to the right people, include **cppcompiler** in the topic list of your problem report. Once the problem report is created, it's now possible to specify who can see your replies and attachments.
+
+#### To create a problem report for private information
+
+1. In the report you created, choose **Add comment** to create your private description of the problem.
+
+1. in the reply editor, use the dropdown control below the **Submit** and **Cancel** buttons to specify the audience for your reply. Only the people you specify can see these private replies and any images, links, or code you include in them. Choose **Viewable by moderators and the original poster** to limit visibility to Microsoft employees and yourself.
+
+1. Add the description and any other information, images, and file attachments needed for your repro. Choose the **Submit** button to send this information privately.
+
+   Note that there is a 2GB limit on attached files, and a maximum of 10 files. For any larger uploads, please request an upload URL in your private comment.
+
+Any replies under this comment have the same restricted visibility you specified. This is true even if the dropdown control on replies does not show the restricted visibility status correctly.
+
+To maintain your privacy and keep your sensitive information out of public view, please take care to keep all interaction with Microsoft to replies under this restricted comment. Replies to other comments may cause you to accidentally disclose sensitive information.
 
 ## How to report a C++ documentation issue
 
