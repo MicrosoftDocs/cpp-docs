@@ -25,7 +25,7 @@ COMM definition [[, definition]] ...
 ## Remarks  
  Each `definition` has the following form:  
   
- [[*langtype*]] [[**NEAR** &#124; **FAR**]] *label***:**`type`[[**:***count*]]  
+ [[*langtype*]] [[**NEAR** &#124; **FAR**]] *label* **:** `type`[[**:** *count*]]  
   
  The *label* is the name of the variable. The `type` can be any type specifier ([BYTE](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), and so on) or an integer specifying the number of bytes. The *count* specifies the number of data objects (one is the default).  
   
