@@ -300,7 +300,17 @@ If you're using the Modules feature of the C++ compiler, there are some differen
 
 1. In the developer command prompt console window, enter the command **cl /P** *arguments* *modulename.ixx*, where *arguments* is the list of arguments captured above, and *modulename.ixx* is the name of the file that creates the module interface.
 
-Finally, attach the preprocessed repros (*filename*.i and *modulename*.i) along with the .ifc output to your report.
+After you have generated the preprocessed files, its a good idea to make sure the problem still repros using the preprocessed file.
+
+#### To confirm that the error still repros with the preprocessed file
+
+1. In the developer console window, change back to the directory that contains your repro project.
+
+1. Enter the command **cl** *arguments* **/TP** *filename*.i as above, to compile the preprocessed file as if it were a C++ source file.
+
+1. Confirm that the problem is still reproduced by the preprocessed file.
+
+Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) along with the .ifc output to your report.
 
 ### Link repros
 
