@@ -38,11 +38,10 @@ Classes in the Active Template Library (ATL) can be categorized as follows:
  For additional classes that can be used in ATL projects, see [Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md).  
   
 ## See Also  
- [Classes](../atl/reference/atl-classes.md)   
- [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)   
+ [Classes and structs](../atl/reference/atl-classes.md)   
+ [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)  
  [Functions](../atl/reference/atl-functions.md)   
  [Global Variables](../atl/reference/atl-global-variables.md)   
  [Macros](../atl/reference/atl-macros.md)   
- [Structures](../atl/reference/atl-structures.md)   
  [Typedefs](../atl/reference/atl-typedefs.md)
 

@@ -31,8 +31,13 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/atl/reference/patlmodule.md",
-            "redirect_url": "/cpp/atl/reference/atl-global-variables",
+            "source_path": "docs/atl/reference/atl-archetypes.md",
+            "redirect_url": "/cpp/atl/reference/worker-archetype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/reference/atl-structures.md",
+            "redirect_url": "/cpp/atl/reference/atl-classes",
             "redirect_document_id": false
         },
         {
@@ -202,7 +207,17 @@
         },
         {
             "source_path": "docs/cppcx/index.md",
-            "redirect_url": "/cppcx/visual-c-language-reference-c-cx",
+            "redirect_url": "/cpp/cppcx/visual-c-language-reference-c-cx",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cppcx/operator-subtracttype-hat.md",
+            "redirect_url": "/cpp/cppcx/operator-type-hat",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cppcx/operator-subtractwindows-ui-xaml-interop-typename.md",
+            "redirect_url": "/cpp/cppcx/operator-windows-ui-xaml-interop-typename",
             "redirect_document_id": false
         },
         {
@@ -371,6 +386,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/button-styles.md",
+            "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#button-styles",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/callback-function-for-cdc-enumobjects.md",
             "redirect_url": "/cpp/mfc/reference/callback-functions-used-by-mfc#enum_objects",
             "redirect_document_id": false
@@ -378,6 +398,11 @@
         {
             "source_path": "docs/mfc/reference/callback-function-for-cdc-graystring.md",
             "redirect_url": "/cpp/mfc/reference/callback-functions-used-by-mfc#graystring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/combo-box-styles.md",
+            "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#combo-box-styles",
             "redirect_document_id": false
         },
         {
@@ -403,6 +428,11 @@
         {
             "source_path": "docs/mfc/reference/index.md",
             "redirect_url": "/cpp/mfc/reference/mfc-classes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/list-box-styles.md",
+            "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#list-box-styles",
             "redirect_document_id": false
         },
         {

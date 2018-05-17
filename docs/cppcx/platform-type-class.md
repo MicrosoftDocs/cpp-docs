@@ -44,8 +44,8 @@ public ref class Platform::Type :
   
 |||  
 |-|-|  
-|[operator Type^](../cppcx/operator-subtracttype-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|  
-|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|  
+|[operator Type^](../cppcx/operator-type-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|  
+|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|  
   
 ### Requirements  
  **Minimum supported client:** Windows 8  

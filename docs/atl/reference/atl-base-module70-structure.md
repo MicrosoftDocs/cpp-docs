@@ -62,7 +62,7 @@ struct _ATL_BASE_MODULE70 {
  **Header:** atlcore.h  
   
 ## See Also  
- [Structures](../../atl/reference/atl-structures.md)
+ [Classes and structs](../../atl/reference/atl-classes.md)
 
 
 

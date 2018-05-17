@@ -109,7 +109,6 @@ void Terminate(void* pvParam) throw();
  A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `WorkerArchetype::Execute`.  
   
 ## See Also  
- [Archetypes](../../atl/reference/atl-archetypes.md)   
  [Concepts](../../atl/active-template-library-atl-concepts.md)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
 
