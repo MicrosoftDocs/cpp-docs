@@ -2,19 +2,14 @@
 title: "dual | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.dual"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dual attribute"]
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # dual

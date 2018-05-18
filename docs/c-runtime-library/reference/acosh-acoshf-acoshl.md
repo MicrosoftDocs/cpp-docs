@@ -2,10 +2,7 @@
 title: "acosh, acoshf, acoshl | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["acoshf", "acosh", "acoshl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["acosh", "acoshf", "acoshl", "math/acosh", "math/acoshf", "math/ac
 dev_langs: ["C++"]
 helpviewer_keywords: ["acoshf function", "acosh function", "acoshl function"]
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # acosh, acoshf, acoshl

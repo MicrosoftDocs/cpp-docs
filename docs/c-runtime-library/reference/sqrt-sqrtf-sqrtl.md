@@ -2,10 +2,7 @@
 title: "sqrt, sqrtf, sqrtl | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["sqrtl", "sqrtf", "sqrt"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["sqrt", "sqrtf", "_sqrtl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["sqrtf function", "sqrt function", "sqrtl function", "_sqrtl function", "calculating square roots", "square roots, calculating"]
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # sqrt, sqrtf, sqrtl

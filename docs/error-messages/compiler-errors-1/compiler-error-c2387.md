@@ -2,19 +2,14 @@
 title: "Compiler Error C2387 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2387"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2387"]
 ms.assetid: 6847b8e1-ffac-458d-ab88-0c92f72f2527
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2387

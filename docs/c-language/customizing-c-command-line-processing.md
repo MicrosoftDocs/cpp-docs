@@ -2,18 +2,13 @@
 title: "Customizing C Command-Line Processing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["_spawn functions", "command line, processing", "command-line processing", "startup code, customizing command-line processing", "environment, environment-processing routine", "_setargv function", "command line, processing arguments", "suppressing environment processing", "_exec function"]
 ms.assetid: c20fa11d-b35b-4f3e-93b6-2cd5a1c3c993
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Customizing C Command-Line Processing

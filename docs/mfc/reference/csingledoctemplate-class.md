@@ -2,19 +2,14 @@
 title: "CSingleDocTemplate Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSingleDocTemplate", "AFXWIN/CSingleDocTemplate", "AFXWIN/CSingleDocTemplate::CSingleDocTemplate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSingleDocTemplate [MFC], CSingleDocTemplate"]
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ---
 # CSingleDocTemplate Class
 Defines a document template that implements the single document interface (SDI).  

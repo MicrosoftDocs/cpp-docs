@@ -2,18 +2,13 @@
 title: "Adding a Class from an ActiveX Control (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [C++], adding classes", "classes [C++], creating"]
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Class from an ActiveX Control (Visual C++)

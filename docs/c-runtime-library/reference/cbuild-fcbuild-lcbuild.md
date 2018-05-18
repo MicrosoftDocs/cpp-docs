@@ -12,7 +12,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["_Cbuild function", "_FCbuild function", "_LCbuild function"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _Cbuild, _FCbuild, _LCbuild

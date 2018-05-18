@@ -2,18 +2,13 @@
 title: "Data Exchange for Record Views   (MFC Data Access) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["RFX (record field exchange), data exchange mechanism", "RFX (record field exchange), record views", "record views, data exchange", "DDX (dialog data exchange), record views", "RFX (record field exchange)"]
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Exchange for Record Views   (MFC Data Access)

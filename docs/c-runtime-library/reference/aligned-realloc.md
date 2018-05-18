@@ -2,10 +2,7 @@
 title: "_aligned_realloc | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_aligned_realloc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_aligned_realloc", "aligned_realloc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_realloc function", "_aligned_realloc function"]
 ms.assetid: 80ce96e8-6087-416f-88aa-4dbb8cb1d218
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_realloc

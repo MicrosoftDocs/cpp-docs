@@ -2,18 +2,13 @@
 title: "Testing Your Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, testing"]
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing Your Provider

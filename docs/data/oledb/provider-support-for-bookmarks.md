@@ -2,18 +2,13 @@
 title: "Provider Support for Bookmarks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetLocate class, provider support for bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "IRowsetLocate class", "OLE DB providers, bookmark support"]
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Support for Bookmarks

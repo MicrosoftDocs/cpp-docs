@@ -2,19 +2,14 @@
 title: "CDBErrorInfo::GetErrorParameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL.CDBErrorInfo.GetErrorParameters", "CDBErrorInfo::GetErrorParameters", "ATL::CDBErrorInfo::GetErrorParameters", "CDBErrorInfo.GetErrorParameters", "GetErrorParameters"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorParameters method"]
 ms.assetid: 3a2dd8e2-fecc-4315-9f2b-ce3138cdd187
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo::GetErrorParameters

@@ -1,19 +1,14 @@
 ---
 title: "How to: Marshal Unicode Strings for ADO.NET (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ADO.NET [C++], marshaling Unicode strings", "Unicode [C++], strings", "strings [C++], Unicode"]
 ms.assetid: 1da090ff-6b53-40be-841f-dc79dfe8ba10
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Unicode Strings for ADO.NET (C++/CLI)

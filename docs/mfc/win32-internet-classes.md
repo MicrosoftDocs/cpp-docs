@@ -2,19 +2,14 @@
 title: "Win32 Internet Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.win32"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Internet classes [MFC]", "WinInet classes [MFC], classes", "Win32 [MFC], Internet classes", "Windows API [MFC], Internet classes"]
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Win32 Internet Classes

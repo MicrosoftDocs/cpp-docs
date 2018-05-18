@@ -13,7 +13,6 @@ helpviewer_keywords: ["tanl function", "_tanl function", "tan function", "calcul
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tan, tanf, tanl

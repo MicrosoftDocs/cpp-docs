@@ -2,19 +2,14 @@
 title: "hash_set::erase (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_set::erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 620998a0-00c9-4be6-899b-2d71661375b6
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::erase (STL/CLR)

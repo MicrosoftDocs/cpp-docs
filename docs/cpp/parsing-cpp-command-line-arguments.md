@@ -2,18 +2,13 @@
 title: "Parsing C++ Command-Line Arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["quotation marks, command-line arguments", "double quotation marks", "command line [C++], parsing", "parsing, command-line arguments", "startup code, parsing command-line arguments"]
 ms.assetid: e634e733-ac2f-4298-abe2-7e9288c94951
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Parsing C++ Command-Line Arguments

@@ -2,19 +2,14 @@
 title: "CDataConnection::operator CDataSource* | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataSource* operator", "operator * (CDataSource)"]
 ms.assetid: 9118e324-e68d-45c5-a791-03f041d420ed
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection::operator CDataSource*

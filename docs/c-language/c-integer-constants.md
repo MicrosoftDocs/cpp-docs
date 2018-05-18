@@ -2,18 +2,13 @@
 title: "C Integer Constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/27/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["integer constants"]
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Integer Constants

@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4343 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4343"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4343"]
 ms.assetid: a721b710-e04f-4d15-b678-e4a2c8fd0181
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4343

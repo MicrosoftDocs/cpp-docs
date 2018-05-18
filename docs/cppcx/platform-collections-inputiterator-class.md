@@ -3,18 +3,13 @@ title: "Platform::Collections::InputIterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["InputIterator Class"]
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::InputIterator Class

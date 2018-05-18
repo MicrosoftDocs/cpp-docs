@@ -2,19 +2,14 @@
 title: "&lt;see&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["<see>", "see"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<see> C++ XML tag", "see C++ XML tag"]
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;see&gt; (Visual C++)

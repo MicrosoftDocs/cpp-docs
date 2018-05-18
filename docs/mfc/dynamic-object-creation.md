@@ -2,18 +2,13 @@
 title: "Dynamic Object Creation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["object creation [MFC], dynamically at run time", "CObject class [MFC], dynamic object creation", "objects [MFC], creating dynamically at run time", "dynamic object creation [MFC]"]
 ms.assetid: 3e0f51cb-3e24-4231-817f-1c0ce9f2d5df
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Dynamic Object Creation

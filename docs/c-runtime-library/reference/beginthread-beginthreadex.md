@@ -13,7 +13,6 @@ helpviewer_keywords: ["_beginthread function", "threading [C++], creating thread
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _beginthread, _beginthreadex

@@ -2,19 +2,14 @@
 title: "multimap::make_value (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multimap::make_value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["make_value member [STL/CLR]"]
 ms.assetid: 9ae5ace0-e529-4247-8cd6-4e96c0611a75
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::make_value (STL/CLR)

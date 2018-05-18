@@ -2,19 +2,14 @@
 title: "Compiler Error C2660 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2660"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2660"]
 ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2660

@@ -2,19 +2,14 @@
 title: "queue::generic_container (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::queue::generic_container"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["generic_container member [STL/CLR]"]
 ms.assetid: 58e07f5e-a854-48fa-b505-9bb82c1cac69
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue::generic_container (STL/CLR)

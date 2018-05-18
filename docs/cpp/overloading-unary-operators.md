@@ -2,18 +2,13 @@
 title: "Overloading Unary Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["unary operators [C++], plus", "increment operators [C++], overloaded", "unary operators [C++], minus", "operators [C++], unary", "redefinable unary operators [C++]", "unary operators [C++]", "pointer dereference operator overloading", "plus operator"]
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Overloading Unary Operators

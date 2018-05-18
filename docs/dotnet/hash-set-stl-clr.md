@@ -2,19 +2,14 @@
 title: "hash_set (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_set"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<cliext/hash_set> header [STL/CLR]", "hash_set class [STL/CLR]", "<hash_set> header [STL/CLR]"]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set (STL/CLR)

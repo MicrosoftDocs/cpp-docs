@@ -2,19 +2,14 @@
 title: "Compiler Error C2708 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2708"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2708"]
 ms.assetid: d52d3088-1141-42f4-829c-74755a7fcc3a
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2708

@@ -2,18 +2,13 @@
 title: "Using Dynamic Accessors | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/14/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors"]
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Dynamic Accessors

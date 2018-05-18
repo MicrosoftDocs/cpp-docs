@@ -2,19 +2,14 @@
 title: "Locale | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/11/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.international"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["localization, locale", "country information", "language information routines", "setlocale function", "locale routines"]
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Locale

@@ -2,19 +2,14 @@
 title: "Compiler Error C2174 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2174"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2174"]
 ms.assetid: 161d563c-76e9-47e9-9142-7812e9ea169e
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2174

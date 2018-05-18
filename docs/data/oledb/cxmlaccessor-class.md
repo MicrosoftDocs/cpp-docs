@@ -2,19 +2,14 @@
 title: "CXMLAccessor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL::CXMLAccessor", "CXMLAccessor", "ATL.CXMLAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CXMLAccessor class"]
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CXMLAccessor Class

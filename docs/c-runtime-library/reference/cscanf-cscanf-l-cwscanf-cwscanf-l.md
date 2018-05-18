@@ -2,10 +2,7 @@
 title: "_cscanf, _cscanf_l, _cwscanf, _cwscanf_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_cscanf_l", "_cscanf", "_cwscanf", "_cwscanf_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_cwscanf", "cwscanf_l", "tcscanf_l", "_tcscanf_l", "_cscanf", "_c
 dev_langs: ["C++"]
 helpviewer_keywords: ["_cwscanf function", "data [C++], reading from the console", "cscanf_l function", "tcscanf function", "_cscanf_l function", "cwscanf function", "_tcscanf_l function", "_cscanf function", "_tcscanf function", "cwscanf_l function", "tcscanf_l function", "reading data [C++], from the console", "_cwscanf_l function"]
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cscanf, _cscanf_l, _cwscanf, _cwscanf_l

@@ -2,18 +2,13 @@
 title: "Use MFC ODBC Recordsets | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, MFC ODBC", "ODBC recordsets"]
 ms.assetid: ebde4180-e3de-474a-a5ab-6135e41763a7
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Use MFC ODBC Recordsets

@@ -2,11 +2,8 @@
 title: "_heapset | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["_heapset"]
 apilocation: ["msvcr90.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["_heapset", "heapset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["checking heap", "heapset function", "heaps, checking", "debugging [CRT], heap-related problems", "_heapset function"]
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _heapset

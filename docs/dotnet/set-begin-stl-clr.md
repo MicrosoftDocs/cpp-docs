@@ -2,19 +2,14 @@
 title: "set::begin (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::set::begin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["begin member [STL/CLR]"]
 ms.assetid: 4bfe0b50-bd7e-4b7a-81ba-143f40a7d916
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::begin (STL/CLR)

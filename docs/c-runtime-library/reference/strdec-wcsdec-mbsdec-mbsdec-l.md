@@ -2,10 +2,7 @@
 title: "_strdec, _wcsdec, _mbsdec, _mbsdec_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_wcsdec", "_strdec", "_mbsdec", "_mbsdec_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_strdec", "mbsdec_l", "strdec", "_mbsdec", "_mbsdec_l", "mbsdec",
 dev_langs: ["C++"]
 helpviewer_keywords: ["mbsdec_l function", "mbsdec function", "tcsdec function", "_tcsdec function", "_strdec function", "_wcsdec function", "_mbsdec_l function", "strdec function", "wcsdec function", "_mbsdec function"]
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strdec, _wcsdec, _mbsdec, _mbsdec_l

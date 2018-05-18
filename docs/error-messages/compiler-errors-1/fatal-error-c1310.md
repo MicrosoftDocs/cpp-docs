@@ -2,19 +2,14 @@
 title: "Fatal Error C1310 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C1310"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C1310"]
 ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1310

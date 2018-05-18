@@ -2,19 +2,14 @@
 title: "Linker Tools Warning LNK4210 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK4210"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4210"]
 ms.assetid: db48cff8-a2be-4a77-8d03-552b42c228fa
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4210  

@@ -2,18 +2,13 @@
 title: "How to: Enumerate Data Types using Reflection (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["assemblies [C++], enumerating data types in", "public types [C++]", "reflection [C++], external assemblies", "assemblies [C++]", "data types [C++], enumerating", "public members [C++]"]
 ms.assetid: c3578e6d-bb99-4599-80e1-ab795305f878
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Enumerate Data Types in Assemblies using Reflection (C++/CLI)

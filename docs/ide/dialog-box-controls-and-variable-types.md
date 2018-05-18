@@ -2,18 +2,13 @@
 title: "Dialog Box Controls and Variable Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["dialog box controls, member variables", "dialog box controls, variable types", "variables, dialog box control member variables"]
 ms.assetid: f9cd9cea-45a6-4349-8358-e5efbcdcff76
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Dialog Box Controls and Variable Types

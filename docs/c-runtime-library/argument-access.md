@@ -3,14 +3,13 @@ title: "Argument access | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/04/2018"
 ms.technology: ["cpp-standard-libraries"]
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.arguments"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["argument access macros [C++]", "variable-length argument lists"]
 ms.assetid: 7046ae34-a0ec-44f0-815d-3209492a3e19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Argument access

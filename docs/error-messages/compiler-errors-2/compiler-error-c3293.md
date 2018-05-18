@@ -2,19 +2,14 @@
 title: "Compiler Error C3293 | Microsoft Docs"
 ms.custom: ""
 ms.date: "07/21/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3293"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3293"]
 ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3293

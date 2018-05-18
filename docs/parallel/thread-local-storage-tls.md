@@ -2,18 +2,13 @@
 title: "Thread Local Storage (TLS) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], Thread Local Storage", "TLS [C++]", "threading [C++], Thread Local Storage", "storing thread-specific data", "thread attribute", "Thread Local Storage [C++]"]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Thread Local Storage (TLS)
@@ -105,7 +100,7 @@ __declspec( thread ) int tls_i = 1;
   
      C++ does not allow such dynamic initialization of thread data because of possible future enhancements to the thread local storage facility.  
   
--   On Windows operating systems before [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)], `__declspec`( thread ) has some limitations. If a DLL declares any data or object as `__declspec`( thread ), it can cause a protection fault if dynamically loaded. After the DLL is loaded with [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175), it causes system failure whenever the code references the `__declspec`( thread ) data. Because the global variable space for a thread is allocated at run time, the size of this space is based on a calculation of the requirements of the application plus the requirements of all the DLLs that are statically linked. When you use `LoadLibrary`, you cannot extend this space to allow for the thread local variables declared with `__declspec`( thread ). Use the TLS APIs, such as [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801), in your DLL to allocate TLS if the DLL might be loaded with `LoadLibrary`.  
+-   On Windows operating systems before Windows Vista, `__declspec`( thread ) has some limitations. If a DLL declares any data or object as `__declspec`( thread ), it can cause a protection fault if dynamically loaded. After the DLL is loaded with [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175), it causes system failure whenever the code references the `__declspec`( thread ) data. Because the global variable space for a thread is allocated at run time, the size of this space is based on a calculation of the requirements of the application plus the requirements of all the DLLs that are statically linked. When you use `LoadLibrary`, you cannot extend this space to allow for the thread local variables declared with `__declspec`( thread ). Use the TLS APIs, such as [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801), in your DLL to allocate TLS if the DLL might be loaded with `LoadLibrary`.  
   
 ## See Also  
  [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)   

@@ -12,7 +12,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["_Cmulcc function", "_FCmulcc function", "_LCmulcc function"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _Cmulcc, _FCmulcc, _LCmulcc

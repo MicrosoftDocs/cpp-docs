@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4153 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4153"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4153"]
 ms.assetid: 37a15754-9dba-470b-adda-c4b888064b3e
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4153

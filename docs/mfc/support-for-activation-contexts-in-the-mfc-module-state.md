@@ -2,18 +2,13 @@
 title: "Support for Activation Contexts in the MFC Module State | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["activation contexts [MFC]", "activation contexts [MFC], MFC support"]
 ms.assetid: 1e49eea9-3620-46dd-bc5f-d664749567c7
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Support for Activation Contexts in the MFC Module State

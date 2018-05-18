@@ -2,19 +2,14 @@
 title: "Module::ReleaseNotifier Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ReleaseNotifier class"]
 ms.assetid: 17249cd1-4d88-42e3-8146-da9e942d12bd
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier Class

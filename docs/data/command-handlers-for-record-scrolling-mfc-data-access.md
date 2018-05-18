@@ -2,18 +2,13 @@
 title: "Command Handlers for Record Scrolling  (MFC Data Access) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["record views [C++], scrolling", "record scrolling [C++]", "scrolling records"]
 ms.assetid: f8b13477-2a37-459e-a30c-806fb78165ac
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Command Handlers for Record Scrolling  (MFC Data Access)

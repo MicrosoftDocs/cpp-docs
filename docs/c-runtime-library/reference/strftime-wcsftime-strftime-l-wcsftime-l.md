@@ -13,7 +13,6 @@ helpviewer_keywords: ["_strftime_l function", "strftime function", "tcsftime fun
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strftime, wcsftime, _strftime_l, _wcsftime_l

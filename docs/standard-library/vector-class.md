@@ -2,19 +2,14 @@
 title: "vector Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["vector/std::vector::allocator_type", "vector/std::vector::const_iterator", "vector/std::vector::const_pointer", "vector/std::vector::const_reference", "vector/std::vector::const_reverse_iterator", "vector/std::vector::difference_type", "vector/std::vector::iterator", "vector/std::vector::pointer", "vector/std::vector::reference", "vector/std::vector::reverse_iterator", "vector/std::vector::size_type", "vector/std::vector::value_type", "vector/std::vector::assign", "vector/std::vector::at", "vector/std::vector::back", "vector/std::vector::begin", "vector/std::vector::capacity", "vector/std::vector::cbegin", "vector/std::vector::cend", "vector/std::vector::crbegin", "vector/std::vector::crend", "vector/std::vector::clear", "vector/std::vector::data", "vector/std::vector::emplace", "vector/std::vector::emplace_back", "vector/std::vector::empty", "vector/std::vector::end", "vector/std::vector::erase", "vector/std::vector::front", "vector/std::vector::get_allocator", "vector/std::vector::insert", "vector/std::vector::max_size", "vector/std::vector::pop_back", "vector/std::vector::push_back", "vector/std::vector::rbegin", "vector/std::vector::rend", "vector/std::vector::reserve", "vector/std::vector::resize", "vector/std::vector::shrink_to_fit", "vector/std::vector::size", "vector/std::vector::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::vector [C++], allocator_type", "std::vector [C++], const_iterator", "std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], const_reverse_iterator", "std::vector [C++], difference_type", "std::vector [C++], iterator", "std::vector [C++], pointer", "std::vector [C++], reference", "std::vector [C++], reverse_iterator", "std::vector [C++], size_type", "std::vector [C++], value_type", "std::vector [C++], assign", "std::vector [C++], at", "std::vector [C++], back", "std::vector [C++], begin", "std::vector [C++], capacity", "std::vector [C++], cbegin", "std::vector [C++], cend", "std::vector [C++], crbegin", "std::vector [C++], crend", "std::vector [C++], clear", "std::vector [C++], data", "std::vector [C++], emplace", "std::vector [C++], emplace_back", "std::vector [C++], empty", "std::vector [C++], end", "std::vector [C++], erase", "std::vector [C++], front", "std::vector [C++], get_allocator", "std::vector [C++], insert", "std::vector [C++], max_size", "std::vector [C++], pop_back", "std::vector [C++], push_back", "std::vector [C++], rbegin", "std::vector [C++], rend", "std::vector [C++], reserve", "std::vector [C++], resize", "std::vector [C++], shrink_to_fit", "std::vector [C++], size", "std::vector [C++], swap"]
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vector Class

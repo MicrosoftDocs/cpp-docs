@@ -2,18 +2,13 @@
 title: "Writing an Internet Client Application Using MFC WinInet Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Internet client applications [MFC]", "WinInet classes [MFC], programming", "Internet client applications [MFC], writing", "Internet applications [MFC], WinInet", "Internet applications [MFC], client applications", "MFC, Internet applications"]
 ms.assetid: a2c4a40c-a94e-4b3e-9dbf-f8a8dc8e5428
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Writing an Internet Client Application Using MFC WinInet Classes

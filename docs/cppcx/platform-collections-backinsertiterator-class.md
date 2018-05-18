@@ -3,18 +3,13 @@ title: "Platform::Collections::BackInsertIterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BackInsertIterator Class"]
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::BackInsertIterator Class

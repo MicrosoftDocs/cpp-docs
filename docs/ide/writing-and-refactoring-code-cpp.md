@@ -5,14 +5,11 @@ ms.date: "04/30/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Writing and refactoring code (C++)
@@ -30,7 +27,6 @@ To add new files to a project, right-click on the project node in Solution Explo
 To set formatting options such as indents, brace completion, and colorization, type "C++ Formatting" into the **QuickLaunch** window. Visual Studio 2017 version 15.7 and later supports ClangFormat. You can configure it in the [C/C++ Formatting Property Page](visualstudio/ide/reference/options-text-editor-c-cpp-formatting) under **Tools &#124; Options &#124; Text Editor &#124; C/C++ &#124; Formatting**.
 
 ![C++ formatting options](media/cpp-formatting-options.png)
-
 
 ### IntelliSense
 

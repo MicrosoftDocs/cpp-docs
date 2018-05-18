@@ -2,19 +2,14 @@
 title: "IRowsetImpl::GetData | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetData method [OLE DB]"]
 ms.assetid: cb15f1cc-bd25-4b74-93c3-db71aa93829c
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::GetData

@@ -2,15 +2,12 @@
 title: "Configure a C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/15/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 

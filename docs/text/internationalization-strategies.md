@@ -2,18 +2,13 @@
 title: "Internationalization Strategies | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "language-portable code [C++]", "MBCS [C++], internationalization strategies", "Windows API [C++], international programming strategies", "Win32 [C++], international programming strategies", "Unicode [C++], globalizing applications", "character sets [C++], international programming strategies", "localization [C++], character sets"]
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Internationalization Strategies

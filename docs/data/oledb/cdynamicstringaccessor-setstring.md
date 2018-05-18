@@ -2,19 +2,14 @@
 title: "CDynamicStringAccessor::SetString | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor::SetString", "CDynamicStringAccessor.SetString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetString method"]
 ms.assetid: 94846d8b-4c1b-47fe-acdc-1752981cee25
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor::SetString

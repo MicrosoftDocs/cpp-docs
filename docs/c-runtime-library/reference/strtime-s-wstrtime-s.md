@@ -2,10 +2,7 @@
 title: "_strtime_s, _wstrtime_s | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_wstrtime_s", "_strtime_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_wstrtime_s", "strtime_s", "wstrtime_s", "_strtime_s"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["wstrtime_s function", "copying time to buffers", "strtime_s function", "_wstrtime_s function", "time, copying", "_strtime_s function"]
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strtime_s, _wstrtime_s

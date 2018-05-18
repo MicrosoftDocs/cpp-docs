@@ -2,18 +2,13 @@
 title: "Calls with a Variable Number of Arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "arguments [C++], variable number of", "VARARGS.H", "ellipses (...), variable number of arguments", "STDARGS.H", "function calls, arguments", "... ellipsis", "function calls, variable number of arguments"]
 ms.assetid: 8808fb26-4822-42f5-aba3-ac64b54e151b
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Calls with a Variable Number of Arguments

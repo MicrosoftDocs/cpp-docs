@@ -2,19 +2,14 @@
 title: "hash_multiset::value_comp (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_multiset::value_comp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value_comp member [STL/CLR]"]
 ms.assetid: c5b25ded-9b27-43d5-9821-3f6e17338919
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::value_comp (STL/CLR)

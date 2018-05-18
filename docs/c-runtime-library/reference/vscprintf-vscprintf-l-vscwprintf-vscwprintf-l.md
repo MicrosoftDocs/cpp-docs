@@ -2,10 +2,7 @@
 title: "_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_vscprintf", "_vscprintf_l", "_vscwprintf_l", "_vscwprintf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["vscprintf_l", "vscwpeintf", "_vscwprintf", "_vsctprintf", "_vscpr
 dev_langs: ["C++"]
 helpviewer_keywords: ["vsctprintf function", "_vscprintf_l function", "_vsctprintf_l function", "_vsctprintf function", "_vscwprintf_l function", "vscwprintf_l function", "_vscprintf function", "_vscwprintf function", "vscwprintf function", "vsctprintf_l function", "formatted text [C++]", "vscprintf function", "vscprintf_l function"]
 ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l

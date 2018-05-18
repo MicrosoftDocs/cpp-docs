@@ -2,19 +2,14 @@
 title: "Compiler Error C3255 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3255"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3255"]
 ms.assetid: 877ffca2-fd92-44b6-9060-6091b928b1c1
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3255

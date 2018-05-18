@@ -2,19 +2,14 @@
 title: "hash_set Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["hash_set/stdext::hash_set", "hash_set/stdext::hash_set::allocator_type", "hash_set/stdext::hash_set::const_iterator", "hash_set/stdext::hash_set::const_pointer", "hash_set/stdext::hash_set::const_reference", "hash_set/stdext::hash_set::const_reverse_iterator", "hash_set/stdext::hash_set::difference_type", "hash_set/stdext::hash_set::iterator", "hash_set/stdext::hash_set::key_compare", "hash_set/stdext::hash_set::key_type", "hash_set/stdext::hash_set::pointer", "hash_set/stdext::hash_set::reference", "hash_set/stdext::hash_set::reverse_iterator", "hash_set/stdext::hash_set::size_type", "hash_set/stdext::hash_set::value_compare", "hash_set/stdext::hash_set::value_type", "hash_set/stdext::hash_set::begin", "hash_set/stdext::hash_set::cbegin", "hash_set/stdext::hash_set::cend", "hash_set/stdext::hash_set::clear", "hash_set/stdext::hash_set::count", "hash_set/stdext::hash_set::crbegin", "hash_set/stdext::hash_set::crend", "hash_set/stdext::hash_set::emplace", "hash_set/stdext::hash_set::emplace_hint", "hash_set/stdext::hash_set::empty", "hash_set/stdext::hash_set::end", "hash_set/stdext::hash_set::equal_range", "hash_set/stdext::hash_set::erase", "hash_set/stdext::hash_set::find", "hash_set/stdext::hash_set::get_allocator", "hash_set/stdext::hash_set::insert", "hash_set/stdext::hash_set::key_comp", "hash_set/stdext::hash_set::lower_bound", "hash_set/stdext::hash_set::max_size", "hash_set/stdext::hash_set::rbegin", "hash_set/stdext::hash_set::rend", "hash_set/stdext::hash_set::size", "hash_set/stdext::hash_set::swap", "hash_set/stdext::hash_set::upper_bound", "hash_set/stdext::hash_set::value_comp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::hash_set", "stdext::hash_set::allocator_type", "stdext::hash_set::const_iterator", "stdext::hash_set::const_pointer", "stdext::hash_set::const_reference", "stdext::hash_set::const_reverse_iterator", "stdext::hash_set::difference_type", "stdext::hash_set::iterator", "stdext::hash_set::key_compare", "stdext::hash_set::key_type", "stdext::hash_set::pointer", "stdext::hash_set::reference", "stdext::hash_set::reverse_iterator", "stdext::hash_set::size_type", "stdext::hash_set::value_compare", "stdext::hash_set::value_type", "stdext::hash_set::begin", "stdext::hash_set::cbegin", "stdext::hash_set::cend", "stdext::hash_set::clear", "stdext::hash_set::count", "stdext::hash_set::crbegin", "stdext::hash_set::crend", "stdext::hash_set::emplace", "stdext::hash_set::emplace_hint", "stdext::hash_set::empty", "stdext::hash_set::end", "stdext::hash_set::equal_range", "stdext::hash_set::erase", "stdext::hash_set::find", "stdext::hash_set::get_allocator", "stdext::hash_set::insert", "stdext::hash_set::key_comp", "stdext::hash_set::lower_bound", "stdext::hash_set::max_size", "stdext::hash_set::rbegin", "stdext::hash_set::rend", "stdext::hash_set::size", "stdext::hash_set::swap", "stdext::hash_set::upper_bound", "stdext::hash_set::value_comp"]
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # hash_set Class

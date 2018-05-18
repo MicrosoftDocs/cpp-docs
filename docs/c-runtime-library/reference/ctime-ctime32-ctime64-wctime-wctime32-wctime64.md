@@ -2,10 +2,7 @@
 title: "ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_ctime64", "_wctime32", "ctime", "_wctime64", "_ctime32", "_wctime"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_wctime64", "_ctime32", "_tctime", "_wctime", "_wctime32", "_tcti
 dev_langs: ["C++"]
 helpviewer_keywords: ["tctime64 function", "_ctime32 function", "ctime32 function", "_wctime function", "wctime64 function", "_tctime64 function", "_tctime32 function", "_ctime64 function", "_wctime64 function", "ctime function", "wctime32 function", "ctime64 function", "_wctime32 function", "_tctime function", "tctime32 function", "tctime function", "wctime function", "time, converting"]
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64

@@ -2,17 +2,12 @@
 title: "Visual C++ Samples | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/30/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
-caps.latest.revision: 22
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Samples

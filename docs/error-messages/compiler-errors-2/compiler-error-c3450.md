@@ -2,19 +2,14 @@
 title: "Compiler Error C3450 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3450"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3450"]
 ms.assetid: 78892cf7-0b82-4589-90d0-e06666247003
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3450

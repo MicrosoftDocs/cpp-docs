@@ -2,18 +2,13 @@
 title: "Mixed, Pure, and Verifiable Feature Comparison (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["safe assemblies [C++], vs. pure", "mixed assemblies [C++], vs. pure", "safe assemblies [C++], vs. mixed", "pure MSIL [C++]", "verifiable assemblies [C++]", "pure MSIL [C++], vs. safe", "pure MSIL [C++], vs. mixed", "pure MSIL [C++], compared to mixed and safe", "verifiable assemblies [C++], vs. mixed", "mixed assemblies [C++], vs. safe", "verifiable assemblies [C++], vs. pure", "pure assemblies [C++]", "safe assemblies [C++]", "mixed assemblies [C++]"]
 ms.assetid: 3f7a82ba-0e69-4927-ba0c-fbc3160e4394
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Mixed, Pure, and Verifiable Feature Comparison (C++/CLI)

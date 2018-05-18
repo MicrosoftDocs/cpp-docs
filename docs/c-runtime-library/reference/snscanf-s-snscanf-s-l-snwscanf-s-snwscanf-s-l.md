@@ -2,10 +2,7 @@
 title: "_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_snwscanf_s_l", "_snwscanf_s", "_snscanf_s", "_snscanf_s_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_sntscanf_s", "snscanf_s", "_snwscanf_s_l", "sntscanf_s_l", "snws
 dev_langs: ["C++"]
 helpviewer_keywords: ["_snscanf_s_l function", "snwscanf_s function", "_snwscanf_s function", "sntscanf_s_l function", "sntscanf_s function", "_snwscanf_s_l function", "_snscanf_s function", "snscanf_s_l function", "strings [C++], reading data from", "_sntscanf_s_l function", "reading data, strings", "snscanf_s function", "strings [C++], reading", "_sntscanf_s function", "snwscanf_s_l function"]
 ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l

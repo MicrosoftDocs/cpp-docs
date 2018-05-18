@@ -3,18 +3,13 @@ title: "Platform::Type Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Type::GetTypeCode", "VCCORLIB/Platform::Type::FullName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Type Class"]
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Type Class
@@ -49,8 +44,8 @@ public ref class Platform::Type :
   
 |||  
 |-|-|  
-|[operator Type^](../cppcx/operator-subtracttype-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|  
-|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|  
+|[operator Type^](../cppcx/operator-type-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|  
+|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|  
   
 ### Requirements  
  **Minimum supported client:** Windows 8  

@@ -2,19 +2,14 @@
 title: "output_iterator_tag Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xutility/std::output_iterator_tag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["output_iterator_tag class", "output_iterator_tag struct"]
 ms.assetid: c23a4331-b069-4fa0-9c3a-1c9be7095553
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # output_iterator_tag Struct

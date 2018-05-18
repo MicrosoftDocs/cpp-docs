@@ -1,32 +1,28 @@
 ---
 title: "C++ Developer Guidance for Speculative Execution Side Channels | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/25/2018"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "05/03/2018"
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices", "Spectre", "CVE-2017-5753", "Speculative Execution"]
 author: "mamillmsft"
 ms.author: "mikeblome"
-manager: "wpickett"
 ms.workload: ["cplusplus"]
 ---
 # C++ Developer Guidance for Speculative Execution Side Channels
 
-This article contains guidance for developers to assist with identifying and mitigating speculative execution side channel hardware vulnerabilities in C++ software. These vulnerabilities can disclose sensitive information across trust boundaries and can affect software that runs on processors that support speculative, out-of-order execution of instructions. This class of vulnerabilities was first described in January 2018 and additional background and guidance can be found in [Microsoft's security advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002).
+This article contains guidance for developers to assist with identifying and mitigating speculative execution side channel hardware vulnerabilities in C++ software. These vulnerabilities can disclose sensitive information across trust boundaries and can affect software that runs on processors that support speculative, out-of-order execution of instructions. This class of vulnerabilities was first described in January, 2018 and additional background and guidance can be found in [Microsoft's security advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002).
 
-The guidance provided by this article is related to the class of vulnerabilities represented by CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction.
+The guidance provided by this article is related to the class of vulnerabilities represented by CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
 
 An accessible introduction to speculative execution side channel vulnerabilities can be found in the presentation titled [The Case of Spectre and Meltdown](https://www.youtube.com/watch?v=_4O0zMW-Zu4) by one of the research teams that discovered these issues.
 
 ## What are Speculative Execution Side Channel hardware vulnerabilities?
 
-Modern CPUs provide higher degrees of performance by making use of speculative and out-of-order execution of instructions. For example, this is often accomplished by predicting the target of branches (conditional and indirect) which enables the CPU to begin speculatively executing instructions at the predicted branch target, thus avoiding a stall until the actual branch target is resolved. In the event that the CPU later discovers that a misprediction occurred, all of the machine state that was computed speculatively is discarded. This ensures that there are no architecturally visible effects of the mispredicted speculation.
+Modern CPUs provide higher degrees of performance by making use of speculative and out-of-order execution of instructions. For example, this is often accomplished by predicting the target of branches (conditional and indrect) which enables the CPU to begin speculatively executing instructions at the predicted branch target, thus avoiding a stall until the actual branch target is resolved. In the event that the CPU later discovers that a misprediction occurred, all of the machine state that was computed speculatively is discarded. This ensures that there are no architecturally visible effects of the mispredicted speculation.
 
-While speculative execution does not affect the architecturally visible state, it can leave residual traces in non-architectural state, such as the various caches that are used by the CPU. It is these residual traces of speculative execution that can give rise to side channel vulnerabilities. To better understand this, consider the following code fragment, which provides an example of CVE-2017-5753 (Bounds Check Bypass):
+While speculative execution does not affect the architecturaly visible state, it can leave residual traces in non-architectural state, such as the various caches that are used by the CPU. It is these residual traces of speculative execution that can give rise to side channel vulnerabilities. To better understand this, consider the following code fragment which provides an example of CVE-2017-5753 (Bounds Check Bypass):
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -46,7 +42,7 @@ From an architectural perspective, this code sequence is perfectly safe as it is
 
 While the CPU will eventually detect this misprediction, residual side effects may be left in the CPU cache that reveal information about the byte value that was read out of bounds from `buffer`. These side effects can be detected by a less privileged context running on the system by probing how quickly each cache line in `shared_buffer` is accessed. The steps that can be taken to accomplish this are:
 
-1. **Invoke `ReadByte` multiple times with `untrusted_index` being less than `buffer_size`**. The attacking context can cause the victim context to invoke `ReadByte` (for example, via RPC) such that the branch predictor is trained to be not-taken as `untrusted_index` is less than `buffer_size`.
+1. **Invoke `ReadByte` multiple times with `untrusted_index` being less than `buffer_size`**. The attacking context can cause the victim context to invoke `ReadByte` (e.g. via RPC) such that the branch predictor is trained to be not-taken as `untrusted_index` is less than `buffer_size`.
 
 2. **Flush all cache lines in `shared_buffer`**. The attacking context must flush all of the cache lines in the shared region of memory referred to by `shared_buffer`. Since the memory region is shared, this is straightforward and can be accomplished using intrinsics such as `_mm_clflush`.
 
@@ -67,14 +63,16 @@ The following table provides a summary of the software security models where dev
 |Virtual machine boundary|Applications that isolate workloads in separate virtual machines that receive untrusted data from another virtual machine may be at risk.|
 |Kernel boundary|A kernel-mode device driver that receives untrusted data from a non-administrative user mode process may be at risk.|
 |Process boundary|An application that receives untrusted data from another process running on the local system, such as through a Remote Procedure Call (RPC), shared memory, or other Inter-Process Communication (IPC) mechanisms may be at risk.|
-|Enclave boundary|An application that executes within a secure enclave (such as Intel SGX) that receives untrusted data from outside of the enclave may be at risk.|
-|Managed runtime boundary|An application that interprets or Just-In-Time (JIT) compiles and executes untrusted code written in a higher-level language may be at risk.|
+|Enclave boundary|An application that executes within a secure enclave (such as Intel SGX) that recieves untrusted data from outside of the enclave may be at risk.|
+|Language boundary|An application that interprets or Just-In-Time (JIT) compiles and executes untrusted code written in a higher-level language may be at risk.|
 
 Applications that have attack surface exposed to any of the above trust boundaries should review code on the attack surface to identify and mitigate possible instances of speculative execution side channel vulnerabilities. It should be noted that trust boundaries exposed to remote attack surfaces, such as remote network protocols, have not been demonstrated to be at risk to speculative execution side channel vulnerabilities.
 
 ## Potentially vulnerable coding patterns
 
 Speculative execution side channel vulnerabilities can arise as a consequence of multiple coding patterns. This section describes potentially vulnerable coding patterns and provides examples for each, but it should be recognized that variations on these themes may exist. As such, developers are advised to take these patterns as examples and not as an exhaustive list of all potentially vulnerable coding patterns.
+
+In general, speculative execution side channels related to conditional branch misprediction can arise when a conditional expression operates on data that can be controlled or influenced by a less-trusted context. For example, this can include conditional expressions used in `if`, `for`, `while`, `switch`, or ternary statements. For each of these statements, the compiler may generate a conditional branch that the CPU may then predict the branch target for at runtime.
 
 For each example, a comment with the phrase "SPECULATION BARRIER" is inserted where a developer could introduce a barrier as a mitigation. This is discussed in more detail in the section on mitigations.
 
@@ -116,9 +114,9 @@ unsigned char ReadBytes(unsigned char *buffer, unsigned int buffer_size) {
 
 #### Array out-of-bounds load feeding an indirect branch
 
-This coding pattern involves the case where a conditional branch misprediction can lead to an out-of-bounds access to an array of function pointers, which then leads to an indirect branch to the target address that was read out-of-bounds. The following snippet provides an example that demonstrates this. 
+This coding pattern involves the case where a conditional branch misprediction can lead to an out-of-bounds access to an array of function pointers which then leads to an indirect branch to the target address that was read out-of-bounds. The following snippet provides an example that demonstrates this. 
 
-In this example, an untrusted message identifier is provided to DispatchMessage through the `untrusted_message_id` parameter. If `untrusted_message_id` is less than `MAX_MESSAGE_ID`, then it is used to index into an array of function pointers and branch to the corresponding branch target. This code is safe architecturally, but if the CPU mispredicts the conditional branch, it could result in `DispatchTable` being indexed by `untrusted_message_id` when its value is greater than or equal to `MAX_MESSAGE_ID`, thus leading to an out-of-bounds access. This could result in speculative execution from a branch target address that is derived beyond the bounds of the array, which could lead to information disclosure depending on the code that is executed speculatively.
+In this example, an untrusted message identifier is provided to DispatchMessage through the `untrusted_message_id` parameter. If `untrusted_message_id` is less than `MAX_MESSAGE_ID`, then it is used to index into an array of function pointers and branch to the corresponding branch target. This code is safe architecturally, but if the CPU mispredicts the conditional branch, it could result in `DispatchTable` being indexed by `untrusted_message_id` when its value is greater than or equal to `MAX_MESSAGE_ID`, thus leading to an out-of-bounds access. This could result in speculative execution from a branch target address that is derived beyond the bounds of the array which could lead to information disclosure depending on the code that is executed speculatively.
 
 ```cpp
 #define MAX_MESSAGE_ID 16
@@ -139,7 +137,7 @@ As with the case of an array out-of-bounds load feeding another load, this condi
 
 ### Speculative type confusion
 
-This category of coding patterns involves a conditional branch misprediction that leads to a speculative type confusion. The coding patterns in this section refer to the example code below.
+This category of coding patterns involves a conditional branch misprediction that leads to a speculative type confusion. The coding patterns in this section will refer to the example code below.
 
 ```cpp
 enum TypeName {
@@ -193,11 +191,11 @@ unsigned char ProcessType(CBaseType *obj)
 
 #### Speculative type confusion leading to an out-of-bounds load
 
-This coding pattern involves the case where a speculative type confusion can result in an out-of-bounds or type-confused field access where the loaded value feeds a subsequent load address. This is similar to the array out-of-bounds coding pattern but it is manifested through an alternative coding sequence as shown above. In this example, an attacking context could cause the victim context to execute `ProcessType` multiple times with an object of type `CType1` (`type` field is equal to `Type1`). This will have the effect of training the conditional branch for the first `if` statement to predict not taken. The attacking context can then cause the victim context to execute `ProcessType` with an object of type `CType2`. This can result in a speculative type confusion if the conditional branch for the first `if` statement mispredicts and executes the body of the `if` statement, thus casting an object of type `CType2` to `CType1`. Since `CType2` is smaller than `CType1`, the memory access to `CType1::field2` will result in a speculative out-of-bounds load of data that may be secret. This value is then used in a load from , which can create observable side effects, as with the array out-of-bounds example described previously.
+This coding pattern involves the case where a speculative type confusion can result in an out-of-bounds or type-confused field access where the loaded value feeds a subsequent load address. This is similar to the array out-of-bounds coding pattern but it is manifested through an alternative coding sequence as shown above. In this example, an attacking context could cause the victim context to execute `ProcessType` multiple times with an object of type `CType1` (`type` field is equal to `Type1`). This will have the effect of training the conditional branch for the first `if` statement to predict not taken. The attacking context can then cause the victim context to execute `ProcessType` with an object of type `CType2`. This can result in a speculative type confusion if the conditional branch for the first `if` statement mispredicts and executes the body of the `if` statement, thus casting an object of type `CType2` to `CType1`. Since `CType2` is smaller than `CType1`, the memory access to `CType1::field2` will result in a speculative out-of-bounds load of data that may be secret. This value is then used in a load from `shard_buffer` which can create observable side effects, as with the array out-of-bounds example described previously.
 
 #### Speculative type confusion leading to an indirect branch
 
-This coding pattern involves the case where a speculative type confusion can result in an unsafe indirect branch during speculative execution. In this example, an attacking context could cause the victim context to execute `ProcessType` multiple times with an object of type `CType2` (`type` field is equal to `Type2`). This will have the effect of training the conditional branch for the first `if` statement to be taken and the `else if` statement to be not taken. The attacking context can then cause the victim context to execute `ProcessType` with an object of type `CType1`. This can result in a speculative type confusion if the conditional branch for the first `if` statement predicts taken and the `else if` statement predicts not taken, thus executing the body of the `else if` and casting an object of type `CType1` to `CType2`. Since the `CType2::dispatch_routine` field overlaps with the `char` array `CType1::field1`, this could result in a speculative indirect branch to an unintended branch target. If the attacking context can control the byte values in the `CType1::field1` array, they may be able to control the branch target address.
+This coding patterns involves the case where a speculative type confusion can result in an unsafe indirect branch during speculative execution. In this example, an attacking context could cause the victim context to execute `ProcessType` multiple times with an object of type `CType2` (`type` field is equal to `Type2`). This will have the effect of training the conditional branch for the first `if` statement to be taken and the `else if` statement to be not taken. The attacking context can then cause the victim context to execute `ProcessType` with an object of type `CType1`. This can result in a speculative type confusion if the conditional branch for the first `if` statement predicts taken and the `else if` statement predicts not taken, thus executing the body of the `else if` and casting an object of type `CType1` to `CType2`. Since the `CType2::dispatch_routine` field overlaps with the `char` array `CType1::field1`, this could result in a speculative indirect branch to an unintended branch target. If the attacking context can control the byte values in the `CType1::field1` array, they may be able to control the branch target address.
 
 ## Mitigation options
 
@@ -205,12 +203,14 @@ Speculative execution side channel vulnerabilities can be mitigated by making ch
 
 ### Speculation barrier via manual instrumentation
 
-A *speculation barrier* can be manually inserted by a developer to prevent speculative execution from proceeding along a non-architectural path. For example, a developer can insert a speculation barrier before a dangerous coding pattern in the body of a conditional block. This will prevent a conditional branch misprediction from executing the dangerous code on a non-architectural path by serializing execution. The speculation barrier sequence differs by hardware architecture as described by the following table:
+A *speculation barrier* can be manually inserted by a developer to prevent speculative execution from proceeding along a non-architectural path. For example, a developer can insert a speculation barrier before a dangerous coding pattern in the body of a conditional block, either at the beginning of the block (after the conditional branch) or before the first load that is of concern. This will prevent a conditional branch misprediction from executing the dangerous code on a non-architectural path by serializing execution. The speculation barrier sequence differs by hardware architecture as described by the following table:
 
 |Architecture|Speculation barrier|
 |----------------|----------------|
 |x86/x64|_mm_lfence()|
-|ARM||
+|ARM|not currently available|
+|ARM64|not currently available|
+
 
 For example, the following code pattern can be mitigated by using the `_mm_lfence` intrinsic as shown below.
 
@@ -229,7 +229,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### Speculation barrier via compiler-time instrumentation
 
-The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch, which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
+The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
 
 ### Removing sensitive information from memory
 

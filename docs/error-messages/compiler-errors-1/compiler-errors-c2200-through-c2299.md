@@ -2,19 +2,14 @@
 title: "Compiler Errors C2200 through C2299 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2288", "C2291", "C2294"]
 helpviewer_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2288", "C2291", "C2294"]
 dev_langs: ["C++"]
 ms.assetid: 9b36d11b-9510-4390-96f1-0c9235124d14
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2200 through C2299

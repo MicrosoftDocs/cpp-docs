@@ -1,20 +1,15 @@
 ---
 title: "Security Best Practices for C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/25/2018"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "05/08/2018"
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["securitybestpracticesVC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-caps.latest.revision: 45
 author: "mikeblome"
 ms.author: "mikeblome"
-manager: "wpickett"
 ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++
@@ -79,7 +74,7 @@ This article contains information about security tools and practices. Using them
 -   Test for potential application compatibility errors that are caused by common programming mistakes.  
   
 -   Examine an application for memory-related issues.  
-  s
+
 -   Identify potential security issues in an application.  
   
  The AppVerifier is part of the Application Compatibility Toolkit, which is available from the [Application Compatibility](http://go.microsoft.com/fwlink/p/?linkid=91277) on the TechNet web site.  
@@ -92,8 +87,7 @@ This article contains information about security tools and practices. Using them
 
 For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
 
-  
 ## See Also  
- <xref:System.Security>   
- [Security](/dotnet/standard/security/index)   
- [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)
+- <xref:System.Security>   
+- [Security](/dotnet/standard/security/index)   
+- [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)

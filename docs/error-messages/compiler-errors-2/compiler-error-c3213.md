@@ -2,19 +2,14 @@
 title: "Compiler Error C3213 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3213"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3213"]
 ms.assetid: 1f079e36-b3e9-40f8-8e95-08eeba3adc82
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3213

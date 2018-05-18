@@ -2,19 +2,14 @@
 title: "Using CMonthCalCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CMonthCalCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], about CMonthCalCtrl class"]
 ms.assetid: 2be0e8c2-ed03-4853-aea1-4461eba18611
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CMonthCalCtrl

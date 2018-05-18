@@ -2,19 +2,14 @@
 title: "CDBPropSet Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CDBPropSet", "ATL.CDBPropSet", "ATL::CDBPropSet"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBPropSet class"]
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropSet Class

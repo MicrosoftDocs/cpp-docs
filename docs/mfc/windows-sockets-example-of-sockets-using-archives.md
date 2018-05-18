@@ -2,18 +2,13 @@
 title: "Windows Sockets: Example of Sockets Using Archives | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], with archives", "examples [MFC], Windows Sockets", "Windows Sockets [MFC], with archives"]
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Example of Sockets Using Archives

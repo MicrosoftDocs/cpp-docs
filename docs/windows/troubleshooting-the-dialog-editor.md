@@ -2,18 +2,13 @@
 title: "Troubleshooting the Dialog Editor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], troubleshooting", "troubleshooting controls", "Dialog editor, troubleshooting", "troubleshooting Dialog editor", "dialog boxes, troubleshooting"]
 ms.assetid: 21882868-5ac4-4a41-a4a6-eaaa059402ea
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Troubleshooting the Dialog Editor

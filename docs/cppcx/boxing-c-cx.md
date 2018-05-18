@@ -3,15 +3,10 @@ title: "Boxing (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Boxing (C++/CX)

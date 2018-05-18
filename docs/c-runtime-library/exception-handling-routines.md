@@ -2,19 +2,14 @@
 title: "Exception Handling Routines | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.exceptions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, routines"]
 ms.assetid: f60548c6-850a-4e1e-a79b-a2a6a541ab62
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling Routines

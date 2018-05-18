@@ -2,19 +2,14 @@
 title: "CBitmapRenderTarget Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget::CBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget::Attach", "AFXRENDERTARGET/CBitmapRenderTarget::Detach", "AFXRENDERTARGET/CBitmapRenderTarget::GetBitmap", "AFXRENDERTARGET/CBitmapRenderTarget::GetBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget::m_pBitmapRenderTarget"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBitmapRenderTarget [MFC], CBitmapRenderTarget", "CBitmapRenderTarget [MFC], Attach", "CBitmapRenderTarget [MFC], Detach", "CBitmapRenderTarget [MFC], GetBitmap", "CBitmapRenderTarget [MFC], GetBitmapRenderTarget", "CBitmapRenderTarget [MFC], m_pBitmapRenderTarget"]
 ms.assetid: c89a4437-812e-4943-acb2-b429a04cc4d2
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CBitmapRenderTarget Class

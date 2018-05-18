@@ -2,19 +2,14 @@
 title: "prev_permutation (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::prev_permutation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["prev_permutation function [STL/CLR]"]
 ms.assetid: 5294dbe5-1b5f-4369-a764-067dff86d1e8
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # prev_permutation (STL/CLR)

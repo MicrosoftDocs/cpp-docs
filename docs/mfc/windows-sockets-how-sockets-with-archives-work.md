@@ -2,18 +2,13 @@
 title: "Windows Sockets: How Sockets with Archives Work | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Windows Sockets [MFC], synchronous", "sockets [MFC], synchronous operation", "sockets [MFC], with archives", "synchronous state socket", "Windows Sockets [MFC], with archives", "two-state socket object"]
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: How Sockets with Archives Work

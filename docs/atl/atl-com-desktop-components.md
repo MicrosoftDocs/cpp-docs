@@ -18,8 +18,8 @@ The ATL Reference documents the Active Template Library (ATL), a set of template
  [ATL Class Overview](../atl/atl-class-overview.md)  
  Provides links to and brief descriptions of the ATL classes organized by category.  
   
- [ATL Classes](../atl/reference/atl-classes.md)  
- Provides reference material on the classes organized alphabetically.  
+ [ATL Classes and structs](../atl/reference/atl-classes.md)  
+ Provides reference material on the classes and structs organized alphabetically.  
   
  [ATL Functions](../atl/reference/atl-functions.md)  
  Provides reference material on the global functions organized alphabetically. Includes topics organizing the functions into categories.  
@@ -30,14 +30,11 @@ The ATL Reference documents the Active Template Library (ATL), a set of template
  [ATL Macros](../atl/reference/atl-macros.md)  
  Provides reference material on the macros organized alphabetically. Includes topics organizing the macros into categories.  
   
- [ATL Structures](../atl/reference/atl-structures.md)  
- Provides reference material on the structures organized alphabetically.  
-  
  [ATL Typedefs](../atl/reference/atl-typedefs.md)  
  Provides reference material on the typedefs organized alphabetically  
   
- [Archetypes](../atl/reference/atl-archetypes.md)  
- Provides links to the ATL archetypes, which are theoretical classes that supply a collection of methods, data members, static functions, typedefs, or other features, listed alphabetically.  
+ [Worker Archetype](../atl/reference/worker-archetype.md)  
+ Provides a links to the ATL Worker archetype.  
   
  [Obsolete ATL Topics](http://msdn.microsoft.com/en-us/7af0223d-148e-4a4c-bf9c-3e916a3b67ec)  
  Provides reference material on the classes, macros, and functions that are obsolete or deprecated.  

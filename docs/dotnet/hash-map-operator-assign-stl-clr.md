@@ -2,19 +2,14 @@
 title: "hash_map::operator= (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_map::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator= member [STL/CLR]"]
 ms.assetid: fbcbae4c-c8f8-431e-831b-a40cce00a88c
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::operator= (STL/CLR)

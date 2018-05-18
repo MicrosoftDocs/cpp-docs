@@ -2,19 +2,14 @@
 title: "CBrush Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CBrush", "AFXWIN/CBrush", "AFXWIN/CBrush::CBrush", "AFXWIN/CBrush::CreateBrushIndirect", "AFXWIN/CBrush::CreateDIBPatternBrush", "AFXWIN/CBrush::CreateHatchBrush", "AFXWIN/CBrush::CreatePatternBrush", "AFXWIN/CBrush::CreateSolidBrush", "AFXWIN/CBrush::CreateSysColorBrush", "AFXWIN/CBrush::FromHandle", "AFXWIN/CBrush::GetLogBrush"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBrush [MFC], CBrush", "CBrush [MFC], CreateBrushIndirect", "CBrush [MFC], CreateDIBPatternBrush", "CBrush [MFC], CreateHatchBrush", "CBrush [MFC], CreatePatternBrush", "CBrush [MFC], CreateSolidBrush", "CBrush [MFC], CreateSysColorBrush", "CBrush [MFC], FromHandle", "CBrush [MFC], GetLogBrush"]
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CBrush Class

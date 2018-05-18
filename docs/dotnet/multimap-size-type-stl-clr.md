@@ -2,19 +2,14 @@
 title: "multimap::size_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multimap::size_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size_type member [STL/CLR]"]
 ms.assetid: 6dfa2381-1b2a-4537-9c98-ac660480079b
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::size_type (STL/CLR)

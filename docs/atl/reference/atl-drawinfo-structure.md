@@ -84,7 +84,7 @@ struct ATL_DRAWINFO {
  **Header:** atlctl.h  
   
 ## See Also  
- [Structures](../../atl/reference/atl-structures.md)   
+  [Classes and structs](../../atl/reference/atl-classes.md)
  [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
  [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 

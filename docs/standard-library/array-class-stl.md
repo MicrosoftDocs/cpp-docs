@@ -2,19 +2,14 @@
 title: "array Class (C++ Standard Library)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["array/std::array", "array/std::array::const_iterator", "array/std::array::const_pointer", "array/std::array::const_reference", "array/std::array::const_reverse_iterator", "array/std::array::difference_type", "array/std::array::iterator", "array/std::array::pointer", "array/std::array::reference", "array/std::array::reverse_iterator", "array/std::array::size_type", "array/std::array::value_type", "array/std::array::assign", "array/std::array::at", "array/std::array::back", "array/std::array::begin", "array/std::array::cbegin", "array/std::array::cend", "array/std::array::crbegin", "array/std::array::crend", "array/std::array::data", "array/std::array::empty", "array/std::array::end", "array/std::array::fill", "array/std::array::front", "array/std::array::max_size", "array/std::array::rbegin", "array/std::array::rend", "array/std::array::size", "array/std::array::swap", "array/std::array::operator=", "array/std::array::operator[]"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::array [C++]", "std::array [C++], const_iterator", "std::array [C++], const_pointer", "std::array [C++], const_reference", "std::array [C++], const_reverse_iterator", "std::array [C++], difference_type", "std::array [C++], iterator", "std::array [C++], pointer", "std::array [C++], reference", "std::array [C++], reverse_iterator", "std::array [C++], size_type", "std::array [C++], value_type", "std::array [C++], assign", "std::array [C++], at", "std::array [C++], back", "std::array [C++], begin", "std::array [C++], cbegin", "std::array [C++], cend", "std::array [C++], crbegin", "std::array [C++], crend", "std::array [C++], data", "std::array [C++], empty", "std::array [C++], end", "std::array [C++], fill", "std::array [C++], front", "std::array [C++], max_size", "std::array [C++], rbegin", "std::array [C++], rend", "std::array [C++], size", "std::array [C++], swap", ", ", "std::array [C++], const_iterator", "std::array [C++], const_pointer", "std::array [C++], const_reference", "std::array [C++], const_reverse_iterator", "std::array [C++], difference_type", "std::array [C++], iterator", "std::array [C++], pointer", "std::array [C++], reference", "std::array [C++], reverse_iterator", "std::array [C++], size_type", "std::array [C++], value_type", "std::array [C++], assign", "std::array [C++], at", "std::array [C++], back", "std::array [C++], begin", "std::array [C++], cbegin", "std::array [C++], cend", "std::array [C++], crbegin", "std::array [C++], crend", "std::array [C++], data", "std::array [C++], empty", "std::array [C++], end", "std::array [C++], fill", "std::array [C++], front", "std::array [C++], max_size", "std::array [C++], rbegin", "std::array [C++], rend", "std::array [C++], size", "std::array [C++], swap"]
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # array Class (C++ Standard Library)

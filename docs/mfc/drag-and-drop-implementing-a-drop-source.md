@@ -2,18 +2,13 @@
 title: "Drag and Drop: Implementing a Drop Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE drag and drop [MFC], initiating drag operations", "drag and drop [MFC], calling DoDragDrop", "OLE drag and drop [MFC], drop source", "OLE drag and drop [MFC], calling DoDragDrop", "drag and drop [MFC], initiating drag operations", "drag and drop [MFC], drop source"]
 ms.assetid: 0ed2fda0-63fa-4b1e-b398-f1f142f40035
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Drag and Drop: Implementing a Drop Source

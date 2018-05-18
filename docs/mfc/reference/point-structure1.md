@@ -2,19 +2,14 @@
 title: "POINT Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["POINT", "LPPOINT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LPPOINT structure [MFC]", "POINT structure [MFC]"]
 ms.assetid: 965736d8-4e53-41b6-9b8b-6961992dd21f
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # POINT Structure1

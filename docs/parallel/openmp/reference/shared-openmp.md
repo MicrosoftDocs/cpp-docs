@@ -2,19 +2,14 @@
 title: "shared (OpenMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["Shared"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["shared OpenMP clause"]
 ms.assetid: 7887dc95-67a2-462f-a3a2-8e0632bf5d04
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # shared (OpenMP)

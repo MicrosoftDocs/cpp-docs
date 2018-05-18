@@ -2,15 +2,10 @@
 title: "&lt;deque&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["deque/std::operator!=", "deque/std::operator&gt;", "deque/std::operator&gt;=", "deque/std::operator&lt;", "deque/std::operator&lt;=", "deque/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 482d7c92-54c7-493b-99e6-2a73617481a5
-caps.latest.revision: 7
-manager: "ghogen"
 helpviewer_keywords: ["std::operator!= (deque)", "std::operator&gt; (deque)", "std::operator&gt;= (deque)", "std::operator&lt; (deque)", "std::operator&lt;= (deque)", "std::operator== (deque)"]
 ---
 # &lt;deque&gt; operators

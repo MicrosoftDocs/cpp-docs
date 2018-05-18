@@ -2,18 +2,13 @@
 title: "Initializing the Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["initializing dialog boxes [MFC]", "OnInitDialog method [MFC]", "modal dialog boxes [MFC], initializing", "modeless dialog boxes [MFC], initializing", "MFC dialog boxes [MFC], initializing"]
 ms.assetid: 968142f5-19f9-4b34-a1d4-8e6412d4379b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Initializing the Dialog Box

@@ -2,19 +2,14 @@
 title: "ComPtr::As Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::As"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["As method"]
 ms.assetid: 2ad6c262-9bdb-4c59-a330-1af8bcd445cc
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::As Method

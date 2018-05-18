@@ -2,18 +2,13 @@
 title: "Resource Files (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["resource files", "resources [C++]", "file types [C++], resource files"]
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Resource Files (C++)

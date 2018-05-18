@@ -2,19 +2,14 @@
 title: "operator&lt;= (multiset) (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiset::operator<="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator<= member [STL/CLR]"]
 ms.assetid: 58eb92fd-eac2-462d-b5e9-582bf95b501b
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt;= (multiset) (STL/CLR)

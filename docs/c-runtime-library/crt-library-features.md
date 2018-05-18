@@ -3,14 +3,13 @@ title: "CRT Library Features | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/13/2018"
 ms.technology: ["cpp-standard-libraries"]
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.runtime"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRT Library Features

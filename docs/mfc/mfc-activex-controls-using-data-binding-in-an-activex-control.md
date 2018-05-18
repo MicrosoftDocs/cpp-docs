@@ -2,19 +2,14 @@
 title: "MFC ActiveX Controls: Using Data Binding in an ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["bindable", "requestedit", "defaultbind", "displaybind", "dispid"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], data binding", "data binding [MFC], MFC ActiveX controls", "data-bound controls [MFC], MFC ActiveX controls", "controls [MFC], data binding", "bound controls [MFC], MFC ActiveX"]
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Data Binding in an ActiveX Control

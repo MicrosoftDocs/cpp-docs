@@ -2,17 +2,12 @@
 title: "&lt;array&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
 dev_langs: ["C++"]
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]"]
 ms.workload: ["cplusplus"]
 ---

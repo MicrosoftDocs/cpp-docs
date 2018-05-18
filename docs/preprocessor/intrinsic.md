@@ -10,7 +10,6 @@ helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # intrinsic

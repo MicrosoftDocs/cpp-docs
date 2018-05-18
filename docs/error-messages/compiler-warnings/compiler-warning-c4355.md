@@ -2,19 +2,14 @@
 title: "Compiler Warning C4355 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4355"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4355"]
 ms.assetid: b819ecab-8a07-42d7-8fa4-1180d51626c0
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4355
