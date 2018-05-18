@@ -33,10 +33,9 @@ If you create a vcpkg clone with private libraries in the ports collection, you 
 Clone the vcpkg repo from GitHub: https://github.com/Microsoft/vcpkg. You can download to any folder location you prefer.
 
 Run the bootstrapper in the root folder: 
-- **bootstrap-vcpkg.bat** (Windows)
-- ./bootstrap-vcpkg.sh (Linux, MacOS)
 
-## Basic tasks
+- **bootstrap-vcpkg.bat** (Windows)
+- **./bootstrap-vcpkg.sh** (Linux, MacOS)
 
 ## Search the list of available libraries
 
@@ -124,6 +123,10 @@ If you need to use a specific version of a library that is different from the ve
 1. Run **vcpkg install \<library>**.
 1. Use **vcpkg integrate project** to create a NuGet package that references that library on a per-project basis.
 
+## Integrate with Visual Studio Code (Linux/MacOS) 
+
+Run **vcpkg integrate install** to configure Visual Studio Code on Linux/MacOS with the location of the vcpkg enlistement and enable IntelliSense on source files.
+
 ## Target Linux from Windows via WSL
 
 You can produce Linux binaries from a Windows machine by using the Windows Subsystem for Linux (WSL). Follow the instructions to [Set up WSL on Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10), and configure it with the [Visual Studio extension for Linux](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). You can put all your built libraries for both Windows and Linux into the same folder and access it from both Windows and WSL.
@@ -131,39 +134,7 @@ You can produce Linux binaries from a Windows machine by using the Windows Subsy
 
 ## <a name="export_binaries_per_project"></a> Export compiled binaries and headers
 
-Requiring everyone on a team to download and build libraries can be inefficient. A single team member can do that work, and then use **vcpkg export** to create a zip file of the binaries and headers that can be easily shared with other team members.
-
-## Update/upgrade installed libraries
-
-The public catalog is kept up-to-date with the latest versions of the libraries. To determine which of your local libraries are out-of-date, use **vcpkg update**. When you're ready to update your ports collection to the latest version of the public catalog, run the **vcpkg upgrade** command to automatically download and rebuild any or all of your installed libraries that are out of date.
-
-By default, the **upgrade** command only lists the libraries that are out of date; it doesn’t upgrade them. To perform the upgrade, use the **--no-dry-run** option.
-
-```cmd
-  vcpkg upgrade --no-dry-run
-```
-
-### Upgrade Options
-
-- **--no-dry-run**  Perform the upgrade; when not specified, the command only lists the out-of-date packages.
-- **--keep-going**  Continue installing packages even if one fails.
-- **--triplet \<t>**  Set the default triplet for unqualified packages.
-- **--vcpkg-root \<path>**  Specify the vcpkg directory to use instead of current directory or tool directory.
-
-### Upgrade example
-
-### Per project
-
-If you need to use a specific version of a library that is different from the version in your active vcpkg instance, follow these steps:
-
-1. Make a new clone of vcpkg
-1. Modify the portfile for the library to obtain the version you need
-1. Run **vcpkg install \<library>**.
-1. Use **vcpkg integrate project** to create a NuGet package that references that library on a per-project basis.
-
-## Export compiled binaries and headers
-
-Requiring everyone on a team to download and build libraries can be inefficient. A single team member can do that work, and then use **vcpkg export** to create a zip file of the binaries and headers that can be easily shared with other team members.
+Requiring everyone on a team to download and build libraries can be inefficient. A single team member can do that work, and then use **vcpkg export** to create a zip file of the binaries and headers, or a NuGet package (various format available), that can be easily shared with other team members.
 
 ## Update/upgrade installed libraries
 
@@ -217,7 +188,7 @@ Just delete the directory.
 
 ## Send feedback about vcpkg
 
-Use the **--survey** command to send feedback to Microsoft about vcpkg, including bug reports and suggestions for features.
+Use the **vcpkg contact --survey** command to send feedback to Microsoft about vcpkg, including bug reports and suggestions for features.
 
 ## The vcpkg folder hierarchy
 
@@ -253,10 +224,9 @@ The contents of a vcpkg instance are:
 |**vcpkg export \<pkg>... [opt]...**|Export a package|
 |**vcpkg edit \<pkg>**|Open up a port for editing (uses %EDITOR%, default 'code')|
 |**vcpkg create \<pkg> \<url> [archivename]**|Create a new package|
-|**vcpkg owns \<pat>**|Search for files in installed packages|
 |**vcpkg cache**|List cached compiled packages|
 |**vcpkg version**|Display version information|
-|**vcpkg contact**|Display contact information to send feedback|
+|**vcpkg contact --survey**|Display contact information to send feedback.|
 
 ### Options
 
@@ -264,3 +234,4 @@ The contents of a vcpkg instance are:
 |---------|---------|
 |**--triplet \<t>**|Specify the target architecture triplet. (default: `%VCPKG_DEFAULT_TRIPLET%`, see also **vcpkg help triplet**)|
 |**--vcpkg-root \<path>**|Specify the vcpkg root directory (default: `%VCPKG_ROOT%`)|
+
