@@ -6,22 +6,8 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "group-vs",
+        "group": "group-vc2015",
         "src": ".",
-        "exclude": [
-          "**/obj/**",
-          "vcppdocs/**",
-          "**/includes/**",
-          "vs-2015/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "group": "group-vs2015",
-        "src": "./vs-2015",
         "exclude": [
           "**/obj/**",
           "vcppdocs/**",
@@ -37,24 +23,8 @@
           "**/*.gif",
           "**/*.svg"
         ],
-        "group": "group-vs",
+        "group": "group-vc2015",
         "src": ".",
-        "exclude": [
-          "**/obj/**",
-          "vcppdocs/**",
-          "**/includes/**",
-          "vs-2015/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.svg"
-        ],
-        "group": "group-vs2015",
-        "src": "vs-2015",
         "exclude": [
           "**/obj/**",
           "vcppdocs/**",
@@ -79,14 +49,8 @@
             "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
     "fileMetadata": {
-      "breadcrumb_path": 
-      {
-        "**/*.md": "_breadcrumb/toc.json",
-        "vs-2015/**/*.md": "vs-2015/_breadcrumb/toc.json"
-      },
       "monikerRange": {
-
-        "mfc/**/*.md": "= vs-2015 || >= vs-2017"
+        "mfc/**/*.md": ">= vs-2015"
     }
     },
 
@@ -95,12 +59,8 @@
     "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
     "dest": "vcppdocs",
     "groups": {
-      "group-vs": {
-        "moniker_range": ">= vs-2017",
-        "dest": "vcppdocs-2017"
-      },
-      "group-vs2015": {
-        "moniker_range": "vs-2015",
+        "group-vc2015": {
+        "moniker_range": ">= vs-2015",
         "dest": "vcppdocs-2015"
       }
     }
