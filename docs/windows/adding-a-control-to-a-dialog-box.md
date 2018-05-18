@@ -2,19 +2,14 @@
 title: "Adding a Control to a Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.dialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes, adding controls to", "dialog box controls, adding to dialog boxes", "controls [C++], adding to dialog boxes"]
 ms.assetid: b2a26d19-093f-49ca-93da-fef00dfbb381
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding a Control to a Dialog Box

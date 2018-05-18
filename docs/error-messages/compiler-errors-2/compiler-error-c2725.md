@@ -2,19 +2,14 @@
 title: "Compiler Error C2725 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2725"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2725"]
 ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2725

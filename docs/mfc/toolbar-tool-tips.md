@@ -2,18 +2,13 @@
 title: "Toolbar Tool Tips | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["tool tips [MFC], activating", "CBRS_TOOLTIPS constant [MFC]", "tool tips [MFC], adding text", "updates [MFC]", "CBRS_FLYBY constant [MFC]", "tool tips [MFC]", "updating status bar messages", "updates, status bar messages", "status bars [MFC], tool tips", "flyby status bar updates"]
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Toolbar Tool Tips

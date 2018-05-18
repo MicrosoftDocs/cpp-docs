@@ -2,18 +2,13 @@
 title: "Using a Dialog Template in Memory | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["templates [MFC], for dialog boxes", "dialog templates [MFC]", "dialog templates [MFC], in memory", "MFC dialog boxes [MFC], dialog templates"]
 ms.assetid: edb443bb-e614-4f77-8a3b-74d93871e9bd
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using a Dialog Template in Memory

@@ -2,10 +2,7 @@
 title: "_fcvt | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/05/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_fcvt"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_fcvt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["converting floating point, to strings", "_fcvt function", "floating-point functions, converting number to string", "fcvt function", "floating-point functions"]
 ms.assetid: 74584c88-f0dd-4907-8fca-52da5df583f5
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fcvt

@@ -2,19 +2,14 @@
 title: "concurrent_unordered_map Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::at", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::unsafe_erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_map class"]
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_map Class

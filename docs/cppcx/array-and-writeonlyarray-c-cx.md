@@ -3,15 +3,10 @@ title: "Array and WriteOnlyArray (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-caps.latest.revision: 28
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Array and WriteOnlyArray (C++/CX)

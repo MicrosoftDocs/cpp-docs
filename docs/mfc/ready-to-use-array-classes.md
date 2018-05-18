@@ -2,19 +2,14 @@
 title: "Ready-to-Use Array Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [MFC], classes", "collection classes [MFC], arrays", "classes [MFC], array"]
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Array Classes

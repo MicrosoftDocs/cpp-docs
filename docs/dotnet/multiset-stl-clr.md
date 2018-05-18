@@ -2,19 +2,14 @@
 title: "multiset (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<cliext/set> header [STL/CLR]", "<set> header [STL/CLR]", "multiset class [STL/CLR]"]
 ms.assetid: 7c46e2b4-cd88-49b7-a9e6-63ad5ae7feb5
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset (STL/CLR)

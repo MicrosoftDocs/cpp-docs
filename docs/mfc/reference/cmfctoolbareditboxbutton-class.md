@@ -2,19 +2,14 @@
 title: "CMFCToolBarEditBoxButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CanBeStretched", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CopyFrom", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetByCmd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContentsAll", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContextMenuID", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetEditBorder", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetHwnd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetInvalidateRect", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::HaveHotBorder", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::IsFlatMode", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::NotifyCommand", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnAddToCustomizePage", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnChangeParentWnd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnClick", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnCtlColor", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnGlobalFontsChanged", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnMove", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnShow", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnSize", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnUpdateToolTip", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetContextMenuID", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetFlatMode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarEditBoxButton [MFC], CMFCToolBarEditBoxButton", "CMFCToolBarEditBoxButton [MFC], CanBeStretched", "CMFCToolBarEditBoxButton [MFC], CopyFrom", "CMFCToolBarEditBoxButton [MFC], GetByCmd", "CMFCToolBarEditBoxButton [MFC], GetContentsAll", "CMFCToolBarEditBoxButton [MFC], GetContextMenuID", "CMFCToolBarEditBoxButton [MFC], GetEditBorder", "CMFCToolBarEditBoxButton [MFC], GetHwnd", "CMFCToolBarEditBoxButton [MFC], GetInvalidateRect", "CMFCToolBarEditBoxButton [MFC], HaveHotBorder", "CMFCToolBarEditBoxButton [MFC], IsFlatMode", "CMFCToolBarEditBoxButton [MFC], NotifyCommand", "CMFCToolBarEditBoxButton [MFC], OnAddToCustomizePage", "CMFCToolBarEditBoxButton [MFC], OnChangeParentWnd", "CMFCToolBarEditBoxButton [MFC], OnClick", "CMFCToolBarEditBoxButton [MFC], OnCtlColor", "CMFCToolBarEditBoxButton [MFC], OnGlobalFontsChanged", "CMFCToolBarEditBoxButton [MFC], OnMove", "CMFCToolBarEditBoxButton [MFC], OnShow", "CMFCToolBarEditBoxButton [MFC], OnSize", "CMFCToolBarEditBoxButton [MFC], OnUpdateToolTip", "CMFCToolBarEditBoxButton [MFC], SetContextMenuID", "CMFCToolBarEditBoxButton [MFC], SetFlatMode"]
 ms.assetid: b21d9b67-6bf7-4ca9-bd62-b237756e0ab3
-caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarEditBoxButton Class

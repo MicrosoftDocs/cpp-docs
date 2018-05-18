@@ -2,19 +2,14 @@
 title: "CAxDialogImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl::AdviseSinkMap", "ATLWIN/ATL::CAxDialogImpl::Create", "ATLWIN/ATL::CAxDialogImpl::DestroyWindow", "ATLWIN/ATL::CAxDialogImpl::DoModal", "ATLWIN/ATL::CAxDialogImpl::EndDialog", "ATLWIN/ATL::CAxDialogImpl::GetDialogProc", "ATLWIN/ATL::CAxDialogImpl::GetIDD", "ATLWIN/ATL::CAxDialogImpl::IsDialogMessage", "ATLWIN/ATL::CAxDialogImpl::m_bModal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAxDialogImpl class", "ATL, dialog boxes"]
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAxDialogImpl Class

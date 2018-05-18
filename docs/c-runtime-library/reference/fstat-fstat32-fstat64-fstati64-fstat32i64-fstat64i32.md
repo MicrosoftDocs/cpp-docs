@@ -2,10 +2,7 @@
 title: "_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_fstat32", "_fstat64", "_fstati64", "_fstat", "_fstat64i32", "_fstat32i64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_fstat32i64", "fstat", "fstat64i32", "_fstat64", "_fstati64", "fs
 dev_langs: ["C++"]
 helpviewer_keywords: ["_fstat64 function", "fstati64 function", "_fstat64i32 function", "_fstat32i64 function", "_fstat32 function", "file information", "fstat64i32 function", "fstat32 function", "fstat function", "fstat64 function", "_fstat function", "_fstati64 function", "fstat32i64 function"]
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32

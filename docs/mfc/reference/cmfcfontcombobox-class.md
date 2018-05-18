@@ -2,19 +2,14 @@
 title: "CMFCFontComboBox Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox::CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox::GetSelFont", "AFXFONTCOMBOBOX/CMFCFontComboBox::SelectFont", "AFXFONTCOMBOBOX/CMFCFontComboBox::Setup", "AFXFONTCOMBOBOX/CMFCFontComboBox::m_bDrawUsingFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCFontComboBox [MFC], CMFCFontComboBox", "CMFCFontComboBox [MFC], GetSelFont", "CMFCFontComboBox [MFC], SelectFont", "CMFCFontComboBox [MFC], Setup", "CMFCFontComboBox [MFC], m_bDrawUsingFont"]
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCFontComboBox Class

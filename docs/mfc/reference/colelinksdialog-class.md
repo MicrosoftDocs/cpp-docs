@@ -2,19 +2,14 @@
 title: "COleLinksDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleLinksDialog", "AFXODLGS/COleLinksDialog", "AFXODLGS/COleLinksDialog::COleLinksDialog", "AFXODLGS/COleLinksDialog::DoModal", "AFXODLGS/COleLinksDialog::m_el"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleLinksDialog [MFC], COleLinksDialog", "COleLinksDialog [MFC], DoModal", "COleLinksDialog [MFC], m_el"]
 ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleLinksDialog Class

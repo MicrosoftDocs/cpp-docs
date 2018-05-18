@@ -2,18 +2,13 @@
 title: "static Storage-Class Specifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["static variables, specifier", "storage classes, static", "static storage class specifiers"]
 ms.assetid: 9bce361e-919b-46b9-8148-40d7ab0eb024
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # static Storage-Class Specifier

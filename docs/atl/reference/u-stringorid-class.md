@@ -2,19 +2,14 @@
 title: "_U_STRINGorID Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["ATL._U_STRINGorID", "ATL::_U_STRINGorID", "_U_STRINGorID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_U_STRINGorID class", "U_STRINGorID class"]
 ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _U_STRINGorID Class

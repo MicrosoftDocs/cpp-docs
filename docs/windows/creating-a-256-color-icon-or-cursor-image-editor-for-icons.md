@@ -2,18 +2,13 @@
 title: "Creating a 256-Color Icon or Cursor (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["256-color palette", "cursors, color", "colors, icons", "colors, cursors", "icons, color"]
 ms.assetid: 2738089b-4fd3-4c45-96ae-6a15e4c6b780
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a 256-Color Icon or Cursor (Image Editor for Icons)

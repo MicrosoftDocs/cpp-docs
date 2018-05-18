@@ -2,18 +2,13 @@
 title: "Storage-Class Specifiers for Internal-Level Declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["storage class specifiers, internal", "internal linkage, storage-class specifiers"]
 ms.assetid: feca8ab5-23df-4b6c-921a-4d51f9be35d7
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Storage-Class Specifiers for Internal-Level Declarations

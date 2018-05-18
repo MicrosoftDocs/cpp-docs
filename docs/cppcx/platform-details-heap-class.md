@@ -3,18 +3,13 @@ title: "Platform::Details::Heap Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::Heap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::Heap Class"]
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::Heap Class

@@ -2,19 +2,14 @@
 title: "IOpenRowsetImpl::CreateRowset | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "CreateRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateRowset method"]
 ms.assetid: 69041cf6-7a2f-4409-a26e-6e984c24986e
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IOpenRowsetImpl::CreateRowset

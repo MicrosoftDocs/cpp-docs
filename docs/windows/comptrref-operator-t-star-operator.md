@@ -2,19 +2,14 @@
 title: "ComPtrRef::operator T* Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::operator T*"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator T* operator"]
 ms.assetid: b4f83370-0ebc-4d56-87c6-1a8ea2d0079b
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRef::operator T* Operator

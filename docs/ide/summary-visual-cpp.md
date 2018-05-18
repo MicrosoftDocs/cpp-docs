@@ -2,19 +2,14 @@
 title: "&lt;summary&gt; (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["<summary>", "summary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;summary&gt; (Visual C++)

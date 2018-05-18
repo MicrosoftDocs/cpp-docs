@@ -2,19 +2,14 @@
 title: "COLUMN_NAME_EX | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["COLUMN_NAME_EX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_NAME_EX macro"]
 ms.assetid: 4f916a85-f6ae-464a-9cbe-0a56dbb274a6
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_NAME_EX

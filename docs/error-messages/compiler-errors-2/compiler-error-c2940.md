@@ -2,19 +2,14 @@
 title: "Compiler Error C2940 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C2940"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2940"]
 ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2940

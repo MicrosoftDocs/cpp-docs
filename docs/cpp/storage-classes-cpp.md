@@ -2,19 +2,14 @@
 title: "Storage classes (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["thread_local_cpp", "external_cpp", "static_cpp", "register_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["storage classes [C++], basic concepts"]
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Storage classes (C++)  

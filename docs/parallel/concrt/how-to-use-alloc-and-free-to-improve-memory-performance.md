@@ -2,18 +2,13 @@
 title: "How to: Use Alloc and Free to Improve Memory Performance | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Alloc and Free, using [Concurrency Runtime]", "Using Alloc and Free [Concurrency Runtime]"]
 ms.assetid: e1fab9e8-a97d-4104-bead-e95958db79f9
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use Alloc and Free to Improve Memory Performance

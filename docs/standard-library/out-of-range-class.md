@@ -2,19 +2,14 @@
 title: "out_of_range Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["stdexcept/std::out_of_range"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_range class"]
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # out_of_range Class

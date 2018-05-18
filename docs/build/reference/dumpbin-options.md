@@ -2,19 +2,14 @@
 title: "DUMPBIN Options | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["dumpbin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DUMPBIN program, options"]
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # DUMPBIN Options

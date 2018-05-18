@@ -3,18 +3,13 @@ title: "Platform::Details::IEquatable Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::IEquatable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::IEquatable Interface"]
 ms.assetid: 72f15f55-f7a4-4cca-aeba-2d5a9996818c
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::IEquatable Interface

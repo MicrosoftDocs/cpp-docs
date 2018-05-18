@@ -2,19 +2,14 @@
 title: "Bitwise Inclusive OR Operator: | | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["bitor", "|"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OR operator [C++], bitwise inclusive", "bitwise operators [C++], OR operator", "inclusive OR operator", "| operator"]
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Bitwise Inclusive OR Operator: |

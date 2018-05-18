@@ -2,19 +2,14 @@
 title: "is_volatile Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_volatile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_volatile class", "is_volatile"]
 ms.assetid: 54922e8a-db4e-4cae-8931-b3352f0b8d3b
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_volatile Class

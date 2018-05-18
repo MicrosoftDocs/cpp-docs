@@ -2,18 +2,13 @@
 title: "Types of Linkage | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["no linkage", "linkage [C++], none", "linkage [C++], types of", "types [C++], linkage", "internal linkage, types of linkage", "external linkage, linkage types"]
 ms.assetid: 41326c7f-4602-4bad-a648-697604858ba0
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Types of Linkage

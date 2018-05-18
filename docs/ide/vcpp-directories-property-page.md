@@ -1,20 +1,15 @@
 ---
 title: "VC++ Directories Property Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/09/2018"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "04/26/2018"
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VC++ Directories Property Page"]
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # VC++ Directories Property Page (Windows)
@@ -94,7 +89,7 @@ Directories to search for WinRT library files for use in Universal Windows Platf
 Directories in which to search for source files to use for IntelliSense.
 
 **Exclude Directories**<br/>
-Directories not to search when checking for build dependencies.
+Before each compilation, Visual Studio queries the timestamp on all files to determine whether any have been modified since the previous compilation. If your project has large stable libraries, you can potentially speed up build times by excluding those directories from the timestamp check.
 
 ## Sharing the Settings
 

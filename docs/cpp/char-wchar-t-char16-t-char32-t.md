@@ -2,18 +2,13 @@
 title: "char, wchar_t, char16_t, char32_t | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/14/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["char_cpp", "char16_t_cpp", "wchar_t_cpp", "char32_t_cpp"]
 dev_langs: ["C++"]
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
-caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # char, wchar_t, char16_t, char32_t

@@ -3,13 +3,12 @@ title: "Security-Enhanced Versions of CRT Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/21/2018"
 ms.technology: ["cpp-standard-libraries"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["security [CRT]", "security-enhanced CRT", "CRT, security enhancements"]
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Security-Enhanced Versions of CRT Functions

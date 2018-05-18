@@ -2,18 +2,13 @@
 title: "Exceptions: Freeing Objects in Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["throwing exceptions [MFC], freeing objects in exceptions", "local exception handling", "memory leaks, caused by exception", "try-catch exception handling [MFC], destroying objects", "destroying objects [MFC]", "freeing objects [MFC]", "throwing exceptions [MFC], after destroying", "exception handling [MFC], destroying objects"]
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions: Freeing Objects in Exceptions

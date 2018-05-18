@@ -3,14 +3,13 @@ title: "/Zc:referenceBinding (Enforce reference binding rules) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/06/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["referenceBinding", "/Zc:referenceBinding"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "referenceBinding", "Enforce reference binding rules", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Zc:referenceBinding (Enforce reference binding rules)

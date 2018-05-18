@@ -2,19 +2,14 @@
 title: "__movsb | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__movsb"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["movsb instruction", "rep movsb instruction", "__movsb intrinsic"]
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __movsb

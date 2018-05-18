@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 4) C4918 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4918"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4918"]
 ms.assetid: 1bcf6d35-3467-4aa8-b2ef-cb33f4e70238
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4918

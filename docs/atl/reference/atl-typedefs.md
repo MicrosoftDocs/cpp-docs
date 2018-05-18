@@ -2,19 +2,14 @@
 title: "ATL Typedefs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["atlcore/ATL::_ATL_BASE_MODULE", "atlbase/ATL::_ATL_COM_MODULE", "atlbase/ATL::_ATL_MODULE", "atlbase/ATL::_ATL_WIN_MODULE", "atlutil/ATL::ATL_URL_PORT", "atlbase/ATL::CComDispatchDriver", "atlbase/ATL::CComGlobalsThreadModel", "atlbase/ATL::CComObjectThreadModel", "atlwin/ATL::CContainedWindow", "atlpath/ATL::CPath", "atlpath/ATL::CPathA", "atlpath/ATL::CPathW", " atlsimpcoll/ATL::CSimpleValArray", " atlutil/ATL::LPCURL", "atlbase/ATL::DefaultThreadTraits", "atlutil/ATL::LPURL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["typedefs, ATL", "typedefs", "ATL, typedefs"]
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Typedefs
@@ -286,6 +281,5 @@ typedef CUrl* LPURL;
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
+ [Classes and structs](../../atl/reference/atl-classes.md)
  [Macros](../../atl/reference/atl-macros.md)   
- [Classes](../../atl/reference/atl-classes.md)

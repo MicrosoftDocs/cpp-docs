@@ -2,19 +2,14 @@
 title: "BLOB_NAME_LENGTH_STATUS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["BLOB_NAME_LENGTH_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_NAME_LENGTH_STATUS macro"]
 ms.assetid: 3cc3ec8d-80a5-4522-848a-123fcaee58cb
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_NAME_LENGTH_STATUS

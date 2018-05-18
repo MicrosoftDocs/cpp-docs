@@ -2,19 +2,14 @@
 title: "try-except Statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__try keyword [C++]", "EXCEPTION_CONTINUE_EXECUTION macro", "EXCEPTION_CONTINUE_SEARCH macro", "EXCEPTION_EXECUTE_HANDLER macro", "GetExceptionCode function", "try-catch keyword [C++], try-except keyword [C++]", "_exception_code keyword [C++]", "try-except keyword [C++]", "_exception_info keyword [C++]", "_abnormal_termination keyword [C++]"]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # try-except Statement

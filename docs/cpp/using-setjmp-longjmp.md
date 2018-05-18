@@ -2,19 +2,14 @@
 title: "Using setjmp-longjmp | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["longjmp_cpp", "setjmp_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++ exception handling, setjmp/longjmp functions", "setjmpex.h", "longjmp function in C++ programs", "setjmp.h", "setjmp function", "setjmp function, C++ programs"]
 ms.assetid: 96be8816-f6f4-4567-9a9c-0c3c720e37c5
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using setjmp/longjmp

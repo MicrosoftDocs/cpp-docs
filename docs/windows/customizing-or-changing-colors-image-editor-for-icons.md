@@ -2,18 +2,13 @@
 title: "Customizing or Changing Colors (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["dithered color, Image editor", "Custom Color Selector dialog box", "Image editor [C++], Colors Palette", "colors [C++], image", "bitmaps [C++], colors", "images [C++], colors", "HSL values", "luminosity", "Colors Palette, Image editor", "RGB color values", "Adjust Colors command", "Image editor [C++], dithered color"]
 ms.assetid: e58f6b32-f435-4d9a-a570-7569433661ae
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Customizing or Changing Colors (Image Editor for Icons)

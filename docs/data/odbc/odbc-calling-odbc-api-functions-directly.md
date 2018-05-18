@@ -2,18 +2,13 @@
 title: "ODBC: Calling ODBC API Functions Directly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC API functions [C++], calling", "ODBC [C++], catalog functions", "ODBC API functions [C++]", "APIs [C++], calling", "ODBC classes [C++], vs. ODBC API", "direct ODBC API calls", "catalog functions (ODBC)", "catalog functions (ODBC), calling", "ODBC [C++], API functions"]
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: Calling ODBC API Functions Directly

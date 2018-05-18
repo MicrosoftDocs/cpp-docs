@@ -1,20 +1,15 @@
 ---
 title: "How to: Declare Handles in Native Types | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 f1_keywords: ["gcroot"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["handles, declaring", "gcroot keyword [C++]", "types [C++], declaring handles in"]
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Declare Handles in Native Types

@@ -2,19 +2,14 @@
 title: "How to: Include Resources at Compile Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vs.resvw.resource.including", "vc.resvw.resource.including"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["compiling source code, including resources", "comments [C++], compiled files", "resources [Visual Studio], including at compile time", "projects [C++], including resources", "#include directive", "include directive (#include)"]
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Include Resources at Compile Time

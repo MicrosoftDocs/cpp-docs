@@ -2,18 +2,13 @@
 title: "Stock Properties, ATL Control Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.stockprops"]
 dev_langs: ["C++"]
 ms.assetid: b27b0e60-08a6-43f4-ba6e-0a4e45147693
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Stock Properties, ATL Control Wizard

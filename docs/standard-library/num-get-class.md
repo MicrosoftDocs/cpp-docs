@@ -2,19 +2,14 @@
 title: "num_get Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["xlocnum/std::num_get", "locale/std::num_get::char_type", "locale/std::num_get::iter_type", "locale/std::num_get::do_get", "locale/std::num_get::get"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::num_get [C++]", "std::num_get [C++], char_type", "std::num_get [C++], iter_type", "std::num_get [C++], do_get", "std::num_get [C++], get"]
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # num_get Class

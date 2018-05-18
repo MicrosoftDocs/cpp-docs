@@ -2,19 +2,14 @@
 title: "CGlobalHeap Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CGlobalHeap", "ATLMEM/ATL::CGlobalHeap", "ATLMEM/ATL::CGlobalHeap::Allocate", "ATLMEM/ATL::CGlobalHeap::Free", "ATLMEM/ATL::CGlobalHeap::GetSize", "ATLMEM/ATL::CGlobalHeap::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CGlobalHeap class"]
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CGlobalHeap Class

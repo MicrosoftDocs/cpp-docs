@@ -2,19 +2,14 @@
 title: "TN033: DLL Version of MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.dll"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLLs [MFC], writing MFC extension DLLS", "AFXDLL library", "DLLs [MFC], MFC", "DLL version of MFC [MFC]", "TN033"]
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN033: DLL Version of MFC

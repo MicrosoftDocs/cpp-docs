@@ -2,10 +2,7 @@
 title: "_filelength, _filelengthi64 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_filelengthi64", "_filelength"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_filelength", "_filelengthi64", "filelengthi64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["filelengthi64 function", "lengths, file", "filelength function", "_filelength function", "files [C++], length", "_filelengthi64 function"]
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _filelength, _filelengthi64

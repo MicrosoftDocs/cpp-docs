@@ -2,19 +2,14 @@
 title: "CDebugReportHook Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CDebugReportHook", "ATLUTIL/ATL::CDebugReportHook", "ATLUTIL/ATL::CDebugReportHook::CDebugReportHook", "ATLUTIL/ATL::CDebugReportHook::CDebugReportHookProc", "ATLUTIL/ATL::CDebugReportHook::RemoveHook", "ATLUTIL/ATL::CDebugReportHook::SetHook", "ATLUTIL/ATL::CDebugReportHook::SetPipeName", "ATLUTIL/ATL::CDebugReportHook::SetTimeout"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDebugReportHook class"]
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDebugReportHook Class

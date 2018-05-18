@@ -2,19 +2,14 @@
 title: "CCommonDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CCommonDialog", "AFXDLGS/CCommonDialog", "AFXDLGS/CCommonDialog::CCommonDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCommonDialog [MFC], CCommonDialog"]
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CCommonDialog Class

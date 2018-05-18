@@ -2,19 +2,14 @@
 title: ".REPEAT | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".REPEAT"]
 dev_langs: ["C++"]
 helpviewer_keywords: [".REPEAT directive"]
 ms.assetid: cb8ad8c6-587b-42f9-a0ad-b5316a24918c
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # .REPEAT

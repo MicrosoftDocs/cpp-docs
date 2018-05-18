@@ -1,19 +1,14 @@
 ---
 title: "Statements (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["statements [C++], C++"]
 ms.assetid: 7028fddf-0d47-469a-a7df-f8576423e066
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Statements (C++)

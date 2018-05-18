@@ -2,19 +2,14 @@
 title: "File Read-Write Access Constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.constants.file"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["read/write access constants", "write access constants", "access constants for file read/write", "constants [C++], file attributes", "file read/write access constants"]
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # File Read/Write Access Constants

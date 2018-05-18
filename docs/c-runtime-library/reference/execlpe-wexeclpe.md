@@ -2,10 +2,7 @@
 title: "_execlpe, _wexeclpe | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_execlpe", "_wexeclpe"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_wexeclpe", "execlpe", "wexeclpe", "_execlpe"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["wexeclpe function", "_wexeclpe function", "_execlpe function", "execlpe function"]
 ms.assetid: 07b861da-3e7e-4f1d-bb80-ad69b55e5162
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _execlpe, _wexeclpe

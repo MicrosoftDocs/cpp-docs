@@ -2,19 +2,14 @@
 title: "-VERBOSE (Print Progress Messages) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/verbose", "VC.Project.VCLinkerTool.ShowProgress"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-VERBOSE linker option", "linking [C++], session progress information", "Print Progress Messages linker option", "linker [C++], output dependency information", "/VERBOSE linker option", "dependencies [C++], dependency information in linker output", "VERBOSE linker option"]
 ms.assetid: 9c347d98-4c37-4724-a39e-0983934693ab
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /VERBOSE (Print Progress Messages)

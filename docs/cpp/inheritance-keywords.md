@@ -2,19 +2,14 @@
 title: "Inheritance Keywords | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__multiple_inheritance", "__single_inheritance_cpp", "__virtual_inheritance_cpp", "__virtual_inheritance", "__multiple_inheritance_cpp", "__single_inheritance"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__single_inheritance keyword [C++]", "declaring derived classes [C++]", "keywords [C++], inheritance keywords", "__multiple_inheritance keyword [C++]", "__virtual_inheritance keyword [C++]", "inheritance, declaring derived classes", "derived classes [C++], declaring", "inheritance, keywords"]
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Inheritance Keywords

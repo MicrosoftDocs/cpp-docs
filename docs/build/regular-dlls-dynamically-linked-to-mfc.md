@@ -2,18 +2,13 @@
 title: "Regular MFC DLLs Dynamically Linked to MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "AFX_MANAGE_STATE macro", "DLLs [C++], regular", "shared DLL versions [C++]", "dynamically linked DLLs [C++]"]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Dynamically Linked to MFC

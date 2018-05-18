@@ -2,18 +2,13 @@
 title: "Menus (MFC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["menus [MFC], updating as context changes", "menus [MFC], MFC resources for working with", "menus [MFC], manipulating during execution", "menus [MFC]"]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Menus (MFC)

@@ -2,18 +2,13 @@
 title: "RuntimeClassBase Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBase"]
 dev_langs: ["C++"]
 ms.assetid: 6ada4f81-a857-488a-ad56-8d0b11ccbfcc
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassBase Structure

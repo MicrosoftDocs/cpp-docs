@@ -2,19 +2,14 @@
 title: "operator!= (pair) (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::pair::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator!= member [STL/CLR]"]
 ms.assetid: 167005f9-727d-40af-8d6d-2793d0daa96a
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator!= (pair) (STL/CLR)

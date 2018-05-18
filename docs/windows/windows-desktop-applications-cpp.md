@@ -2,19 +2,14 @@
 title: "Windows Desktop Applications (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vcplatformsdk"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Windows applications [C++]", "applications [C++], Windows", "Visual C++, Windows applications", "Windows applications [C++], about creating Windows applications"]
 ms.assetid: be15855a-fa3f-41e9-89cd-41b9484ebfdb
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Desktop Applications (C++)

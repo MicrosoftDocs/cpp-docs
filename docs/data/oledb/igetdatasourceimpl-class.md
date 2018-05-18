@@ -2,19 +2,14 @@
 title: "IGetDataSourceImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["IGetDataSourceImpl", "ATL.IGetDataSourceImpl<T>", "ATL.IGetDataSourceImpl", "ATL::IGetDataSourceImpl", "ATL::IGetDataSourceImpl<T>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IGetDataSourceImpl class"]
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl Class

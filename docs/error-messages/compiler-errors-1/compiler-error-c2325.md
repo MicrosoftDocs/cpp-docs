@@ -2,19 +2,14 @@
 title: "Compiler Error C2325 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2325"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2325"]
 ms.assetid: e6b0a186-3f2a-4adf-beae-fadd75492bf7
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2325

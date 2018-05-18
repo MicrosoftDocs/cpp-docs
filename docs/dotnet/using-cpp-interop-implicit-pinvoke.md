@@ -2,18 +2,13 @@
 title: "Using C++ Interop (Implicit PInvoke) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["blittable types [C++]", "platform invoke [C++], implicit", "interop [C++], features", "data marshaling [C++], C++ Interop features", "porting [C++], C++ native to .NET", "COM interfaces [C++]", "implicit platform invoke", "examples [C++], interoperability", "types [C++], blittable", "marshaling [C++], C++ Interop features", "platform invoke [C++], examples", "interoperability [C++]", "C++ Interop", "interoperability [C++], Implicit PInvoke", "C++, interop", "C++ COM Interop", ".NET [C++], porting C++ native to"]
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using C++ Interop (Implicit PInvoke)

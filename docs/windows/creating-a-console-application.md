@@ -1,19 +1,14 @@
 ---
 title: "Creating a Console Application | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Win32 applications, console", "Win32, console applications", "console applications, Win32"]
 ms.assetid: aedfb6b3-ca1f-4e8e-8439-1b680810ee47
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Console Application

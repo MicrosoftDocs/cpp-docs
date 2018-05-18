@@ -2,18 +2,13 @@
 title: "Technical Notes by Category | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.tables.mfc.technotes"]
 dev_langs: ["C++"]
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Technical Notes by Category

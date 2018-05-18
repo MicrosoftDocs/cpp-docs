@@ -2,19 +2,14 @@
 title: "IRowsetImpl::m_bReset | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset", "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bReset"]
 ms.assetid: d423f9f3-4d48-4d0c-b152-684c81a0b34e
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::m_bReset

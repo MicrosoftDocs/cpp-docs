@@ -1,19 +1,14 @@
 ---
 title: "How to: Marshal Embedded Pointers Using PInvoke | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["embedded pointers [C++]", "interop [C++], embedded pointers", "platform invoke [C++], embedded pointers", "marshaling [C++], embedded pointers", "data marshaling [C++], embedded pointers"]
 ms.assetid: f12c1b9a-4f82-45f8-83c8-3fc9321dbb98
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Embedded Pointers Using PInvoke

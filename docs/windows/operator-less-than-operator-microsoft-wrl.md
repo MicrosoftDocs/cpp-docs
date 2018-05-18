@@ -2,18 +2,13 @@
 title: "operator&lt; Operator (Microsoft::WRL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator<"]
 dev_langs: ["C++"]
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # operator&lt; Operator (Microsoft::WRL)

@@ -2,19 +2,14 @@
 title: "CComContainedObject Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CComContainedObject", "ATLCOM/ATL::CComContainedObject", "ATLCOM/ATL::CComContainedObject::CComContainedObject", "ATLCOM/ATL::CComContainedObject::AddRef", "ATLCOM/ATL::CComContainedObject::GetControllingUnknown", "ATLCOM/ATL::CComContainedObject::QueryInterface", "ATLCOM/ATL::CComContainedObject::Release"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComContainedObject class"]
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CComContainedObject Class

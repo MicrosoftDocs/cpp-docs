@@ -2,18 +2,13 @@
 title: "Elapsed Time: General-Purpose Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["adding dates", "calculating dates and times", "dates, calculating intervals", "elapsed time, calculating", "elapsed time", "time, elapsed", "intervals, date and time", "calculations, date and time"]
 ms.assetid: e5c5d3d2-ce1d-409e-875c-98848434e716
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Elapsed Time: General-Purpose Classes

@@ -2,19 +2,14 @@
 title: "Deleting a Version Information Block | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["blocks, deleting", "version information, deleting blocks", "resources [Visual Studio], deleting version information"]
 ms.assetid: 4e1641eb-d5b2-4183-b273-bc5b51af1537
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting a Version Information Block

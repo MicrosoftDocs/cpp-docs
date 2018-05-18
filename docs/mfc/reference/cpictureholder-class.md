@@ -2,19 +2,14 @@
 title: "CPictureHolder Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPictureHolder", "AFXCTL/CPictureHolder", "AFXCTL/CPictureHolder::CPictureHolder", "AFXCTL/CPictureHolder::CreateEmpty", "AFXCTL/CPictureHolder::CreateFromBitmap", "AFXCTL/CPictureHolder::CreateFromIcon", "AFXCTL/CPictureHolder::CreateFromMetafile", "AFXCTL/CPictureHolder::GetDisplayString", "AFXCTL/CPictureHolder::GetPictureDispatch", "AFXCTL/CPictureHolder::GetType", "AFXCTL/CPictureHolder::Render", "AFXCTL/CPictureHolder::SetPictureDispatch", "AFXCTL/CPictureHolder::m_pPict"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPictureHolder [MFC], CPictureHolder", "CPictureHolder [MFC], CreateEmpty", "CPictureHolder [MFC], CreateFromBitmap", "CPictureHolder [MFC], CreateFromIcon", "CPictureHolder [MFC], CreateFromMetafile", "CPictureHolder [MFC], GetDisplayString", "CPictureHolder [MFC], GetPictureDispatch", "CPictureHolder [MFC], GetType", "CPictureHolder [MFC], Render", "CPictureHolder [MFC], SetPictureDispatch", "CPictureHolder [MFC], m_pPict"]
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPictureHolder Class

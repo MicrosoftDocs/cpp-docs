@@ -2,19 +2,14 @@
 title: "map::count (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::Count"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["count member [STL/CLR]"]
 ms.assetid: 835f5b11-cb15-4a0b-8808-cd9b36c83e0b
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::count (STL/CLR)

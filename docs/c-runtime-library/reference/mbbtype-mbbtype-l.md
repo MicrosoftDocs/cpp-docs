@@ -2,10 +2,7 @@
 title: "_mbbtype, _mbbtype_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_mbbtype", "_mbbtype_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_mbbtype_l", "mbbtype", "mbbtype_l", "_mbbtype"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_mbbtype function", "_mbbtype_l function", "mbbtype function", "mbbtype_l function"]
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbbtype, _mbbtype_l

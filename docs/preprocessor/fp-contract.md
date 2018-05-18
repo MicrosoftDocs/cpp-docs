@@ -10,7 +10,6 @@ helpviewer_keywords: ["pragmas, fp_contract", "fp_contract pragma"]
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fp_contract

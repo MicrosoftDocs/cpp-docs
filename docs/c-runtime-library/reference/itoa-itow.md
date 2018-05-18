@@ -13,7 +13,6 @@ helpviewer_keywords: ["_itot function", "ui64toa function", "_ui64toa function",
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow

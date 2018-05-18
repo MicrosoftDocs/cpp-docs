@@ -2,19 +2,14 @@
 title: "multiset::end (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::multiset::end"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["end member [STL/CLR]"]
 ms.assetid: 225f8b74-f9b9-47ea-9603-43ac7c9a9734
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::end (STL/CLR)

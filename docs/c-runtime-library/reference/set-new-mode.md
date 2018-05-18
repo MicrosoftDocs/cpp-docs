@@ -2,10 +2,7 @@
 title: "_set_new_mode | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_set_new_mode"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["set_new_mode", "_set_new_mode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["handler modes", "_set_new_mode function", "set_new_mode function"]
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_new_mode

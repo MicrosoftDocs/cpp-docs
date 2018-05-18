@@ -2,19 +2,14 @@
 title: "ATL_DRAWINFO Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_DRAWINFO structure"]
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL_DRAWINFO Structure
@@ -89,7 +84,7 @@ struct ATL_DRAWINFO {
  **Header:** atlctl.h  
   
 ## See Also  
- [Structures](../../atl/reference/atl-structures.md)   
+  [Classes and structs](../../atl/reference/atl-classes.md)
  [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
  [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 

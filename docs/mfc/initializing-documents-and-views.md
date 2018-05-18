@@ -2,18 +2,13 @@
 title: "Initializing Documents and Views | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["initializing documents [MFC]", "documents [MFC], initializing", "views [MFC], initializing", "initializing objects [MFC], document objects", "initializing views [MFC]"]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Initializing Documents and Views

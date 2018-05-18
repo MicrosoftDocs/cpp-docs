@@ -2,19 +2,14 @@
 title: "IAccessorImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["IAccessorImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IAccessorImpl class"]
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl Class

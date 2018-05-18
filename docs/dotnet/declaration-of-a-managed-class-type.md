@@ -2,18 +2,13 @@
 title: "Declaration of a Managed Class Type | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["__gc types", "classes [C++], managed", "class keyword [C++], CLR", "__value keyword", "value types, declaring", "value keyword [C++]", "managed classes", "interface class keyword", "ref keyword [C++]"]
 ms.assetid: 16de9c94-91d7-492f-8ac7-f0729cc627e9
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a Managed Class Type

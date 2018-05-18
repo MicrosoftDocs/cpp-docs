@@ -2,19 +2,14 @@
 title: "Structures, Styles, Callbacks, and Message Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.structures"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["callback functions, MFC", "styles, MFC", "message classes [MFC], MFC", "structures, MFC"]
 ms.assetid: 27566602-7d84-4089-880c-8e90fb04fa56
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Structures, Styles, Callbacks, and Message Maps

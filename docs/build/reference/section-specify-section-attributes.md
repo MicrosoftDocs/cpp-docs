@@ -2,17 +2,13 @@
 title: "/SECTION (Specify Section Attributes) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/29/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/section"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SECTION linker option", "-SECTION linker option", "section attributes", "/SECTION linker option"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /SECTION (Specify Section Attributes)

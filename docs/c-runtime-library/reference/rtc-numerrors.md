@@ -2,10 +2,7 @@
 title: "_RTC_NumErrors | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_RTC_NumErrors"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_RTC_NumErrors", "RTC_NumErrors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["run-time errors", "_RTC_NumErrors function", "RTC_NumErrors function"]
 ms.assetid: 7e82adae-38e2-4f8b-bc0b-37bda8109fd1
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _RTC_NumErrors

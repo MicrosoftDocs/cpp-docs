@@ -2,18 +2,13 @@
 title: "Introduction to Visual C++ for UNIX Users | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/01/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["UNIX [C++]"]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Introduction to Visual C++ for UNIX Users

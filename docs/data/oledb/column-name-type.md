@@ -2,19 +2,14 @@
 title: "COLUMN_NAME_TYPE | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["COLUMN_NAME_TYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_NAME_TYPE macro"]
 ms.assetid: 815ace8f-8ec3-4ad7-a7a0-37fa8e4bc68c
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_NAME_TYPE

@@ -2,19 +2,14 @@
 title: "Fatal Error C1084 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C1084"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C1084"]
 ms.assetid: b2f273ef-3a14-4d5f-8ce0-7a11a0388fe6
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1084

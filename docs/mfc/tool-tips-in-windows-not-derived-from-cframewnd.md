@@ -2,18 +2,13 @@
 title: "Tool Tips in Windows Not Derived from CFrameWnd | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["enabling tool tips [MFC]", "TOOLTIPTEXT structure [MFC]", "Help [MFC], tool tips for controls", "TTN_NEEDTEXT message [MFC]", "controls [MFC], tool tips", "handler functions [MFC], tool tips"]
 ms.assetid: cad5ef0f-02e3-4151-ad0d-3d42e6932b0e
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Tool Tips in Windows Not Derived from CFrameWnd

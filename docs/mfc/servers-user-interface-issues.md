@@ -2,18 +2,13 @@
 title: "Servers: User-Interface Issues | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE server applications [MFC], user interface", "servers, user-interface issues", "user interface issues"]
 ms.assetid: 7ef55702-b439-43fa-8ced-c69b96239a89
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Servers: User-Interface Issues

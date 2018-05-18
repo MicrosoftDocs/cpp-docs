@@ -2,19 +2,14 @@
 title: "Expression Evaluator Error CXX0049 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["CXX0049"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CXX0049", "CAN0049"]
 ms.assetid: 6dcfece4-39ed-489d-b7be-2a17c7b94656
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0049

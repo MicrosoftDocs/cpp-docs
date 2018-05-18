@@ -2,17 +2,12 @@
 title: "DHTML Editing Command Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # DHTML Editing Command Maps

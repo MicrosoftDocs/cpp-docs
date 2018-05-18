@@ -2,19 +2,14 @@
 title: "_ATL_COM_MODULE70 Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["ATL::_ATL_COM_MODULE70", "ATL._ATL_COM_MODULE70", "_ATL_COM_MODULE70"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_COM_MODULE70 structure", "ATL_COM_MODULE70 structure"]
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ATL_COM_MODULE70 Structure
@@ -55,7 +50,7 @@ struct _ATL_COM_MODULE70 {
  **Header:** atlbase.h  
   
 ## See Also  
- [Structures](../../atl/reference/atl-structures.md)
+ [Classes and structs](../../atl/reference/atl-classes.md)
 
 
 

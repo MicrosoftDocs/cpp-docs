@@ -2,18 +2,13 @@
 title: "Function Calls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["function calls, C functions", "functions [C], calling", "function calls, about function calls", "function calls"]
 ms.assetid: 2cfa897d-3874-4820-933c-e624f75d1712
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Function Calls

@@ -2,18 +2,13 @@
 title: "Processing Notification Messages in List Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["processing notifications [MFC]", "CListCtrl class [MFC], processing notifications"]
 ms.assetid: 1f0e296e-d2a3-48fc-ae38-51d7fb096f51
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in List Controls

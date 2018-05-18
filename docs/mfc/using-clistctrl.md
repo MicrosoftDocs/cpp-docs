@@ -2,19 +2,14 @@
 title: "Using CListCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CListCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], using"]
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CListCtrl

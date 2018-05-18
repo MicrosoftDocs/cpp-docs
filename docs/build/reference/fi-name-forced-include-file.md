@@ -2,19 +2,14 @@
 title: "-FI (Name Forced Include File) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCNMakeTool.ForcedIncludes", "VC.Project.VCCLCompilerTool.ForcedIncludeFiles", "VC.Project.VCCLWCECompilerTool.ForcedIncludeFiles", "/fi"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FI compiler option [C++]", "-FI compiler option [C++]", "/FI compiler option [C++]", "preprocess header file compiler option [C++]"]
 ms.assetid: 07e79577-8152-4df9-a64c-aae08c603397
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /FI (Name Forced Include File)

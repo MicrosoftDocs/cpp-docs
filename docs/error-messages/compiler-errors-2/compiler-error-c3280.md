@@ -2,19 +2,14 @@
 title: "Compiler Error C3280 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3280"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3280"]
 ms.assetid: 86dc5bbc-8818-4786-a728-9334268d308b
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3280

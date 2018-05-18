@@ -1,30 +1,28 @@
 ---
-title: "How to Report a Problem with the Visual C++ Toolset | Microsoft Docs"
-ms.date: "1/11/2018"
-ms.technology: ["cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "How to report a problem with the Visual C++ toolset | Microsoft Docs"
+ms.date: "5/11/2018"
+ms.technology: ["cpp-ide"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# How to Report a Problem with the Visual C++ Toolset
+# How to report a problem with the Visual C++ toolset or documentation
 
-If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them.
+If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them. If the issue is in our documentation, we want to know about that, too.
+
+## How to report a C++ documentation issue
+
+We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already, but once you do, you can see all of our documentation issues, their status, and get notifications when changes are made for the issue you reported. For more information, see [A New Feedback System Is Coming to docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
+
+When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Please don't edit this information. Just append the details about what's wrong and, if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
+
+## How to report a C++ product issue
 
 The best way to let us know about a problem is to send us a report that includes a description of the problem you've encountered, details about how you're building your program, and a *repro*, a complete test case we can use to reproduce the problem on our own machines. This information lets us quickly verify that the problem exists in our code and is not local to your environment, to determine whether it affects other versions of the compiler, and to diagnose its cause.
 
-In this document, you'll read about
-
-- [How to prepare your report](#how-to-prepare-your-report), and what makes a good report.
-
-- [How to generate a repro](#how-to-generate-a-repro), and different kinds of repros.
-
-- [Ways to send your report](#ways-to-send-your-report), and what makes them different.
-
-Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
+In thie sections below, you'll read about what makes a good report, how to generate a repro for the kind of issue you've found, and how to send your report to the product team. Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
 
 ## How to prepare your report
 
@@ -100,7 +98,7 @@ A repro is a complete, self-contained source code example that reproducibly demo
 
 A good repro is:
 
-- **Minimal.** Repros should be as small as possible yet still demonstrate exactly the problem you encountered. Repros do not need to be complex or realistic; they only need to show code that conforms to the Standard or the documented compiler implementation, or in the case of a missing diagnostic, the code that is not conformant. Simple, to-the-point repros that contain just enough code to demonstrate the problem are best. If you can eliminate or simplify the code and remain conformant and also leave the issue unchanged, please do so. You do not need to include counter-examples of code that works. 
+- **Minimal.** Repros should be as small as possible yet still demonstrate exactly the problem you encountered. Repros do not need to be complex or realistic; they only need to show code that conforms to the Standard or the documented compiler implementation, or in the case of a missing diagnostic, the code that is not conformant. Simple, to-the-point repros that contain just enough code to demonstrate the problem are best. If you can eliminate or simplify the code and remain conformant and also leave the issue unchanged, please do so. You do not need to include counter-examples of code that works.
 
 - **Self-Contained.** Repros should avoid unnecessary dependencies. If you can reproduce the problem without third-party libraries, please do so. If you can reproduce the problem without any library code besides simple output statements (for example, `puts("this shouldn't compile");`, `std::cout << value;`, and `printf("%d\n", value);` are okay), please do so. It's ideal if the example can be condensed to a single source code file, without reference to any user headers. Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us.
 
@@ -108,13 +106,13 @@ A good repro is:
 
 - **Checked against other compilers** if relevant. Repros that involve portable C++ code should verify behavior against other compilers if possible. The Standard ultimately determines program correctness, and no compiler is perfect, but when Clang and GCC accept your code without a diagnostic and MSVC does not, it's likely you're looking at a bug in our compiler. (Other possibilities include differences in Unix and Windows behavior, or different levels of C++ standards implementation, and so on.) On the other hand, if all the compilers reject your code, then it's likely that your code is incorrect. Seeing different error messages may help you diagnose the issue yourself.
 
-   You can find lists of online compilers to test your code against in [Online C++ compilers](https://isocpp.org/blog/2013/01/online-c-compilers) on the ISO C++ website, or this curated [List of Online C++ Compilers](https://arnemertz.github.io/online-compilers/) on GitHub. Some specific examples include [Wandbox](https://wandbox.org/), [Compiler Explorer](https://godbolt.org/), and [Coliru](http://coliru.stacked-crooked.com/). 
+   You can find lists of online compilers to test your code against in [Online C++ compilers](https://isocpp.org/blog/2013/01/online-c-compilers) on the ISO C++ website, or this curated [List of Online C++ Compilers](https://arnemertz.github.io/online-compilers/) on GitHub. Some specific examples include [Wandbox](https://wandbox.org/), [Compiler Explorer](https://godbolt.org/), and [Coliru](http://coliru.stacked-crooked.com/).
 
    > [!NOTE]
    > The online compiler websites are not affiliated with Microsoft. Many online compiler websites are run as personal projects, and some of these sites may not be available when you read this, but a search should find others you can use.
 
 Problems in the compiler, linker, and in the libraries, tend to show themselves in particular ways. The kind of problem you encounter will determine what kind of repro you should include in your report. Without an appropriate repro, we have nothing to investigate. Here are a few of the kinds of issues that you may see, and instructions for generating the kinds of repros you should use to report each kind of problems.
- 
+
 #### Frontend (parser) crash
 
 Frontend crashes occur during the parsing phase of the compiler. Typically, the compiler will emit [Fatal Error C1001](error-messages/compiler-errors-1/fatal-error-c1001.md) and reference the source code file and line number on which the error occurred; it will often mention a file msc1.cpp, but you can ignore this detail.
@@ -285,7 +283,7 @@ Create your repro as a minimal IDE project, then package it by compressing the e
 
 ## Ways to send your report
 
-There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. It's also possible to send an email with your report, but the first two methods are preferred. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
+There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. It's also possible to send an email with your report, but the first two methods are preferred. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
 
 > [!NOTE]
 > Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
@@ -328,4 +326,4 @@ Source code and repro steps:
 ```
 
 > [!TIP]
-> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the Report a Problem tool can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.
+> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the **Report a Problem tool** can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. These kinds of errors can also be reported on the [Developer Community](https://developercommunity.visualstudio.com/) site. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.

@@ -2,19 +2,14 @@
 title: "SyncLockT::~SyncLockT Destructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["~SyncLockT, destructor"]
 ms.assetid: 9e14870d-017d-45fe-a3dc-cd86b6fa1c3a
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockT::~SyncLockT Destructor

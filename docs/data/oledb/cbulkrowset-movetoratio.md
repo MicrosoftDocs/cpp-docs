@@ -2,19 +2,14 @@
 title: "CBulkRowset::MoveToRatio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CBulkRowset.MoveToRatio", "ATL::CBulkRowset::MoveToRatio", "MoveToRatio", "CBulkRowset::MoveToRatio", "ATL.CBulkRowset<TAccessor>.MoveToRatio", "ATL::CBulkRowset<TAccessor>::MoveToRatio", "ATL.CBulkRowset.MoveToRatio", "CBulkRowset<TAccessor>::MoveToRatio"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveToRatio method"]
 ms.assetid: 86be60f5-9341-44c1-8e1e-9174c082d0d5
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::MoveToRatio

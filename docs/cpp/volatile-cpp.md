@@ -2,19 +2,14 @@
 title: "volatile (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["volatile_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["interrupt handlers and volatile keyword [C++]", "volatile keyword [C++]", "volatile objects", "objects [C++], volatile"]
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-caps.latest.revision: 43
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # volatile (C++)

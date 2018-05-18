@@ -2,18 +2,13 @@
 title: "Providing Windowless Activation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["windowless activation of MFC ActiveX controls", "activation [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], activate options", "activation [MFC], windowless"]
 ms.assetid: 094903b5-c344-42fa-96ff-ce01e16891c5
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Providing Windowless Activation

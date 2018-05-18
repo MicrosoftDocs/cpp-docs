@@ -2,19 +2,14 @@
 title: "no_auto_exclude | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["no_auto_exclude"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["no_auto_exclude attribute"]
 ms.assetid: 3241ef9c-758a-4e86-bdc5-37da6072430f
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # no_auto_exclude

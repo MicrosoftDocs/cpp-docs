@@ -2,17 +2,13 @@
 title: "-Q Options (Low-Level Operations) | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/23/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/q"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Q compiler option [C++]", "-Q compiler option [C++]", "/Q compiler option [C++]"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Q Options (Low-Level Operations)

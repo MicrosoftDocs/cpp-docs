@@ -2,19 +2,14 @@
 title: "CObList Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CObList", "AFXCOLL/CObList", "AFXCOLL/CObList::CObList", "AFXCOLL/CObList::AddHead", "AFXCOLL/CObList::AddTail", "AFXCOLL/CObList::Find", "AFXCOLL/CObList::FindIndex", "AFXCOLL/CObList::GetAt", "AFXCOLL/CObList::GetCount", "AFXCOLL/CObList::GetHead", "AFXCOLL/CObList::GetHeadPosition", "AFXCOLL/CObList::GetNext", "AFXCOLL/CObList::GetPrev", "AFXCOLL/CObList::GetSize", "AFXCOLL/CObList::GetTail", "AFXCOLL/CObList::GetTailPosition", "AFXCOLL/CObList::InsertAfter", "AFXCOLL/CObList::InsertBefore", "AFXCOLL/CObList::IsEmpty", "AFXCOLL/CObList::RemoveAll", "AFXCOLL/CObList::RemoveAt", "AFXCOLL/CObList::RemoveHead", "AFXCOLL/CObList::RemoveTail", "AFXCOLL/CObList::SetAt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObList [MFC], CObList", "CObList [MFC], AddHead", "CObList [MFC], AddTail", "CObList [MFC], Find", "CObList [MFC], FindIndex", "CObList [MFC], GetAt", "CObList [MFC], GetCount", "CObList [MFC], GetHead", "CObList [MFC], GetHeadPosition", "CObList [MFC], GetNext", "CObList [MFC], GetPrev", "CObList [MFC], GetSize", "CObList [MFC], GetTail", "CObList [MFC], GetTailPosition", "CObList [MFC], InsertAfter", "CObList [MFC], InsertBefore", "CObList [MFC], IsEmpty", "CObList [MFC], RemoveAll", "CObList [MFC], RemoveAt", "CObList [MFC], RemoveHead", "CObList [MFC], RemoveTail", "CObList [MFC], SetAt"]
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CObList Class

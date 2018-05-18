@@ -2,19 +2,14 @@
 title: "Editing Managed Resource Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vb.xmldesigner.data"]
 dev_langs: ["C++"]
 helpviewer_keywords: [".resx files, editing", "resource files, editing", "resx files, editing"]
 ms.assetid: 42593030-7897-4bf3-920c-e0b2d11c5bbd
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Managed Resource Files

@@ -2,19 +2,14 @@
 title: "WM_ Message Handlers: D - E | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["ON_WM_ERASEBKGND", "ON_WM_DEVICECHANGE", "ON_WM_ENTERIDLE", "ON_WM_DESTROYCLIPBOARD", "ON_WM_DESTROY", "ON_WM_DEADCHAR", "ON_WM_DELETEITEM", "ON_WM_DROPFILES", "ON_WM_DEVMODECHANGE", "ON_WM_ENDSESSION", "ON_WM_ENABLE", "ON_WM_DRAWITEM", "ON_WM_DRAWCLIPBOARD"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ON_WM_ENTERIDLE [MFC]", "ON_WM_DESTROYCLIPBOARD [MFC]", "ON_WM_DEADCHAR [MFC]", "ON_WM_DEVMODECHANGE [MFC]", "ON_WM_ERASEBKGND [MFC]", "ON_WM_DESTROY [MFC]", "ON_WM_DRAWCLIPBOARD [MFC]", "ON_WM_ENDSESSION [MFC]", "ON_WM_DRAWITEM [MFC]", "ON_WM_ENABLE [MFC]", "ON_WM_DROPFILES [MFC]", "ON_WM_DELETEITEM [MFC]", "ON_WM_DEVICECHANGE [MFC]", "WM_ messages [MFC]"]
 ms.assetid: 56fb89c8-68a8-4adf-883e-a9f63bf677e9
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # WM_ Message Handlers: D - E

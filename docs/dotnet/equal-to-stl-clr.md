@@ -2,19 +2,14 @@
 title: "equal_to (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::equal_to"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["equal_to function [STL/CLR]"]
 ms.assetid: 9dd6e27d-e695-470f-b7a7-19a6db970ee5
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # equal_to (STL/CLR)

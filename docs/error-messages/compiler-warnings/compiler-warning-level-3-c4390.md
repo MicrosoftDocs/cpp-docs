@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 3) C4390 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4390"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4390"]
 ms.assetid: c95c2f1b-9bce-4b1f-a80c-565d4cde0b1e
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4390

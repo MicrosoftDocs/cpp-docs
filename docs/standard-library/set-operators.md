@@ -2,15 +2,10 @@
 title: "&lt;set&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["set/std::operator!=", "set/std::operator&gt;", "set/std::operator&gt;=", "set/std::operator&lt;", "set/std::operator&lt;=", "set/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: b4256ebc-c449-4688-95db-fced42d20d4d
-caps.latest.revision: 8
-manager: "ghogen"
 helpviewer_keywords: ["std::operator!= (set)", "std::operator&gt; (set)", "std::operator&gt;= (set)", "std::operator&lt; (set)", "std::operator&lt;= (set)", "std::operator== (set)"]
 ---
 # &lt;set&gt; operators

@@ -2,18 +2,13 @@
 title: "Interpreting User Input Through a View | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["interpreting user input through views [MFC]", "views [MFC], user interface and input", "input [MFC], view class [MFC]", "CView class [MFC], interpreting user input", "user input [MFC], interpreting through view class [MFC]"]
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Interpreting User Input Through a View

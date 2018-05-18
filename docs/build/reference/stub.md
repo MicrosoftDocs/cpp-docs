@@ -2,19 +2,14 @@
 title: "STUB | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["STUB"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["STUB .def file statement"]
 ms.assetid: 0a3b9643-19ed-47e9-8173-ee16bc8ed056
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # STUB

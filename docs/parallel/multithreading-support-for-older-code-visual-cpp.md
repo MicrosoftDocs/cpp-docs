@@ -2,18 +2,13 @@
 title: "Multithreading Support for Older Code (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["threading [C++]", "multiple threads", "concurrent programming [C++]", "programming [C++], multithreaded", "multithreading [C++], about multithreading", "multiple concurrent threads", "multithreading [C++]"]
 ms.assetid: 24425b1f-5031-4c6b-aac7-017115a40e7c
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multithreading Support for Older Code (Visual C++)

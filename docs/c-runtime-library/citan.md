@@ -13,7 +13,6 @@ helpviewer_keywords: ["CItan intrinsic", "_CItan intrinsic"]
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CItan

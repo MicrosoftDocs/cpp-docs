@@ -2,10 +2,7 @@
 title: "_get_purecall_handler, _set_purecall_handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_set_purecall_handler", "_set_purecall_handler_m", "_get_purecall_handler"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_set_purecall_handler", "_set_purecall_handler_m", "set_purecall_
 dev_langs: ["C++"]
 helpviewer_keywords: ["_set_purecall_handler function", "set_purecall_handler function", "purecall_handler", "set_purecall_handler_m function", "_purecall_handler", "_set_purecall_handler_m function", "_get_purecall_handler function"]
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_purecall_handler, _set_purecall_handler

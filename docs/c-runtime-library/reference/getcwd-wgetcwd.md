@@ -2,10 +2,7 @@
 title: "_getcwd, _wgetcwd | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_wgetcwd", "_getcwd"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -14,10 +11,8 @@ f1_keywords: ["_getcwd", "wgetcwd", "_wgetcwd", "tgetcwd", "_tgetcwd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["getcwd function", "working directory", "_wgetcwd function", "_getcwd function", "current working directory", "wgetcwd function", "directories [C++], current working"]
 ms.assetid: 888dc8c6-5595-4071-be55-816b38e3e739
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getcwd, _wgetcwd

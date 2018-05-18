@@ -2,19 +2,14 @@
 title: "Linker Tools Error LNK2020 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK2020"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2020"]
 ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2020

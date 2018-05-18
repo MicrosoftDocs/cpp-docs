@@ -2,19 +2,14 @@
 title: "underlying_type Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::underlying_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["underlying_type"]
 ms.assetid: 691ddce3-2677-4480-bd35-d933fab85d3e
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # underlying_type Class

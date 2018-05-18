@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4087 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4087"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4087"]
 ms.assetid: 546e4d57-5c8e-422c-8ef1-92657336dad5
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4087

@@ -10,7 +10,6 @@ helpviewer_keywords: ["__cpuid intrinsic", "cpuid instruction", "cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __cpuid, __cpuidex

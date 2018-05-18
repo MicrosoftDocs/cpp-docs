@@ -13,7 +13,6 @@ helpviewer_keywords: ["__min macro", "min macro", "minimum macro", "_min macro"]
 ms.assetid: 2037f26c-b48a-4a69-8870-22519f052a3c
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __min

@@ -2,19 +2,14 @@
 title: "What Is AtlAxWin100? | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 f1_keywords: ["AtlAxWin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AtlAxWin method"]
 ms.assetid: 8efb6e14-df2a-40f1-a129-61b83965b5bd
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # What Is AtlAxWin100?

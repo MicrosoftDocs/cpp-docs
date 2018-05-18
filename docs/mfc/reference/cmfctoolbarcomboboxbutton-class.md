@@ -2,19 +2,14 @@
 title: "CMFCToolBarComboBoxButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCToolBarComboBoxButton", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::AddItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::AddSortedItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::Compare", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::CreateEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::DeleteItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::FindItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetByCmd", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetComboBox", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCount", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCountAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCurSel", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCurSelAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetEditCtrl", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemData", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemDataAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemDataPtrAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetText", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetTextAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::IsCenterVert", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::IsFlatMode", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::RemoveAllItems", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SelectItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SelectItemAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetCenterVert", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetDropDownHeight", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetFlatMode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarComboBoxButton [MFC], CMFCToolBarComboBoxButton", "CMFCToolBarComboBoxButton [MFC], AddItem", "CMFCToolBarComboBoxButton [MFC], AddSortedItem", "CMFCToolBarComboBoxButton [MFC], Compare", "CMFCToolBarComboBoxButton [MFC], CreateEdit", "CMFCToolBarComboBoxButton [MFC], DeleteItem", "CMFCToolBarComboBoxButton [MFC], FindItem", "CMFCToolBarComboBoxButton [MFC], GetByCmd", "CMFCToolBarComboBoxButton [MFC], GetComboBox", "CMFCToolBarComboBoxButton [MFC], GetCount", "CMFCToolBarComboBoxButton [MFC], GetCountAll", "CMFCToolBarComboBoxButton [MFC], GetCurSel", "CMFCToolBarComboBoxButton [MFC], GetCurSelAll", "CMFCToolBarComboBoxButton [MFC], GetEditCtrl", "CMFCToolBarComboBoxButton [MFC], GetItem", "CMFCToolBarComboBoxButton [MFC], GetItemAll", "CMFCToolBarComboBoxButton [MFC], GetItemData", "CMFCToolBarComboBoxButton [MFC], GetItemDataAll", "CMFCToolBarComboBoxButton [MFC], GetItemDataPtrAll", "CMFCToolBarComboBoxButton [MFC], GetText", "CMFCToolBarComboBoxButton [MFC], GetTextAll", "CMFCToolBarComboBoxButton [MFC], IsCenterVert", "CMFCToolBarComboBoxButton [MFC], IsFlatMode", "CMFCToolBarComboBoxButton [MFC], RemoveAllItems", "CMFCToolBarComboBoxButton [MFC], SelectItem", "CMFCToolBarComboBoxButton [MFC], SelectItemAll", "CMFCToolBarComboBoxButton [MFC], SetCenterVert", "CMFCToolBarComboBoxButton [MFC], SetDropDownHeight", "CMFCToolBarComboBoxButton [MFC], SetFlatMode"]
 ms.assetid: 32fa39f7-8e4e-4f0a-a31d-7b540d969a6c
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarComboBoxButton Class

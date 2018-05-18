@@ -12,7 +12,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["sinh function", "sinhl function", "sinhf function", "calculating hyperbolic sines", "trigonometric functions", "sinhf function", "sinhl function", "hyperbolic functions"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # sinh, sinhf, sinhl

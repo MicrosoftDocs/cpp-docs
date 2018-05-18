@@ -2,18 +2,13 @@
 title: "Function Inlining Problems | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["/Ob1 C++ compiler option", "inline functions, problems", "-Ob1 C++ compiler option", "/Ob2 C++ compiler option", "-Ob2 C++ compiler option", "function inlining problems"]
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Function Inlining Problems

@@ -2,19 +2,14 @@
 title: "Defining a Message Handler for a Reflected Message | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.codewiz.defining.msg.msghandler"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["messages [MFC], reflected", "message handling [MFC], reflected messages"]
 ms.assetid: 5a403528-58c5-46e7-90d5-4a77f0ab9b9c
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Defining a Message Handler for a Reflected Message

@@ -2,19 +2,14 @@
 title: "Template Classes for Arrays, Lists, and Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.template"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [MFC], classes", "template classes [MFC], for arrays/lists and maps", "list classes [MFC]", "map classes [MFC]", "template classes [MFC]"]
 ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Template Classes for Arrays, Lists, and Maps

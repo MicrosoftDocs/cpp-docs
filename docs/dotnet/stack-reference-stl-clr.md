@@ -2,19 +2,14 @@
 title: "stack::reference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::stack::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reference member [STL/CLR]"]
 ms.assetid: 05c8fb2c-215c-4b83-80f9-d4d354577c6a
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::reference (STL/CLR)

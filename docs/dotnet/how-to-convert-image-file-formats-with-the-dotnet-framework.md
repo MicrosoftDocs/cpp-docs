@@ -2,18 +2,13 @@
 title: "How to: Convert Image File Formats with the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["GDI+ [C++], converting image file formats", "graphics [C++], converting image file formats"]
 ms.assetid: 5d5384b0-b9b7-4262-b9ad-c4cb95f75ee4
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert Image File Formats with the .NET Framework

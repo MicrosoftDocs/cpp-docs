@@ -2,19 +2,14 @@
 title: "__movsq | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__movsq"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__movsq intrinsic", "rep movsq instruction", "movsq instruction"]
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __movsq

@@ -2,18 +2,13 @@
 title: "Drag and Drop: Customizing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["drag and drop [MFC], implementing in non-OLE applications", "drag and drop [MFC], customizing behavior", "drag and  [MFC], COleDataSource object", "drag and drop [MFC], calling DoDragDrop", "OLE drag and drop [MFC], customizing behavior"]
 ms.assetid: 03369d3e-46bf-4140-b58c-d0c9657cf38a
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Drag and Drop: Customizing

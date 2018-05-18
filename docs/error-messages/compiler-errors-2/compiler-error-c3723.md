@@ -2,19 +2,14 @@
 title: "Compiler Error C3723 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3723"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3723"]
 ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3723

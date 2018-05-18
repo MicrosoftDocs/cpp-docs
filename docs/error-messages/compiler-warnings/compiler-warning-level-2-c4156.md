@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 2) C4156 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4156"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4156"]
 ms.assetid: 9adf3acb-c0fe-42a8-a4db-5822b1493f77
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4156

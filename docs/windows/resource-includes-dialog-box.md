@@ -2,19 +2,14 @@
 title: "Resource Includes Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resourceincludes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Resource Includes dialog box", "rc files, changing storage", "symbol header files, changing", "compiling source code, including resources", ".rc files, changing storage", "symbol header files, read-only", "symbols, symbol header files"]
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Includes Dialog Box

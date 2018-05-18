@@ -2,19 +2,14 @@
 title: "Accelerator Editor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.accelerator.F1"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator tables [C++], editing", "tables [Visual Studio], accelerator key", "accelerator keys", "resource editors, Accelerator editor", "keyboard shortcuts [C++], Accelerator editor", "Accelerator editor"]
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Accelerator Editor

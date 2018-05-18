@@ -2,19 +2,14 @@
 title: "Compiler Error C3057 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3057"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3057"]
 ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3057

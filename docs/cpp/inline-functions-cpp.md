@@ -2,19 +2,14 @@
 title: "Inline Functions (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Inline Functions (C++)

@@ -2,14 +2,9 @@
 title: "&lt;system_error&gt; enums | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["system_error/std::errc", "system_error/std::io_errc"]
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
-caps.latest.revision: 12
-manager: "ghogen"
 ---
 # &lt;system_error&gt; enums
 

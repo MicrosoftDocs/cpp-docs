@@ -2,18 +2,13 @@
 title: "Locales and Code Pages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["locales [C++], about locales", "locale IDs [C++]", "locales [C++]", "code pages [C++]", "code pages [C++], dynamically changing", "character sets [C++], code pages", "multibyte code pages [C++]", "character sets [C++], locales", "localization [C++], code pages", "localization [C++], locales", "code pages [C++], locales", "conventions [C++], international character support"]
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
-caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Locales and Code Pages

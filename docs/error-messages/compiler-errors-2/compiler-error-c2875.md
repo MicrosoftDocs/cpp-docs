@@ -2,19 +2,14 @@
 title: "Compiler Error C2875 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2875"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2875"]
 ms.assetid: d589fc0c-08b2-4a79-bc0e-dca5eb80bdd5
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2875

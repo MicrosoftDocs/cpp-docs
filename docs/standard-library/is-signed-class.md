@@ -2,19 +2,14 @@
 title: "is_signed Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_signed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_signed class", "is_signed"]
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is_signed Class

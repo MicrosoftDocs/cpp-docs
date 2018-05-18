@@ -2,19 +2,14 @@
 title: "FtmBase::UnmarshalInterface Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase::UnmarshalInterface"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["UnmarshalInterface method"]
 ms.assetid: 6850a621-e9a6-4001-bc1e-bd5d1b121adc
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::UnmarshalInterface Method

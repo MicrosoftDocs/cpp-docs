@@ -2,19 +2,14 @@
 title: "remove_if (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::remove_if"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_if function [STL/CLR]"]
 ms.assetid: de501d3f-965b-4a99-b833-f6fa303fbcdc
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # remove_if (STL/CLR)

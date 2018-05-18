@@ -2,18 +2,13 @@
 title: "Adding an ATL Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding dialog resources", "MFC dialog boxes, ATL dialogs", "dialog boxes, ATL"]
 ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Dialog Box

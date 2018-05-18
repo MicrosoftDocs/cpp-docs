@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4794 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C4794"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4794"]
 ms.assetid: badc9c36-fa1a-4fec-929b-7bfda7a7b79f
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4794

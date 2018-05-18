@@ -2,19 +2,14 @@
 title: "__fastcall | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__fastcall_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__fastcall keyword [C++]"]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __fastcall
@@ -26,7 +21,7 @@ ms.workload: ["cplusplus"]
 |-------------|--------------------|  
 |Argument-passing order|The first two DWORD or smaller arguments that are found in the argument list from left to right are passed in ECX and EDX registers; all other arguments are passed on the stack from right to left.|  
 |Stack-maintenance responsibility|Called function pops the arguments from the stack.|  
-|Name-decoration convention|At sign (@) is prefixed to names; an at sign followed by the number of bytes (in decimal) in the parameter list is suffixed to names.|  
+|Name-decoration convention|At sign (\@) is prefixed to names; an at sign followed by the number of bytes (in decimal) in the parameter list is suffixed to names.|  
 |Case-translation convention|No case translation performed.|  
   
 > [!NOTE]

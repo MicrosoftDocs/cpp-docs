@@ -2,19 +2,14 @@
 title: "GetActivationFactory Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::GetActivationFactory", "client/ABI::Windows::Foundation::GetActivationFactory", "client/Windows::Foundation::GetActivationFactory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetActivationFactory function"]
 ms.assetid: 5736d285-6beb-42aa-8788-e261c0010afe
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # GetActivationFactory Function

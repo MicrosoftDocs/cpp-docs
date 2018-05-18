@@ -2,19 +2,14 @@
 title: "CFirePropNotifyEvent Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CFirePropNotifyEvent", "ATLCTL/ATL::CFirePropNotifyEvent", "ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged", "ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["sinks, notifying of ATL events", "CFirePropNotifyEvent class", "connection points [C++], notifying of events"]
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CFirePropNotifyEvent Class

@@ -2,18 +2,13 @@
 title: "Classes Shared by MFC and ATL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, classes"]
 ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Classes Shared by MFC and ATL

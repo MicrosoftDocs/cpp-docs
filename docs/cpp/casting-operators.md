@@ -1,19 +1,14 @@
 ---
 title: "Casting Operators | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], casting", "casting operators [C++]"]
 ms.assetid: 16240348-26bc-4f77-8eab-57253f00ce52
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Casting Operators
