@@ -1,7 +1,9 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/15/2017"
+ms.date: "04/28/2018"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
@@ -33,8 +35,11 @@ To change settings pertaining to the remote Linux computer, configure the remote
 > [!NOTE]
 > To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section.  These could be set to use a certain version of GCC, or even the Clang compiler, for example.
 
-## VC++ directories
-By default, Visual Studio does not include any system-level include files from the Linux computer.  For example, items in the **/usr/include** directory are not present in Visual Studio.  For full [IntelliSense](/visualstudio/ide/using-intellisense) support, you will need to copy those files to some location on your development computer and point Visual Studio to this location.  One option is to use scp (Secure Copy) to copy the files.  On Windows 10, you can use [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about) to run scp.  For previous versions of Windows, you could use something like [PSCP (PuTTY Secure Copy)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+## Include directories and IntelliSense support
+
+**Visual Studio 2017 version 15.6 and earlier:**
+By default, Visual Studio does not include any system-level include files from the Linux computer.  For example, items in the **/usr/include** directory are not present in Visual Studio.
+For full [IntelliSense](/visualstudio/ide/using-intellisense) support, you will need to copy those files to some location on your development computer and point Visual Studio to this location.  One option is to use scp (Secure Copy) to copy the files.  On Windows 10, you can use [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about) to run scp.  For previous versions of Windows, you could use something like [PSCP (PuTTY Secure Copy)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 You can copy the files by using a command similar to the following:
 
@@ -45,6 +50,9 @@ Of course, replace the **linux_username** and **remote_host** values above for w
 Once the files are copied, use the **VC++ Directories** item in Project properties to tell Visual Studio where to find the additional include files that were just copied.
 
 ![VC++ Directories](media/settings_directories.png)
+
+**Visual Studio 2017 version 15.7 and later:**
+See [Manage Remote Headers for IntelliSense](#remote_intellisense).
 
 ## Copy sources
 When building, the source files on your development PC are copied to the Linux computer and compiled there.  By default, all sources in the Visual Studio project are copied to the locations set in the settings above.  However, additional sources can also be added to the list, or copying sources can be turned off entirely, which is the default for a Makefile project.
@@ -61,6 +69,20 @@ When building, the source files on your development PC are copied to the Linux c
 Since all compilation is happening on a remote computer, several additional Build Events have been added to the Build Events section in Project Properties.  These are **Remote Pre-Build Event**, **Remote Pre-Link Event**, and **Remote Post-Build Event**, and will occur on the remote computer before or after the individual steps in the process.
 
 ![Build Events](media/settings_buildevents.png)
+
+## <a name="remote_intellisense"></a> IntelliSense for remote headers (Visual Studio 2017 version 15.7 and later)
+
+When you add a new connection in **Connection Manager**, Visual Studio automatically detects the include directories for the compiler on the remote system. Visual Studio then zips up and copies those files to a directory on your local Windows machine. After that, whenever you use that connection in a Visual Studio or CMake project, the headers in those directories are used to provide IntelliSense.
+
+This functionality depends on the Linux machine having zip installed. You can install zip by using this apt-get command:
+
+```cmd
+apt install zip
+```
+
+To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created prior to version 15.3, select the connect and then select **Download**.
+
+![Remote Header IntelliSense](media/remote-header-intellisense.png)
 
 ## See Also
 [Working with Project Properties](../ide/working-with-project-properties.md)  
