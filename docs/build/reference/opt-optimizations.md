@@ -55,13 +55,15 @@ By default, the **/OPT:LBR** option is set when incremental linking is not enabl
 
 ## Remarks
 
-The **/OPT** optimizations generally decrease the image size and increase the program speed at a cost of increased link time.
+When used at the command line, the linker defaults to **/OPT:REF,ICF,LBR**. If **/DEBUG** is specified, the default is **/OPT:NOREF,NOICR,NOLBR**.
+
+The **/OPT** optimizations generally decrease the image size and increase the program speed. These improvements can be substantial in larger programs, which is why they are enabled by default for retail builds.
+
+Linker optimization does take extra time up front, but the optimized code also saves time when the linker has fewer relocations to fix up and creates a smaller final image, and it saves even more time when it has less debug information to process and write into the PDB. When optimization is enabled, it can result in a faster link time overall, as the small additional cost in analysis may be more than offset by the time savings in linker passes over smaller binaries.
 
 The **/OPT** arguments may be specified together, separated by commas. For example, instead of **/OPT:REF /OPT:NOICF**, you can specify **/OPT:REF,NOICF**.
 
 You can use the [/VERBOSE](../../build/reference/verbose-print-progress-messages.md) linker option to see the functions that are removed by **/OPT:REF** and the functions that are folded by **/OPT:ICF**.
-
-When used at the command line, the linker defaults to **/OPT:REF,ICF,LBR**. If **/DEBUG** is specified, the default is **/OPT:NOREF,NOICR,NOLBR**.
 
 The **/OPT** arguments are often set for projects created by using the **New Project** dialog in the Visual Studio IDE, and usually have different values for debug and release configurations. If no value is set for these linker options in your project, then you may get the project defaults, which can be different from the default values used by the linker at the command line.
 
