@@ -1,5 +1,5 @@
 ---
-title: "-OPT (Optimizations) | Microsoft Docs"
+title: "/OPT (Optimizations) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
