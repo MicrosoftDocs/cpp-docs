@@ -1,7 +1,7 @@
 ---
 title: "/OPT (Optimizations) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "05/18/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.OptimizeReferences", "/opt", "VC.Project.VCLinkerTool.OptimizeForWindows98", "VC.Project.VCLinkerTool.EnableCOMDATFolding", "VC.Project.VCLinkerTool.OptimizeFolding", "VC.Project.VCLinkerTool.FoldingIterations", "VC.Project.VCLinkerTool.OptimizeFoldingIterations"]
