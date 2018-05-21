@@ -1,6 +1,6 @@
 ---
 title: "/DEPENDENTLOADFLAGS (Set default dependent load flags)"
-description: "The /DEPENDENTLOADFLAGS option sets default flags for DLLs loaded using LoadLibrary
+description: "The /DEPENDENTLOADFLAGS option sets default flags for DLLs loaded using LoadLibrary"
 ms.custom: ""
 ms.date: "05/18/2018"
 ms.technology: ["cpp-tools"]
