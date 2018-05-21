@@ -152,7 +152,7 @@ int main( void )
      Get the required size in characters, and allocate enough space. */
 
     requiredSize = mbstowcs(NULL, pmbhello, 0); // C4996
-    /* Add one to leave room for the NULL terminator */
+    /* Add one to leave room for the null terminator */
     pwc = (wchar_t *)malloc( (requiredSize + 1) * sizeof( wchar_t ));
     if (! pwc)
     {

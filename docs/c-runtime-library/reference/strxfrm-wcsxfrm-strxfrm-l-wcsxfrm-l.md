@@ -72,7 +72,7 @@ After the transformation, a call to **strcmp** with the two transformed strings 
 
 **wcsxfrm** is a wide-character version of **strxfrm**; the string arguments of **wcsxfrm** are wide-character pointers. For **wcsxfrm**, after the string transformation, a call to **wcscmp** with the two transformed strings yields results identical to those of a call to **wcscoll** applied to the original two strings. **wcsxfrm** and **strxfrm** behave identically otherwise. **wcsxfrm** uses the current locale for its locale-dependent behavior; **_wcsxfrm_l** uses the locale passed in instead of the current locale.
 
-These functions validate their parameters. If *strSource* is a null pointer, or *strDest* is a NULL pointer (unless count is zero), or if *count* is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **INT_MAX**.
+These functions validate their parameters. If *strSource* is a null pointer, or *strDest* is a **NULL** pointer (unless count is zero), or if *count* is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **INT_MAX**.
 
 ### Generic-Text Routine Mappings
 

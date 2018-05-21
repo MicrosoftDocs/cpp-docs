@@ -45,10 +45,10 @@ Null-terminated source string.
 Requested type of memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 *filename*<br/>
-Pointer to name of source file that requested allocation operation or NULL.
+Pointer to name of source file that requested allocation operation or **NULL**.
 
 *linenumber*<br/>
-Line number in source file where allocation operation was requested or NULL.
+Line number in source file where allocation operation was requested or **NULL**.
 
 ## Return Value
 

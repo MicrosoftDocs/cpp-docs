@@ -34,7 +34,7 @@ A pointer to an [mbstate_t](../../c-runtime-library/standard-types.md) variable.
 
 ## Return Value
 
-Nonzero if *ps* is NULL or if not in the middle of a conversion.
+Nonzero if *ps* is **NULL** or if not in the middle of a conversion.
 
 ## Remarks
 

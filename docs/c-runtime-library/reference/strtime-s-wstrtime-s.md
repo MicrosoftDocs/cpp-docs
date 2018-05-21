@@ -65,7 +65,7 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 ## Security Issues
 
-Passing in an invalid non-NULL value for the buffer will result in an access violation if the *numberOfElements* parameter is greater than 9.
+Passing in an invalid non-**NULL** value for the buffer will result in an access violation if the *numberOfElements* parameter is greater than 9.
 
 Passing a value for *numberOfElements* that is greater than the actual size of the buffer will result in buffer overrun.
 

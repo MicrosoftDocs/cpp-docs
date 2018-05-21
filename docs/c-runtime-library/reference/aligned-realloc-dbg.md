@@ -43,10 +43,10 @@ The size of the requested memory allocation.
 The alignment value, which must be an integer power of 2.
 
 *filename*<br/>
-Pointer to the name of the source file that requested the **realloc** operation or NULL.
+Pointer to the name of the source file that requested the **realloc** operation or **NULL**.
 
 *linenumber*<br/>
-Line number in the source file where the **realloc** operation was requested or NULL.
+Line number in the source file where the **realloc** operation was requested or **NULL**.
 
 ## Return Value
 

@@ -48,7 +48,7 @@ wchar_t *_getws(
  Storage location for input string.  
   
 ## Return Value  
- Returns its argument if successful. A `NULL` pointer indicates an error or end-of-file condition. Use [ferror](../c-runtime-library/reference/ferror.md) or [feof](../c-runtime-library/reference/feof.md) to determine which one has occurred. If `buffer` is `NULL`, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set errno to `EINVAL`.  
+ Returns its argument if successful. A **NULL** pointer indicates an error or end-of-file condition. Use [ferror](../c-runtime-library/reference/ferror.md) or [feof](../c-runtime-library/reference/feof.md) to determine which one has occurred. If `buffer` is **NULL**, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set errno to `EINVAL`.  
   
 ## Remarks  
  The `gets` function reads a line from the standard input stream `stdin` and stores it in `buffer`. The line consists of all characters up to and including the first newline character ('\n'). `gets` then replaces the newline character with a null character ('\0') before returning the line. In contrast, the `fgets` function retains the newline character. `_getws` is a wide-character version of `gets`; its argument and return value are wide-character strings.  

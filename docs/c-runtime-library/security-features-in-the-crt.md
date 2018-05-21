@@ -42,7 +42,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
 -   `Parameter Validation`. Parameters passed to CRT functions are validated, in both secure functions and in many preexisting versions of functions. These validations include:  
   
-    -   Checking for `NULL` values passed to the functions.  
+    -   Checking for `**NULL** values passed to the functions.  
   
     -   Checking enumerated values for validity.  
   

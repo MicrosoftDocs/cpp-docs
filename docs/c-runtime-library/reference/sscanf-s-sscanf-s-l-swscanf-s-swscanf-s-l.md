@@ -139,7 +139,7 @@ int main( void )
    float fp;
 
    // Input various data from tokenstring:
-   // max 80 character string plus NULL terminator
+   // max 80 character string plus null terminator
    sscanf_s( tokenstring, "%s", s, (unsigned)_countof(s) );
    sscanf_s( tokenstring, "%c", &c, (unsigned)sizeof(char) );
    sscanf_s( tokenstring, "%d", &i );

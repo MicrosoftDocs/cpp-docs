@@ -48,7 +48,7 @@ wchar_t *_cgetws(
  Storage location for data.  
   
 ## Return Value  
- `_cgets` and `_cgetws` return a pointer to the start of the string, at `buffer[2]`. If `buffer` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `NULL` and set `errno` to `EINVAL`.  
+ `_cgets` and `_cgetws` return a pointer to the start of the string, at `buffer[2]`. If `buffer` is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **NULL** and set `errno` to `EINVAL`.  
   
 ## Remarks  
  These functions read a string of characters from the console and store the string and its length in the location pointed to by `buffer`. The `buffer` parameter must be a pointer to a character array. The first element of the array, `buffer[0]`, must contain the maximum length (in characters) of the string to be read. The array must contain enough elements to hold the string, a terminating null character ('\0'), and 2 additional bytes. The function reads characters until a carriage return-line feed (CR-LF) combination or the specified number of characters is read. The string is stored starting at `buffer[2]`. If the function reads a CR-LF, it stores the null character ('\0'). The function then stores the actual length of the string in the second array element, `buffer[1]`.  
