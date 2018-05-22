@@ -50,7 +50,7 @@ Locale to use.
 
 Each function returns the **long** value produced by interpreting the input characters as a number. The return value is 0L for **atol** if the input cannot be converted to a value of that type.
 
-In the case of overflow with large positive integral values, **atol** returns **LONG_MAX**; in the case of overflow with large negative integral values, **LONG_MIN** is returned. In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter passed in is null, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
+In the case of overflow with large positive integral values, **atol** returns **LONG_MAX**; in the case of overflow with large negative integral values, **LONG_MIN** is returned. In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
 ## Remarks
 
