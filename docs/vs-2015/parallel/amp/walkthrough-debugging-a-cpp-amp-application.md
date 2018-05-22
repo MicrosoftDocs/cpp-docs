@@ -46,7 +46,7 @@ This topic demonstrates how to debug an application that uses C++ Accelerated Ma
   
 -   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](http://msdn.microsoft.com/library/40b38559-b8de-4041-91f2-68986767c976).  
   
--   Make sure you are running [!INCLUDE[win8](../../includes/win8-md.md)] or [!INCLUDE[winserver8](../../includes/winserver8-md.md)] to support debugging on the software emulator.  
+-   Make sure you are running [!INCLUDE[win8](../../includes/win8-md.md)] or Windows Server 2012 to support debugging on the software emulator.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   

@@ -30,11 +30,11 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
   
 ## System Requirements  
   
-- [!INCLUDE[win7](../../includes/win7-md.md)], [!INCLUDE[win8](../../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../../includes/winsvr08-r2-md.md)], or [!INCLUDE[winserver8](../../includes/winserver8-md.md)]  
+- [!INCLUDE[win7](../../includes/win7-md.md)], [!INCLUDE[win8](../../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../../includes/winsvr08-r2-md.md)], or Windows Server 2012.  
   
 -   DirectX 11 Feature Level 11.0 or later hardware  
   
--   For debugging on the software emulator, [!INCLUDE[win8](../../includes/win8-md.md)] or [!INCLUDE[winserver8](../../includes/winserver8-md.md)] is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](http://msdn.microsoft.com/library/c7e77a5a-cb57-4b11-9187-ecc89acc8775).  
+-   For debugging on the software emulator, [!INCLUDE[win8](../../includes/win8-md.md)] or Windows Server 2012 is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](http://msdn.microsoft.com/library/c7e77a5a-cb57-4b11-9187-ecc89acc8775).  
   
 ## Introduction  
  The following two examples illustrate the primary components of C++ AMP. Assume that you want to add the corresponding elements of two one-dimensional arrays. For example, you might want to add `{1, 2, 3, 4, 5}` and `{6, 7, 8, 9, 10}` to obtain `{7, 9, 11, 13, 15}`. Without using C++ AMP, you might write the following code to add the numbers and display the results.  
