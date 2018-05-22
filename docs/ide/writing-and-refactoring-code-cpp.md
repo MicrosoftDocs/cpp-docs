@@ -24,7 +24,7 @@ To add new files to a project, right-click on the project node in Solution Explo
 
 ## Formatting options
 
-To set formatting options such as indents, brace completion, and colorization, type "C++ Formatting" into the **QuickLaunch** window. Visual Studio 2017 version 15.7 and later supports ClangFormat. You can configure it in the [C/C++ Formatting Property Page](visualstudio/ide/reference/options-text-editor-c-cpp-formatting) under **Tools &#124; Options &#124; Text Editor &#124; C/C++ &#124; Formatting**.
+To set formatting options such as indents, brace completion, and colorization, type "C++ Formatting" into the **QuickLaunch** window. Visual Studio 2017 version 15.7 and later supports ClangFormat. You can configure it in the [C/C++ Formatting Property Page](/visualstudio/ide/reference/options-text-editor-c-cpp-formatting) under **Tools &#124; Options &#124; Text Editor &#124; C/C++ &#124; Formatting**.
 
 ![C++ formatting options](media/cpp-formatting-options.png)
 
