@@ -1,0 +1,43 @@
+---
+title: "Compiler Warning (level 3) CS0693 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0693"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0693"
+ms.assetid: a3902336-49db-4808-b41f-8f0936bff53a
+caps.latest.revision: 10
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Warning (level 3) CS0693
+Type parameter 'type parameter' has the same name as the type parameter from outer type 'type'  
+  
+ This error occurs when you have a generic member such as a method inside a generic class. Since the method's type parameter is not necessarily the same as the class's type parameter, you cannot give them both the same name. For more information, see [Generic Methods](http://msdn.microsoft.com/library/673eeea2-4b48-4faa-9c4e-2e89449221b9).  
+  
+ To avoid this situation, use a different name for one of the type parameters.  
+  
+## Example  
+ The following sample generates CS0693.  
+  
+```  
+// CS0693.cs  
+// compile with: /W:3 /target:library  
+class Outer<T>  
+{  
+   class Inner<T> {}   // CS0693  
+   // try the following line instead  
+   // class Inner<U> {}  
+}  
+```

@@ -1,0 +1,9 @@
+; NVC_OLEDB_Provider.def : Declares the module parameters.
+
+LIBRARY      "NVC_OLEDB_Provider.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

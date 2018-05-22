@@ -1,0 +1,34 @@
+---
+title: "&#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by the default values of optional parameters | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30305"
+  - "bc30305"
+helpviewer_keywords: 
+  - "BC30305"
+ms.assetid: f07f925e-9f95-4885-bdba-eaba2d0483d8
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by the default values of optional parameters
+You have attempted to overload a method with another method that differs from the first only in its optional parameters. A method with an optional parameter is equivalent to two overloaded methods, one with the optional parameter, and the other without it. Therefore, you cannot overload a method with an argument list corresponding to either of these.  
+  
+ **Error ID:** BC30305  
+  
+### To correct this error  
+  
+-   Ensure that the methods are differentiated by more than only optional parameters.  
+  
+## See Also  
+ [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a)   
+ [Considerations in Overloading Procedures](http://msdn.microsoft.com/library/a2001248-10d0-42c5-b0ce-eeedc987319f)

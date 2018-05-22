@@ -1,0 +1,33 @@
+---
+title: "Troubleshooting Exceptions: System.Deployment.DependentPlatformMissingException | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "JScript"
+  - "VB"
+  - "CSharp"
+  - "C++"
+helpviewer_keywords: 
+  - "DependentPlatformMissingException class"
+ms.assetid: 2343eb4f-f23f-4b6c-a65c-1f93c3e6ea36
+caps.latest.revision: 13
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# Troubleshooting Exceptions: System.Deployment.DependentPlatformMissingException
+A `T:System.Deployment.DependentPlatformMissingException` exception is thrown when an attempt is made to run an application on a computer that is incompatible. This may occur when the wrong operating system or version of the .NET Framework is installed on the target computer.  
+  
+## Associated Tips  
+ **Make sure that all assemblies required by the application are installed on the target computer.**  
+ Every installation that attempts to use the Windows Installer begins by checking whether the installer is present on the user's computer, and, if it is not present, whether the computer is ready to install Windows Installer.  
+  
+## See Also  
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

@@ -1,0 +1,46 @@
+---
+title: "Compiler Error CS0026 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0026"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0026"
+ms.assetid: 8767fbc1-8ba7-4e88-a9f9-7e620411882b
+caps.latest.revision: 12
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0026
+Keyword 'this' is not valid in a static property, static method, or static field initializer  
+  
+ The [this](http://msdn.microsoft.com/library/d4f827fe-4710-410b-89b8-867dad44b8a3) keyword refers to an object, which is an instance of a type. Since static methods are independent of any instance of the containing class, the "this" keyword is meaningless and is therefore not allowed. For more information, see [Static Classes and Static Class Members](http://msdn.microsoft.com/library/235614b5-1371-4dbd-9abd-b406a8b0298b) and [Objects](http://msdn.microsoft.com/library/af4a5230-fbf3-4eea-95e1-8b883c2f845c).  
+  
+## Example  
+ The following example generates CS0026:  
+  
+```  
+// CS0026.cs  
+public class A  
+{  
+   public static int i = 0;  
+  
+   public static void Main()  
+   {  
+// CS0026  
+      this.i = this.i + 1;     
+      // Try the following line instead:  
+      // i = i + 1;  
+   }  
+}  
+```

@@ -1,0 +1,33 @@
+---
+title: "Cannot set the value of a local variable for a method that is not at the top of the stack | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30711"
+  - "vbc30711"
+helpviewer_keywords: 
+  - "BC30711"
+ms.assetid: b2aa290f-3311-448a-af46-ff2a2add5788
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Cannot set the value of a local variable for a method that is not at the top of the stack
+You can only modify variables if they are the top of the call stack. For example, if `procedure1` calls `procedure2` and you are in `procedure1`, you cannot modify variables in `procedure2`.  
+  
+ **Error ID:** BC30711  
+  
+### To correct this error  
+  
+-   Modify variables that are at the top of the call stack.  
+  
+## See Also  
+ [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483)

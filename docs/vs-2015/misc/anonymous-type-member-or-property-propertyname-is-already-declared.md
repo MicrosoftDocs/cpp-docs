@@ -1,0 +1,55 @@
+---
+title: "Anonymous type member or property &#39;&lt;propertyname&gt;&#39; is already declared | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc36547"
+  - "vbc36547"
+helpviewer_keywords: 
+  - "BC36547"
+ms.assetid: 4c60d24a-62d7-404a-bc35-d1a1d9c9f851
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Anonymous type member or property &#39;&lt;propertyname&gt;&#39; is already declared
+A property name can be established only once in the declaration of an anonymous type. For example, the following declarations are not valid:  
+  
+```vb  
+'' Not valid, because the Label property is assigned to twice.  
+' Dim anonType1 = New With {.Label = "Debra Garcia", .Label = .Label & ", President"}  
+'' Not valid, because the property name inferred for both properties is  
+'' Name.  
+' Dim anonType2 = New With {Key product.Name, Key car1.Name}  
+```  
+  
+ **Error ID:** BC36547  
+  
+### To correct this error  
+  
+-   Choose a different name for one of the properties.  
+  
+    ```vb  
+    ' Valid.  
+    Dim anonType3 = New With {.Name = "Debra Garcia", .Label = .Name & ", President"}  
+    ```  
+  
+-   Provide new names for the variables or property names from which you are inferring names and values.  
+  
+    ```vb  
+    ' Valid.  
+    Dim anonType4 = New With {Key .ProductName = product.Name, Key .CarName = car1.Name}  
+  
+    ```  
+  
+## See Also  
+ [Anonymous Types](http://msdn.microsoft.com/library/7b87532c-4b3e-4398-8503-6ea9d67574a4)   
+ [How to: Infer Property Names and Types in Anonymous Type Declarations](http://msdn.microsoft.com/library/7c748b22-913f-4d9d-b747-6b7bf296a0bc)

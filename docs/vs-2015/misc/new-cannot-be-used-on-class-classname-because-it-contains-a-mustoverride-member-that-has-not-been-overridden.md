@@ -1,0 +1,33 @@
+---
+title: "&#39;New&#39; cannot be used on class &#39;&lt;classname&gt;&#39; because it contains a &#39;MustOverride&#39; member that has not been overridden | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30376"
+  - "vbc30376"
+helpviewer_keywords: 
+  - "BC30376"
+ms.assetid: f3aed05a-8202-4d2d-9c49-3c000d055116
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;New&#39; cannot be used on class &#39;&lt;classname&gt;&#39; because it contains a &#39;MustOverride&#39; member that has not been overridden
+You have attempted to use `New` on a class that contains a `MustOverride` member that has not been overridden.  
+  
+ **Error ID:** BC30376  
+  
+### To correct this error  
+  
+-   Remove the `New` statement.  
+  
+## See Also  
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)

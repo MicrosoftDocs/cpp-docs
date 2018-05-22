@@ -1,0 +1,28 @@
+---
+title: "Troubleshooting Exceptions: System.Windows.ResourceReferenceKeyNotFoundException | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "EHWResourceReferenceKeyNotFound"
+helpviewer_keywords: 
+  - "ResourceReferenceKeyNotFoundException exception"
+  - "System.Windows.ResourceReferenceKeyNotFoundException exception"
+ms.assetid: 37c70e37-ce12-4b1c-a733-2fa208ea193b
+caps.latest.revision: 6
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# Troubleshooting Exceptions: System.Windows.ResourceReferenceKeyNotFoundException
+A <xref:System.Windows.ResourceReferenceKeyNotFoundException> exception might be raised during the parsing or serialization of markup extension resources.  
+  
+## See Also  
+ <xref:System.Windows.ResourceReferenceKeyNotFoundException>   
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

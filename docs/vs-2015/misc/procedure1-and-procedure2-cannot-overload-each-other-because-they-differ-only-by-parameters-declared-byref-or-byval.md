@@ -1,0 +1,39 @@
+---
+title: "&#39;&lt;procedure1&gt;&#39; and &#39;&lt;procedure2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc42003"
+  - "bc42003"
+helpviewer_keywords: 
+  - "BC42003"
+ms.assetid: f058f1e0-64d2-4497-85fc-a58e16b0d805
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;procedure1&gt;&#39; and &#39;&lt;procedure2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39;
+'\<procedure1>' and '\<procedure2>' cannot overload each other because they differ only by parameters declared ByRef or ByVal. Shadows assumed.  
+  
+ Two procedure declarations specify the same name and argument list, and the only difference is in the specification of `ByRef` or `ByVal` for one or more of the arguments. Overloaded versions of a procedure must differ from each other in the number, order, or data types of the arguments.  
+  
+ This message is a warning. `Shadows` is assumed by default. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](http://msdn.microsoft.com/library/99cf4781-bd4d-47b4-91b9-217933509f82).  
+  
+ **Error ID:** BC42003  
+  
+### To correct this error  
+  
+-   If you intend to create a set of overloaded versions of a procedure, make the number, order, or data types of the arguments different in each version. Also, add the `Overloads` keyword to each declaration.  
+  
+-   If you do not intend to overload a procedure, change the procedure name in one of the declarations.  
+  
+## See Also  
+ [Procedure Overloading](http://msdn.microsoft.com/library/fbc7fb18-e3b2-48b6-b554-64c00ed09d2a)

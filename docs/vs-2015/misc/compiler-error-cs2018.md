@@ -1,0 +1,27 @@
+---
+title: "Compiler Error CS2018 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS2018"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS2018"
+ms.assetid: 227f1c1b-61ec-4068-83a1-7ca686be0916
+caps.latest.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS2018
+Unable to find messages file 'cscmsgs.dll'  
+  
+ The .dll file that contains the compiler's error and warning messages was not found. This file must be present in the same directory as the other compiler support files.

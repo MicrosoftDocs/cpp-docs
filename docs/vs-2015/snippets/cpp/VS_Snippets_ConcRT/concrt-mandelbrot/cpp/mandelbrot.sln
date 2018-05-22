@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mandelbrot", "Mandelbrot\Mandelbrot.vcxproj", "{0DF18E5A-3403-43B5-82FC-F5F2E4FDD5C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParallelMandelbrot", "ParallelMandelbrot\ParallelMandelbrot.vcxproj", "{92B64EDE-6EAD-4CA7-855B-8F2B05064092}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DF18E5A-3403-43B5-82FC-F5F2E4FDD5C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0DF18E5A-3403-43B5-82FC-F5F2E4FDD5C7}.Debug|Win32.Build.0 = Debug|Win32
+		{0DF18E5A-3403-43B5-82FC-F5F2E4FDD5C7}.Release|Win32.ActiveCfg = Release|Win32
+		{0DF18E5A-3403-43B5-82FC-F5F2E4FDD5C7}.Release|Win32.Build.0 = Release|Win32
+		{92B64EDE-6EAD-4CA7-855B-8F2B05064092}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92B64EDE-6EAD-4CA7-855B-8F2B05064092}.Debug|Win32.Build.0 = Debug|Win32
+		{92B64EDE-6EAD-4CA7-855B-8F2B05064092}.Release|Win32.ActiveCfg = Release|Win32
+		{92B64EDE-6EAD-4CA7-855B-8F2B05064092}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

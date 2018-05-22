@@ -1,0 +1,33 @@
+---
+title: "Bracketed identifier is missing closing &#39;]&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30034"
+  - "vbc30034"
+helpviewer_keywords: 
+  - "BC30034"
+ms.assetid: 46f25ddb-0d9f-48f8-8656-1a880ba8a1ba
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Bracketed identifier is missing closing &#39;]&#39;
+Brackets in an escaped name must occur in matching pairs.  
+  
+ **Error ID:** BC30034  
+  
+### To correct this error  
+  
+-   Place a closing bracket at the end of the escaped name.  
+  
+## See Also  
+ [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)

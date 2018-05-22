@@ -1,0 +1,37 @@
+---
+title: "&#39;.&#39; expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30287"
+  - "vbc30287"
+helpviewer_keywords: 
+  - "BC30287"
+ms.assetid: 7d7b4934-b521-4ed3-b054-aeb71f8daacf
+caps.latest.revision: 12
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;.&#39; expected
+The code has a `Handles` clause that contains an exclamation point (`!`).  
+  
+ **Error ID:** BC30287  
+  
+### To correct this error  
+  
+1.  If the `Handles` clause refers to an event within an object, use a period (`.`) to separate the object from the event.  
+  
+     This example handles the `Click` event from the `Button1` object.  
+  
+     [!code-vb[VbVbalrEventError#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#21)]  
+  
+## See Also  
+ [Handles](http://msdn.microsoft.com/library/1b051c0e-f499-42f6-acb5-6f4f27824b40)

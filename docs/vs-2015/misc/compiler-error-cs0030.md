@@ -1,0 +1,60 @@
+---
+title: "Compiler Error CS0030 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0030"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0030"
+ms.assetid: 3c9bd3f9-dea2-46dd-be1e-46c843ffd3de
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0030
+Cannot convert type 'type' to 'type'  
+  
+ You must provide conversion routines to support certain operator overloads. For more information, see [Conversion Operators](http://msdn.microsoft.com/library/c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc).  
+  
+ The following sample generates CS0030:  
+  
+```  
+// CS0030.cs  
+namespace x  
+{  
+   public class iii  
+   {  
+      /*  
+      public static implicit operator iii(int aa)  
+      {  
+         return null;  
+      }  
+  
+      public static implicit operator int(iii aa)  
+      {  
+         return 0;  
+      }  
+      */  
+  
+      public static iii operator ++(iii aa)  
+      {  
+         return (iii)0;   // CS0030  
+         // uncomment the conversion routines to resolve CS0030  
+      }  
+  
+      public static void Main()  
+      {  
+      }  
+   }  
+}  
+```

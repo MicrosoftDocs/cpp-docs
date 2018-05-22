@@ -1,0 +1,33 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=my_chm.chm
+Contents file=NVC_MFCHtmlHelp.hhc
+Default Window=MyHelpWindow
+Default topic=HIDD_ROOT_DIALOG.HTM
+Display compile progress=No
+Full-text search=Yes
+Index file=NVC_MFCHtmlHelp.hhk
+Language=0x409 English (United States)
+
+[WINDOWS]
+MyHelpWindow="Help Me!","NVC_MFCHtmlHelp.hhc","NVC_MFCHtmlHelp.hhk","HIDD_ROOT_DIALOG.HTM",,"HIDD_ANOTHER_TOPIC.htm","Blook","HIDD_ANOTHER_TOPIC.htm","Block",0x2520,,0xc3006,,,,,,,,0
+
+
+[FILES]
+HIDD_ROOT_DIALOG.HTM
+ctrlhlp.txt
+HIDD_ANOTHER_TOPIC.HTM
+
+[ALIAS]
+HIDD_NVC_MFCHTMLHELP_DIALOG = HIDD_ROOT_DIALOG.htm
+HIDD_ANOTHER_TOPIC = HIDD_ANOTHER_TOPIC.htm
+
+[MAP]
+#include HTMLDefines.h
+
+[TEXT POPUPS]
+HTMLDefines.h
+
+[INFOTYPES]
+

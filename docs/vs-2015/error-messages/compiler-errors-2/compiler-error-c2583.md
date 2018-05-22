@@ -1,0 +1,48 @@
+---
+title: "Compiler Error C2583 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2583"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2583"
+ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
+caps.latest.revision: 12
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C2583
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C2583](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c2583).  
+  
+  
+identifier' : 'const/volatile' 'this' pointer is illegal for constructors/destructors  
+  
+ A constructor or destructor is declared `const` or `volatile`. This is not allowed.  
+  
+ The following sample generates C2583:  
+  
+```  
+// C2583.cpp  
+// compile with: /c  
+class A {  
+public:  
+   int i;  
+   A() const;   // C2583  
+  
+   // try the following line instead  
+   // A();  
+};  
+```
+

@@ -1,0 +1,35 @@
+---
+title: "&lt;method&gt; &#39;&lt;methodname1&gt;&#39; must be declared &#39;Overloads&#39; because another &#39;&lt;methodname2&gt;&#39; is declared &#39;Overloads&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31409"
+  - "bc31409"
+helpviewer_keywords: 
+  - "BC31409"
+ms.assetid: 27813b4e-056d-45af-969e-76e8c1ee6737
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &lt;method&gt; &#39;&lt;methodname1&gt;&#39; must be declared &#39;Overloads&#39; because another &#39;&lt;methodname2&gt;&#39; is declared &#39;Overloads&#39;
+Another property or method with the same name is declared with the `Overloads` modifier.  
+  
+ **Error ID:** BC31409  
+  
+### To correct this error  
+  
+1.  Add the `Overloads` modifier to the property or method.  
+  
+2.  Remove the `Overloads` modifier from all properties or methods with the same name.  
+  
+## See Also  
+ [Overloads](http://msdn.microsoft.com/library/0c6820b8-25b2-4664-bc59-5ca93c99c042)

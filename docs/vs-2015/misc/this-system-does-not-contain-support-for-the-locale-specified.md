@@ -1,0 +1,30 @@
+---
+title: "This system does not contain support for the Locale specified | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbrArgument_LocalNotSupported"
+ms.assetid: 59bfa215-556b-4bfa-8f25-b090ea83298d
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# This system does not contain support for the Locale specified
+You are attempting to use the `VbStrConv` enumeration, but your system does not support the specified locale.  
+  
+### To correct this error  
+  
+1.  Upgrade the machine to support the locale, or run the application on a machine that supports it.  
+  
+## See Also  
+ <xref:System.Globalization>   
+ [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
+ [Introduction to International Applications Based on the .NET Framework](http://msdn.microsoft.com/library/b0788993-e62d-4f68-8235-5f87b1d48525)

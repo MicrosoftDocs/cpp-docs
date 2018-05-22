@@ -1,0 +1,74 @@
+---
+title: "SetFilters | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SetFilters"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "SetFilters method"
+ms.assetid: ae934e1b-8ead-4c1d-a0f8-e9c80d182340
+caps.latest.revision: 9
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# SetFilters
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [SetFilters](https://docs.microsoft.com/cpp/ide/setfilters).  
+  
+  
+Adds source, include, and resource filters for the project folders.  
+  
+## Syntax  
+  
+```  
+  
+      function SetFilters(   
+   oProj    
+);  
+```  
+  
+#### Parameters  
+ `oProj`  
+ The selected project.  
+  
+## Remarks  
+ Call this function to add source, include, and resource filters for the project folders. This function finds the following symbols in the project:  
+  
+-   SOURCE_FILTER  
+  
+-   INCLUDE_FILTER  
+  
+-   RESOURCE_FILTER  
+  
+ These symbols contain the file extensions used in filtering.  
+  
+## Example  
+  
+```  
+// Create and set the project name and path.  
+selProj = CreateProject(strProjectName, strProjectPath);  
+// Add the previously-identified configurations to the project.  
+AddConfigurations(selProj, strProjectName);  
+// Set filters for the project.  
+SetFilters (selproj);  
+// Indicate that the project is an ATL project.  
+selProj.Object.keyword = "AtlProj";  
+```  
+  
+## See Also  
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
+ [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
+ [Designing a Wizard](../ide/designing-a-wizard.md)
+

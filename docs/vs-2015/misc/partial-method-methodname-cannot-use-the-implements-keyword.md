@@ -1,0 +1,34 @@
+---
+title: "Partial method &#39;&lt;methodname&gt;&#39; cannot use the &#39;Implements&#39; keyword | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31439"
+  - "bc31439"
+helpviewer_keywords: 
+  - "BC31439"
+ms.assetid: 47ab41bf-9dba-4a9e-b144-37e84d751637
+caps.latest.revision: 6
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Partial method &#39;&lt;methodname&gt;&#39; cannot use the &#39;Implements&#39; keyword
+A partial method definition cannot implement an interface or interface member.  
+  
+ **Error ID:** BC31439  
+  
+### To correct this error  
+  
+1.  Remove the `Implements` statement from the partial method definition.  
+  
+## See Also  
+ [Partial Methods](http://msdn.microsoft.com/library/74b3368b-b348-44a0-a326-7d7dc646f4e9)   
+ [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

@@ -1,0 +1,48 @@
+---
+title: "Compiler Error C2562 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2562"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2562"
+ms.assetid: 2c41e511-9952-4b98-9976-6b1523613e1b
+caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C2562
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C2562](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c2562).  
+  
+  
+identifier' : 'void' function returning a value  
+  
+ The function is declared as `void` but returns a value.  
+  
+ This error can be caused by an incorrect function prototype.  
+  
+ This error may be fixed if you specify the return type in the function declaration.  
+  
+ The following sample generates C2562:  
+  
+```  
+// C2562.cpp  
+// compile with: /c  
+void testfunc() {  
+   int i;  
+   return i;   // C2562 delete the return to resolve  
+}  
+```
+

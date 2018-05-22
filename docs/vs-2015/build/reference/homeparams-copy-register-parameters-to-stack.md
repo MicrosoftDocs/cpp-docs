@@ -1,0 +1,65 @@
+---
+title: "-homeparams (Copy Register Parameters to Stack) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "/homeparams"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/homeparams compiler option [C++]"
+  - "-homeparams compiler option [C++]"
+ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
+caps.latest.revision: 13
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# /homeparams (Copy Register Parameters to Stack)
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [-homeparams (Copy Register Parameters to Stack)](https://docs.microsoft.com/cpp/build/reference/homeparams-copy-register-parameters-to-stack).  
+  
+  
+Forces parameters passed in registers to be written to their locations on the stack upon function entry.  
+  
+## Syntax  
+  
+```  
+/homeparams  
+```  
+  
+## Remarks  
+ This compiler option is only for the [!INCLUDE[vcprx64](../../includes/vcprx64-md.md)] compilers (native and cross compile).  
+  
+ When parameters are passed in an [!INCLUDE[vcprx64](../../includes/vcprx64-md.md)] compilation, calling conventions require stackspace for parameters, even for parameters passed in registers. For more information, see [Parameter Passing](../../build/parameter-passing.md). However, by default in a release build, the register parameters will not be written to the stack, into the space that is already provided for the parameters. This makes it difficult to debug an optimized (release) build of your program.  
+  
+ For a release build, use **/homeparams** to ensure that you can debug your application. **/homeparams** does imply a performance disadvantage, because it does require a cycle to load the register parameters on to the stack.  
+  
+ In a debug build, the stack is always populated with parameters passed in registers.  
+  
+### To set this compiler option in the Visual Studio development environment  
+  
+1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+  
+2.  Click the **C/C++** folder.  
+  
+3.  Click the **Command Line** property page.  
+  
+4.  Type the compiler option in the **Additional Options** box.  
+  
+### To set this compiler option programmatically  
+  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
+  
+## See Also  
+ [Compiler Options](../../build/reference/compiler-options.md)   
+ [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+

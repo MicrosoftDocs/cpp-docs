@@ -1,0 +1,36 @@
+---
+title: "&#39;End&#39; statement not valid | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30678"
+  - "bc30678"
+helpviewer_keywords: 
+  - "BC30678"
+ms.assetid: 06dce4e0-2f2a-46c5-a4ba-3fb6b0184528
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;End&#39; statement not valid
+The `End` keyword is used incorrectly or is inappropriate in the current context.  
+  
+ **Error ID:** BC30678  
+  
+### To correct this error  
+  
+1.  Use `End` by itself to cause a procedure to lose scope.  
+  
+2.  Use `End` with other keywords to terminate a block of code such as a structure or property.  
+  
+## See Also  
+ [End Statement](http://msdn.microsoft.com/library/0e64467c-0f34-4aab-9ddd-43f8b9d55d90)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

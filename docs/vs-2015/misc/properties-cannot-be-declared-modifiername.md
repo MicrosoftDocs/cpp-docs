@@ -1,0 +1,33 @@
+---
+title: "Properties cannot be declared &#39;&lt;modifiername&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30639"
+  - "bc30639"
+helpviewer_keywords: 
+  - "BC30639"
+ms.assetid: 6d7005a2-b1c9-4eb4-ac77-8c7e2c802984
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Properties cannot be declared &#39;&lt;modifiername&gt;&#39;
+There is an error in the syntax used in the `Property` declaration. This error generally indicates that a specified keyword, such as `WithEvents`, cannot be used in a `Property` declaration.  
+  
+ **Error ID:** BC30639  
+  
+### To correct this error  
+  
+-   Check the syntax for the `Property` declaration.  
+  
+## See Also  
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)

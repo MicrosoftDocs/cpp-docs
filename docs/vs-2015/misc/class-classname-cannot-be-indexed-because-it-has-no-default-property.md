@@ -1,0 +1,34 @@
+---
+title: "Class &#39;&lt;classname&gt;&#39; cannot be indexed because it has no default property | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30367"
+  - "vbc30367"
+helpviewer_keywords: 
+  - "BC30367"
+ms.assetid: bcccde7e-4433-459f-a060-7236902fc05e
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Class &#39;&lt;classname&gt;&#39; cannot be indexed because it has no default property
+You have failed to supply a default property for a class.  
+  
+ **Error ID:** BC30367  
+  
+### To correct this error  
+  
+-   Specify a property as the default property by starting its declaration with the `Default` keyword.  
+  
+## See Also  
+ [Default Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/9b8cfad7-40ac-4b83-affb-1ff781755a4c)   
+ [Default](http://msdn.microsoft.com/library/45fce9b9-d212-4b2d-ab86-6e359b8b57af)

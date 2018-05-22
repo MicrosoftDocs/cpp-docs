@@ -1,0 +1,33 @@
+---
+title: "Expression cannot be evaluated at this time | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30736"
+  - "bc30736"
+helpviewer_keywords: 
+  - "BC30736"
+ms.assetid: 3b131a8f-6bfe-47c5-bc2a-e242e4d2288e
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Expression cannot be evaluated at this time
+The specified expression could not be evaluated in the current context.  
+  
+ **Error ID:** BC30736  
+  
+### To correct this error  
+  
+-   Change the syntax of the expression.  
+  
+## See Also  
+ [Procedure Parameters and Arguments](http://msdn.microsoft.com/library/ff275aff-aa13-40df-bd4c-63486db8c1e9)

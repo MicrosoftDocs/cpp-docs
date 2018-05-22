@@ -1,0 +1,37 @@
+---
+title: "&#39;ReDim&#39; statements require a parenthesized list of the new bounds of each dimension of the array | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30670"
+  - "vbc30670"
+helpviewer_keywords: 
+  - "BC30670"
+ms.assetid: b2c5fea3-e7db-4797-b917-d61a65befbd4
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;ReDim&#39; statements require a parenthesized list of the new bounds of each dimension of the array
+You must specify the new size of an array as part of a `ReDim` statement.  
+  
+ **Error ID:** BC30670  
+  
+### To correct this error  
+  
+-   Supply the size of each rank of the array; for example:  
+  
+    ```  
+    ReDim arr(5, 6)  
+    ```  
+  
+## See Also  
+ [ReDim Statement](http://msdn.microsoft.com/library/ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083)

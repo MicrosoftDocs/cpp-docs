@@ -1,0 +1,27 @@
+---
+title: "Compiler Error CS0076 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0076"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0076"
+ms.assetid: 8b3e8674-8bfb-4be5-a466-cdf6134e3935
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0076
+The enumerator name 'value__' is reserved and cannot be used  
+  
+ An item in an [enumeration](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c) cannot have an identifier called **value__**.

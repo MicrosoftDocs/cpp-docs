@@ -1,0 +1,44 @@
+---
+title: "&#39;Into&#39; expected | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc36615"
+  - "vbc36615"
+helpviewer_keywords: 
+  - "BC36615"
+ms.assetid: 24062dd9-a973-43b6-88d3-c11adc5a3736
+caps.latest.revision: 5
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Into&#39; expected
+An `Aggregate`, `Group By`, or `Group Join` clause has been specified without an `Into` operator. You use the `Into` operator to identify aggregate functions to apply to the query result and to identify the member of the query result type to contain the grouped results (by using the `Group` aggregate function).  
+  
+ **Error ID:** BC36615  
+  
+### To correct this error  
+  
+1.  Add the `Into` operator to the `Aggregate`, `Group By`, or `Group Join` clause. The following is an example:  
+  
+    ```vb  
+    Dim orders = From order In orderList _  
+                 Order By order.OrderDate _  
+                 Group By OrderDate = order.OrderDate _  
+                 Into OrdersByDate = Group  
+    ```  
+  
+## See Also  
+ [Aggregate Clause](http://msdn.microsoft.com/library/1315a814-5db6-4077-b34b-b141e11cc0eb)   
+ [Group By Clause](http://msdn.microsoft.com/library/b1b5dcea-6654-473b-a2db-01f7e4c265d7)   
+ [Group Join Clause](http://msdn.microsoft.com/library/37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c)   
+ [Introduction to LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)   
+ [LINQ](http://msdn.microsoft.com/library/ddba5545-ff6e-46c3-8967-5c4280db5aca)

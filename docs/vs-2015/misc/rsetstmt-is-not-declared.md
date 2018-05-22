@@ -1,0 +1,36 @@
+---
+title: "&#39;&lt;rsetstmt&gt;&#39; is not declared | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30821"
+  - "vbc30821"
+helpviewer_keywords: 
+  - "BC30821"
+ms.assetid: 7936e3ef-7ac6-4a71-af55-acc2c5cd8754
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;rsetstmt&gt;&#39; is not declared
+'\<rsetstmt>' is not declared. RSet statements are no longer supported; use Microsoft.VisualBasic.RSet instead.  
+  
+ Several functions that were intrinsic to [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] in previous versions have been moved to the <xref:Microsoft.VisualBasic?displayProperty=fullName> namespace. This makes their functionality more generally available to all programming languages.  
+  
+ **Error ID:** BC30821  
+  
+### To correct this error  
+  
+-   Use the `RSet` function in the `Microsoft.VisualBasic` namespace instead.  
+  
+## See Also  
+ [NOT IN BUILD: RSet Function](http://msdn.microsoft.com/en-us/534514e5-dee9-4dfd-993b-da09731eece5)   
+ [Programming Element Support Changes Summary](http://msdn.microsoft.com/en-us/0483590a-6309-449c-a2fa-effa26a03b95)

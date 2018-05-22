@@ -1,0 +1,21 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.ocf = Container.Document.4
+HKEY_CLASSES_ROOT\Container.Document.4\shell\open\command = OCLIENT.EXE %1
+HKEY_CLASSES_ROOT\Container.Document.4\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\Container.Document.4\shell\open\ddeexec\application = OCLIENT
+		; note: the application is optional
+		;   (it defaults to the app name in "command")
+
+HKEY_CLASSES_ROOT\Container.Document.4 = MFC 4.0 Container Document
+HKEY_CLASSES_ROOT\Container.Document.4\CLSID = {00021842-0000-0000-C000-000000000046}
+
+HKEY_CLASSES_ROOT\CLSID\{00021842-0000-0000-C000-000000000046} = MFC 4.0 Container Document
+HKEY_CLASSES_ROOT\CLSID\{00021842-0000-0000-C000-000000000046}\ProgId = Container.Document.4
+HKEY_CLASSES_ROOT\CLSID\{00021842-0000-0000-C000-000000000046}\DefaultIcon = OCLIENT.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{00021842-0000-0000-C000-000000000046}\LocalServer32 = OCLIENT.EXE
+HKEY_CLASSES_ROOT\CLSID\{00021842-0000-0000-C000-000000000046}\InprocHandler32 = ole32.dll

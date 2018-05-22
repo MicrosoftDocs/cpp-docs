@@ -1,0 +1,36 @@
+---
+title: "&#39;Return&#39; statement in a Function, Get, or Operator must return a value | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30654"
+  - "vbc30654"
+helpviewer_keywords: 
+  - "BC30654"
+ms.assetid: af0fb1fc-1b2e-4cae-9768-10965cda5506
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Return&#39; statement in a Function, Get, or Operator must return a value
+`Return` statements must be used to return a value to a calling procedure. You cannot use `Return` statements by themselves to control program flow.  
+  
+ **Error ID:** BC30654  
+  
+### To correct this error  
+  
+1.  Specify a value that the function or procedure can return.  
+  
+2.  Use the `End` statement to cause the program to exit the current procedure.  
+  
+## See Also  
+ [Return Statement](http://msdn.microsoft.com/library/ac86e7f0-5a67-42c3-9834-0e0381efa3ec)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

@@ -1,0 +1,50 @@
+---
+title: "Compiler Warning (level 1) C4003 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4003"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4003"
+ms.assetid: 0ed1c285-4428-4c90-8131-86897e31f115
+caps.latest.revision: 9
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Warning (level 1) C4003
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Warning (level 1) C4003](https://docs.microsoft.com/cpp/error-messages/compiler-warnings/compiler-warning-level-1-c4003).  
+  
+  
+not enough actual parameters for macro 'identifier'  
+  
+ The number of formal parameters in the macro definition exceeds the number of actual parameters in the macro. Macro expansion substitutes empty text for the missing parameters.  
+  
+ The following sample generates C4003:  
+  
+```  
+// C4003.cpp  
+// compile with: /WX  
+#define test(a,b) (a+b)  
+  
+int main()  
+{  
+   int a = 1;  
+   int b = 2;  
+   a = test(b);   // C4003  
+   // try..  
+   a = test(a,b);  
+}  
+```
+

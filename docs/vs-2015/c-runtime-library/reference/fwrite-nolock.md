@@ -1,0 +1,105 @@
+---
+title: "_fwrite_nolock | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+api_name: 
+  - "_fwrite_nolock"
+api_location: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
+api_type: 
+  - "DLLExport"
+topic_type: 
+  - "apiref"
+f1_keywords: 
+  - "_fwrite_nolock"
+  - "fwrite_nolock"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "fwrite_nolock function"
+  - "streams, writing data to"
+  - "_fwrite_nolock function"
+ms.assetid: 2b4ec6ce-742e-4615-8407-44a0a18ec1d7
+caps.latest.revision: 15
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# _fwrite_nolock
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [_fwrite_nolock](https://docs.microsoft.com/cpp/c-runtime-library/reference/fwrite-nolock).  
+  
+Writes data to a stream, without locking the thread.  
+  
+## Syntax  
+  
+```  
+size_t _fwrite_nolock(  
+   const void *buffer,  
+   size_t size,  
+   size_t count,  
+   FILE *stream   
+);  
+```  
+  
+#### Parameters  
+ `buffer`  
+ Pointer to the data to be written.  
+  
+ `size`  
+ Item size in bytes.  
+  
+ `count`  
+ Maximum number of items to be written.  
+  
+ `stream`  
+ Pointer to the `FILE` structure.  
+  
+## Return Value  
+ Same as [fwrite](../../c-runtime-library/reference/fwrite.md).  
+  
+## Remarks  
+ This function is a non-locking version of `fwrite`. It is identical to `fwrite` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+  
+## Requirements  
+  
+|Function|Required header|  
+|--------------|---------------------|  
+|`_fwrite_nolock`|\<stdio.h>|  
+  
+ For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
+  
+## Example  
+ See the example for [fread](../../c-runtime-library/reference/fread.md).  
+  
+## .NET Framework Equivalent  
+ [System::IO::FileStream::Write](https://msdn.microsoft.com/library/system.io.filestream.write.aspx)  
+  
+## See Also  
+ [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+ [fread](../../c-runtime-library/reference/fread.md)   
+ [_write](../../c-runtime-library/reference/write.md)
+
+
+
+
+

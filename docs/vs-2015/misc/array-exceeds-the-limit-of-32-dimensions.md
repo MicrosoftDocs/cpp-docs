@@ -1,0 +1,33 @@
+---
+title: "Array exceeds the limit of 32 dimensions | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30052"
+  - "vbc30052"
+helpviewer_keywords: 
+  - "BC30052"
+ms.assetid: 5ee0d2cb-14e2-4a0f-b758-f987a3f9eb73
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Array exceeds the limit of 32 dimensions
+Arrays cannot have more than 32 dimensions.  
+  
+ **Error ID:** BC30052  
+  
+### To correct this error  
+  
+-   Reduce the number of dimensions in the declaration of the array.  
+  
+## See Also  
+ [Arrays](http://msdn.microsoft.com/library/dbf29737-b589-4443-bee6-a27588d9c67e)

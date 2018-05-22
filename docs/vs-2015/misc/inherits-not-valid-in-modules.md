@@ -1,0 +1,34 @@
+---
+title: "&#39;Inherits&#39; not valid in Modules | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30230"
+  - "bc30230"
+helpviewer_keywords: 
+  - "BC30230"
+ms.assetid: bccd61f7-cb47-4101-9b35-743c97876630
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Inherits&#39; not valid in Modules
+An `Inherits` statement occurs inside a module. Modules cannot inherit from classes.  
+  
+ **Error ID:** BC30230  
+  
+### To correct this error  
+  
+-   Remove the `Inherits` statement, or retype the module as a class.  
+  
+## See Also  
+ [Inherits Statement](http://msdn.microsoft.com/library/9e6fe042-9af3-4341-8093-fc3537770cf2)   
+ [Module Statement](http://msdn.microsoft.com/library/a1243afc-14a5-45df-95d5-51118aeac362)

@@ -1,0 +1,33 @@
+---
+title: "Side effects not valid during expression evaluation in this context | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30700"
+  - "vbc30700"
+helpviewer_keywords: 
+  - "BC30700"
+ms.assetid: 0daf00b9-47c6-415a-b39a-b3e4fa86f2cc
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Side effects not valid during expression evaluation in this context
+Statements that change the state of an object are not allowed in this context.  
+  
+ **Error ID:** BC30700  
+  
+### To correct this error  
+  
+-   Change your code so that statements are evaluated without changing the state of other items.  
+  
+## See Also  
+ [Nothing](http://msdn.microsoft.com/library/06176e2d-bbf7-4a37-afaa-a86ad21ee99f)

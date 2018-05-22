@@ -1,0 +1,43 @@
+---
+title: "Compiler Error CS0594 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0594"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0594"
+ms.assetid: a3d6bde1-db63-4c5c-a425-8c6a39e00999
+caps.latest.revision: 7
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS0594
+Floating-point constant is outside the range of type 'type'  
+  
+ A value was assigned to a floating-point variable that is too large for the variables of this data type. See [Integral Types Table](http://msdn.microsoft.com/library/62e86126-46ff-40b0-9028-e61d7558268c) for information about the range of values allowed in data types.  
+  
+ The following sample generates CS0594:  
+  
+```  
+// CS0594.cs  
+namespace MyNamespace  
+{  
+   public class MyClass  
+   {  
+      public static void Main()  
+      {  
+         float f = 6.77777777777E400;   // CS0594, value too large  
+      }  
+   }  
+}  
+```

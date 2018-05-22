@@ -1,0 +1,33 @@
+---
+title: "&#39;&lt;function&gt;&#39; is not declared | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30818"
+  - "bc30818"
+helpviewer_keywords: 
+  - "BC30818"
+ms.assetid: 5bf784f1-ba14-4fad-aa10-e57256102fb3
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;function&gt;&#39; is not declared
+'\<function>' is not declared. Function has moved to the Microsoft.VisualBasic namespace.  
+  
+ **Error ID:** BC30818  
+  
+### To correct this error  
+  
+-   Use the appropriate function from the `Microsoft.VisualBasic` namespace.  
+  
+## See Also  
+ [Visual Basic Runtime Library Members](http://msdn.microsoft.com/library/f5e82c6e-3500-452b-bdb8-78f0d5477604)

@@ -1,0 +1,36 @@
+---
+title: "Reading Pointer Values | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+  - "C"
+ms.assetid: 3dd1cf15-30ac-4dec-9b14-258d20501fcf
+caps.latest.revision: 10
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# Reading Pointer Values
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Reading Pointer Values](https://docs.microsoft.com/cpp/c-language/reading-pointer-values).  
+  
+ANSI 4.9.6.2** The input for **%p** conversion in the `fscanf` function  
+  
+ When the **%p** format character is specified, the `fscanf` function converts pointers from hexadecimal ASCII values into the correct address.  
+  
+## See Also  
+ [Library Functions](../c-language/library-functions.md)
+
+
+
+
+

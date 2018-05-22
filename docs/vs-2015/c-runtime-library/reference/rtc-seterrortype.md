@@ -1,0 +1,100 @@
+---
+title: "_RTC_SetErrorType | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+api_name: 
+  - "_RTC_SetErrorType"
+api_location: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+api_type: 
+  - "DLLExport"
+topic_type: 
+  - "apiref"
+f1_keywords: 
+  - "RTC_SetErrorType"
+  - "_RTC_SetErrorType"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "run-time errors"
+  - "RTC_SetErrorType function"
+  - "_RTC_SetErrorType function"
+ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
+caps.latest.revision: 17
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# _RTC_SetErrorType
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [_RTC_SetErrorType](https://docs.microsoft.com/cpp/c-runtime-library/reference/rtc-seterrortype).  
+  
+Associates an error that is detected by run-time error checks (RTCs) with a type. Your error handler processes how to output errors of the specified type.  
+  
+## Syntax  
+  
+```  
+  
+      int _RTC_SetErrorType(  
+   _RTC_ErrorNumber errnum,  
+   int ErrType   
+);  
+```  
+  
+#### Parameters  
+ *errnum*  
+ A number between zero and one less than the value returned by [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md).  
+  
+ *ErrType*  
+ A value to assign to this *errnum*. For example, you might use **_CRT_ERROR**. If you are using `_CrtDbgReport` as your error handler, *ErrType* can only be one of the symbols defined in [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md). If you have your own error handler ([_RTC_SetErrorFunc](../../c-runtime-library/reference/rtc-seterrorfunc.md)), you can have as many *ErrType*s as there are *errnum*s.  
+  
+ An *ErrType* of _RTC_ERRTYPE_IGNORE has special meaning to `_CrtSetReportMode`; the error is ignored.  
+  
+## Return Value  
+ The previous value for the error type `type`.  
+  
+## Remarks  
+ By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).  
+  
+ Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](http://msdn.microsoft.com/library/30ed90f3-9323-4784-80a4-937449eb54f6)  
+  
+## Requirements  
+  
+|Routine|Required header|  
+|-------------|---------------------|  
+|`_RTC_SetErrorType`|\<rtcapi.h>|  
+  
+ For more information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+  
+## Libraries  
+ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+  
+## .NET Framework Equivalent  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/library/15926806-f0b7-487e-93a6-4e9367ec689f).  
+  
+## See Also  
+ [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)   
+ [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)
+
+
+
+
+

@@ -1,0 +1,28 @@
+---
+title: "Troubleshooting Exceptions: System.Windows.Xps.XpsSerializationException | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "EHWXXpsSerialization"
+helpviewer_keywords: 
+  - "XpsSerializationException exception"
+  - "System.Windows.Xps.XpsSerializationException exception"
+ms.assetid: d2c8412e-e2a0-4300-a3f4-bd6f0a9b0847
+caps.latest.revision: 5
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# Troubleshooting Exceptions: System.Windows.Xps.XpsSerializationException
+An <xref:System.Windows.Xps.XpsSerializationException> exception is thrown for XML Paper Specification (XPS) document serialization errors.  
+  
+## See Also  
+ <xref:System.Windows.Xps.XpsSerializationException>   
+ [Use the Exception Assistant](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

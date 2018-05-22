@@ -1,0 +1,41 @@
+---
+title: "&#39;&lt;typename&gt;&#39; in assembly &#39;&lt;assemblyname&gt;&#39; has been forwarded to itself and so is an unsupported type | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31425"
+  - "vbc31425"
+helpviewer_keywords: 
+  - "BC31425"
+  - "type forwarding"
+ms.assetid: e3275d55-3f4c-4bbc-9c8f-f55c4e973063
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;typename&gt;&#39; in assembly &#39;&lt;assemblyname&gt;&#39; has been forwarded to itself and so is an unsupported type
+An assembly uses the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> to forward one of its types to another assembly, but specifies the same type in the same assembly.  
+  
+ *Type forwarding* means reassigning the definition of a class, structure, interface, delegate, or enumeration to an assembly other than the one in which it was originally defined. It is often used in conjunction with *code refactoring*, by which you split an assembly into two or more assemblies or move code from one assembly to another.  
+  
+ Forwarding a type to itself results in circular forwarding. If another assembly attempted to access the forwarded type, it would go through endless forwarding without ever arriving at a type that had not been forwarded.  
+  
+ **Error ID:** BC31425  
+  
+### To correct this error  
+  
+-   Forward the type to a type in a different assembly, or do not forward it at all.  
+  
+## See Also  
+ <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>   
+ [Type Forwarding (C++/CLI)](../windows/type-forwarding-cpp-cli.md)   
+ [Managing references in a project](http://msdn.microsoft.com/library/05d1c51b-44f3-4973-8a11-6c919b08ad62)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

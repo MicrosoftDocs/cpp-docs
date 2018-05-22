@@ -1,0 +1,35 @@
+---
+title: "&#39;Set&#39; parameter cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31065"
+  - "bc31065"
+helpviewer_keywords: 
+  - "BC31065"
+ms.assetid: 6ec22cc1-7d77-4c98-a253-1d02631dd874
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Set&#39; parameter cannot be declared &#39;&lt;specifier&gt;&#39;
+An invalid modifier was specified with a parameter in a `Set` property procedure.  
+  
+ **Error ID:** BC31065  
+  
+### To correct this error  
+  
+-   Remove invalid modifiers, such as `ByRef`, `ParamArray`, and `Optional`.  
+  
+## See Also  
+ [NOT IN BUILD: How to: Add Fields and Properties to a Class](http://msdn.microsoft.com/en-us/ae53f61b-3abc-413e-8931-703c5f5e8fc2)   
+ [Property Procedures](http://msdn.microsoft.com/library/46a98379-e1a2-45dd-a48c-b51213f5ab07)   
+ [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)

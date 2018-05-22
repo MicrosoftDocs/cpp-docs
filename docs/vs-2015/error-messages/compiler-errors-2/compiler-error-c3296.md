@@ -1,0 +1,51 @@
+---
+title: "Compiler Error C3296 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "C3296"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3296"
+ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
+caps.latest.revision: 7
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C3296
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C3296](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c3296).  
+  
+  
+property' : a property with this name already exists  
+  
+ The compiler encountered more than one property with the same name. Each property in a type must have a unique name.  
+  
+ For more information, see [property](../../windows/property-cpp-component-extensions.md).  
+  
+## Example  
+ The following sample generates C3296.  
+  
+```  
+// C3296.cpp  
+// compile with: /clr /c  
+using namespace System;  
+  
+ref class R {  
+public:  
+   property int MyProp[int] { int get(int); }  
+  
+   property String^ MyProp[int] { void set(int, String^); }   // C3296  
+};  
+```
+

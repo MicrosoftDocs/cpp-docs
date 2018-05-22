@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{87A2E1BA-24EA-4582-A9AC-1AC44C349077}</ProjectGUID>
+    <RootNamespace>NVC_ATL_COM</RootNamespace>
+    <Keyword>AtlProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20624.0</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)NVC_ATL_COM.tlb</TypeLibraryName>
+      <HeaderFileName>NVC_ATL_COM.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>NVC_ATL_COM_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>NVC_ATL_COM_p.c</ProxyFileName>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>..\..\prefast.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <EnablePREfast>true</EnablePREfast>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <ModuleDefinitionFile>.\NVC_ATL_COM.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Beeper.cpp" />
+    <ClCompile Include="MyAggObject.cpp" />
+    <ClCompile Include="MyApp.cpp" />
+    <ClCompile Include="MyAutoClass.cpp" />
+    <ClCompile Include="MyCircle.cpp" />
+    <ClCompile Include="MyClass.cpp" />
+    <ClCompile Include="MyComposite.cpp" />
+    <ClCompile Include="MyCompositeProps.cpp" />
+    <ClCompile Include="MyControl.cpp" />
+    <ClCompile Include="MyCustomClass.cpp" />
+    <ClCompile Include="MyDHTMLCtrl.cpp" />
+    <ClCompile Include="MyDoc.cpp" />
+    <ClCompile Include="MyService.cpp" />
+    <ClCompile Include="MySingletonClass.cpp" />
+    <ClCompile Include="MySuppErrClass.cpp" />
+    <ClCompile Include="NVC_ATL_COM.cpp" />
+    <ClCompile Include="NVC_ATL_COM_i.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Outer.cpp" />
+    <ClCompile Include="VariantArrayCollection.cpp" />
+    <ClCompile Include="VariantCollection.cpp" />
+    <ClCompile Include="Words.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Beeper.h" />
+    <ClInclude Include="MyAggObject.h" />
+    <ClInclude Include="MyApp.h" />
+    <ClInclude Include="MyAutoClass.h" />
+    <ClInclude Include="MyAutoCritClass.h" />
+    <ClInclude Include="MyCircle.h" />
+    <ClInclude Include="MyClass.h" />
+    <ClInclude Include="MyComposite.h" />
+    <ClInclude Include="MyCompositeProps.h" />
+    <ClInclude Include="MyControl.h" />
+    <ClInclude Include="MyCustomClass.h" />
+    <ClInclude Include="MyDHTMLCtrl.h" />
+    <ClInclude Include="MyDoc.h" />
+    <ClInclude Include="MyService.h" />
+    <ClInclude Include="MySingletonClass.h" />
+    <ClInclude Include="MySuppErrClass.h" />
+    <ClInclude Include="NVC_ATL_COM.h" />
+    <ClInclude Include="Outer.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VariantArrayCollection.h" />
+    <ClInclude Include="VariantCollection.h" />
+    <ClInclude Include="VCUE_Copy.h" />
+    <ClInclude Include="VCUE_CopyString.h" />
+    <ClInclude Include="Words.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Beeper.rgs" />
+    <None Include="MyAggObject.rgs" />
+    <None Include="MyApp.rgs" />
+    <None Include="MyAutoClass.rgs" />
+    <None Include="MyCircle.rgs" />
+    <None Include="MyClass.rgs" />
+    <None Include="MyComposite.bmp" />
+    <None Include="MyComposite.htm" />
+    <None Include="MyComposite.rgs" />
+    <None Include="MyCompositeProps.rgs" />
+    <None Include="MyControl.bmp" />
+    <None Include="MyControl.htm" />
+    <None Include="MyControl.rgs" />
+    <None Include="MyCustomClass.rgs" />
+    <None Include="MyDHTMLCtrl.bmp" />
+    <None Include="MyDHTMLCtrl.htm" />
+    <None Include="MyDHTMLCtrl.rgs" />
+    <None Include="MyDHTMLCtrlUI.htm" />
+    <None Include="MyDoc.rgs" />
+    <None Include="MyService.rgs" />
+    <None Include="MySingletonClass.rgs" />
+    <None Include="MySuppErrClass.rgs" />
+    <None Include="NVC_ATL_COM.def" />
+    <None Include="NVC_ATL_COM.rgs" />
+    <None Include="Outer.rgs" />
+    <None Include="VariantArrayCollection.rgs" />
+    <None Include="VariantCollection.rgs" />
+    <None Include="Words.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NVC_ATL_COM.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="NVC_ATL_COM.idl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

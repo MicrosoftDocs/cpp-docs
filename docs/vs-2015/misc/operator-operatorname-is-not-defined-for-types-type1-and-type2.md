@@ -1,0 +1,35 @@
+---
+title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;type1&gt;&#39; and &#39;&lt;type2&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30452"
+  - "vbc30452"
+helpviewer_keywords: 
+  - "BC30452"
+ms.assetid: a3ceed45-b918-4572-9379-cc90619bddab
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;type1&gt;&#39; and &#39;&lt;type2&gt;&#39;
+You have attempted to use a binary operator to perform an operation that is not valid for the two value-returning code elements involved.  
+  
+ **Error ID:** BC30452  
+  
+### To correct this error  
+  
+-   Check the two elements and make sure they are compatible.  
+  
+## See Also  
+ [Operators and Expressions](http://msdn.microsoft.com/library/b86f3131-94ee-448f-96cd-79611e028b26)   
+ [Efficient Combination of Operators](http://msdn.microsoft.com/library/bd22340e-b5be-458b-8772-3916c02309a4)   
+ [Operator Precedence in Visual Basic](http://msdn.microsoft.com/library/cbbdb282-f572-458e-a520-008a675f8063)

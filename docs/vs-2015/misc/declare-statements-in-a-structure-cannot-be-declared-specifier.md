@@ -1,0 +1,34 @@
+---
+title: "&#39;Declare&#39; statements in a structure cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30791"
+  - "vbc30791"
+helpviewer_keywords: 
+  - "BC30791"
+ms.assetid: 714d8088-c885-40ce-ab4c-fde296fe23ec
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Declare&#39; statements in a structure cannot be declared &#39;&lt;specifier&gt;&#39;
+A `Declare` declaration has a specifier that is not valid within a `Structure` declaration.  
+  
+ **Error ID:** BC30791  
+  
+### To correct this error  
+  
+-   Remove the specifier.  
+  
+## See Also  
+ [Delegate Statement](http://msdn.microsoft.com/library/f799c518-0817-40cc-ad0b-4da846fdba57)   
+ [Structure Statement](http://msdn.microsoft.com/library/9bd1deea-2a89-4cdc-812c-6dcbb947c391)

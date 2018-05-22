@@ -1,0 +1,26 @@
+HKCR
+{
+	NVC_ATL_WindowingLib.PolyProp.1 = s 'PolyProp Class'
+	{
+		CLSID = s '{6E57AFDA-45B0-4938-A75B-E0A4A128ADF6}'
+	}
+	NVC_ATL_WindowingLib.PolyProp = s 'PolyProp Class'
+	{
+		CLSID = s '{6E57AFDA-45B0-4938-A75B-E0A4A128ADF6}'
+		CurVer = s 'NVC_ATL_WindowingLib.PolyProp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6E57AFDA-45B0-4938-A75B-E0A4A128ADF6} = s 'PolyProp Class'
+		{
+			ProgID = s 'NVC_ATL_WindowingLib.PolyProp.1'
+			VersionIndependentProgID = s 'NVC_ATL_WindowingLib.PolyProp'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+		}
+	}
+}

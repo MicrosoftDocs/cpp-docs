@@ -1,0 +1,53 @@
+---
+title: "Compiler Error C3204 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "C3204"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3204"
+ms.assetid: 06e578da-0262-48c8-b2ae-be1cd6d28884
+caps.latest.revision: 11
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+---
+# Compiler Error C3204
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [Compiler Error C3204](https://docs.microsoft.com/cpp/error-messages/compiler-errors-2/compiler-error-c3204).  
+  
+  
+_alloca' cannot be called from within a catch block  
+  
+ This error occurs when you use a call to [_alloca](../../c-runtime-library/reference/alloca.md) from within a catch block.  
+  
+## Example  
+ The following sample generates C3204:  
+  
+```  
+// C3204.cpp  
+// compile with: /EHsc  
+#include <malloc.h>  
+  
+void ShowError(void)  
+{  
+   try  
+   {  
+   }  
+   catch(...)  
+   {  
+      _alloca(1);   // C3204  
+   }  
+}  
+```
+

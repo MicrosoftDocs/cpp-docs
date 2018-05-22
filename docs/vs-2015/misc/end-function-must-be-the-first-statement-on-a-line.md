@@ -1,0 +1,34 @@
+---
+title: "&#39;End Function&#39; must be the first statement on a line | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc32032"
+  - "vbc32032"
+helpviewer_keywords: 
+  - "BC32032"
+ms.assetid: 0fa18258-05da-410b-b0f4-e1f0f8907d4b
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;End Function&#39; must be the first statement on a line
+An `End Function` statement follows a colon (:) statement separator. `End Function` must be the only statement on its source line.  
+  
+ **Error ID:** BC32032  
+  
+### To correct this error  
+  
+-   Separate the multiple statements onto different lines.  
+  
+## See Also  
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
+ [Function Statement](http://msdn.microsoft.com/library/a4497077-0f46-4ede-a27f-9e8670df52b9)

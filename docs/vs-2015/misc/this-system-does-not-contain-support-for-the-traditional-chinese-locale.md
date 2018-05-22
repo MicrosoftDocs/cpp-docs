@@ -1,0 +1,30 @@
+---
+title: "This system does not contain support for the Traditional Chinese locale | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbrArgument_TCNotSupported"
+ms.assetid: 95bace92-c7b9-4641-b71f-c088ddb418c9
+caps.latest.revision: 9
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# This system does not contain support for the Traditional Chinese locale
+You attempted to use the `VbStrConv.TraditionalChinese` enumeration member, but your system does not support the Traditional Chinese locale.  
+  
+### To correct this error  
+  
+1.  Upgrade the machine to support the Traditional Chinese locale, or run the application on a machine that supports the locale.  
+  
+## See Also  
+ <xref:System.Globalization>   
+ [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
+ [Introduction to International Applications Based on the .NET Framework](http://msdn.microsoft.com/library/b0788993-e62d-4f68-8235-5f87b1d48525)

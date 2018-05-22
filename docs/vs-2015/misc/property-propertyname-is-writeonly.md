@@ -1,0 +1,33 @@
+---
+title: "Property &#39;&lt;propertyname&gt;&#39; is &#39;WriteOnly&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30524"
+  - "bc30524"
+helpviewer_keywords: 
+  - "BC30524"
+ms.assetid: 82249c64-df77-4890-8292-e4da707eca96
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Property &#39;&lt;propertyname&gt;&#39; is &#39;WriteOnly&#39;
+You have tried to retrieve a value from a property that is declared `WriteOnly`.  
+  
+ **Error ID:** BC30524  
+  
+### To correct this error  
+  
+-   Remove the `WriteOnly` specifier from the property declaration.  
+  
+## See Also  
+ [WriteOnly](http://msdn.microsoft.com/library/488d2899-b09f-4cee-92f0-6f9f9fc4f944)

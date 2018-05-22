@@ -1,0 +1,49 @@
+---
+title: "CNoMultipleResults Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CNoMultipleResults"
+  - "ATL.CNoMultipleResults"
+  - "ATL::CNoMultipleResults"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CNoMultipleResults class"
+ms.assetid: 343e77c4-b319-476e-b592-901ab9b2f34e
+caps.latest.revision: 11
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# CNoMultipleResults Class
+[!INCLUDE[blank_token](../../includes/blank-token.md)]
+
+The latest version of this topic can be found at [CNoMultipleResults Class](https://docs.microsoft.com/cpp/data/oledb/cnomultipleresults-class).  
+  
+  
+Used as a template argument (*TMultiple*) to [CCommand](../../data/oledb/ccommand-class.md) to create an optimized command that handles a single result set.  
+  
+## Syntax  
+  
+```  
+class CNoMultipleResults  
+```  
+  
+## Remarks  
+ If you want a command to handle multiple result sets, use [CMultipleResults](../../data/oledb/cmultipleresults-class.md) instead.  
+  
+## Requirements  
+ **Header:** atldbcli.h  
+  
+## See Also  
+ [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
+ [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+

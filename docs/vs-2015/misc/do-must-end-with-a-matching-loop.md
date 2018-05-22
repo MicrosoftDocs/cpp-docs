@@ -1,0 +1,35 @@
+---
+title: "&#39;Do&#39; must end with a matching &#39;Loop&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30083"
+  - "bc30083"
+helpviewer_keywords: 
+  - "BC30083"
+ms.assetid: b157b9e3-57fa-4324-a13d-b37bcf0861e6
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Do&#39; must end with a matching &#39;Loop&#39;
+A `Do` statement occurs without a corresponding `Loop` statement. A `Loop` statement must be used to end the `Do` loop.  
+  
+ **Error ID:** BC30083  
+  
+### To correct this error  
+  
+-   If this `Do` loop is part of a set of nested loops, make sure each loop is properly terminated.  
+  
+-   Add a `Loop` statement to the end of the `Do` loop.  
+  
+## See Also  
+ [Do...Loop Statement](http://msdn.microsoft.com/library/892f9096-b3e2-4aee-834d-83bc4e2c379d)

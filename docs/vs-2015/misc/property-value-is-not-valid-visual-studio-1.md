@@ -1,0 +1,29 @@
+---
+title: "Property value is not valid. (Visual Studio) (1) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.message.VB_E_TERRPROPILLEGALVALUE"
+  - "vs.message.0x800A007A"
+ms.assetid: 4883531c-0e33-4b76-845e-93fcb7334a05
+caps.latest.revision: 5
+author: "mikeblome"
+ms.author: "mblome"
+manager: "douge"
+---
+# Property value is not valid. (Visual Studio) (1)
+This error generally occurs when a invalid value is entered for a property. For example, if the property is a Boolean property with valid values of TRUE and FALSE, the value MAYBE would be invalid for the property.  
+  
+### To correct this error  
+  
+1.  Enter a value that is valid for the property.  
+  
+    > [!TIP]
+    >  Search the online documentation for the property name to find out what values are valid.

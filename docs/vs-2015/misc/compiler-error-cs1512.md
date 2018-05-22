@@ -1,0 +1,51 @@
+---
+title: "Compiler Error CS1512 | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1512"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1512"
+ms.assetid: 50740d85-598d-478f-bfe3-e8c2e1a02ab8
+caps.latest.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# Compiler Error CS1512
+Keyword 'base' is not available in the current context  
+  
+ The [base](http://msdn.microsoft.com/library/8b645dbe-1a33-49b8-8716-1c401f9a5ea5) keyword was used outside of a method, property, or constructor.  
+  
+ The following example generates CS1512:  
+  
+```  
+// CS1512.cs  
+using System;  
+  
+class Base {}  
+  
+class CMyClass : Base  
+{  
+    private String xx = base.ToString();   // CS1512  
+    // Try putting this initialization in the constructor instead:  
+    // public CMyClass()  
+    // {  
+    //    xx = base.ToString();  
+    // }  
+  
+    public static void Main()  
+    {  
+        CMyClass z = new CMyClass();  
+    }  
+}  
+```

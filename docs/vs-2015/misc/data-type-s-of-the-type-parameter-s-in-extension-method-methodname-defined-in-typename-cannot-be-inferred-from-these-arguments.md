@@ -1,0 +1,73 @@
+---
+title: "Data type(s) of the type parameter(s) in extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; cannot be inferred from these arguments | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc36649"
+  - "vbc36646"
+  - "bc36646"
+  - "vbc36649"
+helpviewer_keywords: 
+  - "BC36649"
+  - "BC36646"
+ms.assetid: 55274b01-6d78-4950-861e-07d9273ef76e
+caps.latest.revision: 5
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# Data type(s) of the type parameter(s) in extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; cannot be inferred from these arguments
+Data type(s) of the type parameter(s) in extension method '\<methodname>' defined in '\<typename>' cannot be inferred from these arguments. Specifying the data type(s) explicitly might correct this error.  
+  
+ An attempt has been made to use type inference to determine the data type (or types) of the type parameter (or parameters) when evaluating a call to a generic extension method. However, the compiler is not able to find a data type for the type parameters in this method, and it reports the error.  
+  
+> [!NOTE]
+>  When specifying arguments is not an option (for example, for query operators in query expressions), the error message appears without the second sentence.  
+  
+ The following code demonstrates the error.  
+  
+```vb  
+Module Module1  
+  
+    Sub Main()  
+  
+        Dim classInstance As ClassExample  
+  
+        '' Not valid.  
+        'classInstance.GenericExtensionMethod("Hello", "World")  
+  
+    End Sub  
+  
+    <System.Runtime.CompilerServices.Extension()> _  
+    Sub GenericExtensionMethod(Of T)(ByVal classEx As ClassExample, _  
+                                     ByVal x As String, ByVal y As _  
+                                     InterfaceExample(Of T))  
+    End Sub  
+  
+End Module  
+  
+Interface InterfaceExample(Of T)  
+End Interface  
+  
+Class ClassExample  
+End Class  
+```  
+  
+ **Error ID:** BC36649 and BC36646  
+  
+### To correct this error  
+  
+-   You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
+  
+## See Also  
+ [Relaxed Delegate Conversion](http://msdn.microsoft.com/library/64f371d0-5416-4f65-b23b-adcbf556e81c)   
+ [Extension Methods](http://msdn.microsoft.com/library/b8020aae-374d-46a9-bcb7-8cc2390b93b6)   
+ [Generic Procedures in Visual Basic](http://msdn.microsoft.com/library/95577b28-137f-4d5c-a149-919c828600e5)   
+ [Type Conversions in Visual Basic](http://msdn.microsoft.com/library/1cdacd21-ba31-4b62-b5be-395e41eeaa17)

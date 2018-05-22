@@ -1,0 +1,318 @@
+/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font: small/normal Arial,Helvetica,Sans-Serif;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+hr {
+    float: right;
+    border: 0;
+    width: 100%;
+    color: #e5e5e5;
+    background-color: #e5e5e5;
+    height: 2px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 115%;
+}
+
+#outerFrame {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+#leftFrame {
+    position: absolute;
+    width: 320px;
+    height: 100%;
+}
+
+#frameSep {
+    margin-left: 320px;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: black;
+}
+
+#rightFrame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 321px;
+}
+
+.leftFrameTop {
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 115%;
+}
+
+.module {
+    margin-bottom: 31px;
+}
+
+.elementContainer {
+    position: relative;
+    margin-top: 20px;
+}
+
+.elementContainer select {
+    font-size: 100%;
+    border: 1px #0080c4 solid;
+    background: #fff;
+    padding: .15em .30em .15em .15em;
+}
+
+.elementContainer ul {
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.elementContainer ul li {
+    display: table-row;
+}
+
+.elementContainer ul li label, .elementContainer ul li select, .elementContainer ul li input {
+    margin-top: 12px;
+    display: table-cell;
+    margin-left: 0;
+    font-size: 115%;
+}
+
+.elementContainer select {
+    display: block;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 115%;
+}
+
+.commandButton {
+    float: right;
+    border: 1px #c4c4c4 solid;
+    padding: .40em .40em .40em .40em;
+    margin-right: 10px;
+    display: block;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.commandButton:hover {
+    text-decoration: underline;
+}
+
+.inputArea {
+    font-size: 140%;
+    border: 1px #c4c4c4 solid;
+    background: #fff;
+    white-space: nowrap;
+    float: none;
+    margin-left: 50px;
+    padding: .3em;
+    width: 247px;
+}
+
+.inputArea input {
+    float: left;
+    border: 0;
+    margin: 0 0 -.8em;
+    font-size: 100%;
+    padding: .05em .25em .25em .45em;
+    width: 18.7em;
+    -webkit-appearance: none;
+    outline: none;
+    float: none;
+    padding: 0;
+    margin: 0;
+    width: 247px;
+}
+
+.directionStepLetter {
+    position: absolute;
+    color: white;
+    left: 8px;
+    font-size: .8em;
+    font-weight: bold;
+    height: 39px;
+    width: 24px;
+    line-height: 25px;
+    text-align: left;
+    text-indent: 4px;
+    background: url(../images/flag.png) no-repeat 0 0;
+    width: 35px;
+}
+
+.commandLink {
+    font-size: 110%;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+#addToRoute {
+    font-size: 110%;
+    text-align: right;
+    margin-right: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#progressStatus {
+    bottom: 0;
+    position: absolute;
+    height: 50px;
+    width: 600px;
+    top: 100%;
+    margin-top: -75px;
+    margin-left: 120px;
+    background: #e5e5e5;
+    border: solid 1px black;
+    z-index: 1000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+#progressStatus p {
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+    font-size: 75%;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+}
+
+#progressStatus:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+#bingDevKey {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -75px;
+    margin-bottom: auto;
+    background: #eeeeee;
+    z-index: 1000;
+}
+
+#bingDevKeyInput {
+    font-size: 125%;
+    border: 1px #c4c4c4 solid;
+    background: #fff;
+    white-space: nowrap;
+    float: none;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: .3em;
+}
+
+.routeSummary {
+    position: relative;
+    height: 36px;
+    width: 100%;
+    margin-top: 10px;
+    background: #efefef;
+    border: 0;
+    font-weight: bold;
+}
+
+.routeSummaryInterior {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: Black;
+}
+
+#routeLegs {
+    position: absolute;
+    margin: 10px 10px 10px 10px;
+    overflow: auto;
+    height: 85%;
+}
+
+.routeLegSummary {
+    float: left;
+    font-size: 115%;
+}
+
+.routeLegSummary p {
+    font-size: 75%;
+    font-weight: bold;
+    float: right;
+}
+
+.routeLeg {
+    width: 100%;
+}
+
+.routeLegLeft {
+    float: left;
+    font-size: 115%;
+}
+
+.routeLegCenter {
+    float: left;
+    margin-left: 5px;
+    width: 75%;
+}
+
+.routeLegCenter p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.routeLegRight {
+    float: right;
+}
+
+.disambiguateBox {
+    font-size: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: 1px #efef84 solid;
+}
+
+.disambiguateHeader {
+    font-size: 110%;
+    margin: 10px 10px 10px 10px;
+}
+
+.disambiguateItem {
+    font-size: 120%;
+    margin: 10px 10px 10px 10px;
+}

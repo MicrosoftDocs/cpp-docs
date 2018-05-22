@@ -1,0 +1,51 @@
+// NVC_MFC_AxPic.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (NVC_MFC_AxPic.tlb) that will become a resource in
+// NVC_MFC_AxPic.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(02D44F84-4B67-483E-BAA7-48BC9BFC1055), version(1.0),
+  helpfile("NVC_MFC_AxPic.hlp"),
+  helpstring("NVC_MFC_AxPic ActiveX Control module"),
+  control ]
+library NVC_MFC_AxPicLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CMyAxPicCtrl
+
+	[ uuid(3BF68E33-191C-4682-B560-BC0E708BED46),
+	  helpstring("Dispatch interface for MyAxPic Control")]
+	dispinterface _DNVC_MFC_AxPic
+	{
+		properties:
+         [id(1), helpstring("property ControlPicture")] IPictureDisp*ControlPicture;
+   methods:
+	};
+
+	//  Event dispatch interface for CMyAxPicCtrl
+
+	[ uuid(F0E3D02A-C7AF-41C6-88D5-A415D4644D42),
+	  helpstring("Event interface for MyAxPic Control") ]
+	dispinterface _DNVC_MFC_AxPicEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CMyAxPicCtrl
+
+	[ uuid(CD3D7667-4EBE-4A09-B4A8-C8DAF41E5699),
+	  helpstring("MyAxPic Control"), control ]
+	coclass NVC_MFC_AxPic
+	{
+		[default] dispinterface _DNVC_MFC_AxPic;
+		[default, source] dispinterface _DNVC_MFC_AxPicEvents;
+	};
+
+};

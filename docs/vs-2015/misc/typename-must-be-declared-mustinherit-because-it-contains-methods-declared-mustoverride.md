@@ -1,0 +1,34 @@
+---
+title: "&#39;&lt;typename&gt;&#39; must be declared &#39;MustInherit&#39; because it contains methods declared &#39;MustOverride&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31411"
+  - "bc31411"
+helpviewer_keywords: 
+  - "BC31411"
+ms.assetid: 5a9f4c57-a4b8-45f5-8273-b7caa689a170
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;typename&gt;&#39; must be declared &#39;MustInherit&#39; because it contains methods declared &#39;MustOverride&#39;
+Types that contain `MustOverride` members must be declared `MustInherit`.  
+  
+ **Error ID:** BC31411  
+  
+### To correct this error  
+  
+-   Add the `MustInherit` modifier to the type.  
+  
+## See Also  
+ [MustInherit](http://msdn.microsoft.com/library/b8f05185-90e3-4dd7-adc2-90d852fab5b4)   
+ [MustOverride](http://msdn.microsoft.com/library/6e9d9ad6-bb64-433f-b32b-3ef84293bf96)

@@ -1,0 +1,33 @@
+---
+title: "&#39;&lt;specifier&gt;&#39; is not valid on an Enum declaration | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30396"
+  - "vbc30396"
+helpviewer_keywords: 
+  - "BC30396"
+ms.assetid: aea77b54-c237-4f04-854b-c282ef07c0c0
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;&lt;specifier&gt;&#39; is not valid on an Enum declaration
+You have used a specifier that is not valid on an `Enum` declaration.  
+  
+ **Error ID:** BC30396  
+  
+### To correct this error  
+  
+1.  Remove the specifier.  
+  
+## See Also  
+ [Enumerations Overview](http://msdn.microsoft.com/library/b42a38ee-5e77-4f99-a037-e3a127ead89c)

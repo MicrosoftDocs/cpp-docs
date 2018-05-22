@@ -1,0 +1,34 @@
+---
+title: "&#39;Catch&#39; cannot appear outside a &#39;Try&#39; statement | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30380"
+  - "vbc30380"
+helpviewer_keywords: 
+  - "BC30380"
+ms.assetid: 73ce950d-881f-4532-8024-40a4930abd32
+caps.latest.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# &#39;Catch&#39; cannot appear outside a &#39;Try&#39; statement
+`Catch` must appear within a `Try...Catch...Finally` statement block. Either you have an unnecessary `Catch` statement in your `Try` block, or your `Catch` statement appears outside the bounds of its corresponding `Try` block.  
+  
+ **Error ID:** BC30380  
+  
+### To correct this error  
+  
+1.  Delete the `Catch` statement if it is unnecessary, or place it within a `Try...Catch...Finally` statement block.  
+  
+## See Also  
+ [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

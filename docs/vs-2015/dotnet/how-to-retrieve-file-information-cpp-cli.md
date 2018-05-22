@@ -1,0 +1,71 @@
+---
+title: "How to: Retrieve File Information (C++-CLI) | Microsoft Docs"
+ms.custom: ""
+ms.date: "2018-06-30"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "files [C++], retrieving information about"
+  - "FileInfo class"
+ms.assetid: 8b67f7ad-a048-4437-ac5c-b41809a6018d
+caps.latest.revision: 11
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+---
+# How to: Retrieve File Information (C++/CLI)
+[!INCLUDE[blank_token](../includes/blank-token.md)]
+
+The latest version of this topic can be found at [How to: Retrieve File Information (C++/CLI)](https://docs.microsoft.com/cpp/dotnet/how-to-retrieve-file-information-cpp-cli).  
+  
+  
+The following code example demonstrates the <xref:System.IO.FileInfo> class. When you have the name of a file, you can use this class to retrieve information about the file such as the file size, directory, full name, and date and time of creation and of the last modification.  
+  
+ This code retrieves file information for Notepad.exe.  
+  
+## Example  
+  
+```  
+// file_info.cpp  
+// compile with: /clr  
+using namespace System;  
+using namespace System::IO;  
+  
+int main()  
+{  
+   array<String^>^ args = Environment::GetCommandLineArgs();  
+   if (args->Length < 2)  
+   {  
+      Console::WriteLine("\nUSAGE : file_info <filename>\n\n");  
+      return -1;  
+   }  
+  
+   FileInfo^ fi = gcnew FileInfo( args[1] );  
+  
+   Console::WriteLine("file size: {0}", fi->Length );  
+  
+   Console::Write("File creation date:  ");  
+   Console::Write(fi->CreationTime.Month.ToString());  
+   Console::Write(".{0}", fi->CreationTime.Day.ToString());  
+   Console::WriteLine(".{0}", fi->CreationTime.Year.ToString());  
+  
+   Console::Write("Last access date:  ");  
+   Console::Write(fi->LastAccessTime.Month.ToString());  
+   Console::Write(".{0}", fi->LastAccessTime.Day.ToString());  
+   Console::WriteLine(".{0}", fi->LastAccessTime.Year.ToString());  
+  
+   return 0;  
+}  
+```  
+  
+## See Also  
+ [File and Stream I-O](http://msdn.microsoft.com/library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)   
+ [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+
