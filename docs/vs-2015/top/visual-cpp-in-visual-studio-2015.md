@@ -15,7 +15,7 @@ f1_keywords:
   - "vc"
 dev_langs: 
   - "C++"
-monikerRange: ["=vs-2015"]
+monikerRange: "=vs-2015"
 helpviewer_keywords: 
   - "unmanaged code, C++"
   - "development environment, Visual C++"
