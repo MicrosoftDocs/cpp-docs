@@ -494,7 +494,7 @@ hex C == 12
 
 ## <a name="length"></a>  regex_traits::length
 
-Returns the length of a nul-terminated sequence.
+Returns the length of a null-terminated sequence.
 
 ```cpp
 static size_type length(const char_type *str);
@@ -503,7 +503,8 @@ static size_type length(const char_type *str);
 ### Parameters
 
 `str`
- The nul-terminated sequence.
+
+The null-terminated sequence.
 
 ### Remarks
 

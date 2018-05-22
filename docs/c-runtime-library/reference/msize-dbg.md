@@ -38,7 +38,7 @@ Type of the specified memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 ## Return Value
 
-On successful completion, **_msize_dbg** returns the size (in bytes) of the specified memory block; otherwise it returns NULL.
+On successful completion, **_msize_dbg** returns the size (in bytes) of the specified memory block; otherwise it returns **NULL**.
 
 ## Remarks
 

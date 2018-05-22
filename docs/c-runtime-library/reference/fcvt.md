@@ -46,7 +46,7 @@ Pointer to the stored sign indicator.
 
 ## Return Value
 
-**_fcvt** returns a pointer to the string of digits, NULL on error.
+**_fcvt** returns a pointer to the string of digits, **NULL** on error.
 
 ## Remarks
 
@@ -60,7 +60,7 @@ The difference between **_ecvt** and **_fcvt** is in the interpretation of the *
 
 **_ecvt** and **_fcvt** use a single statically allocated buffer for the conversion. Each call to one of these routines destroys the results of the previous call.
 
-This function validates its parameters. If *dec* or *sign* is NULL, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and NULL is returned.
+This function validates its parameters. If *dec* or *sign* is **NULL**, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and **NULL** is returned.
 
 ## Requirements
 

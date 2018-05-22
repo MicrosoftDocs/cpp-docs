@@ -34,7 +34,7 @@ The address of the function that will handle run-time error checks.
 
 ## Return Value
 
-The previously defined error function. If there is no previously defined function, returns NULL.
+The previously defined error function. If there is no previously defined function, returns **NULL**.
 
 ## Remarks
 

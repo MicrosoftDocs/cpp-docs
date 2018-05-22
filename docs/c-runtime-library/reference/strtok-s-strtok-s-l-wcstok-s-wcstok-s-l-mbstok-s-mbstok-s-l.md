@@ -81,7 +81,7 @@ The locale to use.
 
 ## Return Value
 
-Returns a pointer to the next token found in *str*. Returns **NULL** when no more tokens are found. Each call modifies *str* by substituting a **NULL** character for the first delimiter that occurs after the returned token.
+Returns a pointer to the next token found in *str*. Returns **NULL** when no more tokens are found. Each call modifies *str* by substituting a null character for the first delimiter that occurs after the returned token.
 
 ### Error Conditions
 

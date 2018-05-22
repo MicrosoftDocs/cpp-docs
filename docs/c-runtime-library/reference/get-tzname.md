@@ -33,7 +33,7 @@ errno_t _get_tzname(
 ### Parameters
 
 *pReturnValue*<br/>
-The string length of *timeZoneName* including a NULL terminator.
+The string length of *timeZoneName* including a null terminator.
 
 *timeZoneName*<br/>
 The address of a character string for the representation of the time zone name or the daylight standard time zone name (DST), depending on *index*.

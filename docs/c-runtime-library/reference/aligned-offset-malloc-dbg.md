@@ -43,10 +43,10 @@ The alignment value, which must be an integer power of 2.
 The offset into the memory allocation to force the alignment.
 
 *filename*<br/>
-Pointer to the name of the source file that requested the allocation operation or NULL.
+Pointer to the name of the source file that requested the allocation operation or **NULL**.
 
 *linenumber*<br/>
-Line number in the source file where the allocation operation was requested or NULL.
+Line number in the source file where the allocation operation was requested or **NULL**.
 
 ## Return Value
 

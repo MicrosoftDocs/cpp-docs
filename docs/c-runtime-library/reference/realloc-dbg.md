@@ -43,16 +43,16 @@ Requested size for the reallocated block (bytes).
 Requested type for the reallocated block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 *filename*<br/>
-Pointer to the name of the source file that requested the **realloc** operation or NULL.
+Pointer to the name of the source file that requested the **realloc** operation or **NULL**.
 
 *linenumber*<br/>
-Line number in the source file where the **realloc** operation was requested or NULL.
+Line number in the source file where the **realloc** operation was requested or **NULL**.
 
 The *filename* and *linenumber* parameters are only available when **_realloc_dbg** has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return Value
 
-On successful completion, this function either returns a pointer to the user portion of the reallocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [realloc](realloc.md) function.
+On successful completion, this function either returns a pointer to the user portion of the reallocated memory block, calls the new handler function, or returns **NULL**. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [realloc](realloc.md) function.
 
 ## Remarks
 

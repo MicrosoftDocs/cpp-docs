@@ -27,7 +27,7 @@ terminate_function _get_terminate( void );
 
 ## Return Value
 
-Returns a pointer to the function registered by [set_terminate](set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+Returns a pointer to the function registered by [set_terminate](set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
 
 ## Requirements
 

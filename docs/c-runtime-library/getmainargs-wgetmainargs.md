@@ -42,10 +42,10 @@ _startupinfo * _StartInfo);
  An integer that contains the number of arguments that follow in `argv`. The `argc` parameter is always greater than or equal to 1.  
   
  `_Argv`  
- An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv[0]` is the command with which the program is invoked, argv[1] is the first command-line argument, and so on, until argv[argc], which is always NULL. The first command-line argument is always `argv[1]` and the last one is `argv[argc - 1]`.  
+ An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv[0]` is the command with which the program is invoked, argv[1] is the first command-line argument, and so on, until argv[argc], which is always **NULL**. The first command-line argument is always `argv[1]` and the last one is `argv[argc - 1]`.  
   
  `_Env`  
- An array of strings that represent the variables set in the user's environment. This array is terminated by a NULL entry.  
+ An array of strings that represent the variables set in the user's environment. This array is terminated by a **NULL** entry.  
   
  `_DoWildCard`  
  An integer that if set to 1 expands the wildcards in the command line arguments, or if set to 0 does nothing.  

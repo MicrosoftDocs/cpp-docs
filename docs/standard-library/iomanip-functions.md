@@ -106,7 +106,7 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### Remarks
 
-The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses `_Tptr` to indicate the time structure and `_Fmt` to indicate the beginning of a NUL-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
+The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses `_Tptr` to indicate the time structure and `_Fmt` to indicate the beginning of a null-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
 
 ## <a name="quoted"></a>  quoted
 

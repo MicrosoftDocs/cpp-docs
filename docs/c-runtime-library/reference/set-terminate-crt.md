@@ -32,7 +32,7 @@ Pointer to a terminate function that you write.
 
 ## Return Value
 
-Returns a pointer to the previous function registered by **set_terminate** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+Returns a pointer to the previous function registered by **set_terminate** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
 
 ## Remarks
 

@@ -57,7 +57,7 @@ Locale to use.
 
 ## Return Value
 
-Returns a pointer to the next token found in *strToken*. They return **NULL** when no more tokens are found. Each call modifies *strToken* by substituting a **NULL** character for the first delimiter that occurs after the returned token.
+Returns a pointer to the next token found in *strToken*. They return **NULL** when no more tokens are found. Each call modifies *strToken* by substituting a null character for the first delimiter that occurs after the returned token.
 
 ## Remarks
 

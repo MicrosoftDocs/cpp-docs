@@ -43,7 +43,7 @@ A wide character.
 
 ## Return Value
 
-If **wctomb** converts the wide character to a multibyte character, it returns the number of bytes (which is never greater than **MB_CUR_MAX**) in the wide character. If *wchar* is the wide-character null character (L'\0'), **wctomb** returns 1. If the target pointer *mbchar* is NULL, **wctomb** returns 0. If the conversion is not possible in the current locale, **wctomb** returns -1 and **errno** is set to **EILSEQ**.
+If **wctomb** converts the wide character to a multibyte character, it returns the number of bytes (which is never greater than **MB_CUR_MAX**) in the wide character. If *wchar* is the wide-character null character (L'\0'), **wctomb** returns 1. If the target pointer *mbchar* is **NULL**, **wctomb** returns 0. If the conversion is not possible in the current locale, **wctomb** returns -1 and **errno** is set to **EILSEQ**.
 
 ## Remarks
 

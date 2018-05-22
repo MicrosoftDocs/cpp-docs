@@ -39,16 +39,16 @@ Requested size of the memory block (in bytes).
 Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 *filename*<br/>
-Pointer to the name of the source file that requested the allocation operation or NULL.
+Pointer to the name of the source file that requested the allocation operation or **NULL**.
 
 *linenumber*<br/>
-Line number in the source file where the allocation operation was requested or NULL.
+Line number in the source file where the allocation operation was requested or **NULL**.
 
 The *filename* and *linenumber* parameters are only available when **_malloc_dbg** has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return Value
 
-On successful completion, this function returns a pointer to the user portion of the allocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [malloc](malloc.md) function.
+On successful completion, this function returns a pointer to the user portion of the allocated memory block, calls the new handler function, or returns **NULL**. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [malloc](malloc.md) function.
 
 ## Remarks
 
