@@ -29,8 +29,6 @@ A clock is *monotonic* if the value that is returned by a first call to `now()` 
 
 A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant.
 
-In this implementation, a `system_clock` is synonymous with a `high_resolution_clock`.
-
 ## Members
 
 ### Public Typedefs
