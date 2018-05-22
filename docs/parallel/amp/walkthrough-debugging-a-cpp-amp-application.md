@@ -216,7 +216,9 @@ CPU breakpoints
   
 3.  In the **Debugger to launch** list, select **Local Windows Debugger**.  
   
-4.  In the **Debugger Type** list, select **GPU Only**.  
+4.  In the **Debugger Type** list, verify that **Auto** is selected.
+
+    **Auto** is the default value. Prior to Windows 10, **GPU Only** is the required value instead of **Auto**.
   
 5.  Choose the **OK** button.  
   
