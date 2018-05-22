@@ -108,9 +108,9 @@ Right-click anywhere in a source code file and choose **Outlining** to collapse 
 
 ![Visual C&#43;&#43; Outlining](../ide/media/vs2015_cpp_outlining.png "vs2015_cpp_outlining")
 
-## Scroll bar map mode
+## Scrollbar map mode
 
-Scrollbar map mode enables you to quickly scroll and browse through a code file without actually leaving your current location. Or click anywhere on the code map to go directly to that location.
+Scrollbar map mode enables you to quickly scroll and browse through a code file without actually leaving your current location. Or click anywhere on the code map to go directly to that location. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
 ![Code Map in Visual C&#43;&#43;](../ide/media/vs2015_cpp_code_map.png "vs2015_cpp_code_map")
 
@@ -122,7 +122,7 @@ Right click on a code file in your project and choose **Generate graph of includ
 
 ## F1 Help
 
-Place the cursor on or just after any type, keyword or function and press F1 to go directly to the relevant MSDN reference topic. F1 also works on items in the error list, and in many dialog boxes.
+Place the cursor on or just after any type, keyword or function and press F1 to go directly to the relevant reference topic on docs.microsoft.com. F1 also works on items in the error list, and in many dialog boxes.
 
 ## Quick Launch
 
