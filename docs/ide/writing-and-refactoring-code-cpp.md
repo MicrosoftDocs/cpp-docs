@@ -28,7 +28,7 @@ To set formatting options such as indents, brace completion, and colorization, t
 
 ![C++ formatting options](media/cpp-formatting-options.png)
 
-### IntelliSense
+## IntelliSense
 
 IntelliSense is the name for a set of features that provide inline information about members, types, and function overloads. The following illustration shows the member list drop-down that appears as you type. You can press the tab key to enter the selected item text into your code file.
 
@@ -36,13 +36,13 @@ IntelliSense is the name for a set of features that provide inline information a
 
 For complete information see [Visual C++ Intellisense](/visualstudio/ide/visual-cpp-intellisense).
 
-### Insert Snippets
+## Insert Snippets
 
 A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).
 
 ![Visual C&#43;&#43; Insert Snippet Drop&#45;down](../ide/media/vs2015_cpp_surround_with.png "vs2015_cpp_surround_with")
 
-### Add Class
+## Add Class
 
 Add a new class from the **Project** menu by using the Class Wizard.
 
@@ -70,61 +70,61 @@ Refactorings are available under the Quick Action context menu, or by clicking o
 
 Visual C++ shares many code navigation features with other languages. For more information, see [Navigating Code](/visualstudio/ide/navigating-code) and [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).
 
-### QuickInfo
+## QuickInfo
 
 Hover over a variable to see its type information.
 
 ![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
-### Open document (Navigate to header)
+## Open document (Navigate to header)
 
 Right click on the header name in an `#include` directive and open the header file.
 
 ![Visual C&#43;&#43; Open Document menu option](../ide/media/vs2015_cpp_open_document.png "vs2015_cpp_open_document")
 
-### Peek Definition
+## Peek Definition
 
 Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition. For more information, see [Peek Definition (Alt+F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).
 
 ![Visual C&#43;&#43; Peek Definition](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
 
-### Go To Definition
+## Go To Definition
 
 Hover over a variable or function declaration, right-click, then choose **Go To Definition** to open the document where the object is defined.
 
-### View Call Hierarchy
+## View Call Hierarchy
 
 Right click on any function call and view a resursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visualstudio/ide/reference/call-hierarchy).
 
 ![Visual C&#43;&#43; Call Hierarchy](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
 
-### Toggle Header / Code File
+## Toggle Header / Code File
 
 Right-click and choose **Toggle Header / Code File** to switch back and forth between a header file and its associated code file.
 
-### Outlining
+## Outlining
 
 Right-click anywhere in a source code file and choose **Outlining** to collapse or expand definitions and/or custom regions to make it easier to browse only the parts you are interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
 
 ![Visual C&#43;&#43; Outlining](../ide/media/vs2015_cpp_outlining.png "vs2015_cpp_outlining")
 
-### Scroll bar map mode
+## Scroll bar map mode
 
 Scrollbar map mode enables you to quickly scroll and browse through a code file without actually leaving your current location. Or click anywhere on the code map to go directly to that location.
 
 ![Code Map in Visual C&#43;&#43;](../ide/media/vs2015_cpp_code_map.png "vs2015_cpp_code_map")
 
-### Generate graph of include files
+## Generate graph of include files
 
 Right click on a code file in your project and choose **Generate graph of include files** to see a graph of which files are included by other files.
 
 ![Visual C&#43;&#43; graph of include files](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
 
-### F1 Help
+## F1 Help
 
 Place the cursor on or just after any type, keyword or function and press F1 to go directly to the relevant MSDN reference topic. F1 also works on items in the error list, and in many dialog boxes.
 
-### Quick Launch
+## Quick Launch
 
 To easily navigate to any window or tool in Visual Studio, simply type its name in the Quick Launch window in the upper right corner of the UI. The auto-completion list will filter as you type.
 
