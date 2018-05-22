@@ -38,7 +38,7 @@ _onexit_t __dllonexit(   _onexit_t func,
  Pointer to variable that points to the end of a list of functions to execute on detach.  
   
 ## Return Value  
- If successful, a pointer to the user’s function. Otherwise, a NULL pointer.  
+ If successful, a pointer to the user’s function. Otherwise, a **NULL** pointer.  
   
 ## Remarks  
  The `__dllonexit` function is analogous to the [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) function except that the global variables used by that function are not visible to this routine. Instead of global variables, this function uses the `pbegin` and `pend` parameters.  

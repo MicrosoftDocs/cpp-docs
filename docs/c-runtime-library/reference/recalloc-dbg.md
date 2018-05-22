@@ -58,7 +58,7 @@ The *filename* and *linenumber* parameters are only available when **_recalloc_d
 
 ## Return Value
 
-On successful completion, this function either returns a pointer to the user portion of the reallocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [_recalloc](recalloc.md) function.
+On successful completion, this function either returns a pointer to the user portion of the reallocated memory block, calls the new handler function, or returns **NULL**. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [_recalloc](recalloc.md) function.
 
 ## Remarks
 

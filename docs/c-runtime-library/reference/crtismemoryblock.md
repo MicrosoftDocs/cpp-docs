@@ -54,7 +54,7 @@ Pointer to the line number in the source file or **NULL**.
 
 ## Remarks
 
-The **_CrtIsMemoryBlock** function verifies that a specified memory block is located within the application's local heap and that it has a valid block type identifier. This function can also be used to obtain the object allocation order number and the source file name/line number where the memory block allocation was originally requested. Passing non-NULL values for the *requestNumber*, *filename*, or *linenumber* parameters causes **_CrtIsMemoryBlock** to set these parameters to the values in the memory block's debug header, if it finds the block in the local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to **_CrtIsMemoryBlock** are removed during preprocessing.
+The **_CrtIsMemoryBlock** function verifies that a specified memory block is located within the application's local heap and that it has a valid block type identifier. This function can also be used to obtain the object allocation order number and the source file name/line number where the memory block allocation was originally requested. Passing non-**NULL** values for the *requestNumber*, *filename*, or *linenumber* parameters causes **_CrtIsMemoryBlock** to set these parameters to the values in the memory block's debug header, if it finds the block in the local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to **_CrtIsMemoryBlock** are removed during preprocessing.
 
 If **_CrtIsMemoryBlock** fails, it returns **FALSE** and the output parameters are initialized to default values: *requestNumber* and **lineNumber** are set to 0 and *filename* is set to **NULL**.
 

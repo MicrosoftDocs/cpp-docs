@@ -64,11 +64,11 @@ The locale to use.
 
 ## Return Value
 
-If **wcstombs** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating **NULL** (if any). If the *mbstr* argument is **NULL**, **wcstombs** returns the required size in bytes of the destination string. If **wcstombs** encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type **size_t** and sets **errno** to **EILSEQ**.
+If **wcstombs** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating null (if any). If the *mbstr* argument is **NULL**, **wcstombs** returns the required size in bytes of the destination string. If **wcstombs** encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type **size_t** and sets **errno** to **EILSEQ**.
 
 ## Remarks
 
-The **wcstombs** function converts the wide-character string pointed to by *wcstr* to the corresponding multibyte characters and stores the results in the *mbstr* array. The *count* parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of *mbstr*). In general, it is not known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character **NULL**), the result is guaranteed to fit.
+The **wcstombs** function converts the wide-character string pointed to by *wcstr* to the corresponding multibyte characters and stores the results in the *mbstr* array. The *count* parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of *mbstr*). In general, it is not known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character null), the result is guaranteed to fit.
 
 If **wcstombs** encounters the wide-character null character (L'\0') either before or when *count* occurs, it converts it to an 8-bit 0 and stops. Thus, the multibyte character string at *mbstr* is null-terminated only if **wcstombs** encounters a wide-character null character during conversion. If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of **wcstombs** is undefined.
 

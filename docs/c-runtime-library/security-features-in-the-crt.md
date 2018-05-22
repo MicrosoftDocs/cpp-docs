@@ -42,7 +42,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
 -   `Parameter Validation`. Parameters passed to CRT functions are validated, in both secure functions and in many preexisting versions of functions. These validations include:  
   
-    -   Checking for `NULL` values passed to the functions.  
+    -   Checking for **NULL** values passed to the functions.  
   
     -   Checking enumerated values for validity.  
   
@@ -54,7 +54,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
 -   `Sized Buffers`. The secure functions require that the buffer size be passed to any function that writes to a buffer. The secure versions validate that the buffer is large enough before writing to it, helping to avoid dangerous buffer overrun errors that could allow malicious code to execute. These functions usually return an `errno` type of error code and invoke the invalid parameter handler if the size of the buffer is too small. Functions that read from input buffers, such as `gets`, have secure versions that require you to specify a maximum size.  
   
--   `Null termination`. Some functions that left potentially non-terminated strings have secure versions which ensure that strings are properly null terminated.  
+-   `Null termination`. Some functions that left potentially non-terminated strings have secure versions which ensure that strings are properly null-terminated.  
   
 -   `Enhanced error reporting`. The secure functions return error codes with more error information than was available with the preexisting functions. The secure functions and many of the preexisting functions now set `errno` and often return an `errno` code type as well, to provide better error reporting.  
   

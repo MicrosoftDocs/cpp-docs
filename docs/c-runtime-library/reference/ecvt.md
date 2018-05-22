@@ -46,7 +46,7 @@ Sign of the converted number.
 
 ## Return Value
 
-**_ecvt** returns a pointer to the string of digits; NULL if an error occurred.
+**_ecvt** returns a pointer to the string of digits; **NULL** if an error occurred.
 
 ## Remarks
 
@@ -60,7 +60,7 @@ The difference between **_ecvt** and **_fcvt** is in the interpretation of the *
 
 **_ecvt** and **_fcvt** use a single statically allocated buffer for the conversion. Each call to one of these routines destroys the result of the previous call.
 
-This function validates its parameters. If *dec* or *sign* is NULL, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and NULL is returned.
+This function validates its parameters. If *dec* or *sign* is **NULL**, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and **NULL** is returned.
 
 ## Requirements
 

@@ -32,7 +32,7 @@ Pointer to a function that you write to replace the **unexpected** function.
 
 ## Return Value
 
-Returns a pointer to the previous termination function registered by **_set_unexpected** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+Returns a pointer to the previous termination function registered by **_set_unexpected** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
 
 ## Remarks
 

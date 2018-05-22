@@ -120,7 +120,7 @@ Both **_vsnprintf** and **_vsnwprintf** functions return the number of character
 
 The value returned by all these functions does not include the terminating null, whether one is written or not. When *count* is zero, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
 
-If *format* is **NULL**, or if *buffer* is NULL and *count* is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *format* is **NULL**, or if *buffer* is **NULL** and *count* is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 ## Remarks
 

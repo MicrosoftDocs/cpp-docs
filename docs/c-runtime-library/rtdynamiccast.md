@@ -47,7 +47,7 @@ PVOID __RTDynamicCast (
  `true` if input is a reference; `false` if input is a pointer.  
   
 ## Return Value  
- Pointer to the appropriate sub-object, if successful; otherwise, NULL.  
+ Pointer to the appropriate sub-object, if successful; otherwise, **NULL**.  
   
 ## Exceptions  
  `bad_cast()` if the input to `dynamic_cast<>` is a reference and the cast fails.  
