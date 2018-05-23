@@ -41,6 +41,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/atl/reference/patlmodule.md",
+            "redirect_url": "/cpp/atl/reference/atl-global-variables",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/atl-mfc-shared/index.md",
             "redirect_url": "/cpp/atl-mfc-shared/atl-mfc-shared-classes",
             "redirect_document_id": false

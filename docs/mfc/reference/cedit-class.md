@@ -90,7 +90,7 @@ class CEdit : public CWnd
   
  Each message-map entry takes the following form:  
   
- **ON_**Notification **(** *id, memberFxn***)**  
+  **ON_**_NOTIFICATION_**(** _id_**,** _memberFxn_ **)**
   
  where `id` specifies the child window ID of the edit control sending the notification, and `memberFxn` is the name of the parent member function you have written to handle the notification.  
   
