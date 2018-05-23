@@ -54,7 +54,7 @@ struct atomic;
 
 The type *Ty* must be *trivially copyable*. That is, using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) to copy its bytes must produce a valid *Ty* object that compares equal to the original object. The [compare_exchange_weak](#compare_exchange_weak) and [compare_exchange_strong](#compare_exchange_strong) member functions use [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) to determine whether two *Ty* values are equal. These functions will not use a *Ty*-defined **operator==**. The member functions of **atomic** use **memcpy** to copy values of type *Ty*.
 
-A partial specialization, **atomic\<Ty *>**, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type **ptrdiff_t** and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
+A partial specialization, **atomic\<Ty \*>**, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type **ptrdiff_t** and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
 
 A specialization exists for every integral type except **bool**. Each specialization provides a rich set of methods for atomic arithmetic and logical operations.
 
