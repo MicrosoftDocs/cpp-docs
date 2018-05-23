@@ -50,7 +50,7 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        "mfc/**/*.md": ">= vs-2015"
+        "**/*.md": ">= vs-2015"
     }
     },
 
