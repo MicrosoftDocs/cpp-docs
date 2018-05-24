@@ -56,5 +56,5 @@
     }
   ],
   "need_generate_pdf_url_template": true,
-  "enable_incremental_build": true
+  "enable_incremental_build": false
 }

@@ -13,13 +13,13 @@ ms.workload: ["cplusplus"]
 ---
 # IDE and Tools for Visual C++ Development
 
-::: moniker range= "= vs-2017"
+::: moniker range="= vs-2017"
 
 As part of the Visual Studio Integrated Development Environment (IDE), Microsoft Visual C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or Javascript. Some windows or tools are only available in Visual Studio Pro or Visual Studio Enterprise.
 
 ::: moniker-end
 
-::: moniker range = "= vs-2015"
+::: moniker range="= vs-2015"
 
 Visual Studio 2015 test
 
