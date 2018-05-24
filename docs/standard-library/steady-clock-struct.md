@@ -25,11 +25,9 @@ struct steady_clock;
 
 On Windows, `steady_clock` wraps the `QueryPerformanceCounter` function.
 
-A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`.
+A clock is *monotonic* if the value that is returned by a first call to `now` is always less than or equal to the value that is returned by a subsequent call to `now`. A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant.
 
-A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant.
-
-`high_resolution_clock` is a typdef for `steady_clock`.
+`high_resolution_clock` is a typedef for `steady_clock`.
 
 ### Public typedefs
 
@@ -60,6 +58,6 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[system_clock Structure](../standard-library/system-clock-structure.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<chrono>](../standard-library/chrono.md)
+- [system_clock Structure](../standard-library/system-clock-structure.md)
