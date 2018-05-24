@@ -16,9 +16,19 @@ The Visual Studio Integrated Development Environment (IDE) offers a set of featu
 
 ## Prerequisites
 
-If you haven't installed Visual Studio yet, now is the time. To get Visual Studio, you can download it from [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Be sure to include the Visual C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
-
 These walkthroughs assume that you have installed Visual Studio and the Visual C++ language and components required for Windows Desktop development. We also assume you understand the fundamentals of the C++ language. If you need to learn C++, there are many books and web resources available. One good place to start is the [Get Started](https://isocpp.org/get-started) page of the Standard C++ Foundation website.
+
+If you haven't installed Visual Studio yet, now is the time. 
+
+**Visual Studio 2017 Installation**
+
+To get Visual Studio 2017, you can download it from [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Be sure to include the Visual C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+
+**Visual Studio 2015 Installation**
+
+ To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. 
+
+ In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multitargeting.md).
 
 Once your Visual Studio installation is complete, you are ready to continue.
 

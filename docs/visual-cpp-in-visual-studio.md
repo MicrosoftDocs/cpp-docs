@@ -12,6 +12,8 @@ ms.workload: ["cplusplus"]
 ---
 # Visual C++ in Visual Studio
 
+**This documentation applies to Visual Studio 2015 and Visual Studio 2017**
+
 Microsoft Visual C++, usually shortened to Visual C++ or MSVC, is the name for the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create Universal Windows Platform (UWP) apps, native Windows desktop and server applications, cross-platform libraries and apps that run on Windows, Linux, Android, and iOS, as well as managed apps and libraries that use the .NET Framework. You can use Visual C++ to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop, from device drivers and operating system components to cross-platform games for mobile devices, and from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
 
 ## General information about Visual C++
@@ -40,7 +42,7 @@ Learn more about modern C++ programming techniques based on C++11 and C++14 that
 Learn how to create effective error reports against the Visual C++ toolset (compiler, linker, and other tools), and ways to submit your report.
 
 [Visual C++ Porting and Upgrading Guide](porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
-Guidance for porting code and upgrading projects to Visual Studio 2017, including porting C++ code to Windows 10 and the Universal Windows Platform.
+Guidance for porting code and upgrading projects to Visual Studio 2015 or Visual Studio 2017, including porting C++ code to Windows 10 and the Universal Windows Platform.
 
 [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)<br/>
 Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
@@ -123,8 +125,6 @@ Universal Windows Platform (UWP) apps and components.
 
 [.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Programming for the common language runtime (CLR).
-
-See also the documentation for [STL/CLR](dotnet/stl-clr-library-reference.md) and the [C++ Support Library](dotnet/cpp-support-library.md).
 
 ## Other C++ libraries
 
