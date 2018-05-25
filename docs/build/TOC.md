@@ -72,7 +72,6 @@
 ## [LoadLibrary and AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)
 ## [GetProcAddress](getprocaddress.md)
 ## [FreeLibrary and AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)
-## [Search Path Used by Windows to Locate a DLL](search-path-used-by-windows-to-locate-a-dll.md)
 ## [Module States of a Regular MFC DLL Dynamically Linked to MFC](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
 ## [MFC extension DLLs](extension-dlls.md)
 ### [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)

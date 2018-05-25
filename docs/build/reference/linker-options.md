@@ -54,6 +54,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/DELAY](../../build/reference/delay-delay-load-import-settings.md)|Controls the delayed loading of DLLs.|
 |[/DELAYLOAD](../../build/reference/delayload-delay-load-import.md)|Causes the delayed loading of the specified DLL.|
 |[/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)|Partially signs an assembly.|
+|[/DEPENDENTLOADFLAGS](dependentloadflags.md)|Sets default flags on dependent DLL loads.|
 |[/DLL](../../build/reference/dll-build-a-dll.md)|Builds a DLL.|
 |[/DRIVER](../../build/reference/driver-windows-nt-kernel-mode-driver.md)|Creates a kernel mode driver.|
 |[/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md)|Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature.|
