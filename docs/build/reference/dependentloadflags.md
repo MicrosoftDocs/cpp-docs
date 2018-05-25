@@ -20,21 +20,21 @@ Sets the default load flags used when `LoadLibrary` is used to load DLLs.
 
 > **/DEPENDENTLOADFLAGS**[**:**_loadflags_]
 
-## Arguments
+### Arguments
 
-*loadflags*
-
-An optional "C"-style 16-bit integer value in decimal, octal with a leading zero, or hexadecimal with a leading `0x`, that specifies the dependent load flags to apply to all [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) calls. The default value is 0.
+|||
+|-|-|
+*loadflags*|An optional "C"-style 16-bit integer value in decimal, octal with a leading zero, or hexadecimal with a leading `0x`, that specifies the dependent load flags to apply to all [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) calls. The default value is 0.
 
 ## Remarks
 
 This option is new in Visual Studio 2017, and applies only to apps running on Windows 10 RS1 and later versions. This option is ignored by other operating systems that run the app.
 
-On supported operating systems, this option has the effect of changing calls to `LoadLibrary("dependent.dll")` to the equivalent of `LoadLibraryEx("dependent.dll", 0, loadflags)`. Calls to [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091) are unaffected.
+On supported operating systems, this option has the effect of changing calls to `LoadLibrary("dependent.dll")` to the equivalent of `LoadLibraryEx("dependent.dll", 0, loadflags)`. Calls to [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091) are unaffected. This option does not apply recursively to DLLs loaded by your app.
 
 This flag can be used to prevent DLL planting attacks. For example, if an app uses `LoadLibrary` to load a dependent DLL, an attacker could plant a DLL with the same name in the search path used by `LoadLibrary`, such as the current directory, which may be checked before system directories if safe DLL search mode is disabled. Safe DLL search mode places the user's current directory later in the search order, and is enabled by default on Windows XP SP2 and later versions. For more information, see [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx).
 
-If you specify `/DEPENDENTLOADFLAGS:0xA00` (the value of the combined flags `LOAD_LIBRARY_SEARCH_APPLICATION_DIR | LOAD_LIBRARY_SEARCH_SYSTEM32`), then even if safe DLL search mode is disabled, the DLL search path is constrained to protected directories that are more difficult for an attacker to change. For information on the flags available, and their symbolic and numeric values, see the *dwFlags* parameter description in [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091).
+For example, if you specify the link option `/DEPENDENTLOADFLAGS:0xA00` (the value of the combined flags `LOAD_LIBRARY_SEARCH_APPLICATION_DIR | LOAD_LIBRARY_SEARCH_SYSTEM32`), then even if safe DLL search mode is disabled on the user's computer, the DLL search path is limited to protected directories that are more difficult for an attacker to change. For information on the flags available, and their symbolic and numeric values, see the *dwFlags* parameter description in [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091).
 
 ### To set the DEPENDENTLOADFLAGS linker option in the Visual Studio development environment
 
