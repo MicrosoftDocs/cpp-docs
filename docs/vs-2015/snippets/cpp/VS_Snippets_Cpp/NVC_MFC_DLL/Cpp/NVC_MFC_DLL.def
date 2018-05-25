@@ -1,0 +1,8 @@
+; NVC_MFC_DLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "NVC_MFC_DLL"
+
+EXPORTS
+	GetMyView
+	RegisterMyNewClass
+    ; Explicit exports can go here

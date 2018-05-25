@@ -1,0 +1,227 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\NVC_MFC_CTreeCtrl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NVC_MFC_CTreeCtrl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+IDR_TREEMENU MENU 
+BEGIN
+    POPUP "TreeCtrl"
+    BEGIN
+        POPUP "Chunk 1"
+        BEGIN
+            MENUITEM "CreateDragImage",             ID_TREECTRL_CREATEDRAGIMAGE
+            MENUITEM "DeleteAllItems",              ID_TREECTRL_DELETEALLITEMS
+            MENUITEM "DeleteItem",                  ID_TREECTRL_DELETEITEM
+            MENUITEM "EditLabel",                   ID_TREECTRL_EDITLABEL
+            MENUITEM "EnsureVisible",               ID_TREECTRL_ENSUREVISIBLE
+            MENUITEM "GetChildItem",                ID_TREECTRL_GETCHILDITEM
+            MENUITEM "GetCount",                    ID_TREECTRL_GETCOUNT
+            MENUITEM "GetDropHighlightItem",        ID_TREECTRL_GETDROPHIGHLIGHTITEM
+            MENUITEM "GetEditControl",              ID_TREECTRL_GETEDITCONTROL
+            MENUITEM "GetImageList",                ID_TREECTRL_GETIMAGELIST
+            MENUITEM "GetIndent",                   ID_TREECTRL_GETINDENT
+            MENUITEM "GetInsertMarkColor",          ID_TREECTRL_GETINSERTMARKCOLOR
+            MENUITEM "GetItemData",                 ID_TREECTRL_GETITEMDATA
+            MENUITEM "GetItemHeight",               ID_TREECTRL_GETITEMHEIGHT
+            MENUITEM "GetItemImage",                ID_TREECTRL_GETITEMIMAGE
+            MENUITEM "GetItemRect",                 ID_TREECTRL_GETITEMRECT
+            MENUITEM "GetItemState",                ID_TREECTRL_GETITEMSTATE
+            MENUITEM "GetLineColor",                ID_TREECTRL_GETLINECOLOR
+            MENUITEM "GetNextItem",                 ID_TREECTRL_GETNEXTITEM
+        END
+        POPUP "Chunk 2"
+        BEGIN
+            MENUITEM "GetNextSiblingItem",          ID_TREECTRL_GETNEXTSIBLINGITEM
+            MENUITEM "GetPrevSiblingItem",          ID_TREECTRL_GETPREVSIBLINGITEM
+            MENUITEM "GetPrevVisibleItem",          ID_CHUNK2_GETPREVVISIBLEITEM
+            MENUITEM "GetSelectedItem",             ID_CHUNK2_GETSELECTEDITEM
+            MENUITEM "GetToolTips",                 ID_CHUNK2_GETTOOLTIPS
+            MENUITEM "HitTest",                     ID_CHUNK2_HITTEST
+            MENUITEM "SelectSetFirstVisible",       ID_CHUNK2_SELECTSETFIRSTVISIBLE
+            MENUITEM "SetCheck",                    ID_CHUNK2_SETCHECK
+            MENUITEM "SetInsertMark",               ID_CHUNK2_SETINSERTMARK
+            MENUITEM "SetItem",                     ID_CHUNK2_SETITEM
+            MENUITEM "SetItemData",                 ID_CHUNK2_SETITEMDATA
+            MENUITEM "SetItemText",                 ID_CHUNK2_SETITEMTEXT
+            MENUITEM "SetLineColor",                ID_CHUNK2_SETLINECOLOR
+            MENUITEM "SetTextColor",                ID_CHUNK2_SETTEXTCOLOR
+            MENUITEM "SortChildren",                ID_CHUNK2_SORTCHILDREN
+            MENUITEM "SortChildrenCB",              ID_CHUNK2_SORTCHILDRENCB
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_UP                  BITMAP                  "res\\bitmap2.bmp"
+IDB_DOWN                BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NVC_MFC_CTREECTRL_DIALOG DIALOGEX 0, 0, 332, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NVC_MFC_CTreeCtrl"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,275,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,275,24,50,14
+    PUSHBUTTON      "Reset Tree",IDC_BUTTON1,275,40,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NVC_MFC_CTreeCtrl.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "NVC_MFC_CTreeCtrl.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NVC_MFC_CTREECTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\NVC_MFC_CTreeCtrl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

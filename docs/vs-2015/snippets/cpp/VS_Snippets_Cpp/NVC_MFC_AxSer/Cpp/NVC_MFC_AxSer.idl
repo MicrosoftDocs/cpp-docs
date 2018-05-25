@@ -1,0 +1,53 @@
+// NVC_MFC_AxSer.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (NVC_MFC_AxSer.tlb) that will become a resource in
+// NVC_MFC_AxSer.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(486A27D9-E3ED-4371-8DFF-60D029FE41EB), version(1.0),
+  helpfile("NVC_MFC_AxSer.hlp"),
+  helpstring("NVC_MFC_AxSer ActiveX Control module"),
+  control ]
+library NVC_MFC_AxSerLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CMyAxSerCtrl
+
+	[ uuid(493A5E91-A63F-4BFA-A298-92DC05175E3A),
+	  helpstring("Dispatch interface for MyAxSer Control")]
+	dispinterface _DNVC_MFC_AxSer
+	{
+		properties:
+         [id(1) , helpstring("property CircleShape")] VARIANT_BOOL CircleShape;
+         [id(2) , helpstring("property ReleaseDate")] LONG ReleaseDate;
+         [id(3) , helpstring("property OriginalDate")] LONG OriginalDate;
+   methods:
+	};
+
+	//  Event dispatch interface for CMyAxSerCtrl
+
+	[ uuid(CD872BCA-068C-4881-99BF-1C612244C929),
+	  helpstring("Event interface for MyAxSer Control") ]
+	dispinterface _DNVC_MFC_AxSerEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CMyAxSerCtrl
+
+	[ uuid(6AAFF076-A5B5-43FD-AF7C-A0623240B697),
+	  helpstring("MyAxSer Control"), control ]
+	coclass NVC_MFC_AxSer
+	{
+		[default] dispinterface _DNVC_MFC_AxSer;
+		[default, source] dispinterface _DNVC_MFC_AxSerEvents;
+	};
+
+};

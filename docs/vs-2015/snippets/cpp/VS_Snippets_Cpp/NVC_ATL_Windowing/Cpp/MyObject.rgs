@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_Windowing.MyObject.1 = s 'MyObject Class'
+	{
+		CLSID = s '{C8FA8EEC-B4BD-4D67-A9A8-847BC80D68EA}'
+	}
+	NVC_ATL_Windowing.MyObject = s 'MyObject Class'
+	{
+		CLSID = s '{C8FA8EEC-B4BD-4D67-A9A8-847BC80D68EA}'
+		CurVer = s 'NVC_ATL_Windowing.MyObject.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C8FA8EEC-B4BD-4D67-A9A8-847BC80D68EA} = s 'MyObject Class'
+		{
+			ProgID = s 'NVC_ATL_Windowing.MyObject.1'
+			VersionIndependentProgID = s 'NVC_ATL_Windowing.MyObject'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+		}
+	}
+}

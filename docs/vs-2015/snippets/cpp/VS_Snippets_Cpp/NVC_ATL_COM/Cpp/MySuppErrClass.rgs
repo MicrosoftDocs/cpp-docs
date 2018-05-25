@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_COM.MySuppErrClass.1 = s 'MySuppErrClass Class'
+	{
+		CLSID = s '{810FFA0A-C845-4DEA-A675-C78E135661D3}'
+	}
+	NVC_ATL_COM.MySuppErrClass = s 'MySuppErrClass Class'
+	{
+		CLSID = s '{810FFA0A-C845-4DEA-A675-C78E135661D3}'
+		CurVer = s 'NVC_ATL_COM.MySuppErrClass.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {810FFA0A-C845-4DEA-A675-C78E135661D3} = s 'MySuppErrClass Class'
+		{
+			ProgID = s 'NVC_ATL_COM.MySuppErrClass.1'
+			VersionIndependentProgID = s 'NVC_ATL_COM.MySuppErrClass'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{DB9F12A2-CECC-4159-B5D8-B5BA358AAFA9}'
+		}
+	}
+}

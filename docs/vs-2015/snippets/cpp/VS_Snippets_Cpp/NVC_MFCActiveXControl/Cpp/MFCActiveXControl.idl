@@ -1,0 +1,59 @@
+// MFCActiveXControl.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (MFCActiveXControl.tlb) that will become a resource in
+// MFCActiveXControl.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(87DBF25E-0C47-4215-9B1A-C8240AD8FCC5), version(1.0),
+  helpfile("MFCActiveXControl.hlp"),
+  helpstring("MFCActiveXControl ActiveX Control module"),
+  control ]
+library MFCActiveXControlLib
+{
+   importlib(STDOLE_TLB);
+
+   //  Primary dispatch interface for CMFCActiveXControlCtrl
+
+   [ uuid(2360F753-C73A-4DAB-8DED-0F687B84C2D7),
+     helpstring("Dispatch interface for MFCActiveXControl Control")]
+   dispinterface _DMFCActiveXControl
+   {
+      properties:
+         [id(DISPID_READYSTATE), readonly] long ReadyState;
+         [id(1), helpstring("property EditControlText")] BSTR EditControlText;
+   methods:
+
+         [id(DISPID_ABOUTBOX)] void AboutBox();
+         [id(2), propget, helpstring("property Array")] SHORT Array(SHORT row, SHORT column);
+         [id(2), propput, helpstring("property Array")] void Array(SHORT row, SHORT column, SHORT newVal);
+         [id(3), propget, helpstring("property Item")] IDispatch* Item(SHORT index1, SHORT index2, SHORT index3);
+         [id(3), propput, helpstring("property Item")] void Item(SHORT index1, SHORT index2, SHORT index3, IDispatch* pVal);
+   };
+
+   //  Event dispatch interface for CMFCActiveXControlCtrl
+
+   [ uuid(4E12095A-D440-4E22-866A-3714B7EFBDE8),
+     helpstring("Event interface for MFCActiveXControl Control") ]
+   dispinterface _DMFCActiveXControlEvents
+   {
+      properties:
+         //  Event interface has no properties
+
+      methods:
+         [id(DISPID_READYSTATECHANGE)] void ReadyStateChange();
+   };
+
+   //  Class information for CMFCActiveXControlCtrl
+
+   [ uuid(95406549-2C39-4340-81C9-89834DC9D8C1),
+     helpstring("MFCActiveXControl Control"), control ]
+   coclass MFCActiveXControl
+   {
+      [default] dispinterface _DMFCActiveXControl;
+      [default, source] dispinterface _DMFCActiveXControlEvents;
+   };
+
+};

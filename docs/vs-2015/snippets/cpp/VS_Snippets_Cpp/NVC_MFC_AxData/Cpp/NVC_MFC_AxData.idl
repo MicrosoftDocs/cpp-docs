@@ -1,0 +1,52 @@
+// NVC_MFC_AxData.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (NVC_MFC_AxData.tlb) that will become a resource in
+// NVC_MFC_AxData.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(564E2ACE-C075-4A6F-993C-092999C95766), version(1.0),
+  helpfile("NVC_MFC_AxData.hlp"),
+  helpstring("NVC_MFC_AxData ActiveX Control module"),
+  control ]
+library NVC_MFC_AxDataLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CMyAxDataCtrl
+
+	[ uuid(9D86563F-D282-4D14-BC67-FA10FA957C24),
+	  helpstring("Dispatch interface for MyAxData Control")]
+	dispinterface _DNVC_MFC_AxData
+	{
+		properties:
+         [id(DISPID_TEXT), helpstring("property Text"), bindable, defaultbind, displaybind, requestedit] BSTR Text;
+         [id(1), helpstring("property MyProp"), bindable, defaultbind, displaybind, requestedit] SHORT MyProp;
+   methods:
+	};
+
+	//  Event dispatch interface for CMyAxDataCtrl
+
+	[ uuid(B3270EED-0290-4AA9-BB76-0518195423F2),
+	  helpstring("Event interface for MyAxData Control") ]
+	dispinterface _DNVC_MFC_AxDataEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CMyAxDataCtrl
+
+	[ uuid(147103A9-2872-4281-960A-9FC395315FB5),
+	  helpstring("MyAxData Control"), control ]
+	coclass NVC_MFC_AxData
+	{
+		[default] dispinterface _DNVC_MFC_AxData;
+		[default, source] dispinterface _DNVC_MFC_AxDataEvents;
+	};
+
+};

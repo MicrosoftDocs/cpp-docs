@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_Windowing.MySink.1 = s 'MySink Class'
+	{
+		CLSID = s '{07B7207B-6889-41CE-BDBD-E90956F8E7D9}'
+	}
+	NVC_ATL_Windowing.MySink = s 'MySink Class'
+	{
+		CLSID = s '{07B7207B-6889-41CE-BDBD-E90956F8E7D9}'
+		CurVer = s 'NVC_ATL_Windowing.MySink.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {07B7207B-6889-41CE-BDBD-E90956F8E7D9} = s 'MySink Class'
+		{
+			ProgID = s 'NVC_ATL_Windowing.MySink.1'
+			VersionIndependentProgID = s 'NVC_ATL_Windowing.MySink'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{AD75E0B0-1998-49E3-8730-D3499F35B897}'
+		}
+	}
+}

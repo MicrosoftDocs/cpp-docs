@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MenuCommandTest", "MenuCommandTest\MenuCommandTest.vbproj", "{73D357F9-DBBC-495C-8AED-4853D76C5023}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CommentAdornmentTest", "CommentAdornmentTest\CommentAdornmentTest.vbproj", "{9A694EBE-AEF0-47B9-98A8-A3A360688CBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73D357F9-DBBC-495C-8AED-4853D76C5023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D357F9-DBBC-495C-8AED-4853D76C5023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D357F9-DBBC-495C-8AED-4853D76C5023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D357F9-DBBC-495C-8AED-4853D76C5023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A694EBE-AEF0-47B9-98A8-A3A360688CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A694EBE-AEF0-47B9-98A8-A3A360688CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A694EBE-AEF0-47B9-98A8-A3A360688CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A694EBE-AEF0-47B9-98A8-A3A360688CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

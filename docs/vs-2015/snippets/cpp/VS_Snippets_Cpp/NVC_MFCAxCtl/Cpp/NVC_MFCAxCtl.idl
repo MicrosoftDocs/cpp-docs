@@ -1,0 +1,54 @@
+// NVC_MFCAxCtl.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (NVC_MFCAxCtl.tlb) that will become a resource in
+// NVC_MFCAxCtl.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(A44774E8-AE00-451F-961D-C7D2D258A075), version(1.0),
+  helpfile("NVC_MFCAxCtl.hlp"),
+  helpstring("NVC_MFCAxCtl ActiveX Control module"),
+  control ]
+library NVC_MFCAxCtlLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CMyAxCtrl
+
+	[ uuid(17EB4341-3BF7-4F37-A7C3-33925978C864),
+	  helpstring("Dispatch interface for MyAx Control")]
+	dispinterface _DNVC_MFCAxCtl
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1)] void TwiddleFont();
+	};
+
+	//  Event dispatch interface for CMyAxCtrl
+
+	[ uuid(CC665FDC-20FA-4567-90B6-0BE45D1E0A8D),
+	  helpstring("Event interface for MyAx Control") ]
+	dispinterface _DNVC_MFCAxCtlEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+         [id(DISPID_MOUSEDOWN)] void MouseDown(SHORT Button, SHORT Shift, OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y);
+   };
+
+	//  Class information for CMyAxCtrl
+
+	[ uuid(F8B67137-8158-4B2B-BBAE-95A43767E625),
+	  helpstring("MyAx Control"), control ]
+	coclass NVC_MFCAxCtl
+	{
+		[default] dispinterface _DNVC_MFCAxCtl;
+		[default, source] dispinterface _DNVC_MFCAxCtlEvents;
+	};
+
+};

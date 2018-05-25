@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 10
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NVC_MFC_CTaskDialog", "NVC_MFC_CTaskDialog.vcxproj", "{DC5FB953-BE92-45D8-A36D-D01C2A04FAF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC5FB953-BE92-45D8-A36D-D01C2A04FAF8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC5FB953-BE92-45D8-A36D-D01C2A04FAF8}.Debug|Win32.Build.0 = Debug|Win32
+		{DC5FB953-BE92-45D8-A36D-D01C2A04FAF8}.Release|Win32.ActiveCfg = Release|Win32
+		{DC5FB953-BE92-45D8-A36D-D01C2A04FAF8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

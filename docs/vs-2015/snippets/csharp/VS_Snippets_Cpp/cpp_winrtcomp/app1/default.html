@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cpp_js_walkthrough</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- cpp_js_walkthrough references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    
+    <!--<snippet12>-->
+   <div id="LogButtonDiv">
+        <button id="logButton" onclick="LogButton_Click()">Logarithms using AMP</button>
+    </div>
+    <div id="LogResultDiv">
+        <p id="logResult"></p>
+    </div>
+    <div id="OrderedPrimeButtonDiv">
+        <button id="orderedPrimeButton" onclick="ButtonOrdered_Click()">Primes using parallel_for with sort</button>
+    </div>
+    <div id="OrderedPrimeProgress">
+        <progress id="OrderedPrimesProgressBar" style="-ms-grid-column-span:2" value="0" max="100"></progress>
+    </div>
+    <div id="OrderedPrimeResultDiv">
+        <p id="orderedPrimes">
+            Primes found (ordered):
+        </p>
+    </div>
+    <div id="UnorderedPrimeButtonDiv">
+        <button id="ButtonUnordered" onclick="ButtonUnordered_Click()">Primes returned as they are produced.</button>
+    </div>
+    <div id="UnorderedPrimeDiv">
+        <progress id="UnorderedPrimesProgressBar" value="0" max="100"></progress>
+    </div>
+    <div id="UnorderedPrime">
+        <p id="unorderedPrimes">
+            Primes found (unordered):
+        </p>
+    </div>
+    <div id="ClearDiv">
+        <button id="Button_Clear" onclick="ButtonClear_Click()">Clear</button>
+    </div>
+<!--</snippet12>-->
+
+</body>
+</html>

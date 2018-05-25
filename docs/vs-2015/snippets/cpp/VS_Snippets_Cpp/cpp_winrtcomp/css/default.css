@@ -1,0 +1,47 @@
+﻿
+#LogButtonDiv {
+border: orange solid 1px;
+-ms-grid-row: 1; /* default is 1 */
+-ms-grid-column: 1; /* default is 1 */
+}
+#LogResultDiv {
+background: black;
+border: red solid 1px;
+-ms-grid-row: 1;
+-ms-grid-column: 2;
+}
+
+
+#UnorderedPrimeButtonDiv, #OrderedPrimeButtonDiv {
+border: orange solid 1px;
+-ms-grid-row: 2;   
+-ms-grid-column:1;
+}
+
+#UnorderedPrimeProgress, #OrderedPrimeProgress {
+border: red solid 1px;
+-ms-grid-column-span: 2;
+height: 40px;
+}
+
+#UnorderedPrimeResult, #OrderedPrimeResult {
+border: red solid 1px;
+font-size:smaller;
+-ms-grid-row: 2;
+-ms-grid-column: 3;
+-ms-overflow-style:scrollbar;
+height: 300px;
+}
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

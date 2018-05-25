@@ -1,0 +1,70 @@
+//-----------------------------------------------------------------------
+// 
+//  Copyright (C) Microsoft Corporation.  All rights reserved.
+// 
+// 
+// THIS CODE AND INFORMATION ARE PROVIDED AS-IS WITHOUT WARRANTY OF ANY
+// KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+// PARTICULAR PURPOSE.
+//-----------------------------------------------------------------------
+// TripOptimizer.idl : IDL source for TripOptimizer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TripOptimizer.tlb) and marshalling code.
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(29CC2739-E016-4919-B29D-90BBAE6EBD11),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+// <snippet1>
+interface IOptimizerControl : IDispatch{
+   [id(1)] HRESULT OptimizeTripAsync([in] VARIANT* waypoints, [in] BSTR travelMode, 
+      [in] BSTR optmz, [in] BSTR bingMapsKey,
+      [in] DOUBLE alpha, [in] DOUBLE beta, [in] DOUBLE rho, [in] ULONG iterations,
+      [in] VARIANT_BOOL parallel);
+   [id(2)] HRESULT CancelAsync();
+};
+// </snippet1>
+
+[
+	uuid(C1000CF7-74C6-4576-A0DC-67540A187138),
+	version(1.0),
+]
+library TripOptimizerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(4F073F90-09C6-4A0B-8C00-E0B7885DB547)		
+	]
+// <snippet2>
+	dispinterface _IOptimizerControlEvents
+	{
+		properties:
+		methods:
+         [id(1)] void ProgressCallback([in] BSTR message);
+         [id(2)] void LocationsCallback([in] VARIANT* inputLocations, [in] VARIANT* options);
+         [id(3)] void RouteCallback([in] VARIANT* locations, [in] VARIANT* displayNames);
+         [id(4)] void CanceledCallback();
+         [id(5)] void ErrorCallback([in] BSTR message);
+   };
+// </snippet2>
+	[
+		uuid(10FFAAB9-0E73-4C4D-8118-6225C7F2E692),		
+		control
+	]
+	coclass OptimizerControl
+	{
+		[default] interface IOptimizerControl;
+		[default, source] dispinterface _IOptimizerControlEvents;
+	};
+};
+

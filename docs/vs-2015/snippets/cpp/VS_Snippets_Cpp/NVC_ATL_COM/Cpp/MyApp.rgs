@@ -1,0 +1,26 @@
+HKCR
+{
+	NVC_ATL_COM.MyApp.1 = s 'MyApp Class'
+	{
+		CLSID = s '{F4589FC9-2873-425A-8AB3-989DEE6C0F57}'
+	}
+	NVC_ATL_COM.MyApp = s 'MyApp Class'
+	{
+		CLSID = s '{F4589FC9-2873-425A-8AB3-989DEE6C0F57}'
+		CurVer = s 'NVC_ATL_COM.MyApp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F4589FC9-2873-425A-8AB3-989DEE6C0F57} = s 'MyApp Class'
+		{
+			ProgID = s 'NVC_ATL_COM.MyApp.1'
+			VersionIndependentProgID = s 'NVC_ATL_COM.MyApp'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{DB9F12A2-CECC-4159-B5D8-B5BA358AAFA9}'
+		}
+	}
+}

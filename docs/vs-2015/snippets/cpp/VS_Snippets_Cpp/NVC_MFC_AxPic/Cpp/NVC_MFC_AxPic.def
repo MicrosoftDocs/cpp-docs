@@ -1,0 +1,9 @@
+; NVC_MFC_AxPic.def : Declares the module parameters.
+
+LIBRARY      "NVC_MFC_AxPic.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

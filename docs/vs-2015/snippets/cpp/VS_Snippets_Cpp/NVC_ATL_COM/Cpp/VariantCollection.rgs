@@ -1,0 +1,27 @@
+HKCR
+{
+	NVC_ATL_COM.VariantCollection.1 = s 'VariantCollection Class'
+	{
+		CLSID = s '{CFEBC2FF-23DC-4C9B-B70D-AA4602697DE7}'
+	}
+	NVC_ATL_COM.VariantCollection = s 'VariantCollection Class'
+	{
+		CLSID = s '{CFEBC2FF-23DC-4C9B-B70D-AA4602697DE7}'
+		CurVer = s 'NVC_ATL_COM.VariantCollection.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CFEBC2FF-23DC-4C9B-B70D-AA4602697DE7} = s 'VariantCollection Class'
+		{
+			ProgID = s 'NVC_ATL_COM.VariantCollection.1'
+			VersionIndependentProgID = s 'NVC_ATL_COM.VariantCollection'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{DB9F12A2-CECC-4159-B5D8-B5BA358AAFA9}'
+		}
+	}
+}
