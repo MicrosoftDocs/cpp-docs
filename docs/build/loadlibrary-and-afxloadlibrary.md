@@ -35,7 +35,7 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 
 ## What do you want to know more about?
 
-- [The search path that is used by Windows to locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)
+- [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)
 
 - [FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
 
