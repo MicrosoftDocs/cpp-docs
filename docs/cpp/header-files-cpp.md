@@ -33,7 +33,6 @@ The following example shows a common way to declare a class and then use it in a
 
 ```cpp
 // my_class.h
-#pragma once // include guard
 namespace N
 {
     class my_class
@@ -83,11 +82,28 @@ After the compiler finishes compiling each .cpp file into .obj files, it passes 
 
 ## Include guards
 
-Typically, header files have an *include guard* such as #pragma once to ensure that they are not inserted multiple times into a single .cpp file. 
+Typically, header files have an *include guard* or a **#pragma once** directive to ensure that they are not inserted multiple times into a single .cpp file. 
+
+// my_class.h
+#ifndef MY_CLASS_H // include guard
+#define MY_CLASS_H
+
+
+namespace N
+{
+    class my_class
+    {
+    public:
+        void do_something();
+    };
+
+}
+
+#endif /* MY_CLASS_H */
 
 ## What to put in a header file
 
-Because a header file might potentially be included by multiple files, it cannot contain some kinds of definitions because that could produce multiple definitions of the same name. The following are not allowed, or are considered very bad practice:
+Because a header file might potentially be included by multiple files, it cannot contain definitions that might produce multiple definitions of the same name. The following are not allowed, or are considered very bad practice:
 
 - built-in type definitions at namespace or global scope
 - non-inline function definitions 
@@ -96,14 +112,14 @@ Because a header file might potentially be included by multiple files, it cannot
 - unnamed namespaces
 - using directives
 
-Use of the **using** directive will not necessarily an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header. 
+Use of the **using** directive will not necessarily cause an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header. 
 
 ## Sample header file
 
 The following example shows the various kinds of declarations and definitions that are allowed in a header file:
 
 ```cpp
-#pragma once    //include guard
+#pragma once 
 #include <vector> // #include directive
 #include <string>
 
@@ -128,8 +144,6 @@ namespace N  // namespace declaration
     using vstr = std::vector<int>;  // type alias
     extern double d; // extern variable
 
-    // int i; // ERROR! 
-
 #define LOG   // macro definition
 
 #ifdef LOG   // conditional compilation directive
@@ -138,7 +152,7 @@ namespace N  // namespace declaration
 
 
     class my_class   // regular class definition, 
-    {               // but no non-inline function definitions
+    {                // but no non-inline function definitions
 
         friend class other_class;
     public:

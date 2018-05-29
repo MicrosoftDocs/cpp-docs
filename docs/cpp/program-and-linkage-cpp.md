@@ -25,14 +25,14 @@ These are definitions:
 
 ```cpp
 int i{42};
-int f(int x){ return x * i; }|
+int f(int x){ return x * i; }
 ```
 
-A program consists of one or more translation units. A translation unit consists of an implementation file (.cpp, .cxx, etc.) and all the headers (.h, .hpp, etc.)that it includes directly or indirectly. Each translation unit is compiled independently by the compiler, after which the linker merges the compiled translation units into a single program. Violations of the ODR rule typically show up as linker errors when the same name has two different definitions in different .cpp files.
+A program consists of one or more translation units. A translation unit consists of an implementation file (.cpp, .cxx, etc.) and all the headers (.h, .hpp, etc.) that it includes directly or indirectly. Each translation unit is compiled independently by the compiler, after which the linker merges the compiled translation units into a single program. Violations of the ODR rule typically show up as linker errors when the same name has two different definitions in different translation units.
 
-In general, the best way to make a variable visible across multiple files is to put it in a header file (.h, .hpp, etc) and add an #include directive in every .cpp file that requires the declaration. By adding *include guards* around the header contents, you ensure that the names it declares are only defined once.
+In general, the best way to make a variable visible across multiple files is to put it in a header file and add an #include directive in every .cpp file that requires the declaration. By adding *include guards* around the header contents, you ensure that the names it declares are only defined once.
 
-However, in some cases it may be necessary to declare a global variable or class in a .cpp file. In those cases, the concept linkage comes into play because you need a way to tell the compiler and linker whether the name of the object applies just to the one file, or to all files.
+However, in some cases it may be necessary to declare a global variable or class in a .cpp file. In those cases, you need a way to tell the compiler and linker whether the name of the object applies just to the one file, or to all files.
 
 ## Linkage vs. scope
 
@@ -40,7 +40,7 @@ The concept of *linkage* refers to the visibility of global symbols (such as var
 
 ## External vs. internal linkage
 
-Non-const global variables and free functions by default have external linkage; they are visible from any translation unit in the program. Therefore, no other global object (variable, class definition, etc) can have that name. But when a name has internal linkage, the same name may exist in another translation unit.
+Non-const global variables and free functions by default have external linkage; they are visible from any translation unit in the program. Therefore, no other global object (variable, class definition, etc.) can have that name. But when a name has internal linkage, the same name may exist in another translation unit.
 
 You can force a global name to have internal linkage by explicitly declaring it as **static**. This limits their visiblity to the same translation unit in which they are declared. Note that in this context, **static** means something different than when applied to local variables.
 
@@ -57,8 +57,6 @@ extern const int value = 42;
 ```
 
 See [extern](extern-cpp.md) for more information.
-
-
 
 ## See Also
 
