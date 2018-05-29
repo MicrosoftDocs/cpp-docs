@@ -1,7 +1,7 @@
 ---
 title: "_open_osfhandle | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/12/2017"
+ms.date: "05/29/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 apiname: ["_open_osfhandle"]
@@ -42,21 +42,16 @@ If successful, **_open_osfhandle** returns a C run-time file descriptor. Otherwi
 
 ## Remarks
 
-The **_open_osfhandle** function allocates a C run-time file descriptor and associates it with the operating-system file handle specified by *osfhandle*. The *flags* argument is an integer expression formed from one or more of the manifest constants defined in Fcntl.h. When two or more manifest constants are used to form the *flags* argument, the constants are combined with the bitwise-OR operator ( **&#124;** ).
+The **_open_osfhandle** function allocates a C run-time file descriptor and associates it with the operating-system file handle specified by *osfhandle*. To avoid a compiler warning, cast the *osfhandle* argument from **HANDLE** to **intptr_t**. The *flags* argument is an integer expression formed from one or more of the manifest constants defined in \<fcntl.h>. When two or more manifest constants are used to form the *flags* argument, the constants are combined with the bitwise-OR operator ( **&#124;** ).
 
 Fcntl.h defines the following manifest constants:
 
-**\_O\_APPEND**
-Positions a file pointer to the end of the file before every write operation.
-
-**\_O\_RDONLY**
-Opens the file for reading only.
-
-**\_O\_TEXT**
-Opens the file in text (translated) mode.
-
-**\_O\_WTEXT**
-Opens the file in Unicode (translated UTF-16) mode.
+|||
+|-|-|
+**\_O\_APPEND**|Positions a file pointer to the end of the file before every write operation.
+**\_O\_RDONLY**|Opens the file for reading only.
+**\_O\_TEXT**|Opens the file in text (translated) mode.
+**\_O\_WTEXT**|Opens the file in Unicode (translated UTF-16) mode.
 
 To close a file opened with **_open_osfhandle**, call [\_close](close.md). The underlying OS file handle is also closed by a call to **_close**, so it is not necessary to call the Win32 function **CloseHandle** on the original handle. If the file descriptor is owned by a **FILE &#42;** stream, then calling [fclose](fclose-fcloseall.md) on that **FILE &#42;** stream also closes both the file descriptor and the underlying handle. In this case, do not call **_close** on the file descriptor.
 
