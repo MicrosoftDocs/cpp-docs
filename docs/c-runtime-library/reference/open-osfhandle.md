@@ -44,7 +44,7 @@ If successful, **_open_osfhandle** returns a C run-time file descriptor. Otherwi
 
 The **_open_osfhandle** function allocates a C run-time file descriptor and associates it with the operating-system file handle specified by *osfhandle*. To avoid a compiler warning, cast the *osfhandle* argument from **HANDLE** to **intptr_t**. The *flags* argument is an integer expression formed from one or more of the manifest constants defined in \<fcntl.h>. When two or more manifest constants are used to form the *flags* argument, the constants are combined with the bitwise-OR operator ( **&#124;** ).
 
-Fcntl.h defines the following manifest constants:
+These manifest constants are defined in \<fcntl.h>:
 
 |||
 |-|-|
@@ -53,7 +53,7 @@ Fcntl.h defines the following manifest constants:
 **\_O\_TEXT**|Opens the file in text (translated) mode.
 **\_O\_WTEXT**|Opens the file in Unicode (translated UTF-16) mode.
 
-To close a file opened with **_open_osfhandle**, call [\_close](close.md). The underlying OS file handle is also closed by a call to **_close**, so it is not necessary to call the Win32 function **CloseHandle** on the original handle. If the file descriptor is owned by a **FILE &#42;** stream, then calling [fclose](fclose-fcloseall.md) on that **FILE &#42;** stream also closes both the file descriptor and the underlying handle. In this case, do not call **_close** on the file descriptor.
+The **_open_osfhandle** call transfers ownership of the Win32 file handle to the file descriptor. To close a file opened with **_open_osfhandle**, call [\_close](close.md). The underlying OS file handle is also closed by a call to **_close**, so it is not necessary to call the Win32 function **CloseHandle** on the original handle. If the file descriptor is owned by a **FILE &#42;** stream, then calling [fclose](fclose-fcloseall.md) on that **FILE &#42;** stream also closes both the file descriptor and the underlying handle. In this case, do not call **_close** on the file descriptor.
 
 ## Requirements
 
