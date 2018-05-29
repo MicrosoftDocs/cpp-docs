@@ -2,18 +2,13 @@
 title: "Automation Clients | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["clients, Automation", "Automation clients", "type libraries, Automation clients", "clients"]
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Automation Clients

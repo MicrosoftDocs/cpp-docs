@@ -2,19 +2,14 @@
 title: "ActivationFactory Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ActivationFactory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActivationFactory class"]
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory Class

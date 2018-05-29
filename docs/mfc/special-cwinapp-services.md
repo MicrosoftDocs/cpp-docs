@@ -2,19 +2,14 @@
 title: "Special CWinApp Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["LoadStdProfileSettings", "EnableShellOpen"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["files [MFC], most recently used", "DragAcceptFiles method [MFC]", "MRU lists", "GDI+, initializing for MFC", "GDI+, suppressing background thread [MFC]", "CWinApp class [MFC], shell registration", "application objects [MFC], services", "CWinApp class [MFC], initializing GDI+", "MFC, shell registration", "CWinApp class [MFC], File Manager drag and drop", "LoadStdProfileSettings method [MFC]", "MFC, most-recently-used file list", "RegisterShellFileTypes method [MFC]", "drag and drop [MFC], files", "registering file types", "Shell, registering file types", "services, provided by CWinApp", "CWinApp class [MFC], recently used documents", "CWinApp class [MFC], services", "files [MFC], drag and drop", "EnableShellOpen method [MFC]", "registry [MFC], most recently used files", "MFC, file operations", "registration [MFC], shell"]
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Special CWinApp Services

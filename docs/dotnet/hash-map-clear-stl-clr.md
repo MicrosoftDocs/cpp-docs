@@ -2,19 +2,14 @@
 title: "hash_map::clear (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_map::clear"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["clear member [STL/CLR]"]
 ms.assetid: a2782336-f130-4e27-923e-7dd43c542d30
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::clear (STL/CLR)

@@ -2,19 +2,14 @@
 title: "Makefile Project Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Makefile projects, Makefile Project Wizard", "MakeFile Project Wizard [Visual Studio]"]
 ms.assetid: 38219802-320d-4c48-a118-4792de8f3b2d
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Makefile Project Wizard

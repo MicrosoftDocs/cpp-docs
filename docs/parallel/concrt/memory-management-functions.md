@@ -2,18 +2,13 @@
 title: "Memory Management Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["memory management functions [Concurrency Runtime]"]
 ms.assetid: d303dd2a-dfa4-4d90-a508-f6aa290bb9ea
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Memory Management Functions

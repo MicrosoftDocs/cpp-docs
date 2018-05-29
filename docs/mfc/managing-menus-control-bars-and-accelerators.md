@@ -2,18 +2,13 @@
 title: "Managing Menus, Control Bars, and Accelerators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MDI [MFC], frame windows", "control bars [MFC], updating in frame windows", "menus [MFC], updating as context changes", "user interface objects [MFC], updating", "accelerator tables [MFC]", "sharing menus [MFC]", "updating user-interface objects [MFC]", "frame windows [MFC], updating", "status bars [MFC], updating"]
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Managing Menus, Control Bars, and Accelerators

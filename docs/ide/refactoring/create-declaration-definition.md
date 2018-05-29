@@ -2,15 +2,11 @@
 title: "Create Declaration / Definition | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 

@@ -2,19 +2,14 @@
 title: "How to: Open a Resource Script File Outside of a Project (Standalone) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [Visual Studio], viewing", "rc files, viewing resources", ".rc files, viewing resources", "resource script files, viewing resources"]
 ms.assetid: bc350c60-178d-4c5d-9a7e-6576b0c936e4
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Open a Resource Script File Outside of a Project (Standalone)

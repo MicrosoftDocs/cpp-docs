@@ -2,19 +2,14 @@
 title: "Reflected Window Message IDs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["OCM_CTLCOLORBTN", "OCM_PARENTNOTIFY", "OCM_VKEYTOITEM", "OCM_CTLCOLORSTATIC", "OCM_HSCROLL", "OCM_CHARTOITEM", "OCM_DRAWITEM", "OCM_MEASUREITEM", "OCM_COMPAREITEM", "OCM_COMMAND", "OCM_NOTIFY", "OCM_CTLCOLORMSGBOX", "OCM_DELETEITEM", "OCM_CTLCOLORLISTBOX", "OCM_CTLCOLORDLG", "OCM_CTLCOLOREDIT", "OCM_CTLCOLORSCROLLBAR", "OCM_VSCROLL", "OCM_CTLCOLOR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OCM_HSCROLL message [MFC]", "OCM_PARENTNOTIFY message [MFC]", "messages, reflected", "reflected messages, window message Ids", "OCM_CTLCOLORDLG message [MFC]", "OCM_COMMAND message [MFC]", "OCM_CTLCOLORMSGBOX message [MFC]", "OCM_COMPAREITEM message [MFC]", "OCM_DRAWITEM message [MFC]", "OCM_VSCROLL message [MFC]", "OCM_CTLCOLOREDIT message [MFC]", "OCM_VKEYTOITEM message [MFC]", "OCM_CHARTOITEM message [MFC]", "OCM_CTLCOLORBTN message [MFC]", "OCM_CTLCOLORSTATIC message [MFC]", "OCM_MEASUREITEM message [MFC]", "OCM_CTLCOLOR message [MFC]", "OCM_CTLCOLORSCROLLBAR message [MFC]", "OCM_ messages", "OCM_DELETEITEM message [MFC]", "OCM_CTLCOLORLISTBOX message [MFC]", "OCM_NOTIFY message [MFC]", "reflected messages"]
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Reflected Window Message IDs

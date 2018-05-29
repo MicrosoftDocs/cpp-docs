@@ -2,17 +2,12 @@
 title: "Graphics (C++ AMP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-amp"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Graphics (C++ AMP)
@@ -121,12 +116,12 @@ texture<int_4, 2> aTexture(768, 1024, texels.begin(), texels.end());
  You can also declare and initialize a `texture` object by using a constructor overload that takes a pointer to the source data, the size of source data in bytes, and the bits per scalar element.  
   
 ```cpp  
-void createTextureWithBPC() { *// Create the source data.  
+void createTextureWithBPC() { // Create the source data.  
     float source[1024* 2];   
     for (int i = 0; i <1024* 2; i++) {  
     source[i] = (float)i;  
  }  
- *// Initialize the texture by using the size of source in bytes *// and bits per scalar element.  
+ // Initialize the texture by using the size of source in bytes // and bits per scalar element.  
     texture<float_2, 1> floatTexture(1024, source, (unsigned int)sizeof(source), 32U);
 
 }  
@@ -136,11 +131,11 @@ void createTextureWithBPC() { *// Create the source data.
   
  There are limits on the size of each dimension of the `texture` object, as shown in the following table. A run-time error is generated if you exceed the limits.  
   
-|Texture|Size limitation|  
+|Texture|Size limitation per dimension|  
 |-------------|---------------------|  
 |texture\<T,1>|16384|  
 |texture\<T,2>|16384|  
-|texture\<T,2>|2048|  
+|texture\<T,3>|2048|  
   
 ### Reading from Texture Objects  
  You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#operator_at), [texture::operator() Operator](reference/texture-class.md#operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
@@ -164,10 +159,10 @@ void readTexture() {
  
     const texture<int_2, 2> tex9(16, 32, src.begin(), src.end());
 
-    parallel_for_each(tex9.extent, [=, &tex9] (index<2> idx) restrict(amp) { *// Use the subscript operator.        
-    arr[idx].x += tex9[idx].x; *// Use the function () operator.        
-    arr[idx].x += tex9(idx).x; *// Use the get method.  
-    arr[idx].y += tex9.get(idx).y; *// Use the function () operator.    
+    parallel_for_each(tex9.extent, [=, &tex9] (index<2> idx) restrict(amp) { // Use the subscript operator.        
+    arr[idx].x += tex9[idx].x; // Use the function () operator.        
+    arr[idx].x += tex9(idx).x; // Use the get method.  
+    arr[idx].y += tex9.get(idx).y; // Use the function () operator.    
     arr[idx].y += tex9(idx[0], idx[1]).y;   
  });
 
@@ -181,7 +176,7 @@ void readTexture() {
  The following code example demonstrates how to store texture channels in a short vector, and then access the individual scalar elements as properties of the short vector.  
   
 ```cpp  
-void UseBitsPerScalarElement() { *// Create the image data. *// Each unsigned int (32-bit) represents four 8-bit scalar elements(r,g,b,a values).  
+void UseBitsPerScalarElement() { // Create the image data. // Each unsigned int (32-bit) represents four 8-bit scalar elements(r,g,b,a values).  
     const int image_height = 16;  
     const int image_width = 16;  
     std::vector<unsigned int> image(image_height* image_width);
@@ -189,13 +184,13 @@ void UseBitsPerScalarElement() { *// Create the image data. *// Each unsigned in
  
     extent<2> image_extent(image_height, image_width);
 
- *// By using uint_4 and 8 bits per channel, each 8-bit channel in the data source is *// stored in one 32-bit component of a uint_4.  
+ // By using uint_4 and 8 bits per channel, each 8-bit channel in the data source is // stored in one 32-bit component of a uint_4.  
     texture<uint_4, 2> image_texture(image_extent, image.data(), image_extent.size()* 4U,  8U);
 
- *// Use can access the RGBA values of the source data by using swizzling expressions of the uint_4.  
+ // Use can access the RGBA values of the source data by using swizzling expressions of the uint_4.  
     parallel_for_each(image_extent, 
  [&image_texture](index<2> idx) restrict(amp)   
- { *// 4 bytes are automatically extracted when reading.  
+ { // 4 bytes are automatically extracted when reading.  
     uint_4 color = image_texture[idx];   
     unsigned int r = color.r;   
     unsigned int g = color.g;   
@@ -250,7 +245,7 @@ void writeTexture() {
  You can copy between texture objects by using the [copy](reference/concurrency-namespace-functions-amp.md#copy) function or the [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async) function, as shown in the following code example.  
   
 ```cpp  
-void copyHostArrayToTexture() { *// Copy from source array to texture object by using the copy function.  
+void copyHostArrayToTexture() { // Copy from source array to texture object by using the copy function.  
     float floatSource[1024* 2];   
     for (int i = 0; i <1024* 2; i++) {  
     floatSource[i] = (float)i;  
@@ -259,7 +254,7 @@ void copyHostArrayToTexture() { *// Copy from source array to texture object by 
 
     copy(floatSource, (unsigned int)sizeof(floatSource), floatTexture);
 
- *// Copy from source array to texture object by using the copy function.  
+ // Copy from source array to texture object by using the copy function.  
     char charSource[16* 16];   
     for (int i = 0; i <16* 16; i++) {  
     charSource[i] = (char)i;  
@@ -267,7 +262,7 @@ void copyHostArrayToTexture() { *// Copy from source array to texture object by 
     texture<int, 2> charTexture(16, 16, 8U);
 
     copy(charSource, (unsigned int)sizeof(charSource), charTexture);
-*// Copy from texture object to source array by using the copy function.  
+// Copy from texture object to source array by using the copy function.  
     copy(charTexture, charSource, (unsigned int)sizeof(charSource));
 
 }  

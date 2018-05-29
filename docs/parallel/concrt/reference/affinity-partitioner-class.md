@@ -2,19 +2,14 @@
 title: "affinity_partitioner Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["affinity_partitioner", "PPL/concurrency::affinity_partitioner", "PPL/concurrency::affinity_partitioner::affinity_partitioner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["affinity_partitioner class"]
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # affinity_partitioner Class

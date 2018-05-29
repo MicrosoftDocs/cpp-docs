@@ -3,15 +3,10 @@ title: "Casting (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Casting (C++/CX)

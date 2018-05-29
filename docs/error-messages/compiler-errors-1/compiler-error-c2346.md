@@ -2,19 +2,14 @@
 title: "Compiler Error C2346 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2346"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2346"]
 ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2346

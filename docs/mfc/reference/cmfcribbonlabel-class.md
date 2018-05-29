@@ -2,19 +2,14 @@
 title: "CMFCRibbonLabel Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonLabel [MFC], CMFCRibbonLabel", "CMFCRibbonLabel [MFC], SetACCData"]
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonLabel Class

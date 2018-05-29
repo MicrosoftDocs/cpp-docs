@@ -2,19 +2,14 @@
 title: "FreeLibrary and AfxFreeLibrary | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["FreeLibrary", "AfxFreeLibrary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["extension DLLs [C++], unloading", "AfxFreeLibrary method", "unloading DLLs", "FreeLibrary method", "DLLs [C++], linking", "explicit linking [C++]", "DLLs [C++], unloading"]
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # FreeLibrary and AfxFreeLibrary

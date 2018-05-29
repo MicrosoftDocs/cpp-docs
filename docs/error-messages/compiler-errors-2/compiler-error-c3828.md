@@ -2,19 +2,14 @@
 title: "Compiler Error C3828 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3828"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3828"]
 ms.assetid: 8d9cee75-9504-4bc8-88b6-2413618a3f45
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3828

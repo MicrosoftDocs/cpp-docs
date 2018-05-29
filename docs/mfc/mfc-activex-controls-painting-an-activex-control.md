@@ -2,18 +2,13 @@
 title: "MFC ActiveX Controls: Painting an ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], painting", "MFC ActiveX controls [MFC], optimizing"]
 ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Painting an ActiveX Control

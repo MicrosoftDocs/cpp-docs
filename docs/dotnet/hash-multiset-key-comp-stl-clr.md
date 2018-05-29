@@ -2,19 +2,14 @@
 title: "hash_multiset::key_comp (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_multiset::key_comp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["key_comp member [STL/CLR]"]
 ms.assetid: b9653dd2-20f3-4ef3-875f-265749839ba6
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::key_comp (STL/CLR)

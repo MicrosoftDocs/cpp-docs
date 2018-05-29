@@ -2,19 +2,14 @@
 title: "collection_adapter::key_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::collection_adapter::key_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["key_type member [STL/CLR]"]
 ms.assetid: 71ed32b0-af5b-4bac-ae09-2f5d08f0a79b
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # collection_adapter::key_type (STL/CLR)

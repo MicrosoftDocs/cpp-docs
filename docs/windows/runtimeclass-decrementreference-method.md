@@ -2,18 +2,13 @@
 title: "RuntimeClass::DecrementReference Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::DecrementReference"]
 dev_langs: ["C++"]
 ms.assetid: f5ecfeaa-2865-455b-9208-94a0685fd2c6
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::DecrementReference Method

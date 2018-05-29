@@ -1,27 +1,22 @@
 ---
 title: "How to: Marshal Structures Using PInvoke | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data marshaling [C++], structures", "platform invoke [C++], structures", "interop [C++], structures", "marshaling [C++], structures"]
 ms.assetid: 35997e6f-9251-4af3-8c6e-0712d64d6a5d
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Structures Using PInvoke
-This document explains how native functions that accept C-style strings can be called from managed functions that provide an instance of <xref:System.String> by using P/Invoke. Although we recommend that you use the C++ Interop features instead of P/Invoke because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement, if the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option. Otherwise, see the following documents:  
+This document explains how native functions that accept C-style structs can be called from managed functions by using P/Invoke. Although we recommend that you use the C++ Interop features instead of P/Invoke because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement, if the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option. Otherwise, see the following documents:  
   
--   [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
+-   [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
   
--   [How to: Marshal Structures Using PInvoke](../dotnet/how-to-marshal-structures-using-pinvoke.md)  
+-   [How to: Marshal Strings Using PInvoke](../dotnet/how-to-marshal-strings-using-pinvoke.md)
   
  By default, native and managed structures are laid out differently in memory, so successfully passing structures across the managed/unmanaged boundary requires extra steps to preserve data integrity.  
   

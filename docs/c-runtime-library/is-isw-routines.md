@@ -2,21 +2,16 @@
 title: "is, isw Routines | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apilocation: ["msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll", "msvcr120.dll"]
 apitype: "DLLExport"
 f1_keywords: ["isw", "is"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is routines", "isw routines"]
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # is, isw Routines

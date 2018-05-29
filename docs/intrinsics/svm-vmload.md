@@ -2,19 +2,14 @@
 title: "__svm_vmload | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__svm_vmload"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_vmload intrinsic", "VMLOAD instruction"]
 ms.assetid: b46a5592-db76-4ffc-8694-2f3494e28bed
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __svm_vmload

@@ -2,19 +2,14 @@
 title: "COLUMN_ENTRY_PS_LENGTH_STATUS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_PS_LENGTH_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_PS_LENGTH_STATUS macro"]
 ms.assetid: 04291671-329d-4974-b04e-36ef3f037787
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_PS_LENGTH_STATUS

@@ -2,19 +2,14 @@
 title: "Initializing the Parts of a CStatusBarCtrl Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], simple mode", "status bars [MFC], declaring parts of", "simple status bars [MFC]", "status bars [MFC], icons", "status bars [MFC], simple mode", "icons, using in status bars", "CStatusBarCtrl class [MFC], declaring parts of"]
 ms.assetid: 60e8f285-d2d8-424a-a6ea-2fc548370303
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Initializing the Parts of a CStatusBarCtrl Object

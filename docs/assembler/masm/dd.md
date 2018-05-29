@@ -2,19 +2,14 @@
 title: "DD | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["dd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DD directive"]
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # DD

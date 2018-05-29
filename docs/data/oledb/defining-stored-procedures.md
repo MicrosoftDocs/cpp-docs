@@ -2,18 +2,13 @@
 title: "Defining Stored Procedures | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, syntax", "OLE DB, stored procedures", "stored procedures, defining", "stored procedures, OLE DB"]
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Defining Stored Procedures

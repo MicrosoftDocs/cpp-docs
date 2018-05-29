@@ -2,19 +2,14 @@
 title: "Command-Line Error D8022 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["D8022"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["D8022"]
 ms.assetid: eb18ec34-d32d-4636-a852-abf2063e886b
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8022

@@ -2,18 +2,13 @@
 title: "Deprecated ANSI APIs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, ANSI deprecated methods"]
 ms.assetid: c7c5a6fd-95e4-4bee-b3d5-d3826c30947d
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Deprecated ANSI APIs

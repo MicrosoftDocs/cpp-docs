@@ -2,18 +2,13 @@
 title: "Moving a Toolbar Button | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar buttons (in Toolbar editor), moving", "Toolbar editor, moving buttons"]
 ms.assetid: 7625f2ce-8ac4-4428-a3f8-a95bfdf6f95f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Moving a Toolbar Button

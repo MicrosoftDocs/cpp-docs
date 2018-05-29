@@ -2,19 +2,14 @@
 title: "Accelerator Keys (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.bitmap", "vc.editors.icon"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator keys", "Image editor [C++], accelerator keys"]
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Accelerator Keys (Image Editor for Icons)

@@ -2,19 +2,14 @@
 title: "__stosd | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["__stosd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stosd instruction", "rep stosd instruction", "__stosd intrinsic"]
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __stosd

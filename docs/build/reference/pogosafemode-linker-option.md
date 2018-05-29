@@ -8,7 +8,6 @@ dev_langs: ["C++"]
 f1_keywords: ["POGOSAFEMODE"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /POGOSAFEMODE (Run PGO in thread safe mode)

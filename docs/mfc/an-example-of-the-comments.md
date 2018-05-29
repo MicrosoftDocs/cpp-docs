@@ -2,18 +2,13 @@
 title: "An Example of the Comments | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC source files, comment example", "code comments, MFC", "comments, MFC", "examples [MFC], code comments"]
 ms.assetid: eb8ddea2-74de-4d5c-93d6-596f7c5e58a7
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # An Example of the Comments

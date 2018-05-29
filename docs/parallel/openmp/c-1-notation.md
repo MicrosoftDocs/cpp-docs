@@ -2,17 +2,12 @@
 title: "C.1 Notation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: a23b2631-8096-4bf3-ac23-ba4f4bd7a52a
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C.1 Notation

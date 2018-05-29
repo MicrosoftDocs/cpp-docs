@@ -2,19 +2,14 @@
 title: "COlePropertiesDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog::COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog::DoModal", "AFXODLGS/COlePropertiesDialog::OnApplyScale", "AFXODLGS/COlePropertiesDialog::m_gp", "AFXODLGS/COlePropertiesDialog::m_lp", "AFXODLGS/COlePropertiesDialog::m_op", "AFXODLGS/COlePropertiesDialog::m_psh", "AFXODLGS/COlePropertiesDialog::m_vp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COlePropertiesDialog [MFC], COlePropertiesDialog", "COlePropertiesDialog [MFC], DoModal", "COlePropertiesDialog [MFC], OnApplyScale", "COlePropertiesDialog [MFC], m_gp", "COlePropertiesDialog [MFC], m_lp", "COlePropertiesDialog [MFC], m_op", "COlePropertiesDialog [MFC], m_psh", "COlePropertiesDialog [MFC], m_vp"]
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COlePropertiesDialog Class

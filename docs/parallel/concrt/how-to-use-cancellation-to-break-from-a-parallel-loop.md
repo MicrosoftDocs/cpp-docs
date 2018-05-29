@@ -2,18 +2,13 @@
 title: "How to: Use Cancellation to Break from a Parallel Loop | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["writing a parallel search algorithm [Concurrency Runtime]", "parallel search algorithm, writing [Concurrency Runtime]"]
 ms.assetid: 421cd2de-f058-465f-b890-dd8fcc0df273
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use Cancellation to Break from a Parallel Loop

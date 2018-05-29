@@ -2,19 +2,14 @@
 title: "-SWAPRUN | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/swaprun"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/SWAPRUN editbin option", "-SWAPRUN editbin option", "SWAPRUN editbin option"]
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /SWAPRUN

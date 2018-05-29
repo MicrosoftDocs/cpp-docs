@@ -2,19 +2,14 @@
 title: "Application Settings, Makefile Project Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.appset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Makefile Project Wizard, application settings"]
 ms.assetid: e0cbce59-5984-4f68-8a1d-f7fb2007c9b4
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Application Settings, Makefile Project Wizard

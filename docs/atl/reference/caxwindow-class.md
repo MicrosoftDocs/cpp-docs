@@ -2,19 +2,14 @@
 title: "CAxWindow Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CAxWindow", "ATLWIN/ATL::CAxWindow", "ATLWIN/ATL::AttachControl", "ATLWIN/ATL::CreateControl", "ATLWIN/ATL::CreateControlEx", "ATLWIN/ATL::GetWndClassName", "ATLWIN/ATL::QueryControl", "ATLWIN/ATL::QueryHost", "ATLWIN/ATL::SetExternalDispatch", "ATLWIN/ATL::SetExternalUIHandler"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAxWindow class", "ATL, hosting ActiveX controls"]
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAxWindow Class

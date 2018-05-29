@@ -2,19 +2,14 @@
 title: "Creating Desktop Projects By Using Application Wizards | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.mfcexe.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["platforms [C++], project creation", "Visual C++ projects, application wizards", "Visual C++ projects, creating", "programs [C++], beginning with wizards", "applications [C++], using wizards"]
 ms.assetid: 090c6423-deb8-4a00-817d-337eb5644544
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating Desktop Projects By Using Application Wizards

@@ -9,7 +9,6 @@ helpviewer_keywords: ["pgosweep program", "profile-guided optimizations, pgoswee
 ms.assetid: f39dd3b7-1cd9-4c3b-8e8b-fb794744b757
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # pgosweep

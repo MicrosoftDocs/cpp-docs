@@ -2,17 +2,12 @@
 title: "OpenMP C and C++ Application Program Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OpenMP C and C++ Application Program Interface

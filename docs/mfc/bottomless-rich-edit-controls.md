@@ -2,18 +2,13 @@
 title: "Bottomless Rich Edit Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["bottomless rich edit controls", "rich edit controls [MFC], bottomless", "CRichEditCtrl class [MFC], bottomless"]
 ms.assetid: 2877dd32-1e9a-4fd1-98c0-66dcbbeef1de
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Bottomless Rich Edit Controls

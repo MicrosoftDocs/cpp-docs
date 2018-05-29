@@ -2,19 +2,14 @@
 title: "algorithm (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["<cliext/algorithm>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["algorithm functions [STL/CLR]", "<algorithm> header [STL/CLR]", "<cliext/algorithm> header [STL/CLR]"]
 ms.assetid: ee2718dc-a98d-40b8-8341-593fe7d2ac15
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # algorithm (STL/CLR)

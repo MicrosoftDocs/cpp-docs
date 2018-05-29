@@ -2,16 +2,12 @@
 title: "Compiler Warnings by compiler version | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/31/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["devlang-cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "error-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings by compiler version

@@ -3,18 +3,13 @@ title: "Platform::Details::HeapEntryHandler Delegate | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::HeapEntryHandler"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::HeapEntryHandler Delegate"]
 ms.assetid: 97ba4e47-ac0f-47c6-a93c-67a21c0a16d3
-caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::HeapEntryHandler Delegate

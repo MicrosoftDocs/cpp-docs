@@ -2,19 +2,14 @@
 title: "stack::generic_value (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::stack::generic_value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["generic_value member [STL/CLR]"]
 ms.assetid: f918f5e6-5cb6-480e-8548-13e15026ffde
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::generic_value (STL/CLR)

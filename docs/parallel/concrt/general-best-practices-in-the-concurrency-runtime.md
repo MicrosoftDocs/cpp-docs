@@ -2,18 +2,13 @@
 title: "General Best Practices in the Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, general best practices"]
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # General Best Practices in the Concurrency Runtime

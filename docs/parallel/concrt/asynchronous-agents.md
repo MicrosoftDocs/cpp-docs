@@ -2,18 +2,13 @@
 title: "Asynchronous Agents | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["asynchronous agents", "agents [Concurrency Runtime]"]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Asynchronous Agents

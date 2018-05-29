@@ -3,14 +3,13 @@ title: "/Zc:wchar_t (wchar_t Is Native Type) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/01/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.TreatWChar_tAsBuiltInType", "VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType", "/Zc:wchar_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "wchar_t type", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Zc:wchar_t (wchar_t Is Native Type)

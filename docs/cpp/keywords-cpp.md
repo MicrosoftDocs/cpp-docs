@@ -1,19 +1,14 @@
 ---
 title: "Keywords (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, keywords", "keywords [C++]", "__identifer keyword [C++], naming", "Microsoft-specific keywords", "__identifer keyword [C++]"]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Keywords (C++)

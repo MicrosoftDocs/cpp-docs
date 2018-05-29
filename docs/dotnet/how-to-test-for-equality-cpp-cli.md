@@ -2,18 +2,13 @@
 title: "How to: Test for Equality (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["equality, testing for"]
 ms.assetid: 9115e298-9f75-452d-bdfb-6eeb0fa0b3c6
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Test for Equality (C++/CLI)

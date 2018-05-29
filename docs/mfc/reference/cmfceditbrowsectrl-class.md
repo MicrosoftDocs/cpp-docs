@@ -2,19 +2,14 @@
 title: "CMFCEditBrowseCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCEditBrowseCtrl [MFC], EnableBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFileBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFolderBrowseButton", "CMFCEditBrowseCtrl [MFC], GetMode", "CMFCEditBrowseCtrl [MFC], OnAfterUpdate", "CMFCEditBrowseCtrl [MFC], OnBrowse", "CMFCEditBrowseCtrl [MFC], OnChangeLayout", "CMFCEditBrowseCtrl [MFC], OnDrawBrowseButton", "CMFCEditBrowseCtrl [MFC], OnIllegalFileName", "CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage"]
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCEditBrowseCtrl Class

@@ -2,17 +2,13 @@
 title: "General Property Page (Project) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCConfiguration.IntermediateDirectory", "VC.Project.VCConfiguration.ConfigurationType", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.VCConfiguration.BuildBrowserInformation", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PlatformToolset", "VC.Project.VCConfiguration.TargetName", "VC.Project.VCConfiguration.", "VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage", "VC.Project.VCConfiguration.ReferencesPath", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCGeneralMakefileSettings.ConfigurationType", "VC.Project.VCConfiguration.OutputDirectory", "VC.Project.VCConfiguration.AppSupport", "VC.Project.VCConfiguration.ToolFiles", "VC.Project.VCConfiguration.useOfATL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Clean Build option", "output files, setting directory", "Unicode, creating C++ build configuration"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # General Property Page (Project)

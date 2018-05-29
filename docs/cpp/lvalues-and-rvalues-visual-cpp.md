@@ -2,18 +2,13 @@
 title: "Value Categories: Lvalues and Rvalues (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/06/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["R-values [C++]", "L-values [C++]"]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Lvalues and Rvalues (Visual C++)

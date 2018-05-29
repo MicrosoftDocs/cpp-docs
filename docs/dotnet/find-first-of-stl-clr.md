@@ -2,19 +2,14 @@
 title: "find_first_of (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::find_first_of"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["find_first_of function [STL/CLR]"]
 ms.assetid: d559bad4-fc12-4201-af49-db0e7eec48e8
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # find_first_of (STL/CLR)

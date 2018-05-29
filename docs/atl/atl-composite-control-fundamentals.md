@@ -2,18 +2,13 @@
 title: "ATL Composite Control Fundamentals | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, about composite controls"]
 ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Composite Control Fundamentals

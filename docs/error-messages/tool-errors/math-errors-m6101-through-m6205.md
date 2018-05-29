@@ -2,17 +2,12 @@
 title: "Math Errors M6101 through M6205 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: bdf3dc2a-d993-4f53-b0f2-9604e4914127
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Math Errors M6101 through M6205

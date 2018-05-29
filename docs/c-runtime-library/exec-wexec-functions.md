@@ -2,21 +2,16 @@
 title: "_exec, _wexec Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apilocation: ["msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr100.dll", "msvcr110.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_texecve", "texecl", "_texeclpe", "texecve", "texecv", "texeclp", "texecle", "exec", "texeclpe", "_texecvp", "_texecl", "_texecle", "wexec", "_exec", "_texeclp", "_texecvpe", "texecvpe", "_texecv", "_wexec"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_texecle function", "_texecv function", "texeclpe function", "texecle function", "_texecl function", "texecv function", "_texeclp function", "_texecve function", "texecl function", "texecve function", "exec function", "texeclp function", "texecvp function", "texecvpe function", "processes, executing new", "_texecvp function", "_texeclpe function", "_wexec functions", "wexec functions", "_exec function", "_texecvpe function"]
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _exec, _wexec Functions
@@ -70,9 +65,9 @@ Each function in this family loads and executes a new process:
   
  The `_execl`, `_execle`, `_execlp`, and `_execlpe` calls are typically used when the number of parameters is known in advance. The parameter `arg0` is usually a pointer to `cmdname`. The parameters `arg1` through `argn` point to the character strings forming the new parameter list. A null pointer must follow `argn` to mark the end of the parameter list.  
   
- The `_execv`, `_execve`, `_execvp`, and `_execvpe` calls are useful when the number of parameters to the new process is variable. Pointers to the parameters are passed as an array, `argv`. The parameter `argv`[0] is usually a pointer to `cmdname`. The parameters `argv`[1] through `argv`[`n`] point to the character strings forming the new parameter list. The parameter `argv`[`n`+1] must be a `NULL` pointer to mark the end of the parameter list.  
+ The `_execv`, `_execve`, `_execvp`, and `_execvpe` calls are useful when the number of parameters to the new process is variable. Pointers to the parameters are passed as an array, `argv`. The parameter `argv`[0] is usually a pointer to `cmdname`. The parameters `argv`[1] through `argv`[`n`] point to the character strings forming the new parameter list. The parameter `argv`[`n`+1] must be a **NULL** pointer to mark the end of the parameter list.  
   
- Files that are open when an `_exec` call is made remain open in the new process. In `_execl`, `_execlp`, `_execv`, and `_execvp` calls, the new process inherits the environment of the calling process. `_execle`, `_execlpe`, `_execve`, and `_execvpe` calls alter the environment for the new process by passing a list of environment settings through the `envp` parameter. `envp` is an array of character pointers, each element of which (except for the final element) points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME`=`value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (Note that `value` is not enclosed in double quotation marks.) The final element of the `envp` array should be `NULL`. When `envp` itself is `NULL`, the new process inherits the environment settings of the calling process.  
+ Files that are open when an `_exec` call is made remain open in the new process. In `_execl`, `_execlp`, `_execv`, and `_execvp` calls, the new process inherits the environment of the calling process. `_execle`, `_execlpe`, `_execve`, and `_execvpe` calls alter the environment for the new process by passing a list of environment settings through the `envp` parameter. `envp` is an array of character pointers, each element of which (except for the final element) points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME`=`value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (Note that `value` is not enclosed in double quotation marks.) The final element of the `envp` array should be **NULL**. When `envp` itself is **NULL**, the new process inherits the environment settings of the calling process.  
   
  A program executed with one of the `_exec` functions is always loaded into memory as if the maximum allocation field in the program's .exe file header were set to the default value of 0xFFFFH.  
   

@@ -2,19 +2,14 @@
 title: "CAccessor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL.CAccessor<T>", "ATL::CAccessor", "CAccessor", "ATL::CAccessor<T>", "ATL.CAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessor class"]
 ms.assetid: b2ba959f-a686-46f3-8837-176248aef748
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessor Class

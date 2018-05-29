@@ -9,7 +9,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["C7 compatible compiler option [C++]", "Debug Information Format compiler option", "ZI compiler option", "-Zi compiler option [C++]", "/ZI compiler option [C++]", "Z7 compiler option [C++]", "debugging [C++], debug information files", "Zi compiler option [C++]", "/Zi compiler option [C++]", "program database compiler option [C++]", "full symbolic debugging information", "/Z7 compiler option [C++]", "line numbers only compiler option [C++]", "cl.exe compiler, debugging options", "-Z7 compiler option [C++]"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Z7, /Zi, /ZI (Debug Information Format)

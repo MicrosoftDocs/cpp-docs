@@ -2,18 +2,13 @@
 title: "Data Access Using ADO.NET (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ADO.NET [C++]", ".NET Framework [C++], data access", "databases [C++], accessing in C++", "data access [C++], ADO.NET", "data [C++], ADO.NET"]
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Data Access Using ADO.NET (C++/CLI)

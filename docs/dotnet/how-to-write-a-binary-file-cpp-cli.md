@@ -2,18 +2,13 @@
 title: "How to: Write a Binary File (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary files, writing in C++", "files [C++], binary"]
 ms.assetid: 35d97ee6-fc7e-4c36-be18-8bbb3b44b3ae
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Write a Binary File (C++/CLI)

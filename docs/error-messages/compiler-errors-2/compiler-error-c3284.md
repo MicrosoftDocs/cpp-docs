@@ -2,19 +2,14 @@
 title: "Compiler Error C3284 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3824"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3284"]
 ms.assetid: e582f316-e9db-4d27-9c70-fdfa737a9d5f
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3284

@@ -2,18 +2,13 @@
 title: "Filename Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["macros, NMAKE", "filename macros in NMAKE", "NMAKE program, filename macros"]
 ms.assetid: 20afd6b3-5b6c-4e33-9d01-309ce98ef9db
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Filename Macros
@@ -23,8 +18,8 @@ Filename macros are predefined as filenames specified in the dependency (not ful
 |-----------|-------------|  
 |**$@**|Current target's full name (path, base name, extension), as currently specified.|  
 |**$$@**|Current target's full name (path, base name, extension), as currently specified. Valid only as a dependent in a dependency.|  
-|**$\***|Current target's path and base name minus file extension.|  
-|**$\*\***|All dependents of the current target.|  
+|**$&#42;**|Current target's path and base name minus file extension.|  
+|**$&#42;&#42;**|All dependents of the current target.|  
 |**$?**|All dependents with a later timestamp than the current target.|  
 |**$<**|Dependent file with a later timestamp than the current target. Valid only in commands in inference rules.|  
   

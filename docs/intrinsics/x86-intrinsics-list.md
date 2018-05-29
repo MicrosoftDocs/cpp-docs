@@ -2,16 +2,12 @@
 title: "x86 Intrinsics List | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/02/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, intrinsics", "intrinsics, x86"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # x86 Intrinsics List

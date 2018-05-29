@@ -2,19 +2,14 @@
 title: "Linker Options | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["link"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-caps.latest.revision: 37
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Options
@@ -59,6 +54,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/DELAY](../../build/reference/delay-delay-load-import-settings.md)|Controls the delayed loading of DLLs.|
 |[/DELAYLOAD](../../build/reference/delayload-delay-load-import.md)|Causes the delayed loading of the specified DLL.|
 |[/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)|Partially signs an assembly.|
+|[/DEPENDENTLOADFLAGS](dependentloadflags.md)|Sets default flags on dependent DLL loads.|
 |[/DLL](../../build/reference/dll-build-a-dll.md)|Builds a DLL.|
 |[/DRIVER](../../build/reference/driver-windows-nt-kernel-mode-driver.md)|Creates a kernel mode driver.|
 |[/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md)|Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature.|
@@ -108,6 +104,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/PDBALTPATH](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)|Uses an alternate location to save a PDB file.|
 |[/PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)|Creates a program database (PDB) file that has no private symbols.|
 |[/PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)|Specifies a .pgd file for profile-guided optimizations.|
+|[/POGOSAFEMODE](../../build/reference/pogosafemode-linker-option.md)|**Obsolete** Creates a thread-safe PGO instrumented build.|
 |[/PROFILE](../../build/reference/profile-performance-tools-profiler.md)|Produces an output file that can be used with the Performance Tools profiler.|
 |[/RELEASE](../../build/reference/release-set-the-checksum.md)|Sets the Checksum in the .exe header.|
 |[/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|Specifies that the image will contain a table of safe exception handlers.|
@@ -119,6 +116,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md)|Specifies the resource ID of the linker-generated type library.|
 |[/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)|Specifies the name of the .tlb file and other MIDL output files.|
 |[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|Creates an application that is designed specifically to run under Terminal Server.|
+|[/USEPROFILE](../../build/reference/useprofile.md)|Uses profile-guided optimization training data to create an optimized image.|
 |[/VERBOSE](../../build/reference/verbose-print-progress-messages.md)|Prints linker progress messages.|
 |[/VERSION](../../build/reference/version-version-information.md)|Assigns a version number.|
 |[/WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|Includes every object file from specified static libraries.|

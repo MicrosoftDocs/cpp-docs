@@ -2,19 +2,14 @@
 title: "Context-Sensitive Keywords  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["internal_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["context-sensitive keywords"]
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Context-Sensitive Keywords  (C++ Component Extensions)

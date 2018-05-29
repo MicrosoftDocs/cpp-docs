@@ -2,17 +2,13 @@
 title: "AgileEventSource Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/22/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::AgileEventSource", "event/Microsoft::WRL::InvokeModeOptions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AgileEventSource class"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AgileEventSource Class

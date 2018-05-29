@@ -2,19 +2,14 @@
 title: "Editing Binary Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary data, editing", "binary data"]
 ms.assetid: 0fd429de-baf1-4871-b5e4-42bf868a3261
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Binary Data

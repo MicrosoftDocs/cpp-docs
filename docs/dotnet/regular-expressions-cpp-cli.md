@@ -2,18 +2,13 @@
 title: "Regular Expressions (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["regular expressions [C++]", ".NET Framework [C++], regular expressions", "regular expressions [C++], about regular expressions"]
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Regular Expressions (C++/CLI)

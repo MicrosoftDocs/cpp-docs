@@ -2,19 +2,14 @@
 title: "Precompiled Header Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["stdafx.h"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdafx.h", "PCH files, file descriptions", ".pch files, file descriptions", "precompiled header files, file descriptions", "stdafx.cpp"]
 ms.assetid: 8228d87a-5609-41f3-9697-b16094c000e5
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Precompiled Header Files

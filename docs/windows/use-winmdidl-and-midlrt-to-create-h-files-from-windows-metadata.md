@@ -2,17 +2,12 @@
 title: "How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 4be8ba11-c223-44ad-9256-7e1edae9a7bc
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata

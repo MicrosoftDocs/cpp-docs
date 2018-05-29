@@ -2,19 +2,14 @@
 title: "hash_multimap::iterator (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_multimap::iterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iterator member [STL/CLR]"]
 ms.assetid: 3395078b-10fd-4c3a-827f-274ba29372d3
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap::iterator (STL/CLR)

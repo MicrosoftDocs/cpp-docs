@@ -2,18 +2,13 @@
 title: "Basic CString Operations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Basic CString Operations

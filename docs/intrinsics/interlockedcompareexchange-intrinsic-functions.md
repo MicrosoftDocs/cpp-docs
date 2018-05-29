@@ -2,19 +2,14 @@
 title: "_InterlockedCompareExchange Intrinsic Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["_InterlockedCompareExchange_HLERelease", "_InterlockedCompareExchange8_nf", "_InterlockedCompareExchange16_acq_cpp", "_InterlockedCompareExchange_acq_cpp", "_InterlockedCompareExchange16_rel_cpp", "_InterlockedCompareExchange64_rel_cpp", "_InterlockedCompareExchange_cpp", "_InterlockedCompareExchange16_cpp", "_InterlockedCompareExchange64_acq_cpp", "_InterlockedCompareExchange_acq", "_InterlockedCompareExchange64_rel", "_InterlockedCompareExchange64_nf", "_InterlockedCompareExchange_rel_cpp", "_InterlockedCompareExchange16_nf", "_InterlockedCompareExchange8", "_InterlockedCompareExchange64_np", "_InterlockedCompareExchange16_rel", "_InterlockedCompareExchange64_acq", "_InterlockedCompareExchange8_rel", "_InterlockedCompareExchange_HLEAcquire", "_InterlockedCompareExchange64_HLERelease", "_InterlockedCompareExchange64_cpp", "_InterlockedCompareExchange_np", "_InterlockedCompareExchange8_acq", "_InterlockedCompareExchange16_acq", "_InterlockedCompareExchange_rel", "_InterlockedCompareExchange64_HLEAcquire", "_InterlockedCompareExchange64", "_InterlockedCompareExchange16", "_InterlockedCompareExchange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedCompareExchange16 intrinsic", "_InterlockedCompareExchange_acq intrinsic", "InterlockedCompareExchange_acq intrinsic", "_InterlockedCompareExchange intrinsic", "InterlockedCompareExchange64 intrinsic", "_InterlockedCompareExchange64_acq intrinsic", "InterlockedCompareExchange16 intrinsic", "_InterlockedCompareExchange_rel intrinsic", "InterlockedCompareExchange intrinsic", "InterlockedCompareExchange64_acq intrinsic", "InterlockedCompareExchange_rel intrinsic", "_InterlockedCompareExchange64 intrinsic", "InterlockedCompareExchange64_rel intrinsic", "_InterlockedCompareExchange64_rel intrinsic"]
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchange Intrinsic Functions

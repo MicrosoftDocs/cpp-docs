@@ -2,19 +2,14 @@
 title: "map::make_value (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::make_value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["make_value member [STL/CLR]"]
 ms.assetid: a0bc4081-b8b7-450e-b041-a49ac42b279f
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::make_value (STL/CLR)

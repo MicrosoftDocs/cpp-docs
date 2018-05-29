@@ -2,19 +2,14 @@
 title: "Compiler Error C2756 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2756"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2756"]
 ms.assetid: 42eb988d-4043-4dee-8fd4-596949f69a55
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2756

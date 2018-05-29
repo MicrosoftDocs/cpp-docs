@@ -2,17 +2,12 @@
 title: "Objects Own Resources (RAII) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Objects Own Resources (RAII)

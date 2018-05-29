@@ -2,19 +2,14 @@
 title: "ICommandSource Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["ICommandSource", "AFXWINFORMS/ICommandSource", "AFXWINFORMS/ICommandSource::AddCommandHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::AddCommandUIHandler", "AFXWINFORMS/ICommandSource::PostCommand", "AFXWINFORMS/ICommandSource::RemoveCommandHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::RemoveCommandUIHandler", "AFXWINFORMS/ICommandSource::SendCommand"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandSource interface [MFC]"]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ICommandSource Interface

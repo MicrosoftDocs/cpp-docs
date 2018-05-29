@@ -2,19 +2,14 @@
 title: "_environ, _wenviron | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["environ", "wenviron", "_wenviron", "_environ"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["environ function", "_environ function", "_wenviron function", "process environment", "wenviron function"]
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _environ, _wenviron
@@ -44,9 +39,9 @@ extern wchar_t **_wenviron;
   
  is a wide-character version of `_environ`. In a program that uses the `wmain` function, `_wenviron` is initialized at program startup according to settings taken from the operating-system environment.  
   
- In a program that uses `main`, `_wenviron` is initially `NULL` because the environment is composed of multibyte-character strings. On the first call to `_wgetenv` or `_wputenv`, a corresponding wide-character string environment is created and is pointed to by `_wenviron`.  
+ In a program that uses `main`, `_wenviron` is initially **NULL** because the environment is composed of multibyte-character strings. On the first call to `_wgetenv` or `_wputenv`, a corresponding wide-character string environment is created and is pointed to by `_wenviron`.  
   
- Similarly, in a program that uses `wmain`, `_environ` is initially `NULL` because the environment is composed of wide-character strings. On the first call to `_getenv` or `_putenv`, a corresponding multibyte-character string environment is created and is pointed to by `_environ`.  
+ Similarly, in a program that uses `wmain`, `_environ` is initially **NULL** because the environment is composed of wide-character strings. On the first call to `_getenv` or `_putenv`, a corresponding multibyte-character string environment is created and is pointed to by `_environ`.  
   
  When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, the run-time system must maintain both copies, resulting in slower execution time. For example, whenever you call `_putenv`, a call to `_wputenv` is also executed automatically, so that the two environment strings correspond.  
   

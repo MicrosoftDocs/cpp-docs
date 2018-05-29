@@ -1,16 +1,15 @@
 ---
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2107"
+ms.date: "04/28/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 
@@ -41,7 +40,8 @@ int main(int argc, char* argv[])
 }
 ```
 
-CMakeLists.txt: 
+CMakeLists.txt:
+
 ```cmd
 project (hello-cmake)
 add_executable(hello-cmake hello.cpp)
@@ -55,6 +55,9 @@ By default, Visual Studio chooses the first remote system in the list (under **T
 After you specify a Linux target, your source is copied to your Linux machine. Then, CMake is run on the Linux machine to generate the CMake cache for your project.  
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")  
+
+**Visual Studio 2017 version 15.7 and later:**
+To provide IntelliSense support for remote headers, Visual Studio automatically copies them to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ## Debug the project  
 To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and click run (or press F5).
@@ -81,6 +84,7 @@ To change the default CMake settings, choose **CMake | Change CMake Settings | C
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 The `name` value can be whatever you like. The `remoteMachineName` value specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system. The field `remoteCMakeListsRoot` specifies where your project sources will be copied to on the remote system. The field `remoteBuildRoot` is where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`.
 
 ## Building a supported CMake release from source
@@ -98,19 +102,13 @@ cmake -E capabilities
 
 In the output, look for “serverMode”:true. Note that even when you compile CMake from source as described below you should check the capabilities when done. Your Linux system may have limitations that prevent server mode from being enabled.
 
-To get started building from source in the shell for your Linux system make sure your package manager is up to date, and that you have git and cmake available. First, clone the CMake sources:
+To get started building from source in the shell for your Linux system make sure your package manager is up to date, and that you have git and cmake available. First, clone the CMake sources from our repo where we use for Visual Studio's CMake support:
 
 ```cmd
 sudo apt-get update
 sudo apt-get install -y git cmake
-git clone https://github.com/Kitware/CMake.git
+git clone https://github.com/Microsoft/CMake.git
 cd CMake
-```
-
-Next, make sure you are on a supported release of CMake for Visual Studio. We are actively tracking CMake development, but we cannot guarantee we support the latest. To build CMake 3.9.0 (for example), first run:
-
-```cmd
-git checkout tags/v3.9.0
 ```
 
 Next, run the following commands:

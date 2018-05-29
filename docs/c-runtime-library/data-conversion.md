@@ -10,7 +10,6 @@ helpviewer_keywords: ["data conversion routines [C++]", "converting data"]
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Data Conversion
@@ -60,4 +59,4 @@ These routines convert data from one form to another. Generally these routines e
 
 ## See also
 
-[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

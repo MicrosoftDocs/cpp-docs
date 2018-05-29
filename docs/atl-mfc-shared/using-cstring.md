@@ -2,18 +2,13 @@
 title: "Using CString | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects, C++ string manipulation", "CString objects, reference counting", "CString class (Visual C++)"]
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CString

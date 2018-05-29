@@ -2,18 +2,13 @@
 title: "Constraints of Delay Loading DLLs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["constraints [C++], delayed loading of DLLs", "delayed loading of DLLs, constraints", "DLLs [C++], constraints"]
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Constraints of Delay Loading DLLs

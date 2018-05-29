@@ -2,18 +2,13 @@
 title: "Executing a Program in Preprocessing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["program execution [C++]"]
 ms.assetid: 5ecf123a-20e5-40cd-b8d8-dd5a9fdd4b24
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Executing a Program in Preprocessing

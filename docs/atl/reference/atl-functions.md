@@ -2,18 +2,13 @@
 title: "ATL Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["functions [ATL]", "ATL, global functions"]
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Functions
@@ -68,6 +63,5 @@ To find an ATL function by category, see the following topics.
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Macros](../../atl/reference/atl-macros.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
  [Typedefs](../../atl/reference/atl-typedefs.md)   
- [Classes](../../atl/reference/atl-classes.md)
+ [Classes and structs](../../atl/reference/atl-classes.md)

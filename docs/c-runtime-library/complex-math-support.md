@@ -3,13 +3,12 @@ title: "C complex math support | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2018"
 ms.technology: ["cpp-standard-libraries"]
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["c.complex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C complex math support
@@ -97,4 +96,4 @@ Because complex numbers are not a native type in the Microsoft compiler, the sta
 
 ## See also
 
-[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

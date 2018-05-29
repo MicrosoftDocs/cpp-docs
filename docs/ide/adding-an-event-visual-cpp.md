@@ -2,18 +2,13 @@
 title: "Adding an Event (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [C++], adding events to", "MFC ActiveX controls [C++], adding events", "events [C++], ActiveX controls"]
 ms.assetid: fe34832a-edfc-4f86-aacb-8df77001873d
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding an Event (Visual C++)

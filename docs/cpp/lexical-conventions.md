@@ -1,19 +1,14 @@
 ---
 title: "Lexical Conventions | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["lexical conventions", "conventions, lexical"]
 ms.assetid: 03f9efff-bb95-45ef-9157-0a3fac809ccf
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Lexical Conventions

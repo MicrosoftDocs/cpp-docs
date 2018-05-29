@@ -2,19 +2,14 @@
 title: "CEdit Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CEdit", "AFXWIN/CEdit", "AFXWIN/CEdit::CEdit", "AFXWIN/CEdit::CanUndo", "AFXWIN/CEdit::CharFromPos", "AFXWIN/CEdit::Clear", "AFXWIN/CEdit::Copy", "AFXWIN/CEdit::Create", "AFXWIN/CEdit::Cut", "AFXWIN/CEdit::EmptyUndoBuffer", "AFXWIN/CEdit::FmtLines", "AFXWIN/CEdit::GetCueBanner", "AFXWIN/CEdit::GetFirstVisibleLine", "AFXWIN/CEdit::GetHandle", "AFXWIN/CEdit::GetHighlight", "AFXWIN/CEdit::GetLimitText", "AFXWIN/CEdit::GetLine", "AFXWIN/CEdit::GetLineCount", "AFXWIN/CEdit::GetMargins", "AFXWIN/CEdit::GetModify", "AFXWIN/CEdit::GetPasswordChar", "AFXWIN/CEdit::GetRect", "AFXWIN/CEdit::GetSel", "AFXWIN/CEdit::HideBalloonTip", "AFXWIN/CEdit::LimitText", "AFXWIN/CEdit::LineFromChar", "AFXWIN/CEdit::LineIndex", "AFXWIN/CEdit::LineLength", "AFXWIN/CEdit::LineScroll", "AFXWIN/CEdit::Paste", "AFXWIN/CEdit::PosFromChar", "AFXWIN/CEdit::ReplaceSel", "AFXWIN/CEdit::SetCueBanner", "AFXWIN/CEdit::SetHandle", "AFXWIN/CEdit::SetHighlight", "AFXWIN/CEdit::SetLimitText", "AFXWIN/CEdit::SetMargins", "AFXWIN/CEdit::SetModify", "AFXWIN/CEdit::SetPasswordChar", "AFXWIN/CEdit::SetReadOnly", "AFXWIN/CEdit::SetRect", "AFXWIN/CEdit::SetRectNP", "AFXWIN/CEdit::SetSel", "AFXWIN/CEdit::SetTabStops", "AFXWIN/CEdit::ShowBalloonTip", "AFXWIN/CEdit::Undo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CEdit [MFC], CEdit", "CEdit [MFC], CanUndo", "CEdit [MFC], CharFromPos", "CEdit [MFC], Clear", "CEdit [MFC], Copy", "CEdit [MFC], Create", "CEdit [MFC], Cut", "CEdit [MFC], EmptyUndoBuffer", "CEdit [MFC], FmtLines", "CEdit [MFC], GetCueBanner", "CEdit [MFC], GetFirstVisibleLine", "CEdit [MFC], GetHandle", "CEdit [MFC], GetHighlight", "CEdit [MFC], GetLimitText", "CEdit [MFC], GetLine", "CEdit [MFC], GetLineCount", "CEdit [MFC], GetMargins", "CEdit [MFC], GetModify", "CEdit [MFC], GetPasswordChar", "CEdit [MFC], GetRect", "CEdit [MFC], GetSel", "CEdit [MFC], HideBalloonTip", "CEdit [MFC], LimitText", "CEdit [MFC], LineFromChar", "CEdit [MFC], LineIndex", "CEdit [MFC], LineLength", "CEdit [MFC], LineScroll", "CEdit [MFC], Paste", "CEdit [MFC], PosFromChar", "CEdit [MFC], ReplaceSel", "CEdit [MFC], SetCueBanner", "CEdit [MFC], SetHandle", "CEdit [MFC], SetHighlight", "CEdit [MFC], SetLimitText", "CEdit [MFC], SetMargins", "CEdit [MFC], SetModify", "CEdit [MFC], SetPasswordChar", "CEdit [MFC], SetReadOnly", "CEdit [MFC], SetRect", "CEdit [MFC], SetRectNP", "CEdit [MFC], SetSel", "CEdit [MFC], SetTabStops", "CEdit [MFC], ShowBalloonTip", "CEdit [MFC], Undo"]
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CEdit Class
@@ -95,7 +90,7 @@ class CEdit : public CWnd
   
  Each message-map entry takes the following form:  
   
- **ON_**Notification **(** *id, memberFxn***)**  
+  **ON_**_NOTIFICATION_**(** _id_**,** _memberFxn_ **)**
   
  where `id` specifies the child window ID of the edit control sending the notification, and `memberFxn` is the name of the parent member function you have written to handle the notification.  
   

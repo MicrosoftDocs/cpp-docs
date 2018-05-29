@@ -2,17 +2,12 @@
 title: "A.16   Using Locks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 873bf32b-6cfe-4ce1-b994-bef80b50f399
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # A.16   Using Locks

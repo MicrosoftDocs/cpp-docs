@@ -2,19 +2,14 @@
 title: "CRowsetImpl::GetCommandFromID | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCommandFromID method"]
 ms.assetid: 9f39cb07-1c40-486f-ba5b-cb4a65fab8a7
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl::GetCommandFromID

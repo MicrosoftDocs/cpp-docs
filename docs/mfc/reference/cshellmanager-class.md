@@ -2,19 +2,14 @@
 title: "CShellManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CShellManager", "AFXSHELLMANAGER/CShellManager", "AFXSHELLMANAGER/CShellManager::CShellManager", "AFXSHELLMANAGER/CShellManager::BrowseForFolder", "AFXSHELLMANAGER/CShellManager::ConcatenateItem", "AFXSHELLMANAGER/CShellManager::CopyItem", "AFXSHELLMANAGER/CShellManager::CreateItem", "AFXSHELLMANAGER/CShellManager::FreeItem", "AFXSHELLMANAGER/CShellManager::GetItemCount", "AFXSHELLMANAGER/CShellManager::GetItemSize", "AFXSHELLMANAGER/CShellManager::GetNextItem", "AFXSHELLMANAGER/CShellManager::GetParentItem", "AFXSHELLMANAGER/CShellManager::ItemFromPath"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CShellManager [MFC], CShellManager", "CShellManager [MFC], BrowseForFolder", "CShellManager [MFC], ConcatenateItem", "CShellManager [MFC], CopyItem", "CShellManager [MFC], CreateItem", "CShellManager [MFC], FreeItem", "CShellManager [MFC], GetItemCount", "CShellManager [MFC], GetItemSize", "CShellManager [MFC], GetNextItem", "CShellManager [MFC], GetParentItem", "CShellManager [MFC], ItemFromPath"]
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CShellManager Class

@@ -3,18 +3,13 @@ title: "Platform::ObjectDisposedException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ObjectDisposedException", "VCCORLIB/Platform::ObjectDisposedException::ObjectDisposedException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ObjectDisposedException"]
 ms.assetid: 68506fe4-d09c-4407-999f-1e3edb261d41
-caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ObjectDisposedException Class

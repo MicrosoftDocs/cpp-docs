@@ -2,19 +2,14 @@
 title: "Application Settings, MFC ActiveX Control Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.appset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, application settings"]
 ms.assetid: 48475194-cc63-467f-8499-f142269a4c1c
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Application Settings, MFC ActiveX Control Wizard

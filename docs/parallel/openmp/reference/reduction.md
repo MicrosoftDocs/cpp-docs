@@ -2,19 +2,14 @@
 title: "reduction | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["reduction"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reduction OpenMP clause"]
 ms.assetid: a2b051af-5a1b-4c00-9cc7-692bb43653fb
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # reduction

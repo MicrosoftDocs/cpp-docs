@@ -2,18 +2,13 @@
 title: "Message Maps (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message maps, ATL", "ATL, message handlers"]
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Message Maps (ATL)

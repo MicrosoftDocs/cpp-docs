@@ -2,17 +2,12 @@
 title: "Pimpl For Compile-Time Encapsulation (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Pimpl For Compile-Time Encapsulation (Modern C++)

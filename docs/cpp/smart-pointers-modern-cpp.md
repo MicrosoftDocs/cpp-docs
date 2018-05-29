@@ -2,17 +2,12 @@
 title: "Smart Pointers (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Smart Pointers (Modern C++)

@@ -2,11 +2,8 @@
 title: "__crtLCMapStringW | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["__crtLCMapStringW"]
 apilocation: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["__crtLCMapStringW"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__crtLCMapStringW"]
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __crtLCMapStringW
@@ -46,7 +41,7 @@ int __crtLCMapStringW(
  Pointer to a source string that the function maps or uses for sort key generation. This parameter is assumed to be a Unicode string.  
   
  `cchSrc`  
- Size, in characters, of the string pointed to by the `lpSrcStr` parameter. This count can include the NULL terminator, or not include it.  
+ Size, in characters, of the string pointed to by the `lpSrcStr` parameter. This count can include the null terminator, or not include it.  
   
  A `cchSrc` value of -1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If this is the case, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.  
   
@@ -57,9 +52,9 @@ int __crtLCMapStringW(
  Size, in characters, of the buffer pointed to by `lpDestStr`.  
   
 ## Return Value  
- If the value of `cchDest` is nonzero, the number of characters, or bytes if `LCMAP_SORTKEY` is specified, written to the buffer indicates success. This count includes room for a NULL terminator.  
+ If the value of `cchDest` is nonzero, the number of characters, or bytes if `LCMAP_SORTKEY` is specified, written to the buffer indicates success. This count includes room for a null terminator.  
   
- If the value of `cchDest` is zero, the size of the buffer in characters, or bytes if `LCMAP_SORTKEY` is specified, required to receive the translated string or sort key indicates success. This size includes room for a NULL terminator.  
+ If the value of `cchDest` is zero, the size of the buffer in characters, or bytes if `LCMAP_SORTKEY` is specified, required to receive the translated string or sort key indicates success. This size includes room for a null terminator.  
   
  Zero indicates failure. To get extended error information, call the `GetLastError` function.  
   

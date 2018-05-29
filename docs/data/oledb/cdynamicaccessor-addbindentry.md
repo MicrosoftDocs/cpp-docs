@@ -2,19 +2,14 @@
 title: "CDynamicAccessor::AddBindEntry | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::AddBindEntry", "AddBindEntry", "CDynamicAccessor.AddBindEntry", "CDynamicAccessor::AddBindEntry", "ATL.CDynamicAccessor.AddBindEntry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddBindEntry method"]
 ms.assetid: 8f139376-7db3-4193-ba3b-63fe938ffa79
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::AddBindEntry

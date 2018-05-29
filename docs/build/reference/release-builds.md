@@ -2,18 +2,13 @@
 title: "Release Builds | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [C++], release builds", "release builds", "debug builds, converting to release build"]
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Release Builds

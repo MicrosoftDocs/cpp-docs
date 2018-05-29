@@ -2,19 +2,14 @@
 title: "CREATESTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CREATESTRUCT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CREATESTRUCT structure [MFC]"]
 ms.assetid: 028c7b5e-4fdc-48da-a550-d3e4f9e6cc85
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CREATESTRUCT Structure

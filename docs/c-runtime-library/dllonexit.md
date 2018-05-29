@@ -2,11 +2,8 @@
 title: "__dllonexit | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["__dllonexit"]
 apilocation: ["msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcr120_clr0400.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["__dllonexit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__dllonexit"]
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __dllonexit
@@ -43,7 +38,7 @@ _onexit_t __dllonexit(   _onexit_t func,
  Pointer to variable that points to the end of a list of functions to execute on detach.  
   
 ## Return Value  
- If successful, a pointer to the user’s function. Otherwise, a NULL pointer.  
+ If successful, a pointer to the user’s function. Otherwise, a **NULL** pointer.  
   
 ## Remarks  
  The `__dllonexit` function is analogous to the [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) function except that the global variables used by that function are not visible to this routine. Instead of global variables, this function uses the `pbegin` and `pend` parameters.  

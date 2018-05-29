@@ -1,4 +1,4 @@
-The     `task_group` class represents a collection of parallel work which can be waited on or canceled.  
+The `task_group` class represents a collection of parallel work which can be waited on or canceled.  
   
 ## Syntax  
   

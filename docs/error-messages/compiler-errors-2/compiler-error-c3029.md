@@ -2,19 +2,14 @@
 title: "Compiler Error C3029 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C3029"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3029"]
 ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3029

@@ -2,18 +2,13 @@
 title: "-WINMDKEYFILE (Specify winmd Key File) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDKeyFile"]
 dev_langs: ["C++"]
 ms.assetid: 65d88fdc-fff9-49ea-8cfc-b2f408741734
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /WINMDKEYFILE (Specify winmd Key File)

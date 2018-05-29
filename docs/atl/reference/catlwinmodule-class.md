@@ -2,19 +2,14 @@
 title: "CAtlWinModule Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CAtlWinModule", "ATLBASE/ATL::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::AddCreateWndData", "ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlWinModule class"]
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAtlWinModule Class

@@ -2,19 +2,14 @@
 title: "COleTemplateServer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleTemplateServer", "AFXDISP/COleTemplateServer", "AFXDISP/COleTemplateServer::COleTemplateServer", "AFXDISP/COleTemplateServer::ConnectTemplate", "AFXDISP/COleTemplateServer::Unregister", "AFXDISP/COleTemplateServer::UpdateRegistry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleTemplateServer [MFC], COleTemplateServer", "COleTemplateServer [MFC], ConnectTemplate", "COleTemplateServer [MFC], Unregister", "COleTemplateServer [MFC], UpdateRegistry"]
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleTemplateServer Class

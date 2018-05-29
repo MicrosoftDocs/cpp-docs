@@ -2,19 +2,14 @@
 title: "Data Types Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.datatypes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["data types classes [C++]", "data types [C++], classes"]
 ms.assetid: 29882bab-9174-4dfa-8227-ccfeba80b865
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Data Types Classes

@@ -2,18 +2,13 @@
 title: "Control Bars | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["command bars [MFC], types of", "toolbars [MFC], control bars", "control bars [MFC]", "MFC, control bars", "control bars [MFC], types of", "CDialogBar class [MFC], control bars", "status bars [MFC], control bars", "CControlBar class [MFC], MFC control bars", "dialog bars [MFC], control bars", "CToolBar class [MFC], control bars", "CStatusBar class [MFC], control bars"]
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Control Bars

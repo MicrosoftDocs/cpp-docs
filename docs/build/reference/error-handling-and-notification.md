@@ -2,18 +2,13 @@
 title: "Error Handling and Notification | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["error handling, and notification"]
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Error Handling and Notification

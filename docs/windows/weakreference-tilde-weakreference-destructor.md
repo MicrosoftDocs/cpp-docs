@@ -2,19 +2,14 @@
 title: "WeakReference::~WeakReference Destructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::~WeakReference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["~WeakReference, destructor"]
 ms.assetid: 176d24a0-df14-41fa-9c17-2f6e69f932be
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::~WeakReference Destructor

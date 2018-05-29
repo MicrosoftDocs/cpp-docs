@@ -2,19 +2,14 @@
 title: "threadprivate | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-parallel"]
 ms.topic: "reference"
 f1_keywords: ["threadprivate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["threadprivate OpenMP directive"]
 ms.assetid: 3515aaed-6f9d-4d59-85eb-342378bea2d3
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # threadprivate

@@ -2,18 +2,13 @@
 title: "Adding an ATL Message Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [C++]", "ATL, windows", "message handling [C++], ATL message handler", "windows [C++], ATL", "ATL, message handlers"]
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Message Handler

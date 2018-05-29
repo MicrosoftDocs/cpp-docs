@@ -2,19 +2,14 @@
 title: "_bstr_t::GetAddress | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::GetAddress"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetAddress method [C++]"]
 ms.assetid: 09bc9180-867e-4ee5-b22a-8339dc663142
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t::GetAddress

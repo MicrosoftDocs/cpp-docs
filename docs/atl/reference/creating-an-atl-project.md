@@ -2,19 +2,14 @@
 title: "Creating an ATL Project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "ATL70.DLL", "_ATL_MIN_CRT macro", "distributing files with ATL components"]
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating an ATL Project

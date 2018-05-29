@@ -2,18 +2,13 @@
 title: "How to: Parse Strings Using the Split Method (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parsing strings [C++]", "examples [C++], strings", "regular expressions [C++], parsing strings", "Split method, parsing strings", "strings [C++], parsing"]
 ms.assetid: d52d2539-5ebb-4716-86b3-07314dd7e4bd
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Parse Strings Using the Split Method (C++/CLI)

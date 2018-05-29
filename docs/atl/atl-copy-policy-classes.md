@@ -2,18 +2,13 @@
 title: "ATL Copy Policy Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data [C++], ATL", "classes [C++], copy policy", "copy policy classes [C++]", "_Copy class", "_CopyInterface class"]
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Copy Policy Classes

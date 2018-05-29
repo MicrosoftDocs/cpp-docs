@@ -2,19 +2,14 @@
 title: "CDynamicParameterAccessor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/14/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicParameterAccessor", "ATL::CDynamicParameterAccessor", "CDynamicParameterAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicParameterAccessor class"]
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor Class

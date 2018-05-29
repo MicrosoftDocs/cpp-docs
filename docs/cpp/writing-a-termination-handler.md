@@ -2,18 +2,13 @@
 title: "Writing a Termination Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["structured exception handling [C++], termination handlers", "exceptions [C++], terminating", "termination handlers [C++], writing", "handlers [C++]", "handlers [C++], termination", "termination handlers", "exception handling [C++], termination handlers", "try-catch keyword [C++], termination handlers"]
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Writing a Termination Handler

@@ -2,18 +2,13 @@
 title: "How to: Convert from a .NET Collection to a STL/CLR Container | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["STL/CLR, converting from .NET collections", "STL/CLR Containers [STL/CLR]"]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert from a .NET Collection to a STL/CLR Container

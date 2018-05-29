@@ -2,15 +2,11 @@
 title: "Containers (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "1/18/2018"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Containers (Modern C++)

@@ -2,18 +2,13 @@
 title: "Using Explicit PInvoke in C++ (DllImport Attribute) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["marshaling [C++], platform invoke", "C++ Interop, platform invoke", "interop [C++], platform invoke", "platform invoke [C++], marshaling in C++", "data marshaling [C++], platform invoke"]
 ms.assetid: 18e5218c-6916-48a1-a127-f66e22ef15fc
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using Explicit PInvoke in C++ (DllImport Attribute)

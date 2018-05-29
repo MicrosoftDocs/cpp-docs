@@ -2,18 +2,13 @@
 title: "Reading Strings into the OLE DB Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-data"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, reading strings into"]
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Reading Strings into the OLE DB Provider

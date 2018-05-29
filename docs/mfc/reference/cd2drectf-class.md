@@ -2,19 +2,14 @@
 title: "CD2DRectF Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DRectF", "AFXRENDERTARGET/CD2DRectF", "AFXRENDERTARGET/CD2DRectF::CD2DRectF", "AFXRENDERTARGET/CD2DRectF::IsNull"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DRectF [MFC], CD2DRectF", "CD2DRectF [MFC], IsNull"]
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DRectF Class

@@ -2,17 +2,12 @@
 title: "2.7.2.7 copyin | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 76cfb9f8-bf65-4585-adbf-fd933f5606b4
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # 2.7.2.7 copyin

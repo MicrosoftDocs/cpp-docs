@@ -2,19 +2,14 @@
 title: "runtime_checks | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["vc-pragma.runtime_checks", "runtime_checks_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_checks pragma", "pragmas, runtime_checks"]
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # runtime_checks

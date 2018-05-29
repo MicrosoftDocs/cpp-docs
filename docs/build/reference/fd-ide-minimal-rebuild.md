@@ -2,19 +2,14 @@
 title: "-FD (IDE Minimal Rebuild) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/FD"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/FD compiler option [C++]", "-FD compiler option [C++]", "FD compiler option [C++]"]
 ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /FD (IDE Minimal Rebuild)

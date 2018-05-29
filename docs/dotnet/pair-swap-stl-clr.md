@@ -2,19 +2,14 @@
 title: "pair::swap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::pair::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["swap member [STL/CLR]"]
 ms.assetid: 7f5cbfa0-3702-40ab-a3f4-ffde02126095
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # pair::swap (STL/CLR)

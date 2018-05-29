@@ -2,19 +2,14 @@
 title: "CMFCCaptionButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetHit", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetIconID", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetRect", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetSize", "AFXCAPTIONBUTTON/CMFCCaptionButton::IsMiniFrameButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::Move", "AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw", "AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCaptionButton [MFC], CMFCCaptionButton", "CMFCCaptionButton [MFC], GetHit", "CMFCCaptionButton [MFC], GetIconID", "CMFCCaptionButton [MFC], GetRect", "CMFCCaptionButton [MFC], GetSize", "CMFCCaptionButton [MFC], IsMiniFrameButton", "CMFCCaptionButton [MFC], Move", "CMFCCaptionButton [MFC], OnDraw", "CMFCCaptionButton [MFC], SetMiniFrameButton"]
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCCaptionButton Class

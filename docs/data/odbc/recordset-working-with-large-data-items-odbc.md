@@ -2,18 +2,13 @@
 title: "Recordset: Working with Large Data Items (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB (binary large object), recordsets", "ODBC recordsets, binary large objects", "recordsets, binary large objects", "binary large objects", "CLongBinary class, using in recordsets"]
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Working with Large Data Items (ODBC)

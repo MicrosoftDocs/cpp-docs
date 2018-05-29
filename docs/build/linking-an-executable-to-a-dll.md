@@ -2,18 +2,13 @@
 title: "Link an executable to a DLL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["run time [C++], linking", "dynamic load linking [C++]", "linking [C++], DLLs", "DLLs [C++], linking", "implicit linking [C++]", "explicit linking [C++]", "executable files [C++], linking to DLLs", "loading DLLs [C++]"]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Link an executable to a DLL  
@@ -139,7 +134,7 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
   
 -   [Working with Import Libraries and Export Files](../build/reference/working-with-import-libraries-and-export-files.md)  
   
--   [The search path used by Windows to locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)  
+-   [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

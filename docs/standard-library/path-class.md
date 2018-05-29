@@ -2,599 +2,596 @@
 title: "path Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
 dev_langs: ["C++"]
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # path Class
-The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.  
-  
- For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  
-  
-## Syntax  
-  
-```cpp  
-class path;  
-```  
-  
-## path::append  
-  
-```cpp  
-template <class Source>  
-path& append(const Source& source);  
-   
-template <class InIt>  
+
+The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.
+
+For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
+
+## Syntax
+
+```cpp
+class path;
+```
+
+## path::append
+
+```cpp
+template <class Source>
+path& append(const Source& source);
+
+template <class InIt>
 path& append(InIt first, InIt last);
-```  
-  
- The member functions append the specified sequence to mypath, converted and inserting a preferred_separator as needed.  
-  
-## path::assign  
-  
-```cpp  
-template <class Source>  
-path& assign(const Source& source);  
-  
-template <class InIt>  
+```
+
+The member functions append the specified sequence to mypath, converted and inserting a preferred_separator as needed.
+
+## path::assign
+
+```cpp
+template <class Source>
+path& assign(const Source& source);
+
+template <class InIt>
 path& assign(InIt first, InIt last);
-```  
-  
- The member functions replace mypath with the specified sequence, converted as needed.  
-  
-## path::begin  
-  
-```cpp  
+```
+
+The member functions replace mypath with the specified sequence, converted as needed.
+
+## path::begin
+
+```cpp
 iterator begin() const;
-```  
-  
- Returns a path::iterator designating the first path element in the pathname, if present.  
-  
-## path::c_str  
-  
-```cpp  
-const value_type& *c_str() const noexcept;  
-```  
-  
- Returns a pointer to the first character in mypath.  
-  
-## path::clear  
-  
-```cpp  
-void clear() noexcept;  
-```  
-  
- The member function executes mypath.clear()  
-  
-## path::compare  
-  
-```cpp  
-int compare(const path& pval) const noexcept;  
+```
+
+Returns a path::iterator designating the first path element in the pathname, if present.
+
+## path::c_str
+
+```cpp
+const value_type& *c_str() const noexcept;
+```
+
+Returns a pointer to the first character in mypath.
+
+## path::clear
+
+```cpp
+void clear() noexcept;
+```
+
+The member function executes mypath.clear()
+
+## path::compare
+
+```cpp
+int compare(const path& pval) const noexcept;
 int compare(const string_type& str) const;
 int compare(const value_type *ptr) const;
-```  
-  
- The first function returns mypath.compare(pval.native()). The second function returns mypath.compare(str). The third function returns mypath.compare(ptr).  
-  
-## path::concat  
-  
-```cpp  
-template <class Source>  
-path& concat(const Source& source);  
-  
-template <class InIt>  
+```
+
+The first function returns mypath.compare(pval.native()). The second function returns mypath.compare(str). The third function returns mypath.compare(ptr).
+
+## path::concat
+
+```cpp
+template <class Source>
+path& concat(const Source& source);
+
+template <class InIt>
 path& concat(InIt first, InIt last);
-```  
-  
- The member functions append the specified sequence to mypath, converted (but not inserting a separator) as needed.  
-  
-## path::const_iterator  
-  
-```cpp  
-typedef iterator const_iterator;  
-```  
-  
- The type is a synonym for iterator.  
-  
-## path::empty  
-  
-```cpp  
-bool empty() const noexcept;  
-```  
-  
- Returns mypath.empty().  
-  
-## path::end  
-  
-```cpp  
+```
+
+The member functions append the specified sequence to mypath, converted (but not inserting a separator) as needed.
+
+## path::const_iterator
+
+```cpp
+typedef iterator const_iterator;
+```
+
+The type is a synonym for iterator.
+
+## path::empty
+
+```cpp
+bool empty() const noexcept;
+```
+
+Returns mypath.empty().
+
+## path::end
+
+```cpp
 iterator end() const;
-```  
-  
- Returns an end-of-sequence iterator of type iterator.  
-  
-## path::extension  
-  
-```cpp  
+```
+
+Returns an end-of-sequence iterator of type iterator.
+
+## path::extension
+
+```cpp
 path extension() const;
-```  
-  
- Returns the suffix of filename() X such that:  
-  
- If X == path(".") &#124;&#124; X == path("..") or if X contains no dot, the suffix is empty.  
-  
- Otherwise, the suffix begins with (and includes) the rightmost dot.  
-  
-## path::filename  
-  
-```cpp  
+```
+
+Returns the suffix of filename() X such that:
+
+If X == path(".") &#124;&#124; X == path("..") or if X contains no dot, the suffix is empty.
+
+Otherwise, the suffix begins with (and includes) the rightmost dot.
+
+## path::filename
+
+```cpp
 path filename() const;
-```  
-  
- Returns the root directory component of myname, specifically `empty()  path() : *--end()`. The component may be empty.  
-  
-## path::generic_string  
-  
-```cpp  
-template <class Elem,  
-    class Traits = char_traits<Elem>,  
-    class Alloc = allocator<Elem>>  
-  basic_string<Elem, Traits, Alloc>  
+```
+
+Returns the root directory component of myname, specifically `empty()  path() : *--end()`. The component may be empty.
+
+## path::generic_string
+
+```cpp
+template <class Elem,
+    class Traits = char_traits<Elem>,
+    class Alloc = allocator<Elem>>
+  basic_string<Elem, Traits, Alloc>
     generic_string(const Alloc& al = Alloc()) const;
-  
+
 string generic_string() const;
-```  
-  
- Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.  
-  
-## path::generic_u16string  
-  
-```cpp  
+```
+
+Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.
+
+## path::generic_u16string
+
+```cpp
 u16string generic_u16string() const;
-```  
-  
- Returns u16string() with (under Windows) any backslash converted to a forward slash.  
-  
-## path::generic_u32string  
-  
-```cpp  
+```
+
+Returns u16string() with (under Windows) any backslash converted to a forward slash.
+
+## path::generic_u32string
+
+```cpp
 u32string generic_u32string() const;
-```  
-  
- Returns u32string() with (under Windows) any backslash converted to a forward slash.  
-  
-## path::generic_u8string  
-  
-```cpp  
+```
+
+Returns u32string() with (under Windows) any backslash converted to a forward slash.
+
+## path::generic_u8string
+
+```cpp
 string generic_u8string() const;
-```  
-  
- Returns u8string() with (under Windows) any backslash converted to a forward slash.  
-  
-## path::generic_wstring  
-  
-```cpp  
+```
+
+Returns u8string() with (under Windows) any backslash converted to a forward slash.
+
+## path::generic_wstring
+
+```cpp
 wstring generic_wstring() const;
-```  
-  
- Returns wstring() with (under Windows) any backslash converted to a forward slash.  
-  
-## path::has_extension  
-  
-```cpp  
+```
+
+Returns wstring() with (under Windows) any backslash converted to a forward slash.
+
+## path::has_extension
+
+```cpp
 bool has_extension() const;
-```  
-  
- Returns !extension().empty().  
-  
-## path::has_filename  
-  
-```cpp  
+```
+
+Returns !extension().empty().
+
+## path::has_filename
+
+```cpp
 bool has_filename() const;
-```  
-  
- Returns !filename().empty().  
-  
-## path::has_parent_path  
-  
-```cpp  
+```
+
+Returns !filename().empty().
+
+## path::has_parent_path
+
+```cpp
 bool has_parent_path() const;
-```  
-  
- Returns !parent_path().empty().  
-  
-## path::has_relative_path  
-  
-```cpp  
+```
+
+Returns !parent_path().empty().
+
+## path::has_relative_path
+
+```cpp
 bool has_relative_path() const;
-```  
-  
- Returns !relative_path().empty().  
-  
-## path::has_root_directory  
-  
-```cpp  
+```
+
+Returns !relative_path().empty().
+
+## path::has_root_directory
+
+```cpp
 bool has_root_directory() const;
-```  
-  
- Returns !root_directory().empty().  
-  
-## path::has_root_name  
-  
-```cpp  
+```
+
+Returns !root_directory().empty().
+
+## path::has_root_name
+
+```cpp
 bool has_root_name() const;
-```  
-  
- Returns !root_name().empty().  
-  
-## path::has_root_path  
-  
-```cpp  
+```
+
+Returns !root_name().empty().
+
+## path::has_root_path
+
+```cpp
 bool has_root_path() const;
-```  
-  
- Returns !root_path().empty().  
-  
-## path::has_stem  
-  
-```cpp  
+```
+
+Returns !root_path().empty().
+
+## path::has_stem
+
+```cpp
 bool has_stem() const;
-```  
-  
- Returns !stem().empty().  
-  
-## path::is_absolute  
-  
-```cpp  
+```
+
+Returns !stem().empty().
+
+## path::is_absolute
+
+```cpp
 bool is_absolute() const;
-```  
-  
- For Windows, the function returns has_root_name() && has_root_directory(). For Posix, the function returns has_root_directory().  
-  
-## path::is_relative  
-  
-```cpp  
+```
+
+For Windows, the function returns has_root_name() && has_root_directory(). For Posix, the function returns has_root_directory().
+
+## path::is_relative
+
+```cpp
 bool is_relative() const;
-```  
-  
- Returns !is_absolute().  
-  
-## path::iterator  
-  
-```cpp  
-class iterator  
+```
+
+Returns !is_absolute().
+
+## path::iterator
+
+```cpp
+class iterator
    {
-   // bidirectional iterator for path  
-   typedef bidirectional_iterator_tag iterator_category;  
-   typedef path_type value_type;  
-   typedef ptrdiff_t difference_type;  
-   typedef const value_type *pointer;  
-   typedef const value_type& reference;  
-   // ...  
-   };  
-```  
-  
- The class describes a bidirectional constant iterator that designates the path components of myname in the sequence:  
-  
-1.  the root name, if present  
-  
-2.  the root directory, if present  
-  
-3.  the remaining directory elements of the parent path, if present, ending with the filename, if present    
-  
- For pval an object of type path:  
-  
-1.  path::iterator X = pval.begin() designates the first path element in the pathname, if present.  
-  
-2.  X == pval.end() is true when X points just past the end of the sequence of components.  
-  
-3. *X returns a string that matches the current component  
-  
-4.  ++X designates the next component in the sequence, if present.  
-  
-5.  --X designates the preceding component in the sequence, if present.  
-  
-6.  Altering myname invalidates all iterators designating elements in myname.  
-  
-## path::make_preferred  
-  
-```cpp  
+   // bidirectional iterator for path
+   typedef bidirectional_iterator_tag iterator_category;
+   typedef path_type value_type;
+   typedef ptrdiff_t difference_type;
+   typedef const value_type *pointer;
+   typedef const value_type& reference;
+   // ...
+   };
+```
+
+The class describes a bidirectional constant iterator that designates the path components of myname in the sequence:
+
+1. the root name, if present
+
+1. the root directory, if present
+
+1. the remaining directory elements of the parent path, if present, ending with the filename, if present
+
+For pval an object of type path:
+
+1. path::iterator X = pval.begin() designates the first path element in the pathname, if present.
+
+1. X == pval.end() is true when X points just past the end of the sequence of components.
+
+3. *X returns a string that matches the current component
+
+1. ++X designates the next component in the sequence, if present.
+
+1. --X designates the preceding component in the sequence, if present.
+
+1. Altering myname invalidates all iterators designating elements in myname.
+
+## path::make_preferred
+
+```cpp
 path& make_preferred();
-```  
-  
- The member function converts each separator to a preferred_separator as needed.  
-  
-## path::native  
-  
-```cpp  
-const string_type& native() const noexcept;  
-```  
-  
- Returns myname.  
-  
-## path::operator=  
-  
-```cpp  
+```
+
+The member function converts each separator to a preferred_separator as needed.
+
+## path::native
+
+```cpp
+const string_type& native() const noexcept;
+```
+
+Returns myname.
+
+## path::operator=
+
+```cpp
 path& operator=(const path& right);
-path& operator=(path&& right) noexcept;  
-  
-template <class Source>  
+path& operator=(path&& right) noexcept;
+
+template <class Source>
 path& operator=(const Source& source);
-```  
-  
- The first member operator copies right.myname to myname. The second member operator moves right.myname to myname. The third member operator behaves the same as *this = path(source).  
-  
-## path::operator+=  
-  
-```cpp  
+```
+
+The first member operator copies right.myname to myname. The second member operator moves right.myname to myname. The third member operator behaves the same as *this = path(source).
+
+## path::operator+=
+
+```cpp
 path& operator+=(const path& right);
 path& operator+=(const string_type& str);
 path& operator+=(const value_type *ptr);
 path& operator+=(value_type elem);
-  
-template <class Source>  
+
+template <class Source>
 path& operator+=(const Source& source);
-  
-template <class Elem>  
+
+template <class Elem>
 path& operator+=(Elem elem);
-```  
-  
- The member functions behave the same as the following corresponding expressions:  
-  
-1.  concat(right);  
-  
-2.  concat(path(str));  
-  
-3.  concat(ptr);  
-  
-4.  concat(string_type(1, elem));  
-  
-5.  concat(source);  
-  
-6.  concat(path(basic_string\<Elem>(1, elem)));  
-  
-## path::operator/=  
-  
-```cpp  
-path& operator/=(const path& right);  
-  
-template <class Source>  
+```
+
+The member functions behave the same as the following corresponding expressions:
+
+1. concat(right);
+
+1. concat(path(str));
+
+1. concat(ptr);
+
+1. concat(string_type(1, elem));
+
+1. concat(source);
+
+1. concat(path(basic_string\<Elem>(1, elem)));
+
+## path::operator/=
+
+```cpp
+path& operator/=(const path& right);
+
+template <class Source>
 path& operator/=(const Source& source);
-```  
-  
- The member functions behave the same as the following corresponding expressions:  
-  
-1.  append(right);  
-  
-2.  append(source);  
-  
-## path::operator string_type  
-  
-```cpp  
+```
+
+The member functions behave the same as the following corresponding expressions:
+
+1. append(right);
+
+1. append(source);
+
+## path::operator string_type
+
+```cpp
 operator string_type() const;
-```  
-  
- The member operator returns myname.  
-  
-## path::parent_path  
-  
-```cpp  
+```
+
+The member operator returns myname.
+
+## path::parent_path
+
+```cpp
 path parent_path() const;
-```  
-  
- Returns the parent path component of myname, specifically the prefix of myname after removing filename().native() and any immediately preceding directory separators. (Equally, if begin() != end(), it is the combining of all elements in the range [begin(), --end()) by successively applying operator/=.) The component may be empty.  
-  
-## path::path  
-  
-```cpp  
+```
+
+Returns the parent path component of myname, specifically the prefix of myname after removing filename().native() and any immediately preceding directory separators. (Equally, if begin() != end(), it is the combining of all elements in the range [begin(), --end()) by successively applying operator/=.) The component may be empty.
+
+## path::path
+
+```cpp
 path();
 
 path(const path& right);
-path(path&& right) noexcept;  
-  
-template <class Source>  
+path(path&& right) noexcept;
+
+template <class Source>
 path(const Source& source);
-  
-template <class Source>  
+
+template <class Source>
 path(const Source& source, const locale& loc);
-  
-template <class InIt>  
+
+template <class InIt>
 path(InIt first, InIt last);
-  
-template <class InIt>  
+
+template <class InIt>
 path(InIt first, InIt last, const locale& loc);
-```  
-  
- The constructors all construct myname in various ways:  
-  
- For path() it is myname().  
-  
- For path(const path& right) it is myname(right.myname).  
-  
- For path(path&& right) it is myname(right.myname).  
-  
- For template\<class Source> path(const Source& source) it is myname(source).  
-  
- For template\<class Source> path(const Source& source, const locale& loc) it is myname(source), obtaining any needed codecvt facets from loc.  
-  
- For template\<class InIt> path(InIt first, InIt last) it is myname(first, last).  
-  
- For template\<class InIt> path(InIt first, InIt last, const locale& loc) it is myname(first, last), obtaining any needed codecvt facets from loc.  
-  
-## path::preferred_separator  
-  
-```cpp  
-#if _WIN32_C_LIB  
-static constexpr value_type preferred_separator == L'\\';  
-#else // assume Posix  
-static constexpr value_type preferred_separator == '/';  
-#endif // filesystem model now defined  
-```  
-  
- The constant object gives the preferred character for separating path components, depending on the host operating system. Note that it is equally permissible in most contexts under Windows to use L'/' in its place.  
-  
-## path::relative_path  
-  
-```cpp  
+```
+
+The constructors all construct myname in various ways:
+
+For path() it is myname().
+
+For path(const path& right) it is myname(right.myname).
+
+For path(path&& right) it is myname(right.myname).
+
+For template\<class Source> path(const Source& source) it is myname(source).
+
+For template\<class Source> path(const Source& source, const locale& loc) it is myname(source), obtaining any needed codecvt facets from loc.
+
+For template\<class InIt> path(InIt first, InIt last) it is myname(first, last).
+
+For template\<class InIt> path(InIt first, InIt last, const locale& loc) it is myname(first, last), obtaining any needed codecvt facets from loc.
+
+## path::preferred_separator
+
+```cpp
+#if _WIN32_C_LIB
+static constexpr value_type preferred_separator == L'\\';
+#else // assume Posix
+static constexpr value_type preferred_separator == '/';
+#endif // filesystem model now defined
+```
+
+The constant object gives the preferred character for separating path components, depending on the host operating system. Note that it is equally permissible in most contexts under Windows to use L'/' in its place.
+
+## path::relative_path
+
+```cpp
 path relative_path() const;
-```  
-  
- Returns the relative path component of myname, specifically the suffix of myname after removing root_path().native() and any immediately subsequent redundant directory separators. The component may be empty.  
-  
-## path::remove_filename  
-  
-```cpp  
+```
+
+Returns the relative path component of myname, specifically the suffix of myname after removing root_path().native() and any immediately subsequent redundant directory separators. The component may be empty.
+
+## path::remove_filename
+
+```cpp
 path& remove_filename();
-```  
-  
-## path::replace_extension  
-  
-```cpp  
+```
+
+## path::replace_extension
+
+```cpp
 path& replace_extension(const path& newext = path());
-```  
-  
- The member function first removes the suffix extension().native() from myname. Then if !newext.empty() && newext[0] != dot (where dot is *path(".").c_str()), then dot is appended to myname. Then newext is appended to myname.  
-  
-## path::replace_filename  
-  
-```cpp  
+```
+
+The member function first removes the suffix extension().native() from myname. Then if !newext.empty() && newext[0] != dot (where dot is *path(".").c_str()), then dot is appended to myname. Then newext is appended to myname.
+
+## path::replace_filename
+
+```cpp
 path& replace_filename(const path& pval);
-```  
-  
- The member function executes:  
-  
-```cpp  
+```
+
+The member function executes:
+
+```cpp
 remove_filename();
 
-*this /= pval;  
+*this /= pval;
 return (*this);
-```  
-  
-## path::root_directory  
-  
-```cpp  
-path root_directory() const;
-```  
-  
- Returns the root directory component of myname. The component may be empty.  
-  
-## path::root_name  
-  
-```cpp  
-path root_name() const;
-```  
-  
- Returns the root name component of myname. The component may be empty.  
-  
-## path::root_path  
-  
-```cpp  
-path root_path() const;
-```  
-  
- Returns the root path component of myname, specifically root_name() / root_directory. The component may be empty.  
-  
-## path::stem  
-  
-```cpp  
-path stem() const;
-```  
-  
- Returns the stem component of myname, specifically filename().native() with any trailing extension().native() removed. The component may be empty.  
-  
-## path::string  
-  
-```cpp  
-template \<class Elem, class Traits = char_traits\<Elem>, class Alloc = allocator\<Elem>>  
-basic_string\<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const; 
-string string() const;
-```  
-  
- The first (template) member function converts the sequence stored in mypath the same way as:  
-  
-1.  string() for string\<char, Traits, Alloc>()  
-  
-2.  wstring() for string\<wchar_t, Traits, Alloc>()  
-  
-3.  u16string() for string\<char16_t, Traits, Alloc>()  
-  
-4.  u32string() for string\<char32_t, Traits, Alloc>()  
-  
- The second member function converts the sequence stored in mypath to the encoding favored by the host system for a char sequence and returns it stored in an object of type string.  
-  
-## path::string_type  
-  
-```cpp  
-typedef basic_string<value_type> string_type;  
-```  
-  
- The type is a synonym for basic_string<value_type>.  
-  
-## path::swap  
-  
-```cpp  
-void swap(path& right) noexcept;  
-```  
-  
- Executes swap(mypath, right.mypath).  
-  
-## path::u16string  
-  
-```cpp  
-u16string u16string() const;
-```  
-  
- The member function converts the sequence stored in mypath to UTF-16 and returns it stored in an object of type u16string.  
-  
-## path::u32string  
-  
-```cpp  
-u32string u32string() const;
-```  
-  
- The member function converts the sequence stored in mypath to UTF-32 and returns it stored in an object of type u32string.  
-  
-## path::u8string  
-  
-```cpp  
-string u8string() const;
-```  
-  
- The member function converts the sequence stored in mypath to UTF-8 and returns it stored in an object of type u8string.  
-  
-## path::value_type  
-  
-```cpp  
-#if _WIN32_C_LIB  
-typedef wchar_t value_type;  
-#else // assume Posix  
-typedef char value_type;  
-#endif // filesystem model now defined  
-```  
-  
- The type describes the path elements favored by the host operating system.  
-  
-## path::wstring  
-  
-```cpp  
-wstring wstring() const;
-```  
-  
- Converts the sequence stored in mypath to the encoding favored by the host system for a wchar_t sequence and returns it stored in an object of type wstring.  
-  
-## Requirements  
- **Header:** \<filesystem>  
-  
- **Namespace:** std::experimental::filesystem
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+```
 
+## path::root_directory
+
+```cpp
+path root_directory() const;
+```
+
+Returns the root directory component of myname. The component may be empty.
+
+## path::root_name
+
+```cpp
+path root_name() const;
+```
+
+Returns the root name component of myname. The component may be empty.
+
+## path::root_path
+
+```cpp
+path root_path() const;
+```
+
+Returns the root path component of myname, specifically root_name() / root_directory. The component may be empty.
+
+## path::stem
+
+```cpp
+path stem() const;
+```
+
+Returns the stem component of myname, specifically filename().native() with any trailing extension().native() removed. The component may be empty.
+
+## path::string
+
+```cpp
+template \<class Elem, class Traits = char_traits\<Elem>, class Alloc = allocator\<Elem>>
+basic_string\<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const;
+string string() const;
+```
+
+The first (template) member function converts the sequence stored in mypath the same way as:
+
+1. string() for string\<char, Traits, Alloc>()
+
+1. wstring() for string\<wchar_t, Traits, Alloc>()
+
+1. u16string() for string\<char16_t, Traits, Alloc>()
+
+1. u32string() for string\<char32_t, Traits, Alloc>()
+
+The second member function converts the sequence stored in mypath to the encoding favored by the host system for a char sequence and returns it stored in an object of type string.
+
+## path::string_type
+
+```cpp
+typedef basic_string<value_type> string_type;
+```
+
+The type is a synonym for basic_string<value_type>.
+
+## path::swap
+
+```cpp
+void swap(path& right) noexcept;
+```
+
+Executes swap(mypath, right.mypath).
+
+## path::u16string
+
+```cpp
+u16string u16string() const;
+```
+
+The member function converts the sequence stored in mypath to UTF-16 and returns it stored in an object of type u16string.
+
+## path::u32string
+
+```cpp
+u32string u32string() const;
+```
+
+The member function converts the sequence stored in mypath to UTF-32 and returns it stored in an object of type u32string.
+
+## path::u8string
+
+```cpp
+string u8string() const;
+```
+
+The member function converts the sequence stored in mypath to UTF-8 and returns it stored in an object of type u8string.
+
+## path::value_type
+
+```cpp
+#if _WIN32_C_LIB
+typedef wchar_t value_type;
+#else // assume Posix
+typedef char value_type;
+#endif // filesystem model now defined
+```
+
+The type describes the path elements favored by the host operating system.
+
+## path::wstring
+
+```cpp
+wstring wstring() const;
+```
+
+Converts the sequence stored in mypath to the encoding favored by the host system for a wchar_t sequence and returns it stored in an object of type wstring.
+
+## Requirements
+
+**Header:** \<filesystem>
+
+**Namespace:** std::experimental::filesystem
+
+## See also
+
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>

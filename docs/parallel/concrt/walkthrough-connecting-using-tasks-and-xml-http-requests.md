@@ -2,18 +2,13 @@
 title: "Walkthrough: Connecting Using Tasks and XML HTTP Requests | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["connecting to web services, UWP apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Connecting Using Tasks and XML HTTP Requests

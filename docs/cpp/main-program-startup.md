@@ -2,19 +2,14 @@
 title: "main: Program Startup | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["vc.main.startup", "_tmain"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["program startup [C++]", "entry points, program", "wmain function", "_tmain function", "startup code, main function", "main function, program startup"]
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # main: Program Startup

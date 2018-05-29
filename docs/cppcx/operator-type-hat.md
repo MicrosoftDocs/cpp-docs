@@ -3,15 +3,10 @@ title: "operator Type^ | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
-caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator Type^
@@ -52,5 +47,5 @@ Type^ tx2 = (Type^)(tn);
 ### Requirements  
   
 ## See Also  
- [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)   
+ [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)   
  [Platform::Type Class](../cppcx/platform-type-class.md)

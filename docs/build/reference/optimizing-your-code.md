@@ -2,16 +2,12 @@
 title: "Optimizing Your Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/28/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Optimizing your code

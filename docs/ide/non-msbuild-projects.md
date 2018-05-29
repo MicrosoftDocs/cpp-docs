@@ -2,17 +2,13 @@
 title: "Open Folder projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/02/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open Folder Projects in Visual C++"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Open Folder projects in Visual C++

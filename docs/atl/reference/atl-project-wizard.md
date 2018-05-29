@@ -2,19 +2,14 @@
 title: "ATL Project Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.appwiz.atl.com.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "ATL Project Wizard"]
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Project Wizard

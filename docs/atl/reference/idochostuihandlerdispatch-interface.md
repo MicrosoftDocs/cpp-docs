@@ -2,19 +2,14 @@
 title: "IDocHostUIHandlerDispatch Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["IDocHostUIHandlerDispatch", "atlbase/ATL::IDocHostUIHandlerDispatch"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDocHostUIHandlerDispatch interface"]
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IDocHostUIHandlerDispatch Interface

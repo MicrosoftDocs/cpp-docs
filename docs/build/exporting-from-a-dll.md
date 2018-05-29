@@ -2,18 +2,13 @@
 title: "Exporting from a DLL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["exporting DLLs [C++], about exporting from DLLs", "exporting functions [C++], DLLs (exporting from)", "exporting DLLs [C++]", "DLLs [C++], exporting from", "DLL exports [C++]", "functions [C++], exporting", "exports table [C++]"]
 ms.assetid: a08f86c4-5996-460b-ae54-da2b764045f0
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exporting from a DLL  

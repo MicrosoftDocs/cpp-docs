@@ -2,19 +2,14 @@
 title: "Working with Color (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.color"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["images [C++], background colors", "Image editor [C++], Colors Palette", "colors [C++], image", "Colors Palette, Image editor", "palettes, Image editor colors", "foreground colors, Image editor", "colors [C++]"]
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Working with Color (Image Editor for Icons)

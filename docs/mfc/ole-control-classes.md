@@ -2,19 +2,14 @@
 title: "OLE Control Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "custom controls [MFC], classes", "ActiveX controls [MFC], OLE control classes", "ActiveX control classes [MFC]", "OLE controls [MFC], classes", "OLE control classes [MFC]", "reusable component classes [MFC]"]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OLE Control Classes

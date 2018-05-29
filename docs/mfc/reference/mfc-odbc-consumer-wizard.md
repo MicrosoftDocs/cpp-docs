@@ -2,19 +2,14 @@
 title: "MFC ODBC Consumer Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.mfc.consumer.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ODBC Consumer Wizard", "wizards [MFC]"]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ODBC Consumer Wizard

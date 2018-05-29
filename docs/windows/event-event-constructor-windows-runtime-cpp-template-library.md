@@ -2,18 +2,13 @@
 title: "Event::Event Constructor (Windows Runtime C++ Template Library) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Event::Event"]
 dev_langs: ["C++"]
 ms.assetid: 21495297-9612-4095-9256-16e168cc0021
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Event::Event Constructor (Windows Runtime C++ Template Library)

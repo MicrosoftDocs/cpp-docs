@@ -2,36 +2,31 @@
 title: "Walkthrough: Adding a CTaskDialog to an Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTaskDialog, adding", "walkthroughs [MFC], dialogs"]
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adding a CTaskDialog to an Application
 This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) and shows you how to add one to your application.  
   
- The `CTaskDialog` is a task dialog box that replaces the Windows message box in [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]. The `CTaskDialog` improves the original message box and adds functionality. The Windows message box is still supported in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+ The `CTaskDialog` is a task dialog box that replaces the Windows message box in Windows Vista or later. The `CTaskDialog` improves the original message box and adds functionality. The Windows message box is still supported in Visual Studio.  
   
 > [!NOTE]
->  Versions of Windows earlier than [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)] do not support the `CTaskDialog`. You must program an alternative dialog box option if you want to show a message to a user who runs your application on an earlier version of Windows. You can use the static method [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) to determine at run time whether a user's computer can display a `CTaskDialog`. In addition, the `CTaskDialog` is only available when your application is built with the Unicode library.  
+> Versions of Windows earlier than Windows Vista do not support the `CTaskDialog`. You must program an alternative dialog box option if you want to show a message to a user who runs your application on an earlier version of Windows. You can use the static method [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) to determine at run time whether a user's computer can display a `CTaskDialog`. In addition, the `CTaskDialog` is only available when your application is built with the Unicode library.  
   
  The `CTaskDialog` supports several optional elements to gather and display information. For example, a `CTaskDialog` can display command links, customized buttons, customized icons, and a footer. The `CTaskDialog` also has several methods that enable you to query the state of the task dialog box to determine what optional elements the user selected.  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
-- [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)]  
+- Visual Studio 2010 or later  
   
-- [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]  
+- Windows Vista or later  
   
 ## Replacing a Windows Message Box with a CTaskDialog  
  The following procedure demonstrates the most basic use of the `CTaskDialog`, which is to replace the Windows message box. This example also changes the icon associated with the task dialog box. Changing the icon makes the `CTaskDialog` appear identical to the Windows message box.  

@@ -2,19 +2,14 @@
 title: "Accessing Version Information from Within Your Program | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VerQueryValue", "version information, accessing from within programs", "GetFileVersionInfo", "version information"]
 ms.assetid: 18622333-d9e8-4309-9465-677cd10c79b1
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Accessing Version Information from Within Your Program

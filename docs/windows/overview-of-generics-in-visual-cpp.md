@@ -2,18 +2,13 @@
 title: "Overview of Generics in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["generics [C++], about generics", "default initializers [C++]", "type parameters [C++]", "constructed types", "type arguments [C++]", "constructed types, open [C++]", "open constructed types [C++]", "constructed types, closed [C++]"]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Overview of Generics in Visual C++

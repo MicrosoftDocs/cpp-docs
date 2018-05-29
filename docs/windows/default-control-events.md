@@ -2,18 +2,13 @@
 title: "Default Control Events | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Dialog editor, default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls, events"]
 ms.assetid: 75556b23-18f5-4390-97a4-2ecad3309741
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Default Control Events

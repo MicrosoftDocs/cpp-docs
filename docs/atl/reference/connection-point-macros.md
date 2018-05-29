@@ -2,19 +2,14 @@
 title: "Connection Point Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_CONNECTION_POINT_MAP", "atlcom/ATL::END_CONNECTION_POINT_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], macros"]
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Connection Point Macros

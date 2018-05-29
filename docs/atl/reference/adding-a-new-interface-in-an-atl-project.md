@@ -2,19 +2,14 @@
 title: "Adding a New Interface in an ATL Project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.interface"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, adding to ATL objects", "Implement Interface ATL wizard", "controls [ATL], interfaces", "ATL projects, adding interfaces"]
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a New Interface in an ATL Project

@@ -2,19 +2,14 @@
 title: "equal_range (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::equal_range"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["equal_range function [STL/CLR]"]
 ms.assetid: 1b2e76c3-6b52-486d-9785-2639b54277fd
-caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # equal_range (STL/CLR)

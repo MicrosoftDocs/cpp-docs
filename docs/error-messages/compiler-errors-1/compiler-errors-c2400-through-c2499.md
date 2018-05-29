@@ -2,19 +2,14 @@
 title: "Compiler Errors C2400 Through C2499 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
-f1_keywords: ["C2416", "C2429", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
-helpviewer_keywords: ["C2416", "C2429", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
+f1_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
+helpviewer_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
 dev_langs: ["C++"]
 ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2400 Through C2499
@@ -56,7 +51,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C2426](compiler-error-c2426.md)|'*token*': illegal operator in '*context*'|
 |[Compiler Error C2427](compiler-error-c2427.md)|'*class*': cannot define class in this scope|
 |[Compiler Error C2428](compiler-error-c2428.md)|'*operation*': not allowed on operand of type 'bool'|
-|Compiler Error C2429|*Context* '*context*' requires compiler flag '*option*'|
+|[Compiler Error C2429](compiler-error-c2429.md)|'*language feature*' requires compiler flag '*compiler option*'|
 |[Compiler Error C2430](compiler-error-c2430.md)|more than one index register in '*context*'|
 |[Compiler Error C2431](compiler-error-c2431.md)|illegal index register in '*context*'|
 |[Compiler Error C2432](compiler-error-c2432.md)|illegal reference to 16-bit data in '*context*'|

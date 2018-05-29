@@ -2,15 +2,10 @@
 title: "Overview of potential upgrade issues (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Overview of potential upgrade issues (Visual C++)

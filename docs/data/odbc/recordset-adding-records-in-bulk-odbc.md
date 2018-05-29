@@ -2,18 +2,13 @@
 title: "Recordset: Adding Records in Bulk (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, adding records", "recordsets, adding records", "bulk record additions to recordsets"]
 ms.assetid: 4685f656-14b9-4f10-a1c5-147b2b89a0b4
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Adding Records in Bulk (ODBC)

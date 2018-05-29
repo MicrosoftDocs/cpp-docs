@@ -1,18 +1,13 @@
 ---
 title: "Adding a Property to the Control (ATL Tutorial, Part 3) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-atl"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Property to the Control (ATL Tutorial, Part 3)
@@ -54,7 +49,7 @@ ms.workload: ["cplusplus"]
   
      [!code-cpp[NVC_ATL_Windowing#46](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_3.cpp)]  
   
- The `get_Sides` method returns the current value of the `Sides` property through the `pVal` pointer. In the `put_Sides` method, the code ensures the user is setting the `Sides` property to an acceptable value. The minimum must be 2, and because an array of points will be used for each side, 100 is a reasonable limit for a maximum value.  
+ The `get_Sides` method returns the current value of the `Sides` property through the `pVal` pointer. In the `put_Sides` method, the code ensures the user is setting the `Sides` property to an acceptable value. The minimum must be 3, and because an array of points will be used for each side, 100 is a reasonable limit for a maximum value.  
   
  You now have a property called `Sides`. In the next step, you will change the drawing code to use it.  
   

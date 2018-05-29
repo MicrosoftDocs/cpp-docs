@@ -2,19 +2,14 @@
 title: "Menus and Resources: Container Additions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["IDP_OLE_INIT_FAILED", "IDP_FAILED_TO_CREATE", "VK_ESCAPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["application accelerator table [MFC]", "VK_ESCAPE key [MFC]", "IDP_FAILED_TO_CREATE macro [MFC]", "visual editing, application menus and resources", "OLE containers [MFC], menus and resources", "accelerator tables [MFC], container applications", "IDP_OLE_INIT_FAILED macro [MFC]", "CONTAIN tutorial [MFC]", "Links menu item [MFC]"]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Menus and Resources: Container Additions

@@ -2,19 +2,14 @@
 title: "cancellation_token Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-concrt"]
 ms.topic: "reference"
 f1_keywords: ["cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::deregister_callback", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_cancelable", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_canceled", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::none", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::register_callback"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token class"]
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cancellation_token Class

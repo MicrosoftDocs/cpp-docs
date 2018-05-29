@@ -2,17 +2,12 @@
 title: "Using accelerator and accelerator_view Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-amp"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using accelerator and accelerator_view Objects

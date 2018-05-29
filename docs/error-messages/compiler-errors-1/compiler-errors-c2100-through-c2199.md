@@ -2,19 +2,14 @@
 title: "Compiler Errors C2100 through C2199 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
 helpviewer_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
 dev_langs: ["C++"]
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2100 through C2199

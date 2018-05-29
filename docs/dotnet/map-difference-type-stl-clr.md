@@ -2,19 +2,14 @@
 title: "map::difference_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::map::difference_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["difference_type member [STL/CLR]"]
 ms.assetid: 22c80391-f97b-4ac4-9e2d-7f4caa2c5ac8
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::difference_type (STL/CLR)

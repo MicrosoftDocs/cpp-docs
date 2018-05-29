@@ -2,19 +2,14 @@
 title: "-utf-8 (Set Source and Executable character sets to UTF-8) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/utf-8"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/utf-8 compiler option"]
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /utf-8 (Set Source and Executable character sets to UTF-8)

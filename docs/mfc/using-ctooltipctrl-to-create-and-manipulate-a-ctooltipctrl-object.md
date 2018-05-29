@@ -2,19 +2,14 @@
 title: "Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CToolTipCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tool tips [MFC], creating", "CToolTipCtrl class [MFC], using"]
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object

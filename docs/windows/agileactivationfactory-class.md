@@ -2,18 +2,13 @@
 title: "AgileActivationFactory Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::AgileActivationFactory"]
 dev_langs: ["C++"]
 ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
-caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AgileActivationFactory Class

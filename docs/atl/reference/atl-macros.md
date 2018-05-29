@@ -2,18 +2,13 @@
 title: "ATL Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, macros", "macros, ATL"]
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ATL Macros
@@ -81,6 +76,6 @@ To find an ATL macro by category, see the following topics.
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   
- [Structures](../../atl/reference/atl-structures.md)   
+ [Classes and structs](../../atl/reference/atl-classes.md)  
  [Typedefs](../../atl/reference/atl-typedefs.md)   
- [Classes](../../atl/reference/atl-classes.md)
+

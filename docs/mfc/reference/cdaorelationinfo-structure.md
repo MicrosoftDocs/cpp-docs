@@ -2,19 +2,14 @@
 title: "CDaoRelationInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CDaoRelationInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), Relations collection", "CDaoRelationInfo structure [MFC]"]
 ms.assetid: 92dda090-fe72-4090-84ec-429498a48aad
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoRelationInfo Structure

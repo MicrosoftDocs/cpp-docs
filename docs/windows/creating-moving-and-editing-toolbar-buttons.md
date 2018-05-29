@@ -2,18 +2,13 @@
 title: "Creating, Moving, and Editing Toolbar Buttons | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["buttons, custom toolbars", "toolbar buttons (in Toolbar editor), editing", "buttons", "toolbar buttons (in Toolbar editor), creating"]
 ms.assetid: d0f0c6c6-9d7e-42b5-a86a-7558127386e7
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating, Moving, and Editing Toolbar Buttons

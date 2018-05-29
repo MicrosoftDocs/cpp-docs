@@ -3,13 +3,12 @@ title: "How to: Enable a 64-Bit Visual C++ Toolset on the Command Line | Microso
 ms.custom: ""
 ms.date: "03/29/2018"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["x64 [C++]", "64-bit compiler [C++], command line usage", "64-bit compiler [C++], toolset enabling at command line", "command line [C++], 64-bit compiler", "Itanium [C++], command-line compiler", "IPF", "Itanium [C++]", "IPF, command-line compiler", "x64 [C++], command-line compiler"]
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Enable a 64-Bit, x64 hosted Visual C++ toolset on the command line
