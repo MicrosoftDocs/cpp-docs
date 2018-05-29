@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
   
  In code compiled as C, a universal character name may not represent a character in the range 0000-009F, inclusive, with the exceptions of 0024 ('$'), 0040 ('@') and 0060 ('`').  
   
- In code compiled as C++, a universal character name may use any valid Unicode code point in a string or character literal. Outside of a literal, a universal character name may not represent a control character in the ranges 0000-001F or 007F-009F, both inclusive, or a member of the basic source character set.  For more information, see [Character Sets](../../cpp/character-sets2.md).  
+ In code compiled as C++, a universal character name may use any valid Unicode code point in a string or character literal. Outside of a literal, a universal character name may not represent a control character in the ranges 0000-001F or 007F-009F, both inclusive, or a member of the basic source character set.  For more information, see [Character Sets](../../cpp/character-sets.md).  
   
 ## Example  
  The following sample generates C3850, and shows how to fix it:  
