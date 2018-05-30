@@ -155,6 +155,7 @@
 ## [Linker Tools Error LNK1312](linker-tools-error-lnk1312.md)
 ## [Linker Tools Error LNK1313](linker-tools-error-lnk1313.md)
 ## [Linker Tools Error LNK1314](linker-tools-error-lnk1314.md)
+## [Linker Tools Error LNK1314](linker-tools-error-lnk1318.md)
 ## [Linker Tools Error LNK1332](linker-tools-error-lnk1332.md)
 ## [Linker Tools Error LNK1561](linker-tools-error-lnk1561.md)
 ## [Linker Tools Error LNK2001](linker-tools-error-lnk2001.md)

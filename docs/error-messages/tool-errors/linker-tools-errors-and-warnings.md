@@ -121,6 +121,8 @@ LINK, LIB, DUMPBIN, and EDITBIN generate these errors and warnings.
 
 [Linker Tools Error LNK1314](../../error-messages/tool-errors/linker-tools-error-lnk1314.md)
 
+[Linker Tools Error LNK1318](../../error-messages/tool-errors/linker-tools-error-lnk1318.md)
+
 [Linker Tools Error LNK1332](../../error-messages/tool-errors/linker-tools-error-lnk1332.md)
 
 [Linker Tools Error LNK1561](../../error-messages/tool-errors/linker-tools-error-lnk1561.md)
