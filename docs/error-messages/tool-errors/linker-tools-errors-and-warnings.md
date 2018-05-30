@@ -173,6 +173,8 @@ LINK, LIB, DUMPBIN, and EDITBIN generate these errors and warnings.
 
 [Linker Tools Warning LNK4014](../../error-messages/tool-errors/linker-tools-warning-lnk4014.md)
 
+[Linker Tools Warning LNK4020](../../error-messages/tool-errors/linker-tools-warning-lnk4020.md)
+
 [Linker Tools Warning LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md)
 
 [Linker Tools Warning LNK4039](../../error-messages/tool-errors/linker-tools-warning-lnk4039.md)
