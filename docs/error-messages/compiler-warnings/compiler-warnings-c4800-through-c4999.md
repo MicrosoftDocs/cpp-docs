@@ -139,10 +139,10 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning C5035|use of feature '*feature*' causes function *function* to be compiled as guest code|
 |Compiler warning (level 1) C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'|
 |Compiler warning (error) C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments|
-|[Compiler warning C5038](c5038.md)|data member '*member1*' will be initialized after data member '*member2*'|
-|Compiler warning C5039|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.|
-|Compiler warning C5040|dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false)|
-|Compiler warning C5041|'*definition*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17|
-|Compiler warning C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier|
-|Compiler warning C5043|'*specification*': exception specification does not match previous declaration|
-|Compiler warning C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|
+|[Compiler warning (level 4) C5038](c5038.md)|data member '*member1*' will be initialized after data member '*member2*'|
+|Compiler warning (level 4) C5039|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.|
+|Compiler warning (level 3) C5040|dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false)|
+|Compiler warning (level 1) C5041|'*definition*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17|
+|Compiler warning (level 3) C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier|
+|Compiler warning (level 2) C5043|'*specification*': exception specification does not match previous declaration|
+|Compiler warning (level 4) C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|

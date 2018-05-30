@@ -12,7 +12,7 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings by compiler version
 
-The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible. 
+The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
 
 These versions of the compiler introduced new warnings:
 
@@ -29,26 +29,35 @@ These versions of the compiler introduced new warnings:
 | Visual C++ 2015 Update 1 | 19.00.23506.0 |
 | Visual C++ 2015 Update 2 | 19.00.23918.0 |
 | Visual C++ 2015 Update 3 | 19.00.24215.1 |
-| Visual C++ 2017 RTM | 19.10.24903.0 |
-| Visual C++ 2017 version 15.1 | 19.10.25017.0 |
+| Visual C++ 2017 RTM | 19.10.25017.0 |
 | Visual C++ 2017 version 15.3 | 19.11.25506.0 |
-| Visual C++ 2017 version 15.5 | 19.12.25827.0 |
+| Visual C++ 2017 version 15.5 | 19.12.25830.0 |
+| Visual C++ 2017 version 15.6 | 19.13.26128.0 |
+| Visual C++ 2017 version 15.7 | 19.14.26428.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings which match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the __/Wv__ compiler option. The __/Wv__ option can't suppress warnings that are not listed, which predate the specified versions of the compiler.
 
-## Warnings introduced in Visual C++ 2017 version 15.5 (compiler version 19.12.25827.0)
+## Warnings introduced in Visual C++ 2017 version 15.7 (compiler version 19.14.26428.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.11__.
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.13__.
 
 |||
 |-|-|
 C5044|An argument to command-line option *option* points to a path '*path*' that does not exist
 
-## Warnings introduced in Visual C++ 2017 version 15.3 (compiler version 19.11.25506.0)
+## Warnings introduced in Visual C++ 2017 version 15.6 (compiler version 19.13.26128.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.10__.
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.12__.
+
+|||
+|-|-|
+C5044|An argument to command-line option *option* points to a path '*path*' that does not exist
+
+## Warnings introduced in Visual C++ 2017 version 15.5 (compiler version 19.12.25830.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.11__.
 
 |||
 |-|-|
@@ -60,9 +69,9 @@ C5041|'*definition*': out-of-line definition for constexpr static data member is
 C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier
 C5043|'*specification*': exception specification does not match previous declaration
 
-## Warnings introduced in Visual C++ 2017 version 15.1 (compiler version 19.10.25017.0)
+## Warnings introduced in Visual C++ 2017 version 15.3 (compiler version 19.11.25506.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.10.24903__.
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.10__.
 
 |||
 |-|-|
@@ -81,7 +90,7 @@ C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '
 C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments
 C5038|data member '*member1*' will be initialized after data member '*member2*'
 
-## Warnings introduced in Visual C++ 2017 RTM (compiler version 19.10.24903)
+## Warnings introduced in Visual C++ 2017 RTM (compiler version 19.10.25017.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00__.
 
@@ -154,15 +163,15 @@ C4498|nonstandard extension used: '*extension*'
 C4499|'*specialization*': an explicit specialization cannot have a storage class (ignored)
 C4576|a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
 C4577|'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
-C4578|'abs': conversion from '*type*' to '*type*', possible loss of data (Did you mean to call '*name*' or to #include <cmath>?)
+C4578|'abs': conversion from '*type*' to '*type*', possible loss of data (Did you mean to call '*name*' or to #include \<cmath>?)
 C4582|'*type*': constructor is not implicitly called
 C4583|'*type*': destructor is not implicitly called
 C4587|'*type*': behavior change: constructor is no longer implicitly called
 C4588|'*type*': behavior change: destructor is no longer implicitly called
 C4589|Constructor of abstract class '*type*' ignores initializer for virtual base class '*type*'
-C4591|'constexpr' call-depth limit of *number* exceeded (/constexpr:depth<NUMBER>)
+C4591|'constexpr' call-depth limit of *number* exceeded (/constexpr:depth\<NUMBER>)
 C4592|'*type*': symbol will be dynamically initialized (implementation limitation)
-C4593|'*type*': 'constexpr' call evaluation step limit of *value* exceeded; use /constexpr:steps<NUMBER> to increase the limit
+C4593|'*type*': 'constexpr' call evaluation step limit of *value* exceeded; use /constexpr:steps\<NUMBER> to increase the limit
 C4647|behavior change: __is_pod(*type*) has different value in previous versions
 C4648|standard attribute 'carries_dependency' is ignored
 C4649|attributes are ignored in this context
@@ -367,10 +376,10 @@ C4633|XML document comment*description*: error: *description*
 C4634|XML document comment*description*: cannot be applied: *description*
 C4635|XML document comment*description*: badly-formed XML: *description*
 C4636|XML document comment*description*: tag requires non-empty '*description*' attribute.
-C4637|XML document comment*description*: <include> tag discarded. *description*
+C4637|XML document comment*description*: \<include> tag discarded. *description*
 C4638|XML document comment*description*: reference to unknown symbol '*description*'.
 C4639|MSXML error, XML document comments will not be processed. *description*
-C4641|XML document comment has an ambiguous cross reference: 
+C4641|XML document comment has an ambiguous cross reference:
 C4678|base class '*declaration*' is less accessible than '*name*'
 C4679|'*description*': could not import member
 C4687|'*type*': a sealed abstract class cannot implement an interface '*type*'
@@ -615,7 +624,8 @@ C4996|'*issue*': *description*
 C4997|'*type*': coclass does not implement a COM interface or pseudo-interface
 C4998|EXPECTATION FAILED: *description*(*number*)
 
-## See Also
-[/Wv compiler option](../../build/reference/compiler-option-warning-level.md)
-[Compiler Warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
-[warning](../../preprocessor/warning.md)
+## See also
+
+- [/Wv compiler option](../../build/reference/compiler-option-warning-level.md)
+- [Compiler Warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
+- [warning](../../preprocessor/warning.md)
