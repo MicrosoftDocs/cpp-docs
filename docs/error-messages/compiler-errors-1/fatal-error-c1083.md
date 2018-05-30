@@ -96,6 +96,8 @@ When a project is configured to use precompiled headers, the relevant .pch files
 
 - The file is compiled by using a different **/analyze** compiler option setting than is used to precompile the headers. When the headers for a project are precompiled, all should use the same **/analyze** settings. For more information, see [/analyze (Code Analysis)](../../build/reference/analyze-code-analysis.md).
 
+- The file or directory was created by the Windows Subsystem for Linux, per-directory case sensitivity is enabled, and the specified case of a path or file does not match the case of the path or file on disk.
+
 - The file, the directory, or the disk is read-only.
 
 - Visual Studio or the command line tools do not have sufficient permissions to read the file or the directory. This can happen, for example, when the project files have different ownership than the process running Visual Studio or the command line tools. Sometimes this issue can be fixed by running Visual Studio or the developer command prompt as Administrator.
@@ -117,4 +119,4 @@ For information about how to build C/C++ projects in the IDE or on the command l
 
 ## See also
 
-[MSBuild Properties](/visualstudio/msbuild/msbuild-properties)
+- [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)
