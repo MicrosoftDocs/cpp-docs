@@ -1,7 +1,7 @@
 ---
 title: "_get_osfhandle | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/12/2017"
+ms.date: "05/29/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 apiname: ["_get_osfhandle"]
@@ -34,7 +34,7 @@ An existing file descriptor.
 
 ## Return Value
 
-Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **INVALID_HANDLE_VALUE** (-1) and sets **errno** to **EBADF**, indicating an invalid file handle.
+Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **INVALID_HANDLE_VALUE** (-1) and sets **errno** to **EBADF**, indicating an invalid file handle. To avoid a compiler warning when the result is used in routines that expect a Win32 file handle, cast it to a **HANDLE** type.
 
 ## Remarks
 
