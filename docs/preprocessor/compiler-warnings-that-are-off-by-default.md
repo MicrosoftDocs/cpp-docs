@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warnings That Are Off by Default | Microsoft Docs"
-ms.date: "11/04/2016"
+ms.date: "05/30/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
