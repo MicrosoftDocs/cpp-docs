@@ -21,7 +21,7 @@ Specifies compiler generation of instructions to mitigate certain Spectre varian
 
 ## Remarks
 
-The **/Qspectre** option causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
+The **/Qspectre** option is available in Visual Studio 2017 version 15.7 and later. It causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
 
 The **/Qspectre** option is off by default.
 

@@ -607,7 +607,7 @@ The object created by the constructors is fully initialized as soon as any const
 
 ## <a name="inheriting_constructors"></a> Inheriting constructors (C++11)
 
-A derived class can inherit the constructors from a direct base class by using a using declaration as shown in the following example:
+A derived class can inherit the constructors from a direct base class by using a **using** declaration as shown in the following example:
 
 ```cpp
 #include <iostream>
@@ -657,7 +657,7 @@ Derived d4 calls: Base()*/
 
 ```
 
-The using statement brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors.
+**Visual Studio 2017 version 15.7 and later**: The **using** statement in **/std:C++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](../cpp-conformance-improvements-2017.md#improvements_157).
 
 A class template can inherit all the constructors from a type argument if that type specifies a base class:
 
