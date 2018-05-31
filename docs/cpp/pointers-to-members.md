@@ -77,7 +77,7 @@ int main()
 }  
 ```  
   
- In the preceding example, `pwCaption` is a pointer to any member of class `Window` that has type **char\***. The type of `pwCaption` is `char * Window::*`. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.  
+ In the preceding example, `pwCaption` is a pointer to any member of class `Window` that has type **char\***. The type of `pwCaption` is `char * Window::* `. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.  
   
 ```  
 const char * (Window::*pfnwGC)() = &Window::GetCaption;  
