@@ -30,6 +30,7 @@ These are the `/Zc` compiler options:
 |---|---|
 |[alignedNew\[-\]](zc-alignednew.md)|Enable C++17 over-aligned dynamic allocation (on by default in C++17).|
 |[auto\[-\]](zc-auto-deduce-variable-type.md)|Enforce the new Standard C++ meaning for `auto` (on by default).|
+|[__cplusplus\[-\]](zc-cplusplus.md)|Enable the **__cplusplus** macro to report the supported standard (off by default).|
 |[externConstexpr\[-\]](zc-externconstexpr.md)|Enable external linkage for `constexpr` variables (off by default).|
 |[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|Enforce Standard C++ `for` scoping rules (on by default).|
 |[implicitNoexcept\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md)|Enable implicit `noexcept` on required functions (on by default).|
