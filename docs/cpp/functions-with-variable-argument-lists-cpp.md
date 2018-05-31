@@ -31,7 +31,7 @@ Function declarations in which the last member of  is the ellipsis (...) can tak
   
  The following example shows how the macros work together with the type (declared in \<stdarg.h>): 
   
-```  
+```cpp  
 // variable_argument_lists.cpp  
 #include <stdio.h>  
 #include <stdarg.h>  
