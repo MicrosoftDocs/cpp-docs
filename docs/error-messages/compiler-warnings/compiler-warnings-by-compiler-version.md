@@ -45,7 +45,8 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 |||
 |-|-|
-C5044|An argument to command-line option *option* points to a path '*path*' that does not exist
+C4642|'*issue*': could not import the constraints for generic parameter '*parameter*'
+C5045|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
 
 ## Warnings introduced in Visual C++ 2017 version 15.6 (compiler version 19.13.26128.0)
 
