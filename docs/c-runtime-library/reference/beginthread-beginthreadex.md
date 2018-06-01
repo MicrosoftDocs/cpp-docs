@@ -111,7 +111,7 @@ The operating system handles the allocation of the stack when either **_beginthr
 
 The locale of the new thread is initialized by using the per-process global current locale info. If per-thread locale is enabled by a call to [_configthreadlocale](configthreadlocale.md) (either globally or for new threads only), the thread can change its locale independently from other threads by calling **setlocale** or **_wsetlocale**. Threads that don't have the per-thread locale flag set can affect the locale info in all other threads that also don't have the per-thread locale flag set, as well as all newly-created threads. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-For mixed and pure code, **_beginthread** and **_beginthreadex** each have two overloads. One takes a native calling-convention function pointer, and the other takes a **__clrcall** function pointer. The first overload is not application domain-safe and never will be. If you are writing mixed or pure code you must ensure that the new thread enters the correct application domain before it accesses managed resources. You can do this, for example, by using [call_in_appdomain Function](../../dotnet/call-in-appdomain-function.md). The second overload is application domain-safe; the newly created thread will always end up in the application domain of the caller of **_beginthread** or **_beginthreadex**.
+For **/clr** code, **_beginthread** and **_beginthreadex** each have two overloads. One takes a native calling-convention function pointer, and the other takes a **__clrcall** function pointer. The first overload is not application domain-safe and never will be. If you are writing **/clr** code you must ensure that the new thread enters the correct application domain before it accesses managed resources. You can do this, for example, by using [call_in_appdomain Function](../../dotnet/call-in-appdomain-function.md). The second overload is application domain-safe; the newly created thread will always end up in the application domain of the caller of **_beginthread** or **_beginthreadex**.
 
 ## Requirements
 
@@ -300,8 +300,8 @@ Counter should be 1000000; it is-> 1000000
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_endthread, _endthreadex](endthread-endthreadex.md)<br/>
-[abort](abort.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_endthread, _endthreadex](endthread-endthreadex.md)
+- [abort](abort.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)

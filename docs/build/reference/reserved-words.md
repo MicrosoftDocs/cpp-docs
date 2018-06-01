@@ -1,5 +1,5 @@
 ---
-title: "Reserved Words | Microsoft Docs"
+title: "Reserved words | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
@@ -12,36 +12,38 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# Reserved Words
-The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](../../build/reference/module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").  
-  
-||||  
-|-|-|-|  
-|**APPLOADER**1|**INITINSTANCE**2|**PRELOAD**|  
-|**BASE**|**IOPL**|**PRIVATE**|  
-|**CODE**|**LIBRARY**1|**PROTMODE**2|  
-|**CONFORMING**|**LOADONCALL**1|**PURE**1|  
-|**DATA**|**LONGNAMES**2|**READONLY**|  
-|**DESCRIPTION**|**MOVABLE**1|**READWRITE**|  
-|**DEV386**|**MOVEABLE**1|**REALMODE**1|  
-|**DISCARDABLE**|**MULTIPLE**|**RESIDENT**|  
-|**DYNAMIC**|**NAME**|**RESIDENTNAME**1|  
-|**EXECUTE-ONLY**|**NEWFILES**2|**SECTIONS**|  
-|**EXECUTEONLY**|**NODATA**1|**SEGMENTS**|  
-|**EXECUTEREAD**|**NOIOPL**1|**SHARED**|  
-|**EXETYPE**|**NONAME**|**SINGLE**|  
-|**EXPORTS**|**NONCONFORMING**1|**STACKSIZE**|  
-|**FIXED**1|**NONDISCARDABLE**|**STUB**|  
-|**FUNCTIONS**2|**NONE**|**VERSION**|  
-|**HEAPSIZE**|**NONSHARED**|**WINDOWAPI**|  
-|**IMPORTS**|**NOTWINDOWCOMPAT**1|**WINDOWCOMPAT**|  
-|**IMPURE**1|**OBJECTS**|**WINDOWS**|  
-|**INCLUDE**2|**OLD**1||  
-  
- 1 The linker emits a warning ("ignored") when it encounters this term. However, the word is still reserved.  
-  
- 2 The linker ignores this word but emits no warning.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+# Reserved words
+
+The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](../../build/reference/module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").
+
+||||
+|-|-|-|
+|**APPLOADER**<sup>1</sup>|**INITINSTANCE**<sup>2</sup>|**PRELOAD**|
+|**BASE**|**IOPL**|**PRIVATE**|
+|**CODE**|**LIBRARY**<sup>1</sup>|**PROTMODE**<sup>2</sup>|
+|**CONFORMING**|**LOADONCALL**<sup>1</sup>|**PURE**<sup>1</sup>|
+|**DATA**|**LONGNAMES**<sup>2</sup>|**READONLY**|
+|**DESCRIPTION**|**MOVABLE**<sup>1</sup>|**READWRITE**|
+|**DEV386**|**MOVEABLE**<sup>1</sup>|**REALMODE**<sup>1</sup>|
+|**DISCARDABLE**|**MULTIPLE**|**RESIDENT**|
+|**DYNAMIC**|**NAME**|**RESIDENTNAME**<sup>1</sup>|
+|**EXECUTE-ONLY**|**NEWFILES**<sup>2</sup>|**SECTIONS**|
+|**EXECUTEONLY**|**NODATA**<sup>1</sup>|**SEGMENTS**|
+|**EXECUTEREAD**|**NOIOPL**<sup>1</sup>|**SHARED**|
+|**EXETYPE**|**NONAME**|**SINGLE**|
+|**EXPORTS**|**NONCONFORMING**<sup>1</sup>|**STACKSIZE**|
+|**FIXED**<sup>1</sup>|**NONDISCARDABLE**|**STUB**|
+|**FUNCTIONS**<sup>2</sup>|**NONE**|**VERSION**|
+|**HEAPSIZE**|**NONSHARED**|**WINDOWAPI**|
+|**IMPORTS**|**NOTWINDOWCOMPAT**<sup>1</sup>|**WINDOWCOMPAT**|
+|**IMPURE**<sup>1</sup>|**OBJECTS**|**WINDOWS**|
+|**INCLUDE**<sup>2</sup>|**OLD**<sup>1</sup>||
+
+<sup>1</sup> The linker emits a warning ("ignored") when it encounters this term. However, the word is still reserved.
+
+<sup>2</sup> The linker ignores this word but emits no warning.
+
+## See also
+
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)
