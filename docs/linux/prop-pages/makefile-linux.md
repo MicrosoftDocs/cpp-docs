@@ -84,7 +84,7 @@ Include Search Path | Specifies the include search path for resolving included f
 Forced Includes | Specifies the files that are forced included.
 Preprocessor Definitions | Specifies the preprocessor defines used by the source files.
 Undefine Preprocessor Definitions | Specifies one or more preprocessor undefines.     (/U[macro])
-Additional Options | Specifies additional compiler switches to be used by Intellisense when parsing C++ files.
+Additional Options | Specifies additional compiler switches to be used by IntelliSense when parsing C++ files.
 
 ### Build
 

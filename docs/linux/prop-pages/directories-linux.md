@@ -16,5 +16,5 @@ Property | Description
 --- | ---
 Include Directories | Path to use when searching for include files while building a VC++ project.  Corresponds to environment variable INCLUDE.
 Library Directories | Path to use when searching for library files while building a VC++ project.  Corresponds to environment variable LIB.
-Source Directories | Path to use when searching for source files to use for Intellisense.
+Source Directories | Path to use when searching for source files to use for IntelliSense.
 Exclude Directories | Path to skip when searching for scan dependencies.
