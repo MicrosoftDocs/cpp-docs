@@ -35,7 +35,7 @@ IntelliSense fails to operate in the IDE for Visual C++ makefile projects when c
   
     -   Set the **Forced Using Assemblies** property to specify which .NET assemblies to process when building your makefile project. See [/FU (Name Forced #using File)](../build/reference/fu-name-forced-hash-using-file.md), for more information.  
   
-    -   Set the **Additional Options** property to specify additional compiler switches to be used by Intellisense when parsing C++ files.  
+    -   Set the **Additional Options** property to specify additional compiler switches to be used by IntelliSense when parsing C++ files.  
   
 4.  Click **OK** to close the property pages.  
   

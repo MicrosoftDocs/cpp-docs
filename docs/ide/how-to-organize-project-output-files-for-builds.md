@@ -20,7 +20,7 @@ This topic describes best practices for organizing project output files. Build e
   
 1.  You can reference an assembly directly from your code by using the #using directive, such as `#using <System.Data.dll>`. For more information, see [#using Directive](../preprocessor/hash-using-directive-cpp.md).  
   
-     The file specified can be a .dll, .exe, .netmodule, or .obj, as long as it is in MSIL. The referenced component can be built in any language. Using this option, you will have access to Intellisense since the metadata will be extracted from the MSIL. The file in question must be in the path for the project; otherwise, the project will not compile and Intellisense will not be available. An easy way to determine whether the file is in the path is to right-click on the #using line and choose the **Open document** command. You will be notified if the file cannot be found.  
+     The file specified can be a .dll, .exe, .netmodule, or .obj, as long as it is in MSIL. The referenced component can be built in any language. Using this option, you will have access to IntelliSense since the metadata will be extracted from the MSIL. The file in question must be in the path for the project; otherwise, the project will not compile and IntelliSense will not be available. An easy way to determine whether the file is in the path is to right-click on the #using line and choose the **Open document** command. You will be notified if the file cannot be found.  
   
      If you do not want to put the full path to the file, you can use the **/AI** compiler option to edit the search path for #using references. For more information, see [/AI (Specify Metadata Directories)](../build/reference/ai-specify-metadata-directories.md).  
   

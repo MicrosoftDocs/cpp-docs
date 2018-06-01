@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # XML Documentation (Visual C++)
 In Visual C++, you can add comments to your source code that will be processed to an .xml file. This file can then be the input to a process that creates documentation for the classes in your code.  
   
- In a Visual C++ code file, XML documentation comments must be located directly prior to a method or type definition. The comments can be used to populate the Intellisense QuickInfo data tip in the following scenarios:  
+ In a Visual C++ code file, XML documentation comments must be located directly prior to a method or type definition. The comments can be used to populate the IntelliSense QuickInfo data tip in the following scenarios:  
   
 1.  when the code is compiled as a Windows Runtime component with an accompanying .winmd file  
   

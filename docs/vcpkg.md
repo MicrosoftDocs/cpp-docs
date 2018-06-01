@@ -112,7 +112,7 @@ Run **vcpkg integrate install** to configure Visual Studio to locate all vcpkg h
 
 Now you can #include headers simply by typing the folder/header, and auto-complete assists you. No additional steps are required for linking to libs or adding project references. The following illustration shows how Visual Studio finds the azure-storage-cpp headers. vcpkg places its headers in the **/installed** subfolder, partitioned by target platform. The following diagram shows the list of include files in the **/was** subfolder for the library:
 
-![vcpkg Intellisense integration](media/vcpkg-intellisense.png "vcpkg and Intellisense")
+![vcpkg IntelliSense integration](media/vcpkg-intellisense.png "vcpkg and IntelliSense")
 
 ### Per project
 
