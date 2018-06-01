@@ -13,33 +13,39 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1313
-ijw/native module detected; cannot link with pure modules  
-  
- The current version of Visual C++ does not support linking native or mixed managed/native .obj files with .obj files compiled with **/clr:pure**.  
-  
-## Example  
-  
-```  
-// LNK1313.cpp  
-// compile with: /c /clr:pure  
-// a pure module  
-int main() {}  
-```  
-  
-## Example  
-  
-```  
-// LNK1313_b.cpp  
-// compile with: /c /clr  
-// an IJW module  
-void test(){}  
-```  
-  
-## Example  
- The following sample will generate LNK1313.  
-  
-```  
-// LNK1313_c.cpp  
-// compile with: /link LNK1313.obj LNK1313_b.obj  
-// LNK1313 warning expected  
+
+> ijw/native module detected; cannot link with pure modules
+
+## Remarks
+
+The current version of Visual C++ does not support linking native or mixed managed/native .obj files with .obj files compiled with **/clr:pure**.
+
+The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+
+## Example
+
+```cpp
+// LNK1313.cpp
+// compile with: /c /clr:pure
+// a pure module
+int main() {}
+```
+
+## Example
+
+```cpp
+// LNK1313_b.cpp
+// compile with: /c /clr
+// an IJW module
+void test(){}
+```
+
+## Example
+
+The following sample will generate LNK1313.
+
+```cpp
+// LNK1313_c.cpp
+// compile with: /link LNK1313.obj LNK1313_b.obj
+// LNK1313 warning expected
 ```

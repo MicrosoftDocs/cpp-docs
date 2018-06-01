@@ -135,6 +135,7 @@
 #### [/Zc (Conformance)](zc-conformance.md)
 ##### [/Zc:alignedNew (C++17 over-aligned allocation)](zc-alignednew.md)
 ##### [/Zc:auto (Deduce Variable Type)](zc-auto-deduce-variable-type.md)
+##### [/Zc:__cplusplus (Enable updated __cplusplus macro)](zc-cplusplus.md)
 ##### [/Zc:externConstexpr (Enable extern constexpr variables)](zc-externconstexpr.md)
 ##### [/Zc:forScope (Force Conformance in for Loop Scope)](zc-forscope-force-conformance-in-for-loop-scope.md)
 ##### [/Zc:implicitNoexcept (Implicit Exception Specifiers)](zc-implicitnoexcept-implicit-exception-specifiers.md)

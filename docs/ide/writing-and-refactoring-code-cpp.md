@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 The Visual C++ code editor and IDE provide many coding aids. Some are unique to C++, and some are essentially the same for all Visual Studio languages. For more information about the shared features, see [Writing Code in the Code and Text Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Options for enabling and configuring C++-specific features are located under **Tools &#124; Options &#124; Text Editor &#124; C/C++**. After choosing which option you want to set, you can get more help by pressing **F1** when the dialog is in focus. For general code formatting options, type `Editor C++` into **QuickLaunch**.
 
-Experimental features, which may or may not be included in a future version of Visual Studio, are found in the [Text Editor C++ Experimental](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) dialog. In Visual Studio 2017 you can enable **Predictive Intellisense** in this dialog.
+Experimental features, which may or may not be included in a future version of Visual Studio, are found in the [Text Editor C++ Experimental](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) dialog. In Visual Studio 2017 you can enable **Predictive IntelliSense** in this dialog.
 
 ## Adding new files
 
@@ -34,7 +34,7 @@ IntelliSense is the name for a set of features that provide inline information a
 
 ![C&#43;&#43; member list drop down](../ide/media/vs2015_cpp_statement_completion.png "vs2015_cpp_statement_completion")
 
-For complete information see [Visual C++ Intellisense](/visualstudio/ide/visual-cpp-intellisense).
+For complete information see [Visual C++ IntelliSense](/visualstudio/ide/visual-cpp-intellisense).
 
 ## Insert Snippets
 
