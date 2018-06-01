@@ -82,7 +82,7 @@ For an arbitrary specialization, no members have meaningful values. A member obj
 Returns the smallest nonzero denormalized value.
 
 ```cpp
-static Type denorm_min() throw();
+static constexpr Type denorm_min() throw();
 ```
 
 ### Return Value
@@ -141,7 +141,7 @@ The smallest nonzero denormalized value
 Returns the number of radix digits that the type can represent without loss of precision.
 
 ```cpp
-static const int digits = 0;
+static constexpr int digits = 0;
 ```
 
 ### Return Value
@@ -185,7 +185,7 @@ int main( )
 Returns the number of decimal digits that the type can represent without loss of precision.
 
 ```cpp
-static const int digits10 = 0;
+static constexpr int digits10 = 0;
 ```
 
 ### Return Value
@@ -229,7 +229,7 @@ The float is; 100000000
 The function returns the difference between 1 and the smallest value greater than 1 that is representable for the data type.
 
 ```cpp
-static Type epsilon() throw();
+static constexpr Type epsilon() throw();
 ```
 
 ### Return Value
@@ -281,7 +281,7 @@ The difference between 1 and the smallest value greater than 1
 Tests whether a type allows denormalized values.
 
 ```cpp
-static const float_denorm_style has_denorm = denorm_absent;
+static constexpr float_denorm_style has_denorm = denorm_absent;
 ```
 
 ### Return Value
@@ -327,7 +327,7 @@ Whether long int objects allow denormalized values: 0
 Tests whether loss of accuracy is detected as a denormalization loss rather than as an inexact result.
 
 ```cpp
-static const bool has_denorm_loss = false;
+static constexpr bool has_denorm_loss = false;
 ```
 
 ### Return Value
@@ -373,7 +373,7 @@ Whether long int objects can detect denormalized loss: 0
 Tests whether a type has a representation for positive infinity.
 
 ```cpp
-static const bool has_infinity = false;
+static constexpr bool has_infinity = false;
 ```
 
 ### Return Value
@@ -419,7 +419,7 @@ Whether long int objects have infinity: 0
 Tests whether a type has a representation for a quiet not a number (NAN), which is nonsignaling.
 
 ```cpp
-static const bool has_quiet_NaN = false;
+static constexpr bool has_quiet_NaN = false;
 ```
 
 ### Return Value
@@ -465,7 +465,7 @@ Whether long int objects have quiet_NaN: 0
 Tests whether a type has a representation for signaling not a number (NAN).
 
 ```cpp
-static const bool has_signaling_NaN = false;
+static constexpr bool has_signaling_NaN = false;
 ```
 
 ### Return Value
@@ -511,7 +511,7 @@ Whether long int objects have a signaling_NaN: 0
 The representation of positive infinity for a type, if available.
 
 ```cpp
-static Type infinity() throw();
+static constexpr Type infinity() throw();
 ```
 
 ### Return Value
@@ -565,7 +565,7 @@ The representation of infinity for type long double is: inf
 Tests if the set of values that a type may represent is finite.
 
 ```cpp
-static const bool is_bounded = false;
+static constexpr bool is_bounded = false;
 ```
 
 ### Return Value
@@ -619,7 +619,7 @@ Whether unsigned char objects have bounded set of representable values: 1
 Tests if the calculations done on a type are free of rounding errors.
 
 ```cpp
-static const bool is_exact = false;
+static constexpr bool is_exact = false;
 ```
 
 ### Return Value
@@ -673,7 +673,7 @@ Whether unsigned char objects have calculations free of rounding errors: 1
 Tests if a type conforms to IEC 559 standards.
 
 ```cpp
-static const bool is_iec559 = false;
+static constexpr bool is_iec559 = false;
 ```
 
 ### Return Value
@@ -723,7 +723,7 @@ Whether unsigned char objects conform to iec559 standards: 0
 Tests if a type has an integer representation.
 
 ```cpp
-static const bool is_integer = false;
+static constexpr bool is_integer = false;
 ```
 
 ### Return Value
@@ -773,7 +773,7 @@ Whether unsigned char objects have an integral representation: 1
 Tests if a **type** has a modulo representation.
 
 ```cpp
-static const bool is_modulo = false;
+static constexpr bool is_modulo = false;
 ```
 
 ### Return Value
@@ -823,7 +823,7 @@ Whether unsigned char objects have a modulo representation: 1
 Tests if a type has a signed representation.
 
 ```cpp
-static const bool is_signed = false;
+static constexpr bool is_signed = false;
 ```
 
 ### Return Value
@@ -873,7 +873,7 @@ Whether unsigned char objects have a signed representation: 0
 Tests if a type has an explicit specialization defined in the template class `numeric_limits`.
 
 ```cpp
-static const bool is_specialized = false;
+static constexpr bool is_specialized = false;
 ```
 
 ### Return Value
@@ -927,7 +927,7 @@ Whether int* objects have an explicit specialization in the class: 0
 Returns the most negative finite value.
 
 ```cpp
-static Type lowest() throw();
+static constexpr Type lowest() throw();
 ```
 
 ### Return Value
@@ -943,7 +943,7 @@ Returns the most negative finite value for the type (which is typically `min()` 
 Returns the maximum finite value for a type.
 
 ```cpp
-static Type max() throw();
+static constexpr Type max() throw();
 ```
 
 ### Return Value
@@ -985,7 +985,7 @@ int main() {
 Returns the number of decimal digits required to make sure that two distinct values of the type have distinct decimal representations.
 
 ```cpp
-static int max_digits10 = 0;
+static constexpr int max_digits10 = 0;
 ```
 
 ### Return Value
@@ -1001,7 +1001,7 @@ The member stores the number of decimal digits required to make sure that two di
 Returns the maximum positive integral exponent that the floating-point type can represent as a finite value when a base of radix is raised to that power.
 
 ```cpp
-static const int max_exponent = 0;
+static constexpr int max_exponent = 0;
 ```
 
 ### Return Value
@@ -1047,7 +1047,7 @@ The maximum radix-based exponent for type long double is:  1024
 Returns the maximum positive integral exponent that the floating-point type can represent as a finite value when a base of ten is raised to that power.
 
 ```cpp
-static const int max_exponent10 = 0;
+static constexpr int max_exponent10 = 0;
 ```
 
 ### Return Value
@@ -1093,7 +1093,7 @@ The maximum base 10 exponent for type long double is:  308
 Returns the minimum normalized value for a type.
 
 ```cpp
-static Type min() throw();
+static constexpr Type min() throw();
 ```
 
 ### Return Value
@@ -1143,7 +1143,7 @@ The minimum value for type short int is:  -32768
 Returns the maximum negative integral exponent that the floating-point type can represent as a finite value when a base of radix is raised to that power.
 
 ```cpp
-static const int min_exponent = 0;
+static constexpr int min_exponent = 0;
 ```
 
 ### Return Value
@@ -1189,7 +1189,7 @@ The minimum radix-based exponent for type long double is:  -1021
 Returns the maximum negative integral exponent that the floating-point type can represent as a finite value when a base of ten is raised to that power.
 
 ```cpp
-static const int min_exponent10 = 0;
+static constexpr int min_exponent10 = 0;
 ```
 
 ### Return Value
@@ -1235,7 +1235,7 @@ The minimum base 10 exponent for type long double is:  -307
 Returns the representation of a quiet not a number (NAN) for the type.
 
 ```cpp
-static Type quiet_NaN() throw();
+static constexpr Type quiet_NaN() throw();
 ```
 
 ### Return Value
@@ -1281,7 +1281,7 @@ The quiet NaN for type long double is:  1.#QNAN
 Returns the integral base, referred to as radix, used for the representation of a type.
 
 ```cpp
-static const int radix = 0;
+static constexpr int radix = 0;
 ```
 
 ### Return Value
@@ -1327,7 +1327,7 @@ The base for type long double is:  2
 Returns the maximum rounding error for the type.
 
 ```cpp
-static Type round_error() throw();
+static constexpr Type round_error() throw();
 ```
 
 ### Return Value
@@ -1369,7 +1369,7 @@ The maximum rounding error for type long double is:  0.5
 Returns a value that describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.
 
 ```cpp
-static const float_round_style round_style = round_toward_zero;
+static constexpr float_round_style round_style = round_toward_zero;
 ```
 
 ### Return Value
@@ -1416,7 +1416,7 @@ The rounding style for an int type is: 0
 Returns the representation of a signaling not a number (NAN) for the type.
 
 ```cpp
-static Type signaling_NaN() throw();
+static constexpr Type signaling_NaN() throw();
 ```
 
 ### Return Value
@@ -1456,7 +1456,7 @@ int main( )
 Tests whether a type can determine that a value is too small to represent as a normalized value before rounding it.
 
 ```cpp
-static const bool tinyness_before = false;
+static constexpr bool tinyness_before = false;
 ```
 
 ### Return Value
@@ -1506,7 +1506,7 @@ Whether unsigned char types can detect tinyness before rounding: 0
 Tests whether trapping that reports on arithmetic exceptions is implemented for a type.
 
 ```cpp
-static const bool traps = false;
+static constexpr bool traps = false;
 ```
 
 ### Return Value
