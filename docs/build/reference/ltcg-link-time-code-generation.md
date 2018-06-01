@@ -124,7 +124,7 @@ If a function is called through a function pointer, or if a function is called f
 
 Modules that are compiled by using [/GL](../../build/reference/gl-whole-program-optimization.md) and [/clr](../../build/reference/clr-common-language-runtime-compilation.md) can be used as input to the linker when **/LTCG** is specified.
 
-- **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.
+- **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
 - **/LTCG:PGI** does not accept native modules compiled by using **/GL** and **/clr**
 
@@ -144,5 +144,5 @@ You can also apply **/LTCG** to specific builds by choosing **Build** > **Profil
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)
