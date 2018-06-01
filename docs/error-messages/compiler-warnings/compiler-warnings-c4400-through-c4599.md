@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warnings C4400 Through C4599 | Microsoft Docs"
-ms.date: "11/17/2017"
+ms.date: "05/30/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4458", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
@@ -175,7 +175,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C4574|'*Identifier*' is defined to be '0': did you mean to use '#if identifier'?|
 |Compiler warning (level 1) C4575|'__vectorcall' incompatible with the '/clr' option: converting to '__stdcall'|
 |Compiler warning (level 1, Error) C4576|a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax|
-|Compiler warning (level 1, Error) C4578|'abs': conversion from '*type1*' to '*type2*', possible loss of data (Did you mean to call '*function*' or to #include <cmath>?)|
+|Compiler warning (level 1, Off) C4577|'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc|
+|Compiler warning (level 1, Error) C4578|'abs': conversion from '*type1*' to '*type2*', possible loss of data (Did you mean to call '*function*' or to #include \<cmath>?)|
 |[Compiler Warning (level 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[attribute] is deprecated; instead specify System::Attribute or Platform::Metadata as a base class|
 |[Compiler Warning (level 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|deprecated behavior: '"*string*"' replaced with '*string*' to process attribute|
 |Compiler warning (level 4) C4582|'*type*': constructor is not implicitly called|

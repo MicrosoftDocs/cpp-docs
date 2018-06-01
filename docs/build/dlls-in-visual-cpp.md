@@ -85,7 +85,7 @@ The following topics provide detailed information about how to program DLLs in V
  [FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)  
  Discusses using **FreeLibrary** and `AfxFreeLibrary` when the DLL module is no longer needed.  
   
- [Search Path Used by Windows to Locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)  
+ [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)  
  Describes the search path that the Windows operating system uses to locate a DLL on the system.  
   
  [Module States of a Regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  

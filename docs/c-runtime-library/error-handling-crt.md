@@ -1,5 +1,5 @@
 ---
-title: "Error Handling (CRT) | Microsoft Docs"
+title: "Error handling (CRT) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-standard-libraries"]
@@ -12,11 +12,11 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# Error Handling (CRT)
+# Error handling (CRT)
 
 Use these routines to handle program errors.
 
-## Error-Handling Routines
+## Error-handling routines
 
 |Routine|Use|
 |-------------|---------|
@@ -30,6 +30,6 @@ Use these routines to handle program errors.
 |[_set_error_mode](../c-runtime-library/reference/set-error-mode.md)|Modifies **__error_mode** to determine a non-default location where the C run time writes an error message for an error that will possibly end the program.|
 |[_set_purecall_handler](../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)|Sets the handler for a pure virtual function call.|
 
-## See Also
+## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

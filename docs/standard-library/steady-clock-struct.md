@@ -1,7 +1,7 @@
 ---
 title: "steady_clock struct | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "05/22/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::steady_clock"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # steady_clock struct
 
-Represents a `steady` clock.
+Represents a *steady* clock.
 
 ## Syntax
 
@@ -23,25 +23,32 @@ struct steady_clock;
 
 ## Remarks
 
-On Windows, steady_clock wraps the QueryPerformanceCounter function.
+On Windows, `steady_clock` wraps the `QueryPerformanceCounter` function.
 
-A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`.
+A clock is *monotonic* if the value that is returned by a first call to `now` is always less than or equal to the value that is returned by a subsequent call to `now`. A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant.
 
-A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant.
+`high_resolution_clock` is a typedef for `steady_clock`.
 
-High_resolution_clock is a typdef for steady_clock.
+### Public typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>.|
+|`steady_clock::period`|A synonym for `nano`, defined in \<ratio>.|
+|`steady_clock::rep`|A synonym for **long** **long**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
+|`steady_clock::time_point`|A synonym for `chrono::time_point<steady_clock>`.|
 
 ## Public functions
 
 |Function|Description|
 |--------------|-----------------|
-|now|Returns the current time as a time_point value.|
+|`now`|Returns the current time as a `time_point` value.|
 
-## Public Constants
+## Public constants
 
 |Name|Description|
 |----------|-----------------|
-|`system_clock::is_steady`|Holds `true`. A `steady_clock` is *steady*.|
+|`steady_clock::is_steady`|Holds `true`. A `steady_clock` is *steady*.|
 
 ## Requirements
 
@@ -51,6 +58,6 @@ High_resolution_clock is a typdef for steady_clock.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[system_clock Structure](../standard-library/system-clock-structure.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<chrono>](../standard-library/chrono.md)
+- [system_clock Structure](../standard-library/system-clock-structure.md)

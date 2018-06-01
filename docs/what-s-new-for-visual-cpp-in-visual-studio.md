@@ -384,12 +384,11 @@ You can now create and debug mobile apps using Visual Studio that can target And
 C++ comes as an optional component for the Universal Windows App workload.  Upgrading C++ projects currently must be done manually. If you open a v140-targeted UWP project in Visual Studio 2017, you need to select the v141 platform toolset in the project property pages if you do not have Visual Studio 2015 installed.
 
 ## New options for C++ on Universal Windows Platform (UWP)
+You now have new options for writing and packaging C++ applications for the Universal Windows Platform and the Windows Store:
+You can use the Desktop Bridge infrastructure to package your existing desktop application or COM object for deployment through the Windows Store or through your existing channels via side-loading. New capabilities in Windows 10 enable you to add UWP functionality to your desktop application in various ways. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
-You now have new options for writing and packaging C++ applications for the Universal Windows Platform and the Microsoft Store. You can use the Desktop App Converter to package your existing desktop application for deployment through the Microsoft Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project/) and [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
-
-**Visual Studio 2017 version 15.5**:
-
-A **Windows Application Packaging Project** project template is added which supports packaging desktop applications by using Desktop Bridge. It is available under **File > New > Project** under **Installed > Visual C++ > Universal Windows Platform** when the Universal Windows App workload is installed.
+**Visual Studio 2017 version 15.5**  
+A **Windows Application Packaging Project** project template is added which greatly simplifies the work of packaging desktop applications with using Desktop Bridge. It is available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 When writing new code, you can now use C++/WinRT, a standard C++ language projection for the Windows Runtime implemented solely in header files. It allows you to both author and consume Windows Runtime APIs using any standards-compliant C++ compiler. C++/WinRT is designed to provide C++ developers with first-class access to the modern Windows API. For more information, see [C++/WinRT Available on GitHub](https://moderncpp.com/).
 
