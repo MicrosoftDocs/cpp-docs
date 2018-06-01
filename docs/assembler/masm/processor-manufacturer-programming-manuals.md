@@ -15,11 +15,11 @@ This article provides links to websites that may contain programming information
   
 ## Processor Manufacturer Websites  
   
--   [AMD64 Instruction Set Reference Manuals](http://go.microsoft.com/fwlink/p/?LinkID=219796)  
-  
+- [AMD64 Instruction Set Reference Manuals](https://developer.amd.com/resources/developer-guides-manuals/)  
+
 -   [Intel 64 and IA-32 Architectures Software Developer Manuals](http://go.microsoft.com/fwlink/p/?LinkID=219798)  
-  
--   [Intel Advanced Vector Extensions (AVX)](http://go.microsoft.com/fwlink/p/?LinkID=219800)  
+
+ [Intel Advanced Vector Extensions (AVX)](https://software.intel.com/en-us/articles/intel-sdm)  
   
 ## Remarks  
  Neither [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] nor the Microsoft Macro Assembler support all processors.  
