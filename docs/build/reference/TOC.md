@@ -204,7 +204,7 @@
 ### [/DELAY (Delay Load Import Settings)](delay-delay-load-import-settings.md)
 ### [/DELAYLOAD (Delay Load Import)](delayload-delay-load-import.md)
 ### [/DELAYSIGN (Partially Sign an Assembly)](delaysign-partially-sign-an-assembly.md)
-### [/DEPENDENTLOADFLAGS (Set default dependent load flags)](dependentloadflags.md)
+### [/DEPENDENTLOADFLAG (Set default dependent load flags)](dependentloadflag.md)
 ### [/DLL (Build a DLL)](dll-build-a-dll.md)
 ### [/DRIVER (Windows NT Kernel Mode Driver)](driver-windows-nt-kernel-mode-driver.md)
 ### [/DYNAMICBASE (Use address space layout randomization)](dynamicbase-use-address-space-layout-randomization.md)
