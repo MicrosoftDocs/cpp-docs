@@ -33,7 +33,7 @@ ms.workload: ["cplusplus"]
   
 -   For [__fastcall](../cpp/fastcall.md) naked functions, whenever there is a reference in C/C++ code to one of the register arguments, the prolog code should store the values of that register into the stack location for that variable. For example:  
   
-```  
+```cpp 
 // nkdfastcl.cpp  
 // compile with: /c  
 // processor: x86  

@@ -65,7 +65,7 @@ The `struct` keyword defines a structure type and/or a variable of a structure t
   
 ## Example  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   

@@ -16,7 +16,7 @@ C++ names can be used only in certain regions of a program. This area is called 
   
 -   **Local scope** A name declared within a block is accessible only within that block and blocks enclosed by it, and only after the point of declaration. The names of formal arguments to a function in the scope of the outermost block of the function have local scope, as if they had been declared inside the block enclosing the function body. Consider the following code fragment:  
   
-    ```  
+    ```cpp 
     {  
         int i;  
     }  
@@ -32,7 +32,7 @@ C++ names can be used only in certain regions of a program. This area is called 
   
 -   **Class scope** Names of class members have class scope. Class member functions can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.\*** or **->\***) on an object or pointer to an object of that class; nonstatic class member data is considered local to the object of that class. Consider the following class declaration:  
   
-    ```  
+    ```cpp 
     class Point  
     {  
         int x;  
@@ -44,7 +44,7 @@ C++ names can be used only in certain regions of a program. This area is called 
   
 -   **Prototype scope** Names declared in a function prototype are visible only until the end of the prototype. The following prototype declares three names (`strDestination`, `numberOfElements`, and `strSource`); these names go out of scope at the end of the prototype:  
   
-    ```  
+    ```cpp 
     errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *strSource );  
     ```  
   
@@ -56,7 +56,7 @@ Block Scope and Name Hiding
   
  The output from the program shown in the figure is:  
   
-```  
+```Output  
 i = 0  
 i = 7  
 j = 9  
@@ -69,7 +69,7 @@ i = 0
 ## Hiding class names  
  You can hide class names by declaring a function, object or variable, or enumerator in the same scope. However, the class name can still be accessed when prefixed by the keyword **class**.  
   
-```  
+```cpp 
 // hiding_class_names.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -105,7 +105,7 @@ int main()
   
  The following example demonstrates how to declare a pointer to an object of type `Account` using the **class** keyword:  
   
-```  
+```cpp 
 class Account *Checking = new class Account( Account );  
 ```  
   
@@ -119,7 +119,7 @@ class Account *Checking = new class Account( Account );
 ## Hiding names with file scope  
  You can hide names with file scope by explicitly declaring the same name in block scope. However, file-scope names can be accessed using the scope-resolution operator (`::`).  
   
-```  
+```cpp 
 // file_scopes.cpp  
 // compile with: /EHsc  
 #include <iostream>  

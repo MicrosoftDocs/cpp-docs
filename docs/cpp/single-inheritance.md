@@ -21,7 +21,7 @@ Simple Single-Inheritance Graph
   
  One other item of note in the figure: `Book` is both a derived class (from `PrintedDocument`) and a base class (`PaperbackBook` is derived from `Book`). A skeletal declaration of such a class hierarchy is shown in the following example:  
   
-```  
+```cpp 
 // deriv_SingleInheritance.cpp  
 // compile with: /LD  
 class PrintedDocument {};  
@@ -51,7 +51,7 @@ Sample of Directed Acyclic Graph
   
  In inheritance, the derived class contains the members of the base class plus any new members you add. As a result, a derived class can refer to members of the base class (unless those members are redefined in the derived class). The scope-resolution operator (`::`) can be used to refer to members of direct or indirect base classes when those members have been redefined in the derived class. Consider this example:  
   
-```  
+```cpp 
 // deriv_SingleInheritance2.cpp  
 // compile with: /EHsc /c  
 #include <iostream>  
@@ -84,7 +84,7 @@ Book::Book( char *name, long pagecount ) {
   
  Note that the constructor for `Book`, (`Book::Book`), has access to the data member, `Name`. In a program, an object of type `Book` can be created and used as follows:  
   
-```  
+```cpp 
 //  Create a new object of type Book. This invokes the  
 //   constructor Book::Book.  
 Book LibraryBook( "Programming Windows, 2nd Ed", 944 );  
@@ -97,7 +97,7 @@ LibraryBook.PrintNameOf();
   
  As the preceding example demonstrates, class-member and inherited data and functions are used identically. If the implementation for class `Book` calls for a reimplementation of the `PrintNameOf` function, the function that belongs to the `Document` class can be called only by using the scope-resolution (`::`) operator:  
   
-```  
+```cpp 
 // deriv_SingleInheritance3.cpp  
 // compile with: /EHsc /LD  
 #include <iostream>  
@@ -123,7 +123,7 @@ void Book::PrintNameOf() {
   
  Pointers and references to derived classes can be implicitly converted to pointers and references to their base classes if there is an accessible, unambiguous base class. The following code demonstrates this concept using pointers (the same principle applies to references):  
   
-```  
+```cpp 
 // deriv_SingleInheritance4.cpp  
 // compile with: /W3  
 struct Document {  
