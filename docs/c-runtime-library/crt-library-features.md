@@ -90,11 +90,14 @@ For binary compatibility, more than one DLL file may be specified by a single im
 
 ## What problems exist if an application uses more than one CRT version?
 
-A process may load multiple CRTs based on how the DLLs and EXEs are built, static CRT, dynamic CRT (DLL) or different versions. Each CRT can use a different allocator and the classes implemented may have a different layout in memory making them incompatable. This means passing allocated memory or classes accross a DLL boundary (via DLL exports) is problematic and strongly discouraged. Application Binary Interface (ABI) technologies should be used instead as they are designed to be stable and versionable.
+Every executable image (EXE or DLL) can have its own statically linked CRT, or can dynamically link to a CRT. The version of the CRT statically included in or dynamically loaded by a particular image depends on the version of the tools and libraries it was built with. A single process may load multiple EXE and DLL images, each with its own CRT. Each of those CRTs may use a different allocator, may have different internal structure layouts, and may use different storage arrangements. This means that allocated memory, CRT resources, or classes passed across a DLL boundary can cause problems in memory management, internal static usage, or layout interpretation. For example, if a class is allocated in one DLL but passed to and deleted by another, which CRT deallocator is used? The errors caused can range from the subtle to the immediately fatal, and therefore direct transfer of such resources is strongly discouraged.
 
-For example, statically linking the CRT into multiple DLLs or the EXE that pass CRT resources between them produces this problem. If you must do this ensure that all components use the same DLL version of the CRT; compile them all with **/MD** using the same toolset).
+You can avoid many of these issues by using Application Binary Interface (ABI) technologies instead, as they are designed to be stable and versionable. Design your DLL export interfaces to pass information by value, or to work on memory that is passed in by the caller rather than allocated locally and returned to the caller. Use marshalling techniques to copy structured data between executable images. Encapsulate resources locally and only allow manipulation through handles or functions you expose to clients.
 
-If your program is passing certain CRT resources (such as file handles, locales and environment variables) accross DLL boundaires, even with the same version of the CRT, some care is needed. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
+It's also possible to avoid some of these issues if all of the images in your process use the same dynamically loaded version of the CRT. To ensure that all components use the same DLL version of the CRT, build them by using the **/MD** option, and use the same compiler toolset and property settings.
+
+Some care is needed if your program passes certain CRT resources (such as file handles, locales and environment variables) across DLL boundaries, even when using the same version of the CRT. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
+
 
 ## See also
 
