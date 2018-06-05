@@ -35,14 +35,14 @@ Allocates memory for an object or array of objects of *type-name* from the free 
   
  The following example allocates and then frees a two-dimensional array of characters of size `dim` by 10. When allocating a multidimensional array, all dimensions except the first must be constant expressions that evaluate to positive values; the leftmost array dimension can be any expression that evaluates to a positive value. When allocating an array using the **new** operator, the first dimension can be zero — the **new** operator returns a unique pointer.  
   
-```  
+```cpp 
 char (*pchar)[10] = new char[dim][10];  
 delete [] pchar;  
 ```  
   
  The *type-name* cannot contain **const**, `volatile`, class declarations, or enumeration declarations. Therefore, the following expression is illegal:  
   
-```  
+```cpp 
 volatile char *vch = new volatile char[20];  
 ```  
   
@@ -50,7 +50,7 @@ volatile char *vch = new volatile char[20];
   
  The **new** operator cannot be used to allocate a function, but it can be used to allocate pointers to functions. The following example allocates and then frees an array of seven pointers to functions that return integers.  
   
-```  
+```cpp 
 int (**p) () = new (int (*[7]) ());  
 delete *p;  
 ```  
@@ -71,7 +71,7 @@ delete *p;
 ## Example  
  The following code example allocates a character array and an object of class `CName` and then frees them.  
   
-```  
+```cpp 
 // expre_new_Operator.cpp  
 // compile with: /EHsc  
 #include <string.h>  
@@ -115,7 +115,7 @@ int main() {
 ## Example  
  If you use the placement new form of the **new** operator, the form with arguments in addition to the size of the allocation, the compiler does not support a placement form of the **delete** operator if the constructor throws an exception. For example:  
   
-```  
+```cpp 
 // expre_new_Operator2.cpp  
 // C2660 expected  
 class A {  
@@ -150,7 +150,7 @@ int main() {
 ## Initializing object allocated with new  
  An optional *initializer* field is included in the grammar for the **new** operator. This allows new objects to be initialized with user-defined constructors. For more information about how initialization is done, see [Initializers](../cpp/initializers.md). The following example illustrates how to use an initialization expression with the **new** operator:  
   
-```  
+```cpp 
 // expre_Initializing_Objects_Allocated_with_new.cpp  
 class Acct  
 {  
@@ -189,7 +189,7 @@ int main()
 ## Lifetime of objects allocated with new  
  Objects allocated with the **new** operator are not destroyed when the scope in which they are defined is exited. Because the **new** operator returns a pointer to the objects it allocates, the program must define a pointer with suitable scope to access those objects. For example:  
   
-```  
+```cpp 
 // expre_Lifetime_of_Objects_Allocated_with_new.cpp  
 // C2541 expected  
 int main()  
@@ -239,7 +239,7 @@ int main()
   
  Even when `operator new` has been defined for a class type, the global operator can be used by using the form of this example:  
   
-```  
+```cpp 
 T *TObject =::new TObject;  
 ```  
   

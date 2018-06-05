@@ -22,7 +22,7 @@ The only names that have no linkage are:
   
 -   Names declared in a `typedef` statement. An exception is when the `typedef` statement is used to provide a name for an unnamed class type. The name may then have external linkage if the class has external linkage. The following example shows a situation in which a `typedef` name has external linkage:  
   
-    ```  
+    ```cpp 
     // names_with_no_linkage.cpp  
     typedef struct  
     {  

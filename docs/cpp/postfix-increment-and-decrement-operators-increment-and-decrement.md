@@ -23,7 +23,7 @@ postfix-expression --
 ## Remarks  
  C++ provides prefix and postfix increment and decrement operators; this section describes only the postfix increment and decrement operators. (For more information, see [Prefix Increment and Decrement Operators](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md).) The difference between the two is that in the postfix notation, the operator appears after *postfix-expression*, whereas in the prefix notation, the operator appears before *expression.* The following example shows a postfix-increment operator:  
   
-```  
+```cpp 
 i++;  
 ```  
   
@@ -41,7 +41,7 @@ i++;
   
  The following code illustrates the postfix increment operator:  
   
-```  
+```cpp 
 // expre_Postfix_Increment_and_Decrement_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -56,7 +56,7 @@ int main() {
   
  Postincrement and postdecrement operations on enumerated types are not supported:  
   
-```  
+```cpp 
 enum Compass { North, South, East, West );  
 Compass myCompass;  
 for( myCompass = North; myCompass != West; myCompass++ ) // Error  

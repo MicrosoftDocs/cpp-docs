@@ -18,7 +18,7 @@ Primary expressions are the building blocks of more complex expressions. They ar
   
       literal  
       this  
-:: namename( expression )  
+      :: namename( expression )  
 ```  
   
  A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) for complete information about specifying literals.  
@@ -27,7 +27,7 @@ Primary expressions are the building blocks of more complex expressions. They ar
   
  The type of the **this** pointer is `type` **\*const** (where `type` is the class name) within functions not specifically modifying the **this** pointer. The following example shows member function declarations and the types of **this**:  
   
-```  
+```cpp 
 // expre_Primary_Expressions.cpp  
 // compile with: /LD  
 class Example  
@@ -49,7 +49,7 @@ public:
   
  Examples of primary expressions include:  
   
-```  
+```cpp 
 100 // literal  
 'c' // literal  
 this // in a member function, a pointer to the class instance  
@@ -61,7 +61,7 @@ this // in a member function, a pointer to the class instance
   
  The examples below are all considered *names*, and hence primary expressions, in various forms:  
   
-```  
+```cpp 
 MyClass // a identifier  
 MyClass::f // a qualified name  
 operator = // an operator function name  

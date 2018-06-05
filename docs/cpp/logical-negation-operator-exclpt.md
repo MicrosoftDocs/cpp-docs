@@ -30,7 +30,7 @@ ms.workload: ["cplusplus"]
   
 ## Example  
   
-```  
+```cpp 
 // expre_Logical_NOT_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  

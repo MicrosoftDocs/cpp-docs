@@ -62,7 +62,7 @@ Pointers are declared using the following sequence.
   
  A simple example of a pointer declaration is:  
   
-```  
+```cpp 
 char *pch;  
 ```  
   
@@ -70,7 +70,7 @@ char *pch;
   
  A more complex example is  
   
-```  
+```cpp 
 static unsigned int * const ptr;  
 ```  
   
@@ -78,7 +78,7 @@ static unsigned int * const ptr;
   
  The next example shows how multiple pointers are declared and initialized:  
   
-```  
+```cpp 
 static int *p = &i, *q = &j;  
 ```  
   
@@ -86,7 +86,7 @@ static int *p = &i, *q = &j;
   
 ## Example  
   
-```  
+```cpp 
 // pointer.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -177,7 +177,7 @@ dog dog
 ## Example  
  Another example illustrates the use of pointers in data structures; in this case, a linked list.  
   
-```  
+```cpp 
 // pointer_linkedlist.cpp  
 // compile with: /EHsc  
 #include <iostream>  

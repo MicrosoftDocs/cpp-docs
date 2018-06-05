@@ -16,7 +16,7 @@ If a class has a constructor, arrays of that class are initialized by a construc
   
  Consider the `Point` class that defines two constructors:  
   
-```  
+```cpp 
 // initializing_arrays1.cpp  
 class Point  
 {  
@@ -43,7 +43,7 @@ int main()
   
  Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). For example:  
   
-```  
+```cpp 
 // initializing_arrays2.cpp  
 class WindowColors  
 {  

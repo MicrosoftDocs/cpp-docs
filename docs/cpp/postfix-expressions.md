@@ -29,13 +29,13 @@ Postfix expressions consist of primary expressions or expressions in which postf
   
 ```  
   
-      primary-expression   
+primary-expression   
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )  
 ```  
   
  The *postfix-expression* above may be a primary expression or another postfix expression.  See **primary expressions**.  Postfix expressions group left to right, thus allowing the expressions to be chained together as follows:  
   
-```  
+```cpp 
 func(1)->GetValue()++  
 ```  
   
@@ -45,7 +45,7 @@ func(1)->GetValue()++
   
  The postfix expression form  
   
-```  
+```cpp 
 simple-type-name ( expression-list )  
 ```  
   
@@ -64,7 +64,7 @@ simple-type-name ( expression-list )
   
 -   Each formal argument is initialized with its corresponding actual argument in the expression list. (A formal argument is an argument that is declared in the function header and used in the body of a function.) Conversions are done as if by initialization — both standard and user-defined conversions are performed in converting an actual argument to the correct type. The initialization performed is illustrated conceptually by the following code:  
   
-    ```  
+    ```cpp 
     void Func( int i ); // Function prototype  
     ...  
     Func( 7 );          // Execute function call  
@@ -72,7 +72,7 @@ simple-type-name ( expression-list )
   
      The conceptual initializations prior to the call are:  
   
-    ```  
+    ```cpp 
     int Temp_i = 7;  
     Func( Temp_i );  
     ```  
@@ -89,7 +89,7 @@ simple-type-name ( expression-list )
   
  The following program fragment demonstrates a function call:  
   
-```  
+```cpp 
 // expre_Formal_and_Actual_Arguments.cpp  
 void func( long param1, double param2 );  
   
@@ -115,7 +115,7 @@ void func( long param1, double param2 )
   
  The following functions illustrate some of these concepts:  
   
-```  
+```cpp 
 // expre_Treatment_of_Argument_Types.cpp  
 int func1( const int i, int j, char *c ) {  
    i = 7;   // C3892 i is const.  
@@ -148,7 +148,7 @@ double& func2( double& d, const char *c ) {
   
  Default arguments enable you to specify the value an argument should assume if none is supplied in the function call. The following code fragment shows how default arguments work. For more information about restrictions on specifying default arguments, see [Default Arguments](../cpp/default-arguments.md).  
   
-```  
+```cpp 
 // expre_Ellipses_and_Default_Arguments.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -181,7 +181,7 @@ void print( const char *string, const char *terminator )
   
  The preceding program declares a function, `print`, that takes two arguments. However, the second argument, `terminator`, has a default value, `"\n"`. In **main**, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
   
-```  
+```Output 
 hello,  
 world!  
 good morning, sunshine.  
