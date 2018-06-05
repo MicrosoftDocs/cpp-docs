@@ -45,7 +45,7 @@ The following rules constrain how overloaded operators are implemented. However,
   
 -   Binary operators declared as member functions take one argument; if declared as global functions, they take two arguments.  
   
--   If an operator can be used as either a unary or a binary operator (**&**, **\***, **+**, and **-**), you can overload each use separately.  
+-   If an operator can be used as either a unary or a binary operator (__&__, __*__, __+__, and __-__), you can overload each use separately.  
   
 -   Overloaded operators cannot have default arguments.  
   
