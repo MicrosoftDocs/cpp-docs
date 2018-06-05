@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      void __stdcall _com_raise_error(  
+void __stdcall _com_raise_error(  
    HRESULT hr,  
    IErrorInfo* perrinfo = 0  
 );  
@@ -41,7 +41,7 @@ ms.workload: ["cplusplus"]
   
  By default, `_com_raise_error` is defined as follows:  
   
-```  
+```cpp  
 void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {  
    throw _com_error(hr, perrinfo);  
 }  

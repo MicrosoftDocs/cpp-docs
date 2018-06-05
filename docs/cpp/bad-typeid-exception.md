@@ -19,14 +19,14 @@ The `bad_typeid` exception is thrown by the [typeid operator](../cpp/typeid-oper
   
 ```  
   
-      catch (bad_typeid)  
+catch (bad_typeid)  
    statement  
 ```  
   
 ## Remarks  
  The interface for `bad_typeid` is:  
   
-```  
+```cpp 
 class bad_typeid : public exception  
 {  
 public:  
@@ -38,7 +38,7 @@ public:
   
  The following example shows the `typeid` operator throwing a `bad_typeid` exception.  
   
-```  
+```cpp 
 // expre_bad_typeid.cpp  
 // compile with: /EHsc /GR  
 #include <typeinfo.h>  
@@ -66,7 +66,7 @@ catch (bad_typeid){
   
 ## Output  
   
-```  
+```Output 
 Object is NULL  
 ```  
   

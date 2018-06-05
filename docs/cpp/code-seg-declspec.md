@@ -49,7 +49,7 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
 ## Example  
  This example shows how a `code_seg` attribute controls segment placement when implicit and explicit template specialization is used:  
   
-```  
+```cpp 
 // code_seg.cpp  
 // Compile: cl /EHsc /W4 code_seg.cpp  
   

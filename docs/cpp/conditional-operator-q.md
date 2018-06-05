@@ -15,10 +15,10 @@ ms.workload: ["cplusplus"]
 # Conditional Operator: ? :
 ## Syntax  
   
-```  
+``` 
   
 expression ? expression : expression  
-```  
+``` 
   
 ## Remarks  
  The conditional operator (**? :**) is a ternary operator (it takes three operands). The conditional operator works as follows:  
@@ -54,7 +54,7 @@ expression ? expression : expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Expressions_with_the_Conditional_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate conditional operator  

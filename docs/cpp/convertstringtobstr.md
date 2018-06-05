@@ -21,9 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      BSTR __stdcall ConvertStringToBSTR(  
-   const char* pSrc  
-)  
+BSTR __stdcall ConvertStringToBSTR(const char* pSrc)  
 ```  
   
 #### Parameters  
@@ -32,7 +30,7 @@ ms.workload: ["cplusplus"]
   
 ## Example  
   
-```  
+```cpp 
 // ConvertStringToBSTR.cpp  
 #include <comutil.h>  
 #include <stdio.h>  

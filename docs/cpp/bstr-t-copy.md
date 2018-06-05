@@ -21,9 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      BSTR copy(  
-  bool fCopy = true  
-) const;  
+BSTR copy( bool fCopy = true ) const;  
 ```  
   
 #### Parameters  
@@ -35,7 +33,7 @@ ms.workload: ["cplusplus"]
   
 ## Example  
   
-```  
+```cpp 
 STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t  
    *pVal = m_bsConStr.copy();  
 }  

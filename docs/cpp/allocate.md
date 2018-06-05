@@ -40,7 +40,7 @@ ms.workload: ["cplusplus"]
   
 ## Example  
   
-```  
+```cpp 
 // allocate.cpp  
 #pragma section("mycode", read)  
 __declspec(allocate("mycode"))  int i = 0;  

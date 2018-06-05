@@ -25,7 +25,7 @@ Deallocates a block of memory.
 ## Remarks  
  The *cast-expression* argument must be a pointer to a block of memory previously allocated for an object created with the [new operator](../cpp/new-operator-cpp.md). The **delete** operator has a result of type `void` and therefore does not return a value. For example:  
   
-```  
+```cpp 
 CDialog* MyDialog = new CDialog;  
 // use MyDialog  
 delete MyDialog;  
@@ -35,7 +35,7 @@ delete MyDialog;
   
  The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets before `pointer`:  
   
-```  
+```cpp 
 int* set = new int[100];  
 //use set[]  
 delete [] set;  
@@ -50,7 +50,7 @@ delete [] set;
 ## Using delete  
  There are two syntactic variants for the [delete operator](../cpp/delete-operator-cpp.md): one for single objects and the other for arrays of objects. The following code fragment shows how these differ:  
   
-```  
+```cpp 
 // expre_Using_delete.cpp  
 struct UDType   
 {  

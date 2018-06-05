@@ -16,7 +16,7 @@ An array is a collection of like objects. The simplest case of an array is a vec
   
 ```  
   
-      decl-specifier identifier [ constant-expression ]  
+decl-specifier identifier [ constant-expression ]  
 decl-specifier identifier []  
 decl-specifier identifer [][ constant-expression] . . .  
 decl-specifier identifier [ constant-expression ]  
@@ -45,7 +45,7 @@ decl-specifier identifier [ constant-expression ]
   
  The following example shows how to define an array at run time:  
   
-```  
+```cpp 
 // arrays.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -70,7 +70,7 @@ int main() {
   
  Arrays constructed from other arrays are multidimensional arrays. These multidimensional arrays are specified by placing multiple bracketed constant expressions in sequence. For example, consider this declaration:  
   
-```  
+```cpp 
 int i2[5][7];  
 ```  
   
@@ -81,7 +81,7 @@ Conceptual Layout of Multidimensional Array
   
  In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. For example:  
   
-```  
+```cpp 
 // arrays2.cpp  
 // compile with: /c  
 const int cMarkets = 4;  
@@ -110,7 +110,7 @@ double TransportCosts[][cMarkets] = {
 ## Example  
  The technique of omitting the bounds specification for the first dimension of a multidimensional array can also be used in function declarations as follows:  
   
-```  
+```cpp 
 // multidimensional_arrays.cpp  
 // compile with: /EHsc  
 // arguments: 3  

@@ -23,7 +23,7 @@ simple-type-name ( expression-list )
 ## Remarks  
  A *simple-type-name* followed by an *expression-list* enclosed in parentheses constructs an object of the specified type using the specified expressions. The following example shows an explicit type conversion to type int:  
   
-```  
+```cpp 
 int i = int( d );  
 ```  
   
@@ -31,7 +31,7 @@ int i = int( d );
   
 ## Example  
   
-```  
+```cpp 
 // expre_Explicit_Type_Conversion_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -77,14 +77,14 @@ int main()
   
 ## Output  
   
-```  
+```Output  
 x = 20, y = 10  
 x = 0, y = 0  
 ```  
   
  Although the preceding example demonstrates explicit type conversion using constants, the same technique works to perform these conversions on objects. The following code fragment demonstrates this:  
   
-```  
+```cpp 
 int i = 7;  
 float d;  
   
@@ -93,13 +93,13 @@ d = float( i );
   
  Explicit type conversions can also be specified using the "cast" syntax. The previous example, rewritten using the cast syntax, is:  
   
-```  
+```cpp 
 d = (float)i;  
 ```  
   
  Both cast and function-style conversions have the same results when converting from single values. However, in the function-style syntax, you can specify more than one argument for conversion. This difference is important for user-defined types. Consider a `Point` class and its conversions:  
   
-```  
+```cpp 
 struct Point  
 {  
     Point( short x, short y ) { _x = x; _y = y; }  
@@ -108,7 +108,7 @@ struct Point
 };  
 ...  
 Point pt = Point( 3, 10 );  
-```  
+```cpp 
   
  The preceding example, which uses function-style conversion, shows how to convert two values (one for *x* and one for *y*) to the user-defined type `Point`.  
   

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Default Arguments
 In many cases, functions have arguments that are used so infrequently that a default value would suffice. To address this, the default-argument facility allows for specifying only those arguments to a function that are meaningful in a given call. To illustrate this concept, consider the example presented in [Function Overloading](../cpp/function-overloading.md).  
   
-```  
+```cpp 
 // Prototype three print functions.  
 int print( char *s );                  // Print a string.  
 int print( double dvalue );            // Print a double.  
@@ -24,7 +24,7 @@ int print( double dvalue, int prec );  // Print a double with a
   
  In many applications, a reasonable default can be supplied for `prec`, eliminating the need for two functions:  
   
-```  
+```cpp 
 // Prototype two print functions.  
 int print( char *s );                    // Print a string.  
 int print( double dvalue, int prec=2 );  // Print a double with a  
@@ -33,7 +33,7 @@ int print( double dvalue, int prec=2 );  // Print a double with a
   
  The implementation of the `print` function is changed slightly to reflect the fact that only one such function exists for type **double**:  
   
-```  
+```cpp 
 // default_arguments.cpp  
 // compile with: /EHsc /c  
   
@@ -66,7 +66,7 @@ int print( double dvalue, int prec ) {
   
  To invoke the new `print` function, use code such as the following:  
   
-```  
+```cpp 
 print( d );    // Precision of 2 supplied by default argument.  
 print( d, 0 ); // Override default argument to achieve other  
 //  results.  
@@ -76,13 +76,13 @@ print( d, 0 ); // Override default argument to achieve other
   
 -   Default arguments are used only in function calls where trailing arguments are omitted — they must be the last argument(s). Therefore, the following code is illegal:  
   
-    ```  
+    ```cpp 
     int print( double dvalue = 0.0, int prec );  
     ```  
   
 -   A default argument cannot be redefined in later declarations even if the redefinition is identical to the original. Therefore, the following code produces an error:  
   
-    ```  
+    ```cpp 
     // Prototype for print function.  
     int print( double dvalue, int prec = 2 );  
   
@@ -101,7 +101,7 @@ print( d, 0 ); // Override default argument to achieve other
   
 -   Default arguments can be provided for pointers to functions. For example:  
   
-    ```  
+    ```cpp 
     int (*pShowIntVal)( int i = 0 );  
     ```  
   

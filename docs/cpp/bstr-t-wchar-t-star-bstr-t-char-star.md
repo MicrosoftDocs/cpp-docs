@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      operator const wchar_t*( ) const throw( );   
+operator const wchar_t*( ) const throw( );   
 operator wchar_t*( ) const throw( );   
 operator const char*( ) const;   
 operator char*( ) const;  

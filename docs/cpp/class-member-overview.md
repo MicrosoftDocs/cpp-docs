@@ -43,7 +43,7 @@ A class or struct consists of its members. The work that a class does is perform
 ## Example class declaration  
  The following example shows a simple class declaration:  
   
-```  
+```cpp 
 // TestRun.h  
   
 class TestRun  
@@ -110,7 +110,7 @@ For more information, see [Special Member Functions](../cpp/special-member-funct
 ## Memberwise initialization  
  In C++11 and later, non-static member declarators can contain initializers.  
   
-```  
+```cpp 
   
 class CanInit  
 {  
@@ -135,7 +135,7 @@ int main()
   
  There is only one shared copy of static data members for all objects of a given class type. Static data members must be defined and can be initialized at file scope. (For more information about static data members, see [Static Data Members](../cpp/static-members-cpp.md).) The following example shows how to perform these initializations:  
   
-```  
+```cpp 
 // class_members2.cpp  
 class CanInit2  
 {  

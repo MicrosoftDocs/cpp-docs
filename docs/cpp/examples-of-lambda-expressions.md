@@ -285,7 +285,7 @@ void ApplyScale2(const vector<int>& v) const
   
  You can also capture the `this` pointer implicitly:  
   
-```  
+```cpp 
 void ApplyScale(const vector<int>& v) const  
 {  
    for_each(v.begin(), v.end(),   

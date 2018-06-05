@@ -147,7 +147,7 @@ int main ()
   
  Names declared using `typedef` occupy the same namespace as other identifiers (except statement labels). Therefore, they cannot use the same identifier as a previously declared name, except in a class-type declaration. Consider the following example:  
   
-```  
+```cpp 
 // typedef_names1.cpp  
 // C2377 expected  
 typedef unsigned long UL;   // Declare a typedef name, UL.  
@@ -156,7 +156,7 @@ int UL;                     // C2377: redefined.
   
  The name-hiding rules that pertain to other identifiers also govern the visibility of names declared using `typedef`. Therefore, the following example is legal in C++:  
   
-```  
+```cpp 
 // typedef_names2.cpp  
 typedef unsigned long UL;   // Declare a typedef name, UL  
 int main()  
@@ -168,7 +168,7 @@ int main()
 ```  
  
   
-```  
+```cpp 
 // typedef_specifier1.cpp  
 typedef char FlagType;  
   
@@ -184,26 +184,26 @@ void myproc( int )
   
  When declaring a local-scope identifier by the same name as a typedef, or when declaring a member of a structure or union in the same scope or in an inner scope, the type specifier must be specified. For example:  
   
-```  
+```cpp 
 typedef char FlagType;  
 const FlagType x;  
 ```  
   
  To reuse the `FlagType` name for an identifier, a structure member, or a union member, the type must be provided:  
   
-```  
+```cpp 
 const int FlagType;  // Type specifier required  
 ```  
   
  It is not sufficient to say  
   
-```  
+```cpp 
 const FlagType;      // Incomplete specification  
 ```  
   
  because the `FlagType` is taken to be part of the type, not an identifier that is being redeclared. This declaration is taken to be an illegal declaration like  
   
-```  
+```cpp 
 int;  // Illegal declaration   
 ```  
   
@@ -222,25 +222,25 @@ ulong ul;     // Equivalent to "unsigned long ul;"
   
  To use `typedef` to specify fundamental and derived types in the same declaration, you can separate declarators with commas. For example:  
   
-```  
+```cpp 
 typedef char CHAR, *PSTR;  
 ```  
   
  The following example provides the type `DRAWF` for a function returning no value and taking two int arguments:  
   
-```  
+```cpp 
 typedef void DRAWF( int, int );  
 ```  
   
  After the above `typedef` statement, the declaration  
   
-```  
+```cpp 
 DRAWF box;   
 ```  
   
  would be equivalent to the declaration  
   
-```  
+```cpp 
 void box( int, int );  
 ```  
   
@@ -263,11 +263,11 @@ int main()
     ms.f = 0.99;  
     printf_s("%d   %f\n", ms.i, ms.f);  
 }  
-```  
+```cpp 
   
 ```Output  
 10   0.990000  
-```  
+```cpp 
   
 ### Re-declaration of typedefs  
  The `typedef` declaration can be used to redeclare the same name to refer to the same type. For example:  
@@ -282,7 +282,7 @@ typedef char CHAR;
 // PROG.CPP  
 #include "file1.h"  
 #include "file2.h"   // OK  
-```  
+```cpp 
   
  The program PROG.CPP includes two header files, both of which contain `typedef` declarations for the name `CHAR`. As long as both declarations refer to the same type, such redeclaration is acceptable.  
   
@@ -291,7 +291,7 @@ typedef char CHAR;
 ```cpp  
 // FILE2.H  
 typedef int CHAR;     // Error  
-```  
+```cpp 
   
  the compiler issues an error because of the attempt to redeclare the name `CHAR` to refer to a different type. This extends to constructs such as:  
   
@@ -304,7 +304,7 @@ typedef union REGS      // OK: name REGS redeclared
     struct wordregs x;  //  same meaning.  
     struct byteregs h;  
 } REGS;  
-```  
+```cpp 
   
 ### typedefs in C++ vs. C  
  Use of the `typedef` specifier with class types is supported largely because of the ANSI C practice of declaring unnamed structures in `typedef` declarations. For example, many C programmers use the following:  
@@ -317,17 +317,17 @@ typedef struct {   // Declare an unnamed structure and give it the
    unsigned x;  
    unsigned y;  
 } POINT;  
-```  
+```cpp 
   
  The advantage of such a declaration is that it enables declarations like:  
   
 ```  
 POINT ptOrigin;  
-```  
+```cpp 
   
  instead of:  
   
-```  
+```cpp 
 struct point_t ptOrigin;  
 ```  
   

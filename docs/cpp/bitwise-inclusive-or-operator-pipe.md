@@ -33,7 +33,7 @@ expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Bitwise_Inclusive_OR_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate bitwise inclusive OR  
