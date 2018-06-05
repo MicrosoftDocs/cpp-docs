@@ -16,9 +16,10 @@ Primary expressions are the building blocks of more complex expressions. They ar
   
 ```  
   
-      literal  
-      this  
-      :: namename( expression )  
+literal  
+this
+name  
+::name ( expression )  
 ```  
   
  A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) for complete information about specifying literals.  

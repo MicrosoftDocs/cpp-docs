@@ -263,11 +263,11 @@ int main()
     ms.f = 0.99;  
     printf_s("%d   %f\n", ms.i, ms.f);  
 }  
-```cpp 
+``` 
   
 ```Output  
 10   0.990000  
-```cpp 
+``` 
   
 ### Re-declaration of typedefs  
  The `typedef` declaration can be used to redeclare the same name to refer to the same type. For example:  
@@ -282,7 +282,7 @@ typedef char CHAR;
 // PROG.CPP  
 #include "file1.h"  
 #include "file2.h"   // OK  
-```cpp 
+``` 
   
  The program PROG.CPP includes two header files, both of which contain `typedef` declarations for the name `CHAR`. As long as both declarations refer to the same type, such redeclaration is acceptable.  
   
@@ -291,7 +291,7 @@ typedef char CHAR;
 ```cpp  
 // FILE2.H  
 typedef int CHAR;     // Error  
-```cpp 
+``` 
   
  the compiler issues an error because of the attempt to redeclare the name `CHAR` to refer to a different type. This extends to constructs such as:  
   
@@ -304,7 +304,7 @@ typedef union REGS      // OK: name REGS redeclared
     struct wordregs x;  //  same meaning.  
     struct byteregs h;  
 } REGS;  
-```cpp 
+``` 
   
 ### typedefs in C++ vs. C  
  Use of the `typedef` specifier with class types is supported largely because of the ANSI C practice of declaring unnamed structures in `typedef` declarations. For example, many C programmers use the following:  
@@ -317,13 +317,13 @@ typedef struct {   // Declare an unnamed structure and give it the
    unsigned x;  
    unsigned y;  
 } POINT;  
-```cpp 
+``` 
   
  The advantage of such a declaration is that it enables declarations like:  
   
-```  
+```cpp  
 POINT ptOrigin;  
-```cpp 
+``` 
   
  instead of:  
   

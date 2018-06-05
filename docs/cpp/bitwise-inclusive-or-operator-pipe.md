@@ -17,9 +17,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-expression   
-|  
- expression  
+expression | expression  
   
 ```  
   

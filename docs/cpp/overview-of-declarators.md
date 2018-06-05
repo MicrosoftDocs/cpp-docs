@@ -159,7 +159,7 @@ int a, *b, c[5], **d, &e=a;
   - qualified-name   
   - declarator ( argument-list ) [cv-qualfiers] [exception-spec]  
   - declarator [ [ constant-expression ] ]
-  - pointer-operatordeclarator   
+  - pointer-operator declarator   
   - ( declarator )  
 
   
