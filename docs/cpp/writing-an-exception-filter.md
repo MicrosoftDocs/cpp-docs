@@ -19,7 +19,7 @@ You can handle an exception either by jumping to the level of the exception hand
   
  For example, the following code uses a function call in the *filter* expression: this function handles the problem and then returns -1 to resume normal flow of control:  
   
-```  
+```cpp 
 // exceptions_Writing_an_Exception_Filter.cpp  
 #include <windows.h>  
 int main() {  
@@ -58,13 +58,13 @@ int Eval_Exception ( int n_except ) {
   
  The conditional operator is frequently useful, because it can be used to check for a specific return code and then return one of two different values. For example, the filter in the following code recognizes the exception only if the exception is `STATUS_INTEGER_OVERFLOW`:  
   
-```  
+```cpp 
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {  
 ```  
   
  The purpose of the conditional operator in this case is mainly to provide clarity, because the following code produces the same results:  
   
-```  
+```cpp 
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {  
 ```  
   
@@ -72,7 +72,7 @@ __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {
   
  The comma operator enables you to perform multiple, independent operations inside a single expression. The effect is roughly that of executing multiple statements and then returning the value of the last expression. For example, the following code stores the exception code in a variable and then tests it:  
   
-```  
+```cpp 
 __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )  
 ```  
   

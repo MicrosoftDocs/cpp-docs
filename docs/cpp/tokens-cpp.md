@@ -32,13 +32,13 @@ A token is the smallest element of a C++ program that is meaningful to the compi
   
  The parser separates tokens from the input stream by creating the longest token possible using the input characters in a left-to-right scan. Consider this code fragment:  
   
-```  
+```cpp 
 a = i+++j;  
 ```  
   
  The programmer who wrote the code might have intended either of these two statements:  
   
-```  
+```cpp 
 a = i + (++j)  
   
 a = (i++) + j  

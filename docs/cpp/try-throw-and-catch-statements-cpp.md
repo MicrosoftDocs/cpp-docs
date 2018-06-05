@@ -25,7 +25,7 @@ To implement exception handling in C++, you use `try`, `throw`, and `catch` expr
   
 ## Example  
   
-```  
+```cpp 
   
 MyData md;  
 try {  
@@ -63,7 +63,7 @@ MyData GetNetworkResource()
   
  A `throw` expression that has no operand re-throws the exception currently being handled. We recommend this form when re-throwing the exception, because this preserves the original exception’s polymorphic type information. Such an expression should only be used in a `catch` handler or in a function that's called from a `catch` handler. The re-thrown exception object is the original exception object, not a copy.  
   
-```  
+```cpp 
 try {  
    throw CSomeOtherException();  
 }  

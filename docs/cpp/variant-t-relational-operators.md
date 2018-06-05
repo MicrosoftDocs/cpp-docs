@@ -21,18 +21,14 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      bool operator==(  
-   const VARIANT& varSrc   
-) const;  
 bool operator==(  
-   const VARIANT* pSrc   
-) const;  
+   const VARIANT& varSrc) const;  
+bool operator==(  
+   const VARIANT* pSrc) const;  
 bool operator!=(  
-   const VARIANT& varSrc   
-) const;  
+   const VARIANT& varSrc) const;  
 bool operator!=(  
-   const VARIANT* pSrc   
-) const;  
+   const VARIANT* pSrc) const;  
 ```  
   
 #### Parameters  
