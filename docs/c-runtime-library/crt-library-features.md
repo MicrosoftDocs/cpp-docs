@@ -90,9 +90,11 @@ For binary compatibility, more than one DLL file may be specified by a single im
 
 ## What problems exist if an application uses more than one CRT version?
 
-If you have more than one DLL or EXE, then you may have more than one CRT, whether or not you are using different versions of Visual C++. For example, statically linking the CRT into multiple DLLs can present the same problem. Developers encountering this problem with static CRTs have been instructed to compile with **/MD** to use the CRT DLL. If your DLLs pass CRT resources across the DLL boundary, you may encounter issues with mismatched CRTs and need to recompile your project with Visual C++.
+A process may load multiple CRTs based on how the DLLs and EXEs are built, static CRT, dynamic CRT (DLL) or different versions. Each CRT can use a different allocator and the classes implemented may have a different layout in memory making them incompatable. This means passing allocated memory or classes accross a DLL boundary (via DLL exports) is problematic and strongly discouraged. Application Binary Interface (ABI) technologies should be used instead as they are designed to be stable and versionable.
 
-If your program is using more than one version of the CRT, some care is needed when passing certain CRT objects (such as file handles, locales and environment variables) across DLL boundaries. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
+For example, statically linking the CRT into multiple DLLs or the EXE that pass CRT resources between them produces this problem. If you must do this ensure that all components use the same DLL version of the CRT; compile them all with **/MD** using the same toolset).
+
+If your program is passing certain CRT resources (such as file handles, locales and environment variables) accross DLL boundaires, even with the same version of the CRT, some care is needed. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
 
 ## See also
 
