@@ -25,7 +25,7 @@ class FtmBase : public Microsoft::WRL::Implements<
 ```  
   
 ## Remarks  
- For more information, see the "IMarshal" topic in the "COM Interfaces" subtopic of the "COM Reference" topic in the MSDN Library.  
+ For more information, see [RuntimeClass Class](runtimeclass-class.md).  
   
 ## Members  
   
