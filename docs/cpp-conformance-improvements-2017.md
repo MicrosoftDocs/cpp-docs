@@ -1575,6 +1575,46 @@ D<int> d;
 
 To fix the error, change the B() expression to B\<T>().
 
+### constexpr aggregate initialization
+
+Previous versions of the C++ compiler incorrectly handled constexpr aggregate initialization; it accepted invalid code in which the aggregate-init-list had too many elements, and produced bad codegen for it. The following code is an example of such code: 
+
+```cpp
+#include <array>
+struct X {
+    unsigned short a;
+    unsigned char b;
+};
+
+int main() {
+    constexpr std::array<X, 2> xs = {
+        { 1, 2 },
+        { 3, 4 }
+    };
+    return 0;
+}
+
+```
+
+In Visual Studio 2017 version 15.7 update 3 and later, the previous example now raises *C2078 too many initializers*. The following example shows how to fix the code. When initializing a `std::array` with nested brace-init-lists, give the inner array a braced-list of its own:
+
+```cpp
+#include <array>
+struct X {
+    unsigned short a;
+    unsigned char b;
+};
+
+int main() {
+    constexpr std::array<X, 2> xs = {{ // note double braces
+        { 1, 2 },
+        { 3, 4 }
+    }}; // note double braces
+    return 0;
+}
+
+```
+
 ## See also
 
 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)
