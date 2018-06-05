@@ -55,7 +55,7 @@ The following rules constrain how overloaded operators are implemented. However,
   
  Note that the meaning of any of the operators can be changed completely. That includes the meaning of the address-of (**&**), assignment (**=**), and function-call operators. Also, identities that can be relied upon for built-in types can be changed using operator overloading. For example, the following four statements are usually equivalent when completely evaluated:  
   
-```  
+```cpp 
 var = var + 1;  
 var += 1;  
 var++;  

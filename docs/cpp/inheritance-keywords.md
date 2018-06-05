@@ -28,7 +28,7 @@ class [__virtual_inheritance] class-name;
   
  C++ allows you to declare a pointer to a class member prior to the definition of the class. For example:  
   
-```  
+```cpp 
 class S;  
 int S::*p;  
 ```  
@@ -50,7 +50,7 @@ int S::*p;
   
  If the example above is changed to:  
   
-```  
+```cpp 
 class __single_inheritance S;  
 int S::*p;  
 ```  
