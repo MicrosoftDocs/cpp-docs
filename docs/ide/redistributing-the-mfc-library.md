@@ -39,6 +39,7 @@ If you dynamically link your application to the MFC library, you must redistribu
  The redistributable .msm files contain the DLLs that are used for localization. There is one DLL for each supported language. The installation process installs these DLLs in the %windir%\system32\ folder on the target computer.  
   
  For more information about how to localize MFC applications, see [TN057: Localization of MFC Components](../mfc/tn057-localization-of-mfc-components.md), and also [Article 208983: How to Using MFC LOC DLLs](http://go.microsoft.com/fwlink/p/?linkid=198025) on the Microsoft Support website.  
+ <!-- Loc comment: Could you please check the link for "Article 208983: How to Using MFC LOC DLLs" since it is not working? -->
   
  You can redistribute MFC localization DLLs by deploying the MFC DLL in your application local folder. For more information about how to redistribute Visual C++ libraries, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   
