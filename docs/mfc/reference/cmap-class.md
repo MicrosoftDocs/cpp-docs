@@ -25,13 +25,13 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
  `KEY`  
  Class of the object used as the key to the map.  
   
- `ARG` *_* `KEY`  
+ `ARG_KEY`  
  Data type used for `KEY` arguments; usually a reference to `KEY`.  
   
  `VALUE`  
  Class of the object stored in the map.  
   
- `ARG` *_* `VALUE`  
+ `ARG_VALUE`  
  Data type used for `VALUE` arguments; usually a reference to `VALUE`.  
   
 ## Members  
