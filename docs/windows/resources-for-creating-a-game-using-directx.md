@@ -17,7 +17,7 @@ To create the best desktop games, use Visual C++ and DirectX together.
   
 ## Resources
 
-Visual C++ is included in all editions of Visual Studio, but it's not installed by default. For information about how to install Visual Studio and the C++ development tools, see [Install Visual Studio](/visualstudio/install/install-visual-studio).  
+Visual C++ is included in all editions of Visual Studio, but it's not installed by default. For information about how to install Visual Studio and the C++ development tools, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).  
   
 For Windows 8.1 and later, the DirectX SDK is included in the Windows SDK. You don't have to download anything extra. For more information, see [Where is the DirectX SDK?](http://msdn.microsoft.com/library/windows/desktop/ee663275.aspx).  
   

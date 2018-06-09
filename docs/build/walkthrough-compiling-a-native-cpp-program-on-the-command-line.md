@@ -19,9 +19,9 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
  In this walkthrough, you can use your own Visual C++ program instead of typing the one that's shown, or you can use a Visual C++ code sample from another help article.  
   
 ## Prerequisites  
- To complete this walkthrough, you must have installed either Visual Studio and the optional Visual C++ components, or the Microsoft Visual C++ Build Tools.  
+ To complete this walkthrough, you must have installed either Visual Studio and the optional Desktop development with C++ workload, or the command-line Build Tools for Visual Studio.  
   
- Visual Studio is a powerful integrated development environment that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on these features and how to download and install Visual Studio, including the free Visual Studio Community edition, see [Install Visual Studio](/visualstudio/install/install-visual-studio).  
+ Visual Studio is a powerful integrated development environment (IDE) that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on how to download and install Visual Studio, including the free Visual Studio Community edition, and to include support for C/C++ development, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).  
   
  The Build Tools for Visual Studio installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=840931).  
   
