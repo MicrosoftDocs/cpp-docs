@@ -2,7 +2,7 @@
 title: Install C++ support in Visual Studio | Microsoft Docs
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: 12/12/2017
+ms.date: "06/08/2018"
 ms.topic: "tutorial"
 ms.technology: ["devlang-C++"]
 ms.devlang: "C++"
@@ -24,17 +24,17 @@ If you haven't downloaded and installed Visual Studio and the Visual C++ tools y
 
 - Enough free disk space. Visual Studio requires at least 7GB of disk space, and can take 50GB or more if many common options are installed. We recommend you install it on your C: drive.
 
-For details on the disk space and operating system requirements, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). The installer reports how much disk space is required for the options you select.
+For details on the disk space and operating system requirements, see [Visual Studio Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-vs). The installer reports how much disk space is required for the options you select.
 
 ## Installation
 
 1. Download the latest Visual Studio 2017 installer for Windows.
 
    > [!div class="nextstepaction"]
-   > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&utm_source=docs&utm_medium=clickbutton">Install Visual Studio 2017 Community</a>
+   > <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Install Visual Studio 2017 Community</a>
 
    >[!Tip]
-   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Professional</a> or <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Enterprise</a>.
+   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Professional</a> or <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Enterprise</a>.
 
 1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you are having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
