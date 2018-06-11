@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Reference-Type Function Arguments
 It is often more efficient to pass references, rather than large objects, to functions. This allows the compiler to pass the address of the object while maintaining the syntax that would have been used to access the object. Consider the following example that uses the `Date` structure:  
   
-```  
+```cpp 
 // reference_type_function_arguments.cpp  
 struct Date  
 {  
@@ -57,7 +57,7 @@ int main()
   
  Although arguments passed as reference types observe the syntax of non-pointer types, they retain one important characteristic of pointer types: they are modifiable unless declared as **const**. Because the intent of the preceding code is not to modify the object `GDate`, a more appropriate function prototype is:  
   
-```  
+```cpp 
 long JulianFromGregorian( const Date& GDate );  
 ```  
   

@@ -23,7 +23,7 @@ ms.workload: ["cplusplus"]
 ## Example  
  The following code example illustrates how to use explicit overrides:  
   
-```  
+```cpp 
 // deriv_ExplicitOverrides.cpp  
 // compile with: /GR  
 extern "C" int printf_s(const char *, ...);  

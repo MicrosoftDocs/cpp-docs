@@ -34,7 +34,7 @@ type-id && cast-expression
   
  You can also overload ordinary functions and operators to take advantage of move semantics. Visual C++ 2010 introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:  
   
-```  
+```cpp 
 // string_concatenation.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -65,7 +65,7 @@ int main()
   
  Consider the following example that declares four types, `W`, `X`, `Y`, and `Z`. The constructor for each type takes a different combination of `const` and non-`const` lvalue references as its parameters.  
   
-```  
+```cpp 
 struct W  
 {  
    W(int&, int&) {}  
@@ -89,30 +89,30 @@ struct Z
   
  Suppose you want to write a generic function that generates objects. The following example shows one way to write this function:  
   
-```  
+```cpp 
 template <typename T, typename A1, typename A2>  
 T* factory(A1& a1, A2& a2)  
 {  
    return new T(a1, a2);  
 }  
-```  
+```
   
  The following example shows a valid call to the `factory` function:  
   
-```  
+```cpp 
 int a = 4, b = 5;  
 W* pw = factory<W>(a, b);  
 ```  
   
  However, the following example does not contain a valid call to the `factory` function because `factory` takes lvalue references that are modifiable as its parameters, but it is called by using rvalues:  
   
-```  
+```cpp 
 Z* pz = factory<Z>(2, 2);  
 ```  
   
  Ordinarily, to solve this problem, you must create an overloaded version of the `factory` function for every combination of `A&` and `const A&` parameters. Rvalue references enable you to write one version of the `factory` function, as shown in the following example:  
   
-```  
+```cpp 
 template <typename T, typename A1, typename A2>  
 T* factory(A1&& a1, A2&& a2)  
 {  
@@ -124,7 +124,7 @@ T* factory(A1&& a1, A2&& a2)
   
  The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.  
   
-```  
+```cpp 
 int main()  
 {  
    int a = 4, b = 5;  
@@ -145,7 +145,7 @@ int main()
   
  By overloading a function to take a `const` lvalue reference or an rvalue reference, you can write code that distinguishes between non-modifiable objects (lvalues) and modifiable temporary values (rvalues). You can pass an object to a function that takes an rvalue reference unless the object is marked as `const`. The following example shows the function `f`, which is overloaded to take an lvalue reference and an rvalue reference. The `main` function calls `f` with both lvalues and an rvalue.  
   
-```  
+```cpp 
 // reference-overload.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -177,7 +177,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```Output  
 In f(const MemoryBlock&). This version cannot modify the parameter.  
 In f(MemoryBlock&&). This version can modify the parameter.  
 ```  
@@ -190,7 +190,7 @@ In f(MemoryBlock&&). This version can modify the parameter.
   
  The following example shows the function `g`, which is overloaded to take an lvalue reference and an rvalue reference. The function `f` takes an rvalue reference as its parameter (a named rvalue reference) and returns an rvalue reference (an unnamed rvalue reference). In the call to `g` from `f`, overload resolution selects the version of `g` that takes an lvalue reference because the body of `f` treats its parameter as an lvalue. In the call to `g` from `main`, overload resolution selects the version of `g` that takes an rvalue reference because `f` returns an rvalue reference.  
   
-```  
+```cpp 
 // named-reference.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -226,7 +226,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```cpp 
 In g(const MemoryBlock&).  
 In g(MemoryBlock&&).  
 ```  
@@ -237,7 +237,7 @@ In g(MemoryBlock&&).
   
  The C++ Standard Library [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
   
-```  
+```cpp 
 // cast-reference.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -269,7 +269,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```cpp 
 In g(const MemoryBlock&).  
 In g(MemoryBlock&&).  
 ```  
@@ -282,7 +282,7 @@ In g(MemoryBlock&&).
   
  The following example declares one structure template and then specializes it for various reference types. The `print_type_and_value` function takes an rvalue reference as its parameter and forwards it to the appropriate specialized version of the `S::print` method. The `main` function demonstrates the various ways to call the `S::print` method.  
   
-```  
+```cpp 
 // template-type-deduction.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -363,7 +363,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```cpp 
 print<T&>: first  
 print<const T&>: second  
 print<T&&>: third  
@@ -372,13 +372,13 @@ print<const T&&>: fourth
   
  To resolve each call to the `print_type_and_value` function, the compiler first performs template argument deduction. The compiler then applies reference collapsing rules when it substitutes the deduced template arguments for the parameter types. For example, passing the local variable `s1` to the `print_type_and_value` function causes the compiler to produce the following function signature:  
   
-```  
+```cpp 
 print_type_and_value<string&>(string& && t)  
 ```  
   
  The compiler uses reference collapsing rules to reduce the signature to the following:  
   
-```  
+```cpp 
 print_type_and_value<string&>(string& t)  
 ```  
   

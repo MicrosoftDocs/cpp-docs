@@ -36,7 +36,7 @@ A *constant* value is one that doesn't change. C++ provides two keywords to enab
   
  Nonintegral constants must be converted (either explicitly or implicitly) to integral types to be legal in a constant expression. Therefore, the following code is legal:  
   
-```  
+```cpp 
 const double Size = 11.0;  
 char chArray[(int)Size];  
 ```  

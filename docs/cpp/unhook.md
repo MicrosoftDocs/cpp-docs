@@ -17,7 +17,7 @@ Dissociates a handler method from an event.
   
 ## Syntax  
   
-```  
+```cpp 
   
       long  __unhook(  
    &SourceClass::EventMethod,  

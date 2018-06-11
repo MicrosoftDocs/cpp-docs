@@ -17,7 +17,7 @@ The keyword is one of the two values for a variable of type [bool](../cpp/bool-c
   
 ## Example  
   
-```  
+```cpp 
 // bool_false.cpp  
 #include <stdio.h>  
   

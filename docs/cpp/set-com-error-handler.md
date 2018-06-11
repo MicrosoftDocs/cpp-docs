@@ -44,7 +44,7 @@ void __stdcall _set_com_error_handler(
   
 ## Example  
   
-```  
+```cpp 
 // _set_com_error_handler.cpp  
 // compile with /EHsc  
 #include <stdio.h>  

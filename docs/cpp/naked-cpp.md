@@ -49,15 +49,14 @@ Naked int func( formal_parameters ) {}
  The `naked` attribute affects only the nature of the compiler's code generation for the function's prolog and epilog sequences. It does not affect the code that is generated for calling such functions. Thus, the `naked` attribute is not considered part of the function's type, and function pointers cannot have the `naked` attribute. Furthermore, the `naked` attribute cannot be applied to a data definition. For example, this code sample generates an error:  
   
 ```  
-__declspec( naked ) int i;       // Error--naked attribute not  
-                                 // permitted on data declarations.  
+__declspec( naked ) int i;  
+// Error--naked attribute not permitted on data declarations.  
 ```  
   
  The `naked` attribute is relevant only to the definition of the function and cannot be specified in the function's prototype. For example, this declaration generates a compiler error:  
   
 ```  
-__declspec( naked ) int func();  // Error--naked attribute not   
-                                 // permitted on function declarations  
+__declspec( naked ) int func();  // Error--naked attribute not permitted on function declarations  
 ```  
   
  **END Microsoft Specific**  

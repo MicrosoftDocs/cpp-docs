@@ -40,7 +40,7 @@ Allows selection among multiple sections of code, depending on the value of an i
   
  If a matching expression is found, control is not impeded by subsequent **case** or **default** labels. The [break](../cpp/break-statement-cpp.md) statement is used to stop execution and transfer control to the statement after the `switch` statement. Without a **break** statement, every statement from the matched **case** label to the end of the `switch`, including the **default**, is executed. For example:  
   
-```  
+```cpp 
 // switch_statement1.cpp  
 #include <stdio.h>  
   

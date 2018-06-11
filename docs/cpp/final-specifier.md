@@ -20,10 +20,6 @@ You can use the `final` keyword to designate virtual functions that cannot be ov
 ```  
   
 function-declaration final;  
-```  
-  
-```  
-  
 class class-name final base-classes  
 ```  
   

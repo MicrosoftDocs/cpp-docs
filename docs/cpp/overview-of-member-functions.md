@@ -18,7 +18,7 @@ Member functions are either static or nonstatic. The behavior of static member f
   
  An example of declaring a function within a class declaration follows:  
   
-```  
+```cpp 
 // overview_of_member_functions1.cpp  
 class Account  
 {  
@@ -43,7 +43,7 @@ int main()
   
  The following example is identical to the previous declaration of class `Account`, except that the `Deposit` function is defined outside the class declaration:  
   
-```  
+```cpp 
 // overview_of_member_functions2.cpp  
 class Account  
 {  

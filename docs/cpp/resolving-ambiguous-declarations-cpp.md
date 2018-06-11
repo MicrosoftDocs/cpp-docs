@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Resolving ambiguous declarations (C++)
 To perform explicit conversions from one type to another, you must use casts, specifying the desired type name. Some type casts result in syntactic ambiguity. The following function-style type cast is ambiguous:  
   
-```  
+```cpp 
 char *aName( String( s ) );  
 ```  
   
@@ -21,13 +21,13 @@ char *aName( String( s ) );
   
  If a declaration can be considered a valid function declaration, it is treated as such. Only if it cannot possibly be a function declaration — that is, if it would be syntactically incorrect — is a statement examined to see if it is a function-style type cast. Therefore, the compiler considers the statement to be a declaration of a function and ignores the parentheses around the identifier `s`. On the other hand, the statements:  
   
-```  
+```cpp 
 char *aName( (String)s );  
 ```  
   
  and  
   
-```  
+```cpp 
 char *aName = String( s );  
 ```  
   

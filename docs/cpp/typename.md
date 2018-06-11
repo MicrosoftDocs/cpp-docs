@@ -27,7 +27,7 @@ typename identifier;
   
  **typename** can be used by any type anywhere in a template declaration or definition. It is not allowed in the base class list, unless as a template argument to a template base class.  
   
-```  
+```cpp 
 template <class T>  
 class C1 : typename T::InnerType // Error - typename not allowed.  
 {};  
@@ -38,14 +38,14 @@ class C2 : A<typename T::InnerType>  // typename OK.
   
  The **typename** keyword can also be used in place of **class** in template parameter lists. For example, the following statements are semantically equivalent:  
   
-```  
+```cpp 
 template<class T1, class T2>...  
 template<typename T1, typename T2>...  
 ```  
   
 ## Example  
   
-```  
+```cpp 
 // typename.cpp  
 template<class T> class X  
 {  

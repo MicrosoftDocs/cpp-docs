@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
   
 ## Example  
   
-```  
+```cpp 
 // novtable.cpp  
 #include <stdio.h>  
   

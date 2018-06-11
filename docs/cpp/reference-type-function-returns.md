@@ -27,7 +27,7 @@ Functions can be declared to return a reference type. There are two reasons to m
 ## Example  
  Consider the `Point` example:  
   
-```  
+```cpp 
 // refType_function_returns.cpp  
 // compile with: /EHsc  
   
@@ -71,7 +71,7 @@ cout << "x = " << ThePoint.x() << "\n"
   
 ## Output  
   
-```  
+```Output  
 x = 7  
 y = 9  
 ```  
@@ -93,7 +93,7 @@ y = 9
 ## Caution returning address of local  
  If you declare an object at local scope, that object will be destroyed when the function returns. If the function returns a reference to that object, that reference will probably cause an access violation at runtime if the caller attempts to use the null reference.  
   
-```  
+```cpp 
 // C4172 means Don’t do this!!!  
 Foo& GetFoo()  
 {  

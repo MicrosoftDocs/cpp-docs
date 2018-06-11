@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Anonymous Class Types
 Classes can be anonymous — that is, they can be declared without an *identifier*. This is useful when you replace a class name with a `typedef` name, as in the following:  
   
-```  
+```cpp 
 typedef struct  
 {  
     unsigned x;  
@@ -27,7 +27,7 @@ typedef struct
   
  Anonymous classes are also useful when you want a reference to a class member to appear as though it were not contained in a separate class, as in the following:  
   
-```  
+```cpp 
 struct PTValue  
 {  
     POINT ptLoc;  
@@ -43,7 +43,7 @@ PTValue ptv;
   
  In the preceding code, `iValue` can be accessed using the object member-selection operator (**.**) as follows:  
   
-```  
+```cpp 
 int i = ptv.iValue;  
 ```  
   
@@ -62,7 +62,7 @@ int i = ptv.iValue;
   
  You can access the members of an anonymous structure as if they were members in the containing structure.  
   
-```  
+```cpp 
 // anonymous_structures.c  
 #include <stdio.h>  
   

@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
   
  The following example defines an exportable class. All its member functions and static data are exported:  
   
-```  
+```cpp 
 #define DllExport   __declspec( dllexport )  
   
 class DllExport C {  

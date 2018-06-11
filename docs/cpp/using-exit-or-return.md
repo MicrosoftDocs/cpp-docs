@@ -17,7 +17,7 @@ When you call **exit** or execute a `return` statement from **main**, static obj
   
 ## Example  
   
-```  
+```cpp 
 // using_exit_or_return1.cpp  
 #include <stdio.h>  
 class ShowData {  
@@ -57,7 +57,7 @@ int main() {
   
  Another way to write this code is to declare the `ShowData` objects with block scope, allowing them to be destroyed when they go out of scope:  
   
-```  
+```cpp 
 int main() {  
    ShowData sd1, sd2( "hello.dat" );  
   

@@ -20,7 +20,7 @@ The way the names of objects and functions are shared between translation units 
   
      An example declaration of a name with internal linkage is:  
   
-    ```  
+    ```cpp 
     static int i;   // The static keyword ensures internal linkage.  
     ```  
   
@@ -30,7 +30,7 @@ The way the names of objects and functions are shared between translation units 
   
      An example declaration of a name with external linkage is:  
   
-    ```  
+    ```cpp 
     extern int i;  
     ```  
   

@@ -21,9 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      void Attach(  
-   VARIANT& varSrc   
-);  
+void Attach(VARIANT& varSrc);  
 ```  
   
 #### Parameters  

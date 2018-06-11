@@ -80,7 +80,7 @@ The restriction specifier can be applied to function and lambda declarations. It
 ## Example  
  The following example shows how to use the `restrict(amp)`clause.  
   
-```  
+```cpp 
   
 void functionAmp() restrict(amp) {}   
 void functionNonAmp() {}   

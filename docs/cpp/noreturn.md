@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 ## Example  
  In the following sample,the **else** clause does not contain a return statement.  Declaring `fatal` as **__declspec(noreturn)** avoids an error or warning message.  
   
-```  
+```cpp 
 // noreturn2.cpp  
 __declspec(noreturn) extern void fatal () {}  
   

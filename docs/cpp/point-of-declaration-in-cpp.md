@@ -16,7 +16,7 @@ A name is considered to be declared immediately after its declarator but before 
   
  Consider this example:  
   
-```  
+```cpp 
 // point_of_declaration1.cpp  
 // compile with: /W1   
 double dVar = 7.0;  

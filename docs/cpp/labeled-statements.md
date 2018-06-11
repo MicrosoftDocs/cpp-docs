@@ -60,7 +60,7 @@ int main() {
   
  The label has function scope and cannot be redeclared within the function. However, the same name can be used as a label in different functions.  
   
-```  
+```cpp 
 // labels_with_goto.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -81,7 +81,7 @@ int main() {
   
  Labels that appear after the **case** keyword cannot also appear outside a `switch` statement. (This restriction also applies to the **default** keyword.) The following code fragment shows the correct use of **case** labels:  
   
-```  
+```cpp 
 // Sample Microsoft Windows message processing loop.  
 switch( msg )  
 {  
@@ -110,7 +110,7 @@ switch( msg )
 ## Labels in the case statement  
  Labels that appear after the **case** keyword cannot also appear outside a `switch` statement. (This restriction also applies to the **default** keyword.) The following code fragment shows the correct use of **case** labels:  
   
-```  
+```cpp 
 // Sample Microsoft Windows message processing loop.  
 switch( msg )  
 {  
@@ -158,7 +158,7 @@ switch( msg )
   
  The label has function scope and cannot be redeclared within the function. However, the same name can be used as a label in different functions.  
   
-```  
+```cpp 
 // labels_with_goto.cpp  
 // compile with: /EHsc  
 #include <iostream>  

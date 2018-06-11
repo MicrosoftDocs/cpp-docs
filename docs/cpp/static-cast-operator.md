@@ -30,7 +30,7 @@ static_cast <type-id> ( expression )
   
  In the example that follows, the line `D* pd2 = static_cast<D*>(pb);` is not safe because `D` can have fields and methods that are not in `B`. However, the line `B* pb2 = static_cast<B*>(pd);` is a safe conversion because `D` always contains all of `B`.  
   
-```  
+```cpp 
 // static_cast_Operator.cpp  
 // compile with: /LD  
 class B {};  
@@ -50,7 +50,7 @@ void f(B* pb, D* pd) {
   
  The `dynamic_cast` and `static_cast` operators move a pointer throughout a class hierarchy. However, `static_cast` relies exclusively on the information provided in the cast statement and can therefore be unsafe. For example:  
   
-```  
+```cpp 
 // static_cast_Operator_2.cpp  
 // compile with: /LD /GR  
 class B {  
@@ -75,7 +75,7 @@ void f(B* pb) {
   
  The `static_cast` operator can also be used to perform any implicit conversion, including standard conversions and user-defined conversions. For example:  
   
-```  
+```cpp 
 // static_cast_Operator_3.cpp  
 // compile with: /LD /GR  
 typedef unsigned char BYTE;  
