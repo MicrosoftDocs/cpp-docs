@@ -150,7 +150,7 @@ virtual void CloseAllDocuments(BOOL bEndSession);
   
 ### Parameters  
  `bEndSession`  
- Specifies whether or not the session is being ended. It is **TRUE** if the session is being ended; otherwise **FALSE**.  
+ Not used.  
   
 ### Remarks  
  This member function is typically used as part of the File Exit command. The default implementation of this function calls the [CDocument::DeleteContents](../../mfc/reference/cdocument-class.md#deletecontents) member function to delete the document's data and then closes the frame windows for all the views attached to the document.  
