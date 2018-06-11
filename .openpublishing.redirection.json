@@ -337,7 +337,7 @@
         },
         {
             "source_path": "docs/dotnet/collection-adapter-stl-clr.md",
-            "redirect_url": "/docs/dotnet/adapter-stl-clr",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#collection_adapter",
             "redirect_document_id": false
         },
         {
