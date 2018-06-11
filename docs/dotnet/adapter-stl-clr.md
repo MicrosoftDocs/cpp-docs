@@ -1,7 +1,7 @@
 ---
 title: "adapter (STL/CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/15/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["<cliext/adapter>", "cliext::collection_adapter", "cliext::collection_adapter::base", "cliext::collection_adapter::begin", "cliext::collection_adapter", "cliext::collection_adapter::collection_adapter",
@@ -138,7 +138,7 @@ Coll^ base();
   
 ### Example  
   
-```  
+```cpp
 // cliext_collection_adapter_base.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -181,7 +181,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // cliext_collection_adapter_begin.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -263,7 +263,7 @@ collection_adapter(Coll^ collection);
   
 ### Example  
   
-```  
+```cpp 
 // cliext_collection_adapter_construct.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -323,7 +323,7 @@ typedef int difference_type;
   
 ### Example  
   
-```  
+```cpp 
 // cliext_collection_adapter_difference_type.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -374,7 +374,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp 
 // cliext_collection_adapter_end.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -418,7 +418,7 @@ typedef T1 iterator;
   
 ### Example  
   
-```  
+```cpp  
 // cliext_collection_adapter_iterator.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -462,7 +462,7 @@ typedef Key key_type;
   
 ### Example  
   
-```  
+```cpp
 // cliext_collection_adapter_key_type.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -511,7 +511,7 @@ typedef Value mapped_type;
   
 ### Example  
   
-```  
+```cpp  
 // cliext_collection_adapter_mapped_type.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -564,7 +564,7 @@ collection_adapter<Coll>% operator=(collection_adapter<Coll>% right);
   
 ### Example  
   
-```  
+```cpp 
 // cliext_collection_adapter_operator_as.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -615,7 +615,7 @@ typedef value_type% reference;
   
 ### Example  
   
-```  
+```cpp 
 // cliext_collection_adapter_reference.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -662,7 +662,7 @@ size_type size();
   
 ### Example  
   
-```  
+```cpp  
 // cliext_collection_adapter_size.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -704,7 +704,7 @@ typedef int size_type;
   
 ### Example  
   
-```  
+```cpp  
 // cliext_collection_adapter_size_type.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -752,7 +752,7 @@ void swap(collection_adapter<Coll>% right);
   
 ### Example  
   
-```  
+```cpp
 // cliext_collection_adapter_swap.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -815,7 +815,7 @@ typedef Value value_type;
   
 ### Example  
   
-```  
+```cpp  
 // cliext_collection_adapter_value_type.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -985,7 +985,7 @@ range_adapter<Iter>% operator=(range_adapter<Iter>% right);
   
 ### Example  
   
-```  
+```cpp  
 // cliext_range_adapter_operator_as.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
@@ -1071,7 +1071,7 @@ range_adapter(Iter first, Iter last);
   
 ### Example  
   
-```  
+```cpp  
 // cliext_range_adapter_construct.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   
