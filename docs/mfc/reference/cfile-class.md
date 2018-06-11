@@ -177,7 +177,7 @@ CAtlTransactionManager* pTM);
   
 |Value|Description|  
 |-----------|-----------------|  
-|`CFile::modeCreate`|Creates a new file if no file exists.; If the file already exists, [CFileException](../../mfc/reference/cfileexception-class.md) is raised.|  
+|`CFile::modeCreate`|Creates a new file if no file exists. If the file already exists, it is overwritten and initially set to zero length.|  
 |`CFile::modeNoTruncate`|Creates a new file if no file exists; otherwise, if the file already exists, it is attached to the `CFile` object.|  
   
  Choose the following file caching options as described. By default, the system uses a general purpose caching scheme that is not available as an option.  
