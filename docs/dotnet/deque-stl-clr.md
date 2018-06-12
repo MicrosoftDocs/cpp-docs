@@ -11,11 +11,11 @@ f1_keywords: ["cliext::deque", "cliext::deque::assign", "cliext::deque::at", "cl
     "cliext::deque::push_front", "cliext::deque::rbegin", "cliext::deque::reference", "cliext::deque::rend", "cliext::deque::resize", "cliext::deque::reverse_iterator", "cliext::deque::size", 
     "cliext::deque::size_type", "cliext::deque::swap", "cliext::deque::to_array", "cliext::deque::value_type", "cliext::deque::operator<", "cliext::deque::operator<=", "cliext::deque::operator=", "cliext::deque::operator==", "cliext::deque::operator>", "cliext::deque::operator>="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["deque class [STL/CLR]", "<deque> header [STL/CLR]", "<cliext/deque> header [STL/CLR]", "assign member [STL/CLR]", , "assign member [STL/CLR]", "at member [STL/CLR]", "back member [STL/CLR]", 
+helpviewer_keywords: ["deque class [STL/CLR]", "<deque> header [STL/CLR]", "<cliext/deque> header [STL/CLR]", "assign member [STL/CLR]", "assign member [STL/CLR]", "at member [STL/CLR]", "back member [STL/CLR]", 
     "back_item member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", 
     "deque member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "erase member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", 
     "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", 
-    "iterator member [STL/CLR]", "operator!= member [STL/CLR]", "operator member [] [STL/CLR]", "pop_back member [STL/CLR]", "pop_front member [STL/CLR]", "push_back member [STL/CLR]", "push_front member [STL/CLR]", 
+    "iterator member [STL/CLR]", "operator!= member [STL/CLR]", "operator member [] [STL/CLR]", "pop_back member [STL/CLR]", "pop_front member [STL/CLR]", "push_back member [STL/CLR]", "push_front member [STL/CLR]",
     "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "resize member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", 
     "swap member [STL/CLR]", "to_array member [STL/CLR]"(, "value_type member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator= member [STL/CLR]", "operator== member [STL/CLR]", 
     "operator> member [STL/CLR]", "operator>= member [STL/CLR]"]
@@ -369,7 +369,7 @@ back_item = c
  a b x  
 ```  
   
-## <a name="deque"></a> deque::begin (STL/CLR)
+## <a name="begin"></a> deque::begin (STL/CLR)
 Designates the beginning of the controlled sequence.  
   
 ### Syntax  
