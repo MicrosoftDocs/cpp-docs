@@ -17,7 +17,7 @@ helpviewer_keywords: ["deque class [STL/CLR]", "<deque> header [STL/CLR]", "<cli
     "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", 
     "iterator member [STL/CLR]", "operator!= member [STL/CLR]", "operator member [] [STL/CLR]", "pop_back member [STL/CLR]", "pop_front member [STL/CLR]", "push_back member [STL/CLR]", "push_front member [STL/CLR]",
     "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "resize member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", 
-    "swap member [STL/CLR]", "to_array member [STL/CLR]"(, "value_type member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator= member [STL/CLR]", "operator== member [STL/CLR]", 
+    "swap member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator= member [STL/CLR]", "operator== member [STL/CLR]", 
     "operator> member [STL/CLR]", "operator>= member [STL/CLR]"]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
 author: "mikeblome"
