@@ -130,7 +130,7 @@ template<typename Value>
 ## Remarks  
  The object allocates and frees storage for the sequence it controls through a stored array of handles that designate blocks of `Value` elements. The array grows on demand. Growth occurs in such a way that the cost of either prepending or appending a new element is constant time, and no remaining elements are disturbed. You can also remove an element at either end in constant time, and without disturbing remaining elements. Thus, a deque is a good candidate for the underlying container for template class [queue (STL/CLR)](../dotnet/queue-stl-clr.md) or template class [stack (STL/CLR)](../dotnet/stack-stl-clr.md).  
   
- A `deque` object supports random-access iterators, which means you can refer to an element directly given its numerical position, counting from zero for the first (front) element, to [deque::size (STL/CLR)](../dotnet/deque-size-stl-clr.md)`() - 1` for the last (back) element. It also means that a deque is a good candidate for the underlying container for template class [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md).  
+ A `deque` object supports random-access iterators, which means you can refer to an element directly given its numerical position, counting from zero for the first (front) element, to [deque::size (STL/CLR)](#size)`() - 1` for the last (back) element. It also means that a deque is a good candidate for the underlying container for template class [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md).  
   
  A deque iterator stores a handle to its associated deque object, along with the bias of the element it designates. You can use iterators only with their associated container objects. The bias of a deque element is `not` necessarily the same as its position. The first element inserted has bias zero, the next appended element has bias 1, but the next prepended element has bias -1.  
   
@@ -433,7 +433,7 @@ void clear();
 ```  
   
 ### Remarks  
- The member function effectively calls [deque::erase (STL/CLR)](../dotnet/deque-erase-stl-clr.md)`(` [deque::begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md)`(),` [deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md)`())`. You use it to ensure that the controlled sequence is empty.  
+ The member function effectively calls [deque::erase (STL/CLR)](#erase)`(` [deque::begin (STL/CLR)](#begin)`(),` [deque::end (STL/CLR)](#end)`())`. You use it to ensure that the controlled sequence is empty.  
   
 ### Example  
   
@@ -646,7 +646,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `deque(deque<Value>% right);`  
   
- initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the deque object `right`. For more information on the iterators, see [deque::begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md) and [deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md).  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the deque object `right`. For more information on the iterators, see [deque::begin (STL/CLR)](#begin) and [deque::end (STL/CLR)](#end).  
   
  The constructor:  
   
@@ -809,7 +809,7 @@ bool empty();
 ```  
   
 ### Remarks  
- The member function returns true for an empty controlled sequence. It is equivalent to [deque::size (STL/CLR)](../dotnet/deque-size-stl-clr.md)`() == 0`. You use it to test whether the deque is empty.  
+ The member function returns true for an empty controlled sequence. It is equivalent to [deque::size (STL/CLR)](#size)`() == 0`. You use it to test whether the deque is empty.  
   
 ### Example  
   
@@ -929,7 +929,7 @@ iterator erase(iterator first, iterator last);
   
  The second member function removes the elements of the controlled sequence in the range [`first`, `last`). You use it to remove zero or more contiguous elements.  
   
- Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md)`()` if no such element exists.  
+ Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [deque::end (STL/CLR)](#end)`()` if no such element exists.  
   
  When erasing elements, the number of element copies is linear in the number of elements between the end of the erasure and the nearer end of the sequence. (When erasing one or more elements at either end of the sequence, no element copies occur.)  
   
@@ -1936,7 +1936,7 @@ void resize(size_type new_size, value_type val);
  Value of the padding element.  
   
 ### Remarks  
- The member functions both ensure that [deque::size (STL/CLR)](../dotnet/deque-size-stl-clr.md)`()` henceforth returns `new_size`. If it must make the controlled sequence longer, the first member function appends elements with value `value_type()`, while the second member function appends elements with value `val`. To make the controlled sequence shorter, both member functions effectively erase the last element [deque::size (STL/CLR)](../dotnet/deque-size-stl-clr.md)`() -` `new_size` times. You use it to ensure that the controlled sequence has size `new_size`, by either trimming or padding the current controlled sequence.  
+ The member functions both ensure that [deque::size (STL/CLR)](#size)`()` henceforth returns `new_size`. If it must make the controlled sequence longer, the first member function appends elements with value `value_type()`, while the second member function appends elements with value `val`. To make the controlled sequence shorter, both member functions effectively erase the last element [deque::size (STL/CLR)](#size)`() -` `new_size` times. You use it to ensure that the controlled sequence has size `new_size`, by either trimming or padding the current controlled sequence.  
   
 ### Example  
   
@@ -2034,7 +2034,7 @@ size_type size();
 ```  
   
 ### Remarks  
- The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [deque::empty (STL/CLR)](../dotnet/deque-empty-stl-clr.md)`()`.  
+ The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [deque::empty (STL/CLR)](#empty)`()`.  
   
 ### Example  
   
