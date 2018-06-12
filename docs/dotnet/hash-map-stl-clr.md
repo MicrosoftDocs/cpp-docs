@@ -2751,6 +2751,53 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False  
 ```  
 
+## <a name="value_compare"></a> hash_map::value_compare (STL/CLR)
+The ordering delegate for two element values.  
+  
+### Syntax  
+  
+```  
+Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>  
+    value_compare;  
+```  
+  
+### Remarks  
+ The type is a synonym for the delegate that determines the ordering of its value arguments.  
+  
+### Example  
+  
+```cpp  
+// cliext_hash_map_value_compare.cpp   
+// compile with: /clr   
+#include <cliext/hash_map>   
+  
+typedef cliext::hash_map<wchar_t, int> Myhash_map;   
+int main()   
+    {   
+    Myhash_map c1;   
+    Myhash_map::value_compare^ kcomp = c1.value_comp();   
+  
+    System::Console::WriteLine("compare([L'a', 1], [L'a', 1]) = {0}",   
+        kcomp(Myhash_map::make_value(L'a', 1),   
+            Myhash_map::make_value(L'a', 1)));   
+    System::Console::WriteLine("compare([L'a', 1], [L'b', 2]) = {0}",   
+        kcomp(Myhash_map::make_value(L'a', 1),   
+            Myhash_map::make_value(L'b', 2)));   
+    System::Console::WriteLine("compare([L'b', 2], [L'a', 1]) = {0}",   
+        kcomp(Myhash_map::make_value(L'b', 2),   
+            Myhash_map::make_value(L'a', 1)));   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+compare([L'a', 1], [L'a', 1]) = True  
+compare([L'a', 1], [L'b', 2]) = True  
+compare([L'b', 2], [L'a', 1]) = False  
+```  
+
 ## <a name="value_type"></a> hash_map::value_type (STL/CLR)
 The type of an element.  
   
