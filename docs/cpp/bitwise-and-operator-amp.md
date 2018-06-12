@@ -13,15 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Bitwise AND Operator: &amp;
+
 ## Syntax  
   
-```  
-  
-expression   
-&  
- expression  
-  
-```  
+```
+
+expression & expression  
+
+```
   
 ## Remarks  
  The expressions may be other and-expressions, or (subject to the type restrictions mentioned below) equality expressions, relational expressions, additive expressions, multiplicative expressions, pointer to member expressions, cast expressions, unary expressions, postfix expressions, or primary expressions.  
@@ -35,7 +34,7 @@ expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Bitwise_AND_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate bitwise AND  

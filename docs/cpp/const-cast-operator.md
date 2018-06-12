@@ -19,11 +19,7 @@ Removes the **const**, `volatile`, and **__unaligned** attribute(s) from a class
   
 ```  
   
-const_cast <   
-type-id  
- > (   
-expression  
- )  
+const_cast <type-id> (expression)  
   
 ```  
   
@@ -36,7 +32,7 @@ expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_const_cast_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  

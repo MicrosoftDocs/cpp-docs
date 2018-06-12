@@ -46,7 +46,7 @@ In C++11, defaulted and deleted functions give you explicit control over whether
   
  These rules can complicate the implementation of what should be straight-forward, user-defined types and common C++ idioms—for example, making a user-defined type non-copyable by declaring the copy constructor and copy-assignment operator privately and not defining them.  
   
-```  
+```cpp 
 struct noncopyable  
 {  
   noncopyable() {};  
@@ -69,7 +69,7 @@ private:
   
  In C++11, the non-copyable idiom can be implemented in a way that is more straightforward.  
   
-```  
+```cpp 
 struct noncopyable  
 {  
   noncopyable() =default;  
@@ -95,7 +95,7 @@ struct noncopyable
   
  You default a special member function by declaring it as in this example:  
   
-```  
+```cpp 
 struct widget  
 {  
   widget()=default;  
@@ -113,7 +113,7 @@ inline widget& widget::operator=(const widget&) =default;
 ## Deleted functions  
  You can delete special member functions as well as normal member functions and non-member functions to prevent them from being defined or called. Deleting of special member functions provides a cleaner way of preventing the compiler from generating special member functions that you don’t want. The function must be deleted as it is declared; it cannot be deleted afterwards in the way that a function can be declared and then later defaulted.  
   
-```  
+```cpp 
 struct widget  
 {  
   // deleted operator new prevents widget from being dynamically allocated.  
@@ -123,7 +123,7 @@ struct widget
   
  Deleting of normal member function or non-member functions prevents problematic type promotions from causing an unintended function to be called. This works because deleted functions still participate in overload resolution and provide a better match than the function that could be called after the types are promoted. The function call resolves to the more-specific—but deleted—function and causes a compiler error.  
   
-```  
+```cpp 
 // deleted overload prevents call through type promotion of float to double from succeeding.  
 void call_with_true_double_only(float) =delete;  
 void call_with_true_double_only(double param) { return; }  
@@ -131,7 +131,7 @@ void call_with_true_double_only(double param) { return; }
   
  Notice in the preceding sample that calling `call_with_true_double_only` by using a `float` argument would cause a compiler error, but calling `call_with_true_double_only` by using an `int` argument would not; in the `int` case, the argument will be promoted from `int` to `double` and successfully call the `double` version of the function, even though that might not be what’s intended. To ensure that any call to this function by using a non-double argument causes a compiler error, you can declare a template version of the function that’s deleted.  
   
-```  
+```cpp 
 template < typename T >  
 void call_with_true_double_only(T) =delete; //prevent call through type promotion of any T to double from succeeding.  
   

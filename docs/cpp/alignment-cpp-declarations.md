@@ -26,7 +26,7 @@ One of the low-level features of C++ is the ability to specify the precise align
   
  In addition, the compiler pads structures in a way that naturally aligns each element of the structure. Consider the structure struct x_ in the following code example:  
   
-```  
+```cpp 
 struct x_  
 {  
    char a;     // 1 byte  
@@ -41,7 +41,7 @@ struct x_
   
  The following code example shows how the compiler places the padded structure in memory:Copy  
   
-```  
+```cpp 
 // Shows the actual memory layout  
 struct x_  
 {  

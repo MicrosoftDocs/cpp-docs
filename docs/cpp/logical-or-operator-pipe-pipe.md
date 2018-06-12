@@ -17,9 +17,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-logical-or-expression   
-||  
- logical-and-expression  
+logical-or-expression ||  logical-and-expression  
   
 ```  
   
@@ -32,7 +30,7 @@ logical-or-expression
   
  The second operand is evaluated only if the first operand evaluates to false (0). This eliminates needless evaluation of the second operand when the logical OR expression is true.  
   
-```  
+```cpp 
 printf( "%d" , (x == w || x == y || x == z) );  
 ```  
   
@@ -43,7 +41,7 @@ printf( "%d" , (x == w || x == y || x == z) );
   
 ## Example  
   
-```  
+```cpp 
 // expre_Logical_OR_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate logical OR  

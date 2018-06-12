@@ -29,7 +29,7 @@ ms.workload: ["cplusplus"]
   
  Both the prefix and postfix increment and decrement operators affect their operands. The key difference between them is the order in which the increment or decrement takes place in the evaluation of an expression. (For more information, see [Postfix Increment and Decrement Operators](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) In the prefix form, the increment or decrement takes place before the value is used in expression evaluation, so the value of the expression is different from the value of the operand. In the postfix form, the increment or decrement takes place after the value is used in expression evaluation, so the value of the expression is the same as the value of the operand. For example, the following program prints "`++i = 6`":  
   
-```  
+```cpp 
 // expre_Increment_and_Decrement_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -46,7 +46,7 @@ int main() {
   
  Because increment and decrement operators have side effects, using expressions with increment or decrement operators in a [preprocessor macro](../preprocessor/macros-c-cpp.md) can have undesirable results. Consider this example:  
   
-```  
+```cpp 
 // expre_Increment_and_Decrement_Operators2.cpp  
 #define max(a,b) ((a)<(b))?(b):(a)  
   
@@ -59,7 +59,7 @@ int main()
   
  The macro expands to:  
   
-```  
+```cpp 
 k = ((++i)<(j))?(j):(++i);  
 ```  
   

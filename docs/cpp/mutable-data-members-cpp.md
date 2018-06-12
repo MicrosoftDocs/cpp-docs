@@ -25,7 +25,7 @@ mutable member-variable-declaration;
 ## Remarks  
  For example, the following code will compile without error because `m_accessCount` has been declared to be `mutable`, and therefore can be modified by `GetFlag` even though `GetFlag` is a const member function.  
   
-```  
+```cpp 
 // mutable.cpp  
 class X  
 {  

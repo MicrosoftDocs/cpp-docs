@@ -20,28 +20,28 @@ The [const](../cpp/const-cpp.md) and [volatile](../cpp/volatile-cpp.md) keywords
   
  To declare the object pointed to by the pointer as **const** or `volatile`, use a declaration of the form:  
   
-```  
+```cpp 
 const char *cpch;  
 volatile char *vpch;  
 ```  
   
  To declare the value of the pointer — that is, the actual address stored in the pointer — as **const** or `volatile`, use a declaration of the form:  
   
-```  
+```cpp 
 char * const pchc;  
 char * volatile pchv;  
 ```  
   
  The C++ language prevents assignments that would allow modification of an object or pointer declared as **const**. Such assignments would remove the information that the object or pointer was declared with, thereby violating the intent of the original declaration. Consider the following declarations:  
   
-```  
+```cpp 
 const char cch = 'A';  
 char ch = 'B';  
 ```  
   
  Given the preceding declarations of two objects (`cch`, of type **const char**, and `ch`, of type **char)**, the following declaration/initializations are valid:  
   
-```  
+```cpp 
 const char *pch1 = &cch;  
 const char *const pch4 = &cch;  
 const char *pch5 = &ch;  
@@ -52,7 +52,7 @@ const char *const pch8 = &ch;
   
  The following declaration/initializations are erroneous.  
   
-```  
+```cpp 
 char *pch2 = &cch;   // Error  
 char *const pch3 = &cch;   // Error  
 ```  
@@ -61,7 +61,7 @@ char *const pch3 = &cch;   // Error
   
  The following eight assignments show assigning through pointer and changing of pointer value for the preceding declarations; for now, assume that the initialization was correct for `pch1` through `pch8`.  
   
-```  
+```cpp 
 *pch1 = 'A';  // Error: object declared const  
 pch1 = &ch;   // OK: pointer not declared const  
 *pch2 = 'A';  // OK: normal pointer  
@@ -76,7 +76,7 @@ pch4 = &ch;   // Error: pointer declared const
   
  Pointers to **const** objects are often used in function declarations as follows:  
   
-```  
+```cpp 
 errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *strSource );  
 ```  
   
@@ -87,7 +87,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
   
  A **const** pointer of a given type can be assigned to a pointer of the same type. However, a pointer that is not **const** cannot be assigned to a **const** pointer. The following code shows correct and incorrect assignments:  
   
-```  
+```cpp 
 // const_pointer.cpp  
 int *const cpObject = 0;  
 int *pObject;  
@@ -100,7 +100,7 @@ cpObject = pObject;   // C3892
   
  The following sample shows how to declare an object as const if you have a pointer to a pointer to an object.  
   
-```  
+```cpp 
 // const_pointer2.cpp  
 struct X {  
    X(int i) : m_i(i) { }  

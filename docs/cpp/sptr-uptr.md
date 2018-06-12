@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
   
  The `__sptr`, or signed pointer, modifier specifies that a pointer conversion set the most significant bits of a 64-bit pointer to the sign bit of the 32-bit pointer. The `__uptr`, or unsigned pointer, modifier specifies that a conversion set the most significant bits to zero. The following declarations show the `__sptr` and `__uptr` modifiers used with two unqualified pointers, two pointers qualified with the [__ptr32](../cpp/ptr32-ptr64.md) type, and a function parameter.  
   
-```  
+```cpp 
 int * __sptr psp;  
 int * __uptr pup;  
 int * __ptr32 __sptr psp32;  

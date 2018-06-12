@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      _variant_t( ) throw( );  
+_variant_t( ) throw( );  
   
 _variant_t(  
    const VARIANT& varSrc   

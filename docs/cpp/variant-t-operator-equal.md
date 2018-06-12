@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      _variant_t& operator=(  
+_variant_t& operator=(  
    const VARIANT& varSrc   
 );  
   

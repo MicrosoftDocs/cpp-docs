@@ -45,7 +45,7 @@ static_assert( constant-expression );
   
 ## Example  
   
-```  
+```cpp 
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");  
 ```  
   
@@ -54,7 +54,7 @@ static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
   
 ## Example  
   
-```  
+```cpp 
 #include <type_traits>  
 #include <iosfwd>  
 namespace std {  
@@ -82,7 +82,7 @@ int main()
   
 ## Example  
   
-```  
+```cpp 
 #include <sys/param.h> // defines PAGESIZE  
 class VMMClient {  
 public:  

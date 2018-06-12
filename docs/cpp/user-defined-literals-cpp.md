@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # User-Defined Literals  (C++)
 There are five major categories of literals:  integer,  character,  floating-point,  string, boolean and pointer.  Starting in C++ 11 you can define your own literals based on these categories to provide syntactic shortcuts for common idioms and increase type safety. For example, let's say you have a Distance class. You could define a literal for kilometers and another one for miles, and encourage the user to be explicit about the units of measure by simply writing: auto d = 42.0_km or auto d = 42.0_mi. There is no performance advantage or disadvantage to user-defined literals; they are primarily for convenience or for compile-time type deduction. The Standard Library has user-defined literals for std:string, for std::complex, and for units in time and duration operations in the \<chrono> header:  
   
-```  
+```cpp 
 Distance d = 36.0_mi + 42.0_km;         // Custom UDL (see below)  
     std::string str = "hello"s + "World"s;  // Standard Library <string> UDL  
     complex<double> num =   
@@ -24,7 +24,7 @@ Distance d = 36.0_mi + 42.0_km;         // Custom UDL (see below)
 ## User-defined literal operator signatures  
  You implement a user-defined literal by defining an `operator""` at namespace scope with one of the following forms:  
   
-```  
+```cpp 
 ReturnType operator "" _a(unsigned long long int);   // Literal operator for user-defined INTEGRAL literal  
 ReturnType operator "" _b(long double);              // Literal operator for user-defined FLOATING literal  
 ReturnType operator "" _c(char);                     // Literal operator for user-defined CHARACTER literal  
@@ -46,7 +46,7 @@ template<char...> ReturnType operator "" _t();       // Literal operator t
   
  The following example shows how user-defined literals can encourage callers to be explicit about their input. To construct a `Distance`, the user must explicitly specify kilometers or miles by using the appropriate user-defined literal. Of course you can also achieve the same result in other ways, but user-defined literals are less verbose than the alternatives.  
   
-```  
+```cpp 
 struct Distance  
 {  
 private:  
@@ -99,7 +99,7 @@ int main(int argc, char* argv[])
 ## Raw literals  
  In a raw user-defined literal, the operator that you define accepts the literal as a sequence of char values and it is up to you to interpret that sequence as a number or string or other type. In the list of operators shown earlier in this page, `_r` and `_t` can be used to define raw literals:  
   
-```  
+```cpp 
 ReturnType operator "" _r(const char*);              // Raw literal operator  
 template<char...> ReturnType operator "" _t();       // Literal operator template  
 ```  
@@ -111,7 +111,7 @@ template<char...> ReturnType operator "" _t();       // Literal operator templat
 ### Limitations of raw literals  
  The raw literal operator and literal operator template only work for integral and floating-point user-defined literals, as shown by the following example:  
   
-```  
+```cpp 
 #include <cstddef>  
 #include <cstdio>  
   

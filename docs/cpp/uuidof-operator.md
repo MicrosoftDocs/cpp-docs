@@ -21,9 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      __uuidof (  
-   expression   
-)  
+__uuidof (expression)  
 ```  
   
 ## Remarks  
@@ -43,7 +41,7 @@ ms.workload: ["cplusplus"]
 ## Example  
  The following code (compiled with ole32.lib) will display the uuid of a library block created with the module attribute:  
   
-```  
+```cpp 
 // expre_uuidof.cpp  
 // compile with: ole32.lib  
 #include "stdio.h"  
@@ -67,7 +65,7 @@ int main() {
 ## Comments  
  In cases where the library name is no longer in scope, you can use __LIBID\_ instead of `__uuidof`. For example:  
   
-```  
+```cpp 
 StringFromCLSID(__LIBID_, &lpolestr);  
 ```  
   

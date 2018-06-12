@@ -18,7 +18,7 @@ The "null statement" is an expression statement with the *expression* missing. I
   
  The following code fragment shows how to copy one string to another and incorporates the null statement:  
   
-```  
+```cpp 
 // null_statement.cpp  
 char *myStrCpy( char *Dest, const char *Source )  
 {  

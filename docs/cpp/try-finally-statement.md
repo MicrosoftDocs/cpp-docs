@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
   
  The following syntax describes the `try-finally` statement:  
   
-```  
+```cpp 
 __try {  
    // guarded code  
 }  

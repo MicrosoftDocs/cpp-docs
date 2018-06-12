@@ -114,7 +114,7 @@ type operator operator-symbol ( parameter-list )
   
  Although overloaded operators are usually called implicitly by the compiler when they are encountered in code, they can be invoked explicitly the same way as any member or nonmember function is called:  
   
-```  
+```cpp 
 Point pt;  
 pt.operator+( 3 );  // Call addition operator to add 3 to pt.  
 ```  
@@ -122,7 +122,7 @@ pt.operator+( 3 );  // Call addition operator to add 3 to pt.
 ## Example  
  The following example overloads the `+` operator to add two complex numbers and returns the result.  
   
-```  
+```cpp 
 // operator_overloading.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -153,7 +153,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 6.8, 11.2  
 ```  
   

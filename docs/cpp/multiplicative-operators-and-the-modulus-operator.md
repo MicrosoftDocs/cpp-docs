@@ -42,7 +42,7 @@ expression % expression
   
  Division by 0 in either a division or a modulus expression is undefined and causes a run-time error. Therefore, the following expressions generate undefined, erroneous results:  
   
-```  
+```cpp 
 i % 0  
 f / 0.0  
 ```  
@@ -63,7 +63,7 @@ f / 0.0
 ## Example  
  The following program demonstrates the multiplicative operators. Note that either operand of `10 / 3` must be explicitly cast to type `float` to avoid truncation so that both operands are of type `float` before division.  
   
-```  
+```cpp 
 // expre_Multiplicative_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  

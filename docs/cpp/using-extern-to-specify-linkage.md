@@ -25,7 +25,7 @@ extern string-literal declaration
   
 ## Example  
   
-```  
+```cpp 
 // specifying_linkage1.cpp  
 int i = 1;  
 void other();  
@@ -51,7 +51,7 @@ void other() {
 ## Example  
  The following example shows alternative ways to declare names that have C linkage:  
   
-```  
+```cpp 
 // specifying_linkage2.cpp  
 // compile with: /c  
 // Declare printf with C linkage.  
@@ -91,7 +91,7 @@ extern "C" int errno;
   
  If a function has more than one linkage specification, they must agree; it is an error to declare functions as having both C and C++ linkage. Furthermore, if two declarations for a function occur in a program — one with a linkage specification and one without — the declaration with the linkage specification must be first. Any redundant declarations of functions that already have linkage specification are given the linkage specified in the first declaration. For example:  
   
-```  
+```cpp 
 extern "C" int CFunc1();  
 ...  
 int CFunc1();            // Redeclaration is benign; C linkage is  

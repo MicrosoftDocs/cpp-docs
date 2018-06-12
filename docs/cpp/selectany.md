@@ -38,7 +38,7 @@ __declspec( selectany ) declarator
 ## Example  
  This code shows how to use the `selectany` attribute:  
   
-```  
+```cpp 
 //Correct - x1 is initialized and externally visible   
 __declspec(selectany) int x1=1;  
   
@@ -71,7 +71,7 @@ __declspec(selectany) X x(1);
 ## Example  
  This code shows how to use the `selectany` attribute to ensure data COMDAT folding when you also use the [/OPT:ICF](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with `selectany` and placed in a **const** (readonly) section. You must explicitly specify the read-only section.  
   
-```  
+```cpp 
 // selectany2.cpp  
 // in the following lines, const marks the variables as read only  
 __declspec(selectany) extern const int ix = 5;  

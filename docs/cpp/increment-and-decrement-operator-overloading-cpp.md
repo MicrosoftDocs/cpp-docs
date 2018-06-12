@@ -25,7 +25,7 @@ The increment and decrement operators fall into a special category because there
   
  The following example shows how to define prefix and postfix increment and decrement operators for the `Point` class:  
   
-```  
+```cpp  
 // increment_and_decrement1.cpp  
 class Point  
 {  
@@ -86,7 +86,7 @@ int main()
   
  The same operators can be defined in file scope (globally) using the following function heads:  
   
-```  
+```cpp  
 friend Point& operator++( Point& )      // Prefix increment  
 friend Point& operator++( Point&, int ) // Postfix increment  
 friend Point& operator--( Point& )      // Prefix decrement  
@@ -95,7 +95,7 @@ friend Point& operator--( Point&, int ) // Postfix decrement
   
  The argument of type `int` that denotes the postfix form of the increment or decrement operator is not commonly used to pass arguments. It usually contains the value 0. However, it can be used as follows:  
   
-```  
+```cpp  
 // increment_and_decrement2.cpp  
 class Int  
 {  

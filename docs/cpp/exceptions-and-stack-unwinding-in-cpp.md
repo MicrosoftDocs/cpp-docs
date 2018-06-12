@@ -26,7 +26,7 @@ In the C++ exception mechanism, control moves from the throw statement to the fi
 ## Stack Unwinding Example  
  The following example demonstrates how the stack is unwound when an exception is thrown. Execution on the thread jumps from the throw statement in `C` to the catch statement in `main`, and unwinds each function along the way. Notice the order in which the `Dummy` objects are created and then destroyed as they go out of scope. Also notice that no function completes except `main`, which contains the catch statement. Function `A` never returns from its call to `B()`, and `B` never returns from its call to `C()`. If you uncomment the definition of the `Dummy` pointer and the corresponding delete statement, and then run the program, notice that the pointer is never deleted. This shows what can happen when functions do not provide an exception guarantee. For more information, see How to: Design for Exceptions. If you comment out the catch statement, you can observe what happens when a program terminates because of an unhandled exception.  
   
-```  
+```cpp 
 #include <string>  
 #include <iostream>  
 using namespace std;  
@@ -106,4 +106,4 @@ int main()
   
 */  
   
-```
+```  

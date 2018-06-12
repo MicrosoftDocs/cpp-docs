@@ -40,8 +40,8 @@ Guidance for porting code and upgrading projects to Visual Studio 2017, includin
 [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)<br/>
 Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
 
-[Visual Studio Downloads](http://go.microsoft.com/fwlink/p/?linkid=235233)<br/>
-Download Visual Studio.
+[Install C++ support in Visual Studio](build/vscpp-step-0-installation.md)<br/>
+Download Visual Studio and install the Visual C++ toolset.
 
 [Visual C++ Tools and Features in Visual Studio Editions](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 Find out about different Visual Studio editions.

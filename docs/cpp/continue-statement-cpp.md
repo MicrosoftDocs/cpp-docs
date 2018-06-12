@@ -32,7 +32,7 @@ continue;
   
 ## Example  
   
-```  
+```cpp 
 // continue_statement.cpp  
 #include <stdio.h>  
 int main()  

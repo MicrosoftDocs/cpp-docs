@@ -25,7 +25,7 @@ During termination-handler execution, you may not know which resources are actua
 ## Example  
  For example, the following code uses a termination handler to close three files and a memory block that were allocated in the `__try` statement block. Before cleaning up a resource, the code first checks to see if the resource was allocated.  
   
-```  
+```cpp 
 // exceptions_Cleaning_up_Resources.cpp  
 #include <stdlib.h>  
 #include <malloc.h>  

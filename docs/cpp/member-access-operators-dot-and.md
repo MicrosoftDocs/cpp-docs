@@ -32,7 +32,7 @@ postfix-expression -> name
 ## Example  
  The following example demonstrates both forms of the member access operator.  
   
-```  
+```cpp 
 // expre_Selection_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  

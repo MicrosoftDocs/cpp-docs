@@ -26,14 +26,14 @@ primary-expression ( expression-list )
   
  The function-call operator, when overloaded, does not modify how functions are called; rather, it modifies how the operator is to be interpreted when applied to objects of a given class type. For example, the following code would usually be meaningless:  
   
-```  
+```cpp 
 Point pt;  
 pt( 3, 2 );  
 ```  
   
  Given an appropriate overloaded function-call operator, however, this syntax can be used to offset the `x` coordinate 3 units and the `y` coordinate 2 units. The following code shows such a definition:  
   
-```  
+```cpp 
 // function_call.cpp  
 class Point  
 {  

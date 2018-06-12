@@ -17,7 +17,7 @@ This section explains how to use derived classes to produce extensible programs.
 ## Overview  
  New classes can be derived from existing classes using a mechanism called "inheritance" (see the information beginning in [Single Inheritance](../cpp/single-inheritance.md)). Classes that are used for derivation are called "base classes" of a particular derived class. A derived class is declared using the following syntax:  
   
-```  
+```cpp 
  class Derived : [virtual] [access-specifier] Base  
 {  
    // member list  

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Member Access Control (C++)
 Access controls enable you to separate the [public](../cpp/public-cpp.md) interface of a class from the [private](../cpp/private-cpp.md) implementation details and the [protected](../cpp/protected-cpp.md) members that are only for use by derived classes. The access specifier applies to all members declared after it until the next access specifier is encountered.  
   
-```  
+```cpp 
 class Point  
 {  
 public:                   
@@ -31,7 +31,7 @@ protected:      // Declare protected function for derived classes only.
     Point ToWindowCoords();  
 };  
   
-```  
+``` 
   
  The default access is `private` in a class, and `public` in a struct or union. Access specifiers in a class can be used any number of times in any order. The allocation of storage for objects of class types is implementation dependent, but members are guaranteed to be assigned successively higher memory addresses between access specifiers.  
   
@@ -67,7 +67,7 @@ protected:      // Declare protected function for derived classes only.
   
  The following example illustrates this:  
   
-```  
+```cpp 
 // access_specifiers_for_base_classes.cpp  
 class BaseClass  
 {  
@@ -99,28 +99,28 @@ int main()
   
  You can declare a derived class without a base-class access specifier. In such a case, the derivation is considered private if the derived class declaration uses the **class** keyword. The derivation is considered public if the derived class declaration uses the `struct` keyword. For example, the following code:  
   
-```  
+```cpp 
 class Derived : Base  
 ...  
 ```  
   
  is equivalent to:  
   
-```  
+```cpp 
 class Derived : private Base  
 ...  
 ```  
   
  Similarly, the following code:  
   
-```  
+```cpp 
 struct Derived : Base  
 ...  
 ```  
   
  is equivalent to:  
   
-```  
+```cpp 
 struct Derived : public Base  
 ...  
 ```  
@@ -135,7 +135,7 @@ struct Derived : public Base
 ## Access control and static members  
  When you specify a base class as `private`, it affects only nonstatic members. Public static members are still accessible in the derived classes. However, accessing members of the base class using pointers, references, or objects can require a conversion, at which time access control is again applied. Consider the following example:  
   
-```  
+```cpp 
 // access_control.cpp  
 class Base  
 {  
@@ -176,7 +176,7 @@ int Derived2::ShowCount()
 ## Access to virtual functions  
  The access control applied to [virtual](../cpp/virtual-cpp.md) functions is determined by the type used to make the function call. Overriding declarations of the function do not affect the access control for a given type. For example:  
   
-```  
+```cpp 
 // access_to_virtual_functions.cpp  
 class VFuncBase  
 {  

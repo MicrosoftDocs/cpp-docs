@@ -33,8 +33,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-modifier  
- __interface interface-name {interface-definition};  
+modifier __interface interface-name {interface-definition};  
 ```  
   
 ## Remarks  
@@ -42,7 +41,7 @@ modifier
   
  For example, the following is a sample interface definition:  
   
-```  
+```cpp 
 __interface IMyInterface {  
    HRESULT CommitX();  
    HRESULT get_X(BSTR* pbstrName);  
@@ -53,7 +52,7 @@ __interface IMyInterface {
   
  Notice that you do not have to explicitly indicate that the `CommitX` and `get_X` functions are pure virtual. An equivalent declaration for the first function would be:  
   
-```  
+```cpp 
 virtual HRESULT CommitX() = 0;  
 ```  
   
@@ -62,7 +61,7 @@ virtual HRESULT CommitX() = 0;
 ## Example  
  The following sample shows how to use properties declared in an interface.  
   
-```  
+```cpp 
 // deriv_interface.cpp  
 #define _ATL_ATTRIBUTES 1  
 #include <atlbase.h>  
