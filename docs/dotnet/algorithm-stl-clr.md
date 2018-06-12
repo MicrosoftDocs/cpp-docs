@@ -83,7 +83,7 @@ Defines STL/CLR container template functions that perform algorithms.
 |[partial_sort_copy (STL/CLR)](#partial_sort_copy)|Copies elements from a source range into a destination range such that the elements from the source range are ordered.|  
 |[partition (STL/CLR)](#partition)|Arranges elements in a range such that those elements that satisfy a unary predicate precede those that fail to satisfy it.|  
 |[pop_heap (STL/CLR)](#pop_heap)|Moves the largest element from the front of a heap to the end and then forms a new heap from the remaining elements.|  
-|[prev_permutation (STL/CLR)](#perv_permutation)|Reorders a sequence of elements so that the original ordering is replaced by the lexicographically previous greater permutation if it exists.|  
+|[prev_permutation (STL/CLR)](#prev_permutation)|Reorders a sequence of elements so that the original ordering is replaced by the lexicographically previous greater permutation if it exists.|  
 |[push_heap (STL/CLR)](#push_heap)|Adds an element that is at the end of a range to an existing heap consisting of the prior elements in the range.|  
 |[random_shuffle (STL/CLR)](#random_shuffle)|Rearranges a sequence of `N` elements in a range into one of `N`! possible arrangements selected at random.|  
 |[remove (STL/CLR)](#remove)|Deletes a specified value from a given range without disturbing the order of the remaining elements and returns the end of a new range free of the specified value.|  
@@ -98,7 +98,7 @@ Defines STL/CLR container template functions that perform algorithms.
 |[reverse_copy (STL/CLR)](#reverse_copy)|Reverses the order of the elements within a source range while copying them into a destination range.|  
 |[rotate (STL/CLR)](#rotate)|Exchanges the elements in two adjacent ranges.|  
 |[rotate_copy (STL/CLR)](#rotate_copy)|Exchanges the elements in two adjacent ranges within a source range and copies the result to a destination range.|  
-|[search (STL/CLR)](#search)|Searches for the first occurrence of a sequence within a target range whose elements are equal to those in a given sequence of elements or whose elements are equivalent in a sense specified by a binary predicate to the elements in the given sequence.|  
+|[search (STL/CLR)](#search_)|Searches for the first occurrence of a sequence within a target range whose elements are equal to those in a given sequence of elements or whose elements are equivalent in a sense specified by a binary predicate to the elements in the given sequence.|  
 |[search_n (STL/CLR)](#search_n)|Searches for the first subsequence in a range that of a specified number of elements having a particular value or a relation to that value as specified by a binary predicate.|  
 |[set_difference (STL/CLR)](#set_difference)|Unites all of the elements that belong to one sorted source range, but not to a second sorted source range, into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.|  
 |[set_intersection (STL/CLR)](#set_intersection)|Unites all of the elements that belong to both sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.|  
@@ -849,7 +849,7 @@ template<class _FwdIt, class _OutIt> inline
 ### Remarks  
  This function behaves the same as the C++ Standard Library function `rotate_copy`. For more information, see [rotate_copy](../standard-library/algorithm-functions.md#rotate_copy).  
   
-## <a name="search"></a> search (STL/CLR)
+## <a name="search_"></a> search (STL/CLR)
 Searches for the first occurrence of a sequence within a target range whose elements are equal to those in a given sequence of elements or whose elements are equivalent in a sense specified by a binary predicate to the elements in the given sequence.  
   
 ### Syntax  
