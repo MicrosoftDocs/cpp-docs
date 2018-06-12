@@ -28,5 +28,5 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 
 ## See also
 
-- [EDITBIN Options](../../build/reference/editbin-options.md) 
+- [EDITBIN Options](../../build/reference/editbin-options.md)
 - [Windows ISV Software Security Defenses](http://msdn.microsoft.com/library/bb430720.aspx)
