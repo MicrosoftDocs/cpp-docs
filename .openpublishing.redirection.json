@@ -341,6 +341,96 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/collection-adapter-base-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#base",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-begin-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-collection-adapter-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#collection_adapter_collection_adapter",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-difference-type-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-end-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-iterator-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-key-type-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#key_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-mapped-type-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#mapped_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-operator-assign-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-reference-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-size-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-size-type-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-swap-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/collection-adapter-value-type-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/make-collection-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#make_collection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/range-adapter-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#range_adapter",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/range-adapter-operator-assign-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#range_adapter_op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/range-adapter-range-adapter-stl-clr.md",
+            "redirect_url": "/docs/dotnet/adapter-stl-clr#range_adapter_range_adapter",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
