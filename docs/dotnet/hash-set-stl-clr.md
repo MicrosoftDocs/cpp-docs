@@ -60,55 +60,55 @@ template<typename Key>
   
 |Type Definition|Description|  
 |---------------------|-----------------|  
-|[hash_set::const_iterator (STL/CLR)](../dotnet/hash-set-const-iterator-stl-clr.md)|The type of a constant iterator for the controlled sequence.|  
-|[hash_set::const_reference (STL/CLR)](../dotnet/hash-set-const-reference-stl-clr.md)|The type of a constant reference to an element.|  
-|[hash_set::const_reverse_iterator (STL/CLR)](../dotnet/hash-set-const-reverse-iterator-stl-clr.md)|The type of a constant reverse iterator for the controlled sequence.|  
-|[hash_set::difference_type (STL/CLR)](../dotnet/hash-set-difference-type-stl-clr.md)|The type of a (possibly signed) distance between two elements.|  
-|[hash_set::generic_container (STL/CLR)](../dotnet/hash-set-generic-container-stl-clr.md)|The type of the generic interface for the container.|  
-|[hash_set::generic_iterator (STL/CLR)](../dotnet/hash-set-generic-iterator-stl-clr.md)|The type of an iterator for the generic interface for the container.|  
-|[hash_set::generic_reverse_iterator (STL/CLR)](../dotnet/hash-set-generic-reverse-iterator-stl-clr.md)|The type of a reverse iterator for the generic interface for the container.|  
-|[hash_set::generic_value (STL/CLR)](../dotnet/hash-set-generic-value-stl-clr.md)|The type of an element for the generic interface for the container.|  
-|[hash_set::hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)|The hashing delegate for a key.|  
-|[hash_set::iterator (STL/CLR)](../dotnet/hash-set-iterator-stl-clr.md)|The type of an iterator for the controlled sequence.|  
-|[hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md)|The ordering delegate for two keys.|  
-|[hash_set::key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)|The type of an ordering key.|  
-|[hash_set::reference (STL/CLR)](../dotnet/hash-set-reference-stl-clr.md)|The type of a reference to an element.|  
-|[hash_set::reverse_iterator (STL/CLR)](../dotnet/hash-set-reverse-iterator-stl-clr.md)|The type of a reverse iterator for the controlled sequence.|  
-|[hash_set::size_type (STL/CLR)](../dotnet/hash-set-size-type-stl-clr.md)|The type of a (non-negative) distance between two elements.|  
-|[hash_set::value_compare (STL/CLR)](../dotnet/hash-set-value-compare-stl-clr.md)|The ordering delegate for two element values.|  
-|[hash_set::value_type (STL/CLR)](../dotnet/hash-set-value-type-stl-clr.md)|The type of an element.|  
+|[hash_set::const_iterator (STL/CLR)](#const_iterator)|The type of a constant iterator for the controlled sequence.|  
+|[hash_set::const_reference (STL/CLR)](#const_reference)|The type of a constant reference to an element.|  
+|[hash_set::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|  
+|[hash_set::difference_type (STL/CLR)](#difference_type)|The type of a (possibly signed) distance between two elements.|  
+|[hash_set::generic_container (STL/CLR)](#generic_container)|The type of the generic interface for the container.|  
+|[hash_set::generic_iterator (STL/CLR)](#generic_iterator)|The type of an iterator for the generic interface for the container.|  
+|[hash_set::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|  
+|[hash_set::generic_value (STL/CLR)](#generic_value)|The type of an element for the generic interface for the container.|  
+|[hash_set::hasher (STL/CLR)](#hasher)|The hashing delegate for a key.|  
+|[hash_set::iterator (STL/CLR)](#iterator)|The type of an iterator for the controlled sequence.|  
+|[hash_set::key_compare (STL/CLR)](#key_compare)|The ordering delegate for two keys.|  
+|[hash_set::key_type (STL/CLR)](#key_type)|The type of an ordering key.|  
+|[hash_set::reference (STL/CLR)](#reference)|The type of a reference to an element.|  
+|[hash_set::reverse_iterator (STL/CLR)](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|  
+|[hash_set::size_type (STL/CLR)](#size_type)|The type of a (non-negative) distance between two elements.|  
+|[hash_set::value_compare (STL/CLR)](#value_compare)|The ordering delegate for two element values.|  
+|[hash_set::value_type (STL/CLR)](#value_type)|The type of an element.|  
   
 |Member Function|Description|  
 |---------------------|-----------------|  
-|[hash_set::begin (STL/CLR)](../dotnet/hash-set-begin-stl-clr.md)|Designates the beginning of the controlled sequence.|  
-|[hash_set::bucket_count (STL/CLR)](../dotnet/hash-set-bucket-count-stl-clr.md)|Counts the number of buckets.|  
-|[hash_set::clear (STL/CLR)](../dotnet/hash-set-clear-stl-clr.md)|Removes all elements.|  
-|[hash_set::count (STL/CLR)](../dotnet/hash-set-count-stl-clr.md)|Counts elements matching a specified key.|  
-|[hash_set::empty (STL/CLR)](../dotnet/hash-set-empty-stl-clr.md)|Tests whether no elements are present.|  
-|[hash_set::end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)|Designates the end of the controlled sequence.|  
-|[hash_set::equal_range (STL/CLR)](../dotnet/hash-set-equal-range-stl-clr.md)|Finds range that matches a specified key.|  
-|[hash_set::erase (STL/CLR)](../dotnet/hash-set-erase-stl-clr.md)|Removes elements at specified positions.|  
-|[hash_set::find (STL/CLR)](../dotnet/hash-set-find-stl-clr.md)|Finds an element that matches a specified key.|  
-|[hash_set::hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md)|Copies the hashing delegate for a key.|  
-|[hash_set::hash_set (STL/CLR)](../dotnet/hash-set-hash-set-stl-clr.md)|Constructs a container object.|  
-|[hash_set::insert (STL/CLR)](../dotnet/hash-set-insert-stl-clr.md)|Adds elements.|  
-|[hash_set::key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)|Copies the ordering delegate for two keys.|  
-|[hash_set::load_factor (STL/CLR)](../dotnet/hash-set-load-factor-stl-clr.md)|Counts the average elements per bucket.|  
-|[hash_set::lower_bound (STL/CLR)](../dotnet/hash-set-lower-bound-stl-clr.md)|Finds beginning of range that matches a specified key.|  
-|[hash_set::make_value (STL/CLR)](../dotnet/hash-set-make-value-stl-clr.md)|Constructs a value object.|  
-|[hash_set::max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md)|Gets or sets the maximum elements per bucket.|  
-|[hash_set::rbegin (STL/CLR)](../dotnet/hash-set-rbegin-stl-clr.md)|Designates the beginning of the reversed controlled sequence.|  
-|[hash_set::rehash (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md)|Rebuilds the hash table.|  
-|[hash_set::rend (STL/CLR)](../dotnet/hash-set-rend-stl-clr.md)|Designates the end of the reversed controlled sequence.|  
-|[hash_set::size (STL/CLR)](../dotnet/hash-set-size-stl-clr.md)|Counts the number of elements.|  
-|[hash_set::swap (STL/CLR)](../dotnet/hash-set-swap-stl-clr.md)|Swaps the contents of two containers.|  
-|[hash_set::to_array (STL/CLR)](../dotnet/hash-set-to-array-stl-clr.md)|Copies the controlled sequence to a new array.|  
-|[hash_set::upper_bound (STL/CLR)](../dotnet/hash-set-upper-bound-stl-clr.md)|Finds end of range that matches a specified key.|  
-|[hash_set::value_comp (STL/CLR)](../dotnet/hash-set-value-comp-stl-clr.md)|Copies the ordering delegate for two element values.|  
+|[hash_set::begin (STL/CLR)](#begin)|Designates the beginning of the controlled sequence.|  
+|[hash_set::bucket_count (STL/CLR)](#bucket_count)|Counts the number of buckets.|  
+|[hash_set::clear (STL/CLR)](#clear)|Removes all elements.|  
+|[hash_set::count (STL/CLR)](#count)|Counts elements matching a specified key.|  
+|[hash_set::empty (STL/CLR)](#empty)|Tests whether no elements are present.|  
+|[hash_set::end (STL/CLR)](#end)|Designates the end of the controlled sequence.|  
+|[hash_set::equal_range (STL/CLR)](#equal_range)|Finds range that matches a specified key.|  
+|[hash_set::erase (STL/CLR)](#erase)|Removes elements at specified positions.|  
+|[hash_set::find (STL/CLR)](#find)|Finds an element that matches a specified key.|  
+|[hash_set::hash_delegate (STL/CLR)](#hash_delegate)|Copies the hashing delegate for a key.|  
+|[hash_set::hash_set (STL/CLR)](#hash_set)|Constructs a container object.|  
+|[hash_set::insert (STL/CLR)](#insert)|Adds elements.|  
+|[hash_set::key_comp (STL/CLR)](#key_comp)|Copies the ordering delegate for two keys.|  
+|[hash_set::load_factor (STL/CLR)](#load_factor)|Counts the average elements per bucket.|  
+|[hash_set::lower_bound (STL/CLR)](#lower_bound)|Finds beginning of range that matches a specified key.|  
+|[hash_set::make_value (STL/CLR)](#make_value)|Constructs a value object.|  
+|[hash_set::max_load_factor (STL/CLR)](#max_load_factor)|Gets or sets the maximum elements per bucket.|  
+|[hash_set::rbegin (STL/CLR)](#rbegin)|Designates the beginning of the reversed controlled sequence.|  
+|[hash_set::rehash (STL/CLR)](#rehash)|Rebuilds the hash table.|  
+|[hash_set::rend (STL/CLR)](#rend)|Designates the end of the reversed controlled sequence.|  
+|[hash_set::size (STL/CLR)](#size)|Counts the number of elements.|  
+|[hash_set::swap (STL/CLR)](#swap)|Swaps the contents of two containers.|  
+|[hash_set::to_array (STL/CLR)](#to_array)|Copies the controlled sequence to a new array.|  
+|[hash_set::upper_bound (STL/CLR)](#upper_bound)|Finds end of range that matches a specified key.|  
+|[hash_set::value_comp (STL/CLR)](#value_comp)|Copies the ordering delegate for two element values.|  
   
 |Operator|Description|  
 |--------------|-----------------|  
-|[hash_set::operator= (STL/CLR)](../dotnet/hash-set-operator-assign-stl-clr.md)|Replaces the controlled sequence.|  
+|[hash_set::operator= (STL/CLR)](#op)|Replaces the controlled sequence.|  
   
 ## Interfaces  
   
