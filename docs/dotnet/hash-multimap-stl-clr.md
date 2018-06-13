@@ -14,7 +14,7 @@ f1_keywords: ["cliext::hash_multimap", "cliext::hash_multimap::begin", "cliext::
     "cliext::hash_multimap::rehash", "cliext::hash_multimap::rend", "cliext::hash_multimap::reverse_iterator", "cliext::hash_multimap::size", "cliext::hash_multimap::size_type", "cliext::hash_multimap::swap", 
     "cliext::hash_multimap::to_array", "cliext::hash_multimap::upper_bound", "cliext::hash_multimap::value_comp", "cliext::hash_multimap::value_compare", "cliext::hash_multimap::value_type"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["hash_multimap class [STL/CLR]", "<cliext/hash_map> header [STL/CLR]", "<hash_map> header [STL/CLR]", "begin member [STL/CLR]", , "begin member [STL/CLR]", "bucket_count member [STL/CLR]", 
+helpviewer_keywords: ["hash_multimap class [STL/CLR]", "<cliext/hash_map> header [STL/CLR]", "<hash_map> header [STL/CLR]", "begin member [STL/CLR]", "begin member [STL/CLR]", "bucket_count member [STL/CLR]", 
     "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", 
     "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", 
     "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "hash_delegate member [STL/CLR]", "hash_multimap member [STL/CLR]", "hasher member [STL/CLR]", "insert member [STL/CLR]", 
@@ -76,7 +76,7 @@ template<typename Key,
 |[hash_multimap::const_iterator (STL/CLR)](#const_iterator)|The type of a constant iterator for the controlled sequence.|  
 |[hash_multimap::const_reference (STL/CLR)](#const_reference)|The type of a constant reference to an element.|  
 |[hash_multimap::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|  
-|[hash_multimap::difference_type (STL/CLR)](#difference_types)|The type of a (possibly signed) distance between two elements.|  
+|[hash_multimap::difference_type (STL/CLR)](#difference_type)|The type of a (possibly signed) distance between two elements.|  
 |[hash_multimap::generic_container (STL/CLR)](#generic_container)|The type of the generic interface for the container.|  
 |[hash_multimap::generic_iterator (STL/CLR)](#generic_iterator)|The type of an iterator for the generic interface for the container.|  
 |[hash_multimap::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|  
