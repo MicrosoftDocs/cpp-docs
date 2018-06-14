@@ -51,7 +51,7 @@ protected:      // Declare protected function for derived classes only.
 ## Access Control in Derived Classes  
  Two factors control which members of a base class are accessible in a derived class; these same factors control access to the inherited members in the derived class:  
   
--   Whether the derived class declares the base class using the **public** access specifier in the *class-head* (*class-head* is described in the Grammar section in [Defining Class Types](http://msdn.microsoft.com/en-us/e8c65425-0f3a-4dca-afc2-418c3b1e57da)).  
+-   Whether the derived class declares the base class using the **public** access specifier.  
   
 -   What the access to the member is in the base class.  
   

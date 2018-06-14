@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Implementing a Dual Interface
-You can implement a dual interface using the [IDispatchImpl](../atl/reference/idispatchimpl-class.md) class, which provides a default implementation of the `IDispatch` methods in a dual interface. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+You can implement a dual interface using the [IDispatchImpl](../atl/reference/idispatchimpl-class.md) class, which provides a default implementation of the `IDispatch` methods in a dual interface. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
  To use this class:  
   

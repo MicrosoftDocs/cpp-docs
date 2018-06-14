@@ -98,7 +98,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
+ See [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo  
  Retrieves the type information for the dual interface.  
@@ -111,7 +111,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
+ See [IDispatch::GetTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.  
   
 ##  <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount  
  Determines whether there is type information available for the dual interface.  
@@ -146,7 +146,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### Remarks  
- See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) in the Windows SDK.  
+ See [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

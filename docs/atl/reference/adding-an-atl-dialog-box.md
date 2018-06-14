@@ -23,7 +23,7 @@ To add an ATL dialog to your project, your project must be either an ATL project
   
 1.  Create an ATL project using the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md).  
   
-2.  From [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the project name and click **Add** from the shortcut menu. Click **Add Class**.  
+2.  From [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the project name and click **Add** from the shortcut menu. Click **Add Class**.  
   
 3.  In the Templates pane of the [Add Class](../../ide/add-class-dialog-box.md) dialog box, click **ATL Dialog**. Click **Open** to display the [ATL Dialog Wizard](../../atl/reference/atl-dialog-wizard.md).  
   

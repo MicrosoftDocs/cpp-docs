@@ -30,9 +30,9 @@ The following classes provide support for arrays, lists, maps, and also traits m
   
 -   [CComQIPtrElementTraits](../atl/reference/ccomqiptrelementtraits-class.md) This class provides methods, static functions, and typedefs useful when creating collections of COM interface pointers.  
   
--   [CComSafeArray](../atl/reference/ccomsafearray-class.md) This class is a wrapper for the [SAFEARRAY Data Type](http://msdn.microsoft.com/en-us/9ec8025b-4763-4526-ab45-390c5d8b3b1e) structure.  
+-   [CComSafeArray](../atl/reference/ccomsafearray-class.md) This class is a wrapper for the [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) structure.  
   
--   [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) This class is a wrapper for a [SAFEARRAYBOUND](http://msdn.microsoft.com/en-us/303a9bdb-71d6-4f14-8747-84cf84936c6d) structure.  
+-   [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) This class is a wrapper for a [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.  
   
 -   [CComUnkArray](../atl/reference/ccomunkarray-class.md) This class stores **IUnknown** pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) template class.  
   

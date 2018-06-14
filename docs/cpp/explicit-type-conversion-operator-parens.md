@@ -119,7 +119,7 @@ Point pt = Point( 3, 10 );
 > [!CAUTION]
 >  Use the explicit type conversions with care, since they override the C++ compiler's built-in type checking.  
   
- The [cast](../cpp/cast-operator-parens.md) notation must be used for conversions to types that do not have a *simple-type-name* (pointer or reference types, for example). Conversion to types that can be expressed with a *simple-type-name* can be written in either form. See [Type Specifiers](http://msdn.microsoft.com/en-us/34b6c737-0ef1-4470-9b77-b26e46c0bbd4) for more information about what constitutes a *simple-type-name*.  
+ The [cast](../cpp/cast-operator-parens.md) notation must be used for conversions to types that do not have a *simple-type-name* (pointer or reference types, for example). Conversion to types that can be expressed with a *simple-type-name* can be written in either form.  
   
  Type definition within casts is illegal.  
   

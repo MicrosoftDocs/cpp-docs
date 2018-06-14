@@ -136,7 +136,7 @@ HRESULT GetFuncInfoFromId(
  A standard `HRESULT` value.  
   
 ##  <a name="getidsofnames"></a>  IDispEventImpl::GetIDsOfNames  
- Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
+ Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).  
   
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -148,7 +148,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
+ See [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo  
  Retrieves the type information for an object, which can then be used to get the type information for an interface.  
@@ -170,7 +170,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
+ See [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.  
   
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType  
  Retrieves the basic type of a user-defined type.  
@@ -183,7 +183,7 @@ VARTYPE GetUserDefinedType(
   
 ### Parameters  
  `pTI`  
- [in] A pointer to the [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) interface containing the user-defined type.  
+ [in] A pointer to the [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface containing the user-defined type.  
   
  *hrt*  
  [in] A handle to the type description to be retrieved.  
@@ -192,7 +192,7 @@ VARTYPE GetUserDefinedType(
  The type of variant.  
   
 ### Remarks  
- See [ITypeInfo::GetRefTypeInfo](http://msdn.microsoft.com/en-us/61d3b31d-6591-4e55-9e82-5246a168be00).  
+ See [ITypeInfo::GetRefTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).  
   
 ##  <a name="idispeventimpl"></a>  IDispEventImpl::IDispEventImpl  
  The constructor. Stores the values of the class template parameters `plibid`, `pdiid`, `wMajor`, and `wMinor`.  

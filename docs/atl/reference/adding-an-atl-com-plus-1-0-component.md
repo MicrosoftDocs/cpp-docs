@@ -16,7 +16,7 @@ This wizard adds an object to your project that supports COM+ 1.0 services, incl
   
 ### To add an ATL COM+ 1.0 component to your project  
   
-1.  In either **Solution Explorer** or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the project to which you want to add the ATL COM+ 1.0 component.  
+1.  In either **Solution Explorer** or [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the name of the project to which you want to add the ATL COM+ 1.0 component.  
   
 2.  On the shortcut menu, click **Add**, and then click **Add Class**.  
   

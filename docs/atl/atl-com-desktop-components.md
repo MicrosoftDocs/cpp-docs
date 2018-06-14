@@ -36,9 +36,6 @@ The ATL Reference documents the Active Template Library (ATL), a set of template
  [Worker Archetype](../atl/reference/worker-archetype.md)  
  Provides a links to the ATL Worker archetype.  
   
- [Obsolete ATL Topics](http://msdn.microsoft.com/en-us/7af0223d-148e-4a4c-bf9c-3e916a3b67ec)  
- Provides reference material on the classes, macros, and functions that are obsolete or deprecated.  
-  
 ## Related Sections  
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides topics on how to program using the Active Template Library (ATL).  

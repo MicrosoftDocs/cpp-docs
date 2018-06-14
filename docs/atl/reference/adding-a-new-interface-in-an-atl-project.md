@@ -19,7 +19,7 @@ When you add an interface to your object or control, you create stubbed-out func
   
 ### To use code wizards in Class View to add an interface to an existing object or control  
   
-1.  In [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the class name of a control. For example, a full control or composite control, or any other control class that implements a BEGIN_COM_MAP macro in its header file.  
+1.  In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the class name of a control. For example, a full control or composite control, or any other control class that implements a BEGIN_COM_MAP macro in its header file.  
   
 2.  On the shortcut menu, click **Add**, and then click **Implement Interface**.  
   

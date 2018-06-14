@@ -16,7 +16,7 @@ Use this wizard to add a user interface object to a project that supports interf
   
 ### To add an ATL control to your project  
   
-1.  In either **Solution Explorer** or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the project to which you want to add the ATL simple object.  
+1.  In either **Solution Explorer** or [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the name of the project to which you want to add the ATL simple object.  
   
 2.  Click **Add** from the shortcut menu, and then click **Add Class**.  
   
@@ -35,5 +35,4 @@ Use this wizard to add a user interface object to a project that supports interf
 ## See Also  
  [Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)   
  [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)   
- [ATLFire Sample](http://msdn.microsoft.com/en-us/5b2649f1-f45b-4cfb-9c4b-4d9459c26b09)
 
