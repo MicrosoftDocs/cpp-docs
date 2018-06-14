@@ -1592,7 +1592,7 @@ size() = 0
  a b c  
 ```  
 
-## <a name="op_eq"></a> multiset::operator= (STL/CLR)
+## <a name="op_as"></a> multiset::operator= (STL/CLR)
 Replaces the controlled sequence.  
   
 ### Syntax  
