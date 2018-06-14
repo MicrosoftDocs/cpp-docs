@@ -54,14 +54,14 @@ A reference, like a pointer, stores the address of an object that is located els
   
  Multiple declarators and initializers may appear in a comma-separated list following a single declaration specifier. For example:  
   
-```  
+```cpp 
 int &i;   
 int &i, &j;   
 ```  
   
  References, pointers and objects may be declared together:  
   
-```  
+```cpp 
 int &ref, *ptr, k;   
 ```  
   
@@ -71,7 +71,7 @@ int &ref, *ptr, k;
   
 ## Example  
   
-```  
+```cpp 
 // references.cpp  
 #include <stdio.h>  
 struct S {  

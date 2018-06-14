@@ -7,7 +7,7 @@ private:
 public:
 
     // Initialize by using make_unique with ClassFactory default constructor.
-    MyClass() : factory ( make_unique<ClassFactory>())
+    MyClass() : factory (make_unique<ClassFactory>())
     {
     }
 

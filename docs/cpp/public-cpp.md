@@ -42,7 +42,7 @@ public base-class
   
 ## Example  
   
-```  
+```cpp 
 // keyword_public.cpp  
 class BaseClass {  
 public:  

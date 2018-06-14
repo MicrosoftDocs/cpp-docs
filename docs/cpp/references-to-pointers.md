@@ -19,7 +19,7 @@ References to pointers can be declared in much the same way as references to obj
   
  Functions `Add1` and `Add2` are functionally equivalent (although they are not called the same way). The difference is that `Add1` uses double indirection whereas `Add2` uses the convenience of a reference to a pointer.  
   
-```  
+```cpp 
 // references_to_pointers.cpp  
 // compile with: /EHsc  
   

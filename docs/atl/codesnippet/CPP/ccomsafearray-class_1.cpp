@@ -13,7 +13,7 @@
 
    // Define the array bound structure
    CComSafeArrayBound bound[2];
-   bound[0].SetCount(3);
+   bound[0].SetCount(2);
    bound[0].SetLowerBound(0);
    bound[1].SetCount(3);
    bound[1].SetLowerBound(0);   

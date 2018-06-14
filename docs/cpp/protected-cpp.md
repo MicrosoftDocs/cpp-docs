@@ -50,7 +50,7 @@ protected base-class
   
 ## Example  
   
-```  
+```cpp 
 // keyword_protected.cpp  
 // compile with: /EHsc  
 #include <iostream>  

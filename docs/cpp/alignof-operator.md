@@ -40,7 +40,7 @@ C++11 introduces the `alignof` operator that returns the alignment, in bytes, of
   
  The `__alignof` value is the same as the value for `sizeof` for basic types. Consider, however, this example:  
   
-```  
+```cpp 
 typedef struct { int a; double b; } S;  
 // __alignof(S) == 8  
 ```  
@@ -49,7 +49,7 @@ typedef struct { int a; double b; } S;
   
  Similarly, for  
   
-```  
+```cpp 
 typedef __declspec(align(32)) struct { int a; } S;  
 ```  
   
@@ -57,7 +57,7 @@ typedef __declspec(align(32)) struct { int a; } S;
   
  One use for `__alignof` would be as a parameter to one of your own memory-allocation routines. For example, given the following defined structure `S`, you could call a memory-allocation routine named `aligned_malloc` to allocate memory on a particular alignment boundary.  
   
-```  
+```cpp 
 typedef __declspec(align(32)) struct { int a; double b; } S;  
 int n = 50; // array size  
 S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));  

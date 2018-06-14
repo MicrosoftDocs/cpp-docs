@@ -19,7 +19,7 @@ Executes *statement* repeatedly until *expression* evaluates to zero.
   
 ```  
   
-      while ( expression )  
+while ( expression )  
    statement  
 ```  
   
@@ -30,7 +30,7 @@ Executes *statement* repeatedly until *expression* evaluates to zero.
   
  The following code uses a `while` loop to trim trailing underscores from a string:  
   
-```  
+```cpp 
 // while_statement.cpp  
   
 #include <string.h>  

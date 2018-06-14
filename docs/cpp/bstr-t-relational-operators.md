@@ -21,25 +21,13 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      bool operator!( ) const throw( );   
-bool operator==(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator!=(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator<(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator>(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator<=(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator>=(  
-   const _bstr_t& str   
-) const throw( );  
+bool operator!( ) const throw( );   
+bool operator==(const _bstr_t& str) const throw( );  
+bool operator!=(const _bstr_t& str) const throw( );  
+bool operator<(const _bstr_t& str) const throw( );  
+bool operator>(const _bstr_t& str) const throw( );  
+bool operator<=(const _bstr_t& str) const throw( );  
+bool operator>=(const _bstr_t& str) const throw( );  
 ```  
   
 ## Remarks  

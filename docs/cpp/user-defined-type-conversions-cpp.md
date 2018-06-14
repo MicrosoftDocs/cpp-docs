@@ -55,7 +55,7 @@ A *conversion* produces a new value of some type from a value of a different typ
 ##  <a name="ConvCTOR"></a> Conversion constructors  
  Conversion constructors define conversions from user-defined or built-in types to a user-defined type. The following example demonstrates a conversion constructor that converts from the built-in type `double` to a user-defined type `Money`.  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -100,7 +100,7 @@ int main(int argc, char* argv[])
 ### Explicit conversion constructors  
  By declaring a conversion constructor to be `explicit`, it can only be used to perform direct initialization of an object or to perform an explicit cast. This prevents functions that accept an argument of the class type from also implicitly accepting arguments of the conversion constructor's source type, and prevents the class type from being copy-initialized from a value of the source type. The following example demonstrates how to define an explicit conversion constructor, and the effect it has on what code is well-formed.  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -136,7 +136,7 @@ int main(int argc, char* argv[])
 ##  <a name="ConvFunc"></a> Conversion functions  
  Conversion functions define conversions from a user-defined type to other types. These functions are sometimes referred to as "cast operators" because they, along with conversion constructors, are called when a value is cast to a different type. The following example demonstrates a conversion function that converts from the user-defined type, `Money`, to a built-in type, `double`:  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -166,7 +166,7 @@ void display_balance(const Money balance)
   
 -   The target type of the conversion must be declared prior to the declaration of the conversion function. Classes, structures, enumerations, and typedefs cannot be declared within the declaration of the conversion function.  
   
-    ```  
+    ```cpp 
     operator struct String { char string_storage; }() // illegal  
     ```  
   
@@ -181,7 +181,7 @@ void display_balance(const Money balance)
 ### Explicit conversion functions  
  When a conversion function is declared to be explicit, it can only be used to perform an explicit cast. This prevents functions that accept an argument of the conversion function's target type from also implicitly accepting arguments of the class type, and prevents instances of the target type from being copy-initialized from a value of the class type. The following example demonstrates how to define an explicit conversion function and the effect it has on what code is well-formed.  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  

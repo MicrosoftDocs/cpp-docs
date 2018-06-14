@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 # Initializing classes and structs without constructors (C++)
 It is not always necessary to define a constructor for a class, especially ones that are relatively simple. Users can initialize objects of a class or struct by using uniform initialization, as shown in the following example:  
   
-```  
+```cpp 
 #include "stdafx.h"  
 #include <Windows.h>  
   

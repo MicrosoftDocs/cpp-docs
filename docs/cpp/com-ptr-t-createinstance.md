@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      HRESULT CreateInstance(  
+HRESULT CreateInstance(  
    const CLSID& rclsid,  
    IUnknown* pOuter=NULL,  
    DWORD dwClsContext = CLSCTX_ALL   

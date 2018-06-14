@@ -1,7 +1,7 @@
 ---
 title: "x86 Intrinsics List | Microsoft Docs"
 ms.custom: ""
-ms.date: "1/02/2018"
+ms.date: "06/01/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -20,13 +20,13 @@ For information about individual intrinsics, see these resources, as appropriate
 
 - [Intel Intrinsics Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/). Use the search box to find specific intrinsics.
 
-- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
+- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://go.microsoft.com/fwlink/p/?LinkID=510021)
 
-- [Intel Architecture Instruction Set Extensions Programming Reference](https://software.intel.com/en-us/isa-extensions)
+- [Intel Architecture Instruction Set Extensions Programming Reference](https://go.microsoft.com/fwlink/p/?linkid=874960)
 
-- [Intel AVX](https://www.intel.com/content/www/us/en/architecture-and-technology/avx-512-overview.html)
+- [Introduction to Intel Advanced Vector Extensions](https://go.microsoft.com/fwlink/p/?linkid=874961)
 
-- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
+- [AMD Developer Guides, Manuals & ISA Documents](https://go.microsoft.com/fwlink/p/?linkid=874958)
 
 The following table lists the intrinsics available on x86 processors. The Technology column lists required instruction-set support. Use the [__cpuid](../intrinsics/cpuid-cpuidex.md) intrinsic to determine instruction-set support at run time. If two entries are in one row, they represent different entry points for the same intrinsic. A [1] indicates the intrinsic is available only on AMD processors. A [2] indicates the intrinsic is available only on Intel processors. A [3] indicates the prototype is a macro. The header required for the function prototype is listed in the Header column. The intrin.h header includes both immintrin.h and ammintrin.h for simplicity.
 

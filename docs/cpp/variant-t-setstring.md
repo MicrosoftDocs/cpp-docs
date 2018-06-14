@@ -21,9 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      void SetString(  
-   const char* pSrc   
-);  
+void SetString(const char* pSrc);  
 ```  
   
 #### Parameters  

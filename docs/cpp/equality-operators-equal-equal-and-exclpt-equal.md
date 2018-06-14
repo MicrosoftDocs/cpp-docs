@@ -32,7 +32,7 @@ expression != expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Equality_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  

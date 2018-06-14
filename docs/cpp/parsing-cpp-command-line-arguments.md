@@ -33,7 +33,7 @@ ms.workload: ["cplusplus"]
 ## Example  
  The following program demonstrates how command-line arguments are passed:  
   
-```  
+```cpp 
 // command_line_arguments.cpp  
 // compile with: /EHsc  
 #include <iostream>  

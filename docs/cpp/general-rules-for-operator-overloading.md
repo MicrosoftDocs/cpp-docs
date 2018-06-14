@@ -14,13 +14,13 @@ ms.workload: ["cplusplus"]
 # General Rules for Operator Overloading
 The following rules constrain how overloaded operators are implemented. However, they do not apply to the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators, which are covered separately.  
   
--   You cannot define new operators, such as **.  
+-   You cannot define new operators, such as **.**.  
   
 -   You cannot redefine the meaning of operators when applied to built-in data types.  
   
 -   Overloaded operators must either be a nonstatic class member function or a global function. A global function that needs access to private or protected class members must be declared as a friend of that class. A global function must take at least one argument that is of class or enumerated type or that is a reference to a class or enumerated type. For example:  
   
-    ```  
+    ```cpp  
     // rules_for_operator_overloading.cpp  
     class Point  
     {  
@@ -45,7 +45,7 @@ The following rules constrain how overloaded operators are implemented. However,
   
 -   Binary operators declared as member functions take one argument; if declared as global functions, they take two arguments.  
   
--   If an operator can be used as either a unary or a binary operator (**&**, **\***, **+**, and **-**), you can overload each use separately.  
+-   If an operator can be used as either a unary or a binary operator (__&__, __*__, __+__, and __-__), you can overload each use separately.  
   
 -   Overloaded operators cannot have default arguments.  
   
@@ -55,7 +55,7 @@ The following rules constrain how overloaded operators are implemented. However,
   
  Note that the meaning of any of the operators can be changed completely. That includes the meaning of the address-of (**&**), assignment (**=**), and function-call operators. Also, identities that can be relied upon for built-in types can be changed using operator overloading. For example, the following four statements are usually equivalent when completely evaluated:  
   
-```  
+```cpp 
 var = var + 1;  
 var += 1;  
 var++;  
@@ -65,7 +65,7 @@ var++;
  This identity cannot be relied upon for class types that overload operators. Moreover, some of the requirements implicit in the use of these operators for basic types are relaxed for overloaded operators. For example, the addition/assignment operator, `+=`, requires the left operand to be an l-value when applied to basic types; there is no such requirement when the operator is overloaded.  
   
 > [!NOTE]
->  For consistency, it is often best to follow the model of the built-in types when defining overloaded operators. If the semantics of an overloaded operator differ significantly from its meaning in other contexts, it can be more confusing than useful.  
+> For consistency, it is often best to follow the model of the built-in types when defining overloaded operators. If the semantics of an overloaded operator differ significantly from its meaning in other contexts, it can be more confusing than useful.  
   
 ## See Also  
  [Operator Overloading](../cpp/operator-overloading.md)

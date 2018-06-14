@@ -31,7 +31,7 @@ ms.workload: ["cplusplus"]
   
  This attribute can also be used in the declaration of an empty array in a class or structure definition. For example:  
   
-```  
+```cpp 
 __declspec(property(get=GetX, put=PutX)) int x[];  
 ```  
   
@@ -41,7 +41,7 @@ __declspec(property(get=GetX, put=PutX)) int x[];
   
 ## Example  
   
-```  
+```cpp 
 // declspec_property.cpp  
 struct S {  
    int i;  

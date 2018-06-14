@@ -19,45 +19,33 @@ Declarations of pointers to members are special cases of pointer declarations.  
 [= & qualified-name :: member-name];  
 ```  
   
-1.  The declaration specifier:  
+1. The declaration specifier:  
+  - An optional storage class specifier.  
   
-    -   An optional storage class specifier.  
+  - Optional **const** and/or `volatile` specifiers.  
   
-    -   Optional **const** and/or `volatile` specifiers.  
+  - The type specifier: the name of a type.  This is the type of the member to be pointed to, not the class.  
   
-    -   The type specifier: the name of a type.  This is the type of the member to be pointed to, not the class.  
+1. The declarator:  
+
+  - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
+1. The qualified name of the class containing the members to be pointed to.  
+  - The :: operator.  
+  - The **\*** operator.  
+  - Optional **const** and/or `volatile` specifiers.  
+  - The identifier naming the pointer to member.  
   
-2.  The declarator:  
-  
-    -   An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
-  
-    -   The qualified name of the class containing the members to be pointed to.   
-  
-    -   The :: operator.  
-  
-    -   The **\*** operator.  
-  
-    -   Optional **const** and/or `volatile` specifiers.  
-  
-    -   The identifier naming the pointer to member.  
-  
-    -   An optional initializer:  
-  
- The **=** operator.  
-  
- The **&** operator.  
-  
- The qualified name of the class.  
-  
- The `::` operator.  
-  
- The name of a nonstatic member of the class of the appropriate type.  
-  
- As always, multiple declarators (and any associated initializers) are allowed in a single declaration.  
+  - An optional initializer:  
+  - The **=** operator.  
+  - The **&** operator.  
+  - The qualified name of the class.  
+  - The `::` operator.  
+  - The name of a nonstatic member of the class of the appropriate type.  
+  -  As always, multiple declarators (and any associated initializers) are allowed in a single declaration.  
   
  A pointer to a member of a class differs from a normal pointer because it has type information for the type of the member and for the class to which the member belongs. A normal pointer identifies (has the address of) only a single object in memory. A pointer to a member of a class identifies that member in any instance of the class. The following example declares a class, `Window`, and some pointers to member data.  
   
-```  
+```cpp 
 // pointers_to_members1.cpp  
 class Window  
 {  
@@ -77,16 +65,16 @@ int main()
 }  
 ```  
   
- In the preceding example, `pwCaption` is a pointer to any member of class `Window` that has type **char\***. The type of `pwCaption` is `char * Window::*`. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.  
+ In the preceding example, `pwCaption` is a pointer to any member of class `Window` that has type **char\***. The type of `pwCaption` is `char * Window::* `. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.  
   
-```  
+```cpp 
 const char * (Window::*pfnwGC)() = &Window::GetCaption;  
 bool (Window::*pfnwSC)( const char * ) = &Window::SetCaption;  
 ```  
   
  The pointers `pfnwGC` and `pfnwSC` point to `GetCaption` and `SetCaption` of the `Window` class, respectively. The code copies information to the window caption directly using the pointer to member `pwCaption`:  
   
-```  
+```cpp 
 Window wMainWindow;  
 Window *pwChildWindow = new Window;  
 char   *szUntitled    = "Untitled -  ";  
@@ -105,7 +93,7 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
   
  The following code fragment invokes the member functions `GetCaption` and `SetCaption` using pointers to members:  
   
-```  
+```cpp 
 // Allocate a buffer.  
 enum {  
     sizeOfBuffer = 100  
@@ -130,7 +118,7 @@ strcat_s( szCaptionBase, sizeOfBuffer, " [View 1]" );
   
  The following code shows how to invoke a virtual function through a pointer-to-member function:  
   
-```  
+```cpp 
 // virtual_functions.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -138,35 +126,35 @@ using namespace std;
   
 class Base  
 {  
-public:  
-virtual void Print();  
+    public:  
+    virtual void Print();  
 };  
 void (Base ::* bfnPrint)() = &Base :: Print;  
 void Base :: Print()  
 {  
-cout << "Print function for class Base\n";  
+    cout << "Print function for class Base\n";  
 }  
   
 class Derived : public Base  
 {  
-public:  
-void Print();  // Print is still a virtual function.  
+    public:  
+    void Print();  // Print is still a virtual function.  
 };  
   
 void Derived :: Print()  
 {  
-cout << "Print function for class Derived\n";  
+    cout << "Print function for class Derived\n";  
 }  
   
 int main()  
 {  
     Base   *bPtr;  
     Base    bObject;  
-Derived dObject;  
-bPtr = &bObject;    // Set pointer to address of bObject.  
-(bPtr->*bfnPrint)();  
-bPtr = &dObject;    // Set pointer to address of dObject.  
-(bPtr->*bfnPrint)();  
+    Derived dObject;  
+    bPtr = &bObject;    // Set pointer to address of bObject.  
+    (bPtr->*bfnPrint)();  
+    bPtr = &dObject;    // Set pointer to address of dObject.  
+    (bPtr->*bfnPrint)();  
 }  
   
 //Output: Print function for class Base  

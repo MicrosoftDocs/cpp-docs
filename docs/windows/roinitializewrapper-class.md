@@ -1,7 +1,7 @@
 ---
 title: "RoInitializeWrapper Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "05/20/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper"]
@@ -21,7 +21,7 @@ class RoInitializeWrapper
 ```  
   
 ## Remarks  
- RoInitializeWrapper is a convenience that initializes the Windows Runtime and returns an HRESULT that indicates whether the operation was successful.  
+ RoInitializeWrapper is a convenience that initializes the Windows Runtime and returns an HRESULT that indicates whether the operation was successful. Because the class destructor calls `::Windows::Foundation::Uninitialize`, instances of `RoInitializeWrapper` must be declared at global or top-level scope.  
   
 ## Members  
   

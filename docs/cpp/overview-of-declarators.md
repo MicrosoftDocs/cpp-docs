@@ -27,7 +27,7 @@ Specifiers, Modifiers, and Declarators
   
  The following sample declaration shows how specifiers and declarators are combined to form a complete declaration:  
   
-```  
+```cpp 
 const char *pch, ch;  
 ```  
   
@@ -45,7 +45,7 @@ const char *pch, ch;
   
  Pointer operators inserted in front of the name cause the object to be a pointer or reference.  The **\*** operator declares the name as a pointer; the **&** operator declares it as a reference.  
   
-```  
+```cpp 
 int *i; // declarator is *i  
 int **i; // declarator is **i;  
 int &i = x; // declaratory is &i  
@@ -53,7 +53,7 @@ int &i = x; // declaratory is &i
   
  Appending `const` or `volatile` give the pointer these special properties.  The use of these specifiers in a declarator (as opposed to in the type specifier) modifies the properties of the pointer, not the object pointed to:  
   
-```  
+```cpp 
 char *const cpc; // const pointer to char   
 const char *pcc; // pointer to const char   
 const char *const cpcc; // const pointer to const char  
@@ -63,7 +63,7 @@ const char *const cpcc; // const pointer to const char
   
  A pointer to a member of a class or struct is declared with the appropriate nested name specifier:  
   
-```  
+```cpp 
 int X::* pIntMember;   
 int ::X::* pIntMember; // the initial :: specifies X is in global scope  
 char Outer::Inner::* pIntMember; // pointer to char in a nested class  
@@ -71,7 +71,7 @@ char Outer::Inner::* pIntMember; // pointer to char in a nested class
   
  Brackets enclosing an optional constant expression after the name cause the object to be an array.  Successive brackets declare additional dimensions to the array.  
   
-```  
+```cpp 
 int i[5]; // array with five elements of type int numbered from 0 to 4  
 int i[]; // array of unknown size  
 char *s[4]; // array of pointers to char  
@@ -82,13 +82,13 @@ int i[2][2]; // two dimensional array
   
  Parentheses containing the argument list are used after the name to declare a function.  The following declares a function of return type `int` and three arguments of type `int`.  
   
-```  
+```cpp 
 int f(int a, int b, int c);  
 ```  
   
  Pointers and references to functions are declared by prepending the pointer or reference operator to the function name as shown below.  Parentheses, normally optional, are required to distinguish a pointer to a function from a function that returns a pointer:  
   
-```  
+```cpp 
 int (*pf)(int); // pointer to function returning int  
 int *f(int i); // function returning pointer to int  
 int (&pf)(int); // reference to function   
@@ -96,7 +96,7 @@ int (&pf)(int); // reference to function
   
  Pointers to member functions are distinguished by nested name specifiers:  
   
-```  
+```cpp 
 int (X::* pmf)(); // pointer to member function of X returning int  
 int* (X::* pmf)(); // pointer to member function returning pointer to int  
 ```  
@@ -107,13 +107,13 @@ int* (X::* pmf)(); // pointer to member function returning pointer to int
   
  Functions and objects may be declared in the same declaration as follows:  
   
-```  
+```cpp 
 int i, *j, f(int k);  // int, pointer to int, function returning int  
 ```  
   
  The syntax may be misleading in some circumstances.  The following declaration  
   
-```  
+```cpp 
 int* i, f(int k);  // pointer to int, function returning int (not int*)  
 ```  
   
@@ -123,7 +123,7 @@ int* i, f(int k);  // pointer to int, function returning int (not int*)
   
  A better technique, however, is to use a `typedef` or a combination of parentheses and the `typedef` keyword. Consider declaring an array of pointers to functions:  
   
-```  
+```cpp 
 //  Function returning type int that takes one   
 //   argument of type char *.  
 typedef int (*PIFN)( char * );  
@@ -135,7 +135,7 @@ PIFN pifnDispatchArray[7];
   
  The equivalent declaration can be written without the `typedef` declaration, but it is so complicated that the potential for error exceeds any benefits:  
   
-```  
+```cpp 
 int ( *pifnDispatchArray[7] )( char * );  
 ```  
   
@@ -143,36 +143,31 @@ int ( *pifnDispatchArray[7] )( char * );
   
  Pointers, references, arrays of a single base type can be combined in a single declaration (separated by commas) as  
   
-```  
+```cpp 
 int a, *b, c[5], **d, &e=a;  
 ```  
   
  **More complex declarator syntax**  
   
--   Pointer, reference, array, and function declarators may be combined to specify such objects as arrays of pointers to functions, pointers to arrays, etc.  
+- Pointer, reference, array, and function declarators may be combined to specify such objects as arrays of pointers to functions, pointers to arrays, etc.  
   
--   The following recursive grammar describes pointer declarator syntax fully.  
+- The following recursive grammar describes pointer declarator syntax fully.  
   
--   A `declarator` is defined as one of:  
+- A `declarator` is defined as one of:  
+
+  - identifier   
+  - qualified-name   
+  - declarator ( argument-list ) [cv-qualfiers] [exception-spec]  
+  - declarator [ [ constant-expression ] ]
+  - pointer-operator declarator   
+  - ( declarator )  
+
   
-```  
-1. identifier   
-2. qualified-name   
-3. declarator ( argument-list ) [cv-qualfiers] [exception-spec]  
-4. declarator [ [ constant-expression ] ]   
+- and *pointer-operator* is one of:  
   
-5. pointer-operatordeclarator   
-6. ( declarator )  
-```  
-  
--   and *pointer-operator* is one of:  
-  
-```  
-  
-      * [cv-qualifiers]  
-& [cv-qualifiers]  
-::nested-name-specifier * [cv-qualfiers]  
-```  
+  - * [cv-qualifiers]  
+  - & [cv-qualifiers] ::nested-name-specifier * [cv-qualifiers]  
+
   
  Because a declarator may contain declarators, it is possible to construct the more complex derived types such as arrays of pointers, functions returning arrays of function pointers, by using the above rules.  To form each step of the construction, start with the identifier representing the base data type and apply the syntax rule above with the previous expression as the `declarator`.  The order that you apply the syntax rules should be the reverse of the way the expression is stated in English.  If applying the *pointer-operator* syntax rule to an array or function expression, use parentheses if you want a pointer to the array or function, as in the last row in the table below.  
   

@@ -58,8 +58,10 @@ else  // optional
    ...
 } 
 ```  
+
 ## Example  
-```  
+
+```cpp  
 // if_else_statement.cpp  
 #include <iostream>
 

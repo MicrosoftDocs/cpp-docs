@@ -20,7 +20,7 @@ The major difference between structured exception handling and C++ exception han
   
 ## Example  
   
-```  
+```cpp 
 // exceptions_Exception_Handling_Differences.cpp  
 // compile with: /EHa  
 #include <iostream>  
@@ -58,7 +58,7 @@ Caught a C exception.
   
  Your wrapper class might have an interface consisting of some member functions that determine the value of the exception, and that access the extended exception context information provided by the C exception model. You might also want to define a default constructor and a constructor that accepts an `unsigned int` argument (to provide for the underlying C exception representation), and a bitwise copy constructor. The following is a possible implementation of a C exception wrapper class:  
   
-```  
+```cpp 
 // exceptions_Exception_Handling_Differences2.cpp  
 // compile with: /c  
 class SE_Exception {  
@@ -83,7 +83,7 @@ public:
 ## Example  
  For example, the following code installs a custom translation function, and then raises a C exception that is wrapped by the `SE_Exception` class:  
   
-```  
+```cpp 
 // exceptions_Exception_Handling_Differences3.cpp  
 // compile with: /EHa  
 #include <stdio.h>  

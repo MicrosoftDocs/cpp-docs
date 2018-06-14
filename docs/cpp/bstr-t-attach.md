@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      void Attach(  
+void Attach(  
    BSTR s  
 );  
 ```  

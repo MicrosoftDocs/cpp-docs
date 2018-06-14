@@ -19,9 +19,7 @@ Emphasizes the call site of an event.
   
 ```  
   
-__raise   
-method-declarator  
-;  
+__raise method-declarator;  
   
 ```  
   
@@ -35,7 +33,7 @@ method-declarator
   
 ## Example  
   
-```  
+```cpp 
 // EventHandlingRef_raise.cpp  
 struct E {  
    __event void func1();  

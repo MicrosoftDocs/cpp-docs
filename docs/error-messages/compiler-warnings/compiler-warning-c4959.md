@@ -13,28 +13,35 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4959
-cannot define unmanaged struct 'type' in /clr:safe because accessing its members yields unverifiable code  
-  
- Accessing a member of an unmanaged type will produce an unverifiable (peverify.exe) image.  
-  
- For more information, see [Pure and Verifiable Code (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).  
-  
- This warning is issued as an error and can be disabled with the [warning](../../preprocessor/warning.md) pragma or the [/wd](../../build/reference/compiler-option-warning-level.md) compiler option.  
-  
- The following sample generates C4959:  
-  
-```  
-// C4959.cpp  
-// compile with: /clr:safe  
-  
-// Uncomment the following line to resolve.  
-// #pragma warning( disable : 4959 )  
-struct X {  
-   int data;  
-};  
-  
-int main() {  
-   X x;  
-   x.data = 10;   // C4959  
-}  
+
+> cannot define unmanaged struct '*type*' in /clr:safe because accessing its members yields unverifiable code
+
+## Remarks
+
+Accessing a member of an unmanaged type will produce an unverifiable (peverify.exe) image.
+
+For more information, see [Pure and Verifiable Code (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+
+The **/clr:safe** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+
+This warning is issued as an error and can be disabled with the [warning](../../preprocessor/warning.md) pragma or the [/wd](../../build/reference/compiler-option-warning-level.md) compiler option.
+
+## Example
+
+The following sample generates C4959:
+
+```cpp
+// C4959.cpp
+// compile with: /clr:safe
+
+// Uncomment the following line to resolve.
+// #pragma warning( disable : 4959 )
+struct X {
+   int data;
+};
+
+int main() {
+   X x;
+   x.data = 10;   // C4959
+}
 ```

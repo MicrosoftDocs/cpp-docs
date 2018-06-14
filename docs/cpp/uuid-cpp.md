@@ -27,7 +27,7 @@ __declspec( uuid("ComObjectGUID") ) declarator
 ## Remarks  
  The `uuid` attribute takes a string as its argument. This string names a GUID in normal registry format with or without the **{ }** delimiters. For example:  
   
-```  
+```cpp 
 struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;  
 struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;  
 ```  
