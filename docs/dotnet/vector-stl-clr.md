@@ -2418,7 +2418,7 @@ int main()
 [a b c] < [a b d] is True  
 ```  
 
-## <a name="eq_lteq"></a> operator&lt;= (vector) (STL/CLR)
+## <a name="op_lteq"></a> operator&lt;= (vector) (STL/CLR)
 Vector less than or equal comparison.  
   
 ### Syntax  
@@ -2483,6 +2483,73 @@ int main()
  a b d  
 [a b c] <= [a b c] is True  
 [a b d] <= [a b c] is False  
+```  
+
+## <a name="op_eq"></a> operator== (vector) (STL/CLR)
+Vector equal comparison.  
+  
+### Syntax  
+  
+```  
+template<typename Value>  
+    bool operator==(vector<Value>% left,  
+        vector<Value>% right);  
+```  
+  
+#### Parameters  
+ left  
+ Left container to compare.  
+  
+ right  
+ Right container to compare.  
+  
+### Remarks  
+ The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two vectors are compared element by element.  
+  
+### Example  
+  
+```cpp  
+// cliext_vector_operator_eq.cpp   
+// compile with: /clr   
+#include <cliext/vector>   
+  
+int main()   
+    {   
+    cliext::vector<wchar_t> c1;   
+    c1.push_back(L'a');   
+    c1.push_back(L'b');   
+    c1.push_back(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1)   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    cliext::vector<wchar_t> c2;   
+    c2.push_back(L'a');   
+    c2.push_back(L'b');   
+    c2.push_back(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2)   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] == [a b c] is {0}",   
+        c1 == c1);   
+    System::Console::WriteLine("[a b c] == [a b d] is {0}",   
+        c1 == c2);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] == [a b c] is True  
+[a b c] == [a b d] is False  
 ```  
 
 ## <a name="op_gt"></a> operator&gt; (vector) (STL/CLR)
