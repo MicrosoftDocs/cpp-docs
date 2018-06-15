@@ -41,6 +41,8 @@ The **longjmp** function restores a stack environment and execution locale previ
 
 A call to **setjmp** causes the current stack environment to be saved in *env*. A subsequent call to **longjmp** restores the saved environment and returns control to the point immediately following the corresponding **setjmp** call. Execution resumes as if *value* had just been returned by the **setjmp** call. The values of all variables (except register variables) that are accessible to the routine receiving control contain the values they had when **longjmp** was called. The values of register variables are unpredictable. The value returned by **setjmp** must be nonzero. If *value* is passed as 0, the value 1 is substituted in the actual return.
 
+In C++ code, **longjmp** uses the same stack-unwinding semantics as exception-handling code. It is safe to use in the same places that exceptions can be raised.
+
 Only call **longjmp** before the function that called **setjmp** returns; otherwise the results are unpredictable.
 
 Observe the following restrictions when using **longjmp**:
@@ -48,8 +50,6 @@ Observe the following restrictions when using **longjmp**:
 - Do not assume that the values of the register variables will remain the same. The values of register variables in the routine calling **setjmp** may not be restored to the proper values after **longjmp** is executed.
 
 - Do not use **longjmp** to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via **longjmp** if it first reinitializes the floating-point math package by calling **_fpreset**.
-
-   **Note:** Be careful when using **setjmp** and **longjmp** in C++ programs. Because these functions do not support C++ object semantics for stack unwinding, it is safer to use the C++ exception-handling mechanism.
 
 For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-longjmp.md).
 
