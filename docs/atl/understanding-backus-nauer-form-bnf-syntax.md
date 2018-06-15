@@ -16,10 +16,10 @@ The scripts used by the ATL Registrar are described in this topic using BNF synt
   
 |Convention/symbol|Meaning|  
 |------------------------|-------------|  
-|`::=`|Equivalent|  
-|`&#124;`|OR|  
-|`X+`|One or more `X`s.|  
-|`[X]`|`X` is optional. Optional delimiters are denoted by `[]`.|  
+|::=|Equivalent|  
+|&#124;|OR|  
+|X+|One or more Xs.|  
+|[X]|X is optional. Optional delimiters are denoted by \[].|  
 |Any **bold** text|A string literal.|  
 |Any *italicized* text|How to construct the string literal.|  
   
