@@ -35,6 +35,8 @@
 ### [Declarations and Definitions](declarations-and-definitions-cpp.md)
 #### [Overview of Declarators](overview-of-declarators.md)
 #### [Specifiers](specifiers.md)
+#### [extern](extern-cpp.md)
+#### [Header files](header-files-cpp.md)
 #### [Point of declaration in C++](point-of-declaration-in-cpp.md)
 #### [Initializers](initializers.md)
 #### [Aliases and typedefs](aliases-and-typedefs-cpp.md)
