@@ -715,7 +715,7 @@ int main()
 a b c  
 ```  
 
-## <a name="op_eq"></a> queue::operator= (STL/CLR)
+## <a name="op_as"></a> queue::operator= (STL/CLR)
 Replaces the controlled sequence.  
   
 ### Syntax  
