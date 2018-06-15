@@ -4,9 +4,13 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["<cliext/utility>"]
+f1_keywords: ["<cliext/utility>", "cliext::pair", "cliext::pair::pair", "cliext::pair::first", "cliext::pair::first_type", "cliext::pair::second", "cliext::pair::second_type", 
+    "cliext::pair::swap", "cliext::make_pair", "cliext::pair::operator=", "cliext::pair::operator==", "cliext::pair::operator>=", "cliext::pair::operator>", "cliext::pair::operator!=",
+    "cliext::pair::operator<=", "cliext::pair::operator<"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<utility> header [STL/CLR]", "utility header [STL/CLR]", "<cliext/utility> header [STL/CLR]"]
+helpviewer_keywords: ["<utility> header [STL/CLR]", "utility header [STL/CLR]", "<cliext/utility> header [STL/CLR]", "first member [STL/CLR]", "first_type member [STL/CLR]", "second member [STL/CLR]", 
+    "second_type member [STL/CLR]", "swap member [STL/CLR]", "make_pair function [STL/CLR]", "pair class [STL/CLR]", "pair member [STL/CLR]", "operator== member [STL/CLR]", "operator= member [STL/CLR]",
+    "operator>= member [STL/CLR]", "operator> member [STL/CLR]", "operator!= member [STL/CLR]", "operator<= member [STL/CLR]", "operator< member [STL/CLR]"]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
 author: "mikeblome"
 ms.author: "mblome"
@@ -47,7 +51,7 @@ Include the STL/CLR header `<cliext/utility>` to define the template class `pair
 
 ## Members
 
-# pair (STL/CLR)
+##<a name="pair"></a> pair (STL/CLR)
 The template class describes an object that wraps a pair of values.  
   
 ### Syntax  
