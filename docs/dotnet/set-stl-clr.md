@@ -260,7 +260,7 @@ size() = 0
 size() = 0  
 ```  
 
-## <a name="const_iteterator"></a>set::const_iterator (STL/CLR)
+## <a name="const_iterator"></a>set::const_iterator (STL/CLR)
 The type of a constant iterator for the controlled sequence.  
   
 ### Syntax  
