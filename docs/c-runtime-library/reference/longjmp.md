@@ -1,7 +1,7 @@
 ---
 title: "longjmp | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/15/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 apiname: ["longjmp"]
@@ -30,11 +30,10 @@ void longjmp(
 
 ### Parameters
 
-*env*
-Variable in which environment is stored.
-
-*value*
-Value to be returned to **setjmp** call.
+|||
+|-|-|
+*env*|Variable in which environment is stored.
+*value*|Value to be returned to **setjmp** call.
 
 ## Remarks
 
@@ -42,7 +41,7 @@ The **longjmp** function restores a stack environment and execution locale previ
 
 A call to **setjmp** causes the current stack environment to be saved in *env*. A subsequent call to **longjmp** restores the saved environment and returns control to the point immediately following the corresponding **setjmp** call. Execution resumes as if *value* had just been returned by the **setjmp** call. The values of all variables (except register variables) that are accessible to the routine receiving control contain the values they had when **longjmp** was called. The values of register variables are unpredictable. The value returned by **setjmp** must be nonzero. If *value* is passed as 0, the value 1 is substituted in the actual return.
 
-Call **longjmp** before the function that called **setjmp** returns; otherwise the results are unpredictable.
+Only call **longjmp** before the function that called **setjmp** returns; otherwise the results are unpredictable.
 
 Observe the following restrictions when using **longjmp**:
 
@@ -50,7 +49,7 @@ Observe the following restrictions when using **longjmp**:
 
 - Do not use **longjmp** to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via **longjmp** if it first reinitializes the floating-point math package by calling **_fpreset**.
 
-     **Note** Be careful when using **setjmp** and **longjmp** in C++ programs. Because these functions do not support C++ object semantics, it is safer to use the C++ exception-handling mechanism.
+   **Note:** Be careful when using **setjmp** and **longjmp** in C++ programs. Because these functions do not support C++ object semantics for stack unwinding, it is safer to use the C++ exception-handling mechanism.
 
 For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-longjmp.md).
 
@@ -61,10 +60,6 @@ For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-long
 |**longjmp**|\<setjmp.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
-
-## Libraries
-
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
 ## Example
 
