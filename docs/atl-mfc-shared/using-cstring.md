@@ -1,7 +1,7 @@
 ---
 title: "Using CString | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/18/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -20,7 +20,7 @@ The topics in this section describe how to program with `CString`. For reference
   
  A `CStringW` object contains the `wchar_t` type and supports Unicode strings. A `CStringA` object contains the `char` type, and supports single-byte and multi-byte (MBCS) strings. A `CString` object supports either the `char` type or the `wchar_t` type, depending on whether the `MBCS` symbol or the `UNICODE` symbol is defined at compile time.  
   
- A `CString` object keeps character data in a `CStringData` object. `CString` accepts `null`-terminated C-style strings, but does not retain the `null` character in the stored character data. Instead, `CString` tracks string length. `CString` does provide a null terminator when it exports a C-style string. You can insert a `null` in a `CString`, but it may produce unexpected results.  
+ A `CString` object keeps character data in a `CStringData` object. `CString` accepts `null`-terminated C-style strings. `CString` tracks the string length for faster performance, but it also retains the `null` character in the stored character data to support conversion to LPCWSTR. `CString` includes the null terminator when it exports a C-style string. You can insert a `null` at other locations in a `CString`, but it may produce unexpected results.  
   
  The following set of string classes can be used without linking an MFC library, with or without CRT support: `CAtlString`, `CAtlStringA`, and `CAtlStringW`.  
   
