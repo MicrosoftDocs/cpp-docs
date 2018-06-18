@@ -1,5 +1,5 @@
 ---
-title: "C++ exceptions and Structured Exception Handling differences | Microsoft Docs"
+title: "Handle structured exceptions in C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "06/15/2018"
 ms.technology: ["cpp-language"]
@@ -11,13 +11,15 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# C++ exceptions and Structured Exception Handling differences
+# Handle structured exceptions in C++
 
 The major difference between C structured exception handling (SEH) and C++ exception handling is that the C++ exception handling model deals in types, while the C structured exception handling model deals with exceptions of one type — specifically, **unsigned int**. That is, C exceptions are identified by an unsigned integer value, whereas C++ exceptions are identified by data type. When an exception is raised in C, each possible handler executes a filter that examines the C exception context and determines whether to accept the exception, pass it to some other handler, or ignore it. When an exception is thrown in C++, it may be of any type.
 
-A second difference is that the C structured exception handling model is referred to as "asynchronous" in that exceptions occur secondary to the normal flow of control. The C++ exception handling mechanism is fully *synchronous*, which means that exceptions occur only when they are thrown.
+A second difference is that the C structured exception handling model is referred to as *asynchronous*, because exceptions occur secondary to the normal flow of control. The C++ exception handling mechanism is fully *synchronous*, which means that exceptions occur only when they are thrown.
 
-If a C exception is raised in a C++ program, it can be handled by a structured exception handler with its associated filter or by a C++ **catch** handler, whichever is dynamically nearer to the exception context. For example, the following C++ program raises a C exception inside a C++ **try** context:
+When you use the [/EHs or /EHsc](../build/reference/eh-exception-handling-model.md) compiler option, no C++ exception handlers handle structured exceptions. These exceptions are handled only by structured exception handlers or structured termination handlers. For information, see [Structured Exception Handling (C/C++)](structured-exception-handling-c-cpp.md).
+
+Under the [/EHa](../build/reference/eh-exception-handling-model.md) compiler option, if a C exception is raised in a C++ program, it can be handled by a structured exception handler with its associated filter or by a C++ **catch** handler, whichever is dynamically nearer to the exception context. For example, the following C++ program raises a C exception inside a C++ **try** context:
 
 ## Example - Catch a C exception in a C++ catch block
 
@@ -56,7 +58,7 @@ Caught a C exception.
 
 ## C exception wrapper classes
 
-In a simple example like the above, the C exception can be caught only by an ellipsis (**...**) **catch** handler. No information about the type or nature of the exception is communicated to the handler. While this method works, in some cases you may need to define a transformation between the two exception handling models so that each C exception is associated with a specific class. To do this, you can define a C exception "wrapper" class, which can be used or derived from in order to attribute a specific class type to a C exception. By doing so, each C exception can be handled separately by a specific C++ **catch** handler, instead of all by a single handler, as in the preceding example.
+In a simple example like the above, the C exception can be caught only by an ellipsis (**...**) **catch** handler. No information about the type or nature of the exception is communicated to the handler. While this method works, in some cases you may want to define a transformation between the two exception handling models so that each C exception is associated with a specific class. To do this, you can define a C exception "wrapper" class, which can be used or derived from in order to attribute a specific class type to a C exception. By doing so, each C exception can be handled separately by a specific C++ **catch** handler, instead of all of them in a single handler.
 
 Your wrapper class might have an interface consisting of some member functions that determine the value of the exception, and that access the extended exception context information provided by the C exception model. You might also want to define a default constructor and a constructor that accepts an **unsigned int** argument (to provide for the underlying C exception representation), and a bitwise copy constructor. Here is a possible implementation of a C exception wrapper class:
 
@@ -139,4 +141,4 @@ nSE = 0xc0000094
 
 ## See also
 
-- [Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+- [Mixing C (Structured) and C++ exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)
