@@ -91,7 +91,7 @@ template<typename Value1,
 |[pair::operator= (STL/CLR)](#op_as)|Replaces the stored pair of values.|  
   
 ## Remarks  
- The object stores a pair of values. You use this template class to combine two values into a single object. Note that `cliext::pair` (described here) stores only managed types; to store a pair of unmanaged types use `std::pair`, declared in `<utility>`.  
+ The object stores a pair of values. You use this template class to combine two values into a single object. Also, the object `cliext::pair` (described here) stores only managed types; to store a pair of unmanaged types use `std::pair`, declared in `<utility>`.  
 
 
 ## <a name="first"></a> pair::first (STL/CLR)
