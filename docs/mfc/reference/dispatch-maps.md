@@ -150,20 +150,20 @@ DISP_FUNCTION(
 |**VTS_DISPATCH**|`LPDISPATCH`|  
 |**VTS_SCODE**|`SCODE`|  
 |**VTS_BOOL**|**BOOL**|  
-|**VTS_VARIANT**|**const VARIANT\*** or **VARIANT&**|  
+|**VTS_VARIANT**|**const VARIANT\\\*** or **VARIANT&**|  
 |**VTS_UNKNOWN**|`LPUNKNOWN`|  
-|**VTS_PI2**|**short\***|  
-|**VTS_PI4**|**long\***|  
-|**VTS_PR4**|**float\***|  
-|**VTS_PR8**|**double\***|  
-|**VTS_PCY**|**CY\***|  
-|**VTS_PDATE**|**DATE\***|  
-|**VTS_PBSTR**|**BSTR\***|  
-|**VTS_PDISPATCH**|**LPDISPATCH\***|  
-|**VTS_PSCODE**|**SCODE\***|  
-|**VTS_PBOOL**|**BOOL\***|  
-|**VTS_PVARIANT**|**VARIANT\***|  
-|**VTS_PUNKNOWN**|**LPUNKNOWN\***|  
+|**VTS_PI2**|**short\\\***|  
+|**VTS_PI4**|**long\\\***|  
+|**VTS_PR4**|**float\\\***|  
+|**VTS_PR8**|**double\\\***|  
+|**VTS_PCY**|**CY\\\***|  
+|**VTS_PDATE**|**DATE\\\***|  
+|**VTS_PBSTR**|**BSTR\\\***|  
+|**VTS_PDISPATCH**|**LPDISPATCH\\\***|  
+|**VTS_PSCODE**|**SCODE\\\***|  
+|**VTS_PBOOL**|**BOOL\\\***|  
+|**VTS_PVARIANT**|**VARIANT\\\***|  
+|**VTS_PUNKNOWN**|**LPUNKNOWN\\\***|  
 |**VTS_NONE**|No parameters|  
 
 ### Requirements  
