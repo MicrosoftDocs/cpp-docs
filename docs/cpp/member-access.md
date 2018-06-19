@@ -16,11 +16,41 @@ Class member access can be controlled by overloading the member access operator 
   
 ## Syntax  
   
-```  
-  
+```cpp  
 class-type *operator->()  
 ```  
-  
+
+## Example
+The following sample code describes how SmartPointer allows us to create an object that contains a pointer to a dynamic object, saving us the need to take care of a delete at the end of the method.
+
+```cpp
+class SmartPointer
+{
+  private:
+	class RealObject
+	{
+	  public:
+		void RealMethod() {}
+	};
+	RealObject *_object = new RealObject();
+
+  public:
+	RealObject *operator->()
+	{
+		return _object;
+	}
+	~SmartPointer()
+	{
+		delete _object;
+	}
+};
+
+int main()
+{
+	SmartPointer smart;
+	smart->RealMethod();
+} // The RealObject deleted here
+```
 ## Remarks  
  where *class-type* is the name of the class to which this operator belongs. The member access operator function must be a nonstatic member function.  
   
