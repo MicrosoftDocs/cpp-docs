@@ -129,17 +129,17 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 |**VTS_COLOR**|**OLE_COLOR**|  
 |**VTS_CY**|**CURRENCY**|  
 |**VTS_DATE**|**DATE**|  
-|**VTS_BSTR**|**const char\***|  
+|**VTS_BSTR**|**const char\\\***|  
 |**VTS_DISPATCH**|`LPDISPATCH`|  
-|**VTS_FONT**|**IFontDispatch\***|  
+|**VTS_FONT**|**IFontDispatch\\\***|  
 |**VTS_HANDLE**|`HANDLE`|  
 |**VTS_SCODE**|`SCODE`|  
 |**VTS_BOOL**|**BOOL**|  
-|**VTS_VARIANT**|**const VARIANT\***|  
-|**VTS_PVARIANT**|**VARIANT\***|  
+|**VTS_VARIANT**|**const VARIANT\\\***|  
+|**VTS_PVARIANT**|**VARIANT\\\***|  
 |**VTS_UNKNOWN**|`LPUNKNOWN`|  
 |**VTS_OPTEXCLUSIVE**|**OLE_OPTEXCLUSIVE**|  
-|**VTS_PICTURE**|**IPictureDisp\***|  
+|**VTS_PICTURE**|**IPictureDisp\\\***|  
 |**VTS_TRISTATE**|**OLE_TRISTATE**|  
 |**VTS_XPOS_PIXELS**|**OLE_XPOS_PIXELS**|  
 |**VTS_YPOS_PIXELS**|**OLE_YPOS_PIXELS**|  
