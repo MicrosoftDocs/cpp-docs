@@ -48,7 +48,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  The last modification to the application class requires including a new header file that defines a Windows message (**WM_INITIALUPDATE**) that is used in the switching function.  
   
- Insert the following line in the include section of MYWINAPP.CPP:  
+ Insert the following line in the include section of *MYWINAPP.CPP*:  
   
  [!code-cpp[NVC_MFCDocViewSDI#2](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_2.cpp)]  
   

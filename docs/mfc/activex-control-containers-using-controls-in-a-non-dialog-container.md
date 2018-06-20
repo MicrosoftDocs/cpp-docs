@@ -33,7 +33,7 @@ In some applications, such as an SDI or MDI application, you will want to embed 
   
  One example of using this function to dynamically create an ActiveX control would be in a form view of an SDI application. You could then create an instance of the control in the `WM_CREATE` handler of the application.  
   
- For this example, `CMyView` is the main view class, `CCirc` is the wrapper class, and *CIRC.H* is the header (.H) file of the wrapper class.  
+ For this example, `CMyView` is the main view class, `CCirc` is the wrapper class, and CIRC.H is the header (.H) file of the wrapper class.  
   
  Implementing this feature is a four-step process.  
   
