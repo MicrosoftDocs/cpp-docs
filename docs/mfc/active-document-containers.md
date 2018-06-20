@@ -37,15 +37,15 @@ An active document container, such as Microsoft Office Binder or Internet Explor
   
  An active document container that integrates active documents must:  
   
--   Be capable of handling object storage through the **IPersistStorage** interface, that is, it must provide an **IStorage** instance to each active document.  
+-   Be capable of handling object storage through the `IPersistStorage` interface, that is, it must provide an `IStorage` instance to each active document.  
   
--   Support the basic embedding features of OLE documents, necessitating "site" objects (one per document or embedding) that implement **IOleClientSite** and **IAdviseSink**.  
+-   Support the basic embedding features of OLE documents, necessitating "site" objects (one per document or embedding) that implement `IOleClientSite` and `IAdviseSink`.  
   
--   Support in-place activation of embedded objects or active documents. The container's site objects must implement **IOleInPlaceSite** and the container's frame object must provide **IOleInPlaceFrame**.  
+-   Support in-place activation of embedded objects or active documents. The container's site objects must implement `IOleInPlaceSite` and the container's frame object must provide `IOleInPlaceFrame`.  
   
--   Support the active documents' extensions by implementing **IOleDocumentSite** to provide the mechanism for the container to talk to the document. Optionally, the container can implement the active document interfaces **IOleCommandTarget** and **IContinueCallback** to pick up simple commands such as printing or saving.  
+-   Support the active documents' extensions by implementing `IOleDocumentSite` to provide the mechanism for the container to talk to the document. Optionally, the container can implement the active document interfaces `IOleCommandTarget` and `IContinueCallback` to pick up simple commands such as printing or saving.  
   
- The frame object, the view objects, and the container object can optionally implement **IOleCommandTarget** to support the dispatch of certain commands, as discussed in [Command Targets](../mfc/message-handling-and-command-targets.md). View and container objects can also optionally implement **IPrint** and **IContinueCallback**, to support programmatic printing, as discussed in [Programmatic Printing](../mfc/programmatic-printing.md).  
+ The frame object, the view objects, and the container object can optionally implement `IOleCommandTarget` to support the dispatch of certain commands, as discussed in [Command Targets](../mfc/message-handling-and-command-targets.md). View and container objects can also optionally implement `IPrint` and `IContinueCallback`, to support programmatic printing, as discussed in [Programmatic Printing](../mfc/programmatic-printing.md).  
   
  The following figure shows the conceptual relationships between a container and its components (at left), and the active document and its views (at right). The active document manages storage and data, and the view displays or optionally prints that data. Interfaces in bold are those required for active document participation; those bold and italic are optional. All other interfaces are required.  
   
@@ -67,14 +67,14 @@ An active document container, such as Microsoft Office Binder or Internet Explor
  The document site is conceptually the container for one or more "view site" objects. Each view site object is associated with individual view objects of the document managed by the document site. If the container only supports a single view per document site, then it can implement the document site and the view site with a single concrete class.  
   
 ##  <a name="view_site_objects"></a> View Site Objects  
- A container's view site object manages the display space for a particular view of a document. In addition to supporting the standard **IOleInPlaceSite** interface, a view site also generally implements **IContinueCallback** for programmatic printing control. (Note that the view object never queries for **IContinueCallback** so it can actually be implemented on any object the container desires.)  
+ A container's view site object manages the display space for a particular view of a document. In addition to supporting the standard `IOleInPlaceSite` interface, a view site also generally implements **IContinueCallback** for programmatic printing control. (Note that the view object never queries for `IContinueCallback` so it can actually be implemented on any object the container desires.)  
   
- A container that supports multiple views must be able to create multiple view site objects within the document site. This provides each view with separate activation and deactivation services as provided through **IOleInPlaceSite**.  
+ A container that supports multiple views must be able to create multiple view site objects within the document site. This provides each view with separate activation and deactivation services as provided through `IOleInPlaceSite`.  
   
 ##  <a name="frame_object"></a> Frame Object  
- The container's frame object is, for the most part, the same frame that is used for in-place activation in OLE Documents, that is, the one that handles menu and toolbar negotiation. A view object has access to this frame object through **IOleInPlaceSite::GetWindowContext**, which also provides access to the container object representing the container document (which can handle pane-level toolbar negotiation and contained object enumeration).  
+ The container's frame object is, for the most part, the same frame that is used for in-place activation in OLE Documents, that is, the one that handles menu and toolbar negotiation. A view object has access to this frame object through `IOleInPlaceSite::GetWindowContext`, which also provides access to the container object representing the container document (which can handle pane-level toolbar negotiation and contained object enumeration).  
   
- An active document container can augment the frame by adding **IOleCommandTarget**. This allows it to receive commands that originate in the active document's user interface in the same way that this interface can allow a container to send the same commands (such as **File New**, **Open**, **Save As**, **Print**; **Edit Copy**, **Paste**, **Undo**, and others) to an active document. For more information, see [Command Targets](../mfc/message-handling-and-command-targets.md).  
+ An active document container can augment the frame by adding `IOleCommandTarget`. This allows it to receive commands that originate in the active document's user interface in the same way that this interface can allow a container to send the same commands (such as **File New**, **Open**, **Save As**, **Print**; **Edit Copy**, **Paste**, **Undo**, and others) to an active document. For more information, see [Command Targets](../mfc/message-handling-and-command-targets.md).  
   
 ## See Also  
  [Active Document Containment](../mfc/active-document-containment.md)
