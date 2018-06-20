@@ -31,27 +31,27 @@ expression - expression
   
  The additive operators take operands of arithmetic or pointer types. The result of the addition (**+**) operator is the sum of the operands. The result of the subtraction (**-**) operator is the difference between the operands. If one or both of the operands are pointers, they must be pointers to objects, not to functions. If both operands are pointers, the results are not meaningful unless both are pointers to objects in the same array.  
   
- Additive operators take operands of `arithmetic`, `integral`, and `scalar` types. These are defined in the following table.  
+ Additive operators take operands of *arithmetic*, *integral*, and *scalar* types. These are defined in the following table.  
   
 ### Types Used with Additive Operators  
   
 |Type|Meaning|  
 |----------|-------------|  
-|`arithmetic`|Integral and floating types are collectively called "arithmetic" types.|  
-|`integral`|Types char and int of all sizes (long, short) and enumerations are "integral" types.|  
-|`scalar`|Scalar operands are operands of either arithmetic or pointer type.|  
+|*arithmetic*|Integral and floating types are collectively called "arithmetic" types.|  
+|*integral*|Types char and int of all sizes (long, short) and enumerations are "integral" types.|  
+|*scalar*|Scalar operands are operands of either arithmetic or pointer type.|  
   
  The legal combinations for these operators are:  
   
- `arithmetic` + `arithmetic`  
+ *arithmetic* + *arithmetic*  
   
- `scalar` + `integral`  
+ *scalar* + *integral*  
   
- `integral` + `scalar`  
+ *integral* + *scalar*  
   
- `arithmetic` - `arithmetic`  
+ *arithmetic* - *arithmetic*  
   
- `scalar` - `scalar`  
+ *scalar* - *scalar*  
   
  Note that addition and subtraction are not equivalent operations.  
   
@@ -92,13 +92,13 @@ for( int i = 0; i < 10; ++i )
 }  
 ```  
   
- Although the integral value 1 is added to *pIntArray*, it does not mean "add 1 to the address"; rather it means "adjust the pointer to point to the next object in the array" that happens to be 2 bytes (or `sizeof( int )`) away.  
+ Although the integral value 1 is added to `pIntArray`, it does not mean "add 1 to the address"; rather it means "adjust the pointer to point to the next object in the array" that happens to be 2 bytes (or `sizeof( int )`) away.  
   
 > [!NOTE]
 >  Code of the form `pIntArray = pIntArray + 1` is rarely found in C++ programs; to perform an increment, these forms are preferable: `pIntArray++` or `pIntArray += 1`.  
   
 ## Pointer subtraction  
- If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type `ptrdiff_t` (defined in the standard include file \<stddef.h>).  
+ If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type **ptrdiff_t** (defined in the standard include file \<stddef.h>).  
   
  One of the operands can be of integral type, as long as it is the second operand. The result of the subtraction is of the same type as the original pointer. The value of the subtraction is a pointer to the (*n* - *i*)th array element, where *n* is the element pointed to by the original pointer and *i* is the integral value of the second operand.  
   
