@@ -382,7 +382,7 @@ If you are concerned about revealing your identity, [create a new Microsoft acco
 
 1. In the report you created, choose **Add comment** to create your private description of the problem.
 
-1. in the reply editor, use the dropdown control below the **Submit** and **Cancel** buttons to specify the audience for your reply. Only the people you specify can see these private replies and any images, links, or code you include in them. Choose **Viewable by moderators and the original poster** to limit visibility to Microsoft employees and yourself.
+1. In the reply editor, use the dropdown control below the **Submit** and **Cancel** buttons to specify the audience for your reply. Only the people you specify can see these private replies and any images, links, or code you include in them. Choose **Viewable by moderators and the original poster** to limit visibility to Microsoft employees and yourself.
 
 1. Add the description and any other information, images, and file attachments needed for your repro. Choose the **Submit** button to send this information privately.
 
