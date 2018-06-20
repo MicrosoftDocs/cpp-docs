@@ -211,6 +211,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/cpp/types-of-linkage.md",
+            "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/linkage-in-names-with-file-scope.md",
+            "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/linkage-in-names-with-class-scope.md",
+            "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/linkage-in-names-with-block-scope.md",
+            "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/names-with-no-linkage.md",
+            "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/using-extern-to-specify-linkage.md",
+            "redirect_url": "/cpp/cpp/extern-cpp",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/cpp/support-for-cpp11-14-17-features-modern-cpp.md",
             "redirect_url": "/cpp/visual-cpp-language-conformance",
             "redirect_document_id": false

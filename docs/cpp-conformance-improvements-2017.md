@@ -485,12 +485,12 @@ or else perform a static cast to convert the object before passing it:
     printf("%i\n", static_cast<int>(s))
 ```
 
-For strings built and managed using CStringW, the provided `operator LPCWSTR()` should be used to cast a CStringW object to the C pointer expected by the format string.
+For strings built and managed using CString, the provided `operator LPCTSTR()` should be used to cast a CString object to the C pointer expected by the format string.
 
 ```cpp
-CStringW str1;
-CStringW str2;
-str1.Format(L"%s", static_cast<LPCWSTR>(str2));
+CString str1;
+CString str2 = _T("hello!");
+str1.Format(_T("%s"), static_cast<LPCTSTR>(str2));
 ```
 
 ### cv-qualifiers in class construction
