@@ -1,7 +1,7 @@
 ---
 title: "&lt;regex&gt; functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/19/2018"
 ms.topic: "reference"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]
 dev_langs: ["C++"]
@@ -19,8 +19,7 @@ helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std
 
 Tests whether a regular expression matches the entire target string.
 
-```
-
+```cpp
 // (1)
 template <class BidIt, class Alloc, class Elem, class RXtraits, class Alloc2>
 bool regex_match(
@@ -75,55 +74,28 @@ bool regex_match(
 
 ### Parameters
 
-`BidIt`
- The iterator type for submatches. For common cases this one of string::const_iterator, wstring::const_iterator, const char* or const wchar_t\*.
-
-`Alloc`
- The match results allocator class.
-
-`Elem`
- The type of elements to match. For common cases this is string, wstring, char* or wchar_t\*.
-
-`RXtraits`
- Traits class for elements.
-
-`Alloc2`
- The regular expression allocator class.
-
-`IOtraits`
- The string traits class.
-
-`IOalloc`
- The string allocator class.
-
-`flags`
- Flags for matches.
-
-`first`
- Beginning of sequence to match.
-
-`last`
- End of sequence to match.
-
-`match`
- The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch) for string, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) for wstring, [cmatch](../standard-library/regex-typedefs.md#cmatch) for char* or [wcmatch](../standard-library/regex-typedefs.md#wcmatch) for wchar_t\*.
-
-`ptr`
- Pointer to beginning of sequence to match. If ptr is char*, then use cmatch and regex. If ptr is wchar_t\* then use wcmatch and wregex.
-
-`re`
- The regular expression to match. Type `regex` for string and char*, or `wregex` for wstring and wchar_t\*.
-
-`str`
- String to match. Corresponds to the type of Elem.
+|||
+|-|-|
+*BidIt*| The iterator type for submatches. For common cases this one of `string::const_iterator`, `wstring::const_iterator`, `const char*` or `const wchar_t*`.
+*Alloc*| The match results allocator class.
+*Elem*| The type of elements to match. For common cases this is `string`, `wstring`, `char*` or `wchar_t*`.
+*RXtraits*| Traits class for elements.
+*Alloc2*| The regular expression allocator class.
+*IOtraits*| The string traits class.
+*IOalloc*| The string allocator class.
+*flags*| Flags for matches.
+*first*| Beginning of sequence to match.
+*last*| End of sequence to match.
+*match*| The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch) for `string`, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) for `wstring`, [cmatch](../standard-library/regex-typedefs.md#cmatch) for `char*` or [wcmatch](../standard-library/regex-typedefs.md#wcmatch) for `wchar_t*`.
+*ptr*| Pointer to beginning of sequence to match. If *ptr* is `char*`, then use `cmatch` and `regex`. If *ptr* is `wchar_t*` then use `wcmatch` and `wregex`.
+*re*| The regular expression to match. Type `regex` for `string` and `char*`, or `wregex` for `wstring` and `wchar_t*`.
+*str*| String to match. Corresponds to the type of *Elem*.
 
 ### Remarks
 
-Each template function returns true only if the entire operand sequence `str` exactly matches the regular expression argument `re`. Use [regex_search](../standard-library/regex-functions.md#regex_search) to match a substring within a target sequence and regex_iterator to find multiple matches. The functions that take a `match_results` object set its members to reflect whether the match succeeded and if so what the various capture groups in the regular expression captured.
+Each template function returns true only if the entire operand sequence *str* exactly matches the regular expression argument *re*. Use [regex_search](../standard-library/regex-functions.md#regex_search) to match a substring within a target sequence and `regex_iterator` to find multiple matches. The functions that take a `match_results` object set its members to reflect whether the match succeeded and if so what the various capture groups in the regular expression captured.
 
 The functions that take a `match_results` object set its members to reflect whether the match succeeded and if so what the various capture groups in the regular expression captured.
-
-**(1):**
 
 ### Example
 
@@ -175,7 +147,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
      return 0;
 }
-
 ```
 
 ## <a name="regex_replace"></a>  regex_replace
@@ -202,45 +173,24 @@ basic_string<Elem> regex_replace(
 
 ### Parameters
 
-`OutIt`
- The iterator type for replacements.
-
-`BidIt`
- The iterator type for submatches.
-
-`RXtraits`
- Traits class for elements.
-
-`Alloc`
- The regular expression allocator class.
-
-`Elem`
- The type of elements to match.
-
-`flags`
- Flags for matches.
-
-`first`
- Beginning of sequence to match.
-
-`fmt`
- The format for replacements.
-
-`last`
- End of sequence to match.
-
-`out`
- The output iterator.
-
-`re`
- The regular expression to match.
-
-`str`
- String to match.
+|||
+|-|-|
+*OutIt*| The iterator type for replacements.
+*BidIt*| The iterator type for submatches.
+*RXtraits*| Traits class for elements.
+*Alloc*| The regular expression allocator class.
+*Elem*| The type of elements to match.
+*flags*| Flags for matches.
+*first*| Beginning of sequence to match.
+*fmt*| The format for replacements.
+*last*| End of sequence to match.
+*out*| The output iterator.
+*re*| The regular expression to match.
+*str*| String to match.
 
 ### Remarks
 
-The first function constructs a [regex_iterator Class](../standard-library/regex-iterator-class.md) object `iter(first, last, re, flags)` and uses it to split its input range `[first, last)` into a series of subsequences `T0M0T1M1...TN-1MN-1TN`, where `Mn` is the `nth` match detected by the iterator. If no matches are found, `T0` is the entire input range and `N` is zero. If `(flags & format_first_only) != 0` only the first match is used, `T1` is all of the input text that follows the match, and `N` is 1. For each `i` in the range `[0, N)`, if `(flags & format_no_copy) == 0` it copies the text in the range `Ti` to the iterator `out`. It then calls `m.format(out, fmt, flags)`, where `m` is the `match_results` object returned by the iterator object `iter` for the subsequence `Mi`. Finally, if `(flags & format_no_copy) == 0` it copies the text in the range `TN` to the iterator `out`. The function returns `out`.
+The first function constructs a [regex_iterator Class](../standard-library/regex-iterator-class.md) object `iter(first, last, re, flags)` and uses it to split its input range `[first, last)` into a series of subsequences `T0 M0 T1 M1...TN-1 MN-1 TN`, where `Mn` is the nth match detected by the iterator. If no matches are found, `T0` is the entire input range and `N` is zero. If `(flags & format_first_only) != 0` only the first match is used, `T1` is all of the input text that follows the match, and `N` is 1. For each `i` in the range `[0, N)`, if `(flags & format_no_copy) == 0` it copies the text in the range `Ti` to the iterator *out*. It then calls `m.format(out, fmt, flags)`, where `m` is the `match_results` object returned by the iterator object `iter` for the subsequence `Mi`. Finally, if `(flags & format_no_copy) == 0` it copies the text in the range `TN` to the iterator *out*. The function returns *out*.
 
 The second function constructs a local variable `result` of type `basic_string<charT>` and calls `regex_replace(back_inserter(result), str.begin(), str.end(), re, fmt, flags)`. It returns `result`.
 
@@ -253,7 +203,7 @@ The second function constructs a local variable `result` of type `basic_string<c
 #include <iostream>
 
 int main()
-    {
+{
     char buf[20];
     const char *first = "axayaz";
     const char *last = first + strlen(first);
@@ -262,10 +212,10 @@ int main()
     std::regex_constants::match_flag_type fonly =
         std::regex_constants::format_first_only;
 
-*std::regex_replace(&buf[0], first, last, rx, fmt) = '\0';
+    *std::regex_replace(&buf[0], first, last, rx, fmt) = '\0';
     std::cout << "replacement == " << &buf[0] << std::endl;
 
-*std::regex_replace(&buf[0], first, last, rx, fmt, fonly) = '\0';
+    *std::regex_replace(&buf[0], first, last, rx, fmt, fonly) = '\0';
     std::cout << "replacement == " << &buf[0] << std::endl;
 
     std::string str("adaeaf");
@@ -276,8 +226,7 @@ int main()
         << std::regex_replace(str, rx, fmt, fonly) << std::endl;
 
     return (0);
-    }
-
+}
 ```
 
 ```Output
@@ -336,51 +285,26 @@ bool regex_search(
 
 ### Parameters
 
-`BidIt`
- The iterator type for submatches.
-
-`Alloc`
- The match results allocator class.
-
-`Elem`
- The type of elements to match.
-
-`RXtraits`
- Traits class for elements.
-
-`Alloc2`
- The regular expression allocator class.
-
-`IOtraits`
- The string traits class.
-
-`IOalloc`
- The string allocator class.
-
-`flags`
- Flags for matches.
-
-`first`
- Beginning of sequence to match.
-
-`last`
- End of sequence to match.
-
-`match`
- The match results.
-
-`ptr`
- Pointer to beginning of sequence to match.
-
-`re`
- The regular expression to match.
-
-`str`
- String to match.
+|||
+|-|-|
+*BidIt*| The iterator type for submatches.
+*Alloc*| The match results allocator class.
+*Elem*| The type of elements to match.
+*RXtraits*| Traits class for elements.
+*Alloc2*| The regular expression allocator class.
+*IOtraits*| The string traits class.
+*IOalloc*| The string allocator class.
+*flags*| Flags for matches.
+*first*| Beginning of sequence to match.
+*last*| End of sequence to match.
+*match*| The match results.
+*ptr*| Pointer to beginning of sequence to match.
+*re*| The regular expression to match.
+*str*| String to match.
 
 ### Remarks
 
-Each template function returns true only if a search for its regular expression argument `re` in its operand sequence succeeds. The functions that take a `match_results` object set its members to reflect whether the search succeeded and if so what the various capture groups in the regular expression captured.
+Each template function returns true only if a search for its regular expression argument *re* in its operand sequence succeeds. The functions that take a `match_results` object set its members to reflect whether the search succeeded and if so what the various capture groups in the regular expression captured.
 
 ### Example
 
@@ -391,7 +315,7 @@ Each template function returns true only if a search for its regular expression 
 #include <iostream>
 
 int main()
-    {
+{
     const char *first = "abcd";
     const char *last = first + strlen(first);
     std::cmatch mr;
@@ -423,8 +347,7 @@ int main()
     std::cout << "  matched: \"" << mr2.str() << "\"" << std::endl;
 
     return (0);
-    }
-
+}
 ```
 
 ```Output
@@ -441,27 +364,26 @@ search(string, "abc") == true
 
 ## <a name="swap"></a>  swap
 
-Swaps two basic_regex or match_results objects.
+Swaps two `basic_regex` or `match_results` objects.
 
 ```cpp
 template <class Elem, class RXtraits>
 void swap(
     basic_regex<Elem, RXtraits, Alloc>& left,
-    basic_regex<Elem, RXtraits>& right) throw();
+    basic_regex<Elem, RXtraits>& right) noexcept;
 
 template <class Elem, class IOtraits, class BidIt, class Alloc>
 void swap(
     match_results<BidIt, Alloc>& left,
-    match_results<BidIt, Alloc>& right) throw();
+    match_results<BidIt, Alloc>& right) noexcept;
 ```
 
 ### Parameters
 
-`Elem`
- The type of elements to match.
-
-`RXtraits`
- Traits class for elements.
+|||
+|-|-|
+*Elem*| The type of elements to match.
+*RXtraits*| Traits class for elements.
 
 ### Remarks
 
@@ -476,7 +398,7 @@ The template functions swap the contents of their respective arguments in consta
 #include <iostream>
 
 int main()
-    {
+{
     std::regex rx0("c(a*)|(b)");
     std::regex rx1;
     std::cmatch mr0;
@@ -493,8 +415,7 @@ int main()
     std::cout << "string == " << sub << std::endl;
 
     return (0);
-    }
-
+}
 ```
 
 ```Output
@@ -505,11 +426,11 @@ string == aaa
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
+- [\<regex>](../standard-library/regex.md)
+- [regex_constants Class](../standard-library/regex-constants-class.md)
+- [regex_error Class](../standard-library/regex-error-class.md)
+- [regex_iterator Class](../standard-library/regex-iterator-class.md)
+- [\<regex> operators](../standard-library/regex-operators.md)
+- [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)
+- [regex_traits Class](../standard-library/regex-traits-class.md)
+- [\<regex> typedefs](../standard-library/regex-typedefs.md)
