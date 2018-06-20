@@ -33,17 +33,17 @@ The walkthrough shows how to accomplish these tasks:
 
 To complete this walkthrough, you must have Visual Studio installed with the **Desktop development with C++** workload and the optional **Visual C++ MFC for x86 and x64** component.
 
-### To create an MFC application
+## To create an MFC application
 
-1. On the **File** menu, point to **New** and then click **Project**.
+1. On the **File** menu, point to **New** and then choose **Project**.
 
-2. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type `MFCD2DWalkthrough`. Click **OK**.
+2. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type `MFCD2DWalkthrough`. Choose **OK**.
 
-3. In the **MFC Application Wizard**, click **Finish** without changing any settings.
+3. In the **MFC Application Wizard**, choose **Finish** without changing any settings.
 
-### To create a solid-color brush and a linear-gradient brush
+## To create a solid-color brush and a linear-gradient brush
 
-1. In **Solution Explorer**, in the **MFCD2DWalkthrough** project, in the **Header Files** folder, open MFCD2DWalkthroughView.h. Add the following code to the `CMFCD2DWalkthroughView` class to create three data variables.
+1. In **Solution Explorer**, in the **MFCD2DWalkthrough** project, in the **Header Files** folder, open MFCD2DWalkthroughView.h. Add this code to the `CMFCD2DWalkthroughView` class to create three data variables:
 
    ```cpp
    CD2DTextFormat* m_pTextFormat;
@@ -53,7 +53,7 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
    Save the file and close it.
 
-2. In the **Source Files** folder, open MFCD2DWalkthroughView.cpp. In the constructor for the `CMFCD2DWalkthroughView` class, add the following code.
+2. In the **Source Files** folder, open MFCD2DWalkthroughView.cpp. In the constructor for the `CMFCD2DWalkthroughView` class, add this code:
 
    ```cpp
    // Enable D2D support for this window:
@@ -97,15 +97,15 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
    Save the file and close it.
 
-### To modify the gradient brush so that it will change appropriately when the window is resized
+## To modify the gradient brush so that it will change appropriately when the window is resized
 
-1. On the **Project** menu, click **Class Wizard**.
+1. On the **Project** menu, choose **Class Wizard**.
 
 2. In the **MFC Class Wizard**, under **Class name**, select `CMFCD2DWalkthroughView`.
 
-3. On the **Messages** tab, in the **Messages** box, select `WM_SIZE` and then click **Add Handler**. This action adds the `OnSize` message handler to the `CMFCD2DWalkthroughView` class.
+3. On the **Messages** tab, in the **Messages** box, select `WM_SIZE` and then choose **Add Handler**. This action adds the `OnSize` message handler to the `CMFCD2DWalkthroughView` class.
 
-4. In the **Existing handlers** box, select `OnSize`. Click **Edit Code** to display the `CMFCD2DWalkthroughView::OnSize` method. At the end of the method, add the following code.
+4. In the **Existing handlers** box, select `OnSize`. Choose **Edit Code** to display the `CMFCD2DWalkthroughView::OnSize` method. At the end of the method, add the following code.
 
    ```cpp
    m_pLinearGradientBrush->SetEndPoint(CPoint(cx, cy));
@@ -113,17 +113,17 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
    Save the file and close it.
 
-### To implement a D2D drawing handler
+## To implement a D2D drawing handler
 
-1. On the **Project** menu, click **Class Wizard**.
+1. On the **Project** menu, choose **Class Wizard**.
 
 2. In the **MFC Class Wizard**, under **Class name**, select `CMFCD2DWalkthroughView`.
 
-3. On the **Messages** tab, click **Add Custom Message**.
+3. On the **Messages** tab, choose **Add Custom Message**.
 
-4. In the **Add Custom Message** dialog box, in the **Custom Windows Message** box, type `AFX_WM_DRAW2D`. In the **Message handler name** box, type `OnDraw2D`. Select the **Registered Message** option and then click **OK**. This action adds a message handler for the `AFX_WM_DRAW2D` message to the `CMFCD2DWalkthroughView` class.
+4. In the **Add Custom Message** dialog box, in the **Custom Windows Message** box, type `AFX_WM_DRAW2D`. In the **Message handler name** box, type `OnDraw2D`. Select the **Registered Message** option and then choose **OK**. This action adds a message handler for the `AFX_WM_DRAW2D` message to the `CMFCD2DWalkthroughView` class.
 
-5. In the **Existing handlers** box, select `OnDraw2D`. Click **Edit Code** to display the `CMFCD2DWalkthroughView::OnDraw2D` method. Use the following code for the `CMFCD2DWalkthroughView::OnDrawD2D` method.
+5. In the **Existing handlers** box, select `OnDraw2D`. Choose **Edit Code** to display the `CMFCD2DWalkthroughView::OnDraw2D` method. Use this code for the `CMFCD2DWalkthroughView::OnDrawD2D` method:
 
    ```cpp
    afx_msg LRESULT CMFCD2DWalkthroughView::OnDraw2D(
@@ -150,9 +150,9 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
    Save the file and close it.
 
-### To verify the results
+## To verify the results
 
-1. Build and run the application. It should have a gradient rectangle that changes when you resize the window. “Hello World!” should be displayed in the center of the rectangle.
+- Build and run the application. It should have a gradient rectangle that changes when you resize the window. “Hello World!” should be displayed in the center of the rectangle.
 
 ## See also
 
