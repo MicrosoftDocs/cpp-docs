@@ -66,7 +66,7 @@ ms.workload: ["cplusplus"]
 ||`DFX_Currency`|  
 |`RFX_Single`|`DFX_Single`|  
 |`RFX_Double`|`DFX_Double`|  
-|**RFX_Date \***|**DFX_Date** (`COleDateTime`-based)|  
+|**RFX_Date \\\***|**DFX_Date** (`COleDateTime`-based)|  
 |`RFX_Text`|`DFX_Text`|  
 |`RFX_Binary`|`DFX_Binary`|  
 |`RFX_LongBinary`|`DFX_LongBinary`|  

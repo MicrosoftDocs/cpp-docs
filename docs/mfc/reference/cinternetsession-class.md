@@ -461,10 +461,10 @@ CStdioFile* OpenURL(
   
 |URL type|Returns|  
 |--------------|-------------|  
-|file://|**CStdioFile\***|  
-|http://|**CHttpFile\***|  
-|gopher://|**CGopherFile\***|  
-|ftp://|**CInternetFile\***|  
+|file://|**CStdioFile\\\***|  
+|http://|**CHttpFile\\\***|  
+|gopher://|**CGopherFile\\\***|  
+|ftp://|**CInternetFile\\\***|  
   
 ### Remarks  
  The parameter `dwFlags` must include either **INTERNET_FLAG_TRANSFER_ASCII** or **INTERNET_FLAG_TRANSFER_BINARY**, but not both. The remaining flags can be combined with the bitwise `OR` operator ( **&#124;**).  
