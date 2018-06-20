@@ -187,11 +187,11 @@ class CFoo : public ICustom
 
 ```cpp
 // Fix for example 2
-// First, create the *.idl file. The vc140.idl generated file can be 
-// used to automatically obtain a *.idl file for the interfaces with 
-// annotation. Second, add a midl step to your build system to make 
-// sure that the C++ interface definitions are outputted. 
-// Last, adjust your existing code to use ATL directly as shown in 
+// First, create the *.idl file. The vc140.idl generated file can be
+// used to automatically obtain a *.idl file for the interfaces with
+// annotation. Second, add a midl step to your build system to make
+// sure that the C++ interface definitions are outputted.
+// Last, adjust your existing code to use ATL directly as shown in
 // the atl implementation section.
 
 -- IDL  FILE--
@@ -271,7 +271,7 @@ struct MyString
 
 extern bool cond;
 
-MyString s; 
+MyString s;
 // Using /std:c++14, /permissive- or /Zc:ternary behavior
 // is to prefer MyString("A") over (const char*)s
 // but under /std:c++17 this line causes error C2445:
@@ -294,13 +294,13 @@ void myassert(const char* text, const char* file, int line);
 You may also see errors in template metaprogramming, where conditional operator result types may change under **/Zc:ternary** and **/permissive-**. One way to resolve this issue is to use [std::remove_reference](../../standard-library/remove-reference-class.md) on the resulting type.
 
 ```cpp
-// Example 4: different result types 
+// Example 4: different result types
 extern bool cond;
 extern int count;
-char  a = 'A'; 
-const char  b = 'B'; 
-decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary 
-const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary 
+char  a = 'A';
+const char  b = 'B';
+decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary
+const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 ```
 
 #### Two-phase name look up (partial)
@@ -335,56 +335,100 @@ int main()
 
 The **/permissive-** option is too strict for versions of the Windows Kits before Windows Fall Creators Update SDK (10.0.16299.0), or the Windows Driver Kit (WDK) version 1709. We recommend you update to the latest versions of the Windows Kits in order to use **/permissive-** in your Windows or device driver code.
 
-Certain header files in the Windows Fall Creators Update SDK (10.0.16299.0), or the Windows Driver Kit (WDK) 1709, still have issues that make them incompatible with use of **/permissive-**. To work around these issues, we recommend you restrict the use of these headers to only those source code files that require them, and remove the **/permissive-** option when you compile those specific source code files. The following issues are specific to the Windows Fall Creators Update SDK (10.0.16299.0):
+Certain header files in the Windows April 2018 Update SDK (10.0.17134.0), the Windows Fall Creators Update SDK (10.0.16299.0), or the Windows Driver Kit (WDK) 1709, still have issues that make them incompatible with use of **/permissive-**. To work around these issues, we recommend you restrict the use of these headers to only those source code files that require them, and remove the **/permissive-** option when you compile those specific source code files.
 
-#### Issue in um\Query.h
+These WinRT WRL headers released in the Windows April 2018 Update SDK (10.0.17134.0) are not clean with **/permissive-**. To work around these issues, either do not use **/permissive-**, or use **/permissive-** with **/Zc:twoPhase-** when working with these headers:
 
-When using the **/permissive-**  compiler switch, the `tagRESTRICTION` structure does not compile due to the case(RTOr) member 'or'.
+- Issues in winrt/wrl/async.h
 
-```cpp
-struct tagRESTRICTION
-    {
-    ULONG rt;
-    ULONG weight;
-    /* [switch_is][switch_type] */ union _URes
-        {
-        /* [case()] */ NODERESTRICTION ar;
-        /* [case()] */ NODERESTRICTION or;  // error C2059: syntax error: '||'
-        /* [case()] */ NODERESTRICTION pxr;
-        /* [case()] */ VECTORRESTRICTION vr;
-        /* [case()] */ NOTRESTRICTION nr;
-        /* [case()] */ CONTENTRESTRICTION cr;
-        /* [case()] */ NATLANGUAGERESTRICTION nlr;
-        /* [case()] */ PROPERTYRESTRICTION pr;
-        /* [default] */  /* Empty union arm */
-        } res;
-    };
-```
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(483): error C3861: 'TraceDelegateAssigned': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(491): error C3861: 'CheckValidStateForDelegateCall': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(509): error C3861: 'TraceProgressNotificationStart': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(513): error C3861: 'TraceProgressNotificationComplete': identifier not found
+   ```
 
-To address this issue, compile files that include Query.h without the **/permissive-** option.
+- Issue in winrt/wrl/implements.h
 
-#### Issue in um\cellularapi_oem.h
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt\wrl\implements.h(2086): error C2039: 'SetStrongReference': is not a member of 'Microsoft::WRL::Details::WeakReferenceImpl'
+   ```
 
-When using the **/permissive-**  compiler switch, the forward declaration of `enum UICCDATASTOREACCESSMODE` causes a warning:
+These User Mode headers released in the Windows April 2018 Update SDK (10.0.17134.0) are not clean with **/permissive-**. To work around these issues, do not use **/permissive-** when working with these headers:
 
-```cpp
-typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
-```
+- Issues in um/Tune.h
 
-The forward declaration of unscoped enum is a Microsoft extension. To address this issue, compile files that include cellularapi_oem.h without the **/permissive-** option, or use the [/wd](../../build/reference/compiler-option-warning-level.md) option to silence warning C4471.
+   ```Output
+   C:\ProgramFiles(x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(139): error C3861: 'Release': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(559): error C3861: 'Release': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(1240): error C3861: 'Release': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(1240): note: 'Release': function declaration must be available as none of the arguments depend on a template parameter
+   ```
 
-#### Issue in um\omscript.h
+- Issue in um/spddkhlp.h
 
-In C++03, a conversion from a string literal to BSTR (which is a typedef to 'wchar_t *') is deprecated but allowed. In C++11, the conversion is no longer allowed.
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\spddkhlp.h(759): error C3861: 'pNode': identifier not found
+   ```
 
-```cpp
-virtual /* [id] */ HRESULT STDMETHODCALLTYPE setExpression(
-    /* [in] */ __RPC__in BSTR propname,
-    /* [in] */ __RPC__in BSTR expression,
-    /* [in][defaultvalue] */ __RPC__in BSTR language = L"") = 0; // C2440
-```
+- Issues in um/refptrco.h
 
-To address this issue, compile files that include omscript.h without the **/permissive-** option, or use **/Zc:strictStrings-** instead.
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(179): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(342): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(395): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+   ```
+
+These issues are specific to User Mode headers in the Windows Fall Creators Update SDK (10.0.16299.0):
+
+- Issue in um/Query.h
+
+   When using the **/permissive-**  compiler switch, the `tagRESTRICTION` structure does not compile due to the case(RTOr) member 'or'.
+
+   ```cpp
+   struct tagRESTRICTION
+   {
+       ULONG rt;
+       ULONG weight;
+       /* [switch_is][switch_type] */ union _URes
+       {
+           /* [case()] */ NODERESTRICTION ar;
+           /* [case()] */ NODERESTRICTION or;  // error C2059: syntax error: '||'
+           /* [case()] */ NODERESTRICTION pxr;
+           /* [case()] */ VECTORRESTRICTION vr;
+           /* [case()] */ NOTRESTRICTION nr;
+           /* [case()] */ CONTENTRESTRICTION cr;
+           /* [case()] */ NATLANGUAGERESTRICTION nlr;
+           /* [case()] */ PROPERTYRESTRICTION pr;
+           /* [default] */  /* Empty union arm */
+       } res;
+   };
+   ```
+
+   To address this issue, compile files that include Query.h without the **/permissive-** option.
+
+- Issue in um/cellularapi_oem.h
+
+   When using the **/permissive-**  compiler switch, the forward declaration of `enum UICCDATASTOREACCESSMODE` causes a warning:
+
+   ```cpp
+   typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
+   ```
+
+   The forward declaration of unscoped enum is a Microsoft extension. To address this issue, compile files that include cellularapi_oem.h without the **/permissive-** option, or use the [/wd](../../build/reference/compiler-option-warning-level.md) option to silence warning C4471.
+
+- Issue in um/omscript.h
+
+   In C++03, a conversion from a string literal to BSTR (which is a typedef to 'wchar_t *') is deprecated but allowed. In C++11, the conversion is no longer allowed.
+
+   ```cpp
+   virtual /* [id] */ HRESULT STDMETHODCALLTYPE setExpression(
+       /* [in] */ __RPC__in BSTR propname,
+       /* [in] */ __RPC__in BSTR expression,
+       /* [in][defaultvalue] */ __RPC__in BSTR language = L"") = 0; // C2440
+   ```
+
+   To address this issue, compile files that include omscript.h without the **/permissive-** option, or use **/Zc:strictStrings-** instead.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -392,7 +436,7 @@ In Visual Studio 2017 version 15.5 and later versions, use this procedure:
 
 1. Open your project's **Property Pages** dialog box.
 
-1. Under **Configuration Properties**, expand the **C/C++** folder and choose the **Language** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
 1. Change the **Conformance mode** property value to **Yes (/permissive-)**. Choose **OK** or **Apply** to save your changes.
 
@@ -410,5 +454,5 @@ In versions before Visual Studio 2017 version 15.5, use this procedure:
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
