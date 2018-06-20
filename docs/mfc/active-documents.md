@@ -16,7 +16,7 @@ Active documents extend the compound document technology of OLE. These extension
   
  This section describes the functional [requirements for active documents](#requirements_for_active_documents). The active document owns a set of data and has access to storage where the data can be saved and retrieved. It can create and manage one or more views on its data. In addition to supporting the usual embedding and in-place activation interfaces of OLE documents, the active document communicates its ability to create views through `IOleDocument`. Through this interface, the container can ask to create (and possibly enumerate) the views that the active document can display. Through this interface, the active document can also provide miscellaneous information about itself, such as whether it supports multiple views or complex rectangles.  
   
- The following is the `IOleDocument` interface. Note that the `IEnumOleDocumentViews` interface is a standard OLE enumerator for `IOleDocumentView *` types.  
+ The following is the `IOleDocument` interface. Note that the `IEnumOleDocumentViews` interface is a standard OLE enumerator for `IOleDocumentView*` types.  
   
 ```  
 interface IOleDocument : IUnknown  
