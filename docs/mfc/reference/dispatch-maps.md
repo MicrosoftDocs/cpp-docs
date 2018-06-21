@@ -175,7 +175,7 @@ The `VTS_` constants and their meanings are as follows:
 |`VTS_PDISPATCH`|`LPDISPATCH*`|
 |`VTS_PSCODE`|`SCODE*`|
 |`VTS_PBOOL`|`BOOL*`|
-|`VTS_PVARIANT`|VARIANT*`|
+|`VTS_PVARIANT`|`VARIANT*`|
 |`VTS_PUNKNOWN`|`LPUNKNOWN*`|
 |`VTS_NONE`|No parameters|
 
