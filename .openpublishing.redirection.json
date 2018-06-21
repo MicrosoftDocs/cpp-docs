@@ -1011,6 +1011,226 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/hash-multimap-begin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-bucket-count-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#bucket_count",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-clear-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#clear",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-const-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#const_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-const-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#const_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-count-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#count",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-end-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-equal-range-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#equal_range",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-erase-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#erase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-find-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#find",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-generic-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#generic_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-generic-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#generic_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-hash-delegate-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#hash_delegate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-hash-multimap-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#hash_multimap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-hasher-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#hasher",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-insert-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#insert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-key-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#key_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-key-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#key_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-key-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#key_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-load-factor-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#load_factor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-lower-bound-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#lower_bound",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-make-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#make_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-mapped-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#mapped_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-max-load-factor-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#max_load_factor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#op",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-rbegin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#rbegin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-rehash-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#rehash",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-rend-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#rend",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-swap-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-upper-bound-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#upper_bound",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-value-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#value_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-value-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#value_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multimap-value-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multimap-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
