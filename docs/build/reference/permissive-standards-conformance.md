@@ -1,6 +1,6 @@
 ---
 title: "-permissive- (Standards conformance) | Microsoft Docs"
-ms.date: "11/11/2016"
+ms.date: "06/21/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
@@ -35,7 +35,7 @@ Environment-specific extensions and language areas that the standard leaves up t
 
 The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option does not determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [/std:latest](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to the currently implemented C++17 standard, use the [/std:c++17](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option, which is the default.
 
-Not all C++11, C++14, or C++17 standards-conforming code is supported by the Visual C++ compiler in Visual Studio 2017. The **/permissive-** option may not detect issues regarding some aspects of two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
+Not all C++11, C++14, or C++17 standards-conforming code is supported by the Visual C++ compiler in Visual Studio 2017. Depending on the version of Visual Studio, the **/permissive-** option may not detect issues regarding some aspects of two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md). To get the most out of **/permissive-**, update Visual Studio to the latest version.
 
 ### How to fix your code
 
@@ -303,14 +303,14 @@ decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary
 const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 ```
 
-#### Two-phase name look up (partial)
+#### Two-phase name look up
 
-When the **/permissive-** option is set in Visual Studio 2017 version 15.3, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase name look-up. In this release, only name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. However, binding of non-dependent names that require argument dependent look up in the definition context is not done.
+When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase name look-up. In Visual Studio 2017 version 15.3, name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. In Visual Studio 2017 version 15.7, binding of non-dependent names that require argument dependent look up in the definition context is also done.
 
 ```cpp
 // dependent base
 struct B {
-    void g();
+    void g() {}
 };
 
 template<typename T>
@@ -330,6 +330,8 @@ int main()
     d.f();
 }
 ```
+
+If you want legacy behavior for two-phase lookup, but otherwise want **/permissive-** behavior, add the **/Zc:twoPhase-** option.
 
 ### Windows header issues
 
