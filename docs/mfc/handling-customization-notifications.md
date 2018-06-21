@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Handling Customization Notifications
 A Windows toolbar common control has built-in customization features, including a system-defined customization dialog box, which allow the user to insert, delete, or rearrange toolbar buttons. The application determines whether the customization features are available and controls the extent to which the user can customize the toolbar.  
   
- You can make these customization features available to the user by giving the toolbar the `CCS_ADJUSTABLE` style. The customization features allow the user to drag a button to a new position or to remove a button by dragging it off the toolbar. In addition, the user can double-click the toolbar to display the **Customize Toolbar** dialog box, which allows the user to add, delete, and rearrange toolbar buttons. The application can display the dialog box by using the [Customize](../mfc/reference/ctoolbarctrl-class.md#customize) member function.  
+ You can make these customization features available to the user by giving the toolbar the **CCS_ADJUSTABLE** style. The customization features allow the user to drag a button to a new position or to remove a button by dragging it off the toolbar. In addition, the user can double-click the toolbar to display the **Customize Toolbar** dialog box, which allows the user to add, delete, and rearrange toolbar buttons. The application can display the dialog box by using the [Customize](../mfc/reference/ctoolbarctrl-class.md#customize) member function.  
   
  The toolbar control sends notification messages to the parent window at each step in the customization process. If the user holds the SHIFT key down and begins dragging a button, the toolbar automatically handles the drag operation. The toolbar sends the **TBN_QUERYDELETE** notification message to the parent window to determine whether the button may be deleted. The drag operation ends if the parent window returns **FALSE**. Otherwise, the toolbar captures mouse input and waits for the user to release the mouse button.  
   
@@ -113,7 +113,7 @@ A Windows toolbar common control has built-in customization features, including 
  Index of button associated with notification.  
   
  **tbButton**  
- `TBBUTTON` structure that contains information about the toolbar button associated with the notification.  
+ **TBBUTTON** structure that contains information about the toolbar button associated with the notification.  
   
  **cchText**  
  Count of characters in button text.  
