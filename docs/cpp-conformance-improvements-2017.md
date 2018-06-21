@@ -331,12 +331,7 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
-## <a name="improvements_158"></a> Improvements in Visual Studio 2017 version 15.8
-
-
-
-
-## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), and [15.7](#update_157)
+## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), and [15.8](#update_158)
 
 ### Copy-list-initialization
 
