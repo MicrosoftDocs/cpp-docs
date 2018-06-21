@@ -1456,6 +1456,221 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/hash-multiset-begin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-bucket-count-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#count",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-clear-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#clear",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-const-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#const_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-const-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#const_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-count-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#count",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-end-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-equal-range-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#equal_range",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-erase-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#erase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-find-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#find",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-generic-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#generic_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-generic-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#generic_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-hash-delegate-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#hash_delegate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-hash-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#hash_multiset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-hasher-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#hasher",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-insert-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#insert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-key-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#key_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-key-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#key_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-key-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#key_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-load-factor-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#load_factor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-lower-bound-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#lower_bound",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-make-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#make_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-max-load-factor-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#max_load_factor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#op",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-rbegin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#rbegin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-rehash-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#rehash",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-rend-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#rend",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-swap-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-upper-bound-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#upper_bound",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-value-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#value_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-value-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#value_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/hash-multiset-value-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/hash-multiset-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
