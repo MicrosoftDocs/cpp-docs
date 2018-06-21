@@ -1,6 +1,6 @@
 ---
 title: "How to report a problem with the Visual C++ toolset | Microsoft Docs"
-ms.date: "06/08/2018"
+ms.date: "06/21/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -349,7 +349,7 @@ Create your repro as a minimal IDE project, then package it by compressing the e
 There are a couple of good ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. You can also get directly to our Developer Community pages by choosing the **Product feedback** button at the bottom of this page. The choice depends on whether you want to use the tools built into the IDE for capturing screenshots and organizing your report for posting on the Developer Community pages, or if you'd prefer to use the website directly.
 
 > [!NOTE]
-> Regardless of how you submit your report, Microsoft respects your privacy. Microsoft is committed to compliance with all data privacy laws and regulations. For information about how we treat the data that you send us, see the [Microsoft Privacy Statement](https://www.visualstudio.com/dn948229).
+> Regardless of how you submit your report, Microsoft respects your privacy. Microsoft is committed to compliance with all data privacy laws and regulations. For information about how we treat the data that you send us, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ### Use the Report a Problem tool
 
