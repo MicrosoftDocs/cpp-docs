@@ -165,10 +165,10 @@ The `VTS_` constants and their meanings are as follows:
 |`VTS_BOOL`|`BOOL`|
 |`VTS_VARIANT`|`const VARIANT*` or `VARIANT&`|
 |`VTS_UNKNOWN`|`LPUNKNOWN`|
-|`VTS_PI2`|**short\***|
-|`VTS_PI4`|**long\***|
-|`VTS_PR4`|**float\***|
-|`VTS_PR8`|**double\***|
+|`VTS_PI2`|__short\*__|
+|`VTS_PI4`|__long\*__|
+|`VTS_PR4`|__float\*__|
+|`VTS_PR8`|__double\*__|
 |`VTS_PCY`|`CY*`|
 |`VTS_PDATE`|`DATE*`|
 |`VTS_PBSTR`|`BSTR*`|
