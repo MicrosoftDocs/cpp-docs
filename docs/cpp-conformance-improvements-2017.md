@@ -9,7 +9,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), and [15.8](#improvements_158)
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157)
 
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -1624,7 +1624,7 @@ int main() {
 
 ### typename on unqualified identifiers
 
-In [/permissive-](build/reference/permissive-standards-conformance.md) mode,  spurious 'typename' keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 * 'T': 'typename' keyword must be followed by a qualified name*:
+In [/permissive-](build/reference/permissive-standards-conformance.md) mode,  spurious `typename` keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
 
 ```cpp
 template <typename T>
@@ -1653,23 +1653,23 @@ using  X [[deprecated("msg")]] = T;
 
 ### Two-phase name lookup diagnostics
 
-Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, the Microsoft C++ compiler would leave an unfound name un-looked-up until instantiation times. now, it enforces that non-dependent names are bound in the template body.
+Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, the Microsoft C++ compiler would leave an unfound name un-looked-up until instantiation times. Now, it requires that non-dependent names are bound in the template body.
 
-One way this can manifest is with lookup into dependent base classes. Previously, the compiler allowed the use of names that are defined in dependent bases because they would be looked up during instantiation time when all the types are resolved. Now that code it is treated as an error. In these cases you can force the variable to be looked up at instantiation time by qualifying it with the base class type or otherwise making it dependent, for example by adding a `this->` pointer.
+One way this can manifest is with lookup into dependent base classes. Previously, the compiler allowed the use of names that are defined in dependent base classes because they would be looked up during instantiation time when all the types are resolved. Now that code it is treated as an error. In these cases you can force the variable to be looked up at instantiation time by qualifying it with the base class type or otherwise making it dependent, for example by adding a `this->` pointer.
 
 In **/permissive-** mode, the following code now raises C3861: *'base_value': identifier not found*:
 
 ```cpp
 template <class T>
 struct Base {
-	int base_value = 42;
+    int base_value = 42;
 };
 
 template <class T>
 struct S : Base<T> {
-	int f() {
-		return base_value;
-	}
+    int f() {
+        return base_value;
+    }
 };
 
 ```
@@ -1678,9 +1678,9 @@ To fix the error, change the `return` statement to `return this->base_value;`.
 
 ### forward declarations and definitions in namespace std
 
-The C++ standard doesn't allow a user to add forward declarations or definitions into namespace std. Adding declarations or definitions to namespace std or to a namespace within namespace std now results in undefined behavior.
+The C++ standard doesn't allow a user to add forward declarations or definitions into namespace `std`. Adding declarations or definitions to namespace `std` or to a namespace within namespace std now results in undefined behavior.
 
-At some time in the future, Microsoft will move the location where some STL types are defined. When this happens, it will break existing code that adds forward declarations to namespace std. A new warning, C4643, helps identify such source issues. The warning is enabled in **/default** mode and is off by default. It will impact programs that are compiled with **/Wall** or **/WX**. 
+At some time in the future, Microsoft will move the location where some STL types are defined. When this happens, it will break existing code that adds forward declarations to namespace `std`. A new warning, C4643, helps identify such source issues. The warning is enabled in **/default** mode and is off by default. It will impact programs that are compiled with **/Wall** or **/WX**. 
 
 The following code now raises C4643: *Forward declaring 'vector' in namespace std is not permitted by the C++ Standard*. 
 
@@ -1699,7 +1699,7 @@ To fix the error, use an **include** directive rather than a forward declaration
 
 ### Constructors that delegate to themselves
 
-The C++ Standard suggests that a compiler should emit a diagnostic when a delegating constructor delegates to itself: the Microsoft C++ compiler in [/std:c++17](build/reference/std-specify-language-standard-version.md) and [/std:c++latest]([/std:c++17](build/reference/std-specify-language-standard-version.md) modes now raises C7535: *'X::X': delegating constructor calls itself *.
+The C++ Standard suggests that a compiler should emit a diagnostic when a delegating constructor delegates to itself. The Microsoft C++ compiler in [/std:c++17](build/reference/std-specify-language-standard-version.md) and [/std:c++latest](build/reference/std-specify-language-standard-version.md) modes now raises C7535: *'X::X': delegating constructor calls itself*.
 
 Without this error, the following program will compile but will generate an infinite loop:
 
@@ -1711,7 +1711,7 @@ public:
 }; 
 ```
 
-To fix the error, delegate to a different constructor:
+To avoid the infinite loop, delegate to a different constructor:
 
 ```cpp
 class X { 
@@ -1724,7 +1724,7 @@ public:
 
 ### offsetof with constant expressions
 
-[offsetof](c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (__builtin_offsetof), but many people have used the macro trick to define their own offsetof.  
+[offsetof](c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own **offsetof**.  
 
 In Visual Studio 2017 version 15.8, the compiler constrains the areas that these reinterpret_casts can appear in the default mode in order to help code conform to standard C++ behavior. Under [/permissive-](build/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an offsetof in places that require constant expressions may result in code that issues warning C4644 *usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead* or C2975 *invalid template argument, expected compile-time constant expression*.
 
@@ -1766,13 +1766,12 @@ int main()
 } 
 ```
 
-GCC/Clang both give hard errors in this case. The correct fix here is to use the offsetof that is defined in the cstddef header.
 
 ### cv-qualifiers on base classes subject to pack expansion
 
-Previous versions of the compiler did not detect that a base-class had cv-qualifiers if it was also subject to pack expansion. 
+Previous versions of the Microsoft C++ compiler did not detect that a base-class had cv-qualifiers if it was also subject to pack expansion. 
 
-In Visual Studio 2017 version 15.8, in **/permissive-** mode mode the following code raises C3770 *'const S': is not a valid base class*: 
+In Visual Studio 2017 version 15.8, in **/permissive-** mode the following code raises C3770 *'const S': is not a valid base class*: 
 
 ```cpp
 template<typename... T> 
