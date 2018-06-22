@@ -2732,7 +2732,7 @@
         },
         {
             "source_path": "docs/dotnet/multiset-swap-stl-clr.md",
-            "redirect_url": "/cpp/dotnet/multiset-stl-clr#swa[",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#swap",
             "redirect_document_id": false
         },
         {
