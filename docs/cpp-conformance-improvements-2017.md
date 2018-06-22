@@ -1779,7 +1779,46 @@ int main()
     X<const S> x; 
 } 
 ```
+### template keyword and nested-name-specifiers
 
+In **/permissive-** mode, the compiler now requires the `template` keyword to precede a template-name when it comes after a nested-name-specifier which is dependent. 
+
+The following code in **/permissive-** mode now raises C7510: *'foo': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
+
+```cpp
+template<typename T> struct Base
+{
+    template<class U> void foo() {} 
+}; 
+
+template<typename T> 
+struct X : Base<T> 
+{ 
+    void foo() 
+    { 
+        Base<T>::foo<int>(); 
+    } 
+}; 
+```
+
+To fix the error, add the `template` keyword to the `Base<T>::foo<int>();` statement, as shown in the following example:
+
+```cpp
+template<typename T> struct Base
+{
+    template<class U> void foo() {}
+};
+ 
+template<typename T> 
+struct X : Base<T> 
+{ 
+    void foo() 
+    { 
+        // Add template keyword here:
+        Base<T>::template foo<int>(); 
+    } 
+}; 
+```
 
 ## See also
 
