@@ -26,7 +26,7 @@ This article explains the components and implementation of compound files and th
   
 -   Storage objects, like directories, can contain other storage and stream objects.  
   
--   **LockBytes** objects represent the interface between the storage objects and the physical hardware. They determine how the actual bytes are written to whatever storage device the **LockBytes** object is accessing, such as a hard drive or an area of global memory. For more information about **LockBytes** objects and the `ILockBytes` interface, see the *OLE Programmer's Reference*.  
+-   `LockBytes` objects represent the interface between the storage objects and the physical hardware. They determine how the actual bytes are written to whatever storage device the `LockBytes` object is accessing, such as a hard drive or an area of global memory. For more information about `LockBytes` objects and the `ILockBytes` interface, see the *OLE Programmer's Reference*.  
   
 ##  <a name="_core_advantages_and_disadvantages_of_compound_files"></a> Advantages and Disadvantages of Compound Files  
  Compound files provide benefits not available with earlier methods of file storage. They include:  
