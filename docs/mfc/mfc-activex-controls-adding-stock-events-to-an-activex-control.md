@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Events to an ActiveX Control
-Stock events differ from custom events in that they are automatically fired by class [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` contains predefined member functions that fire events resulting from common actions. Some common actions implemented by `COleControl` include single- and double-clicks on the control, keyboard events, and changes in the state of the mouse buttons. Event map entries for stock events are always preceded by the **EVENT_STOCK** prefix.  
+Stock events differ from custom events in that they are automatically fired by class [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` contains predefined member functions that fire events resulting from common actions. Some common actions implemented by `COleControl` include single- and double-clicks on the control, keyboard events, and changes in the state of the mouse buttons. Event map entries for stock events are always preceded by the EVENT_STOCK prefix.  
   
 ##  <a name="_core_stock_events_supported_by_classwizard"></a> Stock Events Supported by the Add Event Wizard  
  The `COleControl` class provides ten stock events, listed in the following table. You can specify the events you want in your control using the [Add Event Wizard](../ide/add-event-wizard.md).  
@@ -29,7 +29,7 @@ Stock events differ from custom events in that they are automatically fired by c
 |KeyPress|**void FireKeyPress( short\***  `pnChar`  **)**|Fired when a `WM_CHAR` message is received.<br /><br /> Event map entry: **EVENT_STOCK_KEYPRESS( )**|  
 |KeyUp|**void FireKeyUp( short**  `nChar` **, short**  `nShiftState`  **)**|Fired when a `WM_SYSKEYUP` or `WM_KEYUP` message is received.<br /><br /> Event map entry: **EVENT_STOCK_KEYUP( )**|  
 |MouseDown|**void FireMouseDown( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|Fired if any **BUTTONDOWN** (left, middle, or right) is received. The mouse is captured immediately before this event is fired.<br /><br /> Event map entry: **EVENT_STOCK_MOUSEDOWN( )**|  
-|MouseMove|**void FireMouseMove( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|Fired when a `WM_MOUSEMOVE` message is received.<br /><br /> Event map entry: **EVENT_STOCK_MOUSEMOVE( )**|  
+|MouseMove|**void FireMouseMove( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|Fired when a WM_MOUSEMOVE message is received.<br /><br /> Event map entry: **EVENT_STOCK_MOUSEMOVE( )**|  
 |MouseUp|**void FireMouseUp( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|Fired if any **BUTTONUP** (left, middle, or right) is received. The mouse capture is released before this event is fired.<br /><br /> Event map entry: **EVENT_STOCK_MOUSEUP( )**|  
 |ReadyStateChange|**void FireReadyStateChange( )**|Fired when a control transitions to the next ready state due to the amount of data received.<br /><br /> Event map entry: **EVENT_STOCK_READYSTATECHANGE( )**|  
   
@@ -55,7 +55,7 @@ Stock events differ from custom events in that they are automatically fired by c
   
  [!code-cpp[NVC_MFC_AxUI#5](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]  
   
- Adding this code fires a KeyPress event when a `WM_CHAR` message is received and the control is active. The KeyPress event can be fired at other times by calling its firing function (for example, `FireKeyPress`) from within the control code.  
+ Adding this code fires a KeyPress event when a WM_CHAR message is received and the control is active. The KeyPress event can be fired at other times by calling its firing function (for example, `FireKeyPress`) from within the control code.  
   
  The Add Event Wizard adds the following line of code to the control's .IDL file:  
   

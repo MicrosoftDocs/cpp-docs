@@ -12,14 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Methods
-A stock method differs from a custom method in that it is already implemented by class [COleControl](../mfc/reference/colecontrol-class.md). For example, `COleControl` contains a predefined member function that supports the Refresh method for your control. The dispatch map entry for this stock method is **DISP_STOCKFUNC_REFRESH**.  
+A stock method differs from a custom method in that it is already implemented by class [COleControl](../mfc/reference/colecontrol-class.md). For example, `COleControl` contains a predefined member function that supports the Refresh method for your control. The dispatch map entry for this stock method is DISP_STOCKFUNC_REFRESH.  
   
  `COleControl` supports two stock methods: DoClick and Refresh. Refresh is invoked by the control's user to immediately update the control's appearance; DoClick is invoked to fire the control's Click event.  
   
 |Method|Dispatch map entry|Comment|  
 |------------|------------------------|-------------|  
 |`DoClick`|**DISP_STOCKPROP_DOCLICK( )**|Fires a Click event.|  
-|**Refresh**|**DISP_STOCKPROP_REFRESH( )**|Immediately updates the control's appearance.|  
+|`Refresh`|**DISP_STOCKPROP_REFRESH( )**|Immediately updates the control's appearance.|  
   
 ##  <a name="_core_adding_a_stock_method_using_classwizard"></a> Adding a Stock Method Using the Add Method Wizard  
  Adding a stock method is simple using the [Add Method Wizard](../ide/add-method-wizard.md). The following procedure demonstrates adding the Refresh method to a control created using the MFC ActiveX Control Wizard.  
