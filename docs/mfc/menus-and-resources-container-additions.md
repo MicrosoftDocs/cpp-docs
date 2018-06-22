@@ -46,27 +46,27 @@ This article explains the changes that need to be made to the menus and other re
   
 |ID|Key|Type|  
 |--------|---------|----------|  
-|**ID_CANCEL_EDIT_CNTR**|VK_ESCAPE|**VIRTKEY**|  
+|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|  
   
- The second change is to create a new accelerator table that corresponds to the new menu resource created for in-place activation. This table has entries for the File and Window menus in addition to the **VK_ESCAPE** entry above. The following example is the accelerator table created for in-place activation in the MFC sample [CONTAINER](../visual-cpp-samples.md):  
+ The second change is to create a new accelerator table that corresponds to the new menu resource created for in-place activation. This table has entries for the File and Window menus in addition to the VK_ESCAPE entry above. The following example is the accelerator table created for in-place activation in the MFC sample [CONTAINER](../visual-cpp-samples.md):  
   
 |ID|Key|Type|  
 |--------|---------|----------|  
-|`ID_FILE_NEW`|CTRL+N|**VIRTKEY**|  
-|`ID_FILE_OPEN`|CTRL+O|**VIRTKEY**|  
-|**ID_FILE_SAVE**|CTRL+S|**VIRTKEY**|  
-|**ID_FILE_PRINT**|CTRL+P|**VIRTKEY**|  
-|**ID_NEXT_PANE**|VK_F6|**VIRTKEY**|  
-|**ID_PREV_PANE**|SHIFT+VK_F6|**VIRTKEY**|  
-|**ID_CANCEL_EDIT_CNTR**|VK_ESCAPE|**VIRTKEY**|  
+|ID_FILE_NEW|CTRL+N|**VIRTKEY**|  
+|ID_FILE_OPEN|CTRL+O|**VIRTKEY**|  
+|ID_FILE_SAVE|CTRL+S|**VIRTKEY**|  
+|ID_FILE_PRINT|CTRL+P|**VIRTKEY**|  
+|ID_NEXT_PANE|VK_F6|**VIRTKEY**|  
+|ID_PREV_PANE|SHIFT+VK_F6|**VIRTKEY**|  
+|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|  
   
 ##  <a name="_core_string_table_additions_for_container_applications"></a> String Table Additions for Container Applications  
  Most of the changes to string tables for container applications correspond to the additional menu items mentioned in [Container Menu Additions](#_core_container_menu_additions). They supply the text displayed in the status bar when each menu item is displayed. As an example, here are the string-table entries the application wizard generates:  
   
 |ID|String|  
 |--------|------------|  
-|**IDP_OLE_INIT_FAILED**|OLE initialization failed. Make sure that the OLE libraries are the correct version.|  
-|**IDP_FAILED_TO_CREATE**|Failed to create object. Make sure that the object is entered in the system registry.|  
+|IDP_OLE_INIT_FAILED|OLE initialization failed. Make sure that the OLE libraries are the correct version.|  
+|IDP_FAILED_TO_CREATE|Failed to create object. Make sure that the object is entered in the system registry.|  
   
 ## See Also  
  [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)   
