@@ -2576,6 +2576,221 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/multiset-begin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-clear-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#clear",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-const-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#const_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-const-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#const_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-count-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#count",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-end-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-equal-range-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#equal_range",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-erase-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#erase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-find-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#find",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-generic-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#generic_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-generic-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#generic_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-insert-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#insert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-key-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#key_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-key-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#key_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-key-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#key_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-lower-bound-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#lower_bound",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-make-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#make_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#multiset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-rbegin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#rbegin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-rend-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#rend",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-swap-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-upper-bound-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#upper_bound",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-value-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#value_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-value-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#value_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/multiset-value-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-inequality-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_neq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-than-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_lt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-or-equal-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_lteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-equality-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-than-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_gt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-or-equal-multiset-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/multiset-stl-clr#op_gteq",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
