@@ -128,6 +128,11 @@ The above commands build and install the current release of CMake to /usr/local/
 cmake -E capabilities
 ```
 
+## Prebuilt Linux binaries of https://github.com/Microsoft/CMake
+
+Microsoft provides a CMake variant that supports the ["CMake Targets View"](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) pane of Visual Studio.
+You can download the most recent release of the binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
+
 ## See Also
 [Working with Project Properties](../ide/working-with-project-properties.md)  
 [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)
