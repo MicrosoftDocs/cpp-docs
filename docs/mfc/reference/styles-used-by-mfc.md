@@ -1,7 +1,7 @@
 ---
 title: "Styles Used by MFC | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/03/2018"
+ms.date: "06/20/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["vc.mfc.styles"]
@@ -120,7 +120,7 @@ Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. 
 |`ES_NOHIDESEL`|Normally, an edit control hides the selection when the control loses the input focus and inverts the selection when the control receives the input focus. Specifying `ES_NOHIDESEL` deletes this default action.|  
 |`ES_NUMBER`|Allows only digits to be entered into the edit control.|  
 |`ES_OEMCONVERT`|Text entered in the edit control is converted from the ANSI character set to the OEM character set and then back to ANSI. This ensures proper character conversion when the application calls the `AnsiToOem` Windows function to convert an ANSI string in the edit control to OEM characters. This style is most useful for edit controls that contain filenames.|  
-|`ES_PASSWORD`|Displays all characters as an asterisk (**\\\***) as they are typed into the edit control. An application can use the `SetPasswordChar` member function to change the character that is displayed.|  
+|`ES_PASSWORD`|Displays all characters as an asterisk (__\*__) as they are typed into the edit control. An application can use the `SetPasswordChar` member function to change the character that is displayed.|  
 |`ES_READONLY`|Prevents the user from entering or editing text in the edit control.|  
 |`ES_RIGHT`|Right-aligns text in a single-line or multiline edit control.|  
 |`ES_UPPERCASE`|Converts all characters to uppercase as they are typed into the edit control.|  

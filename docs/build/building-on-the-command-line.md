@@ -1,7 +1,7 @@
 ---
 title: "Build C/C++ Code on the Command Line | Microsoft Docs"
 ms.custom: "conceptual"
-ms.date: "03/29/2018"
+ms.date: "06/21/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -37,7 +37,7 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 
 The actual Start menu folder and shortcut names vary depending on the version of Visual Studio you have installed, and the installation Nickname if you set one. For example, if you have Visual Studio 2017 installed, and you've given it an installation Nickname of *Preview*, the developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Preview)**, in a folder named **Visual Studio 2017**.
 
-If you've installed the [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=840931) (which also includes the Visual Studio 2015 Update 3 compiler toolset), only the architecture-specific native or cross tools developer command prompt options are installed, and not the general **Developer Command Prompt** shortcut.
+If you've installed the [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=875721) (which also includes the Visual Studio 2015 Update 3 compiler toolset), only the architecture-specific native or cross tools developer command prompt options are installed, and not the general **Developer Command Prompt** shortcut.
 
 <a name="developer_command_prompt"></a>
 ### To open a developer command prompt window

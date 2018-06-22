@@ -146,3 +146,4 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 3) C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier|
 |Compiler warning (level 2) C5043|'*specification*': exception specification does not match previous declaration|
 |Compiler warning (level 4) C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|
+|[Compiler warning C5045](c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified|
