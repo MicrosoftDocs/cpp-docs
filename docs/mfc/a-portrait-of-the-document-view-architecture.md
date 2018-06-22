@@ -17,7 +17,7 @@ Documents and views are paired in a typical MFC application. Data is stored in t
 ## Gaining Access to Document Data from the View  
  The view accesses its document's data either with the [GetDocument](../mfc/reference/cview-class.md#getdocument) function, which returns a pointer to the document, or by making the view class a C++ `friend` of the document class. The view then uses its access to the data to obtain the data when it is ready to draw or otherwise manipulate it.  
   
- For example, from the view's [OnDraw](../mfc/reference/cview-class.md#ondraw) member function, the view uses **GetDocument** to obtain a document pointer. Then it uses that pointer to access a `CString` data member in the document. The view passes the string to the `TextOut` function. To see the code for this example, see [Drawing in a View](../mfc/drawing-in-a-view.md).  
+ For example, from the view's [OnDraw](../mfc/reference/cview-class.md#ondraw) member function, the view uses `GetDocument` to obtain a document pointer. Then it uses that pointer to access a `CString` data member in the document. The view passes the string to the `TextOut` function. To see the code for this example, see [Drawing in a View](../mfc/drawing-in-a-view.md).  
   
 ## User Input to the View  
  The view might also interpret a mouse click within itself as either selection or editing of data. Similarly it might interpret keystrokes as data entry or editing. Suppose the user types a string in a view that manages text. The view obtains a pointer to the document and uses the pointer to pass the new data to the document, which stores it in some data structure.  

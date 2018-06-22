@@ -16,7 +16,7 @@ Active documents extend the compound document technology of OLE. These extension
   
  This section describes the functional [requirements for active documents](#requirements_for_active_documents). The active document owns a set of data and has access to storage where the data can be saved and retrieved. It can create and manage one or more views on its data. In addition to supporting the usual embedding and in-place activation interfaces of OLE documents, the active document communicates its ability to create views through `IOleDocument`. Through this interface, the container can ask to create (and possibly enumerate) the views that the active document can display. Through this interface, the active document can also provide miscellaneous information about itself, such as whether it supports multiple views or complex rectangles.  
   
- The following is the **IOleDocument** interface. Note that the **IEnumOleDocumentViews** interface is a standard OLE enumerator for **IOleDocumentView \*** types.  
+ The following is the `IOleDocument` interface. Note that the `IEnumOleDocumentViews` interface is a standard OLE enumerator for `IOleDocumentView*` types.  
   
 ```  
 interface IOleDocument : IUnknown  
@@ -46,16 +46,16 @@ interface IOleDocument : IUnknown
   
 -   Support the basic embedding features of OLE Documents, including **Create From File**. This necessitates the interfaces `IPersistFile`, `IOleObject`, and `IDataObject`.  
   
--   Support one or more views, each of which is capable of in-place activation. That is, the views must support the interface `IOleDocumentView` as well as the interfaces `IOleInPlaceObject` and `IOleInPlaceActiveObject` (using the container's **IOleInPlaceSite** and **IOleInPlaceFrame** interfaces).  
+-   Support one or more views, each of which is capable of in-place activation. That is, the views must support the interface `IOleDocumentView` as well as the interfaces `IOleInPlaceObject` and `IOleInPlaceActiveObject` (using the container's `IOleInPlaceSite` and `IOleInPlaceFrame` interfaces).  
   
 -   Support the standard active document interfaces `IOleDocument`, `IOleCommandTarget`, and `IPrint`.  
   
  Knowledge of when and how to use the container-side interfaces is implied in these requirements.  
   
 ##  <a name="requirements_for_view_objects"></a> Requirements for View Objects  
- An active document can create one or more views of its data. Functionally, these views are like ports onto a particular method for displaying the data. If an active document only supports a single view, the active document and that single view can be implemented using a single class. **IOleDocument::CreateView** returns the same object's `IOleDocumentView` interface pointer.  
+ An active document can create one or more views of its data. Functionally, these views are like ports onto a particular method for displaying the data. If an active document only supports a single view, the active document and that single view can be implemented using a single class. `IOleDocument::CreateView` returns the same object's `IOleDocumentView` interface pointer.  
   
- To be represented within an active document container, a view component must support **IOleInPlaceObject** and **IOleInPlaceActiveObject** in addition to `IOleDocumentView`:  
+ To be represented within an active document container, a view component must support `IOleInPlaceObject` and `IOleInPlaceActiveObject` in addition to `IOleDocumentView`:  
   
 ```  
 interface IOleDocumentView : IUnknown  
@@ -82,11 +82,11 @@ interface IOleDocumentView : IUnknown
     }  
 ```  
   
- Every view has an associated view site, which encapsulates the view frame and the view port (HWND and a rectangular area in that window). The site exposes this functionality though the standard **IOleInPlaceSite** interface. Note that it is possible to have more than one view port on a single HWND.  
+ Every view has an associated view site, which encapsulates the view frame and the view port (HWND and a rectangular area in that window). The site exposes this functionality though the standard `IOleInPlaceSite` interface. Note that it is possible to have more than one view port on a single HWND.  
   
- Typically, each type of view has a different printed representation. Hence views and the corresponding view sites should implement the printing interfaces if `IPrint` and `IContinueCallback`, respectively. The view frame must negotiate with the view provider through **IPrint** when printing begins, so that headers, footers, margins, and related elements are printed correctly. The view provider notifies the frame of printing-related events through `IContinueCallback`. For more information on the use of these interfaces, see [Programmatic Printing](../mfc/programmatic-printing.md).  
+ Typically, each type of view has a different printed representation. Hence views and the corresponding view sites should implement the printing interfaces if `IPrint` and `IContinueCallback`, respectively. The view frame must negotiate with the view provider through `IPrint` when printing begins, so that headers, footers, margins, and related elements are printed correctly. The view provider notifies the frame of printing-related events through `IContinueCallback`. For more information on the use of these interfaces, see [Programmatic Printing](../mfc/programmatic-printing.md).  
   
- Note that if an active document only supports a single view, then the active document and that single view can be implemented using a single concrete class. **IOleDocument::CreateView** simply returns the same object's `IOleDocumentView` interface pointer. In short, it is not necessary that there be two separate object instances when only one view is required.  
+ Note that if an active document only supports a single view, then the active document and that single view can be implemented using a single concrete class. `IOleDocument::CreateView` simply returns the same object's `IOleDocumentView` interface pointer. In short, it is not necessary that there be two separate object instances when only one view is required.  
   
  A view object can also be a command target. By implementing `IOleCommandTarget` a view can receive commands that originate in the container's user interface (such as **New**, **Open**, **Save As**, **Print** on the **File** menu; and **Copy**, **Paste**, **Undo** on the **Edit** menu). For more information, see [Message Handling and Command Targets](../mfc/message-handling-and-command-targets.md).  
   
