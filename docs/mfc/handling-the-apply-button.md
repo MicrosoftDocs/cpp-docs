@@ -22,11 +22,11 @@ Property sheets have a capability that standard dialog boxes do not: They allow 
   
  If you do not wish to offer the Apply functionality to the user, it is not necessary to remove the Apply button. You can leave it disabled, as will be common among applications that use standard property sheet support available in future versions of Windows.  
   
- To report a page as being modified and enable the Apply button, call **CPropertyPage::SetModified( TRUE )**. If any of the pages report being modified, the Apply button will remain enabled, regardless of whether the currently active page has been modified.  
+ To report a page as being modified and enable the Apply button, call `CPropertyPage::SetModified( TRUE )`. If any of the pages report being modified, the Apply button will remain enabled, regardless of whether the currently active page has been modified.  
   
  You should call [CPropertyPage::SetModified](../mfc/reference/cpropertypage-class.md#setmodified) whenever the user changes any settings in the page. One way to detect when a user changes a setting in the page is to implement change notification handlers for each of the controls in the property page, such as **EN_CHANGE** or **BN_CLICKED**.  
   
- To implement the effect of the Apply button, the property sheet must tell its owner, or some other external object in the application, to apply the current settings in the property pages. At the same time, the property sheet should disable the Apply button by calling **CPropertyPage::SetModified( FALSE )** for all pages that applied their modifications to the external object.  
+ To implement the effect of the Apply button, the property sheet must tell its owner, or some other external object in the application, to apply the current settings in the property pages. At the same time, the property sheet should disable the Apply button by calling `CPropertyPage::SetModified( FALSE )` for all pages that applied their modifications to the external object.  
   
  For an example of this process, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).  
   
