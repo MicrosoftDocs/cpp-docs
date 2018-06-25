@@ -67,10 +67,10 @@ virtual BOOL AddToStoryboard(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  If this parameter is TRUE and the keyframe being added depends on some other keyframe or transition, this method tries to add this keyframe or transition to storyboard first.  
   
 ### Return Value  
