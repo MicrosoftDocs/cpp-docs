@@ -33,7 +33,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includ
 -   A general understanding of the [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] system.  
  
 > [!NOTE]
-> Do not use this approach if you intend to edit the project file later by using the Visual Studio IDE. If you create a .vcxproj file manually, the Visual Studio IDE might not be able to edit it, or event to load it, especially if the project uses wildcards in project items.
+> Do not use this approach if you intend to edit the project file later by using the Visual Studio IDE. If you create a .vcxproj file manually, the Visual Studio IDE might not be able to edit or load it, especially if the project uses wildcards in project items.
 
 > [!NOTE] 
 > Most of the low-level build instructions are contained in the **.targets** and **.props** files that are defined in the VSTargets directory. The default path for Visual Studio 2017 Enterprise Edition is **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\**.  
