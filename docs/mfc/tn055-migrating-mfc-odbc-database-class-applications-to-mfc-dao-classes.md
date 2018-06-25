@@ -80,9 +80,9 @@ The major changes to functionality which may affect your application and require
 
    With the ODBC classes MFC needed to define these options via macros or enumerated types.
 
-   With the DAO classes, DAO provides the definition of these options in a header file (DBDAOINT.H). Thus the recordset type is an enumerated member of `CRecordset`, but with DAO it is a constant instead. For example you would use `snapshot` when specifying the type of `CRecordset` in ODBC but `DB_OPEN_SNAPSHOT` when specifying the type of `CDaoRecordset`.
+   With the DAO classes, DAO provides the definition of these options in a header file (DBDAOINT.H). Thus the recordset type is an enumerated member of `CRecordset`, but with DAO it is a constant instead. For example you would use **snapshot** when specifying the type of `CRecordset` in ODBC but **DB_OPEN_SNAPSHOT** when specifying the type of `CDaoRecordset`.
 
-- The default recordset type for `CRecordset` is `snapshot` while the default recordset type for `CDaoRecordset` is `dynaset` (see the Note below for an additional issue about ODBC class snapshots).
+- The default recordset type for `CRecordset` is **snapshot** while the default recordset type for `CDaoRecordset` is **dynaset** (see the Note below for an additional issue about ODBC class snapshots).
 
 - The ODBC `CRecordset` class has an option to create a forward-only recordset type. In the `CDaoRecordset` class, forward-only is not a recordset type, but rather a property (or option) of certain types of recordsets.
 
@@ -92,7 +92,7 @@ The major changes to functionality which may affect your application and require
 
 - The exception class has been changed. `CDBExceptions` are thrown in the ODBC classes and `CDaoExceptions` in the DAO classes.
 
-- `RFX_Date` uses `CTime` and `TIMESTAMP_STRUCT` objects while `DFX_Date` uses `COleDateTime`. The `COleDateTime` is nearly identical to `CTime`, but is based on a 8-byte OLE `DATE` rather than a 4-byte `time_t` so it can hold a much bigger range of data.
+- `RFX_Date` uses `CTime` and `TIMESTAMP_STRUCT` objects while `DFX_Date` uses `COleDateTime`. The `COleDateTime` is nearly identical to `CTime`, but is based on a 8-byte OLE **DATE** rather than a 4-byte **time_t** so it can hold a much bigger range of data.
 
    > [!NOTE]
    > DAO (`CDaoRecordset`) snapshots are read-only while ODBC (`CRecordset`) snapshots may be updateable depending on the driver and use of the ODBC cursor library. If you are using the cursor library, `CRecordset` snapshots are updateable. If you are using any of the Microsoft drivers from Desktop Driver Pack 3.0 without the ODBC cursor library, the `CRecordset` snapshots are read-only. If you are using another driver, check the driver's documentation to see if snapshots (`STATIC_CURSORS`) are read-only.

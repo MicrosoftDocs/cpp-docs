@@ -66,7 +66,7 @@ public:
 };  
 ```  
   
- To get an IPrintInterface if you only have an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), call [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) using the `IID` of the **IPrintInterface**. An `IID` is a 128-bit number that uniquely identifies the interface. There is an `IID` for each interface that either you or OLE define. If `pUnk` is a pointer to an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) object, the code to retrieve an IPrintInterface from it might be:  
+ To get an IPrintInterface if you only have an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), call [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) using the `IID` of the `IPrintInterface`. An `IID` is a 128-bit number that uniquely identifies the interface. There is an `IID` for each interface that either you or OLE define. If *pUnk* is a pointer to an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) object, the code to retrieve an IPrintInterface from it might be:  
   
 ```  
 IPrintInterface* pPrint = NULL;  
@@ -93,7 +93,7 @@ virtual void PrintObject();
 };  
 ```  
   
- The implementations of [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) and [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) would be exactly the same as those implemented above. **CPrintObj::QueryInterface** would look something like this:  
+ The implementations of [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) and [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) would be exactly the same as those implemented above. `CPrintObj::QueryInterface` would look something like this:  
   
 ```  
 HRESULT CPrintObj::QueryInterface(REFIID iid, void FAR* FAR* ppvObj)  
@@ -278,15 +278,15 @@ HRESULT CEditPrintObj::CPrintObj::QueryInterface(
   
 2.  Use the `DECLARE_INTERFACE_MAP` function in the derived class definition.  
   
-3.  For each interface you wish to support, use the `BEGIN_INTERFACE_PART` and `END_INTERFACE_PART` macros in the class definition.  
+3.  For each interface you wish to support, use the BEGIN_INTERFACE_PART and END_INTERFACE_PART macros in the class definition.  
   
-4.  In the implementation file, use the `BEGIN_INTERFACE_MAP` and `END_INTERFACE_MAP` macros to define the class's interface map.  
+4.  In the implementation file, use the BEGIN_INTERFACE_MAP and END_INTERFACE_MAP macros to define the class's interface map.  
   
-5.  For each IID supported, use the `INTERFACE_PART` macro between the `BEGIN_INTERFACE_MAP` and `END_INTERFACE_MAP` macros to map that IID to a specific "part" of your class.  
+5.  For each IID supported, use the INTERFACE_PART macro between the BEGIN_INTERFACE_MAP and END_INTERFACE_MAP macros to map that IID to a specific "part" of your class.  
   
 6.  Implement each of the nested classes that represent the interfaces you support.  
   
-7.  Use the `METHOD_PROLOGUE` macro to access the parent, `CCmdTarget`-derived object.  
+7.  Use the METHOD_PROLOGUE macro to access the parent, `CCmdTarget`-derived object.  
   
 8. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317), and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) can delegate to the `CCmdTarget` implementation of these functions (`ExternalAddRef`, `ExternalRelease`, and `ExternalQueryInterface`).  
   
@@ -315,7 +315,7 @@ END_INTERFACE_PART(PrintObj)
 };  
 ```  
   
- The above declaration creates a class derived from `CCmdTarget`. The `DECLARE_INTERFACE_MAP` macro tells the framework that this class will have a custom interface map. In addition, the `BEGIN_INTERFACE_PART` and `END_INTERFACE_PART` macros define nested classes, in this case with names CEditObj and CPrintObj (the X is used only to differentiate the nested classes from global classes which start with "C" and interface classes which start with "I"). Two nested members of these classes are created: m_CEditObj, and m_CPrintObj, respectively. The macros automatically declare the [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317), and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) functions; therefore you only declare the functions specific to this interface: EditObject and PrintObject (the OLE macro `STDMETHOD` is used so that `_stdcall` and virtual keywords are provided as appropriate for the target platform).  
+ The above declaration creates a class derived from `CCmdTarget`. The DECLARE_INTERFACE_MAP macro tells the framework that this class will have a custom interface map. In addition, the BEGIN_INTERFACE_PART and END_INTERFACE_PART macros define nested classes, in this case with names CEditObj and CPrintObj (the X is used only to differentiate the nested classes from global classes which start with "C" and interface classes which start with "I"). Two nested members of these classes are created: m_CEditObj, and m_CPrintObj, respectively. The macros automatically declare the [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317), and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) functions; therefore you only declare the functions specific to this interface: EditObject and PrintObject (the OLE macro STDMETHOD is used so that **_stdcall** and virtual keywords are provided as appropriate for the target platform).  
   
  To implement the interface map for this class:  
   
@@ -333,7 +333,7 @@ END_INTERFACE_MAP()
   
  This connects the IID_IPrintInterface IID with m_CPrintObj and IID_IEditInterface with m_CEditObj respectively. The `CCmdTarget` implementation of [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) (`CCmdTarget::ExternalQueryInterface`) uses this map to return pointers to m_CPrintObj and m_CEditObj when requested. It is not necessary to include an entry for `IID_IUnknown`; the framework will use the first interface in the map (in this case, m_CPrintObj) when `IID_IUnknown` is requested.  
   
- Even though the `BEGIN_INTERFACE_PART` macro automatically declared the [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) functions for you, you still need to implement them:  
+ Even though the BEGIN_INTERFACE_PART macro automatically declared the [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) functions for you, you still need to implement them:  
   
 ```  
 ULONG FAR EXPORT CEditPrintObj::XEditObj::AddRef()  
@@ -381,10 +381,10 @@ void FAR EXPORT CEditPrintObj::XEditObj::EditObject()
   
 -   Declare either of these built-in methods on both of your interfaces  
   
- In addition, the framework uses message maps internally. This allows you to derive from a framework class, say `COleServerDoc`, that already supports certain interfaces and provides either replacements or additions to the interfaces provided by the framework. You can do this because the framework fully supports inheriting an interface map from a base class. That is the reason why `BEGIN_INTERFACE_MAP` takes as its second parameter the name of the base class.  
+ In addition, the framework uses message maps internally. This allows you to derive from a framework class, say `COleServerDoc`, that already supports certain interfaces and provides either replacements or additions to the interfaces provided by the framework. You can do this because the framework fully supports inheriting an interface map from a base class. That is the reason why BEGIN_INTERFACE_MAP takes as its second parameter the name of the base class.  
   
 > [!NOTE]
->  It is generally not possible to reuse the implementation of MFC's built-in implementations of the OLE interfaces just by inheriting the embedded specialization of that interface from the MFC version. This is not possible because the use of the `METHOD_PROLOGUE` macro to get access to the containing `CCmdTarget`-derived object implies a *fixed offset* of the embedded object from the `CCmdTarget`-derived object. This means, for example, you cannot derive an embedded XMyAdviseSink from MFC's implementation in `COleClientItem::XAdviseSink`, because XAdviseSink relies on being at a specific offset from the top of the `COleClientItem` object.  
+>  It is generally not possible to reuse the implementation of MFC's built-in implementations of the OLE interfaces just by inheriting the embedded specialization of that interface from the MFC version. This is not possible because the use of the METHOD_PROLOGUE macro to get access to the containing `CCmdTarget`-derived object implies a *fixed offset* of the embedded object from the `CCmdTarget`-derived object. This means, for example, you cannot derive an embedded XMyAdviseSink from MFC's implementation in `COleClientItem::XAdviseSink`, because XAdviseSink relies on being at a specific offset from the top of the `COleClientItem` object.  
   
 > [!NOTE]
 >  You can, however, delegate to the MFC implementation for all of the functions that you want MFC's default behavior. This is done in the MFC implementation of `IOleInPlaceFrame` (XOleInPlaceFrame) in the `COleFrameHook` class (it delegates to m_xOleInPlaceUIWindow for many functions). This design was chosen to reduce the runtime size of objects which implement many interfaces; it eliminates the need for a back-pointer (such as the way m_pParent was used in the previous section).  
@@ -395,13 +395,13 @@ void FAR EXPORT CEditPrintObj::XEditObj::EditObject()
  There are two ways to use aggregation: (1) using a COM object that supports aggregation, and (2) implementing an object that can be aggregated by another. These capabilities can be referred to as "using an aggregate object" and "making an object aggregatable". MFC supports both.  
   
 ### Using an Aggregate Object  
- To use an aggregate object, there needs to be some way to tie the aggregate into the QueryInterface mechanism. In other words, the aggregate object must behave as though it is a native part of your object. So how does this tie into MFC's interface map mechanism In addition to the `INTERFACE_PART` macro, where a nested object is mapped to an IID, you can also declare an aggregate object as part of your `CCmdTarget` derived class. To do so, the `INTERFACE_AGGREGATE` macro is used. This allows you to specify a member variable (which must be a pointer to an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) or derived class), which is to be integrated into the interface map mechanism. If the pointer is not NULL when `CCmdTarget::ExternalQueryInterface` is called, the framework will automatically call the aggregate object's [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) member function, if the `IID` requested is not one of the native `IID`s supported by the `CCmdTarget` object itself.  
+ To use an aggregate object, there needs to be some way to tie the aggregate into the QueryInterface mechanism. In other words, the aggregate object must behave as though it is a native part of your object. So how does this tie into MFC's interface map mechanism In addition to the INTERFACE_PART macro, where a nested object is mapped to an IID, you can also declare an aggregate object as part of your `CCmdTarget` derived class. To do so, the INTERFACE_AGGREGATE macro is used. This allows you to specify a member variable (which must be a pointer to an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) or derived class), which is to be integrated into the interface map mechanism. If the pointer is not NULL when `CCmdTarget::ExternalQueryInterface` is called, the framework will automatically call the aggregate object's [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) member function, if the `IID` requested is not one of the native `IID`s supported by the `CCmdTarget` object itself.  
   
 ##### To use the INTERFACE_AGGREGATE macro  
   
 1.  Declare a member variable (an `IUnknown*`) which will contain a pointer to the aggregate object.  
   
-2.  Include an `INTERFACE_AGGREGATE` macro in your interface map, which refers to the member variable by name.  
+2.  Include an INTERFACE_AGGREGATE macro in your interface map, which refers to the member variable by name.  
   
 3.  At some point (usually during `CCmdTarget::OnCreateAggregates`), initialize the member variable to something other than NULL.  
   
@@ -485,10 +485,10 @@ void EnableAggregation();
 ## Remarks  
   
 #### Parameters  
- `lpIID`  
+ *lpIID*  
  A far pointer to an IID (the first argument to QueryInterface)  
   
- `ppvObj`  
+ *ppvObj*  
  A pointer to an IUnknown* (second argument to QueryInterface)  
   
 ## Remarks  
@@ -527,7 +527,7 @@ DECLARE_INTERFACE_MAP
 ```  
   
 ## Remarks  
- Use this macro in any class derived from `CCmdTarget` that will have an interface map. Used in much the same way as `DECLARE_MESSAGE_MAP`. This macro invocation should be placed in the class definition, usually in a header (.H) file. A class with `DECLARE_INTERFACE_MAP` must define the interface map in the implementation file (.CPP) with the `BEGIN_INTERFACE_MAP` and `END_INTERFACE_MAP` macros.  
+ Use this macro in any class derived from `CCmdTarget` that will have an interface map. Used in much the same way as DECLARE_MESSAGE_MAP. This macro invocation should be placed in the class definition, usually in a header (.H) file. A class with DECLARE_INTERFACE_MAP must define the interface map in the implementation file (.CPP) with the BEGIN_INTERFACE_MAP and END_INTERFACE_MAP macros.  
   
 ### BEGIN_INTERFACE_PART and END_INTERFACE_PART — Macro Descriptions  
   
@@ -544,18 +544,18 @@ END_INTERFACE_PART(
 ## Remarks  
   
 #### Parameters  
- `localClass`  
+ *localClass*  
  The name of the class that implements the interface  
   
- `iface`  
+ *iface*  
  The name of the interface that this class implements  
   
 ## Remarks  
- For each interface that your class will implement, you need to have a `BEGIN_INTERFACE_PART` and `END_INTERFACE_PART` pair. These macros define a local class derived from the OLE interface that you define as well as an embedded member variable of that class. The [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317), and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) members are declared automatically. You must include the declarations for the other member functions that are part of the interface being implemented (those declarations are placed between the `BEGIN_INTERFACE_PART` and `END_INTERFACE_PART` macros).  
+ For each interface that your class will implement, you need to have a BEGIN_INTERFACE_PART and END_INTERFACE_PART pair. These macros define a local class derived from the OLE interface that you define as well as an embedded member variable of that class. The [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [Release](http://msdn.microsoft.com/library/windows/desktop/ms682317), and [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) members are declared automatically. You must include the declarations for the other member functions that are part of the interface being implemented (those declarations are placed between the BEGIN_INTERFACE_PART and END_INTERFACE_PART macros).  
   
- The `iface` argument is the OLE interface that you wish to implement, such as `IAdviseSink`, or `IPersistStorage` (or your own custom interface).  
+ The *iface* argument is the OLE interface that you wish to implement, such as `IAdviseSink`, or `IPersistStorage` (or your own custom interface).  
   
- The `localClass` argument is the name of the local class that will be defined. An 'X' will automatically be prepended to the name. This naming convention is used to avoid collisions with global classes of the same name. In addition, the name of the embedded member, the same as the `localClass` name except it is prefixed by 'm_x'.  
+ The *localClass* argument is the name of the local class that will be defined. An 'X' will automatically be prepended to the name. This naming convention is used to avoid collisions with global classes of the same name. In addition, the name of the embedded member, the same as the *localClass* name except it is prefixed by 'm_x'.  
   
  For example:  
   
@@ -598,14 +598,14 @@ END_INTERFACE_PART(MyAdviseSink)
 ## Remarks  
   
 #### Parameters  
- `theClass`  
+ *theClass*  
  The class in which the interface map is to be defined  
   
- `baseClass`  
- The class from which `theClass` derives from.  
+ *baseClass*  
+ The class from which *theClass* derives from.  
   
 ## Remarks  
- The `BEGIN_INTERFACE_MAP` and `END_INTERFACE_MAP` macros are used in the implementation file to actually define the interface map. For each interface that is implemented there is one or more `INTERFACE_PART` macro invocations. For each aggregate that the class uses, there is one `INTERFACE_AGGREGATE` macro invocation.  
+ The BEGIN_INTERFACE_MAP and END_INTERFACE_MAP macros are used in the implementation file to actually define the interface map. For each interface that is implemented there is one or more INTERFACE_PART macro invocations. For each aggregate that the class uses, there is one INTERFACE_AGGREGATE macro invocation.  
   
 ### INTERFACE_PART — Macro Description  
   
@@ -620,17 +620,17 @@ END_INTERFACE_PART(MyAdviseSink)
 ## Remarks  
   
 #### Parameters  
- `theClass`  
+ *theClass*  
  The name of the class that contains the interface map.  
   
- `iid`  
+ *iid*  
  The `IID` that is to be mapped to the embedded class.  
   
- `localClass`  
+ *localClass*  
  The name of the local class (less the 'X').  
   
 ## Remarks  
- This macro is used between the `BEGIN_INTERFACE_MAP` macro and the `END_INTERFACE_MAP` macro for each interface your object will support. It allows you to map an IID to a member of the class indicated by `theClass` and `localClass`. The 'm_x' will be added to the `localClass` automatically. Note that more than one `IID` may be associated with a single member. This is very useful when you are implementing only a "most derived" interface and wish to provide all intermediate interfaces as well. A good example of this is the `IOleInPlaceFrameWindow` interface. Its hierarchy looks like this:  
+ This macro is used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for each interface your object will support. It allows you to map an IID to a member of the class indicated by *theClass* and *localClass*. The 'm_x' will be added to the *localClass* automatically. Note that more than one `IID` may be associated with a single member. This is very useful when you are implementing only a "most derived" interface and wish to provide all intermediate interfaces as well. A good example of this is the `IOleInPlaceFrameWindow` interface. Its hierarchy looks like this:  
   
 ```  
 IUnknown  
@@ -639,7 +639,7 @@ IUnknown
     IOleInPlaceFrameWindow 
 ```  
   
- If an object implements `IOleInPlaceFrameWindow`, a client may `QueryInterface` on any of these interfaces: `IOleUIWindow`, `IOleWindow`, or [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), besides the "most derived" interface `IOleInPlaceFrameWindow` (the one you are actually implementing). To handle this you can use more than one `INTERFACE_PART` macro to map each and every base interface to the `IOleInPlaceFrameWindow` interface:  
+ If an object implements `IOleInPlaceFrameWindow`, a client may `QueryInterface` on any of these interfaces: `IOleUIWindow`, `IOleWindow`, or [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), besides the "most derived" interface `IOleInPlaceFrameWindow` (the one you are actually implementing). To handle this you can use more than one INTERFACE_PART macro to map each and every base interface to the `IOleInPlaceFrameWindow` interface:  
   
  in the class definition file:  
   
@@ -678,14 +678,14 @@ END_INTERFACE_MAP
 ## Remarks  
   
 #### Parameters  
- `theClass`  
+ *theClass*  
  The name of the class that contains the interface map,  
   
- `theAggr`  
+ *theAggr*  
  The name of the member variable that is to be aggregated.  
   
 ## Remarks  
- This macro is used to tell the framework that the class is using an aggregate object. It must appear between the `BEGIN_INTERFACE_PART` and `END_INTERFACE_PART` macros. An aggregate object is a separate object, derived from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). By using an aggregate and the `INTERFACE_AGGREGATE` macro, you can make all the interfaces that the aggregate supports appear to be directly supported by the object. The `theAggr` argument is simply the name of a member variable of your class which is derived from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) (either directly or indirectly). All `INTERFACE_AGGREGATE` macros must follow the `INTERFACE_PART` macros when placed in an interface map.  
+ This macro is used to tell the framework that the class is using an aggregate object. It must appear between the BEGIN_INTERFACE_PART and END_INTERFACE_PART macros. An aggregate object is a separate object, derived from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). By using an aggregate and the INTERFACE_AGGREGATE macro, you can make all the interfaces that the aggregate supports appear to be directly supported by the object. The *theAggr* argument is simply the name of a member variable of your class which is derived from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) (either directly or indirectly). All INTERFACE_AGGREGATE macros must follow the INTERFACE_PART macros when placed in an interface map.  
   
 ## See Also  
  [Technical Notes by Number](../mfc/technical-notes-by-number.md)   

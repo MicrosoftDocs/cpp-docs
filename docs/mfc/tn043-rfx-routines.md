@@ -50,7 +50,7 @@ RFX_Custom(pFX, "Col2",
   
  See 'afxdb.h' for a list of all the recordset field exchange routines provided with MFC.  
   
- Recordset field calls are a way of registering memory locations (usually data members) to store field data for a **CMySet** class.  
+ Recordset field calls are a way of registering memory locations (usually data members) to store field data for a `CMySet` class.  
   
 ## Notes  
  Recordset field functions are designed to work only with the `CRecordset` classes. They are not generally usable by any other MFC classes.  
@@ -64,23 +64,23 @@ RFX_Custom(pFX, "Col2",
 ## How Does It Work  
  You do not need to understand the following in order to use record field exchange. However, understanding how this works behind the scenes will help you write your own exchange procedure.  
   
- The `DoFieldExchange` member function is much like the `Serialize` member function — it is responsible for getting or setting data to/from an external form (in this case columns from the result of an ODBC query) from/to member data in the class. The `pFX` parameter is the context for doing data exchange and is similar to the `CArchive` parameter to `CObject::Serialize`. The `pFX` (a `CFieldExchange` object) has an operation indicator, which is similar to, but a generalization of the `CArchive` direction flag. An RFX function may have to support the following operations:  
+ The `DoFieldExchange` member function is much like the `Serialize` member function — it is responsible for getting or setting data to/from an external form (in this case columns from the result of an ODBC query) from/to member data in the class. The *pFX* parameter is the context for doing data exchange and is similar to the *CArchive* parameter to `CObject::Serialize`. The *pFX* (a `CFieldExchange` object) has an operation indicator, which is similar to, but a generalization of the *CArchive* direction flag. An RFX function may have to support the following operations:  
   
-- **BindParam** — Indicate where ODBC should retrieve parameter data  
+- `BindParam` — Indicate where ODBC should retrieve parameter data  
   
-- **BindFieldToColumn** — Indicate where ODBC must retrieve/deposit outputColumn data  
+- `BindFieldToColumn` — Indicate where ODBC must retrieve/deposit outputColumn data  
   
-- **Fixup** — Set **CString/CByteArray** lengths, set NULL status bit  
+- `Fixup` — Set `CString/CByteArray` lengths, set NULL status bit  
   
-- **MarkForAddNew** — Mark dirty if value has changed since AddNew call  
+- `MarkForAddNew` — Mark dirty if value has changed since AddNew call  
   
-- **MarkForUpdate** — Mark dirty if value has changed since Edit call  
+- `MarkForUpdate` — Mark dirty if value has changed since Edit call  
   
-- **Name** — Append field names for fields marked dirty  
+- `Name` — Append field names for fields marked dirty  
   
-- **NameValue** — Append "\<column name>=" for fields marked dirty  
+- `NameValue` — Append "\<column name>=" for fields marked dirty  
   
-- **Value** — Append "" followed by separator, like ',' or ' '  
+- `Value` — Append "" followed by separator, like ',' or ' '  
   
 - `SetFieldDirty` — Set status bit dirty (i.e. changed) field  
   
@@ -92,13 +92,13 @@ RFX_Custom(pFX, "Col2",
   
 - `IsFieldNullable` — Return TRUE if field can hold NULL values  
   
-- **StoreField** — Archive field value  
+- `StoreField` — Archive field value  
   
-- **LoadField** — Reload archived field value  
+- `LoadField` — Reload archived field value  
   
-- **GetFieldInfoValue** — Return general information on a field  
+- `GetFieldInfoValue` — Return general information on a field  
   
-- **GetFieldInfoOrdinal** — Return general information on a field  
+- `GetFieldInfoOrdinal` — Return general information on a field  
   
 ## User Extensions  
  There are several ways to extend the default RFX mechanism. You can  
@@ -136,13 +136,13 @@ RFX_Custom(pFX, "Col2",
 ## Writing a Custom RFX  
  To write your own Custom RFX function, it is suggested that you copy an existing RFX function and modify it to your own purposes. Selecting the right RFX to copy can make your job much easier. Some RFX functions have some unique properties that you should take into account when deciding which to copy.  
   
- **RFX_Long and RFX_Int**:  
+ `RFX_Long` and `RFX_Int`:  
  These are the simplest RFX functions. The data value does not need any special interpretation, and the data size is fixed.  
   
- **RFX_Single and RFX_Double**:  
+ `RFX_Single` and `RFX_Double`:  
  Like RFX_Long and RFX_Int above, these functions are simple and can make use of the default implementation extensively. They are stored in dbflt.cpp instead of dbrfx.cpp, however, to enable loading the runtime floating point library only when they are explicitly reference.  
   
- **RFX_Text and RFX_Binary**:  
+ `RFX_Text` and `RFX_Binary`:  
  These two functions preallocate a static buffer to hold string/binary information, and must register these buffers with ODBC SQLBindCol instead of registering &value. Because of this, these two functions have lots of special-case code.  
   
  `RFX_Date`:  
@@ -151,9 +151,9 @@ RFX_Custom(pFX, "Col2",
  `RFX_LongBinary`:  
  This is the only class library RFX function that does not use column binding to receive and send data. This function ignores the BindFieldToColumn operation and instead, during the Fixup operation, allocates storage to hold the incoming SQL_LONGVARCHAR or SQL_LONGVARBINARY data, then performs an SQLGetData call to retrieve the value into the allocated storage. When preparing to send data values back to the data source (such as NameValue and Value operations), this function uses ODBC's DATA_AT_EXEC functionality. See [Technical Note 45](../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md) for more information on working with SQL_LONGVARBINARY and SQL_LONGVARCHARs.  
   
- When writing your own **RFX_** function, you will often be able to use **CFieldExchange::Default** to implement a given operation. Look at the implementation of Default for the operation in question. If it performs the operation you would be writing in your **RFX_** function you can delegate to the **CFieldExchange::Default.** You can see examples of calling **CFieldExchange::Default** in dbrfx.cpp  
+ When writing your own **RFX_** function, you will often be able to use `CFieldExchange::Default` to implement a given operation. Look at the implementation of Default for the operation in question. If it performs the operation you would be writing in your **RFX_** function you can delegate to the `CFieldExchange::Default`. You can see examples of calling `CFieldExchange::Default` in dbrfx.cpp  
   
- It is important to call `IsFieldType` at the start of your RFX function, and return immediately if it returns FALSE. This mechanism keeps parameter operations from being performed on **outputColumns**, and vice versa (like calling **BindParam** on an **outputColumn**). In addition, `IsFieldType` automatically keeps track of the count of **outputColumns** (`m_nFields`) and params (`m_nParams`).  
+ It is important to call `IsFieldType` at the start of your RFX function, and return immediately if it returns FALSE. This mechanism keeps parameter operations from being performed on *outputColumns*, and vice versa (like calling `BindParam` on an *outputColumn*). In addition, `IsFieldType` automatically keeps track of the count of *outputColumns* (*m_nFields*) and params (*m_nParams*).  
   
 ## See Also  
  [Technical Notes by Number](../mfc/technical-notes-by-number.md)   
