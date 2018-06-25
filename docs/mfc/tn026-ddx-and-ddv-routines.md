@@ -53,7 +53,7 @@ DDV_Custom(pDX,
   
  See 'afxdd_.h' for a list of all the dialog data exchange routines and dialog data validation routines provided with MFC.  
   
- Dialog data is just that: member data in the **CMyDialog** class. It is not stored in a struct or anything similar.  
+ Dialog data is just that: member data in the `CMyDialog` class. It is not stored in a struct or anything similar.  
   
 ## Notes  
  Although we call this "dialog data," all features are available in any class derived from `CWnd` and are not limited to just dialogs.  
@@ -69,17 +69,17 @@ DDV_Custom(pDX,
 ## How Does It Work  
  You do not need to understand the following in order to use dialog data. However, understanding how this works behind the scenes will help you write your own exchange or validation procedure.  
   
- The `DoDataExchange` member function is much like the `Serialize` member function - it is responsible for getting or setting data to/from an external form (in this case controls in a dialog) from/to member data in the class. The `pDX` parameter is the context for doing data exchange and is similar to the `CArchive` parameter to `CObject::Serialize`. The `pDX` (a `CDataExchange` object) has a direction flag much like `CArchive` has a direction flag:  
+ The `DoDataExchange` member function is much like the `Serialize` member function - it is responsible for getting or setting data to/from an external form (in this case controls in a dialog) from/to member data in the class. The *pDX* parameter is the context for doing data exchange and is similar to the `CArchive` parameter to `CObject::Serialize`. The *pDX* (a `CDataExchange` object) has a direction flag much like `CArchive` has a direction flag:  
   
--   If **!m_bSaveAndValidate**, then load the data state into the controls.  
+-   If !*m_bSaveAndValidate*, then load the data state into the controls.  
   
--   If `m_bSaveAndValidate`, then set the data state from the controls.  
+-   If *m_bSaveAndValidate*, then set the data state from the controls.  
   
- Validation only occurs when `m_bSaveAndValidate` is set. The value of `m_bSaveAndValidate` is determined by the BOOL parameter to `CWnd::UpdateData`.  
+ Validation only occurs when *m_bSaveAndValidate* is set. The value of *m_bSaveAndValidate* is determined by the BOOL parameter to `CWnd::UpdateData`.  
   
  There are three other interesting `CDataExchange` members:  
   
-- `m_pDlgWnd`: The window (usually a dialog) that contains the controls. This is to prevent callers of the DDX_ and DDV_ global functions from having to pass 'this' to every DDX/DDV routine.  
+- *m_pDlgWnd*: The window (usually a dialog) that contains the controls. This is to prevent callers of the DDX_ and DDV_ global functions from having to pass 'this' to every DDX/DDV routine.  
   
 - `PrepareCtrl`, and `PrepareEditCtrl`: Prepares a dialog control for data exchange. Stores that control's handle for setting the focus if a validation fails. `PrepareCtrl` is used for nonedit controls and `PrepareEditCtrl` is used for edit controls.  
   
@@ -125,7 +125,7 @@ DDV_Custom(pDX,
     > [!NOTE]
     >  Such arbitrary expressions cannot be edited by ClassWizard and therefore should be moved outside of the special format comments (//{{AFX_DATA_MAP(CMyClass)).  
   
- Have the **DoDialogExchange** member function include conditionals or any other valid C++ statements with intermixed exchange and validation function calls.  
+ Have the `DoDialogExchange` member function include conditionals or any other valid C++ statements with intermixed exchange and validation function calls.  
   
 ```  
 //{{AFX_DATA_MAP(CMyClass)  

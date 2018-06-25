@@ -42,15 +42,15 @@ This note describes the MFC routines that support mapping Windows object handles
   
 -   SOCKET ([CSocket](../mfc/reference/csocket-class.md))  
   
- Given a handle to any one of these objects, you can find the MFC object that wraps the handle by calling the static method `FromHandle`. For example, given an HWND called `hWnd`, the following line will return a pointer to the `CWnd` that wraps `hWnd`:  
+ Given a handle to any one of these objects, you can find the MFC object that wraps the handle by calling the static method `FromHandle`. For example, given an HWND called *hWnd*, the following line will return a pointer to the `CWnd` that wraps *hWnd*:  
   
 ```  
 CWnd::FromHandle(hWnd)  
 ```  
   
- If `hWnd` does not have a specific wrapper object, a temporary `CWnd` is created to wrap `hWnd`. This makes it possible to obtain a valid C++ object from any handle.  
+ If *hWnd* does not have a specific wrapper object, a temporary `CWnd` is created to wrap *hWnd*. This makes it possible to obtain a valid C++ object from any handle.  
   
- After you have a wrapper object, you can retrieve its handle from a public member variable of the wrapper class. In the case of a `CWnd`, `m_hWnd` contains the HWND for that object.  
+ After you have a wrapper object, you can retrieve its handle from a public member variable of the wrapper class. In the case of a `CWnd`, *m_hWnd* contains the HWND for that object.  
   
 ## Attaching Handles to MFC Objects  
  Given a newly created handle-wrapper object and a handle to a Windows object, you can associate the two by calling the `Attach` function as in this example:  
@@ -60,7 +60,7 @@ CWnd myWnd;
 myWnd.Attach(hWnd);
 ```  
   
- This makes an entry in the permanent map associating `myWnd` and `hWnd`. Calling `CWnd::FromHandle(hWnd)` will now return a pointer to `myWnd`. When `myWnd` is deleted, the destructor will automatically destroy `hWnd` by calling the Windows [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682) function. If this is not desired, `hWnd` must be detached from `myWnd` before `myWnd` is destroyed (normally when leaving the scope at which `myWnd` was defined). The `Detach` method does this.  
+ This makes an entry in the permanent map associating *myWnd* and *hWnd*. Calling `CWnd::FromHandle(hWnd)` will now return a pointer to *myWnd*. When *myWnd* is deleted, the destructor will automatically destroy *hWnd* by calling the Windows [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682) function. If this is not desired, *hWnd* must be detached from *myWnd* before *myWnd* is destroyed (normally when leaving the scope at which *myWnd* was defined). The `Detach` method does this.  
   
 ```  
 myWnd.Detach();
