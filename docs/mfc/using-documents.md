@@ -24,7 +24,7 @@ Working together, documents and views:
   
 -   [Handle](../mfc/handling-commands-in-the-document.md) most of your application's commands and messages.  
   
- The document is particularly involved in managing data. Store your data, normally, in document class member variables. The view uses these variables to access the data for display and update. The document's default serialization mechanism manages reading and writing the data to and from files. Documents can also handle commands (but not Windows messages other than **WM_COMMAND**).  
+ The document is particularly involved in managing data. Store your data, normally, in document class member variables. The view uses these variables to access the data for display and update. The document's default serialization mechanism manages reading and writing the data to and from files. Documents can also handle commands (but not Windows messages other than WM_COMMAND).  
   
 ## What do you want to know more about  
   

@@ -118,9 +118,9 @@ C:\CabDevKit\cabarc.exe -s 6144 N spindial.cab spindial.ocx spindial.inf
  The `-s 6144` parameter reserves space in the cabinet for code signing.  
   
 ### The Version Tag  
- Note here that the `#Version` information specified with a CAB file applies to the control specified by the `CLASSID` parameter of the `<OBJECT>` tag.  
+ Note here that the `#Version` information specified with a CAB file applies to the control specified by the *CLASSID* parameter of the `<OBJECT>` tag.  
   
- Depending on the version specified, you can force download of your control. For complete specifications of the `OBJECT` tag including the `CODEBASE` parameter, see the W3C reference.  
+ Depending on the version specified, you can force download of your control. For complete specifications of the `OBJECT` tag including the *CODEBASE* parameter, see the W3C reference.  
   
 ##  <a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a> Marking a Control Safe for Scripting and Initializing  
  ActiveX controls used in Web pages should be marked as safe for scripting and safe for initializing if they are in fact safe. A safe control will not perform disk IO or access the memory or registers of a machine directly.  
@@ -218,7 +218,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
   
  Under OCX 96 guidelines, a control must always realize its palette in the background.  
   
- Older containers that do not use the ambient palette property will send `WM_QUERYNEWPALETTE` and `WM_PALETTECHANGED` messages. A control can override `OnQueryNewPalette` and `OnPaletteChanged` to handle these messages.  
+ Older containers that do not use the ambient palette property will send WM_QUERYNEWPALETTE and WM_PALETTECHANGED messages. A control can override `OnQueryNewPalette` and `OnPaletteChanged` to handle these messages.  
   
 ##  <a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a> Internet Explorer Browser Safety Levels and Control Behavior  
  A browser has options for safety level, configurable by the user. Because Web pages can contain active content that might potentially harm a user's computer, browsers allow the user to select options for safety level. Depending on the way a browser implements safety levels, a control may not be downloaded at all, or will display a certificate or a warning message to allow the user to choose at run time whether or not to download the control. The behavior of ActiveX controls under high, medium, and low safety levels on Internet Explorer is listed below.  

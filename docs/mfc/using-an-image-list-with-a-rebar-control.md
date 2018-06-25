@@ -20,9 +20,9 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 2.  Modify the **REBARBANDINFO** structure to assign an image to a rebar band:  
   
-    -   Set the **fMask** member to **RBBIM_IMAGE**, using the bitwise OR operator to include additional flags as necessary.  
+    -   Set the *fMask* member to `RBBIM_IMAGE`, using the bitwise OR operator to include additional flags as necessary.  
   
-    -   Set the `iImage` member to the image list index of the image to be displayed.  
+    -   Set the *iImage* member to the image list index of the image to be displayed.  
   
 3.  Initialize any remaining data members, such as the size, text, and handle of the contained child window, with the necessary information.  
   
