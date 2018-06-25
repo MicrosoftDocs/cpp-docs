@@ -18,13 +18,13 @@ This article explains what you must do to implement in-place frame windows in yo
   
 1.  Derive an in-place frame-window class from `COleIPFrameWnd`.  
   
-    -   Use the `DECLARE_DYNCREATE` macro in your class header file.  
+    -   Use the DECLARE_DYNCREATE macro in your class header file.  
   
-    -   Use the `IMPLEMENT_DYNCREATE` macro in your class implementation (.cpp) file. This allows objects of this class to be created by the framework.  
+    -   Use the IMPLEMENT_DYNCREATE macro in your class implementation (.cpp) file. This allows objects of this class to be created by the framework.  
   
 2.  Declare a `COleResizeBar` member in the frame-window class. This is needed if you want to support in-place resizing in server applications.  
   
-     Declare an `OnCreate` message handler (using the **Properties** window), and call **Create** for your `COleResizeBar` member, if you've defined it.  
+     Declare an `OnCreate` message handler (using the **Properties** window), and call `Create` for your `COleResizeBar` member, if you've defined it.  
   
 3.  If you have a toolbar, declare a `CToolBar` member in the frame-window class.  
   

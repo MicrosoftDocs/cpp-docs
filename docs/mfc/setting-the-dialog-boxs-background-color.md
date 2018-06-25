@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Setting the Dialog Box’s Background Color
-You can set the background color of your dialog boxes by handling `WM_CTLCOLOR` messages for the dialog box window. The color you set is used for only the specified dialog box.  
+You can set the background color of your dialog boxes by handling WM_CTLCOLOR messages for the dialog box window. The color you set is used for only the specified dialog box.  
   
 ## See Also  
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)   
