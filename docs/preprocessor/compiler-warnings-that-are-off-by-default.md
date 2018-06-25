@@ -142,12 +142,14 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |[C5038](../error-messages/compiler-warnings/c5038.md) (level 4)|data member '*member1*' will be initialized after data member '*member2*' <sup>15.3</sup>|
 |C5039 (level 4)|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception. <sup>15.5</sup>|
 |C5042 (level 3)|'*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup>|
+|[C5045](../error-messages/compiler-warnings/c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup>|
 
-<sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.<br>
-<sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.<br>
-<sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.<br>
-<sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.<br>
-<sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.
+<sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.  
+<sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.  
+<sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.  
+<sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.  
+<sup>15.7</sup> This warning is available starting in Visual Studio 2017 version 15.7.  
+<sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.  
 
 ## Warnings off by default in earlier versions
 
