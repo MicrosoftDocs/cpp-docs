@@ -141,173 +141,132 @@ This walkthrough teaches how to add a basic animated object to a Visual C++, Mic
   
  ```  
     m_animationController.EnableAnimationTimerEventHandler();
-m_animationController.EnablePriorityComparisonHandler(UI_ANIMATION_PHT_TRIM);
+    m_animationController.EnablePriorityComparisonHandler(UI_ANIMATION_PHT_TRIM);
 
- 
-    m_animationColor = RGB(255,
-    255,
-    255);
+    m_animationColor = RGB(255, 255, 255);
 
-    m_animationRect = CRect(0,
-    0,
-    0,
-    0);
+    m_animationRect = CRect(0, 0, 0, 0);
 
- 
-    m_animationColor.SetID(-1,
-    nAnimationGroup);
+    m_animationColor.SetID(-1, nAnimationGroup);
 
-    m_animationRect.SetID(-1,
-    nAnimationGroup);
+    m_animationRect.SetID(-1, nAnimationGroup);
 
- 
     m_animationController.AddAnimationObject(&m_animationColor);
 
- m_animationController.AddAnimationObject(&m_animationRect);
-
+    m_animationController.AddAnimationObject(&m_animationRect);
  ```  
   
 7.  Locate the `CAnimationWalthroughView::PreCreateWindow` method and then replace it with the following code.  
   
  ```  
     BOOL CMFCAnimationWalkthroughView::PreCreateWindow(CREATESTRUCT& cs)  
- { *// TODO: Modify the Window class or styles here by modifying *//  the CREATESTRUCT cs  
+     { *// TODO: Modify the Window class or styles here by modifying *//  the CREATESTRUCT cs  
  
     m_animationController.SetRelatedWnd(this);
 
- return CView::PreCreateWindow(cs);
+     return CView::PreCreateWindow(cs);
 
- }  
+     }  
  ```  
   
 8.  Locate the `CAnimationWalkthroughView::OnDraw` method and then replace it with the following code.  
   
  ```  
     void CMFCAnimationWalkthroughView::OnDraw(CDC* pDC)  
- {  
-    CMFCAnimationWalkthroughDoc* pDoc = GetDocument();
-ASSERT_VALID(pDoc);
-
- if (!pDoc)  
-    return; 
- *// TODO: add draw code for native data here  
-    CMemDC dcMem(*pDC,
-    this);
-
-    CDC& dc = dcMem.GetDC();
-
- 
-    CRect rect;  
-    GetClientRect(rect);
-
- 
-    dc.FillSolidRect(rect,
-    GetSysColor(COLOR_WINDOW));
-
- 
-    CString strRGB;  
-    strRGB.Format(_T("Fill Color is: %d; %d; %d"),
-    GetRValue(m_animationColor),
-    GetGValue(m_animationColor),
-    GetBValue(m_animationColor));
-
- 
-    dc.DrawText(strRGB,
-    rect,
-    DT_CENTER);
-
-    rect.top += nInfoAreaHeight;  
- 
-    CBrush br;  
- 
-    br.CreateSolidBrush(m_animationColor);
-
- CBrush* pBrushOld = dc.SelectObject(&br);
-
- 
-    dc.Rectangle((CRect)m_animationRect);
-
- dc.SelectObject(pBrushOld);
-
- }  
+    {  
+        CMFCAnimationWalkthroughDoc* pDoc = GetDocument();
+        ASSERT_VALID(pDoc);
+    
+        if (!pDoc)  
+           return; 
+        // TODO: add draw code for native data here  
+        CMemDC dcMem(*pDC, this);
+    
+        CDC& dc = dcMem.GetDC();
+    
+        CRect rect;  
+        GetClientRect(rect);
+    
+        dc.FillSolidRect(rect,
+        GetSysColor(COLOR_WINDOW));
+    
+        CString strRGB;  
+        strRGB.Format(_T("Fill Color is: %d; %d; %d"),
+        GetRValue(m_animationColor),
+        GetGValue(m_animationColor),
+        GetBValue(m_animationColor));
+    
+        dc.DrawText(strRGB, rect, DT_CENTER);
+    
+        rect.top += nInfoAreaHeight;  
+     
+        CBrush br;  
+     
+        br.CreateSolidBrush(m_animationColor);
+    
+        CBrush* pBrushOld = dc.SelectObject(&br);
+    
+        dc.Rectangle((CRect)m_animationRect);
+    
+        dc.SelectObject(pBrushOld);
+    }  
  ```  
   
 9. At the end of the file, add the following code.  
   
  ```  
     void CMFCAnimationWalkthroughView::Animate(BOOL bDirection)  
- {  
-    static UI_ANIMATION_SECONDS duration = 3;  
-    static DOUBLE dblSpeed = 35.;  
-    static BYTE nStartColor = 50;  
-    static BYTE nEndColor = 255;  
- 
-    BYTE nRedColorFinal = bDirection  nStartColor : nEndColor;  
-    BYTE nGreenColorFinal = bDirection  nStartColor : nEndColor;  
-    BYTE nBlueColorFinal = bDirection  nStartColor : nEndColor;  
- 
-    CLinearTransition* pRedTransition = new CLinearTransition(duration, (DOUBLE)nRedColorFinal);
-
-    CSmoothStopTransition* pGreenTransition = new CSmoothStopTransition(duration, (DOUBLE)nGreenColorFinal);
-
-    CLinearTransitionFromSpeed* pBlueTransition = new CLinearTransitionFromSpeed(dblSpeed, (DOUBLE)nBlueColorFinal);
-
- 
-    m_animationColor.AddTransition(pRedTransition,
-    pGreenTransition,
-    pBlueTransition);
-
- 
-    CRect rectClient;  
-    GetClientRect(rectClient);
-
- rectClient.top += nInfoAreaHeight;  
- 
-    int nLeftFinal = bDirection  rectClient.left : rectClient.CenterPoint().x;  
-    int nTopFinal = bDirection  rectClient.top : rectClient.CenterPoint().y;  
-    int nRightFinal = bDirection  rectClient.right : rectClient.CenterPoint().x;  
-    int nBottomFinal = bDirection  rectClient.bottom : rectClient.CenterPoint().y;  
- 
-    CLinearTransition* pLeftTransition = new CLinearTransition(duration,
-    nLeftFinal);
-
-    CLinearTransition* pTopTransition = new CLinearTransition(duration,
-    nTopFinal);
-
-    CLinearTransition* pRightTransition = new CLinearTransition(duration,
-    nRightFinal);
-
-    CLinearTransition* pBottomTransition = new CLinearTransition(duration,
-    nBottomFinal);
-
- 
-    m_animationRect.AddTransition(pLeftTransition,
-    pTopTransition,
-    pRightTransition,
-    pBottomTransition);
-
- 
-    CBaseKeyFrame* pKeyframeStart = CAnimationController::GetKeyframeStoryboardStart();
-CKeyFrame* pKeyFrameEnd = m_animationController.CreateKeyframe(nAnimationGroup,
-    pBlueTransition);
-
- 
-    pLeftTransition->SetKeyframes(pKeyframeStart,
-    pKeyFrameEnd);
-
-    pTopTransition->SetKeyframes(pKeyframeStart,
-    pKeyFrameEnd);
-
-    pRightTransition->SetKeyframes(pKeyframeStart,
-    pKeyFrameEnd);
-
-    pBottomTransition->SetKeyframes(pKeyframeStart,
-    pKeyFrameEnd);
-
- 
-    m_animationController.AnimateGroup(nAnimationGroup);
-
- }  
+    {  
+        static UI_ANIMATION_SECONDS duration = 3;  
+        static DOUBLE dblSpeed = 35.;  
+        static BYTE nStartColor = 50;  
+        static BYTE nEndColor = 255;  
+     
+        BYTE nRedColorFinal = bDirection  nStartColor : nEndColor;  
+        BYTE nGreenColorFinal = bDirection  nStartColor : nEndColor;  
+        BYTE nBlueColorFinal = bDirection  nStartColor : nEndColor;  
+     
+        CLinearTransition* pRedTransition = new CLinearTransition(duration, (DOUBLE)nRedColorFinal);
+    
+        CSmoothStopTransition* pGreenTransition = new CSmoothStopTransition(duration, (DOUBLE)nGreenColorFinal);
+    
+        CLinearTransitionFromSpeed* pBlueTransition = new CLinearTransitionFromSpeed(dblSpeed, (DOUBLE)nBlueColorFinal);
+    
+        m_animationColor.AddTransition(pRedTransition, pGreenTransition, pBlueTransition);
+    
+        CRect rectClient;  
+        GetClientRect(rectClient);
+    
+        rectClient.top += nInfoAreaHeight;  
+     
+        int nLeftFinal = bDirection  rectClient.left : rectClient.CenterPoint().x;  
+        int nTopFinal = bDirection  rectClient.top : rectClient.CenterPoint().y;  
+        int nRightFinal = bDirection  rectClient.right : rectClient.CenterPoint().x;  
+        int nBottomFinal = bDirection  rectClient.bottom : rectClient.CenterPoint().y;  
+     
+        CLinearTransition* pLeftTransition = new CLinearTransition(duration, nLeftFinal);
+    
+        CLinearTransition* pTopTransition = new CLinearTransition(duration, nTopFinal);
+    
+        CLinearTransition* pRightTransition = new CLinearTransition(duration, nRightFinal);
+    
+        CLinearTransition* pBottomTransition = new CLinearTransition(duration, nBottomFinal);
+    
+        m_animationRect.AddTransition(pLeftTransition, pTopTransition, pRightTransition, pBottomTransition);
+    
+        CBaseKeyFrame* pKeyframeStart = CAnimationController::GetKeyframeStoryboardStart();
+        CKeyFrame* pKeyFrameEnd = m_animationController.CreateKeyframe(nAnimationGroup, pBlueTransition);
+    
+        pLeftTransition->SetKeyframes(pKeyframeStart, pKeyFrameEnd);
+    
+        pTopTransition->SetKeyframes(pKeyframeStart, pKeyFrameEnd);
+    
+        pRightTransition->SetKeyframes(pKeyframeStart, pKeyFrameEnd);
+    
+        pBottomTransition->SetKeyframes(pKeyframeStart, pKeyFrameEnd);
+    
+        m_animationController.AnimateGroup(nAnimationGroup);
+    }  
  ```  
   
 10. On the **Project** menu, click **Class Wizard**.  
@@ -320,36 +279,32 @@ CKeyFrame* pKeyFrameEnd = m_animationController.CreateKeyframe(nAnimationGroup,
   
  ```  
     BOOL CMFCAnimationWalkthroughView::OnEraseBkgnd(CDC* /*pDC*/)  
- {  
-    return TRUE;  
- }  
+    {  
+        return TRUE;  
+    }  
  ```  
   
 14. Replace the implementations of `CMFCAnimationWalkthroughView::OnAnimationStartforward`, `CMFCAnimationWalkthroughView::OnAnimationStartbackward`, and `CMFCAnimationWalkthroughView::OnAnimationStop` with the following code.  
   
  ```  
     void CMFCAnimationWalkthroughView::OnAnimationStartforward()  
- {  
-    Animate(TRUE);
-
- }  
+    {  
+        Animate(TRUE);
+    }  
  
     void CMFCAnimationWalkthroughView::OnAnimationStartbackward()  
- {  
-    Animate(FALSE);
-
- }  
+    {  
+        Animate(FALSE);
+    }  
  
     void CMFCAnimationWalkthroughView::OnAnimationStop()  
- {  
-    IUIAnimationManager* pManager = m_animationController.GetUIAnimationManager();
-if (pManager != NULL)  
- {  
-    pManager->AbandonAllStoryboards();
-
- }  
- }  
- 
+    {  
+        IUIAnimationManager* pManager = m_animationController.GetUIAnimationManager();
+        if (pManager != NULL)  
+        {  
+            pManager->AbandonAllStoryboards();
+        }  
+    }  
  ```  
   
 15. Save the file and close it.  
@@ -373,32 +328,23 @@ if (pManager != NULL)
 6.  In MFCAnimationWalkthroughView.cpp, replace the code for `CMFCAnimationWalkthroughView::OnSize` with the following code.  
   
  ```  
-    void CMFCAnimationWalkthroughView::OnSize(UINT nType,
-    int cx,
-    int cy)  
- {  
-    CView::OnSize(nType,
-    cx,
-    cy);
+    void CMFCAnimationWalkthroughView::OnSize(UINT nType, int cx, int cy)  
+    {  
+        CView::OnSize(nType, cx, cy);
 
- 
-    CRect rect;  
-    GetClientRect(rect);
-
- rect.top += nInfoAreaHeight;  
- 
-    CRect rectAnim = m_animationRect;  
-    m_animationRect = CRect(CPoint(rect.CenterPoint().x - rectAnim.Width() / 2,   
-    rect.CenterPoint().y - rectAnim.Height() / 2),   
-    rectAnim.Size());
-
- 
-    if (m_animationController.IsAnimationInProgress())  
- {  
-    Animate(m_bCurrentDirection);
-
- }  
- }  
+        CRect rect;  
+        GetClientRect(rect);
+    
+        rect.top += nInfoAreaHeight;  
+     
+        CRect rectAnim = m_animationRect;  
+        m_animationRect = CRect(CPoint(rect.CenterPoint().x - rectAnim.Width() / 2, rect.CenterPoint().y - rectAnim.Height() / 2), rectAnim.Size());
+    
+        if (m_animationController.IsAnimationInProgress())  
+        {  
+            Animate(m_bCurrentDirection);
+        }  
+    }  
  ```  
   
 7.  At the beginning of the constructor for `CMFCAnimationWalkthroughView`, add the following code.  

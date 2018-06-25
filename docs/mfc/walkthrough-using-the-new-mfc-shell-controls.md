@@ -82,9 +82,9 @@ In this walkthrough, you will create an application that resembles File Explorer
   
  ```  
     CMFCShellTreeCtrl& CMainFrame::GetShellTreeCtrl()  
- {  
-    return m_wndTree;  
- }  
+    {  
+        return m_wndTree;  
+    }  
  ```  
   
 3.  Now we update the `CMFCShellControlsView` class to handle the WM_CREATE windows message. Open the MFCShellControlsView.h header file and click on this line of code:  
@@ -99,42 +99,27 @@ In this walkthrough, you will create an application that resembles File Explorer
   
  ```  
     int CMFCShellControlsView::OnCreate(LPCREATESTRUCT lpCreateStruct)  
- {  
-    if (CView::OnCreate(lpCreateStruct) == -1)  
-    return -1;  
- 
-    CRect rectDummy (0,
-    0,
-    0,
-    0);
-
-    m_wndList.Create(WS_CHILD | WS_VISIBLE | LVS_REPORT,  
-    rectDummy,
-    this,
-    1);
-
- 
-    return 0;  
- }  
+    {  
+        if (CView::OnCreate(lpCreateStruct) == -1)  
+            return -1;  
+     
+        CRect rectDummy (0, 0, 0, 0);
+    
+        m_wndList.Create(WS_CHILD | WS_VISIBLE | LVS_REPORT, rectDummy, this, 1);
+    
+        return 0;  
+    }  
  ```  
   
 4.  Repeat the previous step but for the WM_SIZE message. This will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:  
   
  ```  
-    void CMFCShellControlsView::OnSize(UINT nType,
-    int cx,
-    int cy)  
- {  
-    CView::OnSize(nType,
-    cx,
-    cy);
-
-    m_wndList.SetWindowPos(NULL, -1, -1,
-    cx,
-    cy,  
-    SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
-
- }  
+    void CMFCShellControlsView::OnSize(UINT nType, int cx, int cy)  
+    {  
+        CView::OnSize(nType, cx, cy);
+    
+        m_wndList.SetWindowPos(NULL, -1, -1, cx, cy, SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
+    }  
  ```  
   
 5.  The last step is to connect the `CMFCShellTreeCtrl` and `CMFCShellListCtrl` objects by using the [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#setrelatedlist) method. After you call this method, the `CMFCShellListCtrl` will automatically display the contents of the item selected in the `CMFCShellTreeCtrl`. We will do this in the `OnActivateView` method, which is overridden from [CView::OnActivateView](../mfc/reference/cview-class.md#onactivateview).  
@@ -143,30 +128,21 @@ In this walkthrough, you will create an application that resembles File Explorer
   
  ```  
     protected: 
-    virtual void OnActivateView(BOOL bActivate,  
-    CView* pActivateView,  
-    CView* pDeactiveView);
-
+    virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
  ```  
   
      Next, add the definition for this method to the MFCShellControlsView.cpp source file:  
   
  ```  
-    void CMFCShellControlsView::OnActivateView(BOOL bActivate,  
-    CView* pActivateView,  
-    CView* pDeactiveView)   
- {  
-    if (bActivate&& AfxGetMainWnd() != NULL)  
- {  
- ((CMainFrame*)AfxGetMainWnd())->GetShellTreeCtrl().SetRelatedList(&m_wndList);
-
- }  
- 
-    CView::OnActivateView(bActivate,
-    pActivateView,
-    pDeactiveView);
-
- }  
+    void CMFCShellControlsView::OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView)   
+    {  
+        if (bActivate&& AfxGetMainWnd() != NULL)  
+        {  
+            ((CMainFrame*)AfxGetMainWnd())->GetShellTreeCtrl().SetRelatedList(&m_wndList);
+        }  
+     
+        CView::OnActivateView(bActivate, pActivateView, pDeactiveView);
+    }  
  ```  
   
      Because we are calling methods from the `CMainFrame` class, we must add an `#include` directive at the top of the MFCShellControlsView.cpp source file:  
@@ -189,4 +165,3 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 ## See Also  
  [Walkthroughs](../mfc/walkthroughs-mfc.md)
-
