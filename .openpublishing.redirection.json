@@ -2811,6 +2811,111 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/priority-queue-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-container-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#container_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-get-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#get_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#op_as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-pop-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#pop",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-priority-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#priority_queue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-push-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#push",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-top-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#top",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-top-item-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#top_item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-value-comp-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_comp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-value-compare-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/priority-queue-value-type-stl-clr.md",
+	        "redirect_url": "/cpp/dotnet/priority-queue-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
