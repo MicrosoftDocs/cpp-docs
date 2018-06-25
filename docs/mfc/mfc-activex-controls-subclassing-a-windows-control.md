@@ -29,7 +29,7 @@ This article describes the process for subclassing a common Windows control to c
  See Knowledge Base article Q243454 for more information on subclassing a control.  
   
 ##  <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Overriding IsSubclassedControl and PreCreateWindow  
- To override `PreCreateWindow` and `IsSubclassedControl`, add the following lines of code to the `protected` section of the control class declaration:  
+ To override `PreCreateWindow` and `IsSubclassedControl`, add the following lines of code to the **protected** section of the control class declaration:  
   
  [!code-cpp[NVC_MFC_AxSub#1](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_1.h)]  
   
@@ -39,11 +39,11 @@ This article describes the process for subclassing a common Windows control to c
   
  Notice that, in this example, the Windows button control is specified in `PreCreateWindow`. However, any standard Windows controls can be subclassed. For more information on standard Windows controls, see [Controls](../mfc/controls-mfc.md).  
   
- When subclassing a Windows control, you may want to specify particular window style (**WS_**) or extended window style (**WS_EX_**) flags to be used in creating the control's window. You can set values for these parameters in the `PreCreateWindow` member function by modifying the **cs.style** and the **cs.dwExStyle** structure fields. Modifications to these fields should be made using an `OR` operation, to preserve the default flags that are set by class `COleControl`. For example, if the control is subclassing the BUTTON control and you want the control to appear as a check box, insert the following line of code into the implementation of `CSampleCtrl::PreCreateWindow`, before the return statement:  
+ When subclassing a Windows control, you may want to specify particular window style (WS_) or extended window style (WS_EX_) flags to be used in creating the control's window. You can set values for these parameters in the `PreCreateWindow` member function by modifying the `cs.style` and the `cs.dwExStyle` structure fields. Modifications to these fields should be made using an **OR** operation, to preserve the default flags that are set by class `COleControl`. For example, if the control is subclassing the BUTTON control and you want the control to appear as a check box, insert the following line of code into the implementation of `CSampleCtrl::PreCreateWindow`, before the return statement:  
   
  [!code-cpp[NVC_MFC_AxSub#3](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_3.cpp)]  
   
- This operation adds the **BS_CHECKBOX** style flag, while leaving the default style flag (**WS_CHILD**) of class `COleControl` intact.  
+ This operation adds the BS_CHECKBOX style flag, while leaving the default style flag (WS_CHILD) of class `COleControl` intact.  
   
 ##  <a name="_core_modifying_the_ondraw_member_function"></a> Modifying the OnDraw Member Function  
  If you want your subclassed control to keep the same appearance as the corresponding Windows control, the `OnDraw` member function for the control should contain only a call to the `DoSuperclassPaint` member function, as in the following example:  
@@ -53,10 +53,10 @@ This article describes the process for subclassing a common Windows control to c
  The `DoSuperclassPaint` member function, implemented by `COleControl`, uses the window procedure of the Windows control to draw the control in the specified device context, within the bounding rectangle. This makes the control visible even when it is not active.  
   
 > [!NOTE]
->  The `DoSuperclassPaint` member function will work only with those control types that allow a device context to be passed as the **wParam** of a `WM_PAINT` message. This includes some of the standard Windows controls, such as **SCROLLBAR** and **BUTTON**, and all the common controls. For controls that do not support this behavior, you will have to provide your own code to properly display an inactive control.  
+>  The `DoSuperclassPaint` member function will work only with those control types that allow a device context to be passed as the *wParam* of a WM_PAINT message. This includes some of the standard Windows controls, such as SCROLLBAR and BUTTON, and all the common controls. For controls that do not support this behavior, you will have to provide your own code to properly display an inactive control.  
   
 ##  <a name="_core_handling_reflected_window_messages"></a> Handling Reflected Window Messages  
- Windows controls typically send certain window messages to their parent window. Some of these messages, such as **WM_COMMAND**, provide notification of an action by the user. Others, such as `WM_CTLCOLOR`, are used to obtain information from the parent window. An ActiveX control usually communicates with the parent window by other means. Notifications are communicated by firing events (sending event notifications), and information about the control container is obtained by accessing the container's ambient properties. Because these communication techniques exist, ActiveX control containers are not expected to process any window messages sent by the control.  
+ Windows controls typically send certain window messages to their parent window. Some of these messages, such as WM_COMMAND, provide notification of an action by the user. Others, such as WM_CTLCOLOR, are used to obtain information from the parent window. An ActiveX control usually communicates with the parent window by other means. Notifications are communicated by firing events (sending event notifications), and information about the control container is obtained by accessing the container's ambient properties. Because these communication techniques exist, ActiveX control containers are not expected to process any window messages sent by the control.  
   
  To prevent the container from receiving the window messages sent by a subclassed Windows control, `COleControl` creates an extra window to serve as the control's parent. This extra window, called a "reflector," is created only for an ActiveX control that subclasses a Windows control and has the same size and position as the control window. The reflector window intercepts certain window messages and sends them back to the control. The control, in its window procedure, can then process these reflected messages by taking actions appropriate for an ActiveX control (for example, firing an event). See [Reflected Window Message IDs](../mfc/reflected-window-message-ids.md) for a list of intercepted windows messages and their corresponding reflected messages.  
   
@@ -71,13 +71,13 @@ This article describes the process for subclassing a common Windows control to c
      [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]  
     [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_6.h)]  
   
--   In the control class .CPP file, add an `ON_MESSAGE` entry to the message map. The parameters of this entry should be the message identifier and the name of the handler function. For example:  
+-   In the control class .CPP file, add an ON_MESSAGE entry to the message map. The parameters of this entry should be the message identifier and the name of the handler function. For example:  
   
      [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]  
   
--   Also in the .CPP file, implement the **OnOcmCommand** member function to process the reflected message. The **wParam** and **lParam** parameters are the same as those of the original window message.  
+-   Also in the .CPP file, implement the `OnOcmCommand` member function to process the reflected message. The *wParam* and *lParam* parameters are the same as those of the original window message.  
   
- For an example of how reflected messages are processed, refer to the MFC ActiveX controls sample [BUTTON](../visual-cpp-samples.md). It demonstrates an **OnOcmCommand** handler that detects the **BN_CLICKED** notification code and responds by firing (sending) a Click event.  
+ For an example of how reflected messages are processed, refer to the MFC ActiveX controls sample [BUTTON](../visual-cpp-samples.md). It demonstrates an `OnOcmCommand` handler that detects the BN_CLICKED notification code and responds by firing (sending) a `Click` event.  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

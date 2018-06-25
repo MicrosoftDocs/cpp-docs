@@ -52,13 +52,13 @@ This article describes the steps necessary to incorporate optional advanced feat
   
     -   Connect your `COleTemplateServer` object to your document templates by calling the object's `ConnectTemplate` member function.  
   
-    -   Call the **COleTemplateServer::RegisterAll** member function to register all class objects with the OLE system.  
+    -   Call the `COleTemplateServer::RegisterAll` member function to register all class objects with the OLE system.  
   
-    -   Call `COleTemplateServer::UpdateRegistry`. The only parameter to `UpdateRegistry` should be `OAT_CONTAINER` if the application is not launched with the "/Embedded" switch. This registers the application as a container that can support links to embedded objects.  
+    -   Call `COleTemplateServer::UpdateRegistry`. The only parameter to `UpdateRegistry` should be *OAT_CONTAINER* if the application is not launched with the "/Embedded" switch. This registers the application as a container that can support links to embedded objects.  
   
          If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.  
   
- The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the OCLIENT.CPP file of this sample application.  
+ The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the *OCLIENT.CPP* file of this sample application.  
   
 ## See Also  
  [Containers](../mfc/containers.md)   

@@ -30,7 +30,7 @@ This article discusses several issues related to redistributing ActiveX controls
  The setup program you provide with your ActiveX controls should create a special subdirectory of the Windows directory and install the controls' .OCX files in it.  
   
 > [!NOTE]
->  Use the Windows **GetWindowsDirectory** API in your setup program to obtain the name of the Windows directory. You may want to derive the subdirectory name from the name of your company or product.  
+>  Use the Windows `GetWindowsDirectory` API in your setup program to obtain the name of the Windows directory. You may want to derive the subdirectory name from the name of your company or product.  
   
  The setup program must install the necessary redistributable DLL files in the Windows system directory. If any of the DLLs are already present on the user's machine, the setup program should compare their versions with the versions you are installing. Reinstall a file only if its version number is higher than the file already installed.  
   
@@ -41,14 +41,14 @@ This article discusses several issues related to redistributing ActiveX controls
   
  If you prefer, you can write your setup program to register the control directly instead.  
   
- Use the **LoadLibrary** Windows API to load the control DLL. Next, use **GetProcAddress** to obtain the address of the "DllRegisterServer" function. Finally, call the `DllRegisterServer` function. The following code sample demonstrates one possible method, where `hLib` stores the handle of the control library, and `lpDllEntryPoint` stores the address of the "DllRegisterServer" function.  
+ Use the `LoadLibrary` Windows API to load the control DLL. Next, use `GetProcAddress` to obtain the address of the "DllRegisterServer" function. Finally, call the `DllRegisterServer` function. The following code sample demonstrates one possible method, where `hLib` stores the handle of the control library, and `lpDllEntryPoint` stores the address of the "DllRegisterServer" function.  
   
  [!code-cpp[NVC_MFC_AxCont#16](../mfc/codesnippet/cpp/mfc-activex-controls-distributing-activex-controls_1.cpp)]  
   
  The advantage of registering the control directly is that you do not need to invoke and load a separate process (namely, REGSVR32), reducing installation time. In addition, because registration is an internal process, the setup program can handle errors and unforeseen situations better than an external process can.  
   
 > [!NOTE]
->  Before your setup program installs an ActiveX control, it should call **OleInitialize**. When your setup program is finished, call **OleUnitialize**. This ensures that the OLE system DLLs are in the proper state for registering an ActiveX control.  
+>  Before your setup program installs an ActiveX control, it should call `OleInitialize`. When your setup program is finished, call `OleUnitialize`. This ensures that the OLE system DLLs are in the proper state for registering an ActiveX control.  
   
  You should register MFCx0.DLL.  
   

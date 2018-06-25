@@ -23,7 +23,7 @@ Once you've [added items to a header control](../mfc/adding-items-to-the-header-
   
      Retrieves the index value for a specific header item.  
   
- In addition to the previous member functions, the `HDS_DRAGDROP` style allows the user to drag and drop header items within the header control. For more information, see [Providing Drag-and-Drop Support for Header Items](../mfc/providing-drag-and-drop-support-for-header-items.md).  
+ In addition to the previous member functions, the HDS_DRAGDROP style allows the user to drag and drop header items within the header control. For more information, see [Providing Drag-and-Drop Support for Header Items](../mfc/providing-drag-and-drop-support-for-header-items.md).  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)

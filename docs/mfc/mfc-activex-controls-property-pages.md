@@ -64,13 +64,13 @@ Properties Dialog Box
   
 2.  Double-click the **Dialog** directory icon.  
   
-3.  Open the **IDD_PROPPAGE_SAMPLE** dialog box.  
+3.  Open the IDD_PROPPAGE_SAMPLE dialog box.  
   
      The ActiveX Control Wizard appends the name of the project to the end of the dialog ID, in this case, Sample.  
   
 4.  Drag and drop the selected control from the Toolbox onto the dialog box area.  
   
-5.  For this example, a text label control "Caption :" and an edit box control with an **IDC_CAPTION** identifier are sufficient.  
+5.  For this example, a text label control "Caption :" and an edit box control with an IDC_CAPTION identifier are sufficient.  
   
 6.  Click **Save** on the Toolbar to save your changes.  
   
@@ -83,9 +83,9 @@ Properties Dialog Box
   
  [!code-cpp[NVC_MFC_AxUI#31](../mfc/codesnippet/cpp/mfc-activex-controls-property-pages_1.cpp)]  
   
- This function associates the property page's `m_caption` member variable with the Caption, using the `DDP_TEXT` function.  
+ This function associates the property page's *m_caption* member variable with the Caption, using the `DDP_TEXT` function.  
   
- After you have the property page control inserted, you need to establish a link between the property page control, `IDC_CAPTION`, and the actual control property, Caption, using the **DDP_Text** function as described above.  
+ After you have the property page control inserted, you need to establish a link between the property page control, IDC_CAPTION, and the actual control property, Caption, using the `DDP_Text` function as described above.  
   
  [Property Pages](../mfc/reference/property-pages-mfc.md) are available for other dialog control types, such as check boxes, radio buttons, and list boxes. The table below lists the entire set of property page **DDP_** functions and their purposes:  
   
@@ -101,7 +101,7 @@ Properties Dialog Box
 |`DDP_LBString`|The selected string in a list box with a control property. The selected string can begin with the same letters as the property's value but need not match it fully.|  
 |`DDP_LBStringExact`|The selected string in a list box with a control property. The selected string and the property's string value must match exactly.|  
 |`DDP_Radio`|A radio button with a control property.|  
-|**DDP_Text**|Text with a control property.|  
+|`DDP_Text`|Text with a control property.|  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
