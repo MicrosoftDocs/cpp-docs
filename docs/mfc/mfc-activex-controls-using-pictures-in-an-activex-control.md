@@ -56,11 +56,11 @@ This article describes the common Picture type and how to implement it in your A
      These modifications will be made to several functions that are responsible for the drawing of your ActiveX control.  
   
 ##  <a name="_core_additions_to_your_control_project"></a> Additions to Your Control Project  
- To add the property page ID for the standard Picture property page, insert the following line after the `BEGIN_PROPPAGEIDS` macro in the control implementation file (.CPP):  
+ To add the property page ID for the standard Picture property page, insert the following line after the BEGIN_PROPPAGEIDS macro in the control implementation file (.CPP):  
   
  [!code-cpp[NVC_MFC_AxPic#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_1.cpp)]  
   
- You must also increment the count parameter of your `BEGIN_PROPPAGEIDS` macro by one. The following line illustrates this:  
+ You must also increment the count parameter of your BEGIN_PROPPAGEIDS macro by one. The following line illustrates this:  
   
  [!code-cpp[NVC_MFC_AxPic#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_2.cpp)]  
   
@@ -68,7 +68,7 @@ This article describes the common Picture type and how to implement it in your A
   
  [!code-cpp[NVC_MFC_AxPic#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]  
   
- It is not necessary to name your data member `m_pic`; any name will suffice.  
+ It is not necessary to name your data member *m_pic*; any name will suffice.  
   
  Next, add a custom property that supports a Picture type:  
   
@@ -108,7 +108,7 @@ This article describes the common Picture type and how to implement it in your A
 >  Your control class and function names might differ from the example above.  
   
 ###  <a name="_core_modifications_to_your_control_project"></a> Modifications to Your Control Project  
- After you have made the necessary additions to your control project, you need to modify several functions that affect the rendering of your ActiveX control. These functions, `OnResetState`, `OnDraw`, and the Get/Set functions of a custom Picture property, are located in the control implementation file. (Note that in this example the control class is called `CSampleCtrl`, the `CPictureHolder` data member is called `m_pic`, and the custom picture property name is `ControlPicture`.)  
+ After you have made the necessary additions to your control project, you need to modify several functions that affect the rendering of your ActiveX control. These functions, `OnResetState`, `OnDraw`, and the Get/Set functions of a custom Picture property, are located in the control implementation file. (Note that in this example the control class is called `CSampleCtrl`, the `CPictureHolder` data member is called *m_pic*, and the custom picture property name is `ControlPicture`.)  
   
  In the control `OnResetState` function, add the following optional line after the call to `COleControl::OnResetState`:  
   
