@@ -2916,6 +2916,141 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/operator-inequality-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_neq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-than-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_lt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-or-equal-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_lteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-equality-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-than-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_gt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-or-equal-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_gteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-back-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#back",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-back-item-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#back_item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-container-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#container_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-front-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#front",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-front-item-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#front_item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-get-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#get_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#op_as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-pop-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#pop",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-push-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#push",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-queue-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#queue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/queue-value-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/queue-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
