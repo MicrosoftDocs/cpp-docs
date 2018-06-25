@@ -28,6 +28,5 @@ The following procedure shows how to format time values.
   
 -   [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)  
   
-## See Also  
- [Date and Time: General-Purpose Classes](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
+
 
