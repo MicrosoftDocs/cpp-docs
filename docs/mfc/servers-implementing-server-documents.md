@@ -16,7 +16,7 @@ This article explains the steps you must take to successfully implement a server
   
 #### To define a server document class  
   
-1.  Derive your document class from `COleServerDoc` instead of **CDocument**.  
+1.  Derive your document class from `COleServerDoc` instead of `CDocument`.  
   
 2.  Create a server item class derived from `COleServerItem`.  
   
