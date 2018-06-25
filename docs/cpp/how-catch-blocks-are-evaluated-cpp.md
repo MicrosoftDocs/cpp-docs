@@ -36,7 +36,7 @@ C++ enables you to throw exceptions of any type, although in general it is recom
   
  The order in which **catch** handlers appear is significant, because handlers for a given **try** block are examined in order of their appearance. For example, it is an error to place the handler for a base class before the handler for a derived class. After a matching **catch** handler is found, subsequent handlers are not examined. As a result, an ellipsis **catch** handler must be the last handler for its **try** block. For example:  
   
-```  
+```cpp 
 // ...  
 try  
 {  

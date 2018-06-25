@@ -18,7 +18,7 @@ In some cases, it is necessary for the compiler to create temporary objects. The
   
 -   To store the return value of a function that returns a user-defined type. These temporaries are created only if your program does not copy the return value to an object. For example:  
   
-    ```  
+    ```cpp 
     UDT Func1();    //  Declare a function that returns a user-defined  
                     //   type.  
   

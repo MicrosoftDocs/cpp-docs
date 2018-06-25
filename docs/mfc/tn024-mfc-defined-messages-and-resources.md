@@ -32,7 +32,7 @@ ms.workload: ["cplusplus"]
   
  These private Windows messages and associated parameter structures are declared in the MFC private header 'AFXPRIV.H'. Be warned that any of your code that includes this header may be relying on undocumented behavior and will likely break in future versions of MFC.  
   
- In the rare case of needing to handle one of these messages, you should use the `ON_MESSAGE` message map macro and handle the message in the generic LRESULT/WPARAM/LPARAM format.  
+ In the rare case of needing to handle one of these messages, you should use the ON_MESSAGE message map macro and handle the message in the generic LRESULT/WPARAM/LPARAM format.  
   
  **WM_QUERYAFXWNDPROC**  
   
@@ -46,12 +46,12 @@ ms.workload: ["cplusplus"]
   
  **WM_SIZEPARENT**  
   
- This message is sent by a frame window to its immediate children during resizing (**CFrameWnd::OnSize** calls `CFrameWnd::RecalcLayout` which calls `CWnd::RepositionBars`) to reposition the control bars around the side of the frame. The **AFX_SIZEPARENTPARAMS** structure contains the current available client rectangle of the parent and a HDWP (which may be NULL) with which to call `DeferWindowPos` to minimize repainting.  
+ This message is sent by a frame window to its immediate children during resizing (`CFrameWnd::OnSize` calls `CFrameWnd::RecalcLayout` which calls `CWnd::RepositionBars`) to reposition the control bars around the side of the frame. The AFX_SIZEPARENTPARAMS structure contains the current available client rectangle of the parent and a HDWP (which may be NULL) with which to call `DeferWindowPos` to minimize repainting.  
   
 |||  
 |-|-|  
 |wParam|Not used|  
-|lParam|Address of an **AFX_SIZEPARENTPARAMS** structure|  
+|lParam|Address of an AFX_SIZEPARENTPARAMS structure|  
 |returns|Not used (0)|  
   
  Ignoring the message indicates that the window doesn't take part in the layout.  
@@ -68,7 +68,7 @@ ms.workload: ["cplusplus"]
   
  **WM_IDLEUPDATECMDUI**  
   
- This message is sent in idle time to implement the idle-time update of update-command UI handlers. If the window (usually a control bar) handles the message, it creates a `CCmdUI` object (or an object of a derived class) and call **CCmdUI::DoUpdate** for each of the "items" in the window. This will in turn check for an `ON_UPDATE_COMMAND_UI` handler for the objects in the command-handler chain.  
+ This message is sent in idle time to implement the idle-time update of update-command UI handlers. If the window (usually a control bar) handles the message, it creates a `CCmdUI` object (or an object of a derived class) and call `CCmdUI::DoUpdate` for each of the "items" in the window. This will in turn check for an ON_UPDATE_COMMAND_UI handler for the objects in the command-handler chain.  
   
 |||  
 |-|-|  
@@ -76,11 +76,11 @@ ms.workload: ["cplusplus"]
 |lParam|Not used (0)|  
 |returns|Not used (0)|  
   
- *bDisableIfNoHandler* is nonzero to disable the UI object if there is neither an `ON_UPDATE_COMMAND_UI` nor an `ON_COMMAND` handler.  
+ *bDisableIfNoHandler* is nonzero to disable the UI object if there is neither an ON_UPDATE_COMMAND_UI nor an ON_COMMAND handler.  
   
  **WM_EXITHELPMODE**  
   
- This message is posted to a `CFrameWnd` that to exit context sensitive help mode. The receipt of this message terminates the modal loop started by **CFrameWnd::OnContextHelp.**  
+ This message is posted to a `CFrameWnd` that to exit context sensitive help mode. The receipt of this message terminates the modal loop started by `CFrameWnd::OnContextHelp`.  
   
 |||  
 |-|-|  
@@ -136,35 +136,35 @@ ms.workload: ["cplusplus"]
   
  **WM_FLOATSTATUS**  
   
- This message is sent to all pop-up windows owned by a frame window when the frame is either activated or deactivated by another top-level frame window. This is used by the implementation of **MFS_SYNCACTIVE** in `CMiniFrameWnd`, to keep the activation of these pop-up windows in sync with the activation of the top level frame window.  
+ This message is sent to all pop-up windows owned by a frame window when the frame is either activated or deactivated by another top-level frame window. This is used by the implementation of MFS_SYNCACTIVE in `CMiniFrameWnd`, to keep the activation of these pop-up windows in sync with the activation of the top level frame window.  
   
 |||  
 |-|-|  
-|wParam|Is one of the following values:<br /><br /> **FS_SHOW**<br /><br /> **FS_HIDE**<br /><br /> **FS_ACTIVATE**<br /><br /> **FS_DEACTIVATE**<br /><br /> **FS_ENABLEFS_DISABLE**<br /><br /> **FS_SYNCACTIVE**|  
+|wParam|Is one of the following values:<br /><br /> FS_SHOW<br /><br /> FS_HIDE<br /><br /> FS_ACTIVATE<br /><br /> FS_DEACTIVATE<br /><br /> FS_ENABLEFS_DISABLE<br /><br /> FS_SYNCACTIVE|  
 |lParam|Not used (0)|  
   
- The return value should be non-zero if **FS_SYNCACTIVE** is set and the window syncronizes its activation with the parent frame. `CMiniFrameWnd` returns non-zero when the style is set to **MFS_SYNCACTIVE.**  
+ The return value should be non-zero if FS_SYNCACTIVE is set and the window syncronizes its activation with the parent frame. `CMiniFrameWnd` returns non-zero when the style is set to MFS_SYNCACTIVE.  
   
  For more information, see the implementation of `CMiniFrameWnd`.  
   
 ## WM_ACTIVATETOPLEVEL  
- This message is sent to a top-level window when a window in its "top-level group" is either activated or deactivated. A window is part of a top-level group if it is a top-level window (no parent or owner), or it is owned by such a window. This message is similar in use to **WM_ACTIVATEAPP,** but works in situations where windows belonging to different processes are mixed in a single window hierarchy (common in OLE applications).  
+ This message is sent to a top-level window when a window in its "top-level group" is either activated or deactivated. A window is part of a top-level group if it is a top-level window (no parent or owner), or it is owned by such a window. This message is similar in use to WM_ACTIVATEAPP, but works in situations where windows belonging to different processes are mixed in a single window hierarchy (common in OLE applications).  
   
 ## WM_COMMANDHELP, WM_HELPHITTEST, WM_EXITHELPMODE  
  These messages are used in the implementation of context-sensitive Help. Please refer to [Technical Note 28](../mfc/tn028-context-sensitive-help-support.md) for more information.  
   
 ## MFC Private Resource Formats  
- Currently, MFC defines two private resource formats: **RT_TOOLBAR** and **RT_DLGINIT**.  
+ Currently, MFC defines two private resource formats: RT_TOOLBAR and RT_DLGINIT.  
   
 ## RT_TOOLBAR Resource Format  
- The default toolbar supplied by AppWizard is based on an **RT_TOOLBAR** custom resource, which was introduced in MFC 4.0. You can edit this resource using the Toolbar editor.  
+ The default toolbar supplied by AppWizard is based on an RT_TOOLBAR custom resource, which was introduced in MFC 4.0. You can edit this resource using the Toolbar editor.  
   
 ## RT_DLGINIT Resource Format  
  One MFC private resource format is used to store extra dialog initialization information. This includes the initial strings stored in a combo box. The format of this resource is not designed to be manually edited, but is handled by Visual C++.  
   
- Visual C++ and this **RT_DLGINIT** resource are not required to use the related features of MFC since there are API alternative to using the information in the resource. Using Visual C++ makes it much easier to write, maintain, and translate your application in the long run.  
+ Visual C++ and this RT_DLGINIT resource are not required to use the related features of MFC since there are API alternative to using the information in the resource. Using Visual C++ makes it much easier to write, maintain, and translate your application in the long run.  
   
- The basic structure of a **RT_DLGINIT** resource is as follows:  
+ The basic structure of a RT_DLGINIT resource is as follows:  
   
 ```  
 +---------------+    \  

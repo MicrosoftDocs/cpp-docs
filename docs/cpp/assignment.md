@@ -22,7 +22,7 @@ The assignment operator (**=**) is, strictly speaking, a binary operator. Its de
   
  The following example illustrates how to declare an assignment operator:  
   
-```  
+```cpp 
 // assignment.cpp  
 class Point  
 {  
@@ -47,7 +47,7 @@ int main()
   
  Note that the supplied argument is the right side of the expression. The operator returns the object to preserve the behavior of the assignment operator, which returns the value of the left side after the assignment is complete. This allows writing statements such as:  
   
-```  
+```cpp 
 pt1 = pt2 = pt3;  
 ```  
   

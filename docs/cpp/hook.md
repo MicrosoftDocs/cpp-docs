@@ -19,7 +19,7 @@ Associates a handler method with an event.
   
 ```  
   
-      long __hook(  
+long __hook(  
    &SourceClass::EventMethod,  
    source,  
    &ReceiverClass::HandlerMethod  

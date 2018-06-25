@@ -33,14 +33,14 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  The remainder of this topic assumes the following:  
   
--   The name of the `CWinApp`-derived object is `CMyWinApp`, and `CMyWinApp` is declared and defined in MYWINAPP.H and MYWINAPP.CPP.  
+-   The name of the `CWinApp`-derived object is `CMyWinApp`, and `CMyWinApp` is declared and defined in *MYWINAPP.H* and *MYWINAPP.CPP*.  
   
--   `CNewView` is the name of the new `CView`-derived object, and `CNewView` is declared and defined in NEWVIEW.H and NEWVIEW.CPP.  
+-   `CNewView` is the name of the new `CView`-derived object, and `CNewView` is declared and defined in *NEWVIEW.H* and *NEWVIEW.CPP*.  
   
 ##  <a name="vcconmodifyexistingapplicationa1"></a> Modify the Existing Application Class  
  For the application to switch between views, you need to modify the application class by adding member variables to store the views and a method to switch them.  
   
- Add the following code to the declaration of `CMyWinApp` in MYWINAPP.H:  
+ Add the following code to the declaration of `CMyWinApp` in *MYWINAPP.H*:  
   
  [!code-cpp[NVC_MFCDocViewSDI#1](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_1.h)]  
   
@@ -48,7 +48,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  The last modification to the application class requires including a new header file that defines a Windows message (**WM_INITIALUPDATE**) that is used in the switching function.  
   
- Insert the following line in the include section of MYWINAPP.CPP:  
+ Insert the following line in the include section of *MYWINAPP.CPP*:  
   
  [!code-cpp[NVC_MFCDocViewSDI#2](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_2.cpp)]  
   
@@ -59,7 +59,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  Once you have added the class to the project, you need to change the accessibility of some view class members.  
   
- Modify NEWVIEW.H by changing the access specifier from `protected` to **public** for the constructor and destructor. This allows the class to be created and destroyed dynamically and to modify the view appearance before it is visible.  
+ Modify *NEWVIEW.H* by changing the access specifier from **protected** to **public** for the constructor and destructor. This allows the class to be created and destroyed dynamically and to modify the view appearance before it is visible.  
   
  Save your changes and continue to the next step.  
   
@@ -77,7 +77,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
 ##  <a name="vcconswitchingfunctiona4"></a> Implement the Switching Function  
  In the previous step, you added code that created and initialized a new view object. The last major piece is to implement the switching method, `SwitchView`.  
   
- At the end of the implementation file for your application class (MYWINAPP.CPP), add the following method definition:  
+ At the end of the implementation file for your application class (*MYWINAPP.CPP*), add the following method definition:  
   
  [!code-cpp[NVC_MFCDocViewSDI#4](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_4.cpp)]  
   

@@ -21,11 +21,11 @@ ms.workload: ["cplusplus"]
  Please refer to Visual C++ for general details on the architectures described here, especially the distinction between Windows messages, control notifications, and commands. This note assumes you are very familiar with the issues described in the printed documentation and only addresses very advanced topics.  
   
 ## Command Routing and Dispatch MFC 1.0 Functionality Evolves to MFC 2.0 Architecture  
- Windows has the **WM_COMMAND** message that is overloaded to provide notifications of menu commands, accelerator keys and dialog-control notifications.  
+ Windows has the WM_COMMAND message that is overloaded to provide notifications of menu commands, accelerator keys and dialog-control notifications.  
   
- MFC 1.0 built on that a little by allowing a command handler (for example, "OnFileNew") in a **CWnd** derived class to get called in response to a specific **WM_COMMAND**. This is glued together with a data structure called the message map, and results in a very space-efficient command mechanism.  
+ MFC 1.0 built on that a little by allowing a command handler (for example, "OnFileNew") in a `CWnd` derived class to get called in response to a specific WM_COMMAND. This is glued together with a data structure called the message map, and results in a very space-efficient command mechanism.  
   
- MFC 1.0 also provided additional functionality for separating control notifications from command messages. Commands are represented by a 16-bit ID, sometimes known as a Command ID. Commands normally start from a **CFrameWnd** (that is, a menu select or a translated accelerator) and get routed to a variety of other windows.  
+ MFC 1.0 also provided additional functionality for separating control notifications from command messages. Commands are represented by a 16-bit ID, sometimes known as a Command ID. Commands normally start from a `CFrameWnd` (that is, a menu select or a translated accelerator) and get routed to a variety of other windows.  
   
  MFC 1.0 used command routing in a limited sense for the implementation of Multiple Document Interface (MDI). (An MDI frame window delegate commands to its active MDI Child window.)  
   
@@ -50,9 +50,9 @@ ms.workload: ["cplusplus"]
   
 -   PERHAPS In an ID array used to create a toolbar.  
   
--   In an **ON_COMMAND** macro.  
+-   In an ON_COMMAND macro.  
   
--   PERHAPS In an **ON_UPDATE_COMMAND_UI** macro.  
+-   PERHAPS In an ON_UPDATE_COMMAND_UI macro.  
   
  Currently, the only implementation in MFC that requires command IDs be >= 0x8000 is the implementation of GOSUB dialogs/commands.  
   
@@ -65,23 +65,23 @@ ms.workload: ["cplusplus"]
   
  You can place a normal button in a normal modal dialog with the IDC of the button set to the appropriate command ID. When the user selects the button, the owner of the dialog (usually the main frame window) gets the command just like any other command. This is called a GOSUB command since it usually is used to bring up another dialog (a GOSUB of the first dialog).  
   
- You can also call the function **CWnd::UpdateDialogControls** on your dialog and pass it the address of your main frame window. This function will enable or disable your dialog controls based on whether they have command handlers in the frame. This function is called automatically for you for control bars in your application's idle loop, but you must call it directly for normal dialogs that you wish to have this feature.  
+ You can also call the function `CWnd::UpdateDialogControls` on your dialog and pass it the address of your main frame window. This function will enable or disable your dialog controls based on whether they have command handlers in the frame. This function is called automatically for you for control bars in your application's idle loop, but you must call it directly for normal dialogs that you wish to have this feature.  
   
 ## When ON_UPDATE_COMMAND_UI is Called  
- Maintaining the enabled/checked state of all a program's menu items all the time can be a computationally expensive problem. A common technique is to enable/check menu items only when the user selects the POPUP. The MFC 2.0 implementation of **CFrameWnd** handles the **WM_INITMENUPOPUP** message and uses the command routing architecture to determine the states of menus through **ON_UPDATE_COMMAND_UI** handlers.  
+ Maintaining the enabled/checked state of all a program's menu items all the time can be a computationally expensive problem. A common technique is to enable/check menu items only when the user selects the POPUP. The MFC 2.0 implementation of `CFrameWnd` handles the WM_INITMENUPOPUP message and uses the command routing architecture to determine the states of menus through ON_UPDATE_COMMAND_UI handlers.  
   
- **CFrameWnd** also handles the **WM_ENTERIDLE** message to describe the current menu item selected on the status bar (also known as the message line).  
+ `CFrameWnd` also handles the WM_ENTERIDLE message to describe the current menu item selected on the status bar (also known as the message line).  
   
- An application's menu structure, edited by Visual C++, is used to represent the potential commands available at **WM_INITMENUPOPUP** time. **ON_UPDATE_COMMAND_UI** handlers can modify the state or text of a menu, or for advanced uses (like the File MRU list or the OLE Verbs pop-up menu), actually modify the menu structure before the menu is drawn.  
+ An application's menu structure, edited by Visual C++, is used to represent the potential commands available at WM_INITMENUPOPUP time. ON_UPDATE_COMMAND_UI handlers can modify the state or text of a menu, or for advanced uses (like the File MRU list or the OLE Verbs pop-up menu), actually modify the menu structure before the menu is drawn.  
   
- The same sort of **ON_UPDATE_COMMAND_UI** processing is done for toolbars (and other control bars) when the application enters its idle loop. See the *Class Library Reference* and [Technical Note 31](../mfc/tn031-control-bars.md) for more information on control bars.  
+ The same sort of ON_UPDATE_COMMAND_UI processing is done for toolbars (and other control bars) when the application enters its idle loop. See the *Class Library Reference* and [Technical Note 31](../mfc/tn031-control-bars.md) for more information on control bars.  
   
 ## Nested Pop-up Menus  
- If you are using a nested menu structure, you will notice that the **ON_UPDATE_COMMAND_UI** handler for the first menu item in the pop-up menu is called in two different cases.  
+ If you are using a nested menu structure, you will notice that the ON_UPDATE_COMMAND_UI handler for the first menu item in the pop-up menu is called in two different cases.  
   
- First, it is called for the pop-up menu itself. This is necessary because pop-up menus do not have IDs and we use the ID of the first menu item of the pop-up menu to refer to the entire pop-up menu. In this case, the **m_pSubMenu** member variable of the **CCmdUI** object will be non-NULL and will point to the pop-up menu.  
+ First, it is called for the pop-up menu itself. This is necessary because pop-up menus do not have IDs and we use the ID of the first menu item of the pop-up menu to refer to the entire pop-up menu. In this case, the *m_pSubMenu* member variable of the `CCmdUI` object will be non-NULL and will point to the pop-up menu.  
   
- Second, it is called just before the menu items in the pop-up menu are to be drawn. In this case, the ID refers just to the first menu item and the **m_pSubMenu** member variable of the **CCmdUI** object will be NULL.  
+ Second, it is called just before the menu items in the pop-up menu are to be drawn. In this case, the ID refers just to the first menu item and the *m_pSubMenu* member variable of the `CCmdUI` object will be NULL.  
   
  This allows you to enable the pop-up menu distinct from its menu items, but requires that you write some menu aware code. For example, in a nested menu with the following structure:  
   

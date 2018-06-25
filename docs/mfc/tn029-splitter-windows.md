@@ -54,7 +54,7 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
  Pane:  
  An application-specific window that a `CSplitterWnd` manages. A pane is usually an object that is derived from the [CView Class](../mfc/reference/cview-class.md), but can be any [CWnd](../mfc/reference/cwnd-class.md) object that has the appropriate child window ID.  
   
- To use a `CWnd`-derived object, pass the `RUNTIME_CLASS` of the object to the `CreateView` function as you would if you were using a `CView`-derived class. Your class must use `DECLARE_DYNCREATE` and `IMPLEMENT_DYNCREATE` because the framework uses dynamic creation at runtime. Although there is a lot of code in `CSplitterWnd` that is specific to the `CView` class, [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) is always used before those actions are performed.  
+ To use a `CWnd`-derived object, pass the RUNTIME_CLASS of the object to the `CreateView` function as you would if you were using a `CView`-derived class. Your class must use DECLARE_DYNCREATE and IMPLEMENT_DYNCREATE because the framework uses dynamic creation at runtime. Although there is a lot of code in `CSplitterWnd` that is specific to the `CView` class, [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) is always used before those actions are performed.  
   
  Splitter Bar:  
  A control that is placed between rows and columns of panes. It may be used to adjust the sizes of rows or columns of panes.  
@@ -76,14 +76,14 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
 [      ][      ][v]  
 ```  
   
- When the user moves the scroll bar, `WM_VSCROLL` messages will be sent to both views. When either view sets the scroll bar position, the shared scroll bar will be set.  
+ When the user moves the scroll bar, WM_VSCROLL messages will be sent to both views. When either view sets the scroll bar position, the shared scroll bar will be set.  
   
  Note that shared scroll bars are most useful with similar view objects. If you mix views of different types in a splitter, then you may have to write special code to coordinate their scroll positions. Any `CView`-derived class that uses the `CWnd` scroll bar APIs will delegate to the shared scroll bar if it exists. The `CScrollView` implementation is one example of a `CView` class that supports shared scroll bars. Classes that are not derived from `CView`, classes that rely on non-control scroll bars, or classes that use standard Windows implementations (for example, `CEditView`) will not work with the shared scroll bar feature of `CSplitterWnd`.  
   
 ## Minimum Sizes  
  For each row there is a minimum row height, and for each column there is a minimum column width. This minimum guarantees that a pane is not too small to be shown in complete detail.  
   
- For a static splitter window, the initial minimum row height and column width is 0. For a dynamic splitter window, the initial minimum row height and column width are set by the `sizeMin` parameter of the `CSplitterWnd::Create` function.  
+ For a static splitter window, the initial minimum row height and column width is 0. For a dynamic splitter window, the initial minimum row height and column width are set by the *sizeMin* parameter of the `CSplitterWnd::Create` function.  
   
  You can change these minimum sizes by using the [CSplitterWnd::SetRowInfo](../mfc/reference/csplitterwnd-class.md#setrowinfo) and [CSplitterWnd::SetColumnInfo](../mfc/reference/csplitterwnd-class.md#setcolumninfo) functions.  
   

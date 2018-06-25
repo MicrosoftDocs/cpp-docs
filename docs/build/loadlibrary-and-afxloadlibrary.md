@@ -25,7 +25,7 @@ For MFC applications that load MFC extension DLLs, we recommend that you use `Af
 If Windows cannot load the DLL, the process can attempt to recover from the error. For example, the process could notify the user of the error and ask the user to specify another path to the DLL.
 
 > [!IMPORTANT]  
-> Make sure to specify the full path of any DLLs. The current directory is searched first when files are loaded. If you do not qualify the path of the file, a file that is not the intended one might be loaded. Another way to prevent this is by using the [/DEPENDENTLOADFLAGS](../build/reference/dependentloadflags.md) linker option.
+> Make sure to specify the full path of any DLLs. The current directory is searched first when files are loaded. If you do not qualify the path of the file, a file that is not the intended one might be loaded. Another way to prevent this is by using the [/DEPENDENTLOADFLAG](../build/reference/dependentloadflag.md) linker option.
 
 ## What do you want to do?
 

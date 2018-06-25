@@ -41,7 +41,7 @@ Active documents provide an extension to traditional embedded objects. The Activ
 |-------------------------|---------------------------------|  
 |Uses compound files as its storage mechanism.|`IPersistStorage`.|  
 |Supports the basic embedding features of Active documents, including Create From File.|`IPersistFile`, `IOleObject`, and `IDataObject`.|  
-|Supports in-place activation.|`IOleInPlaceObject` and `IOleInPlaceActiveObject` (using the container's `IOleInPlaceSite` and **IOleInPlaceFrame** interfaces).|  
+|Supports in-place activation.|`IOleInPlaceObject` and `IOleInPlaceActiveObject` (using the container's `IOleInPlaceSite` and `IOleInPlaceFrame` interfaces).|  
 |Supports the Active document extensions that involve these new interfaces. Some interfaces are optional.|`IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, and `IPrint`.|  
   
  MFC provides support for extending existing embedded server support to Active documents.  
@@ -54,7 +54,7 @@ Active documents provide an extension to traditional embedded objects. The Activ
   
 |Class type|Formerly derived from|Change to derive from|  
 |----------------|---------------------------|---------------------------|  
-|In-Place Frame|`COleIPFrameWnd`|**COleDocIPFrameWnd**|  
+|In-Place Frame|`COleIPFrameWnd`|`COleDocIPFrameWnd`|  
 |Item|`COleServerItem`|`CDocObjectServerItem`|  
   
  You will also change how information is entered in the registry, and make several other changes. If your application currently has no COM components support, you can add server support by running the Application Wizard and integrating the COM component-specific code with your existing application.  

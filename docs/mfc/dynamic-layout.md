@@ -22,7 +22,7 @@ With MFC in Visual Studio 2015, you can create dialogs that the user can resize,
   
  ![Dialog after being resized.](../mfc/media/mfcdynamiclayout5.png "mfcdynamiclayout5")  
   
- You can control dynamic layout by specifying the details for each control in the Resource Editor in the IDE, or you can do so programmatically by accessing the CMFCDynamicLayout object for a particular control and setting the properties.  
+ You can control dynamic layout by specifying the details for each control in the Resource Editor in the IDE, or you can do so programmatically by accessing the `CMFCDynamicLayout` object for a particular control and setting the properties.  
   
 ### Setting dynamic layout properties in the resource editor  
  You can set the dynamic layout behavior for a dialog box without having to write any code, by using the resource editor.  
@@ -52,7 +52,7 @@ With MFC in Visual Studio 2015, you can create dialogs that the user can resize,
   
 1.  Find or create a place in your dialog class's implementation code where you want to specify the dynamic layout for the dialog. For example, you might want to add a method such as `AdjustLayout` in your dialog, and call it from places where the layout needs to be changed. You might first call this from the constructor, or after making changes to the dialog.  
   
-2.  For the dialog, call [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout), a method of the CWnd class. GetDynamicLayout returns a pointer to a CMFCDynamicLayout object.  
+2.  For the dialog, call [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout), a method of the `CWnd` class. `GetDynamicLayout` returns a pointer to a `CMFCDynamicLayout` object.  
   
  ```  
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
@@ -97,7 +97,7 @@ With MFC in Visual Studio 2015, you can create dialogs that the user can resize,
   
 9. The next time the user resizes the dialog, the [CMFCDynamicLayout::Adjust](../mfc/reference/cmfcdynamiclayout-class.md#adjust) method is called which actually applies the settings.  
   
-10. If you want to disable dynamic layout, call [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) with `FALSE` as for the `bEnabled` parameter.  
+10. If you want to disable dynamic layout, call [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) with **FALSE** as for the *bEnabled* parameter.  
   
  ```  
     pDialog->EnableDynamicLayout(FALSE);
@@ -113,7 +113,7 @@ With MFC in Visual Studio 2015, you can create dialogs that the user can resize,
 
  ```  
   
-     The named resource must reference a dialog that contains layout information in the form of an AFX_DIALOG_LAYOUT entry in the resource file, as in the following example:  
+     The named resource must reference a dialog that contains layout information in the form of an **AFX_DIALOG_LAYOUT** entry in the resource file, as in the following example:  
   
  ``` *///////////////////////////////////////////////////////////////////////////// *// *// AFX_DIALOG_LAYOUT *//  
  

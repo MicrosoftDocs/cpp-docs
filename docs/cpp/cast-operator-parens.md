@@ -18,8 +18,7 @@ A type cast provides a method for explicit conversion of the type of an object i
   
 ```  
   
-      unary-expression  
-( type-name ) cast-expression  
+unary-expression ( type-name ) cast-expression  
 ```  
   
 ## Remarks  
@@ -29,7 +28,7 @@ A type cast provides a method for explicit conversion of the type of an object i
   
 ## Example  
   
-```  
+```cpp  
 // expre_CastOperator.cpp  
 // compile with: /EHsc  
 // Demonstrate cast operator  
@@ -49,7 +48,7 @@ int main()
   
 ## Example  
   
-```  
+```cpp 
 // expre_CastOperator2.cpp  
 // The following sample shows how to define and use a cast operator.   
 #include <string.h>  

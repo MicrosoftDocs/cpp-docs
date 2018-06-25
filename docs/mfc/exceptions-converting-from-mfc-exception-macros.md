@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Exceptions: Converting from MFC Exception Macros
 This is an advanced topic.  
   
- This article explains how to convert existing code written with Microsoft Foundation Class macros — **TRY**, **CATCH**, **THROW**, and so on — to use the C++ exception-handling keywords **try**, **catch**, and `throw`. Topics include:  
+ This article explains how to convert existing code written with Microsoft Foundation Class macros — **TRY**, **CATCH**, **THROW**, and so on — to use the C++ exception-handling keywords **try**, **catch**, and **throw**. Topics include:  
   
 -   [Conversion advantages](#_core_advantages_of_converting)  
   
@@ -27,7 +27,7 @@ This is an advanced topic.
   
 -   Code that uses the C++ exception-handling keywords compiles to a slightly smaller .EXE or .DLL.  
   
--   The C++ exception-handling keywords are more versatile: They can handle exceptions of any data type that can be copied (`int`, **float**, `char`, and so on), whereas the macros handle exceptions only of class `CException` and classes derived from it.  
+-   The C++ exception-handling keywords are more versatile: They can handle exceptions of any data type that can be copied (**int**, **float**, **char**, and so on), whereas the macros handle exceptions only of class `CException` and classes derived from it.  
   
  The major difference between the macros and the keywords is that code using the macros "automatically" deletes a caught exception when the exception goes out of scope. Code using the keywords does not, so you must explicitly delete a caught exception. For more information, see the article [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).  
   
@@ -49,19 +49,19 @@ This is an advanced topic.
   
 2.  Delimitation of catch blocks:  
   
-     With the macros, the **CATCH** macro (with its arguments) begins the first catch block; the `AND_CATCH` macro begins subsequent catch blocks, and the `END_CATCH` macro terminates the sequence of catch blocks.  
+     With the macros, the **CATCH** macro (with its arguments) begins the first catch block; the **AND_CATCH** macro begins subsequent catch blocks, and the **END_CATCH** macro terminates the sequence of catch blocks.  
   
-     With the keywords, the **catch** keyword (with its exception declaration) begins each catch block. There is no counterpart to the `END_CATCH` macro; the catch block ends with its closing brace.  
+     With the keywords, the **catch** keyword (with its exception declaration) begins each catch block. There is no counterpart to the **END_CATCH** macro; the catch block ends with its closing brace.  
   
 3.  The throw expression:  
   
-     The macros use `THROW_LAST` to re-throw the current exception. The `throw` keyword, with no argument, has the same effect.  
+     The macros use **THROW_LAST** to re-throw the current exception. The **throw** keyword, with no argument, has the same effect.  
   
 ##  <a name="_core_doing_the_conversion"></a> Doing the Conversion  
   
 #### To convert code using macros to use the C++ exception-handling keywords  
   
-1.  Locate all occurrences of the MFC macros **TRY**, **CATCH**, `AND_CATCH`, `END_CATCH`, **THROW**, and `THROW_LAST`.  
+1.  Locate all occurrences of the MFC macros **TRY**, **CATCH**, **AND_CATCH**, **END_CATCH**, **THROW**, and **THROW_LAST**.  
   
 2.  Replace or delete all occurrences of the following macros:  
   
@@ -69,13 +69,13 @@ This is an advanced topic.
   
      **CATCH** (Replace it with **catch**)  
   
-     `AND_CATCH` (Replace it with **catch**)  
+     **AND_CATCH** (Replace it with **catch**)  
   
-     `END_CATCH` (Delete it)  
+     **END_CATCH** (Delete it)  
   
-     **THROW** (Replace it with `throw`)  
+     **THROW** (Replace it with **throw**)  
   
-     `THROW_LAST` (Replace it with `throw`)  
+     **THROW_LAST** (Replace it with **throw**)  
   
 3.  Modify the macro arguments so that they form valid exception declarations.  
   

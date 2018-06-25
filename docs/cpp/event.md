@@ -19,9 +19,7 @@ Declares an event.
   
 ```  
   
-      __event   
-      method-declarator  
-      ;  
+__event method-declarator;  
 __event __interface interface-specifier;  
 __event member-declarator;  
 ```  
@@ -47,7 +45,7 @@ __event member-declarator;
 ## Native Events  
  Native events are methods. The return type is typically `HRESULT` or `void`, but can be any integral type, including an `enum`. When an event uses an integral return type, an error condition is defined when an event handler returns a nonzero value, in which case the event being raised will call the other delegates.  
   
-```  
+```cpp 
 // Examples of native C++ events:  
 __event void OnDblClick();  
 __event HRESULT OnClick(int* b, char* s);  
@@ -62,7 +60,7 @@ __event HRESULT OnClick(int* b, char* s);
   
  The [__interface](../cpp/interface.md) keyword is always required after `__event` for a COM event source.  
   
-```  
+```cpp 
 // Example of a COM event:  
 __event __interface IEvent1;  
 ```  
@@ -76,7 +74,7 @@ __event __interface IEvent1;
   
  In the .NET Framework, you can treat a data member as if it were a method itself (that is, the `Invoke` method of its corresponding delegate). You must predefine the delegate type for declaring a managed event data member. In contrast, a managed event method implicitly defines the corresponding managed delegate if it is not already defined. For example, you can declare an event value such as `OnClick` as an event as follows:  
   
-```  
+```cpp 
 // Examples of managed events:  
 __event ClickEventHandler* OnClick;  // data member as event  
 __event void OnClick(String* s);  // method as event  
@@ -86,7 +84,7 @@ __event void OnClick(String* s);  // method as event
   
 ## Example: Native Events  
   
-```  
+```cpp 
 // EventHandling_Native_Event.cpp  
 // compile with: /c  
 [event_source(native)]  
@@ -98,7 +96,7 @@ public:
   
 ## Example: COM Events  
   
-```  
+```cpp 
 // EventHandling_COM_Event.cpp  
 // compile with: /c  
 #define _ATL_ATTRIBUTES 1  

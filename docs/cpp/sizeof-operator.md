@@ -38,7 +38,7 @@ sizeof  ( type-name )
   
 ## Example  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   
@@ -62,7 +62,7 @@ int main()
   
 ## Sample Output  
   
-```  
+```Output  
 The size of a char is: 1  
 The length of Hello, world! is: 14  
 The size of the pointer is 4  
@@ -96,7 +96,7 @@ The size of the pointer is 4
   
  The `sizeof` operator is often used to calculate the number of elements in an array using an expression of the form:  
   
-```  
+```cpp 
 sizeof array / sizeof array[0]  
 ```  
   

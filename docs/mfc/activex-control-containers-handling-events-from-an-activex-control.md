@@ -29,7 +29,7 @@ This article discusses using the Properties window to install event handlers for
   
  As you use the Properties window to add events, an event map entry (`ON_EVENT`) is added to the event sink map and an event handler function is added to the container's implementation (.CPP) file.  
   
- The following example declares an event handler, called `OnClickInCircCtrl`, for the Circ control's **ClickIn** event:  
+ The following example declares an event handler, called `OnClickInCircCtrl`, for the Circ control's `ClickIn` event:  
   
  [!code-cpp[NVC_MFC_AxCont#10](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]  
   

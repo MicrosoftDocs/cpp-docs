@@ -47,8 +47,8 @@ Guidance for porting code and upgrading projects to Visual Studio 2015 or Visual
 [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)<br/>
 Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
 
-[Visual Studio Downloads](http://go.microsoft.com/fwlink/p/?linkid=235233)<br/>
-Download Visual Studio.
+[Install C++ support in Visual Studio](build/vscpp-step-0-installation.md)<br/>
+Download Visual Studio and install the Visual C++ toolset.
 
 [Visual C++ Tools and Features in Visual Studio Editions](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 Find out about different Visual Studio editions.
@@ -135,7 +135,7 @@ You can use the vcpkg command-line tool to greatly simplify the discovery and in
 [Standard C++](http://isocpp.org/)<br/>
 Learn about C++, get an overview of Modern C++, and find links to books, articles, talks, and events
 
-[Learn Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx)<br/>
+[Learn Visual C++](build/vscpp-step-1-create.md)<br/>
 Start learning C++.
 
 ## See also

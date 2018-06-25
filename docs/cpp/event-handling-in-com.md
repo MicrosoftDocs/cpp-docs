@@ -32,7 +32,7 @@ In COM event handling, you set up an event source and event receiver using the [
 ### COM Event Code  
  The following example shows how to fire an event in a COM class. To compile and run the example, refer to the comments in the code.  
   
-```  
+```cpp 
 // evh_server.h  
 #pragma once  
   
@@ -51,7 +51,7 @@ class DECLSPEC_UUID("530DF3AD-6936-3214-A83B-27B63C7997C4") CSource;
   
  And then the server:  
   
-```  
+```cpp 
 // evh_server.cpp  
 // compile with: /LD  
 // post-build command: Regsvr32.exe /s evh_server.dll  
@@ -76,7 +76,7 @@ public:
   
  And then the client:  
   
-```  
+```cpp 
 // evh_client.cpp  
 // compile with: /link /OPT:NOREF  
 #define _ATL_ATTRIBUTES 1  
@@ -134,7 +134,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 MyHandler1 was called with value 123.  
 MyHandler2 was called with value 123.  
 ```  
@@ -148,14 +148,14 @@ MyHandler2 was called with value 123.
   
  For example, suppose `IEventSource` is defined to have the following methods:  
   
-```  
+```cpp 
 [id(1)] HRESULT MyEvent1([in] int value);  
 [id(2)] HRESULT MyEvent2([in] int value);  
 ```  
   
  Assume the event source has the following form:  
   
-```  
+```cpp 
 [coclass, event_source(com)]  
 class CSource : public IEventSource {  
 public:  
@@ -171,7 +171,7 @@ public:
   
  Then, in the event receiver, any handler hooked to a method in `IEventSource` must match its name and signature, as follows:  
   
-```  
+```cpp 
 [coclass, event_receiver(com, true)]  
 class CReceiver {  
 public:  

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Using Arrays (C++)
 You can access individual elements of an array by using the array subscript operator (`[ ]`). If a one-dimensional array is used in an expression that has no subscript, the array name evaluates to a pointer to the first element in the array.  
   
-```  
+```cpp 
 // using_arrays.cpp  
 int main() {  
    char chArray[10];  
@@ -26,7 +26,7 @@ int main() {
   
  When you use multidimensional arrays, you can use various combinations in expressions.  
   
-```  
+```cpp 
 // using_arrays_2.cpp  
 // compile with: /EHsc /W1  
 #include <iostream>  

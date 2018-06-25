@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      void ChangeType(  
+void ChangeType(  
    VARTYPE vartype,  
    const _variant_t* pSrc = NULL   
 );  

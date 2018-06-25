@@ -1,7 +1,7 @@
 ---
 title: "Linker Tools Error LNK1000 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/18/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1000"]
@@ -13,8 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1000
-unknown error; consult documentation for technical support options  
-  
- Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact `Microsoft Product Support Services`. For information on how to investigate and report these errors, see [http://support.microsoft.com/default.aspx?scid=kb;en-us;134650](http://support.microsoft.com/default.aspx?scid=kb;en-us;134650).  
-  
- You may get this error if you mix standard header files (for example, dos.h) and your own files. `#include` the standard headers first, followed by your own header files.
+
+> unknown error; consult documentation for technical support options
+
+Note the circumstances of the error, then try to isolate the problem and create a reproducible test case. For information on how to investigate and report these errors, see [How to report a problem with the Visual C++ toolset or documentation](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+
+You may get this error if you mix standard header files (for example, Windows.h) and your own files. Include a precompiled header, if any, first, then the standard headers, followed by your own header files.

@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      template<typename _InterfaceType> bool operator==(  
+template<typename _InterfaceType> bool operator==(  
    int NULL,  
    _com_ptr_t<_InterfaceType>& p   
 );  

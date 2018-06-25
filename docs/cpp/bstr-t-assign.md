@@ -34,7 +34,7 @@ void Assign(
   
 ## Example  
   
-```  
+```cpp 
 // _bstr_t_Assign.cpp  
   
 #include <comdef.h>  

@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "1/11/2018"
+ms.date: "06/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -23,7 +23,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 - A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience.
 
-- A copy of Visual Studio 2017. For information on how to download and install Visual Studio, see [Install Visual Studio 2017](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
+- A copy of Visual Studio 2017. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
    ![Desktop development with C++](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
 
@@ -552,7 +552,7 @@ As promised, here's the complete code for the working application.
 
 1. To run the application, press **F5**. A window that contains the text "Hello, Windows desktop!" should appear in the upper-left corner of the display.
 
-   ![Run the DesktopApp Project](../build/media/desktop-app-project-run-150.gif "Run the DesktopApp Project")
+   ![Run the DesktopApp Project](../build/media/desktop-app-project-run-157.png "Run the DesktopApp Project")
 
 Congratulations! You've completed this walkthrough and built a traditional Windows desktop application.
 

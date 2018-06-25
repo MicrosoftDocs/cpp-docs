@@ -16,7 +16,7 @@ A literal is a program element that directly represents a value. This article co
   
  . You can use literals in many contexts, but most commonly to initialize named variables and to pass arguments to functions:  
   
-```  
+```cpp 
 const int answer = 42; // integer literal  
 double d = sin(108.87);     //floating point literal passed to sin function  
 bool b = true;              // boolean literal  
@@ -35,7 +35,7 @@ MyClass* mc = nullptr;      // pointer literal
   
  To specify a decimal integral literal, begin the specification with a nonzero digit. For example:  
   
-```  
+```cpp 
 int i = 157;   // Decimal literal  
 int j = 0198;       // Not a decimal number; erroneous octal literal  
 int k = 0365;       // Leading zero specifies octal literal, not decimal  
@@ -45,21 +45,21 @@ int
   
  To specify an octal integral literal, begin the specification with 0, followed by a sequence of digits in the range 0 through 7. The digits 8 and 9 are errors in specifying an octal literal. For example:  
   
-```  
+```cpp 
 int i = 0377;   // Octal literal  
 int j = 0397;        // Error: 9 is not an octal digit  
 ```  
   
  To specify a hexadecimal integral literal, begin the specification with `0x` or `0X` (the case of the "x" does not matter), followed by a sequence of digits in the range `0` through `9` and `a` (or `A`) through `f` (or `F`). Hexadecimal digits `a` (or `A`) through `f` (or `F`) represent values in the range 10 through 15. For example:  
   
-```  
+```cpp 
 int i = 0x3fff;   // Hexadecimal literal  
 int j = 0X3FFF;        // Equal to i  
 ```  
   
  To specify an unsigned type, use either the **u** or **U** suffix. To specify a long type, use either the **l** or **L** suffix. To specify a 64-bit integral type, use the LL, or ll suffix. The i64 suffix is still supported but should be avoided because it is specific to Microsoft and is not portable. For example:  
   
-```  
+```cpp 
 unsigned val_1 = 328u;             // Unsigned value  
 long val_2 = 0x7FFFFFL;                 // Long value specified   
                                         //  as hex literal  
@@ -70,7 +70,7 @@ auto val_4 = 0x8000000000000000ULL << 16;     // unsigned long long
   
  **Digit separators**: You can use the single-quote character (apostrophe) to separate place values in larger numbers to make them easier for humans to read. Separators have no effect on compilation.  
   
-```  
+```cpp 
 long long i = 24'847'458'121  
 ```  
   
@@ -79,14 +79,14 @@ long long i = 24'847'458'121
   
  Floating-point literals have a "mantissa," which specifies the value of the number, an "exponent," which specifies the magnitude of the number, and an optional suffix that specifies the literal's type. The mantissa is specified as a sequence of digits followed by a period, followed by an optional sequence of digits representing the fractional part of the number. For example:  
   
-```  
+```cpp 
 18.46  
 38.  
 ```  
   
  The exponent, if present, specifies the magnitude of the number as a power of 10, as shown in the following example:  
   
-```  
+```cpp 
 18.46e0      // 18.46  
 18.46e1           // 184.6  
 ```  
@@ -97,13 +97,13 @@ long long i = 24'847'458'121
   
  Although `long double` and **double** have the same representation, they are not the same type. For example, you can have overloaded functions like  
   
-```  
+```cpp 
 void func( double );  
 ```  
   
  and  
   
-```  
+```cpp 
 void func( long double );  
 ```  
   
@@ -116,7 +116,7 @@ void func( long double );
 ## Binary literals (C++14)  
  A binary literal can be specified by the use of the `0B` or `0b` prefix, followed by a sequence of 1's and 0's:  
   
-```  
+```cpp 
   
 auto x = 0B001101 ; // int  
 auto y = 0b000001 ; // int  
@@ -125,7 +125,7 @@ auto y = 0b000001 ; // int
 ## Avoid using literals as "magic constants"  
  You can use literals directly in expressions and statements although it's not always good programming practice:  
   
-```  
+```cpp 
 if (num < 100)  
     return "Success";  
   

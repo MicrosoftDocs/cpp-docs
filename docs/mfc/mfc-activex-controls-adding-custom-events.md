@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Custom Events
-Custom events differ from stock events in that they are not automatically fired by class `COleControl`. A custom event recognizes a certain action, determined by the control developer, as an event. The event map entries for custom events are represented by the `EVENT_CUSTOM` macro. The following section implements a custom event for an ActiveX control project that was created using the ActiveX Control Wizard.  
+Custom events differ from stock events in that they are not automatically fired by class `COleControl`. A custom event recognizes a certain action, determined by the control developer, as an event. The event map entries for custom events are represented by the EVENT_CUSTOM macro. The following section implements a custom event for an ActiveX control project that was created using the ActiveX Control Wizard.  
   
 ##  <a name="_core_adding_a_custom_event_with_classwizard"></a> Adding a Custom Event with the Add Event Wizard  
  The following procedure adds a specific custom event, ClickIn. You can use this procedure to add other custom events. Substitute your custom event name and its parameters for the ClickIn event name and parameters.  
@@ -27,13 +27,13 @@ Custom events differ from stock events in that they are not automatically fired 
   
      This opens the Add Event Wizard.  
   
-4.  In the **Event name** box, first select any existing event, then click on the **Custom** radio button, then type `ClickIn`.  
+4.  In the **Event name** box, first select any existing event, then click on the **Custom** radio button, then type *ClickIn*.  
   
 5.  In the **Internal name** box, type the name of the event's firing function. For this example, use the default value provided by the Add Event Wizard (`FireClickIn`).  
   
-6.  Add a parameter, called `xCoord` (type `OLE_XPOS_PIXELS`), using the **Parameter Name** and **Parameter Type** controls.  
+6.  Add a parameter, called *xCoord* (type *OLE_XPOS_PIXELS*), using the **Parameter Name** and **Parameter Type** controls.  
   
-7.  Add a second parameter, called `yCoord` (type `OLE_YPOS_PIXELS`).  
+7.  Add a second parameter, called *yCoord* (type *OLE_YPOS_PIXELS*).  
   
 8.  Click **Finish** to create the event.  
   
@@ -59,7 +59,7 @@ Custom events differ from stock events in that they are not automatically fired 
  This line assigns the ClickIn event a specific ID number, taken from the event's position in the Add Event Wizard event list. The entry in the event list allows a container to anticipate the event. For example, it might provide handler code to be executed when the event is fired.  
   
 ##  <a name="_core_calling_fireclickin"></a> Calling FireClickIn  
- Now that you have added the ClickIn custom event using the Add Event Wizard, you must decide when this event is to be fired. You do this by calling `FireClickIn` when the appropriate action occurs. For this discussion, the control uses the `InCircle` function inside a `WM_LBUTTONDOWN` message handler to fire the ClickIn event when a user clicks inside a circular or elliptical region. The following procedure adds the `WM_LBUTTONDOWN` handler.  
+ Now that you have added the ClickIn custom event using the Add Event Wizard, you must decide when this event is to be fired. You do this by calling `FireClickIn` when the appropriate action occurs. For this discussion, the control uses the `InCircle` function inside a WM_LBUTTONDOWN message handler to fire the ClickIn event when a user clicks inside a circular or elliptical region. The following procedure adds the WM_LBUTTONDOWN handler.  
   
 #### To add a message handler with the Add Event Wizard  
   
@@ -71,13 +71,13 @@ Custom events differ from stock events in that they are not automatically fired 
   
      The Properties window displays a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.  
   
-4.  From the Properties window, select the message you want to handle. For this example, select `WM_LBUTTONDOWN`.  
+4.  From the Properties window, select the message you want to handle. For this example, select WM_LBUTTONDOWN.  
   
 5.  From the drop-down list box on the right, select **\<Add> OnLButtonDown**.  
   
 6.  Double-click the new handler function in Class View to jump to the message handler code in the implementation (.CPP) file of your ActiveX control.  
   
- The following code sample calls the **InCircle** function every time the left mouse button is clicked within the control window. This sample can be found in the `WM_LBUTTONDOWN` handler function, `OnLButtonDown`, in the [Circ sample](../visual-cpp-samples.md) abstract.  
+ The following code sample calls the `InCircle` function every time the left mouse button is clicked within the control window. This sample can be found in the WM_LBUTTONDOWN handler function, `OnLButtonDown`, in the [Circ sample](../visual-cpp-samples.md) abstract.  
   
  [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]  
   

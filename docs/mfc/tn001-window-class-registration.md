@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 This note describes the MFC routines that register the special [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.  
   
 ## The Problem  
- The attributes of a [CWnd](../mfc/reference/cwnd-class.md) object, like an `HWND` handle in Windows, are stored in two places: the window object and the `WNDCLASS`. The name of the `WNDCLASS` is passed to general window creation functions such as [CWnd::Create](../mfc/reference/cwnd-class.md#create) and [CFrameWnd::Create](../mfc/reference/cframewnd-class.md#create) in the `lpszClassName` parameter.  
+ The attributes of a [CWnd](../mfc/reference/cwnd-class.md) object, like an `HWND` handle in Windows, are stored in two places: the window object and the `WNDCLASS`. The name of the `WNDCLASS` is passed to general window creation functions such as [CWnd::Create](../mfc/reference/cwnd-class.md#create) and [CFrameWnd::Create](../mfc/reference/cframewnd-class.md#create) in the *lpszClassName* parameter.  
   
  This `WNDCLASS` must be registered through one of four means:  
   
@@ -33,15 +33,15 @@ This note describes the MFC routines that register the special [WNDCLASS](http:/
   
 |Field|Description|  
 |-----------|-----------------|  
-|`lpfnWndProc`|window proc, must be an `AfxWndProc`|  
-|`cbClsExtra`|not used (should be zero)|  
-|`cbWndExtra`|not used (should be zero)|  
-|`hInstance`|automatically filled with [AfxGetInstanceHandle](../mfc/reference/application-information-and-management.md#afxgetinstancehandle)|  
-|`hIcon`|icon for frame windows, see below|  
-|`hCursor`|cursor for when mouse is over window, see below|  
-|`hbrBackground`|background color, see below|  
-|`lpszMenuName`|not used (should be NULL)|  
-|`lpszClassName`|class name, see below|  
+|*lpfnWndProc*|window proc, must be an `AfxWndProc`|  
+|*cbClsExtra*|not used (should be zero)|  
+|*cbWndExtra*|not used (should be zero)|  
+|*hInstance*|automatically filled with [AfxGetInstanceHandle](../mfc/reference/application-information-and-management.md#afxgetinstancehandle)|  
+|*hIcon*|icon for frame windows, see below|  
+|*hCursor*|cursor for when mouse is over window, see below|  
+|*hbrBackground*|background color, see below|  
+|*lpszMenuName*|not used (should be NULL)|  
+|*lpszClassName*|class name, see below|  
   
 ## Provided WNDCLASSes  
  Earlier versions of MFC (before MFC 4.0), provided several predefined Window classes. These Window classes are no longer provided by default. Applications should use `AfxRegisterWndClass` with the appropriate parameters.  
@@ -92,7 +92,7 @@ pWnd->Create(strWndClass, ...);
  `AfxRegisterWndClass` will throw a [CResourceException](../mfc/reference/cresourceexception-class.md) if the window class failed to register (either because of bad parameters, or out of Windows memory).  
   
 ## The RegisterClass and AfxRegisterClass Functions  
- If you want to do anything more sophisticated than what `AfxRegisterWndClass` provides, you can call the Windows API `RegisterClass` or the MFC function `AfxRegisterClass`. The `CWnd`, [CFrameWnd](../mfc/reference/cframewnd-class.md) and [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) `Create` functions take a `lpszClassName` string name for the window class as the first parameter. You can use any registered window class name, regardless of the method you used to register it.  
+ If you want to do anything more sophisticated than what `AfxRegisterWndClass` provides, you can call the Windows API `RegisterClass` or the MFC function `AfxRegisterClass`. The `CWnd`, [CFrameWnd](../mfc/reference/cframewnd-class.md) and [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) `Create` functions take a *lpszClassName* string name for the window class as the first parameter. You can use any registered window class name, regardless of the method you used to register it.  
   
  It is important to use `AfxRegisterClass` (or `AfxRegisterWndClass`) in a DLL on Win32. Win32 does not automatically unregister classes registered by a DLL, so you must explicitly unregister classes when the DLL is terminated. By using `AfxRegisterClass` instead of `RegisterClass` this is handled automatically for you. `AfxRegisterClass` maintains a list of unique classes registered by your DLL and will automatically unregister them when the DLL terminates. When you use `RegisterClass` in a DLL, you must ensure that all classes are unregistered when the DLL is terminated (in your [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) function). Failure to do so might cause `RegisterClass` to fail unexpectedly when another client application tries to use your DLL.  
   
