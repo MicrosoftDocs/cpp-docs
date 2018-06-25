@@ -30,7 +30,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
  To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. 
 
- In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multitargeting.md).
+ In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 ## Visual Studio 2017 Installation
 

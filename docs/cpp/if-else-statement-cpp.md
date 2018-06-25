@@ -106,7 +106,7 @@ int main()
 	}
 }
 ```  
-## <a name="if_with_init></a> if statement with an initializer
+## <a name="if_with_init"></a> if statement with an initializer
 
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): An **if** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block. 
 
