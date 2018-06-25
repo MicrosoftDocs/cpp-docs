@@ -2791,6 +2791,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/accumulate-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/numeric-stl-clr#accumulate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/adjacent-difference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/numeric-stl-clr#adjacent_difference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/inner-product-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/numeric-stl-clr#inner_product",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/partial-sum-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/numeric-stl-clr#partial_sum",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
