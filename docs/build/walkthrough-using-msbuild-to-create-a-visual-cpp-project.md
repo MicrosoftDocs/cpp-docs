@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
@@ -31,6 +31,12 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includ
 -   [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)]  
   
 -   A general understanding of the [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] system.  
+ 
+> [!NOTE]
+> Do not use this approach if you intend to edit the project file later by using the Visual Studio IDE. If you create a .vcxproj file manually, the Visual Studio IDE might not be able to edit it, or event to load it, especially if the project uses wildcards in project items.
+
+> [!NOTE] 
+> Most of the low-level build instructions are contained in the **.targets** and **.props** files that are defined in the VSTargets directory. The default path for Visual Studio 2017 Enterprise Edition is **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\**.  
   
 ## Creating the C++ Source Files  
  In this walkthrough you will create a project that has a source file and a header file. The source file main.cpp contains the main function for the console application. The header file main.h contains code to include the iostream header file. You can create these C++ files by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] or a text editor.  
@@ -122,8 +128,11 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includ
       <ClCompile Include="main.cpp" />  
     </ItemGroup>  
     ```  
-  
-7.  Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:  
+
+> [!NOTE]
+> \<CICompile> is a *build target* and is defined in the **VCTargets** directory.
+
+1.  Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:  
   
     ```xml  
     <ItemGroup>  
@@ -131,6 +140,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includ
     </ItemGroup>  
     ```  
   
+
 8.  Add the following \<Import> element that specifies the path of the file that defines the target for this project:  
   
     ```xml  
