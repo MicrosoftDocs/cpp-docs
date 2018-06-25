@@ -37,31 +37,31 @@ ms.workload: ["cplusplus"]
   
 #### To add a View panel and Window panel to the ribbon bar  
   
-1.  Create a panel named `View`, which has two check boxes that toggle the status bar and toolbar.  
+1.  Create a panel named *View*, which has two check boxes that toggle the status bar and toolbar.  
   
     1.  From the **Toolbox**, drag a **Panel** to the **Home** category. Then drag two **Check Boxes** to the panel.  
   
-    2.  Click the panel to modify its properties. Change **Caption** to `View`.  
+    2.  Click the panel to modify its properties. Change **Caption** to *View*.  
   
-    3.  Click the first check box to modify its properties. Change **ID** to `ID_VIEW_TOOLBAR` and **Caption** to `Toolbar`.  
+    3.  Click the first check box to modify its properties. Change **ID** to *ID_VIEW_TOOLBAR* and **Caption** to *Toolbar*.  
   
-    4.  Click the second check box to modify its properties. Change **ID** to `ID_VIEW_STATUS_BAR` and **Caption** to `Status Bar`.  
+    4.  Click the second check box to modify its properties. Change **ID** to *ID_VIEW_STATUS_BAR* and **Caption** to *Status Bar*.  
   
-2.  Create a panel named `Window` that has a split button. When a user clicks the split button, a shortcut menu displays three commands that are already defined in the Scribble application.  
+2.  Create a panel named *Window* that has a split button. When a user clicks the split button, a shortcut menu displays three commands that are already defined in the Scribble application.  
   
     1.  From the **Toolbox**, drag a **Panel** to the **Home** category. Then drag a **Button** to the panel.  
   
-    2.  Click the panel to modify its properties. Change **Caption** to `Window`.  
+    2.  Click the panel to modify its properties. Change **Caption** to *Window*.  
   
-    3.  Click the button. Change **Caption** to `Windows`, **Keys** to `w`, **Large Image Index** to `1`, and **Split Mode** to `False`. Then click the ellipsis (**...**) next to **Menu Items** to open the **Items Editor** dialog box.  
+    3.  Click the button. Change **Caption** to *Windows*, **Keys** to *w*, **Large Image Index** to *1*, and **Split Mode** to *False*. Then click the ellipsis (**...**) next to **Menu Items** to open the **Items Editor** dialog box.  
   
     4.  Click **Add** three times to add three buttons.  
   
-    5.  Click the first button and then change **Caption** to `New Window`, and **ID** to `ID_WINDOW_NEW`.  
+    5.  Click the first button and then change **Caption** to *New Window*, and **ID** to *ID_WINDOW_NEW*.  
   
-    6.  Click the second button and then change **Caption** to `Cascade`, and **ID** to `ID_WINDOW_CASCADE`.  
+    6.  Click the second button and then change **Caption** to *Cascade*, and **ID** to *ID_WINDOW_CASCADE*.  
   
-    7.  Click the third button and then change **Caption** to `Tile`, and **ID** to `ID_WINDOW_TILE_HORZ`.  
+    7.  Click the third button and then change **Caption** to *Tile*, and **ID** to *ID_WINDOW_TILE_HORZ*.  
   
 3.  Save the changes, and then build and run the application. The **View** and **Window** panels should be displayed. Click the buttons to confirm that they function correctly.  
   
@@ -74,11 +74,11 @@ ms.workload: ["cplusplus"]
   
 1.  From the **Toolbox**, drag a **Panel** to the **Home** category. Then drag two **Buttons** to the panel.  
   
-2.  Click the panel to modify its properties. Change **Caption** to `Help`.  
+2.  Click the panel to modify its properties. Change **Caption** to *Help*.  
   
-3.  Click the first button. Change **Caption** to `Help Topics`, and **ID** to `ID_HELP_FINDER`.  
+3.  Click the first button. Change **Caption** to *Help Topics*, and **ID** to *ID_HELP_FINDER*.  
   
-4.  Click the second button. Change **Caption** to `About Scribble...`, and **ID** to `ID_APP_ABOUT`.  
+4.  Click the second button. Change **Caption** to *About Scribble...*, and **ID** to *ID_APP_ABOUT*.  
   
 5.  Save the changes, and then build and run the application. A **Help** panel that contains two ribbon buttons should be displayed.  
   
@@ -96,21 +96,21 @@ ms.workload: ["cplusplus"]
   
 1.  From the **Toolbox**, drag a **Panel** to the **Home** category. Then drag a **Check Box** and two **Combo Boxes** to the panel.  
   
-2.  Click the panel to modify its properties. Change **Caption** to `Pen`.  
+2.  Click the panel to modify its properties. Change **Caption** to *Pen*.  
   
-3.  Click the check box. Change **Caption** to `Use Thick`, and **ID** to `ID_PEN_THICK_OR_THIN`.  
+3.  Click the check box. Change **Caption** to *Use Thick*, and **ID** to *ID_PEN_THICK_OR_THIN*.  
   
-4.  Click the first combo box. Change **Caption** to `Thin Pen`, **ID** to `ID_PEN_THIN_WIDTH`, **Text** to `2`, **Type** to `Drop List`, and **Data** to `1;2;3;4;5;6;7;8;9;`.  
+4.  Click the first combo box. Change **Caption** to *Thin Pen*, **ID** to *ID_PEN_THIN_WIDTH*, **Text** to *2*, **Type** to *Drop List*, and **Data** to *1;2;3;4;5;6;7;8;9;*.  
   
-5.  Click the second combo box. Change **Caption** to `Thick Pen`, **ID** to `ID_PEN_THICK_WIDTH`, **Text** to `5`, **Type** to `Drop List`, and **Data** to `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`.  
+5.  Click the second combo box. Change **Caption** to *Thick Pen*, **ID** to *ID_PEN_THICK_WIDTH*, **Text** to *5*, **Type** to *Drop List*, and **Data** to *5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;*.  
   
 6.  The new combo boxes do not correspond to any existing menu items. Therefore, you must create a menu item for every pen option.  
   
     1.  In the **Resource View** window, open the IDR_SCRIBBTYPE menu resource.  
   
-    2.  Click **Pen** to open the p**en** menu. Then click **Type Here** and type `Thi&n Pen`.  
+    2.  Click **Pen** to open the p**en** menu. Then click **Type Here** and type *Thi&n Pen*.  
   
-    3.  Right-click the text that you just typed to open the **Properties** window, and then change the ID property to `ID_PEN_THIN_WIDTH`.  
+    3.  Right-click the text that you just typed to open the **Properties** window, and then change the ID property to *ID_PEN_THIN_WIDTH*.  
   
     4.  You must also create an event handler for every pen menu item. Right-click the **Thi&n Pen** menu item that you just created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.  
   
@@ -139,9 +139,9 @@ if (nCurSel>= 0)
   
     1.  In the **Resource View** window, open the IDR_SCRIBBTYPE menu resource.  
   
-    2.  Click **Pen** to open the pen menu. Then click **Type Here** and type `Thic&k Pen`.  
+    2.  Click **Pen** to open the pen menu. Then click **Type Here** and type *Thic&k Pen*.  
   
-    3.  Right-click the text that you just typed to display the **Properties** window. Change the ID property to `ID_PEN_THICK_WIDTH`.  
+    3.  Right-click the text that you just typed to display the **Properties** window. Change the ID property to *ID_PEN_THICK_WIDTH*.  
   
     4.  Right-click the **Thick Pen** menu item that you just created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.  
   
@@ -175,11 +175,11 @@ if (nCurSel>= 0)
   
 #### To add a color button to the Pen panel  
   
-1.  Before you add the color button, create a menu item for it. In the **Resource View** window, open the IDR_SCRIBBTYPE menu resource. Click the **Pen** menu item to open the pen menu. Then click **Type Here** and type `&Color`. Right-click the text that you just typed to display the **Properties** window. Change the ID to `ID_PEN_COLOR`.  
+1.  Before you add the color button, create a menu item for it. In the **Resource View** window, open the IDR_SCRIBBTYPE menu resource. Click the **Pen** menu item to open the pen menu. Then click **Type Here** and type *&Color*. Right-click the text that you just typed to display the **Properties** window. Change the ID to *ID_PEN_COLOR*.  
   
 2.  Now add the color button. From the **Toolbox**, drag a **Color Button** to the **Pen** panel.  
   
-3.  Click the color button. Change **Caption** to `Color`, **ID** to `ID_PEN_COLOR`, **SimpleLook** to `True`, **Large Image Index** to `1`, and **Split Mode** to `False`.  
+3.  Click the color button. Change **Caption** to *Color*, **ID** to *ID_PEN_COLOR*, **SimpleLook** to *True*, **Large Image Index** to *1*, and **Split Mode** to *False*.  
   
 4.  Save the changes, and then build and run the application. The new color button should be displayed on the **Pen** panel. However, it cannot be used because it does not yet have an event handler. The next steps show how to add an event handler for the color button.  
   

@@ -21,7 +21,7 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 1.  Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.  
   
-2.  In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. The **MFC Application Wizard** will be displayed.  
+2.  In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as *MFCShellControls* and click **OK**. The **MFC Application Wizard** will be displayed.  
   
 3.  In the **MFC Application Wizard** dialog box, click **Next**. The **Application Type** pane will be displayed.  
   
@@ -87,13 +87,13 @@ In this walkthrough, you will create an application that resembles File Explorer
  }  
  ```  
   
-3.  Now we update the `CMFCShellControlsView` class to handle the **WM_CREATE** windows message. Open the MFCShellControlsView.h header file and click on this line of code:  
+3.  Now we update the `CMFCShellControlsView` class to handle the WM_CREATE windows message. Open the MFCShellControlsView.h header file and click on this line of code:  
   
  ```  
     class CMFCShellControlsView : public CView  
  ```  
   
-     Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the **WM_CREATE** message. From the drop down list next to **WM_CREATE**, select **\<Add> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.  
+     Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the WM_CREATE message. From the drop down list next to WM_CREATE, select *\<Add> OnCreate*. This creates a message handler for us and automatically updates the MFC message map.  
   
      In the `OnCreate` method we will now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:  
   
@@ -118,7 +118,7 @@ In this walkthrough, you will create an application that resembles File Explorer
  }  
  ```  
   
-4.  Repeat the previous step but for the **WM_SIZE** message. This will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:  
+4.  Repeat the previous step but for the WM_SIZE message. This will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:  
   
  ```  
     void CMFCShellControlsView::OnSize(UINT nType,

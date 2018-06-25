@@ -21,7 +21,7 @@ This walkthrough shows how to use the **MFC Application Wizard** to create an ap
   
 1.  Use the **MFC Application Wizard** to create an MFC application that has a ribbon. To run the wizard, on the **File** menu, point to **New**, and then click **Project**.  
   
-2.  In the **New Project** dialog box, expand the **Visual C++** node under **Installed Templates**, select **MFC**, and then select **MFC Application**. Type a name for the project, for example, `MFCRibbonApp`, and then click **OK**.  
+2.  In the **New Project** dialog box, expand the **Visual C++** node under **Installed Templates**, select **MFC**, and then select **MFC Application**. Type a name for the project, for example, *MFCRibbonApp*, and then click **OK**.  
   
 3.  On the first page of the **MFC Application Wizard**, click **Next**.  
   
@@ -29,7 +29,7 @@ This walkthrough shows how to use the **MFC Application Wizard** to create an ap
   
 5.  On the **Compound Document Support** page, make sure that **None** is selected and then click **Next**.  
   
-6.  On the **Document Template Properties** page, in the **File extension** box, type a file name extension for documents that this application creates, for example, `mfcrbnapp`. Click **Next**.  
+6.  On the **Document Template Properties** page, in the **File extension** box, type a file name extension for documents that this application creates, for example, *mfcrbnapp*. Click **Next**.  
   
 7.  On the **Database Support** page, make sure that **None** is selected and then click **Next**.  
   
@@ -51,14 +51,14 @@ This walkthrough shows how to use the **MFC Application Wizard** to create an ap
   
      A category that has the caption **Category1** is created. By default, the category contains one panel.  
   
-     Right-click **Category1** and then click **Properties**. In the **Properties** window, change **Caption** to `Custom`.  
+     Right-click **Category1** and then click **Properties**. In the **Properties** window, change **Caption** to *Custom*.  
   
      The **Large Images** and **Small Images** properties specify the bitmaps that are used as icons for the ribbon elements in this category. Because creating custom bitmaps is beyond the scope of this walkthrough, just reuse the bitmaps that were created by the wizard. Small bitmaps are 16 pixels by 16 pixels. For small images, use the bitmaps that are accessed by the IDB_FILESMALL resource ID. Large bitmaps are 32 pixels by 32 pixels. For large images, use the bitmaps that are accessed by the IDB_FILELARGE resource ID.  
   
     > [!NOTE]
     >  On high dots per inch (HDPI) displays, the HDPI versions of the images are automatically used.  
   
-3.  Next, customize the panel. Panels are used to group items that are logically related to one another. For example, on the **Home** tab of this application, the **Cut**, **Copy**, and **Paste** commands are all located on the **Clipboard** panel. To customize the panel, right-click **Panel1** and then click **Properties**. In the **Properties** window, change **Caption** to `Favorites`.  
+3.  Next, customize the panel. Panels are used to group items that are logically related to one another. For example, on the **Home** tab of this application, the **Cut**, **Copy**, and **Paste** commands are all located on the **Clipboard** panel. To customize the panel, right-click **Panel1** and then click **Properties**. In the **Properties** window, change **Caption** to *Favorites*.  
   
      You can specify the **Image Index** for the panel. This number specifies the icon that is displayed if the ribbon panel is added to the **Quick Access Toolbar**. The icon is not displayed on the ribbon panel itself.  
   
@@ -72,9 +72,9 @@ This walkthrough shows how to use the **MFC Application Wizard** to create an ap
   
      To create the **Print** button, drag a Button tool to the panel.  
   
-     In the **Properties** window, change the **ID** property to **ID_FILE_PRINT**, which should already be defined. Change **Caption** to `Print`. Change **Image Index** to `4`.  
+     In the **Properties** window, change the **ID** property to **ID_FILE_PRINT**, which should already be defined. Change **Caption** to *Print*. Change **Image Index** to *4*.  
   
-     To create the **Quick Print** button, click the property value column next to **Menu Items**, and then click the ellipsis (**...**). In the **Items Editor**, click the unlabeled **Add** button to create a menu item. In the **Properties** window, change **Caption** to `Quick Print`, **ID** to `ID_FILE_PRINT_DIRECT`, and **Image** to `5`. The image property specifies the Quick Print icon in the IDB_FILESMALL bitmap resource.  
+     To create the **Quick Print** button, click the property value column next to **Menu Items**, and then click the ellipsis (**...**). In the **Items Editor**, click the unlabeled **Add** button to create a menu item. In the **Properties** window, change **Caption** to *Quick Print*, **ID** to *ID_FILE_PRINT_DIRECT*, and **Image** to *5*. The image property specifies the Quick Print icon in the IDB_FILESMALL bitmap resource.  
   
 3.  To verify that the buttons were added to the ribbon panel, build the application and run it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu. The **Print** button and the combo box on the **Favorites** panel on the **Custom** tab on the ribbon should be displayed.  
   
