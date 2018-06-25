@@ -16,7 +16,7 @@ As with any [CWnd](../mfc/reference/cwnd-class.md)-derived class, you can modify
   
 ### To create a derived control class  
   
-1.  Derive your class from an existing control class and optionally override the **Create** member function so that it provides the necessary arguments to the base-class **Create** function.  
+1.  Derive your class from an existing control class and optionally override the `Create` member function so that it provides the necessary arguments to the base-class `Create` function.  
   
 2.  Provide message-handler member functions and message-map entries to modify the control's behavior in response to specific Windows messages. See [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).  
   

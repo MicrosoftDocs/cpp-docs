@@ -16,7 +16,7 @@ For exported functions of a DLL, use the [AFX_MANAGE_STATE](reference/extension-
   
  When called, this macro sets `pModuleState`, a pointer to an `AFX_MODULE_STATE` structure containing global data for the module, as the effective module state for the remainder of the containing scope of the function. Upon leaving the scope containing the macro, the previous effective module state is automatically restored.  
   
- This switching is achieved by constructing an instance of an **AFX_MODULE_STATE** class on the stack. In its constructor, this class obtains a pointer to the current module state and stores it in a member variable, and then sets `pModuleState` as the new effective module state. In its destructor, this class restores the pointer stored in its member variable as the effective module state.  
+ This switching is achieved by constructing an instance of an `AFX_MODULE_STATE` class on the stack. In its constructor, this class obtains a pointer to the current module state and stores it in a member variable, and then sets `pModuleState` as the new effective module state. In its destructor, this class restores the pointer stored in its member variable as the effective module state.  
   
  If you have an exported function, such as one that launches a dialog box in your DLL, you need to add the following code to the beginning of the function:  
   

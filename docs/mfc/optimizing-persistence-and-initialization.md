@@ -32,7 +32,7 @@ By default, persistence and initialization in a control are handled by the `DoPr
   
  [!code-cpp[NVC_MFC_AxOpt#3](../mfc/codesnippet/cpp/optimizing-persistence-and-initialization_3.cpp)]  
   
- Note that in the load case, a temporary variable is used and then its value is assigned, rather than casting `m_boolProp` to a **BYTE** reference. The casting technique would result in only one byte of `m_boolProp` being modified, leaving the remaining bytes uninitialized.  
+ Note that in the load case, a temporary variable is used and then its value is assigned, rather than casting *m_boolProp* to a **BYTE** reference. The casting technique would result in only one byte of *m_boolProp* being modified, leaving the remaining bytes uninitialized.  
   
  For the same control, you can optimize the control's initialization by overriding [COleControl::OnResetState](../mfc/reference/colecontrol-class.md#onresetstate) as follows:  
   

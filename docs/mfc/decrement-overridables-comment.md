@@ -18,7 +18,7 @@ The `// Overridables` section of an MFC class declaration contains virtual funct
   
  `virtual void OnDraw( ) = 0;`  
   
- In the sample listing from class `CStdioFile`, in [An Example of the Comments](../mfc/an-example-of-the-comments.md), the list includes no overridables section. Class **CDocument**, on the other hand, lists approximately 10 overridable member functions.  
+ In the sample listing from class `CStdioFile`, in [An Example of the Comments](../mfc/an-example-of-the-comments.md), the list includes no overridables section. Class `CDocument`, on the other hand, lists approximately 10 overridable member functions.  
   
  In some classes, you may also see the comment `// Advanced Overridables`. These are functions that only advanced programmers should attempt to override. You will probably never need to override them.  
   

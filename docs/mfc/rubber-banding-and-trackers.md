@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Rubber-Banding and Trackers
 Another feature supplied with trackers is the "rubber-band" selection, which allows a user to select multiple OLE items by dragging a sizing rectangle around the items to be selected. When the user releases the left mouse button, items within the region selected by the user are selected and can be manipulated by the user. For instance, the user might drag the selection into another container application.  
   
- Implementing this feature requires some additional code in your application's `WM_LBUTTONDOWN` handler function.  
+ Implementing this feature requires some additional code in your application's WM_LBUTTONDOWN handler function.  
   
  The following code sample implements rubber-band selection and additional features.  
   

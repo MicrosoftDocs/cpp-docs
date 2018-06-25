@@ -29,7 +29,7 @@ This article discusses considerations for writing code that uses both the MFC ex
   
  [!code-cpp[NVC_MFCExceptions#10](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_1.cpp)]  
   
- The problem occurs because `e` is deleted when execution passes out of the "inner" **CATCH** block. Using the `THROW_LAST` macro instead of the **THROW** statement will cause the "outer" **CATCH** block to receive a valid pointer:  
+ The problem occurs because `e` is deleted when execution passes out of the "inner" **CATCH** block. Using the **THROW_LAST** macro instead of the **THROW** statement will cause the "outer" **CATCH** block to receive a valid pointer:  
   
  [!code-cpp[NVC_MFCExceptions#11](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]  
   

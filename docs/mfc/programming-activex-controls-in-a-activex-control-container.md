@@ -58,7 +58,7 @@ This article describes the process for accessing the exposed [methods](../mfc/mf
 ##  <a name="_core_member_variable_modifications_to_the_project"></a> Member Variable Modifications to the Project  
  Once the ActiveX control has been added to the project and embedded in a dialog box container, it can be accessed by other parts of the project. The easiest way to access the control is to [create a member variable](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) of the dialog class, `CContainerDlg` (step 2), that is of the same type as the wrapper class added to the project by Visual C++. You can then use the member variable to access the embedded control at any time.  
   
- When the **Add Member Variable** dialog box adds the `m_circctl` member variable to the project, it also adds the following lines to the header file (.H) of the `CContainerDlg` class:  
+ When the **Add Member Variable** dialog box adds the *m_circctl* member variable to the project, it also adds the following lines to the header file (.H) of the `CContainerDlg` class:  
   
  [!code-cpp[NVC_MFC_AxCont#4](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_4.h)]  
 [!code-cpp[NVC_MFC_AxCont#5](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_5.h)]  
@@ -74,7 +74,7 @@ This article describes the process for accessing the exposed [methods](../mfc/mf
   
  A common place to modify the control's properties is in the `OnInitDialog` member function of the main dialog class. This function is called just before the dialog box appears and is used to initialize its contents, including any of its controls.  
   
- The following code example uses the `m_circctl` member variable to modify the Caption and CircleShape properties of the embedded Circ control:  
+ The following code example uses the *m_circctl* member variable to modify the Caption and CircleShape properties of the embedded Circ control:  
   
  [!code-cpp[NVC_MFC_AxCont#7](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_7.cpp)]  
   

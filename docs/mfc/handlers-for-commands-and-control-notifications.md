@@ -24,7 +24,7 @@ There are no default handlers for commands or control-notification messages. The
   
  [!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_2.h)]  
   
- You might assign this command an ID of `IDC_MY_BUTTON` because it is equivalent to an application-specific user-interface object.  
+ You might assign this command an ID of **IDC_MY_BUTTON** because it is equivalent to an application-specific user-interface object.  
   
  Both categories of messages take no arguments and return no value.  
   
