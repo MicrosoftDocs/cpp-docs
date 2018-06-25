@@ -93,10 +93,10 @@ void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard COM object.  
   
- `bAddDeep`  
+ *bAddDeep*  
  Specifies whether this method should add to the storyboard keyframes that depend on other keyframes.  
   
 ##  <a name="addtransitions"></a>  CAnimationGroup::AddTransitions  
@@ -109,10 +109,10 @@ void AddTransitions(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard COM object.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
   
 ##  <a name="animate"></a>  CAnimationGroup::Animate  
  Animates a group.  
@@ -125,9 +125,9 @@ BOOL Animate(
 ```  
   
 ### Parameters  
- `pManager`  
- `pTimer`  
- `bScheduleNow`  
+ *pManager*  
+ *pTimer*  
+ *bScheduleNow*  
   
 ### Return Value  
  TRUE if the method succeeds; otherwise FALSE.  
@@ -153,10 +153,10 @@ CAnimationGroup(CAnimationController* pParentController, UINT32 nGroupID);
 ```  
   
 ### Parameters  
- `pParentController`  
+ *pParentController*  
  A pointer to animation controller that creates a group.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies GroupID.  
   
 ##  <a name="createtransitions"></a>  CAnimationGroup::CreateTransitions  
@@ -177,7 +177,7 @@ CAnimationBaseObject* FindAnimationObject(IUIAnimationVariable* pVariable);
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to animation variable.  
   
 ### Return Value  
@@ -277,10 +277,10 @@ BOOL Schedule(IUIAnimationTimer* pTimer, UI_ANIMATION_SECONDS time);
 ```  
   
 ### Parameters  
- `pTimer`  
+ *pTimer*  
  A pointer to animation timer.  
   
- `time`  
+ *time*  
  Specifies time to schedule the animation.  
   
 ### Return Value  
@@ -297,7 +297,7 @@ void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### Parameters  
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Specifies how to destroy transitions.  
   
 ### Remarks  

@@ -79,7 +79,7 @@ void AddTransition(CBaseTransition* pTransition);
 ```  
   
 ### Parameters  
- `pTransition`  
+ *pTransition*  
  A pointer to transition object.  
   
 ### Remarks  
@@ -100,16 +100,16 @@ CAnimationValue(
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies default value.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  specifies user-defined data.  
   
 ### Remarks  
@@ -125,7 +125,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains a pointer to CAnimationVariable representing the animated value.  
   
 ##  <a name="getvalue"></a>  CAnimationValue::GetValue  
@@ -137,10 +137,10 @@ BOOL GetValue(INT32& nValue);
 ```  
   
 ### Parameters  
- `dblValue`  
+ *dblValue*  
  Output. When the function returns it contains a current value of animation variable.  
   
- `nValue`  
+ *nValue*  
  Output. When the function returns it contains a current value of animation variable.  
   
 ### Return Value  
@@ -204,10 +204,10 @@ void operator=(INT32 nVal);
 ```  
   
 ### Parameters  
- `dblVal`  
+ *dblVal*  
  Specifies the value to be assigned to Animation Value.  
   
- `nVal`  
+ *nVal*  
  Specifies the value to be assigned to Animation Value.  
   
 ### Remarks  
@@ -221,7 +221,7 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies the default value.  
   
 ### Remarks  

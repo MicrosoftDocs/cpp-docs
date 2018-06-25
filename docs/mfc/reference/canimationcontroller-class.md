@@ -119,7 +119,7 @@ CAnimationGroup* AddAnimationObject(CAnimationBaseObject* pObject);
 ```  
   
 ### Parameters  
- `pObject`  
+ *pObject*  
  A pointer to an animation object.  
   
 ### Return Value  
@@ -138,10 +138,10 @@ BOOL AddKeyframeToGroup(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `pKeyframe`  
+ *pKeyframe*  
  A pointer to a keyframe.  
   
 ### Return Value  
@@ -160,10 +160,10 @@ BOOL AnimateGroup(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies GroupID.  
   
- `bScheduleNow`  
+ *bScheduleNow*  
  Specifies whether to run animation right away.  
   
 ### Return Value  
@@ -188,10 +188,10 @@ void CleanUpGroup(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies GroupID.  
   
- `pGroup`  
+ *pGroup*  
  A pointer to animation group to clean.  
   
 ### Remarks  
@@ -213,16 +213,16 @@ CKeyFrame* CreateKeyframe(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID for which keyframe is created.  
   
- `pTransition`  
+ *pTransition*  
  A pointer to transition. Keyframe will be inserted to storyboard after this transition.  
   
- `pKeyframe`  
+ *pKeyframe*  
  A pointer to base keyframe for this keyframe.  
   
- `offset`  
+ *offset*  
  Offset in seconds from the base keyframe specified by pKeyframe.  
   
 ### Return Value  
@@ -239,7 +239,7 @@ virtual BOOL EnableAnimationManagerEvent(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  Specifies whether to set or release a handler.  
   
 ### Return Value  
@@ -258,10 +258,10 @@ virtual BOOL EnableAnimationTimerEventHandler(
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  Specifies whether to set or release the handlers.  
   
- `idleBehavior`  
+ *idleBehavior*  
  Specifies idle behavior for timer update handler.  
   
 ### Return Value  
@@ -278,7 +278,7 @@ virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
 ```  
   
 ### Parameters  
- `dwHandlerType`  
+ *dwHandlerType*  
  A combination of UI_ANIMATION_PHT_ flags (see remarks), which specifies what handlers to set or release.  
   
 ### Return Value  
@@ -297,10 +297,10 @@ virtual BOOL EnableStoryboardEventHandler(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `bEnable`  
+ *bEnable*  
  Specifies whether to set or release a handler.  
   
 ### Return Value  
@@ -318,10 +318,10 @@ CAnimationGroup* FindAnimationGroup(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies a GroupID.  
   
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
 ### Return Value  
@@ -341,13 +341,13 @@ BOOL FindAnimationObject(
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to animation variable.  
   
- `ppObject`  
+ *ppObject*  
  Output. Contains a pointer to animation object or NULL.  
   
- `ppGroup`  
+ *ppGroup*  
  Output. Contains a pointer to animation group that holds the animation object, or NULL.  
   
 ### Return Value  
@@ -511,7 +511,7 @@ virtual void OnAfterSchedule(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group, which has been scheduled.  
   
 ### Remarks  
@@ -530,19 +530,19 @@ virtual void OnAnimationIntegerValueChanged(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group that holds an animation object whose value has changed.  
   
- `pObject`  
+ *pObject*  
  A pointer to an animation object that contains an animation variable whose value has changed.  
   
- `variable`  
+ *variable*  
  A pointer to an animation variable.  
   
- `newValue`  
+ *newValue*  
  Specifies new value.  
   
- `prevValue`  
+ *prevValue*  
  Specifies previous value.  
   
 ### Remarks  
@@ -558,10 +558,10 @@ virtual void OnAnimationManagerStatusChanged(
 ```  
   
 ### Parameters  
- `newStatus`  
+ *newStatus*  
  New animation manager status.  
   
- `previousStatus`  
+ *previousStatus*  
  Previous animation manager status.  
   
 ### Remarks  
@@ -595,7 +595,7 @@ virtual void OnAnimationTimerRenderingTooSlow(UINT32 fps);
 ```  
   
 ### Parameters  
- `fps`  
+ *fps*  
  The current frame rate in frames per second.  
   
 ### Remarks  
@@ -614,19 +614,19 @@ virtual void OnAnimationValueChanged(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group that holds an animation object whose value has changed.  
   
- `pObject`  
+ *pObject*  
  A pointer to an animation object that contains an animation variable whose value has changed.  
   
- `variable`  
+ *variable*  
  A pointer to an animation variable.  
   
- `newValue`  
+ *newValue*  
  Specifies new value.  
   
- `prevValue`  
+ *prevValue*  
  Specifies previous value.  
   
 ### Remarks  
@@ -640,7 +640,7 @@ virtual void OnBeforeAnimationStart(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group whose animation is about to start.  
   
 ### Remarks  
@@ -657,13 +657,13 @@ virtual BOOL OnHasPriorityCancel(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
@@ -683,13 +683,13 @@ virtual BOOL OnHasPriorityCompress(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
@@ -709,13 +709,13 @@ virtual BOOL OnHasPriorityConclude(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
@@ -735,13 +735,13 @@ virtual BOOL OnHasPriorityTrim(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
@@ -761,13 +761,13 @@ virtual void OnStoryboardStatusChanged(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group that owns the storyboard whose status has changed.  
   
- `newStatus`  
+ *newStatus*  
  Specifies the new status.  
   
- `previousStatus`  
+ *previousStatus*  
  Specifies the previous status.  
   
 ### Remarks  
@@ -781,7 +781,7 @@ virtual void OnStoryboardUpdated(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to a group that owns the storyboard.  
   
 ### Remarks  
@@ -805,7 +805,7 @@ void RemoveAnimationGroup(UINT32 nGroupID);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies animation group ID.  
   
 ### Remarks  
@@ -821,10 +821,10 @@ void RemoveAnimationObject(
 ```  
   
 ### Parameters  
- `pObject`  
+ *pObject*  
  A pointer to an animation object.  
   
- `bNoDelete`  
+ *bNoDelete*  
  If this parameter is TRUE the object will not be deleted upon remove.  
   
 ### Remarks  
@@ -838,7 +838,7 @@ void RemoveTransitions(UINT32 nGroupID);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
 ### Remarks  
@@ -854,10 +854,10 @@ BOOL ScheduleGroup(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies animation Group ID to schedule.  
   
- `time`  
+ *time*  
  Specifies time to schedule.  
   
 ### Return Value  
@@ -874,7 +874,7 @@ void SetRelatedWnd(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to window object to set.  
   
 ### Remarks  
