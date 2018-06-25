@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # OLE Server Classes
-These classes are used by server applications. Server documents are derived from `COleServerDoc` rather than from **CDocument**. Note that because `COleServerDoc` is derived from `COleLinkingDoc`, server documents can also be containers that support linking.  
+These classes are used by server applications. Server documents are derived from `COleServerDoc` rather than from `CDocument`. Note that because `COleServerDoc` is derived from `COleLinkingDoc`, server documents can also be containers that support linking.  
   
  The `COleServerItem` class represents a document or portion of a document that can be embedded in another document or linked to.  
   
