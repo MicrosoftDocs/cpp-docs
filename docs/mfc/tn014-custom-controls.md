@@ -88,11 +88,11 @@ This note describes the MFC Support for custom and self-drawing controls. It als
 ## Using self-draw controls and menus  
  For self-draw menus, you must override both the `OnMeasureItem` and `OnDrawItem` methods.  
   
- For self-draw list boxes and combo boxes, you must override `OnMeasureItem` and `OnDrawItem`. You must specify the `LBS_OWNERDRAWVARIABLE` style for list boxes or `CBS_OWNERDRAWVARIABLE` style for combo boxes in the dialog template. The `OWNERDRAWFIXED` style will not work with self-draw items because the fixed item height is determined before self-draw controls are attached to the list box. (You can use the methods [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) and [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) to overcome this limitation.)  
+ For self-draw list boxes and combo boxes, you must override `OnMeasureItem` and `OnDrawItem`. You must specify the LBS_OWNERDRAWVARIABLE style for list boxes or CBS_OWNERDRAWVARIABLE style for combo boxes in the dialog template. The OWNERDRAWFIXED style will not work with self-draw items because the fixed item height is determined before self-draw controls are attached to the list box. (You can use the methods [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) and [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) to overcome this limitation.)  
   
- Switching to an `OWNERDRAWVARIABLE` style will force the system to apply the `NOINTEGRALHEIGHT` style to the control. Because the control cannot calculate an integral height with variable sized items, the default style of `INTEGRALHEIGHT` is ignored and the control is always `NOINTEGRALHEIGHT`. If your items are fixed height, you can prevent partial items from being drawn by specifying the control size to be an integer multiplier of the item size.  
+ Switching to an OWNERDRAWVARIABLE style will force the system to apply the NOINTEGRALHEIGHT style to the control. Because the control cannot calculate an integral height with variable sized items, the default style of INTEGRALHEIGHT is ignored and the control is always NOINTEGRALHEIGHT. If your items are fixed height, you can prevent partial items from being drawn by specifying the control size to be an integer multiplier of the item size.  
   
- For self-drawing list boxes and combo boxes with the `LBS_SORT` or `CBS_SORT` style, you must override the `OnCompareItem` method.  
+ For self-drawing list boxes and combo boxes with the LBS_SORT or CBS_SORT style, you must override the `OnCompareItem` method.  
   
  For self-drawing list boxes and combo boxes, `OnDeleteItem` is not usually overridden. You can override `OnDeleteItem` if you want to perform any special processing. One case where this would be applicable is when additional memory or other resources are stored with each list box or combo box item.  
   
