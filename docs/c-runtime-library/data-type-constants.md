@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "06/25/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "conceptual"
-f1_keywords: ["FLT_MIN", "SHRT_MAX", "CHAR_MIN", "MB_LEN_MAX", "DBL_EPSILON", "SHRT_MIN", "_FLT_RADIX", "FLT_DIG", "FLT_MAX_10_EXP", "FLT_MANT_DIG", "DBL_MAX_EXP", "SCHAR_MIN", "SCHAR_MAX", "DBL_MIN", "FLT_MIN_10_EXP", "_DBL_ROUNDS", "USHRT_MAX", "FLT_MAX_EXP", "LONG_MAX", "DBL_MAX", "DBL_DIG", "FLT_MIN_EXP", "INT_MIN", "DBL_MIN_10_EXP", "CHAR_BIT", "INT_MAX", "ULONG_MAX", "DBL_MIN_EXP", "LONG_MIN", "_FLT_ROUNDS", "DBL_MANT_DIG", "_DBL_RADIX", "CHAR_MAX", "FLT_MAX", "DBL_MAX_10_EXP", "UCHAR_MAX", "FLT_EPSILON", "UINT_MAX"]
+f1_keywords: ["FLT_MIN", "SHRT_MAX", "CHAR_MIN", "MB_LEN_MAX", "DBL_EPSILON", "SHRT_MIN", "_FLT_RADIX", "FLT_DIG", "FLT_MAX_10_EXP", "FLT_MANT_DIG", "DBL_MAX_EXP", "SCHAR_MIN", "SCHAR_MAX", "DBL_MIN", "FLT_MIN_10_EXP", "_DBL_ROUNDS", "USHRT_MAX", "FLT_MAX_EXP", "LONG_MAX", "DBL_MAX", "DBL_DIG", "FLT_MIN_EXP", "INT_MIN", "DBL_MIN_10_EXP", "CHAR_BIT", "INT_MAX", "ULONG_MAX", "DBL_MIN_EXP", "LONG_MIN", "_FLT_ROUNDS", "DBL_MANT_DIG", "_DBL_RADIX", "CHAR_MAX", "FLT_MAX", "DBL_MAX_10_EXP", "UCHAR_MAX", "FLT_EPSILON", "UINT_MAX", "LLONG_MIN", "LLONG_MAX", "ULLONG_MAX", "_I8_MIN", "_I8_MAX", "_UI8_MAX", "_I16_MIN", "_I16_MAX", "_UI16_MAX", "_I32_MIN", "_I32_MAX", "_UI32_MAX", "_I64_MIN", "_I64_MAX", "_UI64_MAX", "_I128_MIN", "_I128_MAX", "_UI128_MAX", "SIZE_MAX", "RSIZE_MAX", "LDBL_DIG", "LDBL_EPSILON", "LDBL_HAS_SUBNORM", "LDBL_MANT_DIG", "LDBL_MAX", "LDBL_MAX_10_EXP", "LDBL_MAX_EXP", "LDBL_MIN", "LDBL_MIN_10_EXP", "LDBL_MIN_EXP", "_LDBL_RADIX", "LDBL_TRUE_MIN", "DECIMAL_DIG"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["DBL_MAX_EXP constant", "_DBL_RADIX constant", "FLT_MIN_EXP constant", "DBL_EPSILON constant", "INT_MIN constant", "FLT_EPSILON constant", "DBL_MANT_DIG constant", "_FLT_RADIX constant", "DBL_MIN constant", "USHRT_MAX constant", "FLT_MAX_10_EXP constant", "_FLT_ROUNDS constant", "data type constants [C++]", "_DBL_ROUNDS constant", "CHAR_MAX constant", "FLT_MAX_EXP constant", "FLT_MIN constant", "CHAR_MIN constant", "FLT_MIN_10_EXP constant", "DBL_MIN_EXP constant", "SCHAR_MAX constant", "FLT_RADIX constant", "CHAR_BIT constant", "UCHAR_MAX constant", "DBL_RADIX constant", "FLT_ROUNDS constant", "LONG_MIN constant", "SHRT_MAX constant", "LONG_MAX constant", "DBL_MAX_10_EXP constant", "DBL_MIN_10_EXP constant", "INT_MAX constant", "constants [C++], data type", "ULONG_MAX constant", "FLT_DIG constant", "MB_LEN_MAX constant", "DBL_DIG constant", "SHRT_MIN constant", "DBL_MAX constant", "DBL_ROUNDS constant", "FLT_MAX constant", "UINT_MAX constant", "FLT_MANT_DIG constant", "SCHAR_MIN constant"]
+helpviewer_keywords: ["DBL_MAX_EXP constant", "_DBL_RADIX constant", "FLT_MIN_EXP constant", "DBL_EPSILON constant", "INT_MIN constant", "FLT_EPSILON constant", "DBL_MANT_DIG constant", "_FLT_RADIX constant", "DBL_MIN constant", "USHRT_MAX constant", "FLT_MAX_10_EXP constant", "_FLT_ROUNDS constant", "data type constants [C++]", "_DBL_ROUNDS constant", "CHAR_MAX constant", "FLT_MAX_EXP constant", "FLT_MIN constant", "CHAR_MIN constant", "FLT_MIN_10_EXP constant", "DBL_MIN_EXP constant", "SCHAR_MAX constant", "FLT_RADIX constant", "CHAR_BIT constant", "UCHAR_MAX constant", "DBL_RADIX constant", "FLT_ROUNDS constant", "LONG_MIN constant", "SHRT_MAX constant", "LONG_MAX constant", "DBL_MAX_10_EXP constant", "DBL_MIN_10_EXP constant", "INT_MAX constant", "constants [C++], data type", "ULONG_MAX constant", "FLT_DIG constant", "MB_LEN_MAX constant", "DBL_DIG constant", "SHRT_MIN constant", "DBL_MAX constant", "DBL_ROUNDS constant", "FLT_MAX constant", "UINT_MAX constant", "FLT_MANT_DIG constant", "SCHAR_MIN constant", "LLONG_MIN constant", "LLONG_MAX constant", "ULLONG_MAX constant", "_I8_MIN constant", "_I8_MAX constant", "_UI8_MAX constant", "_I16_MIN constant", "_I16_MAX constant", "_UI16_MAX constant", "_I32_MIN constant", "_I32_MAX constant", "_UI32_MAX constant", "_I64_MIN constant", "_I64_MAX constant", "_UI64_MAX constant", "_I128_MIN constant", "_I128_MAX constant", "_UI128_MAX constant", "SIZE_MAX constant", "RSIZE_MAX constant"]
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
 author: "corob-msft"
 ms.author: "corob"
@@ -14,14 +14,20 @@ ms.workload: ["cplusplus"]
 ---
 # Data Type Constants
 
-Data type constants are implementation-dependent ranges of values allowed for integral data types. The constants listed below give the ranges for the integral data types and are defined in LIMITS.H.
+Data type constants are implementation-dependent ranges of values allowed for integral and floating-point data types.
 
 ## Integral type constants
+
+These constants give the ranges for the integral data types. To use these constants, include the limits.h header in your source file:
+
+```C
+#include <limits.h>
+```
 
 > [!NOTE]
 > The [/J](../build/reference/j-default-char-type-is-unsigned.md) compiler option changes the default **char** type to **unsigned**.
 
-|Constant|Value|Meaning|
+|Constant|Value|Description|
 |--------------|-----------|-------------|
 |**CHAR_BIT**|8|Number of bits in a **char**|
 |**SCHAR_MIN**|(-128)|Minimum signed **char** value|
@@ -60,10 +66,13 @@ Data type constants are implementation-dependent ranges of values allowed for in
 |**SIZE_MAX**|same as **_UI64_MAX** if **_WIN64** is defined, or **UINT_MAX**|Maximum native integer size|
 |**RSIZE_MAX**|same as (**SIZE_MAX** >> 1)|Maximum secure library integer size|
 
-
 ## Floating-point type constants
 
-The following constants give the range and other characteristics of the **long** **double**, **double** and **float** data types, and are defined in FLOAT.H:
+The following constants give the range and other characteristics of the **long** **double**, **double** and **float** data types. To use these constants, include the float.h header in your source file:
+
+```C
+#include <float.h>
+```
 
 |Constant|Value|Description|
 |--------------|-----------|-----------------|
