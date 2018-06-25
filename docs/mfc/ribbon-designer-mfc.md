@@ -22,7 +22,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
 ## Understanding the Ribbon Designer  
  The ribbon designer creates and stores the ribbon as a resource. When you create a ribbon resource, the ribbon designer does these three things:  
   
--   Adds an entry in the project resource definition script (*.rc). In the following example, `IDR_RIBBON` is the unique name that identifies the ribbon resource, `RT_RIBBON_XML` is the resource type, and `ribbon.mfcribbon-ms` is the name of the resource file.  
+-   Adds an entry in the project resource definition script (*.rc). In the following example, IDR_RIBBON is the unique name that identifies the ribbon resource, RT_RIBBON_XML is the resource type, and ribbon.mfcribbon-ms is the name of the resource file.  
   
  ```  
     IDR_RIBBON RT_RIBBON_XML      "res\\ribbon.mfcribbon-ms"  
