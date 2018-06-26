@@ -1,4 +1,4 @@
-*---
+---
 title: "fenv_access | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/12/2018"
@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # fenv_access
 
-Disables (**on**) or enables (**off*) optimizations that could change floating-point environment flag tests and mode changes.
+Disables (**on**) or enables (**off**) optimizations that could change floating-point environment flag tests and mode changes.
 
 ## Syntax
 
