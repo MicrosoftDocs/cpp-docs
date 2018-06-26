@@ -77,14 +77,14 @@ CMFCRibbonSlider(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Slider ID.  
   
- [in]. `nWidth`  
+ [in]. *nWidth*  
  Slider width in pixels.  
   
 ### Remarks  
- Constructs a ribbon slider that is `nWidth` pixels wide in the panel category where the slider is added. By default, the slider is horizontal.  
+ Constructs a ribbon slider that is *nWidth* pixels wide in the panel category where the slider is added. By default, the slider is horizontal.  
   
 ##  <a name="getpos"></a>  CMFCRibbonSlider::GetPos  
  Returns the current position of the slider control.  
@@ -124,7 +124,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -158,7 +158,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -172,10 +172,10 @@ void SetPos(
 ```  
   
 ### Parameters  
- [in] `nPos`  
+ [in] *nPos*  
  Specifies the position to set for the slider. The position is relative to the beginning of the slider.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  If `TRUE`, the slider will be redrawn.  
   
 ##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
@@ -188,10 +188,10 @@ void SetRange(
 ```  
   
 ### Parameters  
- [in] `nMin`  
+ [in] *nMin*  
  Specifies minimum value of the slider control.  
   
- [in] `nMax`  
+ [in] *nMax*  
  Specifies maximum value of the slider control.  
   
 ### Remarks  
@@ -205,7 +205,7 @@ void SetZoomButtons(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in]. `bSet`  
+ [in]. *bSet*  
  `TRUE` to display zoom buttons; `FALSE` to hide them.  
   
 ##  <a name="setzoomincrement"></a>  CMFCRibbonSlider::SetZoomIncrement  
@@ -216,7 +216,7 @@ void SetZoomIncrement(int nZoomIncrement);
 ```  
   
 ### Parameters  
- [in] `nZoomIncrement`  
+ [in] *nZoomIncrement*  
  Specifies the zoom increment of the slider control.  
   
 ## See Also  

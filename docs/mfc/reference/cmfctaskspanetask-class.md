@@ -83,28 +83,28 @@ CMFCTasksPaneTask(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  Specifies the [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) to which the task belongs.  
   
- `lpszName`  
+ *lpszName*  
  Specifies the name of the task.  
   
- `nIcon`  
+ *nIcon*  
  Specifies the index of the task's image in the image list.  
   
- `uiCommandID`  
+ *uiCommandID*  
  Specifies the command ID of the command that is executed when the task is clicked.  
   
- `dwUserData`  
+ *dwUserData*  
  User-defined data.  
   
- `hwndTask`  
+ *hwndTask*  
  Specifies the handle to the task window.  
   
- `bAutoDestroyWindow`  
+ *bAutoDestroyWindow*  
  If `TRUE`, the task window will be destroyed automatically.  
   
- `nWindowHeight`  
+ *nWindowHeight*  
  Specifies the height of the task window.  
   
 ### Remarks  
@@ -217,14 +217,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  Represents the parent window of the current task.  
   
- [out] `data`  
+ [out] *data*  
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current task.  
   
 ### Return Value  
- `TRUE` if the `data` parameter was successfully populated with the accessibility data of the current task; otherwise, `FALSE`.  
+ `TRUE` if the *data* parameter was successfully populated with the accessibility data of the current task; otherwise, `FALSE`.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

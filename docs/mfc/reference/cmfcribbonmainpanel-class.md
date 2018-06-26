@@ -69,7 +69,7 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in] [out] `pElem`  
+ [in] [out] *pElem*  
  A pointer to the ribbon element to add to the main panel.  
   
 ### Remarks  
@@ -85,10 +85,10 @@ void AddRecentFilesList(
 ```  
   
 ### Parameters  
- `lpszLabel`  
+ *lpszLabel*  
  Specifies the string to add to the recent files list.  
   
- `nWidth`  
+ *nWidth*  
  Specifies the width, in pixels, of the recent files list panel.  
   
 ### Remarks  
@@ -101,7 +101,7 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 ```  
   
 ### Parameters  
- [in] [out] `pElem`  
+ [in] [out] *pElem*  
  A pointer to the ribbon element to add to the bottom of the main panel.  
   
 ### Remarks  
@@ -116,10 +116,10 @@ void AddToRight(
 ```  
   
 ### Parameters  
- `pElem`  
+ *pElem*  
  A pointer to a ribbon element to be added to the right side of the main panel.  
   
- `nWidth`  
+ *nWidth*  
  Specifies the width, in pixels, of the right panel.  
   
 ### Remarks  

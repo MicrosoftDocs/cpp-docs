@@ -53,7 +53,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
 |`CMFCToolBarEditBoxButton::OnCalculateSize`|Called by the framework to calculate the size of the button for the specified device context and docking state. (Overrides [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
 |[CMFCToolBarEditBoxButton::OnChangeParentWnd](#onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
 |[CMFCToolBarEditBoxButton::OnClick](#onclick)|Called by the framework when the user clicks the mouse button. (Overrides [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|  
-|[CMFCToolBarEditBoxButton::OnCtlColor](#onctlcolor)|Called by the framework when the parent toolbar handles a `WM_CTLCOLOR` message. (Overrides [CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).)|  
+|[CMFCToolBarEditBoxButton::OnCtlColor](#onctlcolor)|Called by the framework when the parent toolbar handles a WM_CTLCOLOR message. (Overrides [CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).)|  
 |`CMFCToolBarEditBoxButton::OnDraw`|Called by the framework to draw the button by using the specified styles and options. (Overrides [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|  
 |`CMFCToolBarEditBoxButton::OnDrawOnCustomizeList`|Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box. (Overrides [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|  
 |[CMFCToolBarEditBoxButton::OnGlobalFontsChanged](#onglobalfontschanged)|Called by the framework when the global font has changed. (Overrides [CMFCToolBarButton::OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged).)|  
@@ -76,7 +76,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
   
  2. Construct a `CMFCToolBarEditBoxButton` object.  
   
- 3. In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, replace the dummy button with the new combo box button by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
+ 3. In the message handler that processes the AFX_WM_RESETTOOLBAR message, replace the dummy button with the new combo box button by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
  For more information, see [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md).  
   
@@ -120,16 +120,16 @@ CMFCToolBarEditBoxButton(
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  Specifies the control ID.  
   
- [in] `iImage`  
+ [in] *iImage*  
  Specifies the zero-based index of a toolbar image. The image is located in the [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md) object that [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md) class maintains.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Specifies the edit control style.  
   
- [in] `iWidth`  
+ [in] *iWidth*  
  Specifies the width in pixels of the edit control.  
   
 ### Remarks  
@@ -147,11 +147,11 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  A reference to the source button from which to copy.  
   
 ### Remarks  
- Call this method to copy another toolbar button to this toolbar button. `src` must be of type `CMFCToolBarEditBoxButton`.  
+ Call this method to copy another toolbar button to this toolbar button. *src* must be of type `CMFCToolBarEditBoxButton`.  
   
 ##  <a name="createedit"></a>  CMFCToolBarEditBoxButton::CreateEdit  
  Creates a new edit control in the button.  
@@ -163,10 +163,10 @@ virtual CEdit* CreateEdit(
 ```  
   
 ### Parameters  
- `[in] pWndParent`  
+ [in] *pWndParent*  
  Specifies the parent window of the edit control. It must not be NULL.  
   
- `[in] rect`  
+ [in] *rect*  
  Specifies the edit control's size and position.  
   
 ### Return Value  
@@ -183,7 +183,7 @@ static CMFCToolBarEditBoxButton* __stdcall GetByCmd(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The command ID of the button to retrieve.  
   
 ### Return Value  
@@ -200,7 +200,7 @@ static CString __stdcall GetContentsAll(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The command ID of the button from which to retrieve contents.  
   
 ### Return Value  
@@ -230,7 +230,7 @@ virtual void GetEditBorder(CRect& rectBorder);
 ```  
   
 ### Parameters  
- [out] `rectBorder`  
+ [out] *rectBorder*  
  A reference to the `CRect` object that receives the bounding rectangle.  
   
 ### Remarks  
@@ -311,11 +311,11 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### Parameters  
- [in] `iNotifyCode`  
+ [in] *iNotifyCode*  
  The notification message that is associated with the command.  
   
 ### Return Value  
- `TRUE` if the button processes the `WM_COMMAND` message, or `FALSE` to indicate that the message must be handled by the parent toolbar.  
+ `TRUE` if the button processes the WM_COMMAND message, or `FALSE` to indicate that the message must be handled by the parent toolbar.  
   
 ### Remarks  
  The framework calls this method when it is about to send a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message to the parent window.  
@@ -342,7 +342,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  A pointer to the new parent window.  
   
 ### Remarks  
@@ -358,10 +358,10 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  Unused.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  Unused.  
   
 ### Return Value  
@@ -371,7 +371,7 @@ virtual BOOL OnClick(
  This method overrides the base class implementation ( [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)) by returning a nonzero value if the internal `CEdit` object is visible.  
   
 ##  <a name="onctlcolor"></a>  CMFCToolBarEditBoxButton::OnCtlColor  
- Called by the framework when the parent toolbar handles a `WM_CTLCOLOR` message.  
+ Called by the framework when the parent toolbar handles a WM_CTLCOLOR message.  
   
 ```  
 virtual HBRUSH OnCtlColor(
@@ -380,10 +380,10 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The device context that displays the button.  
   
- [in] `nCtlColor`  
+ [in] *nCtlColor*  
  Unused.  
   
 ### Return Value  
@@ -424,11 +424,11 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  Specifies whether the button is visible. If this parameter is `TRUE`, the button is visible. Otherwise, the button is not visible.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) by displaying the button if `bShow` is `TRUE`. Otherwise, this method hides the button.  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) by displaying the button if *bShow* is `TRUE`. Otherwise, this method hides the button.  
   
 ##  <a name="onsize"></a>  CMFCToolBarEditBoxButton::OnSize  
  Called by the framework when the parent toolbar changes its size or position and this change causes the button to change size.  
@@ -438,7 +438,7 @@ virtual void OnSize(int iSize);
 ```  
   
 ### Parameters  
- [in] `iSize`  
+ [in] *iSize*  
  The new width of the button, in pixels.  
   
 ### Remarks  
@@ -456,16 +456,16 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Unused.  
   
- [in] `iButtonIndex`  
+ [in] *iButtonIndex*  
  Unused.  
   
- [in] `wndToolTip`  
+ [in] *wndToolTip*  
  The control that displays the tooltip text.  
   
- [out] `str`  
+ [out] *str*  
  A `CString` object that receives the updated tooltip text.  
   
 ### Return Value  
@@ -482,7 +482,7 @@ virtual void SetContents(const CString& sContents);
 ```  
   
 ### Parameters  
- `[in] sContents`  
+ [in] *sContents*  
  Specifies the new text to set.  
   
 ##  <a name="setcontentsall"></a>  CMFCToolBarEditBoxButton::SetContentsAll  
@@ -495,10 +495,10 @@ static BOOL SetContentsAll(
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Specifies the command ID of the control for which the text will be changed.  
   
- [in] `strContents`  
+ [in] *strContents*  
  Specifies the new text to set.  
   
 ### Return Value  
@@ -512,7 +512,7 @@ void SetContextMenuID(UINT uiResID);
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The resource ID of the shortcut menu.  
   
 ### Remarks  
@@ -526,7 +526,7 @@ static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
 ```  
   
 ### Parameters  
- [in] `bFlat`  
+ [in] *bFlat*  
  The flat style for edit box buttons. If this parameter is `TRUE`, the flat style appearance is enabled; otherwise the flat style appearance is disabled.  
   
 ### Remarks  
@@ -540,11 +540,11 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### Parameters  
- [in] `nStyle`  
+ [in] *nStyle*  
  A new style to set.  
   
 ### Remarks  
- This method sets [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) to `nStyle` It also disables the text box when the application is in Customize mode, and enables it when the application is not in Customize mode (see [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) and [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for a list of valid style flags.  
+ This method sets [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) to *nStyle* It also disables the text box when the application is in Customize mode, and enables it when the application is not in Customize mode (see [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) and [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for a list of valid style flags.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

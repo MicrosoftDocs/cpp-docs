@@ -86,14 +86,14 @@ virtual int AddToListBox(
 ```  
   
 ### Parameters  
- [in] `pWndListBox`  
+ [in] *pWndListBox*  
  A pointer to the **Commands** list where the separator is added.  
   
- [in] `bDeep`  
+ [in] *bDeep*  
  Ignored.  
   
 ### Return Value  
- Zero-based index to the string in the list box specified by `pWndListBox`.  
+ Zero-based index to the string in the list box specified by *pWndListBox*.  
   
 ##  <a name="cmfcribbonseparator"></a>  CMFCRibbonSeparator::CMFCRibbonSeparator  
  Constructs a `CMFCRibbonSeparator` object.  
@@ -103,7 +103,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ```  
   
 ### Parameters  
- [in] `bIsHoriz`  
+ [in] *bIsHoriz*  
  If `TRUE`, the separator is horizontal; if `FALSE`, the separator is vertical.  
   
 ### Remarks  
@@ -122,7 +122,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] `Src`  
+ [in] *Src*  
  The source ribbon element to copy from.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
@@ -133,7 +133,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device content.  
   
 ### Return Value  
@@ -170,7 +170,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
@@ -191,12 +191,12 @@ virtual void OnDrawOnList(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pDC`|A pointer to a device context.|  
-|[in] `strText`|Text displayed on the list.|  
-|[in] `nTextOffset`|Spacing between the text and the left side of the bounding rectangle.|  
-|[in] `rect`|Specifies the bounding rectangle.|  
-|[in] `bIsSelected`|Ignored.|  
-|[in] `bHighlighted`|Ignored.|  
+|[in] *pDC*|A pointer to a device context.|  
+|[in] *strText*|Text displayed on the list.|  
+|[in] *nTextOffset*|Spacing between the text and the left side of the bounding rectangle.|  
+|[in] *rect*|Specifies the bounding rectangle.|  
+|[in] *bIsSelected*|Ignored.|  
+|[in] *bHighlighted*|Ignored.|  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

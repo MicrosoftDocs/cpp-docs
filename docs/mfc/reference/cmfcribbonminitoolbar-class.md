@@ -77,10 +77,10 @@ void SetCommands(
 ```  
   
 ### Parameters  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  The ribbon bar that the mini toolbar searches for the buttons to display.  
   
- [in] `lstCommands`  
+ [in] *lstCommands*  
  The list of commands to be displayed on the mini toolbar. All ribbon categories are searched to find the associated buttons.  
   
 ### Remarks  
@@ -101,10 +101,10 @@ BOOL Show(
 ```  
   
 ### Parameters  
- [in] `x`  
+ [in] *x*  
  Specifies the horizontal position of the mini toolbar in screen coordinates.  
   
- [in] `y`  
+ [in] *y*  
  Specifies the vertical position of the mini toolbar in screen coordinates.  
   
 ### Return Value  
@@ -122,16 +122,16 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### Parameters  
- [in] `x`  
+ [in] *x*  
  Specifies the horizontal position of the context menu in screen coordinates.  
   
- [in] `y`  
+ [in] *y*  
  Specifies the vertical position of the context menu in screen coordinates.  
   
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Specifies the resource ID of the context menu to display.  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  Identifies the window which receives messages from the context menu.  
   
 ### Return Value  
