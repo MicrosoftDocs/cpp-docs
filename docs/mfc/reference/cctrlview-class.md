@@ -70,10 +70,10 @@ CCtrlView(
 ```  
   
 ### Parameters  
- `lpszClass`  
+ *lpszClass*  
  Windows class name of the view class.  
   
- `dwStyle`  
+ *dwStyle*  
  Style of the view class.  
   
 ### Remarks  
@@ -104,11 +104,11 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to the device context in which the drawing occurs.  
   
 ### Remarks  
- `OnDraw` is typically called for screen display, passing a screen device context specified by `pDC`.  
+ `OnDraw` is typically called for screen display, passing a screen device context specified by *pDC*.  
   
 ##  <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow  
  Called before the creation of the Windows window attached to this `CWnd` object.  
