@@ -103,7 +103,7 @@ void Attach(ID2D1Bitmap* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dbitmap"></a>  CD2DBitmap::CD2DBitmap  
@@ -138,25 +138,25 @@ CD2DBitmap(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `uiResID`  
+ *uiResID*  
  The resource ID number of the resource.  
   
- `lpszType`  
+ *lpszType*  
  Pointer to a null-terminated string that contains the resource type.  
   
- `sizeDest`  
+ *sizeDest*  
  Destination size of the bitmap.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
- `lpszPath`  
+ *lpszPath*  
  Pointer to a null-terminated string that contains the name of file.  
   
- `hbmpSrc`  
+ *hbmpSrc*  
  Handle to the bitmap.  
   
 ##  <a name="commoninit"></a>  CD2DBitmap::CommonInit  
@@ -177,13 +177,13 @@ HRESULT CopyFromBitmap(
 ```  
   
 ### Parameters  
- `pBitmap`  
+ *pBitmap*  
  The bitmap to copy from  
   
- `destPoint`  
+ *destPoint*  
  In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied  
   
- `srcRect`  
+ *srcRect*  
  The area of bitmap to copy  
   
 ### Return Value  
@@ -200,13 +200,13 @@ HRESULT CopyFromMemory(
 ```  
   
 ### Parameters  
- `srcData`  
+ *srcData*  
  The data to copy  
   
- `pitch`  
+ *pitch*  
  The stride, or pitch, of the source bitmap stored in srcData. The stride is the byte count of a scanline (one row of pixels in memory). The stride can be computed from the following formula: pixel width * bytes per pixel + memory padding  
   
- `destRect`  
+ *destRect*  
  In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied  
   
 ### Return Value  
@@ -223,13 +223,13 @@ HRESULT CopyFromRenderTarget(
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  The render target that contains the region to copy  
   
- `destPoint`  
+ *destPoint*  
  In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied  
   
- `srcRect`  
+ *srcRect*  
  The area of renderTarget to copy  
   
 ### Return Value  
@@ -243,7 +243,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  

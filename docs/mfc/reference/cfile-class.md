@@ -105,9 +105,9 @@ virtual void Abort();
 ### Remarks  
  If you have not closed the file before destroying the object, the destructor closes it for you.  
   
- When handling exceptions, `CFile::Abort` differs from `CFile::Close` in two important ways. First, the **Abort** function will not throw an exception on failures because failures are ignored by **Abort**. Second, **Abort** will not **ASSERT** if the file has not been opened or was closed previously.  
+ When handling exceptions, `CFile::Abort` differs from `CFile::Close` in two important ways. First, the `Abort` function will not throw an exception on failures because failures are ignored by `Abort`. Second, `Abort` will not **ASSERT** if the file has not been opened or was closed previously.  
   
- If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. **Abort** sets `m_hFile` to `CFile::hFileNull`.  
+ If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Abort` sets `m_hFile` to `CFile::hFileNull`.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]  
@@ -133,20 +133,20 @@ CAtlTransactionManager* pTM);
 ```  
   
 ### Parameters  
- `hFile`  
+ *hFile*  
  Handle of a file to attach to the `CFile` object.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Relative or full path of a file to attach to the `CFile` object.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Bitwise combination (OR) of file access options for the specified file. See the Remarks section for possible options.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
- The following five tables list the possible options for the `nOpenFlags` parameter.  
+ The following five tables list the possible options for the *nOpenFlags* parameter.  
   
  Choose only one of the following file access mode options. The default file access mode is `CFile::modeRead`, which is read only.  
   
@@ -218,7 +218,7 @@ virtual void Close();
 ### Remarks  
  If you have not closed the file before destroying the object, the destructor closes it for you.  
   
- If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. **Close** sets `m_hFile` to `CFile::hFileNull`.  
+ If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Close` sets `m_hFile` to `CFile::hFileNull`.  
   
 ### Example  
  See the example for [CFile::CFile](#cfile).  
@@ -344,7 +344,7 @@ static BOOL PASCAL GetStatus(
 ```  
   
 ### Parameters  
- `rStatus`  
+ *rStatus*  
  A reference to a user-supplied **CFileStatus** structure that will receive the status information. The **CFileStatus** structure has the following fields:  
   
 - **CTime m_ctime** The date and time the file was created.  
@@ -359,10 +359,10 @@ static BOOL PASCAL GetStatus(
   
 - **char m_szFullName[_MAX_PATH]** The absolute filename in the Windows character set.  
   
- `lpszFileName`  
+ *lpszFileName*  
  A string in the Windows character set that is the path to the desired file. The path can be relative or absolute, or it can contain a network path name.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Return Value  
@@ -412,10 +412,10 @@ virtual void LockRange(
 ```  
   
 ### Parameters  
- `dwPos`  
+ *dwPos*  
  The byte offset of the start of the byte range to lock.  
   
- `dwCount`  
+ *dwCount*  
  The number of bytes in the range to lock.  
   
 ### Remarks  
@@ -451,7 +451,7 @@ CAtlTransactionManager* m_pTM;
 ### Remarks  
   
 ##  <a name="open"></a>  CFile::Open  
- Overloaded. **Open** is designed for use with the default `CFile` constructor.  
+ Overloaded. `Open` is designed for use with the default `CFile` constructor.  
   
 ```  
 virtual BOOL Open(
@@ -468,27 +468,27 @@ virtual BOOL Open(
 ```  
   
 ### Parameters  
- `lpszFileName`  
+ *lpszFileName*  
  A string that is the path to the desired file. The path can be relative, absolute, or a network name (UNC).  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  A **UINT** that defines the file's sharing and access mode. It specifies the action to take when opening the file. You can combine options by using the bitwise-OR ( **&#124;** ) operator. One access permission and one share option are required; the **modeCreate** and **modeNoInherit** modes are optional. See the [CFile](#cfile) constructor for a list of mode options.  
   
- `pError`  
+ *pError*  
  A pointer to an existing file-exception object that will receive the status of a failed operation.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Return Value  
- Nonzero if the open was successful; otherwise 0. The `pError` parameter is meaningful only if 0 is returned.  
+ Nonzero if the open was successful; otherwise 0. The *pError* parameter is meaningful only if 0 is returned.  
   
 ### Remarks  
  The two functions form a "safe" method for opening a file where a failure is a normal, expected condition.  
   
- While the `CFile` constructor will throw an exception in an error condition, **Open** will return **FALSE** for error conditions. **Open** can still initialize a [CFileException](../../mfc/reference/cfileexception-class.md) object to describe the error, however. If you don't supply the `pError` parameter, or if you pass **NULL** for `pError`, **Open** will return **FALSE** and not throw a `CFileException`. If you pass a pointer to an existing `CFileException`, and **Open** encounters an error, the function will fill it with information describing that error. In neither case will **Open** throw an exception.  
+ While the `CFile` constructor will throw an exception in an error condition, `Open` will return **FALSE** for error conditions. `Open` can still initialize a [CFileException](../../mfc/reference/cfileexception-class.md) object to describe the error, however. If you don't supply the *pError* parameter, or if you pass **NULL** for *pError*, `Open` will return **FALSE** and not throw a `CFileException`. If you pass a pointer to an existing `CFileException`, and `Open` encounters an error, the function will fill it with information describing that error. In neither case will `Open` throw an exception.  
   
- The following table describes the possible results of **Open**.  
+ The following table describes the possible results of `Open`.  
   
 |`pError`|Error encountered|Return value|CFileException content|  
 |--------------|------------------------|------------------|----------------------------|  
@@ -519,14 +519,14 @@ virtual UINT Read(
 ```  
   
 ### Parameters  
- `lpBuf`  
+ *lpBuf*  
  Pointer to the user-supplied buffer that is to receive the data read from the file.  
   
- `nCount`  
+ *nCount*  
  The maximum number of bytes to be read from the file. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Return Value  
- The number of bytes transferred to the buffer. Note that for all `CFile` classes, the return value may be less than `nCount` if the end of file was reached.  
+ The number of bytes transferred to the buffer. Note that for all `CFile` classes, the return value may be less than *nCount* if the end of file was reached.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#15](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_11.cpp)]  
@@ -543,10 +543,10 @@ static void PASCAL Remove(
 ```  
   
 ### Parameters  
- `lpszFileName`  
+ *lpszFileName*  
  A string that is the path to the desired file. The path can be relative or absolute, and can contain a network name.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
@@ -568,13 +568,13 @@ static void PASCAL Rename(
 ```  
   
 ### Parameters  
- `lpszOldName`  
+ *lpszOldName*  
  The old path.  
   
- `lpszNewName`  
+ *lpszNewName*  
  The new path.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
@@ -593,17 +593,17 @@ UINT nFrom);
 ```  
   
 ### Parameters  
- `lOff`  
+ *lOff*  
  Number of bytes to move the file pointer. Positive values move the file pointer towards the end of the file; negative values move the file pointer towards the start of the file.  
   
- `nFrom`  
+ *nFrom*  
  Position to seek from. See the Remarks section for possible values.  
   
 ### Return Value  
  The position of the file pointer if the method was successful; otherwise, the return value is undefined and a pointer to a `CFileException` exception is thrown.  
   
 ### Remarks  
- The following table lists possible values for the `nFrom` parameter.  
+ The following table lists possible values for the *nFrom* parameter.  
   
 |Value|Description|  
 |-----------|-----------------|  
@@ -657,7 +657,7 @@ virtual void SetFilePath(LPCTSTR lpszNewName);
 ```  
   
 ### Parameters  
- `lpszNewName`  
+ *lpszNewName*  
  Pointer to a string specifying the new path.  
   
 ### Remarks  
@@ -676,7 +676,7 @@ virtual void SetLength(ULONGLONG dwNewLen);
 ```  
   
 ### Parameters  
- `dwNewLen`  
+ *dwNewLen*  
  Desired length of the file in bytes. This value can be larger or smaller than the current length of the file. The file will be extended or truncated as appropriate.  
   
 ### Remarks  
@@ -698,13 +698,13 @@ static void PASCAL SetStatus(
 ```  
   
 ### Parameters  
- `lpszFileName`  
+ *lpszFileName*  
  A string that is the path to the desired file. The path can be relative or absolute, and can contain a network name.  
   
  *status*  
  The buffer containing the new status information. Call the **GetStatus** member function to prefill the **CFileStatus** structure with current values, then make changes as required. If a value is 0, then the corresponding status item is not updated. See the [GetStatus](#getstatus) member function for a description of the **CFileStatus** structure.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
@@ -725,10 +725,10 @@ virtual void UnlockRange(
 ```  
   
 ### Parameters  
- `dwPos`  
+ *dwPos*  
  The byte offset of the start of the byte range to unlock.  
   
- `dwCount`  
+ *dwCount*  
  The number of bytes in the range to unlock.  
   
 ### Remarks  
@@ -750,10 +750,10 @@ virtual void Write(
 ```  
   
 ### Parameters  
- `lpBuf`  
+ *lpBuf*  
  A pointer to the user-supplied buffer that contains the data to be written to the file.  
   
- `nCount`  
+ *nCount*  
  The number of bytes to be transferred from the buffer. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Remarks  

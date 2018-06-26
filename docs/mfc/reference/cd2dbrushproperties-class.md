@@ -50,16 +50,17 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
 CD2DBrushProperties();  
 CD2DBrushProperties(FLOAT _opacity);
 
- CD2DBrushProperties(
+ 
+CD2DBrushProperties(
     D2D1_MATRIX_3X2_F _transform,  
     FLOAT _opacity = 1.);
 ```  
   
 ### Parameters  
- `_opacity`  
+ *_opacity*  
  The base opacity of the brush. The default value is 1.0.  
   
- `_transform`  
+ *_transform*  
  The transformation to apply to the brush  
   
 ##  <a name="commoninit"></a>  CD2DBrushProperties::CommonInit  

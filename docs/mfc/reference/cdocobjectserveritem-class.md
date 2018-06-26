@@ -71,10 +71,10 @@ CDocObjectServerItem(COleServerDoc* pServerDoc, BOOL bAutoDelete);
 ```  
   
 ### Parameters  
- `pServerDoc`  
+ *pServerDoc*  
  A pointer to the document that will contain the new DocObject item.  
   
- `bAutoDelete`  
+ *bAutoDelete*  
  Indicates whether the object can be deleted when a link to it is released. Set the argument to **FALSE** if the `CDocObjectServerItem` object is an integral part of your document's data. Set it to **TRUE** if the object is a secondary structure used to identify a range in your document's data that can be deleted by the framework.  
   
 ##  <a name="getdocument"></a>  CDocObjectServerItem::GetDocument  

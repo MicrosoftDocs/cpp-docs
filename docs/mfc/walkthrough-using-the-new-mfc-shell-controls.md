@@ -21,7 +21,7 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 1.  Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.  
   
-2.  In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. The **MFC Application Wizard** will be displayed.  
+2.  In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as *MFCShellControls* and click **OK**. The **MFC Application Wizard** will be displayed.  
   
 3.  In the **MFC Application Wizard** dialog box, click **Next**. The **Application Type** pane will be displayed.  
   
@@ -55,7 +55,8 @@ In this walkthrough, you will create an application that resembles File Explorer
   
      Now add a member variable of type `CMFCShellListCtrl`. First, locate the following comment in the header file:  
   
- ``` *// Generated message map functions  
+ ``` 
+    // Generated message map functions  
  ```  
   
      Immediately above that comment add this code:  
@@ -67,7 +68,8 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 2.  The **MFC Application Wizard** already created a `CMFCShellTreeCtrl` object in the `CMainFrame` class, but it is a protected member. We will access this object later. Therefore, create an accessor for it now. Open the MainFrm.h header file by double-clicking it in the **Solution Explorer**. Locate the following comment:  
   
- ``` *// Attributes  
+ ``` 
+    // Attributes  
  ```  
   
      Immediately under it, add the following method declaration:  
@@ -75,66 +77,50 @@ In this walkthrough, you will create an application that resembles File Explorer
  ```  
     public: 
     CMFCShellTreeCtrl& GetShellTreeCtrl();
-
  ```  
   
      Next, open the MainFrm.cpp source file by double-clicking it in the **Solution Explorer**. At the bottom of that file, add the following method definition:  
   
  ```  
     CMFCShellTreeCtrl& CMainFrame::GetShellTreeCtrl()  
- {  
-    return m_wndTree;  
- }  
+    {  
+        return m_wndTree;  
+    }  
  ```  
   
-3.  Now we update the `CMFCShellControlsView` class to handle the **WM_CREATE** windows message. Open the MFCShellControlsView.h header file and click on this line of code:  
+3.  Now we update the `CMFCShellControlsView` class to handle the WM_CREATE windows message. Open the MFCShellControlsView.h header file and click on this line of code:  
   
  ```  
     class CMFCShellControlsView : public CView  
  ```  
   
-     Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the **WM_CREATE** message. From the drop down list next to **WM_CREATE**, select **\<Add> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.  
+     Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the WM_CREATE message. From the drop down list next to WM_CREATE, select *\<Add> OnCreate*. This creates a message handler for us and automatically updates the MFC message map.  
   
      In the `OnCreate` method we will now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:  
   
  ```  
     int CMFCShellControlsView::OnCreate(LPCREATESTRUCT lpCreateStruct)  
- {  
-    if (CView::OnCreate(lpCreateStruct) == -1)  
-    return -1;  
- 
-    CRect rectDummy (0,
-    0,
-    0,
-    0);
-
-    m_wndList.Create(WS_CHILD | WS_VISIBLE | LVS_REPORT,  
-    rectDummy,
-    this,
-    1);
-
- 
-    return 0;  
- }  
+    {  
+        if (CView::OnCreate(lpCreateStruct) == -1)  
+            return -1;  
+     
+        CRect rectDummy (0, 0, 0, 0);
+    
+        m_wndList.Create(WS_CHILD | WS_VISIBLE | LVS_REPORT, rectDummy, this, 1);
+    
+        return 0;  
+    }  
  ```  
   
-4.  Repeat the previous step but for the **WM_SIZE** message. This will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:  
+4.  Repeat the previous step but for the WM_SIZE message. This will cause your applications view to be redrawn whenever a user changes the size of the application window. Replace the definition for the `OnSize` method with the following code:  
   
  ```  
-    void CMFCShellControlsView::OnSize(UINT nType,
-    int cx,
-    int cy)  
- {  
-    CView::OnSize(nType,
-    cx,
-    cy);
-
-    m_wndList.SetWindowPos(NULL, -1, -1,
-    cx,
-    cy,  
-    SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
-
- }  
+    void CMFCShellControlsView::OnSize(UINT nType, int cx, int cy)  
+    {  
+        CView::OnSize(nType, cx, cy);
+    
+        m_wndList.SetWindowPos(NULL, -1, -1, cx, cy, SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
+    }  
  ```  
   
 5.  The last step is to connect the `CMFCShellTreeCtrl` and `CMFCShellListCtrl` objects by using the [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#setrelatedlist) method. After you call this method, the `CMFCShellListCtrl` will automatically display the contents of the item selected in the `CMFCShellTreeCtrl`. We will do this in the `OnActivateView` method, which is overridden from [CView::OnActivateView](../mfc/reference/cview-class.md#onactivateview).  
@@ -143,30 +129,21 @@ In this walkthrough, you will create an application that resembles File Explorer
   
  ```  
     protected: 
-    virtual void OnActivateView(BOOL bActivate,  
-    CView* pActivateView,  
-    CView* pDeactiveView);
-
+    virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
  ```  
   
      Next, add the definition for this method to the MFCShellControlsView.cpp source file:  
   
  ```  
-    void CMFCShellControlsView::OnActivateView(BOOL bActivate,  
-    CView* pActivateView,  
-    CView* pDeactiveView)   
- {  
-    if (bActivate&& AfxGetMainWnd() != NULL)  
- {  
- ((CMainFrame*)AfxGetMainWnd())->GetShellTreeCtrl().SetRelatedList(&m_wndList);
-
- }  
- 
-    CView::OnActivateView(bActivate,
-    pActivateView,
-    pDeactiveView);
-
- }  
+    void CMFCShellControlsView::OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView)   
+    {  
+        if (bActivate&& AfxGetMainWnd() != NULL)  
+        {  
+            ((CMainFrame*)AfxGetMainWnd())->GetShellTreeCtrl().SetRelatedList(&m_wndList);
+        }  
+     
+        CView::OnActivateView(bActivate, pActivateView, pDeactiveView);
+    }  
  ```  
   
      Because we are calling methods from the `CMainFrame` class, we must add an `#include` directive at the top of the MFCShellControlsView.cpp source file:  
@@ -189,4 +166,3 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 ## See Also  
  [Walkthroughs](../mfc/walkthroughs-mfc.md)
-

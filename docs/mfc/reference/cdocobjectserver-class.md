@@ -74,7 +74,7 @@ void ActivateDocObject();
 ```  
   
 ### Remarks  
- `ActivateDocObject` calls `IOleDocumentSite`'s **ActivateMe** method, but does not show the view because it waits for specific instructions on how to set up and display the view, given in the call to [CDocObjectServer::OnActivateView](#onactivateview).  
+ `ActivateDocObject` calls `IOleDocumentSite`'s `ActivateMe` method, but does not show the view because it waits for specific instructions on how to set up and display the view, given in the call to [CDocObjectServer::OnActivateView](#onactivateview).  
   
  Together, `ActivateDocObject` and `OnActivateView` activate and display the DocObject view. DocObject activation differs from other kinds of OLE in-place activation. DocObject activation bypasses displaying in-place hatch borders and object adornments (such as sizing handles), ignores object extent functions, and draws scroll bars within the view rectangle as opposed to drawing them outside that rectangle (as in normal in-place activation).  
   
@@ -91,7 +91,7 @@ explicit CDocObjectServer(
  *pOwner*  
  A pointer to the client site document that is the client for the DocObject server.  
   
- `pDocSite`  
+ *pDocSite*  
  A pointer to the `IOleDocumentSite` interface implemented by the container.  
   
 ### Remarks  
@@ -118,7 +118,7 @@ virtual void OnApplyViewState(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object from which to serialize the view state.  
   
 ### Remarks  
@@ -134,7 +134,7 @@ virtual void OnSaveViewState(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object to which the view state is serialized.  
   
 ### Remarks  

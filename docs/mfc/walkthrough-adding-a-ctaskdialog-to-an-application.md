@@ -33,7 +33,7 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
   
 #### To Replace a Windows Message Box with a CTaskDialog  
   
-1.  Create a new MFC Application project with the default settings. Call it `MyProject`.  
+1.  Create a new MFC Application project with the default settings. Call it *MyProject*.  
   
 2.  Use the **Solution Explorer** to open the file MyProject.cpp.  
   
@@ -63,7 +63,7 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
  }  
  ```  
   
-6.  Insert the following code between the brackets after the `if` statement from step 5. This code creates the `CTaskDialog`.  
+6.  Insert the following code between the brackets after the **if** statement from step 5. This code creates the `CTaskDialog`.  
   
  ```  
     CTaskDialog taskDialog(message,
@@ -100,9 +100,9 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
   
 2.  Expand the **Resource View** until you can select the **String Table** folder. Expand it and double-click the **String Table** entry.  
   
-3.  Scroll to the bottom of the string table and add a new entry. Change the ID to `TEMP_LINE1`. Set the caption to **Command Line 1**.  
+3.  Scroll to the bottom of the string table and add a new entry. Change the ID to *TEMP_LINE1*. Set the caption to *Command Line 1*.  
   
-4.  Add another new entry. Change the ID to `TEMP_LINE2`. Set the caption to **Command Line 2**.  
+4.  Add another new entry. Change the ID to *TEMP_LINE2*. Set the caption to *Command Line 2*.  
   
 5.  Navigate back to MyProject.cpp.  
   
@@ -181,7 +181,7 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
   
 2.  Navigate to the closing bracket for the `if (CTaskDialog::IsSupported())` statement.  
   
-3.  Insert the following code immediately before the closing bracket of the `if` statement (before the `else` block):  
+3.  Insert the following code immediately before the closing bracket of the **if** statement (before the **else** block):  
   
  ```  
     HRESULT result2 = CTaskDialog::ShowDialog(L"My error message",

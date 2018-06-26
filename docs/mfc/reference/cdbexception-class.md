@@ -75,13 +75,13 @@ class CDBException : public CException
   
 - **AFX_SQL_ERROR_LOCK_MODE_NOT_SUPPORTED** Your request to lock records for update could not be fulfilled because your ODBC driver does not support locking.  
   
-- **AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED** You called `CRecordset::Update` or **Delete** for a table with no unique key and changed multiple records.  
+- **AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED** You called `CRecordset::Update` or `Delete` for a table with no unique key and changed multiple records.  
   
 - **AFX_SQL_ERROR_NO_CURRENT_RECORD** You attempted to edit or delete a previously deleted record. You must scroll to a new current record after a deletion.  
   
 - **AFX_SQL_ERROR_NO_POSITIONED_UPDATES** Your request for a dynaset could not be fulfilled because your ODBC driver does not support positioned updates.  
   
-- **AFX_SQL_ERROR_NO_ROWS_AFFECTED** You called `CRecordset::Update` or **Delete**, but when the operation began the record could no longer be found.  
+- **AFX_SQL_ERROR_NO_ROWS_AFFECTED** You called `CRecordset::Update` or `Delete`, but when the operation began the record could no longer be found.  
   
 - **AFX_SQL_ERROR_ODBC_LOAD_FAILED** An attempt to load the ODBC.DLL failed; Windows could not find or could not load this DLL. This error is fatal.  
   
@@ -97,7 +97,7 @@ class CDBException : public CException
   
 - **AFX_SQL_ERROR_RECORDSET_READONLY** You attempted to update a read-only recordset, or the data source is read-only. No update operations can be performed with the recordset or the `CDatabase` object it is associated with.  
   
-- **SQL_ERROR** Function failed. The error message returned by the ODBC function **SQLError** is stored in the **m_strError** data member.  
+- **SQL_ERROR** Function failed. The error message returned by the ODBC function `SQLError` is stored in the **m_strError** data member.  
   
 - **SQL_INVALID_HANDLE** Function failed due to an invalid environment handle, connection handle, or statement handle. This indicates a programming error. No additional information is available from the ODBC function **SQLError**.  
   
@@ -115,11 +115,11 @@ class CDBException : public CException
 ### Remarks  
  The string is of the form "State:%s,Native:%ld,Origin:%s", where the format codes, in order, are replaced by values that describe:  
   
--   The **SQLSTATE**, a null-terminated string containing a five-character error code returned in the *szSqlState* parameter of the ODBC function **SQLError**. **SQLSTATE** values are listed in Appendix A, [ODBC Error Codes](https://msdn.microsoft.com/library/ms714687.aspx), in the *ODBC Programmer's Reference*. Example: "S0022".  
+-   The **SQLSTATE**, a null-terminated string containing a five-character error code returned in the *szSqlState* parameter of the ODBC function `SQLError`. **SQLSTATE** values are listed in Appendix A, [ODBC Error Codes](https://msdn.microsoft.com/library/ms714687.aspx), in the *ODBC Programmer's Reference*. Example: "S0022".  
   
--   The native error code, specific to the data source, returned in the *pfNativeError* parameter of the **SQLError** function. Example: 207.  
+-   The native error code, specific to the data source, returned in the *pfNativeError* parameter of the `SQLError` function. Example: 207.  
   
--   The error message text returned in the *szErrorMsg* parameter of the **SQLError** function. This message consists of several bracketed names. As an error is passed from its source to the user, each ODBC component (data source, driver, Driver Manager) appends its own name. This information helps to pinpoint the origin of the error. Example: [Microsoft][ODBC SQL Server Driver][SQL Server]  
+-   The error message text returned in the *szErrorMsg* parameter of the `SQLError` function. This message consists of several bracketed names. As an error is passed from its source to the user, each ODBC component (data source, driver, Driver Manager) appends its own name. This information helps to pinpoint the origin of the error. Example: [Microsoft][ODBC SQL Server Driver][SQL Server]  
   
  The framework interprets the error string and puts its components into **m_strStateNativeOrigin**; if **m_strStateNativeOrigin** contains information for more than one error, the errors are separated by newlines. The framework puts the alphanumeric error text into **m_strError**.  
   

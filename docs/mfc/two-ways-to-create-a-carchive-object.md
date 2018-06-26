@@ -30,7 +30,7 @@ There are two ways to create a `CArchive` object:
   
 3.  Creates a `CArchive` object that points to this `CFile` object. In creating the `CArchive` object, the framework sets the mode to "store" (write, serialize), as opposed to "load" (read, deserialize).  
   
-4.  Calls the `Serialize` function defined in your **CDocument**-derived class, passing it a reference to the `CArchive` object.  
+4.  Calls the `Serialize` function defined in your `CDocument`-derived class, passing it a reference to the `CArchive` object.  
   
  Your document's `Serialize` function then writes data to the `CArchive` object, as explained shortly. Upon return from your `Serialize` function, the framework destroys the `CArchive` object and then the `CFile` object.  
   

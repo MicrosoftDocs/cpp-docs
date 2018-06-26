@@ -67,9 +67,9 @@ ms.workload: ["cplusplus"]
 \oclient\mainview.cpp(288) : error C2664: 'CreateStaticFromClipboard' : cannot convert parameter 1 from 'char [1]' to 'enum ::tagOLERENDER '  
 ```  
   
- The errors above result from the fact that all of the **COleClientItem::CreateXXXX** functions in MFC/OLE1 required that a unique name be passed to represent the item. This was a requirement of the underlying OLE API. This is not necessary in MFC/OLE 2 since OLE 2 does not use DDE as the underlying communications mechanism (the name was used in DDE conversations). To fix this problem, you can remove the **CreateNewName** function as well as all references to it. It is easy to find out what each MFC/OLE function is expecting in this version simply by placing your cursor on the call and pressing F1.  
+ The errors above result from the fact that all of the `COleClientItem::CreateXXXX` functions in MFC/OLE1 required that a unique name be passed to represent the item. This was a requirement of the underlying OLE API. This is not necessary in MFC/OLE 2 since OLE 2 does not use DDE as the underlying communications mechanism (the name was used in DDE conversations). To fix this problem, you can remove the `CreateNewName` function as well as all references to it. It is easy to find out what each MFC/OLE function is expecting in this version simply by placing your cursor on the call and pressing F1.  
   
- Another area that is significantly different is OLE 2 clipboard handling. With OLE1, you used the Windows clipboard APIs interact with the clipboard. With OLE 2 this is done with a different mechanism. The MFC/OLE1 APIs assumed that the clipboard was open before copying a `COleClientItem` object to the clipboard. This is no longer necessary and will cause all MFC/OLE clipboard operations to fail. While you edit the code to remove dependencies on **CreateNewName**, you should also remove the code that opens and closes the Windows clipboard.  
+ Another area that is significantly different is OLE 2 clipboard handling. With OLE1, you used the Windows clipboard APIs interact with the clipboard. With OLE 2 this is done with a different mechanism. The MFC/OLE1 APIs assumed that the clipboard was open before copying a `COleClientItem` object to the clipboard. This is no longer necessary and will cause all MFC/OLE clipboard operations to fail. While you edit the code to remove dependencies on `CreateNewName`, you should also remove the code that opens and closes the Windows clipboard.  
   
 ```  
 \oclient\mainview.cpp(332) : error C2065: 'AfxOleInsertDialog' : undeclared identifier  
@@ -78,7 +78,7 @@ ms.workload: ["cplusplus"]
 \oclient\mainview.cpp(347) : error C2039: 'CreateNewObject' : is not a member of 'CRectItem'  
 ```  
   
- These errors result from the **CMainView::OnInsertObject** handler. Handling the "Insert New Object" command is another area where things have changed quite a bit. In this case, it is easiest to simply merge the original implementation with that provided by AppWizard for a new OLE Container application. In fact, this is a technique that you can apply to porting other applications. In MFC/OLE1, you displayed the "Insert Object" dialog by calling **AfxOleInsertDialog** function. In this version you construct a **COleInsertObject** dialog object and call `DoModal`. In addition, new OLE items are created with a **CLSID** instead of a classname string. The end result should look something like this  
+ These errors result from the `CMainView::OnInsertObject` handler. Handling the "Insert New Object" command is another area where things have changed quite a bit. In this case, it is easiest to simply merge the original implementation with that provided by AppWizard for a new OLE Container application. In fact, this is a technique that you can apply to porting other applications. In MFC/OLE1, you displayed the "Insert Object" dialog by calling `AfxOleInsertDialog` function. In this version you construct a `COleInsertObject` dialog object and call `DoModal`. In addition, new OLE items are created with a **CLSID** instead of a classname string. The end result should look something like this  
   
 ```  
 COleInsertDialog dlg;  
@@ -134,14 +134,14 @@ EndWaitCursor();
 > [!NOTE]
 >  Insert New Object may be different for your application):  
   
- It is also necessary to include \<afxodlgs.h>, which contains the declaration for the **COleInsertObject** dialog class as well as the other standard dialogs provided by MFC.  
+ It is also necessary to include \<afxodlgs.h>, which contains the declaration for the `COleInsertObject` dialog class as well as the other standard dialogs provided by MFC.  
   
 ```  
 \oclient\mainview.cpp(367) : error C2065: 'OLEVERB_PRIMARY' : undeclared identifier  
 \oclient\mainview.cpp(367) : error C2660: 'DoVerb' : function does not take 1 parameters  
 ```  
   
- These errors are caused by the fact that some OLE1 constants have changed in OLE 2, even though in concept they are the same. In this case **OLEVERB_PRIMARY** has changed to `OLEIVERB_PRIMARY`. In both OLE1 and OLE 2, the primary verb is usually executed by a container when the user double-clicks on an item.  
+ These errors are caused by the fact that some OLE1 constants have changed in OLE 2, even though in concept they are the same. In this case `OLEVERB_PRIMARY` has changed to `OLEIVERB_PRIMARY`. In both OLE1 and OLE 2, the primary verb is usually executed by a container when the user double-clicks on an item.  
   
  In addition, `DoVerb` now takes an extra parameter — a pointer to a view (`CView`*). This parameter is only used to implement "Visual Editing" (or in-place activation). For now you set that parameter to NULL, because you are not implementing this feature at this time.  
   
@@ -159,7 +159,7 @@ BOOL CRectItem::CanActivate()
 \oclient\rectitem.cpp(84) : error C2064: term does not evaluate to a function  
 ```  
   
- In MFC/OLE1, **COleClientItem::GetBounds** and **SetBounds** were used to query and manipulate the extent of an item (the **left** and **top** members were always zero). In MFC/OLE 2 this is more directly supported by `COleClientItem::GetExtent` and `SetExtent`, which deal with a **SIZE** or `CSize` instead.  
+ In MFC/OLE1, `COleClientItem::GetBounds` and `SetBounds` were used to query and manipulate the extent of an item (the **left** and **top** members were always zero). In MFC/OLE 2 this is more directly supported by `COleClientItem::GetExtent` and `SetExtent`, which deal with a **SIZE** or `CSize` instead.  
   
  The code for your new SetItemRectToServer, and UpdateItemRectFromServer calls look like this:  
   
@@ -221,14 +221,14 @@ BOOL CRectItem::SetItemRectToServer()
 \oclient\frame.cpp(50) : error C2064: term does not evaluate to a function  
 ```  
   
- In MFC/OLE1 synchronous API calls from a container to a server were *simulated*, because OLE1 was inherently asynchronous in many cases. It was necessary to check for an outstanding asynchronous call in progress before processing commands from the user. MFC/OLE1 provided the **COleClientItem::InWaitForRelease** function for doing so. In MFC/OLE 2 this is not necessary, so you can to remove the override of OnCommand in CMainFrame all together.  
+ In MFC/OLE1 synchronous API calls from a container to a server were *simulated*, because OLE1 was inherently asynchronous in many cases. It was necessary to check for an outstanding asynchronous call in progress before processing commands from the user. MFC/OLE1 provided the `COleClientItem::InWaitForRelease` function for doing so. In MFC/OLE 2 this is not necessary, so you can to remove the override of OnCommand in CMainFrame all together.  
   
  At this point OCLIENT will compile and link.  
   
 ## Other Necessary Changes  
  There are few things that are not done that will keep OCLIENT from running, however. It is better to fix these problems now instead of later.  
   
- First, it is necessary to initialize the OLE libraries. This is done by calling **AfxOleInit** from `InitInstance`:  
+ First, it is necessary to initialize the OLE libraries. This is done by calling `AfxOleInit` from `InitInstance`:  
   
 ```  
 if (!AfxOleInit())  
@@ -264,7 +264,7 @@ Invalidate();
 }  
 ```  
   
- In MFC/OLE1, container applications derived the document class from **COleClientDoc**. In MFC/OLE 2 this class has been removed and replaced by `COleDocument` (this new organization makes it easier to build container/server applications). There is a `#define` that maps **COleClientDoc** to `COleDocument` to simplify porting of MFC/OLE1 applications to MFC/OLE 2, such as OCLIENT. One of the features not supplied by `COleDocument` that was provided by **COleClientDoc** is the standard command message map entries. This is done so that server applications, which also use `COleDocument` (indirectly), do not carry with them the overhead of these command handlers unless they are a container/server application. You need to add the following entries to the CMainDoc message map:  
+ In MFC/OLE1, container applications derived the document class from `COleClientDoc`. In MFC/OLE 2 this class has been removed and replaced by `COleDocument` (this new organization makes it easier to build container/server applications). There is a **#define** that maps `COleClientDoc` to `COleDocument` to simplify porting of MFC/OLE1 applications to MFC/OLE 2, such as OCLIENT. One of the features not supplied by `COleDocument` that was provided by `COleClientDoc` is the standard command message map entries. This is done so that server applications, which also use `COleDocument` (indirectly), do not carry with them the overhead of these command handlers unless they are a container/server application. You need to add the following entries to the CMainDoc message map:  
   
 ```  
 ON_UPDATE_COMMAND_UI(ID_EDIT_PASTE,
@@ -310,13 +310,13 @@ AddDocTemplate(pTemplate);
   
  To enable in-place activation, there are some things that need to change in both the `CView` (CMainView) derived class as well as the `COleClientItem` derived class (CRectItem). All of these overrides are provided by AppWizard and most of the implementation will come directly from a default AppWizard application.  
   
- In the first step of this port, in-place activation was disabled entirely by overriding `COleClientItem::CanActivate`. This override should be removed to allow in-place activation. In addition, NULL was passed to all calls to `DoVerb` (there are two of them) because providing the view was only necessary for in-place activation. To fully implement in-place activation, it is necessary to pass the correct view in the `DoVerb` call. One of these calls is in **CMainView::OnInsertObject**:  
+ In the first step of this port, in-place activation was disabled entirely by overriding `COleClientItem::CanActivate`. This override should be removed to allow in-place activation. In addition, NULL was passed to all calls to `DoVerb` (there are two of them) because providing the view was only necessary for in-place activation. To fully implement in-place activation, it is necessary to pass the correct view in the `DoVerb` call. One of these calls is in `CMainView::OnInsertObject`:  
   
 ```  
 pItem->DoVerb(OLEIVERB_SHOW, this);
 ```  
   
- Another is in **CMainView::OnLButtonDblClk**:  
+ Another is in `CMainView::OnLButtonDblClk`:  
   
 ```  
 m_pSelection->DoVerb(OLEIVERB_PRIMARY, this);
@@ -371,7 +371,7 @@ ASSERT(GetDocument()->GetInPlaceActiveItem(this) == NULL);
 }  
 ```  
   
- To handle the case where the user clicks outside the item, you add the following code to the start of **CMainView::SetSelection**:  
+ To handle the case where the user clicks outside the item, you add the following code to the start of `CMainView::SetSelection`:  
   
 ```  
 if (pNewSel != m_pSelection || pNewSel == NULL)  
@@ -450,7 +450,7 @@ void CMainView::OnSize(UINT nType,
   
  This first error points out a much larger problem with the `InitInstance` function for servers. The initialization required for an OLE server is probably one of the biggest changes you'll have to make to your MFC/OLE1 application to get it running. The best thing to do is look at what AppWizard creates for an OLE server and modify your code as appropriate. Here are some points to keep in mind:  
   
- It is necessary to initialize the OLE libraries by calling **AfxOleInit**  
+ It is necessary to initialize the OLE libraries by calling `AfxOleInit`  
   
  Call SetServerInfo on the document template object to set server resource handles and runtime class information that you can't set with the `CDocTemplate` constructor.  
   
@@ -555,7 +555,7 @@ RegisterShellFileTypes();
   
  You will notice that the code above refers to a new resource ID, IDR_HIERSVRTYPE_SRVR_EMB. This is the menu resource to be used when a document that is embedded in another container is edited. In MFC/OLE1 the menu items specific to editing an embedded item were modified on the fly. Using an entirely different menu structure when editing an embedded item instead of editing a file-based document makes it much easier to provide different user interfaces for these two separate modes. As you'll see later, an entirely separate menu resource is used when editing an embedded object in-place.  
   
- To create this resource, load the resource script into Visual C++ and copy the existing IDR_HIERSVRTYPE menu resource. Rename the new resource to IDR_HIERSVRTYPE_SRVR_EMB (this is the same naming convention that AppWizard uses). Next change "File Save" to "File Update"; give it command ID **ID_FILE_UPDATE**. Also change "File Save As" to "File Save Copy As"; give it command ID **ID_FILE_SAVE_COPY_AS**. The framework provides the implementation of both of these commands.  
+ To create this resource, load the resource script into Visual C++ and copy the existing IDR_HIERSVRTYPE menu resource. Rename the new resource to IDR_HIERSVRTYPE_SRVR_EMB (this is the same naming convention that AppWizard uses). Next change "File Save" to "File Update"; give it command ID ID_FILE_UPDATE. Also change "File Save As" to "File Save Copy As"; give it command ID ID_FILE_SAVE_COPY_AS. The framework provides the implementation of both of these commands.  
   
 ```  
 \hiersvr\svritem.h(60) : error C2433: 'OLESTATUS' : 'virtual' not permitted on data declarations  
@@ -565,20 +565,20 @@ RegisterShellFileTypes();
 \hiersvr\svritem.h(60) : error C2501: 'OnSetData' : missing decl-specifiers  
 ```  
   
- There are a number of errors resulting from the override of `OnSetData`, since it is referring to the **OLESTATUS** type. **OLESTATUS** was the way OLE1 returned errors. This has changed to `HRESULT` in OLE 2, although MFC usually converts an `HRESULT` into a `COleException` containing the error. In this particular case, the override of `OnSetData` is no longer necessary, so the easiest thing to do is to remove it.  
+ There are a number of errors resulting from the override of `OnSetData`, since it is referring to the **OLESTATUS** type. **OLESTATUS** was the way OLE1 returned errors. This has changed to **HRESULT** in OLE 2, although MFC usually converts an **HRESULT** into a `COleException` containing the error. In this particular case, the override of `OnSetData` is no longer necessary, so the easiest thing to do is to remove it.  
   
 ```  
 \hiersvr\svritem.cpp(30) : error C2660: 'COleServerItem::COleServerItem' : function does not take 1 parameters  
 ```  
   
- The `COleServerItem` constructor takes an extra 'BOOL' parameter. This flag determines how memory management is done on the `COleServerItem` objects. By setting it to TRUE, the framework handles the memory management of these objects — deleting them when they are no longer necessary. HIERSVR uses **CServerItem** (derived from `COleServerItem`) objects as part of its native data, so you'll set this flag to FALSE. This lets HIERSVR determine when each server item is deleted.  
+ The `COleServerItem` constructor takes an extra 'BOOL' parameter. This flag determines how memory management is done on the `COleServerItem` objects. By setting it to TRUE, the framework handles the memory management of these objects — deleting them when they are no longer necessary. HIERSVR uses `CServerItem` (derived from `COleServerItem`) objects as part of its native data, so you'll set this flag to FALSE. This lets HIERSVR determine when each server item is deleted.  
   
 ```  
 \hiersvr\svritem.cpp(44) : error C2259: 'CServerItem' : illegal attempt to instantiate abstract class  
 \hiersvr\svritem.cpp(44) : error C2259: 'CServerItem' : illegal attempt to instantiate abstract class  
 ```  
   
- As these errors imply, there are some 'pure-virtual' functions that have not been overridden in CServerItem. Most likely this is caused by the fact that OnDraw's parameter list has changed. To fix this error, change **CServerItem::OnDraw** as follows (as well as the declaration in svritem.h):  
+ As these errors imply, there are some 'pure-virtual' functions that have not been overridden in CServerItem. Most likely this is caused by the fact that OnDraw's parameter list has changed. To fix this error, change `CServerItem::OnDraw` as follows (as well as the declaration in svritem.h):  
   
 ```  
 BOOL CServerItem::OnDraw(CDC* pDC,
@@ -616,7 +616,7 @@ return TRUE;
     int)__far const ' : cannot convert parameter 1 from 'int __far *' to 'struct ::tagPOINT __far *'  
 ```  
   
- In the CServerItem::CalcNodeSize function the item size is converted to **HIMETRIC** and stored in **m_rectBounds**. The undocumented '**m_rectBounds**' member of `COleServerItem` does not exist (it has been partially replaced by `m_sizeExtent`, but in OLE 2 this member has a slightly different usage than **m_rectBounds** did in OLE1). Instead of setting the **HIMETRIC** size into this member variable, you'll return it. This return value is used in `OnGetExtent`, implemented previously.  
+ In the CServerItem::CalcNodeSize function the item size is converted to **HIMETRIC** and stored in *m_rectBounds*. The undocumented '*m_rectBounds*' member of `COleServerItem` does not exist (it has been partially replaced by *m_sizeExtent*, but in OLE 2 this member has a slightly different usage than *m_rectBounds* did in OLE1). Instead of setting the **HIMETRIC** size into this member variable, you'll return it. This return value is used in `OnGetExtent`, implemented previously.  
   
 ```  
 CSize CServerItem::CalcNodeSize()  
@@ -642,7 +642,7 @@ CSize CServerItem::CalcNodeSize()
 }  
 ```  
   
- CServerItem also overrides **COleServerItem::OnGetTextData**. This function is obsolete in MFC/OLE and is replaced by a different mechanism. The MFC 3.0 version of the MFC OLE sample [HIERSVR](../visual-cpp-samples.md) implements this functionality by overriding `COleServerItem::OnRenderFileData`. This functionality is not important for this basic port, so you can remove the OnGetTextData override.  
+ CServerItem also overrides `COleServerItem::OnGetTextData`. This function is obsolete in MFC/OLE and is replaced by a different mechanism. The MFC 3.0 version of the MFC OLE sample [HIERSVR](../visual-cpp-samples.md) implements this functionality by overriding `COleServerItem::OnRenderFileData`. This functionality is not important for this basic port, so you can remove the OnGetTextData override.  
   
  There are many more errors in svritem.cpp that have not been addressed. They are not "real" errors — just errors caused by previous errors.  
   
@@ -711,7 +711,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
     AfxGetApp()->m_pMainWnd);
 ```  
   
- Notice the reference to **AfxGetApp()->m_pMainWnd**. When the server is in-place activated, it has a main window and m_pMainWnd is set, but it is usually invisible. Furthermore, this window refers to the *main* window of the application, the MDI frame window that appears when the server is fully open or run stand-alone. It does not refer to the active frame window — which when in-place activated is a frame window derived from `COleIPFrameWnd`. To get the correct active window even when in-place editing, this version of MFC adds a new function, `AfxGetMainWnd`. Generally, you should use this function instead of **AfxGetApp()->m_pMainWnd**. This code needs to change as follows:  
+ Notice the reference to *`AfxGetApp()->m_pMainWnd*`. When the server is in-place activated, it has a main window and m_pMainWnd is set, but it is usually invisible. Furthermore, this window refers to the *main* window of the application, the MDI frame window that appears when the server is fully open or run stand-alone. It does not refer to the active frame window — which when in-place activated is a frame window derived from `COleIPFrameWnd`. To get the correct active window even when in-place editing, this version of MFC adds a new function, `AfxGetMainWnd`. Generally, you should use this function instead of *`AfxGetApp()->m_pMainWnd*`. This code needs to change as follows:  
   
 ```  
 pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,  
@@ -728,7 +728,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
   
 -   Scrolling the container window as the selection is changed.  
   
- The HIERSVR sample in MFC 3.0 also uses a slightly different design for its server items. This helps conserve memory and makes your links more flexible. With the 2.0 version of HIERSVR each node in the tree *is-a* `COleServerItem`. `COleServerItem` carries a bit more overhead than is strictly necessary for each of these nodes, but a `COleServerItem` is required for each active link. But for the most part, there are very few active links at any given time. To make this more efficient, the HIERSVR in this version of MFC separates the node from the `COleServerItem`. It has both a CServerNode and a **CServerItem** class. The **CServerItem** (derived from `COleServerItem`) is only created as necessary. Once the container (or containers) stop using that particular link to that particular node, the CServerItem object associated with the CServerNode is deleted. This design is more efficient and more flexible. Its flexibility comes in when dealing with multiple selection links. Neither of these two versions of HIERSVR support multiple selection, but it would be much easier to add (and to support links to such selections) with the MFC 3.0 version of HIERSVR, since the `COleServerItem` is separated from the native data.  
+ The HIERSVR sample in MFC 3.0 also uses a slightly different design for its server items. This helps conserve memory and makes your links more flexible. With the 2.0 version of HIERSVR each node in the tree *is-a* `COleServerItem`. `COleServerItem` carries a bit more overhead than is strictly necessary for each of these nodes, but a `COleServerItem` is required for each active link. But for the most part, there are very few active links at any given time. To make this more efficient, the HIERSVR in this version of MFC separates the node from the `COleServerItem`. It has both a CServerNode and a `CServerItem` class. The `CServerItem` (derived from `COleServerItem`) is only created as necessary. Once the container (or containers) stop using that particular link to that particular node, the CServerItem object associated with the CServerNode is deleted. This design is more efficient and more flexible. Its flexibility comes in when dealing with multiple selection links. Neither of these two versions of HIERSVR support multiple selection, but it would be much easier to add (and to support links to such selections) with the MFC 3.0 version of HIERSVR, since the `COleServerItem` is separated from the native data.  
   
 ## See Also  
  [Technical Notes by Number](../mfc/technical-notes-by-number.md)   

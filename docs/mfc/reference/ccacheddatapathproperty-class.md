@@ -38,7 +38,7 @@ class CCachedDataPathProperty : public CDataPathProperty
 ## Remarks  
  A memory file is stored in RAM rather than on disk and is useful for fast temporary transfers.  
   
- Along with **CAysncMonikerFile** and `CDataPathProperty`, `CCachedDataPathProperty` provides functionality for the use of asynchronous monikers in OLE controls. With `CCachedDataPathProperty` objects, you are able to transfer data asynchronously from a URL or file source and store it in a memory file via the `m_Cache` public variable. All the data is stored in the memory file, and there is no need to override [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) unless you want to watch for notifications and respond. For example, if you are transferring a large .GIF file and want to notify your control that more data has arrived and it should redraw itself, override `OnDataAvailable` to make the notification.  
+ Along with `CAysncMonikerFile` and `CDataPathProperty`, `CCachedDataPathProperty` provides functionality for the use of asynchronous monikers in OLE controls. With `CCachedDataPathProperty` objects, you are able to transfer data asynchronously from a URL or file source and store it in a memory file via the `m_Cache` public variable. All the data is stored in the memory file, and there is no need to override [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) unless you want to watch for notifications and respond. For example, if you are transferring a large .GIF file and want to notify your control that more data has arrived and it should redraw itself, override `OnDataAvailable` to make the notification.  
   
  The class `CCachedDataPathProperty` is derived from `CDataPathProperty`.  
   
@@ -79,14 +79,14 @@ CCachedDataPathProperty(
 ```  
   
 ### Parameters  
- `pControl`  
+ *pControl*  
  A pointer to the ActiveX control object to be associated with this `CCachedDataPathProperty` object.  
   
- `lpszPath`  
+ *lpszPath*  
  The path, which may be absolute or relative, used to create an asynchronous moniker that references the actual absolute location of the property. `CCachedDataPathProperty` uses URLs, not filenames. If you want a `CCachedDataPathProperty` object for a file, prepend file:// to the path.  
   
 ### Remarks  
- The `COleControl` object pointed to by `pControl` is used by [Open](../../mfc/reference/cdatapathproperty-class.md#open) and retrieved by derived classes. If `pControl` is **NULL**, the control used with **Open** should be set with [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). If `lpszPath` is **NULL**, you can pass in the path through **Open** or set it with [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).  
+ The `COleControl` object pointed to by *pControl* is used by [Open](../../mfc/reference/cdatapathproperty-class.md#open) and retrieved by derived classes. If *pControl* is **NULL**, the control used with `Open` should be set with [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). If *lpszPath* is **NULL**, you can pass in the path through `Open` or set it with [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).  
   
 ##  <a name="m_cache"></a>  CCachedDataPathProperty::m_Cache  
  Contains the class name of the memory file into which data is cached.  

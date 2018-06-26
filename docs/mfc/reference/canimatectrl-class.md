@@ -117,23 +117,23 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb761886) in the Windows SDK.  
   
- `rect`  
+ *rect*  
  Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
- `pParentWnd`  
- Specifies the animation control's parent window, usually a `CDialog`. It must not be **NULL.**  
+ *pParentWnd*  
+ Specifies the animation control's parent window, usually a `CDialog`. It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the animation control's ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- You construct a `CAnimateCtrl` in two steps. First, call the constructor, and then call **Create**, which creates the animation control and attaches it to the `CAnimateCtrl` object.  
+ You construct a `CAnimateCtrl` in two steps. First, call the constructor, and then call `Create`, which creates the animation control and attaches it to the `CAnimateCtrl` object.  
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to an animation control.  
   
@@ -143,7 +143,7 @@ virtual BOOL Create(
   
 - **WS_DISABLED** Rarely  
   
- If you want to use extended windows styles with your animation control, call [CreateEx](#createex) instead of **Create**.  
+ If you want to use extended windows styles with your animation control, call [CreateEx](#createex) instead of `Create`.  
   
  In addition to the window styles listed above, you may want to apply one or more of the animation control styles to an animation control. See the Windows SDK for more information on [animation control styles](http://msdn.microsoft.com/library/windows/desktop/bb761886).  
   
@@ -163,19 +163,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb761886) in the Windows SDK.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
@@ -206,10 +206,10 @@ BOOL Open(UINT nID);
 ```  
   
 ### Parameters  
- `lpszFileName`  
+ *lpszFileName*  
  A `CString` object or a pointer to a null-terminated string that contains either the name of the AVI file or the name of an AVI resource. If this parameter is **NULL**, the system closes the AVI clip that was previously opened for the animation control, if any.  
   
- `nID`  
+ *nID*  
  The AVI resource identifier. If this parameter is **NULL**, the system closes the AVI clip that was previously opened for the animation control, if any.  
   
 ### Return Value  
@@ -240,10 +240,10 @@ BOOL Play(
 ```  
   
 ### Parameters  
- `nFrom`  
+ *nFrom*  
  Zero-based index of the frame where playing begins. Value must be less than 65,536. A value of 0 means begin with the first frame in the AVI clip.  
   
- `nTo`  
+ *nTo*  
  Zero-based index of the frame where playing ends. Value must be less than 65,536. A value of - 1 means end with the last frame in the AVI clip.  
   
  *nRep*  
@@ -266,7 +266,7 @@ BOOL Seek(UINT nTo);
 ```  
   
 ### Parameters  
- `nTo`  
+ *nTo*  
  Zero-based index of the frame to display. Value must be less than 65,536. A value of 0 means display the first frame in the AVI clip. A value of -1 means display the last frame in the AVI clip.  
   
 ### Return Value  

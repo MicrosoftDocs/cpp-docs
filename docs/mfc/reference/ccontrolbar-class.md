@@ -92,21 +92,21 @@ virtual CSize CalcDynamicLayout(
 ```  
   
 ### Parameters  
- `nLength`  
- The requested dimension of the control bar, either horizontal or vertical, depending on `dwMode`.  
+ *nLength*  
+ The requested dimension of the control bar, either horizontal or vertical, depending on *dwMode*.  
   
- `nMode`  
+ *nMode*  
  The following predefined flags are used to determine the height and width of the dynamic control bar. Use the bitwise-OR (&#124;) operator to combine the flags.  
   
 |Layout mode flags|What it means|  
 |-----------------------|-------------------|  
-|`LM_STRETCH`|Indicates whether the control bar should be stretched to the size of the frame. Set if the bar is not a docking bar (not available for docking). Not set when the bar is docked or floating (available for docking). If set, `LM_STRETCH` ignores `nLength` and returns dimensions based on the `LM_HORZ` state. `LM_STRETCH` works similarly to the `bStretch` parameter used in [CalcFixedLayout](#calcfixedlayout); see that member function for more information about the relationship between stretching and orientation.|  
-|`LM_HORZ`|Indicates that the bar is horizontally or vertically oriented. Set if the bar is horizontally oriented, and if it is vertically oriented, it is not set. `LM_HORZ` works similarly to the `bHorz` parameter used in [CalcFixedLayout](#calcfixedlayout); see that member function for more information about the relationship between stretching and orientation.|  
-|**LM_MRUWIDTH**|Most Recently Used Dynamic Width. Ignores `nLength` parameter and uses the remembered most recently used width.|  
-|`LM_HORZDOCK`|Horizontal Docked Dimensions. Ignores `nLength` parameter and returns the dynamic size with the largest width.|  
-|`LM_VERTDOCK`|Vertical Docked Dimensions. Ignores `nLength` parameter and returns the dynamic size with the largest height.|  
-|`LM_LENGTHY`|Set if `nLength` indicates height (Y-direction) instead of width.|  
-|`LM_COMMIT`|Resets **LM_MRUWIDTH** to current width of floating control bar.|  
+|`LM_STRETCH`|Indicates whether the control bar should be stretched to the size of the frame. Set if the bar is not a docking bar (not available for docking). Not set when the bar is docked or floating (available for docking). If set, `LM_STRETCH` ignores *nLength* and returns dimensions based on the `LM_HORZ` state. `LM_STRETCH` works similarly to the *bStretch* parameter used in [CalcFixedLayout](#calcfixedlayout); see that member function for more information about the relationship between stretching and orientation.|  
+|`LM_HORZ`|Indicates that the bar is horizontally or vertically oriented. Set if the bar is horizontally oriented, and if it is vertically oriented, it is not set. `LM_HORZ` works similarly to the *bHorz* parameter used in [CalcFixedLayout](#calcfixedlayout); see that member function for more information about the relationship between stretching and orientation.|  
+|`LM_MRUWIDTH`|Most Recently Used Dynamic Width. Ignores *nLength* parameter and uses the remembered most recently used width.|  
+|`LM_HORZDOCK`|Horizontal Docked Dimensions. Ignores *nLength* parameter and returns the dynamic size with the largest width.|  
+|`LM_VERTDOCK`|Vertical Docked Dimensions. Ignores *nLength* parameter and returns the dynamic size with the largest height.|  
+|`LM_LENGTHY`|Set if *nLength* indicates height (Y-direction) instead of width.|  
+|`LM_COMMIT`|Resets `LM_MRUWIDTH` to current width of floating control bar.|  
   
 ### Return Value  
  The control bar size, in pixels, of a [CSize](../../atl-mfc-shared/reference/csize-class.md) object.  
@@ -124,11 +124,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- `bStretch`  
- Indicates whether the bar should be stretched to the size of the frame. The `bStretch` parameter is nonzero when the bar is not a docking bar (not available for docking) and is 0 when it is docked or floating (available for docking).  
+ *bStretch*  
+ Indicates whether the bar should be stretched to the size of the frame. The *bStretch* parameter is nonzero when the bar is not a docking bar (not available for docking) and is 0 when it is docked or floating (available for docking).  
   
- `bHorz`  
- Indicates that the bar is horizontally or vertically oriented. The `bHorz` parameter is nonzero if the bar is horizontally oriented and is 0 if it is vertically oriented.  
+ *bHorz*  
+ Indicates that the bar is horizontally or vertically oriented. The *bHorz* parameter is nonzero if the bar is horizontally oriented and is 0 if it is vertically oriented.  
   
 ### Return Value  
  The control bar size, in pixels, of a `CSize` object.  
@@ -136,7 +136,7 @@ virtual CSize CalcFixedLayout(
 ### Remarks  
  Control bars such as toolbars can stretch horizontally or vertically to accommodate the buttons contained in the control bar.  
   
- If `bStretch` is **TRUE**, stretch the dimension along the orientation provided by `bHorz`. In other words, if `bHorz` is **FALSE**, the control bar is stretched vertically. If `bStretch` is **FALSE**, no stretch occurs. The following table shows the possible permutations, and resulting control-bar styles, of `bStretch` and `bHorz`.  
+ If *bStretch* is **TRUE**, stretch the dimension along the orientation provided by *bHorz*. In other words, if *bHorz* is **FALSE**, the control bar is stretched vertically. If *bStretch* is **FALSE**, no stretch occurs. The following table shows the possible permutations, and resulting control-bar styles, of *bStretch* and *bHorz*.  
   
 |bStretch|bHorz|Stretching|Orientation|Docking/Not docking|  
 |--------------|-----------|----------------|-----------------|--------------------------|  
@@ -155,11 +155,11 @@ virtual void CalcInsideRect(
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Contains the current dimensions of the control bar; including the borders.  
   
- `bHorz`  
- Indicates that the bar is horizontally or vertically oriented. The `bHorz` parameter is nonzero if the bar is horizontally oriented and is 0 if it is vertically oriented.  
+ *bHorz*  
+ Indicates that the bar is horizontally or vertically oriented. The *bHorz* parameter is nonzero if the bar is horizontally oriented and is 0 if it is vertically oriented.  
   
 ### Remarks  
  This function is called before the control bar is painted.  
@@ -181,7 +181,7 @@ virtual void DoPaint(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Points to the device context to be used for rendering the borders and gripper of the control bar.  
   
 ### Remarks  
@@ -199,10 +199,10 @@ virtual void DrawBorders(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Points to the device context to be used for rendering the borders of the control bar.  
   
- `rect`  
+ *rect*  
  A `CRect` object containing the dimensions of the control bar.  
   
 ### Remarks  
@@ -218,10 +218,10 @@ virtual void DrawGripper(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Points to the device context to be used for rendering the control bar gripper.  
   
- `rect`  
+ *rect*  
  A `CRect` object containing the dimensions of the control bar gripper.  
   
 ### Remarks  
@@ -235,7 +235,7 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- `dwDockStyle`  
+ *dwDockStyle*  
  Specifies whether the control bar supports docking and the sides of its parent window to which the control bar can be docked, if supported. Can be one or more of the following:  
   
 - `CBRS_ALIGN_TOP` Allows docking at the top of the client area.  
@@ -276,7 +276,7 @@ CRect GetBorders() const;
 ```  
   
 ### Return Value  
- A `CRect` object that contains the current width (in pixels) of each side of the control bar object. For example, the value of the `left` member, of [CRect](../../atl-mfc-shared/reference/crect-class.md) object, is the width of the left hand border.  
+ A `CRect` object that contains the current width (in pixels) of each side of the control bar object. For example, the value of the *left* member, of [CRect](../../atl-mfc-shared/reference/crect-class.md) object, is the width of the left hand border.  
   
 ##  <a name="getcount"></a>  CControlBar::GetCount  
  Returns the number of non- `HWND` items on the `CControlBar` object.  
@@ -327,9 +327,9 @@ BOOL m_bAutoDelete;
 ```  
   
 ### Remarks  
- `m_bAutoDelete` is a public variable of type **BOOL**.  
+ *m_bAutoDelete* is a public variable of type **BOOL**.  
   
- A control-bar object is usually embedded in a frame-window object. In this case, `m_bAutoDelete` is 0 because the embedded control-bar object is destroyed when the frame window is destroyed.  
+ A control-bar object is usually embedded in a frame-window object. In this case, *m_bAutoDelete* is 0 because the embedded control-bar object is destroyed when the frame window is destroyed.  
   
  Set this variable to a nonzero value if you allocate a `CControlBar` object on the heap and you do not plan to call **delete**.  
   
@@ -350,10 +350,10 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- `pTarget`  
+ *pTarget*  
  Points to the main frame window of the application. This pointer is used for routing update messages.  
   
- `bDisableIfNoHndler`  
+ *bDisableIfNoHndler*  
  Flag that indicates whether a control that has no update handler should be automatically displayed as disabled.  
   
 ### Remarks  
@@ -369,7 +369,7 @@ void SetBarStyle(DWORD dwStyle);
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  The desired styles for the control bar. Can be one or more of the following:  
   
 - `CBRS_ALIGN_TOP` Allows the control bar to be docked to the top of the client area of a frame window.  
@@ -396,7 +396,7 @@ void SetBarStyle(DWORD dwStyle);
   
 - `CBRS_FLYBY` Causes message text to be updated at the same time as tool tips.  
   
-- **CBRS_GRIPPER** Causes a gripper, similar to that used on bands in a **CReBar** object, to be drawn for any `CControlBar`-derived class.  
+- `CBRS_GRIPPER` Causes a gripper, similar to that used on bands in a `CReBar` object, to be drawn for any `CControlBar`-derived class.  
   
 ### Remarks  
  Does not affect the **WS_** (window style) settings.  
@@ -427,7 +427,7 @@ void SetBorders(LPCRECT lpRect);
  *cyBottom*  
  The height (in pixels) of the control bar's bottom border.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the current width (in pixels)of each border of the control bar object.  
   
 ### Example  
@@ -443,7 +443,7 @@ void SetInPlaceOwner(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to a `CWnd` object.  
   
 ### Remarks  

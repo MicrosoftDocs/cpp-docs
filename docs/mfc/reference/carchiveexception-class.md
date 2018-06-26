@@ -52,7 +52,7 @@ class CArchiveException : public CException
  **Header:** afx.h  
   
 ##  <a name="carchiveexception"></a>  CArchiveException::CArchiveException  
- Constructs a `CArchiveException` object, storing the value of `cause` in the object.  
+ Constructs a `CArchiveException` object, storing the value of *cause* in the object.  
   
 ```  
 CArchiveException(
@@ -61,10 +61,10 @@ CArchiveException(
 ```  
   
 ### Parameters  
- `cause`  
+ *cause*  
  An enumerated type variable that indicates the reason for the exception. For a list of the enumerators, see the [m_cause](#m_cause) data member.  
   
- `lpszArchiveName`  
+ *lpszArchiveName*  
  Points to a string containing the name of the `CArchive` object causing the exception.  
   
 ### Remarks  
@@ -80,7 +80,7 @@ int m_cause;
 ```  
   
 ### Remarks  
- This data member is a public variable of type `int`. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:  
+ This data member is a public variable of type **int**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:  
   
 - **CArchiveException::none** No error occurred.  
   

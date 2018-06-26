@@ -46,7 +46,7 @@ class CDBVariant
 |Name|Description|  
 |----------|-----------------|  
 |[CDBVariant::m_boolVal](#m_boolval)|Contains a value of type **BOOL**.|  
-|[CDBVariant::m_chVal](#m_chval)|Contains a value of type `unsigned char`.|  
+|[CDBVariant::m_chVal](#m_chval)|Contains a value of type **unsigned char**.|  
 |[CDBVariant::m_dblVal](#m_dblval)|Contains a value of type **double**.|  
 |[CDBVariant::m_fltVal](#m_fltval)|Contains a value of type **float**.|  
 |[CDBVariant::m_iVal](#m_ival)|Contains a value of type **short**.|  
@@ -88,9 +88,9 @@ void Clear();
 ```  
   
 ### Remarks  
- If the value of the [m_dwType](#m_dwtype) data member is **DBVT_DATE**, **DBVT_STRING**, or **DBVT_BINARY**, **Clear** frees the memory associated with the union pointer member. **Clear** sets `m_dwType` to **DBVT_NULL**.  
+ If the value of the [m_dwType](#m_dwtype) data member is **DBVT_DATE**, **DBVT_STRING**, or **DBVT_BINARY**, `Clear` frees the memory associated with the union pointer member. `Clear` sets `m_dwType` to **DBVT_NULL**.  
   
- The `CDBVariant` destructor calls **Clear**.  
+ The `CDBVariant` destructor calls `Clear`.  
   
 ##  <a name="m_boolval"></a>  CDBVariant::m_boolVal  
  Stores a value of type **BOOL**.  

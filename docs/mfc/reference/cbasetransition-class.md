@@ -90,7 +90,7 @@ BOOL AddToStoryboard(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to storyboard, which will animate the related variable.  
   
 ### Return Value  
@@ -107,7 +107,7 @@ BOOL AddToStoryboardAtKeyframes(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to storyboard, which will animate the related variable.  
   
 ### Return Value  
@@ -143,10 +143,10 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which creates standard transitions. It can be NULL for custom transitions.  
   
- `pFactory`  
+ *pFactory*  
  A pointer to transition factory, which creates custom transitions. It can be NULL for standard transitions.  
   
 ### Return Value  
@@ -206,10 +206,10 @@ IUIAnimationTransition* GetTransition();
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which creates standard transitions. It can be NULL for custom transitions.  
   
- `pFactory`  
+ *pFactory*  
  A pointer to transition factory, which creates custom transitions. It can be NULL for standard transitions.  
   
 ### Return Value  
@@ -296,10 +296,10 @@ void SetKeyframes(
 ```  
   
 ### Parameters  
- `pStart`  
+ *pStart*  
  A keyframe that specifies the beginning of the transition.  
   
- `pEnd`  
+ *pEnd*  
  A keyframe that specifies the end of the transition.  
   
 ### Remarks  
@@ -313,7 +313,7 @@ void SetRelatedVariable(CAnimationVariable* pVariable);
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to related animation variable.  
   
 ### Remarks  

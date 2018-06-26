@@ -55,7 +55,7 @@ class CColorDialog : public CCommonDialog
   
  To construct a `CColorDialog` object, use the provided constructor or derive a new class and use your own custom constructor.  
   
- Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The `m_cc` structure is of type [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830).  
+ Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The *m_cc* structure is of type [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830).  
   
  After initializing the dialog box's controls, call the `DoModal` member function to display the dialog box and allow the user to select a color. `DoModal` returns the user's selection of either the dialog box's OK ( **IDOK**) or Cancel ( **IDCANCEL**) button.  
   
@@ -104,10 +104,10 @@ CColorDialog(
  *clrInit*  
  The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
- `dwFlags`  
+ *dwFlags*  
  A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830) structure in the Windows SDK.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
   
 ### Example  
@@ -172,7 +172,7 @@ CHOOSECOLOR m_cc;
 ```  
   
 ### Remarks  
- After constructing a `CColorDialog` object, you can use `m_cc` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function.  
+ After constructing a `CColorDialog` object, you can use *m_cc* to set various aspects of the dialog box before calling the [DoModal](#domodal) member function.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#53](../../mfc/codesnippet/cpp/ccolordialog-class_4.cpp)]  
@@ -206,18 +206,18 @@ virtual BOOL OnColorOK();
  [!code-cpp[NVC_MFCDocView#52](../../mfc/codesnippet/cpp/ccolordialog-class_5.cpp)]  
   
 ##  <a name="setcurrentcolor"></a>  CColorDialog::SetCurrentColor  
- Call this function after calling `DoModal` to force the current color selection to the color value specified in `clr`.  
+ Call this function after calling `DoModal` to force the current color selection to the color value specified in *clr*.  
   
 ```  
 void SetCurrentColor(COLORREF clr);
 ```  
   
 ### Parameters  
- `clr`  
+ *clr*  
  An RGB color value.  
   
 ### Remarks  
- This function is called from within a message handler or `OnColorOK`. The dialog box will automatically update the user's selection based on the value of the `clr` parameter.  
+ This function is called from within a message handler or `OnColorOK`. The dialog box will automatically update the user's selection based on the value of the *clr* parameter.  
   
 ### Example  
   See the example for [CColorDialog::OnColorOK](#oncolorok).  

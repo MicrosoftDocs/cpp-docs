@@ -71,10 +71,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppManagerEventHandler`  
+ *ppManagerEventHandler*  
  Output. If the method succeeds it contains a pointer to COM object that will handle status updates to an animation manager.  
   
 ### Return Value  
@@ -92,10 +92,10 @@ IFACEMETHOD(OnManagerStatusChanged)(
 ```  
   
 ### Parameters  
- `newStatus`  
+ *newStatus*  
  New status.  
   
- `previousStatus`  
+ *previousStatus*  
  Previous status.  
   
 ### Return Value  
@@ -111,7 +111,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

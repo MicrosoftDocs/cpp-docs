@@ -22,7 +22,7 @@ By default, date and time picker controls provide three format types (each forma
   
  However, you can customize the appearance of the date or time by using a custom format string. This custom string is made up of either existing format characters, nonformat characters, or a combination of both. Once the custom string is built, make a call to [CDateTimeCtrl::SetFormat](../mfc/reference/cdatetimectrl-class.md#setformat) passing in your custom string. The date and time picker control will then display the current value using your custom format string.  
   
- The following example code (where `m_dtPicker` is the `CDateTimeCtrl` object) demonstrates one possible solution:  
+ The following example code (where *m_dtPicker* is the `CDateTimeCtrl` object) demonstrates one possible solution:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#7](../mfc/codesnippet/cpp/using-custom-format-strings-in-a-date-and-time-picker-control_1.cpp)]  
   

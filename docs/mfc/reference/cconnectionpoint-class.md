@@ -37,7 +37,7 @@ class CConnectionPoint : public CCmdTarget
 |[CConnectionPoint::GetContainer](#getcontainer)|Retrieves the container of the control that owns the connection map.|  
 |[CConnectionPoint::GetIID](#getiid)|Retrieves the interface ID of a connection point.|  
 |[CConnectionPoint::GetMaxConnections](#getmaxconnections)|Retrieves the maximum number of connection points supported by a control.|  
-|[CConnectionPoint::GetNextConnection](#getnextconnection)|Retrieves a pointer to the connection element at `pos`.|  
+|[CConnectionPoint::GetNextConnection](#getnextconnection)|Retrieves a pointer to the connection element at *pos*.|  
 |[CConnectionPoint::GetStartPosition](#getstartposition)|Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextConnection` call.|  
 |[CConnectionPoint::OnAdvise](#onadvise)|Called by the framework when establishing or breaking connections.|  
 |[CConnectionPoint::QuerySinkInterface](#querysinkinterface)|Retrieves a pointer to the requested sink interface.|  
@@ -53,13 +53,13 @@ class CConnectionPoint : public CCmdTarget
   
  [!code-cpp[NVC_MFCConnectionPoints#7](../../mfc/codesnippet/cpp/cconnectionpoint-class_1.h)]  
   
- The `BEGIN_CONNECTION_PART` and `END_CONNECTION_PART` macros declare an embedded class, `XSampleConnPt` (derived from `CConnectionPoint`) that implements this particular connection point. If you want to override any `CConnectionPoint` member functions, or add member functions of your own, declare them between these two macros. For example, the `CONNECTION_IID` macro overrides the `CConnectionPoint::GetIID` member function when placed between these two macros.  
+ The BEGIN_CONNECTION_PART and END_CONNECTION_PART macros declare an embedded class, `XSampleConnPt` (derived from `CConnectionPoint`) that implements this particular connection point. If you want to override any `CConnectionPoint` member functions, or add member functions of your own, declare them between these two macros. For example, the CONNECTION_IID macro overrides the `CConnectionPoint::GetIID` member function when placed between these two macros.  
   
  The second code fragment is inserted into the implementation file (.CPP) of your control class. This code implements the connection map, which includes the additional connection point, `SampleConnPt`:  
   
  [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/cconnectionpoint-class_2.cpp)]  
   
- Once these code fragments have been inserted, the Sample OLE control exposes a connection point for the **ISampleSink** interface.  
+ Once these code fragments have been inserted, the Sample OLE control exposes a connection point for the `ISampleSink` interface.  
   
  Typically, connection points support "multicasting", which is the ability to broadcast to multiple sinks connected to the same interface. The following code fragment demonstrates how to accomplish multicasting by iterating through each sink on a connection point:  
   
@@ -107,7 +107,7 @@ virtual LPCONNECTIONPOINTCONTAINER GetContainer();
  If successful, a pointer to the container; otherwise **NULL**.  
   
 ### Remarks  
- This function is typically implemented by the `BEGIN_CONNECTION_PART` macro.  
+ This function is typically implemented by the BEGIN_CONNECTION_PART macro.  
   
 ##  <a name="getiid"></a>  CConnectionPoint::GetIID  
  Called by the framework to retrieve the interface ID of a connection point.  
@@ -138,18 +138,18 @@ virtual int GetMaxConnections();
  Override this function if you want to limit the number of sinks that can connect to your control.  
   
 ##  <a name="getnextconnection"></a>  CConnectionPoint::GetNextConnection  
- Retrieves a pointer to the connection element at `pos`.  
+ Retrieves a pointer to the connection element at *pos*.  
   
 ```  
 LPUNKNOWN GetNextConnection(POSITION& pos) const;  
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  Specifies a reference to a **POSITION** value returned by a previous `GetNextConnection` or [GetStartPosition](#getstartposition) call.  
   
 ### Return Value  
- A pointer to the connection element specified by `pos`, or NULL.  
+ A pointer to the connection element specified by *pos*, or NULL.  
   
 ### Remarks  
  This function is most useful for iterating through all the elements in the connection map. When iterating, skip any NULLs returned from this function.  
@@ -181,7 +181,7 @@ virtual void OnAdvise(BOOL bAdvise);
 ```  
   
 ### Parameters  
- `bAdvise`  
+ *bAdvise*  
  **TRUE**, if a connection is being established; otherwise **FALSE**.  
   
 ### Remarks  
@@ -199,11 +199,11 @@ virtual HRESULT QuerySinkInterface(
 ```  
   
 ### Parameters  
- `pUnkSink`  
+ *pUnkSink*  
  The identifier of the sink interface being requested.  
   
- `ppInterface`  
- A pointer to the interface pointer identified by `pUnkSink`. If the object does not support this interface, \* `ppInterface` is set to **NULL**.  
+ *ppInterface*  
+ A pointer to the interface pointer identified by *pUnkSink*. If the object does not support this interface, \* *ppInterface* is set to **NULL**.  
   
 ### Return Value  
  A standard `HRESULT` value.  

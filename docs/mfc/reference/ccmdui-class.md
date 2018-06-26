@@ -48,7 +48,7 @@ class CCmdUI
   
  When a user of your application pulls down a menu, each menu item needs to know whether it should be displayed as enabled or disabled. The target of a menu command provides this information by implementing an `ON_UPDATE_COMMAND_UI` handler. For each of the command user-interface objects in your application, use the Properties window to create a message-map entry and function prototype for each handler.  
   
- When the menu is pulled down, the framework searches for and calls each `ON_UPDATE_COMMAND_UI` handler, each handler calls `CCmdUI` member functions such as **Enable** and **Check**, and the framework then appropriately displays each menu item.  
+ When the menu is pulled down, the framework searches for and calls each `ON_UPDATE_COMMAND_UI` handler, each handler calls `CCmdUI` member functions such as `Enable` and `Check`, and the framework then appropriately displays each menu item.  
   
  A menu item can be replaced with a control-bar button or other command user-interface object without changing the code within the `ON_UPDATE_COMMAND_UI` handler.  
   
@@ -88,7 +88,7 @@ virtual void Enable(BOOL bOn = TRUE);
 ```  
   
 ### Parameters  
- `bOn`  
+ *bOn*  
  **TRUE** to enable the item, **FALSE** to disable it.  
   
 ### Example  
@@ -128,7 +128,7 @@ CMenu* m_pSubMenu;
 ```  
   
 ### Remarks  
- **NULL** if the item is not a menu. If the sub menu is a pop-up, `m_nID` contains the ID of the first item in the pop-up menu. For more information, see [Technical Note 21](../../mfc/tn021-command-and-message-routing.md).  
+ **NULL** if the item is not a menu. If the sub menu is a pop-up, *m_nID* contains the ID of the first item in the pop-up menu. For more information, see [Technical Note 21](../../mfc/tn021-command-and-message-routing.md).  
   
 ##  <a name="m_pother"></a>  CCmdUI::m_pOther  
  Pointer (of type `CWnd`) to the window object, such as a tool or status bar, that sent the notification.  
@@ -148,7 +148,7 @@ virtual void SetCheck(int nCheck = 1);
 ```  
   
 ### Parameters  
- `nCheck`  
+ *nCheck*  
  Specifies the check state to set. If 0, unchecks; if 1, checks; and if 2, sets indeterminate.  
   
 ### Remarks  
@@ -176,7 +176,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  A pointer to a text string.  
   
 ### Example  

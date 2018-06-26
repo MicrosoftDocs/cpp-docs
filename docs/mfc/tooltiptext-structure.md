@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # TOOLTIPTEXT Structure
-In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the `TOOLTIPTEXT` structure. The members of the `TOOLTIPTEXT` structure are:  
+In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the **TOOLTIPTEXT** structure. The members of the **TOOLTIPTEXT** structure are:  
   
  `typedef struct {`  
   
@@ -33,25 +33,25 @@ In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-not
   
  `} TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;`  
   
- `hdr`  
- Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the `idFrom` member of the `NMHDR` structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) for a discussion of members of the `NMHDR` structure.  
+ *hdr*  
+ Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the *idFrom* member of the **NMHDR** structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) for a discussion of members of the **NMHDR** structure.  
   
- `lpszText`  
+ *lpszText*  
  Address of a string to receive the text for a tool.  
   
- `szText`  
+ *szText*  
  Buffer that receives the tool tip text. An application can copy the text to this buffer as an alternative to specifying a string address.  
   
- `hinst`  
- Handle of the instance that contains a string to be used as the tool tip text. If `lpszText` is the address of the tool tip text, this member is NULL.  
+ *hinst*  
+ Handle of the instance that contains a string to be used as the tool tip text. If *lpszText* is the address of the tool tip text, this member is NULL.  
   
  When you handle the `TTN_NEEDTEXT` notification message, specify the string to be displayed in one of the following ways:  
   
--   Copy the text to the buffer specified by the `szText` member.  
+-   Copy the text to the buffer specified by the *szText* member.  
   
--   Copy the address of the buffer that contains the text to the `lpszText` member.  
+-   Copy the address of the buffer that contains the text to the *lpszText* member.  
   
--   Copy the identifier of a string resource to the `lpszText` member, and copy the handle of the instance that contains the resource to the `hinst` member.  
+-   Copy the identifier of a string resource to the *lpszText* member, and copy the handle of the instance that contains the resource to the *hinst* member.  
   
 ## See Also  
  [Tool Tips in Windows Not Derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)

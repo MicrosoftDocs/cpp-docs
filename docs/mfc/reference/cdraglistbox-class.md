@@ -71,7 +71,7 @@ virtual BOOL BeginDrag(CPoint pt);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that contains the coordinates of the item being dragged.  
   
 ### Return Value  
@@ -88,7 +88,7 @@ virtual void CancelDrag(CPoint pt);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that contains the coordinates of the item being dragged.  
   
 ### Remarks  
@@ -109,7 +109,7 @@ virtual UINT Dragging(CPoint pt);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that contains the x and y screen coordinates of the cursor.  
   
 ### Return Value  
@@ -132,7 +132,7 @@ virtual void DrawInsert(int nItem);
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Zero-based index of the insertion point.  
   
 ### Remarks  
@@ -151,14 +151,14 @@ virtual void Dropped(
  *nSrcIndex*  
  Specifies the zero-based index of the dropped string.  
   
- `pt`  
+ *pt*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that contains the coordinates of the drop site.  
   
 ### Remarks  
  The default behavior copies the list box item and its data to the new location and then deletes the original item. Override this function to customize the default behavior, such as enabling copies of list box items to be dragged to other locations within the list.  
   
 ##  <a name="itemfrompt"></a>  CDragListBox::ItemFromPt  
- Call this function to retrieve the zero-based index of the list box item located at `pt`.  
+ Call this function to retrieve the zero-based index of the list box item located at *pt*.  
   
 ```  
 int ItemFromPt(
@@ -167,7 +167,7 @@ int ItemFromPt(
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object containing the coordinates of a point within the list box.  
   
  *bAutoScroll*  

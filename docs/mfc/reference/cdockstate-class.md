@@ -86,7 +86,7 @@ void LoadState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- `lpszProfileName`  
+ *lpszProfileName*  
  Points to a null-teminated string that specifies the name of a section in the initialization file or a key in the Windows registry where state information is stored.  
   
 ### Remarks  
@@ -107,7 +107,7 @@ void SaveState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- `lpszProfileName`  
+ *lpszProfileName*  
  Points to a null-teminated string that specifies the name of a section in the initialization file or a key in the Windows registry where state information is stored.  
   
 ### Remarks  

@@ -17,7 +17,7 @@ When it routes an update command to its handler, the framework passes the handle
   
  [!code-cpp[NVC_MFCDocView#3](../mfc/codesnippet/cpp/the-ccmdui-class_1.cpp)]  
   
- This handler calls the **Enable** member function of an object with access to the menu item. **Enable** makes the item available for use.  
+ This handler calls the `Enable` member function of an object with access to the menu item. `Enable` makes the item available for use.  
   
 ## See Also  
  [How to: Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md)

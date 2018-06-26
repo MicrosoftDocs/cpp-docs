@@ -79,7 +79,7 @@ class CBitmapButton : public CButton
   
 6.  In the `CDialog` object's [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) routine, call the `CBitmapButton` object's [AutoLoad](#autoload) function, using as parameters the button's control ID and the `CDialog` object's **this** pointer.  
   
- If you want to handle Windows notification messages, such as **BN_CLICKED**, sent by a bitmap-button control to its parent (usually a class derived from **CDialog)**, add to the `CDialog`-derived object a message-map entry and message-handler member function for each message. The notifications sent by a `CBitmapButton` object are the same as those sent by a [CButton](../../mfc/reference/cbutton-class.md) object.  
+ If you want to handle Windows notification messages, such as BN_CLICKED, sent by a bitmap-button control to its parent (usually a class derived from `CDialog`), add to the `CDialog`-derived object a message-map entry and message-handler member function for each message. The notifications sent by a `CBitmapButton` object are the same as those sent by a [CButton](../../mfc/reference/cbutton-class.md) object.  
   
  The class [CToolBar](../../mfc/reference/ctoolbar-class.md) takes a different approach to bitmap buttons.  
   
@@ -109,10 +109,10 @@ BOOL AutoLoad(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The button's control ID.  
   
- `pParent`  
+ *pParent*  
  Pointer to the object that owns the button.  
   
 ### Return Value  

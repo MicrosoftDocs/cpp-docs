@@ -20,7 +20,7 @@ These messages are used in MFC.
   
 ||||||  
 |-|-|-|-|-|  
-|Message|Description|[in] `wParam`|`lParam` (All parameters are [in] unless otherwise stated.)|Return Value|  
+|Message|Description|[in] *wParam*|*lParam* (All parameters are [in] unless otherwise stated.)|Return Value|  
 |AFX_WM_ACCGETOBJECT|Not used.|Not used.|Not applicable.|Not applicable.|  
 |AFX_WM_ACCGETSTATE|Used for accessibility support. Send this message to `CMFCPopupMenu` or `CMFCRibbonPanelMenu` to retrieve the state of the current element.|Index of element, which could be a menu button or separator.|Not used.|The element state. It is -1 if the index is invalid, 0 if the menu button has no special attributes. Otherwise it is a combination of the following flags:<br /><br /> TBBS_DISABLED — item is disabled<br /><br /> TBBS_CHECKED — item is checked<br /><br /> TBBS_BUTTON — the item is a standard pushbutton<br /><br /> TBBS_PRESSED — button is pressed<br /><br /> TBBS_INDETERMINATE — undefined state<br /><br /> TBBS_SEPARATOR - rather than a menu button, this element forms a separation between other menu items|  
 |AFX_WM_CHANGE_ACTIVE_TAB|The framework sends this message to the resizable control bar control. Process this message to receive notifications from `CMFCTabCtrl` objects when a user changes an active tab.|The index of a tab.|Not used.|Nonzero.|  
@@ -62,7 +62,7 @@ These messages are used in MFC.
 |AFX_WM_UPDATETOOLTIPS|Sent to all tooltip owners to indicate that their tooltip controls should be recreated.|The type of control that should process this message. See the table later in this topic for a list of possible values.|Not used.|Not used.|  
 |AFX_WM_WINDOW_HELP|`CMFCWindowsManagerDialog` sends this message to the parent frame when the user clicks the **Help** button, or enters the help mode by clicking the **Help** caption button or the F1 key.|Not used.|A pointer to the instance of `CMFCWindowsManagerDialog`.|Not used.|  
   
- The following table shows the values for the low word of the `lParam` parameter of the AFX_WM_HSCROLL method:  
+ The following table shows the values for the low word of the *lParam* parameter of the AFX_WM_HSCROLL method:  
   
 |||  
 |-|-|  
@@ -78,9 +78,9 @@ These messages are used in MFC.
 |SB_THUMBTRACK|The user is dragging the scroll box. The AFX_WM_ON_HSCROLL message is sent repeatedly with this value until the user releases the mouse button. The high-order word indicates the position to which the scroll box has been dragged.|  
   
 > [!NOTE]
->  The high-order word of the `lParam` parameter specifies the current position of the scroll box if the low-order word is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, this word is not used.  
+>  The high-order word of the *lParam* parameter specifies the current position of the scroll box if the low-order word is SB_THUMBPOSITION or SB_THUMBTRACK; otherwise, this word is not used.  
   
- The following table lists the flag values for the `lParam` parameter of the AFX_WM_UPDATETOOLTIPS message:  
+ The following table lists the flag values for the *lParam* parameter of the AFX_WM_UPDATETOOLTIPS message:  
   
 |||  
 |-|-|  

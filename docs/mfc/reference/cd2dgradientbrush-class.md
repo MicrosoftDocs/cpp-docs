@@ -79,25 +79,25 @@ CD2DGradientBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `gradientStops`  
+ *gradientStops*  
  A pointer to an array of D2D1_GRADIENT_STOP structures.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  A value greater than or equal to 1 that specifies the number of gradient stops in the gradientStops array.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  The space in which color interpolation between the gradient stops is performed.  
   
- `extendMode`  
+ *extendMode*  
  The behavior of the gradient outside the [0,1] normalized range.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="destroy"></a>  CD2DGradientBrush::Destroy  

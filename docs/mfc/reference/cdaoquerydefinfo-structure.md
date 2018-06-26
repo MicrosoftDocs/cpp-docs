@@ -33,10 +33,10 @@ struct CDaoQueryDefInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the querydef object. For more information, see the topic "Name Property" in DAO Help. Call [CDaoQueryDef::GetName](../../mfc/reference/cdaoquerydef-class.md#getname) to retrieve this property directly.  
   
- `m_nType`  
+ *m_nType*  
  A value that indicates the operational type of a querydef object. The value can be one of the following:  
   
 - **dbQSelect** Select — the query selects records.  
@@ -66,13 +66,13 @@ struct CDaoQueryDefInfo
   
  For more information, see the topic "Type Property" in DAO Help.  
   
- `m_dateCreated`  
+ *m_dateCreated*  
  The date and time the querydef was created. To directly retrieve the date the querydef was created, call the [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) member function of the `CDaoTableDef` object associated with the table. See Comments below for more information. Also see the topic "DateCreated, LastUpdated Properties" in DAO Help.  
   
- `m_dateLastUpdated`  
+ *m_dateLastUpdated*  
  The date and time of the most recent change made to the querydef. To directly retrieve the date the table was last updated, call the [GetDateLastUpdated](../../mfc/reference/cdaoquerydef-class.md#getdatelastupdated) member function of the querydef. See Comments below for more information. And see the topic "DateCreated, LastUpdated Properties" in DAO Help.  
   
- `m_bUpdatable`  
+ *m_bUpdatable*  
  Indicates whether changes can be made to a querydef object. If this property is **TRUE**, the querydef is updatable; otherwise, it is not. Updatable means the querydef object's query definition can be changed. The Updatable property of a querydef object is set to **TRUE** if the query definition can be updated, even if the resulting recordset is not updatable. To retrieve this property directly, call the querydef's [CanUpdate](../../mfc/reference/cdaoquerydef-class.md#canupdate) member function. For more information, see the topic "Updatable Property" in DAO Help.  
   
  *m_bReturnsRecords*  
@@ -81,7 +81,7 @@ struct CDaoQueryDefInfo
  *m_strSQL*  
  The SQL statement that defines the query executed by a querydef object. The SQL property contains the SQL statement that determines how records are selected, grouped, and ordered when you execute the query. You can use the query to select records to include in a dynaset- or snapshot-type recordset object. You can also define bulk queries to modify data without returning records. You can retrieve the value of this property directly by calling the querydef's [GetSQL](../../mfc/reference/cdaoquerydef-class.md#getsql) member function.  
   
- `m_strConnect`  
+ *m_strConnect*  
  Provides information about the source of a database used in a pass-through query. This information takes the form of a connect string. For more information about connect strings, and for information about retrieving the value of this property directly, see the [CDaoDatabase::GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) member function.  
   
  *m_nODBCTimeout*  

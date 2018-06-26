@@ -50,16 +50,17 @@ class CD2DPointU : public D2D1_POINT_2U;
 CD2DPointU(const CPoint& pt);  
 CD2DPointU(const D2D1_POINT_2U& pt);  
   CD2DPointU(const D2D1_POINT_2U* pt);  
-CD2DPointU(UINT32 uX = 0, UINT32 uY = 0);```  
+CD2DPointU(UINT32 uX = 0, UINT32 uY = 0);
+```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  source point  
   
- `uX`  
+ *uX*  
  source X  
   
- `uY`  
+ *uY*  
  source Y  
   
 ##  <a name="operator_cpoint"></a>  CD2DPointU::operator CPoint  

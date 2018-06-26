@@ -136,13 +136,13 @@ HRESULT D2D1MakeRotateMatrix(
 ```  
   
 ### Parameters   
- `angle`  
+ *angle*  
  The clockwise rotation angle, in degrees.  
   
- `center`  
+ *center*  
  The point about which to rotate.  
   
- `matrix`  
+ *matrix*  
  When this method returns, contains the new rotation transformation. You must allocate storage for this parameter.  
   
 ### Return Value  
@@ -160,13 +160,13 @@ BOOL DrawParentBackground(
 ```  
   
 ### Parameters   
- [in] `pWnd`  
+ [in] *pWnd*  
  Pointer to a control's window.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Pointer to a rectangle that bounds the area to draw. The default value is `NULL`.  
   
 ### Return Value  
@@ -190,42 +190,42 @@ BOOL DrawTextOnGlass(
 ```  
   
 ### Parameters   
- [in] `hTheme`  
+ [in] *hTheme*  
  Handle to the theme data of a window, or `NULL`. The framework uses the specified theme to draw the text if this parameter is not `NULL` and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
   
  Use the [OpenThemeData](http://msdn.microsoft.com/library/windows/desktop/bb759821) method to create an `HTHEME`.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `iPartId`  
+ [in] *iPartId*  
  The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](http://msdn.microsoft.com/library/windows/desktop/bb773210). If this value is 0, the text is drawn in the default font, or a font selected into the device context.  
   
- [in] `iStateId`  
+ [in] *iStateId*  
  The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](http://msdn.microsoft.com/library/windows/desktop/bb773210).  
   
- [in] `strText`  
+ [in] *strText*  
  The text to draw.  
   
- [in] `rect`  
+ [in] *rect*  
  The boundary of the area in which the specified text is drawn.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  A bitwise combination (OR) of flags that specify how the specified text is drawn.  
   
- If the `hTheme` parameter is `NULL` or if themes are not supported and enabled, the `nFormat` parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the `dwFlags` parameter of the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method describes the valid flags.  
+ If the *hTheme* parameter is `NULL` or if themes are not supported and enabled, the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the *dwFlags* parameter of the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method describes the valid flags.  
   
- [in] `nGlowSize`  
+ [in] *nGlowSize*  
  The size of a glow effect that is drawn on the background before drawing the specified text. The default value is 0.  
   
- [in] `clrText`  
+ [in] *clrText*  
  The color in which the specified text is drawn. The default value is the default color.  
   
 ### Return Value  
  `TRUE` if a theme is used to draw the specified text; otherwise, `FALSE`.  
   
 ### Remarks  
- A theme defines the visual style of an application. A theme is not used to draw the text if the `hTheme` parameter is `NULL`, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
+ A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is `NULL`, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
   
 ### See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
@@ -245,7 +245,7 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters   
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable accessibility support; `FALSE` to disable accessibility support. The default value is `TRUE`.  
   
 ### Remarks  
@@ -271,25 +271,25 @@ BOOL ExcludeTag(
 ```  
   
 ### Parameters   
- [in] `strBuffer`  
+ [in] *strBuffer*  
  A buffer of text.  
   
- [in] `lpszTag`  
+ [in] *lpszTag*  
  The name of a pair of opening and closing XML tags.  
   
- [out] `strTag`  
- When this method returns, the `strTag` parameter contains the text that is between the opening and closing XML tags that are named by the `lpszTag` parameter. Any leading or trailing whitespace is trimmed from the result.  
+ [out] *strTag*  
+ When this method returns, the *strTag* parameter contains the text that is between the opening and closing XML tags that are named by the *lpszTag* parameter. Any leading or trailing whitespace is trimmed from the result.  
   
- [in] `bIsCharsList`  
- `TRUE` to convert symbols for escape characters in the `strTag` parameter into actual escape characters; `FALSE` not to perform the conversion.The default value is `FALSE`. For more information, see Remarks.  
+ [in] *bIsCharsList*  
+ `TRUE` to convert symbols for escape characters in the *strTag* parameter into actual escape characters; `FALSE` not to perform the conversion.The default value is `FALSE`. For more information, see Remarks.  
   
 ### Return Value  
  `TRUE` if this method is successful; otherwise, `FALSE`.  
   
 ### Remarks  
- An XML tag pair consists of named opening and closing tags that indicate the start and end of a run of text in the specified buffer. The `strBuffer` parameter specifies the buffer, and the `lpszTag` parameter specifies the name of the XML tags.  
+ An XML tag pair consists of named opening and closing tags that indicate the start and end of a run of text in the specified buffer. The *strBuffer* parameter specifies the buffer, and the *lpszTag* parameter specifies the name of the XML tags.  
   
- Use the symbols in the following table to encode a set of escape characters in the specified buffer. Specify `TRUE` for the `bIsCharsList` parameter to convert the symbols in the `strTag` parameter into actual escape characters. The following table uses the [_T()](../../c-runtime-library/data-type-mappings.md) macro to specify the symbol and escape character strings.  
+ Use the symbols in the following table to encode a set of escape characters in the specified buffer. Specify `TRUE` for the *bIsCharsList* parameter to convert the symbols in the *strTag* parameter into actual escape characters. The following table uses the [_T()](../../c-runtime-library/data-type-mappings.md) macro to specify the symbol and escape character strings.  
   
 |Symbol|Escape character|  
 |------------|----------------------|  
@@ -310,14 +310,14 @@ COLORREF GetColor(int nColor);
 ```  
   
 ### Parameters   
- [in] `nColor`  
- A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the `nIndex` parameter of the [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) method.  
+ [in] *nColor*  
+ A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) method.  
   
 ### Return Value  
  The RGB color value of the specified user interface element. For more information, see Remarks.  
   
 ### Remarks  
- If the `nColor` parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns `NULL` if the color is not supported.  
+ If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns `NULL` if the color is not supported.  
   
 ### See Also  
 
@@ -356,7 +356,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ```  
   
 ### Parameters   
- [in, out] `info`  
+ [in, out] *info*  
  A [NONCLIENTMETRICS](http://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.  
   
 ### Return Value  
@@ -375,7 +375,7 @@ int GetTextHeight(BOOL bHorz = TRUE);
 ```  
   
 ### Parameters   
- [in] `bHorz`  
+ [in] *bHorz*  
  `TRUE` to retrieve the height of characters when text runs horizontally; `FALSE` to retrieve the height of characters when text runs vertically. The default value is `TRUE`.  
   
 ### Return Value  
@@ -414,10 +414,10 @@ BOOL InitD2D(
 ```  
   
 ### Parameters   
- `d2dFactoryType`  
+ *d2dFactoryType*  
  The threading model of the D2D factory and the resources it creates.  
   
- `writeFactoryType`  
+ *writeFactoryType*  
  A value that specifies whether the write factory object will be shared or isolated  
   
 ### Return Value  
@@ -633,14 +633,14 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ```  
   
 ### Parameters   
- [in] `lpszClassNamePrefix`  
+ [in] *lpszClassNamePrefix*  
  The name of the window class to register.  
   
 ### Return Value  
  The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](http://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
   
 ### Remarks  
- The return value is a colon-delimited list of the `lpszClassNamePrefix` parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
+ The return value is a colon-delimited list of the *lpszClassNamePrefix* parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
   
 ### See Also    
  [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass)   
@@ -673,17 +673,17 @@ BOOL SetLayeredAttrib(
 ```  
   
 ### Parameters   
- [in] `hwnd`  
+ [in] *hwnd*  
  Handle to the layered window.  
   
- [in] `crKey`  
+ [in] *crKey*  
  The transparency color key that the [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) uses to compose the layered window.  
   
- [in] `bAlpha`  
+ [in] *bAlpha*  
  The alpha value that is used to describe the opacity of the layered window.  
   
- [in] `dwFlags`  
- A bitwise combination (OR) of flags that specify which method parameters to use. Specify LWA_COLORKEY to use the `crKey` parameter as the transparency color. Specify LWA_ALPHA to use the `bAlpha` parameter to determine the opacity of the layered window.  
+ [in] *dwFlags*  
+ A bitwise combination (OR) of flags that specify which method parameters to use. Specify LWA_COLORKEY to use the *crKey* parameter as the transparency color. Specify LWA_ALPHA to use the *bAlpha* parameter to determine the opacity of the layered window.  
   
 ### Return Value  
  `TRUE` if this method succeeds; otherwise, `FALSE`.   
@@ -703,10 +703,10 @@ BOOL SetMenuFont(
 ```  
   
 ### Parameters   
- [in] `lpLogFont`  
+ [in] *lpLogFont*  
  Pointer to a structure that contains the attributes of a font.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  `TRUE` to specify that the text runs horizontally; `FALSE` to specify that the text runs vertically.  
   
 ### Return Value  
@@ -812,17 +812,17 @@ HRESULT ShellCreateItemFromParsingName(
 ```  
   
 ### Parameters   
- `pszPath`  
+ *pszPath*  
  [in] A pointer to a display name.  
   
- `pbc`  
+ *pbc*  
  A pointer to a bind context that controls the parsing operation.  
   
- `riid`  
+ *riid*  
  A reference to an interface ID.  
   
- `ppv`  
- [out] When this function returns, contains the interface pointer requested in `riid`. This will typically be `IShellItem` or `IShellItem2`.  
+ *ppv*  
+ [out] When this function returns, contains the interface pointer requested in *riid*. This will typically be `IShellItem` or `IShellItem2`.  
   
 ### Return Value  
  Returns S_OK if successful; an error value otherwise.  
