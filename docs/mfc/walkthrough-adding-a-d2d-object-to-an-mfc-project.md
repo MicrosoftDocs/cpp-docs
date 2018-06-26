@@ -37,7 +37,7 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
 1. On the **File** menu, point to **New** and then choose **Project**.
 
-2. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type `MFCD2DWalkthrough`. Choose **OK**.
+2. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type *MFCD2DWalkthrough*. Choose **OK**.
 
 3. In the **MFC Application Wizard**, choose **Finish** without changing any settings.
 
@@ -121,7 +121,7 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
 3. On the **Messages** tab, choose **Add Custom Message**.
 
-4. In the **Add Custom Message** dialog box, in the **Custom Windows Message** box, type `AFX_WM_DRAW2D`. In the **Message handler name** box, type `OnDraw2D`. Select the **Registered Message** option and then choose **OK**. This action adds a message handler for the `AFX_WM_DRAW2D` message to the `CMFCD2DWalkthroughView` class.
+4. In the **Add Custom Message** dialog box, in the **Custom Windows Message** box, type *AFX_WM_DRAW2D*. In the **Message handler name** box, type *OnDraw2D*. Select the **Registered Message** option and then choose **OK**. This action adds a message handler for the AFX_WM_DRAW2D message to the `CMFCD2DWalkthroughView` class.
 
 5. In the **Existing handlers** box, select `OnDraw2D`. Choose **Edit Code** to display the `CMFCD2DWalkthroughView::OnDraw2D` method. Use this code for the `CMFCD2DWalkthroughView::OnDrawD2D` method:
 

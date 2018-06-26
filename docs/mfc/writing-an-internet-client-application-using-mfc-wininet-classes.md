@@ -28,9 +28,9 @@ The basis of every Internet client application is the Internet session. MFC impl
   
 -   If you use `CInternetSession::OpenURL` to establish your server connection, the call to `OpenURL` returns a `CStdioFile`.  
   
--   If use **CInternetSession::GetFtpConnection**, `GetGopherConnection`, or `GetHttpConnection` to establish your server connection, you must call `CFtpConnection::OpenFile`, `CGopherConnection::OpenFile`, or **CHttpConnection::OpenRequest,** respectively, to return a `CInternetFile`, `CGopherFile`, or `CHttpFile`, respectively.  
+-   If use `CInternetSession::GetFtpConnection`, `GetGopherConnection`, or `GetHttpConnection` to establish your server connection, you must call `CFtpConnection::OpenFile`, `CGopherConnection::OpenFile`, or `CHttpConnection::OpenRequest`, respectively, to return a `CInternetFile`, `CGopherFile`, or `CHttpFile`, respectively.  
   
- The steps in implementing an Internet client application vary depending on whether you create a generic Internet client based on **OpenURL** or a protocol-specific client using one of the **GetConnection** functions.  
+ The steps in implementing an Internet client application vary depending on whether you create a generic Internet client based on `OpenURL` or a protocol-specific client using one of the `GetConnection` functions.  
   
 ## What do you want to know more about  
   

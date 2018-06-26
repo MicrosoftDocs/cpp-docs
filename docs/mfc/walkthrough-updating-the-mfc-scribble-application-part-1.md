@@ -171,31 +171,31 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
 3.  You can customize the Application button by modifying its properties. The message IDs that are used in this code are already defined in the menu for Scribble 1.0.  
   
-4.  In the design view, click the Application Button to display its properties. Change property values as follows: **Image** to `IDB_RIBBON_MAIN`, **Prompt** to `File`, **Keys** to `f`, **Large Images** to `IDB_RIBBON_FILELARGE`, and **Small Images** to `IDB_RIBBON_FILESMALL`.  
+4.  In the design view, click the Application Button to display its properties. Change property values as follows: **Image** to *IDB_RIBBON_MAIN*, **Prompt** to *File*, **Keys** to *f*, **Large Images** to *IDB_RIBBON_FILELARGE*, and **Small Images** to *IDB_RIBBON_FILESMALL*.  
   
 5.  The following modifications create the menu that appears when the user clicks the Application button. Click the ellipsis (**...**) next to **Main Items** to open the **Items Editor**.  
   
-    1.  Click **Add** to add a button. Change **Caption** to `&New`, **ID** to `ID_FILE_NEW`, **Image** to `0`, **Image Large** to `0`.  
+    1.  Click **Add** to add a button. Change **Caption** to *&New*, **ID** to *ID_FILE_NEW*, **Image** to *0*, **Image Large** to *0*.  
   
-    2.  Click **Add** to add a second button. Change **Caption** to `&Save`, **ID** to `ID_FILE_SAVE`, **Image** to `2`, and **Image Large** to `2`.  
+    2.  Click **Add** to add a second button. Change **Caption** to *&Save*, **ID** to *ID_FILE_SAVE*, **Image** to *2*, and **Image Large** to *2*.  
   
-    3.  Click **Add** to add a third button. Change **Caption** to `Save &As`, **ID** to `ID_FILE_SAVE_AS`, **Image** to `3`, and **Image Large** to `3`.  
+    3.  Click **Add** to add a third button. Change **Caption** to *Save &As*, **ID** to *ID_FILE_SAVE_AS*, **Image** to *3*, and **Image Large** to *3*.  
   
-    4.  Click **Add** to add a fourth  button. Change **Caption** to `&Print`, **ID** to `ID_FILE_PRINT`, **Image** to `4`, and **Image Large** to `4`.  
+    4.  Click **Add** to add a fourth  button. Change **Caption** to *&Print*, **ID** to *ID_FILE_PRINT*, **Image** to *4*, and **Image Large** to *4*.  
   
     5.  Change the **Item** type to **Separator** and then click **Add**.  
   
-    6.  Change the **Item** type to **Button**. Click **Add** to add a fifth button. Change **Caption** to `&Close`, **ID** to `ID_FILE_CLOSE`, **Image** to `5`, and **Image Large** to `5`.  
+    6.  Change the **Item** type to **Button**. Click **Add** to add a fifth button. Change **Caption** to *&Close*, **ID** to *ID_FILE_CLOSE*, **Image** to *5*, and **Image Large** to *5*.  
   
 6.  The following modifications create a submenu under the Print button that you created in the previous step.  
   
-    1.  Click the **Print** button, change the **Item** type to **Label**, and then click **Insert**. Change **Caption** to `Preview and print the document`.  
+    1.  Click the **Print** button, change the **Item** type to **Label**, and then click **Insert**. Change **Caption** to *Preview and print the document*.  
   
-    2.  Click the **Print** button, change the **Item** type to **Button**, and click **Insert**. Change **Caption** to `&Print`, **ID** to `ID_FILE_PRINT`, **Image** to `4`, and **Image Large** to `4`.  
+    2.  Click the **Print** button, change the **Item** type to **Button**, and click **Insert**. Change **Caption** to *&Print*, **ID** to *ID_FILE_PRINT*, **Image** to *4*, and **Image Large** to *4*.  
   
-    3.  Click the **Print** button and then click **Insert** to add a button. Change **Caption** to `&Quick Print`, **ID** to `ID_FILE_PRINT_DIRECT`, **Image** to `7`, and **Image Large** to `7`.  
+    3.  Click the **Print** button and then click **Insert** to add a button. Change **Caption** to *&Quick Print*, **ID** to *ID_FILE_PRINT_DIRECT*, **Image** to *7*, and **Image Large** to *7*.  
   
-    4.  Click the **Print** button and then click **Insert** to add another button. Change **Caption** to `Print Pre&view`, **ID** to `ID_FILE_PRINT_PREVIEW`, **Image** to `6`, and **Image Large** to `6`.  
+    4.  Click the **Print** button and then click **Insert** to add another button. Change **Caption** to *Print Pre&view*, **ID** to *ID_FILE_PRINT_PREVIEW*, **Image** to *6*, and **Image Large** to *6*.  
   
     5.  You have now modified the **Main Items**. Click **Close** to exit the **Items Editor**.  
   
@@ -203,7 +203,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
     1.  In the **Properties** window, click the ellipsis (**...**) next to **Button** to open the **Items Editor**.  
   
-    2.  Click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.  
+    2.  Click **Add** to add a button. Change **Caption** to *E&xit*, **ID** to *ID_APP_EXIT*, **Image** to *8*.  
   
  [[Sections](#top)]  
   
@@ -218,7 +218,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
     CMFCRibbonBar m_wndRibbonBar;  
  ```  
   
-2.  In the mainfrm.cpp file, add the following code before the final `return` statement at the end of the `CMainFrame::OnCreate` function. This creates an instance of the ribbon bar.  
+2.  In the mainfrm.cpp file, add the following code before the final **return** statement at the end of the `CMainFrame::OnCreate` function. This creates an instance of the ribbon bar.  
   
  ``` *// Create the ribbon bar  
     if (!m_wndRibbonBar.Create(this))  
@@ -239,11 +239,11 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
 #### To add a Home category and Edit panel  
   
-1.  The Scribble program requires only one category. In the design view, click **Category** to display its properties. Change property values as follows: **Caption** to `&Home`, **Large Images** to `IDB_RIBBON_HOMELARGE`, **Small Images** to `IDB_RIBBON_HOMESMALL`.  
+1.  The Scribble program requires only one category. In the design view, click **Category** to display its properties. Change property values as follows: **Caption** to *&Home*, **Large Images** to *IDB_RIBBON_HOMELARGE*, **Small Images** to *IDB_RIBBON_HOMESMALL*.  
   
-2.  Each ribbon category is organized into named panels. Each panel contains a set of controls that perform related operations. This category has one panel. Click **Panel**, and then change **Caption** to `Edit` and **Image Index** to `0`.  
+2.  Each ribbon category is organized into named panels. Each panel contains a set of controls that perform related operations. This category has one panel. Click **Panel**, and then change **Caption** to *Edit* and **Image Index** to *0*.  
   
-3.  To the **Edit** panel, add a button that is responsible for clearing the contents of the document. The message ID for this button has already been defined in the IDR_SCRIBBTYPE menu resource. Specify `Clear All` as the button text and the index of the bitmap that decorates the button. Open the **Toolbox**, and then drag a **Button** to the **Edit** panel. Click the button  and then change **Caption** to `Clear All`, **ID** to `ID_EDIT_CLEAR_ALL`, **Image Index** to `0`, **Large Image Index** to `0`.  
+3.  To the **Edit** panel, add a button that is responsible for clearing the contents of the document. The message ID for this button has already been defined in the IDR_SCRIBBTYPE menu resource. Specify *Clear All* as the button text and the index of the bitmap that decorates the button. Open the **Toolbox**, and then drag a **Button** to the **Edit** panel. Click the button  and then change **Caption** to *Clear All*, **ID** to *ID_EDIT_CLEAR_ALL*, **Image Index** to *0*, **Large Image Index** to *0*.  
   
 4.  Save the changes, and then build and run the application. The Scribble application should be displayed, and it should have a ribbon bar at the top of the window instead of a menu bar. The ribbon bar should have one category, **Home**, and **Home** should have one panel, **Edit**. The ribbon buttons that you added should be associated with the existing event handlers, and the **Open**, **Close**, **Save**, **Print**, and **Clear All** buttons should work as expected.  
   
