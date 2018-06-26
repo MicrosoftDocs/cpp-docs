@@ -1,7 +1,7 @@
 ---
 title: "ATL OLE DB Consumer Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.consumer.overview"]
@@ -120,7 +120,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
  ``` 
  // Table accessor class  
-    class COrdersAccessor; *// Table class  
+    class COrdersAccessor; // Table class  
     class COrders : public CTable<CAccessor<COrdersAccessor>>;  
  ... 
  // Column map  

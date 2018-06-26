@@ -1,7 +1,7 @@
 ---
 title: "CMFCOutlookBar Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName", "AFXOUTLOOKBAR/CMFCOutlookBar::Create", "AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore", "AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab", "AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea", "AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003", "AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll", "AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003"]
@@ -17,7 +17,7 @@ A tabbed pane with the visual appearance of the **Navigation Pane** in Microsoft
   
 ## Syntax  
   
-```  
+```cpp  
 class CMFCOutlookBar : public CBaseTabbedPane  
 ```  
   
@@ -61,56 +61,60 @@ class CMFCOutlookBar : public CBaseTabbedPane
   
 1.  Embed a `CMFCOutlookBar` object into the main frame window class.  
   
- ```  
+    ```cpp
     class CMainFrame : public CMDIFrameWnd  
- { ...  
-    CMFCOutlookBar m_wndOutlookBar;  
-    CMFCOutlookBarPane m_wndOutlookPane;  
- ... };  
- ```  
+    { 
+        // ...  
+        CMFCOutlookBar m_wndOutlookBar;  
+        CMFCOutlookBarPane m_wndOutlookPane;  
+        // ...
+    };  
+    ```
+
 2.  When processing the `WM_CREATE` message in the main frame, call the [CMFCOutlookBar::Create](#create) method to create the Outlook bar tab control.  
   
- ```  
+    ```cpp
     m_wndOutlookBar.Create (_T("Shortcuts"),
-    this,
-    CRect (0,
-    0,
-    100,
-    100),
-    ID_VIEW_OUTLOOKBAR,
-    WS_CHILD | WS_VISIBLE | CBRS_LEFT);
+        this,
+        CRect (0,
+            0,
+            100,
+            100),
+        ID_VIEW_OUTLOOKBAR,
+        WS_CHILD | WS_VISIBLE | CBRS_LEFT);
+    ```
 
- ```  
 3.  Obtain a pointer to the underlying `CMFCOutlookBarTabCtrl` by using [CBaseTabbedPane::GetUnderlyingWindow](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow).  
   
- ```  
+    ```cpp
     CMFCOutlookBarTabCtrl* pOutlookBar = (CMFCOutlookBarTabCtrl*) m_wndOutlookBar.GetUnderlyingWindow ();
-
- ```  
+    ```  
 4.  Create a [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md) object for each tab that contains buttons.  
   
- ```  
-    m_wndOutlookPane.Create (&m_wndOutlookBar,
-    AFX_DEFAULT_TOOLBAR_STYLE,
-    ID_OUTLOOK_PANE_GENERAL,
-    AFX_CBRS_FLOAT | AFX_CBRS_RESIZE);
-*// make the Outlook pane detachable (enable docking)  
-    m_wndOutlookPane.EnableDocking (CBRS_ALIGN_ANY);
-*// add buttons  
-    m_wndOutlookPane.AddButton (theApp.LoadIcon (IDR_MAINFRAME), "About",
-    ID_APP_ABOUT);
+    ```cpp
+    m_wndOutlookPane.Create(&m_wndOutlookBar,
+        AFX_DEFAULT_TOOLBAR_STYLE,
+        ID_OUTLOOK_PANE_GENERAL,
+        AFX_CBRS_FLOAT | AFX_CBRS_RESIZE);  
 
-    m_wndOutlookPane.AddButton (theApp.LoadIcon (IDR_CUSTOM_OPEN_ICON), "Open",
-    ID_FILE_OPEN);
+    // make the Outlook pane detachable (enable docking)  
+    m_wndOutlookPane.EnableDocking(CBRS_ALIGN_ANY);
 
- ```  
+    // add buttons  
+    m_wndOutlookPane.AddButton(theApp.LoadIcon (IDR_MAINFRAME),
+        "About",
+        ID_APP_ABOUT);
+
+    m_wndOutlookPane.AddButton (theApp.LoadIcon (IDR_CUSTOM_OPEN_ICON),
+        "Open",
+        ID_FILE_OPEN);
+    ```
+
 5.  Call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add each new tab. Set the `bDetachable` parameter to `FALSE` to make a page non-detachable. Or, use [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) to add detachable pages.  
   
- ```  
-    pOutlookBar->AddTab (&m_wndOutlookPane, "General", (UINT) -1,
-    TRUE);
-
- ```  
+    ```cpp
+    pOutlookBar->AddTab (&m_wndOutlookPane, "General", (UINT) -1, TRUE);
+    ```  
 6.  To add a `CWnd`-derived control (for example, [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md)) as a tab, create the control and call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add it to the Outlook bar.  
   
 > [!NOTE]
@@ -146,7 +150,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCOutlookBar::AllowDestroyEmptyTabbedPane  
  Specifies whether an empty tabbed pane can be destroyed.  
   
-```  
+```cpp  
 virtual BOOL AllowDestroyEmptyTabbedPane() const;  
 ```  
   
@@ -159,7 +163,7 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 ##  <a name="canacceptpane"></a>  CMFCOutlookBar::CanAcceptPane  
  Determines whether another pane can be docked to the Outlook bar pane.  
   
-```  
+```cpp  
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
 ```  
   
@@ -180,7 +184,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ##  <a name="cansetcaptiontexttotabname"></a>  CMFCOutlookBar::CanSetCaptionTextToTabName  
  Determines whether the caption for the tabbed pane displays the same text as the active tab.  
   
-```  
+```cpp  
 virtual BOOL CanSetCaptionTextToTabName() const;  
 ```  
   
@@ -195,7 +199,7 @@ virtual BOOL CanSetCaptionTextToTabName() const;
 ##  <a name="create"></a>  CMFCOutlookBar::Create  
  Creates the Outlook bar control.  
   
-```  
+```cpp  
 virtual BOOL Create(
     LPCTSTR lpszCaption,  
     CWnd* pParentWnd,  
@@ -245,7 +249,7 @@ virtual BOOL Create(
 ##  <a name="createcustompage"></a>  CMFCOutlookBar::CreateCustomPage  
  Creates a custom Outlook bar tab.  
   
-```  
+```cpp  
 CMFCOutlookBarPane* CreateCustomPage(
     LPCTSTR lpszPageName,  
     BOOL bActivatePage=TRUE,  
@@ -295,7 +299,7 @@ DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;
 ##  <a name="floattab"></a>  CMFCOutlookBar::FloatTab  
  Floats a pane.  
   
-```  
+```cpp  
 virtual BOOL FloatTab(
     CWnd* pBar,  
     int nTabID,  
@@ -325,7 +329,7 @@ virtual BOOL FloatTab(
 ##  <a name="getbuttonsfont"></a>  CMFCOutlookBar::GetButtonsFont  
  Returns the font of the text on the page button tabs of the Outlook bar.  
   
-```  
+```cpp  
 CFont* GetButtonsFont() const;  
 ```  
   
@@ -338,7 +342,7 @@ CFont* GetButtonsFont() const;
 ##  <a name="gettabarea"></a>  CMFCOutlookBar::GetTabArea  
  Determines the size and position of the tab areas on the Outlook bar.  
   
-```  
+```cpp  
 virtual void GetTabArea(
     CRect& rectTabAreaTop,  
     CRect& rectTabAreaBottom) const;  
@@ -361,7 +365,7 @@ virtual void GetTabArea(
 ##  <a name="ismode2003"></a>  CMFCOutlookBar::IsMode2003  
  Specifies whether the behavior of the Outlook bar mimics that of Microsoft Office Outlook 2003.  
   
-```  
+```cpp  
 BOOL IsMode2003() const;  
 ```  
   
@@ -374,7 +378,7 @@ BOOL IsMode2003() const;
 ##  <a name="onafteranimation"></a>  CMFCOutlookBar::OnAfterAnimation  
  Called by [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) after the active tab has been set using animation.  
   
-```  
+```cpp  
 virtual void OnAfterAnimation(int nPage);
 ```  
   
@@ -388,7 +392,7 @@ virtual void OnAfterAnimation(int nPage);
 ##  <a name="onbeforeanimation"></a>  CMFCOutlookBar::OnBeforeAnimation  
  Called by [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) before a tab page is set as the active tab using animation.  
   
-```  
+```cpp  
 virtual BOOL OnBeforeAnimation(int nPage);
 ```  
   
@@ -404,7 +408,7 @@ virtual BOOL OnBeforeAnimation(int nPage);
 ##  <a name="onscroll"></a>  CMFCOutlookBar::OnScroll  
  Called by the framework if the Outlook bar is scrolling up or down.  
   
-```  
+```cpp  
 virtual void OnScroll(BOOL bDown);
 ```  
   
@@ -417,7 +421,7 @@ virtual void OnScroll(BOOL bDown);
 ##  <a name="removecustompage"></a>  CMFCOutlookBar::RemoveCustomPage  
  Removes a custom Outlook bar tab page.  
   
-```  
+```cpp  
 BOOL RemoveCustomPage(
     UINT uiPage,  
     CMFCOutlookBarTabCtrl* pTargetWnd);
@@ -443,7 +447,7 @@ BOOL RemoveCustomPage(
 ##  <a name="setbuttonsfont"></a>  CMFCOutlookBar::SetButtonsFont  
  Sets the font of the text on the buttons of the Outlook bar.  
   
-```  
+```cpp  
 void SetButtonsFont(
     CFont* pFont,  
     BOOL bRedraw=TRUE);
@@ -462,7 +466,7 @@ void SetButtonsFont(
 ##  <a name="setmode2003"></a>  CMFCOutlookBar::SetMode2003  
  Specifies whether the behavior of the Outlook bar mimics that of Outlook 2003.  
   
-```  
+```cpp  
 void SetMode2003(BOOL bMode2003=TRUE);
 ```  
   

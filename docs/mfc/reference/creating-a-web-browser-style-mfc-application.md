@@ -1,7 +1,7 @@
 ---
 title: "Creating a Web Browser-Style MFC Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcweb.project"]
@@ -36,30 +36,30 @@ A Web browser-style application can access information from the Internet (such a
   
  `CHtmlView` acts as a wrapper for the Web browser control, which gives your application a view onto a Web or an HTML page. The wizard creates an override to the [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) function in the view class, providing a navigational link to the Microsoft Visual C++ Web site:  
   
-```  
+```cpp
 void CWebView::OnInitialUpdate()  
 {  
     CHtmlView::OnInitialUpdate();
 
- *// TODO: This code navigates to a popular spot on the web. *//  change the code to go where you'd like.  
+    // TODO: This code navigates to a popular spot on the web.
+    // Change the code to go where you'd like.  
     Navigate2(_T("http://www.msdn.microsoft.com/vstudio/"),
-    NULL,
-    NULL);
+        NULL,
+        NULL);
+}
+```
 
-} 
-```  
+You can replace this site with one of your own, or you can use the [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) member function to open an HTML page that resides in the project's resource script as the default content for the view. For example:  
   
- You can replace this site with one of your own, or you can use the [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) member function to open an HTML page that resides in the project's resource script as the default content for the view. For example:  
-  
-```  
+```cpp
 void CWebView::OnInitialUpdate()  
 {  
     CHtmlView::OnInitialUpdate();
 
- *// TODO: This code navigates to a popular spot on the web. *//  change the code to go where you'd like.  
+    // TODO: This code navigates to a popular spot on the web.
+    // Change the code to go where you'd like.  
     LoadFromResource(IDR_HTML1);
-
-} 
+}
 ```  
   
 ## See Also  

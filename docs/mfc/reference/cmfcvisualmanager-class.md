@@ -215,35 +215,31 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 ## Example  
  This sample demonstrates how to instantiate the standard and custom `CMFCVisualManager` objects.  
   
-```  
+```cpp
 void CMFCSkinsApp::SetSkin (int iIndex)  
 {   // destroy the current visual manager  
     if (CMFCVisualManager::GetInstance () != NULL)  
- {  
-    delete CMFCVisualManager::GetInstance ();
-
- }  
+    {  
+        delete CMFCVisualManager::GetInstance ();
+    }  
     switch (iIndex)  
- {  
+    {  
     case 0:  
-    CMFCVisualManager::GetInstance ();
-
-// create the standard visual manager  
-    break; 
+        CMFCVisualManager::GetInstance ();
+        // create the standard visual manager  
+        break; 
     case 1:  
-    new CMyVisualManager ();
-
-// create the first custom visual manager  
-    break; 
+        new CMyVisualManager ();
+        // create the first custom visual manager  
+        break; 
     case 2:  
-    new CMacStyle ();
-*// create the second custom visual manager  
-    break; 
- }  
- *// access the manager and set it properly  
+        new CMacStyle ();
+        // create the second custom visual manager  
+        break; 
+    }  
+    // access the manager and set it properly  
     CMFCVisualManager::GetInstance ()->SetLook2000 ();
-CMFCVisualManager::GetInstance ()->RedrawAll ();
-
+    CMFCVisualManager::GetInstance ()->RedrawAll ();
 }  
 ```  
   
