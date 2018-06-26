@@ -92,17 +92,18 @@ class CList : public CObject
   
 ```  
 POSITION AddHead(ARG_TYPE newElement);  
-void AddHead(CList* pNewList);```  
+void AddHead(CList* pNewList);
+```  
   
 ### Parameters  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of the list element (can be a reference).  
   
- `newElement`  
+ *newElement*  
  The new element.  
   
- `pNewList`  
- A pointer to another `CList` list. The elements in `pNewList` will be added to this list.  
+ *pNewList*  
+ A pointer to another `CList` list. The elements in *pNewList* will be added to this list.  
   
 ### Return Value  
  The first version returns the **POSITION** value of the newly inserted element.  
@@ -118,17 +119,18 @@ void AddHead(CList* pNewList);```
   
 ```  
 POSITION AddTail(ARG_TYPE newElement);  
-void AddTail(CList* pNewList);```  
+void AddTail(CList* pNewList);
+```  
   
 ### Parameters  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of the list element (can be a reference).  
   
- `newElement`  
+ *newElement*  
  The element to be added to this list.  
   
- `pNewList`  
- A pointer to another `CList` list. The elements in `pNewList` will be added to this list.  
+ *pNewList*  
+ A pointer to another `CList` list. The elements in *pNewList* will be added to this list.  
   
 ### Return Value  
  The first version returns the **POSITION** value of the newly inserted element.  
@@ -147,17 +149,17 @@ CList(INT_PTR nBlockSize = 10);
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The memory-allocation granularity for extending the list.  
   
 ### Remarks  
- As the list grows, memory is allocated in units of `nBlockSize` entries.  
+ As the list grows, memory is allocated in units of *nBlockSize* entries.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]  
   
 ##  <a name="find"></a>  CList::Find  
- Searches the list sequentially to find the first element matching the specified `searchValue`.  
+ Searches the list sequentially to find the first element matching the specified *searchValue*.  
   
 ```  
 POSITION Find(
@@ -166,13 +168,13 @@ POSITION Find(
 ```  
   
 ### Parameters  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of the list element (can be a reference).  
   
- `searchValue`  
+ *searchValue*  
  The value to be found in the list.  
   
- `startAfter`  
+ *startAfter*  
  The start position for the search. If no value is specified, the search begins with the head element.  
   
 ### Return Value  
@@ -182,18 +184,18 @@ POSITION Find(
  [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]  
   
 ##  <a name="findindex"></a>  CList::FindIndex  
- Uses the value of `nIndex` as an index into the list.  
+ Uses the value of *nIndex* as an index into the list.  
   
 ```  
 POSITION FindIndex(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the list element to be found.  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if `nIndex` is negative or too large.  
+ A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if *nIndex* is negative or too large.  
   
 ### Remarks  
  It starts a sequential scan from the head of the list, stopping on the *n*th element.  
@@ -249,7 +251,8 @@ INT_PTR GetCount() const;
 ```  
 const TYPE& GetHead() const;  
   
-TYPE& GetHead();```  
+TYPE& GetHead();
+```  
   
 ### Parameters  
  *TYPE*  
@@ -280,7 +283,7 @@ POSITION GetHeadPosition() const;
  [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]  
   
 ##  <a name="getnext"></a>  CList::GetNext  
- Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
+ Gets the list element identified by *rPosition*, then sets *rPosition* to the **POSITION** value of the next entry in the list.  
   
 ```  
 TYPE& GetNext(POSITION& rPosition);  
@@ -291,7 +294,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
  *TYPE*  
  Template parameter specifying the type of the elements in the list.  
   
- `rPosition`  
+ *rPosition*  
  A reference to a **POSITION** value returned by a previous `GetNext`, [GetHeadPosition](#getheadposition), or other member function call.  
   
 ### Return Value  
@@ -300,7 +303,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
  If the list is not **const**, `GetNext` returns a reference to an element of the list. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You can use `GetNext` in a forward iteration loop if you establish the initial position with a call to `GetHeadPosition` or **Find**.  
+ You can use `GetNext` in a forward iteration loop if you establish the initial position with a call to `GetHeadPosition` or `Find`.  
   
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
@@ -321,7 +324,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
  *TYPE*  
  Template parameter specifying the type of the elements in the list.  
   
- `rPosition`  
+ *rPosition*  
  A reference to a **POSITION** value returned by a previous `GetPrev` or other member function call.  
   
 ### Return Value  
@@ -330,11 +333,11 @@ const TYPE& GetPrev(POSITION& rPosition) const;
  If the list is not **const**, `GetPrev` returns a reference to an element of the list. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You can use `GetPrev` in a reverse iteration loop if you establish the initial position with a call to `GetTailPosition` or **Find**.  
+ You can use `GetPrev` in a reverse iteration loop if you establish the initial position with a call to `GetTailPosition` or `Find`.  
   
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
- If the retrieved element is the first in the list, then the new value of `rPosition` is set to **NULL**.  
+ If the retrieved element is the first in the list, then the new value of *rPosition* is set to **NULL**.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]  
@@ -398,12 +401,12 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
   
 ### Parameters  
  *position*  
- A **POSITION** value returned by a previous `GetNext`, `GetPrev`, or **Find** member function call.  
+ A **POSITION** value returned by a previous `GetNext`, `GetPrev`, or `Find` member function call.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of the list element.  
   
- `newElement`  
+ *newElement*  
  The element to be added to this list.  
   
 ### Return Value  
@@ -421,12 +424,12 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
   
 ### Parameters  
  *position*  
- A **POSITION** value returned by a previous `GetNext`, `GetPrev`, or **Find** member function call.  
+ A **POSITION** value returned by a previous `GetNext`, `GetPrev`, or `Find` member function call.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of the list element (can be a reference).  
   
- `newElement`  
+ *newElement*  
  The element to be added to this list.  
   
 ### Return Value  
@@ -529,13 +532,13 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The **POSITION** of the element to be set.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of the list element (can be a reference).  
   
- `newElement`  
+ *newElement*  
  The element to be added to the list.  
   
 ### Remarks  

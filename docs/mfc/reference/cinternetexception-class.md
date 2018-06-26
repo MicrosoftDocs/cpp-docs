@@ -59,7 +59,7 @@ CInternetException(DWORD dwError);
 ```  
   
 ### Parameters  
- `dwError`  
+ *dwError*  
  The error that caused the exception.  
   
 ### Remarks  
@@ -73,7 +73,7 @@ DWORD_PTR m_dwContext;
 ```  
   
 ### Remarks  
- The context identifier is originally specified in [CInternetSession](../../mfc/reference/cinternetsession-class.md) and passed by MFC to [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)- and [CInternetFile](../../mfc/reference/cinternetfile-class.md)-derived classes. You can override this default and assign any `dwContext` parameter a value of your choosing. `dwContext` is associated with any operation of the given object. `dwContext` identifies the operation's status information returned by [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).  
+ The context identifier is originally specified in [CInternetSession](../../mfc/reference/cinternetsession-class.md) and passed by MFC to [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)- and [CInternetFile](../../mfc/reference/cinternetfile-class.md)-derived classes. You can override this default and assign any *dwContext* parameter a value of your choosing. *dwContext* is associated with any operation of the given object. *dwContext* identifies the operation's status information returned by [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).  
   
 ##  <a name="m_dwerror"></a>  CInternetException::m_dwError  
  The error that caused the exception.  
