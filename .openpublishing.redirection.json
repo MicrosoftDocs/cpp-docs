@@ -3416,7 +3416,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/dotnet/perator-greater-than-pair-stl-clr.md",
+            "source_path": "docs/dotnet/operator-greater-than-pair-stl-clr.md",
             "redirect_url": "/cpp/dotnet/utility-stl-clr#op_gt",
             "redirect_document_id": false
         },
