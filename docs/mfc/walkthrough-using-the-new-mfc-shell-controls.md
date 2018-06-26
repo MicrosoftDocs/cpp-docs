@@ -55,7 +55,8 @@ In this walkthrough, you will create an application that resembles File Explorer
   
      Now add a member variable of type `CMFCShellListCtrl`. First, locate the following comment in the header file:  
   
- ``` *// Generated message map functions  
+ ``` 
+    // Generated message map functions  
  ```  
   
      Immediately above that comment add this code:  
@@ -67,7 +68,8 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 2.  The **MFC Application Wizard** already created a `CMFCShellTreeCtrl` object in the `CMainFrame` class, but it is a protected member. We will access this object later. Therefore, create an accessor for it now. Open the MainFrm.h header file by double-clicking it in the **Solution Explorer**. Locate the following comment:  
   
- ``` *// Attributes  
+ ``` 
+    // Attributes  
  ```  
   
      Immediately under it, add the following method declaration:  
@@ -75,7 +77,6 @@ In this walkthrough, you will create an application that resembles File Explorer
  ```  
     public: 
     CMFCShellTreeCtrl& GetShellTreeCtrl();
-
  ```  
   
      Next, open the MainFrm.cpp source file by double-clicking it in the **Solution Explorer**. At the bottom of that file, add the following method definition:  
