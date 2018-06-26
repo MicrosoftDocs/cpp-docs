@@ -49,7 +49,7 @@ class CCheckListBox : public CListBox
   
  `CCheckListBox` is only for owner-drawn controls because the list contains more than text strings. At its simplest, a checklist box contains text strings and check boxes, but you do not need to have text at all. For example, you could have a list of small bitmaps with a check box next to each item.  
   
- To create your own checklist box, you must derive your own class from `CCheckListBox`. To derive your own class, write a constructor for the derived class, then call **Create**.  
+ To create your own checklist box, you must derive your own class from `CCheckListBox`. To derive your own class, write a constructor for the derived class, then call `Create`.  
   
  If you want to handle Windows notification messages sent by a list box to its parent (usually a class derived from [CDialog](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message.  
   
@@ -63,7 +63,7 @@ class CCheckListBox : public CListBox
   
  **afx_msg** `void` `memberFxn` **( );**  
   
- There is only one message-map entry that pertains specifically to **CCheckListBox** (but see also the message-map entries for [CListBox](../../mfc/reference/clistbox-class.md)):  
+ There is only one message-map entry that pertains specifically to `CCheckListBox` (but see also the message-map entries for [CListBox](../../mfc/reference/clistbox-class.md)):  
   
 - **ON_CLBN_CHKCHANGE** The user has changed the state of an item's checkbox.  
   
@@ -93,7 +93,7 @@ CCheckListBox();
 ```  
   
 ### Remarks  
- You construct a `CCheckListBox` object in two steps. First define a class derived from `CCheckListBox`, then call **Create**, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object.  
+ You construct a `CCheckListBox` object in two steps. First define a class derived from `CCheckListBox`, then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#60](../../mfc/codesnippet/cpp/cchecklistbox-class_1.cpp)]  
@@ -110,25 +110,25 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the style of the checklist box. The style must be **LBS_HASSTRINGS** and either **LBS_OWNERDRAWFIXED** (all items in the list are the same height) or **LBS_OWNERDRAWVARIABLE** (items in the list are of varying heights). This style can be combined with other [list-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) except **LBS_USETABSTOPS**.  
   
- `rect`  
+ *rect*  
  Specifies the checklist-box size and position. Can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the checklist box's parent window (usually a `CDialog` object). It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the checklist box's control ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CCheckListBox` object in two steps. First, define a class derived from **CcheckListBox** and then call **Create**, which initializes the Windows checklist box and attaches it to the `CCheckListBox`. See [CCheckListBox::CCheckListBox](#cchecklistbox) for a sample.  
+ You construct a `CCheckListBox` object in two steps. First, define a class derived from `CcheckListBox` and then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox`. See [CCheckListBox::CCheckListBox](#cchecklistbox) for a sample.  
   
- When **Create** executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the checklist-box control.  
+ When `Create` executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the checklist-box control.  
   
  These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, add a message map to the your derived class and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   
@@ -156,7 +156,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### Parameters  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.  
   
 ### Remarks  
@@ -164,9 +164,9 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  By default, this function draws a default checkbox list, consisting of a list of strings each with a default-sized checkbox to the left. The checkbox list size is the one specified in [Create](#create).  
   
- Override this member function to implement drawing of owner-draw checklist boxes that are not the default, such as checklist boxes with lists that aren't strings, with variable-height items, or with checkboxes that aren't on the left. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before the termination of this member function.  
+ Override this member function to implement drawing of owner-draw checklist boxes that are not the default, such as checklist boxes with lists that aren't strings, with variable-height items, or with checkboxes that aren't on the left. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before the termination of this member function.  
   
- If checklist box items are not all the same height, the checklist box style (specified in **Create**) must be **LBS_OWNERVARIABLE**, and you must override the [MeasureItem](#measureitem) function.  
+ If checklist box items are not all the same height, the checklist box style (specified in `Create`) must be **LBS_OWNERVARIABLE**, and you must override the [MeasureItem](#measureitem) function.  
   
 ##  <a name="enable"></a>  CCheckListBox::Enable  
  Call this function to enable or disable a checklist box item.  
@@ -178,10 +178,10 @@ void Enable(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the checklist box item to be enabled.  
   
- `bEnabled`  
+ *bEnabled*  
  Specifies whether the item is enabled or disabled.  
   
 ##  <a name="getcheck"></a>  CCheckListBox::GetCheck  
@@ -192,7 +192,7 @@ int GetCheck(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of a check box that is contained in the list box.  
   
 ### Return Value  
@@ -225,7 +225,7 @@ BOOL IsEnabled(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the item.  
   
 ### Return Value  
@@ -239,7 +239,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```  
   
 ### Parameters  
- `lpMeasureItemStruct`  
+ *lpMeasureItemStruct*  
  A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.  
   
 ### Remarks  
@@ -258,7 +258,7 @@ virtual CRect OnGetCheckPosition(
  *rectItem*  
  The position and size of the list item.  
   
- `rectCheckBox`  
+ *rectCheckBox*  
  The default position and size of an item's check box.  
   
 ### Return Value  
@@ -277,14 +277,14 @@ void SetCheck(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of a check box that is contained in the list box.  
   
- `nCheck`  
+ *nCheck*  
  The button state for the specified check box. See the Remarks section for possible values.  
   
 ### Remarks  
- The following table lists possible values for the `nCheck` parameter.  
+ The following table lists possible values for the *nCheck* parameter.  
   
 |Value|Description|  
 |-----------|-----------------|  
@@ -300,7 +300,7 @@ void SetCheckStyle(UINT nStyle);
 ```  
   
 ### Parameters  
- `nStyle`  
+ *nStyle*  
  Determines the style of check boxes in the checklist box.  
   
 ### Remarks  

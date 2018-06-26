@@ -96,10 +96,11 @@ CCriticalSection();
   
 ```  
 BOOL Lock();  
-BOOL Lock(DWORD dwTimeout);```  
+BOOL Lock(DWORD dwTimeout);
+```  
   
 ### Parameters  
- `dwTimeout`  
+ *dwTimeout*  
  `Lock` ignores this parameter value.  
   
 ### Return Value  
