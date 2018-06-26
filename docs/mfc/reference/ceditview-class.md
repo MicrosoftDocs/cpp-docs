@@ -58,7 +58,7 @@ class CEditView : public CCtrlView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CEditView::dwStyleDefault](#dwstyledefault)|Default style for objects of type **CEditView.**|  
+|[CEditView::dwStyleDefault](#dwstyledefault)|Default style for objects of type `CEditView`.|  
   
 ## Remarks  
  The `CEditView` class provides the following additional functions:  
@@ -115,7 +115,7 @@ CEditView();
 ```  
   
 ### Remarks  
- After constructing the object, you must call the [CWnd::Create](../../mfc/reference/cwnd-class.md#create) function before the edit control is used. If you derive a class from `CEditView` and add it to the template using `CWinApp::AddDocTemplate`, the framework calls both this constructor and the **Create** function.  
+ After constructing the object, you must call the [CWnd::Create](../../mfc/reference/cwnd-class.md#create) function before the edit control is used. If you derive a class from `CEditView` and add it to the template using `CWinApp::AddDocTemplate`, the framework calls both this constructor and the `Create` function.  
   
 ##  <a name="dwstyledefault"></a>  CEditView::dwStyleDefault  
  Contains the default style of the `CEditView` object.  
@@ -125,7 +125,7 @@ static const DWORD dwStyleDefault;
 ```  
   
 ### Remarks  
- Pass this static member as the `dwStyle` parameter of the **Create** function to obtain the default style for the `CEditView` object.  
+ Pass this static member as the `dwStyle` parameter of the `Create` function to obtain the default style for the `CEditView` object.  
   
 ##  <a name="findtext"></a>  CEditView::FindText  
  Call the `FindText` function to search the `CEditView` object's text buffer.  
@@ -138,20 +138,20 @@ BOOL FindText(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be found.  
   
- `bNext`  
+ *bNext*  
  Specifies the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
   
- `bCase`  
+ *bCase*  
  Specifies whether the search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
   
 ### Return Value  
  Nonzero if the search text is found; otherwise 0.  
   
 ### Remarks  
- This function searches the text in the buffer for the text specified by `lpszFind`, starting at the current selection, in the direction specified by `bNext`, and with case sensitivity specified by `bCase`. If the text is found, it sets the selection to the found text and returns a nonzero value. If the text is not found, the function returns 0.  
+ This function searches the text in the buffer for the text specified by *lpszFind*, starting at the current selection, in the direction specified by *bNext*, and with case sensitivity specified by *bCase*. If the text is found, it sets the selection to the found text and returns a nonzero value. If the text is not found, the function returns 0.  
   
  You normally do not need to call the `FindText` function unless you override `OnFindNext`, which calls `FindText`.  
   
@@ -207,7 +207,7 @@ void GetSelectedText(CString& strResult) const;
 ```  
   
 ### Parameters  
- `strResult`  
+ *strResult*  
  A reference to the `CString` object that is to receive the selected text.  
   
 ##  <a name="lockbuffer"></a>  CEditView::LockBuffer  
@@ -221,7 +221,7 @@ LPCTSTR LockBuffer() const;
  A pointer to the edit control's buffer.  
   
 ##  <a name="onfindnext"></a>  CEditView::OnFindNext  
- Searches the text in the buffer for the text specified by `lpszFind`, in the direction specified by `bNext`, with case sensitivity specified by `bCase`.  
+ Searches the text in the buffer for the text specified by *lpszFind*, in the direction specified by *bNext*, with case sensitivity specified by *bCase*.  
   
 ```  
 virtual void OnFindNext(
@@ -231,13 +231,13 @@ virtual void OnFindNext(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be found.  
   
- `bNext`  
+ *bNext*  
  Specifies the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
   
- `bCase`  
+ *bCase*  
  Specifies whether the search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
   
 ### Remarks  
@@ -256,19 +256,19 @@ virtual void OnReplaceAll(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be found.  
   
- `lpszReplace`  
+ *lpszReplace*  
  The text to replace the search text.  
   
- `bCase`  
+ *bCase*  
  Specifies whether search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
   
 ### Remarks  
- `OnReplaceAll` searches the text in the buffer for the text specified by `lpszFind`, with case sensitivity specified by `bCase`. The search starts at the beginning of the current selection. Each time the search text is found, this function replaces that occurrence of the text with the text specified by `lpszReplace`. The search is accomplished through a call to [FindText](#findtext). In the default implementation, [OnTextNotFound](#ontextnotfound) is called if the text is not found.  
+ `OnReplaceAll` searches the text in the buffer for the text specified by *lpszFind*, with case sensitivity specified by *bCase*. The search starts at the beginning of the current selection. Each time the search text is found, this function replaces that occurrence of the text with the text specified by *lpszReplace*. The search is accomplished through a call to [FindText](#findtext). In the default implementation, [OnTextNotFound](#ontextnotfound) is called if the text is not found.  
   
- If the current selection does not match `lpszFind`, the selection is updated to the first occurrence of the text specified by `lpszFind` and a replace is not performed. This allows the user to confirm that this is what they want to do when the selection does not match the text to be replaced.  
+ If the current selection does not match *lpszFind*, the selection is updated to the first occurrence of the text specified by *lpszFind* and a replace is not performed. This allows the user to confirm that this is what they want to do when the selection does not match the text to be replaced.  
   
  Override `OnReplaceAll` to change the way a `CEditView`-derived object replaces text.  
   
@@ -284,20 +284,20 @@ virtual void OnReplaceSel(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be found.  
   
- `bNext`  
+ *bNext*  
  Specifies the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
   
- `bCase`  
+ *bCase*  
  Specifies whether the search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
   
- `lpszReplace`  
+ *lpszReplace*  
  The text to replace the found text.  
   
 ### Remarks  
- After replacing the selection, this function searches the text in the buffer for the next occurrence of the text specified by `lpszFind`, in the direction specified by `bNext`, with case sensitivity specified by `bCase`. The search is accomplished through a call to [FindText](#findtext). If the text is not found, [OnTextNotFound](#ontextnotfound) is called.  
+ After replacing the selection, this function searches the text in the buffer for the next occurrence of the text specified by *lpszFind*, in the direction specified by *bNext*, with case sensitivity specified by *bCase*. The search is accomplished through a call to [FindText](#findtext). If the text is not found, [OnTextNotFound](#ontextnotfound) is called.  
   
  Override `OnReplaceSel` to change the way a `CEditView`-derived object replaces the selected text.  
   
@@ -309,7 +309,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be found.  
   
 ##  <a name="printinsiderect"></a>  CEditView::PrintInsideRect  
@@ -324,16 +324,16 @@ UINT PrintInsideRect(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the printer device context.  
   
  *rectLayout*  
  Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) specifying the rectangle in which the text is to be rendered.  
   
- `nIndexStart`  
+ *nIndexStart*  
  Index within the buffer of the first character to be rendered.  
   
- `nIndexStop`  
+ *nIndexStop*  
  Index within the buffer of the character following the last character to be rendered.  
   
 ### Return Value  
@@ -352,21 +352,21 @@ void SerializeRaw(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  Reference to the `CArchive` object that stores the serialized text.  
   
 ### Remarks  
  `SerializeRaw` differs from `CEditView`'s internal implementation of `Serialize` in that it reads and writes only the text, without preceding object-description data.  
   
 ##  <a name="setprinterfont"></a>  CEditView::SetPrinterFont  
- Call `SetPrinterFont` to set the printer font to the font specified by `pFont`.  
+ Call `SetPrinterFont` to set the printer font to the font specified by *pFont*.  
   
 ```  
 void SetPrinterFont(CFont* pFont);
 ```  
   
 ### Parameters  
- `pFont`  
+ *pFont*  
  A pointer to an object of type `CFont`. If **NULL**, the font used for printing is based on the display font.  
   
 ### Remarks  
@@ -380,7 +380,7 @@ void SetTabStops(int nTabStops);
 ```  
   
 ### Parameters  
- `nTabStops`  
+ *nTabStops*  
  Width of each tab stop, in dialog units.  
   
 ### Remarks  

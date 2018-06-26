@@ -79,7 +79,7 @@ BOOL Attach(HGDIOBJ hObject);
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  A `HANDLE` to a Windows GDI object (for example, `HPEN` or `HBRUSH`).  
   
 ### Return Value  
@@ -93,7 +93,7 @@ CGdiObject();
 ```  
   
 ### Remarks  
- You never create a `CGdiObject` directly. Rather, you create an object from one of its derived classes, such as `CPen` or **Cbrush**.  
+ You never create a `CGdiObject` directly. Rather, you create an object from one of its derived classes, such as `CPen` or `Cbrush`.  
   
 ##  <a name="createstockobject"></a>  CGdiObject::CreateStockObject  
  Retrieves a handle to one of the predefined stock Windows GDI pens, brushes, or fonts, and attaches the GDI object to the `CGdiObject` object.  
@@ -103,7 +103,7 @@ BOOL CreateStockObject(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](http://msdn.microsoft.com/library/windows/desktop/dd144925) in the Windows SDK for a description of appropriate values.  
   
 ### Return Value  
@@ -158,7 +158,7 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  A `HANDLE` to a Windows GDI object.  
   
 ### Return Value  
@@ -179,10 +179,10 @@ int GetObject(
 ```  
   
 ### Parameters  
- `nCount`  
- Specifies the number of bytes to copy into the `lpObject` buffer.  
+ *nCount*  
+ Specifies the number of bytes to copy into the *lpObject* buffer.  
   
- `lpObject`  
+ *lpObject*  
  Points to a user-supplied buffer that is to receive the information.  
   
 ### Return Value  
@@ -271,7 +271,7 @@ BOOL operator!=(const CGdiObject& obj) const;
 ```  
   
 ### Parameters  
- `obj`  
+ *obj*  
  A pointer to an existing `CGdiObject`.  
   
 ### Remarks  
@@ -285,7 +285,7 @@ BOOL operator==(const CGdiObject& obj) const;
 ```  
   
 ### Parameters  
- `obj`  
+ *obj*  
  A reference to an existing `CGdiObject`.  
   
 ### Remarks  

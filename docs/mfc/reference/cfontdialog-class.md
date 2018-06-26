@@ -107,19 +107,19 @@ CFontDialog(
 ```  
   
 ### Parameters  
- l `plfInitial`  
+ *plfInitial*  
  A pointer to a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) data structure that allows you to set some of the font's characteristics.  
   
- `charFormat`  
+ *charFormat*  
  A pointer to a [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) data structure that allows you to set some of the font's characteristics in a rich edit control.  
   
- `dwFlags`  
+ *dwFlags*  
  Specifies one or more choose-font flags. One or more preset values can be combined using the bitwise OR operator. If you modify the `m_cf.Flag`s structure member, be sure to use a bitwise OR operator in your changes to keep the default behavior intact. For details on each of these flags, see the description of the [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) structure in the Windows SDK.  
   
- pdcPrinter  
+ *pdcPrinter*  
  A pointer to a printer-device context. If supplied, this parameter points to a printer-device context for the printer on which the fonts are to be selected.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the font dialog box's parent or owner window.  
   
 ### Remarks  
@@ -159,7 +159,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
 ```  
   
 ### Parameters  
- `cf`  
+ *cf*  
  A [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) structure containing information about the character formatting of the selected font.  
   
 ##  <a name="getcolor"></a>  CFontDialog::GetColor  
