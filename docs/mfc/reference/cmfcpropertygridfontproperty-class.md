@@ -66,22 +66,22 @@ CMFCPropertyGridFontProperty(
 ```  
   
 ### Parameters  
- [in] `strName`  
+ [in] *strName*  
  The name of the property.  
   
- [in] `lf`  
+ [in] *lf*  
  A logical font structure that specifies the attributes of the font.  
   
- [in] `dwFontDialogFlags`  
- Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the `Flags` parameter of the [CHOOSEFONT Structure](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
+ [in] *dwFontDialogFlags*  
+ Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the *Flags* parameter of the [CHOOSEFONT Structure](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
   
- [in] `lpszDescr`  
+ [in] *lpszDescr*  
  Description of the font property. The default value is `NULL`.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
- [in] `color`  
+ [in] *color*  
  The color of the font. The default value is the default color.  
   
 ### Remarks  
