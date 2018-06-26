@@ -3466,6 +3466,226 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/operator-inequality-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_neq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-than-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#xxxx",op_lt
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-or-equal-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_lteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-equality-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-than-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_gt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-or-equal-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_gteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-at-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#at",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-back-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#back",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-back-item-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#back_item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-begin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#begin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-capacity-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#capacity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-clear-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#clear",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-const-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#const_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-const-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#const_reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-end-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#end",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-erase-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#erase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-front-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#front",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-front-item-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#front_item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-generic-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#generic_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-generic-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#generic_revere_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-insert-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#insert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-operator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-pop-back-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#pop_back",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-push-back-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#push_back",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-rbegin-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#rbegin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-rend-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#rend",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-reserve-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#reserve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-resize-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#resize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-reverse-iterator-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#reverse_iterator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-swap-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-value-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/vector-vector-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#vector",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
