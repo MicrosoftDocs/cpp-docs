@@ -3286,7 +3286,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/dotnet/perator-greater-than-stack-stl-clr.md",
+            "source_path": "docs/dotnet/operator-greater-than-stack-stl-clr.md",
             "redirect_url": "/cpp/dotnet/stack-stl-clr#op_gt",
             "redirect_document_id": false
         },
