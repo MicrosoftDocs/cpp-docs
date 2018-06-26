@@ -71,10 +71,10 @@ virtual BOOL AddToStoryboard(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Specifies whether to add keyframe or transition recursively.  
   
 ### Return Value  
@@ -93,10 +93,10 @@ BOOL AddToStoryboardAfterTransition(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Specifies whether to add a transition recursively.  
   
 ### Return Value  
@@ -115,10 +115,10 @@ virtual BOOL AddToStoryboardAtOffset(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Specifies whether to add a keyframe this keyframe depend on recursively.  
   
 ### Return Value  
@@ -140,13 +140,13 @@ CKeyFrame(
 ```  
   
 ### Parameters  
- `pTransition`  
+ *pTransition*  
  A pointer to a transition.  
   
- `pKeyframe`  
+ *pKeyframe*  
  A pointer to keyframe.  
   
- `offset`  
+ *offset*  
  Offset, in seconds, from keyframe specified by pKeyframe.  
   
 ### Remarks  

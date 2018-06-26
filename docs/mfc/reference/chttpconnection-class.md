@@ -85,36 +85,36 @@ CHttpConnection(
 ```  
   
 ### Parameters  
- `pSession`  
+ *pSession*  
  A pointer to a [CInternetSession](../../mfc/reference/cinternetsession-class.md) object.  
   
- `hConnected`  
+ *hConnected*  
  A handle to an Internet connection.  
   
- `pstrServer`  
+ *pstrServer*  
  A pointer to a string containing the server name.  
   
- `dwContext`  
- The context identifier for the `CInternetConnection` object. See **Remarks** for more information about `dwContext`.  
+ *dwContext*  
+ The context identifier for the `CInternetConnection` object. See **Remarks** for more information about *dwContext*.  
   
- `nPort`  
+ *nPort*  
  The number that identifies the Internet port for this connection.  
   
- `pstrUserName`  
+ *pstrUserName*  
  Pointer to a null-terminated string that specifies the name of the user to log in. If **NULL**, the default is anonymous.  
   
- `pstrPassword`  
- A pointer to a null-terminated string that specifies the password to use to log in. If both `pstrPassword` and `pstrUserName` are **NULL**, the default anonymous password is the user's email name. If `pstrPassword` is **NULL** (or an empty string) but `pstrUserName` is not **NULL**, a blank password is used. The following table describes the behavior for the four possible settings of `pstrUserName` and `pstrPassword`:  
+ *pstrPassword*  
+ A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are **NULL**, the default anonymous password is the user's email name. If *pstrPassword* is **NULL** (or an empty string) but *pstrUserName* is not **NULL**, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:  
   
-|`pstrUserName`|`pstrPassword`|Username sent to FTP server|Password sent to FTP server|  
+|*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
 |**NULL** or " "|**NULL** or " "|"anonymous"|User's email name|  
-|Non- **NULL** String|**NULL** or " "|`pstrUserName`|" "|  
+|Non- **NULL** String|**NULL** or " "|*pstrUserName*|" "|  
 |**NULL** Non- **NULL** String|**ERROR**|**ERROR**||  
-|Non- **NULL** String|Non- **NULL** String|`pstrUserName`|`pstrPassword`|  
+|Non- **NULL** String|Non- **NULL** String|*pstrUserName*|*pstrPassword*|  
   
- `dwFlags`  
- Any combination of the **INTERNET_ FLAG_\*** flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of `dwFlags` values.  
+ *dwFlags*  
+ Any combination of the **INTERNET_ FLAG_\*** flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of *dwFlags* values.  
   
 ### Remarks  
  You never create a `CHttpConnection` directly. Rather, you create an object by calling [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
@@ -144,31 +144,31 @@ CHttpFile* OpenRequest(
 ```  
   
 ### Parameters  
- `pstrVerb`  
+ *pstrVerb*  
  A pointer to a string containing the verb to use in the request. If `NULL`, "GET" is used.  
   
- `pstrObjectName`  
+ *pstrObjectName*  
  A pointer to a string containing the target object of the specified verb. This is generally a filename, an executable module, or a search specifier.  
   
- `pstrReferer`  
- A pointer to a string that specifies the address (URL) of the document from which the URL in the request ( `pstrObjectName`) was obtained. If `NULL`, no HTTP header is specified.  
+ *pstrReferer*  
+ A pointer to a string that specifies the address (URL) of the document from which the URL in the request ( *pstrObjectName*) was obtained. If `NULL`, no HTTP header is specified.  
   
- `dwContext`  
- The context identifier for the `OpenRequest` operation. See the Remarks section for more information about `dwContext`.  
+ *dwContext*  
+ The context identifier for the `OpenRequest` operation. See the Remarks section for more information about *dwContext*.  
   
- `ppstrAcceptTypes`  
- A pointer to a null-terminated array of `LPCTSTR` pointers to strings indicating content types accepted by the client. If `ppstrAcceptTypes` is `NULL`, the servers interpret that the client only accepts documents of type "text/*" (that is, only text documents and not pictures or other binary files). The content type is equivalent to the CGI variable CONTENT_TYPE, which identifies the type of data for queries that have attached information, such as HTTP POST and PUT.  
+ *ppstrAcceptTypes*  
+ A pointer to a null-terminated array of `LPCTSTR` pointers to strings indicating content types accepted by the client. If *ppstrAcceptTypes* is `NULL`, the servers interpret that the client only accepts documents of type "text/*" (that is, only text documents and not pictures or other binary files). The content type is equivalent to the CGI variable CONTENT_TYPE, which identifies the type of data for queries that have attached information, such as HTTP POST and PUT.  
   
- `pstrVersion`  
+ *pstrVersion*  
  A pointer to a string defining the HTTP version. If `NULL`, "HTTP/1.0" is used.  
   
- `dwFlags`  
- Any combination of the INTERNET_ FLAG_* flags. See the Remarks section for a description of possible `dwFlags` values.  
+ *dwFlags*  
+ Any combination of the INTERNET_ FLAG_* flags. See the Remarks section for a description of possible *dwFlags* values.  
   
- `nVerb`  
+ *nVerb*  
  A number associated with the HTTP request type. Can be one of the following:  
   
-|HTTP request type|`nVerb` value|  
+|HTTP request type|*nVerb* value|  
 |-----------------------|-------------------|  
 |`HTTP_VERB_POST`|0|  
 |`HTTP_VERB_GET`|1|  
@@ -182,7 +182,7 @@ CHttpFile* OpenRequest(
  A pointer to the [CHttpFile](../../mfc/reference/chttpfile-class.md) object requested.  
   
 ### Remarks  
- `dwFlags` can be one of the following:  
+ *dwFlags* can be one of the following:  
   
 |Internet flag|Description|  
 |-------------------|-----------------|  

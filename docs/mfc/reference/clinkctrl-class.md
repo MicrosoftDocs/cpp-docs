@@ -92,19 +92,19 @@ virtual BOOL Create(DWORD dwStyle,
 ```  
   
 ### Parameters  
- `lpszLinkMarkup`  
+ *lpszLinkMarkup*  
  Pointer to a zero-terminated string that contains the marked up text to display. For more information, see the section "Markup and Link Access" in the topic [Overview of SysLink Controls](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the link control's style. Apply any combination of control styles. See [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the `Windows SDK` for more information.  
   
- `rect`  
+ *rect*  
  Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the link control's parent window. It must not be `NULL`.  
   
- `nID`  
+ *nID*  
  Specifies the link control's ID.  
   
 ### Return Value  
@@ -113,7 +113,7 @@ virtual BOOL Create(DWORD dwStyle,
 ### Remarks  
  You construct a `CLinkCtrl` object in two steps. First, call the constructor and then call `Create`, which creates the link control and attaches it to the `CLinkCtrl` object. If you want to use extended windows styles with your control, call [CLinkCtrl::CreateEx](#createex) instead of `Create`.  
   
- The second form of the `Create` method is deprecated. Use the first form that specifies the `lpszLinkMarkup` parameter.  
+ The second form of the `Create` method is deprecated. Use the first form that specifies the *lpszLinkMarkup* parameter.  
   
 ### Example  
  The following code example defines two variables, named `m_Link1` and `m_Link2`, that are used to access two link controls.  
@@ -146,22 +146,22 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 ```  
   
 ### Parameters  
- `lpszLinkMarkup`  
+ *lpszLinkMarkup*  
  Pointer to a zero-terminated string that contains the marked up text to display. For more information, see the section "Markup and Link Access" in the topic [Overview of SysLink Controls](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
- `dwExStyle`  
- Specifies the extended style of the link control. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the link control. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the link control's style. Apply any combination of control styles. For more information, see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK.  
   
- `rect`  
+ *rect*  
  Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the link control's parent window. It must not be `NULL`.  
   
- `nID`  
+ *nID*  
  Specifies the link control's ID.  
   
 ### Return Value  
@@ -170,7 +170,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 ### Remarks  
  Use `CreateEx` instead of [Create](#create) to apply extended Windows style constants.  
   
- The second form of the `CreateEx` method is deprecated. Use the first form that specifies the `lpszLinkMarkup` parameter.  
+ The second form of the `CreateEx` method is deprecated. Use the first form that specifies the *lpszLinkMarkup* parameter.  
   
 ##  <a name="getidealheight"></a>  CLinkCtrl::GetIdealHeight  
  Retrieves the ideal height of the link control.  
@@ -198,11 +198,11 @@ int GetIdealSize(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `cxMaxWidth`|The maximum width of the link, in pixels.|  
-|[out] * `pSize`|A pointer to a Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the `cy` member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by `cxMaxWidth`. The `cx` member of the structure contains the link text width that is actually needed.|  
+|[in] *cxMaxWidth*|The maximum width of the link, in pixels.|  
+|[out] * *pSize*|A pointer to a Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|  
   
 ### Return Value  
- The preferred height of the link text, in pixels. The return value is the same as the value of the `cy` member of the `SIZE` structure.  
+ The preferred height of the link text, in pixels. The return value is the same as the value of the *cy* member of the `SIZE` structure.  
   
 ### Remarks  
  For an example of the `GetIdealSize` method, see the example in [CLinkCtrl::Create](#create).  
@@ -217,7 +217,7 @@ BOOL GetItem(PLITEM pItem) const;
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  A pointer to a [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure to receive item information.  
   
 ### Return Value  
@@ -241,7 +241,7 @@ BOOL GetItemID(
 ```  
   
 ### Parameters  
- `iLink`  
+ *iLink*  
  The index of a link control item.  
   
  *strID*  
@@ -273,13 +273,13 @@ BOOL GetItemState(
 ```  
   
 ### Parameters  
- `iLink`  
+ *iLink*  
  The index of a link control item.  
   
- `pnState`  
+ *pnState*  
  The value of the specified state item.  
   
- `stateMask`  
+ *stateMask*  
  Combination of flags describing which state item to get. For a list of values, see the description of the **state** member in the [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure. Allowable items are identical to those allowed in **state**.  
   
 ### Return Value  
@@ -303,13 +303,13 @@ BOOL GetItemUrl(
 ```  
   
 ### Parameters  
- `iLink`  
+ *iLink*  
  The index of a link control item.  
   
- `strUrl`  
+ *strUrl*  
  A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) object containing the URL represented by the specified item  
   
- `szUrl`  
+ *szUrl*  
  A null-terminated string containing the URL represented by the specified item  
   
  *cchUrl*  
@@ -349,7 +349,7 @@ BOOL SetItem(PLITEM pItem);
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  A pointer to a [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure containing the information to set.  
   
 ### Return Value  
@@ -368,7 +368,7 @@ BOOL SetItemID(
 ```  
   
 ### Parameters  
- `iLink`  
+ *iLink*  
  The index of a link control item.  
   
  *szID*  
@@ -391,13 +391,13 @@ BOOL SetItemState(
 ```  
   
 ### Parameters  
- `iLink`  
+ *iLink*  
  The index of a link control item.  
   
- `pnState`  
+ *pnState*  
  The value of the specified state item being set.  
   
- `stateMask`  
+ *stateMask*  
  Combination of flags describing the state item being set. For a list of values, see the description of the **state** member in the [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure. Allowable items are identical to those allowed in **state**.  
   
 ### Return Value  
@@ -416,10 +416,10 @@ BOOL SetItemUrl(
 ```  
   
 ### Parameters  
- `iLink`  
+ *iLink*  
  The index of a link control item.  
   
- `szUrl`  
+ *szUrl*  
  A null-terminated string containing the URL represented by the specified item  
   
 ### Return Value  

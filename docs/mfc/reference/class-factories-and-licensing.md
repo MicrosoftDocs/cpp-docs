@@ -129,23 +129,23 @@ BOOL AFXAPI AfxVerifyLicFile(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  The instance handle of the DLL associated with the licensed control.  
   
- `pszLicFileName`  
+ *pszLicFileName*  
  Points to a null-terminated character string containing the license filename.  
   
- `pszLicFileContents`  
+ *pszLicFileContents*  
  Points to a byte sequence that must match the sequence found at the beginning of the license file.  
   
- `cch`  
- Number of characters in `pszLicFileContents`.  
+ *cch*  
+ Number of characters in *pszLicFileContents*.  
   
 ### Return Value  
- Nonzero if the license file exists and begins with the character sequence in `pszLicFileContents`; otherwise 0.  
+ Nonzero if the license file exists and begins with the character sequence in *pszLicFileContents*; otherwise 0.  
   
 ### Remarks  
- If `cch` is -1, this function uses:  
+ If *cch* is -1, this function uses:  
   
  [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]  
 
