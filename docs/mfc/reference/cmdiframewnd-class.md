@@ -52,11 +52,11 @@ class CMDIFrameWnd : public CFrameWnd
   
  You can construct an MDI frame window by calling the [Create](../../mfc/reference/cframewnd-class.md#create) or [LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe) member function of `CFrameWnd`.  
   
- Before you call **Create** or `LoadFrame`, you must construct the frame window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
+ Before you call `Create` or `LoadFrame`, you must construct the frame window object on the heap using the C++ **new** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
   
- Use the **Create** member function to pass the frame's creation parameters as immediate arguments.  
+ Use the `Create` member function to pass the frame's creation parameters as immediate arguments.  
   
- `LoadFrame` requires fewer arguments than **Create**, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessed by `LoadFrame`, all these resources must have the same resource ID (for example, **IDR_MAINFRAME**).  
+ `LoadFrame` requires fewer arguments than `Create`, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessed by `LoadFrame`, all these resources must have the same resource ID (for example, **IDR_MAINFRAME**).  
   
  Though **MDIFrameWnd** is derived from `CFrameWnd`, a frame window class derived from `CMDIFrameWnd` need not be declared with `DECLARE_DYNCREATE`.  
   
@@ -106,7 +106,7 @@ CMDIFrameWnd();
 ```  
   
 ### Remarks  
- Call the **Create** or `LoadFrame` member function to create the visible MDI frame window.  
+ Call the `Create` or `LoadFrame` member function to create the visible MDI frame window.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_1.cpp)]  
@@ -121,10 +121,10 @@ virtual BOOL CreateClient(
 ```  
   
 ### Parameters  
- `lpCreateStruct`  
+ *lpCreateStruct*  
  A long pointer to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.  
   
- `pWindowMenu`  
+ *pWindowMenu*  
  A pointer to the Window pop-up menu.  
   
 ### Return Value  
@@ -148,16 +148,16 @@ CMDIChildWnd* CreateNewChild(
 ```  
   
 ### Parameters  
- `pClass`  
+ *pClass*  
  The run-time class of the child window to be created.  
   
  *nResource*  
  The ID of shared resources associated with the child window.  
   
- `hMenu`  
+ *hMenu*  
  The child window's menu.  
   
- `hAccel`  
+ *hAccel*  
  The child window's accelerator.  
   
 ### Remarks  
@@ -217,10 +217,11 @@ void MDIActivate(CWnd* pWndActivate);
   
 ```  
 void MDICascade();  
-void MDICascade(int nType);```  
+void MDICascade(int nType);
+```  
   
 ### Parameters  
- `nType`  
+ *nType*  
  Specifies a cascade flag. Only the following flag can be specified: `MDITILE_SKIPDISABLED`, which prevents disabled MDI child windows from being cascaded.  
   
 ### Remarks  
@@ -267,7 +268,7 @@ void MDIMaximize(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the window to maximize.  
   
 ### Remarks  
@@ -309,7 +310,7 @@ void MDIRestore(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the window to restore.  
   
 ### Example  
@@ -328,7 +329,7 @@ CMenu* MDISetMenu(
  *pFrameMenu*  
  Specifies the menu of the new frame-window menu. If **NULL**, the menu is not changed.  
   
- `pWindowMenu`  
+ *pWindowMenu*  
  Specifies the menu of the new Window pop-up menu. If **NULL**, the menu is not changed.  
   
 ### Return Value  
@@ -353,10 +354,11 @@ CMenu* MDISetMenu(
   
 ```  
 void MDITile();  
-void MDITile(int nType);```  
+void MDITile(int nType);
+```  
   
 ### Parameters  
- `nType`  
+ *nType*  
  Specifies a tiling flag. This parameter can be any one of the following flags:  
   
 - `MDITILE_HORIZONTAL` Tiles MDI child windows so that one window appears above another.  
@@ -366,7 +368,7 @@ void MDITile(int nType);```
 - `MDITILE_VERTICAL` Tiles MDI child windows so that one window appears beside another.  
   
 ### Remarks  
- The first version of `MDITile`, without parameters, tiles the windows vertically under Windows versions 3.1 and later. The second version tiles windows vertically or horizontally, depending on the value of the `nType` parameter.  
+ The first version of `MDITile`, without parameters, tiles the windows vertically under Windows versions 3.1 and later. The second version tiles windows vertically or horizontally, depending on the value of the *nType* parameter.  
   
 ### Example  
  See the example for [CMDIFrameWnd::MDICascade](#mdicascade).  

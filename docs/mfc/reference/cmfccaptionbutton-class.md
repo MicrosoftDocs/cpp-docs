@@ -77,13 +77,13 @@ CMFCCaptionButton(
 ```  
   
 ### Parameters  
- [in] `nHit`  
+ [in] *nHit*  
  The command associated with the button.  
   
- [in] `bLeftAlign`  
+ [in] *bLeftAlign*  
  Specifies whether the button is aligned to the left.  
   
- The following table lists possible values for the `nHit` parameter.  
+ The following table lists possible values for the *nHit* parameter.  
   
 |Value|Command|  
 |-----------|-------------|  
@@ -132,10 +132,10 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ```  
   
 ### Parameters  
- [in] `bHorz`  
+ [in] *bHorz*  
  `TRUE` for left or right arrow image IDs; `FALSE` for up or down arrow image IDs.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  `TRUE` for a maximize image ID; `FALSE` for a minimize image ID.  
   
 ### Return Value  
@@ -192,10 +192,10 @@ void Move(
 ```  
   
 ### Parameters  
- [in] `ptTo`  
+ [in] *ptTo*  
  The new location.  
   
- [in] `bHide`  
+ [in] *bHide*  
  Whether to show the button.  
   
 ##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
@@ -211,23 +211,23 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the button.  
   
- [in] `bActive`  
+ [in] *bActive*  
  Whether to draw an active button image.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Reserved for use in a derived class.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  Whether to draw a maximized button image.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  Whether to draw an enabled button image.  
   
 ### Remarks  
- The `bMaximized` parameter is used when the button is a maximize or minimize button.  
+ The *bMaximized* parameter is used when the button is a maximize or minimize button.  
   
 ##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton  
  Sets the mini size of the title bar.  
@@ -237,7 +237,7 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
+ [in] *bSet*  
  `TRUE` for mini title bar height; `FALSE` for default title bar height.  
   
 ## See Also  

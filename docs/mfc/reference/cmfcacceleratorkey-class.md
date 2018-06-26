@@ -59,10 +59,11 @@ class CMFCAcceleratorKey : public CObject
   
 ```  
 CMFCAcceleratorKey();  
-CMFCAcceleratorKey(LPACCEL lpAccel);```  
+CMFCAcceleratorKey(LPACCEL lpAccel);
+```  
   
 ### Parameters  
- [in] `lpAccel`  
+ [in] *lpAccel*  
  A pointer to a shortcut key.  
   
 ### Remarks  
@@ -76,7 +77,7 @@ void Format(CString& str) const;
 ```  
   
 ### Parameters  
- [out] `str`  
+ [out] *str*  
  A reference to a `CString` object where the method writes the translated shortcut key.  
   
 ### Remarks  
@@ -90,7 +91,7 @@ void SetAccelerator(LPACCEL lpAccel);
 ```  
   
 ### Parameters  
- [in] `lpAccel`  
+ [in] *lpAccel*  
  A pointer to a shortcut key.  
   
 ### Remarks  
