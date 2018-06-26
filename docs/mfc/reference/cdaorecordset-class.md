@@ -44,7 +44,7 @@ class CDaoRecordset : public CObject
 |[CDaoRecordset::Close](#close)|Closes the recordset.|  
 |[CDaoRecordset::Delete](#delete)|Deletes the current record from the recordset. You must explicitly scroll to another record after the deletion.|  
 |[CDaoRecordset::DoFieldExchange](#dofieldexchange)|Called to exchange data (in both directions) between the field data members of the recordset and the corresponding record on the data source. Implements DAO record field exchange (DFX).|  
-|[CDaoRecordset::Edit](#edit)|Prepares for changes to the current record. Call **Update** to complete the edit.|  
+|[CDaoRecordset::Edit](#edit)|Prepares for changes to the current record. Call `Update` to complete the edit.|  
 |[CDaoRecordset::FillCache](#fillcache)|Fills all or a part of a local cache for a recordset object that contains data from an ODBC data source.|  
 |[CDaoRecordset::Find](#find)|Locates the first, next, previous, or last location of a particular string in a dynaset-type recordset that satisfies the specified criteria and makes that record the current record.|  
 |[CDaoRecordset::FindFirst](#findfirst)|Locates the first record in a dynaset-type or snapshot-type recordset that satisfies the specified criteria and makes that record the current record.|  
@@ -104,7 +104,7 @@ class CDaoRecordset : public CObject
 |[CDaoRecordset::SetParamValue](#setparamvalue)|Sets the current value of the specified parameter stored in the underlying DAOParameter object|  
 |[CDaoRecordset::SetParamValueNull](#setparamvaluenull)|Sets the current value of the specified parameter to Null (having no value).|  
 |[CDaoRecordset::SetPercentPosition](#setpercentposition)|Sets the position of the current record to a location corresponding to a percentage of the total number of records in a recordset.|  
-|[CDaoRecordset::Update](#update)|Completes an `AddNew` or **Edit** operation by saving the new or edited data on the data source.|  
+|[CDaoRecordset::Update](#update)|Completes an `AddNew` or `Edit` operation by saving the new or edited data on the data source.|  
   
 ### Public Data Members  
   
@@ -148,9 +148,9 @@ class CDaoRecordset : public CObject
 > [!NOTE]
 >  The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes; the DAO classes generally offer superior capabilities because they are specific to the Microsoft Jet database engine.  
   
- You can either use `CDaoRecordset` directly or derive a class from `CDaoRecordset`. To use a recordset class in either case, open a database and construct a recordset object, passing the constructor a pointer to your `CDaoDatabase` object. You can also construct a `CDaoRecordset` object and let MFC create a temporary `CDaoDatabase` object for you. Then call the recordset's [Open](#open) member function, specifying whether the object is a table-type recordset, a dynaset-type recordset, or a snapshot-type recordset. Calling **Open** selects data from the database and retrieves the first record.  
+ You can either use `CDaoRecordset` directly or derive a class from `CDaoRecordset`. To use a recordset class in either case, open a database and construct a recordset object, passing the constructor a pointer to your `CDaoDatabase` object. You can also construct a `CDaoRecordset` object and let MFC create a temporary `CDaoDatabase` object for you. Then call the recordset's [Open](#open) member function, specifying whether the object is a table-type recordset, a dynaset-type recordset, or a snapshot-type recordset. Calling `Open` selects data from the database and retrieves the first record.  
   
- Use the object's member functions and data members to scroll through the records and operate on them. The operations available depend on whether the object is a table-type recordset, a dynaset-type recordset, or a snapshot-type recordset, and whether it is updateable or read-only — this depends on the capability of the database or Open Database Connectivity (ODBC) data source. To refresh records that may have been changed or added since the **Open** call, call the object's [Requery](#requery) member function. Call the object's **Close** member function and destroy the object when you finish with it.  
+ Use the object's member functions and data members to scroll through the records and operate on them. The operations available depend on whether the object is a table-type recordset, a dynaset-type recordset, or a snapshot-type recordset, and whether it is updateable or read-only — this depends on the capability of the database or Open Database Connectivity (ODBC) data source. To refresh records that may have been changed or added since the `Open` call, call the object's [Requery](#requery) member function. Call the object's `Close` member function and destroy the object when you finish with it.  
   
  `CDaoRecordset` uses DAO record field exchange (DFX) to support reading and updating of record fields through type-safe C++ members of your `CDaoRecordset` or `CDaoRecordset`-derived class. You can also implement dynamic binding of columns in a database without using the DFX mechanism using [GetFieldValue](#getfieldvalue) and [SetFieldValue](#setfieldvalue).  
   
@@ -172,10 +172,10 @@ virtual void AddNew();
 ```  
   
 ### Remarks  
- The record's fields are initially Null. (In database terminology, Null means "having no value" and is not the same as **NULL** in C++.) To complete the operation, you must call the [Update](#update) member function. **Update** saves your changes to the data source.  
+ The record's fields are initially Null. (In database terminology, Null means "having no value" and is not the same as **NULL** in C++.) To complete the operation, you must call the [Update](#update) member function. `Update` saves your changes to the data source.  
   
 > [!CAUTION]
->  If you edit a record and then scroll to another record without calling **Update**, your changes are lost without warning.  
+>  If you edit a record and then scroll to another record without calling `Update`, your changes are lost without warning.  
   
  If you add a record to a dynaset-type recordset by calling [AddNew](#addnew), the record is visible in the recordset and included in the underlying table where it becomes visible to any new `CDaoRecordset` objects.  
   
@@ -198,7 +198,7 @@ virtual void AddNew();
  If the double-buffering mechanism is not being used, then changing the value of the field does not automatically set the field as dirty. In this case, it will be necessary to explicitly set the field dirty. The flag contained in [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) controls this automatic field checking.  
   
 > [!NOTE]
->  If records are double-buffered (that is, automatic field checking is enabled), calling `CancelUpdate` will restore the member variables to the values they had before `AddNew` or **Edit** was called.  
+>  If records are double-buffered (that is, automatic field checking is enabled), calling `CancelUpdate` will restore the member variables to the values they had before `AddNew` or `Edit` was called.  
   
  For related information, see the topics "AddNew Method", "CancelUpdate Method", "LastModified Property", and "EditMode Property" in DAO Help.  
   
@@ -238,29 +238,29 @@ virtual void CancelUpdate();
 ```  
   
 ### Remarks  
- For example, if an application calls the **Edit** or `AddNew` member function and has not called [Update](#update), `CancelUpdate` cancels any changes made after **Edit** or `AddNew` was called.  
+ For example, if an application calls the `Edit` or `AddNew` member function and has not called [Update](#update), `CancelUpdate` cancels any changes made after `Edit` or `AddNew` was called.  
   
 > [!NOTE]
->  If records are double-buffered (that is, automatic field checking is enabled), calling `CancelUpdate` will restore the member variables to the values they had before `AddNew` or **Edit** was called.  
+>  If records are double-buffered (that is, automatic field checking is enabled), calling `CancelUpdate` will restore the member variables to the values they had before `AddNew` or `Edit` was called.  
   
- If there is no **Edit** or `AddNew` operation pending, `CancelUpdate` causes MFC to throw an exception. Call the [GetEditMode](#geteditmode) member function to determine if there is a pending operation that can be canceled.  
+ If there is no `Edit` or `AddNew` operation pending, `CancelUpdate` causes MFC to throw an exception. Call the [GetEditMode](#geteditmode) member function to determine if there is a pending operation that can be canceled.  
   
  For related information, see the topic "CancelUpdate Method" in DAO Help.  
   
 ##  <a name="canrestart"></a>  CDaoRecordset::CanRestart  
- Call this member function to determine whether the recordset allows restarting its query (to refresh its records) by calling the **Requery** member function.  
+ Call this member function to determine whether the recordset allows restarting its query (to refresh its records) by calling the `Requery` member function.  
   
 ```  
 BOOL CanRestart();
 ```  
   
 ### Return Value  
- Nonzero if **Requery** can be called to run the recordset's query again, otherwise 0.  
+ Nonzero if `Requery` can be called to run the recordset's query again, otherwise 0.  
   
 ### Remarks  
- Table-type recordsets do not support **Requery**.  
+ Table-type recordsets do not support `Requery`.  
   
- If **Requery** is not supported, call [Close](#close) then [Open](#open) to refresh the data. You can call **Requery** to update a recordset object's underlying parameter query after the parameter values have been changed.  
+ If `Requery` is not supported, call [Close](#close) then [Open](#open) to refresh the data. You can call `Requery` to update a recordset object's underlying parameter query after the parameter values have been changed.  
   
  For related information, see the topic "Restartable Property" in DAO Help.  
   
@@ -303,7 +303,7 @@ BOOL CanUpdate() const;
  Nonzero if the recordset can be updated (add, update, and delete records), otherwise 0.  
   
 ### Remarks  
- A recordset might be read-only if the underlying data source is read-only or if you specified **dbReadOnly** for `nOptions` when you called [Open](#open) for the recordset.  
+ A recordset might be read-only if the underlying data source is read-only or if you specified **dbReadOnly** for *nOptions* when you called [Open](#open) for the recordset.  
   
  For related information, see the topics "AddNew Method", "Edit Method", "Delete Method", "Update Method", and "Updatable Property" in DAO Help.  
   
@@ -315,8 +315,8 @@ CDaoRecordset(CDaoDatabase* pDatabase = NULL);
 ```  
   
 ### Parameters  
- `pDatabase`  
- Contains a pointer to a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object or the value **NULL**. If not **NULL** and the `CDaoDatabase` object's **Open** member function has not been called to connect it to the data source, the recordset attempts to open it for you during its own [Open](#open) call. If you pass **NULL**, a `CDaoDatabase` object is constructed and connected for you using the data source information you specified if you derived your recordset class from `CDaoRecordset`.  
+ *pDatabase*  
+ Contains a pointer to a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object or the value **NULL**. If not **NULL** and the `CDaoDatabase` object's `Open` member function has not been called to connect it to the data source, the recordset attempts to open it for you during its own [Open](#open) call. If you pass **NULL**, a `CDaoDatabase` object is constructed and connected for you using the data source information you specified if you derived your recordset class from `CDaoRecordset`.  
   
 ### Remarks  
  You can either use `CDaoRecordset` directly or derive an application-specific class from `CDaoRecordset`. You can use ClassWizard to derive your recordset classes.  
@@ -334,11 +334,11 @@ virtual void Close();
 ```  
   
 ### Remarks  
- Because **Close** does not destroy the `CDaoRecordset` object, you can reuse the object by calling **Open** on the same data source or a different data source.  
+ Because **Close** does not destroy the `CDaoRecordset` object, you can reuse the object by calling `Open` on the same data source or a different data source.  
   
- All pending [AddNew](#addnew) or [Edit](#edit) statements are canceled, and all pending transactions are rolled back. If you want to preserve pending additions or edits, call [Update](#update) before you call **Close** for each recordset.  
+ All pending [AddNew](#addnew) or [Edit](#edit) statements are canceled, and all pending transactions are rolled back. If you want to preserve pending additions or edits, call [Update](#update) before you call `Close` for each recordset.  
   
- You can call **Open** again after calling **Close**. This lets you reuse the recordset object. A better alternative is to call [Requery](#requery), if possible.  
+ You can call `Open` again after calling `Close`. This lets you reuse the recordset object. A better alternative is to call [Requery](#requery), if possible.  
   
  For related information, see the topic "Close Method" in DAO Help.  
   
@@ -350,16 +350,16 @@ virtual void Delete();
 ```  
   
 ### Remarks  
- After a successful deletion, the recordset's field data members are set to a Null value, and you must explicitly call one of the recordset navigation member functions ( [Move](#move), [Seek](#seek), [SetBookmark](#setbookmark), and so on) in order to move off the deleted record. When you delete records from a recordset, there must be a current record in the recordset before you call **Delete**; otherwise, MFC throws an exception.  
+ After a successful deletion, the recordset's field data members are set to a Null value, and you must explicitly call one of the recordset navigation member functions ( [Move](#move), [Seek](#seek), [SetBookmark](#setbookmark), and so on) in order to move off the deleted record. When you delete records from a recordset, there must be a current record in the recordset before you call `Delete`; otherwise, MFC throws an exception.  
   
- **Delete** removes the current record and makes it inaccessible. Although you cannot edit or use the deleted record, it remains current. Once you move to another record, however, you cannot make the deleted record current again.  
+ `Delete` removes the current record and makes it inaccessible. Although you cannot edit or use the deleted record, it remains current. Once you move to another record, however, you cannot make the deleted record current again.  
   
 > [!CAUTION]
->  The recordset must be updatable and there must be a valid record current in the recordset when you call **Delete**. For example, if you delete a record but do not scroll to a new record before you call **Delete** again, **Delete** throws a [CDaoException](../../mfc/reference/cdaoexception-class.md).  
+>  The recordset must be updatable and there must be a valid record current in the recordset when you call `Delete`. For example, if you delete a record but do not scroll to a new record before you call `Delete` again, `Delete` throws a [CDaoException](../../mfc/reference/cdaoexception-class.md).  
   
  You can undelete a record if you use transactions and you call the [CDaoWorkspace::Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) member function. If the base table is the primary table in a cascade delete relationship, deleting the current record may also delete one or more records in a foreign table. For more information, see the definition "cascade delete" in DAO Help.  
   
- Unlike `AddNew` and **Edit**, a call to **Delete** is not followed by a call to **Update**.  
+ Unlike `AddNew` and `Edit`, a call to `Delete` is not followed by a call to `Update`.  
   
  For related information, see the topics "AddNew Method", "Edit Method", "Delete Method", "Update Method", and "Updatable Property" in DAO Help.  
   
@@ -371,7 +371,7 @@ virtual void DoFieldExchange(CDaoFieldExchange* pFX);
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  Contains a pointer to a `CDaoFieldExchange` object. The framework will already have set up this object to specify a context for the field exchange operation.  
   
 ### Remarks  
@@ -391,10 +391,10 @@ virtual void Edit();
 ```  
   
 ### Remarks  
- Once you call the **Edit** member function, changes made to the current record's fields are copied to the copy buffer. After you make the desired changes to the record, call **Update** to save your changes. **Edit** saves the values of the recordset's data members. If you call **Edit**, make changes, then call **Edit** again, the record's values are restored to what they were before the first **Edit** call.  
+ Once you call the `Edit` member function, changes made to the current record's fields are copied to the copy buffer. After you make the desired changes to the record, call `Update` to save your changes. `Edit` saves the values of the recordset's data members. If you call `Edit`, make changes, then call `Edit` again, the record's values are restored to what they were before the first `Edit` call.  
   
 > [!CAUTION]
->  If you edit a record and then perform any operation that moves to another record without first calling **Update**, your changes are lost without warning. In addition, if you close the recordset or the parent database, your edited record is discarded without warning.  
+>  If you edit a record and then perform any operation that moves to another record without first calling `Update`, your changes are lost without warning. In addition, if you close the recordset or the parent database, your edited record is discarded without warning.  
   
  In some cases, you may want to update a column by making it Null (containing no data). To do so, call `SetFieldNull` with a parameter of **TRUE** to mark the field Null; this also causes the column to be updated. If you want a field to be written to the data source even though its value has not changed, call `SetFieldDirty` with a parameter of **TRUE**. This works even if the field had the value Null.  
   
@@ -402,12 +402,12 @@ virtual void Edit();
   
  If the double-buffering mechanism is not being used, then changing the value of the field does not automatically set the field as dirty. In this case, it will be necessary to explicitly set the field dirty. The flag contained in [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) controls this automatic field checking.  
   
- When the recordset object is pessimistically locked in a multiuser environment, the record remains locked from the time **Edit** is used until the updating is complete. If the recordset is optimistically locked, the record is locked and compared with the pre-edited record just before it is updated in the database. If the record has changed since you called **Edit**, the **Update** operation fails and MFC throws an exception. You can change the locking mode with `SetLockingMode`.  
+ When the recordset object is pessimistically locked in a multiuser environment, the record remains locked from the time `Edit` is used until the updating is complete. If the recordset is optimistically locked, the record is locked and compared with the pre-edited record just before it is updated in the database. If the record has changed since you called `Edit`, the `Update` operation fails and MFC throws an exception. You can change the locking mode with `SetLockingMode`.  
   
 > [!NOTE]
 >  Optimistic locking is always used on external database formats, such as ODBC and installable ISAM.  
   
- The current record remains current after you call **Edit**. To call **Edit**, there must be a current record. If there is no current record or if the recordset does not refer to an open table-type or dynaset-type recordset object, an exception occurs. Calling **Edit** causes a `CDaoException` to be thrown under the following conditions:  
+ The current record remains current after you call `Edit`. To call `Edit`, there must be a current record. If there is no current record or if the recordset does not refer to an open table-type or dynaset-type recordset object, an exception occurs. Calling `Edit` causes a `CDaoException` to be thrown under the following conditions:  
   
 -   There is no current record.  
   
@@ -419,7 +419,7 @@ virtual void Edit();
   
 -   Another user has locked the page containing your record.  
   
- If the data source supports transactions, you can make the **Edit** call part of a transaction. Note that you should call `CDaoWorkspace::BeginTrans` before calling **Edit** and after the recordset has been opened. Also note that calling `CDaoWorkspace::CommitTrans` is not a substitute for calling **Update** to complete the **Edit** operation. For more information about transactions, see class `CDaoWorkspace`.  
+ If the data source supports transactions, you can make the `Edit` call part of a transaction. Note that you should call `CDaoWorkspace::BeginTrans` before calling `Edit` and after the recordset has been opened. Also note that calling `CDaoWorkspace::CommitTrans` is not a substitute for calling `Update` to complete the `Edit` operation. For more information about transactions, see class `CDaoWorkspace`.  
   
  For related information, see the topics "AddNew Method", "Edit Method", "Delete Method", "Update Method", and "Updatable Property" in DAO Help.  
   
@@ -433,10 +433,10 @@ void FillCache(
 ```  
   
 ### Parameters  
- `pSize`  
+ *pSize*  
  Specifies the number of rows to fill in the cache. If you omit this parameter, the value is determined by the CacheSize property setting of the underlying DAO object.  
   
- `pBookmark`  
+ *pBookmark*  
  A [COleVariant](../../mfc/reference/colevariant-class.md) specifying a bookmark. The cache is filled starting from the record indicated by this bookmark. If you omit this parameter, the cache is filled starting from the record indicated by the CacheStart property of the underlying DAO object.  
   
 ### Remarks  
@@ -444,11 +444,11 @@ void FillCache(
   
  Rather than waiting for the cache to be filled with records as they are fetched, you can explicitly fill the cache at any time by calling the `FillCache` member function. This is a faster way to fill the cache because `FillCache` fetches several records at once instead of one at a time. For example, while each screenful of records is being displayed, you can have your application call `FillCache` to fetch the next screenful of records.  
   
- Any ODBC database accessed with recordset objects can have a local cache. To create the cache, open a recordset object from the remote data source, and then call the `SetCacheSize` and `SetCacheStart` member functions of the recordset. If `lSize` and *lBookmark* create a range that is partly or wholly outside the range specified by `SetCacheSize` and `SetCacheStart`, the portion of the recordset outside this range is ignored and is not loaded into the cache. If `FillCache` requests more records than remain in the remote data source, only the remaining records are fetched, and no exception is thrown.  
+ Any ODBC database accessed with recordset objects can have a local cache. To create the cache, open a recordset object from the remote data source, and then call the `SetCacheSize` and `SetCacheStart` member functions of the recordset. If *lSize* and *lBookmark* create a range that is partly or wholly outside the range specified by `SetCacheSize` and `SetCacheStart`, the portion of the recordset outside this range is ignored and is not loaded into the cache. If `FillCache` requests more records than remain in the remote data source, only the remaining records are fetched, and no exception is thrown.  
   
  Records fetched from the cache do not reflect changes made concurrently to the source data by other users.  
   
- `FillCache` fetches only records not already cached. To force an update of all the cached data, call the `SetCacheSize` member function with an `lSize` parameter equal to 0, call `SetCacheSize` again with the `lSize` parameter equal to the size of the cache you originally requested, and then call `FillCache`.  
+ `FillCache` fetches only records not already cached. To force an update of all the cached data, call the `SetCacheSize` member function with an *lSize* parameter equal to 0, call `SetCacheSize` again with the *lSize* parameter equal to the size of the cache you originally requested, and then call `FillCache`.  
   
  For related information, see the topic "FillCache Method" in DAO Help.  
   
@@ -473,7 +473,7 @@ virtual BOOL Find(
   
 - **AFX_DAO_LAST** Find the last location of a matching string.  
   
- `lpszFilter`  
+ *lpszFilter*  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record. For example:  
   
  [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/cpp/cdaorecordset-class_3.cpp)]  
@@ -482,12 +482,12 @@ virtual BOOL Find(
  Nonzero if matching records are found, otherwise 0.  
   
 ### Remarks  
- You can find the first, next, previous, or last instance of the string. **Find** is a virtual function, so you can override it and add your own implementation. The `FindFirst`, `FindLast`, `FindNext`, and `FindPrev` member functions call the **Find** member function, so you can use **Find** to control the behavior of all Find operations.  
+ You can find the first, next, previous, or last instance of the string. `Find` is a virtual function, so you can override it and add your own implementation. The `FindFirst`, `FindLast`, `FindNext`, and `FindPrev` member functions call the `Find` member function, so you can use `Find` to control the behavior of all Find operations.  
   
  To locate a record in a table-type recordset, call the [Seek](#seek) member function.  
   
 > [!TIP]
->  The smaller the set of records you have, the more effective **Find** will be. In general, and especially with ODBC data, it is better to create a new query that retrieves just the records you want.  
+>  The smaller the set of records you have, the more effective `Find` will be. In general, and especially with ODBC data, it is better to create a new query that retrieves just the records you want.  
   
  For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevious Methods" in DAO Help.  
   
@@ -499,7 +499,7 @@ BOOL FindFirst(LPCTSTR lpszFilter);
 ```  
   
 ### Parameters  
- `lpszFilter`  
+ *lpszFilter*  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record.  
   
 ### Return Value  
@@ -513,31 +513,31 @@ BOOL FindFirst(LPCTSTR lpszFilter);
  If a record matching the criteria is not located, the current record pointer is undetermined, and `FindFirst` returns zero. If the recordset contains more than one record that satisfies the criteria, `FindFirst` locates the first occurrence, `FindNext` locates the next occurrence, and so on.  
   
 > [!CAUTION]
->  If you edit the current record, be sure to save the changes by calling the **Update** member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
+>  If you edit the current record, be sure to save the changes by calling the `Update` member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
   
- The **Find** member functions search from the location and in the direction specified in the following table:  
+ The `Find` member functions search from the location and in the direction specified in the following table:  
   
 |Find operations|Begin|Search direction|  
 |---------------------|-----------|----------------------|  
 |`FindFirst`|Beginning of recordset|End of recordset|  
 |`FindLast`|End of recordset|Beginning of recordset|  
 |`FindNext`|Current record|End of recordset|  
-|**FindPrevious**|Current record|Beginning of recordset|  
+|`FindPrevious`|Current record|Beginning of recordset|  
   
 > [!NOTE]
 >  When you call `FindLast`, the Microsoft Jet database engine fully populates your recordset before beginning the search, if this has not already been done. The first search may take longer than subsequent searches.  
   
- Using one of the Find operations is not the same as calling **MoveFirst** or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
+ Using one of the Find operations is not the same as calling `MoveFirst` or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
   
  Keep the following in mind when using the Find operations:  
   
--   If **Find** returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
+-   If `Find` returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
   
 -   You cannot use a Find operation with a forward-only scrolling snapshot-type recordset.  
   
 -   You should use the U.S. date format (month-day-year) when you search for fields containing dates, even if you are not using the U.S. version of the Microsoft Jet database engine; otherwise, matching records may not be found.  
   
--   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or **CDaoQuerydef** objects that retrieve specific indexed records.  
+-   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or `CDaoQuerydef` objects that retrieve specific indexed records.  
   
  For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevious Methods" in DAO Help.  
   
@@ -549,7 +549,7 @@ BOOL FindLast(LPCTSTR lpszFilter);
 ```  
   
 ### Parameters  
- `lpszFilter`  
+ *lpszFilter*  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record.  
   
 ### Return Value  
@@ -563,19 +563,19 @@ BOOL FindLast(LPCTSTR lpszFilter);
  If a record matching the criteria is not located, the current record pointer is undetermined, and `FindLast` returns zero. If the recordset contains more than one record that satisfies the criteria, `FindFirst` locates the first occurrence, `FindNext` locates the next occurrence after the first occurrence, and so on.  
   
 > [!CAUTION]
->  If you edit the current record, be sure you save the changes by calling the **Update** member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
+>  If you edit the current record, be sure you save the changes by calling the `Update` member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
   
- Using one of the Find operations is not the same as calling **MoveFirst** or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
+ Using one of the Find operations is not the same as calling `MoveFirst` or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
   
  Keep the following in mind when using the Find operations:  
   
--   If **Find** returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
+-   If `Find` returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
   
 -   You cannot use a Find operation with a forward-only scrolling snapshot-type recordset.  
   
 -   You should use the U.S. date format (month-day-year) when you search for fields containing dates, even if you are not using the U.S. version of the Microsoft Jet database engine; otherwise, matching records may not be found.  
   
--   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or **CDaoQuerydef** objects that retrieve specific indexed records.  
+-   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or `CDaoQuerydef` objects that retrieve specific indexed records.  
   
  For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevious Methods" in DAO Help.  
   
@@ -587,7 +587,7 @@ BOOL FindNext(LPCTSTR lpszFilter);
 ```  
   
 ### Parameters  
- `lpszFilter`  
+ *lpszFilter*  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record.  
   
 ### Return Value  
@@ -601,19 +601,19 @@ BOOL FindNext(LPCTSTR lpszFilter);
  If a record matching the criteria is not located, the current record pointer is undetermined, and `FindNext` returns zero. If the recordset contains more than one record that satisfies the criteria, `FindFirst` locates the first occurrence, `FindNext` locates the next occurrence, and so on.  
   
 > [!CAUTION]
->  If you edit the current record, be sure you save the changes by calling the **Update** member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
+>  If you edit the current record, be sure you save the changes by calling the `Update` member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
   
- Using one of the Find operations is not the same as calling **MoveFirst** or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
+ Using one of the Find operations is not the same as calling `MoveFirst` or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
   
  Keep the following in mind when using the Find operations:  
   
--   If **Find** returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
+-   If `Find` returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
   
 -   You cannot use a Find operation with a forward-only scrolling snapshot-type recordset.  
   
 -   You should use the U.S. date format (month-day-year) when you search for fields containing dates, even if you are not using the U.S. version of the Microsoft Jet database engine; otherwise, matching records may not be found.  
   
--   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or **CDaoQuerydef** objects that retrieve specific indexed records.  
+-   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or `CDaoQuerydef` objects that retrieve specific indexed records.  
   
  For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevious Methods" in DAO Help.  
   
@@ -625,7 +625,7 @@ BOOL FindPrev(LPCTSTR lpszFilter);
 ```  
   
 ### Parameters  
- `lpszFilter`  
+ *lpszFilter*  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record.  
   
 ### Return Value  
@@ -639,19 +639,19 @@ BOOL FindPrev(LPCTSTR lpszFilter);
  If a record matching the criteria is not located, the current record pointer is undetermined, and `FindPrev` returns zero. If the recordset contains more than one record that satisfies the criteria, `FindFirst` locates the first occurrence, `FindNext` locates the next occurrence, and so on.  
   
 > [!CAUTION]
->  If you edit the current record, be sure you save the changes by calling the **Update** member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
+>  If you edit the current record, be sure you save the changes by calling the `Update` member function before you move to another record. If you move to another record without updating, your changes are lost without warning.  
   
- Using one of the Find operations is not the same as calling **MoveFirst** or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
+ Using one of the Find operations is not the same as calling `MoveFirst` or `MoveNext`, however, which simply makes the first or next record current without specifying a condition. You can follow a Find operation with a Move operation.  
   
  Keep the following in mind when using the Find operations:  
   
--   If **Find** returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
+-   If `Find` returns nonzero, the current record is not defined. In this case, you must position the current record pointer back to a valid record.  
   
 -   You cannot use a Find operation with a forward-only scrolling snapshot-type recordset.  
   
 -   You should use the U.S. date format (month-day-year) when you search for fields containing dates, even if you are not using the U.S. version of the Microsoft Jet database engine; otherwise, matching records may not be found.  
   
--   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or **CDaoQuerydef** objects that retrieve specific indexed records.  
+-   When working with ODBC databases and large dynasets, you may discover that using the Find operations is slow, especially when working with large recordsets. You can improve performance by using SQL queries with customized **ORDERBY** or **WHERE** clauses, parameter queries, or `CDaoQuerydef` objects that retrieve specific indexed records.  
   
  For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevious Methods" in DAO Help.  
   
@@ -829,7 +829,7 @@ short GetEditMode();
 |Value|Description|  
 |-----------|-----------------|  
 |**dbEditNone**|No editing operation is in progress.|  
-|**dbEditInProgress**|**Edit** has been called.|  
+|**dbEditInProgress**|`Edit` has been called.|  
 |**dbEditAdd**|`AddNew` has been called.|  
   
  For related information, see the topic "EditMode Property" in DAO Help.  
@@ -864,13 +864,13 @@ void GetFieldInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the predefined field in the recordset's Fields collection, for lookup by index.  
   
- `fieldinfo`  
+ *fieldinfo*  
  A reference to a [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Options that specify which information about the recordset to retrieve. The available options are listed here along with what they cause the function to return. For best performance, retrieve only the level of information you need:  
   
 - `AFX_DAO_PRIMARY_INFO` (Default) Name, Type, Size, Attributes  
@@ -879,13 +879,13 @@ void GetFieldInfo(
   
 - `AFX_DAO_ALL_INFO` Primary and secondary information, plus: Default Value, Validation Rule, Validation Text  
   
- `lpszName`  
+ *lpszName*  
  The name of the field.  
   
 ### Remarks  
  One version of the function lets you look up a field by index. The other version lets you look up a field by name.  
   
- For a description of the information returned, see the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. When you request information at one level, you get information for any prior levels as well.  
+ For a description of the information returned, see the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for any prior levels as well.  
   
  For related information, see the topic "Attributes Property" in DAO Help.  
   
@@ -907,13 +907,13 @@ virtual COleVariant GetFieldValue(int nIndex);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string that contains the name of a field.  
   
- `varValue`  
+ *varValue*  
  A reference to a `COleVariant` object that will store the value of a field.  
   
- `nIndex`  
+ *nIndex*  
  A zero-based index of the field in the recordset's Fields collection, for lookup by index.  
   
 ### Return Value  
@@ -963,13 +963,13 @@ void GetIndexInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index in the table's Indexes collection, for lookup by numerical position.  
   
- `indexinfo`  
+ *indexinfo*  
  A reference to a [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Options that specify which information about the index to retrieve. The available options are listed here along with what they cause the function to return. For best performance, retrieve only the level of information you need:  
   
 - `AFX_DAO_PRIMARY_INFO` (Default) Name, Field Info, Fields  
@@ -978,13 +978,13 @@ void GetIndexInfo(
   
 - `AFX_DAO_ALL_INFO` Primary and secondary information, plus: Distinct Count  
   
- `lpszName`  
+ *lpszName*  
  A pointer to the name of the index object, for lookup by name.  
   
 ### Remarks  
  One version of the function lets you look up a index by its position in the collection. The other version lets you look up an index by name.  
   
- For a description of the information returned, see the [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. When you request information at one level, you get information for any prior levels as well.  
+ For a description of the information returned, see the [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for any prior levels as well.  
   
  For related information, see the topic "Attributes Property" in DAO Help.  
   
@@ -1018,7 +1018,7 @@ BOOL GetLockingMode();
 ### Remarks  
  When pessimistic locking is in effect, the data page containing the record you are editing is locked as soon as you call the [Edit](#edit) member function. The page is unlocked when you call the [Update](#update) or [Close](#close) member function or any of the Move or Find operations.  
   
- When optimistic locking is in effect, the data page containing the record is locked only while the record is being updated with the **Update** member function.  
+ When optimistic locking is in effect, the data page containing the record is locked only while the record is being updated with the `Update` member function.  
   
  When working with ODBC data sources, the locking mode is always optimistic.  
   
@@ -1048,10 +1048,10 @@ virtual COleVariant GetParamValue(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The numerical position of the parameter in the underlying DAOParameter object.  
   
- `lpszName`  
+ *lpszName*  
  The name of the parameter whose value you want.  
   
 ### Return Value  
@@ -1100,7 +1100,7 @@ long GetRecordCount();
   
  The value of `GetRecordCount` from a table-type recordset reflects the approximate number of records in the table and is affected immediately as table records are added and deleted.  
   
- A recordset with no records returns a value of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns - 1. Calling the **Requery** member function on a recordset resets the value of `GetRecordCount` just as if the query were re-executed.  
+ A recordset with no records returns a value of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns - 1. Calling the `Requery` member function on a recordset resets the value of `GetRecordCount` just as if the query were re-executed.  
   
  For related information, see the topic "RecordCount Property" in DAO Help.  
   
@@ -1117,10 +1117,10 @@ CString GetSQL() const;
 ### Remarks  
  This will generally be a SQL **SELECT** statement.  
   
- The string returned by `GetSQL` is typically different from any string you may have passed to the recordset in the `lpszSQL` parameter to the [Open](#open) member function. This is because the recordset constructs a full SQL statement based on what you passed to **Open**, what you specified with ClassWizard, and what you may have specified in the [m_strFilter](#m_strfilter) and [m_strSort](#m_strsort) data members.  
+ The string returned by `GetSQL` is typically different from any string you may have passed to the recordset in the *lpszSQL* parameter to the [Open](#open) member function. This is because the recordset constructs a full SQL statement based on what you passed to `Open`, what you specified with ClassWizard, and what you may have specified in the [m_strFilter](#m_strfilter) and [m_strSort](#m_strsort) data members.  
   
 > [!NOTE]
->  Call this member function only after calling **Open**.  
+>  Call this member function only after calling `Open`.  
   
  For related information, see the topic "SQL Property" in DAO Help.  
   
@@ -1184,19 +1184,19 @@ BOOL IsBOF() const;
  Nonzero if the recordset contains no records or if you have scrolled backward before the first record; otherwise 0.  
   
 ### Remarks  
- You can also call `IsBOF` along with `IsEOF` to determine whether the recordset contains any records or is empty. Immediately after you call **Open**, if the recordset contains no records, `IsBOF` returns nonzero. When you open a recordset that has at least one record, the first record is the current record and `IsBOF` returns 0.  
+ You can also call `IsBOF` along with `IsEOF` to determine whether the recordset contains any records or is empty. Immediately after you call `Open`, if the recordset contains no records, `IsBOF` returns nonzero. When you open a recordset that has at least one record, the first record is the current record and `IsBOF` returns 0.  
   
  If the first record is the current record and you call `MovePrev`, `IsBOF` will subsequently return nonzero. If `IsBOF` returns nonzero and you call `MovePrev`, an exception is thrown. If `IsBOF` returns nonzero, the current record is undefined, and any action that requires a current record will result in an exception.  
   
  Effect of specific methods on `IsBOF` and `IsEOF` settings:  
   
--   Calling **Open** internally makes the first record in the recordset the current record by calling **MoveFirst**. Therefore, calling **Open** on an empty set of records causes `IsBOF` and `IsEOF` to return nonzero. (See the following table for the behavior of a failed **MoveFirst** or `MoveLast` call.)  
+-   Calling `Open*` internally makes the first record in the recordset the current record by calling `MoveFirst`. Therefore, calling `Open` on an empty set of records causes `IsBOF` and `IsEOF` to return nonzero. (See the following table for the behavior of a failed `MoveFirst` or `MoveLast` call.)  
   
 -   All Move operations that successfully locate a record cause both `IsBOF` and `IsEOF` to return 0.  
   
--   An `AddNew` call followed by an **Update** call that successfully inserts a new record will cause `IsBOF` to return 0, but only if `IsEOF` is already nonzero. The state of `IsEOF` will always remain unchanged. As defined by the Microsoft Jet database engine, the current record pointer of an empty recordset is at the end of a file, so any new record is inserted after the current record.  
+-   An `AddNew` call followed by an `Update` call that successfully inserts a new record will cause `IsBOF` to return 0, but only if `IsEOF` is already nonzero. The state of `IsEOF` will always remain unchanged. As defined by the Microsoft Jet database engine, the current record pointer of an empty recordset is at the end of a file, so any new record is inserted after the current record.  
   
--   Any **Delete** call, even if it removes the only remaining record from a recordset, will not change the value of `IsBOF` or `IsEOF`.  
+-   Any `Delete` call, even if it removes the only remaining record from a recordset, will not change the value of `IsBOF` or `IsEOF`.  
   
  This table shows which Move operations are allowed with different combinations of `IsBOF`/ `IsEOF`.  
   
@@ -1213,10 +1213,10 @@ BOOL IsBOF() const;
   
 ||IsBOF|IsEOF|  
 |------|-----------|-----------|  
-|**MoveFirst**, `MoveLast`|Nonzero|Nonzero|  
-|**Move** 0|No change|No change|  
-|`MovePrev`, **Move** < 0|Nonzero|No change|  
-|`MoveNext`, **Move** > 0|No change|Nonzero|  
+|`MoveFirst`, `MoveLast`|Nonzero|Nonzero|  
+|`Move` 0|No change|No change|  
+|`MovePrev`, `Move` < 0|Nonzero|No change|  
+|`MoveNext`, `Move` > 0|No change|Nonzero|  
   
  For related information, see the topic "BOF, EOF Properties" in DAO Help.  
   
@@ -1251,19 +1251,19 @@ BOOL IsEOF() const;
  Nonzero if the recordset contains no records or if you have scrolled beyond the last record; otherwise 0.  
   
 ### Remarks  
- You can also call `IsEOF` to determine whether the recordset contains any records or is empty. Immediately after you call **Open**, if the recordset contains no records, `IsEOF` returns nonzero. When you open a recordset that has at least one record, the first record is the current record and `IsEOF` returns 0.  
+ You can also call `IsEOF` to determine whether the recordset contains any records or is empty. Immediately after you call `Open`, if the recordset contains no records, `IsEOF` returns nonzero. When you open a recordset that has at least one record, the first record is the current record and `IsEOF` returns 0.  
   
  If the last record is the current record when you call `MoveNext`, `IsEOF` will subsequently return nonzero. If `IsEOF` returns nonzero and you call `MoveNext`, an exception is thrown. If `IsEOF` returns nonzero, the current record is undefined, and any action that requires a current record will result in an exception.  
   
  Effect of specific methods on `IsBOF` and `IsEOF` settings:  
   
--   Calling **Open** internally makes the first record in the recordset the current record by calling **MoveFirst**. Therefore, calling **Open** on an empty set of records causes `IsBOF` and `IsEOF` to return nonzero. (See the following table for the behavior of a failed **MoveFirst** call.)  
+-   Calling `Open` internally makes the first record in the recordset the current record by calling `MoveFirst`. Therefore, calling `Open` on an empty set of records causes `IsBOF` and `IsEOF` to return nonzero. (See the following table for the behavior of a failed `MoveFirst` call.)  
   
 -   All Move operations that successfully locate a record cause both `IsBOF` and `IsEOF` to return 0.  
   
--   An `AddNew` call followed by an **Update** call that successfully inserts a new record will cause `IsBOF` to return 0, but only if `IsEOF` is already nonzero. The state of `IsEOF` will always remain unchanged. As defined by the Microsoft Jet database engine, the current record pointer of an empty recordset is at the end of a file, so any new record is inserted after the current record.  
+-   An `AddNew` call followed by an `Update` call that successfully inserts a new record will cause `IsBOF` to return 0, but only if `IsEOF` is already nonzero. The state of `IsEOF` will always remain unchanged. As defined by the Microsoft Jet database engine, the current record pointer of an empty recordset is at the end of a file, so any new record is inserted after the current record.  
   
--   Any **Delete** call, even if it removes the only remaining record from a recordset, will not change the value of `IsBOF` or `IsEOF`.  
+-   Any `Delete` call, even if it removes the only remaining record from a recordset, will not change the value of `IsBOF` or `IsEOF`.  
   
  This table shows which Move operations are allowed with different combinations of `IsBOF`/ `IsEOF`.  
   
@@ -1280,10 +1280,10 @@ BOOL IsEOF() const;
   
 ||IsBOF|IsEOF|  
 |------|-----------|-----------|  
-|**MoveFirst**, `MoveLast`|Nonzero|Nonzero|  
-|**Move** 0|No change|No change|  
-|`MovePrev`, **Move** < 0|Nonzero|No change|  
-|`MoveNext`, **Move** > 0|No change|Nonzero|  
+|`MoveFirst`, `MoveLast`|Nonzero|Nonzero|  
+|`Move` 0|No change|No change|  
+|`MovePrev`, `Move` < 0|Nonzero|No change|  
+|`MoveNext`, `Move` > 0|No change|Nonzero|  
   
  For related information, see the topic "BOF, EOF Properties" in DAO Help.  
   
@@ -1295,14 +1295,14 @@ BOOL IsFieldDirty(void* pv);
 ```  
   
 ### Parameters  
- `pv`  
+ *pv*  
  A pointer to the field data member whose status you want to check, or **NULL** to determine if any of the fields are dirty.  
   
 ### Return Value  
  Nonzero if the specified field data member is flagged as dirty; otherwise 0.  
   
 ### Remarks  
- The data in all dirty field data members will be transferred to the record on the data source when the current record is updated by a call to the **Update** member function of `CDaoRecordset` (following a call to **Edit** or `AddNew`). With this knowledge, you can take further steps, such as unflagging the field data member to mark the column so it will not be written to the data source.  
+ The data in all dirty field data members will be transferred to the record on the data source when the current record is updated by a call to the `Update` member function of `CDaoRecordset` (following a call to `Edit` or `AddNew`). With this knowledge, you can take further steps, such as unflagging the field data member to mark the column so it will not be written to the data source.  
   
  `IsFieldDirty` is implemented through `DoFieldExchange`.  
   
@@ -1314,7 +1314,7 @@ BOOL IsFieldNull(void* pv);
 ```  
   
 ### Parameters  
- `pv`  
+ *pv*  
  A pointer to the field data member whose status you want to check, or **NULL** to determine if any of the fields are Null.  
   
 ### Return Value  
@@ -1339,14 +1339,14 @@ BOOL IsFieldNullable(void* pv);
 ```  
   
 ### Parameters  
- `pv`  
+ *pv*  
  A pointer to the field data member whose status you want to check, or **NULL** to determine if any of the fields are Null.  
   
 ### Return Value  
  Nonzero if the specified field data member can be made Null; otherwise 0.  
   
 ### Remarks  
- A field that cannot be Null must have a value. If you attempt to set such a field to Null when adding or updating a record, the data source rejects the addition or update, and **Update** will throw an exception. The exception occurs when you call **Update**, not when you call `SetFieldNull`.  
+ A field that cannot be Null must have a value. If you attempt to set such a field to Null when adding or updating a record, the data source rejects the addition or update, and `Update` will throw an exception. The exception occurs when you call `Update`, not when you call `SetFieldNull`.  
   
 ##  <a name="isopen"></a>  CDaoRecordset::IsOpen  
  Call this member function to determine if the recordset is open.  
@@ -1356,7 +1356,7 @@ BOOL IsOpen() const;
 ```  
   
 ### Return Value  
- Nonzero if the recordset object's **Open** or **Requery** member function has previously been called and the recordset has not been closed; otherwise 0.  
+ Nonzero if the recordset object's `Open` or `Requery` member function has previously been called and the recordset has not been closed; otherwise 0.  
   
 ### Remarks  
   
@@ -1366,7 +1366,7 @@ BOOL IsOpen() const;
 ### Remarks  
  The flag defaults to **TRUE**. The setting in this data member controls the entire double-buffering mechanism. If you set the flag to **TRUE**, you can turn off the caching on a field-by-field basis using the DFX mechanism. If you set the flag to **FALSE**, you must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
- Set this data member before calling **Open**. This mechanism is primarily for ease-of-use. Performance may be slower because of the double-buffering of fields as changes are made.  
+ Set this data member before calling `Open`. This mechanism is primarily for ease-of-use. Performance may be slower because of the double-buffering of fields as changes are made.  
   
 ##  <a name="m_nfields"></a>  CDaoRecordset::m_nFields  
  Contains the number of field data members in the recordset class and the number of columns selected by the recordset from the data source.  
@@ -1385,7 +1385,7 @@ BOOL IsOpen() const;
  Contains the number of parameter data members in the recordset class — the number of parameters passed with the recordset's query.  
   
 ### Remarks  
- If your recordset class has any parameter data members, the constructor for the class must initialize `m_nParams` with the correct number. The value of `m_nParams` defaults to 0. If you add parameter data members — which you must do manually — you must also manually add an initialization in the class constructor to reflect the number of parameters (which must be at least as large as the number of '' placeholders in your **m_strFilter** or `m_strSort` string).  
+ If your recordset class has any parameter data members, the constructor for the class must initialize *m_nParams* with the correct number. The value of *m_nParams* defaults to 0. If you add parameter data members — which you must do manually — you must also manually add an initialization in the class constructor to reflect the number of parameters (which must be at least as large as the number of '' placeholders in your *m_strFilter* or *m_strSort* string).  
   
  The framework uses this number when it parameterizes the recordset's query.  
   
@@ -1406,7 +1406,7 @@ BOOL IsOpen() const;
  Contains a pointer to the `CDaoDatabase` object through which the recordset is connected to a data source.  
   
 ### Remarks  
- This variable is set in two ways. Typically, you pass a pointer to an already open `CDaoDatabase` object when you construct the recordset object. If you pass **NULL** instead, **CDaoRecordset** creates a `CDaoDatabase` object for you and opens it. In either case, `CDaoRecordset` stores the pointer in this variable.  
+ This variable is set in two ways. Typically, you pass a pointer to an already open `CDaoDatabase` object when you construct the recordset object. If you pass **NULL** instead, `CDaoRecordset` creates a `CDaoDatabase` object for you and opens it. In either case, `CDaoRecordset` stores the pointer in this variable.  
   
  Normally you will not directly need to use the pointer stored in **m_pDatabase**. If you write your own extensions to `CDaoRecordset`, however, you might need to use the pointer. For example, you might need the pointer if you throw your own `CDaoException`(s).  
   
@@ -1430,36 +1430,36 @@ BOOL IsOpen() const;
   
  You cannot sort table-type recordset objects. To determine the sort order of a table-type recordset, call [SetCurrentIndex](#setcurrentindex).  
   
- The use of `m_strSort` has no effect when opening a recordset using a `CDaoQueryDef` pointer.  
+ The use of *m_strSort* has no effect when opening a recordset using a `CDaoQueryDef` pointer.  
   
  For related information, see the topic "Sort Property" in DAO Help.  
   
 ##  <a name="move"></a>  CDaoRecordset::Move  
- Call this member function to position the recordset `lRows` records from the current record.  
+ Call this member function to position the recordset *lRows* records from the current record.  
   
 ```  
 virtual void Move(long lRows);
 ```  
   
 ### Parameters  
- `lRows`  
+ *lRows*  
  The number of records to move forward or backward. Positive values move forward, toward the end of the recordset. Negative values move backward, toward the beginning.  
   
 ### Remarks  
  You can move forward or backward. `Move( 1 )` is equivalent to `MoveNext`, and `Move( -1 )` is equivalent to `MovePrev`.  
   
 > [!CAUTION]
->  Calling any of the **Move** functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call **Open** or **Requery**, call either `IsBOF` or `IsEOF`.  
+>  Calling any of the `Move` functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call `Open` or `Requery`, call either `IsBOF` or `IsEOF`.  
   
 > [!NOTE]
->  If you have scrolled past the beginning or end of the recordset ( `IsBOF` or `IsEOF` returns nonzero), a call to **Move** throws a `CDaoException`.  
+>  If you have scrolled past the beginning or end of the recordset ( `IsBOF` or `IsEOF` returns nonzero), a call to `Move` throws a `CDaoException`.  
   
 > [!NOTE]
->  If you call any of the **Move** functions while the current record is being updated or added, the updates are lost without warning.  
+>  If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.  
   
- When you call **Move** on a forward-only scrolling snapshot, the `lRows` parameter must be a positive integer and bookmarks are not allowed, so you can move forward only.  
+ When you call `Move` on a forward-only scrolling snapshot, the `lRows` parameter must be a positive integer and bookmarks are not allowed, so you can move forward only.  
   
- To make the first, last, next, or previous record in a recordset the current record, call the **MoveFirst**, `MoveLast`, `MoveNext`, or `MovePrev` member function.  
+ To make the first, last, next, or previous record in a recordset the current record, call the `MoveFirst`, `MoveLast`, `MoveNext`, or `MovePrev` member function.  
   
  For related information, see the topics "Move Method" and "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" in DAO Help.  
   
@@ -1471,23 +1471,23 @@ void MoveFirst();
 ```  
   
 ### Remarks  
- You do not have to call **MoveFirst** immediately after you open the recordset. At that time, the first record (if any) is automatically the current record.  
+ You do not have to call `MoveFirst` immediately after you open the recordset. At that time, the first record (if any) is automatically the current record.  
   
 > [!CAUTION]
->  Calling any of the **Move** functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call **Open** or **Requery**, call either `IsBOF` or `IsEOF`.  
+>  Calling any of the `Move` functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call `Open` or `Requery`, call either `IsBOF` or `IsEOF`.  
   
 > [!NOTE]
->  If you call any of the **Move** functions while the current record is being updated or added, the updates are lost without warning.  
+>  If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.  
   
- Use the **Move** functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
+ Use the `Move` functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
   
  If the recordset refers to a table-type recordset, movement follows the table's current index. You can set the current index by using the Index property of the underlying DAO object. If you do not set the current index, the order of returned records is undefined.  
   
  If you call `MoveLast` on a recordset object based on a SQL query or querydef, the query is forced to completion and the recordset object is fully populated.  
   
- You cannot call the **MoveFirst** or `MovePrev` member function with a forward-only scrolling snapshot.  
+ You cannot call the `MoveFirst` or `MovePrev` member function with a forward-only scrolling snapshot.  
   
- To move the position of the current record in a recordset object a specific number of records forward or backward, call **Move**.  
+ To move the position of the current record in a recordset object a specific number of records forward or backward, call `Move`.  
   
  For related information, see the topics "Move Method" and "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" in DAO Help.  
   
@@ -1501,18 +1501,18 @@ void MoveLast();
 ### Remarks  
   
 > [!CAUTION]
->  Calling any of the **Move** functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call **Open** or **Requery**, call either `IsBOF` or `IsEOF`.  
+>  Calling any of the `Move` functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call `Open` or `Requery`, call either `IsBOF` or `IsEOF`.  
   
 > [!NOTE]
->  If you call any of the **Move** functions while the current record is being updated or added, the updates are lost without warning.  
+>  If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.  
   
- Use the **Move** functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
+ Use the `Move` functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
   
  If the recordset refers to a table-type recordset, movement follows the table's current index. You can set the current index by using the Index property of the underlying DAO object. If you do not set the current index, the order of returned records is undefined.  
   
  If you call `MoveLast` on a recordset object based on a SQL query or querydef, the query is forced to completion and the recordset object is fully populated.  
   
- To move the position of the current record in a recordset object a specific number of records forward or backward, call **Move**.  
+ To move the position of the current record in a recordset object a specific number of records forward or backward, call `Move`.  
   
  For related information, see the topics "Move Method" and "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" in DAO Help.  
   
@@ -1527,16 +1527,16 @@ void MoveNext();
  It is recommended that you call `IsBOF` before you attempt to move to the previous record. A call to `MovePrev` will throw a `CDaoException` if `IsBOF` returns nonzero, indicating either that you have already scrolled before the first record or that no records were selected by the recordset.  
   
 > [!CAUTION]
->  Calling any of the **Move** functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call **Open** or **Requery**, call either `IsBOF` or `IsEOF`.  
+>  Calling any of the `Move` functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call `Open` or `Requery`, call either `IsBOF` or `IsEOF`.  
   
 > [!NOTE]
->  If you call any of the **Move** functions while the current record is being updated or added, the updates are lost without warning.  
+>  If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.  
   
- Use the **Move** functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
+ Use the `Move` functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
   
  If the recordset refers to a table-type recordset, movement follows the table's current index. You can set the current index by using the Index property of the underlying DAO object. If you do not set the current index, the order of returned records is undefined.  
   
- To move the position of the current record in a recordset object a specific number of records forward or backward, call **Move**.  
+ To move the position of the current record in a recordset object a specific number of records forward or backward, call `Move`.  
   
  For related information, see the topics "Move Method" and "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" in DAO Help.  
   
@@ -1551,18 +1551,18 @@ void MovePrev();
  It is recommended that you call `IsBOF` before you attempt to move to the previous record. A call to `MovePrev` will throw a `CDaoException` if `IsBOF` returns nonzero, indicating either that you have already scrolled before the first record or that no records were selected by the recordset.  
   
 > [!CAUTION]
->  Calling any of the **Move** functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call **Open** or **Requery**, call either `IsBOF` or `IsEOF`.  
+>  Calling any of the `Move` functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call `Open` or `Requery`, call either `IsBOF` or `IsEOF`.  
   
 > [!NOTE]
->  If you call any of the **Move** functions while the current record is being updated or added, the updates are lost without warning.  
+>  If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.  
   
- Use the **Move** functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
+ Use the `Move` functions to move from record to record without applying a condition. Use the Find operations to locate records in a dynaset-type or snapshot-type recordset object that satisfy a certain condition. To locate a record in a table-type recordset object, call `Seek`.  
   
  If the recordset refers to a table-type recordset, movement follows the table's current index. You can set the current index by using the Index property of the underlying DAO object. If you do not set the current index, the order of returned records is undefined.  
   
- You cannot call the **MoveFirst** or `MovePrev` member function with a forward-only scrolling snapshot.  
+ You cannot call the `MoveFirst` or `MovePrev` member function with a forward-only scrolling snapshot.  
   
- To move the position of the current record in a recordset object a specific number of records forward or backward, call **Move**.  
+ To move the position of the current record in a recordset object a specific number of records forward or backward, call `Move`.  
   
  For related information, see the topics "Move Method" and "MoveFirst, MoveLast, MoveNext, MovePrevious Methods" in DAO Help.  
   
@@ -1589,7 +1589,7 @@ virtual void Open(
 ```  
   
 ### Parameters  
- `nOpenType`  
+ *nOpenType*  
  One of the following values:  
   
 - **dbOpenDynaset** A dynaset-type recordset with bidirectional scrolling. This is the default.  
@@ -1598,7 +1598,7 @@ virtual void Open(
   
 - **dbOpenSnapshot** A snapshot-type recordset with bidirectional scrolling.  
   
- `lpszSQL`  
+ *lpszSQL*  
  A string pointer containing one of the following:  
   
 -   A **NULL** pointer.  
@@ -1609,7 +1609,7 @@ virtual void Open(
   
 -   A pass-through query.  
   
- `nOptions`  
+ *nOptions*  
  One or more of the options listed below. The default value is 0. Possible values are as follows:  
   
 - **dbAppendOnly** You can only append new records (dynaset-type recordset only). This option means literally that records may only be appended. The MFC ODBC database classes have an append-only option that allows records to be retrieved and appended.  
@@ -1629,7 +1629,7 @@ virtual void Open(
 - **dbConsistent** Only consistent updates are allowed (dynaset-type recordset only).  
   
 > [!NOTE]
->  The constants **dbConsistent** and **dbInconsistent** are mutually exclusive. You can use one or the other, but not both in a given instance of **Open**.  
+>  The constants **dbConsistent** and **dbInconsistent** are mutually exclusive. You can use one or the other, but not both in a given instance of `Open`.  
   
  *pTableDef*  
  A pointer to a [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) object. This version is valid only for table-type recordsets. When using this option, the `CDaoDatabase` pointer used to construct the `CDaoRecordset` is not used; rather, the database in which the tabledef resides is used.  
@@ -1638,30 +1638,30 @@ virtual void Open(
  A pointer to a [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) object. This version is valid only for dynaset-type and snapshot-type recordsets. When using this option, the `CDaoDatabase` pointer used to construct the `CDaoRecordset` is not used; rather, the database in which the querydef resides is used.  
   
 ### Remarks  
- Before calling **Open**, you must construct the recordset object. There are several ways to do this:  
+ Before calling `Open`, you must construct the recordset object. There are several ways to do this:  
   
 -   When you construct the recordset object, pass a pointer to a `CDaoDatabase` object that is already open.  
   
 -   When you construct the recordset object, pass a pointer to a `CDaoDatabase` object that is not open. The recordset opens a `CDaoDatabase` object, but will not close it when the recordset object closes.  
   
--   When you construct the recordset object, pass a **NULL** pointer. The recordset object calls `GetDefaultDBName` to get the name of the Microsoft Access .MDB file to open. The recordset then opens a `CDaoDatabase` object and keeps it open as long as the recordset is open. When you call **Close** on the recordset, the `CDaoDatabase` object is also closed.  
+-   When you construct the recordset object, pass a **NULL** pointer. The recordset object calls `GetDefaultDBName` to get the name of the Microsoft Access .MDB file to open. The recordset then opens a `CDaoDatabase` object and keeps it open as long as the recordset is open. When you call `Close` on the recordset, the `CDaoDatabase` object is also closed.  
   
     > [!NOTE]
     >  When the recordset opens the `CDaoDatabase` object, it opens the data source with nonexclusive access.  
   
- For the version of **Open** that uses the `lpszSQL` parameter, once the recordset is open you can retrieve records in one of several ways. The first option is to have DFX functions in your `DoFieldExchange`. The second option is to use dynamic binding by calling the `GetFieldValue` member function. These options can be implemented separately or in combination. If they are combined, you will have to pass in the SQL statement yourself on the call to **Open**.  
+ For the version of `Open` that uses the *lpszSQL* parameter, once the recordset is open you can retrieve records in one of several ways. The first option is to have DFX functions in your `DoFieldExchange`. The second option is to use dynamic binding by calling the `GetFieldValue` member function. These options can be implemented separately or in combination. If they are combined, you will have to pass in the SQL statement yourself on the call to `Open`.  
   
- When you use the second version of **Open** where you pass in a `CDaoTableDef` object, the resulting columns will be available for you to bind via `DoFieldExchange` and the DFX mechanism, and/or bind dynamically via `GetFieldValue`.  
-  
-> [!NOTE]
->  You can only call **Open** using a `CDaoTableDef` object for table-type recordsets.  
-  
- When you use the third version of **Open** where you pass in a `CDaoQueryDef` object, that query will be executed, and the resulting columns will be available for you to bind via `DoFieldExchange` and the DFX mechanism, and/or bind dynamically via `GetFieldValue`.  
+ When you use the second version of `Open` where you pass in a `CDaoTableDef` object, the resulting columns will be available for you to bind via `DoFieldExchange` and the DFX mechanism, and/or bind dynamically via `GetFieldValue`.  
   
 > [!NOTE]
->  You can only call **Open** using a `CDaoQueryDef` object for dynaset-type and snapshot-type recordsets.  
+>  You can only call `Open` using a `CDaoTableDef` object for table-type recordsets.  
   
- For the first version of **Open** that uses the `lpszSQL` parameter, records are selected based on criteria shown in the following table.  
+ When you use the third version of `Open` where you pass in a `CDaoQueryDef` object, that query will be executed, and the resulting columns will be available for you to bind via `DoFieldExchange` and the DFX mechanism, and/or bind dynamically via `GetFieldValue`.  
+  
+> [!NOTE]
+>  You can only call `Open` using a `CDaoQueryDef` object for dynaset-type and snapshot-type recordsets.  
+  
+ For the first version of `Open` that uses the `lpszSQL` parameter, records are selected based on criteria shown in the following table.  
   
 |Value of the `lpszSQL` parameter|Records selected are determined by|Example|  
 |--------------------------------------|----------------------------------------|-------------|  
@@ -1669,17 +1669,17 @@ virtual void Open(
 |A comma-separated list of one or more tabledefs and/or querydef names.|All columns represented in the `DoFieldExchange`.|`"Customer"`|  
 |**SELECT** column-list **FROM** table-list|The specified columns from the specified tabledef(s) and/or querydef(s).|`"SELECT CustId, CustName`<br /><br /> `FROM Customer"`|  
   
- The usual procedure is to pass **NULL** to **Open**; in that case, **Open** calls `GetDefaultSQL`, an overridable member function that ClassWizard generates when creating a `CDaoRecordset`-derived class. This value gives the tabledef(s) and/or querydef name(s) you specified in ClassWizard. You can instead specify other information in the `lpszSQL` parameter.  
+ The usual procedure is to pass **NULL** to `Open`; in that case, `Open` calls `GetDefaultSQL`, an overridable member function that ClassWizard generates when creating a `CDaoRecordset`-derived class. This value gives the tabledef(s) and/or querydef name(s) you specified in ClassWizard. You can instead specify other information in the *lpszSQL* parameter.  
   
- Whatever you pass, **Open** constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDERBY** clauses appended to the `lpszSQL` string you passed) and then executes the query. You can examine the constructed string by calling `GetSQL` after calling **Open**.  
+ Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDERBY** clauses appended to the *lpszSQL* string you passed) and then executes the query. You can examine the constructed string by calling `GetSQL` after calling `Open`.  
   
  The field data members of your recordset class are bound to the columns of the data selected. If any records are returned, the first record becomes the current record.  
   
- If you want to set options for the recordset, such as a filter or sort, set `m_strSort` or **m_strFilter** after you construct the recordset object but before you call **Open**. If you want to refresh the records in the recordset after the recordset is already open, call **Requery**.  
+ If you want to set options for the recordset, such as a filter or sort, set **m_strSort** or **m_strFilter** after you construct the recordset object but before you call `Open`. If you want to refresh the records in the recordset after the recordset is already open, call `Requery`.  
   
- If you call **Open** on a dynaset-type or snapshot-type recordset, or if the data source refers to a SQL statement or a tabledef that represents an attached table, you cannot use **dbOpenTable** for the type argument; if you do, MFC throws an exception. To determine whether a tabledef object represents an attached table, create a [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) object and call its [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) member function.  
+ If you call `Open` on a dynaset-type or snapshot-type recordset, or if the data source refers to a SQL statement or a tabledef that represents an attached table, you cannot use **dbOpenTable** for the type argument; if you do, MFC throws an exception. To determine whether a tabledef object represents an attached table, create a [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) object and call its [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) member function.  
   
- Use the **dbSeeChanges** flag if you wish to trap changes made by another user or another program on your machine when you are editing or deleting the same record. For example, if two users start editing the same record, the first user to call the **Update** member function succeeds. When **Update** is called by the second user, a `CDaoException` is thrown. Similarly, if the second user tries to call **Delete** to delete the record, and it has already been changed by the first user, a `CDaoException` occurs.  
+ Use the **dbSeeChanges** flag if you wish to trap changes made by another user or another program on your machine when you are editing or deleting the same record. For example, if two users start editing the same record, the first user to call the `Update` member function succeeds. When `Update` is called by the second user, a `CDaoException` is thrown. Similarly, if the second user tries to call `Delete` to delete the record, and it has already been changed by the first user, a `CDaoException` occurs.  
   
  Typically, if the user gets this `CDaoException` while updating, your code should refresh the contents of the fields and retrieve the newly modified values. If the exception occurs in the process of deleting, your code could display the new record data to the user and a message indicating that the data has recently changed. At this point, your code can request a confirmation that the user still wants to delete the record.  
   
@@ -1698,21 +1698,21 @@ virtual void Requery();
 ### Remarks  
  If any records are returned, the first record becomes the current record.  
   
- In order for the recordset to reflect the additions and deletions that you or other users are making to the data source, you must rebuild the recordset by calling **Requery**. If the recordset is a dynaset, it automatically reflects updates that you or other users make to its existing records (but not additions). If the recordset is a snapshot, you must call **Requery** to reflect edits by other users as well as additions and deletions.  
+ In order for the recordset to reflect the additions and deletions that you or other users are making to the data source, you must rebuild the recordset by calling `Requery`. If the recordset is a dynaset, it automatically reflects updates that you or other users make to its existing records (but not additions). If the recordset is a snapshot, you must call `Requery` to reflect edits by other users as well as additions and deletions.  
   
- For either a dynaset or a snapshot, call **Requery** any time you want to rebuild the recordset using parameter values. Set the new filter or sort by setting [m_strFilter](#m_strfilter) and [m_strSort](#m_strsort) before calling **Requery**. Set new parameters by assigning new values to parameter data members before calling **Requery**.  
+ For either a dynaset or a snapshot, call `Requery` any time you want to rebuild the recordset using parameter values. Set the new filter or sort by setting [m_strFilter](#m_strfilter) and [m_strSort](#m_strsort) before calling `Requery`. Set new parameters by assigning new values to parameter data members before calling `Requery`.  
   
- If the attempt to rebuild the recordset fails, the recordset is closed. Before you call **Requery**, you can determine whether the recordset can be requeried by calling the [CanRestart](#canrestart) member function. `CanRestart` does not guarantee that **Requery** will succeed.  
+ If the attempt to rebuild the recordset fails, the recordset is closed. Before you call `Requery`, you can determine whether the recordset can be requeried by calling the [CanRestart](#canrestart) member function. `CanRestart` does not guarantee that `Requery` will succeed.  
   
 > [!CAUTION]
->  Call **Requery** only after you have called **Open**.  
+>  Call `Requery` only after you have called `Open`.  
   
 > [!NOTE]
 >  Calling [Requery](#requery) changes DAO bookmarks.  
   
- You can't call **Requery** on a dynaset-type or snapshot-type recordset if calling `CanRestart` returns 0, nor can you use it on a table-type recordset.  
+ You can't call `Requery` on a dynaset-type or snapshot-type recordset if calling `CanRestart` returns 0, nor can you use it on a table-type recordset.  
   
- If both `IsBOF` and `IsEOF` return nonzero after you call **Requery**, the query didn't return any records and the recordset will contain no data.  
+ If both `IsBOF` and `IsEOF` return nonzero after you call `Requery`, the query didn't return any records and the recordset will contain no data.  
   
  For related information, see the topic "Requery Method" in DAO Help.  
   
@@ -1734,10 +1734,10 @@ BOOL Seek(
 ```  
   
 ### Parameters  
- `lpszComparison`  
+ *lpszComparison*  
  One of the following string expressions: "<", "\<=", "=", ">=", or ">".  
   
- `pKey1`  
+ *pKey1*  
  A pointer to a [COleVariant](../../mfc/reference/colevariant-class.md) whose value corresponds to the first field in the index. Required.  
   
  *pKey2*  
@@ -1763,11 +1763,11 @@ BOOL Seek(
   
  `Seek` enables high-performance index searching on table-type recordsets. You must set the current index by calling `SetCurrentIndex` before calling `Seek`. If the index identifies a nonunique key field or fields, `Seek` locates the first record that satisfies the criteria. If you do not set an index, an exception is thrown.  
   
- Note that if you are not creating a UNICODE recordset, the `COleVariant` objects must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** `lpszSrc`**,** `vtSrc` **)** with `vtSrc` set to `VT_BSTRT`.  
+ Note that if you are not creating a UNICODE recordset, the `COleVariant` objects must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
   
- When you call `Seek`, you pass one or more key values and a comparison operator ("<", "\<=", "=", ">=", or ">"). `Seek` searches through the specified key fields and locates the first record that satisfies the criteria specified by `lpszComparison` and `pKey1`. Once found, `Seek` returns nonzero, and makes that record current. If `Seek` fails to locate a match, `Seek` returns zero, and the current record is undefined. When using DAO directly, you must explicitly check the NoMatch property.  
+ When you call `Seek`, you pass one or more key values and a comparison operator ("<", "\<=", "=", ">=", or ">"). `Seek` searches through the specified key fields and locates the first record that satisfies the criteria specified by *lpszComparison* and *pKey1*. Once found, `Seek` returns nonzero, and makes that record current. If `Seek` fails to locate a match, `Seek` returns zero, and the current record is undefined. When using DAO directly, you must explicitly check the NoMatch property.  
   
- If `lpszComparison` is "=", ">=", or ">", `Seek` starts at the beginning of the index. If `lpszComparison` is "<" or "<=", `Seek` starts at the end of the index and searches backward unless there are duplicate index entries at the end. In this case, `Seek` starts at an arbitrary entry among the duplicate index entries at the end of the index.  
+ If `lpszComparison` is "=", ">=", or ">", `Seek` starts at the beginning of the index. If *lpszComparison* is "<" or "<=", `Seek` starts at the end of the index and searches backward unless there are duplicate index entries at the end. In this case, `Seek` starts at an arbitrary entry among the duplicate index entries at the end of the index.  
   
  There does not have to be a current record when you use `Seek`.  
   
@@ -1811,7 +1811,7 @@ void SetBookmark(COleVariant varBookmark);
 ```  
   
 ### Parameters  
- `varBookmark`  
+ *varBookmark*  
  A [COleVariant](../../mfc/reference/colevariant-class.md) object containing the bookmark value for a specific record.  
   
 ### Remarks  
@@ -1820,7 +1820,7 @@ void SetBookmark(COleVariant varBookmark);
 > [!NOTE]
 >  Calling [Requery](#requery) changes DAO bookmarks.  
   
- Note that if you are not creating a UNICODE recordset, the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** `lpszSrc`**,** `vtSrc` **)** with `vtSrc` set to `VT_BSTRT`.  
+ Note that if you are not creating a UNICODE recordset, the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the `COleVariant` function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
   
  For related information, see the topics "Bookmark Property" and Bookmarkable Property" in DAO Help.  
   
@@ -1832,13 +1832,13 @@ void SetCacheSize(long lSize);
 ```  
   
 ### Parameters  
- `lSize`  
+ *lSize*  
  Specifies the number of records. A typical value is 100. A setting of 0 turns off caching. The setting must be between 5 and 1200 records. The cache may use a considerable amount of memory.  
   
 ### Remarks  
  A cache is a space in local memory that holds the data most recently retrieved from the server in the event that the data will be requested again while the application is running. Data caching improves the performance of an application that retrieves data from a remote server through dynaset-type recordset objects. When data is requested, the Microsoft Jet database engine checks the cache for the requested data first rather than retrieving it from the server, which takes more time. Data that does not come from an ODBC data source is not saved in the cache.  
   
- Any ODBC data source, such as an attached table, can have a local cache. To create the cache, open a recordset object from the remote data source, call the `SetCacheSize` and `SetCacheStart` member functions, and then call the `FillCache` member function or step through the records by using one of the Move operations. The `lSize` parameter of the `SetCacheSize` member function can be based on the number of records your application can work with at one time. For example, if you are using a recordset as the source of the data to be displayed on screen, you could pass the `SetCacheSize` `lSize` parameter as 20 to display 20 records at one time.  
+ Any ODBC data source, such as an attached table, can have a local cache. To create the cache, open a recordset object from the remote data source, call the `SetCacheSize` and `SetCacheStart` member functions, and then call the `FillCache` member function or step through the records by using one of the Move operations. The *lSize* parameter of the `SetCacheSize` member function can be based on the number of records your application can work with at one time. For example, if you are using a recordset as the source of the data to be displayed on screen, you could pass the `SetCacheSize` *lSize* parameter as 20 to display 20 records at one time.  
   
  For related information, see the topic "CacheSize, CacheStart Properties" in DAO Help.  
   
@@ -1850,19 +1850,19 @@ void SetCacheStart(COleVariant varBookmark);
 ```  
   
 ### Parameters  
- `varBookmark`  
+ *varBookmark*  
  A [COleVariant](../../mfc/reference/colevariant-class.md) that specifies the bookmark of the first record in the recordset to be cached.  
   
 ### Remarks  
- You can use the bookmark value of any record for the `varBookmark` parameter of the `SetCacheStart` member function. Make the record you want to start the cache with the current record, establish a bookmark for that record using [SetBookmark](#setbookmark), and pass the bookmark value as the parameter for the `SetCacheStart` member function.  
+ You can use the bookmark value of any record for the *varBookmark* parameter of the `SetCacheStart` member function. Make the record you want to start the cache with the current record, establish a bookmark for that record using [SetBookmark](#setbookmark), and pass the bookmark value as the parameter for the `SetCacheStart` member function.  
   
  The Microsoft Jet database engine requests records within the cache range from the cache, and it requests records outside the cache range from the server.  
   
  Records retrieved from the cache do not reflect changes made concurrently to the source data by other users.  
   
- To force an update of all the cached data, pass the `lSize` parameter of `SetCacheSize` as 0, call `SetCacheSize` again with the size of the cache you originally requested, and then call the `FillCache` member function.  
+ To force an update of all the cached data, pass the *lSize* parameter of `SetCacheSize` as 0, call `SetCacheSize` again with the size of the cache you originally requested, and then call the `FillCache` member function.  
   
- Note that if you are not creating a UNICODE recordset, the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** `lpszSrc`**,** `vtSrc` **)** with `vtSrc` set to `VT_BSTRT`.  
+ Note that if you are not creating a UNICODE recordset, the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the `COleVariant` function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
   
  For related information, see the topic CacheSize, CacheStart Properties" in DAO Help.  
   
@@ -1874,7 +1874,7 @@ void SetCurrentIndex(LPCTSTR lpszIndex);
 ```  
   
 ### Parameters  
- `lpszIndex`  
+ *lpszIndex*  
  A pointer containing the name of the index to be set.  
   
 ### Remarks  
@@ -1896,10 +1896,10 @@ void SetFieldDirty(
 ```  
   
 ### Parameters  
- `pv`  
+ *pv*  
  Contains the address of a field data member in the recordset or **NULL**. If **NULL**, all field data members in the recordset are flagged. (C++ **NULL** is not the same as Null in database terminology, which means "having no value.")  
   
- `bDirty`  
+ *bDirty*  
  **TRUE** if the field data member is to be flagged as "dirty" (changed). Otherwise **FALSE** if the field data member is to be flagged as "clean" (unchanged).  
   
 ### Remarks  
@@ -1936,10 +1936,10 @@ void SetFieldNull(
 ```  
   
 ### Parameters  
- `pv`  
+ *pv*  
  Contains the address of a field data member in the recordset or **NULL**. If **NULL**, all field data members in the recordset are flagged. (C++ **NULL** is not the same as Null in database terminology, which means "having no value.")  
   
- `bNull`  
+ *bNull*  
  Nonzero if the field data member is to be flagged as having no value (Null). Otherwise 0 if the field data member is to be flagged as non-Null.  
   
 ### Remarks  
@@ -1947,7 +1947,7 @@ void SetFieldNull(
   
  When you add a new record to a recordset, all field data members are initially set to a Null value and flagged as "dirty" (changed). When you retrieve a record from a data source, its columns either already have values or are Null. If it is not appropriate to make a field Null, a [CDaoException](../../mfc/reference/cdaoexception-class.md) is thrown.  
   
- If you are using the double-buffering mechanism, for example, if you specifically wish to designate a field of the current record as not having a value, call `SetFieldNull` with `bNull` set to **TRUE** to flag it as Null. If a field was previously marked Null and you now want to give it a value, simply set its new value. You do not have to remove the Null flag with `SetFieldNull`. To determine whether the field is allowed to be Null, call [IsFieldNullable](#isfieldnullable).  
+ If you are using the double-buffering mechanism, for example, if you specifically wish to designate a field of the current record as not having a value, call `SetFieldNull` with *bNull* set to **TRUE** to flag it as Null. If a field was previously marked Null and you now want to give it a value, simply set its new value. You do not have to remove the Null flag with `SetFieldNull`. To determine whether the field is allowed to be Null, call [IsFieldNullable](#isfieldnullable).  
   
  If you are not using the double-buffering mechanism, then changing the value of the field does not automatically set the field as dirty and non-Null. You must specifically set the fields dirty and non-Null. The flag contained in [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) controls this automatic field checking.  
   
@@ -1987,22 +1987,22 @@ void SetFieldValue(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string containing the name of a field.  
   
- `varValue`  
+ *varValue*  
  A reference to a [COleVariant](../../mfc/reference/colevariant-class.md) object containing the value of the field's contents.  
   
- `nIndex`  
+ *nIndex*  
  An integer that represents the ordinal position of the field in the recordset's Fields collection (zero-based).  
   
- `lpszValue`  
+ *lpszValue*  
  A pointer to a string containing the value of the field's contents.  
   
 ### Remarks  
  Use `SetFieldValue` and [GetFieldValue](#getfieldvalue) to dynamically bind fields at run time rather than statically binding columns using the [DoFieldExchange](#dofieldexchange) mechanism.  
   
- Note that if you are not creating a UNICODE recordset, you must either use a form of `SetFieldValue` that does not contain a `COleVariant` parameter, or the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** `lpszSrc`**,** `vtSrc` **)** with `vtSrc` set to `VT_BSTRT`.  
+ Note that if you are not creating a UNICODE recordset, you must either use a form of `SetFieldValue` that does not contain a `COleVariant` parameter, or the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the `COleVariant` function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
   
  For related information, see the topics "Field Object" and "Value Property" in DAO Help.  
   
@@ -2015,10 +2015,10 @@ void SetFieldValueNull(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the field in the recordset, for lookup by zero-based index.  
   
- `lpszName`  
+ *lpszName*  
  The name of the field in the recordset, for lookup by name.  
   
 ### Remarks  
@@ -2038,13 +2038,13 @@ void SetLockingMode(BOOL bPessimistic);
  A flag that indicates the type of locking.  
   
 ### Remarks  
- When pessimistic locking is in effect, the 2K page containing the record you are editing is locked as soon as you call the **Edit** member function. The page is unlocked when you call the **Update** or **Close** member function or any of the Move or Find operations.  
+ When pessimistic locking is in effect, the 2K page containing the record you are editing is locked as soon as you call the `Edit` member function. The page is unlocked when you call the `Update` or `Close` member function or any of the Move or Find operations.  
   
- When optimistic locking is in effect, the 2K page containing the record is locked only while the record is being updated with the **Update** member function.  
+ When optimistic locking is in effect, the 2K page containing the record is locked only while the record is being updated with the `Update` member function.  
   
- If a page is locked, no other user can edit records on the same page. If you call `SetLockingMode` and pass a nonzero value and another user already has the page locked, an exception is thrown when you call **Edit**. Other users can read data from locked pages.  
+ If a page is locked, no other user can edit records on the same page. If you call `SetLockingMode` and pass a nonzero value and another user already has the page locked, an exception is thrown when you call `Edit`. Other users can read data from locked pages.  
   
- If you call `SetLockingMode` with a zero value and later call **Update** while the page is locked by another user, an exception occurs. To see the changes made to your record by another user (and lose your changes), call the `SetBookmark` member function with the bookmark value of the current record.  
+ If you call `SetLockingMode` with a zero value and later call `Update` while the page is locked by another user, an exception occurs. To see the changes made to your record by another user (and lose your changes), call the `SetBookmark` member function with the bookmark value of the current record.  
   
  When working with ODBC data sources, the locking mode is always optimistic.  
   
@@ -2063,19 +2063,19 @@ virtual void SetParamValue(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The numerical position of the parameter in the querydef's Parameters collection.  
   
- `var`  
+ *var*  
  The value to set; see Remarks.  
   
- `lpszName`  
+ *lpszName*  
  The name of the parameter whose value you want to set.  
   
 ### Remarks  
  The parameter must already have been established as part of the recordset's SQL string. You can access the parameter either by name or by its index position in the collection.  
   
- Specify the value to set as a `COleVariant` object. For information about setting the desired value and type in your `COleVariant` object, see class [COleVariant](../../mfc/reference/colevariant-class.md). Note that if you are not creating a UNICODE recordset, the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** `lpszSrc`**,** `vtSrc` **)** with `vtSrc` set to `VT_BSTRT`.  
+ Specify the value to set as a `COleVariant` object. For information about setting the desired value and type in your `COleVariant` object, see class [COleVariant](../../mfc/reference/colevariant-class.md). Note that if you are not creating a UNICODE recordset, the `COleVariant` object must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the `COleVariant` function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
   
 ##  <a name="setparamvaluenull"></a>  CDaoRecordset::SetParamValueNull  
  Call this member function to set the parameter to a Null value.  
@@ -2086,10 +2086,10 @@ void SetParamValueNull(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the field in the recordset, for lookup by zero-based index.  
   
- `lpszName`  
+ *lpszName*  
  The name of the field in the recordset, for lookup by name.  
   
 ### Remarks  
@@ -2117,23 +2117,23 @@ void SetPercentPosition(float fPosition);
  For related information, see the topic "PercentPosition Property" in DAO Help.  
   
 ##  <a name="update"></a>  CDaoRecordset::Update  
- Call this member function after a call to the `AddNew` or **Edit** member function.  
+ Call this member function after a call to the `AddNew` or `Edit` member function.  
   
 ```  
 virtual void Update();
 ```  
   
 ### Remarks  
- This call is required to complete the `AddNew` or **Edit** operation.  
+ This call is required to complete the `AddNew` or `Edit` operation.  
   
- Both `AddNew` and **Edit** prepare an edit buffer in which the added or edited data is placed for saving to the data source. **Update** saves the data. Only those fields marked or detected as changed are updated.  
+ Both `AddNew` and `Edit` prepare an edit buffer in which the added or edited data is placed for saving to the data source. `Update` saves the data. Only those fields marked or detected as changed are updated.  
   
- If the data source supports transactions, you can make the **Update** call (and its corresponding `AddNew` or **Edit** call) part of a transaction.  
+ If the data source supports transactions, you can make the `Update` call (and its corresponding `AddNew` or `Edit` call) part of a transaction.  
   
 > [!CAUTION]
->  If you call **Update** without first calling either `AddNew` or **Edit**, **Update** throws a `CDaoException`. If you call `AddNew` or **Edit**, you must call **Update** before you call [MoveNext](#movenext) or close either the recordset or the data source connection. Otherwise, your changes are lost without notification.  
+>  If you call `Update` without first calling either `AddNew` or `Edit`, `Update` throws a `CDaoException`. If you call `AddNew` or `Edit`, you must call `Update` before you call [MoveNext](#movenext) or close either the recordset or the data source connection. Otherwise, your changes are lost without notification.  
   
- When the recordset object is pessimistically locked in a multiuser environment, the record remains locked from the time **Edit** is used until the updating is complete. If the recordset is optimistically locked, the record is locked and compared with the pre-edited record just before it is updated in the database. If the record has changed since you called **Edit**, the **Update** operation fails and MFC throws an exception. You can change the locking mode with `SetLockingMode`.  
+ When the recordset object is pessimistically locked in a multiuser environment, the record remains locked from the time `Edit` is used until the updating is complete. If the recordset is optimistically locked, the record is locked and compared with the pre-edited record just before it is updated in the database. If the record has changed since you called `Edit`, the `Update` operation fails and MFC throws an exception. You can change the locking mode with `SetLockingMode`.  
   
 > [!NOTE]
 >  Optimistic locking is always used on external database formats, such as ODBC and installable ISAM.  
