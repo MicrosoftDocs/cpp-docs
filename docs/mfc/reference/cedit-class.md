@@ -82,7 +82,7 @@ class CEdit : public CWnd
   
  You can create an edit control either from a dialog template or directly in your code. In both cases, first call the constructor `CEdit` to construct the `CEdit` object, then call the [Create](#create) member function to create the Windows edit control and attach it to the `CEdit` object.  
   
- Construction can be a one-step process in a class derived from `CEdit`. Write a constructor for the derived class and call **Create** from within the constructor.  
+ Construction can be a one-step process in a class derived from `CEdit`. Write a constructor for the derived class and call `Create` from within the constructor.  
   
  `CEdit` inherits significant functionality from `CWnd`. To set and retrieve text from a `CEdit` object, use the `CWnd` member functions [SetWindowText](cwnd-class.md#setwindowtext) and [GetWindowText](cwnd-class.md#getwindowtext), which set or get the entire contents of an edit control, even if it is a multiline control. Text lines in a multiline control are separated by '\r\n' character sequences. Also, if an edit control is multiline, get and set part of the control's text by calling the `CEdit` member functions [GetLine](#getline), [SetSel](#setsel), [GetSel](#getsel), and [ReplaceSel](#replacesel).  
   
@@ -150,7 +150,7 @@ BOOL CanUndo() const;
 ```  
   
 ### Return Value  
- Nonzero if the last edit operation can be undone by a call to the **Undo** member function; 0 if it cannot be undone.  
+ Nonzero if the last edit operation can be undone by a call to the `Undo` member function; 0 if it cannot be undone.  
   
 ### Remarks  
  For more information, see [EM_CANUNDO](http://msdn.microsoft.com/library/windows/desktop/bb775468) in the Windows SDK.  
@@ -179,7 +179,7 @@ int CharFromPos(CPoint pt) const;
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  The coordinates of a point in the client area of this `CEdit` object.  
   
 ### Return Value  
@@ -203,7 +203,7 @@ void Clear();
 ```  
   
 ### Remarks  
- The deletion performed by **Clear** can be undone by calling the [Undo](#undo) member function.  
+ The deletion performed by `Clear` can be undone by calling the [Undo](#undo) member function.  
   
  To delete the current selection and place the deleted contents into the Clipboard, call the [Cut](#cut) member function.  
   
@@ -237,25 +237,25 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the edit control's style. Apply any combination of [edit styles](styles-used-by-mfc.md#edit-styles) to the control.  
   
- `rect`  
+ *rect*  
  Specifies the edit control's size and position. Can be a `CRect` object or `RECT` structure.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the edit control's parent window (usually a `CDialog`). It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the edit control's ID.  
   
 ### Return Value  
  Nonzero if initialization is successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CEdit` object in two steps. First, call the `CEdit` constructor and then call **Create**, which creates the Windows edit control and attaches it to the `CEdit` object.  
+ You construct a `CEdit` object in two steps. First, call the `CEdit` constructor and then call `Create`, which creates the Windows edit control and attaches it to the `CEdit` object.  
   
- When **Create** executes, Windows sends the [WM_NCCREATE](http://msdn.microsoft.com/library/windows/desktop/ms632635), [WM_NCCALCSIZE](http://msdn.microsoft.com/library/windows/desktop/ms632634), [WM_CREATE](http://msdn.microsoft.com/library/windows/desktop/ms632619), and [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) messages to the edit control.  
+ When `Create` executes, Windows sends the [WM_NCCREATE](http://msdn.microsoft.com/library/windows/desktop/ms632635), [WM_NCCALCSIZE](http://msdn.microsoft.com/library/windows/desktop/ms632634), [WM_CREATE](http://msdn.microsoft.com/library/windows/desktop/ms632619), and [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) messages to the edit control.  
   
  These messages are handled by default by the [OnNcCreate](cwnd-class.md#onnccreate), [OnNcCalcSize](cwnd-class.md#onnccalcsize), [OnCreate](cwnd-class.md#oncreate), and [OnGetMinMaxInfo](cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CEdit`, add a message map to the new class, and override the above message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for the new class.  
   
@@ -282,7 +282,7 @@ void Cut();
 ```  
   
 ### Remarks  
- The deletion performed by **Cut** can be undone by calling the [Undo](#undo) member function.  
+ The deletion performed by `Cut` can be undone by calling the [Undo](#undo) member function.  
   
  To delete the current selection without placing the deleted text into the Clipboard, call the [Clear](#clear) member function.  
   
@@ -346,10 +346,10 @@ CString GetCueBanner() const;
 ```  
   
 ### Parameters  
- [out] `lpszText`  
+ [out] *lpszText*  
  A pointer to a string that contains the cue text.  
   
- [in] `cchText`  
+ [in] *cchText*  
  The number of characters that can be received. This number includes the terminating `NULL` character.  
   
 ### Return Value  
@@ -414,8 +414,8 @@ BOOL GetHighlight(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] `pichStart`|Zero-based index of the first character in the range of text that is highlighted.|  
-|[out] `pichEnd`|Zero-based index of the last character in the range of text that is highlighted.|  
+|[out] *pichStart*|Zero-based index of the first character in the range of text that is highlighted.|  
+|[out] *pichEnd*|Zero-based index of the last character in the range of text that is highlighted.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
@@ -445,7 +445,7 @@ UINT GetLimitText() const;
  [!code-cpp[NVC_MFC_CEdit#11](../../mfc/reference/codesnippet/cpp/cedit-class_11.cpp)]  
   
 ##  <a name="getline"></a>  CEdit::GetLine  
- Call this function to retrieve a line of text from an edit control and places it in `lpszBuffer`.  
+ Call this function to retrieve a line of text from an edit control and places it in *lpszBuffer*.  
   
 ```  
 int GetLine(
@@ -459,17 +459,17 @@ int GetLine(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Specifies the line number to retrieve from a multiple-line edit control. Line numbers are zero-based; a value of 0 specifies the first line. This parameter is ignored by a single-line edit control.  
   
- `lpszBuffer`  
+ *lpszBuffer*  
  Points to the buffer that receives a copy of the line. The first word of the buffer must specify the maximum number of characters that can be copied to the buffer.  
   
- `nMaxLength`  
- Specifies the maximum number of bytes that can be copied to the buffer. `GetLine` places this value in the first word of `lpszBuffer` before making the call to Windows.  
+ *nMaxLength*  
+ Specifies the maximum number of bytes that can be copied to the buffer. `GetLine` places this value in the first word of *lpszBuffer* before making the call to Windows.  
   
 ### Return Value  
- The number of bytes actually copied. The return value is 0 if the line number specified by `nIndex` is greater than the number of lines in the edit control.  
+ The number of bytes actually copied. The return value is 0 if the line number specified by *nIndex* is greater than the number of lines in the edit control.  
   
 ### Remarks  
  The copied line does not contain a null-termination character.  
@@ -562,7 +562,7 @@ void GetRect(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to the `RECT` structure that receives the formatting rectangle.  
   
 ### Remarks  
@@ -587,10 +587,10 @@ void GetSel(
 ```  
   
 ### Parameters  
- `nStartChar`  
+ *nStartChar*  
  Reference to an integer that will receive the position of the first character in the current selection.  
   
- `nEndChar`  
+ *nEndChar*  
  Reference to an integer that will receive the position of the first nonselected character past the end of the current selection.  
   
 ### Return Value  
@@ -623,7 +623,7 @@ void LimitText(int nChars = 0);
 ```  
   
 ### Parameters  
- `nChars`  
+ *nChars*  
  Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to **UINT_MAX** bytes. This is the default behavior.  
   
 ### Remarks  
@@ -645,11 +645,11 @@ int LineFromChar(int nIndex = -1) const;
 ```  
   
 ### Parameters  
- `nIndex`  
- Contains the zero-based index value for the desired character in the text of the edit control, or contains -1. If `nIndex` is -1, it specifies the current line, that is, the line that contains the caret.  
+ *nIndex*  
+ Contains the zero-based index value for the desired character in the text of the edit control, or contains -1. If *nIndex* is -1, it specifies the current line, that is, the line that contains the caret.  
   
 ### Return Value  
- The zero-based line number of the line containing the character index specified by `nIndex`. If `nIndex` is -1, the number of the line that contains the first character of the selection is returned. If there is no selection, the current line number is returned.  
+ The zero-based line number of the line containing the character index specified by *nIndex*. If *nIndex* is -1, the number of the line that contains the first character of the selection is returned. If there is no selection, the current line number is returned.  
   
 ### Remarks  
  A character index is the number of characters from the beginning of the edit control.  
@@ -669,11 +669,11 @@ int LineIndex(int nLine = -1) const;
 ```  
   
 ### Parameters  
- `nLine`  
- Contains the index value for the desired line in the text of the edit control, or contains -1. If `nLine` is -1, it specifies the current line, that is, the line that contains the caret.  
+ *nLine*  
+ Contains the index value for the desired line in the text of the edit control, or contains -1. If *nLine* is -1, it specifies the current line, that is, the line that contains the caret.  
   
 ### Return Value  
- The character index of the line specified in `nLine` or -1 if the specified line number is greater than the number of lines in the edit control.  
+ The character index of the line specified in *nLine* or -1 if the specified line number is greater than the number of lines in the edit control.  
   
 ### Remarks  
  The character index is the number of characters from the beginning of the edit control to the specified line.  
@@ -693,17 +693,17 @@ int LineLength(int nLine = -1) const;
 ```  
   
 ### Parameters  
- `nLine`  
+ *nLine*  
  The zero-based index of a character in the line whose length is to be retrieved. The default value is -1.  
   
 ### Return Value  
  For single-line edit controls, the return value is the length, in `TCHAR`s, of the text in the edit control.  
   
- For multiline edit controls, the return value is the length, in `TCHAR`s, of the line specified by the `nLine` parameter. For [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] text, the length is the number of bytes in the line; for Unicode text, the length is the number of characters in the line. The length does not include the carriage-return character at the end of the line.  
+ For multiline edit controls, the return value is the length, in `TCHAR`s, of the line specified by the *nLine* parameter. For [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] text, the length is the number of bytes in the line; for Unicode text, the length is the number of characters in the line. The length does not include the carriage-return character at the end of the line.  
   
- If the `nLine` parameter is more than the number of characters in the control, the return value is zero.  
+ If the *nLine* parameter is more than the number of characters in the control, the return value is zero.  
   
- If the `nLine` parameter is -1, the return value is the number of unselected characters in the lines that contain selected characters. For example, if the selection extends from the fourth character of one line through the eighth character from the end of the next line, the return value is 10. That is, three characters on the first line and seven on the next.  
+ If the *nLine* parameter is -1, the return value is the number of unselected characters in the lines that contain selected characters. For example, if the selection extends from the fourth character of one line through the eighth character from the end of the next line, the return value is 10. That is, three characters on the first line and seven on the next.  
   
  For more information about the `TCHAR` type, see the `TCHAR` row in the table in [Windows Data Types](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
   
@@ -723,16 +723,16 @@ void LineScroll(
 ```  
   
 ### Parameters  
- `nLines`  
+ *nLines*  
  Specifies the number of lines to scroll vertically.  
   
- `nChars`  
+ *nChars*  
  Specifies the number of character positions to scroll horizontally. This value is ignored if the edit control has either the **ES_RIGHT** or **ES_CENTER** style.  
   
 ### Remarks  
  This member function is processed only by multiple-line edit controls.  
   
- The edit control does not scroll vertically past the last line of text in the edit control. If the current line plus the number of lines specified by `nLines` exceeds the total number of lines in the edit control, the value is adjusted so that the last line of the edit control is scrolled to the top of the edit-control window.  
+ The edit control does not scroll vertically past the last line of text in the edit control. If the current line plus the number of lines specified by *nLines* exceeds the total number of lines in the edit control, the value is adjusted so that the last line of the edit control is scrolled to the top of the edit-control window.  
   
  `LineScroll` can be used to scroll horizontally past the last character of any line.  
   
@@ -764,14 +764,14 @@ CPoint PosFromChar(UINT nChar) const;
 ```  
   
 ### Parameters  
- `nChar`  
+ *nChar*  
  The zero-based index of the specified character.  
   
 ### Return Value  
- The coordinates of the top-left corner of the character specified by `nChar`.  
+ The coordinates of the top-left corner of the character specified by *nChar*.  
   
 ### Remarks  
- The character is specified by giving its zero-based index value. If `nChar` is greater than the index of the last character in this `CEdit` object, the return value specifies the coordinates of the character position just past the last character in this `CEdit` object.  
+ The character is specified by giving its zero-based index value. If *nChar* is greater than the index of the last character in this `CEdit` object, the return value specifies the coordinates of the character position just past the last character in this `CEdit` object.  
   
 > [!NOTE]
 >  This member function is available beginning with Windows 95 and Windows NT 4.0.  
@@ -782,17 +782,17 @@ CPoint PosFromChar(UINT nChar) const;
   See the example for [CEdit::LineFromChar](#linefromchar).  
   
 ##  <a name="replacesel"></a>  CEdit::ReplaceSel  
- Call this function to replace the current selection in an edit control with the text specified by `lpszNewText`.  
+ Call this function to replace the current selection in an edit control with the text specified by *lpszNewText*.  
   
 ```  
 void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
 ```  
   
 ### Parameters  
- `lpszNewText`  
+ *lpszNewText*  
  Points to a null-terminated string containing the replacement text.  
   
- `bCanUndo`  
+ *bCanUndo*  
  To specify that this function can be undone, set the value of this parameter to **TRUE** . The default value is **FALSE**.  
   
 ### Remarks  
@@ -818,10 +818,10 @@ BOOL SetCueBanner(
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
  Pointer to a string that contains the cue to display in the edit control.  
   
- [in] `fDrawWhenFocused`  
+ [in] *fDrawWhenFocused*  
  If `false`, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
   
  If `true`, the cue banner is drawn even when the control has focus. The cue banner disappears when the user starts to type in the control.  
@@ -882,8 +882,8 @@ void SetHighlight(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `ichStart`|Zero-based index of the first character in the range of text to highlight.|  
-|[in] `ichEnd`|Zero-based index of the last character in the range of text to highlight.|  
+|[in] *ichStart*|Zero-based index of the first character in the range of text to highlight.|  
+|[in] *ichEnd*|Zero-based index of the last character in the range of text to highlight.|  
   
 ### Remarks  
  This method sends the [EM_SETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761643) message, which is described in the Windows SDK.  
@@ -896,7 +896,7 @@ void SetLimitText(UINT nMax);
 ```  
   
 ### Parameters  
- `nMax`  
+ *nMax*  
  The new text limit, in characters.  
   
 ### Remarks  
@@ -945,7 +945,7 @@ void SetModify(BOOL bModified = TRUE);
 ```  
   
 ### Parameters  
- `bModified`  
+ *bModified*  
  A value of **TRUE** indicates that the text has been modified, and a value of **FALSE** indicates it is unmodified. By default, the modified flag is set.  
   
 ### Remarks  
@@ -989,7 +989,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 ```  
   
 ### Parameters  
- `bReadOnly`  
+ *bReadOnly*  
  Specifies whether to set or remove the read-only state of the edit control. A value of **TRUE** sets the state to read-only; a value of **FALSE** sets the state to read/write.  
   
 ### Return Value  
@@ -1011,7 +1011,7 @@ void SetRect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to the `RECT` structure or `CRect` object that specifies the new dimensions of the formatting rectangle.  
   
 ### Remarks  
@@ -1036,7 +1036,7 @@ void SetRectNP(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object that specifies the new dimensions of the rectangle.  
   
 ### Remarks  
@@ -1077,10 +1077,10 @@ void SetSel(
  *bNoScroll*  
  Indicates whether the caret should be scrolled into view. If **FALSE**, the caret is scrolled into view. If **TRUE**, the caret is not scrolled into view.  
   
- `nStartChar`  
- Specifies the starting position. If `nStartChar` is 0 and `nEndChar` is -1, all the text in the edit control is selected. If `nStartChar` is -1, any current selection is removed.  
+ *nStartChar*  
+ Specifies the starting position. If *nStartChar* is 0 and *nEndChar* is -1, all the text in the edit control is selected. If *nStartChar* is -1, any current selection is removed.  
   
- `nEndChar`  
+ *nEndChar*  
  Specifies the ending position.  
   
 ### Remarks  
@@ -1103,13 +1103,13 @@ BOOL SetTabStops(
 ```  
   
 ### Parameters  
- `cxEachStop`  
- Specifies that tab stops are to be set at every `cxEachStop` dialog units.  
+ *cxEachStop*  
+ Specifies that tab stops are to be set at every *cxEachStop* dialog units.  
   
- `nTabStops`  
- Specifies the number of tab stops contained in `rgTabStops`. This number must be greater than 1.  
+ *nTabStops*  
+ Specifies the number of tab stops contained in *rgTabStops*. This number must be greater than 1.  
   
- `rgTabStops`  
+ *rgTabStops*  
  Points to an array of unsigned integers specifying the tab stops in dialog units. A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit, and 1 vertical dialog unit is equal to one-eighth of the current dialog base height unit. The dialog base units are computed based on the height and width of the current system font. The **GetDialogBaseUnits** Windows function returns the current dialog base units in pixels.  
   
 ### Return Value  
@@ -1118,7 +1118,7 @@ BOOL SetTabStops(
 ### Remarks  
  When text is copied to a multiple-line edit control, any tab character in the text will cause space to be generated up to the next tab stop.  
   
- To set tab stops to the default size of 32 dialog units, call the parameterless version of this member function. To set tab stops to a size other than 32, call the version with the `cxEachStop` parameter. To set tab stops to an array of sizes, use the version with two parameters.  
+ To set tab stops to the default size of 32 dialog units, call the parameterless version of this member function. To set tab stops to a size other than 32, call the version with the *cxEachStop* parameter. To set tab stops to an array of sizes, use the version with two parameters.  
   
  This member function is only processed by multiple-line edit controls.  
   
@@ -1146,10 +1146,10 @@ BOOL ShowBalloonTip(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pEditBalloonTip`|Pointer to an [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure that describes the balloon tip.|  
-|[in] `lpszTitle`|Pointer to a Unicode string that contains the title of the balloon tip.|  
-|[in] `lpszText`|Pointer to a Unicode string that contains the balloon tip text.|  
-|[in] `ttiIcon`|An `INT` that specifies the type of icon to associate with the balloon tip. The default value is `TTI_NONE`. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure.|  
+|[in] *pEditBalloonTip*|Pointer to an [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure that describes the balloon tip.|  
+|[in] *lpszTitle*|Pointer to a Unicode string that contains the title of the balloon tip.|  
+|[in] *lpszText*|Pointer to a Unicode string that contains the balloon tip text.|  
+|[in] *ttiIcon*|An **INT** that specifies the type of icon to associate with the balloon tip. The default value is `TTI_NONE`. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
@@ -1178,7 +1178,7 @@ BOOL Undo();
  For a single-line edit control, the return value is always nonzero. For a multiple-line edit control, the return value is nonzero if the undo operation is successful, or 0 if the undo operation fails.  
   
 ### Remarks  
- An undo operation can also be undone. For example, you can restore deleted text with the first call to **Undo**. As long as there is no intervening edit operation, you can remove the text again with a second call to **Undo**.  
+ An undo operation can also be undone. For example, you can restore deleted text with the first call to `Undo`. As long as there is no intervening edit operation, you can remove the text again with a second call to `Undo`.  
   
  For more information, see [EM_UNDO](http://msdn.microsoft.com/library/windows/desktop/bb761670) in the Windows SDK.  
   

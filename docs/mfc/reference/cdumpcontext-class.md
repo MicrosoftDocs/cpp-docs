@@ -56,7 +56,7 @@ class CDumpContext
   
  The `CDumpContext` class has an overloaded insertion ( **<<**) operator for `CObject` pointers that dumps the object's data. If you need a custom dump format for a derived object, override [CObject::Dump](../../mfc/reference/cobject-class.md#dump). Most Microsoft Foundation classes implement an overridden `Dump` member function.  
   
- Classes that are not derived from `CObject`, such as `CString`, `CTime`, and `CTimeSpan`, have their own overloaded `CDumpContext` insertion operators, as do often-used structures such as **CFileStatus**, `CPoint`, and `CRect`.  
+ Classes that are not derived from `CObject`, such as `CString`, `CTime`, and `CTimeSpan`, have their own overloaded `CDumpContext` insertion operators, as do often-used structures such as `CFileStatus`, `CPoint`, and `CRect`.  
   
  If you use the [IMPLEMENT_DYNAMIC](../../mfc/reference/run-time-object-model-services.md#implement_dynamic) or [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) macro in the implementation of your class, then `CObject::Dump` will print the name of your `CObject`-derived class. Otherwise, it will print `CObject`.  
   
@@ -82,7 +82,7 @@ CDumpContext(CFile* pFile = NULL);
 ```  
   
 ### Parameters  
- `pFile`  
+ *pFile*  
  A pointer to the `CFile` object that is the dump destination.  
   
 ### Remarks  
@@ -157,10 +157,10 @@ void HexDump(
  *pby*  
  A pointer to a buffer containing the bytes to dump.  
   
- `nBytes`  
+ *nBytes*  
  The number of bytes to dump.  
   
- `nWidth`  
+ *nWidth*  
  Maximum number of bytes dumped per line (not the width of the output line).  
   
 ### Remarks  
@@ -200,7 +200,7 @@ CDumpContext& operator<<(HFONT h);
  A `CDumpContext` reference. Using the return value, you can write multiple insertions on a single line of source code.  
   
 ### Remarks  
- The insertion operator is overloaded for `CObject` pointers as well as for most primitive types. A pointer to character results in a dump of string contents; a pointer to `void` results in a hexadecimal dump of the address only. A **LONGLONG** results in a dump of a 64-bit signed integer; A **ULONGLONG** results in a dump of a 64-bit unsigned integer.  
+ The insertion operator is overloaded for `CObject` pointers as well as for most primitive types. A pointer to character results in a dump of string contents; a pointer to **void** results in a hexadecimal dump of the address only. A **LONGLONG** results in a dump of a 64-bit signed integer; A **ULONGLONG** results in a dump of a 64-bit unsigned integer.  
   
  If you use the `IMPLEMENT_DYNAMIC` or `IMPLEMENT_SERIAL` macro in the implementation of your class, then the insertion operator, through `CObject::Dump`, will print the name of your `CObject`-derived class. Otherwise, it will print `CObject`. If you override the `Dump` function of the class, then you can provide a more meaningful output of the object's contents instead of a hexadecimal dump.  
   

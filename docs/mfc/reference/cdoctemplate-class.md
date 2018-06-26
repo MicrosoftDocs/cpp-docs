@@ -56,7 +56,7 @@ class CDocTemplate : public CCmdTarget
 ## Remarks  
  You usually create one or more document templates in the implementation of your application's `InitInstance` function. A document template defines the relationships among three types of classes:  
   
--   A document class, which you derive from **CDocument**.  
+-   A document class, which you derive from `CDocument`.  
   
 -   A view class, which displays data from the document class listed above. You can derive this class from `CView`, `CScrollView`, `CFormView`, or `CEditView`. (You can also use `CEditView` directly.)  
   
@@ -94,7 +94,7 @@ virtual void AddDocument(CDocument* pDoc);
 ```  
   
 ### Parameters  
- `pDoc`  
+ *pDoc*  
  A pointer to the document to be added.  
   
 ### Remarks  
@@ -112,7 +112,7 @@ CDocTemplate (
 ```  
   
 ### Parameters  
- `nIDResource`  
+ *nIDResource*  
  Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.  
   
  The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a place holder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information on the substrings, see [GetDocString](#getdocstring). This string resource is found in the application's resource file. For example:  
@@ -129,13 +129,13 @@ CDocTemplate (
   
  Note that the string begins with a '\n' character; this is because the first substring is not used for MDI applications and so is not included. You can edit this string using the string editor; the entire string appears as a single entry in the String Editor, not as seven separate entries.  
   
- `pDocClass`  
- Points to the `CRuntimeClass` object of the document class. This class is a **CDocument**-derived class you define to represent your documents.  
+ *pDocClass*  
+ Points to the `CRuntimeClass` object of the document class. This class is a `CDocument`-derived class you define to represent your documents.  
   
- `pFrameClass`  
+ *pFrameClass*  
  Points to the `CRuntimeClass` object of the frame window class. This class can be a `CFrameWnd`-derived class, or it can be `CFrameWnd` itself if you want default behavior for your main frame window.  
   
- `pViewClass`  
+ *pViewClass*  
  Points to the `CRuntimeClass` object of the view class. This class is a `CView`-derived class you define to display your documents.  
   
 ### Remarks  
@@ -149,7 +149,7 @@ virtual void CloseAllDocuments(BOOL bEndSession);
 ```  
   
 ### Parameters  
- `bEndSession`  
+ *bEndSession*  
  Not used.  
   
 ### Remarks  
@@ -177,19 +177,19 @@ virtual CFrameWnd* CreateNewFrame(
 ```  
   
 ### Parameters  
- `pDoc`  
+ *pDoc*  
  The document to which the new frame window should refer. Can be **NULL**.  
   
- `pOther`  
+ *pOther*  
  The frame window on which the new frame window is to be based. Can be **NULL**.  
   
 ### Return Value  
  A pointer to the newly created frame window, or **NULL** if an error occurs.  
   
 ### Remarks  
- `CreateNewFrame` uses the `CRuntimeClass` objects passed to the constructor to create a new frame window with a view and document attached. If the `pDoc` parameter is **NULL**, the framework outputs a TRACE message.  
+ `CreateNewFrame` uses the `CRuntimeClass` objects passed to the constructor to create a new frame window with a view and document attached. If the *pDoc* parameter is **NULL**, the framework outputs a TRACE message.  
   
- The `pOther` parameter is used to implement the Window New command. It provides a frame window on which to model the new frame window. The new frame window is usually created invisible. Call this function to create frame windows outside the standard framework implementation of File New and File Open.  
+ The *pOther* parameter is used to implement the Window New command. It provides a frame window on which to model the new frame window. The new frame window is usually created invisible. Call this function to create frame windows outside the standard framework implementation of File New and File Open.  
   
 ##  <a name="createoleframe"></a>  CDocTemplate::CreateOleFrame  
  Creates an OLE frame window.  
@@ -202,20 +202,20 @@ CFrameWnd* CreateOleFrame(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the frame's parent window.  
   
- `pDoc`  
+ *pDoc*  
  A pointer to the document to which the new OLE frame window should refer.  
   
- `bCreateView`  
+ *bCreateView*  
  Determines whether a view is created along with the frame.  
   
 ### Return Value  
  A pointer to a frame window if successful; otherwise **NULL**.  
   
 ### Remarks  
- If `bCreateView` is zero, an empty frame is created.  
+ If *bCreateView* is zero, an empty frame is created.  
   
 ##  <a name="getdocstring"></a>  CDocTemplate::GetDocString  
  Retrieves a string associated with the document type.  
@@ -227,7 +227,7 @@ virtual BOOL GetDocString(
 ```  
   
 ### Parameters  
- `rString`  
+ *rString*  
  A reference to a `CString` object that will contain the string when the function returns.  
   
  *index*  
@@ -271,7 +271,7 @@ virtual POSITION GetFirstDocPosition() const = 0;
  [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) and [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) both override this pure virtual function. Any class you derive from `CDocTemplate` must also override this function.  
   
 ##  <a name="getnextdoc"></a>  CDocTemplate::GetNextDoc  
- Retrieves the list element identified by `rPos`, then sets `rPos` to the **POSITION** value of the next entry in the list.  
+ Retrieves the list element identified by *rPos*, then sets *rPos* to the **POSITION** value of the next entry in the list.  
   
 ```  
 virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;  
@@ -281,11 +281,11 @@ virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
  A pointer to the next document in the list of documents associated with this template.  
   
 ### Parameters  
- `rPos`  
+ *rPos*  
  A reference to a **POSITION** value returned by a previous call to [GetFirstDocPosition](#getfirstdocposition) or `GetNextDoc`.  
   
 ### Remarks  
- If the retrieved element is the last in the list, then the new value of `rPos` is set to **NULL**.  
+ If the retrieved element is the last in the list, then the new value of *rPos* is set to **NULL**.  
   
  You can use `GetNextDoc` in a forward iteration loop if you establish the initial position with a call to [GetFirstDocPosition](#getfirstdocposition).  
   
@@ -302,17 +302,17 @@ virtual void InitialUpdateFrame(
 ```  
   
 ### Parameters  
- `pFrame`  
+ *pFrame*  
  The frame window that needs the initial update.  
   
- `pDoc`  
+ *pDoc*  
  The document to which the frame is associated. Can be **NULL**.  
   
- `bMakeVisible`  
+ *bMakeVisible*  
  Indicates whether the frame should become visible and active.  
   
 ### Remarks  
- Call **IntitialUpdateFrame** after creating a new frame with `CreateNewFrame`. Calling this function causes the views in that frame window to receive their `OnInitialUpdate` calls. Also, if there was not previously an active view, the primary view of the frame window is made active; the primary view is a view with a child ID of **AFX_IDW_PANE_FIRST**. Finally, the frame window is made visible if `bMakeVisible` is non-zero. If `bMakeVisible` is zero, the current focus and visible state of the frame window will remain unchanged.  
+ Call **IntitialUpdateFrame** after creating a new frame with `CreateNewFrame`. Calling this function causes the views in that frame window to receive their `OnInitialUpdate` calls. Also, if there was not previously an active view, the primary view of the frame window is made active; the primary view is a view with a child ID of **AFX_IDW_PANE_FIRST**. Finally, the frame window is made visible if `bMakeVisible` is non-zero. If *bMakeVisible* is zero, the current focus and visible state of the frame window will remain unchanged.  
   
  It is not necessary to call this function when using the framework's implementation of File New and File Open.  
   
@@ -336,11 +336,11 @@ virtual Confidence MatchDocType(
 ```  
   
 ### Parameters  
- `lpszPathName`  
+ *lpszPathName*  
  Pathname of the file whose type is to be determined.  
   
- `rpDocMatch`  
- Pointer to a document that is assigned the matching document, if the file specified by `lpszPathName` is already open.  
+ *rpDocMatch*  
+ Pointer to a document that is assigned the matching document, if the file specified by *lpszPathName* is already open.  
   
 ### Return Value  
  A value from the **Confidence** enumeration, which is defined as follows:  
@@ -360,9 +360,9 @@ enum Confidence
 ### Remarks  
  Use this function to determine the type of document template to use for opening a file. If your application supports multiple file types, for example, you can use this function to determine which of the available document templates is appropriate for a given file by calling `MatchDocType` for each template in turn, and choosing a template according to the confidence value returned.  
   
- If the file specified by `lpszPathName` is already open, this function returns **CDocTemplate::yesAlreadyOpen** and copies the file's **CDocument** object into the object at `rpDocMatch`.  
+ If the file specified by *lpszPathName* is already open, this function returns **CDocTemplate::yesAlreadyOpen** and copies the file's **CDocument** object into the object at *rpDocMatch*.  
   
- If the file is not open but the extension in `lpszPathName` matches the extension specified by **CDocTemplate::filterExt**, this function returns **CDocTemplate::yesAttemptNative** and sets `rpDocMatch` to **NULL**. For more information on **CDocTemplate::filterExt**, see [CDocTemplate::GetDocString](#getdocstring).  
+ If the file is not open but the extension in *lpszPathName* matches the extension specified by **CDocTemplate::filterExt**, this function returns **CDocTemplate::yesAttemptNative** and sets *rpDocMatch* to **NULL**. For more information on **CDocTemplate::filterExt**, see [CDocTemplate::GetDocString](#getdocstring).  
   
  If neither case is true, the function returns **CDocTemplate::yesAttemptForeign**.  
   
@@ -380,27 +380,27 @@ virtual CDocument* OpenDocumentFile(
 ```  
   
 ### Parameters  
- [in] `lpszPathName`  
+ [in] *lpszPathName*  
  Pointer to the path of the file that contains the document to be opened.  
   
- [in] `bAddToMRU`  
+ [in] *bAddToMRU*  
  `TRUE` indicates the document is one of the most recent files; `FALSE` indicates the document is not one of the most recent files.  
   
 ### Return Value  
- A pointer to the document whose file is named by `lpszPathName`; `NULL` if unsuccessful.  
+ A pointer to the document whose file is named by *lpszPathName*; `NULL` if unsuccessful.  
   
 ### Remarks  
- Opens the file whose path is specified by `lpszPathName`. If `lpszPathName` is `NULL`, a new file that contains a document of the type associated with this template is created.  
+ Opens the file whose path is specified by *lpszPathName*. If *lpszPathName* is `NULL`, a new file that contains a document of the type associated with this template is created.  
   
 ##  <a name="removedocument"></a>  CDocTemplate::RemoveDocument  
- Removes the document pointed to by `pDoc` from the list of documents associated with this template.  
+ Removes the document pointed to by *pDoc* from the list of documents associated with this template.  
   
 ```  
 virtual void RemoveDocument(CDocument* pDoc);
 ```  
   
 ### Parameters  
- `pDoc`  
+ *pDoc*  
  Pointer to the document to be removed.  
   
 ### Remarks  
@@ -424,13 +424,13 @@ void SetContainerInfo(UINT nIDOleInPlaceContainer);
 ```  
   
 ### Parameters  
- `nIDOleInPlaceContainer`  
+ *nIDOleInPlaceContainer*  
  The ID of the resources used when an embedded object is activated.  
   
 ### Remarks  
  Call this function to set the resources to be used when an OLE object is in-place activated. These resources may include menus and accelerator tables. This function is usually called in the [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) function of your application.  
   
- The menu associated with `nIDOleInPlaceContainer` contains separators that allow the menu of the activated in-place item to merge with the menu of the container application. For more information about merging server and container menus, see the article [Menus and Resources (OLE)](../../mfc/menus-and-resources-ole.md).  
+ The menu associated with *nIDOleInPlaceContainer* contains separators that allow the menu of the activated in-place item to merge with the menu of the container application. For more information about merging server and container menus, see the article [Menus and Resources (OLE)](../../mfc/menus-and-resources-ole.md).  
   
 ##  <a name="setdefaulttitle"></a>  CDocTemplate::SetDefaultTitle  
  Call this function to load the document's default title and display it in the document's title bar.  
@@ -461,7 +461,7 @@ void SetServerInfo(
  *nIDOleEmbedding*  
  The ID of the resources used when an embedded object is opened in a separate window.  
   
- `nIDOleInPlaceServer`  
+ *nIDOleInPlaceServer*  
  The ID of the resources used when an embedded object is activated in-place.  
   
  *pOleFrameClass*  
@@ -473,7 +473,7 @@ void SetServerInfo(
 ### Remarks  
  Call this member function to identify resources that will be used by the server application when the user requests activation of an embedded object. These resources consist of menus and accelerator tables. This function is usually called in the `InitInstance` of your application.  
   
- The menu associated with `nIDOleInPlaceServer` contains separators that allow the server menu to merge with the menu of the container. For more information about merging server and container menus, see the article [Menus and Resources (OLE)](../../mfc/menus-and-resources-ole.md).  
+ The menu associated with *nIDOleInPlaceServer* contains separators that allow the server menu to merge with the menu of the container. For more information about merging server and container menus, see the article [Menus and Resources (OLE)](../../mfc/menus-and-resources-ole.md).  
   
 ##  <a name="createpreviewframe"></a>  CDocTemplate::CreatePreviewFrame  
  Creates a child frame used for Rich Preview.  
@@ -485,10 +485,10 @@ CFrameWnd* CreatePreviewFrame(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to a parent window (usually provided by the Shell).  
   
- `pDoc`  
+ *pDoc*  
  A pointer to a document object, whose content will be previewed.  
   
 ### Return Value  
@@ -507,13 +507,13 @@ void SetPreviewInfo(
 ```  
   
 ### Parameters  
- `nIDPreviewFrame`  
+ *nIDPreviewFrame*  
  Specifies a resource ID of the preview frame.  
   
- `pPreviewFrameClass`  
+ *pPreviewFrameClass*  
  Specifies a pointer to a runtime class information structure of the preview frame.  
   
- `pPreviewViewClass`  
+ *pPreviewViewClass*  
  Specifies a pointer to a runtime class information structure of the preview view.  
   
 ### Remarks  

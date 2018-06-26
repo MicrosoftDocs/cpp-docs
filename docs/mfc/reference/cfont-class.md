@@ -98,31 +98,31 @@ BOOL CreateFont(
 ```  
   
 ### Parameters  
- `nHeight`  
- Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure in the Windows SDK for a description. The absolute value of `nHeight` must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.  
+ *nHeight*  
+ Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure in the Windows SDK for a description. The absolute value of *nHeight* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.  
   
- `nWidth`  
- Specifies the average width (in logical units) of characters in the font. If `nWidth` is 0, the aspect ratio of the device will be matched against the digitization aspect ratio of the available fonts to find the closest match, which is determined by the absolute value of the difference.  
+ *nWidth*  
+ Specifies the average width (in logical units) of characters in the font. If *nWidth* is 0, the aspect ratio of the device will be matched against the digitization aspect ratio of the available fonts to find the closest match, which is determined by the absolute value of the difference.  
   
- `nEscapement`  
+ *nEscapement*  
  Specifies the angle (in 0.1-degree units) between the escapement vector and the x-axis of the display surface. The escapement vector is the line through the origins of the first and last characters on a line. The angle is measured counterclockwise from the x-axis. See the `lfEscapement` member in the `LOGFONT` structure in the Windows SDK for more information.  
   
- `nOrientation`  
+ *nOrientation*  
  Specifies the angle (in 0.1-degree units) between the baseline of a character and the x-axis. The angle is measured counterclockwise from the x-axis for coordinate systems in which the y-direction is down and clockwise from the x-axis for coordinate systems in which the y-direction is up.  
   
- `nWeight`  
- Specifies the font weight (in inked pixels per 1000). See the `lfWeight` member in the `LOGFONT` structure in the Windows SDK for more information. The described values are approximate; the actual appearance depends on the typeface. Some fonts have only `FW_NORMAL`, `FW_REGULAR`, and `FW_BOLD` weights. If `FW_DONTCARE` is specified, a default weight is used.  
+ *nWeight*  
+ Specifies the font weight (in inked pixels per 1000). See the *lfWeight* member in the `LOGFONT` structure in the Windows SDK for more information. The described values are approximate; the actual appearance depends on the typeface. Some fonts have only `FW_NORMAL`, `FW_REGULAR`, and `FW_BOLD` weights. If `FW_DONTCARE` is specified, a default weight is used.  
   
- `bItalic`  
+ *bItalic*  
  Specifies whether the font is italic.  
   
- `bUnderline`  
+ *bUnderline*  
  Specifies whether the font is underlined.  
   
- `cStrikeOut`  
+ *cStrikeOut*  
  Specifies whether characters in the font are struck out. Specifies a strikeout font if set to a nonzero value.  
   
- `nCharSet`  
+ *nCharSet*  
  Specifies the font's character setSee the `lfCharSet` member in the `LOGFONT` structure in the Windows SDK for a list of values.  
   
  The OEM character set is system-dependent.  
@@ -131,24 +131,24 @@ BOOL CreateFont(
   
  The font mapper does not use the `DEFAULT_CHARSET` value. An application can use this value to allow the name and size of a font to fully describe the logical font. If a font with the specified name does not exist, a font from any character set can be substituted for the specified font. To avoid unexpected results, applications should use the `DEFAULT_CHARSET` value sparingly.  
   
- `nOutPrecision`  
+ *nOutPrecision*  
  Specifies the desired output precision. The output precision defines how closely the output must match the requested font's height, width, character orientation, escapement, and pitch. See the `lfOutPrecision` member in the `LOGFONT` structure in the Windows SDK for a list of values and more information.  
   
- `nClipPrecision`  
+ *nClipPrecision*  
  Specifies the desired clipping precision. The clipping precision defines how to clip characters that are partially outside the clipping region. See the `lfClipPrecision` member in the `LOGFONT` structure in the Windows SDK for a list of values.  
   
  To use an embedded read-only font, an application must specify `CLIP_ENCAPSULATE`.  
   
- To achieve consistent rotation of device, TrueType, and vector fonts, an application can use the OR operator to combine the `CLIP_LH_ANGLES` value with any of the other `nClipPrecision` values. If the `CLIP_LH_ANGLES` bit is set, the rotation for all fonts depends on whether the orientation of the coordinate system is left-handed or right-handed. (For more information about the orientation of coordinate systems, see the description of the `nOrientation` parameter.) If `CLIP_LH_ANGLES` is not set, device fonts always rotate counterclockwise, but the rotation of other fonts is dependent on the orientation of the coordinate system.  
+ To achieve consistent rotation of device, TrueType, and vector fonts, an application can use the OR operator to combine the `CLIP_LH_ANGLES` value with any of the other *nClipPrecision* values. If the `CLIP_LH_ANGLES` bit is set, the rotation for all fonts depends on whether the orientation of the coordinate system is left-handed or right-handed. (For more information about the orientation of coordinate systems, see the description of the *nOrientation* parameter.) If `CLIP_LH_ANGLES` is not set, device fonts always rotate counterclockwise, but the rotation of other fonts is dependent on the orientation of the coordinate system.  
   
- `nQuality`  
+ *nQuality*  
  Specifies the font's output quality, which defines how carefully the GDI must attempt to match the logical-font attributes to those of an actual physical font. See the `lfQuality` member in the `LOGFONT` structure in the Windows SDK for a list of values.  
   
- `nPitchAndFamily`  
+ *nPitchAndFamily*  
  Specifies the pitch and family of the font. See the `lfPitchAndFamily` member in the `LOGFONT` structure in the Windows SDK for a list of values and more information.  
   
- `lpszFacename`  
- A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) function can be used to enumerate all currently available fonts. If `lpszFacename` is `NULL`, the GDI uses a device-independent typeface.  
+ *lpszFacename*  
+ A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) function can be used to enumerate all currently available fonts. If *lpszFacename* is `NULL`, the GDI uses a device-independent typeface.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -158,7 +158,7 @@ BOOL CreateFont(
   
  The `CreateFont` function does not create a new Windows GDI font. It merely selects the closest match from the physical fonts available to the GDI.  
   
- Applications can use the default settings for most parameters when creating a logical font. The parameters that should always be given specific values are `nHeight` and `lpszFacename`. If `nHeight` and `lpszFacename` are not set by the application, the logical font that is created is device-dependent.  
+ Applications can use the default settings for most parameters when creating a logical font. The parameters that should always be given specific values are *nHeight* and *lpszFacename*. If *nHeight* and *lpszFacename* are not set by the application, the logical font that is created is device-dependent.  
   
  When you finish with the `CFont` object created by the `CreateFont` function, use `CDC::SelectObject` to select a different font into the device context, then delete the `CFont` object that is no longer needed.  
   
@@ -173,7 +173,7 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 ```  
   
 ### Parameters  
- `lpLogFont`  
+ *lpLogFont*  
  Points to a `LOGFONT` structure that defines the characteristics of the logical font.  
   
 ### Return Value  
@@ -200,20 +200,20 @@ BOOL CreatePointFont(
 ```  
   
 ### Parameters  
- `nPointSize`  
+ *nPointSize*  
  Requested font height in tenths of a point. (For instance, pass 120 to request a 12-point font.)  
   
- `lpszFaceName`  
- A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows **EnumFontFamilies** function can be used to enumerate all currently available fonts. If `lpszFaceName` is **NULL**, the GDI uses a device-independent typeface.  
+ *lpszFaceName*  
+ A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows **EnumFontFamilies** function can be used to enumerate all currently available fonts. If *lpszFaceName* is **NULL**, the GDI uses a device-independent typeface.  
   
- `pDC`  
- Pointer to the [CDC](../../mfc/reference/cdc-class.md) object to be used to convert the height in `nPointSize` to logical units. If **NULL**, a screen device context is used for the conversion.  
+ *pDC*  
+ Pointer to the [CDC](../../mfc/reference/cdc-class.md) object to be used to convert the height in *nPointSize* to logical units. If **NULL**, a screen device context is used for the conversion.  
   
 ### Return Value  
  Nonzero if successful, otherwise 0.  
   
 ### Remarks  
- It automatically converts the height in `nPointSize` to logical units using the `CDC` object pointed to by `pDC`.  
+ It automatically converts the height in *nPointSize* to logical units using the `CDC` object pointed to by *pDC*.  
   
  When you finish with the `CFont` object created by the `CreatePointFont` function, first select the font out of the device context, then delete the `CFont` object.  
   
@@ -230,17 +230,17 @@ BOOL CreatePointFontIndirect(
 ```  
   
 ### Parameters  
- `lpLogFont`  
+ *lpLogFont*  
  Points to a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure that defines the characteristics of the logical font. The **lfHeight** member of the `LOGFONT` structure is measured in tenths of a point rather than logical units. (For instance, set **lfHeight** to 120 to request a 12-point font.)  
   
- `pDC`  
+ *pDC*  
  Pointer to the [CDC](../../mfc/reference/cdc-class.md) object to be used to convert the height in **lfHeight** to logical units. If **NULL**, a screen device context is used for the conversion.  
   
 ### Return Value  
  Nonzero if successful, otherwise 0.  
   
 ### Remarks  
- This function automatically converts the height in **lfHeight** to logical units using the `CDC` object pointed to by `pDC` before passing the `LOGFONT` structure on to Windows.  
+ This function automatically converts the height in **lfHeight** to logical units using the `CDC` object pointed to by *pDC* before passing the `LOGFONT` structure on to Windows.  
   
  When you finish with the `CFont` object created by the `CreatePointFontIndirect` function, first select the font out of the device context, then delete the `CFont` object.  
   
@@ -255,7 +255,7 @@ static CFont* PASCAL FromHandle(HFONT hFont);
 ```  
   
 ### Parameters  
- `hFont`  
+ *hFont*  
  An **HFONT** handle to a Windows font.  
   
 ### Return Value  

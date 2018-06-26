@@ -58,7 +58,7 @@ class CFindReplaceDialog : public CCommonDialog
   
  Once a `CFindReplaceDialog` object has been constructed, you must call the [Create](#create) member function to create and display the dialog box.  
   
- Use the [m_fr](#m_fr) structure to initialize the dialog box before calling **Create**. The `m_fr` structure is of type [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). For more information on this structure, see the Windows SDK.  
+ Use the [m_fr](#m_fr) structure to initialize the dialog box before calling `Create`. The `m_fr` structure is of type [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). For more information on this structure, see the Windows SDK.  
   
  In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) function and use the [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) message-map macro in your frame window that handles this registered message.  
   
@@ -96,9 +96,9 @@ CFindReplaceDialog();
 ```  
   
 ### Remarks  
- Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the `new` operator.  
+ Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the **new** operator.  
   
- During destruction, the framework tries to perform a `delete this` on the pointer to the dialog box. If you created the dialog box on the stack, the `this` pointer does not exist and undefined behavior may result.  
+ During destruction, the framework tries to perform a **delete this** on the pointer to the dialog box. If you created the dialog box on the stack, the **this** pointer does not exist and undefined behavior may result.  
   
  For more information on the construction of `CFindReplaceDialog` objects, see the [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) overview. Use the [CFindReplaceDialog::Create](#create) member function to display the dialog box.  
   
@@ -118,19 +118,19 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `bFindDialogOnly`  
+ *bFindDialogOnly*  
  Set this parameter to `TRUE` to display a **Find** dialog box. Set it to `FALSE` to display a **Find/Replace** dialog box.  
   
- `lpszFindWhat`  
+ *lpszFindWhat*  
  Pointer to the default search string when the dialog box appears. If `NULL`, the dialog box does not contain a default search string.  
   
- `lpszReplaceWith`  
+ *lpszReplaceWith*  
  Pointer to the default replacement string when the dialog box appears. If `NULL`, the dialog box does not contain a default replacement string.  
   
- `dwFlags`  
+ *dwFlags*  
  One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. The default value is `FR_DOWN`, which specifies that the search is to proceed in a downward direction. See the [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835) structure in the Windows SDK for more information on these flags.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box's parent or owner window. This is the window that will receive the special message indicating that a find/replace action is requested. If `NULL`, the main window of the application is used.  
   
 ### Return Value  
@@ -181,7 +181,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 ```  
   
 ### Parameters  
- `lParam`  
+ *lParam*  
  The **lparam** value passed to the frame window's **OnFindReplace** member function.  
   
 ### Return Value  

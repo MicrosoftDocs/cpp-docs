@@ -38,7 +38,7 @@ class CFieldExchange
 > [!NOTE]
 >  If you are working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [CDaoFieldExchange](../../mfc/reference/cdaofieldexchange-class.md) instead. For more information, see the article [Overview:Database Programming](../../data/data-access-programming-mfc-atl.md).  
   
- A `CFieldExchange` object provides the context information needed for record field exchange or bulk record field exchange to take place. `CFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. RFX and Bulk RFX operations are performed on recordset-class data members of types defined by the `enum`**FieldType** in `CFieldExchange`. Possible **FieldType** values are:  
+ A `CFieldExchange` object provides the context information needed for record field exchange or bulk record field exchange to take place. `CFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. RFX and Bulk RFX operations are performed on recordset-class data members of types defined by the **enum** **FieldType** in `CFieldExchange`. Possible **FieldType** values are:  
   
 - **CFieldExchange::outputColumn** for field data members.  
   
@@ -81,7 +81,7 @@ void SetFieldType(UINT nFieldType);
 ```  
   
 ### Parameters  
- `nFieldType`  
+ *nFieldType*  
  A value of the **enum FieldType**, declared in `CFieldExchange`, which can be one of the following:  
   
 - **CFieldExchange::outputColumn**  
@@ -106,7 +106,7 @@ void SetFieldType(UINT nFieldType);
 |**CFieldExchange::outputParam**|Output parameter. A return value of the recordset's stored procedure.|  
 |**CFieldExchange::inoutParam**|Input/output parameter. A value that is passed into and returned from the recordset's stored procedure.|  
   
- In general, each group of RFX function calls associated with field data members or parameter data members must be preceded by a call to `SetFieldType`. The `nFieldType` parameter of each `SetFieldType` call identifies the type of the data members represented by the RFX function calls that follow the `SetFieldType` call.  
+ In general, each group of RFX function calls associated with field data members or parameter data members must be preceded by a call to `SetFieldType`. The *nFieldType* parameter of each `SetFieldType` call identifies the type of the data members represented by the RFX function calls that follow the `SetFieldType` call.  
   
  For more information about handling output and input/output parameters, see the `CRecordset` member function [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset). For more information about the RFX and Bulk RFX functions, see the topic [Record Field Exchange Functions](../../mfc/reference/record-field-exchange-functions.md). For related information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
