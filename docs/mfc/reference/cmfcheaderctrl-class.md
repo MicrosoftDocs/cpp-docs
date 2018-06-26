@@ -102,7 +102,7 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable multiple column sort mode; `FALSE` to disable multiple column sort mode and to remove any columns from the list of sorted columns. The default value is `TRUE`.  
   
 ### Remarks  
@@ -116,7 +116,7 @@ int GetColumnState(int iColumn) const;
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The zero-based index of a column.  
   
 ### Return Value  
@@ -192,19 +192,19 @@ virtual void OnDrawItem(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `iItem`  
+ [in] *iItem*  
  The zero-based index of the item to draw.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the item to draw.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  `TRUE` to draw the item in pressed state; otherwise, `FALSE`.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  `TRUE` to draw the item in highlighted state; otherwise, `FALSE`.  
   
 ##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
@@ -217,10 +217,10 @@ virtual void OnDrawSortArrow(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectArrow`  
+ [in] *rectArrow*  
  The bounding rectangle of the sort arrow.  
   
 ##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
@@ -231,7 +231,7 @@ virtual void OnFillBackground(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -244,7 +244,7 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The zero-based index of the column to remove.  
   
 ##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
@@ -258,14 +258,14 @@ void SetSortColumn(
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The zero-based index of a header control column. If this parameter is less than zero, this method removes all columns from the list of sort columns.  
   
- [in] `bAscending`  
- Specifies the sort order of the column that the `iColumn` parameter specifies. `TRUE` to set ascending order; `FALSE` to set descending order. The default value is `TRUE`.  
+ [in] *bAscending*  
+ Specifies the sort order of the column that the *iColumn* parameter specifies. `TRUE` to set ascending order; `FALSE` to set descending order. The default value is `TRUE`.  
   
- [in] `bAdd`  
- `TRUE` to set the sort order of the column that the `iColumn` parameter specifies.  
+ [in] *bAdd*  
+ `TRUE` to set the sort order of the column that the *iColumn* parameter specifies.  
   
  If the current header control is in *multiple column sort* mode, this method adds the specified column to the list of sort columns. Use [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) to set multiple column sort mode.  
   

@@ -41,7 +41,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 ```  
   
 ### Parameters  
- [in] `bClearInternalRects`  
+ [in] *bClearInternalRects*  
   
 ### Remarks  
   
@@ -53,7 +53,7 @@ void Init(CWnd* pDraggedWnd);
 ```  
   
 ### Parameters  
- [in] `pDraggedWnd`  
+ [in] *pDraggedWnd*  
   
 ### Remarks  
   
@@ -65,7 +65,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 ```  
   
 ### Parameters  
- [in] `bForceMove`  
+ [in] *bForceMove*  
   
 ### Remarks  
   
@@ -81,9 +81,9 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 ```  
   
 ### Parameters  
- [in] `pTabbedBar`  
- [in] `bFirstTime`  
- [in] `pCBarToPlaceOn`  
+ [in] *pTabbedBar*  
+ [in] *bFirstTime*  
+ [in] *pCBarToPlaceOn*  
   
 ### Remarks  
   
@@ -95,7 +95,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 ```  
   
 ### Parameters  
- [in] `pOldTargetBar`  
+ [in] *pOldTargetBar*  
   
 ### Remarks  
   

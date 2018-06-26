@@ -72,10 +72,10 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A rectangle that bounds the link control.  
   
 ### Remarks  
@@ -89,7 +89,7 @@ void SetURL(LPCTSTR lpszURL);
 ```  
   
 ### Parameters  
- [in] `lpszURL`  
+ [in] *lpszURL*  
  The button text to display.  
   
 ### Remarks  
@@ -102,7 +102,7 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ```  
   
 ### Parameters  
- [in] `lpszPrefix`  
+ [in] *lpszPrefix*  
  The prefix of the URL protocol.  
   
 ### Remarks  
@@ -118,10 +118,10 @@ virtual CSize SizeToContent(
 ```  
   
 ### Parameters  
- [in] `bVCenter`  
+ [in] *bVCenter*  
  `TRUE` to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, `FALSE`. The default value is `FALSE`.  
   
- [in] `bHCenter`  
+ [in] *bHCenter*  
  `TRUE` to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, `FALSE`. The default value is `FALSE`.  
   
 ### Return Value  

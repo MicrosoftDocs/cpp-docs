@@ -73,14 +73,14 @@ CMFCImageEditorDialog(
 ```  
   
 ### Parameters  
- `pBitmap`  
+ *pBitmap*  
  Pointer to an image.  
   
- `pParent`  
+ *pParent*  
  Pointer to the parent window of the current image editor dialog box.  
   
- `nBitsPixel`  
- The number of bits used to represent the color of a single pixel, which is also referred to as color depth.  If the `nBitsPixel` parameter is -1, the color depth is derived from the image specified by the `pBitmap` parameter. The default value is -1.  
+ *nBitsPixel*  
+ The number of bits used to represent the color of a single pixel, which is also referred to as color depth.  If the *nBitsPixel* parameter is -1, the color depth is derived from the image specified by the *pBitmap* parameter. The default value is -1.  
   
 ### Return Value  
  To modify an image, pass an image pointer to the `CMFCImageEditorDialog` constructor. Then call the `DoModal` method to open a modal dialog box. When the `DoModal` method returns, the bitmap contains the new image.  

@@ -68,7 +68,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
     CMFCOutlookBarPane m_wndOutlookPane;  
  ... };  
  ```  
-2.  When processing the `WM_CREATE` message in the main frame, call the [CMFCOutlookBar::Create](#create) method to create the Outlook bar tab control.  
+2.  When processing the WM_CREATE message in the main frame, call the [CMFCOutlookBar::Create](#create) method to create the Outlook bar tab control.  
   
  ```  
     m_wndOutlookBar.Create (_T("Shortcuts"),
@@ -104,7 +104,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
     ID_FILE_OPEN);
 
  ```  
-5.  Call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add each new tab. Set the `bDetachable` parameter to `FALSE` to make a page non-detachable. Or, use [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) to add detachable pages.  
+5.  Call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add each new tab. Set the *bDetachable* parameter to `FALSE` to make a page non-detachable. Or, use [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) to add detachable pages.  
   
  ```  
     pOutlookBar->AddTab (&m_wndOutlookPane, "General", (UINT) -1,
@@ -164,7 +164,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to another pane that is being docked to this pane.  
   
 ### Return Value  
@@ -173,7 +173,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ### Remarks  
  If the Outlook bar is in Outlook 2003 mode, docking is not supported, so the return value is `FALSE`.  
   
- If the `pBar` parameter is `NULL`, this method returns `FALSE`.  
+ If the *pBar* parameter is `NULL`, this method returns `FALSE`.  
   
  Otherwise, this method behaves as the base method [CBasePane::CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane), except that even if docking is not enabled, an Outlook bar can still enable another Outlook bar to be docked over it.  
   
@@ -207,25 +207,25 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `lpszCaption`  
+ [in] *lpszCaption*  
  Specifies the window caption.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Specifies a pointer to a parent window. It must not be NULL.  
   
- [in] `rect`  
+ [in] *rect*  
  Specifies the outlook bar size and position in pixels.  
   
- [in] `nID`  
+ [in] *nID*  
  Specifies the control ID. Must be distinct from other control IDs used in the application.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Specifies the special library-defined styles.  
   
- [in] `pContext`  
+ [in] *pContext*  
  Create context.  
   
 ### Return Value  
@@ -234,7 +234,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CMFCOutlookBar` object in two steps. First call the constructor, and then call `Create`, which creates the outlook bar control and attaches it to the `CMFCOutlookBar` object.  
   
- See [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) for the list of the available library-defined styles to be specified by `dwControlBarStyle`.  
+ See [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) for the list of the available library-defined styles to be specified by *dwControlBarStyle*.  
   
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CMFCOutlookBar` class. This code snippet is part of the [Outlook Multi Views sample](../../visual-cpp-samples.md).  
@@ -254,16 +254,16 @@ CMFCOutlookBarPane* CreateCustomPage(
 ```  
   
 ### Parameters  
- [in] `lpszPageName`  
+ [in] *lpszPageName*  
  The page label.  
   
- [in] `bActivatePage`  
+ [in] *bActivatePage*  
  If `TRUE`, the page becomes active upon creation.  
   
- [in] `dwEnabledDocking`  
+ [in] *dwEnabledDocking*  
  A combination of CBRS_ALIGN_ flags that specifies the enabled docking sides when the page is detached.  
   
- [in] `bEnableTextLabels`  
+ [in] *bEnableTextLabels*  
  If `TRUE`, the text labels are enabled for the buttons that reside on the page.  
   
 ### Return Value  
@@ -304,16 +304,16 @@ virtual BOOL FloatTab(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the pane to float.  
   
- [in] `nTabID`  
+ [in] *nTabID*  
  The zero-based index of the tab to float.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Specifies the method to use to make the pane float.  For more information, see [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).  
   
- [in] `bHide`  
+ [in] *bHide*  
  `TRUE` to hide the pane before floating; otherwise, `FALSE`. Unlike the base class version of this method, this parameter does not have a default value.  
   
 ### Return Value  
@@ -345,10 +345,10 @@ virtual void GetTabArea(
 ```  
   
 ### Parameters  
- [out] `rectTabAreaTop`  
+ [out] *rectTabAreaTop*  
  Contains the size and position (in the client coordinates) of the top tab area when the function returns.  
   
- [out] `rectTabAreaBottom`  
+ [out] *rectTabAreaBottom*  
  Contains the size and position (in the client coordinates) of the bottom tab area when the function returns.  
   
 ### Remarks  
@@ -379,7 +379,7 @@ virtual void OnAfterAnimation(int nPage);
 ```  
   
 ### Parameters  
- [in] `nPage`  
+ [in] *nPage*  
  The zero-based index of the tab page that has been made active.  
   
 ### Remarks  
@@ -393,7 +393,7 @@ virtual BOOL OnBeforeAnimation(int nPage);
 ```  
   
 ### Parameters  
- [in] `nPage`  
+ [in] *nPage*  
  The zero-based index of the tab page that is about to be set active.  
   
 ### Return Value  
@@ -409,7 +409,7 @@ virtual void OnScroll(BOOL bDown);
 ```  
   
 ### Parameters  
- [in] `bDown`  
+ [in] *bDown*  
  `TRUE` if the Outlook bar is scrolling down, or `FALSE` if it is scrolling up.  
   
 ### Remarks  
@@ -424,10 +424,10 @@ BOOL RemoveCustomPage(
 ```  
   
 ### Parameters  
- [in] `uiPage`  
+ [in] *uiPage*  
  Zero-based index of the page in the parent Outlook window.  
   
- [in] `pTargetWnd`  
+ [in] *pTargetWnd*  
  Pointerto the parent Outlook window.  
   
 ### Return Value  
@@ -450,10 +450,10 @@ void SetButtonsFont(
 ```  
   
 ### Parameters  
- [in] `pFont`  
+ [in] *pFont*  
  Specifies the new font.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  If `TRUE`, the Outlook bar will be redrawn.  
   
 ### Remarks  
@@ -467,7 +467,7 @@ void SetMode2003(BOOL bMode2003=TRUE);
 ```  
   
 ### Parameters  
- [in] `bMode2003`  
+ [in] *bMode2003*  
  If TRUE, Office 2003 mode is enabled.  
   
 ### Remarks  
