@@ -61,10 +61,10 @@ void AddCommand(
 ```  
   
 ### Parameters  
- `[in] uiCmd`  
+ *[in] uiCmd*  
  Specifies command ID.  
   
- `[in] bIsVisible`  
+ *[in] bIsVisible*  
  Sets the visibility of the command when the Quick Access Toolbar is in the default state.  
   
 ### Remarks  
@@ -78,7 +78,7 @@ void CopyFrom(const CMFCRibbonQuickAccessToolBarDefaultState& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  A reference to the source `CMFCRibbonQuickAccessToolBarDefaultState` object to copy from.  
   
 ### Remarks  
