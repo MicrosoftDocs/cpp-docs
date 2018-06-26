@@ -82,7 +82,7 @@ void Attach(ID2D1SolidColorBrush* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dsolidcolorbrush"></a>  CD2DSolidColorBrush::CD2DSolidColorBrush  
@@ -105,19 +105,19 @@ CD2DSolidColorBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `color`  
+ *color*  
  The red, green, blue, and alpha values of the brush's color.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
- `nAlpha`  
+ *nAlpha*  
  The opacity of the brush's color.  
   
 ##  <a name="create"></a>  CD2DSolidColorBrush::Create  
@@ -128,7 +128,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -203,7 +203,7 @@ void SetColor(D2D1_COLOR_F color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  The color of this solid color brush  
   
 ## See Also  

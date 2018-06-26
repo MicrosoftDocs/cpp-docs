@@ -48,7 +48,7 @@ class CDaoFieldExchange
 > [!NOTE]
 >  DAO record field exchange (DFX) is very similar to record field exchange (RFX) in the ODBC-based MFC database classes ( `CDatabase`, `CRecordset`). If you understand RFX, you will find it easy to use DFX.  
   
- A `CDaoFieldExchange` object provides the context information needed for DAO record field exchange to take place. `CDaoFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. DFX operations are performed on recordset-class data members of types defined by the `enum`**FieldType** in `CDaoFieldExchange`. Possible **FieldType** values are:  
+ A `CDaoFieldExchange` object provides the context information needed for DAO record field exchange to take place. `CDaoFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. DFX operations are performed on recordset-class data members of types defined by the **enum** **FieldType** in `CDaoFieldExchange`. Possible **FieldType** values are:  
   
 - **CDaoFieldExchange::outputColumn** for field data members.  
   
@@ -99,7 +99,7 @@ BOOL IsValidOperation();
 |**StoreField**|Saves the current record to the cache.|  
 |**LoadField**|Restores the cached data member variables in the recordset.|  
 |**FreeCache**|Frees the cache used to check for "dirty" fields in the recordset.|  
-|`SetFieldNull`|Sets a field's status to Null and value to **PSEUDONULL**.|  
+|**SetFieldNull**|Sets a field's status to Null and value to **PSEUDONULL**.|  
 |**MarkForAddNew**|Marks fields "dirty" if not **PSEUDONULL**.|  
 |**MarkForEdit**|Marks fields "dirty" if they do not match the cache.|  
 |**SetDirtyField**|Sets field values marked as "dirty."|  
@@ -119,7 +119,7 @@ void SetFieldType(UINT nFieldType);
 ```  
   
 ### Parameters  
- `nFieldType`  
+ *nFieldType*  
  A value of the **enum FieldType**, declared in `CDaoFieldExchange`, which can be either of the following:  
   
 - **CDaoFieldExchange::outputColumn**  
@@ -127,9 +127,9 @@ void SetFieldType(UINT nFieldType);
 - **CDaoFieldExchange::param**  
   
 ### Remarks  
- Normally, ClassWizard writes this call for you. If you write your own function and are using the wizard to write your `DoFieldExchange` function, add calls to your own function outside the field map. If you do not use the wizard, there will not be a field map. The call precedes calls to DFX functions, one for each field data member of your class, and identifies the field type as **CDaoFieldExchange::outputColumn**.  
+ Normally, ClassWizard writes this call for you. If you write your own function and are using the wizard to write your `DoFieldExchange` function, add calls to your own function outside the field map. If you do not use the wizard, there will not be a field map. The call precedes calls to DFX functions, one for each field data member of your class, and identifies the field type as `CDaoFieldExchange::outputColumn`.  
   
- If you parameterize your recordset class, you should add DFX calls for all parameter data members (outside the field map) and precede these calls with a call to `SetFieldType`. Pass the value **CDaoFieldExchange::param**. (You can, instead, use a [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and set its parameter values.)  
+ If you parameterize your recordset class, you should add DFX calls for all parameter data members (outside the field map) and precede these calls with a call to `SetFieldType`. Pass the value `CDaoFieldExchange::param`. (You can, instead, use a [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and set its parameter values.)  
   
  In general, each group of DFX function calls associated with field data members or parameter data members must be preceded by a call to `SetFieldType`. The `nFieldType` parameter of each `SetFieldType` call identifies the type of the data members represented by the DFX function calls that follow the `SetFieldType` call.  
   

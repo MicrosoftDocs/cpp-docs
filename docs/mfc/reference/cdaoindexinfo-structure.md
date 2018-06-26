@@ -36,14 +36,14 @@ struct CDaoIndexInfo {
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the field object. For details, see the topic "Name Property" in DAO Help.  
   
- `m_pFieldInfos`  
+ *m_pFieldInfos*  
  A pointer to an array of [CDaoIndexFieldInfo](../../mfc/reference/cdaoindexfieldinfo-structure.md) objects indicating which tabledef or recordset fields are key fields in an index. Each object identifies one field in the index. The default index ordering is ascending. An index object can have one or more fields representing index keys for each record. These can be ascending, descending, or a combination.  
   
- `m_nFields`  
- The number of fields stored in `m_pFieldInfos`.  
+ *m_nFields*  
+ The number of fields stored in *m_pFieldInfos*.  
   
  *m_bPrimary*  
  If the Primary property is **TRUE**, the index object represents a primary index. A primary index consists of one or more fields that uniquely identify all records in a table in a predefined order. Because the index field must be unique, the Unique property of the Index object is also set to **TRUE** in DAO. If the primary index consists of more than one field, each field can contain duplicate values, but each combination of values from all the indexed fields must be unique. A primary index consists of a key for the table and usually contains the same fields as the primary key.  
@@ -77,7 +77,7 @@ struct CDaoIndexInfo {
   
  For more information, see the topic "IgnoreNulls Property" in DAO Help.  
   
- `m_bRequired`  
+ *m_bRequired*  
  Indicates whether a DAO index object requires a non-Null value. If this property is **TRUE**, the index object does not allow a Null value. For more information, see the topic "Required Property" in DAO Help.  
   
 > [!TIP]
@@ -94,7 +94,7 @@ struct CDaoIndexInfo {
   
  Index objects are not represented by an MFC class. Instead, DAO objects underlying MFC objects of class [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) or [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) contain a collection of index objects, called the Indexes collection. These classes supply member functions to access individual items of index information, or you can access them all at once with a `CDaoIndexInfo` object by calling the `GetIndexInfo` member function of the containing object.  
   
- `CDaoIndexInfo` has a constructor and a destructor in order to properly allocate and deallocate the index field information in `m_pFieldInfos`.  
+ `CDaoIndexInfo` has a constructor and a destructor in order to properly allocate and deallocate the index field information in *m_pFieldInfos*.  
   
  Information retrieved by the `GetIndexInfo` member function of a tabledef object is stored in a `CDaoIndexInfo` structure. Call the `GetIndexInfo` member function of the containing tabledef object in whose Indexes collection the index object is stored. `CDaoIndexInfo` also defines a `Dump` member function in debug builds. You can use `Dump` to dump the contents of a `CDaoIndexInfo` object.  
   

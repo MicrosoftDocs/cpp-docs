@@ -33,7 +33,7 @@ class CD2DRectF : public D2D1_RECT_F;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRectF::IsNull](#isnull)|Returns a `boolean` value that indicates whether an expression contains no valid data ( `null`).|  
+|[CD2DRectF::IsNull](#isnull)|Returns a **boolean** value that indicates whether an expression contains no valid data ( **null**).|  
   
 ### Public Operators  
   
@@ -66,19 +66,19 @@ CD2DRectF(
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  source rectangle  
   
- `fLeft`  
+ *fLeft*  
  source left coordinate  
   
- `fTop`  
+ *fTop*  
  source top coordinate  
   
- `fRight`  
+ *fRight*  
  source right coordinate  
   
- `fBottom`  
+ *fBottom*  
  source bottom coordinate  
   
 ##  <a name="isnull"></a>  CD2DRectF::IsNull  
