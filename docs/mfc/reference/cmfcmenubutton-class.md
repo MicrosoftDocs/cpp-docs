@@ -140,7 +140,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] `pMsg`  
+ [in] *pMsg*  
  Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.  
   
 ### Return Value  
@@ -156,14 +156,14 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ```  
   
 ### Parameters  
- [in] `bCalcOnly`  
+ [in] *bCalcOnly*  
  A Boolean parameter that indicates whether this method resizes the button .  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that specifies the new size for the button.  
   
 ### Remarks  
- If you call this function and `bCalcOnly` is `TRUE`, `SizeToContent` will calculate only the new size of the button.  
+ If you call this function and *bCalcOnly* is `TRUE`, `SizeToContent` will calculate only the new size of the button.  
   
  The new size of the button is calculated to fit the button text, image, and arrow. The framework also adds in predefined margins of 10 pixels for the horizontal edge and 5 pixels for the vertical edge.  
   

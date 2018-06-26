@@ -114,50 +114,50 @@ CMFCColorPopupMenu(
 ```  
   
 ### Parameters  
- [in] `colors`  
+ [in] *colors*  
  An array of colors that the framework displays on the pop-up menu.  
   
- [in] `color`  
+ [in] *color*  
  The default selected color.  
   
- [in] `lpszAutoColor`  
+ [in] *lpszAutoColor*  
  The text label of the *automatic* (default) color button, or `NULL`.  
   
  The standard label for the automatic button is **Automatic**.  
   
- [in] `lpszOtherColor`  
+ [in] *lpszOtherColor*  
  The text label of the *other* button, which displays more color choices, or `NULL`.  
   
  The standard label for the other button is **More Colors...**.  
   
- [in] `lpszDocColors`  
+ [in] *lpszDocColors*  
  The text label of the document colors button. The document colors palette lists all the colors that the document currently uses.  
   
- [in] `lstDocColors`  
+ [in] *lstDocColors*  
  A list of colors that the document currently uses.  
   
- [in] `nColumns`  
+ [in] *nColumns*  
  The number of columns that the array of colors has.  
   
- [in] `nHorzDockRows`  
+ [in] *nHorzDockRows*  
  The number of rows that the color bar has when it is docked horizontally.  
   
- [in] `nVertDockColumns`  
+ [in] *nVertDockColumns*  
  The number of columns that the color bar has when it is docked vertically.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  The default color that the framework applies when you click the automatic button.  
   
- [in] `uiCommandID`  
+ [in] *uiCommandID*  
  The color bar control command ID.  
   
- [in] `bStdColorDlg`  
+ [in] *bStdColorDlg*  
  A Boolean that indicates whether to show the standard system color dialog box or the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box.  
   
- [in] `pParentBtn`  
+ [in] *pParentBtn*  
  A pointer to a parent button.  
   
- [in] `nID`  
+ [in] *nID*  
  The command ID.  
   
 ### Remarks  
@@ -183,9 +183,9 @@ virtual CPane* CreateTearOffBar(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWndMain`|Pointer to the parent window of the tear-off bar.|  
-|[in] `uiID`|The command ID of the tear-off bar.|  
-|[in] `lpszName`|The window text of the tear-off bar.|  
+|[in] *pWndMain*|Pointer to the parent window of the tear-off bar.|  
+|[in] *uiID*|The command ID of the tear-off bar.|  
+|[in] *lpszName*|The window text of the tear-off bar.|  
   
 ### Return Value  
  A pointer to the new tear-off control bar object.  
@@ -214,7 +214,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```  
   
 ### Parameters  
- [in] `pWndList`  
+ [in] *pWndList*  
  Pointer to a property grid control object.  
   
 ## See Also  
