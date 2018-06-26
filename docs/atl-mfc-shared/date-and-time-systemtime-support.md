@@ -37,8 +37,6 @@ The [CTime](../atl-mfc-shared/reference/ctime-class.md) class has constructors t
   
 -   [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)  
   
--   [General-purpose classes for date and time programming](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
-  
 ## See Also  
  [Date and Time](../atl-mfc-shared/date-and-time.md)
 
