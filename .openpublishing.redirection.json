@@ -3391,6 +3391,81 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/make-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#make_pair",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-inequality-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_neq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-than-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_lt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-or-equal-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_lteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-equality-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/perator-greater-than-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_gt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-or-equal-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_gteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#pair",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-first-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#first",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-first-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#first_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#op_as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-pair-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#pair_pair",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-second-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#second",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-second-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#second_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/pair-swap-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/utility-stl-clr#swap",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
