@@ -3472,7 +3472,7 @@
         },
         {
             "source_path": "docs/dotnet/operator-less-than-vector-stl-clr.md",
-            "redirect_url": "/cpp/dotnet/vector-stl-clr#xxxx",op_lt
+            "redirect_url": "/cpp/dotnet/vector-stl-clr#op_lt",
             "redirect_document_id": false
         },
         {
