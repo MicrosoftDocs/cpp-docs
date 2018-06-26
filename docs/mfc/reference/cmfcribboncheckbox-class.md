@@ -48,7 +48,7 @@ class CMFCRibbonCheckBox : public CMFCRibbonButton
 ```  
 CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)  
 ```  
-where `nID` is the check box command ID and `lpszText` is the text label of the check box.  
+where *nID* is the check box command ID and *lpszText* is the text label of the check box.  
   
  You can add a check box to a ribbon panel by using [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
@@ -74,10 +74,10 @@ CMFCRibbonCheckBox(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies command ID.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Specifies text label.  
   
 ### Return Value  
@@ -96,7 +96,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the `CDC` associated with the checkbox.  
   
 ### Return Value  
@@ -113,7 +113,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the `CDC` associated with this checkbox.  
   
 ### Return Value  
@@ -130,7 +130,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the `CDC` object associated with this checkbox.  
   
 ### Return Value  
@@ -159,7 +159,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the `CDC` in which to draw the checkbox.  
   
 ### Remarks  
@@ -172,10 +172,10 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ```  
   
 ### Parameters  
- [in] `CDC*`  
+ [in] *CDC**  
  Pointer to the `CDC` associated with the checkbox.  
   
- [in] `CRect`  
+ [in] *CRect*  
  A `CRect` object specifying the rectangle in which to draw the menu image.  
   
 ### Return Value  
@@ -198,22 +198,22 @@ virtual void OnDrawOnList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the device context in which to draw the checkbox.  
   
- [in] `strText`  
+ [in] *strText*  
  The display text.  
   
- [in] `nTextOffset`  
+ [in] *nTextOffset*  
  The distance, in pixels, from the left side of the list box to the display text.  
   
- [in] `rect`  
+ [in] *rect*  
  The display rectangle for the checkbox.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  `TRUE` if the checkbox is selected, or `FALSE` if not.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  `TRUE` if the checkbox is highlighted, or `FALSE` if not.  
   
 ### Remarks  
@@ -228,10 +228,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  The parent window of the checkbox.  
   
- `data`  
+ *data*  
  The accessibility data for the checkbox.  
   
 ### Return Value  

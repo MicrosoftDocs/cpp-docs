@@ -177,8 +177,8 @@ virtual HRESULT accSelect(
 ```  
   
 ### Parameters  
- [in] `flagsSelect`  
- [in] `varChild`  
+ [in] *flagsSelect*  
+ [in] *varChild*  
   
 ### Return Value  
   
@@ -195,13 +195,13 @@ int AddProperty(
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  Pointer to a property.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to redraw the property immediately; otherwise, `FALSE`. The default value is `TRUE`.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` to recalculate how to draw the text and value of the property, and then draw the property; `FALSE` to use existing calculations to draw the property. The default value is `TRUE`.  
   
 ### Return Value  
@@ -228,7 +228,7 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
   
 ### Remarks  
   
@@ -263,19 +263,19 @@ virtual int CompareProps(
 ```  
   
 ### Parameters  
- `pProp1`  
+ *pProp1*  
  A pointer to a property.  
   
- `pProp2`  
+ *pProp2*  
  A pointer to a property.  
   
 ### Return Value  
   
 |Return Value|Description|  
 |------------------|-----------------|  
-|< 0|The name of the `pProp1` parameter is less than the name of the `pProp2` parameter.|  
-|0|The name of the `pProp1` parameter is equal to the name of the `pProp2` parameter.|  
-|> 0|The name of the `pProp1` object is greater than the name of the `pProp2` parameter.|  
+|< 0|The name of the *pProp1* parameter is less than the name of the *pProp2* parameter.|  
+|0|The name of the *pProp1* parameter is equal to the name of the *pProp2* parameter.|  
+|> 0|The name of the *pProp1* object is greater than the name of the *pProp2* parameter.|  
   
 ### Remarks  
  By default, this method uses the [CString::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method to compare the `CMFCPropertyGridProperty::m_strName` members of the specified parameters.  
@@ -292,16 +292,16 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `dwStyle`  
+ [in] *dwStyle*  
  A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `rect`  
- A bounding rectangle that specifies the size and position of the window, in client coordinates of `pParentWnd`.  
+ [in] *rect*  
+ A bounding rectangle that specifies the size and position of the window, in client coordinates of *pParentWnd*.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Pointer to the parent window. Must not be `NULL`.  
   
- [in] `nID`  
+ [in] *nID*  
  The ID of the child window.  
   
 ### Return Value  
@@ -326,13 +326,13 @@ BOOL DeleteProperty(
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  Pointer to a property.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to redraw the property grid control; otherwise, `FALSE`. The default value is `TRUE`.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` to recalculate how to draw all the text, images, and items in the property grid control, and then draw the control; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Return Value  
@@ -362,10 +362,10 @@ virtual BOOL EditItem(
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  Pointer to a property.  
   
- [in] `lptClick`  
+ [in] *lptClick*  
  The point on the property grid control that the user clicked to begin the edit operation. The point is in the client coordinates of the control. The default value is `NULL`.  
   
 ### Return Value  
@@ -381,7 +381,7 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the description area; `FALSE` to disable the description area. The default value is `TRUE`.  
   
 ### Remarks  
@@ -398,13 +398,13 @@ void EnableHeaderCtrl(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the header control; `FALSE` to disable the header control. The default value is `TRUE`.  
   
- [in] `lpszLeftColumn`  
+ [in] *lpszLeftColumn*  
  The title of the left column of the header control. The default value is **Property**.  
   
- [in] `lpszRightColumn`  
+ [in] *lpszRightColumn*  
  The title of the right column of the header control. The default value is **Value**.  
   
 ##  <a name="endedititem"></a>  CMFCPropertyGridCtrl::EndEditItem  
@@ -415,7 +415,7 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
 ```  
   
 ### Parameters  
- [in] `bUpdateData`  
+ [in] *bUpdateData*  
  `TRUE` to specify that the modified property data must be validated when the edit operation is complete; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Return Value  
@@ -433,10 +433,10 @@ void EnsureVisible(
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  Pointer to a property.  
   
- [in] `bExpandParents`  
+ [in] *bExpandParents*  
  `TRUE` to expand parent items to make the specified property visible; otherwise, `FALSE`. The default is `FALSE`.  
   
 ### Remarks  
@@ -449,7 +449,7 @@ void ExpandAll(BOOL bExpand=TRUE);
 ```  
   
 ### Parameters  
- [in] `bExpand`  
+ [in] *bExpand*  
  `TRUE` to expand all nodes; `FALSE` to collapse all nodes. The default value is `TRUE`.  
   
 ### Remarks  
@@ -464,10 +464,10 @@ CMFCPropertyGridProperty* FindItemByData(
 ```  
   
 ### Parameters  
- [in] `dwData`  
+ [in] *dwData*  
  A `DWORD` value.  
   
- [in] `bSearchSubItems`  
+ [in] *bSearchSubItems*  
  `TRUE` to search property sub-items; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Return Value  
@@ -498,7 +498,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 ```  
   
 ### Parameters  
- [in] `pvarChild`  
+ [in] *pvarChild*  
   
 ### Return Value  
   
@@ -514,8 +514,8 @@ virtual HRESULT get_accHelp(
 ```  
   
 ### Parameters  
- [in] `varChild`  
- [in] `pszHelp`  
+ [in] *varChild*  
+ [in] *pszHelp*  
   
 ### Return Value  
   
@@ -532,9 +532,9 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### Parameters  
- [in] `pszHelpFile`  
- [in] `varChild`  
- [in] `pidTopic`  
+ [in] *pszHelpFile*  
+ [in] *varChild*  
+ [in] *pidTopic*  
   
 ### Return Value  
   
@@ -550,8 +550,8 @@ virtual HRESULT get_accKeyboardShortcut(
 ```  
   
 ### Parameters  
- [in] `varChild`  
- [in] `pszKeyboardShortcut`  
+ [in] *varChild*  
+ [in] *pszKeyboardShortcut*  
   
 ### Return Value  
   
@@ -565,7 +565,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ```  
   
 ### Parameters  
- [in] `pvarChildren`  
+ [in] *pvarChildren*  
   
 ### Return Value  
   
@@ -621,25 +621,25 @@ void GetCustomColors(
 ```  
   
 ### Parameters  
- [out] `clrBackground`  
+ [out] *clrBackground*  
  The background color of property values.  
   
- [out] `clrText`  
+ [out] *clrText*  
  The color of property names and property value text.  
   
- [out] `clrGroupBackground`  
+ [out] *clrGroupBackground*  
  The background color of a property group.  
   
- [out] `clrGroupText`  
+ [out] *clrGroupText*  
  The color of text in the property group.  
   
- [out] `clrDescriptionBackground`  
+ [out] *clrDescriptionBackground*  
  The background color of the description area.  
   
- [out] `clrDescriptionText`  
+ [out] *clrDescriptionText*  
  The color of text in the description area.  
   
- [out] `clrLine`  
+ [out] *clrLine*  
  The color of lines that are drawn between properties.  
   
 ### Remarks  
@@ -728,10 +728,10 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The zero-based index of a property grid control item.  
   
- This method asserts if the `nIndex` parameter is less than zero or greater than or equal to the number of properties.  
+ This method asserts if the *nIndex* parameter is less than zero or greater than or equal to the number of properties.  
   
 ### Return Value  
  A pointer to the property object that corresponds to the specified index if this method is successful; otherwise, `NULL`.  
@@ -784,7 +784,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
   
 ### Parameters  
- [in] `nBar`  
+ [in] *nBar*  
  The orientation of the scroll bar, which must be `SB_VERT`.  
   
 ### Return Value  
@@ -817,24 +817,24 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
  A point, in client coordinates.  
   
- [in, out] `pnArea`  
+ [in, out] *pnArea*  
  A pointer to a `ClickArea` variable. When this method returns, the variable indicates the *property area* that contains the specified point. For more information about a property area, see Remarks.  
   
- [in] `bPropsOnly`  
+ [in] *bPropsOnly*  
  `TRUE` to test only the property area; `FALSE` to test the *description area* if the specified point is not in the property area. The default value is `FALSE`. For more information about the description area, see Remarks.  
   
 ### Return Value  
- If the `bPropsOnly` parameter is `TRUE` and the specified point is in a property area, the return value is a pointer to the corresponding property object. In addition, the `pnArea` parameter is set to the particular area that contains the specified point. Otherwise, the return value is `NULL` and the `pnArea` parameter is not modified.  
+ If the *bPropsOnly* parameter is `TRUE` and the specified point is in a property area, the return value is a pointer to the corresponding property object. In addition, the *pnArea* parameter is set to the particular area that contains the specified point. Otherwise, the return value is `NULL` and the *pnArea* parameter is not modified.  
   
- If the `bPropsOnly` parameter is `FALSE`, the return value is always `NULL`. However, if the specified point is in the description area, the `pnArea` parameter is set to `CMFCPropertyGridProperty::ClickDescription`.  
+ If the *bPropsOnly* parameter is `FALSE`, the return value is always `NULL`. However, if the specified point is in the description area, the *pnArea* parameter is set to `CMFCPropertyGridProperty::ClickDescription`.  
   
 ### Remarks  
  The term *property area* refers to any one of the name, value, or expand box areas of a property grid control item. The *description area* is the zone at the bottom of a property grid control. When you click a property grid control item, the description area displays a description of the corresponding property.  
   
- This method sets the value of the variable that the `pnArea` parameter points to. The following table lists the possible values and corresponding areas.  
+ This method sets the value of the variable that the *pnArea* parameter points to. The following table lists the possible values and corresponding areas.  
   
 |Value|Area|  
 |-----------|----------|  
@@ -972,10 +972,10 @@ void MarkModifiedProperties(
 ```  
   
 ### Parameters  
- [in] `bMark`  
+ [in] *bMark*  
  `TRUE` to display modified properties in bold style; `FALSE` to display modified properties in regular style. The default value is `TRUE`.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to redraw the property grid control immediately; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
@@ -993,8 +993,8 @@ virtual void OnChangeSelection(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pNewSel`|Pointer to the newly selected property.|  
-|[in] `pOldSel`|Pointer to the previously selected property.|  
+|[in] *pNewSel*|Pointer to the newly selected property.|  
+|[in] *pOldSel*|Pointer to the previously selected property.|  
   
 ### Remarks  
  The default implementation of this method does nothing.  
@@ -1007,7 +1007,7 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  A point, in client coordinates.  
   
 ### Remarks  
@@ -1021,7 +1021,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -1036,10 +1036,10 @@ virtual void OnDrawDescription(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies where to draw the description area.  
   
 ### Remarks  
@@ -1053,7 +1053,7 @@ virtual void OnDrawList(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -1068,10 +1068,10 @@ virtual int OnDrawProperty(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pProp`  
+ [in] *pProp*  
  A pointer to a property object.  
   
 ### Return Value  
@@ -1087,7 +1087,7 @@ virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  A pointer to a property object whose value has changed.  
   
 ### Remarks  
@@ -1119,7 +1119,7 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```  
   
 ### Parameters  
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to redraw the property list; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
@@ -1132,7 +1132,7 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
+ [in] *bSet*  
  `TRUE` to set alphabetic mode; `FALSE` reset alphabetic mode. The default value is `TRUE`.  
   
 ### Remarks  
@@ -1148,10 +1148,10 @@ void SetBoolLabels(
 ```  
   
 ### Parameters  
- [in] `lpszTrue`  
+ [in] *lpszTrue*  
  The text string to display for the Boolean value of true.  
   
- [in] `lpszFalse`  
+ [in] *lpszFalse*  
  The text string to display for the Boolean value of false.  
   
 ### Remarks  
@@ -1166,10 +1166,10 @@ void SetCurSel(
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  A pointer to a property object.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to redraw the property grid control immediately; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
@@ -1190,25 +1190,25 @@ void SetCustomColors(
 ```  
   
 ### Parameters  
- [in] `clrBackground`  
+ [in] *clrBackground*  
  The background color of property values.  
   
- [in] `clrText`  
+ [in] *clrText*  
  The color of property names and property value text.  
   
- [in] `clrGroupBackground`  
+ [in] *clrGroupBackground*  
  The background color of a property group.  
   
- [in] `clrGroupText`  
+ [in] *clrGroupText*  
  The new text color of property group.  
   
- [in] `clrDescriptionBackground`  
+ [in] *clrDescriptionBackground*  
  The background color of the description area.  
   
- [in] `clrDescriptionText`  
+ [in] *clrDescriptionText*  
  The color of text in the description area.  
   
- [in] `clrLine`  
+ [in] *clrLine*  
  The color of lines that are drawn between properties.  
   
 ### Remarks  
@@ -1224,7 +1224,7 @@ void SetDescriptionRows(int nDescRows);
 ```  
   
 ### Parameters  
- [in] `nDescRows`  
+ [in] *nDescRows*  
  The number of rows to display in the property description.  
   
 ##  <a name="setgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::SetGroupNameFullWidth  
@@ -1237,10 +1237,10 @@ void SetGroupNameFullWidth(
 ```  
   
 ### Parameters  
- [in] `bGroupNameFullWidth`  
+ [in] *bGroupNameFullWidth*  
  `TRUE` to display the complete width of the category name regardless of the width of the property name column. `FALSE` to limit the width of the category name to the width of the property name column. The default value is `TRUE`.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to update the property grid control immediately; `FALSE` to update the control when the next redraw event occurs. The default value is `TRUE`.  
   
 ### Remarks  
@@ -1256,11 +1256,11 @@ void SetListDelimiter(TCHAR c);
 ```  
   
 ### Parameters  
- [in] `c`  
+ [in] *c*  
  A character to serve as a delimiter.  
   
 ### Remarks  
- Use this method to define a delimiter character in a list of property values that are used in the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) constructor. In that constructor, set the `bIsValueList` parameter to `TRUE`.  
+ Use this method to define a delimiter character in a list of property values that are used in the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) constructor. In that constructor, set the *bIsValueList* parameter to `TRUE`.  
   
  By default, the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor sets the delimiter character to comma (',').  
   
@@ -1272,7 +1272,7 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```  
   
 ### Parameters  
- [in] `bShowDragContext`  
+ [in] *bShowDragContext*  
  `TRUE` to redraw the name and value columns during a resize operation; `FALSE` to redraw the columns after the drag operation is completed. The default value is `TRUE`.  
   
 ### Remarks  
@@ -1286,7 +1286,7 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
+ [in] *bSet*  
  `TRUE` to set the property grid control to the style that is used in Visual Studio .NET; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
@@ -1299,7 +1299,7 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  An RGB color value.  
   
 ### Remarks  
@@ -1316,13 +1316,13 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pProp`|Pointer to a property. This parameter is not used.|  
+|[in] *pProp*|Pointer to a property. This parameter is not used.|  
   
 ### Return Value  
  Always `TRUE`.  
   
 ### Remarks  
- The [CMFCPropertyGridCtrl::EndEditItem](#endedititem) method calls this method to validate data. By default, this method does not use its `pProp` parameter and its return value is always `TRUE`.  
+ The [CMFCPropertyGridCtrl::EndEditItem](#endedititem) method calls this method to validate data. By default, this method does not use its *pProp* parameter and its return value is always `TRUE`.  
   
  If you override this method, return `TRUE` if the specified property data is valid. Otherwise, return `FALSE`, in which case the framework does not update the property.  
   

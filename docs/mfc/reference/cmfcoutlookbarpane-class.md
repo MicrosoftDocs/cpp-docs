@@ -139,31 +139,31 @@ BOOL AddButton(
 ```  
   
 ### Parameters  
- [in] `uiImage`  
+ [in] *uiImage*  
  Specifies the resource identifier of a bitmap.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Specifies the button's text.  
   
- [in] `iIdCommand`  
+ [in] *iIdCommand*  
  Specifies the button control's ID.  
   
- [in] `iInsertAt`  
+ [in] *iInsertAt*  
  Specifies the zero-based index on the outlook bar's page at which to insert the button.  
   
- [in] `uiLabel`  
+ [in] *uiLabel*  
  A string resource ID.  
   
- [in] `szBmpFileName`  
+ [in] *szBmpFileName*  
  Specifies the name of the disk image file to load.  
   
- [in] `szLabel`  
+ [in] *szLabel*  
  Specifies the button's text.  
   
- [in] `hBmp`  
+ [in] *hBmp*  
  A handle to a button's bitmap.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  A handle to a buttons' icon.  
   
 ### Return Value  
@@ -172,9 +172,9 @@ BOOL AddButton(
 ### Remarks  
  Use this method to insert a new button into an Outlook bar's page. The button's image can be loaded either from the application resources or from a disk file.  
   
- If the page ID specified by `uiPageID` is -1, the button is inserted into the first page.  
+ If the page ID specified by *uiPageID* is -1, the button is inserted into the first page.  
   
- If the index specified by `iInsertAt` is -1, the button is added at the end of the page.  
+ If the index specified by *iInsertAt* is -1, the button is added at the end of the page.  
   
 ##  <a name="canbeattached"></a>  CMFCOutlookBarPane::CanBeAttached  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -209,16 +209,16 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Specifies the parent window of the Outlook bar pane control. Must not be `NULL`.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The window style.  For a list of window styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `uiID`  
+ [in] *uiID*  
  The control ID. Must be unique to enable saving of the control's state.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Specifies special styles that define the behavior of the Outlook bar pane control when it is detached from the Outlook bar.  
   
 ### Return Value  
@@ -239,10 +239,10 @@ virtual BOOL EnableContextMenuItems(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a toolbar button that a user clicked.  
   
- [in] `pPopup`  
+ [in] *pPopup*  
  A pointer to the shortcut menu.  
   
 ### Return Value  
@@ -264,7 +264,7 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```  
   
 ### Parameters  
- [in] `bPageScroll`  
+ [in] *bPageScroll*  
  If `TRUE`, enable the page scroll mode. If `FALSE`, disable the page scroll mode.  
   
 ##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
@@ -320,7 +320,7 @@ BOOL RemoveButton(UINT iIdCommand);
 ```  
   
 ### Parameters  
- [in] `iIdCommand`  
+ [in] *iIdCommand*  
  Specifies the command ID of a button to remove.  
   
 ### Return Value  
@@ -334,7 +334,7 @@ void SetBackColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  Specifies the new background color.  
   
 ### Remarks  
@@ -348,7 +348,7 @@ void SetBackImage(UINT uiImageID);
 ```  
   
 ### Parameters  
- [in] `uiImageID`  
+ [in] *uiImageID*  
  Specifies the image resource ID.  
   
 ### Remarks  
@@ -381,10 +381,10 @@ void SetTextColor(
 ```  
   
 ### Parameters  
- [in] `clrRegText`  
+ [in] *clrRegText*  
  Specifies the new color for non-selected text.  
   
- [in] `clrSelText`  
+ [in] *clrSelText*  
  Specifies the new color for selected text.  
   
 ##  <a name="settransparentcolor"></a>  CMFCOutlookBarPane::SetTransparentColor  
@@ -395,7 +395,7 @@ void SetTransparentColor(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies the new transparent color.  
   
 ### Remarks  

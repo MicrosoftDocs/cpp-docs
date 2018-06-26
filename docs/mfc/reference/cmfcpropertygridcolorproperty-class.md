@@ -78,19 +78,19 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### Parameters  
- [in] `strName`  
+ [in] *strName*  
  The name of the property.  
   
- [in] `color`  
+ [in] *color*  
  The color value of the property.  
   
- [in] `pPalette`  
+ [in] *pPalette*  
  Pointer to a palette of colors. The default value is `NULL`.  
   
- [in] `lpszDescr`  
+ [in] *lpszDescr*  
  The property description. The default value is `NULL`.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
@@ -104,13 +104,13 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The label text of the automatic button.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  The RGB color value of the automatic (default) color.  
   
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the automatic button; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
@@ -126,13 +126,13 @@ void EnableOtherButton(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The label text of the other button.  
   
- [in] `bAltColorDlg`  
+ [in] *bAltColorDlg*  
  `TRUE` to display the `CMFCColorDialog` dialog box; `FALSE` to display the standard color selection dialog box. The default value is `TRUE`.  
   
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to display the other button; otherwise, `FALSE`.  The default value is `TRUE`.  
   
 ### Remarks  
@@ -157,7 +157,7 @@ void SetColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  An RGB color value.  
   
 ### Remarks  
@@ -170,7 +170,7 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### Parameters  
- [in] `nColumnsNumber`  
+ [in] *nColumnsNumber*  
  The preferred number of columns in the color property grid.  
   
 ### Remarks  
@@ -184,7 +184,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### Parameters  
- [in] `varValue`  
+ [in] *varValue*  
  A value.  
   
 ### Remarks  

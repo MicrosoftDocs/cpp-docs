@@ -95,13 +95,13 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the host window supplied by the Shell for Rich Preview.  
   
- `prc`  
+ *prc*  
  Specifies the initial size and position of the window.  
   
- `pContext`  
+ *pContext*  
  A pointer to a creation context.  
   
 ### Return Value  
@@ -128,7 +128,7 @@ virtual void DoPaint(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to a device context for painting.  
 
 
@@ -205,7 +205,7 @@ void SetDocument(
 ```  
   
 ### Parameters  
- `pDocument`  
+ *pDocument*  
  A pointer to the document implementation.  
 
 ## <a name="sethost"></a> CMFCPreviewCtrlImpl::SetHost  
@@ -220,7 +220,7 @@ virtual void SetHost(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the new parent window.  
 
 ## <a name="setpreviewvisuals"></a> CMFCPreviewCtrlImpl::SetPreviewVisuals  
@@ -237,13 +237,13 @@ virtual void SetPreviewVisuals(
 ```  
   
 ### Parameters  
- `clrBack`  
+ *clrBack*  
  Background color of preview window.  
   
- `clrText`  
+ *clrText*  
  Text color of preview window.  
   
- `plf`  
+ *plf*  
  Font used to display text in the preview window. 
 
 ##  <a name="setrect"></a> CMFCPreviewCtrlImpl::SetRect  
@@ -259,10 +259,10 @@ virtual void SetRect(
 ```  
   
 ### Parameters  
- `prc`  
+ *prc*  
  Specifies the new size and position of the preview control.  
   
- `bRedraw`  
+ *bRedraw*  
  Specifies whether the control should be redrawn.  
   
 ### Remarks  

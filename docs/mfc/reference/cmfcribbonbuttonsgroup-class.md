@@ -71,7 +71,7 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a button to add.  
   
 ##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
@@ -83,7 +83,7 @@ void AddButtons(
 ```  
   
 ### Parameters  
- [in] `lstButtons`  
+ [in] *lstButtons*  
  A list of pointers to the buttons that you want to add.  
   
 ##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
@@ -91,10 +91,11 @@ void AddButtons(
   
 ```  
 CMFCRibbonButtonsGroup();
-CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);```  
+CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
+```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  Specifies a button to add to the newly created `CMFCRibbonButtonsGroup` object.  
   
 ### Return Value  
@@ -109,7 +110,7 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 ```  
   
 ### Parameters  
- [in] `i`  
+ [in] *i*  
  A zero-based index of a button to return.  
   
 ### Return Value  
@@ -147,7 +148,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the device context of the ribbon group.  
   
 ### Return Value  
@@ -178,16 +179,16 @@ virtual void OnDrawImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the device context of the `CMFCRibbonButtonsGroup` object.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  The rectangle within which to draw the image.  
   
- [in] `pButton`  
+ [in] *pButton*  
  The button for which to draw the image.  
   
- [in] `nImageIndex`  
+ [in] *nImageIndex*  
  The index of the image to draw on the button (in one of the three image arrays for normal, highlighted or disabled buttons).  
   
 ### Remarks  
@@ -212,13 +213,13 @@ void SetImages(
 ```  
   
 ### Parameters  
- [in] `pImages`  
+ [in] *pImages*  
  Regular images.  
   
- [in] `pHotImages`  
+ [in] *pHotImages*  
  Hot images.  
   
- [in] `pDisabledImages`  
+ [in] *pDisabledImages*  
  Disabled images.  
   
 ### Remarks  
@@ -235,7 +236,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 ```  
   
 ### Parameters  
- [in] `pCategory`  
+ [in] *pCategory*  
  Pointer to the parent category to set (the tabbed groups in ribbon controls are called categories).  
   
 ### Remarks  
