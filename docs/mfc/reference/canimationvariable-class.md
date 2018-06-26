@@ -92,7 +92,7 @@ void AddTransition(CBaseTransition* pTransition);
 ```  
   
 ### Parameters  
- `pTransition`  
+ *pTransition*  
  A pointer to a transition to add.  
   
 ### Remarks  
@@ -109,13 +109,13 @@ void ApplyTransitions(
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to parent animation controller.  
   
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to storyboard.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
  TRUE, if this method should add transitions that depend on keyframes.  
   
 ### Remarks  
@@ -129,7 +129,7 @@ CAnimationVariable(DOUBLE dblDefaultValue = 0.0);
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies the default value.  
   
 ### Remarks  
@@ -143,7 +143,7 @@ void ClearTransitions(BOOL bAutodestroy);
 ```  
   
 ### Parameters  
- `bAutodestroy`  
+ *bAutodestroy*  
  Specifies whether this method should delete transition objects.  
   
 ### Remarks  
@@ -157,7 +157,7 @@ virtual BOOL Create(IUIAnimationManager* pManager);
 ```  
   
 ### Parameters  
- `pManager`  
+ *pManager*  
  A pointer to animation manager.  
   
 ### Return Value  
@@ -176,7 +176,7 @@ BOOL CreateTransitions(
 ```  
   
 ### Parameters  
-`pLibrary`  
+*pLibrary*  
  A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
   
 ### Return Value  
@@ -195,10 +195,10 @@ void EnableIntegerValueChangedEvent (
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to parent controller.  
   
- `bEnable`  
+ *bEnable*  
  TRUE - enable event, FALSE - disable event.  
   
 ### Remarks  
@@ -214,10 +214,10 @@ void EnableValueChangedEvent (
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to parent controller.  
   
- `bEnable`  
+ *bEnable*  
  TRUE - enable event, FALSE - disable event.  
   
 ### Remarks  
@@ -258,10 +258,10 @@ HRESULT GetValue(INT32& nValue);
 ```  
   
 ### Parameters  
- `dblValue`  
+ *dblValue*  
  The current value of the animation variable.  
   
- `nValue`  
+ *nValue*  
  The current value of the animation variable.  
   
 ### Return Value  
@@ -329,7 +329,7 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies the new default value.  
   
 ### Remarks  
@@ -343,7 +343,7 @@ void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
 ```  
   
 ### Parameters  
- `pParentObject`  
+ *pParentObject*  
  A pointer to an animation object that contains this variable.  
   
 ### Remarks  

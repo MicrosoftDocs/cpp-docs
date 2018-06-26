@@ -83,10 +83,10 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pXTransition`  
+ *pXTransition*  
  A pointer to transition for X coordinates.  
   
- `pYTransition`  
+ *pYTransition*  
  A pointer to transition for Y coordinate.  
   
 ### Remarks  
@@ -107,16 +107,16 @@ CAnimationPoint(
 ```  
   
 ### Parameters  
- `ptDefault`  
+ *ptDefault*  
  Specifies default point coordinates.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
 ### Remarks  
@@ -130,7 +130,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVaria
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to two CAnimationVariable objects representing the X and Y coordinates.  
   
 ##  <a name="getdefaultvalue"></a>  CAnimationPoint::GetDefaultValue  
@@ -154,7 +154,7 @@ BOOL GetValue(CPoint& ptValue);
 ```  
   
 ### Parameters  
- `ptValue`  
+ *ptValue*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -224,7 +224,7 @@ void operator=(const CPoint& ptSrc);
 ```  
   
 ### Parameters  
- `ptSrc`  
+ *ptSrc*  
  Refers to CPoint or POINT.  
   
 ### Remarks  
@@ -238,7 +238,7 @@ void SetDefaultValue(const POINT& ptDefault);
 ```  
   
 ### Parameters  
- `ptDefault`  
+ *ptDefault*  
  Specifies the default point value.  
   
 ### Remarks  

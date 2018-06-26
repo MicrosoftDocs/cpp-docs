@@ -62,16 +62,16 @@ IFACEMETHOD(OnValueChanged) (
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  The storyboard that is animating the variable.  
   
- `variable`  
+ *variable*  
  The animation variable that was updated.  
   
- `newValue`  
+ *newValue*  
  The new value.  
   
- `previousValue`  
+ *previousValue*  
  The previous value.  
   
 ### Return Value  
@@ -85,7 +85,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  
