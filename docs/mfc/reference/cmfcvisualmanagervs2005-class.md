@@ -100,7 +100,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### Parameters  
- [in] `pPropList`  
+ [in] *pPropList*  
   
 ### Return Value  
   
@@ -123,15 +123,15 @@ virtual void GetTabFrameColors(
 ```  
   
 ### Parameters  
- [in] `pTabWnd`  
- [in] `clrDark`  
- [in] `clrBlack`  
- [in] `clrHighlight`  
- [in] `clrFace`  
- [in] `clrDarkShadow`  
- [in] `clrLight`  
- [in] `pbrFace`  
- [in] `pbrBlack`  
+ [in] *pTabWnd*  
+ [in] *clrDark*  
+ [in] *clrBlack*  
+ [in] *clrHighlight*  
+ [in] *clrFace*  
+ [in] *clrDarkShadow*  
+ [in] *clrLight*  
+ [in] *pbrFace*  
+ [in] *pbrBlack*  
   
 ### Remarks  
   
@@ -158,10 +158,10 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectBounds`  
- [in] `rectBorderSize`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rectBounds*  
+ [in] *rectBorderSize*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -180,13 +180,13 @@ virtual void OnDrawCaptionButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `bActive`  
- [in] `bHorz`  
- [in] `bMaximized`  
- [in] `bDisabled`  
- [in] `nImageID`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *bActive*  
+ [in] *bHorz*  
+ [in] *bMaximized*  
+ [in] *bDisabled*  
+ [in] *nImageID*  
   
 ### Remarks  
   
@@ -203,11 +203,11 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `bActive`  
- [in] `rectCaption`  
- [in] `rectButtons`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *bActive*  
+ [in] *rectCaption*  
+ [in] *rectButtons*  
   
 ### Return Value  
   
@@ -225,10 +225,10 @@ virtual void OnDrawSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsHoriz`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsHoriz*  
   
 ### Remarks  
   
@@ -245,11 +245,11 @@ virtual void OnDrawTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectTab`  
- [in] `iTab`  
- [in] `bIsActive`  
- [in] `pTabWnd`  
+ [in] *pDC*  
+ [in] *rectTab*  
+ [in] *iTab*  
+ [in] *bIsActive*  
+ [in] *pTabWnd*  
   
 ### Remarks  
   
@@ -263,8 +263,8 @@ virtual void OnDrawToolBoxFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -279,9 +279,9 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pTabWnd`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pTabWnd*  
   
 ### Remarks  
   
@@ -296,9 +296,9 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -314,10 +314,10 @@ virtual void OnFillHighlightedArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pBrush`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pBrush*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -333,10 +333,10 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectCaption`  
- [in] `pFrameWnd`  
- [in] `bActive`  
+ [in] *pDC*  
+ [in] *rectCaption*  
+ [in] *pFrameWnd*  
+ [in] *bActive*  
   
 ### Return Value  
   

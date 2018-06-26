@@ -87,19 +87,19 @@ CMultiPageDHtmlDialog();
 ```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  The null-terminated string that is the name of a dialog-box template resource.  
   
- `szHtmlResID`  
+ *szHtmlResID*  
  The null-terminated string that is the name of an HTML resource.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-box template resource.  
   
- `nHtmlResID`  
+ *nHtmlResID*  
  Contains the ID number of an HTML resource.  
   
 ##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog  

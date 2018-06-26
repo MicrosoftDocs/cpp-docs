@@ -37,7 +37,7 @@ class CMouseManager : public CObject
 |[CMouseManager::SetCommandForDblClk](#setcommandfordblclk)|Associates the provided command and the provided view.|  
   
 ## Remarks  
- The `CMouseManager` class maintains a collection of `CView` objects. Each view is identified by a name and by an ID. These views are shown in the **Customization** dialog box. The user can change the command that is associated with any view through the **Customization** dialog box. The associated command is executed when the user double-clicks in that view. To support this from a coding perspective, you must process the `WM_LBUTTONDBLCLK` message and call the [CWinAppEx::OnViewDoubleClick](../../mfc/reference/cwinappex-class.md#onviewdoubleclick) function in the code for that `CView` object..  
+ The `CMouseManager` class maintains a collection of `CView` objects. Each view is identified by a name and by an ID. These views are shown in the **Customization** dialog box. The user can change the command that is associated with any view through the **Customization** dialog box. The associated command is executed when the user double-clicks in that view. To support this from a coding perspective, you must process the WM_LBUTTONDBLCLK message and call the [CWinAppEx::OnViewDoubleClick](../../mfc/reference/cwinappex-class.md#onviewdoubleclick) function in the code for that `CView` object..  
   
  You should not create a `CMouseManager` object manually. It will be created by the framework of your application. It will also be destroyed automatically when the user exits the application. To get a pointer to the mouse manager for your application, call [CWinAppEx::GetMouseManager](../../mfc/reference/cwinappex-class.md#getmousemanager).  
   
@@ -66,19 +66,19 @@ BOOL AddView(
 ```  
   
 ### Parameters  
- [in] `iViewId`  
+ [in] *iViewId*  
  A view ID.  
   
- [in] `uiViewNameResId`  
+ [in] *uiViewNameResId*  
  A resource string ID that references the view name.  
   
- [in] `uiIconId`  
+ [in] *uiIconId*  
  A view icon ID.  
   
- [in] `iId`  
+ [in] *iId*  
  A view ID.  
   
- [in] `lpszViewName`  
+ [in] *lpszViewName*  
  A view name.  
   
 ### Return Value  
@@ -87,7 +87,7 @@ BOOL AddView(
 ### Remarks  
  In order to support custom mouse behavior, a view must be registered with the `CMouseManager` object. Any object derived from the `CView` class can be registered with the mouse manager. The string and icon associated with a view are displayed in the **Mouse** tab of the **Customize** dialog box.  
   
- It is the responsibility of the programmer to create and maintain view IDs such as `iViewId` and `iId`.  
+ It is the responsibility of the programmer to create and maintain view IDs such as *iViewId* and *iId*.  
   
  For more information about how to provide custom mouse behavior, see [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md).  
   
@@ -104,7 +104,7 @@ UINT GetViewDblClickCommand(int iId) const;
 ```  
   
 ### Parameters  
- [in] `iId`  
+ [in] *iId*  
  The view ID.  
   
 ### Return Value  
@@ -118,7 +118,7 @@ UINT GetViewIconId(int iViewId) const;
 ```  
   
 ### Parameters  
- [in] `iViewId`  
+ [in] *iViewId*  
  The view ID.  
   
 ### Return Value  
@@ -135,7 +135,7 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ```  
   
 ### Parameters  
- [in] `lpszName`  
+ [in] *lpszName*  
  The view name.  
   
 ### Return Value  
@@ -152,7 +152,7 @@ void GetViewNames(CStringList& listOfNames) const;
 ```  
   
 ### Parameters  
- [out] `listOfNames`  
+ [out] *listOfNames*  
  A reference to `CStringList` object.  
   
 ### Remarks  
@@ -166,14 +166,14 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A path of a registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The state information loaded from the registry includes the registered views, view identifiers, and the associated commands. If the parameter `lpszProfileName` is `NULL`, this function loads the `CMouseManager` data from the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
+ The state information loaded from the registry includes the registered views, view identifiers, and the associated commands. If the parameter *lpszProfileName* is `NULL`, this function loads the `CMouseManager` data from the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
   
  In most cases, you do not have to call this function directly. It is called as a part of the workspace initialization process. For more information about the workspace initialization process, see [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate).  
   
@@ -185,14 +185,14 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A path of a registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The state information written to the registry includes all registered views, view identifiers, and the associated commands. If the parameter `lpszProfileName` is `NULL`, this function writes the `CMouseManager` data to the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
+ The state information written to the registry includes all registered views, view identifiers, and the associated commands. If the parameter *lpszProfileName* is `NULL`, this function writes the `CMouseManager` data to the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
   
  In most cases, you do not have to call this function directly. It is called as a part of the workspace serialization process. For more information about the workspace serialization process, see [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate).  
   
@@ -206,16 +206,16 @@ void SetCommandForDblClk(
 ```  
   
 ### Parameters  
- [in] `iViewId`  
+ [in] *iViewId*  
  The view identifier.  
   
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The command identifier.  
   
 ### Remarks  
- In order to associate a custom command with a view, you must first register the view by using [CMouseManager::AddView](#addview). The `AddView` method requires a view identifier as an input parameter. Once you register a view, you can call `CMouseManager::SetCommandForDblClk` with the same view identifier input parameter that you supplied to `AddView`. Thereafter, when the user double-clicks the mouse in the registered view, the application will execute the command indicated by `uiCmd.` To support the custom mouse behavior, you will also need to customize the view registered with the mouse manager. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../keyboard-and-mouse-customization.md).  
+ In order to associate a custom command with a view, you must first register the view by using [CMouseManager::AddView](#addview). The `AddView` method requires a view identifier as an input parameter. Once you register a view, you can call `CMouseManager::SetCommandForDblClk` with the same view identifier input parameter that you supplied to `AddView`. Thereafter, when the user double-clicks the mouse in the registered view, the application will execute the command indicated by *uiCmd.* To support the custom mouse behavior, you will also need to customize the view registered with the mouse manager. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../keyboard-and-mouse-customization.md).  
   
- If `uiCmd` is set to 0, the specified view is no longer associated with a command.  
+ If *uiCmd* is set to 0, the specified view is no longer associated with a command.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
