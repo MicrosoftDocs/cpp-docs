@@ -82,7 +82,7 @@ void Attach(ID2D1Brush* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dbrush"></a>  CD2DBrush::CD2DBrush  
@@ -96,13 +96,13 @@ CD2DBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="destroy"></a>  CD2DBrush::Destroy  
@@ -150,7 +150,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
 ```  
   
 ### Parameters  
- `transform`  
+ *transform*  
  When this returns, contains the current transform of the render target. This parameter is passed uninitialized  
   
 ##  <a name="isvalid"></a>  CD2DBrush::IsValid  
@@ -195,7 +195,7 @@ void SetOpacity(FLOAT opacity);
 ```  
   
 ### Parameters  
- `opacity`  
+ *opacity*  
  A value between zero and 1 that indicates the opacity of the brush. This value is a constant multiplier that linearly scales the alpha value of all pixels filled by the brush. The opacity values are clamped in the range 0 to 1 before they are multiplied together  
   
 ##  <a name="settransform"></a>  CD2DBrush::SetTransform  
@@ -206,7 +206,7 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 ```  
   
 ### Parameters  
- `transform`  
+ *transform*  
  The transform to apply to the render target  
   
 ## See Also  

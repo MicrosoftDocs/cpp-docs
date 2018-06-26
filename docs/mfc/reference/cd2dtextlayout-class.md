@@ -86,19 +86,19 @@ CD2DTextLayout(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `strText`  
+ *strText*  
  A CString object that contains the string to create a new CD2DTextLayout object from.  
   
- `textFormat`  
+ *textFormat*  
  A CString object that contains the format to apply to the string.  
   
- `sizeMax`  
+ *sizeMax*  
  The size of the layout box.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DTextLayout::Create  
@@ -138,10 +138,10 @@ CString GetFontFamilyName(
 ```  
   
 ### Parameters  
- `currentPosition`  
+ *currentPosition*  
  The position of the text to examine.  
   
- `textRange`  
+ *textRange*  
  The range of text that has the same formatting as the text at the position specified by currentPosition. This means the run has the exact formatting as the position specified, including but not limited to the font family name.  
   
 ### Return Value  
@@ -157,10 +157,10 @@ CString GetLocaleName(
 ```  
   
 ### Parameters  
- `currentPosition`  
+ *currentPosition*  
  The position of the text to inspect.  
   
- `textRange`  
+ *textRange*  
  The range of text that has the same formatting as the text at the position specified by currentPosition. This means the run has the exact formatting as the position specified, including but not limited to the locale name.  
   
 ### Return Value  
@@ -213,10 +213,10 @@ BOOL SetFontFamilyName(
 ```  
   
 ### Parameters  
- `pwzFontFamilyName`  
+ *pwzFontFamilyName*  
  The font family name that applies to the entire text string within the range specified by textRange  
   
- `textRange`  
+ *textRange*  
  Text range to which this change applies  
   
 ### Return Value  
@@ -232,10 +232,10 @@ BOOL SetLocaleName(
 ```  
   
 ### Parameters  
- `pwzLocaleName`  
+ *pwzLocaleName*  
  A null-terminated locale name string  
   
- `textRange`  
+ *textRange*  
  Text range to which this change applies  
   
 ### Return Value  
