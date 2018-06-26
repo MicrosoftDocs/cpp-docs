@@ -69,7 +69,7 @@ void Attach(ID2D1DCRenderTarget* pTarget);
 ```  
   
 ### Parameters  
- `pTarget`  
+ *pTarget*  
  Existing render target interface. Cannot be NULL  
   
 ##  <a name="binddc"></a>  CDCRenderTarget::BindDC  
@@ -82,10 +82,10 @@ BOOL BindDC(
 ```  
   
 ### Parameters  
- `dc`  
+ *dc*  
  The device context to which the render target issues drawing commands  
   
- `rect`  
+ *rect*  
  The dimensions of the handle to a device context (HDC) to which the render target is bound  
   
 ### Return Value  
@@ -106,7 +106,7 @@ BOOL Create(const D2D1_RENDER_TARGET_PROPERTIES& props);
 ```  
   
 ### Parameters  
- `props`  
+ *props*  
  The rendering mode, pixel format, remoting options, DPI information, and the minimum DirectX support required for hardware rendering.  
   
 ### Return Value  

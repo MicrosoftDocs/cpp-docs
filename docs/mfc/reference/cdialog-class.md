@@ -52,7 +52,7 @@ class CDialog : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialog::OnCancel](#oncancel)|Override to perform the Cancel button or ESC key action. The default closes the dialog box and **DoModal** returns **IDCANCEL**.|  
+|[CDialog::OnCancel](#oncancel)|Override to perform the Cancel button or ESC key action. The default closes the dialog box and `DoModal` returns **IDCANCEL**.|  
 |[CDialog::OnOK](#onok)|Override to perform the OK button action in a modal dialog box. The default closes the dialog box and `DoModal` returns **IDOK**.|  
   
 ## Remarks  
@@ -68,7 +68,7 @@ class CDialog : public CWnd
   
  A data map is generated to automatically handle the exchange of data between the member variables and the dialog box's controls. The data map provides functions that initialize the controls in the dialog box with the proper values, retrieve the data, and validate the data.  
   
- To create a modal dialog box, construct an object on the stack using the constructor for your derived dialog class and then call `DoModal` to create the dialog window and its controls. If you wish to create a modeless dialog, call **Create** in the constructor of your dialog class.  
+ To create a modal dialog box, construct an object on the stack using the constructor for your derived dialog class and then call `DoModal` to create the dialog window and its controls. If you wish to create a modeless dialog, call `Create` in the constructor of your dialog class.  
   
  You can also create a template in memory by using a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) data structure as described in the Windows SDK. After you construct a `CDialog` object, call [CreateIndirect](#createindirect) to create a modeless dialog box, or call [InitModalIndirect](#initmodalindirect) and [DoModal](#domodal) to create a modal dialog box.  
   
@@ -121,13 +121,13 @@ CDialog();
 ```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a dialog-box template resource.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-box template resource.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
   
 ### Remarks  
@@ -137,10 +137,10 @@ CDialog();
   
  After you construct a modal dialog box with one of the above methods, call `DoModal`.  
   
- To construct a modeless dialog box, use the protected form of the `CDialog` constructor. The constructor is protected because you must derive your own dialog-box class to implement a modeless dialog box. Construction of a modeless dialog box is a two-step process. First call the constructor; then call the **Create** member function to create a resource-based dialog box, or call `CreateIndirect` to create the dialog box from a template in memory.  
+ To construct a modeless dialog box, use the protected form of the `CDialog` constructor. The constructor is protected because you must derive your own dialog-box class to implement a modeless dialog box. Construction of a modeless dialog box is a two-step process. First call the constructor; then call the `Create` member function to create a resource-based dialog box, or call `CreateIndirect` to create the dialog box from a template in memory.  
   
 ##  <a name="create"></a>  CDialog::Create  
- Call **Create** to create a modeless dialog box using a dialog-box template from a resource.  
+ Call `Create` to create a modeless dialog box using a dialog-box template from a resource.  
   
 ```  
 virtual BOOL Create(
@@ -154,30 +154,30 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a dialog-box template resource.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-box template resource.  
   
 ### Return Value  
  Both forms return nonzero if dialog-box creation and initialization were successful; otherwise 0.  
   
 ### Remarks  
- You can put the call to **Create** inside the constructor or call it after the constructor is invoked.  
+ You can put the call to `Create` inside the constructor or call it after the constructor is invoked.  
   
- Two forms of the **Create** member function are provided for access to the dialog-box template resource by either template name or template ID number (for example, IDD_DIALOG1).  
+ Two forms of the `Create` member function are provided for access to the dialog-box template resource by either template name or template ID number (for example, IDD_DIALOG1).  
   
- For either form, pass a pointer to the parent window object. If `pParentWnd` is **NULL**, the dialog box will be created with its parent or owner window set to the main application window.  
+ For either form, pass a pointer to the parent window object. If *pParentWnd* is **NULL**, the dialog box will be created with its parent or owner window set to the main application window.  
   
- The **Create** member function returns immediately after it creates the dialog box.  
+ The `Create` member function returns immediately after it creates the dialog box.  
   
  Use the **WS_VISIBLE** style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow`. For further dialog-box styles and their application, see the [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the Windows SDK and [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) in the *MFC Reference*.  
   
- Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the **Create** function.  
+ Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `Create` function.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#62](../../mfc/codesnippet/cpp/cdialog-class_1.cpp)]  
@@ -198,16 +198,16 @@ virtual BOOL CreateIndirect(
 ```  
   
 ### Parameters  
- `lpDialogTemplate`  
+ *lpDialogTemplate*  
  Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the Windows SDK.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the dialog object's parent window object (of type [CWnd](../../mfc/reference/cwnd-class.md)). If it is **NULL**, the dialog object's parent window is set to the main application window.  
   
- `lpDialogInit`  
+ *lpDialogInit*  
  Points to a **DLGINIT** resource.  
   
- `hDialogTemplate`  
+ *hDialogTemplate*  
  Contains a handle to global memory containing a dialog-box template. This template is in the form of a **DLGTEMPLATE** structure and data for each control in the dialog box.  
   
 ### Return Value  
@@ -230,7 +230,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- An `int` value that specifies the value of the `nResult` parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is -1 if the function could not create the dialog box, or **IDABORT** if some other error occurred, in which case the output window will contain error information from [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ An **int** value that specifies the value of the *nResult* parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is -1 if the function could not create the dialog box, or **IDABORT** if some other error occurred, in which case the output window will contain error information from [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
  This member function handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.  
@@ -251,11 +251,11 @@ void EndDialog(int nResult);
 ```  
   
 ### Parameters  
- `nResult`  
+ *nResult*  
  Contains the value to be returned from the dialog box to the caller of `DoModal`.  
   
 ### Remarks  
- This member function returns `nResult` as the return value of `DoModal`. You must use the `EndDialog` function to complete processing whenever a modal dialog box is created.  
+ This member function returns *nResult* as the return value of `DoModal`. You must use the `EndDialog` function to complete processing whenever a modal dialog box is created.  
   
  You can call `EndDialog` at any time, even in [OnInitDialog](#oninitdialog), in which case you should close the dialog box before it is shown or before the input focus is set.  
   
@@ -287,11 +287,11 @@ void GotoDlgCtrl(CWnd* pWndCtrl);
 ```  
   
 ### Parameters  
- `pWndCtrl`  
+ *pWndCtrl*  
  Identifies the window (control) that is to receive the focus.  
   
 ### Remarks  
- To get a pointer to the control (child window) to pass as `pWndCtrl`, call the `CWnd::GetDlgItem` member function, which returns a pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object.  
+ To get a pointer to the control (child window) to pass as *pWndCtrl*, call the `CWnd::GetDlgItem` member function, which returns a pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object.  
   
 ### Example  
   See the example for [CWnd::GetDlgItem](../../mfc/reference/cwnd-class.md#getdlgitem).  
@@ -312,16 +312,16 @@ BOOL InitModalIndirect(
 ```  
   
 ### Parameters  
- `lpDialogTemplate`  
+ *lpDialogTemplate*  
  Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the Windows SDK.  
   
- `hDialogTemplate`  
+ *hDialogTemplate*  
  Contains a handle to global memory containing a dialog-box template. This template is in the form of a **DLGTEMPLATE** structure and data for each control in the dialog box.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
   
- `lpDialogInit`  
+ *lpDialogInit*  
  Points to a **DLGINIT** resource.  
   
 ### Return Value  
@@ -340,7 +340,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.  
   
 ### Remarks  
@@ -348,7 +348,7 @@ void MapDialogRect(LPRECT lpRect) const;
   
  The **GetDialogBaseUnits** Windows function returns size information for the system font, but you can specify a different font for each dialog box if you use the **DS_SETFONT** style in the resource-definition file. The `MapDialogRect` Windows function uses the appropriate font for this dialog box.  
   
- The `MapDialogRect` member function replaces the dialog-box units in `lpRect` with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.  
+ The `MapDialogRect` member function replaces the dialog-box units in *lpRect* with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.  
   
 ##  <a name="nextdlgctrl"></a>  CDialog::NextDlgCtrl  
  Moves the focus to the next control in the dialog box.  
@@ -427,7 +427,7 @@ Virtual void OnSetFont(CFont* pFont);
 ```  
   
 ### Parameters  
- [in] `pFont`  
+ [in] *pFont*  
  Specifies a pointer to the font that will be used as the default font for all controls in this dialog box.  
   
 ### Remarks  
@@ -456,7 +456,7 @@ void SetDefID(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Specifies the ID of the pushbutton control that will become the default.  
   
 ##  <a name="sethelpid"></a>  CDialog::SetHelpID  

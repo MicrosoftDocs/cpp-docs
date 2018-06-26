@@ -32,7 +32,7 @@ struct CDaoRelationInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the relation object. For more information, see the topic "Name Property" in DAO Help.  
   
  *m_strTable*  
@@ -41,7 +41,7 @@ struct CDaoRelationInfo
  *m_strForeignTable*  
  Names the foreign table in the relation. A foreign table is a table used to contain foreign keys. Generally, you use a foreign table to establish or enforce referential integrity. The foreign table is usually on the many side of a one-to-many relationship. Examples of foreign tables include tables containing codes for the American states or Canadian provinces or customer orders.  
   
- `m_lAttributes`  
+ *m_lAttributes*  
  Contains information about the relation type. The value of this member can be any of the following:  
   
 - **dbRelationUnique** Relationship is one-to-one.  
@@ -58,11 +58,11 @@ struct CDaoRelationInfo
   
 - **dbRelationDeleteCascade** Deletions will cascade.  
   
- `m_pFieldInfos`  
- A pointer to an array of [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) structures. The array contains one object for each field in the relation. The `m_nFields` data member gives a count of the array elements.  
+ *m_pFieldInfos*  
+ A pointer to an array of [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) structures. The array contains one object for each field in the relation. The *m_nFields* data member gives a count of the array elements.  
   
- `m_nFields`  
- The number of `CDaoRelationFieldInfo` objects in the `m_pFieldInfos` data member.  
+ *m_nFields*  
+ The number of `CDaoRelationFieldInfo` objects in the *m_pFieldInfos* data member.  
   
 ## Remarks  
  The references to Primary and Secondary above indicate how the information is returned by the [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) member function in class `CDaoDatabase`.  
