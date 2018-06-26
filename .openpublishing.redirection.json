@@ -3266,6 +3266,131 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/operator-inequality-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_neq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-than-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_lt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-less-or-equal-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_lteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-equality-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_eq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/perator-greater-than-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_gt",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/operator-greater-or-equal-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_gteq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-const-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#const_reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-container-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#container_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-difference-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#difference_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-empty-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#empty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-generic-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#generic_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-generic-value-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#generic_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-get-container-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#get_container",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-operator-assign-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#op_as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-pop-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#pop",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-push-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#push",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-reference-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-size-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-size-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#size_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-stack-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#stack",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-to-array-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#to_array",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-top-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#top",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-top-item-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#top_item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/stack-value-type-stl-clr.md",
+            "redirect_url": "/cpp/dotnet/stack-stl-clr#value_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
