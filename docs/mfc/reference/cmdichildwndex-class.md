@@ -122,10 +122,10 @@ BOOL AddPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the pane.  
   
- [in] `bTail`  
+ [in] *bTail*  
  `TRUE` to add the pane to the end of the list of panes for the docking manager; otherwise, `FALSE`.  
   
 ### Return Value  
@@ -139,7 +139,7 @@ void AddTabbedPane(CDockablePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the pane.  
   
 ##  <a name="adjustdockinglayout"></a>  CMDIChildWndEx::AdjustDockingLayout  
@@ -150,7 +150,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### Parameters  
- [in] `hdwp`  
+ [in] *hdwp*  
  Handle to a deferred window position structure.  
   
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs  
@@ -188,17 +188,17 @@ void DockPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the pane.  
   
- [in] `nDockBarID`  
+ [in] *nDockBarID*  
  The ID of the pane.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  A pointer to a rectangle.  
   
 ### Remarks  
- The `lpRect` parameter is not used.  
+ The *lpRect* parameter is not used.  
   
 ##  <a name="dockpaneleftof"></a>  CMDIChildWndEx::DockPaneLeftOf  
  Docks one pane to the left of another pane.  
@@ -210,17 +210,17 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### Parameters  
- `pBar`  
+ *pBar*  
  A pointer to the pane that is to be docked.  
   
- `pLeftOf`  
+ *pLeftOf*  
  A pointer to the pane that serves as the point of reference.  
   
 ### Return Value  
  `TRUE` on success, `FALSE` on failure.  
   
 ### Remarks  
- This method takes the pane specified by `pBar` and docks it at the left side of the pane specified by `pLeftOf`.  
+ This method takes the pane specified by *pBar* and docks it at the left side of the pane specified by *pLeftOf*.  
   
  Call this method when you want to dock several panes in predefined order.  
   
@@ -232,7 +232,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Specifies the sides of the main frame window that is enabled. Use one or more of the following flags.  
   
 - `CBRS_ALIGN_LEFT`  
@@ -254,7 +254,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Specifies the docking alignment to enable.  
   
 ### Return Value  
@@ -336,7 +336,7 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The control ID of the pane to find.  
   
 ### Return Value  
@@ -389,14 +389,14 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the pane to insert.  
   
- [in] `pTarget`  
+ [in] *pTarget*  
  A pointer to the adjacent pane.  
   
- [in] `bAfter`  
- If `TRUE`, `pControlBar` is inserted after `pTarget`. If `FALSE`, `pControlBar` is inserted before `pTarget`.  
+ [in] *bAfter*  
+ If `TRUE`, *pControlBar* is inserted after *pTarget*. If `FALSE`, *pControlBar* is inserted before *pTarget*.  
   
 ### Return Value  
  `TRUE` if the method succeeds, `FALSE` otherwise.  
@@ -412,13 +412,13 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The specified point.  
   
- [in] `dwBarAlignment`  
+ [in] *dwBarAlignment*  
  Specifies which edge the point is near. Possible values are `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, and `CBRS_ALIGN_BOTTOM`  
   
- [in] `bOuterEdge`  
+ [in] *bOuterEdge*  
  `TRUE` if the point is near the outer border of the dock site; `FALSE` otherwise.  
   
 ### Return Value  
@@ -463,7 +463,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] `pFrame`  
+ [in] *pFrame*  
  A pointer to a mini-frame window.  
   
 ### Return Value  
@@ -479,10 +479,10 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### Parameters  
- [in] `bPreview`  
+ [in] *bPreview*  
  If `TRUE`, enter print preview mode. If `FALSE`, exit print preview mode.  
   
- [in] `pState`  
+ [in] *pState*  
  A pointer to the print preview state structure.  
   
 ##  <a name="onupdateframetitle"></a>  CMDIChildWndEx::OnUpdateFrameTitle  
@@ -493,7 +493,7 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### Parameters  
- [in] `bAddToTitle`  
+ [in] *bAddToTitle*  
  If `TRUE`, add the document name to the title.  
   
 ##  <a name="panefrompoint"></a>  CMDIChildWndEx::PaneFromPoint  
@@ -514,19 +514,19 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  Specifies the point, in screen coordinates, to check.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Increase the search area by this amount. A pane satisfies the search criteria if the given point falls in the increased area.  
   
- [in] `bExactBar`  
- `TRUE` to ignore the `nSensitivity` parameter; otherwise, `FALSE`.  
+ [in] *bExactBar*  
+ `TRUE` to ignore the *nSensitivity* parameter; otherwise, `FALSE`.  
   
- [in] `pRTCBarType`  
+ [in] *pRTCBarType*  
  If not `NULL`, the method searches only panes of the specified type.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  If a pane is found at the specified point, this parameter contains the side of the pane that was closest to the specified point. For more information, see the Remarks section.  
   
 ### Return Value  
@@ -535,7 +535,7 @@ CBasePane* PaneFromPoint(
 ### Remarks  
  Call this method to determine whether a pane contains the specified point according to the specified conditions such as runtime class and visibility.  
   
- When the function returns and a pane was found, `dwAlignment` contains the alignment of the specified point. For example, if the point was closest to the top of the pane, `dwAlignment` is set to `CBRS_ALIGN_TOP`.  
+ When the function returns and a pane was found, *dwAlignment* contains the alignment of the specified point. For example, if the point was closest to the top of the pane, *dwAlignment* is set to `CBRS_ALIGN_TOP`.  
   
 ##  <a name="recalclayout"></a>  CMDIChildWndEx::RecalcLayout  
  Recalculates the layout of the window.  
@@ -545,7 +545,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- [in] `bNotify`  
+ [in] *bNotify*  
  If `TRUE`, the active in-place item for the window receives notification of the layout change.  
   
 ##  <a name="removepanefromdockmanager"></a>  CMDIChildWndEx::RemovePaneFromDockManager  
@@ -561,19 +561,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the pane to remove.  
   
- [in] `bDestroy`  
+ [in] *bDestroy*  
  If `TRUE`, the removed pane is destroyed.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  If `TRUE`, adjust the docking layout immediately.  
   
- [in] `bAutoHide`  
+ [in] *bAutoHide*  
  If `TRUE`, the docking layout is related to the list of autohide bars. If `FALSE`, the docking layout is related to the list of regular panes.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  A pointer to a pane that replaces the removed pane.  
   
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup  
@@ -584,7 +584,7 @@ void SetRelatedTabGroup(CMFCTabCtrl* p);
 ```  
   
 ### Parameters  
- [in] `p`  
+ [in] *p*  
   
 ### Remarks  
   
@@ -600,10 +600,10 @@ void ShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bShow`  
- [in] `bDelay`  
- [in] `bActivate`  
+ [in] *pBar*  
+ [in] *bShow*  
+ [in] *bDelay*  
+ [in] *bActivate*  
   
 ### Remarks  
   
@@ -615,7 +615,7 @@ virtual void UpdateTaskbarTabIcon(HICON hIcon);
 ```  
   
 ### Parameters  
- `hIcon`  
+ *hIcon*  
  A handle to an icon to display on the Windows 7 taskbar tab.  
   
 ### Remarks  
@@ -628,7 +628,7 @@ void UnregisterTaskbarTab(BOOL bCheckRegisteredMDIChildCount = TRUE);
 ```  
   
 ### Parameters  
- `bCheckRegisteredMDIChildCount`  
+ *bCheckRegisteredMDIChildCount*  
  Specifies whether this function needs to check the number of MDI children registered with MDI tabs. If this number is 0, then this function removes the clipping rectangle from the application's taskbar thumbnail.  
   
 ### Remarks  
@@ -641,7 +641,7 @@ virtual BOOL SetTaskbarThumbnailClipRect(CRect rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Specifies the new clipping rectangle. If the rectangle is empty or null, the clipping is removed.  
   
 ### Return Value  
@@ -657,7 +657,7 @@ void SetTaskbarTabProperties(DWORD dwFlags);
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](http://msdn.microsoft.com/library/dd562049\(vs.85\).aspx).  
   
 ### Remarks  
@@ -670,7 +670,7 @@ void SetTaskbarTabOrder(CMDIChildWndEx* pWndBefore = NULL);
 ```  
   
 ### Parameters  
- `pWndBefore`  
+ *pWndBefore*  
  A pointer to the MDI child window whose thumbnail is inserted to the left. This window must already be registered through `RegisterTaskbarTab`. If this value is `NULL`, the new thumbnail is added to the end of the list.  
   
 ### Remarks  
@@ -692,7 +692,7 @@ virtual void RegisterTaskbarTab(CMDIChildWndEx* pWndBefore = NULL);
 ```  
   
 ### Parameters  
- `pWndBefore`  
+ *pWndBefore*  
  A pointer to the MDI child window whose thumbnail is inserted to the left. This window must already be registered through `RegisterTaskbarTab`. If this value is `NULL`, the new thumbnail is added to the end of the list.  
   
 ### Remarks  
@@ -709,16 +709,16 @@ virtual BOOL OnTaskbarTabThumbnailStretch(
 ```  
   
 ### Parameters  
- `hBmpDst`  
+ *hBmpDst*  
  A handle to a destination bitmap.  
   
- `rectDst`  
+ *rectDst*  
  Specifies the destination rectangle.  
   
- `hBmpSrc`  
+ *hBmpSrc*  
  A handle to a source bitmap.  
   
- `rectSrc`  
+ *rectSrc*  
  Specifies the source rectangle.  
   
 ### Remarks  
@@ -735,13 +735,13 @@ virtual int OnTaskbarTabThumbnailMouseActivate(
 ```  
   
 ### Parameters  
- `pDesktopWnd`  
+ *pDesktopWnd*  
  Specifies a pointer to the top-level parent window of the window being activated. The pointer may be temporary and should not be stored.  
   
- `nHitTest`  
+ *nHitTest*  
  Specifies the hit-test area code. A hit test is a test that determines the location of the cursor.  
   
- `message`  
+ *message*  
  Specifies the mouse message number.  
   
 ### Remarks  
@@ -758,13 +758,13 @@ virtual void OnTaskbarTabThumbnailActivate(
 ```  
   
 ### Parameters  
- `nState`  
+ *nState*  
  Specifies whether the `CWnd` is being activated or deactivated.  
   
- `pWndOther`  
+ *pWndOther*  
  Pointer to the `CWnd` being activated or deactivated. The pointer can be `NULL`, and it may be temporary.  
   
- `bMinimized`  
+ *bMinimized*  
  Specifies the minimized state of the `CWnd` being activated or deactivated. A value of `TRUE` indicates the window is minimized.  
   
 ### Remarks  
@@ -789,10 +789,10 @@ virtual HBITMAP OnGetIconicThumbnail(
 ```  
   
 ### Parameters  
- `nWidth`  
+ *nWidth*  
  Specifies the width of the required bitmap.  
   
- `nHeight`  
+ *nHeight*  
  Specifies the height of the required bitmap.  
   
 ### Remarks  
@@ -807,10 +807,10 @@ virtual HBITMAP OnGetIconicLivePreviewBitmap(
 ```  
   
 ### Parameters  
- `bIsMDIChildActive`  
+ *bIsMDIChildActive*  
  This parameter is `TRUE` if the bitmap is requested for the MDI child, which is currently active and the main window is not minimized. The default processing in this case takes a snapshot of the main window.  
   
- `ptLocation`  
+ *ptLocation*  
  Specifies the location of the bitmap in the main (top level) window client coordinates. This point should be provided by the callee.  
   
 ### Return Value  
@@ -922,7 +922,7 @@ void EnableTaskbarThumbnailClipRect(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  Specifies whether to enable ( `TRUE`), or disable ( `FALSE`) automatic selection of a portion of a window's client area to display.  
   
 ### Remarks  

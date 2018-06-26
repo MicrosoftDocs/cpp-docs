@@ -22,17 +22,17 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
 ```  
   
 #### Parameters  
- `KEY`  
+ *KEY*  
  Class of the object used as the key to the map.  
   
- `ARG_KEY`  
- Data type used for `KEY` arguments; usually a reference to `KEY`.  
+ *ARG_KEY*  
+ Data type used for *KEY* arguments; usually a reference to *KEY*.  
   
- `VALUE`  
+ *VALUE*  
  Class of the object stored in the map.  
   
- `ARG_VALUE`  
- Data type used for `VALUE` arguments; usually a reference to `VALUE`.  
+ *ARG_VALUE*  
+ Data type used for *VALUE* arguments; usually a reference to *VALUE*.  
   
 ## Members  
   
@@ -104,11 +104,11 @@ CMap(INT_PTR nBlockSize = 10);
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  Specifies the memory-allocation granularity for extending the map.  
   
 ### Remarks  
- As the map grows, memory is allocated in units of `nBlockSize` entries.  
+ As the map grows, memory is allocated in units of *nBlockSize* entries.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/cpp/cmap-class_1.cpp)]  
@@ -167,25 +167,25 @@ void GetNextAssoc(
 ```  
   
 ### Parameters  
- `rNextPosition`  
+ *rNextPosition*  
  Specifies a reference to a **POSITION** value returned by a previous `GetNextAssoc` or `GetStartPosition` call.  
   
  *KEY*  
  Template parameter specifying the type of the map's key.  
   
- `rKey`  
+ *rKey*  
  Specifies the returned key of the retrieved element.  
   
  *VALUE*  
  Template parameter specifying the type of the map's value.  
   
- `rValue`  
+ *rValue*  
  Specifies the returned value of the retrieved element.  
   
 ### Remarks  
  This function is most useful for iterating through all the elements in the map. Note that the position sequence is not necessarily the same as the key value sequence.  
   
- If the retrieved element is the last in the map, then the new value of `rNextPosition` is set to **NULL**.  
+ If the retrieved element is the last in the map, then the new value of *rNextPosition* is set to **NULL**.  
   
 ### Example  
  See the example for [CMap::SetAt](#setat).  
@@ -230,10 +230,10 @@ void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);
 ```  
   
 ### Parameters  
- `hashSize`  
+ *hashSize*  
  Number of entries in the hash table.  
   
- `bAllocNow`  
+ *bAllocNow*  
  If **TRUE**, allocates the hash table upon initialization; otherwise the table is allocated when needed.  
   
 ### Remarks  
@@ -263,16 +263,16 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
 ```  
   
 ### Parameters  
- `ARG_KEY`  
- Template parameter specifying the type of the `key` value.  
+ *ARG_KEY*  
+ Template parameter specifying the type of the *key* value.  
   
- `key`  
+ *key*  
  Specifies the key that identifies the element to be looked up.  
   
  *VALUE*  
  Specifies the type of the value to be looked up.  
   
- `rValue`  
+ *rValue*  
  Receives the looked-up value.  
   
 ### Return Value  
@@ -295,10 +295,10 @@ VALUE& operator[](arg_key key);
  *VALUE*  
  Template parameter specifying the type of the map value.  
   
- `ARG_KEY`  
+ *ARG_KEY*  
  Template parameter specifying the type of the key value.  
   
- `key`  
+ *key*  
  The key used to retrieve the value from the map.  
   
 ### Remarks  
@@ -327,7 +327,7 @@ CPair* PGetFirstAssoc();
  [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/cpp/cmap-class_4.cpp)]  
   
 ##  <a name="pgetnextassoc"></a>  CMap::PGetNextAssoc  
- Retrieves the map element pointed to by `pAssocRec`.  
+ Retrieves the map element pointed to by *pAssocRec*.  
   
 ```  
 const CPair *PGetNextAssoc(const CPair* pAssocRet) const;  
@@ -357,7 +357,7 @@ CPair* PLookup(ARG_KEY key);
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Key for the element to be searched for.  
   
 ### Return Value  
@@ -390,10 +390,10 @@ BOOL RemoveKey(ARG_KEY key);
 ```  
   
 ### Parameters  
- `ARG_KEY`  
+ *ARG_KEY*  
  Template parameter specifying the type of the key.  
   
- `key`  
+ *key*  
  Key for the element to be removed.  
   
 ### Return Value  
@@ -413,16 +413,16 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
 ```  
   
 ### Parameters  
- `ARG_KEY`  
- Template parameter specifying the type of the `key` parameter.  
+ *ARG_KEY*  
+ Template parameter specifying the type of the *key* parameter.  
   
- `key`  
+ *key*  
  Specifies the key of the new element.  
   
- `ARG_VALUE`  
- Template parameter specifying the type of the `newValue` parameter.  
+ *ARG_VALUE*  
+ Template parameter specifying the type of the *newValue* parameter.  
   
- `newValue`  
+ *newValue*  
  Specifies the value of the new element.  
   
 ### Remarks  
