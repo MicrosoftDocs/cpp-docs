@@ -82,23 +82,23 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the scroll bar's style. Apply any combination of [scroll-bar styles](../../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles) to the scroll bar.  
   
- `rect`  
+ *rect*  
  Specifies the scroll bar's size and position. Can be either a `RECT` structure or a `CRect` object.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the scroll bar's parent window, usually a `CDialog` object. It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  The scroll bar's control ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CScrollBar` object in two steps. First, call the constructor, which constructs the `CScrollBar` object; then call **Create**, which creates and initializes the associated Windows scroll bar and attaches it to the `CScrollBar` object.  
+ You construct a `CScrollBar` object in two steps. First, call the constructor, which constructs the `CScrollBar` object; then call `Create`, which creates and initializes the associated Windows scroll bar and attaches it to the `CScrollBar` object.  
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a scroll bar:  
   
@@ -134,7 +134,7 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
 ```  
   
 ### Parameters  
- `nArrowFlags`  
+ *nArrowFlags*  
  Specifies whether the scroll arrows are enabled or disabled and which arrows are enabled or disabled. This parameter can be one of the following values:  
   
 - **ESB_ENABLE_BOTH** Enables both arrows of a scroll bar.  
@@ -178,10 +178,10 @@ BOOL GetScrollInfo(
 ```  
   
 ### Parameters  
- `lpScrollInfo`  
+ *lpScrollInfo*  
  A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the Windows SDK for more information about this structure.  
   
- `nMask`  
+ *nMask*  
  Specifies the scroll bar parameters to retrieve. Typical usage, SIF_ALL, specifies a combination of SIF_PAGE, SIF_POS, SIF_TRACKPOS, and SIF_RANGE. See `SCROLLINFO` for more information on the nMask values.  
   
 ### Return Value  
@@ -227,7 +227,7 @@ int GetScrollPos() const;
   See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).  
   
 ##  <a name="getscrollrange"></a>  CScrollBar::GetScrollRange  
- Copies the current minimum and maximum scroll-bar positions for the given scroll bar to the locations specified by `lpMinPos` and `lpMaxPos`.  
+ Copies the current minimum and maximum scroll-bar positions for the given scroll bar to the locations specified by *lpMinPos* and *lpMaxPos*.  
   
 ```  
 void GetScrollRange(
@@ -236,10 +236,10 @@ void GetScrollRange(
 ```  
   
 ### Parameters  
- `lpMinPos`  
+ *lpMinPos*  
  Points to the integer variable that is to receive the minimum position.  
   
- `lpMaxPos`  
+ *lpMaxPos*  
  Points to the integer variable that is to receive the maximum position.  
   
 ### Remarks  
@@ -258,11 +258,11 @@ BOOL SetScrollInfo(
 ```  
   
 ### Parameters  
- `lpScrollInfo`  
+ *lpScrollInfo*  
  A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure.  
   
- `bRedraw`  
- Specifies whether the scroll bar should be redrawn to reflect the new information. If `bRedraw` is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
+ *bRedraw*  
+ Specifies whether the scroll bar should be redrawn to reflect the new information. If *bRedraw* is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
   
 ### Return Value  
  If successful, the return is **TRUE**. Otherwise, it is **FALSE**.  
@@ -276,7 +276,7 @@ BOOL SetScrollInfo(
  [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]  
   
 ##  <a name="setscrollpos"></a>  CScrollBar::SetScrollPos  
- Sets the current position of a scroll box to that specified by `nPos` and, if specified, redraws the scroll bar to reflect the new position.  
+ Sets the current position of a scroll box to that specified by *nPos* and, if specified, redraws the scroll bar to reflect the new position.  
   
 ```  
 int SetScrollPos(
@@ -285,17 +285,17 @@ int SetScrollPos(
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  Specifies the new position for the scroll box. It must be within the scrolling range.  
   
- `bRedraw`  
- Specifies whether the scroll bar should be redrawn to reflect the new position. If `bRedraw` is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
+ *bRedraw*  
+ Specifies whether the scroll bar should be redrawn to reflect the new position. If *bRedraw* is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
   
 ### Return Value  
  Specifies the previous position of the scroll box if successful; otherwise 0.  
   
 ### Remarks  
- Set `bRedraw` to **FALSE** whenever the scroll bar will be redrawn by a subsequent call to another function to avoid having the scroll bar redrawn twice within a short interval.  
+ Set *bRedraw* to **FALSE** whenever the scroll bar will be redrawn by a subsequent call to another function to avoid having the scroll bar redrawn twice within a short interval.  
   
 ### Example  
   See the example for [CScrollBar::SetScrollRange](#setscrollrange).  
@@ -311,23 +311,23 @@ void SetScrollRange(
 ```  
   
 ### Parameters  
- `nMinPos`  
+ *nMinPos*  
  Specifies the minimum scrolling position.  
   
- `nMaxPos`  
+ *nMaxPos*  
  Specifies the maximum scrolling position.  
   
- `bRedraw`  
- Specifies whether the scroll bar should be redrawn to reflect the change. If `bRedraw` is **TRUE**, the scroll bar is redrawn; if **FALSE**, it is not redrawn. It is redrawn by default.  
+ *bRedraw*  
+ Specifies whether the scroll bar should be redrawn to reflect the change. If *bRedraw* is **TRUE**, the scroll bar is redrawn; if **FALSE**, it is not redrawn. It is redrawn by default.  
   
 ### Remarks  
- Set `nMinPos` and `nMaxPos` to 0 to hide standard scroll bars.  
+ Set *nMinPos* and *nMaxPos* to 0 to hide standard scroll bars.  
   
  Do not call this function to hide a scroll bar while processing a scroll-bar notification message.  
   
- If a call to `SetScrollRange` immediately follows a call to the `SetScrollPos` member function, set `bRedraw` in `SetScrollPos` to 0 to prevent the scroll bar from being redrawn twice.  
+ If a call to `SetScrollRange` immediately follows a call to the `SetScrollPos` member function, set *bRedraw* in `SetScrollPos` to 0 to prevent the scroll bar from being redrawn twice.  
   
- The difference between the values specified by `nMinPos` and `nMaxPos` must not be greater than 32,767. The default range for a scroll-bar control is empty (both `nMinPos` and `nMaxPos` are 0).  
+ The difference between the values specified by *nMinPos* and *nMaxPos* must not be greater than 32,767. The default range for a scroll-bar control is empty (both *nMinPos* and *nMaxPos* are 0).  
   
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#4](../../mfc/reference/codesnippet/cpp/cscrollbar-class_4.cpp)]  
@@ -340,7 +340,7 @@ void ShowScrollBar(BOOL bShow = TRUE);
 ```  
   
 ### Parameters  
- `bShow`  
+ *bShow*  
  Specifies whether the scroll bar is shown or hidden. If this parameter is **TRUE**, the scroll bar is shown; otherwise it is hidden.  
   
 ### Remarks  

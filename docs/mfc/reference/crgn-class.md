@@ -87,20 +87,20 @@ int CombineRgn(
 ```  
   
 ### Parameters  
- `pRgn1`  
+ *pRgn1*  
  Identifies an existing region.  
   
- `pRgn2`  
+ *pRgn2*  
  Identifies an existing region.  
   
- `nCombineMode`  
+ *nCombineMode*  
  Specifies the operation to be performed when combining the two source regions. It can be any one of the following values:  
   
 - **RGN_AND** Uses overlapping areas of both regions (intersection).  
   
-- **RGN_COPY** Creates a copy of region 1 (identified by `pRgn1`).  
+- **RGN_COPY** Creates a copy of region 1 (identified by *pRgn1*).  
   
-- **RGN_DIFF** Creates a region consisting of the areas of region 1 (identified by `pRgn1`) that are not part of region 2 (identified by `pRgn2`).  
+- **RGN_DIFF** Creates a region consisting of the areas of region 1 (identified by *pRgn1*) that are not part of region 2 (identified by *pRgn2*).  
   
 - **RGN_OR** Combines both regions in their entirety (union).  
   
@@ -118,7 +118,7 @@ int CombineRgn(
 - **SIMPLEREGION** New region has no overlapping borders.  
   
 ### Remarks  
- The regions are combined as specified by `nCombineMode`.  
+ The regions are combined as specified by *nCombineMode*.  
   
  The two specified regions are combined, and the resulting region handle is stored in the `CRgn` object. Thus, whatever region is stored in the `CRgn` object is replaced by the combined region.  
   
@@ -130,14 +130,14 @@ int CombineRgn(
  [!code-cpp[NVC_MFCDocView#144](../../mfc/codesnippet/cpp/crgn-class_1.cpp)]  
   
 ##  <a name="copyrgn"></a>  CRgn::CopyRgn  
- Copies the region defined by `pRgnSrc` into the `CRgn` object.  
+ Copies the region defined by *pRgnSrc* into the `CRgn` object.  
   
 ```  
 int CopyRgn(CRgn* pRgnSrc);
 ```  
   
 ### Parameters  
- `pRgnSrc`  
+ *pRgnSrc*  
  Identifies an existing region.  
   
 ### Return Value  
@@ -169,23 +169,23 @@ BOOL CreateEllipticRgn(
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the logical x-coordinate of the upper-left corner of the bounding rectangle of the ellipse.  
   
- `y1`  
+ *y1*  
  Specifies the logical y-coordinate of the upper-left corner of the bounding rectangle of the ellipse.  
   
- `x2`  
+ *x2*  
  Specifies the logical x-coordinate of the lower-right corner of the bounding rectangle of the ellipse.  
   
- `y2`  
+ *y2*  
  Specifies the logical y-coordinate of the lower-right corner of the bounding rectangle of the ellipse.  
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
   
 ### Remarks  
- The region is defined by the bounding rectangle specified by `x1`, `y1`, `x2`, and `y2`. The region is stored in the `CRgn` object.  
+ The region is defined by the bounding rectangle specified by *x1*, *y1*, *x2*, and *y2*. The region is stored in the `CRgn` object.  
   
  The size of a region is limited to 32,767 by 32,767 logical units or 64K of memory, whichever is smaller.  
   
@@ -202,14 +202,14 @@ BOOL CreateEllipticRgnIndirect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or a `CRect` object that contains the logical coordinates of the upper-left and lower-right corners of the bounding rectangle of the ellipse.  
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
   
 ### Remarks  
- The region is defined by the structure or object pointed to by `lpRect` and is stored in the `CRgn` object.  
+ The region is defined by the structure or object pointed to by *lpRect* and is stored in the `CRgn` object.  
   
  The size of a region is limited to 32,767 by 32,767 logical units or 64K of memory, whichever is smaller.  
   
@@ -232,10 +232,10 @@ BOOL CreateFromData(
  *lpXForm*  
  Points to an [XFORM](../../mfc/reference/xform-structure.md) data structure that defines the transformation to be performed on the region. If this pointer is **NULL**, the identity transformation is used.  
   
- `nCount`  
- Specifies the number of bytes pointed to by `pRgnData`.  
+ *nCount*  
+ Specifies the number of bytes pointed to by *pRgnData*.  
   
- `pRgnData`  
+ *pRgnData*  
  Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that contains the region data.  
   
 ### Return Value  
@@ -252,14 +252,14 @@ BOOL CreateFromPath(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Identifies a device context that contains a closed path.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- The device context identified by the `pDC` parameter must contain a closed path. After `CreateFromPath` converts a path into a region, Windows discards the closed path from the device context.  
+ The device context identified by the *pDC* parameter must contain a closed path. After `CreateFromPath` converts a path into a region, Windows discards the closed path from the device context.  
   
 ##  <a name="createpolygonrgn"></a>  CRgn::CreatePolygonRgn  
  Creates a polygonal region.  
@@ -272,7 +272,7 @@ BOOL CreatePolygonRgn(
 ```  
   
 ### Parameters  
- `lpPoints`  
+ *lpPoints*  
  Points to an array of **POINT** structures or an array of `CPoint` objects. Each structure specifies the x-coordinate and y-coordinate of one vertex of the polygon. The **POINT** structure has the following form:  
   
  `typedef struct tagPOINT {`  
@@ -283,10 +283,10 @@ BOOL CreatePolygonRgn(
   
  `} POINT;`  
   
- `nCount`  
- Specifies the number of **POINT** structures or `CPoint` objects in the array pointed to by `lpPoints`.  
+ *nCount*  
+ Specifies the number of **POINT** structures or `CPoint` objects in the array pointed to by *lpPoints*.  
   
- `nMode`  
+ *nMode*  
  Specifies the filling mode for the region. This parameter may be either **ALTERNATE** or **WINDING**.  
   
 ### Return Value  
@@ -318,7 +318,7 @@ BOOL CreatePolyPolygonRgn(
 ```  
   
 ### Parameters  
- `lpPoints`  
+ *lpPoints*  
  Points to an array of **POINT** structures or an array of `CPoint` objects that defines the vertices of the polygons. Each polygon must be explicitly closed because the system does not close them automatically. The polygons are specified consecutively. The **POINT** structure has the following form:  
   
  `typedef struct tagPOINT {`  
@@ -329,13 +329,13 @@ BOOL CreatePolyPolygonRgn(
   
  `} POINT;`  
   
- `lpPolyCounts`  
- Points to an array of integers. The first integer specifies the number of vertices in the first polygon in the `lpPoints` array, the second integer specifies the number of vertices in the second polygon, and so on.  
+ *lpPolyCounts*  
+ Points to an array of integers. The first integer specifies the number of vertices in the first polygon in the *lpPoints* array, the second integer specifies the number of vertices in the second polygon, and so on.  
   
- `nCount`  
- Specifies the total number of integers in the `lpPolyCounts` array.  
+ *nCount*  
+ Specifies the total number of integers in the *lpPolyCounts* array.  
   
- `nPolyFillMode`  
+ *nPolyFillMode*  
  Specifies the polygon-filling mode. This value may be either **ALTERNATE** or **WINDING**.  
   
 ### Return Value  
@@ -366,16 +366,16 @@ BOOL CreateRectRgn(
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the logical x-coordinate of the upper-left corner of the region.  
   
- `y1`  
+ *y1*  
  Specifies the logical y-coordinate of the upper-left corner of the region.  
   
- `x2`  
+ *x2*  
  Specifies the logical x-coordinate of the lower-right corner of the region.  
   
- `y2`  
+ *y2*  
  Specifies the logical y-coordinate of the lower-right corner of the region.  
   
 ### Return Value  
@@ -399,7 +399,7 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object that contains the logical coordinates of the upper-left and lower-right corners of the region. The `RECT` structure has the following form:  
   
  `typedef struct tagRECT {`  
@@ -439,22 +439,22 @@ BOOL CreateRoundRectRgn(
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the logical x-coordinate of the upper-left corner of the region.  
   
- `y1`  
+ *y1*  
  Specifies the logical y-coordinate of the upper-left corner of the region.  
   
- `x2`  
+ *x2*  
  Specifies the logical x-coordinate of the lower-right corner of the region.  
   
- `y2`  
+ *y2*  
  Specifies the logical y-coordinate of the lower-right corner of the region.  
   
  *x3*  
  Specifies the width of the ellipse used to create the rounded corners.  
   
- `y3`  
+ *y3*  
  Specifies the height of the ellipse used to create the rounded corners.  
   
 ### Return Value  
@@ -489,7 +489,7 @@ BOOL EqualRgn(CRgn* pRgn) const;
 ```  
   
 ### Parameters  
- `pRgn`  
+ *pRgn*  
  Identifies a region.  
   
 ### Return Value  
@@ -506,7 +506,7 @@ static CRgn* PASCAL FromHandle(HRGN hRgn);
 ```  
   
 ### Parameters  
- `hRgn`  
+ *hRgn*  
  Specifies a handle to a Windows region.  
   
 ### Return Value  
@@ -525,14 +525,14 @@ int GetRegionData(
 ```  
   
 ### Parameters  
- `lpRgnData`  
+ *lpRgnData*  
  Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that receives the information. If this parameter is **NULL**, the return value contains the number of bytes needed for the region data.  
   
- `nCount`  
- Specifies the size, in bytes, of the `lpRgnData` buffer.  
+ *nCount*  
+ Specifies the size, in bytes, of the *lpRgnData* buffer.  
   
 ### Return Value  
- If the function succeeds and `nCount` specifies an adequate number of bytes, the return value is always `nCount`. If the function fails, or if `nCount` specifies less than adequate number of bytes, the return value is 0 (error).  
+ If the function succeeds and *nCount* specifies an adequate number of bytes, the return value is always *nCount*. If the function fails, or if *nCount* specifies less than adequate number of bytes, the return value is 0 (error).  
   
 ### Remarks  
  This data includes the dimensions of the rectangles that make up the region. This function is used in conjunction with the `CRgn::CreateFromData` function.  
@@ -545,7 +545,7 @@ int GetRgnBox(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object to receive the coordinates of the bounding rectangle. The `RECT` structure has the following form:  
   
  `typedef struct tagRECT {`  
@@ -592,8 +592,8 @@ int OffsetRgn(POINT point);
  *y*  
  Specifies the number of units to move up or down.  
   
- `point`  
- The x-coordinate of `point` specifies the number of units to move left or right. The y-coordinate of `point` specifies the number of units to move up or down. The `point` parameter may be either a **POINT** structure or a `CPoint` object.  
+ *point*  
+ The x-coordinate of *point* specifies the number of units to move left or right. The y-coordinate of *point* specifies the number of units to move up or down. The *point* parameter may be either a **POINT** structure or a `CPoint` object.  
   
 ### Return Value  
  The new region's type. It can be any one of the following values:  
@@ -647,21 +647,21 @@ BOOL PtInRegion(POINT point) const;
  *y*  
  Specifies the logical y-coordinate of the point to test.  
   
- `point`  
- The x- and y-coordinates of `point` specify the x- and y-coordinates of the point to test the value of. The `point` parameter can either be a **POINT** structure or a `CPoint` object.  
+ *point*  
+ The x- and y-coordinates of *point* specify the x- and y-coordinates of the point to test the value of. The *point* parameter can either be a **POINT** structure or a `CPoint` object.  
   
 ### Return Value  
  Nonzero if the point is in the region; otherwise 0.  
   
 ##  <a name="rectinregion"></a>  CRgn::RectInRegion  
- Determines whether any part of the rectangle specified by `lpRect` is within the boundaries of the region stored in the `CRgn` object.  
+ Determines whether any part of the rectangle specified by *lpRect* is within the boundaries of the region stored in the `CRgn` object.  
   
 ```  
 BOOL RectInRegion(LPCRECT lpRect) const;  
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object. The `RECT` structure has the following form:  
   
  `typedef struct tagRECT {`  
@@ -693,23 +693,23 @@ void SetRectRgn(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the x-coordinate of the upper-left corner of the rectangular region.  
   
- `y1`  
+ *y1*  
  Specifies the y-coordinate of the upper-left corner of the rectangular region.  
   
- `x2`  
+ *x2*  
  Specifies the x-coordinate of the lower-right corner of the rectangular region.  
   
- `y2`  
+ *y2*  
  Specifies the y-coordinate of the lower-right corner of the rectangular region.  
   
- `lpRect`  
+ *lpRect*  
  Specifies the rectangular region. Can be either a pointer to a `RECT` structure or a `CRect` object.  
   
 ### Remarks  
- Unlike [CreateRectRgn](#createrectrgn), however, it does not allocate any additional memory from the local Windows application heap. Instead, it uses the space allocated for the region stored in the `CRgn` object. This means that the `CRgn` object must already have been initialized with a valid Windows region before calling `SetRectRgn`. The points given by `x1`, `y1`, `x2`, and `y2` specify the minimum size of the allocated space.  
+ Unlike [CreateRectRgn](#createrectrgn), however, it does not allocate any additional memory from the local Windows application heap. Instead, it uses the space allocated for the region stored in the `CRgn` object. This means that the `CRgn` object must already have been initialized with a valid Windows region before calling `SetRectRgn`. The points given by *x1*, *y1*, *x2*, and *y2* specify the minimum size of the allocated space.  
   
  Use this function instead of the `CreateRectRgn` member function to avoid calls to the local memory manager.  
   

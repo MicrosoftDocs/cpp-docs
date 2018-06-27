@@ -67,7 +67,7 @@ class CScrollView : public CView
   
  Before the `OnDraw` member function of your derived view class is called, `CScrollView` automatically adjusts the viewport origin for the `CPaintDC` device-context object that it passes to `OnDraw`.  
   
- To adjust the viewport origin for the scrolling window, `CScrollView` overrides [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). This adjustment is automatic for the `CPaintDC` device context that `CScrollView` passes to `OnDraw`, but you must call **CScrollView::OnPrepareDC** yourself for any other device contexts you use, such as a `CClientDC`. You can override **CScrollView::OnPrepareDC** to set the pen, background color, and other drawing attributes, but call the base class to do scaling.  
+ To adjust the viewport origin for the scrolling window, `CScrollView` overrides [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). This adjustment is automatic for the `CPaintDC` device context that `CScrollView` passes to `OnDraw`, but you must call `CScrollView::OnPrepareDC` yourself for any other device contexts you use, such as a `CClientDC`. You can override `CScrollView::OnPrepareDC` to set the pen, background color, and other drawing attributes, but call the base class to do scaling.  
   
  Scroll bars can appear in three places relative to a view, as shown in the following cases:  
   
@@ -129,10 +129,10 @@ void FillOutsideRect(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Device context in which the filling is to be done.  
   
- `pBrush`  
+ *pBrush*  
  Brush with which the area is to be filled.  
   
 ### Remarks  
@@ -168,16 +168,16 @@ void GetDeviceScrollSizes(
 ```  
   
 ### Parameters  
- `nMapMode`  
+ *nMapMode*  
  Returns the current mapping mode for this view. For a list of possible values, see `SetScrollSizes`.  
   
- `sizeTotal`  
+ *sizeTotal*  
  Returns the current total size of the scroll view in device units.  
   
- `sizePage`  
+ *sizePage*  
  Returns the current horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll-bar shaft. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
   
- `sizeLine`  
+ *sizeLine*  
  Returns the current horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll arrow. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
   
 ### Remarks  
@@ -234,7 +234,7 @@ void ScrollToPosition(POINT pt);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  The point to scroll to, in logical units. The **x** member must be a positive value (greater than or equal to 0, up to the total size of the view). The same is true for the **y** member when the mapping mode is `MM_TEXT`. The **y** member is negative in mapping modes other than `MM_TEXT`.  
   
 ### Remarks  
@@ -248,7 +248,7 @@ void SetScaleToFitSize(SIZE sizeTotal);
 ```  
   
 ### Parameters  
- `sizeTotal`  
+ *sizeTotal*  
  The horizontal and vertical sizes to which the view is to be scaled. The scroll view's size is measured in logical units. The horizontal size is contained in the **cx** member. The vertical size is contained in the **cy** member. Both **cx** and **cy** must be greater than or equal to 0.  
   
 ### Remarks  
@@ -274,7 +274,7 @@ void SetScrollSizes(
 ```  
   
 ### Parameters  
- `nMapMode`  
+ *nMapMode*  
  The mapping mode to set for this view. Possible values include:  
   
 |Mapping Mode|Logical Unit|Positive y-axis Extends...|  
@@ -288,13 +288,13 @@ void SetScrollSizes(
   
  All of these modes are defined by Windows. Two standard mapping modes, `MM_ISOTROPIC` and `MM_ANISOTROPIC`, are not used for `CScrollView`. The class library provides the `SetScaleToFitSize` member function for scaling the view to window size. Column three in the table above describes the coordinate orientation.  
   
- `sizeTotal`  
+ *sizeTotal*  
  The total size of the scroll view. The **cx** member contains the horizontal extent. The **cy** member contains the vertical extent. Sizes are in logical units. Both **cx** and **cy** must be greater than or equal to 0.  
   
- `sizePage`  
+ *sizePage*  
  The horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll-bar shaft. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
   
- `sizeLine`  
+ *sizeLine*  
  The horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll arrow. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
   
 ### Remarks  
