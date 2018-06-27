@@ -41,7 +41,7 @@ template<typename Value,
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Value  
  The type of an element in the controlled sequence.  
   
@@ -101,7 +101,7 @@ template<typename Value,
 |<xref:System.ICloneable>|Duplicate an object.|  
 |IQueue\<Value, Container>|Maintain generic container adapter.|  
   
-### Remarks  
+## Remarks  
  The object allocates and frees storage for the sequence it controls through an underlying container, of type `Container`, that stores `Value` elements and grows on demand. The object restricts access to just pushing the first element and popping the last element, implementing a first-in first-out queue (also known as a FIFO queue, or simply a queue).  
   
 ## Members

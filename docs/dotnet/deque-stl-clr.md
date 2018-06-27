@@ -57,7 +57,7 @@ template<typename Value>
   
  **Namespace:** cliext  
 
-## Members  
+## Declarations  
   
 |Type Definition|Description|  
 |---------------------|-----------------|  
@@ -138,7 +138,7 @@ template<typename Value>
   
  Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does `not` destroy its elements.  
  
-## Member Definitions
+## Members
 
 ## <a name="assign"></a> deque::assign (STL/CLR)
 Replaces all elements.  
