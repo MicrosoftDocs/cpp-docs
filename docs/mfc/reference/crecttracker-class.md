@@ -81,16 +81,16 @@ virtual void AdjustRect(
 ```  
   
 ### Parameters  
- `nHandle`  
+ *nHandle*  
  Index of handle used.  
   
- `lpRect`  
+ *lpRect*  
  Pointer to the current size of the rectangle. (The size of a rectangle is given by its height and width.)  
   
 ### Remarks  
  The default behavior of this function allows the rectangle's orientation to change only when `Track` and `TrackRubberBand` are called with inverting allowed.  
   
- Override this function to control the adjustment of the tracking rectangle during a dragging operation. One method is to adjust the coordinates specified by `lpRect` before returning.  
+ Override this function to control the adjustment of the tracking rectangle during a dragging operation. One method is to adjust the coordinates specified by *lpRect* before returning.  
   
  Special features that are not directly supported by `CRectTracker`, such as snap-to-grid or keep-aspect-ratio, can be implemented by overriding this function.  
   
@@ -107,10 +107,10 @@ CRectTracker(
 ```  
   
 ### Parameters  
- `lpSrcRect`  
+ *lpSrcRect*  
  The coordinates of the rectangle object.  
   
- `nStyle`  
+ *nStyle*  
  Specifies the style of the `CRectTracker` object. The following styles are supported:  
   
 - **CRectTracker::solidLine** Use a solid line for the rectangle border.  
@@ -126,7 +126,7 @@ CRectTracker(
 - **CRectTracker::hatchInside** Hatched pattern covers the entire rectangle.  
   
 ### Remarks  
- The default constructor initializes the `CRectTracker` object with the values from `lpSrcRect` and initializes other sizes to system defaults. If the object is created with no parameters, the `m_rect` and `m_nStyle` data members are uninitialized.  
+ The default constructor initializes the `CRectTracker` object with the values from *lpSrcRect* and initializes other sizes to system defaults. If the object is created with no parameters, the `m_rect` and `m_nStyle` data members are uninitialized.  
   
 ##  <a name="draw"></a>  CRectTracker::Draw  
  Call this function to draw the rectangle's outer lines and inner region.  
@@ -136,7 +136,7 @@ void Draw(CDC* pDC) const;
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the device context on which to draw.  
   
 ### Remarks  
@@ -154,16 +154,16 @@ virtual void DrawTrackerRect(
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Pointer to the `RECT` that contains the rectangle to draw.  
   
- `pWndClipTo`  
+ *pWndClipTo*  
  Pointer to the window to use in clipping the rectangle.  
   
- `pDC`  
+ *pDC*  
  Pointer to the device context on which to draw.  
   
- `pWnd`  
+ *pWnd*  
  Pointer to the window on which the drawing will occur.  
   
 ### Remarks  
@@ -200,11 +200,11 @@ void GetTrueRect(LPRECT lpTrueRect) const;
 ```  
   
 ### Parameters  
- `lpTrueRect`  
+ *lpTrueRect*  
  Pointer to the `RECT` structure that will contain the device coordinates of the `CRectTracker` object.  
   
 ### Remarks  
- The dimensions of the rectangle include the height and width of any resize handles located on the outer border. Upon returning, `lpTrueRect` is always a normalized rectangle in device coordinates.  
+ The dimensions of the rectangle include the height and width of any resize handles located on the outer border. Upon returning, *lpTrueRect* is always a normalized rectangle in device coordinates.  
   
 ##  <a name="hittest"></a>  CRectTracker::HitTest  
  Call this function to find out whether the user has grabbed a resize handle.  
@@ -214,7 +214,7 @@ int HitTest(CPoint point) const;
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The point, in device coordinates, to test.  
   
 ### Return Value  
@@ -285,7 +285,7 @@ int NormalizeHit(int nHandle) const;
 ```  
   
 ### Parameters  
- `nHandle`  
+ *nHandle*  
  Handle selected by the user.  
   
 ### Return Value  
@@ -320,17 +320,17 @@ BOOL SetCursor(
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the window that currently contains the cursor.  
   
- `nHitTest`  
- Results of the previous hit test, from the `WM_SETCURSOR` message.  
+ *nHitTest*  
+ Results of the previous hit test, from the WM_SETCURSOR message.  
   
 ### Return Value  
  Nonzero if the previous hit was over the tracker rectangle; otherwise 0.  
   
 ### Remarks  
- Call this function from inside the function of your window that handles the `WM_SETCURSOR` message (typically `OnSetCursor`).  
+ Call this function from inside the function of your window that handles the WM_SETCURSOR message (typically `OnSetCursor`).  
   
 ##  <a name="track"></a>  CRectTracker::Track  
  Call this function to display the user interface for resizing the rectangle.  
@@ -344,17 +344,17 @@ BOOL Track(
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  The window object that contains the rectangle.  
   
- `point`  
+ *point*  
  Device coordinates of the current mouse position relative to the client area.  
   
- `bAllowInvert`  
+ *bAllowInvert*  
  If **TRUE**, the rectangle can be inverted along the x-axis or y-axis; otherwise **FALSE**.  
   
- `pWndClipTo`  
- The window that drawing operations will be clipped to. If **NULL**, `pWnd` is used as the clipping rectangle.  
+ *pWndClipTo*  
+ The window that drawing operations will be clipped to. If **NULL**, *pWnd* is used as the clipping rectangle.  
   
 ### Return Value  
  If the ESC key is pressed, the tracking process is halted, the rectangle stored in the tracker is not altered, and 0 is returned. If the change is committed, by moving the mouse and releasing the left mouse button, the new position and/or size is recorded in the tracker's rectangle and nonzero is returned.  
@@ -364,7 +364,7 @@ BOOL Track(
   
  This function will capture the mouse until the user releases the left mouse button, presses the ESC key, or presses the right mouse button. As the user moves the mouse cursor, the feedback is updated by calling `DrawTrackerRect` and `OnChangedRect`.  
   
- If `bAllowInvert` is **TRUE**, the tracking rectangle can be inverted on either the x-axis or y-axis.  
+ If *bAllowInvert* is **TRUE**, the tracking rectangle can be inverted on either the x-axis or y-axis.  
   
 ##  <a name="trackrubberband"></a>  CRectTracker::TrackRubberBand  
  Call this function to do rubber-band selection.  
@@ -377,20 +377,20 @@ BOOL TrackRubberBand(
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  The window object that contains the rectangle.  
   
- `point`  
+ *point*  
  Device coordinates of the current mouse position relative to the client area.  
   
- `bAllowInvert`  
+ *bAllowInvert*  
  If **TRUE,** the rectangle can be inverted along the x-axis or y-axis; otherwise **FALSE**.  
   
 ### Return Value  
  Nonzero if the mouse has moved and the rectangle is not empty; otherwise 0.  
   
 ### Remarks  
- It is usually called from inside the function of your application that handles the `WM_LBUTTONDOWN` message (typically `OnLButtonDown`).  
+ It is usually called from inside the function of your application that handles the WM_LBUTTONDOWN message (typically `OnLButtonDown`).  
   
  This function will capture the mouse until the user releases the left mouse button, presses the ESC key, or presses the right mouse button. As the user moves the mouse cursor, the feedback is updated by calling `DrawTrackerRect` and `OnChangedRect`.  
   

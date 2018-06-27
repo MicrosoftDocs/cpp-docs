@@ -77,7 +77,7 @@ CRecentDockSiteInfo(CPane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -100,7 +100,7 @@ int GetRecentDockedPercent(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -114,7 +114,7 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -128,7 +128,7 @@ CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -142,7 +142,7 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -156,7 +156,7 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -179,7 +179,7 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -193,7 +193,7 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Return Value  
   
@@ -209,9 +209,9 @@ void SaveListOfRecentPanes(CList<HWND,
 ```  
   
 ### Parameters  
- [in] `CList<HWND`  
- [in] `lstOrg`  
- [in] `bForSlider`  
+ [in] *CList<HWND*  
+ [in] *lstOrg*  
+ [in] *bForSlider*  
   
 ### Remarks  
   
@@ -225,8 +225,8 @@ virtual void SetInfo(
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
- [in] `srcInfo`  
+ [in] *bForSlider*  
+ [in] *srcInfo*  
   
 ### Remarks  
   
@@ -240,8 +240,8 @@ virtual void StoreDockInfo(
 ```  
   
 ### Parameters  
- [in] `pRecentContainer`  
- [in] `pTabbedBar`  
+ [in] *pRecentContainer*  
+ [in] *pTabbedBar*  
   
 ### Remarks  
   
