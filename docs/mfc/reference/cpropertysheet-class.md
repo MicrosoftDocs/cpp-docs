@@ -118,7 +118,7 @@ void AddPage(CPropertyPage* pPage);
 ```  
   
 ### Parameters  
- `pPage`  
+ *pPage*  
  Points to the page to be added to the property sheet. Cannot be **NULL**.  
   
 ### Remarks  
@@ -170,25 +170,25 @@ void Construct(
 ```  
   
 ### Parameters  
- `nIDCaption`  
+ *nIDCaption*  
  ID of the caption to be used for the property sheet.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the parent window of the property sheet. If **NULL**, the parent window will be the main window of the application.  
   
- `iSelectPage`  
+ *iSelectPage*  
  The index of the page that will initially be on top. Default is the first page added to the sheet.  
   
- `pszCaption`  
+ *pszCaption*  
  Pointer to a string containing the caption to be used for the property sheet. Cannot be **NULL**.  
   
- `hbmWatermark`  
+ *hbmWatermark*  
  Handle to the watermark bitmap of the property page.  
   
- `hpalWatermark`  
+ *hpalWatermark*  
  Handle to the palette of the watermark bitmap and/or header bitmap.  
   
- `hbmHeader`  
+ *hbmHeader*  
  Handle to the header bitmap of the property page.  
   
 ### Remarks  
@@ -196,7 +196,7 @@ void Construct(
   
  To display the property sheet, call [DoModal](#domodal) or [Create](#create). The string contained in the first parameter will be placed in the caption bar for the property sheet.  
   
- You can display watermark and/or header images automatically if you use the third or fourth prototypes of `Construct`, listed above, and you pass valid values for the `hbmWatermark`, `hpalWatermark`, and/or `hbmHeader` parameters.  
+ You can display watermark and/or header images automatically if you use the third or fourth prototypes of `Construct`, listed above, and you pass valid values for the *hbmWatermark*, *hpalWatermark*, and/or *hbmHeader* parameters.  
   
 ### Example  
  The following example demonstrates under what circumstances you would call `Construct`.  
@@ -241,25 +241,25 @@ CPropertySheet(
 ```  
   
 ### Parameters  
- `nIDCaption`  
+ *nIDCaption*  
  ID of the caption to be used for the property sheet.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent window of the property sheet. If **NULL**, the parent window will be the main window of the application.  
   
- `iSelectPage`  
+ *iSelectPage*  
  The index of the page that will initially be on top. Default is the first page added to the sheet.  
   
- `pszCaption`  
+ *pszCaption*  
  Points to a string containing the caption to be used for the property sheet. Cannot be **NULL**.  
   
- `hbmWatermark`  
+ *hbmWatermark*  
  A handle to the background bitmap of the property sheet.  
   
- `hpalWatermark`  
+ *hpalWatermark*  
  A handle to the palette of the watermark bitmap and/or header bitmap.  
   
- `hbmHeader`  
+ *hbmHeader*  
  A handle to the header bitmap of the property page.  
   
 ### Remarks  
@@ -267,7 +267,7 @@ CPropertySheet(
   
  If you have multiple parameters (for example, if you are using an array), use [Construct](#construct) instead of `CPropertySheet`.  
   
- You can display watermark and/or header images automatically if you use the third or fourth prototypes of `CPropertySheet`, above, and you pass valid values for the `hbmWatermark`, `hpalWatermark`, and/or `hbmHeader` parameters.  
+ You can display watermark and/or header images automatically if you use the third or fourth prototypes of `CPropertySheet`, above, and you pass valid values for the *hbmWatermark*, *hpalWatermark*, and/or *hbmHeader* parameters.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/cpp/cpropertysheet-class_3.cpp)]  
@@ -282,26 +282,26 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  Points to parent window. If **NULL**, parent is the desktop.  
   
- `dwStyle`  
+ *dwStyle*  
  Window styles for property sheet. For a complete list of available styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- `dwExStyle`  
+ *dwExStyle*  
  Extended window styles for property sheet. For a complete list of available styles, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
 ### Return Value  
  Nonzero if the property sheet is created successfully; otherwise 0.  
   
 ### Remarks  
- The call to **Create** can be inside the constructor, or you can call it after the constructor is invoked.  
+ The call to `Create` can be inside the constructor, or you can call it after the constructor is invoked.  
   
- The default style, expressed by passing -1 as `dwStyle`, is actually **WS_SYSMENU&#124;**`WS_POPUP`**&#124;WS_CAPTION&#124;DS_MODALFRAME&#124;DS_CONTEXTHELP&#124;WS_VISIBLE**. The default extended window style, expressed by passing 0 as `dwExStyle`, is actually **WS_EX_DLGMODALFRAME**.  
+ The default style, expressed by passing -1 as *dwStyle*, is actually **WS_SYSMENU&#124;**`WS_POPUP`**&#124;WS_CAPTION&#124;DS_MODALFRAME&#124;DS_CONTEXTHELP&#124;WS_VISIBLE**. The default extended window style, expressed by passing 0 as *dwExStyle*, is actually **WS_EX_DLGMODALFRAME**.  
   
- The **Create** member function returns immediately after creating the property sheet. To destroy the property sheet, call [CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow).  
+ The `Create` member function returns immediately after creating the property sheet. To destroy the property sheet, call [CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow).  
   
- Modeless property sheets displayed with a call to **Create** do not have OK, Cancel, Apply Now, and Help buttons as modal property sheets do. Desired buttons must be created by the user.  
+ Modeless property sheets displayed with a call to `Create` do not have OK, Cancel, Apply Now, and Help buttons as modal property sheets do. Desired buttons must be created by the user.  
   
  To display a modal property sheet, call [DoModal](#domodal) instead.  
   
@@ -361,13 +361,13 @@ void EnableStackedTabs(BOOL bStacked);
 ```  
   
 ### Parameters  
- `bStacked`  
- Indicates whether stacked tabs are enabled in the property sheet. Disable stacked rows of tags by setting `bStacked` to **FALSE**.  
+ *bStacked*  
+ Indicates whether stacked tabs are enabled in the property sheet. Disable stacked rows of tags by setting *bStacked* to **FALSE**.  
   
 ### Remarks  
- By default, if a property sheet has more tabs than will fit in a single row in the width of the property sheet, the tabs will stack in multiple rows. To use scrolling tabs instead of stacking tabs, call `EnableStackedTabs` with `bStacked` set to **FALSE** before calling [DoModal](#domodal) or [Create](#create).  
+ By default, if a property sheet has more tabs than will fit in a single row in the width of the property sheet, the tabs will stack in multiple rows. To use scrolling tabs instead of stacking tabs, call `EnableStackedTabs` with *bStacked* set to **FALSE** before calling [DoModal](#domodal) or [Create](#create).  
   
- You must call `EnableStackedTabs` when you create a modal or a modeless property sheet. To incorporate this style in a `CPropertySheet`-derived class, write a message handler for `WM_CREATE`. In the overridden version of [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate), call **EnableStackedTabs( FALSE )** before calling the base class implementation.  
+ You must call `EnableStackedTabs` when you create a modal or a modeless property sheet. To incorporate this style in a `CPropertySheet`-derived class, write a message handler for WM_CREATE. In the overridden version of [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate), call **EnableStackedTabs( FALSE )** before calling the base class implementation.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/cpp/cpropertysheet-class_6.cpp)]  
@@ -428,11 +428,11 @@ CPropertyPage* GetPage(int nPage) const;
 ```  
   
 ### Parameters  
- `nPage`  
+ *nPage*  
  Index of the desired page, starting at 0. Must be between 0 and one less than the number of pages in the property sheet, inclusive.  
   
 ### Return Value  
- The pointer to the page corresponding to the `nPage` parameter.  
+ The pointer to the page corresponding to the *nPage* parameter.  
   
 ### Example  
   See the example for [CPropertyPage::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish).  
@@ -458,7 +458,7 @@ int GetPageIndex(CPropertyPage* pPage);
 ```  
   
 ### Parameters  
- `pPage`  
+ *pPage*  
  Points to the page with the index to be found. Cannot be **NULL**.  
   
 ### Return Value  
@@ -490,7 +490,7 @@ CTabCtrl* GetTabControl() const;
  A structure whose members store the characteristics of [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546).  
   
 ### Remarks  
- Use this structure to initialize the appearance of the property sheet after it is constructed but before it is displayed with the [DoModal](#domodal) member function. For example, set the `dwSize` member of `m_psh` to the size you want the property sheet to have.  
+ Use this structure to initialize the appearance of the property sheet after it is constructed but before it is displayed with the [DoModal](#domodal) member function. For example, set the *dwSize* member of `m_psh` to the size you want the property sheet to have.  
   
  For more information on this structure, including a listing of its members, see **PROPSHEETHEADER** in the Windows SDK.  
   
@@ -505,7 +505,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.  
   
 ### Remarks  
@@ -513,7 +513,7 @@ void MapDialogRect(LPRECT lpRect) const;
   
  The [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows function returns size information for the system font, but you can specify a different font for each property sheet if you use the **DS_SETFONT** style in the resource-definition file. The [MapDialogRect](http://msdn.microsoft.com/library/windows/desktop/ms645502) Windows function, described in the Windows SDK, uses the appropriate font for this dialog box.  
   
- The `MapDialogRect` member function replaces the dialog-box units in `lpRect` with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.  
+ The `MapDialogRect` member function replaces the dialog-box units in *lpRect* with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.  
   
 ##  <a name="oninitdialog"></a>  CPropertySheet::OnInitDialog  
  Overrides to augment property sheet initialization.  
@@ -523,10 +523,10 @@ virtual BOOL OnInitDialog();
 ```  
   
 ### Return Value  
- Specifies whether the application has set the input focus to one of the controls in the property sheet. If **OnInitDialog** returns nonzero, Windows sets the input focus to the first control in the property sheet. The application can return 0 only if it has explicitly set the input focus to one of the controls in the property sheet.  
+ Specifies whether the application has set the input focus to one of the controls in the property sheet. If `OnInitDialog` returns nonzero, Windows sets the input focus to the first control in the property sheet. The application can return 0 only if it has explicitly set the input focus to one of the controls in the property sheet.  
   
 ### Remarks  
- This member function is called in response to the **WM_INITDIALOG** message. This message is sent to the property sheet during the [Create](#create) or [DoModal](#domodal) calls, which occur immediately before the property sheet is displayed.  
+ This member function is called in response to the WM_INITDIALOG message. This message is sent to the property sheet during the [Create](#create) or [DoModal](#domodal) calls, which occur immediately before the property sheet is displayed.  
   
  Override this member function if you need to perform special processing when the property sheet is initialized. In the overridden version, first call the base class `OnInitDialog` but disregard its return value. You will normally return **TRUE** from your overridden member function.  
   
@@ -540,7 +540,7 @@ void PressButton(int nButton);
 ```  
   
 ### Parameters  
- `nButton`  
+ *nButton*  
  nButton : Identifies the button to be pressed. This parameter can be one of the following values:  
   
 - **PSBTN_BACK** Chooses the Back button.  
@@ -574,10 +574,10 @@ void RemovePage(int nPage);
 ```  
   
 ### Parameters  
- `pPage`  
+ *pPage*  
  Points to the page to be removed from the property sheet. Cannot be `NULL`.  
   
- `nPage`  
+ *nPage*  
  Index of the page to be removed. Must be between 0 and one less than the number of pages in the property sheet, inclusive.  
   
 ### Remarks  
@@ -592,10 +592,10 @@ BOOL SetActivePage(CPropertyPage* pPage);
 ```  
   
 ### Parameters  
- `nPage`  
+ *nPage*  
  Index of the page to set. It must be between 0 and one less than the number of pages in the property sheet, inclusive.  
   
- `pPage`  
+ *pPage*  
  Points to the page to set in the property sheet. It cannot be **NULL**.  
   
 ### Return Value  
@@ -615,7 +615,7 @@ void SetFinishText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  Points to the text to be displayed on the Finish command button.  
   
 ### Remarks  
@@ -634,10 +634,10 @@ void SetTitle(
 ```  
   
 ### Parameters  
- `nStyle`  
+ *nStyle*  
  Specifies the style of the property sheet title. The style must be specified at 0 or as **PSH_PROPTITLE**. If the style is set as **PSH_PROPTITLE**, the word "Properties" appears after the text specified as the caption. For example, calling `SetTitle`("Simple", **PSH_PROPTITLE**) will result in a property sheet caption of "Simple Properties."  
   
- `lpszText`  
+ *lpszText*  
  Points to the text to be used as the caption in the title bar of the property sheet.  
   
 ### Remarks  
@@ -654,7 +654,7 @@ void SetWizardButtons(DWORD dwFlags);
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  A set of flags that customize the function and appearance of the wizard buttons. This parameter can be a combination of the following values:  
   
 - **PSWIZB_BACK** Back button  

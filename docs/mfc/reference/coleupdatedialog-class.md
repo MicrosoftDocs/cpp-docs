@@ -70,7 +70,7 @@ explicit COleUpdateDialog(
 ```  
   
 ### Parameters  
- `pDoc`  
+ *pDoc*  
  Points to the document containing the links that may need updating.  
   
  *bUpdateLinks*  
@@ -79,7 +79,7 @@ explicit COleUpdateDialog(
  *bUpdateEmbeddings*  
  Flag that determines whether embedded objects are to be updated.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  

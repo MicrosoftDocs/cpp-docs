@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # COLORADJUSTMENT Structure
-The `COLORADJUSTMENT` structure defines the color adjustment values used by the Windows `StretchBlt` and **StretchDIBits** functions when the `StretchBlt` mode is **HALFTONE**.  
+The `COLORADJUSTMENT` structure defines the color adjustment values used by the Windows `StretchBlt` and `StretchDIBits` functions when the `StretchBlt` mode is **HALFTONE**.  
   
 ## Syntax  
   
