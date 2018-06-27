@@ -44,7 +44,7 @@ Defines STL/CLR container template functions that perform algorithms.
   
  **Namespace:** cliext  
     
-## Functions  
+## Declarations  
   
 |Function|Description|  
 |--------------|-----------------|  
@@ -115,6 +115,7 @@ Defines STL/CLR container template functions that perform algorithms.
 |[unique_copy (STL/CLR)](#unique_copy)|Copies elements from a source range into a destination range except for the duplicate elements that are adjacent to each other.|  
 |[upper_bound (STL/CLR)](#upper_bound)|Finds the position of the first element in an ordered range that has a value that is greater than a specified value, where the ordering criterion may be specified by a binary predicate.|  
  
+## Members
 
 ## <a name="adjacent_find"></a> adjacent_find (STL/CLR)
 Searches for two adjacent elements that are either equal or satisfy a specified condition.  
