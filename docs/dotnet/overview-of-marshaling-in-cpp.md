@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Overview of Marshaling in C++
-In mixed mode, you sometimes must marshal your data between native and managed types. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] introduced the *marshaling library* to help you marshal and convert data in a simple way.  The marshaling library is a set of functions and a `marshal_context` class that perform marshaling for common types. The library is defined in these headers in the **include/msclr** directory for your Visual Studio edition:
+In mixed mode, you sometimes must marshal your data between native and managed types. Visual Studio 2008 introduced the *marshaling library* to help you marshal and convert data in a simple way.  The marshaling library consists of a set of functions and a `marshal_context` class that perform marshaling for common types. The library is defined in these headers in the **include/msclr** directory for your Visual Studio edition:
 
 |Header|Description|  
 |---------------|-----------------|
