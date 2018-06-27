@@ -89,7 +89,7 @@ void AccessData(void** ppvData);
 ```  
   
 ### Parameters  
- `ppvData`  
+ *ppvData*  
  A pointer to a pointer to the array data.  
   
 ### Remarks  
@@ -116,7 +116,7 @@ void AllocDescriptor(DWORD dwDims);
 ```  
   
 ### Parameters  
- `dwDims`  
+ *dwDims*  
  Number of dimensions in the safe array.  
   
 ### Remarks  
@@ -168,26 +168,27 @@ COleSafeArray(
 COleSafeArray(const COleSafeArray& saSrc);  
 COleSafeArray(const VARIANT& varSrc);  
   COleSafeArray(LPCVARIANT pSrc);  
-COleSafeArray(const COleVariant& varSrc);```  
+COleSafeArray(const COleVariant& varSrc);
+```  
   
 ### Parameters  
- `saSrc`  
+ *saSrc*  
  An existing `COleSafeArray` object or **SAFEARRAY** to be copied into the new `COleSafeArray` object.  
   
- `vtSrc`  
+ *vtSrc*  
  The **VARTYPE** of the new `COleSafeArray` object.  
   
- `psaSrc`  
+ *psaSrc*  
  A pointer to a **SAFEARRAY** to be copied into the new `COleSafeArray` object.  
   
  *varSrc*  
  An existing **VARIANT** or `COleVariant` object to be copied into the new `COleSafeArray` object.  
   
- `pSrc`  
+ *pSrc*  
  A pointer to a **VARIANT** object to be copied into the new `COleSafeArray` object.  
   
 ### Remarks  
- All of these constructors create new `COleSafeArray` objects. If there is no parameter, an empty `COleSafeArray` object is created ( `VT_EMPTY`). If the `COleSafeArray` is copied from another array whose [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) is known implicitly (a `COleSafeArray`, `COleVariant`, or **VARIANT**), the **VARTYPE** of the source array is retained and need not be specified. If the `COleSafeArray` is copied from another array whose **VARTYPE** is not known ( **SAFEARRAY**), the **VARTYPE** must be specified in the `vtSrc` parameter.  
+ All of these constructors create new `COleSafeArray` objects. If there is no parameter, an empty `COleSafeArray` object is created ( `VT_EMPTY`). If the `COleSafeArray` is copied from another array whose [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) is known implicitly (a `COleSafeArray`, `COleVariant`, or **VARIANT**), the **VARTYPE** of the source array is retained and need not be specified. If the `COleSafeArray` is copied from another array whose **VARTYPE** is not known ( **SAFEARRAY**), the **VARTYPE** must be specified in the *vtSrc* parameter.  
   
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -222,10 +223,10 @@ void Create(
 ```  
   
 ### Parameters  
- `vtSrc`  
- The base type of the array (that is, the **VARTYPE** of each element of the array). The **VARTYPE** is restricted to a subset of the variant types. Neither the **VT_ARRAY** nor the **VT_BYREF** flag can be set. `VT_EMPTY` and **VT_NULL** are not valid base types for the array. All other types are legal.  
+ *vtSrc*  
+ The base type of the array (that is, the **VARTYPE** of each element of the array). The **VARTYPE** is restricted to a subset of the variant types. Neither the **VT_ARRAY** nor the **VT_BYREF** flag can be set. **VT_EMPTY** and **VT_NULL** are not valid base types for the array. All other types are legal.  
   
- `dwDims`  
+ *dwDims*  
  Number of dimensions in the array. This can be changed after the array is created with [Redim](#redim).  
   
  *rgElements*  
@@ -252,20 +253,20 @@ void CreateOneDim(
 ```  
   
 ### Parameters  
- `vtSrc`  
+ *vtSrc*  
  The base type of the array (that is, the **VARTYPE** of each element of the array).  
   
- `dwElements`  
+ *dwElements*  
  Number of elements in the array. This can be changed after the array is created with [ResizeOneDim](#resizeonedim).  
   
- `pvSrcData`  
+ *pvSrcData*  
  Pointer to the data to copy into the array.  
   
  *nLBound*  
  The lower bound of the array.  
   
 ### Remarks  
- The function allocates and initializes the data for the array, copying the specified data if the pointer `pvSrcData` is not **NULL**.  
+ The function allocates and initializes the data for the array, copying the specified data if the pointer *pvSrcData* is not **NULL**.  
   
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md).  
   
@@ -328,7 +329,7 @@ void GetByteArray(CByteArray& bytes);
 ```  
   
 ### Parameters  
- `bytes`  
+ *bytes*  
  A reference to a [CByteArray](../../mfc/reference/cbytearray-class.md) object.  
   
 ##  <a name="getdim"></a>  COleSafeArray::GetDim  
@@ -354,14 +355,14 @@ void GetElement(
 ```  
   
 ### Parameters  
- `rgIndices`  
+ *rgIndices*  
  Pointer to an array of indexes for each dimension of the array.  
   
- `pvData`  
+ *pvData*  
  Pointer to the location to place the element of the array.  
   
 ### Remarks  
- This function automatically calls the windows functions `SafeArrayLock` and `SafeArrayUnlock` before and after retrieving the element. If the data element is a string, object, or variant, the function copies the element in the correct way. The parameter `pvData` should point to a large enough buffer to contain the element.  
+ This function automatically calls the windows functions `SafeArrayLock` and `SafeArrayUnlock` before and after retrieving the element. If the data element is a string, object, or variant, the function copies the element in the correct way. The parameter *pvData* should point to a large enough buffer to contain the element.  
   
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -388,7 +389,7 @@ void GetLBound(
 ```  
   
 ### Parameters  
- `dwDim`  
+ *dwDim*  
  The array dimension for which to get the lower bound.  
   
  *pLBound*  
@@ -423,7 +424,7 @@ void GetUBound(
 ```  
   
 ### Parameters  
- `dwDim`  
+ *dwDim*  
  The array dimension for which to get the upper bound.  
   
  *pUBound*  
@@ -473,7 +474,8 @@ operator LPVARIANT();
 COleSafeArray& operator=(const COleSafeArray& saSrc);  
 COleSafeArray& operator=(const VARIANT& varSrc);  
   COleSafeArray& operator=(LPCVARIANT pSrc);  
-COleSafeArray& operator=(const COleVariant& varSrc);```  
+COleSafeArray& operator=(const COleVariant& varSrc);
+```  
   
 ### Remarks  
  A brief description of each operator follows:  
@@ -489,8 +491,10 @@ COleSafeArray& operator=(const COleVariant& varSrc);```
   
 ```  
 BOOL operator==(const SAFEARRAY& saSrc) const;  BOOL operator==(LPCSAFEARRAY pSrc) const;  
-   BOOL operator==(const COleSafeArray& saSrc) const;  BOOL operator==(const VARIANT& varSrc) const;  
-   BOOL operator==(LPCVARIANT pSrc) const;  BOOL operator==(const COleVariant& varSrc) const;  ```  
+   
+BOOL operator==(const COleSafeArray& saSrc) const;  BOOL operator==(const VARIANT& varSrc) const;  
+   
+BOOL operator==(LPCVARIANT pSrc) const;  BOOL operator==(const COleVariant& varSrc) const;  ```  
   
 ### Remarks  
  Two arrays are equal if they have an equal number of dimensions, equal size in each dimension, and equal element values.  
@@ -514,11 +518,11 @@ void PtrOfIndex(
 ```  
   
 ### Parameters  
- `rgIndices`  
+ *rgIndices*  
  An array of index values that identify an element of the array. All indexes for the element must be specified.  
   
- `ppvData`  
- On return, pointer to the element identified by the values in `rgIndices`.  
+ *ppvData*  
+ On return, pointer to the element identified by the values in *rgIndices*.  
   
 ##  <a name="putelement"></a>  COleSafeArray::PutElement  
  Assigns a single element into the array.  
@@ -530,11 +534,11 @@ void PutElement(
 ```  
   
 ### Parameters  
- `rgIndices`  
+ *rgIndices*  
  Pointer to an array of indexes for each dimension of the array.  
   
- `pvData`  
- Pointer to the data to assign to the array. **VT_DISPATCH**, **VT_UNKNOWN**, and `VT_BSTR` variant types are pointers and do not require another level of indirection.  
+ *pvData*  
+ Pointer to the data to assign to the array. **VT_DISPATCH**, **VT_UNKNOWN**, and **VT_BSTR** variant types are pointers and do not require another level of indirection.  
   
 ### Remarks  
  This function automatically calls the Windows functions [SafeArrayLock](https://msdn.microsoft.com/library/windows/desktop/ms221492.aspx) and [SafeArrayUnlock](https://msdn.microsoft.com/library/windows/desktop/ms221246.aspx) before and after assigning the element. If the data element is a string, object, or variant, the function copies it correctly, and if the existing element is a string, object, or variant, it is cleared correctly.  
@@ -568,7 +572,7 @@ void ResizeOneDim(DWORD dwElements);
 ```  
   
 ### Parameters  
- `dwElements`  
+ *dwElements*  
  Number of elements in the one-dimensional safe array.  
   
 ### Remarks  

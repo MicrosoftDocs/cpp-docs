@@ -97,7 +97,7 @@ BOOL GetControlStatus(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Resource ID of a property page control.  
   
 ### Return Value  
@@ -111,14 +111,14 @@ LPDISPATCH* GetObjectArray(ULONG* pnObjects);
 ```  
   
 ### Parameters  
- `pnObjects`  
+ *pnObjects*  
  Pointer to an unsigned long integer that will receive the number of objects being edited by the page.  
   
 ### Return Value  
  Pointer to an array of `IDispatch` pointers, which are used to access the properties of each control on the property page. The caller must not release these interface pointers.  
   
 ### Remarks  
- Each property page object maintains an array of pointers to the `IDispatch` interfaces of the objects being edited by the page. This function sets its `pnObjects` argument to the number of elements in that array and returns a pointer to the first element of the array.  
+ Each property page object maintains an array of pointers to the `IDispatch` interfaces of the objects being edited by the page. This function sets its *pnObjects* argument to the number of elements in that array and returns a pointer to the first element of the array.  
   
 ##  <a name="getpagesite"></a>  COlePropertyPage::GetPageSite  
  Gets a pointer to the property page's `IPropertyPageSite` interface.  
@@ -141,7 +141,7 @@ void IgnoreApply(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  ID of the control to be ignored.  
   
 ### Remarks  
@@ -165,7 +165,7 @@ virtual BOOL OnEditProperty(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  Dispatch ID of the property being edited.  
   
 ### Return Value  
@@ -236,10 +236,10 @@ BOOL SetControlStatus(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Contains the ID of a property page control.  
   
- `bDirty`  
+ *bDirty*  
  Specifies if a field of the property page has been modified. Set to **TRUE** if the field has been modified, **FALSE** if it has not been modified.  
   
 ### Return Value  
@@ -273,7 +273,7 @@ void SetHelpInfo(
  *lpszDocString*  
  A string containing brief help information for display in a status bar or other location.  
   
- `lpszHelpFile`  
+ *lpszHelpFile*  
  Name of the property page's help file.  
   
  *dwHelpContext*  
@@ -287,7 +287,7 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 ```  
   
 ### Parameters  
- `bModified`  
+ *bModified*  
  Specifies the new value for the property page's modified flag.  
   
 ##  <a name="setpagename"></a>  COlePropertyPage::SetPageName  

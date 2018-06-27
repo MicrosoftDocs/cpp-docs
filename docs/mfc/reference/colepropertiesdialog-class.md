@@ -85,7 +85,7 @@ COlePropertiesDialog(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to the document item whose properties are being accessed.  
   
  *nScaleMin*  
@@ -94,7 +94,7 @@ COlePropertiesDialog(
  *nScaleMax*  
  Maximum scaling percentage for the document item image.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the dialog box's parent or owner.  
   
 ### Remarks  
@@ -201,10 +201,10 @@ virtual BOOL OnApplyScale(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to the document item whose properties are being accessed.  
   
- `nCurrentScale`  
+ *nCurrentScale*  
  Numerical value of the dialog scale.  
   
  *bRelativeToOrig*  
@@ -217,7 +217,7 @@ virtual BOOL OnApplyScale(
  The default implementation does nothing. You must override this function to enable the scaling controls.  
   
 > [!NOTE]
->  Before the common OLE Object Properties dialog box is displayed, the framework calls this function with a **NULL** for `pItem` and a - 1 for `nCurrentScale`. This is done to determine if the scaling controls should be enabled.  
+>  Before the common OLE Object Properties dialog box is displayed, the framework calls this function with a **NULL** for *pItem* and a - 1 for *nCurrentScale*. This is done to determine if the scaling controls should be enabled.  
   
 ## See Also  
  [MFC Sample CIRC](../../visual-cpp-samples.md)   

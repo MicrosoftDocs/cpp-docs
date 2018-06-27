@@ -58,7 +58,7 @@ class COleLinkingDoc : public COleDocument
   
  [!code-cpp[NVC_MFCOleContainer#24](../../mfc/codesnippet/cpp/colelinkingdoc-class_2.cpp)]  
   
- Connect your `COleTemplateServer` object to your document templates by calling the object's `ConnectTemplate` member function, and register all class objects with the OLE system by calling **COleTemplateServer::RegisterAll**:  
+ Connect your `COleTemplateServer` object to your document templates by calling the object's `ConnectTemplate` member function, and register all class objects with the OLE system by calling `COleTemplateServer::RegisterAll`:  
   
  [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]  
   
@@ -98,7 +98,7 @@ virtual COleClientItem* OnFindEmbeddedItem(LPCTSTR lpszItemName);
 ```  
   
 ### Parameters  
- `lpszItemName`  
+ *lpszItemName*  
  Pointer to the name of the embedded OLE item requested.  
   
 ### Return Value  
@@ -115,7 +115,7 @@ virtual COleServerItem* OnGetLinkedItem(LPCTSTR lpszItemName);
 ```  
   
 ### Parameters  
- `lpszItemName`  
+ *lpszItemName*  
  Pointer to the name of the linked OLE item requested.  
   
 ### Return Value  
@@ -137,7 +137,7 @@ BOOL Register(
  *pFactory*  
  Pointer to an OLE factory object (can be **NULL**).  
   
- `lpszPathName`  
+ *lpszPathName*  
  Pointer to the fully qualified path of the container document.  
   
 ### Return Value  
