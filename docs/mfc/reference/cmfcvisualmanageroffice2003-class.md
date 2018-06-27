@@ -1466,7 +1466,7 @@ virtual void OnDrawStatusBarProgress(
   
  [in] *clrProgressBarDest*  
  [in] *clrProgressText*  
- [in] *bProgressText`  
+ [in] *bProgressText*  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of the progress bar on a status bar.  

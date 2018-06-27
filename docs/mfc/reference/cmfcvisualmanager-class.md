@@ -903,7 +903,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 ```  
   
 ### Parameters  
- [in] *CMFCBaseTabCtrl\**  
+ [in] *CMFCBaseTabCtrl&#42;*  
   
 ### Return Value  
   
@@ -920,7 +920,7 @@ virtual COLORREF GetTabTextColor(
 ```  
   
 ### Parameters  
- [in] *CMFCBaseTabCtrl\**  
+ [in] *CMFCBaseTabCtrl&#42;*  
  [in] *int*  
  [in] *BOOL*  
   
@@ -1319,7 +1319,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 ```  
   
 ### Parameters  
- [in] *CMFCToolBar\**  
+ [in] *CMFCToolBar&#42;*  
   
 ### Return Value  
   
