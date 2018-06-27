@@ -85,7 +85,7 @@ COleInsertDialog (
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  Creation flag that contains any number of the following values to be combined using the bitwise-OR operator:  
   
 - **IOF_SHOWHELP** Specifies that the Help button will be displayed when the dialog box is called.  
@@ -102,7 +102,7 @@ COleInsertDialog (
   
 - **IOF_VERIFYSERVERSEXIST** Specifies that the dialog box should validate the classes it adds to the list box by ensuring that the servers specified in the registration database exist before the dialog box is displayed. Setting this flag can significantly impair performance.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog object is set to the main application window.  
   
 ### Remarks  
@@ -116,7 +116,7 @@ BOOL CreateItem(COleClientItem* pItem);
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item to be created.  
   
 ### Return Value  
@@ -138,7 +138,7 @@ INT_PTR
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  One of the following values:  
   
  `COleInsertDialog::DocObjectsOnly` inserts only DocObjects.  

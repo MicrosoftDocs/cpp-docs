@@ -87,22 +87,22 @@ CMFCTasksPaneTaskGroup(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  Specifies the name of the group in the group caption.  
   
- `bIsBottom`  
+ *bIsBottom*  
  Specifies whether the group is aligned to the bottom of the task pane control.  
   
- `bIsSpecial`  
+ *bIsSpecial*  
  Specifies whether the group is designated as *special* and thus, whether the group caption is filled with a different color.  
   
- `bIsCollapsed`  
+ *bIsCollapsed*  
  Specifies whether the group is collapsed.  
   
- `pPage`  
+ *pPage*  
  Specifies the property page that this task group belongs to.  
   
- `hIcon`  
+ *hIcon*  
  Specifies the icon that displays in the group caption.  
   
 ### Remarks  
@@ -187,14 +187,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  Represents the parent window of the current task group.  
   
- [out] `data`  
+ [out] *data*  
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current task group.  
   
 ### Return Value  
- `TRUE` if the `data` parameter was successfully populated with the accessibility data of the current task group; otherwise, `FALSE`.  
+ `TRUE` if the *data* parameter was successfully populated with the accessibility data of the current task group; otherwise, `FALSE`.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

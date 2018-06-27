@@ -81,25 +81,25 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function or the **RegisterClass** Windows function. If **NULL**, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Points to a null-terminated character string that represents the window name.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the window style attributes. By default, the **WS_VISIBLE** and **WS_CHILD** Windows styles are set.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new window.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the parent window of the control.  
   
- `nID`  
+ *nID*  
  The ID number of the view. By default, set to **AFX_IDW_PANE_FIRST**.  
   
- `pContext`  
+ *pContext*  
  A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** by default.  
   
 ### Remarks  
@@ -113,7 +113,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ```  
   
 ### Parameters  
- `ppDocument`  
+ *ppDocument*  
  The [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface.  
   
 ##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument  

@@ -69,7 +69,7 @@ CGopherLocator(const CGopherLocator& ref);
 ```  
   
 ### Parameters  
- `ref`  
+ *ref*  
  A reference to a constant `CGopherLocator` object.  
   
 ### Remarks  

@@ -202,7 +202,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
  A [CArchive Class](../../mfc/reference/carchive-class.md) object to serialize.  
   
 ## See Also  

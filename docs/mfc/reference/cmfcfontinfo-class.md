@@ -71,22 +71,22 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ```  
   
 ### Parameters  
- [in] `lpszName`  
+ [in] *lpszName*  
  The name of the font. For more information, see the `lfFaceName` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
   
- [in] `lpszScript`  
+ [in] *lpszScript*  
  The name of the script (character set) of the font.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  A value that specifies the character set (script) of the font. For more information, see the `lfCharSet` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  A value that specifies the pitch and family of the font. For more information, see the `lfPitchAndFamily` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
   
- [in] `nType`  
+ [in] *nType*  
  A value that specifies the font type. This parameter can be a bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
   
- [in] `src`  
+ [in] *src*  
  An existing `CMFCFontInfo` object whose members are used to construct this `CMFCFontInfo` object.  
   
 ### Return Value  
@@ -115,7 +115,7 @@ const BYTE m_nCharSet;
 ```  
   
 ### Remarks  
- For more information, see the `nCharSet` parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
+ For more information, see the *nCharSet* parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
   
 ##  <a name="m_npitchandfamily"></a>  CMFCFontInfo::m_nPitchAndFamily  
  A value that specifies the pitch (point size) and family (for example, serif, sans-serif, and monospace) of the font.  
@@ -125,7 +125,7 @@ const BYTE m_nPitchAndFamily;
 ```  
   
 ### Remarks  
- For more information, see the `nPitchAndFamily` parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
+ For more information, see the *nPitchAndFamily* parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
   
 ##  <a name="m_ntype"></a>  CMFCFontInfo::m_nType  
  A value that specifies the type of the font.  
@@ -135,7 +135,7 @@ const int m_nType;
 ```  
   
 ### Remarks  
- For more information, see the `nType` parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
+ For more information, see the *nType* parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
   
 ##  <a name="m_strname"></a>  CMFCFontInfo::m_strName  
  The name of the font: for example, **Arial**.  
@@ -145,7 +145,7 @@ const CString m_strName;
 ```  
   
 ### Remarks  
- For more information, see the `lpszName` parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
+ For more information, see the *lpszName* parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
   
 ##  <a name="m_strscript"></a>  CMFCFontInfo::m_strScript  
  The name of a character set (script) associated with the font.  
@@ -155,7 +155,7 @@ const CString m_strScript;
 ```  
   
 ### Remarks  
- For more information, see the `lpszScript` parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
+ For more information, see the *lpszScript* parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

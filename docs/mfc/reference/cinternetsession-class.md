@@ -385,7 +385,7 @@ A pointer to a string containing the user name.
 A pointer to a string containing the access password.
 
 *dwflags*  
-Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) for a description of `dwFlags` values.
+Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) for a description of *dwFlags* values.
 
 ### Return Value
 

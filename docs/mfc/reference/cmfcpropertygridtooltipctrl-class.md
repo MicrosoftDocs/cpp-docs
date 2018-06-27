@@ -81,7 +81,7 @@ BOOL Create(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  A pointer to the parent window.  
   
 ### Return Value  
@@ -105,7 +105,7 @@ void GetLastRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [out] `rect`  
+ [out] *rect*  
  Contains the last position of the tooltip control.  
   
 ##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
@@ -123,7 +123,7 @@ void SetTextMargin(int nTextMargin);
 ```  
   
 ### Parameters  
- [in] `nTextMargin`  
+ [in] *nTextMargin*  
  Specifies the spacing between the tooltip control text and the border of the tooltip window. The default value is 10 pixels.  
   
 ##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
@@ -136,14 +136,14 @@ void Track(
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
  Specifies the position and size of the tooltip control.  
   
- [in] `strText`  
+ [in] *strText*  
  Specifies the text to be shown in the tooltip.  
   
 ### Remarks  
- This method displays the tooltip control at the position and size specified by `rect`. If the position, size, and text have not changed since the last time this method was called, this method has no effect.  
+ This method displays the tooltip control at the position and size specified by *rect*. If the position, size, and text have not changed since the last time this method was called, this method has no effect.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

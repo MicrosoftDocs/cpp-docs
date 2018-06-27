@@ -153,10 +153,10 @@ BOOL AddPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  Pointer to the pane to register.  
   
- [in] `bTail`  
+ [in] *bTail*  
  Specifies whether to add this pane to the end of the list.  
   
 ### Return Value  
@@ -180,7 +180,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### Parameters  
- [in] `hdwp`  
+ [in] *hdwp*  
  Identifies the multiple-window-position structure. You can obtain this value by calling `BeginDeferWindowPos`.  
   
 ### Remarks  
@@ -194,7 +194,7 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
 ```  
   
 ### Parameters  
- [out] `pnMDITabsType`  
+ [out] *pnMDITabsType*  
  A pointer to an integer variable that indicates which features are enabled:  
   
 -   0: All features are disabled.  
@@ -234,7 +234,7 @@ virtual CMDIChildWndEx* ControlBarToTabbedDocument(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- `pBar`  
+ *pBar*  
  A pointer to the docking pane to convert.  
   
 ### Return Value  
@@ -253,10 +253,10 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
 ```  
   
 ### Parameters  
- [in] `lpcszDocName`  
+ [in] *lpcszDocName*  
  A text string that contains a document identifier. Typically, it is the full path of a document file.  
   
- [in] `pObj`  
+ [in] *pObj*  
  A pointer to a user-defined object. For example, a developer can create an application-specific data structure describing the document and telling how the document should be initialized at startup.  
   
 ### Return Value  
@@ -284,10 +284,10 @@ virtual CMDIChildWndEx* CreateNewWindow(
 ```  
   
 ### Parameters  
- [in] `lpcszDocName`  
+ [in] *lpcszDocName*  
  The document name.  
   
- [in] `pObj`  
+ [in] *pObj*  
  Reserved for future use.  
   
 ### Return Value  
@@ -304,13 +304,13 @@ void DockPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  Pointer to the pane to dock.  
   
- [in] `nDockBarID`  
+ [in] *nDockBarID*  
  Specifies which sides of the frame window to dock to.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Not used.  
   
 ### Remarks  
@@ -331,17 +331,17 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the docking pane.  
   
- [in] `pLeftOf`  
+ [in] *pLeftOf*  
  A pointer to the pane that serves as the dock site. .  
   
 ### Return Value  
  Returns `TRUE` if the operation is successful. Otherwise returns `FALSE`.  
   
 ### Remarks  
- Call this method to dock several pane objects in a predefined order. This method docks the pane specified by `pBar` to the left of the pane specified by `pLeftOf`.  
+ Call this method to dock several pane objects in a predefined order. This method docks the pane specified by *pBar* to the left of the pane specified by *pLeftOf*.  
   
 ### Example  
  The following example shows how the `DockPaneLeftOf` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
@@ -356,7 +356,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Specifies the sides of the main frame window that will be enabled. Use one or more of the following flags.  
   
 - `CBRS_ALIGN_LEFT`  
@@ -385,7 +385,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Specifies the docking style that you want to apply.  
   
 ### Return Value  
@@ -406,7 +406,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```  
   
 ### Parameters  
- [in] `bEnableMenu`  
+ [in] *bEnableMenu*  
  `TRUE` to show the main menu in full-screen mode, or `FALSE` to hide it.  
   
 ### Remarks  
@@ -419,7 +419,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```  
   
 ### Parameters  
- [in] `uiFullScreenCmd`  
+ [in] *uiFullScreenCmd*  
  The ID of a command that enables or disables full-screen mode.  
   
 ### Remarks  
@@ -433,7 +433,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the loading of the docking state, `FALSE` to disable the loading of the docking state.  
   
 ### Remarks  
@@ -448,10 +448,10 @@ void EnableMDITabbedGroups(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  If `TRUE`, the MDI tabbed groups feature is enabled; if `FALSE`, the MDI tabbed groups feature is disabled.  
   
- [in] `params`  
+ [in] *params*  
  Specifies parameters that the framework applies to child windows that are created in the MDI client area.  
   
 ### Remarks  
@@ -467,9 +467,9 @@ void EnableMDITabbedGroups(
   
 -   Your application can save the current layout of tabbed windows and the list of currently opened documents.  
   
- If you call this method with `bEnable` set to `FALSE`, `params` is ignored.  
+ If you call this method with *bEnable* set to `FALSE`, *params* is ignored.  
   
- Even if MDI tabbed groups is already enabled, you can call this method again to modify the settings for child windows. Call the method with `bEnable` set to `TRUE` and modify the members of the `CMDITabInfo` object that are specified by the `params` parameter.  
+ Even if MDI tabbed groups is already enabled, you can call this method again to modify the settings for child windows. Call the method with *bEnable* set to `TRUE` and modify the members of the `CMDITabInfo` object that are specified by the *params* parameter.  
   
  For more information about how to use MDI tabbed groups, see [MDI Tabbed Groups](../../mfc/mdi-tabbed-groups.md).  
   
@@ -493,33 +493,33 @@ void EnableMDITabs(
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  Specifies whether tabs are enabled.  
   
- `bIcons`  
+ *bIcons*  
  Specifies whether icons should be displayed on the tabs.  
   
- `tabLocation`  
+ *tabLocation*  
  Specifies the location of the tab labels.  
   
- `bTabCloseButton`  
+ *bTabCloseButton*  
  Specifies whether to display tab close buttons.  
   
- `style`  
+ *style*  
  Specifies the style of tabs. Use `STYLE_3D_SCROLLED` for regular tabs or `STYLE_3D_ONENOTE` for Microsoft OneNote tabs.  
   
- `bTabCustomTooltips`  
+ *bTabCustomTooltips*  
  Specifies whether custom tooltips are enabled.  
   
- `bActiveTabCloseButton`  
+ *bActiveTabCloseButton*  
  If `TRUE`, a **Close** button will be displayed on the active tab instead of on the right corner of the tab area.  
   
 ### Remarks  
  Call this method to enable or disable the MDI tabs feature for the MDI frame window. When enabled, all child windows are displayed as tabs.  
   
- The tab labels can be located at the top or bottom of the frame, depending on the setting of the parameter `tabLocation`. You may specify either `CMFCTabCtrl::LOCATION_BOTTOM` (the default setting) or `CMFCTabCtrl::LOCATION_TOP`.  
+ The tab labels can be located at the top or bottom of the frame, depending on the setting of the parameter *tabLocation*. You may specify either `CMFCTabCtrl::LOCATION_BOTTOM` (the default setting) or `CMFCTabCtrl::LOCATION_TOP`.  
   
- If `bTabCustomTooltips` is `TRUE`, an `AFX_WM_ON_GET_TAB_TOOLTIP` message will be sent to the main frame window. Your code can handle this message and provide the framework with custom tooltips for MDI tabs.  
+ If *bTabCustomTooltips* is `TRUE`, an `AFX_WM_ON_GET_TAB_TOOLTIP` message will be sent to the main frame window. Your code can handle this message and provide the framework with custom tooltips for MDI tabs.  
   
 ### Example  
  The following example shows how `EnableMDITabs` is used in the [MDITabsDemo Sample: MFC Tabbed MDI Application](../../visual-cpp-samples.md).  
@@ -534,7 +534,7 @@ void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
 ```  
   
 ### Parameters  
- [in] `bLastActiveTab`  
+ [in] *bLastActiveTab*  
  If `TRUE`, enable activation of the last active tab. If `FALSE`, disable activation of the last active tab.  
   
 ### Remarks  
@@ -562,22 +562,22 @@ void EnablePaneMenu(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  If `TRUE`, automatic handling of the pane menu is enabled; if `FALSE`, automatic handling is disabled.  
   
- [in] `uiCustomizeCmd`  
+ [in] *uiCustomizeCmd*  
  Command ID of the **Customize** menu item. This menu item is usually added to the end of the list of panes.  
   
- [in] `strCustomizeLabel`  
+ [in] *strCustomizeLabel*  
  The text to be displayed for the **Customize** menu item (for localization).  
   
- [in] `uiViewToolbarsMenuEntryID`  
+ [in] *uiViewToolbarsMenuEntryID*  
  Specifies the ID of a toolbar menu item that opens the pane menu. Usually this is the **Toolbars** submenu of the **View** menu.  
   
- [in] `bContextMenuShowsToolbarsOnly`  
+ [in] *bContextMenuShowsToolbarsOnly*  
  If `TRUE`, the pane menu displays only a list of toolbars. If `FALSE`, the menu displays a list of toolbars and docking bars.  
   
- [in] `bViewMenuShowsToolbarsOnly`  
+ [in] *bViewMenuShowsToolbarsOnly*  
  If `TRUE`, the pane menu displays only a list of toolbars. If `FALSE`, the menu displays a list of toolbars and docking bars.  
   
 ### Remarks  
@@ -607,20 +607,20 @@ void EnableWindowsDialog(
 ```  
   
 ### Parameters  
- [in] `uiMenuId`  
+ [in] *uiMenuId*  
  Specifies the resource ID of a menu.  
   
- [in] `lpszMenuText`  
+ [in] *lpszMenuText*  
  Specifies the item's text.  
   
- [in] `bShowHelpButton`  
+ [in] *bShowHelpButton*  
  Specifies whether to display a **Help** button on the windows management dialog box.  
   
- [in] `uiMenuTextResId`  
+ [in] *uiMenuTextResId*  
  The string resource identifier that contains the item's text string.  
   
 ### Remarks  
- Use this method to insert a menu item whose command calls a MDI child window management dialog box ( [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)). The new item is inserted into the menu specified by `uiMenuId`. Call `EnableWindowsDialog` when you process the `WM_CREATE` message.  
+ Use this method to insert a menu item whose command calls a MDI child window management dialog box ( [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)). The new item is inserted into the menu specified by *uiMenuId*. Call `EnableWindowsDialog` when you process the WM_CREATE message.  
   
 ### Example  
  The following example shows how `EnableWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
@@ -723,7 +723,7 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The control ID.  
   
 ### Return Value  
@@ -764,10 +764,10 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a toolbar button.  
   
- [in] `strTTText`  
+ [in] *strTTText*  
  The tooltip text to display for the button.  
   
 ### Return Value  
@@ -786,20 +786,20 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the pane to be inserted.  
   
- [in] `pTarget`  
+ [in] *pTarget*  
  A pointer to the pane before or after which to insert the pane.  
   
- [in] `bAfter`  
- If `TRUE`, `pControlBar` is inserted after `pTarget`. If `FALSE`, `pControlBar` is inserted before `pTarget`.  
+ [in] *bAfter*  
+ If `TRUE`, *pControlBar* is inserted after *pTarget*. If `FALSE`, *pControlBar* is inserted before *pTarget*.  
   
 ### Return Value  
  `TRUE` if the method successfully registers the pane, `FALSE` if the pane was already registered with the docking manager.  
   
 ### Remarks  
- Use this method to tell the docking manager about a pane specified by `pControlBar`. The docking manager will align this pane according to the pane's alignment and position in the docking manager's internal list.  
+ Use this method to tell the docking manager about a pane specified by *pControlBar*. The docking manager will align this pane according to the pane's alignment and position in the docking manager's internal list.  
   
 ##  <a name="isfullscreen"></a>  CMDIFrameWndEx::IsFullScreen  
  Determines whether the frame window is in full-screen mode.  
@@ -835,7 +835,7 @@ BOOL IsMemberOfMDITabGroup(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to tabbed window.  
   
 ### Return Value  
@@ -862,13 +862,13 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The specified point in screen coordinates.  
   
- [in] `dwBarAlignment`  
+ [in] *dwBarAlignment*  
  Specifies which edge the point is near. Possible values are `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, and `CBRS_ALIGN_BOTTOM`  
   
- [in] `bOuterEdge`  
+ [in] *bOuterEdge*  
  `TRUE` if the point is near the outer border of the dock site; `FALSE` otherwise.  
   
 ### Return Value  
@@ -901,16 +901,16 @@ virtual BOOL LoadFrame(
 ```  
   
 ### Parameters  
- [in] `nIDResource`  
+ [in] *nIDResource*  
  The ID of a shared resource associated with the frame window.  
   
- [in] `dwDefaultStyle`  
+ [in] *dwDefaultStyle*  
  The style of the frame window.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  A pointer to the frame's parent.  
   
- [in] `pContext`  
+ [in] *pContext*  
  A pointer to a [CCreateContext Structure](../../mfc/reference/ccreatecontext-structure.md). This parameter can be `NULL`.  
   
 ### Return Value  
@@ -924,7 +924,7 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Specifies the profile name.  
   
 ### Return Value  
@@ -954,7 +954,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 ```  
   
 ### Parameters  
- [in] `bNext`  
+ [in] *bNext*  
  If `TRUE`, move the tab to the next tabbed group. If `FALSE`, move it to the previous tabbed group.  
   
 ##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup  
@@ -965,7 +965,7 @@ void MDITabNewGroup(BOOL bVert=TRUE);
 ```  
   
 ### Parameters  
- [in] `bVert`  
+ [in] *bVert*  
  Specifies the new group alignment. If `TRUE`, the new group is aligned vertically. If `FALSE`, the new group is aligned horizontally.  
   
 ### Remarks  
@@ -1017,7 +1017,7 @@ virtual BOOL NegotiateBorderSpace(
 ```  
   
 ### Parameters  
- [in] `nBorderCmd`  
+ [in] *nBorderCmd*  
  Contains one of the following values from the enum `CFrameWnd::BorderCmd`:  
   
 - `borderGet` = 1  
@@ -1026,7 +1026,7 @@ virtual BOOL NegotiateBorderSpace(
   
 - `borderSet` = 3  
   
- [in, out] `lpRectBorder`  
+ [in, out] *lpRectBorder*  
  Pointer to a [RECT Structure](../../mfc/reference/rect-structure1.md) or a [CRect Class](../../atl-mfc-shared/reference/crect-class.md) object that specifies the coordinates of the border.  
   
 ### Return Value  
@@ -1043,7 +1043,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  Pointer to the pane being closed.  
   
 ### Return Value  
@@ -1062,7 +1062,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  Pointer to the mini-frame window being closed.  
   
 ### Return Value  
@@ -1081,7 +1081,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### Parameters  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  Pointer to a pop-up menu.  
   
 ### Remarks  
@@ -1099,17 +1099,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The command ID.  
   
- [in] `nCode`  
- Identifies the command notification code. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about values for `nCode`.  
+ [in] *nCode*  
+ Identifies the command notification code. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about values for *nCode*.  
   
- [in] `pExtra`  
- Used according to the value of `nCode`. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about `pExtra`.  
+ [in] *pExtra*  
+ Used according to the value of *nCode*. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about *pExtra*.  
   
- [in, out] `pHandlerInfo`  
- Typically, this parameter should be `NULL`.If not `NULL`, `OnCmdMsg` fills in the `pTarget` and `pmf` members of the `pHandlerInfo` structure instead of dispatching the command.  
+ [in, out] *pHandlerInfo*  
+ Typically, this parameter should be `NULL`.If not `NULL`, `OnCmdMsg` fills in the `pTarget` and `pmf` members of the *pHandlerInfo* structure instead of dispatching the command.  
   
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  
@@ -1125,13 +1125,13 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Pointer to the menu button.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Bounding rectangle of the image.  
   
 ### Return Value  
@@ -1141,7 +1141,7 @@ virtual BOOL OnDrawMenuImage(
  Override this method  if you want to customize image rendering for the menu items that belong to the menu bar owned by the `CMDIFrameWndEx`-derived object. The default implementation does nothing.  
   
 ##  <a name="ondrawmenulogo"></a>  CMDIFrameWndEx::OnDrawMenuLogo  
- Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.  
+ Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a WM_PAINT message.  
   
 ```  
 virtual void OnDrawMenuLogo(
@@ -1164,10 +1164,10 @@ virtual BOOL OnEraseMDIClientBackground(CDC*);
  `TRUE` if the application processes the message and erases the background.  
   
 ### Remarks  
- Override this member function if you want to process the `WM_ERASEBKGND` message in a `CMDIFrameWndEx`-derived class.  
+ Override this member function if you want to process the WM_ERASEBKGND message in a `CMDIFrameWndEx`-derived class.  
   
 ##  <a name="onmenubuttontoolhittest"></a>  CMDIFrameWndEx::OnMenuButtonToolHitTest  
- Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.  
+ Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a WM_NCHITTEST message.  
   
 ```  
 virtual BOOL OnMenuButtonToolHitTest(
@@ -1176,14 +1176,14 @@ virtual BOOL OnMenuButtonToolHitTest(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  The toolbar button.  
   
- [out] `pTI`  
+ [out] *pTI*  
  Pointer to a [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) structure.  
   
 ### Return Value  
- `TRUE` if the application fills the `pTI` parameter. The default implementation returns `FALSE`.  
+ `TRUE` if the application fills the *pTI* parameter. The default implementation returns `FALSE`.  
   
 ### Remarks  
  Override this method if you want to provide information about specific menu items to a tooltip. The default implementation does nothing.  
@@ -1196,7 +1196,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] `pFrame`  
+ [in] *pFrame*  
  A pointer to a mini-frame window.  
   
 ### Return Value  
@@ -1212,10 +1212,10 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### Parameters  
- [in] `bPreview`  
+ [in] *bPreview*  
  If `TRUE`, sets print-preview mode. If `FALSE`, cancels preview mode.  
   
- [in] `pState`  
+ [in] *pState*  
  A pointer to a `CPrintPreviewState` structure.  
   
 ### Remarks  
@@ -1231,10 +1231,10 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### Parameters  
- [in] `pMenuPane`  
+ [in] *pMenuPane*  
  A pointer to the Quick Customize pane.  
   
- [in] `uiToolbarID`  
+ [in] *uiToolbarID*  
  Control ID of the toolbar to customize.  
   
 ### Return Value  
@@ -1256,10 +1256,10 @@ virtual BOOL OnShowMDITabContextMenu(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The location of the menu in screen coordinates.  
   
- [in] `dwAllowedItems`  
+ [in] *dwAllowedItems*  
  A bitwise-OR combination of flags that indicates what actions are allowed for the current tab:  
   
 - `BCGP_MDI_CREATE_VERT_GROUP` - can create a vertical tab group.  
@@ -1272,7 +1272,7 @@ virtual BOOL OnShowMDITabContextMenu(
   
 - `BCGP_MDI_CAN_BE_DOCKED` - switch a tabbed document to docked state (relevant for tabbed documents only).  
   
- [in] `bTabDrop`  
+ [in] *bTabDrop*  
  `TRUE` to display the menu as a result of dragging the tab onto another tabbed group. `FALSE` to display the menu as a shortcut menu on the currently active tab.  
   
 ### Return Value  
@@ -1294,11 +1294,11 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  `TRUE` to show panes, `FALSE` to hide panes.  
   
 ### Return Value  
- `TRUE` if the state of the panes changes as a result of calling this method, `FALSE` if the panes are already in the state specified by `bShow`. For example, if the panes are hidden and `bShow` is `FALSE`, the return value is `FALSE`.  
+ `TRUE` if the state of the panes changes as a result of calling this method, `FALSE` if the panes are already in the state specified by *bShow*. For example, if the panes are hidden and *bShow* is `FALSE`, the return value is `FALSE`.  
   
 ### Remarks  
  The default implementation removes the toolbar from the top-level frame window.  
@@ -1330,10 +1330,10 @@ virtual void OnSizeMDIClient(
 ```  
   
 ### Parameters  
- [in] `rectOld`  
+ [in] *rectOld*  
  The current size of the MDI client window.  
   
- [in] `rectNew`  
+ [in] *rectNew*  
  The new size of the MDI client window.  
   
 ### Remarks  
@@ -1348,10 +1348,10 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### Parameters  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  A pointer to the pop-up menu.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the tear-off bar.  
   
 ### Return Value  
@@ -1368,7 +1368,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### Parameters  
- [in] `hMenuAlt`  
+ [in] *hMenuAlt*  
  A handle to a menu.  
   
 ##  <a name="panefrompoint"></a>  CMDIFrameWndEx::PaneFromPoint  
@@ -1389,23 +1389,23 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The point (in screen coordinates).  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  The window rectangle of each checked pane is enlarged in all directions by this value.  
   
- [in] `bExactBar`  
- If `TRUE`, the `nSensitivity` parameter is ignored.  
+ [in] *bExactBar*  
+ If `TRUE`, the *nSensitivity* parameter is ignored.  
   
- [in] `pRTCBarType`  
+ [in] *pRTCBarType*  
  If non- `NULL`, the method iterates over only the panes of the specified type.  
   
- [out] `dwAlignment`  
+ [out] *dwAlignment*  
  If a pane is found, this parameter will specify which side of the pane is closest to the specified point.  
   
 ### Return Value  
- A pointer to a docking pane, or `NULL` if no control contains the point specified by `point`.  
+ A pointer to a docking pane, or `NULL` if no control contains the point specified by *point*.  
   
 ### Remarks  
  The call is redirected to the [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md). See [CDockingManager::ControlBarFromPoint](../../mfc/reference/cdockingmanager-class.md#panefrompoint) for more information.  
@@ -1418,7 +1418,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- [in] `bNotify`  
+ [in] *bNotify*  
  Determines whether the active in-place item for the frame window receives notification of the layout change. If `TRUE`, the item is notified; otherwise `FALSE`.  
   
 ### Remarks  
@@ -1437,19 +1437,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to a pane to be removed.  
   
- [in] `bDestroy`  
+ [in] *bDestroy*  
  `TRUE` to destroy the removed pane. `FALSE` to not destroy it.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` to adjust the docking layout immediately. If `FALSE`, the adjustment will occur only when a redraw event occurs for other reasons (the user resizes the window, drags the main frame, etc.).  
   
- [in] `bAutoHide`  
+ [in] *bAutoHide*  
  `TRUE` to remove the pane from the list of autohide panes. `FALSE` to remove the pane from the list of regular panes.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  A pointer to a pane that replaces the removed pane.  
   
 ### Remarks  
@@ -1465,7 +1465,7 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Specifies the profile name.  
   
 ### Return Value  
@@ -1499,7 +1499,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  Pointer to a print preview frame window.  
   
 ### Remarks  
@@ -1515,13 +1515,13 @@ void SetupToolbarMenu(
 ```  
   
 ### Parameters  
- [in] `menu`  
+ [in] *menu*  
  A reference to a [CMenu Class](../../mfc/reference/cmenu-class.md) object to be modified.  
   
- [in] `uiViewUserToolbarCmdFirst`  
+ [in] *uiViewUserToolbarCmdFirst*  
  Specifies the first user-defined command.  
   
- [in] `uiViewUserToolbarCmdLast`  
+ [in] *uiViewUserToolbarCmdLast*  
  Specifies the last user-defined command.  
   
 ##  <a name="showfullscreen"></a>  CMDIFrameWndEx::ShowFullScreen  
@@ -1545,16 +1545,16 @@ void ShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  Pointer to the pane to be shown or hidden.  
   
- [in] `bShow`  
+ [in] *bShow*  
  `TRUE` to show the pane. `FALSE` to hide the pane.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` to delay the recalculation of the docking layout. `FALSE` to recalculate the docking layout immediately.  
   
- [in] `bActivate`  
+ [in] *bActivate*  
  `TRUE` to show the pane should as active. `FALSE` to show the pane as inactive.  
   
 ### Remarks  
@@ -1585,7 +1585,7 @@ virtual BOOL TabbedDocumentToControlBar(CMDIChildWndEx* pMDIChildWnd);
 ```  
   
 ### Parameters  
- `pMDIChildWnd`  
+ *pMDIChildWnd*  
  A pointer to MDI child window that contains a docking pane.  
   
 ### Return Value  
@@ -1625,11 +1625,11 @@ virtual void WinHelp(
 ```  
   
 ### Parameters  
- [in] `dwData`  
- Specifies data as required for the type of help specified by `nCmd`.  
+ [in] *dwData*  
+ Specifies data as required for the type of help specified by *nCmd*.  
   
- [in] `nCmd`  
- Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the [WinHelp Function](http://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
+ [in] *nCmd*  
+ Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](http://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
   
 ### Remarks  
  This method overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).  

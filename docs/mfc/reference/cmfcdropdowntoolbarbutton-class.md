@@ -85,11 +85,11 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  A reference to the source button from which to copy.  
   
 ### Remarks  
- Call this method to copy another toolbar button to this toolbar button. `src` must be of type `CMFCDropDownToolbarButton`.  
+ Call this method to copy another toolbar button to this toolbar button. *src* must be of type `CMFCDropDownToolbarButton`.  
   
 ##  <a name="cmfcdropdowntoolbarbutton"></a>  CMFCDropDownToolbarButton::CMFCDropDownToolbarButton  
  Constructs a `CMFCDropDownToolbarButton` object.  
@@ -104,16 +104,16 @@ CMFCDropDownToolbarButton(
 ```  
   
 ### Parameters  
- [in] `lpszName`  
+ [in] *lpszName*  
  The default text of the button.  
   
- [in] `pToolBar`  
+ [in] *pToolBar*  
  A pointer to the `CMFCDropDownToolBar` object that is displayed when the user presses the button.  
   
 ### Remarks  
- The second overload of the constructor copies to the drop-down button the first button from the toolbar that `pToolBar` specifies.  
+ The second overload of the constructor copies to the drop-down button the first button from the toolbar that *pToolBar* specifies.  
   
- Typically, a drop-down toolbar button uses the text from the most recently used button in the toolbar that `pToolBar` specifies. It uses the text specified by `lpszName` when the button is converted to a menu button or is displayed in the **Commands** tab of the **Customize** dialog box. For more information about the **Customize** dialog box, see [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).  
+ Typically, a drop-down toolbar button uses the text from the most recently used button in the toolbar that *pToolBar* specifies. It uses the text specified by *lpszName* when the button is converted to a menu button or is displayed in the **Commands** tab of the **Customize** dialog box. For more information about the **Customize** dialog box, see [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).  
   
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCDropDownToolbarButton` class. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
@@ -128,7 +128,7 @@ BOOL DropDownToolbar(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  The parent window of the drop-down frame, or `NULL` to use the parent window of the drop-down toolbar button.  
   
 ### Return Value  
@@ -139,7 +139,7 @@ BOOL DropDownToolbar(CWnd* pWnd);
   
  This methods creates the drop-down toolbar by using the [CMFCDropDownFrame::Create](../../mfc/reference/cmfcdropdownframe-class.md#create) method. If the parent toolbar is docked vertically, this method positions the drop-down toolbar either to the left-hand or right-hand side of the parent toolbar, depending on the fit. Otherwise, this method positions the drop-down toolbar underneath the parent toolbar.  
   
- This method fails if `pWnd` is `NULL` and the drop-down toolbar button does not have a parent window.  
+ This method fails if *pWnd* is `NULL` and the drop-down toolbar button does not have a parent window.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCDropDownToolbarButton::ExportToMenuButton  
  Copies text from the toolbar button to a menu.  
@@ -149,7 +149,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### Parameters  
- [in] `menuButton`  
+ [in] *menuButton*  
  A reference to the target menu button.  
   
 ### Return Value  
@@ -220,13 +220,13 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The device context that displays the button.  
   
- [in] `sizeDefault`  
+ [in] *sizeDefault*  
  The default size of the button.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  The dock state of the parent toolbar. This parameter is `TRUE` if the toolbar is docked horizontally or is floating, or `FALSE` if the toolbar is docked vertically.  
   
 ### Return Value  
@@ -243,7 +243,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  The new parent window.  
   
 ### Remarks  
@@ -259,10 +259,10 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  The parent window of the toolbar button.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` if the message should be handled with a delay.  
   
 ### Return Value  
@@ -298,14 +298,14 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  The parent window of the toolbar button.  
   
 ### Return Value  
  Nonzero if the button processes the help message; otherwise 0.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)) by calling the [CMFCDropDownToolbarButton::OnClick](#onclick) method with `bDelay` set to `FALSE`. This method returns the value that is returned by [CMFCDropDownToolbarButton::OnClick](#onclick).  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)) by calling the [CMFCDropDownToolbarButton::OnClick](#onclick) method with *bDelay* set to `FALSE`. This method returns the value that is returned by [CMFCDropDownToolbarButton::OnClick](#onclick).  
   
  For more information about the `WM_HELPHITTEST message, see` [TN028: Context-Sensitive Help Support](../../mfc/tn028-context-sensitive-help-support.md).  
   
@@ -317,7 +317,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 ```  
   
 ### Parameters  
- [in] `pMenu`  
+ [in] *pMenu*  
  The menu to customize.  
   
 ### Return Value  
@@ -354,28 +354,28 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The device context that displays the button.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the button.  
   
- [in] `pImages`  
+ [in] *pImages*  
  The collection of toolbar images that is associated with the button.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  The dock state of the parent toolbar. This parameter is `TRUE` when the button is docked horizontally and `FALSE` when the button is docked vertically.  
   
- [in] `bCustomizeMode`  
+ [in] *bCustomizeMode*  
  Specifies whether the toolbar is in customization mode. This parameter is `TRUE` when the toolbar is in customization mode and `FALSE` when the toolbar is not in customization mode.  
   
- [in] `bHighlight`  
+ [in] *bHighlight*  
  Specifies whether the button is highlighted. This parameter is `TRUE` when the button is highlighted and `FALSE` when the button is not highlighted.  
   
- [in] `bDrawBorder`  
+ [in] *bDrawBorder*  
  Specifies whether the button should display its border. This parameter is `TRUE` when the button should display its border and `FALSE` when the button should not display its border.  
   
- [in] `bGrayDisabledButtons`  
+ [in] *bGrayDisabledButtons*  
  Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is `TRUE` when disabled buttons should be shaded and `FALSE` when this method should use the disabled images collection.  
   
 ### Remarks  
@@ -392,13 +392,13 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The device context that displays the button.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the button.  
   
- [in] `bSelected`  
+ [in] *bSelected*  
  Whether the button is selected. If this parameter is `TRUE`, the button is selected. If this parameter is `FALSE`, the button is not selected.  
   
 ### Return Value  
@@ -417,7 +417,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
  The `CArchive` object from which or to which to serialize.  
   
 ### Remarks  
@@ -431,11 +431,11 @@ void SetDefaultCommand(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The ID of the default command.  
   
 ### Remarks  
- Call this method to specify a default command that the framework executes when the user clicks the button. An item with the command ID specified by `uiCmd` must be located in the parent drop-down toolbar.  
+ Call this method to specify a default command that the framework executes when the user clicks the button. An item with the command ID specified by *uiCmd* must be located in the parent drop-down toolbar.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

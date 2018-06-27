@@ -218,7 +218,7 @@ class CListCtrl : public CWnd
 ## Items and Subitems  
  Each item in a list view control consists of an icon (from an image list), a label, a current state, and an application-defined value (referred to as "item data"). One or more subitems can also be associated with each item. A "subitem" is a string that, in report view, can be displayed in a column to the right of an item's icon and label. All items in a list view control must have the same number of subitems.  
   
- Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#getitem), [CListCtrl::InsertItem](#insertitem), and [CListCtrl::FindItem](#finditem), [Adding Items to the Control](../adding-items-to-the-control.md), and [Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
+ Class `CListCtrl` provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#getitem), [CListCtrl::InsertItem](#insertitem), and [CListCtrl::FindItem](#finditem), [Adding Items to the Control](../adding-items-to-the-control.md), and [Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
   
  By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using CListCtrl: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).  
   
@@ -266,10 +266,10 @@ CSize ApproximateViewRect(
 ```  
   
 ### Parameters  
- `sz`  
+ *sz*  
  The proposed dimensions of the control, in pixels. If dimensions are not specified, the framework uses the current width or height values of the control.  
   
- `iCount`  
+ *iCount*  
  Number of items to be displayed in the control. If this parameter is -1, the framework uses the total number of items currently in the control.  
   
 ### Return Value  
@@ -286,7 +286,7 @@ BOOL Arrange(UINT nCode);
 ```  
   
 ### Parameters  
- `nCode`  
+ *nCode*  
  Specifies the alignment style for the items. It can be one of the following values:  
   
 - `LVA_ALIGNLEFT` Aligns items along the left edge of the window.  
@@ -301,7 +301,7 @@ BOOL Arrange(UINT nCode);
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- The `nCode` parameter specifies the alignment style.  
+ The *nCode* parameter specifies the alignment style.  
   
 ### Example    
 ```cpp  
@@ -341,25 +341,25 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the list control's style. Apply any combination of list control styles to the control. See [List view window styles](http://msdn.microsoft.com/library/windows/desktop/bb774739) in the Windows SDK for a complete list of these styles. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle).  
   
- `rect`  
+ *rect*  
  Specifies the list control's size and position. It can be either a `CRect` object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the list control's parent window, usually a `CDialog`. It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the list control's ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- You construct a `CListCtrl` in two steps. First, call the constructor and then call **Create**, which creates the list view control and attaches it to the `CListCtrl` object.  
+ You construct a `CListCtrl` in two steps. First, call the constructor and then call `Create`, which creates the list view control and attaches it to the `CListCtrl` object.  
   
- To apply extended Windows styles to the list control object, call [CreateEx](#createex) instead of **Create**.  
+ To apply extended Windows styles to the list control object, call [CreateEx](#createex) instead of `Create`.  
   
 ### Example  
 
@@ -383,19 +383,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the list control's style. Apply any combination of list control styles to the control. For a complete list of these styles, see [List view window styles](http://msdn.microsoft.com/library/windows/desktop/bb774739) in the Windows SDK.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
@@ -404,10 +404,10 @@ virtual BOOL CreateEx(
 ### Remarks  
  Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. To set extended styles specific to a control, call [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **LVS_EX_FULLROWSELECT**. For more information, see the styles described in the topic [Extended List View Styles](http://msdn.microsoft.com/library/windows/desktop/bb774732) in the Windows SDK.  
+ `CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. To set extended styles specific to a control, call [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **LVS_EX_FULLROWSELECT**. For more information, see the styles described in the topic [Extended List View Styles](http://msdn.microsoft.com/library/windows/desktop/bb774732) in the Windows SDK.  
   
 ##  <a name="createdragimage"></a>  CListCtrl::CreateDragImage  
- Creates a drag image list for the item specified by `nItem`.  
+ Creates a drag image list for the item specified by *nItem*.  
   
 ```  
 CImageList* CreateDragImage(
@@ -416,10 +416,10 @@ CImageList* CreateDragImage(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the item whose drag image list is to be created.  
   
- `lpPoint`  
+ *lpPoint*  
  Address of a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the initial location of the upper-left corner of the image, in view coordinates.  
   
 ### Return Value  
@@ -465,7 +465,7 @@ BOOL DeleteColumn(int nCol);
 ```  
   
 ### Parameters  
- `nCol`  
+ *nCol*  
  Index of the column to be deleted.  
   
 ### Return Value  
@@ -492,7 +492,7 @@ BOOL DeleteItem(int nItem);
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Specifies the index of the item to be deleted.  
   
 ### Return Value  
@@ -518,7 +518,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### Parameters  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  A long pointer to a `DRAWITEMSTRUCT` structure that contains information about the type of drawing required.  
   
 ### Remarks  
@@ -536,7 +536,7 @@ CEdit* EditLabel(int nItem);
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the list view item that is to be edited.  
   
 ### Return Value  
@@ -567,7 +567,7 @@ LRESULT EnableGroupView(BOOL fEnable);
 ```  
   
 ### Parameters  
- `fEnable`  
+ *fEnable*  
  Indicates whether to enable a listview control to group displayed items. **TRUE** to enable grouping; **FALSE** to disable it.  
   
 ### Return Value  
@@ -592,17 +592,17 @@ BOOL EnsureVisible(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the list view item that is to be visible.  
   
- `bPartialOK`  
+ *bPartialOK*  
  Specifies whether partial visibility is acceptable.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- The list view control is scrolled if necessary. If the `bPartialOK` parameter is nonzero, no scrolling occurs if the item is partially visible.  
+ The list view control is scrolled if necessary. If the *bPartialOK* parameter is nonzero, no scrolling occurs if the item is partially visible.  
   
 ### Example  
 ```cpp  
@@ -623,17 +623,17 @@ int FindItem(
 ```  
   
 ### Parameters  
- `pFindInfo`  
+ *pFindInfo*  
  A pointer to an [LVFINDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774745) structure containing information about the item to be searched for.  
   
- `nStart`  
- Index of the item to begin the search with, or -1 to start from the beginning. The item at `nStart` is excluded from the search if `nStart` is not equal to -1.  
+ *nStart*  
+ Index of the item to begin the search with, or -1 to start from the beginning. The item at *nStart* is excluded from the search if *nStart* is not equal to -1.  
   
 ### Return Value  
  The index of the item if successful or -1 otherwise.  
   
 ### Remarks  
- The `pFindInfo` parameter points to an **LVFINDINFO** structure, which contains information used to search for a list view item.  
+ The *pFindInfo* parameter points to an **LVFINDINFO** structure, which contains information used to search for a list view item.  
   
 ### Example  
 
@@ -673,7 +673,7 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
 ```  
   
 ### Parameters  
- `plvbkImage`  
+ *plvbkImage*  
  A pointer to an **LVBKIMAGE** structure containing the current background image of the list view.  
   
 ### Return Value  
@@ -722,7 +722,7 @@ BOOL GetCheck(int nItem) const;
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  The zero-based index of a list control item.  
   
 ### Return Value  
@@ -744,10 +744,10 @@ BOOL GetColumn(
 ```  
   
 ### Parameters  
- `nCol`  
+ *nCol*  
  Index of the column whose attributes are to be retrieved.  
   
- `pColumn`  
+ *pColumn*  
  Address of an [LVCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb774743) structure that specifies the information to retrieve and receives information about the column. The **mask** member specifies which column attributes to retrieve. If the **mask** member specifies the `LVCF_TEXT` value, the **pszText** member must contain the address of the buffer that receives the item text and the **cchTextMax** member must specify the size of the buffer.  
   
 ### Return Value  
@@ -782,10 +782,10 @@ BOOL GetColumnOrderArray(
 ```  
   
 ### Parameters  
- `piArray`  
+ *piArray*  
  A pointer to a buffer that will contain the index values of the columns in the list view control. The buffer must be large enough to contain the total number of columns in the list view control.  
   
- `iCount`  
+ *iCount*  
  Number of columns in the list view control. If this parameter is -1, the number of columns is automatically retrieved by the framework.  
   
 ### Return Value  
@@ -831,11 +831,11 @@ int GetColumnWidth(int nCol) const;
 ```  
   
 ### Parameters  
- `nCol`  
+ *nCol*  
  Specifies the index of the column whose width is to be retrieved.  
   
 ### Return Value  
- The width, in pixels, of the column specified by `nCol`.  
+ The width, in pixels, of the column specified by *nCol*.  
   
 ### Example  
 
@@ -982,10 +982,10 @@ int GetGroupInfo(
 ```  
   
 ### Parameters  
- `iGroupId`  
+ *iGroupId*  
  The identifier of the group whose information is to be retrieved.  
   
- `pgrp`  
+ *pgrp*  
  A pointer to the [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) containing information on the group specified.  
   
 ### Return Value  
@@ -1007,8 +1007,8 @@ BOOL GetGroupInfoByIndex(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iIndex`|Zero-based index of a group.|  
-|[out] `pGroup`|Pointer to an [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure that receives information about the group specified by the `iIndex` parameter.<br /><br /> The caller is responsible for initializing the members of the [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure. Set the `cbSize` member to the size of the structure, and the flags of the `mask` member to specify the information to retrieve.|  
+|[in] *iIndex*|Zero-based index of a group.|  
+|[out] *pGroup*|Pointer to an [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure that receives information about the group specified by the *iIndex* parameter.<br /><br /> The caller is responsible for initializing the members of the [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure. Set the `cbSize` member to the size of the structure, and the flags of the `mask` member to specify the information to retrieve.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
@@ -1064,7 +1064,7 @@ void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 ```  
   
 ### Parameters  
- `pGroupMetrics`  
+ *pGroupMetrics*  
  A pointer to a [LVGROUPMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb774752) containing the group metrics information.  
   
 ### Remarks  
@@ -1084,15 +1084,15 @@ BOOL GetGroupRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iGroupId`|Specifies a group.|  
-|[in, out] `lpRect`|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by `iGroupId`.|  
-|[in] `iCoords`|Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - `LVGGR_GROUP` - (Default) Coordinates of the entire expanded group.<br />- `LVGGR_HEADER` - Coordinates of only the header (collapsed group).<br />- `LVGGR_SUBSETLINK` - Coordinates of only the subset link (markup subset).|  
+|[in] *iGroupId*|Specifies a group.|  
+|[in, out] *lpRect*|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|  
+|[in] *iCoords*|Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - `LVGGR_GROUP` - (Default) Coordinates of the entire expanded group.<br />- `LVGGR_HEADER` - Coordinates of only the header (collapsed group).<br />- `LVGGR_SUBSETLINK` - Coordinates of only the subset link (markup subset).|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- The caller is responsible for allocating the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure pointed to by the `pRect` parameter.  
+ The caller is responsible for allocating the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure pointed to by the *pRect* parameter.  
   
  This method sends the [LVM_GETGROUPRECT](http://msdn.microsoft.com/library/windows/desktop/bb774935) message, which is described in the Windows SDK.  
   
@@ -1137,14 +1137,14 @@ UINT GetGroupState(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iGroupId`|Zero-based index of a group.|  
-|[in] `dwMask`|Mask that specifies the state value to retrieve for the specified group. For more information, see the `mask` member of the [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure.|  
+|[in] *iGroupId*|Zero-based index of a group.|  
+|[in] *dwMask*|Mask that specifies the state value to retrieve for the specified group. For more information, see the `mask` member of the [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure.|  
   
 ### Return Value  
  The requested state for the specified group, or 0 if the group cannot be found.  
   
 ### Remarks  
- The return value is the result of a bitwise AND operation on the `dwMask` parameter and the value of the `state` member of an [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure that represents the current list-view control.  
+ The return value is the result of a bitwise AND operation on the *dwMask* parameter and the value of the `state` member of an [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure that represents the current list-view control.  
   
  This method sends the [LVM_GETGROUPSTATE](http://msdn.microsoft.com/library/windows/desktop/bb774936) message, which is described in the Windows SDK. For more information, see the [ListView_GetGroupState](http://msdn.microsoft.com/library/windows/desktop/bb761288) macro.  
   
@@ -1243,7 +1243,7 @@ CImageList* GetImageList(int nImageList) const;
 ```  
   
 ### Parameters  
- `nImageList`  
+ *nImageList*  
  Value specifying which image list to retrieve. It can be one of these values:  
   
 - `LVSIL_NORMAL` Image list with large icons.  
@@ -1272,7 +1272,7 @@ BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
 ```  
   
 ### Parameters  
- `lvim`  
+ *lvim*  
  A pointer to an [LVINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774758) structure containing the information for the insert mark.  
   
 ### Return Value  
@@ -1302,7 +1302,7 @@ int GetInsertMarkRect(LPRECT pRect) const;
 ```  
   
 ### Parameters  
- `pRect`  
+ *pRect*  
  Pointer to a `RECT` structure that contains the coordinates of a rectangle that bounds the insertion point.  
   
 ### Return Value  
@@ -1323,7 +1323,7 @@ BOOL GetItem(LVITEM* pItem) const;
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to an [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure that receives the item's attributes.  
   
 ### Return Value  
@@ -1353,7 +1353,7 @@ DWORD_PTR GetItemData(int nItem) const;
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the list item whose data is to be retrieved.  
   
 ### Return Value  
@@ -1391,10 +1391,10 @@ BOOL GetItemIndexRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pItemIndex`|Pointer to an [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure. This parameter cannot be `NULL`.|  
-|[in] `iColumn`|Zero-based index of a column in the control.|  
-|[in] `rectType`|Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> `LVIR_BOUNDS` - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> `LVIR_ICON` - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> `LVIR_LABEL` - Returns the bounding rectangle of the subitem text.|  
-|[out] `pRect`|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. This parameter cannot be `NULL`.|  
+|[in] *pItemIndex*|Pointer to an [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure. This parameter cannot be `NULL`.|  
+|[in] *iColumn*|Zero-based index of a column in the control.|  
+|[in] *rectType*|Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> `LVIR_BOUNDS` - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> `LVIR_ICON` - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> `LVIR_LABEL` - Returns the bounding rectangle of the subitem text.|  
+|[out] *pRect*|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. This parameter cannot be `NULL`.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
@@ -1440,10 +1440,10 @@ BOOL GetItemPosition(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  The index of the item whose position is to be retrieved.  
   
- `lpPoint`  
+ *lpPoint*  
  Address of a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the position of the item's upper-left corner, in view coordinates.  
   
 ### Return Value  
@@ -1477,13 +1477,13 @@ BOOL GetItemRect(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  The index of the item whose position is to be retrieved.  
   
- `lpRect`  
+ *lpRect*  
  Address of a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle.  
   
- `nCode`  
+ *nCode*  
  Portion of the list view item for which to retrieve the bounding rectangle. It can be one of these values:  
   
 - `LVIR_BOUNDS` Returns the bounding rectangle of the entire item, including the icon and label.  
@@ -1552,9 +1552,9 @@ BOOL GetItemSpacing(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `fSmall`|View for which to retrieve the item spacing. Specify `true` for small icon view, or `false` for icon view.|  
-|[out] `pnHorzSpacing`|Contains the horizontal spacing between items.|  
-|[out] `pnVertSpacing`|Contains the vertical spacing between items.|  
+|[in] *fSmall*|View for which to retrieve the item spacing. Specify `true` for small icon view, or `false` for icon view.|  
+|[out] *pnHorzSpacing*|Contains the horizontal spacing between items.|  
+|[out] *pnVertSpacing*|Contains the vertical spacing between items.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
@@ -1572,10 +1572,10 @@ UINT GetItemState(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  The index of the item whose state is to be retrieved.  
   
- `nMask`  
+ *nMask*  
  Mask specifying which of the item's state flags to return.  
   
 ### Return Value  
@@ -1603,25 +1603,25 @@ CString GetItemText(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  The index of the item whose text is to be retrieved.  
   
- `nSubItem`  
+ *nSubItem*  
  Specifies the subitem whose text is to be retrieved.  
   
- `lpszText`  
+ *lpszText*  
  Pointer to a string that is to receive the item text.  
   
- `nLen`  
- Length of the buffer pointed to by `lpszText`.  
+ *nLen*  
+ Length of the buffer pointed to by *lpszText*.  
   
 ### Return Value  
- The version returning `int` returns the length of the retrieved string.  
+ The version returning **int** returns the length of the retrieved string.  
   
  The version returning a `CString` returns the item text.  
   
 ### Remarks  
- If `nSubItem` is zero, this function retrieves the item label; if `nSubItem` is nonzero, it retrieves the text of the subitem. For more information on the subitem argument, see the discussion of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure in the Windows SDK.  
+ If *nSubItem* is zero, this function retrieves the item label; if *nSubItem* is nonzero, it retrieves the text of the subitem. For more information on the subitem argument, see the discussion of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure in the Windows SDK.  
   
 ##  <a name="getnextitem"></a>  CListCtrl::GetNextItem  
  Searches for a list view item that has the specified properties and that bears the specified relationship to a given item.  
@@ -1633,10 +1633,10 @@ int GetNextItem(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the item to begin the searching with, or -1 to find the first item that matches the specified flags. The specified item itself is excluded from the search.  
   
- `nFlags`  
+ *nFlags*  
  Geometric relation of the requested item to the specified item, and the state of the requested item. The geometric relation can be one of these values:  
   
 - `LVNI_ABOVE` Searches for an item that is above the specified item.  
@@ -1675,30 +1675,30 @@ BOOL GetNextItemIndex(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in, out] `pItemIndex`|Pointer to the [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the `nFlags` parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|  
-|[in] `nFlags`|A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the `pItemIndex` parameter. For more information, see the `flags` parameter in the [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) message.|  
+|[in, out] *pItemIndex*|Pointer to the [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|  
+|[in] *nFlags*|A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) message.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- The caller is responsible for allocating and setting the members of the `LVITEMINDEX` structure pointed to by the `pItemIndex` parameter.  
+ The caller is responsible for allocating and setting the members of the `LVITEMINDEX` structure pointed to by the *pItemIndex* parameter.  
   
  This method sends the [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) message, which is described in the Windows SDK.  
   
 ##  <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem  
- Gets the index of the list item identified by `pos`, then sets *pos* to the **POSITION** value.  
+ Gets the index of the list item identified by *pos*, then sets *pos* to the **POSITION** value.  
   
 ```  
 int GetNextSelectedItem(POSITION& pos) const;  
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  A reference to a **POSITION** value returned by a previous call to `GetNextSelectedItem` or `GetFirstSelectedItemPosition`. The value is updated to the next position by this call.  
   
 ### Return Value  
- The index of the list item identified by `pos`.  
+ The index of the list item identified by *pos*.  
   
 ### Remarks  
  You can use `GetNextSelectedItem` in a forward iteration loop if you establish the initial position with a call to `GetFirstSelectedItemPosition`.  
@@ -1789,7 +1789,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ```  
   
 ### Parameters  
- `lpPoint`  
+ *lpPoint*  
  Address of a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the view origin.  
   
 ### Return Value  
@@ -1868,11 +1868,11 @@ int GetStringWidth(LPCTSTR lpsz) const;
 ```  
   
 ### Parameters  
- `lpsz`  
+ *lpsz*  
  Address of a null-terminated string whose width is to be determined.  
   
 ### Return Value  
- The width, in pixels, of the string pointed to by `lpsz`.  
+ The width, in pixels, of the string pointed to by *lpsz*.  
   
 ### Remarks  
  The returned width takes into account the control's current font and column margins, but not the width of a small icon.  
@@ -1921,7 +1921,7 @@ BOOL GetSubItemRect(
   
 - `LVIR_LABEL` Returns the bounding rectangle of the entire item, including the icon and label. This is identical to `LVIR_BOUNDS`.  
   
- `ref`  
+ *ref*  
  Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the coordinates of the subitem's bounding rectangle.  
   
 ### Return Value  
@@ -1981,7 +1981,7 @@ BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
 ```  
   
 ### Parameters  
- `ptvi`  
+ *ptvi*  
  A pointer to an [LVTILEVIEWINFO](http://msdn.microsoft.com/library/windows/desktop/bb774768) structure that receives the retrieved information.  
   
 ### Return Value  
@@ -2065,7 +2065,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Address of a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
 ### Return Value  
@@ -2084,10 +2084,10 @@ void GetWorkAreas(
 ```  
   
 ### Parameters  
- `nWorkAreas`  
+ *nWorkAreas*  
  The number of `RECT` structures contained in the *prc* array.  
   
- `prc`  
+ *prc*  
  A pointer to an array of `RECT` structures (or [CRect](../../atl-mfc-shared/reference/crect-class.md) objects) that receive the working areas of the list view control. Values in these structures are in client coordinates.  
   
 ### Remarks  
@@ -2104,7 +2104,7 @@ BOOL HasGroup(int iGroupId) const;
 ```  
   
 ### Parameters  
- `iGroupId`  
+ *iGroupId*  
  The identifier of the group being requested.  
   
 ### Return Value  
@@ -2125,22 +2125,22 @@ int HitTest(
 ```  
   
 ### Parameters  
- `pHitTestInfo`  
+ *pHitTestInfo*  
  Address of an **LVHITTESTINFO** structure that contains the position to hit test and that receives information about the results of the hit test.  
   
- `pt`  
+ *pt*  
  Point to be tested.  
   
- `pFlags`  
+ *pFlags*  
  Pointer to an integer that receives information about the results of the test. See the explanation of the **flags** member of the [LVHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb774754) structure in the Windows SDK.  
   
 ### Return Value  
- The index of the item at the position specified by `pHitTestInfo`, if any, or -1 otherwise.  
+ The index of the item at the position specified by *pHitTestInfo*, if any, or -1 otherwise.  
   
 ### Remarks  
  You can use the `LVHT_ABOVE`, `LVHT_BELOW`, `LVHT_TOLEFT`, and `LVHT_TORIGHT` values of the structure's **flag** member to determine whether to scroll the contents of a list view control. Two of these flags can be combined, for example, if the position is above and to the left of the client area.  
   
- You can test for the **LVHT_ONITEM** value of the structure's **flag** member to determine whether a given position is over a list view item. This value is a bitwise-OR operation on the `LVHT_ONITEMICON`, `LVHT_ONITEMLABEL`, and `LVHT_ONITEMSTATEICON` values of the structure's **flag** member.  
+ You can test for the `LVHT_ONITEM` value of the structure's **flag** member to determine whether a given position is over a list view item. This value is a bitwise-OR operation on the `LVHT_ONITEMICON`, `LVHT_ONITEMLABEL`, and `LVHT_ONITEMSTATEICON` values of the structure's **flag** member.  
   
 ### Example  
 
@@ -2183,22 +2183,22 @@ int InsertColumn(
 ```  
   
 ### Parameters  
- `nCol`  
+ *nCol*  
  The index of the new column.  
   
- `pColumn`  
+ *pColumn*  
  Address of an **LVCOLUMN** structure that contains the attributes of the new column.  
   
  *lpszColumnHeading*  
  Address of a string containing the column's heading.  
   
- `nFormat`  
+ *nFormat*  
  Integer specifying the alignment of the column. It can be one of these values: **LVCFMT_LEFT**, **LVCFMT_RIGHT**, or **LVCFMT_CENTER**.  
   
- `nWidth`  
+ *nWidth*  
  Width of the column, in pixels. If this parameter is -1, the column width is not set.  
   
- `nSubItem`  
+ *nSubItem*  
  Index of the subitem associated with the column. If this parameter is -1, no subitem is associated with the column.  
   
 ### Return Value  
@@ -2222,7 +2222,7 @@ LRESULT InsertGroup(
  *index*  
  The index of the item where the group is to be inserted.  
   
- `pgrp`  
+ *pgrp*  
  A pointer to an [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure containing the group to be added.  
   
 ### Return Value  
@@ -2277,29 +2277,29 @@ int InsertItem(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to an [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure that specifies the item's attributes, as described in the Windows SDK.  
   
- `nItem`  
+ *nItem*  
  Index of the item to be inserted.  
   
- `lpszItem`  
+ *lpszItem*  
  Address of a string containing the item's label, or `LPSTR_TEXTCALLBACK` if the item is a callback item. For information on callback items, see [CListCtrl::GetCallbackMask](#getcallbackmask).  
   
- `nImage`  
+ *nImage*  
  Index of the item's image, or `I_IMAGECALLBACK` if the item is a callback item. For information on callback items, see [CListCtrl::GetCallbackMask](#getcallbackmask).  
   
- `nMask`  
- The `nMask` parameter specifies which item attributes passed as parameters are valid. It can be one or more of the mask values described in [LVITEM Structure](http://msdn.microsoft.com/library/windows/desktop/bb774760) in the Windows SDK. The valid values can be combined with the bitwise OR operator.  
+ *nMask*  
+ The *nMask* parameter specifies which item attributes passed as parameters are valid. It can be one or more of the mask values described in [LVITEM Structure](http://msdn.microsoft.com/library/windows/desktop/bb774760) in the Windows SDK. The valid values can be combined with the bitwise OR operator.  
   
- `nState`  
+ *nState*  
  Indicates the item's state, state image, and overlay image. See the Windows SDK topics [LVITEM Structure](http://msdn.microsoft.com/library/windows/desktop/bb774760) for more information and [List-View Item States](http://msdn.microsoft.com/library/windows/desktop/bb774733) for a list of valid flags.  
   
- `nStateMask`  
+ *nStateMask*  
  Indicates which bits of the state member will be retrieved or modified. See [LVITEM Structure](http://msdn.microsoft.com/library/windows/desktop/bb774760) in the Windows SDK for more information.  
   
- `lParam`  
- A 32-bit application-specific value associated with the item. If this parameter is specified, you must set the `nMask` attribute `LVIF_PARAM`.  
+ *lParam*  
+ A 32-bit application-specific value associated with the item. If this parameter is specified, you must set the *nMask* attribute `LVIF_PARAM`.  
   
 ### Return Value  
  The index of the new item if successful or -1 otherwise.  
@@ -2342,10 +2342,10 @@ int InsertMarkHitTest(
 ```  
   
 ### Parameters  
- `pPoint`  
+ *pPoint*  
  A pointer to a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the hit test coordinates, relative to the client area of the list control.  
   
- `lvim`  
+ *lvim*  
  A pointer to an [LVINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774758) structure that specifies the insertion point closest to the coordinates defined by the point parameter.  
   
 ### Return Value  
@@ -2378,7 +2378,7 @@ BOOL IsItemVisible(int index) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `index`|Zero-based index of an item in the current list-view control.|  
+|[in] *index*|Zero-based index of an item in the current list-view control.|  
   
 ### Return Value  
  `true` if the specified item is visible;otherwise, `false`.  
@@ -2397,7 +2397,7 @@ UINT MapIDToIndex(UINT id) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `id`|The unique ID of an item.|  
+|[in] *id*|The unique ID of an item.|  
   
 ### Return Value  
  The current index for the specified ID.  
@@ -2420,7 +2420,7 @@ UINT MapIndexToID(UINT index) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `index`|The zero-based index of an item.|  
+|[in] *index*|The zero-based index of an item.|  
   
 ### Return Value  
  A unique ID for the specified item.  
@@ -2482,10 +2482,10 @@ LRESULT MoveGroup(
 ```  
   
 ### Parameters  
- `iGroupId`  
+ *iGroupId*  
  The identifier of the group to be moved.  
   
- `toIndex`  
+ *toIndex*  
  The zero-based index where the group is to be moved.  
   
 ### Return Value  
@@ -2504,10 +2504,10 @@ void MoveItemToGroup(
 ```  
   
 ### Parameters  
- [in] `idItemFrom`  
+ [in] *idItemFrom*  
  The index of the item to be moved.  
   
- [in] `idGroupTo`  
+ [in] *idGroupTo*  
  The identifier of the group the item will be moved to.  
   
 ### Remarks  
@@ -2527,17 +2527,17 @@ BOOL RedrawItems(
 ```  
   
 ### Parameters  
- `nFirst`  
+ *nFirst*  
  Index of the first item to be repainted.  
   
- `nLast`  
+ *nLast*  
  Index of the last item to be repainted.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- The specified items are not actually repainted until the list view window receives a `WM_PAINT` message. To repaint immediately, call the Windows [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) function after using this function.  
+ The specified items are not actually repainted until the list view window receives a WM_PAINT message. To repaint immediately, call the Windows [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) function after using this function.  
   
 ##  <a name="removeallgroups"></a>  CListCtrl::RemoveAllGroups  
  Removes all groups from a list view control.  
@@ -2557,7 +2557,7 @@ LRESULT RemoveGroup(int iGroupId);
 ```  
   
 ### Parameters  
- `iGroupId`  
+ *iGroupId*  
  The identifier of the group to be removed.  
   
 ### Return Value  
@@ -2574,8 +2574,8 @@ BOOL Scroll(CSize size);
 ```  
   
 ### Parameters  
- `size`  
- A `CSize` object specifying the amount of horizontal and vertical scrolling, in pixels. The **y** member of `size` is divided by the height, in pixels, of the list view control's line, and the control is scrolled by the resulting number of lines.  
+ *size*  
+ A `CSize` object specifying the amount of horizontal and vertical scrolling, in pixels. The **y** member of *size* is divided by the height, in pixels, of the list view control's line, and the control is scrolled by the resulting number of lines.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -2588,7 +2588,7 @@ BOOL SetBkColor(COLORREF cr);
 ```  
   
 ### Parameters  
- `cr`  
+ *cr*  
  Background color to set, or the `CLR_NONE` value for no background color. List view controls with background colors redraw themselves significantly faster than those without background colors. For information, see [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK.  
   
 ### Return Value  
@@ -2625,13 +2625,13 @@ BOOL SetBkImage(
 ```  
   
 ### Parameters  
- `plvbkImage`  
+ *plvbkImage*  
  Address of an **LVBKIMAGE** structure, containing the new background image information.  
   
- `hbm`  
+ *hbm*  
  Handle to a bitmap.  
   
- `pszUrl`  
+ *pszUrl*  
  A **NULL**-terminated string that contains the URL of the background image.  
   
  *fTile*  
@@ -2662,7 +2662,7 @@ BOOL SetCallbackMask(UINT nMask);
 ```  
   
 ### Parameters  
- `nMask`  
+ *nMask*  
  New value of the callback mask.  
   
 ### Return Value  
@@ -2690,11 +2690,11 @@ BOOL SetCheck(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  The zero-based index of a list control item.  
   
- `fCheck`  
- Specifies whether the state image of the item should be visible or not. By default, *fCheck* is **TRUE** and the state image is visible. If `fCheck` is **FALSE**, it is not visible.  
+ *fCheck*  
+ Specifies whether the state image of the item should be visible or not. By default, *fCheck* is **TRUE** and the state image is visible. If *fCheck* is **FALSE**, it is not visible.  
   
 ### Return Value  
  Nonzero if the item is checked, otherwise 0.  
@@ -2728,10 +2728,10 @@ BOOL SetColumn(
 ```  
   
 ### Parameters  
- `nCol`  
+ *nCol*  
  Index of the column whose attributes are to be set.  
   
- `pColumn`  
+ *pColumn*  
  Address of an [LVCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb774743) structure that contains the new column attributes, as described in the Windows SDK. The structure's **mask** member specifies which column attributes to set. If the **mask** member specifies the `LVCF_TEXT` value, the structure's **pszText** member is the address of a null-terminated string and the structure's **cchTextMax** member is ignored.  
   
 ### Return Value  
@@ -2750,10 +2750,10 @@ BOOL SetColumnOrderArray(
 ```  
   
 ### Parameters  
- `piArray`  
+ *piArray*  
  A pointer to a buffer containing the index values of the columns in the list view control (from left to right). The buffer must be large enough to contain the total number of columns in the list view control.  
   
- `iCount`  
+ *iCount*  
  Number of columns in the list view control.  
   
 ### Return Value  
@@ -2775,10 +2775,10 @@ BOOL SetColumnWidth(
 ```  
   
 ### Parameters  
- `nCol`  
+ *nCol*  
  Index of the column for which the width is to be set. In list view, this parameter must be 0.  
   
- `cx`  
+ *cx*  
  The new width of the column. Can be either **LVSCW_AUTOSIZE** or **LVSCW_AUTOSIZE_USEHEADER**, as described in [LVM_SETCOLUMNWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb761163) in the Windows SDK.  
   
 ### Return Value  
@@ -2792,7 +2792,7 @@ DWORD SetExtendedStyle(DWORD dwNewStyle);
 ```  
   
 ### Parameters  
- `dwNewStyle`  
+ *dwNewStyle*  
  A combination of extended styles to be used by the list view control. For a descriptive list of these styles, see the [Extended List View Styles](http://msdn.microsoft.com/library/windows/desktop/bb774732) topic in the Windows SDK.  
   
 ### Return Value  
@@ -2821,10 +2821,10 @@ int SetGroupInfo(
 ```  
   
 ### Parameters  
- `iGroupId`  
+ *iGroupId*  
  The identifier of the group whose information is set.  
   
- `pgrp`  
+ *pgrp*  
  Pointer to an [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure that contains the information to set. The caller is responsible for allocating this structure and setting its members.  
   
 ### Return Value  
@@ -2841,7 +2841,7 @@ void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 ```  
   
 ### Parameters  
- `pGroupMetrics`  
+ *pGroupMetrics*  
  A pointer to an [LVGROUPMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb774752) structure containing the group metrics information to be set.  
   
 ### Remarks  
@@ -2877,7 +2877,7 @@ int SetHotItem(int iIndex);
 ```  
   
 ### Parameters  
- `iIndex`  
+ *iIndex*  
  Zero-based index of the item to be set as the hot item.  
   
 ### Return Value  
@@ -2921,13 +2921,13 @@ CSize SetIconSpacing(CSize size);
 ```  
   
 ### Parameters  
- `cx`  
+ *cx*  
  The distance (in pixels) between icons on the x-axis.  
   
- `cy`  
+ *cy*  
  The distance (in pixels) between icons on the y-axis.  
   
- `size`  
+ *size*  
  A `CSize` object specifying the distance (in pixels) between icons on the x- and y-axes.  
   
 ### Return Value  
@@ -2955,10 +2955,10 @@ CImageList* SetImageList(
 ```  
   
 ### Parameters  
- `pImageList`  
+ *pImageList*  
  Pointer to the image list to assign.  
   
- `nImageListType`  
+ *nImageListType*  
  Type of image list. It can be one of these values:  
   
 - `LVSIL_NORMAL` Image list with large icons.  
@@ -2998,7 +2998,7 @@ BOOL SetInsertMark(LPLVINSERTMARK lvim);
 ```  
   
 ### Parameters  
- `lvim`  
+ *lvim*  
  A pointer to an [LVINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774758) structure specifying where to set the insertion point.  
   
 ### Return Value  
@@ -3015,7 +3015,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) structure specifying the color to set the insertion point.  
   
 ### Return Value  
@@ -3055,47 +3055,47 @@ BOOL SetItem(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Address of an [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure that contains the new item attributes, as described in the Windows SDK. The structure's **iItem** and **iSubItem** members identify the item or subitem, and the structure's **mask** member specifies which attributes to set. For more information on the **mask** member, see the **Remarks**.  
   
- `nItem`  
+ *nItem*  
  Index of the item whose attributes are to be set.  
   
- `nSubItem`  
+ *nSubItem*  
  Index of the subitem whose attributes are to be set.  
   
- `nMask`  
+ *nMask*  
  Specifies which attributes are to be set (see the Remarks).  
   
- `lpszItem`  
+ *lpszItem*  
  Address of a null-terminated string specifying the item's label.  
   
- `nImage`  
+ *nImage*  
  Index of the item's image within the image list.  
   
- `nState`  
+ *nState*  
  Specifies values for states to be changed (see the Remarks).  
   
- `nStateMask`  
+ *nStateMask*  
  Specifies which states are to be changed (see the Remarks).  
   
- `lParam`  
+ *lParam*  
  A 32-bit application-specific value to be associated with the item.  
   
- `nIndent`  
- Width, in pixels, of the indentation. If `nIndent` is less than the system-defined minimum width, the new width is set to the system-defined minimum  
+ *nIndent*  
+ Width, in pixels, of the indentation. If *nIndent* is less than the system-defined minimum width, the new width is set to the system-defined minimum  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- The **iItem** and **iSubItem** members of the **LVITEM** structure and the `nItem` and `nSubItem` parameters identify the item and subitem whose attributes are to be set.  
+ The **iItem** and **iSubItem** members of the **LVITEM** structure and the *nItem* and *nSubItem* parameters identify the item and subitem whose attributes are to be set.  
   
- The **mask** member of the **LVITEM** structure and the `nMask` parameter specify which item attributes are to be set:  
+ The **mask** member of the **LVITEM** structure and the *nMask* parameter specify which item attributes are to be set:  
   
-- `LVIF_TEXT` The **pszText** member or the `lpszItem` parameter is the address of a null-terminated string; the **cchTextMax** member is ignored.  
+- `LVIF_TEXT` The **pszText** member or the *lpszItem* parameter is the address of a null-terminated string; the **cchTextMax** member is ignored.  
   
-- `LVIF_STATE` The **stateMask** member or `nStateMask` parameter specifies which item states to change and the **state** member or `nState` parameter contains the values for those states.  
+- `LVIF_STATE` The **stateMask** member or *nStateMask* parameter specifies which item states to change and the **state** member or *nState* parameter contains the values for those states.  
   
 ### Example  
   See the example for [CListCtrl::HitTest](#hittest).  
@@ -3108,7 +3108,7 @@ void SetItemCount(int nItems);
 ```  
   
 ### Parameters  
- `nItems`  
+ *nItems*  
  Number of items that the control will ultimately contain.  
   
 ### Remarks  
@@ -3144,10 +3144,10 @@ BOOL SetItemCountEx(
 ```  
   
 ### Parameters  
- `iCount`  
+ *iCount*  
  Number of items that the control will ultimately contain.  
   
- `dwFlags`  
+ *dwFlags*  
  Specifies the behavior of the list view control after resetting the item count. This value can be a combination of the following:  
   
 - **LVSICF_NOINVALIDATEALL** The list view control will not repaint unless affected items are currently in view. This is the default value.  
@@ -3182,17 +3182,17 @@ BOOL SetItemCountEx(
 
   
 ##  <a name="setitemdata"></a>  CListCtrl::SetItemData  
- Sets the 32-bit application-specific value associated with the item specified by `nItem`.  
+ Sets the 32-bit application-specific value associated with the item specified by *nItem*.  
   
 ```  
 BOOL SetItemData(int nItem, DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the list item whose data is to be set.  
   
- `dwData`  
+ *dwData*  
  A 32-bit value to be associated with the item.  
   
 ### Return Value  
@@ -3227,17 +3227,17 @@ BOOL SetItemIndexState(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pItemIndex`|Pointer to an [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|  
-|[in] `dwState`|The state to set the item, which is a bitwise combination of [list view item states](http://msdn.microsoft.com/library/windows/desktop/bb774733). Specify zero to reset, or one to set, a state.|  
-|[in] `dwMask`|A mask of the valid bits of the state specified by the `dwState` parameter. Specify a bitwise combination (OR) of [list view item states](http://msdn.microsoft.com/library/windows/desktop/bb774733).|  
+|[in] *pItemIndex*|Pointer to an [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|  
+|[in] *dwState*|The state to set the item, which is a bitwise combination of [list view item states](http://msdn.microsoft.com/library/windows/desktop/bb774733). Specify zero to reset, or one to set, a state.|  
+|[in] *dwMask*|A mask of the valid bits of the state specified by the *dwState* parameter. Specify a bitwise combination (OR) of [list view item states](http://msdn.microsoft.com/library/windows/desktop/bb774733).|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- For more information about the `dwState` parameter, see [List View Item States](http://msdn.microsoft.com/library/windows/desktop/bb774733).  
+ For more information about the *dwState* parameter, see [List View Item States](http://msdn.microsoft.com/library/windows/desktop/bb774733).  
   
- For more information about the `dwMask` parameter, see the `stateMask` member of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure.  
+ For more information about the *dwMask* parameter, see the *stateMask* member of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure.  
   
  This method sends the [LVM_SETITEMINDEXSTATE](http://msdn.microsoft.com/library/windows/desktop/bb761190) message, which is described in the Windows SDK.  
   
@@ -3251,10 +3251,10 @@ BOOL SetItemPosition(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the item whose position is to be set.  
   
- `pt`  
+ *pt*  
  A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure specifying the new position, in view coordinates, of the item's upper-left corner.  
   
 ### Return Value  
@@ -3284,16 +3284,16 @@ BOOL SetItemState(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the item whose state is to be set.  
   
- `pItem`  
+ *pItem*  
  Address of an [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure, as described in the Windows SDK. The structure's **stateMask** member specifies which state bits to change, and the structure's **state** member contains the new values for those bits. The other members are ignored.  
   
- `nState`  
+ *nState*  
  New values for the state bits. For a list of possible values, see [CListCtrl::GetNextItem](#getnextitem) and the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) state member.  
   
- `nMask`  
+ *nMask*  
  Mask specifying which state bits to change. This value corresponds to the stateMask member of  the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure.  
   
 ### Return Value  
@@ -3316,13 +3316,13 @@ BOOL SetItemText(
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the item whose text is to be set.  
   
- `nSubItem`  
+ *nSubItem*  
  Index of the subitem, or zero to set the item label.  
   
- `lpszText`  
+ *lpszText*  
  Pointer to a string that contains the new item text.  
   
 ### Return Value  
@@ -3342,7 +3342,7 @@ COLORREF SetOutlineColor(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  The new [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) structure containing the outline color.  
   
 ### Return Value  
@@ -3376,7 +3376,7 @@ int SetSelectionMark(int iIndex);
 ```  
   
 ### Parameters  
- `iIndex`  
+ *iIndex*  
  The zero-based index of the first item in a multiple selection.  
   
 ### Return Value  
@@ -3396,7 +3396,7 @@ BOOL SetTextBkColor(COLORREF cr);
 ```  
   
 ### Parameters  
- `cr`  
+ *cr*  
  A **COLORREF** specifying the new text background color. For information, see [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK.  
   
 ### Return Value  
@@ -3421,7 +3421,7 @@ BOOL SetTextColor(COLORREF cr);
 ```  
   
 ### Parameters  
- `cr`  
+ *cr*  
  A **COLORREF** specifying the new text color. For information, see [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK.  
   
 ### Return Value  
@@ -3464,7 +3464,7 @@ BOOL SetTileViewInfo(PLVTILEVIEWINFO ptvi);
 ```  
   
 ### Parameters  
- `ptvi`  
+ *ptvi*  
  A pointer to an [LVTILEVIEWINFO](http://msdn.microsoft.com/library/windows/desktop/bb774768) structure containing the information to set.  
   
 ### Return Value  
@@ -3481,7 +3481,7 @@ CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
 ```  
   
 ### Parameters  
- `pWndTip`  
+ *pWndTip*  
  A pointer to a `CToolTipCtrl` object that the list control will use.  
   
 ### Return Value  
@@ -3519,10 +3519,10 @@ void SetWorkAreas(
 ```  
   
 ### Parameters  
- `nWorkAreas`  
- The number of `RECT` structures (or [CRect](../../atl-mfc-shared/reference/crect-class.md) objects) in the array pointed to by `lpRect`.  
+ *nWorkAreas*  
+ The number of `RECT` structures (or [CRect](../../atl-mfc-shared/reference/crect-class.md) objects) in the array pointed to by *lpRect*.  
   
- `lpRect`  
+ *lpRect*  
  The address of an array of `RECT` structures (or `CRect` objects) that specify the new work areas of the list view control. These areas must be specified in client coordinates. If this parameter is **NULL**, the working area will be set to the client area of the control.  
   
 ### Remarks  
@@ -3547,10 +3547,10 @@ BOOL SortGroups(
 ```  
   
 ### Parameters  
- `_pfnGroupCompare`  
+ *_pfnGroupCompare*  
  A pointer to the group comparison function.  
   
- `_plv`  
+ *_plv*  
  A void pointer.  
   
 ### Return Value  
@@ -3569,12 +3569,12 @@ BOOL SortItems(
 ```  
   
 ### Parameters  
- [in] `pfnCompare`  
+ [in] *pfnCompare*  
  Address of the application-defined comparison function.  
   
  The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-defined value that is passed to the comparison function.  
   
 ### Return Value  
@@ -3583,7 +3583,7 @@ BOOL SortItems(
 ### Remarks  
  This method changes the index of each item to reflect the new sequence.  
   
- The comparison function, `pfnCompare`, has the following form:  
+ The comparison function, *pfnCompare*, has the following form:  
   
 ```  
 int CALLBACK CompareFunc(LPARAM lParam1,
@@ -3592,12 +3592,12 @@ int CALLBACK CompareFunc(LPARAM lParam1,
 ```  
 The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.  
   
- The `lParam1` parameter is the 32-bit value associated with the first item that is compared, and the `lParam2` parameter is the value associated with the second item. These are the values that were specified in the `lParam` member of the items' [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure when they were inserted into the list. The `lParamSort` parameter is the same as the `dwData` value.  
+ The *lParam1* parameter is the 32-bit value associated with the first item that is compared, and the *lParam2* parameter is the value associated with the second item. These are the values that were specified in the *lParam* member of the items' [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure when they were inserted into the list. The *lParamSort* parameter is the same as the *dwData* value.  
   
  This method sends the [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227) message, which is described in the Windows SDK.  
   
 ### Example  
- The following is a simple comparison function that results in items being sorted by their `lParam` values.  
+ The following is a simple comparison function that results in items being sorted by their *lParam* values.  
   
 ```cpp  
 // Sort items by associated lParam
@@ -3630,8 +3630,8 @@ BOOL SortItemsEx(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pfnCompare`|Address of the application-defined comparison function.<br /><br /> The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.|  
-|[in] `dwData`|Application-defined value passed to the comparison function.|  
+|[in] *pfnCompare*|Address of the application-defined comparison function.<br /><br /> The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.|  
+|[in] *dwData*|Application-defined value passed to the comparison function.|  
   
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
@@ -3639,14 +3639,14 @@ BOOL SortItemsEx(
 ### Remarks  
  This method changes the index of each item to reflect the new sequence.  
   
- The comparison function, `pfnCompare`, has the following form:  
+ The comparison function, *pfnCompare*, has the following form:  
   
 ```  
 int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```  
-This message is like [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), except for the type of information passed to the comparison function. In [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), `lParam1` and `lParam2` are the values of the items to compare. In [LVM_SORTITEMSEX](http://msdn.microsoft.com/library/windows/desktop/bb761228), `lParam1` is the current index of the first item to compare and `lParam2` is the current index of the second item. You can send an [LVM_GETITEMTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761055) message to retrieve more information about an item.  
+This message is like [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), except for the type of information passed to the comparison function. In [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), *lParam1* and *lParam2* are the values of the items to compare. In [LVM_SORTITEMSEX](http://msdn.microsoft.com/library/windows/desktop/bb761228), *lParam1* is the current index of the first item to compare and *lParam2* is the current index of the second item. You can send an [LVM_GETITEMTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761055) message to retrieve more information about an item.  
   
  The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.  
   
@@ -3708,7 +3708,7 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
 ```  
   
 ### Parameters  
- `pInfo`  
+ *pInfo*  
  A pointer to the [LVHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb774754) structure.  
   
 ### Return Value  
@@ -3739,14 +3739,14 @@ LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 
   
 ##  <a name="update"></a>  CListCtrl::Update  
- Forces the list view control to repaint the item specified by `nItem`.  
+ Forces the list view control to repaint the item specified by *nItem*.  
   
 ```  
 BOOL Update(int nItem);
 ```  
   
 ### Parameters  
- `nItem`  
+ *nItem*  
  Index of the item to be updated.  
   
 ### Return Value  

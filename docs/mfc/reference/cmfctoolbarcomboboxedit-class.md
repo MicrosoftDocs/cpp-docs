@@ -61,7 +61,7 @@ CMFCToolBarComboBoxEdit(CMFCToolBarComboBoxButton& combo);
 ```  
   
 ### Parameters  
- [in] `combo`  
+ [in] *combo*  
  A reference to a [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) object, which is a toolbar button that contains a combo box control.  
   
 ### Example  

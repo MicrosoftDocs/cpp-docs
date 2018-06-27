@@ -81,7 +81,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpClassName`  
+ *lpClassName*  
  Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function. If **NULL**, the window class will be registered for you by the framework. MFC gives the default class the following styles and attributes:  
   
 -   Sets style bit **CS_DBLCLKS**, which sends double-click messages to the window procedure when the user double-clicks the mouse.  
@@ -96,10 +96,10 @@ virtual BOOL Create(
   
 -   Sets the window to the default size and position, as indicated by Windows.  
   
- `lpWindowName`  
+ *lpWindowName*  
  Points to a null-terminated character string that contains the window name.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the window style attributes. These can include standard window styles and one or more of the following special styles:  
   
 - **MFS_MOVEFRAME** Allows the mini-frame window to be moved by clicking on any edge of the window, not just the caption.  
@@ -114,13 +114,13 @@ virtual BOOL Create(
   
  See [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of possible window style values. The typical combination used for mini-frame windows is **WS_POPUP&#124;WS_CAPTION&#124;WS_SYSMENU**.  
   
- `rect`  
+ *rect*  
  A `RECT` structure specifying the desired dimensions of the window.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent window. Use **NULL** for top-level windows.  
   
- `nID`  
+ *nID*  
  If the mini-frame window is created as a child window, this is the identifier of the child control; otherwise 0.  
   
 ### Return Value  
@@ -144,25 +144,25 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
+ *dwExStyle*  
  Specifies the extended style of the `CMiniFrameWnd` being created. Apply any of the [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) to the window.  
   
- `lpClassName`  
+ *lpClassName*  
  Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function or any of the predefined control-class names. It must not be **NULL**.  
   
- `lpWindowName`  
+ *lpWindowName*  
  Points to a null-terminated character string that contains the window name.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the window style attributes. See [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of the possible values.  
   
- `rect`  
- The size and position of the window, in client coordinates of `pParentWnd`.  
+ *rect*  
+ The size and position of the window, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent window object.  
   
- `nID`  
+ *nID*  
  The identifier of the child window.  
   
 ### Return Value  
@@ -177,9 +177,9 @@ virtual BOOL CreateEx(
   
  Override further **On***Message* message handlers to add further functionality to your derived class.  
   
- If the **WS_VISIBLE** style is given, Windows sends the window all the messages required to activate and show the window. If the window style specifies a title bar, the window title pointed to by the `lpszWindowName` parameter is displayed in the title bar.  
+ If the **WS_VISIBLE** style is given, Windows sends the window all the messages required to activate and show the window. If the window style specifies a title bar, the window title pointed to by the *lpszWindowName* parameter is displayed in the title bar.  
   
- The `dwStyle` parameter can be any combination of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+ The *dwStyle* parameter can be any combination of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  The old style Palette toolbox windows are no longer supported. The old style, which did not have an "X" Close button, was supported when running an MFC application on previous versions of Windows, but is no longer supported in Visual C++.NET. Only the new `WS_EX_TOOLWINDOW` style is now supported; for a description of this style, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   

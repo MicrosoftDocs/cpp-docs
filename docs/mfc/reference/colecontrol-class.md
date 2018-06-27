@@ -135,8 +135,8 @@ class COleControl : public CWnd
 |[COleControl::OnGetViewRect](#ongetviewrect)|Override to convert control's size into a rectangle starting at a specific position.|  
 |[COleControl::OnGetViewStatus](#ongetviewstatus)|Override to retrieve the control's view status.|  
 |[COleControl::OnHideToolBars](#onhidetoolbars)|Called by the container when the control is UI deactivated.|  
-|[COleControl::OnInactiveMouseMove](#oninactivemousemove)|Override to have the container for the inactive control under the mouse pointer dispatch `WM_MOUSEMOVE` messages to the control.|  
-|[COleControl::OnInactiveSetCursor](#oninactivesetcursor)|Override to have the container for the inactive control under the mouse pointer dispatch `WM_SETCURSOR` messages to the control.|  
+|[COleControl::OnInactiveMouseMove](#oninactivemousemove)|Override to have the container for the inactive control under the mouse pointer dispatch WM_MOUSEMOVE messages to the control.|  
+|[COleControl::OnInactiveSetCursor](#oninactivesetcursor)|Override to have the container for the inactive control under the mouse pointer dispatch WM_SETCURSOR messages to the control.|  
 |[COleControl::OnKeyDownEvent](#onkeydownevent)|Called after the stock KeyDown event has been fired.|  
 |[COleControl::OnKeyPressEvent](#onkeypressevent)|Called after the stock KeyPress event has been fired.|  
 |[COleControl::OnKeyUpEvent](#onkeyupevent)|Called after the stock KeyUp event has been fired.|  
@@ -415,7 +415,7 @@ void BoundPropertyChanged(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of a bound property of the control.  
   
 ### Remarks  
@@ -429,7 +429,7 @@ BOOL BoundPropertyRequestEdit(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of a bound property of the control.  
   
 ### Return Value  
@@ -439,7 +439,7 @@ BOOL BoundPropertyRequestEdit(DISPID dispid);
  If permission is denied, the control must not let the value of the property change. This can be done by ignoring or failing the action that attempted to change the property value.  
   
 ##  <a name="clienttoparent"></a>  COleControl::ClientToParent  
- Translates the coordinates of `pPoint` into parent coordinates.  
+ Translates the coordinates of *pPoint* into parent coordinates.  
   
 ```  
 virtual void ClientToParent(
@@ -448,14 +448,14 @@ virtual void ClientToParent(
 ```  
   
 ### Parameters  
- `lprcBounds`  
+ *lprcBounds*  
  Pointer to the bounds of the OLE control within the container. Not the client area but the area of the entire control including borders and scroll bars.  
   
- `pPoint`  
+ *pPoint*  
  Pointer to the OLE client area point to be translated into the coordinates of the parent (container).  
   
 ### Remarks  
- On input `pPoint` is relative to the origin of the client area of the OLE control (upper left corner of the client area of the control). On output `pPoint` is relative to the origin of the parent (upper left corner of the container).  
+ On input *pPoint* is relative to the origin of the client area of the OLE control (upper left corner of the client area of the control). On output *pPoint* is relative to the origin of the parent (upper left corner of the container).  
   
 ##  <a name="clipcaretrect"></a>  COleControl::ClipCaretRect  
  Adjusts a caret rectangle if it is entirely or partially covered by overlapping, opaque objects.  
@@ -465,7 +465,7 @@ BOOL ClipCaretRect(LPRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  On input, a pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure that contains the caret area to be adjusted. On output, the adjusted caret area, or **NULL** if the caret rectangle is completely covered.  
   
 ### Return Value  
@@ -514,20 +514,20 @@ virtual void DisplayError(
  *scode*  
  The status code value to be reported. For a complete list of possible codes, see the article [ActiveX Controls: Advanced Topics](../../mfc/mfc-activex-controls-advanced-topics.md).  
   
- `lpszDescription`  
+ *lpszDescription*  
  The description of the error being reported.  
   
  *lpszSource*  
  The name of the module generating the error (typically, the name of the OLE control module).  
   
- `lpszHelpFile`  
+ *lpszHelpFile*  
  The name of the help file containing a description of the error.  
   
- `nHelpID`  
+ *nHelpID*  
  The Help Context ID of the error being reported.  
   
 ### Remarks  
- The default behavior displays a message box containing the description of the error, contained in `lpszDescription`.  
+ The default behavior displays a message box containing the description of the error, contained in *lpszDescription*.  
   
  Override this function to customize how errors are displayed.  
   
@@ -551,7 +551,7 @@ virtual void DoPropExchange(CPropExchange* pPX);
 ```  
   
 ### Parameters  
- `pPX`  
+ *pPX*  
  A pointer to a `CPropExchange` object. The framework supplies this object to establish the context of the property exchange, including its direction.  
   
 ### Remarks  
@@ -569,10 +569,10 @@ void DoSuperclassPaint(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to the device context of the control container.  
   
- `rcBounds`  
+ *rcBounds*  
  The area in which the control is to be drawn.  
   
 ### Remarks  
@@ -590,10 +590,10 @@ void DrawContent(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the device context.  
   
- `rc`  
+ *rc*  
  Rectangular area to be drawn in.  
   
 ### Remarks  
@@ -609,10 +609,10 @@ void DrawMetafile(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the metafile device context.  
   
- `rc`  
+ *rc*  
  Rectangular area to be drawn in.  
   
 ##  <a name="enablesimpleframe"></a>  COleControl::EnableSimpleFrame  
@@ -633,7 +633,7 @@ BOOL ExchangeExtent(CPropExchange* pPX);
 ```  
   
 ### Parameters  
- `pPX`  
+ *pPX*  
  A pointer to a [CPropExchange](../../mfc/reference/cpropexchange-class.md) object. The framework supplies this object to establish the context of the property exchange, including its direction.  
   
 ### Return Value  
@@ -650,7 +650,7 @@ void ExchangeStockProps(CPropExchange* pPX);
 ```  
   
 ### Parameters  
- `pPX`  
+ *pPX*  
  A pointer to a [CPropExchange](../../mfc/reference/cpropexchange-class.md) object. The framework supplies this object to establish the context of the property exchange, including its direction.  
   
 ### Remarks  
@@ -667,13 +667,13 @@ BOOL ExchangeVersion(
 ```  
   
 ### Parameters  
- `pPX`  
+ *pPX*  
  A pointer to a `CPropExchange` object. The framework supplies this object to establish the context of the property exchange, including its direction.  
   
- `dwVersionDefault`  
+ *dwVersionDefault*  
  The current version number of the control.  
   
- `bConvert`  
+ *bConvert*  
  Indicates whether persistent data should be converted to the latest format when saved, or maintained in the same format that was loaded.  
   
 ### Return Value  
@@ -722,10 +722,10 @@ void FireError(
  *scode*  
  The status code value to be reported. For a complete list of possible codes, see the article [ActiveX Controls: Advanced Topics](../../mfc/mfc-activex-controls-advanced-topics.md).  
   
- `lpszDescription`  
+ *lpszDescription*  
  The description of the error being reported.  
   
- `nHelpID`  
+ *nHelpID*  
  The Help ID of the error being reported.  
   
 ### Remarks  
@@ -748,16 +748,16 @@ void AFX_CDECL FireEvent(
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of the event to be fired.  
   
- `pbParams`  
+ *pbParams*  
  A descriptor for the event's parameter types.  
   
 ### Remarks  
  Usually this function should not be called directly. Instead you will call the event-firing functions in the event map section of your control's class declaration.  
   
- The `pbParams` argument is a space-separated list of **VTS_**. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are as follows:  
+ The *pbParams* argument is a space-separated list of **VTS_**. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are as follows:  
   
 |Symbol|Parameter type|  
 |------------|--------------------|  
@@ -789,10 +789,10 @@ void FireKeyDown(
 ```  
   
 ### Parameters  
- `pnChar`  
+ *pnChar*  
  Pointer to the virtual key code value of the pressed key. For a list of of standard virtual key codes, see Winuser.h  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -814,13 +814,13 @@ void FireKeyPress(USHORT* pnChar);
 ```  
   
 ### Parameters  
- `pnChar`  
+ *pnChar*  
  A pointer to the character value of the key pressed.  
   
 ### Remarks  
  If this event is defined as a custom event, you determine when the event is fired.  
   
- The recipient of the event may modify `pnChar`, for example, convert all lowercase characters to uppercase. If you want to examine the modified character, override `OnKeyPressEvent`.  
+ The recipient of the event may modify *pnChar*, for example, convert all lowercase characters to uppercase. If you want to examine the modified character, override `OnKeyPressEvent`.  
   
  For automatic firing of a KeyPress event to occur, the control's Event map must have a stock KeyPress event defined.  
   
@@ -834,10 +834,10 @@ void FireKeyUp(
 ```  
   
 ### Parameters  
- `pnChar`  
+ *pnChar*  
  Pointer to the virtual key code value of the released key. For a list of of standard virtual key codes, see Winuser.h  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -863,7 +863,7 @@ void FireMouseDown(
 ```  
   
 ### Parameters  
- `nButton`  
+ *nButton*  
  The numeric value of the mouse button pressed. It can contain one of the following values:  
   
 - **LEFT_BUTTON** The left mouse button was pressed down.  
@@ -872,7 +872,7 @@ void FireMouseDown(
   
 - **RIGHT_BUTTON** The right mouse button was pressed down.  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -904,7 +904,7 @@ void FireMouseMove(
 ```  
   
 ### Parameters  
- `nButton`  
+ *nButton*  
  The numeric value of the mouse buttons pressed. Contains a combination of the following values:  
   
 - **LEFT_BUTTON** The left mouse button was pressed down during the action.  
@@ -913,7 +913,7 @@ void FireMouseMove(
   
 - **RIGHT_BUTTON** The right mouse button was pressed down during the action.  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -945,7 +945,7 @@ void FireMouseUp(
 ```  
   
 ### Parameters  
- `nButton`  
+ *nButton*  
  The numeric value of the mouse button released. It can have one of the following values:  
   
 - **LEFT_BUTTON** The left mouse button was released.  
@@ -954,7 +954,7 @@ void FireMouseUp(
   
 - **RIGHT_BUTTON** The right mouse button was released.  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -996,7 +996,7 @@ void FireReadyStateChange();
  **READYSTATE_INTERACTIVE**  
  Control has enough data to be interactive but not all asynchronous data is yet loaded  
   
- `READYSTATE_COMPLETE`  
+ **READYSTATE_COMPLETE** 
  Control has all its data  
   
  Use [GetReadyState](#getreadystate) to determine the control's current readiness.  
@@ -1023,9 +1023,9 @@ virtual DWORD GetActivationPolicy();
  The object should be in-place activated when the mouse is dragged over it during a drag and drop operation.  
   
 ### Remarks  
- When the `IPointerInactive` interface is enabled, the container will delegate `WM_SETCURSOR` and `WM_MOUSEMOVE` messages to it. `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately.  
+ When the `IPointerInactive` interface is enabled, the container will delegate WM_SETCURSOR and WM_MOUSEMOVE messages to it. `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately.  
   
- Whenever the container receives a `WM_SETCURSOR` or `WM_MOUSEMOVE` message with the mouse pointer over an inactive object supporting `IPointerInactive`, it should call `GetActivationPolicy` on the interface and return flags from the **POINTERINACTIVE** enumeration.  
+ Whenever the container receives a WM_SETCURSOR or WM_MOUSEMOVE message with the mouse pointer over an inactive object supporting `IPointerInactive`, it should call `GetActivationPolicy` on the interface and return flags from the **POINTERINACTIVE** enumeration.  
   
  You can process these messages just like ordinary window messages, by adding the corresponding entries to the message map. In your handlers, avoid using the `m_hWnd` member variable (or any member functions that uses it) without first checking that its value is non- **NULL**.  
   
@@ -1039,7 +1039,7 @@ virtual DWORD GetActivationPolicy();
   
  The information communicated by `GetActivationPolicy` should not be cached by a container. Instead, this method should be called every time the mouse enters an inactive object.  
   
- If an inactive object does not request to be in-place activated when the mouse enters it, its container should dispatch subsequent `WM_SETCURSOR` messages to this object by calling [OnInactiveSetCursor](#oninactivesetcursor) as long as the mouse pointer stays over the object.  
+ If an inactive object does not request to be in-place activated when the mouse enters it, its container should dispatch subsequent WM_SETCURSOR messages to this object by calling [OnInactiveSetCursor](#oninactivesetcursor) as long as the mouse pointer stays over the object.  
   
  Enabling the `IPointerInactive` interface typically means that you want the control to be capable of processing mouse messages at all times. To get this behaviour in a container that doesn't support the `IPointerInactive` interface, you will need to have your control always activated when visible, which means the control should have the **OLEMISC_ACTIVATEWHENVISIBLE** flag among its miscellaneous flags. However, to prevent this flag from taking effect in a container that does support `IPointerInactive`, you can also specify the **OLEMISC_IGNOREACTIVATEWHENVISIBLE** flag:  
   
@@ -1059,11 +1059,11 @@ BOOL GetAmbientProperty(
  *dwDispid*  
  The dispatch ID of the desired ambient property.  
   
- `vtProp`  
- A variant type tag that specifies the type of the value to be returned in `pvProp`.  
+ *vtProp*  
+ A variant type tag that specifies the type of the value to be returned in *pvProp*.  
   
- `pvProp`  
- A pointer to the address of the variable that will receive the property value or return value. The actual type of this pointer must match the type specified by `vtProp`.  
+ *pvProp*  
+ A pointer to the address of the variable that will receive the property value or return value. The actual type of this pointer must match the type specified by *vtProp*.  
   
 |vtProp|Type of pvProp|  
 |------------|--------------------|  
@@ -1082,7 +1082,7 @@ BOOL GetAmbientProperty(
  Nonzero if the ambient property is supported; otherwise 0.  
   
 ### Remarks  
- If you use `GetAmbientProperty` to retrieve the ambient DisplayName and ScaleUnits properties, set `vtProp` to `VT_BSTR` and `pvProp` to **CString\***. If you are retrieving the ambient Font property, set `vtProp` to **VT_FONT** and `pvProp` to **LPFONTDISP\***.  
+ If you use `GetAmbientProperty` to retrieve the ambient DisplayName and ScaleUnits properties, set *vtProp* to `VT_BSTR` and *pvProp* to **CString\***. If you are retrieving the ambient Font property, set *vtProp* to **VT_FONT** and *pvProp* to **LPFONTDISP\***.  
   
  Note that functions have already been provided for common ambient properties, such as [AmbientBackColor](#ambientbackcolor) and [AmbientFont](#ambientfont).  
   
@@ -1173,8 +1173,8 @@ virtual void GetClientRect(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
- Pointer to a `RECT` structure containing the dimensions of the windowless control's client area; that is, the control's size minus window borders, frames, scroll bars, and so on. The `lpRect` parameter indicates the size of the control's client rectangle, not its position.  
+ *lpRect*  
+ Pointer to a `RECT` structure containing the dimensions of the windowless control's client area; that is, the control's size minus window borders, frames, scroll bars, and so on. The *lpRect* parameter indicates the size of the control's client rectangle, not its position.  
   
 ##  <a name="getclientsite"></a>  COleControl::GetClientSite  
  Queries an object for the pointer to its current client site within its container.  
@@ -1265,7 +1265,7 @@ CDC* GetDC(
  *lprcRect*  
  A pointer to the rectangle the windowless control wants to redraw, in client coordinates of the control. **NULL** means the full object's extent.  
   
- `dwFlags`  
+ *dwFlags*  
  Drawing attributes of the device context. Choices are:  
   
 - **OLEDC_NODRAW** Indicates that the object won't use the device context to perform any drawing but merely to get information about the display device. The container should simply pass the window's DC without further processing.  
@@ -1343,14 +1343,14 @@ void GetFontTextMetrics(
 ```  
   
 ### Parameters  
- `lptm`  
+ *lptm*  
  Pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure.  
   
- `fontHolder`  
+ *fontHolder*  
  Reference to a [CFontHolder](../../mfc/reference/cfontholder-class.md) object.  
   
 ### Remarks  
- Such a font can be selected with the [COleControl::SelectFontObject](#selectfontobject) function. `GetFontTextMetrics` will initialize the `TEXTMETRIC` structure pointed to by `lptm` with valid metrics information about `fontHolder`'s font if successful, or fill the structure with zeros if not successful. You should use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
+ Such a font can be selected with the [COleControl::SelectFontObject](#selectfontobject) function. `GetFontTextMetrics` will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information about `fontHolder`'s font if successful, or fill the structure with zeros if not successful. You should use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
   
  The `TEXTMETRIC` structure for the default font is refreshed when the [SelectFontObject](#selectfontobject) function is called. You should call `GetFontTextMetrics` only after selecting the stock Font property to assure the information it provides is valid.  
   
@@ -1375,7 +1375,7 @@ OLE_HANDLE GetHwnd();
  The OLE control's window handle, if any; otherwise **NULL**.  
   
 ##  <a name="getmessagestring"></a>  COleControl::GetMessageString  
- Called by the framework to obtain a short string that describes the purpose of the menu item identified by `nID`.  
+ Called by the framework to obtain a short string that describes the purpose of the menu item identified by *nID*.  
   
 ```  
 virtual void GetMessageString(
@@ -1384,14 +1384,14 @@ virtual void GetMessageString(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  A menu item ID.  
   
- `rMessage`  
+ *rMessage*  
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object through which a string will be returned.  
   
 ### Remarks  
- This can be used to obtain a message for display in a status bar while the menu item is highlighted. The default implementation attempts to load a string resource identified by `nID`.  
+ This can be used to obtain a message for display in a status bar while the menu item is highlighted. The default implementation attempts to load a string resource identified by *nID*.  
   
 ##  <a name="getnotsupported"></a>  COleControl::GetNotSupported  
  Prevents access to a control's property value by the user.  
@@ -1425,11 +1425,11 @@ long GetReadyState();
  **READYSTATE_INTERACTIVE**  
  Control has enough data to be interactive but not all asynchronous data is yet loaded  
   
- `READYSTATE_COMPLETE`  
+ **READYSTATE_COMPLETE**  
  Control has all its data  
   
 ### Remarks  
- Most simple controls never need to differentiate between **LOADED** and `INTERACTIVE`. However, controls that support data path properties may not be ready to be interactive until at least some data is received asynchronously. A control should attempt to become interactive as soon as possible.  
+ Most simple controls never need to differentiate between **LOADED** and **INTERACTIVE**. However, controls that support data path properties may not be ready to be interactive until at least some data is received asynchronously. A control should attempt to become interactive as soon as possible.  
   
 ##  <a name="getrectincontainer"></a>  COleControl::GetRectInContainer  
  Obtains the coordinates of the control's rectangle relative to the container, expressed in device units.  
@@ -1439,7 +1439,7 @@ BOOL GetRectInContainer(LPRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  A pointer to the rectangle structure into which the control's coordinates will be copied.  
   
 ### Return Value  
@@ -1456,11 +1456,11 @@ void GetStockTextMetrics(LPTEXTMETRIC lptm);
 ```  
   
 ### Parameters  
- `lptm`  
+ *lptm*  
  A pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure.  
   
 ### Remarks  
- The `GetStockTextMetrics` function will initialize the `TEXTMETRIC` structure pointed to by `lptm` with valid metrics information if successful, or fill the structure with zeros if not successful. Use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
+ The `GetStockTextMetrics` function will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information if successful, or fill the structure with zeros if not successful. Use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
   
  The `TEXTMETRIC` structure for the default font is refreshed when the `SelectStockFont` function is called. You should call this function only after selecting the stock font to assure the information it provides is valid.  
   
@@ -1557,11 +1557,11 @@ void InternalSetReadyState(long lNewReadyState);
  **READYSTATE_INTERACTIVE**  
  Control has enough data to be interactive but not all asynchronous data is yet loaded  
   
- `READYSTATE_COMPLETE`  
+ **READYSTATE_COMPLETE**  
  Control has all its data  
   
 ### Remarks  
- Most simple controls never need to differentiate between **LOADED** and `INTERACTIVE`. However, controls that support data path properties may not be ready to be interactive until at least some data is received asynchronously. A control should attempt to become interactive as soon as possible.  
+ Most simple controls never need to differentiate between **LOADED** and **INTERACTIVE**. However, controls that support data path properties may not be ready to be interactive until at least some data is received asynchronously. A control should attempt to become interactive as soon as possible.  
   
 ##  <a name="invalidatecontrol"></a>  COleControl::InvalidateControl  
  Forces the control to redraw itself.  
@@ -1573,14 +1573,14 @@ void InvalidateControl(
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  A pointer to the region of the control to be invalidated.  
   
- `bErase`  
+ *bErase*  
  Specifies whether the background within the update region is to be erased when the update region is processed.  
   
 ### Remarks  
- If `lpRect` has a **NULL** value, the entire control will be redrawn. If `lpRect` is not **NULL**, this indicates the portion of the control's rectangle that is to be invalidated. In cases where the control has no window, or is currently not active, the rectangle is ignored, and a call is made to the client site's [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337) member function. Use this function instead of `CWnd::InvalidateRect` or `InvalidateRect`.  
+ If *lpRect* has a **NULL** value, the entire control will be redrawn. If *lpRect* is not **NULL**, this indicates the portion of the control's rectangle that is to be invalidated. In cases where the control has no window, or is currently not active, the rectangle is ignored, and a call is made to the client site's [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337) member function. Use this function instead of `CWnd::InvalidateRect` or `InvalidateRect`.  
   
 ##  <a name="invalidatergn"></a>  COleControl::InvalidateRgn  
  Invalidates the container window's client area within the given region.  
@@ -1590,16 +1590,16 @@ void InvalidateRgn(CRgn* pRgn, BOOL bErase = TRUE);
 ```  
   
 ### Parameters  
- `pRgn`  
+ *pRgn*  
  A pointer to a [CRgn](../../mfc/reference/crgn-class.md) object that identifies the display region of the OLE object to invalidate, in client coordinates of the containing window. If this parameter is **NULL**, the extent is the entire object.  
   
- `bErase`  
+ *bErase*  
  Specifies whether the background within the invalidated region is to be erased. If **TRUE**, the background is erased. If **FALSE**, the background remains unchanged.  
   
 ### Remarks  
  This can be used to redraw windowless controls within the container. The invalidated region, along with all other areas in the update region, is marked for painting when the next [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message is sent.  
   
- If `bErase` is **TRUE** for any part of the update region, the background in the entire region, not just in the given part, is erased.  
+ If *bErase* is **TRUE** for any part of the update region, the background in the entire region, not just in the given part, is erased.  
   
 ##  <a name="isconvertingvbx"></a>  COleControl::IsConvertingVBX  
  Allows specialized loading of an OLE control.  
@@ -1698,7 +1698,7 @@ BOOL LockInPlaceActive(BOOL bLock);
 ```  
   
 ### Parameters  
- `bLock`  
+ *bLock*  
  **TRUE** if the in-place active state of the control is to be locked; **FALSE** if it is to be unlocked.  
   
 ### Return Value  
@@ -1780,7 +1780,7 @@ virtual void OnClose(DWORD dwSaveOption);
 ```  
   
 ### Parameters  
- `dwSaveOption`  
+ *dwSaveOption*  
  Flag that indicates whether the object should be saved before loading. Valid values are:  
   
 - `OLECLOSE_SAVEIFDIRTY`  
@@ -1790,7 +1790,7 @@ virtual void OnClose(DWORD dwSaveOption);
 - `OLECLOSE_PROMPTSAVE`  
   
 ### Remarks  
- By default, `OnClose` saves the control object if it has been modified and `dwSaveOption` is either `OLECLOSE_SAVEIFDIRTY` or `OLECLOSE_PROMPTSAVE`.  
+ By default, `OnClose` saves the control object if it has been modified and *dwSaveOption* is either `OLECLOSE_SAVEIFDIRTY` or `OLECLOSE_PROMPTSAVE`.  
   
 ##  <a name="ondoverb"></a>  COleControl::OnDoVerb  
  Called by the framework when the container calls the **IOleObject::DoVerb** member function.  
@@ -1804,16 +1804,16 @@ virtual BOOL OnDoVerb(
 ```  
   
 ### Parameters  
- `iVerb`  
+ *iVerb*  
  The index of the control verb to be invoked.  
   
- `lpMsg`  
+ *lpMsg*  
  A pointer to the Windows message that caused the verb to be invoked.  
   
- `hWndParent`  
- The handle to the parent window of the control. If the execution of the verb creates a window (or windows), `hWndParent` should be used as the parent.  
+ *hWndParent*  
+ The handle to the parent window of the control. If the execution of the verb creates a window (or windows), *hWndParent* should be used as the parent.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to a RECT structure into which the coordinates of the control, relative to the container, will be copied.  
   
 ### Return Value  
@@ -1835,17 +1835,17 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  The device context in which the drawing occurs.  
   
- `rcBounds`  
+ *rcBounds*  
  The rectangular area of the control, including the border.  
   
- `rcInvalid`  
+ *rcInvalid*  
  The rectangular area of the control that is invalid.  
   
 ### Remarks  
- `OnDraw` is typically called for screen display, passing a screen device context as `pDC`. The `rcBounds` parameter identifies the rectangle in the target device context (relative to its current mapping mode). The `rcInvalid` parameter is the actual rectangle that is invalid. In some cases this will be a smaller area than `rcBounds`.  
+ `OnDraw` is typically called for screen display, passing a screen device context as *pDC*. The *rcBounds* parameter identifies the rectangle in the target device context (relative to its current mapping mode). The *rcInvalid* parameter is the actual rectangle that is invalid. In some cases this will be a smaller area than *rcBounds*.  
   
 ##  <a name="ondrawmetafile"></a>  COleControl::OnDrawMetafile  
  Called by the framework to draw the OLE control in the specified bounding rectangle using the specified metafile device context.  
@@ -1857,10 +1857,10 @@ virtual void OnDrawMetafile(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  The device context in which the drawing occurs.  
   
- `rcBounds`  
+ *rcBounds*  
  The rectangular area of the control, including the border.  
   
 ### Remarks  
@@ -1877,13 +1877,13 @@ virtual BOOL OnEdit(
 ```  
   
 ### Parameters  
- `lpMsg`  
+ *lpMsg*  
  A pointer to the Windows message that invoked the verb.  
   
- `hWndParent`  
+ *hWndParent*  
  A handle to the parent window of the control.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to the rectangle used by the control in the container.  
   
 ### Return Value  
@@ -1914,7 +1914,7 @@ virtual BOOL OnEnumVerbs(LPENUMOLEVERB* ppenumOleVerb);
 ```  
   
 ### Parameters  
- `ppenumOleVerb`  
+ *ppenumOleVerb*  
  A pointer to the **IEnumOLEVERB** object that enumerates the control's verbs.  
   
 ### Return Value  
@@ -1933,7 +1933,7 @@ virtual void OnEventAdvise(BOOL bAdvise);
 ```  
   
 ### Parameters  
- `bAdvise`  
+ *bAdvise*  
  **TRUE** indicates that an event handler has been connected to the control. **FALSE** indicates that an event handler has been disconnected from the control.  
   
 ##  <a name="onfontchanged"></a>  COleControl::OnFontChanged  
@@ -1971,7 +1971,7 @@ virtual void OnFreezeEvents(BOOL bFreeze);
 ```  
   
 ### Parameters  
- `bFreeze`  
+ *bFreeze*  
  **TRUE** if the control's event handling is frozen; otherwise **FALSE**.  
   
 ### Remarks  
@@ -1990,11 +1990,11 @@ virtual BOOL OnGetColorSet(
 ```  
   
 ### Parameters  
- `ptd`  
+ *ptd*  
  Points to the target device for which the picture should be rendered. If this value is **NULL**, the picture should be rendered for a default target device, usually a display device.  
   
- `hicTargetDev`  
- Specifies the information context on the target device indicated by `ptd`. This parameter can be a device context, but is not one necessarily. If `ptd` is **NULL**, `hicTargetDev` should also be **NULL**.  
+ *hicTargetDev*  
+ Specifies the information context on the target device indicated by *ptd*. This parameter can be a device context, but is not one necessarily. If *ptd* is **NULL**, *hicTargetDev* should also be **NULL**.  
   
  *ppColorSet*  
  A pointer to the location into which the set of colors that would be used should be copied. If the function does not return the color set, **NULL** is returned.  
@@ -2015,16 +2015,16 @@ virtual void OnGetControlInfo(LPCONTROLINFO pControlInfo);
 ```  
   
 ### Parameters  
- `pControlInfo`  
+ *pControlInfo*  
  Pointer to a [CONTROLINFO](http://msdn.microsoft.com/library/windows/desktop/ms680734) structure to be filled in.  
   
 ### Remarks  
- This information consists primarily of a description of the control's mnemonic keys. The default implementation fills `pControlInfo` with default information.  
+ This information consists primarily of a description of the control's mnemonic keys. The default implementation fills *pControlInfo* with default information.  
   
  Override this function if your control needs to process mnemonic keys.  
   
 ##  <a name="ongetdisplaystring"></a>  COleControl::OnGetDisplayString  
- Called by the framework to obtain a string that represents the current value of the property identified by `dispid`.  
+ Called by the framework to obtain a string that represents the current value of the property identified by *dispid*.  
   
 ```  
 virtual BOOL OnGetDisplayString(
@@ -2033,10 +2033,10 @@ virtual BOOL OnGetDisplayString(
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of a property of the control.  
   
- `strValue`  
+ *strValue*  
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object through which a string will be returned.  
   
 ### Return Value  
@@ -2072,17 +2072,17 @@ virtual BOOL OnGetNaturalExtent(
 ```  
   
 ### Parameters  
- `dwAspect`  
+ *dwAspect*  
  Specifies how the object is to be represented. Representations include content, an icon, a thumbnail, or a printed document. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or **DVASPECT2**.  
   
  *lindex*  
  The portion of the object that is of interest. Currently only -1 is valid.  
   
- `ptd`  
+ *ptd*  
  Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  
   
- `hicTargetDev`  
- Specifies the information context for the target device indicated by the `ptd` parameter from which the object can extract device metrics and test the device's capabilities. If `ptd` is **NULL**, the object should ignore the value in the `hicTargetDev` parameter.  
+ *hicTargetDev*  
+ Specifies the information context for the target device indicated by the *ptd* parameter from which the object can extract device metrics and test the device's capabilities. If *ptd* is **NULL**, the object should ignore the value in the *hicTargetDev* parameter.  
   
  *pExtentInfo*  
  Points to the **DVEXTENTINFO** structure that specifies sizing data. The **DVEXTENTINFO** structure is:  
@@ -2105,7 +2105,7 @@ virtual BOOL OnGetNaturalExtent(
   
 - **DVEXTENT_INTEGRAL** When resizing, pass proposed size to control  
   
- `psizel`  
+ *psizel*  
  Points to sizing data returned by control. The returned sizing data is set to -1 for any dimension that was not adjusted.  
   
 ### Return Value  
@@ -2125,20 +2125,20 @@ virtual BOOL OnGetPredefinedStrings(
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of a property of the control.  
   
- `pStringArray`  
+ *pStringArray*  
  A string array to be filled in with return values.  
   
- `pCookieArray`  
+ *pCookieArray*  
  A `DWORD` array to be filled in with return values.  
   
 ### Return Value  
- Nonzero if elements have been added to `pStringArray` and `pCookieArray`.  
+ Nonzero if elements have been added to *pStringArray* and *pCookieArray*.  
   
 ### Remarks  
- Override this function if your control has a property with a set of possible values that can be represented by strings. For each element added to `pStringArray`, you should add a corresponding "cookie" element to *pCookieArray.* These "cookie" values may later be passed by the framework to the `COleControl::OnGetPredefinedValue` function.  
+ Override this function if your control has a property with a set of possible values that can be represented by strings. For each element added to *pStringArray*, you should add a corresponding "cookie" element to *pCookieArray.* These "cookie" values may later be passed by the framework to the `COleControl::OnGetPredefinedValue` function.  
   
 ##  <a name="ongetpredefinedvalue"></a>  COleControl::OnGetPredefinedValue  
  Called by the framework to obtain the value corresponding to one of the predefined strings previously returned by an override of `COleControl::OnGetPredefinedStrings`.  
@@ -2151,17 +2151,17 @@ virtual BOOL OnGetPredefinedValue(
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of a property of the control.  
   
- `dwCookie`  
+ *dwCookie*  
  A cookie value previously returned by an override of `COleControl::OnGetPredefinedStrings`.  
   
- `lpvarOut`  
+ *lpvarOut*  
  Pointer to a **VARIANT** structure through which a property value will be returned.  
   
 ### Return Value  
- Nonzero if a value has been returned in `lpvarOut`; otherwise 0.  
+ Nonzero if a value has been returned in *lpvarOut*; otherwise 0.  
   
 ##  <a name="ongetviewextent"></a>  COleControl::OnGetViewExtent  
  Called by the framework in response to a container's [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) request.  
@@ -2181,7 +2181,7 @@ virtual BOOL OnGetViewExtent(
  *lindex*  
  The portion of the object that is of interest. Currently only -1 is valid.  
   
- `ptd`  
+ *ptd*  
  Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  
   
  *lpsizel*  
@@ -2201,16 +2201,16 @@ virtual BOOL OnGetViewRect(DWORD dwAspect, LPRECTL pRect);
 ```  
   
 ### Parameters  
- `dwAspect`  
+ *dwAspect*  
  `DWORD` describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or **DVASPECT2**:  
   
-- `DVASPECT_CONTENT` Bounding rectangle of the whole object. Top-left corner at the object's origin and size equal to the extent returned by **GetViewExtent***.*  
+- **DVASPECT_CONTENT** Bounding rectangle of the whole object. Top-left corner at the object's origin and size equal to the extent returned by **GetViewExtent***.*  
   
 - **DVASPECT_OPAQUE** Objects with a rectangular opaque region return that rectangle. Others fail.  
   
 - **DVASPECT_TRANSPARENT** Rectangle covering all transparent or irregular parts.  
   
- `pRect`  
+ *pRect*  
  Points to the [RECTL](http://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.  
   
 ### Return Value  
@@ -2230,10 +2230,10 @@ virtual DWORD OnGetViewStatus();
  One of the values of the **VIEWSTATUS** enumeration if successful; otherwise 0. Possible values are any combination of the following:  
   
  **VIEWSTATUS_OPAQUE**  
- Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to `DVASPECT_ICON` or `DVASPECT_DOCPRINT`.  
+ Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to **DVASPECT_ICON** or **DVASPECT_DOCPRINT**.  
   
  **VIEWSTATUS_SOLIDBKGND**  
- Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if **VIEWSTATUS_OPAQUE** is set and applies only to content-related aspects and not to `DVASPECT_ICON` or `DVASPECT_DOCPRINT`.  
+ Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if **VIEWSTATUS_OPAQUE** is set and applies only to content-related aspects and not to **DVASPECT_ICON** or **DVASPECT_DOCPRINT**.  
   
  **VIEWSTATUS_DVASPECTOPAQUE**  
  Object supports **DVASPECT_OPAQUE**. All **IViewObjectEx** methods that take a drawing aspect as a parameter can be called with this aspect.  
@@ -2255,7 +2255,7 @@ virtual void OnHideToolBars();
  The implementation should hide all toolbars displayed by `OnShowToolbars`.  
   
 ##  <a name="oninactivemousemove"></a>  COleControl::OnInactiveMouseMove  
- Called by the container for the inactive object under the mouse pointer on receipt of a `WM_MOUSEMOVE` message.  
+ Called by the container for the inactive object under the mouse pointer on receipt of a WM_MOUSEMOVE message.  
   
 ```  
 virtual void OnInactiveMouseMove(
@@ -2266,8 +2266,8 @@ virtual void OnInactiveMouseMove(
 ```  
   
 ### Parameters  
- `lprcBounds`  
- The object bounding rectangle, in client coordinates of the containing window. Tells the object its exact position and size on the screen when the `WM_MOUSEMOVE` message was received.  
+ *lprcBounds*  
+ The object bounding rectangle, in client coordinates of the containing window. Tells the object its exact position and size on the screen when the WM_MOUSEMOVE message was received.  
   
  *x*  
  The x coordinate of the mouse location in client coordinates of the containing window.  
@@ -2275,14 +2275,14 @@ virtual void OnInactiveMouseMove(
  *y*  
  The y coordinate of the mouse location in client coordinates of the containing window.  
   
- `dwKeyState`  
+ *dwKeyState*  
  Identifies the current state of the keyboard modifier keys on the keyboard. Valid values can be a combination of any of the flags **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_BUTTON**, **MK_LBUTTON**, **MK_MBUTTON**, and **MK_RBUTTON**.  
   
 ### Remarks  
  Note that window client coordinates (pixels) are used to pass the mouse cursor position. This is made possible by also passing the bounding rectangle of the object in the same coordinate system.  
   
 ##  <a name="oninactivesetcursor"></a>  COleControl::OnInactiveSetCursor  
- Called by the container for the inactive object under the mouse pointer on receipt of a `WM_SETCURSOR` message.  
+ Called by the container for the inactive object under the mouse pointer on receipt of a WM_SETCURSOR message.  
   
 ```  
 virtual BOOL OnInactiveSetCursor(
@@ -2294,8 +2294,8 @@ virtual BOOL OnInactiveSetCursor(
 ```  
   
 ### Parameters  
- `lprcBounds`  
- The object bounding rectangle, in client coordinates of the containing window. Tells the object its exact position and size on the screen when the `WM_SETCURSOR` message was received.  
+ *lprcBounds*  
+ The object bounding rectangle, in client coordinates of the containing window. Tells the object its exact position and size on the screen when the WM_SETCURSOR message was received.  
   
  *x*  
  The x coordinate of the mouse location in client coordinates of the containing window.  
@@ -2304,7 +2304,7 @@ virtual BOOL OnInactiveSetCursor(
  The y coordinate of the mouse location in client coordinates of the containing window.  
   
  *dwMouseMsg*  
- The identifier of the mouse message for which a `WM_SETCURSOR` occurred.  
+ The identifier of the mouse message for which a WM_SETCURSOR occurred.  
   
  *bSetAlways*  
  Specifies whether or not the object must set the cursor. If **TRUE**, the object must set the cursor; if **FALSE**, the cursor is not obligated to set the cursor, and should return **S_FALSE** in that case.  
@@ -2325,10 +2325,10 @@ virtual void OnKeyDownEvent(
 ```  
   
 ### Parameters  
- `nChar`  
+ *nChar*  
  The virtual key code value of the pressed key. For a list of standard virtual key codes, see Winuser.h  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -2348,11 +2348,11 @@ virtual void OnKeyPressEvent(USHORT nChar);
 ```  
   
 ### Parameters  
- `nChar`  
+ *nChar*  
  Contains the virtual key code value of the key pressed. For a list of standard virtual key codes, see Winuser.h  
   
 ### Remarks  
- Note that the `nChar` value may have been modified by the container.  
+ Note that the *nChar* value may have been modified by the container.  
   
  Override this function if you want notification after this event occurs.  
   
@@ -2366,10 +2366,10 @@ virtual void OnKeyUpEvent(
 ```  
   
 ### Parameters  
- `nChar`  
+ *nChar*  
  The virtual key code value of the pressed key. For a list of standard virtual key codes, see Winuser.h  
   
- `nShiftState`  
+ *nShiftState*  
  Contains a combination of the following flags:  
   
 - **SHIFT_MASK** The SHIFT key was pressed during the action.  
@@ -2392,17 +2392,17 @@ virtual BOOL OnMapPropertyToPage(
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of a property of the control.  
   
- `lpclsid`  
+ *lpclsid*  
  Pointer to a **CLSID** structure through which a class ID will be returned.  
   
  *pbPageOptional*  
  Returns an indicator of whether use of the specified property page is optional.  
   
 ### Return Value  
- Nonzero if a class ID has been returned in `lpclsid`; otherwise 0.  
+ Nonzero if a class ID has been returned in *lpclsid*; otherwise 0.  
   
 ### Remarks  
  Override this function to provide a way to invoke your control's property pages from the container's property browser.  
@@ -2415,7 +2415,7 @@ virtual void OnMnemonic(LPMSG pMsg);
 ```  
   
 ### Parameters  
- `pMsg`  
+ *pMsg*  
  Pointer to the Windows message generated by a mnemonic key press.  
   
 ##  <a name="onproperties"></a>  COleControl::OnProperties  
@@ -2429,13 +2429,13 @@ virtual BOOL OnProperties(
 ```  
   
 ### Parameters  
- `lpMsg`  
+ *lpMsg*  
  A pointer to the Windows message that invoked the verb.  
   
- `hWndParent`  
+ *hWndParent*  
  A handle to the parent window of the control.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to the rectangle used by the control in the container.  
   
 ### Return Value  
@@ -2444,7 +2444,7 @@ virtual BOOL OnProperties(
 ### Remarks  
  The default implementation displays a modal property dialog box.  
   
- You can also use this function to cause the display of your control's property pages. Make a call to the `OnProperties` function, passing the handle of your control's parent in the `hWndParent` parameter. In this case, the values of the `lpMsg` and `lpRect` parameters are ignored.  
+ You can also use this function to cause the display of your control's property pages. Make a call to the `OnProperties` function, passing the handle of your control's parent in the *hWndParent* parameter. In this case, the values of the *lpMsg* and *lpRect* parameters are ignored.  
   
 ##  <a name="onqueryhitpoint"></a>  COleControl::OnQueryHitPoint  
  Called by the framework in response to a container's **IViewObjectEx::QueryHitPoint** request.  
@@ -2459,19 +2459,19 @@ virtual BOOL OnQueryHitPoint(
 ```  
   
 ### Parameters  
- `dwAspect`  
+ *dwAspect*  
  Specifies how the object is represented. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or **DVASPECT2**.  
   
- `pRectBounds`  
+ *pRectBounds*  
  Pointer to a `RECT` structure specifying the bounding rectangle of the OLE control client area.  
   
- `ptlLoc`  
+ *ptlLoc*  
  Pointer to the **POINT** structure specifying the point to be checked for a hit. The point is specified in OLE client area coordinates.  
   
- `lCloseHint`  
+ *lCloseHint*  
  The distance that defines "close" to the point checked for a hit.  
   
- `pHitResult`  
+ *pHitResult*  
  Pointer to the result of the hit query. One of the following values:  
   
 - **HITRESULT_OUTSIDE** `ptlLoc` is outside the OLE object and not close.  
@@ -2501,19 +2501,19 @@ virtual BOOL OnQueryHitRect(
 ```  
   
 ### Parameters  
- `dwAspect`  
+ *dwAspect*  
  Specifies how the object is to be represented. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or **DVASPECT2**.  
   
- `pRectBounds`  
+ *pRectBounds*  
  Pointer to a `RECT` structure specifying the bounding rectangle of the OLE control client area.  
   
  *prcLoc*  
  Pointer to the `RECT` structure specifying the rectangle to be checked for a hit (overlap with the object rectangle), relative to the upper left corner of the object.  
   
- `lCloseHint`  
+ *lCloseHint*  
  Not used.  
   
- `pHitResult`  
+ *pHitResult*  
  Pointer to the result of the hit query. One of the following values:  
   
 - **HITRESULT_OUTSIDE** no point in the rectangle is hit by the OLE object.  
@@ -2536,10 +2536,10 @@ virtual BOOL OnRenderData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  Points to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data is to be returned.  
   
 ### Return Value  
@@ -2564,10 +2564,10 @@ virtual BOOL OnRenderFileData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
- `pFile`  
+ *pFile*  
  Points to a [CFile](../../mfc/reference/cfile-class.md) object in which the data is to be rendered.  
   
 ### Return Value  
@@ -2590,10 +2590,10 @@ virtual BOOL OnRenderGlobalData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
- `phGlobal`  
+ *phGlobal*  
  Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be **NULL**.  
   
 ### Return Value  
@@ -2602,7 +2602,7 @@ virtual BOOL OnRenderGlobalData(
 ### Remarks  
  The specified format is one previously placed in the control object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
   
- If `phGlobal` is **NULL**, then a new `HGLOBAL` should be allocated and returned in `phGlobal`. Otherwise, the `HGLOBAL` specified by `phGlobal` should be filled with the data. The amount of data placed in the `HGLOBAL` must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
+ If *phGlobal* is **NULL**, then a new `HGLOBAL` should be allocated and returned in *phGlobal*. Otherwise, the `HGLOBAL` specified by *phGlobal* should be filled with the data. The amount of data placed in the `HGLOBAL` must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
   
  Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override `OnRenderData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
@@ -2643,20 +2643,20 @@ virtual BOOL OnSetData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format of the data.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  Pointer to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data resides.  
   
- `bRelease`  
+ *bRelease*  
  **TRUE** if the control should free the storage medium; **FALSE** if the control should not free the storage medium.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If the data is in the persistent property set format, the default implementation modifies the control's state accordingly. Otherwise, the default implementation does nothing. If `bRelease` is **TRUE**, then a call to **ReleaseStgMedium** is made; otherwise not.  
+ If the data is in the persistent property set format, the default implementation modifies the control's state accordingly. Otherwise, the default implementation does nothing. If *bRelease* is **TRUE**, then a call to **ReleaseStgMedium** is made; otherwise not.  
   
  Override this function to replace the control's data with the specified data.  
   
@@ -2670,7 +2670,7 @@ virtual BOOL OnSetExtent(LPSIZEL lpSizeL);
 ```  
   
 ### Parameters  
- `lpSizeL`  
+ *lpSizeL*  
  A pointer to the **SIZEL** structure that uses long integers to represent the width and height of the control, expressed in **HIMETRIC** units.  
   
 ### Return Value  
@@ -2694,7 +2694,7 @@ virtual BOOL OnSetObjectRects(
  *lpRectPos*  
  A pointer to a RECT structure indicating the control's new position and size relative to the container.  
   
- `lpRectClip`  
+ *lpRectClip*  
  A pointer to a `RECT` structure indicating a rectangular area to which the control is to be clipped.  
   
 ### Return Value  
@@ -2739,14 +2739,14 @@ virtual BOOL OnWindowlessMessage(
 ```  
   
 ### Parameters  
- `msg`  
+ *msg*  
  Message identifier as passed by Windows.  
   
- `wParam`  
- As passed by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the `msg` parameter.  
+ *wParam*  
+ As passed by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the *msg* parameter.  
   
- `lParam`  
- As passed by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the `msg` parameter.  
+ *lParam*  
+ As passed by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the *msg* parameter.  
   
  *plResult*  
  Windows result code. Specifies the result of the message processing and depends on the message sent.  
@@ -2760,7 +2760,7 @@ virtual BOOL OnWindowlessMessage(
  Because windowless objects do not have a window, they need a mechanism to let the container dispatch messages to them. A windowless OLE object gets messages from its container, through the `OnWindowMessage` method on the `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `OnWindowMessage` does not take an `HWND` parameter.  
   
 ##  <a name="parenttoclient"></a>  COleControl::ParentToClient  
- Translates the coordinates of `pPoint` into client coordinates.  
+ Translates the coordinates of *pPoint* into client coordinates.  
   
 ```  
 virtual UINT ParentToClient(
@@ -2770,17 +2770,17 @@ virtual UINT ParentToClient(
 ```  
   
 ### Parameters  
- `lprcBounds`  
+ *lprcBounds*  
  Pointer to the bounds of the OLE control within the container. Not the client area but the area of the entire control including borders and scroll bars.  
   
- `pPoint`  
+ *pPoint*  
  Pointer to the parent (container) point to be translated into the coordinates of the client area of the control.  
   
- `bHitTest`  
+ *bHitTest*  
  Specifies whether or not hit testing is to be done on the point.  
   
 ### Return Value  
- If `bHitTest` is **FALSE**, returns **HTNOWHERE**. If `bHitTest` is **TRUE**, returns the location in which the parent (container) point landed in the client area of the OLE control and is one of the following mouse hit-test values:  
+ If *bHitTest* is **FALSE**, returns **HTNOWHERE**. If *bHitTest* is **TRUE**, returns the location in which the parent (container) point landed in the client area of the OLE control and is one of the following mouse hit-test values:  
   
 - **HTBORDER** In the border of a window that does not have a sizing border.  
   
@@ -2831,7 +2831,7 @@ virtual UINT ParentToClient(
 - **HTZOOM** In a Maximize button.  
   
 ### Remarks  
- On input `pPoint` is relative to the origin of the parent (upper left corner of the container). On output `pPoint` is relative to the origin of the client area of the OLE control (upper left corner of the client area of the control).  
+ On input *pPoint* is relative to the origin of the parent (upper left corner of the container). On output *pPoint* is relative to the origin of the client area of the OLE control (upper left corner of the client area of the control).  
   
 ##  <a name="postmodaldialog"></a>  COleControl::PostModalDialog  
  Notifies the container that a modal dialog box has been closed.  
@@ -2841,7 +2841,7 @@ void PostModalDialog(HWND hWndParent = NULL);
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  Handle to the parent window of the modal dialog box.  
   
 ### Remarks  
@@ -2855,7 +2855,7 @@ void PreModalDialog(HWND hWndParent = NULL);
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  Handle to the parent window of the modal dialog box.  
   
 ### Remarks  
@@ -2902,7 +2902,7 @@ int ReleaseDC(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Identifies the container device context to be released.  
   
 ### Return Value  
@@ -2924,7 +2924,7 @@ virtual void ReparentControlWindow(
  *hWndOuter*  
  The handle of the control window.  
   
- `hWndParent`  
+ *hWndParent*  
  The handle of the new parent window.  
   
 ### Remarks  
@@ -2953,7 +2953,7 @@ void ResetVersion(DWORD dwVersionDefault);
 ```  
   
 ### Parameters  
- `dwVersionDefault`  
+ *dwVersionDefault*  
  The version number to be assigned to the control.  
   
 ### Remarks  
@@ -2971,17 +2971,17 @@ void ScrollWindow(
 ```  
   
 ### Parameters  
- `xAmount`  
+ *xAmount*  
  Specifies the amount, in device units, of horizontal scrolling. This parameter must be a negative value to scroll to the left.  
   
- `yAmount`  
+ *yAmount*  
  Specifies the amount, in device units, of vertical scrolling. This parameter must be a negative value to scroll upward.  
   
- `lpRect`  
- Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or RECT structure that specifies the portion of the OLE object's client area to scroll, in client coordinates of the containing window. If `lpRect` is **NULL**, the entire OLE object's client area is scrolled.  
+ *lpRect*  
+ Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or RECT structure that specifies the portion of the OLE object's client area to scroll, in client coordinates of the containing window. If *lpRect* is **NULL**, the entire OLE object's client area is scrolled.  
   
- `lpClipRect`  
- Points to a `CRect` object or `RECT` structure that specifies the rectangle to clip to. Only pixels inside the rectangle are scrolled. Bits outside the rectangle are not affected even if they are in the `lpRect` rectangle. If `lpClipRect` is **NULL**, no clipping is performed on the scroll rectangle.  
+ *lpClipRect*  
+ Points to a `CRect` object or `RECT` structure that specifies the rectangle to clip to. Only pixels inside the rectangle are scrolled. Bits outside the rectangle are not affected even if they are in the *lpRect* rectangle. If *lpClipRect* is **NULL**, no clipping is performed on the scroll rectangle.  
   
 ##  <a name="selectfontobject"></a>  COleControl::SelectFontObject  
  Selects a font into a device context.  
@@ -2993,10 +2993,10 @@ CFont* SelectFontObject(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to a device context object.  
   
- `fontHolder`  
+ *fontHolder*  
  Reference to the [CFontHolder](../../mfc/reference/cfontholder-class.md) object representing the font to be selected.  
   
 ### Return Value  
@@ -3010,7 +3010,7 @@ CFont* SelectStockFont(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  The device context into which the font will be selected.  
   
 ### Return Value  
@@ -3024,11 +3024,11 @@ void SerializeExtent(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object to serialize to or from.  
   
 ### Remarks  
- You can improve a control's binary persistence performance by using `SerializeExtent`, `SerializeStockProps`, and `SerializeVersion` to override **COleControl::Serialize**. See the example below. For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
+ You can improve a control's binary persistence performance by using `SerializeExtent`, `SerializeStockProps`, and `SerializeVersion` to override `COleControl::Serialize`. See the example below. For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
   
 ### Example  
  [!code-cpp[NVC_MFCAxCtl#8](../../mfc/reference/codesnippet/cpp/colecontrol-class_9.cpp)]  
@@ -3041,13 +3041,13 @@ void SerializeStockProps(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object to serialize to or from.  
   
 ### Remarks  
  For a description of stock properties, see [ActiveX Controls: Adding Stock Properties](../../mfc/mfc-activex-controls-adding-stock-properties.md).  
   
- You can improve a control's binary persistence performance by using `SerializeStockProps`, `SerializeExtent`, and `SerializeVersion` to override **COleControl::Serialize**. For an example, see the code at [SerializeExtent](#serializeextent). For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
+ You can improve a control's binary persistence performance by using `SerializeStockProps`, `SerializeExtent`, and `SerializeVersion` to override `COleControl::Serialize`. For an example, see the code at [SerializeExtent](#serializeextent). For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
   
 ##  <a name="serializeversion"></a>  COleControl::SerializeVersion  
  Serializes or initializes the state of a control's version information.  
@@ -3060,20 +3060,20 @@ DWORD SerializeVersion(
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object to serialize to or from.  
   
- `dwVersionDefault`  
+ *dwVersionDefault*  
  The current version number of the control.  
   
- `bConvert`  
+ *bConvert*  
  Indicates whether persistent data should be converted to the latest format when it is saved, or maintained in the same format it had when it was loaded.  
   
 ### Return Value  
  The version number of the control. If the specified archive is loading, `SerializeVersion` returns the version loaded from that archive. Otherwise, it returns the currently loaded version.  
   
 ### Remarks  
- You can improve a control's binary persistence performance by using `SerializeVersion`, `SerializeExtent`, and `SerializeStockProps` to override **COleControl::Serialize**. For an example, see the code at [SerializeExtent](#serializeextent). For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
+ You can improve a control's binary persistence performance by using `SerializeVersion`, `SerializeExtent`, and `SerializeStockProps` to override `COleControl::Serialize`. For an example, see the code at [SerializeExtent](#serializeextent). For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
   
 ##  <a name="setappearance"></a>  COleControl::SetAppearance  
  Sets the stock Appearance property value of your control.  
@@ -3138,10 +3138,10 @@ BOOL SetControlSize(int cx, int cy);
 ```  
   
 ### Parameters  
- `cx`  
+ *cx*  
  Specifies the new width of the control in pixels.  
   
- `cy`  
+ *cy*  
  Specifies the new height of the control in pixels.  
   
 ### Return Value  
@@ -3160,7 +3160,7 @@ void SetEnabled(BOOL bEnabled);
 ```  
   
 ### Parameters  
- `bEnabled`  
+ *bEnabled*  
  **TRUE** if the control is to be enabled; otherwise **FALSE**.  
   
 ### Remarks  
@@ -3226,10 +3226,10 @@ void SetInitialSize(
 ```  
   
 ### Parameters  
- `cx`  
+ *cx*  
  The initial width of the OLE control in pixels.  
   
- `cy`  
+ *cy*  
  The initial height of the OLE control in pixels.  
   
 ### Remarks  
@@ -3243,11 +3243,11 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 ```  
   
 ### Parameters  
- `bModified`  
+ *bModified*  
  The new value for the control's modified flag. **TRUE** indicates that the control's state has been modified; **FALSE** indicates that the control's state has just been saved.  
   
 ### Remarks  
- Call this function whenever a change occurs that would affect your control's persistent state. For example, if the value of a persistent property changes, call this function with `bModified`**TRUE**.  
+ Call this function whenever a change occurs that would affect your control's persistent state. For example, if the value of a persistent property changes, call this function with *bModified***TRUE**.  
   
 ##  <a name="setnotpermitted"></a>  COleControl::SetNotPermitted  
  Indicates that an edit request has failed.  
@@ -3277,7 +3277,7 @@ BOOL SetRectInContainer(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  A pointer to a rectangle containing the control's new coordinates relative to the container.  
   
 ### Return Value  
@@ -3294,7 +3294,7 @@ void SetText(LPCTSTR pszText);
 ```  
   
 ### Parameters  
- `pszText`  
+ *pszText*  
  A pointer to a character string.  
   
 ### Remarks  
@@ -3317,16 +3317,16 @@ void ThrowError(
 ```  
   
 ### Parameters  
- `sc`  
+ *sc*  
  The status code value to be reported. For a complete list of possible codes, see the article [ActiveX Controls: Advanced Topics](../../mfc/mfc-activex-controls-advanced-topics.md).  
   
- `nDescriptionID`  
+ *nDescriptionID*  
  The string resource ID of the exception to be reported.  
   
- `nHelpID`  
+ *nHelpID*  
  The help ID of the topic to be reported on.  
   
- `pszDescription`  
+ *pszDescription*  
  A string containing an explanation of the exception to be reported.  
   
 ### Remarks  
@@ -3349,7 +3349,7 @@ void TransformCoords(
  *lpptfContainer*  
  Pointer to a **POINTF** structure containing coordinates in the container's unit size.  
   
- `flags`  
+ *flags*  
  A combination of the following values:  
   
 - **XFORMCOORDS_POSITION** A position in the container.  
@@ -3373,14 +3373,14 @@ COLORREF TranslateColor(
 ```  
   
 ### Parameters  
- `clrColor`  
+ *clrColor*  
  A **OLE_COLOR** data type. For more information, see the Windows [OleTranslateColor](http://msdn.microsoft.com/library/windows/desktop/ms694353) function.  
   
- `hpal`  
+ *hpal*  
  A handle to an optional palette; can be **NULL**.  
   
 ### Return Value  
- An RGB (red, green, blue) 32-bit color value that defines the solid color closest to the `clrColor` value that the device can represent.  
+ An RGB (red, green, blue) 32-bit color value that defines the solid color closest to the *clrColor* value that the device can represent.  
   
 ### Remarks  
  This function is useful to translate the stock ForeColor and BackColor properties to **COLORREF** types used by [CDC](../../mfc/reference/cdc-class.md) member functions.  
@@ -3409,13 +3409,13 @@ virtual LRESULT WindowProc(
 ```  
   
 ### Parameters  
- `message`  
+ *message*  
  Specifies the Windows message to be processed.  
   
- `wParam`  
+ *wParam*  
  Provides additional information used in processing the message. The parameter value depends on the message.  
   
- `lParam`  
+ *lParam*  
  Provides additional information used in processing the message. The parameter value depends on the message.  
   
 ### Return Value  

@@ -192,7 +192,7 @@ CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Return Value  
   

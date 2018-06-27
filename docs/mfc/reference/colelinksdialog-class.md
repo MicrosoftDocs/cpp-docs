@@ -100,16 +100,16 @@ COleLinksDialog (
 ```  
   
 ### Parameters  
- `pDoc`  
+ *pDoc*  
  Points to the OLE document that contains the links to be edited.  
   
- `pView`  
- Points to the current view on `pDoc`.  
+ *pView*  
+ Points to the current view on *pDoc*.  
   
- `dwFlags`  
+ *dwFlags*  
  Creation flag, which contains either 0 or **ELF_SHOWHELP** to specify whether the Help button will be displayed when the dialog box is displayed.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box is set to the main application window.  
   
 ### Remarks  

@@ -82,10 +82,10 @@ explicit COleChangeSourceDialog(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to the linked [COleClientItem](../../mfc/reference/coleclientitem-class.md) whose source is to be updated.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  

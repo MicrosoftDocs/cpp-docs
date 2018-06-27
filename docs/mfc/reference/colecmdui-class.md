@@ -63,13 +63,13 @@ COleCmdUI(
 ```  
   
 ### Parameters  
- `rgCmds`  
+ *rgCmds*  
  A list of supported commands associated with the given GUID. The **OLECMD** structure associates commands with command flags.  
   
  *cCmds*  
- The count of commands in `rgCmds`.  
+ The count of commands in *rgCmds*.  
   
- `pGroup`  
+ *pGroup*  
  A pointer to a GUID that identifies a set of commands.  
   
 ### Remarks  
@@ -83,7 +83,7 @@ virtual void Enable(BOOL bOn);
 ```  
   
 ### Parameters  
- `bOn`  
+ *bOn*  
  Indicates whether the command associated with the `COleCmdUI` object should be enabled or disabled. Nonzero enables the command; 0 disables the command.  
   
 ##  <a name="setcheck"></a>  COleCmdUI::SetCheck  
@@ -94,7 +94,7 @@ virtual void SetCheck(int nCheck);
 ```  
   
 ### Parameters  
- `nCheck`  
+ *nCheck*  
  A value determining the state to set an on/off toggle command. Values are:  
   
 |Value|Description|  
@@ -111,7 +111,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  A pointer to the text to be used with the command.  
   
 ## See Also  

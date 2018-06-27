@@ -129,7 +129,10 @@ The following table lists several useful user-oriented targets.
 |Rebuild|Cleans and then builds your project.|  
 |ResourceCompile|Executes the Microsoft Windows Resource Compiler tool, rc.exe.|  
 |XdcMake|Executes the XML Documentation tool, xdcmake.exe.|  
-|Xsd|Executes the XML Schema Definition tool, xsd.exe.|  
+|Xsd|Executes the XML Schema Definition tool, xsd.exe. *See note below.*|  
+
+> [!NOTE] 
+> In Visual Studio 2017, C++ project support for **xsd** files is deprecated. You can still use **Microsoft.VisualC.CppCodeProvider** by adding **CppCodeProvider.dll** manually to the GAC.
   
 ## See Also  
   

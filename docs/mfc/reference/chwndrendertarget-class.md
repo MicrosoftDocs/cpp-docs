@@ -72,7 +72,7 @@ void Attach(ID2D1HwndRenderTarget* pTarget);
 ```  
   
 ### Parameters  
- `pTarget`  
+ *pTarget*  
  Existing render target interface. Cannot be NULL  
   
 ##  <a name="checkwindowstate"></a>  CHwndRenderTarget::CheckWindowState  
@@ -93,7 +93,7 @@ CHwndRenderTarget(HWND hwnd = NULL);
 ```  
   
 ### Parameters  
- `hwnd`  
+ *hwnd*  
  The HWND associated with this render target  
   
 ##  <a name="create"></a>  CHwndRenderTarget::Create  
@@ -104,7 +104,7 @@ BOOL Create(HWND hWnd);
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  The HWND associated with this render target  
   
 ### Return Value  
@@ -165,7 +165,7 @@ BOOL ReCreate(HWND hWnd);
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  The HWND associated with this render target  
   
 ### Return Value  
@@ -179,7 +179,7 @@ BOOL Resize(const CD2DSizeU& size);
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  The new size of the render target in device pixels  
   
 ### Return Value  

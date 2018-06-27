@@ -110,16 +110,16 @@ int Add(HICON hIcon);
 ```  
   
 ### Parameters  
- `pbmImage`  
+ *pbmImage*  
  Pointer to the bitmap containing the image or images. The number of images is inferred from the width of the bitmap.  
   
- `pbmMask`  
+ *pbmMask*  
  Pointer to the bitmap containing the mask. If no mask is used with the image list, this parameter is ignored.  
   
- `crMask`  
+ *crMask*  
  Color used to generate the mask. Each pixel of this color in the given bitmap is changed to black and the corresponding bit in the mask is set to one.  
   
- `hIcon`  
+ *hIcon*  
  Handle of the icon that contains the bitmap and mask for the new image.  
   
 ### Return Value  
@@ -139,7 +139,7 @@ BOOL Attach(HIMAGELIST hImageList);
 ```  
   
 ### Parameters  
- `hImageList`  
+ *hImageList*  
  A handle to an image list object.  
   
 ### Return Value  
@@ -158,10 +158,10 @@ BOOL BeginDrag(
 ```  
   
 ### Parameters  
- `nImage`  
+ *nImage*  
  Zero-based index of the image to drag.  
   
- `ptHotSpot`  
+ *ptHotSpot*  
  Coordinates of the starting drag position (typically, the cursor position). The coordinates are relative to the upper left corner of the image.  
   
 ### Return Value  
@@ -201,10 +201,10 @@ BOOL Copy(
  *iDst*  
  The zero-based index of the image to be used as the destination of the copy operation.  
   
- `iSrc`  
+ *iSrc*  
  The zero-based index of the image to be used as the source of the copy operation.  
   
- `uFlags`  
+ *uFlags*  
  The bit flag value that specifies the type of copy operation to be made. This parameter can be one of the following values:  
   
 |Value|Meaning|  
@@ -212,7 +212,7 @@ BOOL Copy(
 |`ILCF_MOVE`|The source image is copied to the destination image's index. This operation results in multiple instances of a given image. `ILCF_MOVE` is the default.|  
 |`ILCF_SWAP`|The source and destination images exchange positions within the image list.|  
   
- `pSrc`  
+ *pSrc*  
  A pointer to a `CImageList` object that is the target of the copy operation.  
   
 ### Return Value  
@@ -259,13 +259,13 @@ BOOL Create(CImageList* pImageList);
 ```  
   
 ### Parameters  
- `cx`  
+ *cx*  
  Dimensions of each image, in pixels.  
   
- `cy`  
+ *cy*  
  Dimensions of each image, in pixels.  
   
- `nFlags`  
+ *nFlags*  
  Specifies the type of image list to create. This parameter can be a combination of the following values, but it can include only one of the `ILC_COLOR` values.  
   
 |Value|Meaning|  
@@ -279,40 +279,40 @@ BOOL Create(CImageList* pImageList);
 |`ILC_COLORDDB`|Use a device-dependent bitmap.|  
 |`ILC_MASK`|Uses a mask. The image list contains two bitmaps, one of which is a monochrome bitmap used as a mask. If this value is not included, the image list contains only one bitmap. See [Drawing Images from an Image List](../../mfc/drawing-images-from-an-image-list.md) for additional information on masked images.|  
   
- `nInitial`  
+ *nInitial*  
  Number of images that the image list initially contains.  
   
- `nGrow`  
+ *nGrow*  
  Number of images by which the image list can grow when the system needs to resize the list to make room for new images. This parameter represents the number of new images the resized image list can contain.  
   
- `nBitmapID`  
+ *nBitmapID*  
  Resource IDs of the bitmap to be associated with the image list.  
   
- `crMask`  
+ *crMask*  
  Color used to generate a mask. Each pixel of this color in the specified bitmap is changed to black, and the corresponding bit in the mask is set to one.  
   
- `lpszBitmapID`  
+ *lpszBitmapID*  
  A string containing the resource IDs of the images.  
   
- `imagelist1`  
+ *imagelist1*  
  A reference to a `CImageList` object.  
   
- `nImage1`  
+ *nImage1*  
  Index of the first existing image.  
   
- `imagelist2`  
+ *imagelist2*  
  A reference to a `CImageList` object.  
   
- `nImage2`  
+ *nImage2*  
  Index of the second existing image.  
   
- `dx`  
+ *dx*  
  Offset of the x-axis of the second image in relationship to the first image, in pixels.  
   
- `dy`  
+ *dy*  
  Offset of the y-axis of the second image in relationship to the first image, in pixels.  
   
- `pImageList`  
+ *pImageList*  
  A pointer to a `CImageList` object.  
   
 ### Return Value  
@@ -364,7 +364,7 @@ HIMAGELIST Detach();
   See the example for [CImageList::Attach](#attach).  
   
 ##  <a name="dragenter"></a>  CImageList::DragEnter  
- During a drag operation, locks updates to the window specified by `pWndLock` and displays the drag image at the position specified by `point`.  
+ During a drag operation, locks updates to the window specified by *pWndLock* and displays the drag image at the position specified by *point*.  
   
 ```  
 static BOOL PASCAL DragEnter(
@@ -373,10 +373,10 @@ static BOOL PASCAL DragEnter(
 ```  
   
 ### Parameters  
- `pWndLock`  
+ *pWndLock*  
  Pointer to the window that owns the drag image.  
   
- `point`  
+ *point*  
  Position at which to display the drag image. Coordinates are relative to the upper left corner of the window (not the client area).  
   
 ### Return Value  
@@ -385,7 +385,7 @@ static BOOL PASCAL DragEnter(
 ### Remarks  
  The coordinates are relative to the window's upper left corner, so you must compensate for the widths of window elements, such as the border, title bar, and menu bar, when specifying the coordinates.  
   
- If `pWndLock` is **NULL**, this function draws the image in the display context associated with the desktop window, and coordinates are relative to the upper left corner of the screen.  
+ If *pWndLock* is **NULL**, this function draws the image in the display context associated with the desktop window, and coordinates are relative to the upper left corner of the screen.  
   
  This function locks all other updates to the given window during the drag operation. If you need to do any drawing during a drag operation, such as highlighting the target of a drag-and-drop operation, you can temporarily hide the dragged image by using the [CImageList::DragLeave](#dragleave) function.  
   
@@ -393,14 +393,14 @@ static BOOL PASCAL DragEnter(
   See the example for [CImageList::BeginDrag](#begindrag).  
   
 ##  <a name="dragleave"></a>  CImageList::DragLeave  
- Unlocks the window specified by `pWndLock` and hides the drag image, allowing the window to be updated.  
+ Unlocks the window specified by *pWndLock* and hides the drag image, allowing the window to be updated.  
   
 ```  
 static BOOL PASCAL DragLeave(CWnd* pWndLock);
 ```  
   
 ### Parameters  
- `pWndLock`  
+ *pWndLock*  
  Pointer to the window that owns the drag image.  
   
 ### Return Value  
@@ -417,7 +417,7 @@ static BOOL PASCAL DragMove(CPoint pt);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  New drag position.  
   
 ### Return Value  
@@ -437,7 +437,7 @@ static BOOL PASCAL DragShowNolock(BOOL bShow);
 ```  
   
 ### Parameters  
- `bShow`  
+ *bShow*  
  Specifies whether the drag image is to be shown.  
   
 ### Return Value  
@@ -458,23 +458,23 @@ BOOL Draw(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the destination device context.  
   
- `nImage`  
+ *nImage*  
  Zero-based index of the image to draw.  
   
- `pt`  
+ *pt*  
  Location at which to draw within the specified device context.  
   
- `nStyle`  
+ *nStyle*  
  Flag specifying the drawing style. It can be one or more of these values:  
   
 |Value|Meaning|  
 |-----------|-------------|  
 |`ILD_BLEND25`, **ILD_FOCUS**|Draws the image, blending 25 percent with the system highlight color. This value has no effect if the image list does not contain a mask.|  
 |`ILD_BLEND50`, **ILD_SELECTED**, **ILD_BLEND**|Draws the image, blending 50 percent with the system highlight color. This value has no effect if the image list does not contain a mask.|  
-|**ILD_MASK**|Draws the mask.|  
+|`ILD_MASK`|Draws the mask.|  
 |`ILD_NORMAL`|Draws the image using the background color for the image list. If the background color is the `CLR_NONE` value, the image is drawn transparently using the mask.|  
 |`ILD_TRANSPARENT`|Draws the image transparently using the mask, regardless of the background color.|  
   
@@ -499,17 +499,17 @@ BOOL DrawEx(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the destination device context.  
   
- `nImage`  
+ *nImage*  
  Zero-based index of the image to draw.  
   
- `pt`  
+ *pt*  
  Location at which to draw within the specified device context.  
   
- `sz`  
- Size of the portion of the image to draw relative to the upper-left corner of the image. See `dx` and *dy* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
+ *sz*  
+ Size of the portion of the image to draw relative to the upper-left corner of the image. See *dx* and *dy* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
  *clrBk*  
  Background color of the image. See *rgbBk* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
@@ -517,7 +517,7 @@ BOOL DrawEx(
  *clrFg*  
  Foreground color of the image. See *rgbFg* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
- `nStyle`  
+ *nStyle*  
  Flag specifying the drawing style. See *fStyle* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
 ### Return Value  
@@ -555,30 +555,30 @@ BOOL DrawIndirect(
  *pimldp*  
  A pointer to an [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure that contains information about the draw operation.  
   
- `pDC`  
+ *pDC*  
  A pointer to the destination device context. You must delete this [CDC](../../mfc/reference/cdc-class.md) object when you are done with it.  
   
- `nImage`  
+ *nImage*  
  The zero-based index of the image to be drawn.  
   
- `pt`  
+ *pt*  
  A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.  
   
- `sz`  
+ *sz*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.  
   
  *ptOrigin*  
  A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.  
   
- `fStyle`  
+ *fStyle*  
  Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, `ILD_NORMAL`, draws the image using the background color for the image list. If the background color is the `CLR_NONE` value, the image is drawn transparently using a mask.  
   
- Other possible styles are described under the **fStyle** member of the [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure.  
+ Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure.  
   
  *dwRop*  
- Value specifying a raster-operation code. These codes define how the color data for the source rectangle will be combined with the color data for the destination rectangle to achieve the final color. MFC's default implementation, **SRCCOPY**, copies the source rectangle directly to the destination rectangle. This parameter is ignored if the `fStyle` parameter does not include the **ILD_ROP** flag.  
+ Value specifying a raster-operation code. These codes define how the color data for the source rectangle will be combined with the color data for the destination rectangle to achieve the final color. MFC's default implementation, **SRCCOPY**, copies the source rectangle directly to the destination rectangle. This parameter is ignored if the *fStyle* parameter does not include the **ILD_ROP** flag.  
   
- Other possible values are described under the **dwRop** member of the [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure.  
+ Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure.  
   
  *rgbBack*  
  The image background color, by default `CLR_DEFAULT`. This parameter can be an application-defined RGB value or one of the following values:  
@@ -596,7 +596,7 @@ BOOL DrawIndirect(
 |`CLR_DEFAULT`|Default foreground color. The image is drawn using the system highlight color as the foreground color.|  
 |`CLR_NONE`|No blend color. The image is blended with the color of the destination device context.|  
   
- This parameter is used only if `fStyle` includes the `ILD_BLEND25` or `ILD_BLEND50` flag.  
+ This parameter is used only if *fStyle* includes the `ILD_BLEND25` or `ILD_BLEND50` flag.  
   
  *fState*  
  Flag specifying the drawing state. This member can contain one or more image list state flags.  
@@ -617,7 +617,7 @@ BOOL DrawIndirect(
 ### Remarks  
  Use the first version if you want to fill the Win32 structure yourself. Use the second version if you want to take advantage of one or more of MFC's default arguments, or avoid managing the structure.  
   
- An overlay image is an image that is drawn on top of the primary image, specified in this member function by the `nImage` parameter. Draw an overlay mask by using the [Draw](#draw) member function with the one-based index of the overlay mask specified by using the [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) macro.  
+ An overlay image is an image that is drawn on top of the primary image, specified in this member function by the *nImage* parameter. Draw an overlay mask by using the [Draw](#draw) member function with the one-based index of the overlay mask specified by using the [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) macro.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]  
@@ -643,7 +643,7 @@ HICON ExtractIcon(int nImage);
 ```  
   
 ### Parameters  
- `nImage`  
+ *nImage*  
  Zero-based index of the image.  
   
 ### Return Value  
@@ -663,7 +663,7 @@ static CImageList* PASCAL FromHandle(HIMAGELIST hImageList);
 ```  
   
 ### Parameters  
- `hImageList`  
+ *hImageList*  
  Specifies the image list.  
   
 ### Return Value  
@@ -683,7 +683,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
 ```  
   
 ### Parameters  
- `hImageList`  
+ *hImageList*  
  Specifies the image list.  
   
 ### Return Value  
@@ -718,7 +718,7 @@ static CImageList* PASCAL GetDragImage(
 ```  
   
 ### Parameters  
- `lpPoint`  
+ *lpPoint*  
  Address of a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the current drag position.  
   
  *lpPointHotSpot*  
@@ -750,7 +750,7 @@ BOOL GetImageInfo(
 ```  
   
 ### Parameters  
- `nImage`  
+ *nImage*  
  Zero-based index of the image.  
   
  *pImageInfo*  
@@ -810,7 +810,7 @@ BOOL Read(CArchive* pArchive);
 ```  
   
 ### Parameters  
- `pArchive`  
+ *pArchive*  
  A pointer to a `CArchive` object from which the image list is to be read.  
   
 ### Return Value  
@@ -827,14 +827,14 @@ BOOL Remove(int nImage);
 ```  
   
 ### Parameters  
- `nImage`  
+ *nImage*  
  Zero-based index of the image to remove.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- All items following `nImage` now move down one position. For example, if an image list contains two items, deleting the first item will cause the remaining item to now be in the first position. `nImage`=0 for the item in the first position.  
+ All items following *nImage* now move down one position. For example, if an image list contains two items, deleting the first item will cause the remaining item to now be in the first position. *nImage*=0 for the item in the first position.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CImageList#19](../../mfc/reference/codesnippet/cpp/cimagelist-class_19.cpp)]  
@@ -855,22 +855,22 @@ int Replace(
 ```  
   
 ### Parameters  
- `nImage`  
+ *nImage*  
  Zero-based index of the image to replace.  
   
- `pbmImage`  
+ *pbmImage*  
  A pointer to the bitmap containing the image.  
   
- `pbmMask`  
+ *pbmMask*  
  A pointer to the bitmap containing the mask. If no mask is used with the image list, this parameter is ignored.  
   
- `hIcon`  
+ *hIcon*  
  A handle to the icon that contains the bitmap and mask for the new image.  
   
 ### Return Value  
  The version returning **BOOL** returns nonzero if successful; otherwise 0.  
   
- The version returning `int` returns the zero-based index of the image if successful; otherwise - 1.  
+ The version returning **int** returns the zero-based index of the image if successful; otherwise - 1.  
   
 ### Remarks  
  Call this member function after calling [SetImageCount](#setimagecount) to assign the new, valid images to the placeholder image index numbers.  
@@ -886,7 +886,7 @@ COLORREF SetBkColor(COLORREF cr);
 ```  
   
 ### Parameters  
- `cr`  
+ *cr*  
  Background color to set. It can be `CLR_NONE`. In that case, images are drawn transparently using the mask.  
   
 ### Return Value  
@@ -908,7 +908,7 @@ BOOL SetDragCursorImage(
  *nDrag*  
  Index of the new image to be combined with the drag image.  
   
- `ptHotSpot`  
+ *ptHotSpot*  
  Position of the hot spot within the new image.  
   
 ### Return Value  
@@ -949,7 +949,7 @@ BOOL SetOverlayImage(
 ```  
   
 ### Parameters  
- `nImage`  
+ *nImage*  
  Zero-based index of the image to use as an overlay mask.  
   
  *nOverlay*  
@@ -974,7 +974,7 @@ BOOL Write(CArchive* pArchive);
 ```  
   
 ### Parameters  
- `pArchive`  
+ *pArchive*  
  A pointer to a `CArchive` object in which the image list is to be stored.  
   
 ### Return Value  

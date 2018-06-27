@@ -65,10 +65,10 @@ CMFCRibbonLabel(
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
  The text to appear in the label.  
   
- [in] `bIsMultiLine`  
+ [in] *bIsMultiLine*  
  `TRUE` to specify that the label is a multi-line label; otherwise, `FALSE`.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData  
@@ -81,14 +81,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  Represents the parent window of the current ribbon label.  
   
- [out] `data`  
+ [out] *data*  
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current ribbon label.  
   
 ### Return Value  
- `TRUE` if the `data` parameter was successfully populated with the accessibility data of the current ribbon label; otherwise, `FALSE`.  
+ `TRUE` if the *data* parameter was successfully populated with the accessibility data of the current ribbon label; otherwise, `FALSE`.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
