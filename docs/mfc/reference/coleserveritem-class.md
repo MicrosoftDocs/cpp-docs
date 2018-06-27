@@ -40,7 +40,7 @@ class COleServerItem : public CDocItem
 |[COleServerItem::GetDocument](#getdocument)|Returns the server document that contains the item.|  
 |[COleServerItem::GetEmbedSourceData](#getembedsourcedata)|Gets the **CF_EMBEDSOURCE** data for an OLE item.|  
 |[COleServerItem::GetItemName](#getitemname)|Returns the name of the item. Used for linked items only.|  
-|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Gets the `CF_LINKSOURCE` data for an OLE item.|  
+|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Gets the **CF_LINKSOURCE** data for an OLE item.|  
 |[COleServerItem::GetObjectDescriptorData](#getobjectdescriptordata)|Gets the **CF_OBJECTDESCRIPTOR** data for an OLE item.|  
 |[COleServerItem::IsConnected](#isconnected)|Indicates whether the item is currently attached to an active container.|  
 |[COleServerItem::IsLinkedItem](#islinkeditem)|Indicates whether the item represents a linked OLE item.|  
@@ -106,7 +106,7 @@ void AddOtherClipboardData(COleDataSource* pDataSource);
 ```  
   
 ### Parameters  
- `pDataSource`  
+ *pDataSource*  
  Pointer to the `COleDataSource` object in which the data should be placed.  
   
 ### Remarks  
@@ -122,10 +122,10 @@ COleServerItem(
 ```  
   
 ### Parameters  
- `pServerDoc`  
+ *pServerDoc*  
  Pointer to the document that will contain the new item.  
   
- `bAutoDelete`  
+ *bAutoDelete*  
  Flag indicating whether the object can be deleted when a link to it is released. Set this to **FALSE** if the `COleServerItem` object is an integral part of your document's data which you must delete. Set this to **TRUE** if the object is a secondary structure used to identify a range in your document's data that can be deleted by the framework.  
   
 ##  <a name="copytoclipboard"></a>  COleServerItem::CopyToClipboard  
@@ -136,7 +136,7 @@ void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ```  
   
 ### Parameters  
- `bIncludeLink`  
+ *bIncludeLink*  
  Set this to **TRUE** if link data should be copied to the Clipboard. Set this to **FALSE** if your server application does not support links.  
   
 ### Remarks  
@@ -158,23 +158,23 @@ DROPEFFECT DoDragDrop(
  *lpRectItem*  
  The item's rectangle on screen, in pixels, relative to the client area.  
   
- `ptOffset`  
- The offset from `lpItemRect` where the mouse position was at the time of the drag.  
+ *ptOffset*  
+ The offset from *lpItemRect* where the mouse position was at the time of the drag.  
   
- `bIncludeLink`  
+ *bIncludeLink*  
  Set this to **TRUE** if link data should be copied to the Clipboard. Set it to **FALSE** if your application does not support links.  
   
- `dwEffects`  
+ *dwEffects*  
  Determines the effects that the drag source will allow in the drag operation (a combination of Copy, Move, and Link).  
   
- `lpRectStartDrag`  
+ *lpRectStartDrag*  
  Pointer to the rectangle that defines where the drag actually starts. For more information, see the following Remarks section.  
   
 ### Return Value  
  A value from the `DROPEFFECT` enumeration. If it is `DROPEFFECT_MOVE`, the original data should be removed.  
   
 ### Remarks  
- The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by `lpRectStartDrag` or until a specified number of milliseconds have passed. If `lpRectStartDrag` is **NULL**, a default rectangle is used so that the drag starts when the mouse cursor moves one pixel.  
+ The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by *lpRectStartDrag* or until a specified number of milliseconds have passed. If *lpRectStartDrag* is **NULL**, a default rectangle is used so that the drag starts when the mouse cursor moves one pixel.  
   
  The delay time is specified by a registry key setting. You can change the delay time by calling [CWinApp::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) or [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). If you do not specify the delay time, a default value of 200 milliseconds is used. Drag delay time is stored as follows:  
   
@@ -198,20 +198,20 @@ void GetClipboardData(
 ```  
   
 ### Parameters  
- `pDataSource`  
+ *pDataSource*  
  Pointer to the `COleDataSource` object that will receive the OLE item's data in all supported formats.  
   
- `bIncludeLink`  
+ *bIncludeLink*  
  **TRUE** if link data should be copied to the Clipboard. **FALSE** if your server application does not support links.  
   
- `lpOffset`  
+ *lpOffset*  
  The offset, in pixels, of the mouse cursor from the origin of the object.  
   
- `lpSize`  
+ *lpSize*  
  The size of the object in pixels.  
   
 ### Remarks  
- This function calls the [GetEmbedSourceData](#getembedsourcedata) member function to get the native data for the OLE item and calls the [AddOtherClipboardData](#addotherclipboarddata) member function to get the presentation format and any supported conversion formats. If `bIncludeLink` is **TRUE**, the function also calls [GetLinkSourceData](#getlinksourcedata) to get the link data for the item.  
+ This function calls the [GetEmbedSourceData](#getembedsourcedata) member function to get the native data for the OLE item and calls the [AddOtherClipboardData](#addotherclipboarddata) member function to get the presentation format and any supported conversion formats. If *bIncludeLink* is **TRUE**, the function also calls [GetLinkSourceData](#getlinksourcedata) to get the link data for the item.  
   
  Override this function if you want to put formats in a `COleDataSource` object before or after those formats supplied by `CopyToClipboard`.  
   
@@ -249,7 +249,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ```  
   
 ### Parameters  
- `lpStgMedium`  
+ *lpStgMedium*  
  Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the **CF_EMBEDSOURCE** data for the OLE item.  
   
 ### Remarks  
@@ -280,7 +280,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 ```  
   
 ### Parameters  
- `lpStgMedium`  
+ *lpStgMedium*  
  Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the `CF_LINKSOURCE` data for the OLE item.  
   
 ### Return Value  
@@ -304,17 +304,17 @@ void GetObjectDescriptorData(
 ```  
   
 ### Parameters  
- `lpOffset`  
+ *lpOffset*  
  Offset of the mouse click from the upper-left corner of the OLE item. Can be **NULL**.  
   
- `lpSize`  
+ *lpSize*  
  Size of the OLE item. Can be **NULL**.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the **CF_OBJECTDESCRIPTOR** data for the OLE item.  
   
 ### Remarks  
- The information is copied into the **STGMEDIUM** structure pointed to by `lpStgMedium`. This format includes the information needed for the Paste Special dialog.  
+ The information is copied into the **STGMEDIUM** structure pointed to by *lpStgMedium*. This format includes the information needed for the Paste Special dialog.  
   
  For more information, see [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) in the Windows SDK.  
   
@@ -364,7 +364,7 @@ void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
 ```  
   
 ### Parameters  
- `nDrawAspect`  
+ *nDrawAspect*  
  A value from the `DVASPECT` enumeration that indicates which aspect of the OLE item has changed. This parameter can have any of the following values:  
   
 - `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
@@ -386,7 +386,7 @@ virtual void OnDoVerb(LONG iVerb);
 ```  
   
 ### Parameters  
- `iVerb`  
+ *iVerb*  
  Specifies the verb to execute. It can be any one of the following:  
   
 |Value|Meaning|Symbol|  
@@ -416,10 +416,10 @@ virtual BOOL OnDraw(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to the [CDC](../../mfc/reference/cdc-class.md) object on which to draw the item. The display context is automatically connected to the attribute display context so you can call attribute functions, although doing so would make the metafile device-specific.  
   
- `rSize`  
+ *rSize*  
  Size, in **HIMETRIC** units, in which to draw the metafile.  
   
 ### Return Value  
@@ -439,10 +439,10 @@ virtual BOOL OnDrawEx(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to the [CDC](../../mfc/reference/cdc-class.md) object on which to draw the item. The DC is automatically connected to the attribute DC so you can call attribute functions, although doing so would make the metafile device-specific.  
   
- `nDrawAspect`  
+ *nDrawAspect*  
  A value from the `DVASPECT` enumeration. This parameter can have any of the following values:  
   
 - `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
@@ -475,13 +475,13 @@ virtual COleDataSource* OnGetClipboardData(
 ```  
   
 ### Parameters  
- `bIncludeLink`  
+ *bIncludeLink*  
  Set this to **TRUE** if link data should be copied to the Clipboard. Set this to **FALSE** if your server application does not support links.  
   
- `lpOffset`  
+ *lpOffset*  
  The offset of the mouse cursor from the origin of the object in pixels.  
   
- `lpSize`  
+ *lpSize*  
  The size of the object in pixels.  
   
 ### Return Value  
@@ -500,7 +500,7 @@ virtual BOOL OnGetExtent(
 ```  
   
 ### Parameters  
- `nDrawAspect`  
+ *nDrawAspect*  
  Specifies the aspect of the OLE item whose bounds are to be retrieved. This parameter can have any of the following values:  
   
 - `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
@@ -511,7 +511,7 @@ virtual BOOL OnGetExtent(
   
 - `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
   
- `rSize`  
+ *rSize*  
  Reference to a `CSize` object that will receive the size of the OLE item.  
   
 ### Return Value  
@@ -531,7 +531,7 @@ virtual void OnHide();
  The default calls **COleServerDoc::OnShowDocument( FALSE )**. The function also notifies the container that the OLE item has been hidden. Override this function if you want to perform special processing when hiding an OLE item.  
   
 ##  <a name="oninitfromdata"></a>  COleServerItem::OnInitFromData  
- Called by the framework to initialize an OLE item using the contents of `pDataObject`.  
+ Called by the framework to initialize an OLE item using the contents of *pDataObject*.  
   
 ```  
 virtual BOOL OnInitFromData(
@@ -540,17 +540,17 @@ virtual BOOL OnInitFromData(
 ```  
   
 ### Parameters  
- `pDataObject`  
+ *pDataObject*  
  Pointer to an OLE data object containing data in various formats for initializing the OLE item.  
   
- `bCreation`  
+ *bCreation*  
  **TRUE** if the function is called to initialize an OLE item being newly created by a container application. **FALSE** if the function is called to replace the contents of an already existing OLE item.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If `bCreation` is **TRUE**, this function is called if a container implements Insert New Object based on the current selection. The data selected is used when creating the new OLE item. For example, when selecting a range of cells in a spreadsheet program and then using the Insert New Object to create a chart based on the values in the selected range. The default implementation does nothing. Override this function to choose an acceptable format from those offered by `pDataObject` and initialize the OLE item based on the data provided. This is an advanced overridable.  
+ If *bCreation* is **TRUE**, this function is called if a container implements Insert New Object based on the current selection. The data selected is used when creating the new OLE item. For example, when selecting a range of cells in a spreadsheet program and then using the Insert New Object to create a chart based on the values in the selected range. The default implementation does nothing. Override this function to choose an acceptable format from those offered by *pDataObject* and initialize the OLE item based on the data provided. This is an advanced overridable.  
   
  For more information, see [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) in the Windows SDK.  
   
@@ -591,10 +591,10 @@ virtual BOOL OnRenderData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  Points to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data is to be returned.  
   
 ### Return Value  
@@ -603,7 +603,7 @@ virtual BOOL OnRenderData(
 ### Remarks  
  The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) or [DelayRenderFileData](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) member function for delayed rendering. The default implementation of this function calls [OnRenderFileData](#onrenderfiledata) or [OnRenderGlobalData](#onrenderglobaldata), respectively, if the supplied storage medium is either a file or memory. If neither of these formats is supplied, the default implementation returns 0 and does nothing.  
   
- If `lpStgMedium`-> *tymed* is **TYMED_NULL**, the **STGMEDIUM** should allocated and filled as specified by *lpFormatEtc->tymed*. If not **TYMED_NULL**, the **STGMEDIUM** should be filled in place with the data.  
+ If *lpStgMedium*-> *tymed* is **TYMED_NULL**, the **STGMEDIUM** should allocated and filled as specified by *lpFormatEtc->tymed*. If not **TYMED_NULL**, the **STGMEDIUM** should be filled in place with the data.  
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
@@ -619,10 +619,10 @@ virtual BOOL OnRenderFileData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
- `pFile`  
+ *pFile*  
  Points to a `CFile` object in which the data is to be rendered.  
   
 ### Return Value  
@@ -645,10 +645,10 @@ virtual BOOL OnRenderGlobalData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
- `phGlobal`  
+ *phGlobal*  
  Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be **NULL**.  
   
 ### Return Value  
@@ -657,7 +657,7 @@ virtual BOOL OnRenderGlobalData(
 ### Remarks  
  The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
   
- If `phGlobal` is **NULL**, then a new `HGLOBAL` should be allocated and returned in `phGlobal`. Otherwise, the `HGLOBAL` specified by `phGlobal` should be filled with the data. The amount of data placed in the `HGLOBAL` must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
+ If *phGlobal* is **NULL**, then a new `HGLOBAL` should be allocated and returned in *phGlobal*. Otherwise, the `HGLOBAL` specified by *phGlobal* should be filled with the data. The amount of data placed in the `HGLOBAL` must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).  
   
@@ -671,7 +671,7 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
 ```  
   
 ### Parameters  
- `lpLogPalette`  
+ *lpLogPalette*  
  Pointer to a Windows [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure.  
   
 ### Return Value  
@@ -693,14 +693,14 @@ virtual BOOL OnSetData(
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format of the data.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  Pointer to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data resides.  
   
- `bRelease`  
- Indicates who has ownership of the storage medium after completing the function call. The caller decides who is responsible for releasing the resources allocated on behalf of the storage medium. The caller does this by setting `bRelease`. If `bRelease` is nonzero, the server item takes ownership, freeing the medium when it has finished using it. When `bRelease` is 0, the caller retains ownership and the server item can use the storage medium only for the duration of the call.  
+ *bRelease*  
+ Indicates who has ownership of the storage medium after completing the function call. The caller decides who is responsible for releasing the resources allocated on behalf of the storage medium. The caller does this by setting *bRelease*. If *bRelease* is nonzero, the server item takes ownership, freeing the medium when it has finished using it. When *bRelease* is 0, the caller retains ownership and the server item can use the storage medium only for the duration of the call.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -722,7 +722,7 @@ virtual BOOL OnSetExtent(
 ```  
   
 ### Parameters  
- `nDrawAspect`  
+ *nDrawAspect*  
  Specifies the aspect of the OLE item whose bounds are being specified. This parameter can have any of the following values:  
   
 - `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
@@ -733,14 +733,14 @@ virtual BOOL OnSetExtent(
   
 - `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
   
- `size`  
+ *size*  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) structure specifying the new size of the OLE item.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If the container application was written with the Microsoft Foundation Class Library, this function is called when the [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) member function of the corresponding `COleClientItem` object is called. The default implementation sets the [m_sizeExtent](#m_sizeextent) member to the specified size if `nDrawAspect` is `DVASPECT_CONTENT`; otherwise it returns 0. Override this function to perform special processing when you change the size of the item.  
+ If the container application was written with the Microsoft Foundation Class Library, this function is called when the [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) member function of the corresponding `COleClientItem` object is called. The default implementation sets the [m_sizeExtent](#m_sizeextent) member to the specified size if *nDrawAspect* is `DVASPECT_CONTENT`; otherwise it returns 0. Override this function to perform special processing when you change the size of the item.  
   
 ##  <a name="onshow"></a>  COleServerItem::OnShow  
  Called by the framework to instruct the server application to display the OLE item in place.  
@@ -766,16 +766,16 @@ virtual void OnUpdate(
 ```  
   
 ### Parameters  
- `pSender`  
+ *pSender*  
  Pointer to the item that modified the document. Can be **NULL**.  
   
- `lHint`  
+ *lHint*  
  Contains information about the modification.  
   
- `pHint`  
+ *pHint*  
  Pointer to an object storing information about the modification.  
   
- `nDrawAspect`  
+ *nDrawAspect*  
  A value from the `DVASPECT` enumeration. This parameter can have any one of the following values:  
   
 - `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
@@ -807,7 +807,7 @@ void SetItemName(LPCTSTR lpszItemName);
 ```  
   
 ### Parameters  
- `lpszItemName`  
+ *lpszItemName*  
  Pointer to the new name of the item.  
   
 ### Remarks  

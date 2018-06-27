@@ -35,7 +35,7 @@ class COlePasteSpecialDialog : public COleDialog
 |----------|-----------------|  
 |[COlePasteSpecialDialog::AddFormat](#addformat)|Adds custom formats to the list of formats your application can paste.|  
 |[COlePasteSpecialDialog::AddLinkEntry](#addlinkentry)|Adds a new entry to the list of supported Clipboard formats.|  
-|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Adds **CF_BITMAP**, **CF_DIB**, `CF_METAFILEPICT`, and optionally `CF_LINKSOURCE` to the list of formats your application can paste.|  
+|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Adds **CF_BITMAP**, **CF_DIB**, **CF_METAFILEPICT**, and optionally **CF_LINKSOURCE** to the list of formats your application can paste.|  
 |[COlePasteSpecialDialog::CreateItem](#createitem)|Creates the item in the container document using the specified format.|  
 |[COlePasteSpecialDialog::DoModal](#domodal)|Displays the OLE Paste Special dialog box.|  
 |[COlePasteSpecialDialog::GetDrawAspect](#getdrawaspect)|Tells whether to draw item as an icon or not.|  
@@ -97,22 +97,22 @@ void AddFormat(
  *fmt*  
  Reference to the data type to add.  
   
- `lpszFormat`  
+ *lpszFormat*  
  String that describes the format to the user.  
   
  *lpszResult*  
  String that describes the result if this format is chosen in the dialog box.  
   
- `flags`  
+ *flags*  
  The different linking and embedding options available for this format. This flag is a bitwise combination of one or more of the different values in the **OLEUIPASTEFLAG** enumerated type.  
   
- `cf`  
+ *cf*  
  The clipboard format to add.  
   
  *tymed*  
  The types of media available in this format. This is a bitwise combination of one or more of the values in the **TYMED** enumerated type.  
   
- `nFormatID`  
+ *nFormatID*  
  The ID of the string that identifies this format. The format of this string is two separate strings separated by a '\n' character. The first string is the same that would be passed in the *lpstrFormat* parameter, and the second is the same as the *lpstrResult* parameter.  
   
  *bEnableIcon*  
@@ -136,7 +136,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
 ```  
   
 ### Parameters  
- `cf`  
+ *cf*  
  The clipboard format to add.  
   
 ### Return Value  
@@ -159,7 +159,7 @@ void AddStandardFormats(BOOL bEnableLink = TRUE);
   
 - **CF_DIB**  
   
-- `CF_METAFILEPICT`  
+- **CF_METAFILEPICT**  
   
 - **"Embedded Object"**  
   
@@ -178,7 +178,7 @@ COlePasteSpecialDialog(
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  Creation flag, contains any number of the following flags combined using the bitwise-OR operator:  
   
 - `PSF_SELECTPASTE` Specifies that the Paste radio button will be checked initially when the dialog box is called. Cannot be used in combination with `PSF_SELECTPASTELINK`. This is the default.  
@@ -189,10 +189,10 @@ COlePasteSpecialDialog(
   
 - `PSF_SHOWHELP` Specifies that the Help button will be displayed when the dialog box is called.  
   
- `pDataObject`  
+ *pDataObject*  
  Points to the [COleDataObject](../../mfc/reference/coledataobject-class.md) for pasting. If this value is **NULL**, it gets the `COleDataObject` from the Clipboard.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box is set to the main application window.  
   
 ### Remarks  

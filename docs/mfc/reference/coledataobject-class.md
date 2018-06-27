@@ -74,7 +74,7 @@ void Attach(
  *lpDataObject*  
  Points to an OLE data object.  
   
- `bAutoRelease`  
+ *bAutoRelease*  
  **TRUE** if the OLE data object should be released when the `COleDataObject` object is destroyed; otherwise **FALSE**.  
   
 ### Remarks  
@@ -145,14 +145,14 @@ BOOL GetData(
 ```  
   
 ### Parameters  
- `cfFormat`  
+ *cfFormat*  
  The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  Points to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive data.  
   
- `lpFormatEtc`  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ *lpFormatEtc*  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -172,11 +172,11 @@ CFile* GetFileData(
 ```  
   
 ### Parameters  
- `cfFormat`  
+ *cfFormat*  
  The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
- `lpFormatEtc`  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ *lpFormatEtc*  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Return Value  
  Pointer to the new `CFile` or `CFile`-derived object containing the data if successful; otherwise **NULL**.  
@@ -201,11 +201,11 @@ HGLOBAL GetGlobalData(
 ```  
   
 ### Parameters  
- `cfFormat`  
+ *cfFormat*  
  The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
- `lpFormatEtc`  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ *lpFormatEtc*  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Return Value  
  The handle of the global memory block containing the data if successful; otherwise **NULL**.  
@@ -223,7 +223,7 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
 ```  
   
 ### Parameters  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure that receives the format information when the function call returns.  
   
 ### Return Value  
@@ -246,11 +246,11 @@ BOOL IsDataAvailable(
 ```  
   
 ### Parameters  
- `cfFormat`  
- The Clipboard data format to be used in the structure pointed to by `lpFormatEtc`. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
+ *cfFormat*  
+ The Clipboard data format to be used in the structure pointed to by *lpFormatEtc*. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
- `lpFormatEtc`  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format desired. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ *lpFormatEtc*  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format desired. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Return Value  
  Nonzero if data is available in the specified format; otherwise 0.  
@@ -273,7 +273,7 @@ void Release();
 ```  
   
 ### Remarks  
- The `IDataObject` was associated with the `COleDataObject` by calling **Attach** or `AttachClipboard` explicitly or by the framework. If the `bAutoRelease` parameter of **Attach** is **FALSE**, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317).  
+ The `IDataObject` was associated with the `COleDataObject` by calling `Attach` or `AttachClipboard` explicitly or by the framework. If the `bAutoRelease` parameter of `Attach` is **FALSE**, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317).  
   
 ## See Also  
  [MFC Sample HIERSVR](../../visual-cpp-samples.md)   

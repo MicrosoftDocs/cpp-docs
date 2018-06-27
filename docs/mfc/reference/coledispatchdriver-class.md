@@ -58,7 +58,7 @@ class COleDispatchDriver
 ## Remarks  
  `COleDispatchDriver` does not have a base class.  
   
- OLE dispatch interfaces provide access to an object's methods and properties. Member functions of `COleDispatchDriver` attach, detach, create, and release a dispatch connection of type `IDispatch`. Other member functions use variable argument lists to simplify calling **IDispatch::Invoke**.  
+ OLE dispatch interfaces provide access to an object's methods and properties. Member functions of `COleDispatchDriver` attach, detach, create, and release a dispatch connection of type `IDispatch`. Other member functions use variable argument lists to simplify calling `IDispatch::Invoke`.  
   
  This class can be used directly, but it is generally used only by classes created by the Add Class wizard. When you create new C++ classes by importing a type library, the new classes are derived from `COleDispatchDriver`.  
   
@@ -84,10 +84,10 @@ void AttachDispatch(
 ```  
   
 ### Parameters  
- `lpDispatch`  
+ *lpDispatch*  
  Pointer to an OLE `IDispatch` object to be attached to the `COleDispatchDriver` object.  
   
- `bAutoRelease`  
+ *bAutoRelease*  
  Specifies whether the dispatch is to be released when this object goes out of scope.  
   
 ### Remarks  
@@ -106,13 +106,13 @@ COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
 ```  
   
 ### Parameters  
- `lpDispatch`  
+ *lpDispatch*  
  Pointer to an OLE `IDispatch` object to be attached to the `COleDispatchDriver` object.  
   
- `bAutoRelease`  
+ *bAutoRelease*  
  Specifies whether the dispatch is to be released when this object goes out of scope.  
   
- `dispatchSrc`  
+ *dispatchSrc*  
  Reference to an existing `COleDispatchDriver` object.  
   
 ### Remarks  
@@ -140,13 +140,13 @@ BOOL CreateDispatch(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  Class ID of the `IDispatch` connection object to be created.  
   
- `pError`  
+ *pError*  
  Pointer to an OLE exception object, which will hold the status code resulting from the creation.  
   
- `lpszProgID`  
+ *lpszProgID*  
  Pointer to the programmatic identifier, such as "Excel.Document.5", of the automation object for which the dispatch object is to be created.  
   
 ### Return Value  
@@ -174,7 +174,7 @@ LPDISPATCH DetachDispatch();
  [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]  
   
 ##  <a name="getproperty"></a>  COleDispatchDriver::GetProperty  
- Gets the object property specified by `dwDispID`.  
+ Gets the object property specified by *dwDispID*.  
   
 ```  
 void GetProperty(
@@ -184,20 +184,20 @@ void GetProperty(
 ```  
   
 ### Parameters  
- `dwDispID`  
+ *dwDispID*  
  Identifies the property to be retrieved.  
   
- `vtProp`  
+ *vtProp*  
  Specifies the property to be retrieved. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](#invokehelper).  
   
- `pvProp`  
- Address of the variable that will receive the property value. It must match the type specified by `vtProp`.  
+ *pvProp*  
+ Address of the variable that will receive the property value. It must match the type specified by *vtProp*.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/cpp/coledispatchdriver-class_4.cpp)]  
   
 ##  <a name="invokehelper"></a>  COleDispatchDriver::InvokeHelper  
- Calls the object method or property specified by `dwDispID`, in the context specified by `wFlags`.  
+ Calls the object method or property specified by *dwDispID*, in the context specified by *wFlags*.  
   
 ```  
 void AFX_CDECL InvokeHelper(
@@ -209,32 +209,32 @@ void AFX_CDECL InvokeHelper(
 ```  
   
 ### Parameters  
- `dwDispID`  
+ *dwDispID*  
  Identifies the method or property to be invoked.  
   
- `wFlags`  
- Flags describing the context of the call to **IDispatch::Invoke**. . For a list of possible values, see the `wFlags` parameter in [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) in the Windows SDK.  
+ *wFlags*  
+ Flags describing the context of the call to **IDispatch::Invoke**. . For a list of possible values, see the *wFlags* parameter in [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) in the Windows SDK.  
   
- `vtRet`  
+ *vtRet*  
  Specifies the type of the return value. For possible values, see the Remarks section.  
   
- `pvRet`  
- Address of the variable that will receive the property value or return value. It must match the type specified by `vtRet`.  
+ *pvRet*  
+ Address of the variable that will receive the property value or return value. It must match the type specified by *vtRet*.  
   
- `pbParamInfo`  
- Pointer to a null-terminated string of bytes specifying the types of the parameters following `pbParamInfo`.  
+ *pbParamInfo*  
+ Pointer to a null-terminated string of bytes specifying the types of the parameters following *pbParamInfo*.  
   
  *...*  
- Variable list of parameters, of types specified in `pbParamInfo`.  
+ Variable list of parameters, of types specified in *pbParamInfo*.  
   
 ### Remarks  
- The `pbParamInfo` parameter specifies the types of the parameters passed to the method or property. The variable list of arguments is represented by **...** in the syntax declaration.  
+ The *pbParamInfo* parameter specifies the types of the parameters passed to the method or property. The variable list of arguments is represented by **...** in the syntax declaration.  
   
- Possible values for the `vtRet` argument are taken from the `VARENUM` enumeration. Possible values are as follows:  
+ Possible values for the *vtRet* argument are taken from the `VARENUM` enumeration. Possible values are as follows:  
   
 |Symbol|Return Type|  
 |------------|-----------------|  
-|`VT_EMPTY`|`void`|  
+|`VT_EMPTY`|**void**|  
 |`VT_I2`|**short**|  
 |`VT_I4`|**long**|  
 |`VT_R4`|**float**|  
@@ -242,15 +242,15 @@ void AFX_CDECL InvokeHelper(
 |`VT_CY`|**CY**|  
 |`VT_DATE`|**DATE**|  
 |`VT_BSTR`|`BSTR`|  
-|**VT_DISPATCH**|`LPDISPATCH`|  
+|`VT_DISPATCH`|`LPDISPATCH`|  
 |`VT_ERROR`|`SCODE`|  
 |`VT_BOOL`|**BOOL**|  
-|**VT_VARIANT**|**VARIANT**|  
-|**VT_UNKNOWN**|`LPUNKNOWN`|  
+|`VT_VARIANT`|**VARIANT**|  
+|`VT_UNKNOWN`|`LPUNKNOWN`|  
   
- The `pbParamInfo` argument is a space-separated list of **VTS_** constants. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are listed with the [EVENT_CUSTOM](event-maps.md#event_custom) macro.  
+ The *pbParamInfo* argument is a space-separated list of **VTS_** constants. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are listed with the [EVENT_CUSTOM](event-maps.md#event_custom) macro.  
   
- This function converts the parameters to **VARIANTARG** values, then invokes the [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) method. If the call to `Invoke` fails, this function will throw an exception. If the `SCODE` (status code) returned by **IDispatch::Invoke** is `DISP_E_EXCEPTION`, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object; otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
+ This function converts the parameters to **VARIANTARG** values, then invokes the [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) method. If the call to `Invoke` fails, this function will throw an exception. If the `SCODE` (status code) returned by `IDispatch::Invoke` is `DISP_E_EXCEPTION`, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object; otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
  For more information, see [VARIANTARG](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [Implementing the IDispatch Interface](http://msdn.microsoft.com/library/windows/desktop/ms221037\(v=vs.85\).aspx), [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx), and [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
@@ -295,7 +295,7 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 ```  
   
 ### Parameters  
- `dispatchSrc`  
+ *dispatchSrc*  
  A pointer to an existing `COleDispatchDriver` object.  
   
 ##  <a name="operator_lpdispatch"></a>  COleDispatchDriver::operator LPDISPATCH  
@@ -316,13 +316,13 @@ void ReleaseDispatch();
 ```  
   
 ### Remarks  
- If auto release has been set for this connection, this function calls **IDispatch::Release** before releasing the interface.  
+ If auto release has been set for this connection, this function calls `IDispatch::Release` before releasing the interface.  
   
 ### Example  
   See the example for [COleDispatchDriver::AttachDispatch](#attachdispatch).  
   
 ##  <a name="setproperty"></a>  COleDispatchDriver::SetProperty  
- Sets the OLE object property specified by `dwDispID`.  
+ Sets the OLE object property specified by *dwDispID*.  
   
 ```  
 void AFX_CDECL SetProperty(
@@ -331,14 +331,14 @@ void AFX_CDECL SetProperty(
 ```  
   
 ### Parameters  
- `dwDispID`  
+ *dwDispID*  
  Identifies the property to be set.  
   
- `vtProp`  
+ *vtProp*  
  Specifies the type of the property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](#invokehelper).  
   
  *...*  
- A single parameter of the type specified by `vtProp`.  
+ A single parameter of the type specified by *vtProp*.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]  
