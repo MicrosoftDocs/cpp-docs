@@ -103,10 +103,10 @@ CPrintDialogEx(
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the **PD_ALLPAGES** flag sets the default print range to all pages of the document. See the [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) structure in the Windows SDK for more information on these flags.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
   
 ### Remarks  
@@ -205,7 +205,7 @@ CString GetDriverName() const;
  A `CString` specifying the system-defined driver name.  
   
 ### Remarks  
- Use a pointer to the `CString` object returned by `GetDriverName` as the value of `lpszDriverName` in a call to [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
+ Use a pointer to the `CString` object returned by `GetDriverName` as the value of *lpszDriverName* in a call to [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
   
 ##  <a name="getportname"></a>  CPrintDialogEx::GetPortName  
  Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve the name of the currently selected printer port.  

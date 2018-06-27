@@ -113,40 +113,40 @@ COleVariant(LPCITEMIDLIST pidl);
  *varSrc*  
  An existing `COleVariant` or **VARIANT** object to be copied into the new `COleVariant` object.  
   
- `pSrc`  
+ *pSrc*  
  A pointer to a **VARIANT** object that will be copied into the new `COleVariant` object.  
   
- `lpszSrc`  
+ *lpszSrc*  
  A null-terminated string to be copied into the new `COleVariant` object.  
   
- `vtSrc`  
+ *vtSrc*  
  The `VARTYPE` for the new `COleVariant` object.  
   
- `strSrc`  
+ *strSrc*  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object to be copied into the new `COleVariant` object.  
   
- `nSrc`, `lSrc`  
+ *nSrc*, *lSrc*  
  A numerical value to be copied into the new `COleVariant` object.  
   
- `vtSrc`  
+ *vtSrc*  
  The `VARTYPE` for the new `COleVariant` object.  
   
- `curSrc`  
+ *curSrc*  
  A [COleCurrency](../../mfc/reference/colecurrency-class.md) object to be copied into the new `COleVariant` object.  
   
- `fltSrc`, `dblSrc`  
+ *fltSrc*, *dblSrc*  
  A numerical value to be copied into the new `COleVariant` object.  
   
- `timeSrc`  
+ *timeSrc*  
  A [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object to be copied into the new `COleVariant` object.  
   
- `arrSrc`  
+ *arrSrc*  
  A [CByteArray](../../mfc/reference/cbytearray-class.md) object to be copied into the new `COleVariant` object.  
   
- `lbSrc`  
+ *lbSrc*  
  A [CLongBinary](../../mfc/reference/clongbinary-class.md) object to be copied into the new `COleVariant` object.  
   
- `pidl`  
+ *pidl*  
  A pointer to a [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) structure to be copied into the new `COleVariant` object.  
   
 ### Remarks  
@@ -160,15 +160,15 @@ COleVariant(LPCITEMIDLIST pidl);
   
 - **COleVariant(** `lpszSrc` **)** Copies a string into the new object, `VT_BSTR` (UNICODE).  
   
-- **COleVariant(** `lpszSrc` **,** `vtSrc` **)** Copies a string into the new object. The parameter `vtSrc` must be `VT_BSTR` (UNICODE) or `VT_BSTRT` (ANSI).  
+- **COleVariant(** `lpszSrc` **,** `vtSrc` **)** Copies a string into the new object. The parameter *vtSrc* must be `VT_BSTR` (UNICODE) or `VT_BSTRT` (ANSI).  
   
 - **COleVariant(** `strSrc` **)** Copies a string into the new object, **VT_BSTR** (UNICODE).  
   
 - **COleVariant(** `nSrc` **)** Copies an 8-bit integer into the new object, `VT_UI1`.  
   
-- **COleVariant(** `nSrc` **,** `vtSrc` **)** Copies a 16-bit integer (or Boolean value) into the new object. The parameter `vtSrc` must be `VT_I2` or `VT_BOOL`.  
+- **COleVariant(** `nSrc` **,** `vtSrc` **)** Copies a 16-bit integer (or Boolean value) into the new object. The parameter *vtSrc* must be `VT_I2` or `VT_BOOL`.  
   
-- **COleVariant(** `lSrc` **,** `vtSrc` **)** Copies a 32-bit integer (or `SCODE` value) into the new object. The parameter `vtSrc` must be `VT_I4`, `VT_ERROR`, or `VT_BOOL`.  
+- **COleVariant(** `lSrc` **,** `vtSrc` **)** Copies a 32-bit integer (or `SCODE` value) into the new object. The parameter *vtSrc* must be `VT_I4`, `VT_ERROR`, or `VT_BOOL`.  
   
 - **COleVariant(** `curSrc` **)** Copies a **COleCurrency** value into the new object, `VT_CY`.  
   
@@ -192,10 +192,10 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 ```  
   
 ### Parameters  
- `vartype`  
+ *vartype*  
  The [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) for this `COleVariant` object.  
   
- `pSrc`  
+ *pSrc*  
  A pointer to the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) object to be converted. If this value is **NULL**, this `COleVariant` object is used as the source for the conversion.  
   
 ### Remarks  
@@ -224,7 +224,7 @@ VARIANT Detach();
  This function sets the [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) for this `COleVariant` object to `VT_EMPTY`.  
   
 > [!NOTE]
->  After calling **Detach**, it is the caller's responsibility to call **VariantClear** on the resulting **VARIANT** structure.  
+>  After calling `Detach`, it is the caller's responsibility to call **VariantClear** on the resulting **VARIANT** structure.  
   
  For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) entries in the Windows SDK.  
   
@@ -236,7 +236,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 ```  
   
 ### Parameters  
- `bytes`  
+ *bytes*  
  A reference to an existing [CByteArray](../../mfc/reference/cbytearray-class.md) object.  
   
 ##  <a name="operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT  
@@ -285,13 +285,13 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
 - **operator =(** *varSrc***)** Copies an existing **VARIANT** or `COleVariant` object into this object.  
   
-- **operator =(** `pSrc` **)** Copies the **VARIANT** object accessed by `pSrc` into this object.  
+- **operator =(** `pSrc` **)** Copies the **VARIANT** object accessed by *pSrc* into this object.  
   
 - **operator =(** `lpszSrc` **)** Copies a null-terminated string into this object and sets the **VARTYPE** to `VT_BSTR`.  
   
 - **operator =(** `strSrc` **)** Copies a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object into this object and sets the **VARTYPE** to `VT_BSTR`.  
   
-- **operator =(** `nSrc` **)** Copies an 8- or 16-bit integer value into this object. If `nSrc` is an 8-bit value, the **VARTYPE** of this is set to `VT_UI1`. If `nSrc` is a 16-bit value and the **VARTYPE** of this is `VT_BOOL`, it is kept; otherwise, it is set to `VT_I2`.  
+- **operator =(** `nSrc` **)** Copies an 8- or 16-bit integer value into this object. If *nSrc* is an 8-bit value, the **VARTYPE** of this is set to `VT_UI1`. If *nSrc* is a 16-bit value and the **VARTYPE** of this is `VT_BOOL`, it is kept; otherwise, it is set to `VT_I2`.  
   
 - **operator =(** `lSrc` **)** Copies a 32-bit integer value into this object. If the **VARTYPE** of this is `VT_ERROR`, it is kept; otherwise, it is set to `VT_I4`.  
   
@@ -345,16 +345,16 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 ```  
   
 ### Parameters  
- `lpszSrc`  
+ *lpszSrc*  
  A null-terminated string to be copied into the new `COleVariant` object.  
   
  *VtSrc*  
  The **VARTYPE** for the new `COleVariant` object.  
   
 ### Remarks  
- The parameter `vtSrc` must be `VT_BSTR` (UNICODE) or `VT_BSTRT` (ANSI). `SetString` is typically used to set strings to ANSI, since the default for the [COleVariant::COleVariant](#colevariant) constructor with a string or string pointer parameter and no **VARTYPE** is UNICODE.  
+ The parameter *vtSrc* must be `VT_BSTR` (UNICODE) or `VT_BSTRT` (ANSI). `SetString` is typically used to set strings to ANSI, since the default for the [COleVariant::COleVariant](#colevariant) constructor with a string or string pointer parameter and no **VARTYPE** is UNICODE.  
   
- A DAO recordset in a non-UNICODE build expects strings to be ANSI. Thus, for DAO functions that use `COleVariant` objects, if you are not creating a UNICODE recordset, you must use the **COleVariant::COleVariant(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or use `SetString` with `vtSrc` set to `VT_BSTRT` to make ANSI strings. For example, the `CDaoRecordset` functions [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) and [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) use `COleVariant` objects as parameters. These objects must be ANSI if the DAO recordset is not UNICODE.  
+ A DAO recordset in a non-UNICODE build expects strings to be ANSI. Thus, for DAO functions that use `COleVariant` objects, if you are not creating a UNICODE recordset, you must use the **COleVariant::COleVariant(** `lpszSrc`**,** `vtSrc` **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or use `SetString` with *vtSrc* set to `VT_BSTRT` to make ANSI strings. For example, the `CDaoRecordset` functions [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) and [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) use `COleVariant` objects as parameters. These objects must be ANSI if the DAO recordset is not UNICODE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)

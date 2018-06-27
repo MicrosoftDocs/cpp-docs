@@ -120,19 +120,19 @@ void Construct(
 ```  
   
 ### Parameters  
- `nIDTemplate`  
+ *nIDTemplate*  
  ID of the template used for this page.  
   
- `nIDCaption`  
+ *nIDCaption*  
  ID of the name to be placed in the tab for this page. If 0, the name will be taken from the dialog template for this page.  
   
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a template resource.  
   
- `nIDHeaderTitle`  
+ *nIDHeaderTitle*  
  ID of the name to be placed in the title location of the property page header. By default, 0.  
   
- `nIDHeaderSubTitle`  
+ *nIDHeaderSubTitle*  
  ID of the name to be placed in the subtitle location of the property page header. By default, 0.  
   
 ### Remarks  
@@ -144,9 +144,9 @@ void Construct(
   
 -   The user has selected (tabbed to) this page.  
   
- Call **Construct** if one of the other class constructors has not been called. The `Construct` member function is flexible because you can leave the parameter statement blank and then specify multiple parameters and construction at any point in your code.  
+ Call `Construct` if one of the other class constructors has not been called. The `Construct` member function is flexible because you can leave the parameter statement blank and then specify multiple parameters and construction at any point in your code.  
   
- You must use `Construct` when you work with arrays, and you must call **Construct** for each member of the array so that the data members are assigned proper values.  
+ You must use `Construct` when you work with arrays, and you must call `Construct` for each member of the array so that the data members are assigned proper values.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#112](../../mfc/codesnippet/cpp/cpropertypage-class_1.cpp)]  
@@ -187,20 +187,20 @@ CPropertyPage(
 ```  
   
 ### Parameters  
- `nIDTemplate`  
+ *nIDTemplate*  
  ID of the template used for this page.  
   
- `nIDCaption`  
+ *nIDCaption*  
  ID of the name to be placed in the tab for this page. If 0, the name will be taken from the dialog template for this page.  
   
- `dwSize`  
- `lpszTemplateName`  
+ *dwSize*  
+ *lpszTemplateName*  
  Points to a string containing the name of the template for this page. Cannot be **NULL**.  
   
- `nIDHeaderTitle`  
+ *nIDHeaderTitle*  
  ID of the name to be placed in the title location of the property page header.  
   
- `nIDHeaderSubTitle`  
+ *nIDHeaderSubTitle*  
  ID of the name to be placed in the subtitle location of the property page header.  
   
 ### Remarks  
@@ -443,10 +443,10 @@ LRESULT QuerySiblings(
 ```  
   
 ### Parameters  
- `wParam`  
+ *wParam*  
  Specifies additional message-dependent information.  
   
- `lParam`  
+ *lParam*  
  Specifies additional message-dependent information  
   
 ### Return Value  
@@ -470,7 +470,7 @@ void SetModified(BOOL bChanged = TRUE);
 ```  
   
 ### Parameters  
- `bChanged`  
+ *bChanged*  
  **TRUE** to indicate that the property page settings have been modified since the last time they were applied; **FALSE** to indicate that the property page settings have been applied, or should be ignored.  
   
 ### Remarks  
