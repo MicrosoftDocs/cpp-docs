@@ -79,10 +79,10 @@ explicit COleChangeIconDialog(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item to be converted.  
   
- `dwFlags`  
+ *dwFlags*  
  Creation flag, which contains any number of the following values combined using the bitwise-or operator:  
   
 - **CIF_SELECTCURRENT** Specifies that the Current radio button will be selected initially when the dialog box is called. This is the default.  
@@ -95,7 +95,7 @@ explicit COleChangeIconDialog(
   
 - **CIF_USEICONEXE** Specifies that the icon should be extracted from the executable specified in the **szIconExe** field of [m_ci](#m_ci) instead of retrieved from the type. This is useful for embedding or linking to non-OLE files.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  
@@ -111,7 +111,7 @@ BOOL DoChangeIcon(COleClientItem* pItem);
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item whose icon is changing.  
   
 ### Return Value  

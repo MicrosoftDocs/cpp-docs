@@ -29,7 +29,7 @@ struct CODBCFieldInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  The name of the field.  
   
  *m_nSQLType*  

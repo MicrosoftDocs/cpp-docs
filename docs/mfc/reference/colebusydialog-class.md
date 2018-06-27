@@ -88,7 +88,7 @@ explicit COleBusyDialog(
  *bNotResponding*  
  If **TRUE**, call the Not Responding dialog box instead of the Server Busy dialog box. The wording in the Not Responding dialog box is slightly different than the wording in the Server Busy dialog box, and the Cancel button is disabled.  
   
- `dwFlags`  
+ *dwFlags*  
  Creation flag. Can contain zero or more of the following values combined with the bitwise-OR operator:  
   
 - **BZ_DISABLECANCELBUTTON** Disable the Cancel button when calling the dialog box.  
@@ -97,7 +97,7 @@ explicit COleBusyDialog(
   
 - **BZ_DISABLERETRYBUTTON** Disable the Retry button when calling the dialog box.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog object is set to the main application window.  
   
 ### Remarks  

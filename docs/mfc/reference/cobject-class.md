@@ -112,7 +112,7 @@ CObject(const CObject& objectSrc);
 ### Remarks  
  The default version is automatically called by the constructor of your derived class.  
   
- If your class is serializable (it incorporates the `IMPLEMENT_SERIAL` macro), then you must have a default constructor (a constructor with no arguments) in your class declaration. If you do not need a default constructor, declare a private or protected "empty" constructor. For more information, see [Using CObject](../../mfc/using-cobject.md).  
+ If your class is serializable (it incorporates the IMPLEMENT_SERIAL macro), then you must have a default constructor (a constructor with no arguments) in your class declaration. If you do not need a default constructor, declare a private or protected "empty" constructor. For more information, see [Using CObject](../../mfc/using-cobject.md).  
   
  The standard C++ default class copy constructor does a member-by-member copy. The presence of the private `CObject` copy constructor guarantees a compiler error message if the copy constructor of your class is needed but not available. You must therefore provide a copy constructor if your class requires this capability.  
   
@@ -129,11 +129,11 @@ virtual void Dump(CDumpContext& dc) const;
 ```  
   
 ### Parameters  
- `dc`  
+ *dc*  
  The diagnostic dump context for dumping, usually `afxDump`.  
   
 ### Remarks  
- When you write your own class, you should override the `Dump` function to provide diagnostic services for yourself and other users of your class. The overridden `Dump` usually calls the `Dump` function of its base class before printing data members unique to the derived class. `CObject::Dump` prints the class name if your class uses the `IMPLEMENT_DYNAMIC` or `IMPLEMENT_SERIAL` macro.  
+ When you write your own class, you should override the `Dump` function to provide diagnostic services for yourself and other users of your class. The overridden `Dump` usually calls the `Dump` function of its base class before printing data members unique to the derived class. `CObject::Dump` prints the class name if your class uses the `IMPLEMENT_DYNAMIC` or IMPLEMENT_SERIAL macro.  
   
 > [!NOTE]
 >  Your `Dump` function should not print a newline character at the end of its output.  
@@ -191,14 +191,14 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 ```  
   
 ### Parameters  
- `pClass`  
+ *pClass*  
  A pointer to a [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) structure associated with your `CObject`-derived class.  
   
 ### Return Value  
  Nonzero if the object corresponds to the class; otherwise 0.  
   
 ### Remarks  
- This function tests `pClass` to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.  
+ This function tests *pClass* to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.  
   
  Do not use this function extensively because it defeats the C++ polymorphism feature. Use virtual functions instead.  
   
@@ -305,7 +305,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object to serialize to or from.  
   
 ### Remarks  
