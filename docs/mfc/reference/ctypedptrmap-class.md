@@ -23,13 +23,13 @@ class CTypedPtrMap : public BASE_CLASS
 ```  
   
 #### Parameters  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer map class; must be a pointer map class ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, or `CMapStringToPtr`).  
   
- `KEY`  
+ *KEY*  
  Class of the object used as the key to the map.  
   
- `VALUE`  
+ *VALUE*  
  Class of the object stored in the map.  
   
 ## Members  
@@ -75,25 +75,25 @@ void GetNextAssoc(
 ```  
   
 ### Parameters  
- `rPosition`  
- Specifies a reference to a **POSITION** value returned by a previous `GetNextAssoc` or `BASE_CLASS`**::GetStartPosition** call.  
+ *rPosition*  
+ Specifies a reference to a POSITION value returned by a previous `GetNextAssoc` or `BASE_CLASS`**::GetStartPosition** call.  
   
  *KEY*  
  Template parameter specifying the type of the map's keys.  
   
- `rKey`  
+ *rKey*  
  Specifies the returned key of the retrieved element.  
   
  *VALUE*  
  Template parameter specifying the type of the map's values.  
   
- `rValue`  
+ *rValue*  
  Specifies the returned value of the retrieved element.  
   
 ### Remarks  
  This function is most useful for iterating through all the elements in the map. Note that the position sequence is not necessarily the same as the key value sequence.  
   
- If the retrieved element is the last in the map, then the new value of `rNextPosition` is set to **NULL**.  
+ If the retrieved element is the last in the map, then the new value of `rNextPosition` is set to NULL.  
   
  This inline function calls `BASE_CLASS`**::GetNextAssoc**.  
   
@@ -105,16 +105,16 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 ```  
   
 ### Parameters  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Template parameter specifying the base class of this map's class.  
   
- `key`  
+ *key*  
  The key of the element to be looked up.  
   
  *VALUE*  
  Template parameter specifying the type of values stored in this map.  
   
- `rValue`  
+ *rValue*  
  Specifies the returned value of the retrieved element.  
   
 ### Return Value  
@@ -134,10 +134,10 @@ VALUE& operator[ ](base_class ::base_arg_key key);
  *VALUE*  
  Template parameter specifying the type of values stored in this map.  
   
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Template parameter specifying the base class of this map's class.  
   
- `key`  
+ *key*  
  The key of the element to be looked up or created in the map.  
   
 ### Remarks  
@@ -154,7 +154,7 @@ BOOL RemoveKey(KEY key);
  *KEY*  
  Template parameter specifying the type of the map's keys.  
   
- `key`  
+ *key*  
  Key for the element to be removed.  
   
 ### Return Value  
@@ -174,10 +174,10 @@ void SetAt(KEY key, VALUE newValue);
  *KEY*  
  Template parameter specifying the type of the map's keys.  
   
- `key`  
+ *key*  
  Specifies the key value of the newValue.  
   
- `newValue`  
+ *newValue*  
  Specifies the object pointer that is the value of the new element.  
   
 ### Remarks  

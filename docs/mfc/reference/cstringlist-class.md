@@ -73,7 +73,7 @@ class CStringList : public CObject
 ## Remarks  
  All comparisons are done by value, meaning that the characters in the string are compared instead of the addresses of the strings.  
   
- `CStringList` incorporates the `IMPLEMENT_SERIAL` macro to support serialization and dumping of its elements. If a list of `CString` objects is stored to an archive, either with an overloaded insertion operator or with the `Serialize` member function, each `CString` element is serialized in turn.  
+ `CStringList` incorporates the IMPLEMENT_SERIAL macro to support serialization and dumping of its elements. If a list of `CString` objects is stored to an archive, either with an overloaded insertion operator or with the `Serialize` member function, each `CString` element is serialized in turn.  
   
  If you need a dump of individual `CString` elements, you must set the depth of the dump context to 1 or greater.  
   
