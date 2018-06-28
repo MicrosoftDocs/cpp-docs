@@ -48,14 +48,14 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  Specifies the name of the control class whose connection point this is.  
   
  *localClass*  
  Specifies the name of the local class that implements the connection point.  
   
 ### Remarks  
- In the declaration (.h) file that defines the member functions for your class, start the connection point with the `BEGIN_CONNECTION_PART` macro, then add the `CONNECTION_IID` macro and any other member functions you wish to implement, and complete the connection point map with the `END_CONNECTION_PART` macro.  
+ In the declaration (.h) file that defines the member functions for your class, start the connection point with the BEGIN_CONNECTION_PART macro, then add the CONNECTION_IID macro and any other member functions you wish to implement, and complete the connection point map with the END_CONNECTION_PART macro.  
   
 ### Requirements  
   **Header** afxdisp.h  
@@ -75,18 +75,18 @@ END_CONNECTION_PART(localClass)
   **Header** afxdisp.h  
   
 ##  <a name="connection_iid"></a>  CONNECTION_IID  
- Use between the `BEGIN_CONNECTION_PART` and `END_CONNECTION_PART` macros to define an interface ID for a connection point supported by your OLE control.  
+ Use between the BEGIN_CONNECTION_PART and END_CONNECTION_PART macros to define an interface ID for a connection point supported by your OLE control.  
   
 ```   
 CONNECTION_IID(iid)   
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  The interface ID of the interface called by the connection point.  
   
 ### Remarks  
- The `iid` argument is an interface ID used to identify the interface that the connection point will call on its connected sinks. For example:  
+ The *iid* argument is an interface ID used to identify the interface that the connection point will call on its connected sinks. For example:  
   
  [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/cpp/connection-maps_1.h)]  
   
@@ -103,7 +103,7 @@ DECLARE_CONNECTION_MAP()
 ```  
   
 ### Remarks  
- If your control supports additional points, use the `DECLARE_CONNECTION_MAP` macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the `BEGIN_CONNECTION_MAP` macro, `CONNECTION_PART` macros for each of the control's connection points, and the `END_CONNECTION_MAP` macro to declare the end of the connection map.  
+ If your control supports additional points, use the DECLARE_CONNECTION_MAP macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the BEGIN_CONNECTION_MAP macro, CONNECTION_PART macros for each of the control's connection points, and the END_CONNECTION_MAP macro to declare the end of the connection map.  
   
 ### Requirements  
   **Header** afxdisp.h  
@@ -116,14 +116,14 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  Specifies the name of the control class whose connection map this is.  
   
  *theBase*  
- Specifies the name of the base class of `theClass`.  
+ Specifies the name of the base class of *theClass*.  
   
 ### Remarks  
- In the implementation (.CPP) file that defines the member functions for your class, start the connection map with the `BEGIN_CONNECTION_MAP` macro, then add macro entries for each of your connection points using the [CONNECTION_PART](#connection_part) macro. Finally, complete the connection map with the [END_CONNECTION_MAP](#end_connection_map) macro.  
+ In the implementation (.CPP) file that defines the member functions for your class, start the connection map with the BEGIN_CONNECTION_MAP macro, then add macro entries for each of your connection points using the [CONNECTION_PART](#connection_part) macro. Finally, complete the connection map with the [END_CONNECTION_MAP](#end_connection_map) macro.  
   
 ### Requirements  
   **Header** afxdisp.h  
@@ -146,10 +146,10 @@ CONNECTION_PART(theClass, iid, localClass)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  Specifies the name of the control class whose connection point this is.  
   
- `iid`  
+ *iid*  
  The interface ID of the interface called by the connection point.  
   
  *localClass*  
@@ -166,7 +166,7 @@ CONNECTION_PART(theClass, iid, localClass)
   **Header** afxdisp.h  
   
 ##  <a name="afxconnectionadvise"></a>  AfxConnectionAdvise  
- Call this function to establish a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
+ Call this function to establish a connection between a source, specified by *pUnkSrc*, and a sink, specified by *pUnkSink*.  
   
 ```   
 BOOL AFXAPI AfxConnectionAdvise(
@@ -178,20 +178,20 @@ BOOL AFXAPI AfxConnectionAdvise(
 ```  
   
 ### Parameters  
- `pUnkSrc`  
+ *pUnkSrc*  
  A pointer to the object that calls the interface.  
   
- `pUnkSink`  
+ *pUnkSink*  
  A pointer to the object that implements the interface.  
   
- `iid`  
+ *iid*  
  The interface ID of the connection.  
   
- `bRefCount`  
- **TRUE** indicates that creating the connection should cause the reference count of `pUnkSink` to be incremented. **FALSE** indicates that the reference count should not be incremented.  
+ *bRefCount*  
+ **TRUE** indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. **FALSE** indicates that the reference count should not be incremented.  
   
- `pdwCookie`  
- A pointer to a `DWORD` where a connection identifier is returned. This value should be passed as the `dwCookie` parameter to `AfxConnectionUnadvise` when disconnecting the connection.  
+ *pdwCookie*  
+ A pointer to a `DWORD` where a connection identifier is returned. This value should be passed as the *dwCookie* parameter to `AfxConnectionUnadvise` when disconnecting the connection.  
   
 ### Return Value  
  Nonzero if a connection was established; otherwise 0.  
@@ -203,7 +203,7 @@ BOOL AFXAPI AfxConnectionAdvise(
  **Header:** afxctl.h 
 
 ##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise  
- Call this function to disconnect a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
+ Call this function to disconnect a connection between a source, specified by *pUnkSrc*, and a sink, specified by *pUnkSink*.  
   
 ```   
 BOOL AFXAPI AfxConnectionUnadvise(
@@ -215,19 +215,19 @@ BOOL AFXAPI AfxConnectionUnadvise(
 ```  
   
 ### Parameters  
- `pUnkSrc`  
+ *pUnkSrc*  
  A pointer to the object that calls the interface.  
   
- `pUnkSink`  
+ *pUnkSink*  
  A pointer to the object that implements the interface.  
   
- `iid`  
+ *iid*  
  The interface ID of the connection point interface.  
   
- `bRefCount`  
- **TRUE** indicates that disconnecting the connection should cause the reference count of `pUnkSink` to be decremented. **FALSE** indicates that the reference count should not be decremented.  
+ *bRefCount*  
+ **TRUE** indicates that disconnecting the connection should cause the reference count of *pUnkSink* to be decremented. **FALSE** indicates that the reference count should not be decremented.  
   
- `dwCookie`  
+ *dwCookie*  
  The connection identifier returned by `AfxConnectionAdvise`.  
   
 ### Return Value  

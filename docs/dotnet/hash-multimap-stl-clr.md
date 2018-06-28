@@ -57,7 +57,7 @@ template<typename Key,
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Key  
  The type of the key component of an element in the controlled sequence.  
   

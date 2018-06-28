@@ -96,7 +96,7 @@ virtual ~CD2DBitmap();
 ```  
   
 ##  <a name="attach"></a>  CD2DBitmap::Attach  
- Attaches existing resource interface to the object  
+ Attaches existing resource interface to the object.  
   
 ```  
 void Attach(ID2D1Bitmap* pResource);
@@ -104,7 +104,7 @@ void Attach(ID2D1Bitmap* pResource);
   
 ### Parameters  
  *pResource*  
- Existing resource interface. Cannot be NULL  
+ Existing resource interface. Cannot be NULL.  
   
 ##  <a name="cd2dbitmap"></a>  CD2DBitmap::CD2DBitmap  
  Constructs a CD2DBitmap object from resource.  
@@ -160,14 +160,14 @@ CD2DBitmap(
  Handle to the bitmap.  
   
 ##  <a name="commoninit"></a>  CD2DBitmap::CommonInit  
- Initializes the object  
+ Initializes the object.  
   
 ```  
 void CommonInit();
 ```  
   
 ##  <a name="copyfrombitmap"></a>  CD2DBitmap::CopyFromBitmap  
- Copies the specified region from the specified bitmap into the current bitmap  
+ Copies the specified region from the specified bitmap into the current bitmap.  
   
 ```  
 HRESULT CopyFromBitmap(
@@ -178,19 +178,19 @@ HRESULT CopyFromBitmap(
   
 ### Parameters  
  *pBitmap*  
- The bitmap to copy from  
+ The bitmap to copy from.  
   
  *destPoint*  
- In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied  
+ In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied.  
   
  *srcRect*  
- The area of bitmap to copy  
+ The area of bitmap to copy.  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
 ##  <a name="copyfrommemory"></a>  CD2DBitmap::CopyFromMemory  
- Copies the specified region from memory into the current bitmap  
+ Copies the specified region from memory into the current bitmap.  
   
 ```  
 HRESULT CopyFromMemory(
@@ -201,19 +201,19 @@ HRESULT CopyFromMemory(
   
 ### Parameters  
  *srcData*  
- The data to copy  
+ The data to copy.  
   
  *pitch*  
- The stride, or pitch, of the source bitmap stored in srcData. The stride is the byte count of a scanline (one row of pixels in memory). The stride can be computed from the following formula: pixel width * bytes per pixel + memory padding  
+ The stride, or pitch, of the source bitmap stored in srcData. The stride is the byte count of a scanline (one row of pixels in memory). The stride can be computed from the following formula: pixel width * bytes per pixel + memory padding.  
   
  *destRect*  
- In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied  
+ In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied. 
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
 ##  <a name="copyfromrendertarget"></a>  CD2DBitmap::CopyFromRenderTarget  
- Copies the specified region from the specified render target into the current bitmap  
+ Copies the specified region from the specified render target into the current bitmap.  
   
 ```  
 HRESULT CopyFromRenderTarget(
@@ -224,13 +224,13 @@ HRESULT CopyFromRenderTarget(
   
 ### Parameters  
  *pRenderTarget*  
- The render target that contains the region to copy  
+ The render target that contains the region to copy.  
   
  *destPoint*  
- In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied  
+ In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied.  
   
  *srcRect*  
- The area of renderTarget to copy  
+ The area of renderTarget to copy.  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
@@ -257,7 +257,7 @@ virtual void Destroy();
 ```  
   
 ##  <a name="detach"></a>  CD2DBitmap::Detach  
- Detaches resource interface from the object  
+ Detaches resource interface from the object.  
   
 ```  
 ID2D1Bitmap* Detach();
@@ -267,7 +267,7 @@ ID2D1Bitmap* Detach();
  Pointer to detached resource interface.  
   
 ##  <a name="get"></a>  CD2DBitmap::Get  
- Returns ID2D1Bitmap interface  
+ Returns ID2D1Bitmap interface.  
   
 ```  
 ID2D1Bitmap* Get();
@@ -277,7 +277,7 @@ ID2D1Bitmap* Get();
  Pointer to an ID2D1Bitmap interface or NULL if object is not initialized yet.  
   
 ##  <a name="getdpi"></a>  CD2DBitmap::GetDPI  
- Return the dots per inch (DPI) of the bitmap  
+ Return the dots per inch (DPI) of the bitmap.  
   
 ```  
 CD2DSizeF GetDPI() const;  
@@ -297,7 +297,7 @@ D2D1_PIXEL_FORMAT GetPixelFormat() const;
  The pixel format and alpha mode of the bitmap.  
   
 ##  <a name="getpixelsize"></a>  CD2DBitmap::GetPixelSize  
- Returns the size, in device-dependent units (pixels), of the bitmap  
+ Returns the size, in device-dependent units (pixels), of the bitmap.  
   
 ```  
 CD2DSizeU GetPixelSize() const;  
@@ -307,7 +307,7 @@ CD2DSizeU GetPixelSize() const;
  The size, in pixels, of the bitmap..  
   
 ##  <a name="getsize"></a>  CD2DBitmap::GetSize  
- Returns the size, in device-independent pixels (DIPs), of the bitmap  
+ Returns the size, in device-independent pixels (DIPs), of the bitmap.  
   
 ```  
 CD2DSizeF GetSize() const;  
@@ -317,7 +317,7 @@ CD2DSizeF GetSize() const;
  The size, in DIPs, of the bitmap.  
   
 ##  <a name="isvalid"></a>  CD2DBitmap::IsValid  
- Checks resource validity  
+ Checks resource validity.  
   
 ```  
 virtual BOOL IsValid() const;  

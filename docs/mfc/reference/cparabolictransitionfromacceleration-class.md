@@ -67,13 +67,13 @@ CParabolicTransitionFromAcceleration(
 ```  
   
 ### Parameters  
- `dblFinalValue`  
+ *dblFinalValue*  
  The value of the animation variable at the end of the transition.  
   
- `dblFinalVelocity`  
+ *dblFinalVelocity*  
  The velocity of the animation variable at the end of the transition.  
   
- `dblAcceleration`  
+ *dblAcceleration*  
  The acceleration of the animation variable during the transition.  
   
 ##  <a name="create"></a>  CParabolicTransitionFromAcceleration::Create  
@@ -86,7 +86,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  

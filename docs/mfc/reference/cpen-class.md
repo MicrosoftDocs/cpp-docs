@@ -80,7 +80,7 @@ CPen(
 ```  
   
 ### Parameters  
- `nPenStyle`  
+ *nPenStyle*  
  Specifies the pen style. This parameter in the first version of the constructor can be one of the following values:  
   
 - **PS_SOLID** Creates a solid pen.  
@@ -95,7 +95,7 @@ CPen(
   
 - **PS_NULL** Creates a null pen.  
   
-- **PS_INSIDEFRAME** Creates a pen that draws a line inside the frame of closed shapes produced by the Windows GDI output functions that specify a bounding rectangle (for example, the **Ellipse**, **Rectangle**, `RoundRect`, `Pie`, and `Chord` member functions). When this style is used with Windows GDI output functions that do not specify a bounding rectangle (for example, the `LineTo` member function), the drawing area of the pen is not limited by a frame.  
+- **PS_INSIDEFRAME** Creates a pen that draws a line inside the frame of closed shapes produced by the Windows GDI output functions that specify a bounding rectangle (for example, the `Ellipse`, `Rectangle`, `RoundRect`, `Pie`, and `Chord` member functions). When this style is used with Windows GDI output functions that do not specify a bounding rectangle (for example, the `LineTo` member function), the drawing area of the pen is not limited by a frame.  
   
  The second version of the `CPen` constructor specifies a combination of type, style, end cap, and join attributes. The values from each category should be combined by using the bitwise OR operator (&#124;). The pen type can be one of the following values:  
   
@@ -103,7 +103,7 @@ CPen(
   
 - **PS_COSMETIC** Creates a cosmetic pen.  
   
-     The second version of the `CPen` constructor adds the following pen styles for `nPenStyle`:  
+     The second version of the `CPen` constructor adds the following pen styles for *nPenStyle*:  
   
 - **PS_ALTERNATE** Creates a pen that sets every other pixel. (This style is applicable only for cosmetic pens.)  
   
@@ -125,24 +125,24 @@ CPen(
   
 - **PS_JOIN_ROUND** Joins are round.  
   
- `nWidth`  
+ *nWidth*  
  Specifies the width of the pen.  
   
 -   For the first version of the constructor, if this value is 0, the width in device units is always 1 pixel, regardless of the mapping mode.  
   
--   For the second version of the constructor, if `nPenStyle` is **PS_GEOMETRIC**, the width is given in logical units. If `nPenStyle` is **PS_COSMETIC**, the width must be set to 1.  
+-   For the second version of the constructor, if *nPenStyle* is **PS_GEOMETRIC**, the width is given in logical units. If *nPenStyle* is **PS_COSMETIC**, the width must be set to 1.  
   
- `crColor`  
+ *crColor*  
  Contains an RGB color for the pen.  
   
- `pLogBrush`  
- Points to a `LOGBRUSH` structure. If `nPenStyle` is **PS_COSMETIC**, the `lbColor` member of the `LOGBRUSH` structure specifies the color of the pen and the `lbStyle` member of the `LOGBRUSH` structure must be set to **BS_SOLID**. If `nPenStyle` is **PS_GEOMETRIC**, all members must be used to specify the brush attributes of the pen.  
+ *pLogBrush*  
+ Points to a `LOGBRUSH` structure. If *nPenStyle* is **PS_COSMETIC**, the *lbColor* member of the `LOGBRUSH` structure specifies the color of the pen and the *lbStyle* member of the `LOGBRUSH` structure must be set to **BS_SOLID**. If *nPenStyle* is **PS_GEOMETRIC**, all members must be used to specify the brush attributes of the pen.  
   
- `nStyleCount`  
- Specifies the length, in doubleword units, of the `lpStyle` array. This value must be zero if `nPenStyle` is not **PS_USERSTYLE**.  
+ *nStyleCount*  
+ Specifies the length, in doubleword units, of the *lpStyle* array. This value must be zero if *nPenStyle* is not **PS_USERSTYLE**.  
   
- `lpStyle`  
- Points to an array of doubleword values. The first value specifies the length of the first dash in a user-defined style, the second value specifies the length of the first space, and so on. This pointer must be **NULL** if `nPenStyle` is not **PS_USERSTYLE**.  
+ *lpStyle*  
+ Points to an array of doubleword values. The first value specifies the length of the first dash in a user-defined style, the second value specifies the length of the first space, and so on. This pointer must be **NULL** if *nPenStyle* is not **PS_USERSTYLE**.  
   
 ### Remarks  
  If you use the constructor with no arguments, you must initialize the resulting `CPen` object with the `CreatePen`, `CreatePenIndirect`, or `CreateStockObject` member functions.  
@@ -171,27 +171,27 @@ BOOL CreatePen(
 ```  
   
 ### Parameters  
- `nPenStyle`  
- Specifies the style for the pen. For a list of possible values, see the `nPenStyle` parameter in the [CPen](#cpen) constructor.  
+ *nPenStyle*  
+ Specifies the style for the pen. For a list of possible values, see the *nPenStyle* parameter in the [CPen](#cpen) constructor.  
   
- `nWidth`  
+ *nWidth*  
  Specifies the width of the pen.  
   
 -   For the first version of `CreatePen`, if this value is 0, the width in device units is always 1 pixel, regardless of the mapping mode.  
   
--   For the second version of `CreatePen`, if `nPenStyle` is **PS_GEOMETRIC**, the width is given in logical units. If `nPenStyle` is **PS_COSMETIC**, the width must be set to 1.  
+-   For the second version of `CreatePen`, if *nPenStyle* is **PS_GEOMETRIC**, the width is given in logical units. If *nPenStyle* is **PS_COSMETIC**, the width must be set to 1.  
   
- `crColor`  
+ *crColor*  
  Contains an RGB color for the pen.  
   
- `pLogBrush`  
- Points to a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure. If `nPenStyle` is **PS_COSMETIC**, the **lbColor** member of the `LOGBRUSH` structure specifies the color of the pen and the `lbStyle` member of the `LOGBRUSH` structure must be set to **BS_SOLID**. If **nPenStyle** is **PS_GEOMETRIC**, all members must be used to specify the brush attributes of the pen.  
+ *pLogBrush*  
+ Points to a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure. If *nPenStyle* is **PS_COSMETIC**, the **lbColor** member of the `LOGBRUSH` structure specifies the color of the pen and the *lbStyle* member of the `LOGBRUSH` structure must be set to **BS_SOLID**. If **nPenStyle** is **PS_GEOMETRIC**, all members must be used to specify the brush attributes of the pen.  
   
- `nStyleCount`  
- Specifies the length, in doubleword units, of the `lpStyle` array. This value must be zero if `nPenStyle` is not **PS_USERSTYLE**.  
+ *nStyleCount*  
+ Specifies the length, in doubleword units, of the *lpStyle* array. This value must be zero if *nPenStyle* is not **PS_USERSTYLE**.  
   
- `lpStyle`  
- Points to an array of doubleword values. The first value specifies the length of the first dash in a user-defined style, the second value specifies the length of the first space, and so on. This pointer must be **NULL** if `nPenStyle` is not **PS_USERSTYLE**.  
+ *lpStyle*  
+ Points to an array of doubleword values. The first value specifies the length of the first dash in a user-defined style, the second value specifies the length of the first space, and so on. This pointer must be **NULL** if *nPenStyle* is not **PS_USERSTYLE**.  
   
 ### Return Value  
  Nonzero if successful, or zero if the method fails.  
@@ -205,11 +205,11 @@ BOOL CreatePen(
   
  The second version of `CreatePen` initializes a logical cosmetic or geometric pen that has the specified style, width, and brush attributes. The width of a cosmetic pen is always 1; the width of a geometric pen is always specified in world units. After an application creates a logical pen, it can select that pen into a device context by calling the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) function. After a pen is selected into a device context, it can be used to draw lines and curves.  
   
--   If `nPenStyle` is **PS_COSMETIC** and **PS_USERSTYLE**, the entries in the `lpStyle` array specify lengths of dashes and spaces in style units. A style unit is defined by the device in which the pen is used to draw a line.  
+-   If *nPenStyle* is **PS_COSMETIC** and **PS_USERSTYLE**, the entries in the *lpStyle* array specify lengths of dashes and spaces in style units. A style unit is defined by the device in which the pen is used to draw a line.  
   
--   If `nPenStyle` is **PS_GEOMETRIC** and **PS_USERSTYLE**, the entries in the `lpStyle` array specify lengths of dashes and spaces in logical units.  
+-   If *nPenStyle* is **PS_GEOMETRIC** and **PS_USERSTYLE**, the entries in the *lpStyle* array specify lengths of dashes and spaces in logical units.  
   
--   If `nPenStyle` is **PS_ALTERNATE**, the style unit is ignored and every other pixel is set.  
+-   If *nPenStyle* is **PS_ALTERNATE**, the style unit is ignored and every other pixel is set.  
   
  When an application no longer requires a given pen, it should call the [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) member function or destroy the `CPen` object so the resource is no longer in use. An application should not delete a pen when the pen is selected in a device context.  
   
@@ -217,14 +217,14 @@ BOOL CreatePen(
  [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
 ##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect  
- Initializes a pen that has the style, width, and color given in the structure pointed to by `lpLogPen`.  
+ Initializes a pen that has the style, width, and color given in the structure pointed to by *lpLogPen*.  
   
 ```  
 BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ```  
   
 ### Parameters  
- `lpLogPen`  
+ *lpLogPen*  
  Points to the Windows [LOGPEN](../../mfc/reference/logpen-structure.md) structure that contains information about the pen.  
   
 ### Return Value  
@@ -266,7 +266,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
 ```  
   
 ### Parameters  
- `pLogPen`  
+ *pLogPen*  
  Points to an [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) structure that contains information about the pen.  
   
 ### Return Value  
@@ -298,7 +298,7 @@ int GetLogPen(LOGPEN* pLogPen);
 ```  
   
 ### Parameters  
- `pLogPen`  
+ *pLogPen*  
  Points to a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) structure to contain information about the pen.  
   
 ### Return Value  

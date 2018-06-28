@@ -53,7 +53,7 @@ template<typename Value>
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Value  
  The type of an element in the controlled sequence.  
   
@@ -143,10 +143,7 @@ template<typename Value>
   
  Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does not destroy its elements.  
   
-## Requirements  
- **Header:** \<cliext/vector>  
-  
- **Namespace:** cliext  
+## Members
 
 ## <a name="assign"></a> vector::assign (STL/CLR)
 Replaces all elements.  

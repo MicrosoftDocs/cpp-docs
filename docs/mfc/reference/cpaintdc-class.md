@@ -66,7 +66,7 @@ explicit CPaintDC(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the `CWnd` object to which the `CPaintDC` object belongs.  
   
 ### Remarks  
@@ -83,7 +83,7 @@ HWND m_hWnd;
 ```  
   
 ### Remarks  
- `m_hWnd` is a protected variable of type `HWND`.  
+ *m_hWnd* is a protected variable of type `HWND`.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  

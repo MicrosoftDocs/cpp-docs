@@ -37,7 +37,7 @@ The template class describes an object that controls a varying-length sequence o
   
  In the description below, `GValue` is the same as `GKey`, which in turn is the same as `Key` unless the latter is a ref type, in which case it is `Key^`.  
   
-### Syntax  
+## Syntax  
   
 ```  
 template<typename Key>  
@@ -53,10 +53,15 @@ template<typename Key>
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Key  
  The type of the key component of an element in the controlled sequence.  
   
+## Requirements  
+ **Header:** \<cliext/set>  
+  
+ **Namespace:** cliext  
+
 ## Declarations  
   
 |Type Definition|Description|  
@@ -122,7 +127,7 @@ template<typename Key>
 |<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|  
 |ITree\<Key, Value>|Maintain generic container.|  
   
-### Remarks  
+## Remarks  
  The object allocates and frees storage for the sequence it controls as individual nodes. It inserts elements into a (nearly) balanced tree that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.  
   
  The object orders the sequence it controls by calling a stored delegate object of type [set::key_compare (STL/CLR)](../dotnet/set-key-compare-stl-clr.md). You can specify the stored delegate object when you construct the set; if you specify no delegate object, the default is the comparison `operator<(key_type, key_type)`. You access this stored object by calling the member function [set::key_comp (STL/CLR)](../dotnet/set-key-comp-stl-clr.md)`()`.  
@@ -148,11 +153,6 @@ template<typename Key>
  A set iterator stores a handle to its associated set node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A set iterator remains valid so long as its associated set node is associated with some set. Moreover, a valid iterator is dereferencable -- you can use it to access or alter the element value it designates -- so long as it is not equal to `end()`.  
   
  Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does `not` destroy its elements.  
-  
-## Requirements  
- **Header:** \<cliext/set>  
-  
- **Namespace:** cliext  
  
 ## Members
 
