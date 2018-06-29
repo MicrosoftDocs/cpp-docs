@@ -21,9 +21,9 @@ In entries labeled \<memberFxn>, write your own member function for a derived [C
   
 |Term|Definition|  
 |----------|----------------|  
-|id|Any user-defined menu item ID (**WM_COMMAND** messages) or control ID (child window notification messages).|  
+|id|Any user-defined menu item ID (WM_COMMAND messages) or control ID (child window notification messages).|  
 |"message" and "wNotifyCode"|Windows message IDs as defined in WINDOWS.H.|  
-|nMessageVariable|Name of a variable that contains the return value from the **RegisterWindowMessage** Windows function.|  
+|nMessageVariable|Name of a variable that contains the return value from the `RegisterWindowMessage` Windows function.|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)

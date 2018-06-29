@@ -32,19 +32,19 @@ typedef struct tagMSG {     // msg
  *hwnd*  
  Identifies the window whose window procedure receives the message.  
   
- `message`  
+ *message*  
  Specifies the message number.  
   
- `wParam`  
- Specifies additional information about the message. The exact meaning depends on the value of the **message** member.  
+ *wParam*  
+ Specifies additional information about the message. The exact meaning depends on the value of the `message` member.  
   
- `lParam`  
- Specifies additional information about the message. The exact meaning depends on the value of the **message** member.  
+ *lParam*  
+ Specifies additional information about the message. The exact meaning depends on the value of the `message` member.  
   
- `time`  
+ *time*  
  Specifies the time at which the message was posted.  
   
- `pt`  
+ *pt*  
  Specifies the cursor position, in screen coordinates, when the message was posted.  
   
 ## Requirements  
