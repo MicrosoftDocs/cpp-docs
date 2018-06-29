@@ -1,7 +1,7 @@
 ---
 title: "CDaoRelationInfo Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDaoRelationInfo"]
@@ -17,22 +17,23 @@ The `CDaoRelationInfo` structure contains information about a relation defined b
   
 ## Syntax  
   
-```  
+```cpp
 struct CDaoRelationInfo  
 {  
-    CDaoRelationInfo();
-*// Constructor  
-    CString m_strName;      // Primary  
-    CString m_strTable;     // Primary  
+    CDaoRelationInfo();                     // Constructor  
+    CString m_strName;                      // Primary  
+    CString m_strTable;                     // Primary  
     CString m_strForeignTable;              // Primary  
-    long m_lAttributes;     // Secondary  
+    long m_lAttributes;                     // Secondary  
     CDaoRelationFieldInfo* m_pFieldInfos;   // Secondary  
-    short m_nFields;        // Secondary *// Below the // Implementation comment: *// Destructor, not otherwise documented  
+    short m_nFields;                        // Secondary
+    // Below the // Implementation comment:
+    // Destructor, not otherwise documented  
 };  
 ```  
   
 #### Parameters  
- *m_strName*  
+*m_strName*  
  Uniquely names the relation object. For more information, see the topic "Name Property" in DAO Help.  
   
  *m_strTable*  
@@ -58,11 +59,11 @@ struct CDaoRelationInfo
   
 - **dbRelationDeleteCascade** Deletions will cascade.  
   
- *m_pFieldInfos*  
- A pointer to an array of [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) structures. The array contains one object for each field in the relation. The *m_nFields* data member gives a count of the array elements.  
+*m_pFieldInfos*  
+ A pointer to an array of [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) structures. The array contains one object for each field in the relation. The `m_nFields` data member gives a count of the array elements.  
   
- *m_nFields*  
- The number of `CDaoRelationFieldInfo` objects in the *m_pFieldInfos* data member.  
+*m_nFields*  
+ The number of `CDaoRelationFieldInfo` objects in the `m_pFieldInfos` data member.  
   
 ## Remarks  
  The references to Primary and Secondary above indicate how the information is returned by the [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) member function in class `CDaoDatabase`.  

@@ -66,11 +66,12 @@ class CSyncObject : public CObject
   
 ```  
 explicit CSyncObject(LPCTSTR pstrName);  
-virtual ~CSyncObject();```  
+virtual ~CSyncObject();
+```  
   
 ### Parameters  
- `pstrName`  
- The name of the object. If **NULL**, *pstrName* will be null.  
+ *pstrName*  
+ The name of the object. If NULL, *pstrName* will be null.  
   
 ##  <a name="lock"></a>  CSyncObject::Lock  
  Call this function to gain access to the resource controlled by the synchronization object.  
@@ -80,8 +81,8 @@ virtual BOOL Lock(DWORD dwTimeout = INFINITE);
 ```  
   
 ### Parameters  
- `dwTimeout`  
- Specifies the amount of time in milliseconds to wait for the synchronization object to be available (signaled). If **INFINITE**, `Lock` will wait until the object is signaled before returning.  
+ *dwTimeout*  
+ Specifies the amount of time in milliseconds to wait for the synchronization object to be available (signaled). If INFINITE, `Lock` will wait until the object is signaled before returning.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  
@@ -104,7 +105,7 @@ operator HANDLE() const;
 ```  
   
 ### Return Value  
- If successful, the handle of the synchronization object; otherwise, **NULL**.  
+ If successful, the handle of the synchronization object; otherwise, NULL.  
   
 ### Remarks  
  You can use the handle to call Windows APIs directly.  
@@ -119,17 +120,17 @@ virtual BOOL Unlock() = 0; virtual BOOL Unlock(
 ```  
   
 ### Parameters  
- `lCount`  
+ *lCount*  
  Not used by default implementation.  
   
- `lpPrevCount`  
+ *lpPrevCount*  
  Not used by default implementation.  
   
 ### Return Value  
- Default implementation always returns **TRUE**.  
+ Default implementation always returns TRUE.  
   
 ### Remarks  
- The default implementation of the declaration with two parameters always returns **TRUE**. This function is called to release access to the synchronization object owned by the calling thread. The second declaration is provided for synchronization objects such as semaphores that allow more than one access of a controlled resource.  
+ The default implementation of the declaration with two parameters always returns TRUE. This function is called to release access to the synchronization object owned by the calling thread. The second declaration is provided for synchronization objects such as semaphores that allow more than one access of a controlled resource.  
   
 ## See Also  
  [CObject Class](../../mfc/reference/cobject-class.md)   

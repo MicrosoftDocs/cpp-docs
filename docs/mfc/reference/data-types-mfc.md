@@ -19,9 +19,9 @@ This topic lists the data types most commonly used in the Microsoft Foundation C
   
  Data types unique to the Microsoft Foundation Class Library include the following:  
   
--   **POSITION** A value used to denote the position of an element in a collection; used by MFC collection classes.  
+-   POSITION A value used to denote the position of an element in a collection; used by MFC collection classes.  
   
--   **LPCRECT** A 32-bit pointer to a constant (nonmodifiable)                     `RECT` structure.  
+-   LPCRECT A 32-bit pointer to a constant (nonmodifiable)                     `RECT` structure.  
   
 ## See Also  
  [Class Overview](../../mfc/class-library-overview.md)   

@@ -86,7 +86,7 @@ CUserTool* CreateNewTool();
 ```  
   
 ### Return Value  
- A pointer to the newly created user tool, or `NULL` if the number of user tools has exceeded the maximum. The returned type is the same as the type that is passed to `CWinAppEx::EnableUserTools` as the `pToolRTC` parameter.  
+ A pointer to the newly created user tool, or NULL if the number of user tools has exceeded the maximum. The returned type is the same as the type that is passed to `CWinAppEx::EnableUserTools` as the *pToolRTC* parameter.  
   
 ### Remarks  
  This method finds the first available menu command ID in the range that is supplied in the call to [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) and assigns the user tool this ID.  
@@ -110,22 +110,22 @@ CUserToolsManager(
 ```  
   
 ### Parameters  
- [in] `uiCmdToolsDummy`  
+ [in] *uiCmdToolsDummy*  
  An unsigned integer that the framework uses as a placeholder for the command ID of the user tools menu.  
   
- [in] `uiCmdFirst`  
+ [in] *uiCmdFirst*  
  The command ID for the first user tool command.  
   
- [in] `uiCmdLast`  
+ [in] *uiCmdLast*  
  The command ID for the last user tool command.  
   
- [in] `pToolRTC`  
+ [in] *pToolRTC*  
  The class that [CUserToolsManager::CreateNewTool](#createnewtool) creates. By using this class, you can use a derived type of [CUserTool Class](../../mfc/reference/cusertool-class.md) instead of the default implementation.  
   
- [in] `uArgMenuID`  
+ [in] *uArgMenuID*  
  The menu resource ID of the arguments popup menu.  
   
- [in] `uInitDirMenuID`  
+ [in] *uInitDirMenuID*  
  The menu resource ID of the initial directory popup menu.  
   
 ### Remarks  
@@ -139,14 +139,14 @@ CUserTool* FindTool(UINT uiCmdId) const;
 ```  
   
 ### Parameters  
- [in] `uiCmdId`  
+ [in] *uiCmdId*  
  A menu command identifier.  
   
 ### Return Value  
- A pointer to a [CUserTool Class](../../mfc/reference/cusertool-class.md) or `CUserTool`-derived object if success; otherwise `NULL`.  
+ A pointer to a [CUserTool Class](../../mfc/reference/cusertool-class.md) or `CUserTool`-derived object if success; otherwise NULL.  
   
 ### Remarks  
- When `FindTool` is successful, the returned type is the same as the type of the `pToolRTC` parameter to [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).  
+ When `FindTool` is successful, the returned type is the same as the type of the *pToolRTC* parameter to [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).  
   
 ##  <a name="getargumentsmenuid"></a>  CUserToolsManager::GetArgumentsMenuID  
  Returns the resource ID that is associated with the **Arguments** menu on the **Tools** tab of the **Customize** dialog box.  
@@ -159,7 +159,7 @@ UINT GetArgumentsMenuID() const;
  The identifier of a menu resource.  
   
 ### Remarks  
- The `uArgMenuID` parameter of [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) specifies the ID of the resource.  
+ The *uArgMenuID* parameter of [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) specifies the ID of the resource.  
   
 ##  <a name="getdefext"></a>  CUserToolsManager::GetDefExt  
  Returns the default extension that the **File Open** dialog box ( [CFileDialog](../../mfc/reference/cfiledialog-class.md#cfiledialog)) uses in the **Command** field on the **Tools** tab of the **Customize** dialog box.  
@@ -192,7 +192,7 @@ UINT GetInitialDirMenuID() const;
  A menu resource identifier.  
   
 ### Remarks  
- The returned ID is specified in the `uInitDirMenuID` parameter of [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).  
+ The returned ID is specified in the *uInitDirMenuID* parameter of [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).  
   
 ##  <a name="getmaxtools"></a>  CUserToolsManager::GetMaxTools  
  Returns the maximum number of user tools that can be allocated in the application.  
@@ -205,7 +205,7 @@ int GetMaxTools() const;
  The maximum number of user tools that can be allocated.  
   
 ### Remarks  
- Call this method to retrieve the maximum number of tools that can be allocated in the application. This number is the number of IDs in the range from the `uiCmdFirst` through the `uiCmdLast` parameters that you pass to [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).  
+ Call this method to retrieve the maximum number of tools that can be allocated in the application. This number is the number of IDs in the range from the *uiCmdFirst* through the *uiCmdLast* parameters that you pass to [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).  
   
 ##  <a name="gettoolsentrycmd"></a>  CUserToolsManager::GetToolsEntryCmd  
  Returns the command ID of the menu item placeholder for user tools.  
@@ -218,7 +218,7 @@ UINT GetToolsEntryCmd() const;
  The command ID of the placeholder.  
   
 ### Remarks  
- To enable user tools, you call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools). The `uiCmdToolsDummy` parameter specifies the command ID of the tools entry command. This method returns the tools entry command ID. Wherever that ID is used in a menu, it is replaced by the list of user tools when the menu appears.  
+ To enable user tools, you call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools). The *uiCmdToolsDummy* parameter specifies the command ID of the tools entry command. This method returns the tools entry command ID. Wherever that ID is used in a menu, it is replaced by the list of user tools when the menu appears.  
   
 ##  <a name="getusertools"></a>  CUserToolsManager::GetUserTools  
  Returns a reference to the list of user tools.  
@@ -231,7 +231,7 @@ const CObList& GetUserTools() const;
  A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that contains a list of user tools.  
   
 ### Remarks  
- Call this method to retrieve a list of user tools that the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object maintains. Each user tool is represented by an object of type [CUserTool Class](../../mfc/reference/cusertool-class.md) or a type derived from `CUserTool`. The type is specified by the `pToolRTC` parameter when you call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) to enable user tools.  
+ Call this method to retrieve a list of user tools that the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object maintains. Each user tool is represented by an object of type [CUserTool Class](../../mfc/reference/cusertool-class.md) or a type derived from `CUserTool`. The type is specified by the *pToolRTC* parameter when you call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) to enable user tools.  
   
 ##  <a name="invoketool"></a>  CUserToolsManager::InvokeTool  
  Executes an application associated with the user tool that has a specified command ID.  
@@ -241,14 +241,14 @@ BOOL InvokeTool(UINT uiCmdId);
 ```  
   
 ### Parameters  
- [in] `uiCmdId`  
+ [in] *uiCmdId*  
  The menu command ID associated with the user tool.  
   
 ### Return Value  
  Nonzero if the command associated with user tool was executed successfully; otherwise 0.  
   
 ### Remarks  
- Call this method to execute an application associated with the user tool that has the command ID specified by `uiCmdId`.  
+ Call this method to execute an application associated with the user tool that has the command ID specified by *uiCmdId*.  
   
 ##  <a name="isusertoolcmd"></a>  CUserToolsManager::IsUserToolCmd  
  Determines whether a command ID is associated with a user tool.  
@@ -258,7 +258,7 @@ BOOL IsUserToolCmd(UINT uiCmdId) const;
 ```  
   
 ### Parameters  
- [in] `uiCmdId`  
+ [in] *uiCmdId*  
  A command ID of the menu item.  
   
 ### Return Value  
@@ -275,7 +275,7 @@ BOOL LoadState(LPCTSTR lpszProfileName=NULL);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The path of the Windows registry key.  
   
 ### Return Value  
@@ -294,14 +294,14 @@ BOOL MoveToolDown(CUserTool* pTool);
 ```  
   
 ### Parameters  
- [in] `pTool`  
+ [in] *pTool*  
  Specifies the user tool to move.  
   
 ### Return Value  
  Nonzero if the user tool was moved down successfully; otherwise 0.  
   
 ### Remarks  
- The method fails if the tool that the `pTool` specifies is not in the internal list or if the tool is last in the list.  
+ The method fails if the tool that the *pTool* specifies is not in the internal list or if the tool is last in the list.  
   
 ##  <a name="movetoolup"></a>  CUserToolsManager::MoveToolUp  
  Moves the specified user tool up in the list of user tools.  
@@ -311,14 +311,14 @@ BOOL MoveToolUp(CUserTool* pTool);
 ```  
   
 ### Parameters  
- [in] `pTool`  
+ [in] *pTool*  
  Specifies the user tool to move.  
   
 ### Return Value  
  Nonzero if the user tool was moved up successfully; otherwise 0.  
   
 ### Remarks  
- The method fails if the tool that the `pTool` parameter specifies is not in the internal list or if the tool is the first tool item in the list.  
+ The method fails if the tool that the *pTool* parameter specifies is not in the internal list or if the tool is the first tool item in the list.  
   
 ##  <a name="removetool"></a>  CUserToolsManager::RemoveTool  
  Removes the specified user tool from the application.  
@@ -328,14 +328,14 @@ BOOL RemoveTool(CUserTool* pTool);
 ```  
   
 ### Parameters  
- [in, out] `pTool`  
+ [in, out] *pTool*  
  A pointer to a user tool to be removed.  
   
 ### Return Value  
- `TRUE` if the tool is successfully removed. Otherwise, `FALSE`.  
+ TRUE if the tool is successfully removed. Otherwise, FALSE.  
   
 ### Remarks  
- If the tool is successfully removed, this method deletes `pTool`.  
+ If the tool is successfully removed, this method deletes *pTool*.  
   
 ##  <a name="savestate"></a>  CUserToolsManager::SaveState  
  Stores information about user tools in the Windows registry.  
@@ -345,7 +345,7 @@ BOOL SaveState(LPCTSTR lpszProfileName=NULL);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A path to the Windows registry key.  
   
 ### Return Value  
@@ -364,7 +364,7 @@ void SetDefExt(const CString& strDefExt);
 ```  
   
 ### Parameters  
- [in] `strDefExt`  
+ [in] *strDefExt*  
  A text string that contains the default file name extension.  
   
 ### Remarks  
@@ -378,7 +378,7 @@ void SetFilter(const CString& strFilter);
 ```  
   
 ### Parameters  
- [in] `strFilter`  
+ [in] *strFilter*  
  Specifies the filter.  
   
 ## See Also  

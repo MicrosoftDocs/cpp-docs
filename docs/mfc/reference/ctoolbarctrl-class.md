@@ -132,7 +132,7 @@ class CToolBarCtrl : public CWnd
   
 1.  Construct the `CToolBarCtrl` object.  
   
-2.  Call [Create](#create) to create the Windows toolbar common control and attach it to the `CToolBarCtrl` object. Indicate the style of toolbar by using styles, such as **TBSTYLE_TRANSPARENT** for a transparent toolbar or **TBSTYLE_DROPDOWN** for a toolbar that supports drop-down style buttons.  
+2.  Call [Create](#create) to create the Windows toolbar common control and attach it to the `CToolBarCtrl` object. Indicate the style of toolbar by using styles, such as TBSTYLE_TRANSPARENT for a transparent toolbar or TBSTYLE_DROPDOWN for a toolbar that supports drop-down style buttons.  
   
 3.  Identify how you want the buttons on the toolbar displayed:  
   
@@ -144,7 +144,7 @@ class CToolBarCtrl : public CWnd
   
 4.  Add button structures to the toolbar by calling [AddButtons](#addbuttons).  
   
-5.  If you want tool tips for a toolbar button in an owner window that is not a `CFrameWnd`, you need to handle the **TTN_NEEDTEXT** messages in the toolbar's owner window as described in [Handling Tool Tip Notifications](../../mfc/handling-tool-tip-notifications.md). If the parent window of the toolbar is derived from `CFrameWnd`, tool tips are displayed without any extra effort from you because `CFrameWnd` provides a default handler.  
+5.  If you want tool tips for a toolbar button in an owner window that is not a `CFrameWnd`, you need to handle the TTN_NEEDTEXT messages in the toolbar's owner window as described in [Handling Tool Tip Notifications](../../mfc/handling-tool-tip-notifications.md). If the parent window of the toolbar is derived from `CFrameWnd`, tool tips are displayed without any extra effort from you because `CFrameWnd` provides a default handler.  
   
 6.  If you want your user to be able to customize the toolbar, handle customization notification messages in the owner window as described in [Handling Customization Notifications](../../mfc/handling-customization-notifications.md).  
   
@@ -153,7 +153,7 @@ class CToolBarCtrl : public CWnd
 ## Support for Internet Explorer Version 4.0 and Later  
  To support functionality introduced in Internet Explorer, version 4.0 and later, MFC provides image list support and transparent and flat styles for toolbar controls.  
   
- A transparent toolbar allows the client under the toolbar to show through. To create a transparent toolbar, use both **TBSTYLE_FLAT** and **TBSTYLE_TRANSPARENT** styles. Transparent toolbars feature hot tracking; that is, when the mouse pointer moves over a hot button on the toolbar, the button's appearance changes. Toolbars created with just the **TBSTYLE_FLAT** style will contain buttons that are not transparent.  
+ A transparent toolbar allows the client under the toolbar to show through. To create a transparent toolbar, use both TBSTYLE_FLAT and TBSTYLE_TRANSPARENT styles. Transparent toolbars feature hot tracking; that is, when the mouse pointer moves over a hot button on the toolbar, the button's appearance changes. Toolbars created with just the TBSTYLE_FLAT style will contain buttons that are not transparent.  
   
  Image list support allows a control greater flexibility for default behavior, hot images, and disabled images. Use [GetImageList](#getimagelist), [GetHotImageList](#gethotimagelist), and [GetDisabledImageList](#getdisabledimagelist) with the transparent toolbar to manipulate the image according to its state:  
   
@@ -186,20 +186,20 @@ int AddBitmap(
 ```  
   
 ### Parameters  
- `nNumButtons`  
+ *nNumButtons*  
  Number of button images in the bitmap.  
   
- `nBitmapID`  
+ *nBitmapID*  
  Resource identifier of the bitmap that contains the button image or images to add.  
   
- `pBitmap`  
+ *pBitmap*  
  Pointer to the `CBitmap` object that contains the button image or images to add.  
   
 ### Return Value  
  Zero-based index of the first new image if successful; otherwise - 1.  
   
 ### Remarks  
- You can use the Windows API [CreateMappedBitmap](http://msdn.microsoft.com/library/windows/desktop/bb787467) to map colors before adding the bitmap to the toolbar. If you pass a pointer to a **CBitMap** object, you must ensure that the bitmap is not destroyed until after the toolbar is destroyed.  
+ You can use the Windows API [CreateMappedBitmap](http://msdn.microsoft.com/library/windows/desktop/bb787467) to map colors before adding the bitmap to the toolbar. If you pass a pointer to a `CBitMap` object, you must ensure that the bitmap is not destroyed until after the toolbar is destroyed.  
   
 ##  <a name="addbuttons"></a>  CToolBarCtrl::AddButtons  
  Adds one or more buttons to a toolbar control.  
@@ -211,17 +211,17 @@ BOOL AddButtons(
 ```  
   
 ### Parameters  
- `nNumButtons`  
+ *nNumButtons*  
  Number of buttons to add.  
   
- `lpButtons`  
- Address of an array of `TBBUTTON` structures that contains information about the buttons to add. There must be the same number of elements in the array as buttons specified by `nNumButtons`.  
+ *lpButtons*  
+ Address of an array of `TBBUTTON` structures that contains information about the buttons to add. There must be the same number of elements in the array as buttons specified by *nNumButtons*.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- The `lpButtons` pointer points to an array of `TBBUTTON` structures. Each `TBBUTTON` structure associates the button being added with the button's style, image and/or string, command ID, state, and user-defined data:  
+ The *lpButtons* pointer points to an array of `TBBUTTON` structures. Each `TBBUTTON` structure associates the button being added with the button's style, image and/or string, command ID, state, and user-defined data:  
   
  `typedef struct _TBBUTTON {`  
   
@@ -241,44 +241,44 @@ BOOL AddButtons(
   
  The members are as follows:  
   
- **iBitmap**  
+ `iBitmap`  
  Zero-based index of button image, -1 if no image for this button.  
   
- **idCommand**  
- Command identifier associated with the button. This identifier is sent in a **WM_COMMAND** message when the button is chosen. If the **fsStyle** member has the `TBSTYLE_SEP` value, this member must be zero.  
+ `idCommand`  
+ Command identifier associated with the button. This identifier is sent in a WM_COMMAND message when the button is chosen. If the `fsStyle` member has the TBSTYLE_SEP value, this member must be zero.  
   
- **fsState**  
+ `fsState`  
  Button state flags. It can be a combination of the values listed below:  
   
-- `TBSTATE_CHECKED` The button has the **TBSTYLE_CHECKED** style and is being pressed.  
+- TBSTATE_CHECKED The button has the TBSTYLE_CHECKED style and is being pressed.  
   
-- `TBSTATE_ENABLED` The button accepts user input. A button that does not have this state does not accept user input and is grayed.  
+- TBSTATE_ENABLED The button accepts user input. A button that does not have this state does not accept user input and is grayed.  
   
-- `TBSTATE_HIDDEN` The button is not visible and cannot receive user input.  
+- TBSTATE_HIDDEN The button is not visible and cannot receive user input.  
   
-- `TBSTATE_INDETERMINATE` The button is grayed.  
+- TBSTATE_INDETERMINATE The button is grayed.  
   
-- `TBSTATE_PRESSED` The button is being pressed.  
+- TBSTATE_PRESSED The button is being pressed.  
   
-- `TBSTATE_WRAP` A line break follows the button. The button must also have the `TBSTATE_ENABLED` state.  
+- TBSTATE_WRAP A line break follows the button. The button must also have the TBSTATE_ENABLED state.  
   
- **fsStyle**  
+ `fsStyle`  
  Button style. It can be a combination of the values listed below:  
   
-- `TBSTYLE_BUTTON` Creates a standard push button.  
+- TBSTYLE_BUTTON Creates a standard push button.  
   
-- `TBSTYLE_CHECK` Creates a button that toggles between the pressed and unpressed states each time the user clicks it. The button has a different background color when it is in the pressed state.  
+- TBSTYLE_CHECK Creates a button that toggles between the pressed and unpressed states each time the user clicks it. The button has a different background color when it is in the pressed state.  
   
-- `TBSTYLE_CHECKGROUP` Creates a check button that stays pressed until another button in the group is pressed.  
+- TBSTYLE_CHECKGROUP Creates a check button that stays pressed until another button in the group is pressed.  
   
-- `TBSTYLE_GROUP` Creates a button that stays pressed until another button in the group is pressed.  
+- TBSTYLE_GROUP Creates a button that stays pressed until another button in the group is pressed.  
   
-- `TBSTYLE_SEP` Creates a separator, providing a small gap between button groups. A button that has this style does not receive user input.  
+- TBSTYLE_SEP Creates a separator, providing a small gap between button groups. A button that has this style does not receive user input.  
   
  `dwData`  
  User-defined data.  
   
- **iString**  
+ `iString`  
  Zero-based index of the string to use as the button's label, -1 if there is no string for this button.  
   
  The image and/or string whose index you provide must have previously been added to the toolbar control's list using [AddBitmap](#addbitmap), [AddString](#addstring), and/or [AddStrings](#addstrings).  
@@ -345,11 +345,11 @@ BOOL ChangeBitmap(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `idButton`|Command identifier of the button that is to receive a new bitmap.|  
-|[in] `iBitmap`|Zero-based index of an image in the current toolbar control's image list.|  
+|[in] *idButton*|Command identifier of the button that is to receive a new bitmap.|  
+|[in] *iBitmap*|Zero-based index of an image in the current toolbar control's image list.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  If this method is successful, the system displays the specified image in the specified button.  
@@ -371,11 +371,11 @@ BOOL CheckButton(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button to check or clear.  
   
  *bCheck*  
- **TRUE** to check the button, **FALSE** to clear it.  
+ TRUE to check the button, FALSE to clear it.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -391,7 +391,7 @@ UINT CommandToIndex(UINT nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command ID whose button index you want to find.  
   
 ### Return Value  
@@ -411,29 +411,29 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
- Specifies the toolbar control's style. Toolbars must always have the **WS_CHILD** style. In addition, you can specify any combination of toolbar styles and window styles as described under **Remarks**.  
+ *dwStyle*  
+ Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described under **Remarks**.  
   
- `rect`  
+ *rect*  
  Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
- `pParentWnd`  
- Specifies the toolbar control's parent window. It must not be **NULL**.  
+ *pParentWnd*  
+ Specifies the toolbar control's parent window. It must not be NULL.  
   
- `nID`  
+ *nID*  
  Specifies the toolbar control's ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- You construct a `CToolBarCtrl` in two steps. First, call the constructor, and then call **Create**, which creates the toolbar control and attaches it to the `CToolBarCtrl` object. Apply the following window styles to a toolbar control.  
+ You construct a `CToolBarCtrl` in two steps. First, call the constructor, and then call `Create`, which creates the toolbar control and attaches it to the `CToolBarCtrl` object. Apply the following window styles to a toolbar control.  
   
-- **WS_CHILD** Always  
+- WS_CHILD Always  
   
-- **WS_VISIBLE** Usually  
+- WS_VISIBLE Usually  
   
-- **WS_DISABLED** Rarely  
+- WS_DISABLED Rarely  
   
  See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a description of window styles.  
   
@@ -441,9 +441,9 @@ virtual BOOL Create(
   
  Apply a combination of toolbar styles to either the control or the buttons themselves. The styles are described in the topic [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK.  
   
- To use extended toolbar styles, call [SetExtendedStyle](#setextendedstyle) after you call **Create**. To create a toolbar with extended window styles, call [CToolBarCtrl::CreateEx](#createex) instead of **Create**.  
+ To use extended toolbar styles, call [SetExtendedStyle](#setextendedstyle) after you call `Create`. To create a toolbar with extended window styles, call [CToolBarCtrl::CreateEx](#createex) instead of `Create`.  
   
- The toolbar control automatically sets the size and position of the toolbar window. The height is based on the height of the buttons in the toolbar. The width is the same as the width of the parent window's client area. The `CCS_TOP` and `CCS_BOTTOM` styles determine whether the toolbar is positioned along the top or bottom of the client area. By default, a toolbar has the `CCS_TOP` style.  
+ The toolbar control automatically sets the size and position of the toolbar window. The height is based on the height of the buttons in the toolbar. The width is the same as the width of the parent window's client area. The CCS_TOP and CCS_BOTTOM styles determine whether the toolbar is positioned along the top or bottom of the client area. By default, a toolbar has the CCS_TOP style.  
   
 ##  <a name="createex"></a>  CToolBarCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CToolBarCtrl` object.  
@@ -458,26 +458,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
- Specifies the toolbar control's style. Toolbars must always have the **WS_CHILD** style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).  
+ *dwStyle*  
+ Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**. **CreateEx** creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TBSTYLE_EX_DRAWDDARROWS**. For more information, see the styles described in [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the Windows SDK.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**. `CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as TBSTYLE_EX_DRAWDDARROWS. For more information, see the styles described in [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the Windows SDK.  
   
 ##  <a name="ctoolbarctrl"></a>  CToolBarCtrl::CToolBarCtrl  
  Constructs a `CToolBarCtrl` object.  
@@ -497,7 +497,7 @@ void Customize();
 ```  
   
 ### Remarks  
- This dialog box allows the user to customize the toolbar by adding and deleting buttons. To support customization, your toolbar's parent window must handle the customization notification messages as described in [Handling Customization Notifications](../../mfc/handling-customization-notifications.md). Your toolbar must also have been created with the `CCS_ADJUSTABLE` style, as described in [CToolBarCtrl::Create](#create).  
+ This dialog box allows the user to customize the toolbar by adding and deleting buttons. To support customization, your toolbar's parent window must handle the customization notification messages as described in [Handling Customization Notifications](../../mfc/handling-customization-notifications.md). Your toolbar must also have been created with the CCS_ADJUSTABLE style, as described in [CToolBarCtrl::Create](#create).  
   
  For more information, see Knowledge Base article Q241850 : PRB: Call to CToolBarCtrl::Customize Does Not Keep the Customize Dialog Visible.  
   
@@ -509,7 +509,7 @@ BOOL DeleteButton(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of the button to delete.  
   
 ### Return Value  
@@ -527,11 +527,11 @@ BOOL EnableButton(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button to enable or disable.  
   
- `bEnable`  
- **TRUE** to enable the button; **FALSE** to disable the button.  
+ *bEnable*  
+ TRUE to enable the button; FALSE to disable the button.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -560,7 +560,7 @@ int GetBitmap(int nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button whose bitmap index is to be retrieved.  
   
 ### Return Value  
@@ -577,7 +577,7 @@ UINT GetBitmapFlags() const;
 ```  
   
 ### Return Value  
- A **UINT** that has the **TBBF_LARGE** flag set if the display can support large toolbar bitmaps, clear otherwise.  
+ A UINT that has the TBBF_LARGE flag set if the display can support large toolbar bitmaps, clear otherwise.  
   
 ### Remarks  
  You should call it after creating the toolbar but before adding bitmaps to the toolbar. The return value indicates whether the display supports large bitmaps or not. If the display supports large bitmaps and if you choose to use them, call [SetBitmapSize](#setbitmapsize) and [SetButtonSize](#setbuttonsize) before adding your large bitmap using [AddBitmap](#addbitmap).  
@@ -592,10 +592,10 @@ BOOL GetButton(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of the button for which to retrieve information.  
   
- `lpButton`  
+ *lpButton*  
  Address of the `TBBUTTON` structure that is to receive a copy of the button information. See [CToolBarCtrl::AddButtons](#addbuttons) for information about the `TBBUTTON` structure.  
   
 ### Return Value  
@@ -621,10 +621,10 @@ int GetButtonInfo(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The button identifier.  
   
- `ptbbi`  
+ *ptbbi*  
  A pointer to a [TBBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb760478) structure that receives the button information.  
   
 ### Return Value  
@@ -641,7 +641,7 @@ DWORD GetButtonSize() const;
 ```  
   
 ### Return Value  
- A `DWORD` value that contains the width and height values in the LOWORD and HIWORD, respectively.  
+ A DWORD value that contains the width and height values in the LOWORD and HIWORD, respectively.  
   
 ##  <a name="getbuttontext"></a>  CToolBarCtrl::GetButtonText  
  Retrieves the display text of a specified button on the current toolbar control.  
@@ -654,7 +654,7 @@ CString GetButtonText(int idButton) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `idButton`|The identifier for the button whose display text is retrieved.|  
+|[in] *idButton*|The identifier for the button whose display text is retrieved.|  
   
 ### Return Value  
  A [CString](../../atl-mfc-shared/using-cstring.md) that contains the display text of the specified button.  
@@ -673,10 +673,10 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] `lpColorScheme`|Pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure that receives the color scheme information. When this method returns, the structure describes the highlight color and shadow color of the toolbar control.|  
+|[out] *lpColorScheme*|Pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure that receives the color scheme information. When this method returns, the structure describes the highlight color and shadow color of the toolbar control.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [TB_GETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787327) message, which is described in the Windows SDK.  
@@ -689,7 +689,7 @@ CImageList* GetDisabledImageList() const;
 ```  
   
 ### Return Value  
- A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or **NULL** if no disabled image list is set.  
+ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or NULL if no disabled image list is set.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787329), as described in the Windows SDK. The MFC implementation of `GetDisabledImageList` uses a `CImageList` object containing the toolbar control's button images, rather than a handle to an image list.  
@@ -702,11 +702,11 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
 ```  
   
 ### Parameters  
- `ppDropTarget`  
- A pointer to an [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface pointer. If an error occurs, a **NULL** pointer is placed in this address.  
+ *ppDropTarget*  
+ A pointer to an [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface pointer. If an error occurs, a NULL pointer is placed in this address.  
   
 ### Return Value  
- Returns an `HRESULT` value indicating success or failure of the operation.  
+ Returns an HRESULT value indicating success or failure of the operation.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787343), as described in the Windows SDK.  
@@ -719,7 +719,7 @@ DWORD GetExtendedStyle() const;
 ```  
   
 ### Return Value  
- A `DWORD` that represents the extended styles currently in use for the toolbar control. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the Windows SDK.  
+ A DWORD that represents the extended styles currently in use for the toolbar control. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the Windows SDK.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787331), as described in the Windows SDK.  
@@ -732,7 +732,7 @@ CImageList* GetHotImageList() const;
 ```  
   
 ### Return Value  
- A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or **NULL** if no disabled image list is set.  
+ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or NULL if no disabled image list is set.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETHOTIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787334), as described in the Windows SDK. A hot button appears highlighted when the mouse pointer is above it.  
@@ -758,7 +758,7 @@ CImageList* GetImageList() const;
 ```  
   
 ### Return Value  
- A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or **NULL** if no image list is set.  
+ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or NULL if no image list is set.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787337), as described in the Windows SDK.  
@@ -771,7 +771,7 @@ void GetInsertMark(TBINSERTMARK* ptbim) const;
 ```  
   
 ### Parameters  
- `ptbim`  
+ *ptbim*  
  A pointer to a [TBINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb760480) structure that receives the insertion mark.  
   
 ### Remarks  
@@ -785,7 +785,7 @@ COLORREF GetInsertMarkColor() const;
 ```  
   
 ### Return Value  
- A **COLORREF** value that contains the current insertion mark color.  
+ A COLORREF value that contains the current insertion mark color.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787339), as described in the Windows SDK.  
@@ -800,17 +800,17 @@ BOOL GetItemRect(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of the button for which to retrieve information.  
   
- `lpRect`  
+ *lpRect*  
  Address of a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This function does not retrieve the bounding rectangle for buttons whose state is set to `TBSTATE_HIDDEN`.  
+ This function does not retrieve the bounding rectangle for buttons whose state is set to TBSTATE_HIDDEN.  
   
 ##  <a name="getmaxsize"></a>  CToolBarCtrl::GetMaxSize  
  Retrieves the total size of all of the visible buttons and separators in the toolbar.  
@@ -820,7 +820,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ```  
   
 ### Parameters  
- `pSize`  
+ *pSize*  
  A pointer to a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the size of the items.  
   
 ### Return Value  
@@ -847,7 +847,7 @@ void GetMetrics(LPTBMETRICS ptbm) const;
 ```  
   
 ### Parameters  
- `ptbm`  
+ *ptbm*  
  A pointer to the [TBMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb760482) structure of the `CToolBarCtrl` object.  
   
 ### Remarks  
@@ -866,11 +866,11 @@ BOOL GetPadding(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] `pnHorzPadding`|An integer that receives the horizontal padding of the toolbar control, in pixels.|  
-|[out] `pnVertPadding`|An integer that receives the vertical padding of the toolbar control, in pixels.|  
+|[out] *pnHorzPadding*|An integer that receives the horizontal padding of the toolbar control, in pixels.|  
+|[out] *pnVertPadding*|An integer that receives the vertical padding of the toolbar control, in pixels.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [TB_GETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787344) message, which is described in the Windows SDK.  
@@ -883,7 +883,7 @@ CImageList* GetPressedImageList();
 ```  
   
 ### Return Value  
- Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the image list for the current control, or `NULL` if no such image list is set.  
+ Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the image list for the current control, or NULL if no such image list is set.  
   
 ### Remarks  
  This method sends the [TB_GETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787345) message, which is described in the Windows SDK.  
@@ -898,14 +898,14 @@ BOOL GetRect(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The button identifier.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.  
   
 ### Return Value  
- **TRUE** if successful; otherwise **FALSE**.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb787346), as described in the Windows SDK.  
@@ -921,7 +921,7 @@ int GetRows() const;
  Number of rows of buttons currently displayed on the toolbar.  
   
 ### Remarks  
- Note that the number of rows will always be one unless the toolbar was created with the `TBSTYLE_WRAPABLE` style.  
+ Note that the number of rows will always be one unless the toolbar was created with the TBSTYLE_WRAPABLE style.  
   
 ##  <a name="getstate"></a>  CToolBarCtrl::GetState  
  Retrieves information about the state of the specified button in a toolbar control, such as whether it is enabled, pressed, or checked.  
@@ -931,14 +931,14 @@ int GetState(int nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button for which to retrieve information.  
   
 ### Return Value  
  The button state information if successful or - 1 otherwise. The button state information can be a combination of the values listed in [CToolBarCtrl::AddButtons](#addbuttons).  
   
 ### Remarks  
- This function is especially handy if you want to retrieve more than one of the button states. To just retrieve one state, use one of the following member functions: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden](#isbuttonhidden), or [IsButtonIndeterminate](#isbuttonindeterminate). However, the `GetState` member function is the only way to detect the `TBSTATE_WRAP` button state.  
+ This function is especially handy if you want to retrieve more than one of the button states. To just retrieve one state, use one of the following member functions: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden](#isbuttonhidden), or [IsButtonIndeterminate](#isbuttonindeterminate). However, the `GetState` member function is the only way to detect the TBSTATE_WRAP button state.  
   
 ##  <a name="getstring"></a>  CToolBarCtrl::GetString  
  Retrieves a toolbar string.  
@@ -964,7 +964,7 @@ int GetString(
  *cchMaxLen*  
  Length of the buffer in bytes.  
   
- `str`  
+ *str*  
  The string.  
   
 ### Return Value  
@@ -981,7 +981,7 @@ DWORD GetStyle() const;
 ```  
   
 ### Return Value  
- A `DWORD` containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the Windows SDK.  
+ A DWORD containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the Windows SDK.  
   
 ##  <a name="gettooltips"></a>  CToolBarCtrl::GetToolTips  
  Retrieves the handle of the tool tip control, if any, associated with the toolbar control.  
@@ -991,7 +991,7 @@ CToolTipCtrl* GetToolTips() const;
 ```  
   
 ### Return Value  
- A pointer to the [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object associated with this toolbar or **NULL** if the toolbar has no associated tool tip control.  
+ A pointer to the [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object associated with this toolbar or NULL if the toolbar has no associated tool tip control.  
   
 ### Remarks  
  Since the toolbar control normally creates and maintains its own tool tip control, most programs don't need to call this function.  
@@ -1004,8 +1004,8 @@ int HitTest(LPPOINT ppt) const;
 ```  
   
 ### Parameters  
- `ppt`  
- A pointer to a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the x-coordinate of the hit test in the **x** member and the y-coordinate of the hit test in the **y** member. The coordinates are relative to the toolbar's client area.  
+ *ppt*  
+ A pointer to a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.  
   
 ### Return Value  
  An integer value indicating the location of a point on a toolbar. If the value is zero or a positive value, this return value is the zero-based index of the nonseparator item in which the point lies.  
@@ -1025,11 +1025,11 @@ BOOL HideButton(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button to hide or show.  
   
- `bHide`  
- **TRUE** to hide the button, **FALSE** to show it.  
+ *bHide*  
+ TRUE to hide the button, FALSE to show it.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -1047,11 +1047,11 @@ BOOL Indeterminate(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button whose indeterminate state is to be set or cleared.  
   
  *bIndeterminate*  
- **TRUE** to set the indeterminate state for the specified button, **FALSE** to clear it.  
+ TRUE to set the indeterminate state for the specified button, FALSE to clear it.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -1069,10 +1069,10 @@ BOOL InsertButton(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of a button. This function inserts the new button to the left of this button.  
   
- `lpButton`  
+ *lpButton*  
  Address of a `TBBUTTON` structure containing information about the button to insert. See [CToolBarCtrl::AddButtons](#addbuttons) for a description of the `TBBUTTON` structure.  
   
 ### Return Value  
@@ -1091,10 +1091,10 @@ BOOL InsertMarkHitTest(
 ```  
   
 ### Parameters  
- `ppt`  
+ *ppt*  
  A pointer to a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the hit test coordinates, relative to the client area of the toolbar.  
   
- `ptbim`  
+ *ptbim*  
  A pointer to a [TBINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb760480) structure that receives the insertion mark information.  
   
 ### Return Value  
@@ -1111,7 +1111,7 @@ BOOL IsButtonChecked(int nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button in the toolbar.  
   
 ### Return Value  
@@ -1128,7 +1128,7 @@ BOOL IsButtonEnabled(int nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button in the toolbar.  
   
 ### Return Value  
@@ -1145,7 +1145,7 @@ BOOL IsButtonHidden(int nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button in the toolbar.  
   
 ### Return Value  
@@ -1162,7 +1162,7 @@ BOOL IsButtonHighlighted(int nID) const;
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The command ID for the toolbar button.  
   
 ### Return Value  
@@ -1176,7 +1176,7 @@ BOOL IsButtonIndeterminate(int nID) const;
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Command identifier of the button in the toolbar.  
   
 ### Return Value  
@@ -1193,7 +1193,7 @@ BOOL IsButtonPressed(int nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button in the toolbar.  
   
 ### Return Value  
@@ -1213,7 +1213,7 @@ void LoadImages(
   
 ### Parameters  
  *iBitmapID*  
- ID of a bitmap that contains the images to be loaded. To specify your own bitmap resource, set this parameter to the ID of a bitmap resource and set `hInst` to **NULL**. Your bitmap resource will be added to the image list as a single image. You can add standard, system-defined bitmaps by setting *hinst* to **HINST_COMMCTRL** and setting this parameter to one of the following IDs:  
+ ID of a bitmap that contains the images to be loaded. To specify your own bitmap resource, set this parameter to the ID of a bitmap resource and set *hInst* to NULL. Your bitmap resource will be added to the image list as a single image. You can add standard, system-defined bitmaps by setting *hinst* to HINST_COMMCTRL and setting this parameter to one of the following IDs:  
   
 |Bitmap ID|Description|  
 |---------------|-----------------|  
@@ -1225,7 +1225,7 @@ void LoadImages(
 |IDB_VIEW_SMALL_COLOR|View bitmaps in small size|  
   
  *hinst*  
- Program instance handle to the calling application. This parameter can be **HINST_COMMCTRL** to load a standard image list.  
+ Program instance handle to the calling application. This parameter can be HINST_COMMCTRL to load a standard image list.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_LOADIMAGES](http://msdn.microsoft.com/library/windows/desktop/bb787381), as described in the Windows SDK.  
@@ -1240,11 +1240,11 @@ BOOL MapAccelerator(
 ```  
   
 ### Parameters  
- `chAccel`  
+ *chAccel*  
  Accelerator character to be mapped. This character is the same character that is underlined in the button's text.  
   
  *pIDBtn*  
- A pointer to a **UINT** that receives the command identifier of the button that corresponds to the accelerator specified in `chAccel`.  
+ A pointer to a UINT that receives the command identifier of the button that corresponds to the accelerator specified in *chAccel*.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -1262,11 +1262,11 @@ BOOL MarkButton(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The button identifier.  
   
- `fHighlight`  
- Specifies the highlight state to be set. By default, **TRUE**. If set to **FALSE**, the button is set to its default state.  
+ *fHighlight*  
+ Specifies the highlight state to be set. By default, TRUE. If set to FALSE, the button is set to its default state.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -1304,14 +1304,14 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Command identifier of the button to press or release.  
   
- [in] `bPress`  
- `true` to press the specified button; `false` to release the specified button. The default value is `true`.  
+ [in] *bPress*  
+ TRUE to press the specified button; FALSE to release the specified button. The default value is TRUE.  
   
 ### Return Value  
- `true` if the method is successful; otherwise, `false`.  
+ TRUE if the method is successful; otherwise, FALSE.  
   
 ### Remarks  
  If you want to change more than one button state, consider calling [SetState](#setstate) instead.  
@@ -1329,10 +1329,10 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pReplaceBitmap`|Pointer to a [TBREPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb760484) structure that describes the bitmap to be replaced and the new bitmap.|  
+|[in] *pReplaceBitmap*|Pointer to a [TBREPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb760484) structure that describes the bitmap to be replaced and the new bitmap.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [TB_REPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787391) message, which is described in the Windows SDK.  
@@ -1353,21 +1353,21 @@ void RestoreState(
 ```  
   
 ### Parameters  
- `hKeyRoot`  
+ *hKeyRoot*  
  Identifies a currently open key in the registry or any of the following predefined reserved handle values:  
   
-- **HKEY_CLASSES_ROOT**  
+- HKEY_CLASSES_ROOT  
   
-- **HKEY_CURRENT_USER**  
+- HKEY_CURRENT_USER  
   
-- **HKEY_LOCAL_MACHINE**  
+- HKEY_LOCAL_MACHINE  
   
-- **HKEY_USERS**  
+- HKEY_USERS  
   
- `lpszSubKey`  
- Points to a null-terminated string containing the name of the subkey with which a value is associated. This parameter can be null or a pointer to an empty string. If the parameter is **NULL**, the value will be added to the key identified by the `hKeyRoot` parameter.  
+ *lpszSubKey*  
+ Points to a null-terminated string containing the name of the subkey with which a value is associated. This parameter can be null or a pointer to an empty string. If the parameter is NULL, the value will be added to the key identified by the *hKeyRoot* parameter.  
   
- `lpszValueName`  
+ *lpszValueName*  
  Points to a string containing the name of the value to retrieve. If a value with this name is not already present in the key, the function adds it to the key.  
   
 ##  <a name="savestate"></a>  CToolBarCtrl::SaveState  
@@ -1381,21 +1381,21 @@ void SaveState(
 ```  
   
 ### Parameters  
- `hKeyRoot`  
+ *hKeyRoot*  
  Identifies a currently open key in the registry or any of the following predefined reserved handle values:  
   
-- **HKEY_CLASSES_ROOT**  
+- HKEY_CLASSES_ROOT  
   
-- **HKEY_CURRENT_USER**  
+- HKEY_CURRENT_USER  
   
-- **HKEY_LOCAL_MACHINE**  
+- HKEY_LOCAL_MACHINE  
   
-- **HKEY_USERS**  
+- HKEY_USERS  
   
- `lpszSubKey`  
- Points to a null-terminated string containing the name of the subkey with which a value is associated. This parameter can be null or a pointer to an empty string. If the parameter is **NULL**, the value will be added to the key identified by the `hKeyRoot` parameter.  
+ *lpszSubKey*  
+ Points to a null-terminated string containing the name of the subkey with which a value is associated. This parameter can be null or a pointer to an empty string. If the parameter is NULL, the value will be added to the key identified by the *hKeyRoot* parameter.  
   
- `lpszValueName`  
+ *lpszValueName*  
  Points to a string containing the name of the value to set. If a value with this name is not already present in the key, the function adds it to the key.  
   
 ##  <a name="setanchorhighlight"></a>  CToolBarCtrl::SetAnchorHighlight  
@@ -1406,7 +1406,7 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ```  
   
 ### Parameters  
- [in] `fAnchor`  
+ [in] *fAnchor*  
  Specifies if anchor highlighting is enabled or disabled. If this value is nonzero, anchor highlighting will be enabled. If this value is zero, anchor highlighting will be disabled  
   
 ### Return Value  
@@ -1423,7 +1423,7 @@ BOOL SetBitmapSize(CSize size);
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  Width and height, in pixels, of the bitmapped images.  
   
 ### Return Value  
@@ -1442,10 +1442,10 @@ BOOL SetButtonInfo(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The button identifier.  
   
- `ptbbi`  
+ *ptbbi*  
  A pointer to a [TBBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb760478) structure that receives the button information.  
   
 ### Return Value  
@@ -1462,7 +1462,7 @@ BOOL SetButtonSize(CSize size);
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  Width and height, in pixels, of the buttons.  
   
 ### Return Value  
@@ -1482,7 +1482,7 @@ void SetButtonStructSize(int nSize);
 ```  
   
 ### Parameters  
- `nSize`  
+ *nSize*  
  Size, in bytes, of the `TBBUTTON` structure.  
   
 ### Remarks  
@@ -1500,7 +1500,7 @@ BOOL SetButtonWidth(
 ```  
   
 ### Parameters  
- `cxMin`  
+ *cxMin*  
  Minimum button width, in pixels. Toolbar buttons will never be narrower than this value.  
   
  *cxMax*  
@@ -1522,10 +1522,10 @@ BOOL SetCmdID(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the button whose command ID is to be set.  
   
- `nID`  
+ *nID*  
  The command ID to set the selected button to.  
   
 ### Return Value  
@@ -1542,7 +1542,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `lpColorScheme`|Pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure that describes the highlight color and shadow color of the toolbar control.|  
+|[in] *lpColorScheme*|Pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure that describes the highlight color and shadow color of the toolbar control.|  
   
 ### Remarks  
  This method has no effect if a [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] visual theme is set.  
@@ -1562,7 +1562,7 @@ CImageList* SetDisabledImageList(CImageList* pImageList);
 ```  
   
 ### Parameters  
- `pImageList`  
+ *pImageList*  
  A pointer to a `CImageList` object containing the images to be used by the toolbar control to display disabled button images.  
   
 ### Return Value  
@@ -1581,14 +1581,14 @@ DWORD SetDrawTextFlags(
 ```  
   
 ### Parameters  
- `dwMask`  
- A combination of one or more of the DT_ flags, specified in the Win32 function [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498), that indicates which bits in `dwDTFlags` will be used when drawing the text.  
+ *dwMask*  
+ A combination of one or more of the DT_ flags, specified in the Win32 function [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498), that indicates which bits in *dwDTFlags* will be used when drawing the text.  
   
- `dwDTFlags`  
+ *dwDTFlags*  
  A combination of one or more of the DT_ flags, specified in the Win32 function `DrawText`, that indicate how the button text will be drawn. This value is passed to `DrawText` when the button text is drawn.  
   
 ### Return Value  
- A `DWORD` containing the previous text drawing flags.  
+ A DWORD containing the previous text drawing flags.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_SETDRAWTEXTFLAGS](http://msdn.microsoft.com/library/windows/desktop/bb787425), as described in the Windows SDK. This member function sets the flags in the Win32 function `DrawText`, which draws text in the specified rectangle, formatted according to how the flags are set.  
@@ -1601,11 +1601,11 @@ DWORD SetExtendedStyle(DWORD dwExStyle);
 ```  
   
 ### Parameters  
- `dwExStyle`  
+ *dwExStyle*  
  A value specifying the new extended styles. This parameter can be a combination of the toolbar extended styles.  
   
 ### Return Value  
- A `DWORD` that represents the previous extended styles. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the Windows SDK.  
+ A DWORD that represents the previous extended styles. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the Windows SDK.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787427), as described in the Windows SDK.  
@@ -1618,7 +1618,7 @@ CImageList* SetHotImageList(CImageList* pImageList);
 ```  
   
 ### Parameters  
- `pImageList`  
+ *pImageList*  
  A pointer to a `CImageList` object containing the images to be used by the toolbar control to display hot button images.  
   
 ### Return Value  
@@ -1654,7 +1654,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ```  
   
 ### Parameters  
- `pImageList`  
+ *pImageList*  
  A pointer to a `CImageList` object containing the images to be used by the toolbar control to display button images in their default state.  
   
 ### Return Value  
@@ -1687,7 +1687,7 @@ void SetInsertMark(TBINSERTMARK* ptbim);
 ```  
   
 ### Parameters  
- `ptbim`  
+ *ptbim*  
  A pointer to the [TBINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb760480) structure that contains the insertion mark.  
   
 ### Remarks  
@@ -1701,11 +1701,11 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
 ```  
   
 ### Parameters  
- `clrNew`  
- A **COLORREF** value that contains the new insertion mark color.  
+ *clrNew*  
+ A COLORREF value that contains the new insertion mark color.  
   
 ### Return Value  
- A **COLORREF** value that contains the previous insertion mark color.  
+ A COLORREF value that contains the previous insertion mark color.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TB_SETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787439), as described in the Windows SDK.  
@@ -1732,7 +1732,7 @@ void SetMetrics(LPTBMETRICS ptbm);
 ```  
   
 ### Parameters  
- `ptbm`  
+ *ptbm*  
  A pointer to the [TBMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb760482) structure of the `CToolBarCtrl` object.  
   
 ### Remarks  
@@ -1746,7 +1746,7 @@ void SetOwner(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Pointer to the `CWnd` or `CWnd`-derived object that will be the new owner window for the toolbar control.  
   
 ### Remarks  
@@ -1765,11 +1765,11 @@ DWORD SetPadding(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `nHorzPadding`|Specifies the horizontal padding of the toolbar control, in pixels.|  
-|[in] `nVertPadding`|Specifies the vertical padding of the toolbar control, in pixels.|  
+|[in] *nHorzPadding*|Specifies the horizontal padding of the toolbar control, in pixels.|  
+|[in] *nVertPadding*|Specifies the vertical padding of the toolbar control, in pixels.|  
   
 ### Return Value  
- A `DWORD` whose low word contains the previous horizontal padding value, and whose high word contains the previous vertical padding value. The padding values are measured in pixels.  
+ A DWORD whose low word contains the previous horizontal padding value, and whose high word contains the previous vertical padding value. The padding values are measured in pixels.  
   
 ### Remarks  
  This method sends the [TB_SETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787448) message, which is described in the Windows SDK.  
@@ -1792,11 +1792,11 @@ CImagelist* SetPressedImageList(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iImageID`|The zero-based index of the image list. Set this parameter to zero if you use only one image list.|  
-|[in] `pImageList`|Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the new image list.|  
+|[in] *iImageID*|The zero-based index of the image list. Set this parameter to zero if you use only one image list.|  
+|[in] *pImageList*|Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the new image list.|  
   
 ### Return Value  
- Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the previous image list for the current control, or `NULL` if no such image list was set.  
+ Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the previous image list for the current control, or NULL if no such image list was set.  
   
 ### Remarks  
  This method sends the [TB_SETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787453) message, which is described in the Windows SDK.  
@@ -1817,27 +1817,27 @@ void SetRows(
 ```  
   
 ### Parameters  
- `nRows`  
+ *nRows*  
  Requested number of rows.  
   
- `bLarger`  
+ *bLarger*  
  Tells whether to use more rows or fewer rows if the toolbar cannot be resized to the requested number of rows.  
   
- `lpRect`  
+ *lpRect*  
  Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the new bounding rectangle of the toolbar.  
   
 ### Remarks  
- If the toolbar cannot resize itself to the requested number or rows, it will resize itself to either the next larger or next smaller valid size, depending on the value of `bLarger`. If `bLarger` is **TRUE**, the new number of rows will be larger than the number requested. If `bLarger` is **FALSE**, the new number of rows will be smaller than the number requested.  
+ If the toolbar cannot resize itself to the requested number or rows, it will resize itself to either the next larger or next smaller valid size, depending on the value of *bLarger*. If *bLarger* is TRUE, the new number of rows will be larger than the number requested. If *bLarger* is FALSE, the new number of rows will be smaller than the number requested.  
   
- A given number of rows is valid for the toolbar if the buttons can be arranged such that all of the rows have the same number of buttons (except perhaps the last row). For example, a toolbar that contains four buttons could not be sized to three rows because the last two rows would have to be shorter. If you attempted to size it to three rows, you would get four rows if `bLarger` was **TRUE** and two rows if `bLarger` was **FALSE**.  
+ A given number of rows is valid for the toolbar if the buttons can be arranged such that all of the rows have the same number of buttons (except perhaps the last row). For example, a toolbar that contains four buttons could not be sized to three rows because the last two rows would have to be shorter. If you attempted to size it to three rows, you would get four rows if *bLarger* was TRUE and two rows if *bLarger* was FALSE.  
   
  If there are separators in the toolbar, the rules for when a given number of rows is valid are more complicated. The layout is computed such that button groups (buttons with a separator before the first and the last button in the group) are never broken up on several rows unless the group cannot fit on one row.  
   
  If a group does not fit on one row, the next group will start on the next row even if it would fit on the row where the large group ended. The purpose of this rule is to make the separation between large groups more noticeable. The resulting vertical separators are counted as rows.  
   
- Note also that the `SetRows` member function will always chose the layout that results in the smallest toolbar size. Creating a toolbar with the `TBSTYLE_WRAPABLE` style and then resizing the control will simply apply the method outlined above given the width of the control.  
+ Note also that the `SetRows` member function will always chose the layout that results in the smallest toolbar size. Creating a toolbar with the TBSTYLE_WRAPABLE style and then resizing the control will simply apply the method outlined above given the width of the control.  
   
- This function can only be called for toolbars that were created with the `TBSTYLE_WRAPABLE` style.  
+ This function can only be called for toolbars that were created with the TBSTYLE_WRAPABLE style.  
   
 ##  <a name="setstate"></a>  CToolBarCtrl::SetState  
  Sets the state for the specified button in a toolbar control.  
@@ -1849,10 +1849,10 @@ BOOL SetState(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Command identifier of the button.  
   
- `nState`  
+ *nState*  
  State flags. It can be a combination of the values listed for button states in [CToolBarCtrl::AddButtons](#addbuttons).  
   
 ### Return Value  
@@ -1869,8 +1869,8 @@ void SetStyle(DWORD dwStyle);
 ```  
   
 ### Parameters  
- `dwStyle`  
- A `DWORD` containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the Windows SDK.  
+ *dwStyle*  
+ A DWORD containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the Windows SDK.  
   
 ##  <a name="settooltips"></a>  CToolBarCtrl::SetToolTips  
  Associates a tool tip control with a toolbar control.  
@@ -1891,7 +1891,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 ```  
   
 ### Parameters  
- `pszSubAppName`  
+ *pszSubAppName*  
  A pointer to a Unicode string that contains the toolbar visual style to set.  
   
 ### Return Value  
