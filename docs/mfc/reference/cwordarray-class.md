@@ -22,7 +22,7 @@ class CWordArray : public CObject
 ```  
   
 ## Members  
- The member functions of `CWordArray` are similar to the member functions of class [CObArray](../../mfc/reference/cobarray-class.md). Because of this similarity, you can use the `CObArray` reference documentation for member function specifics. Wherever you see a [CObject](../../mfc/reference/cobject-class.md) pointer as a function parameter or return value, substitute a **WORD**.  
+ The member functions of `CWordArray` are similar to the member functions of class [CObArray](../../mfc/reference/cobarray-class.md). Because of this similarity, you can use the `CObArray` reference documentation for member function specifics. Wherever you see a [CObject](../../mfc/reference/cobject-class.md) pointer as a function parameter or return value, substitute a WORD.  
   
  `CObject* CObArray::GetAt( int <nIndex> ) const;`  
   
@@ -47,7 +47,7 @@ class CWordArray : public CObject
 |[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Frees all unused memory above the current upper bound.|  
 |[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Returns the value at a given index.|  
 |[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Gets the number of elements in this array.|  
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Allows access to elements in the array. Can be NULL.|  
 |[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Gets the number of elements in this array.|  
 |[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|Returns the largest valid index.|  
 |[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
@@ -106,14 +106,14 @@ void AddCommandHandler(
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID.  
   
- `cmdHandler`  
+ *cmdHandler*  
  A handle to the command handler method.  
   
 ### Remarks  
- This method adds the command handler `cmdHandler` to the command source object and maps the handler to `cmdID`.  
+ This method adds the command handler *cmdHandler* to the command source object and maps the handler to *cmdID*.  
   
  See [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) for an example of how to use `AddCommandHandler`.  
   
@@ -128,13 +128,13 @@ void AddCommandRangeHandler(
 ```  
   
 ### Parameters  
- `cmdIDMin`  
+ *cmdIDMin*  
  The beginning index of the command ID range.  
   
- `cmdIDMax`  
+ *cmdIDMax*  
  The ending index of the command ID range.  
   
- `cmdHandler`  
+ *cmdHandler*  
  A handle to the message handler method to which the commands are mapped.  
   
 ### Remarks  
@@ -151,13 +151,13 @@ void AddCommandRangeUIHandler(
 ```  
   
 ### Parameters  
- `cmdIDMin`  
+ *cmdIDMin*  
  The beginning index of the command ID range.  
   
- `cmdIDMax`  
+ *cmdIDMax*  
  The ending index of the command ID range.  
   
- `cmdHandler`  
+ *cmdHandler*  
  A handle to the message handler method to which the commands are mapped.  
   
 ### Remarks  
@@ -173,14 +173,14 @@ void AddCommandUIHandler(
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID.  
   
- `cmdUIHandler`  
+ *cmdUIHandler*  
  A handle to the user interface command message handler method.  
   
 ### Remarks  
- This method adds the user interface command message handler `cmdHandler` to the command source object and maps the handler to `cmdID`.  
+ This method adds the user interface command message handler *cmdHandler* to the command source object and maps the handler to *cmdID*.  
   
 ##  <a name="postcommand"></a>  ICommandSource::PostCommand  
  Posts a message without waiting for it to be processed.  
@@ -190,11 +190,11 @@ void PostCommand(unsigned int command);
 ```  
   
 ### Parameters  
- `command`  
+ *command*  
  The command ID of the message to be posted.  
   
 ### Remarks  
- This method asynchronously posts the message mapped to the ID specified by `command`. It calls [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.  
+ This method asynchronously posts the message mapped to the ID specified by *command*. It calls [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.  
   
 ##  <a name="removecommandhandler"></a>  ICommandSource::RemoveCommandHandler  
  Removes a command handler from a command source object.  
@@ -204,11 +204,11 @@ void RemoveCommandHandler(unsigned int cmdID);
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID.  
   
 ### Remarks  
- This method removes the command handler mapped to `cmdID` from the command source object.  
+ This method removes the command handler mapped to *cmdID* from the command source object.  
   
 ##  <a name="removecommandrangehandler"></a>  ICommandSource::RemoveCommandRangeHandler  
  Removes a group of command handlers from a command source object.  
@@ -220,14 +220,14 @@ void RemoveCommandRangeUIHandler(
 ```  
   
 ### Parameters  
- `cmdIDMin`  
+ *cmdIDMin*  
  The beginning index of the command ID range.  
   
- `cmdIDMax`  
+ *cmdIDMax*  
  The ending index of the command ID range.  
   
 ### Remarks  
- This method removes a group of message handlers, mapped to the command IDs specifed by `cmdIDMin` and `cmdIDMax`, from the command source object.  
+ This method removes a group of message handlers, mapped to the command IDs specifed by *cmdIDMin* and *cmdIDMax*, from the command source object.  
   
 ##  <a name="removecommandrangeuihandler"></a>  ICommandSource::RemoveCommandRangeUIHandler  
  Removes a group of user interface command message handlers from a command source object.  
@@ -239,14 +239,14 @@ void RemoveCommandRangeUIHandler(
 ```  
   
 ### Parameters  
- `cmdIDMin`  
+ *cmdIDMin*  
  The beginning index of the command ID range.  
   
- `cmdIDMax`  
+ *cmdIDMax*  
  The ending index of the command ID range.  
   
 ### Remarks  
- This method removes a group of user interface command message handlers, mapped to the command IDs specifed by `cmdIDMin` and `cmdIDMax`, from the command source object.  
+ This method removes a group of user interface command message handlers, mapped to the command IDs specifed by *cmdIDMin* and *cmdIDMax*, from the command source object.  
   
 ##  <a name="removecommanduihandler"></a>  ICommandSource::RemoveCommandUIHandler  
  Removes a user interface command message handler from a command source object.  
@@ -256,11 +256,11 @@ void RemoveCommandUIHandler(unsigned int cmdID);
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID.  
   
 ### Remarks  
- This method removes the user interface command message handler mapped to `cmdID` from the command source object.  
+ This method removes the user interface command message handler mapped to *cmdID* from the command source object.  
   
 ##  <a name="sendcommand"></a>  ICommandSource::SendCommand  
  Sends a message and waits for it to be processed before returning.  
@@ -270,11 +270,11 @@ void SendCommand(unsigned int command);
 ```  
   
 ### Parameters  
- `command`  
+ *command*  
  The command ID of the message to be sent.  
   
 ### Remarks  
- This method synchronously sends the message mapped to the ID specified by `command`. It calls [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) to place the message in the window's message queue and waits until that window procedure has processed the message before returning.  
+ This method synchronously sends the message mapped to the ID specified by *command*. It calls [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) to place the message in the window's message queue and waits until that window procedure has processed the message before returning.  
   
 ##  <a name="icommandtarget_interface"></a>  ICommandTarget Interface  
  Provides a user control with an interface to receive commands from a command source object.  
@@ -298,13 +298,13 @@ void Initialize(ICommandSource^ cmdSource);
 ```  
   
 ### Parameters  
- `cmdSource`  
+ *cmdSource*  
  A handle to the command source object.  
   
 ### Remarks  
  When you host a user control in an MFC View, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) routes commands and update command UI messages to the user control to allow it to handle MFC commands.  
   
- This method initializes the command target object and associates it with the specified command source object `cmdSource`. It should be called in the user control class implementation. At initialization, you should register command handlers with the command source object by calling [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) in the `Initialize` implementation. See [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) for an example of how to use `Initialize` to do this.  
+ This method initializes the command target object and associates it with the specified command source object *cmdSource*. It should be called in the user control class implementation. At initialization, you should register command handlers with the command source object by calling [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) in the `Initialize` implementation. See [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) for an example of how to use `Initialize` to do this.  
   
 ##  <a name="icommandui_interface"></a>  ICommandUI Interface  
  Manages user interface commands.  
@@ -348,7 +348,7 @@ void ContinueRouting();
 ```  
   
 ### Remarks  
- This is an advanced member function that should be used in conjunction with an [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) handler that returns `FALSE`. For more information, see Technical Note [TN006: Message Maps](../../mfc/tn006-message-maps.md).  
+ This is an advanced member function that should be used in conjunction with an [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) handler that returns FALSE. For more information, see Technical Note [TN006: Message Maps](../../mfc/tn006-message-maps.md).  
   
 ##  <a name="enabled"></a>  ICommandUI::Enabled  
  Enables or disables the user interface item for this command.  
@@ -358,7 +358,7 @@ property bool Enabled;
 ```  
   
 ### Remarks  
- This property enables or disables the user interface item for this command. Set `Enabled` to `TRUE` to enable the item, `FALSE` to disable it.  
+ This property enables or disables the user interface item for this command. Set `Enabled` to TRUE to enable the item, FALSE to disable it.  
   
 ##  <a name="id"></a>  ICommandUI::ID  
  Gets the ID of the user interface object represented by the `ICommandUI` object.  
@@ -388,7 +388,7 @@ property bool Radio;
 ```  
   
 ### Remarks  
- This property sets the user interface item for this command to the appropriate check state. Set `Radio` to `TRUE` to enable the item; otherwise `FALSE`.  
+ This property sets the user interface item for this command to the appropriate check state. Set `Radio` to TRUE to enable the item; otherwise FALSE.  
   
 ##  <a name="text"></a>  ICommandUI::Text  
  Sets the text of the user interface item for this command.  
@@ -422,7 +422,7 @@ void OnActivateView(bool activate);
 ```  
   
 ### Parameters  
- `activate`  
+ *activate*  
  Indicates whether the view is being activated or deactivated.  
   
 ##  <a name="oninitialupdate"></a>  IView::OnInitialUpdate  

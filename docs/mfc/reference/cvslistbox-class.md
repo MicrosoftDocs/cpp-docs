@@ -91,20 +91,20 @@ virtual int AddItem(
 ```  
   
 ### Parameters  
- [in] `strIext`  
+ [in] *strIext*  
  A reference to a string.  
   
- [in] `dwData`  
+ [in] *dwData*  
  An application-specific 32-bit value that is associated with the string. The default value is 0.  
   
- [in] `iIndex`  
- The zero-based index of the position that will hold the string. If the `iIndex` parameter is -1, the string is added to the end of the list. The default value is -1.  
+ [in] *iIndex*  
+ The zero-based index of the position that will hold the string. If the *iIndex* parameter is -1, the string is added to the end of the list. The default value is -1.  
   
 ### Return Value  
  The zero-based index of the position of the string in the list control.  
   
 ### Remarks  
- Use the [CVSListBox::GetItemData](#getitemdata) method to retrieve the value that is specified by the `dwData` parameter. This value can be an application-specific integer or a pointer to other data.  
+ Use the [CVSListBox::GetItemData](#getitemdata) method to retrieve the value that is specified by the *dwData* parameter. This value can be an application-specific integer or a pointer to other data.  
   
 ##  <a name="cvslistbox"></a>  CVSListBox::CVSListBox  
  Constructs a `CVSListBox` object.  
@@ -125,11 +125,11 @@ virtual BOOL EditItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  Zero-based index of a list control item.  
   
 ### Return Value  
- `TRUE` if the edit operation starts successfully; otherwise, `FALSE`.  
+ TRUE if the edit operation starts successfully; otherwise, FALSE.  
   
 ### Remarks  
  The user starts an edit operation either by double-clicking the label of an item, or by pressing the **F2** or **SPACEBAR** key when an item has the focus.  
@@ -155,7 +155,7 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an editable list control item.  
   
 ### Return Value  
@@ -213,11 +213,11 @@ virtual BOOL RemoveItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an editable list control item.  
   
 ### Return Value  
- `TRUE` if the specified item is removed; otherwise, `FALSE`.  
+ TRUE if the specified item is removed; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -229,11 +229,11 @@ virtual BOOL SelectItem(int iItem);
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The zero-based index of an editable list control item.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method selects the specified item, and if it is required, scrolls the item into view.  
@@ -248,10 +248,10 @@ virtual void SetItemData(
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an editable list control item.  
   
- [in] `dwData`  
+ [in] *dwData*  
  A 32-bit value. This value can be an application-specific integer or a pointer to other data.  
   
 ### Remarks  

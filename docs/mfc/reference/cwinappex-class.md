@@ -87,7 +87,7 @@ class CWinAppEx : public CWinApp
 |----------|-----------------|  
 |[CWinAppEx::LoadCustomState](#loadcustomstate)|Called by the framework when the application state has been loaded.|  
 |[CWinAppEx::LoadWindowPlacement](#loadwindowplacement)|Called by the framework when it loads the size and location of your application from the registry. The loaded data includes the size and location of the main frame at the time your application last closed.|  
-|[CWinAppEx::OnClosingMainFrame](#onclosingmainframe)|Called by the framework when a main frame window is processing `WM_CLOSE`.|  
+|[CWinAppEx::OnClosingMainFrame](#onclosingmainframe)|Called by the framework when a main frame window is processing WM_CLOSE.|  
 |[CWinAppEx::PreLoadState](#preloadstate)|Called by the framework immediately before the application state is loaded.|  
 |[CWinAppEx::PreSaveState](#presavestate)|Called by the framework immediately before the application state is saved.|  
 |[CWinAppEx::ReloadWindowPlacement](#reloadwindowplacement)|Reloads the size and location of the supplied window from the registry|  
@@ -131,14 +131,14 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
 ```  
   
 ### Parameters  
- [in] `lpszSectionName`  
+ [in] *lpszSectionName*  
  A string that contains a path of a registry key.  
   
 ### Return Value  
  Nonzero if the method was successful; otherwise 0.  
   
 ### Remarks  
- This method clears application data from a specific section of the registry. You can specify the section to clear by using the parameter `lpszSectionName`. If `lpszSectionName` is `NULL`, this method will use the default registry path stored in the `CWinAppEx` object. To get the default registry path, use [CWinAppEx::GetRegistryBase](#getregistrybase).  
+ This method clears application data from a specific section of the registry. You can specify the section to clear by using the parameter *lpszSectionName*. If *lpszSectionName* is NULL, this method will use the default registry path stored in the `CWinAppEx` object. To get the default registry path, use [CWinAppEx::GetRegistryBase](#getregistrybase).  
   
 ##  <a name="cwinappex"></a>  CWinAppEx::CWinAppEx  
  Constructs a `CWinAppEx` object.  
@@ -148,7 +148,7 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
 ```  
   
 ### Parameters  
- [in] `bResourceSmartUpdate`  
+ [in] *bResourceSmartUpdate*  
  A Boolean parameter that specifies whether the workspace object should detect and handle resource updates.  
   
 ### Remarks  
@@ -162,11 +162,11 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  Specifies whether the application loads the initial size and location of the main frame window from the registry.  
   
 ### Remarks  
- By default, the size and location of the main frame is loaded from the registry together with other application settings. This occurs during [CWinAppEx::LoadState](#loadstate). If you do not want to load the initial window placement from the registry, call this method with `bEnable` set to `false`.  
+ By default, the size and location of the main frame is loaded from the registry together with other application settings. This occurs during [CWinAppEx::LoadState](#loadstate). If you do not want to load the initial window placement from the registry, call this method with *bEnable* set to FALSE.  
   
 ##  <a name="enabletearoffmenus"></a>  CWinAppEx::EnableTearOffMenus  
  Creates and initializes a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.  
@@ -179,17 +179,17 @@ BOOL EnableTearOffMenus(
 ```  
   
 ### Parameters  
- [in] `lpszRegEntry`  
+ [in] *lpszRegEntry*  
  A string that contains the path of a registry key. The application uses this registry key to store information for the tear-off menus.  
   
- [in] `uiCmdFirst`  
+ [in] *uiCmdFirst*  
  The first tear off menu ID.  
   
- [in] `uiCmdLast`  
+ [in] *uiCmdLast*  
  The last tear off menu ID.  
   
 ### Return Value  
- `True` if the `CMenuTearOffManager` is created and initialized successfully; `false` if an error occurs or if the `CMenuTearOffManager` already exists.  
+ TRUE if the `CMenuTearOffManager` is created and initialized successfully; FALSE if an error occurs or if the `CMenuTearOffManager` already exists.  
   
 ### Remarks  
  Use this function to enable tear-off menus in your application. You should call this function from `InitInstance`.  
@@ -208,31 +208,31 @@ BOOL EnableUserTools(
 ```  
   
 ### Parameters  
- [in] `uiCmdToolsDummy`  
+ [in] *uiCmdToolsDummy*  
  An unsigned integer that the framework uses as a placeholder for the command ID of the user tools menu.  
   
- [in] `uiCmdFirst`  
+ [in] *uiCmdFirst*  
  The command ID for the first user tool command.  
   
- [in] `uiCmdLast`  
+ [in] *uiCmdLast*  
  The command ID for the last user tool command.  
   
- [in] `pToolRTC`  
+ [in] *pToolRTC*  
  A class that the `CUserToolsManager` object uses to create new user tools.  
   
- [in] `uArgMenuID`  
+ [in] *uArgMenuID*  
  The argument menu ID.  
   
- [in] `uInitDirMenuID`  
+ [in] *uInitDirMenuID*  
  The menu ID for the initial tool directory.  
   
 ### Return Value  
- `TRUE` if the method creates and initializes a `CUserToolsManager` object; `FALSE` if the method fails or if a `CUserToolsManager` object already exists.  
+ TRUE if the method creates and initializes a `CUserToolsManager` object; FALSE if the method fails or if a `CUserToolsManager` object already exists.  
   
 ### Remarks  
  When you enable user-defined tools, the framework automatically supports a dynamic menu that can be extended during customization. The framework associates each new item with an external command. The framework invokes these commands when the user selects the appropriate item from the **Tools** menu.  
   
- Every time the user adds a new item, the framework creates a new object. The class type for the new object is defined by `pToolRTC`. The `pToolRTC` class type must be derived from the [CUserTool Class](../../mfc/reference/cusertool-class.md).  
+ Every time the user adds a new item, the framework creates a new object. The class type for the new object is defined by *pToolRTC*. The *pToolRTC* class type must be derived from the [CUserTool Class](../../mfc/reference/cusertool-class.md).  
   
  For more information about user tools and how to incorporate them into your application, see [User-defined Tools](../../mfc/user-defined-tools.md).  
   
@@ -258,22 +258,22 @@ BOOL GetBinary(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of a registry key.  
   
- [out] `ppData`  
+ [out] *ppData*  
  A pointer to the buffer that the method fills with the binary data.  
   
- [out] `pBytes`  
+ [out] *pBytes*  
  A pointer to an unsigned integer that the method uses to write the number of bytes read.  
   
 ### Return Value  
- `True` if successful; `false` otherwise.  
+ TRUE if successful; FALSE otherwise.  
   
 ### Remarks  
  This method reads binary data written to the registry. To write data to the registry, use the methods [CWinAppEx::WriteBinary](#writebinary) and [CWinAppEx::WriteSectionBinary](#writesectionbinary).  
   
- The `lpszEntry` parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getcontextmenumanager"></a>  CWinAppEx::GetContextMenuManager  
  Returns a pointer to the global [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object.  
@@ -329,19 +329,19 @@ int GetInt(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of a registry entry.  
   
- [in] `nDefault`  
+ [in] *nDefault*  
  The default value that the method returns if the specified registry entry does not exist.  
   
 ### Return Value  
- The registry data if the method was successful; otherwise `nDefault`.  
+ The registry data if the method was successful; otherwise *nDefault*.  
   
 ### Remarks  
- This method reads integer data from the registry. If there is no integer data associated with the registry key indicated by `lpszEntry`, this method returns `nDefault`. To write data to the registry, use the methods [CWinAppEx::WriteSectionInt](#writesectionint) and [CWinAppEx::WriteInt](#writeint).  
+ This method reads integer data from the registry. If there is no integer data associated with the registry key indicated by *lpszEntry*, this method returns *nDefault*. To write data to the registry, use the methods [CWinAppEx::WriteSectionInt](#writesectionint) and [CWinAppEx::WriteInt](#writeint).  
   
- The `lpszEntry` parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getkeyboardmanager"></a>  CWinAppEx::GetKeyboardManager  
  Returns a pointer to the global [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) object.  
@@ -379,10 +379,10 @@ BOOL GetObject(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the relative path of a registry entry.  
   
- [out] `obj`  
+ [out] *obj*  
  A reference to a `CObject`. The method uses this reference to store the registry data.  
   
 ### Return Value  
@@ -391,7 +391,7 @@ BOOL GetObject(
 ### Remarks  
  This method reads data from the registry that is derived from `CObject`. To write `CObject` data to the registry, use either [CWinAppEx::WriteObject](#writeobject) or [CWinAppEx::WriteSectionObject](#writesectionobject).  
   
- The `lpszEntry` parameter is the name of a registry entry that is located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry that is located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getregistrybase"></a>  CWinAppEx::GetRegistryBase  
  Retrieves the default registry path for the application.  
@@ -414,14 +414,14 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
 ```  
   
 ### Parameters  
- [in] `szSectionAdd`  
+ [in] *szSectionAdd*  
  A string that contains the relative path of a registry key.  
   
 ### Return Value  
  A `CString` that contains the absolute path of a registry key.  
   
 ### Remarks  
- This method defines the registry key's absolute path by appending the relative path in `szSectionAdd` to the default registry location for your application. To get the default registry key, use the method [CWinAppEx::GetRegistryBase](#getregistrybase).  
+ This method defines the registry key's absolute path by appending the relative path in *szSectionAdd* to the default registry location for your application. To get the default registry key, use the method [CWinAppEx::GetRegistryBase](#getregistrybase).  
   
 ##  <a name="getsectionbinary"></a>  CWinAppEx::GetSectionBinary  
  Reads binary data from the registry.  
@@ -435,25 +435,25 @@ BOOL GetSectionBinary(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the relative path of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to read.  
   
- [out] `ppData`  
+ [out] *ppData*  
  A pointer to the buffer where the method stores the data.  
   
- [out] `pBytes`  
- A pointer to an unsigned integer. The method writes the size of `ppData` to this parameter.  
+ [out] *pBytes*  
+ A pointer to an unsigned integer. The method writes the size of *ppData* to this parameter.  
   
 ### Return Value  
- `True` if successful; otherwise `false`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  This method reads binary data that is written to the registry using the methods [CWinAppEx::WriteBinary](#writebinary) and [CWinAppEx::WriteSectionBinary](#writesectionbinary).  
   
- The `lpszSubSection` parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getsectionint"></a>  CWinAppEx::GetSectionInt  
  Reads integer data from the registry.  
@@ -466,22 +466,22 @@ int GetSectionInt(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the relative path of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to read.  
   
- [in] `nDefault`  
+ [in] *nDefault*  
  The default value to return if the specified value does not exist.  
   
 ### Return Value  
- The integer data that is stored in the specified registry value; `nDefault` if the data does not exist.  
+ The integer data that is stored in the specified registry value; *nDefault* if the data does not exist.  
   
 ### Remarks  
  Use the methods [CWinAppEx::WriteInt](#writeint) and [CWinAppEx::WriteSectionInt](#writesectionint) to write integer data to the registry.  
   
- The `lpszSubSection` parameter is not an absolute path of a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSubSection* parameter is not an absolute path of a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getsectionobject"></a>  CWinAppEx::GetSectionObject  
  Reads [CObject](../../mfc/reference/cobject-class.md) registry data from the registry.  
@@ -494,13 +494,13 @@ BOOL GetSectionObject(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the relative path of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to read.  
   
- [out] `obj`  
+ [out] *obj*  
  A reference to a `CObject`. The method uses this `CObject` to store the registry data.  
   
 ### Return Value  
@@ -509,7 +509,7 @@ BOOL GetSectionObject(
 ### Remarks  
  This method reads data from the registry. The data read is `CObject` data, or data for a class derived from `CObject`. To write `CObject` data to the registry, use either [CWinAppEx::WriteObject](#writeobject) or [CWinAppEx::WriteSectionObject](#writesectionobject).  
   
- The `lpszSubSection` parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getsectionstring"></a>  CWinAppEx::GetSectionString  
  Reads string data from the registry.  
@@ -522,22 +522,22 @@ CString GetSectionString(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the relative path of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to read.  
   
- [in] `lpszDefault`  
+ [in] *lpszDefault*  
  The default value to return if the specified value does not exist.  
   
 ### Return Value  
- The string data stored in the specified registry value if the data exists; otherwise `lpszDefault`.  
+ The string data stored in the specified registry value if the data exists; otherwise *lpszDefault*.  
   
 ### Remarks  
  This method reads string data written to the registry. Use [CWinAppEx::WriteString](#writestring) and [CWinAppEx::WriteSectionString](#writesectionstring) to write string data to the registry.  
   
- The `lpszSubSection` parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="getshellmanager"></a>  CWinAppEx::GetShellManager  
  Returns a pointer to the global [CShellManager](../../mfc/reference/cshellmanager-class.md) object.  
@@ -562,19 +562,19 @@ CString GetString(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of a registry key  
   
- [in] `lpzDefault`  
+ [in] *lpzDefault*  
  The default value that the method returns if the specified registry entry does not exist.  
   
 ### Return Value  
- The string data stored in the registry if successful; `lpszDefault` otherwise.  
+ The string data stored in the registry if successful; *lpszDefault* otherwise.  
   
 ### Remarks  
  This method reads string data written to the registry. To write data to the registry, use the methods [CWinAppEx::WriteString](#writestring) or [CWinAppEx::WriteSectionString](#writesectionstring).  
   
- The `lpszEntry` parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="gettooltipmanager"></a>  CWinAppEx::GetTooltipManager  
  Returns a pointer to the global [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) object.  
@@ -597,7 +597,7 @@ CUserToolsManager* GetUserToolsManager();
 ```  
   
 ### Return Value  
- A pointer to the global `CUserToolsManager` object; `NULL` if user tools management is not enabled for the application.  
+ A pointer to the global `CUserToolsManager` object; NULL if user tools management is not enabled for the application.  
   
 ### Remarks  
  Before you retrieve a pointer to the `CUserToolsManager` object, you must initialize the manager by calling [CWinAppEx::EnableUserTools](#enableusertools).  
@@ -696,7 +696,7 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
 ```  
   
 ### Parameters  
- [in] `lpszSectionName`  
+ [in] *lpszSectionName*  
  A string that contains a path of a registry key.  
   
 ### Return Value  
@@ -739,13 +739,13 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `pFrame`  
+ [in] *pFrame*  
  A pointer to a frame window object. The method applies the state information in the registry to this frame window.  
   
- [in] `lpszSectionName`  
+ [in] *lpszSectionName*  
  A string that contains the relative path of a registry key.  
   
- [in] `pFrameImpl`  
+ [in] *pFrameImpl*  
  A pointer to a `CFrameImpl` object. The method applies the state information in the registry to this frame window.  
   
 ### Return Value  
@@ -756,7 +756,7 @@ virtual BOOL LoadState(
   
  The default implementation of `CFrameImpl::OnLoadFrame` calls `LoadState`.  
   
- The `lpszSectionName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSectionName* parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="loadwindowplacement"></a>  CWinAppEx::LoadWindowPlacement  
  Called by the framework when it loads the size and location of the main frame window from the registry.  
@@ -769,13 +769,13 @@ virtual BOOL LoadWindowPlacement(
 ```  
   
 ### Parameters  
- [out] `rectNormalPosition`  
+ [out] *rectNormalPosition*  
  A rectangle that contains the coordinates of the main frame window when it is in the restored position.  
   
- [out] `nFlags`  
+ [out] *nFlags*  
  Flags that control the position of the minimized window and how the operating system switches between a minimized window and a restored window.  
   
- [out] `nShowCmd`  
+ [out] *nShowCmd*  
  An integer that specifies the show state of the window. For more information about possible values, see [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
 ### Return Value  
@@ -806,28 +806,28 @@ virtual void OnAppContextHelp(
 ```  
   
 ### Parameters  
- [in] `pWndControl`  
+ [in] *pWndControl*  
  A pointer to a window object for which the user invoked context help.  
   
- [in] `dwHelpIDArray[]`  
+ [in] *dwHelpIDArray[]*  
  A reserved value.  
   
 ### Remarks  
  This method is currently reserved for future use. The default implementation does nothing and it is currently not called by the framework.  
   
 ##  <a name="onclosingmainframe"></a>  CWinAppEx::OnClosingMainFrame  
- The framework calls this method when a frame window is processing `WM_CLOSE`.  
+ The framework calls this method when a frame window is processing WM_CLOSE.  
   
 ```  
 virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 ```  
   
 ### Parameters  
- [in] `pFrameImpl`  
+ [in] *pFrameImpl*  
  A pointer to a `CFrameImpl` object.  
   
 ### Remarks  
- The default implementation of this method saves the state of `pFrameImpl`.  
+ The default implementation of this method saves the state of *pFrameImpl*.  
   
 ##  <a name="onviewdoubleclick"></a>  CWinAppEx::OnViewDoubleClick  
  Calls the user-defined command that is associated with a view when the user double-clicks anywhere within that view.  
@@ -839,17 +839,17 @@ virtual BOOL OnViewDoubleClick(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to an object derived from the [CView Class](../../mfc/reference/cview-class.md).  
   
- [in] `iViewId`  
+ [in] *iViewId*  
  The view ID.  
   
 ### Return Value  
- `True` if the framework finds a command; otherwise false.  
+ TRUE if the framework finds a command; otherwise FALSE.  
   
 ### Remarks  
- In order to support custom mouse behavior, you must call this function when you process the `WM_LBUTTONDBLCLK` message. This method will execute the command associated with the view ID supplied by `iViewId`. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md).  
+ In order to support custom mouse behavior, you must call this function when you process the WM_LBUTTONDBLCLK message. This method will execute the command associated with the view ID supplied by *iViewId*. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md).  
   
 ##  <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle  
 
@@ -859,7 +859,7 @@ virtual BOOL OnWorkspaceIdle(CWnd*);
 ```  
   
 ### Parameters  
- [in] `CWnd*`  
+ [in] *CWnd&#38;*  
   
 ### Return Value  
   
@@ -893,7 +893,7 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] `pFrame`  
+ [in] *pFrame*  
  A pointer to a frame window.  
   
 ### Return Value  
@@ -937,22 +937,22 @@ BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszSectionName`  
+ [in] *lpszSectionName*  
  A string that contains the relative path of a registry key.  
   
- [in] `pFrameImpl`  
+ [in] *pFrameImpl*  
  A pointer to a `CFrameImpl` object. This frame is saved to the Windows registry.  
   
- [in] `pFrame`  
+ [in] *pFrame*  
  A pointer to a frame window object. This frame is saved to the Windows registry.  
   
 ### Return Value  
- `True` if successful; `false` otherwise.  
+ TRUE if successful; FALSE otherwise.  
   
 ### Remarks  
  This method saves the state of the application and any state information for the provided frame window. If you do not provide a frame window, the method only saves the application state. The application information includes the state of the [CMouseManager Class](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager Class](../../mfc/reference/ckeyboardmanager-class.md), and the [CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md).  
   
- The `lpszSectionName` parameter is not the absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSectionName* parameter is not the absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
 ##  <a name="setregistrybase"></a>  CWinAppEx::SetRegistryBase  
  Sets the default registry path for the application.  
@@ -962,7 +962,7 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
 ```  
   
 ### Parameters  
- [in] `lpszSectionName`  
+ [in] *lpszSectionName*  
  A string that contains the path of a registry key.  
   
 ### Return Value  
@@ -982,20 +982,20 @@ virtual BOOL ShowPopupMenu(
 ```  
   
 ### Parameters  
- [in] `uiMenuResId`  
+ [in] *uiMenuResId*  
  A menu resource ID.  
   
- [in] `point`  
+ [in] *point*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) that specifies the position of the menu in screen coordinates.  
   
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the window that owns the popup menu.  
   
 ### Return Value  
  Nonzero if the popup menu is displayed successfully; 0 otherwise.  
   
 ### Remarks  
- This method displays the menu associated with `uiMenuResId`.  
+ This method displays the menu associated with *uiMenuResId*.  
   
  To support popup menus, you must have a [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object. If you have not initialized the `CContextMenuManager` object, `ShowPopupMenu` will fail.  
   
@@ -1010,13 +1010,13 @@ virtual BOOL StoreWindowPlacement(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
+ [in] *nFlags*  
  Flags that control the position of the minimized window and how the operating system switches between a minimized window and a restored window.  
   
- [in] `nShowCmd`  
+ [in] *nShowCmd*  
  An integer that specifies the show state of the window. For more information about possible values, see [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
- [in] `rectNormalPosition`  
+ [in] *rectNormalPosition*  
  A rectangle that contains the coordinates of the main frame window when it is in the restored state.  
   
 ### Return Value  
@@ -1038,22 +1038,22 @@ BOOL WriteBinary(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of a registry key.  
   
- [in] `pData`  
+ [in] *pData*  
  The data to store.  
   
- [in] `nBytes`  
- The size of `pData` in bytes.  
+ [in] *nBytes*  
+ The size of *pData* in bytes.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszEntry` parameter is the name of a registry entry that is located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry that is located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
- If the key specified by `lpszEntry` does not exist, this method will create it.  
+ If the key specified by *lpszEntry* does not exist, this method will create it.  
   
 ##  <a name="writeint"></a>  CWinAppEx::WriteInt  
  Writes numeric data to the registry.  
@@ -1065,19 +1065,19 @@ BOOL WriteInt(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of a registry key.  
   
- [in] `nValue`  
+ [in] *nValue*  
  The data to store.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszEntry` parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
- If the key specified by `lpszEntry` does not exist, this method will create it.  
+ If the key specified by *lpszEntry* does not exist, this method will create it.  
   
 ##  <a name="writeobject"></a>  CWinAppEx::WriteObject  
  Writes data derived from the [CObject Class](../../mfc/reference/cobject-class.md) to the registry.  
@@ -1089,17 +1089,17 @@ BOOL WriteObject(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to set.  
   
- [in] `obj`  
+ [in] *obj*  
  A reference to `CObject` data that the method will store.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- This method writes the `obj` data to the specified value under the default registry key. Use [CWinAppEx::GetRegistryBase](#getregistrybase) to determine the current registry key.  
+ This method writes the *obj* data to the specified value under the default registry key. Use [CWinAppEx::GetRegistryBase](#getregistrybase) to determine the current registry key.  
   
 ##  <a name="writesectionbinary"></a>  CWinAppEx::WriteSectionBinary  
  Writes binary data to a value in the registry.  
@@ -1113,25 +1113,25 @@ BOOL WriteSectionBinary(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the name of a registry key  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to set.  
   
- [in] `pData`  
+ [in] *pData*  
  The data to write to the registry.  
   
- [in] `nBytes`  
- The size of `pData` in bytes.  
+ [in] *nBytes*  
+ The size of *pData* in bytes.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszSubSection` parameter is not the absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSubSection* parameter is not the absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
- If the key specified by `lpszEntry` does not exist, this method will create it.  
+ If the key specified by *lpszEntry* does not exist, this method will create it.  
   
 ##  <a name="writesectionint"></a>  CWinAppEx::WriteSectionInt  
  Writes numeric data to the registry.  
@@ -1144,22 +1144,22 @@ BOOL WriteSectionInt(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the relative path of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to set.  
   
- [in] `nValue`  
+ [in] *nValue*  
  The data to write to the registry.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszSubSection` parameter is not an absolute path for a registry entry. It is a relative path that is appended to the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
- If the key specified by `lpszEntry` does not exist, this method will create it.  
+ If the key specified by *lpszEntry* does not exist, this method will create it.  
   
 ##  <a name="writesectionobject"></a>  CWinAppEx::WriteSectionObject  
  Writes data derived from the [CObject Class](../../mfc/reference/cobject-class.md) to a specific registry value.  
@@ -1172,22 +1172,22 @@ BOOL WriteSectionObject(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the name of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of the value to set.  
   
- [in] `obj`  
+ [in] *obj*  
  The data to store.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszSubSection` parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase), respectively.  
+ The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase), respectively.  
   
- If the value specified by `lpszEntry` does not exist under the registry key specified by `lpszSubSection`, this method will create that value.  
+ If the value specified by *lpszEntry* does not exist under the registry key specified by *lpszSubSection*, this method will create that value.  
   
 ##  <a name="writesectionstring"></a>  CWinAppEx::WriteSectionString  
  Writes string data to a value in the registry.  
@@ -1200,22 +1200,22 @@ BOOL WriteSectionString(
 ```  
   
 ### Parameters  
- [in] `lpszSubSection`  
+ [in] *lpszSubSection*  
  A string that contains the name of a registry key.  
   
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the value to set.  
   
- [in] `lpszValue`  
+ [in] *lpszValue*  
  The string data to write to the registry.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszSubSection` parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase), respectively.  
+ The *lpszSubSection* parameter is not an absolute path for a registry entry. It is a relative path that is appended to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase), respectively.  
   
- If the value specified by `lpszEntry` does not exist under `lpszSubSection`, this method will create it.  
+ If the value specified by *lpszEntry* does not exist under *lpszSubSection*, this method will create it.  
   
 ##  <a name="writestring"></a>  CWinAppEx::WriteString  
  Writes string data to the registry.  
@@ -1227,19 +1227,19 @@ BOOL WriteString(
 ```  
   
 ### Parameters  
- [in] `lpszEntry`  
+ [in] *lpszEntry*  
  A string that contains the name of a registry key.  
   
- [in] `lpszValue`  
+ [in] *lpszValue*  
  The data to store.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise `FALSE`.  
+ TRUE if this method is successful; otherwise FALSE.  
   
 ### Remarks  
- The `lpszEntry` parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
+ The *lpszEntry* parameter is the name of a registry entry located under the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](#getregistrybase) and [CWinAppEx::SetRegistryBase](#setregistrybase) respectively.  
   
- If the key specified by `lspzEntry` does not exist, this method will create it.  
+ If the key specified by *lspzEntry* does not exist, this method will create it.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

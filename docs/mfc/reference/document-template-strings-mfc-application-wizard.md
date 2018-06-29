@@ -32,7 +32,7 @@ In this page of the MFC Application Wizard, provide or refine the following opti
 |**Main frame caption**|Sets the text appearing at the top of the main application frame. By default, the project name.|  
 |**Doc type name**|Identifies the type of document under which a document of the application can be grouped. By default, the project name. Changing the default does not change any other options in this dialog box.|  
 |**Filter name**|Sets the name your users can indicate to find files of your file type. This option is available from the **Files of type** and **Save as type** options in the standard Windows **Open** and **Save as** dialog boxes. By default, the project name plus Files, followed by the extension provided in **File extension**. For example, if your project is named Widget, and the file extension is .wgt, the **Filter name** is Widget Files (*.wgt) by default.|  
-|**File new short name**|Sets the name appearing in the standard Windows `New` dialog box, if there is more than one new document template. If your application is an [Automation server](../../mfc/automation-servers.md), this name is used as the short name of your Automation object. By default, the project name.|  
+|**File new short name**|Sets the name appearing in the standard Windows **New** dialog box, if there is more than one new document template. If your application is an [Automation server](../../mfc/automation-servers.md), this name is used as the short name of your Automation object. By default, the project name.|  
 |**File type long name**|Sets the file type name in the system registry. If your application is an Automation server, this name is used as the long name of your Automation object. By default, the project name plus .Document.|  
   
 ## See Also  
