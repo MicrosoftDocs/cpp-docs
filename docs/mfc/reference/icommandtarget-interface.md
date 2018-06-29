@@ -47,7 +47,7 @@ void Initialize(ICommandSource^ cmdSource);
 ```  
   
 ### Parameters  
- `cmdSource`  
+ *cmdSource*  
  A handle to the command source object.  
   
 ### Remarks  

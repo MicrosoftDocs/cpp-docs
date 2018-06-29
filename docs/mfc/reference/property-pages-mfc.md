@@ -30,7 +30,7 @@ Property pages display the current values of specific OLE control properties in 
 |[DDP_LBStringExact](#ddp_lbstringexact)|Links the selected string in a list box with a control's property. The selected string and the property's string value must match exactly.|  
 |[DDP_PostProcessing](#ddp_postprocessing)|Finishes the transfer of property values from your control.|  
 |[DDP_Radio](#ddp_radio)|Links a radio button group in the control's property page with a control's property.|  
-|[DDP_Text](#ddp_text)|Links a control in the control's property page with a control's property. This function handles several different types of properties, such as **double**, **short**, `BSTR`, and **long**.|  
+|[DDP_Text](#ddp_text)|Links a control in the control's property page with a control's property. This function handles several different types of properties, such as **double**, **short**, BSTR, and **long**.|  
   
  For more information about the `DoDataExchange` function and property pages, see the article [ActiveX Controls: Property Pages](../../mfc/mfc-activex-controls-property-pages.md).  
   
@@ -56,17 +56,17 @@ void AFXAPI DDP_CBIndex(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the combo box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the combo box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the combo box control specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the combo box control specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_CBIndex` function call.  
@@ -86,17 +86,17 @@ void AFXAPI DDP_CBString(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the combo box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the combo box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the combo box string specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the combo box string specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_CBString` function call.  
@@ -116,17 +116,17 @@ void AFXAPI DDP_CBStringExact(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the combo box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the combo box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the combo box string specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the combo box string specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_CBStringExact` function call.  
@@ -146,17 +146,17 @@ void AFXAPI DDP_Check(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the check box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the check box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the check box control specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the check box control specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_Check` function call.  
@@ -176,17 +176,17 @@ void AFXAPI DDP_LBIndex(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the list box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the list box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the list box string specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the list box string specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_LBIndex` function call.  
@@ -206,17 +206,17 @@ void AFXAPI DDP_LBString(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the list box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the list box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the list box string specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the list box string specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_LBString` function call.  
@@ -236,17 +236,17 @@ void AFXAPI DDP_LBStringExact(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the list box control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the list box control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the list box string specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the list box string specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_LBStringExact` function call.  
@@ -262,7 +262,7 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
 ### Remarks  
@@ -285,17 +285,17 @@ void AFXAPI DDP_Radio(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the radio button control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the radio button control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the radio button control specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the radio button control specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_Radio` function call.  
@@ -357,17 +357,17 @@ void AFXAPI DDP_Text(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  Pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `id`  
- The resource ID of the control associated with the control property specified by `pszPropName`.  
+ *id*  
+ The resource ID of the control associated with the control property specified by *pszPropName*.  
   
- `member`  
- The member variable associated with the property page control specified by `id` and the property specified by `pszPropName`.  
+ *member*  
+ The member variable associated with the property page control specified by *id* and the property specified by *pszPropName*.  
   
- `pszPropName`  
- The property name of the control property to be exchanged with the control specified by `id`.  
+ *pszPropName*  
+ The property name of the control property to be exchanged with the control specified by *id*.  
   
 ### Remarks  
  This function should be called before the corresponding `DDX_Text` function call.  
@@ -390,7 +390,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
  The number of property pages used by the control class.  
   
 ### Remarks  
- In the implementation (.cpp) file that defines the member functions for your class, start the property page list with the `BEGIN_PROPPAGEIDS` macro, then add macro entries for each of your property pages, and complete the property page list with the `END_PROPPAGEIDS` macro.  
+ In the implementation (.cpp) file that defines the member functions for your class, start the property page list with the BEGIN_PROPPAGEIDS macro, then add macro entries for each of your property pages, and complete the property page list with the END_PROPPAGEIDS macro.  
   
  For more information on property pages, see the article [ActiveX Controls: Property Pages](../../mfc/mfc-activex-controls-property-pages.md).  
   
@@ -419,11 +419,11 @@ PROPPAGEID(clsid)
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  The unique class ID of a property page.  
   
 ### Remarks  
- All `PROPPAGEID` macros must be placed between the `BEGIN_PROPPAGEIDS` and `END_PROPPAGEIDS` macros in your control's implementation file.  
+ All PROPPAGEID macros must be placed between the BEGIN_PROPPAGEIDS and END_PROPPAGEIDS macros in your control's implementation file.  
 
 ### Requirements  
   **Header** afxctl.h  

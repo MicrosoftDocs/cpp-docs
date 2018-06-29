@@ -34,7 +34,7 @@ This topic lists the Record Field Exchange (RFX, Bulk RFX, and DFX) functions us
 |[RFX_Binary](#rfx_binary)|Transfers arrays of bytes of type [CByteArray](cbytearray-class.md).|  
 |[RFX_Bool](#rfx_bool)|Transfers Boolean data.|  
 |[RFX_Byte](#rfx_byte)|Transfers a single byte of data.|  
-|[RFX_Date](#rfx_date)|Transfers time and date data using [CTime](../../atl-mfc-shared/reference/ctime-class.md) or **TIMESTAMP_STRUCT**.|  
+|[RFX_Date](#rfx_date)|Transfers time and date data using [CTime](../../atl-mfc-shared/reference/ctime-class.md) or TIMESTAMP_STRUCT.|  
 |[RFX_Double](#rfx_double)|Transfers double-precision float data.|  
 |[RFX_Int](#rfx_int)|Transfers integer data.|  
 |[RFX_Long](#rfx_long)|Transfers long integer data.|  
@@ -49,12 +49,12 @@ This topic lists the Record Field Exchange (RFX, Bulk RFX, and DFX) functions us
 |[RFX_Binary_Bulk](#rfx_binary_bulk)|Transfers arrays of byte data.|  
 |[RFX_Bool_Bulk](#rfx_bool_bulk)|Transfers arrays of Boolean data.|  
 |[RFX_Byte_Bulk](#rfx_byte_bulk)|Transfers arrays of single bytes.|  
-|[RFX_Date_Bulk](#rfx_date_bulk)|Transfers arrays of data of type **TIMESTAMP_STRUCT**.|  
+|[RFX_Date_Bulk](#rfx_date_bulk)|Transfers arrays of data of type TIMESTAMP_STRUCT.|  
 |[RFX_Double_Bulk](#rfx_double_bulk)|Transfers arrays of double-precision, floating-point data.|  
 |[RFX_Int_Bulk](#rfx_int_bulk)|Transfers arrays of integer data.|  
 |[RFX_Long_Bulk](#rfx_long_bulk)|Transfers arrays of long integer data.|  
 |[RFX_Single_Bulk](#rfx_single_bulk)|Transfers arrays of floating-point data.|  
-|[RFX_Text_Bulk](#rfx_text_bulk)|Transfers arrays of data of type **LPSTR**.|  
+|[RFX_Text_Bulk](#rfx_text_bulk)|Transfers arrays of data of type LPSTR.|  
   
 ### DFX Functions (DAO)  
   
@@ -75,7 +75,7 @@ This topic lists the Record Field Exchange (RFX, Bulk RFX, and DFX) functions us
  =============================================
 
 ## <a name="rfx_binary"></a>  RFX_Binary
-Transfers arrays of bytes between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_BINARY**, **SQL_VARBINARY**, or **SQL_LONGVARBINARY**.  
+Transfers arrays of bytes between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_BINARY, SQL_VARBINARY, or SQL_LONGVARBINARY.  
   
 ### Syntax  
   
@@ -88,17 +88,17 @@ void RFX_Binary(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type [CByteArray](cbytearray-class.md), is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `nMaxLength`  
- The maximum allowed length of the string or array being transferred. The default value of `nMaxLength` is 255. Legal values are 1 to `INT_MAX`. The framework allocates this amount of space for the data. For best performance, pass a value large enough to accommodate the largest data item you expect.  
+ *nMaxLength*  
+ The maximum allowed length of the string or array being transferred. The default value of *nMaxLength* is 255. Legal values are 1 to INT_MAX. The framework allocates this amount of space for the data. For best performance, pass a value large enough to accommodate the largest data item you expect.  
   
 ### Remarks  
  Data in the data source of these types is mapped to and from type `CByteArray` in the recordset.  
@@ -110,7 +110,7 @@ void RFX_Binary(
  **Header:** afxdb.h  
 
 ## <a name="rfx_bool"></a>  RFX_Bool
-Transfers Boolean data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_BIT**.  
+Transfers Boolean data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_BIT.  
   
 ### Syntax  
   
@@ -122,14 +122,14 @@ void RFX_Bool(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
- The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **BOOL**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
+ The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type BOOL, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
 ### Example  
  See [RFX_Text](#rfx_text).  
@@ -138,7 +138,7 @@ void RFX_Bool(
  **Header:** afxdb.h  
 
 ## <a name="rfx_byte"></a>  RFX_Byte
-Transfers single bytes between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_TINYINT**.  
+Transfers single bytes between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_TINYINT.  
   
 ### Syntax  
   
@@ -150,14 +150,14 @@ void RFX_Byte(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
- The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **BYTE**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
+ The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type BYTE, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
 ### Example  
  See [RFX_Text](#rfx_text).  
@@ -166,7 +166,7 @@ void RFX_Byte(
  **Header:** afxdb.h  
 
 ## <a name="rfx_date"></a>  RFX_Date
-Transfers `CTime` or **TIMESTAMP_STRUCT** data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_DATE**, **SQL_TIME**, or **SQL_TIMESTAMP**.  
+Transfers `CTime` or TIMESTAMP_STRUCT data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_DATE, SQL_TIME, or SQL_TIMESTAMP.  
   
 ### Syntax  
   
@@ -188,10 +188,10 @@ void RFX_Date(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
@@ -199,7 +199,7 @@ void RFX_Date(
   
  The first version of the function takes a reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object. For a transfer from recordset to data source, this value is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- The second version of the function takes a reference to a **TIMESTAMP_STRUCT** structure. You must set up this structure yourself before the call. Neither dialog data exchange (DDX) support nor code wizard support is available for this version. The third version of the function works similarly to the first version except that it takes a reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object.  
+ The second version of the function takes a reference to a `TIMESTAMP_STRUCT` structure. You must set up this structure yourself before the call. Neither dialog data exchange (DDX) support nor code wizard support is available for this version. The third version of the function works similarly to the first version except that it takes a reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object.  
   
 ### Remarks  
  The `CTime` version of the function imposes the overhead of some intermediate processing and has a somewhat limited range. If you find either of these factors too limiting, use the second version of the function. But note its lack of code wizard and DDX support and the requirement that you set up the structure yourself.  
@@ -211,7 +211,7 @@ void RFX_Date(
  **Header:** afxdb.h  
 
 ## <a name="rfx_double"></a>  RFX_Double
-Transfers **double float** data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_DOUBLE**.  
+Transfers **double float** data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_DOUBLE.  
   
 ### Syntax  
   
@@ -223,10 +223,10 @@ void RFX_Double(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
@@ -239,7 +239,7 @@ void RFX_Double(
  **Header:** afxdb.h  
 
 ## <a name="rfx_int"></a>  RFX_Int
-Transfers integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_SMALLINT**.  
+Transfers integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_SMALLINT.  
   
 ### Syntax  
   
@@ -251,14 +251,14 @@ void RFX_Int(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
- The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type `int`, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
+ The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **int**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
 ### Example  
  See [RFX_Text](#rfx_text).  
@@ -267,7 +267,7 @@ void RFX_Int(
  **Header:** afxdb.h  
 
 ## <a name="rfx_long"></a>  RFX_Long
-Transfers long integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_INTEGER**.  
+Transfers long integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_INTEGER.  
   
 ### Syntax  
   
@@ -280,10 +280,10 @@ value );
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
@@ -296,7 +296,7 @@ value );
  **Header:** afxdb.h  
   
 ## <a name="rfx_longbinary"></a>  RFX_LongBinary
-Transfers binary large object (BLOB) data using class [CLongBinary](clongbinary-class.md) between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_LONGVARBINARY** or **SQL_LONGVARCHAR**.  
+Transfers binary large object (BLOB) data using class [CLongBinary](clongbinary-class.md) between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_LONGVARBINARY or SQL_LONGVARCHAR.  
   
 ### Syntax  
   
@@ -308,10 +308,10 @@ void RFX_LongBinary(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
@@ -324,7 +324,7 @@ void RFX_LongBinary(
  **Header:** afxdb.h  
 
 ## <a name="rfx_single"></a>  RFX_Single
-Transfers floating-point data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_REAL**.  
+Transfers floating-point data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_REAL.  
   
 ### Syntax  
   
@@ -336,10 +336,10 @@ void RFX_Single(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
@@ -353,7 +353,7 @@ void RFX_Single(
   
 
 ## <a name="rfx_text"></a>  RFX_Text
-Transfers `CString` data between the field data members of a `CRecordset` object and columns of a record on the data source of ODBC type **SQL_LONGVARCHAR**, **SQL_CHAR**, **SQL_VARCHAR**, **SQL_DECIMAL**, or **SQL_NUMERIC**.  
+Transfers `CString` data between the field data members of a `CRecordset` object and columns of a record on the data source of ODBC type SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL, or SQL_NUMERIC.  
   
 ### Syntax  
   
@@ -368,23 +368,23 @@ void RFX_Text(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class `CFieldExchange`. This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type `CString`, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `nMaxLength`  
- The maximum allowed length of the string or array being transferred. The default value of `nMaxLength` is 255. Legal values are 1 to `INT_MAX`). The framework allocates this amount of space for the data. For best performance, pass a value large enough to accommodate the largest data item you expect.  
+ *nMaxLength*  
+ The maximum allowed length of the string or array being transferred. The default value of *nMaxLength* is 255. Legal values are 1 to INT_MAX). The framework allocates this amount of space for the data. For best performance, pass a value large enough to accommodate the largest data item you expect.  
   
  *nColumnType*  
  Used mainly for parameters. An integer indicating the data type of the parameter. The type is an ODBC data type of the form **SQL_XXX**.  
   
- `nScale`  
- Specifies the scale for values of ODBC type **SQL_DECIMAL** or **SQL_NUMERIC**. `nScale` is only useful when setting parameter values. For more information, see the topic "Precision, Scale, Length, and Display Size" in Appendix D of the *ODBC SDK Programmer's Reference*.  
+ *nScale*  
+ Specifies the scale for values of ODBC type SQL_DECIMAL or SQL_NUMERIC. *nScale* is only useful when setting parameter values. For more information, see the topic "Precision, Scale, Length, and Display Size" in Appendix D of the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
  Data in the data source of all of these types is mapped to and from `CString` in the recordset.  
@@ -429,28 +429,28 @@ void RFX_Binary_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgByteVals`  
- A pointer to an array of **BYTE** values. This array will store the data to be transferred from the data source to the recordset.  
+ *prgByteVals*  
+ A pointer to an array of BYTE values. This array will store the data to be transferred from the data source to the recordset.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgByteVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgByteVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
- `nMaxLength`  
- The maximum allowed length of the values stored in the array pointed to by `prgByteVals`. To ensure that data will not be truncated, pass a value large enough to accommodate the largest data item you expect.  
+ *nMaxLength*  
+ The maximum allowed length of the values stored in the array pointed to by *prgByteVals*. To ensure that data will not be truncated, pass a value large enough to accommodate the largest data item you expect.  
   
 ### Remarks  
- The data source column can have an ODBC type of **SQL_BINARY**, **SQL_VARBINARY**, or **SQL_LONGVARBINARY**. The recordset must define a field data member of type pointer to **BYTE**.  
+ The data source column can have an ODBC type of SQL_BINARY, SQL_VARBINARY, or SQL_LONGVARBINARY. The recordset must define a field data member of type pointer to BYTE.  
   
- If you initialize `prgByteVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgByteVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. In order to make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. In order to make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -474,25 +474,25 @@ void RFX_Bool_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgBoolVals`  
- A pointer to an array of **BOOL** values. This array will store the data to be transferred from the data source to the recordset.  
+ *prgBoolVals*  
+ A pointer to an array of BOOL values. This array will store the data to be transferred from the data source to the recordset.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgBoolVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgBoolVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
- The data source column must have an ODBC type of **SQL_BIT**. The recordset must define a field data member of type pointer to **BOOL**.  
+ The data source column must have an ODBC type of SQL_BIT. The recordset must define a field data member of type pointer to BOOL.  
   
- If you initialize `prgBoolVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgBoolVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -516,25 +516,25 @@ void RFX_Byte_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgByteVals`  
- A pointer to an array of **BYTE** values. This array will store the data to be transferred from the data source to the recordset.  
+ *prgByteVals*  
+ A pointer to an array of BYTE values. This array will store the data to be transferred from the data source to the recordset.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgByteVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgByteVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
- The data source column must have an ODBC type of **SQL_TINYINT**. The recordset must define a field data member of type pointer to **BYTE**.  
+ The data source column must have an ODBC type of SQL_TINYINT. The recordset must define a field data member of type pointer to BYTE.  
   
- If you initialize `prgByteVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgByteVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -545,7 +545,7 @@ void RFX_Byte_Bulk(
  **Header:** afxdb.h  
   
 ## <a name="rfx_date_bulk"></a>  RFX_Date_Bulk
-Transfers multiple rows of **TIMESTAMP_STRUCT** data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
+Transfers multiple rows of TIMESTAMP_STRUCT data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
   
@@ -558,25 +558,25 @@ void RFX_Date_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgTSVals`  
- A pointer to an array of **TIMESTAMP_STRUCT** values. This array will store the data to be transferred from the data source to the recordset. For more information about the **TIMESTAMP_STRUCT** data type, see the topic "C Data Types" in Appendix D of the *ODBC SDK Programmer's Reference*.  
+ *prgTSVals*  
+ A pointer to an array of TIMESTAMP_STRUCT values. This array will store the data to be transferred from the data source to the recordset. For more information about the TIMESTAMP_STRUCT data type, see the topic "C Data Types" in Appendix D of the *ODBC SDK Programmer's Reference*.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgTSVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgTSVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
- The data source column can have an ODBC type of **SQL_DATE**, **SQL_TIME**, or **SQL_TIMESTAMP**. The recordset must define a field data member of type pointer to **TIMESTAMP_STRUCT**.  
+ The data source column can have an ODBC type of SQL_DATE, SQL_TIME, or SQL_TIMESTAMP. The recordset must define a field data member of type pointer to TIMESTAMP_STRUCT.  
   
- If you initialize `prgTSVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgTSVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -600,25 +600,25 @@ void RFX_Double_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgDblVals`  
+ *prgDblVals*  
  A pointer to an array of **double** values. This array will store the data to be transferred from the data source to the recordset.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgDblVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgDblVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
- The data source column must have an ODBC type of **SQL_DOUBLE**. The recordset must define a field data member of type pointer to **double**.  
+ The data source column must have an ODBC type of SQL_DOUBLE. The recordset must define a field data member of type pointer to **double**.  
   
- If you initialize `prgDblVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgDblVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -629,7 +629,7 @@ void RFX_Double_Bulk(
  **Header:** afxdb.h  
 
 ## <a name="rfx_int_bulk"></a>  RFX_Int_Bulk
-Transfers integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_SMALLINT**.  
+Transfers integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type SQL_SMALLINT.  
   
 ### Syntax  
   
@@ -641,14 +641,14 @@ void RFX_Int(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CFieldExchange](cfieldexchange-class.md). This object contains information to define the context for each call of the function. For more information about the operations a `CFieldExchange` object can specify, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
- The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type `int`, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
+ The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **int**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
 ### Example  
  See [RFX_Text](#rfx_text).  
@@ -670,25 +670,25 @@ void RFX_Long_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgLongVals`  
+ *prgLongVals*  
  A pointer to an array of long integers. This array will store the data to be transferred from the data source to the recordset.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgLongVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgLongVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
- The data source column must have an ODBC type of **SQL_INTEGER**. The recordset must define a field data member of type pointer to **long**.  
+ The data source column must have an ODBC type of SQL_INTEGER. The recordset must define a field data member of type pointer to **long**.  
   
- If you initialize `prgLongVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgLongVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -712,25 +712,25 @@ void RFX_Single_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgFltVals`  
+ *prgFltVals*  
  A pointer to an array of **float** values. This array will store the data to be transferred from the data source to the recordset.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgFltVals`. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgFltVals*. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
 ### Remarks  
- The data source column must have an ODBC type of **SQL_REAL**. The recordset must define a field data member of type pointer to **float**.  
+ The data source column must have an ODBC type of SQL_REAL. The recordset must define a field data member of type pointer to **float**.  
   
- If you initialize `prgFltVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgFltVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -756,28 +756,28 @@ void RFX_Text_Bulk(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to a [CFieldExchange](cfieldexchange-class.md) object. This object contains information to define the context for each call of the function. For more information, see the article [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
- `prgStrVals`  
- A pointer to an array of **LPSTR** values. This array will store the data to be transferred from the data source to the recordset. Note that with the current version of ODBC, these values cannot be Unicode.  
+ *prgStrVals*  
+ A pointer to an array of LPSTR values. This array will store the data to be transferred from the data source to the recordset. Note that with the current version of ODBC, these values cannot be Unicode.  
   
- `prgLengths`  
- A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by `prgStrVals`. This length excludes the null termination character. Note that the value **SQL_NULL_DATA** will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function **SQLBindCol** in the *ODBC SDK Programmer's Reference*.  
+ *prgLengths*  
+ A pointer to an array of long integers. This array will store the length in bytes of each value in the array pointed to by *prgStrVals*. This length excludes the null termination character. Note that the value SQL_NULL_DATA will be stored if the corresponding data item contains a Null value. For more details, see the ODBC API function `SQLBindCol` in the *ODBC SDK Programmer's Reference*.  
   
- `nMaxLength`  
- The maximum allowed length of the values stored in the array pointed to by `prgStrVals`, including the null termination character. To ensure that data will not be truncated, pass a value large enough to accommodate the largest data item you expect.  
+ *nMaxLength*  
+ The maximum allowed length of the values stored in the array pointed to by *prgStrVals*, including the null termination character. To ensure that data will not be truncated, pass a value large enough to accommodate the largest data item you expect.  
   
 ### Remarks  
- The data source column can have an ODBC type of **SQL_LONGVARCHAR**, **SQL_CHAR**, **SQL_VARCHAR**, **SQL_DECIMAL**, or **SQL_NUMERIC**. The recordset must define a field data member of type **LPSTR**.  
+ The data source column can have an ODBC type of SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL, or SQL_NUMERIC. The recordset must define a field data member of type LPSTR.  
   
- If you initialize `prgStrVals` and `prgLengths` to **NULL**, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
+ If you initialize *prgStrVals* and *prgLengths* to NULL, then the arrays they point to will be allocated automatically, with sizes equal to the rowset size.  
   
 > [!NOTE]
->  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function **SQLSetPos**.  
+>  Bulk record field exchange only transfers data from the data source to the recordset object. To make your recordset updateable, you must use the ODBC API function `SQLSetPos`.  
   
  For more information, see the articles [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -817,26 +817,26 @@ void AFXAPI DFX_Binary(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type [CByteArray](cbytearray-class.md), is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `nPreAllocSize`  
- The framework preallocates this amount of memory. If your data is larger, the framework will allocated more space as needed. For better performance, set this size to a value large enough to prevent reallocations. The default size is defined in the AFXDAO.H file as **AFX_DAO_BINARY_DEFAULT_SIZE**.  
+ *nPreAllocSize*  
+ The framework preallocates this amount of memory. If your data is larger, the framework will allocated more space as needed. For better performance, set this size to a value large enough to prevent reallocations. The default size is defined in the AFXDAO.H file as AFX_DAO_BINARY_DEFAULT_SIZE.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_DISABLE_FIELD_CACHE`, does not use double buffering, and you must call [SetFieldDirty](cdaorecordset-class.md#setfielddirty) and [SetFieldNull](cdaorecordset-class.md#setfieldnull) yourself. The other possible value, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering, and you do not have to do extra work to mark fields dirty or Null. For performance and memory reasons, avoid this value unless your binary data is relatively small.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_DISABLE_FIELD_CACHE, does not use double buffering, and you must call [SetFieldDirty](cdaorecordset-class.md#setfielddirty) and [SetFieldNull](cdaorecordset-class.md#setfieldnull) yourself. The other possible value, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering, and you do not have to do extra work to mark fields dirty or Null. For performance and memory reasons, avoid this value unless your binary data is relatively small.  
   
 > [!NOTE]
 >  You can control whether data is double buffered for all fields by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_BYTES** in DAO and type [CByteArray](cbytearray-class.md) in the recordset.  
+ Data is mapped between type DAO_BYTES in DAO and type [CByteArray](cbytearray-class.md) in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -859,23 +859,23 @@ void AFXAPI DFX_Bool(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
- The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **BOOL**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
+ The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type BOOL, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_BOOL** in DAO and type **BOOL** in the recordset.  
+ Data is mapped between type DAO_BOOL in DAO and type BOOL in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -897,23 +897,23 @@ void AFXAPI DFX_Byte(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
- The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **BYTE**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
+ The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type BYTE, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_BYTES** in DAO and type **BYTE** in the recordset.  
+ Data is mapped between type DAO_BYTES in DAO and type BYTE in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -935,23 +935,23 @@ void AFXAPI DFX_Currency(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, this value is taken from the specified data member, of type [COleCurrency](colecurrency-class.md). For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_CURRENCY** in DAO and type [COleCurrency](colecurrency-class.md) in the recordset.  
+ Data is mapped between type DAO_CURRENCY in DAO and type [COleCurrency](colecurrency-class.md) in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -973,26 +973,26 @@ void AFXAPI DFX_DateTime(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. The function takes a reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object. For a transfer from recordset to data source, this value is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_DATE** in DAO and type [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) in the recordset.  
+ Data is mapped between type DAO_DATE in DAO and type [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) in the recordset.  
   
 > [!NOTE]
->  `COleDateTime` replaces [CTime](../../atl-mfc-shared/reference/ctime-class.md) and **TIMESTAMP_STRUCT** for this purpose in the DAO classes. `CTime` and **TIMESTAMP_STRUCT** are still used for the ODBC-based data access classes.  
+>  `COleDateTime` replaces [CTime](../../atl-mfc-shared/reference/ctime-class.md) and TIMESTAMP_STRUCT for this purpose in the DAO classes. `CTime` and TIMESTAMP_STRUCT are still used for the ODBC-based data access classes.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -1014,23 +1014,23 @@ void AFXAPI DFX_Double(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **double**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_R8** in DAO and type **double float** in the recordset.  
+ Data is mapped between type DAO_R8 in DAO and type **double float** in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -1052,23 +1052,23 @@ void AFXAPI DFX_Long(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **long**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_I4** in DAO and type **long** in the recordset.  
+ Data is mapped between type DAO_I4 in DAO and type **long** in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -1092,10 +1092,10 @@ void AFXAPI DFX_LongBinary(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
@@ -1104,14 +1104,14 @@ void AFXAPI DFX_LongBinary(
  *dwPreAllocSize*  
  The framework preallocates this amount of memory. If your data is larger, the framework will allocated more space as needed. For better performance, set this size to a value large enough to prevent reallocations.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, **AFX_DISABLE_FIELD_CACHE**, does not use double buffering. The other possible value is `AFX_DAO_ENABLE_FIELD_CACHE`. Uses double buffering, and you do not have to do extra work to mark fields dirty or Null. For performance and memory reasons, avoid this value unless your binary data is relatively small.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DISABLE_FIELD_CACHE, does not use double buffering. The other possible value is AFX_DAO_ENABLE_FIELD_CACHE. Uses double buffering, and you do not have to do extra work to mark fields dirty or Null. For performance and memory reasons, avoid this value unless your binary data is relatively small.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- `DFX_LongBinary` is provided for compatibility with the MFC ODBC classes. The `DFX_LongBinary` function transfers binary large-object (BLOB) data using class `CLongBinary` between the field data members of a [CDaoRecordset](cdaorecordset-class.md) object and the columns of a record on the data source. Data is mapped between type **DAO_BYTES** in DAO and type [CLongBinary](clongbinary-class.md) in the recordset.  
+ `DFX_LongBinary` is provided for compatibility with the MFC ODBC classes. The `DFX_LongBinary` function transfers binary large-object (BLOB) data using class `CLongBinary` between the field data members of a [CDaoRecordset](cdaorecordset-class.md) object and the columns of a record on the data source. Data is mapped between type DAO_BYTES in DAO and type [CLongBinary](clongbinary-class.md) in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -1133,23 +1133,23 @@ void AFXAPI DFX_Short(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **short**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_I2** in DAO and type **short** in the recordset.  
+ Data is mapped between type DAO_I2 in DAO and type **short** in the recordset.  
   
 > [!NOTE]
 >  `DFX_Short` is equivalent to [RFX_Int](#rfx_int) for the ODBC-based classes.  
@@ -1175,23 +1175,23 @@ void AFXAPI DFX_Single(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type **float**, is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_R4** in DAO and type **float** in the recordset.  
+ Data is mapped between type DAO_R4 in DAO and type **float** in the recordset.  
   
 ### Example  
  See [DFX_Text](#dfx_text).  
@@ -1214,26 +1214,26 @@ void AFXAPI DFX_Text(
 ```  
   
 ### Parameters  
- `pFX`  
+ *pFX*  
  A pointer to an object of class [CDaoFieldExchange](cdaofieldexchange-class.md). This object contains information to define the context for each call of the function.  
   
- `szName`  
+ *szName*  
  The name of a data column.  
   
  *value*  
  The value stored in the indicated data member — the value to be transferred. For a transfer from recordset to data source, the value, of type [CString](../../atl-mfc-shared/reference/cstringt-class.md), is taken from the specified data member. For a transfer from data source to recordset, the value is stored in the specified data member.  
   
- `nPreAllocSize`  
+ *nPreAllocSize*  
  The framework preallocates this amount of memory. If your data is larger, the framework will allocated more space as needed. For better performance, set this size to a value large enough to prevent reallocations.  
   
- `dwBindOptions`  
- An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, `AFX_DAO_ENABLE_FIELD_CACHE`, uses double buffering. The other possible value is `AFX_DAO_DISABLE_FIELD_CACHE`. If you specify this value, MFC does no checking on this field. You must call [SetFieldDirty](cdaorecordset-class.md#setfielddirty) and [SetFieldNull](cdaorecordset-class.md#setfieldnull) yourself.  
+ *dwBindOptions*  
+ An option that lets you take advantage of MFC's double buffering mechanism for detecting recordset fields that have changed. The default, AFX_DAO_ENABLE_FIELD_CACHE, uses double buffering. The other possible value is AFX_DAO_DISABLE_FIELD_CACHE. If you specify this value, MFC does no checking on this field. You must call [SetFieldDirty](cdaorecordset-class.md#setfielddirty) and [SetFieldNull](cdaorecordset-class.md#setfieldnull) yourself.  
   
 > [!NOTE]
 >  You can control whether data is double buffered by default by setting [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### Remarks  
- Data is mapped between type **DAO_CHAR** in DAO (or, if the symbol **_UNICODE** is defined, **DAO_WCHAR**) and type [CString](../../atl-mfc-shared/reference/cstringt-class.md) in the recordset.  n
+ Data is mapped between type DAO_CHAR in DAO (or, if the symbol _UNICODE is defined, DAO_WCHAR) and type [CString](../../atl-mfc-shared/reference/cstringt-class.md) in the recordset.  n
   
 ### Example  
  This example shows several calls to `DFX_Text`. Notice also the two calls to [CDaoFieldExchange::SetFieldType](cdaofieldexchange-class.md#setfieldtype). You must write the first call to `SetFieldType` and its **DFX** call. The second call and its associated **DFX** calls are normally written by the code wizard that generated the class.  
