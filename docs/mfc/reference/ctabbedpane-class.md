@@ -55,7 +55,7 @@ class CTabbedPane : public CBaseTabbedPane
 ## Remarks  
  The framework automatically creates an instance of this class when a user attaches one pane to another by pointing to the caption of the second pane. All of the tabbed panes that are created by the framework have an ID of -1.  
   
- To specify regular tabs instead of Outlook-style tabs, pass the `AFX_CBRS_REGULAR_TABS` style to the [CDockablePane::CreateEx](../../mfc/reference/cdockablepane-class.md#createex) method.  
+ To specify regular tabs instead of Outlook-style tabs, pass the AFX_CBRS_REGULAR_TABS style to the [CDockablePane::CreateEx](../../mfc/reference/cdockablepane-class.md#createex) method.  
   
  If you create a tabbed pane with detachable tabs, the pane may be destroyed automatically by the framework, so you should not store the pointer. To get a pointer to the tabbed pane, call the `CBasePane::GetParentTabbedPane` method.  
   
@@ -144,8 +144,8 @@ virtual BOOL DetachPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bHide`  
+ [in] *pBar*  
+ [in] *bHide*  
   
 ### Return Value  
   
@@ -159,8 +159,8 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable auto coloring of tabs; otherwise, `FALSE`.  
+ [in] *bEnable*  
+ TRUE to enable auto coloring of tabs; otherwise, FALSE.  
   
 ### Remarks  
  Use this static method to enable or disable automatic coloring of tabs in all tabbed panes in the application. When this feature is enabled, each tab is filled by its own color. You can find the list of colors that are used to color the tabs by calling the [CMFCBaseTabCtrl::GetAutoColors](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) method.  
@@ -181,10 +181,10 @@ virtual BOOL FloatTab(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `nTabID`  
- [in] `dockMethod`  
- [in] `bHide`  
+ [in] *pBar*  
+ [in] *nTabID*  
+ [in] *dockMethod*  
+ [in] *bHide*  
   
 ### Return Value  
   
@@ -200,10 +200,10 @@ virtual void GetTabArea(
 ```  
   
 ### Parameters  
- [out] `rectTabAreaTop`  
+ [out] *rectTabAreaTop*  
  Contains the size and position, in screen coordinates, of the top tab area.  
   
- [out] `rectTabAreaBottom`  
+ [out] *rectTabAreaBottom*  
  Contains the size and position, in screen coordinates, of the bottom tab area.  
   
 ### Remarks  
@@ -241,7 +241,7 @@ virtual BOOL IsTabLocationBottom() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tab area is located at the bottom of the tabbed window; otherwise, `FALSE`.  
+ TRUE if the tab area is located at the bottom of the tabbed window; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -253,11 +253,11 @@ AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 ```  
   
 ### Remarks  
- Set this static member to `TRUE` to force all tabs in the application to be displayed at the top of the tabbed pane.  
+ Set this static member to TRUE to force all tabs in the application to be displayed at the top of the tabbed pane.  
   
  You must set this value before a tabbed pane has been created.  
   
- The default value is `FALSE`.  
+ The default value is FALSE.  
   
 ##  <a name="m_ptabwndrtc"></a>  CTabbedPane::m_pTabWndRTC  
  Runtime class information for a custom `CMFCTabCtrl`-derived object.  
@@ -287,7 +287,7 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 ```  
   
 ### Parameters  
- [in] `arColors`  
+ [in] *arColors*  
  Contains the array of colors to set.  
   
 ### Remarks  
