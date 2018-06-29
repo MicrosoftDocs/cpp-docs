@@ -17,12 +17,12 @@ When you [add ATL support to an existing MFC executable or DLL](../../mfc/refere
   
 -   Two new files (an .idl file and an .rgs file, used to register the server) are added.  
   
--   In the main application header and implementation files (Mfcexe.h and Mfcexe.cpp), a new class (derived from **CAtlMFCModule**) is added. In addition to the new class, code is added to `InitInstance` for registration. Code is also added to the `ExitInstance` function for revoking the class object. In the header file, Finally, two new header files (Initguid.h and Mfcexe_i.c) are included in the implementation file, declaring and initializing the new GUIDs for the **CAtlMFCModule**-derived class.  
+-   In the main application header and implementation files (Mfcexe.h and Mfcexe.cpp), a new class (derived from `CAtlMFCModule`) is added. In addition to the new class, code is added to `InitInstance` for registration. Code is also added to the `ExitInstance` function for revoking the class object. In the header file, Finally, two new header files (Initguid.h and Mfcexe_i.c) are included in the implementation file, declaring and initializing the new GUIDs for the `CAtlMFCModule`-derived class.  
   
 -   To register the server properly, an entry for the new .rgs file is added to the project's resource file.  
   
 ## Notes for DLL Projects  
- When you add ATL support to an MFC DLL project, you will see some differences. Code is added to the **DLLRegisterServer** and **DLLUnregisterServer** functions for registering and unregistering the DLL. Code is also added to [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#dllcanunloadnow) and [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#dllgetclassobject).  
+ When you add ATL support to an MFC DLL project, you will see some differences. Code is added to the `DLLRegisterServer` and `DLLUnregisterServer` functions for registering and unregistering the DLL. Code is also added to [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#dllcanunloadnow) and [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#dllgetclassobject).  
   
 ## See Also  
  [ATL Support in an MFC Project](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)   

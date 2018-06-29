@@ -63,7 +63,7 @@ CWinFormsView(System::Type^ pManagedViewType);
 ```  
   
 ### Parameters  
- `pManagedViewType`  
+ *pManagedViewType*  
  A pointer to the data type of the Windows Forms user control.   
   
 ### Example  

@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 |[END_DELEGATE_MAP](#end_delegate_map)|Ends a delegate map.|
 |[END_INTERFACE_MAP](#end_interface_map)|Ends the interface map in the implementation file. |
 |[EVENT_DELEGATE_ENTRY](#event_delegate_entry)|Creates an entry in the delegate map.|
-|[INTERFACE_PART](#interface_part)|Used between the `BEGIN_INTERFACE_MAP` macro and the `END_INTERFACE_MAP` macro for each interface your object will support.|
+|[INTERFACE_PART](#interface_part)|Used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for each interface your object will support.|
 |[MAKE_DELEGATE](#make_delegate)|Attaches an event handler to a managed control.|
 
 
@@ -32,7 +32,7 @@ Begins a delegate map.
 BEGIN_DELEGATE_MAP(  CLASS );  
 ```
 ### Parameters  
- `CLASS`  
+ *CLASS*  
  The class in which the managed control is hosted.  
    
 ### Remarks  
@@ -52,14 +52,14 @@ Begins the definition of the interfaced map when used in the implementation file
 BEGIN_INTERFACE_MAP( theClass, baseClass )  
 ```
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class in which the interface map is to be defined  
   
- `baseClass`  
- The class from which `theClass` derives from.  
+ *baseClass*  
+ The class from which *theClass* derives from.  
    
 ### Remarks  
- For each interface that is implemented, there is one or more `INTERFACE_PART` macro invocations. For each aggregate that the class uses, there is one **INTERFACE_AGGREGATE** macro invocation.  
+ For each interface that is implemented, there is one or more INTERFACE_PART macro invocations. For each aggregate that the class uses, there is one INTERFACE_AGGREGATE macro invocation.  
   
  For more information on interface maps, see [Technical Note 38](../tn038-mfc-ole-iunknown-implementation.md).  
    
@@ -74,7 +74,7 @@ Registers callback methods with a command source.
 delegate void CommandHandler(  UINT^ cmdID  );  
 ```
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID.  
    
 ### Remarks  
@@ -98,10 +98,10 @@ Registers callback methods with a user interface update command message.
 delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);  
 ```
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID.  
   
- `cmdUI`  
+ *cmdUI*  
  The command message ID.  
    
 ### Remarks  
@@ -162,20 +162,20 @@ Creates an entry in the delegate map.
 EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);  
 ```
 ### Parameters  
- `MEMBER`  
+ *MEMBER*  
  The event handler method to be attached to the control.  
   
- `ARG0`  
- The first argument of the managed event handler method, such as **Object^**.  
+ *ARG0*  
+ The first argument of the managed event handler method, such as `Object^`.  
   
- `ARG1`  
- The second argument of the managed event handler method, such as **EventArgs^**.  
+ *ARG1*  
+ The second argument of the managed event handler method, such as `EventArgs^`.  
    
 ### Remarks  
  Each entry in the delegate map corresponds to a managed event handler delegate created by [MAKE_DELEGATE](#make_delegate).  
    
 ### Example  
- The following code example shows how to use `EVENT_DELEGATE_ENTRY` to create an entry in the delegate map for the `OnClick` event handler; also see the code example in `MAKE_DELEGATE`. For more information, see [How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
+ The following code example shows how to use EVENT_DELEGATE_ENTRY to create an entry in the delegate map for the `OnClick` event handler; also see the code example in MAKE_DELEGATE. For more information, see [How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
   
  ```cpp
 BEGIN_DELEGATE_MAP(CMyView)
@@ -194,22 +194,22 @@ END_DELEGATE_MAP()
  
 
 ##  <a name="interface_part"></a>INTERFACE_PART
-Used between the `BEGIN_INTERFACE_MAP` macro and the `END_INTERFACE_MAP` macro for each interface your object will support.  
+Used between the BEGIN_INTERFACE_MAP macro and the END_INTERFACE_MAP macro for each interface your object will support.  
    
 ### Syntax    
 ```
 INTERFACE_PART( theClass, iid, localClass)  
 ```
 ### Parameters  
- `theClass`  
+ *theClass*  
  The name of the class that contains the interface map.    
- `iid`  
+ *iid*  
  The IID that is to be mapped to the embedded class.    
  *localClass*  
  The name of the local class.  
    
 ### Remarks  
- It allows you to map an IID to a member of the class indicated by `theClass` and *localClass*.  
+ It allows you to map an IID to a member of the class indicated by *theClass* and *localClass*.  
   
  For more information on interface maps, see [Technical Note 38](../tn038-mfc-ole-iunknown-implementation.md).  
    
@@ -225,14 +225,14 @@ Attaches an event handler to a managed control.
 MAKE_DELEGATE( DELEGATE,  MEMBER) ;  
 ```
 ### Parameters  
- `DELEGATE`  
+ *DELEGATE*  
  The type of the managed event handler delegate, such as [EventHandler](assetId:///T:System.EventHandler?qualifyHint=False&autoUpgrade=True).  
   
- `MEMBER`  
+ *MEMBER*  
  The name of the event handler method to be attached to the control.  
    
 ### Remarks  
- This macro creates a managed event handler delegate of type `DELEGATE` and of the name `MEMBER`. The managed event handler delegate allows a native class to handle managed events.  
+ This macro creates a managed event handler delegate of type *DELEGATE* and of the name *MEMBER*. The managed event handler delegate allows a native class to handle managed events.  
    
 ### Example  
  The following code example shows how to call `MAKE_DELEGATE` to attach an `OnClick` event handler to an MFC control `MyControl`. For a broader explanation of how this macro works in an MFC application, see [How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
