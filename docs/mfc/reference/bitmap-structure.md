@@ -40,7 +40,7 @@ typedef struct tagBITMAP {  /* bm */
  Specifies the height of the bitmap in raster lines. The height must be greater than 0.  
   
  *bmWidthBytes*  
- Specifies the number of bytes in each raster line. This value must be an even number since the graphics device interface (GDI) assumes that the bit values of a bitmap form an array of integer (2-byte) values. In other words, **bmWidthBytes** \* 8 must be the next multiple of 16 greater than or equal to the value obtained when the **bmWidth** member is multiplied by the **bmBitsPixel** member.  
+ Specifies the number of bytes in each raster line. This value must be an even number since the graphics device interface (GDI) assumes that the bit values of a bitmap form an array of integer (2-byte) values. In other words, *bmWidthBytes* \* 8 must be the next multiple of 16 greater than or equal to the value obtained when the *bmWidth* member is multiplied by the *bmBitsPixel* member.  
   
  *bmPlanes*  
  Specifies the number of color planes in the bitmap.  
@@ -49,7 +49,7 @@ typedef struct tagBITMAP {  /* bm */
  Specifies the number of adjacent color bits on each plane needed to define a pixel.  
   
  *bmBits*  
- Points to the location of the bit values for the bitmap. The **bmBits** member must be a long pointer to an array of 1-byte values.  
+ Points to the location of the bit values for the bitmap. The *bmBits* member must be a long pointer to an array of 1-byte values.  
   
 ## Remarks  
  The currently used bitmap formats are monochrome and color. The monochrome bitmap uses a 1-bit, 1-plane format. Each scan is a multiple of 16 bits.  

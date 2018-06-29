@@ -102,10 +102,10 @@ virtual void RepositionFrame(
 ```  
   
 ### Parameters  
- `lpPosRect`  
+ *lpPosRect*  
  Pointer to a `RECT` structure or a `CRect` object containing the in-place frame window's current position coordinates, in pixels, relative to the client area.  
   
- `lpClipRect`  
+ *lpClipRect*  
  Pointer to a `RECT` structure or a `CRect` object containing the in-place frame window's current clipping-rectangle coordinates, in pixels, relative to the client area.  
   
 ### Remarks  

@@ -110,13 +110,13 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Specifies the automatic button's text.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  An RGB value that specifies the automatic button's default color.  
   
- [in] `bEnable`  
+ [in] *bEnable*  
  Specifies whether the automatic button is enabled or disabled.  
   
 ### Remarks  
@@ -132,13 +132,13 @@ void EnableOtherButton(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Specifies the button's text.  
   
- [in] `bAltColorDlg`  
+ [in] *bAltColorDlg*  
  Specifies whether the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box or the system color dialog box is opened when the user clicks the button.  
   
- [in] `bEnable`  
+ [in] *bEnable*  
  Specifies whether the "other" button is enabled or disabled.  
   
 ### Remarks  
@@ -200,13 +200,13 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Points to the device context that is used to render the image of the button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that bounds the button.  
   
- [in] `uiState`  
+ [in] *uiState*  
  Specifies the visual state of the button.  
   
 ### Remarks  
@@ -223,13 +223,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Points to the device context used to draw the border.  
   
- [in] `rectClient`  
- A rectangle in the device context that is specified by the the `pDC` parameter that defines the boundaries of the button to be drawn.  
+ [in] *rectClient*  
+ A rectangle in the device context that is specified by the the *pDC* parameter that defines the boundaries of the button to be drawn.  
   
- [in] `uiState`  
+ [in] *uiState*  
  Specifies the visual state of the button.  
   
 ### Remarks  
@@ -245,11 +245,11 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Points to the device context used to draw the focus rectangle.  
   
- [in] `rectClient`  
- A rectangle in the device context specified by the `pDC` parameter that defines the boundaries of the button.  
+ [in] *rectClient*  
+ A rectangle in the device context specified by the *pDC* parameter that defines the boundaries of the button.  
   
 ### Remarks  
  Override this method to customize appearance of the focus rectangle.  
@@ -274,7 +274,7 @@ void RebuildPalette(CPalette* pPal);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `pPal`|A pointer to a logical palette or `NULL`. If `NULL`, the default system palette is used.|  
+|[in] *pPal*|A pointer to a logical palette or `NULL`. If `NULL`, the default system palette is used.|  
   
 ##  <a name="setcolor"></a>  CMFCColorButton::SetColor  
  Specifies the color of the button.  
@@ -284,7 +284,7 @@ void SetColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  An RGB value.  
   
 ### Remarks  
@@ -299,10 +299,10 @@ static void SetColorName(
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  The color's RGB value.  
   
- [in] `strName`  
+ [in] *strName*  
  The color's name.  
   
 ### Remarks  
@@ -316,7 +316,7 @@ void SetColumnsNumber(int nColumns);
 ```  
   
 ### Parameters  
- [in] `nColumns`  
+ [in] *nColumns*  
  Specifies the number of columns.  
   
 ### Remarks  
@@ -332,14 +332,14 @@ void SetDocumentColors(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Specifies the label to be displayed with the set of document colors.  
   
- [in] `lstColors`  
+ [in] *lstColors*  
  A reference to a list of RGB values.  
   
 ### Remarks  
- A `CMFCColorButton` object maintains a list of RGB values that are transferred to a [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) object. When the color bar is displayed, these colors are shown in a special section whose label is specified by the `lpszLabel` parameter.  
+ A `CMFCColorButton` object maintains a list of RGB values that are transferred to a [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) object. When the color bar is displayed, these colors are shown in a special section whose label is specified by the *lpszLabel* parameter.  
   
 ##  <a name="setpalette"></a>  CMFCColorButton::SetPalette  
  Specifies the standard colors to display on the popup color bar.  
@@ -349,7 +349,7 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### Parameters  
- [in] `pPalette`  
+ [in] *pPalette*  
  A pointer to a color palette.  
   
 ### Remarks  
@@ -362,7 +362,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 ```  
   
 ### Parameters  
- [in] `bCalcOnly`  
+ [in] *bCalcOnly*  
  If nonzero, the new size of the button control is calculated but the actual size is not changed.  
   
 ### Return Value  
@@ -378,11 +378,11 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  A color selected by the user.  
   
 ### Remarks  
- The `UpdateColor` function changes the currently selected button's color and notifies its parent by sending a `WM_COMMAND` message with a `BN_CLICKED` standard notification. Use the [CMFCColorButton::GetColor](#getcolor) method to retrieve the selected color.  
+ The `UpdateColor` function changes the currently selected button's color and notifies its parent by sending a WM_COMMAND message with a BN_CLICKED standard notification. Use the [CMFCColorButton::GetColor](#getcolor) method to retrieve the selected color.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

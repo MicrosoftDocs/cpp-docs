@@ -133,7 +133,7 @@ void EnableFullTextTooltip(BOOL bOn=TRUE);
 ```  
   
 ### Parameters  
- [in] `bOn`  
+ [in] *bOn*  
  `TRUE` to display all of the text; `FALSE` to display truncated text.  
   
 ### Remarks  
@@ -148,10 +148,10 @@ void EnableMenuFont(
 ```  
   
 ### Parameters  
- [in] `bOn`  
+ [in] *bOn*  
  `TRUE` to use the application menu font as the button text font; `FALSE` to use the system font. The default is `TRUE`.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to immediately redraw the screen; otherwise, `FALSE`. The default is `TRUE`.  
   
 ### Remarks  
@@ -165,7 +165,7 @@ static void EnableWindowsTheming(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to use the current Windows theme to draw button borders; `FALSE` to not use the Windows theme. The default is `TRUE`.  
   
 ### Remarks  
@@ -388,13 +388,13 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A reference to a rectangle that bounds the button.  
   
- [in] `uiState`  
+ [in] *uiState*  
  The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](../../mfc/reference/drawitemstruct-structure.md) topic.  
   
 ### Remarks  
@@ -411,13 +411,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A reference to a rectangle that bounds the button.  
   
- [in] `uiState`  
+ [in] *uiState*  
  The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](../../mfc/reference/drawitemstruct-structure.md) topic.  
   
 ### Remarks  
@@ -433,10 +433,10 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A reference to a rectangle that bounds the button.  
   
 ### Remarks  
@@ -455,19 +455,19 @@ virtual void OnDrawText(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A reference to a rectangle that bounds the button.  
   
- [in] `strText`  
+ [in] *strText*  
  The text to draw.  
   
- [in] `uiDTFlags`  
- Flags that specify how to format the text. For more information, see the `nFormat` parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method.  
+ [in] *uiDTFlags*  
+ Flags that specify how to format the text. For more information, see the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method.  
   
- [in] `uiState`  
+ [in] *uiState*  
  (Reserved.)  
   
 ### Remarks  
@@ -483,10 +483,10 @@ virtual void OnFillBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A reference to a rectangle that bounds the button.  
   
 ### Remarks  
@@ -500,7 +500,7 @@ virtual CFont* SelectFont(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Return Value  
@@ -516,11 +516,11 @@ void SetAutorepeatMode(int nTimeDelay=500);
 ```  
   
 ### Parameters  
- [in] `nTimeDelay`  
+ [in] *nTimeDelay*  
  A nonnegative number that specifies the interval between messages that are sent to the parent window. The interval is measured in milliseconds and its default value is 500 milliseconds. Specify zero to disable auto-repeat message mode.  
   
 ### Remarks  
- This method causes the button to constantly send WM_COMMAND messages to the parent window until the button is released, or the `nTimeDelay` parameter is set to zero.  
+ This method causes the button to constantly send WM_COMMAND messages to the parent window until the button is released, or the *nTimeDelay* parameter is set to zero.  
   
 ##  <a name="setcheckedimage"></a>  CMFCButton::SetCheckedImage  
  Sets the image for a checked button.  
@@ -549,40 +549,40 @@ void SetCheckedImage(
 ```  
   
 ### Parameters  
- [in] `hIcon`  
+ [in] *hIcon*  
  Handle to the icon that contains the bitmap and mask for the new image.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  `TRUE` to specify that bitmap resources be destroyed automatically; otherwise, `FALSE`. The default is `TRUE`.  
   
- [in] `hIconHot`  
+ [in] *hIconHot*  
  Handle to the icon that contains the image for the selected state.  
   
- [in] `hBitmap`  
+ [in] *hBitmap*  
  Handle to the bitmap that contains the image for the non-selected state.  
   
- [in] `hBitmapHot`  
+ [in] *hBitmapHot*  
  Handle to the bitmap that contains the image for the selected state.  
   
- [in] `bMap3dColors`  
+ [in] *bMap3dColors*  
  Specifies a transparent color for the button background; that is, the face of the button. `TRUE` to use the color value RGB(192, 192, 192); `FALSE` to use the color value defined by `AFX_GLOBAL_DATA::clrBtnFace`.  
   
- [in] `uiBmpResId`  
+ [in] *uiBmpResId*  
  Resource ID for the non-selected image.  
   
- [in] `uiBmpHotResId`  
+ [in] *uiBmpHotResId*  
  Resource ID for the selected image.  
   
- [in] `hIconDisabled`  
+ [in] *hIconDisabled*  
  Handle to the icon for the disabled image.  
   
- [in] `hBitmapDisabled`  
+ [in] *hBitmapDisabled*  
  Handle to the bitmap that contains the disabled image.  
   
- [in] `uiBmpDsblResID`  
+ [in] *uiBmpDsblResID*  
  Resource ID of the disabled bitmap.  
   
- [in] `bAlphaBlend`  
+ [in] *bAlphaBlend*  
  `TRUE` to use only 32-bit images that use the alpha channel; `FALSE`, to not use only alpha channel images. The default is `FALSE`.  
   
 ### Remarks  
@@ -597,10 +597,10 @@ void SetFaceColor(
 ```  
   
 ### Parameters  
- [in] `crFace`  
+ [in] *crFace*  
  An RGB color value.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` to redraw the screen immediately; otherwise, `FALSE`.  
   
 ### Remarks  
@@ -633,40 +633,40 @@ void SetImage(
 ```  
   
 ### Parameters  
- [in] `hIcon`  
+ [in] *hIcon*  
  Handle to the icon that contains the bitmap and mask for the new image.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  `TRUE` to specify that bitmap resources be destroyed automatically; otherwise, `FALSE`. The default is `TRUE`.  
   
- [in] `hIconHot`  
+ [in] *hIconHot*  
  Handle to the icon that contains the image for the selected state.  
   
- [in] `hBitmap`  
+ [in] *hBitmap*  
  Handle to the bitmap that contains the image for the non-selected state.  
   
- [in] `hBitmapHot`  
+ [in] *hBitmapHot*  
  Handle to the bitmap that contains the image for the selected state.  
   
- [in] `uiBmpResId`  
+ [in] *uiBmpResId*  
  Resource ID for the non-selected image.  
   
- [in] `uiBmpHotResId`  
+ [in] *uiBmpHotResId*  
  Resource ID for the selected image.  
   
- [in] `bMap3dColors`  
+ [in] *bMap3dColors*  
  Specifies a transparent color for the button background; that is, the face of the button. `TRUE` to use the color value RGB(192, 192, 192); `FALSE` to use the color value defined by `AFX_GLOBAL_DATA::clrBtnFace`.  
   
- [in] `hIconDisabled`  
+ [in] *hIconDisabled*  
  Handle to the icon for the disabled image.  
   
- [in] `hBitmapDisabled`  
+ [in] *hBitmapDisabled*  
  Handle to the bitmap that contains the disabled image.  
   
- [in] `uiBmpDsblResID`  
+ [in] *uiBmpDsblResID*  
  Resource ID of the disabled bitmap.  
   
- [in] `bAlphaBlend`  
+ [in] *bAlphaBlend*  
  `TRUE` to use only 32-bit images that use the alpha channel; `FALSE`, to not use only alpha channel images. The default is `FALSE`.  
   
 ### Remarks  
@@ -685,7 +685,7 @@ void SetMouseCursor(HCURSOR hcursor);
 ```  
   
 ### Parameters  
- [in] `hcursor`  
+ [in] *hcursor*  
  The handle of a cursor.  
   
 ### Remarks  
@@ -718,13 +718,13 @@ void SetStdImage(
 ```  
   
 ### Parameters  
- [in] `id`  
+ [in] *id*  
  One of the button image identifiers that is defined in the `CMenuImage::IMAGES_IDS` enumeration. The image values specify images such as arrows, pins, and radio buttons.  
   
- [in] `state`  
+ [in] *state*  
  One of the button image state identifiers that is defined in the `CMenuImages::IMAGE_STATE` enumeration. The image states specify button colors such as black, gray, light gray, white, and dark gray. The default value is `CMenuImages::ImageBlack`.  
   
- [in] `idDisabled`  
+ [in] *idDisabled*  
  One of the button image identifiers that is defined in the `CMenuImage::IMAGES_IDS` enumeration. The image indicates that the button is disabled. The default value is the first button image ( `CMenuImages::IdArrowDown`).  
   
 ### Remarks  
@@ -737,7 +737,7 @@ void SetTextColor(COLORREF clrText);
 ```  
   
 ### Parameters  
- [in] `clrText`  
+ [in] *clrText*  
  An RGB color value.  
   
 ### Remarks  
@@ -750,7 +750,7 @@ void SetTextHotColor(COLORREF clrTextHot);
 ```  
   
 ### Parameters  
- [in] `clrTextHot`  
+ [in] *clrTextHot*  
  An RGB color value.  
   
 ### Remarks  
@@ -763,7 +763,7 @@ void SetTooltip(LPCTSTR lpszToolTipText);
 ```  
   
 ### Parameters  
- [in] `lpszToolTipText`  
+ [in] *lpszToolTipText*  
  Pointer to the text for the tooltip. Specify NULL to disable the tooltip.  
   
 ### Remarks  
@@ -776,7 +776,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 ```  
   
 ### Parameters  
- [in] `bCalcOnly`  
+ [in] *bCalcOnly*  
  `TRUE` to calculate, but not change, the new size of the button; `FALSE` to change the size of the button. The default is `FALSE`.  
   
 ### Return Value  

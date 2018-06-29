@@ -88,7 +88,7 @@ CPageSetupDialog(
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  One or more flags you can use to customize the settings of the dialog box. The values can be combined using the bitwise-OR operator. These values have the following meanings:  
   
 - **PSD_DEFAULTMINMARGINS** Sets the minimum allowable widths for the page margins to be the same as the printer's minimums. This flag is ignored if the **PSD_MARGINS** and **PSD_MINMARGINS** flags are also specified.  
@@ -127,7 +127,7 @@ CPageSetupDialog(
   
 - **PSD_DISABLEPAGEPAINTING** Disables the draw area of the dialog box.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the dialog box's parent or owner.  
   
 ### Remarks  
@@ -178,7 +178,7 @@ CString GetDeviceName() const;
 ```  
   
 ### Return Value  
- The device name used by the **CPageSetupDialog** object.  
+ The device name used by the `CPageSetupDialog` object.  
   
 ##  <a name="getdevmode"></a>  CPageSetupDialog::GetDevMode  
  Call this function after calling `DoModal` to retrieve information about the printer device context of the `CPageSetupDialog` object.  
@@ -266,10 +266,10 @@ virtual UINT OnDrawPage(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the printer device context.  
   
- `nMessage`  
+ *nMessage*  
  Specifies a message, indicating the area of the page currently being drawn. Can be one of the following:  
   
 - **WM_PSD_FULLPAGERECT** The entire page area.  
@@ -284,7 +284,7 @@ virtual UINT OnDrawPage(
   
 - **WM_PSD_YAFULLPAGERECT** Area for a return address representation. This area extends to the edges of the sample page area.  
   
- `lpRect`  
+ *lpRect*  
  Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) object containing the coordinates of the drawing area.  
   
 ### Return Value  
@@ -293,11 +293,11 @@ virtual UINT OnDrawPage(
 ### Remarks  
  This image is then displayed as part of the common OLE Page Setup dialog box. The default implementation draws an image of a page of text.  
   
- Override this function to customize the drawing of a specific area of the image, or the entire image. You can do this by using a `switch` statement with **case** statements checking the value of `nMessage`. For example, to customize the rendering of the contents of the page image, you could use the following example code:  
+ Override this function to customize the drawing of a specific area of the image, or the entire image. You can do this by using a **switch** statement with **case** statements checking the value of *nMessage*. For example, to customize the rendering of the contents of the page image, you could use the following example code:  
   
  [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/cpp/cpagesetupdialog-class_3.cpp)]  
   
- Note that you do not need to handle every case of `nMessage`. You can choose to handle one component of the image, several components of the image, or the whole area.  
+ Note that you do not need to handle every case of *nMessage*. You can choose to handle one component of the image, several components of the image, or the whole area.  
   
 ##  <a name="predrawpage"></a>  CPageSetupDialog::PreDrawPage  
  Called by the framework before drawing the screen image of a printed page.  
@@ -313,7 +313,7 @@ virtual UINT PreDrawPage(
  *wPaper*  
  Specifies a value that indicates the paper size. This value can be one of the **DMPAPER_** values listed in the description of the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.  
   
- `wFlags`  
+ *wFlags*  
  Indicates the orientation of the paper or envelope, and whether the printer is a dot-matrix or HPPCL (Hewlett Packard Printer Control Language) device. This parameter can have one of the following values:  
   
 -   0x001   Paper in landscape mode (dot matrix)  
@@ -332,7 +332,7 @@ virtual UINT PreDrawPage(
   
 -   0x01f   Envelope in portrait mode (dot matrix)  
   
- `pPSD`  
+ *pPSD*  
  Pointer to a **PAGESETUPDLG** structure. For more information on [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), see the Windows SDK.  
   
 ### Return Value  

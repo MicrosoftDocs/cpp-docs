@@ -76,22 +76,22 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszWindowName`  
+ *lpszWindowName*  
  This parameter is unused.  
   
- `dwStyle`  
+ *dwStyle*  
  This parameter is unused.  
   
- `rect`  
+ *rect*  
  Specifies the control's size and position.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the control's parent window. It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the control's ID.  
   
- `pContext`  
+ *pContext*  
  This parameter is unused.  
   
 ### Return Value  
@@ -105,7 +105,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ```  
   
 ### Parameters  
- `ppDocument`  
+ *ppDocument*  
  The document interface.  
   
 ##  <a name="getstartdocument"></a>  CHtmlEditCtrl::GetStartDocument  

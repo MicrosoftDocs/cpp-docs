@@ -154,19 +154,19 @@ void DoPaste(
 ```  
   
 ### Parameters  
- `dataobj`  
+ *dataobj*  
  The [COleDataObject](../../mfc/reference/coledataobject-class.md) containing the data to paste.  
   
- `cf`  
+ *cf*  
  The desired Clipboard format.  
   
- `hMetaPict`  
+ *hMetaPict*  
  The metafile that represents the item to be pasted.  
   
 ### Remarks  
  The framework calls this function as part of the default implementation of [QueryAcceptData](#queryacceptdata).  
   
- This function determines the type of paste based on the results of the handler for Paste Special. If `cf` is 0, the new item uses the current iconic representation. If `cf` is nonzero and `hMetaPict` is not **NULL**, the new item uses `hMetaPict` for its representation.  
+ This function determines the type of paste based on the results of the handler for Paste Special. If *cf* is 0, the new item uses the current iconic representation. If *cf* is nonzero and *hMetaPict* is not **NULL**, the new item uses *hMetaPict* for its representation.  
   
 ##  <a name="findtext"></a>  CRichEditView::FindText  
  Call this function to find the specified text and set it to be the current selection.  
@@ -180,20 +180,20 @@ BOOL FindText(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  Contains the string to search for.  
   
- `bCase`  
+ *bCase*  
  Indicates if the search is case sensitive.  
   
- `bWord`  
+ *bWord*  
  Indicates if the search should match whole words only, not parts of words.  
   
- `bNext`  
+ *bNext*  
  Indicates the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
   
 ### Return Value  
- Nonzero if the `lpszFind` text is found; otherwise 0.  
+ Nonzero if the *lpszFind* text is found; otherwise 0.  
   
 ### Remarks  
  This function displays the wait cursor during the find operation.  
@@ -213,20 +213,20 @@ BOOL FindTextSimple(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  Contains the string to search for.  
   
- `bCase`  
+ *bCase*  
  Indicates if the search is case sensitive.  
   
- `bWord`  
+ *bWord*  
  Indicates if the search should match whole words only, not parts of words.  
   
- `bNext`  
+ *bNext*  
  Indicates the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
   
 ### Return Value  
- Nonzero if the `lpszFind` text is found; otherwise 0.  
+ Nonzero if the *lpszFind* text is found; otherwise 0.  
   
 ### Example  
   See the example for [CRichEditView::FindText](#findtext).  
@@ -259,10 +259,10 @@ virtual HRESULT GetClipboardData(
 ```  
   
 ### Parameters  
- `lpchrg`  
- Pointer to the [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure specifying the range of characters (and OLE items) to copy to the data object specified by `lplpdataobj`.  
+ *lpchrg*  
+ Pointer to the [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.  
   
- `dwReco`  
+ *dwReco*  
  Clipboard operation flag. Can be one of these values.  
   
 - **RECO_COPY** Copy to the Clipboard.  
@@ -275,17 +275,17 @@ virtual HRESULT GetClipboardData(
   
 - **RECO_PASTE** Paste from the Clipboard.  
   
- `lpRichDataObj`  
+ *lpRichDataObj*  
  Pointer to an [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) object containing the Clipboard data from the rich edit control ( [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341)).  
   
- `lplpdataobj`  
- Pointer to the pointer variable that receives the address of the `IDataObject` object representing the range specified in the `lpchrg` parameter. The value of `lplpdataobj` is ignored if an error is returned.  
+ *lplpdataobj*  
+ Pointer to the pointer variable that receives the address of the `IDataObject` object representing the range specified in the *lpchrg* parameter. The value of *lplpdataobj* is ignored if an error is returned.  
   
 ### Return Value  
  An `HRESULT` value reporting the success of the operation. For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Remarks  
- If the return value indicates success, **IRichEditOleCallback::GetClipboardData** returns the `IDataObject` accessed by `lplpdataobj`; otherwise, it returns the one accessed by `lpRichDataObj`. Override this function to supply your own Clipboard data. The default implementation of this function returns **E_NOTIMPL**.  
+ If the return value indicates success, **IRichEditOleCallback::GetClipboardData** returns the `IDataObject` accessed by *lplpdataobj*; otherwise, it returns the one accessed by *lpRichDataObj*. Override this function to supply your own Clipboard data. The default implementation of this function returns **E_NOTIMPL**.  
   
  This is an advanced overridable.  
   
@@ -305,10 +305,10 @@ virtual HMENU GetContextMenu(
  *seltyp*  
  The selection type. The selection type values are described in the Remarks section.  
   
- `lpoleobj`  
- Pointer to a **OLEOBJECT** structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, `lpoleobj` is **NULL**. The **OLEOBJECT** structure holds a pointer to an OLE object v-table.  
+ *lpoleobj*  
+ Pointer to a **OLEOBJECT** structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, *lpoleobj* is **NULL**. The **OLEOBJECT** structure holds a pointer to an OLE object v-table.  
   
- `lpchrg`  
+ *lpchrg*  
  Pointer to a [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure containing the current selection.  
   
 ### Return Value  
@@ -470,14 +470,14 @@ long GetTextLengthEx(
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](http://msdn.microsoft.com/library/windows/desktop/bb787915) described in the Windows SDK.  
   
- `uCodePage`  
+ *uCodePage*  
  Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).  
   
 ### Return Value  
- The number of characters or bytes in the edit control. If incompatible flags were set in `dwFlags`, this member function returns `E_INVALIDARG`.  
+ The number of characters or bytes in the edit control. If incompatible flags were set in *dwFlags*, this member function returns `E_INVALIDARG`.  
   
 ### Remarks  
  `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK.  
@@ -490,7 +490,7 @@ void InsertFileAsObject(LPCTSTR lpszFileName);
 ```  
   
 ### Parameters  
- `lpszFileName`  
+ *lpszFileName*  
  String containing the name of the file to be inserted.  
   
 ##  <a name="insertitem"></a>  CRichEditView::InsertItem  
@@ -501,7 +501,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to the item to be inserted.  
   
 ### Return Value  
@@ -511,18 +511,18 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
  For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat  
- Call this function to determine if `cf` is a Clipboard format which is text, rich text, or rich text with OLE items.  
+ Call this function to determine if *cf* is a Clipboard format which is text, rich text, or rich text with OLE items.  
   
 ```  
 static BOOL AFX_CDECL IsRichEditFormat(CLIPFORMAT cf);
 ```  
   
 ### Parameters  
- `cf`  
+ *cf*  
  The Clipboard format of interest.  
   
 ### Return Value  
- Nonzero if `cf` is a rich edit or text Clipboard format.  
+ Nonzero if *cf* is a rich edit or text Clipboard format.  
   
 ##  <a name="isselected"></a>  CRichEditView::IsSelected  
  Call this function to determine if the specified OLE item is currently selected in this view.  
@@ -532,7 +532,7 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 ```  
   
 ### Parameters  
- `pDocItem`  
+ *pDocItem*  
  Pointer to an object in the view.  
   
 ### Return Value  
@@ -577,16 +577,16 @@ void OnCharEffect(
 ```  
   
 ### Parameters  
- `dwMask`  
+ *dwMask*  
  The character formatting effects to modify in the current selection.  
   
- `dwEffect`  
+ *dwEffect*  
  The desired list of character formatting effects to toggle.  
   
 ### Remarks  
  Each call to this function toggles the specified formatting effects for the current selection.  
   
- For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
+ For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]  
@@ -603,16 +603,16 @@ virtual void OnFindNext(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The string to find.  
   
- `bNext`  
+ *bNext*  
  The direction to search: **TRUE** indicates down; **FALSE**, up.  
   
- `bCase`  
+ *bCase*  
  Indicates whether the search is to be case sensitive.  
   
- `bWord`  
+ *bWord*  
  Indicates whether the search is to match whole words only or not.  
   
 ### Remarks  
@@ -626,7 +626,7 @@ virtual void OnInitialUpdate();
 ```  
   
 ### Remarks  
- The default implementation of this function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) member function with no hint information (that is, using the default values of 0 for the `lHint` parameter and **NULL** for the `pHint` parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use `OnUpdate` to update the scrolling limits every time the document changes.  
+ The default implementation of this function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) member function with no hint information (that is, using the default values of 0 for the *lHint* parameter and **NULL** for the *pHint* parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use `OnUpdate` to update the scrolling limits every time the document changes.  
   
 ### Example  
   See the example for [CRichEditView::m_nWordWrap](#m_nwordwrap).  
@@ -660,7 +660,7 @@ void OnParaAlign(WORD wAlign);
 ```  
   
 ### Parameters  
- `wAlign`  
+ *wAlign*  
  Desired paragraph alignment. One of the following values:  
   
 - `PFA_LEFT` Align the paragraphs with the left margin.  
@@ -680,11 +680,11 @@ virtual void OnPrinterChanged(const CDC& dcPrinter);
 ```  
   
 ### Parameters  
- `dcPrinter`  
+ *dcPrinter*  
  A [CDC](../../mfc/reference/cdc-class.md) object for the new printer.  
   
 ### Remarks  
- The default implementation sets the paper size to the physical height and width for the output device (printer). If there is no device context associated with `dcPrinter`, the default implementation sets the paper size to 8.5 by 11 inches.  
+ The default implementation sets the paper size to the physical height and width for the output device (printer). If there is no device context associated with *dcPrinter*, the default implementation sets the paper size to 8.5 by 11 inches.  
   
 ##  <a name="onreplaceall"></a>  CRichEditView::OnReplaceAll  
  Called by the framework when processing Replace All commands from the Replace dialog box.  
@@ -698,16 +698,16 @@ virtual void OnReplaceAll(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be replaced.  
   
- `lpszReplace`  
+ *lpszReplace*  
  The replacement text.  
   
- `bCase`  
+ *bCase*  
  Indicates if the search is case sensitive.  
   
- `bWord`  
+ *bWord*  
  Indicates if the search must select whole words or not.  
   
 ### Remarks  
@@ -729,19 +729,19 @@ virtual void OnReplaceSel(
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text to be replaced.  
   
- `bNext`  
+ *bNext*  
  Indicates the direction of the search: **TRUE** is down; **FALSE**, up.  
   
- `bCase`  
+ *bCase*  
  Indicates if the search is case sensitive.  
   
- `bWord`  
+ *bWord*  
  Indicates if the search must select whole words or not.  
   
- `lpszReplace`  
+ *lpszReplace*  
  The replacement text.  
   
 ### Remarks  
@@ -755,7 +755,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  The text which was not found.  
   
 ### Remarks  
@@ -777,19 +777,19 @@ void OnUpdateCharEffect(
 ```  
   
 ### Parameters  
- `pCmdUI`  
+ *pCmdUI*  
  Pointer to a [CCmdUI](../../mfc/reference/ccmdui-class.md) object.  
   
- `dwMask`  
+ *dwMask*  
  Indicates the character formatting mask.  
   
- `dwEffect`  
+ *dwEffect*  
  Indicates the character formatting effect.  
   
 ### Remarks  
- The mask `dwMask` specifies which character formatting attributes to check. The flags `dwEffect` list the character formatting attributes to set/clear.  
+ The mask *dwMask* specifies which character formatting attributes to check. The flags *dwEffect* list the character formatting attributes to set/clear.  
   
- For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
+ For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]  
@@ -804,10 +804,10 @@ void OnUpdateParaAlign(
 ```  
   
 ### Parameters  
- `pCmdUI`  
+ *pCmdUI*  
  Pointer to a [CCmdUI](../../mfc/reference/ccmdui-class.md) object.  
   
- `wAlign`  
+ *wAlign*  
  The paragraph alignment to check. One of the following values:  
   
 - `PFA_LEFT` Align the paragraphs with the left margin.  
@@ -820,7 +820,7 @@ void OnUpdateParaAlign(
  [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/cpp/cricheditview-class_9.cpp)]  
   
 ##  <a name="printinsiderect"></a>  CRichEditView::PrintInsideRect  
- Call this function to format a range of text in a rich edit control to fit within *rectLayout* for the device specified by `pDC`.  
+ Call this function to format a range of text in a rich edit control to fit within *rectLayout* for the device specified by *pDC*.  
   
 ```  
 long PrintInsideRect(
@@ -832,16 +832,16 @@ long PrintInsideRect(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to a device context for the output area.  
   
  *rectLayout*  
  [RECT](../../mfc/reference/rect-structure1.md) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.  
   
- `nIndexStart`  
+ *nIndexStart*  
  Zero-based index of the first character to be formatted.  
   
- `nIndexStop`  
+ *nIndexStop*  
  Zero-based index of the last character to be formatted.  
   
  *bOutput*  
@@ -857,7 +857,7 @@ long PrintInsideRect(
   See the example for [CRichEditView::GetPaperSize](#getpapersize).  
   
 ##  <a name="printpage"></a>  CRichEditView::PrintPage  
- Call this function to format a range of text in a rich edit control for the output device specified by `pDC`.  
+ Call this function to format a range of text in a rich edit control for the output device specified by *pDC*.  
   
 ```  
 long PrintPage(
@@ -867,13 +867,13 @@ long PrintPage(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to a device context for page output.  
   
- `nIndexStart`  
+ *nIndexStart*  
  Zero-based index of the first character to be formatted.  
   
- `nIndexStop`  
+ *nIndexStop*  
  Zero-based index of the last character to be formatted.  
   
 ### Return Value  
@@ -903,13 +903,13 @@ virtual HRESULT QueryAcceptData(
  *lpcfFormat*  
  Pointer to the acceptable data format.  
   
- `dwReco`  
+ *dwReco*  
  Not used.  
   
  *bReally*  
  Indicates if the paste operation should continue or not.  
   
- `hMetaFile`  
+ *hMetaFile*  
  A handle to the metafile used for drawing the item's icon.  
   
 ### Return Value  
@@ -931,11 +931,11 @@ void SetCharFormat(CHARFORMAT2 cf);
 ```  
   
 ### Parameters  
- `cf`  
+ *cf*  
  [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure containing the new default character formatting attributes.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of `cf` are changed by this function.  
+ Only the attributes specified by the **dwMask** member of *cf* are changed by this function.  
   
  For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
   
@@ -986,14 +986,14 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ```  
   
 ### Parameters  
- `pf`  
+ *pf*  
  [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure containing the new default paragraph formatting attributes.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of `pf` are changed by this function.  
+ Only the attributes specified by the **dwMask** member of *pf* are changed by this function.  
   
  For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
   
@@ -1008,13 +1008,13 @@ void TextNotFound(LPCTSTR lpszFind);
 ```  
   
 ### Parameters  
- `lpszFind`  
+ *lpszFind*  
  Contains the text string that was not found.  
   
 ### Remarks  
  It is recommended that this method be called immediately after failed calls to [FindText](#findtext) so that the internal search state of the control is properly reset.  
   
- The `lpszFind` parameter should include the same content as the string provided to [FindText](#findtext). After resetting the internal search state, this method will call the [OnTextNotFound](#ontextnotfound) method with the provided search string.  
+ The *lpszFind* parameter should include the same content as the string provided to [FindText](#findtext). After resetting the internal search state, this method will call the [OnTextNotFound](#ontextnotfound) method with the provided search string.  
   
 ### Example  
   See the example for [CRichEditView::FindText](#findtext).  

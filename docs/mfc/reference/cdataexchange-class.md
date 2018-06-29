@@ -50,7 +50,7 @@ class CDataExchange
   
  Use this class if you are writing data exchange routines for custom data types or controls, or if you are writing your own data validation routines. For more information on writing your own DDX and DDV routines, see [Technical Note 26](../../mfc/tn026-ddx-and-ddv-routines.md). For an overview of DDX and DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md) and [Dialog Boxes](../../mfc/dialog-boxes.md).  
   
- A `CDataExchange` object provides the context information needed for DDX and DDV to take place. The flag `m_bSaveAndValidate` is **FALSE** when DDX is used to fill the initial values of dialog controls from data members. The flag `m_bSaveAndValidate` is **TRUE** when DDX is used to set the current values of dialog controls into data members and when DDV is used to validate the data values. If the DDV validation fails, the DDV procedure will display a message box explaining the input error. The DDV procedure will then call **Fail** to reset the focus to the offending control and throw an exception to stop the validation process.  
+ A `CDataExchange` object provides the context information needed for DDX and DDV to take place. The flag *m_bSaveAndValidate* is **FALSE** when DDX is used to fill the initial values of dialog controls from data members. The flag *m_bSaveAndValidate* is **TRUE** when DDX is used to set the current values of dialog controls into data members and when DDV is used to validate the data values. If the DDV validation fails, the DDV procedure will display a message box explaining the input error. The DDV procedure will then call `Fail` to reset the focus to the offending control and throw an exception to stop the validation process.  
   
 ## Inheritance Hierarchy  
  `CDataExchange`  
@@ -71,7 +71,7 @@ CDataExchange(
  *pDlgWnd*  
  A pointer to the parent window that contains the control. Usually this is a [CDialog](../../mfc/reference/cdialog-class.md)-derived object.  
   
- `bSaveAndValidate`  
+ *bSaveAndValidate*  
  If **TRUE**, this object validates data, then writes data from the controls to the members. If **FALSE**, this object will move data from members to controls.  
   
 ### Remarks  
@@ -88,9 +88,9 @@ void Fail();
 ```  
   
 ### Remarks  
- **Fail** restores the focus and selection to the control whose validation failed (if there is a control to restore). **Fail** then throws an exception of type [CUserException](../../mfc/reference/cuserexception-class.md) to stop the validation process. The exception causes a message box explaining the error to be displayed. After DDV validation fails, the user can reenter data in the offending control.  
+ `Fail` restores the focus and selection to the control whose validation failed (if there is a control to restore). `Fail` then throws an exception of type [CUserException](../../mfc/reference/cuserexception-class.md) to stop the validation process. The exception causes a message box explaining the error to be displayed. After DDV validation fails, the user can reenter data in the offending control.  
   
- Implementors of custom DDV routines can call **Fail** from their routines when a validation fails.  
+ Implementors of custom DDV routines can call `Fail` from their routines when a validation fails.  
   
  For more information on writing your own DDX and DDV routines, see [Technical Note 26](../../mfc/tn026-ddx-and-ddv-routines.md). For an overview of DDX and DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md) and [Dialog Box Topics](../../mfc/dialog-boxes.md).  
   
@@ -128,7 +128,7 @@ HWND PrepareCtrl(int nIDC);
 ```  
   
 ### Parameters  
- `nIDC`  
+ *nIDC*  
  The ID of the control to be prepared for DDX or DDV.  
   
 ### Return Value  
@@ -151,7 +151,7 @@ HWND PrepareEditCtrl(int nIDC);
 ```  
   
 ### Parameters  
- `nIDC`  
+ *nIDC*  
  The ID of the edit control to be prepared for DDX or DDV.  
   
 ### Return Value  
@@ -174,7 +174,7 @@ COleControlSite* PrepareOleCtrl(int nIDC);
 ```  
   
 ### Parameters  
- `nIDC`  
+ *nIDC*  
  The ID of the OLE control to be prepared for DDX or DDV.  
   
 ### Return Value  

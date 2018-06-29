@@ -45,7 +45,7 @@ The template class describes an object that controls a varying-length sequence o
   
  `GMapped` is the same as `Mapped` unless the latter is a ref type, in which case it is `Mapped^`  
   
-### Syntax  
+## Syntax  
   
 ```  
 template<typename Key,  
@@ -62,7 +62,7 @@ template<typename Key,
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Key  
  The type of the key component of an element in the controlled sequence.  
   
@@ -140,7 +140,7 @@ template<typename Key,
 |<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|  
 |ITree\<Key, Value>|Maintain generic container.|  
   
-### Remarks  
+## Remarks  
  The object allocates and frees storage for the sequence it controls as individual nodes. It inserts elements into a (nearly) balanced tree that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.  
   
  The object orders the sequence it controls by calling a stored delegate object of type [multimap::key_compare (STL/CLR)](../dotnet/multimap-key-compare-stl-clr.md). You can specify the stored delegate object when you construct the multimap; if you specify no delegate object, the default is the comparison `operator<(key_type, key_type)`. You access this stored object by calling the member function [multimap::key_comp (STL/CLR)](../dotnet/multimap-key-comp-stl-clr.md)`()`.  

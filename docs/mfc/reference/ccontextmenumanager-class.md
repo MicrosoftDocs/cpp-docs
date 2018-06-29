@@ -82,20 +82,20 @@ BOOL AddMenu(
 ```  
   
 ### Parameters  
- [in] `uiMenuNameResId`  
+ [in] *uiMenuNameResId*  
  A resource ID for a string that contains the name for the new menu.  
   
- [in] `uiMenuResId`  
+ [in] *uiMenuResId*  
  The menu resource ID.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  A string that contains the name for the new menu.  
   
 ### Return Value  
  Nonzero if the method was successful; 0 if the method fails.  
   
 ### Remarks  
- This method fails if `uiMenuResId` is invalid or if another menu with the same name already is in the `CContextMenuManager`.  
+ This method fails if *uiMenuResId* is invalid or if another menu with the same name already is in the `CContextMenuManager`.  
   
 ##  <a name="ccontextmenumanager"></a>  CContextMenuManager::CContextMenuManager  
  Constructs a [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object.  
@@ -115,7 +115,7 @@ HMENU GetMenuById(UINT nMenuResId) const;
 ```  
   
 ### Parameters  
- [in] `nMenuResId`  
+ [in] *nMenuResId*  
  The resource ID for the menu.  
   
 ### Return Value  
@@ -131,17 +131,17 @@ HMENU GetMenuByName(
 ```  
   
 ### Parameters  
- [in] `lpszName`  
+ [in] *lpszName*  
  A string that contains the name of the menu to retrieve.  
   
- [out] `puiOrigResID`  
+ [out] *puiOrigResID*  
  A pointer to an `UINT`. This parameter contains the resource ID of the specified menu, if found.  
   
 ### Return Value  
- A handle to the menu that matches the name that was specified by `lpszName`. `NULL` if there is no menu called `lpszName`.  
+ A handle to the menu that matches the name that was specified by *lpszName*. `NULL` if there is no menu called *lpszName*.  
   
 ### Remarks  
- If this method finds a menu that matches `lpszName`, `GetMenuByName` stores the menu resource ID in the parameter `puiOrigResID`.  
+ If this method finds a menu that matches *lpszName*, `GetMenuByName` stores the menu resource ID in the parameter *puiOrigResID*.  
   
 ##  <a name="getmenunames"></a>  CContextMenuManager::GetMenuNames  
  Returns the list of menu names added to the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
@@ -151,7 +151,7 @@ void GetMenuNames(CStringList& listOfNames) const;
 ```  
   
 ### Parameters  
- [out] `listOfNames`  
+ [out] *listOfNames*  
  A reference to a [CStringList](../../mfc/reference/cstringlist-class.md) parameter. This method writes the list of menu names to this parameter.  
   
 ##  <a name="loadstate"></a>  CContextMenuManager::LoadState  
@@ -162,14 +162,14 @@ virtual BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A string that contains the relative path of a registry key.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  
   
 ### Remarks  
- The `lpszProfileName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) respectively.  
+ The *lpszProfileName* parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) respectively.  
   
  Use the method [CContextMenuManager::SaveState](#savestate) to save the shortcut menus to the registry.  
   
@@ -194,14 +194,14 @@ virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A string that contains the relative path of a registry key.  
   
 ### Return Value  
  Nonzero if the method is successful; otherwise 0.  
   
 ### Remarks  
- The `lpszProfileName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) respectively.  
+ The *lpszProfileName* parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) respectively.  
   
  Use the method [CContextMenuManager::LoadState](#loadstate) to load the shortcut menus from the registry.  
   
@@ -213,7 +213,7 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
+ [in] *bSet*  
  A Boolean parameter that controls whether to close the active pop-up menu. A value of `TRUE` indicates the active pop-up menu is not closed. `FALSE` indicates that the active pop-up menu is closed.  
   
 ### Remarks  
@@ -243,29 +243,29 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ```  
   
 ### Parameters  
- [in] `uiMenuResId`  
+ [in] *uiMenuResId*  
  The resource ID of the menu that this method will display.  
   
- [in] `x`  
+ [in] *x*  
  The horizontal offset for the shortcut menu in client coordinates.  
   
- [in] `y`  
+ [in] *y*  
  The vertical offset for the shortcut menu in client coordinates  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  A pointer to the parent window of the shortcut menu.  
   
- [in] `bOwnMessage`  
- A Boolean parameter that indicates how messages are routed. If `bOwnMessage` is `FALSE`, standard MFC routing is used. Otherwise, `pWndOwner` receives the messages.  
+ [in] *bOwnMessage*  
+ A Boolean parameter that indicates how messages are routed. If *bOwnMessage* is `FALSE`, standard MFC routing is used. Otherwise, *pWndOwner* receives the messages.  
   
- [in] `hmenuPopup`  
+ [in] *hmenuPopup*  
  The handle of the menu that this method will display.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  A Boolean parameter that indicates whether the menu will be automatically destroyed.  
   
- [in] `bRightAlign`  
- A Boolean parameter that indicates how the menu items are aligned. If `bRightAlign` is `TRUE`, the menu is right-aligned for right-to-left reading order.  
+ [in] *bRightAlign*  
+ A Boolean parameter that indicates how the menu items are aligned. If *bRightAlign* is `TRUE`, the menu is right-aligned for right-to-left reading order.  
   
 ### Return Value  
  The first method overload returns nonzero if the method shows the menu successfully; otherwise 0. The second method overload returns a pointer to [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) if the shortcut menu displays correctly; otherwise `NULL`.  
@@ -273,7 +273,7 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ### Remarks  
  This method resembles the method [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) in that both methods display a shortcut menu. However, `TrackPopupMenu` returns the index of the selected menu command.  
   
- If the parameter `bAutoDestroy` is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter `bAutoDestroy`. It is provided for future use or for custom classes derived from the `CContextMenuManager` class .  
+ If the parameter *bAutoDestroy* is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter *bAutoDestroy*. It is provided for future use or for custom classes derived from the `CContextMenuManager` class .  
   
 ##  <a name="trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
  Displays the specified shortcut menu and returns the index of the selected shortcut menu command.  
@@ -288,20 +288,20 @@ virtual UINT TrackPopupMenu(
 ```  
   
 ### Parameters  
- [in] `hmenuPopup`  
+ [in] *hmenuPopup*  
  The handle of the shortcut menu that this method displays.  
   
- [in] `x`  
+ [in] *x*  
  The horizontal offset for the shortcut menu in client coordinates.  
   
- [in] `y`  
+ [in] *y*  
  The vertical offset for the shortcut menu in client coordinates.  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  A pointer to the parent window of the shortcut menu.  
   
- [in] `bRightAlign`  
- A Boolean parameter that indicates how menu items are aligned. If `bRightAlign` is `TRUE`, the menu is right-aligned for right-to-left reading order. If `bRightAlign` is `FALSE`, the menu is left-aligned for left-to-right reading order.  
+ [in] *bRightAlign*  
+ A Boolean parameter that indicates how menu items are aligned. If *bRightAlign* is `TRUE`, the menu is right-aligned for right-to-left reading order. If *bRightAlign* is `FALSE`, the menu is left-aligned for left-to-right reading order.  
   
 ### Return Value  
  The menu command ID of the command that the user chooses; 0 if the user closes the shortcut menu without selecting a menu command.  

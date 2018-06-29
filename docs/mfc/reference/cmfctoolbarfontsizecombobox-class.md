@@ -86,7 +86,7 @@ void RebuildFontSizes(const CString& strFontName);
 ```  
   
 ### Parameters  
- `[in] strFontName`  
+ [in] *strFontName*  
  Specifies a font name.  
   
 ### Remarks  
@@ -100,7 +100,7 @@ void SetTwipSize(int nSize);
 ```  
   
 ### Parameters  
- [in] `nSize`  
+ [in] *nSize*  
  Specifies the font size (in twips) to set.  
   
 ### Remarks  

@@ -77,14 +77,14 @@ void AnimatePalette(
 ```  
   
 ### Parameters  
- `nStartIndex`  
+ *nStartIndex*  
  Specifies the first entry in the palette to be animated.  
   
- `nNumEntries`  
+ *nNumEntries*  
  Specifies the number of entries in the palette to be animated.  
   
- `lpPaletteColors`  
- Points to the first member of an array of [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) structures to replace the palette entries identified by `nStartIndex` and `nNumEntries`.  
+ *lpPaletteColors*  
+ Points to the first member of an array of [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) structures to replace the palette entries identified by *nStartIndex* and *nNumEntries*.  
   
 ### Remarks  
  When an application calls `AnimatePalette`, it does not have to update its client area, because Windows maps the new entries into the system palette immediately.  
@@ -109,7 +109,7 @@ BOOL CreateHalftonePalette(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Identifies the device context.  
   
 ### Return Value  
@@ -128,7 +128,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
 ```  
   
 ### Parameters  
- `lpLogPalette`  
+ *lpLogPalette*  
  Points to a [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that contains information about the colors in the logical palette.  
   
 ### Return Value  
@@ -145,7 +145,7 @@ static CPalette* PASCAL FromHandle(HPALETTE hPalette);
 ```  
   
 ### Parameters  
- `hPalette`  
+ *hPalette*  
  A handle to a Windows GDI color palette.  
   
 ### Return Value  
@@ -172,7 +172,7 @@ UINT GetNearestPaletteIndex(COLORREF crColor) const;
 ```  
   
 ### Parameters  
- `crColor`  
+ *crColor*  
  Specifies the color to be matched.  
   
 ### Return Value  
@@ -189,14 +189,14 @@ UINT GetPaletteEntries(
 ```  
   
 ### Parameters  
- `nStartIndex`  
+ *nStartIndex*  
  Specifies the first entry in the logical palette to be retrieved.  
   
- `nNumEntries`  
+ *nNumEntries*  
  Specifies the number of entries in the logical palette to be retrieved.  
   
- `lpPaletteColors`  
- Points to an array of [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) data structures to receive the palette entries. The array must contain at least as many data structures as specified by `nNumEntries`.  
+ *lpPaletteColors*  
+ Points to an array of [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) data structures to receive the palette entries. The array must contain at least as many data structures as specified by *nNumEntries*.  
   
 ### Return Value  
  The number of entries retrieved from the logical palette; 0 if the function failed.  
@@ -217,14 +217,14 @@ operator HPALETTE() const;
  For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ##  <a name="resizepalette"></a>  CPalette::ResizePalette  
- Changes the size of the logical palette attached to the `CPalette` object to the number of entries specified by `nNumEntries`.  
+ Changes the size of the logical palette attached to the `CPalette` object to the number of entries specified by *nNumEntries*.  
   
 ```  
 BOOL ResizePalette(UINT nNumEntries);
 ```  
   
 ### Parameters  
- `nNumEntries`  
+ *nNumEntries*  
  Specifies the number of entries in the palette after it has been resized.  
   
 ### Return Value  
@@ -246,14 +246,14 @@ UINT SetPaletteEntries(
 ```  
   
 ### Parameters  
- `nStartIndex`  
+ *nStartIndex*  
  Specifies the first entry in the logical palette to be set.  
   
- `nNumEntries`  
+ *nNumEntries*  
  Specifies the number of entries in the logical palette to be set.  
   
- `lpPaletteColors`  
- Points to an array of [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) data structures to receive the palette entries. The array must contain at least as many data structures as specified by `nNumEntries`.  
+ *lpPaletteColors*  
+ Points to an array of [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) data structures to receive the palette entries. The array must contain at least as many data structures as specified by *nNumEntries*.  
   
 ### Return Value  
  The number of entries set in the logical palette; 0 if the function failed.  

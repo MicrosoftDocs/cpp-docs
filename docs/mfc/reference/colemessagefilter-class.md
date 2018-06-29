@@ -77,7 +77,7 @@ virtual void BeginBusyState();
   
  The `BeginBusyState` and `EndBusyState` calls increment and decrement, respectively, a counter that determines whether the application is busy. For example, two calls to `BeginBusyState` and one call to `EndBusyState` still result in a busy state. To cancel a busy state it is necessary to call `EndBusyState` the same number of times `BeginBusyState` has been called.  
   
- By default, the framework enters the busy state during idle processing, which is performed by [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). While the application is handling **ON_COMMANDUPDATEUI** notifications, incoming calls are handled later, after idle processing is complete.  
+ By default, the framework enters the busy state during idle processing, which is performed by [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). While the application is handling ON_COMMANDUPDATEUI notifications, incoming calls are handled later, after idle processing is complete.  
   
 ##  <a name="colemessagefilter"></a>  COleMessageFilter::COleMessageFilter  
  Creates a `COleMessageFilter` object.  
@@ -120,7 +120,7 @@ virtual void EndBusyState();
   
  The `BeginBusyState` and `EndBusyState` calls increment and decrement, respectively, a counter that determines whether the application is busy. For example, two calls to `BeginBusyState` and one call to `EndBusyState` still result in a busy state. To cancel a busy state it is necessary to call `EndBusyState` the same number of times `BeginBusyState` has been called.  
   
- By default, the framework enters the busy state during idle processing, which is performed by [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). While the application is handling `ON_UPDATE_COMMAND_UI` notifications, incoming calls are handled after idle processing is complete.  
+ By default, the framework enters the busy state during idle processing, which is performed by [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). While the application is handling ON_UPDATE_COMMAND_UI notifications, incoming calls are handled after idle processing is complete.  
   
 ##  <a name="onmessagepending"></a>  COleMessageFilter::OnMessagePending  
  Called by the framework to process messages while an OLE call is in progress.  
@@ -130,14 +130,14 @@ virtual BOOL OnMessagePending(const MSG* pMsg);
 ```  
   
 ### Parameters  
- `pMsg`  
+ *pMsg*  
  Pointer to the pending message.  
   
 ### Return Value  
  Nonzero on success; otherwise 0.  
   
 ### Remarks  
- When a calling application is waiting for a call to be completed, the framework calls `OnMessagePending` with a pointer to the pending message. By default, the framework dispatches `WM_PAINT` messages, so that window updates can occur during a call that is taking a long time.  
+ When a calling application is waiting for a call to be completed, the framework calls `OnMessagePending` with a pointer to the pending message. By default, the framework dispatches WM_PAINT messages, so that window updates can occur during a call that is taking a long time.  
   
  You must register your message filter by means of a call to [Register](#register) before it can become active.  
   
@@ -200,7 +200,7 @@ void SetMessagePendingDelay(DWORD nTimeout = 5000);
 ```  
   
 ### Parameters  
- `nTimeout`  
+ *nTimeout*  
  Number of milliseconds for the message-pending delay.  
   
 ### Remarks  
@@ -214,7 +214,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
 ```  
   
 ### Parameters  
- `nRetryReply`  
+ *nRetryReply*  
  Number of milliseconds between retries.  
   
 ### Remarks  
@@ -222,7 +222,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
   
  The caller's response is controlled by the functions `SetRetryReply` and [SetMessagePendingDelay](#setmessagependingdelay). `SetRetryReply` determines how long the calling application should wait between retries for a given call. `SetMessagePendingDelay` determines how long the calling application waits for a response from the server before taking further action.  
   
- Usually the defaults are acceptable and do not need to be changed. The framework retries the call every `nRetryReply` milliseconds until the call goes through or the message-pending delay has expired. A value of 0 for `nRetryReply` specifies an immediate retry, and - 1 specifies cancellation of the call.  
+ Usually the defaults are acceptable and do not need to be changed. The framework retries the call every *nRetryReply* milliseconds until the call goes through or the message-pending delay has expired. A value of 0 for *nRetryReply* specifies an immediate retry, and - 1 specifies cancellation of the call.  
   
  When the message-pending delay has expired, the OLE "busy dialog box" (see [COleBusyDialog](../../mfc/reference/colebusydialog-class.md)) is displayed so that the user can choose to cancel or retry the call. Call [EnableBusyDialog](#enablebusydialog) to enable or disable this dialog box.  
   

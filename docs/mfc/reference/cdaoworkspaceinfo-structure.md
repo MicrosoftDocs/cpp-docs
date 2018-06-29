@@ -27,7 +27,7 @@ struct CDaoWorkspaceInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the workspace object. To retrieve the value of this property directly, call the querydef object's [GetName](../../mfc/reference/cdaoquerydef-class.md#getname) member function. For more information, see the topic "Name Property" in DAO Help.  
   
  *m_strUserName*  

@@ -99,19 +99,19 @@ void AddControl(
 ```  
   
 ### Parameters  
- [in] `pWndCtrl`  
+ [in] *pWndCtrl*  
  A pointer to a control to add.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Specifies the name of tab.  
   
- [in] `bDetachable`  
+ [in] *bDetachable*  
  If `TRUE`, the page will be created as detachable.  
   
- [in] `nImageID`  
+ [in] *nImageID*  
  Image index in the internal image list for the image to be displayed in the new tab.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Specifies the AFX_ `CBRS_`* style for wrapped docking panes.  
   
 ### Remarks  
@@ -119,7 +119,7 @@ void AddControl(
   
  This function internally calls on [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab).  
   
- If you set `bDetachable` to `TRUE`, `AddControl` internally creates a `CDockablePaneAdapter` object and wraps the added control. It automatically sets the runtime class of the tabbed window to the runtime class of `CMFCOutlookBar` and the runtime class of the floating frame to `CMultiPaneFrameWnd`.  
+ If you set *bDetachable* to `TRUE`, `AddControl` internally creates a `CDockablePaneAdapter` object and wraps the added control. It automatically sets the runtime class of the tabbed window to the runtime class of `CMFCOutlookBar` and the runtime class of the floating frame to `CMultiPaneFrameWnd`.  
   
 ### Example  
  The following example demonstrates how to use the `AddControl` method in the `CMFCOutlookBarTabCtrl` class. This code snippet is part of the [Outlook Demo sample](../../visual-cpp-samples.md).  
@@ -163,20 +163,20 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
  Specifies the initial size and position, in pixels.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Points to the parent window. Must not be `NULL`.  
   
- [in] `nID`  
+ [in] *nID*  
  The control ID.  
   
 ### Return Value  
  Nonzero if the control has been created successfully; otherwise 0.  
   
 ### Remarks  
- Usually, outlook bar tab controls are created when [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md) controls the `WM_CREATE` message of the process.  
+ Usually, outlook bar tab controls are created when [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md) controls the WM_CREATE message of the process.  
   
 ##  <a name="enableanimation"></a>  CMFCOutlookBarTabCtrl::EnableAnimation  
  Specifies whether the animation that occurs during the switch between active tabs is enabled.  
@@ -186,7 +186,7 @@ static void EnableAnimation(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  Specifies whether the animation should be enabled or disabled.  
   
 ### Remarks  
@@ -202,7 +202,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  If `TRUE`, enable the in-place editing of the text label. If `FALSE`, disable the in-place editing.  
   
 ### Remarks  
@@ -219,13 +219,13 @@ void EnableScrollButtons(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  Determines whether the scroll buttons are displayed.  
   
- [in] `bIsUp`  
+ [in] *bIsUp*  
  Determines whether the top scrollbar is displayed.  
   
- [in] `bIsDown`  
+ [in] *bIsDown*  
  Determines whether the bottom scrollbar is displayed.  
   
 ### Remarks  
@@ -318,7 +318,7 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### Parameters  
- [in] `iTab`  
+ [in] *iTab*  
  The zero-based index of a tab to be opened.  
   
 ### Return Value  
@@ -335,7 +335,7 @@ void SetBorderSize(int nBorderSize);
 ```  
   
 ### Parameters  
- [in] `nBorderSize`  
+ [in] *nBorderSize*  
  Specifies the new border size in pixels.  
   
 ### Remarks  
@@ -351,16 +351,16 @@ void SetPageButtonTextAlign(
 ```  
   
 ### Parameters  
- [in] `uiAlign`  
+ [in] *uiAlign*  
  Specifies the text alignment.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  If `TRUE`, the outlook window will be redrawn.  
   
 ### Remarks  
  Use this function to change text alignment for page buttons.  
   
- `uiAlign` can be one of the following values:  
+ *uiAlign* can be one of the following values:  
   
 |Constant|Meaning|  
 |--------------|-------------|  
@@ -381,13 +381,13 @@ BOOL SetToolbarImageList(
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  Specifies the resource ID of the image to load.  
   
- [in] `cx`  
+ [in] *cx*  
  Specifies the width of an image in the image list, in pixels.  
   
- [in] `clrTransp`  
+ [in] *clrTransp*  
  An RGB value that specifies the transparent color.  
   
 ### Return Value  
@@ -406,7 +406,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 ```  
   
 ### Parameters  
- [in] `nVisiblePageButtons`  
+ [in] *nVisiblePageButtons*  
   
 ### Remarks  
   

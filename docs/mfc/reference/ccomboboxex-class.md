@@ -105,16 +105,16 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the combination of combo box styles applied to the combo box. See **Remarks** below for more information about styles.  
   
- `rect`  
+ *rect*  
  A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the combo box.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the combo box (usually a `CDialog`). It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the combo box's control ID.  
   
 ### Return Value  
@@ -127,7 +127,7 @@ virtual BOOL Create(
   
 2.  Call this member function, which creates the extended Windows combo box and attaches it to the `CComboBoxEx` object.  
   
- When you call **Create**, MFC initializes the common controls.  
+ When you call `Create`, MFC initializes the common controls.  
   
  When you create the combo box, you can specify any or all of the following combo-box styles:  
   
@@ -143,7 +143,7 @@ virtual BOOL Create(
   
  All other styles passed when you create the window are ignored. The **ComboBoxEx** control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb775742), in the Windows SDK. Set these styles by calling [SetExtendedStyle](#setextendedstyle).  
   
- If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
+ If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of `Create`.  
   
 ##  <a name="createex"></a>  CComboBoxEx::CreateEx  
  Call this function to create an extended combo box control (a child window) and associate it with the `CComboBoxEx` object.  
@@ -158,28 +158,28 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  The combo box control's style. See [Create](#create) for a list of styles.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of **Create** to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of `Create` to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **CBES_EX_CASESENSITIVE**. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the Windows SDK.  
+ `CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **CBES_EX_CASESENSITIVE**. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the Windows SDK.  
   
 ##  <a name="deleteitem"></a>  CComboBoxEx::DeleteItem  
  Removes an item from a **ComboBoxEx** control.  
@@ -189,11 +189,11 @@ int DeleteItem(int iIndex);
 ```  
   
 ### Parameters  
- `iIndex`  
+ *iIndex*  
  Zero-based index of the item to be removed.  
   
 ### Return Value  
- The number of items remaining in the control. If `iIndex` is invalid, the function returns **CB_ERR**.  
+ The number of items remaining in the control. If *iIndex* is invalid, the function returns **CB_ERR**.  
   
 ### Remarks  
  This member function implements the functionality of the message [CBEM_DELETEITEM](http://msdn.microsoft.com/library/windows/desktop/bb775768), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message with **CBEN_DELETEITEM** notification will be sent to the parent window.  
@@ -262,7 +262,7 @@ BOOL GetItem(COMBOBOXEXITEM* pCBItem);
 ```  
   
 ### Parameters  
- `pCBItem`  
+ *pCBItem*  
  A pointer to a [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) structure that will receive the item information.  
   
 ### Return Value  
@@ -292,7 +292,7 @@ int InsertItem(const COMBOBOXEXITEM* pCBItem);
 ```  
   
 ### Parameters  
- `pCBItem`  
+ *pCBItem*  
  A pointer to a [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) structure that will receive the item information. This structure contains callback flag values for the item.  
   
 ### Return Value  
@@ -311,10 +311,10 @@ DWORD SetExtendedStyle(
 ```  
   
 ### Parameters  
- `dwExMask`  
- A `DWORD` value that indicates which styles in `dwExStyles` are to be affected. Only the extended styles in `dwExMask` will be changed. All other styles will be maintained as is. If this parameter is zero, then all of the styles in `dwExStyles` will be affected.  
+ *dwExMask*  
+ A `DWORD` value that indicates which styles in *dwExStyles* are to be affected. Only the extended styles in *dwExMask* will be changed. All other styles will be maintained as is. If this parameter is zero, then all of the styles in *dwExStyles* will be affected.  
   
- `dwExStyles`  
+ *dwExStyles*  
  A `DWORD` value that contains the combo box control extended styles to set for the control.  
   
 ### Return Value  
@@ -333,7 +333,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ```  
   
 ### Parameters  
- `pImageList`  
+ *pImageList*  
  A pointer to a `CImageList` object containing the images to use with the `CComboBoxEx` control.  
   
 ### Return Value  
@@ -352,7 +352,7 @@ BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
 ```  
   
 ### Parameters  
- `pCBItem`  
+ *pCBItem*  
  A pointer to a [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) structure that will receive the item information.  
   
 ### Return Value  
@@ -369,7 +369,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 ```  
   
 ### Parameters  
- `pszSubAppName`  
+ *pszSubAppName*  
  A pointer to a Unicode string that contains the extended combo box visual style to set.  
   
 ### Return Value  

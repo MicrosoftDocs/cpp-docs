@@ -154,8 +154,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -171,8 +171,8 @@ virtual CSize CalcLayout(
 ```  
   
 ### Parameters  
- [in] `dwMode`  
- [in] `nLength`  
+ [in] *dwMode*  
+ [in] *nLength*  
   
 ### Return Value  
   
@@ -222,13 +222,13 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Pointer to the parent window for the new `CMFCMenuBar` object.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The style of the new menu bar.  
   
- [in] `nID`  
+ [in] *nID*  
  The ID for the child window of the menu bar.  
   
 ### Return Value  
@@ -255,19 +255,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Pointer to the parent window of the new `CMFCMenuBar` object.  
   
- [in] `dwCtrlStyle`  
+ [in] *dwCtrlStyle*  
  Additional styles for the new menu bar.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The main style of the new menu bar.  
   
- [in] `rcBorders`  
+ [in] *rcBorders*  
  A `CRect` parameter that specifies the sizes for the borders of the `CMFCMenuBar` object.  
   
- [in] `nID`  
+ [in] *nID*  
  The ID for the child window of the menu bar.  
   
 ### Return Value  
@@ -295,13 +295,13 @@ virtual void CreateFromMenu(
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  A handle to a menu resource. `CreateFromMenu` uses this resource as a template for the `CMFCMenuBar`.  
   
- [in] `bDefaultMenu`  
+ [in] *bDefaultMenu*  
  A Boolean that indicates whether the new menu is the default menu.  
   
- [in] `bForceUpdate`  
+ [in] *bForceUpdate*  
  A Boolean that indicates whether this method forces a menu update.  
   
 ### Remarks  
@@ -318,19 +318,19 @@ void EnableHelpCombobox(
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  The command ID for the button of the **Help** combo box.  
   
- [in] `lpszPrompt`  
+ [in] *lpszPrompt*  
  A string that contains the text that the framework displays in the combo box if it is empty and not active. For example, "Enter the text here".  
   
- [in] `nComboBoxWidth`  
+ [in] *nComboBoxWidth*  
  The width of the button for the combo box in pixels.  
   
 ### Remarks  
  The **Help** combo box resembles the **Help** combo box in the menu bar of [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)].  
   
- When you call this method with `uiID` set to 0, this method hides the combo box. Otherwise, this method displays the combo box automatically on the right side of your menu bar. After you call this method, call [CMFCMenuBar::GetHelpCombobox](#gethelpcombobox) to obtain a pointer to the inserted [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) object.  
+ When you call this method with *uiID* set to 0, this method hides the combo box. Otherwise, this method displays the combo box automatically on the right side of your menu bar. After you call this method, call [CMFCMenuBar::GetHelpCombobox](#gethelpcombobox) to obtain a pointer to the inserted [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) object.  
   
 ##  <a name="enablemenushadows"></a>  CMFCMenuBar::EnableMenuShadows  
  Enables shadows for pop-up menus.  
@@ -340,7 +340,7 @@ static void EnableMenuShadows(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  A Boolean parameter that indicates whether shadows should be enabled for pop-up menus.  
   
 ### Remarks  
@@ -402,7 +402,7 @@ int GetFloatPopupDirection(CMFCToolBarMenuButton* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -447,7 +447,7 @@ static const CFont& GetMenuFont(BOOL bHorz = TRUE);
 ```  
   
 ### Parameters  
- [in] `bHorz`  
+ [in] *bHorz*  
  A Boolean parameter that specifies whether to return the horizontal or vertical font. `TRUE` indicates the horizontal font.  
   
 ### Return Value  
@@ -464,11 +464,11 @@ CMFCToolBarButton* GetMenuItem(int iItem) const;
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The index of the menu item to return.  
   
 ### Return Value  
- A pointer to the `CMFCToolBarButton` object that matches the index specified by `iItem`. `NULL` if the index is invalid.  
+ A pointer to the `CMFCToolBarButton` object that matches the index specified by *iItem*. `NULL` if the index is invalid.  
   
 ##  <a name="getrowheight"></a>  CMFCMenuBar::GetRowHeight  
 
@@ -491,8 +491,8 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 ```  
   
 ### Parameters  
- [in] `uiBtn`  
- [in] `bByCommand`  
+ [in] *uiBtn*  
+ [in] *bByCommand*  
   
 ### Return Value  
   
@@ -528,7 +528,7 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 ```  
   
 ### Parameters  
- [in] `bHighlight`  
+ [in] *bHighlight*  
  A Boolean parameter that indicates whether the framework highlights unavailable menu items.  
   
 ### Remarks  
@@ -629,13 +629,13 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A string that contains the path of a Windows registry key.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  The control ID for the menu bar.  
   
- [in] `uiID`  
+ [in] *uiID*  
  A reserved value.  
   
 ### Return Value  
@@ -654,7 +654,7 @@ virtual void OnChangeHot(int iHot);
 ```  
   
 ### Parameters  
- [in] `iHot`  
+ [in] *iHot*  
   
 ### Remarks  
   
@@ -666,7 +666,7 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  The handle for the menu attached to the `CMFCMenuBar` object.  
   
 ### Remarks  
@@ -680,7 +680,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -694,7 +694,7 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) object that the user wants to customize.  
   
 ### Return Value  
@@ -713,8 +713,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `pTI`  
+ [in] *point*  
+ [in] *pTI*  
   
 ### Return Value  
   
@@ -728,7 +728,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] `pMsg`  
+ [in] *pMsg*  
   
 ### Return Value  
   
@@ -760,13 +760,13 @@ virtual BOOL SaveState (
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A string that contains the path of a Windows registry key.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  The control ID for the menu bar.  
   
- [in] `uiID`  
+ [in] *uiID*  
  A reserved value.  
   
 ### Return Value  
@@ -785,7 +785,7 @@ void SetDefaultMenuResId(UINT uiResId);
 ```  
   
 ### Parameters  
- [in] `uiResId`  
+ [in] *uiResId*  
  The resource ID for the new default menu.  
   
 ### Remarks  
@@ -801,7 +801,7 @@ void SetForceDownArrows(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] `bValue`  
+ [in] *bValue*  
   
 ### Remarks  
   
@@ -816,17 +816,17 @@ void SetMaximizeMode(
 ```  
   
 ### Parameters  
- [in] `bMax`  
+ [in] *bMax*  
  A Boolean that specifies the mode. See the Remarks section for more information.  
   
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the MDI child window that is changing.  
   
- [in] `bRecalcLayout`  
+ [in] *bRecalcLayout*  
  A Boolean that specifies whether the layout of the menu bar should be recalculated immediately.  
   
 ### Remarks  
- When an MDI child window is maximized, a menu bar attached to the MDI main frame window displays the system menu and the **Minimize**, **Maximize** and **Close** buttons. If `bMax` is `TRUE` and `pWnd` is not `NULL`, the MDI child window is maximized and the menu bar must incorporate the extra controls. Otherwise, the menu bar returns to its regular state.  
+ When an MDI child window is maximized, a menu bar attached to the MDI main frame window displays the system menu and the **Minimize**, **Maximize** and **Close** buttons. If *bMax* is `TRUE` and *pWnd* is not `NULL`, the MDI child window is maximized and the menu bar must incorporate the extra controls. Otherwise, the menu bar returns to its regular state.  
   
 ##  <a name="setmenubuttonrtc"></a>  CMFCMenuBar::SetMenuButtonRTC  
  Sets the runtime class information that the framework uses when the user creates menu buttons.  
@@ -836,7 +836,7 @@ void SetMenuButtonRTC(CRuntimeClass* pMenuButtonRTC);
 ```  
   
 ### Parameters  
- [in] `pMenuButtonRTC`  
+ [in] *pMenuButtonRTC*  
  The [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) information for a class derived from the [CMFCMenuButton Class](../../mfc/reference/cmfcmenubutton-class.md).  
   
 ### Remarks  
@@ -852,11 +852,11 @@ static BOOL SetMenuFont(
 ```  
   
 ### Parameters  
- [in] `lpLogFont`  
+ [in] *lpLogFont*  
  A pointer to a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/bb773327) structure that defines the font to set.  
   
- [in] `bHorz`  
- TRUE if you want the `lpLogFont` parameter to be used for the vertical font, FALSE if you want it to be used for horizontal font.  
+ [in] *bHorz*  
+ TRUE if you want the *lpLogFont* parameter to be used for the vertical font, FALSE if you want it to be used for horizontal font.  
   
 ### Return Value  
  `TRUE` if the method was successful; otherwise `FALSE`.  
@@ -874,7 +874,7 @@ static void SetRecentlyUsedMenus (BOOL bOn = TRUE);
 ```  
   
 ### Parameters  
- [in] `bOn`  
+ [in] *bOn*  
  A Boolean that controls whether recently used menu commands are displayed.  
   
 ##  <a name="setshowallcommands"></a>  CMFCMenuBar::SetShowAllCommands  
@@ -885,7 +885,7 @@ static void SetShowAllCommands(BOOL bShowAllCommands = TRUE);
 ```  
   
 ### Parameters  
- [in] `bShowAllCommands`  
+ [in] *bShowAllCommands*  
  A Boolean parameter that specifies whether the pop-up menu shows all the menu commands.  
   
 ### Remarks  

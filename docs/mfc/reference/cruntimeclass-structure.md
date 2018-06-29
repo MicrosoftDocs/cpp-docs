@@ -69,7 +69,7 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
 ```  
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  The familiar name of the class to be created.  
   
 ### Return Value  
@@ -91,11 +91,11 @@ static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
 ```  
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  The familiar name of a class derived from `CObject`.  
   
 ### Return Value  
- A pointer to a `CRuntimeClass` object, corresponding to the name as passed in `lpszClassName`. The function returns **NULL** if no matching class name was found.  
+ A pointer to a `CRuntimeClass` object, corresponding to the name as passed in *lpszClassName*. The function returns **NULL** if no matching class name was found.  
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/cpp/cruntimeclass-structure_1.cpp)]  
@@ -120,7 +120,7 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  The relationship is determined by "walking" from the member's class up the chain of derived classes all the way to the top. This function only returns **FALSE** if no match is found for the base class.  
   
 > [!NOTE]
->  To use the `CRuntimeClass` structure, you must include the `IMPLEMENT_DYNAMIC`, `IMPLEMENT_DYNCREATE`, or `IMPLEMENT_SERIAL` macro in the implementation of the class for which you want to retrieve run-time object information.  
+>  To use the `CRuntimeClass` structure, you must include the IMPLEMENT_DYNAMIC, IMPLEMENT_DYNCREATE, or IMPLEMENT_SERIAL macro in the implementation of the class for which you want to retrieve run-time object information.  
   
  For more information on using `CRuntimeClass`, see the article [CObject Class: Accessing Run-Time Class Information](../../mfc/accessing-run-time-class-information.md).  
   

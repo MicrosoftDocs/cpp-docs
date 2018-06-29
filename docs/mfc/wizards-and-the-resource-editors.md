@@ -23,7 +23,7 @@ Visual C++ includes several wizards for use in MFC programming, along with many 
 > [!NOTE]
 >  Class View also helps you to override virtual functions in the MFC classes. Select the class and the virtual function to override. The rest of the process is similar to message handling, as described in the following paragraphs.  
   
- Applications running under Windows are [message driven](../mfc/message-handling-and-mapping.md). User actions and other events that occur in the running program cause Windows to send messages to the windows in the program. For example, if the user clicks the mouse in a window, Windows sends a `WM_LBUTTONDOWN` message when the left mouse button is pressed and a `WM_LBUTTONUP` message when the button is released. Windows also sends **WM_COMMAND** messages when the user selects commands from the menu bar.  
+ Applications running under Windows are [message driven](../mfc/message-handling-and-mapping.md). User actions and other events that occur in the running program cause Windows to send messages to the windows in the program. For example, if the user clicks the mouse in a window, Windows sends a WM_LBUTTONDOWN message when the left mouse button is pressed and a WM_LBUTTONUP message when the button is released. Windows also sends WM_COMMAND messages when the user selects commands from the menu bar.  
   
  In the MFC framework, various objects, such as documents, views, frame windows, document templates, and the application object, can "handle" messages. Such an object provides a "handler function" as one of its member functions, and the framework maps the incoming message to its handler.  
   

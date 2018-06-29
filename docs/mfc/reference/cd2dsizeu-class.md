@@ -33,7 +33,7 @@ class CD2DSizeU : public D2D1_SIZE_U;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DSizeU::IsNull](#isnull)|Returns a `boolean` value that indicates whether an expression contains no valid data ( `null`).|  
+|[CD2DSizeU::IsNull](#isnull)|Returns a **boolean** value that indicates whether an expression contains no valid data ( **null**).|  
   
 ### Public Operators  
   
@@ -64,13 +64,13 @@ CD2DSizeU(
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  source size  
   
- `cx`  
+ *cx*  
  source width  
   
- `cy`  
+ *cy*  
  source height  
   
 ##  <a name="isnull"></a>  CD2DSizeU::IsNull  

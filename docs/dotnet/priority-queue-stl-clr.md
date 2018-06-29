@@ -27,7 +27,7 @@ The template class describes an object that controls a varying-length ordered se
   
  In the description below, `GValue` is the same as `Value` unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as `Container` unless the latter is a ref type, in which case it is `Container^`.  
   
-### Syntax  
+## Syntax  
   
 ```  
 template<typename Value,  
@@ -38,7 +38,7 @@ template<typename Value,
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Value  
  The type of an element in the controlled sequence.  
   
@@ -92,7 +92,7 @@ template<typename Value,
 |<xref:System.ICloneable>|Duplicate an object.|  
 |IPriorityQueue\<Value, Container>|Maintain generic container adapter.|  
   
-### Remarks  
+## Remarks  
  The object allocates and frees storage for the sequence it controls through an underlying container, of type `Container`, that stores `Value` elements and grows on demand. It keeps the sequence ordered as a heap, with the highest-priority element (the top element) readily accessible and removable. The object restricts access to pushing new elements and popping just the highest-priority element, implementing a priority queue.  
   
  The object orders the sequence it controls by calling a stored delegate object of type [priority_queue::value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md). You can specify the stored delegate object when you construct the priority_queue; if you specify no delegate object, the default is the comparison `operator<(value_type, value_type)`. You access this stored object by calling the member function [priority_queue::value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)`()`.  

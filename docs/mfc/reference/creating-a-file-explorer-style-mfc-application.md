@@ -19,7 +19,7 @@ Many Windows system applications use the user interface (UI) for File Explorer. 
   
  The wizard creates the following classes for you:  
   
--   The **CLeftView** class defines the left pane of the client area. It is always derived from [CTreeView](../../mfc/reference/ctreeview-class.md).  
+-   The `CLeftView` class defines the left pane of the client area. It is always derived from [CTreeView](../../mfc/reference/ctreeview-class.md).  
   
 -   The C*ProjName*View class defines the right pane of the client area. By default, it is derived from [CListView](../../mfc/reference/clistview-class.md) but can be another type of view depending on the class you specify from the **Base class** list in the [Generated Classes](../../mfc/reference/generated-classes-mfc-application-wizard.md) page of the wizard.  
   

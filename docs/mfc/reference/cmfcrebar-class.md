@@ -77,22 +77,22 @@ BOOL AddBar(
 ```  
   
 ### Parameters  
- [in] [out] `pBar`  
+ [in] [out] *pBar*  
  A pointer to the child window that is to be inserted into the rebar. The referenced object must have the **WS_CHILD** window style.  
   
- [in] `pszText`  
+ [in] *pszText*  
  Specifies the text to appear on the rebar. The text is not part of the child window. Rather, it is displayed on the rebar itself.  
   
- [in] [out] `pbmp`  
+ [in] [out] *pbmp*  
  Specifies the bitmap to be displayed on the rebar background.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) structure in the Windows SDK documentation.  
   
- [in] `clrFore`  
+ [in] *clrFore*  
  Represents the foreground color of the rebar.  
   
- [in] `clrBack`  
+ [in] *clrBack*  
  Represents the background color of the rebar.  
   
 ### Return Value  
@@ -110,16 +110,16 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  A pointer to the parent window of this rebar control.  
   
- [in] `dwCtrlStyle`  
+ [in] *dwCtrlStyle*  
  Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK documentation.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `nID`  
+ [in] *nID*  
  The rebar's child-window ID.  
   
 ### Return Value  
@@ -150,8 +150,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -176,7 +176,7 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
   
 ### Remarks  
   
@@ -199,7 +199,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### Parameters  
- [in] `CPoint`  
+ [in] *CPoint*  
   
 ### Return Value  
   
@@ -215,8 +215,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `pTI`  
+ [in] *point*  
+ [in] *pTI*  
   
 ### Return Value  
   
@@ -232,8 +232,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] `pTarget`  
- [in] `bDisableIfNoHndler`  
+ [in] *pTarget*  
+ [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   
@@ -245,7 +245,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
   
 ### Remarks  
   

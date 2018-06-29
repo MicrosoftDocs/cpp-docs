@@ -22,7 +22,7 @@ class CMapStringToString : public CObject
 ```  
   
 ## Members  
- The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to `char`. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to `char`.  
+ The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to **char**. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to **char**.  
   
  `BOOL CMapStringToOb::Lookup(const char*<key>, CObject*&<rValue>) const;`  
   
@@ -109,7 +109,8 @@ class CMapStringToString : public CObject
 ```  
 const CPair* PGetFirstAssoc() const;
 
-CPair* PGetFirstAssoc();```  
+CPair* PGetFirstAssoc();
+```  
   
 ### Return Value  
  A pointer to the first entry in the map; see [CMapStringToString::CPair](#cpair). If the map is empty, the value is `NULL`.  
@@ -121,12 +122,13 @@ CPair* PGetFirstAssoc();```
  [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]  
   
 ##  <a name="pgetnextassoc"></a>  CMapStringToString::PGetNextAssoc  
- Retrieves the map element pointed to by `pAssocRec`.  
+ Retrieves the map element pointed to by *pAssocRec*.  
   
 ```  
 const CPair *PGetNextAssoc(const CPair* pAssoc) const;  
   
-CPair *PGetNextAssoc(const CPair* pAssoc);```  
+CPair *PGetNextAssoc(const CPair* pAssoc);
+```  
   
 ### Parameters  
  *pAssoc*  
@@ -147,10 +149,11 @@ CPair *PGetNextAssoc(const CPair* pAssoc);```
 ```  
 const CPair* PLookup(LPCTSTR key) const;
 
-CPair* PLookup(LPCTSTR key);```  
+CPair* PLookup(LPCTSTR key);
+```  
   
 ### Parameters  
- `key`  
+ *key*  
  A pointer to the key for the element to be searched for.  
   
 ### Return Value  

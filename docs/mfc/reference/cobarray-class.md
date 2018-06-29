@@ -66,7 +66,7 @@ class CObArray : public CObject
   
  As with a C array, the access time for a `CObArray` indexed element is constant and is independent of the array size.  
   
- `CObArray` incorporates the `IMPLEMENT_SERIAL` macro to support serialization and dumping of its elements. If an array of `CObject` pointers is stored to an archive, either with the overloaded insertion operator or with the `Serialize` member function, each `CObject` element is, in turn, serialized along with its array index.  
+ `CObArray` incorporates the IMPLEMENT_SERIAL macro to support serialization and dumping of its elements. If an array of `CObject` pointers is stored to an archive, either with the overloaded insertion operator or with the `Serialize` member function, each `CObject` element is, in turn, serialized along with its array index.  
   
  If you need a dump of individual `CObject` elements in an array, you must set the depth of the `CDumpContext` object to 1 or greater.  
   
@@ -78,7 +78,7 @@ class CObArray : public CObject
  Array class derivation is similar to list derivation. For details on the derivation of a special-purpose list class, see the article [Collections](../../mfc/collections.md).  
   
 > [!NOTE]
->  You must use the `IMPLEMENT_SERIAL` macro in the implementation of your derived class if you intend to serialize the array.  
+>  You must use the IMPLEMENT_SERIAL macro in the implementation of your derived class if you intend to serialize the array.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -96,14 +96,14 @@ INT_PTR Add(CObject* newElement);
 ```  
   
 ### Parameters  
- `newElement`  
+ *newElement*  
  The `CObject` pointer to be added to this array.  
   
 ### Return Value  
  The index of the added element.  
   
 ### Remarks  
- If [SetSize](#setsize) has been used with an `nGrowBy` value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
+ If [SetSize](#setsize) has been used with an *nGrowBy* value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
   
  The following table shows other member functions that are similar to `CObArray::Add`.  
   
@@ -146,7 +146,7 @@ INT_PTR Append(const CObArray& src);
 ### Remarks  
  The arrays must be of the same type.  
   
- If necessary, **Append** may allocate extra memory to accommodate the elements appended to the array.  
+ If necessary, `Append` may allocate extra memory to accommodate the elements appended to the array.  
   
  The following table shows other member functions that are similar to `CObArray::Append`.  
   
@@ -176,7 +176,7 @@ void Copy(const CObArray& src);
  Source of the elements to be copied to the array.  
   
 ### Remarks  
- **Copy** does not free memory; however, if necessary, **Copy** may allocate extra memory to accommodate the elements copied to the array.  
+ `Copy` does not free memory; however, if necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.  
   
  The following table shows other member functions that are similar to `CObArray::Copy`.  
   
@@ -226,7 +226,7 @@ CObject*& ElementAt(INT_PTR nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
 ### Return Value  
@@ -281,7 +281,7 @@ CObject* GetAt(INT_PTR nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
 ### Return Value  
@@ -443,25 +443,25 @@ void InsertAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that may be greater than the value returned by `GetUpperBound`.  
   
- `newElement`  
- The `CObject` pointer to be placed in this array. A `newElement` of value **NULL** is allowed.  
+ *newElement*  
+ The `CObject` pointer to be placed in this array. A *newElement* of value **NULL** is allowed.  
   
- `nCount`  
+ *nCount*  
  The number of times this element should be inserted (defaults to 1).  
   
- `nStartIndex`  
+ *nStartIndex*  
  An integer index that may be greater than the value returned by `GetUpperBound`.  
   
- `pNewArray`  
+ *pNewArray*  
  Another array that contains elements to be added to this array.  
   
 ### Remarks  
  The first version of `InsertAt` inserts one element (or multiple copies of an element) at a specified index in an array. In the process, it shifts up (by incrementing the index) the existing element at this index, and it shifts up all the elements above it.  
   
- The second version inserts all the elements from another `CObArray` collection, starting at the `nStartIndex` position.  
+ The second version inserts all the elements from another `CObArray` collection, starting at the *nStartIndex* position.  
   
  The `SetAt` function, in contrast, replaces one specified array element and does not shift any elements.  
   
@@ -568,10 +568,10 @@ void RemoveAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
- `nCount`  
+ *nCount*  
  The number of elements to remove.  
   
 ### Remarks  
@@ -613,10 +613,10 @@ void SetAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
- `newElement`  
+ *newElement*  
  The object pointer to be inserted in this array. A **NULL** value is allowed.  
   
 ### Remarks  
@@ -658,10 +658,10 @@ void SetAtGrow(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0.  
   
- `newElement`  
+ *newElement*  
  The object pointer to be added to this array. A **NULL** value is allowed.  
   
 ### Remarks  
@@ -705,16 +705,16 @@ void SetSize(
 ```  
   
 ### Parameters  
- `nNewSize`  
+ *nNewSize*  
  The new array size (number of elements). Must be greater than or equal to 0.  
   
- `nGrowBy`  
+ *nGrowBy*  
  The minimum number of element slots to allocate if a size increase is necessary.  
   
 ### Remarks  
  If the new size is smaller than the old size, then the array is truncated and all unused memory is released. For efficiency, call `SetSize` to set the size of the array before using it. This prevents the need to reallocate and copy the array each time an item is added.  
   
- The `nGrowBy` parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by `GetSize` and `GetUpperBound`.  
+ The *nGrowBy* parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by `GetSize` and `GetUpperBound`.  
   
  If the size of the array has grown, all newly allocated **CObject \*** pointers are set to NULL.  
   

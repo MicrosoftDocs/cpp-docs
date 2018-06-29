@@ -77,7 +77,7 @@ class CMFCEditBrowseCtrl : public CEdit
   
 6.  To provide a custom image for the browse button, call the [SetBrowseButtonImage](#setbrowsebuttonimage) method or override the [OnDrawBrowseButton](#ondrawbrowsebutton) method.  
   
-7.  To remove the browse button from the edit browse control, call the [EnableBrowseButton](#enablebrowsebutton) method with the `bEnable` parameter set to `FALSE`.  
+7.  To remove the browse button from the edit browse control, call the [EnableBrowseButton](#enablebrowsebutton) method with the *bEnable* parameter set to `FALSE`.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -109,14 +109,14 @@ void EnableBrowseButton(
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  `TRUE` to display the browse button; `FALSE` not to display the browse button. The default value is `TRUE`.  
   
- `szLabel`  
+ *szLabel*  
  The label that is displayed on the browse button. The default value is " **...**".  
   
 ### Remarks  
- If the `bEnable` parameter is `TRUE`, implement a custom action to perform when the browse button is clicked. To implement a custom action, derive a class from the `CMFCEditBrowseCtrl` class and then override its [OnBrowse](#onbrowse) method.  
+ If the *bEnable* parameter is `TRUE`, implement a custom action to perform when the browse button is clicked. To implement a custom action, derive a class from the `CMFCEditBrowseCtrl` class and then override its [OnBrowse](#onbrowse) method.  
   
  If the `bEnable` parameter is `TRUE`, the browse mode of the control is `BrowseMode_Default`; otherwise, the browse mode is `BrowseMode_None`. For more information about browse modes, see the [GetMode](#getmode) method.  
   
@@ -131,13 +131,13 @@ void EnableFileBrowseButton(
 ```  
   
 ### Parameters  
- `lpszDefExt`  
+ *lpszDefExt*  
  Specifies the default file name extension that is used in the file selection dialog box. The default value is `NULL`.  
   
- `lpszFilter`  
+ *lpszFilter*  
  Specifies the default filter string that is used in the file selection dialog box. The default value is `NULL`.  
   
- `dwFlags`  
+ *dwFlags*  
  Dialog box flags. The default value is a bitwise combination (OR) of OFN_HIDEREADONLY and OFN_OVERWRITEPROMPT.  
   
 ### Remarks  
@@ -219,16 +219,16 @@ virtual void OnDrawBrowseButton(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to a device context.  
   
- `Rect`  
+ *Rect*  
  The bounding rectangle of the browse button.  
   
- `bIsButtonPressed`  
+ *bIsButtonPressed*  
  `TRUE` if the button is pressed; otherwise, `FALSE`.  
   
- `bIsButtonHot`  
+ *bIsButtonHot*  
  `TRUE` if the button is highlighted; otherwise, `FALSE`.  
   
 ### Remarks  
@@ -251,16 +251,16 @@ void SetBrowseButtonImage(UINT uiBmpResId);
 ```  
   
 ### Parameters  
- `hIcon`  
+ *hIcon*  
  The handle of an icon.  
   
- `hBitmap`  
+ *hBitmap*  
  The handle of a bitmap.  
   
- `uiBmpResId`  
+ *uiBmpResId*  
  The resource ID of a bitmap.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  `TRUE` to delete the specified icon or bitmap when this method exits; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
@@ -274,7 +274,7 @@ virtual BOOL OnIllegalFileName(CString& strFileName);
 ```  
   
 ### Parameters  
- `strFileName`  
+ *strFileName*  
  Specifies the illegal file name.  
   
 ### Return Value  

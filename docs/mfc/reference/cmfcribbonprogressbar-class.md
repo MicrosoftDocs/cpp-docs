@@ -75,13 +75,13 @@ CMFCRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies the command ID for the ribbon progress bar.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Specifies the width, in pixels, of the ribbon progress bar.  
   
- [in] `nHeight`  
+ [in] *nHeight*  
  Specifies the height, in pixels, of the ribbon progress bar.  
   
 ##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
@@ -127,7 +127,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -154,7 +154,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -166,7 +166,7 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
+ [in] *bSet*  
  `TRUE` to specify that the progress bar is in infinite mode; otherwise, `FALSE`.  
   
 ### Remarks  
@@ -182,10 +182,10 @@ void SetPos(
 ```  
   
 ### Parameters  
- [in] `nPos`  
+ [in] *nPos*  
  Specifies the position to which the progress bar is set.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  Specifies whether the progress bar should be redrawn.  
   
 ### Remarks  
@@ -201,10 +201,10 @@ void SetRange(
 ```  
   
 ### Parameters  
- [in] `nMin`  
+ [in] *nMin*  
  Specifies the minimum value of the range.  
   
- [in] `nMax`  
+ [in] *nMax*  
  Specifies the maximum value of the range.  
   
 ### Remarks  

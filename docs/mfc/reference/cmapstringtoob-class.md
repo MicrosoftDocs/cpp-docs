@@ -82,11 +82,11 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  Specifies the memory-allocation granularity for extending the map.  
   
 ### Remarks  
- As the map grows, memory is allocated in units of `nBlockSize` entries.  
+ As the map grows, memory is allocated in units of *nBlockSize* entries.  
   
  The following table shows other member functions that are similar to **CMapStringToOb:: CMapStringToOb**.  
   
@@ -272,7 +272,7 @@ UINT HashKey(LPCTSTR key) const;
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key whose hash value is to be calculated.  
   
 ### Return Value  
@@ -300,10 +300,10 @@ void InitHashTable(
 ```  
   
 ### Parameters  
- `hashSize`  
+ *hashSize*  
  Number of entries in the hash table.  
   
- `bAllocNow`  
+ *bAllocNow*  
  If **TRUE**, allocates the hash table upon initialization; otherwise the table is allocated when needed.  
   
 ### Remarks  
@@ -355,10 +355,10 @@ BOOL Lookup(
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the string key that identifies the element to be looked up.  
   
- `rValue`  
+ *rValue*  
  Specifies the returned value from the looked-up element.  
   
 ### Return Value  
@@ -393,10 +393,10 @@ BOOL LookupKey(
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the string key that identifies the element to be looked up.  
   
- `rKey`  
+ *rKey*  
  The reference to the associated key.  
   
 ### Return Value  
@@ -420,7 +420,7 @@ CObject*& operator[ ](lpctstr key);
 ```  
   
 ### Return Value  
- A reference to a pointer to a `CObject` object; or **NULL** if the map is empty or `key` is out of range.  
+ A reference to a pointer to a `CObject` object; or **NULL** if the map is empty or *key* is out of range.  
   
 ### Remarks  
  Thus it can be used only on the left side of an assignment statement (an l-value). If there is no map element with the specified key, then a new element is created.  
@@ -487,7 +487,7 @@ BOOL RemoveKey(LPCTSTR key);
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the string used for map lookup.  
   
 ### Return Value  
@@ -532,10 +532,10 @@ void SetAt(
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the string that is the key of the new element.  
   
- `newValue`  
+ *newValue*  
  Specifies the `CObject` pointer that is the value of the new element.  
   
 ### Remarks  

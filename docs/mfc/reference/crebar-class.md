@@ -39,10 +39,10 @@ class CReBar : public CControlBar
 ## Rebar Control  
  A rebar object behaves similarly to a toolbar object. A rebar uses the click-and-drag mechanism to resize its bands. A rebar control can contain one or more bands, with each band having any combination of a gripper bar, a bitmap, a text label, and a child window. However, bands cannot contain more than one child window.  
   
- **CReBar** uses the [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) class to provide its implementation. You can access the rebar control through [GetReBarCtrl](#getrebarctrl) to take advantage of the control's customization options. For more information about rebar controls, see `CReBarCtrl`. For more information about using rebar controls, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).  
+ `CReBar` uses the [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) class to provide its implementation. You can access the rebar control through [GetReBarCtrl](#getrebarctrl) to take advantage of the control's customization options. For more information about rebar controls, see `CReBarCtrl`. For more information about using rebar controls, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
 > [!CAUTION]
->  Rebar and rebar control objects do not support MFC control bar docking. If **CRebar::EnableDocking** is called, your application will assert.  
+>  Rebar and rebar control objects do not support MFC control bar docking. If `CRebar::EnableDocking` is called, your application will assert.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -78,16 +78,16 @@ BOOL AddBar(
 ```  
   
 ### Parameters  
- `pBar`  
+ *pBar*  
  A pointer to a `CWnd` object that is the child window to be inserted into the rebar. The referenced object must have a **WS_CHILD**.  
   
- `lpszText`  
- A pointer to a string containing the text to appear on the rebar. **NULL** by default. The text contained in `lpszText` is not part of the child window; it is on the rebar itself.  
+ *lpszText*  
+ A pointer to a string containing the text to appear on the rebar. **NULL** by default. The text contained in *lpszText* is not part of the child window; it is on the rebar itself.  
   
- `pbmp`  
+ *pbmp*  
  A pointer to a `CBitmap` object to be displayed on the rebar background. **NULL** by default.  
   
- `dwStyle`  
+ *dwStyle*  
  A `DWORD` containing the style to apply to the rebar. See the **fStyle** function description in the Win32 structure [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) for a complete list of band styles.  
   
  *clrFore*  
@@ -114,16 +114,16 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the `CWnd` object whose Windows window is the parent of the status bar. Normally your frame window.  
   
- `dwCtrlStyle`  
+ *dwCtrlStyle*  
  The rebar control style. By default, **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of styles.  
   
- `dwStyle`  
+ *dwStyle*  
  The rebar window styles.  
   
- `nID`  
+ *nID*  
  The rebar's child-window ID.  
   
 ### Return Value  

@@ -106,7 +106,7 @@ Information retrieved by the `GetIndexInfo` member function of a tabledef object
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)  
 [CDaoTableDef::GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)  

@@ -143,14 +143,14 @@ class CDockablePane : public CPane
   
 -   Dragging a pane while displaying a drag rectangle.  
   
- To use a docking pane in your application, derive your pane class from the `CDockablePane` class. Either embed the derived object into the main frame window object or into a window object that controls the instance of your pane. Then call the [CDockablePane::Create](#create) method or the [CDockablePane::CreateEx](#createex) method when you process the `WM_CREATE` message in the main frame window. Finally, set up the pane object by calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking), [CBasePane::DockPane](../../mfc/reference/cbasepane-class.md#dockpane), or [CDockablePane::AttachToTabWnd](#attachtotabwnd).  
+ To use a docking pane in your application, derive your pane class from the `CDockablePane` class. Either embed the derived object into the main frame window object or into a window object that controls the instance of your pane. Then call the [CDockablePane::Create](#create) method or the [CDockablePane::CreateEx](#createex) method when you process the WM_CREATE message in the main frame window. Finally, set up the pane object by calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking), [CBasePane::DockPane](../../mfc/reference/cbasepane-class.md#dockpane), or [CDockablePane::AttachToTabWnd](#attachtotabwnd).  
   
 ## Customization Tips  
  The following tips apply to `CDockablePane` objects:  
   
 -   If you call [CDockablePane::AttachToTabWnd](#attachtotabwnd) for two non-tabbed, dockable panes, a pointer to a tabbed window will be returned in the `ppTabbedControlBar` parameter. You can continue to add tabs to the tabbed window by using this parameter.  
   
--   The kind of tabbed pane that is created by [CDockablePane::AttachToTabWnd](#attachtotabwnd) is determined by the `CDockablePane` object in the `pTabControlBarAttachTo` parameter. You can call [CDockablePane::SetTabbedPaneRTC](#settabbedpanertc) to set the kind of tabbed pane that the `CDockablePane` will create. The default type is determined by the `dwTabbedStyle` of [CDockablePane::Create](#create) when you first create the `CDockablePane`. If `dwTabbedStyle` is AFX_CBRS_OUTLOOK_TABS the default type is [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md); if `dwTabbedStyle` is AFX_CBRS_REGULAR_TABS the default type is [CTabbedPane Class](../../mfc/reference/ctabbedpane-class.md).  
+-   The kind of tabbed pane that is created by [CDockablePane::AttachToTabWnd](#attachtotabwnd) is determined by the `CDockablePane` object in the *pTabControlBarAttachTo* parameter. You can call [CDockablePane::SetTabbedPaneRTC](#settabbedpanertc) to set the kind of tabbed pane that the `CDockablePane` will create. The default type is determined by the `dwTabbedStyle` of [CDockablePane::Create](#create) when you first create the `CDockablePane`. If *dwTabbedStyle* is AFX_CBRS_OUTLOOK_TABS the default type is [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md); if *dwTabbedStyle* is AFX_CBRS_REGULAR_TABS the default type is [CTabbedPane Class](../../mfc/reference/ctabbedpane-class.md).  
   
 -   If you want to dock one dockable pane to another, call the [CDockablePane::DockToWindow](#docktowindow) method. The original pane must be docked somewhere before you call this method.  
   
@@ -192,16 +192,16 @@ virtual CDockablePane* AttachToTabWnd(
 ```  
   
 ### Parameters  
- [in] [out] `pTabControlBarAttachTo`  
+ [in] [out] *pTabControlBarAttachTo*  
  Specifies the target pane that the current pane attaches to. The target pane must be a dockable pane.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Specifies the docking method.  
   
- [in] `bSetActive`  
+ [in] *bSetActive*  
  `TRUE` to activate the tabbed pane after the attach operation; otherwise, `FALSE`.  
   
- [out] `ppTabbedControlBar`  
+ [out] *ppTabbedControlBar*  
  Contains the tabbed pane that results from the attach operation.  
   
 ### Return Value  
@@ -210,13 +210,13 @@ virtual CDockablePane* AttachToTabWnd(
 ### Remarks  
  When one dockable pane attaches to another pane using this method, the following occurs:  
   
-1.  The framework checks whether the target pane `pTabControlBarAttachTo` is a regular docking pane or if it is derived from [CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md).  
+1.  The framework checks whether the target pane *pTabControlBarAttachTo* is a regular docking pane or if it is derived from [CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md).  
   
 2.  If the target pane is a tabbed pane, the framework adds the current pane to it as a tab.  
   
 3.  If the target pane is a regular docking pane, the framework creates a tabbed pane.  
   
-    -   The framework calls `pTabControlBarAttachTo->CreateTabbedPane`. The style of the new tabbed pane depends on the `m_pTabbedControlBarRTC` member. By default, this member is set to the runtime class of [CTabbedPane](../../mfc/reference/ctabbedpane-class.md). If you pass the `AFX_CBRS_OUTLOOK_TABS` style as the `dwTabbedStyle` parameter to the [CDockablePane::Create](#create) method, the runtime class object is set to the runtime class of [CMFCOutlookBar](../../mfc/reference/cmfcoutlookbar-class.md). You can change this member at any time to change the style of the new pane.  
+    -   The framework calls `pTabControlBarAttachTo->CreateTabbedPane`. The style of the new tabbed pane depends on the `m_pTabbedControlBarRTC` member. By default, this member is set to the runtime class of [CTabbedPane](../../mfc/reference/ctabbedpane-class.md). If you pass the `AFX_CBRS_OUTLOOK_TABS` style as the *dwTabbedStyle* parameter to the [CDockablePane::Create](#create) method, the runtime class object is set to the runtime class of [CMFCOutlookBar](../../mfc/reference/cmfcoutlookbar-class.md). You can change this member at any time to change the style of the new pane.  
   
     -   When this method creates a tabbed pane, the framework replaces the pointer to `pTabControlBarAttachTo` (if the pane is docked or floating in a multi-miniframe window) with a pointer to the new tabbed pane.  
   
@@ -238,10 +238,10 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
+ [in] *bStretch*  
  Not used.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Not used.  
   
 ### Return Value  
@@ -255,11 +255,11 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
 ```  
   
 ### Parameters  
- [in] `pMiniFrame`  
+ [in] *pMiniFrame*  
  Pointer to a `CPaneFrameWnd` object.  
   
 ### Return Value  
- `TRUE` if `pMiniFrame` can be docked to the pane; otherwise, `FALSE`.  
+ `TRUE` if *pMiniFrame* can be docked to the pane; otherwise, `FALSE`.  
   
 ##  <a name="canacceptpane"></a>  CDockablePane::CanAcceptPane  
  Determines whether another pane can be docked to the current pane.  
@@ -269,7 +269,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  Specifies the pane to dock to the current pane.  
   
 ### Return Value  
@@ -280,7 +280,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
   
  Override this function in a derived class to enable or disable docking to a specific pane.  
   
- By default, this method returns `TRUE` if either `pBar` or its parent is of type `CDockablePane`.  
+ By default, this method returns `TRUE` if either *pBar* or its parent is of type `CDockablePane`.  
   
 ##  <a name="canautohide"></a>  CDockablePane::CanAutoHide  
  Determines whether the pane can auto-hide.  
@@ -332,7 +332,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```  
   
 ### Parameters  
- [in] `bActiveTabOnly`  
+ [in] *bActiveTabOnly*  
  When you convert a `CTabbedPane`, specify `TRUE` to convert only the active tab. Specify `FALSE` to convert all tabs in the pane.  
   
 ##  <a name="checkautohidecondition"></a>  CDockablePane::CheckAutoHideCondition  
@@ -358,7 +358,7 @@ virtual BOOL CheckStopSlideCondition(BOOL bDirection);
 ```  
   
 ### Parameters  
- [in] `bDirection`  
+ [in] *bDirection*  
  `TRUE` if the pane is visible; `FALSE` if the pane is hidden.  
   
 ### Return Value  
@@ -377,11 +377,11 @@ virtual void CopyState(CDockablePane* pOrgBar);
 ```  
   
 ### Parameters  
- [in] `pOrgBar`  
+ [in] *pOrgBar*  
  A pointer to a dockable pane.  
   
 ### Remarks  
- `CDockablePane::CopyState` copies the state of `pOrgBar` to the current pane by calling the following methods:  
+ `CDockablePane::CopyState` copies the state of *pOrgBar* to the current pane by calling the following methods:  
   
 - [CPane::CopyState](../../mfc/reference/cpane-class.md#copystate)  
   
@@ -421,37 +421,37 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `lpszCaption`  
+ [in] *lpszCaption*  
  Specifies the window name.  
   
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  Specifies the parent window.  
   
- [in] `rect`  
- Specifies the size and position of the window, in client coordinates of `pParentWnd`.  
+ [in] *rect*  
+ Specifies the size and position of the window, in client coordinates of *pParentWnd*.  
   
- [in] `bHasGripper`  
+ [in] *bHasGripper*  
  `TRUE` to create the pane with a caption; otherwise, `FALSE`.  
   
- [in] `nID`  
+ [in] *nID*  
  Specifies the ID of the child window. This value must be unique if you want to save docking state for this docking pane.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Specifies the window style attributes.  
   
- [in] `dwTabbedStyle`  
+ [in] *dwTabbedStyle*  
  Specifies the tabbed style of a tabbed window that is created when the user drags a pane on the caption of this pane.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Specifies additional style attributes.  
   
- [in] [out] `pContext`  
+ [in] [out] *pContext*  
  Specifies the create context of the window.  
   
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  Specifies the window name.  
   
- [in] `sizeDefault`  
+ [in] *sizeDefault*  
  Specifies the size of the window.  
   
 ### Return Value  
@@ -460,9 +460,9 @@ virtual BOOL Create(
 ### Remarks  
  Creates a Windows pane and attaches it to the `CDockablePane` object.  
   
- If the `dwStyle` window style has the `CBRS_FLOAT_MULTI` flag, the miniframe window can float with other panes in the miniframe window. By default, docking panes can only float individually.  
+ If the *dwStyle* window style has the `CBRS_FLOAT_MULTI` flag, the miniframe window can float with other panes in the miniframe window. By default, docking panes can only float individually.  
   
- If the `dwTabbedStyle` parameter has the `AFX_CBRS_OUTLOOK_TABS` flag specified, the pane creates Outlook-style tabbed panes when another pane is attached to this pane using the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method. By default, dockable panes create regular tabbed panes of type [CTabbedPane](../../mfc/reference/ctabbedpane-class.md).  
+ If the *dwTabbedStyle* parameter has the `AFX_CBRS_OUTLOOK_TABS` flag specified, the pane creates Outlook-style tabbed panes when another pane is attached to this pane using the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method. By default, dockable panes create regular tabbed panes of type [CTabbedPane](../../mfc/reference/ctabbedpane-class.md).  
   
 ##  <a name="createdefaultpanedivider"></a>  CDockablePane::CreateDefaultPaneDivider  
  Creates a default divider for the pane as it is being docked to a frame window.  
@@ -475,20 +475,20 @@ static CPaneDivider* __stdcall CreateDefaultPaneDivider(
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
- Specifies the side of the main frame to which the pane is being docked. If `dwAlignment` contains the `CBRS_ALIGN_LEFT` or `CBRS_ALIGN_RIGHT` flag, this method creates a vertical ( `CPaneDivider::SS_VERT`) divider; otherwise, this method creates a horizontal ( `CPaneDivider::SS_HORZ`) divider.  
+ [in] *dwAlignment*  
+ Specifies the side of the main frame to which the pane is being docked. If *dwAlignment* contains the `CBRS_ALIGN_LEFT` or `CBRS_ALIGN_RIGHT` flag, this method creates a vertical ( `CPaneDivider::SS_VERT`) divider; otherwise, this method creates a horizontal ( `CPaneDivider::SS_HORZ`) divider.  
   
- [in] `pParent`  
+ [in] *pParent*  
  Pointer to the parent frame.  
   
- [in] `pSliderRTC`  
+ [in] *pSliderRTC*  
  Not used.  
   
 ### Return Value  
  This method returns a pointer to the newly-created divider, or `NULL` if divider creation fails.  
   
 ### Remarks  
- `dwAlignment` can be any of the following values:  
+ *dwAlignment* can be any of the following values:  
   
 |Value|Description|  
 |-----------|-----------------|  
@@ -515,34 +515,34 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] `dwStyleEx`  
+ [in] *dwStyleEx*  
  Specifies the extended style attributes for the new window.  
   
- [in] `lpszCaption`  
+ [in] *lpszCaption*  
  Specifies the window name.  
   
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  Specifies the parent window.  
   
- [in] `rect`  
- Specifies the size and position of the window, in client coordinates of `pParentWnd`.  
+ [in] *rect*  
+ Specifies the size and position of the window, in client coordinates of *pParentWnd*.  
   
- [in] `bHasGripper`  
+ [in] *bHasGripper*  
  `TRUE` to create the pane with a caption; otherwise, `FALSE`.  
   
- [in] `nID`  
+ [in] *nID*  
  Specifies the ID of the child window. This value must be unique if you want to save the docking state for this docking pane.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Specifies the window style attributes.  
   
- [in] `dwTabbedStyle`  
+ [in] *dwTabbedStyle*  
  Specifies the tabbed style of a tabbed window that is created when the user drags a pane on the caption of this pane.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Specifies the additional style attributes.  
   
- [in] [out] `pContext`  
+ [in] [out] *pContext*  
  Specifies the create context of the window.  
   
 ### Return Value  
@@ -551,9 +551,9 @@ virtual BOOL CreateEx(
 ### Remarks  
  Creates a Windows pane and attaches it to the `CDockablePane` object.  
   
- If the `dwStyle` window style has the `CBRS_FLOAT_MULTI` flag, the miniframe window can float with other panes in the miniframe window. By default, docking panes can only float individually.  
+ If the *dwStyle* window style has the `CBRS_FLOAT_MULTI` flag, the miniframe window can float with other panes in the miniframe window. By default, docking panes can only float individually.  
   
- If the `dwTabbedStyle` parameter has the `AFX_CBRS_OUTLOOK_TABS` flag specified, the pane creates Outlook-style tabbed panes when another pane is attached to this pane using the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method. By default, dockable panes create regular tabbed panes of type [CTabbedPane](../../mfc/reference/ctabbedpane-class.md).  
+ If the *dwTabbedStyle* parameter has the `AFX_CBRS_OUTLOOK_TABS` flag specified, the pane creates Outlook-style tabbed panes when another pane is attached to this pane using the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method. By default, dockable panes create regular tabbed panes of type [CTabbedPane](../../mfc/reference/ctabbedpane-class.md).  
   
 ##  <a name="createtabbedpane"></a>  CDockablePane::CreateTabbedPane  
  Creates a tabbed pane from the current pane.  
@@ -583,20 +583,20 @@ virtual BOOL DockPaneContainer(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
+ [in] *barContainerManager*  
  A reference to the container manager of the container that is being docked.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  `DWORD` that specifies the side of the pane to which the container is being docked.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Not used.  
   
 ### Return Value  
  `TRUE` if the container was successfully docked to the pane; otherwise, `FALSE`.  
   
 ### Remarks  
- `dwAlignment` can be any of the following values:  
+ *dwAlignment* can be any of the following values:  
   
 |Value|Description|  
 |-----------|-----------------|  
@@ -613,11 +613,11 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 ```  
   
 ### Parameters  
- [in] `bWasDocked`  
+ [in] *bWasDocked*  
  When the method returns, this value contains `TRUE` if the pane was successfully docked; otherwise, it contains `FALSE`.  
   
 ### Return Value  
- If the pane was docked to a tabbed window, or if a tabbed window was created as a result of docking, this method returns a pointer to the tabbed window. If the pane was otherwise successfully docked, this method returns the `this` pointer. If docking failed, this method returns `NULL`.  
+ If the pane was docked to a tabbed window, or if a tabbed window was created as a result of docking, this method returns a pointer to the tabbed window. If the pane was otherwise successfully docked, this method returns the **this** pointer. If docking failed, this method returns `NULL`.  
   
 ##  <a name="docktorecentpos"></a>  CDockablePane::DockToRecentPos  
  Docks a pane to its stored docking position.  
@@ -643,20 +643,20 @@ virtual BOOL DockToWindow(
 ```  
   
 ### Parameters  
- [in] [out] `pTargetWindow`  
+ [in] [out] *pTargetWindow*  
  Specifies the dockable pane to dock this pane to.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  Specifies the docking alignment for the pane. May be one of CBRS_ALIGN_LEFT, CBRS_ALIGN_TOP, CBRS_ALIGN_RIGHT, CBRS_ALIGN_BOTTOM or CBRS_ALIGN_ANY. (Defined in afxres.h.)  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Specifies the docking rectangle for the pane.  
   
 ### Return Value  
  `TRUE` if the pane was docked successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- Call this method to dock one pane to another pane with the alignment specified by `dwAlignment`.  
+ Call this method to dock one pane to another pane with the alignment specified by *dwAlignment*.  
   
 ##  <a name="drawcaption"></a>  CDockablePane::DrawCaption  
  Draws the caption (also called the gripper) of a docking pane.  
@@ -668,10 +668,10 @@ virtual void DrawCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Represents the device context used for drawing.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Specifies the bounding rectangle of the pane's caption.  
   
 ### Remarks  
@@ -687,13 +687,13 @@ void EnableAutohideAll(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the autohide all feature for the dockable pane; otherwise, `FALSE`.  
   
 ### Remarks  
  When a user holds the `Ctrl` key and clicks the pin button to switch a pane to autohide mode, all other panes in the same container are also switched to autohide mode.  
   
- Call this method with `bEnable` set to `FALSE` to disable this feature for a particular pane.  
+ Call this method with *bEnable* set to `FALSE` to disable this feature for a particular pane.  
   
 ##  <a name="enablegripper"></a>  CDockablePane::EnableGripper  
  Shows or hides the caption (also called the gripper).  
@@ -703,7 +703,7 @@ virtual void EnableGripper(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the caption; otherwise, `FALSE`.  
   
 ### Remarks  
@@ -771,10 +771,10 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
  The location of the pointer in screen coordinates.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  The distance, in pixels, away from the edge of a rectangle the pointer must be to enable docking.  
   
 ### Return Value  
@@ -812,7 +812,7 @@ int GetLastPercentInPaneContainer() const;
 ```  
   
 ### Return Value  
- An `int` that specifies the percentage of space that the pane occupies in its container.  
+ An *int* that specifies the percentage of space that the pane occupies in its container.  
   
 ### Remarks  
  This method is used when the container adjusts its layout.  
@@ -827,10 +827,10 @@ virtual void GetTabArea(
 ```  
   
 ### Parameters  
- [in] `rectTabAreaTop`  
+ [in] *rectTabAreaTop*  
  `GetTabArea` fills this variable with the tab area if tabs are located at the top of the pane. If tabs are located at the bottom of the pane, this variable is filled with an empty rectangle.  
   
- [in] `rectTabAreaBottom`  
+ [in] *rectTabAreaBottom*  
  `GetTabArea` fills this variable with the tab area if tabs are located at the bottom of the pane. If tabs are located at the top of the pane, this variable is filled with an empty rectangle.  
   
 ### Remarks  
@@ -874,24 +874,24 @@ virtual int HitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  Specifies the point to test.  
   
- [in] `bDetectCaption`  
+ [in] *bDetectCaption*  
  `TRUE` if `HTCAPTION` should be returned if the point is on the pane's caption; otherwise, `FALSE`.  
   
 ### Return Value  
  One of the following values:  
   
-- `HTNOWHERE` if `point` is not in the dockable pane.  
+- `HTNOWHERE` if *point* is not in the dockable pane.  
   
-- `HTCLIENT` if `point` is in the client area of the dockable pane.  
+- `HTCLIENT` if *point* is in the client area of the dockable pane.  
   
-- `HTCAPTION` if `point` is in the caption area of the dockable pane.  
+- `HTCAPTION` if *point* is in the caption area of the dockable pane.  
   
-- `AFX_HTCLOSE` if `point` is on the close button.  
+- `AFX_HTCLOSE` if *point* is on the close button.  
   
-- `HTMAXBUTTON` if `point` is on the pin button.  
+- `HTMAXBUTTON` if *point* is on the pin button.  
   
 ##  <a name="isautohideallenabled"></a>  CDockablePane::IsAutohideAllEnabled  
  Indicates whether the docking pane and all other panes in the container can be switched to autohide mode.  
@@ -1056,7 +1056,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### Parameters  
- [in] `pWndOldParent`  
+ [in] *pWndOldParent*  
   
 ### Remarks  
   
@@ -1080,10 +1080,10 @@ virtual void OnBeforeChangeParent(
 ```  
   
 ### Parameters  
- [in] `pWndNewParent`  
+ [in] *pWndNewParent*  
  A pointer to the new parent window.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `BOOL` that specifies whether to delay recalculation of the docking layout if the pane is undocked. For more information, see [CDockablePane::UndockPane](#undockpane).  
   
 ### Remarks  
@@ -1101,10 +1101,10 @@ virtual BOOL OnBeforeFloat(
 ```  
   
 ### Parameters  
- [in] `rectFloat`  
+ [in] *rectFloat*  
  Specifies the position and size of the pane when it is in a floating state.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Specifies the docking method. See [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) for a list of possible values.  
   
 ### Return Value  
@@ -1121,7 +1121,7 @@ virtual void OnPressButtons(UINT nHit);
 ```  
   
 ### Parameters  
- [in] `nHit`  
+ [in] *nHit*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1135,7 +1135,7 @@ virtual void OnSlide(BOOL bSlideOut);
 ```  
   
 ### Parameters  
- [in] `bSlideOut`  
+ [in] *bSlideOut*  
  `TRUE` to show the pane; `FALSE` to hide the pane.  
   
 ### Remarks  
@@ -1162,13 +1162,13 @@ BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarToReplaceWith`  
+ [in] *pBarToReplaceWith*  
  A pointer to a dockable pane.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Not used.  
   
- [in] `bRegisterWithFrame`  
+ [in] *bRegisterWithFrame*  
  If `TRUE`, the new pane is registered with the docking manager of the parent of the old pane. The new pane is inserted at the index of the old pane in the list of panes that is maintained by the docking manager.  
   
 ### Return Value  
@@ -1196,16 +1196,16 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 ```  
   
 ### Parameters  
- [in] `bMode`  
+ [in] *bMode*  
  `TRUE` to enable autohide mode; `FALSE` to enable regular docking mode.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  Specifies the alignment of the autohide pane to create.  
   
- [in] [out] `pCurrAutoHideBar`  
+ [in] [out] *pCurrAutoHideBar*  
  A pointer to the current autohide toolbar. Can be `NULL`.  
   
- [in] `bUseTimer`  
+ [in] *bUseTimer*  
  Specifies whether to use the autohide effect when the user switches the pane to autohide mode or to hide the pane immediately.  
   
 ### Return Value  
@@ -1226,10 +1226,10 @@ void SetAutoHideParents(
 ```  
   
 ### Parameters  
- [in] `pToolBar`  
+ [in] *pToolBar*  
  Pointer to an auto-hide toolbar.  
   
- [in] `pBtn`  
+ [in] *pBtn*  
  Pointer to an auto-hide button.  
   
 ##  <a name="setlastpercentinpanecontainer"></a>  CDockablePane::SetLastPercentInPaneContainer  
@@ -1240,8 +1240,8 @@ void SetLastPercentInPaneContainer(int n);
 ```  
   
 ### Parameters  
- [in] `n`  
- An `int` that specifies the percentage of space that the pane occupies in its container.  
+ [in] *n*  
+ An **int** that specifies the percentage of space that the pane occupies in its container.  
   
 ### Remarks  
  The framework adjusts the pane to use the new value when the layout is recalculated.  
@@ -1254,7 +1254,7 @@ void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 ```  
   
 ### Parameters  
- [in] `hRestoredSlider`  
+ [in] *hRestoredSlider*  
  A handle to a pane divider (slider).  
   
 ### Remarks  
@@ -1268,13 +1268,13 @@ void SetTabbedPaneRTC(CRuntimeClass* pRTC);
 ```  
   
 ### Parameters  
- [in] `pRTC`  
+ [in] *pRTC*  
  The runtime class information for the tabbed pane.  
   
 ### Remarks  
  Call this method to set the runtime class information for tabbed panes that are created dynamically. This can occur when a user drags one pane to the caption of another pane, or if you call the [CDockablePane::AttachToTabWnd](#attachtotabwnd) method to programmatically create a tabbed pane from two dockable panes.  
   
- The default runtime class is set according to the `dwTabbedStyle` parameter of [CDockablePane::Create](#create) and [CDockablePane::CreateEx](#createex). To customize the new tabbed panes, derive your class from one of the following classes:  
+ The default runtime class is set according to the *dwTabbedStyle* parameter of [CDockablePane::Create](#create) and [CDockablePane::CreateEx](#createex). To customize the new tabbed panes, derive your class from one of the following classes:  
   
 - [CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)  
   
@@ -1295,13 +1295,13 @@ virtual void ShowPane(
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  `TRUE` to show the pane; `FALSE` to hide the pane.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` to delay adjusting the docking layout; `FALSE` to adjust the docking layout immediately.  
   
- [in] `bActivate`  
+ [in] *bActivate*  
  `TRUE` to activate the pane when shown; otherwise, `FALSE`.  
   
 ### Remarks  
@@ -1317,10 +1317,10 @@ virtual void Slide(
 ```  
   
 ### Parameters  
- [in] `bSlideOut`  
+ [in] *bSlideOut*  
  `TRUE` to show the pane; `FALSE` to hide the pane.  
   
- [in] `bUseTimer`  
+ [in] *bUseTimer*  
  `TRUE` to show or hide the pane with the autohide effect; `FALSE` to show or hide the pane immediately.  
   
 ### Remarks  
@@ -1346,7 +1346,7 @@ virtual void UndockPane(BOOL bDelay = FALSE);
 ```  
   
 ### Parameters  
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` to delay calculating the docking layout; `FALSE` to recalculate the docking layout immediately.  
   
 ### Remarks  

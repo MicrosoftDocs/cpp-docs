@@ -76,7 +76,7 @@ class CSliderCtrl : public CWnd
   
  The slider moves in increments that you specify when you create it. For example, if you specify that the slider should have a range of five, the slider can only occupy six positions: a position at the left side of the slider control and one position for each increment in the range. Typically, each of these positions is identified by a tick mark.  
   
- You create a slider by using the constructor and the **Create** member function of `CSliderCtrl`. Once you have created a slider control, you can use member functions in `CSliderCtrl` to change many of its properties. Changes that you can make include setting the minimum and maximum positions for the slider, drawing tick marks, setting a selection range, and repositioning the slider.  
+ You create a slider by using the constructor and the `Create` member function of `CSliderCtrl`. Once you have created a slider control, you can use member functions in `CSliderCtrl` to change many of its properties. Changes that you can make include setting the minimum and maximum positions for the slider, drawing tick marks, setting a selection range, and repositioning the slider.  
   
  For more information on using `CSliderCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using CSliderCtrl](../../mfc/using-csliderctrl.md).  
   
@@ -100,7 +100,7 @@ void ClearSel(BOOL bRedraw = FALSE);
 ```  
   
 ### Parameters  
- `bRedraw`  
+ *bRedraw*  
  Redraw flag. If this parameter is **TRUE**, the slider is redrawn after the selection is cleared; otherwise the slider is not redrawn.  
   
 ##  <a name="cleartics"></a>  CSliderCtrl::ClearTics  
@@ -111,7 +111,7 @@ void ClearTics(BOOL bRedraw = FALSE);
 ```  
   
 ### Parameters  
- `bRedraw`  
+ *bRedraw*  
  Redraw flag. If this parameter is **TRUE**, the slider is redrawn after the tick marks are cleared; otherwise the slider is not redrawn.  
   
 ##  <a name="create"></a>  CSliderCtrl::Create  
@@ -126,27 +126,27 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the slider control's style. Apply any combination of [slider control styles](http://msdn.microsoft.com/library/windows/desktop/bb760147), described in the Windows SDK, to the control.  
   
- `rect`  
+ *rect*  
  Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Specifies the slider control's parent window, usually a `CDialog`. It must not be **NULL**.  
   
- `nID`  
+ *nID*  
  Specifies the slider control's ID.  
   
 ### Return Value  
  Nonzero if initialization was successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CSliderCtrl` in two steps. First, call the constructor, and then call **Create**, which creates the slider control and attaches it to the `CSliderCtrl` object.  
+ You construct a `CSliderCtrl` in two steps. First, call the constructor, and then call `Create`, which creates the slider control and attaches it to the `CSliderCtrl` object.  
   
  Depending on the values set for `dwStyle`, the slider control can have either a vertical or horizontal orientation. It can have tick marks on either side, both sides, or neither. It can also be used to specify a range of consecutive values.  
   
- To apply extended window styles to the slider control, call [CreateEx](#createex) instead of **Create**.  
+ To apply extended window styles to the slider control, call [CreateEx](#createex) instead of `Create`.  
   
 ##  <a name="createex"></a>  CSliderCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CSliderCtrl` object.  
@@ -161,19 +161,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the slider control's style. Apply any combination of [slider control styles](http://msdn.microsoft.com/library/windows/desktop/bb760147), described in the Windows SDK, to the control.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
@@ -197,7 +197,7 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
 ```  
   
 ### Parameters  
- `fLocation`  
+ *fLocation*  
  A Boolean value that indicates which of two buddy window handles to retrieve. Can be one of the following values:  
   
 - **TRUE** Retrieves the handle to the buddy to the left of the slider. If the slider control uses the `TBS_VERT` style, the message will retrieve the buddy above the slider.  
@@ -218,7 +218,7 @@ void GetChannelRect(LPRECT lprc) const;
 ```  
   
 ### Parameters  
- `lprc`  
+ *lprc*  
  A pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the size and position of the channel's bounding rectangle when the function returns.  
   
 ### Remarks  
@@ -280,14 +280,14 @@ void GetRange(
 ```  
   
 ### Parameters  
- `nMin`  
+ *nMin*  
  Reference to an integer that receives the minimum position.  
   
- `nMax`  
+ *nMax*  
  Reference to an integer that receives the maximum position.  
   
 ### Remarks  
- This function copies the values into the integers referenced by `nMin` and `nMax`.  
+ This function copies the values into the integers referenced by *nMin* and *nMax*.  
   
 ##  <a name="getrangemax"></a>  CSliderCtrl::GetRangeMax  
  Retrieves the maximum position for the slider in a slider control.  
@@ -319,10 +319,10 @@ void GetSelection(
 ```  
   
 ### Parameters  
- `nMin`  
+ *nMin*  
  Reference to an integer that receives the starting position of the current selection.  
   
- `nMax`  
+ *nMax*  
  Reference to an integer that receives the ending position of the current selection.  
   
 ##  <a name="getthumblength"></a>  CSliderCtrl::GetThumbLength  
@@ -346,7 +346,7 @@ void GetThumbRect(LPRECT lprc) const;
 ```  
   
 ### Parameters  
- `lprc`  
+ *lprc*  
  A pointer to a `CRect` object that contains the bounding rectangle for the slider when the function returns.  
   
 ##  <a name="gettic"></a>  CSliderCtrl::GetTic  
@@ -357,11 +357,11 @@ int GetTic(int nTic) const;
 ```  
   
 ### Parameters  
- `nTic`  
+ *nTic*  
  Zero-based index identifying a tick mark.  
   
 ### Return Value  
- The position of the specified tick mark or - 1 if `nTic` does not specify a valid index.  
+ The position of the specified tick mark or - 1 if *nTic* does not specify a valid index.  
   
 ##  <a name="getticarray"></a>  CSliderCtrl::GetTicArray  
  Retrieves the address of the array containing the positions of tick marks for a slider control.  
@@ -381,11 +381,11 @@ int GetTicPos(int nTic) const;
 ```  
   
 ### Parameters  
- `nTic`  
+ *nTic*  
  Zero-based index identifying a tick mark.  
   
 ### Return Value  
- The physical position, in client coordinates, of the specified tick mark or - 1 if `nTic` does not specify a valid index.  
+ The physical position, in client coordinates, of the specified tick mark or - 1 if *nTic* does not specify a valid index.  
   
 ##  <a name="gettooltips"></a>  CSliderCtrl::GetToolTips  
  Retrieves the handle to the tooltip control assigned to the slider control, if any.  
@@ -412,10 +412,10 @@ CWnd* SetBuddy(
 ```  
   
 ### Parameters  
- `pWndBuddy`  
+ *pWndBuddy*  
  A pointer to a `CWnd` object that will be set as the slider control's buddy.  
   
- `fLocation`  
+ *fLocation*  
  Value specifying the location at which to display the buddy window. This value can be one of the following:  
   
 - **TRUE** The buddy will appear to the left of the trackbar if the trackbar control uses the `TBS_HORZ` style. If the trackbar uses the `TBS_VERT` style, the buddy appears above the trackbar control.  
@@ -438,7 +438,7 @@ int SetLineSize(int nSize);
 ```  
   
 ### Parameters  
- `nSize`  
+ *nSize*  
  The new line size of the slider control.  
   
 ### Return Value  
@@ -455,7 +455,7 @@ int SetPageSize(int nSize);
 ```  
   
 ### Parameters  
- `nSize`  
+ *nSize*  
  The new page size of the slider control.  
   
 ### Return Value  
@@ -472,7 +472,7 @@ void SetPos(int nPos);
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  Specifies the new slider position.  
   
 ##  <a name="setrange"></a>  CSliderCtrl::SetRange  
@@ -486,13 +486,13 @@ void SetRange(
 ```  
   
 ### Parameters  
- `nMin`  
+ *nMin*  
  Minimum position for the slider.  
   
- `nMax`  
+ *nMax*  
  Maximum position for the slider.  
   
- `bRedraw`  
+ *bRedraw*  
  The redraw flag. If this parameter is **TRUE**, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
   
 ##  <a name="setrangemax"></a>  CSliderCtrl::SetRangeMax  
@@ -505,10 +505,10 @@ void SetRangeMax(
 ```  
   
 ### Parameters  
- `nMax`  
+ *nMax*  
  Maximum position for the slider.  
   
- `bRedraw`  
+ *bRedraw*  
  The redraw flag. If this parameter is **TRUE**, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
   
 ##  <a name="setrangemin"></a>  CSliderCtrl::SetRangeMin  
@@ -521,10 +521,10 @@ void SetRangeMin(
 ```  
   
 ### Parameters  
- `nMin`  
+ *nMin*  
  Minimum position for the slider.  
   
- `bRedraw`  
+ *bRedraw*  
  The redraw flag. If this parameter is **TRUE**, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
   
 ##  <a name="setselection"></a>  CSliderCtrl::SetSelection  
@@ -537,10 +537,10 @@ void SetSelection(
 ```  
   
 ### Parameters  
- `nMin`  
+ *nMin*  
  Starting position for the slider.  
   
- `nMax`  
+ *nMax*  
  Ending position for the slider.  
   
 ##  <a name="setthumblength"></a>  CSliderCtrl::SetThumbLength  
@@ -554,7 +554,7 @@ void SetThumbLength(int nLength);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `nLength`|Length of the slider, in pixels.|  
+|[in] *nLength*|Length of the slider, in pixels.|  
   
 ### Remarks  
  This method requires that the trackbar control be set to [TBS_FIXEDLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760147) style.  
@@ -579,7 +579,7 @@ BOOL SetTic(int nTic);
 ```  
   
 ### Parameters  
- `nTic`  
+ *nTic*  
  Position of the tick mark. This parameter must specify a positive value.  
   
 ### Return Value  
@@ -609,11 +609,11 @@ int SetTipSide(int nLocation);
 ```  
   
 ### Parameters  
- `nLocation`  
+ *nLocation*  
  Value representing the location at which to display the tooltip control. For a list of possible values, see the Win32 message [TBM_SETTIPSIDE](http://msdn.microsoft.com/library/windows/desktop/bb760240), as described in the Windows SDK.  
   
 ### Return Value  
- A value that represents the tooltip control's previous location. The return value equals one of the possible values for `nLocation`.  
+ A value that represents the tooltip control's previous location. The return value equals one of the possible values for *nLocation*.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message **TBM_SETTIPSIDE**, as described in the Windows SDK. Slider controls that use the **TBS_TOOLTIPS** style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
@@ -626,7 +626,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 ```  
   
 ### Parameters  
- `pWndTip`  
+ *pWndTip*  
  A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object containing the tooltips to use with the slider control.  
   
 ### Remarks  

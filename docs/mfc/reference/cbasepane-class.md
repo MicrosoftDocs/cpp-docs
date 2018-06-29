@@ -201,7 +201,7 @@ virtual void AccNotifyObjectFocusEvent(int);
 ```  
   
 ### Parameters  
- [in] `int`  
+ [in] *int*  
  Not used.  
   
 ##  <a name="addpane"></a>  CBasePane::AddPane  
@@ -212,7 +212,7 @@ void AddPane(CBasePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane to add.  
   
 ### Remarks  
@@ -228,7 +228,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### Parameters  
- [out] `hdwp`  
+ [out] *hdwp*  
  A handle to a structure containing multiple window positions.  
   
 ### Remarks  
@@ -256,11 +256,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- Indicates whether the bar should be stretched to the size of the frame. The `bStretch` parameter is nonzero when the bar is not a docking bar (not available for docking) and is 0 when it is docked or floating (available for docking).  
+ [in] *bStretch*  
+ Indicates whether the bar should be stretched to the size of the frame. The *bStretch* parameter is nonzero when the bar is not a docking bar (not available for docking) and is 0 when it is docked or floating (available for docking).  
   
- [in] `bHorz`  
- Indicates that the bar is horizontally or vertically oriented. The `bHorz` parameter is nonzero if the bar is horizontally oriented and is 0 if it is vertically oriented.  
+ [in] *bHorz*  
+ Indicates that the bar is horizontally or vertically oriented. The *bHorz* parameter is nonzero if the bar is horizontally oriented and is 0 if it is vertically oriented.  
   
 ### Return Value  
  The control bar size, in pixels, of a `CSize` object.  
@@ -276,14 +276,14 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the pane to dock.  
   
 ### Return Value  
  `TRUE` if another pane can be accepted; otherwise `FALSE`.  
   
 ### Remarks  
- The framework calls this method before it docks the pane specified by `pBar` to the current pane.  
+ The framework calls this method before it docks the pane specified by *pBar* to the current pane.  
   
  Use this method and the [CBasePane::CanBeDocked](#canbedocked) method to control how panes dock to other panes in your application.  
   
@@ -344,14 +344,14 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ```  
   
 ### Parameters  
- [in] `pDockBar`  
+ [in] *pDockBar*  
  A pointer to another pane.  
   
 ### Return Value  
  `TRUE` if this pane can be docked to another pane; otherwise `FALSE`.  
   
 ### Remarks  
- The framework calls this method before it docks the pane specified by `pDockBar` to the current pane.  
+ The framework calls this method before it docks the pane specified by *pDockBar* to the current pane.  
   
  Use this method and the [CBasePane::CanAcceptPane](#canacceptpane) method to control how panes dock to other panes in your application.  
   
@@ -426,11 +426,11 @@ virtual void CopyState(CBasePane* pOrgBar);
 ```  
   
 ### Parameters  
- [in] `pOrgBar`  
+ [in] *pOrgBar*  
  A pointer to another pane.  
   
 ### Remarks  
- This method copies the state from `pOrgBar` to this pane.  
+ This method copies the state from *pOrgBar* to this pane.  
   
 ##  <a name="createdefaultminiframe"></a>  CBasePane::CreateDefaultMiniframe  
  If the pane can float, this method creates a mini-frame window for it.  
@@ -440,7 +440,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 ```  
   
 ### Parameters  
- [in] `rectInitial`  
+ [in] *rectInitial*  
  Specifies the initial coordinates of the mini-frame window.  
   
 ### Return Value  
@@ -468,31 +468,31 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] `dwStyleEx`  
+ [in] *dwStyleEx*  
  The extended styles (see [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) for more information).  
   
- [in] `lpszClassName`  
+ [in] *lpszClassName*  
  The window class name.  
   
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  The window name.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The window style (see [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)).  
   
- [in] `rect`  
+ [in] *rect*  
  The initial rectangle.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  A pointer to the parent window.  
   
- [in] `nID`  
+ [in] *nID*  
  Specifies the pane ID. Must be unique.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Style flags for panes.  
   
- [in] `pContext`  
+ [in] *pContext*  
  A pointer to `CcreateContext`  
   
 ### Return Value  
@@ -515,7 +515,7 @@ virtual BOOL CreateEx(
 |`AFX_CBRS_REGULAR_TABS`|When one pane docks to another pane that has this style, a regular tabbed window is created. (For more information, see [CTabbedPane Class](../../mfc/reference/ctabbedpane-class.md).)|  
 |`AFX_CBRS_OUTLOOK_TABS`|When one pane docks to another pane that has this style, an Outlook-style tabbed window is created. (For more information, see [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md).)|  
   
- To use the new styles, specify them in `dwControlBarStyle`.  
+ To use the new styles, specify them in *dwControlBarStyle*.  
   
 ##  <a name="dockpane"></a>  CBasePane::DockPane  
  Docks a pane to another pane or to a frame window.  
@@ -528,22 +528,22 @@ virtual BOOL DockPane(
 ```  
   
 ### Parameters  
- [in] `pDockBar`  
+ [in] *pDockBar*  
  A pointer to another pane.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Specifies the destination rectangle.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Specifies the docking method.  
   
 ### Return Value  
  `TRUE` if the control bar was docked successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- Call this function to dock a pane to another pane or a dock bar ( [CDockSite Class](../../mfc/reference/cdocksite-class.md)) that is specified by `pDockBar`, or to a main frame if `pDockBar` is `NULL`.  
+ Call this function to dock a pane to another pane or a dock bar ( [CDockSite Class](../../mfc/reference/cdocksite-class.md)) that is specified by *pDockBar*, or to a main frame if *pDockBar* is `NULL`.  
   
- `dockMethod` specifies how the pane is docked. See [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) for a list of possible values.  
+ *dockMethod* specifies how the pane is docked. See [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) for a list of possible values.  
   
 ##  <a name="dockpaneusingrtti"></a>  CBasePane::DockPaneUsingRTTI  
  Docks the pane by using run-time type information.  
@@ -553,7 +553,7 @@ void DockPaneUsingRTTI(BOOL bUseDockSite);
 ```  
   
 ### Parameters  
- [in] `bUseDockSite`  
+ [in] *bUseDockSite*  
  If `TRUE`, dock to the docking site. If `FALSE`, dock to the parent frame.  
   
 ##  <a name="docktoframewindow"></a>  CBasePane::DockToFrameWindow  
@@ -570,23 +570,23 @@ virtual BOOL DockToFrameWindow(
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  The side of the parent frame that you want to dock the pane to.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  The desired size.  
   
- [in] `dwDockFlags`  
+ [in] *dwDockFlags*  
  Ignored.  
   
- [in] `pRelativeBar`  
+ [in] *pRelativeBar*  
  Ignored.  
   
- [in] `nRelativeIndex`  
+ [in] *nRelativeIndex*  
  Ignored.  
   
- [in] `bOuterEdge`  
- If `TRUE` and there are other dockable panes at the side specified by `dwAlignment`, the pane is docked outside the other panes, closer to the edge of the parent frame. If `FALSE`, the pane is docked closer to the center of the client area.  
+ [in] *bOuterEdge*  
+ If `TRUE` and there are other dockable panes at the side specified by *dwAlignment*, the pane is docked outside the other panes, closer to the edge of the parent frame. If `FALSE`, the pane is docked closer to the center of the client area.  
   
 ### Return Value  
  `TRUE` if the method was successful; otherwise `FALSE`.  
@@ -621,7 +621,7 @@ virtual void DoPaint(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -635,7 +635,7 @@ virtual void EnableDocking(DWORD dwAlignment);
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  Specifies the docking alignment to enable.  
   
 ### Remarks  
@@ -653,7 +653,7 @@ virtual void EnableGripper(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  `TRUE` to enable the gripper; `FALSE` to disable it.  
   
 ### Remarks  
@@ -670,20 +670,20 @@ virtual BOOL FloatPane(
 ```  
   
 ### Parameters  
- [in] `rectFloat`  
+ [in] *rectFloat*  
  Specifies the screen coordinates where the floating pane appears.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Specifies the dock method to use to float the pane.  
   
- [in] `bShow`  
+ [in] *bShow*  
  Specifies whether the floating pane is visible ( `TRUE`) or hidden ( `FALSE`).  
   
 ### Return Value  
  `TRUE` if the pane was floated successfully; otherwise `FALSE`.  
   
 ### Remarks  
- Call this method to float a pane at the screen position specified by `rectFloat`.  
+ Call this method to float a pane at the screen position specified by *rectFloat*.  
   
 ##  <a name="get_acchelptopic"></a>  CBasePane::get_accHelpTopic  
  The framework calls this method to retrieve the full path of the `WinHelp` file that is associated with the specified object and the identifier of the appropriate topic in that file.  
@@ -696,13 +696,13 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### Parameters  
- [in] `pszHelpFile`  
+ [in] *pszHelpFile*  
  Address of a `BSTR` that receives the full path of the `WinHelp` file that is associated with the specified object, if any.  
   
- [in] `varChild`  
+ [in] *varChild*  
  Specifies whether the Help topic to be retrieved is that of the object or one of the child elements of the object. This parameter can be either `CHILDID_SELF` (to obtain a Help topic for the object) or a child ID (to obtain a Help topic for one of the child elements of the object).  
   
- [in] `pidTopic`  
+ [in] *pidTopic*  
  Identifies the `Help` file topic that is associated with the specified object.  
   
 ### Return Value  
@@ -719,11 +719,11 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ```  
   
 ### Parameters  
- [in] `pvarChildren`  
+ [in] *pvarChildren*  
  Receives information that identifies the selected children.  
   
 ### Return Value  
- `CBasePane` does not implement this method. If `pvarChildren` is `NULL`, this method returns `E_INVALIDARG`. Otherwise, this method returns `DISP_E_MEMBERNOTFOUND`.  
+ `CBasePane` does not implement this method. If *pvarChildren* is `NULL`, this method returns `E_INVALIDARG`. Otherwise, this method returns `DISP_E_MEMBERNOTFOUND`.  
   
 ### Remarks  
  This function is part of the Active Accessibility support in MFC. Override this function in a derived class if you have non-windowed user interface elements other than windowless ActiveX controls.  
@@ -790,7 +790,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
   
  If `CBasePane::m_dockMode` is undefined (DT_UNDEFINED), then the docking mode is taken from the global docking mode ( `AFX_GLOBAL_DATA::m_dockModeGlobal`).  
   
- By setting `m_dockMode` or overriding `GetDockingMode` you can control the docking mode for each pane.  
+ By setting *m_dockMode* or overriding `GetDockingMode` you can control the docking mode for each pane.  
   
 ##  <a name="getdocksiteframewnd"></a>  CBasePane::GetDockSiteFrameWnd  
  Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)object where the pane is docked.  
@@ -846,7 +846,7 @@ virtual HICON GetPaneIcon(BOOL bBigIcon);
 ```  
   
 ### Parameters  
- [in] `bBigIcon`  
+ [in] *bBigIcon*  
  Specifies a 32 pixel by 32 pixel icon if `TRUE`; specifies a 16 pixel by 16 pixel icon if `FALSE`.  
   
 ### Return Value  
@@ -896,7 +896,7 @@ virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
 ```  
   
 ### Parameters  
- [in] `bNoAssert`  
+ [in] *bNoAssert*  
  If `TRUE`, this method does not check for non-valid pointers. If you call this method when your application exits, set this parameter to `TRUE`.  
   
 ### Return Value  
@@ -925,7 +925,7 @@ CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
 ```  
   
 ### Parameters  
- [out] `hWndTab`  
+ [out] *hWndTab*  
  If the return value is not `NULL`, this parameter contains the handle to the parent tabbed window.  
   
 ### Return Value  
@@ -968,14 +968,14 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the pane to insert.  
   
- [in] `pTarget`  
+ [in] *pTarget*  
  A pointer to the adjacent pane.  
   
- [in] `bAfter`  
- If `TRUE`, `pControlBar` is inserted after `pTarget`. If `FALSE`, `pControlBar` is inserted before `pTarget`.  
+ [in] *bAfter*  
+ If `TRUE`, *pControlBar* is inserted after *pTarget*. If `FALSE`, *pControlBar* is inserted before *pTarget*.  
   
 ### Return Value  
  `TRUE` if the method succeeds, `FALSE` otherwise.  
@@ -1099,13 +1099,13 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The specified point.  
   
- [out] `dwBarAlignment`  
+ [out] *dwBarAlignment*  
  Specifies which edge the point is near. Possible values are `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, and `CBRS_ALIGN_BOTTOM`  
   
- [out] `bOuterEdge`  
+ [out] *bOuterEdge*  
  `TRUE` if the point is near the outer border of the dock site; `FALSE` otherwise.  
   
 ### Return Value  
@@ -1178,13 +1178,13 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profile name.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Profile index.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Pane ID.  
   
 ### Return Value  
@@ -1204,20 +1204,20 @@ virtual HDWP MoveWindow(
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
  A rectangle specifying the new location and size of the pane.  
   
- [in] `bRepaint`  
+ [in] *bRepaint*  
  If `TRUE`, the pane is repainted. If `FALSE`, the pane is not repainted.  
   
- [in] `hdwp`  
+ [in] *hdwp*  
  Handle to a deferred window position structure.  
   
 ### Return Value  
  A handle to a deferred window position structure, or `NULL`.  
   
 ### Remarks  
- If you pass `NULL` as the `hdwp` parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.  
+ If you pass `NULL` as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.  
   
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent  
  Called by the framework after the pane's parent changes.  
@@ -1227,7 +1227,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### Parameters  
- [in] `pWndOldParent`  
+ [in] *pWndOldParent*  
  A pointer to the previous parent.  
   
 ### Remarks  
@@ -1245,10 +1245,10 @@ virtual void OnBeforeChangeParent(
 ```  
   
 ### Parameters  
- [in] `pWndNewParent`  
+ [in] *pWndNewParent*  
  A pointer to a new parent window.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  Specifies whether layout adjustments must be delayed.  
   
 ### Remarks  
@@ -1274,7 +1274,7 @@ virtual void OnMovePaneDivider(CPaneDivider*);
 ```  
   
 ### Parameters  
- [in] `CPaneDivider*`  
+ [in] *CPaneDivider\**  
  Not used.  
   
 ##  <a name="onpanecontextmenu"></a>  CBasePane::OnPaneContextMenu  
@@ -1287,10 +1287,10 @@ virtual void OnPaneContextMenu(
 ```  
   
 ### Parameters  
- [in] `pParentFrame`  
+ [in] *pParentFrame*  
  A pointer to the parent frame.  
   
- [in] `point`  
+ [in] *point*  
  Specifies the location of the shortcut menu.  
   
 ### Remarks  
@@ -1306,7 +1306,7 @@ virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
 ```  
   
 ### Parameters  
- [in] `pMiniFrame`  
+ [in] *pMiniFrame*  
  A pointer to a mini-frame window from which the pane is removed.  
   
 ### Remarks  
@@ -1322,7 +1322,7 @@ virtual BOOL OnSetAccData(long lVal);
 ```  
   
 ### Parameters  
- [in] `lVal`  
+ [in] *lVal*  
  Not used.  
   
 ### Return Value  
@@ -1342,16 +1342,16 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  Specifies the point, in screen coordinates, to check.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Increase the search area by this amount. A pane will satisfy the search criteria if the given point falls in the increased area.  
   
- [in] `bExactBar`  
- `TRUE` to ignore the `nSensitivity` parameter; otherwise, `FALSE`.  
+ [in] *bExactBar*  
+ `TRUE` to ignore the *nSensitivity* parameter; otherwise, `FALSE`.  
   
- [in] `pRTCBarType`  
+ [in] *pRTCBarType*  
  If not `NULL`, the method searches only panes of the specified type.  
   
 ### Return Value  
@@ -1377,19 +1377,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane to be removed.  
   
- [in] `bDestroy`  
+ [in] *bDestroy*  
  If `TRUE`, the removed pane is destroyed.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  If `TRUE`, adjust the docking layout immediately.  
   
- [in] `bAutoHide`  
+ [in] *bAutoHide*  
  If `TRUE`, the docking layout is related to the list of autohide bars. If `FALSE`, the docking layout is related to the list of regular panes.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  A pointer to a pane that replaces the removed pane.  
   
 ##  <a name="savestate"></a>  CBasePane::SaveState  
@@ -1403,13 +1403,13 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profile name.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Profile index.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Pane ID.  
   
 ### Return Value  
@@ -1426,7 +1426,7 @@ CFont* SelectDefaultFont(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A device context.  
   
 ### Return Value  
@@ -1440,7 +1440,7 @@ virtual void SetControlBarStyle(DWORD dwNewStyle);
 ```  
   
 ### Parameters  
- [in] `dwNewStyle`  
+ [in] *dwNewStyle*  
  A bitwise-OR combination of the following possible values.  
   
 |Style|Description|  
@@ -1458,7 +1458,7 @@ void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 ```  
   
 ### Parameters  
- [in] `dockModeNew`  
+ [in] *dockModeNew*  
  Specifies the new docking mode for the pane.  
   
 ### Remarks  
@@ -1476,13 +1476,13 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  Specifies the new alignment.  
   
 ### Remarks  
  Usually, the framework calls this method when a pane is docked from one side of the main frame to another.  
   
- The following table shows the possible values for `dwAlignment`:  
+ The following table shows the possible values for *dwAlignment*:  
   
 |Value|Alignment|  
 |-----------|---------------|  
@@ -1499,7 +1499,7 @@ virtual void SetPaneStyle(DWORD dwNewStyle);
 ```  
   
 ### Parameters  
- [in] `dwNewStyle`  
+ [in] *dwNewStyle*  
  Specifies the new style to set.  
   
 ### Remarks  
@@ -1522,32 +1522,32 @@ virtual HDWP SetWindowPos(
 ```  
   
 ### Parameters  
- [in] `pWndInsertAfter`  
+ [in] *pWndInsertAfter*  
  Identifies the `CWnd` object that comes before this `CWnd` object in the Z-order. For more information, see [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).  
   
- [in] `x`  
+ [in] *x*  
  Specifies the position of the left side of the window.  
   
- [in] `y`  
+ [in] *y*  
  Specifies the position of the top of the window.  
   
- [in] `cx`  
+ [in] *cx*  
  Specifies the width of the window.  
   
- [in] `cy`  
+ [in] *cy*  
  Specifies the height of the window.  
   
- [in] `nFlags`  
+ [in] *nFlags*  
  Specifies size and position options. For more information, see [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).  
   
- [in] `hdwp`  
+ [in] *hdwp*  
  Handle to a structure that contains size and position information for one or more windows.  
   
 ### Return Value  
  A handle to an updated deferred window position structure, or `NULL`.  
   
 ### Remarks  
- If `pWndInsertAfter` is `NULL`, this method calls [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos). If `pWndInsertAfter` is non- `NULL`, this method calls `DeferWindowPos`.  
+ If *pWndInsertAfter* is `NULL`, this method calls [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos). If *pWndInsertAfter* is non- `NULL`, this method calls `DeferWindowPos`.  
   
 ##  <a name="showpane"></a>  CBasePane::ShowPane  
  Shows or hides the pane.  
@@ -1560,13 +1560,13 @@ virtual void ShowPane(
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  Specifies whether to show ( `TRUE`) or hide ( `FALSE`) a pane.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  If `TRUE`, recalculating the docking layout is delayed.  
   
- [in] `bActivate`  
+ [in] *bActivate*  
  If `TRUE`, the pane is active when shown.  
   
 ### Remarks  
@@ -1584,10 +1584,10 @@ virtual CSize StretchPane(
 ```  
   
 ### Parameters  
- [in] `nLength`  
+ [in] *nLength*  
  The length by which to stretch the pane.  
   
- [in] `bVert`  
+ [in] *bVert*  
  If `TRUE`, stretch the pane vertically. If `FALSE`, stretch the pane horizontally.  
   
 ### Return Value  
@@ -1601,7 +1601,7 @@ virtual void UndockPane(BOOL bDelay=FALSE);
 ```  
   
 ### Parameters  
- `bDelay`  
+ *bDelay*  
  If TRUE, the docking layout is not recalculated immediately.  
   
 ### Remarks  

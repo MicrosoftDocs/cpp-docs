@@ -148,19 +148,19 @@ virtual BOOL DrawComboBorderWinXP(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  Bounding rectangle of the combo box border.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  Specifies whether the combo box border is disabled.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  Specifies whether the combo box border is dropped down.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Specifies whether the combo box border is highlighted.  
   
 ### Return Value  
@@ -181,19 +181,19 @@ virtual BOOL DrawComboDropButtonWinXP(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the combo box drop-down button.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  Specifies whether the combo box drop-down button is disabled.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  Specifies whether the combo box drop-down button is dropped down.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Specifies whether the combo box drop-down button is highlighted.  
   
 ### Return Value  
@@ -215,22 +215,22 @@ virtual void DrawCustomizeButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a display context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the button  
   
- [in] `bIsHorz`  
+ [in] *bIsHorz*  
  `TRUE` if the button is horizontal, or `FALSE` if it is vertical.  
   
- [in] `state`  
+ [in] *state*  
  The state of the button as it is to be drawn (regular, pressed or highlighted).  
   
- [in] `bIsCustomize`  
+ [in] *bIsCustomize*  
  `TRUE` if the customize arrow-down or arrow-left image should be drawn in the button rectangle, or `FALSE` if not.  
   
- [in] `bIsMoreButtons`  
+ [in] *bIsMoreButtons*  
  `TRUE` if the horizontal or vertical customize More-Buttons image should be drawn in the button rectangle, or `FALSE` if not.  
   
 ### Remarks  
@@ -247,17 +247,17 @@ virtual BOOL DrawPushButtonWinXP(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the push button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md) object to draw.  
   
- [in] `uiState`  
- Ignored. The state is taken from `pButton`.  
+ [in] *uiState*  
+ Ignored. The state is taken from *pButton*.  
   
 ### Return Value  
  `TRUE` if the Theme API is enabled; otherwise `FALSE`.  
@@ -296,11 +296,11 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### Parameters  
- [in] `pPropList`  
+ [in] *pPropList*  
  A pointer to the property list that the framework is drawing.  
   
 ### Return Value  
- Returns the background color of `pPropList`.  
+ Returns the background color of *pPropList*.  
   
 ### Remarks  
  Override this function to customize the background color of a property list in your application.  
@@ -313,7 +313,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### Parameters  
- [in] `pPropList`  
+ [in] *pPropList*  
  A pointer to the property list.  
   
 ### Return Value  
@@ -332,10 +332,10 @@ virtual int GetShowAllMenuItemsHeight(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context.  
   
- [in] `sizeDefault`  
+ [in] *sizeDefault*  
  Default menu size.  
   
 ### Return Value  
@@ -353,10 +353,10 @@ virtual void GetSmartDockingBaseGuideColors(
 ```  
   
 ### Parameters  
- [in] `clrBaseGroupBackground`  
+ [in] *clrBaseGroupBackground*  
  Reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) to set to the background color.  
   
- [in] `clrBaseGroupBorder`  
+ [in] *clrBaseGroupBorder*  
  Reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) to set to the border color.  
   
 ### Remarks  
@@ -390,31 +390,31 @@ virtual void GetTabFrameColors(
 ```  
   
 ### Parameters  
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to the tabbed window where the frame is drawing a tab.  
   
- [out] `clrDark`  
+ [out] *clrDark*  
  A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
   
- [out] `clrBlack`  
+ [out] *clrBlack*  
  A reference to a `COLORREF` parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
   
- [out] `clrHighlight`  
+ [out] *clrHighlight*  
  A reference to a `COLORREF` parameter where this method stores the color for the highlight state of the tab window.  
   
- [out] `clrFace`  
+ [out] *clrFace*  
  A reference to a `COLORREF` parameter where this method stores the color for face of the tab window.  
   
- [out] `clrDarkShadow`  
+ [out] *clrDarkShadow*  
  A reference to a `COLORREF` parameter where this method stores the color for the shadow of the tab window.  
   
- [out] `clrLight`  
+ [out] *clrLight*  
  A reference to a `COLORREF` parameter where this method stores the color for the light edge of the tab window.  
   
- [out] `pbrFace`  
+ [out] *pbrFace*  
  A pointer to a reference for a brush. This method stores the brush that it uses to fill the face of the tab window in this parameter.  
   
- [out] `pbrBlack`  
+ [out] *pbrBlack*  
  A pointer to a reference for a brush. This method stores the brush it uses to fill the black edge of the tab window in this parameter.  
   
 ### Remarks  
@@ -453,10 +453,10 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### Parameters  
- [out] `params`  
+ [out] *params*  
  A reference to a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object where this method returns tooltip information.  
   
- [in] `nType`  
+ [in] *nType*  
  Type information for the tooltip information to be returned.  
   
 ### Return Value  
@@ -533,7 +533,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar* pToolBar);
 ```  
   
 ### Parameters  
- [in] `pToolBar`  
+ [in] *pToolBar*  
  Pointer to the toolbar in question.  
   
 ### Return Value  
@@ -578,22 +578,22 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectBounds`  
+ [in] *rectBounds*  
  The size and location of the auto-hide button.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  The sizes of the borders.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the auto-hide button. The framework is drawing the border for this button.  
   
 ### Remarks  
  Override this method in a derived class if you want to customize the appearance of the border of an auto-hide button. By default, this method fills a flat border with the default shadow color for your application.  
   
- The `rectBorderSize` parameter does not contain the coordinates of the border. It contains the size of the border in the `top`, `bottom`, `left`, and `right` data members. A value less than or equal to 0 indicates no border on that side of the auto-hide button.  
+ The *rectBorderSize* parameter does not contain the coordinates of the border. It contains the size of the border in the `top`, `bottom`, `left`, and `right` data members. A value less than or equal to 0 indicates no border on that side of the auto-hide button.  
   
 ##  <a name="ondrawbargripper"></a>  CMFCVisualManagerOffice2003::OnDrawBarGripper  
  Called by the framework when it draws the gripper for a control bar.  
@@ -607,16 +607,16 @@ virtual void OnDrawBarGripper(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a control bar.  
   
- [in] `rectGripper`  
+ [in] *rectGripper*  
  The bounding rectangle for the control bar.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  A Boolean parameter that specifies whether the control bar is docked horizontally or vertically.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a control bar. The visual manager draws the gripper of this control bar.  
   
 ### Remarks  
@@ -635,11 +635,11 @@ virtual BOOL OnDrawBrowseButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pEdit`  
- [in] `state`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pEdit*  
+ [in] *state*  
+ [in] *clrText*  
   
 ### Return Value  
   
@@ -657,16 +657,16 @@ virtual void OnDrawButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a toolbar button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a toolbar button. The framework draws the border of this button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the toolbar button.  
   
- [in] `state`  
+ [in] *state*  
  An enumerated data type that specifies the current state of the toolbar button.  
   
 ### Remarks  
@@ -687,19 +687,19 @@ virtual void OnDrawCaptionBarBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a [CMFCCaptionBar Class](../../mfc/reference/cmfccaptionbar-class.md) object. The framework draws this caption bar.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the caption bar.  
   
- [in] `clrBarBorder`  
+ [in] *clrBarBorder*  
  The color of the border.  
   
- [in] `bFlatBorder`  
+ [in] *bFlatBorder*  
  `TRUE` if the border should have a flat, 2D appearance, or `FALSE` if not.  
   
 ### Remarks  
@@ -719,22 +719,22 @@ virtual void OnDrawCheckBoxEx(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the checkbox.  
   
- [in] `nState`  
+ [in] *nState*  
  The state of the checkbox: 0 if unchecked, 1 if checked, 2 if checked mixed.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  `TRUE` if the checkbox is highlighted, or `FALSE` if not.  
   
- [in] `bPressed`  
+ [in] *bPressed*  
  `TRUE` if the checkbox is pressed, or `FALSE` if not.  
   
- [in] `bEnabled`  
+ [in] *bEnabled*  
  `TRUE` if the checkbox is enabled, or `FALSE` if not.  
   
 ### Remarks  
@@ -753,22 +753,22 @@ virtual void OnDrawComboBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a combo box button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the combo box button.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  A Boolean parameter that indicates whether the combo box button is unavailable.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  A Boolean parameter that indicates whether the combo box is dropped down.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the combo box button is highlighted.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCToolBarComboBoxButton` object. The framework draws this combo box button.  
   
 ### Remarks  
@@ -788,22 +788,22 @@ virtual void OnDrawComboDropButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the drop button.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  A Boolean parameter that indicates whether the drop button is unavailable.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  A Boolean parameter that indicates whether the combo box is dropped down.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the drop button is highlighted.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCToolBarComboBoxButton` object. The framework draws the drop button for this combo box button  
   
 ### Remarks  
@@ -817,7 +817,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 ```  
   
 ### Parameters  
- [in] `pWndCtrl`  
+ [in] *pWndCtrl*  
  Pointer to a [CWnd Class](../../mfc/reference/cwnd-class.md) object representing the control for which to draw the border.  
   
 ### Remarks  
@@ -834,16 +834,16 @@ virtual void OnDrawExpandingBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the display context in which the expanding box is to be drawn.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the expanding box to be drawn.  
   
- [in] `bIsOpened`  
+ [in] *bIsOpened*  
  `TRUE` if the box to be drawn is opened, or `FALSE` if not.  
   
- [in] `colorBox`  
+ [in] *colorBox*  
  The color of the outside border of the box to be drawn.  
   
 ### Remarks  
@@ -861,17 +861,17 @@ virtual void OnDrawHeaderCtrlBorder(
 ```  
   
 ### Parameters  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  A pointer to a [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md) object. The framework draws the border of this header control.  
   
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the header control.  
   
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the header control is pressed.  
   
 ### Remarks  
@@ -888,13 +888,13 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  A pointer to a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object. The framework draws a border around this popup menu.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the popup menu.  
   
 ### Remarks  
@@ -910,10 +910,10 @@ virtual void OnDrawOutlookBarSplitter(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectSplitter`  
+ [in] *rectSplitter*  
  A rectangle that specifies the boundaries of the splitter.  
   
 ### Remarks  
@@ -931,16 +931,16 @@ virtual void OnDrawOutlookPageButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectBtn`  
+ [in] *rectBtn*  
  A rectangle that specifies the boundary of the Outlook page button.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean that specifies whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean that specifies whether the button is pressed.  
   
 ### Remarks  
@@ -957,13 +957,13 @@ virtual void OnDrawPaneBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a control bar.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane. The visual manager draws the border of this pane.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that indicates the boundaries of the pane.  
   
 ### Remarks  
@@ -982,19 +982,19 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) object. The framework draws the caption for this pane.  
   
- [in] `bActive`  
+ [in] *bActive*  
  A Boolean parameter that indicates whether the control bar is active.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption.  
   
- [in] `rectButtons`  
+ [in] *rectButtons*  
  A rectangle that specifies the boundaries of the caption buttons.  
   
 ### Return Value  
@@ -1012,10 +1012,10 @@ virtual void OnDrawPopupWindowBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the device context of the popup window.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the popup window.  
   
 ### Remarks  
@@ -1031,13 +1031,13 @@ virtual void OnDrawPopupWindowButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the device context of the button.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Bounding rectangle of the button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Pointer to the button (a [CMFCDesktopAlertWndButton Class](../../mfc/reference/cmfcdesktopalertwndbutton-class.md) object).  
   
 ### Remarks  
@@ -1053,13 +1053,13 @@ virtual COLORREF OnDrawPopupWindowCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to the device context of the caption.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Bounding rectangle of the caption.  
   
- [in] `pPopupWnd`  
+ [in] *pPopupWnd*  
  Pointer to the popup window for which the caption is to be drawn.  
   
 ### Return Value  
@@ -1079,13 +1079,13 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pGroup`  
+ [in] *pGroup*  
  A pointer to a group of buttons on the ribbon. The framework draws this group of buttons.  
   
- [in] `rectGroup`  
+ [in] *rectGroup*  
  A rectangle that specifies the boundaries of the group.  
   
 ### Return Value  
@@ -1104,10 +1104,10 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of the ribbon category.  
   
- [in] `pContextCaption`  
+ [in] *pContextCaption*  
  A pointer to a caption bar. The visual manager draws this [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md).  
   
 ### Return Value  
@@ -1127,13 +1127,13 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pTab`  
+ [in] *pTab*  
  A pointer to a ribbon tab object. The framework draws this tab.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  `TRUE` if the tab is active, or `FALSE` if not.  
   
 ### Return Value  
@@ -1155,19 +1155,19 @@ virtual void OnDrawRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pProgress`  
+ [in] *pProgress*  
  A pointer to a [CMFCRibbonProgressBar Class](../../mfc/reference/cmfcribbonprogressbar-class.md) object. The framework draws this progress bar.  
   
- [in] `rectProgress`  
+ [in] *rectProgress*  
  A rectangle that specifies the boundaries of the progress bar.  
   
- [in] `rectChunk`  
+ [in] *rectChunk*  
  A rectangle that specifies the boundaries of the area surrounding the progress bar.  
   
- [in] `bInfiniteMode`  
+ [in] *bInfiniteMode*  
  `TRUE` if the bar is in infinite mode, or `FALSE` if not. The default implementation does not use this parameter.  
   
 ### Remarks  
@@ -1184,13 +1184,13 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSeparator`  
+ [in] *pSeparator*  
  A pointer to a [CMFCRibbonSeparator Class](../../mfc/reference/cmfcribbonseparator-class.md) object. The framework draws this ribbon separator.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the separator.  
   
 ### Remarks  
@@ -1207,13 +1207,13 @@ virtual void OnDrawRibbonSliderChannel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  A pointer to a [CMFCRibbonSlider Class](../../mfc/reference/cmfcribbonslider-class.md) object. The framework draws the channel for this ribbon slider.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries for the channel of the ribbon slider.  
   
 ### Remarks  
@@ -1233,22 +1233,22 @@ virtual void OnDrawRibbonSliderThumb(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  A pointer to a [CMFCRibbonSlider Class](../../mfc/reference/cmfcribbonslider-class.md). The framework draws the thumb for this ribbon slider.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the thumb for the ribbon slider.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the thumb is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates whether the thumb is pressed.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates whether the thumb is unavailable.  
   
 ### Remarks  
@@ -1269,25 +1269,25 @@ virtual void OnDrawRibbonSliderZoomButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  A pointer to a [CMFCRibbonSlider Class](../../mfc/reference/cmfcribbonslider-class.md) object. The framework draws this ribbon slider.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the zoom buttons on the ribbon slider.  
   
- [in] `bIsZoomOut`  
+ [in] *bIsZoomOut*  
  `TRUE` if the framework should draw the left button with a " **-**" for zoom out, or `FALSE` if the framework should draw the right button with a " **+**" for zoom in.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates whether the button is pressed.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates whether the button is unavailable.  
   
 ### Remarks  
@@ -1304,13 +1304,13 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the status bar that contains the pane.  
   
- [in] `pPane`  
+ [in] *pPane*  
  A pointer to a status bar pane. The framework draws this [CMFCRibbonStatusBarPane Class](../../mfc/reference/cmfcribbonstatusbarpane-class.md) object.  
   
 ### Return Value  
@@ -1332,19 +1332,19 @@ virtual void OnDrawScrollButtons(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the scroll buttons.  
   
- [in] `nBorderSize`  
+ [in] *nBorderSize*  
  The size of the border to draw around the scroll buttons.  
   
- [in] `iImage`  
+ [in] *iImage*  
  An identifier of the image to draw in the scroll buttons.  
   
- [in] `bHilited`  
+ [in] *bHilited*  
  `TRUE` if the scroll buttons are highlighted, or `FALSE` if not.  
   
 ### Remarks  
@@ -1361,16 +1361,16 @@ virtual void OnDrawSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a control bar.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane that contains the separator.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the separator.  
   
- [in] `bIsHoriz`  
+ [in] *bIsHoriz*  
  `TRUE` if the pane is docked horizontally, or `FALSE` if the pane is docked vertically.  
   
 ### Remarks  
@@ -1387,13 +1387,13 @@ virtual void OnDrawShowAllMenuItems(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the menu to be drawn.  
   
- [in] `state`  
+ [in] *state*  
  The button state.  
   
 ### Remarks  
@@ -1411,19 +1411,19 @@ virtual void OnDrawStatusBarPaneBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a [CMFCStatusBar Class](../../mfc/reference/cmfcstatusbar-class.md) object. The framework draws this status bar object.  
   
- [in] `rectPane`  
+ [in] *rectPane*  
  A rectangle that specifies the boundaries of the status bar.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The ID of the status bar.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  The style of the status bar.  
   
 ### Remarks  
@@ -1446,27 +1446,27 @@ virtual void OnDrawStatusBarProgress(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for the status bar  
   
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
  The [CMFCStatusBar Class](../../mfc/reference/cmfcstatusbar-class.md) object that contains the progress bar.  
   
- [in] `rectProgress`  
+ [in] *rectProgress*  
  A rectangle that specifies the boundaries of the progress bar.  
   
- [in] `nProgressTotal`  
+ [in] *nProgressTotal*  
  The total number for the progress bar.  
   
- [in] `nProgressCurr`  
+ [in] *nProgressCurr*  
  The current progress for the progress bar.  
   
- [in] `clrBar`  
+ [in] *clrBar*  
  The initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.  
   
- [in] `clrProgressBarDest`  
- [in] `clrProgressText`  
- [in] `bProgressText`  
+ [in] *clrProgressBarDest*  
+ [in] *clrProgressText*  
+ [in] *bProgressText*  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of the progress bar on a status bar.  
@@ -1482,13 +1482,13 @@ virtual void OnDrawStatusBarSizeBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pStatBar`  
+ [in] *pStatBar*  
  A pointer to a status bar. The framework draws the size box for this status bar.  
   
- [in] `rectSizeBox`  
+ [in] *rectSizeBox*  
  A rectangle that specifies the boundaries of the size box.  
   
 ### Remarks  
@@ -1507,23 +1507,23 @@ virtual void OnDrawTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectTab`  
+ [in] *rectTab*  
  A rectangle that specifies the boundaries of the tab control.  
   
- [in] `iTab`  
+ [in] *iTab*  
  The index of the tab that the framework draws.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  A Boolean parameter that specifies whether the tab is active.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object. The framework draws this tab control.  
   
 ### Remarks  
- A `CMFCBaseTabCtrl` object calls this method when it processes the `WM_PAINT` message.Override this method in a derived class to customize the look of tabs.  
+ A `CMFCBaseTabCtrl` object calls this method when it processes the WM_PAINT message.Override this method in a derived class to customize the look of tabs.  
   
 ##  <a name="ondrawtabsbuttonborder"></a>  CMFCVisualManagerOffice2003::OnDrawTabsButtonBorder  
  The framework calls this method when it draws the border of a tab button.  
@@ -1538,19 +1538,19 @@ virtual void OnDrawTabsButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md) for which the framework draws the border.  
   
- [in] `uiState`  
+ [in] *uiState*  
  The state of the button (see [CButton::GetState](../../mfc/reference/cbutton-class.md#getstate)).  
   
- [in] `pWndTab`  
+ [in] *pWndTab*  
  A pointer to the parent tab window.  
   
 ### Remarks  
@@ -1569,19 +1569,19 @@ virtual void OnDrawTask(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pTask`  
+ [in] *pTask*  
  A pointer to a [CMFCTasksPaneTask Class](../../mfc/reference/cmfctaskspanetask-class.md) object. The framework draws this task.  
   
- [in] `pIcons`  
+ [in] *pIcons*  
  A pointer to the image list associated with the task pane. Each task contains an index for an image in this list.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that specifies whether the displayed task is highlighted.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  A Boolean parameter that specifies whether the displayed task is selected.  
   
 ### Remarks  
@@ -1599,16 +1599,16 @@ virtual void OnDrawTasksGroupAreaBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the group area on the task pane.  
   
- [in] `bSpecial`  
+ [in] *bSpecial*  
  A Boolean parameter that specifies if the border is highlighted. A value of `TRUE` indicates that the border is highlighted.  
   
- [in] `bNoTitle`  
+ [in] *bNoTitle*  
  A Boolean parameter that specifies whether the group area has a title. A value of `TRUE` indicates that the group area does not have a title.  
   
 ### Remarks  
@@ -1627,19 +1627,19 @@ virtual void OnDrawTasksGroupCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pGroup`  
+ [in] *pGroup*  
  A pointer to a [CMFCTasksPaneTaskGroup Class](../../mfc/reference/cmfctaskspanetaskgroup-class.md) object. The framework draws the caption for this group.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the group is highlighted.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  A Boolean parameter that indicates whether the group is currently selected.  
   
- [in] `bCanCollapse`  
+ [in] *bCanCollapse*  
  A Boolean parameter that indicates whether the group can be collapsed.  
   
 ### Remarks  
@@ -1656,17 +1656,17 @@ virtual void OnDrawTearOffCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the caption.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  `TRUE` if the caption is active; `FALSE` otherwise.  
   
 ### Remarks  
- This function is called by the framework when a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object processes a `WM_PAINT` message and must draw a tear-off caption.  
+ This function is called by the framework when a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object processes a WM_PAINT message and must draw a tear-off caption.  
   
  Override this method in a derived class to customize the look of captions for tear-off bars.  
   
@@ -1681,13 +1681,13 @@ virtual void OnErasePopupWindowButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  The rectangle that specifies the client area of the popup window.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Pointer to the button to be erased.  
   
 ### Remarks  
@@ -1703,17 +1703,17 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab area.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a tab window. The framework erases the tab area for the specified tab window.  
   
 ### Remarks  
- This function is called by the framework when a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object processes a `WM_PAINT` message and erases the tab area.  
+ This function is called by the framework when a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object processes a WM_PAINT message and erases the tab area.  
   
  Override this method in a derived visual manager to customize the appearance of tabs.  
   
@@ -1729,20 +1729,20 @@ virtual void OnEraseTabsButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a tab button. The framework erases the text and icon for this button.  
   
- [in] `pWndTab`  
+ [in] *pWndTab*  
  A pointer to the tab control that contains the tab button.  
   
 ### Remarks  
- The framework erases the text and icon for a button when a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object processes the `WM_ERASEBKGND` message  
+ The framework erases the text and icon for a button when a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object processes the WM_ERASEBKGND message  
   
  Override this method in a derived visual manager to customize the appearance of tab buttons.  
   
@@ -1757,20 +1757,20 @@ virtual BOOL OnEraseTabsFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab window.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a tab window. The framework erases a frame for this [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md).  
   
 ### Return Value  
  `TRUE` if the method is successful or `FALSE` if not.  
   
 ### Remarks  
- This method fills the area indicated by `rect` with the background color of the active tab. It is called when a `CMFCBaseTabCtrl` object processes a `WM_PAINT` message and erases a tab frame.  
+ This method fills the area indicated by *rect* with the background color of the active tab. It is called when a `CMFCBaseTabCtrl` object processes a WM_PAINT message and erases a tab frame.  
   
 ##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground  
  The framework calls this method when it fills the background of an auto-hide button.  
@@ -1783,13 +1783,13 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the auto-hide button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md) object. The framework fills the background for this auto-hide button.  
   
 ### Remarks  
@@ -1808,19 +1808,19 @@ virtual void OnFillBarBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a control bar.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a [CBasePane Class](../../mfc/reference/cbasepane-class.md) object. The framework fills the background of this pane.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A rectangle that specifies the boundaries of the pane.  
   
- [in] `rectClip`  
+ [in] *rectClip*  
  A rectangle that specifies the clipping area of the pane.  
   
- [in] `bNCArea`  
+ [in] *bNCArea*  
  A reserved value.  
   
 ### Remarks  
@@ -1840,16 +1840,16 @@ virtual void OnFillButtonInterior(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a toolbar button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the button for which the framework is filling the background.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the toolbar button.  
   
- [in] `state`  
+ [in] *state*  
  The state of the toolbar button (the possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPressed`, or `ButtonsIsHighlighted`).  
   
 ### Remarks  
@@ -1866,13 +1866,13 @@ virtual COLORREF OnFillCommandsListBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the button.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  A Boolean parameter that indicates whether the button is selected.  
   
 ### Return Value  
@@ -1892,13 +1892,13 @@ virtual void OnFillHeaderCtrlBackground(
 ```  
   
 ### Parameters  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  A pointer to a [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md) object. The framework fills the background for this header control.  
   
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the header control.  
   
 ### Remarks  
@@ -1916,16 +1916,16 @@ virtual void OnFillHighlightedArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the highlighted area to fill.  
   
- [in] `pBrush`  
+ [in] *pBrush*  
  The brush to use in filling the highlighted area.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Pointer to the [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object for which to fill the highlighted area.  
   
 ### Remarks  
@@ -1941,13 +1941,13 @@ virtual void OnFillOutlookBarCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption bar.  
   
- [out] `clrText`  
+ [out] *clrText*  
  A reference to a `COLORREF` object to which this method writes the color of text on the caption bar.  
   
 ### Remarks  
@@ -1968,19 +1968,19 @@ virtual void OnFillOutlookPageButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the Outlook page button.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that specifies whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that specifies whether the button is pressed.  
   
- [out] `clrText`  
+ [out] *clrText*  
  A reference to a `COLORREF` object where this method stores the text color of the outlook page button.  
   
 ### Remarks  
@@ -1996,10 +1996,10 @@ virtual void OnFillPopupWindowBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the popup window.  
   
 ### Remarks  
@@ -2019,22 +2019,22 @@ virtual void OnFillTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectFill`  
+ [in] *rectFill*  
  A rectangle that specifies the boundaries for the tab window.  
   
- [in] `pbrFill`  
+ [in] *pbrFill*  
  A pointer to the brush that the framework is using to fill the tab window.  
   
- [in] `iTab`  
+ [in] *iTab*  
  The zero-based tab index of a tab for which the framework fills the background.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  `TRUE` if the tab is active or `FALSE` if not.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to the parent tab control.  
   
 ### Remarks  
@@ -2051,13 +2051,13 @@ virtual void OnFillTasksGroupInterior(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the task group.  
   
- [in] `bSpecial`  
+ [in] *bSpecial*  
  A Boolean that indicates if the interior is filled with a special color.  
   
 ### Remarks  
@@ -2073,10 +2073,10 @@ virtual void OnFillTasksPaneBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectWorkArea`  
+ [in] *rectWorkArea*  
  A rectangle that specifies the boundaries of the task pane.  
   
 ### Remarks  
@@ -2093,13 +2093,13 @@ virtual void OnHighlightQuickCustomizeMenuButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for the button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the button.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the button.  
   
 ### Remarks  
@@ -2114,10 +2114,10 @@ virtual void OnHighlightRarelyUsedMenuItems(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectRarelyUsed`  
+ [in] *rectRarelyUsed*  
  A rectangle that specifies the boundaries of the highlighted command.  
   
 ### Remarks  
@@ -2131,7 +2131,7 @@ virtual void OnUpdateSystemColors();
 ```  
   
 ### Remarks  
- The framework calls this method as a part of processing the `WM_SYSCOLORCHANGE` message. Override this method in a derived visual manager if you want to execute custom code when the colors change in your application.  
+ The framework calls this method as a part of processing the WM_SYSCOLORCHANGE message. Override this method in a derived visual manager if you want to execute custom code when the colors change in your application.  
   
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors  
  Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371).  
@@ -2141,11 +2141,11 @@ static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);
 ```  
   
 ### Parameters  
- [in] `bDefaultWinXPColors`  
+ [in] *bDefaultWinXPColors*  
  Specifies whether the visual manager will use native Windows XP colors.  
   
 ### Remarks  
- If `bDefaultWinXPColors` is `TRUE`, the visual manager will use native Windows XP colors such as blue, olive, or silver. Otherwise, the visual manager will use the colors obtained from `GetSysColor`. The visual manager uses visual elements such as `COLOR_3DFACE`, `COLOR_3DSHADOW`, `COLOR_3DHIGHLIGHT`, `COLOR_3DDKSHADOW`, and `COLOR_3DLIGHT`.  
+ If *bDefaultWinXPColors* is `TRUE`, the visual manager will use native Windows XP colors such as blue, olive, or silver. Otherwise, the visual manager will use the colors obtained from `GetSysColor`. The visual manager uses visual elements such as `COLOR_3DFACE`, `COLOR_3DSHADOW`, `COLOR_3DHIGHLIGHT`, `COLOR_3DDKSHADOW`, and `COLOR_3DLIGHT`.  
   
  By default, a `CMFCVisualManagerOffice2003` object uses native Windows XP theme colors.  
   
@@ -2157,7 +2157,7 @@ static void __stdcall SetStatusBarOfficeXPLook(BOOL bStatusBarOfficeXPLook = TRU
 ```  
   
 ### Parameters  
- [in] `bStatusBarOfficeXPLook`  
+ [in] *bStatusBarOfficeXPLook*  
  `TRUE` if the Windows XP global theme should be used (the default), or `FALSE` if not.  
   
 ### Remarks  
@@ -2170,7 +2170,7 @@ static void SetUseGlobalTheme(BOOL bUseGlobalTheme = TRUE);
 ```  
   
 ### Parameters  
- [in] `bUseGlobalTheme`  
+ [in] *bUseGlobalTheme*  
  `TRUE` if you want the visual manager to use a global theme; `FALSE` otherwise.  
   
 ### Remarks  

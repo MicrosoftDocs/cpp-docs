@@ -86,13 +86,13 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pRTransition`  
+ *pRTransition*  
  Transition for Red component.  
   
- `pGTransition`  
+ *pGTransition*  
  Transition for Green component.  
   
- `pBTransition`  
+ *pBTransition*  
  Transition for Blue component.  
   
 ### Remarks  
@@ -112,16 +112,16 @@ CAnimationColor(
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies default color.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
 ### Remarks  
@@ -135,7 +135,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*>& lst);
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to three CAnimationVariable objects representing red, green and blue components.  
   
 ##  <a name="getb"></a>  CAnimationColor::GetB  
@@ -198,7 +198,7 @@ BOOL GetValue(COLORREF& color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -244,7 +244,7 @@ void operator=(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies new value Animation Color.  
   
 ### Remarks  
@@ -258,7 +258,7 @@ void SetDefaultValue(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies new default values for red, green and blue components.  
   
 ### Remarks  

@@ -89,7 +89,7 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```  
   
 ### Parameters  
- [in] `bRecalcLayout`  
+ [in] *bRecalcLayout*  
  `TRUE` to automatically recalculate the layout of the popup menu bar pane; otherwise, `FALSE`.  
   
 ### Remarks  
@@ -102,7 +102,7 @@ BOOL BuildOrigItems(UINT uiMenuResID);
 ```  
   
 ### Parameters  
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Specifies the menu ID of the menu resource to load.  
   
 ### Return Value  
@@ -139,7 +139,7 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  A point on the screen.  
   
 ### Return Value  
@@ -206,10 +206,10 @@ virtual BOOL ImportFromMenu(
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  The menu from which to import the popup menu buttons.  
   
- [in] `bShowAllCommands`  
+ [in] *bShowAllCommands*  
  `TRUE` if all commands on the menu are to be imported, or `FALSE` if rarely used ones may be hidden.  
   
 ### Return Value  
@@ -274,7 +274,7 @@ BOOL LoadFromHash(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  A handle to the archived menu to load.  
   
 ### Return Value  
@@ -313,10 +313,10 @@ virtual void SetButtonStyle(
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The zero-based index of the toolbar button whose style is to be set.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
   
 ### Remarks  
@@ -329,7 +329,7 @@ void SetOffset(int iOffset);
 ```  
   
 ### Parameters  
- [in] `iOffset`  
+ [in] *iOffset*  
  The number of rows that the popup menu bar should be offset.  
   
 ### Remarks  
@@ -344,10 +344,10 @@ void StartPopupMenuTimer(
 ```  
   
 ### Parameters  
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Pointer to the menu button for which to set the delay timer.  
   
- [in] `nDelayFactor`  
+ [in] *nDelayFactor*  
  A delay factor, equal to at least one, to multiply by the standard menu delay time (generally between a half second and five seconds).  
   
 ### Remarks  

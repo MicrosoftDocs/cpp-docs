@@ -99,31 +99,31 @@ CMFCRibbonStatusBarPane(
 ```  
   
 ### Parameters  
- [in] `nCmdID`  
+ [in] *nCmdID*  
  Specifies the command ID of the pane.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Specifies text string to be displayed on pane.  
   
- [in] `bIsStatic`  
+ [in] *bIsStatic*  
  If `TRUE`, the status pane cannot be highlighted or selected by clicking it.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Specifies a handle to an icon to be displayed on the pane.  
   
- [in] `lpszAlmostLargeText`  
+ [in] *lpszAlmostLargeText*  
  Specifies the longest text string that can be displayed by the pane.  
   
- [in] `hBmpAnimationList`  
+ [in] *hBmpAnimationList*  
  Specifies a handle to an image list that is used for animation.  
   
- [in] `cxAnimation`  
+ [in] *cxAnimation*  
  Specifies the width, in pixels, of the icon in the image list that is used for animation.  
   
- [in] `clrTrnsp`  
+ [in] *clrTrnsp*  
  Specifies the transparent color of images in the image list that are used for animation.  
   
- [in] `uiAnimationListResID`  
+ [in] *uiAnimationListResID*  
  Specifies a resource ID of an image list that is used for animation.  
   
 ##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText  
@@ -180,7 +180,7 @@ virtual void OnDrawBorder(CDC*);
 ```  
   
 ### Parameters  
- [in] `CDC*`  
+ [in] *CDC**  
   
 ### Remarks  
   
@@ -192,7 +192,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -216,11 +216,11 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```  
   
 ### Parameters  
- [in] `lpszAlmostLargeText`  
+ [in] *lpszAlmostLargeText*  
  Specifies the longest string that can be displayed on the status bar pane without truncation.  
   
 ### Remarks  
- The library calculates the size of text that `lpszAlmostLargeText` specifies and resizes the pane accordingly. The text will be truncated if it still does not fit in the pane.  
+ The library calculates the size of text that *lpszAlmostLargeText* specifies and resizes the pane accordingly. The text will be truncated if it still does not fit in the pane.  
   
 ##  <a name="setanimationlist"></a>  CMFCRibbonStatusBarPane::SetAnimationList  
  Attaches to the status bar pane an image list that can be used for animation.  
@@ -238,16 +238,16 @@ BOOL SetAnimationList(
 ```  
   
 ### Parameters  
- [in] `hBmpAnimationList`  
+ [in] *hBmpAnimationList*  
  Specifies a handle to an image list.  
   
- [in] `cxAnimation`  
+ [in] *cxAnimation*  
  Specifies the width, in pixels, of the frame in the image list.  
   
- [in] `clrTransp`  
+ [in] *clrTransp*  
  Specifies the transparent color of the image list.  
   
- [in] `uiAnimationListResID`  
+ [in] *uiAnimationListResID*  
  Specifies the resource ID of the image list.  
   
 ### Return Value  
@@ -261,11 +261,11 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### Parameters  
- [in] `nAlign`  
+ [in] *nAlign*  
  Specifies the text alignment.  
   
 ### Remarks  
- `nAlign` can have one of the following values:  
+ *nAlign* can have one of the following values:  
   
 - `TA_LEFT`: left alignment  
   
@@ -283,10 +283,10 @@ void StartAnimation(
 ```  
   
 ### Parameters  
- [in] `nFrameDelay`  
+ [in] *nFrameDelay*  
  Specifies the animation frame rate, in milliseconds.  
   
- [in] `nDuration`  
+ [in] *nDuration*  
  Specifies how long to play the animation, in milliseconds. Use -1 for an infinite loop.  
   
 ### Remarks  

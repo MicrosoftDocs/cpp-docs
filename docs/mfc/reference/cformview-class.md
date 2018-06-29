@@ -65,13 +65,14 @@ class CFormView : public CScrollView
   
 ```  
 CFormView(LPCTSTR lpszTemplateName);  
-CFormView(UINT nIDTemplate);```  
+CFormView(UINT nIDTemplate);
+```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a dialog-template resource.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-template resource.  
   
 ### Remarks  

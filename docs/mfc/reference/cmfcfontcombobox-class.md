@@ -111,13 +111,13 @@ BOOL SelectFont(
 ```  
   
 ### Parameters  
- [in] `pDesc`  
+ [in] *pDesc*  
  Points to a font description object.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Specifies a font name.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the `lfCharSet` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
   
 ### Return Value  
@@ -143,13 +143,13 @@ BOOL Setup(
 ```  
   
 ### Parameters  
- [in] `nFontType`  
+ [in] *nFontType*  
  Specifies the font type. The default value is the bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Specifies the font character set. The default value is DEFAULT_CHARSET.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Specifies the font pitch and family. The default value is DEFAULT_PITCH.  
   
 ### Return Value  

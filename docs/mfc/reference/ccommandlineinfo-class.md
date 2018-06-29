@@ -237,17 +237,17 @@ virtual void ParseParam(
 ```  
   
 ### Parameters  
- `pszParam`  
+ *pszParam*  
  The parameter or flag.  
   
  *bFlag*  
- Indicates whether `pszParam` is a parameter or a flag.  
+ Indicates whether *pszParam* is a parameter or a flag.  
   
- `bLast`  
+ *bLast*  
  Indicates if this is the last parameter or flag on the command line.  
   
 ### Remarks  
- [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) calls `ParseParam` once for each parameter or flag on the command line, passing the argument to `pszParam`. If the first character of the parameter is a ' **-**' or a ' **/**', then it is removed and *bFlag* is set to `TRUE`. When parsing the final parameter, `bLast` is set to `TRUE`.  
+ [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) calls `ParseParam` once for each parameter or flag on the command line, passing the argument to *pszParam*. If the first character of the parameter is a ' **-**' or a ' **/**', then it is removed and *bFlag* is set to `TRUE`. When parsing the final parameter, *bLast* is set to `TRUE`.  
   
  The default implementation of this function recognizes the following flags: `/p`, `/pt`, `/dde`, `/Automation`, and `/Embedding`, as shown in the following table:  
   

@@ -111,7 +111,7 @@ class CFileDialog : public CCommonDialog
   
  You can use `CFileDialog` as is with the constructor provided, or you can derive your own dialog box class from `CFileDialog` and write a constructor to suit your needs. In either case, these dialog boxes will behave like standard MFC dialog boxes because they are derived from the [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md). `CFileDialog` relies on the COMMDLG.DLL file that is included in Windows.  
   
- Both the appearance and the functionality of the `CFileDialog` with Windows Vista or later differ from the earlier versions of Windows. The default `CFileDialog` automatically uses the new Windows Vista or later style without code changes if a program is compiled and run under Windows Vista or later. Use the `bVistaStyle` parameter in the constructor to manually override this automatic update. The exception to the automatic update is customized dialog boxes. They will not be converted to the new style. For more information about the constructor, see [CFileDialog::CFileDialog](#cfiledialog).  
+ Both the appearance and the functionality of the `CFileDialog` with Windows Vista or later differ from the earlier versions of Windows. The default `CFileDialog` automatically uses the new Windows Vista or later style without code changes if a program is compiled and run under Windows Vista or later. Use the *bVistaStyle* parameter in the constructor to manually override this automatic update. The exception to the automatic update is customized dialog boxes. They will not be converted to the new style. For more information about the constructor, see [CFileDialog::CFileDialog](#cfiledialog).  
   
 > [!NOTE]
 >  The control ID system differs in Windows Vista or later from earlier versions of Windows when you use a `CFileDialog`. You must update all references to `CFileDialog` controls in code before you can port your project from an earlier version of Windows.  
@@ -182,13 +182,13 @@ HRESULT AddCheckButton(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the check button to add.  
   
- `strLabel`  
+ *strLabel*  
  The check button name.  
   
- `bChecked`  
+ *bChecked*  
  A Boolean indicating the current state of the check button. `TRUE` if checked; `FALSE` otherwise  
   
 ### Remarks  
@@ -201,7 +201,7 @@ HRESULT AddComboBox(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the combo box to add.  
   
 ### Remarks  
@@ -217,13 +217,13 @@ HRESULT AddControlItem(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control to add the item to.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item.  
   
- `strLabel`  
+ *strLabel*  
  Item's text.  
   
 ### Remarks  
@@ -238,10 +238,10 @@ HRESULT AddEditBox(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the edit box to add.  
   
- `strText`  
+ *strText*  
  The edit box name.  
   
 ### Remarks  
@@ -256,10 +256,10 @@ HRESULT AddMenu(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the menu to add.  
   
- `strLabel`  
+ *strLabel*  
  The menu name.  
   
 ### Remarks  
@@ -279,13 +279,13 @@ void AddPlace(
 ```  
   
 ### Parameters  
- `lpszFolder`  
+ *lpszFolder*  
  A path to the folder to be made available to the user. This can only be a folder.  
   
- `fdap`  
+ *fdap*  
  Specifies where the folder is placed within the list.  
   
- `psi`  
+ *psi*  
  A pointer to an IShellItem that represents the folder to be made available to the user. This can only be a folder.  
   
 ### Remarks  
@@ -300,10 +300,10 @@ HRESULT AddPushButton(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the button to add.  
   
- `strLabel`  
+ *strLabel*  
  The button name.  
   
 ### Remarks  
@@ -316,7 +316,7 @@ HRESULT AddRadioButtonList(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the option button group to add.  
   
 ### Remarks  
@@ -329,7 +329,7 @@ HRESULT AddSeparator(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the separator add.  
   
 ### Remarks  
@@ -344,10 +344,10 @@ HRESULT AddText(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the text to add.  
   
- `strText`  
+ *strText*  
  The text name.  
   
 ### Remarks  
@@ -385,36 +385,36 @@ explicit CFileDialog(
 ```  
   
 ### Parameters  
- [in] `bOpenFileDialog`  
+ [in] *bOpenFileDialog*  
  The parameter that specifies what type of dialog box to create. Set it to `TRUE` to construct a **File Open** dialog box. Set it to `FALSE` to construct a **File Save As** dialog box.  
   
- [in] `lpszDefExt`  
- The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by `lpszDefExt` is automatically appended to the file name. If this parameter is `NULL`, no extension is appended.  
+ [in] *lpszDefExt*  
+ The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is `NULL`, no extension is appended.  
   
- [in] `lpszFileName`  
+ [in] *lpszFileName*  
  The initial file name that appears in the Filename box. If `NULL`, no initial file name appears.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
   
- [in] `lpszFilter`  
+ [in] *lpszFilter*  
  A series of string pairs that specify filters you can apply to the file. If you specify file filters, only files that match filter criteria will appear in the Files list. See the Remarks section for more information about how to work with file filters.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  A pointer to the parent or owner window of the file dialog box.  
   
- [in] `dwSize`  
+ [in] *dwSize*  
  The size of the `OPENFILENAME` structure. This value depends on the operating system version. MFC used this parameter to determine the appropriate kind of dialog box to create. The default size of 0 means that the MFC code will determine the correct dialog box size to use based on the operating system version on which the program is run.  
   
- [in] `bVistaStyle`  
+ [in] *bVistaStyle*  
  **Note** This parameter is available in Visual Studio 2008 and later and is will cause the new-style dialog to be used only if you are running in Windows Vista or later.  
   
  The parameter that specifies the style of the file dialog. Set it to `TRUE` to use the new Vista style file dialogs. Otherwise, the old style of dialog boxes will be used. See the Remarks section for more information about running under Vista.  
   
 ### Remarks  
- Either a **File Open** or **File Save As** dialog box is constructed, depending on the value of `bOpenFileDialog`.  
+ Either a **File Open** or **File Save As** dialog box is constructed, depending on the value of *bOpenFileDialog*.  
   
- Specifying a default extension using `lpszDefExt` may not produce the behavior that you expect, because it is seldom predictable what extensions have file associations on the user’s computer. If you need more control over the appending of a default extension, you can derive your own class from `CFileDialog`, and override the `CFileDialog::OnFileNameOK` method to perform your own extension handling.  
+ Specifying a default extension using *lpszDefExt* may not produce the behavior that you expect, because it is seldom predictable what extensions have file associations on the user’s computer. If you need more control over the appending of a default extension, you can derive your own class from `CFileDialog`, and override the `CFileDialog::OnFileNameOK` method to perform your own extension handling.  
   
  To enable the user to select multiple files, set the `OFN_ALLOWMULTISELECT` flag before you call [DoModal](#domodal). You must supply your own file name buffer to store the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the [CFileDialog](../../mfc/reference/cfiledialog-class.md), but before you call `DoModal`. Additionally, you must set `m_ofn.nMaxFile` with the number of characters in the buffer pointed to by `m_ofn.lpstrFile`. If you set the maximum number of files to be selected to `n`, the necessary buffer size is `n`*(_MAX_PATH + 1) + 1. For example:  
   
@@ -422,7 +422,7 @@ explicit CFileDialog(
   
  To enable the user to resize an Explorer-style dialog box by using either the mouse or keyboard, set the `OFN_ENABLESIZING` flag. Setting this flag is necessary only if you provide a hook procedure or custom template. The flag works only with an Explorer-style dialog box; old-style dialog boxes cannot be resized.  
   
- The `lpszFilter` parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two '&#124;' characters, followed by a `NULL` character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.  
+ The *lpszFilter* parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two '&#124;' characters, followed by a `NULL` character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.  
   
  For example, [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] allows users to open files that have extensions .xlc (chart) or .xls (worksheet), among others. The filter for Excel could be written as:  
   
@@ -430,9 +430,9 @@ explicit CFileDialog(
   
  However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, '\0', instead of the vertical bars ('&#124;').  
   
- The `bVistaStyle` parameter is applicable only when running under Windows Vista or later. Under earlier versions of Windows, this parameter is ignored. If `bVistaStyle` is set to `TRUE`, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
+ The *bVistaStyle* parameter is applicable only when running under Windows Vista or later. Under earlier versions of Windows, this parameter is ignored. If *bVistaStyle* is set to `TRUE`, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
   
- Dialog templates are not supported on dialogs based on `bVistaStyle`  
+ Dialog templates are not supported on dialogs based on *bVistaStyle*  
   
 ### Example  
   See the example for [CFileDialog::DoModal](#domodal).  
@@ -469,7 +469,7 @@ HRESULT EnableOpenDropDown(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the drop-down list.  
   
 ### Remarks  
@@ -496,10 +496,10 @@ HRESULT GetCheckButtonState(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the check box.  
   
- `bChecked`  
+ *bChecked*  
  The state of the check box. `TRUE` indicates checked; `FALSE` indicates unchecked.  
   
 ### Remarks  
@@ -515,13 +515,13 @@ HRESULT GetControlItemState(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item.  
   
- `dwState`  
+ *dwState*  
  A reference to a variable that receives one of more values from the CDCONTROLSTATE enumeration that indicates the current state of the control.  
   
 ### Remarks  
@@ -536,10 +536,10 @@ HRESULT GetControlState(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the control.  
   
- `dwState`  
+ *dwState*  
  A reference to a variable that receives one or more values from the CDCONTROLSTATE enumeration that indicates the current state of the control.  
   
 ### Remarks  
@@ -554,10 +554,10 @@ HRESULT GetEditBoxText(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the edit box.  
   
- `strText`  
+ *strText*  
  The text value.  
   
 ### Remarks  
@@ -636,7 +636,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
  The pointer to the internal COM object for the `CFileDialog`. It is your responsibility to release this pointer appropriately.  
   
 ### Remarks  
- Use this function only under Windows Vista or later with an object that has `bVistaStyle` set to `true`. If you use this function when `bVistaStyle` is `false`, it will return `NULL` in release mode and throw an assertion in debug mode.  
+ Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to `true`. If you use this function when *bVistaStyle* is `false`, it will return `NULL` in release mode and throw an assertion in debug mode.  
   
  For more information about the `IFileDialogCustomize` interface,  see [IFileDialogCustomize](http://msdn.microsoft.com/library/windows/desktop/bb775912).  
   
@@ -656,7 +656,7 @@ IFileOpenDialog* GetIFileOpenDialog();
  The pointer to the internal COM object for the `CFileDialog`. It is your responsibility to release this pointer appropriately.  
   
 ### Remarks  
- Use this function only under Windows Vista or later with an object that has `bVistaStyle` set to `true`. This function returns `NULL` if the `CFileDialog` is not an **Open** dialog box or if `bVistaStyle` is set to `false`. In this final case, the function only returns `NULL` in release mode - in debug mode it will throw an assertion.  
+ Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to `true`. This function returns `NULL` if the `CFileDialog` is not an **Open** dialog box or if *bVistaStyle* is set to `false`. In this final case, the function only returns `NULL` in release mode - in debug mode it will throw an assertion.  
   
  For more information about the `IFileOpenDialog` interface, see [IFileOpenDialog](http://msdn.microsoft.com/library/windows/desktop/bb775834).  
   
@@ -676,7 +676,7 @@ IFileSaveDialog* GetIFileSaveDialog();
  The pointer to the internal COM object for the `CFileDialog`. It is your responsibility to release this pointer appropriately.  
   
 ### Remarks  
- Use this function only under Windows Vista or later with an object that has `bVistaStyle` set to `true`. This function will return `NULL` if the `CFileDialog` is not a **Save** dialog box or if `bVistaStyle` is set to `false`. In this final case, the function only returns `NULL` in release mode - in debug mode it will throw an assertion.  
+ Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to `true`. This function will return `NULL` if the `CFileDialog` is not a **Save** dialog box or if *bVistaStyle* is set to `false`. In this final case, the function only returns `NULL` in release mode - in debug mode it will throw an assertion.  
   
  For more information about the `IFileSaveDialog` interface, see [IFileSaveDialog](http://msdn.microsoft.com/library/windows/desktop/bb775688).  
   
@@ -693,7 +693,7 @@ CString GetNextPathName(POSITION& pos) const;
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  A reference to a **POSITION** value returned by a previous `GetNextPathName` or `GetStartPosition` function call. **NULL** if the end of the list has been reached.  
   
 ### Return Value  
@@ -787,10 +787,10 @@ HRESULT GetSelectedControlItem(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item that the user selected in the control.  
   
 ### Remarks  
@@ -813,7 +813,7 @@ void HideControl(int nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The ID of the control to hide.  
   
 ### Remarks  
@@ -835,7 +835,7 @@ BOOL IsPickFoldersMode() const;
  `m_ofn` is a structure of type `OPENFILENAME`. The data in this structure represents the current state of the `CFileDialog`.  
   
 ### Remarks  
- Use this structure to initialize the appearance of a **File Open** or **File Save As** dialog box after you construct it but before you display it with the [DoModal](#domodal) method. For example, you can set the `lpstrTitle` member of `m_ofn` to the caption you want the dialog box to have.  
+ Use this structure to initialize the appearance of a **File Open** or **File Save As** dialog box after you construct it but before you display it with the [DoModal](#domodal) method. For example, you can set the *lpstrTitle* member of `m_ofn` to the caption you want the dialog box to have.  
   
  With the Windows Vista or later style of [CFileDialog](../../mfc/reference/cfiledialog-class.md), `m_ofn` is not guaranteed to always match the state of the dialog box. It is synchronized with the dialog box in earlier versions of Windows. See [CFileDialog::ApplyOFNToShellDialog](#applyofntoshelldialog) and [CFileDialog::UpdateOFNFromShellDialog](#updateofnfromshelldialog) for more information about synchronizing the `m_ofn` structure and the `CFileDialog` state under Windows Vista or later.  
   
@@ -889,7 +889,7 @@ HRESULT MakeProminent(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the control.  
   
 ### Remarks  
@@ -902,7 +902,7 @@ virtual void OnButtonClicked(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the button.  
   
 ### Remarks  
@@ -917,10 +917,10 @@ virtual void OnCheckButtonToggled(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the check box.  
   
- `bChecked`  
+ *bChecked*  
  Checked or unchecked.  
   
 ### Remarks  
@@ -933,7 +933,7 @@ virtual void OnControlActivating(DWORD dwIDCtl);
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the control.  
   
 ### Remarks  
@@ -1002,10 +1002,10 @@ virtual void OnItemSelected(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item.  
   
 ### Remarks  
@@ -1024,17 +1024,17 @@ virtual void OnLBSelChangedNotify(
  *nIDBox*  
  The ID of the list box or combo box in which the selection occurred.  
   
- `iCurSel`  
+ *iCurSel*  
  The index of the current selection.  
   
- `nCode`  
+ *nCode*  
  The control notification code. This parameter must have one of the following values:  
   
-- **CD_LBSELCHANGE** Specifies `iCurSel` is the selected item in a single-selection list box.  
+- **CD_LBSELCHANGE** Specifies *iCurSel* is the selected item in a single-selection list box.  
   
-- **CD_LBSELSUB** Specifies that `iCurSel` is no longer selected in a multiselection list box.  
+- **CD_LBSELSUB** Specifies that *iCurSel* is no longer selected in a multiselection list box.  
   
-- **CD_LBSELADD** Specifies that `iCurSel` is selected in a multiselection list box.  
+- **CD_LBSELADD** Specifies that *iCurSel* is selected in a multiselection list box.  
   
 - **CD_LBSELNOITEMS** Specifies that no selection exists in a multiselection list box.  
   
@@ -1049,7 +1049,7 @@ virtual UINT OnShareViolation(LPCTSTR lpszPathName);
 ```  
   
 ### Parameters  
- `lpszPathName`  
+ *lpszPathName*  
  The path of the file on which the share violation occurred.  
   
 ### Return Value  
@@ -1088,10 +1088,10 @@ HRESULT RemoveControlItem(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control to remove the item from.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item.  
   
 ### Remarks  
@@ -1106,10 +1106,10 @@ HRESULT SetCheckButtonState(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the check box.  
   
- `bChecked`  
+ *bChecked*  
  The state of the check box. `TRUE` indicates checked; `FALSE` indicates Unchecked.  
   
 ### Remarks  
@@ -1125,13 +1125,13 @@ HRESULT SetControlItemState(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item.  
   
- `dwState`  
+ *dwState*  
  One or more values from the CDCONTROLSTATE enumeration that indicate the new state of the control.  
   
 ### Remarks  
@@ -1147,13 +1147,13 @@ HRESULT SetControlItemText(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item.  
   
- `strLabel`  
+ *strLabel*  
  Item's text.  
   
 ### Remarks  
@@ -1168,10 +1168,10 @@ HRESULT SetControlLabel(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the control.  
   
- `strLabel`  
+ *strLabel*  
  The control name.  
   
 ### Remarks  
@@ -1186,10 +1186,10 @@ HRESULT SetControlState(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the control.  
   
- `dwState`  
+ *dwState*  
  One or more values from the CDCONTROLSTATE enumeration that indicate the current state of the control.  
   
 ### Remarks  
@@ -1209,10 +1209,10 @@ void SetControlText(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The ID of the control for which to set the text.  
   
- [in] `lpsz`  
+ [in] *lpsz*  
  A pointer to the string that contains the text to set for the control.  
   
 ### Remarks  
@@ -1228,7 +1228,7 @@ void SetDefExt(LPCSTR lpsz);
 ```  
   
 ### Parameters  
- `lpsz`  
+ *lpsz*  
  A pointer to a string containing the default extension to use for the dialog box object. This string must not contain a period (.).  
   
 ### Remarks  
@@ -1244,10 +1244,10 @@ HRESULT SetEditBoxText(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the edit box.  
   
- `strText`  
+ *strText*  
  The text value.  
   
 ### Remarks  
@@ -1260,7 +1260,7 @@ BOOL SetProperties(LPCWSTR lpszPropList);
 ```  
   
 ### Parameters  
- `lpszPropList`  
+ *lpszPropList*  
  A list of predefined properties separated by ";". For a list of the flags, see the `Flags` section of [OPENFILENAME](http://msdn.microsoft.com/en-us/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104).  
   
 ### Remarks  
@@ -1275,10 +1275,10 @@ HRESULT SetSelectedControlItem(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the container control.  
   
- `dwIDItem`  
+ *dwIDItem*  
  The ID of the item that the user selected in the control.  
   
 ### Remarks  
@@ -1298,16 +1298,16 @@ void SetTemplate(
 ```  
   
 ### Parameters  
- [in] `nWin3ID`  
+ [in] *nWin3ID*  
  Contains the ID number of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
   
- [in] `nWin4ID`  
+ [in] *nWin4ID*  
  Contains the ID number of the template resource for the Explorer `CFileDialog` object. This template is used only on [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
   
- [in] `lpWin3ID`  
+ [in] *lpWin3ID*  
  Contains the name of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
   
- [in] `lpWin4ID`  
+ [in] *lpWin4ID*  
  Contains the name of the template resource of the Explorer `CFileDialog` object. This template is used only on [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
   
 ### Remarks  
@@ -1326,10 +1326,10 @@ HRESULT StartVisualGroup(
 ```  
   
 ### Parameters  
- `dwIDCtl`  
+ *dwIDCtl*  
  The ID of the visual group.  
   
- `strLabel`  
+ *strLabel*  
  The group name.  
   
 ### Remarks  

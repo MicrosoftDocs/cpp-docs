@@ -83,10 +83,10 @@ explicit COleConvertDialog (
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item to be converted or activated.  
   
- `dwFlags`  
+ *dwFlags*  
  Creation flag, which contains any number of the following values combined using the bitwise-or operator:  
   
 - **CF_SELECTCONVERTTO** Specifies that the Convert To radio button will be selected initially when the dialog box is called. This is the default.  
@@ -99,10 +99,10 @@ explicit COleConvertDialog (
   
 - **CF_SHOWHELPBUTTON** Specifies that the Help button will be displayed when the dialog box is called.  
   
- `pClassID`  
- Points to the CLSID of the item to be converted or activated. If **NULL**, the **CLSID** associated with `pItem` will be used.  
+ *pClassID*  
+ Points to the CLSID of the item to be converted or activated. If **NULL**, the **CLSID** associated with *pItem* will be used.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box is set to the main application window.  
   
 ### Remarks  
@@ -118,7 +118,7 @@ BOOL DoConvert(COleClientItem* pItem);
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item to be converted or activated. Cannot be **NULL**.  
   
 ### Return Value  

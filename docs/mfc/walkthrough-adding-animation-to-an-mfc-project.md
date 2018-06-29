@@ -39,7 +39,7 @@ To complete this walkthrough, you must have Visual Studio.
 
 1. On the **File** menu, point to **New** and then click **Project**.
 
-2. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type `MFCAnimationWalkthrough`. Click **OK**.
+2. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type *MFCAnimationWalkthrough*. Click **OK**.
 
 3. In the **MFC Application Wizard** dialog box, verify that **Application Type** is **Multiple Documents**, **Project Style** is **Visual Studio**, and the **Document/View Architecture support** option is selected. Click **Finish**.
 
@@ -49,17 +49,17 @@ To complete this walkthrough, you must have Visual Studio.
 
 2. In **Resource View**, navigate to the **Menu** folder and open it. Double-click the `IDR_MFCAnimationWalTYPE` resource to open it for modification.
 
-3. On the menu bar, in the **Type Here** box, type `A&nimation` to create an Animation menu.
+3. On the menu bar, in the **Type Here** box, type *A&nimation* to create an Animation menu.
 
-4. Under **Animation**, in the **Type Here** box, type `Start &Forward` to create a Start Forward command.
+4. Under **Animation**, in the **Type Here** box, type *Start &Forward* to create a Start Forward command.
 
-5. Under **Start Forward**, in the **Type Here** box, type `Start &Backward`.
+5. Under **Start Forward**, in the **Type Here** box, type *Start &Backward*.
 
-6. Under **Start Backward**, in the **Type Here** box, type `S&top` to create a Stop command.
+6. Under **Start Backward**, in the **Type Here** box, type *S&top* to create a Stop command.
 
 7. Save MFCAnimationWalkthrough.rc and close it.
 
-8. In **Solution Explorer**, double-click MainFrm.cpp to open it for modification. In the `CMainFrame::OnCreate` method, locate the section that has several calls to `lstBasicCommands.AddTail`. Just after that section, add the following code.
+8. In **Solution Explorer**, double-click MainFrm.cpp to open it for modification. In the `CMainFrame::OnCreate` method, locate the section that has several calls to `lstBasicCommands.AddTail`. Just after that section, add the following code.  
 
     ```cpp
     lstBasicCommands.AddTail(ID_ANIMATION_STARTFORWARD);

@@ -31,7 +31,7 @@ The template class describes an object that controls a varying-length sequence o
   
  In the description below, `GValue` is the same as `GKey`, which in turn is the same as `Key` unless the latter is a ref type, in which case it is `Key^`.  
   
-### Syntax  
+## Syntax  
   
 ```  
 template<typename Key>  
@@ -47,7 +47,7 @@ template<typename Key>
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Key  
  The type of the key component of an element in the controlled sequence.  
 
@@ -56,7 +56,7 @@ template<typename Key>
   
  **Namespace:** cliext  
 
-## Members  
+## Declarations  
   
 |Type Definition|Description|  
 |---------------------|-----------------|  
@@ -121,7 +121,7 @@ template<typename Key>
 |<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|  
 |IHash\<Key, Value>|Maintain generic container.|  
   
-### Remarks  
+## Remarks  
  The object allocates and frees storage for the sequence it controls as individual nodes in a bidirectional linked list. To speed access, the object also maintains a varying-length array of pointers into the list (the hash table), effectively managing the whole list as a sequence of sublists, or buckets. It inserts elements into a bucket that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.  
   
  The object orders each bucket it controls by calling a stored delegate object of type [hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md). You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the comparison `operator<=(key_type, key_type)`.  
@@ -154,6 +154,8 @@ template<typename Key>
   
  Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does `not` destroy its elements.  
   
+## Members
+
 ## <a name="begin"></a> hash_set::begin (STL/CLR)
 Designates the beginning of the controlled sequence.  
   

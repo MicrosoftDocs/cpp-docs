@@ -79,13 +79,14 @@ CMFCRibbonApplicationButton(UINT uiBmpResID);
   
 ```  
 void SetImage(UINT uiBmpResID);  
-void SetImage(HBITMAP hBmp);```  
+void SetImage(HBITMAP hBmp);
+```  
   
 ### Parameters  
- [in] `uiBmpResID`  
+ [in] *uiBmpResID*  
  The resource ID of the image to display on the application button.  
   
- [in] `hBmp`  
+ [in] *hBmp*  
  A handle to a bitmap to display on the application button.  
   
 ### Remarks  

@@ -36,13 +36,13 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
 
 ### To Replace a Windows Message Box with a CTaskDialog
 
-1. Create a new MFC Application project with the default settings. Call it `MyProject`.
+1. Create a new MFC Application project with the default settings. Call it *MyProject*.
 
 2. Use the **Solution Explorer** to open the file MyProject.cpp.
 
 3. Add `#include "afxtaskdialog.h"` after the list of includes.
 
-4. Find the method `CMyProjectApp::InitInstance`. Insert the following lines of code before the `return TRUE;` statement. This code creates the strings that we use in either the Windows message box or in the `CTaskDialog`.
+4. Find the method `CMyProjectApp::InitInstance`. Insert the following lines of code before the `return TRUE;` statement. This code creates the strings that we use in either the Windows message box or in the `CTaskDialog`.  
 
     ```cpp
     CString message("My message to the user");

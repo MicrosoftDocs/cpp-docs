@@ -81,7 +81,7 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  The URL to open.  
   
 ### Return Value  

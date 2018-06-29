@@ -75,10 +75,10 @@ COleDBRecordView(UINT nIDTemplate);
 ```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a dialog-template resource.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-template resource.  
   
 ### Remarks  
@@ -99,7 +99,7 @@ virtual CRowset<>* OnGetRowset() = 0;
  A standard `HRESULT` value.  
   
 ### Remarks  
- You must override this member function to construct or obtain a rowset object and return a handle to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the rowset handle stored in the record view if one exists. If not, it constructs a rowset object of the type you specified with ClassWizard and calls its **Open** member function to open the table or run the query, and then returns a handle to the object.  
+ You must override this member function to construct or obtain a rowset object and return a handle to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the rowset handle stored in the record view if one exists. If not, it constructs a rowset object of the type you specified with ClassWizard and calls its `Open` member function to open the table or run the query, and then returns a handle to the object.  
   
 > [!NOTE]
 >  Previous to MFC 7.0, `OnGetRowset` returned a pointer to `CRowset`. If you have code that calls `OnGetRowset`, you need to change the return type to the templatized class **CRowset<>**.  
@@ -117,7 +117,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ```  
   
 ### Parameters  
- `nIDMoveCommand`  
+ *nIDMoveCommand*  
  One of the following standard command ID values:  
   
 - `ID_RECORD_FIRST` — Move to the first record in the recordset.  
@@ -132,7 +132,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  
   
 ### Remarks  
- The default implementation calls the appropriate **Move** member function of the `CRowset` object associated with the record view.  
+ The default implementation calls the appropriate `Move` member function of the `CRowset` object associated with the record view.  
   
  By default, `OnMove` updates the current record on the data source if the user has changed it in the record view.  
   

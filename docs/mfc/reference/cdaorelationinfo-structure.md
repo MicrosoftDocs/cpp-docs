@@ -42,7 +42,7 @@ struct CDaoRelationInfo
  *m_strForeignTable*  
  Names the foreign table in the relation. A foreign table is a table used to contain foreign keys. Generally, you use a foreign table to establish or enforce referential integrity. The foreign table is usually on the many side of a one-to-many relationship. Examples of foreign tables include tables containing codes for the American states or Canadian provinces or customer orders.  
   
-*m_lAttributes*  
+ *m_lAttributes*  
  Contains information about the relation type. The value of this member can be any of the following:  
   
 - **dbRelationUnique** Relationship is one-to-one.  

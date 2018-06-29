@@ -41,7 +41,7 @@ template<typename Value,
     { ..... };  
 ```  
   
-#### Parameters  
+### Parameters  
  Value  
  The type of an element in the controlled sequence.  
   

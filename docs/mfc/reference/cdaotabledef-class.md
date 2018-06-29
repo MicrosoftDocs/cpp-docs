@@ -27,7 +27,7 @@ class CDaoTableDef : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoTableDef::CDaoTableDef](#cdaotabledef)|Constructs a **CDaoTableDef** object.|  
+|[CDaoTableDef::CDaoTableDef](#cdaotabledef)|Constructs a `CDaoTableDef` object.|  
   
 ### Public Methods  
   
@@ -84,7 +84,7 @@ class CDaoTableDef : public CObject
   
 -   Get or set validation conditions using the `GetValidationRule` and `SetValidationRule`, and the `GetValidationText` and `SetValidationText` member functions.  
   
--   Use the **Open** member function to create a table-, dynaset-, or snapshot-type `CDaoRecordset` object.  
+-   Use the `Open` member function to create a table-, dynaset-, or snapshot-type `CDaoRecordset` object.  
   
     > [!NOTE]
     >  The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes; the DAO classes generally offer superior capabilities because they are specific to the Microsoft Jet database engine.  
@@ -99,7 +99,7 @@ class CDaoTableDef : public CObject
   
     -   To create a new table, call the tabledef object's [Create](#create) member function, supplying the name of the table. Call [CreateField](#createfield) and [CreateIndex](#createindex) to add fields and indexes to the table.  
   
-    -   Call [Append](#append) to save the table by appending it to the database's TableDefs collection. **Create** puts the tabledef into an open state, so after calling **Create** you do not call **Open**.  
+    -   Call [Append](#append) to save the table by appending it to the database's TableDefs collection. `Create` puts the tabledef into an open state, so after calling `Create` you do not call `Open`.  
   
         > [!TIP]
         >  The easiest way to create saved tables is to create them and store them in your database using Microsoft Access. Then you can open and use them in your MFC code.  
@@ -126,7 +126,7 @@ virtual void Append();
 ```  
   
 ### Remarks  
- The function appends the object to the database's TableDefs collection. You can use the tabledef as a temporary object while defining it by not appending it, but if you want to save and use it, you must call **Append**.  
+ The function appends the object to the database's TableDefs collection. You can use the tabledef as a temporary object while defining it by not appending it, but if you want to save and use it, you must call `Append`.  
   
 > [!NOTE]
 >  If you attempt to append an unnamed tabledef (containing a null or empty string), MFC throws an exception.  
@@ -156,7 +156,7 @@ CDaoTableDef(CDaoDatabase* pDatabase);
 ```  
   
 ### Parameters  
- `pDatabase`  
+ *pDatabase*  
  A pointer to a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object.  
   
 ### Remarks  
@@ -170,9 +170,9 @@ virtual void Close();
 ```  
   
 ### Remarks  
- Usually after calling **Close**, you delete the tabledef object if it was allocated with **new**.  
+ Usually after calling `Close`, you delete the tabledef object if it was allocated with **new**.  
   
- You can call [Open](#open) again after calling **Close**. This lets you reuse the tabledef object.  
+ You can call [Open](#open) again after calling `Close`. This lets you reuse the tabledef object.  
   
  For related information, see the topic "Close Method" in DAO Help.  
   
@@ -188,10 +188,10 @@ virtual void Create(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string containing the name of the table.  
   
- `lAttributes`  
+ *lAttributes*  
  A value corresponding to characteristics of the table represented by the tabledef object. You can use the bitwise-OR to combine any of the following constants:  
   
 |Constant|Description|  
@@ -204,11 +204,11 @@ virtual void Create(
  *lpszSrcTable*  
  A pointer to a string containing the source table name. By default this value is initialized as **NULL**.  
   
- `lpszConnect`  
+ *lpszConnect*  
  A pointer to a string containing the default connection string. By default this value is initialized as **NULL**.  
   
 ### Remarks  
- Once you have named the tabledef, you can then call [Append](#append) to save the tabledef in the database's TableDefs collection. After calling **Append**, the tabledef is in an open state, and you can use it to create a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object.  
+ Once you have named the tabledef, you can then call [Append](#append) to save the tabledef in the database's TableDefs collection. After calling `Append`, the tabledef is in an open state, and you can use it to create a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object.  
   
  For related information, see the topic "CreateTableDef Method" in DAO Help.  
   
@@ -226,10 +226,10 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string expression specifying the name of this field.  
   
- `nType`  
+ *nType*  
  A value indicating the data type of the field. The setting can be one of these values:  
   
 |Type|Size (bytes)|Description|  
@@ -246,10 +246,10 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 |**dbLongBinary**|0|Long Binary (OLE Object), [CLongBinary](../../mfc/reference/clongbinary-class.md) or [CByteArray](../../mfc/reference/cbytearray-class.md)|  
 |**dbMemo**|0|Memo ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
   
- `lSize`  
- A value that indicates the maximum size, in bytes, of a field that contains text, or the fixed size of a field that contains text or numeric values. The `lSize` parameter is ignored for all but text fields.  
+ *lSize*  
+ A value that indicates the maximum size, in bytes, of a field that contains text, or the fixed size of a field that contains text or numeric values. The *lSize* parameter is ignored for all but text fields.  
   
- `lAttributes`  
+ *lAttributes*  
  A value corresponding to characteristics of the field and that can be combined using a bitwise-OR.  
   
 |Constant|Description|  
@@ -260,17 +260,17 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 |**dbUpdatableField**|The field value can be changed.|  
 |**dbDescending**|The field is sorted in descending (Z - A or 100 - 0) order (applies only to a Field object in a Fields collection of an Index object). If you omit this constant, the field is sorted in ascending (A - Z or 0 - 100) order (default).|  
   
- `fieldinfo`  
+ *fieldinfo*  
  A reference to a [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure.  
   
 ### Remarks  
- A **DAOField** (OLE) object is created and appended to the Fields collection of the **DAOTableDef** (OLE) object. Besides its use for examining object properties, you can also use `CDaoFieldInfo` to construct an input parameter for creating new fields in a tabledef. The first version of `CreateField` is simpler to use, but if you want finer control, you can use the second version of `CreateField`, which takes a `CDaoFieldInfo` parameter.  
+ A **DAOField** (OLE) object is created and appended to the Fields collection of the `DAOTableDef` (OLE) object. Besides its use for examining object properties, you can also use `CDaoFieldInfo` to construct an input parameter for creating new fields in a tabledef. The first version of `CreateField` is simpler to use, but if you want finer control, you can use the second version of `CreateField`, which takes a `CDaoFieldInfo` parameter.  
   
  If you use the version of `CreateField` that takes a `CDaoFieldInfo` parameter, you must carefully set each of the following members of the `CDaoFieldInfo` structure:  
   
 - **m_strName**  
   
-- `m_nType`  
+- **m_nType**  
   
 - **m_lSize**  
   
@@ -290,7 +290,7 @@ void CreateIndex(CDaoIndexInfo& indexinfo);
 ```  
   
 ### Parameters  
- `indexinfo`  
+ *indexinfo*  
  A reference to a [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure.  
   
 ### Remarks  
@@ -302,9 +302,9 @@ void CreateIndex(CDaoIndexInfo& indexinfo);
   
 - **m_strName** A name must be supplied.  
   
-- `m_pFieldInfos` Must point to an array of `CDaoIndexFieldInfo` structures.  
+- **m_pFieldInfos** Must point to an array of `CDaoIndexFieldInfo` structures.  
   
-- `m_nFields` Must specify the number of fields in the array of `CDaoFieldInfo` structures.  
+- **m_nFields** Must specify the number of fields in the array of `CDaoFieldInfo` structures.  
   
  The remaining members will be ignored if set to **FALSE**. In addition, the **m_lDistinctCount** member is ignored during creation of the index.  
   
@@ -317,10 +317,10 @@ void DeleteField(int nIndex);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string expression that is the name of an existing field.  
   
- `nIndex`  
+ *nIndex*  
  The index of the field in the table's zero-based Fields collection, for lookup by index.  
   
 ### Remarks  
@@ -337,10 +337,10 @@ void DeleteIndex(int nIndex);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string expression that is the name of an existing index.  
   
- `nIndex`  
+ *nIndex*  
  The array index of the index object in the database's zero-based TableDefs collection, for lookup by index.  
   
 ### Remarks  
@@ -414,14 +414,14 @@ COleDateTime GetDateCreated();
  For related information, see the topic "DateCreated, LastUpdated Properties" in DAO Help.  
   
 ##  <a name="getdatelastupdated"></a>  CDaoTableDef::GetDateLastUpdated  
- Call this function to determine the date and time the table underlying the **CDaoTableDef** object was last updated.  
+ Call this function to determine the date and time the table underlying the `CDaoTableDef` object was last updated.  
   
 ```  
 COleDateTime GetDateLastUpdated();
 ```  
   
 ### Return Value  
- A value that contains the date and time the table underlying the **CDaoTableDef** object was last updated.  
+ A value that contains the date and time the table underlying the `CDaoTableDef` object was last updated.  
   
 ### Remarks  
  The date and time settings are derived from the computer on which the base table was created or last updated. In a multiuser environment, users should get these settings directly from the file server to avoid discrepancies; that is, all clients should use a "standard" time source — perhaps from one server.  
@@ -460,13 +460,13 @@ void GetFieldInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the field object in the table's zero-based Fields collection, for lookup by index.  
   
- `fieldinfo`  
+ *fieldinfo*  
  A reference to a [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Options that specify which information about the field to retrieve. The available options are listed here along with what they cause the function to return:  
   
 - `AFX_DAO_PRIMARY_INFO` (Default) Name, Type, Size, Attributes. Use this option for fastest performance.  
@@ -475,13 +475,13 @@ void GetFieldInfo(
   
 - `AFX_DAO_ALL_INFO` Primary and secondary information, plus: Validation Rule, Validation Text, Default Value  
   
- `lpszName`  
+ *lpszName*  
  A pointer to the name of the field object, for lookup by name. The name is a string with up to 64 characters that uniquely names the field.  
   
 ### Remarks  
  One version of the function lets you look up a field by index. The other version lets you look up a field by name.  
   
- For a description of the information returned, see the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. When you request information at one level, you get information for any prior levels as well.  
+ For a description of the information returned, see the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for any prior levels as well.  
   
  For related information, see the topic "Attributes Property" in DAO Help.  
   
@@ -517,13 +517,13 @@ void GetIndexInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The numeric index of the Index object in the table's zero-based Indexes collection, for lookup by its position in the collection.  
   
- `indexinfo`  
+ *indexinfo*  
  A reference to a [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Options that specify which information about the index to retrieve. The available options are listed here along with what they cause the function to return:  
   
 - `AFX_DAO_PRIMARY_INFO` Name, Field Info, Fields. Use this option for fastest performance.  
@@ -532,13 +532,13 @@ void GetIndexInfo(
   
 - `AFX_DAO_ALL_INFO` Primary and secondary information, plus: Distinct Count  
   
- `lpszName`  
+ *lpszName*  
  A pointer to the name of the index object, for lookup by name.  
   
 ### Remarks  
  One version of the function lets you look up an index by its position in the collection. The other version lets you look up an index by name.  
   
- For a description of the information returned, see the [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. When you request information at one level, you get information for any prior levels as well.  
+ For a description of the information returned, see the [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for any prior levels as well.  
   
  For related information, see the topic "Attributes Property" in DAO Help.  
   
@@ -595,7 +595,7 @@ CString GetValidationRule();
 ```  
   
 ### Return Value  
- A **CString** object that validates the data in a field as it is changed or added to a table.  
+ A `CString` object that validates the data in a field as it is changed or added to a table.  
   
 ### Remarks  
  Validation rules are used in connection with update operations. If a tabledef contains a validation rule, updates to that tabledef must match predetermined criteria before the data is changed. If the change does not match the criteria, an exception containing the value of [GetValidationText](#getvalidationtext) is thrown. For a `CDaoTableDef` object, this `CString` is read-only for an attached table and read/write for a base table.  
@@ -648,7 +648,7 @@ virtual void Open(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string that specifies a table name.  
   
 ### Remarks  
@@ -675,7 +675,7 @@ void SetAttributes(long lAttributes);
 ```  
   
 ### Parameters  
- `lAttributes`  
+ *lAttributes*  
  Characteristics of the table represented by the `CDaoTableDef` object and can be a sum of these constants:  
   
 |Constant|Description|  
@@ -702,7 +702,7 @@ void SetConnect(LPCTSTR lpszConnect);
 ```  
   
 ### Parameters  
- `lpszConnect`  
+ *lpszConnect*  
  A pointer to a string expression that specifies additional parameters to pass to ODBC or installable ISAM drivers.  
   
 ### Remarks  
@@ -739,7 +739,7 @@ void SetConnect(LPCTSTR lpszConnect);
   
  If a password is required but not provided, the ODBC driver displays a login dialog box the first time a table is accessed and again if the connection is closed and reopened.  
   
- You can set the connection string for a `CDaoTableDef` object by providing a source argument to the **Create** member function. You can check the setting to determine the type, path, user ID, password, or ODBC data source of the database. For more information, see the documentation for the specific driver.  
+ You can set the connection string for a `CDaoTableDef` object by providing a source argument to the `Create` member function. You can check the setting to determine the type, path, user ID, password, or ODBC data source of the database. For more information, see the documentation for the specific driver.  
   
  For related information, see the topic "Connect Property" in DAO Help.  
   
@@ -751,7 +751,7 @@ void SetName(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string expression that specifies a name for a table.  
   
 ### Remarks  
@@ -791,7 +791,7 @@ void SetValidationRule(LPCTSTR lpszValidationRule);
   
  Validation is supported only for databases that use the Microsoft Jet database engine. The expression cannot refer to user-defined functions, domain aggregate functions, SQL aggregate functions, or queries. A validation rule for a `CDaoTableDef` object can refer to multiple fields in that object.  
   
- For example, for fields named `hire_date` and `termination_date`, a validation rule might be:  
+ For example, for fields named *hire_date* and *termination_date*, a validation rule might be:  
   
  [!code-cpp[NVC_MFCDatabase#34](../../mfc/codesnippet/cpp/cdaotabledef-class_1.cpp)]  
   

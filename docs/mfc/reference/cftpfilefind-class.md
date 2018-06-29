@@ -69,14 +69,14 @@ explicit CFtpFileFind(
 ```  
   
 ### Parameters  
- `pConnection`  
+ *pConnection*  
  A pointer to a `CFtpConnection` object. You can obtain an FTP connection by calling [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection).  
   
- `dwContext`  
+ *dwContext*  
  The context identifier for the `CFtpFileFind` object. See **Remarks** for more information about this parameter.  
   
 ### Remarks  
- The default value for `dwContext` is sent by MFC to the `CFtpFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CFtpFileFind` object. You can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for *dwContext* is sent by MFC to the `CFtpFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CFtpFileFind` object. You can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
 ### Example  
   See the example in the class overview earlier in this topic.  
@@ -91,10 +91,10 @@ virtual BOOL FindFile(
 ```  
   
 ### Parameters  
- `pstrName`  
+ *pstrName*  
  A pointer to a string containing the name of the file to find. If **NULL**, the call will perform a wildcard search (*).  
   
- `dwFlags`  
+ *dwFlags*  
  The flags describing how to handle this session. These flags can be combined with the bitwise OR operator (&#124;) and are as follows:  
   
 -   INTERNET_FLAG_RELOAD   Get the data from the wire even if it is locally cached. This is the default flag.  

@@ -64,7 +64,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  
@@ -78,7 +78,7 @@ CReversalTransition(UI_ANIMATION_SECONDS duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
 ##  <a name="m_duration"></a>  CReversalTransition::m_duration  

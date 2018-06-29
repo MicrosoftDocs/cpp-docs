@@ -71,7 +71,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ```  
   
 ### Parameters  
- `dropEffect`  
+ *dropEffect*  
  The effect you would like to display to the user, usually indicating what would happen if a drop occurred at this point with the selected data. Typically, this is the value returned by the most recent call to [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) or [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover). It can be one or more of the following:  
   
 - `DROPEFFECT_NONE` A drop would not be allowed.  
@@ -100,7 +100,7 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the window that contains the selected data.  
   
 ### Return Value  
@@ -122,7 +122,7 @@ virtual SCODE QueryContinueDrag(
  *bEscapePressed*  
  States whether the ESC key has been pressed since the last call to `COleDropSource::QueryContinueDrag`.  
   
- `dwKeyState`  
+ *dwKeyState*  
  Contains the state of the modifier keys on the keyboard. This is a combination of any number of the following: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_MBUTTON**, and **MK_RBUTTON**.  
   
 ### Return Value  

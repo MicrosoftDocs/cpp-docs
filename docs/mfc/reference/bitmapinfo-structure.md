@@ -25,10 +25,10 @@ typedef struct tagBITMAPINFO {
 ```  
   
 #### Parameters  
- `bmiHeader`  
+ *bmiHeader*  
  Specifies a [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) structure that contains information about the dimensions and color format of a device-independent bitmap.  
   
- `bmiColors`  
+ *bmiColors*  
  Specifies an array of [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) or `DWORD` data types that define the colors in the bitmap.  
   
 ## Remarks  

@@ -13,10 +13,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Using Tooltips in a CStatusBarCtrl Object
-To enable tooltips for a status bar control, create the `CStatusBarCtrl` object with the **SBT_TOOLTIPS** style.  
+To enable tooltips for a status bar control, create the `CStatusBarCtrl` object with the SBT_TOOLTIPS style.  
   
 > [!NOTE]
->  If you are using a `CStatusBar` object to implement your status bar, use the `CStatusBar::CreateEx` function. It allows you to specify additional styles for the embedded **CStatusBarCtrl** object.  
+>  If you are using a `CStatusBar` object to implement your status bar, use the `CStatusBar::CreateEx` function. It allows you to specify additional styles for the embedded `CStatusBarCtrl` object.  
   
  Once the `CStatusBarCtrl` object has been successfully created, use [CStatusBarCtrl::SetTipText](../mfc/reference/cstatusbarctrl-class.md#settiptext) and [CStatusBarCtrl::GetTipText](../mfc/reference/cstatusbarctrl-class.md#gettiptext) to set and retrieve the tip text for a specific pane.  
   

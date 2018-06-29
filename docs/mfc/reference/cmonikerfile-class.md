@@ -90,7 +90,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
 ```  
   
 ### Parameters  
- `pError`  
+ *pError*  
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
 ### Return Value  
@@ -107,7 +107,7 @@ BOOL Detach(CFileException* pError = NULL);
 ```  
   
 ### Parameters  
- `pError`  
+ *pError*  
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
 ### Return Value  
@@ -141,22 +141,22 @@ virtual BOOL Open(
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  A URL or filename of the file to be opened.  
   
- `pError`  
+ *pError*  
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
- `pMoniker`  
+ *pMoniker*  
  A pointer to the moniker interface `IMoniker` to be used to obtain a stream.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The `lpszURL` parameter cannot be used on a Macintosh. Only the `pMoniker` form of **Open** can be used on a Macintosh.  
+ The *lpszURL* parameter cannot be used on a Macintosh. Only the *pMoniker* form of **Open** can be used on a Macintosh.  
   
- You can use a URL or a filename for the `lpszURL` parameter. For example:  
+ You can use a URL or a filename for the *lpszURL* parameter. For example:  
   
  [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]  
   

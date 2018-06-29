@@ -70,8 +70,8 @@ void Build(
 ```  
   
 ### Parameters  
- [in] `uiTearOffBarID`  
- [in] `strText`  
+ [in] *uiTearOffBarID*  
+ [in] *strText*  
   
 ### Remarks  
   
@@ -107,20 +107,20 @@ BOOL Initialize(
 ```  
   
 ### Parameters  
- [in] `lpszRegEntry`  
+ [in] *lpszRegEntry*  
  A string that contains the path of a registry entry. Your applications stores the settings for tear-off bars in this registry entry.  
   
- [in] `uiTearOffMenuFirst`  
+ [in] *uiTearOffMenuFirst*  
  The first menu ID for a tear-off menu.  
   
- [in] `uiTearOffMenuLast`  
+ [in] *uiTearOffMenuLast*  
  The last menu ID for a tear-off menu.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The range of menu IDs from `uiTearOffMenuFirst` to `uiTearOffMenuLast` must be a continuous interval. The interval defines the number of tear-off menus that can appear at the same time in the application.  
+ The range of menu IDs from *uiTearOffMenuFirst* to *uiTearOffMenuLast* must be a continuous interval. The interval defines the number of tear-off menus that can appear at the same time in the application.  
   
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
 
@@ -130,7 +130,7 @@ BOOL IsDynamicID(UINT uiID) const;
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
   
 ### Return Value  
   
@@ -144,7 +144,7 @@ UINT Parse(CString& str);
 ```  
   
 ### Parameters  
- [in] `str`  
+ [in] *str*  
   
 ### Return Value  
   
@@ -158,7 +158,7 @@ void Reset(HMENU hmenu);
 ```  
   
 ### Parameters  
- [in] `hmenu`  
+ [in] *hmenu*  
   
 ### Remarks  
   
@@ -172,8 +172,8 @@ void SetInUse(
 ```  
   
 ### Parameters  
- [in] `uiCmdId`  
- [in] `bUse`  
+ [in] *uiCmdId*  
+ [in] *bUse*  
   
 ### Remarks  
   
@@ -185,7 +185,7 @@ void SetupTearOffMenus(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
   
 ### Remarks  
   

@@ -79,13 +79,14 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
 ```  
 virtual HRESULT DisplayFolder(LPCTSTR lpszPath);
-virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);```  
+virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
+```  
   
 ### Parameters  
- [in] `lpszPath`  
+ [in] *lpszPath*  
  A string that contains the path of a folder.  
   
- [in] `lpItemInfo`  
+ [in] *lpItemInfo*  
  A pointer to a `LPAFX_SHELLITEMINFO` structure that describes a folder to display.  
   
 ### Return Value  
@@ -109,7 +110,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  A Boolean that specifies whether the framework enables the shortcut menu.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
@@ -120,7 +121,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
 ```  
   
 ### Parameters  
- [out] `strPath`  
+ [out] *strPath*  
  A reference to a string parameter where the method writes the path.  
   
 ### Return Value  
@@ -137,7 +138,7 @@ BOOL GetCurrentFolderName(CString& strName) const;
 ```  
   
 ### Parameters  
- [out] `strName`  
+ [out] *strName*  
  A reference to a string parameter where the method writes the name.  
   
 ### Return Value  
@@ -179,17 +180,17 @@ BOOL GetItemPath(
 ```  
   
 ### Parameters  
- [out] `strPath`  
+ [out] *strPath*  
  A reference to a string that receives the path.  
   
- [in] `iItem`  
+ [in] *iItem*  
  The index of the list item.  
   
 ### Return Value  
  `TRUE` if successful; `FALSE` otherwise.  
   
 ### Remarks  
- The index supplied by `iItem` is based on the items currently displayed by the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ The index supplied by *iItem* is based on the items currently displayed by the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ##  <a name="getitemtypes"></a>  CMFCShellListCtrl::GetItemTypes  
  Returns the type of items displayed by the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
@@ -225,9 +226,9 @@ virtual int OnCompareItems(
 ```  
   
 ### Parameters  
- [in] `lParam1`  
- [in] `lParam2`  
- [in] `iColumn`  
+ [in] *lParam1*  
+ [in] *lParam2*  
+ [in] *iColumn*  
   
 ### Return Value  
   
@@ -243,10 +244,10 @@ virtual void OnFormatFileDate(
 ```  
   
 ### Parameters  
- [in] `tmFile`  
+ [in] *tmFile*  
  The date associated with a file.  
   
- [out] `str`  
+ [out] *str*  
  A string that contains the formatted file date.  
   
 ### Remarks  
@@ -262,10 +263,10 @@ virtual void OnFormatFileSize(
 ```  
   
 ### Parameters  
- [in] `lFileSize`  
+ [in] *lFileSize*  
  The size of the file that the framework will display.  
   
- [out] `str`  
+ [out] *str*  
  A string that contains the formatted file size.  
   
 ### Remarks  
@@ -281,10 +282,10 @@ virtual int OnGetItemIcon(
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The item index.  
   
- [in] `pItem`  
+ [in] *pItem*  
  A `LPAFX_SHELLITEMINFO` parameter that describes the item.  
   
 ### Return Value  
@@ -293,7 +294,7 @@ virtual int OnGetItemIcon(
 ### Remarks  
  The icon image index is based on the system image list.  
   
- By default, this method relies on the `pItem` parameter. The value of `iItem` is not used in the default implementation. You can use `iItem` to implement custom behavior.  
+ By default, this method relies on the *pItem* parameter. The value of *iItem* is not used in the default implementation. You can use *iItem* to implement custom behavior.  
   
 ##  <a name="ongetitemtext"></a>  CMFCShellListCtrl::OnGetItemText  
  The framework calls this method when it must retrieve the text of a shell item.  
@@ -306,13 +307,13 @@ virtual CString OnGetItemText(
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The item index.  
   
- [in] `iColumn`  
+ [in] *iColumn*  
  The column of interest.  
   
- [in] `pItem`  
+ [in] *pItem*  
  A `LPAFX_SHELLITEMINFO` parameter that describes the item.  
   
 ### Return Value  
@@ -321,7 +322,7 @@ virtual CString OnGetItemText(
 ### Remarks  
  Each item in the `CMFCShellListCtrl` object may have text in one or more columns. When the framework calls this method, it specifies the column that it is interested in. If you call this function manually, you must also specify the column that you are interested in.  
   
- By default, this method relies on the `pItem` parameter to determine which item to process. The value of `iItem` is not used in the default implementation.  
+ By default, this method relies on the *pItem* parameter to determine which item to process. The value of *iItem* is not used in the default implementation.  
   
 ##  <a name="onsetcolumns"></a>  CMFCShellListCtrl::OnSetColumns  
  The framework calls this method when it sets the names of the columns.  
@@ -354,7 +355,7 @@ void SetItemTypes(SHCONTF nTypes);
 ```  
   
 ### Parameters  
- [in] `nTypes`  
+ [in] *nTypes*  
  A list of item types that the `CMFCShellListCtrl` object supports.  
   
 ### Remarks  

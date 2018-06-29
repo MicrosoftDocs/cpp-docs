@@ -52,16 +52,16 @@ CD2DEllipse(
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  source rectangle  
   
- `ellipse`  
+ *ellipse*  
  source ellipse  
   
- `ptCenter`  
+ *ptCenter*  
  The center point of the ellipse.  
   
- `sizeRadius`  
+ *sizeRadius*  
  The X-radius and Y-radius of the ellipse.  
   
 ## See Also  

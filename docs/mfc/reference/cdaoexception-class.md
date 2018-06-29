@@ -120,7 +120,7 @@ void GetErrorInfo(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the error information in the database engine's Errors collection, for lookup by index.  
   
 ### Remarks  
@@ -164,11 +164,11 @@ void GetErrorInfo(int nIndex);
   
 |CDaoErrorInfo member|Information|Meaning|  
 |--------------------------|-----------------|-------------|  
-|**m_lErrorCode**|Error Code|The DAO error code|  
+|`m_lErrorCode`|Error Code|The DAO error code|  
 |`m_strSource`|Source|The name of the object or application that originally generated the error|  
 |`m_strDescription`|Description|A descriptive string associated with the error|  
 |`m_strHelpFile`|Help File|A path to a Windows Help file in which the user can get information about the problem|  
-|**m_lHelpContext**|Help Context|The context ID for a topic in the DAO Help file|  
+|`m_lHelpContext`|Help Context|The context ID for a topic in the DAO Help file|  
   
  For full details about the information contained in the `CDaoErrorInfo` object, see the [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) structure.  
   
