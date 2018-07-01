@@ -55,14 +55,14 @@ IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
  *tlid*  
  The ID number of the type library.  
   
- `wVerMajor`  
+ *wVerMajor*  
  The type library major version number.  
   
- `wVerMinor`  
+ *wVerMinor*  
  The type library minor version number.  
   
 ### Remarks  
- This macro must appear in the implementation file for any control class that uses the `DECLARE_OLETYPELIB` macro.  
+ This macro must appear in the implementation file for any control class that uses the DECLARE_OLETYPELIB macro.  
 
 ### Requirements  
  **Header:** afxdisp.h  
