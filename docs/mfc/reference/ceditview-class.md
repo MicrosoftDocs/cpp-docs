@@ -73,9 +73,9 @@ class CEditView : public CCtrlView
   
  Create objects of type `CEditView` if you want an edit window with the added functionality listed above, or if you want simple text-editor functionality. A `CEditView` object can occupy the entire client area of a window. Derive your own classes from `CEditView` to add or modify the basic functionality, or to declare classes that can be added to a document template.  
   
- The default implementation of class `CEditView` handles the following commands: **ID_EDIT_SELECT_ALL**, **ID_EDIT_FIND**, **ID_EDIT_REPLACE**, **ID_EDIT_REPEAT**, and **ID_FILE_PRINT**.  
+ The default implementation of class `CEditView` handles the following commands: ID_EDIT_SELECT_ALL, ID_EDIT_FIND, ID_EDIT_REPLACE, ID_EDIT_REPEAT, and ID_FILE_PRINT.  
   
- The default character limit for `CEditView` is (1024 \* 1024 - 1 = 1048575). This can be changed by calling the **EM_LIMITTEXT** function of the underlying edit control. However, the limits are different depending on the operating system and the type of edit control (single or multiline). For more information on these limits, see [EM_LIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761607).  
+ The default character limit for `CEditView` is (1024 \* 1024 - 1 = 1048575). This can be changed by calling the EM_LIMITTEXT function of the underlying edit control. However, the limits are different depending on the operating system and the type of edit control (single or multiline). For more information on these limits, see [EM_LIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761607).  
   
  To change this limit in your control, override the `OnCreate()` function for your `CEditView` class and insert the following line of code:  
   
@@ -125,7 +125,7 @@ static const DWORD dwStyleDefault;
 ```  
   
 ### Remarks  
- Pass this static member as the `dwStyle` parameter of the `Create` function to obtain the default style for the `CEditView` object.  
+ Pass this static member as the *dwStyle* parameter of the `Create` function to obtain the default style for the `CEditView` object.  
   
 ##  <a name="findtext"></a>  CEditView::FindText  
  Call the `FindText` function to search the `CEditView` object's text buffer.  
@@ -142,10 +142,10 @@ BOOL FindText(
  The text to be found.  
   
  *bNext*  
- Specifies the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
+ Specifies the direction of the search. If TRUE, the search direction is toward the end of the buffer. If FALSE, the search direction is toward the beginning of the buffer.  
   
  *bCase*  
- Specifies whether the search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
+ Specifies whether the search is case sensitive. If TRUE, the search is case sensitive. If FALSE, the search is not case sensitive.  
   
 ### Return Value  
  Nonzero if the search text is found; otherwise 0.  
@@ -192,7 +192,7 @@ CFont* GetPrinterFont() const;
 ```  
   
 ### Return Value  
- A pointer to a `CFont` object that specifies the current printer font; **NULL** if the printer font has not been set. The pointer may be temporary and should not be stored for later use.  
+ A pointer to a `CFont` object that specifies the current printer font; NULL if the printer font has not been set. The pointer may be temporary and should not be stored for later use.  
   
 ### Remarks  
  If the printer font has not been set, the default printing behavior of the `CEditView` class is to print using the same font used for display.  
@@ -235,10 +235,10 @@ virtual void OnFindNext(
  The text to be found.  
   
  *bNext*  
- Specifies the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
+ Specifies the direction of the search. If TRUE, the search direction is toward the end of the buffer. If FALSE, the search direction is toward the beginning of the buffer.  
   
  *bCase*  
- Specifies whether the search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
+ Specifies whether the search is case sensitive. If TRUE, the search is case sensitive. If FALSE, the search is not case sensitive.  
   
 ### Remarks  
  The search starts at the beginning of the current selection and is accomplished through a call to [FindText](#findtext). In the default implementation, `OnFindNext` calls [OnTextNotFound](#ontextnotfound) if the text is not found.  
@@ -263,7 +263,7 @@ virtual void OnReplaceAll(
  The text to replace the search text.  
   
  *bCase*  
- Specifies whether search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
+ Specifies whether search is case sensitive. If TRUE, the search is case sensitive. If FALSE, the search is not case sensitive.  
   
 ### Remarks  
  `OnReplaceAll` searches the text in the buffer for the text specified by *lpszFind*, with case sensitivity specified by *bCase*. The search starts at the beginning of the current selection. Each time the search text is found, this function replaces that occurrence of the text with the text specified by *lpszReplace*. The search is accomplished through a call to [FindText](#findtext). In the default implementation, [OnTextNotFound](#ontextnotfound) is called if the text is not found.  
@@ -288,10 +288,10 @@ virtual void OnReplaceSel(
  The text to be found.  
   
  *bNext*  
- Specifies the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
+ Specifies the direction of the search. If TRUE, the search direction is toward the end of the buffer. If FALSE, the search direction is toward the beginning of the buffer.  
   
  *bCase*  
- Specifies whether the search is case sensitive. If **TRUE**, the search is case sensitive. If **FALSE**, the search is not case sensitive.  
+ Specifies whether the search is case sensitive. If TRUE, the search is case sensitive. If FALSE, the search is not case sensitive.  
   
  *lpszReplace*  
  The text to replace the found text.  
@@ -302,7 +302,7 @@ virtual void OnReplaceSel(
  Override `OnReplaceSel` to change the way a `CEditView`-derived object replaces the selected text.  
   
 ##  <a name="ontextnotfound"></a>  CEditView::OnTextNotFound  
- Override this function to change the default implementation, which calls the Windows function **MessageBeep**.  
+ Override this function to change the default implementation, which calls the Windows function `MessageBeep`.  
   
 ```  
 virtual void OnTextNotFound(LPCTSTR lpszFind);
@@ -340,9 +340,9 @@ UINT PrintInsideRect(
  The index of the next character to be printed (that is, the character following the last character rendered).  
   
 ### Remarks  
- If the `CEditView` control does not have the style **ES_AUTOHSCROLL**, text is wrapped within the rendering rectangle. If the control does have the style **ES_AUTOHSCROLL**, the text is clipped at the right edge of the rectangle.  
+ If the `CEditView` control does not have the style ES_AUTOHSCROLL, text is wrapped within the rendering rectangle. If the control does have the style ES_AUTOHSCROLL, the text is clipped at the right edge of the rectangle.  
   
- The **rect.bottom** element of the *rectLayout* object is changed so that the rectangle's dimensions define the part of the original rectangle that is occupied by the text.  
+ The `rect.bottom` element of the *rectLayout* object is changed so that the rectangle's dimensions define the part of the original rectangle that is occupied by the text.  
   
 ##  <a name="serializeraw"></a>  CEditView::SerializeRaw  
  Call `SerializeRaw` to have a `CArchive` object read or write the text in the `CEditView` object to a text file.  
@@ -367,7 +367,7 @@ void SetPrinterFont(CFont* pFont);
   
 ### Parameters  
  *pFont*  
- A pointer to an object of type `CFont`. If **NULL**, the font used for printing is based on the display font.  
+ A pointer to an object of type `CFont`. If NULL, the font used for printing is based on the display font.  
   
 ### Remarks  
  If you want your view to always use a particular font for printing, include a call to `SetPrinterFont` in your class's `OnPreparePrinting` function. This virtual function is called before printing occurs, so the font change takes place before the view's contents are printed.  

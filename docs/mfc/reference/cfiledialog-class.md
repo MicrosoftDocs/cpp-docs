@@ -91,14 +91,14 @@ class CFileDialog : public CCommonDialog
 |[CFileDialog::OnButtonClicked](#onbuttonclicked)|Called when the button is clicked.|  
 |[CFileDialog::OnCheckButtonToggled](#oncheckbuttontoggled)|Called when the check box is checked/unchecked.|  
 |[CFileDialog::OnControlActivating](#oncontrolactivating)|Called when the control is being active.|  
-|[CFileDialog::OnFileNameChange](#onfilenamechange)|Handles the `WM_NOTIFY CDN_SELCHANGE` message.|  
+|[CFileDialog::OnFileNameChange](#onfilenamechange)|Handles the WM_NOTIFY CDN_SELCHANGE message.|  
 |[CFileDialog::OnFileNameOK](#onfilenameok)|Validates the file name entered in the dialog box.|  
-|[CFileDialog::OnFolderChange](#onfolderchange)|Handles the `WM_NOTIFY CDN_FOLDERCHANGE` message.|  
-|[CFileDialog::OnInitDone](#oninitdone)|Handles the `WM_NOTIFY CDN_INITDONE` message.|  
+|[CFileDialog::OnFolderChange](#onfolderchange)|Handles the WM_NOTIFY CDN_FOLDERCHANGE message.|  
+|[CFileDialog::OnInitDone](#oninitdone)|Handles the WM_NOTIFY CDN_INITDONE message.|  
 |[CFileDialog::OnItemSelected](#onitemselected)|Called when the container item is being selected.|  
 |[CFileDialog::OnLBSelChangedNotify](#onlbselchangednotify)|Allows you to perform custom actions when the file selection changes.|  
 |[CFileDialog::OnShareViolation](#onshareviolation)|Handles share violations.|  
-|[CFileDialog::OnTypeChange](#ontypechange)|Handles the `WM_NOTIFY CDN_TYPECHANGE` message.|  
+|[CFileDialog::OnTypeChange](#ontypechange)|Handles the WM_NOTIFY CDN_TYPECHANGE message.|  
   
 ### Public Data Members  
   
@@ -129,7 +129,7 @@ class CFileDialog : public CCommonDialog
  After you initialize the dialog box controls, call the [CFileDialog::DoModal](#domodal) method to display the dialog box so that the user can type the path and file name. `DoModal` returns whether the user clicked the OK (IDOK) or the Cancel (IDCANCEL) button. If `DoModal` returns IDOK, you can use one of the `CFileDialog` public member functions to retrieve the information put in by the user.  
   
 > [!NOTE]
-> Under Windows Vista or later, multiple calls to [IFileDialog::SetFileTypes](http://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return `E_UNEXPECTED` in Windows Vista or later. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).  
+> Under Windows Vista or later, multiple calls to [IFileDialog::SetFileTypes](http://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return E_UNEXPECTED in Windows Vista or later. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).  
   
  `CFileDialog` includes several protected members that let you do custom handling of share violations, file name validation, and list-box change notification. These protected members are callback functions that most applications do not have to use because default handling is performed automatically. Message-map entries for these functions are not required because they are standard virtual functions.  
   
@@ -137,7 +137,7 @@ class CFileDialog : public CCommonDialog
   
  The destruction of `CFileDialog` objects is handled automatically. You do not have to call [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog).  
   
- To let the user select multiple files, set the `OFN_ALLOWMULTISELECT` flag before you call `DoModal`. You must supply your own file name buffer to accommodate the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the `CFileDialog`, but before you call `DoModal`.  
+ To let the user select multiple files, set the OFN_ALLOWMULTISELECT flag before you call `DoModal`. You must supply your own file name buffer to accommodate the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the `CFileDialog`, but before you call `DoModal`.  
   
  Additionally, you must set `m_ofn.nMaxFile` by using the number of characters in the buffer pointed to by `m_ofn.lpstrFile`. If you set the maximum number of files to be selected to `n`, the required buffer size is `n * (_MAX_PATH + 1) + 1`. The first item returned in the buffer is the path to the folder where the files were selected. For Windows Vista or later-style dialog boxes, the directory and file name strings are null-terminated, with an extra null character after the last file name. This format enables the Explorer-style dialog boxes to return long file names that include spaces. For old-style dialog boxes, the directory and file name strings are separated by spaces and the function uses short file names for file names with spaces.  
   
@@ -189,7 +189,7 @@ HRESULT AddCheckButton(
  The check button name.  
   
  *bChecked*  
- A Boolean indicating the current state of the check button. `TRUE` if checked; `FALSE` otherwise  
+ A Boolean indicating the current state of the check button. TRUE if checked; FALSE otherwise  
   
 ### Remarks  
   
@@ -386,13 +386,13 @@ explicit CFileDialog(
   
 ### Parameters  
  [in] *bOpenFileDialog*  
- The parameter that specifies what type of dialog box to create. Set it to `TRUE` to construct a **File Open** dialog box. Set it to `FALSE` to construct a **File Save As** dialog box.  
+ The parameter that specifies what type of dialog box to create. Set it to TRUE to construct a **File Open** dialog box. Set it to FALSE to construct a **File Save As** dialog box.  
   
  [in] *lpszDefExt*  
- The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is `NULL`, no extension is appended.  
+ The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is NULL, no extension is appended.  
   
  [in] *lpszFileName*  
- The initial file name that appears in the Filename box. If `NULL`, no initial file name appears.  
+ The initial file name that appears in the Filename box. If NULL, no initial file name appears.  
   
  [in] *dwFlags*  
  A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
@@ -409,20 +409,20 @@ explicit CFileDialog(
  [in] *bVistaStyle*  
  **Note** This parameter is available in Visual Studio 2008 and later and is will cause the new-style dialog to be used only if you are running in Windows Vista or later.  
   
- The parameter that specifies the style of the file dialog. Set it to `TRUE` to use the new Vista style file dialogs. Otherwise, the old style of dialog boxes will be used. See the Remarks section for more information about running under Vista.  
+ The parameter that specifies the style of the file dialog. Set it to TRUE to use the new Vista style file dialogs. Otherwise, the old style of dialog boxes will be used. See the Remarks section for more information about running under Vista.  
   
 ### Remarks  
  Either a **File Open** or **File Save As** dialog box is constructed, depending on the value of *bOpenFileDialog*.  
   
  Specifying a default extension using *lpszDefExt* may not produce the behavior that you expect, because it is seldom predictable what extensions have file associations on the user’s computer. If you need more control over the appending of a default extension, you can derive your own class from `CFileDialog`, and override the `CFileDialog::OnFileNameOK` method to perform your own extension handling.  
   
- To enable the user to select multiple files, set the `OFN_ALLOWMULTISELECT` flag before you call [DoModal](#domodal). You must supply your own file name buffer to store the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the [CFileDialog](../../mfc/reference/cfiledialog-class.md), but before you call `DoModal`. Additionally, you must set `m_ofn.nMaxFile` with the number of characters in the buffer pointed to by `m_ofn.lpstrFile`. If you set the maximum number of files to be selected to `n`, the necessary buffer size is `n`*(_MAX_PATH + 1) + 1. For example:  
+ To enable the user to select multiple files, set the OFN_ALLOWMULTISELECT flag before you call [DoModal](#domodal). You must supply your own file name buffer to store the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the [CFileDialog](../../mfc/reference/cfiledialog-class.md), but before you call `DoModal`. Additionally, you must set `m_ofn.nMaxFile` with the number of characters in the buffer pointed to by `m_ofn.lpstrFile`. If you set the maximum number of files to be selected to *n*, the necessary buffer size is `n`*(_MAX_PATH + 1) + 1. For example:  
   
  [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_1.cpp)]  
   
- To enable the user to resize an Explorer-style dialog box by using either the mouse or keyboard, set the `OFN_ENABLESIZING` flag. Setting this flag is necessary only if you provide a hook procedure or custom template. The flag works only with an Explorer-style dialog box; old-style dialog boxes cannot be resized.  
+ To enable the user to resize an Explorer-style dialog box by using either the mouse or keyboard, set the OFN_ENABLESIZING flag. Setting this flag is necessary only if you provide a hook procedure or custom template. The flag works only with an Explorer-style dialog box; old-style dialog boxes cannot be resized.  
   
- The *lpszFilter* parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two '&#124;' characters, followed by a `NULL` character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.  
+ The *lpszFilter* parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two '&#124;' characters, followed by a NULL character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.  
   
  For example, [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] allows users to open files that have extensions .xlc (chart) or .xls (worksheet), among others. The filter for Excel could be written as:  
   
@@ -430,7 +430,7 @@ explicit CFileDialog(
   
  However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, '\0', instead of the vertical bars ('&#124;').  
   
- The *bVistaStyle* parameter is applicable only when running under Windows Vista or later. Under earlier versions of Windows, this parameter is ignored. If *bVistaStyle* is set to `TRUE`, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
+ The *bVistaStyle* parameter is applicable only when running under Windows Vista or later. Under earlier versions of Windows, this parameter is ignored. If *bVistaStyle* is set to TRUE, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
   
  Dialog templates are not supported on dialogs based on *bVistaStyle*  
   
@@ -445,14 +445,14 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- **IDOK** or **IDCANCEL**. If **IDCANCEL** is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
- **IDOK** and **IDCANCEL** are constants that indicate whether the user selected the OK or Cancel button.  
+ IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
 ### Remarks  
- If you want to initialize the various file dialog-box options by setting members of the **m_ofn** structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
+ If you want to initialize the various file dialog-box options by setting members of the `m_ofn` structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- For example, if you want to allow the user to select multiple files, set the `OFN_ALLOWMULTISELECT` flag before calling `DoModal`, as shown in the code example in this topic.  
+ For example, if you want to allow the user to select multiple files, set the OFN_ALLOWMULTISELECT flag before calling `DoModal`, as shown in the code example in this topic.  
   
  When the user clicks the dialog box's OK or Cancel buttons, or selects the Close option from the dialog box's control menu, control is returned to your application. You can then call other member functions to retrieve the settings or information the user inputs into the dialog box.  
   
@@ -500,7 +500,7 @@ HRESULT GetCheckButtonState(
  The ID of the check box.  
   
  *bChecked*  
- The state of the check box. `TRUE` indicates checked; `FALSE` indicates unchecked.  
+ The state of the check box. TRUE indicates checked; FALSE indicates unchecked.  
   
 ### Remarks  
   
@@ -575,7 +575,7 @@ CString GetFileExt() const;
 ### Remarks  
  For example, if the name of the file entered is DATA.TXT, `GetFileExt` returns "TXT".  
   
- If `m_ofn.Flags` has the `OFN_ALLOWMULTISELECT` flag set, this string contains a sequence of null-terminated strings, with the first string being the directory path of the file group selected, followed by the names of all files selected by the user. To retrieve file pathnames, use the [GetStartPosition](#getstartposition) and [GetNextPathName](#getnextpathname) member functions.  
+ If `m_ofn.Flags` has the OFN_ALLOWMULTISELECT flag set, this string contains a sequence of null-terminated strings, with the first string being the directory path of the file group selected, followed by the names of all files selected by the user. To retrieve file pathnames, use the [GetStartPosition](#getstartposition) and [GetNextPathName](#getnextpathname) member functions.  
   
 ##  <a name="getfilename"></a>  CFileDialog::GetFileName  
  Call this function to retrieve the name of the filename entered in the dialog box.  
@@ -605,7 +605,7 @@ CString GetFileTitle() const;
 ### Remarks  
  The title of the file includes only its prefix, without the path or the extension. For example, `GetFileTitle` will return "TEXT" for the file C:\FILES\TEXT.DAT.  
   
- If `m_ofn.Flags` has the `OFN_ALLOWMULTISELECT` flag set, this string contains a sequence of null-terminated strings, with the first string being the directory path of the file group selected, followed by the names of all files selected by the user. For this reason, use the [GetStartPosition](#getstartposition) and [GetNextPathName](#getnextpathname) member functions to retrieve the next file name in the list.  
+ If `m_ofn.Flags` has the OFN_ALLOWMULTISELECT flag set, this string contains a sequence of null-terminated strings, with the first string being the directory path of the file group selected, followed by the names of all files selected by the user. For this reason, use the [GetStartPosition](#getstartposition) and [GetNextPathName](#getnextpathname) member functions to retrieve the next file name in the list.  
   
 ### Example  
   See the example for [CFileDialog::DoModal](#domodal).  
@@ -621,7 +621,7 @@ CString GetFolderPath() const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the currently open folder or directory.  
   
 ### Remarks  
- The dialog box must have been created with the **OFN_EXPLORER** style; otherwise, the method will fail with an assertion.  
+ The dialog box must have been created with the OFN_EXPLORER style; otherwise, the method will fail with an assertion.  
   
  You can call this method only while the dialog box is being displayed. After the dialog box has been closed, this function will no longer work, and the method will fail with an assertion.  
   
@@ -636,7 +636,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
  The pointer to the internal COM object for the `CFileDialog`. It is your responsibility to release this pointer appropriately.  
   
 ### Remarks  
- Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to `true`. If you use this function when *bVistaStyle* is `false`, it will return `NULL` in release mode and throw an assertion in debug mode.  
+ Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. If you use this function when *bVistaStyle* is FALSE, it will return NULL in release mode and throw an assertion in debug mode.  
   
  For more information about the `IFileDialogCustomize` interface,  see [IFileDialogCustomize](http://msdn.microsoft.com/library/windows/desktop/bb775912).  
   
@@ -656,7 +656,7 @@ IFileOpenDialog* GetIFileOpenDialog();
  The pointer to the internal COM object for the `CFileDialog`. It is your responsibility to release this pointer appropriately.  
   
 ### Remarks  
- Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to `true`. This function returns `NULL` if the `CFileDialog` is not an **Open** dialog box or if *bVistaStyle* is set to `false`. In this final case, the function only returns `NULL` in release mode - in debug mode it will throw an assertion.  
+ Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. This function returns NULL if the `CFileDialog` is not an **Open** dialog box or if *bVistaStyle* is set to FALSE. In this final case, the function only returns NULL in release mode - in debug mode it will throw an assertion.  
   
  For more information about the `IFileOpenDialog` interface, see [IFileOpenDialog](http://msdn.microsoft.com/library/windows/desktop/bb775834).  
   
@@ -676,7 +676,7 @@ IFileSaveDialog* GetIFileSaveDialog();
  The pointer to the internal COM object for the `CFileDialog`. It is your responsibility to release this pointer appropriately.  
   
 ### Remarks  
- Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to `true`. This function will return `NULL` if the `CFileDialog` is not a **Save** dialog box or if *bVistaStyle* is set to `false`. In this final case, the function only returns `NULL` in release mode - in debug mode it will throw an assertion.  
+ Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. This function will return NULL if the `CFileDialog` is not a **Save** dialog box or if *bVistaStyle* is set to FALSE. In this final case, the function only returns NULL in release mode - in debug mode it will throw an assertion.  
   
  For more information about the `IFileSaveDialog` interface, see [IFileSaveDialog](http://msdn.microsoft.com/library/windows/desktop/bb775688).  
   
@@ -694,7 +694,7 @@ CString GetNextPathName(POSITION& pos) const;
   
 ### Parameters  
  *pos*  
- A reference to a **POSITION** value returned by a previous `GetNextPathName` or `GetStartPosition` function call. **NULL** if the end of the list has been reached.  
+ A reference to a POSITION value returned by a previous `GetNextPathName` or `GetStartPosition` function call. NULL if the end of the list has been reached.  
   
 ### Return Value  
  The full path of the file.  
@@ -705,7 +705,7 @@ CString GetNextPathName(POSITION& pos) const;
  If the selection consists of only one file, that file name will be returned.  
   
 ##  <a name="getofn"></a>  CFileDialog::GetOFN  
- Retrieves the associated **OPENFILENAME** structure.  
+ Retrieves the associated `OPENFILENAME` structure.  
   
 ```  
 const OPENFILENAME& GetOFN() const;  
@@ -717,7 +717,7 @@ OPENFILENAME& GetOFN();
  An [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure.  
   
 ### Remarks  
- Use the second version of this function to initialize the appearance of a **File Open** or **File Save As** dialog box after it is constructed but before it is displayed with the `DoModal` member function. For example, you can set the **lpstrTitle** member of **m_ofn** to the caption you want the dialog box to have.  
+ Use the second version of this function to initialize the appearance of a **File Open** or **File Save As** dialog box after it is constructed but before it is displayed with the `DoModal` member function. For example, you can set the `lpstrTitle` member of `m_ofn` to the caption you want the dialog box to have.  
   
 ##  <a name="getpathname"></a>  CFileDialog::GetPathName  
  Call this function to retrieve the full path of the file entered in the dialog box.  
@@ -732,7 +732,7 @@ CString GetPathName() const;
 ### Remarks  
  The path of the filename includes the file's title plus the entire directory path. For example, `GetPathName` will return "C:\FILES\TEXT.DAT" for the file C:\FILES\TEXT.DAT.  
   
- If `m_ofn.Flags` has the `OFN_ALLOWMULTISELECT` flag set, this string contains a sequence of null-teminated strings, with the first string being the directory path of the file group selected, followed by the names of all files selected by the user. For this reason, use the [GetStartPosition](#getstartposition) and [GetNextPathName](#getnextpathname) member functions to retrieve the next file name in the list.  
+ If `m_ofn.Flags` has the OFN_ALLOWMULTISELECT flag set, this string contains a sequence of null-teminated strings, with the first string being the directory path of the file group selected, followed by the names of all files selected by the user. For this reason, use the [GetStartPosition](#getstartposition) and [GetNextPathName](#getnextpathname) member functions to retrieve the next file name in the list.  
   
 ### Example  
   See the example for [CFileDialog::DoModal](#domodal).  
@@ -748,7 +748,7 @@ BOOL GetReadOnlyPref() const;
  Non-zero if the Read Only check box in the dialog box is selected; otherwise 0.  
   
 ### Remarks  
- You can hide the Read Only check box by setting the `OFN_HIDEREADONLY` style in the `CFileDialog` constructor.  
+ You can hide the Read Only check box by setting the OFN_HIDEREADONLY style in the `CFileDialog` constructor.  
   
 > [!NOTE]
 > Windows Vista or later style `CFileDialog` objects do not support this function. Attempting to use this function on a Windows Vista or later style `CFileDialog` will throw [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).   
@@ -796,14 +796,14 @@ HRESULT GetSelectedControlItem(
 ### Remarks  
   
 ##  <a name="getstartposition"></a>  CFileDialog::GetStartPosition  
- Call this member function to retrieve the position of the first file pathname in the list, if `m_ofn.Flags` has the `OFN_ALLOWMULTISELECT` flag set.  
+ Call this member function to retrieve the position of the first file pathname in the list, if `m_ofn.Flags` has the OFN_ALLOWMULTISELECT flag set.  
   
 ```  
 POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration; **NULL** if the list is empty.  
+ A POSITION value that can be used for iteration; NULL if the list is empty.  
   
 ##  <a name="hidecontrol"></a>  CFileDialog::HideControl  
  Call this member function to hide the specified control in an Explorer-style Open or Save As common dialog box.  
@@ -817,7 +817,7 @@ void HideControl(int nID);
  The ID of the control to hide.  
   
 ### Remarks  
- The dialog box must have been created with the **OFN_EXPLORER** style; otherwise, the function will fail with an assertion.  
+ The dialog box must have been created with the OFN_EXPLORER style; otherwise, the function will fail with an assertion.  
   
 ##  <a name="ispickfoldersmode"></a>  CFileDialog::IsPickFoldersMode  
  Determines if the current dialog is in folder picker mode.  
@@ -827,7 +827,7 @@ BOOL IsPickFoldersMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the dialog is in folder picker mode; otherwise `FALSE`.  
+ TRUE if the dialog is in folder picker mode; otherwise FALSE.  
   
 ### Remarks  
   
@@ -939,14 +939,14 @@ virtual void OnControlActivating(DWORD dwIDCtl);
 ### Remarks  
   
 ##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNameChange  
-Override this method if you want to handle the `WM_NOTIFY` `CDN_SELCHANGE` message.  
+Override this method if you want to handle the WM_NOTIFY CDN_SELCHANGE message.  
   
 ```  
 virtual void OnFileNameChange();
 ```  
   
 ### Remarks  
- The system sends the `CDN_SELCHANGE` message when the user selects a new file or folder in the file list of the **Open** or **Save As** dialog box. Override this method if you want to perform any actions in response to this message.  
+ The system sends the CDN_SELCHANGE message when the user selects a new file or folder in the file list of the **Open** or **Save As** dialog box. Override this method if you want to perform any actions in response to this message.  
   
  The system sends this message only if the dialog box was created with the OFN_EXPLORER flag turned on. For more information about the notification, see [CDN_SELCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms646865). For information about the OFN_EXPLORER flag, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure and [Open and Save As Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms646960).  
   
@@ -966,7 +966,7 @@ virtual BOOL OnFileNameOK();
  If 1 is returned, the dialog box will remain displayed for the user to enter another filename. The dialog procedure dismisses the dialog if the return is 0. Other nonzero return values are currently reserved and should not be used.  
   
 ##  <a name="onfolderchange"></a>  CFileDialog::OnFolderChange  
- Override this function to handle the **WM_NOTIFYCDN_FOLDERCHANGE** message.  
+ Override this function to handle the WM_NOTIFYCDN_FOLDERCHANGE message.  
   
 ```  
 virtual void OnFolderChange();
@@ -978,7 +978,7 @@ virtual void OnFolderChange();
  Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_FOLDERCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms646859). For information about the OFN_EXPLORER style, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure and [Open and Save As Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms646960).  
   
 ##  <a name="oninitdone"></a>  CFileDialog::OnInitDone  
- Override this function to handle the `WM_NOTIFY` `CDN_INITDONE` message.  
+ Override this function to handle the WM_NOTIFY CDN_INITDONE message.  
   
 ```  
 virtual void OnInitDone();
@@ -1030,13 +1030,13 @@ virtual void OnLBSelChangedNotify(
  *nCode*  
  The control notification code. This parameter must have one of the following values:  
   
-- **CD_LBSELCHANGE** Specifies *iCurSel* is the selected item in a single-selection list box.  
+- CD_LBSELCHANGE Specifies *iCurSel* is the selected item in a single-selection list box.  
   
-- **CD_LBSELSUB** Specifies that *iCurSel* is no longer selected in a multiselection list box.  
+- CD_LBSELSUB Specifies that *iCurSel* is no longer selected in a multiselection list box.  
   
-- **CD_LBSELADD** Specifies that *iCurSel* is selected in a multiselection list box.  
+- CD_LBSELADD Specifies that *iCurSel* is selected in a multiselection list box.  
   
-- **CD_LBSELNOITEMS** Specifies that no selection exists in a multiselection list box.  
+- CD_LBSELNOITEMS Specifies that no selection exists in a multiselection list box.  
   
 ### Remarks  
  Override this function to provide custom handling of selection changes in the list box. For example, you can use this function to display the access rights or date-last-modified of each file the user selects.  
@@ -1055,19 +1055,19 @@ virtual UINT OnShareViolation(LPCTSTR lpszPathName);
 ### Return Value  
  One of the following values:  
   
-- **OFN_SHAREFALLTHROUGH** The filename is returned from the dialog box.  
+- OFN_SHAREFALLTHROUGH The filename is returned from the dialog box.  
   
-- **OFN_SHARENOWARN** No further action needs to be taken.  
+- OFN_SHARENOWARN No further action needs to be taken.  
   
-- **OFN_SHAREWARN** The user receives the standard warning message for this error.  
+- OFN_SHAREWARN The user receives the standard warning message for this error.  
   
 ### Remarks  
  Normally, you do not need to use this function because the framework provides default checking of share violations and displays a message box if a share violation occurs.  
   
- If you want to disable share violation checking, use the bitwise OR operator to combine the flag **OFN_SHAREAWARE** with `m_ofn.Flags`.  
+ If you want to disable share violation checking, use the bitwise OR operator to combine the flag OFN_SHAREAWARE with `m_ofn.Flags`.  
   
 ##  <a name="ontypechange"></a>  CFileDialog::OnTypeChange  
- Override this function to handle the **WM_NOTIFYCDN_TYPECHANGE** message.  
+ Override this function to handle the WM_NOTIFYCDN_TYPECHANGE message.  
   
 ```  
 virtual void OnTypeChange();
@@ -1110,7 +1110,7 @@ HRESULT SetCheckButtonState(
  The ID of the check box.  
   
  *bChecked*  
- The state of the check box. `TRUE` indicates checked; `FALSE` indicates Unchecked.  
+ The state of the check box. TRUE indicates checked; FALSE indicates Unchecked.  
   
 ### Remarks  
   
@@ -1232,7 +1232,7 @@ void SetDefExt(LPCSTR lpsz);
  A pointer to a string containing the default extension to use for the dialog box object. This string must not contain a period (.).  
   
 ### Remarks  
- The dialog box must have been created with the **OFN_EXPLORER** style; otherwise, the function will fail with an assertion.  
+ The dialog box must have been created with the OFN_EXPLORER style; otherwise, the function will fail with an assertion.  
   
 ##  <a name="seteditboxtext"></a>  CFileDialog::SetEditBoxText  
  Sets the current text in an edit box control.  
@@ -1261,7 +1261,7 @@ BOOL SetProperties(LPCWSTR lpszPropList);
   
 ### Parameters  
  *lpszPropList*  
- A list of predefined properties separated by ";". For a list of the flags, see the `Flags` section of [OPENFILENAME](http://msdn.microsoft.com/en-us/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104).  
+ A list of predefined properties separated by ";". For a list of the flags, see the **Flags** section of [OPENFILENAME](http://msdn.microsoft.com/en-us/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104).  
   
 ### Remarks  
   

@@ -83,7 +83,7 @@ CDataPathProperty(LPCTSTR lpszPath, COleControl* pControl = NULL);
  The path, which may be absolute or relative, used to create an asynchronous moniker that references the actual absolute location of the property. `CDataPathProperty` uses URLs, not filenames. If you want a `CDataPathProperty` object for a file, prepend `file://` to the path.  
   
 ### Remarks  
- The `COleControl` object pointed to by `pControl` is used by `Open` and retrieved by derived classes. If *pControl* is **NULL**, the control used with `Open` should be set with `SetControl`. If `lpszPath` is **NULL**, you can pass in the path through `Open` or set it with `SetPath`.  
+ The `COleControl` object pointed to by *pControl* is used by `Open` and retrieved by derived classes. If *pControl* is NULL, the control used with `Open` should be set with `SetControl`. If *lpszPath* is NULL, you can pass in the path through `Open` or set it with `SetPath`.  
   
 ##  <a name="getcontrol"></a>  CDataPathProperty::GetControl  
  Call this member function to retrieve the `COleControl` object associated with the `CDataPathProperty` object.  
@@ -93,7 +93,7 @@ COleControl* GetControl();
 ```  
   
 ### Return Value  
- Returns a pointer to the OLE control associated with the `CDataPathProperty` object. **NULL** if not control is associated.  
+ Returns a pointer to the OLE control associated with the `CDataPathProperty` object. NULL if not control is associated.  
   
 ##  <a name="getpath"></a>  CDataPathProperty::GetPath  
  Call this member function to retrieve the path, set when the `CDataPathProperty` object was constructed, or specified in `Open`, or specified in a previous call to the `SetPath` member function.  
