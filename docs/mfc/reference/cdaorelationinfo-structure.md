@@ -45,19 +45,19 @@ struct CDaoRelationInfo
  *m_lAttributes*  
  Contains information about the relation type. The value of this member can be any of the following:  
   
-- **dbRelationUnique** Relationship is one-to-one.  
+- `dbRelationUnique` Relationship is one-to-one.  
   
-- **dbRelationDontEnforce** Relationship is not enforced (no referential integrity).  
+- `dbRelationDontEnforce` Relationship is not enforced (no referential integrity).  
   
-- **dbRelationInherited** Relationship exists in a noncurrent database that contains the two attached tables.  
+- `dbRelationInherited` Relationship exists in a noncurrent database that contains the two attached tables.  
   
-- **dbRelationLeft** The relationship is a left join. A left outer join includes all of the records from the first (left-hand) of two tables, even if there are no matching values for records in the second (right-hand) table.  
+- `dbRelationLeft` The relationship is a left join. A left outer join includes all of the records from the first (left-hand) of two tables, even if there are no matching values for records in the second (right-hand) table.  
   
-- **dbRelationRight** The relationship is a right join. A right outer join includes all of the records from the second (right-hand) of two tables, even if there are no matching values for records in the first (left-hand) table.  
+- `dbRelationRight` The relationship is a right join. A right outer join includes all of the records from the second (right-hand) of two tables, even if there are no matching values for records in the first (left-hand) table.  
   
-- **dbRelationUpdateCascade** Updates will cascade.  
+- `dbRelationUpdateCascade` Updates will cascade.  
   
-- **dbRelationDeleteCascade** Deletions will cascade.  
+- `dbRelationDeleteCascade` Deletions will cascade.  
   
 *m_pFieldInfos*  
  A pointer to an array of [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) structures. The array contains one object for each field in the relation. The `m_nFields` data member gives a count of the array elements.  

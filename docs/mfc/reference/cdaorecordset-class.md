@@ -172,7 +172,7 @@ virtual void AddNew();
 ```  
   
 ### Remarks  
- The record's fields are initially Null. (In database terminology, Null means "having no value" and is not the same as **NULL** in C++.) To complete the operation, you must call the [Update](#update) member function. `Update` saves your changes to the data source.  
+ The record's fields are initially Null. (In database terminology, Null means "having no value" and is not the same as NULL in C++.) To complete the operation, you must call the [Update](#update) member function. `Update` saves your changes to the data source.  
   
 > [!CAUTION]
 >  If you edit a record and then scroll to another record without calling `Update`, your changes are lost without warning.  
@@ -275,7 +275,7 @@ BOOL CanScroll() const;
  Nonzero if you can scroll through the records, otherwise 0.  
   
 ### Remarks  
- If you call [Open](#open) with **dbForwardOnly**, the recordset can only scroll forward.  
+ If you call [Open](#open) with `dbForwardOnly`, the recordset can only scroll forward.  
   
  For related information, see the topic "Positioning the Current Record Pointer with DAO" in DAO Help.  
   
@@ -303,7 +303,7 @@ BOOL CanUpdate() const;
  Nonzero if the recordset can be updated (add, update, and delete records), otherwise 0.  
   
 ### Remarks  
- A recordset might be read-only if the underlying data source is read-only or if you specified **dbReadOnly** for *nOptions* when you called [Open](#open) for the recordset.  
+ A recordset might be read-only if the underlying data source is read-only or if you specified `dbReadOnly` for *nOptions* when you called [Open](#open) for the recordset.  
   
  For related information, see the topics "AddNew Method", "Edit Method", "Delete Method", "Update Method", and "Updatable Property" in DAO Help.  
   
@@ -316,7 +316,7 @@ CDaoRecordset(CDaoDatabase* pDatabase = NULL);
   
 ### Parameters  
  *pDatabase*  
- Contains a pointer to a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object or the value **NULL**. If not **NULL** and the `CDaoDatabase` object's `Open` member function has not been called to connect it to the data source, the recordset attempts to open it for you during its own [Open](#open) call. If you pass **NULL**, a `CDaoDatabase` object is constructed and connected for you using the data source information you specified if you derived your recordset class from `CDaoRecordset`.  
+ Contains a pointer to a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object or the value NULL. If not NULL and the `CDaoDatabase` object's `Open` member function has not been called to connect it to the data source, the recordset attempts to open it for you during its own [Open](#open) call. If you pass NULL, a `CDaoDatabase` object is constructed and connected for you using the data source information you specified if you derived your recordset class from `CDaoRecordset`.  
   
 ### Remarks  
  You can either use `CDaoRecordset` directly or derive an application-specific class from `CDaoRecordset`. You can use ClassWizard to derive your recordset classes.  
@@ -324,7 +324,7 @@ CDaoRecordset(CDaoDatabase* pDatabase = NULL);
 > [!NOTE]
 >  If you derive a `CDaoRecordset` class, your derived class must supply its own constructor. In the constructor of your derived class, call the constructor `CDaoRecordset::CDaoRecordset`, passing the appropriate parameters along to it.  
   
- Pass **NULL** to your recordset constructor to have a `CDaoDatabase` object constructed and connected for you automatically. This is a useful shortcut that does not require you to construct and connect a `CDaoDatabase` object prior to constructing your recordset. If the `CDaoDatabase` object is not open, a [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object will also be created for you that uses the default workspace. For more information, see [CDaoDatabase::CDaoDatabase](../../mfc/reference/cdaodatabase-class.md#cdaodatabase).  
+ Pass NULL to your recordset constructor to have a `CDaoDatabase` object constructed and connected for you automatically. This is a useful shortcut that does not require you to construct and connect a `CDaoDatabase` object prior to constructing your recordset. If the `CDaoDatabase` object is not open, a [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object will also be created for you that uses the default workspace. For more information, see [CDaoDatabase::CDaoDatabase](../../mfc/reference/cdaodatabase-class.md#cdaodatabase).  
   
 ##  <a name="close"></a>  CDaoRecordset::Close  
  Closing a `CDaoRecordset` object removes it from the collection of open recordsets in the associated database.  
@@ -334,7 +334,7 @@ virtual void Close();
 ```  
   
 ### Remarks  
- Because **Close** does not destroy the `CDaoRecordset` object, you can reuse the object by calling `Open` on the same data source or a different data source.  
+ Because `Close` does not destroy the `CDaoRecordset` object, you can reuse the object by calling `Open` on the same data source or a different data source.  
   
  All pending [AddNew](#addnew) or [Edit](#edit) statements are canceled, and all pending transactions are rolled back. If you want to preserve pending additions or edits, call [Update](#update) before you call `Close` for each recordset.  
   
@@ -396,7 +396,7 @@ virtual void Edit();
 > [!CAUTION]
 >  If you edit a record and then perform any operation that moves to another record without first calling `Update`, your changes are lost without warning. In addition, if you close the recordset or the parent database, your edited record is discarded without warning.  
   
- In some cases, you may want to update a column by making it Null (containing no data). To do so, call `SetFieldNull` with a parameter of **TRUE** to mark the field Null; this also causes the column to be updated. If you want a field to be written to the data source even though its value has not changed, call `SetFieldDirty` with a parameter of **TRUE**. This works even if the field had the value Null.  
+ In some cases, you may want to update a column by making it Null (containing no data). To do so, call `SetFieldNull` with a parameter of TRUE to mark the field Null; this also causes the column to be updated. If you want a field to be written to the data source even though its value has not changed, call `SetFieldDirty` with a parameter of TRUE. This works even if the field had the value Null.  
   
  The framework marks changed field data members to ensure they will be written to the record on the data source by the DAO record field exchange (DFX) mechanism. Changing the value of a field generally sets the field dirty automatically, so you will seldom need to call [SetFieldDirty](#setfielddirty) yourself, but you might sometimes want to ensure that columns will be explicitly updated or inserted regardless of what value is in the field data member. The DFX mechanism also employs the use of **PSEUDO NULL**. For more information, see [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).  
   
@@ -465,13 +465,13 @@ virtual BOOL Find(
  *lFindType*  
  A value indicating the type of Find operation desired. The possible values are:  
   
-- **AFX_DAO_NEXT** Find the next location of a matching string.  
+- AFX_DAO_NEXT Find the next location of a matching string.  
   
-- **AFX_DAO_PREV** Find the previous location of a matching string.  
+- AFX_DAO_PREV Find the previous location of a matching string.  
   
-- **AFX_DAO_FIRST** Find the first location of a matching string.  
+- AFX_DAO_FIRST Find the first location of a matching string.  
   
-- **AFX_DAO_LAST** Find the last location of a matching string.  
+- AFX_DAO_LAST Find the last location of a matching string.  
   
  *lpszFilter*  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record. For example:  
@@ -828,9 +828,9 @@ short GetEditMode();
   
 |Value|Description|  
 |-----------|-----------------|  
-|**dbEditNone**|No editing operation is in progress.|  
-|**dbEditInProgress**|`Edit` has been called.|  
-|**dbEditAdd**|`AddNew` has been called.|  
+|`dbEditNone`|No editing operation is in progress.|  
+|`dbEditInProgress`|`Edit` has been called.|  
+|`dbEditAdd`|`AddNew` has been called.|  
   
  For related information, see the topic "EditMode Property" in DAO Help.  
   
@@ -1134,11 +1134,11 @@ short GetType();
 ### Return Value  
  One of the following values that indicates the type of a recordset:  
   
-- **dbOpenTable** Table-type recordset  
+- `dbOpenTable` Table-type recordset  
   
-- **dbOpenDynaset** Dynaset-type recordset  
+- `dbOpenDynaset` Dynaset-type recordset  
   
-- **dbOpenSnapshot** Snapshot-type recordset  
+- `dbOpenSnapshot` Snapshot-type recordset  
   
 ### Remarks  
  For related information, see the topic "Type Property" in DAO Help.  
@@ -1231,12 +1231,12 @@ BOOL IsDeleted() const;
  Nonzero if the recordset is positioned on a deleted record; otherwise 0.  
   
 ### Remarks  
- If you scroll to a record and `IsDeleted` returns **TRUE** (nonzero), then you must scroll to another record before you can perform any other recordset operations.  
+ If you scroll to a record and `IsDeleted` returns TRUE (nonzero), then you must scroll to another record before you can perform any other recordset operations.  
   
 > [!NOTE]
 >  You don't need to check the deleted status for records in a snapshot or table-type recordset. Because records cannot be deleted from a snapshot, there is no need to call `IsDeleted`. For table-type recordsets, deleted records are actually removed from the recordset. Once a record has been deleted, either by you, another user, or in another recordset, you cannot scroll back to that record. Therefore, there is no need to call `IsDeleted`.  
   
- When you delete a record from a dynaset, it is removed from the recordset and you cannot scroll back to that record. However, if a record in a dynaset is deleted either by another user or in another recordset based on the same table, `IsDeleted` will return **TRUE** when you later scroll to that record.  
+ When you delete a record from a dynaset, it is removed from the recordset and you cannot scroll back to that record. However, if a record in a dynaset is deleted either by another user or in another recordset based on the same table, `IsDeleted` will return TRUE when you later scroll to that record.  
   
  For related information, see the topics "Delete Method", "LastModified Property", and "EditMode Property" in DAO Help.  
   
@@ -1296,7 +1296,7 @@ BOOL IsFieldDirty(void* pv);
   
 ### Parameters  
  *pv*  
- A pointer to the field data member whose status you want to check, or **NULL** to determine if any of the fields are dirty.  
+ A pointer to the field data member whose status you want to check, or NULL to determine if any of the fields are dirty.  
   
 ### Return Value  
  Nonzero if the specified field data member is flagged as dirty; otherwise 0.  
@@ -1315,13 +1315,13 @@ BOOL IsFieldNull(void* pv);
   
 ### Parameters  
  *pv*  
- A pointer to the field data member whose status you want to check, or **NULL** to determine if any of the fields are Null.  
+ A pointer to the field data member whose status you want to check, or NULL to determine if any of the fields are Null.  
   
 ### Return Value  
  Nonzero if the specified field data member is flagged as Null; otherwise 0.  
   
 ### Remarks  
- (In database terminology, Null means "having no value" and is not the same as **NULL** in C++.) If a field data member is flagged as Null, it is interpreted as a column of the current record for which there is no value.  
+ (In database terminology, Null means "having no value" and is not the same as NULL in C++.) If a field data member is flagged as Null, it is interpreted as a column of the current record for which there is no value.  
   
 > [!NOTE]
 >  In certain situations, using `IsFieldNull` can be inefficient, as the following code example illustrates:  
@@ -1329,10 +1329,10 @@ BOOL IsFieldNull(void* pv);
  [!code-cpp[NVC_MFCDatabase#5](../../mfc/codesnippet/cpp/cdaorecordset-class_5.cpp)]  
   
 > [!NOTE]
->  If you are using dynamic record binding, without deriving from `CDaoRecordset`, be sure to use **VT_NULL** as shown in the example.  
+>  If you are using dynamic record binding, without deriving from `CDaoRecordset`, be sure to use VT_NULL as shown in the example.  
   
 ##  <a name="isfieldnullable"></a>  CDaoRecordset::IsFieldNullable  
- Call this member function to determine whether the specified field data member is "nullable" (can be set to a Null value; C++ **NULL** is not the same as Null, which, in database terminology, means "having no value").  
+ Call this member function to determine whether the specified field data member is "nullable" (can be set to a Null value; C++ NULL is not the same as Null, which, in database terminology, means "having no value").  
   
 ```  
 BOOL IsFieldNullable(void* pv);
@@ -1340,7 +1340,7 @@ BOOL IsFieldNullable(void* pv);
   
 ### Parameters  
  *pv*  
- A pointer to the field data member whose status you want to check, or **NULL** to determine if any of the fields are Null.  
+ A pointer to the field data member whose status you want to check, or NULL to determine if any of the fields are Null.  
   
 ### Return Value  
  Nonzero if the specified field data member can be made Null; otherwise 0.  
@@ -1364,7 +1364,7 @@ BOOL IsOpen() const;
  Contains a flag indicating whether cached fields are automatically marked as dirty (changed) and Null.  
   
 ### Remarks  
- The flag defaults to **TRUE**. The setting in this data member controls the entire double-buffering mechanism. If you set the flag to **TRUE**, you can turn off the caching on a field-by-field basis using the DFX mechanism. If you set the flag to **FALSE**, you must call `SetFieldDirty` and `SetFieldNull` yourself.  
+ The flag defaults to TRUE. The setting in this data member controls the entire double-buffering mechanism. If you set the flag to TRUE, you can turn off the caching on a field-by-field basis using the DFX mechanism. If you set the flag to FALSE, you must call `SetFieldDirty` and `SetFieldNull` yourself.  
   
  Set this data member before calling `Open`. This mechanism is primarily for ease-of-use. Performance may be slower because of the double-buffering of fields as changes are made.  
   
@@ -1377,7 +1377,7 @@ BOOL IsOpen() const;
  The framework uses this number to manage interaction between the field data members and the corresponding columns of the current record on the data source.  
   
 > [!NOTE]
->  This number must correspond to the number of output columns registered in `DoFieldExchange` after a call to `SetFieldType` with the parameter **CDaoFieldExchange::outputColumn**.  
+>  This number must correspond to the number of output columns registered in `DoFieldExchange` after a call to `SetFieldType` with the parameter `CDaoFieldExchange::outputColumn`.  
   
  You can bind columns dynamically by way of `CDaoRecordset::GetFieldValue` and `CDaoRecordset::SetFieldValue`. If you do so, you do not need to increment the count in `m_nFields` to reflect the number of DFX function calls in your `DoFieldExchange` member function.  
   
@@ -1390,7 +1390,7 @@ BOOL IsOpen() const;
  The framework uses this number when it parameterizes the recordset's query.  
   
 > [!NOTE]
->  This number must correspond to the number of "params" registered in `DoFieldExchange` after a call to `SetFieldType` with the parameter **CFieldExchange::param**.  
+>  This number must correspond to the number of "params" registered in `DoFieldExchange` after a call to `SetFieldType` with the parameter `CFieldExchange::param`.  
   
  For related information, see the topic "Parameter Object" in DAO Help.  
   
@@ -1406,9 +1406,9 @@ BOOL IsOpen() const;
  Contains a pointer to the `CDaoDatabase` object through which the recordset is connected to a data source.  
   
 ### Remarks  
- This variable is set in two ways. Typically, you pass a pointer to an already open `CDaoDatabase` object when you construct the recordset object. If you pass **NULL** instead, `CDaoRecordset` creates a `CDaoDatabase` object for you and opens it. In either case, `CDaoRecordset` stores the pointer in this variable.  
+ This variable is set in two ways. Typically, you pass a pointer to an already open `CDaoDatabase` object when you construct the recordset object. If you pass NULL instead, `CDaoRecordset` creates a `CDaoDatabase` object for you and opens it. In either case, `CDaoRecordset` stores the pointer in this variable.  
   
- Normally you will not directly need to use the pointer stored in **m_pDatabase**. If you write your own extensions to `CDaoRecordset`, however, you might need to use the pointer. For example, you might need the pointer if you throw your own `CDaoException`(s).  
+ Normally you will not directly need to use the pointer stored in `m_pDatabase`. If you write your own extensions to `CDaoRecordset`, however, you might need to use the pointer. For example, you might need the pointer if you throw your own `CDaoException`(s).  
   
  For related information, see the topic "Database Object" in DAO Help.  
   
@@ -1416,7 +1416,7 @@ BOOL IsOpen() const;
  Contains a string that is used to construct the **WHERE** clause of a SQL statement.  
   
 ### Remarks  
- It does not include the reserved word **WHERE** to filter the recordset. The use of this data member is not applicable to table-type recordsets. The use of **m_strFilter** has no effect when opening a recordset using a `CDaoQueryDef` pointer.  
+ It does not include the reserved word **WHERE** to filter the recordset. The use of this data member is not applicable to table-type recordsets. The use of `m_strFilter` has no effect when opening a recordset using a `CDaoQueryDef` pointer.  
   
  Use the U.S. date format (month-day-year) when you filter fields containing dates, even if you are not using the U.S. version of the Microsoft Jet database engine; otherwise, the data may not be filtered as you expect.  
   
@@ -1457,7 +1457,7 @@ virtual void Move(long lRows);
 > [!NOTE]
 >  If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.  
   
- When you call `Move` on a forward-only scrolling snapshot, the `lRows` parameter must be a positive integer and bookmarks are not allowed, so you can move forward only.  
+ When you call `Move` on a forward-only scrolling snapshot, the *lRows* parameter must be a positive integer and bookmarks are not allowed, so you can move forward only.  
   
  To make the first, last, next, or previous record in a recordset the current record, call the `MoveFirst`, `MoveLast`, `MoveNext`, or `MovePrev` member function.  
   
@@ -1592,16 +1592,16 @@ virtual void Open(
  *nOpenType*  
  One of the following values:  
   
-- **dbOpenDynaset** A dynaset-type recordset with bidirectional scrolling. This is the default.  
+- `dbOpenDynaset` A dynaset-type recordset with bidirectional scrolling. This is the default.  
   
-- **dbOpenTable** A table-type recordset with bidirectional scrolling.  
+- `dbOpenTable` A table-type recordset with bidirectional scrolling.  
   
-- **dbOpenSnapshot** A snapshot-type recordset with bidirectional scrolling.  
+- `dbOpenSnapshot` A snapshot-type recordset with bidirectional scrolling.  
   
  *lpszSQL*  
  A string pointer containing one of the following:  
   
--   A **NULL** pointer.  
+-   A NULL pointer.  
   
 -   The name of one or more tabledefs and/or querydefs (comma-separated).  
   
@@ -1612,24 +1612,24 @@ virtual void Open(
  *nOptions*  
  One or more of the options listed below. The default value is 0. Possible values are as follows:  
   
-- **dbAppendOnly** You can only append new records (dynaset-type recordset only). This option means literally that records may only be appended. The MFC ODBC database classes have an append-only option that allows records to be retrieved and appended.  
+- `dbAppendOnly` You can only append new records (dynaset-type recordset only). This option means literally that records may only be appended. The MFC ODBC database classes have an append-only option that allows records to be retrieved and appended.  
   
-- **dbForwardOnly** The recordset is a forward-only scrolling snapshot.  
+- `dbForwardOnly` The recordset is a forward-only scrolling snapshot.  
   
-- **dbSeeChanges** Generate an exception if another user is changing data you are editing.  
+- `dbSeeChanges` Generate an exception if another user is changing data you are editing.  
   
-- **dbDenyWrite** Other users cannot modify or add records.  
+- `dbDenyWrite` Other users cannot modify or add records.  
   
-- **dbDenyRead** Other users cannot view records (table-type recordset only).  
+- `dbDenyRead` Other users cannot view records (table-type recordset only).  
   
-- **dbReadOnly** You can only view records; other users can modify them.  
+- `dbReadOnly` You can only view records; other users can modify them.  
   
-- **dbInconsistent** Inconsistent updates are allowed (dynaset-type recordset only).  
+- `dbInconsistent` Inconsistent updates are allowed (dynaset-type recordset only).  
   
-- **dbConsistent** Only consistent updates are allowed (dynaset-type recordset only).  
+- `dbConsistent` Only consistent updates are allowed (dynaset-type recordset only).  
   
 > [!NOTE]
->  The constants **dbConsistent** and **dbInconsistent** are mutually exclusive. You can use one or the other, but not both in a given instance of `Open`.  
+>  The constants `dbConsistent` and `dbInconsistent` are mutually exclusive. You can use one or the other, but not both in a given instance of `Open`.  
   
  *pTableDef*  
  A pointer to a [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) object. This version is valid only for table-type recordsets. When using this option, the `CDaoDatabase` pointer used to construct the `CDaoRecordset` is not used; rather, the database in which the tabledef resides is used.  
@@ -1644,7 +1644,7 @@ virtual void Open(
   
 -   When you construct the recordset object, pass a pointer to a `CDaoDatabase` object that is not open. The recordset opens a `CDaoDatabase` object, but will not close it when the recordset object closes.  
   
--   When you construct the recordset object, pass a **NULL** pointer. The recordset object calls `GetDefaultDBName` to get the name of the Microsoft Access .MDB file to open. The recordset then opens a `CDaoDatabase` object and keeps it open as long as the recordset is open. When you call `Close` on the recordset, the `CDaoDatabase` object is also closed.  
+-   When you construct the recordset object, pass a NULL pointer. The recordset object calls `GetDefaultDBName` to get the name of the Microsoft Access .MDB file to open. The recordset then opens a `CDaoDatabase` object and keeps it open as long as the recordset is open. When you call `Close` on the recordset, the `CDaoDatabase` object is also closed.  
   
     > [!NOTE]
     >  When the recordset opens the `CDaoDatabase` object, it opens the data source with nonexclusive access.  
@@ -1665,26 +1665,26 @@ virtual void Open(
   
 |Value of the `lpszSQL` parameter|Records selected are determined by|Example|  
 |--------------------------------------|----------------------------------------|-------------|  
-|**NULL**|The string returned by `GetDefaultSQL`.||  
+|NULL|The string returned by `GetDefaultSQL`.||  
 |A comma-separated list of one or more tabledefs and/or querydef names.|All columns represented in the `DoFieldExchange`.|`"Customer"`|  
 |**SELECT** column-list **FROM** table-list|The specified columns from the specified tabledef(s) and/or querydef(s).|`"SELECT CustId, CustName`<br /><br /> `FROM Customer"`|  
   
- The usual procedure is to pass **NULL** to `Open`; in that case, `Open` calls `GetDefaultSQL`, an overridable member function that ClassWizard generates when creating a `CDaoRecordset`-derived class. This value gives the tabledef(s) and/or querydef name(s) you specified in ClassWizard. You can instead specify other information in the *lpszSQL* parameter.  
+ The usual procedure is to pass NULL to `Open`; in that case, `Open` calls `GetDefaultSQL`, an overridable member function that ClassWizard generates when creating a `CDaoRecordset`-derived class. This value gives the tabledef(s) and/or querydef name(s) you specified in ClassWizard. You can instead specify other information in the *lpszSQL* parameter.  
   
  Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **WHERE** and **ORDERBY** clauses appended to the *lpszSQL* string you passed) and then executes the query. You can examine the constructed string by calling `GetSQL` after calling `Open`.  
   
  The field data members of your recordset class are bound to the columns of the data selected. If any records are returned, the first record becomes the current record.  
   
- If you want to set options for the recordset, such as a filter or sort, set **m_strSort** or **m_strFilter** after you construct the recordset object but before you call `Open`. If you want to refresh the records in the recordset after the recordset is already open, call `Requery`.  
+ If you want to set options for the recordset, such as a filter or sort, set `m_strSort` or `m_strFilter` after you construct the recordset object but before you call `Open`. If you want to refresh the records in the recordset after the recordset is already open, call `Requery`.  
   
- If you call `Open` on a dynaset-type or snapshot-type recordset, or if the data source refers to a SQL statement or a tabledef that represents an attached table, you cannot use **dbOpenTable** for the type argument; if you do, MFC throws an exception. To determine whether a tabledef object represents an attached table, create a [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) object and call its [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) member function.  
+ If you call `Open` on a dynaset-type or snapshot-type recordset, or if the data source refers to a SQL statement or a tabledef that represents an attached table, you cannot use `dbOpenTable` for the type argument; if you do, MFC throws an exception. To determine whether a tabledef object represents an attached table, create a [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) object and call its [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) member function.  
   
- Use the **dbSeeChanges** flag if you wish to trap changes made by another user or another program on your machine when you are editing or deleting the same record. For example, if two users start editing the same record, the first user to call the `Update` member function succeeds. When `Update` is called by the second user, a `CDaoException` is thrown. Similarly, if the second user tries to call `Delete` to delete the record, and it has already been changed by the first user, a `CDaoException` occurs.  
+ Use the `dbSeeChanges` flag if you wish to trap changes made by another user or another program on your machine when you are editing or deleting the same record. For example, if two users start editing the same record, the first user to call the `Update` member function succeeds. When `Update` is called by the second user, a `CDaoException` is thrown. Similarly, if the second user tries to call `Delete` to delete the record, and it has already been changed by the first user, a `CDaoException` occurs.  
   
  Typically, if the user gets this `CDaoException` while updating, your code should refresh the contents of the fields and retrieve the newly modified values. If the exception occurs in the process of deleting, your code could display the new record data to the user and a message indicating that the data has recently changed. At this point, your code can request a confirmation that the user still wants to delete the record.  
   
 > [!TIP]
->  Use the forward-only scrolling option ( **dbForwardOnly**) to improve performance when your application makes a single pass through a recordset opened from an ODBC data source.  
+>  Use the forward-only scrolling option (`dbForwardOnly`) to improve performance when your application makes a single pass through a recordset opened from an ODBC data source.  
   
  For related information, see the topic "OpenRecordset Method" in DAO Help.  
   
@@ -1741,10 +1741,10 @@ BOOL Seek(
  A pointer to a [COleVariant](../../mfc/reference/colevariant-class.md) whose value corresponds to the first field in the index. Required.  
   
  *pKey2*  
- A pointer to a `COleVariant` whose value corresponds to the second field in the index, if any. Defaults to **NULL**.  
+ A pointer to a `COleVariant` whose value corresponds to the second field in the index, if any. Defaults to NULL.  
   
  *pKey3*  
- A pointer to a `COleVariant` whose value corresponds to the third field in the index, if any. Defaults to **NULL**.  
+ A pointer to a `COleVariant` whose value corresponds to the third field in the index, if any. Defaults to NULL.  
   
  *pKeyArray*  
  A pointer to an array of variants. The array size corresponds to the number of fields in the index.  
@@ -1763,7 +1763,7 @@ BOOL Seek(
   
  `Seek` enables high-performance index searching on table-type recordsets. You must set the current index by calling `SetCurrentIndex` before calling `Seek`. If the index identifies a nonunique key field or fields, `Seek` locates the first record that satisfies the criteria. If you do not set an index, an exception is thrown.  
   
- Note that if you are not creating a UNICODE recordset, the `COleVariant` objects must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the **COleVariant** function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
+ Note that if you are not creating a UNICODE recordset, the `COleVariant` objects must be explicitly declared ANSI. This can be done by using the [COleVariant::COleVariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc***,** *vtSrc* **)** form of constructor with *vtSrc* set to `VT_BSTRT` (ANSI) or by using the `COleVariant` function [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc***,** *vtSrc* **)** with *vtSrc* set to `VT_BSTRT`.  
   
  When you call `Seek`, you pass one or more key values and a comparison operator ("<", "\<=", "=", ">=", or ">"). `Seek` searches through the specified key fields and locates the first record that satisfies the criteria specified by *lpszComparison* and *pKey1*. Once found, `Seek` returns nonzero, and makes that record current. If `Seek` fails to locate a match, `Seek` returns zero, and the current record is undefined. When using DAO directly, you must explicitly check the NoMatch property.  
   
@@ -1897,32 +1897,32 @@ void SetFieldDirty(
   
 ### Parameters  
  *pv*  
- Contains the address of a field data member in the recordset or **NULL**. If **NULL**, all field data members in the recordset are flagged. (C++ **NULL** is not the same as Null in database terminology, which means "having no value.")  
+ Contains the address of a field data member in the recordset or NULL. If NULL, all field data members in the recordset are flagged. (C++ NULL is not the same as Null in database terminology, which means "having no value.")  
   
  *bDirty*  
- **TRUE** if the field data member is to be flagged as "dirty" (changed). Otherwise **FALSE** if the field data member is to be flagged as "clean" (unchanged).  
+ TRUE if the field data member is to be flagged as "dirty" (changed). Otherwise FALSE if the field data member is to be flagged as "clean" (unchanged).  
   
 ### Remarks  
  Marking fields as unchanged ensures the field is not updated.  
   
- The framework marks changed field data members to ensure they will be written to the record on the data source by the DAO record field exchange (DFX) mechanism. Changing the value of a field generally sets the field dirty automatically, so you will seldom need to call `SetFieldDirty` yourself, but you might sometimes want to ensure that columns will be explicitly updated or inserted regardless of what value is in the field data member. The DFX mechanism also employs the use of **PSEUDONULL**. For more information, see [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).  
+ The framework marks changed field data members to ensure they will be written to the record on the data source by the DAO record field exchange (DFX) mechanism. Changing the value of a field generally sets the field dirty automatically, so you will seldom need to call `SetFieldDirty` yourself, but you might sometimes want to ensure that columns will be explicitly updated or inserted regardless of what value is in the field data member. The DFX mechanism also employs the use of PSEUDONULL. For more information, see [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).  
   
  If the double-buffering mechanism is not being used, then changing the value of the field does not automatically set the field as dirty. In this case, it will be necessary to explicitly set the field as dirty. The flag contained in [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) controls this automatic field checking.  
   
 > [!NOTE]
 >  Call this member function only after you have called [Edit](#edit) or [AddNew](#addnew).  
   
- Using **NULL** for the first argument of the function will apply the function to all **outputColumn** fields, not **param** fields in `CDaoFieldExchange`. For instance, the call  
+ Using NULL for the first argument of the function will apply the function to all `outputColumn` fields, not **param** fields in `CDaoFieldExchange`. For instance, the call  
   
  [!code-cpp[NVC_MFCDatabase#6](../../mfc/codesnippet/cpp/cdaorecordset-class_6.cpp)]  
   
- will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
+ will set only `outputColumn` fields to NULL; **param** fields will be unaffected.  
   
  To work on a **param**, you must supply the actual address of the individual **param** you want to work on, such as:  
   
  [!code-cpp[NVC_MFCDatabase#7](../../mfc/codesnippet/cpp/cdaorecordset-class_7.cpp)]  
   
- This means you cannot set all **param** fields to **NULL**, as you can with **outputColumn** fields.  
+ This means you cannot set all **param** fields to NULL, as you can with `outputColumn` fields.  
   
  `SetFieldDirty` is implemented through `DoFieldExchange`.  
   
@@ -1937,7 +1937,7 @@ void SetFieldNull(
   
 ### Parameters  
  *pv*  
- Contains the address of a field data member in the recordset or **NULL**. If **NULL**, all field data members in the recordset are flagged. (C++ **NULL** is not the same as Null in database terminology, which means "having no value.")  
+ Contains the address of a field data member in the recordset or NULL. If NULL, all field data members in the recordset are flagged. (C++ NULL is not the same as Null in database terminology, which means "having no value.")  
   
  *bNull*  
  Nonzero if the field data member is to be flagged as having no value (Null). Otherwise 0 if the field data member is to be flagged as non-Null.  
@@ -1947,20 +1947,20 @@ void SetFieldNull(
   
  When you add a new record to a recordset, all field data members are initially set to a Null value and flagged as "dirty" (changed). When you retrieve a record from a data source, its columns either already have values or are Null. If it is not appropriate to make a field Null, a [CDaoException](../../mfc/reference/cdaoexception-class.md) is thrown.  
   
- If you are using the double-buffering mechanism, for example, if you specifically wish to designate a field of the current record as not having a value, call `SetFieldNull` with *bNull* set to **TRUE** to flag it as Null. If a field was previously marked Null and you now want to give it a value, simply set its new value. You do not have to remove the Null flag with `SetFieldNull`. To determine whether the field is allowed to be Null, call [IsFieldNullable](#isfieldnullable).  
+ If you are using the double-buffering mechanism, for example, if you specifically wish to designate a field of the current record as not having a value, call `SetFieldNull` with *bNull* set to TRUE to flag it as Null. If a field was previously marked Null and you now want to give it a value, simply set its new value. You do not have to remove the Null flag with `SetFieldNull`. To determine whether the field is allowed to be Null, call [IsFieldNullable](#isfieldnullable).  
   
  If you are not using the double-buffering mechanism, then changing the value of the field does not automatically set the field as dirty and non-Null. You must specifically set the fields dirty and non-Null. The flag contained in [m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) controls this automatic field checking.  
   
- The DFX mechanism employs the use of **PSEUDONULL**. For more information, see [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).  
+ The DFX mechanism employs the use of PSEUDONULL. For more information, see [CDaoFieldExchange::m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).  
   
 > [!NOTE]
 >  Call this member function only after you have called [Edit](#edit) or [AddNew](#addnew).  
   
- Using **NULL** for the first argument of the function will apply the function only to **outputColumn** fields, not **param** fields in `CDaoFieldExchange`. For instance, the call  
+ Using NULL for the first argument of the function will apply the function only to `outputColumn` fields, not **param** fields in `CDaoFieldExchange`. For instance, the call  
   
  [!code-cpp[NVC_MFCDatabase#8](../../mfc/codesnippet/cpp/cdaorecordset-class_8.cpp)]  
   
- will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
+ will set only `outputColumn` fields to NULL; **param** fields will be unaffected.  
   
 ##  <a name="setfieldvalue"></a>  CDaoRecordset::SetFieldValue  
  Call this member function to set the value of a field, either by ordinal position or by changing the value of the string.  
@@ -2022,7 +2022,7 @@ void SetFieldValueNull(LPCTSTR lpszName);
  The name of the field in the recordset, for lookup by name.  
   
 ### Remarks  
- C++ **NULL** is not the same as Null, which, in database terminology, means "having no value."  
+ C++ NULL is not the same as Null, which, in database terminology, means "having no value."  
   
  For related information, see the topics "Field Object" and "Value Property" in DAO Help.  
   
@@ -2093,7 +2093,7 @@ void SetParamValueNull(LPCTSTR lpszName);
  The name of the field in the recordset, for lookup by name.  
   
 ### Remarks  
- C++ **NULL** is not the same as Null, which, in database terminology, means "having no value."  
+ C++ NULL is not the same as Null, which, in database terminology, means "having no value."  
   
 ##  <a name="setpercentposition"></a>  CDaoRecordset::SetPercentPosition  
  Call this member function to set a value that changes the approximate location of the current record in the recordset object based on a percentage of the records in the recordset.  
