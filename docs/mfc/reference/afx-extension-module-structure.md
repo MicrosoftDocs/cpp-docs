@@ -30,7 +30,7 @@ struct AFX_EXTENSION_MODULE
   
 #### Parameters  
  *bInitialized*  
- **TRUE** if the DLL module has been initialized with `AfxInitExtensionModule`.  
+ TRUE if the DLL module has been initialized with `AfxInitExtensionModule`.  
   
  *hModule*  
  Specifies the handle of the DLL module.  

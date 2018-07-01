@@ -198,7 +198,7 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
  A pointer to an `IDispatch` object.  
   
 ### Return Value  
- A pointer to the `CCmdTarget` object associated with *lpDispatch*. This function returns **NULL** if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
+ A pointer to the `CCmdTarget` object associated with *lpDispatch*. This function returns NULL if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
   
 ### Remarks  
  The result of this function is the inverse of a call to the member function `GetIDispatch`.  
@@ -288,7 +288,7 @@ virtual HRESULT GetTypeLib(
   
 ### Parameters  
  *lcid*  
- A locale identifier ( `LCID`).  
+ A locale identifier (LCID).  
   
  *ppTypeLib*  
  A pointer to a pointer to the `ITypeLib` interface.  
@@ -370,7 +370,7 @@ virtual BOOL OnCmdMsg(
  Used according to the value of *nCode*. See **Remarks** for more information about *pExtra*.  
   
  *pHandlerInfo*  
- If not **NULL**, `OnCmdMsg` fills in the *pTarget* and *pmf* members of the *pHandlerInfo* structure instead of dispatching the command. Typically, this parameter should be **NULL**.  
+ If not NULL, `OnCmdMsg` fills in the *pTarget* and *pmf* members of the *pHandlerInfo* structure instead of dispatching the command. Typically, this parameter should be NULL.  
   
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  

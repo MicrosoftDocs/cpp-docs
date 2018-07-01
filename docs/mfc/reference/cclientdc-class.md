@@ -33,7 +33,7 @@ class CClientDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CClientDC::m_hWnd](#m_hwnd)|The `HWND` of the window for which this `CClientDC` is valid.|  
+|[CClientDC::m_hWnd](#m_hwnd)|The HWND of the window for which this `CClientDC` is valid.|  
   
 ## Remarks  
  This means that the device context associated with a `CClientDC` object is the client area of a window.  

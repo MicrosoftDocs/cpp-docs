@@ -82,17 +82,17 @@ explicit CBrush(CBitmap* pBitmap);
  *nIndex*  
  Specifies the hatch style of the brush. It can be any one of the following values:  
   
-- `HS_BDIAGONAL` Downward hatch (left to right) at 45 degrees  
+- HS_BDIAGONAL Downward hatch (left to right) at 45 degrees  
   
-- `HS_CROSS` Horizontal and vertical crosshatch  
+- HS_CROSS Horizontal and vertical crosshatch  
   
-- `HS_DIAGCROSS` Crosshatch at 45 degrees  
+- HS_DIAGCROSS Crosshatch at 45 degrees  
   
-- `HS_FDIAGONAL` Upward hatch (left to right) at 45 degrees  
+- HS_FDIAGONAL Upward hatch (left to right) at 45 degrees  
   
-- `HS_HORIZONTAL` Horizontal hatch  
+- HS_HORIZONTAL Horizontal hatch  
   
-- `HS_VERTICAL` Vertical hatch  
+- HS_VERTICAL Vertical hatch  
   
  *pBitmap*  
  Points to a `CBitmap` object that specifies a bitmap with which the brush paints.  
@@ -102,7 +102,7 @@ explicit CBrush(CBitmap* pBitmap);
   
  If you use the constructor with no arguments, you must initialize the resulting `CBrush` object with [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [CreateBrushIndirect](#createbrushindirect), [CreatePatternBrush](#createpatternbrush), or [CreateDIBPatternBrush](#createdibpatternbrush). If you use one of the constructors that takes arguments, then no further initialization is necessary. The constructors with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.  
   
- The constructor with a single [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the `RGB` macro in WINDOWS.H.  
+ The constructor with a single [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.  
   
  The constructor with two parameters constructs a hatch brush. The *nIndex* parameter specifies the index of a hatched pattern. The *crColor* parameter specifies the color.  
   
@@ -152,11 +152,11 @@ BOOL CreateDIBPatternBrush(
  Identifies a global-memory object containing a packed device-independent bitmap (DIB).  
   
  *nUsage*  
- Specifies whether the **bmiColors[]** fields of the [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:  
+ Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:  
   
-- **DIB_PAL_COLORS** The color table consists of an array of 16-bit indexes.  
+- DIB_PAL_COLORS The color table consists of an array of 16-bit indexes.  
   
-- **DIB_RGB_COLORS** The color table contains literal RGB values.  
+- DIB_RGB_COLORS The color table contains literal RGB values.  
   
  *lpPackedDIB*  
  Points to a packed DIB consisting of a `BITMAPINFO` structure immediately followed by an array of bytes defining the pixels of the bitmap.  
@@ -201,17 +201,17 @@ BOOL CreateHatchBrush(
  *nIndex*  
  Specifies the hatch style of the brush. It can be any one of the following values:  
   
-- `HS_BDIAGONAL` Downward hatch (left to right) at 45 degrees  
+- HS_BDIAGONAL Downward hatch (left to right) at 45 degrees  
   
-- `HS_CROSS` Horizontal and vertical crosshatch  
+- HS_CROSS Horizontal and vertical crosshatch  
   
-- `HS_DIAGCROSS` Crosshatch at 45 degrees  
+- HS_DIAGCROSS Crosshatch at 45 degrees  
   
-- `HS_FDIAGONAL` Upward hatch (left to right) at 45 degrees  
+- HS_FDIAGONAL Upward hatch (left to right) at 45 degrees  
   
-- `HS_HORIZONTAL` Horizontal hatch  
+- HS_HORIZONTAL Horizontal hatch  
   
-- `HS_VERTICAL` Vertical hatch  
+- HS_VERTICAL Vertical hatch  
   
  *crColor*  
  Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK for more information.  
@@ -306,10 +306,10 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
   
 ### Parameters  
  *hBrush*  
- `HANDLE` to a Windows GDI brush.  
+ HANDLE to a Windows GDI brush.  
   
 ### Return Value  
- A pointer to a `CBrush` object if successful; otherwise **NULL**.  
+ A pointer to a `CBrush` object if successful; otherwise NULL.  
   
 ### Remarks  
  If a `CBrush` object is not already attached to the handle, a temporary `CBrush` object is created and attached. This temporary `CBrush` object is valid only until the next time the application has idle time in its event loop. At this time, all temporary graphic objects are deleted. In other words, the temporary object is valid only during the processing of one window message.  
@@ -333,7 +333,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ### Return Value  
  If the function succeeds, and *pLogBrush* is a valid pointer, the return value is the number of bytes stored into the buffer.  
   
- If the function succeeds, and *pLogBrush* is **NULL**, the return value is the number of bytes required to hold the information the function would store into the buffer.  
+ If the function succeeds, and *pLogBrush* is NULL, the return value is the number of bytes required to hold the information the function would store into the buffer.  
   
  If the function fails, the return value is 0.  
   
@@ -353,10 +353,10 @@ operator HBRUSH() const;
 ```  
   
 ### Return Value  
- If successful, a handle to the Windows GDI object represented by the `CBrush` object; otherwise **NULL**.  
+ If successful, a handle to the Windows GDI object represented by the `CBrush` object; otherwise NULL.  
   
 ### Remarks  
- This operator is a casting operator, which supports direct use of an `HBRUSH` object.  
+ This operator is a casting operator, which supports direct use of an HBRUSH object.  
   
  For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
