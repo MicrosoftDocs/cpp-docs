@@ -249,7 +249,7 @@ virtual BOOL DockPaneLeftOf(
  A pointer to the target pane.  
   
 ### Return Value  
- `TRUE` if the pane is docked successfully; otherwise, `FALSE`.  
+ TRUE if the pane is docked successfully; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -276,7 +276,7 @@ CPane* FindPaneByID(UINT nID);
  The command ID of the pane to be found.  
   
 ### Return Value  
- A pointer to the pane with the specified command ID, or `NULL` if the pane is not found.  
+ A pointer to the pane with the specified command ID, or NULL if the pane is not found.  
   
 ### Remarks  
   
@@ -527,7 +527,7 @@ virtual CPane* PaneFromPoint(CPoint pt);
  A point, in screen coordinates, for the pane to retrieve.  
   
 ### Return Value  
- A pointer to the pane located at the specified point or `NULL` if no pane was present at the specified point.  
+ A pointer to the pane located at the specified point or NULL if no pane was present at the specified point.  
   
 ### Remarks  
   
@@ -654,16 +654,16 @@ virtual BOOL ShowPane(
  A pointer to the pane to be shown or hidden.  
   
  [in] *bShow*  
- `TRUE` to specify that the pane is to be shown; `FALSE` to specify that the pane is to be hidden.  
+ TRUE to specify that the pane is to be shown; FALSE to specify that the pane is to be hidden.  
   
  [in] *bDelay*  
- `TRUE` to specify that the layout of the pane should be delayed until after the pane is shown; otherwise, `FALSE`.  
+ TRUE to specify that the layout of the pane should be delayed until after the pane is shown; otherwise, FALSE.  
   
  [in] *bActivate*  
  This parameter is not used.  
   
 ### Return Value  
- `TRUE` if the pane was shown or hidden successfully. `FALSE` if the specified pane does not belong to this dock site.  
+ TRUE if the pane was shown or hidden successfully. FALSE if the specified pane does not belong to this dock site.  
   
 ### Remarks  
  Call this method to show or hide docked panes. Normally, you do not have to call `CDockSite::ShowPane` directly, because it is called by the parent frame window or by the base pane.  

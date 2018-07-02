@@ -33,7 +33,7 @@ class CD2DRectF : public D2D1_RECT_F;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRectF::IsNull](#isnull)|Returns a **boolean** value that indicates whether an expression contains no valid data ( **null**).|  
+|[CD2DRectF::IsNull](#isnull)|Returns a **boolean** value that indicates whether an expression contains no valid data (NULL).|  
   
 ### Public Operators  
   

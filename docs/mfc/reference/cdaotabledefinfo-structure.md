@@ -38,22 +38,22 @@ struct CDaoTableDefInfo
  Uniquely names the tabledef object. To retrieve the value of this property directly, call the tabledef object's [GetName](../../mfc/reference/cdaotabledef-class.md#getname) member function. For more information, see the topic "Name Property" in DAO Help.  
   
  *m_bUpdatable*  
- Indicates whether changes can be made to the table. The quick way to determine whether a table is updatable is to open a `CDaoTableDef` object for the table and call the object's [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) member function. `CanUpdate` always returns nonzero (**TRUE**) for a newly created tabledef object and 0 (**FALSE**) for an attached tabledef object. A new tabledef object can be appended only to a database for which the current user has write permission. If the table contains only nonupdatable fields, `CanUpdate` returns 0. When one or more fields are updatable, `CanUpdate` returns nonzero. You can edit only the updatable fields. For more information, see the topic "Updatable Property" in DAO Help.  
+ Indicates whether changes can be made to the table. The quick way to determine whether a table is updatable is to open a `CDaoTableDef` object for the table and call the object's [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) member function. `CanUpdate` always returns nonzero (TRUE) for a newly created tabledef object and 0 (FALSE) for an attached tabledef object. A new tabledef object can be appended only to a database for which the current user has write permission. If the table contains only nonupdatable fields, `CanUpdate` returns 0. When one or more fields are updatable, `CanUpdate` returns nonzero. You can edit only the updatable fields. For more information, see the topic "Updatable Property" in DAO Help.  
   
  *m_lAttributes*  
  Specifies characteristics of the table represented by the tabledef object. To retrieve the current attributes of a tabledef, call its [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) member function. The value returned can be a combination of these long constants (using the bitwise-OR (**&#124;**) operator):  
   
-- **dbAttachExclusive** For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.  
+- `dbAttachExclusive` For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.  
   
-- **dbAttachSavePWD** For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.  
+- `dbAttachSavePWD` For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.  
   
-- **dbSystemObject** Indicates the table is a system table provided by the Microsoft Jet database engine. (Read-only.)  
+- `dbSystemObject` Indicates the table is a system table provided by the Microsoft Jet database engine. (Read-only.)  
   
-- **dbHiddenObject** Indicates the table is a hidden table provided by the Microsoft Jet database engine (for temporary use). (Read-only.)  
+- `dbHiddenObject` Indicates the table is a hidden table provided by the Microsoft Jet database engine (for temporary use). (Read-only.)  
   
-- **dbAttachedTable** Indicates the table is an attached table from a non-ODBC database, such as a Paradox database.  
+- `dbAttachedTable` Indicates the table is an attached table from a non-ODBC database, such as a Paradox database.  
   
-- **dbAttachedODBC** Indicates the table is an attached table from an ODBC database, such as Microsoft SQL Server.  
+- `dbAttachedODBC` Indicates the table is an attached table from an ODBC database, such as Microsoft SQL Server.  
   
  *m_dateCreated*  
  The date and time the table was created. To directly retrieve the date the table was created, call the [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) member function of the `CDaoTableDef` object associated with the table. See Comments below for more information. For related information, see the topic "DateCreated, LastUpdated Properties" in DAO Help.  

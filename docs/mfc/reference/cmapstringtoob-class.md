@@ -56,7 +56,7 @@ class CMapStringToOb : public CObject
 ## Remarks  
  Once you have inserted a `CString`- `CObject*` pair (element) into the map, you can efficiently retrieve or delete the pair using a string or a `CString` value as a key. You can also iterate over all the elements in the map.  
   
- A variable of type **POSITION** is used for alternate entry access in all map variations. You can use a **POSITION** to "remember" an entry and to iterate through the map. You might think that this iteration is sequential by key value; it is not. The sequence of retrieved elements is indeterminate.  
+ A variable of type POSITION is used for alternate entry access in all map variations. You can use a POSITION to "remember" an entry and to iterate through the map. You might think that this iteration is sequential by key value; it is not. The sequence of retrieved elements is indeterminate.  
   
  `CMapStringToOb` incorporates the `IMPLEMENT_SERIAL` macro to support serialization and dumping of its elements. Each element is serialized in turn if a map is stored to an archive, either with the overloaded insertion ( **<<**) operator or with the `Serialize` member function.  
   
@@ -88,7 +88,7 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
 ### Remarks  
  As the map grows, memory is allocated in units of *nBlockSize* entries.  
   
- The following table shows other member functions that are similar to **CMapStringToOb:: CMapStringToOb**.  
+ The following table shows other member functions that are similar to `CMapStringToOb:: CMapStringToOb`.  
   
 |Class|Member Function|  
 |-----------|---------------------|  
@@ -165,26 +165,26 @@ void GetNextAssoc(
   
 ### Parameters  
  *rNextPosition*  
- Specifies a reference to a **POSITION** value returned by a previous **GetNextAssoc** or **GetStartPosition** call.  
+ Specifies a reference to a POSITION value returned by a previous `GetNextAssoc` or `GetStartPosition` call.  
   
  *rKey*  
  Specifies the returned key of the retrieved element (a string).  
   
  *rValue*  
- Specifies the returned value of the retrieved element (a **CObject** pointer). See Remarks for more about this parameter.  
+ Specifies the returned value of the retrieved element (a `CObject` pointer). See Remarks for more about this parameter.  
   
 ### Remarks  
  This function is most useful for iterating through all the elements in the map. Note that the position sequence is not necessarily the same as the key value sequence.  
   
- If the retrieved element is the last in the map, then the new value of *rNextPosition* is set to **NULL**.  
+ If the retrieved element is the last in the map, then the new value of *rNextPosition* is set to NULL.  
   
  For the *rValue* parameter, be sure to cast your object type to **CObject\*&**, which is what the compiler requires, as shown in the following example:  
   
  [!code-cpp[NVC_MFCCollections#65](../../mfc/codesnippet/cpp/cmapstringtoob-class_3.cpp)]  
   
- This is not true of **GetNextAssoc** for maps based on templates.  
+ This is not true of `GetNextAssoc` for maps based on templates.  
   
- The following table shows other member functions that are similar to **CMapStringToOb::GetNextAssoc**.  
+ The following table shows other member functions that are similar to `CMapStringToOb::GetNextAssoc`.  
   
 |Class|Member Function|  
 |-----------|---------------------|  
@@ -238,14 +238,14 @@ INT_PTR GetSize() const;
  [!code-cpp[NVC_MFCCollections#67](../../mfc/codesnippet/cpp/cmapstringtoob-class_5.cpp)]  
   
 ##  <a name="getstartposition"></a>  CMapStringToOb::GetStartPosition  
- Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
+ Starts a map iteration by returning a POSITION value that can be passed to a `GetNextAssoc` call.  
   
 ```  
 POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
- A **POSITION** value that indicates a starting position for iterating the map; or **NULL** if the map is empty.  
+ A POSITION value that indicates a starting position for iterating the map; or NULL if the map is empty.  
   
 ### Remarks  
  The iteration sequence is not predictable; therefore, the "first element in the map" has no special significance.  
@@ -304,7 +304,7 @@ void InitHashTable(
  Number of entries in the hash table.  
   
  *bAllocNow*  
- If **TRUE**, allocates the hash table upon initialization; otherwise the table is allocated when needed.  
+ If TRUE, allocates the hash table upon initialization; otherwise the table is allocated when needed.  
   
 ### Remarks  
  For best performance, the hash table size should be a prime number. To minimize collisions, the size should be roughly 20 percent larger than the largest anticipated data set.  
@@ -405,7 +405,7 @@ BOOL LookupKey(
 ### Remarks  
  Using a reference to a key is unsafe if used after the associated element was removed from the map or after the map was destroyed.  
   
- The following table shows other member functions that are similar to **CMapStringToOb:: LookupKey**.  
+ The following table shows other member functions that are similar to `CMapStringToOb:: LookupKey`.  
   
 |Class|Member Function|  
 |-----------|---------------------|  
@@ -420,14 +420,14 @@ CObject*& operator[ ](lpctstr key);
 ```  
   
 ### Return Value  
- A reference to a pointer to a `CObject` object; or **NULL** if the map is empty or *key* is out of range.  
+ A reference to a pointer to a `CObject` object; or NULL if the map is empty or *key* is out of range.  
   
 ### Remarks  
  Thus it can be used only on the left side of an assignment statement (an l-value). If there is no map element with the specified key, then a new element is created.  
   
  There is no "right side" (r-value) equivalent to this operator because there is a possibility that a key may not be found in the map. Use the `Lookup` member function for element retrieval.  
   
- The following table shows other member functions that are similar to **CMapStringToOb::operator []**.  
+ The following table shows other member functions that are similar to `CMapStringToOb::operator []`.  
   
 |Class|Member Function|  
 |-----------|---------------------|  

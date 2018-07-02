@@ -59,9 +59,9 @@ class CFontDialog : public CCommonDialog
   
  Once a `CFontDialog` object has been constructed, you can use the `m_cf` structure to initialize the values or states of controls in the dialog box. The [m_cf](#m_cf) structure is of type [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832). For more information on this structure, see the Windows SDK.  
   
- After initializing the dialog object's controls, call the `DoModal` member function to display the dialog box and allow the user to select a font. `DoModal` returns whether the user selected the OK ( **IDOK**) or Cancel ( **IDCANCEL**) button.  
+ After initializing the dialog object's controls, call the `DoModal` member function to display the dialog box and allow the user to select a font. `DoModal` returns whether the user selected the OK (IDOK) or Cancel (IDCANCEL) button.  
   
- If `DoModal` returns **IDOK**, you can use one of `CFontDialog`'s member functions to retrieve the information input by the user.  
+ If `DoModal` returns IDOK, you can use one of `CFontDialog`'s member functions to retrieve the information input by the user.  
   
  You can use the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the Windows SDK.  
   
@@ -139,14 +139,14 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- **IDOK** or **IDCANCEL**. If **IDCANCEL** is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
- **IDOK** and **IDCANCEL** are constants that indicate whether the user selected the OK or Cancel button.  
+ IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
 ### Remarks  
  If you want to initialize the various font dialog controls by setting members of the [m_cf](#m_cf) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- If `DoModal` returns **IDOK**, you can call other member functions to retrieve the settings or information input by the user into the dialog box.  
+ If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information input by the user into the dialog box.  
   
 ### Example  
   See the examples for [CFontDialog::CFontDialog](#cfontdialog) and [CFontDialog::GetColor](#getcolor).  
@@ -189,7 +189,7 @@ void GetCurrentFont(LPLOGFONT lplf);
 ### Remarks  
  Other `CFontDialog` member functions are provided to access individual characteristics of the current font.  
   
- If this function is called during a call to [DoModal](#domodal), it returns the current selection at the time (what the user sees or has changed in the dialog). If this function is called after a call to `DoModal` (only if `DoModal` returns **IDOK**), it returns what the user actually selected.  
+ If this function is called during a call to [DoModal](#domodal), it returns the current selection at the time (what the user sees or has changed in the dialog). If this function is called after a call to `DoModal` (only if `DoModal` returns IDOK), it returns what the user actually selected.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#80](../../mfc/codesnippet/cpp/cfontdialog-class_3.cpp)]  

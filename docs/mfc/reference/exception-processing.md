@@ -36,8 +36,8 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |[CATCH_ALL](#catch_all)|Designates a block of code for catching all exceptions from the preceding **TRY** block.|  
 |[AND_CATCH](#and_catch)|Designates a block of code for catching additional exception types from the preceding **TRY** block.|  
 |[AND_CATCH_ALL](#and_catch_all)|Designates a block of code for catching all other additional exception types thrown in a preceding **TRY** block.|  
-|[END_CATCH](#end_catch)|Ends the last **CATCH** or `AND_CATCH` code block.|  
-|[END_CATCH_ALL](#end_catch_all)|Ends the last `CATCH_ALL` code block.|  
+|[END_CATCH](#end_catch)|Ends the last **CATCH** or **AND_CATCH** code block.|  
+|[END_CATCH_ALL](#end_catch_all)|Ends the last **CATCH_ALL** code block.|  
 |[THROW](#throw)|Throws a specified exception.|  
 |[THROW_LAST](#throw_last)|Throws the currently handled exception to the next outer handler.|  
   
@@ -87,7 +87,7 @@ TRY
 ```  
   
 ### Remarks  
- A **TRY** block identifies a block of code that might throw exceptions. Those exceptions are handled in the following **CATCH** and `AND_CATCH` blocks. Recursion is allowed: exceptions may be passed to an outer **TRY** block, either by ignoring them or by using the `THROW_LAST` macro. End the **TRY** block with an `END_CATCH` or `END_CATCH_ALL` macro.  
+ A **TRY** block identifies a block of code that might throw exceptions. Those exceptions are handled in the following **CATCH** and **AND_CATCH** blocks. Recursion is allowed: exceptions may be passed to an outer **TRY** block, either by ignoring them or by using the THROW_LAST macro. End the **TRY** block with an END_CATCH or END_CATCH_ALL macro.  
   
  For more information, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
@@ -113,16 +113,16 @@ CATCH(exception_class, exception_object_pointer_name)
  Specifies a name for an exception-object pointer that will be created by the macro. You can use the pointer name to access the exception object within the **CATCH** block. This variable is declared for you.  
   
 ### Remarks  
- The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Invoke the `THROW_LAST` macro to shift processing to the next outer exception frame. End the **TRY** block with an `END_CATCH` macro.  
+ The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Invoke the THROW_LAST macro to shift processing to the next outer exception frame. End the **TRY** block with an END_CATCH macro.  
   
- If *exception_class* is the class `CException`, then all exception types will be caught. You can use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) member function to determine which specific exception was thrown. A better way to catch several kinds of exceptions is to use sequential `AND_CATCH` statements, each with a different exception type.  
+ If *exception_class* is the class `CException`, then all exception types will be caught. You can use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) member function to determine which specific exception was thrown. A better way to catch several kinds of exceptions is to use sequential **AND_CATCH** statements, each with a different exception type.  
   
  The exception object pointer is created by the macro. You do not need to declare it yourself.  
   
 > [!NOTE]
 >  The **CATCH** block is defined as a C++ scope delineated by braces. If you declare variables in this scope, they are accessible only within that scope. This also applies to *exception_object_pointer_name*.  
   
- For more information on exceptions and the **CATCH** macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
+ For more information on exceptions and the CATCH macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
  [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]  
@@ -139,10 +139,10 @@ CATCH_ALL(exception_object_pointer_name)
  Specifies a name for an exception-object pointer that will be created by the macro. You can use the pointer name to access the exception object within the `CATCH_ALL` block. This variable is declared for you.  
   
 ### Remarks  
- The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Invoke the `THROW_LAST` macro to shift processing to the next outer exception frame. If you use `CATCH_ALL`, end the **TRY** block with an `END_CATCH_ALL` macro.  
+ The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Invoke the `THROW_LAST` macro to shift processing to the next outer exception frame. If you use **CATCH_ALL**, end the **TRY** block with an END_CATCH_ALL macro.  
   
 > [!NOTE]
->  The `CATCH_ALL` block is defined as a C++ scope delineated by braces. If you declare variables in this scope, they are accessible only within that scope.  
+>  The **CATCH_ALL** block is defined as a C++ scope delineated by braces. If you declare variables in this scope, they are accessible only within that scope.  
   
  For more information on exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
@@ -164,15 +164,15 @@ AND_CATCH(exception_class, exception_object_pointer_name)
  Specifies the exception type to test for. For a list of standard exception classes, see class [CException](../../mfc/reference/cexception-class.md).  
   
  *exception_object_pointer_name*  
- A name for an exception-object pointer that will be created by the macro. You can use the pointer name to access the exception object within the `AND_CATCH` block. This variable is declared for you.  
+ A name for an exception-object pointer that will be created by the macro. You can use the pointer name to access the exception object within the **AND_CATCH** block. This variable is declared for you.  
   
 ### Remarks  
- Use the **CATCH** macro to catch one exception type, then the `AND_CATCH` macro to catch each subsequent type. End the **TRY** block with an `END_CATCH` macro.  
+ Use the CATCH macro to catch one exception type, then the AND_CATCH macro to catch each subsequent type. End the **TRY** block with an END_CATCH macro.  
   
- The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Call the `THROW_LAST` macro within the `AND_CATCH` block to shift processing to the next outer exception frame. `AND_CATCH` marks the end of the preceding **CATCH** or `AND_CATCH` block.  
+ The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Call the THROW_LAST macro within the **AND_CATCH** block to shift processing to the next outer exception frame. **AND_CATCH** marks the end of the preceding **CATCH** or **AND_CATCH** block.  
   
 > [!NOTE]
->  The `AND_CATCH` block is defined as a C++ scope (delineated by curly braces). If you declare variables in this scope, remember that they are accessible only within that scope. This also applies to the *exception_object_pointer_name* variable.  
+>  The **AND_CATCH** block is defined as a C++ scope (delineated by curly braces). If you declare variables in this scope, remember that they are accessible only within that scope. This also applies to the *exception_object_pointer_name* variable.  
   
 ### Example  
  See the example for [CATCH](#catch).  
@@ -188,34 +188,34 @@ AND_CATCH_ALL(exception_object_pointer_name)
   
 ### Parameters  
  *exception_object_pointer_name*  
- A name for an exception-object pointer that will be created by the macro. You can use the pointer name to access the exception object within the `AND_CATCH_ALL` block. This variable is declared for you.  
+ A name for an exception-object pointer that will be created by the macro. You can use the pointer name to access the exception object within the **AND_CATCH_ALL** block. This variable is declared for you.  
   
 ### Remarks  
- Use the **CATCH** macro to catch one exception type, then the `AND_CATCH_ALL` macro to catch all other subsequent types. If you use `AND_CATCH_ALL`, end the **TRY** block with an `END_CATCH_ALL` macro.  
+ Use the **CATCH** macro to catch one exception type, then the AND_CATCH_ALL macro to catch all other subsequent types. If you use AND_CATCH_ALL, end the **TRY** block with an END_CATCH_ALL macro.  
   
- The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Call the `THROW_LAST` macro within the `AND_CATCH_ALL` block to shift processing to the next outer exception frame. `AND_CATCH_ALL` marks the end of the preceding **CATCH** or `AND_CATCH_ALL` block.  
+ The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Call the THROW_LAST macro within the **AND_CATCH_ALL** block to shift processing to the next outer exception frame. **AND_CATCH_ALL** marks the end of the preceding **CATCH** or **AND_CATCH_ALL** block.  
   
 > [!NOTE]
->  The `AND_CATCH_ALL` block is defined as a C++ scope (delineated by braces). If you declare variables in this scope, remember that they are accessible only within that scope.  
+>  The **AND_CATCH_ALL** block is defined as a C++ scope (delineated by braces). If you declare variables in this scope, remember that they are accessible only within that scope.  
   
 ### Requirements  
   **Header** afx.h  
   
 ##  <a name="end_catch"></a>  END_CATCH  
- Marks the end of the last **CATCH** or `AND_CATCH` block.  
+ Marks the end of the last **CATCH** or **AND_CATCH** block.  
   
 ```   
 END_CATCH  
 ```  
   
 ### Remarks  
- For more information on the `END_CATCH` macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
+ For more information on the END_CATCH macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Requirements  
   **Header** afx.h  
   
 ##  <a name="end_catch_all"></a>  END_CATCH_ALL  
- Marks the end of the last `CATCH_ALL` or `AND_CATCH_ALL` block.  
+ Marks the end of the last **CATCH_ALL88 or **AND_CATCH_ALL** block.  
   
 ```   
 END_CATCH_ALL  
@@ -251,7 +251,7 @@ THROW_LAST()
 ```  
   
 ### Remarks  
- This macro allows you to throw a locally created exception. If you try to throw an exception that you have just caught, it will normally go out of scope and be deleted. With `THROW_LAST`, the exception is passed correctly to the next **CATCH** handler.  
+ This macro allows you to throw a locally created exception. If you try to throw an exception that you have just caught, it will normally go out of scope and be deleted. With **THROW_LAST**, the exception is passed correctly to the next **CATCH** handler.  
   
  For more information, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
@@ -269,10 +269,10 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 ```  
   
 ### Parameters  
- `cause`  
+ *cause*  
  Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CArchiveException::m_cause](../../mfc/reference/carchiveexception-class.md#m_cause).  
   
- `lpszArchiveName`  
+ *lpszArchiveName*  
  Points to a string containing the name of the `CArchive` object that caused the exception (if available).  
   
 ### Requirements  
@@ -289,13 +289,13 @@ void AfxThrowFileException(
 ```  
   
 ### Parameters  
- `cause`  
+ *cause*  
  Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CFileException::m_cause](../../mfc/reference/cfileexception-class.md#m_cause).  
   
- `lOsError`  
+ *lOsError*  
  Contains the operating-system error number (if available) that states the reason for the exception. See your operating-system manual for a listing of error codes.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Points to a string containing the name of the file that caused the exception (if available).  
   
 ### Remarks  
@@ -332,7 +332,7 @@ void AfxThrowMemoryException();
 ```  
   
 ### Remarks  
- Call this function if calls to underlying system memory allocators (such as `malloc` and the [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows function) fail. You do not need to call it for **new** because **new** will throw a memory exception automatically if the memory allocation fails.  
+ Call this function if calls to underlying system memory allocators (such as **malloc** and the [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows function) fail. You do not need to call it for **new** because **new** will throw a memory exception automatically if the memory allocation fails.  
   
 ### Requirements  
   **Header** afx.h  
@@ -389,16 +389,16 @@ void AFXAPI AfxThrowOleDispatchException(
 ```  
   
 ### Parameters  
- `wCode`  
+ *wCode*  
  An error code specific to your application.  
   
- `lpszDescription`  
+ *lpszDescription*  
  Verbal description of the error.  
   
- `nDescriptionID`  
+ *nDescriptionID*  
  Resource ID for the verbal error description.  
   
- `nHelpID`  
+ *nHelpID*  
  A help context for your application's help (.HLP) file.  
   
 ### Remarks  
@@ -419,14 +419,14 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
 ```  
   
 ### Parameters  
- `sc`  
+ *sc*  
  An OLE status code that indicates the reason for the exception.  
   
- `hr`  
+ *hr*  
  Handle to a result code that indicates the reason for the exception.  
   
 ### Remarks  
- The version that takes an `HRESULT` as an argument converts that result code into the corresponding `SCODE`. For more information on `HRESULT` and `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ The version that takes an HRESULT as an argument converts that result code into the corresponding SCODE. For more information on HRESULT and SCODE, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Requirements  
   **Header** afxdao.h  
@@ -441,14 +441,14 @@ void AFXAPI AfxThrowDaoException(
 ```  
   
 ### Parameters  
- `nAfxDaoError`  
+ *nAfxDaoError*  
  An integer value representing a DAO extended error code, which can be one of the values listed under [CDaoException::m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#m_nafxdaoerror).  
   
  *scode*  
- An OLE error code from DAO, of type `SCODE`. For information, see [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#m_scode).  
+ An OLE error code from DAO, of type SCODE. For information, see [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#m_scode).  
   
 ### Remarks  
- The framework also calls `AfxThrowDaoException`. In your call, you can pass one of the parameters or both. For example, if you want to raise one of the errors defined in **CDaoException::nAfxDaoError** but you do not care about the *scode* parameter, pass a valid code in the `nAfxDaoError` parameter and accept the default value for *scode*.  
+ The framework also calls `AfxThrowDaoException`. In your call, you can pass one of the parameters or both. For example, if you want to raise one of the errors defined in **CDaoException::nAfxDaoError** but you do not care about the *scode* parameter, pass a valid code in the *nAfxDaoError* parameter and accept the default value for *scode*.  
   
  For information about exceptions related to the MFC DAO classes, see class `CDaoException` in this book and the article [Exceptions: Database Exceptions](../../mfc/exceptions-database-exceptions.md).  
   
@@ -466,19 +466,19 @@ void AfxThrowDBException(
 ```  
   
 ### Parameters  
- `nRetCode`  
- A value of type **RETCODE**, defining the type of error that caused the exception to be thrown.  
+ *nRetCode*  
+ A value of type RETCODE, defining the type of error that caused the exception to be thrown.  
   
- `pdb`  
+ *pdb*  
  A pointer to the `CDatabase` object that represents the data source connection with which the exception is associated.  
   
- `hstmt`  
- An ODBC **HSTMT** handle that specifies the statement handle with which the exception is associated.  
+ *hstmt*  
+ An ODBC HSTMT handle that specifies the statement handle with which the exception is associated.  
   
 ### Remarks  
- The framework calls `AfxThrowDBException` when it receives an ODBC **RETCODE** from a call to an ODBC API function and interprets the **RETCODE** as an exceptional condition rather than an expectable error. For example, a data access operation might fail because of a disk read error.  
+ The framework calls `AfxThrowDBException` when it receives an ODBC RETCODE from a call to an ODBC API function and interprets the RETCODE as an exceptional condition rather than an expectable error. For example, a data access operation might fail because of a disk read error.  
   
- For information about the **RETCODE** values defined by ODBC, see Chapter 8, "Retrieving Status and Error Information," in the Windows SDK. For information about MFC extensions to these codes, see class [CDBException](../../mfc/reference/cdbexception-class.md).  
+ For information about the RETCODE values defined by ODBC, see Chapter 8, "Retrieving Status and Error Information," in the Windows SDK. For information about MFC extensions to these codes, see class [CDBException](../../mfc/reference/cdbexception-class.md).  
   
 ### Requirements  
   **Header** afx.h  

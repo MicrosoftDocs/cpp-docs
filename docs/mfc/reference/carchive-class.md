@@ -126,11 +126,11 @@ CArchive(
  *nMode*  
  A flag that specifies whether objects will be loaded from or stored to the archive. The *nMode* parameter must have one of the following values:  
   
-- **CArchive::load** Loads data from the archive. Requires only `CFile` read permission.  
+- `CArchive::load` Loads data from the archive. Requires only `CFile` read permission.  
   
-- **CArchive::store** Saves data to the archive. Requires `CFile` write permission.  
+- `CArchive::store` Saves data to the archive. Requires `CFile` write permission.  
   
-- **CArchive::bNoFlushOnDelete** Prevents the archive from automatically calling `Flush` when the archive destructor is called. If you set this flag, you are responsible for explicitly calling `Close` before the destructor is called. If you do not, your data will be corrupted.  
+- `CArchive::bNoFlushOnDelete` Prevents the archive from automatically calling `Flush` when the archive destructor is called. If you set this flag, you are responsible for explicitly calling `Close` before the destructor is called. If you do not, your data will be corrupted.  
   
  *nBufSize*  
  An integer that specifies the size of the internal file buffer, in bytes. Note that the default buffer size is 4,096 bytes. If you routinely archive large objects, you will improve performance if you use a larger buffer size that is a multiple of the file buffer size.  
@@ -201,9 +201,9 @@ UINT GetObjectSchema();
  During deserialization, the version of the object being read.  
   
 ### Remarks  
- Calling this function is only valid when the `CArchive` object is being loaded ( [CArchive::IsLoading](#isloading) returns nonzero). It should be the first call in the `Serialize` function and called only once. A return value of ( **UINT**)-1 indicates that the version number is unknown.  
+ Calling this function is only valid when the `CArchive` object is being loaded ( [CArchive::IsLoading](#isloading) returns nonzero). It should be the first call in the `Serialize` function and called only once. A return value of ( UINT)-1 indicates that the version number is unknown.  
   
- A `CObject`-derived class may use **VERSIONABLE_SCHEMA** combined (using bitwise **OR**) with the schema version itself (in the IMPLEMENT_SERIAL macro) to create a "versionable object," that is, an object whose `Serialize` member function can read multiple versions. The default framework functionality (without **VERSIONABLE_SCHEMA**) is to throw an exception when the version is mismatched.  
+ A `CObject`-derived class may use VERSIONABLE_SCHEMA combined (using bitwise **OR**) with the schema version itself (in the IMPLEMENT_SERIAL macro) to create a "versionable object," that is, an object whose `Serialize` member function can read multiple versions. The default framework functionality (without VERSIONABLE_SCHEMA) is to throw an exception when the version is mismatched.  
   
 ### Example  
  [!code-cpp[NVC_MFCSerialization#15](../../mfc/codesnippet/cpp/carchive-class_4.cpp)]  
@@ -273,7 +273,7 @@ void MapObject(const CObject* pOb);
 ### Remarks  
  For example, you might not serialize a document, but you would serialize the items that are part of the document. By calling `MapObject`, you allow those items, or subobjects, to reference the document. Also, serialized subitems can serialize their *m_pDocument* back pointer.  
   
- You can call `MapObject` when you store to and load from the `CArchive` object. `MapObject` adds the specified object to the internal data structures maintained by the `CArchive` object during serialization and deserialization, but unlike [ReadObject](#readobject) and [WriteObject](#writeobject)**,** it does not call serialize on the object.  
+ You can call `MapObject` when you store to and load from the `CArchive` object. `MapObject` adds the specified object to the internal data structures maintained by the `CArchive` object during serialization and deserialization, but unlike [ReadObject](#readobject) and [WriteObject](#writeobject), it does not call serialize on the object.  
   
 ### Example  
  [!code-cpp[NVC_MFCSerialization#18](../../mfc/codesnippet/cpp/carchive-class_7.h)]  
@@ -285,7 +285,7 @@ void MapObject(const CObject* pOb);
  [!code-cpp[NVC_MFCSerialization#21](../../mfc/codesnippet/cpp/carchive-class_10.cpp)]  
   
 ##  <a name="m_pdocument"></a>  CArchive::m_pDocument  
- Set to **NULL** by default, this pointer to a `CDocument` can be set to anything the user of the `CArchive` instance wants.  
+ Set to NULL by default, this pointer to a `CDocument` can be set to anything the user of the `CArchive` instance wants.  
   
 ```  
 CDocument* m_pDocument;  
@@ -488,23 +488,23 @@ CRuntimeClass* ReadClass(
   
 ### Parameters  
  *pClassRefRequested*  
- A pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) structure that corresponds to the class reference requested. Can be **NULL**.  
+ A pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) structure that corresponds to the class reference requested. Can be NULL.  
   
  *pSchema*  
  A pointer to a schema of the run-time class previously stored.  
   
  *pObTag*  
- A number that refers to an object's unique tag. Used internally by the implementation of [ReadObject](#readobject). Exposed for advanced programming only; *pObTag* normally should be **NULL**.  
+ A number that refers to an object's unique tag. Used internally by the implementation of [ReadObject](#readobject). Exposed for advanced programming only; *pObTag* normally should be NULL.  
   
 ### Return Value  
  A pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) structure.  
   
 ### Remarks  
- If *pClassRefRequested* is not **NULL**, `ReadClass` verifies that the archived class information is compatible with your runtime class. If it is not compatible, `ReadClass` will throw a [CArchiveException](../../mfc/reference/carchiveexception-class.md).  
+ If *pClassRefRequested* is not NULL, `ReadClass` verifies that the archived class information is compatible with your runtime class. If it is not compatible, `ReadClass` will throw a [CArchiveException](../../mfc/reference/carchiveexception-class.md).  
   
  Your runtime class must use [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) and [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial); otherwise, `ReadClass` will throw a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
- If *pSchema* is **NULL**, the schema of the stored class can be retrieved by calling [CArchive::GetObjectSchema](#getobjectschema); otherwise, **\****pSchema* will contain the schema of the run-time class that was previously stored.  
+ If *pSchema* is NULL, the schema of the stored class can be retrieved by calling [CArchive::GetObjectSchema](#getobjectschema); otherwise, **\****pSchema* will contain the schema of the run-time class that was previously stored.  
   
  You can use [SerializeClass](#serializeclass) instead of `ReadClass`, which handles both reading and writing of the class reference.  
   
@@ -552,9 +552,9 @@ LPTSTR ReadString(LPTSTR lpsz, UINT nMax);
  Specifies the maximum number of characters to read. Should be one less than the size of the *lpsz* buffer.  
   
 ### Return Value  
- In the version that returns **BOOL**, **TRUE** if successful; **FALSE** otherwise.  
+ In the version that returns BOOL, TRUE if successful; FALSE otherwise.  
   
- In the version that returns an `LPTSTR`, a pointer to the buffer containing the text data; **NULL** if end-of-file was reached.  
+ In the version that returns an `LPTSTR`, a pointer to the buffer containing the text data; NULL if end-of-file was reached.  
   
 ### Remarks  
  In the version of the member function with the *nMax* parameter, the buffer will hold up to a limit of *nMax* - 1 characters. Reading is stopped by a carriage return-linefeed pair. Trailing newline characters are always removed. A null character ('\0') is appended in either case.  
@@ -706,7 +706,7 @@ void WriteObject(const CObject* pOb);
 ### Remarks  
  This function is normally called by the `CArchive` insertion ( **<<**) operator overloaded for `CObject`. `WriteObject`, in turn, calls the `Serialize` function of the archived class.  
   
- You must use the `IMPLEMENT_SERIAL` macro to enable archiving. `WriteObject` writes the ASCII class name to the archive. This class name is validated later during the load process. A special encoding scheme prevents unnecessary duplication of the class name for multiple objects of the class. This scheme also prevents redundant storage of objects that are targets of more than one pointer.  
+ You must use the IMPLEMENT_SERIAL macro to enable archiving. `WriteObject` writes the ASCII class name to the archive. This class name is validated later during the load process. A special encoding scheme prevents unnecessary duplication of the class name for multiple objects of the class. This scheme also prevents redundant storage of objects that are targets of more than one pointer.  
   
  The exact object encoding method (including the presence of the ASCII class name) is an implementation detail and could change in future versions of the library.  
   

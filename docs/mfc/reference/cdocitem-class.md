@@ -53,7 +53,7 @@ CDocument* GetDocument() const;
 ```  
   
 ### Return Value  
- A pointer to the document that contains the item; **NULL**, if the item is not part of a document.  
+ A pointer to the document that contains the item; NULL, if the item is not part of a document.  
   
 ### Remarks  
  This function is overridden in the derived classes [COleClientItem](../../mfc/reference/coleclientitem-class.md) and [COleServerItem](../../mfc/reference/coleserveritem-class.md), returning a pointer to either a [COleDocument](../../mfc/reference/coledocument-class.md), a [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), or a [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) object.  
@@ -69,7 +69,7 @@ virtual BOOL IsBlank() const;
  Nonzero if the item contains no information; otherwise 0.  
   
 ### Remarks  
- By default, `CDocItem` objects are not blank. [COleClientItem](../../mfc/reference/coleclientitem-class.md) objects are sometimes blank because they derive directly from `CDocItem`. However, [COleServerItem](../../mfc/reference/coleserveritem-class.md) objects are always blank. By default, OLE applications containing `COleClientItem` objects that have no x or y extent are serialized. This is done by returning **TRUE** from an override of `IsBlank` when the item has no x or y extent.  
+ By default, `CDocItem` objects are not blank. [COleClientItem](../../mfc/reference/coleclientitem-class.md) objects are sometimes blank because they derive directly from `CDocItem`. However, [COleServerItem](../../mfc/reference/coleserveritem-class.md) objects are always blank. By default, OLE applications containing `COleClientItem` objects that have no x or y extent are serialized. This is done by returning TRUE from an override of `IsBlank` when the item has no x or y extent.  
   
  Override this function if you want to implement other actions during serialization.  
   

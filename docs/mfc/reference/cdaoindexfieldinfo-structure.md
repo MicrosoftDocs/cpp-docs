@@ -30,7 +30,7 @@ struct CDaoIndexFieldInfo
  Uniquely names the index field object. For details, see the topic "Name Property" in DAO Help.  
   
  *m_bDescending*  
- Indicates the index ordering defined by the index object. **TRUE** if the order is descending.  
+ Indicates the index ordering defined by the index object. TRUE if the order is descending.  
   
 ## Remarks  
  An index object can have a number of fields, indicating which fields a tabledef (or a recordset based on a table) is indexed on. The references to Primary above indicate how the information is returned in the `m_pFieldInfos` member of a [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) object obtained by calling the `GetIndexInfo` member function of class [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) or [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).  

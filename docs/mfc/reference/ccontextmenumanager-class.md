@@ -135,10 +135,10 @@ HMENU GetMenuByName(
  A string that contains the name of the menu to retrieve.  
   
  [out] *puiOrigResID*  
- A pointer to an `UINT`. This parameter contains the resource ID of the specified menu, if found.  
+ A pointer to an UINT. This parameter contains the resource ID of the specified menu, if found.  
   
 ### Return Value  
- A handle to the menu that matches the name that was specified by *lpszName*. `NULL` if there is no menu called *lpszName*.  
+ A handle to the menu that matches the name that was specified by *lpszName*. NULL if there is no menu called *lpszName*.  
   
 ### Remarks  
  If this method finds a menu that matches *lpszName*, `GetMenuByName` stores the menu resource ID in the parameter *puiOrigResID*.  
@@ -181,7 +181,7 @@ virtual BOOL ResetState();
 ```  
   
 ### Return Value  
- `TRUE` if the method is successful; `FALSE` if a failure occurs.  
+ TRUE if the method is successful; FALSE if a failure occurs.  
   
 ### Remarks  
  This method clears the pop-up menus and removes them from the `CContextMenuManager`.  
@@ -214,7 +214,7 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
   
 ### Parameters  
  [in] *bSet*  
- A Boolean parameter that controls whether to close the active pop-up menu. A value of `TRUE` indicates the active pop-up menu is not closed. `FALSE` indicates that the active pop-up menu is closed.  
+ A Boolean parameter that controls whether to close the active pop-up menu. A value of TRUE indicates the active pop-up menu is not closed. FALSE indicates that the active pop-up menu is closed.  
   
 ### Remarks  
  By default, the `CContextMenuManager` closes the active pop-up menu.  
@@ -256,7 +256,7 @@ virtual CMFCPopupMenu* ShowPopupMenu(
  A pointer to the parent window of the shortcut menu.  
   
  [in] *bOwnMessage*  
- A Boolean parameter that indicates how messages are routed. If *bOwnMessage* is `FALSE`, standard MFC routing is used. Otherwise, *pWndOwner* receives the messages.  
+ A Boolean parameter that indicates how messages are routed. If *bOwnMessage* is FALSE, standard MFC routing is used. Otherwise, *pWndOwner* receives the messages.  
   
  [in] *hmenuPopup*  
  The handle of the menu that this method will display.  
@@ -265,15 +265,15 @@ virtual CMFCPopupMenu* ShowPopupMenu(
  A Boolean parameter that indicates whether the menu will be automatically destroyed.  
   
  [in] *bRightAlign*  
- A Boolean parameter that indicates how the menu items are aligned. If *bRightAlign* is `TRUE`, the menu is right-aligned for right-to-left reading order.  
+ A Boolean parameter that indicates how the menu items are aligned. If *bRightAlign* is TRUE, the menu is right-aligned for right-to-left reading order.  
   
 ### Return Value  
- The first method overload returns nonzero if the method shows the menu successfully; otherwise 0. The second method overload returns a pointer to [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) if the shortcut menu displays correctly; otherwise `NULL`.  
+ The first method overload returns nonzero if the method shows the menu successfully; otherwise 0. The second method overload returns a pointer to [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) if the shortcut menu displays correctly; otherwise NULL.  
   
 ### Remarks  
  This method resembles the method [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) in that both methods display a shortcut menu. However, `TrackPopupMenu` returns the index of the selected menu command.  
   
- If the parameter *bAutoDestroy* is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter *bAutoDestroy*. It is provided for future use or for custom classes derived from the `CContextMenuManager` class .  
+ If the parameter *bAutoDestroy* is FALSE, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter *bAutoDestroy*. It is provided for future use or for custom classes derived from the `CContextMenuManager` class .  
   
 ##  <a name="trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
  Displays the specified shortcut menu and returns the index of the selected shortcut menu command.  
@@ -301,7 +301,7 @@ virtual UINT TrackPopupMenu(
  A pointer to the parent window of the shortcut menu.  
   
  [in] *bRightAlign*  
- A Boolean parameter that indicates how menu items are aligned. If *bRightAlign* is `TRUE`, the menu is right-aligned for right-to-left reading order. If *bRightAlign* is `FALSE`, the menu is left-aligned for left-to-right reading order.  
+ A Boolean parameter that indicates how menu items are aligned. If *bRightAlign* is TRUE, the menu is right-aligned for right-to-left reading order. If *bRightAlign* is FALSE, the menu is left-aligned for left-to-right reading order.  
   
 ### Return Value  
  The menu command ID of the command that the user chooses; 0 if the user closes the shortcut menu without selecting a menu command.  

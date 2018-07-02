@@ -117,13 +117,13 @@ HFONT GetFontHandle(
  Height, in logical units, of the rectangle in which the control is drawn.  
   
  *cyHimetric*  
- Height, in `MM_HIMETRIC` units, of the control.  
+ Height, in MM_HIMETRIC units, of the control.  
   
 ### Return Value  
- A handle to the Font object; otherwise **NULL**.  
+ A handle to the Font object; otherwise NULL.  
   
 ### Remarks  
- The ratio of *cyLogical* and *cyHimetric* is used to calculate the proper display size, in logical units, for the font's point size expressed in `MM_HIMETRIC` units:  
+ The ratio of *cyLogical* and *cyHimetric* is used to calculate the proper display size, in logical units, for the font's point size expressed in MM_HIMETRIC units:  
   
  Display size = ( *cyLogical* / *cyHimetric*) X font size  
   
@@ -146,9 +146,9 @@ void InitializeFont(
  Pointer to the container's ambient Font property.  
   
 ### Remarks  
- If *pFontDispAmbient* is not **NULL**, the `CFontHolder` object is connected to a clone of the `IFont` interface used by the container's ambient Font property.  
+ If *pFontDispAmbient* is not NULL, the `CFontHolder` object is connected to a clone of the `IFont` interface used by the container's ambient Font property.  
   
- If *pFontDispAmbient* is **NULL**, a new Font object is created either from the font description pointed to by *pFontDesc* or, if *pFontDesc* is **NULL**, from a default description.  
+ If *pFontDispAmbient* is NULL, a new Font object is created either from the font description pointed to by *pFontDesc* or, if *pFontDesc* is NULL, from a default description.  
   
  Call this function after constructing a `CFontHolder` object.  
   
@@ -195,7 +195,7 @@ CFont* Select(
  Height, in logical units, of the rectangle in which the control is drawn.  
   
  *cyHimetric*  
- Height, in `MM_HIMETRIC` units, of the control.  
+ Height, in MM_HIMETRIC units, of the control.  
   
 ### Return Value  
  A pointer to the font that is being replaced.  

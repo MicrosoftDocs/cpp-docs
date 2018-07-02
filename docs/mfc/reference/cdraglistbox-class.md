@@ -43,7 +43,7 @@ class CDragListBox : public CListBox
 ## Remarks  
  List boxes with this capability allow users to order the items in a list in whatever manner is most useful to them. By default, the list box will move the item to the new location in the list. However, `CDragListBox` objects can be customized to copy items instead of moving them.  
   
- The list box control associated with the `CDragListBox` class must not have the **LBS_SORT** or the **LBS_MULTIPLESELECT** style. For a description of list box styles, see [List-Box Styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles).  
+ The list box control associated with the `CDragListBox` class must not have the LBS_SORT or the LBS_MULTIPLESELECT style. For a description of list box styles, see [List-Box Styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles).  
   
  To use a drag list box in an existing dialog box of your application, add a list box control to your dialog template using the dialog editor and then assign a member variable (of Category `Control` and Variable Type `CDragListBox`) corresponding to the list box control in your dialog template.  
   
@@ -115,14 +115,14 @@ virtual UINT Dragging(CPoint pt);
 ### Return Value  
  The resource ID of the cursor to be displayed. The following values are possible:  
   
-- `DL_COPYCURSOR` Indicates that the item will be copied.  
+- DL_COPYCURSOR Indicates that the item will be copied.  
   
-- `DL_MOVECURSOR` Indicates that the item will be moved.  
+- DL_MOVECURSOR Indicates that the item will be moved.  
   
-- `DL_STOPCURSOR` Indicates that the current drop target is not acceptable.  
+- DL_STOPCURSOR Indicates that the current drop target is not acceptable.  
   
 ### Remarks  
- The default behavior returns `DL_MOVECURSOR`. Override this function if you want to provide additional functionality.  
+ The default behavior returns DL_MOVECURSOR. Override this function if you want to provide additional functionality.  
   
 ##  <a name="drawinsert"></a>  CDragListBox::DrawInsert  
  Called by the framework to draw the insertion guide before the item with the indicated index.  

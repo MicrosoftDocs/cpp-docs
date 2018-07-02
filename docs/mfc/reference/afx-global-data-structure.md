@@ -114,7 +114,7 @@ BOOL  bIsOSAlphaBlendingSupport;
 ```  
   
 ### Remarks  
- `TRUE` indicates alpha blending is supported; otherwise, `FALSE`.  
+ TRUE indicates alpha blending is supported; otherwise, FALSE.  
   
 
 ## <a name="cleanup"></a> AFX_GLOBAL_DATA::CleanUp
@@ -167,10 +167,10 @@ BOOL DrawParentBackground(
  Pointer to a device context.  
   
  [in] *lpRect*  
- Pointer to a rectangle that bounds the area to draw. The default value is `NULL`.  
+ Pointer to a rectangle that bounds the area to draw. The default value is NULL.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ## <a name="drawtextonglass"></a> AFX_GLOBAL_DATA::DrawTextOnGlass
 Draws the specified text in the visual style of the specified theme.  
@@ -191,9 +191,9 @@ BOOL DrawTextOnGlass(
   
 ### Parameters   
  [in] *hTheme*  
- Handle to the theme data of a window, or `NULL`. The framework uses the specified theme to draw the text if this parameter is not `NULL` and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
+ Handle to the theme data of a window, or NULL. The framework uses the specified theme to draw the text if this parameter is not NULL and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
   
- Use the [OpenThemeData](http://msdn.microsoft.com/library/windows/desktop/bb759821) method to create an `HTHEME`.  
+ Use the [OpenThemeData](http://msdn.microsoft.com/library/windows/desktop/bb759821) method to create an HTHEME.  
   
  [in] *pDC*  
  Pointer to a device context.  
@@ -222,10 +222,10 @@ BOOL DrawTextOnGlass(
  The color in which the specified text is drawn. The default value is the default color.  
   
 ### Return Value  
- `TRUE` if a theme is used to draw the specified text; otherwise, `FALSE`.  
+ TRUE if a theme is used to draw the specified text; otherwise, FALSE.  
   
 ### Remarks  
- A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is `NULL`, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
+ A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is NULL, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
   
 ### See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
@@ -246,7 +246,7 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
   
 ### Parameters   
  [in] *bEnable*  
- `TRUE` to enable accessibility support; `FALSE` to disable accessibility support. The default value is `TRUE`.  
+ TRUE to enable accessibility support; FALSE to disable accessibility support. The default value is TRUE.  
   
 ### Remarks  
  Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).  
@@ -281,15 +281,15 @@ BOOL ExcludeTag(
  When this method returns, the *strTag* parameter contains the text that is between the opening and closing XML tags that are named by the *lpszTag* parameter. Any leading or trailing whitespace is trimmed from the result.  
   
  [in] *bIsCharsList*  
- `TRUE` to convert symbols for escape characters in the *strTag* parameter into actual escape characters; `FALSE` not to perform the conversion.The default value is `FALSE`. For more information, see Remarks.  
+ TRUE to convert symbols for escape characters in the *strTag* parameter into actual escape characters; FALSE not to perform the conversion.The default value is FALSE. For more information, see Remarks.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  An XML tag pair consists of named opening and closing tags that indicate the start and end of a run of text in the specified buffer. The *strBuffer* parameter specifies the buffer, and the *lpszTag* parameter specifies the name of the XML tags.  
   
- Use the symbols in the following table to encode a set of escape characters in the specified buffer. Specify `TRUE` for the *bIsCharsList* parameter to convert the symbols in the *strTag* parameter into actual escape characters. The following table uses the [_T()](../../c-runtime-library/data-type-mappings.md) macro to specify the symbol and escape character strings.  
+ Use the symbols in the following table to encode a set of escape characters in the specified buffer. Specify TRUE for the *bIsCharsList* parameter to convert the symbols in the *strTag* parameter into actual escape characters. The following table uses the [_T()](../../c-runtime-library/data-type-mappings.md) macro to specify the symbol and escape character strings.  
   
 |Symbol|Escape character|  
 |------------|----------------------|  
@@ -317,7 +317,7 @@ COLORREF GetColor(int nColor);
  The RGB color value of the specified user interface element. For more information, see Remarks.  
   
 ### Remarks  
- If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns `NULL` if the color is not supported.  
+ If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns NULL if the color is not supported.  
   
 ### See Also  
 
@@ -337,7 +337,7 @@ ID2D1Factory* GetDirect2dFactory();
  A pointer to ID2D1Factory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have D2D support.  
   
 ## <a name="gethandcursor"></a>  AFX_GLOBAL_DATA::GetHandCursor
-Retrieves the predefined cursor that resembles a hand and whose identifier is `IDC_HAND`.  
+Retrieves the predefined cursor that resembles a hand and whose identifier is IDC_HAND.  
   
   
 ```  
@@ -360,7 +360,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
  A [NONCLIENTMETRICS](http://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise, `FALSE`.  
+ TRUE if this method succeeds; otherwise, FALSE.  
  
   
 ### See Also   
@@ -376,7 +376,7 @@ int GetTextHeight(BOOL bHorz = TRUE);
   
 ### Parameters   
  [in] *bHorz*  
- `TRUE` to retrieve the height of characters when text runs horizontally; `FALSE` to retrieve the height of characters when text runs vertically. The default value is `TRUE`.  
+ TRUE to retrieve the height of characters when text runs horizontally; FALSE to retrieve the height of characters when text runs vertically. The default value is TRUE.  
   
 ### Return Value  
  The height of the current font, which is measured from its ascender to its descender.  
@@ -434,10 +434,10 @@ BOOL Is32BitIcons() const;
 ```  
   
 ### Return Value  
- `TRUE` if predefined 32-bit icons are supported; otherwise, `FALSE`.  
+ TRUE if predefined 32-bit icons are supported; otherwise, FALSE.  
   
 ### Remarks  
- This method returns `TRUE` if the framework supports 32-bit built-in icons, and if the operating system supports 16 bits per pixel or more, and if images are not displayed in high contrast.  
+ This method returns TRUE if the framework supports 32-bit built-in icons, and if the operating system supports 16 bits per pixel or more, and if images are not displayed in high contrast.  
   
 ## <a name="isaccessibilitysupport"></a> AFX_GLOBAL_DATA::IsAccessibilitySupport
 Indicates whether Microsoft Active Accessibility support is enabled.  
@@ -448,7 +448,7 @@ BOOL IsAccessibilitySupport() const;
 ```  
   
 ### Return Value  
- `TRUE` if accessibility support is enabled; otherwise, `FALSE`.  
+ TRUE if accessibility support is enabled; otherwise, FALSE.  
   
 ### Remarks  
  Microsoft Active Accessibility was the earlier solution for making applications accessible. Microsoft UI Automation is the new accessibility model for Microsoft Windows and is intended to address the needs of assistive technology products and automated testing tools.   
@@ -479,7 +479,7 @@ BOOL IsDwmCompositionEnabled();
 ```  
   
 ### Return Value  
- `TRUE` if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is enabled; otherwise, `FALSE`.  
+ TRUE if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is enabled; otherwise, FALSE.  
   
 ### See Also    
  [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
@@ -492,7 +492,7 @@ BOOL IsHighContrastMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if images are currently displayed in black or white high contrast mode; otherwise, `FALSE`.  
+ TRUE if images are currently displayed in black or white high contrast mode; otherwise, FALSE.  
   
 ### Remarks  
  In black high contrast mode, edges facing the light are white and the background is black. In white high contrast mode, edges facing the light are black and the background is white.  
@@ -506,7 +506,7 @@ BOOL IsWindowsLayerSupportAvailable() const;
 ```  
   
 ### Return Value  
- `TRUE` if layered windows are supported; otherwise, `FALSE`.  
+ TRUE if layered windows are supported; otherwise, FALSE.  
   
 ### Remarks  
  If layered windows are supported, *smart docking* markers use layered windows.  
@@ -520,7 +520,7 @@ BOOL  m_bUseBuiltIn32BitIcons;
 ```  
   
 ### Remarks  
- `TRUE` specifies that the framework use 32-bit color icons; `FALSE` specifies lower resolution icons. The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to `TRUE`.  
+ TRUE specifies that the framework use 32-bit color icons; FALSE specifies lower resolution icons. The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to TRUE.  
   
  This member must be set at application startup.  
   
@@ -533,7 +533,7 @@ BOOL m_bUseSystemFont;
 ```  
   
 ### Remarks  
- `TRUE` specifies to use a system font; otherwise, `FALSE`. The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to `FALSE`.  
+ TRUE specifies to use a system font; otherwise, FALSE. The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to FALSE.  
   
  Testing this member is not the only way for the framework to determine the font to use. The `AFX_GLOBAL_DATA::UpdateFonts` method also tests default and alternative fonts to determine what visual styles are available to be applied to menus, toolbars, and ribbons.  
   
@@ -655,7 +655,7 @@ BOOL Resume();
 ```  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise, `FALSE`. In debug mode, this method asserts if this method is unsuccessful.  
+ TRUE if this method succeeds; otherwise, FALSE. In debug mode, this method asserts if this method is unsuccessful.  
   
 ### Remarks  
  This method is called when the framework receives the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) message.  
@@ -686,7 +686,7 @@ BOOL SetLayeredAttrib(
  A bitwise combination (OR) of flags that specify which method parameters to use. Specify LWA_COLORKEY to use the *crKey* parameter as the transparency color. Specify LWA_ALPHA to use the *bAlpha* parameter to determine the opacity of the layered window.  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise, `FALSE`.   
+ TRUE if this method succeeds; otherwise, FALSE.   
  
 ### See Also   
  [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
@@ -707,10 +707,10 @@ BOOL SetMenuFont(
  Pointer to a structure that contains the attributes of a font.  
   
  [in] *bHorz*  
- `TRUE` to specify that the text runs horizontally; `FALSE` to specify that the text runs vertically.  
+ TRUE to specify that the text runs horizontally; FALSE to specify that the text runs vertically.  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise, `FALSE`. In debug mode, this method asserts if this method is unsuccessful.  
+ TRUE if this method succeeds; otherwise, FALSE. In debug mode, this method asserts if this method is unsuccessful.  
   
 ### Remarks  
  This method creates a horizontal regular font, an underlined font, and a bold font that is used in default menu items. This method optionally creates a regular vertical font. For more information about logical fonts, see [CFont::CreateFontIndirect](../../mfc/reference/cfont-class.md#createfontindirect).  
@@ -767,7 +767,7 @@ ITaskbarList *GetITaskbarList();
 ```  
   
 ### Return Value  
- A pointer to the `ITaskbarList` interface if creation of a task bar list object succeeds; `NULL` if creation fails or if the current Operation System is less than Windows 7.  
+ A pointer to the `ITaskbarList` interface if creation of a task bar list object succeeds; NULL if creation fails or if the current Operation System is less than Windows 7.  
   
 ## <a name="getitaskbarlist3"></a> AFX_GLOBAL_DATA::GetITaskbarList3
 Creates and stores in the global data a pointer to the `ITaskBarList3` interface.  
@@ -778,7 +778,7 @@ ITaskbarList3 *GetITaskbarList3();
 ```  
   
 ### Return Value  
- A pointer to the `ITaskbarList3` interface if creation of a task bar list object succeeds; `NULL` if creation fails or if the current Operation System is less than Windows 7.  
+ A pointer to the `ITaskbarList3` interface if creation of a task bar list object succeeds; NULL if creation fails or if the current Operation System is less than Windows 7.  
   
 ## <a name="getshellautohidebars"></a> AFX_GLOBAL_DATA::GetShellAutohideBars
 Determines positions of Shell auto hide bars.  

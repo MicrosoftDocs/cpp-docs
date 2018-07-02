@@ -85,7 +85,7 @@ virtual BYTE* Alloc(SIZE_T nBytes);
  Number of bytes of memory to be allocated.  
   
 ### Return Value  
- A pointer to the memory block that was allocated, or **NULL** if the allocation failed.  
+ A pointer to the memory block that was allocated, or NULL if the allocation failed.  
   
 ### Remarks  
  Override this function to implement custom memory allocation. If you override this function, you'll probably want to override [Free](#free) and [Realloc](#realloc) as well.  
@@ -236,7 +236,7 @@ virtual BYTE* Realloc(
  New size for the memory block.  
   
 ### Return Value  
- A pointer to the memory block that was reallocated (and possibly moved), or **NULL** if the reallocation failed.  
+ A pointer to the memory block that was reallocated (and possibly moved), or NULL if the reallocation failed.  
   
 ### Remarks  
  Override this function to implement custom memory reallocation. If you override this function, you'll probably want to override [Alloc](#alloc) and [Free](#free) as well.  

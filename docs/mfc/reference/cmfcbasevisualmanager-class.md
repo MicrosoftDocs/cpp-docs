@@ -124,7 +124,7 @@ virtual BOOL DrawCheckBox(
  Specifies whether the check box is pressed.  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ### Remarks  
  The values of *nState* correspond to the following check box styles.  
@@ -164,7 +164,7 @@ virtual BOOL DrawComboBorder(
  Specifies whether the combo box border is highlighted.  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ##  <a name="drawcombodropbutton"></a>  CMFCBaseVisualManager::DrawComboDropButton  
  Draws a combo box drop-down button using the current Windows theme.  
@@ -189,7 +189,7 @@ virtual BOOL DrawComboDropButton(
 |[in] *bIsHighlighted*|Specifies whether the combo box drop-down button is highlighted.|  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ##  <a name="drawpushbutton"></a>  CMFCBaseVisualManager::DrawPushButton  
  Draws a push button using the current Windows theme.  
@@ -216,7 +216,7 @@ virtual BOOL DrawPushButton(
  Ignored. The state is taken from *pButton*.  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ##  <a name="drawradiobutton"></a>  CMFCBaseVisualManager::DrawRadioButton  
  Draws a radio button control by using the current Windows theme.  
@@ -251,7 +251,7 @@ virtual BOOL DrawRadioButton(
  Specifies whether the radio button is pressed.  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ##  <a name="drawstatusbarprogress"></a>  CMFCBaseVisualManager::DrawStatusBarProgress  
  Draws progress bar on status bar control ( [CMFCStatusBar Class](../../mfc/reference/cmfcstatusbar-class.md)) using the current Windows theme.  
@@ -298,7 +298,7 @@ virtual BOOL DrawStatusBarProgress(
  Specifies whether to display progress text.  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ##  <a name="fillrebarpane"></a>  CMFCBaseVisualManager::FillReBarPane  
  Fills the background of the rebar control by using the current Windows theme.  
@@ -321,7 +321,7 @@ virtual void FillReBarPane(
  The bounding rectangle of the area to be filled.  
   
 ### Return Value  
- `TRUE` if Theme API is enabled; otherwise `FALSE`.  
+ TRUE if Theme API is enabled; otherwise FALSE.  
   
 ##  <a name="getstandardwindowstheme"></a>  CMFCBaseVisualManager::GetStandardWindowsTheme  
  Gets the current Windows theme.  

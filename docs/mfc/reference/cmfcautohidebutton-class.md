@@ -106,13 +106,13 @@ virtual BOOL Create(
   
  The *dwAlignment* parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CBRS_ALIGN_TOP`  
+- CBRS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="getalignment"></a>  CMFCAutoHideButton::GetAlignment  
  Retrieves the alignment of the auto-hide button.  
@@ -122,18 +122,18 @@ DWORD GetAlignment() const;
 ```  
   
 ### Return Value  
- A `DWORD` value that contains the current alignment of the auto-hide button.  
+ A DWORD value that contains the current alignment of the auto-hide button.  
   
 ### Remarks  
  The alignment of the auto-hide button indicates where the button resides on the application. It can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CRBS_ALIGN_TOP`  
+- CRBS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="getautohidewindow"></a>  CMFCAutoHideButton::GetAutoHideWindow  
  Returns the [CDockablePane](../../mfc/reference/cdockablepane-class.md) object associated with the auto-hide button.  
@@ -201,7 +201,7 @@ BOOL IsActive() const;
 ```  
   
 ### Return Value  
- `TRUE` if the auto-hide button is active; `FALSE` otherwise.  
+ TRUE if the auto-hide button is active; FALSE otherwise.  
   
 ### Remarks  
  An auto-hide button is active when the associated [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) window is shown.  
@@ -217,7 +217,7 @@ BOOL IsHorizontal() const;
  Nonzero if the button is horizontal; 0 otherwise.  
   
 ### Remarks  
- The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
+ The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the *dwAlignment* parameter in the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
 
@@ -238,7 +238,7 @@ virtual BOOL IsVisible() const;
 ```  
   
 ### Return Value  
- `TRUE` if the button is visible; `FALSE` otherwise.  
+ TRUE if the button is visible; FALSE otherwise.  
   
 ##  <a name="ondraw"></a>  CMFCAutoHideButton::OnDraw  
  The framework calls this method when it draws the auto-hide button.  
@@ -364,7 +364,7 @@ virtual void HighlightButton(BOOL bHighlight);
   
 ### Parameters  
  *bHighlight*  
- Specifies the new auto hide button state. `TRUE` indicates the button is highlighted, `FALSE` indicates the button is not highlighted.  
+ Specifies the new auto hide button state. TRUE indicates the button is highlighted, FALSE indicates the button is not highlighted.  
   
 ### Remarks  
   
@@ -376,7 +376,7 @@ virtual BOOL IsHighlighted() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if the auto hide button is highlighted; otherwise `FALSE`.  
+ Returns TRUE if the auto hide button is highlighted; otherwise FALSE.  
   
 ### Remarks  
   

@@ -94,8 +94,8 @@ class CButton : public CWnd
   
 |Map entry|Sent to parent when...|  
 |---------------|----------------------------|  
-|**ON_BN_CLICKED**|The user clicks a button.|  
-|**ON_BN_DOUBLECLICKED**|The user double-clicks a button.|  
+|ON_BN_CLICKED|The user clicks a button.|  
+|ON_BN_DOUBLECLICKED|The user double-clicks a button.|  
   
  If you create a `CButton` object from a dialog resource, the `CButton` object is automatically destroyed when the user closes the dialog box.  
   
@@ -146,7 +146,7 @@ virtual BOOL Create(
  Specifies the button control's size and position. It can be either a `CRect` object or a `RECT` structure.  
   
  *pParentWnd*  
- Specifies the button control's parent window, usually a `CDialog`. It must not be **NULL**.  
+ Specifies the button control's parent window, usually a `CDialog`. It must not be NULL.  
   
  *nID*  
  Specifies the button control's ID.  
@@ -157,19 +157,19 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CButton` object in two steps. First, call the constructor and then call `Create`, which creates the Windows button control and attaches it to the `CButton` object.  
   
- If the **WS_VISIBLE** style is given, Windows sends the button control all the messages required to activate and show the button.  
+ If the WS_VISIBLE style is given, Windows sends the button control all the messages required to activate and show the button.  
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a button control:  
   
-- **WS_CHILD** Always  
+- WS_CHILD Always  
   
-- **WS_VISIBLE** Usually  
+- WS_VISIBLE Usually  
   
-- **WS_DISABLED** Rarely  
+- WS_DISABLED Rarely  
   
-- **WS_GROUP** To group controls  
+- WS_GROUP To group controls  
   
-- **WS_TABSTOP** To include the button in the tabbing order  
+- WS_TABSTOP To include the button in the tabbing order  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#2](../../mfc/reference/codesnippet/cpp/cbutton-class_2.cpp)]  
@@ -186,7 +186,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure. The structure contains information about the item to be drawn and the type of drawing required.  
   
 ### Remarks  
- An owner-drawn button has the **BS_OWNERDRAW** style set. Override this member function to implement drawing for an owner-drawn `CButton` object. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before the member function terminates.  
+ An owner-drawn button has the BS_OWNERDRAW style set. Override this member function to implement drawing for an owner-drawn `CButton` object. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before the member function terminates.  
   
  Also see the [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) style values.  
   
@@ -201,7 +201,7 @@ HBITMAP GetBitmap() const;
 ```  
   
 ### Return Value  
- A handle to a bitmap. **NULL** if no bitmap is previously specified.  
+ A handle to a bitmap. NULL if no bitmap is previously specified.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]  
@@ -227,15 +227,15 @@ int GetCheck() const;
 ```  
   
 ### Return Value  
- The return value from a button control created with the **BS_AUTOCHECKBOX**, **BS_AUTORADIOBUTTON**, **BS_AUTO3STATE**, **BS_CHECKBOX**, **BS_RADIOBUTTON**, or **BS_3STATE** style is one of the following values:  
+ The return value from a button control created with the BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON, or BS_3STATE style is one of the following values:  
   
 |Value|Meaning|  
 |-----------|-------------|  
-|**BST_UNCHECKED**|Button state is unchecked.|  
-|**BST_CHECKED**|Button state is checked.|  
-|**BST_INDETERMINATE**|Button state is indeterminate (applies only if the button has the **BS_3STATE** or **BS_AUTO3STATE** style).|  
+|BST_UNCHECKED|Button state is unchecked.|  
+|BST_CHECKED|Button state is checked.|  
+|BST_INDETERMINATE|Button state is indeterminate (applies only if the button has the BS_3STATE or BS_AUTO3STATE style).|  
   
- If the button has any other style, the return value is **BST_UNCHECKED**.  
+ If the button has any other style, the return value is BST_UNCHECKED.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]  
@@ -248,7 +248,7 @@ HCURSOR GetCursor();
 ```  
   
 ### Return Value  
- A handle to a cursor image. **NULL** if no cursor is previously specified.  
+ A handle to a cursor image. NULL if no cursor is previously specified.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]  
@@ -261,7 +261,7 @@ HICON GetIcon() const;
 ```  
   
 ### Return Value  
- A handle to an icon. **NULL** if no icon is previously specified.  
+ A handle to an icon. NULL if no icon is previously specified.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]  
@@ -281,7 +281,7 @@ BOOL GetIdealSize(SIZE* psize);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the **BCM_GETIDEALSIZE** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
+ This member function emulates the functionality of the BCM_GETIDEALSIZE message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
   
 ##  <a name="getimagelist"></a>  CButton::GetImageList  
  Call this method to get the image list from the button control.  
@@ -298,7 +298,7 @@ BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the **BCM_GETIMAGELIST** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
+ This member function emulates the functionality of the BCM_GETIMAGELIST message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
   
 ##  <a name="getnote"></a>  CButton::GetNote  
  Retrieves the note text associated with the current command link control.  
@@ -480,7 +480,7 @@ BOOL GetTextMargin(RECT* pmargin);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the **BCM_GETTEXTMARGIN** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
+ This member function emulates the functionality of the BCM_GETTEXTMARGIN message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
   
 ##  <a name="setbitmap"></a>  CButton::SetBitmap  
  Call this member function to associate a new bitmap with the button.  
@@ -499,17 +499,17 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 ### Remarks  
  The bitmap will be automatically placed on the face of the button, centered by default. If the bitmap is too large for the button, it will be clipped on either side. You can choose other alignment options, including the following:  
   
-- **BS_TOP**  
+- BS_TOP  
   
-- **BS_LEFT**  
+- BS_LEFT  
   
-- **BS_RIGHT**  
+- BS_RIGHT  
   
-- **BS_CENTER**  
+- BS_CENTER  
   
-- **BS_BOTTOM**  
+- BS_BOTTOM  
   
-- **BS_VCENTER**  
+- BS_VCENTER  
   
  Unlike [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md), which uses four bitmaps per button, `SetBitmap` uses only one bitmap per the button. When the button is pressed, the bitmap appears to shift down and to the right.  
   
@@ -553,9 +553,9 @@ void SetCheck(int nCheck);
   
 |Value|Meaning|  
 |-----------|-------------|  
-|**BST_UNCHECKED**|Set the button state to unchecked.|  
-|**BST_CHECKED**|Set the button state to checked.|  
-|**BST_INDETERMINATE**|Set the button state to indeterminate. This value can be used only if the button has the **BS_3STATE** or **BS_AUTO3STATE** style.|  
+|BST_UNCHECKED|Set the button state to unchecked.|  
+|BST_CHECKED|Set the button state to checked.|  
+|BST_INDETERMINATE|Set the button state to indeterminate. This value can be used only if the button has the BS_3STATE or BS_AUTO3STATE style.|  
   
 ### Remarks  
  This member function has no effect on a pushbutton.  
@@ -580,17 +580,17 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ### Remarks  
  The cursor will be automatically placed on the face of the button, centered by default. If the cursor is too large for the button, it will be clipped on either side. You can choose other alignment options, including the following:  
   
-- **BS_TOP**  
+- BS_TOP  
   
-- **BS_LEFT**  
+- BS_LEFT  
   
-- **BS_RIGHT**  
+- BS_RIGHT  
   
-- **BS_CENTER**  
+- BS_CENTER  
   
-- **BS_BOTTOM**  
+- BS_BOTTOM  
   
-- **BS_VCENTER**  
+- BS_VCENTER  
   
  Unlike [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md), which uses four bitmaps per button, `SetCursor` uses only one cursor per the button. When the button is pressed, the cursor appears to shift down and to the right.  
   
@@ -666,17 +666,17 @@ HICON SetIcon(HICON hIcon);
 ### Remarks  
  The icon will be automatically placed on the face of the button, centered by default. If the icon is too large for the button, it will be clipped on either side. You can choose other alignment options, including the following:  
   
-- **BS_TOP**  
+- BS_TOP  
   
-- **BS_LEFT**  
+- BS_LEFT  
   
-- **BS_RIGHT**  
+- BS_RIGHT  
   
-- **BS_CENTER**  
+- BS_CENTER  
   
-- **BS_BOTTOM**  
+- BS_BOTTOM  
   
-- **BS_VCENTER**  
+- BS_VCENTER  
   
  Unlike [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md), which uses four bitmaps per button, `SetIcon` uses only one icon per the button. When the button is pressed, the icon appears to shift down and to the right.  
   
@@ -695,10 +695,10 @@ BOOL SetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
  A pointer to the new image list.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- This member function emulates the functionality of the **BCM_SETIMAGELIST** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
+ This member function emulates the functionality of the BCM_SETIMAGELIST message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
   
 ##  <a name="setnote"></a>  CButton::SetNote  
  Sets the note text for the current command link control.  
@@ -906,7 +906,7 @@ BOOL SetTextMargin(RECT* pmargin);
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- This member function emulates the functionality of the **BCM_SETTEXTMARGIN** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
+ This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
