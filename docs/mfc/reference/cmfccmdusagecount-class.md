@@ -193,12 +193,12 @@ static BOOL __stdcall SetOptions(
 |[in] *nMinUsagePercentage*|The new minimum usage percentage.|  
   
 ### Return Value  
- `TRUE` if the method succeeds, `FALSE` if the *nMinUsagePercentage* parameter is larger than or equal to 100.  
+ TRUE if the method succeeds, FALSE if the *nMinUsagePercentage* parameter is larger than or equal to 100.  
   
 ### Remarks  
  This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCount` and `m_nMinUsagePercentage` to *nStartCount* and *nMinUsagePercentage*, respectively. `m_nStartCount` is used by the [CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation) method to determine whether this object has collected the minimum amount of tracking data. `m_nMinUsagePercentage` is used by the [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) method to determine whether a given command is frequently used.  
   
- In Debug builds this method generates an assertion failure if the `nMinUsagePercentage` parameter is larger than or equal to 100.  
+ In Debug builds this method generates an assertion failure if the *nMinUsagePercentage* parameter is larger than or equal to 100.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

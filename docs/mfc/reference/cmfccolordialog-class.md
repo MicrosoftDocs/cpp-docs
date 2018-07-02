@@ -47,8 +47,8 @@ class CMFCColorDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|`m_bIsMyPalette`|`TRUE` if the color selection dialog box uses its own color palette, or `FALSE` if the dialog box uses a palette that is specified in the `CMFCColorDialog` constructor.|  
-|`m_bPickerMode`|`TRUE` while the user is selecting a color from the selection dialog box; otherwise, `FALSE`.|  
+|`m_bIsMyPalette`|TRUE if the color selection dialog box uses its own color palette, or FALSE if the dialog box uses a palette that is specified in the `CMFCColorDialog` constructor.|  
+|`m_bPickerMode`|TRUE while the user is selecting a color from the selection dialog box; otherwise, FALSE.|  
 |`m_btnColorSelect`|The color button that the user has selected.|  
 |`m_CurrentColor`|The currently selected color.|  
 |`m_hcurPicker`|The cursor that is used to pick a color.|  

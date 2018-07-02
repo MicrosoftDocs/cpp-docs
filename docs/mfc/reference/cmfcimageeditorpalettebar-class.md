@@ -74,7 +74,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 ```  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

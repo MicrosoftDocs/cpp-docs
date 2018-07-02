@@ -119,10 +119,10 @@ virtual CSize SizeToContent(
   
 ### Parameters  
  [in] *bVCenter*  
- `TRUE` to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, `FALSE`. The default value is `FALSE`.  
+ TRUE to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, FALSE. The default value is FALSE.  
   
  [in] *bHCenter*  
- `TRUE` to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, `FALSE`. The default value is `FALSE`.  
+ TRUE to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, FALSE. The default value is FALSE.  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that contains the new size of the link control.  

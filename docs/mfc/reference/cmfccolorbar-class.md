@@ -76,7 +76,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
   
 |Name|Description|  
 |----------|-----------------|  
-|`m_bInternal`|A Boolean field that determines whether mouse events are processed. Typically, mouse events are processed when this field is `TRUE` and customization mode is `FALSE`.|  
+|`m_bInternal`|A Boolean field that determines whether mouse events are processed. Typically, mouse events are processed when this field is TRUE and customization mode is FALSE.|  
 |`m_bIsEnabled`|A Boolean that indicates whether a control is enabled.|  
 |`m_bIsTearOff`|A Boolean that indicates whether the color bar control supports docking.|  
 |`m_BoxSize`|A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that specifies the size of a cell in a color bar grid.|  
@@ -175,10 +175,10 @@ virtual BOOL AllowChangeTextLabels() const;
 ```  
   
 ### Return Value  
- Always `FALSE`.  
+ Always FALSE.  
   
 ### Remarks  
- By default, this method always returns `FALSE`, which means text labels cannot be modified. Override this method to enable modifying text labels.  
+ By default, this method always returns FALSE, which means text labels cannot be modified. Override this method to enable modifying text labels.  
   
 ##  <a name="allowshowonlist"></a>  CMFCColorBar::AllowShowOnList  
  Indicates whether the color bar control object can appear in a toolbar list during the customization process.  
@@ -188,10 +188,10 @@ virtual BOOL AllowShowOnList() const;
 ```  
   
 ### Return Value  
- Always `TRUE`.  
+ Always TRUE.  
   
 ### Remarks  
- By default, this method always returns `TRUE`, which means the framework can display the color bar control during the customization process. Override this method to implement a different behavior.  
+ By default, this method always returns TRUE, which means the framework can display the color bar control during the customization process. Override this method to implement a different behavior.  
   
 ##  <a name="calcsize"></a>  CMFCColorBar::CalcSize  
  Called by the framework as part of the layout calculation process.  
@@ -202,7 +202,7 @@ virtual CSize CalcSize(BOOL bVertDock);
   
 ### Parameters  
  [in] *bVertDock*  
- `TRUE` to specify that the color bar control is docked vertically; `FALSE` to specify that the color bar control is docked horizontally.  
+ TRUE to specify that the color bar control is docked vertically; FALSE to specify that the color bar control is docked horizontally.  
   
 ### Return Value  
  The size of the array of color buttons in a color bar control.  
@@ -252,12 +252,12 @@ CMFCColorBar(
  The initially selected color.  
   
  [in] *lpszAutoColor*  
- The text label of the *automatic* (default) color button, or `NULL`.  
+ The text label of the *automatic* (default) color button, or NULL.  
   
  The standard label for the automatic button is **Automatic**.  
   
  [in] *lpszOtherColor*  
- The text label of the *other* button, which displays more color choices, or `NULL`.  
+ The text label of the *other* button, which displays more color choices, or NULL.  
   
  The standard label for the other button is **More Colors...**.  
   
@@ -304,8 +304,8 @@ void ContextToSize(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *bSquareButtons*|`TRUE` to specify that the shape of the buttons on a color bar control are square; otherwise, `FALSE`. The default value is `TRUE`.|  
-|[in] *bCenterButtons*|`TRUE` to specify that the content on the face of a color bar control button is centered; otherwise, `FALSE`. The default value is `TRUE`.|  
+|[in] *bSquareButtons*|TRUE to specify that the shape of the buttons on a color bar control are square; otherwise, FALSE. The default value is TRUE.|  
+|[in] *bCenterButtons*|TRUE to specify that the content on the face of a color bar control button is centered; otherwise, FALSE. The default value is TRUE.|  
   
 ### Remarks  
   
@@ -334,7 +334,7 @@ virtual BOOL Create(
  The command ID.  
   
  [in] *pPalette*  
- Pointer to a palette of colors. The default is `NULL`.  
+ Pointer to a palette of colors. The default is NULL.  
   
  [in] *nColumns*  
  The number of columns in the color bar control. The default is 0.  
@@ -346,7 +346,7 @@ virtual BOOL Create(
  The number of columns in the color bar control when it is docked vertically. The default is 0.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  To construct a `CMFCColorBar` object, call the class constructor then this method. The `Create` method creates the Windows control and initializes a list of colors.  
@@ -365,7 +365,7 @@ virtual BOOL CreateControl(
   
 ### Parameters  
  [in] *pParentWnd*  
- Pointer to the parent window. Cannot be `NULL`.  
+ Pointer to the parent window. Cannot be NULL.  
   
  [in] *rect*  
  A bounding rectangle that specifies where to draw the color bar control.  
@@ -377,10 +377,10 @@ virtual BOOL CreateControl(
  The ideal number of columns in the color bar control. This method modifies that number to fit the specified palette of colors. The default is -1, which means this parameter is not specified.  
   
  [in] *pPalette*  
- Pointer to a palette of colors, or `NULL`. If this parameter is `NULL`, this method calculates the size of the color bar control as if 20 colors were specified. The default is `NULL`.  
+ Pointer to a palette of colors, or NULL. If this parameter is NULL, this method calculates the size of the color bar control as if 20 colors were specified. The default is NULL.  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise `FALSE`.  
+ TRUE if this method succeeds; otherwise FALSE.  
   
 ### Remarks  
  This method uses the *rect*, *nColumns*, and *pPalette* parameters to calculate the appropriate number or rows and columns in the color bar control, and then calls the [CMFCColorBar::Create](#create) method.  
@@ -402,7 +402,7 @@ static BOOL CreatePalette(
 |[in] *palette*|A palette of colors.|  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCColorBar::EnableAutomaticButton  
  Shows or hides the automatic button.  
@@ -416,7 +416,7 @@ void EnableAutomaticButton(
   
 ### Parameters  
  [in] *lpszLabel*  
- The text label of the *automatic* (default) color button, or `NULL`.  
+ The text label of the *automatic* (default) color button, or NULL.  
   
  The standard label for the automatic button is **Automatic**.  
   
@@ -424,10 +424,10 @@ void EnableAutomaticButton(
  The default color that the framework applies when you click the automatic button.  
   
  [in] *bEnable*  
- `TRUE` to enable the automatic button; `FALSE` to disable the automatic button. The default value is `TRUE`.  
+ TRUE to enable the automatic button; FALSE to disable the automatic button. The default value is TRUE.  
   
 ### Remarks  
- The text label of the automatic button is deleted if the *lpszLabel* parameter is `NULL` or the *bEnable* parameter is `FALSE`.  
+ The text label of the automatic button is deleted if the *lpszLabel* parameter is NULL or the *bEnable* parameter is FALSE.  
   
 ##  <a name="enableotherbutton"></a>  CMFCColorBar::EnableOtherButton  
  Enables or disables the display of a dialog box that lets the user select more colors.  
@@ -441,15 +441,15 @@ void EnableOtherButton(
   
 ### Parameters  
  [in] *lpszLabel*  
- The text label of the *other* button, which displays more color choices, or `NULL`.  
+ The text label of the *other* button, which displays more color choices, or NULL.  
   
  The standard label for this button is **More Colors...**.  
   
  [in] *bAltColorDlg*  
- `TRUE` to display the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box; `FALSE` to display the standard [CColorDialog](../../mfc/reference/ccolordialog-class.md) dialog box. The default value is `TRUE`.  
+ TRUE to display the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box; FALSE to display the standard [CColorDialog](../../mfc/reference/ccolordialog-class.md) dialog box. The default value is TRUE.  
   
- [in] `bEnable`  
- `TRUE` to enable the button; `FALSE` to disable the button. The default value is `TRUE`.  
+ [in] *bEnable*  
+ TRUE to enable the button; FALSE to disable the button. The default value is TRUE.  
   
 ##  <a name="getcolor"></a>  CMFCColorBar::GetColor  
  Retrieves the currently selected color.  
@@ -472,7 +472,7 @@ CSize GetColorGridSize(BOOL bVertDock) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *bVertDock*|`TRUE` to perform the calculation for a vertically docked color bar control; otherwise, perform the calculation for a horizontally docked control.|  
+|[in] *bVertDock*|TRUE to perform the calculation for a vertically docked color bar control; otherwise, perform the calculation for a horizontally docked control.|  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object whose `cx` component contains the number of columns and whose `cy` component contains the number of rows.  
@@ -551,7 +551,7 @@ static int InitColors(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pPalette*|A pointer to a palette object, or `NULL`. If this parameter is `NULL`, this method uses the default palette of the operating system.|  
+|[in] *pPalette*|A pointer to a palette object, or NULL. If this parameter is NULL, this method uses the default palette of the operating system.|  
 |[in] *arColors*|An array of colors.|  
   
 ### Return Value  
@@ -565,7 +565,7 @@ BOOL IsTearOff() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current color bar control is dockable; otherwise, `FALSE`.  
+ TRUE if the current color bar control is dockable; otherwise, FALSE.  
   
 ### Remarks  
  If the color bar control is dockable, it can be torn off a control bar and docked at another location.  
@@ -582,7 +582,7 @@ virtual BOOL OnKey(UINT nChar);
  The virtual-key code for the key that a user pressed.  
   
 ### Return Value  
- `TRUE` if this method processes the specified key; otherwise, `FALSE`.  
+ TRUE if this method processes the specified key; otherwise, FALSE.  
   
 ##  <a name="onsendcommand"></a>  CMFCColorBar::OnSendCommand  
  Called by the framework to close a hierarchy of pop-up controls.  
@@ -598,7 +598,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 |[in] *pButton*|Pointer to a control that resides on a toolbar.|  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ##  <a name="onupdatecmdui"></a>  CMFCColorBar::OnUpdateCmdUI  
  Called by the framework to enable or disable a user-interface item of a color bar control before the item is displayed.  
@@ -614,10 +614,10 @@ virtual void OnUpdateCmdUI(
  Pointer to a window that contains a user-interface item to update.  
   
  [in] *bDisableIfNoHndler*  
- `TRUE` to disable the user-interface item if no handler is defined in a message map; otherwise, `FALSE`.  
+ TRUE to disable the user-interface item if no handler is defined in a message map; otherwise, FALSE.  
   
 ### Remarks  
- When a user of your application clicks a user-interface item, the item must know whether it should be displayed as enabled or disabled. The target of the command message provides this information by implementing an `ON_UPDATE_COMMAND_UI` command handler. Use this method to help process the command. For more information, see [CCmdUI Class](../../mfc/reference/ccmdui-class.md).  
+ When a user of your application clicks a user-interface item, the item must know whether it should be displayed as enabled or disabled. The target of the command message provides this information by implementing an ON_UPDATE_COMMAND_UI command handler. Use this method to help process the command. For more information, see [CCmdUI Class](../../mfc/reference/ccmdui-class.md).  
   
 ##  <a name="opencolordialog"></a>  CMFCColorBar::OpenColorDialog  
  Opens a color dialog box.  
@@ -636,7 +636,7 @@ virtual BOOL OpenColorDialog(
  The color that a user selected.  
   
 ### Return Value  
- `TRUE` if the user selected a color; `FALSE` if the user canceled the color dialog box.  
+ TRUE if the user selected a color; FALSE if the user canceled the color dialog box.  
   
 ### Remarks  
   
@@ -725,7 +725,7 @@ void SetDocumentColors(
  A list of colors that replaces the current document colors.  
   
  [in] *bShowWhenDocked*  
- `TRUE` to show document colors when the color bar control is docked; otherwise, `FALSE`. The default value is `FALSE`.  
+ TRUE to show document colors when the color bar control is docked; otherwise, FALSE. The default value is FALSE.  
   
 ### Remarks  
  *Document colors* are the colors that are currently used in a document. The framework automatically maintains a list of document colors, but you can use this method to modify the list.  
