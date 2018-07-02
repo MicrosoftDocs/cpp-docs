@@ -165,7 +165,7 @@ virtual CDocument* CreateNewDocument();
 ```  
   
 ### Return Value  
- A pointer to the newly created document, or **NULL** if an error occurs.  
+ A pointer to the newly created document, or NULL if an error occurs.  
   
 ##  <a name="createnewframe"></a>  CDocTemplate::CreateNewFrame  
  Creates a new frame window containing a document and view.  
@@ -178,16 +178,16 @@ virtual CFrameWnd* CreateNewFrame(
   
 ### Parameters  
  *pDoc*  
- The document to which the new frame window should refer. Can be **NULL**.  
+ The document to which the new frame window should refer. Can be NULL.  
   
  *pOther*  
- The frame window on which the new frame window is to be based. Can be **NULL**.  
+ The frame window on which the new frame window is to be based. Can be NULL.  
   
 ### Return Value  
- A pointer to the newly created frame window, or **NULL** if an error occurs.  
+ A pointer to the newly created frame window, or NULL if an error occurs.  
   
 ### Remarks  
- `CreateNewFrame` uses the `CRuntimeClass` objects passed to the constructor to create a new frame window with a view and document attached. If the *pDoc* parameter is **NULL**, the framework outputs a TRACE message.  
+ `CreateNewFrame` uses the `CRuntimeClass` objects passed to the constructor to create a new frame window with a view and document attached. If the *pDoc* parameter is NULL, the framework outputs a TRACE message.  
   
  The *pOther* parameter is used to implement the Window New command. It provides a frame window on which to model the new frame window. The new frame window is usually created invisible. Call this function to create frame windows outside the standard framework implementation of File New and File Open.  
   
@@ -212,7 +212,7 @@ CFrameWnd* CreateOleFrame(
  Determines whether a view is created along with the frame.  
   
 ### Return Value  
- A pointer to a frame window if successful; otherwise **NULL**.  
+ A pointer to a frame window if successful; otherwise NULL.  
   
 ### Remarks  
  If *bCreateView* is zero, an empty frame is created.  
@@ -233,19 +233,19 @@ virtual BOOL GetDocString(
  *index*  
  An index of the substring being retrieved from the string that describes the document type. This parameter can have one of the following values:  
   
-- **CDocTemplate::windowTitle** Name that appears in the application window's title bar (for example, "Microsoft Excel"). Present only in the document template for SDI applications.  
+- `CDocTemplate::windowTitle` Name that appears in the application window's title bar (for example, "Microsoft Excel"). Present only in the document template for SDI applications.  
   
-- **CDocTemplate::docName** Root for the default document name (for example, "Sheet"). This root, plus a number, is used for the default name of a new document of this type whenever the user chooses the New command from the File menu (for example, "Sheet1" or "Sheet2"). If not specified, "Untitled" is used as the default.  
+- `CDocTemplate::docName` Root for the default document name (for example, "Sheet"). This root, plus a number, is used for the default name of a new document of this type whenever the user chooses the New command from the File menu (for example, "Sheet1" or "Sheet2"). If not specified, "Untitled" is used as the default.  
   
-- **CDocTemplate::fileNewName** Name of this document type. If the application supports more than one type of document, this string is displayed in the File New dialog box (for example, "Worksheet"). If not specified, the document type is inaccessible using the File New command.  
+- `CDocTemplate::fileNewName` Name of this document type. If the application supports more than one type of document, this string is displayed in the File New dialog box (for example, "Worksheet"). If not specified, the document type is inaccessible using the File New command.  
   
-- **CDocTemplate::filterName** Description of the document type and a wildcard filter matching documents of this type. This string is displayed in the List Files Of Type drop-down list in the File Open dialog box (for example, "Worksheets (*.xls)"). If not specified, the document type is inaccessible using the File Open command.  
+- `CDocTemplate::filterName` Description of the document type and a wildcard filter matching documents of this type. This string is displayed in the List Files Of Type drop-down list in the File Open dialog box (for example, "Worksheets (*.xls)"). If not specified, the document type is inaccessible using the File Open command.  
   
-- **CDocTemplate::filterExt** Extension for documents of this type (for example, ".xls"). If not specified, the document type is inaccessible using the File Open command.  
+- `CDocTemplate::filterExt` Extension for documents of this type (for example, ".xls"). If not specified, the document type is inaccessible using the File Open command.  
   
-- **CDocTemplate::regFileTypeId** Identifier for the document type to be stored in the registration database maintained by Windows. This string is for internal use only (for example, "ExcelWorksheet"). If not specified, the document type cannot be registered with the Windows File Manager.  
+- `CDocTemplate::regFileTypeId` Identifier for the document type to be stored in the registration database maintained by Windows. This string is for internal use only (for example, "ExcelWorksheet"). If not specified, the document type cannot be registered with the Windows File Manager.  
   
-- **CDocTemplate::regFileTypeName** Name of the document type to be stored in the registration database. This string may be displayed in dialog boxes of applications that access the registration database (for example, "Microsoft Excel Worksheet").  
+- `CDocTemplate::regFileTypeName` Name of the document type to be stored in the registration database. This string may be displayed in dialog boxes of applications that access the registration database (for example, "Microsoft Excel Worksheet").  
   
 ### Return Value  
  Nonzero if the specified substring was found; otherwise 0.  
@@ -263,15 +263,15 @@ virtual POSITION GetFirstDocPosition() const = 0;
 ```  
   
 ### Return Value  
- A **POSITION** value that can be used to iterate through the list of documents associated with this document template; or **NULL** if the list is empty.  
+ A POSITION value that can be used to iterate through the list of documents associated with this document template; or NULL if the list is empty.  
   
 ### Remarks  
- Use this function to get the position of the first document in the list of documents associated with this template. Use the **POSITION** value as an argument to [CDocTemplate::GetNextDoc](#getnextdoc) to iterate through the list of documents associated with the template.  
+ Use this function to get the position of the first document in the list of documents associated with this template. Use the POSITION value as an argument to [CDocTemplate::GetNextDoc](#getnextdoc) to iterate through the list of documents associated with the template.  
   
  [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) and [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) both override this pure virtual function. Any class you derive from `CDocTemplate` must also override this function.  
   
 ##  <a name="getnextdoc"></a>  CDocTemplate::GetNextDoc  
- Retrieves the list element identified by *rPos*, then sets *rPos* to the **POSITION** value of the next entry in the list.  
+ Retrieves the list element identified by *rPos*, then sets *rPos* to the POSITION value of the next entry in the list.  
   
 ```  
 virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;  
@@ -282,14 +282,14 @@ virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
   
 ### Parameters  
  *rPos*  
- A reference to a **POSITION** value returned by a previous call to [GetFirstDocPosition](#getfirstdocposition) or `GetNextDoc`.  
+ A reference to a POSITION value returned by a previous call to [GetFirstDocPosition](#getfirstdocposition) or `GetNextDoc`.  
   
 ### Remarks  
- If the retrieved element is the last in the list, then the new value of *rPos* is set to **NULL**.  
+ If the retrieved element is the last in the list, then the new value of *rPos* is set to NULL.  
   
  You can use `GetNextDoc` in a forward iteration loop if you establish the initial position with a call to [GetFirstDocPosition](#getfirstdocposition).  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
 ##  <a name="initialupdateframe"></a>  CDocTemplate::InitialUpdateFrame  
  Initializes the frame window, and optionally makes it visible.  
@@ -306,13 +306,13 @@ virtual void InitialUpdateFrame(
  The frame window that needs the initial update.  
   
  *pDoc*  
- The document to which the frame is associated. Can be **NULL**.  
+ The document to which the frame is associated. Can be NULL.  
   
  *bMakeVisible*  
  Indicates whether the frame should become visible and active.  
   
 ### Remarks  
- Call **IntitialUpdateFrame** after creating a new frame with `CreateNewFrame`. Calling this function causes the views in that frame window to receive their `OnInitialUpdate` calls. Also, if there was not previously an active view, the primary view of the frame window is made active; the primary view is a view with a child ID of **AFX_IDW_PANE_FIRST**. Finally, the frame window is made visible if `bMakeVisible` is non-zero. If *bMakeVisible* is zero, the current focus and visible state of the frame window will remain unchanged.  
+ Call `IntitialUpdateFrame` after creating a new frame with `CreateNewFrame`. Calling this function causes the views in that frame window to receive their `OnInitialUpdate` calls. Also, if there was not previously an active view, the primary view of the frame window is made active; the primary view is a view with a child ID of AFX_IDW_PANE_FIRST. Finally, the frame window is made visible if *bMakeVisible* is non-zero. If *bMakeVisible* is zero, the current focus and visible state of the frame window will remain unchanged.  
   
  It is not necessary to call this function when using the framework's implementation of File New and File Open.  
   
@@ -360,13 +360,13 @@ enum Confidence
 ### Remarks  
  Use this function to determine the type of document template to use for opening a file. If your application supports multiple file types, for example, you can use this function to determine which of the available document templates is appropriate for a given file by calling `MatchDocType` for each template in turn, and choosing a template according to the confidence value returned.  
   
- If the file specified by *lpszPathName* is already open, this function returns **CDocTemplate::yesAlreadyOpen** and copies the file's **CDocument** object into the object at *rpDocMatch*.  
+ If the file specified by *lpszPathName* is already open, this function returns `CDocTemplate::yesAlreadyOpen` and copies the file's `CDocument` object into the object at *rpDocMatch*.  
   
- If the file is not open but the extension in *lpszPathName* matches the extension specified by **CDocTemplate::filterExt**, this function returns **CDocTemplate::yesAttemptNative** and sets *rpDocMatch* to **NULL**. For more information on **CDocTemplate::filterExt**, see [CDocTemplate::GetDocString](#getdocstring).  
+ If the file is not open but the extension in *lpszPathName* matches the extension specified by `CDocTemplate::filterExt`, this function returns `CDocTemplate::yesAttemptNative` and sets *rpDocMatch* to NULL. For more information on `CDocTemplate::filterExt`, see [CDocTemplate::GetDocString](#getdocstring).  
   
- If neither case is true, the function returns **CDocTemplate::yesAttemptForeign**.  
+ If neither case is true, the function returns `CDocTemplate::yesAttemptForeign`.  
   
- The default implementation does not return **CDocTemplate::maybeAttemptForeign** or **CDocTemplate::maybeAttemptNative**. Override this function to implement type-matching logic appropriate to your application, perhaps using these two values from the **Confidence** enumeration.  
+ The default implementation does not return `CDocTemplate::maybeAttemptForeign` or `CDocTemplate::maybeAttemptNative`. Override this function to implement type-matching logic appropriate to your application, perhaps using these two values from the **Confidence** enumeration.  
   
 ##  <a name="opendocumentfile"></a>  CDocTemplate::OpenDocumentFile  
  Opens a file specified by a path.  
@@ -384,13 +384,13 @@ virtual CDocument* OpenDocumentFile(
  Pointer to the path of the file that contains the document to be opened.  
   
  [in] *bAddToMRU*  
- `TRUE` indicates the document is one of the most recent files; `FALSE` indicates the document is not one of the most recent files.  
+ TRUE indicates the document is one of the most recent files; FALSE indicates the document is not one of the most recent files.  
   
 ### Return Value  
- A pointer to the document whose file is named by *lpszPathName*; `NULL` if unsuccessful.  
+ A pointer to the document whose file is named by *lpszPathName*; NULL if unsuccessful.  
   
 ### Remarks  
- Opens the file whose path is specified by *lpszPathName*. If *lpszPathName* is `NULL`, a new file that contains a document of the type associated with this template is created.  
+ Opens the file whose path is specified by *lpszPathName*. If *lpszPathName* is NULL, a new file that contains a document of the type associated with this template is created.  
   
 ##  <a name="removedocument"></a>  CDocTemplate::RemoveDocument  
  Removes the document pointed to by *pDoc* from the list of documents associated with this template.  
@@ -444,7 +444,7 @@ virtual void SetDefaultTitle(CDocument* pDocument) = 0;
  Pointer to the document whose title is to be set.  
   
 ### Remarks  
- For information on the default title, see the description of **CDocTemplate::docName** in [CDocTemplate::GetDocString](#getdocstring).  
+ For information on the default title, see the description of `CDocTemplate::docName` in [CDocTemplate::GetDocString](#getdocstring).  
   
 ##  <a name="setserverinfo"></a>  CDocTemplate::SetServerInfo  
  Determines the resources and classes when the server document is embedded or edited in-place.  
@@ -492,7 +492,7 @@ CFrameWnd* CreatePreviewFrame(
  A pointer to a document object, whose content will be previewed.  
   
 ### Return Value  
- A valid pointer to a `CFrameWnd` object, or `NULL` if the creation fails.  
+ A valid pointer to a `CFrameWnd` object, or NULL if the creation fails.  
   
 ### Remarks  
   

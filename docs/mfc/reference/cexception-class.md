@@ -82,7 +82,7 @@ explicit CException(BOOL bAutoDelete);
   
 ### Parameters  
  *b_AutoDelete*  
- Specify **TRUE** if the memory for the `CException` object has been allocated on the heap. This will cause the `CException` object to be deleted when the `Delete` member function is called to delete the exception. Specify **FALSE** if the `CException` object is on the stack or is a global object. In this case, the `CException` object will not be deleted when the `Delete` member function is called.  
+ Specify TRUE if the memory for the `CException` object has been allocated on the heap. This will cause the `CException` object to be deleted when the `Delete` member function is called to delete the exception. Specify FALSE if the `CException` object is on the stack or is a global object. In this case, the `CException` object will not be deleted when the `Delete` member function is called.  
   
 ### Remarks  
  You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type. This documentation is provided only for completeness.  
@@ -162,7 +162,7 @@ virtual int ReportError(
   
 ### Parameters  
  *nType*  
- Specifies the style of the message box. Apply any combination of the [message-box styles](styles-used-by-mfc.md#message-box-styles) to the box. If you don't specify this parameter, the default is **MB_OK**.  
+ Specifies the style of the message box. Apply any combination of the [message-box styles](styles-used-by-mfc.md#message-box-styles) to the box. If you don't specify this parameter, the default is MB_OK.  
   
  *nMessageID*  
  Specifies the resource ID (string table entry) of a message to display if the exception object does not have an error message. If 0, the message "No error message is available" is displayed.  

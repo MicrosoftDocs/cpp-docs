@@ -95,7 +95,7 @@ explicit CDocObjectServer(
  A pointer to the `IOleDocumentSite` interface implemented by the container.  
   
 ### Remarks  
- When a DocObject is active, the client site OLE interface ( `IOleDocumentSite`) is what allows the DocObject server to communicate with its client (the container). When a DocObject server is activated, it first checks that the container implements the `IOleDocumentSite` interface. If so, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) is called to see if the container supports DocObjects. By default, `GetDocObjectServer` returns **NULL**. You must override `COleServerDoc::GetDocObjectServer` to construct a new `CDocObjectServer` object or a derived object of your own, with pointers to the `COleServerDoc` container and its `IOleDocumentSite` interface as arguments to the constructor.  
+ When a DocObject is active, the client site OLE interface ( `IOleDocumentSite`) is what allows the DocObject server to communicate with its client (the container). When a DocObject server is activated, it first checks that the container implements the `IOleDocumentSite` interface. If so, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) is called to see if the container supports DocObjects. By default, `GetDocObjectServer` returns NULL. You must override `COleServerDoc::GetDocObjectServer` to construct a new `CDocObjectServer` object or a derived object of your own, with pointers to the `COleServerDoc` container and its `IOleDocumentSite` interface as arguments to the constructor.  
   
 ##  <a name="onactivateview"></a>  CDocObjectServer::OnActivateView  
  Call this function to display the DocObject view.  
@@ -105,7 +105,7 @@ virtual HRESULT OnActivateView();
 ```  
   
 ### Return Value  
- Returns an error or warning value. By default, returns **NOERROR** if successful; otherwise, **E_FAIL**.  
+ Returns an error or warning value. By default, returns NOERROR if successful; otherwise, E_FAIL.  
   
 ### Remarks  
  This function creates an in-place frame window, draws scrollbars within the view, sets up the menus the server shares with its container, adds frame controls, sets the active object, then finally shows the in-place frame window and sets the focus.  

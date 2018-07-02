@@ -52,11 +52,11 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |[CDHtmlDialog::GetDHtmlDocument](#getdhtmldocument)|Retrieves the IHTMLDocument2 interface on the currently loaded HTML document.|  
 |[CDHtmlDialog::GetDropTarget](#getdroptarget)|Called by the contained WebBrowser control when it is being used as a drop target to allow the dialog to supply an alternative [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679).|  
 |[CDHtmlDialog::GetElement](#getelement)|Gets an interface on an HTML element.|  
-|[CDHtmlDialog::GetElementHtml](#getelementhtml)|Retrieves the **innerHTML** property of an HTML element.|  
+|[CDHtmlDialog::GetElementHtml](#getelementhtml)|Retrieves the `innerHTML` property of an HTML element.|  
 |[CDHtmlDialog::GetElementInterface](#getelementinterface)|Retrieves the requested interface pointer from an HTML element.|  
 |[CDHtmlDialog::GetElementProperty](#getelementproperty)|Retrieves the value of an HTML element's property.|  
-|[CDHtmlDialog::GetElementText](#getelementtext)|Retrieves the **innerText** property of an HTML element.|  
-|[CDHtmlDialog::GetEvent](#getevent)|Gets the **IHTMLEventObj** pointer to the current event object.|  
+|[CDHtmlDialog::GetElementText](#getelementtext)|Retrieves the `innerText` property of an HTML element.|  
+|[CDHtmlDialog::GetEvent](#getevent)|Gets the `IHTMLEventObj` pointer to the current event object.|  
 |[CDHtmlDialog::GetExternal](#getexternal)|Gets the host's `IDispatch` interface.|  
 |[CDHtmlDialog::GetHostInfo](#gethostinfo)|Retrieves the host's UI capabilities.|  
 |[CDHtmlDialog::GetOptionKeyPath](#getoptionkeypath)|Retrieves the registry key under which user preferences are stored.|  
@@ -65,16 +65,16 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |[CDHtmlDialog::LoadFromResource](#loadfromresource)|Loads the specified resource into the WebBrowser control.|  
 |[CDHtmlDialog::Navigate](#navigate)|Navigates to the specified URL.|  
 |[CDHtmlDialog::OnBeforeNavigate](#onbeforenavigate)|Called by the framework before a navigation event is fired.|  
-|[CDHtmlDialog::OnDocumentComplete](#ondocumentcomplete)|Called by the framework to notify an application when a document has reached the `READYSTATE_COMPLETE` state.|  
+|[CDHtmlDialog::OnDocumentComplete](#ondocumentcomplete)|Called by the framework to notify an application when a document has reached the READYSTATE_COMPLETE state.|  
 |[CDHtmlDialog::OnDocWindowActivate](#ondocwindowactivate)|Called by the framework when the document window is activated or deactivated.|  
 |[CDHtmlDialog::OnFrameWindowActivate](#onframewindowactivate)|Called by the framework when the frame window is activated or deactivated.|  
 |[CDHtmlDialog::OnInitDialog](#oninitdialog)|Called in response to the WM_INITDIALOG message.|  
 |[CDHtmlDialog::OnNavigateComplete](#onnavigatecomplete)|Called by the framework after a navigation event is completed.|  
 |[CDHtmlDialog::ResizeBorder](#resizeborder)|Alerts the object that it needs to resize its border space.|  
 |[CDHtmlDialog::SetControlProperty](#setcontrolproperty)|Sets the property of an ActiveX control to a new value.|  
-|[CDHtmlDialog::SetElementHtml](#setelementhtml)|Sets the **innerHTML** property of an HTML element.|  
+|[CDHtmlDialog::SetElementHtml](#setelementhtml)|Sets the `innerHTML` property of an HTML element.|  
 |[CDHtmlDialog::SetElementProperty](#setelementproperty)|Sets a property of an HTML element.|  
-|[CDHtmlDialog::SetElementText](#setelementtext)|Sets the **innerText** property of an HTML element.|  
+|[CDHtmlDialog::SetElementText](#setelementtext)|Sets the `innerText` property of an HTML element.|  
 |[CDHtmlDialog::SetExternalDispatch](#setexternaldispatch)|Sets the host's `IDispatch` interface.|  
 |[CDHtmlDialog::SetHostFlags](#sethostflags)|Sets the host's UI flags.|  
 |[CDHtmlDialog::ShowContextMenu](#showcontextmenu)|Called when a context menu is about to be displayed.|  
@@ -174,7 +174,7 @@ CDHtmlDialog(
  The null-terminated string that is the name of an HTML resource.  
   
  *pParentWnd*  
- A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
+ A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is NULL, the dialog object's parent window is set to the main application window.  
   
  *nIDTemplate*  
  Contains the ID number of a dialog-box template resource.  
@@ -251,7 +251,7 @@ void DDX_DHtml_AxControl(
  The name of the property.  
   
  *var*  
- The data member, of type `VARIANT`, [COleVariant](../../mfc/reference/colevariant-class.md), or [CComVariant](../../atl/reference/ccomvariant-class.md), that holds the value exchanged with the ActiveX control property.  
+ The data member, of type VARIANT, [COleVariant](../../mfc/reference/colevariant-class.md), or [CComVariant](../../atl/reference/ccomvariant-class.md), that holds the value exchanged with the ActiveX control property.  
   
 ### Example  
  [!code-cpp[NVC_MFCHtmlHttp#1](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_1.cpp)]  
@@ -447,7 +447,7 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
  See *fEnable* in [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the Windows SDK.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx), as described in the Windows SDK.  
@@ -466,10 +466,10 @@ STDMETHOD(FilterDataObject)(
  See *pDO* in [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the Windows SDK.  
   
  *ppDORet*  
- See *ppDORet* in **IDocHostUIHandler::FilterDataObject** in the Windows SDK.  
+ See *ppDORet* in `IDocHostUIHandler::FilterDataObject` in the Windows SDK.  
   
 ### Return Value  
- Returns **S_FALSE**.  
+ Returns S_FALSE.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx), as described in the Windows SDK.  
@@ -491,7 +491,7 @@ HRESULT GetControlDispatch(
  The `IDispatch` interface of the control if found in the Web page.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="getcontrolproperty"></a>  CDHtmlDialog::GetControlProperty  
  Retrieves the requested property of the specified ActiveX control.  
@@ -554,7 +554,7 @@ HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
  A pointer to a pointer to an HTML document.  
   
 ### Return Value  
- A standard `HRESULT`. Returns `S_OK` if successful.  
+ A standard HRESULT. Returns S_OK if successful.  
   
 ##  <a name="getdroptarget"></a>  CDHtmlDialog::GetDropTarget  
  Called by the contained WebBrowser control when it is being used as a drop target to allow the dialog to supply an alternative [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679).  
@@ -570,10 +570,10 @@ STDMETHOD(GetDropTarget)(
  See *pDropTarget* in [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the Windows SDK.  
   
  *ppDropTarget*  
- See *ppDropTarget* in **IDocHostUIHandler::GetDropTarget** in the Windows SDK.  
+ See *ppDropTarget* in `IDocHostUIHandler::GetDropTarget` in the Windows SDK.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx), as described in the Windows SDK.  
@@ -601,21 +601,21 @@ HRESULT GetElement(
  An `IDispatch` pointer to the requested element or collection of elements.  
   
  *pbCollection*  
- A **BOOL** indicating whether the object represented by *ppdisp* is a single element or a collection of elements.  
+ A BOOL indicating whether the object represented by *ppdisp* is a single element or a collection of elements.  
   
  *pphtmlElement*  
- An **IHTMLElement** pointer to the requested element.  
+ An `IHTMLElement` pointer to the requested element.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- Use the first overload if you need to handle conditions in which there may be more than one element with the specified ID. You can use the last parameter to find out whether the returned interface pointer is to a collection or a single item. If the interface pointer is on a collection, you can query for the **IHTMLElementCollection** and use its **item** property to refer to the elements by ordinal position.  
+ Use the first overload if you need to handle conditions in which there may be more than one element with the specified ID. You can use the last parameter to find out whether the returned interface pointer is to a collection or a single item. If the interface pointer is on a collection, you can query for the `IHTMLElementCollection` and use its `item` property to refer to the elements by ordinal position.  
   
  The second overload will fail if there is more than one element with the same ID in the page.  
   
 ##  <a name="getelementhtml"></a>  CDHtmlDialog::GetElementHtml  
- Retrieves the **innerHTML** property of the HTML element identified by `szElementId`.  
+ Retrieves the `innerHTML` property of the HTML element identified by *szElementId*.  
   
 ```  
 BSTR GetElementHtml(LPCTSTR szElementId);
@@ -626,7 +626,7 @@ BSTR GetElementHtml(LPCTSTR szElementId);
  The ID of an HTML element.  
   
 ### Return Value  
- The **innerHTML** property of the HTML element identified by *szElementId* or **NULL** if the element could not be found.  
+ The `innerHTML` property of the HTML element identified by *szElementId* or NULL if the element could not be found.  
   
 ##  <a name="getelementinterface"></a>  CDHtmlDialog::GetElementInterface  
  Retrieves the requested interface pointer from the HTML element identified by *szElementId*.  
@@ -654,7 +654,7 @@ HRESULT GetElementInterface(
  The interface ID (IID) of the requested interface.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Example  
  [!code-cpp[NVC_MFCHtmlHttp#4](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_4.cpp)]  
@@ -679,7 +679,7 @@ VARIANT GetElementProperty(
  The value of the property or an empty variant if the property or element could not be found.  
   
 ##  <a name="getelementtext"></a>  CDHtmlDialog::GetElementText  
- Retrieves the **innerText** property of the HTML element identified by *szElementId*.  
+ Retrieves the `innerText` property of the HTML element identified by *szElementId*.  
   
 ```  
 BSTR GetElementText(LPCTSTR szElementId);
@@ -690,10 +690,10 @@ BSTR GetElementText(LPCTSTR szElementId);
  The ID of an HTML element.  
   
 ### Return Value  
- The **innerText** property of the HTML element identified by *szElementId* or **NULL** if the property or element could not be found.  
+ The `innerText` property of the HTML element identified by *szElementId* or NULL if the property or element could not be found.  
   
 ##  <a name="getevent"></a>  CDHtmlDialog::GetEvent  
- Returns the **IHTMLEventObj** pointer to the current event object.  
+ Returns the `IHTMLEventObj` pointer to the current event object.  
   
 ```  
 HRESULT GetEvent(IHTMLEventObj** ppEventObj);
@@ -701,10 +701,10 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj);
   
 ### Parameters  
  *ppEventObj*  
- Address of a pointer that will be filled with the **IHTMLEventObj** interface pointer.  
+ Address of a pointer that will be filled with the `IHTMLEventObj` interface pointer.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  This function should only be called from within a DHTML event handler.  
@@ -721,7 +721,7 @@ STDMETHOD(GetExternal)(IDispatch** ppDispatch);
  See *ppDispatch* in [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK` on success or **E_NOTIMPL** on failure.  
+ Returns S_OK on success or E_NOTIMPL on failure.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx), as described in the Windows SDK.  
@@ -738,7 +738,7 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
  See *pInfo* in [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx), as described in the Windows SDK.  
@@ -757,10 +757,10 @@ STDMETHOD(GetOptionKeyPath)(
  See *pchKey* in [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the Windows SDK.  
   
  *dw*  
- See *dw* in **IDocHostUIHandler::GetOptionKeyPath** in the Windows SDK.  
+ See *dw* in `IDocHostUIHandler::GetOptionKeyPath` in the Windows SDK.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx), as described in the Windows SDK.  
@@ -773,7 +773,7 @@ STDMETHOD(HideUI)(void);
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx), as described in the Windows SDK.  
@@ -786,7 +786,7 @@ virtual BOOL IsExternalDispatchSafe();
 ```  
   
 ### Return Value  
- Returns **FALSE**.  
+ Returns FALSE.  
   
 ##  <a name="loadfromresource"></a>  CDHtmlDialog::LoadFromResource  
  Loads the specified resource into the WebBrowser control in the DHTML dialog.  
@@ -804,7 +804,7 @@ BOOL LoadFromResource(UINT nRes);
  The ID of the resource to load.  
   
 ### Return Value  
- **TRUE** if successful; otherwise **FALSE**.  
+ TRUE if successful; otherwise FALSE.  
   
 ##  <a name="m_busehtmltitle"></a>  CDHtmlDialog::m_bUseHtmlTitle  
  Indicates whether to use the HTML document's title as the dialog caption.  
@@ -814,7 +814,7 @@ BOOL m_bUseHtmlTitle;
 ```  
   
 ### Remarks  
- If **m**_ **bUseHtmlTitle** is **true**, the dialog caption is set equal to the title of the HTML document; otherwise, the caption in the dialog resource is used.  
+ If **m**_ **bUseHtmlTitle** is TRUE, the dialog caption is set equal to the title of the HTML document; otherwise, the caption in the dialog resource is used.  
   
 ##  <a name="m_nhtmlresid"></a>  CDHtmlDialog::m_nHtmlResID  
  Resource ID of HTML resource to be displayed.  
@@ -884,10 +884,10 @@ void Navigate(
  A pointer to a value that specifies the HTTP headers to send to the server. These headers are added to the default Internet Explorer headers. The headers can specify such information as the action required of the server, the type of data being passed to the server, or a status code. This parameter is ignored if the URL is not an HTTP URL.  
   
  *lpvPostData*  
- A pointer to the data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, **Navigate** issues an HTTP GET transaction. This parameter is ignored if the URL is not an HTTP URL.  
+ A pointer to the data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, `Navigate` issues an HTTP GET transaction. This parameter is ignored if the URL is not an HTTP URL.  
   
  *dwPostDataLen*  
- Data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, **Navigate** issues an HTTP GET transaction. This parameter is ignored if URL is not an HTTP URL.  
+ Data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, `Navigate` issues an HTTP GET transaction. This parameter is ignored if URL is not an HTTP URL.  
   
 ##  <a name="onbeforenavigate"></a>  CDHtmlDialog::OnBeforeNavigate  
  Called by the framework to cause an event to fire before a navigation occurs.  
@@ -906,7 +906,7 @@ virtual void OnBeforeNavigate(
  A pointer to a string containing the URL to navigate to.  
   
 ##  <a name="ondocumentcomplete"></a>  CDHtmlDialog::OnDocumentComplete  
- Called by the framework to notify an application when a document has achieved the `READYSTATE_COMPLETE` state.  
+ Called by the framework to notify an application when a document has achieved the READYSTATE_COMPLETE state.  
   
 ```  
 virtual void OnDocumentComplete(
@@ -933,7 +933,7 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
  See *fActivate* in [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the Windows SDK.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implemention of [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx), as described in the Windows SDK.  
@@ -950,25 +950,25 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
  See *fActivate* in [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the Windows SDK.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx), as described in the Windows SDK.  
   
 ##  <a name="oninitdialog"></a>  CDHtmlDialog::OnInitDialog  
- Called in response to the **WM_INITDIALOG** message.  
+ Called in response to the WM_INITDIALOG message.  
   
 ```  
 virtual BOOL OnInitDialog();
 ```  
   
 ### Return Value  
- The default implementation returns **TRUE**.  
+ The default implementation returns TRUE.  
   
 ### Remarks  
  This message is sent to the dialog box during the `Create`, `CreateIndirect`, or `DoModal` calls, which occur immediately before the dialog box is displayed.  
   
- Override this member function if you need to perform special processing when the dialog box is initialized. In the overridden version, first call the base class `OnInitDialog` but disregard its return value. You will normally return **TRUE** from your overridden member function.  
+ Override this member function if you need to perform special processing when the dialog box is initialized. In the overridden version, first call the base class `OnInitDialog` but disregard its return value. You will normally return TRUE from your overridden member function.  
   
  Windows calls the `OnInitDialog` function through the standard global dialog-box procedure common to all Microsoft Foundation Class Library dialog boxes, rather than through your message map, so you do not need a message-map entry for this member function.  
   
@@ -1003,13 +1003,13 @@ STDMETHOD(ResizeBorder)(
  See *prcBorder* in [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the Windows SDK.  
   
  *pUIWindow*  
- See *pUIWindow* in **IDocHostUIHandler::ResizeBorder** in the Windows SDK.  
+ See *pUIWindow* in `IDocHostUIHandler::ResizeBorder` in the Windows SDK.  
   
  *fFrameWindow*  
- See *fFrameWindow* in **IDocHostUIHandler::ResizeBorder** in the Windows SDK.  
+ See *fFrameWindow* in `IDocHostUIHandler::ResizeBorder` in the Windows SDK.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ##  <a name="setcontrolproperty"></a>  CDHtmlDialog::SetControlProperty  
  Sets the property of an ActiveX control to a new value.  
@@ -1041,7 +1041,7 @@ void SetControlProperty(
  The dispatch ID of the property to set.  
   
  *pVar*  
- Pointer to a **VARIANT** containing the new property value.  
+ Pointer to a VARIANT containing the new property value.  
   
  *pdispControl*  
  Pointer to an ActiveX control's `IDispatch` interface.  
@@ -1050,7 +1050,7 @@ void SetControlProperty(
  String containing the name of the property to set.  
   
 ##  <a name="setelementhtml"></a>  CDHtmlDialog::SetElementHtml  
- Sets the **innerHTML** property of an HTML element.  
+ Sets the `innerHTML` property of an HTML element.  
   
 ```  
 void SetElementHtml(
@@ -1068,10 +1068,10 @@ void SetElementHtml(
  The ID of an HTML element.  
   
  *bstrText*  
- The new value of the **innerHTML** property.  
+ The new value of the `innerHTML` property.  
   
  *punkElem*  
- The **IUnknown** pointer of an HTML element.  
+ The `IUnknown` pointer of an HTML element.  
   
 ##  <a name="setelementproperty"></a>  CDHtmlDialog::SetElementProperty  
  Sets a property of an HTML element.  
@@ -1094,7 +1094,7 @@ void SetElementProperty(
  The new value of the property.  
   
 ##  <a name="setelementtext"></a>  CDHtmlDialog::SetElementText  
- Sets the **innerText** property of an HTML element.  
+ Sets the `innerText` property of an HTML element.  
   
 ```  
 void SetElementText(
@@ -1112,10 +1112,10 @@ void SetElementText(
  The ID of an HTML element.  
   
  *bstrText*  
- The new value of the **innerText** property.  
+ The new value of the `innerText` property.  
   
  *punkElem*  
- The **IUnknown** pointer of an HTML element.  
+ The `IUnknown` pointer of an HTML element.  
   
 ##  <a name="setexternaldispatch"></a>  CDHtmlDialog::SetExternalDispatch  
  Sets the host's `IDispatch` interface.  
@@ -1155,16 +1155,16 @@ STDMETHOD(ShowContextMenu)(
  See *dwID* in [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the Windows SDK.  
   
  *ppt*  
- See *ppt* in **IDocHostUIHandler::ShowContextMenu** in the Windows SDK.  
+ See *ppt* in `IDocHostUIHandler::ShowContextMenu` in the Windows SDK.  
   
  *pcmdtReserved*  
- See *pcmdtReserved* in **IDocHostUIHandler::ShowContextMenu** in the Windows SDK.  
+ See *pcmdtReserved* in `IDocHostUIHandler::ShowContextMenu` in the Windows SDK.  
   
  *pdispReserved*  
- See *pdispReserved* in **IDocHostUIHandler::ShowContextMenu** in the Windows SDK.  
+ See *pdispReserved* in `IDocHostUIHandler::ShowContextMenu` in the Windows SDK.  
   
 ### Return Value  
- Returns **S_FALSE**.  
+ Returns S_FALSE.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx), as described in the Windows SDK.  
@@ -1186,19 +1186,19 @@ STDMETHOD(ShowUI)(
  See *dwID* in [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the Windows SDK.  
   
  *pActiveObject*  
- See *d pActiveObject* in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
+ See *d pActiveObject* in `IDocHostUIHandler::ShowUI` in the Windows SDK.  
   
  *pCommandTarget*  
- See *pCommandTarget* in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
+ See *pCommandTarget* in `IDocHostUIHandler::ShowUI` in the Windows SDK.  
   
  *pFrame*  
- See *pFrame* in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
+ See *pFrame* in `IDocHostUIHandler::ShowUI` in the Windows SDK.  
   
  *pDoc*  
- See *pDoc* in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
+ See *pDoc* in `IDocHostUIHandler::ShowUI` in the Windows SDK.  
   
 ### Return Value  
- Returns **S_FALSE**.  
+ Returns S_FALSE.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx), as described in the Windows SDK.  
@@ -1218,13 +1218,13 @@ STDMETHOD(TranslateAccelerator)(
  See *lpMsg* in [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the Windows SDK.  
   
  *pguidCmdGroup*  
- See *pguidCmdGroup* in **IDocHostUIHandler::TranslateAccelerator** in the Windows SDK.  
+ See *pguidCmdGroup* in `IDocHostUIHandler::TranslateAccelerator` in the Windows SDK.  
   
  *nCmdID*  
- See *nCmdID* in **IDocHostUIHandler::TranslateAccelerator** in the Windows SDK.  
+ See *nCmdID* in `IDocHostUIHandler::TranslateAccelerator` in the Windows SDK.  
   
 ### Return Value  
- Returns **S_FALSE**.  
+ Returns S_FALSE.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx), as described in the Windows SDK.  
@@ -1244,13 +1244,13 @@ STDMETHOD(TranslateUrl)(
  See *dwTranslate* in [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the Windows SDK.  
   
  *pchURLIn*  
- See *pchURLIn* in **IDocHostUIHandler::TranslateUrl** in the Windows SDK.  
+ See *pchURLIn* in `IDocHostUIHandler::TranslateUrl` in the Windows SDK.  
   
  *ppchURLOut*  
- See *ppchURLOut* in **IDocHostUIHandler::TranslateUrl** in the Windows SDK.  
+ See *ppchURLOut* in `IDocHostUIHandler::TranslateUrl` in the Windows SDK.  
   
 ### Return Value  
- Returns **S_FALSE**.  
+ Returns S_FALSE.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx), as described in the Windows SDK.  
@@ -1263,7 +1263,7 @@ STDMETHOD(UpdateUI)(void);
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx), as described in the Windows SDK.  
