@@ -46,9 +46,9 @@ class CHotKeyCtrl : public CWnd
   
  This control (and therefore the `CHotKeyCtrl` class) is available only to programs running under Windows 95/98 and Windows NT version 3.51 and later.  
   
- When the user has chosen a key combination, the application can retrieve the specified key combination from the control and use the **WM_SETHOTKEY** message to set up the hot key in the system. Whenever the user presses the hot key thereafter, from any part of the system, the window specified in the **WM_SETHOTKEY** message receives a **WM_SYSCOMMAND** message specifying **SC_HOTKEY**. This message activates the window that receives it. The hot key remains valid until the application that called **WM_SETHOTKEY** exits.  
+ When the user has chosen a key combination, the application can retrieve the specified key combination from the control and use the WM_SETHOTKEY message to set up the hot key in the system. Whenever the user presses the hot key thereafter, from any part of the system, the window specified in the WM_SETHOTKEY message receives a WM_SYSCOMMAND message specifying SC_HOTKEY. This message activates the window that receives it. The hot key remains valid until the application that called WM_SETHOTKEY exits.  
   
- This mechanism is different from the hot key support that depends on the **WM_HOTKEY** message and the Windows [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) and [UnregisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646327) functions.  
+ This mechanism is different from the hot key support that depends on the WM_HOTKEY message and the Windows [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) and [UnregisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646327) functions.  
   
  For more information on using `CHotKeyCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).  
   
@@ -90,7 +90,7 @@ virtual BOOL Create(
  Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).  
   
  *pParentWnd*  
- Specifies the hot key control's parent window, usually a [CDialog](../../mfc/reference/cdialog-class.md). It must not be **NULL**.  
+ Specifies the hot key control's parent window, usually a [CDialog](../../mfc/reference/cdialog-class.md). It must not be NULL.  
   
  *nID*  
  Specifies the hot key control's ID.  
@@ -159,13 +159,13 @@ void GetHotKey(
   
 |Flag|Corresponding Key|  
 |----------|-----------------------|  
-|`HOTKEYF_ALT`|ALT key|  
-|`HOTKEYF_CONTROL`|CTRL key|  
-|`HOTKEYF_EXT`|Extended key|  
-|`HOTKEYF_SHIFT`|SHIFT key|  
+|HOTKEYF_ALT|ALT key|  
+|HOTKEYF_CONTROL|CTRL key|  
+|HOTKEYF_EXT|Extended key|  
+|HOTKEYF_SHIFT|SHIFT key|  
   
 ### Return Value  
- In the first overloaded method, a `DWORD` that contains the virtual key code and modifier flags. The low-order byte of the low-order word contains the virtual key code, the high-order byte of the low-order word contains the modifier flags, and the high-order word is zero.  
+ In the first overloaded method, a DWORD that contains the virtual key code and modifier flags. The low-order byte of the low-order word contains the virtual key code, the high-order byte of the low-order word contains the modifier flags, and the high-order word is zero.  
   
 ### Remarks  
  The virtual key code and the modifier keys together define the keyboard shortcut.  
@@ -197,7 +197,7 @@ static CString GetKeyName(
  The virtual key code.  
   
  *fExtended*  
- If the virtual key code is an extended key, **TRUE**; otherwise **FALSE**.  
+ If the virtual key code is an extended key, TRUE; otherwise FALSE.  
   
 ### Return Value  
  The localized name of the key specified by the *vk* parameter. If the key has no mapped name, `GetKeyName` returns an empty string.  
@@ -228,10 +228,10 @@ void SetHotKey(
   
 |Flag|Corresponding Key|  
 |----------|-----------------------|  
-|`HOTKEYF_ALT`|ALT key|  
-|`HOTKEYF_CONTROL`|CTRL key|  
-|`HOTKEYF_EXT`|Extended key|  
-|`HOTKEYF_SHIFT`|SHIFT key|  
+|HOTKEYF_ALT|ALT key|  
+|HOTKEYF_CONTROL|CTRL key|  
+|HOTKEYF_EXT|Extended key|  
+|HOTKEYF_SHIFT|SHIFT key|  
   
 ### Remarks  
  The virtual key code and the modifier keys together define the keyboard shortcut.  
@@ -249,21 +249,21 @@ void SetRules(
  *wInvalidComb*  
  Array of flags that specifies invalid key combinations. It can be a combination of the following values:  
   
-- `HKCOMB_A` ALT  
+- HKCOMB_A ALT  
   
-- `HKCOMB_C` CTRL  
+- HKCOMB_C CTRL  
   
-- `HKCOMB_CA` CTRL+ALT  
+- HKCOMB_CA CTRL+ALT  
   
-- `HKCOMB_NONE` Unmodified keys  
+- HKCOMB_NONE Unmodified keys  
   
-- `HKCOMB_S` SHIFT  
+- HKCOMB_S SHIFT  
   
-- `HKCOMB_SA` SHIFT+ALT  
+- HKCOMB_SA SHIFT+ALT  
   
-- `HKCOMB_SC` SHIFT+CTRL  
+- HKCOMB_SC SHIFT+CTRL  
   
-- `HKCOMB_SCA` SHIFT+CTRL+ALT  
+- HKCOMB_SCA SHIFT+CTRL+ALT  
   
  *wModifiers*  
  Array of flags that specifies the key combination to use when the user enters an invalid combination. For more information on the modifier flags, see [GetHotKey](#gethotkey).  

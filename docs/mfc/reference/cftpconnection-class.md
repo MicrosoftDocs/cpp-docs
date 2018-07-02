@@ -100,26 +100,26 @@ CFtpConnection(
  The context identifier for the operation. *dwContext* identifies the operation's status information returned by [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback). The default is set to 1; however, you can explicitly assign a specific context ID for the operation. The object and any work it does will be associated with that context ID.  
   
  *pstrUserName*  
- Pointer to a null-terminated string that specifies the name of the user to log in. If **NULL**, the default is anonymous.  
+ Pointer to a null-terminated string that specifies the name of the user to log in. If NULL, the default is anonymous.  
   
  *pstrPassword*  
- A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are **NULL**, the default anonymous password is the user's email name. If *pstrPassword* is **NULL** (or an empty string) but *pstrUserName* is not **NULL**, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:  
+ A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:  
   
 |*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
-|**NULL** or " "|**NULL** or " "|"anonymous"|User's email name|  
-|Non- **NULL** String|**NULL** or " "|*pstrUserName*|" "|  
-|**NULL** Non- **NULL** String|**ERROR**|**ERROR**||  
-|Non- **NULL** String|Non- **NULL** String|*pstrUserName*|*pstrPassword*|  
+|NULL or " "|NULL or " "|"anonymous"|User's email name|  
+|Non- NULL String|NULL or " "|*pstrUserName*|" "|  
+|NULL Non- NULL String|ERROR|ERROR||  
+|Non- NULL String|Non- NULL String|*pstrUserName*|*pstrPassword*|  
   
  *nPort*  
  A number that identifies the TCP/IP port to use on the server.  
   
  *bPassive*  
- Specifies passive or active mode for this FTP session. If set to **TRUE**, it sets the Win32 API *dwFlag* to **INTERNET_FLAG_PASSIVE**.  
+ Specifies passive or active mode for this FTP session. If set to TRUE, it sets the Win32 API *dwFlag* to INTERNET_FLAG_PASSIVE.  
   
 ### Remarks  
- You never create a `CFtpConnection` object directly. Instead, call [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection), which creates the **CFptConnection** object.  
+ You never create a `CFtpConnection` object directly. Instead, call [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection), which creates the `CFptConnection` object.  
   
 ##  <a name="command"></a>  CFtpConnection::Command  
  Sends a command directly to an FTP server.  
@@ -139,9 +139,9 @@ CInternetFile* Command(
  *eResponse*  
  Determines whether a response is expected from the FTP server. Can be one of the following values:  
   
-- **CmdRespNone** No response is expected.  
+- `CmdRespNone` No response is expected.  
   
-- **CmdRespRead** A response is expected.  
+- `CmdRespRead` A response is expected.  
   
  *dwFlags*  
  A value containing the flags that control this function. For a complete list, see [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133).  
@@ -265,7 +265,7 @@ BOOL GetFile(
  A pointer to a null-terminated string containing the name of the file to create on the local system.  
   
  *bFailIfExists*  
- Indicates whether the file name may already be used by an existing file. If the local file name already exists, and this parameter is **TRUE**, `GetFile` fails. Otherwise, `GetFile` will erase the existing copy of the file.  
+ Indicates whether the file name may already be used by an existing file. If the local file name already exists, and this parameter is TRUE, `GetFile` fails. Otherwise, `GetFile` will erase the existing copy of the file.  
   
  *dwAttributes*  
  Indicates the attributes of the file. This can be any combination of the following FILE_ATTRIBUTE_* flags.  
@@ -397,7 +397,7 @@ BOOL Remove(LPCTSTR pstrFileName);
  Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
- The *pstrFileName* parameter can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. The **Remove** function translates the directory name separators to the appropriate characters before they are used.  
+ The *pstrFileName* parameter can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. The `Remove` function translates the directory name separators to the appropriate characters before they are used.  
   
 ##  <a name="removedirectory"></a>  CFtpConnection::RemoveDirectory  
  Call this member function to remove the specified directory from the connected server.  
@@ -438,7 +438,7 @@ BOOL Rename(
  Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
- The *pstrExisting* and *pstrNew* parameters can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. **Rename** translates the directory name separators to the appropriate characters before they are used.  
+ The *pstrExisting* and *pstrNew* parameters can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `Rename` translates the directory name separators to the appropriate characters before they are used.  
   
 ##  <a name="setcurrentdirectory"></a>  CFtpConnection::SetCurrentDirectory  
  Call this member function to change to a different directory on the FTP server.  
