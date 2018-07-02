@@ -88,7 +88,7 @@ class CMenu : public CObject
 ## Remarks  
  It provides member functions for creating, tracking, updating, and destroying a menu.  
   
- Create a `CMenu` object on the stack frame as a local, then call `CMenu`'s member functions to manipulate the new menu as needed. Next, call [CWnd::SetMenu](../../mfc/reference/cwnd-class.md#setmenu) to set the menu to a window, followed immediately by a call to the `CMenu` object's [Detach](#detach) member function. The `CWnd::SetMenu` member function sets the window's menu to the new menu, causes the window to be redrawn to reflect the menu change, and also passes ownership of the menu to the window. The call to `Detach` detaches the `HMENU` from the `CMenu` object, so that when the local `CMenu` variable passes out of scope, the `CMenu` object destructor does not attempt to destroy a menu it no longer owns. The menu itself is automatically destroyed when the window is destroyed.  
+ Create a `CMenu` object on the stack frame as a local, then call `CMenu`'s member functions to manipulate the new menu as needed. Next, call [CWnd::SetMenu](../../mfc/reference/cwnd-class.md#setmenu) to set the menu to a window, followed immediately by a call to the `CMenu` object's [Detach](#detach) member function. The `CWnd::SetMenu` member function sets the window's menu to the new menu, causes the window to be redrawn to reflect the menu change, and also passes ownership of the menu to the window. The call to `Detach` detaches the HMENU from the `CMenu` object, so that when the local `CMenu` variable passes out of scope, the `CMenu` object destructor does not attempt to destroy a menu it no longer owns. The menu itself is automatically destroyed when the window is destroyed.  
   
  You can use the [LoadMenuIndirect](#loadmenuindirect) member function to create a menu from a template in memory, but a menu created from a resource by a call to [LoadMenu](#loadmenu) is more easily maintained, and the menu resource itself can be created and modified by the menu editor.  
   
@@ -121,16 +121,16 @@ BOOL AppendMenu(
  Specifies information about the state of the new menu item when it is added to the menu. It consists of one or more of the values listed in the Remarks section.  
   
  *nIDNewItem*  
- Specifies either the command ID of the new menu item or, if *nFlags* is set to **MF_POPUP**, the menu handle ( `HMENU`) of a pop-up menu. The *nIDNewItem* parameter is ignored (not needed) if *nFlags* is set to **MF_SEPARATOR**.  
+ Specifies either the command ID of the new menu item or, if *nFlags* is set to MF_POPUP, the menu handle ( `HMENU`) of a pop-up menu. The *nIDNewItem* parameter is ignored (not needed) if *nFlags* is set to MF_SEPARATOR.  
   
  *lpszNewItem*  
  Specifies the content of the new menu item. The *nFlags* parameter is used to interpret *lpszNewItem* in the following way:  
   
 |nFlags|Interpretation of lpszNewItem|  
 |------------|-----------------------------------|  
-|`MF_OWNERDRAW`|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application when it processes `WM_MEASUREITEM` and `WM_DRAWITEM` messages. The value is stored in the **itemData** member of the structure supplied with those messages.|  
-|`MF_STRING`|Contains a pointer to a null-terminated string. This is the default interpretation.|  
-|`MF_SEPARATOR`|The *lpszNewItem* parameter is ignored (not needed).|  
+|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application when it processes WM_MEASUREITEM and WM_DRAWITEM messages. The value is stored in the `itemData` member of the structure supplied with those messages.|  
+|MF_STRING|Contains a pointer to a null-terminated string. This is the default interpretation.|  
+|MF_SEPARATOR|The *lpszNewItem* parameter is ignored (not needed).|  
   
  *pBmp*  
  Points to a `CBitmap` object that will be used as the menu item.  
@@ -139,41 +139,41 @@ BOOL AppendMenu(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- The application can specify the state of the menu item by setting values in *nFlags*. When *nIDNewItem* specifies a pop-up menu, it becomes part of the menu to which it is appended. If that menu is destroyed, the appended menu will also be destroyed. An appended menu should be detached from a `CMenu` object to avoid conflict. Note that **MF_STRING** and `MF_OWNERDRAW` are not valid for the bitmap version of `AppendMenu`.  
+ The application can specify the state of the menu item by setting values in *nFlags*. When *nIDNewItem* specifies a pop-up menu, it becomes part of the menu to which it is appended. If that menu is destroyed, the appended menu will also be destroyed. An appended menu should be detached from a `CMenu` object to avoid conflict. Note that MF_STRING and MF_OWNERDRAW are not valid for the bitmap version of `AppendMenu`.  
   
  The following list describes the flags that may be set in *nFlags*:  
   
-- **MF_CHECKED** Acts as a toggle with **MF_UNCHECKED** to place the default check mark next to the item. When the application supplies check-mark bitmaps (see the [SetMenuItemBitmaps](#setmenuitembitmaps) member function), the "check mark on" bitmap is displayed.  
+- MF_CHECKED Acts as a toggle with MF_UNCHECKED to place the default check mark next to the item. When the application supplies check-mark bitmaps (see the [SetMenuItemBitmaps](#setmenuitembitmaps) member function), the "check mark on" bitmap is displayed.  
   
-- **MF_UNCHECKED** Acts as a toggle with **MF_CHECKED** to remove a check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark off" bitmap is displayed.  
+- MF_UNCHECKED Acts as a toggle with MF_CHECKED to remove a check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark off" bitmap is displayed.  
   
-- **MF_DISABLED** Disables the menu item so that it cannot be selected but does not dim it.  
+- MF_DISABLED Disables the menu item so that it cannot be selected but does not dim it.  
   
-- **MF_ENABLED** Enables the menu item so that it can be selected and restores it from its dimmed state.  
+- MF_ENABLED Enables the menu item so that it can be selected and restores it from its dimmed state.  
   
-- **MF_GRAYED** Disables the menu item so that it cannot be selected and dims it.  
+- MF_GRAYED Disables the menu item so that it cannot be selected and dims it.  
   
-- **MF_MENUBARBREAK** Places the item on a new line in static menus or in a new column in pop-up menus. The new pop-up menu column will be separated from the old column by a vertical dividing line.  
+- MF_MENUBARBREAK Places the item on a new line in static menus or in a new column in pop-up menus. The new pop-up menu column will be separated from the old column by a vertical dividing line.  
   
-- **MF_MENUBREAK** Places the item on a new line in static menus or in a new column in pop-up menus. No dividing line is placed between the columns.  
+- MF_MENUBREAK Places the item on a new line in static menus or in a new column in pop-up menus. No dividing line is placed between the columns.  
   
-- **MF_OWNERDRAW** Specifies that the item is an owner-draw item. When the menu is displayed for the first time, the window that owns the menu receives a WM_MEASUREITEM message, which retrieves the height and width of the menu item. The WM_DRAWITEM message is the one sent whenever the owner must update the visual appearance of the menu item. This option is not valid for a top-level menu item.  
+- MF_OWNERDRAW Specifies that the item is an owner-draw item. When the menu is displayed for the first time, the window that owns the menu receives a WM_MEASUREITEM message, which retrieves the height and width of the menu item. The WM_DRAWITEM message is the one sent whenever the owner must update the visual appearance of the menu item. This option is not valid for a top-level menu item.  
   
-- **MF_POPUP** Specifies that the menu item has a pop-up menu associated with it. The ID parameter specifies a handle to a pop-up menu that is to be associated with the item. This is used for adding either a top-level pop-up menu or a hierarchical pop-up menu to a pop-up menu item.  
+- MF_POPUP Specifies that the menu item has a pop-up menu associated with it. The ID parameter specifies a handle to a pop-up menu that is to be associated with the item. This is used for adding either a top-level pop-up menu or a hierarchical pop-up menu to a pop-up menu item.  
   
-- **MF_SEPARATOR** Draws a horizontal dividing line. Can only be used in a pop-up menu. This line cannot be dimmed, disabled, or highlighted. Other parameters are ignored.  
+- MF_SEPARATOR Draws a horizontal dividing line. Can only be used in a pop-up menu. This line cannot be dimmed, disabled, or highlighted. Other parameters are ignored.  
   
-- **MF_STRING** Specifies that the menu item is a character string.  
+- MF_STRING Specifies that the menu item is a character string.  
   
  Each of the following groups lists flags that are mutually exclusive and cannot be used together:  
   
-- **MF_DISABLED**, **MF_ENABLED**, and **MF_GRAYED**  
+- MF_DISABLED, MF_ENABLED, and MF_GRAYED  
   
-- **MF_STRING**, **MF_OWNERDRAW**, **MF_SEPARATOR**, and the bitmap version  
+- MF_STRING, MF_OWNERDRAW, MF_SEPARATOR, and the bitmap version  
   
-- **MF_MENUBARBREAK** and **MF_MENUBREAK**  
+- MF_MENUBARBREAK and MF_MENUBREAK  
   
-- **MF_CHECKED** and **MF_UNCHECKED**  
+- MF_CHECKED and MF_UNCHECKED  
   
  Whenever a menu that resides in a window is changed (whether or not the window is displayed), the application should call [CWnd::DrawMenuBar](../../mfc/reference/cwnd-class.md#drawmenubar).  
   
@@ -216,18 +216,18 @@ UINT CheckMenuItem(
  Specifies the menu item to be checked, as determined by *nCheck*.  
   
  *nCheck*  
- Specifies how to check the menu item and how to determine the item's position in the menu. The *nCheck* parameter can be a combination of **MF_CHECKED** or **MF_UNCHECKED** with **MF_BYPOSITION** or **MF_BYCOMMAND** flags. These flags can be combined by using the bitwise OR operator. They have the following meanings:  
+ Specifies how to check the menu item and how to determine the item's position in the menu. The *nCheck* parameter can be a combination of MF_CHECKED or MF_UNCHECKED with MF_BYPOSITION or MF_BYCOMMAND flags. These flags can be combined by using the bitwise OR operator. They have the following meanings:  
   
-- **MF_BYCOMMAND** Specifies that the parameter gives the command ID of the existing menu item. This is the default.  
+- MF_BYCOMMAND Specifies that the parameter gives the command ID of the existing menu item. This is the default.  
   
-- **MF_BYPOSITION** Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.  
+- MF_BYPOSITION Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.  
   
-- **MF_CHECKED** Acts as a toggle with **MF_UNCHECKED** to place the default check mark next to the item.  
+- MF_CHECKED Acts as a toggle with MF_UNCHECKED to place the default check mark next to the item.  
   
-- **MF_UNCHECKED** Acts as a toggle with **MF_CHECKED** to remove a check mark next to the item.  
+- MF_UNCHECKED Acts as a toggle with MF_CHECKED to remove a check mark next to the item.  
   
 ### Return Value  
- The previous state of the item: **MF_CHECKED** or **MF_UNCHECKED**, or 0xFFFFFFFF if the menu item did not exist.  
+ The previous state of the item: MF_CHECKED or MF_UNCHECKED, or 0xFFFFFFFF if the menu item did not exist.  
   
 ### Remarks  
  The *nIDCheckItem* parameter specifies the item to be modified.  
@@ -263,8 +263,8 @@ BOOL CheckMenuRadioItem(
   
 |nFlags|Interpretation|  
 |------------|--------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
   
 ### Return Value  
  Nonzero if successful; otherwise 0  
@@ -283,7 +283,7 @@ CMenu();
 ```  
   
 ### Remarks  
- The menu is not created until you call one of the create or load member functions of **CMenu:**  
+ The menu is not created until you call one of the create or load member functions of `CMenu:`  
   
 - [CreateMenu](#createmenu)  
   
@@ -353,8 +353,8 @@ BOOL DeleteMenu(
   
 |nFlags|Interpretation of nPosition|  
 |------------|---------------------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -404,10 +404,10 @@ HMENU Detach();
 ```  
   
 ### Return Value  
- The handle, of type `HMENU`, to a Windows menu, if successful; otherwise **NULL**.  
+ The handle, of type HMENU, to a Windows menu, if successful; otherwise NULL.  
   
 ### Remarks  
- The `m_hMenu` data member is set to **NULL**.  
+ The `m_hMenu` data member is set to NULL.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]  
@@ -447,27 +447,27 @@ UINT EnableMenuItem(
  Specifies the menu item to be enabled, as determined by *nEnable*. This parameter can specify pop-up menu items as well as standard menu items.  
   
  *nEnable*  
- Specifies the action to take. It can be a combination of **MF_DISABLED**, **MF_ENABLED**, or **MF_GRAYED**, with **MF_BYCOMMAND** or **MF_BYPOSITION**. These values can be combined by using the bitwise OR operator. These values have the following meanings:  
+ Specifies the action to take. It can be a combination of MF_DISABLED, MF_ENABLED, or MF_GRAYED, with MF_BYCOMMAND or MF_BYPOSITION. These values can be combined by using the bitwise OR operator. These values have the following meanings:  
   
-- **MF_BYCOMMAND** Specifies that the parameter gives the command ID of the existing menu item. This is the default.  
+- MF_BYCOMMAND Specifies that the parameter gives the command ID of the existing menu item. This is the default.  
   
-- **MF_BYPOSITION** Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.  
+- MF_BYPOSITION Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.  
   
-- **MF_DISABLED** Disables the menu item so that it cannot be selected but does not dim it.  
+- MF_DISABLED Disables the menu item so that it cannot be selected but does not dim it.  
   
-- **MF_ENABLED** Enables the menu item so that it can be selected and restores it from its dimmed state.  
+- MF_ENABLED Enables the menu item so that it can be selected and restores it from its dimmed state.  
   
-- **MF_GRAYED** Disables the menu item so that it cannot be selected and dims it.  
+- MF_GRAYED Disables the menu item so that it cannot be selected and dims it.  
   
 ### Return Value  
- Previous state ( **MF_DISABLED**, **MF_ENABLED**, or **MF_GRAYED**) or -1 if not valid.  
+ Previous state ( MF_DISABLED, MF_ENABLED, or MF_GRAYED) or -1 if not valid.  
   
 ### Remarks  
  The [CreateMenu](#createmenu), [InsertMenu](#insertmenu), [ModifyMenu](#modifymenu), and [LoadMenuIndirect](#loadmenuindirect) member functions can also set the state (enabled, disabled, or dimmed) of a menu item.  
   
- Using the **MF_BYPOSITION** value requires an application to use the correct `CMenu`. If the `CMenu` of the menu bar is used, a top-level menu item (an item in the menu bar) is affected. To set the state of an item in a pop-up or nested pop-up menu by position, an application must specify the `CMenu` of the pop-up menu.  
+ Using the MF_BYPOSITION value requires an application to use the correct `CMenu`. If the `CMenu` of the menu bar is used, a top-level menu item (an item in the menu bar) is affected. To set the state of an item in a pop-up or nested pop-up menu by position, an application must specify the `CMenu` of the pop-up menu.  
   
- When an application specifies the **MF_BYCOMMAND** flag, Windows checks all pop-up menu items that are subordinate to the `CMenu`; therefore, unless duplicate menu items are present, using the `CMenu` of the menu bar is sufficient.  
+ When an application specifies the MF_BYCOMMAND flag, Windows checks all pop-up menu items that are subordinate to the `CMenu`; therefore, unless duplicate menu items are present, using the `CMenu` of the menu bar is sufficient.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#25](../../mfc/reference/codesnippet/cpp/cmenu-class_5.cpp)]  
@@ -509,11 +509,11 @@ UINT GetDefaultItem(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|**GMDI_GOINTOPOPUPS**|Specifies that, if the default item is one that opens a submenu, the function is to search in the corresponding submenu recursively. If the submenu has no default item, the return value identifies the item that opens the submenu.<br /><br /> By default, the function returns the first default item on the specified menu, regardless of whether it is an item that opens a submenu.|  
-|**GMDI_USEDISABLED**|Specifies that the function is to return a default item, even if it is disabled.<br /><br /> By default, the function skips disabled or grayed items.|  
+|GMDI_GOINTOPOPUPS|Specifies that, if the default item is one that opens a submenu, the function is to search in the corresponding submenu recursively. If the submenu has no default item, the return value identifies the item that opens the submenu.<br /><br /> By default, the function returns the first default item on the specified menu, regardless of whether it is an item that opens a submenu.|  
+|GMDI_USEDISABLED|Specifies that the function is to return a default item, even if it is disabled.<br /><br /> By default, the function skips disabled or grayed items.|  
   
  *fByPos*  
- Value specifying whether to retrieve the menu item's identifier or its position. If this parameter is **FALSE**, the identifier is returned. Otherwise, the position is returned.  
+ Value specifying whether to retrieve the menu item's identifier or its position. If this parameter is FALSE, the identifier is returned. Otherwise, the position is returned.  
   
 ### Return Value  
  If the function succeeds, the return value is the identifier or position of the menu item. If the function fails, the return value is - 1.  
@@ -579,7 +579,7 @@ UINT GetMenuItemID(int nPos) const;
  Specifies the position (zero-based) of the menu item whose ID is being retrieved.  
   
 ### Return Value  
- The item ID for the specified item in a pop-up menu if the function is successful. If the specified item is a pop-up menu (as opposed to an item within the pop-up menu), the return value is -1. If *nPos* corresponds to a **SEPARATOR** menu item, the return value is 0.  
+ The item ID for the specified item in a pop-up menu if the function is successful. If the specified item is a pop-up menu (as opposed to an item within the pop-up menu), the return value is -1. If *nPos* corresponds to a SEPARATOR menu item, the return value is 0.  
   
 ### Example  
   See the example for [CMenu::InsertMenu](#insertmenu).  
@@ -602,7 +602,7 @@ BOOL GetMenuItemInfo(
  A pointer to a [MENUITEMINFO](http://msdn.microsoft.com/library/windows/desktop/ms647578), as described in the Windows SDK, that contains information about the menu.  
   
  *fByPos*  
- Value specifying the meaning of `nIDItem`. By default, `ByPos` is **FALSE**, which indicates that uItem is a menu item identifier. If `ByPos` is not set to **FALSE**, it indicates a menu item position.  
+ Value specifying the meaning of `nIDItem`. By default, `ByPos` is FALSE, which indicates that uItem is a menu item identifier. If `ByPos` is not set to FALSE, it indicates a menu item position.  
   
 ### Return Value  
  If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
@@ -629,28 +629,28 @@ UINT GetMenuState(
  *nFlags*  
  Specifies the nature of *nID*. It can be one of the following values:  
   
-- **MF_BYCOMMAND** Specifies that the parameter gives the command ID of the existing menu item. This is the default.  
+- MF_BYCOMMAND Specifies that the parameter gives the command ID of the existing menu item. This is the default.  
   
-- **MF_BYPOSITION** Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.  
+- MF_BYPOSITION Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.  
   
 ### Return Value  
  The value 0xFFFFFFFF if the specified item does not exist. If *nId* identifies a pop-up menu, the high-order byte contains the number of items in the pop-up menu and the low-order byte contains the menu flags associated with the pop-up menu. Otherwise the return value is a mask (Boolean OR) of the values from the following list (this mask describes the status of the menu item that *nId* identifies):  
   
-- **MF_CHECKED** Acts as a toggle with **MF_UNCHECKED** to place the default check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark on" bitmap is displayed.  
+- MF_CHECKED Acts as a toggle with MF_UNCHECKED to place the default check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark on" bitmap is displayed.  
   
-- **MF_DISABLED** Disables the menu item so that it cannot be selected but does not dim it.  
+- MF_DISABLED Disables the menu item so that it cannot be selected but does not dim it.  
   
-- **MF_ENABLED** Enables the menu item so that it can be selected and restores it from its dimmed state. Note that the value of this constant is 0; an application should not test against 0 for failure when using this value.  
+- MF_ENABLED Enables the menu item so that it can be selected and restores it from its dimmed state. Note that the value of this constant is 0; an application should not test against 0 for failure when using this value.  
   
-- **MF_GRAYED** Disables the menu item so that it cannot be selected and dims it.  
+- MF_GRAYED Disables the menu item so that it cannot be selected and dims it.  
   
-- **MF_MENUBARBREAK** Places the item on a new line in static menus or in a new column in pop-up menus. The new pop-up menu column will be separated from the old column by a vertical dividing line.  
+- MF_MENUBARBREAK Places the item on a new line in static menus or in a new column in pop-up menus. The new pop-up menu column will be separated from the old column by a vertical dividing line.  
   
-- **MF_MENUBREAK** Places the item on a new line in static menus or in a new column in pop-up menus. No dividing line is placed between the columns.  
+- MF_MENUBREAK Places the item on a new line in static menus or in a new column in pop-up menus. No dividing line is placed between the columns.  
   
-- **MF_SEPARATOR** Draws a horizontal dividing line. Can only be used in a pop-up menu. This line cannot be dimmed, disabled, or highlighted. Other parameters are ignored.  
+- MF_SEPARATOR Draws a horizontal dividing line. Can only be used in a pop-up menu. This line cannot be dimmed, disabled, or highlighted. Other parameters are ignored.  
   
-- **MF_UNCHECKED** Acts as a toggle with **MF_CHECKED** to remove a check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark off" bitmap is displayed. Note that the value of this constant is 0; an application should not test against 0 for failure when using this value.  
+- MF_UNCHECKED Acts as a toggle with MF_CHECKED to remove a check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark off" bitmap is displayed. Note that the value of this constant is 0; an application should not test against 0 for failure when using this value.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#27](../../mfc/reference/codesnippet/cpp/cmenu-class_7.cpp)]  
@@ -689,8 +689,8 @@ int GetMenuString(
   
 |nFlags|Interpretation of nIDItem|  
 |------------|-------------------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
   
 ### Return Value  
  Specifies the actual number of characters copied to the buffer, not including the null terminator.  
@@ -702,7 +702,7 @@ int GetMenuString(
   See the example for [CMenu::InsertMenu](#insertmenu).  
   
 ##  <a name="getsafehmenu"></a>  CMenu::GetSafeHmenu  
- Returns the `HMENU` wrapped by this `CMenu` object, or a **NULL**`CMenu` pointer.  
+ Returns the HMENU wrapped by this `CMenu` object, or a NULL`CMenu` pointer.  
   
 ```  
 HMENU GetSafeHmenu() const;  
@@ -723,7 +723,7 @@ CMenu* GetSubMenu(int nPos) const;
  Specifies the position of the pop-up menu contained in the menu. Position values start at 0 for the first menu item. The pop-up menu's identifier cannot be used in this function.  
   
 ### Return Value  
- A pointer to a `CMenu` object whose `m_hMenu` member contains a handle to the pop-up menu if a pop-up menu exists at the given position; otherwise **NULL**. If a `CMenu` object does not exist, then a temporary one is created. The `CMenu` pointer returned should not be stored.  
+ A pointer to a `CMenu` object whose `m_hMenu` member contains a handle to the pop-up menu if a pop-up menu exists at the given position; otherwise NULL. If a `CMenu` object does not exist, then a temporary one is created. The `CMenu` pointer returned should not be stored.  
   
 ### Example  
   See the example for [CMenu::TrackPopupMenu](#trackpopupmenu).  
@@ -752,23 +752,23 @@ BOOL InsertMenu(
   
 |nFlags|Interpretation of nPosition|  
 |------------|---------------------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0. If *nPosition* is -1, the new menu item is appended to the end of the menu.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0. If *nPosition* is -1, the new menu item is appended to the end of the menu.|  
   
  *nFlags*  
- Specifies how *nPosition* is interpreted and specifies information about the state of the new menu item when it is added to the menu. For a list of the flags that may be set, see the [AppendMenu](#appendmenu) member function. To specify more than one value, use the bitwise OR operator to combine them with the **MF_BYCOMMAND** or **MF_BYPOSITION** flag.  
+ Specifies how *nPosition* is interpreted and specifies information about the state of the new menu item when it is added to the menu. For a list of the flags that may be set, see the [AppendMenu](#appendmenu) member function. To specify more than one value, use the bitwise OR operator to combine them with the MF_BYCOMMAND or MF_BYPOSITION flag.  
   
  *nIDNewItem*  
- Specifies either the command ID of the new menu item or, if *nFlags* is set to **MF_POPUP**, the menu handle ( `HMENU`) of the pop-up menu. The *nIDNewItem* parameter is ignored (not needed) if *nFlags* is set to **MF_SEPARATOR**.  
+ Specifies either the command ID of the new menu item or, if *nFlags* is set to MF_POPUP, the menu handle ( HMENU) of the pop-up menu. The *nIDNewItem* parameter is ignored (not needed) if *nFlags* is set to MF_SEPARATOR.  
   
  *lpszNewItem*  
  Specifies the content of the new menu item. *nFlags* can be used to interpret *lpszNewItem* in the following ways:  
   
 |nFlags|Interpretation of lpszNewItem|  
 |------------|-----------------------------------|  
-|**MF_OWNERDRAW**|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application in the **itemData** member of the structure supplied by the [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) and [WM_DRAWITEM](http://msdn.microsoft.com/library/windows/desktop/bb775923) messages. These messages are sent when the menu item is initially displayed or is changed.|  
-|**MF_STRING**|Contains a long pointer to a null-terminated string. This is the default interpretation.|  
-|**MF_SEPARATOR**|The *lpszNewItem* parameter is ignored (not needed).|  
+|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application in the `itemData` member of the structure supplied by the [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) and [WM_DRAWITEM](http://msdn.microsoft.com/library/windows/desktop/bb775923) messages. These messages are sent when the menu item is initially displayed or is changed.|  
+|MF_STRING|Contains a long pointer to a null-terminated string. This is the default interpretation.|  
+|MF_SEPARATOR|The *lpszNewItem* parameter is ignored (not needed).|  
   
  *pBmp*  
  Points to a `CBitmap` object that will be used as the menu item.  
@@ -783,7 +783,7 @@ BOOL InsertMenu(
   
  When *nIDNewItem* specifies a pop-up menu, it becomes part of the menu in which it is inserted. If that menu is destroyed, the inserted menu will also be destroyed. An inserted menu should be detached from a `CMenu` object to avoid conflict.  
   
- If the active multiple document interface (MDI) child window is maximized and an application inserts a pop-up menu into the MDI application's menu by calling this function and specifying the **MF_BYPOSITION** flag, the menu is inserted one position farther left than expected. This happens because the Control menu of the active MDI child window is inserted into the first position of the MDI frame window's menu bar. To position the menu properly, the application must add 1 to the position value that would otherwise be used. An application can use the **WM_MDIGETACTIVE** message to determine whether the currently active child window is maximized.  
+ If the active multiple document interface (MDI) child window is maximized and an application inserts a pop-up menu into the MDI application's menu by calling this function and specifying the MF_BYPOSITION flag, the menu is inserted one position farther left than expected. This happens because the Control menu of the active MDI child window is inserted into the first position of the MDI frame window's menu bar. To position the menu properly, the application must add 1 to the position value that would otherwise be used. An application can use the WM_MDIGETACTIVE message to determine whether the currently active child window is maximized.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#28](../../mfc/reference/codesnippet/cpp/cmenu-class_8.cpp)]  
@@ -803,10 +803,10 @@ BOOL InsertMenuItem(
  See description of *uItem* in [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988) in the Windows SDK.  
   
  *lpMenuItemInfo*  
- See description of *lpmii* in **InsertMenuItem** in the Windows SDK.  
+ See description of *lpmii* in `InsertMenuItem` in the Windows SDK.  
   
  *fByPos*  
- See description of *fByPosition* in **InsertMenuItem** in the Windows SDK.  
+ See description of *fByPosition* in `InsertMenuItem` in the Windows SDK.  
   
 ### Remarks  
  This function wraps [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988), described in the Windows SDK.  
@@ -854,9 +854,9 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
   
  The version number should be 0.  
   
- The **mtOption** flags should include **MF_END** for the last item in a pop-up list and for the last item in the main list. See the `AppendMenu` member function for other flags. The **mtId** member must be omitted from the **MENUITEMTEMPLATE** structure when **MF_POPUP** is specified in **mtOption**.  
+ The `mtOption` flags should include MF_END for the last item in a pop-up list and for the last item in the main list. See the `AppendMenu` member function for other flags. The `mtId` member must be omitted from the MENUITEMTEMPLATE structure when MF_POPUP is specified in `mtOption`.  
   
- The space allocated for the **MENUITEMTEMPLATE** structure must be large enough for **mtString** to contain the name of the menu item as a null-terminated string.  
+ The space allocated for the MENUITEMTEMPLATE structure must be large enough for `mtString` to contain the name of the menu item as a null-terminated string.  
   
  Before exiting, an application must free system resources associated with a menu if the menu is not assigned to a window. An application frees a menu by calling the [DestroyMenu](#destroymenu) member function.  
   
@@ -864,7 +864,7 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
  [!code-cpp[NVC_MFCWindowing#30](../../mfc/reference/codesnippet/cpp/cmenu-class_10.cpp)]  
   
 ##  <a name="m_hmenu"></a>  CMenu::m_hMenu  
- Specifies the `HMENU` handle of the Windows menu attached to the `CMenu` object.  
+ Specifies the HMENU handle of the Windows menu attached to the `CMenu` object.  
   
 ```  
 HMENU m_hMenu;  
@@ -918,23 +918,23 @@ BOOL ModifyMenu(
   
 |nFlags|Interpretation of nPosition|  
 |------------|---------------------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
   
  *nFlags*  
  Specifies how *nPosition* is interpreted and gives information about the changes to be made to the menu item. For a list of flags that may be set, see the [AppendMenu](#appendmenu) member function.  
   
  *nIDNewItem*  
- Specifies either the command ID of the modified menu item or, if *nFlags* is set to **MF_POPUP**, the menu handle ( `HMENU`) of a pop-up menu. The *nIDNewItem* parameter is ignored (not needed) if *nFlags* is set to **MF_SEPARATOR**.  
+ Specifies either the command ID of the modified menu item or, if *nFlags* is set to MF_POPUP, the menu handle (HMENU) of a pop-up menu. The *nIDNewItem* parameter is ignored (not needed) if *nFlags* is set to MF_SEPARATOR.  
   
  *lpszNewItem*  
  Specifies the content of the new menu item. The *nFlags* parameter can be used to interpret *lpszNewItem* in the following ways:  
   
 |nFlags|Interpretation of lpszNewItem|  
 |------------|-----------------------------------|  
-|**MF_OWNERDRAW**|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application when it processes **MF_MEASUREITEM** and **MF_DRAWITEM**.|  
-|**MF_STRING**|Contains a long pointer to a null-terminated string or to a `CString`.|  
-|**MF_SEPARATOR**|The *lpszNewItem* parameter is ignored (not needed).|  
+|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application when it processes MF_MEASUREITEM and MF_DRAWITEM.|  
+|MF_STRING|Contains a long pointer to a null-terminated string or to a `CString`.|  
+|MF_SEPARATOR|The *lpszNewItem* parameter is ignored (not needed).|  
   
  *pBmp*  
  Points to a `CBitmap` object that will be used as the menu item.  
@@ -960,7 +960,7 @@ operator HMENU() const;
 ```  
   
 ### Return Value  
- If successful, the handle of the `CMenu` object; otherwise, **NULL**.  
+ If successful, the handle of the `CMenu` object; otherwise, NULL.  
   
 ### Remarks  
  You can use the handle to call Windows APIs directly.  
@@ -991,7 +991,7 @@ BOOL operator==(const CMenu& menu) const;
  A `CMenu` object for comparison.  
   
 ### Remarks  
- Tests if a menu object on the left side is equal (in terms of the `HMENU` value) to a menu object on the right side.  
+ Tests if a menu object on the left side is equal (in terms of the HMENU value) to a menu object on the right side.  
   
 ##  <a name="removemenu"></a>  CMenu::RemoveMenu  
  Deletes a menu item with an associated pop-up menu from the menu.  
@@ -1008,8 +1008,8 @@ BOOL RemoveMenu(
   
 |nFlags|Interpretation of nPosition|  
 |------------|---------------------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
   
  *nFlags*  
  Specifies how *nPosition* is interpreted.  
@@ -1039,7 +1039,7 @@ BOOL SetDefaultItem(
  Identifier or position of the new default menu item or - 1 for no default item. The meaning of this parameter depends on the value of *fByPos*.  
   
  *fByPos*  
- Value specifying the meaning of *uItem*. If this parameter is **FALSE**, *uItem* is a menu item identifier. Otherwise, it is a menu item position.  
+ Value specifying the meaning of *uItem*. If this parameter is FALSE, *uItem* is a menu item identifier. Otherwise, it is a menu item position.  
   
 ### Return Value  
  If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
@@ -1104,8 +1104,8 @@ BOOL SetMenuItemBitmaps(
   
 |nFlags|Interpretation of nPosition|  
 |------------|---------------------------------|  
-|**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
+|MF_BYCOMMAND|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither MF_BYCOMMAND nor MF_BYPOSITION is set.|  
+|MF_BYPOSITION|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0.|  
   
  *nFlags*  
  Specifies how *nPosition* is interpreted.  
@@ -1122,11 +1122,11 @@ BOOL SetMenuItemBitmaps(
 ### Remarks  
  Whether the menu item is checked or unchecked, Windows displays the appropriate bitmap next to the menu item.  
   
- If either *pBmpUnchecked* or *pBmpChecked* is **NULL**, then Windows displays nothing next to the menu item for the corresponding attribute. If both parameters are **NULL**, Windows uses the default check mark when the item is checked and removes the check mark when the item is unchecked.  
+ If either *pBmpUnchecked* or *pBmpChecked* is NULL, then Windows displays nothing next to the menu item for the corresponding attribute. If both parameters are NULL, Windows uses the default check mark when the item is checked and removes the check mark when the item is unchecked.  
   
  When the menu is destroyed, these bitmaps are not destroyed; the application must destroy them.  
   
- The Windows **GetMenuCheckMarkDimensions** function retrieves the dimensions of the default check mark used for menu items. The application uses these values to determine the appropriate size for the bitmaps supplied with this function. Get the size, create your bitmaps, and then set them.  
+ The Windows `GetMenuCheckMarkDimensions` function retrieves the dimensions of the default check mark used for menu items. The application uses these values to determine the appropriate size for the bitmaps supplied with this function. Get the size, create your bitmaps, and then set them.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#32](../../mfc/reference/codesnippet/cpp/cmenu-class_12.cpp)]  
@@ -1148,10 +1148,10 @@ BOOL SetMenuItemInfo(
  See description of *uItem* in [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001) in the Windows SDK.  
   
  *lpMenuItemInfo*  
- See description of *lpmii* in **SetMenuItemInfo** in the Windows SDK.  
+ See description of *lpmii* in `SetMenuItemInfo` in the Windows SDK.  
   
  *fByPos*  
- See description of *fByPosition* in **SetMenuItemInfo** in the Windows SDK.  
+ See description of *fByPosition* in `SetMenuItemInfo` in the Windows SDK.  
   
 ### Remarks  
  This function wraps [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001), described in the Windows SDK.  
@@ -1179,7 +1179,7 @@ BOOL TrackPopupMenu(
  Specifies the vertical position in screen coordinates of the top of the menu on the screen.  
   
  *pWnd*  
- Identifies the window that owns the pop-up menu. This parameter cannot be **NULL**, even if the **TPM_NONOTIFY** flag is specified. This window receives all **WM_COMMAND** messages from the menu. In Windows versions 3.1 and later, the window does not receive **WM_COMMAND** messages until `TrackPopupMenu` returns. In Windows 3.0, the window receives **WM_COMMAND** messages before `TrackPopupMenu` returns.  
+ Identifies the window that owns the pop-up menu. This parameter cannot be NULL, even if the TPM_NONOTIFY flag is specified. This window receives all WM_COMMAND messages from the menu. In Windows versions 3.1 and later, the window does not receive WM_COMMAND messages until `TrackPopupMenu` returns. In Windows 3.0, the window receives WM_COMMAND messages before `TrackPopupMenu` returns.  
   
  *lpRect*  
  Ignored.  
@@ -1216,15 +1216,15 @@ BOOL TrackPopupMenuEx(
  Specifies the vertical position in screen coordinates of the top of the menu on the screen.  
   
  *pWnd*  
- A pointer to the window owning the pop-up menu and receiving the messages from the created menu. This window can be any window from the current application but cannot be **NULL**. If you specify **TPM_NONOTIFY** in the *fuFlags* parameter, the function does not send any messages to *pWnd*. The function must return for the window pointed to by *pWnd* to receive the **WM_COMMAND** message.  
+ A pointer to the window owning the pop-up menu and receiving the messages from the created menu. This window can be any window from the current application but cannot be NULL. If you specify TPM_NONOTIFY in the *fuFlags* parameter, the function does not send any messages to *pWnd*. The function must return for the window pointed to by *pWnd* to receive the WM_COMMAND message.  
   
  *lptpm*  
- Pointer to a [TPMPARAMS](http://msdn.microsoft.com/library/windows/desktop/ms647586) structure that specifies an area of the screen the menu should not overlap. This parameter can be **NULL**.  
+ Pointer to a [TPMPARAMS](http://msdn.microsoft.com/library/windows/desktop/ms647586) structure that specifies an area of the screen the menu should not overlap. This parameter can be NULL.  
   
 ### Return Value  
- If you specify **TPM_RETURNCMD** in the *fuFlags* parameter, the return value is the menu-item identifier of the item that the user selected. If the user cancels the menu without making a selection, or if an error occurs, then the return value is 0.  
+ If you specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is the menu-item identifier of the item that the user selected. If the user cancels the menu without making a selection, or if an error occurs, then the return value is 0.  
   
- If you do not specify **TPM_RETURNCMD** in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
  A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](http://msdn.microsoft.com/library/windows/desktop/ms648003).  

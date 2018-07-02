@@ -73,7 +73,7 @@ BOOL m_bActiveTabCloseButton;
 ```  
   
 ### Remarks  
- If `TRUE`, the label of the active tab will display a **Close** button. The **Close** button will be removed from the right top corner of the tab area. Otherwise, the label of the active tab will not display a **Close** button. The **Close** button will appear in the right top corner of the tab area.  
+ If TRUE, the label of the active tab will display a **Close** button. The **Close** button will be removed from the right top corner of the tab area. Otherwise, the label of the active tab will not display a **Close** button. The **Close** button will appear in the right top corner of the tab area.  
   
 ##  <a name="m_bautocolor"></a>  CMDITabInfo::m_bAutoColor  
  Specifies whether each MDI tab has its own color.  
@@ -83,7 +83,7 @@ BOOL m_bAutoColor;
 ```  
   
 ### Remarks  
- If `TRUE`, each tab will have its own color. The set of colors is managed by the MFC library. Otherwise, the tabs are displayed in white. The default value is `FALSE`.  
+ If TRUE, each tab will have its own color. The set of colors is managed by the MFC library. Otherwise, the tabs are displayed in white. The default value is FALSE.  
   
 ##  <a name="m_bdocumentmenu"></a>  CMDITabInfo::m_bDocumentMenu  
  Specifies whether each tab displays a popup menu that shows a list of  opened documents at the right edge of the tab area.  
@@ -93,7 +93,7 @@ BOOL m_bDocumentMenu;
 ```  
   
 ### Remarks  
- If `TRUE`, each tab windows displays a popup menu that shows a list of opened documents at the right edge of the tab area; Otherwise, the tab window displays scroll buttons at the right edge of the tab area. The default value is `FALSE`.  
+ If TRUE, each tab windows displays a popup menu that shows a list of opened documents at the right edge of the tab area; Otherwise, the tab window displays scroll buttons at the right edge of the tab area. The default value is FALSE.  
   
 ##  <a name="m_benabletabswap"></a>  CMDITabInfo::m_bEnableTabSwap  
  Specifies whether the user can swap the positions of tabs by dragging.  
@@ -103,7 +103,7 @@ BOOL m_bEnableTabSwap;
 ```  
   
 ### Remarks  
- If `TRUE`, the user can change the tabs positions by dragging the tabs. Otherwise, the user cannot change the tabs positions. The default value is `TRUE`.  
+ If TRUE, the user can change the tabs positions by dragging the tabs. Otherwise, the user cannot change the tabs positions. The default value is TRUE.  
   
 ##  <a name="m_bflatframe"></a>  CMDITabInfo::m_bFlatFrame  
  Specifies whether each tab window has a flat frame.  
@@ -120,7 +120,7 @@ BOOL m_bTabCloseButton;
 ```  
   
 ### Remarks  
- If `TRUE`, each tab window displays the **Close** button on the right edge of the tab. Otherwise, the **Close** button is not displayed. The default value is `TRUE`.  
+ If TRUE, each tab window displays the **Close** button on the right edge of the tab. Otherwise, the **Close** button is not displayed. The default value is TRUE.  
   
 ##  <a name="m_btabcustomtooltips"></a>  CMDITabInfo::m_bTabCustomTooltips  
  Specifies whether the tabs display tooltips.  
@@ -130,7 +130,7 @@ BOOL m_bTabCustomTooltips;
 ```  
   
 ### Remarks  
- If `TRUE`, the application sends an `AFX_WM_ON_GET_TAB_TOOLTIP` message to the main frame. You can handle this message by using the `ON_REGISTERED_MESSAGE` macro.  
+ If TRUE, the application sends an AFX_WM_ON_GET_TAB_TOOLTIP message to the main frame. You can handle this message by using the ON_REGISTERED_MESSAGE macro.  
   
 ##  <a name="m_btabicons"></a>  CMDITabInfo::m_bTabIcons  
  Specifies whether to display icons on MDI tabs.  
@@ -140,7 +140,7 @@ BOOL m_bTabIcons;
 ```  
   
 ### Remarks  
- If `TRUE`, icons are displayed on each MDI tab. Otherwise, icons are not displayed on tabs. The default value is `FALSE`.  
+ If TRUE, icons are displayed on each MDI tab. Otherwise, icons are not displayed on tabs. The default value is FALSE.  
   
 ##  <a name="m_ntabbordersize"></a>  CMDITabInfo::m_nTabBorderSize  
  Specifies the border size, in pixels, of each tab window.  
@@ -162,22 +162,22 @@ CMFCTabCtrl::Style m_style
 ### Remarks  
  Specify one of the following styles for the tab labels:  
   
- `STYLE_3D`  
+ STYLE_3D  
  3D style.  
   
- `STYLE_3D_ONENOTE`  
+ STYLE_3D_ONENOTE  
  Microsoft OneNote style.  
   
- `STYLE_3D_VS2005`  
+ STYLE_3D_VS2005  
  Microsoft Visual Studio 2005 style.  
   
- `STYLE_3D_SCROLLED`  
+ STYLE_3D_SCROLLED  
  3D style with rectangle tab labels.  
   
- `STYLE_FLAT_SHARED_HORZ_SCROLL`  
+ STYLE_FLAT_SHARED_HORZ_SCROLL  
  Flat style with shared horizontal scroll bar.  
   
- `STYLE_3D_ROUNDED_SCROLL`  
+ STYLE_3D_ROUNDED_SCROLL  
  3D style with round tab labels.  
   
 ##  <a name="m_tablocation"></a>  CMDITabInfo::m_tabLocation  

@@ -47,9 +47,9 @@ class CMFCCaptionButton : public CObject
   
  CPaneFrameWnd.h defines command IDs for two types of caption buttons:  
   
-- `AFX_CAPTION_BTN_PIN`, which displays a pin button when the docking pane supports auto-hide mode.  
+- AFX_CAPTION_BTN_PIN, which displays a pin button when the docking pane supports auto-hide mode.  
   
-- `AFX_CAPTION_BTN_CLOSE`, which displays a **Close** button when the pane can be closed or hidden.  
+- AFX_CAPTION_BTN_CLOSE, which displays a **Close** button when the pane can be closed or hidden.  
   
 ## Example  
  The following example demonstrates how to construct a `CMFCCaptionButton` object and set the mini size of the title bar.  
@@ -87,13 +87,13 @@ CMFCCaptionButton(
   
 |Value|Command|  
 |-----------|-------------|  
-|`AFX_HTCLOSE`|Close button.|  
-|`HTMINBUTTON`|Minimize button.|  
-|`HTMAXBUTTON`|Maximize button.|  
-|`AFX_HTLEFTBUTTON`|Left arrow button.|  
-|`AFX_HTRIGHTBUTTON`|Right arrow button.|  
-|`AFX_HTMENU`|Down arrow menu button.|  
-|`HTNOWHERE`|The default value; represents no command.|  
+|AFX_HTCLOSE|Close button.|  
+|HTMINBUTTON|Minimize button.|  
+|HTMAXBUTTON|Maximize button.|  
+|AFX_HTLEFTBUTTON|Left arrow button.|  
+|AFX_HTRIGHTBUTTON|Right arrow button.|  
+|AFX_HTMENU|Down arrow menu button.|  
+|HTNOWHERE|The default value; represents no command.|  
   
 ### Remarks  
  By default, caption buttons are not associated with a command.  
@@ -114,13 +114,13 @@ UINT GetHit() const;
   
 |Value|Command|  
 |-----------|-------------|  
-|`AFX_HTCLOSE`|Close button.|  
-|`HTMINBUTTON`|Minimize button.|  
-|`HTMAXBUTTON`|Maximize button.|  
-|`AFX_HTLEFTBUTTON`|Left arrow button.|  
-|`AFX_HTRIGHTBUTTON`|Right arrow button.|  
-|`AFX_HTMENU`|Down arrow menu button.|  
-|`HTNOWHERE`|The default value; represents no command.|  
+|AFX_HTCLOSE|Close button.|  
+|HTMINBUTTON|Minimize button.|  
+|HTMAXBUTTON|Maximize button.|  
+|AFX_HTLEFTBUTTON|Left arrow button.|  
+|AFX_HTRIGHTBUTTON|Right arrow button.|  
+|AFX_HTMENU|Down arrow menu button.|  
+|HTNOWHERE|The default value; represents no command.|  
   
 ##  <a name="geticonid"></a>  CMFCCaptionButton::GetIconID  
  Returns the image ID associated with the button.  
@@ -133,10 +133,10 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
   
 ### Parameters  
  [in] *bHorz*  
- `TRUE` for left or right arrow image IDs; `FALSE` for up or down arrow image IDs.  
+ TRUE for left or right arrow image IDs; FALSE for up or down arrow image IDs.  
   
  [in] *bMaximized*  
- `TRUE` for a maximize image ID; `FALSE` for a minimize image ID.  
+ TRUE for a maximize image ID; FALSE for a minimize image ID.  
   
 ### Return Value  
  The image ID.  
@@ -178,7 +178,7 @@ BOOL IsMiniFrameButton() const;
 ```  
   
 ### Return Value  
- `TRUE` if the caption is set to mini size; otherwise `FALSE`.  
+ TRUE if the caption is set to mini size; otherwise FALSE.  
   
 ### Remarks  
   
@@ -238,7 +238,7 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
   
 ### Parameters  
  [in] *bSet*  
- `TRUE` for mini title bar height; `FALSE` for default title bar height.  
+ TRUE for mini title bar height; FALSE for default title bar height.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

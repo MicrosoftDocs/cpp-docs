@@ -33,7 +33,7 @@ class CMDIFrameWnd : public CFrameWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMDIFrameWnd::CreateClient](#createclient)|Creates a Windows **MDICLIENT** window for this `CMDIFrameWnd`. Called by the `OnCreate` member function of `CWnd`.|  
+|[CMDIFrameWnd::CreateClient](#createclient)|Creates a Windows MDICLIENT window for this `CMDIFrameWnd`. Called by the `OnCreate` member function of `CWnd`.|  
 |[CMDIFrameWnd::CreateNewChild](#createnewchild)|Creates a new child window.|  
 |[CMDIFrameWnd::GetWindowMenuPopup](#getwindowmenupopup)|Returns the Window pop-up menu.|  
 |[CMDIFrameWnd::MDIActivate](#mdiactivate)|Activates a different MDI child window.|  
@@ -56,13 +56,13 @@ class CMDIFrameWnd : public CFrameWnd
   
  Use the `Create` member function to pass the frame's creation parameters as immediate arguments.  
   
- `LoadFrame` requires fewer arguments than `Create`, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessed by `LoadFrame`, all these resources must have the same resource ID (for example, **IDR_MAINFRAME**).  
+ `LoadFrame` requires fewer arguments than `Create`, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessed by `LoadFrame`, all these resources must have the same resource ID (for example, IDR_MAINFRAME).  
   
- Though **MDIFrameWnd** is derived from `CFrameWnd`, a frame window class derived from `CMDIFrameWnd` need not be declared with `DECLARE_DYNCREATE`.  
+ Though `MDIFrameWnd` is derived from `CFrameWnd`, a frame window class derived from `CMDIFrameWnd` need not be declared with `DECLARE_DYNCREATE`.  
   
  The `CMDIFrameWnd` class inherits much of its default implementation from `CFrameWnd`. For a detailed list of these features, refer to the [CFrameWnd](../../mfc/reference/cframewnd-class.md) class description. The `CMDIFrameWnd` class has the following additional features:  
   
--   An MDI frame window manages the **MDICLIENT** window, repositioning it in conjunction with control bars. The MDI client window is the direct parent of MDI child frame windows. The **WS_HSCROLL** and **WS_VSCROLL** window styles specified on a `CMDIFrameWnd` apply to the MDI client window rather than the main frame window so the user can scroll the MDI client area (as in the Windows Program Manager, for example).  
+-   An MDI frame window manages the MDICLIENT window, repositioning it in conjunction with control bars. The MDI client window is the direct parent of MDI child frame windows. The WS_HSCROLL and WS_VSCROLL window styles specified on a `CMDIFrameWnd` apply to the MDI client window rather than the main frame window so the user can scroll the MDI client area (as in the Windows Program Manager, for example).  
   
 -   An MDI frame window owns a default menu that is used as the menu bar when there is no active MDI child window. When there is an active MDI child, the MDI frame window's menu bar is automatically replaced by the MDI child window menu.  
   
@@ -70,15 +70,15 @@ class CMDIFrameWnd : public CFrameWnd
   
 -   An MDI frame window has default handlers for the following standard Window menu commands:  
   
-    - **ID_WINDOW_TILE_VERT**  
+    - ID_WINDOW_TILE_VERT  
   
-    - **ID_WINDOW_TILE_HORZ**  
+    - ID_WINDOW_TILE_HORZ  
   
-    - **ID_WINDOW_CASCADE**  
+    - ID_WINDOW_CASCADE  
   
-    - **ID_WINDOW_ARRANGE**  
+    - ID_WINDOW_ARRANGE  
   
--   An MDI frame window also has an implementation of **ID_WINDOW_NEW**, which creates a new frame and view on the current document. An application can override these default command implementations to customize MDI window handling.  
+-   An MDI frame window also has an implementation of ID_WINDOW_NEW, which creates a new frame and view on the current document. An application can override these default command implementations to customize MDI window handling.  
   
  Do not use the C++ **delete** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.  
   
@@ -180,10 +180,10 @@ virtual HMENU GetWindowMenuPopup(HMENU hMenuBar);
  The current menu bar.  
   
 ### Return Value  
- The Window pop-up menu if one exists; otherwise **NULL**.  
+ The Window pop-up menu if one exists; otherwise NULL.  
   
 ### Remarks  
- The default implementation looks for a pop-up menu containing standard Window menu commands such as **ID_WINDOW_NEW** and **ID_WINDOW_TILE_HORZ**.  
+ The default implementation looks for a pop-up menu containing standard Window menu commands such as ID_WINDOW_NEW and ID_WINDOW_TILE_HORZ.  
   
  Override this member function if you have a Window menu that does not use the standard menu command IDs.  
   
@@ -207,7 +207,7 @@ void MDIActivate(CWnd* pWndActivate);
  This is the same message that is sent if the user changes the focus to an MDI child window by using the mouse or keyboard.  
   
 > [!NOTE]
->  An MDI child window is activated independently of the MDI frame window. When the frame becomes active, the child window that was last activated is sent a [WM_NCACTIVATE](../../mfc/reference/cwnd-class.md#onncactivate) message to draw an active window frame and caption bar, but it does not receive another `WM_MDIACTIVATE` message.  
+>  An MDI child window is activated independently of the MDI frame window. When the frame becomes active, the child window that was last activated is sent a [WM_NCACTIVATE](../../mfc/reference/cwnd-class.md#onncactivate) message to draw an active window frame and caption bar, but it does not receive another WM_MDIACTIVATE message.  
   
 ### Example  
  See the example for [CMDIFrameWnd::GetWindowMenuPopup](#getwindowmenupopup).  
@@ -222,10 +222,10 @@ void MDICascade(int nType);
   
 ### Parameters  
  *nType*  
- Specifies a cascade flag. Only the following flag can be specified: `MDITILE_SKIPDISABLED`, which prevents disabled MDI child windows from being cascaded.  
+ Specifies a cascade flag. Only the following flag can be specified: MDITILE_SKIPDISABLED, which prevents disabled MDI child windows from being cascaded.  
   
 ### Remarks  
- The first version of `MDICascade`, with no parameters, cascades all MDI child windows, including disabled ones. The second version optionally does not cascade disabled MDI child windows if you specify `MDITILE_SKIPDISABLED` for the `nType` parameter.  
+ The first version of `MDICascade`, with no parameters, cascades all MDI child windows, including disabled ones. The second version optionally does not cascade disabled MDI child windows if you specify MDITILE_SKIPDISABLED for the *nType* parameter.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#17](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_5.cpp)]  
@@ -239,7 +239,7 @@ CMDIChildWnd* MDIGetActive(BOOL* pbMaximized = NULL) const;
   
 ### Parameters  
  *pbMaximized*  
- A pointer to a **BOOL** return value. Set to **TRUE** on return if the window is maximized; otherwise **FALSE**.  
+ A pointer to a BOOL return value. Set to TRUE on return if the window is maximized; otherwise FALSE.  
   
 ### Return Value  
  A pointer to the active MDI child window.  
@@ -327,10 +327,10 @@ CMenu* MDISetMenu(
   
 ### Parameters  
  *pFrameMenu*  
- Specifies the menu of the new frame-window menu. If **NULL**, the menu is not changed.  
+ Specifies the menu of the new frame-window menu. If NULL, the menu is not changed.  
   
  *pWindowMenu*  
- Specifies the menu of the new Window pop-up menu. If **NULL**, the menu is not changed.  
+ Specifies the menu of the new Window pop-up menu. If NULL, the menu is not changed.  
   
 ### Return Value  
  A pointer to the frame-window menu replaced by this message. The pointer may be temporary and should not be stored for later use.  
@@ -361,11 +361,11 @@ void MDITile(int nType);
  *nType*  
  Specifies a tiling flag. This parameter can be any one of the following flags:  
   
-- `MDITILE_HORIZONTAL` Tiles MDI child windows so that one window appears above another.  
+- MDITILE_HORIZONTAL Tiles MDI child windows so that one window appears above another.  
   
-- `MDITILE_SKIPDISABLED` Prevents disabled MDI child windows from being tiled.  
+- MDITILE_SKIPDISABLED Prevents disabled MDI child windows from being tiled.  
   
-- `MDITILE_VERTICAL` Tiles MDI child windows so that one window appears beside another.  
+- MDITILE_VERTICAL Tiles MDI child windows so that one window appears beside another.  
   
 ### Remarks  
  The first version of `MDITile`, without parameters, tiles the windows vertically under Windows versions 3.1 and later. The second version tiles windows vertically or horizontally, depending on the value of the *nType* parameter.  

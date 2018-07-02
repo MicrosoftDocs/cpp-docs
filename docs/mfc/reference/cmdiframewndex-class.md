@@ -75,12 +75,12 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::NegotiateBorderSpace](#negotiateborderspace)|Negotiates border space in a frame window during OLE in-place activation.|  
 |[CMDIFrameWndEx::OnCloseDockingPane](#onclosedockingpane)|Called by the framework when the user clicks the **Close** button on a dockable pane.|  
 |[CMDIFrameWndEx::OnCloseMiniFrame](#oncloseminiframe)|Called by the framework when the user clicks the **Close** button on a floating mini frame window.|  
-|[CMDIFrameWndEx::OnClosePopupMenu](#onclosepopupmenu)|Called by the framework when an active pop-up menu processes a `WM_DESTROY` message.|  
+|[CMDIFrameWndEx::OnClosePopupMenu](#onclosepopupmenu)|Called by the framework when an active pop-up menu processes a WM_DESTROY message.|  
 |[CMDIFrameWndEx::OnCmdMsg](#oncmdmsg)|Called by the framework to route and dispatch command messages and to update command user-interface objects.|  
 |[CMDIFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the image associated with a menu item is drawn.|  
-|[CMDIFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.|  
-|[CMDIFrameWndEx::OnEraseMDIClientBackground](#onerasemdiclientbackground)|Called by the framework when the MDI frame window processes a `WM_ERASEBKGND` message.|  
-|[CMDIFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.|  
+|[CMDIFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a WM_PAINT message.|  
+|[CMDIFrameWndEx::OnEraseMDIClientBackground](#onerasemdiclientbackground)|Called by the framework when the MDI frame window processes a WM_ERASEBKGND message.|  
+|[CMDIFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a WM_NCHITTEST message.|  
 |[CMDIFrameWndEx::OnMoveMiniFrame](#onmoveminiframe)|Called by the framework to move a mini-frame window.|  
 |[CMDIFrameWndEx::OnSetPreviewMode](#onsetpreviewmode)|Sets the application's main frame window print-preview mode. (Overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#onsetpreviewmode).)|  
 |[CMDIFrameWndEx::OnShowCustomizePane](#onshowcustomizepane)|Called by the framework when a Quick Customize pane is activated.|  
@@ -204,9 +204,9 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
 -   2: MDI tabbed groups is enabled.  
   
 ### Return Value  
- `Returns TRUE` if MDI tabs or MDI tabbed groups is enabled.  
+ Returns TRUE if MDI tabs or MDI tabbed groups is enabled.  
   
- `Returns FALSE` if none of the above features is enabled.  
+ Returns FALSE if none of the above features is enabled.  
   
 ### Remarks  
  Use this function to determine whether MDI tabs or MDI tabbed groups is enabled for the frame window. Use [CMDIFrameWndEx::EnableMDITabs](#enablemditabs) to enable or disable the MDI tabs feature.  
@@ -221,10 +221,10 @@ virtual BOOL CanCovertControlBarToMDIChild();
 ```  
   
 ### Return Value  
- Returns `TRUE` if the frame window can convert docking panes to tabbed documents; otherwise returns `FALSE`.  
+ Returns TRUE if the frame window can convert docking panes to tabbed documents; otherwise returns FALSE.  
   
 ### Remarks  
- Override this method in a derived class and return `TRUE` to enable the conversion of docking panes to tabbed documents. Alternatively, you can set [CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild) to `TRUE`.  
+ Override this method in a derived class and return TRUE to enable the conversion of docking panes to tabbed documents. Alternatively, you can set [CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild) to TRUE.  
   
 ##  <a name="controlbartotabbeddocument"></a>  CMDIFrameWndEx::ControlBarToTabbedDocument  
  Converts the specified docking pane to a tabbed document.  
@@ -338,7 +338,7 @@ BOOL DockPaneLeftOf(
  A pointer to the pane that serves as the dock site. .  
   
 ### Return Value  
- Returns `TRUE` if the operation is successful. Otherwise returns `FALSE`.  
+ Returns TRUE if the operation is successful. Otherwise returns FALSE.  
   
 ### Remarks  
  Call this method to dock several pane objects in a predefined order. This method docks the pane specified by *pBar* to the left of the pane specified by *pLeftOf*.  
@@ -359,13 +359,13 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
  [in] *dwDockStyle*  
  Specifies the sides of the main frame window that will be enabled. Use one or more of the following flags.  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CBRS_ALIGN_TOP`  
+- CBRS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ### Return Value  
  Call this function to enable auto-hide mode for panes when they are docked at the specified sides of the main frame window.  
@@ -407,7 +407,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
   
 ### Parameters  
  [in] *bEnableMenu*  
- `TRUE` to show the main menu in full-screen mode, or `FALSE` to hide it.  
+ TRUE to show the main menu in full-screen mode, or FALSE to hide it.  
   
 ### Remarks  
   
@@ -434,7 +434,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the loading of the docking state, `FALSE` to disable the loading of the docking state.  
+ TRUE to enable the loading of the docking state, FALSE to disable the loading of the docking state.  
   
 ### Remarks  
   
@@ -449,7 +449,7 @@ void EnableMDITabbedGroups(
   
 ### Parameters  
  [in] *bEnable*  
- If `TRUE`, the MDI tabbed groups feature is enabled; if `FALSE`, the MDI tabbed groups feature is disabled.  
+ If TRUE, the MDI tabbed groups feature is enabled; if FALSE, the MDI tabbed groups feature is disabled.  
   
  [in] *params*  
  Specifies parameters that the framework applies to child windows that are created in the MDI client area.  
@@ -467,9 +467,9 @@ void EnableMDITabbedGroups(
   
 -   Your application can save the current layout of tabbed windows and the list of currently opened documents.  
   
- If you call this method with *bEnable* set to `FALSE`, *params* is ignored.  
+ If you call this method with *bEnable* set to FALSE, *params* is ignored.  
   
- Even if MDI tabbed groups is already enabled, you can call this method again to modify the settings for child windows. Call the method with *bEnable* set to `TRUE` and modify the members of the `CMDITabInfo` object that are specified by the *params* parameter.  
+ Even if MDI tabbed groups is already enabled, you can call this method again to modify the settings for child windows. Call the method with *bEnable* set to TRUE and modify the members of the `CMDITabInfo` object that are specified by the *params* parameter.  
   
  For more information about how to use MDI tabbed groups, see [MDI Tabbed Groups](../../mfc/mdi-tabbed-groups.md).  
   
@@ -506,20 +506,20 @@ void EnableMDITabs(
  Specifies whether to display tab close buttons.  
   
  *style*  
- Specifies the style of tabs. Use `STYLE_3D_SCROLLED` for regular tabs or `STYLE_3D_ONENOTE` for Microsoft OneNote tabs.  
+ Specifies the style of tabs. Use STYLE_3D_SCROLLED for regular tabs or STYLE_3D_ONENOTE for Microsoft OneNote tabs.  
   
  *bTabCustomTooltips*  
  Specifies whether custom tooltips are enabled.  
   
  *bActiveTabCloseButton*  
- If `TRUE`, a **Close** button will be displayed on the active tab instead of on the right corner of the tab area.  
+ If TRUE, a **Close** button will be displayed on the active tab instead of on the right corner of the tab area.  
   
 ### Remarks  
  Call this method to enable or disable the MDI tabs feature for the MDI frame window. When enabled, all child windows are displayed as tabs.  
   
  The tab labels can be located at the top or bottom of the frame, depending on the setting of the parameter *tabLocation*. You may specify either `CMFCTabCtrl::LOCATION_BOTTOM` (the default setting) or `CMFCTabCtrl::LOCATION_TOP`.  
   
- If *bTabCustomTooltips* is `TRUE`, an `AFX_WM_ON_GET_TAB_TOOLTIP` message will be sent to the main frame window. Your code can handle this message and provide the framework with custom tooltips for MDI tabs.  
+ If *bTabCustomTooltips* is TRUE, an AFX_WM_ON_GET_TAB_TOOLTIP message will be sent to the main frame window. Your code can handle this message and provide the framework with custom tooltips for MDI tabs.  
   
 ### Example  
  The following example shows how `EnableMDITabs` is used in the [MDITabsDemo Sample: MFC Tabbed MDI Application](../../visual-cpp-samples.md).  
@@ -535,7 +535,7 @@ void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
   
 ### Parameters  
  [in] *bLastActiveTab*  
- If `TRUE`, enable activation of the last active tab. If `FALSE`, disable activation of the last active tab.  
+ If TRUE, enable activation of the last active tab. If FALSE, disable activation of the last active tab.  
   
 ### Remarks  
  There are two ways to open a tab when the active tab is closed:  
@@ -563,7 +563,7 @@ void EnablePaneMenu(
   
 ### Parameters  
  [in] *bEnable*  
- If `TRUE`, automatic handling of the pane menu is enabled; if `FALSE`, automatic handling is disabled.  
+ If TRUE, automatic handling of the pane menu is enabled; if FALSE, automatic handling is disabled.  
   
  [in] *uiCustomizeCmd*  
  Command ID of the **Customize** menu item. This menu item is usually added to the end of the list of panes.  
@@ -575,10 +575,10 @@ void EnablePaneMenu(
  Specifies the ID of a toolbar menu item that opens the pane menu. Usually this is the **Toolbars** submenu of the **View** menu.  
   
  [in] *bContextMenuShowsToolbarsOnly*  
- If `TRUE`, the pane menu displays only a list of toolbars. If `FALSE`, the menu displays a list of toolbars and docking bars.  
+ If TRUE, the pane menu displays only a list of toolbars. If FALSE, the menu displays a list of toolbars and docking bars.  
   
  [in] *bViewMenuShowsToolbarsOnly*  
- If `TRUE`, the pane menu displays only a list of toolbars. If `FALSE`, the menu displays a list of toolbars and docking bars.  
+ If TRUE, the pane menu displays only a list of toolbars. If FALSE, the menu displays a list of toolbars and docking bars.  
   
 ### Remarks  
  The pop-up pane menu displays the list of the application's panes and lets the user show or hide individual panes.  
@@ -635,7 +635,7 @@ CMFCPopupMenu* GetActivePopup() const;
 ```  
   
 ### Return Value  
- A pointer to the active popup menu; `NULL` if no popup menu is active.  
+ A pointer to the active popup menu; NULL if no popup menu is active.  
   
 ### Remarks  
  Use this function to obtain a pointer to the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object that is currently displayed.  
@@ -686,13 +686,13 @@ DWORD GetMDITabsContextMenuAllowedItems();
 ### Return Value  
  A bitwise-OR combination of the following flags:  
   
-- `BCGP_MDI_CREATE_VERT_GROUP` - can create a vertical tab group.  
+- BCGP_MDI_CREATE_VERT_GROUP - can create a vertical tab group.  
   
-- `BCGP_MDI_CREATE_HORZ_GROUP` - can create a horizontal tab group.  
+- BCGP_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.  
   
-- `BCGP_MDI_CAN_MOVE_PREV` - can move a tab to the previous tab group.  
+- BCGP_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.  
   
-- `BCGP_MDI_CAN_MOVE_NEXT` - can move a tab to the next tab group.  
+- BCGP_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.  
   
 ### Remarks  
  When the MDI Tabbed Groups feature is enabled, you must know what operations are allowed on the tabs of a particular window. This method analyzes the current layout of tabbed windows and returns a combination of flags that can be used to build, for example, a shortcut menu.  
@@ -727,7 +727,7 @@ CBasePane* GetPane(UINT nID);
  The control ID.  
   
 ### Return Value  
- A pointer to the pane that has the specified control ID, if it exists. Otherwise, `NULL`.  
+ A pointer to the pane that has the specified control ID, if it exists. Otherwise, NULL.  
   
 ##  <a name="getribbonbar"></a>  CMDIFrameWndEx::GetRibbonBar  
  Retrieves the ribbon bar control for the frame.  
@@ -771,7 +771,7 @@ virtual BOOL GetToolbarButtonToolTipText(
  The tooltip text to display for the button.  
   
 ### Return Value  
- `TRUE` if the tooltip has been displayed. `FALSE` otherwise.  
+ TRUE if the tooltip has been displayed. FALSE otherwise.  
   
 ### Remarks  
   
@@ -793,10 +793,10 @@ BOOL InsertPane(
  A pointer to the pane before or after which to insert the pane.  
   
  [in] *bAfter*  
- If `TRUE`, *pControlBar* is inserted after *pTarget*. If `FALSE`, *pControlBar* is inserted before *pTarget*.  
+ If TRUE, *pControlBar* is inserted after *pTarget*. If FALSE, *pControlBar* is inserted before *pTarget*.  
   
 ### Return Value  
- `TRUE` if the method successfully registers the pane, `FALSE` if the pane was already registered with the docking manager.  
+ TRUE if the method successfully registers the pane, FALSE if the pane was already registered with the docking manager.  
   
 ### Remarks  
  Use this method to tell the docking manager about a pane specified by *pControlBar*. The docking manager will align this pane according to the pane's alignment and position in the docking manager's internal list.  
@@ -809,7 +809,7 @@ BOOL IsFullScreen() const;
 ```  
   
 ### Return Value  
- `TRUE` if the frame window is in full screen mode; otherwise `FALSE`.  
+ TRUE if the frame window is in full screen mode; otherwise FALSE.  
   
 ### Remarks  
  You can set the full screen mode by calling the [CMDIFrameWndEx::EnableFullScreenMode](#enablefullscreenmode) method.  
@@ -822,7 +822,7 @@ BOOL IsMDITabbedGroup() const;
 ```  
   
 ### Return Value  
- `TRUE` if the MDI Tabbed Groups feature is enabled; otherwise `FALSE`.  
+ TRUE if the MDI Tabbed Groups feature is enabled; otherwise FALSE.  
   
 ### Remarks  
  To determine whether regular MDI tabs or the MDI Tabbed Groups feature is enabled, use [CMDIFrameWndEx::AreMDITabs](#aremditabs).  
@@ -839,7 +839,7 @@ BOOL IsMemberOfMDITabGroup(CWnd* pWnd);
  A pointer to tabbed window.  
   
 ### Return Value  
- `TRUE` if the specified tabbed window is in the list of tabbed windows that form MDI Tabbed Groups. Otherwise `FALSE`.  
+ TRUE if the specified tabbed window is in the list of tabbed windows that form MDI Tabbed Groups. Otherwise FALSE.  
   
 ##  <a name="ismenubaravailable"></a>  CMDIFrameWndEx::IsMenuBarAvailable  
  Determines whether the frame window has a menu bar.  
@@ -849,7 +849,7 @@ BOOL IsMenuBarAvailable() const;
 ```  
   
 ### Return Value  
- `TRUE` if the pointer to the menu bar object is not `NULL`; otherwise `FALSE`.  
+ TRUE if the pointer to the menu bar object is not NULL; otherwise FALSE.  
   
 ##  <a name="ispointneardocksite"></a>  CMDIFrameWndEx::IsPointNearDockSite  
  Determines whether a specified point is near the dock site.  
@@ -866,13 +866,13 @@ BOOL IsPointNearDockSite(
  The specified point in screen coordinates.  
   
  [in] *dwBarAlignment*  
- Specifies which edge the point is near. Possible values are `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, and `CBRS_ALIGN_BOTTOM`  
+ Specifies which edge the point is near. Possible values are CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, and CBRS_ALIGN_BOTTOM  
   
  [in] *bOuterEdge*  
- `TRUE` if the point is near the outer border of the dock site; `FALSE` otherwise.  
+ TRUE if the point is near the outer border of the dock site; FALSE otherwise.  
   
 ### Return Value  
- `TRUE` if the point is near the dock site; otherwise `FALSE`.  
+ TRUE if the point is near the dock site; otherwise FALSE.  
   
 ### Remarks  
  The point is near the dock site when it is within the sensitivity set in the docking manager. The default sensitivity is 15 pixels.  
@@ -885,7 +885,7 @@ BOOL IsPrintPreview();
 ```  
   
 ### Return Value  
- `TRUE` if the frame window is in print-preview mode; otherwise, `FALSE`.  
+ TRUE if the frame window is in print-preview mode; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -911,10 +911,10 @@ virtual BOOL LoadFrame(
  A pointer to the frame's parent.  
   
  [in] *pContext*  
- A pointer to a [CCreateContext Structure](../../mfc/reference/ccreatecontext-structure.md). This parameter can be `NULL`.  
+ A pointer to a [CCreateContext Structure](../../mfc/reference/ccreatecontext-structure.md). This parameter can be NULL.  
   
 ### Return Value  
- `TRUE` if the method succeeds, otherwise `FALSE`.  
+ TRUE if the method succeeds, otherwise FALSE.  
   
 ##  <a name="loadmdistate"></a>  CMDIFrameWndEx::LoadMDIState  
  Loads the specified layout of MDI Tabbed Groups and the list of previously opened documents.  
@@ -928,7 +928,7 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
  Specifies the profile name.  
   
 ### Return Value  
- `TRUE` if the load succeeded; `FALSE` if the load failed or there is no data to load.  
+ TRUE if the load succeeded; FALSE if the load failed or there is no data to load.  
   
 ### Remarks  
  To load or save the state of MDI tabs and groups and the list of opened documents, do the following:  
@@ -955,7 +955,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
   
 ### Parameters  
  [in] *bNext*  
- If `TRUE`, move the tab to the next tabbed group. If `FALSE`, move it to the previous tabbed group.  
+ If TRUE, move the tab to the next tabbed group. If FALSE, move it to the previous tabbed group.  
   
 ##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup  
  Creates a new tabbed group that has a single window.  
@@ -966,7 +966,7 @@ void MDITabNewGroup(BOOL bVert=TRUE);
   
 ### Parameters  
  [in] *bVert*  
- Specifies the new group alignment. If `TRUE`, the new group is aligned vertically. If `FALSE`, the new group is aligned horizontally.  
+ Specifies the new group alignment. If TRUE, the new group is aligned vertically. If FALSE, the new group is aligned horizontally.  
   
 ### Remarks  
  Use this function to create a new tabbed window (new tabbed group) and add the first tab to it.  
@@ -984,7 +984,7 @@ BOOL m_bCanCovertControlBarToMDIChild;
 ```  
   
 ### Remarks  
- Indicates whether docking control bars can be converted to MDI child windows. If this flag is `TRUE`, the framework handles the conversion automatically when the user selects the **Tabbed Document** command. The flag is protected and you must explicitly enable this option either by setting `m_bCanCovertControlBarToMDIChild` in a constructor of a `CMDIFrameWndEx`-derived class, or by overriding `CanConvertControlBarToMDIChild`.  
+ Indicates whether docking control bars can be converted to MDI child windows. If this flag is TRUE, the framework handles the conversion automatically when the user selects the **Tabbed Document** command. The flag is protected and you must explicitly enable this option either by setting `m_bCanCovertControlBarToMDIChild` in a constructor of a `CMDIFrameWndEx`-derived class, or by overriding `CanConvertControlBarToMDIChild`.  
   
  The default value is `FALSE`.  
   
@@ -1001,9 +1001,9 @@ AFX_IMPORT_DATA static BOOL m_bDisableSetRedraw;
 ```  
   
 ### Remarks  
- The default value is `TRUE`.  
+ The default value is TRUE.  
   
- Set this flag to `FALSE` if you want to optimize redrawing of MDI children. In this case the framework will call `SetRedraw (FALSE)` for the main frame when the application is changing the active tab.  
+ Set this flag to FALSE if you want to optimize redrawing of MDI children. In this case the framework will call `SetRedraw (FALSE)` for the main frame when the application is changing the active tab.  
   
  This flag can cause unwanted effects (such as background applications that become visible). Therefore we recommend that you change the default only if you experience noticeable flickering during MDI tab activation.  
   
@@ -1047,12 +1047,12 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
  Pointer to the pane being closed.  
   
 ### Return Value  
- `TRUE` if the docking pane can be closed. Otherwise, `FALSE`.  
+ TRUE if the docking pane can be closed. Otherwise, FALSE.  
   
 ### Remarks  
- Override this method to handle hiding of docking panes. Return `FALSE` if you want to prevent a docking pane from being hidden.  
+ Override this method to handle hiding of docking panes. Return FALSE if you want to prevent a docking pane from being hidden.  
   
- The default implementation does nothing and returns `TRUE`.  
+ The default implementation does nothing and returns TRUE.  
   
 ##  <a name="oncloseminiframe"></a>  CMDIFrameWndEx::OnCloseMiniFrame  
  Called by the framework when the user clicks the **Close** button on a floating mini-frame window.  
@@ -1066,15 +1066,15 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
  Pointer to the mini-frame window being closed.  
   
 ### Return Value  
- `TRUE` if the floating mini-frame window can be closed. Otherwise, `FALSE`.  
+ TRUE if the floating mini-frame window can be closed. Otherwise, FALSE.  
   
 ### Remarks  
- Override this method to handle hiding of floating mini-frame windows. Return `FALSE` if you want to prevent a floating mini-frame window from being hidden.  
+ Override this method to handle hiding of floating mini-frame windows. Return FALSE if you want to prevent a floating mini-frame window from being hidden.  
   
- The default implementation does nothing and returns `TRUE`.  
+ The default implementation does nothing and returns TRUE.  
   
 ##  <a name="onclosepopupmenu"></a>  CMDIFrameWndEx::OnClosePopupMenu  
- Called by the framework when an active pop-up menu processes a `WM_DESTROY` message.  
+ Called by the framework when an active pop-up menu processes a WM_DESTROY message.  
   
 ```  
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
@@ -1085,7 +1085,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
  Pointer to a pop-up menu.  
   
 ### Remarks  
- Override this method if you want to process notifications from [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) objects that belong to the MDI frame window when those objects process `WM_DESTROY` messages.  
+ Override this method if you want to process notifications from [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) objects that belong to the MDI frame window when those objects process WM_DESTROY messages.  
   
 ##  <a name="oncmdmsg"></a>  CMDIFrameWndEx::OnCmdMsg  
  Called by the framework to route and dispatch command messages and to update command user-interface objects.  
@@ -1109,7 +1109,7 @@ virtual BOOL OnCmdMsg(
  Used according to the value of *nCode*. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about *pExtra*.  
   
  [in, out] *pHandlerInfo*  
- Typically, this parameter should be `NULL`.If not `NULL`, `OnCmdMsg` fills in the `pTarget` and `pmf` members of the *pHandlerInfo* structure instead of dispatching the command.  
+ Typically, this parameter should be NULL.If not NULL, `OnCmdMsg` fills in the `pTarget` and `pmf` members of the *pHandlerInfo* structure instead of dispatching the command.  
   
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  
@@ -1135,7 +1135,7 @@ virtual BOOL OnDrawMenuImage(
  Bounding rectangle of the image.  
   
 ### Return Value  
- `TRUE` if the method draws the image. The default implementation returns `FALSE`.  
+ TRUE if the method draws the image. The default implementation returns FALSE.  
   
 ### Remarks  
  Override this method  if you want to customize image rendering for the menu items that belong to the menu bar owned by the `CMDIFrameWndEx`-derived object. The default implementation does nothing.  
@@ -1154,14 +1154,14 @@ virtual void OnDrawMenuLogo(
  Override this function to display a logo on the pop-up menu that belongs to the menu bar owned by the `CMDIFrameWndEx`-derived object. The default implementation does nothing.  
   
 ##  <a name="onerasemdiclientbackground"></a>  CMDIFrameWndEx::OnEraseMDIClientBackground  
- Called by the framework when the MDI frame window processes a `WM_ERASEBKGND` message.  
+ Called by the framework when the MDI frame window processes a WM_ERASEBKGND message.  
   
 ```  
 virtual BOOL OnEraseMDIClientBackground(CDC*);
 ```  
   
 ### Return Value  
- `TRUE` if the application processes the message and erases the background.  
+ TRUE if the application processes the message and erases the background.  
   
 ### Remarks  
  Override this member function if you want to process the WM_ERASEBKGND message in a `CMDIFrameWndEx`-derived class.  
@@ -1183,7 +1183,7 @@ virtual BOOL OnMenuButtonToolHitTest(
  Pointer to a [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) structure.  
   
 ### Return Value  
- `TRUE` if the application fills the *pTI* parameter. The default implementation returns `FALSE`.  
+ TRUE if the application fills the *pTI* parameter. The default implementation returns FALSE.  
   
 ### Remarks  
  Override this method if you want to provide information about specific menu items to a tooltip. The default implementation does nothing.  
@@ -1200,7 +1200,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
  A pointer to a mini-frame window.  
   
 ### Return Value  
- `TRUE` if the method succeeds, otherwise `FALSE`.  
+ TRUE if the method succeeds, otherwise FALSE.  
   
 ##  <a name="onsetpreviewmode"></a>  CMDIFrameWndEx::OnSetPreviewMode  
  Sets the application's main frame window print-preview mode.  
@@ -1213,7 +1213,7 @@ virtual void OnSetPreviewMode(
   
 ### Parameters  
  [in] *bPreview*  
- If `TRUE`, sets print-preview mode. If `FALSE`, cancels preview mode.  
+ If TRUE, sets print-preview mode. If FALSE, cancels preview mode.  
   
  [in] *pState*  
  A pointer to a `CPrintPreviewState` structure.  
@@ -1238,7 +1238,7 @@ virtual BOOL OnShowCustomizePane(
  Control ID of the toolbar to customize.  
   
 ### Return Value  
- This method always returns `TRUE`.  
+ This method always returns TRUE.  
   
 ### Remarks  
  The Quick Customize pane is a menu that opens when the user clicks **Customize** on a toolbar.  
@@ -1262,18 +1262,18 @@ virtual BOOL OnShowMDITabContextMenu(
  [in] *dwAllowedItems*  
  A bitwise-OR combination of flags that indicates what actions are allowed for the current tab:  
   
-- `BCGP_MDI_CREATE_VERT_GROUP` - can create a vertical tab group.  
+- BCGP_MDI_CREATE_VERT_GROUP - can create a vertical tab group.  
   
-- `BCGP_MDI_CREATE_HORZ_GROUP` - can create a horizontal tab group.  
+- BCGP_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.  
   
-- `BCGP_MDI_CAN_MOVE_PREV` - can move a tab to the previous tab group.  
+- BCGP_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.  
   
-- `BCGP_MDI_CAN_MOVE_NEXT` - can move a tab to the next tab group.  
+- BCGP_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.  
   
-- `BCGP_MDI_CAN_BE_DOCKED` - switch a tabbed document to docked state (relevant for tabbed documents only).  
+- BCGP_MDI_CAN_BE_DOCKED - switch a tabbed document to docked state (relevant for tabbed documents only).  
   
  [in] *bTabDrop*  
- `TRUE` to display the menu as a result of dragging the tab onto another tabbed group. `FALSE` to display the menu as a shortcut menu on the currently active tab.  
+ TRUE to display the menu as a result of dragging the tab onto another tabbed group. FALSE to display the menu as a shortcut menu on the currently active tab.  
   
 ### Return Value  
  Override this method in a [CBCGPMDIFrameWnd](../../mfc/reference/cmdiframewndex-class.md)-derived class.  
@@ -1295,15 +1295,15 @@ virtual BOOL OnShowPanes(BOOL bShow);
   
 ### Parameters  
  [in] *bShow*  
- `TRUE` to show panes, `FALSE` to hide panes.  
+ TRUE to show panes, FALSE to hide panes.  
   
 ### Return Value  
- `TRUE` if the state of the panes changes as a result of calling this method, `FALSE` if the panes are already in the state specified by *bShow*. For example, if the panes are hidden and *bShow* is `FALSE`, the return value is `FALSE`.  
+ TRUE if the state of the panes changes as a result of calling this method, FALSE if the panes are already in the state specified by *bShow*. For example, if the panes are hidden and *bShow* is FALSE, the return value is FALSE.  
   
 ### Remarks  
  The default implementation removes the toolbar from the top-level frame window.  
   
- If [CDockingManager::m_bHideDockingBarsInContainerMode](../../mfc/reference/cdockingmanager-class.md#m_bhidedockingbarsincontainermode) is `TRUE` (the default), all docking panes will be hidden.  
+ If [CDockingManager::m_bHideDockingBarsInContainerMode](../../mfc/reference/cdockingmanager-class.md#m_bhidedockingbarsincontainermode) is TRUE (the default), all docking panes will be hidden.  
   
 ##  <a name="onshowpopupmenu"></a>  CMDIFrameWndEx::OnShowPopupMenu  
  Called by the framework when it opens a pop-up menu.  
@@ -1313,7 +1313,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu*);
 ```  
   
 ### Return Value  
- `TRUE` if the pop-up menu is to be displayed. Otherwise, `FALSE`. The default implementation returns `TRUE`.  
+ TRUE if the pop-up menu is to be displayed. Otherwise, FALSE. The default implementation returns TRUE.  
   
 ### Remarks  
  Override this method if you want to implement special processing upon pop-up menu activation. For example, if you want to change regular menu items to color menu buttons, set up tear-off bars, and so on.  
@@ -1355,7 +1355,7 @@ virtual BOOL OnTearOffMenu(
  A pointer to the tear-off bar.  
   
 ### Return Value  
- `TRUE` to allow the pop-up menu with the tear-off bar to be made activate; otherwise `FALSE`. The default is `TRUE`.  
+ TRUE to allow the pop-up menu with the tear-off bar to be made activate; otherwise FALSE. The default is TRUE.  
   
 ### Remarks  
  Override this function when you want to implement a special setup for the tear-off bar. The default implementation does nothing.  
@@ -1396,16 +1396,16 @@ CBasePane* PaneFromPoint(
  The window rectangle of each checked pane is enlarged in all directions by this value.  
   
  [in] *bExactBar*  
- If `TRUE`, the *nSensitivity* parameter is ignored.  
+ If TRUE, the *nSensitivity* parameter is ignored.  
   
  [in] *pRTCBarType*  
- If non- `NULL`, the method iterates over only the panes of the specified type.  
+ If non- NULL, the method iterates over only the panes of the specified type.  
   
  [out] *dwAlignment*  
  If a pane is found, this parameter will specify which side of the pane is closest to the specified point.  
   
 ### Return Value  
- A pointer to a docking pane, or `NULL` if no control contains the point specified by *point*.  
+ A pointer to a docking pane, or NULL if no control contains the point specified by *point*.  
   
 ### Remarks  
  The call is redirected to the [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md). See [CDockingManager::ControlBarFromPoint](../../mfc/reference/cdockingmanager-class.md#panefrompoint) for more information.  
@@ -1419,7 +1419,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
   
 ### Parameters  
  [in] *bNotify*  
- Determines whether the active in-place item for the frame window receives notification of the layout change. If `TRUE`, the item is notified; otherwise `FALSE`.  
+ Determines whether the active in-place item for the frame window receives notification of the layout change. If TRUE, the item is notified; otherwise FALSE.  
   
 ### Remarks  
  This method overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).  
@@ -1441,13 +1441,13 @@ void RemovePaneFromDockManager(
  A pointer to a pane to be removed.  
   
  [in] *bDestroy*  
- `TRUE` to destroy the removed pane. `FALSE` to not destroy it.  
+ TRUE to destroy the removed pane. FALSE to not destroy it.  
   
  [in] *bAdjustLayout*  
- `TRUE` to adjust the docking layout immediately. If `FALSE`, the adjustment will occur only when a redraw event occurs for other reasons (the user resizes the window, drags the main frame, etc.).  
+ TRUE to adjust the docking layout immediately. If FALSE, the adjustment will occur only when a redraw event occurs for other reasons (the user resizes the window, drags the main frame, etc.).  
   
  [in] *bAutoHide*  
- `TRUE` to remove the pane from the list of autohide panes. `FALSE` to remove the pane from the list of regular panes.  
+ TRUE to remove the pane from the list of autohide panes. FALSE to remove the pane from the list of regular panes.  
   
  [in] *pBarReplacement*  
  A pointer to a pane that replaces the removed pane.  
@@ -1469,7 +1469,7 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
  Specifies the profile name.  
   
 ### Return Value  
- `TRUE` if the save succeeded; `FALSE` if the save failed.  
+ TRUE if the save succeeded; FALSE if the save failed.  
   
 ### Remarks  
  To load or save the state of MDI tabs and groups and the list of opened documents, do the following:  
@@ -1549,13 +1549,13 @@ void ShowPane(
  Pointer to the pane to be shown or hidden.  
   
  [in] *bShow*  
- `TRUE` to show the pane. `FALSE` to hide the pane.  
+ TRUE to show the pane. FALSE to hide the pane.  
   
  [in] *bDelay*  
- `TRUE` to delay the recalculation of the docking layout. `FALSE` to recalculate the docking layout immediately.  
+ TRUE to delay the recalculation of the docking layout. FALSE to recalculate the docking layout immediately.  
   
  [in] *bActivate*  
- `TRUE` to show the pane should as active. `FALSE` to show the pane as inactive.  
+ TRUE to show the pane should as active. FALSE to show the pane as inactive.  
   
 ### Remarks  
  Call this method to show or hide the pane. Do not use `ShowWindow` for docking panes.  
@@ -1589,7 +1589,7 @@ virtual BOOL TabbedDocumentToControlBar(CMDIChildWndEx* pMDIChildWnd);
  A pointer to MDI child window that contains a docking pane.  
   
 ### Return Value  
- `TRUE` if the method was successful, `FALSE` on failure.  
+ TRUE if the method was successful, FALSE on failure.  
   
 ### Remarks  
  Use this method to convert a tabbed document to a docking pane. The tabbed document must have been created by using [CMDIFrameWndEx::ControlBarToTabbedDocument](#controlbartotabbeddocument).  
