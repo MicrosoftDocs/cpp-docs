@@ -34,7 +34,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
  The mechanism for doing this is a [DHTML and URL event map](dhtml-event-maps.md), which contains embedded event maps for each page.  
   
 ## Example  
- This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a `Next` button, the second a **Prev** and `Next` button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) to load the appropriate new page.  
+ This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a **Next** button, the second a **Prev** and **Next** button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) to load the appropriate new page.  
   
  The pertinent parts of the class declaration (in CMyMultiPageDlg.h):  
   
@@ -94,7 +94,7 @@ CMultiPageDHtmlDialog();
  The null-terminated string that is the name of an HTML resource.  
   
  *pParentWnd*  
- A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
+ A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is NULL, the dialog object's parent window is set to the main application window.  
   
  *nIDTemplate*  
  Contains the ID number of a dialog-box template resource.  

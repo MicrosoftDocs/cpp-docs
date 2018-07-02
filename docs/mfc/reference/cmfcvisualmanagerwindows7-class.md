@@ -135,13 +135,13 @@ virtual COLORREF GetRibbonEditBackgroundColor (
   
 ### Parameters  
  [in] *pEdit*  
- A pointer to the edit control. This value cannot be `NULL`.  
+ A pointer to the edit control. This value cannot be NULL.  
   
  [out] *bIsHighlighted*  
  Returns whether the ribbon box is highlighted.  
   
  [out] *bIsPaneHighlighted*  
- Returns `TRUE` if the ribbon panel that contains *pEdit* is highlighted.  
+ Returns TRUE if the ribbon panel that contains *pEdit* is highlighted.  
   
  [out] *bIsDisabled*  
  Returns whether *pEdit* is disabled.  

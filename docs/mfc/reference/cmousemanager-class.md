@@ -173,7 +173,7 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The state information loaded from the registry includes the registered views, view identifiers, and the associated commands. If the parameter *lpszProfileName* is `NULL`, this function loads the `CMouseManager` data from the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
+ The state information loaded from the registry includes the registered views, view identifiers, and the associated commands. If the parameter *lpszProfileName* is NULL, this function loads the `CMouseManager` data from the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
   
  In most cases, you do not have to call this function directly. It is called as a part of the workspace initialization process. For more information about the workspace initialization process, see [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate).  
   
@@ -192,7 +192,7 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The state information written to the registry includes all registered views, view identifiers, and the associated commands. If the parameter *lpszProfileName* is `NULL`, this function writes the `CMouseManager` data to the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
+ The state information written to the registry includes all registered views, view identifiers, and the associated commands. If the parameter *lpszProfileName* is NULL, this function writes the `CMouseManager` data to the default registry location controlled by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).  
   
  In most cases, you do not have to call this function directly. It is called as a part of the workspace serialization process. For more information about the workspace serialization process, see [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate).  
   

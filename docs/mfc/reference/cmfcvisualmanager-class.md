@@ -287,7 +287,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
  `TRUE` if 3D tabs should be highlighted.  
   
 ### Remarks  
- Override this function in a derived visual manager and return `TRUE` if 3D tabs should always be highlighted. The default implementation of this method returns `FALSE`.  
+ Override this function in a derived visual manager and return TRUE if 3D tabs should always be highlighted. The default implementation of this method returns FALSE.  
   
 ##  <a name="cmfcvisualmanager"></a>  CMFCVisualManager::CMFCVisualManager  
 
@@ -605,7 +605,7 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
   
 ### Parameters  
  [in] *bSmall*  
- A Boolean parameter that indicates whether `GetNcBtnSize` should retrieve the size of a small or large system button. If *bSmall* is `TRUE`, `GetNcBtnSize` returns the size of a small system button. Otherwise, it returns the size of a large system button.  
+ A Boolean parameter that indicates whether `GetNcBtnSize` should retrieve the size of a small or large system button. If *bSmall* is TRUE, `GetNcBtnSize` returns the size of a small system button. Otherwise, it returns the size of a large system button.  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) parameter that indicate the size of the system buttons.  
@@ -868,19 +868,19 @@ virtual void GetTabFrameColors(
  A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
   
  [out] *clrBlack*  
- A reference to a `COLORREF` parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
+ A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
   
  [out] *clrHighlight*  
- A reference to a `COLORREF` parameter where this method stores the color for the highlight state of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for the highlight state of the tab window.  
   
  [out] *clrFace*  
- A reference to a `COLORREF` parameter where this method stores the color for face of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for face of the tab window.  
   
  [out] *clrDarkShadow*  
- A reference to a `COLORREF` parameter where this method stores the color for the shadow of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for the shadow of the tab window.  
   
  [out] *clrLight*  
- A reference to a `COLORREF` parameter where this method stores the color for the light edge of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for the light edge of the tab window.  
   
  [out] *pbrFace*  
  A pointer to a reference for a brush. This method stores the brush that it uses to fill the face of the tab window in this parameter.  
@@ -1118,7 +1118,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if auto-hide buttons overlap; `FALSE` if they do not.  
+ TRUE if auto-hide buttons overlap; FALSE if they do not.  
   
 ##  <a name="isautodestroy"></a>  CMFCVisualManager::IsAutoDestroy  
 
@@ -1153,7 +1153,7 @@ virtual BOOL IsDockingTabHasBorder();
 ```  
   
 ### Return Value  
- `TRUE` if the visual manager draws borders around panes that are docked and tabbed; `FALSE` otherwise.  
+ TRUE if the visual manager draws borders around panes that are docked and tabbed; FALSE otherwise.  
   
 ### Remarks  
  Docked panes become tabbed when multiple panes are docked to the same location.  
@@ -1252,7 +1252,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
  Nonzero if the visual manager displays Office XP-style menus; otherwise 0.  
   
 ### Remarks  
- The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) calls this method when it has to draw the menu and shadow. By default, this method returns `FALSE`. If you want to use pop-up menus similar to the pop-up menus in Office XP, override this method in a custom visual manager and return `TRUE`.  
+ The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) calls this method when it has to draw the menu and shadow. By default, this method returns FALSE. If you want to use pop-up menus similar to the pop-up menus in Office XP, override this method in a custom visual manager and return TRUE.  
   
 ##  <a name="isoffsetpressedbutton"></a>  CMFCVisualManager::IsOffsetPressedButton  
 
@@ -1273,7 +1273,7 @@ virtual BOOL IsOwnerDrawCaption();
 ```  
   
 ### Return Value  
- `TRUE` if all the frame windows in the application have owner-draw captions; `FALSE` otherwise.  
+ TRUE if all the frame windows in the application have owner-draw captions; FALSE otherwise.  
   
 ##  <a name="isownerdrawmenucheck"></a>  CMFCVisualManager::IsOwnerDrawMenuCheck  
 
@@ -1432,7 +1432,7 @@ virtual BOOL OnDrawBrowseButton(
  A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. This is a reserved value and is currently unused.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  Override this function in a derived class if you want to customize the appearance of browse buttons in instances of the [CMFCEditBrowseCtrl Class](../../mfc/reference/cmfceditbrowsectrl-class.md). The possible values for the state of the button are `ButtonsIsRegular`, `ButtonsIsPressed`, and `ButtonsIsHighlighted`.  
@@ -1897,7 +1897,7 @@ virtual void OnDrawHeaderCtrlSortArrow(
  A Boolean that specifies the direction of the sort arrow.  
   
 ### Remarks  
- If *bIsUp* is `TRUE`, the visual manager draws an up sort arrow. If it is `FALSE`, the visual manager draws a down sort arrow. Override `OnDrawHeaderCtrlSortArrow` in a derived class to customize the appearance of the sort button.  
+ If *bIsUp* is TRUE, the visual manager draws an up sort arrow. If it is FALSE, the visual manager draws a down sort arrow. Override `OnDrawHeaderCtrlSortArrow` in a derived class to customize the appearance of the sort button.  
   
 ##  <a name="ondrawmenuarrowoncustomizelist"></a>  CMFCVisualManager::OnDrawMenuArrowOnCustomizeList  
 
@@ -2036,7 +2036,7 @@ virtual void OnDrawMenuScrollButton(
  A rectangle that specifies the boundaries of the scroll button.  
   
  [in] *bIsScrollDown*  
- A Boolean that indicates which type of button the visual manager draws. A value of `TRUE` indicates the visual manager draws a down button.  
+ A Boolean that indicates which type of button the visual manager draws. A value of TRUE indicates the visual manager draws a down button.  
   
  [in] *bIsHighlited*  
  A Boolean that indicates whether the button is highlighted.  
@@ -2110,7 +2110,7 @@ virtual void OnDrawMenuSystemButton(
 ### Remarks  
  The menu system buttons are the **Close**, **Minimize**, **Maximize**, and **Restore** buttons located on the title bar.  
   
- The default implementation for this method calls [CDC::DrawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) with the `DFC_CAPTION` type. Override this method in your derived visual manager class to customize the appearance of system buttons.  
+ The default implementation for this method calls [CDC::DrawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) with the DFC_CAPTION type. Override this method in your derived visual manager class to customize the appearance of system buttons.  
   
 ##  <a name="ondrawminiframeborder"></a>  CMFCVisualManager::OnDrawMiniFrameBorder  
 
@@ -2823,7 +2823,7 @@ virtual void OnDrawRibbonProgressBar(
  A rectangle that specifies the boundaries of the area surrounding the progress bar.  
   
  [in] *bInfiniteMode*  
- A Boolean parameter that indicates the mode of the progress bar. A value of `TRUE` means the bar is in infinite mode. The default implementation does not use this parameter.  
+ A Boolean parameter that indicates the mode of the progress bar. A value of TRUE means the bar is in infinite mode. The default implementation does not use this parameter.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of a progress bar.  
@@ -2957,7 +2957,7 @@ virtual void OnDrawRibbonSliderZoomButton(
  A rectangle that specifies the boundaries of the zoom buttons on the ribbon slider.  
   
  [in] *bIsZoomOut*  
- A Boolean parameter that indicates which button the framework draws. A value of `TRUE` indicates the left button with a "-" for zoom out. A value of `FALSE` indicates the right button with a "+" for zoom in.  
+ A Boolean parameter that indicates which button the framework draws. A value of TRUE indicates the left button with a "-" for zoom out. A value of FALSE indicates the right button with a "+" for zoom in.  
   
  [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the button is highlighted.  
@@ -3066,7 +3066,7 @@ virtual void OnDrawSeparator(
  A rectangle that specifies the boundaries of the separator.  
   
  [in] *bIsHoriz*  
- A Boolean parameter that indicates the orientation of a docked pane. A value of `TRUE` indicates that the pane is docked horizontally. A value of `FALSE` indicates that the pane is docked vertically.  
+ A Boolean parameter that indicates the orientation of a docked pane. A value of TRUE indicates that the pane is docked horizontally. A value of FALSE indicates that the pane is docked vertically.  
   
 ### Remarks  
  Separators are used on control bars to separate groups of related icons. The default implementation for this method displays the standard separator. Override this method in a derived visual manager to customize the appearance of the separator.  
@@ -3111,7 +3111,7 @@ virtual void OnDrawSpinButtons(
  A flag that indicates the state of the spin control. See the Remarks section for more information.  
   
  [in] *bOrientation*  
- A Boolean parameter that specifies the orientation of the spin control. A value of `TRUE` indicates the spin control is horizontal. Otherwise, it is vertical.  
+ A Boolean parameter that specifies the orientation of the spin control. A value of TRUE indicates the spin control is horizontal. Otherwise, it is vertical.  
   
  [in] *pSpinCtrl*  
  A pointer to a spin control. The framework draws the buttons for this control.  
@@ -3244,10 +3244,10 @@ virtual void OnDrawStatusBarProgress(
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.  
   
  [in] *clrProgressBarDest*  
- A `COLORREF` parameter that indicates the end of a color gradient for the progress bar. If *clrProgressBarDest* is -1, the framework does not draw the progress bar as a color gradient. Instead, it fills the whole progress bar with the color specified by *clrBar*.  
+ A COLORREF parameter that indicates the end of a color gradient for the progress bar. If *clrProgressBarDest* is -1, the framework does not draw the progress bar as a color gradient. Instead, it fills the whole progress bar with the color specified by *clrBar*.  
   
  [in] *clrProgressText*  
- A `COLORREF` parameter that indicates the text color for the textual representation of the current progress. This parameter is ignored if *bProgressText* is set to `FALSE`.  
+ A COLORREF parameter that indicates the text color for the textual representation of the current progress. This parameter is ignored if *bProgressText* is set to FALSE.  
   
  [in] *bProgressText*  
  A Boolean parameter that indicates whether to display the textual representation of the current progress.  
@@ -3464,10 +3464,10 @@ virtual void OnDrawTasksGroupAreaBorder(
  A rectangle that specifies the boundaries of the group area on the task pane.  
   
  [in] *bSpecial*  
- A Boolean parameter that specifies if the border is highlighted. A value of `TRUE` indicates that the border is highlighted.  
+ A Boolean parameter that specifies if the border is highlighted. A value of TRUE indicates that the border is highlighted.  
   
  [in] *bNoTitle*  
- A Boolean parameter that specifies whether the group area has a title. A value of `TRUE` indicates that the group area does not have a title.  
+ A Boolean parameter that specifies whether the group area has a title. A value of TRUE indicates that the group area does not have a title.  
   
 ### Remarks  
  Override this function in a derived class to customize the border around a group area on the task pane.  
@@ -3546,7 +3546,7 @@ virtual void OnDrawTearOffCaption(
  A rectangle that specifies the boundaries of the caption.  
   
  [in] *bIsActive*  
- `TRUE` if the caption is active; `FALSE` otherwise.  
+ TRUE if the caption is active; FALSE otherwise.  
   
 ### Remarks  
  This function is called by the framework when a `CMFCPopupMenu` object processes a WM_PAINT message and must draw a tear-off caption.  
@@ -3585,7 +3585,7 @@ virtual BOOL OnEraseMDIClientArea(
  A rectangle that specifies the boundaries of the MDI client area.  
   
 ### Return Value  
- A reserved value. The default implementation returns `FALSE`.  
+ A reserved value. The default implementation returns FALSE.  
   
 ### Remarks  
  Override this method to execute custom code when the visual manager erases the MDI client area.  
@@ -3682,7 +3682,7 @@ virtual BOOL OnEraseTabsFrame(
  A pointer to a tab window. The framework erases a frame for this `CMFCBaseTabCtrl`.  
   
 ### Return Value  
- `TRUE` if the method is successful; `FALSE` otherwise.  
+ TRUE if the method is successful; FALSE otherwise.  
   
 ### Remarks  
  This method fills the area indicated by *rect* with the background color of the active tab. It is called when a `CMFCBaseTabCtrl` object processes a WM_PAINT message and erases a tab frame.  
@@ -4139,7 +4139,7 @@ virtual void OnFillTab(
  The zero-based tab index of a tab for which the framework fills the background.  
   
  [in] *bIsActive*  
- `TRUE` if the tab is active; otherwise `FALSE`.  
+ TRUE if the tab is active; otherwise FALSE.  
   
  [in] *pTabWnd*  
  A pointer to the parent tab control.  
@@ -4275,7 +4275,7 @@ virtual BOOL OnNcPaint(
  A rectangle that specifies the boundaries of the non-client area.  
   
 ### Return Value  
- A reserved value. The default implementation returns `FALSE`.  
+ A reserved value. The default implementation returns FALSE.  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of the window frame and caption buttons.  
@@ -4297,7 +4297,7 @@ virtual BOOL OnSetWindowRegion(
  The size of the window.  
   
 ### Return Value  
- `TRUE` if the method is successful; `FALSE` otherwise.  
+ TRUE if the method is successful; FALSE otherwise.  
   
 ### Remarks  
  The framework calls this method to notify the visual manager that a region has been set for frames and pop-up menus. For more information, see [CWindow::SetWindowRgn](../../atl/reference/cwindow-class.md#setwindowrgn).  

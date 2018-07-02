@@ -82,7 +82,7 @@ DWORD GetFlags() const;
 ```  
   
 ### Return Value  
- A `DWORD` value that specifies the combination of flags currently set.  
+ A DWORD value that specifies the combination of flags currently set.  
   
 ### Remarks  
  The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.  
@@ -109,7 +109,7 @@ BOOL GetItemPath(
 ### Remarks  
  If this method fails, *strPath* contains the empty string.  
   
- If you do not specify *hTreeItem*, this method tries to obtain the string for the currently selected item. If no item is selected and *hTreeItem* is `NULL`, this method fails.  
+ If you do not specify *hTreeItem*, this method tries to obtain the string for the currently selected item. If no item is selected and *hTreeItem* is NULL, this method fails.  
   
 ##  <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList  
  Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is associated with this [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
@@ -202,7 +202,7 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
  A PIDL that specifies the item  
   
 ### Return Value  
- `S_OK` if successful; `E_FAIL` otherwise.  
+ S_OK if successful; E_FAIL otherwise.  
   
 ##  <a name="setflags"></a>  CMFCShellTreeCtrl::SetFlags  
  Sets flags to filter the tree context.  
