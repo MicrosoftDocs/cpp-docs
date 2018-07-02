@@ -25,7 +25,7 @@ friend F;
 ## Friend declarations  
  If you declare a friend function that was not previously declared, that function is exported to the enclosing nonclass scope.  
   
- Functions declared in a friend declaration are treated as if they had been declared using the `extern` keyword. (For more information about `extern`, see [Static Storage-Class Specifiers](http://msdn.microsoft.com/en-us/3ba9289a-a412-4a17-b319-ceb2c087df48).)  
+ Functions declared in a friend declaration are treated as if they had been declared using the `extern` keyword. (For more information about `extern`, see [extern Storage-Class Specifier](https://docs.microsoft.com/en-us/cpp/c-language/extern-storage-class-specifier).)  
   
  Although functions with global scope can be declared as friends prior to their prototypes, member functions cannot be declared as friends before the appearance of their complete class declaration. The following code shows why this fails:  
   
