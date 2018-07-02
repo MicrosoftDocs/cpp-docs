@@ -49,14 +49,14 @@ class CMFCPropertyGridCtrl : public CWnd
 |[CMFCPropertyGridCtrl::EnableHeaderCtrl](#enableheaderctrl)|Enables or disables the header control at the top of the property grid control.|  
 |[CMFCPropertyGridCtrl::EnsureVisible](#ensurevisible)|Scrolls a property grid control and expands property items until the specified property is visible.|  
 |[CMFCPropertyGridCtrl::ExpandAll](#expandall)|Expands or collapses all property grid control nodes.|  
-|[CMFCPropertyGridCtrl::FindItemByData](#finditembydata)|Retrieves the property that is associated with a user-defined `DWORD` value.|  
+|[CMFCPropertyGridCtrl::FindItemByData](#finditembydata)|Retrieves the property that is associated with a user-defined DWORD value.|  
 |`CMFCPropertyGridCtrl::get_accChild`|Called by the framework to retrieve the address of an `IDispatch` interface for the specified child. (Overrides [CWnd::get_accChild](../../mfc/reference/cwnd-class.md#get_accchild).)|  
 |[CMFCPropertyGridCtrl::get_accChildCount](#get_accchildcount)|Called by the framework to retrieve the number of children belonging to this object. (Overrides [CWnd::get_accChildCount](../../mfc/reference/cwnd-class.md#get_accchildcount).)|  
 |`CMFCPropertyGridCtrl::get_accDefaultAction`|Called by the framework to retrieve a string that describes the object's default action. (Overrides [CWnd::get_accDefaultAction](../../mfc/reference/cwnd-class.md#get_accdefaultaction).)|  
 |`CMFCPropertyGridCtrl::get_accDescription`|Called by framework to retrieve a string that describes the visual appearance of the specified object. (Overrides [CWnd::get_accDescription](../../mfc/reference/cwnd-class.md#get_accdescription).)|  
 |[CMFCPropertyGridCtrl::get_accFocus](#get_accfocus)|Called by the framework to retrieve the object that has the keyboard focus. (Overrides [CWnd::get_accFocus](../../mfc/reference/cwnd-class.md#get_accfocus).)|  
 |[CMFCPropertyGridCtrl::get_accHelp](#get_acchelp)|Called by the framework to retrieve an object's `Help` property string. (Overrides [CWnd::get_accHelp](../../mfc/reference/cwnd-class.md#get_acchelp).)|  
-|[CMFCPropertyGridCtrl::get_accHelpTopic](#get_acchelptopic)|Called by the framework to retrieve the full path of the `WinHelp` file associated with the specified object and the identifier of the appropriate topic within that file. (Overrides [CWnd::get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic).)|  
+|[CMFCPropertyGridCtrl::get_accHelpTopic](#get_acchelptopic)|Called by the framework to retrieve the full path of the **WinHelp** file associated with the specified object and the identifier of the appropriate topic within that file. (Overrides [CWnd::get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic).)|  
 |[CMFCPropertyGridCtrl::get_accKeyboardShortcut](#get_acckeyboardshortcut)|Called by the framework to retrieve the specified object's shortcut key or access key. (Overrides [CWnd::get_accKeyboardShortcut](../../mfc/reference/cwnd-class.md#get_acckeyboardshortcut).)|  
 |`CMFCPropertyGridCtrl::get_accName`|Called by the framework to retrieve the name of the specified object. (Overrides [CWnd::get_accName](../../mfc/reference/cwnd-class.md#get_accname).)|  
 |`CMFCPropertyGridCtrl::get_accRole`|Called by the framework to retrieve information that describes the role of the specified object. (Overrides [CWnd::get_accRole](../../mfc/reference/cwnd-class.md#get_accrole).)|  
@@ -199,10 +199,10 @@ int AddProperty(
  Pointer to a property.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the property immediately; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to redraw the property immediately; otherwise, FALSE. The default value is TRUE.  
   
  [in] *bAdjustLayout*  
- `TRUE` to recalculate how to draw the text and value of the property, and then draw the property; `FALSE` to use existing calculations to draw the property. The default value is `TRUE`.  
+ TRUE to recalculate how to draw the text and value of the property, and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.  
   
 ### Return Value  
  If this method succeeds, the zero-based index of the position in the property grid control where the property is added; otherwise, -1.  
@@ -299,13 +299,13 @@ virtual BOOL Create(
  A bounding rectangle that specifies the size and position of the window, in client coordinates of *pParentWnd*.  
   
  [in] *pParentWnd*  
- Pointer to the parent window. Must not be `NULL`.  
+ Pointer to the parent window. Must not be NULL.  
   
  [in] *nID*  
  The ID of the child window.  
   
 ### Return Value  
- `TRUE` if the window was created successfully; otherwise, `FALSE`.  
+ TRUE if the window was created successfully; otherwise, FALSE.  
   
 ### Remarks  
  To create a property grid control, first call [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) to construct a property grid object. Then call `CMFCPropertyGridCtrl::Create`.  
@@ -330,13 +330,13 @@ BOOL DeleteProperty(
  Pointer to a property.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the property grid control; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to redraw the property grid control; otherwise, FALSE. The default value is TRUE.  
   
  [in] *bAdjustLayout*  
- `TRUE` to recalculate how to draw all the text, images, and items in the property grid control, and then draw the control; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to recalculate how to draw all the text, images, and items in the property grid control, and then draw the control; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  Use this method to delete a property, and any sub-items, from the property grid control.  
@@ -366,10 +366,10 @@ virtual BOOL EditItem(
  Pointer to a property.  
   
  [in] *lptClick*  
- The point on the property grid control that the user clicked to begin the edit operation. The point is in the client coordinates of the control. The default value is `NULL`.  
+ The point on the property grid control that the user clicked to begin the edit operation. The point is in the client coordinates of the control. The default value is NULL.  
   
 ### Return Value  
- `TRUE` if method is successful; otherwise, `FALSE`.  
+ TRUE if method is successful; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -382,7 +382,7 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the description area; `FALSE` to disable the description area. The default value is `TRUE`.  
+ TRUE to enable the description area; FALSE to disable the description area. The default value is TRUE.  
   
 ### Remarks  
  The description area is displayed at the bottom of the property grid control. By default, the description area is disabled and not visible.  
@@ -399,7 +399,7 @@ void EnableHeaderCtrl(
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the header control; `FALSE` to disable the header control. The default value is `TRUE`.  
+ TRUE to enable the header control; FALSE to disable the header control. The default value is TRUE.  
   
  [in] *lpszLeftColumn*  
  The title of the left column of the header control. The default value is **Property**.  
@@ -416,10 +416,10 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
   
 ### Parameters  
  [in] *bUpdateData*  
- `TRUE` to specify that the modified property data must be validated when the edit operation is complete; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to specify that the modified property data must be validated when the edit operation is complete; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
- `TRUE` if the edit operation ends successfully; `FALSE` if the modified property data is not valid or if the editing operation should continue.  
+ TRUE if the edit operation ends successfully; FALSE if the modified property data is not valid or if the editing operation should continue.  
   
 ### Remarks  
   
@@ -437,7 +437,7 @@ void EnsureVisible(
  Pointer to a property.  
   
  [in] *bExpandParents*  
- `TRUE` to expand parent items to make the specified property visible; otherwise, `FALSE`. The default is `FALSE`.  
+ TRUE to expand parent items to make the specified property visible; otherwise, FALSE. The default is FALSE.  
   
 ### Remarks  
   
@@ -450,12 +450,12 @@ void ExpandAll(BOOL bExpand=TRUE);
   
 ### Parameters  
  [in] *bExpand*  
- `TRUE` to expand all nodes; `FALSE` to collapse all nodes. The default value is `TRUE`.  
+ TRUE to expand all nodes; FALSE to collapse all nodes. The default value is TRUE.  
   
 ### Remarks  
   
 ##  <a name="finditembydata"></a>  CMFCPropertyGridCtrl::FindItemByData  
- Retrieves the property that is associated with a user-defined `DWORD` value.  
+ Retrieves the property that is associated with a user-defined DWORD value.  
   
 ```  
 CMFCPropertyGridProperty* FindItemByData(
@@ -465,16 +465,16 @@ CMFCPropertyGridProperty* FindItemByData(
   
 ### Parameters  
  [in] *dwData*  
- A `DWORD` value.  
+ A DWORD value.  
   
  [in] *bSearchSubItems*  
- `TRUE` to search property sub-items; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to search property sub-items; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
- A pointer to the associated property object if this method succeeds; otherwise, `NULL`.  
+ A pointer to the associated property object if this method succeeds; otherwise, NULL.  
   
 ### Remarks  
- Use the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor or [CMFCPropertyGridProperty::SetData](../../mfc/reference/cmfcpropertygridproperty-class.md#setdata) method to associate a `DWORD` with a property.  
+ Use the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor or [CMFCPropertyGridProperty::SetData](../../mfc/reference/cmfcpropertygridproperty-class.md#setdata) method to associate a DWORD with a property.  
   
 ##  <a name="get_accchildcount"></a>  CMFCPropertyGridCtrl::get_accChildCount  
 
@@ -484,7 +484,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 ```  
   
 ### Parameters  
- [in] `pcountChildren`  
+ [in] *pcountChildren*  
   
 ### Return Value  
   
@@ -785,10 +785,10 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
   
 ### Parameters  
  [in] *nBar*  
- The orientation of the scroll bar, which must be `SB_VERT`.  
+ The orientation of the scroll bar, which must be SB_VERT.  
   
 ### Return Value  
- A pointer to a scroll bar object, or `NULL` if there is no scroll bar or the scroll bar orientation is `SB_HORZ`.  
+ A pointer to a scroll bar object, or NULL if there is no scroll bar or the scroll bar orientation is SB_HORZ.  
   
 ### Remarks  
  Use this method to gain direct access to the vertical scroll bar control.  
@@ -824,12 +824,12 @@ CMFCPropertyGridProperty* HitTest(
  A pointer to a `ClickArea` variable. When this method returns, the variable indicates the *property area* that contains the specified point. For more information about a property area, see Remarks.  
   
  [in] *bPropsOnly*  
- `TRUE` to test only the property area; `FALSE` to test the *description area* if the specified point is not in the property area. The default value is `FALSE`. For more information about the description area, see Remarks.  
+ TRUE to test only the property area; FALSE to test the *description area* if the specified point is not in the property area. The default value is FALSE. For more information about the description area, see Remarks.  
   
 ### Return Value  
- If the *bPropsOnly* parameter is `TRUE` and the specified point is in a property area, the return value is a pointer to the corresponding property object. In addition, the *pnArea* parameter is set to the particular area that contains the specified point. Otherwise, the return value is `NULL` and the *pnArea* parameter is not modified.  
+ If the *bPropsOnly* parameter is TRUE and the specified point is in a property area, the return value is a pointer to the corresponding property object. In addition, the *pnArea* parameter is set to the particular area that contains the specified point. Otherwise, the return value is NULL and the *pnArea* parameter is not modified.  
   
- If the *bPropsOnly* parameter is `FALSE`, the return value is always `NULL`. However, if the specified point is in the description area, the *pnArea* parameter is set to `CMFCPropertyGridProperty::ClickDescription`.  
+ If the *bPropsOnly* parameter is FALSE, the return value is always NULL. However, if the specified point is in the description area, the *pnArea* parameter is set to `CMFCPropertyGridProperty::ClickDescription`.  
   
 ### Remarks  
  The term *property area* refers to any one of the name, value, or expand box areas of a property grid control item. The *description area* is the zone at the bottom of a property grid control. When you click a property grid control item, the description area displays a description of the corresponding property.  
@@ -867,7 +867,7 @@ BOOL IsAlphabeticMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property grid control is in alphabetic mode; otherwise `FALSE`.  
+ TRUE if the property grid control is in alphabetic mode; otherwise FALSE.  
   
 ### Remarks  
  When the property grid control is in alphabetic mode, all properties are sorted alphabetically by their names. Otherwise, properties are grouped under their parent nodes.  
@@ -893,7 +893,7 @@ BOOL IsDescriptionArea() const;
 ```  
   
 ### Return Value  
- `TRUE` if the description area is displayed; otherwise, `FALSE`.  
+ TRUE if the description area is displayed; otherwise, FALSE.  
   
 ### Remarks  
  Use the [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) method to hide or display the description area.  
@@ -906,7 +906,7 @@ BOOL IsGroupNameFullWidth() const;
 ```  
   
 ### Return Value  
- `TRUE` if group names are displayed across the width of the property grid control; `FALSE` if group names are truncated by the right (value) column of the control.  
+ TRUE if group names are displayed across the width of the property grid control; FALSE if group names are truncated by the right (value) column of the control.  
   
 ### Remarks  
  A *group* is a collection of related properties in a property grid control. If the control is displayed hierarchically, the *group name* is displayed as a category title in the row above the group.  
@@ -919,7 +919,7 @@ BOOL IsHeaderCtrl() const;
 ```  
   
 ### Return Value  
- `TRUE` if the header control is displayed; otherwise `FALSE`.  
+ TRUE if the header control is displayed; otherwise FALSE.  
   
 ### Remarks  
  Use the [CMFCPropertyGridCtrl::EnableHeaderCtrl](#enableheaderctrl) method to hide or display the header control.  
@@ -932,7 +932,7 @@ BOOL IsMarkModifiedProperties() const;
 ```  
   
 ### Return Value  
- `TRUE` if bold style is used to display modified properties; `FALSE` if regular style is used to display modified properties.  
+ TRUE if bold style is used to display modified properties; FALSE if regular style is used to display modified properties.  
   
 ### Remarks  
   
@@ -944,7 +944,7 @@ BOOL IsShowDragContext() const;
 ```  
   
 ### Return Value  
- `TRUE` if the framework redraws the name and value columns during a resize operation; `FALSE` if the framework redraws the columns after the drag operation is completed.  
+ TRUE if the framework redraws the name and value columns during a resize operation; FALSE if the framework redraws the columns after the drag operation is completed.  
   
 ### Remarks  
  The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.  
@@ -957,7 +957,7 @@ BOOL IsVSDotNetLook() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property grid control is in the style of Visual Studio .NET; otherwise, `FALSE`.  
+ TRUE if the property grid control is in the style of Visual Studio .NET; otherwise, FALSE.  
   
 ### Remarks  
  Use the [CMFCPropertyGridCtrl::SetVSDotNetLook](#setvsdotnetlook) method to set the property grid control to the style of Visual Studio .NET.  
@@ -973,10 +973,10 @@ void MarkModifiedProperties(
   
 ### Parameters  
  [in] *bMark*  
- `TRUE` to display modified properties in bold style; `FALSE` to display modified properties in regular style. The default value is `TRUE`.  
+ TRUE to display modified properties in bold style; FALSE to display modified properties in regular style. The default value is TRUE.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the property grid control immediately; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to redraw the property grid control immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1075,7 +1075,7 @@ virtual int OnDrawProperty(
  A pointer to a property object.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1120,7 +1120,7 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
   
 ### Parameters  
  [in] *bRedraw*  
- `TRUE` to redraw the property list; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to redraw the property list; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1133,7 +1133,7 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
   
 ### Parameters  
  [in] *bSet*  
- `TRUE` to set alphabetic mode; `FALSE` reset alphabetic mode. The default value is `TRUE`.  
+ TRUE to set alphabetic mode; FALSE reset alphabetic mode. The default value is TRUE.  
   
 ### Remarks  
  When the property grid control is in alphabetic mode, the control sorts all the properties it contains by their property name.  
@@ -1170,7 +1170,7 @@ void SetCurSel(
  A pointer to a property object.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the property grid control immediately; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to redraw the property grid control immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
  Use this method to cancel the selection of the current item in the property grid control and then select the item that corresponds to the specified property.  
@@ -1238,10 +1238,10 @@ void SetGroupNameFullWidth(
   
 ### Parameters  
  [in] *bGroupNameFullWidth*  
- `TRUE` to display the complete width of the category name regardless of the width of the property name column. `FALSE` to limit the width of the category name to the width of the property name column. The default value is `TRUE`.  
+ TRUE to display the complete width of the category name regardless of the width of the property name column. FALSE to limit the width of the category name to the width of the property name column. The default value is TRUE.  
   
  [in] *bRedraw*  
- `TRUE` to update the property grid control immediately; `FALSE` to update the control when the next redraw event occurs. The default value is `TRUE`.  
+ TRUE to update the property grid control immediately; FALSE to update the control when the next redraw event occurs. The default value is TRUE.  
   
 ### Remarks  
  The property grid control consists of a resizable *property name* column and a *property value* column. The end of the name column is also the start of the value column. To resize the columns, drag the border between the columns.  
@@ -1260,7 +1260,7 @@ void SetListDelimiter(TCHAR c);
  A character to serve as a delimiter.  
   
 ### Remarks  
- Use this method to define a delimiter character in a list of property values that are used in the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) constructor. In that constructor, set the *bIsValueList* parameter to `TRUE`.  
+ Use this method to define a delimiter character in a list of property values that are used in the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) constructor. In that constructor, set the *bIsValueList* parameter to TRUE.  
   
  By default, the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor sets the delimiter character to comma (',').  
   
@@ -1273,7 +1273,7 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
   
 ### Parameters  
  [in] *bShowDragContext*  
- `TRUE` to redraw the name and value columns during a resize operation; `FALSE` to redraw the columns after the drag operation is completed. The default value is `TRUE`.  
+ TRUE to redraw the name and value columns during a resize operation; FALSE to redraw the columns after the drag operation is completed. The default value is TRUE.  
   
 ### Remarks  
  The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.  
@@ -1287,7 +1287,7 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
   
 ### Parameters  
  [in] *bSet*  
- `TRUE` to set the property grid control to the style that is used in Visual Studio .NET; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to set the property grid control to the style that is used in Visual Studio .NET; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1319,12 +1319,12 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
 |[in] *pProp*|Pointer to a property. This parameter is not used.|  
   
 ### Return Value  
- Always `TRUE`.  
+ Always TRUE.  
   
 ### Remarks  
- The [CMFCPropertyGridCtrl::EndEditItem](#endedititem) method calls this method to validate data. By default, this method does not use its *pProp* parameter and its return value is always `TRUE`.  
+ The [CMFCPropertyGridCtrl::EndEditItem](#endedititem) method calls this method to validate data. By default, this method does not use its *pProp* parameter and its return value is always TRUE.  
   
- If you override this method, return `TRUE` if the specified property data is valid. Otherwise, return `FALSE`, in which case the framework does not update the property.  
+ If you override this method, return TRUE if the specified property data is valid. Otherwise, return FALSE, in which case the framework does not update the property.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

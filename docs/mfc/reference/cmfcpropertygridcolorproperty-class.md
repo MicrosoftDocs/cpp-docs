@@ -85,10 +85,10 @@ CMFCPropertyGridColorProperty(
  The color value of the property.  
   
  [in] *pPalette*  
- Pointer to a palette of colors. The default value is `NULL`.  
+ Pointer to a palette of colors. The default value is NULL.  
   
  [in] *lpszDescr*  
- The property description. The default value is `NULL`.  
+ The property description. The default value is NULL.  
   
  [in] *dwData*  
  Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
@@ -111,7 +111,7 @@ void EnableAutomaticButton(
  The RGB color value of the automatic (default) color.  
   
  [in] *bEnable*  
- `TRUE` to enable the automatic button; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to enable the automatic button; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -130,10 +130,10 @@ void EnableOtherButton(
  The label text of the other button.  
   
  [in] *bAltColorDlg*  
- `TRUE` to display the `CMFCColorDialog` dialog box; `FALSE` to display the standard color selection dialog box. The default value is `TRUE`.  
+ TRUE to display the `CMFCColorDialog` dialog box; FALSE to display the standard color selection dialog box. The default value is TRUE.  
   
  [in] *bEnable*  
- `TRUE` to display the other button; otherwise, `FALSE`.  The default value is `TRUE`.  
+ TRUE to display the other button; otherwise, FALSE.  The default value is TRUE.  
   
 ### Remarks  
   

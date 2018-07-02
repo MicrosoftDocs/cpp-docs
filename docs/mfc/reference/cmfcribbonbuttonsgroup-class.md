@@ -114,7 +114,7 @@ CMFCRibbonBaseElement* GetButton(int i) const;
  A zero-based index of a button to return.  
   
 ### Return Value  
- A pointer to the button that is located at the specified index. `NULL` if the specified index is out of range.  
+ A pointer to the button that is located at the specified index. NULL if the specified index is out of range.  
   
 ### Remarks  
   

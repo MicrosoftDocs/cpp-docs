@@ -213,7 +213,7 @@ BOOL OpenLink();
 ```  
   
 ### Return Value  
- `TRUE` if the associated Web page was opened successfully; otherwise, `FALSE`.  
+ TRUE if the associated Web page was opened successfully; otherwise, FALSE.  
   
 ### Remarks  
  Opens a web page using the hyperlink associated with the `CMFCRibbonLinkCtrl` object.  

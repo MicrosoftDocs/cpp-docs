@@ -39,8 +39,8 @@ class CMFCPopupMenuBar : public CMFCToolBar
 |[CMFCPopupMenuBar::ImportFromMenu](#importfrommenu)|Imports popup menu buttons from a specified menu.|  
 |[CMFCPopupMenuBar::IsDropDownListMode](#isdropdownlistmode)|Indicates whether the popup menu bar is in drop-down-list mode.|  
 |[CMFCPopupMenuBar::IsPaletteMode](#ispalettemode)|Indicates whether the popup menu bar is in palette mode.|  
-|[CMFCPopupMenuBar::IsRibbonPanel](#isribbonpanel)|Indicates whether this is a ribbon panel ( `FALSE` by default).|  
-|[CMFCPopupMenuBar::IsRibbonPanelInRegularMode](#isribbonpanelinregularmode)|Indicates whether this is a ribbon panel in regular mode ( `FALSE` by default).|  
+|[CMFCPopupMenuBar::IsRibbonPanel](#isribbonpanel)|Indicates whether this is a ribbon panel (FALSE by default).|  
+|[CMFCPopupMenuBar::IsRibbonPanelInRegularMode](#isribbonpanelinregularmode)|Indicates whether this is a ribbon panel in regular mode (FALSE by default).|  
 |[CMFCPopupMenuBar::LoadFromHash](#loadfromhash)|Loads an archived menu.|  
 |[CMFCPopupMenuBar::RestoreDelayedSubMenu](#restoredelayedsubmenu)|Restores a delayed menu button for closing the popup menu bar.|  
 |[CMFCPopupMenuBar::SetButtonStyle](#setbuttonstyle)|Sets the style of the toolbar button at the given index. (Overrides [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)|  
@@ -90,7 +90,7 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
   
 ### Parameters  
  [in] *bRecalcLayout*  
- `TRUE` to automatically recalculate the layout of the popup menu bar pane; otherwise, `FALSE`.  
+ TRUE to automatically recalculate the layout of the popup menu bar pane; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -106,7 +106,7 @@ BOOL BuildOrigItems(UINT uiMenuResID);
  Specifies the menu ID of the menu resource to load.  
   
 ### Return Value  
- Returns `TRUE` if successful or `FALSE` if not.  
+ Returns TRUE if successful or FALSE if not.  
   
 ### Remarks  
   
@@ -143,7 +143,7 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
  A point on the screen.  
   
 ### Return Value  
- Returns a handle to the toolbar where the point lies, if therei is one, or `NULL` if not.  
+ Returns a handle to the toolbar where the point lies, if therei is one, or NULL if not.  
   
 ### Remarks  
   
@@ -210,10 +210,10 @@ virtual BOOL ImportFromMenu(
  The menu from which to import the popup menu buttons.  
   
  [in] *bShowAllCommands*  
- `TRUE` if all commands on the menu are to be imported, or `FALSE` if rarely used ones may be hidden.  
+ TRUE if all commands on the menu are to be imported, or FALSE if rarely used ones may be hidden.  
   
 ### Return Value  
- Returns `TRUE` if the menu buttons were successfully imported from the menu, or `FALSE` if not.  
+ Returns TRUE if the menu buttons were successfully imported from the menu, or FALSE if not.  
   
 ### Remarks  
   
@@ -225,7 +225,7 @@ BOOL IsDropDownListMode() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if the popup menu bar is in drop-down-list mode, or `FALSE` if not.  
+ Returns TRUE if the popup menu bar is in drop-down-list mode, or FALSE if not.  
   
 ### Remarks  
   
@@ -237,32 +237,32 @@ BOOL IsPaletteMode() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if palette mode is enabled, or `FALSE` if not.  
+ Returns TRUE if palette mode is enabled, or FALSE if not.  
   
 ### Remarks  
  When the menu bar is set to palette mode, menu items appear in multiple columns and a limited number of rows.  
   
 ##  <a name="isribbonpanel"></a>  CMFCPopupMenuBar::IsRibbonPanel  
- Indicates whether this is a ribbon panel ( `FALSE` by default).  
+ Indicates whether this is a ribbon panel (FALSE by default).  
   
 ```  
 virtual BOOL IsRibbonPanel() const;  
 ```  
   
 ### Return Value  
- Returns `FALSE` by default, indicating that this is not a ribbon panel.  
+ Returns FALSE by default, indicating that this is not a ribbon panel.  
   
 ### Remarks  
   
 ##  <a name="isribbonpanelinregularmode"></a>  CMFCPopupMenuBar::IsRibbonPanelInRegularMode  
- Indicates whether this is a ribbon panel in regular mode ( `FALSE` by default).  
+ Indicates whether this is a ribbon panel in regular mode (FALSE by default).  
   
 ```  
 virtual BOOL IsRibbonPanelInRegularMode() const;  
 ```  
   
 ### Return Value  
- Returns `FALSE` by default, indicating that this is not a ribbon panel in regular mode.  
+ Returns FALSE by default, indicating that this is not a ribbon panel in regular mode.  
   
 ### Remarks  
   
@@ -278,7 +278,7 @@ BOOL LoadFromHash(HMENU hMenu);
  A handle to the archived menu to load.  
   
 ### Return Value  
- Returns `TRUE` if the menu is loaded successfully, or `FALSE` if not.  
+ Returns TRUE if the menu is loaded successfully, or FALSE if not.  
   
 ### Remarks  
   
@@ -290,9 +290,9 @@ BOOL m_bDisableSideBarInXPMode;
 ```  
   
 ### Remarks  
- If this member variable is set to `FALSE` and your application has a Windows XP appearance, the framework draws a gray sidebar in your application.  
+ If this member variable is set to FALSE and your application has a Windows XP appearance, the framework draws a gray sidebar in your application.  
   
- The default value is `FALSE`.  
+ The default value is FALSE.  
   
 ##  <a name="restoredelayedsubmenu"></a>  CMFCPopupMenuBar::RestoreDelayedSubMenu  
  Restores a delayed menu button for closing the popup menu bar.  
