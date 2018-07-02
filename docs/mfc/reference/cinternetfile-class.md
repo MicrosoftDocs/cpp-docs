@@ -141,7 +141,7 @@ virtual void Close();
 ```  
   
 ### Remarks  
- If the file was opened for writing, there is an implicit call to [Flush](#flush) to assure that all buffered data is written to the host. You should call **Close** when you are finished using a file.  
+ If the file was opened for writing, there is an implicit call to [Flush](#flush) to assure that all buffered data is written to the host. You should call `Close` when you are finished using a file.  
   
 ##  <a name="flush"></a>  CInternetFile::Flush  
  Call this member function to flush the contents of the write buffer.  
@@ -196,7 +196,7 @@ virtual UINT Read(
 ### Remarks  
  The function returns the number of bytes actually read — a number that may be less than *nCount* if the file ends. If an error occurs while reading the file, the function throws a [CInternetException](../../mfc/reference/cinternetexception-class.md) object that describes the error. Note that reading past the end of the file is not considered an error and no exception will be thrown.  
   
- To ensure all data is retrieved, an application must continue to call the **CInternetFile::Read** method until the method returns zero.  
+ To ensure all data is retrieved, an application must continue to call the `CInternetFile::Read` method until the method returns zero.  
   
 ##  <a name="readstring"></a>  CInternetFile::ReadString  
  Call this member function to read a stream of characters until it finds a newline character.  
@@ -223,7 +223,7 @@ virtual LPTSTR ReadString(
 ### Return Value  
  A pointer to the buffer containing plain data retrieved from the [CInternetFile](../../mfc/reference/cinternetfile-class.md) object. Regardless of the data type of the buffer passed to this method, it does not perform any manipulations on the data (for example, conversion to Unicode), so you must map the returned data to the structure you expect, as if the **void\*** type were returned.  
   
- **NULL** if end-of-file was reached without reading any data; or, if boolean, **FALSE** if end-of-file was reached without reading any data.  
+ NULL if end-of-file was reached without reading any data; or, if boolean, FALSE if end-of-file was reached without reading any data.  
   
 ### Remarks  
  The function places the resulting line into the memory referenced by the *pstr* parameter. It stops reading characters when it reaches the maximum number of characters, specified by *nMax*. The buffer always receives a terminating null character.  
@@ -246,11 +246,11 @@ virtual ULONGLONG Seek(
  *nFrom*  
  Relative reference for the offset. Must be one of the following values:  
   
-- **CFile::begin** Move the file pointer *lOff* bytes forward from the beginning of the file.  
+- `CFile::begin` Move the file pointer *lOff* bytes forward from the beginning of the file.  
   
-- **CFile::current** Move the file pointer *lOff* bytes from the current position in the file.  
+- `CFile::current` Move the file pointer *lOff* bytes from the current position in the file.  
   
-- **CFile::end** Move the file pointer *lOff* bytes from the end of the file. *lOff* must be negative to seek into the existing file; positive values will seek past the end of the file.  
+- `CFile::end` Move the file pointer *lOff* bytes from the end of the file. *lOff* must be negative to seek into the existing file; positive values will seek past the end of the file.  
   
 ### Return Value  
  The new byte offset from the beginning of the file if the requested position is legal; otherwise, the value is undefined and a [CInternetException](../../mfc/reference/cinternetexception-class.md) object is thrown.  
@@ -258,7 +258,7 @@ virtual ULONGLONG Seek(
 ### Remarks  
  The `Seek` function permits random access to a file's contents by moving the pointer a specified amount, absolutely or relatively. No data is actually read during the seek.  
   
- At this time, a call to this member function is only supported for data associated with `CHttpFile` objects. It is not supported for FTP or gopher requests. If you call `Seek` for one of these unsupported services, it will pass back you to the Win32 error code **ERROR_INTERNET_INVALID_OPERATION**.  
+ At this time, a call to this member function is only supported for data associated with `CHttpFile` objects. It is not supported for FTP or gopher requests. If you call `Seek` for one of these unsupported services, it will pass back you to the Win32 error code ERROR_INTERNET_INVALID_OPERATION.  
   
  When a file is opened, the file pointer is at offset 0, the beginning of the file.  
   

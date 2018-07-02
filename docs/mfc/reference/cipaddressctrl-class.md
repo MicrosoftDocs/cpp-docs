@@ -91,13 +91,13 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- The IP Address control's style. Apply a combination of window styles. You must include the **WS_CHILD** style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
+ The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
   
  *rect*  
  A reference to the IP Address Control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
  *pParentWnd*  
- A pointer to the IP Address Control's parent window. It must not be **NULL.**  
+ A pointer to the IP Address Control's parent window. It must not be NULL.  
   
  *nID*  
  The IP Address Control's ID.  
@@ -131,7 +131,7 @@ virtual BOOL CreateEx(
  Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  *dwStyle*  
- The IP Address control's style. Apply a combination of window styles. You must include the **WS_CHILD** style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
+ The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
   
  *rect*  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
@@ -175,7 +175,7 @@ int GetAddress(DWORD& dwAddress);
  A reference to the field 3 value from a packed IP address.  
   
  *dwAddress*  
- A reference to the address of a `DWORD` value that receives the IP address. See **Remarks** for a table that shows how *dwAddress* is filled.  
+ A reference to the address of a DWORD value that receives the IP address. See **Remarks** for a table that shows how *dwAddress* is filled.  
   
 ### Return Value  
  The number of non-blank fields in the IP Address Control.  
@@ -230,7 +230,7 @@ void SetAddress(DWORD dwAddress);
  The field 3 value from a packed IP address.  
   
  *dwAddress*  
- A `DWORD` value that contains the new IP address. See **Remarks** for a table that shows how the `DWORD` value is filled.  
+ A DWORD value that contains the new IP address. See **Remarks** for a table that shows how the DWORD value is filled.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.  

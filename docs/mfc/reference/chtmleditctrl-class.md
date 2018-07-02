@@ -86,7 +86,7 @@ virtual BOOL Create(
  Specifies the control's size and position.  
   
  *pParentWnd*  
- Specifies the control's parent window. It must not be **NULL**.  
+ Specifies the control's parent window. It must not be NULL.  
   
  *nID*  
  Specifies the control's ID.  
@@ -95,7 +95,7 @@ virtual BOOL Create(
  This parameter is unused.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ##  <a name="getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument  
  Retrieves the [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface on the document currently loaded in the contained WebBrowser control  

@@ -119,7 +119,7 @@ BOOL AddKnownCategory(KNOWNDESTCATEGORY category);
   
 ### Parameters  
  *category*  
- Specifies a known category type. Can be either `KDC_RECENT`, or `KDC_KNOWN`.  
+ Specifies a known category type. Can be either KDC_RECENT, or KDC_KNOWN.  
   
 ### Return Value  
   
@@ -243,7 +243,7 @@ ICustomDestinationList* GetDestinationList();
 ### Return Value  
   
 ### Remarks  
- If the jump list has not been initialized, or has been committed or aborted, the returned value will be `NULL`.  
+ If the jump list has not been initialized, or has been committed or aborted, the returned value will be NULL.  
   
 ##  <a name="getmaxslots"></a>  CJumpList::GetMaxSlots  
  Retrieves the maximum number of items, including category headers that can display in the calling application's destination menu.  

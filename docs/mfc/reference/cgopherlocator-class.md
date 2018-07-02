@@ -84,7 +84,7 @@ BOOL GetLocatorType(DWORD& dwRef) const;
   
 ### Parameters  
  *dwRef*  
- A reference to a `DWORD` that will receive the locator type. See **Remarks** for a table of locator types.  
+ A reference to a DWORD that will receive the locator type. See **Remarks** for a table of locator types.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  

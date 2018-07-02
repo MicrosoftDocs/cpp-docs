@@ -92,7 +92,7 @@ virtual BOOL FindFile(
   
 ### Parameters  
  *pstrName*  
- A pointer to a string containing the name of the file to find. If **NULL**, the call will perform a wildcard search (*).  
+ A pointer to a string containing the name of the file to find. If NULL, the call will perform a wildcard search (*).  
   
  *dwFlags*  
  The flags describing how to handle this session. These flags can be combined with the bitwise OR operator (&#124;) and are as follows:  
@@ -105,13 +105,13 @@ virtual BOOL FindFile(
   
 -   INTERNET_FLAG_SECURE   Secures transactions on the wire with Secure Sockets Layer or PCT. This flag is applicable to HTTP requests only.  
   
--   INTERNET_FLAG_EXISTING_CONNECT   If possible, reuse the existing connections to the server for new **FindFile** requests instead of creating a new session for each request.  
+-   INTERNET_FLAG_EXISTING_CONNECT   If possible, reuse the existing connections to the server for new `FindFile` requests instead of creating a new session for each request.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- After calling **FindFile** to retrieve the first FTP file, you can call [FindNextFile](#findnextfile) to retrieve subsequent FTP files.  
+ After calling `FindFile` to retrieve the first FTP file, you can call [FindNextFile](#findnextfile) to retrieve subsequent FTP files.  
   
 ### Example  
   See the earlier example in this topic.  

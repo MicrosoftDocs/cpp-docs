@@ -50,7 +50,7 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
  **Header:** afxhtml.h  
   
 ##  <a name="chtmleditdoc"></a>  CHtmlEditDoc::CHtmlEditDoc  
- Constructs a **CHtmlEditDoc** object.  
+ Constructs a `CHtmlEditDoc` object.  
   
 ```  
 CHtmlEditDoc();
@@ -64,7 +64,7 @@ virtual CHtmlEditView* GetView() const;
 ```  
   
 ### Return Value  
- Returns a pointer to the document's **CHtmlEditView** object.  
+ Returns a pointer to the document's `CHtmlEditView` object.  
   
 ##  <a name="ismodified"></a>  CHtmlEditDoc::IsModified  
  Returns whether the associated view's WebBrowser control contains a document that has been modified by the user.  
@@ -85,7 +85,7 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
  The URL to open.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ## See Also  
  [HTMLEdit Sample](../../visual-cpp-samples.md)   

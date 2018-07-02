@@ -54,7 +54,7 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::GetForeColor](#getforecolor)|Retrieves the foreground (text) color of the current selection.|  
 |[CHtmlEditCtrlBase::GetFrameZone](#getframezone)|Returns the security zone of the current page in the web browser.|  
 |[CHtmlEditCtrlBase::GetIsDirty](#getisdirty)|Indicates whether the HTML document has changed.|  
-|[CHtmlEditCtrlBase::GetShowAlignedSiteTags](#getshowalignedsitetags)|Returns whether a glyph is displayed for all elements that have a **styleFloat** property.|  
+|[CHtmlEditCtrlBase::GetShowAlignedSiteTags](#getshowalignedsitetags)|Returns whether a glyph is displayed for all elements that have a `styleFloat` property.|  
 |[CHtmlEditCtrlBase::GetShowAllTags](#getshowalltags)|Returns whether the WebBrowser displays glyphs to show the location of all tags in a document.|  
 |[CHtmlEditCtrlBase::GetShowAreaTags](#getshowareatags)|Retrieves whether the WebBrowser displays a glyph for area tags.|  
 |[CHtmlEditCtrlBase::GetShowBRTags](#getshowbrtags)|Retrieves whether the WebBrowser displays a glyph for br tags.|  
@@ -119,7 +119,7 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::SetOverrideCursor](#setoverridecursor)|Commands the WebBrowser never to change the mouse pointer.|  
 |[CHtmlEditCtrlBase::SetOverwriteMode](#setoverwritemode)|Toggles the text-entry mode between insert and overwrite.|  
 |[CHtmlEditCtrlBase::SetRespectVisInDesign](#setrespectvisindesign)|Hides invisible elements in design mode.|  
-|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#setshowalignedsitetags)|Displays a glyph for all elements that have a **styleFloat** property.|  
+|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#setshowalignedsitetags)|Displays a glyph for all elements that have a `styleFloat` property.|  
 |[CHtmlEditCtrlBase::SetShowAllTags](#setshowalltags)|Displays glyphs to show the location of all tags in a document.|  
 |[CHtmlEditCtrlBase::SetShowAreaTags](#setshowareatags)|Displays a glyph for all the area tags.|  
 |[CHtmlEditCtrlBase::SetShowBRTags](#setshowbrtags)|Displays a glyph for all the br tags.|  
@@ -140,9 +140,9 @@ template <class T> class CHtmlEditCtrlBase
  The name of the derived class.  
   
 ## Remarks  
- **CHtmlEditCtrlBase** provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#bold). (Alternately, you can call [ExecCommand](#execcommand) to execute the **IDM_BOLD** command.)  
+ `CHtmlEditCtrlBase` provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#bold). (Alternately, you can call [ExecCommand](#execcommand) to execute the IDM_BOLD command.)  
   
- **CHtmlEditCtrlBase** is not intended to stand on its own. It is designed to be a base class for derived classes that expose the HTML editing functionality of the WebBrowser (see [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) and [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).  
+ `CHtmlEditCtrlBase` is not intended to stand on its own. It is designed to be a base class for derived classes that expose the HTML editing functionality of the WebBrowser (see [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) and [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).  
   
 ## Inheritance Hierarchy  
  `CHtmlEditCtrlBase`  
@@ -389,7 +389,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the element's position property is set to "absolute."  
+ TRUE if the element's position property is set to "absolute."  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -613,10 +613,10 @@ HRESULT GetIsDirty() const;
 ```  
   
 ### Remarks  
- Indicates whether the document has changed. `GetIsDirty` returns an `HRESULT` from [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
+ Indicates whether the document has changed. `GetIsDirty` returns an HRESULT from [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
   
 ##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
- Returns whether a glyph is displayed for all elements that have a **styleFloat** property.  
+ Returns whether a glyph is displayed for all elements that have a `styleFloat` property.  
   
 ```  
 HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;  
@@ -624,7 +624,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if a glyph is displayed for all elements that have a **styleFloat** property; false if no glyph is displayed.  
+ TRUE if a glyph is displayed for all elements that have a `styleFloat` property; FALSE if no glyph is displayed.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -641,7 +641,7 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays glyphs to show the location of all tags in a document; false if it does not.  
+ TRUE if the WebBrowser displays glyphs to show the location of all tags in a document; FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -658,7 +658,7 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays a glyph for area tags, false if it does not.  
+ TRUE if the WebBrowser displays a glyph for area tags, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -675,7 +675,7 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays a glyph for br tags, false if it doesn't.  
+ TRUE if the WebBrowser displays a glyph for br tags, FALSE if it doesn't.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -692,7 +692,7 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays a glyph for comment tags, false if it doesn't.  
+ TRUE if the WebBrowser displays a glyph for comment tags, FALSE if it doesn't.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -709,7 +709,7 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0, false if it does not.  
+ TRUE if the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -726,7 +726,7 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays a glyph for all the script tags, false if it does not.  
+ TRUE if the WebBrowser displays a glyph for all the script tags, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -743,7 +743,7 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays a glyph for all the style tags, false if it does not  
+ TRUE if the WebBrowser displays a glyph for all the style tags, FALSE if it does not  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -760,7 +760,7 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
   
 ### Parameters  
  *bCurValue*  
- True if the WebBrowser displays a glyph for all unknown tags, false if it does not.  
+ TRUE if the WebBrowser displays a glyph for all unknown tags, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1011,7 +1011,7 @@ HRESULT Is1DElement(bool& bValue) const;
   
 ### Parameters  
  *bValue*  
- True if the element is statically positioned, false otherwise.  
+ TRUE if the element is statically positioned, FALSE otherwise.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1028,7 +1028,7 @@ HRESULT Is2DElement(bool& bValue) const;
   
 ### Parameters  
  *bValue*  
- True if the element is absolutely positioned, false otherwise.  
+ TRUE if the element is absolutely positioned, FALSE otherwise.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1206,7 +1206,7 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
  Path to a print template; if none is specified, the default print template is used.  
   
  *bShowPrintDialog*  
- If true, shows the Print dialog.  
+ If TRUE, shows the Print dialog.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1241,7 +1241,7 @@ long QueryStatus(long cmdID) const;
   
 ### Parameters  
  *cmdID*  
- The command ID. Command identifiers are taken from the `CGID_MSHTML` command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/p/?linkid=149220).  
+ The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/p/?linkid=149220).  
   
 ### Return Value  
  Returns an [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for *cmdID*, or 0 on failure.  
@@ -1328,7 +1328,7 @@ HRESULT Set2DPosition(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, absolutely positioned elements can be moved by dragging.  
+ If TRUE, absolutely positioned elements can be moved by dragging.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1345,7 +1345,7 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, the element's position property is "absolute"; if false, it is "static."  
+ If TRUE, the element's position property is "absolute"; if FALSE, it is "static."  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1362,7 +1362,7 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, any element that has an ATOMICSELECTION attribute set to TRUE will be selectable only as a unit.  
+ If TRUE, any element that has an ATOMICSELECTION attribute set to TRUE will be selectable only as a unit.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1379,7 +1379,7 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, automatic URL detection is enabled.  
+ If TRUE, automatic URL detection is enabled.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1487,13 +1487,13 @@ HRESULT SetDefaultComposeSettings(
  The font background color.  
   
  *bBold*  
- Pass true for bold text.  
+ Pass TRUE for bold text.  
   
  *bItalic*  
- Pass true for italic text.  
+ Pass TRUE for italic text.  
   
  *bUnderline*  
- Pass true for underlined text.  
+ Pass TRUE for underlined text.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1510,7 +1510,7 @@ BOOL SetDesignMode(BOOL bMode) const;
   
 ### Parameters  
  *bMode*  
- If true, turns design mode on.  
+ If TRUE, turns design mode on.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -1524,7 +1524,7 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, disables the hatched border and handles around a site selectable element when the element has "edit focus" in design mode; that is, when the text or contents of the element can be edited.  
+ If TRUE, disables the hatched border and handles around a site selectable element when the element has "edit focus" in design mode; that is, when the text or contents of the element can be edited.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1610,7 +1610,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, all paste operations are compatible with Internet Explorer 5; if false, paste operations are compatible with Internet Explorer 5.5.  
+ If TRUE, all paste operations are compatible with Internet Explorer 5; if FALSE, paste operations are compatible with Internet Explorer 5.5.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1627,7 +1627,7 @@ HRESULT SetLiveResize(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation; if false, it updates only at the completion of the move or resize.  
+ If TRUE, causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation; if FALSE, it updates only at the completion of the move or resize.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1644,7 +1644,7 @@ HRESULT SetMultiSelect(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, allows for the selection of more than one site-selectable element at a time when the user holds down the SHIFT or CTRL keys.  
+ If TRUE, allows for the selection of more than one site-selectable element at a time when the user holds down the SHIFT or CTRL keys.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1661,7 +1661,7 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, the WebBrowser will not change the mouse pointer.  
+ If TRUE, the WebBrowser will not change the mouse pointer.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1678,7 +1678,7 @@ HRESULT SetOverwriteMode(bool bMode) const;
   
 ### Parameters  
  *bMode*  
- If true, text-entry mode is overwrite; if false, text-entry mode is insert.  
+ If TRUE, text-entry mode is overwrite; if FALSE, text-entry mode is insert.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1695,7 +1695,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, any elements that have a visibility set to "hidden" or display property set to "none" will not be shown in both design mode and browse mode; if false, those elements will be displayed only in browse mode.  
+ If TRUE, any elements that have a visibility set to "hidden" or display property set to "none" will not be shown in both design mode and browse mode; if FALSE, those elements will be displayed only in browse mode.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1704,7 +1704,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
  This method sends the [IDM RESPECTVISIBILITY_INDESIGN command ID](https://msdn.microsoft.com/library/aa770023.aspx) to the WebBrowser control.  
   
 ##  <a name="setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags  
- Displays a glyph for all elements that have a **styleFloat** property.  
+ Displays a glyph for all elements that have a `styleFloat` property.  
   
 ```  
 HRESULT SetShowAlignedSiteTags(bool bNewValue) const;  
@@ -1712,7 +1712,7 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all elements that have a **styleFloat** property.  
+ If TRUE, displays a glyph for all elements that have a `styleFloat` property.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1729,7 +1729,7 @@ HRESULT SetShowAllTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays glyphs to show the location of all tags in a document.  
+ If TRUE, displays glyphs to show the location of all tags in a document.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1746,7 +1746,7 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all the area tags.  
+ If TRUE, displays a glyph for all the area tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1763,7 +1763,7 @@ HRESULT SetShowBRTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all the br tags.  
+ If TRUE, displays a glyph for all the br tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1780,7 +1780,7 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all the comment tags.  
+ If TRUE, displays a glyph for all the comment tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1797,7 +1797,7 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays all the tags shown in Microsoft Internet Explorer 4.0.  
+ If TRUE, displays all the tags shown in Microsoft Internet Explorer 4.0.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1814,7 +1814,7 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all the script tags.  
+ If TRUE, displays a glyph for all the script tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1831,7 +1831,7 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all the style tags.  
+ If TRUE, displays a glyph for all the style tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1848,7 +1848,7 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
   
 ### Parameters  
  *bNewValue*  
- If true, displays a glyph for all the unknown tags.  
+ If TRUE, displays a glyph for all the unknown tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
