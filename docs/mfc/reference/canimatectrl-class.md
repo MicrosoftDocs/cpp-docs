@@ -124,7 +124,7 @@ virtual BOOL Create(
  Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
  *pParentWnd*  
- Specifies the animation control's parent window, usually a `CDialog`. It must not be **NULL**.  
+ Specifies the animation control's parent window, usually a `CDialog`. It must not be NULL.  
   
  *nID*  
  Specifies the animation control's ID.  
@@ -137,11 +137,11 @@ virtual BOOL Create(
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to an animation control.  
   
-- **WS_CHILD** Always  
+- WS_CHILD Always  
   
-- **WS_VISIBLE** Usually  
+- WS_VISIBLE Usually  
   
-- **WS_DISABLED** Rarely  
+- WS_DISABLED Rarely  
   
  If you want to use extended windows styles with your animation control, call [CreateEx](#createex) instead of `Create`.  
   
@@ -192,7 +192,7 @@ BOOL IsPlaying() const;
 ```  
   
 ### Return Value  
- `true` if an AVI clip is playing; otherwise, `false`.  
+ TRUE if an AVI clip is playing; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) message, which is described in the Windows SDK.  
@@ -207,10 +207,10 @@ BOOL Open(UINT nID);
   
 ### Parameters  
  *lpszFileName*  
- A `CString` object or a pointer to a null-terminated string that contains either the name of the AVI file or the name of an AVI resource. If this parameter is **NULL**, the system closes the AVI clip that was previously opened for the animation control, if any.  
+ A `CString` object or a pointer to a null-terminated string that contains either the name of the AVI file or the name of an AVI resource. If this parameter is NULL, the system closes the AVI clip that was previously opened for the animation control, if any.  
   
  *nID*  
- The AVI resource identifier. If this parameter is **NULL**, the system closes the AVI clip that was previously opened for the animation control, if any.  
+ The AVI resource identifier. If this parameter is NULL, the system closes the AVI clip that was previously opened for the animation control, if any.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -218,7 +218,7 @@ BOOL Open(UINT nID);
 ### Remarks  
  The AVI resource is loaded from the module that created the animation control.  
   
- **Open** does not support sound in an AVI clip; you can open only silent AVI clips.  
+ `Open` does not support sound in an AVI clip; you can open only silent AVI clips.  
   
  If the animation control has the `ACS_AUTOPLAY` style, the animation control will automatically start playing the clip immediately after it opens it. It will continue to play the clip in the background while your thread continues executing. When the clip is done playing, it will automatically be repeated.  
   

@@ -91,7 +91,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 |[in] *pBar*|The base pane that the framework tests.|  
   
 ### Return Value  
- `TRUE` if *pBar* is derived from `CMFCAutoHideBar`; `FALSE` otherwise.  
+ TRUE if *pBar* is derived from `CMFCAutoHideBar`; FALSE otherwise.  
   
 ### Remarks  
  If a base pane object is derived from `CMFCAutoHideBar`, it can contain a `CAutoHideDockSite`.  
@@ -118,7 +118,7 @@ virtual void DockPane(
 ### Remarks  
  The default implementation does not use the parameter *dockMethod*, which is provided for future use.  
   
- If *lpRect* is `NULL`, the framework puts the pane in the default location on the dock site. If the dock site is horizontal, the default location is at the far left of the dock site. Otherwise, the default location is at the top of the dock site.  
+ If *lpRect* is NULL, the framework puts the pane in the default location on the dock site. If the dock site is horizontal, the default location is at the far left of the dock site. Otherwise, the default location is at the top of the dock site.  
   
 ##  <a name="getalignrect"></a>  CAutoHideDockSite::GetAlignRect  
  Retrieves the size of the dock site in screen coordinates.  
@@ -207,7 +207,7 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 |[in] *pAutoHideToolbar*|A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|  
   
 ### Remarks  
- This method searches for the row that contains *pAutoHideToolbar*. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If *pAutoHideToolbar* is not found or it is `NULL`, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.  
+ This method searches for the row that contains *pAutoHideToolbar*. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If *pAutoHideToolbar* is not found or it is NULL, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -48,7 +48,7 @@ class CArray : public CObject
 |[CArray::FreeExtra](#freeextra)|Frees all unused memory above the current upper bound.|  
 |[CArray::GetAt](#getat)|Returns the value at a given index.|  
 |[CArray::GetCount](#getcount)|Gets the number of elements in this array.|  
-|[CArray::GetData](#getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CArray::GetData](#getdata)|Allows access to elements in the array. Can be NULL.|  
 |[CArray::GetSize](#getsize)|Gets the number of elements in this array.|  
 |[CArray::GetUpperBound](#getupperbound)|Returns the largest valid index.|  
 |[CArray::InsertAt](#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
@@ -110,7 +110,7 @@ INT_PTR Add(ARG_TYPE newElement);
  The index of the added element.  
   
 ### Remarks  
- If [SetSize](#setsize) has been used with an *nGrowBy* value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
+ If [SetSize](#setsize) has been used with an `nGrowBy` value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/cpp/carray-class_1.cpp)]  
@@ -164,7 +164,7 @@ void Copy(const CArray& src);
 ### Remarks  
  Call this member function to overwrite the elements of one array with the elements of another array.  
   
- **Copy** does not free memory; however, if necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.  
+ `Copy` does not free memory; however, if necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]  
@@ -475,7 +475,7 @@ void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
  Template parameter specifying the type of elements in the array.  
   
  *newElement*  
- The element to be added to this array. A **NULL** value is allowed.  
+ The element to be added to this array. A NULL value is allowed.  
   
 ### Remarks  
  The array grows automatically if necessary (that is, the upper bound is adjusted to accommodate the new element).  

@@ -107,10 +107,10 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
   
 ### Parameters  
  *pUnkControlling*  
- A pointer to the controlling unknown (the outer `IUnknown`) or **NULL** if aggregation is not being used.  
+ A pointer to the controlling unknown (the outer `IUnknown`) or NULL if aggregation is not being used.  
   
 ### Return Value  
- If *pUnkControlling* is not **NULL**, the function returns a pointer to the inner `IUnknown` on a new COM object supporting `IBindStatusCallback`. If `pUnkControlling` is **NULL**, the function returns a pointer to an `IUnknown` on a new COM object supporting `IBindStatusCallback`.  
+ If *pUnkControlling* is not NULL, the function returns a pointer to the inner `IUnknown` on a new COM object supporting `IBindStatusCallback`. If `pUnkControlling` is NULL, the function returns a pointer to an `IUnknown` on a new COM object supporting `IBindStatusCallback`.  
   
 ### Remarks  
  `CAsyncMonikerFile` requires a COM object that implements `IBindStatusCallback`. MFC implements such an object, and it is aggregatable. You can override `CreateBindStatusCallback` to return your own COM object. Your COM object can aggregate MFC's implementation by calling `CreateBindStatusCallback` with the controlling unknown of your COM object. COM objects implemented using the `CCmdTarget` COM support can retrieve the controlling unknown using `CCmdTarget::GetControllingUnknown`.  
@@ -144,7 +144,7 @@ IBinding* GetBinding() const;
 ```  
   
 ### Return Value  
- A pointer to the `IBinding` interface provided when asynchronous transfer begins. Returns **NULL** if for any reason the transfer cannot be made asynchronously.  
+ A pointer to the `IBinding` interface provided when asynchronous transfer begins. Returns NULL if for any reason the transfer cannot be made asynchronously.  
   
 ### Remarks  
  This allows you to control the data transfer process through the `IBinding` interface, for example, with `IBinding::Abort`, `IBinding::Pause`, and `IBinding::Resume`.  
@@ -159,7 +159,7 @@ FORMATETC* GetFormatEtc() const;
 ```  
   
 ### Return Value  
- A pointer to the Windows structure [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) for the currently opened stream. Returns **NULL** if the moniker has not been bound, if it is not asynchronous, or if the asynchronous operation has not begun.  
+ A pointer to the Windows structure [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) for the currently opened stream. Returns NULL if the moniker has not been bound, if it is not asynchronous, or if the asynchronous operation has not begun.  
   
 ##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority  
  Called from the client of an asynchronous moniker as the binding process starts to receive the priority given to the thread for the binding operation.  
@@ -169,10 +169,10 @@ virtual LONG GetPriority() const;
 ```  
   
 ### Return Value  
- The priority at which the asynchronous transfer will take place. One of the standard thread priority flags: **THREAD_PRIORITY_ABOVE_NORMAL**, **THREAD_PRIORITY_BELOW_NORMAL**, **THREAD_PRIORITY_HIGHEST**, **THREAD_PRIORITY_IDLE**, **THREAD_PRIORITY_LOWEST**, **THREAD_PRIORITY_NORMAL**, and **THREAD_PRIORITY_TIME_CRITICAL**. See the Windows function [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) for a description of these values.  
+ The priority at which the asynchronous transfer will take place. One of the standard thread priority flags: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, and THREAD_PRIORITY_TIME_CRITICAL. See the Windows function [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) for a description of these values.  
   
 ### Remarks  
- `GetPriority` should not be called directly. **THREAD_PRIORITY_NORMAL** is returned by the default implementation.  
+ `GetPriority` should not be called directly. THREAD_PRIORITY_NORMAL is returned by the default implementation.  
   
 ##  <a name="ondataavailable"></a>  CAsyncMonikerFile::OnDataAvailable  
  An asynchronous moniker calls `OnDataAvailable` to provide data to the client as it becomes available, during asynchronous bind operations.  
@@ -186,13 +186,13 @@ virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
  The cumulative amount (in bytes) of data available since the beginning of the binding. Can be zero, indicating that the amount of data is not relevant to the operation, or that no specific amount became available.  
   
  *bscfFlag*  
- A **BSCF** enumeration value. Can be one or more of the following values:  
+ A BSCF enumeration value. Can be one or more of the following values:  
   
-- **BSCF_FIRSTDATANOTIFICATION** Identifies the first call to `OnDataAvailable` for a given bind operation.  
+- BSCF_FIRSTDATANOTIFICATION Identifies the first call to `OnDataAvailable` for a given bind operation.  
   
-- **BSCF_INTERMEDIATEDATANOTIFICATION** Identifies an intermediary call to `OnDataAvailable` for a bind operation.  
+- BSCF_INTERMEDIATEDATANOTIFICATION Identifies an intermediary call to `OnDataAvailable` for a bind operation.  
   
-- **BSCF_LASTDATANOTIFICATION** Identifies the last call to `OnDataAvailable` for a bind operation.  
+- BSCF_LASTDATANOTIFICATION Identifies the last call to `OnDataAvailable` for a bind operation.  
   
 ### Remarks  
  The default implementation of this function does nothing. See the following example for a sample implementation.  
@@ -237,31 +237,31 @@ virtual void OnProgress(
 ### Remarks  
  Possible values for *ulStatusCode* (and the *szStatusText* for each value) are:  
   
- **BINDSTATUS_FINDINGRESOURCE**  
+ BINDSTATUS_FINDINGRESOURCE  
  The bind operation is finding the resource that holds the object or storage being bound to. The *szStatusText* provides the display name of the resource being searched for (for example, "www.microsoft.com").  
   
- **BINDSTATUS_CONNECTING**  
+ BINDSTATUS_CONNECTING  
  The bind operation is connecting to the resource that holds the object or storage being bound to. The *szStatusText* provides the display name of the resource being connected to (for example, an IP address).  
   
- **BINDSTATUS_SENDINGREQUEST**  
+ BINDSTATUS_SENDINGREQUEST  
  The bind operation is requesting the object or storage being bound to. The *szStatusText* provides the display name of the object (for example, a file name).  
   
- **BINDSTATUS_REDIRECTING**  
+ BINDSTATUS_REDIRECTING  
  The bind operation has been redirected to a different data location. The *szStatusText* provides the display name of the new data location.  
   
- **BINDSTATUS_USINGCACHEDCOPY**  
- The bind operation is retrieving the requested object or storage from a cached copy. The *szStatusText* is **NULL**.  
+ BINDSTATUS_USINGCACHEDCOPY  
+ The bind operation is retrieving the requested object or storage from a cached copy. The *szStatusText* is NULL.  
   
- **BINDSTATUS_BEGINDOWNLOADDATA**  
+ BINDSTATUS_BEGINDOWNLOADDATA  
  The bind operation has begun receiving the object or storage being bound to. The *szStatusText* provides the display name of the data location.  
   
- **BINDSTATUS_DOWNLOADINGDATA**  
+ BINDSTATUS_DOWNLOADINGDATA  
  The bind operation continues to receive the object or storage being bound to. The *szStatusText* provides the display name of the data location.  
   
- **BINDSTATUS_ENDDOWNLOADDATA**  
+ BINDSTATUS_ENDDOWNLOADDATA  
  The bind operation has finished receiving the object or storage being bound to. The *szStatusText* provides the display name of the data location.  
   
- **BINDSTATUS_CLASSIDAVAILABLE**  
+ BINDSTATUS_CLASSIDAVAILABLE  
  An instance of the object being bound to is just about to be created. The *szStatusText* provides the CLSID of the new object in string format, allowing the client an opportunity to cancel the bind operation, if desired.  
   
 ##  <a name="onstartbinding"></a>  CAsyncMonikerFile::OnStartBinding  
@@ -283,7 +283,7 @@ virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
   
 ### Parameters  
  *hresult*  
- An `HRESULT` that is the error or warning value.  
+ An HRESULT that is the error or warning value.  
   
  *szErrort*  
  A character string describing the error.  

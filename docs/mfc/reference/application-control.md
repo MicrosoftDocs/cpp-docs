@@ -209,15 +209,15 @@ BOOL AFXAPI AfxOleRegisterServerClass(
  Pointer to a string containing the long name of the server's object type, such as "Microsoft Excel 5.0 Chart."  
   
  *nAppType*  
- A value, taken from the **OLE_APPTYPE** enumeration, specifying the type of OLE application. Possible values are the following:  
+ A value, taken from the OLE_APPTYPE enumeration, specifying the type of OLE application. Possible values are the following:  
   
-- `OAT_INPLACE_SERVER` Server has full server user-interface.  
+- OAT_INPLACE_SERVER Server has full server user-interface.  
   
-- `OAT_SERVER` Server supports only embedding.  
+- OAT_SERVER Server supports only embedding.  
   
-- `OAT_CONTAINER` Container supports links to embeddings.  
+- OAT_CONTAINER Container supports links to embeddings.  
   
-- `OAT_DISPATCH_OBJECT` `IDispatch`-capable object.  
+- OAT_DISPATCH_OBJECT `IDispatch`-capable object.  
   
  *rglpszRegister*  
  Array of pointers to strings representing the keys and values to be added to the OLE system registry if no existing values for the keys are found.  
@@ -295,7 +295,7 @@ void AFXAPI AfxOleSetEditMenu(
 Unlocks the class factory of the specified control.  
    
 ### Syntax  
-  ```
+```
 BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );  
 BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );  
 ```
@@ -313,7 +313,7 @@ BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
  A control is locked with `AfxOleLockControl`, so that dynamically created data associated with the control remains in memory. This can significantly speed up display of the control because the control need not be created and destroyed every time it is displayed. When you are ready to destroy the control, call `AfxOleUnlockControl`.  
    
 ### Example  
- ```cpp
+```cpp
 // Unlock control's (Microsoft Calendar Control) class factory.
 
 AfxOleUnlockControl(_T("MSCAL.Calendar"));
