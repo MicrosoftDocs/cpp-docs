@@ -236,7 +236,7 @@ virtual void AddTab(
  A Boolean parameter that determines whether the new tab is detachable.  
   
 ### Remarks  
- If *pTabWnd* points to an object that is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if *bDetachable* is `TRUE`, the framework automatically creates a wrapper for the *pTabWnd* object. The wrapper makes the *pTabWnd* object detachable. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). If the functionality offered by the default wrapper is unacceptable, use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to specify a different wrapper.  
+ If *pTabWnd* points to an object that is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if *bDetachable* is TRUE, the framework automatically creates a wrapper for the *pTabWnd* object. The wrapper makes the *pTabWnd* object detachable. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). If the functionality offered by the default wrapper is unacceptable, use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to specify a different wrapper.  
   
 ##  <a name="applyrestoredtabinfo"></a>  CMFCBaseTabCtrl::ApplyRestoredTabInfo  
 
@@ -346,7 +346,7 @@ virtual BOOL DetachTab(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If the tab specified by *nTabNum* is non-detachable, this function fails and returns `FALSE`.  
+ If the tab specified by *nTabNum* is non-detachable, this function fails and returns FALSE.  
   
 ##  <a name="enableactivatelastactive"></a>  CMFCBaseTabCtrl::EnableActivateLastActive  
 
@@ -388,10 +388,10 @@ BOOL EnableCustomToolTips(BOOL bEnable = TRUE);
  A Boolean that determines whether to use custom tooltips.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
- If custom tooltips are enabled, the tab control sends the `AFX_WM_ON_GET_TAB_TOOLTIP` message to the main frame. If you want to support custom tooltips in your application, the main frame window must handle this method and provide the custom tooltip text. For more information about providing custom tooltip text, see [CMFCTabToolTipInfo Structure](../../mfc/reference/cmfctabtooltipinfo-structure.md).  
+ If custom tooltips are enabled, the tab control sends the AFX_WM_ON_GET_TAB_TOOLTIP message to the main frame. If you want to support custom tooltips in your application, the main frame window must handle this method and provide the custom tooltip text. For more information about providing custom tooltip text, see [CMFCTabToolTipInfo Structure](../../mfc/reference/cmfctabtooltipinfo-structure.md).  
   
 ##  <a name="enableinplaceedit"></a>  CMFCBaseTabCtrl::EnableInPlaceEdit  
  Enables direct editing of the tab labels by the user.  
@@ -428,7 +428,7 @@ virtual BOOL EnableTabDetach(
  A Boolean that indicates whether to make the tab detachable.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ##  <a name="enabletabswap"></a>  CMFCBaseTabCtrl::EnableTabSwap  
  Enables the user to change the tab order using a mouse.  
@@ -484,7 +484,7 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
  A point that is defined by using client-area coordinates of the [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object.  
   
 ### Return Value  
- A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object if successful; otherwise `NULL`.  
+ A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object if successful; otherwise NULL.  
   
 ### Remarks  
  In the `CMFCBaseTabCtrl` class, this method is a pure virtual function: you must implement it if you derive a class from `CMFCBaseTabCtrl`.  
@@ -536,7 +536,7 @@ virtual COLORREF GetActiveTabColor() const;
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the background color of the active tab.  
   
 ### Remarks  
- By default, the background color of the active tab is `COLOR_WINDOW`. You can change the background color for the active tab by using the method [CMFCBaseTabCtrl::SetActiveTabColor](#setactivetabcolor).  
+ By default, the background color of the active tab is COLOR_WINDOW. You can change the background color for the active tab by using the method [CMFCBaseTabCtrl::SetActiveTabColor](#setactivetabcolor).  
   
 ##  <a name="getactivetabtextcolor"></a>  CMFCBaseTabCtrl::GetActiveTabTextColor  
  Retrieves the text color for the active tab.  
@@ -549,7 +549,7 @@ virtual COLORREF GetActiveTabTextColor() const;
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the text color of the active tab.  
   
 ### Remarks  
- By default, the text color for active tabs is `COLOR_WINDOWTEXT`. You can change the text color with the method [CMFCBaseTabCtrl::SetActiveTabTextColor](#setactivetabtextcolor).  
+ By default, the text color for active tabs is COLOR_WINDOWTEXT. You can change the text color with the method [CMFCBaseTabCtrl::SetActiveTabTextColor](#setactivetabtextcolor).  
   
 ##  <a name="getactivewnd"></a>  CMFCBaseTabCtrl::GetActiveWnd  
  Retrieves a pointer to the currently active tab window.  
@@ -594,7 +594,7 @@ virtual CWnd* GetFirstVisibleTab(
  The zero-based index of the first tab to check.  
   
 ### Return Value  
- A pointer to the first visible tab if successful; otherwise `NULL`.  
+ A pointer to the first visible tab if successful; otherwise NULL.  
   
 ### Remarks  
  If this method fails, it writes the value -1 to *iStartFrom*.  
@@ -669,7 +669,7 @@ Location GetLocation() const;
  The location of the tab area.  
   
 ### Remarks  
- Possible tab area location values are `LOCATION_BOTTOM` and `LOCATION_TOP`.  
+ Possible tab area location values are LOCATION_BOTTOM and LOCATION_TOP.  
   
 ##  <a name="getmaxwindowsize"></a>  CMFCBaseTabCtrl::GetMaxWindowSize  
 
@@ -812,7 +812,7 @@ virtual HICON GetTabHicon(int iTab) const;
  The zero-based index for the tab.  
   
 ### Return Value  
- The HICON associated with a tab label if successful; `NULL` if there is no HICON or if the method fails.  
+ The HICON associated with a tab label if successful; NULL if there is no HICON or if the method fails.  
   
 ##  <a name="gettabicon"></a>  CMFCBaseTabCtrl::GetTabIcon  
  Retrieves the icon associated with the specified tab.  
@@ -862,7 +862,7 @@ virtual BOOL GetTabLabel(
  A reference to a `CString` object. This method stores the label of the tab in this parameter.  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` otherwise.  
+ TRUE if successful; FALSE otherwise.  
   
 ### Remarks  
  This method fails if the index *iTab* is invalid.  
@@ -886,7 +886,7 @@ virtual BOOL GetTabRect(
  A reference to a `CRect` object. This method stores the size and position of the tab in this parameter.  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` if the tab index is invalid.  
+ TRUE if successful; FALSE if the tab index is invalid.  
   
 ##  <a name="gettabsheight"></a>  CMFCBaseTabCtrl::GetTabsHeight  
 
@@ -947,7 +947,7 @@ virtual CWnd* GetTabWnd(int iTab) const;
  The zero-based index of a tab.  
   
 ### Return Value  
- A pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object that resides on the tab that *iTab* specifies. `NULL` if *iTab* is invalid.  
+ A pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object that resides on the tab that *iTab* specifies. NULL if *iTab* is invalid.  
   
 ### Remarks  
  The returned object is the one that the application added when it called either [CMFCBaseTabCtrl::AddTab](#addtab) or [CMFCBaseTabCtrl::InsertTab](#inserttab).  
@@ -966,7 +966,7 @@ virtual CWnd* GetTabWndNoWrapper(int iTab) const;
  The zero-based index of a tab.  
   
 ### Return Value  
- A pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object that resides on the specified tab; `NULL` if *iTab* is invalid.  
+ A pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object that resides on the specified tab; NULL if *iTab* is invalid.  
   
 ### Remarks  
  This method retrieves a direct pointer to the `CWnd` object that you added by using either the method [CMFCBaseTabCtrl::AddTab](#addtab) or [CMFCBaseTabCtrl::InsertTab](#inserttab). `GetTabWndNoWrapper` will retrieve a pointer to the added `CWnd`, even if the framework added a wrapper for the object. For more information about wrappers and the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md), see [CMFCBaseTabCtrl::CreateWrapper](#createwrapper).  
@@ -1061,7 +1061,7 @@ virtual void InsertTab(
  The resource ID for the label.  
   
 ### Remarks  
- If the object indicated by *pNewWnd* is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if the *bDetachable* parameter is `TRUE`, the framework creates a special wrapper for the new tab. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). Use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to create a different wrapper class. Any custom wrapper class needs to be derived from `CDockablePaneAdapter`.  
+ If the object indicated by *pNewWnd* is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if the *bDetachable* parameter is TRUE, the framework creates a special wrapper for the new tab. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). Use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to create a different wrapper class. Any custom wrapper class needs to be derived from `CDockablePaneAdapter`.  
   
 ##  <a name="invalidatetab"></a>  CMFCBaseTabCtrl::InvalidateTab  
 
@@ -1094,7 +1094,7 @@ BOOL IsAutoColor() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tab control is in autocolor mode; `FALSE` otherwise.  
+ TRUE if the tab control is in autocolor mode; FALSE otherwise.  
   
 ### Remarks  
  You can enable or disable the autocolor mode by using the [CMFCBaseTabCtrl::EnableAutoColor](#enableautocolor) method.  
@@ -1151,7 +1151,7 @@ virtual BOOL IsFlatFrame() const;
 ```  
   
 ### Return Value  
- `TRUE` if the frame of the tab control is rendered in a flat style; `FALSE` if the frame is rendered in a 3D style.  
+ TRUE if the frame of the tab control is rendered in a flat style; FALSE if the frame is rendered in a 3D style.  
   
 ### Remarks  
  Use [CMFCTabCtrl::SetFlatFrame](../../mfc/reference/cmfctabctrl-class.md#setflatframe) to change the style for the frame of the tab control.  
@@ -1177,7 +1177,7 @@ virtual BOOL IsHideSingleTab() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tab control hides the tab label when it has one tab; otherwise `FALSE`.  
+ TRUE if the tab control hides the tab label when it has one tab; otherwise FALSE.  
   
 ### Remarks  
  Use the method [CMFCBaseTabCtrl::HideSingleTab](#hidesingletab) to enable hiding the tab label when there is only one tab.  
@@ -1242,7 +1242,7 @@ virtual BOOL IsOneNoteStyle() const;
 ```  
   
 ### Return Value  
- `TRUE` if tabs are displayed in the style of Microsoft OneNote; otherwise `FALSE`.  
+ TRUE if tabs are displayed in the style of Microsoft OneNote; otherwise FALSE.  
   
 ### Remarks  
  Call the method [CMDIFrameWndEx::EnableMDITabs](../../mfc/reference/cmdiframewndex-class.md#enablemditabs) to enable the Microsoft OneNote style. You can also enable this style when you instantiate the [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md): simply pass the style STYLE_3D_ONENOTE to the method [CMFCTabCtrl::Create](../../mfc/reference/cmfctabctrl-class.md#create).  
@@ -1300,7 +1300,7 @@ virtual BOOL IsTabDetachable(int iTab) const;
  The zero-based index of the tab to check.  
   
 ### Return Value  
- `TRUE` if the tab is detachable; `FALSE` otherwise.  
+ TRUE if the tab is detachable; FALSE otherwise.  
   
 ### Remarks  
  To make a tab detachable, use the method [CMFCBaseTabCtrl::EnableTabDetach](#enabletabdetach).  
@@ -1317,7 +1317,7 @@ virtual BOOL IsTabIconOnly(int iTab) const;
  The zero-based index of the tab.  
   
 ### Return Value  
- `TRUE` if a tab label has only icons; `FALSE` otherwise.  
+ TRUE if a tab label has only icons; FALSE otherwise.  
   
 ### Remarks  
  To set the tabs in your application to display only icons, call the method [CMFCBaseTabCtrl::SetTabIconOnly](#settabicononly).  
@@ -1368,7 +1368,7 @@ BOOL m_bActivateTabOnRightClick;
 ```  
   
 ### Remarks  
- The default value for this data member is `FALSE`.  
+ The default value for this data member is FALSE.  
   
 ##  <a name="m_bautodestroywindow"></a>  CMFCBaseTabCtrl::m_bAutoDestroyWindow  
  `m_bAutoDestroyWindow` determines whether the framework automatically destroys the objects on tabs when the tabs are removed.  
@@ -1378,7 +1378,7 @@ BOOL m_bAutoDestroyWindow;
 ```  
   
 ### Remarks  
- By default, this member is `FALSE`.  
+ By default, this member is FALSE.  
   
 ##  <a name="movetab"></a>  CMFCBaseTabCtrl::MoveTab  
 
@@ -1518,7 +1518,7 @@ virtual void RemoveAllTabs();
 ```  
   
 ### Remarks  
- If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is `TRUE`, the framework deletes all the [CWnd](../../mfc/reference/cwnd-class.md) objects attached to the removed tabs.  
+ If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is TRUE, the framework deletes all the [CWnd](../../mfc/reference/cwnd-class.md) objects attached to the removed tabs.  
   
 ##  <a name="removetab"></a>  CMFCBaseTabCtrl::RemoveTab  
  Removes a tab from the tab control.  
@@ -1537,10 +1537,10 @@ virtual BOOL RemoveTab(
  A Boolean parameter that specifies whether to recalculate the layout of the tab.  
   
 ### Return Value  
- `TRUE` if the method removes the tab successfully; otherwise `FALSE`.  
+ TRUE if the method removes the tab successfully; otherwise FALSE.  
   
 ### Remarks  
- If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is `TRUE`, `RemoveTab` destroys the [CWnd](../../mfc/reference/cwnd-class.md) object associated with the specified tab.  
+ If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is TRUE, `RemoveTab` destroys the [CWnd](../../mfc/reference/cwnd-class.md) object associated with the specified tab.  
   
 ##  <a name="renametab"></a>  CMFCBaseTabCtrl::RenameTab  
 
@@ -1584,7 +1584,7 @@ virtual BOOL SetActiveTab(int iTab) = 0;
  The zero-based index of a tab. `SetActiveTab` makes the tab with this index active.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
@@ -1658,10 +1658,10 @@ void SetDrawNoPrefix(
   
 ### Parameters  
  [in] *bNoPrefix*  
- `TRUE` if you want to process prefix characters; otherwise `FALSE`.  
+ TRUE if you want to process prefix characters; otherwise FALSE.  
   
  [in] *bRedraw*  
- `TRUE` if you want to redraw the tabbed window; otherwise `FALSE`.  
+ TRUE if you want to redraw the tabbed window; otherwise FALSE.  
   
 ### Remarks  
  A prefix character is a mnemonic character that is preceded by an ampersand (&).  
@@ -1730,7 +1730,7 @@ virtual BOOL SetTabBkColor(
  The color to set.  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` otherwise.  
+ TRUE if successful; FALSE otherwise.  
   
 ##  <a name="settabbordersize"></a>  CMFCBaseTabCtrl::SetTabBorderSize  
  Sets a new border size for the tab control.  
@@ -1765,7 +1765,7 @@ virtual BOOL SetTabHicon(
  A handle to an icon.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ##  <a name="settabicon"></a>  CMFCBaseTabCtrl::SetTabIcon  
  Sets the icon for a tab.  
@@ -1784,7 +1784,7 @@ virtual BOOL SetTabIcon(
  The icon ID for the new icon. This ID references the internal [CImageList](../../mfc/reference/cimagelist-class.md) object.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ##  <a name="settabicononly"></a>  CMFCBaseTabCtrl::SetTabIconOnly  
  Enables displaying only an icon (and no text label) on a specific tab.  
@@ -1807,7 +1807,7 @@ virtual BOOL SetTabIconOnly(
  A Boolean parameter that determines whether the framework shows tooltips for a tab label that displays only icons.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  By default, a tab control displays the icon and text label for each tab.  
@@ -1852,7 +1852,7 @@ BOOL SetTabsOrder(const CArray<int,int>& arOrder);
  An array of zero-based indexes that defines the new tab order.  
   
 ### Return Value  
- `TRUE` if successful; `FAIL` otherwise.  
+ TRUE if successful; FAIL otherwise.  
   
 ### Remarks  
  The size of the *arOrder* array must be equal to the number of tabs in the tab control.  
@@ -1904,7 +1904,7 @@ virtual BOOL ShowTab(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The parameter *bActivate* only applies if *bShow* is `TRUE`. If *bActivate* is `TRUE` and if `ShowTab` is successful, `ShowTab` will send the message AFX_WM_CHANGE_ACTIVE_TAB to the parent of the tab window.  
+ The parameter *bActivate* only applies if *bShow* is TRUE. If *bActivate* is TRUE and if `ShowTab` is successful, `ShowTab` will send the message AFX_WM_CHANGE_ACTIVE_TAB to the parent of the tab window.  
   
 ##  <a name="startrenametab"></a>  CMFCBaseTabCtrl::StartRenameTab  
 

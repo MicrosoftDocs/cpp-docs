@@ -22,7 +22,7 @@ class CMapWordToOb : public CObject
 ```  
   
 ## Members  
- The member functions of `CMapWordToOb` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute **WORD**.  
+ The member functions of `CMapWordToOb` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute WORD.  
   
  `BOOL CMapStringToOb::Lookup( const char* <key>,`  
   
@@ -63,9 +63,9 @@ class CMapWordToOb : public CObject
 |[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|  
   
 ## Remarks  
- `CMapWordToOb` incorporates the `IMPLEMENT_SERIAL` macro to support serialization and dumping of its elements. Each element is serialized in turn if a map is stored to an archive, either with the overloaded insertion ( **<<**) operator or with the `Serialize` member function.  
+ `CMapWordToOb` incorporates the IMPLEMENT_SERIAL macro to support serialization and dumping of its elements. Each element is serialized in turn if a map is stored to an archive, either with the overloaded insertion ( **<<**) operator or with the `Serialize` member function.  
   
- If you need a dump of individual **WORD**- `CObject` elements, you must set the depth of the dump context to 1 or greater.  
+ If you need a dump of individual WORD- `CObject` elements, you must set the depth of the dump context to 1 or greater.  
   
  When a `CMapWordToOb` object is deleted, or when its elements are removed, the `CObject` pointers are removed. The objects referenced by the `CObject` pointers are not destroyed.  
   
