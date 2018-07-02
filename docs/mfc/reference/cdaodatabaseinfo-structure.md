@@ -46,41 +46,41 @@ struct CDaoDatabaseInfo
  *m_lCollatingOrder*  
  Specifies the sequence of the sort order in text for string comparison or sorting. Possible values include:  
   
-- **dbSortGeneral** Use the General (English, French, German, Portuguese, Italian, and Modern Spanish) sort order.  
+- `dbSortGeneral` Use the General (English, French, German, Portuguese, Italian, and Modern Spanish) sort order.  
   
-- **dbSortArabic** Use the Arabic sort order.  
+- `dbSortArabic` Use the Arabic sort order.  
   
-- **dbSortCyrillic** Use the Russian sort order.  
+- `dbSortCyrillic` Use the Russian sort order.  
   
-- **dbSortCzech** Use the Czech sort order.  
+- `dbSortCzech` Use the Czech sort order.  
   
-- **dbSortDutch** Use the Dutch sort order.  
+- `dbSortDutch` Use the Dutch sort order.  
   
-- **dbSortGreek** Use the Greek sort order.  
+- `dbSortGreek` Use the Greek sort order.  
   
-- **dbSortHebrew** Use the Hebrew sort order.  
+- `dbSortHebrew` Use the Hebrew sort order.  
   
-- **dbSortHungarian** Use the Hungarian sort order.  
+- `dbSortHungarian` Use the Hungarian sort order.  
   
-- **dbSortIcelandic** Use the Icelandic sort order.  
+- `dbSortIcelandic` Use the Icelandic sort order.  
   
-- **dbSortNorwdan** Use the Norwegian or Danish sort order.  
+- `dbSortNorwdan` Use the Norwegian or Danish sort order.  
   
-- **dbSortPDXIntl** Use the Paradox International sort order.  
+- `dbSortPDXIntl` Use the Paradox International sort order.  
   
-- **dbSortPDXNor** Use the Paradox Norwegian or Danish sort order.  
+- `dbSortPDXNor` Use the Paradox Norwegian or Danish sort order.  
   
-- **dbSortPDXSwe** Use the Paradox Swedish or Finnish sort order.  
+- `dbSortPDXSwe` Use the Paradox Swedish or Finnish sort order.  
   
-- **dbSortPolish** Use the Polish sort order.  
+- `dbSortPolish` Use the Polish sort order.  
   
-- **dbSortSpanish** Use the Spanish sort order.  
+- `dbSortSpanish` Use the Spanish sort order.  
   
-- **dbSortSwedFin** Use the Swedish or Finnish sort order.  
+- `dbSortSwedFin` Use the Swedish or Finnish sort order.  
   
-- **dbSortTurkish** Use the Turkish sort order.  
+- `dbSortTurkish` Use the Turkish sort order.  
   
-- **dbSortUndefined** The sort order is undefined or unknown.  
+- `dbSortUndefined` The sort order is undefined or unknown.  
   
  For more information, see the topic "Customizing Windows Registry Settings for Data Access" in DAO Help.  
   

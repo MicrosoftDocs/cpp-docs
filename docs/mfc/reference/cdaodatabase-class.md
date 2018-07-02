@@ -124,7 +124,7 @@ BOOL CanUpdate();
 ```  
   
 ### Return Value  
- Nonzero if the `CDaoDatabase` object allows updates; otherwise 0, indicating either that you passed **TRUE** in *bReadOnly* when you opened the `CDaoDatabase` object or that the database itself is read-only. See the [Open](#open) member function.  
+ Nonzero if the `CDaoDatabase` object allows updates; otherwise 0, indicating either that you passed TRUE in *bReadOnly* when you opened the `CDaoDatabase` object or that the database itself is read-only. See the [Open](#open) member function.  
   
 ### Remarks  
  For information about database updatability, see the topic "Updatable Property" in DAO Help.  
@@ -138,7 +138,7 @@ CDaoDatabase(CDaoWorkspace* pWorkspace = NULL);
   
 ### Parameters  
  *pWorkspace*  
- A pointer to the `CDaoWorkspace` object that will contain the new database object. If you accept the default value of **NULL**, the constructor creates a temporary `CDaoWorkspace` object that uses the default DAO workspace. You can get a pointer to the workspace object via the [m_pWorkspace](#m_pworkspace) data member.  
+ A pointer to the `CDaoWorkspace` object that will contain the new database object. If you accept the default value of NULL, the constructor creates a temporary `CDaoWorkspace` object that uses the default DAO workspace. You can get a pointer to the workspace object via the [m_pWorkspace](#m_pworkspace) data member.  
   
 ### Remarks  
  After constructing the object, if you are creating a new Microsoft Jet (.MDB) database, call the object's [Create](#create) member function. If you are, instead, opening an existing database, call the object's [Open](#open) member function.  
@@ -183,50 +183,50 @@ virtual void Create(
  A string expression that is the name of the database file that you are creating. It can be the full path and filename, such as "C:\\\MYDB.MDB". You must supply a name. If you do not supply a filename extension, .MDB is appended. If your network supports the uniform naming convention (UNC), you can also specify a network path, such as "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB". Only Microsoft Jet (.MDB) database files can be created using this member function. (Double backslashes are required in string literals because "\\" is the C++ escape character.)  
   
  *lpszLocale*  
- A string expression used to specify collating order for creating the database. The default value is **dbLangGeneral**. Possible values are:  
+ A string expression used to specify collating order for creating the database. The default value is `dbLangGeneral`. Possible values are:  
   
-- **dbLangGeneral** English, German, French, Portuguese, Italian, and Modern Spanish  
+- `dbLangGeneral` English, German, French, Portuguese, Italian, and Modern Spanish  
   
-- **dbLangArabic** Arabic  
+- `dbLangArabic` Arabic  
   
-- **dbLangCyrillic** Russian  
+- `dbLangCyrillic` Russian  
   
-- **dbLangCzech** Czech  
+- `dbLangCzech` Czech  
   
-- **dbLangDutch** Dutch  
+- `dbLangDutch` Dutch  
   
-- **dbLangGreek** Greek  
+- `dbLangGreek` Greek  
   
-- **dbLangHebrew** Hebrew  
+- `dbLangHebrew` Hebrew  
   
-- **dbLangHungarian** Hungarian  
+- `dbLangHungarian` Hungarian  
   
-- **dbLangIcelandic** Icelandic  
+- `dbLangIcelandic` Icelandic  
   
-- **dbLangNordic** Nordic languages (Microsoft Jet database engine version 1.0 only)  
+- `dbLangNordic` Nordic languages (Microsoft Jet database engine version 1.0 only)  
   
-- **dbLangNorwdan** Norwegian and Danish  
+- `dbLangNorwdan` Norwegian and Danish  
   
-- **dbLangPolish** Polish  
+- `dbLangPolish` Polish  
   
-- **dbLangSpanish** Traditional Spanish  
+- `dbLangSpanish` Traditional Spanish  
   
-- **dbLangSwedfin** Swedish and Finnish  
+- `dbLangSwedfin` Swedish and Finnish  
   
-- **dbLangTurkish** Turkish  
+- `dbLangTurkish` Turkish  
   
  *dwOptions*  
  An integer that indicates one or more options. Possible values are:  
   
-- **dbEncrypt** Create an encrypted database.  
+- `dbEncrypt` Create an encrypted database.  
   
-- **dbVersion10** Create a database with Microsoft Jet database version 1.0.  
+- `dbVersion10` Create a database with Microsoft Jet database version 1.0.  
   
-- **dbVersion11** Create a database with Microsoft Jet database version 1.1.  
+- `dbVersion11` Create a database with Microsoft Jet database version 1.1.  
   
-- **dbVersion20** Create a database with Microsoft Jet database version 2.0.  
+- `dbVersion20` Create a database with Microsoft Jet database version 2.0.  
   
-- **dbVersion30** Create a database with Microsoft Jet database version 3.0.  
+- `dbVersion30` Create a database with Microsoft Jet database version 3.0.  
   
  If you omit the encryption constant, an unencrypted database is created. You can specify only one version constant. If you omit a version constant, a database that uses the Microsoft Jet database version 3.0 is created.  
   
@@ -267,15 +267,15 @@ void CreateRelation(CDaoRelationInfo& relinfo);
  *lAttributes*  
  A long value that contains information about the relationship type. You can use this value to enforce referential integrity, among other things. You can use the bitwise-OR operator ( **&#124;**) to combine any of the following values (as long as the combination makes sense):  
   
-- **dbRelationUnique** Relationship is one-to-one.  
+- `dbRelationUnique` Relationship is one-to-one.  
   
-- **dbRelationDontEnforce** Relationship is not enforced (no referential integrity).  
+- `dbRelationDontEnforce` Relationship is not enforced (no referential integrity).  
   
-- **dbRelationInherited** Relationship exists in a noncurrent database that contains the two attached tables.  
+- `dbRelationInherited` Relationship exists in a noncurrent database that contains the two attached tables.  
   
-- **dbRelationUpdateCascade** Updates will cascade (for more on cascades, see Remarks).  
+- `dbRelationUpdateCascade` Updates will cascade (for more on cascades, see Remarks).  
   
-- **dbRelationDeleteCascade** Deletions will cascade.  
+- `dbRelationDeleteCascade` Deletions will cascade.  
   
  *lpszField*  
  A pointer to a null-terminated string containing the name of a field in the primary table (named by *lpszTable*).  
@@ -366,22 +366,22 @@ void Execute(
  Pointer to a null-terminated string containing a valid SQL command to execute.  
   
  *nOptions*  
- An integer that specifies options relating to the integrity of the query. You can use the bitwise-OR operator ( **&#124;**) to combine any of the following constants (provided the combination makes sense — for example, you would not combine **dbInconsistent** with **dbConsistent**):  
+ An integer that specifies options relating to the integrity of the query. You can use the bitwise-OR operator ( **&#124;**) to combine any of the following constants (provided the combination makes sense — for example, you would not combine `dbInconsistent` with `dbConsistent`):  
   
-- **dbDenyWrite** Deny write permission to other users.  
+- `dbDenyWrite` Deny write permission to other users.  
   
-- **dbInconsistent** (Default) Inconsistent updates.  
+- `dbInconsistent` (Default) Inconsistent updates.  
   
-- **dbConsistent** Consistent updates.  
+- `dbConsistent` Consistent updates.  
   
-- **dbSQLPassThrough** SQL pass-through. Causes the SQL statement to be passed to an ODBC data source for processing.  
+- `dbSQLPassThrough` SQL pass-through. Causes the SQL statement to be passed to an ODBC data source for processing.  
   
-- **dbFailOnError** Roll back updates if an error occurs.  
+- `dbFailOnError` Roll back updates if an error occurs.  
   
-- **dbSeeChanges** Generate a run-time error if another user is changing data you are editing.  
+- `dbSeeChanges` Generate a run-time error if another user is changing data you are editing.  
   
 > [!NOTE]
->  If both **dbInconsistent** and **dbConsistent** are included or if neither is included, the result is the default. For an explanation of these constants, see the topic "Execute Method" in DAO Help.  
+>  If both `dbInconsistent` and `dbConsistent` are included or if neither is included, the result is the default. For an explanation of these constants, see the topic "Execute Method" in DAO Help.  
   
 ### Remarks  
  `Execute` works only for action queries or SQL pass-through queries that do not return results. It does not work for select queries, which return records.  
@@ -389,7 +389,7 @@ void Execute(
  For a definition and information about action queries, see the topics "Action Query" and "Execute Method" in DAO Help.  
   
 > [!TIP]
->  Given a syntactically correct SQL statement and proper permissions, the `Execute` member function will not fail even if not a single row can be modified or deleted. Therefore, always use the **dbFailOnError** option when using the `Execute` member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.  
+>  Given a syntactically correct SQL statement and proper permissions, the `Execute` member function will not fail even if not a single row can be modified or deleted. Therefore, always use the `dbFailOnError` option when using the `Execute` member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.  
   
  Call the [GetRecordsAffected](#getrecordsaffected) member function of the database object to determine the number of records affected by the most recent `Execute` call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.  
   
@@ -403,7 +403,7 @@ CString GetConnect();
 ```  
   
 ### Return Value  
- The connection string if [Open](#open) has been called successfully on an ODBC data source; otherwise, an empty string. For a Microsoft Jet (.MDB) database, the string is always empty unless you set it for use with the **dbSQLPassThrough** option used with the [Execute](#execute) member function or used in opening a recordset.  
+ The connection string if [Open](#open) has been called successfully on an ODBC data source; otherwise, an empty string. For a Microsoft Jet (.MDB) database, the string is always empty unless you set it for use with the `dbSQLPassThrough` option used with the [Execute](#execute) member function or used in opening a recordset.  
   
 ### Remarks  
  The string provides information about the source of an open database or a database used in a pass-through query. The connection string is composed of a database type specifier and zero or more parameters separated by semicolons.  
@@ -485,11 +485,11 @@ void GetQueryDefInfo(
  *dwInfoOptions*  
  Options that specify which information about the recordset to retrieve. The available options are listed here along with what they cause the function to return about the recordset:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Type  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Type  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: Date Created, Date of Last Update, Returns Records, Updatable  
+- AFX_DAO_SECONDARY_INFO Primary information plus: Date Created, Date of Last Update, Returns Records, Updatable  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: SQL, Connect, ODBCTimeout  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: SQL, Connect, ODBCTimeout  
   
  *lpszName*  
  A string containing the name of a query defined in the database, for lookup by name.  
@@ -542,7 +542,7 @@ short GetRelationCount();
  The number of relations defined between tables in the database.  
   
 ### Remarks  
- **GetRelationCount** is useful if you need to loop through all defined relations in the database's Relations collection. To obtain information about a given relation in the collection, see [GetRelationInfo](#getrelationinfo).  
+ `GetRelationCount` is useful if you need to loop through all defined relations in the database's Relations collection. To obtain information about a given relation in the collection, see [GetRelationInfo](#getrelationinfo).  
   
  To illustrate the concept of a relation, consider a Suppliers table and a Products table, which might have a one-to-many relationship. In this relationship, one supplier can supply more than one product. Other relations are one-to-one and many-to-many.  
   
@@ -572,9 +572,9 @@ void GetRelationInfo(
  *dwInfoOptions*  
  Options that specify which information about the relation to retrieve. The available options are listed here along with what they cause the function to return about the relation:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Table, Foreign Table  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Table, Foreign Table  
   
-- `AFX_DAO_SECONDARY_INFO` Attributes, Field Information  
+- AFX_DAO_SECONDARY_INFO Attributes, Field Information  
   
  The Field Information is a [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) object containing the fields from the primary table involved in the relation.  
   
@@ -585,7 +585,7 @@ void GetRelationInfo(
  Two versions of this function provide access either by index or by name. For a description of the information returned in *relinfo*, see the [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. If you request information at one level, you also get information at any prior levels as well.  
   
 > [!NOTE]
->  If you set the relation object's attributes to activate cascade operations ( **dbRelationUpdateCascades** or **dbRelationDeleteCascades**), the Microsoft Jet database engine automatically updates or deletes records in one or more other tables when changes are made to related primary key tables. For example, suppose you establish a cascade delete relationship between a Customers table and an Orders table. When you delete records from the Customers table, records in the Orders table related to that customer are also deleted. In addition, if you establish cascade delete relationships between the Orders table and other tables, records from those tables are automatically deleted when you delete records from the Customers table.  
+>  If you set the relation object's attributes to activate cascade operations (`dbRelationUpdateCascades` or `dbRelationDeleteCascades`), the Microsoft Jet database engine automatically updates or deletes records in one or more other tables when changes are made to related primary key tables. For example, suppose you establish a cascade delete relationship between a Customers table and an Orders table. When you delete records from the Customers table, records in the Orders table related to that customer are also deleted. In addition, if you establish cascade delete relationships between the Orders table and other tables, records from those tables are automatically deleted when you delete records from the Customers table.  
   
 ##  <a name="gettabledefcount"></a>  CDaoDatabase::GetTableDefCount  
  Call this member function to retrieve the number of tables defined in the database.  
@@ -626,11 +626,11 @@ void GetTableDefInfo(
  *dwInfoOptions*  
  Options that specify which information about the table to retrieve. The available options are listed here along with what they cause the function to return about the relation:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Updatable, Attributes  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Updatable, Attributes  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: Date Created, Date Last Updated, Source Table Name, Connect  
+- AFX_DAO_SECONDARY_INFO Primary information plus: Date Created, Date Last Updated, Source Table Name, Connect  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: Validation Rule, Validation Text, Record Count  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: Validation Rule, Validation Text, Record Count  
   
  *lpszName*  
  The name of the tabledef object, for lookup by name.  
@@ -641,7 +641,7 @@ void GetTableDefInfo(
  For a description of the information returned in *tabledefinfo*, see the [CDaoTableDefInfo](../../mfc/reference/cdaotabledefinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. If you request information at one level, you get information for any prior levels as well.  
   
 > [!NOTE]
->  The `AFX_DAO_ALL_INFO` option provides information that can be slow to obtain. In this case, counting the records in the table could be very time consuming if there are many records.  
+>  The AFX_DAO_ALL_INFO option provides information that can be slow to obtain. In this case, counting the records in the table could be very time consuming if there are many records.  
   
 ##  <a name="getversion"></a>  CDaoDatabase::GetVersion  
  Call this member function to determine the version of the Microsoft Jet database file.  
@@ -711,16 +711,16 @@ virtual void Open(
 >  For details about DAO error codes, see the DAOERR.H file. For related information, see the topic "Trappable Data Access Errors" in DAO Help.  
   
  *bExclusive*  
- A Boolean value that is **TRUE** if the database is to be opened for exclusive (nonshared) access and **FALSE** if the database is to be opened for shared access. If you omit this argument, the database is opened for shared access.  
+ A Boolean value that is TRUE if the database is to be opened for exclusive (nonshared) access and FALSE if the database is to be opened for shared access. If you omit this argument, the database is opened for shared access.  
   
  *bReadOnly*  
- A Boolean value that is **TRUE** if the database is to be opened for read-only access and **FALSE** if the database is to be opened for read/write access. If you omit this argument, the database is opened for read/write access. All dependent recordsets inherit this attribute.  
+ A Boolean value that is TRUE if the database is to be opened for read-only access and FALSE if the database is to be opened for read/write access. If you omit this argument, the database is opened for read/write access. All dependent recordsets inherit this attribute.  
   
  *lpszConnect*  
  A string expression used for opening the database. This string constitutes the ODBC connect arguments. You must supply the exclusive and read-only arguments to supply a source string. If the database is a Microsoft Jet database (.MDB), this string is empty (""). The syntax for the default value — **_T**("") — provides portability for Unicode as well as ANSI builds of your application.  
   
 ### Remarks  
- **Open** associates the database with the underlying DAO object. You cannot use the database object to construct recordset, tabledef, or querydef objects until it is initialized. **Open** appends the database object to the associated workspace's Databases collection.  
+ `Open` associates the database with the underlying DAO object. You cannot use the database object to construct recordset, tabledef, or querydef objects until it is initialized. `Open` appends the database object to the associated workspace's Databases collection.  
   
  Use the parameters as follows:  
   
