@@ -143,7 +143,7 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
  A point on the screen.  
   
 ### Return Value  
- Returns a handle to the toolbar where the point lies, if therei is one, or NULL if not.  
+ Returns a handle to the toolbar where the point lies, if there is one, or NULL if not.  
   
 ### Remarks  
   
