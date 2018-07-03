@@ -1484,7 +1484,7 @@ The Microsoft Visual C++ compiler supports these ISO C++11 language features:
 - Alias templates.
 - Deleted functions.
 - Non-static data member initializers (NSDMIs).
-- Defaulted functions. *
+- Defaulted functions. \*
 - Supports these ISO C99 language features:
 - _Bool
 - Compound literals.

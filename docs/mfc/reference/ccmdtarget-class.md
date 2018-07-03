@@ -275,7 +275,7 @@ HRESULT GetTypeInfoOfGuid(
  Pointer to a pointer to the `ITypeInfo` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * *ppTypeInfo* points to the type information interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeInfo* points to the type information interface.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Gets a pointer to a type library.  
@@ -294,7 +294,7 @@ virtual HRESULT GetTypeLib(
  A pointer to a pointer to the `ITypeLib` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * *ppTypeLib* points to the type library interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeLib* points to the type library interface.  
   
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetTypeLib` returns TYPE_E_CANTLOADLIBRARY). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLibCache`.  
@@ -386,10 +386,10 @@ virtual BOOL OnCmdMsg(
   
 |*nCode* value|*pExtra* value|  
 |-------------------|--------------------|  
-|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)*|  
-|CN_EVENT|AFX_EVENT*|  
-|CN_UPDATE_COMMAND_UI|CCmdUI*|  
-|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)*|  
+|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)\*|  
+|CN_EVENT|AFX_EVENT\*|  
+|CN_UPDATE_COMMAND_UI|CCmdUI\*|  
+|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### Example  

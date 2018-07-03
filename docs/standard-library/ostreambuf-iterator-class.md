@@ -59,7 +59,7 @@ The ostreambuf_iterator class must satisfy the requirements for an output iterat
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostreambuf_iterator` to the same object it addressed before the operation was called.|
 |[operator=](#op_eq)|The operator inserts a character into the associated stream buffer.|
 
@@ -170,7 +170,7 @@ No insertions failed.
 *\
 ```
 
-## <a name="op_star"></a>  ostreambuf_iterator::operator*
+## <a name="op_star"></a>  ostreambuf_iterator::operator\*
 
 A nonfunctional dereferencing operator used to implement the output iterator expression \* *i* = *x*.
 

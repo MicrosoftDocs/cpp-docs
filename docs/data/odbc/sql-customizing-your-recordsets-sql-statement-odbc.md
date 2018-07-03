@@ -79,9 +79,9 @@ SELECT [ALL | DISTINCT] column-list FROM table-list
 |----------|------------------------------|------------------------------------|  
 |1|**NULL**|**SELECT** *rfx-field-list* **FROM** *table-name*<br /><br /> `CRecordset::Open` calls `GetDefaultSQL` to get the table name. The resulting string is one of cases 2 through 5, depending on what `GetDefaultSQL` returns.|  
 |2|A table name|**SELECT** *rfx-field-list* **FROM** *table-name*<br /><br /> The field list is taken from the RFX statements in `DoFieldExchange`. If **m_strFilter** and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
-|3 *|A complete **SELECT** statement but without a **WHERE** or **ORDER BY** clause|As passed. If **m_strFilter** and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
-|4 *|A complete **SELECT** statement with a **WHERE** and/or **ORDER BY** clause|As passed. **m_strFilter** and/or `m_strSort` must remain empty, or two filter and/or sort statements are produced.|  
-|5 *|A call to a stored procedure|As passed.|  
+|3 \*|A complete **SELECT** statement but without a **WHERE** or **ORDER BY** clause|As passed. If **m_strFilter** and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
+|4 \*|A complete **SELECT** statement with a **WHERE** and/or **ORDER BY** clause|As passed. **m_strFilter** and/or `m_strSort` must remain empty, or two filter and/or sort statements are produced.|  
+|5 \*|A call to a stored procedure|As passed.|  
   
  \* `m_nFields` must be less than or equal to the number of columns specified in the **SELECT** statement. The data type of each column specified in the **SELECT** statement must be the same as the data type of the corresponding RFX output column.  
   

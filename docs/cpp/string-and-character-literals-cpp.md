@@ -289,7 +289,7 @@ const wchar_t* str = L"Hello!";
 const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);  
 ```  
   
- Notice that `strlen()` and `wcslen()` do not include the size of the terminating null character, whose size is equal to the element size of the string type: one byte on a char* string, two bytes on wchar_t\* or char16_t\* strings, and four bytes on char32_t\* strings.  
+ Notice that `strlen()` and `wcslen()` do not include the size of the terminating null character, whose size is equal to the element size of the string type: one byte on a char\* string, two bytes on wchar_t\* or char16_t\* strings, and four bytes on char32_t\* strings.  
   
  The maximum length of a string literal is 65535 bytes. This limit applies to both narrow string literals and wide string literals.  
   
@@ -359,7 +359,7 @@ auto x4 = u8"hello" " "s u8"world"z; // C3688, disagree on suffixes
 ```  
   
 ### String literals with universal character names  
- Native (non-raw) string literals may use universal character names to represent any character, as long as the universal character name can be encoded as one or more characters in the string type.  For example, a universal character name representing an extended character cannot be encoded in a narrow string using the ANSI code page, but it can be encoded in narrow strings in some multi-byte code pages, or in UTF-8 strings, or in a wide string. In C++11, Unicode support is extended by the char16_t* and char32_t\* string types:  
+ Native (non-raw) string literals may use universal character names to represent any character, as long as the universal character name can be encoded as one or more characters in the string type.  For example, a universal character name representing an extended character cannot be encoded in a narrow string using the ANSI code page, but it can be encoded in narrow strings in some multi-byte code pages, or in UTF-8 strings, or in a wide string. In C++11, Unicode support is extended by the char16_t\* and char32_t\* string types:  
   
 ```cpp  
 // ASCII smiling face  

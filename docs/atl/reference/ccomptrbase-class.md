@@ -55,7 +55,7 @@ class CComPtrBase
 |[CComPtrBase::operator T*](#operator_t_star)|The cast operator.|  
 |[CComPtrBase::operator !](#operator_not)|The NOT operator.|  
 |[CComPtrBase::operator &](#operator_amp)|The & operator.|  
-|[CComPtrBase::operator *](#operator_star)|The * operator.|  
+|[CComPtrBase::operator *](#operator_star)|The \* operator.|  
 |[CComPtrBase::operator <](#ccomptrbase__operator lt)|The less-than operator.|  
 |[CComPtrBase::operator ==](#operator_eq_eq)|The equality operator.|  
 |[CComPtrBase::operator ->](#operator_ptr)|The pointer-to-members operator.|  
@@ -224,8 +224,8 @@ T** operator&() throw();
 ### Return Value  
  Returns the address of the object pointed to by the `CComPtrBase` object.  
   
-##  <a name="operator_star"></a>  CComPtrBase::operator *  
- The * operator.  
+##  <a name="operator_star"></a>  CComPtrBase::operator \*  
+ The \* operator.  
   
 ```
 T& operator*() const throw();
@@ -278,7 +278,7 @@ bool operator<(T* pT) const throw();
 ### Return Value  
  Returns true if the pointer managed by current object is less than the pointer to which it is being compared.  
   
-##  <a name="operator_t_star"></a>  CComPtrBase::operator T*  
+##  <a name="operator_t_star"></a>  CComPtrBase::operator T\*  
  The cast operator.  
   
 ```  

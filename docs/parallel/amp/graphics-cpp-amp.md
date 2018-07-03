@@ -20,7 +20,7 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
 -   The graphics APIs in C++ AMP provide alternative ways to access sub-word packed buffers. Textures that have formats that represent *texels* (texture elements) that are composed of 8-bit or 16-bit scalars allow access to such packed data storage.  
   
 ## The norm and unorm Types  
- The `norm` and `unorm` types are scalar types that limit the range of `float` values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to `float` and then clamped to the respective region that's allowed by norm [-1.0, 1.0] or unorm [0.0, 1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as `float` and `int`: +, -, *, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.  
+ The `norm` and `unorm` types are scalar types that limit the range of `float` values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to `float` and then clamped to the respective region that's allowed by norm [-1.0, 1.0] or unorm [0.0, 1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as `float` and `int`: +, -, \*, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.  
   
 ## Short Vector Library  
  The Short Vector Library provides some of the functionality of the [Vector Type](http://go.microsoft.com/fwlink/p/?linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are `double`, `float`, `int`, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding `typedef` that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as `__int8` and `__int16`.  
@@ -45,9 +45,9 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
   
 |Operator type|Valid types|  
 |-------------------|-----------------|  
-|Binary operators|Valid on all types: +, -, *, /,<br /><br /> Valid on integer types: %, ^, &#124;, &, <\<, >><br /><br /> The two vectors must have the same size, and the result is a vector of the same size.|  
+|Binary operators|Valid on all types: +, -, \*, /,<br /><br /> Valid on integer types: %, ^, &#124;, &, <\<, >><br /><br /> The two vectors must have the same size, and the result is a vector of the same size.|  
 |Relational operators|Valid on all types: == and !=|  
-|Compound assignment operator|Valid on all types: +=, -=, *=, /=<br /><br /> Valid on integer types: %=, ^=, &#124;=, &=, <\<=, >>=|  
+|Compound assignment operator|Valid on all types: +=, -=, \*=, /=<br /><br /> Valid on integer types: %=, ^=, &#124;=, &=, <\<=, >>=|  
 |Increment and decrement operators|Valid on all types: ++, --<br /><br /> Both prefix and postfix are valid.|  
 |Bitwise NOT operator (~)|Valid on integer types.|  
 |Unary - operator|Valid on all types except `unorm` and `uint`.|  

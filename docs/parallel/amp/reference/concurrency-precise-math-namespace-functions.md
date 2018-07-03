@@ -456,7 +456,7 @@ inline float coshf(float _X) restrict(amp);
  Returns the hyperbolic cosine value of the argument  
   
 ##  <a name="cospi"></a>  cospi  
- Calculates the cosine value of pi * _X  
+ Calculates the cosine value of pi \* _X  
   
 ```  
 inline float cospi(float _X) restrict(amp);
@@ -470,10 +470,10 @@ inline double cospi(double _X) restrict(amp);
  Floating-point value  
   
 ### Return Value  
- Returns the cosine value of pi * _X  
+ Returns the cosine value of pi \* _X  
   
 ##  <a name="cospif"></a>  cospif  
- Calculates the cosine value of pi * _X  
+ Calculates the cosine value of pi \* _X  
   
 ```  
 inline float cospif(float _X) restrict(amp);
@@ -484,7 +484,7 @@ inline float cospif(float _X) restrict(amp);
  Floating-point value  
   
 ### Return Value  
- Returns the cosine value of pi * _X  
+ Returns the cosine value of pi \* _X  
   
 ##  <a name="erf"></a>  erf  
  Computes the error function of _X  
@@ -859,7 +859,7 @@ The second floating-point argument.
 The third floating-point argument.
 
 ### Return Value
-The result of the expression (_X * _Y) + _Z. The entire computation is performed as a single operation; that is, the sub-expressions are calculated to infinite precision, and only the final result is rounded. 
+The result of the expression (_X \* _Y) + _Z. The entire computation is performed as a single operation; that is, the sub-expressions are calculated to infinite precision, and only the final result is rounded. 
 
 ## <a name="fmaf"></a> fmaf  
 Computes the product of the first and second specified arguments, then adds the third specified argument to the result; the entire computation is performed as a single operation.
@@ -879,7 +879,7 @@ The second floating-point argument.
 The third floating-point argument.
 
 ### Return Value
-The result of the expression (_X * _Y) + _Z. The entire computation is performed as a single operation; that is, the sub-expressions are calculated to infinite precision, and only the final result is rounded.
+The result of the expression (_X \* _Y) + _Z. The entire computation is performed as a single operation; that is, the sub-expressions are calculated to infinite precision, and only the final result is rounded.
   
 ##  <a name="fmax"></a>  fmax  
  Determine the maximum numeric value of the arguments  
@@ -1234,7 +1234,7 @@ inline double ldexp(
  Integer value, exponent  
   
 ### Return Value  
- Returns _X * 2^_Exp  
+ Returns _X \* 2^_Exp  
   
 ##  <a name="ldexpf"></a>  ldexpf  
  Computes a real number from the specified mantissa and exponent.  
@@ -1253,7 +1253,7 @@ inline float ldexpf(
  Integer value, exponent  
   
 ### Return Value  
- Returns _X * 2^_Exp  
+ Returns _X \* 2^_Exp  
   
 ##  <a name="lgamma"></a>  lgamma  
  Computes the natural logarithm of the absolute value of gamma of the argument  
@@ -1911,7 +1911,7 @@ inline double scalb(
  Floating-point value  
   
 ### Return Value  
- Returns _X * (FLT_RADIX ^ _Y)  
+ Returns _X \* (FLT_RADIX ^ _Y)  
   
 ##  <a name="scalbf"></a>  scalbf  
  Multiplies _X by FLT_RADIX to the power _Y  
@@ -1930,7 +1930,7 @@ inline float scalbf(
  Floating-point value  
   
 ### Return Value  
- Returns _X * (FLT_RADIX ^ _Y)  
+ Returns _X \* (FLT_RADIX ^ _Y)  
   
 ##  <a name="scalbn"></a>  scalbn  
  Multiplies _X by FLT_RADIX to the power _Y  
@@ -1954,7 +1954,7 @@ inline double scalbn(
  Integer value  
   
 ### Return Value  
- Returns _X * (FLT_RADIX ^ _Y)  
+ Returns _X \* (FLT_RADIX ^ _Y)  
   
 ##  <a name="scalbnf"></a>  scalbnf  
  Multiplies _X by FLT_RADIX to the power _Y  
@@ -1973,7 +1973,7 @@ inline float scalbnf(
  Integer value  
   
 ### Return Value  
- Returns _X * (FLT_RADIX ^ _Y)  
+ Returns _X \* (FLT_RADIX ^ _Y)  
   
 ##  <a name="signbit"></a>  signbit  
  Determines whether the sign of _X is negative  
@@ -2115,7 +2115,7 @@ inline float sinhf(float _X) restrict(amp);
  Returns the hyperbolic sine value of the argument  
   
 ##  <a name="sinpi"></a>  sinpi  
- Calculates the sine value of pi * _X  
+ Calculates the sine value of pi \* _X  
   
 ```  
 inline float sinpi(float _X) restrict(amp);
@@ -2129,10 +2129,10 @@ inline double sinpi(double _X) restrict(amp);
  Floating-point value  
   
 ### Return Value  
- Returns the sine value of pi * _X  
+ Returns the sine value of pi \* _X  
   
 ##  <a name="sinpif"></a>  sinpif  
- Calculates the sine value of pi * _X  
+ Calculates the sine value of pi \* _X  
   
 ```  
 inline float sinpif(float _X) restrict(amp);
@@ -2143,7 +2143,7 @@ inline float sinpif(float _X) restrict(amp);
  Floating-point value  
   
 ### Return Value  
- Returns the sine value of pi * _X  
+ Returns the sine value of pi \* _X  
   
 ##  <a name="sqrt"></a>  sqrt  
  Calculates the squre root of the argument  
@@ -2239,7 +2239,7 @@ inline float tanhf(float _X) restrict(amp);
  Returns the hyperbolic tangent value of the argument  
   
 ##  <a name="tanpi"></a>  tanpi  
- Calculates the tangent value of pi * _X  
+ Calculates the tangent value of pi \* _X  
   
 ```  
 inline float tanpi(float _X) restrict(amp);
@@ -2253,10 +2253,10 @@ inline double tanpi(double _X) restrict(amp);
  Floating-point value  
   
 ### Return Value  
- Returns the tangent value of pi * _X  
+ Returns the tangent value of pi \* _X  
   
 ##  <a name="tanpif"></a>  tanpif  
- Calculates the tangent value of pi * _X  
+ Calculates the tangent value of pi \* _X  
   
 ```  
 inline float tanpif(float _X) restrict(amp);
@@ -2267,7 +2267,7 @@ inline float tanpif(float _X) restrict(amp);
  Floating-point value  
   
 ### Return Value  
- Returns the tangent value of pi * _X  
+ Returns the tangent value of pi \* _X  
   
 ##  <a name="tgamma"></a>  tgamma  
  Computes the gamma function of _X  

@@ -92,7 +92,7 @@ pointer operator->() const;
   
 
 
-## <a name="operator-dereference"></a>  InputIterator::operator* Operator
+## <a name="operator-dereference"></a>  InputIterator::operator\* Operator
 Retrieves a reference to the element specified by the current InputIterator.  
   
 ### Syntax  

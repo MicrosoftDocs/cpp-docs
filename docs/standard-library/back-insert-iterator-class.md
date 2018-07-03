@@ -49,9 +49,9 @@ The container must satisfy the requirements for a back insertion sequence where 
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x` for a back insertion.|
 |[operator++](#op_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a back insertion.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for a back insertion.|
 
 ## Requirements
 
@@ -178,7 +178,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).
 ```
 
-## <a name="op_star"></a>  back_insert_iterator::operator*
+## <a name="op_star"></a>  back_insert_iterator::operator\*
 
 Dereferencing operator used to implement the output iterator expression \* *i* = *x*.
 

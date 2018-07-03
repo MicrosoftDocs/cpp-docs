@@ -56,8 +56,8 @@ This adaptor class is used when it is necessary to separate memory allocation an
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|A dereferencing operator used to implement the output iterator expression * `ii` = `x`.|
-|[operator=](#op_eq)|An assignment operator used to implement the raw storage iterator expression * `i` = `x` for storing in memory.|
+|[operator*](#op_star)|A dereferencing operator used to implement the output iterator expression \* `ii` = `x`.|
+|[operator=](#op_eq)|An assignment operator used to implement the raw storage iterator expression \* `i` = `x` for storing in memory.|
 |[operator++](#op_add_add)|Preincrement and postincrement operators for raw storage iterators.|
 
 ## Requirements
@@ -90,7 +90,7 @@ typedef ForwardIterator iter_type;
 
 The type is a synonym for the template parameter **ForwardIterator**.
 
-## <a name="op_star"></a>  raw_storage_iterator::operator*
+## <a name="op_star"></a>  raw_storage_iterator::operator\*
 
 A dereferencing operator used to implement the raw storage iterator expression \* *ii* = *x*.
 
