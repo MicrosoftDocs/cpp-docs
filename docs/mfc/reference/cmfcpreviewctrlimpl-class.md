@@ -105,7 +105,7 @@ virtual BOOL Create(
  A pointer to a creation context.  
   
 ### Return Value  
- `TRUE` if creation succeeded; otherwise `FALSE`.  
+ TRUE if creation succeeded; otherwise FALSE.  
   
 ## <a name="destroy"></a> CMFCPreviewCtrlImpl::Destroy
 Called by a Rich Preview handler when it needs to destroy this control.  
