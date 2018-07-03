@@ -41,7 +41,7 @@ OLE controls are able to expose interfaces to other applications. These interfac
 |[AfxConnectionUnadvise](#afxconnectionunadvise)|Breaks a connection between a source and a sink.|  
   
 ##  <a name="begin_connection_part"></a>  BEGIN_CONNECTION_PART  
- Use the `BEGIN_CONNECTION_PART` macro to begin the definition of additional connection points beyond the event and property notification connection points.  
+ Use the BEGIN_CONNECTION_PART macro to begin the definition of additional connection points beyond the event and property notification connection points.  
   
 ```   
 BEGIN_CONNECTION_PART(theClass, localClass)   
@@ -188,10 +188,10 @@ BOOL AFXAPI AfxConnectionAdvise(
  The interface ID of the connection.  
   
  *bRefCount*  
- **TRUE** indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. **FALSE** indicates that the reference count should not be incremented.  
+ TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. FALSE indicates that the reference count should not be incremented.  
   
  *pdwCookie*  
- A pointer to a `DWORD` where a connection identifier is returned. This value should be passed as the *dwCookie* parameter to `AfxConnectionUnadvise` when disconnecting the connection.  
+ A pointer to a DWORD where a connection identifier is returned. This value should be passed as the *dwCookie* parameter to `AfxConnectionUnadvise` when disconnecting the connection.  
   
 ### Return Value  
  Nonzero if a connection was established; otherwise 0.  
@@ -225,7 +225,7 @@ BOOL AFXAPI AfxConnectionUnadvise(
  The interface ID of the connection point interface.  
   
  *bRefCount*  
- **TRUE** indicates that disconnecting the connection should cause the reference count of *pUnkSink* to be decremented. **FALSE** indicates that the reference count should not be decremented.  
+ TRUE indicates that disconnecting the connection should cause the reference count of *pUnkSink* to be decremented. FALSE indicates that the reference count should not be decremented.  
   
  *dwCookie*  
  The connection identifier returned by `AfxConnectionAdvise`.  

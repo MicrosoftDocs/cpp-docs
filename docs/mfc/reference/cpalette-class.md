@@ -47,7 +47,7 @@ class CPalette : public CGdiObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPalette::operator HPALETTE](#operator_hpalette)|Returns the `HPALETTE` attached to the `CPalette`.|  
+|[CPalette::operator HPALETTE](#operator_hpalette)|Returns the HPALETTE attached to the `CPalette`.|  
   
 ## Remarks  
  A palette provides an interface between an application and a color output device (such as a display device). The interface allows the application to take full advantage of the color capabilities of the output device without severely interfering with the colors displayed by other applications. Windows uses the application's logical palette (a list of needed colors) and the system palette (which defines available colors) to determine the colors used.  
@@ -89,7 +89,7 @@ void AnimatePalette(
 ### Remarks  
  When an application calls `AnimatePalette`, it does not have to update its client area, because Windows maps the new entries into the system palette immediately.  
   
- The `AnimatePalette` function will only change entries with the **PC_RESERVED** flag set in the corresponding **palPaletteEntry** member of the [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that is attached to the `CPalette` object. See **LOGPALETTE** in the Windows SDK for more information about this structure.  
+ The `AnimatePalette` function will only change entries with the PC_RESERVED flag set in the corresponding `palPaletteEntry` member of the [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that is attached to the `CPalette` object. See LOGPALETTE in the Windows SDK for more information about this structure.  
   
 ##  <a name="cpalette"></a>  CPalette::CPalette  
  Constructs a `CPalette` object.  
@@ -116,9 +116,9 @@ BOOL CreateHalftonePalette(CDC* pDC);
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- An application should create a halftone palette when the stretching mode of a device context is set to **HALFTONE**. The logical halftone palette returned by the [CreateHalftonePalette](http://msdn.microsoft.com/library/windows/desktop/dd183503) member function should then be selected and realized into the device context before the [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) or [StretchDIBits](http://msdn.microsoft.com/library/windows/desktop/dd145121) function is called.  
+ An application should create a halftone palette when the stretching mode of a device context is set to HALFTONE. The logical halftone palette returned by the [CreateHalftonePalette](http://msdn.microsoft.com/library/windows/desktop/dd183503) member function should then be selected and realized into the device context before the [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) or [StretchDIBits](http://msdn.microsoft.com/library/windows/desktop/dd145121) function is called.  
   
- See the Windows SDK for more information about `CreateHalftonePalette` and **StretchDIBits**.  
+ See the Windows SDK for more information about `CreateHalftonePalette` and `StretchDIBits`.  
   
 ##  <a name="createpalette"></a>  CPalette::CreatePalette  
  Initializes a `CPalette` object by creating a Windows logical color palette and attaching it to the `CPalette` object.  
@@ -135,7 +135,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- See the Windows SDK for more information about the **LOGPALETTE** structure.  
+ See the Windows SDK for more information about the `LOGPALETTE` structure.  
   
 ##  <a name="fromhandle"></a>  CPalette::FromHandle  
  Returns a pointer to a `CPalette` object when given a handle to a Windows palette object.  
@@ -149,7 +149,7 @@ static CPalette* PASCAL FromHandle(HPALETTE hPalette);
  A handle to a Windows GDI color palette.  
   
 ### Return Value  
- A pointer to a `CPalette` object if successful; otherwise **NULL**.  
+ A pointer to a `CPalette` object if successful; otherwise NULL.  
   
 ### Remarks  
  If a `CPalette` object is not already attached to the Windows palette, a temporary `CPalette` object is created and attached. This temporary `CPalette` object is valid only until the next time the application has idle time in its event loop, at which time all temporary graphic objects are deleted. In other words, the temporary object is valid only during the processing of one window message.  
@@ -209,10 +209,10 @@ operator HPALETTE() const;
 ```  
   
 ### Return Value  
- If successful, a handle to the Windows GDI object represented by the `CPalette` object; otherwise **NULL**.  
+ If successful, a handle to the Windows GDI object represented by the `CPalette` object; otherwise NULL.  
   
 ### Remarks  
- This operator is a casting operator, which supports direct use of an `HPALETTE` object.  
+ This operator is a casting operator, which supports direct use of an HPALETTE object.  
   
  For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
@@ -261,7 +261,7 @@ UINT SetPaletteEntries(
 ### Remarks  
  If the logical palette is selected into a device context when the application calls `SetPaletteEntries`, the changes will not take effect until the application calls [CDC::RealizePalette](../../mfc/reference/cdc-class.md#realizepalette).  
   
- For more information on the Windows structure **PALETTEENTRY**, see [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) in the Windows SDK.  
+ For more information on the Windows structure `PALETTEENTRY`, see [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample DIBLOOK](../../visual-cpp-samples.md)   

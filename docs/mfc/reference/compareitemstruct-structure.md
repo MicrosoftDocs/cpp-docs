@@ -31,7 +31,7 @@ typedef struct tagCOMPAREITEMSTRUCT {
   
 #### Parameters  
  *CtlType*  
- **ODT_LISTBOX** (which specifies an owner-draw list box) or **ODT_COMBOBOX** (which specifies an owner-draw combo box).  
+ ODT_LISTBOX (which specifies an owner-draw list box) or ODT_COMBOBOX (which specifies an owner-draw combo box).  
   
  *CtlID*  
  The control ID for the list box or combo box.  
@@ -52,7 +52,7 @@ typedef struct tagCOMPAREITEMSTRUCT {
  Application-supplied data for the second item being compared. This value was passed in the call that added the item to the combo or list box.  
   
 ## Remarks  
- Whenever an application adds a new item to an owner-drawn list box or combo box created with the **CBS_SORT** or **LBS_SORT** style, Windows sends the owner a WM_COMPAREITEM message. The *lParam* parameter of the message contains a long pointer to a `COMPAREITEMSTRUCT` structure. Upon receiving the message, the owner compares the two items and returns a value indicating which item sorts before the other.  
+ Whenever an application adds a new item to an owner-drawn list box or combo box created with the CBS_SORT or LBS_SORT style, Windows sends the owner a WM_COMPAREITEM message. The *lParam* parameter of the message contains a long pointer to a `COMPAREITEMSTRUCT` structure. Upon receiving the message, the owner compares the two items and returns a value indicating which item sorts before the other.  
   
 ## Requirements  
  **Header:** winuser.h  

@@ -64,7 +64,7 @@ COleResizeBar();
 ```  
   
 ### Remarks  
- Call **Create** to create the resize bar object.  
+ Call `Create` to create the resize bar object.  
   
 ##  <a name="create"></a>  COleResizeBar::Create  
  Creates a child window and associates it with the `COleResizeBar` object.  

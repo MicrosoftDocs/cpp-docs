@@ -49,9 +49,9 @@ class COlePropertiesDialog : public COleDialog
 ## Remarks  
  Common OLE Object Properties dialog boxes provide an easy way to display and modify the properties of an OLE document item in a manner consistent with Windows standards. These properties include, among others, information on the file represented by the document item, options for displaying the icon and image scaling, and information on the item's link (if the item is linked).  
   
- To use a `COlePropertiesDialog` object, first create the object using the `COlePropertiesDialog` constructor. After the dialog box has been constructed, call the `DoModal` member function to display the dialog box and allow the user to modify any properties of the item. `DoModal` returns whether the user selected the OK ( **IDOK**) or the Cancel ( **IDCANCEL**) button. In addition to the OK and Cancel buttons, there is an Apply button. When the user selects Apply, any changes made to the properties of the document item are applied to the item and its image is automatically updated, but remains active.  
+ To use a `COlePropertiesDialog` object, first create the object using the `COlePropertiesDialog` constructor. After the dialog box has been constructed, call the `DoModal` member function to display the dialog box and allow the user to modify any properties of the item. `DoModal` returns whether the user selected the OK (IDOK) or the Cancel (IDCANCEL) button. In addition to the OK and Cancel buttons, there is an Apply button. When the user selects Apply, any changes made to the properties of the document item are applied to the item and its image is automatically updated, but remains active.  
   
- The [m_psh](#m_psh) data member is a pointer to a **PROPSHEETHEADER** structure, and in most cases you will not need to access it explicitly. One exception is when you need additional property pages beyond the default General, View, and Link pages. In this case, you can modify the `m_psh` data member to include your custom pages before calling the `DoModal` member function.  
+ The [m_psh](#m_psh) data member is a pointer to a `PROPSHEETHEADER` structure, and in most cases you will not need to access it explicitly. One exception is when you need additional property pages beyond the default General, View, and Link pages. In this case, you can modify the `m_psh` data member to include your custom pages before calling the `DoModal` member function.  
   
  For more information on OLE dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -124,9 +124,9 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- **IDOK** or **IDCANCEL** if successful; otherwise 0. **IDOK** and **IDCANCEL** are constants that indicate whether the user selected the OK or Cancel button.  
+ IDOK or IDCANCEL if successful; otherwise 0. IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
- If **IDCANCEL** is returned, you can call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ If IDCANCEL is returned, you can call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
 ##  <a name="m_gp"></a>  COlePropertiesDialog::m_gp  
  A structure of type [OLEUIGNRLPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687297), used to initialize the General page of the OLE Object Properties dialog box.  
@@ -138,7 +138,7 @@ OLEUIGNRLPROPS m_gp;
 ### Remarks  
  This page shows the type and size of an embedding and allows the user access to the Convert dialog box. This page also shows the link destination if the object is a link.  
   
- For more information on the **OLEUIGNRLPROPS** structure, see the Windows SDK.  
+ For more information on the `OLEUIGNRLPROPS` structure, see the Windows SDK.  
   
 ##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp  
  A structure of type [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735), used to initialize the Link page of the OLE Object Properties dialog box.  
@@ -150,7 +150,7 @@ OLEUILINKPROPS m_lp;
 ### Remarks  
  This page shows the location of the linked item and allows the user to update, or break, the link to the item.  
   
- For more information on the **OLEUILINKPROPS** structure, see the Windows SDK.  
+ For more information on the `OLEUILINKPROPS` structure, see the Windows SDK.  
   
 ##  <a name="m_op"></a>  COlePropertiesDialog::m_op  
  A structure of type [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199), used to initialize the common OLE Object Properties dialog box.  
@@ -162,7 +162,7 @@ OLEUIOBJECTPROPS m_op;
 ### Remarks  
  This structure contains members used to initialize the General, Link, and View pages.  
   
- For more information, see the **OLEUIOBJECTPROPS** and [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) structures in the Windows SDK.  
+ For more information, see the OLEUIOBJECTPROPS and [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) structures in the Windows SDK.  
   
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh  
  A structure of type [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), whose members store the characteristics of the dialog object.  
@@ -176,7 +176,7 @@ PROPSHEETHEADER m_psh;
   
  If you modify the `m_psh` data member directly, you will override any default behavior.  
   
- For more information on the **PROPSHEETHEADER** structure, see the Windows SDK.  
+ For more information on the `PROPSHEETHEADER` structure, see the Windows SDK.  
   
 ##  <a name="m_vp"></a>  COlePropertiesDialog::m_vp  
  A structure of type [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751), used to initialize the View page of the OLE Object Properties dialog box.  
@@ -188,7 +188,7 @@ OLEUIVIEWPROPS m_vp;
 ### Remarks  
  This page allows the user to toggle between "content" and "iconic" views of the object, and change its scaling within the container. It also allows the user access to the Change Icon dialog box when the object is being displayed as an icon.  
   
- For more information on the **OLEUIVIEWPROPS** structure, see the Windows SDK.  
+ For more information on the `OLEUIVIEWPROPS` structure, see the Windows SDK.  
   
 ##  <a name="onapplyscale"></a>  COlePropertiesDialog::OnApplyScale  
  Called by the framework when the scaling value has changed and either OK or Apply was selected.  
@@ -217,7 +217,7 @@ virtual BOOL OnApplyScale(
  The default implementation does nothing. You must override this function to enable the scaling controls.  
   
 > [!NOTE]
->  Before the common OLE Object Properties dialog box is displayed, the framework calls this function with a **NULL** for *pItem* and a - 1 for *nCurrentScale*. This is done to determine if the scaling controls should be enabled.  
+>  Before the common OLE Object Properties dialog box is displayed, the framework calls this function with a NULL for *pItem* and a - 1 for *nCurrentScale*. This is done to determine if the scaling controls should be enabled.  
   
 ## See Also  
  [MFC Sample CIRC](../../visual-cpp-samples.md)   

@@ -73,7 +73,7 @@ Use this page of the wizard to specify how you want the control to behave. For e
  Enables the control to process mouse pointer notifications, whether control is active or not. When you select this option, the `pointerInactive` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). For more information about how to use this option, see [Providing Mouse Interaction While Inactive](../../mfc/providing-mouse-interaction-while-inactive.md).  
   
  **Acts as a simple frame control**  
- Specifies that the control is a container for other controls by setting the `OLEMISC_SIMPLEFRAME` bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Simple Frame Site Containment".  
+ Specifies that the control is a container for other controls by setting the OLEMISC_SIMPLEFRAME bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Simple Frame Site Containment".  
   
  **Loads properties asynchronously**  
  Enables a reset of any previous asynchronous data and initiates a new load of the asynchronous property of the control.  
