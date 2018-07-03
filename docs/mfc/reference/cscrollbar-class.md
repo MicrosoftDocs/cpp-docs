@@ -89,7 +89,7 @@ virtual BOOL Create(
  Specifies the scroll bar's size and position. Can be either a `RECT` structure or a `CRect` object.  
   
  *pParentWnd*  
- Specifies the scroll bar's parent window, usually a `CDialog` object. It must not be **NULL**.  
+ Specifies the scroll bar's parent window, usually a `CDialog` object. It must not be NULL.  
   
  *nID*  
  The scroll bar's control ID.  
@@ -102,13 +102,13 @@ virtual BOOL Create(
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a scroll bar:  
   
-- **WS_CHILD** Always  
+- WS_CHILD Always  
   
-- **WS_VISIBLE** Usually  
+- WS_VISIBLE Usually  
   
-- **WS_DISABLED** Rarely  
+- WS_DISABLED Rarely  
   
-- **WS_GROUP** To group controls  
+- WS_GROUP To group controls  
   
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#1](../../mfc/reference/codesnippet/cpp/cscrollbar-class_1.cpp)]  
@@ -121,7 +121,7 @@ CScrollBar();
 ```  
   
 ### Remarks  
- After constructing the object, call the **Create** member function to create and initialize the Windows scroll bar.  
+ After constructing the object, call the `Create` member function to create and initialize the Windows scroll bar.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#2](../../mfc/reference/codesnippet/cpp/cscrollbar-class_2.h)]  
@@ -137,13 +137,13 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
  *nArrowFlags*  
  Specifies whether the scroll arrows are enabled or disabled and which arrows are enabled or disabled. This parameter can be one of the following values:  
   
-- **ESB_ENABLE_BOTH** Enables both arrows of a scroll bar.  
+- ESB_ENABLE_BOTH Enables both arrows of a scroll bar.  
   
-- **ESB_DISABLE_LTUP** Disables the left arrow of a horizontal scroll bar or the up arrow of a vertical scroll bar.  
+- ESB_DISABLE_LTUP Disables the left arrow of a horizontal scroll bar or the up arrow of a vertical scroll bar.  
   
-- **ESB_DISABLE_RTDN** Disables the right arrow of a horizontal scroll bar or the down arrow of a vertical scroll bar.  
+- ESB_DISABLE_RTDN Disables the right arrow of a horizontal scroll bar or the down arrow of a vertical scroll bar.  
   
-- **ESB_DISABLE_BOTH** Disables both arrows of a scroll bar.  
+- ESB_DISABLE_BOTH Disables both arrows of a scroll bar.  
   
 ### Return Value  
  Nonzero if the arrows are enabled or disabled as specified; otherwise 0, which indicates that the arrows are already in the requested state or that an error occurred.  
@@ -152,7 +152,7 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
   See the example for [CScrollBar::SetScrollRange](#setscrollrange).  
   
 ##  <a name="getscrollbarinfo"></a>  CScrollBar::GetScrollBarInfo  
- Retrieves the information that the **SCROLLBARINFO** structure maintains about a scroll bar.  
+ Retrieves the information that the `SCROLLBARINFO` structure maintains about a scroll bar.  
   
 ```  
 BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;  
@@ -163,7 +163,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
  A pointer to the [SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787535) structure.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  This member function emulates the functionality of the [SBM_SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787545) message, as described in the Windows SDK.  
@@ -185,7 +185,7 @@ BOOL GetScrollInfo(
  Specifies the scroll bar parameters to retrieve. Typical usage, SIF_ALL, specifies a combination of SIF_PAGE, SIF_POS, SIF_TRACKPOS, and SIF_RANGE. See `SCROLLINFO` for more information on the nMask values.  
   
 ### Return Value  
- If the message retrieved any values, the return is **TRUE**. Otherwise, it is **FALSE**.  
+ If the message retrieved any values, the return is TRUE. Otherwise, it is FALSE.  
   
 ### Remarks  
  `GetScrollInfo` enables applications to use 32-bit scroll positions.  
@@ -262,10 +262,10 @@ BOOL SetScrollInfo(
  A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure.  
   
  *bRedraw*  
- Specifies whether the scroll bar should be redrawn to reflect the new information. If *bRedraw* is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
+ Specifies whether the scroll bar should be redrawn to reflect the new information. If *bRedraw* is TRUE, the scroll bar is redrawn. If it is FALSE, it is not redrawn. The scroll bar is redrawn by default.  
   
 ### Return Value  
- If successful, the return is **TRUE**. Otherwise, it is **FALSE**.  
+ If successful, the return is TRUE. Otherwise, it is FALSE.  
   
 ### Remarks  
  You must provide the values required by the `SCROLLINFO` structure parameters, including the flag values.  
@@ -289,13 +289,13 @@ int SetScrollPos(
  Specifies the new position for the scroll box. It must be within the scrolling range.  
   
  *bRedraw*  
- Specifies whether the scroll bar should be redrawn to reflect the new position. If *bRedraw* is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
+ Specifies whether the scroll bar should be redrawn to reflect the new position. If *bRedraw* is TRUE, the scroll bar is redrawn. If it is FALSE, it is not redrawn. The scroll bar is redrawn by default.  
   
 ### Return Value  
  Specifies the previous position of the scroll box if successful; otherwise 0.  
   
 ### Remarks  
- Set *bRedraw* to **FALSE** whenever the scroll bar will be redrawn by a subsequent call to another function to avoid having the scroll bar redrawn twice within a short interval.  
+ Set *bRedraw* to FALSE whenever the scroll bar will be redrawn by a subsequent call to another function to avoid having the scroll bar redrawn twice within a short interval.  
   
 ### Example  
   See the example for [CScrollBar::SetScrollRange](#setscrollrange).  
@@ -318,7 +318,7 @@ void SetScrollRange(
  Specifies the maximum scrolling position.  
   
  *bRedraw*  
- Specifies whether the scroll bar should be redrawn to reflect the change. If *bRedraw* is **TRUE**, the scroll bar is redrawn; if **FALSE**, it is not redrawn. It is redrawn by default.  
+ Specifies whether the scroll bar should be redrawn to reflect the change. If *bRedraw* is TRUE, the scroll bar is redrawn; if FALSE, it is not redrawn. It is redrawn by default.  
   
 ### Remarks  
  Set *nMinPos* and *nMaxPos* to 0 to hide standard scroll bars.  
@@ -341,7 +341,7 @@ void ShowScrollBar(BOOL bShow = TRUE);
   
 ### Parameters  
  *bShow*  
- Specifies whether the scroll bar is shown or hidden. If this parameter is **TRUE**, the scroll bar is shown; otherwise it is hidden.  
+ Specifies whether the scroll bar is shown or hidden. If this parameter is TRUE, the scroll bar is shown; otherwise it is hidden.  
   
 ### Remarks  
  An application should not call this function to hide a scroll bar while processing a scroll-bar notification message.  

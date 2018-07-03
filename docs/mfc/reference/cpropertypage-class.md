@@ -195,7 +195,7 @@ CPropertyPage(
   
  *dwSize*  
  *lpszTemplateName*  
- Points to a string containing the name of the template for this page. Cannot be **NULL**.  
+ Points to a string containing the name of the template for this page. Cannot be NULL.  
   
  *nIDHeaderTitle*  
  ID of the name to be placed in the title location of the property page header.  
@@ -227,7 +227,7 @@ PROPSHEETPAGE& GetPSP();
 ```  
   
 ### Return Value  
- A reference to the **PROPSHEETPAGE** structure.  
+ A reference to the `PROPSHEETPAGE` structure.  
   
 ##  <a name="m_psp"></a>  CPropertyPage::m_psp  
  `m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548).  
@@ -239,7 +239,7 @@ PROPSHEETPAGE m_psp;
 ### Remarks  
  Use this structure to initialize the appearance of a property page after it is constructed.  
   
- For more information on this structure, including a listing of its members, see **PROPSHEETPAGE** in the Windows SDK.  
+ For more information on this structure, including a listing of its members, see `PROPSHEETPAGE` in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#128](../../mfc/codesnippet/cpp/cpropertypage-class_3.cpp)]  
@@ -255,9 +255,9 @@ virtual BOOL OnApply();
  Nonzero if the changes are accepted; otherwise 0.  
   
 ### Remarks  
- When the framework calls this function, changes made on all property pages in the property sheet are accepted, the property sheet retains focus, and `OnApply` returns **TRUE** (the value 1). Before `OnApply` can be called by the framework, you must have called [SetModified](#setmodified) and set its parameter to **TRUE**. This will activate the Apply Now button as soon as the user makes a change on the property page.  
+ When the framework calls this function, changes made on all property pages in the property sheet are accepted, the property sheet retains focus, and `OnApply` returns TRUE (the value 1). Before `OnApply` can be called by the framework, you must have called [SetModified](#setmodified) and set its parameter to TRUE. This will activate the Apply Now button as soon as the user makes a change on the property page.  
   
- Override this member function to specify what action your program takes when the user clicks the Apply Now button. When overriding, the function should return **TRUE** to accept changes and **FALSE** to prevent changes from taking effect.  
+ Override this member function to specify what action your program takes when the user clicks the Apply Now button. When overriding, the function should return TRUE to accept changes and FALSE to prevent changes from taking effect.  
   
  The default implementation of `OnApply` calls `OnOK`.  
   
@@ -324,12 +324,12 @@ virtual BOOL OnQueryCancel();
 ```  
   
 ### Return Value  
- Returns **FALSE** to prevent the cancel operation or TRUE to allow it.  
+ Returns FALSE to prevent the cancel operation or TRUE to allow it.  
   
 ### Remarks  
  Override this member function to specify an action the program takes when the user clicks the Cancel button.  
   
- The default implementation of `OnQueryCancel` returns **TRUE**.  
+ The default implementation of `OnQueryCancel` returns TRUE.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#117](../../mfc/codesnippet/cpp/cpropertypage-class_7.cpp)]  
@@ -398,9 +398,9 @@ virtual BOOL OnWizardFinish();
  Nonzero if the property sheet is destroyed when the wizard finishes; otherwise zero.  
   
 ### Remarks  
- When a user clicks the **Finish** button in a wizard, the framework calls this function; when `OnWizardFinish` returns **TRUE** (a nonzero value), the property sheet is able to be destroyed (but is not actually destroyed). Call `DestroyWindow` to destroy the property sheet. Do not call `DestroyWindow` from `OnWizardFinish`; doing so will cause heap corruption or other errors.  
+ When a user clicks the **Finish** button in a wizard, the framework calls this function; when `OnWizardFinish` returns TRUE (a nonzero value), the property sheet is able to be destroyed (but is not actually destroyed). Call `DestroyWindow` to destroy the property sheet. Do not call `DestroyWindow` from `OnWizardFinish`; doing so will cause heap corruption or other errors.  
   
- You can override this member function to specify some action the user must take when the Finish button is pressed. When overriding this function, return **FALSE** to prevent the property sheet from being destroyed.  
+ You can override this member function to specify some action the user must take when the Finish button is pressed. When overriding this function, return FALSE to prevent the property sheet from being destroyed.  
   
  For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](http://msdn.microsoft.com/library/windows/desktop/bb774571) in the Windows SDK.  
   
@@ -471,10 +471,10 @@ void SetModified(BOOL bChanged = TRUE);
   
 ### Parameters  
  *bChanged*  
- **TRUE** to indicate that the property page settings have been modified since the last time they were applied; **FALSE** to indicate that the property page settings have been applied, or should be ignored.  
+ TRUE to indicate that the property page settings have been modified since the last time they were applied; FALSE to indicate that the property page settings have been applied, or should be ignored.  
   
 ### Remarks  
- The framework keeps track of which pages are "dirty," that is, property pages for which you have called **SetModified( TRUE )**. The Apply Now button will always be enabled if you call **SetModified( TRUE )** for one of the pages. The Apply Now button will be disabled when you call **SetModified( FALSE )** for one of the pages, but only if none of the other pages is "dirty."  
+ The framework keeps track of which pages are "dirty," that is, property pages for which you have called `SetModified( TRUE )`. The Apply Now button will always be enabled if you call `SetModified( TRUE )` for one of the pages. The Apply Now button will be disabled when you call `SetModified( FALSE )` for one of the pages, but only if none of the other pages is "dirty."  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]  

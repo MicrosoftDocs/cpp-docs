@@ -98,21 +98,21 @@ virtual BOOL Create(
  *dwStyle*  
  Specifies the progress bar control's style. Apply any combination of window stylesdescribed in [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK, in addition to the following progress bar control styles, to the control:  
   
-- `PBS_VERTICAL` Displays progress information vertically, top to bottom. Without this flag, the progress bar control displays horizontally, left to right.  
+- PBS_VERTICAL Displays progress information vertically, top to bottom. Without this flag, the progress bar control displays horizontally, left to right.  
   
-- `PBS_SMOOTH` Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.  
+- PBS_SMOOTH Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.  
   
  *rect*  
  Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.  
   
  *pParentWnd*  
- Specifies the progress bar control's parent window, usually a `CDialog`. It must not be **NULL.**  
+ Specifies the progress bar control's parent window, usually a `CDialog`. It must not be NULL.  
   
  *nID*  
  Specifies the progress bar control's ID.  
   
 ### Return Value  
- **TRUE** if the `CProgressCtrl` object is successfully created; otherwise **FALSE**.  
+ TRUE if the `CProgressCtrl` object is successfully created; otherwise FALSE.  
   
 ### Remarks  
  You construct a `CProgressCtrl` object in two steps. First, call the constructor, which creates the `CProgressCtrl` object, and then call `Create`, which creates the progress bar control.  
@@ -162,7 +162,7 @@ COLORREF GetBarColor() const;
 ```  
   
 ### Return Value  
- The color of the current progress bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or `CLR_DEFAULT` if the progress indicator bar color is the default color.  
+ The color of the current progress bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or CLR_DEFAULT if the progress indicator bar color is the default color.  
   
 ### Remarks  
  This method sends the [PBM_GETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760826) message, which is described in the Windows SDK.  
@@ -230,9 +230,9 @@ int GetState() const;
   
 |Value|State|  
 |-----------|-----------|  
-|`PBST_NORMAL`|In progress|  
-|`PBST_ERROR`|Error|  
-|`PBST_PAUSED`|Paused|  
+|PBST_NORMAL|In progress|  
+|PBST_ERROR|Error|  
+|PBST_PAUSED|Paused|  
   
 ### Remarks  
  This method sends the [PBM_GETSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760834) message, which is described in the Windows SDK.  
@@ -300,10 +300,10 @@ COLORREF SetBarColor(COLORREF clrBar);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the new color of the progress indicator bar. Specify `CLR_DEFAULT` to cause the progress bar to use its default color.|  
+|[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.|  
   
 ### Return Value  
- The previous color of the progress indicator bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or `CLR_DEFAULT` if the color of the progress indicator bar is the default color.  
+ The previous color of the progress indicator bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or CLR_DEFAULT if the color of the progress indicator bar is the default color.  
   
 ### Remarks  
  The `SetBarColor` method sets the progress bar color only if a [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)][theme](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx) is not in effect.  
@@ -329,10 +329,10 @@ COLORREF SetBkColor(COLORREF clrNew);
   
 ### Parameters  
  *clrNew*  
- A **COLORREF** value that specifies the new background color. Specify the `CLR_DEFAULT` value to use the default background color for the progress bar.  
+ A COLORREF value that specifies the new background color. Specify the CLR_DEFAULT value to use the default background color for the progress bar.  
   
 ### Return Value  
- The [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value indicating the previous background color, or **CLR_DEFAULT** if the background color is the default color.  
+ The [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value indicating the previous background color, or CLR_DEFAULT if the background color is the default color.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_10.cpp)]  
@@ -350,11 +350,11 @@ BOOL SetMarquee(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *fMarqueeMode*|`true` to turn marquee mode on, or `false` to turn marquee mode off.|  
+|[in] *fMarqueeMode*|TRUE to turn marquee mode on, or FALSE to turn marquee mode off.|  
 |[in] *nInterval*|Time in milliseconds between updates of the marquee animation.|  
   
 ### Return Value  
- This method always returns `true`.  
+ This method always returns TRUE.  
   
 ### Remarks  
  When marquee mode is turned on, the progress bar is animated and scrolls like a sign on a theater marquee.  
@@ -429,7 +429,7 @@ int SetState(int iState);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *iState*|The state to set the progress bar. Use one of the following values:<br /><br /> - `PBST_NORMAL` - In progress<br />- `PBST_ERROR` - Error<br />- `PBST_PAUSED` - Paused|  
+|[in] *iState*|The state to set the progress bar. Use one of the following values:<br /><br /> - PBST_NORMAL - In progress<br />- PBST_ERROR - Error<br />- PBST_PAUSED - Paused|  
   
 ### Return Value  
  The previous state of the current progress bar control.  

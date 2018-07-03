@@ -31,7 +31,7 @@ class CPtrList : public CObject
  `void*& CPtrList::GetHead() const;`  
   
 ## Remarks  
- `CPtrList` incorporates the `IMPLEMENT_DYNAMIC` macro to support run-time type access and dumping to a `CDumpContext` object. If you need a dump of individual pointer list elements, you must set the depth of the dump context to 1 or greater.  
+ `CPtrList` incorporates the IMPLEMENT_DYNAMIC macro to support run-time type access and dumping to a `CDumpContext` object. If you need a dump of individual pointer list elements, you must set the depth of the dump context to 1 or greater.  
   
  Pointer lists cannot be serialized.  
   

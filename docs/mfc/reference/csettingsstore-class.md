@@ -101,9 +101,9 @@ CSettingsStore(
  Boolean parameter that specifies whether the `CSettingsStore` object is created in read-only mode.  
   
 ### Remarks  
- If *bAdmin* is set to `true`, the `m_hKey` member variable is set to `HKEY_LOCAL_MACHINE`. If you set *bAdmin* to `false`, `m_hKey` is set to `HKEY_CURRENT_USER`.  
+ If *bAdmin* is set to TRUE, the `m_hKey` member variable is set to **HKEY_LOCAL_MACHINE**. If you set *bAdmin* to FALSE, `m_hKey` is set to **HKEY_CURRENT_USER**.  
   
- The security access depends on the *bReadOnly* parameter. If *bReadonly* is `false`, the security access will be set to `KEY_ALL_ACCESS`. If *bReadyOnly* is `true`, the security access will be set to a combination of `KEY_QUERY_VALUE, KEY_NOTIFY` and `KEY_ENUMERATE_SUB_KEYS`. For more information about security access together with the registry, see [Registry Key Security and Access Rights](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
+ The security access depends on the *bReadOnly* parameter. If *bReadonly* is FALSE, the security access will be set to **KEY_ALL_ACCESS**. If *bReadyOnly* is TRUE, the security access will be set to a combination of **KEY_QUERY_VALUE, KEY_NOTIFY** and **KEY_ENUMERATE_SUB_KEYS**. For more information about security access together with the registry, see [Registry Key Security and Access Rights](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
   
  The destructor for `CSettingsStore` releases `m_hKey` automatically.  
   
@@ -129,7 +129,7 @@ virtual BOOL DeleteKey(
 ### Remarks  
  This method will fail if the `CSettingsStore` object is in read-only mode.  
   
- If the parameter *bAdmin* is zero, `DeleteKey` searches for the key to delete under `HKEY_CURRENT_USER`. If *bAdmin* is nonzero, `DeleteKey` searches for the key to delete under `HKEY_LOCAL_MACHINE`.  
+ If the parameter *bAdmin* is zero, `DeleteKey` searches for the key to delete under **HKEY_CURRENT_USER**. If *bAdmin* is nonzero, `DeleteKey` searches for the key to delete under **HKEY_LOCAL_MACHINE**.  
   
 ##  <a name="deletevalue"></a>  CSettingsStore::DeleteValue  
  Deletes a value from `m_hKey`.  
@@ -417,7 +417,7 @@ virtual BOOL Write(
  Pointer to a pointer to a `CObject` variable that contains the data to store.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  In order to write to the registry, you must set *bReadOnly* to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).  

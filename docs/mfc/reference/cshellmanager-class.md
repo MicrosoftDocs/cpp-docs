@@ -117,7 +117,7 @@ LPITEMIDLIST ConcatenateItem(
  The second item.  
   
 ### Return Value  
- A pointer to the new item list if the function succeeds, otherwise `NULL`.  
+ A pointer to the new item list if the function succeeds, otherwise NULL.  
   
 ### Remarks  
  This method creates a new [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) large enough to contain both *pidl1* and *pidl2*. It then copies *pidl1* and *pidl2* to the new list.  
@@ -134,7 +134,7 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
  The original item list.  
   
 ### Return Value  
- A pointer to the newly created item list if successful; otherwise `NULL`.  
+ A pointer to the newly created item list if successful; otherwise NULL.  
   
 ### Remarks  
  The newly created item list has the same size as the source item list.  
@@ -151,7 +151,7 @@ LPITEMIDLIST CreateItem(UINT cbSize);
  The size of the item list.  
   
 ### Return Value  
- A pointer to the created item list if successful; otherwise `NULL`.  
+ A pointer to the created item list if successful; otherwise NULL.  
   
 ##  <a name="cshellmanager"></a>  CShellManager::CShellManager  
  Constructs a `CShellManager` object.  
@@ -217,7 +217,7 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
  A pointer to the next item in the list.  
   
 ### Remarks  
- If there are no more items in the list, this method returns `NULL`.  
+ If there are no more items in the list, this method returns NULL.  
   
 ##  <a name="getparentitem"></a>  CShellManager::GetParentItem  
  Retrieves the parent of a pointer to an item identifier list (PIDL).  
@@ -258,7 +258,7 @@ HRESULT ItemFromPath(
  A reference to a PIDL. The method uses this PIDL to store the pointer to its return value.  
   
 ### Return Value  
- Returns `NOERROR` if successful; an OLE-defined error value.  
+ Returns NOERROR if successful; an OLE-defined error value.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
