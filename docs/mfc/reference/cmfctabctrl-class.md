@@ -167,7 +167,7 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 ```  
   
 ### Return Value  
- Always `TRUE`.  
+ Always TRUE.  
   
 ### Remarks  
   
@@ -179,8 +179,8 @@ void AutoSizeWindow(BOOL bAutoSize = TRUE);
 ```  
   
 ### Parameters  
- [in] `bAutoSize`  
- `TRUE` to automatically resize tab control windows; otherwise, `FALSE`. The default value is `TRUE`.  
+ [in] *bAutoSize*  
+ TRUE to automatically resize tab control windows; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -205,19 +205,19 @@ BOOL Create(
  A rectangle that bounds the tab control.  
   
  [in] *pParentWnd*  
- A pointer to a parent window. Must not be `NULL`.  
+ A pointer to a parent window. Must not be NULL.  
   
  [in] *nID*  
  The ID of the tab control.  
   
  [in] *location*  
- The location of tabs. The default value is `LOCATION_BOTTOM`. For more information, see Remarks.  
+ The location of tabs. The default value is LOCATION_BOTTOM. For more information, see Remarks.  
   
  [in] *bCloseBtn*  
- `TRUE` to display a close button on the tab; otherwise, `FALSE`. The default value is `FALSE`.  
+ TRUE to display a close button on the tab; otherwise, FALSE. The default value is FALSE.  
   
 ### Return Value  
- `TRUE` if successful; otherwise, `FALSE`.  
+ TRUE if successful; otherwise, FALSE.  
   
 ### Remarks  
  The following table describes the values you can specify for the *style* parameter.  
@@ -268,7 +268,7 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to display the Close button on the active tab; `FALSE` to display the Close button on the upper-right corner of the tab area. The default value is `TRUE`.  
+ TRUE to display the Close button on the active tab; FALSE to display the Close button on the upper-right corner of the tab area. The default value is TRUE.  
   
 ##  <a name="enableinplaceedit"></a>  CMFCTabCtrl::EnableInPlaceEdit  
  Enables or disables editable tab labels.  
@@ -279,7 +279,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable editable tab labels; `FALSE` to disable editable tab labels.  
+ TRUE to enable editable tab labels; FALSE to disable editable tab labels.  
   
 ### Remarks  
   
@@ -292,7 +292,7 @@ void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to display a pop-up menu of tabbed window labels; `FALSE` to display forward and backward scroll buttons. The default value is `TRUE`.  
+ TRUE to display a pop-up menu of tabbed window labels; FALSE to display forward and backward scroll buttons. The default value is TRUE.  
   
 ### Remarks  
  When the user clicks a tab label, the framework displays the corresponding tabbed window. If the tab label is visible, the tabbed window is opened without changing its position. If the user selects a document from the pop-up menu and the corresponding tabbed window is off screen, the tabbed window becomes the first tab.  
@@ -309,7 +309,7 @@ virtual BOOL EnsureVisible(int iTab);
  The zero-based index of a tab.  
   
 ### Return Value  
- `TRUE` if it is successful; `FALSE` if the `iTab` parameter index is invalid.  
+ TRUE if it is successful; FALSE if the *iTab* parameter index is invalid.  
   
 ### Remarks  
  Use this method to guarantee that the specified tab is visible. The tab control will scroll if it is required.  
@@ -359,10 +359,10 @@ CScrollBar* GetScrollBar();
 ```  
   
 ### Return Value  
- A pointer to a scrollbar object, or a `NULL` if the tab control was not created by using the `STYLE_FLAT_SHARED_HORZ_SCROLL` style.  
+ A pointer to a scrollbar object, or a NULL if the tab control was not created by using the STYLE_FLAT_SHARED_HORZ_SCROLL style.  
   
 ### Remarks  
- Use this method to access the tab control's embedded scroll bar. A scroll bar object is created only when the tab control has the `STYLE_FLAT_SHARED_HORZ_SCROLL` style.  
+ Use this method to access the tab control's embedded scroll bar. A scroll bar object is created only when the tab control has the STYLE_FLAT_SHARED_HORZ_SCROLL style.  
   
 ##  <a name="gettabarea"></a>  CMFCTabCtrl::GetTabArea  
  Retrieves the bounding rectangle of the tab label area at the top or bottom of the tab control.  
@@ -449,7 +449,7 @@ void HideInactiveWindow(BOOL bHide = TRUE);
   
 ### Parameters  
  [in] *bHide*  
- `TRUE` not to display an inactive window; `FALSE` to display an inactive window. The default value is `TRUE`.  
+ TRUE not to display an inactive window; FALSE to display an inactive window. The default value is TRUE.  
   
 ### Remarks  
   
@@ -462,7 +462,7 @@ void HideNoTabs(BOOL bHide=TRUE);
   
 ### Parameters  
  [in] *bHide*  
- `TRUE` to enable drawing the tab area; `FALSE` to disable drawing. The default value is `TRUE`.  
+ TRUE to enable drawing the tab area; FALSE to disable drawing. The default value is TRUE.  
   
 ### Remarks  
   
@@ -475,7 +475,7 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
   
 ### Parameters  
  [in] *bHide*  
- `TRUE` to not draw a tab for a single tabbed window; `FALSE` to draw a single tab. The default value is `TRUE`.  
+ TRUE to not draw a tab for a single tabbed window; FALSE to draw a single tab. The default value is TRUE.  
   
 ### Remarks  
   
@@ -487,7 +487,7 @@ BOOL IsActiveInMDITabGroup() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current tab of a tab control is the active tab in an MDI tab group; otherwise, `FALSE`.  
+ TRUE if the current tab of a tab control is the active tab in an MDI tab group; otherwise, FALSE.  
   
 ### Remarks  
  You can organize multiple document windows into either vertical or horizontal tab groups and easily shuffle documents from one tab group to another.  
@@ -500,7 +500,7 @@ BOOL IsActiveTabBoldFont() const;
 ```  
   
 ### Return Value  
- `TRUE` if the active tab is displayed using the bold font; otherwise, `FALSE`.  
+ TRUE if the active tab is displayed using the bold font; otherwise, FALSE.  
   
 ### Remarks  
  Use the [CMFCTabCtrl::SetActiveTabBoldFont](#setactivetabboldfont) method to change the active tab font.  
@@ -513,7 +513,7 @@ virtual BOOL IsActiveTabCloseButton() const;
 ```  
   
 ### Return Value  
- `TRUE` if the Close button is displayed on the active tab; `FALSE` if the Close button is displayed on the upper-right corner of the tab area.  
+ TRUE if the Close button is displayed on the active tab; FALSE if the Close button is displayed on the upper-right corner of the tab area.  
   
 ### Remarks  
   
@@ -525,7 +525,7 @@ BOOL IsDrawFrame() const;
 ```  
   
 ### Return Value  
- `TRUE` if a frame rectangle is drawn; otherwise, `FALSE`.  
+ TRUE if a frame rectangle is drawn; otherwise, FALSE.  
   
 ### Remarks  
  Use the [CMFCTabCtrl::SetDrawFrame](#setdrawframe) method to enable or disable drawing a frame rectangle.  
@@ -538,7 +538,7 @@ BOOL IsFlatFrame() const;
 ```  
   
 ### Return Value  
- `TRUE` if the frame around the tab area is flat; `FALSE` if the frame is three-dimensional.  
+ TRUE if the frame around the tab area is flat; FALSE if the frame is three-dimensional.  
   
 ### Remarks  
  Use the [CMFCTabCtrl::SetFlatFrame](#setflatframe) method to change how the frame is drawn.  
@@ -551,7 +551,7 @@ virtual BOOL IsFlatTab() const;
 ```  
   
 ### Return Value  
- `TRUE` if the appearance of the tabs in the current tab control is flat; otherwise, `FALSE`.  
+ TRUE if the appearance of the tabs in the current tab control is flat; otherwise, FALSE.  
   
 ##  <a name="isleftrightrounded"></a>  CMFCTabCtrl::IsLeftRightRounded  
  Indicates whether the appearance of the left and right side of a tab in the current tab control is rounded.  
@@ -561,7 +561,7 @@ virtual BOOL IsLeftRightRounded() const;
 ```  
   
 ### Return Value  
- `TRUE` if the sides of each tab is rounded; otherwise, `FALSE`.  
+ TRUE if the sides of each tab is rounded; otherwise, FALSE.  
   
 ##  <a name="ismditabgroup"></a>  CMFCTabCtrl::IsMDITabGroup  
  Indicates whether the current tab control is contained in the client area of a multiple-document interface window.  
@@ -571,7 +571,7 @@ virtual BOOL IsMDITabGroup() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current tab control is in an MDI client area window; otherwise, `FALSE`.  
+ TRUE if the current tab control is in an MDI client area window; otherwise, FALSE.  
   
 ##  <a name="isonenotestyle"></a>  CMFCTabCtrl::IsOneNoteStyle  
  Indicates whether the current tab control is displayed in the style of Microsoft OneNote.  
@@ -581,7 +581,7 @@ virtual BOOL IsOneNoteStyle() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tab control is displayed in the style of Microsoft OneNote; otherwise, `FALSE`.  
+ TRUE if the tab control is displayed in the style of Microsoft OneNote; otherwise, FALSE.  
   
 ##  <a name="issharedscroll"></a>  CMFCTabCtrl::IsSharedScroll  
  Indicates whether the current tab control has a scroll bar that can scroll its tabs as a group.  
@@ -591,10 +591,10 @@ BOOL IsSharedScroll() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tab control has a shared scroll bar; otherwise, `FALSE`.  
+ TRUE if the tab control has a shared scroll bar; otherwise, FALSE.  
   
 ### Remarks  
- This method returns `TRUE` if the *style* parameter of the [CMFCTabCtrl::Create](#create) method is STYLE_FLAT_SHARED_HORZ_SCROLL.  
+ This method returns TRUE if the *style* parameter of the [CMFCTabCtrl::Create](#create) method is STYLE_FLAT_SHARED_HORZ_SCROLL.  
   
 ##  <a name="istabdocumentsmenu"></a>  CMFCTabCtrl::IsTabDocumentsMenu  
  Indicates whether the tab control displays scroll buttons or a button that displays a menu of tabbed windows.  
@@ -604,7 +604,7 @@ BOOL IsTabDocumentsMenu() const;
 ```  
   
 ### Return Value  
- `TRUE` if tabbed windows are scrolled using a popup menu of tabbed window labels; `FALSE` if tabbed windows are scrolled using forward and backward scroll buttons.  
+ TRUE if tabbed windows are scrolled using a popup menu of tabbed window labels; FALSE if tabbed windows are scrolled using forward and backward scroll buttons.  
   
 ### Remarks  
  Use the [CMFCTabCtrl::EnableTabDocumentsMenu](#enabletabdocumentsmenu) method to specify the method of scrolling tabbed windows.  
@@ -617,7 +617,7 @@ virtual BOOL IsVS2005Style() const;
 ```  
   
 ### Return Value  
- `TRUE` if tabs are drawn using the style of Visual Studio 2005; otherwise, `FALSE`.  
+ TRUE if tabs are drawn using the style of Visual Studio 2005; otherwise, FALSE.  
   
 ### Remarks  
  Use the *style* parameter of the [CMFCTabCtrl::Create](#create) method to specify how tabs are drawn.  
@@ -630,7 +630,7 @@ static BOOL m_bEnableActivate;
 ```  
   
 ### Remarks  
- The focus is usually taken by a new tabbed window when the tab is inserted and made active. Set the `CMFCTabCtrl::m_bEnableActivate` member variable to `FALSE` to retain the original focus. The default value is `TRUE`.  
+ The focus is usually taken by a new tabbed window when the tab is inserted and made active. Set the `CMFCTabCtrl::m_bEnableActivate` member variable to FALSE to retain the original focus. The default value is TRUE.  
   
 ##  <a name="modifytabstyle"></a>  CMFCTabCtrl::ModifyTabStyle  
  Specifies the appearance of tabs in the current tab control.  
@@ -644,7 +644,7 @@ BOOL ModifyTabStyle(Style style);
  One of the enumeration values that specifies the appearance of the tab control. For more information, see the table in Remarks.  
   
 ### Return Value  
- Always `TRUE`.  
+ Always TRUE.  
   
 ### Remarks  
  The value of the *style* parameter can be one of the following `CMFCTabCtrl::Style` enumerations.  
@@ -675,18 +675,18 @@ virtual DROPEFFECT OnDragEnter(
  Points to a data object that contains data that the user drags.  
   
  [in] *dwKeyState*  
- Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, and `MK_RBUTTON`. For more information, see the **Message Parameters** section of [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
+ Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
  [in] *point*  
  Contains the current location of the cursor in client coordinates.  
   
 ### Return Value  
- Always `DROPEFFECT_NONE`, which means that the drop target cannot accept the data.  
+ Always DROPEFFECT_NONE, which means that the drop target cannot accept the data.  
   
 ### Remarks  
  Use this method to support a drag-and-drop operation. Override this method to implement your own custom behavior.  
   
- By default, this method only calls `CMFCTabCtrl::OnDragOver`, which always returns `DROPEFFECT_NONE`.  
+ By default, this method only calls `CMFCTabCtrl::OnDragOver`, which always returns DROPEFFECT_NONE.  
   
 ##  <a name="ondragover"></a>  CMFCTabCtrl::OnDragOver  
  Called by the framework during a drag operation when the mouse is moved over the drop target window.  
@@ -703,13 +703,13 @@ virtual DROPEFFECT OnDragOver(
  Pointer to a [COleDataObject](../../mfc/reference/coledataobject-class.md) object that is being dragged over the drop target.  
   
  [in] *dwKeyState*  
- The state of the modifier keys, which is a bitwise combination (OR) of `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, and `MK_RBUTTON`. For more information, see "Message Parameters" in [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
+ The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
  [in] *point*  
  The current mouse position.  
   
 ### Return Value  
- Always `DROPEFFECT_NONE`.  
+ Always DROPEFFECT_NONE.  
   
 ### Remarks  
  Override this method with your custom implementation. For more information, see the [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover) method.  
@@ -736,7 +736,7 @@ void SetActiveInMDITabGroup(BOOL bActive);
   
 ### Parameters  
  [in] *bActive*  
- `TRUE` to make the current tab the active tab; `FALSE` to make the current tab inactive.  
+ TRUE to make the current tab the active tab; FALSE to make the current tab inactive.  
   
 ### Remarks  
  You can organize multiple document windows into either vertical or horizontal tab groups and easily shuffle documents from one tab group to another.  
@@ -753,10 +753,10 @@ virtual BOOL SetActiveTab(int iTab);
  Specifies the zero-based index of the tab to activate.  
   
 ### Return Value  
- `TRUE` if the specified tab was made active; `FALSE` if the specified *iTab* parameter value is invalid.  
+ TRUE if the specified tab was made active; FALSE if the specified *iTab* parameter value is invalid.  
   
 ### Remarks  
- This method does not send the `AFX_WM_CHANGE_ACTIVE_TAB` notification to the parent window of the tab control.  
+ This method does not send the AFX_WM_CHANGE_ACTIVE_TAB notification to the parent window of the tab control.  
   
  The `SetActiveTab` method automatically calls the [CMFCTabCtrl::HideActiveWindowHorzScrollBar](#hideactivewindowhorzscrollbar) method to prevent the screen from blinking.  
   
@@ -769,7 +769,7 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
   
 ### Parameters  
  [in] *bIsBold*  
- `TRUE` to use a bold font to display the label of the active tab; `FALSE` to use the standard font to display the label. The default value is `TRUE`.  
+ TRUE to use a bold font to display the label of the active tab; FALSE to use the standard font to display the label. The default value is TRUE.  
   
 ### Remarks  
   
@@ -782,7 +782,7 @@ void SetDrawFrame(BOOL bDraw=TRUE);
   
 ### Parameters  
  [in] *bDraw*  
- `TRUE` to display a frame rectangle around an embedded bar; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to display a frame rectangle around an embedded bar; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -797,10 +797,10 @@ void SetFlatFrame(
   
 ### Parameters  
  [in] *bFlat*  
- `TRUE` to draw a flat (2D) frame around the tab area; `FALSE` to draw a three-dimensional (3D) frame. The default value is `TRUE`.  
+ TRUE to draw a flat (2D) frame around the tab area; FALSE to draw a three-dimensional (3D) frame. The default value is TRUE.  
   
  [in] *bRepaint*  
- `TRUE` to redraw the window immediately; otherwise, `FALSE`. The default value is `TRUE`.  
+ TRUE to redraw the window immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -830,7 +830,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
  A handle to a preloaded image list.  
   
 ### Return Value  
- `TRUE` if this method is successful. `FALSE` if the tab control is created by using a flat style or if the first method overload cannot load the bitmap that is specified by the *uiID* parameter.  
+ TRUE if this method is successful. FALSE if the tab control is created by using a flat style or if the first method overload cannot load the bitmap that is specified by the *uiID* parameter.  
   
 ### Remarks  
  Use this method to set an image list for the tab control. The images from the image list are displayed next to the tab label. This method recalculates the tab height so that the tab is sized to contain both the image and the text.  
@@ -880,7 +880,7 @@ void StopResize(BOOL bCancel);
   
 ### Parameters  
  [in] *bCancel*  
- `TRUE` to abandon the current resize operation; `FALSE` to complete the current resize operation. In either case, the framework stops drawing the resize rectangle.  
+ TRUE to abandon the current resize operation; FALSE to complete the current resize operation. In either case, the framework stops drawing the resize rectangle.  
   
 ##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar  
  Draws a horizontal scroll bar on a tab control that displays flat tabs.  
@@ -891,10 +891,10 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
   
 ### Parameters  
  [out] *pScrollInfo*  
- Pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure or `NULL`. When this method returns, and if this parameter is not `NULL`, the structure contains all the parameters of the scroll bar. The default value is `NULL`.  
+ Pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise, `FALSE`.  
+ TRUE if this method succeeds; otherwise, FALSE.  
   
 ### Remarks  
  This method affects only a tab control that displays flat tabs. The scroll bar influences all the tabs at the same time.  

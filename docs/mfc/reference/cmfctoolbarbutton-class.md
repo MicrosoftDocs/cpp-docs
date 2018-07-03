@@ -120,7 +120,7 @@ class CMFCToolBarButton : public CObject
 ## Remarks  
  A `CMFCToolbarButton` object is a control that resides on a toolbar. Its behavior resembles that of an ordinary button. You can assign an image and a text label to this object. A toolbar button can also have a command ID. When the user clicks the toolbar button, the framework executes the command that this ID specifies.  
   
- Typically, toolbar buttons can be customized: the user can drag buttons from one toolbar to another, and copy, paste, delete, and edit text labels and images. To prevent the user from customizing the toolbar, you can lock the toolbar in one of two ways. Either set the `bLocked` flag to `TRUE` when you call [CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#loadtoolbar), or add the command ID of an individual button to the global list of protected commands by using the [CMFCToolBarButton::SetProtectedCommands](#setprotectedcommands) method.  
+ Typically, toolbar buttons can be customized: the user can drag buttons from one toolbar to another, and copy, paste, delete, and edit text labels and images. To prevent the user from customizing the toolbar, you can lock the toolbar in one of two ways. Either set the `bLocked` flag to TRUE when you call [CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#loadtoolbar), or add the command ID of an individual button to the global list of protected commands by using the [CMFCToolBarButton::SetProtectedCommands](#setprotectedcommands) method.  
   
  `CMFCToolBarButton` objects display images from the global collections of toolbar images in the application. These collections are maintained by the parent toolbar, [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md). For more information, see [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md).  
   
@@ -154,12 +154,12 @@ virtual BOOL CanBeDropped(CMFCToolBar* pToolbar);
  Unused.  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
  By default, a toolbar button can be dropped on every customizable (that is, non-locked) toolbar.  
   
- The default implementation of this method returns `TRUE`. Override this method and return `FALSE` if you want to prevent the user from repositioning the button.  
+ The default implementation of this method returns TRUE. Override this method and return FALSE if you want to prevent the user from repositioning the button.  
   
 ##  <a name="canbestored"></a>  CMFCToolBarButton::CanBeStored  
  Determines whether the button can be stored.  
@@ -169,12 +169,12 @@ virtual BOOL CanBeStored() const;
 ```  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
  The framework uses this method to determine whether the button can participate in a drag-and-drop operation.  
   
- The default implementation returns `TRUE`. Override this method if your button cannot be stored as part of a drag-and-drop operation. For more information about drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
+ The default implementation returns TRUE. Override this method if your button cannot be stored as part of a drag-and-drop operation. For more information about drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
 ##  <a name="canbestretched"></a>  CMFCToolBarButton::CanBeStretched  
  Specifies whether a user can stretch the button during customization.  
@@ -184,12 +184,12 @@ virtual BOOL CanBeStretched() const;
 ```  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
  This method is used by the framework to determine whether the button can be stretched in customization mode.  
   
- The default implementation of this method returns `FALSE`. Override this method to return `TRUE` for a variable-width control such as a combo box or slider.  
+ The default implementation of this method returns FALSE. Override this method to return TRUE for a variable-width control such as a combo box or slider.  
   
  For more information about customization mode, see [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode).  
   
@@ -213,13 +213,13 @@ CMFCToolBarButton(
  The image index of the button in the collection of images.  
   
  [in] *lpszText*  
- The text label of the button. Can be `NULL`.  
+ The text label of the button. Can be NULL.  
   
  [in] *bUserButton*  
- A Boolean value that determines whether the button is user-defined. If this parameter is `TRUE`, the button is user-defined. Otherwise, the button image is loaded from a resource.  
+ A Boolean value that determines whether the button is user-defined. If this parameter is TRUE, the button is user-defined. Otherwise, the button image is loaded from a resource.  
   
  [in] *bLocked*  
- A Boolean value that determines whether the button can be customized. If this parameter is `TRUE`, the button cannot be customized. Otherwise, the button can be customized.  
+ A Boolean value that determines whether the button can be customized. If this parameter is TRUE, the button cannot be customized. Otherwise, the button can be customized.  
   
 ##  <a name="comparewith"></a>  CMFCToolBarButton::CompareWith  
  Compares this instance with the provided `CMFCToolBarButton` object.  
@@ -278,7 +278,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- Set this parameter to `TRUE` to enable input, or to `FALSE` to disable input.  
+ Set this parameter to TRUE to enable input, or to FALSE to disable input.  
   
 ### Remarks  
  This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) in the Windows SDK.  
@@ -295,12 +295,12 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
  A reference to the target menu button.  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
  The framework calls this method to copy the text from a toolbar button to a menu button. The default implementation copies the text label of the button. If the text label is empty, this method copies the tooltip text of the button.  
   
- The default implementation of this method returns `TRUE`. Override this method if you want to take additional actions when the framework converts an object that is derived from [CMFCToolbarButton](../../mfc/reference/cmfctoolbarbutton-class.md) to a menu button.  
+ The default implementation of this method returns TRUE. Override this method if you want to take additional actions when the framework converts an object that is derived from [CMFCToolbarButton](../../mfc/reference/cmfctoolbarbutton-class.md) to a menu button.  
   
 ##  <a name="getclipboardformat"></a>  CMFCToolBarButton::GetClipboardFormat  
  Retrieves the global clipboard format for the application.  
@@ -310,12 +310,12 @@ static CLIPFORMAT __stdcall GetClipboardFormat();
 ```  
   
 ### Return Value  
- The global `CLIPFORMAT` value for the application.  
+ The global CLIPFORMAT value for the application.  
   
 ### Remarks  
  The framework calls this method to retrieve the clipboard format for OLE data transfer operations. For example, the [CMFCToolBarButton::CreateFromOleData](#createfromoledata) method uses this method to copy data from a source OLE data object.  
   
- This method sets the global `CLIPFORMAT` value the first time this method is called. All subsequent calls to this method return this value.  
+ This method sets the global CLIPFORMAT value the first time this method is called. All subsequent calls to this method return this value.  
   
  To allow drag-and-drop operations to occur between applications, call the [CMFCToolBarButton::SetClipboardFormatName](#setclipboardformatname) method.  
   
@@ -329,10 +329,10 @@ virtual HWND GetHwnd();
 ```  
   
 ### Return Value  
- The window handle that is associated with the toolbar button or `NULL` if the toolbar button has no associated window handle.  
+ The window handle that is associated with the toolbar button or NULL if the toolbar button has no associated window handle.  
   
 ### Remarks  
- The default implementation of this method returns `NULL`. Override this method to return the window handle of your specific control.  
+ The default implementation of this method returns NULL. Override this method to return the window handle of your specific control.  
   
 ##  <a name="getimage"></a>  CMFCToolBarButton::GetImage  
  Retrieves the image index of the button.  
@@ -345,7 +345,7 @@ int GetImage() const;
  The index of the image associated with this button.  
   
 ### Remarks  
- If the button has a user-defined image (that is, if *bUserButton* was `TRUE` in the constructor), the returned index specifies an image in the collection of user-defined images (see [CMFCToolBar::GetUserImages](../../mfc/reference/cmfctoolbar-class.md#getuserimages)). Otherwise, the index specifies an image in the collection of images that are loaded from a resource file (see [CMFCToolBar::GetImages](../../mfc/reference/cmfctoolbar-class.md#getimages)). For more information about resource files, see [Working with Resource Files](../../windows/working-with-resource-files.md).  
+ If the button has a user-defined image (that is, if *bUserButton* was TRUE in the constructor), the returned index specifies an image in the collection of user-defined images (see [CMFCToolBar::GetUserImages](../../mfc/reference/cmfctoolbar-class.md#getuserimages)). Otherwise, the index specifies an image in the collection of images that are loaded from a resource file (see [CMFCToolBar::GetImages](../../mfc/reference/cmfctoolbar-class.md#getimages)). For more information about resource files, see [Working with Resource Files](../../windows/working-with-resource-files.md).  
   
 ##  <a name="getinvalidaterect"></a>  CMFCToolBarButton::GetInvalidateRect  
  Retrieves the region of the client area of the button that must be redrawn.  
@@ -393,7 +393,7 @@ SIZE GetTextSize() const;
 ```  
   
 ### Return Value  
- A `SIZE` object that contains the size, in pixels, of the button text.  
+ A SIZE object that contains the size, in pixels, of the button text.  
   
 ##  <a name="hasfocus"></a>  CMFCToolBarButton::HasFocus  
  Determines whether the button has the current input focus.  
@@ -416,12 +416,12 @@ virtual BOOL HaveHotBorder() const;
 ```  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
  The framework calls this method to determine whether the toolbar button should display its border when a user selects it.  
   
- The default implementation returns `TRUE`. You can override this method to customize this behavior.  
+ The default implementation returns TRUE. You can override this method to customize this behavior.  
   
 ##  <a name="isdrawimage"></a>  CMFCToolBarButton::IsDrawImage  
  Determines whether an image is displayed on the button.  
@@ -434,7 +434,7 @@ BOOL IsDrawImage() const;
  Nonzero if an image is displayed on the button; otherwise 0.  
   
 ### Remarks  
- This method returns `FALSE` if the toolbar button has no associated image ( [CMFCToolBarButton::GetImage](#getimage) returns -1) or if [CMFCToolBarButton::m_bImage](#m_bimage) is set to `FALSE`.  
+ This method returns FALSE if the toolbar button has no associated image ( [CMFCToolBarButton::GetImage](#getimage) returns -1) or if [CMFCToolBarButton::m_bImage](#m_bimage) is set to FALSE.  
   
 ##  <a name="isdrawtext"></a>  CMFCToolBarButton::IsDrawText  
  Determines whether a text label is displayed on the button.  
@@ -447,7 +447,7 @@ BOOL IsDrawText() const;
  Nonzero if a text label is displayed; otherwise 0.  
   
 ### Remarks  
- This method returns `FALSE` if the toolbar button has no associated text label ( [CMFCToolBarButton::m_strText](#m_strtext) is empty) or [CMFCToolBarButton::m_bText](#m_btext) is set to `FALSE`.  
+ This method returns FALSE if the toolbar button has no associated text label ( [CMFCToolBarButton::m_strText](#m_strtext) is empty) or [CMFCToolBarButton::m_bText](#m_btext) is set to FALSE.  
   
 ##  <a name="isdroppeddown"></a>  CMFCToolBarButton::IsDroppedDown  
  Determines whether the button displays a submenu.  
@@ -457,10 +457,10 @@ virtual BOOL IsDroppedDown() const;
 ```  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
- The default implementation of this method returns `FALSE`. Override this method to return `TRUE` if your control displays a submenu.  
+ The default implementation of this method returns FALSE. Override this method to return TRUE if your control displays a submenu.  
   
 ##  <a name="iseditable"></a>  CMFCToolBarButton::IsEditable  
  Determines whether the button can be customized.  
@@ -475,7 +475,7 @@ virtual BOOL IsEditable() const;
 ### Remarks  
  The framework calls this method to determine whether the user can customize the toolbar button by using drag-and-drop or edit operations.  
   
- The default implementation returns `FALSE` if the command ID of the button is a standard command (you can determine this by calling the `IsStandardCommand` function) or if the command ID is in the list of protected commands. For more information about protected commands, see [CMFCToolBarButton::GetProtectedCommands](#getprotectedcommands) and [CMFCToolBarButton::SetProtectedCommands](#setprotectedcommands).  
+ The default implementation returns FALSE if the command ID of the button is a standard command (you can determine this by calling the `IsStandardCommand` function) or if the command ID is in the list of protected commands. For more information about protected commands, see [CMFCToolBarButton::GetProtectedCommands](#getprotectedcommands) and [CMFCToolBarButton::SetProtectedCommands](#setprotectedcommands).  
   
  Override this method to customize its behavior.  
   
@@ -502,10 +502,10 @@ virtual BOOL IsFirstInGroup() const;
 ```  
   
 ### Return Value  
- `TRUE` if the button is the first button in its button group; otherwise `FALSE`.  
+ TRUE if the button is the first button in its button group; otherwise FALSE.  
   
 ### Remarks  
- This method defines a *button group* as a neighboring set of buttons that are positioned on the same row and are bounded by separators or the border of the toolbar. This method returns `FALSE` if the toolbar button refers to the **Customize** button. For more information about the **Customize** button, see [CMFCToolBar::GetCustomizeButton](../../mfc/reference/cmfctoolbar-class.md#getcustomizebutton).  
+ This method defines a *button group* as a neighboring set of buttons that are positioned on the same row and are bounded by separators or the border of the toolbar. This method returns FALSE if the toolbar button refers to the **Customize** button. For more information about the **Customize** button, see [CMFCToolBar::GetCustomizeButton](../../mfc/reference/cmfctoolbar-class.md#getcustomizebutton).  
   
  Call the [CMFCToolBarButton::IsLastInGroup](#islastingroup) method to determine whether the button is in the last position in its button group.  
   
@@ -539,7 +539,7 @@ BOOL IsHorizontal() const;
 ### Remarks  
  The framework calls this method to determine the layout of toolbar buttons.  
   
- This method returns the `m_bHorz` data member. The default value of the `m_bHorz` data member is `TRUE`; it is reset on each call to the [CMFCToolBarButton::OnDraw](#ondraw) method.  
+ This method returns the `m_bHorz` data member. The default value of the `m_bHorz` data member is TRUE; it is reset on each call to the [CMFCToolBarButton::OnDraw](#ondraw) method.  
   
 ##  <a name="islastingroup"></a>  CMFCToolBarButton::IsLastInGroup  
  Specifies whether the button is in the last position in its button group.  
@@ -549,10 +549,10 @@ virtual BOOL IsLastInGroup() const;
 ```  
   
 ### Return Value  
- `TRUE` if the button is the last button in its button group; otherwise `FALSE`.  
+ TRUE if the button is the last button in its button group; otherwise FALSE.  
   
 ### Remarks  
- This method defines a *button group* as a neighboring set of buttons that are positioned on the same row and are bounded by separators or the border of the toolbar This method returns `FALSE` if the toolbar button has no parent toolbar or the toolbar button refers to the **Customize** button. For more information about the **Customize** button, see [CMFCToolBar::GetCustomizeButton](../../mfc/reference/cmfctoolbar-class.md#getcustomizebutton).  
+ This method defines a *button group* as a neighboring set of buttons that are positioned on the same row and are bounded by separators or the border of the toolbar This method returns FALSE if the toolbar button has no parent toolbar or the toolbar button refers to the **Customize** button. For more information about the **Customize** button, see [CMFCToolBar::GetCustomizeButton](../../mfc/reference/cmfctoolbar-class.md#getcustomizebutton).  
   
  Call the [CMFCToolBarButton::IsFirstInGroup](#isfirstingroup) method to determine whether the button is in the first position in its button group.  
   
@@ -584,7 +584,7 @@ virtual BOOL IsOwnerOf(HWND hwnd);
  Nonzero if the button is the owner of the provided window handle; otherwise 0.  
   
 ### Remarks  
- This method returns nonzero if *hwnd* either refers to the direct window handle or is a child of the window handle that is associated with the button. This method returns 0 if *hwnd* is `NULL`.  
+ This method returns nonzero if *hwnd* either refers to the direct window handle or is a child of the window handle that is associated with the button. This method returns 0 if *hwnd* is NULL.  
   
 ##  <a name="isvisible"></a>  CMFCToolBarButton::IsVisible  
  Determines whether the toolbar button is visible.  
@@ -610,7 +610,7 @@ virtual BOOL IsWindowVisible();
  Nonzero if the underlying window handle of the button is visible; otherwise 0.  
   
 ### Remarks  
- This method returns nonzero if the styles attribute of the underlying window handle contains the `WS_VISIBLE` style. This method returns `FALSE` if the underlying window handle of the button is `NULL`.  
+ This method returns nonzero if the styles attribute of the underlying window handle contains the WS_VISIBLE style. This method returns FALSE if the underlying window handle of the button is NULL.  
   
 ##  <a name="m_bimage"></a>  CMFCToolBarButton::m_bImage  
  Specifies whether an image is displayed on the button.  
@@ -620,7 +620,7 @@ BOOL m_bImage;
 ```  
   
 ### Remarks  
- If this data member is set to `TRUE`, the framework displays the image that is associated with the toolbar button; otherwise the framework does not display the image. This member affects the return value of the [CMFCToolBarButton::m_bImage](#m_bimage) method.  
+ If this data member is set to TRUE, the framework displays the image that is associated with the toolbar button; otherwise the framework does not display the image. This member affects the return value of the [CMFCToolBarButton::m_bImage](#m_bimage) method.  
   
 ##  <a name="m_btext"></a>  CMFCToolBarButton::m_bText  
  Specifies whether a text label is displayed on the button.  
@@ -630,7 +630,7 @@ BOOL m_bText;
 ```  
   
 ### Remarks  
- If this data member is set to `TRUE`, the framework displays the text label of the toolbar button; otherwise the framework does not display the text label. This member affects the return value of the [CMFCToolBarButton::m_bText](#m_btext) method.  
+ If this data member is set to TRUE, the framework displays the text label of the toolbar button; otherwise the framework does not display the text label. This member affects the return value of the [CMFCToolBarButton::m_bText](#m_btext) method.  
   
 ##  <a name="m_btextbelow"></a>  CMFCToolBarButton::m_bTextBelow  
  Specifies whether the text label is displayed underneath the image on the button.  
@@ -640,7 +640,7 @@ BOOL m_bTextBelow;
 ```  
   
 ### Remarks  
- If this member variable is set to `TRUE`, the framework displays the text of the button underneath the image. The default value of this member is `FALSE`.  
+ If this member variable is set to TRUE, the framework displays the text of the button underneath the image. The default value of this member is FALSE.  
   
 ##  <a name="m_buserbutton"></a>  CMFCToolBarButton::m_bUserButton  
  Specifies whether the button has a user-defined image  
@@ -650,7 +650,7 @@ BOOL m_bUserButton;
 ```  
   
 ### Remarks  
- This data member is set to `TRUE` when the button has a user-defined image associated with it.  
+ This data member is set to TRUE when the button has a user-defined image associated with it.  
   
 ##  <a name="m_bwholetext"></a>  CMFCToolBarButton::m_bWholeText  
  Specifies whether the button displays its full text label even if it does not fit in the bounding rectangle.  
@@ -660,7 +660,7 @@ BOOL m_bWholeText;
 ```  
   
 ### Remarks  
- If this data member is set to `TRUE`, the framework displays the full text label by enlarging the button. Otherwise, the framework truncates and appends an ellipsis ( **...**) to the text label.  
+ If this data member is set to TRUE, the framework displays the full text label by enlarging the button. Otherwise, the framework truncates and appends an ellipsis ( **...**) to the text label.  
   
 ##  <a name="m_bwrap"></a>  CMFCToolBarButton::m_bWrap  
  Specifies whether the button next to a separator will be put on the next row.  
@@ -670,11 +670,11 @@ BOOL m_bWrap;
 ```  
   
 ### Remarks  
- The framework sets this data member to `TRUE` when the toolbar button does not fit on the current row or when you specify a layout (for example, a specific number of toolbar buttons per row).  
+ The framework sets this data member to TRUE when the toolbar button does not fit on the current row or when you specify a layout (for example, a specific number of toolbar buttons per row).  
   
- The framework places this button on the next row if this data member is set to `TRUE` and the toolbar is docked horizontally or floating.  
+ The framework places this button on the next row if this data member is set to TRUE and the toolbar is docked horizontally or floating.  
   
- The default value of this data member is `FALSE`.  
+ The default value of this data member is FALSE.  
   
 ##  <a name="m_bwraptext"></a>  CMFCToolBarButton::m_bWrapText  
  Specifies whether multi-line text labels are enabled.  
@@ -684,9 +684,9 @@ AFX_IMPORT_DATA static BOOL m_bWrapText;
 ```  
   
 ### Remarks  
- If this static member variable is `TRUE`, the framework enables all toolbars to display multi-line text labels on toolbar buttons.  
+ If this static member variable is TRUE, the framework enables all toolbars to display multi-line text labels on toolbar buttons.  
   
- The default value of this data member is `FALSE`.  
+ The default value of this data member is FALSE.  
   
 ##  <a name="m_nid"></a>  CMFCToolBarButton::m_nID  
  The command ID of the button.  
@@ -696,7 +696,7 @@ UINT m_nID;
 ```  
   
 ### Remarks  
- A command ID of -1 indicates that the button is a separator. All button separators have the `TBBS_SEPARATOR` style. See [CMFCToolBarButton::m_nStyle](#m_nstyle) for more information about button styles.  
+ A command ID of -1 indicates that the button is a separator. All button separators have the TBBS_SEPARATOR style. See [CMFCToolBarButton::m_nStyle](#m_nstyle) for more information about button styles.  
   
 ##  <a name="m_nstyle"></a>  CMFCToolBarButton::m_nStyle  
  The style of the button.  
@@ -730,12 +730,12 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  The notification message that is associated with the command.  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
  The framework calls this method when it is about to send a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message to the parent window.  
   
- By default, this method returns `FALSE`. Override this method to return `TRUE` if you want to process the WM_COMMAND message or `FALSE` to indicate that the parent toolbar should handle the message.  
+ By default, this method returns FALSE. Override this method to return TRUE if you want to process the WM_COMMAND message or FALSE to indicate that the parent toolbar should handle the message.  
   
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarButton::OnAddToCustomizePage  
  Called by the framework when the button is added to a **Customize** dialog box.  
@@ -755,12 +755,12 @@ virtual BOOL OnBeforeDrag() const;
 ```  
   
 ### Return Value  
- `TRUE` if the button can be dragged; otherwise `FALSE`.  
+ TRUE if the button can be dragged; otherwise FALSE.  
   
 ### Remarks  
  The framework calls this method before the user starts to drag the button.  
   
- The default implementation of this method returns `TRUE`. Override this method to return `FALSE` to disable dragging of the button.  
+ The default implementation of this method returns TRUE. Override this method to return FALSE to disable dragging of the button.  
   
 ##  <a name="onbeforedrop"></a>  CMFCToolBarButton::OnBeforeDrop  
  Specifies whether a user can drop the button onto the target toolbar.  
@@ -774,12 +774,12 @@ virtual BOOL OnBeforeDrop(CMFCToolBar* pTarget);
  The target of the drag-and-drop operation.  
   
 ### Return Value  
- `TRUE` if the button can be dropped onto the provided target toolbar; otherwise `FALSE`.  
+ TRUE if the button can be dropped onto the provided target toolbar; otherwise FALSE.  
   
 ### Remarks  
  The framework calls this method before the button is dropped onto a toolbar.  
   
- The default implementation of this method returns `TRUE`. Override this method to return `FALSE` to disable the drop operation on the specified target.  
+ The default implementation of this method returns TRUE. Override this method to return FALSE to disable the drop operation on the specified target.  
   
 ##  <a name="oncalculatesize"></a>  CMFCToolBarButton::OnCalculateSize  
  Called by the framework to calculate the size of the button for the specified device context and docking state.  
@@ -799,7 +799,7 @@ virtual SIZE OnCalculateSize(
  The default size of the button.  
   
  [in] *bHorz*  
- The dock state of the parent toolbar. This parameter is `TRUE` if the toolbar is docked horizontally or is floating, or `FALSE` if the toolbar is docked vertically.  
+ The dock state of the parent toolbar. This parameter is TRUE if the toolbar is docked horizontally or is floating, or FALSE if the toolbar is docked vertically.  
   
 ### Return Value  
  A `SIZE` structure that contains the dimensions of the button, in pixels.  
@@ -851,15 +851,15 @@ virtual BOOL OnClick(
  The parent window of the toolbar button.  
   
  [in] *bDelay*  
- `TRUE` if the message should be handled with a delay.  
+ TRUE if the message should be handled with a delay.  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
  The framework calls this method when the user clicks the toolbar button.  
   
- The default implementation does nothing and returns `FALSE`. Override this method to return a nonzero value if the button processes the click message.  
+ The default implementation does nothing and returns FALSE. Override this method to return a nonzero value if the button processes the click message.  
   
 ##  <a name="onclickup"></a>  CMFCToolBarButton::OnClickUp  
  Called by the framework when the user releases the mouse button.  
@@ -869,12 +869,12 @@ virtual BOOL OnClickUp();
 ```  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
  The framework calls this method when the user releases the toolbar button.  
   
- The default implementation does nothing and returns `FALSE`. Override this method to return a nonzero value if the button processes the click message.  
+ The default implementation does nothing and returns FALSE. Override this method to return a nonzero value if the button processes the click message.  
   
 ##  <a name="oncontexthelp"></a>  CMFCToolBarButton::OnContextHelp  
  Called by the framework when the parent toolbar handles a WM_HELPHITTEST message.  
@@ -888,15 +888,15 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
  The parent window of the toolbar button.  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
- The default implementation of this method does nothing and returns `FALSE`. Override this method to return a nonzero value if the button processes the help message.  
+ The default implementation of this method does nothing and returns FALSE. Override this method to return a nonzero value if the button processes the help message.  
   
  For more information about the WM_HELPHITTEST message, see [TN028: Context-Sensitive Help Support](../../mfc/tn028-context-sensitive-help-support.md).  
   
 ##  <a name="onctlcolor"></a>  CMFCToolBarButton::OnCtlColor  
- Called by the framework when the parent toolbar handles a `WM_CTLCOLOR` message.  
+ Called by the framework when the parent toolbar handles a WM_CTLCOLOR message.  
   
 ```  
 virtual HBRUSH OnCtlColor(
@@ -919,7 +919,7 @@ virtual HBRUSH OnCtlColor(
   
  The framework calls this method when the toolbar framework is in customization mode and the toolbar button is unlocked. For more information about customization mode, see [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode). For more information about locking toolbar buttons, see [CMFCToolBarButton::IsLocked](#islocked).  
   
- The default implementation does nothing and returns `NULL`.  
+ The default implementation does nothing and returns NULL.  
   
 ##  <a name="oncustomizemenu"></a>  CMFCToolBarButton::OnCustomizeMenu  
  Allows the button to modify the provided menu when the application displays a shortcut menu on the parent toolbar.  
@@ -933,10 +933,10 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
  The menu to customize.  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
- The default implementation does nothing and returns `FALSE`. Override this method and return a nonzero value if you want to modify the contents of the provided menu.  
+ The default implementation does nothing and returns FALSE. Override this method and return a nonzero value if you want to modify the contents of the provided menu.  
   
 ##  <a name="ondblclk"></a>  CMFCToolBarButton::OnDblClk  
  Called by the framework when the parent toolbar handles a [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) message.  
@@ -979,20 +979,20 @@ virtual void OnDraw(
  [in] *pImages*  
  The collection of toolbar images that is associated with the button.  
   
- [in] *bHorz`  
- The dock state of the parent toolbar. This parameter is `TRUE` when the button is docked horizontally and `FALSE` when the button is docked vertically.  
+ [in] *bHorz*  
+ The dock state of the parent toolbar. This parameter is TRUE when the button is docked horizontally and FALSE when the button is docked vertically.  
   
  [in] *bCustomizeMode*  
- Specifies whether the toolbar is in customization mode. This parameter is `TRUE` when the toolbar is in customization mode and `FALSE` when the toolbar is not in customization mode.  
+ Specifies whether the toolbar is in customization mode. This parameter is TRUE when the toolbar is in customization mode and FALSE when the toolbar is not in customization mode.  
   
  [in] *bHighlight*  
- Specifies whether the button is highlighted. This parameter is `TRUE` when the button is highlighted and `FALSE` when the button is not highlighted.  
+ Specifies whether the button is highlighted. This parameter is TRUE when the button is highlighted and FALSE when the button is not highlighted.  
   
  [in] *bDrawBorder*  
- Specifies whether the button should display its border. This parameter is `TRUE` when the button should display its border and `FALSE` when the button should not display its border.  
+ Specifies whether the button should display its border. This parameter is TRUE when the button should display its border and FALSE when the button should not display its border.  
   
  [in] *bGrayDisabledButtons*  
- Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is `TRUE` when disabled buttons should be shaded and `FALSE` when this method should use the disabled images collection.  
+ Specifies whether to shade disabled buttons or use the disabled images collection. This parameter is TRUE when disabled buttons should be shaded and FALSE when this method should use the disabled images collection.  
   
 ### Remarks  
  Override this method to customize toolbar button drawing.  
@@ -1015,7 +1015,7 @@ virtual int OnDrawOnCustomizeList(
  The bounding rectangle of the button.  
   
  [in] *bSelected*  
- Specifies whether the button is selected. If this parameter is `TRUE`, the button is selected. If this parameter is `FALSE`, the button is not selected.  
+ Specifies whether the button is selected. If this parameter is TRUE, the button is selected. If this parameter is FALSE, the button is not selected.  
   
 ### Return Value  
  The width, in pixels, of the button on the specified device context.  
@@ -1039,12 +1039,12 @@ virtual BOOL OnGetCustomToolTipText(CString& strToolTip);
  A `CString` object that receives the custom tooltip text.  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
- The framework calls this method when it displays the tooltip for the toolbar button. If this method returns `FALSE`, the framework uses a default tooltip.  
+ The framework calls this method when it displays the tooltip for the toolbar button. If this method returns FALSE, the framework uses a default tooltip.  
   
- The default implementation does nothing and returns `FALSE`. Override this method and return a nonzero value to provide custom tooltip text for the toolbar button.  
+ The default implementation does nothing and returns FALSE. Override this method and return a nonzero value to provide custom tooltip text for the toolbar button.  
   
 ##  <a name="onglobalfontschanged"></a>  CMFCToolBarButton::OnGlobalFontsChanged  
  Called by the framework when the global font has changed.  
@@ -1075,7 +1075,7 @@ virtual void OnShow(BOOL bShow);
   
 ### Parameters  
  [in] *bShow*  
- Specifies whether the button is visible. If this parameter is `TRUE`, the button is visible. Otherwise, the button is not visible.  
+ Specifies whether the button is visible. If this parameter is TRUE, the button is visible. Otherwise, the button is not visible.  
   
 ### Remarks  
  The default implementation of this method does nothing. Override this method to update the visibility of the button.  
@@ -1105,13 +1105,13 @@ virtual BOOL OnToolHitTest(
   
 ### Parameters  
  [in] *pWnd*  
- The parent window of the button. Can be `NULL`.  
+ The parent window of the button. Can be NULL.  
   
  [in] *pTI*  
  A `TOOLINFO` structure that contains information about a tool in a tooltip control.  
   
 ### Return Value  
- The result of `OnMenuButtonToolHitTest` if the button can retrieve a pointer to the parent frame window; otherwise `FALSE`.  
+ The result of `OnMenuButtonToolHitTest` if the button can retrieve a pointer to the parent frame window; otherwise FALSE.  
   
 ### Remarks  
  This method calls one of the following methods if it can convert the parent window to a valid frame object:  
@@ -1147,10 +1147,10 @@ virtual BOOL OnUpdateToolTip(
  A `CString` object that receives the updated tooltip text.  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
- The default implementation of this method does nothing and returns `FALSE`. Override this method to return a nonzero value if you provide a tooltip text string.  
+ The default implementation of this method does nothing and returns FALSE. Override this method to return a nonzero value if you provide a tooltip text string.  
   
 ##  <a name="preparedrag"></a>  CMFCToolBarButton::PrepareDrag  
  Called by the framework when the button is about to perform a drag-and-drop operation.  
@@ -1164,12 +1164,12 @@ virtual BOOL PrepareDrag(COleDataSource& srcItem);
  A `COleDataSource` object that stores state information about the drag-and-drop operation.  
   
 ### Return Value  
- `TRUE` if the operation succeeds; otherwise `FALSE`.  
+ TRUE if the operation succeeds; otherwise FALSE.  
   
 ### Remarks  
  The framework calls this method to prepare the toolbar button to store its state in the provided `COleDataSource` object. This method stores its state by serializing itself to a shared file and then passing that file to the [COleDataSource::CacheGlobalData](../../mfc/reference/coledatasource-class.md#cacheglobaldata) method. For more information about toolbar button serialization, see [CMFCToolBarButton::Serialize](#serialize).  
   
- This method does nothing and returns `TRUE` if the button cannot be stored (the [CMFCToolBarButton::CanBeStored](#canbestored) method returns `FALSE`). It returns `FALSE` if an exception occurs during object serialization.  
+ This method does nothing and returns TRUE if the button cannot be stored (the [CMFCToolBarButton::CanBeStored](#canbestored) method returns FALSE). It returns FALSE if an exception occurs during object serialization.  
   
  For more information about OLE drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
@@ -1240,10 +1240,10 @@ virtual BOOL SetACCData(
  A `CAccessibilityData` object that is populated with the accessibility data of the toolbar button.  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
- Override this method to return `FALSE` if your toolbar button does not provide accessibility data.  
+ Override this method to return FALSE if your toolbar button does not provide accessibility data.  
   
 ##  <a name="setclipboardformatname"></a>  CMFCToolBarButton::SetClipboardFormatName  
  Renames the global clipboard format.  
@@ -1254,7 +1254,7 @@ static void __stdcall SetClipboardFormatName(LPCTSTR lpszName);
   
 ### Parameters  
  [in] *lpszName*  
- The new name of the global clipboard format. Cannot be `NULL`.  
+ The new name of the global clipboard format. Cannot be NULL.  
   
 ### Remarks  
  This method makes it possible for drag-and-drop operations to occur among multiple applications. Each application must supply the same clipboard format name.  
@@ -1329,7 +1329,7 @@ virtual void SetStyle(UINT nStyle);
  The new style of the button.  
   
 ### Remarks  
- The default implementation sets the [CMFCToolBarButton::m_nStyle](#m_nstyle) data member to `nStyle`. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles](toolbar-control-styles.md) for a list of valid style flags.  
+ The default implementation sets the [CMFCToolBarButton::m_nStyle](#m_nstyle) data member to *nStyle*. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles](toolbar-control-styles.md) for a list of valid style flags.  
   
 ##  <a name="setvisible"></a>  CMFCToolBarButton::SetVisible  
  Specifies whether the button is visible.  
@@ -1340,7 +1340,7 @@ void SetVisible(BOOL bShow=TRUE);
   
 ### Parameters  
  [in] *bShow*  
- A Boolean value that specifies whether to show or hide the button. If this parameter is `TRUE`, the button is shown. If the parameter is `FALSE`, the button is hidden.  
+ A Boolean value that specifies whether to show or hide the button. If this parameter is TRUE, the button is shown. If the parameter is FALSE, the button is hidden.  
   
 ### Remarks  
  Use this function to hide or show a particular toolbar button. Call the [CPane::AdjustSizeImmediate](../../mfc/reference/cpane-class.md#adjustsizeimmediate) method after you call this method.  
@@ -1354,10 +1354,10 @@ void Show(BOOL bShow);
   
 ### Parameters  
  [in] *bShow*  
- A Boolean value that specifies whether to show or hide the button. If this parameter is `TRUE`, the button is shown. If the parameter is `FALSE`, the button is hidden.  
+ A Boolean value that specifies whether to show or hide the button. If this parameter is TRUE, the button is shown. If the parameter is FALSE, the button is hidden.  
   
 ### Remarks  
- The framework calls this method to update the visibility of toolbar buttons when their parent toolbar is resized. The framework calls this method with *bShow* set to `FALSE` when the button no longer fits within the bounds of the toolbar. The framework calls this method with *bShow* set to `TRUE` when after resizing the button again fits within the bounds of the toolbar.  
+ The framework calls this method to update the visibility of toolbar buttons when their parent toolbar is resized. The framework calls this method with *bShow* set to FALSE when the button no longer fits within the bounds of the toolbar. The framework calls this method with *bShow* set to TRUE when after resizing the button again fits within the bounds of the toolbar.  
   
  Use the [CMFCToolBarButton::SetVisible](#setvisible) method to set the general visibility of the button.  
   

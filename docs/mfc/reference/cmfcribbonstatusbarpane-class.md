@@ -106,7 +106,7 @@ CMFCRibbonStatusBarPane(
  Specifies text string to be displayed on pane.  
   
  [in] *bIsStatic*  
- If `TRUE`, the status pane cannot be highlighted or selected by clicking it.  
+ If TRUE, the status pane cannot be highlighted or selected by clicking it.  
   
  [in] *hIcon*  
  Specifies a handle to an icon to be displayed on the pane.  
@@ -160,7 +160,7 @@ BOOL IsAnimation() const;
 ```  
   
 ### Return Value  
- `TRUE` if animation is in progress; `FALSE` otherwise.  
+ TRUE if animation is in progress; FALSE otherwise.  
   
 ##  <a name="isextended"></a>  CMFCRibbonStatusBarPane::IsExtended  
  Determine whether the pane is located in the extended area of the ribbon status bar.  
@@ -170,7 +170,7 @@ BOOL IsExtended() const;
 ```  
   
 ### Return Value  
- `TRUE` if pane is on status bar extended area. `FALSE` otherwise.  
+ TRUE if pane is on status bar extended area. FALSE otherwise.  
   
 ##  <a name="ondrawborder"></a>  CMFCRibbonStatusBarPane::OnDrawBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -251,7 +251,7 @@ BOOL SetAnimationList(
  Specifies the resource ID of the image list.  
   
 ### Return Value  
- `TRUE` if the image list is successfully attached to the status bar pane; `FALSE` otherwise.  
+ TRUE if the image list is successfully attached to the status bar pane; FALSE otherwise.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonStatusBarPane::SetTextAlign  
  Sets the text alignment of the label of the status bar pane.  
@@ -267,11 +267,11 @@ void SetTextAlign(int nAlign);
 ### Remarks  
  *nAlign* can have one of the following values:  
   
-- `TA_LEFT`: left alignment  
+- TA_LEFT: left alignment  
   
-- `TA_CENTER:` center alignment  
+- TA_CENTER: center alignment  
   
-- `TA_RIGHT:` right alignment  
+- TA_RIGHT: right alignment  
   
 ##  <a name="startanimation"></a>  CMFCRibbonStatusBarPane::StartAnimation  
  Starts the animation that you assign to the pane.  
