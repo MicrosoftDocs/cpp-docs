@@ -69,7 +69,7 @@ class COleDialog : public CCommonDialog
  **Header:** afxodlgs.h  
   
 ##  <a name="getlasterror"></a>  COleDialog::GetLastError  
- Call the `GetLastError` member function to get additional error information when `DoModal` returns **IDABORT**.  
+ Call the `GetLastError` member function to get additional error information when `DoModal` returns IDABORT.  
   
 ```  
 UINT GetLastError() const;  
