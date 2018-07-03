@@ -29,9 +29,9 @@ The following illustration depicts the relationship among the classes and interf
   
  ATL implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) in two phases:  
   
--   [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), or [CComPolyObject](../atl/reference/ccompolyobject-class.md) implements the **IUnknown** methods.  
+-   [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), or [CComPolyObject](../atl/reference/ccompolyobject-class.md) implements the `IUnknown` methods.  
   
--   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) manages the reference count and outer pointers of **IUnknown**.  
+-   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) manages the reference count and outer pointers of `IUnknown`.  
   
  Other aspects of your ATL COM object are handled by other classes:  
   
@@ -39,7 +39,7 @@ The following illustration depicts the relationship among the classes and interf
   
 -   [IDispatchImpl](../atl/reference/idispatchimpl-class.md) provides a default implementation of the `IDispatch Interface` portion of any dual interfaces on the object.  
   
--   [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) implements the **ISupportErrorInfo** interface that ensures error information can be propagated up the call chain correctly.  
+-   [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) implements the `ISupportErrorInfo` interface that ensures error information can be propagated up the call chain correctly.  
   
 ## In This Section  
  [Implementing CComObjectRootEx](../atl/implementing-ccomobjectrootex.md)  
@@ -49,7 +49,7 @@ The following illustration depicts the relationship among the classes and interf
  Discusses how the **DECLARE_\*_AGGREGATABLE** macros affect the use of `CComObject`, `CComAggObject`, and `CComPolyObject`.  
   
  [Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md)  
- Lists the ATL implementation classes to use for supporting the `IDispatch` and **IErrorInfo** interfaces.  
+ Lists the ATL implementation classes to use for supporting the `IDispatch` and `IErrorInfo` interfaces.  
   
  [Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)  
  Discusses the steps to implement a connection point for your class.  
