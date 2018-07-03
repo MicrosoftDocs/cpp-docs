@@ -118,7 +118,7 @@ virtual BOOL LoadBitmap(
  The resource ID of the bitmap that refers to the regular menu images.  
   
  [in] *bLocked*  
- `TRUE` to lock the toolbar; otherwise `FALSE`.  
+ TRUE to lock the toolbar; otherwise FALSE.  
   
  [in] *uiDisabledResID*  
  The resource ID of the bitmap that refers to the disabled toolbar images.  

@@ -104,7 +104,7 @@ void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to specify that the [CMFCMaskedEdit::GetWindowText](#getwindowtext) method retrieve only masked characters; `FALSE` to specify that the method retrieve the whole text. The default value is `TRUE`.  
+ TRUE to specify that the [CMFCMaskedEdit::GetWindowText](#getwindowtext) method retrieve only masked characters; FALSE to specify that the method retrieve the whole text. The default value is TRUE.  
   
 ### Remarks  
  Use this method to enable retrieving masked characters. Then create a masked edit control that corresponds to the telephone number, such as (425) 555-0187. If you call the `GetWindowText` method, it returns "4255550187". If you disable retrieving masked characters, the `GetWindowText` method returns the text that is displayed in the edit control, for example "(425) 555-0187".  
@@ -131,7 +131,7 @@ void EnableMask(
  A default character that the framework substitutes for each invalid character in the user input. The default value of this parameter is underscore ('_').  
   
  [in] *lpszValid*  
- A string that contains a set of valid characters. `NULL` indicates that all characters are valid. The default value of this parameter is `NULL`.  
+ A string that contains a set of valid characters. NULL indicates that all characters are valid. The default value of this parameter is NULL.  
   
 ### Remarks  
  Use this method to create the mask for the masked edit control. Derive a class from the `CMFCMaskedEdit` class and override the [CMFCMaskedEdit::IsMaskedChar](#ismaskedchar) method to use your own code for custom mask processing.  
@@ -158,7 +158,7 @@ void EnableSelectByGroup(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to select only groups; `FALSE` to select the whole text. The default value is `TRUE`.  
+ TRUE to select only groups; FALSE to select the whole text. The default value is TRUE.  
   
 ### Remarks  
  Use this function to specify whether the masked edit control allows a user to select by group or the whole text.  
@@ -190,7 +190,7 @@ void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to validate the user input against only masked characters; `FALSE` to validate against the whole mask. The default value is `TRUE`.  
+ TRUE to validate the user input against only masked characters; FALSE to validate against the whole mask. The default value is TRUE.  
   
 ##  <a name="getwindowtext"></a>  CMFCMaskedEdit::GetWindowText  
  Retrieves validated text from the masked edit control.  
@@ -238,7 +238,7 @@ virtual BOOL IsMaskedChar(
  The corresponding character from the mask string.  
   
 ### Return Value  
- `TRUE` if the *chChar* parameter is the type of character permitted by the *chMaskChar* parameter; otherwise, `FALSE`.  
+ TRUE if the *chChar* parameter is the type of character permitted by the *chMaskChar* parameter; otherwise, FALSE.  
   
 ### Remarks  
  Override this method to validate input characters on your own. For more information about mask characters, see the [CMFCMaskedEdit::EnableMask](#enablemask) method.  
@@ -252,7 +252,7 @@ void SetValidChars(LPCTSTR lpszValid=NULL);
   
 ### Parameters  
  [in] *lpszValid*  
- A string that contains the set of valid input characters. `NULL` means that all characters are valid. The default value of this parameter is `NULL`.  
+ A string that contains the set of valid input characters. NULL means that all characters are valid. The default value of this parameter is NULL.  
   
 ### Remarks  
  Use this method to define a list of valid characters. If an input character is not in this list, masked edit control will not accept it.  

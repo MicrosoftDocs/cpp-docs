@@ -167,7 +167,7 @@ BOOL AddButton(
  A handle to a buttons' icon.  
   
 ### Return Value  
- `TRUE` if a button was added successfully; otherwise `FALSE`.  
+ TRUE if a button was added successfully; otherwise FALSE.  
   
 ### Remarks  
  Use this method to insert a new button into an Outlook bar's page. The button's image can be loaded either from the application resources or from a disk file.  
@@ -210,7 +210,7 @@ virtual BOOL Create(
   
 ### Parameters  
  [in] *pParentWnd*  
- Specifies the parent window of the Outlook bar pane control. Must not be `NULL`.  
+ Specifies the parent window of the Outlook bar pane control. Must not be NULL.  
   
  [in] *dwStyle*  
  The window style.  For a list of window styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
@@ -222,7 +222,7 @@ virtual BOOL Create(
  Specifies special styles that define the behavior of the Outlook bar pane control when it is detached from the Outlook bar.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
  To construct a `CMFCOutlookBarPane` object, first call the constructor, and then call `Create`, which creates the Outlook bar pane control and attaches it to the `CMFCOutlookBarPane` object.  
@@ -246,12 +246,12 @@ virtual BOOL EnableContextMenuItems(
  A pointer to the shortcut menu.  
   
 ### Return Value  
- Returns `TRUE` if the shortcut menu should be displayed; otherwise `FALSE`.  
+ Returns TRUE if the shortcut menu should be displayed; otherwise FALSE.  
   
 ### Remarks  
  Override this method to modify the framework standard shortcut menu that the framework displays in customization mode.  
   
- The default implementation checks the customization mode ( [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)) and if it is set to `TRUE`, disables all the shortcut menu items except **Delete**. Then, it just passes the input parameters to `CMFCToolBar::EnableContextMenuItems`.  
+ The default implementation checks the customization mode ( [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)) and if it is set to TRUE, disables all the shortcut menu items except **Delete**. Then, it just passes the input parameters to `CMFCToolBar::EnableContextMenuItems`.  
   
 > [!NOTE]
 > *Context menu* is a synonym for shortcut menu.  
@@ -265,7 +265,7 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
   
 ### Parameters  
  [in] *bPageScroll*  
- If `TRUE`, enable the page scroll mode. If `FALSE`, disable the page scroll mode.  
+ If TRUE, enable the page scroll mode. If FALSE, disable the page scroll mode.  
   
 ##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
  Returns the regular (that is, non-selected) text color of the Outlook bar pane.  
@@ -278,7 +278,7 @@ DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
  The current text color as an RGB color value.  
   
 ### Remarks  
- Use [CMFCOutlookBarPane::SetTextColor](#settextcolor) to set the current (regular and selected) text color of the Outlook bar. You can obtain the default text color by calling the [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) function with the `COLOR_WINDOW` index.  
+ Use [CMFCOutlookBarPane::SetTextColor](#settextcolor) to set the current (regular and selected) text color of the Outlook bar. You can obtain the default text color by calling the [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) function with the COLOR_WINDOW index.  
   
 ##  <a name="isbackgroundtexture"></a>  CMFCOutlookBarPane::IsBackgroundTexture  
  Determines whether there is a background image loaded for the Outlook bar pane.  
@@ -288,7 +288,7 @@ BOOL IsBackgroundTexture() const;
 ```  
   
 ### Return Value  
- `TRUE` if there is background image to display; otherwise `FALSE`.  
+ TRUE if there is background image to display; otherwise FALSE.  
   
 ### Remarks  
  You can add a background image by calling [CMFCOutlookBarPane::SetBackImage](#setbackimage) function.  
@@ -303,7 +303,7 @@ BOOL IsDrawShadedHighlight() const;
 ```  
   
 ### Return Value  
- `TRUE` if button's borders are shaded; otherwise `FALSE`.  
+ TRUE if button's borders are shaded; otherwise FALSE.  
   
 ##  <a name="removeallbuttons"></a>  CMFCOutlookBarPane::RemoveAllButtons  
  Removes all the buttons from the Outlook bar pane.  
@@ -324,7 +324,7 @@ BOOL RemoveButton(UINT iIdCommand);
  Specifies the command ID of a button to remove.  
   
 ### Return Value  
- `TRUE` if the button was successfully removed; `FALSE` if the specified command ID is not valid.  
+ TRUE if the button was successfully removed; FALSE if the specified command ID is not valid.  
   
 ##  <a name="setbackcolor"></a>  CMFCOutlookBarPane::SetBackColor  
  Sets the background color of the Outlook bar.  
