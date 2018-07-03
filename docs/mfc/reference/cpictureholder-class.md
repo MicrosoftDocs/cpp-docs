@@ -122,7 +122,7 @@ BOOL CreateFromBitmap(
  Nonzero if the object is successfully created; otherwise 0.  
   
 ### Remarks  
- If *bTransferOwnership* is **TRUE**, the caller should not use the bitmap or palette object in any way after this call returns. If *bTransferOwnership* is **FALSE**, the caller is responsible for ensuring that the bitmap and palette objects remain valid for the lifetime of the picture object.  
+ If *bTransferOwnership* is TRUE, the caller should not use the bitmap or palette object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the bitmap and palette objects remain valid for the lifetime of the picture object.  
   
 ##  <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon  
  Uses an icon to initialize the picture object in a `CPictureHolder`.  
@@ -151,7 +151,7 @@ BOOL CreateFromIcon(
  Nonzero if the object is successfully created; otherwise 0.  
   
 ### Remarks  
- If *bTransferOwnership* is **TRUE**, the caller should not use the icon object in any way after this call returns. If *bTransferOwnership* is **FALSE**, the caller is responsible for ensuring that the icon object remains valid for the lifetime of the picture object.  
+ If *bTransferOwnership* is TRUE, the caller should not use the icon object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the icon object remains valid for the lifetime of the picture object.  
   
 ##  <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile  
  Uses a metafile to initialize the picture object in a `CPictureHolder`.  
@@ -181,7 +181,7 @@ BOOL CreateFromMetafile(
  Nonzero if the object is successfully created; otherwise 0.  
   
 ### Remarks  
- If *bTransferOwnership* is **TRUE**, the caller should not use the metafile object in any way after this call returns. If *bTransferOwnership* is **FALSE**, the caller is responsible for ensuring that the metafile object remains valid for the lifetime of the picture object.  
+ If *bTransferOwnership* is TRUE, the caller should not use the metafile object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the metafile object remains valid for the lifetime of the picture object.  
   
 ##  <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString  
  Retrieves the string that is displayed in a container's property browser.  
@@ -208,7 +208,7 @@ LPPICTUREDISP GetPictureDispatch();
  A pointer to the `CPictureHolder` object's `IPictureDisp` interface.  
   
 ### Remarks  
- The caller must call **Release** on this pointer when finished with it.  
+ The caller must call `Release` on this pointer when finished with it.  
   
 ##  <a name="gettype"></a>  CPictureHolder::GetType  
  Indicates whether the picture is a bitmap, metafile, or icon.  
@@ -222,11 +222,11 @@ short GetType();
   
 |Value|Meaning|  
 |-----------|-------------|  
-|**PICTYPE_UNINITIALIZED**|`CPictureHolder` object is unititialized.|  
-|**PICTYPE_NONE**|`CPictureHolder` object is empty.|  
-|**PICTYPE_BITMAP**|Picture is a bitmap.|  
-|**PICTYPE_METAFILE**|Picture is a metafile.|  
-|**PICTYPE_ICON**|Picture is an icon.|  
+|PICTYPE_UNINITIALIZED|`CPictureHolder` object is unititialized.|  
+|PICTYPE_NONE|`CPictureHolder` object is empty.|  
+|PICTYPE_BITMAP|Picture is a bitmap.|  
+|PICTYPE_METAFILE|Picture is a metafile.|  
+|PICTYPE_ICON|Picture is an icon.|  
   
 ##  <a name="m_ppict"></a>  CPictureHolder::m_pPict  
  A pointer to the `CPictureHolder` object's `IPicture` interface.  

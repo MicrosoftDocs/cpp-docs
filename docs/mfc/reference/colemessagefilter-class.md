@@ -179,18 +179,18 @@ void SetBusyReply(SERVERCALL nBusyReply);
  *nBusyReply*  
  A value from the `SERVERCALL` enumeration, which is defined in COMPOBJ.H. It can have any one of the following values:  
   
-- **SERVERCALL_ISHANDLED** The application can accept calls but may fail in processing a particular call.  
+- SERVERCALL_ISHANDLED The application can accept calls but may fail in processing a particular call.  
   
-- **SERVERCALL_REJECTED** The application probably will never be able to process a call.  
+- SERVERCALL_REJECTED The application probably will never be able to process a call.  
   
-- **SERVERCALL_RETRYLATER** The application is temporarily in a state in which it cannot process a call.  
+- SERVERCALL_RETRYLATER The application is temporarily in a state in which it cannot process a call.  
   
 ### Remarks  
  The [BeginBusyState](#beginbusystate) and [EndBusyState](#endbusystate) functions control the application's busy state.  
   
  When an application has been made busy with a call to `BeginBusyState`, it responds to calls from the OLE system DLLs with a value determined by the last setting of `SetBusyReply`. The calling application uses this busy reply to determine what action to take.  
   
- By default, the busy reply is **SERVERCALL_RETRYLATER**. This reply causes the calling application to retry the call as soon as possible.  
+ By default, the busy reply is SERVERCALL_RETRYLATER. This reply causes the calling application to retry the call as soon as possible.  
   
 ##  <a name="setmessagependingdelay"></a>  COleMessageFilter::SetMessagePendingDelay  
  Determines how long the calling application waits for a response from the called application before taking further action.  
