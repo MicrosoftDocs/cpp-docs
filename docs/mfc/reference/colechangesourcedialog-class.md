@@ -86,7 +86,7 @@ explicit COleChangeSourceDialog(
  Pointer to the linked [COleClientItem](../../mfc/reference/coleclientitem-class.md) whose source is to be updated.  
   
  *pParentWnd*  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
+ Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
@@ -103,16 +103,16 @@ virtual INT_PTR DoModal();
 ### Return Value  
  Completion status for the dialog box. One of the following values:  
   
-- **IDOK** if the dialog box was successfully displayed.  
+- IDOK if the dialog box was successfully displayed.  
   
-- **IDCANCEL** if the user canceled the dialog box.  
+- IDCANCEL if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_cs](#m_cs) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- If `DoModal` returns **IDOK**, you can call member functions to retrieve user-entered settings or information from the dialog box. The following list names typical query functions:  
+ If `DoModal` returns IDOK, you can call member functions to retrieve user-entered settings or information from the dialog box. The following list names typical query functions:  
   
 - [GetFileName](#getfilename)  
   
@@ -154,9 +154,9 @@ CString GetFromPrefix();
  The previous prefix string of the source.  
   
 ### Remarks  
- Call this function only after [DoModal](#domodal) returns **IDOK**.  
+ Call this function only after [DoModal](#domodal) returns IDOK.  
   
- This value comes directly from the **lpszFrom** member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
+ This value comes directly from the `lpszFrom` member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
   
  For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
@@ -184,9 +184,9 @@ CString GetToPrefix();
  The new prefix string of the source.  
   
 ### Remarks  
- Call this function only after [DoModal](#domodal) returns **IDOK**.  
+ Call this function only after [DoModal](#domodal) returns IDOK.  
   
- This value comes directly from the **lpszTo** member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
+ This value comes directly from the `lpszTo` member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
   
  For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
@@ -213,7 +213,7 @@ BOOL IsValidSource();
  Nonzero if the new source is valid, otherwise 0.  
   
 ### Remarks  
- Call this function only after [DoModal](#domodal) returns **IDOK**.  
+ Call this function only after [DoModal](#domodal) returns IDOK.  
   
  For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   

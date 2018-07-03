@@ -96,7 +96,7 @@ class COleControlSite : public CCmdTarget
 ## Remarks  
  This support is the primary means by which an embedded ActiveX control obtains information about the location and extent of its display site, its moniker, its user interface, its ambient properties, and other resources provided by its container. `COleControlSite` fully implements the [IOleControlSite](http://msdn.microsoft.com/library/windows/desktop/ms688502), [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706), [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), `IBoundObjectSite`, `INotifyDBEvents`, [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md)       interfaces. In addition, the IDispatch interface (providing support for ambient properties and event sinks) is also implemented.  
   
- To create an ActiveX control site using `COleControlSite`, derive a class from `COleControlSite`. In your `CWnd`-derived class for the container (for instance, your dialog box) override the **CWnd::CreateControlSite** function.  
+ To create an ActiveX control site using `COleControlSite`, derive a class from `COleControlSite`. In your `CWnd`-derived class for the container (for instance, your dialog box) override the `CWnd::CreateControlSite` function.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -121,10 +121,10 @@ virtual void BindDefaultProperty(
   
 ### Parameters  
  *dwDispID*  
- Specifies the **DISPID** of a property on a data-bound control that is to be bound to a data-source control.  
+ Specifies the DISPID of a property on a data-bound control that is to be bound to a data-source control.  
   
  *vtProp*  
- Specifies the type of the property to be bound — for example, **VT_BSTR**, **VT_VARIANT**, and so on.  
+ Specifies the type of the property to be bound — for example, VT_BSTR, VT_VARIANT, and so on.  
   
  *szFieldName*  
  Specifies the name of the column, in the cursor provided by the data-source control, to which the property will be bound.  
@@ -146,7 +146,7 @@ virtual void BindProperty(
   
 ### Parameters  
  *dwDispId*  
- Specifies the **DISPID** of a property on a data-bound control that is to be bound to a data-source control.  
+ Specifies the DISPID of a property on a data-bound control that is to be bound to a data-source control.  
   
  *pWndDSC*  
  A pointer to the `CWnd`-derived object that hosts the data-source control to which the property will be bound.  
@@ -217,35 +217,35 @@ virtual HRESULT CreateControl(
  Specifies the control's child window ID.  
   
  *pPersist*  
- A pointer to a `CFile` containing the persistent state for the control. The default value is **NULL**, indicating that the control initializes itself without restoring its state from any persistent storage. If not **NULL**, it should be a pointer to a `CFile`-derived object that contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.  
+ A pointer to a `CFile` containing the persistent state for the control. The default value is NULL, indicating that the control initializes itself without restoring its state from any persistent storage. If not NULL, it should be a pointer to a `CFile`-derived object that contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.  
   
  *bStorage*  
- Indicates whether the data in *pPersist* should be interpreted as `IStorage` or `IStream` data. If the data in *pPersist* is a storage, *bStorage* should be **TRUE**. If the data in *pPersist* is a stream, *bStorage* should be **FALSE**. The default value is **FALSE**.  
+ Indicates whether the data in *pPersist* should be interpreted as `IStorage` or `IStream` data. If the data in *pPersist* is a storage, *bStorage* should be TRUE. If the data in *pPersist* is a stream, *bStorage* should be FALSE. The default value is FALSE.  
   
  *bstrLicKey*  
- Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is **NULL**.  
+ Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is NULL.  
   
  *ppt*  
- A pointer to a **POINT** structure that contains the upper-left corner of the control. The size of the control is determined by the value of *psize*. The *ppt* and *psize* values are an optional method of specifying the size and position opf the control.  
+ A pointer to a `POINT` structure that contains the upper-left corner of the control. The size of the control is determined by the value of *psize*. The *ppt* and *psize* values are an optional method of specifying the size and position opf the control.  
   
  *psize*  
- A pointer to a **SIZE** structure that contains the size of the control. The upper-left corner is determined by the value of *ppt*. The *ppt* and *psize* values are an optional method of specifying the size and position opf the control.  
+ A pointer to a `SIZE` structure that contains the size of the control. The upper-left corner is determined by the value of *ppt*. The *ppt* and *psize* values are an optional method of specifying the size and position opf the control.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  Only a subset of the Windows *dwStyle* flags are supported by `CreateControl`:  
   
-- **WS_VISIBLE** Creates a window that is initially visible. Required if you want the control to be visible immediately, like ordinary windows.  
+- WS_VISIBLE Creates a window that is initially visible. Required if you want the control to be visible immediately, like ordinary windows.  
   
-- **WS_DISABLED** Creates a window that is initially disabled. A disabled window cannot receive input from the user. Can be set if the control has an Enabled property.  
+- WS_DISABLED Creates a window that is initially disabled. A disabled window cannot receive input from the user. Can be set if the control has an Enabled property.  
   
-- **WS_BORDER** Creates a window with a thin-line border. Can be set if control has a BorderStyle property.  
+- WS_BORDER Creates a window with a thin-line border. Can be set if control has a BorderStyle property.  
   
-- **WS_GROUP** Specifies the first control of a group of controls. The user can change the keyboard focus from one control in the group to the next by using the direction keys. All controls defined with the **WS_GROUP** style after the first control belong to the same group. The next control with the **WS_GROUP** style ends the group and starts the next group.  
+- WS_GROUP Specifies the first control of a group of controls. The user can change the keyboard focus from one control in the group to the next by using the direction keys. All controls defined with the WS_GROUP style after the first control belong to the same group. The next control with the WS_GROUP style ends the group and starts the next group.  
   
-- **WS_TABSTOP** Specifies a control that can receive the keyboard focus when the user presses the TAB key. Pressing the TAB key changes the keyboard focus to the next control of the **WS_TABSTOP** style.  
+- WS_TABSTOP Specifies a control that can receive the keyboard focus when the user presses the TAB key. Pressing the TAB key changes the keyboard focus to the next control of the WS_TABSTOP style.  
   
  Use the second overload to create default-sized controls.  
   
@@ -277,23 +277,23 @@ virtual HRESULT DoVerb(
   
 |Value|Meaning|Symbol|  
 |-----------|-------------|------------|  
-|0|Primary verb|`OLEIVERB_PRIMARY`|  
+|0|Primary verb|OLEIVERB_PRIMARY|  
 |-1|Secondary verb|(None)|  
-|1|Displays the object for editing.|`OLEIVERB_SHOW`|  
-|-2|Edits the item in a separate window.|`OLEIVERB_OPEN`|  
-|-3|Hides the object.|`OLEIVERB_HIDE`|  
-|-4|Activates a control in-place.|`OLEIVERB_UIACTIVATE`|  
-|-5|Activates a control in-place, without additional user interface elements.|`OLEIVERB_INPLACEACTIVATE`|  
-|-7|Display the control's properties.|`OLEIVERB_PROPERTIES`|  
+|1|Displays the object for editing.|OLEIVERB_SHOW|  
+|-2|Edits the item in a separate window.|OLEIVERB_OPEN|  
+|-3|Hides the object.|OLEIVERB_HIDE|  
+|-4|Activates a control in-place.|OLEIVERB_UIACTIVATE|  
+|-5|Activates a control in-place, without additional user interface elements.|OLEIVERB_INPLACEACTIVATE|  
+|-7|Display the control's properties.|OLEIVERB_PROPERTIES|  
   
  *lpMsg*  
  Pointer to the message that caused the item to be activated.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- This function directly calls through the control's `IOleObject` interface to execute the specified verb. If an exception is thrown as a result of this function call, an `HRESULT` error code is returned.  
+ This function directly calls through the control's `IOleObject` interface to execute the specified verb. If an exception is thrown as a result of this function call, an HRESULT error code is returned.  
   
  For more information, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
@@ -316,7 +316,7 @@ virtual BOOL EnableWindow(BOOL bEnable);
   
 ### Parameters  
  *bEnable*  
- Specifies whether to enable or disable the window: **TRUE** if window input is to be enabled, otherwise **FALSE**.  
+ Specifies whether to enable or disable the window: TRUE if window input is to be enabled, otherwise FALSE.  
   
 ### Return Value  
  Nonzero if the window was previously disabled, otherwise 0.  
@@ -333,7 +333,7 @@ void FreezeEvents(BOOL bFreeze);
  Specifies whether the control site wishes to stop accepting events. Nonzero if the control is not accepting events; otherwise zero.  
   
 ### Remarks  
- If *bFreeze* is **TRUE**, the control site requests the control to stop fring events. If *bFreeze* is **FALSE**, the control site requests the control to continue firing events.  
+ If *bFreeze* is TRUE, the control site requests the control to stop fring events. If *bFreeze* is FALSE, the control site requests the control to continue firing events.  
   
 > [!NOTE]
 >  The control is not required to stop firing events if requested by the control site. It can continue firing but all subsequent events will be ignored by the control site.  
@@ -358,9 +358,9 @@ DWORD GetDefBtnCode();
 ### Return Value  
  Can be one of the following values:  
   
-- **DLGC_DEFPUSHBUTTON** Control is the default button in the dialog.  
+- DLGC_DEFPUSHBUTTON Control is the default button in the dialog.  
   
-- **DLGC_UNDEFPUSHBUTTON** Control is not the default button in the dialog.  
+- DLGC_UNDEFPUSHBUTTON Control is not the default button in the dialog.  
   
 - **0** Control is not a button.  
   
@@ -485,7 +485,7 @@ virtual void AFX_CDECL InvokeHelper(
 ### Remarks  
  The *pbParamInfo* parameter specifies the types of the parameters passed to the method or property. The variable list of arguments is represented by ... in the syntax declaration.  
   
- This function converts the parameters to **VARIANTARG** values, then invokes the `IDispatch::Invoke` method on the control. If the call to `IDispatch::Invoke` fails, this function will throw an exception. If the status code returned by `IDispatch::Invoke` is `DISP_E_EXCEPTION`, this function throws a `COleDispatchException` object, otherwise it throws a `COleException`.  
+ This function converts the parameters to VARIANTARG values, then invokes the `IDispatch::Invoke` method on the control. If the call to `IDispatch::Invoke` fails, this function will throw an exception. If the status code returned by `IDispatch::Invoke` is `DISP_E_EXCEPTION`, this function throws a `COleDispatchException` object, otherwise it throws a `COleException`.  
   
 ##  <a name="invokehelperv"></a>  COleControlSite::InvokeHelperV  
  Invokes the method or property specified by *dwDispID*, in the context specified by *wFlags*.  
@@ -599,7 +599,7 @@ DWORD m_dwStyle;
 ```  
   
 ##  <a name="m_hwnd"></a>  COleControlSite::m_hWnd  
- Contains the `HWND` of the control, or **NULL** if the control is windowless.  
+ Contains the HWND of the control, or NULL if the control is windowless.  
   
 ```  
 HWND m_hWnd;  
@@ -641,7 +641,7 @@ LPOLEINPLACEOBJECT m_pInPlaceObject;
 ```  
   
 ##  <a name="m_pobject"></a>  COleControlSite::m_pObject  
- Contains the **IOleObjectInterface** interface of the control.  
+ Contains the `IOleObjectInterface` interface of the control.  
   
 ```  
 LPOLEOBJECT m_pObject;  
@@ -692,19 +692,19 @@ virtual BOOL ModifyStyle(
  Nonzero if the styles are changed, otherwise zero.  
   
 ### Remarks  
- The control's stock Enabled property will be modified to match the setting for **WS_DISABLED**. The control's stock Border Style property will be modified to match the requested setting for `WS_BORDER`. All other styles are applied directly to the control's window handle, if one is present.  
+ The control's stock Enabled property will be modified to match the setting for WS_DISABLED. The control's stock Border Style property will be modified to match the requested setting for WS_BORDER. All other styles are applied directly to the control's window handle, if one is present.  
   
  Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) function in the Windows SDK for information about the available window styles.  
   
  If *nFlags* is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:  
   
-- `SWP_NOSIZE` Retains the current size.  
+- SWP_NOSIZE Retains the current size.  
   
-- `SWP_NOMOVE` Retains the current position.  
+- SWP_NOMOVE Retains the current position.  
   
-- `SWP_NOZORDER` Retains the current Z order.  
+- SWP_NOZORDER Retains the current Z order.  
   
-- `SWP_NOACTIVATE` Does not activate the window.  
+- SWP_NOACTIVATE Does not activate the window.  
   
  To modify a window's extended styles, call [ModifyStyleEx](#modifystyleex).  
   
@@ -732,19 +732,19 @@ virtual BOOL ModifyStyleEx(
  Nonzero if the styles are changed, otherwise zero.  
   
 ### Remarks  
- The control's stock Appearance property will be modified to match the setting for **WS_EX_CLIENTEDGE**. All other extended window styles are applied directly to the control's window handle, if one is present.  
+ The control's stock Appearance property will be modified to match the setting for WS_EX_CLIENTEDGE. All other extended window styles are applied directly to the control's window handle, if one is present.  
   
  Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) function in the Windows SDK for information about the available window styles.  
   
  If *nFlags* is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:  
   
-- `SWP_NOSIZE` Retains the current size.  
+- SWP_NOSIZE Retains the current size.  
   
-- `SWP_NOMOVE` Retains the current position.  
+- SWP_NOMOVE Retains the current position.  
   
-- `SWP_NOZORDER` Retains the current Z order.  
+- SWP_NOZORDER Retains the current Z order.  
   
-- `SWP_NOACTIVATE` Does not activate the window.  
+- SWP_NOACTIVATE Does not activate the window.  
   
  To modify a window's extended styles, call [ModifyStyle](#modifystyle).  
   
@@ -828,7 +828,7 @@ void SetDefaultButton(BOOL bDefault);
 ### Remarks  
   
 > [!NOTE]
->  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set.  
+>  The control must have the OLEMISC_ACTSLIKEBUTTON status bit set.  
   
 ##  <a name="setdlgctrlid"></a>  COleControlSite::SetDlgCtrlID  
  Changes the value of the control's dialog item identifier.  
@@ -970,25 +970,25 @@ virtual BOOL ShowWindow(int nCmdShow);
  *nCmdShow*  
  Specifies how the control site is to be shown. It must be one of the following values:  
   
-- **SW_HIDE** Hides this window and passes activation to another window.  
+- SW_HIDE Hides this window and passes activation to another window.  
   
-- **SW_MINIMIZE** Minimizes the window and activates the top-level window in the system's list.  
+- SW_MINIMIZE Minimizes the window and activates the top-level window in the system's list.  
   
-- **SW_RESTORE** Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.  
+- SW_RESTORE Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.  
   
-- **SW_SHOW** Activates the window and displays it in its current size and position.  
+- SW_SHOW Activates the window and displays it in its current size and position.  
   
-- **SW_SHOWMAXIMIZED** Activates the window and displays it as a maximized window.  
+- SW_SHOWMAXIMIZED Activates the window and displays it as a maximized window.  
   
-- **SW_SHOWMINIMIZED** Activates the window and displays it as an icon.  
+- SW_SHOWMINIMIZED Activates the window and displays it as an icon.  
   
-- **SW_SHOWMINNOACTIVE** Displays the window as an icon. The window that is currently active remains active.  
+- SW_SHOWMINNOACTIVE Displays the window as an icon. The window that is currently active remains active.  
   
-- **SW_SHOWNA** Displays the window in its current state. The window that is currently active remains active.  
+- SW_SHOWNA Displays the window in its current state. The window that is currently active remains active.  
   
-- **SW_SHOWNOACTIVATE** Displays the window in its most recent size and position. The window that is currently active remains active.  
+- SW_SHOWNOACTIVATE Displays the window in its most recent size and position. The window that is currently active remains active.  
   
-- **SW_SHOWNORMAL** Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.  
+- SW_SHOWNORMAL Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.  
   
 ### Return Value  
  Nonzero if the window was previously visible; 0 if the window was previously hidden.  

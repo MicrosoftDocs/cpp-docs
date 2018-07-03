@@ -143,11 +143,11 @@ virtual void CheckDlgButton(
  *nCheck*  
  Specifies the state of the button. Can be one of the following:  
   
-- **BST_CHECKED** Sets the button state to checked.  
+- BST_CHECKED Sets the button state to checked.  
   
-- **BST_INDETERMINATE** Sets the button state to grayed, indicating an indeterminate state. Use this value only if the button has the **BS_3STATE** or **BS_AUTO3STATE** style.  
+- BST_INDETERMINATE Sets the button state to grayed, indicating an indeterminate state. Use this value only if the button has the BS_3STATE or BS_AUTO3STATE style.  
   
-- **BST_UNCHECKED** Sets the button state to cleared.  
+- BST_UNCHECKED Sets the button state to cleared.  
   
 ##  <a name="checkradiobutton"></a>  COleControlContainer::CheckRadioButton  
  Selects a specified radio button in a group and clears the remaining buttons in the group.  
@@ -222,7 +222,7 @@ BOOL CreateControl(
  The unique class ID of the control.  
   
  *lpszWindowName*  
- A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If **NULL**, the control's Caption or Text property is not changed.  
+ A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If NULL, the control's Caption or Text property is not changed.  
   
  *dwStyle*  
  Windows styles. The available styles are listed under the **Remarks** section.  
@@ -234,22 +234,22 @@ BOOL CreateControl(
  Specifies the control's child window ID.  
   
  *pPersist*  
- A pointer to a `CFile` containing the persistent state for the control. The default value is **NULL**, indicating that the control initializes itself without restoring its state from any persistent storage. If not **NULL**, it should be a pointer to a `CFile`-derived object that contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.  
+ A pointer to a `CFile` containing the persistent state for the control. The default value is NULL, indicating that the control initializes itself without restoring its state from any persistent storage. If not NULL, it should be a pointer to a `CFile`-derived object that contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.  
   
  *bStorage*  
- Indicates whether the data in *pPersist* should be interpreted as `IStorage` or `IStream` data. If the data in *pPersist* is a storage, *bStorage* should be **TRUE**. If the data in *pPersist* is a stream, *bStorage* should be **FALSE**. The default value is **FALSE**.  
+ Indicates whether the data in *pPersist* should be interpreted as `IStorage` or `IStream` data. If the data in *pPersist* is a storage, *bStorage* should be TRUE. If the data in *pPersist* is a stream, *bStorage* should be FALSE. The default value is FALSE.  
   
  *bstrLicKey*  
- Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is **NULL**.  
+ Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is NULL.  
   
  *ppNewSite*  
- A pointer to the existing control site that will host the control being created. The default value is **NULL**, indicating that a new control site will be automatically created and attached to the new control.  
+ A pointer to the existing control site that will host the control being created. The default value is NULL, indicating that a new control site will be automatically created and attached to the new control.  
   
  *ppt*  
- A pointer to a **POINT** structure that contains the upper-left corner of the control. The size of the control is determined by the value of *psize*. The *ppt* and *psize* values are an optional method of specifying the size and position of the control.  
+ A pointer to a `POINT` structure that contains the upper-left corner of the control. The size of the control is determined by the value of *psize*. The *ppt* and *psize* values are an optional method of specifying the size and position of the control.  
   
  *psize*  
- A pointer to a **SIZE** structure that contains the size of the control. The upper-left corner is determined by the value of *ppt*. The *ppt* and *psize* values are an optional method of specifying the size and position of the control.  
+ A pointer to a `SIZE` structure that contains the size of the control. The upper-left corner is determined by the value of *ppt*. The *ppt* and *psize* values are an optional method of specifying the size and position of the control.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -257,15 +257,15 @@ BOOL CreateControl(
 ### Remarks  
  Only a subset of the Windows *dwStyle* flags are supported by `CreateControl`:  
   
-- **WS_VISIBLE** Creates a window that is initially visible. Required if you want the control to be visible immediately, like ordinary windows.  
+- WS_VISIBLE Creates a window that is initially visible. Required if you want the control to be visible immediately, like ordinary windows.  
   
-- **WS_DISABLED** Creates a window that is initially disabled. A disabled window cannot receive input from the user. Can be set if the control has an Enabled property.  
+- WS_DISABLED Creates a window that is initially disabled. A disabled window cannot receive input from the user. Can be set if the control has an Enabled property.  
   
-- **WS_BORDER** Creates a window with a thin-line border. Can be set if control has a BorderStyle property.  
+- WS_BORDER Creates a window with a thin-line border. Can be set if control has a BorderStyle property.  
   
-- **WS_GROUP** Specifies the first control of a group of controls. The user can change the keyboard focus from one control in the group to the next by using the direction keys. All controls defined with the **WS_GROUP** style after the first control belong to the same group. The next control with the **WS_GROUP** style ends the group and starts the next group.  
+- WS_GROUP Specifies the first control of a group of controls. The user can change the keyboard focus from one control in the group to the next by using the direction keys. All controls defined with the WS_GROUP style after the first control belong to the same group. The next control with the WS_GROUP style ends the group and starts the next group.  
   
-- **WS_TABSTOP** Specifies a control that can receive the keyboard focus when the user presses the TAB key. Pressing the TAB key changes the keyboard focus to the next control of the **WS_TABSTOP** style.  
+- WS_TABSTOP Specifies a control that can receive the keyboard focus when the user presses the TAB key. Pressing the TAB key changes the keyboard focus to the next control of the WS_TABSTOP style.  
   
  Use the second overload to create default-sized controls.  
   
@@ -369,22 +369,22 @@ virtual UINT GetDlgItemInt(
  The identifier of the control.  
   
  *lpTrans*  
- Pointer to a Boolean variable that receives a function success/failure value ( **TRUE** indicates success, **FALSE** indicates failure).  
+ Pointer to a Boolean variable that receives a function success/failure value (TRUE indicates success, FALSE indicates failure).  
   
  *bSigned*  
- Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is **TRUE**, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Return Value  
- If successful, the variable pointed to by *lpTrans* is set to **TRUE**, and the return value is the translated value of the control text.  
+ If successful, the variable pointed to by *lpTrans* is set to TRUE, and the return value is the translated value of the control text.  
   
- If the function fails, the variable pointed to by *lpTrans* is set to **FALSE**, and the return value is zero. Note that, since zero is a possible translated value, a return value of zero does not by itself indicate failure.  
+ If the function fails, the variable pointed to by *lpTrans* is set to FALSE, and the return value is zero. Note that, since zero is a possible translated value, a return value of zero does not by itself indicate failure.  
   
- If *lpTrans* is **NULL**, the function returns no information about success or failure.  
+ If *lpTrans* is NULL, the function returns no information about success or failure.  
   
 ### Remarks  
  The function translates the retrieved text by stripping any extra spaces at the beginning of the text and then converting the decimal digits. The function stops translating when it reaches the end of the text or encounters a nonnumeric character.  
   
- This function returns zero if the translated value is greater than **INT_MAX** (for signed numbers) or **UINT_MAX** (for unsigned numbers).  
+ This function returns zero if the translated value is greater than INT_MAX (for signed numbers) or UINT_MAX (for unsigned numbers).  
   
 ##  <a name="getdlgitemtext"></a>  COleControlContainer::GetDlgItemText  
  Retrieves the text of the given control.  
@@ -463,13 +463,13 @@ virtual UINT IsDlgButtonChecked(int nIDButton) const;
  The identifier of the button control.  
   
 ### Return Value  
- The return value, from a button created with the **BS_AUTOCHECKBOX**, **BS_AUTORADIOBUTTON**, **BS_AUTO3STATE**, **BS_CHECKBOX**, **BS_RADIOBUTTON**, or **BS_3STATE** style. Can be one of the following:  
+ The return value, from a button created with the BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON, or BS_3STATE style. Can be one of the following:  
   
-- **BST_CHECKED** Button is checked.  
+- BST_CHECKED Button is checked.  
   
-- **BST_INDETERMINATE** Button is grayed, indicating an indeterminate state (applies only if the button has the **BS_3STATE** or **BS_AUTO3STATE** style).  
+- BST_INDETERMINATE Button is grayed, indicating an indeterminate state (applies only if the button has the BS_3STATE or BS_AUTO3STATE style).  
   
-- **BST_UNCHECKED** Button is cleared.  
+- BST_UNCHECKED Button is cleared.  
   
 ### Remarks  
  If the button is a three-state control, the member function determines whether it is dimmed, checked, or neither.  
@@ -647,7 +647,7 @@ virtual void SetDlgItemInt(
  The integer value to be displayed.  
   
  *bSigned*  
- Specifies whether the *nValue* parameter is signed or unsigned. If this parameter is **TRUE**, *nValue* is signed. If this parameter is **TRUE** and *nValue* is less than zero, a minus sign is placed before the first digit in the string. If this parameter is **FALSE**, *nValue* is unsigned.  
+ Specifies whether the *nValue* parameter is signed or unsigned. If this parameter is TRUE, *nValue* is signed. If this parameter is TRUE and *nValue* is less than zero, a minus sign is placed before the first digit in the string. If this parameter is FALSE, *nValue* is unsigned.  
   
 ##  <a name="setdlgitemtext"></a>  COleControlContainer::SetDlgItemText  
  Sets the text of the specified control, using the text contained in *lpszString*.  

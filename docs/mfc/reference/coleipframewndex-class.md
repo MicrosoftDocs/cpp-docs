@@ -171,7 +171,7 @@ BOOL DockPaneLeftOf(
  A pointer to the pane that serves as origin.  
   
 ### Return Value  
- Returns `TRUE` if the operation is successful. Otherwise returns `FALSE`.  
+ Returns TRUE if the operation is successful. Otherwise returns FALSE.  
   
 ### Remarks  
  Call this method to dock several pane objects in a predefined order. This method docks the pane specified by *pBar* to the left of the pane specified by *pLeftOf*.  
@@ -235,7 +235,7 @@ CMFCPopupMenu* GetActivePopup() const;
 ```  
   
 ### Return Value  
- A pointer to the active pop-up menu; otherwise `NULL`.  
+ A pointer to the active pop-up menu; otherwise NULL.  
   
 ### Remarks  
  Use this method to obtain a pointer to the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object that is currently displayed.  
@@ -402,7 +402,7 @@ BOOL InsertPane(
 ### Remarks  
   
 ##  <a name="ismenubaravailable"></a>  COleIPFrameWndEx::IsMenuBarAvailable  
- Determines whether the pointer to the menu bar object is not `NULL`  
+ Determines whether the pointer to the menu bar object is not NULL  
   
 ```  
 BOOL IsMenuBarAvailable() const;  
@@ -412,7 +412,7 @@ BOOL IsMenuBarAvailable() const;
  Returns a non-zero value if the frame window has a menu bar; otherwise returns 0.  
   
 ### Remarks  
- Call this method to determine whether the frame window maintains a non- `NULL` pointer to its menu bar object.  
+ Call this method to determine whether the frame window maintains a non- NULL pointer to its menu bar object.  
   
 ##  <a name="ispointneardocksite"></a>  COleIPFrameWndEx::IsPointNearDockSite  
 
@@ -567,7 +567,7 @@ virtual void OnDrawMenuLogo(
  Override this method to display a logo on the pop-up menu associated with the menu bar owned by the `COleIPFrameWndEx`-derived object. The default implementation does nothing.  
   
 ##  <a name="onmenubuttontoolhittest"></a>  COleIPFrameWndEx::OnMenuButtonToolHitTest  
- Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.  
+ Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a WM_NCHITTEST message.  
   
 ```  
 virtual BOOL OnMenuButtonToolHitTest(
@@ -660,7 +660,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenuPopup);
  Pointer to the pop-up menu to be displayed.  
   
 ### Return Value  
- The default implementation does nothing and returns a non-zero value. Your implementation should return `FALSE` if the pop-up menu cannot be displayed.  
+ The default implementation does nothing and returns a non-zero value. Your implementation should return FALSE if the pop-up menu cannot be displayed.  
   
 ### Remarks  
  Override this method to customize the display of a pop-up menu. For example, you could change the menu buttons to color menu buttons or initialize tear-off bars.  
@@ -682,7 +682,7 @@ virtual BOOL OnTearOffMenu(
  A pointer to the pane that hosts the menu.  
   
 ### Return Value  
- `TRUE` if you want the framework to activate the pop-up menu; otherwise `FALSE`. The default value is `TRUE`.  
+ TRUE if you want the framework to activate the pop-up menu; otherwise FALSE. The default value is TRUE.  
   
 ### Remarks  
  Override this function if you want to customize the setup of the tear-off bar.  

@@ -108,10 +108,10 @@ BOOL ApplyPrintDevice(const PRINTDLG* ppd);
   
 ### Parameters  
  *ptd*  
- Pointer to a **DVTARGETDEVICE** data structure, which contains information about the new print-target device. Can be **NULL**.  
+ Pointer to a `DVTARGETDEVICE` data structure, which contains information about the new print-target device. Can be NULL.  
   
  *ppd*  
- Pointer to a **PRINTDLG** data structure, which contains information about the new print-target device. Can be **NULL**.  
+ Pointer to a `PRINTDLG` data structure, which contains information about the new print-target device. Can be NULL.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  
@@ -119,7 +119,7 @@ BOOL ApplyPrintDevice(const PRINTDLG* ppd);
 ### Remarks  
  This function updates the print-target device for all items but does not refresh the presentation cache for those items. To update the presentation cache for an item, call [COleClientItem::UpdateLink](../../mfc/reference/coleclientitem-class.md#updatelink).  
   
- The arguments to this function contain information that OLE uses to identify the target device. The [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure contains information that Windows uses to initialize the common Print dialog box. After the user closes the dialog box, Windows returns information about the user's selections in this structure. The `m_pd` member of a [CPrintDialog](../../mfc/reference/cprintdialog-class.md) object is a **PRINTDLG** structure.  
+ The arguments to this function contain information that OLE uses to identify the target device. The [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure contains information that Windows uses to initialize the common Print dialog box. After the user closes the dialog box, Windows returns information about the user's selections in this structure. The `m_pd` member of a [CPrintDialog](../../mfc/reference/cprintdialog-class.md) object is a `PRINTDLG` structure.  
   
  For more information, see the [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure in the Windows SDK.  
   
@@ -162,7 +162,7 @@ virtual COleClientItem* GetInPlaceActiveItem(CWnd* pWnd);
  Pointer to the window that displays the container document.  
   
 ### Return Value  
- A pointer to the single, in-place active OLE item; **NULL** if there is no OLE item currently in the "in-place active" state.  
+ A pointer to the single, in-place active OLE item; NULL if there is no OLE item currently in the "in-place active" state.  
   
 ##  <a name="getnextclientitem"></a>  COleDocument::GetNextClientItem  
  Call this function repeatedly to access each of the client items in your document.  
@@ -173,10 +173,10 @@ COleClientItem* GetNextClientItem(POSITION& pos) const;
   
 ### Parameters  
  *pos*  
- A reference to a **POSITION** value set by a previous call to `GetNextClientItem`; the initial value is returned by the `GetStartPosition` member function.  
+ A reference to a POSITION value set by a previous call to `GetNextClientItem`; the initial value is returned by the `GetStartPosition` member function.  
   
 ### Return Value  
- A pointer to the next client item in the document, or **NULL** if there are no more client items.  
+ A pointer to the next client item in the document, or NULL if there are no more client items.  
   
 ### Remarks  
  After each call, the value of *pos* is set for the next item in the document, which might or might not be a client item.  
@@ -193,13 +193,13 @@ virtual CDocItem* GetNextItem(POSITION& pos) const;
   
 ### Parameters  
  *pos*  
- A reference to a **POSITION** value set by a previous call to `GetNextItem`; the initial value is returned by the `GetStartPosition` member function.  
+ A reference to a POSITION value set by a previous call to `GetNextItem`; the initial value is returned by the `GetStartPosition` member function.  
   
 ### Return Value  
  A pointer to the document item at the specified position.  
   
 ### Remarks  
- After each call, the value of *pos* is set to the **POSITION** value of the next item in the document. If the retrieved element is the last element in the document, the new value of *pos* is **NULL**.  
+ After each call, the value of *pos* is set to the POSITION value of the next item in the document. If the retrieved element is the last element in the document, the new value of *pos* is NULL.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#2](../../mfc/codesnippet/cpp/coledocument-class_2.cpp)]  
@@ -213,10 +213,10 @@ COleServerItem* GetNextServerItem(POSITION& pos) const;
   
 ### Parameters  
  *pos*  
- A reference to a **POSITION** value set by a previous call to `GetNextServerItem`; the initial value is returned by the `GetStartPosition` member function.  
+ A reference to a POSITION value set by a previous call to `GetNextServerItem`; the initial value is returned by the `GetStartPosition` member function.  
   
 ### Return Value  
- A pointer to the next server item in the document, or **NULL** if there are no more server items.  
+ A pointer to the next server item in the document, or NULL if there are no more server items.  
   
 ### Remarks  
  After each call, the value of *pos* is set for the next item in the document, which might or might not be a server item.  
@@ -236,10 +236,10 @@ virtual COleClientItem* GetPrimarySelectedItem(CView* pView);
  Pointer to the active view object displaying the document.  
   
 ### Return Value  
- A pointer to the single, selected OLE item; **NULL** if no OLE items are selected or if more than one is selected.  
+ A pointer to the single, selected OLE item; NULL if no OLE items are selected or if more than one is selected.  
   
 ### Remarks  
- The default implementation searches the list of contained OLE items for a single selected item and returns a pointer to it. If there is no item selected, or if there is more than one item selected, the function returns **NULL**. You must override the `CView::IsSelected` member function in your view class for this function to work. Override this function if you have your own method of storing contained OLE items.  
+ The default implementation searches the list of contained OLE items for a single selected item and returns a pointer to it. If there is no item selected, or if there is more than one item selected, the function returns NULL. You must override the `CView::IsSelected` member function in your view class for this function to work. Override this function if you have your own method of storing contained OLE items.  
   
 ##  <a name="getstartposition"></a>  COleDocument::GetStartPosition  
  Call this function to get the position of the first item in the document.  
@@ -249,7 +249,7 @@ virtual POSITION GetStartPosition() const;
 ```  
   
 ### Return Value  
- A **POSITION** value that can be used to begin iterating through the document's items; **NULL** if the document has no items.  
+ A POSITION value that can be used to begin iterating through the document's items; NULL if the document has no items.  
   
 ### Remarks  
  Pass the value returned to `GetNextItem`, `GetNextClientItem`, or `GetNextServerItem`.  

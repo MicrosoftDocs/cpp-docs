@@ -255,7 +255,7 @@ void PASCAL operator delete(
   
  before any of your implementations in a .CPP file, then the third version of **delete** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.  
   
- Even if you do not use `DEBUG_NEW` in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
+ Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
   
  If you override operators **new** and **delete**, you forfeit this diagnostic capability.  
   
@@ -287,10 +287,10 @@ void* PASCAL operator new(
   
  before any of your implementations in a .CPP file, then the second version of **new** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.  
   
- Even if you do not use `DEBUG_NEW` in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
+ Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
   
 > [!NOTE]
->  If you override this operator, you must also override **delete**. Do not use the standard library **_new_handler** function.  
+>  If you override this operator, you must also override **delete**. Do not use the standard library `_new_handler` function.  
   
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in the `CObject` examples.  
