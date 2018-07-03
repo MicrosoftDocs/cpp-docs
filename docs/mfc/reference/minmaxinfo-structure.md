@@ -34,7 +34,7 @@ typedef struct tagMINMAXINFO {
  *ptMaxSize*  
  Specifies the maximized width (point.x) and the maximized height (point.y) of the window.  
   
- `ptMaxPosition`  
+ *ptMaxPosition*  
  Specifies the position of the left side of the maximized window (point.x) and the position of the top of the maximized window (point.y).  
   
  *ptMinTrackSize*  

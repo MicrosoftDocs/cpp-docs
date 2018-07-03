@@ -41,7 +41,7 @@ class CGdiObject : public CObject
 |[CGdiObject::FromHandle](#fromhandle)|Returns a pointer to a `CGdiObject` object given a handle to a Windows GDI object.|  
 |[CGdiObject::GetObject](#getobject)|Fills a buffer with data that describes the Windows GDI object attached to the `CGdiObject` object.|  
 |[CGdiObject::GetObjectType](#getobjecttype)|Retrieves the type of the GDI object.|  
-|[CGdiObject::GetSafeHandle](#getsafehandle)|Returns `m_hObject` unless `this` is `NULL`, in which case `NULL` is returned.|  
+|[CGdiObject::GetSafeHandle](#getsafehandle)|Returns `m_hObject` unless **this** is NULL, in which case NULL is returned.|  
 |[CGdiObject::UnrealizeObject](#unrealizeobject)|Resets the origin of a brush or resets a logical palette.|  
   
 ### Public Operators  
@@ -50,13 +50,13 @@ class CGdiObject : public CObject
 |----------|-----------------|  
 |[CGdiObject::operator !=](#operator_neq)|Determines if two GDI objects are logically not equal.|  
 |[CGdiObject::operator ==](#operator_eq_eq)|Determines if two GDI objects are logically equal.|  
-|[CGdiObject::operator HGDIOBJ](#operator_hgdiobj)|Retrieves a `HANDLE` to the attached Windows GDI object.|  
+|[CGdiObject::operator HGDIOBJ](#operator_hgdiobj)|Retrieves a HANDLE to the attached Windows GDI object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGdiObject::m_hObject](#m_hobject)|A `HANDLE` containing the `HBITMAP`, `HPALETTE`, `HRGN`, `HBRUSH`, `HPEN`, or `HFONT` attached to this object.|  
+|[CGdiObject::m_hObject](#m_hobject)|A HANDLE containing the HBITMAP, HPALETTE, HRGN, HBRUSH, HPEN, or HFONT attached to this object.|  
   
 ## Remarks  
  You never create a `CGdiObject` directly. Rather, you create an object from one of its derived classes, such as `CPen` or `CBrush`.  
@@ -80,7 +80,7 @@ BOOL Attach(HGDIOBJ hObject);
   
 ### Parameters  
  *hObject*  
- A `HANDLE` to a Windows GDI object (for example, `HPEN` or `HBRUSH`).  
+ A HANDLE to a Windows GDI object (for example, HPEN or HBRUSH).  
   
 ### Return Value  
  Nonzero if attachment is successful; otherwise 0.  
@@ -148,7 +148,7 @@ HGDIOBJ Detach();
 ```  
   
 ### Return Value  
- A `HANDLE` to the Windows GDI object detached; otherwise **NULL** if no GDI object is attached.  
+ A `HANDLE` to the Windows GDI object detached; otherwise NULL if no GDI object is attached.  
   
 ##  <a name="fromhandle"></a>  CGdiObject::FromHandle  
  Returns a pointer to a `CGdiObject` object given a handle to a Windows GDI object.  
@@ -159,7 +159,7 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
   
 ### Parameters  
  *hObject*  
- A `HANDLE` to a Windows GDI object.  
+ A HANDLE to a Windows GDI object.  
   
 ### Return Value  
  A pointer to a `CGdiObject` that may be temporary or permanent.  
@@ -197,12 +197,12 @@ int GetObject(
 |`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|  
 |`CFont`|[LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)|  
 |`CBitmap`|[BITMAP](../../mfc/reference/bitmap-structure.md)|  
-|`CPalette`|**WORD**|  
+|`CPalette`|WORD|  
 |`CRgn`|Not supported|  
   
  If the object is a `CBitmap` object, `GetObject` returns only the width, height, and color format information of the bitmap. The actual bits can be retrieved by using [CBitmap::GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits).  
   
- If the object is a `CPalette` object, `GetObject` retrieves a **WORD** that specifies the number of entries in the palette. The function does not retrieve the [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that defines the palette. An application can get information on palette entries by calling [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
+ If the object is a `CPalette` object, `GetObject` retrieves a WORD that specifies the number of entries in the palette. The function does not retrieve the [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that defines the palette. An application can get information on palette entries by calling [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
   
 ##  <a name="getobjecttype"></a>  CGdiObject::GetObjectType  
  Retrieves the type of the GDI object.  
@@ -214,50 +214,50 @@ UINT GetObjectType() const;
 ### Return Value  
  The type of the object, if successful; otherwise 0. The value can be one of the following:  
   
-- **OBJ_BITMAP** Bitmap  
+- OBJ_BITMAP Bitmap  
   
-- **OBJ_BRUSH** Brush  
+- OBJ_BRUSH Brush  
   
-- **OBJ_FONT** Font  
+- OBJ_FONT Font  
   
-- **OBJ_PAL** Palette  
+- OBJ_PAL Palette  
   
-- **OBJ_PEN** Pen  
+- OBJ_PEN Pen  
   
-- **OBJ_EXTPEN** Extended pen  
+- OBJ_EXTPEN Extended pen  
   
-- **OBJ_REGION** Region  
+- OBJ_REGION Region  
   
-- **OBJ_DC** Device context  
+- OBJ_DC Device context  
   
-- **OBJ_MEMDC** Memory device context  
+- OBJ_MEMDC Memory device context  
   
-- **OBJ_METAFILE** Metafile  
+- OBJ_METAFILE Metafile  
   
-- **OBJ_METADC** Metafile device context  
+- OBJ_METADC Metafile device context  
   
-- **OBJ_ENHMETAFILE** Enhanced metafile  
+- OBJ_ENHMETAFILE Enhanced metafile  
   
-- **OBJ_ENHMETADC** Enhanced-metafile device context  
+- OBJ_ENHMETADC Enhanced-metafile device context  
   
 ##  <a name="getsafehandle"></a>  CGdiObject::GetSafeHandle  
- Returns `m_hObject` unless **this** is **NULL**, in which case **NULL** is returned.  
+ Returns `m_hObject` unless **this** is NULL, in which case NULL is returned.  
   
 ```  
 HGDIOBJ GetSafeHandle() const;  
 ```  
   
 ### Return Value  
- A `HANDLE` to the attached Windows GDI object; otherwise **NULL** if no object is attached.  
+ A HANDLE to the attached Windows GDI object; otherwise NULL if no object is attached.  
   
 ### Remarks  
- This is part of the general handle interface paradigm and is useful when **NULL** is a valid or special value for a handle.  
+ This is part of the general handle interface paradigm and is useful when NULL is a valid or special value for a handle.  
   
 ### Example  
   See the example for [CWnd::IsWindowEnabled](../../mfc/reference/cwnd-class.md#iswindowenabled).  
   
 ##  <a name="m_hobject"></a>  CGdiObject::m_hObject  
- A `HANDLE` containing the `HBITMAP`, **HRGN**, `HBRUSH`, `HPEN`, `HPALETTE`, or **HFONT** attached to this object.  
+ A HANDLE containing the HBITMAP, HRGN, HBRUSH, HPEN, HPALETTE, or HFONT attached to this object.  
   
 ```  
 HGDIOBJ m_hObject;  
@@ -292,7 +292,7 @@ BOOL operator==(const CGdiObject& obj) const;
  Determines if a GDI object on the left side is equal to a GDI object on the right side.  
   
 ##  <a name="operator_hgdiobj"></a>  CGdiObject::operator HGDIOBJ  
- Retrieves a `HANDLE` to the attached Windows GDI object; otherwise **NULL** if no object is attached.  
+ Retrieves a HANDLE to the attached Windows GDI object; otherwise NULL if no object is attached.  
   
 ```  
 operator HGDIOBJ() const;  

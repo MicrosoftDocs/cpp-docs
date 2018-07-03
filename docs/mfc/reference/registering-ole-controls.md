@@ -47,22 +47,22 @@ BOOL AFXAPI AfxOleRegisterControlClass(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  The instance handle of the module associated with the control class.  
   
- `clsid`  
+ *clsid*  
  The unique class ID of the control.  
   
- `pszProgID`  
+ *pszProgID*  
  The unique program ID of the control.  
   
- `idTypeName`  
+ *idTypeName*  
  The resource ID of the string that contains a user-readable type name for the control.  
   
  *idBitmap*  
  The resource ID of the bitmap used to represent the OLE control in a toolbar or palette.  
   
- `nRegFlags`  
+ *nRegFlags*  
  Contains one or more of the following flags:  
   
 - `afxRegInsertable` Allows the control to appear in the Insert Object dialog box for OLE objects.  
@@ -74,10 +74,10 @@ BOOL AFXAPI AfxOleRegisterControlClass(
      You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.  
   
 > [!NOTE]
->  In MFC versions before MFC 4.2, the `int` `nRegFlags` parameter was a **BOOL** parameter, *bInsertable*, that allowed or disallowed the control to be inserted from the Insert Object dialog box.  
+>  In MFC versions before MFC 4.2, the **int** *nRegFlags* parameter was a BOOL parameter, *bInsertable*, that allowed or disallowed the control to be inserted from the Insert Object dialog box.  
   
  *dwMiscStatus*  
- Contains one or more of the following status flags (for a description of the flags, see **OLEMISC** enumeration in the Windows SDK):  
+ Contains one or more of the following status flags (for a description of the flags, see OLEMISC enumeration in the Windows SDK):  
   
 -   OLEMISC_RECOMPOSEONRESIZE  
   
@@ -120,10 +120,10 @@ BOOL AFXAPI AfxOleRegisterControlClass(
  *tlid*  
  The unique ID of the control class.  
   
- `wVerMajor`  
+ *wVerMajor*  
  The major version number of the control class.  
   
- `wVerMinor`  
+ *wVerMinor*  
  The minor version number of the control class.  
   
 ### Return Value  
@@ -156,22 +156,22 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  The instance handle of the module associated with the property page class.  
   
- `clsid`  
+ *clsid*  
  The unique class ID of the property page.  
   
- `idTypeName`  
+ *idTypeName*  
  The resource ID of the string that contains a user-readable name for the property page.  
   
- `nRegFlags`  
+ *nRegFlags*  
  May contain the flag:  
   
 - `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel = Apartment.  
   
 > [!NOTE]
->  In MFC versions prior to MFC 4.2, the `int` `nRegFlags` parameter was not available. Note also that the `afxRegInsertable` flag is not a valid option for property pages and will cause an ASSERT in MFC if it is set  
+>  In MFC versions prior to MFC 4.2, the **int** *nRegFlags* parameter was not available. Note also that the `afxRegInsertable` flag is not a valid option for property pages and will cause an ASSERT in MFC if it is set  
   
 ### Return Value  
  Nonzero if the control class was registered; otherwise 0.  
@@ -194,7 +194,7 @@ BOOL AfxOleRegisterTypeLib(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  The instance handle of the application associated with the type library.  
   
  *tlid*  
@@ -204,7 +204,7 @@ BOOL AfxOleRegisterTypeLib(
  Points to the optional filename of a localized type library (.TLB) file for the control.  
   
  *pszHelpDir*  
- The name of the directory where the help file for the type library can be found. If **NULL**, the help file is assumed to be in the same directory as the type library itself.  
+ The name of the directory where the help file for the type library can be found. If NULL, the help file is assumed to be in the same directory as the type library itself.  
   
 ### Return Value  
  Nonzero if the type library was registered; otherwise 0.  
@@ -231,7 +231,7 @@ BOOL AFXAPI AfxOleUnregisterClass(REFCLSID clsID, LPCSTR pszProgID);
  *clsID*  
  The unique class ID of the control or property page.  
   
- `pszProgID`  
+ *pszProgID*  
  The unique program ID of the control or property page.  
   
 ### Return Value  
@@ -248,7 +248,7 @@ BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
 ```  
   
 ### Parameters  
- `tlID`  
+ *tlID*  
  The unique ID of the type library.  
   
 ### Return Value  

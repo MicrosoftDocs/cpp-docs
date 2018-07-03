@@ -167,7 +167,7 @@ CMFCRibbonPanel* AddPanel(
  Pointer to runtime class information for a custom ribbon panel.  
   
 ### Return Value  
- Pointer to the new ribbon panel if the method was successful; otherwise `NULL` if the panel was not created.  
+ Pointer to the new ribbon panel if the method was successful; otherwise NULL if the panel was not created.  
   
 ### Remarks  
  If you want to create a custom ribbon panel, you must specify its runtime class information in *pRTI*. The custom ribbon panel class must be derived from the `CMFCRibbonPanel` class.  
@@ -240,10 +240,10 @@ CMFCRibbonBaseElement* FindByData(
  The data associated with a ribbon element.  
   
  [in] *bVisibleOnly*  
- `TRUE` to include quick access ribbon elements in the search; `FALSE` to exclude quick access ribbon elements in the search.  
+ TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -261,10 +261,10 @@ CMFCRibbonBaseElement* FindByID(
  Command ID associated with a ribbon element.  
   
  [in] *bVisibleOnly*  
- `TRUE` to include quick access ribbon elements in the search; `FALSE` to exclude quick access ribbon elements in the search.  
+ TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -280,7 +280,7 @@ CMFCRibbonPanel* FindPanelWithElem(const CMFCRibbonBaseElement* pElement);
  Pointer to a ribbon element.  
   
 ### Return Value  
- Pointer to a ribbon panel if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon panel if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -315,7 +315,7 @@ CMFCRibbonBaseElement* GetDroppedDown();
 ```  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -361,7 +361,7 @@ CMFCRibbonBaseElement* GetFirstVisibleElement() const;
 ```  
   
 ### Return Value  
- Pointer to the first visible element; may be `NULL` if category does not have any visible elements.  
+ Pointer to the first visible element; may be NULL if category does not have any visible elements.  
   
 ### Remarks  
   
@@ -373,7 +373,7 @@ CMFCRibbonBaseElement* GetFocused();
 ```  
   
 ### Return Value  
- A pointer to a focused element or `NULL`.  
+ A pointer to a focused element or NULL.  
   
 ### Remarks  
   
@@ -385,7 +385,7 @@ CMFCRibbonBaseElement* GetHighlighted();
 ```  
   
 ### Return Value  
- A pointer to a highlighted element or `NULL` if no elements are highlighted.  
+ A pointer to a highlighted element or NULL if no elements are highlighted.  
   
 ### Remarks  
   
@@ -398,7 +398,7 @@ int GetImageCount(BOOL bIsLargeImage) const;
   
 ### Parameters  
  [in] *bIsLargeImage*  
- `TRUE` for the number of images in the large image list; `FALSE` for the number of images in the small image list.  
+ TRUE for the number of images in the large image list; FALSE for the number of images in the small image list.  
   
 ### Return Value  
  The number of images in the specified image list.  
@@ -414,7 +414,7 @@ CSize GetImageSize(BOOL bIsLargeImage) const;
   
 ### Parameters  
  [in] *bIsLargeImage*  
- `TRUE` for the size of large images; `FALSE` for the size of small images.  
+ TRUE for the size of large images; FALSE for the size of small images.  
   
 ### Return Value  
  The size of an image in the specified image list.  
@@ -436,7 +436,7 @@ void GetItemIDsList(
  The list of command IDs for the ribbon elements in the ribbon category.  
   
  [in] *bHiddenOnly*  
- `TRUE` to exclude ribbon elements displayed on the ribbon panels in the ribbon category; `FALSE` to include all ribbon elements in the ribbon category.  
+ TRUE to exclude ribbon elements displayed on the ribbon panels in the ribbon category; FALSE to include all ribbon elements in the ribbon category.  
   
 ### Remarks  
   
@@ -458,7 +458,7 @@ CMFCRibbonBaseElement* GetLastVisibleElement() const;
 ```  
   
 ### Return Value  
- Pointer to the last visible element; may be `NULL` if the category does not have any visible elements.  
+ Pointer to the last visible element; may be NULL if the category does not have any visible elements.  
   
 ### Remarks  
   
@@ -530,7 +530,7 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
  The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
- Pointer to a ribbon panel if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon panel if the method was successful; otherwise NULL.  
   
 ### Remarks  
  Only ribbon panels that are contained in the ribbon category are tested.  
@@ -560,7 +560,7 @@ CMFCRibbonBaseElement* GetParentButton() const;
 ```  
   
 ### Return Value  
- Returns a pointer to the parent ribbon element, or `NULL` if there is no parent element.  
+ Returns a pointer to the parent ribbon element, or NULL if there is no parent element.  
   
 ### Remarks  
   
@@ -694,7 +694,7 @@ CMFCRibbonPanel* HighlightPanel(
  The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
- Pointer to the previously highlighted ribbon panel; otherwise `NULL` if no ribbon panel is highlighted when this method is invoked.  
+ Pointer to the previously highlighted ribbon panel; otherwise NULL if no ribbon panel is highlighted when this method is invoked.  
   
 ### Remarks  
  For more information about highlighting a ribbon panel, see [CMFCRibbonPanel::Highlight](../../mfc/reference/cmfcribbonpanel-class.md#highlight).  
@@ -713,10 +713,10 @@ CMFCRibbonBaseElement* HitTest(
  The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
  [in] *bCheckPanelCaption*  
- `TRUE` to test the ribbon panel caption; `FALSE` to exclude the ribbon panel caption.  
+ TRUE to test the ribbon panel caption; FALSE to exclude the ribbon panel caption.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
  Only ribbon elements that are contained in the ribbon category are tested.  
@@ -750,7 +750,7 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
  The point to test.  
   
 ### Return Value  
- If *point* falls within the bounding rectangle of either the left or the right scroll button of the ribbon category, returns a pointer to that button, or otherwise, returns `NULL`.  
+ If *point* falls within the bounding rectangle of either the left or the right scroll button of the ribbon category, returns a pointer to that button, or otherwise, returns NULL.  
   
 ### Remarks  
   
@@ -762,7 +762,7 @@ BOOL IsActive() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon category is the active category; otherwise `FALSE`.  
+ TRUE if the ribbon category is the active category; otherwise FALSE.  
   
 ### Remarks  
  The active ribbon category displays its ribbon panels.  
@@ -775,7 +775,7 @@ BOOL IsVisible() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon category is visible; otherwise `FALSE`.  
+ TRUE if the ribbon category is visible; otherwise FALSE.  
   
 ### Remarks  
  Ribbon categories that are visible display a category tab.  
@@ -788,7 +788,7 @@ BOOL IsWindows7Look() const;
 ```  
   
 ### Return Value  
- `TRUE` if the parent ribbon has Windows 7 look; otherwise `FALSE`.  
+ TRUE if the parent ribbon has Windows 7 look; otherwise FALSE.  
   
 ### Remarks  
   
@@ -805,7 +805,7 @@ virtual BOOL NotifyControlCommand(
   
 ### Parameters  
  [in] *bAccelerator*  
- `TRUE` if this command originated from an accelerator, or `FALSE` otherwise.  
+ TRUE if this command originated from an accelerator, or FALSE otherwise.  
   
  [in] *nNotifyCode*  
  The notification code.  
@@ -817,7 +817,7 @@ virtual BOOL NotifyControlCommand(
  The LPARAM field of the message.  
   
 ### Return Value  
- Returns `TRUE` if the message was handled, or `FALSE` if not.  
+ Returns TRUE if the message was handled, or FALSE if not.  
   
 ### Remarks  
   
@@ -867,16 +867,16 @@ virtual BOOL OnDrawImage(
  Pointer to the ribbon element that contains the image.  
   
  [in] *bIsLargeImage*  
- `TRUE` if the image is the large size; `FALSE` if the image is the small size.  
+ TRUE if the image is the large size; FALSE if the image is the small size.  
   
  [in] *nImageIndex*  
  Zero-based index of the image in the image array that is contained in the ribbon category.  
   
  [in] *bCenter*  
- `TRUE` to center the image in the display rectangle; `FALSE` to draw the image in the upper-left corner of the display rectangle.  
+ TRUE to center the image in the display rectangle; FALSE to draw the image in the upper-left corner of the display rectangle.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -924,7 +924,7 @@ virtual CMFCRibbonBaseElement* OnLButtonDown(CPoint point);
  The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -963,7 +963,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
   
 ### Parameters  
  [in] *bIsRTL*  
- `TRUE` if the layout is right-to-left; `FALSE` if the layout is left-to-right.  
+ TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
  This method adjusts the layout of all ribbon panels and ribbon elements that are contained in the ribbon category.  
@@ -979,13 +979,13 @@ virtual BOOL OnScrollHorz(
   
 ### Parameters  
  [in] *bScrollLeft*  
- `TRUE` to scroll to the left; `FALSE` to scroll to the right.  
+ TRUE to scroll to the left; FALSE to scroll to the right.  
   
  [in] *nScrollOffset*  
  The scroll distance in pixels.  
   
 ### Return Value  
- `TRUE` if the ribbon category moved in a horizontal direction; otherwise `FALSE`.  
+ TRUE if the ribbon category moved in a horizontal direction; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1007,7 +1007,7 @@ virtual void OnUpdateCmdUI(
  Pointer to the window that controls the enabling or disabling of the user-interface elements.  
   
  [in] *bDisableIfNoHndler*  
- `TRUE` to disable the user-interface item if no handler is defined in a message map; otherwise, `FALSE`.  
+ TRUE to disable the user-interface item if no handler is defined in a message map; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1038,10 +1038,10 @@ BOOL RemovePanel(
  The index number of the panel to remove. Obtained by calling the [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) method.  
   
  [in] *bDelete*  
- `TRUE` to delete the panel object from memory; `FALSE` to remove the panel object without deleting it.  
+ TRUE to delete the panel object from memory; FALSE to remove the panel object without deleting it.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise, `FALSE`.  
+ TRUE if the method was successful; otherwise, FALSE.  
   
 ##  <a name="repospanels"></a>  CMFCRibbonCategory::ReposPanels  
  Adjusts the layout of all controls on the ribbon panels that are contained in the ribbon category.  

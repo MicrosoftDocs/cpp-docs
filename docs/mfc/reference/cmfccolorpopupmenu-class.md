@@ -50,7 +50,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |`m_wndColorBar`|The `CMFCColorBar` object that provides color selection.|  
   
 ### Remarks  
- This class inherits the pop-up menu functionality of the `CMFCPopupMenu` class and manages a `CMFCColorBar` object that provides color selection. When the toolbar framework is in customization mode and the `m_bEnabledInCustomizeMode` member is set to `FALSE`, the color bar object is not shown. For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)  
+ This class inherits the pop-up menu functionality of the `CMFCPopupMenu` class and manages a `CMFCColorBar` object that provides color selection. When the toolbar framework is in customization mode and the `m_bEnabledInCustomizeMode` member is set to FALSE, the color bar object is not shown. For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)  
   
  For more information about `CMFCColorBar`, see [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md).  
   
@@ -121,12 +121,12 @@ CMFCColorPopupMenu(
  The default selected color.  
   
  [in] *lpszAutoColor*  
- The text label of the *automatic* (default) color button, or `NULL`.  
+ The text label of the *automatic* (default) color button, or NULL.  
   
  The standard label for the automatic button is **Automatic**.  
   
  [in] *lpszOtherColor*  
- The text label of the *other* button, which displays more color choices, or `NULL`.  
+ The text label of the *other* button, which displays more color choices, or NULL.  
   
  The standard label for the other button is **More Colors...**.  
   
@@ -161,7 +161,7 @@ CMFCColorPopupMenu(
  The command ID.  
   
 ### Remarks  
- Each overloaded constructor sets the `m_bEnabledInCustomizeMode` member to `FALSE`.  
+ Each overloaded constructor sets the `m_bEnabledInCustomizeMode` member to FALSE.  
   
 ### Example  
  The following example demonstrates how to construct a `CMFCColorPopupMenu` object.  

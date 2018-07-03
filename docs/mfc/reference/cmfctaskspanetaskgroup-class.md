@@ -61,7 +61,7 @@ class CMFCTasksPaneTaskGroup : public CObject
   
  ![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")  
   
- The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to `TRUE`, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:  
+ The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to TRUE, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:  
   
  ![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")  
   
@@ -135,7 +135,7 @@ BOOL m_bIsSpecial;
 ```  
   
 ### Remarks  
- If your application is using the Windows XP visual theme and `m_bIsSpecial` is `FALSE`, the framework calls `DrawThemeBackground` with the `EBP_NORMALGROUPBACKGROUND` flag. If `m_bIsSpecial` is `TRUE`, the framework calls `DrawThemeBackground` with the `EBP_SPECIALGROUPBACKGROUND` flag.  
+ If your application is using the Windows XP visual theme and `m_bIsSpecial` is FALSE, the framework calls `DrawThemeBackground` with the EBP_NORMALGROUPBACKGROUND flag. If `m_bIsSpecial` is TRUE, the framework calls `DrawThemeBackground` with the EBP_SPECIALGROUPBACKGROUND flag.  
   
 ##  <a name="m_lsttasks"></a>  CMFCTasksPaneTaskGroup::m_lstTasks  
  Contains the internal list of tasks.  
@@ -194,7 +194,7 @@ virtual BOOL SetACCData(
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current task group.  
   
 ### Return Value  
- `TRUE` if the *data* parameter was successfully populated with the accessibility data of the current task group; otherwise, `FALSE`.  
+ TRUE if the *data* parameter was successfully populated with the accessibility data of the current task group; otherwise, FALSE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

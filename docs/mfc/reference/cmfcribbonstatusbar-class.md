@@ -118,7 +118,7 @@ void AddElement(
  A text label of the element.  
   
  [in] *bIsVisible*  
- `TRUE` if you want to add the element as visible, `FALSE` if you want to add the element as hidden.  
+ TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
   
 ##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement  
  Adds a ribbon element to the extended area of the ribbon status bar.  
@@ -138,7 +138,7 @@ void AddExtendedElement(
  The text label of the element.  
   
  [in] *bIsVisible*  
- `TRUE` if you want to add the element as visible, `FALSE` if you want to add the element as hidden.  
+ TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
   
 ### Remarks  
  The extended area is on the right side of the status bar control.  
@@ -174,7 +174,7 @@ BOOL Create(
  The control ID of the status bar.  
   
 ### Return Value  
- `TRUE` if the status bar is created successfully, `FALSE` otherwise.  
+ TRUE if the status bar is created successfully, FALSE otherwise.  
   
 ##  <a name="createex"></a>  CMFCRibbonStatusBar::CreateEx  
  Creates a ribbon status bar that has an extended style.  
@@ -201,7 +201,7 @@ BOOL CreateEx(
  The control ID of the status bar.  
   
 ### Return Value  
- `TRUE` if the status bar is created successfully, `FALSE` otherwise.  
+ TRUE if the status bar is created successfully, FALSE otherwise.  
   
 ##  <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -230,7 +230,7 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
  The ID of the element.  
   
 ### Return Value  
- A pointer to the element that has the specified command ID. `NULL` if there is no such element.  
+ A pointer to the element that has the specified command ID. NULL if there is no such element.  
   
 ##  <a name="getcount"></a>  CMFCRibbonStatusBar::GetCount  
  Returns the number of elements that are located in the main area of the ribbon status bar.  
@@ -254,7 +254,7 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
  Specifies a zero-based index of an element that is located in the main area of the status bar control.  
   
 ### Return Value  
- A pointer to the element that is located at the specified index. `NULL` if the index is negative or exceeds the number of elements in the status bar.  
+ A pointer to the element that is located at the specified index. NULL if the index is negative or exceeds the number of elements in the status bar.  
   
 ### Remarks  
   
@@ -280,7 +280,7 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
  Specifies the zero-based index of an element that is located in the extended area of the status bar control.  
   
 ### Return Value  
- A pointer to the element that is located at a specified index in the extended area of the ribbon status bar. `NULL` if *nIndex* is negative or exceeds the number of elements in the extended area of the ribbon status bar.  
+ A pointer to the element that is located at a specified index in the extended area of the ribbon status bar. NULL if *nIndex* is negative or exceeds the number of elements in the extended area of the ribbon status bar.  
   
 ### Remarks  
   
@@ -342,7 +342,7 @@ BOOL IsInformationMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the status bar can work in information mode; otherwise `FALSE`.  
+ TRUE if the status bar can work in information mode; otherwise FALSE.  
   
 ### Remarks  
  In information mode, the status bar hides all regular panes and displays a message string.  
@@ -398,7 +398,7 @@ BOOL RemoveElement(UINT uiID);
  The ID of the element to remove from the status bar.  
   
 ### Return Value  
- `TRUE` if an element with the specified *uiID* is removed. `FALSE` otherwise.  
+ TRUE if an element with the specified *uiID* is removed. FALSE otherwise.  
   
 ##  <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation  
  Enables or disables the information mode for the ribbon status bar.  
@@ -414,7 +414,7 @@ void SetInformation(LPCTSTR lpszInfo);
 ### Remarks  
  Use this method to put the status bar in the information mode. In this mode, the status bar hides all panes and displays the information string specified by *lpszInfo*.  
   
- When lpszInfo is `NULL`, the status bar reverts to regular mode.  
+ When lpszInfo is NULL, the status bar reverts to regular mode.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

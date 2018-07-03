@@ -105,7 +105,7 @@ static HBITMAP __stdcall CreateBitmap_32(
 |*clrTransparent*|An RGB value specifying transparent color of the original bitmap.|  
   
 ### Return Value  
- A handle to the newly created DIB bitmap if this method is successful; otherwise `NULL`.  
+ A handle to the newly created DIB bitmap if this method is successful; otherwise NULL.  
   
 ### Remarks  
  For more information about how to create a DIB bitmap, see [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183491).  
@@ -306,7 +306,7 @@ BOOL DrawShadow(
   
  If either of these parameters is `NULL`, `DrawShadow` will automatically draw the shadow.  
   
- If you set *bRightShadow* to `FALSE`, the shadow will be drawn underneath and to the left of the rectangular area.  
+ If you set *bRightShadow* to FALSE, the shadow will be drawn underneath and to the left of the rectangular area.  
   
 ### Example  
  The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../visual-cpp-samples.md).  
@@ -344,7 +344,7 @@ void Fill4ColorsGradient(
  The final color for the second color gradient.  
   
  [in] *bHorz*  
- A Boolean parameter that indicates whether `Fill4ColorsGradient` colors a horizontal or vertical gradient. `TRUE` indicates a horizontal gradient.  
+ A Boolean parameter that indicates whether `Fill4ColorsGradient` colors a horizontal or vertical gradient. TRUE indicates a horizontal gradient.  
   
  [in] *nPercentage*  
  An integer from 0-100. This value indicates the percentage of the rectangle to fill with the first color gradient.  
@@ -448,7 +448,7 @@ BOOL GrayRect(
  The color that this method uses for de-saturation if *nPercentage* is set to -1.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
  For the parameter *nPercentage*, a lower value indicates a darker color.  
@@ -484,10 +484,10 @@ BOOL HighlightRect(
  The base color for blending.  
   
 ### Return Value  
- `TRUE` if the method is successful; otherwise `FALSE`.  
+ TRUE if the method is successful; otherwise FALSE.  
   
 ### Remarks  
- If *nPercentage* is between 0 and 99, `HighlightRect` uses the alpha blending algorithm. For more information about alpha blending, see [Alpha Blending Lines and Fills](/dotnet/framework/winforms/advanced/alpha-blending-lines-and-fills). If *nPercentage* is -1, this method uses the default highlight level. If *nPercentage* is 100, this method does nothing and returns `TRUE`.  
+ If *nPercentage* is between 0 and 99, `HighlightRect` uses the alpha blending algorithm. For more information about alpha blending, see [Alpha Blending Lines and Fills](/dotnet/framework/winforms/advanced/alpha-blending-lines-and-fills). If *nPercentage* is -1, this method uses the default highlight level. If *nPercentage* is 100, this method does nothing and returns TRUE.  
   
  The method uses the parameter *nTolerance* to determine whether to highlight the rectangular area. To highlight the rectangle, the difference between the background color of your application and *clrTransparent* must be less than *nTolerance* in each color component (red, green, and blue).  
   
@@ -638,7 +638,7 @@ void MirrorRect(
  A Boolean parameter that indicates whether the rectangle flips horizontally or vertically.  
   
 ### Remarks  
- This method can flip any area of the device context owned by the `CDrawingManager` class. If *bHorz* is set to `TRUE`, this method flips the area horizontally. Otherwise, it flips the area vertically.  
+ This method can flip any area of the device context owned by the `CDrawingManager` class. If *bHorz* is set to TRUE, this method flips the area horizontally. Otherwise, it flips the area vertically.  
   
 ##  <a name="pixelalpha"></a>  CDrawingManager::PixelAlpha  
  Calculates the final color for a semitransparent pixel.  
@@ -712,10 +712,10 @@ static HBITMAP __stdcall PrepareShadowMask (
  The maximum brightness of the shadow.  
   
 ### Return Value  
- A handle to the created bitmap if this method is successful; otherwise `NULL`.  
+ A handle to the created bitmap if this method is successful; otherwise NULL.  
   
 ### Remarks  
- If *nDepth* is set to 0, this method exits and returns `NULL`. If *nDepth* is less than 3, the width and height of the shadow are set to 3 pixels.  
+ If *nDepth* is set to 0, this method exits and returns NULL. If *nDepth* is less than 3, the width and height of the shadow are set to 3 pixels.  
   
 ##  <a name="rgbtohsl"></a>  CDrawingManager::RGBtoHSL  
  Converts a color from a red, green, and blue (RGB) representation to a hue, saturation, and lightness (HSL) representation.  
@@ -815,7 +815,7 @@ static void __stdcall SetAlphaPixel(
 ### Remarks  
  This method is a helper method that is used by the [CDrawingManager::DrawShadow](#drawshadow) method. We recommend that if you want to draw a shadow, call `CDrawingManager::DrawShadow` instead.  
   
- If *bIsRight* is set to `TRUE`, the pixel to color is measured *x* pixels from the right edge of *rect*. If it is `FALSE`, the pixel to color is measured *x* pixels from the left edge of *rect*.  
+ If *bIsRight* is set to TRUE, the pixel to color is measured *x* pixels from the right edge of *rect*. If it is FALSE, the pixel to color is measured *x* pixels from the left edge of *rect*.  
   
 ##  <a name="setpixel"></a>  CDrawingManager::SetPixel  
  Changes a single pixel in a bitmap to the specified color.  
@@ -891,7 +891,7 @@ void DrawRotated(
  The source device context.  
   
  *bClockWise*  
- `TRUE` indicates rotate +90 degrees; `FALSE` indicates rotate -90 degrees.  
+ TRUE indicates rotate +90 degrees; FALSE indicates rotate -90 degrees.  
   
 ### Remarks  
   

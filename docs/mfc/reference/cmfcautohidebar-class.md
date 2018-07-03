@@ -104,13 +104,13 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ### Remarks  
  The *dwAlignment* parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CBRS_ALIGN_TOP`  
+- CBRS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu  
 
@@ -303,7 +303,7 @@ virtual CSize StretchPane(
  The value is unused in the base implementation. In derived implementations, use this value to indicate the length of the resized pane.  
   
  [in] *bVert*  
- The value is unused in the base implementation. In derived implementations, use `TRUE` to handle the case where the auto-hide bar is collapsed vertically, and `FALSE` for the case where the auto-hide bar is collapsed horizontally.  
+ The value is unused in the base implementation. In derived implementations, use TRUE to handle the case where the auto-hide bar is collapsed vertically, and FALSE for the case where the auto-hide bar is collapsed horizontally.  
   
 ### Return Value  
  The resulting size of the resized pane.  

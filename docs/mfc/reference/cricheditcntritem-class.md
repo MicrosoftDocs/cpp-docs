@@ -69,10 +69,10 @@ CRichEditCntrItem(
   
 ### Parameters  
  *preo*  
- Pointer to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is **NULL**, the client item is empty.  
+ Pointer to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.  
   
  *pContainer*  
- Pointer to the container document that will contain this item. If *pContainer* is **NULL**, you must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) to add this client item to a document.  
+ Pointer to the container document that will contain this item. If *pContainer* is NULL, you must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) to add this client item to a document.  
   
 ### Remarks  
  This function does not perform any OLE initialization.  

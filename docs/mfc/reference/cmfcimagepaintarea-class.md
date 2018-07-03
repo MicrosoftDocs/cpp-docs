@@ -104,7 +104,7 @@ void SetBitmap(CBitmap* pBitmap);
 |[in] *pBitmap*|The new bitmap image to display.|  
   
 ### Remarks  
- If *pBitmap* is `NULL`, this method sets the size of the modifiable paint area to zero. Otherwise, it sets the size of the modifiable paint area to the size of the provided bitmap image.  
+ If *pBitmap* is NULL, this method sets the size of the modifiable paint area to zero. Otherwise, it sets the size of the modifiable paint area to the size of the provided bitmap image.  
   
 ##  <a name="setcolor"></a>  CMFCImagePaintArea::SetColor  
  Sets the current drawing color.  
@@ -121,9 +121,9 @@ void SetColor(COLORREF color);
 |[in] *color*|The new drawing color.|  
   
 ### Remarks  
- When you select a color from the image editor palette bar or color picker, the framework calls this method to update the current drawing color. The initial drawing color is black (a `COLORREF` value of 0).  
+ When you select a color from the image editor palette bar or color picker, the framework calls this method to update the current drawing color. The initial drawing color is black (a COLORREF value of 0).  
   
- The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](cmfcimagepaintarea-image-edit-mode-enumeration.md).  
+ The drawing color is used by the image editor dialog box for all drawing modes except for IMAGE_EDIT_MODE_COLOR. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](cmfcimagepaintarea-image-edit-mode-enumeration.md).  
   
 ##  <a name="setmode"></a>  CMFCImagePaintArea::SetMode  
  Sets the current drawing mode.  

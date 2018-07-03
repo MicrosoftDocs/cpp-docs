@@ -146,10 +146,10 @@ BOOL AddMenu(UINT uiMenuResId);
  Specifies the resource ID of a menu to load.  
   
 ### Return Value  
- `TRUE` if a menu was added successfully; otherwise `FALSE`.  
+ TRUE if a menu was added successfully; otherwise FALSE.  
   
 ### Remarks  
- In the call to `AddMenuCommands`, *bPopup* is `FALSE`. As a result, that method does not add menu items that contain submenus to the list of commands. This method does add the menu items in the submenus to the list of commands.  
+ In the call to `AddMenuCommands`, *bPopup* is FALSE. As a result, that method does not add menu items that contain submenus to the list of commands. This method does add the menu items in the submenus to the list of commands.  
   
 ##  <a name="addmenucommands"></a>  CMFCToolBarsCustomizeDialog::AddMenuCommands  
  Adds items to the list of commands in the **Commands** page to represent all the items in the specified menu.  
@@ -178,7 +178,7 @@ void AddMenuCommands(
 ### Remarks  
  The `AddMenuCommands` method loops over all menu items of *pMenu*. For each menu item that does not contain a submenu, this method creates a [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object and calls the [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) method to add the menu item as a toolbar button to the list of commands on the **Commands** page. Separators are ignored in this process.  
   
- If *bPopup* is `TRUE`, for each menu item that contains a submenu this method creates a [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md) object and inserts it into the list of commands by calling `AddButton`. Otherwise menu items that contain submenus are not displayed in the list of commands. In either case, when `AddMenuCommands` encounters a menu item with a submenu it calls itself recursively, passing a pointer to the submenu as the *pMenu* parameter and appending the label of the submenu to *lpszMenuPath*.  
+ If *bPopup* is TRUE, for each menu item that contains a submenu this method creates a [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md) object and inserts it into the list of commands by calling `AddButton`. Otherwise menu items that contain submenus are not displayed in the list of commands. In either case, when `AddMenuCommands` encounters a menu item with a submenu it calls itself recursively, passing a pointer to the submenu as the *pMenu* parameter and appending the label of the submenu to *lpszMenuPath*.  
   
 ##  <a name="addtoolbar"></a>  CMFCToolBarsCustomizeDialog::AddToolBar  
  Loads a toolbar from the resources. Then, for each command in the menu calls the [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) method to insert a button in the list of commands on the **Commands** page under the specified category.  
@@ -204,7 +204,7 @@ BOOL AddToolBar(
  Specifies the name of the category to which to add the toolbar.  
   
 ### Return Value  
- `TRUE` if the method is successful; otherwise `FALSE`.  
+ TRUE if the method is successful; otherwise FALSE.  
   
 ### Example  
  The following example demonstrates how to use the `AddToolBar` method in the `CMFCToolBarsCustomizeDialog` class. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
@@ -226,12 +226,12 @@ virtual BOOL CheckToolsValidity(const CObList& lstTools);
  The list of user-defined tools to check.  
   
 ### Return Value  
- Returns `TRUE` if the list of user-defined tools is valid; otherwise `FALSE`. The default implementation always returns `TRUE`.  
+ Returns TRUE if the list of user-defined tools is valid; otherwise FALSE. The default implementation always returns TRUE.  
   
 ### Remarks  
  The framework calls this method to verify the validity of objects that represent user-defined tools returned by [CMFCToolBarsCustomizeDialog::CheckToolsValidity](#checktoolsvalidity).  
   
- Override the `CheckToolsValidity` method in a class derived from `CMFCToolBarsCustomizeDialog`  if you want to validate the user tools before the user closes the dialog box. If this method returns `FALSE` when the user clicks either the **Close** button in the upper-right corner of the dialog box or the button labeled **Close** in the lower-right corner of the dialog box, the dialog box displays the **Tools** tab instead of closing. If this method returns `FALSE` when the user clicks a tab to navigate away from the **Tools** tab, the navigation does not occur. You should display an appropriate message box to inform the user of the problem that caused validation to fail.  
+ Override the `CheckToolsValidity` method in a class derived from `CMFCToolBarsCustomizeDialog`  if you want to validate the user tools before the user closes the dialog box. If this method returns FALSE when the user clicks either the **Close** button in the upper-right corner of the dialog box or the button labeled **Close** in the lower-right corner of the dialog box, the dialog box displays the **Tools** tab instead of closing. If this method returns FALSE when the user clicks a tab to navigate away from the **Tools** tab, the navigation does not occur. You should display an appropriate message box to inform the user of the problem that caused validation to fail.  
   
 ##  <a name="cmfctoolbarscustomizedialog"></a>  CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog  
  Constructs a `CMFCToolBarsCustomizeDialog` object.  
@@ -246,29 +246,29 @@ CMFCToolBarsCustomizeDialog(
   
 ### Parameters  
  [in] *pWndParentFrame*  
- A pointer to the parent frame. This parameter must not be `NULL`.  
+ A pointer to the parent frame. This parameter must not be NULL.  
   
  [in] *bAutoSetFromMenus*  
- A Boolean value that specifies whether to add the menu commands from all menus to the list of commands on the **Commands** page. If this parameter is `TRUE`, the menu commands are added. Otherwise, the menu commands are not added.  
+ A Boolean value that specifies whether to add the menu commands from all menus to the list of commands on the **Commands** page. If this parameter is TRUE, the menu commands are added. Otherwise, the menu commands are not added.  
   
  [in] *uiFlags*  
  A combination of flags that affect the behavior of the dialog box. This parameter can be one or more of the following values:  
   
-- `AFX_CUSTOMIZE_MENU_SHADOWS`  
+- AFX_CUSTOMIZE_MENU_SHADOWS  
   
-- `AFX_CUSTOMIZE_TEXT_LABELS`  
+- AFX_CUSTOMIZE_TEXT_LABELS  
   
-- `AFX_CUSTOMIZE_MENU_ANIMATIONS`  
+- AFX_CUSTOMIZE_MENU_ANIMATIONS  
   
-- `AFX_CUSTOMIZE_NOHELP`  
+- AFX_CUSTOMIZE_NOHELP  
   
-- `AFX_CUSTOMIZE_CONTEXT_HELP`  
+- AFX_CUSTOMIZE_CONTEXT_HELP  
   
-- `AFX_CUSTOMIZE_NOTOOLS`  
+- AFX_CUSTOMIZE_NOTOOLS  
   
-- `AFX_CUSTOMIZE_MENUAMPERS`  
+- AFX_CUSTOMIZE_MENUAMPERS  
   
-- `AFX_CUSTOMIZE_NO_LARGE_ICONS`  
+- AFX_CUSTOMIZE_NO_LARGE_ICONS  
   
  [in] *plistCustomPages*  
  A pointer to a list of `CRuntimeClass` objects that specify additional custom pages.  
@@ -291,7 +291,7 @@ virtual BOOL Create();
 ```  
   
 ### Return Value  
- `TRUE` if the customization property sheet is created successfully; otherwise `FALSE`.  
+ TRUE if the customization property sheet is created successfully; otherwise FALSE.  
   
 ### Remarks  
  Call the `Create` method only after you fully initialize the class.  
@@ -305,12 +305,12 @@ void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the user-defined toolbars; `FALSE` to disable the toolbars.  
+ TRUE to enable the user-defined toolbars; FALSE to disable the toolbars.  
   
 ### Remarks  
- If *bEnable* is `TRUE`, the **New**, **Rename** and **Delete** buttons are displayed on the **Toolbars** page.  
+ If *bEnable* is TRUE, the **New**, **Rename** and **Delete** buttons are displayed on the **Toolbars** page.  
   
- By default, or if *bEnable* is `FALSE`, these buttons are not displayed and the user cannot define new toolbars.  
+ By default, or if *bEnable* is FALSE, these buttons are not displayed and the user cannot define new toolbars.  
   
 ##  <a name="fillallcommandslist"></a>  CMFCToolBarsCustomizeDialog::FillAllCommandsList  
  Populates the provided `CListBox` object with the commands in the **All Commands** category.  
@@ -344,7 +344,7 @@ void FillCategoriesComboBox(
  A reference to the `CComboBox` object to populate.  
   
  [in] *bAddEmpty*  
- A Boolean value that specifies whether to add categories to the combo box that do not have commands. If this parameter is `TRUE`, empty categories are added to the combo box. Otherwise, empty categories are not added.  
+ A Boolean value that specifies whether to add categories to the combo box that do not have commands. If this parameter is TRUE, empty categories are added to the combo box. Otherwise, empty categories are not added.  
   
 ### Remarks  
  This method is like the [CMFCToolBarsCustomizeDialog::FillCategoriesListBox](#fillcategorieslistbox) method except that this method works with a `CComboBox` object.  
@@ -369,7 +369,7 @@ void FillCategoriesListBox(
  A reference to the `CListBox` object to populate.  
   
  [in] *bAddEmpty*  
- A Boolean value that specifies whether to add categories to the list box that do not have commands. If this parameter is `TRUE`, empty categories are added to the list box. Otherwise, empty categories are not added.  
+ A Boolean value that specifies whether to add categories to the list box that do not have commands. If this parameter is TRUE, empty categories are added to the list box. Otherwise, empty categories are not added.  
   
 ### Remarks  
  This method is like the [CMFCToolBarsCustomizeDialog::FillCategoriesComboBox](#fillcategoriescombobox) method except that this method works with a `CListBox` object.  
@@ -392,7 +392,7 @@ LPCTSTR GetCommandName(UINT uiCmd) const;
  The ID of the command to retrieve.  
   
 ### Return Value  
- The name that is associated with the given command ID, or `NULL` if the command does not exist.  
+ The name that is associated with the given command ID, or NULL if the command does not exist.  
   
 ##  <a name="getcountincategory"></a>  CMFCToolBarsCustomizeDialog::GetCountInCategory  
  Retrieves the number of items in the provided list that have a given text label.  
@@ -429,31 +429,31 @@ UINT GetFlags() const;
 ### Remarks  
  This method retrieves the value of the *uiFlags* parameter that is passed to the constructor. The return value can be one or more of the following values:  
   
- `AFX_CUSTOMIZE_MENU_SHADOWS`  
+ AFX_CUSTOMIZE_MENU_SHADOWS  
  Allows the user to specify the shadow appearance of the menu.  
   
- `AFX_CUSTOMIZE_TEXT_LABELS`  
+ AFX_CUSTOMIZE_TEXT_LABELS  
  Allows the user to specify whether text labels are shown underneath the toolbar button images.  
   
- `AFX_CUSTOMIZE_MENU_ANIMATIONS`  
+ AFX_CUSTOMIZE_MENU_ANIMATIONS  
  Allows the user to specify the menu animation style.  
   
- `AFX_CUSTOMIZE_NOHELP`  
+ AFX_CUSTOMIZE_NOHELP  
  Removes the help button from the customization dialog box.  
   
- `AFX_CUSTOMIZE_CONTEXT_HELP`  
- Enables the `WS_EX_CONTEXTHELP` visual style.  
+ AFX_CUSTOMIZE_CONTEXT_HELP  
+ Enables the WS_EX_CONTEXTHELP visual style.  
   
- `AFX_CUSTOMIZE_NOTOOLS`  
+ AFX_CUSTOMIZE_NOTOOLS  
  Removes the **Tools** page from the customization dialog box. This flag is valid if your application uses the `CUserToolsManager` class.  
   
- `AFX_CUSTOMIZE_MENUAMPERS`  
+ AFX_CUSTOMIZE_MENUAMPERS  
  Allows button captions to contain the ampersand ( **&**) character.  
   
- `AFX_CUSTOMIZE_NO_LARGE_ICONS`  
+ AFX_CUSTOMIZE_NO_LARGE_ICONS  
  Removes the **Large Icons** option from the customization dialog box.  
   
- For more information about the `WS_EX_CONTEXTHELP` visual style, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
+ For more information about the WS_EX_CONTEXTHELP visual style, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
 ##  <a name="onafterchangetool"></a>  CMFCToolBarsCustomizeDialog::OnAfterChangeTool  
  Responds to a change in a user tool immediately after it occurs.  
@@ -481,10 +481,10 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
  Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](http://msdn.microsoft.com/library/windows/desktop/ms646340) struct.  
   
 ### Return Value  
- `TRUE` if the key can be assigned, or `FALSE` if the key cannot be assigned. The default implementation always returns `TRUE`.  
+ TRUE if the key can be assigned, or FALSE if the key cannot be assigned. The default implementation always returns TRUE.  
   
 ### Remarks  
- Override this method in a derived class to perform extra processing when a user assigns a new keyboard shortcut, or to validate keyboard shortcuts as the user defines them. To prevent a shortcut from being assigned, return `FALSE`. You should also display a message box or otherwise inform the user of the reason why the keyboard shortcut was rejected.  
+ Override this method in a derived class to perform extra processing when a user assigns a new keyboard shortcut, or to validate keyboard shortcuts as the user defines them. To prevent a shortcut from being assigned, return FALSE. You should also display a message box or otherwise inform the user of the reason why the keyboard shortcut was rejected.  
   
 ##  <a name="onbeforechangetool"></a>  CMFCToolBarsCustomizeDialog::OnBeforeChangeTool  
  Performs custom processing when a change to a user tool when the user is about to apply a change.  
@@ -521,7 +521,7 @@ virtual BOOL OnEditToolbarMenuImage(
  Bitmap color resolution, in bits per pixel.  
   
 ### Return Value  
- `TRUE` if a change is being committed; otherwise `FALSE`. The default implementation displays a dialog box and returns `TRUE` if the user clicks **OK**, or `FALSE` if the user clicks **Cancel** or the **Close** button.  
+ TRUE if a change is being committed; otherwise FALSE. The default implementation displays a dialog box and returns TRUE if the user clicks **OK**, or FALSE if the user clicks **Cancel** or the **Close** button.  
   
 ### Remarks  
  This method is called by the framework when the user runs the image editor. The default implementation displays [CMFCImageEditorDialog Class](../../mfc/reference/cmfcimageeditordialog-class.md) dialog box. Override `OnEditToolbarMenuImage` in a derived class to use a custom image editor.  
@@ -607,7 +607,7 @@ BOOL RenameCategory(
  The new category name.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
  The category name must be unique.  
@@ -648,7 +648,7 @@ BOOL SetUserCategory(LPCTSTR lpszCategory);
  The name of the category.  
   
 ### Return Value  
- `TRUE` if the method is successful; otherwise `FALSE`.  
+ TRUE if the method is successful; otherwise FALSE.  
   
 ### Remarks  
  The user category setting is not currently used by the framework.  

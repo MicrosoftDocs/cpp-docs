@@ -116,7 +116,7 @@ BOOL IsMultipleSort() const;
 ```  
   
 ### Return Value  
- `TRUE` if the list control supports multiple sort; `FALSE` otherwise.  
+ TRUE if the list control supports multiple sort; FALSE otherwise.  
   
 ### Remarks  
  When a [CMFCListCtrl Class](../../mfc/reference/cmfclistctrl-class.md) supports multiple sorting, the user can sort the data in the list control by multiple columns. To enable multiple sorting, call [CMFCListCtrl::EnableMultipleSort](#enablemultiplesort).  
@@ -157,14 +157,14 @@ virtual COLORREF OnGetCellBkColor(
 ```  
   
 ### Parameters  
- [in] `nRow`  
+ [in] *nRow*  
  The row of the cell in question.  
   
- [in] `nColumn`  
+ [in] *nColumn*  
  The column of the cell in question.  
   
 ### Return Value  
- A `COLOREF` value that specifies the background color of the cell.  
+ A COLOREF value that specifies the background color of the cell.  
   
 ### Remarks  
  The default implementation of `OnGetCellBkColor` does not use the supplied input parameters and instead simply calls `GetBkColor`. Therefore, by default, the whole list control will have the same background color. You can override `OnGetCellBkColor` in a derived class to mark individual cells with a separate background color.  
@@ -193,7 +193,7 @@ virtual HFONT OnGetCellFont(
  A handle to the font that is used for the current cell.  
   
 ### Remarks  
- By default, this method returns `NULL`. All of the cells in a list control have the same font. Override this method in order to provide different fonts for different cells.  
+ By default, this method returns NULL. All of the cells in a list control have the same font. Override this method in order to provide different fonts for different cells.  
   
 ##  <a name="ongetcelltextcolor"></a>  CMFCListCtrl::OnGetCellTextColor  
  The framework calls this method when it must determine the text color of an individual cell.  
@@ -212,7 +212,7 @@ virtual COLORREF OnGetCellTextColor(
  The column of the cell in question.  
   
 ### Return Value  
- A `COLOREF` value that specifies the text color of the cell.  
+ A COLOREF value that specifies the text color of the cell.  
   
 ### Remarks  
  By default, this method calls `GetTextColor` regardless of input parameters. The whole list control will have the same text color. You can override `OnGetCellTextColor` in a derived class to mark individual cells with a separate text color.  

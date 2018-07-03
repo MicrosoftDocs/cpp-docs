@@ -108,7 +108,7 @@ BOOL Show(
  Specifies the vertical position of the mini toolbar in screen coordinates.  
   
 ### Return Value  
- `TRUE` if the mini toolbar was displayed successfully; otherwise, `FALSE`.  
+ TRUE if the mini toolbar was displayed successfully; otherwise, FALSE.  
   
 ##  <a name="showwithcontextmenu"></a>  CMFCRibbonMiniToolBar::ShowWithContextMenu  
  Displays the mini toolbar together with a context menu.  
@@ -135,7 +135,7 @@ BOOL ShowWithContextMenu(
  Identifies the window which receives messages from the context menu.  
   
 ### Return Value  
- `TRUE` if the context menu was displayed successfully; otherwise, `FALSE`.  
+ TRUE if the context menu was displayed successfully; otherwise, FALSE.  
   
 ### Remarks  
  Use this function to display a mini toolbar that has a context menu. The context menu is positioned 15 pixels below the mini toolbar.  

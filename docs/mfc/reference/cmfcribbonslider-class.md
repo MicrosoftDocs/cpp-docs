@@ -148,7 +148,7 @@ BOOL HasZoomButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if the slider has zoom buttons; `FALSE` otherwise.  
+ TRUE if the slider has zoom buttons; FALSE otherwise.  
   
 ##  <a name="ondraw"></a>  CMFCRibbonSlider::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -176,7 +176,7 @@ void SetPos(
  Specifies the position to set for the slider. The position is relative to the beginning of the slider.  
   
  [in] *bRedraw*  
- If `TRUE`, the slider will be redrawn.  
+ If TRUE, the slider will be redrawn.  
   
 ##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
  Set the range of values for the slider control.  
@@ -206,7 +206,7 @@ void SetZoomButtons(BOOL bSet=TRUE);
   
 ### Parameters  
  [in]. *bSet*  
- `TRUE` to display zoom buttons; `FALSE` to hide them.  
+ TRUE to display zoom buttons; FALSE to hide them.  
   
 ##  <a name="setzoomincrement"></a>  CMFCRibbonSlider::SetZoomIncrement  
  Set the zoom increment for the slider control.  

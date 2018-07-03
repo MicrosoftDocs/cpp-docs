@@ -41,7 +41,7 @@ class CSharedFile : public CMemFile
   
  Shared memory files differ from other memory files in that memory for them is allocated with the [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows function. The `CSharedFile` class stores data in a globally allocated memory block (created using `GlobalAlloc`), and this memory block can be shared using DDE, the Clipboard, or other OLE/COM uniform data transfer operations, for example, using `IDataObject`.  
   
- `GlobalAlloc` returns an `HGLOBAL` handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The `HGLOBAL` handle is needed in certain applications. For example, to put data on the Clipboard you need an `HGLOBAL` handle.  
+ `GlobalAlloc` returns an HGLOBAL handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The HGLOBAL handle is needed in certain applications. For example, to put data on the Clipboard you need an HGLOBAL handle.  
   
  Please note that `CSharedFile` does not use memory-mapped files, and the data cannot be directly shared between processes.  
   

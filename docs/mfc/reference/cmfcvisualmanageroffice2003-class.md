@@ -164,7 +164,7 @@ virtual BOOL DrawComboBorderWinXP(
  Specifies whether the combo box border is highlighted.  
   
 ### Return Value  
- Returns `TRUE` if the theme API is enabled or `FALSE` if not.  
+ Returns TRUE if the theme API is enabled or FALSE if not.  
   
 ### Remarks  
   
@@ -197,7 +197,7 @@ virtual BOOL DrawComboDropButtonWinXP(
  Specifies whether the combo box drop-down button is highlighted.  
   
 ### Return Value  
- Returns `TRUE` if the theme API is enabled or `FALSE` if not.  
+ Returns TRUE if the theme API is enabled or FALSE if not.  
   
 ### Remarks  
   
@@ -222,16 +222,16 @@ virtual void DrawCustomizeButton(
  The bounding rectangle of the button  
   
  [in] *bIsHorz*  
- `TRUE` if the button is horizontal, or `FALSE` if it is vertical.  
+ TRUE if the button is horizontal, or FALSE if it is vertical.  
   
  [in] *state*  
  The state of the button as it is to be drawn (regular, pressed or highlighted).  
   
  [in] *bIsCustomize*  
- `TRUE` if the customize arrow-down or arrow-left image should be drawn in the button rectangle, or `FALSE` if not.  
+ TRUE if the customize arrow-down or arrow-left image should be drawn in the button rectangle, or FALSE if not.  
   
  [in] *bIsMoreButtons*  
- `TRUE` if the horizontal or vertical customize More-Buttons image should be drawn in the button rectangle, or `FALSE` if not.  
+ TRUE if the horizontal or vertical customize More-Buttons image should be drawn in the button rectangle, or FALSE if not.  
   
 ### Remarks  
   
@@ -260,7 +260,7 @@ virtual BOOL DrawPushButtonWinXP(
  Ignored. The state is taken from *pButton*.  
   
 ### Return Value  
- `TRUE` if the Theme API is enabled; otherwise `FALSE`.  
+ TRUE if the Theme API is enabled; otherwise FALSE.  
   
 ### Remarks  
   
@@ -397,19 +397,19 @@ virtual void GetTabFrameColors(
  A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
   
  [out] *clrBlack*  
- A reference to a `COLORREF` parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
+ A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
   
  [out] *clrHighlight*  
- A reference to a `COLORREF` parameter where this method stores the color for the highlight state of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for the highlight state of the tab window.  
   
  [out] *clrFace*  
- A reference to a `COLORREF` parameter where this method stores the color for face of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for face of the tab window.  
   
  [out] *clrDarkShadow*  
- A reference to a `COLORREF` parameter where this method stores the color for the shadow of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for the shadow of the tab window.  
   
  [out] *clrLight*  
- A reference to a `COLORREF` parameter where this method stores the color for the light edge of the tab window.  
+ A reference to a COLORREF parameter where this method stores the color for the light edge of the tab window.  
   
  [out] *pbrFace*  
  A pointer to a reference for a brush. This method stores the brush that it uses to fill the face of the tab window in this parameter.  
@@ -460,7 +460,7 @@ virtual BOOL GetToolTipInfo(
  Type information for the tooltip information to be returned.  
   
 ### Return Value  
- Returns `TRUE` if tooltip information is returned, and `FALSE` otherwise.  
+ Returns TRUE if tooltip information is returned, and FALSE otherwise.  
   
 ### Remarks  
   
@@ -472,7 +472,7 @@ static BOOL IsDefaultWinXPColorsEnabled();
 ```  
   
 ### Return Value  
- `TRUE` if the visual manager uses native colors; otherwise, `FALSE`.  
+ TRUE if the visual manager uses native colors; otherwise, FALSE.  
   
 ### Remarks  
  For more information about native colors, see [CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors).  
@@ -485,7 +485,7 @@ virtual BOOL IsDockingTabHasBorder();
 ```  
   
 ### Return Value  
- `TRUE` if the visual manager draws borders around panes that are docked and tabbed; `FALSE` otherwise.  
+ TRUE if the visual manager draws borders around panes that are docked and tabbed; FALSE otherwise.  
   
 ### Remarks  
   
@@ -497,7 +497,7 @@ virtual BOOL IsHighlightOneNoteTabs() const;
 ```  
   
 ### Return Value  
- Returns `TRUE`.  
+ Returns TRUE.  
   
 ### Remarks  
   
@@ -511,7 +511,7 @@ virtual BOOL IsOffsetPressedButton() const;
 ### Return Value  
   
 ### Remarks  
- The default implementation returns `FALSE`.  
+ The default implementation returns FALSE.  
   
 ##  <a name="isstatusbarofficexplook"></a>  CMFCVisualManagerOffice2003::IsStatusBarOfficeXPLook  
  Indicates whether there is a status bar with an Office XP look.  
@@ -523,7 +523,7 @@ static BOOL __stdcall IsStatusBarOfficeXPLook();
 ### Return Value  
   
 ### Remarks  
- Returns `TRUE` if there is a status bar with an Office XP look, or `FALSE` if not.  
+ Returns TRUE if there is a status bar with an Office XP look, or FALSE if not.  
   
 ##  <a name="istoolbarroundshape"></a>  CMFCVisualManagerOffice2003::IsToolbarRoundShape  
  Indicates whether a specified toolbar is round.  
@@ -537,7 +537,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar* pToolBar);
  Pointer to the toolbar in question.  
   
 ### Return Value  
- Returns `TRUE` if the toolbar is round, or `FALSE` if it is a menu bar.  
+ Returns TRUE if the toolbar is round, or FALSE if it is a menu bar.  
   
 ### Remarks  
   
@@ -549,7 +549,7 @@ static BOOL IsUseGlobalTheme();
 ```  
   
 ### Return Value  
- `TRUE` if the visual manager uses a Windows XP theme; otherwise, `FALSE`.  
+ TRUE if the visual manager uses a Windows XP theme; otherwise, FALSE.  
   
 ### Remarks  
  Use the method [CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme) to change whether your visual manager uses a Windows XP theme.  
@@ -562,7 +562,7 @@ virtual BOOL IsWindowsThemingSupported() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if Windows theming is supported, or `FALSE` if not.  
+ Returns TRUE if Windows theming is supported, or FALSE if not.  
   
 ### Remarks  
   
@@ -700,7 +700,7 @@ virtual void OnDrawCaptionBarBorder(
  The color of the border.  
   
  [in] *bFlatBorder*  
- `TRUE` if the border should have a flat, 2D appearance, or `FALSE` if not.  
+ TRUE if the border should have a flat, 2D appearance, or FALSE if not.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of the border of a caption bar.  
@@ -729,13 +729,13 @@ virtual void OnDrawCheckBoxEx(
  The state of the checkbox: 0 if unchecked, 1 if checked, 2 if checked mixed.  
   
  [in] *bHighlighted*  
- `TRUE` if the checkbox is highlighted, or `FALSE` if not.  
+ TRUE if the checkbox is highlighted, or FALSE if not.  
   
  [in] *bPressed*  
- `TRUE` if the checkbox is pressed, or `FALSE` if not.  
+ TRUE if the checkbox is pressed, or FALSE if not.  
   
  [in] *bEnabled*  
- `TRUE` if the checkbox is enabled, or `FALSE` if not.  
+ TRUE if the checkbox is enabled, or FALSE if not.  
   
 ### Remarks  
   
@@ -841,7 +841,7 @@ virtual void OnDrawExpandingBox(
  The bounding rectangle of the expanding box to be drawn.  
   
  [in] *bIsOpened*  
- `TRUE` if the box to be drawn is opened, or `FALSE` if not.  
+ TRUE if the box to be drawn is opened, or FALSE if not.  
   
  [in] *colorBox*  
  The color of the outside border of the box to be drawn.  
@@ -1134,7 +1134,7 @@ virtual COLORREF OnDrawRibbonCategoryTab(
  A pointer to a ribbon tab object. The framework draws this tab.  
   
  [in] *bIsActive*  
- `TRUE` if the tab is active, or `FALSE` if not.  
+ TRUE if the tab is active, or FALSE if not.  
   
 ### Return Value  
  The color that is used for text on the ribbon category tab.  
@@ -1168,7 +1168,7 @@ virtual void OnDrawRibbonProgressBar(
  A rectangle that specifies the boundaries of the area surrounding the progress bar.  
   
  [in] *bInfiniteMode*  
- `TRUE` if the bar is in infinite mode, or `FALSE` if not. The default implementation does not use this parameter.  
+ TRUE if the bar is in infinite mode, or FALSE if not. The default implementation does not use this parameter.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of a progress bar  
@@ -1279,7 +1279,7 @@ virtual void OnDrawRibbonSliderZoomButton(
  A rectangle that specifies the boundaries of the zoom buttons on the ribbon slider.  
   
  [in] *bIsZoomOut*  
- `TRUE` if the framework should draw the left button with a " **-**" for zoom out, or `FALSE` if the framework should draw the right button with a " **+**" for zoom in.  
+ TRUE if the framework should draw the left button with a " **-**" for zoom out, or FALSE if the framework should draw the right button with a " **+**" for zoom in.  
   
  [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the button is highlighted.  
@@ -1345,7 +1345,7 @@ virtual void OnDrawScrollButtons(
  An identifier of the image to draw in the scroll buttons.  
   
  [in] *bHilited*  
- `TRUE` if the scroll buttons are highlighted, or `FALSE` if not.  
+ TRUE if the scroll buttons are highlighted, or FALSE if not.  
   
 ### Remarks  
   
@@ -1371,7 +1371,7 @@ virtual void OnDrawSeparator(
  A rectangle that specifies the boundaries of the separator.  
   
  [in] *bIsHoriz*  
- `TRUE` if the pane is docked horizontally, or `FALSE` if the pane is docked vertically.  
+ TRUE if the pane is docked horizontally, or FALSE if the pane is docked vertically.  
   
 ### Remarks  
  Separators are used on control bars to separate groups of related icons. The default implementation for this method displays the standard separator. Override this method in a derived visual manager to customize the appearance of the separator.  
@@ -1585,7 +1585,7 @@ virtual void OnDrawTask(
  A Boolean parameter that specifies whether the displayed task is selected.  
   
 ### Remarks  
- The framework displays tasks on the task bar as both an icon and text. The `pIcons` parameter contains the icon for the task indicated by `pTask`. Override this method in a derived class to customize the appearance of tasks on the task bar.  
+ The framework displays tasks on the task bar as both an icon and text. The *pIcons* parameter contains the icon for the task indicated by *pTask*. Override this method in a derived class to customize the appearance of tasks on the task bar.  
   
 ##  <a name="ondrawtasksgroupareaborder"></a>  CMFCVisualManagerOffice2003::OnDrawTasksGroupAreaBorder  
  The framework calls this method when it draws a border around a group on a [CMFCTasksPane Class](../../mfc/reference/cmfctaskspane-class.md) object.  
@@ -1606,10 +1606,10 @@ virtual void OnDrawTasksGroupAreaBorder(
  A rectangle that specifies the boundaries of the group area on the task pane.  
   
  [in] *bSpecial*  
- A Boolean parameter that specifies if the border is highlighted. A value of `TRUE` indicates that the border is highlighted.  
+ A Boolean parameter that specifies if the border is highlighted. A value of TRUE indicates that the border is highlighted.  
   
  [in] *bNoTitle*  
- A Boolean parameter that specifies whether the group area has a title. A value of `TRUE` indicates that the group area does not have a title.  
+ A Boolean parameter that specifies whether the group area has a title. A value of TRUE indicates that the group area does not have a title.  
   
 ### Remarks  
  Override this function in a derived class to customize the border around a group area on the task pane.  
@@ -1663,7 +1663,7 @@ virtual void OnDrawTearOffCaption(
  A rectangle that specifies the boundaries of the caption.  
   
  [in] *bIsActive*  
- `TRUE` if the caption is active; `FALSE` otherwise.  
+ TRUE if the caption is active; FALSE otherwise.  
   
 ### Remarks  
  This function is called by the framework when a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object processes a WM_PAINT message and must draw a tear-off caption.  
@@ -1767,7 +1767,7 @@ virtual BOOL OnEraseTabsFrame(
  A pointer to a tab window. The framework erases a frame for this [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md).  
   
 ### Return Value  
- `TRUE` if the method is successful or `FALSE` if not.  
+ TRUE if the method is successful or FALSE if not.  
   
 ### Remarks  
  This method fills the area indicated by *rect* with the background color of the active tab. It is called when a `CMFCBaseTabCtrl` object processes a WM_PAINT message and erases a tab frame.  
@@ -1948,7 +1948,7 @@ virtual void OnFillOutlookBarCaption(
  A rectangle that specifies the boundaries of the caption bar.  
   
  [out] *clrText*  
- A reference to a `COLORREF` object to which this method writes the color of text on the caption bar.  
+ A reference to a COLORREF object to which this method writes the color of text on the caption bar.  
   
 ### Remarks  
  The default implementation of this method fills the caption bar with the color for shadows based on the current skin.  
@@ -1981,7 +1981,7 @@ virtual void OnFillOutlookPageButton(
  A Boolean parameter that specifies whether the button is pressed.  
   
  [out] *clrText*  
- A reference to a `COLORREF` object where this method stores the text color of the outlook page button.  
+ A reference to a COLORREF object where this method stores the text color of the outlook page button.  
   
 ### Remarks  
  Override this function in a derived visual manager to customize the appearance of Outlook page buttons.  
@@ -2032,7 +2032,7 @@ virtual void OnFillTab(
  The zero-based tab index of a tab for which the framework fills the background.  
   
  [in] *bIsActive*  
- `TRUE` if the tab is active or `FALSE` if not.  
+ TRUE if the tab is active or FALSE if not.  
   
  [in] *pTabWnd*  
  A pointer to the parent tab control.  
@@ -2145,7 +2145,7 @@ static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);
  Specifies whether the visual manager will use native Windows XP colors.  
   
 ### Remarks  
- If *bDefaultWinXPColors* is `TRUE`, the visual manager will use native Windows XP colors such as blue, olive, or silver. Otherwise, the visual manager will use the colors obtained from `GetSysColor`. The visual manager uses visual elements such as `COLOR_3DFACE`, `COLOR_3DSHADOW`, `COLOR_3DHIGHLIGHT`, `COLOR_3DDKSHADOW`, and `COLOR_3DLIGHT`.  
+ If *bDefaultWinXPColors* is TRUE, the visual manager will use native Windows XP colors such as blue, olive, or silver. Otherwise, the visual manager will use the colors obtained from `GetSysColor`. The visual manager uses visual elements such as COLOR_3DFACE, COLOR_3DSHADOW, COLOR_3DHIGHLIGHT, COLOR_3DDKSHADOW, and COLOR_3DLIGHT.  
   
  By default, a `CMFCVisualManagerOffice2003` object uses native Windows XP theme colors.  
   
@@ -2158,7 +2158,7 @@ static void __stdcall SetStatusBarOfficeXPLook(BOOL bStatusBarOfficeXPLook = TRU
   
 ### Parameters  
  [in] *bStatusBarOfficeXPLook*  
- `TRUE` if the Windows XP global theme should be used (the default), or `FALSE` if not.  
+ TRUE if the Windows XP global theme should be used (the default), or FALSE if not.  
   
 ### Remarks  
   
@@ -2171,7 +2171,7 @@ static void SetUseGlobalTheme(BOOL bUseGlobalTheme = TRUE);
   
 ### Parameters  
  [in] *bUseGlobalTheme*  
- `TRUE` if you want the visual manager to use a global theme; `FALSE` otherwise.  
+ TRUE if you want the visual manager to use a global theme; FALSE otherwise.  
   
 ### Remarks  
  If a `CMFCVisualManagerOffice2003` object uses a global theme, it draws the GUI elements by using the [CMFCVisualManagerWindows Class](../../mfc/reference/cmfcvisualmanagerwindows-class.md).  

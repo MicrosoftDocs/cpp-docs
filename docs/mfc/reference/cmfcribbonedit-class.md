@@ -85,7 +85,7 @@ virtual BOOL CanBeStretched();
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
   
@@ -149,7 +149,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
  Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](http://msdn.microsoft.com/library/windows/desktop/bb775464) that are described in the Windows SDK.  
   
 ### Return Value  
- A pointer to the new text box if the method was successful; otherwise, `NULL`.  
+ A pointer to the new text box if the method was successful; otherwise, NULL.  
   
 ### Remarks  
  Override this method in a derived class to create a custom text box.  
@@ -278,7 +278,7 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
   
 ### Parameters  
  [in] *bInFloatyMode*  
- `TRUE` if the `CMFCRibbonEdit` control is in floating mode; otherwise, `FALSE`.  
+ TRUE if the `CMFCRibbonEdit` control is in floating mode; otherwise, FALSE.  
   
 ### Return Value  
  The width, in pixels, of the `CMFCRibbonEdit` control.  
@@ -293,10 +293,10 @@ virtual BOOL HasCompactMode() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method always returns `TRUE`. Override this method to indicate whether the display size can be compact.  
+ By default this method always returns TRUE. Override this method to indicate whether the display size can be compact.  
   
 ##  <a name="hasfocus"></a>  CMFCRibbonEdit::HasFocus  
  Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.  
@@ -306,7 +306,7 @@ virtual BOOL HasFocus() const;
 ```  
   
 ### Return Value  
- `TRUE` if the `CMFCRibbonEdit` control has the focus; otherwise `FALSE`.  
+ TRUE if the `CMFCRibbonEdit` control has the focus; otherwise FALSE.  
   
 ### Remarks  
   
@@ -318,10 +318,10 @@ virtual BOOL HasLargeMode() const;
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to indicate whether the display size can be large.  
+ By default this method always returns FALSE. Override this method to indicate whether the display size can be large.  
   
 ##  <a name="hasspinbuttons"></a>  CMFCRibbonEdit::HasSpinButtons  
  Indicates whether the text box has a spin button.  
@@ -331,7 +331,7 @@ virtual BOOL HasSpinButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if the text box has a spin button; otherwise `FALSE`.  
+ TRUE if the text box has a spin button; otherwise FALSE.  
   
 ### Remarks  
   
@@ -343,7 +343,7 @@ virtual BOOL IsHighlighted() const;
 ```  
   
 ### Return Value  
- `TRUE` if the `CMFCRibbonEdit` control is highlighted; otherwise `FALSE`.  
+ TRUE if the `CMFCRibbonEdit` control is highlighted; otherwise FALSE.  
   
 ### Remarks  
   
@@ -430,7 +430,7 @@ virtual void OnEnable(BOOL bEnable);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the control; `FALSE` to disable the control.  
+ TRUE to enable the control; FALSE to disable the control.  
   
 ### Remarks  
   
@@ -443,7 +443,7 @@ virtual void OnHighlight(BOOL bHighlight);
   
 ### Parameters  
  [in] *bHighlight*  
- `TRUE` if the pointer is in the bounds of the `CMFCRibbonEdit` control; otherwise, `FALSE`.  
+ TRUE if the pointer is in the bounds of the `CMFCRibbonEdit` control; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -456,10 +456,10 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
   
 ### Parameters  
  [in] *bIsMenuKey*  
- `TRUE` if the keytip displays a pop-up menu; otherwise, `FALSE`.  
+ TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
   
 ### Return Value  
- `TRUE` if the event was handled; otherwise, `FALSE`.  
+ TRUE if the event was handled; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -498,7 +498,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
   
 ### Parameters  
  [in] *bIsRTL*  
- `TRUE` if the layout is right-to-left; `FALSE` if the layout is left-to-right.  
+ TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
   
@@ -511,7 +511,7 @@ virtual void OnShow(BOOL bShow);
   
 ### Parameters  
  [in] *bShow*  
- `TRUE` to show the control; `FALSE` to hide the control.  
+ TRUE to show the control; FALSE to hide the control.  
   
 ### Remarks  
   
@@ -523,7 +523,7 @@ virtual void Redraw();
 ```  
   
 ### Remarks  
- This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the `RDW_INVALIDATE`, `RDW_ERASE`, and `RDW_UPDATENOW` flags set.  
+ This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData  
  Sets the accessibility data for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
@@ -542,7 +542,7 @@ virtual BOOL SetACCData(
  The accessibility data for the `CMFCRibbonEdit` object.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
   
@@ -571,11 +571,11 @@ void SetTextAlign(int nAlign);
 ### Remarks  
  The parameter *nAlign* is one of the following edit control styles:  
   
-- **ES_LEFT** for left alignment  
+- ES_LEFT for left alignment  
   
-- **ES_CENTER** for center alignment  
+- ES_CENTER for center alignment  
   
-- **ES_RIGHT** for right alignment  
+- ES_RIGHT for right alignment  
   
  For more information about these styles, see [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
@@ -593,7 +593,7 @@ void SetWidth(
  The width, in pixels, of the text box.  
   
  *bInFloatyMode*  
- `TRUE` to set the width for floating mode; `FALSE` to set the width for regular mode.  
+ TRUE to set the width for floating mode; FALSE to set the width for regular mode.  
   
 ### Remarks  
  The `CMFCRibbonEdit` control has two widths depending on its display mode: floating mode and regular mode.  

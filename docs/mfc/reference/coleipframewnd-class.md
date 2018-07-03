@@ -56,7 +56,7 @@ class COleIPFrameWnd : public CFrameWnd
  **Header:** afxole.h  
   
 ##  <a name="coleipframewnd"></a>  COleIPFrameWnd::COleIPFrameWnd  
- Constructs a `COleIPFrameWnd` object and initializes its in-place state information, which is stored in a structure of type **OLEINPLACEFRAMEINFO**.  
+ Constructs a `COleIPFrameWnd` object and initializes its in-place state information, which is stored in a structure of type OLEINPLACEFRAMEINFO.  
   
 ```  
 COleIPFrameWnd();
@@ -84,7 +84,7 @@ virtual BOOL OnCreateControlBars(
  Pointer to the container application's frame window.  
   
  *pWndDoc*  
- Pointer to the container's document-level window. Can be **NULL** if the container is an SDI application.  
+ Pointer to the container's document-level window. Can be NULL if the container is an SDI application.  
   
 ### Return Value  
  Nonzero on success; otherwise, 0.  

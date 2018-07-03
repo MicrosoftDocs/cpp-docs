@@ -90,7 +90,7 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
  A pointer to a `LPAFX_SHELLITEMINFO` structure that describes a folder to display.  
   
 ### Return Value  
- `S_OK` if successful; `E_FAIL` otherwise.  
+ S_OK if successful; E_FAIL otherwise.  
   
 ##  <a name="displayparentfolder"></a>  CMFCShellListCtrl::DisplayParentFolder  
  Updates the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object to display the parent folder of the currently displayed folder.  
@@ -100,7 +100,7 @@ virtual HRESULT DisplayParentFolder();
 ```  
   
 ### Return Value  
- `S_OK` if successful; `E_FAIL` otherwise.  
+ S_OK if successful; E_FAIL otherwise.  
   
 ##  <a name="enableshellcontextmenu"></a>  CMFCShellListCtrl::EnableShellContextMenu  
  Enables the shortcut menu.  
@@ -168,7 +168,7 @@ const IShellFolder* GetCurrentShellFolder() const;
  A pointer to the [IShellFolder Interface](http://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.  
   
 ### Remarks  
- This method returns `NULL` if no object is currently selected.  
+ This method returns NULL if no object is currently selected.  
   
 ##  <a name="getitempath"></a>  CMFCShellListCtrl::GetItemPath  
  Retrieves the path for an item.  
@@ -187,7 +187,7 @@ BOOL GetItemPath(
  The index of the list item.  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` otherwise.  
+ TRUE if successful; FALSE otherwise.  
   
 ### Remarks  
  The index supplied by *iItem* is based on the items currently displayed by the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
@@ -213,7 +213,7 @@ BOOL IsDesktop() const;
 ```  
   
 ### Return Value  
- `TRUE` if the displayed folder is the desktop folder; `FALSE` otherwise.  
+ TRUE if the displayed folder is the desktop folder; FALSE otherwise.  
   
 ##  <a name="oncompareitems"></a>  CMFCShellListCtrl::OnCompareItems  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -286,7 +286,7 @@ virtual int OnGetItemIcon(
  The item index.  
   
  [in] *pItem*  
- A `LPAFX_SHELLITEMINFO` parameter that describes the item.  
+ A LPAFX_SHELLITEMINFO parameter that describes the item.  
   
 ### Return Value  
  The index of the icon image if successful; -1 if the function fails.  
@@ -314,7 +314,7 @@ virtual CString OnGetItemText(
  The column of interest.  
   
  [in] *pItem*  
- A `LPAFX_SHELLITEMINFO` parameter that describes the item.  
+ A LPAFX_SHELLITEMINFO parameter that describes the item.  
   
 ### Return Value  
  A `CString` that contains the text associated with the item.  
@@ -332,7 +332,7 @@ virtual void OnSetColumns();
 ```  
   
 ### Remarks  
- By default, the framework creates four columns in a `CMFCShellListCtrl` object. The names of these columns are `Name`, `Size`, `Type`, and `Modified`. You can override this method to customize the number of columns and their names.  
+ By default, the framework creates four columns in a `CMFCShellListCtrl` object. The names of these columns are **Name**, **Size**, **Type**, and **Modified**. You can override this method to customize the number of columns and their names.  
   
 ##  <a name="refresh"></a>  CMFCShellListCtrl::Refresh  
  Refreshes and repaints the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  

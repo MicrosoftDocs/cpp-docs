@@ -70,9 +70,9 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 ## Remarks  
  Most of the methods in this class override methods in the [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md) class.  
   
- If a pane uses the `AFX_CBRS_AUTO_ROLLUP` style and the user docks that pane to a multi-pane frame window, the user can roll up the window regardless of the style settings of the other docked panes.  
+ If a pane uses the AFX_CBRS_AUTO_ROLLUP style and the user docks that pane to a multi-pane frame window, the user can roll up the window regardless of the style settings of the other docked panes.  
   
- The framework automatically creates a `CMultiPaneFrameWnd` object when the user floats a pane that uses the `CBRS_FLOAT_MULTI` style.  
+ The framework automatically creates a `CMultiPaneFrameWnd` object when the user floats a pane that uses the CBRS_FLOAT_MULTI style.  
   
  For information about deriving a class from the `CPaneFrameWnd` class and creating it dynamically, see [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).  
   

@@ -97,7 +97,7 @@ virtual CSize GetCompactSize(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` associated with the checkbox.  
+ Pointer to the CDC associated with the checkbox.  
   
 ### Return Value  
  Returns a `CSize` object that contains the compact size of the checkbox.  
@@ -114,7 +114,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` associated with this checkbox.  
+ Pointer to the CDC associated with this checkbox.  
   
 ### Return Value  
  A `CSize` object containing the intermediate size of the checkbox.  
@@ -131,7 +131,7 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` object associated with this checkbox.  
+ Pointer to the CDC object associated with this checkbox.  
   
 ### Return Value  
  Returns a `CSize` object that contains the regular size of the checkbox.  
@@ -147,7 +147,7 @@ virtual BOOL IsDrawTooltipImage() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if there is a tooltip image associated with the checkbox, or `FALSE` if not.  
+ Returns TRUE if there is a tooltip image associated with the checkbox, or FALSE if not.  
   
 ### Remarks  
   
@@ -160,7 +160,7 @@ virtual void OnDraw(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` in which to draw the checkbox.  
+ Pointer to the CDC in which to draw the checkbox.  
   
 ### Remarks  
   
@@ -173,16 +173,16 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
   
 ### Parameters  
  [in] *CDC**  
- Pointer to the `CDC` associated with the checkbox.  
+ Pointer to the CDC associated with the checkbox.  
   
  [in] *CRect*  
  A `CRect` object specifying the rectangle in which to draw the menu image.  
   
 ### Return Value  
- Returns `TRUE` if the image was drawn, or `FALSE` if not.  
+ Returns TRUE if the image was drawn, or FALSE if not.  
   
 ### Remarks  
- If not overridden, returns `FALSE`.  
+ If not overridden, returns FALSE.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonCheckBox::OnDrawOnList  
  Called by the framework to draw the checkbox in a commands list box.  
@@ -211,10 +211,10 @@ virtual void OnDrawOnList(
  The display rectangle for the checkbox.  
   
  [in] *bIsSelected*  
- `TRUE` if the checkbox is selected, or `FALSE` if not.  
+ TRUE if the checkbox is selected, or FALSE if not.  
   
  [in] *bHighlighted*  
- `TRUE` if the checkbox is highlighted, or `FALSE` if not.  
+ TRUE if the checkbox is highlighted, or FALSE if not.  
   
 ### Remarks  
   
@@ -235,10 +235,10 @@ virtual BOOL SetACCData(
  The accessibility data for the checkbox.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method sets the accessibility data for the checkbox and always returns `TRUE`. Override this method to set the accessibility data and return a value that indicates success or failure.  
+ By default this method sets the accessibility data for the checkbox and always returns TRUE. Override this method to set the accessibility data and return a value that indicates success or failure.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

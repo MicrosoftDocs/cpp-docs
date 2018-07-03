@@ -82,7 +82,7 @@ CMFCPropertyPage(
  Resource ID of the label to put in the tab for this page. If 0, the name is obtained from the dialog box template for this page. The default value is 0.  
   
  *lpszTemplateName*  
- Points to the name of the template for this page. Cannot be `NULL`.  
+ Points to the name of the template for this page. Cannot be NULL.  
   
 ### Return Value  
   

@@ -45,7 +45,7 @@ typedef struct tagCREATESTRUCT {
  Identifies the menu to be used by the new window. If a child window, contains the integer ID.  
   
  *hwndParent*  
- Identifies the window that owns the new window. This member is **NULL** if the new window is a top-level window.  
+ Identifies the window that owns the new window. This member is NULL if the new window is a top-level window.  
   
  *cy*  
  Specifies the height of the new window.  

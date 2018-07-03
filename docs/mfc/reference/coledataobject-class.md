@@ -49,7 +49,7 @@ class COleDataObject
   
  These kinds of data transfers include a source and a destination. The data source is implemented as an object of the [COleDataSource](../../mfc/reference/coledatasource-class.md) class. Whenever a destination application has data dropped in it or is asked to perform a paste operation from the Clipboard, an object of the `COleDataObject` class must be created.  
   
- This class enables you to determine whether the data exists in a specified format. You can also enumerate the available data formats or check whether a given format is available and then retrieve the data in the preferred format. Object retrieval can be accomplished in several different ways, including the use of a [CFile](../../mfc/reference/cfile-class.md), an `HGLOBAL`, or an **STGMEDIUM** structure.  
+ This class enables you to determine whether the data exists in a specified format. You can also enumerate the available data formats or check whether a given format is available and then retrieve the data in the preferred format. Object retrieval can be accomplished in several different ways, including the use of a [CFile](../../mfc/reference/cfile-class.md), an HGLOBAL, or an `STGMEDIUM` structure.  
   
  For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in the Windows SDK.  
   
@@ -75,7 +75,7 @@ void Attach(
  Points to an OLE data object.  
   
  *bAutoRelease*  
- **TRUE** if the OLE data object should be released when the `COleDataObject` object is destroyed; otherwise **FALSE**.  
+ TRUE if the OLE data object should be released when the `COleDataObject` object is destroyed; otherwise FALSE.  
   
 ### Remarks  
  For more information, see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the Windows SDK.  
@@ -152,7 +152,7 @@ BOOL GetData(
  Points to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive data.  
   
  *lpFormatEtc*  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -176,10 +176,10 @@ CFile* GetFileData(
  The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
  *lpFormatEtc*  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
- Pointer to the new `CFile` or `CFile`-derived object containing the data if successful; otherwise **NULL**.  
+ Pointer to the new `CFile` or `CFile`-derived object containing the data if successful; otherwise NULL.  
   
 ### Remarks  
  Depending on the medium the data is stored in, the actual type pointed to by the return value may be `CFile`, `CSharedFile`, or `COleStreamFile`.  
@@ -192,7 +192,7 @@ CFile* GetFileData(
  For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="getglobaldata"></a>  COleDataObject::GetGlobalData  
- Call this function to allocate a global memory block and to retrieve data in the specified format into an `HGLOBAL`.  
+ Call this function to allocate a global memory block and to retrieve data in the specified format into an HGLOBAL.  
   
 ```  
 HGLOBAL GetGlobalData(
@@ -205,10 +205,10 @@ HGLOBAL GetGlobalData(
  The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
  *lpFormatEtc*  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
- The handle of the global memory block containing the data if successful; otherwise **NULL**.  
+ The handle of the global memory block containing the data if successful; otherwise NULL.  
   
 ### Remarks  
  For more information, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the Windows SDK.  
@@ -250,7 +250,7 @@ BOOL IsDataAvailable(
  The Clipboard data format to be used in the structure pointed to by *lpFormatEtc*. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
   
  *lpFormatEtc*  
- Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format desired. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is **NULL**, the default values are used for the other fields in the **FORMATETC** structure.  
+ Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format desired. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if data is available in the specified format; otherwise 0.  
@@ -273,7 +273,7 @@ void Release();
 ```  
   
 ### Remarks  
- The `IDataObject` was associated with the `COleDataObject` by calling `Attach` or `AttachClipboard` explicitly or by the framework. If the `bAutoRelease` parameter of `Attach` is **FALSE**, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317).  
+ The `IDataObject` was associated with the `COleDataObject` by calling `Attach` or `AttachClipboard` explicitly or by the framework. If the *bAutoRelease* parameter of `Attach` is FALSE, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317).  
   
 ## See Also  
  [MFC Sample HIERSVR](../../visual-cpp-samples.md)   

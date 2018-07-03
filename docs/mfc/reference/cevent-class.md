@@ -83,13 +83,13 @@ CEvent(
   
 ### Parameters  
  *bInitiallyOwn*  
- If **TRUE**, the thread for the `CMultilock` or `CSingleLock` object is enabled. Otherwise, all threads wanting to access the resource must wait.  
+ If TRUE, the thread for the `CMultilock` or `CSingleLock` object is enabled. Otherwise, all threads wanting to access the resource must wait.  
   
  *bManualReset*  
- If **TRUE**, specifies that the event object is a manual event, otherwise the event object is an automatic event.  
+ If TRUE, specifies that the event object is a manual event, otherwise the event object is an automatic event.  
   
  *lpszName*  
- Name of the `CEvent` object. Must be supplied if the object will be used across process boundaries. If the name matches an existing event, the constructor builds a new `CEvent` object which references the event of that name. If the name matches an existing synchronization object that is not an event, the construction will fail. If **NULL**, the name will be null.  
+ Name of the `CEvent` object. Must be supplied if the object will be used across process boundaries. If the name matches an existing event, the constructor builds a new `CEvent` object which references the event of that name. If the name matches an existing synchronization object that is not an event, the construction will fail. If NULL, the name will be null.  
   
  *lpsaAttribute*  
  Security attributes for the event object. For a full description of this structure, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the Windows SDK.  

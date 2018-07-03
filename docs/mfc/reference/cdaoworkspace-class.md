@@ -241,54 +241,54 @@ static void PASCAL CompactDatabase(
  A password, used when you want to compact a password-protected database. Note that if you use the version of `CompactDatabase` that takes a password, you must supply all parameters. Also, because this is a connect parameter, it requires special formatting, as follows: ;PWD= *lpszPassword*. For example: ;PWD="Happy". (The leading semicolon is required.)  
   
  *lpszLocale*  
- A string expression used to specify collating order for creating *lpszDestName*. If you omit this argument by accepting the default value of **dbLangGeneral** (see below), the locale of the new database is the same as that of the old database. Possible values are:  
+ A string expression used to specify collating order for creating *lpszDestName*. If you omit this argument by accepting the default value of `dbLangGeneral` (see below), the locale of the new database is the same as that of the old database. Possible values are:  
   
-- **dbLangGeneral** English, German, French, Portuguese, Italian, and Modern Spanish  
+- `dbLangGeneral` English, German, French, Portuguese, Italian, and Modern Spanish  
   
-- **dbLangArabic** Arabic  
+- `dbLangArabic` Arabic  
   
-- **dbLangCyrillic** Russian  
+- `dbLangCyrillic` Russian  
   
-- **dbLangCzech** Czech  
+- `dbLangCzech` Czech  
   
-- **dbLangDutch** Dutch  
+- `dbLangDutch` Dutch  
   
-- **dbLangGreek** Greek  
+- `dbLangGreek` Greek  
   
-- **dbLangHebrew** Hebrew  
+- `dbLangHebrew` Hebrew  
   
-- **dbLangHungarian** Hungarian  
+- `dbLangHungarian` Hungarian  
   
-- **dbLangIcelandic** Icelandic  
+- `dbLangIcelandic` Icelandic  
   
-- **dbLangNordic** Nordic languages (Microsoft Jet database engine version 1.0 only)  
+- `dbLangNordic` Nordic languages (Microsoft Jet database engine version 1.0 only)  
   
-- **dbLangNorwdan** Norwegian and Danish  
+- `dbLangNorwdan` Norwegian and Danish  
   
-- **dbLangPolish** Polish  
+- `dbLangPolish` Polish  
   
-- **dbLangSpanish** Traditional Spanish  
+- `dbLangSpanish` Traditional Spanish  
   
-- **dbLangSwedfin** Swedish and Finnish  
+- `dbLangSwedfin` Swedish and Finnish  
   
-- **dbLangTurkish** Turkish  
+- `dbLangTurkish` Turkish  
   
  *nOptions*  
- Indicates one or more options for the target database, *lpszDestName*. If you omit this argument by accepting the default value, the *lpszDestName* will have the same encryption and the same version as *lpszSrcName*. You can combine the **dbEncrypt** or **dbDecrypt** option with one of the version options using the bitwise-OR operator. Possible values, which specify a database format, not a database engine version, are:  
+ Indicates one or more options for the target database, *lpszDestName*. If you omit this argument by accepting the default value, the *lpszDestName* will have the same encryption and the same version as *lpszSrcName*. You can combine the `dbEncrypt` or `dbDecrypt` option with one of the version options using the bitwise-OR operator. Possible values, which specify a database format, not a database engine version, are:  
   
-- **dbEncrypt** Encrypt the database while compacting.  
+- `dbEncrypt` Encrypt the database while compacting.  
   
-- **dbDecrypt** Decrypt the database while compacting.  
+- `dbDecrypt` Decrypt the database while compacting.  
   
-- **dbVersion10** Create a database that uses the Microsoft Jet database engine version 1.0 while compacting.  
+- `dbVersion10` Create a database that uses the Microsoft Jet database engine version 1.0 while compacting.  
   
-- **dbVersion11** Create a database that uses the Microsoft Jet database engine version 1.1 while compacting.  
+- `dbVersion11` Create a database that uses the Microsoft Jet database engine version 1.1 while compacting.  
   
-- **dbVersion20** Create a database that uses the Microsoft Jet database engine version 2.0 while compacting.  
+- `dbVersion20` Create a database that uses the Microsoft Jet database engine version 2.0 while compacting.  
   
-- **dbVersion30** Create a database that uses the Microsoft Jet database engine version 3.0 while compacting.  
+- `dbVersion30` Create a database that uses the Microsoft Jet database engine version 3.0 while compacting.  
   
- You can use **dbEncrypt** or **dbDecrypt** in the options argument to specify whether to encrypt or to decrypt the database as it is compacted. If you omit an encryption constant or if you include both **dbDecrypt** and **dbEncrypt**, *lpszDestName* will have the same encryption as *lpszSrcName*. You can use one of the version constants in the options argument to specify the version of the data format for the compacted database. This constant affects only the version of the data format of *lpszDestName*. You can specify only one version constant. If you omit a version constant, *lpszDestName* will have the same version as *lpszSrcName*. You can compact *lpszDestName* only to a version that is the same or later than that of *lpszSrcName*.  
+ You can use `dbEncrypt` or `dbDecrypt` in the options argument to specify whether to encrypt or to decrypt the database as it is compacted. If you omit an encryption constant or if you include both `dbDecrypt` and `dbEncrypt`, *lpszDestName* will have the same encryption as *lpszSrcName*. You can use one of the version constants in the options argument to specify the version of the data format for the compacted database. This constant affects only the version of the data format of *lpszDestName*. You can specify only one version constant. If you omit a version constant, *lpszDestName* will have the same version as *lpszSrcName*. You can compact *lpszDestName* only to a version that is the same or later than that of *lpszSrcName*.  
   
 > [!CAUTION]
 >  If a database is not encrypted, it is possible, even if you implement user/password security, to directly read the binary disk file that constitutes the database.  
@@ -374,11 +374,11 @@ void GetDatabaseInfo(
  *dwInfoOptions*  
  Options that specify which information about the database to retrieve. The available options are listed here along with what they cause the function to return:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Updatable, Transactions  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Updatable, Transactions  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: Version, Collating Order, Query Timeout  
+- AFX_DAO_SECONDARY_INFO Primary information plus: Version, Collating Order, Query Timeout  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: Connect  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: Connect  
   
  *lpszName*  
  The name of the database object, for lookup by name. The name is a string with up to 14 characters that uniquely names the new workspace object.  
@@ -416,7 +416,7 @@ BOOL GetIsolateODBCTrans();
 ### Remarks  
  In some situations, you might need to have multiple simultaneous transactions pending on the same ODBC database. To do this, you need to open a separate workspace for each transaction. Keep in mind that although each workspace can have its own ODBC connection to the database, this slows system performance. Because transaction isolation is not normally required, ODBC connections from multiple workspace objects opened by the same user are shared by default.  
   
- Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to **TRUE** on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
+ Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to TRUE on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
   
  For related information, see the topic "IsolateODBCTrans Property" in DAO Help.  
   
@@ -521,11 +521,11 @@ void GetWorkspaceInfo(
  *dwInfoOptions*  
  Options that specify which information about the workspace to retrieve. The available options are listed here along with what they cause the function to return:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name  
+- AFX_DAO_PRIMARY_INFO (Default) Name  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: User Name  
+- AFX_DAO_SECONDARY_INFO Primary information plus: User Name  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: Isolate ODBCTrans  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: Isolate ODBCTrans  
   
  *lpszName*  
  The name of the workspace object, for lookup by name. The name is a string with up to 14 characters that uniquely names the new workspace object.  
@@ -534,7 +534,7 @@ void GetWorkspaceInfo(
  For a description of the information returned in *wkspcinfo*, see the [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for prior levels as well.  
   
 ##  <a name="idle"></a>  CDaoWorkspace::Idle  
- Call **Idle** to provide the database engine with the opportunity to perform background tasks that may not be up-to-date because of intense data processing.  
+ Call `Idle` to provide the database engine with the opportunity to perform background tasks that may not be up-to-date because of intense data processing.  
   
 ```  
 static void PASCAL Idle(int nAction = dbFreeLocks);
@@ -542,7 +542,7 @@ static void PASCAL Idle(int nAction = dbFreeLocks);
   
 ### Parameters  
  *nAction*  
- An action to take during the idle processing. Currently the only valid action is **dbFreeLocks**.  
+ An action to take during the idle processing. Currently the only valid action is `dbFreeLocks`.  
   
 ### Remarks  
  This is often true in multiuser, multitasking environments in which there is not enough background processing time to keep all records in a recordset current.  
@@ -550,7 +550,7 @@ static void PASCAL Idle(int nAction = dbFreeLocks);
 > [!NOTE]
 >  Calling `Idle` is not necessary with databases created with version 3.0 of the Microsoft Jet database engine. Use `Idle` only for databases created with earlier versions.  
   
- Usually, read locks are removed and data in local dynaset-type recordset objects is updated only when no other actions (including mouse movements) are occurring. If you periodically call `Idle`, you provide the database engine with time to catch up on background processing tasks by releasing unneeded read locks. Specifying the **dbFreeLocks** constant as an argument delays processing until all read locks are released.  
+ Usually, read locks are removed and data in local dynaset-type recordset objects is updated only when no other actions (including mouse movements) are occurring. If you periodically call `Idle`, you provide the database engine with time to catch up on background processing tasks by releasing unneeded read locks. Specifying the `dbFreeLocks` constant as an argument delays processing until all read locks are released.  
   
  This member function is not needed in single-user environments unless multiple instances of an application are running. The `Idle` member function may increase performance in a multiuser environment because it forces the database engine to flush data to disk, releasing locks on memory. You can also release read locks by making operations part of a transaction.  
   
@@ -586,12 +586,12 @@ virtual void Open(LPCTSTR lpszName = NULL);
   
 ### Parameters  
  *lpszName*  
- The name of the DAO workspace object to open — a string with up to 14 characters that uniquely names the workspace. Accept the default value **NULL** to explicitly open the default workspace. For naming requirements, see the *lpszName* parameter for [Create](#create). For related information, see the topic "Name Property" in DAO Help.  
+ The name of the DAO workspace object to open — a string with up to 14 characters that uniquely names the workspace. Accept the default value NULL to explicitly open the default workspace. For naming requirements, see the *lpszName* parameter for [Create](#create). For related information, see the topic "Name Property" in DAO Help.  
   
 ### Remarks  
  After constructing a `CDaoWorkspace` object, call this member function to do one of the following:  
   
--   Explicitly open the default workspace. Pass **NULL** for *lpszName*.  
+-   Explicitly open the default workspace. Pass NULL for *lpszName*.  
   
 -   Open an existing `CDaoWorkspace` object, a member of the Workspaces collection, by name. Pass a valid name for an existing workspace object.  
   
@@ -723,12 +723,12 @@ void SetIsolateODBCTrans(BOOL bIsolateODBCTrans);
   
 ### Parameters  
  *bIsolateODBCTrans*  
- Pass **TRUE** if you want to begin isolating ODBC transactions. Pass **FALSE** if you want to stop isolating ODBC transactions.  
+ Pass TRUE if you want to begin isolating ODBC transactions. Pass FALSE if you want to stop isolating ODBC transactions.  
   
 ### Remarks  
  In some situations, you might need to have multiple simultaneous transactions pending on the same ODBC database. To do this, you need to open a separate workspace for each transaction. Although each workspace can have its own ODBC connection to the database, this slows system performance. Because transaction isolation is not normally required, ODBC connections from multiple workspace objects opened by the same user are shared by default.  
   
- Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to **TRUE** on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
+ Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to TRUE on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
   
 ##  <a name="setlogintimeout"></a>  CDaoWorkspace::SetLoginTimeout  
  Call this member function to set the value of the DAO LoginTimeout property for the workspace.  

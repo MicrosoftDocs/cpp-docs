@@ -33,7 +33,7 @@ class CD2DRectU : public D2D1_RECT_U;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRectU::IsNull](#isnull)|Returns a **boolean** value that indicates whether an expression contains no valid data ( **null**).|  
+|[CD2DRectU::IsNull](#isnull)|Returns a **boolean** value that indicates whether an expression contains no valid data (NULL).|  
   
 ### Public Operators  
   

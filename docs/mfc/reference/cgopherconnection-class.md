@@ -93,17 +93,17 @@ CGopherConnection(
  The context identifier for the operation. *dwContext* identifies the operation's status information returned by [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback). The default is set to 1; however, you can explicitly assign a specific context ID for the operation. The object and any work it does will be associated with that context ID.  
   
  *pstrUserName*  
- Pointer to a null-terminated string that specifies the name of the user to log in. If **NULL**, the default is anonymous.  
+ Pointer to a null-terminated string that specifies the name of the user to log in. If NULL, the default is anonymous.  
   
  *pstrPassword*  
- A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are **NULL**, the default anonymous password is the user's email name. If *pstrPassword* is **NULL** (or an empty string) but *pstrUserName* is not **NULL**, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:  
+ A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:  
   
 |*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
-|**NULL** or " "|**NULL** or " "|"anonymous"|User's email name|  
-|Non- **NULL** String|**NULL** or " "|*pstrUserName*|" "|  
-|**NULL** Non- **NULL** String|**ERROR**|**ERROR**||  
-|Non- **NULL** String|Non- **NULL** String|*pstrUserName*|*pstrPassword*|  
+|NULL or " "|NULL or " "|"anonymous"|User's email name|  
+|Non- NULL String|NULL or " "|*pstrUserName*|" "|  
+|NULL Non- NULL String|ERROR|ERROR||  
+|Non- NULL String|Non- NULL String|*pstrUserName*|*pstrPassword*|  
   
  *nPort*  
  A number that identifies the TCP/IP port to use on the server.  
@@ -133,10 +133,10 @@ static CGopherLocator CreateLocator(
   
 ### Parameters  
  *pstrDisplayString*  
- A pointer to a string containing the name of the gopher document or directory to be retrieved. If the *pstrDisplayString* parameter is **NULL**, the default directory for the gopher server is returned.  
+ A pointer to a string containing the name of the gopher document or directory to be retrieved. If the *pstrDisplayString* parameter is NULL, the default directory for the gopher server is returned.  
   
  *pstrSelectorString*  
- A pointer to the selector string to be sent to the gopher server in order to retrieve an item. *pstrSelectorString* can be **NULL**.  
+ A pointer to the selector string to be sent to the gopher server in order to retrieve an item. *pstrSelectorString* can be NULL.  
   
  *dwGopherType*  
  This specifies whether *pstrSelectorString* refers to a directory or document, and whether the request is gopher or gopher+. See the attributes for the structure [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) in the Windows SDK.  
@@ -199,7 +199,7 @@ CGopherFile* OpenFile(
  Any combination of INTERNET_FLAG_* flags. See [CInternetSession::OpenUrl](../../mfc/reference/cinternetsession-class.md#openurl) for further information on INTERNET_FLAG_\* flags.  
   
  *pstrView*  
- A pointer to a file-view string. If several views of the file exist at the server, this parameter specifies which file view to open. If *pstrView* is **NULL**, the default file view is used.  
+ A pointer to a file-view string. If several views of the file exist at the server, this parameter specifies which file view to open. If *pstrView* is NULL, the default file view is used.  
   
  *dwContext*  
  The context ID for the file being opened. See **Remarks** for more information about *dwContext*.  

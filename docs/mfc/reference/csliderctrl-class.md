@@ -101,7 +101,7 @@ void ClearSel(BOOL bRedraw = FALSE);
   
 ### Parameters  
  *bRedraw*  
- Redraw flag. If this parameter is **TRUE**, the slider is redrawn after the selection is cleared; otherwise the slider is not redrawn.  
+ Redraw flag. If this parameter is TRUE, the slider is redrawn after the selection is cleared; otherwise the slider is not redrawn.  
   
 ##  <a name="cleartics"></a>  CSliderCtrl::ClearTics  
  Removes the current tick marks from a slider control.  
@@ -112,7 +112,7 @@ void ClearTics(BOOL bRedraw = FALSE);
   
 ### Parameters  
  *bRedraw*  
- Redraw flag. If this parameter is **TRUE**, the slider is redrawn after the tick marks are cleared; otherwise the slider is not redrawn.  
+ Redraw flag. If this parameter is TRUE, the slider is redrawn after the tick marks are cleared; otherwise the slider is not redrawn.  
   
 ##  <a name="create"></a>  CSliderCtrl::Create  
  Creates a slider control and attaches it to a `CSliderCtrl` object.  
@@ -133,7 +133,7 @@ virtual BOOL Create(
  Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
  *pParentWnd*  
- Specifies the slider control's parent window, usually a `CDialog`. It must not be **NULL**.  
+ Specifies the slider control's parent window, usually a `CDialog`. It must not be NULL.  
   
  *nID*  
  Specifies the slider control's ID.  
@@ -144,7 +144,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CSliderCtrl` in two steps. First, call the constructor, and then call `Create`, which creates the slider control and attaches it to the `CSliderCtrl` object.  
   
- Depending on the values set for `dwStyle`, the slider control can have either a vertical or horizontal orientation. It can have tick marks on either side, both sides, or neither. It can also be used to specify a range of consecutive values.  
+ Depending on the values set for *dwStyle*, the slider control can have either a vertical or horizontal orientation. It can have tick marks on either side, both sides, or neither. It can also be used to specify a range of consecutive values.  
   
  To apply extended window styles to the slider control, call [CreateEx](#createex) instead of `Create`.  
   
@@ -200,12 +200,12 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
  *fLocation*  
  A Boolean value that indicates which of two buddy window handles to retrieve. Can be one of the following values:  
   
-- **TRUE** Retrieves the handle to the buddy to the left of the slider. If the slider control uses the `TBS_VERT` style, the message will retrieve the buddy above the slider.  
+- TRUE Retrieves the handle to the buddy to the left of the slider. If the slider control uses the TBS_VERT style, the message will retrieve the buddy above the slider.  
   
-- **FALSE** Retrieves the handle to the buddy to the right of the slider. If the slider control uses the `TBS_VERT` style, the message will retrieve the buddy below the slider.  
+- FALSE Retrieves the handle to the buddy to the right of the slider. If the slider control uses the TBS_VERT style, the message will retrieve the buddy below the slider.  
   
 ### Return Value  
- A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the buddy window at the location specified by `fLocation`, or **NULL** if no buddy window exists at that location.  
+ A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the buddy window at the location specified by *fLocation*, or NULL if no buddy window exists at that location.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TBM_GETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760178), as described in the Windows SDK. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
@@ -235,7 +235,7 @@ int GetLineSize() const;
  The size of a line for the slider control.  
   
 ### Remarks  
- The line size affects how much the slider moves for the **TB_LINEUP** and **TB_LINEDOWN** notifications. The default setting for the line size is 1.  
+ The line size affects how much the slider moves for the TB_LINEUP and TB_LINEDOWN notifications. The default setting for the line size is 1.  
   
 ##  <a name="getnumtics"></a>  CSliderCtrl::GetNumTics  
  Retrieves the number of tick marks in a slider control.  
@@ -258,7 +258,7 @@ int GetPageSize() const;
  The size of a page for the slider control.  
   
 ### Remarks  
- The page size affects how much the slider moves for the **TB_PAGEUP** and **TB_PAGEDOWN** notifications.  
+ The page size affects how much the slider moves for the TB_PAGEUP and TB_PAGEDOWN notifications.  
   
 ##  <a name="getpos"></a>  CSliderCtrl::GetPos  
  Retrieves the current position of the slider in a slider control.  
@@ -395,7 +395,7 @@ CToolTipCtrl* GetToolTips() const;
 ```  
   
 ### Return Value  
- A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object, or **NULL** if tooltips are not in use. If the slider control does not use the **TBS_TOOLTIPS** style, the return value is **NULL**.  
+ A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object, or NULL if tooltips are not in use. If the slider control does not use the TBS_TOOLTIPS style, the return value is NULL.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TBM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760209), as described in the Windows SDK. Note that this member function returns a `CToolTipCtrl` object instead of a handle to a control.  
@@ -418,9 +418,9 @@ CWnd* SetBuddy(
  *fLocation*  
  Value specifying the location at which to display the buddy window. This value can be one of the following:  
   
-- **TRUE** The buddy will appear to the left of the trackbar if the trackbar control uses the `TBS_HORZ` style. If the trackbar uses the `TBS_VERT` style, the buddy appears above the trackbar control.  
+- TRUE The buddy will appear to the left of the trackbar if the trackbar control uses the TBS_HORZ style. If the trackbar uses the TBS_VERT style, the buddy appears above the trackbar control.  
   
-- **FALSE** The buddy will appear to the right of the trackbar if the trackbar control uses the `TBS_HORZ` style. If the trackbar uses the `TBS_VERT` style, the buddy appears below the trackbar control.  
+- FALSE The buddy will appear to the right of the trackbar if the trackbar control uses the TBS_HORZ style. If the trackbar uses the TBS_VERT style, the buddy appears below the trackbar control.  
   
 ### Return Value  
  A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that was previously assigned to the slider control at that location.  
@@ -445,7 +445,7 @@ int SetLineSize(int nSize);
  The previous line size.  
   
 ### Remarks  
- The line size affects how much the slider moves for the **TB_LINEUP** and **TB_LINEDOWN** notifications.  
+ The line size affects how much the slider moves for the TB_LINEUP and TB_LINEDOWN notifications.  
   
 ##  <a name="setpagesize"></a>  CSliderCtrl::SetPageSize  
  Sets the size of the page for a slider control.  
@@ -462,7 +462,7 @@ int SetPageSize(int nSize);
  The previous page size.  
   
 ### Remarks  
- The page size affects how much the slider moves for the **TB_PAGEUP** and **TB_PAGEDOWN** notifications.  
+ The page size affects how much the slider moves for the TB_PAGEUP and TB_PAGEDOWN notifications.  
   
 ##  <a name="setpos"></a>  CSliderCtrl::SetPos  
  Sets the current position of the slider in a slider control.  
@@ -493,7 +493,7 @@ void SetRange(
  Maximum position for the slider.  
   
  *bRedraw*  
- The redraw flag. If this parameter is **TRUE**, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
+ The redraw flag. If this parameter is TRUE, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
   
 ##  <a name="setrangemax"></a>  CSliderCtrl::SetRangeMax  
  Sets the maximum range for the slider in a slider control.  
@@ -509,7 +509,7 @@ void SetRangeMax(
  Maximum position for the slider.  
   
  *bRedraw*  
- The redraw flag. If this parameter is **TRUE**, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
+ The redraw flag. If this parameter is TRUE, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
   
 ##  <a name="setrangemin"></a>  CSliderCtrl::SetRangeMin  
  Sets the minimum range for the slider in a slider control.  
@@ -525,7 +525,7 @@ void SetRangeMin(
  Minimum position for the slider.  
   
  *bRedraw*  
- The redraw flag. If this parameter is **TRUE**, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
+ The redraw flag. If this parameter is TRUE, the slider is redrawn after the range is set; otherwise the slider is not redrawn.  
   
 ##  <a name="setselection"></a>  CSliderCtrl::SetSelection  
  Sets the starting and ending positions for the current selection in a slider control.  
@@ -599,7 +599,7 @@ void SetTicFreq(int nFreq);
 ### Remarks  
  For example, if the frequency is set to 2, a tick mark is displayed for every other increment in the slider's range. The default setting for the frequency is 1 (that is, every increment in the range is associated with a tick mark).  
   
- You must create the control with the `TBS_AUTOTICKS` style to use this function. For more information, see [CSliderCtrl::Create](#create).  
+ You must create the control with the TBS_AUTOTICKS style to use this function. For more information, see [CSliderCtrl::Create](#create).  
   
 ##  <a name="settipside"></a>  CSliderCtrl::SetTipSide  
  Positions a tooltip control used by a trackbar control.  
@@ -616,7 +616,7 @@ int SetTipSide(int nLocation);
  A value that represents the tooltip control's previous location. The return value equals one of the possible values for *nLocation*.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message **TBM_SETTIPSIDE**, as described in the Windows SDK. Slider controls that use the **TBS_TOOLTIPS** style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
+ This member function implements the behavior of the Win32 message TBM_SETTIPSIDE, as described in the Windows SDK. Slider controls that use the TBS_TOOLTIPS style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips  
  Assigns a tooltip control to a slider control.  
@@ -630,7 +630,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object containing the tooltips to use with the slider control.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242), as described in the Windows SDK. When a slider control is created with the **TBS_TOOLTIPS** style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
+ This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242), as described in the Windows SDK. When a slider control is created with the TBS_TOOLTIPS style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   
