@@ -31,10 +31,10 @@ The scripts used by the ATL Registrar are described in this topic using BNF synt
 |**NoRemove**|Does not remove the next key during Unregister.|  
 |**val**|Specifies that `<Key Name>` is actually a named value.|  
 |**Delete**|Deletes the next key during Register.|  
-|**s**|Specifies that the next value is a string (**REG_SZ**).|  
-|**d**|Specifies that the next value is a **DWORD** (**REG_DWORD**).|  
-|**m**|Specifies that the next value is a multistring (**REG_MULTI_SZ**).|  
-|**b**|Specifies that the next value is a binary value (**REG_BINARY**).|  
+|**s**|Specifies that the next value is a string (REG_SZ).|  
+|**d**|Specifies that the next value is a DWORD (REG_DWORD).|  
+|**m**|Specifies that the next value is a multistring (REG_MULTI_SZ).|  
+|**b**|Specifies that the next value is a binary value (REG_BINARY).|  
   
 ## BNF Syntax Examples  
  Here are a few syntax examples to help you understand how the notation and string literals work in an ATL Registrar script.  
@@ -93,7 +93,7 @@ val 'testmulti' = m 'String 1\0String 2\0'
 val 'testhex' = d '&H55'  
 ```  
   
- specifies that the key name `testhex` is a **DWORD** value set to hexadecimal 55 (decimal 85). Note this format adheres to the **&H** notation as found in the Visual Basic specification.  
+ specifies that the key name `testhex` is a DWORD value set to hexadecimal 55 (decimal 85). Note this format adheres to the **&H** notation as found in the Visual Basic specification.  
   
 ## See Also  
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)

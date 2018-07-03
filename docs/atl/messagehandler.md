@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MessageHandler
-**MessageHandler** is the name of the function identified by the second parameter of the `MESSAGE_HANDLER` macro in your message map.  
+`MessageHandler` is the name of the function identified by the second parameter of the MESSAGE_HANDLER macro in your message map.  
   
 ## Syntax  
   
@@ -29,17 +29,17 @@ ms.workload: ["cplusplus"]
 ```  
   
 #### Parameters  
- `uMsg`  
+ *uMsg*  
  Specifies the message.  
   
- `wParam`  
+ *wParam*  
  Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  Additional message-specific information.  
   
- `bHandled`  
- The message map sets `bHandled` to **TRUE** before `MessageHandler` is called. If `MessageHandler` does not fully handle the message, it should set `bHandled` to **FALSE** to indicate the message needs further processing.  
+ *bHandled*  
+ The message map sets *bHandled* to TRUE before `MessageHandler` is called. If `MessageHandler` does not fully handle the message, it should set *bHandled* to FALSE to indicate the message needs further processing.  
   
 ## Return Value  
  The result of message processing. 0 if successful.  

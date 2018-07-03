@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Windows Support Classes
 The following classes provide support for windows:  
   
--   [_U_MENUorID](../atl/reference/u-menuorid-class.md) Provides wrappers for **CreateWindow** and **CreateWindowEx**.  
+-   [_U_MENUorID](../atl/reference/u-menuorid-class.md) Provides wrappers for `CreateWindow` and `CreateWindowEx`.  
   
 -   [CWindow](../atl/reference/cwindow-class.md) Contains methods for manipulating a window. `CWindow` is the base class for `CWindowImpl`, `CDialogImpl`, and `CContainedWindow`.  
   
