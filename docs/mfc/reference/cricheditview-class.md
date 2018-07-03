@@ -144,7 +144,7 @@ CRichEditView();
 ```  
   
 ##  <a name="dopaste"></a>  CRichEditView::DoPaste  
- Call this function to paste the OLE item in `dataobj` into this rich edit document/view.  
+ Call this function to paste the OLE item in *dataobj* into this rich edit document/view.  
   
 ```  
 void DoPaste(
@@ -166,7 +166,7 @@ void DoPaste(
 ### Remarks  
  The framework calls this function as part of the default implementation of [QueryAcceptData](#queryacceptdata).  
   
- This function determines the type of paste based on the results of the handler for Paste Special. If *cf* is 0, the new item uses the current iconic representation. If *cf* is nonzero and *hMetaPict* is not **NULL**, the new item uses *hMetaPict* for its representation.  
+ This function determines the type of paste based on the results of the handler for Paste Special. If *cf* is 0, the new item uses the current iconic representation. If *cf* is nonzero and *hMetaPict* is not NULL, the new item uses *hMetaPict* for its representation.  
   
 ##  <a name="findtext"></a>  CRichEditView::FindText  
  Call this function to find the specified text and set it to be the current selection.  
@@ -190,7 +190,7 @@ BOOL FindText(
  Indicates if the search should match whole words only, not parts of words.  
   
  *bNext*  
- Indicates the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
+ Indicates the direction of the search. If TRUE, the search direction is toward the end of the buffer. If FALSE, the search direction is toward the beginning of the buffer.  
   
 ### Return Value  
  Nonzero if the *lpszFind* text is found; otherwise 0.  
@@ -223,7 +223,7 @@ BOOL FindTextSimple(
  Indicates if the search should match whole words only, not parts of words.  
   
  *bNext*  
- Indicates the direction of the search. If **TRUE**, the search direction is toward the end of the buffer. If **FALSE**, the search direction is toward the beginning of the buffer.  
+ Indicates the direction of the search. If TRUE, the search direction is toward the end of the buffer. If FALSE, the search direction is toward the beginning of the buffer.  
   
 ### Return Value  
  Nonzero if the *lpszFind* text is found; otherwise 0.  
@@ -265,15 +265,15 @@ virtual HRESULT GetClipboardData(
  *dwReco*  
  Clipboard operation flag. Can be one of these values.  
   
-- **RECO_COPY** Copy to the Clipboard.  
+- RECO_COPY Copy to the Clipboard.  
   
-- **RECO_CUT** Cut to the Clipboard.  
+- RECO_CUT Cut to the Clipboard.  
   
-- **RECO_DRAG** Drag operation (drag and drop).  
+- RECO_DRAG Drag operation (drag and drop).  
   
-- **RECO_DROP** Drop operation (drag and drop).  
+- RECO_DROP Drop operation (drag and drop).  
   
-- **RECO_PASTE** Paste from the Clipboard.  
+- RECO_PASTE Paste from the Clipboard.  
   
  *lpRichDataObj*  
  Pointer to an [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) object containing the Clipboard data from the rich edit control ( [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341)).  
@@ -282,10 +282,10 @@ virtual HRESULT GetClipboardData(
  Pointer to the pointer variable that receives the address of the `IDataObject` object representing the range specified in the *lpchrg* parameter. The value of *lplpdataobj* is ignored if an error is returned.  
   
 ### Return Value  
- An `HRESULT` value reporting the success of the operation. For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ An HRESULT value reporting the success of the operation. For more information on HRESULT, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Remarks  
- If the return value indicates success, **IRichEditOleCallback::GetClipboardData** returns the `IDataObject` accessed by *lplpdataobj*; otherwise, it returns the one accessed by *lpRichDataObj*. Override this function to supply your own Clipboard data. The default implementation of this function returns **E_NOTIMPL**.  
+ If the return value indicates success, `IRichEditOleCallback::GetClipboardData` returns the `IDataObject` accessed by *lplpdataobj*; otherwise, it returns the one accessed by *lpRichDataObj*. Override this function to supply your own Clipboard data. The default implementation of this function returns E_NOTIMPL.  
   
  This is an advanced overridable.  
   
@@ -306,7 +306,7 @@ virtual HMENU GetContextMenu(
  The selection type. The selection type values are described in the Remarks section.  
   
  *lpoleobj*  
- Pointer to a **OLEOBJECT** structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, *lpoleobj* is **NULL**. The **OLEOBJECT** structure holds a pointer to an OLE object v-table.  
+ Pointer to a `OLEOBJECT` structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, *lpoleobj* is NULL. The `OLEOBJECT` structure holds a pointer to an OLE object v-table.  
   
  *lpchrg*  
  Pointer to a [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure containing the current selection.  
@@ -319,21 +319,21 @@ virtual HMENU GetContextMenu(
   
  The selection type can be any combination of the following flags:  
   
-- `SEL_EMPTY` Indicates that there is no current selection.  
+- SEL_EMPTY Indicates that there is no current selection.  
   
-- `SEL_TEXT` Indicates that the current selection contains text.  
+- SEL_TEXT Indicates that the current selection contains text.  
   
-- `SEL_OBJECT` Indicates that the current selection contains at least one OLE item.  
+- SEL_OBJECT Indicates that the current selection contains at least one OLE item.  
   
-- `SEL_MULTICHAR` Indicates that the current selection contains more than one character of text.  
+- SEL_MULTICHAR Indicates that the current selection contains more than one character of text.  
   
-- `SEL_MULTIOBJECT` Indicates that the current selection contains more than one OLE object.  
+- SEL_MULTIOBJECT Indicates that the current selection contains more than one OLE object.  
   
- The default implementation returns **NULL**. This is an advanced overridable.  
+ The default implementation returns NULL. This is an advanced overridable.  
   
  For more information, see [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317) and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK.  
   
- For more information on the **OLEOBJECT** type, see the OLE Data Structures and Structure Allocation article in the *OLE Knowledge Base*.  
+ For more information on the `OLEOBJECT` type, see the OLE Data Structures and Structure Allocation article in the *OLE Knowledge Base*.  
   
 ##  <a name="getdocument"></a>  CRichEditView::GetDocument  
  Call this function to get a pointer to the `CRichEditDoc` associated with this view.  
@@ -353,7 +353,7 @@ CRichEditCntrItem* GetInPlaceActiveItem() const;
 ```  
   
 ### Return Value  
- A pointer to the single, in-place active [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object in this rich edit view; **NULL** if there is no OLE item currently in the in-place active state.  
+ A pointer to the single, in-place active [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object in this rich edit view; NULL if there is no OLE item currently in the in-place active state.  
   
 ##  <a name="getmargins"></a>  CRichEditView::GetMargins  
  Call this function to retrieve the current margins used in printing.  
@@ -363,7 +363,7 @@ CRect GetMargins() const;
 ```  
   
 ### Return Value  
- The margins used in printing, measured in `MM_TWIPS`.  
+ The margins used in printing, measured in MM_TWIPS.  
   
 ##  <a name="getpagerect"></a>  CRichEditView::GetPageRect  
  Call this function to get the dimensions of the page used in printing.  
@@ -373,7 +373,7 @@ CRect GetPageRect() const;
 ```  
   
 ### Return Value  
- The bounds of the page used in printing, measured in `MM_TWIPS`.  
+ The bounds of the page used in printing, measured in MM_TWIPS.  
   
 ### Remarks  
  This value is based on the paper size.  
@@ -386,7 +386,7 @@ CSize GetPaperSize() const;
 ```  
   
 ### Return Value  
- The size of the paper used in printing, measured in `MM_TWIPS`.  
+ The size of the paper used in printing, measured in MM_TWIPS.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#153](../../mfc/codesnippet/cpp/cricheditview-class_3.cpp)]  
@@ -412,7 +412,7 @@ CRect GetPrintRect() const;
 ```  
   
 ### Return Value  
- The bounds of the image area used in printing, measured in `MM_TWIPS`.  
+ The bounds of the image area used in printing, measured in MM_TWIPS.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#154](../../mfc/codesnippet/cpp/cricheditview-class_4.cpp)]  
@@ -425,7 +425,7 @@ int GetPrintWidth() const;
 ```  
   
 ### Return Value  
- The width of the printing area, measured in `MM_TWIPS`.  
+ The width of the printing area, measured in MM_TWIPS.  
   
 ##  <a name="getricheditctrl"></a>  CRichEditView::GetRichEditCtrl  
  Call this function to retrieve the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) object associated with the `CRichEditView` object.  
@@ -448,7 +448,7 @@ CRichEditCntrItem* GetSelectedItem() const;
 ```  
   
 ### Return Value  
- Pointer to a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object selected in the `CRichEditView` object; **NULL** if no item is selected in this view.  
+ Pointer to a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object selected in the `CRichEditView` object; NULL if no item is selected in this view.  
   
 ##  <a name="gettextlength"></a>  CRichEditView::GetTextLength  
  Call this function to retrieve the length of the text in this `CRichEditView` object.  
@@ -477,7 +477,7 @@ long GetTextLengthEx(
  Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).  
   
 ### Return Value  
- The number of characters or bytes in the edit control. If incompatible flags were set in *dwFlags*, this member function returns `E_INVALIDARG`.  
+ The number of characters or bytes in the edit control. If incompatible flags were set in *dwFlags*, this member function returns E_INVALIDARG.  
   
 ### Remarks  
  `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK.  
@@ -505,10 +505,10 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
  Pointer to the item to be inserted.  
   
 ### Return Value  
- An `HRESULT` value indicating the success of the insertion.  
+ An HRESULT value indicating the success of the insertion.  
   
 ### Remarks  
- For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ For more information on HRESULT, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat  
  Call this function to determine if *cf* is a Clipboard format which is text, rich text, or rich text with OLE items.  
@@ -607,7 +607,7 @@ virtual void OnFindNext(
  The string to find.  
   
  *bNext*  
- The direction to search: **TRUE** indicates down; **FALSE**, up.  
+ The direction to search: TRUE indicates down; FALSE, up.  
   
  *bCase*  
  Indicates whether the search is to be case sensitive.  
@@ -626,7 +626,7 @@ virtual void OnInitialUpdate();
 ```  
   
 ### Remarks  
- The default implementation of this function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) member function with no hint information (that is, using the default values of 0 for the *lHint* parameter and **NULL** for the *pHint* parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use `OnUpdate` to update the scrolling limits every time the document changes.  
+ The default implementation of this function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) member function with no hint information (that is, using the default values of 0 for the *lHint* parameter and NULL for the *pHint* parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use `OnUpdate` to update the scrolling limits every time the document changes.  
   
 ### Example  
   See the example for [CRichEditView::m_nWordWrap](#m_nwordwrap).  
@@ -663,11 +663,11 @@ void OnParaAlign(WORD wAlign);
  *wAlign*  
  Desired paragraph alignment. One of the following values:  
   
-- `PFA_LEFT` Align the paragraphs with the left margin.  
+- PFA_LEFT Align the paragraphs with the left margin.  
   
-- `PFA_RIGHT` Align the paragraphs with the right margin.  
+- PFA_RIGHT Align the paragraphs with the right margin.  
   
-- `PFA_CENTER` Center the paragraphs between the margins.  
+- PFA_CENTER Center the paragraphs between the margins.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#156](../../mfc/codesnippet/cpp/cricheditview-class_6.cpp)]  
@@ -733,7 +733,7 @@ virtual void OnReplaceSel(
  The text to be replaced.  
   
  *bNext*  
- Indicates the direction of the search: **TRUE** is down; **FALSE**, up.  
+ Indicates the direction of the search: TRUE is down; FALSE, up.  
   
  *bCase*  
  Indicates if the search is case sensitive.  
@@ -810,11 +810,11 @@ void OnUpdateParaAlign(
  *wAlign*  
  The paragraph alignment to check. One of the following values:  
   
-- `PFA_LEFT` Align the paragraphs with the left margin.  
+- PFA_LEFT Align the paragraphs with the left margin.  
   
-- `PFA_RIGHT` Align the paragraphs with the right margin.  
+- PFA_RIGHT Align the paragraphs with the right margin.  
   
-- `PFA_CENTER` Center the paragraphs between the margins.  
+- PFA_CENTER Center the paragraphs between the margins.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/cpp/cricheditview-class_9.cpp)]  
@@ -845,7 +845,7 @@ long PrintInsideRect(
  Zero-based index of the last character to be formatted.  
   
  *bOutput*  
- Indicates if the text should be rendered. If **FALSE**, the text is just measured.  
+ Indicates if the text should be rendered. If FALSE, the text is just measured.  
   
 ### Return Value  
  The index of the last character that fits in the output area plus one.  
@@ -913,12 +913,12 @@ virtual HRESULT QueryAcceptData(
  A handle to the metafile used for drawing the item's icon.  
   
 ### Return Value  
- An `HRESULT` value reporting the success of the operation.  
+ An HRESULT value reporting the success of the operation.  
   
 ### Remarks  
  Override this function to handle different organization of COM items in your derived document class. This is an advanced overridable.  
   
- For more information on `HRESULT` and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the Windows SDK.  
+ For more information on HRESULT and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  
@@ -935,7 +935,7 @@ void SetCharFormat(CHARFORMAT2 cf);
  [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure containing the new default character formatting attributes.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of *cf* are changed by this function.  
+ Only the attributes specified by the `dwMask` member of *cf* are changed by this function.  
   
  For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
   
@@ -951,7 +951,7 @@ void SetMargins(const CRect& rectMargin);
   
 ### Parameters  
  *rectMargin*  
- The new margin values for printing, measured in `MM_TWIPS`.  
+ The new margin values for printing, measured in MM_TWIPS.  
   
 ### Remarks  
  If [m_nWordWrap](#m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#wrapchanged) after using this function to adjust printing characteristics.  
@@ -970,7 +970,7 @@ void SetPaperSize(CSize sizePaper);
   
 ### Parameters  
  *sizePaper*  
- The new paper size values for printing, measured in `MM_TWIPS`.  
+ The new paper size values for printing, measured in MM_TWIPS.  
   
 ### Remarks  
  If [m_nWordWrap](#m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#wrapchanged) after using this function to adjust printing characteristics.  
@@ -993,7 +993,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
  Nonzero if successful; otherwise, 0.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of *pf* are changed by this function.  
+ Only the attributes specified by the `dwMask` member of *pf* are changed by this function.  
   
  For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
   

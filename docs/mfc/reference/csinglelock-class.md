@@ -62,7 +62,7 @@ explicit CSingleLock(
   
 ### Parameters  
  *pObject*  
- Points to the synchronization object to be accessed. Cannot be **NULL**.  
+ Points to the synchronization object to be accessed. Cannot be NULL.  
   
  *bInitialLock*  
  Specifies whether to initially attempt to access the supplied object.  
@@ -95,7 +95,7 @@ BOOL Lock(DWORD dwTimeOut = INFINITE);
   
 ### Parameters  
  *dwTimeOut*  
- Specifies the amount of time to wait for the synchronization object to be available (signaled). If **INFINITE**, `Lock` will wait until the object is signaled before returning.  
+ Specifies the amount of time to wait for the synchronization object to be available (signaled). If INFINITE, `Lock` will wait until the object is signaled before returning.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  
@@ -120,10 +120,10 @@ BOOL Unlock(
   
 ### Parameters  
  *lCount*  
- Number of accesses to release. Must be greater than 0. If the specified amount would cause the object's count to exceed its maximum, the count is not changed and the function returns **FALSE**.  
+ Number of accesses to release. Must be greater than 0. If the specified amount would cause the object's count to exceed its maximum, the count is not changed and the function returns FALSE.  
   
  *lPrevCount*  
- Points to a variable to receive the previous count of the synchronization object. If **NULL**, the previous count is not returned.  
+ Points to a variable to receive the previous count of the synchronization object. If NULL, the previous count is not returned.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  

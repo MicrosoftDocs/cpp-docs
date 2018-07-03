@@ -19,7 +19,7 @@ A form is a dialog box with controls that let a user access and possibly change 
   
  If you create a multiple document interface (MDI), forms-based application, the application will be able to support multiple instances of the same form.  
   
- If you create an application with multiple top-level document support, the desktop is the implicit parent for the document and the document's frame is not restricted to the client area of the application. You can open multiple instances of the document, each with its own frame, menu, and task bar icon. You can close subsequent instances of documents individually, but if you select the `Exit` option from the **File** menu of the initial instance, the application closes all instances.  
+ If you create an application with multiple top-level document support, the desktop is the implicit parent for the document and the document's frame is not restricted to the client area of the application. You can open multiple instances of the document, each with its own frame, menu, and task bar icon. You can close subsequent instances of documents individually, but if you select the **Exit** option from the **File** menu of the initial instance, the application closes all instances.  
   
  SDI, MDI, and multiple top-level document applications are all forms based and use the document/view architecture.  
   
