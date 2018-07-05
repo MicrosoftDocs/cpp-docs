@@ -70,16 +70,16 @@ bool ConvertToAutoInherit(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object referencing the parent container of the object. If there is no parent container, this parameter is NULL.  
   
- `ObjectType`  
- Pointer to a **GUID** structure that identifies the type of object associated with the current object. Set `ObjectType` to NULL if the object does not have a GUID.  
+ *ObjectType*  
+ Pointer to a `GUID` structure that identifies the type of object associated with the current object. Set *ObjectType* to NULL if the object does not have a GUID.  
   
- `bIsDirectoryObject`  
+ *bIsDirectoryObject*  
  Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.  
   
- `GenericMapping`  
+ *GenericMapping*  
  Pointer to a [GENERIC_MAPPING](http://msdn.microsoft.com/library/windows/desktop/aa446633) structure that specifies the mapping from each generic right to specific rights for the object.  
   
 ### Return Value  
@@ -130,29 +130,29 @@ bool Create(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object referencing the parent directory in which a new object is being created. Set to NULL if there is no parent directory.  
   
- `pCreator`  
+ *pCreator*  
  Pointer to a security descriptor provided by the creator of the object. If the object's creator does not explicitly pass security information for the new object, set this parameter to NULL.  
   
- `bIsDirectoryObject`  
+ *bIsDirectoryObject*  
  Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.  
   
- `Token`  
+ *Token*  
  Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.  
   
- `GenericMapping`  
+ *GenericMapping*  
  Pointer to a [GENERIC_MAPPING](http://msdn.microsoft.com/library/windows/desktop/aa446633) structure that specifies the mapping from each generic right to specific rights for the object.  
   
- `ObjectType`  
- Pointer to a **GUID** structure that identifies the type of object associated with the current object. Set `ObjectType` to NULL if the object does not have a GUID.  
+ *ObjectType*  
+ Pointer to a `GUID` structure that identifies the type of object associated with the current object. Set *ObjectType* to NULL if the object does not have a GUID.  
   
  *bIsContainerObject*  
  Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.  
   
- `AutoInheritFlags`  
- A set of bit flags that control how access-control entries (ACEs) are inherited from `pParent`. See [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
+ *AutoInheritFlags*  
+ A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
   
 ### Return Value  
  Returns true on success, false on failure.  
@@ -175,10 +175,10 @@ bool Get(
 ```  
   
 ### Parameters  
- `si`  
+ *si*  
  A set of bit flags that indicate the parts of the security descriptor to retrieve. This value can be a combination of the [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags.  
   
- `pResult`  
+ *pResult*  
  Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object that receives a copy of the requested information from the specified security descriptor.  
   
 ### Return Value  
@@ -195,7 +195,7 @@ CPrivateObjectSecurityDesc& operator= (const CPrivateObjectSecurityDesc& rhs) th
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `CPrivateObjectSecurityDesc` object to assign to the current object.  
   
 ### Return Value  
@@ -220,20 +220,20 @@ bool Set(
 ```  
   
 ### Parameters  
- `si`  
+ *si*  
  A set of bit flags that indicate the parts of the security descriptor to set. This value can be a combination of the [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags.  
   
  *Modification*  
- Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object. The parts of this security descriptor indicated by the `si` parameter are applied to the object's security descriptor.  
+ Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object. The parts of this security descriptor indicated by the *si* parameter are applied to the object's security descriptor.  
   
- `GenericMapping`  
+ *GenericMapping*  
  Pointer to a [GENERIC_MAPPING](http://msdn.microsoft.com/library/windows/desktop/aa446633) structure that specifies the mapping from each generic right to specific rights for the object.  
   
- `Token`  
+ *Token*  
  Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.  
   
- `AutoInheritFlags`  
- A set of bit flags that control how access-control entries (ACEs) are inherited from `pParent`. See [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
+ *AutoInheritFlags*  
+ A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
   
 ### Return Value  
  Returns true on success, false on failure.  

@@ -23,7 +23,7 @@ class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection class object.  
   
 ## Members  

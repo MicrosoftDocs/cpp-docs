@@ -26,16 +26,16 @@ class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
 #### Parameters  
- `K`  
+ *K*  
  The key element type.  
   
  *V*  
  The value element type.  
   
- `KTraits`  
+ *KTraits*  
  The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.  
   
- `VTraits`  
+ *VTraits*  
  The code used to copy or move value elements.  
   
 ## Members  
@@ -64,7 +64,7 @@ class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
   
  Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue). Accessing the potentially multiple values per key is possible using the [CRBMultiMap::FindFirstWithKey](#findfirstwithkey), [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), and [CRBMultiMap::GetNextWithKey](#getnextwithkey) methods. See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap) for an illustration of this in practice.  
   
- The `KTraits` and `VTraits` parameters are traits classes that contain any supplemental code needed to copy or move elements.  
+ The *KTraits* and *VTraits* parameters are traits classes that contain any supplemental code needed to copy or move elements.  
   
  `CRBMultiMap` is derived from [CRBTree](../../atl/reference/crbtree-class.md), which implements a binary tree using the Red-Black algorithm. An alternative to `CRBMultiMap` and `CRBMap` is offered by the [CAtlMap](../../atl/reference/catlmap-class.md) class. When only a small number of elements needs to be stored, consider using the [CSimpleMap](../../atl/reference/csimplemap-class.md) class instead.  
   
@@ -86,11 +86,11 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The block size.  
   
 ### Remarks  
- The `nBlockSize` parameter is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources. The default will allocate space for 10 elements at a time.  
+ The *nBlockSize* parameter is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources. The default will allocate space for 10 elements at a time.  
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
@@ -117,7 +117,7 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the key that identifies the element to be found.  
   
 ### Return Value  
@@ -144,10 +144,10 @@ V& GetNextValueWithKey(
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) or [CRBMultiMap::GetNextWithKey](#getnextwithkey), or a previous call to `GetNextValueWithKey`.  
   
- `key`  
+ *key*  
  Specifies the key that identifies the element to be found.  
   
 ### Return Value  
@@ -174,10 +174,10 @@ CPair* GetNextWithKey(
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) or [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), or a previous call to `GetNextWithKey`.  
   
- `key`  
+ *key*  
  Specifies the key that identifies the element to be found.  
   
 ### Return Value  
@@ -196,11 +196,11 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key value to add to the `CRBMultiMap` object.  
   
  *value*  
- The value to add to the `CRBMultiMap` object, associated with `key`.  
+ The value to add to the `CRBMultiMap` object, associated with *key*.  
   
 ### Return Value  
  Returns the position of the key/value element pair in the `CRBMultiMap` object.  
@@ -219,14 +219,14 @@ size_t RemoveKey(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the key that identifies the element(s) to be deleted.  
   
 ### Return Value  
  Returns the number of values associated with the given key.  
   
 ### Remarks  
- `RemoveKey` deletes all of the key/value elements that have a key that matches `key`.  
+ `RemoveKey` deletes all of the key/value elements that have a key that matches *key*.  
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   

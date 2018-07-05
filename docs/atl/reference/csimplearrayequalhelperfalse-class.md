@@ -23,7 +23,7 @@ class CSimpleArrayEqualHelperFalse
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  A derived class.  
   
 ## Members  
