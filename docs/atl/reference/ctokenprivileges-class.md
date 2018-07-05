@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CTokenPrivileges Class
-This class is a wrapper for the **TOKEN_PRIVILEGES** structure.  
+This class is a wrapper for the `TOKEN_PRIVILEGES` structure.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -42,17 +42,17 @@ class CTokenPrivileges
 |[CTokenPrivileges::DeleteAll](#deleteall)|Deletes all privileges from the `CTokenPrivileges` object.|  
 |[CTokenPrivileges::GetCount](#getcount)|Returns the number of privilege entries in the `CTokenPrivileges` object.|  
 |[CTokenPrivileges::GetDisplayNames](#getdisplaynames)|Retrieves display names for the privileges contained in the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetLength](#getlength)|Returns the buffer size in bytes required to hold the **TOKEN_PRIVILEGES** structure represented by the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetLength](#getlength)|Returns the buffer size in bytes required to hold the `TOKEN_PRIVILEGES` structure represented by the `CTokenPrivileges` object.|  
 |[CTokenPrivileges::GetLuidsAndAttributes](#getluidsandattributes)|Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `CTokenPrivileges` object.|  
 |[CTokenPrivileges::GetNamesAndAttributes](#getnamesandattributes)|Retrieves the privilege names and attribute flags from the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetPTOKEN_PRIVILEGES](#getptoken_privileges)|Returns a pointer to the **TOKEN_PRIVILEGES** structure.|  
+|[CTokenPrivileges::GetPTOKEN_PRIVILEGES](#getptoken_privileges)|Returns a pointer to the `TOKEN_PRIVILEGES` structure.|  
 |[CTokenPrivileges::LookupPrivilege](#lookupprivilege)|Retrieves the attribute associated with a given privilege name.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenPrivileges::operator const TOKEN_PRIVILEGES *](#operator_const_token_privileges__star)|Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.|  
+|[CTokenPrivileges::operator const TOKEN_PRIVILEGES *](#operator_const_token_privileges__star)|Casts a value to a pointer to the `TOKEN_PRIVILEGES` structure.|  
 |[CTokenPrivileges::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
@@ -76,13 +76,13 @@ void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```  
   
 ### Parameters  
- `pszPrivilege`  
+ *pszPrivilege*  
  Pointer to a null-terminated string that specifies the name of the privilege, as defined in the WINNT.H header file.  
   
- `bEnable`  
+ *bEnable*  
  If true, the privilege is enabled. If false, the privilege is disabled.  
   
- `rPrivileges`  
+ *rPrivileges*  
  Reference to a [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) structure. The privileges and attributes are copied from this structure and added to the `CTokenPrivileges` object.  
   
 ### Return Value  
@@ -98,14 +98,14 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `CTokenPrivileges` object to assign to the new object.  
   
- `rPrivileges`  
+ *rPrivileges*  
  The [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) structure to assign to the new `CTokenPrivileges` object.  
   
 ### Remarks  
- The `CTokenPrivileges` object can optionally be created using a **TOKEN_PRIVILEGES** structure or a previously defined `CTokenPrivileges` object.  
+ The `CTokenPrivileges` object can optionally be created using a `TOKEN_PRIVILEGES` structure or a previously defined `CTokenPrivileges` object.  
   
 ##  <a name="dtor"></a>  CTokenPrivileges::~CTokenPrivileges  
  The destructor.  
@@ -125,7 +125,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 ```  
   
 ### Parameters  
- `pszPrivilege`  
+ *pszPrivilege*  
  Pointer to a null-terminated string that specifies the name of the privilege, as defined in the WINNT.H header file. For example, this parameter could specify the constant SE_SECURITY_NAME, or its corresponding string, "SeSecurityPrivilege."  
   
 ### Return Value  
@@ -152,8 +152,8 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 ```  
   
 ### Parameters  
- `pDisplayNames`  
- A pointer to an array of `CString` objects. **CNames** is defined as a typedef: **CTokenPrivileges::CAtlArray\<CString>**.  
+ *pDisplayNames*  
+ A pointer to an array of `CString` objects. `CNames` is defined as a typedef: `CTokenPrivileges::CAtlArray<CString>`.  
   
 ### Remarks  
  The parameter `pDisplayNames` is a pointer to an array of `CString` objects which will receive the display names corresponding to the privileges contained in the `CTokenPrivileges` object. This method retrieves display names only for the privileges specified in the Defined Privileges section of WINNT.H.  
@@ -178,7 +178,7 @@ UINT GetLength() const throw();
 ```  
   
 ### Return Value  
- Returns the number of bytes required to hold a **TOKEN_PRIVILEGES** structure represented by the `CTokenPrivileges` object, including all of the privilege entries it contains.  
+ Returns the number of bytes required to hold a `TOKEN_PRIVILEGES` structure represented by the `CTokenPrivileges` object, including all of the privilege entries it contains.  
   
 ##  <a name="getluidsandattributes"></a>  CTokenPrivileges::GetLuidsAndAttributes  
  Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `CTokenPrivileges` object.  
@@ -190,11 +190,11 @@ void GetLuidsAndAttributes(
 ```  
   
 ### Parameters  
- `pPrivileges`  
- Pointer to an array of [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) objects. **CLUIDArray** is a typedef defined as **CAtlArray\<LUID> CLUIDArray**.  
+ *pPrivileges*  
+ Pointer to an array of [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) objects. `CLUIDArray` is a typedef defined as `CAtlArray<LUID> CLUIDArray`.  
   
- `pAttributes`  
- Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. **CAttributes** is a typedef defined as **CAtlArray \<DWORD> CAttributes**.  
+ *pAttributes*  
+ Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. `CAttributes` is a typedef defined as `CAtlArray <DWORD> CAttributes`.  
   
 ### Remarks  
  This method will enumerate all of the privileges contained in the `CTokenPrivileges` access token object and place the individual LUIDs and (optionally) the attribute flags into array objects.  
@@ -210,10 +210,10 @@ void GetNamesAndAttributes(
   
 ### Parameters  
  *pNames*  
- Pointer to an array of `CString` objects. **CNames** is a typedef defined as **CAtlArray \<CString> CNames**.  
+ Pointer to an array of `CString` objects. `CNames` is a typedef defined as `CAtlArray <CString> CNames`.  
   
- `pAttributes`  
- Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. **CAttributes** is a typedef defined as **CAtlArray \<DWORD> CAttributes**.  
+ *pAttributes*  
+ Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. `CAttributes` is a typedef defined as `CAtlArray <DWORD> CAttributes`.  
   
 ### Remarks  
  This method will enumerate all of the privileges contained in the `CTokenPrivileges` object, placing the name and (optionally) the attribute flags into array objects.  
@@ -221,7 +221,7 @@ void GetNamesAndAttributes(
  This method retrieves the attribute name, rather than the displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the system name is "SeRemoteShutdownPrivilege." To obtain the displayable name, use the method [CTokenPrivileges::GetDisplayNames](#getdisplaynames).  
   
 ##  <a name="getptoken_privileges"></a>  CTokenPrivileges::GetPTOKEN_PRIVILEGES  
- Returns a pointer to the **TOKEN_PRIVILEGES** structure.  
+ Returns a pointer to the `TOKEN_PRIVILEGES` structure.  
   
 ```
 const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
@@ -240,10 +240,10 @@ bool LookupPrivilege(
 ```  
   
 ### Parameters  
- `pszPrivilege`  
+ *pszPrivilege*  
  Pointer to a null-terminated string that specifies the name of the privilege, as defined in the WINNT.H header file. For example, this parameter could specify the constant SE_SECURITY_NAME, or its corresponding string, "SeSecurityPrivilege."  
   
- `pdwAttributes`  
+ *pdwAttributes*  
  Pointer to a variable that receives the attributes.  
   
 ### Return Value  
@@ -258,17 +258,17 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rPrivileges`  
+ *rPrivileges*  
  The [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) structure to assign to the `CTokenPrivileges` object.  
   
- `rhs`  
+ *rhs*  
  The `CTokenPrivileges` object to assign to the object.  
   
 ### Return Value  
  Returns the updated `CTokenPrivileges` object.  
   
 ##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES *  
- Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.  
+ Casts a value to a pointer to the `TOKEN_PRIVILEGES` structure.  
   
 ```  
 operator const TOKEN_PRIVILEGES *() const throw(...);

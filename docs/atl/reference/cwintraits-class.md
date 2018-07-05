@@ -25,10 +25,10 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 ```  
   
 #### Parameters  
- `t_dwStyle`  
+ *t_dwStyle*  
  Default standard window styles.  
   
- `t_dwExStyle`  
+ *t_dwExStyle*  
  Default extended window styles.  
   
 ## Members  
@@ -48,13 +48,13 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
  ATL provides three predefined specializations of this template for commonly used combinations of window styles:  
   
  `CControlWinTraits`  
- Designed for a standard control window. The following standard styles are used: **WS_CHILD**, **WS_VISIBLE**, **WS_CLIPCHILDREN**, and **WS_CLIPSIBLINGS**. There are no extended styles.  
+ Designed for a standard control window. The following standard styles are used: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. There are no extended styles.  
   
  `CFrameWinTraits`  
- Designed for a standard frame window. The standard styles used include: **WS_OVERLAPPEDWINDOW**, **WS_CLIPCHILDREN**, and **WS_CLIPSIBLINGS**. The extended styles used include: **WS_EX_APPWINDOW** and **WS_EX_WINDOWEDGE**.  
+ Designed for a standard frame window. The standard styles used include: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. The extended styles used include: WS_EX_APPWINDOW and WS_EX_WINDOWEDGE.  
   
  `CMDIChildWinTraits`  
- Designed for a standard MDI child window. The standard styles used include: **WS_OVERLAPPEDWINDOW**, **WS_CHILD**, **WS_VISIBLE**, **WS_CLIPCHILDREN**, and **WS_CLIPSIBLINGS**. The extended styles used include: **WS_EX_MDICHILD**.  
+ Designed for a standard MDI child window. The standard styles used include: WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, and WS_CLIPSIBLINGS. The extended styles used include: WS_EX_MDICHILD.  
   
  If you want to ensure that certain styles are set for all instances of the window class while permitting other styles to be set on a per-instance basis, use [CWinTraitsOR](../../atl/reference/cwintraitsor-class.md) instead.  
   
@@ -69,8 +69,8 @@ static DWORD GetWndStyle(DWORD dwStyle);
 ```  
   
 ### Parameters  
- `dwStyle`  
- Standard styles used for creation of a window. If `dwStyle` is 0, the template style values ( `t_dwStyle`) are returned. If `dwStyle` is nonzero, `dwStyle` is returned.  
+ *dwStyle*  
+ Standard styles used for creation of a window. If *dwStyle* is 0, the template style values (`t_dwStyle`) are returned. If *dwStyle* is nonzero, *dwStyle* is returned.  
   
 ### Return Value  
  The standard window styles of the object.  
@@ -83,8 +83,8 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Extended styles used for creation of a window. If `dwExStyle` is 0, the template style values ( `t_dwExStyle`) are returned. If `dwExStyle` is nonzero, `dwExStyle` is returned.  
+ *dwExStyle*  
+ Extended styles used for creation of a window. If *dwExStyle* is 0, the template style values (`t_dwExStyle`) are returned. If *dwExStyle* is nonzero, *dwExStyle* is returned.  
   
 ### Return Value  
  The extended window styles of the object.  

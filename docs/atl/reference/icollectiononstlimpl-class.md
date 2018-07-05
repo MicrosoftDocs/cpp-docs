@@ -19,13 +19,14 @@ This class provides methods used by a collection class.
   
 ```
 template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
-class ICollectionOnSTLImpl : public T```  
+class ICollectionOnSTLImpl : public T
+```  
   
 #### Parameters  
- `T`  
+ *T*  
  A COM collection interface.  
   
- `CollType`  
+ *CollType*  
  A C++ Standard Library container class.  
   
  *ItemType*  
@@ -91,7 +92,7 @@ STDMETHOD(getcount)(long* pcount);
  [out] The number of elements in the collection.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="get_item"></a>  ICollectionOnSTLImpl::get_Item  
  This method returns the specified item from the collection.  
@@ -101,14 +102,14 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 ```  
   
 ### Parameters  
- `Index`  
+ *Index*  
  [in] The 1-based index of an item in the collection.  
   
- `pvar`  
- [out] The item corresponding to `Index`.  
+ *pvar*  
+ [out] The item corresponding to *Index*.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The item is obtained by copying the data at the specified position in [m_coll](#m_coll) using the copy method of the [copy policy class](../../atl/atl-copy-policy-classes.md) passed as a template argument in the `ICollectionOnSTLImpl` specialization.  
@@ -121,11 +122,11 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 ```  
   
 ### Parameters  
- `ppUnk`  
+ *ppUnk*  
  [out] The **IUnknown** pointer of a newly created enumerator object.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The newly created enumerator maintains an iterator on the original collection, `m_coll`, (so no copy is made) and holds a COM reference on the collection object to ensure that the collection remains alive while there are outstanding enumerators.  
