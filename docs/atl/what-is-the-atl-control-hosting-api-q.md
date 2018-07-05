@@ -23,8 +23,8 @@ ATL's control-hosting API is the set of functions that allows any window to act 
 |[AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrollicex)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic).|  
 |[AtlAxCreateDialog](reference/composite-control-global-functions.md#atlaxcreatedialog)|Creates a modeless dialog box from a dialog resource and returns the window handle.|  
 |[AtlAxDialogBox](reference/composite-control-global-functions.md#atlaxdialogbox)|Creates a modal dialog box from a dialog resource.|  
-|[AtlAxGetControl](reference/composite-control-global-functions.md#atlaxgetcontrol)|Returns the **IUnknown** interface pointer of the control hosted in a window.|  
-|[AtlAxGetHost](reference/composite-control-global-functions.md#atlaxgethost)|Returns the **IUnknown** interface pointer of the host object connected to a window.|  
+|[AtlAxGetControl](reference/composite-control-global-functions.md#atlaxgetcontrol)|Returns the `IUnknown` interface pointer of the control hosted in a window.|  
+|[AtlAxGetHost](reference/composite-control-global-functions.md#atlaxgethost)|Returns the `IUnknown` interface pointer of the host object connected to a window.|  
 |[AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit)|Initializes the control-hosting code.|  
 |[AtlAxWinTerm](reference/composite-control-global-functions.md#atlaxwinterm)|Uninitializes the control-hosting code.|  
   
