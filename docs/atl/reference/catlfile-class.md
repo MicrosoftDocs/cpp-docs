@@ -76,13 +76,13 @@ explicit CAtlFile(HANDLE hFile) throw();
 ```  
   
 ### Parameters  
- `file`  
+ *file*  
  The file object.  
   
- `hFile`  
+ *hFile*  
  The file handle.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
@@ -106,26 +106,26 @@ HRESULT Create(
  *szFilename*  
  The file name.  
   
- `dwDesiredAccess`  
- The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
+ *dwDesiredAccess*  
+ The desired access. See *dwDesiredAccess* in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
   
- `dwShareMode`  
- The share mode. See `dwShareMode` in **CreateFile**.  
+ *dwShareMode*  
+ The share mode. See *dwShareMode* in `CreateFile`.  
   
- `dwCreationDisposition`  
- The creation disposition. See `dwCreationDisposition` in **CreateFile**.  
+ *dwCreationDisposition*  
+ The creation disposition. See *dwCreationDisposition* in `CreateFile`.  
   
- `dwFlagsAndAttributes`  
- The flags and attributes. See `dwFlagsAndAttributes` in **CreateFile**.  
+ *dwFlagsAndAttributes*  
+ The flags and attributes. See *dwFlagsAndAttributes* in `CreateFile`.  
   
- `lpsa`  
- The security attributes. See *lpSecurityAttributes* in **CreateFile**.  
+ *lpsa*  
+ The security attributes. See *lpSecurityAttributes* in `CreateFile`.  
   
- `hTemplateFile`  
- The template file. See `hTemplateFile` in **CreateFile**.  
+ *hTemplateFile*  
+ The template file. See *hTemplateFile* in `CreateFile`.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) to create or open the file.  
@@ -138,7 +138,7 @@ HRESULT Flush() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [FlushFileBuffers](http://msdn.microsoft.com/library/windows/desktop/aa364439) to flush buffered data to the file.  
@@ -154,17 +154,17 @@ HRESULT GetOverlappedResult(
 ```  
   
 ### Parameters  
- `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) in the Windows SDK.  
+ *pOverlapped*  
+ The overlapped structure. See *lpOverlapped* in [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) in the Windows SDK.  
   
  *dwBytesTransferred*  
  The bytes transferred. See *lpNumberOfBytesTransferred* in `GetOverlappedResult`.  
   
- `bWait`  
- The wait option. See `bWait` in `GetOverlappedResult`.  
+ *bWait*  
+ The wait option. See *bWait* in `GetOverlappedResult`.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) to get the results of an overlapped operation on the file.  
@@ -177,11 +177,11 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The position in bytes.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) to get the current file pointer position.  
@@ -194,11 +194,11 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 ```  
   
 ### Parameters  
- `nLen`  
+ *nLen*  
  The number of bytes in the file.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [GetFileSize](http://msdn.microsoft.com/library/windows/desktop/aa364955) to get the size in bytes of the file.  
@@ -211,14 +211,14 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The position in the file where the lock should begin.  
   
- `nCount`  
+ *nCount*  
  The length of the byte range to be locked.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) to lock a region in the file. Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. When you unlock a region, using [CAtlFile::UnlockRange](#unlockrange), the byte range must correspond exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.  
@@ -258,23 +258,23 @@ HRESULT Read(
 ```  
   
 ### Parameters  
- `pBuffer`  
+ *pBuffer*  
  Pointer to the buffer that will receive the data read from the file.  
   
- `nBufSize`  
+ *nBufSize*  
  The buffer size in bytes.  
   
- `nBytesRead`  
+ *nBytesRead*  
  The number of bytes read.  
   
- `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) in the Windows SDK.  
+ *pOverlapped*  
+ The overlapped structure. See *lpOverlapped* in [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) in the Windows SDK.  
   
- `pfnCompletionRoutine`  
+ *pfnCompletionRoutine*  
  The completion routine. See *lpCompletionRoutine* in [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  The first three forms call [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), the last [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) to read data from the file. Use [CAtlFile::Seek](#seek) to move the file pointer.  
@@ -289,14 +289,14 @@ HRESULT Seek(
 ```  
   
 ### Parameters  
- `nOffset`  
- The offset from the starting point given by `dwFrom`.  
+ *nOffset*  
+ The offset from the starting point given by *dwFrom*.  
   
- `dwFrom`  
+ *dwFrom*  
  The starting point (FILE_BEGIN, FILE_CURRENT, or FILE_END).  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) to move the file pointer.  
@@ -309,11 +309,11 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 ```  
   
 ### Parameters  
- `nNewLen`  
+ *nNewLen*  
  The new length of the file in bytes.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) and [SetEndOfFile](http://msdn.microsoft.com/library/windows/desktop/aa365531) to set the size of the file. On return, the file pointer is positioned at the end of the file.  
@@ -326,14 +326,14 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The position in the file where the unlock should begin.  
   
- `nCount`  
+ *nCount*  
  The length of the byte range to be unlocked.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [UnlockFile](http://msdn.microsoft.com/library/windows/desktop/aa365715) to unlock a region of the file.  
@@ -360,23 +360,23 @@ HRESULT Write(
 ```  
   
 ### Parameters  
- `pBuffer`  
+ *pBuffer*  
  The buffer containing the data to be written to the file.  
   
- `nBufSize`  
+ *nBufSize*  
  The number of bytes to be transferred from the buffer.  
   
- `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) in the Windows SDK.  
+ *pOverlapped*  
+ The overlapped structure. See *lpOverlapped* in [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) in the Windows SDK.  
   
- `pfnCompletionRoutine`  
+ *pfnCompletionRoutine*  
  The completion routine. See *lpCompletionRoutine* in [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) in the Windows SDK.  
   
- `pnBytesWritten`  
+ *pnBytesWritten*  
  The bytes written.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  The first three forms call [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), the last calls [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) to write data to the file. Use [CAtlFile::Seek](#seek) to move the file pointer.  

@@ -24,7 +24,7 @@ class CComAggObject : public IUnknown,
 ```  
   
 #### Parameters  
- `contained`  
+ *contained*  
  Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.  
   
 ## Members  
@@ -54,7 +54,7 @@ class CComAggObject : public IUnknown,
 |[CComAggObject::m_contained](#m_contained)|Delegates `IUnknown` calls to the outer unknown.|  
   
 ## Remarks  
- `CComAggObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated object. `CComAggObject` has its own **IUnknown** interface, separate from the outer object's **IUnknown** interface, and maintains its own reference count.  
+ `CComAggObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated object. `CComAggObject` has its own `IUnknown` interface, separate from the outer object's `IUnknown` interface, and maintains its own reference count.  
   
  For more information about aggregation, see the article [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md).  
   
@@ -88,7 +88,7 @@ CComAggObject(void* pv);
 ```  
   
 ### Parameters  
- `pv`  
+ *pv*  
  [in] The outer unknown.  
   
 ### Remarks  
@@ -116,14 +116,14 @@ static HRESULT WINAPI CreateInstance(
 ```  
   
 ### Parameters  
- `pp`  
- [out] A pointer to a **CComAggObject\<***contained* **>** pointer. If `CreateInstance` is unsuccessful, `pp` is set to **NULL**.  
+ *pp*  
+ [out] A pointer to a **CComAggObject\<***contained* **>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The object returned has a reference count of zero, so call `AddRef` immediately, then use **Release** to free the reference on the object pointer when you're done.  
+ The object returned has a reference count of zero, so call `AddRef` immediately, then use `Release` to free the reference on the object pointer when you're done.  
   
  If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) instead.  
   
@@ -135,7 +135,7 @@ HRESULT FinalConstruct();
 ```  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="finalrelease"></a>  CComAggObject::FinalRelease  
  Called during object destruction, this method frees the [m_contained](#m_contained) member.  
@@ -152,11 +152,11 @@ CComContainedObject<contained> m_contained;
 ```  
   
 ### Parameters  
- `contained`  
+ *contained*  
  [in] Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.  
   
 ### Remarks  
- All **IUnknown** calls through `m_contained` are delegated to the outer unknown.  
+ All `IUnknown` calls through `m_contained` are delegated to the outer unknown.  
   
 ##  <a name="queryinterface"></a>  CComAggObject::QueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -168,20 +168,20 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The identifier of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer identified by `iid`. If the object does not support this interface, `ppvObject` is set to **NULL**.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.  
   
- `pp`  
- [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, `pp` is set to **NULL**.  
+ *pp*  
+ [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, *pp* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- If the requested interface is **IUnknown**, `QueryInterface` returns a pointer to the aggregated object's own **IUnknown** and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` member, [m_contained](#m_contained).  
+ If the requested interface is `IUnknown`, `QueryInterface` returns a pointer to the aggregated object's own `IUnknown` and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` member, [m_contained](#m_contained).  
   
 ##  <a name="release"></a>  CComAggObject::Release  
  Decrements the reference count on the aggregated object.  
@@ -191,7 +191,7 @@ STDMETHOD_(ULONG, Release)();
 ```  
   
 ### Return Value  
- In debug builds, **Release** returns a value that may be useful for diagnostics or testing. In non-debug builds, **Release** always returns 0.  
+ In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.  
   
 ## See Also  
  [CComObject Class](../../atl/reference/ccomobject-class.md)   

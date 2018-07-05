@@ -102,7 +102,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
  The name for the new file to store the contents of the temporary file in. If this argument is NULL, the contents of the temporary file are deleted.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Example  
  See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).  
@@ -115,14 +115,14 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
 ```  
   
 ### Parameters  
- `pszDir`  
+ *pszDir*  
  The path for the temporary file. If this is NULL, [GetTempPath](http://msdn.microsoft.com/library/windows/desktop/aa364992) will be called to assign a path.  
   
- `dwDesiredAccess`  
- The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
+ *dwDesiredAccess*  
+ The desired access. See *dwDesiredAccess* in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Example  
  See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).  
@@ -135,7 +135,7 @@ HRESULT Flush() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Similar to [CAtlTemporaryFile::HandsOff](#handsoff), except that the file is not closed.  
@@ -151,11 +151,11 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The position in bytes.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  To change the file pointer position, use [CAtlTemporaryFile::Seek](#seek).  
@@ -168,11 +168,11 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 ```  
   
 ### Parameters  
- `nLen`  
+ *nLen*  
  The number of bytes in the file.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ##  <a name="handsoff"></a>  CAtlTemporaryFile::HandsOff  
  Call this method to disassociate the file from the `CAtlTemporaryFile` object.  
@@ -182,7 +182,7 @@ HRESULT HandsOff() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  `HandsOff` and [CAtlTemporaryFile::HandsOn](#handson) are used to disassociate the file from the object, and reattach it if needed. `HandsOff` will force any data remaining in the file buffer to be written to the temporary file, and then close the file. If you want to close and delete the file permanently, or if you want to close and retain the contents of the file with a given name, use [CAtlTemporaryFile::Close](#close).  
@@ -195,7 +195,7 @@ HRESULT HandsOn() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  [CAtlTemporaryFile::HandsOff](#handsoff) and `HandsOn` are used to disassociate the file from the object, and reattach it if needed.  
@@ -208,14 +208,14 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The position in the file where the lock should begin.  
   
- `nCount`  
+ *nCount*  
  The length of the byte range to be locked.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. To successfully unlock a region, use [CAtlTemporaryFile::UnlockRange](#unlockrange), ensuring the byte range corresponds exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.  
@@ -238,17 +238,17 @@ HRESULT Read(
 ```  
   
 ### Parameters  
- `pBuffer`  
+ *pBuffer*  
  Pointer to the buffer that will receive the data read from the file.  
   
- `nBufSize`  
+ *nBufSize*  
  The buffer size in bytes.  
   
- `nBytesRead`  
+ *nBytesRead*  
  The number of bytes read.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [CAtlFile::Read](../../atl/reference/catlfile-class.md#read). To change the position of the file pointer, call [CAtlTemporaryFile::Seek](#seek).  
@@ -264,14 +264,14 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 ```  
   
 ### Parameters  
- `nOffset`  
+ *nOffset*  
  The offset, in bytes, from the starting point given by *dwFrom.*  
   
- `dwFrom`  
+ *dwFrom*  
  The starting point (FILE_BEGIN, FILE_CURRENT, or FILE_END).  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [CAtlFile::Seek](../../atl/reference/catlfile-class.md#seek). To obtain the current file pointer position, call [CAtlTemporaryFile::GetPosition](#getposition).  
@@ -287,11 +287,11 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 ```  
   
 ### Parameters  
- `nNewLen`  
+ *nNewLen*  
  The new length of the file in bytes.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [CAtlFile::SetSize](../../atl/reference/catlfile-class.md#setsize). On return, the file pointer is positioned at the end of the file.  
@@ -304,7 +304,7 @@ LPCTSTR TempFileName() throw();
 ```  
   
 ### Return Value  
- Returns the `LPCTSTR` pointing to the file name.  
+ Returns the LPCTSTR pointing to the file name.  
   
 ### Remarks  
  The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)Windows SDK function. The file extension will always be "TFR" for the temporary file.  
@@ -317,14 +317,14 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The position in the file where the unlock should begin.  
   
- `nCount`  
+ *nCount*  
  The length of the byte range to be unlocked.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [CAtlFile::UnlockRange](../../atl/reference/catlfile-class.md#unlockrange).  
@@ -340,17 +340,17 @@ HRESULT Write(
 ```  
   
 ### Parameters  
- `pBuffer`  
+ *pBuffer*  
  The buffer containing the data to be written to the file.  
   
- `nBufSize`  
+ *nBufSize*  
  The number of bytes to be transferred from the buffer.  
   
- `pnBytesWritten`  
+ *pnBytesWritten*  
  The number of bytes written.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  Calls [CAtlFile::Write](../../atl/reference/catlfile-class.md#write).  

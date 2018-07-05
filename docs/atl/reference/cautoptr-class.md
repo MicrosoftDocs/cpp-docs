@@ -26,7 +26,7 @@ class CAutoPtr
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The pointer type.  
   
 ## Members  
@@ -85,7 +85,7 @@ void Attach(T* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  The `CAutoPtr` object will take ownership of this pointer.  
   
 ### Remarks  
@@ -111,10 +111,10 @@ CAutoPtr(CAutoPtr<T>& p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  An existing pointer.  
   
- `TSrc`  
+ *TSrc*  
  The type being managed by another `CAutoPtr`, used to initialize the current object.  
   
 ### Remarks  
@@ -144,7 +144,7 @@ T* Detach() throw();
  Returns a copy of the pointer.  
   
 ### Remarks  
- Releases ownership of a pointer, sets the [CAutoPtr::m_p](#m_p) data member variable to NULL, and returns a copy of the pointer. After calling **Detach**, it is up to the programmer to free any allocated resources over which the `CAutoPtr` object may have previously assumed reponsibility.  
+ Releases ownership of a pointer, sets the [CAutoPtr::m_p](#m_p) data member variable to NULL, and returns a copy of the pointer. After calling `Detach`, it is up to the programmer to free any allocated resources over which the `CAutoPtr` object may have previously assumed reponsibility.  
   
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
@@ -181,17 +181,17 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  A pointer.  
   
- `TSrc`  
+ *TSrc*  
  A class type.  
   
 ### Return Value  
  Returns a reference to a **CAutoPtr\< T >**.  
   
 ### Remarks  
- The assignment operator detaches the `CAutoPtr` object from any current pointer and attaches the new pointer, `p`, in its place.  
+ The assignment operator detaches the `CAutoPtr` object from any current pointer and attaches the new pointer, *p*, in its place.  
   
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
