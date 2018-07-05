@@ -47,11 +47,11 @@ Copy policy classes are [utility classes](../atl/utility-classes.md) used to ini
 -   **destroy** must only ever receive a pointer to data that you have previously initialized using **init** or copied via **copy**.  
   
 ## Standard Implementations  
- ATL provides two copy policy classes in the form of the **_Copy** and **_CopyInterface** template classes:  
+ ATL provides two copy policy classes in the form of the `_Copy` and `_CopyInterface` template classes:  
   
--   The **_Copy** class allows homogeneous copying only (not conversion between data types) since it only offers a single template parameter to specify both `DestinationType` and *SourceType*. The generic implementation of this template contains no initialization or destruction code and uses `memcpy` to copy the data. ATL also provides specializations of **_Copy** for **VARIANT**, `LPOLESTR`, **OLEVERB**, and **CONNECTDATA** data types.  
+-   The `_Copy` class allows homogeneous copying only (not conversion between data types) since it only offers a single template parameter to specify both `DestinationType` and *SourceType*. The generic implementation of this template contains no initialization or destruction code and uses `memcpy` to copy the data. ATL also provides specializations of `_Copy` for VARIANT, LPOLESTR, OLEVERB, and CONNECTDATA data types.  
   
--   The **_CopyInterface** class provides an implementation for copying interface pointers following standard COM rules. Once again this class allows only homogeneous copying, so it uses simple assignment and a call to `AddRef` to perform the copy.  
+-   The `_CopyInterface` class provides an implementation for copying interface pointers following standard COM rules. Once again this class allows only homogeneous copying, so it uses simple assignment and a call to `AddRef` to perform the copy.  
   
 ## Custom Implementations  
  Typically, you'll need to define your own copy policy classes for heterogeneous copying (that is, conversion between data types). For some examples of custom copy policy classes, look at the files VCUE_Copy.h and VCUE_CopyString.h in the [ATLCollections](../visual-cpp-samples.md) sample. These files contain two template copy policy classes, `GenericCopy` and `MapCopy`, plus a number of specializations of `GenericCopy` for different data types.  

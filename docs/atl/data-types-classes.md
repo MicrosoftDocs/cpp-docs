@@ -17,7 +17,7 @@ The following classes wrap C++ data types:
   
 -   [CComBSTR](../atl/reference/ccombstr-class.md) Wraps the `BSTR` data type.  
   
--   [CComVariant](../atl/reference/ccomvariant-class.md) Wraps the **VARIANT** data type.  
+-   [CComVariant](../atl/reference/ccomvariant-class.md) Wraps the `VARIANT` data type.  
   
 -   [CComCurrency](../atl/reference/ccomcurrency-class.md) Includes methods and operators for creating and managing a `CURRENCY` object.  
   

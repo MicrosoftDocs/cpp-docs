@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CommandHandler
-`CommandHandler` is the function identified by the third parameter of the `COMMAND_HANDLER` macro in your message map.  
+`CommandHandler` is the function identified by the third parameter of the COMMAND_HANDLER macro in your message map.  
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ ms.workload: ["cplusplus"]
 ```  
   
 #### Parameters  
- `wNotifyCode`  
+ *wNotifyCode*  
  The notification code.  
   
  *wID*  
@@ -38,8 +38,8 @@ ms.workload: ["cplusplus"]
  *hWndCtl*  
  A handle to a window control.  
   
- `bHandled`  
- The message map sets `bHandled` to **TRUE** before `CommandHandler` is called. If `CommandHandler` does not fully handle the message, it should set `bHandled` to **FALSE** to indicate the message needs further processing.  
+ *bHandled*  
+ The message map sets *bHandled* to TRUE before `CommandHandler` is called. If `CommandHandler` does not fully handle the message, it should set *bHandled* to FALSE to indicate the message needs further processing.  
   
 ## Return Value  
  The result of message processing. 0 if successful.  
