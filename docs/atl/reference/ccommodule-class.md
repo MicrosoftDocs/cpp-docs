@@ -103,14 +103,14 @@ HRESULT GetClassObject(
 ```  
   
 ### Parameters  
- `rclsid`  
+ *rclsid*  
  [in] The CLSID of the object to be created.  
   
- `riid`  
+ *riid*  
  [in] The IID of the requested interface.  
   
- `ppv`  
- [out] A pointer to the interface pointer identified by `riid`. If the object does not support this interface, `ppv` is set to **NULL**.  
+ *ppv*  
+ [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -128,7 +128,7 @@ HINSTANCE GetModuleInstance() throw();
 ```  
   
 ### Return Value  
- The `HINSTANCE` identifying this module.  
+ The HINSTANCE identifying this module.  
   
 ### Remarks  
  Returns the [m_hInst](#m_hinst) data member.  
@@ -141,7 +141,7 @@ HINSTANCE GetResourceInstance() throw();
 ```  
   
 ### Return Value  
- An `HINSTANCE`.  
+ An HINSTANCE.  
   
 ### Remarks  
  Returns the [m_hInstResource](#m_hinstresource) data member.  
@@ -154,7 +154,7 @@ HINSTANCE GetTypeLibInstance() const throw();
 ```  
   
 ### Return Value  
- An `HINSTANCE`.  
+ An HINSTANCE.  
   
 ### Remarks  
  Returns the [m_hInstTypeLib](#m_hinsttypelib) data member.  
@@ -170,13 +170,13 @@ HRESULT Init(
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  [in] A pointer to an array of object map entries.  
   
- `h`  
- [in] The `HINSTANCE` passed to **DLLMain** or `WinMain`.  
+ *h*  
+ [in] The HINSTANCE passed to `DLLMain` or `WinMain`.  
   
- `plibid`  
+ *plibid*  
  [in] A pointer to the LIBID of the type library associated with the project.  
   
 ### Return Value  
@@ -225,7 +225,7 @@ HINSTANCE m_hInst;
 ### Remarks  
  Contains the handle to the module instance.  
   
- The [Init](#init) method sets `m_hInst` to the handle passed to **DLLMain** or `WinMain`.  
+ The [Init](#init) method sets `m_hInst` to the handle passed to `DLLMain` or `WinMain`.  
   
 ##  <a name="m_hinstresource"></a>  CComModule::m_hInstResource  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -237,7 +237,7 @@ HINSTANCE m_hInstResource;
 ### Remarks  
  By default, contains the handle to the module instance.  
   
- The [Init](#init) method sets `m_hInstResource` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstResource` to the handle to a resource.  
+ The [Init](#init) method sets `m_hInstResource` to the handle passed to `DLLMain` or `WinMain`. You can explicitly set `m_hInstResource` to the handle to a resource.  
   
  The [GetResourceInstance](#getresourceinstance) method returns the handle stored in `m_hInstResource`.  
   
@@ -251,7 +251,7 @@ HINSTANCE m_hInstTypeLib;
 ### Remarks  
  By default, contains the handle to the module instance.  
   
- The [Init](#init) method sets `m_hInstTypeLib` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstTypeLib` to the handle to a type library.  
+ The [Init](#init) method sets `m_hInstTypeLib` to the handle passed to `DLLMain` or `WinMain`. You can explicitly set `m_hInstTypeLib` to the handle to a type library.  
   
  The [GetTypeLibInstance](#gettypelibinstance) method returns the handle stored in `m_hInstTypeLib`.  
   
@@ -278,20 +278,20 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  [in] The CLSID of the object to be registered.  
   
- `lpszProgID`  
+ *lpszProgID*  
  [in] The ProgID associated with the object.  
   
- `lpszVerIndProgID`  
+ *lpszVerIndProgID*  
  [in] The version-independent ProgID associated with the object.  
   
- `nDescID`  
+ *nDescID*  
  [in] The identifier of a string resource for the object's description.  
   
- `dwFlags`  
- [in] Specifies the threading model to enter in the registry. Possible values are **THREADFLAGS_APARTMENT**, **THREADFLAGS_BOTH**, or **AUTPRXFLAG**.  
+ *dwFlags*  
+ [in] Specifies the threading model to enter in the registry. Possible values are THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, or AUTPRXFLAG.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -309,11 +309,11 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ```  
   
 ### Parameters  
- `dwClsContext`  
- [in] Specifies the context in which the class object is to be run. Possible values are **CLSCTX_INPROC_SERVER**, **CLSCTX_INPROC_HANDLER**, or **CLSCTX_LOCAL_SERVER**. For a description of these values, see [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) in the Windows SDK.  
+ *dwClsContext*  
+ [in] Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. For a description of these values, see [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) in the Windows SDK.  
   
- `dwFlags`  
- [in] Determines the connection types to the class object. Possible values are **REGCLS_SINGLEUSE**, **REGCLS_MULTIPLEUSE**, or **REGCLS_MULTI_SEPARATE**. For a description of these values, see [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) in the Windows SDK.  
+ *dwFlags*  
+ [in] Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. For a description of these values, see [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) in the Windows SDK.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -331,23 +331,23 @@ HRESULT RegisterServer(
 ```  
   
 ### Parameters  
- `bRegTypeLib`  
- [in] Indicates whether the type library will be registered. The default value is **FALSE**.  
+ *bRegTypeLib*  
+ [in] Indicates whether the type library will be registered. The default value is FALSE.  
   
- `pCLSID`  
- [in] Points to the CLSID of the object to be registered. If **NULL** (the default value), all objects in the object map will be registered.  
+ *pCLSID*  
+ [in] Points to the CLSID of the object to be registered. If NULL (the default value), all objects in the object map will be registered.  
   
 ### Return Value  
  A standard HRESULT value.  
   
 ### Remarks  
- Depending on the `pCLSID` parameter, updates the system registry for a single class object or for all objects in the object map.  
+ Depending on the *pCLSID* parameter, updates the system registry for a single class object or for all objects in the object map.  
   
- If `bRegTypeLib` is **TRUE**, the type library information will also be updated.  
+ If *bRegTypeLib* is TRUE, the type library information will also be updated.  
   
  See [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) for information on how to add an entry to the object map.  
   
- `RegisterServer` will be called automatically by **DLLRegisterServer** for a DLL or by `WinMain` for an EXE run with the **/RegServer** command line option.  
+ `RegisterServer` will be called automatically by `DLLRegisterServer` for a DLL or by `WinMain` for an EXE run with the `/RegServer` command line option.  
   
 ##  <a name="registertypelib"></a>  CComModule::RegisterTypeLib  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -358,7 +358,7 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 ```  
   
 ### Parameters  
- `lpszIndex`  
+ *lpszIndex*  
  [in] String in the format `"\\N"`, where `N` is the integer index of the TYPELIB resource.  
   
 ### Return Value  
@@ -403,13 +403,13 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  [in] The CLSID of the object to be unregistered.  
   
- `lpszProgID`  
+ *lpszProgID*  
  [in] The ProgID associated with the object.  
   
- `lpszVerIndProgID`  
+ *lpszVerIndProgID*  
  [in] The version-independent ProgID associated with the object.  
   
 ### Return Value  
@@ -429,19 +429,19 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 ```  
   
 ### Parameters  
- `bUnRegTypeLib`  
- If **TRUE**, the type library is also unregistered.  
+ *bUnRegTypeLib*  
+ If TRUE, the type library is also unregistered.  
   
- `pCLSID`  
- Points to the CLSID of the object to be unregistered. If **NULL** (the default value), all objects in the object map will be unregistered.  
+ *pCLSID*  
+ Points to the CLSID of the object to be unregistered. If NULL (the default value), all objects in the object map will be unregistered.  
   
 ### Return Value  
  A standard HRESULT value.  
   
 ### Remarks  
- Depending on the `pCLSID` parameter, unregisters either a single class object or all objects in the object map.  
+ Depending on the *pCLSID* parameter, unregisters either a single class object or all objects in the object map.  
   
- `UnregisterServer` will be called automatically by **DLLUnregisterServer** for a DLL or by `WinMain` for an EXE run with the **/UnregServer** command line option.  
+ `UnregisterServer` will be called automatically by `DLLUnregisterServer` for a DLL or by `WinMain` for an EXE run with the `/UnregServer` command line option.  
   
  See [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) for information on how to add an entry to the object map.  
   
@@ -467,36 +467,36 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  The CLSID of the object to be registered or unregistered.  
   
- `lpszProgID`  
+ *lpszProgID*  
  The ProgID associated with the object.  
   
- `lpszVerIndProgID`  
+ *lpszVerIndProgID*  
  The version-independent ProgID associated with the object.  
   
- `nDescID`  
+ *nDescID*  
  The identifier of the string resource for the object's description.  
   
- `szDesc`  
+ *szDesc*  
  A string containing the object's description.  
   
- `dwFlags`  
- Specifies the threading model to enter in the registry. Possible values are **THREADFLAGS_APARTMENT**, **THREADFLAGS_BOTH**, or **AUTPRXFLAG**.  
+ *dwFlags*  
+ Specifies the threading model to enter in the registry. Possible values are THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, or AUTPRXFLAG.  
   
- `bRegister`  
+ *bRegister*  
  Indicates whether the object should be registered.  
   
 ### Return Value  
  A standard HRESULT value.  
   
 ### Remarks  
- If `bRegister` is **TRUE**, this method enters the object's standard class registration in the system registry.  
+ If *bRegister* is TRUE, this method enters the object's standard class registration in the system registry.  
   
- If `bRegister` is **FALSE**, it removes the object's registration.  
+ If *bRegister* is FALSE, it removes the object's registration.  
   
- Depending on the value of `bRegister`, `UpdateRegistryClass` calls either [RegisterClassHelper](#registerclasshelper) or [UnregisterClassHelper](#unregisterclasshelper).  
+ Depending on the value of *bRegister*, `UpdateRegistryClass` calls either [RegisterClassHelper](#registerclasshelper) or [UnregisterClassHelper](#unregisterclasshelper).  
   
  By specifying the [DECLARE_REGISTRY](registry-macros.md#declare_registry) macro, `UpdateRegistryClass` will be invoked automatically when your object map is processed.  
   
@@ -516,30 +516,30 @@ virtual HRESULT UpdateRegistryFromResourceD(
 ```  
   
 ### Parameters  
- `lpszRes`  
+ *lpszRes*  
  [in] A resource name.  
   
- `nResID`  
+ *nResID*  
  [in] A resource ID.  
   
- `bRegister`  
+ *bRegister*  
  [in] Indicates whether the object should be registered.  
   
- `pMapEntries`  
- [in] A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses `%MODULE%`. To use additional replaceable parameters, see the Remarks for details. Otherwise, use the **NULL** default value.  
+ *pMapEntries*  
+ [in] A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses `%MODULE%`. To use additional replaceable parameters, see the Remarks for details. Otherwise, use the NULL default value.  
   
 ### Return Value  
  A standard HRESULT value.  
   
 ### Remarks  
- Runs the script contained in the resource specified by `lpszRes` or `nResID`.  
+ Runs the script contained in the resource specified by *lpszRes* or *nResID*.  
   
- If `bRegister` is **TRUE**, this method registers the object in the system registry; otherwise, it unregisters the object.  
+ If *bRegister* is TRUE, this method registers the object in the system registry; otherwise, it unregisters the object.  
   
  By specifying the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro, `UpdateRegistryFromResourceD` will be invoked automatically when your object map is processed.  
   
 > [!NOTE]
->  To substitute replacement values at run time, do not specify the `DECLARE_REGISTRY_RESOURCE` or `DECLARE_REGISTRY_RESOURCEID` macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceD`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
+>  To substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceD`, passing the array for the *pMapEntries* parameter. This adds all the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.  
   
 > [!NOTE]
 >  To statically link to the ATL Registry Component (Registrar), see [UpdateRegistryFromResourceS](#updateregistryfromresources).  
@@ -562,17 +562,17 @@ virtual HRESULT UpdateRegistryFromResourceS(
 ```  
   
 ### Parameters  
- `lpszRes`  
+ *lpszRes*  
  [in] A resource name.  
   
- `nResID`  
+ *nResID*  
  [in] A resource ID.  
   
- `bRegister`  
+ *bRegister*  
  [in] Indicates whether the resource script should be registered.  
   
- `pMapEntries`  
- [in] A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses `%MODULE%`. To use additional replaceable parameters, see the Remarks for details. Otherwise, use the **NULL** default value.  
+ *pMapEntries*  
+ [in] A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses `%MODULE%`. To use additional replaceable parameters, see the Remarks for details. Otherwise, use the NULL default value.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -583,7 +583,7 @@ virtual HRESULT UpdateRegistryFromResourceS(
  `UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your stdafx.h.  
   
 > [!NOTE]
->  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
+>  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the *pMapEntries* parameter. This adds all the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.  
   
  For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).  
   

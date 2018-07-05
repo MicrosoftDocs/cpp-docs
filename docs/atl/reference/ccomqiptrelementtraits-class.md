@@ -24,11 +24,11 @@ class CComQIPtrElementTraits :
 ```  
   
 #### Parameters  
- `I`  
+ *I*  
  A COM interface specifying the type of pointer to be stored.  
   
- `piid`  
- A pointer to the IID of `I`.  
+ *piid*  
+ A pointer to the IID of *I*.  
   
 ## Members  
   

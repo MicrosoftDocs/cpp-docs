@@ -27,19 +27,19 @@ class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
 ```  
   
 #### Parameters  
- `Base`  
+ *Base*  
  A COM enumerator ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) interface.  
   
- `piid`  
+ *piid*  
  A pointer to the interface ID of the enumerator interface.  
   
- `T`  
+ *T*  
  The type of item exposed by the enumerator interface.  
   
- `Copy`  
+ *Copy*  
  A homogeneous [copy policy class](../../atl/atl-copy-policy-classes.md).  
   
- `ThreadModel`  
+ *ThreadModel*  
  The threading model of the class. This parameter defaults to the global object thread model used in your project.  
   
 ## Remarks  
@@ -47,9 +47,9 @@ class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
   
 ## To use this class:  
   
-- `typedef` a specialization of this class.  
+- **typedef** a specialization of this class.  
   
--   Use the `typedef` as the template argument in a specialization of `CComObject`.  
+-   Use the **typedef** as the template argument in a specialization of `CComObject`.  
   
 -   Create an instance of the `CComObject` specialization.  
   
@@ -80,7 +80,7 @@ class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
   
  [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/cpp/ccomenum-class_2.h)]  
   
- This code creates a `typedef` for `CComEnum` that exposes a vector of **VARIANT**s through the **IEnumVariant** interface. The **CVariantArrayCollection** class simply specializes **CreateEnumerator** to work with enumerator objects of this type and passes the necessary arguments.  
+ This code creates a **typedef** for `CComEnum` that exposes a vector of VARIANTs through the `IEnumVariant` interface. The `CVariantArrayCollection` class simply specializes `CreateEnumerator` to work with enumerator objects of this type and passes the necessary arguments.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComObject Class
-This class implements **IUnknown** for a nonaggregated object.  
+This class implements `IUnknown` for a nonaggregated object.  
   
 ## Syntax  
   
@@ -23,7 +23,7 @@ class CComObject : public Base
 ```  
   
 #### Parameters  
- `Base`  
+ *Base*  
  Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.  
   
 ## Members  
@@ -45,7 +45,7 @@ class CComObject : public Base
 |[CComObject::Release](#release)|Decrements the reference count on the object.|  
   
 ## Remarks  
- `CComObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and **Release** are delegated to `CComObjectRootEx`.  
+ `CComObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`.  
   
  For more information about using `CComObject`, see the article [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md).  
   
@@ -102,14 +102,14 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 ```  
   
 ### Parameters  
- `pp`  
- [out] A pointer to a **CComObject<**`Base`**>** pointer. If `CreateInstance` is unsuccessful, `pp` is set to **NULL**.  
+ *pp*  
+ [out] A pointer to a **CComObject<**`Base`**>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The object returned has a reference count of zero, so call `AddRef` immediately, then use **Release** to free the reference on the object pointer when you're done.  
+ The object returned has a reference count of zero, so call `AddRef` immediately, then use `Release` to free the reference on the object pointer when you're done.  
   
  If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) instead.  
   
@@ -128,17 +128,17 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The identifier of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer identified by `iid`. If the object does not support this interface, `ppvObject` is set to **NULL**.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.  
   
- `pp`  
- [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, `pp` is set to **NULL**.  
+ *pp*  
+ [out] A pointer to the interface pointer identified by type `Q`. If the object does not support this interface, *pp* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="release"></a>  CComObject::Release  
  Decrements the reference count on the object.  
@@ -148,7 +148,7 @@ STDMETHOD_(ULONG, Release)();
 ```  
   
 ### Return Value  
- This function returns the new decremented reference count on the object. In debug builds, the return value may be useful for diagnostics or testing. In non-debug builds, **Release** always returns 0.  
+ This function returns the new decremented reference count on the object. In debug builds, the return value may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.  
   
 ## See Also  
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
