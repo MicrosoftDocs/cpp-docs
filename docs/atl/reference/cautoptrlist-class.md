@@ -27,7 +27,7 @@ class CAutoPtrList :
 ```  
   
 #### Parameters  
- `E`  
+ *E*  
  The pointer type.  
   
 ## Members  
@@ -59,7 +59,7 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The block size, with a default of 10.  
   
 ### Remarks  
