@@ -23,7 +23,7 @@ class CElementTraitsBase
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  
@@ -61,13 +61,13 @@ static void CopyElements(
 ```  
   
 ### Parameters  
- `pDest`  
+ *pDest*  
  Pointer to the first element that will receive the copied data.  
   
- `pSrc`  
+ *pSrc*  
  Pointer to the first element to copy.  
   
- `nElements`  
+ *nElements*  
  The number of elements to copy.  
   
 ### Remarks  
@@ -98,13 +98,13 @@ static void RelocateElements(
 ```  
   
 ### Parameters  
- `pDest`  
+ *pDest*  
  Pointer to the first element that will receive the relocated data.  
   
- `pSrc`  
+ *pSrc*  
  Pointer to the first element to relocate.  
   
- `nElements`  
+ *nElements*  
  The number of elements to relocate.  
   
 ### Remarks  
