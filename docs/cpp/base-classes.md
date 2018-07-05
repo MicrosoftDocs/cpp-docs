@@ -17,5 +17,5 @@ The inheritance process creates a new derived class that is made up of the membe
  ![Multiple instances of a base class](../cpp/media/vc38xn1.gif "vc38XN1")  
 Multiple Instances of a Single Base Class  
   
- In the figure, pictorial representations of the components of `CollectibleString` and `CollectibleSortable` are shown. However, the base class, `Collectible`, is in `CollectibleSortableString` through the `CollectibleString` path and the `CollectibleSortable` path. To eliminate this redundancy, such classes can be declared as virtual base classes when they are inherited.  
+ In the figure, pictorial representations of the components of `CollectibleString` and `CollectibleSortable` are shown. However, the base class, `Collectible`, is in `CollectibleSortableString` through the `CollectibleString` path and the `CollectibleSortable` path. To eliminate this redundancy, such classes can be declared as [virtual base classes](multiple-base-classes#virtual-base-classes.md) when they are inherited.  
   
