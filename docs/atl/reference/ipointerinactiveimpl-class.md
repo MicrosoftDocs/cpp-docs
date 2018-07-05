@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPointerInactiveImpl Class
-This class implements **IUnknown** and the [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface methods.  
+This class implements `IUnknown` and the [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface methods.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class IPointerInactiveImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPointerInactiveImpl`.  
   
 ## Members  
@@ -35,16 +35,16 @@ class IPointerInactiveImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPointerInactiveImpl::GetActivationPolicy](#getactivationpolicy)|Retrieves the current activation policy for the object. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPointerInactiveImpl::OnInactiveMouseMove](#oninactivemousemove)|Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPointerInactiveImpl::OnInactiveSetCursor](#oninactivesetcursor)|Sets the mouse pointer for the inactive object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::GetActivationPolicy](#getactivationpolicy)|Retrieves the current activation policy for the object. The ATL implementation returns E_NOTIMPL.|  
+|[IPointerInactiveImpl::OnInactiveMouseMove](#oninactivemousemove)|Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events. The ATL implementation returns E_NOTIMPL.|  
+|[IPointerInactiveImpl::OnInactiveSetCursor](#oninactivesetcursor)|Sets the mouse pointer for the inactive object. The ATL implementation returns E_NOTIMPL.|  
   
 ## Remarks  
  An inactive object is one that is simply loaded or running. Unlike an active object, an inactive object cannot receive Windows mouse and keyboard messages. Thus, inactive objects use fewer resources and are typically more efficient.  
   
  The [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface allows an object to support a minimal level of mouse interaction while remaining inactive. This functionality is particularly useful for controls.  
   
- Class `IPointerInactiveImpl` implements the `IPointerInactive` methods by simply returning **E_NOTIMPL**. However, it implements **IUnknown** by sending information to the dump device in debug builds.  
+ Class `IPointerInactiveImpl` implements the `IPointerInactive` methods by simply returning E_NOTIMPL. However, it implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -64,7 +64,7 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IPointerInactive::GetActivationPolicy](http://msdn.microsoft.com/library/windows/desktop/ms692470) in the Windows SDK.  
@@ -81,7 +81,7 @@ HRESULT OnInactiveMouseMove(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IPointerInactive::OnInactiveMouseMove](http://msdn.microsoft.com/library/windows/desktop/ms693374) in the Windows SDK.  
@@ -99,7 +99,7 @@ HRESULT OnInactiveSetCursor(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IPointerInactive::OnInactiveSetCursor](http://msdn.microsoft.com/library/windows/desktop/ms694336) in the Windows SDK.  

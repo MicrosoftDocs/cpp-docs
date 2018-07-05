@@ -33,16 +33,16 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
  *psrcid*  
  A pointer to the identifier for the coclass' default outgoing dispinterface.  
   
- `plibid`  
+ *plibid*  
  A pointer to the LIBID of the type library that contains information about the interface. By default, the server-level type library is passed.  
   
- `wMajor`  
+ *wMajor*  
  The major version of the type library. The default value is 1.  
   
- `wMinor`  
+ *wMinor*  
  The minor version of the type library. The default value is 0.  
   
- `tihclass`  
+ *tihclass*  
  The class used to manage the coclass' type information. The default value is `CComTypeInfoHolder`.  
   
 ## Members  
@@ -57,7 +57,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::GetClassInfo](#getclassinfo)|Retrieves an **ITypeInfo** pointer to the coclass' type information.|  
+|[IProvideClassInfo2Impl::GetClassInfo](#getclassinfo)|Retrieves an `ITypeInfo` pointer to the coclass' type information.|  
 |[IProvideClassInfo2Impl::GetGUID](#getguid)|Retrieves the GUID for the object's outgoing dispinterface.|  
   
 ### Protected Data Members  
@@ -67,7 +67,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 |[IProvideClassInfo2Impl::_tih](#_tih)|Manages the type information for the coclass.|  
   
 ## Remarks  
- The [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) interface extends [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the **IProvideClassInfo** and `IProvideClassInfo2` methods.  
+ The [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) interface extends [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the `IProvideClassInfo` and `IProvideClassInfo2` methods.  
   
  `IProvideClassInfo2Impl` contains a static member of type `CComTypeInfoHolder` that manages the type information for the coclass.  
   
@@ -109,10 +109,10 @@ IProvideClassInfo2Impl();
 ```  
   
 ### Remarks  
- Calls `AddRef` on the [_tih](#_tih) member. The destructor calls **Release**.  
+ Calls `AddRef` on the [_tih](#_tih) member. The destructor calls `Release`.  
   
 ##  <a name="_tih"></a>  IProvideClassInfo2Impl::_tih  
- This static data member is an instance of the class template parameter, `tihclass`, which by default is `CComTypeInfoHolder`.  
+ This static data member is an instance of the class template parameter, *tihclass*, which by default is `CComTypeInfoHolder`.  
   
 ```
 static  tihclass
