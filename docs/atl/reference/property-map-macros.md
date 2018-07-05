@@ -35,15 +35,15 @@ BEGIN_PROP_MAP(theClass)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  [in] Specifies the class containing the property map.  
   
 ### Remarks  
  The property map stores property descriptions, property DISPIDs, property page CLSIDs, and `IDispatch` IIDs. Classes [IPerPropertyBrowsingImpl](../../atl/reference/iperpropertybrowsingimpl-class.md), [IPersistPropertyBagImpl](../../atl/reference/ipersistpropertybagimpl-class.md), [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), and [ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md) use the property map to retrieve and set this information.  
   
- When you create an object with the ATL Project Wizard, the wizard will create an empty property map by specifying `BEGIN_PROP_MAP` followed by [END_PROP_MAP](#end_prop_map).  
+ When you create an object with the ATL Project Wizard, the wizard will create an empty property map by specifying BEGIN_PROP_MAP followed by [END_PROP_MAP](#end_prop_map).  
   
- `BEGIN_PROP_MAP` does not save out the extent (that is, the dimensions) of a property map, because an object using a property map may not have a user interface, so it would have no extent. If the object is an ActiveX control with a user interface, it has an extent. In this case, you must specify [PROP_DATA_ENTRY](#prop_data_entry) in your property map to supply the extent.  
+ BEGIN_PROP_MAP does not save out the extent (that is, the dimensions) of a property map, because an object using a property map may not have a user interface, so it would have no extent. If the object is an ActiveX control with a user interface, it has an extent. In this case, you must specify [PROP_DATA_ENTRY](#prop_data_entry) in your property map to supply the extent.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#103](../../atl/codesnippet/cpp/property-map-macros_1.h)]  
@@ -56,10 +56,10 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 ```    
   
 ### Parameters  
- `szDesc`  
+ *szDesc*  
  [in] The property description.  
   
- `member`  
+ *member*  
  [in] The data member containing the extent; for example, `m_sizeExtent`.  
   
  *vt*  
@@ -71,7 +71,7 @@ PROP_DATA_ENTRY( szDesc, member, vt)
  When you create an ActiveX control, the wizard inserts this macro after the property map macro [BEGIN_PROP_MAP](#begin_prop_map) and before the property map macro [END_PROP_MAP](#end_prop_map).  
   
 ### Example  
- In the following example, the extent of the object ( `m_sizeExtent`) is being persisted.  
+ In the following example, the extent of the object (`m_sizeExtent`) is being persisted.  
   
  [!code-cpp[NVC_ATL_Windowing#131](../../atl/codesnippet/cpp/property-map-macros_2.h)]  
   
@@ -85,20 +85,20 @@ PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 ```  
   
 ### Parameters  
- `szDesc`  
+ *szDesc*  
  [in] The property description.  
   
- `dispid`  
+ *dispid*  
  [in] The property's DISPID.  
   
- `clsid`  
- [in] The CLSID of the associated property page. Use the special value `CLSID_NULL` for a property that does not have an associated property page.  
+ *clsid*  
+ [in] The CLSID of the associated property page. Use the special value CLSID_NULL for a property that does not have an associated property page.  
   
- `vt`  
+ *vt*  
  [in] The property's type.  
   
 ### Remarks  
- The `PROP_ENTRY` macro was insecure and deprecated. It has been replaced with `PROP_ENTRY_TYPE`.  
+ The PROP_ENTRY macro was insecure and deprecated. It has been replaced with PROP_ENTRY_TYPE.  
   
  The [BEGIN_PROP_MAP](#begin_prop_map) macro marks the beginning of the property map; the [END_PROP_MAP](#end_prop_map) macro marks the end.  
   
@@ -113,23 +113,23 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 ```    
   
 ### Parameters  
- `szDesc`  
+ *szDesc*  
  [in] The property description.  
   
- `dispid`  
+ *dispid*  
  [in] The property's DISPID.  
   
- `clsid`  
- [in] The CLSID of the associated property page. Use the special value `CLSID_NULL` for a property that does not have an associated property page.  
+ *clsid*  
+ [in] The CLSID of the associated property page. Use the special value CLSID_NULL for a property that does not have an associated property page.  
   
- `iidDispatch`  
+ *iidDispatch*  
  [in] The IID of the dual interface defining the property.  
   
- `vt`  
+ *vt*  
  [in] The property's type.  
   
 ### Remarks  
- The `PROP_ENTRY_EX` macro was insecure and deprecated. It has been replaced with `PROP_ENTRY_TYPE_EX`.  
+ The PROP_ENTRY_EX macro was insecure and deprecated. It has been replaced with PROP_ENTRY_TYPE_EX.  
   
  The [BEGIN_PROP_MAP](#begin_prop_map) macro marks the beginning of the property map; the [END_PROP_MAP](#end_prop_map) macro marks the end.  
   
@@ -146,14 +146,14 @@ PROP_PAGE(clsid)
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  [in] The CLSID of a property page.  
   
 ### Remarks  
- `PROP_PAGE` is similar to [PROP_ENTRY_TYPE](#prop_entry_type), but does not require a property description or DISPID.  
+ PROP_PAGE is similar to [PROP_ENTRY_TYPE](#prop_entry_type), but does not require a property description or DISPID.  
   
 > [!NOTE]
->  If you have already entered a CLSID with `PROP_ENTRY_TYPE` or [PROP_ENTRY_TYPE_EX](#prop_entry_type_ex), you do not need to make an additional entry with `PROP_PAGE`.  
+>  If you have already entered a CLSID with PROP_ENTRY_TYPE or [PROP_ENTRY_TYPE_EX](#prop_entry_type_ex), you do not need to make an additional entry with PROP_PAGE.  
   
  The [BEGIN_PROP_MAP](#begin_prop_map) macro marks the beginning of the property map; the [END_PROP_MAP](#end_prop_map) macro marks the end.  
   
@@ -168,7 +168,7 @@ END_PROP_MAP()
 ```  
   
 ### Remarks  
- When you create an object with the ATL Project Wizard, the wizard will create an empty property map by specifying [BEGIN_PROP_MAP](#begin_prop_map) followed by `END_PROP_MAP`.  
+ When you create an object with the ATL Project Wizard, the wizard will create an empty property map by specifying [BEGIN_PROP_MAP](#begin_prop_map) followed by END_PROP_MAP.  
   
 ### Example  
  See the example for [BEGIN_PROP_MAP](#begin_prop_map).  

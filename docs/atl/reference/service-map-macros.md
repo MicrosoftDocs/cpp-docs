@@ -32,7 +32,7 @@ BEGIN_SERVICE_MAP(theClass)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  [in] Specifies the class containing the service map.  
   
 ### Remarks  
@@ -70,14 +70,14 @@ SERVICE_ENTRY( SID )
  See the example for [BEGIN_SERVICE_MAP](#begin_service_map).  
   
 ##  <a name="service_entry_chain"></a>  SERVICE_ENTRY_CHAIN  
- Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the object specified by `punk`.  
+ Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the object specified by *punk*.  
   
 ```
 SERVICE_ENTRY_CHAIN( punk )
 ```  
   
 ### Parameters  
- `punk`  
+ *punk*  
  A pointer to the **IUnknown** interface to which to chain.  
   
 ### Example  
@@ -94,17 +94,17 @@ STDMETHOD(QueryService)(
 ```  
   
 ### Parameters  
- [IN] `guidService`  
+ [IN] *guidService*  
  Pointer to a service identifier (SID).  
   
- [IN] `riid`  
+ [IN] *riid*  
  Identifier of the interface to which the caller is to gain access.  
   
- [OUT] `ppvObj`  
+ [OUT] *ppvObj*  
  Indirect pointer to the requested interface.  
   
 ### Return Value  
- The returned `HRESULT` value is one of the following:  
+ The returned HRESULT value is one of the following:  
   
 |Return value|Meaning|  
 |------------------|-------------|  
@@ -117,7 +117,7 @@ STDMETHOD(QueryService)(
 ### Remarks  
  `QueryService` returns an indirect pointer to the requested interface in the specified service. The caller is responsible for releasing this pointer when it is no longer required.  
   
- When you call `QueryService`, you pass both a service identifier ( `guidService`) and an interface identifier ( `riid`). The `guidService` specifies the service to which you want access, and the `riid` identifies an interface that is part of the service. In return, you receive an indirect pointer to the interface.  
+ When you call `QueryService`, you pass both a service identifier (*guidService*) and an interface identifier (*riid*). The *guidService* specifies the service to which you want access, and the *riid* identifies an interface that is part of the service. In return, you receive an indirect pointer to the interface.  
   
  The object that implements the interface might also implement interfaces that are part of other services. Consider the following:  
   
