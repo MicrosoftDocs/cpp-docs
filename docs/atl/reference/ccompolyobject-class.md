@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComPolyObject Class
-This class implements **IUnknown** for an aggregated or nonaggregated object.  
+This class implements `IUnknown` for an aggregated or nonaggregated object.  
   
 ## Syntax  
   
@@ -24,7 +24,7 @@ class CComPolyObject : public IUnknown,
 ```  
   
 #### Parameters  
- `contained`  
+ *contained*  
  Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.  
   
 ## Members  
@@ -51,18 +51,18 @@ class CComPolyObject : public IUnknown,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPolyObject::m_contained](#m_contained)|Delegates **IUnknown** calls to the outer unknown if the object is aggregated or to the **IUnknown** of the object if the object is not aggregated.|  
+|[CComPolyObject::m_contained](#m_contained)|Delegates `IUnknown` calls to the outer unknown if the object is aggregated or to the `IUnknown` of the object if the object is not aggregated.|  
   
 ## Remarks  
  `CComPolyObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated or nonaggregated object.  
   
- When an instance of `CComPolyObject` is created, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
+ When an instance of `CComPolyObject` is created, the value of the outer unknown is checked. If it is NULL, `IUnknown` is implemented for a nonaggregated object. If the outer unknown is not NULL, `IUnknown` is implemented for an aggregated object.  
   
  The advantage of using `CComPolyObject` is that you avoid having both [CComAggObject](../../atl/reference/ccomaggobject-class.md) and [CComObject](../../atl/reference/ccomobject-class.md) in your module to handle the aggregated and nonaggregated cases. A single `CComPolyObject` object handles both cases. This means only one copy of the vtable and one copy of the functions exist in your module. If your vtable is large, this can substantially decrease your module size. However, if your vtable is small, using `CComPolyObject` can result in a slightly larger module size because it is not optimized for an aggregated or nonaggregated object, as are `CComAggObject` and `CComObject`.  
   
- If the `DECLARE_POLY_AGGREGATABLE` macro is specified in your object's class definition, `CComPolyObject` will be used to create your object. `DECLARE_POLY_AGGREGATABLE` will automatically be declared if you use the ATL Project Wizard to create a full control or Internet Explorer control.  
+ If the DECLARE_POLY_AGGREGATABLE macro is specified in your object's class definition, `CComPolyObject` will be used to create your object. DECLARE_POLY_AGGREGATABLE will automatically be declared if you use the ATL Project Wizard to create a full control or Internet Explorer control.  
   
- If aggregated, the `CComPolyObject` object has its own **IUnknown**, separate from the outer object's **IUnknown**, and maintains its own reference count. `CComPolyObject` uses [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) to delegate to the outer unknown.  
+ If aggregated, the `CComPolyObject` object has its own `IUnknown`, separate from the outer object's `IUnknown`, and maintains its own reference count. `CComPolyObject` uses [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) to delegate to the outer unknown.  
   
  For more information about aggregation, see the article [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md).  
   
@@ -96,8 +96,8 @@ CComPolyObject(void* pv);
 ```  
   
 ### Parameters  
- `pv`  
- [in] A pointer to the outer unknown if the object is to be aggregated, or **NULL** if the object if the object is not aggregated.  
+ *pv*  
+ [in] A pointer to the outer unknown if the object is to be aggregated, or NULL if the object if the object is not aggregated.  
   
 ### Remarks  
  Initializes the `CComContainedObject` data member, [m_contained](#m_contained), and increments the module lock count.  
@@ -124,14 +124,14 @@ static HRESULT WINAPI CreateInstance(
 ```  
   
 ### Parameters  
- `pp`  
- [out] A pointer to a **CComPolyObject<** `contained`**>** pointer. If `CreateInstance` is unsuccessful, `pp` is set to **NULL**.  
+ *pp*  
+ [out] A pointer to a **CComPolyObject<** `contained`**>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The object returned has a reference count of zero, so call `AddRef` immediately, then use **Release** to free the reference on the object pointer when you're done.  
+ The object returned has a reference count of zero, so call `AddRef` immediately, then use `Release` to free the reference on the object pointer when you're done.  
   
  If you don't need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) instead.  
   
@@ -143,7 +143,7 @@ HRESULT FinalConstruct();
 ```  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="finalrelease"></a>  CComPolyObject::FinalRelease  
  Called during object destruction, this method frees the [m_contained](#m_contained) data member.  
@@ -160,11 +160,11 @@ CComContainedObject<contained> m_contained;
 ```  
   
 ### Parameters  
- `contained`  
+ *contained*  
  [in] Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support on the object.  
   
 ### Remarks  
- **IUnknown** calls through `m_contained` are delegated to the outer unknown if the object is aggregated, or to the **IUnknown** of this object if the object is not aggregated.  
+ `IUnknown` calls through `m_contained` are delegated to the outer unknown if the object is aggregated, or to the `IUnknown` of this object if the object is not aggregated.  
   
 ##  <a name="queryinterface"></a>  CComPolyObject::QueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -176,23 +176,23 @@ HRESULT QueryInterface(Q** pp);
 ```  
   
 ### Parameters  
- `Q`  
+ *Q*  
  The COM interface.  
   
- `iid`  
+ *iid*  
  [in] The identifier of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer identified by `iid`. If the object does not support this interface, `ppvObject` is set to **NULL**.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.  
   
- `pp`  
- [out] A pointer to the interface identified by **__uuidof(Q)**.  
+ *pp*  
+ [out] A pointer to the interface identified by `__uuidof(Q)`.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- For an aggregated object, if the requested interface is **IUnknown**, `QueryInterface` returns a pointer to the aggregated object's own **IUnknown** and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` data member, [m_contained](#m_contained).  
+ For an aggregated object, if the requested interface is `IUnknown`, `QueryInterface` returns a pointer to the aggregated object's own `IUnknown` and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` data member, [m_contained](#m_contained).  
   
 ##  <a name="release"></a>  CComPolyObject::Release  
  Decrements the reference count on the object.  
@@ -202,7 +202,7 @@ STDMETHOD_(ULONG, Release)();
 ```  
   
 ### Return Value  
- In debug builds, **Release** returns a value that may be useful for diagnostics or testing. In nondebug builds, **Release** always returns 0.  
+ In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In nondebug builds, `Release` always returns 0.  
   
 ## See Also  
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   

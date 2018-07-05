@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComObjectNoLock Class
-This class implements **IUnknown** for a nonaggregated object, but does not increment the module lock count in the constructor.  
+This class implements `IUnknown` for a nonaggregated object, but does not increment the module lock count in the constructor.  
   
 ## Syntax  
   
@@ -23,7 +23,7 @@ class CComObjectNoLock : public Base
 ```  
   
 #### Parameters  
- `Base`  
+ *Base*  
  Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interface you want to support on the object.  
   
 ## Members  
@@ -96,14 +96,14 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The identifier of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer identified by `iid`. If the object does not support this interface, `ppvObject` is set to **NULL**.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer identified by *iid*. If the object does not support this interface, *ppvObject* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="release"></a>  CComObjectNoLock::Release  
  Decrements the reference count on the object.  
@@ -113,7 +113,7 @@ STDMETHOD_(ULONG, Release)();
 ```  
   
 ### Return Value  
- In debug builds, **Release** returns a value that may be useful for diagnostics or testing. In non-debug builds, **Release** always returns 0.  
+ In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

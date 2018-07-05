@@ -42,12 +42,12 @@ class CComCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCriticalSection::m_sec](#m_sec)|A **CRITICAL_SECTION** object.|  
+|[CComCriticalSection::m_sec](#m_sec)|A CRITICAL_SECTION object.|  
   
 ## Remarks  
  `CComCriticalSection` is similar to class [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md), except that you must explicitly initialize and release the critical section.  
   
- Typically, you use `CComCriticalSection` through the `typedef` name [CriticalSection](ccommultithreadmodel-class.md#criticalsection). This name references `CComCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
+ Typically, you use `CComCriticalSection` through the **typedef** name [CriticalSection](ccommultithreadmodel-class.md#criticalsection). This name references `CComCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
 
   
  See [CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md) for a safer way to use this class than calling `Lock` and `Unlock` directly.  
@@ -63,7 +63,7 @@ CComCriticalSection() throw();
 ```  
   
 ### Remarks  
- Sets the [m_sec](#m_sec) data member to NULL **.**  
+ Sets the [m_sec](#m_sec) data member to NULL.  
   
 ##  <a name="init"></a>  CComCriticalSection::Init  
  Calls the Win32 function [InitializeCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms683472), which initializes the critical section object contained in the [m_sec](#m_sec) data member.  
@@ -73,7 +73,7 @@ HRESULT Init() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, **E_OUTOFMEMORY** or **E_FAIL** on failure.  
+ Returns S_OK on success, E_OUTOFMEMORY or E_FAIL on failure.  
   
 ##  <a name="lock"></a>  CComCriticalSection::Lock  
  Calls the Win32 function [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), which waits until the thread can take ownership of the critical section object contained in the [m_sec](#m_sec) data member.  
@@ -83,7 +83,7 @@ HRESULT Lock() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, **E_OUTOFMEMORY** or **E_FAIL** on failure.  
+ Returns S_OK on success, E_OUTOFMEMORY or E_FAIL on failure.  
   
 ### Remarks  
  The critical section object must first be initialized with a call to the [Init](#init) method. When the protected code has finished executing, the thread must call [Unlock](#unlock) to release ownership of the critical section.  
@@ -103,7 +103,7 @@ HRESULT Term() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Once `Term` has been called, the critical section can no longer be used for synchronization.  
@@ -116,7 +116,7 @@ HRESULT Unlock() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To first obtain ownership, the thread must call the [Lock](#lock) method. Each call to `Lock` requires a corresponding call to `Unlock` to release ownership of the critical section.  
