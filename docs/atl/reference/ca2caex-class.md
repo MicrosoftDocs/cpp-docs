@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CA2CAEX Class
-This class is used by string conversion macros `CA2CTEX` and `CT2CAEX`, and the typedef **CA2CA**.  
+This class is used by string conversion macros CA2CTEX and CT2CAEX, and the typedef CA2CA.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class CA2CAEX
 ```  
   
 #### Parameters  
- `t_nBufferLength`  
+ *t_nBufferLength*  
  The size of the buffer used in the translation process. The default length is 128 bytes.  
   
 ## Members  
@@ -51,19 +51,19 @@ class CA2CAEX
 |[CA2CAEX::m_psz](#m_psz)|The data member that stores the source string.|  
   
 ## Remarks  
- Unless extra functionality is required, use `CA2CTEX`, `CT2CAEX`, or **CA2CA** in your own code.  
+ Unless extra functionality is required, use CA2CTEX, CT2CAEX, or CA2CA in your own code.  
   
  This class is safe to use in loops and won't overflow the stack. By default, the ATL conversion classes and macros will use the current thread's ANSI code page for the conversion.  
   
  The following macros are based on this class:  
   
-- `CA2CTEX`  
+- CA2CTEX  
   
-- `CT2CAEX`  
+- CT2CAEX  
   
  The following typedef is based on this class:  
   
-- **CA2CA**  
+- CA2CA  
   
  For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
@@ -82,10 +82,10 @@ CA2CAEX(LPCSTR psz) throw(...);
 ```  
   
 ### Parameters  
- `psz`  
+ *psz*  
  The text string to be converted.  
   
- `nCodePage`  
+ *nCodePage*  
  Unused in this class.  
   
 ### Remarks  
@@ -116,7 +116,7 @@ operator LPCSTR() const throw();
 ```  
   
 ### Return Value  
- Returns the text string as type `LPCSTR`.  
+ Returns the text string as type LPCSTR.  
   
 ## See Also  
  [CA2AEX Class](../../atl/reference/ca2aex-class.md)   

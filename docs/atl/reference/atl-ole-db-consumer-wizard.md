@@ -104,7 +104,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  **Attributed**  
  This option specifies whether the wizard will create consumer classes using attributes or template declarations. When you select this option, the wizard uses attributes instead of template declarations (this is the default option). When you deselect this option, the wizard uses template declarations instead of attributes.  
   
--   If you select a consumer **Type** of Table, the wizard uses the `db_source` and **db_table** attributes to create the table and table accessor class declarations, and uses **db_column** to create the column map, for example:  
+-   If you select a consumer **Type** of Table, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses **db_column** to create the column map, for example:  
   
  ``` 
  // Inject table class and table accessor class declarations  
@@ -131,7 +131,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
     END_COLUMN_MAP() 
  ```  
   
--   If you select a consumer **Type** of Command, the wizard uses the `db_source` and **db_command** attributes, and uses **db_column** to create the column map, for example:  
+-   If you select a consumer **Type** of Command, the wizard uses the `db_source` and `db_command` attributes, and uses `db_column` to create the column map, for example:  
   
  ```  
  [db_source("<initialization_string>"), db_command("SQL_command")]  
@@ -157,10 +157,10 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  Select one of these radio buttons to specify whether the consumer class will be derived from `CTable` or `CCommand` (default).  
   
  **Table**  
- Select this option if you want to use `CTable` or **db_table** to create the table and table accessor class declarations.  
+ Select this option if you want to use `CTable` or `db_table` to create the table and table accessor class declarations.  
   
  **Command**  
- Select this option if you want to use `CCommand` or **db_command** to create the command and command accessor class declarations. This is the default selection.  
+ Select this option if you want to use `CCommand` or `db_command` to create the command and command accessor class declarations. This is the default selection.  
   
  **Support**  
  Select the check boxes to specify the kinds of updates to be supported in the consumer (the default is none). Each of the following will set [DBPROP_IRowsetChange](https://msdn.microsoft.com/library/ms715892.aspx) and the appropriate entries for [DBPROP_UPDATABILITY](https://msdn.microsoft.com/library/ms722676.aspx) in the property set map.  

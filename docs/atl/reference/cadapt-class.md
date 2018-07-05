@@ -38,7 +38,7 @@ class CAdapt
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAdapt::operator const T&](#operator_const_t_amp)|Returns a `const` reference to `m_T`.|  
+|[CAdapt::operator const T&](#operator_const_t_amp)|Returns a **const** reference to `m_T`.|  
 |[CAdapt::operator T&](#operator_t_amp)|Returns a reference to `m_T`.|  
 |[CAdapt::operator <](#operator_lt)|Compares an object of the adapted type with `m_T`.|  
 |[CAdapt::operator =](#operator_eq)|Assigns an object of the adapted type to `m_T`.|  
@@ -51,7 +51,7 @@ class CAdapt
 |[CAdapt::m_T](#m_t)|The data being adapted.|  
   
 ## Remarks  
- `CAdapt` is a simple template used to wrap classes that redefine the address-of operator ( `operator &`) to return something other than the address of the object. Examples of such classes include ATL's `CComBSTR`, `CComPtr`, and `CComQIPtr` classes, and the compiler COM support class, `_com_ptr_t`. These classes all redefine the address-of operator to return the address of one of their data members (a `BSTR` in the case of `CComBSTR`, and an interface pointer in the case of the other classes).  
+ `CAdapt` is a simple template used to wrap classes that redefine the address-of operator (`operator &`) to return something other than the address of the object. Examples of such classes include ATL's `CComBSTR`, `CComPtr`, and `CComQIPtr` classes, and the compiler COM support class, `_com_ptr_t`. These classes all redefine the address-of operator to return the address of one of their data members (a BSTR in the case of `CComBSTR`, and an interface pointer in the case of the other classes).  
   
  `CAdapt`'s primary role is to hide the address-of operator defined by class `T`, yet still retain the characteristics of the adapted class. `CAdapt` fulfils this role by holding a public member, [m_T](#m_t), of type `T`, and by defining conversion operators, comparison operators, and a copy constructor to allow specializations of `CAdapt` to be treated as if they are objects of type `T`.  
   
@@ -74,7 +74,7 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ```  
   
 ### Parameters  
- `rSrc`  
+ *rSrc*  
  A variable of the type being adapted to be copied into the newly constructed adapter object.  
   
  *rSrCA*  
@@ -118,14 +118,14 @@ bool operator<(const T& rSrc) const;
 ```  
   
 ### Parameters  
- `rSrc`  
+ *rSrc*  
  A reference to the object to be compared.  
   
 ### Return Value  
- The result of the comparison between `m_T` and `rSrc`.  
+ The result of the comparison between `m_T` and *rSrc*.  
   
 ##  <a name="operator_eq"></a>  CAdapt::operator =  
- The assignment operator assigns the argument, `rSrc`, to the data member [m_T](#m_t) and returns the current adapter object.  
+ The assignment operator assigns the argument, *rSrc*, to the data member [m_T](#m_t) and returns the current adapter object.  
   
 ```
 CAdapt& operator= (const T& rSrc);
@@ -134,10 +134,10 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ```  
   
 ### Parameters  
- `rSrc`  
+ *rSrc*  
  A reference to an object of the adapted type to be copied. 
 
- `rSrCA`
+ *rSrCA*
   A reference to an object to be moved. 
   
 ### Return Value  
@@ -151,11 +151,11 @@ bool operator== (const T& rSrc) const;
 ```  
   
 ### Parameters  
- `rSrc`  
+ *rSrc*  
  A reference to the object to be compared.  
   
 ### Return Value  
- The result of the comparison between `m_T` and `rSrc`.  
+ The result of the comparison between `m_T` and *rSrc*.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
