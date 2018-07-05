@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CA2AEX Class
-This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and the typedef **CA2A**.  
+This class is used by the string conversion macros CA2TEX and CT2AEX, and the typedef CA2A.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class CA2AEX
 ```  
   
 #### Parameters  
- `t_nBufferLength`  
+ *t_nBufferLength*  
  The size of the buffer used in the translation process. The default length is 128 bytes.  
   
 ## Members  
@@ -52,23 +52,23 @@ class CA2AEX
 |[CA2AEX::m_szBuffer](#m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
- Unless extra functionality is required, use `CA2TEX`, `CT2AEX`, or **CA2A** in your own code.  
+ Unless extra functionality is required, use CA2TEX, CT2AEX, or CA2A in your own code.  
   
- This class contains a fixed-size static buffer which is used to store the result of the conversion. If the result is too large to fit into the static buffer, the class allocates memory using `malloc`, freeing the memory when the object goes out of scope. This ensures that, unlike text conversion macros available in previous versions of ATL, this class is safe to use in loops and that it won't overflow the stack.  
+ This class contains a fixed-size static buffer which is used to store the result of the conversion. If the result is too large to fit into the static buffer, the class allocates memory using **malloc**, freeing the memory when the object goes out of scope. This ensures that, unlike text conversion macros available in previous versions of ATL, this class is safe to use in loops and that it won't overflow the stack.  
   
- If the class tries to allocate memory on the heap and fails, it will call `AtlThrow` with an argument of **E_OUTOFMEMORY**.  
+ If the class tries to allocate memory on the heap and fails, it will call `AtlThrow` with an argument of E_OUTOFMEMORY.  
   
  By default, the ATL conversion classes and macros use the current thread's ANSI code page for the conversion.  
   
  The following macros are based on this class:  
   
-- `CA2TEX`  
+- CA2TEX  
   
-- `CT2AEX`  
+- CT2AEX  
   
  The following typedef is based on this class:  
   
-- **CA2A**  
+- CA2A  
   
  For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
@@ -87,10 +87,10 @@ CA2AEX(LPCSTR psz) throw(...);
 ```  
   
 ### Parameters  
- `psz`  
+ *psz*  
  The text string to be converted.  
   
- `nCodePage`  
+ *nCodePage*  
  Unused in this class.  
   
 ### Remarks  
@@ -128,7 +128,7 @@ operator LPSTR() const throw();
 ```  
   
 ### Return Value  
- Returns the text string as type **LPSTR**.  
+ Returns the text string as type LPSTR.  
   
 ## See Also  
  [CA2CAEX Class](../../atl/reference/ca2caex-class.md)   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CA2WEX Class
-This class is used by the string conversion macros `CA2TEX`, `CA2CTEX`, `CT2WEX`, and `CT2CWEX`, and the typedef **CA2W**.  
+This class is used by the string conversion macros CA2TEX, CA2CTEX, CT2WEX, and CT2CWEX, and the typedef CA2W.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class CA2WEX
 ```  
   
 #### Parameters  
- `t_nBufferLength`  
+ *t_nBufferLength*  
  The size of the buffer used in the translation process. The default length is 128 bytes.  
   
 ## Members  
@@ -52,27 +52,27 @@ class CA2WEX
 |[CA2WEX::m_szBuffer](#m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
- Unless extra functionality is required, use `CA2TEX`, `CA2CTEX`, `CT2WEX`, `CT2CWEX`, or **CA2W** in your code.  
+ Unless extra functionality is required, use CA2TEX, CA2CTEX, CT2WEX, CT2CWEX, or CA2W in your code.  
   
- This class contains a fixed-size static buffer which is used to store the result of the conversion. If the result is too large to fit into the static buffer, the class allocates memory using `malloc`, freeing the memory when the object goes out of scope. This ensures that, unlike text conversion macros available in previous versions of ATL, this class is safe to use in loops and that it won't overflow the stack.  
+ This class contains a fixed-size static buffer which is used to store the result of the conversion. If the result is too large to fit into the static buffer, the class allocates memory using **malloc**, freeing the memory when the object goes out of scope. This ensures that, unlike text conversion macros available in previous versions of ATL, this class is safe to use in loops and that it won't overflow the stack.  
   
- If the class tries to allocate memory on the heap and fails, it will call `AtlThrow` with an argument of **E_OUTOFMEMORY**.  
+ If the class tries to allocate memory on the heap and fails, it will call `AtlThrow` with an argument of E_OUTOFMEMORY.  
   
  By default, the ATL conversion classes and macros use the current thread's ANSI code page for the conversion. If you want to override that behavior for a specific conversion, specify the code page as the second parameter to the constructor for the class.  
   
  The following macros are based on this class:  
   
-- `CA2TEX`  
+- CA2TEX  
   
-- `CA2CTEX`  
+- CA2CTEX  
   
-- `CT2WEX`  
+- CT2WEX  
   
-- `CT2CWEX`  
+- CT2CWEX  
   
  The following typedef is based on this class:  
   
-- **CA2W**  
+- CA2W  
   
  For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
@@ -91,10 +91,10 @@ CA2WEX(LPCSTR psz) throw(...);
 ```  
   
 ### Parameters  
- `psz`  
+ *psz*  
  The text string to be converted.  
   
- `nCodePage`  
+ *nCodePage*  
  The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072) for more details.  
   
 ### Remarks  
@@ -132,7 +132,7 @@ operator LPWSTR() const throw();
 ```  
   
 ### Return Value  
- Returns the text string as type **LPWSTR.**  
+ Returns the text string as type LPWSTR.  
   
 ## See Also  
  [CA2AEX Class](../../atl/reference/ca2aex-class.md)   

@@ -41,7 +41,7 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
  The second `CSid` object or `SID` structure to compare.  
   
 ### Return Value  
- Returns **true** if the objects are equal, **false** if they are not equal.  
+ Returns TRUE if the objects are equal, FALSE if they are not equal.  
   
 ##  <a name="operator_neq"></a>  operator !=  
  Compares `CSid` objects or `SID` (security identifier) structures for inequality.  
@@ -51,14 +51,14 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The first `CSid` object or `SID` structure to compare.  
   
- `rhs`  
+ *rhs*  
  The second `CSid` object or `SID` structure to compare.  
   
 ### Return Value  
- Returns **true** if the objects are not equal, **false** if they are equal.  
+ Returns TRUE if the objects are not equal, FALSE if they are equal.  
   
 ##  <a name="operator_lt"></a>  operator <  
  Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).  
@@ -68,14 +68,14 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The first `CSid` object or `SID` structure to compare.  
   
- `rhs`  
+ *rhs*  
  The second `CSid` object or `SID` structure to compare.  
   
 ### Return Value  
- Returns **true** if the address of the `lhs` object is less than the address of the `rhs` object, **false** otherwise.  
+ Returns TRUE if the address of the *lhs* object is less than the address of the *rhs* object, FALSE otherwise.  
   
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.  
@@ -88,14 +88,14 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The first `CSid` object or `SID` structure to compare.  
   
- `rhs`  
+ *rhs*  
  The second `CSid` object or `SID` structure to compare.  
   
 ### Return Value  
- Returns **true** if the address of the `lhs` is greater than the address of the `rhs`, **false** otherwise.  
+ Returns TRUE if the address of the *lhs* is greater than the address of the *rhs*, FALSE otherwise.  
   
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.  
@@ -108,14 +108,14 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The first `CSid` object or `SID` structure to compare.  
   
- `rhs`  
+ *rhs*  
  The second `CSid` object or `SID` structure to compare.  
   
 ### Return Value  
- Returns **true** if the address of the `lhs` is less than or equal to the address of the `rhs`, **false** otherwise.  
+ Returns TRUE if the address of the *lhs* is less than or equal to the address of the *rhs*, FALSE otherwise.  
   
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.  
@@ -128,14 +128,14 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The first `CSid` object or `SID` structure to compare.  
   
- `rhs`  
+ *rhs*  
  The second `CSid` object or `SID` structure to compare.  
   
 ### Return Value  
- Returns **true** if the address of the `lhs` is greater than or equal to the address of the `rhs`, **false** otherwise.  
+ Returns TRUE if the address of the *lhs* is greater than or equal to the address of the *rhs*, FALSE otherwise.  
   
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.

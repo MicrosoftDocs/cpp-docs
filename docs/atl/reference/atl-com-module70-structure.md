@@ -34,17 +34,17 @@ struct _ATL_COM_MODULE70 {
  `m_hInstTypeLib`  
  The handle instance to the type library for this module.  
   
- **m_ppAutoObjMapFirst**  
+ `m_ppAutoObjMapFirst`  
  Address of the array element indicating the beginning of the object map entries for this module.  
   
- **m_ppAutoObjMapLast**  
+ `m_ppAutoObjMapLast`  
  Address of the array element indicating the end of the object map entries for this module.  
   
  `m_csObjMap`  
  Critical section to serialize access to the object map entries. Used internally by ATL.  
   
 ## Remarks  
- [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module) is defined as a typedef of `_ATL_COM_MODULE70`.  
+ [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module) is defined as a typedef of _ATL_COM_MODULE70.  
   
 ## Requirements  
  **Header:** atlbase.h  
