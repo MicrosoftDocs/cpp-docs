@@ -32,7 +32,7 @@ WM_FORWARDMSG
  Nonzero if the message was processed, zero if not.  
   
 ### Remarks  
- Use `WM_FORWARDMSG` to forward a message received by a window to another window for processing. The LPARAM and WPARAM parameters are used as follows:  
+ Use WM_FORWARDMSG to forward a message received by a window to another window for processing. The LPARAM and WPARAM parameters are used as follows:  
   
 |Parameter|Usage|  
 |---------------|-----------|  
