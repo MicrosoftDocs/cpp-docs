@@ -52,5 +52,5 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Using wmain Instead of main](../cpp/using-wmain-instead-of-main.md)   
- [main Function Restrictions](../cpp/main-function-restrictions.md)
+ [main Function Restrictions](../cpp/main-function-restrictions.md)   
  [Parsing C++ Command-Line Arguments](../cpp/parsing-cpp-command-line-arguments.md)
