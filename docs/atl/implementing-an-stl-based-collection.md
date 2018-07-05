@@ -42,17 +42,17 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
  This is the standard form for a read-only collection interface designed with Automation clients in mind. The numbered comments in this interface definition correspond to the comments below:  
   
-1.  Collection interfaces are usually dual because Automation clients accesses the `_NewEnum` property via **IDispatch::Invoke**. However, Automation clients can access the remaining methods via the vtable, so dual interfaces are preferable to dispinterfaces.  
+1.  Collection interfaces are usually dual because Automation clients accesses the `_NewEnum` property via `IDispatch::Invoke`. However, Automation clients can access the remaining methods via the vtable, so dual interfaces are preferable to dispinterfaces.  
   
-2.  If a dual interface or dispinterface will not be extended at run time (that is, you won't provide extra methods or properties via **IDispatch::Invoke**), you should apply the **nonextensible** attribute to your definition. This attribute enables Automation clients to perform full code verification at compile time. In this case, the interface should not be extended.  
+2.  If a dual interface or dispinterface will not be extended at run time (that is, you won't provide extra methods or properties via `IDispatch::Invoke`), you should apply the **nonextensible** attribute to your definition. This attribute enables Automation clients to perform full code verification at compile time. In this case, the interface should not be extended.  
   
-3.  The correct DISPID is important if you want Automation clients to be able to use this property. (Note that there is only one underscore in **DISPID_NEWENUM**.)  
+3.  The correct DISPID is important if you want Automation clients to be able to use this property. (Note that there is only one underscore in DISPID_NEWENUM.)  
   
-4.  You can supply any value as the DISPID of the **Item** property. However, **Item** typically uses **DISPID_VALUE** to make it the default property of the collection. This allows Automation clients to refer to the property without naming it explicitly.  
+4.  You can supply any value as the DISPID of the `Item` property. However, `Item` typically uses DISPID_VALUE to make it the default property of the collection. This allows Automation clients to refer to the property without naming it explicitly.  
   
-5.  The data type used for the return value of the **Item** property is the type of the item stored in the collection as far as COM clients are concerned. The interface returns strings, so you should use the standard COM string type, `BSTR`. You can store the data in a different format internally as you'll see shortly.  
+5.  The data type used for the return value of the `Item` property is the type of the item stored in the collection as far as COM clients are concerned. The interface returns strings, so you should use the standard COM string type, BSTR. You can store the data in a different format internally as you'll see shortly.  
   
-6.  The value used for the DISPID of the **Count** property is completely arbitrary. There's no standard DISPID for this property.  
+6.  The value used for the DISPID of the `Count` property is completely arbitrary. There's no standard DISPID for this property.  
   
 ##  <a name="vcconstorage_and_exposure_typedefs"></a> Creating Typedefs for Storage and Exposure  
  Once the collection interface is defined, you need to decide how the data will be stored, and how the data will be exposed via the enumerator.  
@@ -63,7 +63,7 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
  In this case, you will store the data as a **std::vector** of **std::string**s. **std::vector** is a C++ Standard Library container class that behaves like a managed array. **std::string** is the C++ Standard Library's string class. These classes make it easy to work with a collection of strings.  
   
- Since Visual Basic support is vital to the success of this interface, the enumerator returned by the `_NewEnum` property must support the **IEnumVARIANT** interface. This is the only enumerator interface understood by Visual Basic.  
+ Since Visual Basic support is vital to the success of this interface, the enumerator returned by the `_NewEnum` property must support the `IEnumVARIANT` interface. This is the only enumerator interface understood by Visual Basic.  
   
 ##  <a name="vcconcopy_classes"></a> Creating Typedefs for Copy Policy Classes  
  The typedefs you have created so far provide all the information you need to create further typedefs for the copy classes that will be used by the enumerator and collection:  
@@ -77,7 +77,7 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
  [!code-cpp[NVC_ATL_COM#27](../atl/codesnippet/cpp/implementing-an-stl-based-collection_4.h)]  
   
- Now `CollectionType` is a synonym for a specialization of `ICollectionOnSTLImpl` that implements the `IWords` interface defined earlier and provides an enumerator that supports **IEnumVARIANT**.  
+ Now `CollectionType` is a synonym for a specialization of `ICollectionOnSTLImpl` that implements the `IWords` interface defined earlier and provides an enumerator that supports `IEnumVARIANT`.  
   
 ##  <a name="vcconedit_the_generated_code"></a> Editing the Wizard-Generated Code  
  Now you must derive `CWords` from the interface implementation represented by the `CollectionType` typedef rather than `IWords`, as shown below:  

@@ -85,7 +85,7 @@ CSettingsStore& CSettingsStoreSP Create(
   
  If you create a `CSettingsStore` object in administrator mode, the default location for all registry access is HKEY_LOCAL_MACHINE. Otherwise, the default location for all registry access is HKEY_CURRENT_USER.  
   
- If *bAdmin* is `TRUE`, the application must have administration rights. Otherwise, it will fail when it tries to access the registry.  
+ If *bAdmin* is TRUE, the application must have administration rights. Otherwise, it will fail when it tries to access the registry.  
   
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CSettingsStoreSP` class.  
@@ -118,7 +118,7 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
  A pointer to the runtime class information for a class derived from the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` if the class identified by *pRTI* is not derived from `CSettingsStore`.  
+ TRUE if successful; FALSE if the class identified by *pRTI* is not derived from `CSettingsStore`.  
   
 ### Remarks  
  You can use the [CSettingsStoreSP Class](../../mfc/reference/csettingsstoresp-class.md) to derive classes from `CSettingsStore`. Use the method `SetRuntimeClass` if you want to create objects of a custom class that is derived from `CSettingsStore`.  

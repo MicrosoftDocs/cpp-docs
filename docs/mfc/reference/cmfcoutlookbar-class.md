@@ -71,7 +71,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
     };  
     ```
 
-2.  When processing the `WM_CREATE` message in the main frame, call the [CMFCOutlookBar::Create](#create) method to create the Outlook bar tab control.  
+2.  When processing the WM_CREATE message in the main frame, call the [CMFCOutlookBar::Create](#create) method to create the Outlook bar tab control.  
   
     ```cpp
     m_wndOutlookBar.Create (_T("Shortcuts"),
@@ -108,7 +108,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
         ID_FILE_OPEN);
     ```
 
-5.  Call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add each new tab. Set the `bDetachable` parameter to `FALSE` to make a page non-detachable. Or, use [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) to add detachable pages.  
+5.  Call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add each new tab. Set the *bDetachable* parameter to FALSE to make a page non-detachable. Or, use [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) to add detachable pages.  
   
     ```cpp
     pOutlookBar->AddTab (&m_wndOutlookPane, "General", (UINT) -1, TRUE);
@@ -154,7 +154,7 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 ```  
   
 ### Return Value  
- `TRUE` if an empty tabbed pane can be destroyed; otherwise, `FALSE`. The default implementation always returns `TRUE`.  
+ TRUE if an empty tabbed pane can be destroyed; otherwise, FALSE. The default implementation always returns TRUE.  
   
 ### Remarks  
  If an empty tabbed pane cannot be destroyed, the framework hides it instead.  
@@ -171,12 +171,12 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
  A pointer to another pane that is being docked to this pane.  
   
 ### Return Value  
- `TRUE` if another pane can be docked to the Outlook bar pane; otherwise `FALSE`.  
+ TRUE if another pane can be docked to the Outlook bar pane; otherwise FALSE.  
   
 ### Remarks  
- If the Outlook bar is in Outlook 2003 mode, docking is not supported, so the return value is `FALSE`.  
+ If the Outlook bar is in Outlook 2003 mode, docking is not supported, so the return value is FALSE.  
   
- If the *pBar* parameter is `NULL`, this method returns `FALSE`.  
+ If the *pBar* parameter is NULL, this method returns FALSE.  
   
  Otherwise, this method behaves as the base method [CBasePane::CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane), except that even if docking is not enabled, an Outlook bar can still enable another Outlook bar to be docked over it.  
   
@@ -188,7 +188,7 @@ virtual BOOL CanSetCaptionTextToTabName() const;
 ```  
   
 ### Return Value  
- `TRUE` if the Outlook bar window caption is automatically set to the text of the active tab; otherwise `FALSE`.  
+ TRUE if the Outlook bar window caption is automatically set to the text of the active tab; otherwise FALSE.  
   
 ### Remarks  
  Use [CBaseTabbedPane::EnableSetCaptionTextToTabName](../../mfc/reference/cbasetabbedpane-class.md#enablesetcaptiontexttotabname) to enable or disable this functionality.  
@@ -261,16 +261,16 @@ CMFCOutlookBarPane* CreateCustomPage(
  The page label.  
   
  [in] *bActivatePage*  
- If `TRUE`, the page becomes active upon creation.  
+ If TRUE, the page becomes active upon creation.  
   
  [in] *dwEnabledDocking*  
  A combination of CBRS_ALIGN_ flags that specifies the enabled docking sides when the page is detached.  
   
  [in] *bEnableTextLabels*  
- If `TRUE`, the text labels are enabled for the buttons that reside on the page.  
+ If TRUE, the text labels are enabled for the buttons that reside on the page.  
   
 ### Return Value  
- A pointer to the newly created page, or `NULL` if the creation failed.  
+ A pointer to the newly created page, or NULL if the creation failed.  
   
 ### Remarks  
  Use this method to enable the users to create custom Outlook bar pages. You can create up to 100 pages per application. The page control IDs start from 0xF000. The creation fails if the total number of custom Outlook bar pages exceeds 100.  
@@ -285,12 +285,12 @@ DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;
 ```  
   
 ### Return Value  
- The default implementation returns `FALSE`.  
+ The default implementation returns FALSE.  
   
 ### Remarks  
- The framework calls the `DoesAllowDynInsertBefore` method when it looks for a location to dock a dynamic pane. If the function returns `FALSE`, the framework does not allow the docking of any dynamic pane at the outer edges of the pane.  
+ The framework calls the `DoesAllowDynInsertBefore` method when it looks for a location to dock a dynamic pane. If the function returns FALSE, the framework does not allow the docking of any dynamic pane at the outer edges of the pane.  
   
- Usually, you create an Outlook bar as a static non-floating control. You can override this function in a derived class and return `TRUE` to change this behavior.  
+ Usually, you create an Outlook bar as a static non-floating control. You can override this function in a derived class and return TRUE to change this behavior.  
   
 > [!NOTE]
 >  Because dynamic panes check the status of docked static panes when docking, you should dock dynamic panes after static panes whenever possible.  
@@ -317,10 +317,10 @@ virtual BOOL FloatTab(
  Specifies the method to use to make the pane float.  For more information, see [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).  
   
  [in] *bHide*  
- `TRUE` to hide the pane before floating; otherwise, `FALSE`. Unlike the base class version of this method, this parameter does not have a default value.  
+ TRUE to hide the pane before floating; otherwise, FALSE. Unlike the base class version of this method, this parameter does not have a default value.  
   
 ### Return Value  
- `TRUE` if the pane floated; otherwise, `FALSE`.  
+ TRUE if the pane floated; otherwise, FALSE.  
   
 ### Remarks  
  This method is like [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab) except that it does not enable the last remaining tab on an Outlook bar control to float.  
@@ -400,7 +400,7 @@ virtual BOOL OnBeforeAnimation(int nPage);
  The zero-based index of the tab page that is about to be set active.  
   
 ### Return Value  
- Returns `TRUE` if animation should be used in setting the new active tab, or `FALSE` if animation should be disabled.  
+ Returns TRUE if animation should be used in setting the new active tab, or FALSE if animation should be disabled.  
   
 ### Remarks  
   
@@ -413,7 +413,7 @@ virtual void OnScroll(BOOL bDown);
   
 ### Parameters  
  [in] *bDown*  
- `TRUE` if the Outlook bar is scrolling down, or `FALSE` if it is scrolling up.  
+ TRUE if the Outlook bar is scrolling down, or FALSE if it is scrolling up.  
   
 ### Remarks  
   
@@ -457,7 +457,7 @@ void SetButtonsFont(
  Specifies the new font.  
   
  [in] *bRedraw*  
- If `TRUE`, the Outlook bar will be redrawn.  
+ If TRUE, the Outlook bar will be redrawn.  
   
 ### Remarks  
  Use this method to set a font for the text displayed on outlook tab page buttons.  

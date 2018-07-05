@@ -106,20 +106,20 @@ void AddControl(
  Specifies the name of tab.  
   
  [in] *bDetachable*  
- If `TRUE`, the page will be created as detachable.  
+ If TRUE, the page will be created as detachable.  
   
  [in] *nImageID*  
  Image index in the internal image list for the image to be displayed in the new tab.  
   
  [in] *dwControlBarStyle*  
- Specifies the AFX_ `CBRS_`* style for wrapped docking panes.  
+ Specifies the AFX_ CBRS_* style for wrapped docking panes.  
   
 ### Remarks  
  Use this function to add a control as a new page of an outlook bar.  
   
  This function internally calls on [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab).  
   
- If you set *bDetachable* to `TRUE`, `AddControl` internally creates a `CDockablePaneAdapter` object and wraps the added control. It automatically sets the runtime class of the tabbed window to the runtime class of `CMFCOutlookBar` and the runtime class of the floating frame to `CMultiPaneFrameWnd`.  
+ If you set *bDetachable* to TRUE, `AddControl` internally creates a `CDockablePaneAdapter` object and wraps the added control. It automatically sets the runtime class of the tabbed window to the runtime class of `CMFCOutlookBar` and the runtime class of the floating frame to `CMultiPaneFrameWnd`.  
   
 ### Example  
  The following example demonstrates how to use the `AddControl` method in the `CMFCOutlookBarTabCtrl` class. This code snippet is part of the [Outlook Demo sample](../../visual-cpp-samples.md).  
@@ -134,7 +134,7 @@ virtual BOOL CanShowFewerPageButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if there is more than one button; otherwise `FALSE`.  
+ TRUE if there is more than one button; otherwise FALSE.  
   
 ### Remarks  
  The Outlook bar tab control dynamically adds or removes tabs from the display depending on how much room is available. This method is used by the framework to assist in that process.  
@@ -147,7 +147,7 @@ virtual BOOL CanShowMorePageButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if there are buttons that are not currently visible; otherwise `FALSE`.  
+ TRUE if there are buttons that are not currently visible; otherwise FALSE.  
   
 ### Remarks  
  The Outlook bar tab control dynamically adds or removes tabs from the display, depending on how much room is available. This method is used by the framework to assist in that process.  
@@ -167,7 +167,7 @@ virtual BOOL Create(
  Specifies the initial size and position, in pixels.  
   
  [in] *pParentWnd*  
- Points to the parent window. Must not be `NULL`.  
+ Points to the parent window. Must not be NULL.  
   
  [in] *nID*  
  The control ID.  
@@ -203,7 +203,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
   
 ### Parameters  
  *bEnable*  
- If `TRUE`, enable the in-place editing of the text label. If `FALSE`, disable the in-place editing.  
+ If TRUE, enable the in-place editing of the text label. If FALSE, disable the in-place editing.  
   
 ### Remarks  
  Call this function to enable or disable in-place editing of text  labels on tab page buttons. By default the in-place editing is disabled.  
@@ -273,7 +273,7 @@ BOOL IsMode2003() const;
 ```  
   
 ### Return Value  
- `TRUE` if the Outlook bar tab control is in Outlook 2003 mode; otherwise `FALSE`;  
+ TRUE if the Outlook bar tab control is in Outlook 2003 mode; otherwise FALSE;  
   
 ### Remarks  
  This value is set by [CMFCOutlookBar::SetMode2003](../../mfc/reference/cmfcoutlookbar-class.md#setmode2003).  
@@ -355,7 +355,7 @@ void SetPageButtonTextAlign(
  Specifies the text alignment.  
   
  [in] *bRedraw*  
- If `TRUE`, the outlook window will be redrawn.  
+ If TRUE, the outlook window will be redrawn.  
   
 ### Remarks  
  Use this function to change text alignment for page buttons.  
@@ -391,7 +391,7 @@ BOOL SetToolbarImageList(
  An RGB value that specifies the transparent color.  
   
 ### Return Value  
- Returns `TRUE` if successful; otherwise returns `FALSE`.  
+ Returns TRUE if successful; otherwise returns FALSE.  
   
 ### Remarks  
  Use this function to attach an image list whose images will be displayed on toolbar buttons in Microsoft Office 2003 mode. Image indexes should correspond to page indexes.  

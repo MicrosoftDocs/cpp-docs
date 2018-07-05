@@ -99,7 +99,7 @@ explicit CRecordView(UINT nIDTemplate);
 > [!NOTE]
 >  Your derived class *must* supply its own constructor. In the constructor of your derived class, call the constructor `CRecordView::CRecordView` with the resource name or ID as an argument, as shown in the example below.  
   
- **CRecordView::OnInitialUpdate** calls `UpdateData`, which calls `DoDataExchange`. This initial call to `DoDataExchange` connects `CRecordView` controls (indirectly) to `CRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class **CFormView::OnInitialUpdate** member function.  
+ `CRecordView::OnInitialUpdate` calls `UpdateData`, which calls `DoDataExchange`. This initial call to `DoDataExchange` connects `CRecordView` controls (indirectly) to `CRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class `CFormView::OnInitialUpdate` member function.  
   
 > [!NOTE]
 >  If you use ClassWizard, the wizard defines an **enum** value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.  
@@ -136,7 +136,7 @@ BOOL IsOnLastRecord();
  This function is useful for writing your own implementations of the default command update handlers that ClassWizard writes to support a user interface for moving from record to record.  
   
 > [!CAUTION]
->  The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. `IsOnLastRecord` is also unreliable after a call to the implementation function `OnRecordLast`, which handles the `ID_RECORD_LAST` command, or `CRecordset::MoveLast`.  
+>  The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. `IsOnLastRecord` is also unreliable after a call to the implementation function `OnRecordLast`, which handles the ID_RECORD_LAST command, or `CRecordset::MoveLast`.  
   
 ##  <a name="ongetrecordset"></a>  CRecordView::OnGetRecordset  
  Returns a pointer to the `CRecordset`-derived object associated with the record view.  
@@ -146,7 +146,7 @@ virtual CRecordset* OnGetRecordset() = 0;
 ```  
   
 ### Return Value  
- A pointer to a `CRecordset`-derived object if the object was successfully created; otherwise a **NULL** pointer.  
+ A pointer to a `CRecordset`-derived object if the object was successfully created; otherwise a NULL pointer.  
   
 ### Remarks  
  You must override this member function to construct or obtain a recordset object and return a pointer to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the recordset pointer stored in the record view if one exists. If not, it constructs a recordset object of the type you specified with ClassWizard and calls its `Open` member function to open the table or run the query, and then returns a pointer to the object.  
@@ -161,16 +161,16 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ```  
   
 ### Parameters  
- `nIDMoveCommand`  
+ *nIDMoveCommand*  
  One of the following standard command ID values:  
   
-- `ID_RECORD_FIRST` Move to the first record in the recordset.  
+- ID_RECORD_FIRST Move to the first record in the recordset.  
   
-- `ID_RECORD_LAST` Move to the last record in the recordset.  
+- ID_RECORD_LAST Move to the last record in the recordset.  
   
-- `ID_RECORD_NEXT` Move to the next record in the recordset.  
+- ID_RECORD_NEXT Move to the next record in the recordset.  
   
-- `ID_RECORD_PREV` Move to the previous record in the recordset.  
+- ID_RECORD_PREV Move to the previous record in the recordset.  
   
 ### Return Value  
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  

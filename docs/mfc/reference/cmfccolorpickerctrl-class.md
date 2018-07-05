@@ -224,7 +224,7 @@ BOOL SelectCellHexagon(
  The y-coordinate of the cursor, which points to a cell hexagon.  
   
 ### Return Value  
- The second overload of this method always returns `FALSE`.  
+ The second overload of this method always returns FALSE.  
   
 ### Remarks  
  The first overload of this method sets the current color to the color that corresponds to the color selection control's specified red, green, and blue color components.  
@@ -266,7 +266,7 @@ void SetHLS(
  A saturation value.  
   
  [in] *bInvalidate*  
- `TRUE` to force the window to immediately update to the new color; otherwise, `FALSE`. The default is `TRUE`.  
+ TRUE to force the window to immediately update to the new color; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -362,7 +362,7 @@ void SetType(COLORTYPE colorType);
  [in] *colorType*  
  A color picker control type.  
   
- The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The possible types are `LUMINANCE`, `PICKER`, `HEX` and `HEX_GREYSCALE`. The default type is `PICKER`.  
+ The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The possible types are LUMINANCE, PICKER, HEX and HEX_GREYSCALE. The default type is PICKER.  
   
 ### Remarks  
  To specify a color picker control type, call this method before the Windows control is created.  

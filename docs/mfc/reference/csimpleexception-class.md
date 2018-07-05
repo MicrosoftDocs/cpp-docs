@@ -70,7 +70,7 @@ explicit CSimpleException(BOOL bAutoDelete);
   
 ### Parameters  
  *bAutoDelete*  
- Specify **TRUE** if the memory for the `CSimpleException` object has been allocated on the heap. This will cause the `CSimpleException` object to be deleted when the `Delete` member function is called to delete the exception. Specify **FALSE** if the `CSimpleException` object is on the stack or is a global object. In this case, the `CSimpleException` object will not be deleted when the `Delete` member function is called.  
+ Specify TRUE if the memory for the `CSimpleException` object has been allocated on the heap. This will cause the `CSimpleException` object to be deleted when the `Delete` member function is called to delete the exception. Specify FALSE if the `CSimpleException` object is on the stack or is a global object. In this case, the `CSimpleException` object will not be deleted when the `Delete` member function is called.  
   
 ### Remarks  
  You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type.  
@@ -90,10 +90,10 @@ virtual BOOL GetErrorMessage(
  A pointer to a buffer that will receive an error message.  
   
  *nMaxError*  
- The maximum number of characters the buffer can hold, including the **NULL** terminator.  
+ The maximum number of characters the buffer can hold, including the NULL terminator.  
   
  *pnHelpContext*  
- The address of a **UINT** that will receive the help context ID. If **NULL**, no ID will be returned.  
+ The address of a UINT that will receive the help context ID. If NULL, no ID will be returned.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0 if no error message text is available.  

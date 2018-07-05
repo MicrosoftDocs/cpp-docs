@@ -107,7 +107,7 @@ void AddPage(CPropertyPage* pPage);
   
 ### Parameters  
  [in] *pPage*  
- Pointer to a page object. This parameter cannot be `NULL`.  
+ Pointer to a page object. This parameter cannot be NULL.  
   
 ### Remarks  
  This method adds the specified property page as the rightmost tab in the property sheet. Therefore, use this method to add pages in left-to-right order.  
@@ -127,7 +127,7 @@ void AddPageToTree(
   
 ### Parameters  
  [in] *pCategory*  
- Pointer to a parent tree node, or `NULL` to associate the specified page with the top-level node. Call the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method to obtain this pointer.  
+ Pointer to a parent tree node, or NULL to associate the specified page with the top-level node. Call the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method to obtain this pointer.  
   
  [in] *pPage*  
  Pointer to a property page object.  
@@ -163,7 +163,7 @@ CMFCPropertySheetCategoryInfo* AddTreeCategory(
  Zero-based index of an icon, or -1 if no icon is used. The icon is displayed next to the tree control property page when the page is selected. The default value is -1.  
   
  [in] *pParentCategory*  
- Pointer to a parent tree node, or `NULL` to associate the specified page with the top-level node. Set this parameter with the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method.  
+ Pointer to a parent tree node, or NULL to associate the specified page with the top-level node. Set this parameter with the [CMFCPropertySheet::AddTreeCategory](#addtreecategory) method.  
   
 ### Return Value  
  A pointer to the new node in the tree control.  
@@ -190,13 +190,13 @@ CMFCPropertySheet(
   
 ### Parameters  
  [in] *pszCaption*  
- A string that contains the property sheet caption. Cannot be `NULL`.  
+ A string that contains the property sheet caption. Cannot be NULL.  
   
  [in] *nIDCaption*  
  A resource ID that contains the property sheet caption.  
   
  [in] *pParentWnd*  
- Pointer to the parent window of the property sheet, or `NULL` if the parent window is the main window of the application. The default value is `NULL`.  
+ Pointer to the parent window of the property sheet, or NULL if the parent window is the main window of the application. The default value is NULL.  
   
  [in] *iSelectPage*  
  The zero-based index of the top property page. The default value is 0.  
@@ -330,7 +330,7 @@ virtual BOOL OnRemoveTreePage(CPropertyPage* pPage);
  Pointer to a property page object that represents the property page to remove.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ##  <a name="removecategory"></a>  CMFCPropertySheet::RemoveCategory  
  Removes a node from the tree control.  
@@ -356,7 +356,7 @@ void RemovePage(int nPage);
   
 ### Parameters  
  [in] *pPage*  
- Pointer to property page object that represents the property page to remove. Cannot be `NULL`.  
+ Pointer to property page object that represents the property page to remove. Cannot be NULL.  
   
  [in] *nPage*  
  Zero-based index of the page to remove.  
@@ -389,7 +389,7 @@ void SetIconsList(HIMAGELIST hIcons);
  A handle to an existing image list.  
   
 ### Return Value  
- In the first method overload syntax, `TRUE` if this method is successful; otherwise, `FALSE`.  
+ In the first method overload syntax, TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  If the property sheet is in the style of Microsoft Outlook, the framework displays a list of navigation buttons, called the Outlook pane control, at the left of the property sheet. Use this method to set the image list to be used by the Outlook pane control.  

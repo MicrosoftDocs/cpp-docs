@@ -220,7 +220,7 @@ BOOL IsValid() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current chunk value is valid; otherwise `FALSE`.  
+ TRUE if the current chunk value is valid; otherwise FALSE.  
   
 ### Remarks  
   

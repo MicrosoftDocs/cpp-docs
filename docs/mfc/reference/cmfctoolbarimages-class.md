@@ -108,7 +108,7 @@ class CMFCToolBarImages : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBarImages::m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|`TRUE` if truecolor alpha blending (32-bit color) is disabled.|  
+|[CMFCToolBarImages::m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|TRUE if truecolor alpha blending (32-bit color) is disabled.|  
   
 ## Remarks  
  The full bitmap of toolbar images managed by `CMFCToolbarImages` consists of one or more small toolbar images (buttons) of a fixed size.  
@@ -156,7 +156,7 @@ int AddIcon(
  A handle to the icon to be added.  
   
  [in] *bAlphaBlend*  
- `TRUE` if this icon is used with alpha blending; otherwise `FALSE`.  
+ TRUE if this icon is used with alpha blending; otherwise FALSE.  
   
 ### Return Value  
  The zero-based index of the toolbar image that was added if the method is successful; otherwise -1.  
@@ -179,7 +179,7 @@ int AddImage(
  The handle to the bitmap to add.  
   
  [in] *bSetBitPerPixel*  
- `TRUE` if the `CMFCToolBarImages`  object uses the color depth (bits per pixel) of the new image; `FALSE` if the `CMFCToolbarImages` object keeps the current color depth.  
+ TRUE if the `CMFCToolBarImages`  object uses the color depth (bits per pixel) of the new image; FALSE if the `CMFCToolbarImages` object keeps the current color depth.  
   
  [in] *imageList*  
  A reference to a `CMFCToolbarImages` object that contains the image to add.  
@@ -256,7 +256,7 @@ BOOL CreateFromImageList(const CImageList& imageList);
  The image list to be used as a source for toolbar images.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
  Use this function to quickly initialize the toolbar images list from an external image list.  
@@ -290,7 +290,7 @@ BOOL DeleteImage(int iImage);
  Specifies the zero-based index of the image to delete.  
   
 ### Return Value  
- `TRUE` if the image was deleted successfully; `FALSE` if the image index is invalid, the `CMFCToolbarImages` object is temporary, the `CMFCToolbarImages` object does not contain user-defined images, or if some other error occurred.  
+ TRUE if the image was deleted successfully; FALSE if the image index is invalid, the `CMFCToolbarImages` object is temporary, the `CMFCToolbarImages` object does not contain user-defined images, or if some other error occurred.  
   
 ##  <a name="draw"></a>  CMFCToolBarImages::Draw  
  Draws a single toolbar image.  
@@ -323,25 +323,25 @@ BOOL Draw(
  The zero-based index of the image to be displayed.  
   
  [in] *bHilite*  
- `TRUE` if the image is to be highlighted; otherwise `FALSE`.  
+ TRUE if the image is to be highlighted; otherwise FALSE.  
   
  [in] *bDisabled*  
- `TRUE` if the image is to be drawn in the disabled style; otherwise `FALSE`.  
+ TRUE if the image is to be drawn in the disabled style; otherwise FALSE.  
   
  [in] *bIndeterminate*  
- `TRUE` if the image is to be drawn in the indeterminate state style; otherwise `FALSE`.  
+ TRUE if the image is to be drawn in the indeterminate state style; otherwise FALSE.  
   
  [in] *bShadow*  
- `TRUE` if the image is to be drawn with a drop shadow; otherwise `FALSE`.  
+ TRUE if the image is to be drawn with a drop shadow; otherwise FALSE.  
   
  [in] *bInactive*  
- `TRUE` if the image is to be drawn in the inactive state style; otherwise `FALSE`.  
+ TRUE if the image is to be drawn in the inactive state style; otherwise FALSE.  
   
  [in] *alphaSrc*  
  The alpha channel (opacity) value. A value of 255 means the image is drawn opaque. A value of 0 means the image is drawn transparent. This value is used only for 32 bit color images and for images that displayed a Windows Vista glass style.  
   
 ### Return Value  
- `TRUE` if the specified image was displayed successfully; `FALSE` if the image index was invalid or some other error occurred.  
+ TRUE if the specified image was displayed successfully; FALSE if the image index was invalid or some other error occurred.  
   
 ##  <a name="drawex"></a>  CMFCToolBarImages::DrawEx  
 
@@ -410,7 +410,7 @@ HICON ExtractIcon(int nIndex);
  The zero-based index in the image list at which the image to be extracted as an icon is located.  
   
 ### Return Value  
- A handle to the extracted icon, or `NULL` if *nIndex* is out of range.  
+ A handle to the extracted icon, or NULL if *nIndex* is out of range.  
   
 ##  <a name="fillditheredrect"></a>  CMFCToolBarImages::FillDitheredRect  
  Fills a rectangle with the toolbar background colors.  
@@ -485,7 +485,7 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
   
 ### Parameters  
  [in] *bDest*  
- `TRUE` to retrieve the destination size; `FALSE` to retrieve the source image size.  
+ TRUE to retrieve the destination size; FALSE to retrieve the source image size.  
   
 ### Return Value  
  A `SIZE` structure, which specifies the size of an image in pixels.  
@@ -603,7 +603,7 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
  Luminance percentage.  
   
 ### Return Value  
- `TRUE` if images in the collection were grayed successfully; otherwise `FALSE`.  
+ TRUE if images in the collection were grayed successfully; otherwise FALSE.  
   
 ### Remarks  
  This method modifies the toolbar images by averaging the red, green, and blue components of each pixel and multiplying the result by *nGrayImageLuminancePercentage* divided by 100. If *nGrayImageLuminancePercentage* is zero or negative, the default value of 130 is used instead.  
@@ -619,7 +619,7 @@ static BOOL Is32BitTransparencySupported();
 ```  
   
 ### Return Value  
- `TRUE` if 32-bit alpha blending is supported; otherwise `FALSE`.  
+ TRUE if 32-bit alpha blending is supported; otherwise FALSE.  
   
 ### Remarks  
  Use this static method to determine at runtime whether the operating system supports 32-bit alpha blending. This feature is supported on Windows 2000 and later versions.  
@@ -643,7 +643,7 @@ BOOL IsReadOnly() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar images are read-only, otherwise `FALSE`.  
+ TRUE if the toolbar images are read-only, otherwise FALSE.  
   
 ### Remarks  
  The `CMFCToolbarImages` object is read-only when the bitmap with toolbar images was loaded from a read-only file, or when the bitmap was copied in using the `CMFCToolBarImages::CopyTemp` method.  
@@ -656,7 +656,7 @@ static BOOL IsRTL();
 ```  
   
 ### Return Value  
- `TRUE` if RTL support is enabled; otherwise `FALSE`.  
+ TRUE if RTL support is enabled; otherwise FALSE.  
   
 ### Remarks  
  RTL support is used when the application is localized to a language that is read from right to left, such as Arabic, Hebrew, Persian, or Urdu.  
@@ -669,7 +669,7 @@ BOOL IsUserImagesList() const;
 ```  
   
 ### Return Value  
- `TRUE` if the `CMFCToolBarImages`  object contains user-defined toolbar images; otherwise `FALSE`.  
+ TRUE if the `CMFCToolBarImages`  object contains user-defined toolbar images; otherwise FALSE.  
   
 ##  <a name="isvalid"></a>  CMFCToolBarImages::IsValid  
  Indicates whether this set of toolbar images contains a valid toolbar image.  
@@ -679,10 +679,10 @@ BOOL IsValid() const;
 ```  
   
 ### Return Value  
- `TRUE` if a `CMFCToolBarImages`  object is valid; otherwise `FALSE`.  
+ TRUE if a `CMFCToolBarImages`  object is valid; otherwise FALSE.  
   
 ### Remarks  
- The `CMFCToolBarImages` object is not valid when its handle to a bitmap with toolbar images is `NULL`.  
+ The `CMFCToolBarImages` object is not valid when its handle to a bitmap with toolbar images is NULL.  
   
 ##  <a name="load"></a>  CMFCToolBarImages::Load  
  Loads toolbar images from system resources or from a file.  
@@ -706,16 +706,16 @@ BOOL Load(
  An instance of the resource DLL.  
   
  [in] *bAdd*  
- `TRUE` to add the loaded bitmap to the existing bitmap, or `FALSE` to replace the existing bitmap.  
+ TRUE to add the loaded bitmap to the existing bitmap, or FALSE to replace the existing bitmap.  
   
  [in] *lpszBmpFileName*  
  A path to a disk file from which to load the bitmap.  
   
  [in] *nMaxFileSize*  
- Maximum number of bytes in the bitmap file; or 0 to load the bitmap regardless of file size. If the size of the file exceeds this maximum size, the method returns `FALSE` and does not load the bitmap.  
+ Maximum number of bytes in the bitmap file; or 0 to load the bitmap regardless of file size. If the size of the file exceeds this maximum size, the method returns FALSE and does not load the bitmap.  
   
 ### Return Value  
- `TRUE` if the bitmap was loaded successfully; otherwise `FALSE`.  
+ TRUE if the bitmap was loaded successfully; otherwise FALSE.  
   
 ### Remarks  
  If the file has the read-only attribute, the image list is marked as read-only.  
@@ -814,7 +814,7 @@ BOOL Mirror();
 ```  
   
 ### Return Value  
- `TRUE` if the images were successfully mirrored; otherwise `FALSE`.  
+ TRUE if the images were successfully mirrored; otherwise FALSE.  
   
 ### Remarks  
  This method is used to support right-to-left writing systems.  
@@ -836,7 +836,7 @@ static BOOL MirrorBitmap(
  Width of the image in pixels.  
   
 ### Return Value  
- `TRUE` if the image was successfully mirrored; otherwise `FALSE`.  
+ TRUE if the image was successfully mirrored; otherwise FALSE.  
   
 ### Remarks  
  This function is used to support right-to-left writing systems.  
@@ -898,16 +898,16 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 ### Remarks  
   
 ##  <a name="m_bdisabletruecoloralpha"></a>  CMFCToolBarImages::m_bDisableTrueColorAlpha  
- `TRUE` if truecolor alpha blending (32-bit color) is disabled.  
+ TRUE if truecolor alpha blending (32-bit color) is disabled.  
   
 ```  
 static BOOL m_bDisableTrueColorAlpha;  
 ```  
   
 ### Remarks  
- Set this member variable to `FALSE` to enable truecolor alpha-blending for toolbar images.  
+ Set this member variable to FALSE to enable truecolor alpha-blending for toolbar images.  
   
- The default value is `TRUE` for backward compatibility.  
+ The default value is TRUE for backward compatibility.  
   
 ##  <a name="preparedrawimage"></a>  CMFCToolBarImages::PrepareDrawImage  
  Allocates the resources that are required to draw a toolbar image at a specified size.  
@@ -928,10 +928,10 @@ BOOL PrepareDrawImage(
  Specifies the size of a destination image.  
   
  [in] *bFadeInactive*  
- `TRUE` if you want inactive images to be drawn faded.  
+ TRUE if you want inactive images to be drawn faded.  
   
 ### Return Value  
- `TRUE` if the resources required to draw the toolbar image were allocated successfully, otherwise `FALSE`.  
+ TRUE if the resources required to draw the toolbar image were allocated successfully, otherwise FALSE.  
   
 ### Remarks  
  After you call this method, you can call [CMFCToolBarImages::Draw](#draw) any number of times. After you finished drawing, you must call [CMFCToolBarImages::EndDrawImage](#enddrawimage) to release the resources allocated by `PrepareDrawImage`.  
@@ -948,10 +948,10 @@ BOOL Save(LPCTSTR lpszBmpFileName=NULL);
  A path to a disk file.  
   
 ### Return Value  
- `TRUE` if the toolbar images were saved successfully; otherwise `FALSE`.  
+ TRUE if the toolbar images were saved successfully; otherwise FALSE.  
   
 ### Remarks  
- Call this method to store the user-defined images into a disk file. If *lpszBmpFileName* is `NULL`, the method stores the bitmap into the file from which the bitmap was loaded by the [CMFCToolBarImages::Load](#load) method.  
+ Call this method to store the user-defined images into a disk file. If *lpszBmpFileName* is NULL, the method stores the bitmap into the file from which the bitmap was loaded by the [CMFCToolBarImages::Load](#load) method.  
   
 ##  <a name="setalwayslight"></a>  CMFCToolBarImages::SetAlwaysLight  
 
@@ -1086,7 +1086,7 @@ BOOL UpdateImage(
  A handle to the bitmap from which to update the image.  
   
 ### Return Value  
- `TRUE` if the image was updated successfully; `FALSE` if the image list is not user-defined or temporary.  
+ TRUE if the image was updated successfully; FALSE if the image list is not user-defined or temporary.  
   
 ##  <a name="convertto32bits"></a>  CMFCToolBarImages::ConvertTo32Bits  
  Converts underlined bitmaps to 32 bpp images.  
@@ -1133,7 +1133,7 @@ BOOL IsScaled () const;
 ```  
   
 ### Return Value  
- `TRUE` if underlined images are scaled; otherwise `FALSE`.  
+ TRUE if underlined images are scaled; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1149,7 +1149,7 @@ BOOL SmoothResize(double dblImageScale);
  Scale ratio.  
   
 ### Return Value  
- `TRUE` if resize succeeds; otherwise `FALSE`.  
+ TRUE if resize succeeds; otherwise FALSE.  
   
 ### Remarks  
   

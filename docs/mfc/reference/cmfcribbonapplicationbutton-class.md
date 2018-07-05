@@ -65,10 +65,10 @@ CMFCRibbonApplicationButton(UINT uiBmpResID);
 ```  
   
 ### Parameters  
- `uiBmpResID`  
+ *uiBmpResID*  
  The resource ID of the image to display on the application button.  
   
- `hBmp`  
+ *hBmp*  
  A handle to a bitmap to display on the application button.  
   
 ### Remarks  

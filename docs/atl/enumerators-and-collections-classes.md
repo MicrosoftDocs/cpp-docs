@@ -23,7 +23,7 @@ The following classes provide support for COM collections and enumerations:
   
 -   [IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md) Provides the implementation for a COM enumerator interface where the items being enumerated are stored in a C++ Standard Library-compatible container.  
   
--   [ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md) Provides the implementation for the **Count**, **Item**, and `_NewEnum` properties of a collection interface.  
+-   [ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md) Provides the implementation for the `Count`, `Item`, and `_NewEnum` properties of a collection interface.  
   
 ## Related Articles  
  [ATL Collections and Enumerators](../atl/atl-collections-and-enumerators.md)  

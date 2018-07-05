@@ -113,17 +113,17 @@ CRectTracker(
  *nStyle*  
  Specifies the style of the `CRectTracker` object. The following styles are supported:  
   
-- **CRectTracker::solidLine** Use a solid line for the rectangle border.  
+- `CRectTracker::solidLine` Use a solid line for the rectangle border.  
   
-- **CRectTracker::dottedLine** Use a dotted line for the rectangle border.  
+- `CRectTracker::dottedLine` Use a dotted line for the rectangle border.  
   
-- **CRectTracker::hatchedBorder** Use a hatched pattern for the rectangle border.  
+- `CRectTracker::hatchedBorder` Use a hatched pattern for the rectangle border.  
   
-- **CRectTracker::resizeInside** Resize handles located inside the rectangle.  
+- `CRectTracker::resizeInside` Resize handles located inside the rectangle.  
   
-- **CRectTracker::resizeOutside** Resize handles located outside the rectangle.  
+- `CRectTracker::resizeOutside` Resize handles located outside the rectangle.  
   
-- **CRectTracker::hatchInside** Hatched pattern covers the entire rectangle.  
+- `CRectTracker::hatchInside` Hatched pattern covers the entire rectangle.  
   
 ### Remarks  
  The default constructor initializes the `CRectTracker` object with the values from *lpSrcRect* and initializes other sizes to system defaults. If the object is created with no parameters, the `m_rect` and `m_nStyle` data members are uninitialized.  
@@ -188,7 +188,7 @@ virtual UINT GetHandleMask() const;
   
  ![Resize handle numbers](../../mfc/reference/media/vc35dp1.gif "vc35dp1")  
   
- The default implementation of **GetHandleMask** returns the mask of the bits so that the resize handles appear. If the single bit is on, the corresponding resize handle will be drawn.  
+ The default implementation of `GetHandleMask` returns the mask of the bits so that the resize handles appear. If the single bit is on, the corresponding resize handle will be drawn.  
   
  Override this member function to hide or show the indicated resize handles.  
   
@@ -218,27 +218,27 @@ int HitTest(CPoint point) const;
  The point, in device coordinates, to test.  
   
 ### Return Value  
- The value returned is based on the enumerated type **CRectTracker::TrackerHit** and can have one of the following values:  
+ The value returned is based on the enumerated type `CRectTracker::TrackerHit` and can have one of the following values:  
   
-- **CRectTracker::hitNothing** -1  
+- `CRectTracker::hitNothing` -1  
   
-- **CRectTracker::hitTopLeft** 0  
+- `CRectTracker::hitTopLeft` 0  
   
-- **CRectTracker::hitTopRight** 1  
+- `CRectTracker::hitTopRight` 1  
   
-- **CRectTracker::hitBottomRight** 2  
+- `CRectTracker::hitBottomRight` 2  
   
-- **CRectTracker::hitBottomLeft** 3  
+- `CRectTracker::hitBottomLeft` 3  
   
-- **CRectTracker::hitTop** 4  
+- `CRectTracker::hitTop` 4  
   
-- **CRectTracker::hitRight** 5  
+- `CRectTracker::hitRight` 5  
   
-- **CRectTracker::hitBottom** 6  
+- `CRectTracker::hitBottom` 6  
   
-- **CRectTracker::hitLeft** 7  
+- `CRectTracker::hitLeft` 7  
   
-- **CRectTracker::hitMiddle** 8  
+- `CRectTracker::hitMiddle` 8  
   
 ##  <a name="m_nhandlesize"></a>  CRectTracker::m_nHandleSize  
  The size, in pixels, of the `CRectTracker` resize handles.  
@@ -265,7 +265,7 @@ CSize m_sizeMin;
 ```  
   
 ### Remarks  
- Both default values, **cx** and **cy**, are calculated from the default system value for the border width. This data member is used only by the `AdjustRect` member function.  
+ Both default values, `cx` and `cy`, are calculated from the default system value for the border width. This data member is used only by the `AdjustRect` member function.  
   
 ##  <a name="m_nstyle"></a>  CRectTracker::m_nStyle  
  Current style of the rectangle.  
@@ -351,10 +351,10 @@ BOOL Track(
  Device coordinates of the current mouse position relative to the client area.  
   
  *bAllowInvert*  
- If **TRUE**, the rectangle can be inverted along the x-axis or y-axis; otherwise **FALSE**.  
+ If TRUE, the rectangle can be inverted along the x-axis or y-axis; otherwise FALSE.  
   
  *pWndClipTo*  
- The window that drawing operations will be clipped to. If **NULL**, *pWnd* is used as the clipping rectangle.  
+ The window that drawing operations will be clipped to. If NULL, *pWnd* is used as the clipping rectangle.  
   
 ### Return Value  
  If the ESC key is pressed, the tracking process is halted, the rectangle stored in the tracker is not altered, and 0 is returned. If the change is committed, by moving the mouse and releasing the left mouse button, the new position and/or size is recorded in the tracker's rectangle and nonzero is returned.  
@@ -364,7 +364,7 @@ BOOL Track(
   
  This function will capture the mouse until the user releases the left mouse button, presses the ESC key, or presses the right mouse button. As the user moves the mouse cursor, the feedback is updated by calling `DrawTrackerRect` and `OnChangedRect`.  
   
- If *bAllowInvert* is **TRUE**, the tracking rectangle can be inverted on either the x-axis or y-axis.  
+ If *bAllowInvert* is TRUE, the tracking rectangle can be inverted on either the x-axis or y-axis.  
   
 ##  <a name="trackrubberband"></a>  CRectTracker::TrackRubberBand  
  Call this function to do rubber-band selection.  
@@ -384,7 +384,7 @@ BOOL TrackRubberBand(
  Device coordinates of the current mouse position relative to the client area.  
   
  *bAllowInvert*  
- If **TRUE,** the rectangle can be inverted along the x-axis or y-axis; otherwise **FALSE**.  
+ If TRUE, the rectangle can be inverted along the x-axis or y-axis; otherwise FALSE.  
   
 ### Return Value  
  Nonzero if the mouse has moved and the rectangle is not empty; otherwise 0.  

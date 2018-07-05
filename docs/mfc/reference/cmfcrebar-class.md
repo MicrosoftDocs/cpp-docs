@@ -96,7 +96,7 @@ BOOL AddBar(
  Represents the background color of the rebar.  
   
 ### Return Value  
- `TRUE` if the band was successfully added to the rebar; otherwise, `FALSE`.  
+ TRUE if the band was successfully added to the rebar; otherwise, FALSE.  
   
 ##  <a name="create"></a>  CMFCReBar::Create  
  Creates the rebar control and attaches it to the [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) object.  
@@ -123,7 +123,7 @@ BOOL Create(
  The rebar's child-window ID.  
   
 ### Return Value  
- `TRUE` if the rebar was created successfully; otherwise, `FALSE`.  
+ TRUE if the rebar was created successfully; otherwise, FALSE.  
   
 ### Remarks  
   

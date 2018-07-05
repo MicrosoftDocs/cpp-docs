@@ -112,7 +112,7 @@ CMFCRibbonComboBox();
  The ID of the combo box.  
   
  [in] *bHasEditBox*  
- `TRUE` if you want an edit box within the control; `FALSE` otherwise.  
+ TRUE if you want an edit box within the control; FALSE otherwise.  
   
  [in] *nWidth*  
  Width of the combo box in pixels; or -1 for the default width.  
@@ -147,7 +147,7 @@ BOOL DeleteItem(LPCTSTR lpszText);
  The string of the item to be deleted. If there are multiple items with the same string, the first item is deleted.  
   
 ### Return Value  
- `TRUE` if the specified item has been deleted; otherwise, `FALSE`.  
+ TRUE if the specified item has been deleted; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -160,7 +160,7 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable resizing; `FALSE` to disable resizing.  
+ TRUE to enable resizing; FALSE to disable resizing.  
   
 ### Remarks  
  When resizing is enabled, the list box will change size to fit the items it displays.  
@@ -244,7 +244,7 @@ LPCTSTR GetItem(int iIndex) const;
  The zero-based index of an item in the list box.  
   
 ### Return Value  
- A pointer to the string that is associated with the item; otherwise, `NULL` if the index parameter is invalid, or if the index parameter is -1 and there is no item selected in the combo box.  
+ A pointer to the string that is associated with the item; otherwise, NULL if the index parameter is invalid, or if the index parameter is -1 and there is no item selected in the combo box.  
   
 ### Remarks  
   
@@ -270,7 +270,7 @@ BOOL HasEditBox() const;
 ```  
   
 ### Return Value  
- `TRUE` if the control contains an edit box; otherwise, `FALSE`.  
+ TRUE if the control contains an edit box; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -282,7 +282,7 @@ BOOL IsResizeDropDownList() const;
 ```  
   
 ### Return Value  
- `TRUE` if the list box can be resized; otherwise `FALSE`. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
+ TRUE if the list box can be resized; otherwise FALSE. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
   
 ### Remarks  
  You can enable list box resizing by using the [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize) method.  
@@ -331,7 +331,7 @@ BOOL SelectItem(LPCTSTR lpszText);
  The string of an item in the list box.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
   

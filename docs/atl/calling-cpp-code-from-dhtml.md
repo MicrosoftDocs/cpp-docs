@@ -25,7 +25,7 @@ A DHTML control can be hosted in a container, such as Test Container or Internet
   
  [!code-cpp[NVC_ATL_COM#4](../atl/codesnippet/cpp/calling-cpp-code-from-dhtml_1.h)]  
   
- The first parameter, `pdispBody`, is a pointer to the body object's dispatch interface. The second parameter, `varColor`, identifies the color to apply to the control.  
+ The first parameter, *pdispBody*, is a pointer to the body object's dispatch interface. The second parameter, *varColor*, identifies the color to apply to the control.  
   
 ## Calling C++ Code in the HTML File  
  Once you have declared the WebBrowser methods in the header file, you can invoke the methods from the HTML file. Notice in the HTML file that the ATL Control Wizard inserts three Windows dispatch methods: three `OnClick` methods that dispatch messages to change the background color of the control.  

@@ -74,11 +74,11 @@ class COleClientItem : public CDocItem
 |[COleClientItem::GetLinkUpdateOptions](#getlinkupdateoptions)|Returns the update mode for a linked item (advanced feature).|  
 |[COleClientItem::GetType](#gettype)|Returns the type (embedded, linked, or static) of the OLE item.|  
 |[COleClientItem::GetUserType](#getusertype)|Gets a string describing the item's type.|  
-|[COleClientItem::IsInPlaceActive](#isinplaceactive)|Returns `TRUE` if the item is in-place active.|  
-|[COleClientItem::IsLinkUpToDate](#islinkuptodate)|Returns **TRUE** if a linked item is up to date with its source document.|  
-|[COleClientItem::IsModified](#ismodified)|Returns `TRUE` if the item has been modified since it was last saved.|  
-|[COleClientItem::IsOpen](#isopen)|Returns `TRUE` if the item is currently open in the server application.|  
-|[COleClientItem::IsRunning](#isrunning)|Returns `TRUE` if the item's server application is running.|  
+|[COleClientItem::IsInPlaceActive](#isinplaceactive)|Returns TRUE if the item is in-place active.|  
+|[COleClientItem::IsLinkUpToDate](#islinkuptodate)|Returns TRUE if a linked item is up to date with its source document.|  
+|[COleClientItem::IsModified](#ismodified)|Returns TRUE if the item has been modified since it was last saved.|  
+|[COleClientItem::IsOpen](#isopen)|Returns TRUE if the item is currently open in the server application.|  
+|[COleClientItem::IsRunning](#isrunning)|Returns TRUE if the item's server application is running.|  
 |[COleClientItem::OnActivate](#onactivate)|Called by the framework to notify the item that it is activated.|  
 |[COleClientItem::OnActivateUI](#onactivateui)|Called by the framework to notify the item that it is activated and should show its user interface.|  
 |[COleClientItem::OnChange](#onchange)|Called when the server changes the OLE item. Implementation required.|  
@@ -159,16 +159,16 @@ void Activate(
   
 |Value|Meaning|Symbol|  
 |-----------|-------------|------------|  
-|- 0|Primary verb|`OLEIVERB_PRIMARY`|  
+|- 0|Primary verb|OLEIVERB_PRIMARY|  
 |- 1|Secondary verb|(None)|  
-|- 1|Display item for editing|`OLEIVERB_SHOW`|  
-|- 2|Edit item in separate window|`OLEIVERB_OPEN`|  
-|- 3|Hide item|`OLEIVERB_HIDE`|  
+|- 1|Display item for editing|OLEIVERB_SHOW|  
+|- 2|Edit item in separate window|OLEIVERB_OPEN|  
+|- 3|Hide item|OLEIVERB_HIDE|  
   
  The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
  *pView*  
- Pointer to the container view window that contains the OLE item; this is used by the server application for in-place activation. This parameter should be **NULL** if the container does not support in-place activation.  
+ Pointer to the container view window that contains the OLE item; this is used by the server application for in-place activation. This parameter should be NULL if the container does not support in-place activation.  
   
  *lpMsg*  
  Pointer to the message that caused the item to be activated.  
@@ -311,11 +311,11 @@ void Close(OLECLOSE dwCloseOption = OLECLOSE_SAVEIFDIRTY);
  *dwCloseOption*  
  Flag specifying under what circumstances the OLE item is saved when it returns to the loaded state. It can have one of the following values:  
   
-- `OLECLOSE_SAVEIFDIRTY` Save the OLE item.  
+- OLECLOSE_SAVEIFDIRTY Save the OLE item.  
   
-- `OLECLOSE_NOSAVE` Do not save the OLE item.  
+- OLECLOSE_NOSAVE Do not save the OLE item.  
   
-- `OLECLOSE_PROMPTSAVE` Prompt the user on whether to save the OLE item.  
+- OLECLOSE_PROMPTSAVE Prompt the user on whether to save the OLE item.  
   
 ### Remarks  
  This function has no effect when the OLE item is not running.  
@@ -334,7 +334,7 @@ COleClientItem(COleDocument* pContainerDoc = NULL);
  Pointer to the container document that will contain this item. This can be any [COleDocument](../../mfc/reference/coledocument-class.md) derivative.  
   
 ### Remarks  
- If you pass a **NULL** pointer, no addition is made to the container document. You must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem).  
+ If you pass a NULL pointer, no addition is made to the container document. You must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem).  
   
  You must call one of the following creation member functions before you use the OLE item:  
   
@@ -384,7 +384,7 @@ void CopyToClipboard(BOOL bIncludeLink = FALSE);
   
 ### Parameters  
  *bIncludeLink*  
- **TRUE** if link information should be copied to the Clipboard, allowing a linked item to be pasted; otherwise **FALSE**.  
+ TRUE if link information should be copied to the Clipboard, allowing a linked item to be pasted; otherwise FALSE.  
   
 ### Remarks  
  Typically, you call this function when writing message handlers for the Copy or Cut commands from the Edit menu. You must implement item selection in your container application if you want to implement the Copy or Cut commands.  
@@ -426,7 +426,7 @@ BOOL CreateFromClipboard(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -458,7 +458,7 @@ BOOL CreateFromData(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -494,7 +494,7 @@ BOOL CreateFromFile(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -522,7 +522,7 @@ BOOL CreateLinkFromClipboard(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -554,7 +554,7 @@ BOOL CreateLinkFromData(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -586,7 +586,7 @@ BOOL CreateLinkFromFile(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -618,7 +618,7 @@ BOOL CreateNewItem(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -646,7 +646,7 @@ BOOL CreateStaticFromClipboard(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -678,7 +678,7 @@ BOOL CreateStaticFromData(
  Specifies the Clipboard data format to be cached when creating the OLE item.  
   
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is **OLERENDER_FORMAT** or **OLERENDER_DRAW**. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the **FORMATETC** structure.  
+ Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure used if *render* is OLERENDER_FORMAT or OLERENDER_DRAW. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If you omit this parameter, default values are used for the other fields in the `FORMATETC` structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -752,7 +752,7 @@ DROPEFFECT DoDragDrop(
  The offset from *lpItemRect* where the mouse position was at the time of the drag.  
   
  *bIncludeLink*  
- Set this to **TRUE** if the link data should be copied to the Clipboard. Set it to **FALSE** if your server application does not support links.  
+ Set this to TRUE if the link data should be copied to the Clipboard. Set it to FALSE if your server application does not support links.  
   
  *dwEffects*  
  Determines the effects that the drag source will allow in the drag operation.  
@@ -761,10 +761,10 @@ DROPEFFECT DoDragDrop(
  Pointer to the rectangle that defines where the drag actually starts. For more information, see the following Remarks section.  
   
 ### Return Value  
- A `DROPEFFECT` value. If it is `DROPEFFECT_MOVE`, the original data should be removed.  
+ A DROPEFFECT value. If it is DROPEFFECT_MOVE, the original data should be removed.  
   
 ### Remarks  
- The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by *lpRectStartDrag* or until a specified number of milliseconds have passed. If *lpRectStartDrag* is **NULL**, the size of the rectangle is one pixel.  
+ The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by *lpRectStartDrag* or until a specified number of milliseconds have passed. If *lpRectStartDrag* is NULL, the size of the rectangle is one pixel.  
   
  The delay time is specified by a registry key setting. You can change the delay time by calling [CWinApp::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) or [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). If you do not specify the delay time, a default value of 200 milliseconds is used. Drag delay time is stored as follows:  
   
@@ -792,16 +792,16 @@ virtual BOOL DoVerb(
   
 |Value|Meaning|Symbol|  
 |-----------|-------------|------------|  
-|- 0|Primary verb|`OLEIVERB_PRIMARY`|  
+|- 0|Primary verb|OLEIVERB_PRIMARY|  
 |- 1|Secondary verb|(None)|  
-|- 1|Display item for editing|`OLEIVERB_SHOW`|  
-|- 2|Edit item in separate window|`OLEIVERB_OPEN`|  
-|- 3|Hide item|`OLEIVERB_HIDE`|  
+|- 1|Display item for editing|OLEIVERB_SHOW|  
+|- 2|Edit item in separate window|OLEIVERB_OPEN|  
+|- 3|Hide item|OLEIVERB_HIDE|  
   
  The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
  *pView*  
- Pointer to the view window; this is used by the server for in-place activation. This parameter should be **NULL** if the container application does not allow in-place activation.  
+ Pointer to the view window; this is used by the server for in-place activation. This parameter should be NULL if the container application does not allow in-place activation.  
   
  *lpMsg*  
  Pointer to the message that caused the item to be activated.  
@@ -840,7 +840,7 @@ BOOL Draw(
 ### Remarks  
  The function may use the metafile representation of the OLE item created by the [OnDraw](../../mfc/reference/coleserveritem-class.md#ondraw) member function of `COleServerItem`.  
   
- Typically you use **Draw** for screen display, passing the screen device context as *pDC*. In this case, you need to specify only the first two parameters.  
+ Typically you use `Draw` for screen display, passing the screen device context as *pDC*. In this case, you need to specify only the first two parameters.  
   
  The *lpBounds* parameter identifies the rectangle in the target device context (relative to its current mapping mode). Rendering may involve scaling the picture and can be used by container applications to impose a view that scales between the displayed view and the final printed image.  
   
@@ -854,7 +854,7 @@ CView* GetActiveView() const;
 ```  
   
 ### Return Value  
- A pointer to the view; otherwise **NULL** if the item is not in-place activated.  
+ A pointer to the view; otherwise NULL if the item is not in-place activated.  
   
 ##  <a name="getcachedextent"></a>  COleClientItem::GetCachedExtent  
  Call this function to retrieve the OLE item's size.  
@@ -867,7 +867,7 @@ BOOL GetCachedExtent(
   
 ### Parameters  
  *lpSize*  
- Pointer to a **SIZE** structure or a [CSize](../../atl-mfc-shared/reference/csize-class.md) object that will receive the size information.  
+ Pointer to a `SIZE` structure or a [CSize](../../atl-mfc-shared/reference/csize-class.md) object that will receive the size information.  
   
  *nDrawAspect*  
  Specifies the aspect of the OLE item whose bounds are to be retrieved. For possible values, see [SetDrawAspect](#setdrawaspect).  
@@ -876,9 +876,9 @@ BOOL GetCachedExtent(
  Nonzero if successful; 0 if the OLE item is blank.  
   
 ### Remarks  
- This function provides the same information as [GetExtent](#getextent). However, you can call `GetCachedExtent` to get extent information during the processing of other OLE handlers, such as [OnChange](#onchange). The dimensions are in `MM_HIMETRIC` units.  
+ This function provides the same information as [GetExtent](#getextent). However, you can call `GetCachedExtent` to get extent information during the processing of other OLE handlers, such as [OnChange](#onchange). The dimensions are in MM_HIMETRIC units.  
   
- This is possible because `GetCachedExtent` uses the [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318) interface rather than use the [IOleObject](http://msdn.microsoft.com/library/windows/desktop/dd542709) interface to get the extent of this item. The **IViewObject2** COM object caches the extent information used in the previous call to [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655).  
+ This is possible because `GetCachedExtent` uses the [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318) interface rather than use the [IOleObject](http://msdn.microsoft.com/library/windows/desktop/dd542709) interface to get the extent of this item. The `IViewObject2` COM object caches the extent information used in the previous call to [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655).  
   
  For more information, see [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) in the Windows SDK.  
   
@@ -891,7 +891,7 @@ void GetClassID(CLSID* pClassID) const;
   
 ### Parameters  
  *pClassID*  
- Pointer to an identifier of type [CLSID](http://msdn.microsoft.com/library/windows/desktop/ms691424) to retrieve the class ID. For information on **CLSID**, see the Windows SDK.  
+ Pointer to an identifier of type [CLSID](http://msdn.microsoft.com/library/windows/desktop/ms691424) to retrieve the class ID. For information on CLSID, see the Windows SDK.  
   
 ### Remarks  
  The class ID is a 128-bit number that uniquely identifies the application that edits the item.  
@@ -914,7 +914,7 @@ void GetClipboardData(
  Pointer to a [COleDataSource](../../mfc/reference/coledatasource-class.md) object that will receive the data contained in the OLE item.  
   
  *bIncludeLink*  
- **TRUE** if link data should be included; otherwise **FALSE**.  
+ TRUE if link data should be included; otherwise FALSE.  
   
  *lpOffset*  
  The offset of the mouse cursor from the origin of the object in pixels.  
@@ -933,7 +933,7 @@ COleDocument* GetDocument() const;
 ```  
   
 ### Return Value  
- A pointer to the document that contains the OLE item. **NULL** if the item is not part of a document.  
+ A pointer to the document that contains the OLE item. NULL if the item is not part of a document.  
   
 ### Remarks  
  This pointer allows access to the `COleDocument` object that you passed as an argument to the `COleClientItem` constructor.  
@@ -946,7 +946,7 @@ DVASPECT GetDrawAspect() const;
 ```  
   
 ### Return Value  
- A value from the `DVASPECT` enumeration, whose values are listed in the reference for [SetDrawAspect](#setdrawaspect).  
+ A value from the DVASPECT enumeration, whose values are listed in the reference for [SetDrawAspect](#setdrawaspect).  
   
 ### Remarks  
  The aspect specifies how the item is to be rendered.  
@@ -962,7 +962,7 @@ BOOL GetExtent(
   
 ### Parameters  
  *lpSize*  
- Pointer to a **SIZE** structure or a `CSize` object that will receive the size information.  
+ Pointer to a `SIZE` structure or a `CSize` object that will receive the size information.  
   
  *nDrawAspect*  
  Specifies the aspect of the OLE item whose bounds are to be retrieved. For possible values, see [SetDrawAspect](#setdrawaspect).  
@@ -971,7 +971,7 @@ BOOL GetExtent(
  Nonzero if successful; 0 if the OLE item is blank.  
   
 ### Remarks  
- If the server application was written using the Microsoft Foundation Class Library, this function causes the [OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent) member function of the corresponding `COleServerItem` object to be called. Note that the retrieved size may differ from the size last set by the [SetExtent](#setextent) member function; the size specified by `SetExtent` is treated as a suggestion. The dimensions are in `MM_HIMETRIC` units.  
+ If the server application was written using the Microsoft Foundation Class Library, this function causes the [OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent) member function of the corresponding `COleServerItem` object to be called. Note that the retrieved size may differ from the size last set by the [SetExtent](#setextent) member function; the size specified by `SetExtent` is treated as a suggestion. The dimensions are in MM_HIMETRIC units.  
   
 > [!NOTE]
 >  Do not call `GetExtent` during the processing of an OLE handler, such as [OnChange](#onchange). Call [GetCachedExtent](#getcachedextent) instead.  
@@ -992,7 +992,7 @@ static HICON GetIconFromRegistry(CLSID& clsid);
  A reference to the CLSID for the server associated with the icon.  
   
 ### Return Value  
- A valid handle to the icon resource, or **NULL** if the server's icon, or a default icon, can't be found.  
+ A valid handle to the icon resource, or NULL if the server's icon, or a default icon, can't be found.  
   
 ### Remarks  
  This member function will not start the server or obtain an icon dynamically, even if the server is already running. Instead, this member function opens the server's executable image and retrieves the static icon associated with the server as it was registered.  
@@ -1005,7 +1005,7 @@ HGLOBAL GetIconicMetafile();
 ```  
   
 ### Return Value  
- A handle to the metafile if successful; otherwise **NULL**.  
+ A handle to the metafile if successful; otherwise NULL.  
   
 ### Remarks  
  If there is no current icon, a default icon is returned. This is called automatically by the MFC/OLE dialogs and is usually not called directly.  
@@ -1020,7 +1020,7 @@ CWnd* GetInPlaceWindow();
 ```  
   
 ### Return Value  
- A pointer to the item's in-place editing window; **NULL** if the item is not active or if its server is unavailable.  
+ A pointer to the item's in-place editing window; NULL if the item is not active or if its server is unavailable.  
   
 ### Remarks  
  This function should be called only for items that are in-place active.  
@@ -1033,7 +1033,7 @@ UINT GetItemState() const;
 ```  
   
 ### Return Value  
- A **COleClientItem::ItemState** enumerated value, which can be one of the following: `emptyState`, `loadedState`, `openState`, `activeState`, `activeUIState`. For information about these states, see the article [Containers: Client-Item States](../../mfc/containers-client-item-states.md).  
+ A `COleClientItem::ItemState` enumerated value, which can be one of the following: `emptyState`, `loadedState`, `openState`, `activeState`, `activeUIState`. For information about these states, see the article [Containers: Client-Item States](../../mfc/containers-client-item-states.md).  
   
 ### Remarks  
  To be notified when the OLE item's state changes, use the [OnChange](#onchange) member function.  
@@ -1048,12 +1048,12 @@ SCODE GetLastStatus() const;
 ```  
   
 ### Return Value  
- An `SCODE` value.  
+ An SCODE value.  
   
 ### Remarks  
- For member functions that return a **BOOL** value of **FALSE**, or other member functions that return **NULL**, `GetLastStatus` returns more detailed failure information. Be aware that most OLE member functions throw exceptions for more serious errors. The specific information on the interpretation of the `SCODE` depends on the underlying OLE call that last returned an `SCODE` value.  
+ For member functions that return a BOOL value of FALSE, or other member functions that return NULL, `GetLastStatus` returns more detailed failure information. Be aware that most OLE member functions throw exceptions for more serious errors. The specific information on the interpretation of the SCODE depends on the underlying OLE call that last returned an SCODE value.  
   
- For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK documentation.  
+ For more information on SCODE, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK documentation.  
   
 ##  <a name="getlinkupdateoptions"></a>  COleClientItem::GetLinkUpdateOptions  
  Call this function to get the current value of the link-update option for the OLE item.  
@@ -1065,9 +1065,9 @@ OLEUPDATE GetLinkUpdateOptions();
 ### Return Value  
  One of the following values:  
   
-- `OLEUPDATE_ALWAYS` Update the linked item whenever possible. This option supports the Automatic link-update radio button in the Links dialog box.  
+- OLEUPDATE_ALWAYS Update the linked item whenever possible. This option supports the Automatic link-update radio button in the Links dialog box.  
   
-- `OLEUPDATE_ONCALL` Update the linked item only on request from the container application (when the [UpdateLink](#updatelink) member function is called). This option supports the Manual link-update radio button in the Links dialog box.  
+- OLEUPDATE_ONCALL Update the linked item only on request from the container application (when the [UpdateLink](#updatelink) member function is called). This option supports the Manual link-update radio button in the Links dialog box.  
   
 ### Remarks  
  This is an advanced operation.  
@@ -1086,11 +1086,11 @@ OLE_OBJTYPE GetType() const;
 ### Return Value  
  An unsigned integer with one of the following values:  
   
-- `OT_LINK` The OLE item is a link.  
+- OT_LINK The OLE item is a link.  
   
-- `OT_EMBEDDED` The OLE item is embedded.  
+- OT_EMBEDDED The OLE item is embedded.  
   
-- `OT_STATIC` The OLE item is static, that is, it contains only presentation data, not native data, and thus cannot be edited.  
+- OT_STATIC The OLE item is static, that is, it contains only presentation data, not native data, and thus cannot be edited.  
   
 ##  <a name="getusertype"></a>  COleClientItem::GetUserType  
  Call this function to get the user-visible string describing the OLE item's type, such as "Word document."  
@@ -1105,11 +1105,11 @@ void GetUserType(
  *nUserClassType*  
  A value indicating the desired variant of the string describing the OLE item's type. This can have one of the following values:  
   
-- `USERCLASSTYPE_FULL` The full type name displayed to the user.  
+- USERCLASSTYPE_FULL The full type name displayed to the user.  
   
-- `USERCLASSTYPE_SHORT` A short name (15 characters maximum) for use in pop-up menus and the Edit Links dialog box.  
+- USERCLASSTYPE_SHORT A short name (15 characters maximum) for use in pop-up menus and the Edit Links dialog box.  
   
-- `USERCLASSTYPE_APPNAME` Name of the application servicing the class.  
+- USERCLASSTYPE_APPNAME Name of the application servicing the class.  
   
  *rString*  
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object to which the string describing the OLE item's type is to be returned.  
@@ -1200,7 +1200,7 @@ virtual void OnActivate();
 ### Remarks  
  Note that this function is called to indicate that the server is running, not to indicate that its user interface has been installed in the container application. At this point, the object does not have an active user interface (is not `activeUIState`). It has not installed its menus or toolbar. The [OnActivateUI](#onactivateui) member function is called when that happens.  
   
- The default implementation calls the [OnChange](#onchange) member function with **OLE_CHANGEDSTATE** as a parameter. Override this function to perform custom processing when an item becomes in-place active.  
+ The default implementation calls the [OnChange](#onchange) member function with OLE_CHANGEDSTATE as a parameter. Override this function to perform custom processing when an item becomes in-place active.  
   
 ##  <a name="onactivateui"></a>  COleClientItem::OnActivateUI  
  The framework calls `OnActivateUI` when the object has entered the active UI state.  
@@ -1212,7 +1212,7 @@ virtual void OnActivateUI();
 ### Remarks  
  The object has now installed its tool bar and menus.  
   
- The default implementation remembers the server's `HWND` for later **GetServerWindow** calls.  
+ The default implementation remembers the server's HWND for later `GetServerWindow` calls.  
   
 ##  <a name="onchange"></a>  COleClientItem::OnChange  
  Called by the framework when the user modifies, saves, or closes the OLE item.  
@@ -1227,21 +1227,21 @@ virtual void OnChange(
  *nCode*  
  The reason the server changed this item. It can have one of the following values:  
   
-- `OLE_CHANGED` The OLE item's appearance has changed.  
+- OLE_CHANGED The OLE item's appearance has changed.  
   
-- `OLE_SAVED` The OLE item has been saved.  
+- OLE_SAVED The OLE item has been saved.  
   
-- `OLE_CLOSED` The OLE item has been closed.  
+- OLE_CLOSED The OLE item has been closed.  
   
-- `OLE_CHANGED_STATE` The OLE item has changed from one state to another.  
+- OLE_CHANGED_STATE The OLE item has changed from one state to another.  
   
  *dwParam*  
- If *nCode* is `OLE_SAVED` or `OLE_CLOSED`, this parameter is not used. If *nCode* is `OLE_CHANGED`, this parameter specifies the aspect of the OLE item that has changed. For possible values, see the *dwParam* parameter of [COleClientItem::Draw](#draw). If *nCode* is `OLE_CHANGED_STATE`, this parameter is a **COleClientItem::ItemState** enumerated value and describes the state being entered. It can have one of the following values: `emptyState`, `loadedState`, `openState`, `activeState`, or `activeUIState`.  
+ If *nCode* is OLE_SAVED or OLE_CLOSED, this parameter is not used. If *nCode* is OLE_CHANGED, this parameter specifies the aspect of the OLE item that has changed. For possible values, see the *dwParam* parameter of [COleClientItem::Draw](#draw). If *nCode* is OLE_CHANGED_STATE, this parameter is a `COleClientItem::ItemState` enumerated value and describes the state being entered. It can have one of the following values: `emptyState`, `loadedState`, `openState`, `activeState`, or `activeUIState`.  
   
 ### Remarks  
- (If the server application is written using the Microsoft Foundation Class Library, this function is called in response to the `Notify` member functions of `COleServerDoc` or `COleServerItem`.) The default implementation marks the container document as modified if *nCode* is `OLE_CHANGED` or `OLE_SAVED`.  
+ (If the server application is written using the Microsoft Foundation Class Library, this function is called in response to the `Notify` member functions of `COleServerDoc` or `COleServerItem`.) The default implementation marks the container document as modified if *nCode* is OLE_CHANGED or OLE_SAVED.  
   
- For `OLE_CHANGED_STATE`, the current state returned from [GetItemState](#getitemstate) will still be the old state, meaning the state that was current prior to this state change.  
+ For OLE_CHANGED_STATE, the current state returned from [GetItemState](#getitemstate) will still be the old state, meaning the state that was current prior to this state change.  
   
  Override this function to respond to changes in the OLE item's state. Typically you update the item's appearance by invalidating the area in which the item is displayed. Call the base class implementation at the beginning of your override.  
   
@@ -1274,7 +1274,7 @@ virtual void OnDeactivate();
 ### Remarks  
  Note that this function is called to indicate that the OLE item is closed, not that its user interface has been removed from the container application. When that happens, the [OnDeactivateUI](#ondeactivateui) member function is called.  
   
- The default implementation calls the [OnChange](#onchange) member function with **OLE_CHANGEDSTATE** as a parameter. Override this function to perform custom processing when an in-place active item is deactivated. For example, if you support the undo command in your container application, you can override this function to discard the undo state, indicating that the last operation performed on the OLE item cannot be undone once the item is deactivated.  
+ The default implementation calls the [OnChange](#onchange) member function with OLE_CHANGEDSTATE as a parameter. Override this function to perform custom processing when an in-place active item is deactivated. For example, if you support the undo command in your container application, you can override this function to discard the undo state, indicating that the last operation performed on the OLE item cannot be undone once the item is deactivated.  
   
 ##  <a name="ondeactivateandundo"></a>  COleClientItem::OnDeactivateAndUndo  
  Called by the framework when the user invokes the undo command after activating the OLE item in place.  
@@ -1302,7 +1302,7 @@ virtual void OnDeactivateUI(BOOL bUndoable);
 ### Remarks  
  This function restores the container application's user interface to its original state, hiding any menus and other controls that were created for in-place activation.  
   
- If *bUndoable* is **FALSE**, the container should disable the undo command, in effect discarding the undo state of the container, because it indicates that the last operation performed by the server is not undoable.  
+ If *bUndoable* is FALSE, the container should disable the undo command, in effect discarding the undo state of the container, because it indicates that the last operation performed by the server is not undoable.  
   
 ##  <a name="ondiscardundostate"></a>  COleClientItem::OnDiscardUndoState  
  Called by the framework when the user performs an action that discards the undo state while editing the OLE item.  
@@ -1330,7 +1330,7 @@ virtual COleDataSource* OnGetClipboardData(
   
 ### Parameters  
  *bIncludeLink*  
- Set this to **TRUE** if link data should be copied to the Clipboard. Set this to **FALSE** if your server application does not support links.  
+ Set this to TRUE if link data should be copied to the Clipboard. Set this to FALSE if your server application does not support links.  
   
  *lpOffset*  
  Pointer to the offset of the mouse cursor from the origin of the object in pixels.  
@@ -1402,7 +1402,7 @@ virtual BOOL OnGetWindowContext(
 ### Remarks  
  This function is used to retrieve information about the OLE item's parent window.  
   
- If the container is an MDI application, the default implementation returns a pointer to the [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md) object in *ppMainFrame* and a pointer to the active [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) object in *ppDocFrame*. If the container is an SDI application, the default implementation returns a pointer to the [CFrameWnd](../../mfc/reference/cframewnd-class.md) object in *ppMainFrame* and returns **NULL** in *ppDocFrame*. The default implementation also fills in the members of *lpFrameInfo*.  
+ If the container is an MDI application, the default implementation returns a pointer to the [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md) object in *ppMainFrame* and a pointer to the active [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) object in *ppDocFrame*. If the container is an SDI application, the default implementation returns a pointer to the [CFrameWnd](../../mfc/reference/cframewnd-class.md) object in *ppMainFrame* and returns NULL in *ppDocFrame*. The default implementation also fills in the members of *lpFrameInfo*.  
   
  Override this function only if the default implementation does not suit your application; for example, if your application has a user-interface paradigm that differs from SDI or MDI. This is an advanced overridable.  
   
@@ -1422,7 +1422,7 @@ virtual void OnInsertMenus(
  Points to an empty menu.  
   
  *lpMenuWidths*  
- Points to an array of six **LONG** values indicating how many menus are in each of the following menu groups: File, Edit, Container, Object, Window, Help. The container application is responsible for the File, Container, and Window menu groups, corresponding to elements 0, 2, and 4 of this array.  
+ Points to an array of six LONG values indicating how many menus are in each of the following menu groups: File, Edit, Container, Object, Window, Help. The container application is responsible for the File, Container, and Window menu groups, corresponding to elements 0, 2, and 4 of this array.  
   
 ### Remarks  
  This menu is then passed to the server, which inserts its own menus, creating a composite menu. This function can be called repeatedly to build several composite menus.  
@@ -1469,7 +1469,7 @@ virtual BOOL OnScrollBy(CSize sizeExtent);
  For more information, see [IOleInPlaceSite::Scroll](http://msdn.microsoft.com/library/windows/desktop/ms690291) in the Windows SDK.  
   
 ##  <a name="onsetmenu"></a>  COleClientItem::OnSetMenu  
- Called by the framework two times when in-place activation begins and ends; the first time to install the composite menu and the second time (with *holemenu* equal to **NULL**) to remove it.  
+ Called by the framework two times when in-place activation begins and ends; the first time to install the composite menu and the second time (with *holemenu* equal to NULL) to remove it.  
   
 ```  
 virtual void OnSetMenu(
@@ -1483,7 +1483,7 @@ virtual void OnSetMenu(
  Pointer to the composite menu constructed by calls to the [OnInsertMenus](#oninsertmenus) member function and the `InsertMenu` function.  
   
  *holemenu*  
- Handle to the menu descriptor returned by the **OleCreateMenuDescriptor** function, or **NULL** if the dispatching code is to be removed.  
+ Handle to the menu descriptor returned by the `OleCreateMenuDescriptor` function, or NULL if the dispatching code is to be removed.  
   
  *hwndActiveObject*  
  Handle to the editing window for the OLE item. This is the window that will receive editing commands from OLE.  
@@ -1513,7 +1513,7 @@ virtual BOOL OnShowControlBars(
  Nonzero if the function call causes a change in the control bars' state; 0 if the call causes no change, or if *pFrameWnd* does not point to the container's frame window.  
   
 ### Remarks  
- This function returns 0 if the control bars are already in the state specified by *bShow.* This would occur, for example, if the control bars are hidden and *bShow* is **FALSE**.  
+ This function returns 0 if the control bars are already in the state specified by *bShow.* This would occur, for example, if the control bars are hidden and *bShow* is FALSE.  
   
  The default implementation removes the toolbar from the top-level frame window.  
   
@@ -1605,18 +1605,18 @@ virtual void SetDrawAspect(DVASPECT nDrawAspect);
   
 ### Parameters  
  *nDrawAspect*  
- A value from the `DVASPECT` enumeration. This parameter can have one of the following values:  
+ A value from the DVASPECT enumeration. This parameter can have one of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
 ### Remarks  
- The aspect specifies how the item is to be rendered by [Draw](#draw) when the default value for that function's `nDrawAspect` argument is used.  
+ The aspect specifies how the item is to be rendered by [Draw](#draw) when the default value for that function's *nDrawAspect* argument is used.  
   
  This function is called automatically by the Change Icon (and other dialogs that call the Change Icon dialog directly) to enable the iconic display aspect when requested by the user.  
   
@@ -1637,7 +1637,7 @@ void SetExtent(
  Specifies the aspect of the OLE item whose bounds are to be set. For possible values, see [SetDrawAspect](#setdrawaspect).  
   
 ### Remarks  
- If the server application was written using the Microsoft Foundation Class Library, this causes the [OnSetExtent](../../mfc/reference/coleserveritem-class.md#onsetextent) member function of the corresponding `COleServerItem` object to be called. The OLE item can then adjust its display accordingly. The dimensions must be in `MM_HIMETRIC` units. Call this function when the user resizes the OLE item or if you support some form of layout negotiation.  
+ If the server application was written using the Microsoft Foundation Class Library, this causes the [OnSetExtent](../../mfc/reference/coleserveritem-class.md#onsetextent) member function of the corresponding `COleServerItem` object to be called. The OLE item can then adjust its display accordingly. The dimensions must be in MM_HIMETRIC units. Call this function when the user resizes the OLE item or if you support some form of layout negotiation.  
   
  For more information, see [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330) in the Windows SDK.  
   
@@ -1718,9 +1718,9 @@ void SetLinkUpdateOptions(OLEUPDATE dwUpdateOpt);
  *dwUpdateOpt*  
  The value of the link-update option for this item. This value must be one of the following:  
   
-- `OLEUPDATE_ALWAYS` Update the linked item whenever possible. This option supports the Automatic link-update radio button in the Links dialog box.  
+- OLEUPDATE_ALWAYS Update the linked item whenever possible. This option supports the Automatic link-update radio button in the Links dialog box.  
   
-- `OLEUPDATE_ONCALL` Update the linked item only on request from the container application (when the [UpdateLink](#updatelink) member function is called). This option supports the Manual link-update radio button in the Links dialog box.  
+- OLEUPDATE_ONCALL Update the linked item only on request from the container application (when the [UpdateLink](#updatelink) member function is called). This option supports the Manual link-update radio button in the Links dialog box.  
   
 ### Remarks  
  Typically, you should not change the update options chosen by the user in the Links dialog box.  
@@ -1737,10 +1737,10 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
   
 ### Parameters  
  *ptd*  
- Pointer to a [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) data structure, which contains information about the new print-target device. Can be **NULL**.  
+ Pointer to a [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) data structure, which contains information about the new print-target device. Can be NULL.  
   
  *ppd*  
- Pointer to a [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646940) data structure, which contains information about the new print-target device. Can be **NULL**.  
+ Pointer to a [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646940) data structure, which contains information about the new print-target device. Can be NULL.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  
@@ -1748,7 +1748,7 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
 ### Remarks  
  This function updates the print-target device for the item but does not refresh the presentation cache. To update the presentation cache for an item, call [UpdateLink](#updatelink).  
   
- The arguments to this function contain information that the OLE system uses to identify the target device. The **PRINTDLG** structure contains information that Windows uses to initialize the common Print dialog box. After the user closes the dialog box, Windows returns information about the user's selections in this structure. The `m_pd` member of a [CPrintDialog](../../mfc/reference/cprintdialog-class.md) object is a **PRINTDLG** structure.  
+ The arguments to this function contain information that the OLE system uses to identify the target device. The `PRINTDLG` structure contains information that Windows uses to initialize the common Print dialog box. After the user closes the dialog box, Windows returns information about the user's selections in this structure. The `m_pd` member of a [CPrintDialog](../../mfc/reference/cprintdialog-class.md) object is a `PRINTDLG` structure.  
   
  For more information about this structure, see [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) in the Windows SDK.  
   

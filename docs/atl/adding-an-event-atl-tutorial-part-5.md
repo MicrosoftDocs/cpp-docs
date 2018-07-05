@@ -36,15 +36,15 @@ In this step, you will add a `ClickIn` and a `ClickOut` event to your ATL contro
   
 3.  Select a **Return Type** of `void`.  
   
-4.  Enter `ClickIn` in the **Method name** box.  
+4.  Enter *ClickIn* in the **Method name** box.  
   
 5.  Under **Parameter attributes**, select the **in** box.  
   
 6.  Select a **Parameter type** of `LONG`.  
   
-7.  Type `x` as the **Parameter name**, and click **Add**.  
+7.  Type *x* as the **Parameter name**, and click **Add**.  
   
-8.  Repeat steps 5 through 7, this time for a **Parameter name** of `y`.  
+8.  Repeat steps 5 through 7, this time for a **Parameter name** of *y*.  
   
 9. Click **Next**.  
   
@@ -52,7 +52,7 @@ In this step, you will add a `ClickIn` and a `ClickOut` event to your ATL contro
   
 11. Click **Finish**.  
   
-12. Repeat the steps above to define a `ClickOut` method with the same `LONG` parameters `x` and `y`, the same **Parameter attributes** and the same `void` return type.  
+12. Repeat the steps above to define a `ClickOut` method with the same `LONG` parameters *x* and *y*, the same **Parameter attributes** and the same `void` return type.  
   
  Check the Polygon.idl file to see that the code was added to the `_IPolyCtlEvents` dispinterface.  
   
@@ -114,7 +114,7 @@ In this step, you will add a `ClickIn` and a `ClickOut` event to your ATL contro
   
  This code makes use of the points calculated in the `OnDraw` function to create a region that detects the user's mouse clicks with the call to `PtInRegion`.  
   
- The `uMsg` parameter is the ID of the Windows message being handled. This allows you to have one function that handles a range of messages. The `wParam` and the `lParam` parameters are the standard values for the message being handled. The parameter bHandled allows you to specify whether the function handled the message or not. By default, the value is set to `TRUE` to indicate that the function handled the message, but you can set it to `FALSE`. This will cause ATL to continue looking for another message handler function to send the message to.  
+ The *uMsg* parameter is the ID of the Windows message being handled. This allows you to have one function that handles a range of messages. The *wParam* and the *lParam* parameters are the standard values for the message being handled. The parameter bHandled allows you to specify whether the function handled the message or not. By default, the value is set to TRUE to indicate that the function handled the message, but you can set it to FALSE. This will cause ATL to continue looking for another message handler function to send the message to.  
   
 ## Building and Testing the Control  
  Now try out your events. Build the control and start the ActiveX Control Test Container again. This time, view the event log window. To route events to the output window, click **Logging** from the **Options** menu and select **Log to output window**. Insert the control and try clicking in the window. Note that `ClickIn` is fired if you click within the filled polygon, and `ClickOut` is fired when you click outside of it.  

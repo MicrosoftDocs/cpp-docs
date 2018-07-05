@@ -143,7 +143,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
  Specifies the zero-based index of a combo box item.  
   
 ### Return Value  
- A pointer to a `CMFCFontInfo` object. If *iIndex* does not specify a valid item index, the return value is `NULL`.  
+ A pointer to a `CMFCFontInfo` object. If *iIndex* does not specify a valid item index, the return value is NULL.  
   
 ##  <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight  
  Specifies the height, in pixels, of characters in the font combo box if the combo box has owner draw style.  
@@ -179,7 +179,7 @@ BOOL SetFont(
  Nonzero if the font was selected successfully; otherwise 0.  
   
 ### Remarks  
- If *bExact* is `TRUE`, this method selects a font that exactly matches the name that you specified as *lpszName*. If *bExact* is `FALSE`, this method selects a font that starts with the text specified as *lpszName* and that uses the character set that you specified as *nCharSet*. If *nCharSet* is set to DEFAULT_CHARSET, the character set will be ignored and only *lpszName* will be used to select a font.  
+ If *bExact* is TRUE, this method selects a font that exactly matches the name that you specified as *lpszName*. If *bExact* is FALSE, this method selects a font that starts with the text specified as *lpszName* and that uses the character set that you specified as *nCharSet*. If *nCharSet* is set to DEFAULT_CHARSET, the character set will be ignored and only *lpszName* will be used to select a font.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

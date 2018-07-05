@@ -99,9 +99,9 @@ BOOL m_bUseThemeColorInShading;
 ```  
   
 ### Remarks  
- If `TRUE`, the markers are drawn using the current theme color; otherwise the markers are drawn with a light blue color.  
+ If TRUE, the markers are drawn using the current theme color; otherwise the markers are drawn with a light blue color.  
   
- The default value is `FALSE`.  
+ The default value is FALSE.  
   
 ##  <a name="m_clrbasebackground"></a>  CSmartDockingInfo::m_clrBaseBackground  
  Specifies the base background color of smart docking markers.  
@@ -172,7 +172,7 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 ```  
   
 ### Remarks  
- Fill this array with the resource IDs of the bitmaps representing the smart docking markers. `AFX_SD_MARKERS_NUM` is currently defined as 5. You fill the array as follows:  
+ Fill this array with the resource IDs of the bitmaps representing the smart docking markers. AFX_SD_MARKERS_NUM is currently defined as 5. You fill the array as follows:  
   
  `params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;`  
   
@@ -192,7 +192,7 @@ UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 ```  
   
 ### Remarks  
- Fill this array with the resource IDs of the bitmaps representing the highlighted smart docking markers. `AFX_SD_MARKERS_NUM` is currently defined as 5. You fill the array as follows:  
+ Fill this array with the resource IDs of the bitmaps representing the highlighted smart docking markers. AFX_SD_MARKERS_NUM is currently defined as 5. You fill the array as follows:  
   
  `params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;`  
   
