@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPropertyPageImpl Class
-This class implements **IUnknown** and provides a default implementation of the [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface.  
+This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class IPropertyPageImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPropertyPageImpl`.  
   
 ## Members  
@@ -42,14 +42,14 @@ class IPropertyPageImpl
 |Name|Description|  
 |----------|-----------------|  
 |[IPropertyPageImpl::Activate](#activate)|Creates the dialog box window for the property page.|  
-|[IPropertyPageImpl::Apply](#apply)|Applies current property page values to the underlying objects specified through `SetObjects`. The ATL implementation returns `S_OK`.|  
-|[IPropertyPageImpl::Deactivate](#deactivate)|Destroys the window created with **Activate**.|  
+|[IPropertyPageImpl::Apply](#apply)|Applies current property page values to the underlying objects specified through `SetObjects`. The ATL implementation returns S_OK.|  
+|[IPropertyPageImpl::Deactivate](#deactivate)|Destroys the window created with `Activate`.|  
 |[IPropertyPageImpl::GetPageInfo](#getpageinfo)|Retrieves information about the property page.|  
 |[IPropertyPageImpl::Help](#help)|Invokes Windows help for the property page.|  
 |[IPropertyPageImpl::IsPageDirty](#ispagedirty)|Indicates whether the property page has changed since it was activated.|  
 |[IPropertyPageImpl::Move](#move)|Positions and resizes the property page dialog box.|  
 |[IPropertyPageImpl::SetDirty](#setdirty)|Flags the property page's state as changed or unchanged.|  
-|[IPropertyPageImpl::SetObjects](#setobjects)|Provides an array of **IUnknown** pointers for the objects associated with the property page. These objects receive the current property page values through a call to **Apply**.|  
+|[IPropertyPageImpl::SetObjects](#setobjects)|Provides an array of `IUnknown` pointers for the objects associated with the property page. These objects receive the current property page values through a call to `Apply`.|  
 |[IPropertyPageImpl::SetPageSite](#setpagesite)|Provides the property page with an `IPropertyPageSite` pointer, through which the property page communicates with the property frame.|  
 |[IPropertyPageImpl::Show](#show)|Makes the property page dialog box visible or invisible.|  
 |[IPropertyPageImpl::TranslateAccelerator](#translateaccelerator)|Processes a specified keystroke.|  
@@ -65,11 +65,11 @@ class IPropertyPageImpl
 |[IPropertyPageImpl::m_dwTitle](#m_dwtitle)|Stores the resource identifier associated with the text string that appears in the tab for the property page.|  
 |[IPropertyPageImpl::m_nObjects](#m_nobjects)|Stores the number of objects associated with the property page.|  
 |[IPropertyPageImpl::m_pPageSite](#m_ppagesite)|Points to the `IPropertyPageSite` interface through which the property page communicates with the property frame.|  
-|[IPropertyPageImpl::m_ppUnk](#m_ppunk)|Points to an array of **IUnknown** pointers to the objects associated with the property page.|  
+|[IPropertyPageImpl::m_ppUnk](#m_ppunk)|Points to an array of `IUnknown` pointers to the objects associated with the property page.|  
 |[IPropertyPageImpl::m_size](#m_size)|Stores the height and width of the property page's dialog box, in pixels.|  
   
 ## Remarks  
- The [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -104,7 +104,7 @@ HRESULT Apply();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  See [IPropertyPage::Apply](http://msdn.microsoft.com/library/windows/desktop/ms691284) in the Windows SDK.  
@@ -159,7 +159,7 @@ HRESULT IsPageDirty(void);
 ```  
   
 ### Remarks  
- `IsPageDirty` returns `S_OK` if the page has changed since it was activated.  
+ `IsPageDirty` returns S_OK if the page has changed since it was activated.  
   
 ##  <a name="m_bdirty"></a>  IPropertyPageImpl::m_bDirty  
  Specifies whether the property page's state has changed.  
@@ -211,7 +211,7 @@ IPropertyPageSite* m_pPageSite;
 ```  
   
 ##  <a name="m_ppunk"></a>  IPropertyPageImpl::m_ppUnk  
- Points to an array of **IUnknown** pointers to the objects associated with the property page.  
+ Points to an array of `IUnknown` pointers to the objects associated with the property page.  
   
 ```
 IUnknown** m_ppUnk;
@@ -235,21 +235,21 @@ HRESULT Move(LPCRECT pRect);
  See [IPropertyPage::Move](http://msdn.microsoft.com/library/windows/desktop/ms680118) in the Windows SDK.  
   
 ##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty  
- Flags the property page's state as changed or unchanged, depending on the value of `bDirty`.  
+ Flags the property page's state as changed or unchanged, depending on the value of *bDirty*.  
   
 ```
 void SetDirty(BOOL bDirty);
 ```  
   
 ### Parameters  
- `bDirty`  
- [in] If **TRUE**, the property page's state is marked as changed. Otherwise, it is marked as unchanged.  
+ *bDirty*  
+ [in] If TRUE, the property page's state is marked as changed. Otherwise, it is marked as unchanged.  
   
 ### Remarks  
  If necessary, `SetDirty` informs the frame that the property page has changed.  
   
 ##  <a name="setobjects"></a>  IPropertyPageImpl::SetObjects  
- Provides an array of **IUnknown** pointers for the objects associated with the property page.  
+ Provides an array of `IUnknown` pointers for the objects associated with the property page.  
   
 ```
 HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
