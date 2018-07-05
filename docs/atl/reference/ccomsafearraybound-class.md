@@ -41,7 +41,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 |[operator =](#operator_eq)|Sets the `CComSafeArrayBound` to a new value.|  
   
 ## Remarks  
- This class is a wrapper for the **SAFEARRAYBOUND** structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](#getcount), be aware that this method will not return the total number of elements in a multidimensional array.  
+ This class is a wrapper for the `SAFEARRAYBOUND` structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](#getcount), be aware that this method will not return the total number of elements in a multidimensional array.  
   
  **Header:** atlsafe.h  
   
@@ -56,10 +56,10 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 ```  
   
 ### Parameters  
- `ulCount`  
+ *ulCount*  
  The number of elements in the array.  
   
- `lLowerBound`  
+ *lLowerBound*  
  The lower bound from which the array is numbered.  
   
 ### Remarks  
@@ -110,10 +110,10 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 ```  
   
 ### Parameters  
- `bound`  
+ *bound*  
  A `CComSafeArrayBound` object.  
   
- `ulCount`  
+ *ulCount*  
  The number of elements.  
   
 ### Return Value  
@@ -130,7 +130,7 @@ ULONG SetCount(ULONG ulCount) throw();
 ```  
   
 ### Parameters  
- `ulCount`  
+ *ulCount*  
  The number of elements.  
   
 ### Return Value  
@@ -144,7 +144,7 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 ```  
   
 ### Parameters  
- `lLowerBound`  
+ *lLowerBound*  
  The lower bound.  
   
 ### Return Value  

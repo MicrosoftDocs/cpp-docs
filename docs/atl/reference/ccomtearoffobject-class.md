@@ -23,7 +23,7 @@ class CComTearOffObject : public Base
 ```  
   
 #### Parameters  
- `Base`  
+ *Base*  
  Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you want your tear-off object to support.  
   
  ATL implements its tear-off interfaces in two phases — the `CComTearOffObjectBase` methods handle the reference count and `QueryInterface`, while `CComTearOffObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509).  
@@ -62,7 +62,7 @@ class CComTearOffObject : public Base
   
  You should derive the class implementing the tear-off from `CComTearOffObjectBase` and from whichever interfaces you want your tear-off object to support. `CComTearOffObjectBase` is templatized on the owner class and the thread model. The owner class is the class of the object for which a tear-off is being implemented. If you do not specify a thread model, the default thread model is used.  
   
- You should create a COM map for your tear-off class. When ATL instantiates the tear-off, it will create **CComTearOffObject\<CYourTearOffClass>** or **CComCachedTearOffObject\<CYourTearOffClass>**.  
+ You should create a COM map for your tear-off class. When ATL instantiates the tear-off, it will create `CComTearOffObject<CYourTearOffClass>` or `CComCachedTearOffObject<CYourTearOffClass>`.  
   
  For example, in the BEEPER sample, the `CBeeper2` class is the tear-off class and the `CBeeper` class is the owner class:  
   
@@ -94,8 +94,8 @@ CComTearOffObject(void* pv);
 ```  
   
 ### Parameters  
- `pv`  
- [in] Pointer that will be converted to a pointer to a **CComObject\<Owner>** object.  
+ *pv*  
+ [in] Pointer that will be converted to a pointer to a `CComObject<Owner>` object.  
   
 ### Remarks  
  Increments the owner's reference count by one.  
@@ -118,7 +118,7 @@ CComTearOffObjectBase();
 ```  
   
 ### Remarks  
- Initializes the [m_pOwner](#m_powner) member to **NULL**.  
+ Initializes the [m_pOwner](#m_powner) member to NULL.  
   
 ##  <a name="m_powner"></a>  CComTearOffObject::m_pOwner  
  A pointer to a [CComObject](../../atl/reference/ccomobject-class.md) object derived from *Owner*.  
@@ -132,7 +132,7 @@ CComObject<Owner>* m_pOwner;
  [in] The class for which a tear-off is being implemented.  
   
 ### Remarks  
- The pointer is initialized to **NULL** during construction.  
+ The pointer is initialized to NULL during construction.  
   
 ##  <a name="queryinterface"></a>  CComTearOffObject::QueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -142,17 +142,17 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The IID of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer identified by `iid`, or **NULL** if the interface is not found.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer identified by *iid*, or NULL if the interface is not found.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- Queries first for interfaces on your tear-off class. If the interface is not there, queries for the interface on the owner object. If the requested interface is **IUnknown**, returns the **IUnknown** of the owner.  
+ Queries first for interfaces on your tear-off class. If the interface is not there, queries for the interface on the owner object. If the requested interface is `IUnknown`, returns the `IUnknown` of the owner.  
   
 ##  <a name="release"></a>  CComTearOffObject::Release  
  Decrements the reference count by one and, if the reference count is zero, deletes the `CComTearOffObject`.  
