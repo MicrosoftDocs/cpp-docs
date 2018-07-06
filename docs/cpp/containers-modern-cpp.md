@@ -32,7 +32,7 @@ When performance optimization is needed, consider using:
 
 - Unordered associative containers such as [unordered_map](../standard-library/unordered-map-class.md). These have lower per-element overhead and constant-time lookup, but they can be harder to use correctly and efficiently.
 
-- Sorted **vector**. For more information, see [Algorithms](../cpp/algorithms-modern-cpp.md).
+- Sorted `vector`. For more information, see [Algorithms](../cpp/algorithms-modern-cpp.md).
 
 Don’t use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead.
 

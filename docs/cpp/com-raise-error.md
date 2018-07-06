@@ -28,14 +28,14 @@ void __stdcall _com_raise_error(
 ```  
   
 #### Parameters  
- `hr`  
- `HRESULT` information.  
+ *hr*  
+ HRESULT information.  
   
- `perrinfo`  
- **IErrorInfo** object.  
+ *perrinfo*  
+ `IErrorInfo` object.  
   
 ## Remarks  
- `_com_raise_error`, which is defined in \<comdef.h>, can be replaced by a user-written version of the same name and prototype. This could be done if you want to use `#import` but do not want to use C++ exception handling. In that case, a user version of **_com_raise_error** might decide to do a `longjmp` or display a message box and halt. The user version should not return, though, because the compiler COM support code does not expect it to return.  
+ `_com_raise_error`, which is defined in \<comdef.h>, can be replaced by a user-written version of the same name and prototype. This could be done if you want to use `#import` but do not want to use C++ exception handling. In that case, a user version of `_com_raise_error` might decide to do a `longjmp` or display a message box and halt. The user version should not return, though, because the compiler COM support code does not expect it to return.  
   
  You can also use [_set_com_error_handler](../cpp/set-com-error-handler.md) to replace the default error-handling function.  
   
