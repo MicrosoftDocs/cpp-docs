@@ -24,7 +24,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
   
 - [Converting CString objects](#_core_converting_cstring_objects)  
   
- `Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a `typedef` of `CStringT`. More exactly, `CString` is a `typedef` of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.  
+ `Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **typedef** of `CStringT`. More exactly, `CString` is a **typedef** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.  
   
  `CString`, `CStringA`, and `CStringW` are defined in atlstr.h. `CStringT` is defined in cstringt.h.  
   
@@ -56,10 +56,10 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
   
  [!code-cpp[NVC_ATLMFC_Utilities#185](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_3.cpp)]  
   
- At least one argument to the concatenation operators (+ or +=) must be a `CString` object, but you can use a constant character string (for example, `"big"`) or a `char` (for example, 'x') for the other argument.  
+ At least one argument to the concatenation operators (+ or +=) must be a `CString` object, but you can use a constant character string (for example, `"big"`) or a **char** (for example, 'x') for the other argument.  
   
 ##  <a name="_core_comparing_cstring_objects"></a> Comparing CString Objects  
- The `Compare` method and the == operator for `CString` are equivalent. `Compare`, `operator==`, and `CompareNoCase` are MBCS and Unicode aware; `CompareNoCase` is also case-insensitive. The `Collate` method of `CString` is locale-sensitive and is often slower than `Compare`. Use `Collate` only where you must abide by the sorting rules as specified by the current locale.  
+ The `Compare` method and the == operator for `CString` are equivalent. `Compare`, **operator==**, and `CompareNoCase` are MBCS and Unicode aware; `CompareNoCase` is also case-insensitive. The `Collate` method of `CString` is locale-sensitive and is often slower than `Compare`. Use `Collate` only where you must abide by the sorting rules as specified by the current locale.  
   
  The following table shows the available [CString](../atl-mfc-shared/reference/cstringt-class.md) comparison functions and their equivalent Unicode/MBCS-portable functions in the C run-time library.  
   
