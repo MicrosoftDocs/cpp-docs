@@ -18,7 +18,7 @@ There are several casting operators specific to the C++ language. These operator
   
 -   [static_cast](../cpp/static-cast-operator.md) Used for conversion of nonpolymorphic types.  
   
--   [const_cast](../cpp/const-cast-operator.md) Used to remove the `const`, `volatile`, and `__unaligned` attributes.  
+-   [const_cast](../cpp/const-cast-operator.md) Used to remove the **const**, **volatile**, and **__unaligned** attributes.  
   
 -   [reinterpret_cast](../cpp/reinterpret-cast-operator.md) Used for simple reinterpretation of bits.  
   

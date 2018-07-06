@@ -85,7 +85,7 @@ int TestRun::_instances{ 0 };
 ```  
   
 ## Member accessibility  
- The members of a class are declared in the member list. The member list of a class may be divided into any number of `private`, `protected` and **public** sections using keywords known as access specifiers.  A colon **:** must follow the access specifier.  These sections need not be contiguous, that is, any of these keywords may appear several times in the member list.  The keyword designates the access of all members up until the next access specifier or the closing brace. For more information, see [Member Access Control (C++)](../cpp/member-access-control-cpp.md).  
+ The members of a class are declared in the member list. The member list of a class may be divided into any number of **private**, **protected** and **public** sections using keywords known as access specifiers.  A colon **:** must follow the access specifier.  These sections need not be contiguous, that is, any of these keywords may appear several times in the member list.  The keyword designates the access of all members up until the next access specifier or the closing brace. For more information, see [Member Access Control (C++)](../cpp/member-access-control-cpp.md).  
   
 ## Static members  
  A data member may be declared as static, which means all objects of the class have access to the same copy of it. A member function may be declared as static, in which case it can only access static data members of the class (and has no *this* pointer). For more information, see [Static Data Members](../cpp/static-members-cpp.md).  

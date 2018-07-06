@@ -27,7 +27,7 @@ ms.workload: ["cplusplus"]
 ```  
   
 #### Parameters  
- `that`  
+ *that*  
  A `_com_error` object.  
   
  **END Microsoft Specific**  
