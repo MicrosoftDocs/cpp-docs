@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # main Function Restrictions
-Several restrictions apply to the **main** function that do not apply to any other C++ functions. The **main** function:  
+Several restrictions apply to the `main` function that do not apply to any other C++ functions. The `main` function:  
   
 -   Cannot be overloaded (see [Function Overloading](function-overloading.md)).  
   
