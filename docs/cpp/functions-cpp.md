@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Functions (C++)
 
-A function is a block of code that performs some operation. A function can optionally define input parameters that enable callers to pass arguments into the function. A function can optionally return a value as output. Functions are useful for encapsulating common operations in a single reusable block, ideally with a name that clearly describes what the function does. The following function accepts two integers from a caller and returns their sum; `a` and `b` are *parameters* of type **int**.
+A function is a block of code that performs some operation. A function can optionally define input parameters that enable callers to pass arguments into the function. A function can optionally return a value as output. Functions are useful for encapsulating common operations in a single reusable block, ideally with a name that clearly describes what the function does. The following function accepts two integers from a caller and returns their sum; *a* and *b* are *parameters* of type **int**.
 
 ```cpp
 int sum(int a, int b)
@@ -100,7 +100,7 @@ Optional parts of a function declaration are:
 
      For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).
 
-1. A **noexcept** expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to **true**.
+1. A **noexcept** expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to TRUE.
 
     ```cpp
     #include <type_traits>

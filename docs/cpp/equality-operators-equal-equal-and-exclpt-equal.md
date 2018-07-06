@@ -23,9 +23,9 @@ expression != expression
 ## Remarks  
  The binary equality operators compare their operands for strict equality or inequality.  
   
- The equality operators, equal to (`==`) and not equal to (`!=`), have lower precedence than the relational operators, but they behave similarly. The result type for these operators is `bool`.  
+ The equality operators, equal to (`==`) and not equal to (`!=`), have lower precedence than the relational operators, but they behave similarly. The result type for these operators is **bool**.  
   
- The equal-to operator (`==`) returns **true** (1) if both operands have the same value; otherwise, it returns **false** (0). The not-equal-to operator (`!=`) returns **true** if the operands do not have the same value; otherwise, it returns **false**.  
+ The equal-to operator (`==`) returns TRUE (1) if both operands have the same value; otherwise, it returns FALSE (0). The not-equal-to operator (`!=`) returns TRUE if the operands do not have the same value; otherwise, it returns FALSE.  
   
 ## Operator Keyword for !=  
  The `not_eq` operator is the text equivalent of `!=`. There are two ways to access the `not_eq` operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
