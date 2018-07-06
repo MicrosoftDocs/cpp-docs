@@ -34,9 +34,9 @@ class COleDateTime
 |Name|Description|  
 |----------|-----------------|  
 |[COleDateTime::Format](#format)|Generates a formatted string representation of a `COleDateTime` object.|  
-|[COleDateTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Call this method to obtain the time in the `COleDateTime` object as a **DBTIMESTAMP** data structure.|  
+|[COleDateTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Call this method to obtain the time in the `COleDateTime` object as a `DBTIMESTAMP` data structure.|  
 |[COleDateTime::GetAsSystemTime](#getassystemtime)|Call this method to obtain the time in the `COleDateTime` object as a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) data structure.|  
-|[COleDateTime::GetAsUDATE](#getasudate)|Call this method to obtain the time in the `COleDateTime` as a **UDATE** data structure.|  
+|[COleDateTime::GetAsUDATE](#getasudate)|Call this method to obtain the time in the `COleDateTime` as a `UDATE` data structure.|  
 |[COleDateTime::GetCurrentTime](#getcurrenttime)|Creates a `COleDateTime` object that represents the current time (static member function).|  
 |[COleDateTime::GetDay](#getday)|Returns the day this `COleDateTime` object represents (1 - 31).|  
 |[COleDateTime::GetDayOfWeek](#getdayofweek)|Returns the day of the week this `COleDateTime` object represents (Sunday = 1).|  
@@ -67,7 +67,7 @@ class COleDateTime
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDateTime::m_dt](#m_dt)|Contains the underlying **DATE** for this `COleDateTime` object.|  
+|[COleDateTime::m_dt](#m_dt)|Contains the underlying `DATE` for this `COleDateTime` object.|  
 |[COleDateTime::m_status](#m_status)|Contains the status of this `COleDateTime` object.|  
   
 ## Remarks  
@@ -121,8 +121,8 @@ bool operator>=(const COleDateTime& date) const throw();
 ```  
   
 ### Parameters  
- `date`  
- The **COleDateTime** object to be compared.  
+ *date*  
+ The `COleDateTime` object to be compared.  
   
 ### Remarks  
   
@@ -162,31 +162,31 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 ```  
   
 ### Parameters  
- `dateSrc`  
+ *dateSrc*  
  An existing `COleDateTime` object to be copied into the new `COleDateTime` object.  
   
  *varSrc*  
- An existing **VARIANT** data structure (possibly a `COleVariant` object) to be converted to a date/time value ( `VT_DATE`) and copied into the new `COleDateTime` object.  
+ An existing `VARIANT` data structure (possibly a `COleVariant` object) to be converted to a date/time value (VT_DATE) and copied into the new `COleDateTime` object.  
   
- `dtSrc`  
- A date/time ( **DATE**) value to be copied into the new `COleDateTime` object.  
+ *dtSrc*  
+ A date/time (`DATE`) value to be copied into the new `COleDateTime` object.  
   
- `timeSrc`  
- A `time_t` or **__time64_t** value to be converted to a date/time value and copied into the new `COleDateTime` object.  
+ *timeSrc*  
+ A `time_t` or `__time64_t` value to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  *systimeSrc*  
  A `SYSTEMTIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
- `filetimeSrc`  
+ *filetimeSrc*  
  A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
- `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
+ *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
  Indicate the date and time values to be copied into the new `COleDateTime` object.  
   
- `wDosDate`, `wDosTime`  
+ *wDosDate*, *wDosTime*  
  MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
- `dbts`  
+ *dbts*  
  A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure containing the current local time.  
   
 ### Remarks  
@@ -201,7 +201,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 |minute|0 - 59|  
 |second|0 - 59|  
   
- Note that the actual upper bound for the day component varies based on the month and year components. For details, see the **SetDate** or `SetDateTime` member functions.  
+ Note that the actual upper bound for the day component varies based on the month and year components. For details, see the `SetDate` or `SetDateTime` member functions.  
   
  Following is a brief description of each constructor:  
   
@@ -211,7 +211,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 - `COleDateTime(` *varSrc* **)** Constructs a `COleDateTime` object. Attempts to convert a `VARIANT` structure or [COleVariant](../../mfc/reference/colevariant-class.md) object to a date/time ( `VT_DATE`) value. If this conversion is successful, the converted value is copied into the new `COleDateTime` object. If it is not, the value of the `COleDateTime` object is set to 0 (midnight, 30 December 1899) and its status to invalid.  
   
-- `COleDateTime(` `dtSrc` **)** Constructs a `COleDateTime` object from a **DATE** value.  
+- `COleDateTime(` `dtSrc` **)** Constructs a `COleDateTime` object from a `DATE` value.  
   
 - `COleDateTime(` `timeSrc` **)** Constructs a `COleDateTime` object from a `time_t` value.  
   
@@ -230,7 +230,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 > [!NOTE]
->  The constructor using **DBTIMESTAMP** parameter is only available when OLEDB.h is included.  
+>  The constructor using `DBTIMESTAMP` parameter is only available when OLEDB.h is included.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#2](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_4.cpp)]  
@@ -245,19 +245,19 @@ CString Format(UINT nFormatID) const;
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  Indicates one of the following locale flags:  
   
-- `LOCALE_NOUSEROVERRIDE` Use the system default locale settings, instead of custom user settings.  
+- LOCALE_NOUSEROVERRIDE Use the system default locale settings, instead of custom user settings.  
   
-- `VAR_TIMEVALUEONLY` Ignore the date portion during parsing.  
+- VAR_TIMEVALUEONLY Ignore the date portion during parsing.  
   
-- `VAR_DATEVALUEONLY` Ignore the time portion during parsing.  
+- VAR_DATEVALUEONLY Ignore the time portion during parsing.  
   
- `lcid`  
+ *lcid*  
  Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](http://msdn.microsoft.com/library/windows/desktop/dd318691).  
   
- `lpszFormat`  
+ *lpszFormat*  
  A formatting string similar to the `printf` formatting string. Each formatting code, preceded by a percent ( `%`) sign, is replaced by the corresponding `COleDateTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for more information. The value and meaning of the formatting codes for `Format` are:  
   
 - `%H` Hours in the current day  
@@ -268,45 +268,45 @@ CString Format(UINT nFormatID) const;
   
 - `%%` Percent sign  
   
- `nFormatID`  
+ *nFormatID*  
  The resource ID for the format-control string.  
   
 ### Return Value  
  A `CString` that contains the formatted date/time value.  
   
 ### Remarks  
- If the status of this `COleDateTime` object is null, the return value is an empty string. If the status is invalid, the return string is specified by the string resource `ATL_IDS_DATETIME_INVALID`.  
+ If the status of this `COleDateTime` object is null, the return value is an empty string. If the status is invalid, the return string is specified by the string resource ATL_IDS_DATETIME_INVALID.  
   
  A brief description of the three forms for this function follows:  
   
- `Format`( `dwFlags`, `lcid`)  
+ `Format`( *dwFlags*, *lcid*)  
  This form formats the value by using the language specifications (locale IDs) for date and time. Using the default parameters, this form will print the date and the time, unless the time portion is 0 (midnight), in which case it will print just the date, or the date portion is 0 (30 December 1899), in which case it will print just the time. If the date/time value is 0 (30 December 1899, midnight), this form with the default parameters will print midnight.  
   
- `Format`( `lpszFormat`)  
+ `Format`( *lpszFormat*)  
  This form formats the value by using the format string which contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is passed as a parameter to the function. For more information about the formatting codes, see [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in the Run-Time Library Reference.  
   
- `Format`( `nFormatID`)  
+ `Format`( *nFormatID*)  
  This form formats the value by using the format string which contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is a resource. The ID of this string resource is passed as the parameter. For more information about the formatting codes, see [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in the *Run-Time Library Reference*.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#3](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_5.cpp)]  
   
 ##  <a name="getasdbtimestamp"></a>  COleDateTime::GetAsDBTIMESTAMP  
- Call this method to obtain the time in the `COleDateTime` object as a **DBTIMESTAMP** data structure.  
+ Call this method to obtain the time in the `COleDateTime` object as a `DBTIMESTAMP` data structure.  
   
 ```
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 ```  
   
 ### Parameters  
- `dbts`  
+ *dbts*  
  A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Stores the resulting time in the referenced `dbts` structure. The **DBTIMESTAMP** data structure initialized by this function will have its **fraction** member set to zero.  
+ Stores the resulting time in the referenced *dbts* structure. The `DBTIMESTAMP` data structure initialized by this function will have its `fraction` member set to zero.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#4](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_6.cpp)]  
@@ -323,29 +323,29 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
  A reference to a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the converted date/time value from the `COleDateTime` object.  
   
 ### Return Value  
- Returns **true** if successful; **false** if the conversion fails, or if the `COleDateTime` object is **NULL** or invalid.  
+ Returns TRUE if successful; FALSE if the conversion fails, or if the `COleDateTime` object is NULL or invalid.  
   
 ### Remarks  
- `GetAsSystemTime` stores the resulting time in the referenced *sysTime* object. The `SYSTEMTIME` data structure initialized by this function will have its **wMilliseconds** member set to zero.  
+ `GetAsSystemTime` stores the resulting time in the referenced *sysTime* object. The `SYSTEMTIME` data structure initialized by this function will have its `wMilliseconds` member set to zero.  
   
  See [GetStatus](#getstatus) for more information on the status information held in a `COleDateTime` object.  
   
 ##  <a name="getasudate"></a>  COleDateTime::GetAsUDATE  
- Call this method to obtain the time in the `COleDateTime` object as a **UDATE** data structure.  
+ Call this method to obtain the time in the `COleDateTime` object as a `UDATE` data structure.  
   
 ```
 bool GetAsUDATE(UDATE& udate) const throw();
 ```  
   
 ### Parameters  
- `udate`  
- A reference to a **UDATE** structure to receive the converted date/time value from the `COleDateTime` object.  
+ *udate*  
+ A reference to a `UDATE` structure to receive the converted date/time value from the `COleDateTime` object.  
   
 ### Return Value  
- Returns **true** if successful; **false** if the conversion fails, or if the `COleDateTime` object is **NULL** or invalid.  
+ Returns TRUE if successful; FALSE if the conversion fails, or if the `COleDateTime` object is NULL or invalid.  
   
 ### Remarks  
- A **UDATE** structure represents an "unpacked" date.  
+ A `UDATE` structure represents an "unpacked" date.  
   
 ##  <a name="getcurrenttime"></a>  COleDateTime::GetCurrentTime  
  Call this static member function to return the current date/time value.  
@@ -594,10 +594,10 @@ DateTimeStatus GetStatus() const throw();
 ```  
   
 ### Return Value  
- Returns the status of this `COleDateTime` value. If you call **GetStatus** on a `COleDateTime` object constructed with the default, it will return valid. If you call **GetStatus** on a `COleDateTime` object initialized with the constructor set to null, **GetStatus** will return null. See **Remarks** for more information.  
+ Returns the status of this `COleDateTime` value. If you call `GetStatus` on a `COleDateTime` object constructed with the default, it will return valid. If you call `GetStatus` on a `COleDateTime` object initialized with the constructor set to null, `GetStatus` will return null. See **Remarks** for more information.  
   
 ### Remarks  
- The return value is defined by the **DateTimeStatus** enumerated type, which is defined within the `COleDateTime` class.  
+ The return value is defined by the `DateTimeStatus` enumerated type, which is defined within the `COleDateTime` class.  
   
 ```  
 enum DateTimeStatus  
@@ -613,15 +613,15 @@ enum DateTimeStatus
   
 - `COleDateTime::error` Indicates that an error occurred while attempting to obtain part of the date/time value.  
   
-- **COleDateTime::valid** Indicates that this `COleDateTime` object is valid.  
+- `COleDateTime::valid` Indicates that this `COleDateTime` object is valid.  
   
-- **COleDateTime::invalid** Indicates that this `COleDateTime` object is invalid; that is, its value may be incorrect.  
+- `COleDateTime::invalid` Indicates that this `COleDateTime` object is invalid; that is, its value may be incorrect.  
   
-- **COleDateTime::null** Indicates that this `COleDateTime` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- `COleDateTime::null` Indicates that this `COleDateTime` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
  The status of a `COleDateTime` object is invalid in the following cases:  
   
--   If its value is set from a **VARIANT** or `COleVariant` value that could not be converted to a date/time value.  
+-   If its value is set from a `VARIANT` or `COleVariant` value that could not be converted to a date/time value.  
   
 -   If its value is set from a `time_t`, `SYSTEMTIME`, or `FILETIME` value that could not be converted to a valid date/time value.  
   
@@ -683,7 +683,7 @@ int GetYear() const throw();
  See the example for [GetDay](#getday).  
   
 ##  <a name="m_dt"></a>  COleDateTime::m_dt  
- The underlying **DATE** structure for this `COleDateTime` object.  
+ The underlying `DATE` structure for this `COleDateTime` object.  
   
 ```
 DATE m_dt;
@@ -692,9 +692,9 @@ DATE m_dt;
 ### Remarks  
   
 > [!CAUTION]
->  Changing the value in the **DATE** object accessed by the pointer returned by this function will change the value of this `COleDateTime` object. It does not change the status of this `COleDateTime` object.  
+>  Changing the value in the `DATE` object accessed by the pointer returned by this function will change the value of this `COleDateTime` object. It does not change the status of this `COleDateTime` object.  
   
- For more information about the implementation of the **DATE** object, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
+ For more information about the implementation of the `DATE` object, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ##  <a name="m_status"></a>  COleDateTime::m_status  
  Contains the status of this `COleDateTime` object.  
@@ -704,7 +704,7 @@ DateTimeStatus m_status;
 ```  
   
 ### Remarks  
- The type of this data member is the enumerated type **DateTimeStatus**, which is defined within the `COleDateTime` class. See [COleDateTime::GetStatus](#getstatus) for details.  
+ The type of this data member is the enumerated type `DateTimeStatus`, which is defined within the `COleDateTime` class. See [COleDateTime::GetStatus](#getstatus) for details.  
   
 > [!CAUTION]
 >  This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.  
@@ -727,15 +727,15 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator =(** `dateSrc` **)** The value and status of the operand are copied into this `COleDateTime` object.  
   
-- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time ( `VT_DATE`) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.  
+- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.  
   
-- **operator =(** `dtSrc` **)** The **DATE** value is copied into this `COleDateTime` object and its status is set to valid.  
+- **operator =(** `dtSrc` **)** The `DATE` value is copied into this `COleDateTime` object and its status is set to valid.  
   
-- **operator =(** `timeSrc` **)** The `time_t` or **__time64_t** value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.  
+- **operator =(** `timeSrc` **)** The `time_t` or `__time64_t` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.  
   
 - **operator =(** *systimeSrc* **)** The [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.  
   
-- **operator =(** `udate` **)** The **UDATE** value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A **UDATE** structure represents an "unpacked" date. See the function [VarDateFromUdate](http://msdn.microsoft.com/en-us/1c924ac5-b896-49e1-9ccf-825ac7a030c8) for more details.  
+- **operator =(** `udate` **)** The `UDATE` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A `UDATE` structure represents an "unpacked" date. See the function [VarDateFromUdate](http://msdn.microsoft.com/en-us/1c924ac5-b896-49e1-9ccf-825ac7a030c8) for more details.  
   
 - **operator =(** `filetimeSrc` **)** The [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
@@ -748,7 +748,7 @@ COleDateTime& operator=(const UDATE& udate) throw();
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ##  <a name="operator_add_-"></a>  COleDateTime::operator +, -  
- Add and subtract **ColeDateTime** values.  
+ Add and subtract `ColeDateTime` values.  
   
 ```
 COleDateTime operator+(COleDateTimeSpan dateSpan) const throw();
@@ -775,7 +775,7 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#12](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_13.cpp)]  
   
 ##  <a name="operator_add_eq_-_eq"></a>  COleDateTime::operator +=, -=  
- Add and subtract a **ColeDateTime** value from this `COleDateTime` object.  
+ Add and subtract a `ColeDateTime` value from this `COleDateTime` object.  
   
 ```
 COleDateTime& operator+=(COleDateTimeSpan dateSpan) throw();
@@ -796,16 +796,16 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ##  <a name="operator_date"></a>  COleDateTime::operator DATE  
- Converts a **ColeDateTime** value into a **DATE**.  
+ Converts a `ColeDateTime` value into a `DATE`.  
   
 ```
 operator DATE() const throw();
 ```  
   
 ### Remarks  
- This operator returns a **DATE** object whose value is copied from this `COleDateTime` object. For more information about the implementation of the **DATE** object, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
+ This operator returns a `DATE` object whose value is copied from this `COleDateTime` object. For more information about the implementation of the `DATE` object, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
- The **DATE** operator will assert if the `COleDateTime` object is set to null. See [COleDateTime Relational Operators](#coledatetime_relational_operators) for an example.  
+ The `DATE` operator will assert if the `COleDateTime` object is set to null. See [COleDateTime Relational Operators](#coledatetime_relational_operators) for an example.  
   
 ##  <a name="parsedatetime"></a>  COleDateTime::ParseDateTime  
  Parses a string to read a date/time value.  
@@ -818,23 +818,23 @@ bool ParseDateTime(
 ```  
   
 ### Parameters  
- `lpszDate`  
+ *lpszDate*  
  A pointer to the null-terminated string which is to be parsed. For details, see Remarks.  
   
- `dwFlags`  
+ *dwFlags*  
  Indicates flags for locale settings and parsing. One or more of the following flags:  
   
-- **LOCALE_NOUSEROVERRIDE** Use the system default locale settings, rather than custom user settings.  
+- LOCALE_NOUSEROVERRIDE Use the system default locale settings, rather than custom user settings.  
   
-- **VAR_TIMEVALUEONLY** Ignore the date portion during parsing.  
+- VAR_TIMEVALUEONLY Ignore the date portion during parsing.  
   
-- **VAR_DATEVALUEONLY** Ignore the time portion during parsing.  
+- VAR_DATEVALUEONLY Ignore the time portion during parsing.  
   
- `lcid`  
+ *lcid*  
  Indicates locale ID to use for the conversion.  
   
 ### Return Value  
- Returns **true** if the string was successfully converted to a date/time value, otherwise **false**.  
+ Returns TRUE if the string was successfully converted to a date/time value, otherwise FALSE.  
   
 ### Remarks  
  If the string was successfully converted to a date/time value, the value of this `COleDateTime` object is set to that value and its status to valid.  
@@ -842,7 +842,7 @@ bool ParseDateTime(
 > [!NOTE]
 >  Year values must lie between 100 and 9999, inclusively.  
   
- The `lpszDate` parameter can take a variety of formats. For example, the following strings contain acceptable date/time formats:  
+ The *lpszDate* parameter can take a variety of formats. For example, the following strings contain acceptable date/time formats:  
   
  `"25 January 1996"`  
   
@@ -858,7 +858,7 @@ bool ParseDateTime(
   
  Note that the locale ID will also affect whether the string format is acceptable for conversion to a date/time value.  
   
- In the case of **VAR_DATEVALUEONLY**, the time value is set to time 0, or midnight. In the case of **VAR_TIMEVALUEONLY**, the date value is set to date 0, meaning 30 December 1899.  
+ In the case of VAR_DATEVALUEONLY, the time value is set to time 0, or midnight. In the case of VAR_TIMEVALUEONLY, the date value is set to date 0, meaning 30 December 1899.  
   
  If the string could not be converted to a date/time value or if there was a numerical overflow, the status of this `COleDateTime` object is invalid.  
   
@@ -875,11 +875,11 @@ int SetDate(
 ```  
   
 ### Parameters  
- `nYear`, `nMonth`, `nDay`  
+ *nYear*, *nMonth*, *nDay*  
  Indicate the date components to be copied into this `COleDateTime` object.  
   
 ### Return Value  
- Zero if the value of this `COleDateTime` object was set successfully; otherwise, 1. This return value is based on the **DateTimeStatus** enumerated type. For more information, see the [SetStatus](#setstatus) member function.  
+ Zero if the value of this `COleDateTime` object was set successfully; otherwise, 1. This return value is based on the `DateTimeStatus` enumerated type. For more information, see the [SetStatus](#setstatus) member function.  
   
 ### Remarks  
  The date is set to the specified values. The time is set to time 0, midnight.  
@@ -888,17 +888,17 @@ int SetDate(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nYear`|100 - 9999|  
-|`nMonth`|1 - 12|  
-|`nDay`|0 - 31|  
+|*nYear*|100 - 9999|  
+|*nMonth*|1 - 12|  
+|*nDay*|0 - 31|  
   
  If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as `SystemTimeToVariantTime`.  
   
- If the date value specified by the parameters is not valid, the status of this object is set to **COleDateTime::invalid**. You should use [GetStatus](#getstatus) to check the validity of the **DATE** value and should not assume that the value of [m_dt](#m_dt) will remain unmodified.  
+ If the date value specified by the parameters is not valid, the status of this object is set to `COleDateTime::invalid`. You should use [GetStatus](#getstatus) to check the validity of the `DATE` value and should not assume that the value of [m_dt](#m_dt) will remain unmodified.  
   
  Here are some examples of date values:  
   
-|`nYear`|`nMonth`|`nDay`|Value|  
+|*nYear*|*nMonth*|*nDay*|Value|  
 |-------------|--------------|------------|-----------|  
 |2000|2|29|29 February 2000|  
 |1776|7|4|4 July 1776|  
@@ -944,23 +944,23 @@ int SetDateTime(
 ```  
   
 ### Parameters  
- `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
+ *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
  Indicate the date and time components to be copied into this `COleDateTime` object.  
   
 ### Return Value  
- Zero if the value of this `COleDateTime` object was set successfully; otherwise, 1. This return value is based on the **DateTimeStatus** enumerated type. For more information, see the [SetStatus](#setstatus) member function.  
+ Zero if the value of this `COleDateTime` object was set successfully; otherwise, 1. This return value is based on the `DateTimeStatus` enumerated type. For more information, see the [SetStatus](#setstatus) member function.  
   
 ### Remarks  
  See the following table for bounds for the parameter values:  
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nYear`|100 - 9999|  
-|`nMonth`|1 - 12|  
-|`nDay`|0 - 31|  
-|`nHour`|0 - 23|  
-|`nMin`|0 - 59|  
-|`nSec`|0 - 59|  
+|*nYear*|100 - 9999|  
+|*nMonth*|1 - 12|  
+|*nDay*|0 - 31|  
+|*nHour*|0 - 23|  
+|*nMin*|0 - 59|  
+|*nSec*|0 - 59|  
   
  If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](http://msdn.microsoft.com/en-us/d9d69521-9b33-4fc5-8a1c-929f216db450).  
   
@@ -968,7 +968,7 @@ int SetDateTime(
   
  Here are some examples of time values:  
   
-|`nHour`|`nMin`|`nSec`|Value|  
+|*nHour*|*nMin*|*nSec*|Value|  
 |-------------|------------|------------|-----------|  
 |1|3|3|01:03:03|  
 |23|45|0|23:45:00|  
@@ -977,7 +977,7 @@ int SetDateTime(
   
  Here are some examples of date values:  
   
-|`nYear`|`nMonth`|`nDay`|Value|  
+|*nYear*|*nMonth*|*nDay*|Value|  
 |-------------|--------------|------------|-----------|  
 |1995|4|15|15 April 1995|  
 |1789|7|14|17 July 1789|  
@@ -1021,10 +1021,10 @@ void SetStatus(DateTimeStatus status) throw();
  The new status value for this `COleDateTime` object.  
   
 ### Remarks  
- The *status* parameter value is defined by the **DateTimeStatus** enumerated type, which is defined within the `COleDateTime` class. See [COleDateTime::GetStatus](#getstatus) for details.  
+ The *status* parameter value is defined by the `DateTimeStatus` enumerated type, which is defined within the `COleDateTime` class. See [COleDateTime::GetStatus](#getstatus) for details.  
   
 > [!CAUTION]
->  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to `null` or **invalid**. Note that the assignment operator ( [operator =](#eq)) and [SetDateTime](#setdatetime) do set the status of the object based on the source value(s).  
+>  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to **null** or **invalid**. Note that the assignment operator ( [operator =](#eq)) and [SetDateTime](#setdatetime) do set the status of the object based on the source value(s).  
   
 ### Example  
  See the example for [GetStatus](#getstatus).  
@@ -1040,11 +1040,11 @@ int SetTime(
 ```  
   
 ### Parameters  
- `nHour`, `nMin`, `nSec`  
+ *nHour*, *nMin*, *nSec*  
  Indicate the time components to be copied into this `COleDateTime` object.  
   
 ### Return Value  
- Zero if the value of this `COleDateTime` object was set successfully; otherwise, 1. This return value is based on the **DateTimeStatus** enumerated type. For more information, see the [SetStatus](#setstatus) member function.  
+ Zero if the value of this `COleDateTime` object was set successfully; otherwise, 1. This return value is based on the `DateTimeStatus` enumerated type. For more information, see the [SetStatus](#setstatus) member function.  
   
 ### Remarks  
  The time is set to the specified values. The date is set to date 0, meaning 30 December 1899.  
@@ -1053,15 +1053,15 @@ int SetTime(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nHour`|0 - 23|  
-|`nMin`|0 - 59|  
-|`nSec`|0 - 59|  
+|*nHour*|0 - 23|  
+|*nMin*|0 - 59|  
+|*nSec*|0 - 59|  
   
  If the time value specified by the parameters is not valid, the status of this object is set to invalid and the value of this object is not changed.  
   
  Here are some examples of time values:  
   
-|`nHour`|`nMin`|`nSec`|Value|  
+|*nHour*|*nMin*|*nSec*|Value|  
 |-------------|------------|------------|-----------|  
 |1|3|3|01:03:03|  
 |23|45|0|23:45:00|  

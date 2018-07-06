@@ -33,7 +33,7 @@ class CPoint : public tagPOINT
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPoint::Offset](#offset)|Adds values to the **x** and **y** members of the `CPoint`.|  
+|[CPoint::Offset](#offset)|Adds values to the `x` and `y` members of the `CPoint`.|  
   
 ### Public Operators  
   
@@ -77,20 +77,20 @@ CPoint(LPARAM dwPoint) throw();
 ```  
   
 ### Parameters  
- `initX`  
+ *initX*  
  Specifies the value of the `x` member of `CPoint`.  
   
- `initY`  
+ *initY*  
  Specifies the value of the `y` member of `CPoint`.  
   
- `initPt`  
+ *initPt*  
  [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` that specifies the values used to initialize `CPoint`.  
   
- `initSize`  
+ *initSize*  
  [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) that specifies the values used to initialize `CPoint`.  
   
- `dwPoint`  
- Sets the `x` member to the low-order word of `dwPoint` and the `y` member to the high-order word of `dwPoint`.  
+ *dwPoint*  
+ Sets the `x` member to the low-order word of *dwPoint* and the `y` member to the high-order word of *dwPoint*.  
   
 ### Remarks  
  If no arguments are given, `x` and `y` members are set to 0.  
@@ -123,7 +123,7 @@ ASSERT(ptFromDouble == ptMFCHere);
 ```  
   
 ##  <a name="offset"></a>  CPoint::Offset  
- Adds values to the **x** and **y** members of the `CPoint`.  
+ Adds values to the `x` and `y` members of the `CPoint`.  
   
 ```  
 void Offset(int xOffset, int yOffset) throw();
@@ -133,15 +133,15 @@ void Offset(SIZE size) throw();
   
 ### Parameters  
  *xOffset*  
- Specifies the amount to offset the **x** member of the `CPoint`.  
+ Specifies the amount to offset the `x` member of the `CPoint`.  
   
  *yOffset*  
- Specifies the amount to offset the **y** member of the `CPoint`.  
+ Specifies the amount to offset the `y` member of the `CPoint`.  
   
- `point`  
+ *point*  
  Specifies the amount ( [POINT](../../mfc/reference/point-structure1.md) or `CPoint`) to offset the `CPoint`.  
   
- `size`  
+ *size*  
  Specifies the amount ( [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](../../atl-mfc-shared/reference/csize-class.md)) to offset the `CPoint`.  
   
 ### Example  
@@ -155,7 +155,7 @@ BOOL operator==(POINT point) const throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object.  
   
 ### Return Value  
@@ -172,7 +172,7 @@ BOOL operator!=(POINT point) const throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object.  
   
 ### Return Value  
@@ -190,16 +190,16 @@ void operator+=(POINT point) throw();
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.  
   
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.  
   
 ### Remarks  
  The second overload adds a point to the `CPoint`.  
   
- In both cases, addition is done by adding the **x** (or **cx**) member of the right-hand operand to the **x** member of the `CPoint` and adding the **y** (or **cy**) member of the right-hand operand to the **y** member of the `CPoint`.  
+ In both cases, addition is done by adding the `x` (or `cx`) member of the right-hand operand to the `x` member of the `CPoint` and adding the `y` (or `cy`) member of the right-hand operand to the `y` member of the `CPoint`.  
   
  For example, adding `CPoint(5, -7)` to a variable which contains `CPoint(30, 40)` changes the variable to `CPoint(35, 33)`.  
   
@@ -215,16 +215,16 @@ void operator-=(POINT point) throw();
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.  
   
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.  
   
 ### Remarks  
  The second overload subtracts a point from the `CPoint`.  
   
- In both cases, subtraction is done by subtracting the **x** (or **cx**) member of the right-hand operand from the **x** member of the `CPoint` and subtracting the **y** (or **cy**) member of the right-hand operand from the **y** member of the `CPoint`.  
+ In both cases, subtraction is done by subtracting the `x` (or `cx`) member of the right-hand operand from the `x` member of the `CPoint` and subtracting the `y` (or `cy`) member of the right-hand operand from the `y` member of the `CPoint`.  
   
  For example, subtracting `CPoint(5, -7)` from a variable which contains `CPoint(30, 40)` changes the variable to `CPoint(25, 47)`.  
   
@@ -241,22 +241,22 @@ CRect operator+(const RECT* lpRect) const throw();
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.  
   
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.  
   
- `lpRect`  
+ *lpRect*  
  Contains a pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object.  
   
 ### Return Value  
- A `CPoint` that is offset by a size, a **CPoint** that is offset by a point, or a **CRect** offset by a point.  
+ A `CPoint` that is offset by a size, a `CPoint` that is offset by a point, or a `CRect` offset by a point.  
   
 ### Remarks  
  For example, using one of the first two overloads to offset the point `CPoint(25, -19)` by a point `CPoint(15, 5)` or size `CSize(15, 5)` returns the value `CPoint(40, -14)`.  
   
- Adding a rectangle to a point returns the rectangle after being offset by the **x** and **y** values specified in the point. For example, using the last overload to offset a rectangle `CRect(125, 219, 325, 419)` by a point `CPoint(25, -19)` returns `CRect(150, 200, 350, 400)`.  
+ Adding a rectangle to a point returns the rectangle after being offset by the `x` and `y` values specified in the point. For example, using the last overload to offset a rectangle `CRect(125, 219, 325, 419)` by a point `CPoint(25, -19)` returns `CRect(150, 200, 350, 400)`.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]  
@@ -272,13 +272,13 @@ CPoint operator-() const throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object.  
   
 ### Return Value  
@@ -291,7 +291,7 @@ CPoint operator-() const throw();
   
  Subtracting a `CSize` from `CPoint` does the same calculation as above but returns a `CPoint` object, not a `CSize` object. For example, using the second overload to find the difference between the point `CPoint(25, -19)` and the size `CSize(15, 5)` returns `CPoint(10, -24)`.  
   
- Subtracting a rectangle from a point returns the rectangle offset by the negatives of the **x** and **y** values specified in the point. For example, using the last overload to offset the rectangle `CRect(125, 200, 325, 400)` by the point `CPoint(25, -19)` returns `CRect(100, 219, 300, 419)`.  
+ Subtracting a rectangle from a point returns the rectangle offset by the negatives of the `x` and `y` values specified in the point. For example, using the last overload to offset the rectangle `CRect(125, 200, 325, 400)` by the point `CPoint(25, -19)` returns `CRect(100, 219, 300, 419)`.  
   
  Use the unary operator to negate a point. For example, using the unary operator with the point `CPoint(25, -19)` returns `CPoint(-25, 19)`.  
   

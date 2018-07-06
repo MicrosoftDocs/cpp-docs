@@ -71,10 +71,10 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  An existing `CFileTimeSpan` object.  
   
- `nSpan`  
+ *nSpan*  
  A period of time in milliseconds.  
   
 ### Remarks  
@@ -91,14 +91,14 @@ LONGLONG GetTimeSpan() const throw();
  Returns the time span in milliseconds.  
   
 ##  <a name="operator_-"></a>  CFileTimeSpan::operator -  
- Performs subtraction on a **CFileTimeSpan** object.  
+ Performs subtraction on a `CFileTimeSpan` object.  
   
 ```
 CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -112,11 +112,11 @@ bool operator!=(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CFileTimeSpan` object to be compared.  
   
 ### Return Value  
- Returns **true** if the item being compared is not equal to the `CFileTimeSpan` object; otherwise **false**.  
+ Returns TRUE if the item being compared is not equal to the `CFileTimeSpan` object; otherwise FALSE.  
   
 ##  <a name="operator_add"></a>  CFileTimeSpan::operator +  
  Performs addition on a `CFileTimeSpan` object.  
@@ -126,7 +126,7 @@ CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -140,7 +140,7 @@ CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -154,11 +154,11 @@ bool operator<(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CFileTimeSpan` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is less (that is, represents a shorter time period) than the second, otherwise **false**.  
+ Returns TRUE if the first object is less (that is, represents a shorter time period) than the second, otherwise FALSE.  
   
 ##  <a name="operator_lt_eq"></a>  CFileTimeSpan::operator &lt;=  
  Compares two `CFileTimeSpan` objects to determine equality or the lesser.  
@@ -168,11 +168,11 @@ bool operator<=(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CFileTimeSpan` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is less than (that is, represents a shorter time period) or equal to the second, otherwise **false**.  
+ Returns TRUE if the first object is less than (that is, represents a shorter time period) or equal to the second, otherwise FALSE.  
   
 ##  <a name="operator_eq"></a>  CFileTimeSpan::operator =  
  The assignment operator.  
@@ -182,7 +182,7 @@ CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -196,7 +196,7 @@ CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -210,11 +210,11 @@ bool operator==(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CFileTimeSpan` object to be compared.  
   
 ### Return Value  
- Returns **true** if the objects are equal, otherwise **false**.  
+ Returns TRUE if the objects are equal, otherwise FALSE.  
   
 ##  <a name="operator_gt"></a>  CFileTimeSpan::operator &gt;  
  Compares two `CFileTimeSpan` objects to determine the larger.  
@@ -224,11 +224,11 @@ bool operator>(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CFileTimeSpan` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is greater than (that is, represents a longer time period) than the second, otherwise **false**.  
+ Returns TRUE if the first object is greater than (that is, represents a longer time period) than the second, otherwise FALSE.  
   
 ##  <a name="operator_gt_eq"></a>  CFileTimeSpan::operator &gt;=  
  Compares two `CFileTimeSpan` objects to determine equality or the larger.  
@@ -238,11 +238,11 @@ bool operator>=(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CFileTimeSpan` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is greater than (that is, represents a longer time period) or equal to the second, otherwise **false**.  
+ Returns TRUE if the first object is greater than (that is, represents a longer time period) or equal to the second, otherwise FALSE.  
   
 ##  <a name="settimespan"></a>  CFileTimeSpan::SetTimeSpan  
  Call this method to set the time span of the `CFileTimeSpan` object.  
@@ -252,7 +252,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 ```  
   
 ### Parameters  
- `nSpan`  
+ *nSpan*  
  The new value for the time span in milliseconds.  
   
 ## See Also  

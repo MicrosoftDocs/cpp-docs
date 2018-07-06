@@ -47,10 +47,10 @@ struct CStringData
 ## Remarks  
  This class should only be used by developers implementing custom string managers. For more information on custom string managers, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)  
   
- This class encapsulates various types of information and data associated with a higher string object, such as [CStringT](../../atl-mfc-shared/reference/cstringt-class.md), [CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md), or [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md) objects. Every higher string object contains a pointer to its associated `CStringData` object, allowing multiple string objects to point to the same string data object. This relationship is represented by the reference count ( `nRefs`) of the `CStringData` object.  
+ This class encapsulates various types of information and data associated with a higher string object, such as [CStringT](../../atl-mfc-shared/reference/cstringt-class.md), [CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md), or [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md) objects. Every higher string object contains a pointer to its associated `CStringData` object, allowing multiple string objects to point to the same string data object. This relationship is represented by the reference count (`nRefs`) of the `CStringData` object.  
   
 > [!NOTE]
->  In certain cases, a string type (such as **CFixedString**) will not share a string data object with more than one higher string object. For more information on this, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
+>  In certain cases, a string type (such as `CFixedString`) will not share a string data object with more than one higher string object. For more information on this, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
   
  This data is composed of:  
   
@@ -107,7 +107,7 @@ bool IsLocked() const throw();
 ```  
   
 ### Return Value  
- Returns **true** if the buffer is locked; otherwise **false**.  
+ Returns TRUE if the buffer is locked; otherwise FALSE.  
   
 ### Remarks  
  Call this function to determine if the character buffer of a string object is currently locked.  
@@ -120,7 +120,7 @@ bool IsShared() const throw();
 ```  
   
 ### Return Value  
- Returns **true** if the buffer is shared; otherwise **false**.  
+ Returns TRUE if the buffer is shared; otherwise FALSE.  
   
 ### Remarks  
  Call this function to determine if the character buffer of a string data object is currently shared among multiple string objects.  

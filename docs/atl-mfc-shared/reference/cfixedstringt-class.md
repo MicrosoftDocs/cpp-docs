@@ -23,7 +23,7 @@ class CFixedStringT : private CFixedStringMgr, public StringType
 ```  
   
 #### Parameters  
- `StringType`  
+ *StringType*  
  Used as the base class for the fixed string object and can be any `CStringT`-based type. Some examples include `CString`, `CStringA`, and `CStringW`.  
   
  *t_nChars*  
@@ -46,7 +46,7 @@ class CFixedStringT : private CFixedStringMgr, public StringType
 ## Remarks  
  This class is an example of a custom string class based on `CStringT`. Although quite similar, the two classes differ in implementation. The major differences between `CFixedStringT` and `CStringT` are:  
   
--   The initial character buffer is allocated as part of the object and has size *t_nChars*. This allows the **CFixedString** object to occupy a contiguous memory chunk for performance purposes. However, if the contents of a `CFixedStringT` object grows beyond *t_nChars*, the buffer is allocated dynamically.  
+-   The initial character buffer is allocated as part of the object and has size *t_nChars*. This allows the `CFixedString` object to occupy a contiguous memory chunk for performance purposes. However, if the contents of a `CFixedStringT` object grows beyond *t_nChars*, the buffer is allocated dynamically.  
   
 -   The character buffer for a `CFixedStringT` object is always the same length ( *t_nChars*). There is no limitation on buffer size for `CStringT` objects.  
   
@@ -80,13 +80,13 @@ explicit CFixedStringT(const unsigned char* psz);
 ```  
   
 ### Parameters  
- `psz`  
+ *psz*  
  A null-terminated string to be copied into this `CFixedStringT` object.  
   
- `str`  
+ *str*  
  An existing `CFixedStringT` object to be copied into this `CFixedStringT` object.  
   
- `pStringMgr`  
+ *pStringMgr*  
  A pointer to the memory manager of the `CFixedStringT` object. For more information on `IAtlStringMgr` and memory management for `CFixedStringT`, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
   
 ### Remarks  
@@ -105,10 +105,10 @@ CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
 ```  
   
 ### Parameters  
- `str`  
+ *str*  
  A null-terminated string to be copied into this `CFixedStringT` object.  
   
- `psz`  
+ *psz*  
  An existing `CFixedStringT` to be copied into this `CFixedStringT` object.  
   
 ### Remarks  
