@@ -42,7 +42,7 @@ class CRect : public tagRECT
 |[CRect::InflateRect](#inflaterect)|Increases the width and height of `CRect`.|  
 |[CRect::IntersectRect](#intersectrect)|Sets `CRect` equal to the intersection of two rectangles.|  
 |[CRect::IsRectEmpty](#isrectempty)|Determines whether `CRect` is empty. `CRect` is empty if the width and/or height are 0.|  
-|[CRect::IsRectNull](#isrectnull)|Determines whether the **top**, **bottom**, **left**, and **right** member variables are all equal to 0.|  
+|[CRect::IsRectNull](#isrectnull)|Determines whether the `top`, `bottom`, `left`, and `right` member variables are all equal to 0.|  
 |[CRect::MoveToX](#movetox)|Moves `CRect` to the specified x-coordinate.|  
 |[CRect::MoveToXY](#movetoxy)|Moves `CRect` to the specified x- and y-coordinates.|  
 |[CRect::MoveToY](#movetoy)|Moves `CRect` to the specified y-coordinate.|  
@@ -61,7 +61,7 @@ class CRect : public tagRECT
 |Name|Description|  
 |----------|-----------------|  
 |[CRect::operator -](#operator_-)|Subtracts the given offsets from `CRect` or deflates `CRect` and returns the resulting `CRect`.|  
-|[CRect::operator LPCRECT](#operator_lpcrect)|Converts a `CRect` to an **LPCRECT**.|  
+|[CRect::operator LPCRECT](#operator_lpcrect)|Converts a `CRect` to an `LPCRECT`.|  
 |[CRect::operator LPRECT](#operator_lprect)|Converts a `CRect` to an `LPRECT`.|  
 |[CRect::operator !=](#operator_neq)|Determines whether `CRect` is not equal to a rectangle.|  
 |[CRect::operator &amp;](#operator_amp)|Creates the intersection of `CRect` and a rectangle and returns the resulting `CRect`.|  
@@ -77,16 +77,16 @@ class CRect : public tagRECT
 ## Remarks  
  `CRect` also includes member functions to manipulate `CRect` objects and Windows `RECT` structures.  
   
- A `CRect` object can be passed as a function parameter wherever a `RECT` structure, **LPCRECT**, or `LPRECT` can be passed.  
+ A `CRect` object can be passed as a function parameter wherever a `RECT` structure, `LPCRECT`, or `LPRECT` can be passed.  
   
 > [!NOTE]
->  This class is derived from the **tagRECT** structure. (The name **tagRECT** is a less-commonly-used name for the `RECT` structure.) This means that the data members (**left**, **top**, **right**, and **bottom**) of the `RECT` structure are accessible data members of `CRect`.  
+>  This class is derived from the `tagRECT` structure. (The name `tagRECT` is a less-commonly-used name for the `RECT` structure.) This means that the data members (`left`, `top`, `right`, and `bottom`) of the `RECT` structure are accessible data members of `CRect`.  
   
  A `CRect` contains member variables that define the top-left and bottom-right points of a rectangle.  
   
  When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.  
   
- Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+ Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as `Height` and `Size` will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
 
   
  When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](../../mfc/reference/rect-structure1.md) structure or a `CRect` object.  
@@ -207,7 +207,7 @@ void CopyRect(LPCRECT lpSrcRect) throw();
 ```  
   
 ### Parameters  
- `lpSrcRect`  
+ *lpSrcRect*  
  Points to the [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that is to be copied.  
   
 ### Example  
@@ -260,13 +260,13 @@ CRect(POINT topLeft, POINT bottomRight) throw();
  *srcRect*  
  Refers to the [RECT](../../mfc/reference/rect-structure1.md) structure with the coordinates for `CRect`.  
   
- `lpSrcRect`  
+ *lpSrcRect*  
  Points to the `RECT` structure with the coordinates for `CRect`.  
   
- `point`  
+ *point*  
  Specifies the origin point for the rectangle to be constructed. Corresponds to the top-left corner.  
   
- `size`  
+ *size*  
  Specifies the displacement from the top-left corner to the bottom-right corner of the rectangle to be constructed.  
   
  *topLeft*  
@@ -276,9 +276,9 @@ CRect(POINT topLeft, POINT bottomRight) throw();
  Specifies the bottom-right position of `CRect`.  
   
 ### Remarks  
- If no arguments are given, **left**, **top**, **right**, and **bottom** members are not initialized.  
+ If no arguments are given, `left`, `top`, `right`, and `bottom` members are not initialized.  
   
- The `CRect`(**const RECT&**) and `CRect`(**LPCRECT**) constructors perform a [CopyRect](#copyrect). The other constructors initialize the member variables of the object directly.  
+ The `CRect`(`const RECT&`) and `CRect`(`LPCRECT`) constructors perform a [CopyRect](#copyrect). The other constructors initialize the member variables of the object directly.  
   
 ### Example  
 ```cpp  
@@ -335,10 +335,10 @@ void DeflateRect(int l, int t, int r, int b) throw();
  *y*  
  Specifies the number of units to deflate the top and bottom of `CRect`.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
   
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` that specifies the number of units to deflate each side.  
   
  *l*  
@@ -380,7 +380,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the upper-left and lower-right corner coordinates of a rectangle.  
   
 ### Return Value  
@@ -454,10 +454,10 @@ void InflateRect(int l, int t, int r,  int b) throw();
  *y*  
  Specifies the number of units to inflate the top and bottom of `CRect`.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to inflate `CRect`. The `cx` value specifies the number of units to inflate the left and right sides and the `cy` value specifies the number of units to inflate the top and bottom.  
   
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` that specifies the number of units to inflate each side.  
   
  *l*  
@@ -494,10 +494,10 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ```  
   
 ### Parameters  
- `lpRect1`  
+ *lpRect1*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains a source rectangle.  
   
- `lpRect2`  
+ *lpRect2*  
  Points to a `RECT` structure or `CRect` object that contains a source rectangle.  
   
 ### Return Value  
@@ -628,8 +628,8 @@ void MoveToXY(POINT point) throw();
  *y*  
  The absolute y-coordinate for the upper-left corner of the rectangle.  
   
- `point`  
- A **POINT** structure specifying the absolute upper-left corner of the rectangle.  
+ *point*  
+ A `POINT` structure specifying the absolute upper-left corner of the rectangle.  
   
 ### Example  
 ```cpp  
@@ -710,10 +710,10 @@ void OffsetRect(SIZE size) throw();
  *y*  
  Specifies the amount to move up or down. It must be negative to move up.  
   
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object specifying both dimensions by which to move.  
   
- `size`  
+ *size*  
  Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object specifying both dimensions by which to move.  
   
 ### Remarks  
@@ -741,7 +741,7 @@ operator LPCRECT() const throw();
 ```  
   
 ### Remarks  
- When you use this function, you don't need the address-of (**&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an **LPCRECT**.  
+ When you use this function, you don't need the address-of (**&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an `LPCRECT`.  
   
 
 ##  <a name="operator_lprect"></a>  CRect::operator LPRECT  
@@ -791,7 +791,7 @@ BOOL operator==(const RECT& rect) const throw();
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Refers to a source rectangle. Can be a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Return Value  
@@ -826,14 +826,14 @@ ASSERT(rect1 == rect2);
 
   
 ##  <a name="operator_neq"></a>  CRect::operator !=  
- Determines whether `rect` is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
+ Determines whether *rect* is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
   
 ```  
 BOOL operator!=(const RECT& rect) const throw();
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Refers to a source rectangle. Can be a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Return Value  
@@ -876,13 +876,13 @@ void operator+=(LPCRECT lpRect) throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the rectangle.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to inflate each side of `CRect`.  
   
 ### Remarks  
@@ -915,13 +915,13 @@ void operator-=(LPCRECT lpRect) throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the rectangle.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to deflate each side of `CRect`.  
   
 ### Remarks  
@@ -952,7 +952,7 @@ void operator&=(const RECT& rect) throw();
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Contains a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Remarks  
@@ -972,7 +972,7 @@ void operator|=(const RECT& rect) throw();
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Contains a `CRect` or [RECT](../../mfc/reference/rect-structure1.md).  
   
 ### Remarks  
@@ -1007,13 +1007,13 @@ CRect operator+(SIZE size) const throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the return value.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the return value.  
   
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to inflate each side of the return value.  
   
 ### Return Value  
@@ -1046,13 +1046,13 @@ CRect operator-(LPCRECT lpRect) const throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  A [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object that specifies the number of units to move the return value.  
   
- `size`  
+ *size*  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that specifies the number of units to move the return value.  
   
- `lpRect`  
+ *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to deflate each side of the return value.  
   
 ### Return Value  
@@ -1153,7 +1153,7 @@ BOOL PtInRect(POINT point) const throw();
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object.  
   
 ### Return Value  
@@ -1200,16 +1200,16 @@ void SetRect(int x1, int y1, int x2, int y2) throw();
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the x-coordinate of the upper-left corner.  
   
- `y1`  
+ *y1*  
  Specifies the y-coordinate of the upper-left corner.  
   
- `x2`  
+ *x2*  
  Specifies the x-coordinate of the lower-right corner.  
   
- `y2`  
+ *y2*  
  Specifies the y-coordinate of the lower-right corner.  
   
 ### Example  
@@ -1264,28 +1264,28 @@ CSize Size() const throw();
 ```
 
 ##  <a name="subtractrect"></a>  CRect::SubtractRect  
- Makes the dimensions of the **CRect** equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.  
+ Makes the dimensions of the `CRect` equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.  
   
 ```  
 BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 ```  
   
 ### Parameters  
- `lpRectSrc1`  
+ *lpRectSrc1*  
  Points to the [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object from which a rectangle is to be subtracted.  
   
- `lpRectSrc2`  
- Points to the `RECT` structure or `CRect` object that is to be subtracted from the rectangle pointed to by the `lpRectSrc1` parameter.  
+ *lpRectSrc2*  
+ Points to the `RECT` structure or `CRect` object that is to be subtracted from the rectangle pointed to by the *lpRectSrc1* parameter.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- The subtraction is the smallest rectangle that contains all of the points in `lpRectScr1` that are not in the intersection of `lpRectScr1` and *lpRectScr2*.  
+ The subtraction is the smallest rectangle that contains all of the points in *lpRectScr1* that are not in the intersection of *lpRectScr1* and *lpRectScr2*.  
   
- The rectangle specified by `lpRectSrc1` will be unchanged if the rectangle specified by `lpRectSrc2` doesn't completely overlap the rectangle specified by *lpRectSrc1* in at least one of the x- or y-directions.  
+ The rectangle specified by *lpRectSrc1* will be unchanged if the rectangle specified by *lpRectSrc2* doesn't completely overlap the rectangle specified by *lpRectSrc1* in at least one of the x- or y-directions.  
   
- For example, if `lpRectSrc1` were (10,10, 100,100) and `lpRectSrc2` were (50,50, 150,150), the rectangle pointed to by `lpRectSrc1` would be unchanged when the function returned. If `lpRectSrc1` were (10,10, 100,100) and `lpRectSrc2` were (50,10, 150,150), however, the rectangle pointed to by `lpRectSrc1` would contain the coordinates (10,10, 50,100) when the function returned.  
+ For example, if *lpRectSrc1* were (10,10, 100,100) and *lpRectSrc2* were (50,50, 150,150), the rectangle pointed to by *lpRectSrc1* would be unchanged when the function returned. If *lpRectSrc1* were (10,10, 100,100) and *lpRectSrc2* were (50,10, 150,150), however, the rectangle pointed to by *lpRectSrc1* would contain the coordinates (10,10, 50,100) when the function returned.  
   
  `SubtractRect` is not the same as [operator -](#operator_-) nor [operator -=](#operator_-_eq). Neither of these operators ever calls `SubtractRect`.  
   
@@ -1350,10 +1350,10 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ```  
   
 ### Parameters  
- `lpRect1`  
+ *lpRect1*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) or `CRect` that contains a source rectangle.  
   
- `lpRect2`  
+ *lpRect2*  
  Points to a `RECT` or `CRect` that contains a source rectangle.  
   
 ### Return Value  
