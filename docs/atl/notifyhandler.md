@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # NotifyHandler
-The name of the function identified by the third parameter of the `NOTIFY_HANDLER` macro in your message map.  
+The name of the function identified by the third parameter of the NOTIFY_HANDLER macro in your message map.  
   
 ## Syntax  
   
@@ -28,14 +28,14 @@ The name of the function identified by the third parameter of the `NOTIFY_HANDLE
 ```  
   
 #### Parameters  
- `idCtrl`  
+ *idCtrl*  
  The identifier of the control sending the message.  
   
  *pnmh*  
- Address of an [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the **NMHDR** structure as its first member.  
+ Address of an [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.  
   
- `bHandled`  
- The message map sets `bHandled` to **TRUE** before *NotifyHandler* is called. If *NotifyHandler* does not fully handle the message, it should set `bHandled` to **FALSE** to indicate the message needs further processing.  
+ *bHandled*  
+ The message map sets *bHandled* to TRUE before *NotifyHandler* is called. If *NotifyHandler* does not fully handle the message, it should set *bHandled* to **FALSE** to indicate the message needs further processing.  
   
 ## Return Value  
  The result of message processing. 0 if successful.  

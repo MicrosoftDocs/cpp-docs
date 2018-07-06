@@ -23,7 +23,7 @@ class CDefaultHashTraits
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  
@@ -50,7 +50,7 @@ static ULONG Hash(const T& element) throw();
 ```  
   
 ### Parameters  
- `element`  
+ *element*  
  The element.  
   
 ### Return Value  

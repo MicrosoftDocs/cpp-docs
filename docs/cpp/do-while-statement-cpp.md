@@ -35,7 +35,7 @@ while ( expression ) ;
 ## Example  
  The following sample demonstrates the `do-while` statement:  
   
-```  
+```cpp 
 // do_while_statement.cpp  
 #include <stdio.h>  
 int main()  

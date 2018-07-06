@@ -1,7 +1,7 @@
 ---
 title: "friend (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/02/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 f1_keywords: ["friend_cpp"]
@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # friend (C++)
-In some circumstances, it is more convenient to grant member-level access to functions that are not members of a class or to all members in a separate class. Only the class implementer can declare who its friends are. A function or class cannot declare itself as a friend of any class. In a class definition, use the `friend` keyword and the name of a non-member function or other class to grant it access to the private and protected members of your class.         In a template definition, a type parameter can be declared as a friend.  
+In some circumstances, it is more convenient to grant member-level access to functions that are not members of a class or to all members in a separate class. Only the class implementer can declare who its friends are. A function or class cannot declare itself as a friend of any class. In a class definition, use the `friend` keyword and the name of a non-member function or other class to grant it access to the private and protected members of your class. In a template definition, a type parameter can be declared as a friend.  
   
 ## Syntax  
   
@@ -25,7 +25,7 @@ friend F;
 ## Friend declarations  
  If you declare a friend function that was not previously declared, that function is exported to the enclosing nonclass scope.  
   
- Functions declared in a friend declaration are treated as if they had been declared using the `extern` keyword. (For more information about `extern`, see [Static Storage-Class Specifiers](http://msdn.microsoft.com/en-us/3ba9289a-a412-4a17-b319-ceb2c087df48).)  
+ Functions declared in a friend declaration are treated as if they had been declared using the `extern` keyword. For more information,  see [extern](extern-cpp.md).  
   
  Although functions with global scope can be declared as friends prior to their prototypes, member functions cannot be declared as friends before the appearance of their complete class declaration. The following code shows why this fails:  
   

@@ -48,7 +48,7 @@ statements
 ## Example  
  Notice that this example uses templates, which is not advised.  
   
-```  
+```cpp 
 // the__if_exists_statement.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -107,7 +107,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 In X<T>::Dump()  
 In A::Dump()  
 In X<T>::Dump()  

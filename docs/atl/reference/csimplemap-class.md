@@ -23,13 +23,13 @@ class CSimpleMap
 ```  
   
 #### Parameters  
- `TKey`  
+ *TKey*  
  The key element type.  
   
- `TVal`  
+ *TVal*  
  The value element type.  
   
- `TEqual`  
+ *TEqual*  
  A trait object, defining the equality test for elements of type `T`.  
   
 ## Members  
@@ -89,7 +89,7 @@ BOOL Add(const TKey& key, const TVal& val);
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key.  
   
  *val*  
@@ -143,7 +143,7 @@ int FindKey(const TKey& key) const;
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key to search for.  
   
 ### Return Value  
@@ -171,14 +171,14 @@ TKey& GetKeyAt(int nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the key to return.  
   
 ### Return Value  
- Returns the key referenced by `nIndex`.  
+ Returns the key referenced by *nIndex*.  
   
 ### Remarks  
- The index passed by `nIndex` must be valid for the return value to be meaningful.  
+ The index passed by *nIndex* must be valid for the return value to be meaningful.  
   
 ##  <a name="getsize"></a>  CSimpleMap::GetSize  
  Returns the number of entries in the mapping array.  
@@ -198,14 +198,14 @@ TVal& GetValueAt(int nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the value to return.  
   
 ### Return Value  
- Returns the value referenced by `nIndex`.  
+ Returns the value referenced by *nIndex*.  
   
 ### Remarks  
- The index passed by `nIndex` must be valid for the return value to be meaningful.  
+ The index passed by *nIndex* must be valid for the return value to be meaningful.  
   
 ##  <a name="lookup"></a>  CSimpleMap::Lookup  
  Returns the value associated with the given key.  
@@ -215,7 +215,7 @@ TVal Lookup(const TKey& key) const;
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key.  
   
 ### Return Value  
@@ -229,7 +229,7 @@ BOOL Remove(const TKey& key);
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key.  
   
 ### Return Value  
@@ -253,7 +253,7 @@ BOOL RemoveAt(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the key and associated value to remove.  
   
 ### Return Value  
@@ -281,7 +281,7 @@ BOOL SetAt(const TKey& key, const TVal& val);
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key.  
   
  *val*  
@@ -301,10 +301,10 @@ BOOL SetAtIndex(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index, referencing the key and value pairing to change.  
   
- `key`  
+ *key*  
  The new key.  
   
  *val*  
@@ -314,7 +314,7 @@ BOOL SetAtIndex(
  Returns TRUE if successful, FALSE if the index was not valid.  
   
 ### Remarks  
- Updates both the key and value pointed to by `nIndex`.  
+ Updates both the key and value pointed to by *nIndex*.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

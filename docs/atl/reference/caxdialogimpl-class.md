@@ -26,11 +26,11 @@ class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `CAxDialogImpl`.  
   
  *TBase*  
- The base window class for **CDialogImplBaseT**.  
+ The base window class for `CDialogImplBaseT`.  
   
 ## Members  
   
@@ -92,7 +92,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 ```  
   
 ### Parameters  
- `bAdvise`  
+ *bAdvise*  
  Set to true if all sink entries are to be advised; false if all sink entries are to be unadvised.  
   
 ### Return Value  
@@ -107,13 +107,13 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  [in] The handle to the owner window.  
   
- `dwInitParam`  
- [in] Specifies the value to pass to the dialog box in the `lParam` parameter of the **WM_INITDIALOG** message.  
+ *dwInitParam*  
+ [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
- **RECT&**  
+ *RECT&*  
  This parameter is not used. This parameter is passed in by `CComControl`.  
   
 ### Return Value  
@@ -147,14 +147,14 @@ INT_PTR DoModal(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.  
   
- `dwInitParam`  
- [in] Specifies the value to pass to the dialog box in the `lParam` parameter of the **WM_INITDIALOG** message.  
+ *dwInitParam*  
+ [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
- If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](#enddialog); otherwise, -1.  
+ If successful, the value of the *nRetCode* parameter specified in the call to [EndDialog](#enddialog); otherwise, -1.  
   
 ### Remarks  
  This dialog box is automatically attached to the `CAxDialogImpl` object.  
@@ -169,14 +169,14 @@ BOOL EndDialog(int nRetCode);
 ```  
   
 ### Parameters  
- `nRetCode`  
+ *nRetCode*  
  [in] The value to be returned by [DoModal](#domodal).  
   
 ### Return Value  
  TRUE if the dialog box is destroyed; otherwise, FALSE.  
   
 ### Remarks  
- `EndDialog` must be called through the dialog box procedure. After the dialog box is destroyed, Windows uses the value of `nRetCode` as the return value for `DoModal`, which created the dialog box.  
+ `EndDialog` must be called through the dialog box procedure. After the dialog box is destroyed, Windows uses the value of *nRetCode* as the return value for `DoModal`, which created the dialog box.  
   
 > [!NOTE]
 >  Do not call `EndDialog` to destroy a modeless dialog box. Call [DestroyWindow](#destroywindow) instead.  
@@ -212,7 +212,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ```  
   
 ### Parameters  
- `pMsg`  
+ *pMsg*  
  Pointer to a [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) structure that contains the message to be checked.  
   
 ### Return Value  

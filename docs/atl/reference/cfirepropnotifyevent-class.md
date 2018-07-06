@@ -36,7 +36,7 @@ class CFirePropNotifyEvent
 ## Remarks  
  `CFirePropNotifyEvent` has two methods that notify the container's sink that a control property has changed or is about to change.  
   
- If the class implementing your control is derived from `IPropertyNotifySink`, the `CFirePropNotifyEvent` methods are invoked when you call `FireOnRequestEdit` or `FireOnChanged`. If your control class is not derived from `IPropertyNotifySink`, calls to these functions return `S_OK`.  
+ If the class implementing your control is derived from `IPropertyNotifySink`, the `CFirePropNotifyEvent` methods are invoked when you call `FireOnRequestEdit` or `FireOnChanged`. If your control class is not derived from `IPropertyNotifySink`, calls to these functions return S_OK.  
   
  For more information about creating controls, see the [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md).  
   
@@ -52,13 +52,13 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
   
 ### Parameters  
  *pUnk*  
- [in] Pointer to the **IUnknown** of the object sending the notification.  
+ [in] Pointer to the `IUnknown` of the object sending the notification.  
   
  *dispID*  
  [in] Identifier of the property that has changed.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  This function is safe to call even if your control does not support connection points.  
@@ -72,13 +72,13 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
   
 ### Parameters  
  *pUnk*  
- [in] Pointer to the **IUnknown** of the object sending the notification.  
+ [in] Pointer to the `IUnknown` of the object sending the notification.  
   
  *dispID*  
  [in] Identifier of the property about to change.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  This function is safe to call even if your control does not support connection points.  

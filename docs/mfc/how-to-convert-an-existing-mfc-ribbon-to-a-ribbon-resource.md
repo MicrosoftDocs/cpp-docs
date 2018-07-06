@@ -18,7 +18,7 @@ Ribbon resources are easier to visualize, modify, and maintain than manually cod
   
 ### To convert an MFC ribbon to a ribbon resource  
   
-1.  In Visual Studio, in an existing MFC project, open the source file where the CMFCRibbonBar object is initialized. Typically, the file is mainfrm.cpp. Add the following code after the initialization code for the ribbon.  
+1.  In Visual Studio, in an existing MFC project, open the source file where the `CMFCRibbonBar` object is initialized. Typically, the file is mainfrm.cpp. Add the following code after the initialization code for the ribbon.  
   
  ```  
     m_wndRibbonBar.SaveToXMLFile("RibbonOutput.xml");

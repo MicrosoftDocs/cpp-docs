@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Properties
-Stock properties differ from custom properties in that they are already implemented by the class `COleControl`. `COleControl` contains predefined member functions that support common properties for the control. Some common properties include the control's caption and the foreground and background colors. For information on other stock properties, see [Stock Properties Supported by the Add Property Wizard](#_core_stock_properties_supported_by_classwizard) later in this article. The dispatch map entries for stock properties are always prefixed by **DISP_STOCKPROP**.  
+Stock properties differ from custom properties in that they are already implemented by the class `COleControl`. `COleControl` contains predefined member functions that support common properties for the control. Some common properties include the control's caption and the foreground and background colors. For information on other stock properties, see [Stock Properties Supported by the Add Property Wizard](#_core_stock_properties_supported_by_classwizard) later in this article. The dispatch map entries for stock properties are always prefixed by DISP_STOCKPROP.  
   
  This article describes how to add a stock property (in this case, Caption) to an ActiveX control using the Add Property Wizard and explains the resulting code modifications. Topics include:  
   
@@ -66,16 +66,16 @@ Stock properties differ from custom properties in that they are already implemen
   
 |Property|Dispatch map entry|How to access value|  
 |--------------|------------------------|-------------------------|  
-|**Appearance**|**DISP_STOCKPROP_APPEARANCE( )**|Value accessible as **m_sAppearance**.|  
-|`BackColor`|**DISP_STOCKPROP_BACKCOLOR( )**|Value accessible by calling `GetBackColor`.|  
-|`BorderStyle`|**DISP_STOCKPROP_BORDERSTYLE( )**|Value accessible as **m_sBorderStyle**.|  
-|**Caption**|**DISP_STOCKPROP_CAPTION( )**|Value accessible by calling `InternalGetText`.|  
-|**Enabled**|**DISP_STOCKPROP_ENABLED( )**|Value accessible as **m_bEnabled**.|  
-|**Font**|**DISP_STOCKPROP_FONT( )**|See the article [MFC ActiveX Controls: Using Fonts](../mfc/mfc-activex-controls-using-fonts.md) for usage.|  
-|`ForeColor`|**DISP_STOCKPROP_FORECOLOR( )**|Value accessible by calling `GetForeColor`.|  
-|**hWnd**|**DISP_STOCKPROP_HWND( )**|Value accessible as `m_hWnd`.|  
-|**Text**|**DISP_STOCKPROP_TEXT( )**|Value accessible by calling `InternalGetText`. This property is the same as **Caption**, except for the property name.|  
-|**ReadyState**|**DISP_STOCKPROP_READYSTATE()**|Value accessible as m_lReadyState or `GetReadyState`|  
+|`Appearance`|DISP_STOCKPROP_APPEARANCE( )|Value accessible as `m_sAppearance`.|  
+|`BackColor`|DISP_STOCKPROP_BACKCOLOR( )|Value accessible by calling `GetBackColor`.|  
+|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE( )|Value accessible as `m_sBorderStyle`.|  
+|`Caption`|DISP_STOCKPROP_CAPTION( )|Value accessible by calling `InternalGetText`.|  
+|`Enabled`|DISP_STOCKPROP_ENABLED( )|Value accessible as `m_bEnabled`.|  
+|`Font`|DISP_STOCKPROP_FONT( )|See the article [MFC ActiveX Controls: Using Fonts](../mfc/mfc-activex-controls-using-fonts.md) for usage.|  
+|`ForeColor`|DISP_STOCKPROP_FORECOLOR( )|Value accessible by calling `GetForeColor`.|  
+|`hWnd`|DISP_STOCKPROP_HWND( )|Value accessible as `m_hWnd`.|  
+|`Text`|DISP_STOCKPROP_TEXT( )|Value accessible by calling `InternalGetText`. This property is the same as `Caption`, except for the property name.|  
+|`ReadyState`|DISP_STOCKPROP_READYSTATE()|Value accessible as `m_lReadyState` or `GetReadyState`|  
   
 ##  <a name="_core_stock_properties_and_notification"></a> Stock Properties and Notification  
  Most stock properties have notification functions that can be overridden. For example, whenever the `BackColor` property is changed, the `OnBackColorChanged` function (a member function of the control class) is called. The default implementation (in `COleControl`) calls `InvalidateControl`. Override this function if you want to take additional actions in response to this situation.  

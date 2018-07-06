@@ -69,16 +69,16 @@ CAccelerateDecelerateTransition(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `finalValue`  
+ *finalValue*  
  The value of the animation variable at the end of the transition.  
   
- `accelerationRatio`  
+ *accelerationRatio*  
  The ratio of the time spent accelerating to the duration.  
   
- `decelerationRatio`  
+ *decelerationRatio*  
  The ratio of the time spent decelerating to the duration.  
   
 ##  <a name="create"></a>  CAccelerateDecelerateTransition::Create  
@@ -91,7 +91,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
-`pLibrary`  
+*pLibrary*  
  A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
   
 ### Return Value  

@@ -37,7 +37,7 @@ These macros define useful type library and registry facilities.
 ```  
   
 ### Remarks  
- When you define **ATL_STATIC_REGISTRY**, you should use the following code:  
+ When you define ATL_STATIC_REGISTRY, you should use the following code:  
   
  [!code-cpp[NVC_ATL_EventHandlingSample#5](../../atl/codesnippet/cpp/registry-macros_1.cpp)]  
   
@@ -53,13 +53,13 @@ DECLARE_LIBID( libid )
  The GUID of the type library.  
   
 ### Remarks  
- Use `DECLARE_LIBID` in a `CAtlModuleT`-derived class.  
+ Use DECLARE_LIBID in a `CAtlModuleT`-derived class.  
   
 ### Example  
  Non-attributed wizard-generated ATL projects will have a sample of using this macro.  
   
 ##  <a name="declare_no_registry"></a>  DECLARE_NO_REGISTRY  
- Use `DECLARE_NO_REGISTRY` if you want to avoid any default ATL registration for the class in which this macro appears.  
+ Use DECLARE_NO_REGISTRY if you want to avoid any default ATL registration for the class in which this macro appears.  
   
 ```
 DECLARE_NO_REGISTRY()
@@ -78,25 +78,25 @@ DECLARE_REGISTRY(
 ```  
   
 ### Parameters  
- `class`  
+ *class*  
  [in] Included for backward compatibility.  
   
- `pid`  
- [in] An `LPCTSTR` that is a version-specific program identifier.  
+ *pid*  
+ [in] An LPCTSTR that is a version-specific program identifier.  
   
  *vpid*  
- [in] An `LPCTSTR` that is a version-independent program identifier.  
+ [in] An LPCTSTR that is a version-independent program identifier.  
   
  *nid*  
- [in] A **UINT** that is an index of the resource string in the registry to use as the description of the program.  
+ [in] A UINT that is an index of the resource string in the registry to use as the description of the program.  
   
- `flags`  
- [in] A `DWORD` containing the program's threading model in the registry. Must be one of the following values: **THREADFLAGS_APARTMENT**, **THREADFLAGS_BOTH**, or **AUTPRXFLAG**.  
+ *flags*  
+ [in] A DWORD containing the program's threading model in the registry. Must be one of the following values: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, or AUTPRXFLAG.  
   
 ### Remarks  
  The standard registration consists of the CLSID, program ID, version-independent program ID, description string, and thread model.  
   
- When you create an object or control using the ATL Add Class Wizard, the wizard automatically implements script-based registry support and adds the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro to your files. If you do not want script-based registry support, you need to replace this macro with `DECLARE_REGISTRY`. `DECLARE_REGISTRY` only inserts the five basic keys described above into the registry. You must manually write code to insert other keys into the registry.  
+ When you create an object or control using the ATL Add Class Wizard, the wizard automatically implements script-based registry support and adds the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro to your files. If you do not want script-based registry support, you need to replace this macro with DECLARE_REGISTRY. DECLARE_REGISTRY only inserts the five basic keys described above into the registry. You must manually write code to insert other keys into the registry.  
   
 ##  <a name="declare_registry_appid_resourceid"></a>  DECLARE_REGISTRY_APPID_RESOURCEID  
  Specifies the information required to automatically register the *appid*.  
@@ -115,7 +115,7 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
  A GUID.  
   
 ### Remarks  
- Use `DECLARE_REGISTRY_APPID_RESOURCEID` in a `CAtlModuleT`-derived class.  
+ Use DECLARE_REGISTRY_APPID_RESOURCEID in a `CAtlModuleT`-derived class.  
   
 ### Example  
  Classes added to ATL projects with the Add Class code wizard will have a sample of using this macro.  
@@ -132,19 +132,19 @@ DECLARE_REGISTRY_RESOURCE( x )
  [in] String identifier of your resource.  
   
 ### Remarks  
- When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro, which is similar to `DECLARE_REGISTRY_RESOURCE`, to your files.  
+ When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro, which is similar to DECLARE_REGISTRY_RESOURCE, to your files.  
   
  You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your stdafx.h file:  
   
  [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]  
   
- If you want ATL to substitute replacement values at run time, do not specify the `DECLARE_REGISTRY_RESOURCE` or `DECLARE_REGISTRY_RESOURCEID` macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
+ If you want ATL to substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.  
 
   
  For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).  
   
 ##  <a name="declare_registry_resourceid"></a>  DECLARE_REGISTRY_RESOURCEID  
- Same as [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) except that it uses a wizard-generated **UINT** to identify the resource, rather than a string name.  
+ Same as [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) except that it uses a wizard-generated UINT to identify the resource, rather than a string name.  
   
 ```
 DECLARE_REGISTRY_RESOURCEID( x )
@@ -155,13 +155,13 @@ DECLARE_REGISTRY_RESOURCEID( x )
  [in] Wizard-generated identifier of your resource.  
   
 ### Remarks  
- When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the `DECLARE_REGISTRY_RESOURCEID` macro to your files.  
+ When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the DECLARE_REGISTRY_RESOURCEID macro to your files.  
   
  You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your stdafx.h file:  
   
  [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]  
   
- If you want ATL to substitute replacement values at run time, do not specify the `DECLARE_REGISTRY_RESOURCE` or `DECLARE_REGISTRY_RESOURCEID` macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
+ If you want ATL to substitute replacement values at run time, do not specify the DECLARE_REGISTRY_RESOURCE or DECLARE_REGISTRY_RESOURCEID macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) or [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), passing the array. This adds all of the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.  
 
   
  For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).  

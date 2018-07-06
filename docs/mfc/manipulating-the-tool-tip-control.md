@@ -26,7 +26,7 @@ Class `CToolTipCtrl` provides a group of member functions that control the vario
   
 -   [GetTipTextColor](../mfc/reference/ctooltipctrl-class.md#gettiptextcolor) and [SetTipTextColor](../mfc/reference/ctooltipctrl-class.md#settiptextcolor) Retrieves and sets the text color of the tool tip window.  
   
- In order for the tool tip control to be notified of important messages, such as **WM_LBUTTONXXX** messages, you must relay the messages to your tool tip control. The best method for this relay is to make a call to [CToolTipCtrl::RelayEvent](../mfc/reference/ctooltipctrl-class.md#relayevent), in the `PreTranslateMessage` function of the owner window. The following example illustrates one possible method (assuming the tool tip control is called `m_ToolTip`):  
+ In order for the tool tip control to be notified of important messages, such as WM_LBUTTONXXX messages, you must relay the messages to your tool tip control. The best method for this relay is to make a call to [CToolTipCtrl::RelayEvent](../mfc/reference/ctooltipctrl-class.md#relayevent), in the `PreTranslateMessage` function of the owner window. The following example illustrates one possible method (assuming the tool tip control is called `m_ToolTip`):  
   
  [!code-cpp[NVC_MFCControlLadenDialog#41](../mfc/codesnippet/cpp/manipulating-the-tool-tip-control_1.cpp)]  
   

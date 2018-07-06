@@ -16,7 +16,7 @@ You can use the `goto` statement or a **case** label in a `switch` statement to 
   
  The following example shows a loop that declares and initializes the objects `total`, `ch`, and `i`. There is also an erroneous `goto` statement that transfers control past an initializer.  
   
-```  
+```cpp 
 // transfers_of_control.cpp  
 // compile with: /W1  
 // Read input until a nonnumeric character is entered.  

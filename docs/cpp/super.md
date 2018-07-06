@@ -21,9 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-__super::  
-member_function  
-();  
+__super::member_function();  
   
 ```  
   
@@ -38,7 +36,7 @@ member_function
   
 ## Example  
   
-```  
+```cpp 
 // deriv_super.cpp  
 // compile with: /c  
 struct B1 {  

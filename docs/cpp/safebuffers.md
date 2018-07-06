@@ -43,7 +43,7 @@ __declspec( safebuffers )
 ## Example  
  The following code shows how to use the `__declspec(safebuffers)` keyword.  
   
-```  
+```cpp 
 // compile with: /c /GS  
 typedef struct {  
     int x[20];  

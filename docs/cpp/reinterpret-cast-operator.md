@@ -34,7 +34,7 @@ reinterpret_cast < type-id > ( expression )
   
  One practical use of `reinterpret_cast` is in a hash function, which maps a value to an index in such a way that two distinct values rarely end up with the same index.  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   

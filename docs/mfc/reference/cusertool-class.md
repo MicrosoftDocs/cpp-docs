@@ -87,10 +87,10 @@ void DrawToolIcon(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Specifies the coordinates of the area to display the icon.  
   
 ##  <a name="getcommand"></a>  CUserTool::GetCommand  
@@ -134,7 +134,7 @@ virtual HICON LoadDefaultIcon();
 ```  
   
 ### Return Value  
- A handle to the loaded icon ( `HICON`), or `NULL` if the default icon cannot be loaded.  
+ A handle to the loaded icon ( HICON), or NULL if the default icon cannot be loaded.  
   
 ### Remarks  
  The framework calls this method when it is unable to load an icon for a user-defined tool from the executable file of the tool.  
@@ -176,7 +176,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -188,7 +188,7 @@ void SetCommand(LPCTSTR lpszCmd);
 ```  
   
 ### Parameters  
- [in] `lpszCmd`  
+ [in] *lpszCmd*  
  Specifies the new application to be associated with the user tool.  
   
 ### Remarks  

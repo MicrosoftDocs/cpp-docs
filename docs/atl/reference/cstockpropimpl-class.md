@@ -34,26 +34,26 @@ class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
 ```   
   
 #### Parameters  
- `T`  
+ *T*  
  The class implementing the control and deriving from `CStockPropImpl`.  
   
- `InterfaceName`  
+ *InterfaceName*  
  A dual interface exposing the stock properties.  
   
- `piid`  
+ *piid*  
  A pointer to the IID of `InterfaceName`.  
   
- `plibid`  
+ *plibid*  
  A pointer to the LIBID of the type library containing the definition of `InterfaceName`.  
   
- `wMajor`  
+ *wMajor*  
  The major version of the type library. The default value is 1.  
   
- `wMinor`  
+ *wMinor*  
  The minor version of the type library. The default value is 0.  
   
- `tihclass`  
- The class used to manage the type information for `T`. The default value is `CComTypeInfoHolder`.  
+ *tihclass*  
+ The class used to manage the type information for *T*. The default value is `CComTypeInfoHolder`.  
   
 ## Members  
   
@@ -122,7 +122,7 @@ class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
   
  Visual C++ provides support for stock properties through its wizards. For more information about adding stock properties to a control, see the [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md).  
   
- For backward compatibility, `CStockPropImpl` also exposes `get_Window` and `put_Window` methods that simply call `get_HWND` and `put_HWND`, respectively. The default implementation of `put_HWND` returns **E_FAIL** since `HWND` should be a read-only property.  
+ For backward compatibility, `CStockPropImpl` also exposes `get_Window` and `put_Window` methods that simply call `get_HWND` and `put_HWND`, respectively. The default implementation of `put_HWND` returns E_FAIL since HWND should be a read-only property.  
   
  The following properties also have a **putref** implementation:  
   
@@ -320,7 +320,7 @@ HRESULT STDMETHODCALLTYPE get_Enabled(VARIANT_BOOL* pbEnabled);
 ```  
   
 ### Parameters  
- `pbEnabled`  
+ *pbEnabled*  
  Variable that receives the flag status. TRUE indicates that the control is enabled.  
   
 ### Return Value  
@@ -362,7 +362,7 @@ HRESULT STDMETHODCALLTYPE get_Font(IFontDisp** ppFont);
 ```  
   
 ### Parameters  
- `ppFont`  
+ *ppFont*  
  Variable that receives a pointer to the control's font properties.  
   
 ### Return Value  
@@ -390,7 +390,7 @@ HRESULT STDMETHODCALLTYPE get_HWND(LONG_PTR* phWnd);
 ```  
   
 ### Parameters  
- `phWnd`  
+ *phWnd*  
  The window handle associated with the control.  
   
 ### Return Value  
@@ -404,7 +404,7 @@ HRESULT STDMETHODCALLTYPE get_MouseIcon(IPictureDisp** ppPicture);
 ```  
   
 ### Parameters  
- `ppPicture`  
+ *ppPicture*  
  Variable that receives a pointer to the picture properties of the graphic.  
   
 ### Return Value  
@@ -432,7 +432,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 ```  
   
 ### Parameters  
- `ppPicture`  
+ *ppPicture*  
  Variable that receives a pointer to the picture's properties. See [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
   
 ### Return Value  
@@ -502,7 +502,7 @@ HRESULT STDMETHODCALLTYPE get_Window(LONG_PTR* phWnd);
 ```  
   
 ### Parameters  
- `phWnd`  
+ *phWnd*  
  The window handle associated with the control.  
   
 ### Return Value  
@@ -516,7 +516,7 @@ HRESULT STDMETHODCALLTYPE put_Appearance(SHORT nAppearance);
 ```  
   
 ### Parameters  
- `nAppearance`  
+ *nAppearance*  
  The new paint style to be used by the control.  
   
 ### Return Value  
@@ -614,7 +614,7 @@ HRESULT STDMETHODCALLTYPE put_BorderWidth(LONG nBorderWidth);
 ```  
   
 ### Parameters  
- `nBorderWidth`  
+ *nBorderWidth*  
  The new width of the control's border.  
   
 ### Return Value  
@@ -642,7 +642,7 @@ HRESULT STDMETHODCALLTYPE put_DrawMode(LONG nDrawMode);
 ```  
   
 ### Parameters  
- `nDrawMode`  
+ *nDrawMode*  
  The new drawing mode for the control.  
   
 ### Return Value  
@@ -684,7 +684,7 @@ HRESULT STDMETHODCALLTYPE put_Enabled(VARIANT_BOOL bEnabled);
 ```  
   
 ### Parameters  
- `bEnabled`  
+ *bEnabled*  
  TRUE if the control is enabled.  
   
 ### Return Value  
@@ -726,7 +726,7 @@ HRESULT STDMETHODCALLTYPE put_Font(IFontDisp* pFont);
 ```  
   
 ### Parameters  
- `pFont`  
+ *pFont*  
  A pointer to the control's font properties.  
   
 ### Return Value  
@@ -771,7 +771,7 @@ HRESULT STDMETHODCALLTYPE put_MouseIcon(IPictureDisp* pPicture);
 ```  
   
 ### Parameters  
- `pPicture`  
+ *pPicture*  
  A pointer to the picture properties of the graphic.  
   
 ### Return Value  
@@ -799,7 +799,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 ```  
   
 ### Parameters  
- `pPicture`  
+ *pPicture*  
  A pointer to the picture's properties. See [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
   
 ### Return Value  
@@ -841,7 +841,7 @@ HRESULT STDMETHODCALLTYPE put_Text(BSTR bstrText);
 ```  
   
 ### Parameters  
- `bstrText`  
+ *bstrText*  
  The text that is displayed with the control.  
   
 ### Return Value  
@@ -869,7 +869,7 @@ HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  The window handle.  
   
 ### Return Value  
@@ -886,7 +886,7 @@ HRESULT STDMETHODCALLTYPE putref_Font(IFontDisp* pFont);
 ```  
   
 ### Parameters  
- `pFont`  
+ *pFont*  
  A pointer to the control's font properties.  
   
 ### Return Value  
@@ -903,7 +903,7 @@ HRESULT STDMETHODCALLTYPE putref_MouseIcon(IPictureDisp* pPicture);
 ```  
   
 ### Parameters  
- `pPicture`  
+ *pPicture*  
  A pointer to the picture properties of the graphic.  
   
 ### Return Value  
@@ -920,7 +920,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 ```  
   
 ### Parameters  
- `pPicture`  
+ *pPicture*  
  A pointer to the picture's properties. See [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
   
 ### Return Value  

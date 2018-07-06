@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Manipulating Menus During Program Execution
-Use class `CMenu` to manipulate menus and menu items on the fly. `CMenu` encapsulates a Windows `HMENU` handle and supplies member functions for working with menus.  
+Use class `CMenu` to manipulate menus and menu items on the fly. `CMenu` encapsulates a Windows HMENU handle and supplies member functions for working with menus.  
   
  See the overview for class [CMenu](../mfc/reference/cmenu-class.md) for details.  
   

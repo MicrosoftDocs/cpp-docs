@@ -47,10 +47,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 ```  
   
 ### Parameters  
- `k1`  
+ *k1*  
  The first key.  
   
- `k2`  
+ *k2*  
  The second key.  
   
 ### Return Value  

@@ -37,7 +37,7 @@ The C++ language defines conversions between its fundamental types. It also defi
   
  The following code causes conversions (in this example, integral promotions):  
   
-```  
+```cpp 
 long  long_num1, long_num2;  
 int   int_num;  
   
@@ -82,7 +82,7 @@ long_num2 = int_num * long_num2;
   
  Objects of signed integral types can be converted to corresponding unsigned types. When these conversions occur, the actual bit pattern does not change; however, the interpretation of the data changes. Consider this code:  
   
-```  
+```cpp 
   
 #include <iostream>  
   
@@ -150,7 +150,7 @@ cout << (float)1E300 << endl;
   
  The following code illustrates the conversion rules described in the table:  
   
-```  
+```cpp 
   
 double dVal;  
 float fVal;  
@@ -207,7 +207,7 @@ Inheritance Graph for Illustration of Base-Class Accessibility
   
  The following code defines two classes, `A` and `B`, where `B` is derived from `A`. (For more information on inheritance, see [Derived Classes](../cpp/inheritance-cpp.md).) It then defines `bObject`, an object of type `B`, and two pointers (`pA` and `pB`) that point to the object.  
   
-```  
+```cpp 
 // C2039 expected  
 class A  
 {  
@@ -258,7 +258,7 @@ int main()
 ### Pointer expression conversions  
  Any expression with an array type can be converted to a pointer of the same type. The result of the conversion is a pointer to the first array element. The following example demonstrates such a conversion:  
   
-```  
+```cpp 
 char szPath[_MAX_PATH]; // Array of type char.  
 char *pszPath = szPath; // Equals &szPath[0].  
 ```  
@@ -299,7 +299,7 @@ char *pszPath = szPath; // Equals &szPath[0].
   
  The following code illustrates the definition of a pointer to member `i` in class `A`. The pointer, `pai`, is initialized to 0, which is the null pointer.  
   
-```  
+```cpp 
 class A  
 {  
 public:  

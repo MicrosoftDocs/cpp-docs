@@ -35,7 +35,7 @@ dynamic_cast < type-id > ( expression )
   
  If `type-id` is a pointer to an unambiguous accessible direct or indirect base class of `expression`, a pointer to the unique subobject of type `type-id` is the result. For example:  
   
-```  
+```cpp 
 // dynamic_cast_1.cpp  
 // compile with: /c  
 class B { };  
@@ -54,7 +54,7 @@ void f(D* pd) {
   
  If `type-id` is void*, a run-time check is made to determine the actual type of `expression`. The result is a pointer to the complete object pointed to by `expression`. For example:  
   
-```  
+```cpp 
 // dynamic_cast_2.cpp  
 // compile with: /c /GR  
 class A {virtual void f();};  
@@ -75,7 +75,7 @@ void f() {
   
  If the type of `expression` is a base class of the type of `type-id`, a run-time check is made to see if `expression` actually points to a complete object of the type of `type-id`. If this is true, the result is a pointer to a complete object of the type of `type-id`. For example:  
   
-```  
+```cpp 
 // dynamic_cast_3.cpp  
 // compile with: /c /GR  
 class B {virtual void f();};  
@@ -98,7 +98,7 @@ void f() {
   
  The following sample uses `dynamic_cast` to determine if a class is an instance of particular type:  
   
-```  
+```cpp 
 // dynamic_cast_clr.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -124,7 +124,7 @@ Class Hierarchy Showing Multiple Inheritance
   
  A pointer to an object of type `D` can be safely cast to `B` or `C`. However, if `D` is cast to point to an `A` object, which instance of `A` would result? This would result in an ambiguous casting error. To get around this problem, you can perform two unambiguous casts. For example:  
   
-```  
+```cpp 
 // dynamic_cast_4.cpp  
 // compile with: /c /GR  
 class A {virtual void f();};  
@@ -152,7 +152,7 @@ Class Hierarchy Showing Duplicate Base Classes
   
  Given an object of type `E` and a pointer to the `D` subobject, to navigate from the `D` subobject to the left-most `A` subobject, three conversions can be made. You can perform a `dynamic_cast` conversion from the `D` pointer to an `E` pointer, then a conversion (either `dynamic_cast` or an implicit conversion) from `E` to `B`, and finally an implicit conversion from `B` to `A`. For example:  
   
-```  
+```cpp 
 // dynamic_cast_5.cpp  
 // compile with: /c /GR  
 class A {virtual void f();};  
@@ -172,7 +172,7 @@ void f(D* pd) {
   
  Considering cross casts, it is actually possible to do the conversion from a pointer to `D` to a pointer to the left-most `A` subobject in just two steps. You can perform a cross cast from `D` to `B`, then an implicit conversion from `B` to `A`. For example:  
   
-```  
+```cpp 
 // dynamic_cast_6.cpp  
 // compile with: /c /GR  
 class A {virtual void f();};  
@@ -191,7 +191,7 @@ void f(D* pd) {
   
  When you use `dynamic_cast < type-id > ( expression )`, if `expression` cannot be safely converted to type `type-id`, the run-time check causes the cast to fail. For example:  
   
-```  
+```cpp 
 // dynamic_cast_7.cpp  
 // compile with: /c /GR  
 class A {virtual void f();};  
@@ -213,7 +213,7 @@ void f() {
   
  The sample also calls a non-virtual function in the hierarchy.  
   
-```  
+```cpp 
 // dynamic_cast_8.cpp  
 // compile with: /GR /EHsc  
 #include <stdio.h>  

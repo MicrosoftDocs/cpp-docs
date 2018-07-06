@@ -68,16 +68,16 @@ int AddView(
 ```  
   
 ### Parameters  
- [in] `pViewClass`  
+ [in] *pViewClass*  
  A pointer to a runtime class of the inserted view.  
   
- [in] `strViewLabel`  
+ [in] *strViewLabel*  
  Specifies the tab's text.  
   
- [in] `iIndex`  
+ [in] *iIndex*  
  Specifies the zero-based position at which to insert the view. If the position is -1 the new tab is inserted at the end.  
   
- [in] `pContext`  
+ [in] *pContext*  
  A pointer to the `CCreateContext` of the view.  
   
 ### Return Value  
@@ -94,7 +94,7 @@ int FindTab(HWND hWndView) const;
 ```  
   
 ### Parameters  
- [in] `hWndView`  
+ [in] *hWndView*  
  The handle of the view.  
   
 ### Return Value  
@@ -111,7 +111,7 @@ CView* GetActiveView() const;
 ```  
   
 ### Return Value  
- A valid pointer to the active view, or `NULL` if there is no active view.  
+ A valid pointer to the active view, or NULL if there is no active view.  
   
 ### Remarks  
   
@@ -133,12 +133,12 @@ virtual BOOL IsScrollBar() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tab view should be created together with a shared scroll bar. Otherwise, `FALSE`.  
+ TRUE if the tab view should be created together with a shared scroll bar. Otherwise, FALSE.  
   
 ### Remarks  
- The framework calls this method when a `CTabView` object is being created.  
+ The framework calls this method when a *CTabView* object is being created.  
   
- Override the `IsScrollBar` method in a `CTabView`-derived class and return `TRUE` if you want to create a view that has a shared horizontal scroll bar.  
+ Override the *IsScrollBar* method in a *CTabView*-derived class and return TRUE if you want to create a view that has a shared horizontal scroll bar.  
   
 ##  <a name="onactivateview"></a>  CTabView::OnActivateView  
  Called by the framework when the tab view is made active or inactive.  
@@ -148,7 +148,7 @@ virtual void OnActivateView(CView* view);
 ```  
   
 ### Parameters  
- [in] `view`  
+ [in] *view*  
  A pointer to the view.  
   
 ### Remarks  
@@ -162,7 +162,7 @@ BOOL RemoveView(int iTabNum);
 ```  
   
 ### Parameters  
- [in] `iTabNum`  
+ [in] *iTabNum*  
  The index of the view to remove.  
   
 ### Return Value  
@@ -178,11 +178,11 @@ BOOL SetActiveView(int iTabNum);
 ```  
   
 ### Parameters  
- [in] `iTabNum`  
+ [in] *iTabNum*  
  The zero-based index of the tab view.  
   
 ### Return Value  
- `TRUE` if the specified view was made active, `FALSE` if the view's index is invalid.  
+ TRUE if the specified view was made active, FALSE if the view's index is invalid.  
   
 ### Remarks  
  For more information see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).  

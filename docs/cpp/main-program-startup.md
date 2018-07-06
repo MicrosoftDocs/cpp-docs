@@ -19,26 +19,26 @@ A special function named `main` is the starting point of execution for all C and
   
  The declaration syntax for `main` is  
   
-```  
+```cpp 
 int main();  
 ```  
   
  or, optionally,  
   
-```  
+```cpp 
 int main(int argc, char *argv[], char *envp[]);  
 ```  
   
 ## Microsoft Specific  
  The declaration syntax for `wmain` is as follows:  
   
-```  
+```cpp 
 int wmain( );  
 ```  
   
  or, optionally,  
   
-```  
+```cpp 
 int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);  
 ```  
   
@@ -53,3 +53,4 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
  [Keywords](../cpp/keywords-cpp.md)   
  [Using wmain Instead of main](../cpp/using-wmain-instead-of-main.md)   
  [main Function Restrictions](../cpp/main-function-restrictions.md)
+ [Parsing C++ Command-Line Arguments](../cpp/parsing-cpp-command-line-arguments.md)

@@ -34,7 +34,7 @@ return [expression];
   
 ## Example  
   
-```  
+```cpp 
 // return_statement2.cpp  
 #include <stdio.h>  
   

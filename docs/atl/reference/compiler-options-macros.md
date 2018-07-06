@@ -141,7 +141,8 @@ _ATL_NO_AUTOMATIC_NAMESPACE
  A symbol which prevents COM-related code from being compiled with your project.  
   
 ```
-_ATL_NO_COM_SUPPORT```  
+_ATL_NO_COM_SUPPORT
+```  
   
 ##  <a name="atl_no_vtable"></a>  ATL_NO_VTABLE  
  A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.  

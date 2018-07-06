@@ -26,7 +26,7 @@ ms.workload: ["cplusplus"]
   
  The indirection operator may be used cumulatively to dereference pointers to pointers. For example:  
   
-```  
+```cpp 
 // expre_Indirection_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate indirection operator  

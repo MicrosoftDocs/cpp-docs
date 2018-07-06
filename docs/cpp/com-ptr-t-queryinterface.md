@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      template<typename _InterfaceType> HRESULT QueryInterface (  
+template<typename _InterfaceType> HRESULT QueryInterface (  
    const IID& iid,  
    _InterfaceType*& p   
 ) throw ( );  

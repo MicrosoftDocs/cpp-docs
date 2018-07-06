@@ -51,7 +51,7 @@ template <class TBase = CWindow>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxWindow2T::operator =](#operator_eq)|Assigns an `HWND` to an existing `CAxWindow2T` object.|  
+|[CAxWindow2T::operator =](#operator_eq)|Assigns an HWND to an existing `CAxWindow2T` object.|  
   
 ## Remarks  
  `CAxWindow2T` provides methods for manipulating a window that hosts an ActiveX control. `CAxWindow2T` also has support for hosting licensed ActiveX controls. The hosting is provided by " **AtlAxWinLic80**", which is wrapped by `CAxWindow2T`.  
@@ -83,7 +83,7 @@ CAxWindow2T(HWND  hWnd = NULL) : CAxWindowT<TBase>(hWnd)
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  A handle of an existing window.  
   
 ##  <a name="create"></a>  CAxWindow2T::Create  
@@ -101,11 +101,11 @@ HWND Create(
 ```  
   
 ### Remarks  
- `CAxWindow2T::Create` calls [CWindow::Create](../../atl/reference/cwindow-class.md#create) with the `LPCTSTR lpstrWndClass` parameter set to the window class that provides control hosting ( **AtlAxWinLic80**).  
+ `CAxWindow2T::Create` calls [CWindow::Create](../../atl/reference/cwindow-class.md#create) with the LPCTSTR *lpstrWndClass* parameter set to the window class that provides control hosting (`AtlAxWinLic80`).  
   
  See `CWindow::Create` for a description of the parameters and return value.  
   
- **Note** If 0 is used as the value for the `MenuOrID` parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
+ **Note** If 0 is used as the value for the *MenuOrID* parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CAxWindow2T::Create`.  
@@ -128,7 +128,7 @@ HRESULT CreateControlLic(
 ```  
   
 ### Parameters  
- `bstrLicKey`  
+ *bstrLicKey*  
  The license key for the control; NULL if creating a nonlicensed control.  
   
 ### Remarks  
@@ -161,7 +161,7 @@ HRESULT CreateControlLicEx(
 ```  
   
 ### Parameters  
- `bstrLicKey`  
+ *bstrLicKey*  
  The license key for the control; NULL if creating a nonlicensed control.  
   
 ### Remarks  
@@ -178,17 +178,17 @@ static LPCTSTR GetWndClassName();
 ```  
   
 ### Return Value  
- A pointer to a string containing the name of the window class ( **AtlAxWinLic80**) that can host licensed and nonlicensed ActiveX controls.  
+ A pointer to a string containing the name of the window class (`AtlAxWinLic80`) that can host licensed and nonlicensed ActiveX controls.  
   
 ##  <a name="operator_eq"></a>  CAxWindow2T::operator =  
- Assigns an `HWND` to an existing `CAxWindow2T` object.  
+ Assigns an HWND to an existing `CAxWindow2T` object.  
   
 ```
 CAxWindow2T<TBase>& operator= (HWND hWnd);
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  A handle of an existing window.  
   
 ## See Also  

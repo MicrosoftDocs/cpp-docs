@@ -30,7 +30,7 @@ T minimum(const T& lhs, const T& rhs)
   
  Elsewhere, a user can declare an instance of the template  that is specialized for int. Assume that get_a() and get_b() are functions that return an int:  
   
-```  
+```cpp 
 int a = get_a();  
 int b = get_b();  
 int i = minimum<int>(a, b);  
@@ -44,7 +44,7 @@ int i = minimum(a, b);
   
  When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with `int`:  
   
-```  
+```cpp 
   
       int minimum(const int& lhs, const int& rhs)  
 {  
@@ -66,7 +66,7 @@ template <typename T, typename U, typename V> class Foo{};
   
  The keyword `class` is equivalent to `typename` in this context. You can express the previous example as:  
   
-```  
+```cpp 
 template <class T, class U, class V> class Foo{};   
 ```  
   
@@ -103,7 +103,7 @@ int main()
   
  There is no inherent requirement that the type arguments for any particular template all belong to the same object hierarchy, although you can define a template that enforces such a restriction. You can combine object-oriented techniques with templates; for example, you can store a Derived* in a vector\<Base\*>.    Note that the arguments must be pointers  
   
-```  
+```cpp 
 vector<MyClass*> vec;  
    MyDerived d(3, L"back again", time(0));  
    vec.push_back(&d);  
@@ -118,7 +118,7 @@ vector<MyClass*> vec;
 ## Non-type parameters  
  Unlike generic types in other languages such as C# and Java, C++ templates support non-type parameters, also called value parameters. For example, you can provide a constant integral value to specify the length of an array, as with this example that is similar to the std::array class in the Standard Library:  
   
-```  
+```cpp 
 template<typename T, size_t L>  
 class MyArray  
 {  

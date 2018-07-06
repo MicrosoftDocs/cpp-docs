@@ -17,7 +17,7 @@ The compiler can use argument-dependent name lookup to find the definition of an
 ## Example  
  In the sample, the compiler notes that function `f()` takes an argument `x`. Argument `x` is of type `A::X`, which is defined in namespace `A`. The compiler searches namespace `A` and finds a definition for function `f()` that takes an argument of type `A::X`.  
   
-```  
+```cpp 
 // argument_dependent_name_koenig_lookup_on_functions.cpp  
 namespace A  
 {  

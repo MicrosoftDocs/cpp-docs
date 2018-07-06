@@ -33,7 +33,7 @@ goto identifier;
 ## Example  
  In this example, a `goto` statement transfers control to the point labeled `stop` when `i` equals 3.  
   
-```  
+```cpp  
 // goto_statement.cpp  
 #include <stdio.h>  
 int main()  

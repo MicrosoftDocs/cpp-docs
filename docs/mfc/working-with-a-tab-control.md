@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Working with a Tab Control
-The easiest way to use a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) is by adding it to a dialog template resource with the dialog editor. You can also use a tab control by itself. MFC calls **InitCommonControls** for you. The key tasks are as follows:  
+The easiest way to use a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) is by adding it to a dialog template resource with the dialog editor. You can also use a tab control by itself. MFC calls `InitCommonControls` for you. The key tasks are as follows:  
   
 -   [Creating the tab control](../mfc/creating-the-tab-control.md)  
   

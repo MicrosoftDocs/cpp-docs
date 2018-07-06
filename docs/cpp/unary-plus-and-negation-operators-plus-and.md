@@ -18,10 +18,6 @@ ms.workload: ["cplusplus"]
 ```  
   
 + cast-expression  
-```  
-  
-```  
-  
 - cast-expression  
 ```  
   

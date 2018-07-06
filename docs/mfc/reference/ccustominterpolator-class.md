@@ -75,10 +75,10 @@ CCustomInterpolator(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `finalValue`  
+ *finalValue*  
   
 ### Remarks  
  Use CCustomInterpolator::Init to initialize duration and final value later in the code.  
@@ -94,13 +94,13 @@ virtual BOOL GetDependencies(
 ```  
   
 ### Parameters  
- `initialValueDependencies`  
+ *initialValueDependencies*  
  Output. Aspects of the interpolator that depend on the initial value passed to SetInitialValueAndVelocity.  
   
- `initialVelocityDependencies`  
+ *initialVelocityDependencies*  
  Output. Aspects of the interpolator that depend on the initial velocity passed to SetInitialValueAndVelocity.  
   
- `durationDependencies`  
+ *durationDependencies*  
  Output. Aspects of the interpolator that depend on the duration passed to SetDuration.  
   
 ### Return Value  
@@ -114,7 +114,7 @@ virtual BOOL GetDuration(UI_ANIMATION_SECONDS* duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  Output. The duration of the transition, in seconds.  
   
 ### Return Value  
@@ -128,7 +128,7 @@ virtual BOOL GetFinalValue(DOUBLE* value);
 ```  
   
 ### Parameters  
- `value`  
+ *value*  
  Output. The final value of a variable at the end of the transition.  
   
 ### Return Value  
@@ -144,10 +144,10 @@ void Init(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `finalValue`  
+ *finalValue*  
  The final value of a variable at the end of the transition.  
   
 ##  <a name="interpolatevalue"></a>  CCustomInterpolator::InterpolateValue  
@@ -160,7 +160,7 @@ virtual BOOL InterpolateValue(
 ```  
   
 ### Parameters  
- `value`  
+ *value*  
  Output. The interpolated value.  
   
 ### Return Value  
@@ -176,7 +176,7 @@ virtual BOOL InterpolateVelocity(
 ```  
   
 ### Parameters  
- `velocity`  
+ *velocity*  
  Output. The velocity of the variable at the offset.  
   
 ### Return Value  
@@ -232,7 +232,7 @@ virtual BOOL SetDuration(UI_ANIMATION_SECONDS duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
 ### Return Value  
@@ -248,10 +248,10 @@ virtual BOOL SetInitialValueAndVelocity(
 ```  
   
 ### Parameters  
- `initialValue`  
+ *initialValue*  
  The value of the variable at the start of the transition.  
   
- `initialVelocity`  
+ *initialVelocity*  
  The velocity of the variable at the start of the transition.  
   
 ### Return Value  

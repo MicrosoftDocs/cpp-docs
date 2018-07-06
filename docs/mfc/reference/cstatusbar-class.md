@@ -69,7 +69,7 @@ class CStatusBar : public CControlBar
   
 1.  Call [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext) to update the text in pane 0 only.  
   
-2.  Call [CCmdUI::SetText](../../mfc/reference/ccmdui-class.md#settext) in the status bar's `ON_UPDATE_COMMAND_UI` handler.  
+2.  Call [CCmdUI::SetText](../../mfc/reference/ccmdui-class.md#settext) in the status bar's ON_UPDATE_COMMAND_UI handler.  
   
 3.  Call [SetPaneText](#setpanetext) to update the text for any pane.  
   
@@ -99,7 +99,7 @@ int CommandToIndex(UINT nIDFind) const;
 ```  
   
 ### Parameters  
- `nIDFind`  
+ *nIDFind*  
  String ID of the indicator whose index is to be retrieved.  
   
 ### Return Value  
@@ -119,19 +119,19 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object whose Windows window is the parent of the status bar.  
   
- `dwStyle`  
+ *dwStyle*  
  The status-bar style. In addition to the standard Windows [styles](../../mfc/reference/styles-used-by-mfc.md#window-styles), these styles are supported.  
   
-- `CBRS_TOP` Control bar is at top of frame window.  
+- CBRS_TOP Control bar is at top of frame window.  
   
-- `CBRS_BOTTOM` Control bar is at bottom of frame window.  
+- CBRS_BOTTOM Control bar is at bottom of frame window.  
   
-- `CBRS_NOALIGN` Control bar is not repositioned when the parent is resized.  
+- CBRS_NOALIGN Control bar is not repositioned when the parent is resized.  
   
- `nID`  
+ *nID*  
  The toolbar's child-window ID.  
   
 ### Return Value  
@@ -152,22 +152,22 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object whose Windows window is the parent of the status bar.  
   
- `dwCtrlStyle`  
+ *dwCtrlStyle*  
  Additional styles for the creation of the embedded [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) object. The default specifies a status bar without a sizing grip or tooltip support. Status bar styles supported are:  
   
-- **SBARS_SIZEGRIP** The status bar control includes a sizing grip at the right end of the status bar. A sizing grip is similar to a sizing border; it is a rectangular area that the user can click and drag to resize the parent window.  
+- SBARS_SIZEGRIP The status bar control includes a sizing grip at the right end of the status bar. A sizing grip is similar to a sizing border; it is a rectangular area that the user can click and drag to resize the parent window.  
   
-- **SBT_TOOLTIPS** The status bar supports tooltips.  
+- SBT_TOOLTIPS The status bar supports tooltips.  
   
  For details on these styles, see [Settings for the CStatusBarCtrl](../../mfc/settings-for-the-cstatusbarctrl.md).  
   
- `dwStyle`  
+ *dwStyle*  
  The status bar style. The default specifies that a visible status bar be created at the bottom of the frame window. Apply any combination of status bar control styles listed in [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [CDialogBar::Create](../../mfc/reference/cdialogbar-class.md#create). However, this parameter should always include the WS_CHILD and WS_VISIBLE styles.  
   
- `nID`  
+ *nID*  
  The status bar's child-window ID.  
   
 ### Return Value  
@@ -176,7 +176,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  This function also sets the initial font and sets the status bar's height to a default value.  
   
- Use `CreateEx`, instead of [Create](#create), when certain styles need to be present during the creation of the embedded status bar control. For example, set `dwCtrlStyle` to **SBT_TOOLTIPS** to display tooltips in a status bar object.  
+ Use `CreateEx`, instead of [Create](#create), when certain styles need to be present during the creation of the embedded status bar control. For example, set *dwCtrlStyle* to SBT_TOOLTIPS to display tooltips in a status bar object.  
   
 ##  <a name="cstatusbar"></a>  CStatusBar::CStatusBar  
  Constructs a `CStatusBar` object, creates a default status-bar font if necessary, and sets the font characteristics to default values.  
@@ -193,28 +193,28 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### Parameters  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  A pointer to a [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) structure that contains information about the type of drawing required.  
   
 ### Remarks  
- The **itemAction** member of the `DRAWITEMSTRUCT` structure defines the drawing action that is to be performed. Override this member function to implement drawing for an owner-draw `CStatusBar` object. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before the termination of this member function.  
+ The `itemAction` member of the `DRAWITEMSTRUCT` structure defines the drawing action that is to be performed. Override this member function to implement drawing for an owner-draw `CStatusBar` object. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before the termination of this member function.  
   
 ##  <a name="getitemid"></a>  CStatusBar::GetItemID  
- Returns the ID of the indicator specified by `nIndex`.  
+ Returns the ID of the indicator specified by *nIndex*.  
   
 ```  
 UINT GetItemID(int nIndex) const;  
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the indicator whose ID is to be retrieved.  
   
 ### Return Value  
- The ID of the indicator specified by `nIndex`.  
+ The ID of the indicator specified by *nIndex*.  
   
 ##  <a name="getitemrect"></a>  CStatusBar::GetItemRect  
- Copies the coordinates of the indicator specified by `nIndex` into the structure pointed to by `lpRect`.  
+ Copies the coordinates of the indicator specified by *nIndex* into the structure pointed to by *lpRect*.  
   
 ```  
 void GetItemRect(
@@ -223,17 +223,17 @@ void GetItemRect(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the indicator whose rectangle coordinates are to be retrieved.  
   
- `lpRect`  
- Points to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by `nIndex`.  
+ *lpRect*  
+ Points to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.  
   
 ### Remarks  
  Coordinates are in pixels relative to the upper-left corner of the status bar.  
   
 ##  <a name="getpaneinfo"></a>  CStatusBar::GetPaneInfo  
- Sets `nID`, `nStyle`, and `cxWidth` to the ID, style, and width of the indicator pane at the location specified by `nIndex`.  
+ Sets *nID*, *nStyle*, and *cxWidth* to the ID, style, and width of the indicator pane at the location specified by *nIndex*.  
   
 ```  
 void GetPaneInfo(
@@ -244,16 +244,16 @@ void GetPaneInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the pane whose information is to be retrieved.  
   
- `nID`  
- Reference to a **UINT** that is set to the ID of the pane.  
+ *nID*  
+ Reference to a UINT that is set to the ID of the pane.  
   
- `nStyle`  
- Reference to a **UINT** that is set to the style of the pane.  
+ *nStyle*  
+ Reference to a UINT that is set to the style of the pane.  
   
- `cxWidth`  
+ *cxWidth*  
  Reference to an integer that is set to the width of the pane.  
   
 ##  <a name="getpanestyle"></a>  CStatusBar::GetPaneStyle  
@@ -264,11 +264,11 @@ UINT GetPaneStyle(int nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the pane whose style is to be retrieved.  
   
 ### Return Value  
- The style of the status-bar pane specified by `nIndex`.  
+ The style of the status-bar pane specified by *nIndex*.  
   
 ### Remarks  
  A pane's style determines how the pane appears.  
@@ -283,10 +283,10 @@ CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rS
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the pane whose text is to be retrieved.  
   
- `rString`  
+ *rString*  
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the text to be retrieved.  
   
 ### Return Value  
@@ -311,7 +311,7 @@ CStatusBarCtrl& GetStatusBarCtrl() const;
  For more general information about common controls, See [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
   
 ##  <a name="setindicators"></a>  CStatusBar::SetIndicators  
- Sets each indicator's ID to the value specified by the corresponding element of the array `lpIDArray`, loads the string resource specified by each ID, and sets the indicator's text to the string.  
+ Sets each indicator's ID to the value specified by the corresponding element of the array *lpIDArray*, loads the string resource specified by each ID, and sets the indicator's text to the string.  
   
 ```  
 BOOL SetIndicators(
@@ -320,11 +320,11 @@ BOOL SetIndicators(
 ```  
   
 ### Parameters  
- `lpIDArray`  
+ *lpIDArray*  
  Pointer to an array of IDs.  
   
- `nIDCount`  
- Number of elements in the array pointed to by `lpIDArray`.  
+ *nIDCount*  
+ Number of elements in the array pointed to by *lpIDArray*.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -341,30 +341,30 @@ void SetPaneInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the indicator pane whose style is to be set.  
   
- `nID`  
+ *nID*  
  New ID for the indicator pane.  
   
- `nStyle`  
+ *nStyle*  
  New style for the indicator pane.  
   
- `cxWidth`  
+ *cxWidth*  
  New width for the indicator pane.  
   
 ### Remarks  
  The following indicator styles are supported:  
   
-- **SBPS_NOBORDERS** No 3-D border around the pane.  
+- SBPS_NOBORDERS No 3-D border around the pane.  
   
-- **SBPS_POPOUT** Reverse border so that text "pops out."  
+- SBPS_POPOUT Reverse border so that text "pops out."  
   
-- **SBPS_DISABLED** Do not draw text.  
+- SBPS_DISABLED Do not draw text.  
   
-- **SBPS_STRETCH** Stretch pane to fill unused space. Only one pane per status bar can have this style.  
+- SBPS_STRETCH Stretch pane to fill unused space. Only one pane per status bar can have this style.  
   
-- **SBPS_NORMAL** No stretch, borders, or pop-out.  
+- SBPS_NORMAL No stretch, borders, or pop-out.  
   
 ##  <a name="setpanestyle"></a>  CStatusBar::SetPaneStyle  
  Call this member function to set the style of a status bar's pane.  
@@ -376,10 +376,10 @@ void SetPaneStyle(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the pane whose style is to be set.  
   
- `nStyle`  
+ *nStyle*  
  Style of the pane whose style is to be set.  
   
 ### Remarks  
@@ -388,7 +388,7 @@ void SetPaneStyle(
  For a list of styles available for status bars, see [SetPaneInfo](#setpaneinfo).  
   
 ##  <a name="setpanetext"></a>  CStatusBar::SetPaneText  
- Call this member function to set the pane text to the string pointed to by `lpszNewText`.  
+ Call this member function to set the pane text to the string pointed to by *lpszNewText*.  
   
 ```  
 BOOL SetPaneText(
@@ -398,14 +398,14 @@ BOOL SetPaneText(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the pane whose text is to be set.  
   
- `lpszNewText`  
+ *lpszNewText*  
  Pointer to the new pane text.  
   
  *bUpdate*  
- If **TRUE**, the pane is invalidated after the text is set.  
+ If TRUE, the pane is invalidated after the text is set.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

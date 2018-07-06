@@ -56,10 +56,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppTimerEventHandler`  
+ *ppTimerEventHandler*  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
@@ -92,7 +92,7 @@ IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
 ```  
   
 ### Parameters  
- `fps`  
+ *fps*  
   
 ### Return Value  
  S_OK if the method succeeds; otherwise E_FAIL.  
@@ -105,7 +105,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

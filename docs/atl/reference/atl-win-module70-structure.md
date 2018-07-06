@@ -33,10 +33,10 @@ struct _ATL_WIN_MODULE70 {
  `m_csWindowCreate`  
  Used to serialize access to window registration code. Used internally by ATL.  
   
- **m_pCreateWndList**  
+ `m_pCreateWndList`  
  Used to bind windows to their objects. Used internally by ATL.  
   
- **m_rgWindowClassAtoms**  
+ `m_rgWindowClassAtoms`  
  Used to track window class registrations so that they can be properly unregistered at termination. Used internally by ATL.  
   
 ## Remarks  

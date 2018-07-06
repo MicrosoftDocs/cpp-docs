@@ -23,7 +23,7 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IServiceProviderImpl`.  
   
 ## Members  
@@ -37,7 +37,7 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ## Remarks  
  The `IServiceProvider` interface locates a service specified by its GUID and returns the interface pointer for the requested interface on the service. Class `IServiceProviderImpl` provides a default implementation of this interface.  
   
- **IServiceProviderImpl** specifies one method: [QueryService](#queryservice), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
+ `IServiceProviderImpl` specifies one method: [QueryService](#queryservice), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
  `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) and ending with [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
   
@@ -62,17 +62,17 @@ STDMETHOD(QueryService)(
 ```  
   
 ### Parameters  
- [IN] `guidService`  
+ [IN] *guidService*  
  Pointer to a service identifier (SID).  
   
- [IN] `riid`  
+ [IN] *riid*  
  Identifier of the interface to which the caller is to gain access.  
   
- [OUT] `ppvObj`  
+ [OUT] *ppvObj*  
  Indirect pointer to the requested interface.  
   
 ### Return Value  
- The returned `HRESULT` value is one of the following:  
+ The returned HRESULT value is one of the following:  
   
 |Return value|Meaning|  
 |------------------|-------------|  
@@ -85,7 +85,7 @@ STDMETHOD(QueryService)(
 ### Remarks  
  `QueryService` returns an indirect pointer to the requested interface in the specified service. The caller is responsible for releasing this pointer when it is no longer required.  
   
- When you call `QueryService`, you pass both a service identifier ( `guidService`) and an interface identifier ( `riid`). The `guidService` specifies the service to which you want access, and the `riid` identifies an interface that is part of the service. In return, you receive an indirect pointer to the interface.  
+ When you call `QueryService`, you pass both a service identifier (*guidService*) and an interface identifier (*riid*). The *guidService* specifies the service to which you want access, and the *riid* identifies an interface that is part of the service. In return, you receive an indirect pointer to the interface.  
   
  The object that implements the interface might also implement interfaces that are part of other services. Consider the following:  
   

@@ -79,7 +79,7 @@ void Attach(ID2D1Layer* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dlayer"></a>  CD2DLayer::CD2DLayer  
@@ -92,10 +92,10 @@ CD2DLayer(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DLayer::Create  
@@ -106,7 +106,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  

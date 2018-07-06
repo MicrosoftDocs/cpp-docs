@@ -142,10 +142,10 @@ void AddSubItem(
 ```  
   
 ### Parameters  
- [in] `pSubItem`  
+ [in] *pSubItem*  
  Specifies a pointer to the new element to add.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Specifies the index at which to add the element to the array of menu items of the button; -1 to add the element at the end of the array of menu items.  
   
 ##  <a name="canbestretched"></a>  CMFCRibbonButton::CanBeStretched  
@@ -199,19 +199,19 @@ CMFCRibbonButton(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies the command ID of the button.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Specifies the text label of the button.  
   
- [in] `nSmallImageIndex`  
+ [in] *nSmallImageIndex*  
  Specifies a zero-based index of the button's small image in the image list of the parent category.  
   
- [in] `nLargeImageIndex`  
+ [in] *nLargeImageIndex*  
  Specifies a zero-based index of the button's large image in the image list of the parent category.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Specifies a handle to the icon that the application uses as the button's image.  
   
 ### Example  
@@ -229,8 +229,8 @@ CSize DrawBottomText(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `bCalcOnly`  
+ [in] *pDC*  
+ [in] *bCalcOnly*  
   
 ### Return Value  
   
@@ -247,9 +247,9 @@ virtual void DrawImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `type`  
- [in] `rectImage`  
+ [in] *pDC*  
+ [in] *type*  
+ [in] *rectImage*  
   
 ### Remarks  
   
@@ -266,11 +266,11 @@ virtual int DrawRibbonText(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `strText`  
- [in] `rectText`  
- [in] `uiDTFlags`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *strText*  
+ [in] *rectText*  
+ [in] *uiDTFlags*  
+ [in] *clrText*  
   
 ### Return Value  
   
@@ -284,11 +284,11 @@ int FindSubItemIndexByID(UINT uiID) const;
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  Specifies the command ID of the pop-up menu item.  
   
 ### Return Value  
- The zero-based index of the sub-item that is associated with the `uiID`. -1 if there is no such sub-item.  
+ The zero-based index of the sub-item that is associated with the *uiID*. -1 if there is no such sub-item.  
   
 ##  <a name="getcommandrect"></a>  CMFCRibbonButton::GetCommandRect  
 
@@ -309,7 +309,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -323,7 +323,7 @@ HICON GetIcon(BOOL bLargeIcon = TRUE) const;
 ```  
   
 ### Parameters  
- [in] `bLargeIcon`  
+ [in] *bLargeIcon*  
   
 ### Return Value  
   
@@ -337,8 +337,8 @@ int GetImageIndex(BOOL bLargeImage) const;
 ```  
   
 ### Parameters  
- [in] `bLargeImage`  
- If `TRUE`, returns the image index in the image list that contains the large images; otherwise returns the image index in the image list that contains the small images.  
+ [in] *bLargeImage*  
+ If TRUE, returns the image index in the image list that contains the large images; otherwise returns the image index in the image list that contains the small images.  
   
 ### Return Value  
  The index of the button's image in the associated image list.  
@@ -351,7 +351,7 @@ virtual CSize GetImageSize(RibbonImageType type) const;
 ```  
   
 ### Parameters  
- [in] `type`  
+ [in] *type*  
   
 ### Return Value  
   
@@ -365,7 +365,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -379,7 +379,7 @@ HMENU GetMenu() const;
 ```  
   
 ### Return Value  
- A handle to a Windows menu assigned to the button; `NULL` if there is no menu assigned.  
+ A handle to a Windows menu assigned to the button; NULL if there is no menu assigned.  
   
 ##  <a name="getmenurect"></a>  CMFCRibbonButton::GetMenuRect  
 
@@ -400,7 +400,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -535,7 +535,7 @@ BOOL IsDefaultCommand() const;
 ```  
   
 ### Return Value  
- `TRUE` if you have enabled the default command for a ribbon button; `FALSE` otherwise.  
+ TRUE if you have enabled the default command for a ribbon button; FALSE otherwise.  
   
 ##  <a name="isdefaultpanelbutton"></a>  CMFCRibbonButton::IsDefaultPanelButton  
 
@@ -611,7 +611,7 @@ BOOL IsRightAlignMenu() const;
 ```  
   
 ### Return Value  
- `TRUE` if menu is right-aligned; otherwise `FALSE`.  
+ TRUE if menu is right-aligned; otherwise FALSE.  
   
 ##  <a name="issinglelinetext"></a>  CMFCRibbonButton::IsSingleLineText  
 
@@ -632,7 +632,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -644,7 +644,7 @@ virtual void OnClick(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  Specifies the position of the mouse click.  
   
 ### Remarks  
@@ -658,7 +658,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -670,7 +670,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -682,7 +682,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -703,11 +703,11 @@ BOOL RemoveSubItem(int nIndex);
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  Specifies the zero-based index of the menu item that you want to remove.  
   
 ### Return Value  
- `TRUE` if the specified item has been removed successfully; otherwise `FALSE` if `nIndex` is negative or exceeds the number of menu items in the pop-up menu.  
+ TRUE if the specified item has been removed successfully; otherwise FALSE if *nIndex* is negative or exceeds the number of menu items in the pop-up menu.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonButton::SetACCData  
  Sets the accessibility data for the ribbon button.  
@@ -719,14 +719,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  The parent window for the ribbon element.  
   
- `data`  
+ *data*  
  The accessibility data for the ribbon element.  
   
 ### Return Value  
- Returns `TRUE` if successful; otherwise FALSE.  
+ Returns TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -738,8 +738,8 @@ void SetAlwaysLargeImage(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- If `TRUE`, the button displays a large image. Otherwise, the button displays a small image.  
+ [in] *bSet*  
+ If TRUE, the button displays a large image. Otherwise, the button displays a small image.  
   
 ##  <a name="setdefaultcommand"></a>  CMFCRibbonButton::SetDefaultCommand  
  Enables the default command for the ribbon button.  
@@ -749,11 +749,11 @@ void SetDefaultCommand(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- If `TRUE`, the button can execute its default command. If `FALSE`, the button cannot execute its default command.  
+ [in] *bSet*  
+ If TRUE, the button can execute its default command. If FALSE, the button cannot execute its default command.  
   
 ### Remarks  
- `bSet` is relevant only when the button has a menu. If `bSet` is `TRUE`, the button can execute its default command and the assigned pop-up menu appears only when a user clicks the arrow at the right edge of the button. Otherwise, the button cannot execute its default command, and the pop-up menu appears regardless of which area of the button the user clicks.  
+ *bSet* is relevant only when the button has a menu. If *bSet* is TRUE, the button can execute its default command and the assigned pop-up menu appears only when a user clicks the arrow at the right edge of the button. Otherwise, the button cannot execute its default command, and the pop-up menu appears regardless of which area of the button the user clicks.  
   
 ##  <a name="setdescription"></a>  CMFCRibbonButton::SetDescription  
 
@@ -763,7 +763,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
   
 ### Remarks  
   
@@ -777,11 +777,11 @@ void SetImageIndex(
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  Specifies the image index.  
   
- [in] `bLargeImage`  
- If `TRUE`, the specified index refers to the list of large images. Otherwise, the index refers to the list of the small images.  
+ [in] *bLargeImage*  
+ If TRUE, the specified index refers to the list of large images. Otherwise, the index refers to the list of the small images.  
   
 ##  <a name="setmenu"></a>  CMFCRibbonButton::SetMenu  
  Assigns a pop-up menu to the ribbon button.  
@@ -799,20 +799,20 @@ void SetMenu(
 ```  
   
 ### Parameters  
- `hMenu`  
+ *hMenu*  
  A handle to a Windows menu.  
   
- `bIsDefaultCommand`  
- If `TRUE`, the button can execute its default command; otherwise, the button displays a pop-up menu.  
+ *bIsDefaultCommand*  
+ If TRUE, the button can execute its default command; otherwise, the button displays a pop-up menu.  
   
- `bRightAlign`  
- If `TRUE`, the menu is right-aligned. Otherwise, the menu is left-aligned.  
+ *bRightAlign*  
+ If TRUE, the menu is right-aligned. Otherwise, the menu is left-aligned.  
   
- `uiMenuResID`  
+ *uiMenuResID*  
  A menu resource ID.  
   
 ### Remarks  
- When the application assigns the menu to the button, the button displays an arrow on its right side. If `bIsDefaultCommand` is `TRUE`, the menu appears only when the user clicks the arrow. If the user clicks the button, its default command is executed. If `bIsDefaultCommand` is `FALSE`, the menu appears by clicking anywhere on the button.  
+ When the application assigns the menu to the button, the button displays an arrow on its right side. If *bIsDefaultCommand* is TRUE, the menu appears only when the user clicks the arrow. If the user clicks the button, its default command is executed. If *bIsDefaultCommand* is FALSE, the menu appears by clicking anywhere on the button.  
   
 ##  <a name="setparentcategory"></a>  CMFCRibbonButton::SetParentCategory  
 
@@ -822,7 +822,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
   
 ### Remarks  
   
@@ -834,8 +834,8 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- If `TRUE`, the menu is right-aligned. Otherwise, the menu is left-aligned  
+ [in] *bSet*  
+ If TRUE, the menu is right-aligned. Otherwise, the menu is left-aligned  
   
 ##  <a name="settext"></a>  CMFCRibbonButton::SetText  
 
@@ -845,7 +845,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
   
 ### Remarks  
   

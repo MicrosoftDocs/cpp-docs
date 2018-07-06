@@ -23,11 +23,11 @@ class CComQIPtr: public CComPtr<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  A COM interface specifying the type of pointer to be stored.  
   
- `piid`  
- A pointer to the IID of `T`.  
+ *piid*  
+ A pointer to the IID of *T*.  
   
 ## Members  
   
@@ -44,7 +44,7 @@ class CComQIPtr: public CComPtr<T>
 |[CComQIPtr::operator =](#operator_eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
- ATL uses `CComQIPtr` and [CComPtr](../../atl/reference/ccomptr-class.md) to manage COM interface pointers, both of which derive from [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Both classes perform automatic reference counting through calls to `AddRef` and **Release**. Overloaded operators handle pointer operations.  
+ ATL uses `CComQIPtr` and [CComPtr](../../atl/reference/ccomptr-class.md) to manage COM interface pointers, both of which derive from [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Both classes perform automatic reference counting through calls to `AddRef` and `Release`. Overloaded operators handle pointer operations.  
   
 ## Inheritance Hierarchy  
  [CComPtrBase](../../atl/reference/ccomptrbase-class.md)  
@@ -67,14 +67,14 @@ CComQIPtr(const CComQIPtr<T, piid>& lp) throw();
 ```  
   
 ### Parameters  
- `lp`  
+ *lp*  
  Used to initialize the interface pointer.  
   
- `T`  
+ *T*  
  A COM interface.  
   
- `piid`  
- A pointer to the IID of `T`.  
+ *piid*  
+ A pointer to the IID of *T*.  
   
 ##  <a name="operator_eq"></a>  CComQIPtr::operator =  
  The assignment operator.  
@@ -86,14 +86,14 @@ T* operator= (IUnknown* lp) throw();
 ```  
   
 ### Parameters  
- `lp`  
+ *lp*  
  Used to initialize the interface pointer.  
   
- `T`  
+ *T*  
  A COM interface.  
   
- `piid`  
- A pointer to the IID of `T`.  
+ *piid*  
+ A pointer to the IID of *T*.  
   
 ### Return Value  
  Returns a pointer to the updated `CComQIPtr` object.  

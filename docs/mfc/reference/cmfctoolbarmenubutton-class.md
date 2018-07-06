@@ -61,7 +61,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 |[CMFCToolBarMenuButton::OnChangeParentWnd](#onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
 |[CMFCToolBarMenuButton::OnClick](#onclick)|Called by the framework when the user clicks the mouse button. (Overrides [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|  
 |[CMFCToolBarMenuButton::OnClickMenuItem](#onclickmenuitem)|Called by the framework when the user selects an item in the pop-up menu.|  
-|[CMFCToolBarMenuButton::OnContextHelp](#oncontexthelp)|Called by the framework when the parent toolbar handles a `WM_HELPHITTEST` message. (Overrides [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|  
+|[CMFCToolBarMenuButton::OnContextHelp](#oncontexthelp)|Called by the framework when the parent toolbar handles a WM_HELPHITTEST message. (Overrides [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|  
 |[CMFCToolBarMenuButton::OnDraw](#ondraw)|Called by the framework to draw the button by using the specified styles and options. (Overrides [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|  
 |[CMFCToolBarMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box. (Overrides [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|  
 |[CMFCToolBarMenuButton::OpenPopupMenu](#openpopupmenu)|Called by the framework when the user opens the pop-up menu.|  
@@ -85,7 +85,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw](#m_balwayscallownerdraw)|If `TRUE`, the framework always calls [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) when a button is drawn.|  
+|[CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw](#m_balwayscallownerdraw)|If TRUE, the framework always calls [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) when a button is drawn.|  
   
 ## Remarks  
  A `CMFCToolBarMenuButton` can appear as a menu, a menu item that has a sub-menu, a button that either executes a command or displays a menu, or a button that displays only a menu. You determine the behavior and appearance of the menu button by specifying parameters such as the image, text, menu handle, and command ID that is associated with the button in the constructor `CMFCToolbarMenuButton::CMFCToolbarMenuButton`.  
@@ -123,26 +123,26 @@ CMFCToolBarMenuButton(
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  An existing `CMFCToolBarMenuButton` object to be copied into this `CMFCToolBarMenuButton` object.  
   
- [in] `uiID`  
- The ID of the command to execute when a user clicks the button; or ( `UINT`)-1 for a menu button that does not directly execute a command.  
+ [in] *uiID*  
+ The ID of the command to execute when a user clicks the button; or (UINT)-1 for a menu button that does not directly execute a command.  
   
- [in] `hMenu`  
- A handle to a menu; or `NULL` if the button does not have a menu.  
+ [in] *hMenu*  
+ A handle to a menu; or NULL if the button does not have a menu.  
   
- [in] `iImage`  
- Index of the image for the button; or -1 if this button does not have an icon or uses the icon for the command specified by `uiID`. The index is the same for each `CMFCToolBarImages` object in your application.  
+ [in] *iImage*  
+ Index of the image for the button; or -1 if this button does not have an icon or uses the icon for the command specified by *uiID*. The index is the same for each `CMFCToolBarImages` object in your application.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  The text of the toolbar menu button.  
   
- [in] `bUserButton`  
- `TRUE` if the button displays a user-defined image; `FALSE` if the button displays a predefined image associated with the command specified by `uiID`.  
+ [in] *bUserButton*  
+ TRUE if the button displays a user-defined image; FALSE if the button displays a predefined image associated with the command specified by *uiID*.  
   
 ### Remarks  
- If `uiID` is a valid command ID, the button performs that command when the user clicks it. If `hMenu` is a valid menu handle, the button provides a drop-down menu when it appears in a toolbar or a submenu when it appears in a menu. If both `uiID` and `hMenu` are valid, the button is a split-button with a portion that will perform the command when the user clicks on it and a portion with a down arrow that will drop-down a menu when the user clicks on it. However, if `hMenu` is valid, a user will not be able to click the button to perform a command when the button is inserted into a menu.  
+ If *uiID* is a valid command ID, the button performs that command when the user clicks it. If *hMenu* is a valid menu handle, the button provides a drop-down menu when it appears in a toolbar or a submenu when it appears in a menu. If both *uiID* and *hMenu* are valid, the button is a split-button with a portion that will perform the command when the user clicks on it and a portion with a down arrow that will drop-down a menu when the user clicks on it. However, if *hMenu* is valid, a user will not be able to click the button to perform a command when the button is inserted into a menu.  
   
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarMenuButton` class. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
@@ -157,7 +157,7 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ```  
   
 ### Parameters  
- [in] `other`  
+ [in] *other*  
   
 ### Return Value  
   
@@ -171,7 +171,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Remarks  
   
@@ -183,7 +183,7 @@ virtual void CreateFromMenu(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  A handle to a menu.  
   
 ### Remarks  
@@ -199,7 +199,7 @@ virtual HMENU CreateMenu() const;
 ```  
   
 ### Return Value  
- A handle to the menu if success. `NULL` if the list of commands associated with the toolbar menu button is empty.  
+ A handle to the menu if success. NULL if the list of commands associated with the toolbar menu button is empty.  
   
 ### Remarks  
  You can override this method in a derived class to customize the way the menu is generated.  
@@ -230,17 +230,17 @@ void DrawDocumentIcon(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Coordinates of the image bounding rectangle.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  A handle to the icon.  
   
 ### Remarks  
- This method takes a document icon and draws it on the menu button, centered in the area specified by `rectImage`.  
+ This method takes a document icon and draws it on the menu button, centered in the area specified by *rectImage*.  
   
 ##  <a name="enablequickcustomize"></a>  CMFCToolBarMenuButton::EnableQuickCustomize  
 
@@ -317,7 +317,7 @@ const CObList& GetCommands() const;
  A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object, which contains a collection of [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) objects.  
   
 ### Remarks  
- A toolbar menu button can display a submenu. You can provide the list of commands in the submenu in the constructor or in [CMFCToolBarMenuButton::CreateFromMenu](#createfrommenu) as a handle to a menu ( `HMENU`). The menu is converted to a list of objects that are derived from [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) and stored in the internal `CObList` object. You can access this list by calling this method.  
+ A toolbar menu button can display a submenu. You can provide the list of commands in the submenu in the constructor or in [CMFCToolBarMenuButton::CreateFromMenu](#createfrommenu) as a handle to a menu (HMENU). The menu is converted to a list of objects that are derived from [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) and stored in the internal `CObList` object. You can access this list by calling this method.  
   
 ##  <a name="getimagerect"></a>  CMFCToolBarMenuButton::GetImageRect  
  Retrieves the bounding rectangle for the button image.  
@@ -327,7 +327,7 @@ void GetImageRect(CRect& rectImage);
 ```  
   
 ### Parameters  
- [out] `rectImage`  
+ [out] *rectImage*  
  A reference to a `CRect` object that receives the coordinates of the image bounding rectangle.  
   
 ##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows  
@@ -351,7 +351,7 @@ CMFCPopupMenu* GetPopupMenu() const;
 ```  
   
 ### Return Value  
- A pointer to a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object that was created when the framework drew the submenu of the toolbar menu button; `NULL` if no submenu is displayed.  
+ A pointer to a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object that was created when the framework drew the submenu of the toolbar menu button; NULL if no submenu is displayed.  
   
 ### Remarks  
  When a toolbar menu button displays a drop-down menu, the button creates a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object to represent the menu. Call this method to obtain a pointer to the `CMFCPopupMenu` object. You should not store the returned pointer, because it is temporary and becomes invalid when the user closes the drop-down menu.  
@@ -364,7 +364,7 @@ virtual BOOL IsDroppedDown() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar menu button displays its submenu; otherwise `FALSE`.  
+ TRUE if the toolbar menu button displays its submenu; otherwise FALSE.  
   
 ##  <a name="isemptymenuallowed"></a>  CMFCToolBarMenuButton::IsEmptyMenuAllowed  
  Specifies whether menu items shows empty submenus.  
@@ -374,12 +374,12 @@ virtual BOOL IsEmptyMenuAllowed() const;
 ```  
   
 ### Return Value  
- `TRUE` if the framework opens a submenu from the currently selected menu item even when the submenu is empty; otherwise `FALSE`.  
+ TRUE if the framework opens a submenu from the currently selected menu item even when the submenu is empty; otherwise FALSE.  
   
 ### Remarks  
- The framework calls this method when a user tries to open the submenu from the currently selected menu item. If the submenu is empty and `IsEmptyMenuAllowed` returns `FALSE`, the submenu will not open.  
+ The framework calls this method when a user tries to open the submenu from the currently selected menu item. If the submenu is empty and `IsEmptyMenuAllowed` returns FALSE, the submenu will not open.  
   
- The default implementation returns `FALSE`. Override this method to customize this behavior.  
+ The default implementation returns FALSE. Override this method to customize this behavior.  
   
 ##  <a name="isexclusive"></a>  CMFCToolBarMenuButton::IsExclusive  
  Indicates whether the button is in exclusive mode.  
@@ -389,12 +389,12 @@ virtual BOOL IsExclusive() const;
 ```  
   
 ### Return Value  
- `TRUE` if the button is working in exclusive mode; otherwise `FALSE`.  
+ TRUE if the button is working in exclusive mode; otherwise FALSE.  
   
 ### Remarks  
  When a user opens a popup menu for a button and then moves the mouse pointer over another toolbar or menu button, the popup menu closes unless the button is in exclusive mode.  
   
- The default implementation always returns `FALSE`. Override this method in a derived class if you want to turn on exclusive mode.  
+ The default implementation always returns FALSE. Override this method in a derived class if you want to turn on exclusive mode.  
   
 ##  <a name="ismenupalettemode"></a>  CMFCToolBarMenuButton::IsMenuPaletteMode  
  Determines whether the drop-down menu is in palette mode.  
@@ -404,7 +404,7 @@ BOOL IsMenuPaletteMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the palette mode is enabled, otherwise `FALSE`.  
+ TRUE if the palette mode is enabled, otherwise FALSE.  
   
 ### Remarks  
  When the menu button is set to palette mode, menu items appear in multiple columns with only a limited number of rows. Call this method to obtain the number of rows. You can enable or disable the palette mode by calling [CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode).  
@@ -417,7 +417,7 @@ virtual BOOL IsTearOffMenu() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar menu button has a tear-off bar; otherwise `FALSE`.  
+ TRUE if the toolbar menu button has a tear-off bar; otherwise FALSE.  
   
 ### Remarks  
  To enable the tear-off feature and set the tear-off bar ID, call [CMFCToolBarMenuButton::SetTearOff](#settearoff).  
@@ -430,7 +430,7 @@ static BOOL m_bAlwaysCallOwnerDraw;
 ```  
   
 ### Remarks  
- When this member variable is set to `TRUE`, the button always calls [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) method to display the image on the button. When `m_bAlwaysCallOwnerDraw` is `FALSE`, the button itself draws the image if the image is predefined. Otherwise, it calls `OnDrawMenuImage`.  
+ When this member variable is set to TRUE, the button always calls [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) method to display the image on the button. When `m_bAlwaysCallOwnerDraw` is FALSE, the button itself draws the image if the image is predefined. Otherwise, it calls `OnDrawMenuImage`.  
   
 ##  <a name="onaftercreatepopupmenu"></a>  CMFCToolBarMenuButton::OnAfterCreatePopupMenu  
 
@@ -463,9 +463,9 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `sizeDefault`  
- [in] `bHorz`  
+ [in] *pDC*  
+ [in] *sizeDefault*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -488,7 +488,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
   
 ### Remarks  
   
@@ -502,8 +502,8 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- [in] `bDelay`  
+ [in] *pWnd*  
+ [in] *bDelay*  
   
 ### Return Value  
   
@@ -517,7 +517,7 @@ virtual BOOL OnClickMenuItem();
 ```  
   
 ### Return Value  
- `FALSE` if the framework should continue the default menu item processing; otherwise `TRUE`. The default implementation always returns `FALSE`.  
+ FALSE if the framework should continue the default menu item processing; otherwise TRUE. The default implementation always returns FALSE.  
   
 ### Remarks  
  When the user clicks a menu item, the framework executes a command that is associated with that item.  
@@ -532,7 +532,7 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -554,14 +554,14 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pImages`  
- [in] `bHorz`  
- [in] `bCustomizeMode`  
- [in] `bHighlight`  
- [in] `bDrawBorder`  
- [in] `bGrayDisabledButtons`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pImages*  
+ [in] *bHorz*  
+ [in] *bCustomizeMode*  
+ [in] *bHighlight*  
+ [in] *bDrawBorder*  
+ [in] *bGrayDisabledButtons*  
   
 ### Remarks  
   
@@ -576,9 +576,9 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bSelected`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bSelected*  
   
 ### Return Value  
   
@@ -592,11 +592,11 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- Specifies the window that receives the drop-down menu commands. It can be `NULL` only if the toolbar menu button has a parent window.  
+ [in] *pWnd*  
+ Specifies the window that receives the drop-down menu commands. It can be NULL only if the toolbar menu button has a parent window.  
   
 ### Return Value  
- `TRUE` when a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object was created and opened successfully; otherwise `FALSE`.  
+ TRUE when a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object was created and opened successfully; otherwise FALSE.  
   
 ### Remarks  
  This function is called by the framework when the user opens a drop-down menu from a toolbar menu button.  
@@ -628,7 +628,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -642,17 +642,17 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  The parent window for the ribbon element.  
   
- `data`  
+ *data*  
  The accessibility data for the ribbon element.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method sets the accessibility data for the ribbon element and always returns `TRUE`. Override this method to set the accessibility data and return a value that indicates success or failure.  
+ By default this method sets the accessibility data for the ribbon element and always returns TRUE. Override this method to set the accessibility data and return a value that indicates success or failure.  
   
 ##  <a name="setmenuonly"></a>  CMFCToolBarMenuButton::SetMenuOnly  
  Specifies whether the button is drawn as a menu button or a split button when it has both a valid command ID and a submenu.  
@@ -662,11 +662,11 @@ void SetMenuOnly(BOOL bMenuOnly);
 ```  
   
 ### Parameters  
- [in] `bMenuOnly`  
- `TRUE` to show this button as a menu button when it has both a valid command ID and a submenu, `FALSE` to show this button as a split button when it has both a valid command ID and a submenu.  
+ [in] *bMenuOnly*  
+ TRUE to show this button as a menu button when it has both a valid command ID and a submenu, FALSE to show this button as a split button when it has both a valid command ID and a submenu.  
   
 ### Remarks  
- Typically, when a toolbar menu button has both a submenu and a command ID, the menu appears to be a split button that has a main button and an attached down arrow button. If you call this method and `bMenuOnly` is `TRUE`, the button instead appears to be a single menu button with a down arrow in the button. When the user clicks the arrow in either mode, the submenu opens, and when the user clicks the non-arrow part of the button in either mode the framework executes the command .  
+ Typically, when a toolbar menu button has both a submenu and a command ID, the menu appears to be a split button that has a main button and an attached down arrow button. If you call this method and *bMenuOnly* is TRUE, the button instead appears to be a single menu button with a down arrow in the button. When the user clicks the arrow in either mode, the submenu opens, and when the user clicks the non-arrow part of the button in either mode the framework executes the command .  
   
 ##  <a name="setmenupalettemode"></a>  CMFCToolBarMenuButton::SetMenuPaletteMode  
  Specifies whether the drop-down menu is in palette mode.  
@@ -678,14 +678,14 @@ void SetMenuPaletteMode(
 ```  
   
 ### Parameters  
- [in] `bMenuPaletteMode`  
+ [in] *bMenuPaletteMode*  
  Specifies whether the drop-down menu is in palette mode.  
   
- [in] `nPaletteRows`  
+ [in] *nPaletteRows*  
  Number of rows in palette.  
   
 ### Remarks  
- In the palette mode, all menu items are displayed as a multicolumn palette. You specify the number of rows by using `nPaletteRows`.  
+ In the palette mode, all menu items are displayed as a multicolumn palette. You specify the number of rows by using *nPaletteRows*.  
   
 ##  <a name="setmessagewnd"></a>  CMFCToolBarMenuButton::SetMessageWnd  
 
@@ -695,7 +695,7 @@ void SetMessageWnd(CWnd* pWndMessage);
 ```  
   
 ### Parameters  
- [in] `pWndMessage`  
+ [in] *pWndMessage*  
   
 ### Remarks  
   
@@ -719,11 +719,11 @@ virtual void SetTearOff(UINT uiBarID);
 ```  
   
 ### Parameters  
- [in] `uiBarID`  
+ [in] *uiBarID*  
  Specifies a new tear-off bar ID.  
   
 ### Remarks  
- Call this method to specify the ID for the tear-off bar that is created when the user drags the menu button off of a menu bar. If the `uiBarID` parameter is 0, the user cannot tear off the menu button.  
+ Call this method to specify the ID for the tear-off bar that is created when the user drags the menu button off of a menu bar. If the *uiBarID* parameter is 0, the user cannot tear off the menu button.  
   
  Call [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) to enable the tear-off menu feature in your application.  
   

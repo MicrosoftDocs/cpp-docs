@@ -34,7 +34,7 @@ You can overload both member functions and non-member functions. The following t
 ## Example  
  The following example illustrates how overloading can be used.  
   
-```  
+```cpp 
 // function_overloading.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -135,17 +135,17 @@ int print(double dvalue, int prec)
   
  Consider the following declarations (the functions are marked `Variant 1`, `Variant 2`, and `Variant 3`, for identification in the following discussion):  
   
-```  
+```cpp 
 Fraction &Add( Fraction &f, long l );       // Variant 1  
 Fraction &Add( long l, Fraction &f );       // Variant 2  
 Fraction &Add( Fraction &f, Fraction &f );  // Variant 3  
   
 Fraction F1, F2;  
-```  
+```
   
  Consider the following statement:  
   
-```  
+```cpp 
 F1 = Add( F2, 23 );  
 ```  
   
@@ -160,7 +160,7 @@ F1 = Add( F2, 23 );
   
  The intersection of these two sets is Variant 1. An example of an ambiguous function call is:  
   
-```  
+```cpp 
 F1 = Add( 3, 6 );  
 ```  
   
@@ -186,7 +186,7 @@ F1 = Add( 3, 6 );
   
  However, the function overloading mechanism can distinguish between references that are qualified by **const** and `volatile` and references to the base type. This makes code such as the following possible:  
   
-```  
+```cpp 
 // argument_type_differences.cpp  
 // compile with: /EHsc /W3  
 // C4521 expected  
@@ -213,7 +213,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 Over default constructor  
 Over&  
 Over default constructor  
@@ -296,7 +296,7 @@ Multiple-Inheritance Graph Illustrating Preferred Conversions
   
  User-defined conversions are applied if no built-in promotion or conversion exists. These conversions are selected on the basis of the type of the argument being matched. Consider the following code:  
   
-```  
+```cpp 
 // argument_matching1.cpp  
 class UDC  
 {  
@@ -324,7 +324,7 @@ int main()
   
  During the process of matching arguments, standard conversions can be applied to both the argument and the result of a user-defined conversion. Therefore, the following code works:  
   
-```  
+```cpp 
 void LogToFile( long l );  
 ...  
 UDC udc;  
@@ -335,7 +335,7 @@ LogToFile( udc );
   
  If any user-defined conversions are required to match an argument, the standard conversions are not used when evaluating the best match. This is true even if more than one candidate function requires a user-defined conversion; in such a case, the functions are considered equal. For example:  
   
-```  
+```cpp 
 // argument_matching2.cpp  
 // C2668 expected  
 class UDC1  
@@ -381,7 +381,7 @@ int main()
   
  The `.` member-selection operator works exactly the same way, except that an implicit `&` (address-of) operator is prefixed to the object name. The following example shows how this works:  
   
-```  
+```cpp 
 // Expression encountered in code  
 obj.name  
   
@@ -447,7 +447,7 @@ int main()
   
 -   `typedef` declarations do not define new types; they introduce synonyms for existing types. They do not affect the overloading mechanism. Consider the following code:  
   
-    ```  
+    ```cpp 
     typedef char * PSTR;  
   
     void Print( char *szToPrint );  
@@ -460,14 +460,14 @@ int main()
   
 -   The types "array of " and "pointer to" are considered identical for the purposes of distinguishing between overloaded functions. This is true only for singly dimensioned arrays. Therefore, the following overloaded functions conflict and generate an error message:  
   
-    ```  
+    ```cpp 
     void Print( char *szToPrint );  
     void Print( char szToPrint[] );  
     ```  
   
      For multiply dimensioned arrays, the second and all succeeding dimensions are considered part of the type. Therefore, they are used in distinguishing between overloaded functions:  
   
-    ```  
+    ```cpp 
     void Print( char szToPrint[] );  
     void Print( char szToPrint[][7] );  
     void Print( char szToPrint[][9][42] );  
@@ -483,7 +483,7 @@ If the base class function is not declared as 'virtual', then the derived class 
   
  Block scope is strictly observed; therefore, a function declared in file scope is not in the same scope as a function declared locally. If a locally declared function has the same name as a function declared in file scope, the locally declared function hides the file-scoped function instead of causing overloading. For example:  
   
-```  
+```cpp 
 // declaration_matching1.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -517,7 +517,7 @@ int main()
   
  Note that the call to `Deposit` in `Account::Deposit` calls the private member function. This call is correct because `Account::Deposit` is a member function and therefore has access to the private members of the class.  
   
-```  
+```cpp 
 // declaration_matching2.cpp  
 class Account  
 {  

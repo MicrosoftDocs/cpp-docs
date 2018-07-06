@@ -90,16 +90,16 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
- The IP Address control's style. Apply a combination of window styles. You must include the **WS_CHILD** style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
+ *dwStyle*  
+ The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
   
- `rect`  
+ *rect*  
  A reference to the IP Address Control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
- `pParentWnd`  
- A pointer to the IP Address Control's parent window. It must not be **NULL.**  
+ *pParentWnd*  
+ A pointer to the IP Address Control's parent window. It must not be NULL.  
   
- `nID`  
+ *nID*  
  The IP Address Control's ID.  
   
 ### Return Value  
@@ -110,9 +110,9 @@ virtual BOOL Create(
   
 1.  Call the constructor, which creates the `CIPAddressCtrl` object.  
   
-2.  Call **Create**, which creates the IP Address Control.  
+2.  Call `Create`, which creates the IP Address Control.  
   
- If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
+ If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of `Create`.  
   
 ##  <a name="createex"></a>  CIPAddressCtrl::CreateEx  
  Call this function to create a control (a child window) and associate it with the `CIPAddressCtrl` object.  
@@ -127,19 +127,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
- The IP Address control's style. Apply a combination of window styles. You must include the **WS_CHILD** style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
+ *dwStyle*  
+ The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
@@ -162,26 +162,26 @@ int GetAddress(DWORD& dwAddress);
 ```  
   
 ### Parameters  
- `nField0`  
+ *nField0*  
  A reference to the field 0 value from a packed IP address.  
   
- `nField1`  
+ *nField1*  
  A reference to the field 1 value from a packed IP address.  
   
- `nField2`  
+ *nField2*  
  A reference to the field 2 value from a packed IP address.  
   
- `nField3`  
+ *nField3*  
  A reference to the field 3 value from a packed IP address.  
   
- `dwAddress`  
- A reference to the address of a `DWORD` value that receives the IP address. See **Remarks** for a table that shows how `dwAddress` is filled.  
+ *dwAddress*  
+ A reference to the address of a DWORD value that receives the IP address. See **Remarks** for a table that shows how *dwAddress* is filled.  
   
 ### Return Value  
  The number of non-blank fields in the IP Address Control.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, `dwAddress` is populated as follows.  
+ This member function implements the behavior of the Win32 message [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.  
   
 |Field|Bits containing the field value|  
 |-----------|-------------------------------------|  
@@ -217,23 +217,23 @@ void SetAddress(DWORD dwAddress);
 ```  
   
 ### Parameters  
- `nField0`  
+ *nField0*  
  The field 0 value from a packed IP address.  
   
- `nField1`  
+ *nField1*  
  The field 1 value from a packed IP address.  
   
- `nField2`  
+ *nField2*  
  The field 2 value from a packed IP address.  
   
- `nField3`  
+ *nField3*  
  The field 3 value from a packed IP address.  
   
- `dwAddress`  
- A `DWORD` value that contains the new IP address. See **Remarks** for a table that shows how the `DWORD` value is filled.  
+ *dwAddress*  
+ A DWORD value that contains the new IP address. See **Remarks** for a table that shows how the DWORD value is filled.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, `dwAddress` is populated as follows.  
+ This member function implements the behavior of the Win32 message [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.  
   
 |Field|Bits containing the field value|  
 |-----------|-------------------------------------|  
@@ -250,7 +250,7 @@ void SetFieldFocus(WORD nField);
 ```  
   
 ### Parameters  
- `nField`  
+ *nField*  
  Zero-based field index to which the focus should be set. If this value is greater than the number of fields, focus is set to the first blank field. If all fields are non-blank, focus is set to the first field.  
   
 ### Remarks  
@@ -267,17 +267,17 @@ void SetFieldRange(
 ```  
   
 ### Parameters  
- `nField`  
+ *nField*  
  Zero-based field index to which the range will be applied.  
   
- `nLower`  
+ *nLower*  
  A reference to an integer receiving the lower limit of the specified field in this IP Address Control.  
   
- `nUpper`  
+ *nUpper*  
  A reference to an integer receiving the upper limit of the specified field in this IP Address Control.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [IPM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761382), as described in the Windows SDK. Use the two parameters, `nLower` and `nUpper`, to indicate the lower and upper limits of the field, instead of the *wRange* parameter used with the Win32 message.  
+ This member function implements the behavior of the Win32 message [IPM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761382), as described in the Windows SDK. Use the two parameters, *nLower* and *nUpper*, to indicate the lower and upper limits of the field, instead of the *wRange* parameter used with the Win32 message.  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

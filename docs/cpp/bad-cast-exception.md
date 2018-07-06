@@ -25,7 +25,7 @@ catch (bad_cast)
 ## Remarks  
  The interface for `bad_cast` is:  
   
-```  
+```cpp 
 class bad_cast : public exception {  
 public:  
    bad_cast(const char * _Message = "bad cast");  
@@ -36,7 +36,7 @@ public:
   
  The following code contains an example of a failed `dynamic_cast` that throws the `bad_cast` exception.  
   
-```  
+```cpp 
 // expre_bad_cast_Exception.cpp  
 // compile with: /EHsc /GR  
 #include <typeinfo.h>  
@@ -67,14 +67,14 @@ int main() {
   
  The exception is thrown because the object being cast (a Shape) is not derived from the specified cast type (Circle). To avoid the exception, add these declarations to **main**:  
   
-```  
+```cpp 
 Circle circle_instance;  
 Circle& ref_circle = circle_instance;  
 ```  
   
  Then reverse the sense of the cast in the **try** block as follows:  
   
-```  
+```cpp 
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);  
 ```  
   

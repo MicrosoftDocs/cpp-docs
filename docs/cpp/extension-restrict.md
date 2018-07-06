@@ -30,7 +30,7 @@ Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the `__rest
   
 ## Example  
   
-```  
+```cpp 
 // __restrict_keyword.c  
 // compile with: /LD  
 // In the following function, declare a and b as disjoint arrays  

@@ -29,7 +29,7 @@ struct CODBCFieldInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  The name of the field.  
   
  *m_nSQLType*  
@@ -42,7 +42,7 @@ struct CODBCFieldInfo
  The scale of the field. For details, see "Precision, Scale, Length, and Display Size" in the Windows SDK.  
   
  *m_nNullability*  
- Whether the field accepts a Null value. This can be one of two values: **SQL_NULLABLE** if the field accepts Null values, or **SQL_NO_NULLS** if the field does not accept Null values.  
+ Whether the field accepts a Null value. This can be one of two values: SQL_NULLABLE if the field accepts Null values, or SQL_NO_NULLS if the field does not accept Null values.  
   
 ## Remarks  
  To retrieve this information, call [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).  

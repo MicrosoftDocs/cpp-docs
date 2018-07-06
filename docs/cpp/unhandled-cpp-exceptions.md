@@ -17,7 +17,7 @@ If a matching handler (or ellipsis **catch** handler) cannot be found for the cu
 ## Example  
  The following example throws a `char *` exception, but does not contain a handler designated to catch exceptions of type `char *`. The call to `set_terminate` instructs `terminate` to call `term_func`.  
   
-```  
+```cpp 
 // exceptions_Unhandled_Exceptions.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -42,7 +42,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 term_func was called by terminate.  
 ```  
   

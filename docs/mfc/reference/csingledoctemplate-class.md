@@ -33,7 +33,7 @@ class CSingleDocTemplate : public CDocTemplate
   
  A document template defines the relationship between three types of classes:  
   
--   A document class, which you derive from **CDocument**.  
+-   A document class, which you derive from `CDocument`.  
   
 -   A view class, which displays data from the document class listed above. You can derive this class from `CView`, `CScrollView`, `CFormView`, or `CEditView`. (You can also use `CEditView` directly.)  
   
@@ -69,7 +69,7 @@ CSingleDocTemplate(
 ```  
   
 ### Parameters  
- `nIDResource`  
+ *nIDResource*  
  Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.  
   
  The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a placeholder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information about the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:  
@@ -88,13 +88,13 @@ CSingleDocTemplate(
   
  For more information about these resource types, see the [String Editor](../../windows/string-editor.md).  
   
- `pDocClass`  
- Points to the `CRuntimeClass` object of the document class. This class is a **CDocument**-derived class you define to represent your documents.  
+ *pDocClass*  
+ Points to the `CRuntimeClass` object of the document class. This class is a `CDocument`-derived class you define to represent your documents.  
   
- `pFrameClass`  
+ *pFrameClass*  
  Points to the `CRuntimeClass` object of the frame window class. This class can be a `CFrameWnd`-derived class, or it can be `CFrameWnd` itself if you want default behavior for your main frame window.  
   
- `pViewClass`  
+ *pViewClass*  
  Points to the `CRuntimeClass` object of the view class. This class is a `CView`-derived class you define to display your documents.  
   
 ### Remarks  

@@ -24,10 +24,10 @@ Because of the size and complexity of the raw OLE API, calling it directly to wr
  The `IMoniker` interface is implemented by the class library (for example, the `COleServerItem` class) but has not previously been exposed to the programmer. For more information about this interface, see OLE Moniker Implementations in the OLE section of the Windows SDK. However, see also class [CMonikerFile](../mfc/reference/cmonikerfile-class.md) and [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).  
   
  IUnknown and IMarshal Interfaces  
- The **IUnknown** interface is implemented by the class library but is not exposed to the programmer. The **IMarshal** interface is not implemented by the class library but is used internally. Automation servers built using the class library already have marshaling capabilities built in.  
+ The `IUnknown` interface is implemented by the class library but is not exposed to the programmer. The `IMarshal` interface is not implemented by the class library but is used internally. Automation servers built using the class library already have marshaling capabilities built in.  
   
  Docfiles (Compound Files)  
- Compound files are partially supported by the class library. None of the functions that directly manipulate compound files beyond creation are supported. MFC uses class **COleFileStream** to support manipulation of streams with standard file functions. For more information, see the article [Containers: Compound Files](../mfc/containers-compound-files.md).  
+ Compound files are partially supported by the class library. None of the functions that directly manipulate compound files beyond creation are supported. MFC uses class `COleFileStream` to support manipulation of streams with standard file functions. For more information, see the article [Containers: Compound Files](../mfc/containers-compound-files.md).  
   
  In-Process Servers and Object Handlers  
  In-process servers and object handlers allow implementation of visual editing data or full Component Object Model (COM) objects in a dynamic-link library (DLL). To do this, you can implement your DLL by calling the OLE API directly. However, if you are writing an Automation server and your server has no user interface, you can use AppWizard to make your server an in-process server and put it completely into a DLL. For more information about these topics, see [Automation Servers](../mfc/automation-servers.md).  

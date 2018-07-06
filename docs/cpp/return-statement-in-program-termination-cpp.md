@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # return Statement in Program Termination (C++)
 Issuing a `return` statement from **main** is functionally equivalent to calling the **exit** function. Consider the following example:  
   
-```  
+```cpp 
 // return_statement.cpp  
 #include <stdlib.h>  
 int main()  

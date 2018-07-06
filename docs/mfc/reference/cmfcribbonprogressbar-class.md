@@ -75,13 +75,13 @@ CMFCRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies the command ID for the ribbon progress bar.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Specifies the width, in pixels, of the ribbon progress bar.  
   
- [in] `nHeight`  
+ [in] *nHeight*  
  Specifies the height, in pixels, of the ribbon progress bar.  
   
 ##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
@@ -127,7 +127,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -141,7 +141,7 @@ BOOL IsInfiniteMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the progress bar is in infinite mode; otherwise, `FALSE`.  
+ TRUE if the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  In infinite mode, the progress bar fills repeatedly from the minimum value to the maximum value. You might use infinite mode to indicate that an operation is ongoing, but that the completion time is unknown.  
@@ -154,7 +154,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -166,8 +166,8 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- `TRUE` to specify that the progress bar is in infinite mode; otherwise, `FALSE`.  
+ [in] *bSet*  
+ TRUE to specify that the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  Usually, if the progress bar is in infinite mode, it is telling the user that an operation is ongoing, but that the completion time is unknown. Thus, the progress bar fills repeatedly from the minimum value to the maximum value.  
@@ -182,10 +182,10 @@ void SetPos(
 ```  
   
 ### Parameters  
- [in] `nPos`  
+ [in] *nPos*  
  Specifies the position to which the progress bar is set.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  Specifies whether the progress bar should be redrawn.  
   
 ### Remarks  
@@ -201,10 +201,10 @@ void SetRange(
 ```  
   
 ### Parameters  
- [in] `nMin`  
+ [in] *nMin*  
  Specifies the minimum value of the range.  
   
- [in] `nMax`  
+ [in] *nMax*  
  Specifies the maximum value of the range.  
   
 ### Remarks  

@@ -42,23 +42,23 @@ HRESULT    AtlAdvise(
 ```  
   
 ### Parameters  
- `pUnkCP`  
- [in] A pointer to the **IUnknown** of the object the client wants to connect with.  
+ *pUnkCP*  
+ [in] A pointer to the `IUnknown` of the object the client wants to connect with.  
   
  *pUnk*  
- [in] A pointer to the client's **IUnknown**.  
+ [in] A pointer to the client's `IUnknown`.  
   
- `iid`  
+ *iid*  
  [in] The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.  
   
- `pdw`  
+ *pdw*  
  [out] A pointer to the cookie that uniquely identifies the connection.  
   
 ### Return Value  
  A standard HRESULT value.  
   
 ### Remarks  
- The sink implements the outgoing interface supported by the connection point. The client uses the `pdw` cookie to remove the connection by passing it to [AtlUnadvise](#atlunadvise).  
+ The sink implements the outgoing interface supported by the connection point. The client uses the *pdw* cookie to remove the connection by passing it to [AtlUnadvise](#atlunadvise).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#91](../../atl/codesnippet/cpp/connection-point-global-functions_1.cpp)]  
@@ -77,13 +77,13 @@ HRESULT    AtlUnadvise(
 ```  
   
 ### Parameters  
- `pUnkCP`  
- [in] A pointer to the **IUnknown** of the object that the client is connected with.  
+ *pUnkCP*  
+ [in] A pointer to the `IUnknown` of the object that the client is connected with.  
   
- `iid`  
+ *iid*  
  [in] The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.  
   
- `dw`  
+ *dw*  
  [in] The cookie that uniquely identifies the connection.  
   
 ### Return Value  
@@ -106,8 +106,8 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
  *pT*  
  [in] A pointer to the object containing the sink map.  
   
- `bAdvise`  
- [in] **true** if all sink entries are to be advised; **false** if all sink entries are to be unadvised.  
+ *bAdvise*  
+ [in] TRUE if all sink entries are to be advised; FALSE if all sink entries are to be unadvised.  
   
 ### Return Value  
  A standard HRESULT value.  

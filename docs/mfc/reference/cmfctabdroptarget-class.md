@@ -79,26 +79,26 @@ virtual DROPEFFECT OnDragEnter(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWnd`|Unused.|  
-|[in] `pDataObject`|A pointer to the object that the user drags.|  
-|[in] `dwKeyState`|Contains the state of the modifier keys. This is a combination of any number of the following: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, and `MK_RBUTTON`.|  
-|[in] `point`|The location of the cursor in client coordinates.|  
+|[in] *pWnd*|Unused.|  
+|[in] *pDataObject*|A pointer to the object that the user drags.|  
+|[in] *dwKeyState*|Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|  
+|[in] *point*|The location of the cursor in client coordinates.|  
   
 ### Return Value  
- The effect that results if the drop occurs at the location specified by `point`. It can be one or more of the following:  
+ The effect that results if the drop occurs at the location specified by *point*. It can be one or more of the following:  
   
-- `DROPEFFECT_NONE`  
+- DROPEFFECT_NONE  
   
-- `DROPEFFECT_COPY`  
+- DROPEFFECT_COPY  
   
-- `DROPEFFECT_MOVE`  
+- DROPEFFECT_MOVE  
   
-- `DROPEFFECT_LINK`  
+- DROPEFFECT_LINK  
   
-- `DROPEFFECT_SCROLL`  
+- DROPEFFECT_SCROLL  
   
 ### Remarks  
- This method returns `DROPEFFECT_NONE` if the toolbar framework is not in customization mode or the Clipboard data format is unavailable. Otherwise, it returns the result of calling `CMFCBaseTabCtrl::OnDragEnter` with the provided parameters.  
+ This method returns DROPEFFECT_NONE if the toolbar framework is not in customization mode or the Clipboard data format is unavailable. Otherwise, it returns the result of calling `CMFCBaseTabCtrl::OnDragEnter` with the provided parameters.  
   
  For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
@@ -114,7 +114,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWnd`|Unused.|  
+|[in] *pWnd*|Unused.|  
   
 ### Remarks  
  This method calls the `CMFCBaseTabCtrl::OnDragLeave` method to perform the drag operation.  
@@ -135,26 +135,26 @@ virtual DROPEFFECT OnDragOver(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWnd`|Unused.|  
-|[in] `pDataObject`|A pointer to the object that the user drags.|  
-|[in] `dwKeyState`|Contains the state of the modifier keys. This is a combination of any number of the following: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, and `MK_RBUTTON`.|  
-|[in] `point`|The location of the mouse pointer in client coordinates.|  
+|[in] *pWnd*|Unused.|  
+|[in] *pDataObject*|A pointer to the object that the user drags.|  
+|[in] *dwKeyState*|Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|  
+|[in] *point*|The location of the mouse pointer in client coordinates.|  
   
 ### Return Value  
- The effect that results if the drop occurs at the location specified by `point`. It can be one or more of the following:  
+ The effect that results if the drop occurs at the location specified by *point*. It can be one or more of the following:  
   
-- `DROPEFFECT_NONE`  
+- DROPEFFECT_NONE  
   
-- `DROPEFFECT_COPY`  
+- DROPEFFECT_COPY  
   
-- `DROPEFFECT_MOVE`  
+- DROPEFFECT_MOVE  
   
-- `DROPEFFECT_LINK`  
+- DROPEFFECT_LINK  
   
-- `DROPEFFECT_SCROLL`  
+- DROPEFFECT_SCROLL  
   
 ### Remarks  
- This method makes the tab that is under the cursor when a drag operation occurs active. It returns `DROPEFFECT_NONE` if the toolbar framework is not in customization mode or the Clipboard data format is unavailable. Otherwise, it returns the result of calling `CMFCBaseTabCtrl::OnDragOver` with the provided parameters.  
+ This method makes the tab that is under the cursor when a drag operation occurs active. It returns DROPEFFECT_NONE if the toolbar framework is not in customization mode or the Clipboard data format is unavailable. Otherwise, it returns the result of calling `CMFCBaseTabCtrl::OnDragOver` with the provided parameters.  
   
  For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
@@ -175,27 +175,27 @@ virtual DROPEFFECT OnDropEx(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWnd`|Unused.|  
-|[in] `pDataObject`|A pointer to the object that the user drags.|  
-|[in] `dropEffect`|The default drop operation.|  
-|[in] `dropList`|Unused.|  
-|[in] `point`|The location of the mouse pointer in client coordinates.|  
+|[in] *pWnd*|Unused.|  
+|[in] *pDataObject*|A pointer to the object that the user drags.|  
+|[in] *dropEffect*|The default drop operation.|  
+|[in] *dropList*|Unused.|  
+|[in] *point*|The location of the mouse pointer in client coordinates.|  
   
 ### Return Value  
  The resulting drop effect. It can be one or more of the following:  
   
-- `DROPEFFECT_NONE`  
+- DROPEFFECT_NONE  
   
-- `DROPEFFECT_COPY`  
+- DROPEFFECT_COPY  
   
-- `DROPEFFECT_MOVE`  
+- DROPEFFECT_MOVE  
   
-- `DROPEFFECT_LINK`  
+- DROPEFFECT_LINK  
   
-- `DROPEFFECT_SCROLL`  
+- DROPEFFECT_SCROLL  
   
 ### Remarks  
- This method calls `CMFCBaseTabCtrl::OnDrop` if the toolbar framework is in customization mode and the Clipboard data format is available. If the call to `CMFCBaseTabCtrl::OnDrop` returns a nonzero value, this method returns the default drop effect specified by `dropEffect`. Otherwise, this method returns `DROPEFFECT_NONE`. For more information about drop effects, see [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).  
+ This method calls `CMFCBaseTabCtrl::OnDrop` if the toolbar framework is in customization mode and the Clipboard data format is available. If the call to `CMFCBaseTabCtrl::OnDrop` returns a nonzero value, this method returns the default drop effect specified by *dropEffect*. Otherwise, this method returns DROPEFFECT_NONE. For more information about drop effects, see [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).  
   
  For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
@@ -211,7 +211,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pOwner`|The tab control to register as a drop target.|  
+|[in] *pOwner*|The tab control to register as a drop target.|  
   
 ### Return Value  
  Nonzero if registration was successful; otherwise 0.  

@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
   
  Keep in mind that if a function is marked `noinline`, the calling function will be smaller and thus, itself a candidate for compiler inlining.  
   
-```  
+```cpp 
 class X {  
    __declspec(noinline) int mbrfunc() {  
       return 0;   

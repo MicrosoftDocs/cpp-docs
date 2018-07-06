@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Argument Definitions
 The arguments in the prototype  
   
-```  
+```cpp 
   
 int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);  
@@ -42,7 +42,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 ## Example  
  The following example shows how to use the *argc*, *argv*, and *envp* arguments to **main**:  
   
-```  
+```cpp 
 // argument_definitions.cpp  
 // compile with: /EHsc  
 #include <iostream>  

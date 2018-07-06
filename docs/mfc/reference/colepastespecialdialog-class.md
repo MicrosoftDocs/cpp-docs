@@ -35,7 +35,7 @@ class COlePasteSpecialDialog : public COleDialog
 |----------|-----------------|  
 |[COlePasteSpecialDialog::AddFormat](#addformat)|Adds custom formats to the list of formats your application can paste.|  
 |[COlePasteSpecialDialog::AddLinkEntry](#addlinkentry)|Adds a new entry to the list of supported Clipboard formats.|  
-|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Adds **CF_BITMAP**, **CF_DIB**, `CF_METAFILEPICT`, and optionally `CF_LINKSOURCE` to the list of formats your application can paste.|  
+|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Adds CF_BITMAP, CF_DIB, CF_METAFILEPICT, and optionally CF_LINKSOURCE to the list of formats your application can paste.|  
 |[COlePasteSpecialDialog::CreateItem](#createitem)|Creates the item in the container document using the specified format.|  
 |[COlePasteSpecialDialog::DoModal](#domodal)|Displays the OLE Paste Special dialog box.|  
 |[COlePasteSpecialDialog::GetDrawAspect](#getdrawaspect)|Tells whether to draw item as an icon or not.|  
@@ -47,10 +47,10 @@ class COlePasteSpecialDialog : public COleDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COlePasteSpecialDialog::m_ps](#m_ps)|A structure of type **OLEUIPASTESPECIAL** that controls the function of the dialog box.|  
+|[COlePasteSpecialDialog::m_ps](#m_ps)|A structure of type OLEUIPASTESPECIAL that controls the function of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COlePasteSpecialDialog` when you want to call this dialog box. After a `COlePasteSpecialDialog` object has been constructed, you can use the [AddFormat](#addformat) and [AddStandardFormats](#addstandardformats) member functions to add Clipboard formats to the dialog box. You can also use the [m_ps](#m_ps) structure to initialize the values or states of controls in the dialog box. The `m_ps` structure is of type **OLEUIPASTESPECIAL**.  
+ Create an object of class `COlePasteSpecialDialog` when you want to call this dialog box. After a `COlePasteSpecialDialog` object has been constructed, you can use the [AddFormat](#addformat) and [AddStandardFormats](#addstandardformats) member functions to add Clipboard formats to the dialog box. You can also use the [m_ps](#m_ps) structure to initialize the values or states of controls in the dialog box. The `m_ps` structure is of type OLEUIPASTESPECIAL.  
   
  For more information, see the [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) structure in the Windows SDK.  
   
@@ -97,22 +97,22 @@ void AddFormat(
  *fmt*  
  Reference to the data type to add.  
   
- `lpszFormat`  
+ *lpszFormat*  
  String that describes the format to the user.  
   
  *lpszResult*  
  String that describes the result if this format is chosen in the dialog box.  
   
- `flags`  
- The different linking and embedding options available for this format. This flag is a bitwise combination of one or more of the different values in the **OLEUIPASTEFLAG** enumerated type.  
+ *flags*  
+ The different linking and embedding options available for this format. This flag is a bitwise combination of one or more of the different values in the OLEUIPASTEFLAG enumerated type.  
   
- `cf`  
+ *cf*  
  The clipboard format to add.  
   
  *tymed*  
- The types of media available in this format. This is a bitwise combination of one or more of the values in the **TYMED** enumerated type.  
+ The types of media available in this format. This is a bitwise combination of one or more of the values in the TYMED enumerated type.  
   
- `nFormatID`  
+ *nFormatID*  
  The ID of the string that identifies this format. The format of this string is two separate strings separated by a '\n' character. The first string is the same that would be passed in the *lpstrFormat* parameter, and the second is the same as the *lpstrResult* parameter.  
   
  *bEnableIcon*  
@@ -122,7 +122,7 @@ void AddFormat(
  Flag that determines whether the Paste Link radio button is enabled when this format is chosen in the list box.  
   
 ### Remarks  
- This function can be called to add either standard formats such as **CF_TEXT** or **CF_TIFF** or custom formats that your application has registered with the system. For more information about pasting data objects into your application, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ This function can be called to add either standard formats such as CF_TEXT or CF_TIFF or custom formats that your application has registered with the system. For more information about pasting data objects into your application, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
  For more information, see the [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type and the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
@@ -136,7 +136,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
 ```  
   
 ### Parameters  
- `cf`  
+ *cf*  
  The clipboard format to add.  
   
 ### Return Value  
@@ -151,15 +151,15 @@ void AddStandardFormats(BOOL bEnableLink = TRUE);
   
 ### Parameters  
  *bEnableLink*  
- Flag that determines whether to add `CF_LINKSOURCE` to the list of formats your application can paste.  
+ Flag that determines whether to add CF_LINKSOURCE to the list of formats your application can paste.  
   
 ### Remarks  
   
-- **CF_BITMAP**  
+- CF_BITMAP  
   
-- **CF_DIB**  
+- CF_DIB  
   
-- `CF_METAFILEPICT`  
+- CF_METAFILEPICT  
   
 - **"Embedded Object"**  
   
@@ -178,22 +178,22 @@ COlePasteSpecialDialog(
 ```  
   
 ### Parameters  
- `dwFlags`  
+ *dwFlags*  
  Creation flag, contains any number of the following flags combined using the bitwise-OR operator:  
   
-- `PSF_SELECTPASTE` Specifies that the Paste radio button will be checked initially when the dialog box is called. Cannot be used in combination with `PSF_SELECTPASTELINK`. This is the default.  
+- PSF_SELECTPASTE Specifies that the Paste radio button will be checked initially when the dialog box is called. Cannot be used in combination with PSF_SELECTPASTELINK. This is the default.  
   
-- `PSF_SELECTPASTELINK` Specifies that the Paste Link radio button will be checked initially when the dialog box is called. Cannot be used in combination with `PSF_SELECTPASTE`.  
+- PSF_SELECTPASTELINK Specifies that the Paste Link radio button will be checked initially when the dialog box is called. Cannot be used in combination with PSF_SELECTPASTE.  
   
-- `PSF_CHECKDISPLAYASICON` Specifies that the Display As Icon check box will be checked initially when the dialog box is called.  
+- PSF_CHECKDISPLAYASICON Specifies that the Display As Icon check box will be checked initially when the dialog box is called.  
   
-- `PSF_SHOWHELP` Specifies that the Help button will be displayed when the dialog box is called.  
+- PSF_SHOWHELP Specifies that the Help button will be displayed when the dialog box is called.  
   
- `pDataObject`  
- Points to the [COleDataObject](../../mfc/reference/coledataobject-class.md) for pasting. If this value is **NULL**, it gets the `COleDataObject` from the Clipboard.  
+ *pDataObject*  
+ Points to the [COleDataObject](../../mfc/reference/coledataobject-class.md) for pasting. If this value is NULL, it gets the `COleDataObject` from the Clipboard.  
   
- `pParentWnd`  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box is set to the main application window.  
+ *pParentWnd*  
+ Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog box is set to the main application window.  
   
 ### Remarks  
  This function only constructs a `COlePasteSpecialDialog` object. To display the dialog box, call the [DoModal](#domodal) function.  
@@ -209,13 +209,13 @@ BOOL CreateItem(COleClientItem* pNewItem);
   
 ### Parameters  
  *pNewItem*  
- Points to a `COleClientItem` instance. Cannot be **NULL**.  
+ Points to a `COleClientItem` instance. Cannot be NULL.  
   
 ### Return Value  
  Nonzero if the item was created successfully; otherwise 0.  
   
 ### Remarks  
- This function should only be called after [DoModal](#domodal) returns **IDOK**.  
+ This function should only be called after [DoModal](#domodal) returns IDOK.  
   
 ##  <a name="domodal"></a>  COlePasteSpecialDialog::DoModal  
  Displays the OLE Paste Special dialog box.  
@@ -227,16 +227,16 @@ virtual INT_PTR DoModal();
 ### Return Value  
  Completion status for the dialog box. One of the following values:  
   
-- **IDOK** if the dialog box was successfully displayed.  
+- IDOK if the dialog box was successfully displayed.  
   
-- **IDCANCEL** if the user canceled the dialog box.  
+- IDCANCEL if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_ps](#m_ps) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- If `DoModal` returns **IDOK**, you can call other member functions to retrieve the settings or information input by the user into the dialog box.  
+ If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information input by the user into the dialog box.  
   
 ##  <a name="getdrawaspect"></a>  COlePasteSpecialDialog::GetDrawAspect  
  Determines if the user chose to display the selected item as an icon.  
@@ -248,12 +248,12 @@ DVASPECT GetDrawAspect() const;
 ### Return Value  
  The method needed to render the object.  
   
-- `DVASPECT_CONTENT` Returned if the Display As Icon check box was not checked when the dialog box was dismissed.  
+- DVASPECT_CONTENT Returned if the Display As Icon check box was not checked when the dialog box was dismissed.  
   
-- `DVASPECT_ICON` Returned if the Display As Icon check box was checked when the dialog box was dismissed.  
+- DVASPECT_ICON Returned if the Display As Icon check box was checked when the dialog box was dismissed.  
   
 ### Remarks  
- Only call this function after [DoModal](#domodal) returns **IDOK**.  
+ Only call this function after [DoModal](#domodal) returns IDOK.  
   
  For more information on drawing aspect, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
@@ -265,7 +265,7 @@ HGLOBAL GetIconicMetafile() const;
 ```  
   
 ### Return Value  
- The handle to the metafile containing the iconic aspect of the selected item, if the Display As Icon check box was selected when the dialog box was dismissed by choosing **OK**; otherwise **NULL**.  
+ The handle to the metafile containing the iconic aspect of the selected item, if the Display As Icon check box was selected when the dialog box was dismissed by choosing **OK**; otherwise NULL.  
   
 ##  <a name="getpasteindex"></a>  COlePasteSpecialDialog::GetPasteIndex  
  Gets the index value associated with the entry the user selected.  
@@ -275,7 +275,7 @@ int GetPasteIndex() const;
 ```  
   
 ### Return Value  
- The index into the array of **OLEUIPASTEENTRY** structures that was selected by the user. The format that corresponds to the selected index should be used when performing the paste operation.  
+ The index into the array of `OLEUIPASTEENTRY` structures that was selected by the user. The format that corresponds to the selected index should be used when performing the paste operation.  
   
 ### Remarks  
  For more information, see the [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) structure in the Windows SDK.  
@@ -291,7 +291,7 @@ UINT GetSelectionType() const;
  Returns type of selection made.  
   
 ### Remarks  
- The return type values are specified by the **Selection** enumeration type declared in the `COlePasteSpecialDialog` class.  
+ The return type values are specified by the `Selection` enumeration type declared in the `COlePasteSpecialDialog` class.  
   
 ```  
 enum Selection {
@@ -304,16 +304,16 @@ enum Selection {
   
  Brief desccriptions of these values follow:  
   
-- **COlePasteSpecialDialog::pasteLink** The Paste Link radio button was checked and the chosen format was a standard OLE format.  
+- `COlePasteSpecialDialog::pasteLink` The Paste Link radio button was checked and the chosen format was a standard OLE format.  
   
-- **COlePasteSpecialDialog::pasteNormal** The Paste radio button was checked and the chosen format was a standard OLE format.  
+- `COlePasteSpecialDialog::pasteNormal` The Paste radio button was checked and the chosen format was a standard OLE format.  
   
-- **COlePasteSpecialDialog::pasteOther** The selected format is not a standard OLE format.  
+- `COlePasteSpecialDialog::pasteOther` The selected format is not a standard OLE format.  
   
-- **COlePasteSpecialDialog::pasteStatic** The chosen format was a metafile.  
+- `COlePasteSpecialDialog::pasteStatic` The chosen format was a metafile.  
   
 ##  <a name="m_ps"></a>  COlePasteSpecialDialog::m_ps  
- Structure of type **OLEUIPASTESPECIAL** used to control the behavior of the Paste Special dialog box.  
+ Structure of type OLEUIPASTESPECIAL used to control the behavior of the Paste Special dialog box.  
   
 ```  
 OLEUIPASTESPECIAL m_ps;  

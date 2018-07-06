@@ -41,14 +41,14 @@ This article explains the changes that need to be made to the menus and other re
   
  The second table is nearly an exact copy of the view's accelerator table. Any differences parallel changes made in the fully open menu mentioned in [Server Menu Additions](#_core_server_menu_additions).  
   
- For an example of these accelerator table changes, compare the **IDR_HIERSVRTYPE_SRVR_IP** and **IDR_HIERSVRTYPE_SRVR_EMB** accelerator tables with **IDR_MAINFRAME** in the HIERSVR.RC file included in the MFC OLE sample [HIERSVR](../visual-cpp-samples.md). The File and Window accelerators are missing from the in-place table and exact copies of them are in the embedded table.  
+ For an example of these accelerator table changes, compare the IDR_HIERSVRTYPE_SRVR_IP and IDR_HIERSVRTYPE_SRVR_EMB accelerator tables with IDR_MAINFRAME in the HIERSVR.RC file included in the MFC OLE sample [HIERSVR](../visual-cpp-samples.md). The File and Window accelerators are missing from the in-place table and exact copies of them are in the embedded table.  
   
 ##  <a name="_core_string_table_additions_for_server_applications"></a> String Table Additions for Server Applications  
  Only one string table addition is necessary in a server application — a string to signify that the OLE initialization failed. As an example, here is the string-table entry that the application wizard generates:  
   
 |ID|String|  
 |--------|------------|  
-|**IDP_OLE_INIT_FAILED**|OLE initialization failed. Make sure that the OLE libraries are the correct version.|  
+|IDP_OLE_INIT_FAILED|OLE initialization failed. Make sure that the OLE libraries are the correct version.|  
   
 ##  <a name="_core_mini.2d.server_additions"></a> Miniserver Additions  
  The same additions apply for miniservers as those listed above for full-servers. Because a miniserver cannot be run in stand-alone mode, its main menu is much smaller. The main menu created by the application wizard has only a File menu, containing only the items Exit and About. Embedded and in-place menus and accelerators for miniservers are the same as those for full-servers.  

@@ -28,7 +28,7 @@ ms.workload: ["cplusplus"]
   
 ## Example  
   
-```  
+```cpp 
 // expre_One_Complement_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  

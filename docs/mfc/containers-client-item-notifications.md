@@ -20,11 +20,11 @@ This article discusses the overridable functions that the MFC framework calls wh
   
 |Notification|Meaning|  
 |------------------|-------------|  
-|`OLE_CHANGED`|The OLE item's appearance has changed.|  
-|`OLE_SAVED`|The OLE item has been saved.|  
-|`OLE_CLOSED`|The OLE item has been closed.|  
+|**OLE_CHANGED**|The OLE item's appearance has changed.|  
+|**OLE_SAVED**|The OLE item has been saved.|  
+|**OLE_CLOSED**|The OLE item has been closed.|  
 |**OLE_RENAMED**|The server document containing the OLE item has been renamed.|  
-|`OLE_CHANGED_STATE`|The OLE item has changed from one state to another.|  
+|**OLE_CHANGED_STATE**|The OLE item has changed from one state to another.|  
 |**OLE_CHANGED_ASPECT**|The OLE item's draw aspect has been changed by the framework.|  
   
  These values are from the **OLE_NOTIFICATION** enumeration, which is defined in AFXOLE.H.  
@@ -33,9 +33,9 @@ This article discusses the overridable functions that the MFC framework calls wh
   
 |When first argument is|Second argument|  
 |----------------------------|---------------------|  
-|`OLE_SAVED` or `OLE_CLOSED`|Is not used.|  
-|`OLE_CHANGED`|Specifies the aspect of the OLE item that has changed.|  
-|`OLE_CHANGED_STATE`|Describes the state being entered (`emptyState`, **loadedState**, `openState`, `activeState`, or `activeUIState`).|  
+|**OLE_SAVED** or **OLE_CLOSED**|Is not used.|  
+|**OLE_CHANGED**|Specifies the aspect of the OLE item that has changed.|  
+|**OLE_CHANGED_STATE**|Describes the state being entered (*emptyState*, *loadedState*, *openState*, *activeState*, or *activeUIState*).|  
   
  For more information about the states a client item can assume, see [Containers: Client-Item States](../mfc/containers-client-item-states.md).  
   

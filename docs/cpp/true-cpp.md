@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      bool-identifier = true ;  
+bool-identifier = true ;  
 bool-expression logical-operator true ;  
 ```  
   
@@ -26,7 +26,7 @@ bool-expression logical-operator true ;
   
 ## Example  
   
-```  
+```cpp 
 // bool_true.cpp  
 #include <stdio.h>  
 int main()  

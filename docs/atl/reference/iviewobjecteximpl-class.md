@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IViewObjectExImpl Class
-This class implements **IUnknown** and provides default implementations of the [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces.  
+This class implements `IUnknown` and provides default implementations of the [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -27,7 +27,7 @@ class ATL_NO_VTABLE IViewObjectExImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IViewObjectExImpl`.  
   
 ## Members  
@@ -37,20 +37,20 @@ class ATL_NO_VTABLE IViewObjectExImpl
 |Name|Description|  
 |----------|-----------------|  
 |[IViewObjectExImpl::Draw](#draw)|Draws a representation of the control onto a device context.|  
-|[IViewObjectExImpl::Freeze](#freeze)|Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::Freeze](#freeze)|Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns E_NOTIMPL.|  
 |[IViewObjectExImpl::GetAdvise](#getadvise)|Retrieves an existing advisory sink connection on the control, if there is one.|  
-|[IViewObjectExImpl::GetColorSet](#getcolorset)|Returns the logical palette used by the control for drawing. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::GetColorSet](#getcolorset)|Returns the logical palette used by the control for drawing. The ATL implementation returns E_NOTIMPL.|  
 |[IViewObjectExImpl::GetExtent](#getextent)|Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).|  
 |[IViewObjectExImpl::GetNaturalExtent](#getnaturalextent)|Provides sizing hints from the container for the object to use as the user resizes it.|  
-|[IViewObjectExImpl::GetRect](#getrect)|Returns a rectangle describing a requested drawing aspect. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::GetRect](#getrect)|Returns a rectangle describing a requested drawing aspect. The ATL implementation returns E_NOTIMPL.|  
 |[IViewObjectExImpl::GetViewStatus](#getviewstatus)|Returns information about the opacity of the object and what drawing aspects are supported.|  
 |[IViewObjectExImpl::QueryHitPoint](#queryhitpoint)|Checks if the specified point is in the specified rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.|  
-|[IViewObjectExImpl::QueryHitRect](#queryhitrect)|Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a **HITRESULT** value in `pHitResult`.|  
+|[IViewObjectExImpl::QueryHitRect](#queryhitrect)|Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a HITRESULT value in `pHitResult`.|  
 |[IViewObjectExImpl::SetAdvise](#setadvise)|Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.|  
-|[IViewObjectExImpl::Unfreeze](#unfreeze)|Unfreezes the drawn representation of the control. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::Unfreeze](#unfreeze)|Unfreezes the drawn representation of the control. The ATL implementation returns E_NOTIMPL.|  
   
 ## Remarks  
- The [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces enable a control to display itself directly, and to create and manage an advise sink to notify the container of changes in the control display. The **IViewObjectEx** interface provides support for extended control features such as flicker-free drawing, non-rectangular and transparent controls, and hit-testing (for example, how close a mouse click must be to be considered on the control). Class `IViewObjectExImpl` provides a default implementation of these interfaces and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces enable a control to display itself directly, and to create and manage an advise sink to notify the container of changes in the control display. The `IViewObjectEx` interface provides support for extended control features such as flicker-free drawing, non-rectangular and transparent controls, and hit-testing (for example, how close a mouse click must be to be considered on the control). Class `IViewObjectExImpl` provides a default implementation of these interfaces and implements `IUnknown` by sending information to the dump device in debug builds.  
   
 ## Inheritance Hierarchy  
  `IViewObjectEx`  
@@ -77,12 +77,12 @@ STDMETHOD(Draw)(
 ```  
   
 ### Remarks  
- This method calls **CComControl::OnDrawAdvanced** which in turn calls your control class's `OnDraw` method. An `OnDraw` method is automatically added to your control class when you create your control with the ATL Control Wizard. The Wizard's default `OnDraw` draws a rectangle with the label "ATL 3.0".  
+ This method calls `CComControl::OnDrawAdvanced` which in turn calls your control class's `OnDraw` method. An `OnDraw` method is automatically added to your control class when you create your control with the ATL Control Wizard. The Wizard's default `OnDraw` draws a rectangle with the label "ATL 3.0".  
   
  See [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655) in the Windows SDK.  
   
 ##  <a name="freeze"></a>  IViewObjectExImpl::Freeze  
- Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns **E_NOTIMPL**.  
+ Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns E_NOTIMPL.  
   
 ```
 STDMETHOD(Freeze)(
@@ -111,7 +111,7 @@ STDMETHOD(GetAdvise)(
  See [IViewObject::GetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692772) in the Windows SDK.  
   
 ##  <a name="getcolorset"></a>  IViewObjectExImpl::GetColorSet  
- Returns the logical palette used by the control for drawing. The ATL implementation returns **E_NOTIMPL**.  
+ Returns the logical palette used by the control for drawing. The ATL implementation returns E_NOTIMPL.  
   
 ```
 STDMETHOD(GetColorSet)(
@@ -154,12 +154,12 @@ STDMETHOD(GetNaturalExtent)(
 ```  
   
 ### Remarks  
- If `dwAspect` is `DVASPECT_CONTENT` and *pExtentInfo->dwExtentMode* is **DVEXTENT_CONTENT**, sets * `psizel` to the control class's data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). Otherwise, returns an error `HRESULT`.  
+ If `dwAspect` is DVASPECT_CONTENT and *pExtentInfo->dwExtentMode* is DVEXTENT_CONTENT, sets * `psizel` to the control class's data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). Otherwise, returns an error HRESULT.  
   
  See [IViewObjectEx::GetNaturalExtent](http://msdn.microsoft.com/library/windows/desktop/ms683718) in the Windows SDK.  
   
 ##  <a name="getrect"></a>  IViewObjectExImpl::GetRect  
- Returns a rectangle describing a requested drawing aspect. The ATL implementation returns **E_NOTIMPL**.  
+ Returns a rectangle describing a requested drawing aspect. The ATL implementation returns E_NOTIMPL.  
   
 ```
 STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
@@ -176,7 +176,7 @@ STDMETHOD(GetViewStatus)(DWORD* pdwStatus);
 ```  
   
 ### Remarks  
- By default, ATL sets `pdwStatus` to indicate that the control supports **VIEWSTATUS_OPAQUE** (possible values are in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration).  
+ By default, ATL sets `pdwStatus` to indicate that the control supports VIEWSTATUS_OPAQUE (possible values are in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration).  
   
  See [IViewObjectEx::GetViewStatus](http://msdn.microsoft.com/library/windows/desktop/ms693371) in the Windows SDK.  
   
@@ -193,9 +193,9 @@ STDMETHOD(QueryHitPoint)(
 ```  
   
 ### Remarks  
- The value can be either **HITRESULT_HIT** or **HITRESULT_OUTSIDE**.  
+ The value can be either HITRESULT_HIT or HITRESULT_OUTSIDE.  
   
- If `dwAspect` equals [DVASPECT_CONTENT](http://msdn.microsoft.com/library/windows/desktop/ms690318), the method returns `S_OK`. Otherwise, the method returns **E_FAIL**.  
+ If `dwAspect` equals [DVASPECT_CONTENT](http://msdn.microsoft.com/library/windows/desktop/ms690318), the method returns S_OK. Otherwise, the method returns E_FAIL.  
   
  See [IViewObjectEx::QueryHitPoint](http://msdn.microsoft.com/library/windows/desktop/ms691209) in the Windows SDK.  
   
@@ -212,9 +212,9 @@ STDMETHOD(QueryHitRect)(
 ```  
   
 ### Remarks  
- The value can be either **HITRESULT_HIT** or **HITRESULT_OUTSIDE**.  
+ The value can be either HITRESULT_HIT or HITRESULT_OUTSIDE.  
   
- If `dwAspect` equals [DVASPECT_CONTENT](http://msdn.microsoft.com/library/windows/desktop/ms690318), the method returns `S_OK`. Otherwise, the method returns **E_FAIL**.  
+ If `dwAspect` equals [DVASPECT_CONTENT](http://msdn.microsoft.com/library/windows/desktop/ms690318), the method returns S_OK. Otherwise, the method returns E_FAIL.  
   
  See [IViewObjectEx::QueryHitRect](http://msdn.microsoft.com/library/windows/desktop/ms693797) in the Windows SDK.  
   
@@ -236,7 +236,7 @@ STDMETHOD(SetAdvise)(
  See [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) in the Windows SDK.  
   
 ##  <a name="unfreeze"></a>  IViewObjectExImpl::Unfreeze  
- Unfreezes the drawn representation of the control. The ATL implementation returns **E_NOTIMPL**.  
+ Unfreezes the drawn representation of the control. The ATL implementation returns E_NOTIMPL.  
   
 ```
 STDMETHOD(Unfreeze)(DWORD /* dwFreeze */);
@@ -275,10 +275,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 ```  
   
 ### Parameters  
- `dwParam`  
+ *dwParam*  
  The user parameter.  
   
- `hObject`  
+ *hObject*  
  The handle that has become signaled.  
   
 ### Return Value  

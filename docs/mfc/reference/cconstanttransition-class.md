@@ -62,7 +62,7 @@ CConstantTransition (UI_ANIMATION_SECONDS duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
 ##  <a name="create"></a>  CConstantTransition::Create  
@@ -75,7 +75,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
 
 ### Return Value  

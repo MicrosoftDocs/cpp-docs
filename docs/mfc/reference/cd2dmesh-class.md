@@ -79,7 +79,7 @@ void Attach(ID2D1Mesh* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dmesh"></a>  CD2DMesh::CD2DMesh  
@@ -92,10 +92,10 @@ CD2DMesh(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DMesh::Create  
@@ -106,7 +106,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  

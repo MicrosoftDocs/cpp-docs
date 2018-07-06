@@ -21,7 +21,7 @@ A toolbar is a [control bar](../mfc/control-bars.md) that contains the bitmap im
 > [!NOTE]
 >  As of MFC version 4.0, toolbars and tool tips are implemented using Windows 95 and later functionality instead of the previous implementation specific to MFC.  
   
- For backward compatibility, MFC retains the older toolbar implementation in class **COldToolBar**. The documentation for earlier versions of MFC describe **COldToolBar** under `CToolBar`.  
+ For backward compatibility, MFC retains the older toolbar implementation in class `COldToolBar`. The documentation for earlier versions of MFC describe `COldToolBar` under `CToolBar`.  
   
  Create the first toolbar in your program by selecting the Toolbar option in the Application Wizard. You can also create additional toolbars.  
   

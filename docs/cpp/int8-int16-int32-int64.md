@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
   
  The following example declares one variable for each of these types of sized integers:  
   
-```  
+```cpp 
 __int8 nSmall;      // Declares 8-bit integer  
 __int16 nMedium;    // Declares 16-bit integer  
 __int32 nLarge;     // Declares 32-bit integer  
@@ -30,7 +30,7 @@ __int64 nHuge;      // Declares 64-bit integer
 ## Example  
  The following sample shows that an __int*xx* parameter will be promoted to `int`:  
   
-```  
+```cpp 
 // sized_int_types.cpp  
   
 #include <stdio.h>  

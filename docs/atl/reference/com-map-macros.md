@@ -35,7 +35,7 @@ BEGIN_COM_MAP(x)
  [in] The name of the class object you are exposing interfaces on.  
   
 ### Remarks  
- [CComObjectRootEx::InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
+ [CComObjectRootEx::InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) only returns pointers for interfaces in the COM map. Start your interface map with the BEGIN_COM_MAP macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
 
   
 ### Example  

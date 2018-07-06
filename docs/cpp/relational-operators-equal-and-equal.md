@@ -37,7 +37,7 @@ expression >= expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Relational_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -54,7 +54,7 @@ int main() {
   
  The expressions in the preceding example must be enclosed in parentheses because the stream insertion operator (**<<**) has higher precedence than the relational operators. Therefore, the first expression without the parentheses would be evaluated as:  
   
-```  
+```cpp 
 (cout << "The true expression 3 > 2 yields: " << 3) < (2 << "\n");  
 ```  
   

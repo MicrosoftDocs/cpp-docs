@@ -32,7 +32,7 @@ Declarations introduce names in a program, for example the names of variables, n
   
  Examples of declarations that are also definitions are:  
   
-```  
+```cpp 
 // Declare and define int variables i and j.  
 int i;  
 int j = 10;  
@@ -51,7 +51,7 @@ public:
   
  Some declarations that are not definitions are:  
   
-```  
+```cpp 
   
 extern int i;  
 char *strchr( const char *Str, const char Target );  
@@ -70,7 +70,7 @@ char *strchr( const char *Str, const char Target );
   
 2.  A class is used only in a way that does not require its definition be known. However, the class must be declared. The following code illustrates such a case:  
   
-    ```  
+    ```cpp 
     // definitions.cpp  
     class WindowCounter;   // Forward declaration; no definition  
   

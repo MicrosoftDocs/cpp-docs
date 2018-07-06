@@ -68,7 +68,7 @@ This article explains how to map a range of messages to a single message handler
   
  [!code-cpp[NVC_MFCMessageHandling#7](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_2.h)]  
   
- Handler functions for single commands normally take no parameters. With the exception of update handler functions, handler functions for message-map ranges require an extra parameter, `nID`, of type **UINT**. This parameter is the first parameter. The extra parameter accommodates the extra command ID needed to specify which command the user actually chose.  
+ Handler functions for single commands normally take no parameters. With the exception of update handler functions, handler functions for message-map ranges require an extra parameter, *nID*, of type **UINT**. This parameter is the first parameter. The extra parameter accommodates the extra command ID needed to specify which command the user actually chose.  
   
  For more information about parameter requirements for updating handler functions, see [Example for a Range of Command IDs](#_core_example_for_a_range_of_command_ids).  
   
@@ -81,7 +81,7 @@ This article explains how to map a range of messages to a single message handler
   
 -   Two command IDs, beginning and ending a contiguous range.  
   
-     Here they are `ID_VIEW_ZOOM25` and `ID_VIEW_ZOOM300`.  
+     Here they are **ID_VIEW_ZOOM25** and **ID_VIEW_ZOOM300**.  
   
 -   The name of the handler function for the commands.  
   
@@ -91,9 +91,9 @@ This article explains how to map a range of messages to a single message handler
   
  [!code-cpp[NVC_MFCMessageHandling#9](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_4.h)]  
   
- The case of update handler functions is similar, and likely to be more widely useful. It's quite common to write `ON_UPDATE_COMMAND_UI` handlers for a number of commands and find yourself writing, or copying, the same code over and over. The solution is to map a range of command IDs to one update handler function using the `ON_UPDATE_COMMAND_UI_RANGE` macro. The command IDs must form a contiguous range. For an example, see the **OnUpdateZoom** handler and its `ON_UPDATE_COMMAND_UI_RANGE` message-map entry in the HIERSVR sample's view class.  
+ The case of update handler functions is similar, and likely to be more widely useful. It's quite common to write `ON_UPDATE_COMMAND_UI` handlers for a number of commands and find yourself writing, or copying, the same code over and over. The solution is to map a range of command IDs to one update handler function using the `ON_UPDATE_COMMAND_UI_RANGE` macro. The command IDs must form a contiguous range. For an example, see the `OnUpdateZoom` handler and its `ON_UPDATE_COMMAND_UI_RANGE` message-map entry in the HIERSVR sample's view class.  
   
- Update handler functions for single commands normally take a single parameter, `pCmdUI`, of type **CCmdUI\***. Unlike handler functions, update handler functions for message-map ranges do not require an extra parameter, `nID`, of type **UINT**. The command ID, which is needed to specify which command the user actually chose, is found in the `CCmdUI` object.  
+ Update handler functions for single commands normally take a single parameter, *pCmdUI*, of type `CCmdUI*`. Unlike handler functions, update handler functions for message-map ranges do not require an extra parameter, *nID*, of type **UINT**. The command ID, which is needed to specify which command the user actually chose, is found in the `CCmdUI` object.  
   
 ##  <a name="_core_example_for_a_range_of_control_ids"></a> Example for a Range of Control IDs  
  Another interesting case is mapping control-notification messages for a range of control IDs to a single handler. Suppose the user can click any of 10 buttons. To map all 10 buttons to one handler, your message-map entry would look like this:  
@@ -108,7 +108,7 @@ This article explains how to map a range of messages to a single message handler
   
 -   The control ID values associated with the contiguous range of controls.  
   
-     Here these are `IDC_BUTTON1` and `IDC_BUTTON10`.  
+     Here these are **IDC_BUTTON1** and **IDC_BUTTON10**.  
   
 -   The name of the message handler function.  
   

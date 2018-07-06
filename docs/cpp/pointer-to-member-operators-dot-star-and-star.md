@@ -23,7 +23,7 @@ expression ->* expression
 ## Remarks  
  The pointer-to-member operators, .* and ->\*, return the value of a specific class member for the object specified on the left side of the expression.  The right side must specify a member of the class.  The following example shows how to use these operators:  
   
-```  
+```cpp 
 // expre_Expressions_with_Pointer_Member_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -63,7 +63,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 m_func1  
 m_func1  
 1  
@@ -83,7 +83,7 @@ m_func1
 ## Example  
  Consider the following classes and program fragment:  
   
-```  
+```cpp 
 // expre_Expressions_with_Pointer_Member_Operators2.cpp  
 // C2440 expected  
 class BaseClass {  

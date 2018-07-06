@@ -55,7 +55,7 @@ STDMETHOD(CreateControlLic)(
 ```  
   
 ### Parameters  
- `bstrLic`  
+ *bstrLic*  
  [in] The BSTR that contains the license key for the control.  
   
 ### Remarks  
@@ -81,7 +81,7 @@ STDMETHOD(CreateControlLicEx)(
 ```  
   
 ### Parameters  
- `bstrLic`  
+ *bstrLic*  
  [in] The BSTR that contains the license key for the control.  
   
 ### Remarks  

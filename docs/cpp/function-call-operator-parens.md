@@ -30,25 +30,25 @@ postfix-expression
   
 -   Function returning type `T`. An example declaration is  
   
-    ```  
+    ```cpp 
     T func( int i )  
     ```  
   
 -   Pointer to a function returning type `T`. An example declaration is  
   
-    ```  
+    ```cpp 
     T (*func)( int i )  
     ```  
   
 -   Reference to a function returning type `T`. An example declaration is  
   
-    ```  
+    ```cpp 
     T (&func)(int i)  
     ```  
   
 -   Pointer-to-member function dereference returning type `T`. Example function calls are  
   
-    ```  
+    ```cpp 
     (pObject->*pmf)();  
     (Object.*pmf)();  
     ```  
@@ -56,7 +56,7 @@ postfix-expression
 ## Example  
  The following example calls the standard library function `strcat_s` with three arguments:  
   
-```  
+```cpp 
 // expre_Function_Call_Operator.cpp  
 // compile with: /EHsc  
   
@@ -89,7 +89,7 @@ Welcome to C++
 ## Function call results  
  A function call evaluates to an r-value unless the function is declared as a reference type. Functions with reference return type evaluate to l-values, and can be used on the left side of an assignment statement as follows:  
   
-```  
+```cpp 
 // expre_Function_Call_Results.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -123,7 +123,7 @@ int main()
   
  Functions that return class types, pointers to class types, or references to class types can be used as the left operand to member-selection operators. Therefore, the following code is legal:  
   
-```  
+```cpp 
 // expre_Function_Results2.cpp  
 class A {  
 public:  

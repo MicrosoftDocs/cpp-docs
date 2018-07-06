@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPropertyPage2Impl Class
-This class implements **IUnknown** and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  
+This class implements `IUnknown` and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPropertyPage2Impl`.  
   
 ## Members  
@@ -35,14 +35,14 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPropertyPage2Impl::EditProperty](#editproperty)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPropertyPage2Impl::EditProperty](#editproperty)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns E_NOTIMPL.|  
   
 ## Remarks  
  The [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) interface extends [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.  
   
- Class `IPropertyPage2Impl` simply returns **E_NOTIMPL** for **IPropertyPage2::EditProperty**. However, it inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) and implements **IUnknown** by sending information to the dump device in debug builds.  
+ Class `IPropertyPage2Impl` simply returns E_NOTIMPL for `IPropertyPage2::EditProperty`. However, it inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) and implements `IUnknown` by sending information to the dump device in debug builds.  
   
- When you create a property page, your class is typically derived from `IPropertyPageImpl`. To provide the extra support of **IPropertyPage2**, modify your class definition and override the `EditProperty` method.  
+ When you create a property page, your class is typically derived from `IPropertyPageImpl`. To provide the extra support of `IPropertyPage2`, modify your class definition and override the `EditProperty` method.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -64,7 +64,7 @@ HRESULT EditProperty(DISPID dispID);
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) in the Windows SDK.  

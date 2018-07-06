@@ -18,7 +18,7 @@ A function defined in the body of a class declaration is an inline function.
 ## Example  
  In the following class declaration, the `Account` constructor is an inline function. The member functions `GetBalance`, `Deposit`, and `Withdraw` are not specified as **inline** but can be implemented as inline functions.  
   
-```  
+```cpp 
 // Inline_Member_Functions.cpp  
 class Account  
 {  
@@ -86,7 +86,7 @@ int main()
   
 ### Example 1  
   
-```  
+```cpp 
 // inline_keyword1.cpp  
 // compile with: /c  
 inline int max( int a , int b ) {  
@@ -100,7 +100,7 @@ inline int max( int a , int b ) {
   
 ### Example 2  
   
-```  
+```cpp 
 // inline_keyword2.cpp  
 // compile with: /EHsc /c  
 #include <iostream>  
@@ -155,7 +155,7 @@ private:
   
  A `Point` class can be defined as follows:  
   
-```  
+```cpp 
 // when_to_use_inline_functions.cpp  
 class Point  
 {  
@@ -207,7 +207,7 @@ int main()
   
  The following example shows a macro that converts lowercase letters to uppercase:  
   
-```  
+```cpp 
 // inline_functions_macro.c  
 #include <stdio.h>  
 #include <conio.h>  
@@ -231,7 +231,7 @@ int main() {
   
  Inline functions remedy the problem previously described:  
   
-```  
+```cpp 
 // inline_functions_inline.cpp  
 #include <stdio.h>  
 #include <conio.h>  

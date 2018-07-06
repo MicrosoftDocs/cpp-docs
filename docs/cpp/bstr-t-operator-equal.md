@@ -21,18 +21,10 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      _bstr_t& operator=(  
-   const _bstr_t& s1   
-) throw ( );  
-_bstr_t& operator=(  
-   const char* s2   
-);  
-_bstr_t& operator=(  
-   const wchar_t* s3   
-);  
-_bstr_t& operator=(  
-   const _variant_t& var   
-);  
+_bstr_t& operator=(const _bstr_t& s1) throw ( );  
+_bstr_t& operator=(const char* s2);  
+_bstr_t& operator=(const wchar_t* s3);  
+_bstr_t& operator=(const _variant_t& var);  
 ```  
   
 #### Parameters  

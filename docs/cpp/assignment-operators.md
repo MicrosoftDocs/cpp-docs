@@ -61,7 +61,7 @@ All assignment operators in the following table except the = and &&= operators a
   
 ## Example  
   
-```  
+```cpp 
 // expre_Assignment_Operators.cpp  
 // compile with: /EHsc  
 // Demonstrate assignment operators  
@@ -92,7 +92,7 @@ int main() {
   
  An object of any unambiguously derived class from a given base class can be assigned to an object of the base class. The reverse is not true because there is an implicit conversion from derived class to base class but not from base class to derived class. For example:  
   
-```  
+```cpp 
 // expre_SimpleAssignment.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -123,14 +123,14 @@ int main()
   
  For class-type objects, assignment is different from initialization. To illustrate how different assignment and initialization can be, consider the code  
   
-```  
+```cpp 
 UserType1 A;  
 UserType2 B = A;  
 ```  
   
  The preceding code shows an initializer; it calls the constructor for `UserType2` that takes an argument of type `UserType1`. Given the code  
   
-```  
+```cpp 
 UserType1 A;  
 UserType2 B;  
   
@@ -139,7 +139,7 @@ B = A;
   
  the assignment statement  
   
-```  
+```cpp 
 B = A;   
 ```  
   

@@ -17,9 +17,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-expression   
-&&  
- expression  
+expression && expression  
   
 ```  
   
@@ -32,7 +30,7 @@ expression
   
  The second operand is evaluated only if the first operand evaluates to true (nonzero). This evaluation eliminates needless evaluation of the second operand when the logical AND expression is false. You can use this short-circuit evaluation to prevent null-pointer dereferencing, as shown in the following example:  
   
-```  
+```cpp 
 char *pch = 0;  
 ...  
 (pch) && (*pch = 'a');  
@@ -45,7 +43,7 @@ char *pch = 0;
   
 ## Example  
   
-```  
+```cpp 
 // expre_Logical_AND_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate logical AND  

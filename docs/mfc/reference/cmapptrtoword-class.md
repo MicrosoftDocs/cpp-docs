@@ -22,7 +22,7 @@ class CMapPtrToWord : public CObject
 ```  
   
 ## Members  
- The member functions of `CMapPtrToWord` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute **WORD**. Wherever you see a `CString` or a **const** pointer to `char` as a function parameter or return value, substitute a pointer to `void`.  
+ The member functions of `CMapPtrToWord` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute WORD. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute a pointer to **void**.  
   
  `BOOL CMapStringToOb::Lookup( const char* <key>,`  
   
@@ -63,7 +63,7 @@ class CMapPtrToWord : public CObject
 |[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|  
   
 ## Remarks  
- `CMapWordToPtr` incorporates the `IMPLEMENT_DYNAMIC` macro to support run-time type access and dumping to a `CDumpContext` object. If you need a dump of individual map elements, you must set the depth of the dump context to 1 or greater.  
+ `CMapWordToPtr` incorporates the IMPLEMENT_DYNAMIC macro to support run-time type access and dumping to a `CDumpContext` object. If you need a dump of individual map elements, you must set the depth of the dump context to 1 or greater.  
   
  Pointer-to-word maps may not be serialized.  
   

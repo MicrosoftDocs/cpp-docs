@@ -94,10 +94,10 @@ virtual BOOL ApplyTransitions(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
  With FALSE this method adds only those transitions that do not depend on keyframes.  
   
 ### Return Value  
@@ -120,13 +120,13 @@ CAnimationBaseObject(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  User-defined data, which can be associated with animation object and retrieved later at runtime.  
   
 ### Remarks  
@@ -140,7 +140,7 @@ virtual void ClearTransitions(BOOL bAutodestroy);
 ```  
   
 ### Parameters  
- `bAutodestroy`  
+ *bAutodestroy*  
  Specifies whether to destroy transition objects automatically, or just remove them from the related list.  
   
 ### Remarks  
@@ -154,7 +154,7 @@ virtual BOOL ContainsVariable(IUIAnimationVariable* pVariable);
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to animation variable.  
   
 ### Return Value  
@@ -196,10 +196,10 @@ virtual void EnableIntegerValueChangedEvent(
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to a parent controller.  
   
- `bEnable`  
+ *bEnable*  
  Specifies whether to enable, or disable Integer Value Changed event.  
   
 ### Remarks  
@@ -215,10 +215,10 @@ virtual void EnableValueChangedEvent(
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to a parent controller.  
   
- `bEnable`  
+ *bEnable*  
  Specifies whether to enable, or disable Value Changed event.  
   
 ### Remarks  
@@ -234,7 +234,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  A list that must be filled with animation variables contained in an animation object.  
   
 ### Remarks  
@@ -335,7 +335,7 @@ void SetAutodestroyTransitions(BOOL bValue);
 ```  
   
 ### Parameters  
- `bValue`  
+ *bValue*  
  Specifies the auto destroy flag.  
   
 ### Remarks  
@@ -351,10 +351,10 @@ void SetID(
 ```  
   
 ### Parameters  
- `nObjectID`  
+ *nObjectID*  
  Specifies new Object ID.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies new Group ID.  
   
 ### Remarks  
@@ -378,7 +378,7 @@ void SetUserData (DWORD dwUserData);
 ```  
   
 ### Parameters  
- `dwUserData`  
+ *dwUserData*  
  Specifies the custom data.  
   
 ### Remarks  

@@ -27,7 +27,7 @@ postfix-expression [ expression ]
   
  Usually, the value represented by *postfix-expression* is a pointer value, such as an array identifier, and *expression* is an integral value (including enumerated types). However, all that is required syntactically is that one of the expressions be of pointer type and the other be of integral type. Thus the integral value could be in the *postfix-expression* position and the pointer value could be in the brackets in the *expression* or subscript position. Consider the following code fragment:  
   
-```  
+```cpp 
 int nArray[5] = { 0, 1, 2, 3, 4 };  
 cout << nArray[2] << endl;            // prints "2"  
 cout << 2[nArray] << endl;            // prints "2"  
@@ -39,7 +39,7 @@ cout << 2[nArray] << endl;            // prints "2"
   
  The address yielded by the expression is not *e2* bytes from the address *e1*. Rather, the address is scaled to yield the next object in the array *e2*. For example:  
   
-```  
+```cpp 
 double aDbl[2];  
 ```  
   
@@ -53,7 +53,7 @@ double aDbl[2];
   
  Expressions with multiple subscripts refer to elements of multidimensional arrays. A multidimensional array is an array whose elements are arrays. For example, the first element of a three-dimensional array is an array with two dimensions. The following example declares and initializes a simple two-dimensional array of characters:  
   
-```  
+```cpp 
 // expre_Subscript_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -73,7 +73,7 @@ int main() {
 ## Positive and negative subscripts  
  The first element of an array is element 0. The range of a C++ array is from *array*[0] to *array*[*size* - 1]. However, C++ supports positive and negative subscripts. Negative subscripts must fall within array boundaries; if they do not, the results are unpredictable. The following code shows positive and negative array subscripts:  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   

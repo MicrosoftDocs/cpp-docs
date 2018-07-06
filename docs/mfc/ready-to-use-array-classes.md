@@ -19,13 +19,13 @@ The following classes are ready-to-use array classes.
  Stores elements of type **BYTE** in an array.  
   
  [CDWordArray](../mfc/reference/cdwordarray-class.md)  
- Stores elements of type `DWORD` in an array.  
+ Stores elements of type **DWORD** in an array.  
   
  [CObArray](../mfc/reference/cobarray-class.md)  
  Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in an array.  
   
  [CPtrArray](../mfc/reference/cptrarray-class.md)  
- Stores pointers to `void` (generic pointers) in an array.  
+ Stores pointers to **void** (generic pointers) in an array.  
   
  [CUIntArray](../mfc/reference/cuintarray-class.md)  
  Stores elements of type **UINT** in an array.  

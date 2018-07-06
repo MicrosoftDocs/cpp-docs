@@ -23,7 +23,7 @@ When used as a function return type, the `void` keyword specifies that the funct
   
 ## Example  
   
-```  
+```cpp 
 // void.cpp  
 void vobject;   // C2182  
 void *pv;   // okay  
@@ -33,7 +33,7 @@ int main() {
    // Cast optional in C required in C++  
    pint = (int *)pv;  
 }   
-```  
+``` 
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

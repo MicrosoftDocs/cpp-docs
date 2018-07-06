@@ -23,7 +23,7 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The object type to be stored on the heap.  
   
 ## Members  
@@ -56,7 +56,7 @@ explicit CComHeapPtr(T* pData) throw();
 ```  
   
 ### Parameters  
- `pData`  
+ *pData*  
  An existing `CComHeapPtr` object.  
   
 ### Remarks  
