@@ -27,7 +27,7 @@ type-id & cast-expression
   
  Any object whose address can be converted to a given pointer type can also be converted to the similar reference type. For example, any object whose address can be converted to type `char *` can also be converted to type `char &`.  
   
- Do not confuse reference declarations with use of the [address-of operator](../cpp/address-of-operator-amp.md). When the `&`*identifier* is preceded by a type, such as `int` or `char`, *identifier* is declared as a reference to the type. When `&`*identifier* is not preceded by a type, the usage is that of the address-of operator.  
+ Do not confuse reference declarations with use of the [address-of operator](../cpp/address-of-operator-amp.md). When the `&`*identifier* is preceded by a type, such as **int** or **char**, *identifier* is declared as a reference to the type. When `&`*identifier* is not preceded by a type, the usage is that of the address-of operator.  
   
 ## Example  
  The following example demonstrates the reference declarator by declaring a `Person` object and a reference to that object. Because `rFriend` is a reference to `myFriend`, updating either variable changes the same object.  
