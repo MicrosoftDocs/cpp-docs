@@ -23,7 +23,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class derived from `CAtlModuleT`.  
   
 ## Members  
@@ -101,10 +101,10 @@ HRESULT RegisterServer(
 ```  
   
 ### Parameters  
- `bRegTypeLib`  
+ *bRegTypeLib*  
  TRUE if the type library is to be registered. The default value is FALSE.  
   
- `pCLSID`  
+ *pCLSID*  
  Points to the CLSID of the object to be registered. If NULL (the default value), all objects in the object map will be registered.  
   
 ### Return Value  
@@ -130,10 +130,10 @@ HRESULT UnregisterServer(
 ```  
   
 ### Parameters  
- `bUnRegTypeLib`  
+ *bUnRegTypeLib*  
  TRUE if the type library is also to be unregistered.  
   
- `pCLSID`  
+ *pCLSID*  
  Points to the CLSID of the object to be unregistered. If NULL (the default value), all objects in the object map will be unregistered.  
   
 ### Return Value  
@@ -147,7 +147,7 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 ```  
   
 ### Parameters  
- `bRegister`  
+ *bRegister*  
  Reserved.  
   
 ### Return Value  

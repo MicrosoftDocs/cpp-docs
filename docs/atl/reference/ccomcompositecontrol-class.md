@@ -26,7 +26,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interfaces you want to support for your composite control.  
   
 ## Members  
@@ -43,7 +43,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 |Name|Description|  
 |----------|-----------------|  
 |[CComCompositeControl::AdviseSinkMap](#advisesinkmap)|Call this method to advise or unadvise all controls hosted by the composite control.|  
-|[CComCompositeControl::CalcExtent](#calcextent)|Call this method to calculate the size in **HIMETRIC** units of the dialog resource used to host the composite control.|  
+|[CComCompositeControl::CalcExtent](#calcextent)|Call this method to calculate the size in HIMETRIC units of the dialog resource used to host the composite control.|  
 |[CComCompositeControl::Create](#create)|This method is called to create the control window for the composite control.|  
 |[CComCompositeControl::CreateControlWindow](#createcontrolwindow)|Call this method to create the control window and advise any hosted control.|  
 |[CComCompositeControl::SetBackgroundColorFromAmbient](#setbackgroundcolorfromambient)|Call this method to set the background color of the composite control using the container's background color.|  
@@ -93,47 +93,47 @@ HRESULT AdviseSinkMap(bool bAdvise);
 ```  
   
 ### Parameters  
- `bAdvise`  
+ *bAdvise*  
  True if all controls are to be advised; otherwise false.  
   
 ### Return Value  
- `S_OK`  
+ S_OK  
  All controls in the event sink map were connected or disconnected from their event source successfully.  
   
- **E_FAIL**  
+ E_FAIL  
  Not all controls in the event sink map could be connected or disconnected from their event source successfully.  
   
- `E_POINTER`  
+ E_POINTER  
  This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.  
   
- **CONNECT_E_ADVISELIMIT**  
+ CONNECT_E_ADVISELIMIT  
  The connection point has already reached its limit of connections and cannot accept any more.  
   
- **CONNECT_E_CANNOTCONNECT**  
+ CONNECT_E_CANNOTCONNECT  
  The sink does not support the interface required by this connection point.  
   
- **CONNECT_E_NOCONNECTION**  
+ CONNECT_E_NOCONNECTION  
  The cookie value does not represent a valid connection. This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.  
   
 ### Remarks  
  The base implementation of this method searches through the entries in the event sink map. It then advises or unadvises the connection points to the COM objects described by the event sink map's sink entries. This member method also relies on the fact that the derived class inherits from one instance of `IDispEventImpl` for every control in the sink map that is to be advised or unadvised.  
   
 ##  <a name="calcextent"></a>  CComCompositeControl::CalcExtent  
- Call this method to calculate the size in **HIMETRIC** units of the dialog resource used to host the composite control.  
+ Call this method to calculate the size in HIMETRIC units of the dialog resource used to host the composite control.  
   
 ```
 BOOL CalcExtent(SIZE& size);
 ```  
   
 ### Parameters  
- `size`  
- A reference to a **SIZE** structure to be filled by this method.  
+ *size*  
+ A reference to a `SIZE` structure to be filled by this method.  
   
 ### Return Value  
  TRUE if the control is hosted by a dialog box; otherwise FALSE.  
   
 ### Remarks  
- The size is returned in the `size` parameter.  
+ The size is returned in the *size* parameter.  
   
 ##  <a name="create"></a>  CComCompositeControl::Create  
  This method is called to create the control window for the composite control.  
@@ -146,14 +146,14 @@ HWND Create(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the parent window of the control.  
   
- `rcPos`  
+ *rcPos*  
  Reserved.  
   
- `dwInitParam`  
- Data to be passed to the control during control creation. The data passed as `dwInitParam` will show up as the **LPARAM** parameter of the [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) message, which will be sent to the composite control when it gets created.  
+ *dwInitParam*  
+ Data to be passed to the control during control creation. The data passed as *dwInitParam* will show up as the LPARAM parameter of the [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) message, which will be sent to the composite control when it gets created.  
   
 ### Return Value  
  A handle to the newly created composite control dialog box.  
@@ -191,11 +191,11 @@ virtual HWND CreateControlWindow(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the parent window of the control.  
   
- `rcPos`  
- The position rectangle of the composite control in client coordinates relative to `hWndParent`.  
+ *rcPos*  
+ The position rectangle of the composite control in client coordinates relative to *hWndParent*.  
   
 ### Return Value  
  Returns a handle to the newly created composite control dialog box.  

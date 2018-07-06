@@ -81,31 +81,31 @@ BOOL CallChain(
 ```  
   
 ### Parameters  
- `dwChainID`  
+ *dwChainID*  
  [in] The unique identifier associated with the chained object and its message map.  
   
- `hWnd`  
+ *hWnd*  
  [in] The handle to the window receiving the message.  
   
- `uMsg`  
+ *uMsg*  
  [in] The message sent to the window.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
- `lResult`  
+ *lResult*  
  [out] The result of the message processing.  
   
 ### Return Value  
- **TRUE** if the message is fully processed; otherwise, **FALSE**.  
+ TRUE if the message is fully processed; otherwise, FALSE.  
   
 ### Remarks  
  For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
   
- `CallChain` requires a previous call to [SetChainEntry](#setchainentry) to associate the `dwChainID` value with an object and its message map.  
+ `CallChain` requires a previous call to [SetChainEntry](#setchainentry) to associate the *dwChainID* value with an object and its message map.  
   
 ##  <a name="cdynamicchain"></a>  CDynamicChain::CDynamicChain  
  The constructor.  
@@ -132,11 +132,11 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 ```  
   
 ### Parameters  
- `dwChainID`  
+ *dwChainID*  
  [in] The unique identifier associated with the chained object and its message map. You originally define this value through a call to [SetChainEntry](#setchainentry).  
   
 ### Return Value  
- **TRUE** if the message map is successfully removed from the collection. Otherwise, **FALSE**.  
+ TRUE if the message map is successfully removed from the collection. Otherwise, FALSE.  
   
 ##  <a name="setchainentry"></a>  CDynamicChain::SetChainEntry  
  Adds the specified message map to the collection.  
@@ -149,20 +149,20 @@ BOOL SetChainEntry(
 ```  
   
 ### Parameters  
- `dwChainID`  
+ *dwChainID*  
  [in] The unique identifier associated with the chained object and its message map.  
   
- `pObject`  
+ *pObject*  
  [in] A pointer to the chained object declaring the message map. This object must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
- `dwMsgMapID`  
+ *dwMsgMapID*  
  [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.  
   
 ### Return Value  
- **TRUE** if the message map is successfully added to the collection. Otherwise, **FALSE**.  
+ TRUE if the message map is successfully added to the collection. Otherwise, FALSE.  
   
 ### Remarks  
- If the `dwChainID` value already exists in the collection, its associated object and message map are replaced by `pObject` and `dwMsgMapID`, respectively. Otherwise, a new entry is added.  
+ If the *dwChainID* value already exists in the collection, its associated object and message map are replaced by *pObject* and *dwMsgMapID*, respectively. Otherwise, a new entry is added.  
   
 ## See Also  
  [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)   

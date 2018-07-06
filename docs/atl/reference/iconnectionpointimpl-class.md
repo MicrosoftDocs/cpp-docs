@@ -23,13 +23,13 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IConnectionPointImpl`.  
   
- `piid`  
+ *piid*  
  A pointer to the IID of the interface represented by the connection point object.  
   
- `CDV`  
+ *CDV*  
  A class that manages the connections. The default value is [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), which allows unlimited connections. You can also use [CComUnkArray](../../atl/reference/ccomunkarray-class.md), which specifies a fixed number of connections.  
   
 ## Members  
@@ -53,7 +53,7 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ## Remarks  
  `IConnectionPointImpl` implements a connection point, which allows an object to expose an outgoing interface to the client. The client implements this interface on an object called a sink.  
   
- ATL uses [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) to implement the connectable object. Each connection point within the connectable object represents an outgoing interface, identified by `piid`. Class *CDV* manages the connections between the connection point and a sink. Each connection is uniquely identified by a "cookie."  
+ ATL uses [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) to implement the connectable object. Each connection point within the connectable object represents an outgoing interface, identified by *piid*. Class *CDV* manages the connections between the connection point and a sink. Each connection is uniquely identified by a "cookie."  
   
  For more information about using connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   

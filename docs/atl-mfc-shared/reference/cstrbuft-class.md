@@ -26,11 +26,11 @@ class CStrBufT
  *TCharType*  
  The character type of the `CStrBufT` class. Can be one of the following:  
   
-- `char` (for ANSI character strings)  
+- **char** (for ANSI character strings)  
   
-- `wchar_t` (for Unicode character strings)  
+- **wchar_t** (for Unicode character strings)  
   
-- **TCHAR** (for both ANSI and Unicode character strings)  
+- TCHAR (for both ANSI and Unicode character strings)  
   
 ## Members  
   
@@ -38,8 +38,8 @@ class CStrBufT
   
 |Name|Description|  
 |----------|-----------------|  
-|`PCXSTR`|A pointer to a constant string.|  
-|`PXSTR`|A pointer to a string.|  
+|PCXSTR|A pointer to a constant string.|  
+|PXSTR|A pointer to a string.|  
 |`StringType`|The string type whose buffer is to be manipulated by specializations of this class template.|  
   
 ### Public Constructors  
@@ -95,23 +95,23 @@ explicit CStrBufT(StringType& str) throw(...);
 ```  
   
 ### Parameters  
- `str`  
- The string object associated with the buffer. Typically, the developer will use the predefined typedefs of **CStrBuf** ( **TCHAR** variant), **CStrBufA** ( `char` variant) and **CStrBufW** ( `wchar_t` variant).  
+ *str*  
+ The string object associated with the buffer. Typically, the developer will use the predefined typedefs of `CStrBuf` (TCHAR variant), `CStrBufA` (**char** variant) and `CStrBufW` (**wchar_t** variant).  
   
  *nMinLength*  
  The minimum length of the character buffer.  
   
- `dwFlags`  
+ *dwFlags*  
  Determines if the string length is automatically determined. Can be one of the following:  
   
-- **AUTO_LENGTH** String length is automatically determined when [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) is called. The string must be null-terminated. Default value.  
+- AUTO_LENGTH String length is automatically determined when [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) is called. The string must be null-terminated. Default value.  
   
-- **SET_LENGTH** String length is set when [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) is called.  
+- SET_LENGTH String length is set when [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) is called.  
   
 ### Remarks  
  Creates a string buffer for the associated string object. During construction, [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) or [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) is called.  
   
- Note that the copy constructor is `private`.  
+ Note that the copy constructor is **private**.  
   
 ##  <a name="operator_pcxstr"></a>  CStrBufT::operator PCXSTR  
  Directly accesses characters stored in the associated string object as a C-style string.  
@@ -173,7 +173,7 @@ void SetLength(int nLength);
 ```  
   
 ### Parameters  
- `nLength`  
+ *nLength*  
  The new length of the character buffer of the string object.  
   
 > [!NOTE]
@@ -190,7 +190,7 @@ typedef CSimpleStringT<TCharType> StringType;
 ```  
   
 ### Remarks  
- **TCharType** is the character type used to specialize the class template.  
+ `TCharType` is the character type used to specialize the class template.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

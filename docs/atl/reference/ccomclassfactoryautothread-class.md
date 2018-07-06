@@ -65,37 +65,37 @@ STDMETHODIMP CreateInstance(
 ```  
   
 ### Parameters  
- `pUnkOuter`  
- [in] If the object is being created as part of an aggregate, then `pUnkOuter` must be the outer unknown. Otherwise, `pUnkOuter` must be **NULL**.  
+ *pUnkOuter*  
+ [in] If the object is being created as part of an aggregate, then *pUnkOuter* must be the outer unknown. Otherwise, *pUnkOuter* must be NULL.  
   
- `riid`  
- [in] The IID of the requested interface. If `pUnkOuter` is non- **NULL**, `riid` must be **IID_IUnknown**.  
+ *riid*  
+ [in] The IID of the requested interface. If *pUnkOuter* is non- NULL, *riid* must be `IID_IUnknown`.  
   
- `ppvObj`  
- [out] A pointer to the interface pointer identified by `riid`. If the object does not support this interface, `ppvObj` is set to **NULL**.  
+ *ppvObj*  
+ [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  If your module derives from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md), `CreateInstance` first selects a thread to create the object in the associated apartment.  
   
 ##  <a name="lockserver"></a>  CComClassFactoryAutoThread::LockServer  
- Increments and decrements the module lock count by calling **_Module::Lock** and **_Module::Unlock**, respectively.  
+ Increments and decrements the module lock count by calling `_Module::Lock` and `_Module::Unlock`, respectively.  
   
 ```
 STDMETHODIMP LockServer(BOOL fLock);
 ```  
   
 ### Parameters  
- `fLock`  
- [in] If **TRUE**, the lock count is incremented; otherwise, the lock count is decremented.  
+ *fLock*  
+ [in] If TRUE, the lock count is incremented; otherwise, the lock count is decremented.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- When using `CComClassFactoryAutoThread`, **_Module** typically refers to the global instance of [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
+ When using `CComClassFactoryAutoThread`, `_Module` typically refers to the global instance of [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
   
  Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.  
   

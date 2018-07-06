@@ -36,11 +36,11 @@ BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 ```  
   
 ### Parameters  
- `hEvent`  
+ *hEvent*  
  [in] The handle of the object to wait for.  
   
 ### Return Value  
- Returns **TRUE** if the object has been signaled.  
+ Returns TRUE if the object has been signaled.  
   
 ### Remarks  
  This is useful if you want to wait for an object's event to happen and be notified of it happening, but allow window messages to be dispatched while waiting.  

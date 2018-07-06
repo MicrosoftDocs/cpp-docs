@@ -26,7 +26,7 @@ class CAtlFileMapping : public CAtlFileMappingBase
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data used for the cast operator.  
   
 ## Members  

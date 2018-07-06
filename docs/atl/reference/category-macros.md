@@ -32,7 +32,7 @@ BEGIN_CATEGORY_MAP(theClass)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  [in] The name of the class containing the category map.  
   
 ### Remarks  
@@ -61,15 +61,15 @@ END_CATEGORY_MAP()
  See the example for [BEGIN_CATEGORY_MAP](#begin_category_map).  
   
 ##  <a name="implemented_category"></a>  IMPLEMENTED_CATEGORY  
- Add an `IMPLEMENTED_CATEGORY` macro to your component's [category map](#begin_category_map) to specify that it should be registered as implementing the category identified by the `catID` parameter.  
+ Add an IMPLEMENTED_CATEGORY macro to your component's [category map](#begin_category_map) to specify that it should be registered as implementing the category identified by the *catID* parameter.  
   
 ```
 IMPLEMENTED_CATEGORY(catID)
 ```  
   
 ### Parameters  
- `catID`  
- [in] A **CATID** constant or variable holding the globally unique identifier (GUID) for the implemented category. The address of `catID` will be taken and added to the map. See the table below for a selection of stock categories.  
+ *catID*  
+ [in] A CATID constant or variable holding the globally unique identifier (GUID) for the implemented category. The address of *catID* will be taken and added to the map. See the table below for a selection of stock categories.  
   
 ### Remarks  
  The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) macro.  
@@ -94,15 +94,15 @@ IMPLEMENTED_CATEGORY(catID)
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
   
 ##  <a name="required_category"></a>  REQUIRED_CATEGORY  
- Add a `REQUIRED_CATEGORY` macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the `catID` parameter.  
+ Add a REQUIRED_CATEGORY macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the *catID* parameter.  
   
 ```
 REQUIRED_CATEGORY( catID )
 ```  
   
 ### Parameters  
- `catID`  
- [in] A **CATID** constant or variable holding the globally unique identifier (GUID) for the required category. The address of `catID` will be taken and added to the map. See the table below for a selection of stock categories.  
+ *catID*  
+ [in] A CATID constant or variable holding the globally unique identifier (GUID) for the required category. The address of *catID* will be taken and added to the map. See the table below for a selection of stock categories.  
   
 ### Remarks  
  The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) macro.  

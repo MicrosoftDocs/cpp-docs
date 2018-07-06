@@ -28,7 +28,7 @@ class CSimpleDialog : public CDialogImplBase
  The resource ID of the dialog template resource.  
   
  *t_bCenter*  
- **TRUE** if the dialog object is to be centered on the owner window; otherwise **FALSE**.  
+ TRUE if the dialog object is to be centered on the owner window; otherwise FALSE.  
   
 ## Members  
   
@@ -61,7 +61,7 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the parent of the dialog box. If no value is provided, the parent is set to the current active window.  
   
 ### Return Value  

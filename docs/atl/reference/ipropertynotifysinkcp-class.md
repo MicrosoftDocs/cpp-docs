@@ -27,10 +27,10 @@ class IPropertyNotifySinkCP
 ```    
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPropertyNotifySinkCP`.  
   
- `CDV`  
+ *CDV*  
  A class that manages the connections between a connection point and its sinks. The default value is [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), which allows unlimited connections. You can also use [CComUnkArray](../../atl/reference/ccomunkarray-class.md), which specifies a fixed number of connections.  
   
 ## Remarks  

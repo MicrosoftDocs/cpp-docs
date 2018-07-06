@@ -23,7 +23,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class derived from `CAtlExeModuleT`.  
   
 ## Members  
@@ -112,7 +112,7 @@ static HRESULT InitializeCom() throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method is called from the constructor and can be overridden to initialize COM in a manner different from the default implementation. The default implementation either calls **CoInitializeEx(NULL, COINIT_MULTITHREADED)** or **CoInitialize(NULL)** depending on the project configuration.  
+ This method is called from the constructor and can be overridden to initialize COM in a manner different from the default implementation. The default implementation either calls `CoInitializeEx(NULL, COINIT_MULTITHREADED)` or `CoInitialize(NULL)` depending on the project configuration.  
   
  Overriding this method normally requires overriding [CAtlExeModuleT::UninitializeCom](#uninitializecom).  
   
@@ -154,10 +154,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```  
   
 ### Parameters  
- `lpCmdLine`  
+ *lpCmdLine*  
  The command line passed to the application.  
   
- `pnRetCode`  
+ *pnRetCode*  
  The HRESULT corresponding to the registration (if it took place).  
   
 ### Return Value  
@@ -187,8 +187,8 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
- The value passed as the `nShowCmd` parameter in WinMain.  
+ *nShowCmd*  
+ The value passed as the *nShowCmd* parameter in WinMain.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -207,7 +207,7 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
  *dwClsContext*  
  Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER.  
   
- `dwFlags`  
+ *dwFlags*  
  Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE.  
   
 ### Return Value  
@@ -231,7 +231,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
+ *nShowCmd*  
  Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section. Defaults to SW_HIDE.  
   
 ### Return Value  
@@ -278,7 +278,7 @@ int WinMain(int nShowCmd) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
+ *nShowCmd*  
  Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
   
 ### Return Value  

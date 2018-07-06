@@ -28,13 +28,13 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The class which will implement the COM server.  
   
- `ThreadAllocator`  
+ *ThreadAllocator*  
  The class managing thread selection. The default value is [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).  
   
- `dwWait`  
+ *dwWait*  
  Specifies the time-out interval, in milliseconds. The default is INFINITE, which means the method's time-out interval never elapses.  
   
 ## Members  
@@ -49,7 +49,7 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
  The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) derives from `CAtlAutoThreadModuleT` in order to implement a thread-pooled, apartment-model COM server. It replaces the obsolete class [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
   
 > [!NOTE]
->  This class should not be used in a DLL, as the default `dwWait` value of INFINITE will cause a deadlock when the DLL is unloaded.  
+>  This class should not be used in a DLL, as the default *dwWait* value of INFINITE will cause a deadlock when the DLL is unloaded.  
   
 ## Inheritance Hierarchy  
  `IAtlAutoThreadModule`  

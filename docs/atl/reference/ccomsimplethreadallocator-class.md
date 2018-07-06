@@ -43,17 +43,17 @@ int GetThread(CComApartment* /* pApt */, int nThreads);
 ```  
   
 ### Parameters  
- `pApt`  
+ *pApt*  
  Not used in ATL's default implementation.  
   
- `nThreads`  
+ *nThreads*  
  The maximum number of threads in the EXE module.  
   
 ### Return Value  
- An integer between zero and ( `nThreads` - 1). Identifies one of the threads in the EXE module.  
+ An integer between zero and (*nThreads* - 1). Identifies one of the threads in the EXE module.  
   
 ### Remarks  
- You can override `GetThread` to provide a different method of selection or to make use of the `pApt` parameter.  
+ You can override `GetThread` to provide a different method of selection or to make use of the *pApt* parameter.  
   
  `GetThread` is called by [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).  
   

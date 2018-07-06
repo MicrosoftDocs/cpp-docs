@@ -29,7 +29,7 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class containing the function that will be called as the data is received.  
   
  *nBindFlags*  
@@ -52,9 +52,9 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
 |[CBindStatusCallback::GetBindInfo](#getbindinfo)|Called by the asynchronous moniker to request information on the type of bind to be created.|  
 |[CBindStatusCallback::GetPriority](#getpriority)|Called by the asynchronous moniker to get the priority of the bind operation. The ATL implementation returns `E_NOTIMPL`.|  
 |[CBindStatusCallback::OnDataAvailable](#ondataavailable)|Called to provide data to your application as it becomes available. Reads the data, then calls the function passed to it to use the data.|  
-|[CBindStatusCallback::OnLowResource](#onlowresource)|Called when resources are low. The ATL implementation returns `S_OK`.|  
-|[CBindStatusCallback::OnObjectAvailable](#onobjectavailable)|Called by the asynchronous moniker to pass an object interface pointer to your application. The ATL implementation returns `S_OK`.|  
-|[CBindStatusCallback::OnProgress](#onprogress)|Called to indicate the progress of a data downloading process. The ATL implementation returns `S_OK`.|  
+|[CBindStatusCallback::OnLowResource](#onlowresource)|Called when resources are low. The ATL implementation returns S_OK.|  
+|[CBindStatusCallback::OnObjectAvailable](#onobjectavailable)|Called by the asynchronous moniker to pass an object interface pointer to your application. The ATL implementation returns S_OK.|  
+|[CBindStatusCallback::OnProgress](#onprogress)|Called to indicate the progress of a data downloading process. The ATL implementation returns S_OK.|  
 |[CBindStatusCallback::OnStartBinding](#onstartbinding)|Called when binding is started.|  
 |[CBindStatusCallback::OnStopBinding](#onstopbinding)|Called when the asynchronous data transfer is stopped.|  
 |[CBindStatusCallback::StartAsyncDownload](#startasyncdownload)|Initializes the bytes available and bytes read to zero, creates a push-type stream object from a URL, and calls `OnDataAvailable` every time data is available.|  
@@ -103,7 +103,7 @@ CBindStatusCallback();
 ### Remarks  
  Creates an object to receive notifications concerning the asynchronous data transfer. Typically, one object is created for each bind operation.  
   
- The constructor also initializes [m_pT](#m_pt) and [m_pFunc](#m_pfunc) to **NULL**.  
+ The constructor also initializes [m_pT](#m_pt) and [m_pFunc](#m_pfunc) to NULL.  
   
 ##  <a name="dtor"></a>  CBindStatusCallback::~CBindStatusCallback  
  The destructor.  
@@ -134,19 +134,19 @@ static HRESULT Download(
  *pFunc*  
  [in] A pointer to the function that receives the data that is read. The function is a member of your object's class of type `T`. See [StartAsyncDownload](#startasyncdownload) for syntax and an example.  
   
- `bstrURL`  
- [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be **NULL**. For example:  
+ *bstrURL*  
+ [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be NULL. For example:  
   
  `CComBSTR mybstr =_T("http://somesite/data.htm")`  
   
- `pUnkContainer`  
- [in] The **IUnknown** of the container. **NULL** by default.  
+ *pUnkContainer*  
+ [in] The `IUnknown` of the container. NULL by default.  
   
- `bRelative`  
- [in] A flag indicating whether the URL is relative or absolute. **FALSE** by default, meaning the URL is absolute.  
+ *bRelative*  
+ [in] A flag indicating whether the URL is relative or absolute. FALSE by default, meaning the URL is absolute.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  Every time data is available it is sent to the object through `OnDataAvailable`. `OnDataAvailable` reads the data and calls the function pointed to by *pFunc* (for example, to store the data or print it to the screen).  
@@ -162,21 +162,21 @@ STDMETHOD(GetBindInfo)(
   
 ### Parameters  
  *pgrfBSCF*  
- [out] A pointer to **BINDF** enumeration values indicating how the bind operation should occur. By default, set with the following enumeration values:  
+ [out] A pointer to BINDF enumeration values indicating how the bind operation should occur. By default, set with the following enumeration values:  
   
- **BINDF_ASYNCHRONOUS** Asynchronous download.  
+ BINDF_ASYNCHRONOUS Asynchronous download.  
   
- **BINDF_ASYNCSTORAGE** `OnDataAvailable` returns **E_PENDING** when data is not yet available rather than blocking until data is available.  
+ BINDF_ASYNCSTORAGE `OnDataAvailable` returns E_PENDING when data is not yet available rather than blocking until data is available.  
   
- **BINDF_GETNEWESTVERSION** The bind operation should retrieve the newest version of the data.  
+ BINDF_GETNEWESTVERSION The bind operation should retrieve the newest version of the data.  
   
- **BINDF_NOWRITECACHE** The bind operation should not store retrieved data in the disk cache.  
+ BINDF_NOWRITECACHE The bind operation should not store retrieved data in the disk cache.  
   
  *pbindinfo*  
- [in, out] A pointer to the **BINDINFO** structure giving more information about how the object wants binding to occur.  
+ [in, out] A pointer to the `BINDINFO` structure giving more information about how the object wants binding to occur.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  The default implementation sets the binding to be asynchronous and to use the data-push model. In the data-push model, the moniker drives the asynchronous bind operation and continuously notifies the client whenever new data is available.  
@@ -193,7 +193,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
  [out] Address of the **LONG** variable that, on success, receives the priority.  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ##  <a name="m_dwavailabletoread"></a>  CBindStatusCallback::m_dwAvailableToRead  
  Can be used to store the number of bytes available to be read.  
@@ -281,7 +281,7 @@ CComPtr<IStream> m_spStream;
 ```  
   
 ### Remarks  
- Initialized in `OnDataAvailable` from the **STGMEDIUM** structure when the **BCSF** flag is **BCSF_FIRSTDATANOTIFICATION** and released when the **BCSF** flag is **BCSF_LASTDATANOTIFICATION**.  
+ Initialized in `OnDataAvailable` from the `STGMEDIUM` structure when the BCSF flag is BCSF_FIRSTDATANOTIFICATION and released when the BCSF flag is BCSF_LASTDATANOTIFICATION.  
   
 ##  <a name="ondataavailable"></a>  CBindStatusCallback::OnDataAvailable  
  The system-supplied asynchronous moniker calls `OnDataAvailable` to provide data to the object as it becomes available.  
@@ -296,19 +296,19 @@ STDMETHOD(
   
 ### Parameters  
  *grfBSCF*  
- [in] A **BSCF** enumeration value. One or more of the following: **BSCF_FIRSTDATANOTIFICATION**, **BSCF_INTERMEDIARYDATANOTIFICATION**, or **BSCF_LASTDATANOTIFICATION**.  
+ [in] A BSCF enumeration value. One or more of the following: BSCF_FIRSTDATANOTIFICATION, BSCF_INTERMEDIARYDATANOTIFICATION, or BSCF_LASTDATANOTIFICATION.  
   
- `dwSize`  
+ *dwSize*  
  [in] The cumulative amount (in bytes) of data available since the beginning of the binding. Can be zero, indicating that the amount of data is not relevant or that no specific amount became available.  
   
  *pformatetc*  
- [in] Pointer to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682242) structure that contains the format of the available data. If there is no format, can be **CF_NULL**.  
+ [in] Pointer to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682242) structure that contains the format of the available data. If there is no format, can be CF_NULL.  
   
  *pstgmed*  
  [in] Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms695269) structure that holds the actual data now available.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  `OnDataAvailable` reads the data, then calls a method of your object's class (for example, to store the data or print it to the screen). See [CBindStatusCallback::StartAsyncDownload](#startasyncdownload) for details.  
@@ -321,11 +321,11 @@ STDMETHOD(OnLowResource)(DWORD /* dwReserved */);
 ```  
   
 ### Parameters  
- `dwReserved`  
+ *dwReserved*  
  Reserved.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ##  <a name="onobjectavailable"></a>  CBindStatusCallback::OnObjectAvailable  
  Called by the asynchronous moniker to pass an object interface pointer to your application.  
@@ -335,14 +335,14 @@ STDMETHOD(OnObjectAvailable)(REFID /* riid */, IUnknown* /* punk */);
 ```  
   
 ### Parameters  
- `riid`  
+ *riid*  
  Interface identifier of the requested interface. Unused.  
   
- `punk`  
+ *punk*  
  Address of the IUnknown interface. Unused.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ##  <a name="onprogress"></a>  CBindStatusCallback::OnProgress  
  Called to indicate the progress of a data downloading process.  
@@ -356,33 +356,33 @@ STDMETHOD(OnProgress)(
 ```  
   
 ### Parameters  
- `ulProgress`  
+ *ulProgress*  
  Unsigned long integer. Unused.  
   
- `ulProgressMax`  
+ *ulProgressMax*  
  Unsigned long integer Unused.  
   
- `ulStatusCode`  
+ *ulStatusCode*  
  Unsigned long integer. Unused.  
   
- `szStatusText`  
+ *szStatusText*  
  Address of a string value. Unused.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ##  <a name="onstartbinding"></a>  CBindStatusCallback::OnStartBinding  
- Sets the data member [m_spBinding](#m_spbinding) to the `IBinding` pointer in `pBinding`.  
+ Sets the data member [m_spBinding](#m_spbinding) to the `IBinding` pointer in *pBinding*.  
   
 ```
 STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
 ```  
   
 ### Parameters  
- `dwReserved`  
+ *dwReserved*  
  Reserved for future use.  
   
- `pBinding`  
+ *pBinding*  
  [in] Address of the IBinding interface of the current bind operation. This cannot be NULL. The client should call AddRef on this pointer to keep a reference to the binding object.  
   
 ##  <a name="onstopbinding"></a>  CBindStatusCallback::OnStopBinding  
@@ -393,7 +393,7 @@ STDMETHOD(OnStopBinding)(HRESULT hresult, LPCWSTR /* szError */);
 ```  
   
 ### Parameters  
- `hresult`  
+ *hresult*  
  Status code returned from the bind operation.  
   
  szStatusText  
@@ -421,19 +421,19 @@ HRESULT StartAsyncDownload(
  *pFunc*  
  [in] A pointer to the function that receives the data being read. The function is a member of your object's class of type `T`. See **Remarks** for syntax and an example.  
   
- `bstrURL`  
- [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be **NULL**. For example:  
+ *bstrURL*  
+ [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be NULL. For example:  
   
  `CComBSTR mybstr =_T("http://somesite/data.htm")`  
   
- `pUnkContainer`  
- [in] The **IUnknown** of the container. **NULL** by default.  
+ *pUnkContainer*  
+ [in] The `IUnknown` of the container. NULL by default.  
   
- `bRelative`  
- [in] A flag indicating whether the URL is relative or absolute. **FALSE** by default, meaning the URL is absolute.  
+ *bRelative*  
+ [in] A flag indicating whether the URL is relative or absolute. FALSE by default, meaning the URL is absolute.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  Every time data is available it is sent to the object through `OnDataAvailable`. `OnDataAvailable` reads the data and calls the function pointed to by *pFunc* (for example, to store the data or print it to the screen).  

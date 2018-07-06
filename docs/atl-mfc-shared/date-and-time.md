@@ -18,7 +18,7 @@ MFC supports several different ways of working with dates and times. These inclu
   
 -   Support for system clock. With MFC version 3.0, support was added to `CTime` for the Win32 `SYSTEMTIME` and `FILETIME` data types.  
   
--   Support for the Automation [DATE data type](../atl-mfc-shared/date-type.md). **DATE** supports date, time, and date/time values. The [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) and [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) classes encapsulate this functionality. They work with the [COleVariant](../mfc/reference/colevariant-class.md) class using Automation support.  
+-   Support for the Automation [DATE data type](../atl-mfc-shared/date-type.md). DATE supports date, time, and date/time values. The [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) and [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) classes encapsulate this functionality. They work with the [COleVariant](../mfc/reference/colevariant-class.md) class using Automation support.  
   
 ## What do you want to know more about  
   

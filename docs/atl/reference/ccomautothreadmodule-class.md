@@ -97,11 +97,11 @@ HRESULT CreateInstance(
  *pfnCreateInstance*  
  [in] A pointer to a creator function.  
   
- `riid`  
+ *riid*  
  [in] The IID of the requested interface.  
   
- `ppvObj`  
- [out] A pointer to the interface pointer identified by `riid`. If the object does not support this interface, `ppvObj` is set to NULL.  
+ *ppvObj*  
+ [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -144,20 +144,20 @@ HRESULT Init(
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  [in] A pointer to an array of object map entries.  
   
- `h`  
- [in] The `HINSTANCE` passed to **DLLMain** or `WinMain`.  
+ *h*  
+ [in] The HINSTANCE passed to `DLLMain` or `WinMain`.  
   
- `plibid`  
+ *plibid*  
  [in] A pointer to the LIBID of the type library associated with the project.  
   
- `nThreads`  
- [in] The number of threads to be created. By default, `nThreads` is the value returned by [GetDefaultThreads](#getdefaultthreads).  
+ *nThreads*  
+ [in] The number of threads to be created. By default, *nThreads* is the value returned by [GetDefaultThreads](#getdefaultthreads).  
   
 ### Remarks  
- Initializes data members and creates the number of threads specified by `nThreads`.  
+ Initializes data members and creates the number of threads specified by *nThreads*.  
   
 ##  <a name="lock"></a>  CComAutoThreadModule::Lock  
  As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -190,7 +190,7 @@ int m_nThreads;
 ```  
   
 ### Remarks  
- Contains the number of threads in the EXE module. When [Init](#init) is called, `m_nThreads` is set to the `nThreads` parameter value. Each thread's associated apartment is managed by a [CComApartment](../../atl/reference/ccomapartment-class.md) object.  
+ Contains the number of threads in the EXE module. When [Init](#init) is called, `m_nThreads` is set to the *nThreads* parameter value. Each thread's associated apartment is managed by a [CComApartment](../../atl/reference/ccomapartment-class.md) object.  
   
 ##  <a name="m_papartments"></a>  CComAutoThreadModule::m_pApartments  
  As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
