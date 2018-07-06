@@ -65,14 +65,14 @@ int main() {
 }  
 ```  
   
- The exception is thrown because the object being cast (a Shape) is not derived from the specified cast type (Circle). To avoid the exception, add these declarations to `main`:  
+ The exception is thrown because the object being cast (a Shape) is not derived from the specified cast type (Circle). To avoid the exception, add these declarations to **main**:  
   
 ```  
 Circle circle_instance;  
 Circle& ref_circle = circle_instance;  
 ```  
   
- Then reverse the sense of the cast in the `try` block as follows:  
+ Then reverse the sense of the cast in the **try** block as follows:  
   
 ```  
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);  

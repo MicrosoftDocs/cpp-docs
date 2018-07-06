@@ -44,7 +44,7 @@ friend _bstr_t operator+(
  *s2*  
  A multibyte string.  
   
- `s3`  
+ *s3*  
  A Unicode string.  
   
 ## Remarks  
@@ -56,7 +56,7 @@ friend _bstr_t operator+(
   
 -   **operator+(**  *s2*  **&#124;**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a multibyte string *s2*, converted to Unicode, with the `BSTR` encapsulated in *s1*.  
   
--   **operator+(**  `s3` **,**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a Unicode string `s3` with the `BSTR` encapsulated in *s1*.  
+-   **operator+(**  *s3* **,**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a Unicode string *s3* with the `BSTR` encapsulated in *s1*.  
   
  **END Microsoft Specific**  
   

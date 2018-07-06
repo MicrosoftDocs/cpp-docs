@@ -31,7 +31,7 @@ expression
  Both operands to the bitwise AND operator must be of integral types. The usual arithmetic conversions covered in [Standard Conversions](standard-conversions.md), are applied to the operands.  
   
 ## Operator Keyword for &  
- The `bitand` operator is the text equivalent of **&**. There are two ways to access the `bitand` operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
+ The **bitand** operator is the text equivalent of **&**. There are two ways to access the **bitand** operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
   
 ## Example  
   

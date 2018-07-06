@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # break Statement (C++)
-The `break` statement ends execution of the nearest enclosing loop or conditional statement in which it appears. Control passes to the statement that follows the end of the statement, if any.  
+The **break** statement ends execution of the nearest enclosing loop or conditional statement in which it appears. Control passes to the statement that follows the end of the statement, if any.  
   
 ## Syntax  
   
@@ -22,16 +22,16 @@ break;
 ```  
   
 ## Remarks  
- The `break` statement is used with the conditional [switch](../cpp/switch-statement-cpp.md) statement and with the [do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), and [while](../cpp/while-statement-cpp.md) loop statements.  
+ The **break** statement is used with the conditional [switch](../cpp/switch-statement-cpp.md) statement and with the [do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), and [while](../cpp/while-statement-cpp.md) loop statements.  
   
- In a `switch` statement, the `break` statement causes the program to execute the next statement outside the `switch` statement. Without a `break` statement, every statement from the matched `case` label to the end of the `switch` statement, including the `default` clause, is executed.  
+ In a **switch** statement, the **break** statement causes the program to execute the next statement outside the **switch** statement. Without a **break** statement, every statement from the matched **case** label to the end of the **switch** statement, including the **default** clause, is executed.  
   
- In loops, the `break` statement ends execution of the nearest enclosing `do`, `for`, or `while` statement. Control passes to the statement that follows the ended statement, if any.  
+ In loops, the **break** statement ends execution of the nearest enclosing **do**, **for**, or **while** statement. Control passes to the statement that follows the ended statement, if any.  
   
- Within nested statements, the `break` statement ends only the `do`, `for`, `switch`, or `while` statement that immediately encloses it. You can use a `return` or `goto` statement to transfer control from more deeply nested structures.  
+ Within nested statements, the **break** statement ends only the **do**, **for**, **switch**, or **while** statement that immediately encloses it. You can use a **return** or **goto** statement to transfer control from more deeply nested structures.  
   
 ## Example  
- The following code shows how to use the `break` statement in a `for` loop.  
+ The following code shows how to use the **break** statement in a **for** loop.  
   
 ```cpp  
 #include <iostream>  
@@ -66,7 +66,7 @@ In each case:
 3  
 ```  
   
- The following code shows how to use `break` in a `while` loop and a `do` loop.  
+ The following code shows how to use **break** in a **while** loop and a **do** loop.  
   
 ```cpp  
 #include <iostream>  
@@ -99,7 +99,7 @@ In each case:
 0123  
 ```  
   
- The following code shows how to use `break` in a switch statement. You must use `break` in every case if you want to handle each case separately; if you do not use `break`, the code execution falls through to the next case.  
+ The following code shows how to use **break** in a switch statement. You must use **break** in every case if you want to handle each case separately; if you do not use **break**, the code execution falls through to the next case.  
   
 ```cpp  
 #include <iostream>  

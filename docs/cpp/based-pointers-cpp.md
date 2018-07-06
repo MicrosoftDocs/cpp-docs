@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Based Pointers (C++)
 **Microsoft Specific**  
   
- The `__based` keyword allows you to declare pointers based on pointers (pointers that are offsets from existing pointers).  
+ The **__based** keyword allows you to declare pointers based on pointers (pointers that are offsets from existing pointers).  
   
 ## Syntax  
   
@@ -25,7 +25,7 @@ type __based( base ) declarator
 ```  
   
 ## Remarks  
- Pointers based on pointer addresses are the only form of the `__based` keyword valid in 32-bit or 64-bit compilations. For the Microsoft 32-bit C/C++ compiler, a based pointer is a 32-bit offset from a 32-bit pointer base. A similar restriction holds for 64-bit environments, where a based pointer is a 64-bit offset from the 64-bit base.  
+ Pointers based on pointer addresses are the only form of the **__based** keyword valid in 32-bit or 64-bit compilations. For the Microsoft 32-bit C/C++ compiler, a based pointer is a 32-bit offset from a 32-bit pointer base. A similar restriction holds for 64-bit environments, where a based pointer is a 64-bit offset from the 64-bit base.  
   
  One use for pointers based on pointers is for persistent identifiers that contain pointers. A linked list that consists of pointers based on a pointer can be saved to disk, then reloaded to another place in memory, with the pointers remaining valid. For example:  
   
@@ -46,7 +46,7 @@ struct llist_t {
   
  When dereferencing a based pointer, the base must be either explicitly specified or implicitly known through the declaration.  
   
- For compatibility with previous versions, **_based** is a synonym for `__based`.  
+ For compatibility with previous versions, **_based** is a synonym for **__based**.  
   
 ## Example  
  The following code demonstrates changing a based pointer by changing its base.  

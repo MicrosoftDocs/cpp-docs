@@ -80,7 +80,7 @@ ptr<int> ptr_int;
 ```  
   
 ## Example  
- The following example demonstrates how to use an alias template with a custom allocator—in this case, an integer vector type. You can substitute any type for `int` to create a convenient alias to hide the complex parameter lists in your main functional code. By using the custom allocator throughout your code you can improve readability and reduce the risk of introducing bugs caused by typos.  
+ The following example demonstrates how to use an alias template with a custom allocator—in this case, an integer vector type. You can substitute any type for **int** to create a convenient alias to hide the complex parameter lists in your main functional code. By using the custom allocator throughout your code you can improve readability and reduce the risk of introducing bugs caused by typos.  
   
 ```cpp  
 #include <stdlib.h>  
@@ -232,7 +232,7 @@ typedef char CHAR, *PSTR;
 typedef void DRAWF( int, int );  
 ```  
   
- After the above `typedef` statement, the declaration  
+ After the above **typedef** statement, the declaration  
   
 ```  
 DRAWF box;   
@@ -284,7 +284,7 @@ typedef char CHAR;
 #include "file2.h"   // OK  
 ```  
   
- The program *PROG.CPP* includes two header files, both of which contain `typedef` declarations for the name `CHAR`. As long as both declarations refer to the same type, such redeclaration is acceptable.  
+ The program *PROG.CPP* includes two header files, both of which contain **typedef** declarations for the name `CHAR`. As long as both declarations refer to the same type, such redeclaration is acceptable.  
   
  A **typedef** cannot redefine a name that was previously declared as a different type. Therefore, if *FILE2.H* contains  
   
@@ -343,7 +343,7 @@ typedef struct {
 } POINT;  
 ```  
   
- The preceding example declares a class named `POINT` using the unnamed class `typedef` syntax. `POINT` is treated as a class name; however, the following restrictions apply to names introduced this way:  
+ The preceding example declares a class named `POINT` using the unnamed class **typedef** syntax. `POINT` is treated as a class name; however, the following restrictions apply to names introduced this way:  
   
 -   The name (the synonym) cannot appear after a **class**, **struct**, or **union** prefix.  
   

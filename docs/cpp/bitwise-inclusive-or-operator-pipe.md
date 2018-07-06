@@ -29,7 +29,7 @@ expression
  Both operands to the bitwise inclusive OR operator must be of integral types. The usual arithmetic conversions covered in [Standard Conversions](standard-conversions.md) are applied to the operands.  
   
 ## Operator Keyword for &#124;  
- The `bitor` operator is the text equivalent of **&#124;**. There are two ways to access the `bitor` operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
+ The **bitor** operator is the text equivalent of **&#124;**. There are two ways to access the **bitor** operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
   
 ## Example  
   
