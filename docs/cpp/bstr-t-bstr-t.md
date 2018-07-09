@@ -40,23 +40,23 @@ _bstr_t(
 ```  
   
 #### Parameters  
- `s1`  
+ *s1*  
  A `_bstr_t` object to be copied.  
   
- `s2`  
+ *s2*  
  A multibyte string.  
   
- `s3`  
+ *s3*  
  A Unicode string  
   
- `var`  
+ *var*  
  A [_variant_t](../cpp/variant-t-class.md) object.  
   
- `bstr`  
+ *bstr*  
  An existing `BSTR` object.  
   
- `fCopy`  
- If `false`, the `bstr` argument is attached to the new object without making a copy by calling `SysAllocString`.  
+ *fCopy*  
+ If FALSE, the *bstr* argument is attached to the new object without making a copy by calling `SysAllocString`.  
   
 ## Remarks  
  The following table describes the `_bstr_t` constructors.  

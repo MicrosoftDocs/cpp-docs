@@ -32,13 +32,13 @@ Writing applications that use the latest processor instructions introduces some 
 
 For information about how to return a value of type `size_t` that is the alignment requirement of the type, see [__alignof](../cpp/alignof-operator.md). For information about how to declare unaligned pointers when targeting 64-bit processors, see [__unaligned](../cpp/unaligned.md).
 
-You can use `__declspec(align(#))` when you define a `struct`, `union`, or `class`, or when you declare a variable.
+You can use `__declspec(align(#))` when you define a **struct**, **union**, or **class**, or when you declare a variable.
 
 The compiler does not guarantee or attempt to preserve the alignment attribute of data during a copy or data transform operation. For example, [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) can copy a struct declared with `__declspec(align(#))` to any location. Note that ordinary allocators—for example, [malloc](../c-runtime-library/reference/malloc.md), C++ [operator new](new-operator-cpp.md), and the Win32 allocators—return memory that is usually not sufficiently aligned for `__declspec(align(#))` structures or arrays of structures. To guarantee that the destination of a copy or data transformation operation is correctly aligned, use [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), or write your own allocator.
 
 You cannot specify alignment for function parameters. When data that has an alignment attribute is passed by value on the stack, its alignment is controlled by the calling convention. If data alignment is important in the called function, copy the parameter into correctly aligned memory before use.
 
-Without `__declspec(align(#))`, the compiler generally aligns data on natural boundaries based on the target processor and the size of the data, up to 4-byte boundaries on 32-bit processors, and 8-byte boundaries on 64-bit processors. Data in classes or structures is aligned in the class or structure at the minimum of its natural alignment and the current packing setting (from #pragma `pack` or the **/Zp** compiler option).
+Without `__declspec(align(#))`, the compiler generally aligns data on natural boundaries based on the target processor and the size of the data, up to 4-byte boundaries on 32-bit processors, and 8-byte boundaries on 64-bit processors. Data in classes or structures is aligned in the class or structure at the minimum of its natural alignment and the current packing setting (from #pragma **pack** or the **/Zp** compiler option).
 
 This example demonstrates the use of `__declspec(align(#))`:
 
@@ -87,7 +87,7 @@ The following examples show how `__declspec(align(#))` affects the size and alig
 #define CACHE_ALIGN __declspec(align(CACHE_LINE))
 ```
 
-In this example, the `S1` structure is defined by using `__declspec(align(32))`. All uses of `S1` for a variable definition or in other type declarations are 32-byte aligned. `sizeof(struct S1)` returns 32, and `S1` has 16 padding bytes following the 16 bytes required to hold the four integers. Each `int` member requires 4-byte alignment, but the alignment of the structure itself is declared to be 32. Therefore, the overall alignment is 32.
+In this example, the `S1` structure is defined by using `__declspec(align(32))`. All uses of `S1` for a variable definition or in other type declarations are 32-byte aligned. `sizeof(struct S1)` returns 32, and `S1` has 16 padding bytes following the 16 bytes required to hold the four integers. Each **int** member requires 4-byte alignment, but the alignment of the structure itself is declared to be 32. Therefore, the overall alignment is 32.
 
 ```cpp
 struct CACHE_ALIGN S1 { // cache align all instances of S1
@@ -167,7 +167,7 @@ void fn() {
 }
 ```
 
-The alignment when memory is allocated on the heap depends on which allocation function is called.  For example, if you use `malloc`, the result depends on the operand size. If *arg* >= 8, the memory returned is 8 byte aligned. If *arg* < 8, the alignment of the memory returned is the first power of 2 less than *arg*. For example, if you use malloc(7), the alignment is 4 bytes.
+The alignment when memory is allocated on the heap depends on which allocation function is called.  For example, if you use **malloc**, the result depends on the operand size. If *arg* >= 8, the memory returned is 8 byte aligned. If *arg* < 8, the alignment of the memory returned is the first power of 2 less than *arg*. For example, if you use malloc(7), the alignment is 4 bytes.
 
 ##  <a name="vclrf_declspecaligntypedef"></a> Defining New Types with __declspec(align(#))
 
@@ -207,7 +207,7 @@ __declspec(thread) struct S9 a;
 
 ##  <a name="vclrfhowalignworkswithdatapacking"></a> How align Works with Data Packing
 
-The **/Zp** compiler option and the `pack` pragma have the effect of packing data for structure and union members.This example shows how **/Zp** and `__declspec(align(#))` work together:
+The **/Zp** compiler option and the **pack** pragma have the effect of packing data for structure and union members.This example shows how **/Zp** and `__declspec(align(#))` work together:
 
 ```c[[]]
 struct S {
@@ -220,7 +220,7 @@ struct S {
 };
 ```
 
-The following table lists the offset of each member under a variety of **/Zp** (or #pragma `pack`) values, showing how the two interact.
+The following table lists the offset of each member under a variety of **/Zp** (or #pragma **pack**) values, showing how the two interact.
 
 |Variable|/Zp1|/Zp2|/Zp4|/Zp8|
 |--------------|-----------|-----------|-----------|-----------|
