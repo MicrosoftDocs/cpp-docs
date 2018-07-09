@@ -33,16 +33,16 @@ bool operator!=(
   
 #### Parameters  
  *varSrc*  
- A **VARIANT** to be compared with the `_variant_t` object.  
+ A `VARIANT` to be compared with the `_variant_t` object.  
   
- `pSrc`  
- Pointer to the **VARIANT** to be compared with the `_variant_t` object.  
+ *pSrc*  
+ Pointer to the `VARIANT` to be compared with the `_variant_t` object.  
   
 ## Return Value  
- Returns **true** if comparison holds, **false** if not.  
+ Returns TRUE if comparison holds, FALSE if not.  
   
 ## Remarks  
- Compares a `_variant_t` object with a **VARIANT**, testing for equality or inequality.  
+ Compares a `_variant_t` object with a `VARIANT`, testing for equality or inequality.  
   
  **END Microsoft Specific**  
   
