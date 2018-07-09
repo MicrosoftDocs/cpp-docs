@@ -25,7 +25,7 @@ void SetString(const char* pSrc);
 ```  
   
 #### Parameters  
- `pSrc`  
+ *pSrc*  
  Pointer to the character string.  
   
 ## Remarks  

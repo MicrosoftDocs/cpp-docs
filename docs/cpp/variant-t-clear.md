@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _variant_t::Clear
 **Microsoft Specific**  
   
- Clears the encapsulated **VARIANT** object.  
+ Clears the encapsulated `VARIANT` object.  
   
 ## Syntax  
   
@@ -26,7 +26,7 @@ void Clear( );
 ```  
   
 ## Remarks  
- Calls **VariantClear** on the encapsulated **VARIANT** object.  
+ Calls `VariantClear` on the encapsulated `VARIANT` object.  
   
  **END Microsoft Specific**  
   

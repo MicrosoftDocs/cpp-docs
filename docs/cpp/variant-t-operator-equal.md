@@ -115,9 +115,9 @@ _variant_t& operator=(
 ## Remarks  
  The operator assigns a new value to the `_variant_t` object:  
   
--   **operator=(**  *varSrc*  **)** Assigns an existing **VARIANT** to a `_variant_t` object.  
+-   **operator=(**  *varSrc*  **)** Assigns an existing `VARIANT` to a `_variant_t` object.  
   
--   **operator=(**  *pVarSrc*  **)** Assigns an existing **VARIANT** to a `_variant_t` object.  
+-   **operator=(**  *pVarSrc*  **)** Assigns an existing `VARIANT` to a `_variant_t` object.  
   
 -   **operator=(**  *var_t_Src*  **)** Assigns an existing `_variant_t` object to a `_variant_t` object.  
   
@@ -129,7 +129,7 @@ _variant_t& operator=(
   
 -   **operator=(**  *dblSrc*  **)** Assigns a **double** numerical value to a `_variant_t` object.  
   
--   **operator=(**  *cySrc*  **)** Assigns a **CY** object to a `_variant_t` object.  
+-   **operator=(**  *cySrc*  **)** Assigns a `CY` object to a `_variant_t` object.  
   
 -   **operator=(**  *bstrSrc*  **)** Assigns a `BSTR` object to a `_variant_t` object.  
   
@@ -137,15 +137,15 @@ _variant_t& operator=(
   
 -   **operator=(**  `strSrc`  **)** Assigns a multibyte string to a `_variant_t` object.  
   
--   **operator=(**  `bSrc` **)** Assigns a `bool` value to a `_variant_t` object.  
+-   **operator=(**  `bSrc` **)** Assigns a **bool** value to a `_variant_t` object.  
   
--   **operator=(**  *pDispSrc*  **)** Assigns a **VT_DISPATCH** object to a `_variant_t` object.  
+-   **operator=(**  *pDispSrc*  **)** Assigns a `VT_DISPATCH` object to a `_variant_t` object.  
   
--   **operator=(**  *pIUnknownSrc*  **)** Assigns a **VT_UNKNOWN** object to a `_variant_t` object.  
+-   **operator=(**  *pIUnknownSrc*  **)** Assigns a `VT_UNKNOWN` object to a `_variant_t` object.  
   
--   **operator=(**  *decSrc*  **)** Assigns a **DECIMAL** value to a `_variant_t` object.  
+-   **operator=(**  *decSrc*  **)** Assigns a `DECIMAL` value to a `_variant_t` object.  
   
--   **operator=(**  `bSrc` **)** Assigns a **BYTE** value to a `_variant_t` object.  
+-   **operator=(**  `bSrc` **)** Assigns a `BYTE` value to a `_variant_t` object.  
   
  **END Microsoft Specific**  
   
