@@ -59,10 +59,10 @@ void AddCreateWndData(_AtlCreateWndData* pData, void* pObject);
 ```  
   
 ### Parameters  
- `pData`  
+ *pData*  
  Pointer to the `_AtlCreateWndData` structure to be initialized and added to the current module.  
   
- `pObject`  
+ *pObject*  
  Pointer to an object's **this** pointer.  
   
 ### Remarks  

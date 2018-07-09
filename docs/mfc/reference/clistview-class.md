@@ -88,7 +88,7 @@ void RemoveImageList(int nImageList);
 ```  
   
 ### Parameters  
- `nImageList`  
+ *nImageList*  
  The zero-based index of the image to remove.  
   
 ## See Also  

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComUnkArray Class
-This class stores **IUnknown** pointers, and is designed to be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.  
+This class stores `IUnknown` pointers, and is designed to be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.  
   
 ## Syntax  
   
@@ -24,7 +24,7 @@ class CComUnkArray
   
 #### Parameters  
  *nMaxSize*  
- The maximum number of **IUnknown** pointers that can be held in the static array.  
+ The maximum number of `IUnknown` pointers that can be held in the static array.  
   
 ## Members  
   
@@ -38,28 +38,28 @@ class CComUnkArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComUnkArray::Add](#add)|Call this method to add an **IUnknown** pointer to the array.|  
-|[CComUnkArray::begin](#begin)|Returns a pointer to the first **IUnknown** pointer in the collection.|  
-|[CComUnkArray::end](#end)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
-|[CComUnkArray::GetCookie](#getcookie)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
-|[CComUnkArray::GetUnknown](#getunknown)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
-|[CComUnkArray::Remove](#remove)|Call this method to remove an **IUnknown** pointer from the array.|  
+|[CComUnkArray::Add](#add)|Call this method to add an `IUnknown` pointer to the array.|  
+|[CComUnkArray::begin](#begin)|Returns a pointer to the first `IUnknown` pointer in the collection.|  
+|[CComUnkArray::end](#end)|Returns a pointer to one past the last `IUnknown` pointer in the collection.|  
+|[CComUnkArray::GetCookie](#getcookie)|Call this method to get the cookie associated with a given `IUnknown` pointer.|  
+|[CComUnkArray::GetUnknown](#getunknown)|Call this method to get the `IUnknown` pointer associated with a given cookie.|  
+|[CComUnkArray::Remove](#remove)|Call this method to remove an `IUnknown` pointer from the array.|  
   
 ## Remarks  
- **CComUnkArray** holds a fixed number of **IUnknown** pointers, each an interface on a connection point. **CComUnkArray** can be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class. **CComUnkArray\<1>** is a template specialization of **CComUnkArray** that has been optimized for one connection point.  
+ `CComUnkArray` holds a fixed number of `IUnknown` pointers, each an interface on a connection point. `CComUnkArray` can be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class. `CComUnkArray<1>` is a template specialization of `CComUnkArray` that has been optimized for one connection point.  
   
- The **CComUnkArray** methods [begin](#begin) and [end](#end) can be used to loop through all connection points (for example, when an event is fired).  
+ The `CComUnkArray` methods [begin](#begin) and [end](#end) can be used to loop through all connection points (for example, when an event is fired).  
   
  See [Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md) for details on automating creation of connection point proxies.  
   
 > [!NOTE]
-> **Note** The class [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md) is used by the **Add Class** wizard when creating a control which has Connection Points. If you wish to specify the number of Connection Points manually, change the reference from **CComDynamicUnkArray** to `CComUnkArray<` *n* `>`, where *n* is the number of connection points required.  
+> **Note** The class [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md) is used by the **Add Class** wizard when creating a control which has Connection Points. If you wish to specify the number of Connection Points manually, change the reference from `CComDynamicUnkArray` to `CComUnkArray<` *n* `>`, where *n* is the number of connection points required.  
   
 ## Requirements  
  **Header:** atlcom.h  
   
 ##  <a name="add"></a>  CComUnkArray::Add  
- Call this method to add an **IUnknown** pointer to the array.  
+ Call this method to add an `IUnknown` pointer to the array.  
   
 ```
 DWORD Add(IUnknown* pUnk);
@@ -67,13 +67,13 @@ DWORD Add(IUnknown* pUnk);
   
 ### Parameters  
  *pUnk*  
- Call this method to add an **IUnknown** pointer to the array.  
+ Call this method to add an `IUnknown` pointer to the array.  
   
 ### Return Value  
  Returns the cookie associated with the newly added pointer, or 0 if the array is not large enough to contain the new pointer.  
   
 ##  <a name="begin"></a>  CComUnkArray::begin  
- Returns a pointer to the beginning of the collection of **IUnknown** interface pointers.  
+ Returns a pointer to the beginning of the collection of `IUnknown` interface pointers.  
   
 ```
 IUnknown**
@@ -81,12 +81,12 @@ IUnknown**
 ```     
   
 ### Return Value  
- A pointer to an **IUnknown** interface pointer.  
+ A pointer to an `IUnknown` interface pointer.  
   
 ### Remarks  
- The collection contains pointers to interfaces stored locally as **IUnknown**. You cast each **IUnknown** interface to the real interface type and then call through it. You do not need to query for the interface first.  
+ The collection contains pointers to interfaces stored locally as `IUnknown`. You cast each `IUnknown` interface to the real interface type and then call through it. You do not need to query for the interface first.  
   
- Before using the **IUnknown** interface, you should check that it is not **NULL**.  
+ Before using the `IUnknown` interface, you should check that it is not NULL.  
   
 ##  <a name="ccomunkarray"></a>  CComUnkArray::CComUnkArray  
  The constructor.  
@@ -96,10 +96,10 @@ CComUnkArray();
 ```  
   
 ### Remarks  
- Sets the collection to hold `nMaxSize` **IUnknown** pointers, and initializes the pointers to **NULL**.  
+ Sets the collection to hold `nMaxSize` `IUnknown` pointers, and initializes the pointers to NULL.  
   
 ##  <a name="end"></a>  CComUnkArray::end  
- Returns a pointer to one past the last **IUnknown** pointer in the collection.  
+ Returns a pointer to one past the last `IUnknown` pointer in the collection.  
   
 ```
 IUnknown**
@@ -107,57 +107,57 @@ IUnknown**
 ```     
   
 ### Return Value  
- A pointer to an **IUnknown** interface pointer.  
+ A pointer to an `IUnknown` interface pointer.  
   
 ### Remarks  
- The `CComUnkArray` methods **begin** and **end** can be used to loop through all connection points, for example, when an event is fired.  
+ The `CComUnkArray` methods `begin` and `end` can be used to loop through all connection points, for example, when an event is fired.  
   
  [!code-cpp[NVC_ATL_COM#44](../../atl/codesnippet/cpp/ccomunkarray-class_1.cpp)]  
   
 ##  <a name="getcookie"></a>  CComUnkArray::GetCookie  
- Call this method to get the cookie associated with a given **IUnknown** pointer.  
+ Call this method to get the cookie associated with a given `IUnknown` pointer.  
   
 ```
 DWORD WINAPI GetCookie(IUnknown** ppFind);
 ```  
   
 ### Parameters  
- `ppFind`  
- The **IUnknown** pointer for which the associated cookie is required.  
+ *ppFind*  
+ The `IUnknown` pointer for which the associated cookie is required.  
   
 ### Return Value  
- Returns the cookie associated with the **IUnknown** pointer, or 0 if no matching **IUnknown** pointer is found.  
+ Returns the cookie associated with the `IUnknown` pointer, or 0 if no matching `IUnknown` pointer is found.  
   
 ### Remarks  
- If there is more than one instance of the same **IUnknown** pointer, this function returns the cookie for the first one.  
+ If there is more than one instance of the same `IUnknown` pointer, this function returns the cookie for the first one.  
   
 ##  <a name="getunknown"></a>  CComUnkArray::GetUnknown  
- Call this method to get the **IUnknown** pointer associated with a given cookie.  
+ Call this method to get the `IUnknown` pointer associated with a given cookie.  
   
 ```
 IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 ```  
   
 ### Parameters  
- `dwCookie`  
- The cookie for which the associated **IUnknown** pointer is required.  
+ *dwCookie*  
+ The cookie for which the associated `IUnknown` pointer is required.  
   
 ### Return Value  
- Returns the **IUnknown** pointer, or NULL if no matching cookie is found.  
+ Returns the `IUnknown` pointer, or NULL if no matching cookie is found.  
   
 ##  <a name="remove"></a>  CComUnkArray::Remove  
- Call this method to remove an **IUnknown** pointer from the array.  
+ Call this method to remove an `IUnknown` pointer from the array.  
   
 ```
 BOOL Remove(DWORD dwCookie);
 ```  
   
 ### Parameters  
- `dwCookie`  
- The cookie referencing the **IUnknown** pointer to be removed from the array.  
+ *dwCookie*  
+ The cookie referencing the `IUnknown` pointer to be removed from the array.  
   
 ### Return Value  
- Returns **TRUE** if the pointer is removed, **FALSE** otherwise.  
+ Returns TRUE if the pointer is removed, FALSE otherwise.  
   
 ## See Also  
  [CComDynamicUnkArray Class](../../atl/reference/ccomdynamicunkarray-class.md)   

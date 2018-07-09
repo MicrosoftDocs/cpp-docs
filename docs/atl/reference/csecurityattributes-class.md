@@ -39,7 +39,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 |[CSecurityAttributes::Set](#set)|Call this method to set the attributes of the `CSecurityAttributes` object.|  
   
 ## Remarks  
- The **SECURITY_ATTRIBUTES** structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
+ The `SECURITY_ATTRIBUTES` structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
   
  For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
@@ -60,10 +60,10 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 ```  
   
 ### Parameters  
- `rSecurityDescriptor`  
+ *rSecurityDescriptor*  
  Reference to a security descriptor.  
   
- `bInheritsHandle`  
+ *bInheritsHandle*  
  Specifies whether the returned handle is inherited when a new process is created. If this member is true, the new process inherits the handle.  
   
 ##  <a name="set"></a>  CSecurityAttributes::Set  
@@ -74,10 +74,10 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 ```  
   
 ### Parameters  
- `rSecurityDescriptor`  
+ *rSecurityDescriptor*  
  Reference to a security descriptor.  
   
- `bInheritHandle`  
+ *bInheritHandle*  
  Specifies whether the returned handle is inherited when a new process is created. If this member is true, the new process inherits the handle.  
   
 ### Remarks  

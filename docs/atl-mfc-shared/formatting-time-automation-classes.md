@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 ## To format a time  
   
-1.  Use the **Format** member function of either [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) or [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) to create a character string representing the time or elapsed time.  
+ Use the `Format` member function of either [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) or [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) to create a character string representing the time or elapsed time.  
   
      [!code-cpp[NVC_ATLMFC_Utilities#179](../atl-mfc-shared/codesnippet/cpp/formatting-time-automation-classes_1.cpp)]  
   

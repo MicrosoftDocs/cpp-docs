@@ -24,7 +24,7 @@ int main()
 }  
 ```  
   
- The **exit** and `return` statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than `void` return a value. The `return` statement allows you to return a value from **main**.  
+ The **exit** and **return** statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than **void** return a value. The **return** statement allows you to return a value from `main`.  
   
 ## See Also  
  [Program Termination](../cpp/program-termination.md)

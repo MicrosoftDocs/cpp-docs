@@ -54,7 +54,7 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::GetForeColor](#getforecolor)|Retrieves the foreground (text) color of the current selection.|  
 |[CHtmlEditCtrlBase::GetFrameZone](#getframezone)|Returns the security zone of the current page in the web browser.|  
 |[CHtmlEditCtrlBase::GetIsDirty](#getisdirty)|Indicates whether the HTML document has changed.|  
-|[CHtmlEditCtrlBase::GetShowAlignedSiteTags](#getshowalignedsitetags)|Returns whether a glyph is displayed for all elements that have a **styleFloat** property.|  
+|[CHtmlEditCtrlBase::GetShowAlignedSiteTags](#getshowalignedsitetags)|Returns whether a glyph is displayed for all elements that have a `styleFloat` property.|  
 |[CHtmlEditCtrlBase::GetShowAllTags](#getshowalltags)|Returns whether the WebBrowser displays glyphs to show the location of all tags in a document.|  
 |[CHtmlEditCtrlBase::GetShowAreaTags](#getshowareatags)|Retrieves whether the WebBrowser displays a glyph for area tags.|  
 |[CHtmlEditCtrlBase::GetShowBRTags](#getshowbrtags)|Retrieves whether the WebBrowser displays a glyph for br tags.|  
@@ -119,7 +119,7 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::SetOverrideCursor](#setoverridecursor)|Commands the WebBrowser never to change the mouse pointer.|  
 |[CHtmlEditCtrlBase::SetOverwriteMode](#setoverwritemode)|Toggles the text-entry mode between insert and overwrite.|  
 |[CHtmlEditCtrlBase::SetRespectVisInDesign](#setrespectvisindesign)|Hides invisible elements in design mode.|  
-|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#setshowalignedsitetags)|Displays a glyph for all elements that have a **styleFloat** property.|  
+|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#setshowalignedsitetags)|Displays a glyph for all elements that have a `styleFloat` property.|  
 |[CHtmlEditCtrlBase::SetShowAllTags](#setshowalltags)|Displays glyphs to show the location of all tags in a document.|  
 |[CHtmlEditCtrlBase::SetShowAreaTags](#setshowareatags)|Displays a glyph for all the area tags.|  
 |[CHtmlEditCtrlBase::SetShowBRTags](#setshowbrtags)|Displays a glyph for all the br tags.|  
@@ -140,9 +140,9 @@ template <class T> class CHtmlEditCtrlBase
  The name of the derived class.  
   
 ## Remarks  
- **CHtmlEditCtrlBase** provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#bold). (Alternately, you can call [ExecCommand](#execcommand) to execute the **IDM_BOLD** command.)  
+ `CHtmlEditCtrlBase` provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#bold). (Alternately, you can call [ExecCommand](#execcommand) to execute the IDM_BOLD command.)  
   
- **CHtmlEditCtrlBase** is not intended to stand on its own. It is designed to be a base class for derived classes that expose the HTML editing functionality of the WebBrowser (see [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) and [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).  
+ `CHtmlEditCtrlBase` is not intended to stand on its own. It is designed to be a base class for derived classes that expose the HTML editing functionality of the WebBrowser (see [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) and [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).  
   
 ## Inheritance Hierarchy  
  `CHtmlEditCtrlBase`  
@@ -166,7 +166,7 @@ HRESULT AddToGlyphTable(
 ```  
   
 ### Parameters  
- `szTag`  
+ *szTag*  
  The tag name (for example, "P" or "table").  
   
  *szImgUrl*  
@@ -219,7 +219,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the button control.  
   
 ### Return Value  
@@ -236,7 +236,7 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the check box control.  
   
 ### Return Value  
@@ -305,7 +305,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the drop-down selection control.  
   
 ### Return Value  
@@ -346,10 +346,10 @@ HRESULT ExecCommand(
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command ID to be executed. For a list, see [MSHTML Command Identifiers](https://msdn.microsoft.com/library/aa741315.aspx).  
   
- `cmdExecOpt`  
+ *cmdExecOpt*  
  Values taken from the [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) enumeration, which describe how the object should execute the command.  
   
  *pInVar*  
@@ -388,8 +388,8 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the element's position property is set to "absolute."  
+ *bCurValue*  
+ TRUE if the element's position property is set to "absolute."  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -405,7 +405,7 @@ HRESULT GetBackColor(int& nColor) const;
 ```  
   
 ### Parameters  
- `nColor`  
+ *nColor*  
  The background color.  
   
 ### Return Value  
@@ -473,7 +473,7 @@ HRESULT GetDocument(IHTMLDocument2** ppDoc) const;
 ```  
   
 ### Parameters  
- `ppDoc`  
+ *ppDoc*  
  The document object.  
   
 ### Return Value  
@@ -487,7 +487,7 @@ HRESULT GetDocumentHTML(CString& szHTML) const;
 ```  
   
 ### Parameters  
- `szHTML`  
+ *szHTML*  
  The HTML.  
   
 ### Return Value  
@@ -515,7 +515,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
 ```  
   
 ### Parameters  
- `ppEventObj`  
+ *ppEventObj*  
  The event object.  
   
 ### Return Value  
@@ -543,14 +543,14 @@ HRESULT GetFontFace(CString& strFace) const;
 ```  
   
 ### Parameters  
- `strFace`  
+ *strFace*  
  The font name.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- If the current selection uses more than one font, `strFace` will be an empty string.  
+ If the current selection uses more than one font, *strFace* will be an empty string.  
   
  This method sends the [IDM_FONTNAME command ID](https://msdn.microsoft.com/library/aa769880.aspx) to the WebBrowser control.  
   
@@ -562,7 +562,7 @@ HRESULT GetFontSize(short& nSize) const;
 ```  
   
 ### Parameters  
- `nSize`  
+ *nSize*  
  The font size.  
   
 ### Return Value  
@@ -579,7 +579,7 @@ HRESULT GetForeColor(int& nColor);
 ```  
   
 ### Parameters  
- `nColor`  
+ *nColor*  
  The foreground color.  
   
 ### Return Value  
@@ -613,18 +613,18 @@ HRESULT GetIsDirty() const;
 ```  
   
 ### Remarks  
- Indicates whether the document has changed. `GetIsDirty` returns an `HRESULT` from [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
+ Indicates whether the document has changed. `GetIsDirty` returns an HRESULT from [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
   
 ##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
- Returns whether a glyph is displayed for all elements that have a **styleFloat** property.  
+ Returns whether a glyph is displayed for all elements that have a `styleFloat` property.  
   
 ```  
 HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if a glyph is displayed for all elements that have a **styleFloat** property; false if no glyph is displayed.  
+ *bCurValue*  
+ TRUE if a glyph is displayed for all elements that have a `styleFloat` property; FALSE if no glyph is displayed.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -640,8 +640,8 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays glyphs to show the location of all tags in a document; false if it does not.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays glyphs to show the location of all tags in a document; FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -657,8 +657,8 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays a glyph for area tags, false if it does not.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays a glyph for area tags, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -674,8 +674,8 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays a glyph for br tags, false if it doesn't.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays a glyph for br tags, FALSE if it doesn't.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -691,8 +691,8 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays a glyph for comment tags, false if it doesn't.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays a glyph for comment tags, FALSE if it doesn't.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -708,8 +708,8 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0, false if it does not.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -725,8 +725,8 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays a glyph for all the script tags, false if it does not.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays a glyph for all the script tags, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -742,8 +742,8 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays a glyph for all the style tags, false if it does not  
+ *bCurValue*  
+ TRUE if the WebBrowser displays a glyph for all the style tags, FALSE if it does not  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -759,8 +759,8 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
 ```  
   
 ### Parameters  
- `bCurValue`  
- True if the WebBrowser displays a glyph for all unknown tags, false if it does not.  
+ *bCurValue*  
+ TRUE if the WebBrowser displays a glyph for all unknown tags, FALSE if it does not.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -793,7 +793,7 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
 ```  
   
 ### Parameters  
- `szUrl`  
+ *szUrl*  
  The hyperlink URL.  
   
 ### Return Value  
@@ -810,7 +810,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 ```  
   
 ### Parameters  
- `szData`  
+ *szData*  
  The string to paste.  
   
 ### Return Value  
@@ -827,7 +827,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the inline frame.  
   
 ### Return Value  
@@ -844,7 +844,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 ```  
   
 ### Parameters  
- `szUrl`  
+ *szUrl*  
  The path and file name of the image to be inserted.  
   
 ### Return Value  
@@ -874,7 +874,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the box.  
   
 ### Return Value  
@@ -891,7 +891,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the button control.  
   
 ### Return Value  
@@ -908,7 +908,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the hidden control.  
   
 ### Return Value  
@@ -925,7 +925,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the image control.  
   
 ### Return Value  
@@ -942,7 +942,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the password control.  
   
 ### Return Value  
@@ -959,7 +959,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the reset control.  
   
 ### Return Value  
@@ -976,7 +976,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the submit control.  
   
 ### Return Value  
@@ -993,7 +993,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the file upload control.  
   
 ### Return Value  
@@ -1010,8 +1010,8 @@ HRESULT Is1DElement(bool& bValue) const;
 ```  
   
 ### Parameters  
- `bValue`  
- True if the element is statically positioned, false otherwise.  
+ *bValue*  
+ TRUE if the element is statically positioned, FALSE otherwise.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1027,8 +1027,8 @@ HRESULT Is2DElement(bool& bValue) const;
 ```  
   
 ### Parameters  
- `bValue`  
- True if the element is absolutely positioned, false otherwise.  
+ *bValue*  
+ TRUE if the element is absolutely positioned, FALSE otherwise.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1096,7 +1096,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the list box control.  
   
 ### Return Value  
@@ -1113,7 +1113,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the marquee.  
   
 ### Return Value  
@@ -1140,7 +1140,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the ordered list.  
   
 ### Return Value  
@@ -1170,7 +1170,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID for the paragraph.  
   
 ### Return Value  
@@ -1202,11 +1202,11 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
 ```  
   
 ### Parameters  
- `szPrintTemplate`  
+ *szPrintTemplate*  
  Path to a print template; if none is specified, the default print template is used.  
   
  *bShowPrintDialog*  
- If true, shows the Print dialog.  
+ If TRUE, shows the Print dialog.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1223,7 +1223,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 ```  
   
 ### Parameters  
- `szPrintTemplate`  
+ *szPrintTemplate*  
  Path to a print template.  
   
 ### Return Value  
@@ -1240,11 +1240,11 @@ long QueryStatus(long cmdID) const;
 ```  
   
 ### Parameters  
- `cmdID`  
- The command ID. Command identifiers are taken from the `CGID_MSHTML` command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/p/?linkid=149220).  
+ *cmdID*  
+ The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/p/?linkid=149220).  
   
 ### Return Value  
- Returns an [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for `cmdID`, or 0 on failure.  
+ Returns an [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for *cmdID*, or 0 on failure.  
   
 ##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  Overwrites a radio control on the current selection.  
@@ -1254,7 +1254,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the radio button.  
   
 ### Return Value  
@@ -1297,7 +1297,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 ```  
   
 ### Parameters  
- `szPath`  
+ *szPath*  
  The path and file name to which to save the Web page.  
   
 ### Return Value  
@@ -1327,8 +1327,8 @@ HRESULT Set2DPosition(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, absolutely positioned elements can be moved by dragging.  
+ *bNewValue*  
+ If TRUE, absolutely positioned elements can be moved by dragging.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1344,8 +1344,8 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, the element's position property is "absolute"; if false, it is "static."  
+ *bNewValue*  
+ If TRUE, the element's position property is "absolute"; if FALSE, it is "static."  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1361,8 +1361,8 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, any element that has an ATOMICSELECTION attribute set to TRUE will be selectable only as a unit.  
+ *bNewValue*  
+ If TRUE, any element that has an ATOMICSELECTION attribute set to TRUE will be selectable only as a unit.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1378,8 +1378,8 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, automatic URL detection is enabled.  
+ *bNewValue*  
+ If TRUE, automatic URL detection is enabled.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1396,11 +1396,11 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ```  
   
 ### Parameters  
- `nColor`  
- The color. See `pvaIn` in [IDM_BACKCOLOR Command ID](https://msdn.microsoft.com/library/aa769858.aspx).  
+ *nColor*  
+ The color. See *pvaIn* in [IDM_BACKCOLOR Command ID](https://msdn.microsoft.com/library/aa769858.aspx).  
   
- `szColor`  
- The color. See `pvaIn` in [IDM_BACKCOLOR Command ID](https://msdn.microsoft.com/library/aa769858.aspx).  
+ *szColor*  
+ The color. See *pvaIn* in [IDM_BACKCOLOR Command ID](https://msdn.microsoft.com/library/aa769858.aspx).  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1416,7 +1416,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
 ```  
   
 ### Parameters  
- `szFormat`  
+ *szFormat*  
  The format tag.  
   
 ### Return Value  
@@ -1450,7 +1450,7 @@ HRESULT SetCSSEditingLevel(short nLevel) const;
 ```  
   
 ### Parameters  
- `nLevel`  
+ *nLevel*  
  The CSS level. Pass 0 if you do not want CSS support.  
   
 ### Return Value  
@@ -1487,13 +1487,13 @@ HRESULT SetDefaultComposeSettings(
  The font background color.  
   
  *bBold*  
- Pass true for bold text.  
+ Pass TRUE for bold text.  
   
- `bItalic`  
- Pass true for italic text.  
+ *bItalic*  
+ Pass TRUE for italic text.  
   
- `bUnderline`  
- Pass true for underlined text.  
+ *bUnderline*  
+ Pass TRUE for underlined text.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1509,8 +1509,8 @@ BOOL SetDesignMode(BOOL bMode) const;
 ```  
   
 ### Parameters  
- `bMode`  
- If true, turns design mode on.  
+ *bMode*  
+ If TRUE, turns design mode on.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -1523,8 +1523,8 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, disables the hatched border and handles around a site selectable element when the element has "edit focus" in design mode; that is, when the text or contents of the element can be edited.  
+ *bNewValue*  
+ If TRUE, disables the hatched border and handles around a site selectable element when the element has "edit focus" in design mode; that is, when the text or contents of the element can be edited.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1540,7 +1540,7 @@ HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
 ```  
   
 ### Parameters  
- `szHTML`  
+ *szHTML*  
  The HTML.  
   
 ### Return Value  
@@ -1554,7 +1554,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 ```  
   
 ### Parameters  
- `szFace`  
+ *szFace*  
  The font name.  
   
 ### Return Value  
@@ -1571,7 +1571,7 @@ HRESULT SetFontSize(unsigned short size) const;
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  The HTML font size (1-7). A value of 0 sets the font size to 1.  
   
 ### Return Value  
@@ -1589,10 +1589,10 @@ HRESULT SetForeColor(int nColor) const;
 ```  
   
 ### Parameters  
- `szColor`  
+ *szColor*  
  The color.  
   
- `nColor`  
+ *nColor*  
  The color.  
   
 ### Return Value  
@@ -1609,8 +1609,8 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, all paste operations are compatible with Internet Explorer 5; if false, paste operations are compatible with Internet Explorer 5.5.  
+ *bNewValue*  
+ If TRUE, all paste operations are compatible with Internet Explorer 5; if FALSE, paste operations are compatible with Internet Explorer 5.5.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1626,8 +1626,8 @@ HRESULT SetLiveResize(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation; if false, it updates only at the completion of the move or resize.  
+ *bNewValue*  
+ If TRUE, causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation; if FALSE, it updates only at the completion of the move or resize.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1643,8 +1643,8 @@ HRESULT SetMultiSelect(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, allows for the selection of more than one site-selectable element at a time when the user holds down the SHIFT or CTRL keys.  
+ *bNewValue*  
+ If TRUE, allows for the selection of more than one site-selectable element at a time when the user holds down the SHIFT or CTRL keys.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1660,8 +1660,8 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, the WebBrowser will not change the mouse pointer.  
+ *bNewValue*  
+ If TRUE, the WebBrowser will not change the mouse pointer.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1677,8 +1677,8 @@ HRESULT SetOverwriteMode(bool bMode) const;
 ```  
   
 ### Parameters  
- `bMode`  
- If true, text-entry mode is overwrite; if false, text-entry mode is insert.  
+ *bMode*  
+ If TRUE, text-entry mode is overwrite; if FALSE, text-entry mode is insert.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1694,8 +1694,8 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, any elements that have a visibility set to "hidden" or display property set to "none" will not be shown in both design mode and browse mode; if false, those elements will be displayed only in browse mode.  
+ *bNewValue*  
+ If TRUE, any elements that have a visibility set to "hidden" or display property set to "none" will not be shown in both design mode and browse mode; if FALSE, those elements will be displayed only in browse mode.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1704,15 +1704,15 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
  This method sends the [IDM RESPECTVISIBILITY_INDESIGN command ID](https://msdn.microsoft.com/library/aa770023.aspx) to the WebBrowser control.  
   
 ##  <a name="setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags  
- Displays a glyph for all elements that have a **styleFloat** property.  
+ Displays a glyph for all elements that have a `styleFloat` property.  
   
 ```  
 HRESULT SetShowAlignedSiteTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all elements that have a **styleFloat** property.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all elements that have a `styleFloat` property.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1728,8 +1728,8 @@ HRESULT SetShowAllTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays glyphs to show the location of all tags in a document.  
+ *bNewValue*  
+ If TRUE, displays glyphs to show the location of all tags in a document.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1745,8 +1745,8 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all the area tags.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all the area tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1762,8 +1762,8 @@ HRESULT SetShowBRTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all the br tags.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all the br tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1779,8 +1779,8 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all the comment tags.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all the comment tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1796,8 +1796,8 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays all the tags shown in Microsoft Internet Explorer 4.0.  
+ *bNewValue*  
+ If TRUE, displays all the tags shown in Microsoft Internet Explorer 4.0.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1813,8 +1813,8 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all the script tags.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all the script tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1830,8 +1830,8 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all the style tags.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all the style tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1847,8 +1847,8 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
 ```  
   
 ### Parameters  
- `bNewValue`  
- If true, displays a glyph for all the unknown tags.  
+ *bNewValue*  
+ If TRUE, displays a glyph for all the unknown tags.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1864,7 +1864,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the multiline text input control.  
   
 ### Return Value  
@@ -1881,7 +1881,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the text control.  
   
 ### Return Value  
@@ -1937,7 +1937,7 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 ```  
   
 ### Parameters  
- `szId`  
+ *szId*  
  The ID of the unordered list.  
   
 ### Return Value  

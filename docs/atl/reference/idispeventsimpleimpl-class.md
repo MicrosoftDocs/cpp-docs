@@ -26,13 +26,13 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```    
   
 #### Parameters  
- `nID`  
+ *nID*  
  A unique identifier for the source object. When `IDispEventSimpleImpl` is the base class for a composite control, use the resource ID of the desired contained control for this parameter. In other cases, use an arbitrary positive integer.  
   
- `T`  
+ *T*  
  The user's class, which is derived from `IDispEventSimpleImpl`.  
   
- `pdiid`  
+ *pdiid*  
  The pointer to the IID of the event dispinterface implemented by this class.  
   
 ## Members  
@@ -44,9 +44,9 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 |[IDispEventSimpleImpl::Advise](#advise)|Establishes a connection with the default event source.|  
 |[IDispEventSimpleImpl::DispEventAdvise](#dispeventadvise)|Establishes a connection with the event source.|  
 |[IDispEventSimpleImpl::DispEventUnadvise](#dispeventunadvise)|Breaks the connection with the event source.|  
-|[IDispEventSimpleImpl::GetIDsOfNames](#getidsofnames)|Returns **E_NOTIMPL**.|  
-|[IDispEventSimpleImpl::GetTypeInfo](#gettypeinfo)|Returns **E_NOTIMPL**.|  
-|[IDispEventSimpleImpl::GetTypeInfoCount](#gettypeinfocount)|Returns **E_NOTIMPL**.|  
+|[IDispEventSimpleImpl::GetIDsOfNames](#getidsofnames)|Returns E_NOTIMPL.|  
+|[IDispEventSimpleImpl::GetTypeInfo](#gettypeinfo)|Returns E_NOTIMPL.|  
+|[IDispEventSimpleImpl::GetTypeInfoCount](#gettypeinfocount)|Returns E_NOTIMPL.|  
 |[IDispEventSimpleImpl::Invoke](#invoke)|Calls the event handlers listed in the event sink map.|  
 |[IDispEventSimpleImpl::Unadvise](#unadvise)|Breaks the connection with the default event source.|  
   
@@ -63,12 +63,12 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
   
 -   Call [DispEventUnadvise](#dispeventunadvise) to break the connection.  
   
- You must derive from `IDispEventSimpleImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventSimpleImpl` base classes.  
+ You must derive from `IDispEventSimpleImpl` (using a unique value for *nID*) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventSimpleImpl` base classes.  
   
- **IDispEventSimplImpl** provides the same functionality as [IDispEventImpl](../../atl/reference/idispeventimpl-class.md), except it does not get type information about the interface from a type library. The wizards generate code based only on `IDispEventImpl`, but you can use `IDispEventSimpleImpl` by adding the code by hand. Use `IDispEventSimpleImpl` when you don't have a type library describing the event interface or want to avoid the overhead associated with using the type library.  
+ `IDispEventSimplImpl` provides the same functionality as [IDispEventImpl](../../atl/reference/idispeventimpl-class.md), except it does not get type information about the interface from a type library. The wizards generate code based only on `IDispEventImpl`, but you can use `IDispEventSimpleImpl` by adding the code by hand. Use `IDispEventSimpleImpl` when you don't have a type library describing the event interface or want to avoid the overhead associated with using the type library.  
   
 > [!NOTE]
-> `IDispEventImpl` and `IDispEventSimpleImpl` provide their own implementation of **IUnknown::QueryInterface** enabling each `IDispEventImpl` or `IDispEventSimpleImpl` base class to act as a separate COM identity while still allowing direct access to class members in your main COM object.  
+> `IDispEventImpl` and `IDispEventSimpleImpl` provide their own implementation of `IUnknown::QueryInterface` enabling each `IDispEventImpl` or `IDispEventSimpleImpl` base class to act as a separate COM identity while still allowing direct access to class members in your main COM object.  
   
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
   
@@ -93,10 +93,10 @@ HRESULT Advise(IUnknown* pUnk);
   
 ### Parameters  
  *pUnk*  
- [in] A pointer to the **IUnknown** interface of the event source object.  
+ [in] A pointer to the `IUnknown` interface of the event source object.  
   
 ### Return Value  
- `S_OK` or any failure `HRESULT` value.  
+ S_OK or any failure HRESULT value.  
   
 ### Remarks  
  Once the connection is established, events fired from *pUnk* will be routed to handlers in your class by way of the event sink map.  
@@ -115,13 +115,13 @@ HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
   
 ### Parameters  
  *pUnk*  
- [in] A pointer to the **IUnknown** interface of the event source object.  
+ [in] A pointer to the `IUnknown` interface of the event source object.  
   
- `piid`  
+ *piid*  
  A pointer to the IID of the event source object.  
   
 ### Return Value  
- `S_OK` or any failure `HRESULT` value.  
+ S_OK or any failure HRESULT value.  
   
 ### Remarks  
  Subsequently, events fired from *pUnk* will be routed to handlers in your class by way of the event sink map.  
@@ -140,13 +140,13 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
   
 ### Parameters  
  *pUnk*  
- [in] A pointer to the **IUnknown** interface of the event source object.  
+ [in] A pointer to the `IUnknown` interface of the event source object.  
   
- `piid`  
+ *piid*  
  A pointer to the IID of the event source object.  
   
 ### Return Value  
- `S_OK` or any failure `HRESULT` value.  
+ S_OK or any failure HRESULT value.  
   
 ### Remarks  
  Once the connection is broken, events will no longer be routed to the handler functions listed in the event sink map.  
@@ -157,7 +157,7 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
  `DispEventAdvise` breaks a connection that was established with the event source specified in `pdiid`.  
   
 ##  <a name="getidsofnames"></a>  IDispEventSimpleImpl::GetIDsOfNames  
- This implementation of **IDispatch::GetIDsOfNames** returns **E_NOTIMPL**.  
+ This implementation of `IDispatch::GetIDsOfNames` returns E_NOTIMPL.  
   
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -172,7 +172,7 @@ STDMETHOD(GetIDsOfNames)(
  See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo  
- This implementation of **IDispatch::GetTypeInfo** returns **E_NOTIMPL**.  
+ This implementation of `IDispatch::GetTypeInfo` returns E_NOTIMPL.  
   
 ```
 STDMETHOD(GetTypeInfo)(
@@ -185,7 +185,7 @@ STDMETHOD(GetTypeInfo)(
  See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
   
 ##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount  
- This implementation of **IDispatch::GetTypeInfoCount** returns **E_NOTIMPL**.  
+ This implementation of `IDispatch::GetTypeInfoCount` returns E_NOTIMPL.  
   
 ```
 STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
@@ -195,7 +195,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
  See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
   
 ##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke  
- This implementation of **IDispatch::Invoke** calls the event handlers listed in the event sink map.  
+ This implementation of `IDispatch::Invoke` calls the event handlers listed in the event sink map.  
   
 ```
 STDMETHOD(Invoke)(
@@ -221,10 +221,10 @@ HRESULT Unadvise(IUnknown* pUnk);
   
 ### Parameters  
  *pUnk*  
- [in] A pointer to the **IUnknown** interface of the event source object.  
+ [in] A pointer to the `IUnknown` interface of the event source object.  
   
 ### Return Value  
- `S_OK` or any failure `HRESULT` value.  
+ S_OK or any failure HRESULT value.  
   
 ### Remarks  
  Once the connection is broken, events will no longer be routed to the handler functions listed in the event sink map.  
@@ -234,7 +234,7 @@ HRESULT Unadvise(IUnknown* pUnk);
   
  `Unadvise` breaks a connection that was established with the default event source specified in `pdiid`.  
   
- **Unavise** breaks a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).  
+ `Unavise` breaks a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).  
   
 ## See Also  
  [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)   

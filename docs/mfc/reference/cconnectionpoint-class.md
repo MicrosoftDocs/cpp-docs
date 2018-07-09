@@ -37,8 +37,8 @@ class CConnectionPoint : public CCmdTarget
 |[CConnectionPoint::GetContainer](#getcontainer)|Retrieves the container of the control that owns the connection map.|  
 |[CConnectionPoint::GetIID](#getiid)|Retrieves the interface ID of a connection point.|  
 |[CConnectionPoint::GetMaxConnections](#getmaxconnections)|Retrieves the maximum number of connection points supported by a control.|  
-|[CConnectionPoint::GetNextConnection](#getnextconnection)|Retrieves a pointer to the connection element at `pos`.|  
-|[CConnectionPoint::GetStartPosition](#getstartposition)|Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextConnection` call.|  
+|[CConnectionPoint::GetNextConnection](#getnextconnection)|Retrieves a pointer to the connection element at *pos*.|  
+|[CConnectionPoint::GetStartPosition](#getstartposition)|Starts a map iteration by returning a POSITION value that can be passed to a `GetNextConnection` call.|  
 |[CConnectionPoint::OnAdvise](#onadvise)|Called by the framework when establishing or breaking connections.|  
 |[CConnectionPoint::QuerySinkInterface](#querysinkinterface)|Retrieves a pointer to the requested sink interface.|  
   
@@ -49,17 +49,17 @@ class CConnectionPoint : public CCmdTarget
   
  By default, a `COleControl`-derived class implements two connection points: one for events and one for property change notifications. These connections are used, respectively, for event firing and for notifying a sink (for example, the control's container) when a property value has changed. Support is also provided for OLE controls to implement additional connection points. For each additional connection point implemented in your control class, you must declare a "connection part" that implements the connection point. If you implement one or more connection points, you also need to declare a single "connection map" in your control class.  
   
- The following example demonstrates a simple connection map and one connection point for the `Sample` OLE control, consisting of two fragments of code: the first portion declares the connection map and point; the second implements this map and point. The first fragment is inserted into the declaration of the control class, under the `protected` section:  
+ The following example demonstrates a simple connection map and one connection point for the `Sample` OLE control, consisting of two fragments of code: the first portion declares the connection map and point; the second implements this map and point. The first fragment is inserted into the declaration of the control class, under the **protected** section:  
   
  [!code-cpp[NVC_MFCConnectionPoints#7](../../mfc/codesnippet/cpp/cconnectionpoint-class_1.h)]  
   
- The `BEGIN_CONNECTION_PART` and `END_CONNECTION_PART` macros declare an embedded class, `XSampleConnPt` (derived from `CConnectionPoint`) that implements this particular connection point. If you want to override any `CConnectionPoint` member functions, or add member functions of your own, declare them between these two macros. For example, the `CONNECTION_IID` macro overrides the `CConnectionPoint::GetIID` member function when placed between these two macros.  
+ The BEGIN_CONNECTION_PART and END_CONNECTION_PART macros declare an embedded class, `XSampleConnPt` (derived from `CConnectionPoint`) that implements this particular connection point. If you want to override any `CConnectionPoint` member functions, or add member functions of your own, declare them between these two macros. For example, the CONNECTION_IID macro overrides the `CConnectionPoint::GetIID` member function when placed between these two macros.  
   
  The second code fragment is inserted into the implementation file (.CPP) of your control class. This code implements the connection map, which includes the additional connection point, `SampleConnPt`:  
   
  [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/cconnectionpoint-class_2.cpp)]  
   
- Once these code fragments have been inserted, the Sample OLE control exposes a connection point for the **ISampleSink** interface.  
+ Once these code fragments have been inserted, the Sample OLE control exposes a connection point for the `ISampleSink` interface.  
   
  Typically, connection points support "multicasting", which is the ability to broadcast to multiple sinks connected to the same interface. The following code fragment demonstrates how to accomplish multicasting by iterating through each sink on a connection point:  
   
@@ -97,17 +97,17 @@ const CPtrArray* GetConnections();
  A pointer to an array of active connections (sinks). Some of the pointers in the array may be NULL. Each non-NULL pointer in this array can be safely converted to a pointer to the sink interface using a cast operator.  
   
 ##  <a name="getcontainer"></a>  CConnectionPoint::GetContainer  
- Called by the framework to retrieve the **IConnectionPointContainer** for the connection point.  
+ Called by the framework to retrieve the `IConnectionPointContainer` for the connection point.  
   
 ```  
 virtual LPCONNECTIONPOINTCONTAINER GetContainer();
 ```  
   
 ### Return Value  
- If successful, a pointer to the container; otherwise **NULL**.  
+ If successful, a pointer to the container; otherwise NULL.  
   
 ### Remarks  
- This function is typically implemented by the `BEGIN_CONNECTION_PART` macro.  
+ This function is typically implemented by the BEGIN_CONNECTION_PART macro.  
   
 ##  <a name="getiid"></a>  CConnectionPoint::GetIID  
  Called by the framework to retrieve the interface ID of a connection point.  
@@ -138,18 +138,18 @@ virtual int GetMaxConnections();
  Override this function if you want to limit the number of sinks that can connect to your control.  
   
 ##  <a name="getnextconnection"></a>  CConnectionPoint::GetNextConnection  
- Retrieves a pointer to the connection element at `pos`.  
+ Retrieves a pointer to the connection element at *pos*.  
   
 ```  
 LPUNKNOWN GetNextConnection(POSITION& pos) const;  
 ```  
   
 ### Parameters  
- `pos`  
- Specifies a reference to a **POSITION** value returned by a previous `GetNextConnection` or [GetStartPosition](#getstartposition) call.  
+ *pos*  
+ Specifies a reference to a POSITION value returned by a previous `GetNextConnection` or [GetStartPosition](#getstartposition) call.  
   
 ### Return Value  
- A pointer to the connection element specified by `pos`, or NULL.  
+ A pointer to the connection element specified by *pos*, or NULL.  
   
 ### Remarks  
  This function is most useful for iterating through all the elements in the connection map. When iterating, skip any NULLs returned from this function.  
@@ -158,14 +158,14 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
  [!code-cpp[NVC_MFCConnectionPoints#4](../../mfc/codesnippet/cpp/cconnectionpoint-class_3.cpp)]  
   
 ##  <a name="getstartposition"></a>  CConnectionPoint::GetStartPosition  
- Starts a map iteration by returning a **POSITION** value that can be passed to a [GetNextConnection](#getnextconnection) call.  
+ Starts a map iteration by returning a POSITION value that can be passed to a [GetNextConnection](#getnextconnection) call.  
   
 ```  
 POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
- A **POSITION** value that indicates a starting position for iterating the map; or **NULL** if the map is empty.  
+ A POSITION value that indicates a starting position for iterating the map; or NULL if the map is empty.  
   
 ### Remarks  
  The iteration sequence is not predictable; therefore, the "first element in the map" has no special significance.  
@@ -181,8 +181,8 @@ virtual void OnAdvise(BOOL bAdvise);
 ```  
   
 ### Parameters  
- `bAdvise`  
- **TRUE**, if a connection is being established; otherwise **FALSE**.  
+ *bAdvise*  
+ TRUE, if a connection is being established; otherwise FALSE.  
   
 ### Remarks  
  The default implementation does nothing.  
@@ -199,14 +199,14 @@ virtual HRESULT QuerySinkInterface(
 ```  
   
 ### Parameters  
- `pUnkSink`  
+ *pUnkSink*  
  The identifier of the sink interface being requested.  
   
- `ppInterface`  
- A pointer to the interface pointer identified by `pUnkSink`. If the object does not support this interface, \* `ppInterface` is set to **NULL**.  
+ *ppInterface*  
+ A pointer to the interface pointer identified by *pUnkSink*. If the object does not support this interface, \* *ppInterface* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ## See Also  
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   

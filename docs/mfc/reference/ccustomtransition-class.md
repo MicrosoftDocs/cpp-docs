@@ -68,7 +68,7 @@ CCustomTransition(CCustomInterpolator* pInterpolator);
 ```  
   
 ### Parameters  
- `pInterpolator`  
+ *pInterpolator*  
  A pointer to custom interpolator.  
   
 ##  <a name="create"></a>  CCustomTransition::Create  
@@ -81,7 +81,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pFactory`  
+ *pFactory*  
  A pointer to transition factory, which is responsible for creation of custom transitions.  
   
 ### Return Value  
@@ -132,7 +132,7 @@ void SetInitialValue(DOUBLE initialValue);
 ```  
   
 ### Parameters  
- `initialValue`  
+ *initialValue*  
   
 ##  <a name="setinitialvelocity"></a>  CCustomTransition::SetInitialVelocity  
  Sets an initial velocity, which will be applied to an animation variable associated with this transition.  
@@ -142,7 +142,7 @@ void SetInitialVelocity(DOUBLE initialVelocity);
 ```  
   
 ### Parameters  
- `initialVelocity`  
+ *initialVelocity*  
   
 ## See Also  
  [Classes](../../mfc/reference/mfc-classes.md)

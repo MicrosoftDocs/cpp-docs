@@ -17,7 +17,7 @@ ATL implements contained windows with [CContainedWindowT](../atl/reference/ccont
 > [!NOTE]
 >  You do not need to derive a class from `CContainedWindowT` in order to use contained windows.  
   
- With contained windows, you can either superclass an existing Windows class or subclass an existing window. To create a window that superclasses an existing Windows class, first specify the existing class name in the constructor for the `CContainedWindowT` object. Then call `CContainedWindowT::Create`. To subclass an existing window, you don't need to specify a Windows class name (pass **NULL** to the constructor). Simply call the `CContainedWindowT::SubclassWindow` method with the handle to the window being subclassed.  
+ With contained windows, you can either superclass an existing Windows class or subclass an existing window. To create a window that superclasses an existing Windows class, first specify the existing class name in the constructor for the `CContainedWindowT` object. Then call `CContainedWindowT::Create`. To subclass an existing window, you don't need to specify a Windows class name (pass NULL to the constructor). Simply call the `CContainedWindowT::SubclassWindow` method with the handle to the window being subclassed.  
   
  You typically use contained windows as data members of a container class. The container does not need to be a window; however, it must derive from [CMessageMap](../atl/reference/cmessagemap-class.md).  
   

@@ -34,7 +34,7 @@ The following classes provide support for arrays, lists, maps, and also traits m
   
 -   [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) This class is a wrapper for a [SAFEARRAYBOUND](http://msdn.microsoft.com/en-us/303a9bdb-71d6-4f14-8747-84cf84936c6d) structure.  
   
--   [CComUnkArray](../atl/reference/ccomunkarray-class.md) This class stores **IUnknown** pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) template class.  
+-   [CComUnkArray](../atl/reference/ccomunkarray-class.md) This class stores `IUnknown` pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) template class.  
   
 -   [CDefaultCharTraits](../atl/reference/cdefaultchartraits-class.md) This class provides two static functions for converting characters between uppercase and lowercase.  
   

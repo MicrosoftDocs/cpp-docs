@@ -70,9 +70,9 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 ## Remarks  
  Most of the methods in this class override methods in the [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md) class.  
   
- If a pane uses the `AFX_CBRS_AUTO_ROLLUP` style and the user docks that pane to a multi-pane frame window, the user can roll up the window regardless of the style settings of the other docked panes.  
+ If a pane uses the AFX_CBRS_AUTO_ROLLUP style and the user docks that pane to a multi-pane frame window, the user can roll up the window regardless of the style settings of the other docked panes.  
   
- The framework automatically creates a `CMultiPaneFrameWnd` object when the user floats a pane that uses the `CBRS_FLOAT_MULTI` style.  
+ The framework automatically creates a `CMultiPaneFrameWnd` object when the user floats a pane that uses the CBRS_FLOAT_MULTI style.  
   
  For information about deriving a class from the `CPaneFrameWnd` class and creating it dynamically, see [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).  
   
@@ -103,7 +103,7 @@ virtual void AddPane(CBasePane* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Remarks  
   
@@ -115,7 +115,7 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -152,11 +152,11 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `pWndToDock`  
- [in] `ptMouse`  
- [in] `rectResult`  
- [in] `bDrawTab`  
- [in] `ppTargetBar`  
+ [in] *pWndToDock*  
+ [in] *ptMouse*  
+ [in] *rectResult*  
+ [in] *bDrawTab*  
+ [in] *ppTargetBar*  
   
 ### Remarks  
   
@@ -179,7 +179,7 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 ```  
   
 ### Parameters  
- [in] `pDockingBar`  
+ [in] *pDockingBar*  
   
 ### Return Value  
   
@@ -222,8 +222,8 @@ virtual BOOL DockFrame(
 ```  
   
 ### Parameters  
- [in] `pDockedFrame`  
- [in] `dockMethod`  
+ [in] *pDockedFrame*  
+ [in] *dockMethod*  
   
 ### Return Value  
   
@@ -237,7 +237,7 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 ```  
   
 ### Parameters  
- [in] `pDockedBar`  
+ [in] *pDockedBar*  
   
 ### Return Value  
   
@@ -251,7 +251,7 @@ virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -334,9 +334,9 @@ virtual BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `pTarget`  
- [in] `bAfter`  
+ [in] *pControlBar*  
+ [in] *pTarget*  
+ [in] *bAfter*  
   
 ### Return Value  
   
@@ -352,8 +352,8 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
- [in] `uiID`  
+ [in] *lpszProfileName*  
+ [in] *uiID*  
   
 ### Return Value  
   
@@ -405,8 +405,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bShow`  
+ [in] *pBar*  
+ [in] *bShow*  
   
 ### Remarks  
   
@@ -421,9 +421,9 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `nSensitivity`  
- [in] `bCheckVisibility`  
+ [in] *point*  
+ [in] *nSensitivity*  
+ [in] *bCheckVisibility*  
   
 ### Return Value  
   
@@ -449,9 +449,9 @@ virtual void RemovePane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bDestroy`  
- [in] `bNoDelayedDestroy`  
+ [in] *pBar*  
+ [in] *bDestroy*  
+ [in] *bNoDelayedDestroy*  
   
 ### Remarks  
   
@@ -465,8 +465,8 @@ virtual void ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarOrg`  
- [in] `pBarReplaceWith`  
+ [in] *pBarOrg*  
+ [in] *pBarReplaceWith*  
   
 ### Remarks  
   
@@ -480,8 +480,8 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
- [in] `uiID`  
+ [in] *lpszProfileName*  
+ [in] *uiID*  
   
 ### Return Value  
   
@@ -495,7 +495,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -507,7 +507,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
 ```  
   
 ### Parameters  
- [in] `pDockManager`  
+ [in] *pDockManager*  
   
 ### Remarks  
   
@@ -519,7 +519,7 @@ void SetLastFocusedPane(HWND hwnd);
 ```  
   
 ### Parameters  
- [in] `hwnd`  
+ [in] *hwnd*  
   
 ### Remarks  
   
@@ -534,9 +534,9 @@ virtual BOOL SetPreDockState(
 ```  
   
 ### Parameters  
- [in] `preDockState`  
- [in] `pBarToDock`  
- [in] `dockMethod`  
+ [in] *preDockState*  
+ [in] *pBarToDock*  
+ [in] *dockMethod*  
   
 ### Return Value  
   
@@ -550,7 +550,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -564,8 +564,8 @@ virtual void StoreRecentTabRelatedInfo(
 ```  
   
 ### Parameters  
- [in] `pDockingBar`  
- [in] `pTabbedBar`  
+ [in] *pDockingBar*  
+ [in] *pTabbedBar*  
   
 ### Remarks  
   

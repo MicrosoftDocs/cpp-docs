@@ -41,9 +41,9 @@ class CSize : public tagSIZE
 |[CSize::operator ==](#operator_eq_eq)|Checks for equality between `CSize` and a size.|  
   
 ## Remarks  
- This class is derived from the **SIZE** structure. This means you can pass a `CSize` in a parameter that calls for a **SIZE** and that the data members of the **SIZE** structure are accessible data members of `CSize`.  
+ This class is derived from the `SIZE` structure. This means you can pass a `CSize` in a parameter that calls for a `SIZE` and that the data members of the `SIZE` structure are accessible data members of `CSize`.  
   
- The **cx** and **cy** members of **SIZE** (and `CSize`) are public. In addition, `CSize` implements member functions to manipulate the **SIZE** structure.  
+ The `cx` and `cy` members of `SIZE` (and `CSize`) are public. In addition, `CSize` implements member functions to manipulate the `SIZE` structure.  
   
 > [!NOTE]
 >  For more information on shared utility classes (like `CSize`), see [Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md).  
@@ -69,22 +69,22 @@ CSize( DWORD dwSize) throw();
   
 ### Parameters  
  *initCX*  
- Sets the **cx** member for the `CSize`.  
+ Sets the `cx` member for the `CSize`.  
   
  *initCY*  
- Sets the **cy** member for the `CSize`.  
+ Sets the `cy` member for the `CSize`.  
   
- `initSize`  
+ *initSize*  
  [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object used to initialize `CSize`.  
   
- `initPt`  
+ *initPt*  
  [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object used to initialize `CSize`.  
   
- `dwSize`  
- `DWORD` used to initialize `CSize`. The low-order word is the **cx** member and the high-order word is the **cy** member.  
+ *dwSize*  
+ DWORD used to initialize `CSize`. The low-order word is the `cx` member and the high-order word is the `cy` member.  
   
 ### Remarks  
- If no arguments are given, **cx** and **cy** are initialized to zero.  
+ If no arguments are given, `cx` and `cy` are initialized to zero.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]  

@@ -40,10 +40,10 @@ class COleBusyDialog : public COleDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleBusyDialog::m_bz](#m_bz)|Structure of type **OLEUIBUSY** that controls the behavior of the dialog box.|  
+|[COleBusyDialog::m_bz](#m_bz)|Structure of type OLEUIBUSY that controls the behavior of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COleBusyDialog` when you want to call these dialog boxes. After a `COleBusyDialog` object has been constructed, you can use the [m_bz](#m_bz) structure to initialize the values or states of controls in the dialog box. The `m_bz` structure is of type **OLEUIBUSY**. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
+ Create an object of class `COleBusyDialog` when you want to call these dialog boxes. After a `COleBusyDialog` object has been constructed, you can use the [m_bz](#m_bz) structure to initialize the values or states of controls in the dialog box. The `m_bz` structure is of type OLEUIBUSY. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
@@ -86,19 +86,19 @@ explicit COleBusyDialog(
  Handle to the server task that is busy.  
   
  *bNotResponding*  
- If **TRUE**, call the Not Responding dialog box instead of the Server Busy dialog box. The wording in the Not Responding dialog box is slightly different than the wording in the Server Busy dialog box, and the Cancel button is disabled.  
+ If TRUE, call the Not Responding dialog box instead of the Server Busy dialog box. The wording in the Not Responding dialog box is slightly different than the wording in the Server Busy dialog box, and the Cancel button is disabled.  
   
- `dwFlags`  
+ *dwFlags*  
  Creation flag. Can contain zero or more of the following values combined with the bitwise-OR operator:  
   
-- **BZ_DISABLECANCELBUTTON** Disable the Cancel button when calling the dialog box.  
+- BZ_DISABLECANCELBUTTON Disable the Cancel button when calling the dialog box.  
   
-- **BZ_DISABLESWITCHTOBUTTON** Disable the Switch To button when calling the dialog box.  
+- BZ_DISABLESWITCHTOBUTTON Disable the Switch To button when calling the dialog box.  
   
-- **BZ_DISABLERETRYBUTTON** Disable the Retry button when calling the dialog box.  
+- BZ_DISABLERETRYBUTTON Disable the Retry button when calling the dialog box.  
   
- `pParentWnd`  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog object is set to the main application window.  
+ *pParentWnd*  
+ Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog object is set to the main application window.  
   
 ### Remarks  
  To display the dialog box, call [DoModal](#domodal).  
@@ -115,16 +115,16 @@ virtual INT_PTR DoModal();
 ### Return Value  
  Completion status for the dialog box. One of the following values:  
   
-- **IDOK** if the dialog box was successfully displayed.  
+- IDOK if the dialog box was successfully displayed.  
   
-- **IDCANCEL** if the user canceled the dialog box.  
+- IDCANCEL if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_bz](#m_bz) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- If `DoModal` returns **IDOK**, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.  
+ If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.  
   
 ##  <a name="getselectiontype"></a>  COleBusyDialog::GetSelectionType  
  Call this function to get the selection type chosen by the user in the Server Busy dialog box.  
@@ -137,7 +137,7 @@ UINT GetSelectionType() const;
  Type of selection made.  
   
 ### Remarks  
- The return type values are specified by the **Selection** enumeration type declared in the `COleBusyDialog` class.  
+ The return type values are specified by the `Selection` enumeration type declared in the `COleBusyDialog` class.  
   
 ```  
 enum Selection {
@@ -149,14 +149,14 @@ enum Selection {
   
  Brief descriptions of these values follow:  
   
-- **COleBusyDialog::switchTo** Switch To button was pressed.  
+- `COleBusyDialog::switchTo` Switch To button was pressed.  
   
-- **COleBusyDialog::retry** Retry button was pressed.  
+- `COleBusyDialog::retry` Retry button was pressed.  
   
-- **COleBusyDialog::callUnblocked** Call to activate the server is now unblocked.  
+- `COleBusyDialog::callUnblocked` Call to activate the server is now unblocked.  
   
 ##  <a name="m_bz"></a>  COleBusyDialog::m_bz  
- Structure of type **OLEUIBUSY** used to control the behavior of the Server Busy dialog box.  
+ Structure of type OLEUIBUSY used to control the behavior of the Server Busy dialog box.  
   
 ```  
 OLEUIBUSY m_bz;  

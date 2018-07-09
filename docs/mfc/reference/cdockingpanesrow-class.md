@@ -106,10 +106,10 @@ virtual void AddPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `dockMethod`  
- [in] `lpRect`  
- [in] `bAddLast`  
+ [in] *pControlBar*  
+ [in] *dockMethod*  
+ [in] *lpRect*  
+ [in] *bAddLast*  
   
 ### Remarks  
   
@@ -123,8 +123,8 @@ virtual void AddPaneFromRow(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `dockMethod`  
+ [in] *pControlBar*  
+ [in] *dockMethod*  
   
 ### Remarks  
   
@@ -138,10 +138,10 @@ virtual void ArrangePanes(
 ```  
   
 ### Parameters  
- [in] `nMargin`  
+ [in] *nMargin*  
  Specifies the offset, in pixels, of the first pane from the upper-left corner of the row.  
   
- [in] `nSpacing`  
+ [in] *nSpacing*  
  Specifies the spacing, in pixels, between panes.  
   
 ### Remarks  
@@ -157,8 +157,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -175,9 +175,9 @@ CDockingPanesRow(
 ```  
   
 ### Parameters  
- [in] `pParentDockBar`  
- [in] `nOffset`  
- [in] `nHeight`  
+ [in] *pParentDockBar*  
+ [in] *nOffset*  
+ [in] *nHeight*  
   
 ### Remarks  
   
@@ -220,8 +220,8 @@ void FixupVirtualRects(
 ```  
   
 ### Parameters  
- [in] `bMoveBackToVirtualRect`  
- [in] `pBarToExclude`  
+ [in] *bMoveBackToVirtualRect*  
+ [in] *pBarToExclude*  
   
 ### Remarks  
   
@@ -233,7 +233,7 @@ virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
 ```  
   
 ### Parameters  
- [in] `bUseVirtualRect`  
+ [in] *bUseVirtualRect*  
   
 ### Return Value  
   
@@ -247,7 +247,7 @@ virtual void GetAvailableSpace(CRect& rect);
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -259,7 +259,7 @@ void GetClientRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -295,8 +295,8 @@ void GetGroupFromPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `lst`  
+ [in] *pBar*  
+ [in] *lst*  
   
 ### Remarks  
   
@@ -319,7 +319,7 @@ int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
 ```  
   
 ### Parameters  
- [in] `bSkipHiddenBars`  
+ [in] *bSkipHiddenBars*  
   
 ### Return Value  
   
@@ -399,7 +399,7 @@ void GetWindowRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -411,7 +411,7 @@ BOOL HasPane(CBasePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Return Value  
   
@@ -469,7 +469,7 @@ virtual void Move(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
   
 ### Remarks  
   
@@ -504,14 +504,14 @@ void MovePane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `ptOffset`  
- [in] `bSwapControlBars`  
- [in] `hdwp`  
- [in] `rectTarget`  
- [in] `nOffset`  
- [in] `bForward`  
- [in] `nAbsolutOffset`  
+ [in] *pControlBar*  
+ [in] *ptOffset*  
+ [in] *bSwapControlBars*  
+ [in] *hdwp*  
+ [in] *rectTarget*  
+ [in] *nOffset*  
+ [in] *bForward*  
+ [in] *nAbsolutOffset*  
   
 ### Remarks  
   
@@ -523,7 +523,7 @@ virtual void OnResizePane(CBasePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Remarks  
   
@@ -544,7 +544,7 @@ virtual void RemovePane(CPane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Remarks  
   
@@ -558,8 +558,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarOld`  
- [in] `pBarNew`  
+ [in] *pBarOld*  
+ [in] *pBarNew*  
   
 ### Return Value  
   
@@ -577,10 +577,10 @@ virtual void RepositionPanes(
 ```  
   
 ### Parameters  
- [in] `rectNewParentBarArea`  
- [in] `nSide`  
- [in] `bExpand`  
- [in] `nOffset`  
+ [in] *rectNewParentBarArea*  
+ [in] *nSide*  
+ [in] *bExpand*  
+ [in] *nOffset*  
   
 ### Remarks  
   
@@ -592,7 +592,7 @@ virtual int Resize(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
   
 ### Return Value  
   
@@ -606,7 +606,7 @@ virtual int ResizeByPaneDivider(int);
 ```  
   
 ### Parameters  
- [in] `int`  
+ [in] *int*  
   
 ### Return Value  
   
@@ -620,7 +620,7 @@ void ScreenToClient(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -634,8 +634,8 @@ void SetExtra(
 ```  
   
 ### Parameters  
- [in] `nExtraSpace`  
- [in] `rowExtraAlign`  
+ [in] *nExtraSpace*  
+ [in] *rowExtraAlign*  
   
 ### Remarks  
   
@@ -649,8 +649,8 @@ virtual void ShowDockSiteRow(
 ```  
   
 ### Parameters  
- [in] `bShow`  
- [in] `bDelay`  
+ [in] *bShow*  
+ [in] *bDelay*  
   
 ### Remarks  
   
@@ -665,9 +665,9 @@ virtual BOOL ShowPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `bShow`  
- [in] `bDelay`  
+ [in] *pControlBar*  
+ [in] *bShow*  
+ [in] *bDelay*  
   
 ### Return Value  
   
@@ -681,7 +681,7 @@ virtual void UpdateVisibleState(BOOL bDelay);
 ```  
   
 ### Parameters  
- [in] `bDelay`  
+ [in] *bDelay*  
   
 ### Remarks  
   

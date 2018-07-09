@@ -23,7 +23,7 @@ class CComCoClass
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `CComCoClass`.  
   
  *pclsid*  
@@ -68,17 +68,17 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 ```  
   
 ### Parameters  
- `Q`  
- The COM interface that should be returned via `pp`.  
+ *Q*  
+ The COM interface that should be returned via *pp*.  
   
  *punkOuter*  
  [in] The outer unknown or controlling unknown of the aggregate.  
   
- `pp`  
+ *pp*  
  [out] The address of a pointer variable that receives the requested interface pointer if creation succeeds.  
   
 ### Return Value  
- A standard `HRESULT` value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the Windows SDK for a description of possible return values.  
+ A standard HRESULT value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the Windows SDK for a description of possible return values.  
   
 ### Remarks  
  Use the first overload of this function for typical object creation; use the second overload when you need to aggregate the object being created.  
@@ -87,10 +87,10 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
   
  These functions are useful for creating objects that you have prevented from being externally creatable by using the [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](object-map-macros.md#object_entry_non_createable_ex_auto) macro. They are also useful in situations where you want to avoid the COM API for reasons of efficiency.  
   
- Note that the interface `Q` must have an IID associated with it that can be retrieved using the [__uuidof](../../cpp/uuidof-operator.md) operator.  
+ Note that the interface *Q* must have an IID associated with it that can be retrieved using the [__uuidof](../../cpp/uuidof-operator.md) operator.  
   
 ### Example  
- In the following example, `CDocument` is a wizard-generated ATL class derived from `CComCoClass` that implements the **IDocument** interface. The class is registered in the object map with the `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` macro so clients can't create instances of the document using [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication` is a CoClass that provides a method on one of its own COM interfaces to create instances of the document class. The code below shows how easy it to create instances of the document class using the `CreateInstance` member inherited from the `CComCoClass` base class.  
+ In the following example, `CDocument` is a wizard-generated ATL class derived from `CComCoClass` that implements the `IDocument` interface. The class is registered in the object map with the OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO macro so clients can't create instances of the document using [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication` is a CoClass that provides a method on one of its own COM interfaces to create instances of the document class. The code below shows how easy it to create instances of the document class using the `CreateInstance` member inherited from the `CComCoClass` base class.  
   
  [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  
   
@@ -138,34 +138,33 @@ static HRESULT Error(
 ```  
   
 ### Parameters  
- `lpszDesc`  
- [in] The string describing the error. The Unicode version of `Error` specifies that `lpszDesc` is of type **LPCOLESTR**; the ANSI version specifies a type of `LPCSTR`.  
+ *lpszDesc*  
+ [in] The string describing the error. The Unicode version of `Error` specifies that *lpszDesc* is of type LPCOLESTR; the ANSI version specifies a type of LPCSTR.  
+ *iid*  
+ [in] The IID of the interface defining the error or GUID_NULL (the default value) if the error is defined by the operating system.  
   
- `iid`  
- [in] The IID of the interface defining the error or `GUID_NULL` (the default value) if the error is defined by the operating system.  
+ *hRes*  
+ [in] The HRESULT you want returned to the caller. The default value is 0. For more details about *hRes*, see Remarks.  
   
- `hRes`  
- [in] The `HRESULT` you want returned to the caller. The default value is 0. For more details about `hRes`, see Remarks.  
+ *nID*  
+ [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if *nID* does not index a valid string. In release builds, the error description string will be set to "Unknown Error."  
   
- `nID`  
- [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if `nID` does not index a valid string. In release builds, the error description string will be set to "Unknown Error."  
-  
- `dwHelpID`  
+ *dwHelpID*  
  [in] The help context identifier for the error.  
   
- `lpszHelpFile`  
+ *lpszHelpFile*  
  [in] The path and name of the help file describing the error.  
   
- `hInst`  
- [in] The handle to the resource. By default, this parameter is **_AtlModule::GetResourceInstance**, where **_AtlModule** is the global instance of [CAtlModule](../../atl/reference/catlmodule-class.md).  
+ *hInst*  
+ [in] The handle to the resource. By default, this parameter is `_AtlModule::GetResourceInstance`, where `_AtlModule` is the global instance of [CAtlModule](../../atl/reference/catlmodule-class.md).  
   
 ### Return Value  
- A standard `HRESULT` value. For details, see Remarks.  
+ A standard HRESULT value. For details, see Remarks.  
   
 ### Remarks  
  To call `Error`, your object must implement the `ISupportErrorInfo Interface` interface.  
   
- If the `hRes` parameter is nonzero, then `Error` returns the value of `hRes`. If `hRes` is zero, then the first four versions of `Error` return `DISP_E_EXCEPTION`. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** `nID` **)**.  
+ If the *hRes* parameter is nonzero, then `Error` returns the value of *hRes*. If *hRes* is zero, then the first four versions of `Error` return DISP_E_EXCEPTION. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** *nID* **)**.  
   
 ##  <a name="getobjectclsid"></a>  CComCoClass::GetObjectCLSID  
  Provides a consistent way of retrieving the object's CLSID.  
@@ -188,11 +187,11 @@ static LPCTSTR WINAPI GetObjectDescription();
  The class object's description.  
   
 ### Remarks  
- The default implementation returns **NULL**. You can override this method with the [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) macro. For example:  
+ The default implementation returns NULL. You can override this method with the [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) macro. For example:  
   
  [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]  
   
- `GetObjectDescription` is called by **IComponentRegistrar::GetComponents**. **IComponentRegistrar** is an Automation interface that allows you to register and unregister individual components in a DLL. When you create a Component Registrar object with the ATL Project Wizard, the wizard will automatically implement the **IComponentRegistrar** interface. **IComponentRegistrar** is typically used by Microsoft Transaction Server.  
+ `GetObjectDescription` is called by `IComponentRegistrar::GetComponents`. `IComponentRegistrar` is an Automation interface that allows you to register and unregister individual components in a DLL. When you create a Component Registrar object with the ATL Project Wizard, the wizard will automatically implement the `IComponentRegistrar` interface. `IComponentRegistrar` is typically used by Microsoft Transaction Server.  
   
  For more information about the ATL Project Wizard, see the article [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md).  
   

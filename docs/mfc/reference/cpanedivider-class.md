@@ -114,7 +114,7 @@ void SetAutoHideMode(BOOL bMode);
 ```  
   
 ### Parameters  
- [in] `bMode`  
+ [in] *bMode*  
   
 ### Remarks  
   
@@ -126,7 +126,7 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 ```  
   
 ### Parameters  
- [in] `p`  
+ [in] *p*  
   
 ### Remarks  
   
@@ -138,7 +138,7 @@ virtual void AddPane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -158,10 +158,10 @@ virtual BOOL AddPaneContainer(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
- [in] `bOuterEdge`  
- [in] `pTargetBar`  
- [in] `dwAlignment`  
+ [in] *barContainerManager*  
+ [in] *bOuterEdge*  
+ [in] *pTargetBar*  
+ [in] *dwAlignment*  
   
 ### Return Value  
   
@@ -175,7 +175,7 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -194,11 +194,11 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `pWndToDock`  
- [in] `ptMouse`  
- [in] `rectResult`  
- [in] `bDrawTab`  
- [in] `ppTargetBar`  
+ [in] *pWndToDock*  
+ [in] *ptMouse*  
+ [in] *rectResult*  
+ [in] *bDrawTab*  
+ [in] *ppTargetBar*  
   
 ### Remarks  
   
@@ -212,8 +212,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -243,8 +243,8 @@ CPaneDivider(
 ```  
   
 ### Parameters  
- [in] `bDefaultSlider`  
- [in] `pParent`  
+ [in] *bDefaultSlider*  
+ [in] *pParent*  
   
 ### Return Value  
   
@@ -264,12 +264,12 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] `dwStyleEx`  
- [in] `dwStyle`  
- [in] `rect`  
- [in] `pParentWnd`  
- [in] `nID`  
- [in] `pContext`  
+ [in] *dwStyleEx*  
+ [in] *dwStyle*  
+ [in] *rect*  
+ [in] *pParentWnd*  
+ [in] *nID*  
+ [in] *pContext*  
   
 ### Return Value  
   
@@ -307,8 +307,8 @@ CPaneContainer* FindPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bLeftBar`  
+ [in] *pBar*  
+ [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -322,7 +322,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
   
 ### Return Value  
   
@@ -358,7 +358,7 @@ void GetPaneDividers(CObList& lstSliders);
 ```  
   
 ### Parameters  
- [out] `lstSliders`  
+ [out] *lstSliders*  
  Contains the list of pane dividers that reside in the pane container.  
   
 ### Remarks  
@@ -383,7 +383,7 @@ void GetPanes(CObList& lstBars);
 ```  
   
 ### Parameters  
- [out] `lstBars`  
+ [out] *lstBars*  
  Contains the list of panes that reside in the pane container.  
   
 ### Remarks  
@@ -421,8 +421,8 @@ void Init(
 ```  
   
 ### Parameters  
- [in] `bDefaultSlider`  
- [in] `pParent`  
+ [in] *bDefaultSlider*  
+ [in] *pParent*  
   
 ### Remarks  
   
@@ -438,10 +438,10 @@ virtual BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pBarToInsert`  
- [in] `pTargetBar`  
- [in] `dwAlignment`  
- [in] `lpRect`  
+ [in] *pBarToInsert*  
+ [in] *pTargetBar*  
+ [in] *dwAlignment*  
+ [in] *lpRect*  
   
 ### Return Value  
   
@@ -497,8 +497,8 @@ virtual void Move(
 ```  
   
 ### Parameters  
- [in] `ptOffset`  
- [in] `bAdjustLayout`  
+ [in] *ptOffset*  
+ [in] *bAdjustLayout*  
   
 ### Remarks  
   
@@ -543,8 +543,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bShow`  
+ [in] *pBar*  
+ [in] *bShow*  
   
 ### Remarks  
   
@@ -565,7 +565,7 @@ virtual void RemovePane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -579,8 +579,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarToReplace`  
- [in] `pBarToReplaceWith`  
+ [in] *pBarToReplace*  
+ [in] *pBarToReplaceWith*  
   
 ### Return Value  
   
@@ -596,8 +596,8 @@ virtual void RepositionPanes(
 ```  
   
 ### Parameters  
- [in] `rectNew`  
- [in] `hdwp`  
+ [in] *rectNew*  
+ [in] *hdwp*  
   
 ### Remarks  
   
@@ -609,7 +609,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -621,7 +621,7 @@ void ShowWindow(int nCmdShow);
 ```  
   
 ### Parameters  
- [in] `nCmdShow`  
+ [in] *nCmdShow*  
   
 ### Remarks  
   
@@ -633,7 +633,7 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -647,8 +647,8 @@ void StoreRecentTabRelatedInfo(
 ```  
   
 ### Parameters  
- [in] `pDockingBar`  
- [in] `pTabbedBar`  
+ [in] *pDockingBar*  
+ [in] *pTabbedBar*  
   
 ### Remarks  
   

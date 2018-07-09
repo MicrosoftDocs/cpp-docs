@@ -80,10 +80,10 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 ```  
   
 ### Parameters  
- `bRegTypeLib`  
+ *bRegTypeLib*  
  TRUE if the type library is to be registered. The default value is FALSE.  
   
- `pCLSID`  
+ *pCLSID*  
  Points to the CLSID of the object to be registered. If NULL (the default value), all objects in the object map will be registered.  
   
 ### Return Value  
@@ -101,7 +101,7 @@ HRESULT RegisterTypeLib();
 ```  
   
 ### Parameters  
- `lpszIndex`  
+ *lpszIndex*  
  String in the format "\\\N", where N is the integer index of the TYPELIB resource.  
   
 ### Return Value  
@@ -120,10 +120,10 @@ HRESULT UnregisterServer(
 ```  
   
 ### Parameters  
- `bRegTypeLib`  
+ *bRegTypeLib*  
  TRUE if the type library is to be unregistered. The default value is FALSE.  
   
- `pCLSID`  
+ *pCLSID*  
  Points to the CLSID of the object to be unregistered. If NULL (the default value), all objects in the object map will be unregistered.  
   
 ### Return Value  
@@ -141,7 +141,7 @@ HRESULT UnRegisterTypeLib();
 ```  
   
 ### Parameters  
- `lpszIndex`  
+ *lpszIndex*  
  String in the format "\\\N", where N is the integer index of the TYPELIB resource.  
   
 ### Remarks  

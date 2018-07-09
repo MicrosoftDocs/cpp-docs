@@ -23,10 +23,10 @@ class CTypedPtrList : public BASE_CLASS
 ```  
   
 #### Parameters  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer list class; must be a pointer list class ( `CObList` or `CPtrList`).  
   
- `TYPE`  
+ *TYPE*  
  Type of the elements stored in the base-class list.  
   
 ## Members  
@@ -81,23 +81,24 @@ class CTypedPtrList : public BASE_CLASS
   
 ```  
 POSITION AddHead(TYPE newElement);  
-void AddHead(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);```  
+void AddHead(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
+```  
   
 ### Parameters  
  *TYPE*  
  Type of the elements stored in the base-class list.  
   
- `newElement`  
- The object pointer to be added to this list. A **NULL** value is allowed.  
+ *newElement*  
+ The object pointer to be added to this list. A NULL value is allowed.  
   
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer list class; must be a pointer list class ( [CObList](../../mfc/reference/coblist-class.md) or [CPtrList](../../mfc/reference/cptrlist-class.md)).  
   
- `pNewList`  
- A pointer to another [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) object. The elements in `pNewList` will be added to this list.  
+ *pNewList*  
+ A pointer to another [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) object. The elements in *pNewList* will be added to this list.  
   
 ### Return Value  
- The first version returns the **POSITION** value of the newly inserted element.  
+ The first version returns the POSITION value of the newly inserted element.  
   
 ### Remarks  
  The first version adds a new element before the head of the list. The second version adds another list of elements before the head.  
@@ -107,29 +108,30 @@ void AddHead(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);```
   
 ```  
 POSITION AddTail(TYPE newElement);  
-void AddTail(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);```  
+void AddTail(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
+```  
   
 ### Parameters  
  *TYPE*  
  Type of the elements stored in the base-class list.  
   
- `newElement`  
- The object pointer to be added to this list. A **NULL** value is allowed.  
+ *newElement*  
+ The object pointer to be added to this list. A NULL value is allowed.  
   
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer list class; must be a pointer list class ( [CObList](../../mfc/reference/coblist-class.md) or [CPtrList](../../mfc/reference/cptrlist-class.md)).  
   
- `pNewList`  
- A pointer to another [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) object. The elements in `pNewList` will be added to this list.  
+ *pNewList*  
+ A pointer to another [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) object. The elements in *pNewList* will be added to this list.  
   
 ### Return Value  
- The first version returns the **POSITION** value of the newly inserted element.  
+ The first version returns the POSITION value of the newly inserted element.  
   
 ### Remarks  
  The first version adds a new element after the tail of the list. The second version adds another list of elements after the tail of the list.  
   
 ##  <a name="getat"></a>  CTypedPtrList::GetAt  
- A variable of type **POSITION** is a key for the list.  
+ A variable of type POSITION is a key for the list.  
   
 ```  
 TYPE& GetAt(POSITION position);  
@@ -141,17 +143,17 @@ TYPE GetAt(POSITION position) const;
  Template parameter specifying the type of elements stored in the list.  
   
  *position*  
- A **POSITION** value returned by a previous `GetHeadPosition` or **Find** member function call.  
+ A POSITION value returned by a previous `GetHeadPosition` or `Find` member function call.  
   
 ### Return Value  
- If the list is accessed through a pointer to a **const CTypedPtrList**, then `GetAt` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
+ If the list is accessed through a pointer to a `const CTypedPtrList`, then `GetAt` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
   
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetAt` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- It is not the same as an index, and you cannot operate on a **POSITION** value yourself. `GetAt` retrieves the `CObject` pointer associated with a given position.  
+ It is not the same as an index, and you cannot operate on a POSITION value yourself. `GetAt` retrieves the `CObject` pointer associated with a given position.  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
  This inline function calls `BASE_CLASS`**::GetAt**.  
   
@@ -168,7 +170,7 @@ TYPE GetHead() const;
  Template parameter specifying the type of elements stored in the list.  
   
 ### Return Value  
- If the list is accessed through a pointer to a **const CTypedPtrList**, then `GetHead` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
+ If the list is accessed through a pointer to a `const CTypedPtrList`, then `GetHead` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
   
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetHead` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
@@ -176,7 +178,7 @@ TYPE GetHead() const;
  You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.  
   
 ##  <a name="getnext"></a>  CTypedPtrList::GetNext  
- Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
+ Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the next entry in the list.  
   
 ```  
 TYPE& GetNext(POSITION& rPosition);  
@@ -187,25 +189,25 @@ TYPE GetNext(POSITION& rPosition) const;
  *TYPE*  
  Template parameter specifying the type of elements contained in this list.  
   
- `rPosition`  
- A reference to a **POSITION** value returned by a previous `GetNext`, `GetHeadPosition`, or other member function call.  
+ *rPosition*  
+ A reference to a POSITION value returned by a previous `GetNext`, `GetHeadPosition`, or other member function call.  
   
 ### Return Value  
- If the list is accessed through a pointer to a **const CTypedPtrList**, then `GetNext` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
+ If the list is accessed through a pointer to a `const CTypedPtrList`, then `GetNext` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
   
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetNext` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
  You can use `GetNext` in a forward iteration loop if you establish the initial position with a call to `GetHeadPosition` or [CPtrList::Find](../../mfc/reference/coblist-class.md#find).  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
- If the retrieved element is the last in the list, then the new value of `rPosition` is set to **NULL**.  
+ If the retrieved element is the last in the list, then the new value of *rPosition* is set to NULL.  
   
  It is possible to remove an element during an iteration. See the example for [CObList::RemoveAt](../../mfc/reference/coblist-class.md#removeat).  
   
 ##  <a name="getprev"></a>  CTypedPtrList::GetPrev  
- Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the previous entry in the list.  
+ Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the previous entry in the list.  
   
 ```  
 TYPE& GetPrev(POSITION& rPosition);  
@@ -216,20 +218,20 @@ TYPE GetPrev(POSITION& rPosition) const;
  *TYPE*  
  Template parameter specifying the type of elements contained in this list.  
   
- `rPosition`  
- A reference to a **POSITION** value returned by a previous `GetPrev` or other member function call.  
+ *rPosition*  
+ A reference to a POSITION value returned by a previous `GetPrev` or other member function call.  
   
 ### Return Value  
- If the list is accessed through a pointer to a **const CTypedPtrList**, then `GetPrev` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
+ If the list is accessed through a pointer to a `const CTypedPtrList`, then `GetPrev` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
   
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetPrev` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You can use `GetPrev` in a reverse iteration loop if you establish the initial position with a call to `GetTailPosition` or **Find**.  
+ You can use `GetPrev` in a reverse iteration loop if you establish the initial position with a call to `GetTailPosition` or `Find`.  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
- If the retrieved element is the first in the list, then the new value of `rPosition` is set to **NULL**.  
+ If the retrieved element is the first in the list, then the new value of *rPosition* is set to NULL.  
   
 ##  <a name="gettail"></a>  CTypedPtrList::GetTail  
  Gets the pointer that represents the head element of this list.  
@@ -244,7 +246,7 @@ TYPE GetTail() const;
  Template parameter specifying the type of elements stored in the list.  
   
 ### Return Value  
- If the list is accessed through a pointer to a **const CTypedPtrList**, then `GetTail` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
+ If the list is accessed through a pointer to a `const CTypedPtrList`, then `GetTail` returns a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
   
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetTail` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
@@ -293,19 +295,19 @@ void SetAt(POSITION pos, TYPE newElement);
 ```  
   
 ### Parameters  
- `pos`  
- The **POSITION** of the element to be set.  
+ *pos*  
+ The POSITION of the element to be set.  
   
  *TYPE*  
  Type of the elements stored in the base-class list.  
   
- `newElement`  
+ *newElement*  
  The object pointer to be written to the list.  
   
 ### Remarks  
- A variable of type **POSITION** is a key for the list. It is not the same as an index, and you cannot operate on a **POSITION** value yourself. `SetAt` writes the object pointer to the specified position in the list.  
+ A variable of type POSITION is a key for the list. It is not the same as an index, and you cannot operate on a POSITION value yourself. `SetAt` writes the object pointer to the specified position in the list.  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
  For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-class.md#setat).  
   

@@ -58,7 +58,7 @@ class COleLinkingDoc : public COleDocument
   
  [!code-cpp[NVC_MFCOleContainer#24](../../mfc/codesnippet/cpp/colelinkingdoc-class_2.cpp)]  
   
- Connect your `COleTemplateServer` object to your document templates by calling the object's `ConnectTemplate` member function, and register all class objects with the OLE system by calling **COleTemplateServer::RegisterAll**:  
+ Connect your `COleTemplateServer` object to your document templates by calling the object's `ConnectTemplate` member function, and register all class objects with the OLE system by calling `COleTemplateServer::RegisterAll`:  
   
  [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]  
   
@@ -98,11 +98,11 @@ virtual COleClientItem* OnFindEmbeddedItem(LPCTSTR lpszItemName);
 ```  
   
 ### Parameters  
- `lpszItemName`  
+ *lpszItemName*  
  Pointer to the name of the embedded OLE item requested.  
   
 ### Return Value  
- A pointer to the specified item; **NULL** if the item is not found.  
+ A pointer to the specified item; NULL if the item is not found.  
   
 ### Remarks  
  The default implementation searches the list of embedded items for an item with the specified name (the name comparison is case sensitive). Override this function if you have your own method of storing or naming embedded OLE items.  
@@ -115,14 +115,14 @@ virtual COleServerItem* OnGetLinkedItem(LPCTSTR lpszItemName);
 ```  
   
 ### Parameters  
- `lpszItemName`  
+ *lpszItemName*  
  Pointer to the name of the linked OLE item requested.  
   
 ### Return Value  
- A pointer to the specified item; **NULL** if the item is not found.  
+ A pointer to the specified item; NULL if the item is not found.  
   
 ### Remarks  
- The default `COleLinkingDoc` implementation always returns **NULL**. This function is overriden in the derived class `COleServerDoc` to search the list of OLE server items for a linked item with the specified name (the name comparison is case sensitive). Override this function if you have implemented your own method of storing or retrieving linked server items.  
+ The default `COleLinkingDoc` implementation always returns NULL. This function is overriden in the derived class `COleServerDoc` to search the list of OLE server items for a linked item with the specified name (the name comparison is case sensitive). Override this function if you have implemented your own method of storing or retrieving linked server items.  
   
 ##  <a name="register"></a>  COleLinkingDoc::Register  
  Informs the OLE system DLLs that the document is open.  
@@ -135,9 +135,9 @@ BOOL Register(
   
 ### Parameters  
  *pFactory*  
- Pointer to an OLE factory object (can be **NULL**).  
+ Pointer to an OLE factory object (can be NULL).  
   
- `lpszPathName`  
+ *lpszPathName*  
  Pointer to the fully qualified path of the container document.  
   
 ### Return Value  

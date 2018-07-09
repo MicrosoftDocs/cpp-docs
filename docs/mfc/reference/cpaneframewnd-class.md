@@ -103,14 +103,14 @@ class CPaneFrameWnd : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPaneFrameWnd::m_bUseSaveBits](#m_busesavebits)|Specifies whether to register the window class with the `CS_SAVEBITS` class style.|  
+|[CPaneFrameWnd::m_bUseSaveBits](#m_busesavebits)|Specifies whether to register the window class with the CS_SAVEBITS class style.|  
   
 ## Remarks  
  The framework automatically creates a `CPaneFrameWnd` object when a pane is switched from a docked state to a floating state.  
   
  A mini-frame window can be dragged with its contents visible (immediate docking) or using a drag rectangle (standard docking). The docking mode of the mini-frame's container pane determines the mini-frame's dragging behavior. For more information, see [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).  
   
- A mini-frame window displays buttons on the caption in accordance with the contained pane style. If the pane can be closed ( [CBasePane::CanBeClosed](../../mfc/reference/cbasepane-class.md#canbeclosed)), it displays a Close button. If the pane has the `AFX_CBRS_AUTO_ROLLUP` style, it displays a pin.  
+ A mini-frame window displays buttons on the caption in accordance with the contained pane style. If the pane can be closed ( [CBasePane::CanBeClosed](../../mfc/reference/cbasepane-class.md#canbeclosed)), it displays a Close button. If the pane has the AFX_CBRS_AUTO_ROLLUP style, it displays a pin.  
   
  If you derive a class from `CPaneFrameWnd`, you must tell the framework how to create it. Either create the class by overriding [CPane::CreateDefaultMiniframe](../../mfc/reference/cpane-class.md#createdefaultminiframe), or set the `CPane::m_pMiniFrameRTC` member so that it points to the runtime class information for your class.  
   
@@ -134,7 +134,7 @@ virtual void AddPane(CBasePane* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  The pane to add.  
   
 ##  <a name="addremovepanefromgloballist"></a>  CPaneFrameWnd::AddRemovePaneFromGlobalList  
@@ -147,10 +147,10 @@ static BOOL __stdcall AddRemovePaneFromGlobalList(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  The pane to add or remove.  
   
- [in] `bAdd`  
+ [in] *bAdd*  
  If non-zero, add the pane. If 0, remove the pane.  
   
 ### Return Value  
@@ -180,7 +180,7 @@ virtual void CalcBorderSize(CRect& rectBorderSize) const;
 ```  
   
 ### Parameters  
- [out] `rectBorderSize`  
+ [out] *rectBorderSize*  
  Contains the size, in pixels, of the border of the miniframe window.  
   
 ### Remarks  
@@ -199,23 +199,23 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `pWndToDock`  
+ [in] *pWndToDock*  
  A pointer to the window to dock.  
   
- [in] `ptMouse`  
+ [in] *ptMouse*  
  The mouse location.  
   
- [out] `rectResult`  
+ [out] *rectResult*  
  The calculated rectangle.  
   
- [out] `bDrawTab`  
- If `TRUE`, draw a tab. If `FALSE`, do not draw a tab.  
+ [out] *bDrawTab*  
+ If TRUE, draw a tab. If FALSE, do not draw a tab.  
   
- [out] `ppTargetBar`  
+ [out] *ppTargetBar*  
  A pointer to the target pane.  
   
 ### Remarks  
- This method calculates the rectangle that a window would occupy if a user dragged the window to the point specified by `ptMouse` and docked it there.  
+ This method calculates the rectangle that a window would occupy if a user dragged the window to the point specified by *ptMouse* and docked it there.  
   
 ##  <a name="canbeattached"></a>  CPaneFrameWnd::CanBeAttached  
  Determines whether the current pane can be docked to another pane or frame window.  
@@ -225,7 +225,7 @@ virtual BOOL CanBeAttached() const;
 ```  
   
 ### Return Value  
- `TRUE` if the pane can be docked to another pane or frame window; otherwise `FALSE`.  
+ TRUE if the pane can be docked to another pane or frame window; otherwise FALSE.  
   
 ##  <a name="canbedockedtopane"></a>  CPaneFrameWnd::CanBeDockedToPane  
  Determines whether the mini-frame window can be docked to a pane.  
@@ -235,11 +235,11 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 ```  
   
 ### Parameters  
- [in] `pDockingBar`  
+ [in] *pDockingBar*  
  A pane.  
   
 ### Return Value  
- Nonzero if the mini-frame can be docked to `pDockingBar`; otherwise 0.  
+ Nonzero if the mini-frame can be docked to *pDockingBar*; otherwise 0.  
   
 ##  <a name="checkgrippervisibility"></a>  CPaneFrameWnd::CheckGripperVisibility  
 
@@ -270,23 +270,23 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  Specifies the text to display on the miniframe window.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Specifies the window style. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `rect`  
+ [in] *rect*  
  Specifies the initial size and position of the miniframe window.  
   
- [in] [out] `pParentWnd`  
- Specifies the parent frame of the miniframe window. This value must not be `NULL`.  
+ [in] [out] *pParentWnd*  
+ Specifies the parent frame of the miniframe window. This value must not be NULL.  
   
- [in] [out] `pContext`  
+ [in] [out] *pContext*  
  Specifies user-defined context.  
   
 ### Return Value  
- `TRUE` if the window was created successfully; otherwise, `FALSE`.  
+ TRUE if the window was created successfully; otherwise, FALSE.  
   
 ### Remarks  
  A miniframe window is created in two steps. First, the framework creates a `CPaneFrameWnd`  object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
@@ -305,26 +305,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] `dwStyleEx`  
+ [in] *dwStyleEx*  
  Specifies the extended window style. For more information, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  Specifies the text to display on the miniframe window.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Specifies the window style. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `rect`  
+ [in] *rect*  
  Specifies the initial size and position of the miniframe window.  
   
- [in] [out] `pParentWnd`  
- Specifies the parent frame of the miniframe window. This value must not be `NULL`.  
+ [in] [out] *pParentWnd*  
+ Specifies the parent frame of the miniframe window. This value must not be NULL.  
   
- [in] [out] `pContext`  
+ [in] [out] *pContext*  
  Specifies user-defined context.  
   
 ### Return Value  
- `TRUE` if the window was created successfully; otherwise, `FALSE`.  
+ TRUE if the window was created successfully; otherwise, FALSE.  
   
 ### Remarks  
  A miniframe window is created in two steps. First, the framework creates a `CPaneFrameWnd`  object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
@@ -337,11 +337,11 @@ virtual CDockablePane* DockPane(BOOL& bWasDocked);
 ```  
   
 ### Parameters  
- [out] `bWasDocked`  
- `TRUE` if the pane was already docked; otherwise `FALSE`.  
+ [out] *bWasDocked*  
+ TRUE if the pane was already docked; otherwise FALSE.  
   
 ### Return Value  
- If the operation was successful, the `CDockablePane` that the pane was docked to; otherwise `NULL`.  
+ If the operation was successful, the `CDockablePane` that the pane was docked to; otherwise NULL.  
   
 ##  <a name="findfloatingpanebyid"></a>  CPaneFrameWnd::FindFloatingPaneByID  
  Finds a pane with the specified control ID in the global list of floating panes.  
@@ -351,11 +351,11 @@ static CBasePane* FindFloatingPaneByID(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Represents the control ID of the pane to find.  
   
 ### Return Value  
- The pane with the specified control ID; otherwise, `NULL`, if no pane has the specified control ID.  
+ The pane with the specified control ID; otherwise, NULL, if no pane has the specified control ID.  
   
 ##  <a name="framefrompoint"></a>  CPaneFrameWnd::FrameFromPoint  
  Finds the mini-frame window that contains the specified point.  
@@ -369,20 +369,20 @@ static CPaneFrameWnd* __stdcall FrameFromPoint(
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
  The point, in screen coordinates.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Increase the search area of the mini-frame window by this size. A mini-frame window satisfies the search criteria if the given point falls in the increased area.  
   
- [in] `pFrameToExclude`  
+ [in] *pFrameToExclude*  
  Specifies a mini-frame window to exclude from the search.  
   
- [in] `bFloatMultiOnly`  
- If `TRUE`, only search mini-frame windows that have the `CBRS_FLOAT_MULTI` style. If `FALSE`, search all mini-frame windows.  
+ [in] *bFloatMultiOnly*  
+ If TRUE, only search mini-frame windows that have the CBRS_FLOAT_MULTI style. If FALSE, search all mini-frame windows.  
   
 ### Return Value  
- A pointer to the mini-frame window that contains `pt`; otherwise `NULL`.  
+ A pointer to the mini-frame window that contains *pt*; otherwise NULL.  
   
 ##  <a name="getcaptionheight"></a>  CPaneFrameWnd::GetCaptionHeight  
  Returns the height of the mini-frame window caption.  
@@ -395,7 +395,7 @@ virtual int GetCaptionHeight() const;
  The height, in pixels, of the mini-frame window.  
   
 ### Remarks  
- Call this method to determine the height of a mini-frame window. By default, the height is set to `SM_CYSMCAPTION`. For more information, see [GetSystemMetrics Function](http://msdn.microsoft.com/library/windows/desktop/ms724385).  
+ Call this method to determine the height of a mini-frame window. By default, the height is set to SM_CYSMCAPTION. For more information, see [GetSystemMetrics Function](http://msdn.microsoft.com/library/windows/desktop/ms724385).  
   
 ##  <a name="getcaptionrect"></a>  CPaneFrameWnd::GetCaptionRect  
  Calculates the bounding rectangle of a mini-frame window caption.  
@@ -405,7 +405,7 @@ virtual void GetCaptionRect(CRect& rectCaption) const;
 ```  
   
 ### Parameters  
- [out] `rectCaption`  
+ [out] *rectCaption*  
  Contains the size and position of the mini-frame window caption, in screen coordinates.  
   
 ### Remarks  
@@ -445,11 +445,11 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 ### Return Value  
  The docking mode. One of the following values:  
   
-- `DT_STANDARD`  
+- DT_STANDARD  
   
-- `DT_IMMEDIATE`  
+- DT_IMMEDIATE  
   
-- `DT_SMART`  
+- DT_SMART  
   
 ##  <a name="getfirstvisiblepane"></a>  CPaneFrameWnd::GetFirstVisiblePane  
  Returns the first visible pane that is contained in a mini-frame window.  
@@ -459,7 +459,7 @@ virtual CWnd* GetFirstVisiblePane() const;
 ```  
   
 ### Return Value  
- The first pane in the mini-frame window, or `NULL` if the mini-frame window contains no panes.  
+ The first pane in the mini-frame window, or NULL if the mini-frame window contains no panes.  
   
 ##  <a name="gethotpoint"></a>  CPaneFrameWnd::GetHotPoint  
 
@@ -480,7 +480,7 @@ virtual CWnd* GetPane() const;
 ```  
   
 ### Return Value  
- The pane that is contained in the mini-frame, or `NULL` if the mini-frame window contains no panes.  
+ The pane that is contained in the mini-frame, or NULL if the mini-frame window contains no panes.  
   
 ### Remarks  
   
@@ -551,28 +551,28 @@ virtual LRESULT HitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The point to test.  
   
- [in] `bDetectCaption`  
- If `TRUE`, check the point against the caption. If `FALSE`, ignore the caption.  
+ [in] *bDetectCaption*  
+ If TRUE, check the point against the caption. If FALSE, ignore the caption.  
   
 ### Return Value  
  One of the following values:  
   
 |Value|Meaning|  
 |-----------|-------------|  
-|`HTNOWHERE`|The point is outside the mini-frame window.|  
-|`HTCLIENT`|The point is in the client area.|  
-|`HTCAPTION`|The point is on the caption.|  
-|`HTTOP`|The point is at the top.|  
-|`HTTOPLEFT`|The point is at the top left.|  
-|`HTTOPRIGHT`|The point is at the top right.|  
-|`HTLEFT`|The point is at the left.|  
-|`HTRIGHT`|The point is at the right.|  
-|`HTBOTTOM`|The point is at the bottom.|  
-|`HTBOTTOMLEFT`|The point is at the bottom left.|  
-|`HTBOTTOMRIGHT`|The point is at the bottom right.|  
+|HTNOWHERE|The point is outside the mini-frame window.|  
+|HTCLIENT|The point is in the client area.|  
+|HTCAPTION|The point is on the caption.|  
+|HTTOP|The point is at the top.|  
+|HTTOPLEFT|The point is at the top left.|  
+|HTTOPRIGHT|The point is at the top right.|  
+|HTLEFT|The point is at the left.|  
+|HTRIGHT|The point is at the right.|  
+|HTBOTTOM|The point is at the bottom.|  
+|HTBOTTOMLEFT|The point is at the bottom left.|  
+|HTBOTTOMRIGHT|The point is at the bottom right.|  
   
 ##  <a name="iscaptured"></a>  CPaneFrameWnd::IsCaptured  
 
@@ -604,10 +604,10 @@ virtual BOOL IsRollDown() const;
 ```  
   
 ### Return Value  
- `TRUE` if the mini-frame window must be rolled down; otherwise, `FALSE`.  
+ TRUE if the mini-frame window must be rolled down; otherwise, FALSE.  
   
 ### Remarks  
- This method is called by the framework to determine whether a mini-frame window should be rolled down. The rollup/rolldown feature is enabled for a mini-frame window if it contains at least one pane that has the `AFX_CBRS_AUTO_ROLLUP` flag. This flag is set when a pane is created. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
+ This method is called by the framework to determine whether a mini-frame window should be rolled down. The rollup/rolldown feature is enabled for a mini-frame window if it contains at least one pane that has the AFX_CBRS_AUTO_ROLLUP flag. This flag is set when a pane is created. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
  By default, the framework checks whether the mouse pointer is inside the mini-frame window bounding rectangle to determine whether the window has to be rolled down. You can override this behavior in a derived class.  
   
@@ -619,10 +619,10 @@ virtual BOOL IsRollUp() const;
 ```  
   
 ### Return Value  
- `TRUE` if the mini-frame window must be rolled up; otherwise, `FALSE`.  
+ TRUE if the mini-frame window must be rolled up; otherwise, FALSE.  
   
 ### Remarks  
- This method is called by the framework to determine whether a mini-frame window should be rolled up. The rollup/rolldown feature is enabled for a mini-frame window if it contains at least one pane that has the `AFX_CBRS_AUTO_ROLLUP` flag. This flag is set when a pane is created. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
+ This method is called by the framework to determine whether a mini-frame window should be rolled up. The rollup/rolldown feature is enabled for a mini-frame window if it contains at least one pane that has the AFX_CBRS_AUTO_ROLLUP flag. This flag is set when a pane is created. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
  By default, the framework checks whether the mouse pointer is inside the mini-frame window bounding rectangle to determine whether the window has to be rolled up. You can override this behavior in a derived class.  
   
@@ -643,24 +643,24 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The profile name.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The pane ID.  
   
 ### Return Value  
- `TRUE` if the pane state was loaded successfully; otherwise `FALSE`.  
+ TRUE if the pane state was loaded successfully; otherwise FALSE.  
   
 ##  <a name="m_busesavebits"></a>  CPaneFrameWnd::m_bUseSaveBits  
- Specifies whether to register the window class that has the `CS_SAVEBITS` class style.  
+ Specifies whether to register the window class that has the CS_SAVEBITS class style.  
   
 ```  
 AFX_IMPORT_DATA static BOOL m_bUseSaveBits;  
 ```  
   
 ### Remarks  
- Set this static member to `TRUE` to register the mini-frame window class that has the `CS_SAVEBITS` style. This may help reduce flickering when a user drags the mini-frame window.  
+ Set this static member to TRUE to register the mini-frame window class that has the CS_SAVEBITS style. This may help reduce flickering when a user drags the mini-frame window.  
   
 ##  <a name="onbeforedock"></a>  CPaneFrameWnd::OnBeforeDock  
  Determines if docking is possible.  
@@ -670,7 +670,7 @@ virtual BOOL OnBeforeDock();
 ```  
   
 ### Return Value  
- `TRUE` if docking is possible; otherwise, `FALSE`.  
+ TRUE if docking is possible; otherwise, FALSE.  
   
 ##  <a name="oncheckrollstate"></a>  CPaneFrameWnd::OnCheckRollState  
  Determines whether a mini-frame window should be rolled up or down.  
@@ -699,7 +699,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The device context used to draw the border.  
   
 ### Remarks  
@@ -722,10 +722,10 @@ virtual void OnMovePane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane (ignored).  
   
- [in] `ptOffset`  
+ [in] *ptOffset*  
  The offset by which to move the pane.  
   
 ##  <a name="onpanerecalclayout"></a>  CPaneFrameWnd::OnPaneRecalcLayout  
@@ -757,11 +757,11 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  The pane that is being shown or hidden.  
   
- [in] `bShow`  
- `TRUE` if the pane is being shown; `FALSE` if the pane is being hidden.  
+ [in] *bShow*  
+ TRUE if the pane is being shown; FALSE if the pane is being hidden.  
   
 ### Remarks  
  Called by the framework when a pane in the mini-frame window is shown or hidden. The default implementation does nothing.  
@@ -774,7 +774,7 @@ void Pin(BOOL bPin = TRUE);
 ```  
   
 ### Parameters  
- [in] `bPin`  
+ [in] *bPin*  
   
 ### Remarks  
   
@@ -789,17 +789,17 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The point that the user clicked, in screen coordinates.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  This parameter is not used.  
   
- [in] `bCheckVisibility`  
- `TRUE` to specify that only visible panes should be returned; otherwise, `FALSE`.  
+ [in] *bCheckVisibility*  
+ TRUE to specify that only visible panes should be returned; otherwise, FALSE.  
   
 ### Return Value  
- The pane that the user clicked, or `NULL` if no pane exists at that location.  
+ The pane that the user clicked, or NULL if no pane exists at that location.  
   
 ### Remarks  
  Call this method to obtain a pane that contains the given point.  
@@ -832,17 +832,17 @@ virtual void RemovePane(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the pane to remove.  
   
- [in] `bDestroy`  
- Specifies what happens to the mini-frame window. If `bDestroy` is `TRUE`, this method destroys the mini-frame window immediately. If it is `FALSE`, this method destroys the mini-frame window after a certain delay.  
+ [in] *bDestroy*  
+ Specifies what happens to the mini-frame window. If *bDestroy* is TRUE, this method destroys the mini-frame window immediately. If it is FALSE, this method destroys the mini-frame window after a certain delay.  
   
- [in] `bNoDelayedDestroy`  
- If `TRUE`, delayed destruction is disabled. If `FALSE`, delayed destruction is enabled.  
+ [in] *bNoDelayedDestroy*  
+ If TRUE, delayed destruction is disabled. If FALSE, delayed destruction is enabled.  
   
 ### Remarks  
- The framework can destroy mini-frame windows immediately or after a certain delay. If you want to delay destruction of mini-frame windows, pass `FALSE` in the `bNoDelayedDestroy` parameter. Delayed destruction occurs when the framework processes the `AFX_WM_CHECKEMPTYMINIFRAME` message.  
+ The framework can destroy mini-frame windows immediately or after a certain delay. If you want to delay destruction of mini-frame windows, pass FALSE in the *bNoDelayedDestroy* parameter. Delayed destruction occurs when the framework processes the AFX_WM_CHECKEMPTYMINIFRAME message.  
   
 ##  <a name="replacepane"></a>  CPaneFrameWnd::ReplacePane  
  Replaces one pane with another.  
@@ -854,10 +854,10 @@ virtual void ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarOrg`  
+ [in] *pBarOrg*  
  A pointer to the original pane.  
   
- [in] `pBarReplaceWith`  
+ [in] *pBarReplaceWith*  
  A pointer to the pane that replaces the original pane.  
   
 ##  <a name="savestate"></a>  CPaneFrameWnd::SaveState  
@@ -870,14 +870,14 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The profile name.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The pane ID.  
   
 ### Return Value  
- `TRUE` if the pane state was saved successfully; otherwise `FALSE`.  
+ TRUE if the pane state was saved successfully; otherwise FALSE.  
   
 ##  <a name="setcaptionbuttons"></a>  CPaneFrameWnd::SetCaptionButtons  
  Sets caption buttons.  
@@ -887,16 +887,16 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 ```  
   
 ### Parameters  
- [in] `dwButtons`  
+ [in] *dwButtons*  
  Bitwise-OR combination of the following values:  
   
-- `AFX_CAPTION_BTN_CLOSE`  
+- AFX_CAPTION_BTN_CLOSE  
   
-- `AFX_CAPTION_BTN_PIN`  
+- AFX_CAPTION_BTN_PIN  
   
-- `AFX_CAPTION_BTN_MENU`  
+- AFX_CAPTION_BTN_MENU  
   
-- `AFX_CAPTION_BTN_CUSTOMIZE`  
+- AFX_CAPTION_BTN_CUSTOMIZE  
   
 ##  <a name="setdelayshow"></a>  CPaneFrameWnd::SetDelayShow  
 
@@ -906,7 +906,7 @@ void SetDelayShow(BOOL bDelayShow);
 ```  
   
 ### Parameters  
- [in] `bDelayShow`  
+ [in] *bDelayShow*  
   
 ### Remarks  
   
@@ -918,7 +918,7 @@ void SetDockingManager(CDockingManager* pManager);
 ```  
   
 ### Parameters  
- [in] `pManager`  
+ [in] *pManager*  
   
 ### Remarks  
   
@@ -930,7 +930,7 @@ void SetDockingTimer(UINT nTimeOut);
 ```  
   
 ### Parameters  
- [in] `nTimeOut`  
+ [in] *nTimeOut*  
  Timeout value in milliseconds.  
   
 ##  <a name="setdockstate"></a>  CPaneFrameWnd::SetDockState  
@@ -941,7 +941,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
 ```  
   
 ### Parameters  
- [in] `pDockManager`  
+ [in] *pDockManager*  
  A pointer to a docking manager.  
   
 ##  <a name="sethotpoint"></a>  CPaneFrameWnd::SetHotPoint  
@@ -952,7 +952,7 @@ void SetHotPoint(CPoint& ptNew);
 ```  
   
 ### Parameters  
- [in] `ptNew`  
+ [in] *ptNew*  
   
 ### Remarks  
   
@@ -967,23 +967,23 @@ virtual BOOL SetPreDockState(
 ```  
   
 ### Parameters  
- [in] `preDockState`  
+ [in] *preDockState*  
  Possible values:  
   
-- `PDS_NOTHING`,  
+- PDS_NOTHING,  
   
-- `PDS_DOCK_REGULAR`,  
+- PDS_DOCK_REGULAR,  
   
-- `PDS_DOCK_TO_TAB`  
+- PDS_DOCK_TO_TAB  
   
- [in] `pBarToDock`  
+ [in] *pBarToDock*  
  A pointer to the pane to dock.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  The docking method. (This parameter is ignored.)  
   
 ### Return Value  
- `TRUE` if the mini-frame window is undocked; `FALSE` if it is docked.  
+ TRUE if the mini-frame window is undocked; FALSE if it is docked.  
   
 ##  <a name="sizetocontent"></a>  CPaneFrameWnd::SizeToContent  
  Adjusts the size of a mini-frame window so that it is equivalent to a contained pane.  
@@ -1003,11 +1003,11 @@ BOOL StartTearOff(CMFCPopu* pMenu);
 ```  
   
 ### Parameters  
- [in] `pMenu`  
+ [in] *pMenu*  
  A pointer to a menu.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise, `FALSE`.  
+ TRUE if the method was successful; otherwise, FALSE.  
   
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneFrameWnd::StoreRecentDockSiteInfo  
 
@@ -1017,7 +1017,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -1031,8 +1031,8 @@ virtual void StoreRecentTabRelatedInfo(
 ```  
   
 ### Parameters  
- [in] `pDockingBar`  
- [in] `pTabbedBar`  
+ [in] *pDockingBar*  
+ [in] *pTabbedBar*  
   
 ### Remarks  
   

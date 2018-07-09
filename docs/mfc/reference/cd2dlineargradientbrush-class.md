@@ -86,7 +86,7 @@ void Attach(ID2D1LinearGradientBrush* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dlineargradientbrush"></a>  CD2DLinearGradientBrush::CD2DLinearGradientBrush  
@@ -105,28 +105,28 @@ CD2DLinearGradientBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `gradientStops`  
+ *gradientStops*  
  A pointer to an array of D2D1_GRADIENT_STOP structures.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  A value greater than or equal to 1 that specifies the number of gradient stops in the gradientStops array.  
   
- `LinearGradientBrushProperties`  
+ *LinearGradientBrushProperties*  
  The start and end points of the gradient.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  The space in which color interpolation between the gradient stops is performed.  
   
- `extendMode`  
+ *extendMode*  
  The behavior of the gradient outside the [0,1] normalized range.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DLinearGradientBrush::Create  
@@ -137,7 +137,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -222,7 +222,7 @@ void SetEndPoint(CD2DPointF point);
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The ending two-dimensional coordinates of the linear gradient, in the brush's coordinate space  
   
 ##  <a name="setstartpoint"></a>  CD2DLinearGradientBrush::SetStartPoint  
@@ -233,7 +233,7 @@ void SetStartPoint(CD2DPointF point);
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The starting two-dimensional coordinates of the linear gradient, in the brush's coordinate space  
   
 ## See Also  

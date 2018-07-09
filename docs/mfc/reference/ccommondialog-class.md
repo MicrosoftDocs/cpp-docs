@@ -70,8 +70,8 @@ explicit CCommonDialog(CWnd* pParentWnd);
 ```  
   
 ### Parameters  
- `pParentWnd`  
- Points to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
+ *pParentWnd*  
+ Points to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is NULL, the dialog object's parent window is set to the main application window.  
   
 ### Remarks  
  See [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) for complete information.  

@@ -26,13 +26,13 @@ This structure contains class instance data in windowing code in ATL.
 ```  
   
 ## Members  
- **m_pThis**  
+ `m_pThis`  
  The **this** pointer used to get access to the class instance in window procedures.  
   
  `m_dwThreadID`  
  The thread ID of the current class instance.  
   
- **m_pNext**  
+ `m_pNext`  
  Pointer to the next `_AtlCreateWndData` object.  
   
 ## Requirements  

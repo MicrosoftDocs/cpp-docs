@@ -26,16 +26,16 @@ class CAtlMap
 ```  
   
 #### Parameters  
- `K`  
+ *K*  
  The key element type.  
   
- V  
+ *V* 
  The value element type.  
   
- `KTraits`  
+ *KTraits*  
  The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.  
   
- `VTraits`  
+ *VTraits*  
  The code used to copy or move value elements.  
   
 ## Members  
@@ -108,7 +108,7 @@ class CAtlMap
 ## Remarks  
  `CAtlMap` provides support for a mapping array of any given type, managing an unordered array of key elements and their associated values. Elements (consisting of a key and a value) are stored using a hashing algorithm, allowing a large amount of data to be efficiently stored and retrieved.  
   
- The `KTraits` and `VTraits` parameters are traits classes that contain any supplemental code needed to copy or move elements.  
+ The *KTraits* and *VTraits* parameters are traits classes that contain any supplemental code needed to copy or move elements.  
   
  An alternative to `CAtlMap` is offered by the [CRBMap](../../atl/reference/crbmap-class.md) class. `CRBMap` also stores key/value pairs, but exhibits different performance characteristics. The time taken to insert an item, look up a key, or delete a key from a `CRBMap` object is of order *log(n)*, where *n* is the number of elements. For `CAtlMap`, all of these operations typically take a constant time, although worst-case scenarios might be of order *n*. Therefore, in a typical case, `CAtlMap` is faster.  
   
@@ -147,19 +147,19 @@ CAtlMap(
 ```  
   
 ### Parameters  
- `nBins`  
+ *nBins*  
  The number of bins providing pointers to the stored elements. See Remarks later in this topic for an explanation of bins.  
   
- `fOptimalLoad`  
+ *fOptimalLoad*  
  The optimal load ratio.  
   
- `fLoThreshold`  
+ *fLoThreshold*  
  The lower threshold for the load ratio.  
   
- `fHiThreshold`  
+ *fHiThreshold*  
  The upper threshold for the load ratio.  
   
- `nBlockSize`  
+ *nBlockSize*  
  The block size.  
   
 ### Remarks  
@@ -167,13 +167,13 @@ CAtlMap(
   
  The load ratio is the ratio of the number of bins to the number of elements stored in the map object. When the map structure is recalculated, the *fOptimalLoad* parameter value will be used to calculate the number of bins required. This value can be changed using the [CAtlMap::SetOptimalLoad](#setoptimalload) method.  
   
- The `fLoThreshold` parameter is the lower value that the load ratio can reach before `CAtlMap` will recalculate the optimal size of the map.  
+ The *fLoThreshold* parameter is the lower value that the load ratio can reach before `CAtlMap` will recalculate the optimal size of the map.  
   
- The `fHiThreshold` parameter is the upper value that the load ratio can reach before the `CAtlMap` object will recalculate the optimal size of the map.  
+ The *fHiThreshold* parameter is the upper value that the load ratio can reach before the `CAtlMap` object will recalculate the optimal size of the map.  
   
  This recalculation process (known as rehashing) is enabled by default. If you want to disable this process, perhaps when entering a lot of data at one time, call the [CAtlMap::DisableAutoRehash](#disableautorehash) method. Reactivate it with the [CAtlMap::EnableAutoRehash](#enableautorehash) method.  
   
- The `nBlockSize` parameter is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.  
+ The *nBlockSize* parameter is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.  
   
  Before any data can be stored, it is necessary to initialize the hash table with a call to [CAtlMap::InitHashTable](#inithashtable).  
   
@@ -222,7 +222,7 @@ void EnableAutoRehash() throw();
 ### Remarks  
  When automatic rehashing is enabled (which it is by default), the number of bins in the hash table will automatically be recalculated if the load value (the ratio of the number of bins to the number of elements stored in the array) exceeds the maximum or minimum values specified at the time the map is created.  
   
- **EnableAutoRefresh** is most often used after a call to [CAtlMap::DisableAutoRehash](#disableautorehash).  
+ `EnableAutoRefresh` is most often used after a call to [CAtlMap::DisableAutoRehash](#disableautorehash).  
   
 ##  <a name="getat"></a>  CAtlMap::GetAt  
  Call this method to return the element at a specified position in the map.  
@@ -237,10 +237,10 @@ CPair* GetAt(POSITION& pos) throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
- `key`  
+ *key*  
  Template parameter specifying the type of the map's key.  
   
  *value*  
@@ -250,7 +250,7 @@ CPair* GetAt(POSITION& pos) throw();
  Returns a pointer to the current pair of key/value elements stored in the map.  
   
 ### Remarks  
- In debug builds, an assertion error will occur if `pos` is equal to NULL.  
+ In debug builds, an assertion error will occur if *pos* is equal to NULL.  
   
 ##  <a name="getcount"></a>  CAtlMap::GetCount  
  Call this method to retrieve the number of elements in the map.  
@@ -283,7 +283,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
 ### Return Value  
@@ -301,11 +301,11 @@ const CPair* GetNext(POSITION& pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
 ### Return Value  
- Returns a pointer to the next pair of key/value elements stored in the map. The `pos` position counter is updated after each call. If the retrieved element is the last in the map, `pos` is set to NULL.  
+ Returns a pointer to the next pair of key/value elements stored in the map. The *pos* position counter is updated after each call. If the retrieved element is the last in the map, *pos* is set to NULL.  
   
 ##  <a name="getnextassoc"></a>  CAtlMap::GetNextAssoc  
  Gets the next element for iterating.  
@@ -318,17 +318,17 @@ void GetNextAssoc(
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
- `key`  
+ *key*  
  Template parameter specifying the type of the map's key.  
   
  *value*  
  Template parameter specifying the type of the map's value.  
   
 ### Remarks  
- The `pos` position counter is updated after each call. If the retrieved element is the last in the map, `pos` is set to NULL.  
+ The *pos* position counter is updated after each call. If the retrieved element is the last in the map, *pos* is set to NULL.  
   
 ##  <a name="getnextkey"></a>  CAtlMap::GetNextKey  
  Call this method to retrieve the next key from the `CAtlMap` object.  
@@ -338,14 +338,14 @@ const K& GetNextKey(POSITION& pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
 ### Return Value  
  Returns a reference to the next key in the map.  
   
 ### Remarks  
- Updates the current position counter, `pos`. If there are no more entries in the map, the position counter is set to NULL.  
+ Updates the current position counter, *pos*. If there are no more entries in the map, the position counter is set to NULL.  
   
 ##  <a name="getnextvalue"></a>  CAtlMap::GetNextValue  
  Call this method to get the next value from the `CAtlMap` object.  
@@ -356,14 +356,14 @@ const V& GetNextValue(POSITION& pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
 ### Return Value  
  Returns a reference to the next value in the map.  
   
 ### Remarks  
- Updates the current position counter, `pos`. If there are no more entries in the map, the position counter is set to NULL.  
+ Updates the current position counter, *pos*. If there are no more entries in the map, the position counter is set to NULL.  
   
 ### Example  
  See the example for [CAtlMap::CAtlMap](#catlmap).  
@@ -379,7 +379,7 @@ POSITION GetStartPosition() const throw();
  Returns the start position, or NULL is returned if the map is empty.  
   
 ### Remarks  
- Call this method to start a map iteration by returning a **POSITION** value that can be passed to the `GetNextAssoc` method.  
+ Call this method to start a map iteration by returning a POSITION value that can be passed to the `GetNextAssoc` method.  
   
 > [!NOTE]
 >  The iteration sequence is not predictable  
@@ -396,7 +396,7 @@ const V& GetValueAt(POSITION pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
 ### Return Value  
@@ -412,19 +412,19 @@ bool InitHashTable(
 ```  
   
 ### Parameters  
- `nBins`  
+ *nBins*  
  The number of bins used by the hash table. See [CAtlMap::CAtlMap](#catlmap) for an explanation.  
   
- `bAllocNow`  
+ *bAllocNow*  
  A flag indication when memory should be allocated.  
   
 ### Return Value  
- Returns **true** on successful initialization, **false** on failure.  
+ Returns TRUE on successful initialization, FALSE on failure.  
   
 ### Remarks  
- `InitHashTable` must be called before any elements are stored in the hash table.  If this method is not called explicitly, it will be called automatically the first time an element is added using the bin count specified by the **CAtlMap** constructor.  Otherwise, the map will be initialized using the new bin count specified by the `nBins` parameter.  
+ `InitHashTable` must be called before any elements are stored in the hash table.  If this method is not called explicitly, it will be called automatically the first time an element is added using the bin count specified by the `CAtlMap` constructor.  Otherwise, the map will be initialized using the new bin count specified by the *nBins* parameter.  
   
- If the `bAllocNow` parameter is false, the memory required by the hash table will not be allocated until it is first required. This can be useful if it is uncertain if the map will be used.  
+ If the *bAllocNow* parameter is false, the memory required by the hash table will not be allocated until it is first required. This can be useful if it is uncertain if the map will be used.  
   
 ### Example  
  See the example for [CAtlMap::CAtlMap](#catlmap).  
@@ -437,7 +437,7 @@ bool IsEmpty() const throw();
 ```  
   
 ### Return Value  
- Returns **true** if the map is empty, **false** otherwise.  
+ Returns TRUE if the map is empty, FALSE otherwise.  
   
 ##  <a name="kinargtype"></a>  CAtlMap::KINARGTYPE  
  Type used when a key is passed as an input argument.  
@@ -463,7 +463,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the key that identifies the element to be looked up.  
   
  *value*  
@@ -483,7 +483,7 @@ V& operator[](kinargtype key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key of the element to add or replace.  
   
 ### Return Value  
@@ -500,11 +500,11 @@ void Rehash(UINT nBins = 0);
 ```  
   
 ### Parameters  
- `nBins`  
+ *nBins*  
  The new number of bins to use in the hash table. See [CAtlMap::CAtlMap](#catlmap) for an explanation.  
   
 ### Remarks  
- If `nBins` is 0, `CAtlMap` calculates a reasonable number based on the number of elements in the map and the optimal load setting. Normally the rehashing process is automatic, but if [CAtlMap::DisableAutoRehash](#disableautorehash) has been called, this method will perform the necessary resizing.  
+ If *nBins* is 0, `CAtlMap` calculates a reasonable number based on the number of elements in the map and the optimal load setting. Normally the rehashing process is automatic, but if [CAtlMap::DisableAutoRehash](#disableautorehash) has been called, this method will perform the necessary resizing.  
   
 ##  <a name="removeall"></a>  CAtlMap::RemoveAll  
  Call this method to remove all elements from the `CAtlMap` object.  
@@ -524,11 +524,11 @@ void RemoveAtPos(POSITION pos) throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
 ### Remarks  
- Removes the key/value pair stored at the specified position. The memory used to store the element is freed. The POSITION referenced by `pos` becomes invalid, and while the POSITION of any other elements in the map remains valid, they do not necessarily retain the same order.  
+ Removes the key/value pair stored at the specified position. The memory used to store the element is freed. The POSITION referenced by *pos* becomes invalid, and while the POSITION of any other elements in the map remains valid, they do not necessarily retain the same order.  
   
 ##  <a name="removekey"></a>  CAtlMap::RemoveKey  
  Call this method to remove an element from the `CAtlMap` object, given the key.  
@@ -538,11 +538,11 @@ bool RemoveKey(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key corresponding to the element pair you want to remove.  
   
 ### Return Value  
- Returns **true** if the key is found and removed, **false** on failure.  
+ Returns TRUE if the key is found and removed, FALSE on failure.  
   
 ### Example  
  See the example for [CAtlMap::CAtlMap](#catlmap).  
@@ -557,7 +557,7 @@ POSITION SetAt(
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key value to add to the `CAtlMap` object.  
   
  *value*  
@@ -581,20 +581,20 @@ void SetOptimalLoad(
 ```  
   
 ### Parameters  
- `fOptimalLoad`  
+ *fOptimalLoad*  
  The optimal load ratio.  
   
- `fLoThreshold`  
+ *fLoThreshold*  
  The lower threshold for the load ratio.  
   
- `fHiThreshold`  
+ *fHiThreshold*  
  The upper threshold for the load ratio.  
   
- `bRehashNow`  
+ *bRehashNow*  
  Flag indicating if the hash table should be recalculated.  
   
 ### Remarks  
- This method redefines the optimal load value for the `CAtlMap` object. See [CAtlMap::CAtlMap](#catlmap) for a discussion of the various parameters. If `bRehashNow` is true, and the number of elements is outside the minimum and maximum values, the hash table is recalculated.  
+ This method redefines the optimal load value for the `CAtlMap` object. See [CAtlMap::CAtlMap](#catlmap) for a discussion of the various parameters. If *bRehashNow* is true, and the number of elements is outside the minimum and maximum values, the hash table is recalculated.  
   
 ##  <a name="setvalueat"></a>  CAtlMap::SetValueAt  
  Call this method to change the value stored at a given position in the `CAtlMap` object.  
@@ -606,7 +606,7 @@ void SetValueAt(
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#getnextassoc) or [CAtlMap::GetStartPosition](#getstartposition).  
   
  *value*  
@@ -637,7 +637,7 @@ const K m_key;
 ```    
   
 ### Parameters  
- `K`  
+ *K*  
  The key element type.  
   
 ##  <a name="m_value"></a>  CAtlMap::CPair::m_value  

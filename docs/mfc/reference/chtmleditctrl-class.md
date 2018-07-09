@@ -76,26 +76,26 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszWindowName`  
+ *lpszWindowName*  
  This parameter is unused.  
   
- `dwStyle`  
+ *dwStyle*  
  This parameter is unused.  
   
- `rect`  
+ *rect*  
  Specifies the control's size and position.  
   
- `pParentWnd`  
- Specifies the control's parent window. It must not be **NULL**.  
+ *pParentWnd*  
+ Specifies the control's parent window. It must not be NULL.  
   
- `nID`  
+ *nID*  
  Specifies the control's ID.  
   
- `pContext`  
+ *pContext*  
  This parameter is unused.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ##  <a name="getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument  
  Retrieves the [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface on the document currently loaded in the contained WebBrowser control  
@@ -105,7 +105,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ```  
   
 ### Parameters  
- `ppDocument`  
+ *ppDocument*  
  The document interface.  
   
 ##  <a name="getstartdocument"></a>  CHtmlEditCtrl::GetStartDocument  

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # LINGER Structure
-The `LINGER` structure is used for manipulating the **SO_LINGER** and **SO_DONTLINGER** options of `CAsyncSocket::GetSockOpt`.  
+The `LINGER` structure is used for manipulating the SO_LINGER and SO_DONTLINGER options of `CAsyncSocket::GetSockOpt`.  
   
 ## Syntax  
   
@@ -25,7 +25,7 @@ struct linger {
 ```  
   
 ## Remarks  
- Setting the **SO_DONTLINGER** option prevents blocking on member function **Close** while waiting for unsent data to be sent. Setting this option is equivalent to setting **SO_LINGER** with **l_onoff** set to 0.  
+ Setting the SO_DONTLINGER option prevents blocking on member function `Close` while waiting for unsent data to be sent. Setting this option is equivalent to setting SO_LINGER with `l_onoff` set to 0.  
   
 ## Requirements  
  **Header:** winsock2.h  

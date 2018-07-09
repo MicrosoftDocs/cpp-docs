@@ -113,10 +113,10 @@ virtual void DrawCursor(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  Specifies a rectangular area around the selected color.  
   
 ### Remarks  
@@ -145,13 +145,13 @@ void GetHLS(
 ```  
   
 ### Parameters  
- [out] `hue`  
+ [out] *hue*  
  Pointer to a variable of type double that receives hue information.  
   
- [out] `luminance`  
+ [out] *luminance*  
  Pointer to a variable of type double that receives luminance information.  
   
- [out] `saturation`  
+ [out] *saturation*  
  Pointer to a variable of type double that receives saturation information.  
   
 ### Remarks  
@@ -208,23 +208,23 @@ BOOL SelectCellHexagon(
 ```  
   
 ### Parameters  
- [in] `R`  
+ [in] *R*  
  The red color component.  
   
- [in] `G`  
+ [in] *G*  
  The green color component.  
   
- [in] `B`  
+ [in] *B*  
  The blue color component.  
   
- [in] `x`  
+ [in] *x*  
  The x-coordinate of the cursor, which points to a cell hexagon.  
   
- [in] `y`  
+ [in] *y*  
  The y-coordinate of the cursor, which points to a cell hexagon.  
   
 ### Return Value  
- The second overload of this method always returns `FALSE`.  
+ The second overload of this method always returns FALSE.  
   
 ### Remarks  
  The first overload of this method sets the current color to the color that corresponds to the color selection control's specified red, green, and blue color components.  
@@ -239,7 +239,7 @@ void SetColor(COLORREF Color);
 ```  
   
 ### Parameters  
- [in] `Color`  
+ [in] *Color*  
  An RGB color value.  
   
 ### Remarks  
@@ -256,17 +256,17 @@ void SetHLS(
 ```  
   
 ### Parameters  
- [in] `hue`  
+ [in] *hue*  
  A hue value.  
   
- [in] `luminance`  
+ [in] *luminance*  
  A luminance value.  
   
- [in] `saturation`  
+ [in] *saturation*  
  A saturation value.  
   
- [in] `bInvalidate`  
- `TRUE` to force the window to immediately update to the new color; otherwise, `FALSE`. The default is `TRUE`.  
+ [in] *bInvalidate*  
+ TRUE to force the window to immediately update to the new color; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -278,7 +278,7 @@ void SetHue(double Hue);
 ```  
   
 ### Parameters  
- [in] `Hue`  
+ [in] *Hue*  
  A hue value.  
   
 ### Remarks  
@@ -291,7 +291,7 @@ void SetLuminance(double Luminance);
 ```  
   
 ### Parameters  
- [in] `Luminance`  
+ [in] *Luminance*  
  A luminance value.  
   
 ### Remarks  
@@ -304,11 +304,11 @@ void SetLuminanceBarWidth(int w);
 ```  
   
 ### Parameters  
- [in] `w`  
+ [in] *w*  
  The width of the luminance bar measured in pixels.  
   
 ### Remarks  
- Use this method to resize the luminance bar, which is on the **Custom** tab of the color picker control. The `w` parameter specifies the new width of the luminance bar. The width value is ignored if it exceeds three-fourths of the client area width.  
+ Use this method to resize the luminance bar, which is on the **Custom** tab of the color picker control. The *w* parameter specifies the new width of the luminance bar. The width value is ignored if it exceeds three-fourths of the client area width.  
   
 ##  <a name="setoriginalcolor"></a>  CMFCColorPickerCtrl::SetOriginalColor  
  Sets the initial selected color.  
@@ -318,7 +318,7 @@ void SetOriginalColor(COLORREF ref);
 ```  
   
 ### Parameters  
- [in] `ref`  
+ [in] *ref*  
  An RGB color value.  
   
 ### Remarks  
@@ -332,7 +332,7 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### Parameters  
- [in] `pPalette`  
+ [in] *pPalette*  
  Pointer to a color palette.  
   
 ### Remarks  
@@ -346,7 +346,7 @@ void SetSaturation(double Saturation);
 ```  
   
 ### Parameters  
- [in] `Saturation`  
+ [in] *Saturation*  
  A saturation value.  
   
 ### Remarks  
@@ -359,10 +359,10 @@ void SetType(COLORTYPE colorType);
 ```  
   
 ### Parameters  
- [in] `colorType`  
+ [in] *colorType*  
  A color picker control type.  
   
- The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The possible types are `LUMINANCE`, `PICKER`, `HEX` and `HEX_GREYSCALE`. The default type is `PICKER`.  
+ The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The possible types are LUMINANCE, PICKER, HEX and HEX_GREYSCALE. The default type is PICKER.  
   
 ### Remarks  
  To specify a color picker control type, call this method before the Windows control is created.  

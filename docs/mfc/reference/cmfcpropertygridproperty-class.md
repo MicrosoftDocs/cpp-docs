@@ -47,7 +47,7 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::EnableSpinControl](#enablespincontrol)|Enables or disables a spin button control that is used to modify a property value.|  
 |[CMFCPropertyGridProperty::Expand](#expand)|Expands or collapses a property that contains sub-properties.|  
 |[CMFCPropertyGridProperty::FormatProperty](#formatproperty)|Formats the text representation of a property value.|  
-|[CMFCPropertyGridProperty::GetData](#getdata)|Retrieves a `DWORD` value that is associated with a property.|  
+|[CMFCPropertyGridProperty::GetData](#getdata)|Retrieves a DWORD value that is associated with a property.|  
 |[CMFCPropertyGridProperty::GetDescription](#getdescription)|Retrieves a property description.|  
 |[CMFCPropertyGridProperty::GetExpandedSubItems](#getexpandedsubitems)|Retrieves the number of expanded sub-items.|  
 |[CMFCPropertyGridProperty::GetHierarchyLevel](#gethierarchylevel)|Retrieves the zero-based index of the property's hierarchy level.|  
@@ -98,7 +98,7 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::RemoveAllOptions](#removealloptions)|Removes all options (items) from a property.|  
 |[CMFCPropertyGridProperty::RemoveSubItem](#removesubitem)|Removes the specified sub-item.|  
 |[CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue)|Restores the original value of an edited property.|  
-|[CMFCPropertyGridProperty::SetData](#setdata)|Associates a `DWORD` value with a property.|  
+|[CMFCPropertyGridProperty::SetData](#setdata)|Associates a DWORD value with a property.|  
 |[CMFCPropertyGridProperty::SetDescription](#setdescription)|Specifies the text that describes the current property.|  
 |[CMFCPropertyGridProperty::SetName](#setname)|Sets the name of a property.|  
 |[CMFCPropertyGridProperty::SetOriginalValue](#setoriginalvalue)|Sets the original value of an editable property.|  
@@ -155,14 +155,14 @@ BOOL AddOption(
 ```  
   
 ### Parameters  
- [in] `lpszOption`  
+ [in] *lpszOption*  
  The list item (option) to add.  
   
- [in] `bInsertUnique`  
- `TRUE` to add the list item only if it does not already exist; otherwise, `FALSE`. The default value is `TRUE`.  
+ [in] *bInsertUnique*  
+ TRUE to add the list item only if it does not already exist; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
- `TRUE`, which means that the list item is added. Otherwise, `FALSE`, which means that the list item is not added because the `bInsertUnique` parameter is `TRUE` and the list item specified by the `lpszOption` parameter already exists.  
+ TRUE, which means that the list item is added. Otherwise, FALSE, which means that the list item is not added because the *bInsertUnique* parameter is TRUE and the list item specified by the *lpszOption* parameter already exists.  
   
 ### Remarks  
   
@@ -174,11 +174,11 @@ BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  Pointer to a property to add.  
   
 ### Return Value  
- `TRUE` if the specified property is successfully added as a child property. `FALSE` if the property is not added because it already occurs in the parent property.  
+ TRUE if the specified property is successfully added as a child property. FALSE if the property is not added because it already occurs in the parent property.  
   
 ### Remarks  
  Use this method to create a hierarchical list of parent and child properties. After a child property is added, the parent property automatically displays an expand box control that is designated by a plus sign (+). When the user clicks the plus sign, the parent property expands and displays any child property items.  
@@ -209,10 +209,10 @@ virtual void AdjustInPlaceEditRect(
 ```  
   
 ### Parameters  
- [out] `rectEdit`  
+ [out] *rectEdit*  
  When this method returns, a rectangle that specifies the boundaries of the text box for the property value.  
   
- [out] `rectSpin`  
+ [out] *rectSpin*  
  When this method returns, a rectangle that specifies the boundaries of the spin button control for the property value. Or, if the property does not support a spin button, an empty rectangle.  
   
 ### Remarks  
@@ -226,8 +226,8 @@ void AllowEdit(BOOL bAllow=TRUE);
 ```  
   
 ### Parameters  
- [in] `bAllow`  
- `TRUE` to make the property editable; `FALSE` to make the property read-only. The default value is `TRUE`.  
+ [in] *bAllow*  
+ TRUE to make the property editable; FALSE to make the property read-only. The default value is TRUE.  
   
 ### Remarks  
   
@@ -252,32 +252,32 @@ CMFCPropertyGridProperty(
 ```  
   
 ### Parameters  
- [in] `strGroupName`  
+ [in] *strGroupName*  
  The group name. A *group* is a collection of related properties in a property grid control. If the control is displayed hierarchically, the *group name* is displayed as a category title in the row above the group.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
- [in] `strName`  
+ [in] *strName*  
  The name of the property.  
   
- [in] `varValue`  
+ [in] *varValue*  
  The property value.  
   
- [in] `lpszDescr`  
- The property description. The default value is `NULL`.  
+ [in] *lpszDescr*  
+ The property description. The default value is NULL.  
   
- [in] `lpszEditMask`  
- The edit mask, if the property is a masked edit control. The default value is `NULL`.  
+ [in] *lpszEditMask*  
+ The edit mask, if the property is a masked edit control. The default value is NULL.  
   
- [in] `lpszEditTemplate`  
- The edit template, if the property is a masked edit control. The default value is `NULL`.  
+ [in] *lpszEditTemplate*  
+ The edit template, if the property is a masked edit control. The default value is NULL.  
   
- [in] `lpszValidChars`  
- A list of valid characters, if the property is a masked edit control. The default value is `NULL`.  
+ [in] *lpszValidChars*  
+ A list of valid characters, if the property is a masked edit control. The default value is NULL.  
   
- [in] `bIsValueList`  
- `TRUE` if the property represents a list of values; `FALSE` if the property represents a single value. The default value is `FALSE`.  
+ [in] *bIsValueList*  
+ TRUE if the property represents a list of values; FALSE if the property represents a single value. The default value is FALSE.  
   
 ### Remarks  
   
@@ -291,10 +291,10 @@ virtual CComboBox* CreateCombo(
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Pointer to the parent window of the combo box.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the combo box.  
   
 ### Return Value  
@@ -312,19 +312,19 @@ virtual CWnd* CreateInPlaceEdit(
 ```  
   
 ### Parameters  
- [in] `rectEdit`  
+ [in] *rectEdit*  
  The bounding rectangle of the editable control.  
   
- [in] `bDefaultFormat`  
- `TRUE` to use the default property format to set the text of the editable control; otherwise, `FALSE`.  
+ [in] *bDefaultFormat*  
+ TRUE to use the default property format to set the text of the editable control; otherwise, FALSE.  
   
 ### Return Value  
- A pointer to the editable control if this method succeeds; otherwise, `NULL`.  
+ A pointer to the editable control if this method succeeds; otherwise, NULL.  
   
 ### Remarks  
- This method uses the values of the `varValue`, `lpszEditMask`, `lpszEditTemplate`, and `lpszValidChars` parameters that are specified in the [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) class constructor. By default, this method supports the `varValue` variant types. This includes `VT_BSTR`, `VT_R4`, `VT_R8`, `VT_UI1`, `VT_I2`, `VT_INT`, `VT_UINT`, `VT_I4`, `VT_UI2`, `VT_UI4`, and `VT_BOOL`.  
+ This method uses the values of the *varValue*, *lpszEditMask*, *lpszEditTemplate*, and *lpszValidChars* parameters that are specified in the [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) class constructor. By default, this method supports the *varValue* variant types. This includes VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4, and VT_BOOL.  
   
- This method creates a [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) control if one or more of the `lpszEditMask`, `lpszEditTemplate`, or `lpszValidChars` parameters are specified; otherwise, it creates a [CEdit](../../mfc/reference/cedit-class.md) control.  
+ This method creates a [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) control if one or more of the *lpszEditMask*, *lpszEditTemplate*, or *lpszValidChars* parameters are specified; otherwise, it creates a [CEdit](../../mfc/reference/cedit-class.md) control.  
   
 ##  <a name="createspincontrol"></a>  CMFCPropertyGridProperty::CreateSpinControl  
  Called by the framework to create an editable spin button control.  
@@ -334,7 +334,7 @@ virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
 ```  
   
 ### Parameters  
- [in] `rectSpin`  
+ [in] *rectSpin*  
  A rectangle that defines where the editable spin button control is created.  
   
 ### Return Value  
@@ -351,8 +351,8 @@ void Enable(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the property; `FALSE` to disable the property. Disabled properties do not respond to mouse or keyboard input. The default value is `TRUE`.  
+ [in] *bEnable*  
+ TRUE to enable the property; FALSE to disable the property. Disabled properties do not respond to mouse or keyboard input. The default value is TRUE.  
   
 ### Remarks  
   
@@ -367,19 +367,19 @@ void EnableSpinControl(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the spin button control; `FALSE` to disable the spin button control. The default value is `TRUE`.  
+ [in] *bEnable*  
+ TRUE to enable the spin button control; FALSE to disable the spin button control. The default value is TRUE.  
   
- [in] `nMin`  
+ [in] *nMin*  
  The minimum value of the spin button control. The default value is 0.  
   
- [in] `nMax`  
+ [in] *nMax*  
  The maximum value of the spin button control. The default value is 0.  
   
 ### Remarks  
  The framework automatically creates a spin button control when a property is about to be edited.  
   
- The property type, which is specified by the `varValue` parameter of the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty) constructor, must be a supported variant type. Otherwise, this method asserts in debug mode. The supported types include `VT_INT`, `VT_UINT`, `VT_I2`, `VT_I4`, `VT_UI2`, and `VT_UI4`.  
+ The property type, which is specified by the *varValue* parameter of the [CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty) constructor, must be a supported variant type. Otherwise, this method asserts in debug mode. The supported types include VT_INT, VT_UINT, VT_I2, VT_I4, VT_UI2, and VT_UI4.  
   
 ##  <a name="expand"></a>  CMFCPropertyGridProperty::Expand  
  Expands or collapses a property that contains sub-properties.  
@@ -389,8 +389,8 @@ void Expand(BOOL bExpand=TRUE);
 ```  
   
 ### Parameters  
- [in] `bExpand`  
- `TRUE` to expand the property; FALSE to collapse the property. The default value is `TRUE`.  
+ [in] *bExpand*  
+ TRUE to expand the property; FALSE to collapse the property. The default value is TRUE.  
   
 ### Remarks  
   
@@ -408,14 +408,14 @@ virtual CString FormatProperty();
  This method is called by the framework before the property value is displayed.  
   
 ##  <a name="getdata"></a>  CMFCPropertyGridProperty::GetData  
- Retrieves a `DWORD` value that is associated with a property.  
+ Retrieves a DWORD value that is associated with a property.  
   
 ```  
 DWORD_PTR GetData() const;  
 ```  
   
 ### Return Value  
- A `DWORD` value.  
+ A DWORD value.  
   
 ### Remarks  
  The data that is returned is an application-specific value, such as a number or a pointer to other data. Specify the data value when you construct the property or when you call the [CMFCPropertyGridProperty::SetData](#setdata) method.  
@@ -444,7 +444,7 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `bIncludeHidden`|`TRUE` to include the hidden sub-items in the count; otherwise, `FALSE`. The default value is `TRUE`.|  
+|[in] *bIncludeHidden*|TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.|  
   
 ### Return Value  
  The number of expanded sub-items.  
@@ -495,7 +495,7 @@ LPCTSTR GetOption(int nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the property list item (option) to retrieve.  
   
 ### Return Value  
@@ -539,7 +539,7 @@ CMFCPropertyGridProperty* GetParent() const;
 ```  
   
 ### Return Value  
- A pointer to a parent property object, or `NULL` for the top-level property.  
+ A pointer to a parent property object, or NULL for the top-level property.  
   
 ### Remarks  
   
@@ -563,7 +563,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The zero-based index of the property to retrieve. This parameter is invalid if it is less than zero or greater than or equal to the number of sub-properties.  
   
 ### Return Value  
@@ -571,7 +571,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
   
  -or-  
   
- In retail mode, `NULL` if the `nIndex` parameter is invalid. In debug mode, this method asserts.  
+ In retail mode, NULL if the *nIndex* parameter is invalid. In debug mode, this method asserts.  
   
 ### Remarks  
   
@@ -619,7 +619,7 @@ virtual BOOL HasButton() const;
 ```  
   
 ### Return Value  
- `TRUE` if a property contains a button (or property list); otherwise, `FALSE`.  
+ TRUE if a property contains a button (or property list); otherwise, FALSE.  
   
 ### Remarks  
   
@@ -639,25 +639,25 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The point to test, in client coordinates. This parameter is typically the current mouse pointer location.  
   
- [in] `pt`  
+ [in] *pt*  
  The point to test, in client coordinates.  
   
- [out] `pnArea`  
- When this method returns, indicates the area that contains the specified point. For more information, see Remarks. The default value is `NULL`.  
+ [out] *pnArea*  
+ When this method returns, indicates the area that contains the specified point. For more information, see Remarks. The default value is NULL.  
   
- [in] `bPropsOnly`  
- `TRUE` to test any area in the property control; `FALSE` to test only the description area. The default value is `FALSE`.  
+ [in] *bPropsOnly*  
+ TRUE to test any area in the property control; FALSE to test only the description area. The default value is FALSE.  
   
 ### Return Value  
- A pointer to a property object or `NULL`.  
+ A pointer to a property object or NULL.  
   
 ### Remarks  
  By default, this method tests property sub-items if the specified point is not found within any of the property items.  
   
- The following table lists the values that can be returned to the `pnArea` parameter.  
+ The following table lists the values that can be returned to the *pnArea* parameter.  
   
 |Area|Description|  
 |----------|-----------------|  
@@ -682,7 +682,7 @@ BOOL IsAllowEdit() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property is editable; otherwise `FALSE`.  
+ TRUE if the property is editable; otherwise FALSE.  
   
 ### Remarks  
   
@@ -694,7 +694,7 @@ BOOL IsEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property is enabled; `FALSE` if the property is disabled.  
+ TRUE if the property is enabled; FALSE if the property is disabled.  
   
 ### Remarks  
  Tells whether a property is enabled or disabled.  
@@ -707,7 +707,7 @@ BOOL IsExpanded() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property is expanded; `FALSE` if the property is collapsed.  
+ TRUE if the property is expanded; FALSE if the property is collapsed.  
   
 ### Remarks  
   
@@ -719,7 +719,7 @@ BOOL IsGroup() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current property object represents a group; `FALSE` if the property represents a value.  
+ TRUE if the current property object represents a group; FALSE if the property represents a value.  
   
 ### Remarks  
  A *group* is a collection of related properties in a property grid control. If the control is displayed hierarchically, the *group name* is displayed as a category title in the row above the group.  
@@ -732,7 +732,7 @@ BOOL IsInPlaceEditing() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current property is editable; otherwise, `FALSE`.  
+ TRUE if the current property is editable; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -744,7 +744,7 @@ BOOL IsModified() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property is modified; otherwise, `FALSE`.  
+ TRUE if the property is modified; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -756,7 +756,7 @@ BOOL IsParentExpanded() const;
 ```  
   
 ### Return Value  
- `TRUE` if all parents of the current property are expanded; `FALSE` if the parent properties are collapsed.  
+ TRUE if all parents of the current property are expanded; FALSE if the parent properties are collapsed.  
   
 ### Remarks  
   
@@ -768,7 +768,7 @@ virtual BOOL IsSelected() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current property is selected; otherwise, `FALSE`.  
+ TRUE if the current property is selected; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -780,11 +780,11 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  A pointer to a property.  
   
 ### Return Value  
- `TRUE` if the specified property is a sub-item of the current property; otherwise, `FALSE`.  
+ TRUE if the specified property is a sub-item of the current property; otherwise, FALSE.  
   
 ##  <a name="isvaluechanged"></a>  CMFCPropertyGridProperty::IsValueChanged  
  Indicates whether the value of the current property has changed.  
@@ -794,7 +794,7 @@ virtual BOOL IsValueChanged() const;
 ```  
   
 ### Return Value  
- `TRUE` if the value of the current property has changed; otherwise, `FALSE`.  
+ TRUE if the value of the current property has changed; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -806,7 +806,7 @@ BOOL IsVisible() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current property is visible; otherwise; `FALSE`.  
+ TRUE if the current property is visible; otherwise; FALSE.  
   
 ### Remarks  
   
@@ -854,7 +854,7 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  A point, in client coordinates.  
   
 ### Remarks  
@@ -871,7 +871,7 @@ virtual void OnClickName(CPoint C);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `C`|A point, in client coordinates.|  
+|[in] *C*|A point, in client coordinates.|  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -886,17 +886,17 @@ virtual BOOL OnClickValue(
 ```  
   
 ### Parameters  
- [in] `uiMsg`  
+ [in] *uiMsg*  
  A mouse message.  
   
- [in] `point`  
+ [in] *point*  
  A point, in client coordinates.  
   
 ### Return Value  
- `TRUE` if the specified mouse message is processed by this method; otherwise, `FALSE`.  
+ TRUE if the specified mouse message is processed by this method; otherwise, FALSE.  
   
 ### Remarks  
- By default, this method returns `FALSE` if the current property is not editable. Otherwise, the edit or spin control that is associated with this property processes the specified mouse message, and then this method returns `TRUE`.  
+ By default, this method returns FALSE if the current property is not editable. Otherwise, the edit or spin control that is associated with this property processes the specified mouse message, and then this method returns TRUE.  
   
 ##  <a name="onclosecombo"></a>  CMFCPropertyGridProperty::OnCloseCombo  
  Called by the framework when a combo box that is contained in a property is closed.  
@@ -917,14 +917,14 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `nCtlColor`  
+ [in] *nCtlColor*  
  (This parameter is not used.)  
   
 ### Return Value  
- The handle to a brush if this method is successful; otherwise, `NULL`.  
+ The handle to a brush if this method is successful; otherwise, NULL.  
   
 ### Remarks  
   
@@ -936,11 +936,11 @@ virtual BOOL OnDblClk(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  A point, in client coordinates.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  By default, this method selects the next property item in the property list control.  
@@ -964,10 +964,10 @@ virtual void OnDrawButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectButton`  
+ [in] *rectButton*  
  A bounding rectangle that specifies where to draw a button.  
   
 ### Remarks  
@@ -982,10 +982,10 @@ virtual void OnDrawDescription(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A bounding rectangle that specifies where to draw the property description.  
   
 ### Remarks  
@@ -1001,10 +1001,10 @@ virtual void OnDrawExpandBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectExpand`  
+ [in] *rectExpand*  
  A bounding rectangle that specifies where to draw the expand box control.  
   
 ### Remarks  
@@ -1020,10 +1020,10 @@ virtual void OnDrawName(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A bounding rectangle that specifies where to draw the property name.  
   
 ### Remarks  
@@ -1038,10 +1038,10 @@ virtual void OnDrawValue(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A bounding rectangle that specifies where to draw the property value.  
   
 ### Remarks  
@@ -1054,11 +1054,11 @@ virtual BOOL OnEdit(LPPOINT lptClick);
 ```  
   
 ### Parameters  
- [in] `lptClick`  
+ [in] *lptClick*  
  (This parameter is not used.) A pointer to a point, in client coordinates.  
   
 ### Return Value  
- `TRUE` if the edit operation starts successfully; otherwise, `FALSE`.  
+ TRUE if the edit operation starts successfully; otherwise, FALSE.  
   
 ### Remarks  
  This function is called by the framework when the user is about to modify a property value. By default, this method starts the appropriate editor for a combo box control or a spin control.  
@@ -1071,10 +1071,10 @@ virtual BOOL OnEndEdit();
 ```  
   
 ### Return Value  
- This method always returns `TRUE`.  
+ This method always returns TRUE.  
   
 ### Remarks  
- By default, this method destroys the current editing control and then returns `TRUE`.  
+ By default, this method destroys the current editing control and then returns TRUE.  
   
 ##  <a name="onkillfocus"></a>  CMFCPropertyGridProperty::OnKillFocus  
  Called by the framework when the property loses the input focus.  
@@ -1087,13 +1087,13 @@ virtual BOOL OnKillFocus(CWnd*);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `CWnd`|(Not used.) Pointer to a window.|  
+|[in] *CWnd*|(Not used.) Pointer to a window.|  
   
 ### Return Value  
- This method always returns `TRUE`.  
+ This method always returns TRUE.  
   
 ### Remarks  
- By default, this method does nothing and then returns `TRUE`. If you override this method, return `TRUE` if the framework can end the edit operation when the property loses the input focus.  
+ By default, this method does nothing and then returns TRUE. If you override this method, return TRUE if the framework can end the edit operation when the property loses the input focus.  
   
 ##  <a name="onkillselection"></a>  CMFCPropertyGridProperty::OnKillSelection  
 
@@ -1103,7 +1103,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
 ```  
   
 ### Parameters  
- [in] `CMFCPropertyGridProperty*`  
+ [in] *CMFCPropertyGridProperty**  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -1116,7 +1116,7 @@ virtual void OnPosSizeChanged(CRect);
 ```  
   
 ### Parameters  
- [in] `CRect`  
+ [in] *CRect*  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -1132,7 +1132,7 @@ virtual void OnRClickName(CPoint C);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `C`|A point, in client coordinates.|  
+|[in] *C*|A point, in client coordinates.|  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -1150,11 +1150,11 @@ virtual void OnRClickValue(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `C`|A point, in client coordinates.|  
-|[in] `B`|A Boolean.|  
+|[in] *C*|A point, in client coordinates.|  
+|[in] *B*|A Boolean.|  
   
 ### Remarks  
- By default, this method does nothing and the `B` parameter has no predefined purpose.  
+ By default, this method does nothing and the *B* parameter has no predefined purpose.  
   
 ##  <a name="onselectcombo"></a>  CMFCPropertyGridProperty::OnSelectCombo  
  Called by the framework when the user selects an item from the editable combo box.  
@@ -1174,10 +1174,10 @@ virtual BOOL OnSetCursor() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current property is a variant type or a list of values, and this method successfully loads the insertion point (I-beam) mouse cursor; otherwise, `FALSE`.  
+ TRUE if the current property is a variant type or a list of values, and this method successfully loads the insertion point (I-beam) mouse cursor; otherwise, FALSE.  
   
 ### Remarks  
- This method supports the following variant types: `VT_INT`, `VT_I2`, `VT_I4`, `VT_UINT`, `VT_UI1`, `VT_UI2`, `VT_UI4`, `VT_R4`, `VT_R8`, and `VT_BSTR`.  
+ This method supports the following variant types: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, and VT_BSTR.  
   
 ##  <a name="onsetselection"></a>  CMFCPropertyGridProperty::OnSetSelection  
 
@@ -1187,7 +1187,7 @@ virtual void OnSetSelection(CMFCPropertyGridProperty*);
 ```  
   
 ### Parameters  
- [in] `CMFCPropertyGridProperty*`  
+ [in] *CMFCPropertyGridProperty**  
   
 ### Remarks  
  By default, this method does nothing.  
@@ -1200,7 +1200,7 @@ virtual BOOL OnUpdateValue();
 ```  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1212,14 +1212,14 @@ virtual BOOL PushChar(UINT nChar);
 ```  
   
 ### Parameters  
- [in] `nChar`  
+ [in] *nChar*  
  A character.  
   
 ### Return Value  
- `TRUE` if the edit operation is continuing; otherwise, `FALSE`.  
+ TRUE if the edit operation is continuing; otherwise, FALSE.  
   
 ### Remarks  
- This method supports a property that is either a list of values or one of the following variant types: `VT_INT`, `VT_I2`, `VT_I4`, `VT_UINT`, `VT_UI1`, `VT_UI2`, `VT_UI4`, `VT_R4`, `VT_R8`, and `VT_BSTR`.  
+ This method supports a property that is either a list of values or one of the following variant types: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, and VT_BSTR.  
   
 ##  <a name="redraw"></a>  CMFCPropertyGridProperty::Redraw  
  Redraws the property.  
@@ -1250,16 +1250,16 @@ BOOL RemoveSubItem(
 ```  
   
 ### Parameters  
- [in] `pProp`  
+ [in] *pProp*  
  Pointer to a property sub-item.  
   
- [in] `bDelete`  
- `TRUE` to delete the property object that is specified by the `pProp` parameter; otherwise, `FALSE`. The default value is `TRUE`.  
+ [in] *bDelete*  
+ TRUE to delete the property object that is specified by the *pProp* parameter; otherwise, FALSE. The default value is TRUE.  
   
 ### Return Value  
   
 ### Remarks  
- Specify `FALSE` for the `bDelete` parameter if you intend to move the specified sub-item; that is, remove the sub-item and then add it elsewhere.  
+ Specify FALSE for the *bDelete* parameter if you intend to move the specified sub-item; that is, remove the sub-item and then add it elsewhere.  
   
 ##  <a name="resetoriginalvalue"></a>  CMFCPropertyGridProperty::ResetOriginalValue  
  Restores the original value of an edited property.  
@@ -1271,18 +1271,18 @@ virtual void ResetOriginalValue();
 ### Remarks  
   
 ##  <a name="setdata"></a>  CMFCPropertyGridProperty::SetData  
- Associates a `DWORD` value with a property.  
+ Associates a DWORD value with a property.  
   
 ```  
 void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] `dwData`  
+ [in] *dwData*  
  An application-specific 32-bit value, such as an integer or a pointer to other data.  
   
 ### Remarks  
- Use the [CMFCPropertyGridProperty::GetData](#getdata) method to retrieve the `DWORD` value. Use the [CMFCPropertyGridCtrl::FindItemByData](../../mfc/reference/cmfcpropertygridctrl-class.md#finditembydata) method to locate the property list item that is associated with the specified `DWORD` value.  
+ Use the [CMFCPropertyGridProperty::GetData](#getdata) method to retrieve the DWORD value. Use the [CMFCPropertyGridCtrl::FindItemByData](../../mfc/reference/cmfcpropertygridctrl-class.md#finditembydata) method to locate the property list item that is associated with the specified DWORD value.  
   
 ##  <a name="setdescription"></a>  CMFCPropertyGridProperty::SetDescription  
  Specifies the text that describes the current property.  
@@ -1292,7 +1292,7 @@ void SetDescription(const CString& strDescr);
 ```  
   
 ### Parameters  
- [in] `strDescr`  
+ [in] *strDescr*  
  Text that describes the current property.  
   
 ### Remarks  
@@ -1307,11 +1307,11 @@ void SetName(
 ```  
   
 ### Parameters  
- [in] `lpszName`  
+ [in] *lpszName*  
  The property name.  
   
- [in] `bRedraw`  
- `TRUE` to redraw the property immediately; otherwise, `FALSE`. The default value is `TRUE`.  
+ [in] *bRedraw*  
+ TRUE to redraw the property immediately; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -1323,7 +1323,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### Parameters  
- [in] `varValue`  
+ [in] *varValue*  
  A value.  
   
 ### Remarks  
@@ -1337,7 +1337,7 @@ virtual void SetValue(const _variant_t& varValue);
 ```  
   
 ### Parameters  
- [in] `varValue`  
+ [in] *varValue*  
  A reference to a value.  
   
 ### Remarks  
@@ -1352,11 +1352,11 @@ void Show(
 ```  
   
 ### Parameters  
- [in] `bShow`  
- `TRUE` to display the current property and its sub-items; `FALSE` to hide the current property and its sub-items. The default value is `TRUE`.  
+ [in] *bShow*  
+ TRUE to display the current property and its sub-items; FALSE to hide the current property and its sub-items. The default value is TRUE.  
   
- [in] `bAdjustLayout`  
- `TRUE` to recalculate how to draw the label and value of a property and then draw the property; `FALSE` to use existing calculations to draw the property. The default value is `TRUE`.  
+ [in] *bAdjustLayout*  
+ TRUE to recalculate how to draw the label and value of a property and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

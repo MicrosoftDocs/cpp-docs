@@ -53,13 +53,13 @@ class CMFCEditBrowseCtrl : public CEdit
   
  The `CMFCEditBrowseCtrl` class supports the following modes.  
   
- `custom mode`  
+ **custom mode**  
  A custom action is performed when the user clicks the browse button. For example, you can display an application-specific dialog box.  
   
- `file mode`  
+ **file mode**  
  A standard file selection dialog box is displayed when the user clicks the browse button.  
   
- `folder mode`  
+ **folder mode**  
  A standard folder selection dialog box is displayed when the user clicks the browse button.  
   
 ## How-To: Specify an Edit Browse Control  
@@ -77,7 +77,7 @@ class CMFCEditBrowseCtrl : public CEdit
   
 6.  To provide a custom image for the browse button, call the [SetBrowseButtonImage](#setbrowsebuttonimage) method or override the [OnDrawBrowseButton](#ondrawbrowsebutton) method.  
   
-7.  To remove the browse button from the edit browse control, call the [EnableBrowseButton](#enablebrowsebutton) method with the `bEnable` parameter set to `FALSE`.  
+7.  To remove the browse button from the edit browse control, call the [EnableBrowseButton](#enablebrowsebutton) method with the *bEnable* parameter set to FALSE.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -109,16 +109,16 @@ void EnableBrowseButton(
 ```  
   
 ### Parameters  
- `bEnable`  
- `TRUE` to display the browse button; `FALSE` not to display the browse button. The default value is `TRUE`.  
+ *bEnable*  
+ TRUE to display the browse button; FALSE not to display the browse button. The default value is TRUE.  
   
- `szLabel`  
+ *szLabel*  
  The label that is displayed on the browse button. The default value is " **...**".  
   
 ### Remarks  
- If the `bEnable` parameter is `TRUE`, implement a custom action to perform when the browse button is clicked. To implement a custom action, derive a class from the `CMFCEditBrowseCtrl` class and then override its [OnBrowse](#onbrowse) method.  
+ If the *bEnable* parameter is TRUE, implement a custom action to perform when the browse button is clicked. To implement a custom action, derive a class from the `CMFCEditBrowseCtrl` class and then override its [OnBrowse](#onbrowse) method.  
   
- If the `bEnable` parameter is `TRUE`, the browse mode of the control is `BrowseMode_Default`; otherwise, the browse mode is `BrowseMode_None`. For more information about browse modes, see the [GetMode](#getmode) method.  
+ If the *bEnable* parameter is TRUE, the browse mode of the control is `BrowseMode_Default`; otherwise, the browse mode is `BrowseMode_None`. For more information about browse modes, see the [GetMode](#getmode) method.  
   
 ##  <a name="enablefilebrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFileBrowseButton  
  Displays the browse button on the current edit browse control and puts the control in *file browse* mode.  
@@ -131,13 +131,13 @@ void EnableFileBrowseButton(
 ```  
   
 ### Parameters  
- `lpszDefExt`  
- Specifies the default file name extension that is used in the file selection dialog box. The default value is `NULL`.  
+ *lpszDefExt*  
+ Specifies the default file name extension that is used in the file selection dialog box. The default value is NULL.  
   
- `lpszFilter`  
- Specifies the default filter string that is used in the file selection dialog box. The default value is `NULL`.  
+ *lpszFilter*  
+ Specifies the default filter string that is used in the file selection dialog box. The default value is NULL.  
   
- `dwFlags`  
+ *dwFlags*  
  Dialog box flags. The default value is a bitwise combination (OR) of OFN_HIDEREADONLY and OFN_OVERWRITEPROMPT.  
   
 ### Remarks  
@@ -169,9 +169,9 @@ CMFCEditBrowseCtrl::BrowseMode GetMode() const;
   
 |Value|Description|  
 |-----------|-----------------|  
-|`BrowseMode_Default`|`custom mode`. A programmer-defined action is performed.|  
-|`BrowseMode_File`|`file mode`. The standard file browser dialog box is displayed.|  
-|`BrowseMode_Folder`|`folder mode`. The standard folder browser dialog box is displayed.|  
+|`BrowseMode_Default`|**custom mode**. A programmer-defined action is performed.|  
+|`BrowseMode_File`|**file mode**. The standard file browser dialog box is displayed.|  
+|`BrowseMode_Folder`|**folder mode**. The standard folder browser dialog box is displayed.|  
 |`BrowseMode_None`|The browse button is not displayed.|  
   
 ### Remarks  
@@ -219,17 +219,17 @@ virtual void OnDrawBrowseButton(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to a device context.  
   
- `Rect`  
+ *Rect*  
  The bounding rectangle of the browse button.  
   
- `bIsButtonPressed`  
- `TRUE` if the button is pressed; otherwise, `FALSE`.  
+ *bIsButtonPressed*  
+ TRUE if the button is pressed; otherwise, FALSE.  
   
- `bIsButtonHot`  
- `TRUE` if the button is highlighted; otherwise, `FALSE`.  
+ *bIsButtonHot*  
+ TRUE if the button is highlighted; otherwise, FALSE.  
   
 ### Remarks  
  Override this function in a derived class to customize the appearance of the browse button.  
@@ -251,17 +251,17 @@ void SetBrowseButtonImage(UINT uiBmpResId);
 ```  
   
 ### Parameters  
- `hIcon`  
+ *hIcon*  
  The handle of an icon.  
   
- `hBitmap`  
+ *hBitmap*  
  The handle of a bitmap.  
   
- `uiBmpResId`  
+ *uiBmpResId*  
  The resource ID of a bitmap.  
   
- `bAutoDestroy`  
- `TRUE` to delete the specified icon or bitmap when this method exits; otherwise, `FALSE`. The default value is `TRUE`.  
+ *bAutoDestroy*  
+ TRUE to delete the specified icon or bitmap when this method exits; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
  Use this method to apply a custom image to the browse button. By default, the framework obtains a standard image when the edit browse control is in *file browse* or *folder browse* mode.  
@@ -274,11 +274,11 @@ virtual BOOL OnIllegalFileName(CString& strFileName);
 ```  
   
 ### Parameters  
- `strFileName`  
+ *strFileName*  
  Specifies the illegal file name.  
   
 ### Return Value  
- Should return `FALSE` if this file name can not be passed further to the file dialog. In this case, focus is set back to the edit control and the user should continue editing. The default implementation displays a message box telling the user about the illegal file name and returns `FALSE`. You can override this method, correct the file name, and return `TRUE` for further processing.  
+ Should return FALSE if this file name can not be passed further to the file dialog. In this case, focus is set back to the edit control and the user should continue editing. The default implementation displays a message box telling the user about the illegal file name and returns FALSE. You can override this method, correct the file name, and return TRUE for further processing.  
   
 ### Remarks  
   

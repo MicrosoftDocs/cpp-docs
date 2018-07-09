@@ -30,7 +30,7 @@ This wizard inserts into the project a minimal COM object. Use this page of the 
  Provides information for the C++ class created for the object.  
   
  **Short name**  
- Sets the abbreviated name for the object. The name that you provide determines the `Class` and **Coclass** names, the **.cpp file** and **.h file** names, the **Interface** name, the **Type** names, and the **ProgID**, unless you change those fields individually.  
+ Sets the abbreviated name for the object. The name that you provide determines the `Class` and `Coclass` names, the **.cpp file** and **.h file** names, the **Interface** name, the **Type** names, and the **ProgID**, unless you change those fields individually.  
   
  **.h file**  
  Sets the name of the header file for the new object's class. By default, this name is based on the name that you provide in **Short name**. Click the ellipsis button to save the file name to the location of your choice, or to append the class declaration to an existing file. If you select an existing file, the wizard will not save it to the selected location until you click **Finish** in the wizard.  

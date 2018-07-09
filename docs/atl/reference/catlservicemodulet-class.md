@@ -26,7 +26,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class derived from `CAtlServiceModuleT`.  
   
  *nServiceNameID*  
@@ -145,7 +145,7 @@ HRESULT InitializeSecurity() throw();
 ### Remarks  
  In Visual Studio .NET 2003, this method is not implemented in the base class. The Visual Studio project wizard includes this method in the generated code, but a compilation error will occur if a project created in an earlier version of Visual C++ is compiled using ATL 7.1. Any class that derives from `CAtlServiceModuleT` must implement this method in the derived class.  
   
- Use PKT-level authentication, impersonation level of RPC_C_IMP_LEVEL_IDENTIFY and an appropriate non-null security descriptor in the call to **CoInitializeSecurity**.  
+ Use PKT-level authentication, impersonation level of RPC_C_IMP_LEVEL_IDENTIFY and an appropriate non-null security descriptor in the call to `CoInitializeSecurity`.  
   
  For wizard-generated nonattributed service projects, this would be in  
   
@@ -186,7 +186,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 ```  
   
 ### Parameters  
- `pszFormat`  
+ *pszFormat*  
  The string to write to the event log.  
   
  ...  
@@ -299,10 +299,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```  
   
 ### Parameters  
- `lpCmdLine`  
+ *lpCmdLine*  
  The command line.  
   
- `pnRetCode`  
+ *pnRetCode*  
  The HRESULT corresponding to the registration (if it took place).  
   
 ### Return Value  
@@ -319,7 +319,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
+ *nShowCmd*  
  This parameter is passed to [CAtlExeModuleT::PreMessageLoop](../../atl/reference/catlexemodulet-class.md#premessageloop).  
   
 ### Return Value  
@@ -350,14 +350,14 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
+ *nShowCmd*  
  Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section. The default value is SW_HIDE.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- After being called, **Run** calls [CAtlServiceModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::RunMessageLoop](../../atl/reference/catlexemodulet-class.md#runmessageloop), and [CAtlExeModuleT::PostMessageLoop](../../atl/reference/catlexemodulet-class.md#postmessageloop).  
+ After being called, `Run` calls [CAtlServiceModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::RunMessageLoop](../../atl/reference/catlexemodulet-class.md#runmessageloop), and [CAtlExeModuleT::PostMessageLoop](../../atl/reference/catlexemodulet-class.md#postmessageloop).  
   
 ##  <a name="servicemain"></a>  CAtlServiceModuleT::ServiceMain  
  This method is called by the Service Control Manager.  
@@ -376,7 +376,7 @@ void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 ### Remarks  
  The Service Control Manager (SCM) calls `ServiceMain` when you open the Services application in the Control Panel, select the service, and click Start.  
   
- After the SCM calls `ServiceMain`, a service must give the SCM a handler function. This function lets the SCM obtain the service's status and pass specific instructions (such as pausing or stopping). Subsequently, [CAtlServiceModuleT::Run](#run) is called to perform the main work of the service. **Run** continues to execute until the service is stopped.  
+ After the SCM calls `ServiceMain`, a service must give the SCM a handler function. This function lets the SCM obtain the service's status and pass specific instructions (such as pausing or stopping). Subsequently, [CAtlServiceModuleT::Run](#run) is called to perform the main work of the service. `Run` continues to execute until the service is stopped.  
   
 ##  <a name="setservicestatus"></a>  CAtlServiceModuleT::SetServiceStatus  
  This method updates the service status.  
@@ -386,7 +386,7 @@ void SetServiceStatus(DWORD dwState) throw();
 ```  
   
 ### Parameters  
- `dwState`  
+ *dwState*  
  The new status. See [SetServiceStatus](http://msdn.microsoft.com/library/windows/desktop/ms686241) for possible values.  
   
 ### Remarks  
@@ -400,14 +400,14 @@ HRESULT Start(int nShowCmd) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
+ *nShowCmd*  
  Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The [CAtlServiceModuleT::WinMain](#winmain) method handles both registration and installation, as well as tasks involved in removing registry entries and uninstalling the module. When the service is run, `WinMain` calls **Start**.  
+ The [CAtlServiceModuleT::WinMain](#winmain) method handles both registration and installation, as well as tasks involved in removing registry entries and uninstalling the module. When the service is run, `WinMain` calls `Start`.  
   
 ##  <a name="uninstall"></a>  CAtlServiceModuleT::Uninstall  
  Stops and removes the service.  
@@ -450,7 +450,7 @@ int WinMain(int nShowCmd) throw();
 ```  
   
 ### Parameters  
- `nShowCmd`  
+ *nShowCmd*  
  Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
   
 ### Return Value  

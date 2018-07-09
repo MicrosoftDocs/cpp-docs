@@ -54,7 +54,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
   
 -   *unary-operator* *cast-expression*  
   
--   `sizeof` *unary-expression*  
+-   **sizeof** *unary-expression*  
   
 -   `sizeof(` *type-name* `)`  
   
@@ -72,7 +72,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
   
  An *expression* can be any expression. For more information, see [Expressions](../cpp/expressions-cpp.md).  
   
- The *allocation-expression* refers to the `new` operator. The *deallocation-expression* refers to the `delete` operator. For more information, see the links earlier in this topic.  
+ The *allocation-expression* refers to the **new** operator. The *deallocation-expression* refers to the **delete** operator. For more information, see the links earlier in this topic.  
   
 ## See Also  
  [Types of Expressions](../cpp/types-of-expressions.md)

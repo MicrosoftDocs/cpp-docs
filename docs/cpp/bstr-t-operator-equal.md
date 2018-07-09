@@ -34,16 +34,16 @@ _bstr_t& operator=(const _variant_t& var);
  *s2*  
  A multibyte string to be assigned to an existing `_bstr_t` object.  
   
- `s3`  
+ *s3*  
  A Unicode string to be assigned to an existing `_bstr_t` object.  
   
- `var`  
+ *var*  
  A `_variant_t` object to be assigned to an existing `_bstr_t` object.  
   
  **END Microsoft Specific**  
   
 ## Example  
- See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for an example of using `operator=`.  
+ See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for an example of using **operator=**.  
   
 ## See Also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

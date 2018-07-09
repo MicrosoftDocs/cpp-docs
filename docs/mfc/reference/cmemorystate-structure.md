@@ -43,19 +43,19 @@ struct CMemoryState
   
  A "memory leak" occurs when memory for an object is allocated on the heap but not deallocated when it is no longer required. Such memory leaks can eventually lead to out-of-memory errors. There are several ways to allocate and deallocate memory in your program:  
   
--   Using the `malloc`/ **free** family of functions from the run-time library.  
+-   Using the `malloc`/ `free` family of functions from the run-time library.  
   
--   Using the Windows API memory management functions, **LocalAlloc**/ **LocalFree** and **GlobalAlloc**/ **GlobalFree**.  
+-   Using the Windows API memory management functions, `LocalAlloc`/ `LocalFree` and `GlobalAlloc`/ `GlobalFree`.  
   
 -   Using the C++ **new** and **delete** operators.  
   
- The `CMemoryState` diagnostics only help detect memory leaks caused when memory allocated using the **new** operator is not deallocated using **delete**. The other two groups of memory-management functions are for non-C++ programs, and mixing them with **new** and **delete** in the same program is not recommended. An additional macro, `DEBUG_NEW`, is provided to replace the **new** operator when you need file and line-number tracking of memory allocations. `DEBUG_NEW` is used whenever you would normally use the **new** operator.  
+ The `CMemoryState` diagnostics only help detect memory leaks caused when memory allocated using the **new** operator is not deallocated using **delete**. The other two groups of memory-management functions are for non-C++ programs, and mixing them with **new** and **delete** in the same program is not recommended. An additional macro, DEBUG_NEW, is provided to replace the **new** operator when you need file and line-number tracking of memory allocations. DEBUG_NEW is used whenever you would normally use the **new** operator.  
   
- As with other diagnostics, the `CMemoryState` diagnostics are only available in debug versions of your program. A debug version must have the **_DEBUG** constant defined.  
+ As with other diagnostics, the `CMemoryState` diagnostics are only available in debug versions of your program. A debug version must have the _DEBUG constant defined.  
   
- If you suspect your program has a memory leak, you can use the `Checkpoint`, **Difference**, and `DumpStatistics` functions to discover the difference between the memory state (objects allocated) at two different points in program execution. This information can be useful in determining whether a function is cleaning up all the objects it allocates.  
+ If you suspect your program has a memory leak, you can use the `Checkpoint`, `Difference`, and `DumpStatistics` functions to discover the difference between the memory state (objects allocated) at two different points in program execution. This information can be useful in determining whether a function is cleaning up all the objects it allocates.  
   
- If simply knowing where the imbalance in allocation and deallocation occurs does not provide enough information, you can use the `DumpAllObjectsSince` function to dump all objects allocated since the previous call to `Checkpoint`. This dump shows the order of allocation, the source file and line where the object was allocated (if you are using `DEBUG_NEW` for allocation), and the derivation of the object, its address, and its size. `DumpAllObjectsSince` also calls each object's `Dump` function to provide information about its current state.  
+ If simply knowing where the imbalance in allocation and deallocation occurs does not provide enough information, you can use the `DumpAllObjectsSince` function to dump all objects allocated since the previous call to `Checkpoint`. This dump shows the order of allocation, the source file and line where the object was allocated (if you are using DEBUG_NEW for allocation), and the derivation of the object, its address, and its size. `DumpAllObjectsSince` also calls each object's `Dump` function to provide information about its current state.  
   
  For more information about how to use `CMemoryState` and other diagnostics, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
@@ -159,7 +159,7 @@ void DumpStatistics() const;
   
 -   total memory currently used by the program (in bytes)  
   
- Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to **delayFreeMemDF**. For more information, see [afxMemDF](diagnostic-services.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
+ Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to `delayFreeMemDF`. For more information, see [afxMemDF](diagnostic-services.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
   
 ### Example  
   The following code should be placed in *projname*App.cpp. Define the following global variables:  

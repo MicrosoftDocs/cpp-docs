@@ -83,25 +83,25 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the Windows SDK.  
   
- `rect`  
+ *rect*  
  Specifies the spin button control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure  
   
- `pParentWnd`  
- A pointer to the spin button control's parent window, usually a `CDialog`. It must not be **NULL.**  
+ *pParentWnd*  
+ A pointer to the spin button control's parent window, usually a `CDialog`. It must not be NULL.  
   
- `nID`  
+ *nID*  
  Specifies the spin button control's ID.  
   
 ### Return Value  
  Nonzero if initialization was successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CSpinButtonCtrl` object in two steps First, call the constructor, and then call **Create**, which creates the spin button control and attaches it to the `CSpinButtonCtrl` object.  
+ You construct a `CSpinButtonCtrl` object in two steps First, call the constructor, and then call `Create`, which creates the spin button control and attaches it to the `CSpinButtonCtrl` object.  
   
- To create a spin button control with extended window styles, call [CSpinButtonCtrl::CreateEx](#createex) instead of **Create**.  
+ To create a spin button control with extended window styles, call [CSpinButtonCtrl::CreateEx](#createex) instead of `Create`.  
   
 ##  <a name="createex"></a>  CSpinButtonCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CSpinButtonCtrl` object.  
@@ -116,26 +116,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the Windows SDK.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface WS_EX_.  
   
 ##  <a name="cspinbuttonctrl"></a>  CSpinButtonCtrl::CSpinButtonCtrl  
  Constructs a `CSpinButtonCtrl` object.  
@@ -154,10 +154,10 @@ UINT GetAccel(
 ```  
   
 ### Parameters  
- `nAccel`  
- Number of elements in the array specified by `pAccel`.  
+ *nAccel*  
+ Number of elements in the array specified by *pAccel*.  
   
- `pAccel`  
+ *pAccel*  
  Pointer to an array of [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) structures that receives acceleration information.  
   
 ### Return Value  
@@ -192,7 +192,7 @@ int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;
   
 ### Parameters  
  *lpbError*  
- A pointer to a boolean value that is set to zero if the value is successfully retrieved or non-zero if an error occurs. If this parameter is set to **NULL**, errors are not reported.  
+ A pointer to a boolean value that is set to zero if the value is successfully retrieved or non-zero if an error occurs. If this parameter is set to NULL, errors are not reported.  
   
 ### Return Value  
  The first version returns the 16-bit current position in the low-order word. The high-order word is nonzero if an error occurred.  
@@ -240,11 +240,11 @@ BOOL SetAccel(
 ```  
   
 ### Parameters  
- `nAccel`  
- Number of [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) structures specified by `pAccel`.  
+ *nAccel*  
+ Number of [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) structures specified by *pAccel*.  
   
- `pAccel`  
- Pointer to an array of `UDACCEL` structures, which contain acceleration information. Elements should be sorted in ascending order based on the **nSec** member.  
+ *pAccel*  
+ Pointer to an array of UDACCEL structures, which contain acceleration information. Elements should be sorted in ascending order based on the `nSec` member.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -257,7 +257,7 @@ int SetBase(int nBase);
 ```  
   
 ### Parameters  
- `nBase`  
+ *nBase*  
  New base value for the control. It can be 10 for decimal or 16 for hexadecimal.  
   
 ### Return Value  
@@ -274,7 +274,7 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
 ```  
   
 ### Parameters  
- `pWndBuddy`  
+ *pWndBuddy*  
  Pointer to the new buddy window.  
   
 ### Return Value  
@@ -292,7 +292,7 @@ int SetPos32(int nPos);
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  New position for the control. This value must be in the range specified by the upper and lower limits for the control.  
   
 ### Return Value  
@@ -316,8 +316,8 @@ void SetRange32(
 ```  
   
 ### Parameters  
- `nLower` and `nUpper`  
- Upper and lower limits for the control. For `SetRange`, neither limit can be greater than **UD_MAXVAL** or less than **UD_MINVAL**; in addition, the difference between the two limits cannot exceed **UD_MAXVAL**. `SetRange32` places no restrictions on the limits; use any integers.  
+ *nLower* and *nUpper*  
+ Upper and lower limits for the control. For `SetRange`, neither limit can be greater than UD_MAXVAL or less than UD_MINVAL; in addition, the difference between the two limits cannot exceed UD_MAXVAL. `SetRange32` places no restrictions on the limits; use any integers.  
   
 ### Remarks  
  The member function `SetRange32` sets the 32-bit range for the spin button control.  

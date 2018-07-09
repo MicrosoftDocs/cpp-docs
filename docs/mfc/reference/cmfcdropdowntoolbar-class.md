@@ -108,22 +108,22 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### Parameters  
- [in] `uiResID`  
+ [in] *uiResID*  
  The resource ID of the bitmap that refers to the hot toolbar images.  
   
- [in] `uiColdResID`  
+ [in] *uiColdResID*  
  The resource ID of the bitmap that refers to the cold toolbar images.  
   
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  The resource ID of the bitmap that refers to the regular menu images.  
   
- [in] `bLocked`  
- `TRUE` to lock the toolbar; otherwise `FALSE`.  
+ [in] *bLocked*  
+ TRUE to lock the toolbar; otherwise FALSE.  
   
- [in] `uiDisabledResID`  
+ [in] *uiDisabledResID*  
  The resource ID of the bitmap that refers to the disabled toolbar images.  
   
- [in] `uiMenuDisabledResID`  
+ [in] *uiMenuDisabledResID*  
  The resource ID of the bitmap that refers to the disabled menu images.  
   
 ### Return Value  
@@ -149,13 +149,13 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### Parameters  
- [in] `uiResID`  
- [in] `uiColdResID`  
- [in] `uiMenuResID`  
- [in] `BOOL`  
- [in] `uiDisabledResID`  
- [in] `uiMenuDisabledResID`  
- [in] `uiHotResID`  
+ [in] *uiResID*  
+ [in] *uiColdResID*  
+ [in] *uiMenuResID*  
+ [in] *BOOL*  
+ [in] *uiDisabledResID*  
+ [in] *uiMenuDisabledResID*  
+ [in] *uiHotResID*  
   
 ### Return Value  
   
@@ -171,8 +171,8 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- [in] `point`  
+ [in] *nFlags*  
+ [in] *point*  
   
 ### Remarks  
   
@@ -186,8 +186,8 @@ afx_msg void OnMouseMove(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- [in] `point`  
+ [in] *nFlags*  
+ [in] *point*  
   
 ### Remarks  
   
@@ -199,7 +199,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -215,8 +215,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] `pTarget`  
- [in] `bDisableIfNoHndler`  
+ [in] *pTarget*  
+ [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   

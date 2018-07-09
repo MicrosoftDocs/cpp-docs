@@ -102,7 +102,7 @@ CInternetSession(
 ### Parameters
 
 *pstrAgent*  
-A pointer to a string that identifies the name of the application or entity calling the Internet functions (for example, "Microsoft Internet Browser"). If *pstrAgent* is **NULL** (the default), the framework calls the global function [AfxGetAppName](application-information-and-management.md#afxgetappname), which returns a null-terminated string containing an application's name. Some protocols use this string to identify your application to the server.
+A pointer to a string that identifies the name of the application or entity calling the Internet functions (for example, "Microsoft Internet Browser"). If *pstrAgent* is NULL (the default), the framework calls the global function [AfxGetAppName](application-information-and-management.md#afxgetappname), which returns a null-terminated string containing an application's name. Some protocols use this string to identify your application to the server.
 
 *dwContext*  
 The context identifier for the operation. *dwContext* identifies the operation's status information returned by [CInternetSession::OnStatusCallback](#onstatuscallback). The default is set to 1; however, you can explicitly assign a specific context ID for the operation. The object and any work it does will be associated with that context ID.
@@ -110,26 +110,26 @@ The context identifier for the operation. *dwContext* identifies the operation's
 *dwAccessType*  
 The type of access required. The following are valid values, exactly one of which may be supplied:
 
-- `INTERNET_OPEN_TYPE_PRECONFIG` Connect using preconfigured settings in the registry. This access type is set as the default. To connect through a TIS proxy, set *dwAccessType* to this value; you then set the registry appropriately.
+- INTERNET_OPEN_TYPE_PRECONFIG Connect using preconfigured settings in the registry. This access type is set as the default. To connect through a TIS proxy, set *dwAccessType* to this value; you then set the registry appropriately.
 
-- `INTERNET_OPEN_TYPE_DIRECT` Connect directly to Internet.
+- INTERNET_OPEN_TYPE_DIRECT Connect directly to Internet.
 
-- `INTERNET_OPEN_TYPE_PROXY` Connect through a CERN proxy.
+- INTERNET_OPEN_TYPE_PROXY Connect through a CERN proxy.
 
 For information on connecting with different types of proxies, see [Steps in a Typical FTP Client Application](../../mfc/steps-in-a-typical-ftp-client-application.md).
 
 *pstrProxyName*  
-The name of the preferred CERN proxy if *dwAccessType* is set as `INTERNET_OPEN_TYPE_PROXY`. The default is **NULL**.
+The name of the preferred CERN proxy if *dwAccessType* is set as INTERNET_OPEN_TYPE_PROXY. The default is NULL.
 
 *pstrProxyBypass*  
-A pointer to a string containing an optional list of server addresses. These addresses may be bypassed when using proxy access. If a **NULL** value is supplied, the bypass list will be read from the registry. This parameter is meaningful only if *dwAccessType* is set to `INTERNET_OPEN_TYPE_PROXY`.
+A pointer to a string containing an optional list of server addresses. These addresses may be bypassed when using proxy access. If a NULL value is supplied, the bypass list will be read from the registry. This parameter is meaningful only if *dwAccessType* is set to INTERNET_OPEN_TYPE_PROXY.
 
 *dwFlags*  
 Indicates various caching options. The default is set to 0. The possible values include:
 
-- `INTERNET_FLAG_DONT_CACHE` Do not cache the data, either locally or in any gateway servers.
+- INTERNET_FLAG_DONT_CACHE Do not cache the data, either locally or in any gateway servers.
 
-- `INTERNET_FLAG_OFFLINE` Download operations are satisfied through the persistent cache only. If the item does not exist in the cache, an appropriate error code is returned. This flag may be combined with the bitwise `OR` ( **&#124;**) operator.
+- INTERNET_FLAG_OFFLINE Download operations are satisfied through the persistent cache only. If the item does not exist in the cache, an appropriate error code is returned. This flag may be combined with the bitwise **OR** ( **&#124;**) operator.
 
 ### Remarks
 
@@ -164,7 +164,7 @@ BOOL EnableStatusCallback(BOOL bEnable = TRUE);
 ### Parameters
 
 *bEnable*  
-Specifies whether callback is enabled or disabled. The default is **TRUE**.
+Specifies whether callback is enabled or disabled. The default is TRUE.
 
 ### Return Value
 
@@ -225,18 +225,18 @@ A pointer to a string containing the URL.
 A pointer to a string containing the name of the cookie to get for the specified URL.
 
 *pstrCookieData*  
-In the first overload, a pointer to a string containing the address of the buffer that receives the cookie data. This value can be **NULL**. In the second overload, a reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object to receive the cookie data.
+In the first overload, a pointer to a string containing the address of the buffer that receives the cookie data. This value can be NULL. In the second overload, a reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object to receive the cookie data.
 
 *dwBufLen*  
-The variable specifying the size of the *pstrCookieData* buffer. If the function succeeds, the buffer receives the amount of data copied to the *pstrCookieData* buffer. If *pstrCookieData* is **NULL**, this parameter receives a value that specifies the size of the buffer necessary to copy all the cookie data.
+The variable specifying the size of the *pstrCookieData* buffer. If the function succeeds, the buffer receives the amount of data copied to the *pstrCookieData* buffer. If *pstrCookieData* is NULL, this parameter receives a value that specifies the size of the buffer necessary to copy all the cookie data.
 
 ### Return Value
 
-Returns **TRUE** if successful, or **FALSE** otherwise. If the call fails, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) to determine the cause of the error. The following error values apply:
+Returns TRUE if successful, or FALSE otherwise. If the call fails, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) to determine the cause of the error. The following error values apply:
 
-- `ERROR_NO_MORE_ITEMS` There is no cookie for the specified URL and all its parents.
+- ERROR_NO_MORE_ITEMS There is no cookie for the specified URL and all its parents.
 
-- `ERROR_INSUFFICIENT_BUFFER` The value passed in *dwBufLen* is insufficient to copy all the cookie data. The value returned in *dwBufLen* is the size of the buffer necessary to get all the data.
+- ERROR_INSUFFICIENT_BUFFER The value passed in *dwBufLen* is insufficient to copy all the cookie data. The value returned in *dwBufLen* is the size of the buffer necessary to get all the data.
 
 ### Remarks
 
@@ -262,7 +262,7 @@ A pointer to a string containing the name of the cookie.
 
 ### Return Value
 
-A `DWORD` value indicating the length of the cookie, stored in the buffer. Zero if no cookie with the name indicated by *pstrCookieName* exists.
+A DWORD value indicating the length of the cookie, stored in the buffer. Zero if no cookie with the name indicated by *pstrCookieName* exists.
 
 ### Remarks
 
@@ -287,23 +287,23 @@ CFtpConnection* GetFtpConnection(
 A pointer to a string containing the FTP server name.
 
 *pstrUserName*  
-Pointer to a null-terminated string that specifies the name of the user to log in. If **NULL**, the default is anonymous.
+Pointer to a null-terminated string that specifies the name of the user to log in. If NULL, the default is anonymous.
 
 *pstrPassword*  
-A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are **NULL**, the default anonymous password is the user's email name. If *pstrPassword* is **NULL** (or an empty string) but *pstrUserName* is not **NULL**, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:
+A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:
 
 |*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|
 |--------------------|--------------------|---------------------------------|---------------------------------|
-|**NULL** or " "|**NULL** or " "|"anonymous"|User's email name|
-|Non-**NULL** String|**NULL** or " "|*pstrUserName*|" "|
-|**NULL**|Non-**NULL** String|**ERROR**|**ERROR**||
-|Non-**NULL** String|Non-**NULL** String|*pstrUserName*|*pstrPassword*|
+|NULL or " "|NULL or " "|"anonymous"|User's email name|
+|Non-NULL String|NULL or " "|*pstrUserName*|" "|
+|NULL|Non-NULL String|ERROR|ERROR||
+|Non-NULL String|Non-NULL String|*pstrUserName*|*pstrPassword*|
 
 *nPort*  
 A number that identifies the TCP/IP port to use on the server.
 
 *bPassive*  
-Specifies passive or active mode for this FTP session. If set to **TRUE**, it sets the Win32 API `dwFlag` to `INTERNET_FLAG_PASSIVE`.
+Specifies passive or active mode for this FTP session. If set to TRUE, it sets the Win32 API `dwFlag` to INTERNET_FLAG_PASSIVE.
 
 ### Return Value
 
@@ -385,7 +385,7 @@ A pointer to a string containing the user name.
 A pointer to a string containing the access password.
 
 *dwflags*  
-Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) for a description of `dwFlags` values.
+Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) for a description of *dwFlags* values.
 
 ### Return Value
 
@@ -429,18 +429,18 @@ The *dwInternetStatus* parameter indicates the operation being performed and det
 
 |Value|Meaning|
 |-----------|-------------|
-|`INTERNET_STATUS_RESOLVING_NAME`|Looking up the IP address of the name contained in *lpvStatusInformation*.|
-|`INTERNET_STATUS_NAME_RESOLVED`|Successfully found the IP address of the name contained in *lpvStatusInformation*.|
-|`INTERNET_STATUS_CONNECTING_TO_SERVER`|Connecting to the socket address ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) pointed to by *lpvStatusInformation*.|
-|`INTERNET_STATUS_CONNECTED_TO_SERVER`|Successfully connected to the socket address (`SOCKADDR`) pointed to by *lpvStatusInformation*.|
-|`INTERNET_STATUS_SENDING_REQUEST`|Sending the information request to the server. The *lpvStatusInformation* parameter is **NULL**.|
-|`INTERNET_STATUS_ REQUEST_SENT`|Successfully sent the information request to the server. The *lpvStatusInformation* parameter is **NULL**.|
-|`INTERNET_STATUS_RECEIVING_RESPONSE`|Waiting for the server to respond to a request. The *lpvStatusInformation* parameter is **NULL**.|
-|`INTERNET_STATUS_RESPONSE_RECEIVED`|Successfully received a response from the server. The *lpvStatusInformation* parameter is **NULL**.|
-|`INTERNET_STATUS_CLOSING_CONNECTION`|Closing the connection to the server. The *lpvStatusInformation* parameter is **NULL**.|
-|`INTERNET_STATUS_CONNECTION_CLOSED`|Successfully closed the connection to the server. The *lpvStatusInformation* parameter is **NULL**.|
-|`INTERNET_STATUS_HANDLE_CREATED`|Used by the Win32 API function [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|
-|`INTERNET_STATUS_HANDLE_CLOSING`|Successfully terminated this handle value.|
+|INTERNET_STATUS_RESOLVING_NAME|Looking up the IP address of the name contained in *lpvStatusInformation*.|
+|INTERNET_STATUS_NAME_RESOLVED|Successfully found the IP address of the name contained in *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) pointed to by *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTED_TO_SERVER|Successfully connected to the socket address (SOCKADDR) pointed to by *lpvStatusInformation*.|
+|INTERNET_STATUS_SENDING_REQUEST|Sending the information request to the server. The *lpvStatusInformation* parameter is NULL.|
+|INTERNET_STATUS_ REQUEST_SENT|Successfully sent the information request to the server. The *lpvStatusInformation* parameter is NULL.|
+|INTERNET_STATUS_RECEIVING_RESPONSE|Waiting for the server to respond to a request. The *lpvStatusInformation* parameter is NULL.|
+|INTERNET_STATUS_RESPONSE_RECEIVED|Successfully received a response from the server. The *lpvStatusInformation* parameter is NULL.|
+|INTERNET_STATUS_CLOSING_CONNECTION|Closing the connection to the server. The *lpvStatusInformation* parameter is NULL.|
+|INTERNET_STATUS_CONNECTION_CLOSED|Successfully closed the connection to the server. The *lpvStatusInformation* parameter is NULL.|
+|INTERNET_STATUS_HANDLE_CREATED|Used by the Win32 API function [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|
+|INTERNET_STATUS_HANDLE_CLOSING|Successfully terminated this handle value.|
 
 Override this member function to require some action before a status callback routine is performed.
 
@@ -467,7 +467,7 @@ CStdioFile* OpenURL(
 ### Parameters
 
 *pstrURL*  
-A pointer to the name of the URL to begin reading. Only URLs beginning with file:, ftp:, gopher:, or http: are supported. Asserts if *pstrURL* is **NULL**.
+A pointer to the name of the URL to begin reading. Only URLs beginning with file:, ftp:, gopher:, or http: are supported. Asserts if *pstrURL* is NULL.
 
 *dwContext*  
 An application-defined value passed with the returned handle in callback.
@@ -475,29 +475,29 @@ An application-defined value passed with the returned handle in callback.
 *dwFlags*  
 The flags describing how to handle this connection. See **Remarks** for more information about the valid flags. The valid flags are:
 
-- `INTERNET_FLAG_TRANSFER_ASCII` The default. Transfer the file as ASCII text.
+- INTERNET_FLAG_TRANSFER_ASCII The default. Transfer the file as ASCII text.
 
-- `INTERNET_FLAG_TRANSFER_BINARY` Transfer the file as a binary file.
+- INTERNET_FLAG_TRANSFER_BINARY Transfer the file as a binary file.
 
-- `INTERNET_FLAG_RELOAD` Get the data from the wire even if it is locally cached.
+- INTERNET_FLAG_RELOAD Get the data from the wire even if it is locally cached.
 
-- `INTERNET_FLAG_DONT_CACHE` Do not cache the data, either locally or in any gateways.
+- INTERNET_FLAG_DONT_CACHE Do not cache the data, either locally or in any gateways.
 
-- `INTERNET_FLAG_SECURE` This flag is applicable to HTTP requests only. It requests secure transactions on the wire with Secure Sockets Layer or PCT.
+- INTERNET_FLAG_SECURE This flag is applicable to HTTP requests only. It requests secure transactions on the wire with Secure Sockets Layer or PCT.
 
-- `INTERNET_OPEN_FLAG_USE_EXISTING_CONNECT` If possible, reuse the existing connections to the server for new requests generated by `OpenUrl` instead of creating a new session for each connection request.
+- INTERNET_OPEN_FLAG_USE_EXISTING_CONNECT If possible, reuse the existing connections to the server for new requests generated by `OpenUrl` instead of creating a new session for each connection request.
 
-- `INTERNET_FLAG_PASSIVE` Used for an FTP site. Uses passive FTP semantics. Used with [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) of `OpenURL`.
+- INTERNET_FLAG_PASSIVE Used for an FTP site. Uses passive FTP semantics. Used with [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) of `OpenURL`.
 
 *pstrHeaders*  
 A pointer to a string containing the headers to be sent to the HTTP server.
 
 *dwHeadersLength*  
-The length, in characters, of the additional headers. If this is -1L and *pstrHeaders* is non-**NULL**, then *pstrHeaders* is assumed to be zero terminated and the length is calculated.
+The length, in characters, of the additional headers. If this is -1L and *pstrHeaders* is non-NULL, then *pstrHeaders* is assumed to be zero terminated and the length is calculated.
 
 ### Return Value
 
-Returns a file handle for FTP, GOPHER, HTTP, and FILE-type Internet services only. Returns **NULL** if parsing was unsuccessful.
+Returns a file handle for FTP, GOPHER, HTTP, and FILE-type Internet services only. Returns NULL if parsing was unsuccessful.
 
 The pointer that `OpenURL` returns depends on *pstrURL*'s type of service. The table below illustrates the possible pointers `OpenURL` can return.
 
@@ -510,7 +510,7 @@ The pointer that `OpenURL` returns depends on *pstrURL*'s type of service. The t
 
 ### Remarks
 
-The parameter *dwFlags* must include either `INTERNET_FLAG_TRANSFER_ASCII` or `INTERNET_FLAG_TRANSFER_BINARY`, but not both. The remaining flags can be combined with the bitwise `OR` operator ( **&#124;**).
+The parameter *dwFlags* must include either INTERNET_FLAG_TRANSFER_ASCII or INTERNET_FLAG_TRANSFER_BINARY, but not both. The remaining flags can be combined with the bitwise **OR** operator ( **&#124;**).
 
 `OpenURL`, which wraps the Win32 function `InternetOpenURL`, allows only downloading, retrieving, and reading the data from an Internet server. `OpenURL` allows no file manipulation on a remote location, so it requires no [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) object.
 
@@ -548,7 +548,7 @@ A pointer to a string containing the actual string data to associate with the UR
 
 ### Return Value
 
-Returns **TRUE** if successful, or **FALSE** otherwise. To get the specific error code, call **GetLastError.**
+Returns TRUE if successful, or FALSE otherwise. To get the specific error code, call `GetLastError.`
 
 ### Remarks
 
@@ -584,18 +584,18 @@ A buffer that contains the option setting.
 The length of *lpBuffer* or the size of *dwValue*.
 
 *dwValue*  
-A `DWORD` that contains the option setting.
+A DWORD that contains the option setting.
 
 *dwFlags*  
 Indicates various caching options. The default is set to 0. The possible values include:
 
-- `INTERNET_FLAG_DONT_CACHE` Do not cache the data, either locally or in any gateway servers.
+- INTERNET_FLAG_DONT_CACHE Do not cache the data, either locally or in any gateway servers.
 
-- `INTERNET_FLAG_OFFLINE` Download operations are satisfied through the persistent cache only. If the item does not exist in the cache, an appropriate error code is returned. This flag may be combined with the bitwise `OR` ( **&#124;**) operator.
+- INTERNET_FLAG_OFFLINE Download operations are satisfied through the persistent cache only. If the item does not exist in the cache, an appropriate error code is returned. This flag may be combined with the bitwise **OR** ( **&#124;**) operator.
 
 ### Return Value
 
-If the operation was successful, a value of **TRUE** is returned. If an error occurred, a value of **FALSE** is returned. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
 
 ## See Also
 

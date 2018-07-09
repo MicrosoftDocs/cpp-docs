@@ -37,14 +37,14 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  Specifies the name of the control class whose event sink map this is.  
   
- `baseClass`  
- Specifies the name of the base class of `theClass`.  
+ *baseClass*  
+ Specifies the name of the base class of *theClass*.  
   
 ### Remarks  
- In the implementation (.cpp) file that defines the member functions for your class, start the event sink map with the `BEGIN_EVENTSINK_MAP` macro, then add macro entries for each event to be notified of, and complete the event sink map with the `END_EVENTSINK_MAP` macro.  
+ In the implementation (.cpp) file that defines the member functions for your class, start the event sink map with the BEGIN_EVENTSINK_MAP macro, then add macro entries for each event to be notified of, and complete the event sink map with the END_EVENTSINK_MAP macro.  
   
  For more information on event sink maps and OLE control containers, see the article [ActiveX Control Containers](../../mfc/activex-control-containers.md).  
   
@@ -59,7 +59,7 @@ DECLARE_EVENTSINK_MAP()
 ```  
   
 ### Remarks  
- Use the `DECLARE_EVENTSINK_MAP` macro at the end of your class declaration. Then, in the .CPP file that defines the member functions for the class, use the `BEGIN_EVENTSINK_MAP` macro, macro entries for each of the events to be notified of, and the `END_EVENTSINK_MAP` macro to declare the end of the event sink list.  
+ Use the DECLARE_EVENTSINK_MAP macro at the end of your class declaration. Then, in the .CPP file that defines the member functions for the class, use the BEGIN_EVENTSINK_MAP macro, macro entries for each of the events to be notified of, and the END_EVENTSINK_MAP macro to declare the end of the event sink list.  
   
  For more information on event sink maps, see the article [ActiveX Control Containers](../../mfc/activex-control-containers.md).  
   
@@ -77,34 +77,34 @@ END_EVENTSINK_MAP()
   **Header** afxdisp.h  
   
 ##  <a name="on_event"></a>  ON_EVENT  
- Use the `ON_EVENT` macro to define an event handler function for an event fired by an OLE control.  
+ Use the ON_EVENT macro to define an event handler function for an event fired by an OLE control.  
   
 ```   
 ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams) 
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class to which this event sink map belongs.  
   
- `id`  
+ *id*  
  The control ID of the OLE control.  
   
- `dispid`  
+ *dispid*  
  The dispatch ID of the event fired by the control.  
   
- `pfnHandler`  
- Pointer to a member function that handles the event. This function should have a **BOOL** return type, and parameter types that match the event's parameters (see `vtsParams`). The function should return **TRUE** to indicate the event was handled; otherwise **FALSE**.  
+ *pfnHandler*  
+ Pointer to a member function that handles the event. This function should have a BOOL return type, and parameter types that match the event's parameters (see *vtsParams*). The function should return TRUE to indicate the event was handled; otherwise FALSE.  
   
- `vtsParams`  
- A sequence of **VTS_** constants that specifies the types of the parameters for the event. These are the same constants that are used in dispatch map entries such as `DISP_FUNCTION`.  
+ *vtsParams*  
+ A sequence of **VTS_** constants that specifies the types of the parameters for the event. These are the same constants that are used in dispatch map entries such as DISP_FUNCTION.  
   
 ### Remarks  
- The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
+ The *vtsParams* argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
  [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
- specifies a list containing a short integer followed by a **BOOL**.  
+ specifies a list containing a short integer followed by a BOOL.  
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
@@ -112,42 +112,42 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
   **Header** afxdisp.h  
   
 ##  <a name="on_event_range"></a>  ON_EVENT_RANGE  
- Use the `ON_EVENT_RANGE` macro to define an event handler function for an event fired by any OLE control having a control ID within a contiguous range of IDs.  
+ Use the ON_EVENT_RANGE macro to define an event handler function for an event fired by any OLE control having a control ID within a contiguous range of IDs.  
   
 ```   
 ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)   
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class to which this event sink map belongs.  
   
- `idFirst`  
+ *idFirst*  
  The control ID of the first OLE control in the range.  
   
- `idLast`  
+ *idLast*  
  The control ID of the last OLE control in the range.  
   
- `dispid`  
+ *dispid*  
  The dispatch ID of the event fired by the control.  
   
- `pfnHandler`  
- Pointer to a member function that handles the event. This function should have a **BOOL** return type, a first parameter of type **UINT** (for the control ID), and additional parameter types that match the event's parameters (see `vtsParams`). The function should return **TRUE** to indicate the event was handled; otherwise **FALSE**.  
+ *pfnHandler*  
+ Pointer to a member function that handles the event. This function should have a BOOL return type, a first parameter of type UINT (for the control ID), and additional parameter types that match the event's parameters (see *vtsParams*). The function should return TRUE to indicate the event was handled; otherwise FALSE.  
   
- `vtsParams`  
- A sequence of **VTS_** constants that specifies the types of the parameters for the event. The first constant should be of type **VTS_I4**, for the control ID. These are the same constants that are used in dispatch map entries such as `DISP_FUNCTION`.  
+ *vtsParams*  
+ A sequence of **VTS_** constants that specifies the types of the parameters for the event. The first constant should be of type VTS_I4, for the control ID. These are the same constants that are used in dispatch map entries such as DISP_FUNCTION.  
   
 ### Remarks  
- The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
+ The *vtsParams* argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
  [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
- specifies a list containing a short integer followed by a **BOOL**.  
+ specifies a list containing a short integer followed by a BOOL.  
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
 ### Example  
- The following example demonstrates an event handler, for the MouseDown event, implemented for three controls ( `IDC_MYCTRL1` through `IDC_MYCTRL3`). The event handler function, `OnRangeMouseDown`, is declared in the header file of the dialog class ( `CMyDlg`) as:  
+ The following example demonstrates an event handler, for the MouseDown event, implemented for three controls ( IDC_MYCTRL1 through IDC_MYCTRL3). The event handler function, `OnRangeMouseDown`, is declared in the header file of the dialog class ( `CMyDlg`) as:  
   
  [!code-cpp[NVC_MFCAutomation#12](../../mfc/codesnippet/cpp/event-sink-maps_2.h)]  
   
@@ -159,33 +159,33 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
   **Header** afxdisp.h  
   
 ##  <a name="on_event_reflect"></a>  ON_EVENT_REFLECT  
- The `ON_EVENT_REFLECT` macro, when used in the event sink map of an OLE control's wrapper class, receives events fired by the control before they are handled by the control's container.  
+ The ON_EVENT_REFLECT macro, when used in the event sink map of an OLE control's wrapper class, receives events fired by the control before they are handled by the control's container.  
   
 ```   
 ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams) 
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class to which this event sink map belongs.  
   
  dispid  
  The dispatch ID of the event fired by the control.  
   
- `pfnHandler`  
- Pointer to a member function that handles the event. This function should have a **BOOL** return type and parameter types that match the event's parameters (see `vtsParams`). The function should return **TRUE** to indicate the event was handled; otherwise **FALSE**.  
+ *pfnHandler*  
+ Pointer to a member function that handles the event. This function should have a BOOL return type and parameter types that match the event's parameters (see *vtsParams*). The function should return TRUE to indicate the event was handled; otherwise FALSE.  
   
- `vtsParams`  
- A sequence of **VTS_** constants that specifies the types of the parameters for the event. These are the same constants that are used in dispatch map entries such as `DISP_FUNCTION`.  
+ *vtsParams*  
+ A sequence of **VTS_** constants that specifies the types of the parameters for the event. These are the same constants that are used in dispatch map entries such as DISP_FUNCTION.  
   
 ### Remarks  
- The `vtsParams` argument is a space-separated list of values from the **VTS_** constants.  
+ The *vtsParams* argument is a space-separated list of values from the **VTS_** constants.  
   
  One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
  [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
- specifies a list containing a short integer followed by a **BOOL**.  
+ specifies a list containing a short integer followed by a BOOL.  
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
@@ -193,7 +193,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
   **Header** afxdisp.h  
   
 ##  <a name="on_propnotify"></a>  ON_PROPNOTIFY  
- Use the `ON_PROPNOTIFY` macro to define an event sink map entry for handling property notifications from an OLE control.  
+ Use the ON_PROPNOTIFY macro to define an event sink map entry for handling property notifications from an OLE control.  
   
 ```   
 ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)  
@@ -201,32 +201,32 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class to which this event sink map belongs.  
   
- `id`  
+ *id*  
  The control ID of the OLE control.  
   
- `dispid`  
+ *dispid*  
  The dispatch ID of the property involved in the notification.  
   
- `pfnRequest`  
- Pointer to a member function that handles the **OnRequestEdit** notification for this property. This function should have a **BOOL** return type and a **BOOL\*** parameter. This function should set the parameter to **TRUE** to allow the property to change and **FALSE** to disallow. The function should return **TRUE** to indicate the notification was handled; otherwise **FALSE**.  
+ *pfnRequest*  
+ Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and a **BOOL\*** parameter. This function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
   
- `pfnChanged`  
- Pointer to a member function that handles the **OnChanged** notification for this property. The function should have a **BOOL** return type and a **UINT** parameter. The function should return **TRUE** to indicate that notification was handled; otherwise **FALSE**.  
+ *pfnChanged*  
+ Pointer to a member function that handles the `OnChanged` notification for this property. The function should have a BOOL return type and a UINT parameter. The function should return TRUE to indicate that notification was handled; otherwise FALSE.  
   
 ### Remarks  
- The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
+ The *vtsParams* argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
  [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
- specifies a list containing a short integer followed by a **BOOL**.  
+ specifies a list containing a short integer followed by a BOOL.  
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
 ##  <a name="on_propnotify_range"></a>  ON_PROPNOTIFY_RANGE  
- Use the `ON_PROPNOTIFY_RANGE` macro to define an event sink map entry for handling property notifications from any OLE control having a control ID within a contiguous range of IDs.  
+ Use the ON_PROPNOTIFY_RANGE macro to define an event sink map entry for handling property notifications from any OLE control having a control ID within a contiguous range of IDs.  
   
 ```  
  
@@ -235,29 +235,29 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class to which this event sink map belongs.  
   
- `idFirst`  
+ *idFirst*  
  The control ID of the first OLE control in the range.  
   
- `idLast`  
+ *idLast*  
  The control ID of the last OLE control in the range.  
   
- `dispid`  
+ *dispid*  
  The dispatch ID of the property involved in the notification.  
   
- `pfnRequest`  
- Pointer to a member function that handles the **OnRequestEdit** notification for this property. This function should have a **BOOL** return type and **UINT** and **BOOL\*** parameters. The function should set the parameter to **TRUE** to allow the property to change and **FALSE** to disallow. The function should return **TRUE** to indicate that notification was handled; otherwise **FALSE**.  
+ *pfnRequest*  
+ Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and UINT and **BOOL\*** parameters. The function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate that notification was handled; otherwise FALSE.  
   
- `pfnChanged`  
- Pointer to a member function that handles the **OnChanged** notification for this property. The function should have a **BOOL** return type and a **UINT** parameter. The function should return **TRUE** to indicate that notification was handled; otherwise **FALSE**.  
+ *pfnChanged*  
+ Pointer to a member function that handles the `OnChanged` notification for this property. The function should have a BOOL return type and a UINT parameter. The function should return TRUE to indicate that notification was handled; otherwise FALSE.  
   
 ### Requirements  
   **Header** afxdisp.h  
   
 ##  <a name="on_propnotify_reflect"></a>  ON_PROPNOTIFY_REFLECT  
- The `ON_PROPNOTIFY_REFLECT` macro, when used in the event sink map of an OLE control's wrapper class, receives property notifications sent by the control before they are handled by the control's container.  
+ The ON_PROPNOTIFY_REFLECT macro, when used in the event sink map of an OLE control's wrapper class, receives property notifications sent by the control before they are handled by the control's container.  
   
 ```  
  
@@ -266,17 +266,17 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  The class to which this event sink map belongs.  
   
- `dispid`  
+ *dispid*  
  The dispatch ID of the property involved in the notification.  
   
- `pfnRequest`  
- Pointer to a member function that handles the **OnRequestEdit** notification for this property. This function should have a **BOOL** return type and a **BOOL\*** parameter. This function should set the parameter to **TRUE** to allow the property to change and **FALSE** to disallow. The function should return **TRUE** to indicate the notification was handled; otherwise **FALSE**.  
+ *pfnRequest*  
+ Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and a **BOOL\*** parameter. This function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
   
- `pfnChanged`  
- Pointer to a member function that handles the **OnChanged** notification for this property. The function should have a **BOOL** return type and no parameters. The function should return **TRUE** to indicate the notification was handled; otherwise **FALSE**.  
+ *pfnChanged*  
+ Pointer to a member function that handles the `OnChanged` notification for this property. The function should have a BOOL return type and no parameters. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
   
 ### Requirements  
   **Header** afxdisp.h  

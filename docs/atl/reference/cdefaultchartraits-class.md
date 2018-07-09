@@ -23,7 +23,7 @@ class CDefaultCharTraits
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  

@@ -27,16 +27,16 @@ struct _ATL_FUNC_INFO {
 ```  
   
 ## Members  
- **cc**  
- The calling convention. When using this structure with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class, this member must be **CC_STDCALL**. `CC_CDECL` is the only option supported in Windows CE for the `CALLCONV` field of the `_ATL_FUNC_INFO` structure. Any other value is unsupported thus its behavior undefined.  
+ `cc`  
+ The calling convention. When using this structure with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class, this member must be CC_STDCALL. `CC_CDECL` is the only option supported in Windows CE for the `CALLCONV` field of the `_ATL_FUNC_INFO` structure. Any other value is unsupported thus its behavior undefined.  
   
- **vtReturn**  
+ `vtReturn`  
  The variant type of the function return value.  
   
- **nParams**  
+ `nParams`  
  The number of function parameters.  
   
- **pVarTypes**  
+ `pVarTypes`  
  An array of variant types of the function parameters.  
   
 ## Remarks  
@@ -52,7 +52,7 @@ struct _ATL_FUNC_INFO {
  [!code-cpp[NVC_ATL_Windowing#140](../../atl/codesnippet/cpp/atl-func-info-structure_2.h)]  
   
 ## Requirements  
- **Header:** atlcom.h  
+ Header: atlcom.h  
   
 ## See Also  
   [Classes and structs](../../atl/reference/atl-classes.md)  

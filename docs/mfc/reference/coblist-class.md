@@ -58,11 +58,11 @@ class CObList : public CObject
 ## Remarks  
  `CObList` lists behave like doubly-linked lists.  
   
- A variable of type **POSITION** is a key for the list. You can use a **POSITION** variable both as an iterator to traverse a list sequentially and as a bookmark to hold a place. A position is not the same as an index, however.  
+ A variable of type POSITION is a key for the list. You can use a POSITION variable both as an iterator to traverse a list sequentially and as a bookmark to hold a place. A position is not the same as an index, however.  
   
- Element insertion is very fast at the list head, at the tail, and at a known **POSITION**. A sequential search is necessary to look up an element by value or index. This search can be slow if the list is long.  
+ Element insertion is very fast at the list head, at the tail, and at a known POSITION. A sequential search is necessary to look up an element by value or index. This search can be slow if the list is long.  
   
- `CObList` incorporates the `IMPLEMENT_SERIAL` macro to support serialization and dumping of its elements. If a list of `CObject` pointers is stored to an archive, either with an overloaded insertion operator or with the `Serialize` member function, each `CObject` element is serialized in turn.  
+ `CObList` incorporates the IMPLEMENT_SERIAL macro to support serialization and dumping of its elements. If a list of `CObject` pointers is stored to an archive, either with an overloaded insertion operator or with the `Serialize` member function, each `CObject` element is serialized in turn.  
   
  If you need a dump of individual `CObject` elements in the list, you must set the depth of the dump context to 1 or greater.  
   
@@ -88,17 +88,18 @@ class CObList : public CObject
   
 ```  
 POSITION AddHead(CObject* newElement);  
-void AddHead(CObList* pNewList);```  
+void AddHead(CObList* pNewList);
+```  
   
 ### Parameters  
- `newElement`  
+ *newElement*  
  The `CObject` pointer to be added to this list.  
   
- `pNewList`  
- A pointer to another `CObList` list. The elements in `pNewList` will be added to this list.  
+ *pNewList*  
+ A pointer to another `CObList` list. The elements in *pNewList* will be added to this list.  
   
 ### Return Value  
- The first version returns the **POSITION** value of the newly inserted element.  
+ The first version returns the POSITION value of the newly inserted element.  
   
  The following table shows other member functions that are similar to `CObList::AddHead`.  
   
@@ -128,17 +129,18 @@ void AddHead(CObList* pNewList);```
   
 ```  
 POSITION AddTail(CObject* newElement);  
-void AddTail(CObList* pNewList);```  
+void AddTail(CObList* pNewList);
+```  
   
 ### Parameters  
- `newElement`  
+ *newElement*  
  The `CObject` pointer to be added to this list.  
   
- `pNewList`  
- A pointer to another `CObList` list. The elements in `pNewList` will be added to this list.  
+ *pNewList*  
+ A pointer to another `CObList` list. The elements in *pNewList* will be added to this list.  
   
 ### Return Value  
- The first version returns the **POSITION** value of the newly inserted element.  
+ The first version returns the POSITION value of the newly inserted element.  
   
 ### Remarks  
  The list can be empty before the operation.  
@@ -171,11 +173,11 @@ CObList(INT_PTR nBlockSize = 10);
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The memory-allocation granularity for extending the list.  
   
 ### Remarks  
- As the list grows, memory is allocated in units of `nBlockSize` entries. If a memory allocation fails, a `CMemoryException` is thrown.  
+ As the list grows, memory is allocated in units of *nBlockSize* entries. If a memory allocation fails, a `CMemoryException` is thrown.  
   
  The following table shows other member functions that are similar to `CObList::CObList`.  
   
@@ -203,14 +205,14 @@ POSITION Find(
 ```  
   
 ### Parameters  
- `searchValue`  
+ *searchValue*  
  The object pointer to be found in this list.  
   
- `startAfter`  
+ *startAfter*  
  The start position for the search.  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the object is not found.  
+ A POSITION value that can be used for iteration or object pointer retrieval; NULL if the object is not found.  
   
 ### Remarks  
  Note that the pointer values are compared, not the contents of the objects.  
@@ -228,18 +230,18 @@ POSITION Find(
  [!code-cpp[NVC_MFCCollections#93](../../mfc/codesnippet/cpp/coblist-class_5.cpp)]  
   
 ##  <a name="findindex"></a>  CObList::FindIndex  
- Uses the value of `nIndex` as an index into the list.  
+ Uses the value of *nIndex* as an index into the list.  
   
 ```  
 POSITION FindIndex(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the list element to be found.  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if `nIndex` is too large. (The framework generates an assertion if `nIndex` is negative.)  
+ A POSITION value that can be used for iteration or object pointer retrieval; NULL if *nIndex* is too large. (The framework generates an assertion if *nIndex* is negative.)  
   
 ### Remarks  
  It starts a sequential scan from the head of the list, stopping on the *n*th element.  
@@ -257,7 +259,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
  [!code-cpp[NVC_MFCCollections#94](../../mfc/codesnippet/cpp/coblist-class_6.cpp)]  
   
 ##  <a name="getat"></a>  CObList::GetAt  
- A variable of type **POSITION** is a key for the list.  
+ A variable of type POSITION is a key for the list.  
   
 ```  
 CObject*& GetAt(POSITION position);  
@@ -266,15 +268,15 @@ const CObject*& GetAt(POSITION position) const;
   
 ### Parameters  
  *position*  
- A **POSITION** value returned by a previous `GetHeadPosition` or **Find** member function call.  
+ A POSITION value returned by a previous `GetHeadPosition` or `Find` member function call.  
   
 ### Return Value  
  See the return value description for [GetHead](#gethead).  
   
 ### Remarks  
- It is not the same as an index, and you cannot operate on a **POSITION** value yourself. `GetAt` retrieves the `CObject` pointer associated with a given position.  
+ It is not the same as an index, and you cannot operate on a POSITION value yourself. `GetAt` retrieves the `CObject` pointer associated with a given position.  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
  The following table shows other member functions that are similar to `CObList::GetAt`.  
   
@@ -317,7 +319,7 @@ const CObject*& GetHead() const;
 ```  
   
 ### Return Value  
- If the list is accessed through a pointer to a **const CObList**, then `GetHead` returns a `CObject` pointer. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
+ If the list is accessed through a pointer to a `const CObList`, then `GetHead` returns a `CObject` pointer. This allows the function to be used only on the right side of an assignment statement and thus protects the list from modification.  
   
  If the list is accessed directly or through a pointer to a `CObList`, then `GetHead` returns a reference to a `CObject` pointer. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
@@ -346,7 +348,7 @@ POSITION GetHeadPosition() const;
 ```  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the list is empty.  
+ A POSITION value that can be used for iteration or object pointer retrieval; NULL if the list is empty.  
   
  The following table shows other member functions that are similar to `CObList::GetHeadPosition`.  
   
@@ -361,7 +363,7 @@ POSITION GetHeadPosition() const;
  [!code-cpp[NVC_MFCCollections#97](../../mfc/codesnippet/cpp/coblist-class_9.cpp)]  
   
 ##  <a name="getnext"></a>  CObList::GetNext  
- Gets the list element identified by `rPosition`, then sets `rPosition` to the `POSITION` value of the next entry in the list.  
+ Gets the list element identified by *rPosition*, then sets *rPosition* to the `POSITION` value of the next entry in the list.  
   
 ```  
 CObject*& GetNext(POSITION& rPosition);  
@@ -369,8 +371,8 @@ const CObject* GetNext(POSITION& rPosition) const;
 ```  
   
 ### Parameters  
- `rPosition`  
- A reference to a `POSITION` value returned by a previous `GetNext`, `GetHeadPosition`, or other member function call.  
+ *rPosition*  
+ A reference to a POSITION value returned by a previous `GetNext`, `GetHeadPosition`, or other member function call.  
   
 ### Return Value  
  See the return value description for [GetHead](#gethead).  
@@ -378,9 +380,9 @@ const CObject* GetNext(POSITION& rPosition) const;
 ### Remarks  
  You can use `GetNext` in a forward iteration loop if you establish the initial position with a call to `GetHeadPosition` or `Find`.  
   
- You must ensure that your `POSITION` value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
- If the retrieved element is the last in the list, then the new value of `rPosition` is set to `NULL`.  
+ If the retrieved element is the last in the list, then the new value of *rPosition* is set to NULL.  
   
  It is possible to remove an element during an iteration. See the example for [RemoveAt](#removeat).  
   
@@ -406,7 +408,7 @@ const CObject* GetNext(POSITION& rPosition) const;
  `a CAge at $46C0 21`  
   
 ##  <a name="getprev"></a>  CObList::GetPrev  
- Gets the list element identified by `rPosition`, then sets `rPosition` to the `POSITION` value of the previous entry in the list.  
+ Gets the list element identified by *rPosition*, then sets *rPosition* to the POSITION value of the previous entry in the list.  
   
 ```  
 CObject*& GetPrev(POSITION& rPosition);  
@@ -414,8 +416,8 @@ const CObject* GetPrev(POSITION& rPosition) const;
 ```  
   
 ### Parameters  
- `rPosition`  
- A reference to a `POSITION` value returned by a previous `GetPrev` or other member function call.  
+ *rPosition*  
+ A reference to a POSITION value returned by a previous `GetPrev` or other member function call.  
   
 ### Return Value  
  See the return value description for [GetHead](#gethead).  
@@ -423,9 +425,9 @@ const CObject* GetPrev(POSITION& rPosition) const;
 ### Remarks  
  You can use `GetPrev` in a reverse iteration loop if you establish the initial position with a call to `GetTailPosition` or `Find`.  
   
- You must ensure that your `POSITION` value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
- If the retrieved element is the first in the list, then the new value of `rPosition` is set to `NULL`.  
+ If the retrieved element is the first in the list, then the new value of *rPosition* is set to NULL.  
   
 > [!NOTE]
 >  As of MFC 8.0 the const version of this method has changed to return `const CObject*` instead of `const CObject*&`.  This change was made to bring the compiler into conformance with the C++ standard.  
@@ -507,7 +509,7 @@ POSITION GetTailPosition() const;
 ```  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the list is empty.  
+ A POSITION value that can be used for iteration or object pointer retrieval; NULL if the list is empty.  
   
  The following table shows other member functions that are similar to `CObList::GetTailPosition`.  
   
@@ -532,9 +534,9 @@ POSITION InsertAfter(
   
 ### Parameters  
  *position*  
- A **POSITION** value returned by a previous `GetNext`, `GetPrev`, or **Find** member function call.  
+ A POSITION value returned by a previous `GetNext`, `GetPrev`, or `Find` member function call.  
   
- `newElement`  
+ *newElement*  
  The object pointer to be added to this list.  
   
  The following table shows other member functions that are similar to `CObList::InsertAfter`.  
@@ -545,7 +547,7 @@ POSITION InsertAfter(
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**POSITION InsertAfter( POSITION** *position* **, const CString&** `newElement` **);**<br /><br /> **POSITION InsertAfter( POSITION** *position* **, LPCTSTR** `newElement` **);**|  
   
 ### Return Value  
- A **POSITION** value which is the same as the *position* parameter.  
+ A POSITION value which is the same as the *position* parameter.  
   
 ### Example  
   See [CObList::CObList](#coblist) for a listing of the `CAge` class.  
@@ -573,13 +575,13 @@ POSITION InsertBefore(
   
 ### Parameters  
  *position*  
- A **POSITION** value returned by a previous `GetNext`, `GetPrev`, or **Find** member function call.  
+ A POSITION value returned by a previous `GetNext`, `GetPrev`, or `Find` member function call.  
   
- `newElement`  
+ *newElement*  
  The object pointer to be added to this list.  
   
 ### Return Value  
- A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the list is empty.  
+ A POSITION value that can be used for iteration or object pointer retrieval; NULL if the list is empty.  
   
  The following table shows other member functions that are similar to `CObList::InsertBefore`.  
   
@@ -661,7 +663,7 @@ void RemoveAt(POSITION position);
 ### Remarks  
  When you remove an element from a `CObList`, you remove the object pointer from the list. It is your responsibility to delete the objects themselves.  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
  The following table shows other member functions that are similar to `CObList::RemoveAt`.  
   
@@ -745,16 +747,16 @@ void SetAt(
 ```  
   
 ### Parameters  
- `pos`  
- The **POSITION** of the element to be set.  
+ *pos*  
+ The POSITION of the element to be set.  
   
- `newElement`  
+ *newElement*  
  The `CObject` pointer to be written to the list.  
   
 ### Remarks  
- A variable of type **POSITION** is a key for the list. It is not the same as an index, and you cannot operate on a **POSITION** value yourself. `SetAt` writes the `CObject` pointer to the specified position in the list.  
+ A variable of type POSITION is a key for the list. It is not the same as an index, and you cannot operate on a POSITION value yourself. `SetAt` writes the `CObject` pointer to the specified position in the list.  
   
- You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
+ You must ensure that your POSITION value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
  The following table shows other member functions that are similar to `CObList::SetAt`.  
   

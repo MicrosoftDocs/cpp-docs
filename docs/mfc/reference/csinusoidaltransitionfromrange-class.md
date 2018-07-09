@@ -68,7 +68,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  
@@ -87,19 +87,19 @@ CSinusoidalTransitionFromRange(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `dblMinimumValue`  
+ *dblMinimumValue*  
  The value of the animation variable at a trough of the sinusoidal wave.  
   
- `dblMaximumValue`  
+ *dblMaximumValue*  
  The value of the animation variable at a peak of the sinusoidal wave.  
   
- `period`  
+ *period*  
  The period of oscillation of the sinusoidal wave in seconds.  
   
- `slope`  
+ *slope*  
  The slope at the start of the transition.  
   
 ##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue  

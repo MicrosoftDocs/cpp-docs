@@ -68,7 +68,7 @@ void Attach(ID2D1PathGeometry* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry  
@@ -81,10 +81,10 @@ CD2DPathGeometry(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DPathGeometry::Create  
@@ -95,7 +95,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -163,7 +163,7 @@ BOOL Stream(ID2D1GeometrySink* geometrySink);
 ```  
   
 ### Parameters  
- `geometrySink`  
+ *geometrySink*  
  The sink to which the path geometry's contents are copied. Modifying this sink does not change the contents of this path geometry.  
   
 ### Return Value  

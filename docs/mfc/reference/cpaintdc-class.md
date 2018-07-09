@@ -39,7 +39,7 @@ class CPaintDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPaintDC::m_hWnd](#m_hwnd)|The `HWND` to which this `CPaintDC` object is attached.|  
+|[CPaintDC::m_hWnd](#m_hwnd)|The HWND to which this `CPaintDC` object is attached.|  
   
 ## Remarks  
  It performs a [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) at construction time and [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) at destruction time.  
@@ -66,7 +66,7 @@ explicit CPaintDC(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the `CWnd` object to which the `CPaintDC` object belongs.  
   
 ### Remarks  
@@ -83,7 +83,7 @@ HWND m_hWnd;
 ```  
   
 ### Remarks  
- `m_hWnd` is a protected variable of type `HWND`.  
+ *m_hWnd* is a protected variable of type HWND.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  
@@ -100,7 +100,7 @@ PAINTSTRUCT m_ps;
   
  The `PAINTSTRUCT` contains information that the application uses to paint the client area of the window associated with a `CPaintDC` object.  
   
- Note that you can access the device-context handle through the `PAINTSTRUCT`. However, you can access the handle more directly through the `m_hDC` member variable that `CPaintDC` inherits from `CDC`.  
+ Note that you can access the device-context handle through the `PAINTSTRUCT`. However, you can access the handle more directly through the `m_hDC` member variable that `CPaintDC` inherits from CDC.  
   
 ### Example  
   See the example for [CPaintDC::m_hWnd](#m_hwnd).  

@@ -79,8 +79,8 @@ COleDocObjectItem(COleDocument* pContainerDoc = NULL);
 ```  
   
 ### Parameters  
- `pContainerDoc`  
- A pointer to the `COleDocument` object acting as the active document container. This parameter must be **NULL** to enable **IMPLEMENT_SERIALIZE**. Normally OLE items are constructed with a non- **NULL** document pointer.  
+ *pContainerDoc*  
+ A pointer to the `COleDocument` object acting as the active document container. This parameter must be NULL to enable IMPLEMENT_SERIALIZE. Normally OLE items are constructed with a non- NULL document pointer.  
   
 ##  <a name="dodefaultprinting"></a>  COleDocObjectItem::DoDefaultPrinting  
  Called by the framework to a document using the default settings.  
@@ -92,10 +92,10 @@ static HRESULT DoDefaultPrinting(
 ```  
   
 ### Parameters  
- `pCaller`  
+ *pCaller*  
  A pointer to a [CView](../../mfc/reference/cview-class.md) object that is sending the print command.  
   
- `pInfo`  
+ *pInfo*  
  A pointer to a [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) object that describes the job to be printed.  
   
 ##  <a name="execcommand"></a>  COleDocObjectItem::ExecCommand  
@@ -109,31 +109,31 @@ HRESULT ExecCommand(
 ```  
   
 ### Parameters  
- `nCmdID`  
- The identifier of the command to execute. Must be in the group identified by `pguidCmdGroup`.  
+ *nCmdID*  
+ The identifier of the command to execute. Must be in the group identified by *pguidCmdGroup*.  
   
- `nCmdExecOpt`  
+ *nCmdExecOpt*  
  Specifies command-execution options. By default, set to execute the command without prompting the user. See [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) for a list of values.  
   
- `pguidCmdGroup`  
- Unique identifier of the command group. By default, **NULL**, which specifies the standard group. The command passed in `nCmdID` must belong to the group.  
+ *pguidCmdGroup*  
+ Unique identifier of the command group. By default, NULL, which specifies the standard group. The command passed in *nCmdID* must belong to the group.  
   
 ### Return Value  
- Returns `S_OK` if successful; otherwise,returns one of the following error codes.  
+ Returns S_OK if successful; otherwise,returns one of the following error codes.  
   
 |Value|Description|  
 |-----------|-----------------|  
-|**E_UNEXPECTED**|Unexpected error occurred.|  
-|**E_FAIL**|Error occurred.|  
-|**E_NOTIMPL**|Indicates MFC itself should attempt to translate and dispatch the command.|  
-|**OLECMDERR_E_UNKNOWNGROUP**|`pguidCmdGroup` is non- **NULL** but does not specify a recognized command group.|  
-|**OLECMDERR_E_NOTSUPPORTED**|`nCmdID` is not recognized as a valid command in the group pGroup.|  
-|**OLECMDERR_DISABLED**|The command identified by `nCmdID` is disabled and cannot be executed.|  
-|**OLECMDERR_NOHELP**|Caller asked for help on the command identified by `nCmdID` but no help is available.|  
-|**OLECMDERR_CANCELLED**|User canceled the execution.|  
+|E_UNEXPECTED|Unexpected error occurred.|  
+|E_FAIL|Error occurred.|  
+|E_NOTIMPL|Indicates MFC itself should attempt to translate and dispatch the command.|  
+|OLECMDERR_E_UNKNOWNGROUP|*pguidCmdGroup* is non- NULL but does not specify a recognized command group.|  
+|OLECMDERR_E_NOTSUPPORTED|*nCmdID* is not recognized as a valid command in the group pGroup.|  
+|OLECMDERR_DISABLED|The command identified by *nCmdID* is disabled and cannot be executed.|  
+|OLECMDERR_NOHELP|Caller asked for help on the command identified by *nCmdID* but no help is available.|  
+|OLECMDERR_CANCELLED|User canceled the execution.|  
   
 ### Remarks  
- The `pguidCmdGroup` and the `nCmdID` parameters together uniquely identify the command to invoke. The `nCmdExecOpt` parameter specifies the exact action to take.  
+ The *pguidCmdGroup* and the *nCmdID* parameters together uniquely identify the command to invoke. The *nCmdExecOpt* parameter specifies the exact action to take.  
   
 ##  <a name="getactiveview"></a>  COleDocObjectItem::GetActiveView  
  Call this member function to get a pointer to the `IOleDocumentView` interface of the currently active view.  
@@ -143,7 +143,7 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 ```  
   
 ### Return Value  
- A pointer to the [IOleDocumentView](http://msdn.microsoft.com/library/windows/desktop/ms678455) interface of the currently active view. If there is no current view, it returns **NULL**.  
+ A pointer to the [IOleDocumentView](http://msdn.microsoft.com/library/windows/desktop/ms678455) interface of the currently active view. If there is no current view, it returns NULL.  
   
 ### Remarks  
  The reference count on the returned `IOleDocumentView` pointer is not incremented before it is returned by this function.  
@@ -159,10 +159,10 @@ BOOL GetPageCount(
   
 ### Parameters  
  *pnFirstPage*  
- A pointer to the number of the document's first page. Can be **NULL**, which indicates the caller doesn't need this number.  
+ A pointer to the number of the document's first page. Can be NULL, which indicates the caller doesn't need this number.  
   
  *pcPages*  
- A pointer to the total number of pages in the document. Can be **NULL**, which indicates the caller doesn't need this number.  
+ A pointer to the total number of pages in the document. Can be NULL, which indicates the caller doesn't need this number.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -178,13 +178,13 @@ static BOOL OnPreparePrinting(
 ```  
   
 ### Parameters  
- `pCaller`  
+ *pCaller*  
  A pointer to a [CView](../../mfc/reference/cview-class.md) object that is sending the print command.  
   
- `pInfo`  
+ *pInfo*  
  A pointer to a [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) object that describes the job to be printed.  
   
- `bPrintAll`  
+ *bPrintAll*  
  Specifies whether the entire document is to be printed.  
   
 ### Return Value  
@@ -201,13 +201,13 @@ static void OnPrint(
 ```  
   
 ### Parameters  
- `pCaller`  
+ *pCaller*  
  A pointer to a CView object that is sending the print command.  
   
- `pInfo`  
+ *pInfo*  
  A pointer to a [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) object that describes the job to be printed.  
   
- `bPrintAll`  
+ *bPrintAll*  
  Specifies whether the entire document is to be printed.  
   
 ##  <a name="querycommand"></a>  COleDocObjectItem::QueryCommand  
@@ -222,17 +222,17 @@ HRESULT QueryCommand(
 ```  
   
 ### Parameters  
- `nCmdID`  
+ *nCmdID*  
  identifier of the command being queried for.  
   
- `pdwStatus`  
+ *pdwStatus*  
  A pointer to the flags returned as a result of the query. For a list of possible values, see [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237).  
   
- `pCmdText`  
- Pointer to an [OLECMDTEXT](http://msdn.microsoft.com/library/windows/desktop/ms693314) structure in which to return name and status information for a single command. Can be **NULL** to indicate that the caller does not need this information.  
+ *pCmdText*  
+ Pointer to an [OLECMDTEXT](http://msdn.microsoft.com/library/windows/desktop/ms693314) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.  
   
- `pguidCmdGroup`  
- Unique identifier of the command group; can be **NULL** to specify the standard group.  
+ *pguidCmdGroup*  
+ Unique identifier of the command group; can be NULL to specify the standard group.  
   
 ### Return Value  
  For a complete listing of return values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the Windows SDK.  
@@ -248,7 +248,7 @@ virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
 ```  
   
 ### Parameters  
- `dwCloseOption`  
+ *dwCloseOption*  
  Flag specifying under what circumstances the OLE item is saved when it returns to the loaded state. For a list of possible values, see [COleClientItem::Close](../../mfc/reference/coleclientitem-class.md#close).  
   
 ### Remarks  

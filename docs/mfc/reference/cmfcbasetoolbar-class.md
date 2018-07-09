@@ -73,7 +73,7 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [out] `size`  
+ [out] *size*  
  The minimum size of a toolbar.  
   
 ##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
@@ -84,7 +84,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### Parameters  
- [in] `pWndOldParent`  
+ [in] *pWndOldParent*  
  A pointer to the previous parent window.  
   
 ## See Also  

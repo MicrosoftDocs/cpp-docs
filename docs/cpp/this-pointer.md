@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # this Pointer
-The **this** pointer is a pointer accessible only within the nonstatic member functions of a **class**, `struct`, or **union** type. It points to the object for which the member function is called. Static member functions do not have a **this** pointer.  
+The **this** pointer is a pointer accessible only within the nonstatic member functions of a **class**, **struct**, or **union** type. It points to the object for which the member function is called. Static member functions do not have a **this** pointer.  
   
 ## Syntax  
   
@@ -24,7 +24,7 @@ this->member-identifier
 ```  
   
 ## Remarks  
- An object's **this** pointer is not part of the object itself; it is not reflected in the result of a `sizeof` statement on the object. Instead, when a nonstatic member function is called for an object, the address of the object is passed by the compiler as a hidden argument to the function. For example, the following function call:  
+ An object's **this** pointer is not part of the object itself; it is not reflected in the result of a **sizeof** statement on the object. Instead, when a nonstatic member function is called for an object, the address of the object is passed by the compiler as a hidden argument to the function. For example, the following function call:  
   
 ```cpp 
 myDate.setMonth( 3 );  
@@ -136,7 +136,7 @@ your buffer
 ```  
   
 ## Type of the this pointer  
- The **this** pointer's type can be modified in the function declaration by the **const** and `volatile` keywords. To declare a function as having the attributes of one or more of these keywords, add the keyword(s) after the function argument list.  
+ The **this** pointer's type can be modified in the function declaration by the **const** and **volatile** keywords. To declare a function as having the attributes of one or more of these keywords, add the keyword(s) after the function argument list.  
   
  Consider this example:  
   
@@ -168,7 +168,7 @@ int main()
   
  *[cv-qualifier-list] class-type*  **\* const this**  
   
- In other words, **this** is always a const pointer; it cannot be reassigned.  The **const** or `volatile` qualifiers used in the member function declaration apply to the class instance pointed to by **this** in the scope of that function.  
+ In other words, **this** is always a const pointer; it cannot be reassigned.  The **const** or **volatile** qualifiers used in the member function declaration apply to the class instance pointed to by **this** in the scope of that function.  
   
  The following table explains more about how these modifiers work.  
   
@@ -177,14 +177,14 @@ int main()
 |Modifier|Meaning|  
 |--------------|-------------|  
 |**const**|Cannot change member data; cannot invoke member functions that are not **const**.|  
-|`volatile`|Member data is loaded from memory each time it is accessed; disables certain optimizations.|  
+|**volatile**|Member data is loaded from memory each time it is accessed; disables certain optimizations.|  
   
- It is an error to pass a **const** object to a member function that is not **const**. Similarly, it is an error to pass a `volatile` object to a member function that is not `volatile`.  
+ It is an error to pass a **const** object to a member function that is not **const**. Similarly, it is an error to pass a **volatile** object to a member function that is not **volatile**.  
   
  Member functions declared as **const** cannot change member data — in such functions, the **this** pointer is a pointer to a **const** object.  
   
 > [!NOTE]
->  Constructors and destructors cannot be declared as **const** or `volatile`. They can, however, be invoked on **const** or `volatile` objects.  
+>  Constructors and destructors cannot be declared as **const** or **volatile**. They can, however, be invoked on **const** or **volatile** objects.  
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

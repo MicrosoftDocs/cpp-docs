@@ -69,7 +69,7 @@ Insert "Search Results" summary here.
   
      If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](http://msdn.microsoft.com/library/windows/desktop/ms692621) in the Windows SDK for more information.  
   
-     Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be **VARIANT** compatible.  
+     Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be VARIANT compatible.  
   
  **Support**  
  Sets additional miscellaneous support for the control.  

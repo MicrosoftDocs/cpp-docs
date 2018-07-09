@@ -23,7 +23,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class derived from `CAtlDllModuleT`.  
   
 ## Members  
@@ -98,14 +98,14 @@ HRESULT DllGetClassObject(
 ```  
   
 ### Parameters  
- `rclsid`  
+ *rclsid*  
  The CLSID of the object to be created.  
   
- `riid`  
+ *riid*  
  The IID of the requested interface.  
   
- `ppv`  
- A pointer to the interface pointer identified by `riid`. If the object does not support this interface, `ppv` is set to NULL.  
+ *ppv*  
+ A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -118,7 +118,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 ```  
   
 ### Parameters  
- `dwReason`  
+ *dwReason*  
  If set to DLL_PROCESS_ATTACH, the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notification calls are disabled.  
   
  *lpReserved*  
@@ -138,7 +138,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 ```  
   
 ### Parameters  
- `bRegTypeLib`  
+ *bRegTypeLib*  
  TRUE if the type library is to be registered. The default value is TRUE.  
   
 ### Return Value  
@@ -152,7 +152,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 ```  
   
 ### Parameters  
- `bUnRegTypeLib`  
+ *bUnRegTypeLib*  
  TRUE if the type library is to be removed from the registry. The default value is TRUE.  
   
 ### Return Value  
@@ -169,14 +169,14 @@ HRESULT GetClassObject(
 ```  
   
 ### Parameters  
- `rclsid`  
+ *rclsid*  
  The CLSID of the object to be created.  
   
- `riid`  
+ *riid*  
  The IID of the requested interface.  
   
- `ppv`  
- A pointer to the interface pointer identified by `riid`. If the object does not support this interface, `ppv` is set to NULL.  
+ *ppv*  
+ A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppv* is set to NULL.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

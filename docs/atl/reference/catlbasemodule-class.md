@@ -67,7 +67,7 @@ bool AddResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### Parameters  
- `hInst`  
+ *hInst*  
  The resource instance to add.  
   
 ### Return Value  
@@ -135,7 +135,7 @@ bool RemoveResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### Parameters  
- `hInst`  
+ *hInst*  
  The resource instance to remove.  
   
 ### Return Value  
@@ -149,7 +149,7 @@ HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### Parameters  
- `hInst`  
+ *hInst*  
  The new resource instance.  
   
 ### Return Value  

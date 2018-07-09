@@ -47,20 +47,20 @@ inline bool AtlGetDacl(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object for which to retrieve the security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `pDacl`  
+ *pDacl*  
  Pointer to a DACL object which will contain the retrieved security information.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- In debug builds, an assertion error will occur if either `hObject` or `pDacl` is invalid.  
+ In debug builds, an assertion error will occur if either *hObject* or *pDacl* is invalid.  
   
 ##  <a name="atlsetdacl"></a>  AtlSetDacl  
  Call this function to set the discretionary access-control list (DACL) information of a specified object.  
@@ -77,23 +77,23 @@ inline bool AtlSetDacl(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object for which to set security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `rDacl`  
+ *rDacl*  
  The DACL containing the new security information.  
   
- `dwInheritanceFlowControl`  
+ *dwInheritanceFlowControl*  
  The inheritance flow control. This value can be 0 (the default), PROTECTED_DACL_SECURITY_INFORMATION or UNPROTECTED_DACL_SECURITY_INFORMATION.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- In debug builds, an assertion error will occur if `hObject` is invalid, or if `dwInheritanceFlowControl` is not one of the three permitted values.  
+ In debug builds, an assertion error will occur if *hObject* is invalid, or if *dwInheritanceFlowControl* is not one of the three permitted values.  
 ### Requirements  
  **Header:** atlsecurity.h 
 
@@ -111,13 +111,13 @@ inline bool AtlGetGroupSid(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object from which to retrieve security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `pSid`  
+ *pSid*  
  Pointer to a `CSid` object which will contain the new security information.  
   
 ### Return Value  
@@ -140,13 +140,13 @@ inline bool AtlSetGroupSid(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object for which to set security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `rSid`  
+ *rSid*  
  The `CSid` object containing the new security information.  
   
 ### Return Value  
@@ -169,13 +169,13 @@ inline bool AtlGetOwnerSid(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object from which to retrieve security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `pSid`  
+ *pSid*  
  Pointer to a `CSid` object which will contain the new security information.  
   
 ### Return Value  
@@ -198,13 +198,13 @@ inline bool AtlSetOwnerSid(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object for which to set security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `rSid`  
+ *rSid*  
  The `CSid` object containing the new security information.  
   
 ### Return Value  
@@ -228,23 +228,23 @@ inline bool AtlGetSacl(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object from which to retrieve the security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
- `pSacl`  
+ *pSacl*  
  Pointer to a SACL object which will contain the retrieved security information.  
   
- `bRequestNeededPrivileges`  
+ *bRequestNeededPrivileges*  
  If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- If `AtlGetSacl` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with `bRequestNeededPrivileges` set to false.  
+ If `AtlGetSacl` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with *bRequestNeededPrivileges* set to false.  
 
 ### Requirements  
  **Header:** atlsecurity.h 
@@ -265,28 +265,28 @@ inline bool AtlSetSacl(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  Handle to the object for which to set security information.  
   
- `ObjectType`  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the `hObject` parameter.  
+ *ObjectType*  
+ Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *rSacl*  
  The SACL containing the new security information.  
   
- `dwInheritanceFlowControl`  
+ *dwInheritanceFlowControl*  
  The inheritance flow control. This value can be 0 (the default), PROTECTED_SACL_SECURITY_INFORMATION or UNPROTECTED_SACL_SECURITY_INFORMATION.  
   
- `bRequestNeededPrivileges`  
+ *bRequestNeededPrivileges*  
  If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- In debug builds, an assertion error will occur if `hObject` is invalid, or if `dwInheritanceFlowControl` is not one of the three permitted values.  
+ In debug builds, an assertion error will occur if *hObject* is invalid, or if *dwInheritanceFlowControl* is not one of the three permitted values.  
   
- If `AtlSetSacl` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with `bRequestNeededPrivileges` set to false.  
+ If `AtlSetSacl` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with *bRequestNeededPrivileges* set to false.  
 
 ### Requirements  
  **Header:** atlsecurity.h 
@@ -312,7 +312,7 @@ inline bool AtlGetSecurityDescriptor(
  *pszObjectName*  
  Pointer to a null-terminated string that specifies the name of the object from which to retrieve security information.  
   
- `ObjectType`  
+ *ObjectType*  
  Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *pszObjectName* parameter.  
   
  *pSecurityDescriptor*  
@@ -321,14 +321,14 @@ inline bool AtlGetSecurityDescriptor(
  *requestedInfo*  
  A set of [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags that indicate the type of security information to retrieve. This parameter can be a combination of the following values.  
   
- `bRequestNeededPrivileges`  
+ *bRequestNeededPrivileges*  
  If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- If `AtlGetSecurityDescriptor` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with `bRequestNeededPrivileges` set to false.  
+ If `AtlGetSecurityDescriptor` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with *bRequestNeededPrivileges* set to false.  
 
 ### Requirements  
  **Header:** atlsecurity.h 

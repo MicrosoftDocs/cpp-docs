@@ -13,8 +13,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # if-else Statement (C++)
-Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or `true`). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
-- `true`
+Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or TRUE). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
+- TRUE
 - a non-null pointer,
 - any non-zero arithmetic value, or 
 - a class type that defines an unambiguous conversion to an arithmetic, boolean or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)   
@@ -173,7 +173,6 @@ void f(T&& t, Rest&&... r)
    // handle r conditionally
    if constexpr (sizeof...(r)) 
    {
-      
       f(r...); 
    }
    else

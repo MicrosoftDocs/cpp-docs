@@ -67,7 +67,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 |[CMFCRibbonGallery::SetIconsInRow](#seticonsinrow)|Defines the number of items per row in the gallery.|  
 |[CMFCRibbonGallery::SetItemToolTip](#setitemtooltip)|Sets the tooltip text for an item in the gallery.|  
 |[CMFCRibbonGallery::SetPalette](#setpalette)|Attaches a palette to a ribbon gallery.|  
-|[CMFCRibbonGallery::SetPaletteID](#setpaletteid)|Defines the command ID that is sent in the `WM_COMMAND` message when a gallery item has been selected.|  
+|[CMFCRibbonGallery::SetPaletteID](#setpaletteid)|Defines the command ID that is sent in the WM_COMMAND message when a gallery item has been selected.|  
   
 ### Protected Methods  
   
@@ -76,7 +76,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 |[CMFCRibbonGallery::OnDrawPaletteIcon](#ondrawpaletteicon)|Called by the framework when a gallery icon is drawn.|  
   
 ## Remarks  
- A gallery button behaves just like a regular menu button except that it displays a gallery when a user opens it. When you select an item in a gallery, the framework sends the `WM_COMMAND` message together with command ID of the button. When you handle the message, you should call [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) to determine which item was selected from the gallery.  
+ A gallery button behaves just like a regular menu button except that it displays a gallery when a user opens it. When you select an item in a gallery, the framework sends the WM_COMMAND message together with command ID of the button. When you handle the message, you should call [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) to determine which item was selected from the gallery.  
   
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCRibbonGallery` class to configure a `CMFCRibbonGallery` object. The example illustrates how to specify the number of items per row in the gallery, enable resizing of the menu panel, enable the side bar to the left of the pop-up menu, and display the ribbon gallery as a palette directly on the ribbon bar. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
@@ -112,19 +112,19 @@ void AddGroup(
 ```  
   
 ### Parameters  
- [in] `lpszGroupName`  
+ [in] *lpszGroupName*  
  Specifies the name of the group.  
   
- [in] `uiImagesPaletteResID`  
+ [in] *uiImagesPaletteResID*  
  Specifies the resource ID of the image list that contains the images for the group.  
   
- [in] `cxPaletteImage`  
+ [in] *cxPaletteImage*  
  Specifies the width in pixels of an image.  
   
- [in] `imagesGroup`  
+ [in] *imagesGroup*  
  A reference to image list that contains group images.  
   
- [in] `nIconsNum`  
+ [in] *nIconsNum*  
  Specifies the number of icons in the group. This parameter should be specified only for custom (owner drawn) groups.  
   
 ### Remarks  
@@ -141,22 +141,22 @@ void AddSubItem(
 ```  
   
 ### Parameters  
- [in] `pSubItem`  
+ [in] *pSubItem*  
  A pointer to the item to add to the menu.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Specifies the zero-based index of a location where to insert the item.  
   
- [in] `bOnTop`  
- `TRUE` to specify that the item should be inserted before the ribbon gallery; otherwise, `FALSE`.  
+ [in] *bOnTop*  
+ TRUE to specify that the item should be inserted before the ribbon gallery; otherwise, FALSE.  
   
 ### Remarks  
  You can combine popup galleries with popup menu items by calling this method. Menu items can be placed before or after the gallery.  
   
- To insert the item before the gallery, set `bOnTop` to `TRUE`. Set `bOnTop` to `FALSE` to insert the item below the gallery.  
+ To insert the item before the gallery, set *bOnTop* to TRUE. Set *bOnTop* to FALSE to insert the item below the gallery.  
   
 > [!NOTE]
->  The parameter `nIndex` specifies the insertion index both at the top of the gallery and at the bottom of the gallery. For example, if you need to insert an item one position before the gallery, set `nIndex` to 1 and `bOnTop` to `TRUE`. Similarly, if you need to insert an item one position below the gallery, set `nIndex` to 1 and `bOnTop` to `FALSE`.  
+>  The parameter *nIndex* specifies the insertion index both at the top of the gallery and at the bottom of the gallery. For example, if you need to insert an item one position before the gallery, set *nIndex* to 1 and *bOnTop* to TRUE. Similarly, if you need to insert an item one position below the gallery, set *nIndex* to 1 and *bOnTop* to FALSE.  
   
 ##  <a name="clear"></a>  CMFCRibbonGallery::Clear  
  Clears the content of the gallery.  
@@ -200,34 +200,34 @@ CMFCRibbonGallery (
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Specifies the command ID of the command to execute when a user clicks the button.  
   
- `lpszText`  
+ *lpszText*  
  Specifies the text to appear on the button.  
   
- `nSmallImageIndex`  
+ *nSmallImageIndex*  
  The zero-based index of the small image to appear on the button.  
   
- `nLargeImageIndex`  
+ *nLargeImageIndex*  
  The zero-based index of the large image to appear on the button.  
   
- `imagesPalette`  
+ *imagesPalette*  
  A reference to the [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) object that contains the images to appear on the gallery.  
   
- `uiImagesPaletteResID`  
+ *uiImagesPaletteResID*  
  The resource ID of the list of images to display on the gallery.  
   
- `cxPaletteImage`  
+ *cxPaletteImage*  
  Specifies the width, in pixels, of the image on the gallery.  
   
- `sizeIcon`  
+ *sizeIcon*  
  Specifies the size, in pixels, of the gallery image.  
   
- `nIconsNum`  
+ *nIconsNum*  
  Specifies the number of icons in the gallery.  
   
- `bDefaultButtonStyle`  
+ *bDefaultButtonStyle*  
  Specifies whether to use the default or the owner-drawn button style.  
   
 ### Remarks  
@@ -242,11 +242,11 @@ void EnableMenuResize(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable resizing the menu; otherwise, `FALSE`.  
+ [in] *bEnable*  
+ TRUE to enable resizing the menu; otherwise, FALSE.  
   
- [in] `bVertcalOnly`  
- `TRUE` to specify that the gallery can be resized only vertically; `FALSE` to specify that the gallery can be resized both vertically and horizontally.  
+ [in] *bVertcalOnly*  
+ TRUE to specify that the gallery can be resized only vertically; FALSE to specify that the gallery can be resized both vertically and horizontally.  
   
 ### Remarks  
  Use this method to enable or disable resizing the ribbon gallery. When resizing is enabled, the ribbon gallery displays a gripper that a user can use to resize it.  
@@ -259,8 +259,8 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to specify that the side bar is enabled; otherwise, `FALSE`.  
+ [in] *bEnable*  
+ TRUE to specify that the side bar is enabled; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to enable or disable the Office XP-style side bar at the left side of the menu.  
@@ -273,7 +273,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -298,7 +298,7 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 ```  
   
 ### Parameters  
- [in] `nGroupIndex`  
+ [in] *nGroupIndex*  
  Specifies the zero-based index for the group whose name you want to retrieve.  
   
 ### Return Value  
@@ -337,11 +337,11 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
 ```  
   
 ### Parameters  
- [in] `nItemIndex`  
+ [in] *nItemIndex*  
  Specifies the zero-based index of the item for which to retrieve the tooltip text.  
   
 ### Return Value  
- A pointer to the tooltip string assigned to an item in the ribbon gallery. It can be `NULL` if no tooltip is assigned to that item.  
+ A pointer to the tooltip string assigned to an item in the ribbon gallery. It can be NULL if no tooltip is assigned to that item.  
   
 ### Remarks  
   
@@ -353,11 +353,11 @@ static int GetLastSelectedItem(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Specifies the command ID of the menu item that opened the ribbon gallery.  
   
 ### Return Value  
- When the user selects any item in the ribbon gallery, the library sends the `WM_COMMAND` message along with Command ID of the menu button that opened the ribbon gallery.  
+ When the user selects any item in the ribbon gallery, the library sends the WM_COMMAND message along with Command ID of the menu button that opened the ribbon gallery.  
   
 ### Remarks  
   
@@ -381,7 +381,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -417,7 +417,7 @@ BOOL IsButtonMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the palette is displayed as a drop-down menu button; `FALSE` if the palette is displayed directly on the ribbon.  
+ TRUE if the palette is displayed as a drop-down menu button; FALSE if the palette is displayed directly on the ribbon.  
   
 ### Remarks  
   
@@ -429,7 +429,7 @@ BOOL IsMenuResizeEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if menu resizing has been enabled; otherwise, `FALSE`.  
+ TRUE if menu resizing has been enabled; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -452,7 +452,7 @@ BOOL IsMenuSideBar() const;
 ```  
   
 ### Return Value  
- `TRUE` if the Office XP-style side bar is drawn at the left side of the popup menu; otherwise, `FALSE`.  
+ TRUE if the Office XP-style side bar is drawn at the left side of the popup menu; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -464,7 +464,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -476,7 +476,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -493,19 +493,19 @@ virtual void OnDrawPaletteIcon(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context that is used for drawing.  
   
- [in] `rectIcon`  
+ [in] *rectIcon*  
  Specifies the bounding rectangle of the icon to draw.  
   
- [in] `nIconIndex`  
+ [in] *nIconIndex*  
  Specifies the zero-based index in the image list of gallery icons of the icon to draw.  
   
- [in] `pIcon`  
+ [in] *pIcon*  
  A pointer to the icon being drawn.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Specifies the color for the text of the item to draw.  
   
 ### Remarks  
@@ -519,7 +519,7 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
   
 ### Remarks  
   
@@ -531,7 +531,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] `bIsRTL`  
+ [in] *bIsRTL*  
   
 ### Remarks  
   
@@ -562,7 +562,7 @@ void SelectItem(int nItemIndex);
 ```  
   
 ### Parameters  
- [in] `nItemIndex`  
+ [in] *nItemIndex*  
   
 ### Remarks  
   
@@ -576,16 +576,16 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  The parent window of the ribbon gallery window.  
   
- [out] `data`  
+ [out] *data*  
  A `CAccessibilityData` object that receives the accessibility data from the ribbon gallery.  
   
 ### Return Value  
   
 ### Remarks  
- `TRUE` if the method is successful; otherwise, `FALSE`.  
+ TRUE if the method is successful; otherwise, FALSE.  
   
 ##  <a name="setbuttonmode"></a>  CMFCRibbonGallery::SetButtonMode  
  Determines whether to display the ribbon gallery as a drop-down button or as a palette directly on the ribbon.  
@@ -595,8 +595,8 @@ void SetButtonMode(BOOL bSet=TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- `TRUE` to display the ribbon gallery as a drop-down menu button; `FALSE` to display the contents of the ribbon gallery directly on the ribbon.  
+ [in] *bSet*  
+ TRUE to display the ribbon gallery as a drop-down menu button; FALSE to display the contents of the ribbon gallery directly on the ribbon.  
   
 ### Remarks  
   
@@ -610,10 +610,10 @@ void SetGroupName(
 ```  
   
 ### Parameters  
- [in] `nGroupIndex`  
+ [in] *nGroupIndex*  
  Specifies the zero-based index for the group for which the name is being changed.  
   
- [in] `lpszGroupName`  
+ [in] *lpszGroupName*  
  Specifies the new name for the group.  
   
 ### Remarks  
@@ -627,7 +627,7 @@ void SetIconsInRow(int nIconsInRow);
 ```  
   
 ### Parameters  
- [in] `nIconsInRow`  
+ [in] *nIconsInRow*  
  Specifies the number of items to appear in each row of the gallery.  
   
 ### Remarks  
@@ -643,10 +643,10 @@ void SetItemToolTip(
 ```  
   
 ### Parameters  
- [in] `nItemIndex`  
+ [in] *nItemIndex*  
  The zero-based index of the palette item with which to associate the tooltip.  
   
- [in] `lpszToolTip`  
+ [in] *lpszToolTip*  
  The text to appear on the tooltip.  
   
 ### Remarks  
@@ -664,27 +664,27 @@ void SetPalette(
 ```  
   
 ### Parameters  
- [in] `imagesPalette`  
+ [in] *imagesPalette*  
  Specifies the image list that contains the icons to appear on the gallery.  
   
- [in] `uiImagesPaletteResID`  
+ [in] *uiImagesPaletteResID*  
  Specifies the resource ID of the image list that contains the icons to appear on the gallery.  
   
- [in] `cxPaletteImage`  
+ [in] *cxPaletteImage*  
  Specifies the width, in pixels, of an image on the gallery.  
   
 ### Remarks  
   
 ##  <a name="setpaletteid"></a>  CMFCRibbonGallery::SetPaletteID  
- Defines the command ID that is sent in the **WM_COMMAND** message when a user selects a gallery item.  
+ Defines the command ID that is sent in the WM_COMMAND message when a user selects a gallery item.  
   
 ```  
 void SetPaletteID(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
- Specifies the command ID that is sent in the **WM_COMMAND** message when a user selects a gallery item.  
+ [in] *nID*  
+ Specifies the command ID that is sent in the WM_COMMAND message when a user selects a gallery item.  
   
 ### Remarks  
  To determine the specific item that a user selected from the gallery, call the [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) static method.  

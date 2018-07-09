@@ -23,7 +23,7 @@ class CStringElementTraitsI : public CElementTraitsBase<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  
@@ -64,10 +64,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
 ```  
   
 ### Parameters  
- `str1`  
+ *str1*  
  The first string element.  
   
- `str2`  
+ *str2*  
  The second string element.  
   
 ### Return Value  
@@ -84,14 +84,14 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 ```  
   
 ### Parameters  
- `str1`  
+ *str1*  
  The first string element.  
   
- `str2`  
+ *str2*  
  The second string element.  
   
 ### Return Value  
- Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
+ Zero if the strings are identical, < 0 if *str1* is less than *str2*, or > 0 if *str1* is greater than *str2*. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
 
   
 ### Remarks  
@@ -105,7 +105,7 @@ static ULONG Hash(INARGTYPE str) throw();
 ```  
   
 ### Parameters  
- `str`  
+ *str*  
  The string element.  
   
 ### Return Value  

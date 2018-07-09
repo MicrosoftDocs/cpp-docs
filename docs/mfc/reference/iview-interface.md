@@ -48,7 +48,7 @@ Called by MFC when a view is activated or deactivated.
 void OnActivateView(bool activate);
 ```
 ## Parameters
-`activate`  
+*activate*  
 Indicates whether the view is being activated or deactivated.  
 
 ## <a name="oninitialupdate"></a> IView::OnInitialUpdate

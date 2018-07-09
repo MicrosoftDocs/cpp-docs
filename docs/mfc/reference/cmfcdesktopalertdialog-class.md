@@ -71,8 +71,8 @@ BOOL CreateFromParams(
 ```  
   
 ### Parameters  
- [in] `params`  
- [in] `pParent`  
+ [in] *params*  
+ [in] *pParent*  
   
 ### Return Value  
   
@@ -108,7 +108,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] `pMsg`  
+ [in] *pMsg*  
   
 ### Return Value  
   

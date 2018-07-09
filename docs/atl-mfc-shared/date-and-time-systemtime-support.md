@@ -25,7 +25,7 @@ The [CTime](../atl-mfc-shared/reference/ctime-class.md) class has constructors t
   
 -   CTime(const FILETIME& `fileTime`);  
   
- The `fileTime` parameter is a reference to a Win32 `FILETIME` structure, which represents time as a 64-bit value, a more convenient format for internal storage than a `SYSTEMTIME` structure and the format used by Win32 to represent the time of file creation.  
+ The *fileTime* parameter is a reference to a Win32 `FILETIME` structure, which represents time as a 64-bit value, a more convenient format for internal storage than a `SYSTEMTIME` structure and the format used by Win32 to represent the time of file creation.  
   
  If your code contains a `CTime` object initialized with the system time, you should use the `SYSTEMTIME` constructor in Win32.  
   

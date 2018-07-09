@@ -30,30 +30,30 @@ _com_error( const _com_error& that ) throw( );
 ```  
   
 #### Parameters  
- `hr`  
- `HRESULT` information.  
+ *hr*  
+ HRESULT information.  
   
- `perrinfo`  
- **IErrorInfo** object.  
+ *perrinfo*  
+ `IErrorInfo` object.  
   
- **bool fAddRef=false**  
- Causes the constructor to call AddRef on a non-null **IErrorInfo** interface. This provides for correct reference counting in the common case where ownership of the interface is passed into the `_com_error` object, such as:  
+ `bool fAddRef=false`  
+ Causes the constructor to call AddRef on a non-null `IErrorInfo` interface. This provides for correct reference counting in the common case where ownership of the interface is passed into the `_com_error` object, such as:  
   
 ```cpp 
 throw _com_error(hr, perrinfo);  
 ```  
   
- If you do not want your code to transfer ownership to the `_com_error` object, and the `AddRef` is required to offset the **Release** in the `_com_error` destructor, construct the object as follows:  
+ If you do not want your code to transfer ownership to the `_com_error` object, and the `AddRef` is required to offset the `Release` in the `_com_error` destructor, construct the object as follows:  
   
 ```cpp 
 _com_error err(hr, perrinfo, true);  
 ```  
   
- `that`  
+ *that*  
  An existing `_com_error` object.  
   
 ## Remarks  
- The first constructor creates a new object given an `HRESULT` and optional **IErrorInfo** object. The second creates a copy of an existing `_com_error` object.  
+ The first constructor creates a new object given an HRESULT and optional `IErrorInfo` object. The second creates a copy of an existing `_com_error` object.  
   
  **END Microsoft Specific**  
   

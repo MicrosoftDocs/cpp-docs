@@ -27,7 +27,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 ```  
   
 #### Parameters  
- `piid`  
+ *piid*  
  A pointer to the IID of an interface that supports [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447).  
   
 ## Members  
@@ -39,9 +39,9 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 |[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Indicates whether the interface identified by `riid` supports the [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface.|  
   
 ## Remarks  
- The [ISupportErrorInfo Interface](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32) ensures that error information can be returned to the client. Objects that use **IErrorInfo** must implement **ISupportErrorInfo**.  
+ The [ISupportErrorInfo Interface](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32) ensures that error information can be returned to the client. Objects that use `IErrorInfo` must implement `ISupportErrorInfo`.  
   
- Class `ISupportErrorInfoImpl` provides a default implementation of **ISupportErrorInfo** and can be used when only a single interface generates errors on an object. For example:  
+ Class `ISupportErrorInfoImpl` provides a default implementation of `ISupportErrorInfo` and can be used when only a single interface generates errors on an object. For example:  
   
  [!code-cpp[NVC_ATL_COM#48](../../atl/codesnippet/cpp/isupporterrorinfoimpl-class_1.h)]  
   
@@ -71,7 +71,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 ```  
   
 ### Parameters  
- `pnNumThreads`  
+ *pnNumThreads*  
  [out] Address of the variable that, on success, receives the number of threads in the pool.  
   
 ### Return Value  
@@ -88,7 +88,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 ```  
   
 ### Parameters  
- `pdwMaxWait`  
+ *pdwMaxWait*  
  [out] Address of the variable that, on success, receives the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
   
 ### Return Value  
@@ -105,12 +105,12 @@ STDMETHOD(SetSize)int nNumThreads);
 ```  
   
 ### Parameters  
- `nNumThreads`  
+ *nNumThreads*  
  The requested number of threads in the pool.  
   
- If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If *nNumThreads* is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -126,7 +126,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 ```  
   
 ### Parameters  
- `dwMaxWait`  
+ *dwMaxWait*  
  The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
   
 ### Return Value  
