@@ -28,9 +28,9 @@ __super::member_function();
 ## Remarks  
  All accessible base-class methods are considered during the overload resolution phase, and the function that provides the best match is the one that is called.  
   
- `__super` can only appear within the body of a member function.  
+ **__super** can only appear within the body of a member function.  
   
- `__super` cannot be used with a using declaration. See [using Declaration](../cpp/using-declaration.md) for more information.  
+ **__super** cannot be used with a using declaration. See [using Declaration](../cpp/using-declaration.md) for more information.  
   
  With the introduction of [attributes](../windows/cpp-attributes-reference.md) that inject code, your code might contain one or more base classes whose names you may not know but that contain methods that you wish to call.  
   

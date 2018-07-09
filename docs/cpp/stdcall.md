@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # __stdcall
 **Microsoft Specific**  
   
- The `__stdcall` calling convention is used to call Win32 API functions. The callee cleans the stack, so the compiler makes **vararg** functions `__cdecl`. Functions that use this calling convention require a function prototype.  
+ The **__stdcall** calling convention is used to call Win32 API functions. The callee cleans the stack, so the compiler makes **vararg** functions **__cdecl**. Functions that use this calling convention require a function prototype.  
   
 ## Syntax  
   
@@ -35,11 +35,11 @@ return-type __stdcall function-name[(argument-list)]
 |Name-decoration convention|An underscore (_) is prefixed to the name. The name is followed by the at sign (@) followed by the number of bytes (in decimal) in the argument list. Therefore, the function declared as `int func( int a, double b )` is decorated as follows: `_func@12`|  
 |Case-translation convention|None|  
   
- The [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler option specifies `__stdcall` for all functions not explicitly declared with a different calling convention.  
+ The [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler option specifies **__stdcall** for all functions not explicitly declared with a different calling convention.  
   
- Functions declared using the `__stdcall` modifier return values the same way as functions declared using [__cdecl](../cpp/cdecl.md).  
+ Functions declared using the **__stdcall** modifier return values the same way as functions declared using [__cdecl](../cpp/cdecl.md).  
   
- On ARM and x64 processors, `__stdcall` is accepted and ignored by the compiler; on ARM and x64 architectures, by convention, arguments are passed in registers when possible, and subsequent arguments are passed on the stack.  
+ On ARM and x64 processors, **__stdcall** is accepted and ignored by the compiler; on ARM and x64 architectures, by convention, arguments are passed in registers when possible, and subsequent arguments are passed on the stack.  
   
  For non-static class functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition. Given this class definition,  
   
