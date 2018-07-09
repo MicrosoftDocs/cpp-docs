@@ -20,7 +20,7 @@ Some of the most common sources of program errors are not flagged as exceptions 
   
 -   Define your own exception code for the event.  
   
--   Call **RaiseException** when you detect a problem.  
+-   Call `RaiseException` when you detect a problem.  
   
 -   Use exception-handling filters to test for the exception code you defined.  
   

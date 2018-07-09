@@ -33,7 +33,7 @@ expression >= expression
   
 -   Greater than or equal to (**>=**)  
   
- The relational operators have left-to-right associativity. Both operands of relational operators must be of arithmetic or pointer type. They yield values of type `bool`. The value returned is **false** (0) if the relationship in the expression is false; otherwise, the value returned is **true** (1).  
+ The relational operators have left-to-right associativity. Both operands of relational operators must be of arithmetic or pointer type. They yield values of type **bool**. The value returned is FALSE (0) if the relationship in the expression is false; otherwise, the value returned is TRUE (1).  
   
 ## Example  
   

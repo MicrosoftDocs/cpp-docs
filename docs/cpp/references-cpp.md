@@ -34,7 +34,7 @@ A reference, like a pointer, stores the address of an object that is located els
   
 -   An optional storage class specifier.  
   
--   Optional **const** and/or `volatile` qualifiers.  
+-   Optional **const** and/or **volatile** qualifiers.  
   
 -   The type specifier: the name of a type.  
   
@@ -44,7 +44,7 @@ A reference, like a pointer, stores the address of an object that is located els
   
 -   The & operator or && operator.  
   
--   Optional **const** and/or `volatile` qualifers.  
+-   Optional **const** and/or **volatile** qualifers.  
   
 -   The identifier.  
   
