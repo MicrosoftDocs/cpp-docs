@@ -100,7 +100,7 @@ Optional parts of a function declaration are:
 
      For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).
 
-1. A **noexcept** expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to TRUE.
+1. A **noexcept** expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to **true**.
 
     ```cpp
     #include <type_traits>

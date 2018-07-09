@@ -42,7 +42,7 @@ long __hook(
 -   Managed events: *SourceClass* is the event source class and *EventMethod* is the event.  
   
  *interface*  
- The interface name being hooked to *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/event-receiver.md) attribute is TRUE.  
+ The interface name being hooked to *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/event-receiver.md) attribute is **true**.  
   
  *source*  
  A pointer to an instance of the event source. Depending on the code `type` specified in `event_receiver`, *source* can be one of the following:  
@@ -71,7 +71,7 @@ long __hook(
 ## Remarks  
  Use the intrinsic function **__hook** in an event receiver to associate or hook a handler method with an event method. The specified handler is then called when the source raises the specified event. You can hook several handlers to a single event or hook several events to a single handler.  
   
- There are two forms of **__hook**. You can use the first (four-argument) form in most cases, specifically, for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/event-receiver.md) attribute is FALSE.  
+ There are two forms of **__hook**. You can use the first (four-argument) form in most cases, specifically, for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/event-receiver.md) attribute is **false**.  
   
  In these cases you do not need to hook all methods in an interface before firing an event on one of the methods; only the method handling the event needs to be hooked. You can use the second (two-argument) form of **__hook** only for a COM event receiver in which *layout_dependent***=true**.  
   

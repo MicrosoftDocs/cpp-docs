@@ -123,7 +123,7 @@ int main()
 ```  
   
 ### Example 2  
- This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns TRUE if its parameter is an even number.  
+ This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns **true** if its parameter is an even number.  
   
 ### Code  
   

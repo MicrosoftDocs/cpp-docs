@@ -142,9 +142,9 @@ MyHandler2 was called with value 123.
 ##  <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Layout Dependent COM Events  
  Layout dependency is only an issue for COM programming. In native and managed event handling, the signatures (return type, calling convention, and arguments) of the handlers must match their events, but the handler names do not have to match their events.  
   
- However, in COM event handling, when you set the *layout_dependent* parameter of `event_receiver` to TRUE, the name and signature matching is enforced. This means that the names and signatures of the handlers in the event receiver must exactly match the names and signatures of the events to which they are hooked.  
+ However, in COM event handling, when you set the *layout_dependent* parameter of `event_receiver` to **true**, the name and signature matching is enforced. This means that the names and signatures of the handlers in the event receiver must exactly match the names and signatures of the events to which they are hooked.  
   
- When *layout_dependent* is set to FALSE, the calling convention and storage class (virtual, static, and so on) can be mixed and matched between the firing event method and the hooking methods (its delegates). It is slightly more efficient to have *layout_dependent*=TRUE.  
+ When *layout_dependent* is set to **false**, the calling convention and storage class (virtual, static, and so on) can be mixed and matched between the firing event method and the hooking methods (its delegates). It is slightly more efficient to have *layout_dependent*=**true**.  
   
  For example, suppose `IEventSource` is defined to have the following methods:  
   
