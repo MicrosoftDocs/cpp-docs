@@ -16,9 +16,9 @@ ms.workload: ["cplusplus"]
 The restriction specifier can be applied to function and lambda declarations. It enforces restrictions on the code in the function and on the behavior of the function in applications that use the C++ Accelerated Massive Parallelism (C++ AMP) runtime.  
   
 > [!NOTE]
->  For information about the `restrict` keyword that is part of the `__declspec` storage-class attributes, see [restrict](../cpp/restrict.md).  
+>  For information about the **restrict** keyword that is part of the **__declspec** storage-class attributes, see [restrict](../cpp/restrict.md).  
   
- The `restrict` clause takes the following forms:  
+ The **restrict** clause takes the following forms:  
   
 |Clause|Description|  
 |------------|-----------------|  
@@ -27,7 +27,7 @@ The restriction specifier can be applied to function and lambda declarations. It
 |A sequence of `restrict(cpu)` and `restrict(amp)`.|The function must adhere to the limitations of both `restrict(cpu)` and   `restrict(amp)`. The function can be called by functions that are declared by using `restrict(cpu)`,  `restrict(amp)`, `restrict(cpu, amp)`, or `restrict(amp, cpu)`.<br /><br /> The form `restrict(A) restrict(B)` can be written as `restrict(A,B)`.|  
   
 ## Remarks  
- The `restrict` keyword is a contextual keyword. The restriction specifiers, `cpu` and `amp` are not reserved words. The list of specifiers is not extensible. A function that does not have a `restrict` clause is the same as a function that has the `restrict(cpu)` clause.  
+ The **restrict** keyword is a contextual keyword. The restriction specifiers, `cpu` and `amp` are not reserved words. The list of specifiers is not extensible. A function that does not have a **restrict** clause is the same as a function that has the `restrict(cpu)` clause.  
   
  A function that has the `restrict(amp)` clause has the following limitations:  
   
@@ -35,7 +35,7 @@ The restriction specifier can be applied to function and lambda declarations. It
   
 -   The function must be inlinable.  
   
--   The function can declare only `int`, `unsigned int`, `float`, and `double` variables, and classes and structures that contain only these types. `bool` is also allowed, but it must be 4-byte-aligned if you use it in a compound type.  
+-   The function can declare only **int**, **unsigned int**, **float**, and **double** variables, and classes and structures that contain only these types. **bool** is also allowed, but it must be 4-byte-aligned if you use it in a compound type.  
   
 -   Lambda functions cannot capture by reference and cannot capture pointers.  
   
@@ -57,19 +57,19 @@ The restriction specifier can be applied to function and lambda declarations. It
   
     -   Pointers to pointers.  
   
-    -   `goto` statements.  
+    -   **goto** statements.  
   
     -   Labeled statements.  
   
-    -   `try`, `catch`, or `throw` statements.  
+    -   **try**, **catch**, or **throw** statements.  
   
     -   Global variables.  
   
     -   Static variables. Use [tile_static Keyword](../cpp/tile-static-keyword.md) instead.  
   
-    -   `dynamic_cast` casts.  
+    -   **dynamic_cast** casts.  
   
-    -   The `typeid` operator.  
+    -   The **typeid** operator.  
   
     -   asm declarations.  
   

@@ -78,7 +78,7 @@ template<typename _Interface,
  *i*  
  A raw interface pointer.  
   
- `p`  
+ *p*  
  A smart pointer.  
   
 ## Remarks  

@@ -37,11 +37,11 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
   
  The example demonstrates the following essential steps for using smart pointers.  
   
-1.  Declare the smart pointer as an automatic (local) variable. (Do not use the `new` or `malloc` expression on the smart pointer itself.)  
+1.  Declare the smart pointer as an automatic (local) variable. (Do not use the **new** or `malloc` expression on the smart pointer itself.)  
   
 2.  In the type parameter, specify the pointed-to type of the encapsulated pointer.  
   
-3.  Pass a raw pointer to a `new`-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)  
+3.  Pass a raw pointer to a **new**-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)  
   
 4.  Use the overloaded `->` and `*` operators to access the object.  
   
