@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _com_error Class
 **Microsoft Specific**  
   
- A `_com_error` object represents an exception condition detected by the error-handling wrapper functions in the header files generated from the type library or by one of the COM support classes. The `_com_error` class encapsulates the `HRESULT` error code and any associated `IErrorInfo Interface` object.  
+ A `_com_error` object represents an exception condition detected by the error-handling wrapper functions in the header files generated from the type library or by one of the COM support classes. The `_com_error` class encapsulates the HRESULT error code and any associated `IErrorInfo Interface` object.  
   
 ### Construction  
   
@@ -33,9 +33,9 @@ ms.workload: ["cplusplus"]
   
 |||  
 |-|-|  
-|[Error](../cpp/com-error-error.md)|Retrieves the `HRESULT` passed to the constructor.|  
+|[Error](../cpp/com-error-error.md)|Retrieves the HRESULT passed to the constructor.|  
 |[ErrorInfo](../cpp/com-error-errorinfo.md)|Retrieves the `IErrorInfo` object passed to the constructor.|  
-|[WCode](../cpp/com-error-wcode.md)|Retrieves the 16-bit error code mapped into the encapsulated `HRESULT`.|  
+|[WCode](../cpp/com-error-wcode.md)|Retrieves the 16-bit error code mapped into the encapsulated HRESULT.|  
   
 ### IErrorInfo Functions  
   
@@ -57,8 +57,8 @@ ms.workload: ["cplusplus"]
   
 |||  
 |-|-|  
-|[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|Maps 32-bit `HRESULT` to 16-bit `wCode`.|  
-|[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|Maps 16-bit `wCode` to 32-bit `HRESULT`.|  
+|[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|Maps 32-bit HRESULT to 16-bit `wCode`.|  
+|[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|Maps 16-bit `wCode` to 32-bit HRESULT.|  
   
 **END Microsoft Specific**  
   

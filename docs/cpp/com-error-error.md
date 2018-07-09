@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _com_error::Error
 **Microsoft Specific**  
   
- Retrieves the `HRESULT` passed to the constructor.  
+ Retrieves the HRESULT passed to the constructor.  
   
 ## Syntax  
   
@@ -26,10 +26,10 @@ HRESULT Error( ) const throw( );
 ```  
   
 ## Return Value  
- Raw `HRESULT` item passed into the constructor.  
+ Raw HRESULT item passed into the constructor.  
   
 ## Remarks  
- Retrieves the encapsulated `HRESULT` item in a `_com_error` object.  
+ Retrieves the encapsulated HRESULT item in a `_com_error` object.  
   
  **END Microsoft Specific**  
   
