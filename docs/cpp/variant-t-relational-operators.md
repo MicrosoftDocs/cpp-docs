@@ -39,7 +39,7 @@ bool operator!=(
  Pointer to the `VARIANT` to be compared with the `_variant_t` object.  
   
 ## Return Value  
- Returns TRUE if comparison holds, FALSE if not.  
+ Returns **true** if comparison holds, **false** if not.  
   
 ## Remarks  
  Compares a `_variant_t` object with a `VARIANT`, testing for equality or inequality.  

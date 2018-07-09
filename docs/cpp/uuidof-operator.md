@@ -63,7 +63,7 @@ int main() {
 ```  
   
 ## Comments  
- In cases where the library name is no longer in scope, you can use __LIBID\_ instead of **__uuidof**. For example:  
+ In cases where the library name is no longer in scope, you can use `__LIBID_` instead of **__uuidof**. For example:  
   
 ```cpp 
 StringFromCLSID(__LIBID_, &lpolestr);  
