@@ -71,7 +71,7 @@ void abssort(float* x, unsigned n) {
   
  Only variables that are mentioned in the lambda are captured when a capture-default is used.  
   
- If a capture clause includes a capture-default `&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a capture-default `=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or `this` cannot appear more than once in a capture clause. The following code snippet illustrates some examples.  
+ If a capture clause includes a capture-default `&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a capture-default `=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or **this** cannot appear more than once in a capture clause. The following code snippet illustrates some examples.  
   
 ```cpp  
 struct S { void f(int i); };  
@@ -97,13 +97,13 @@ void f(Args... args) {
   
  To use lambda expressions in the body of a class method, pass the `this` pointer to the capture clause to provide access to the methods and data members of the enclosing class. 
  
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The `this` pointer may be captured by value by specifying `*this` in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA. 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **this** pointer may be captured by value by specifying `*this` in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA. 
 
 For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
   
  When you use the capture clause, we recommend that you keep these points in mind, particularly when you use lambdas with multithreading:  
   
--   Reference captures can be used to modify variables outside, but value captures cannot. (`mutable` allows copies to be modified, but not originals.)  
+-   Reference captures can be used to modify variables outside, but value captures cannot. (**mutable** allows copies to be modified, but not originals.)  
   
 -   Reference captures reflect updates to variables outside, but value captures do not.  
   
@@ -144,10 +144,10 @@ auto y = [] (auto first, auto second)
   
  A lambda expression can take another lambda expression as its argument. For more information, see "Higher-Order Lambda Expressions" in the topic [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
   
- Because a parameter list is optional, you can omit the empty parentheses if you do not pass arguments to the lambda expression and its lambda-declarator does not contain *exception-specification*, *trailing-return-type*, or `mutable`.  
+ Because a parameter list is optional, you can omit the empty parentheses if you do not pass arguments to the lambda expression and its lambda-declarator does not contain *exception-specification*, *trailing-return-type*, or **mutable**.  
   
 ### Mutable Specification  
- Typically, a lambda's function call operator is const-by-value, but use of the `mutable` keyword cancels this out. It does not produce mutable data members. The mutable specification enables the body of a lambda expression to modify variables that are captured by value. Some of the examples later in this article show how to use `mutable`.  
+ Typically, a lambda's function call operator is const-by-value, but use of the **mutable** keyword cancels this out. It does not produce mutable data members. The mutable specification enables the body of a lambda expression to modify variables that are captured by value. Some of the examples later in this article show how to use **mutable**.  
   
 ### Exception Specification  
  You can use the `noexcept` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Visual C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `noexcept` exception specification and the lambda body throws an exception, as shown here:  
@@ -166,7 +166,7 @@ int main() // C4297 expected
 ### Return Type  
  The return type of a lambda expression is automatically deduced. You don't have to use the [auto](../cpp/auto-cpp.md) keyword unless you specify a *trailing-return-type*. The *trailing-return-type* resembles the return-type part of an ordinary method or function. However, the return type must follow the parameter list, and you must include the trailing-return-type keyword `->` before the return type.  
   
- You can omit the return-type part of a lambda expression if the lambda body contains just one return statement or the expression does not return a value. If the lambda body contains one return statement, the compiler deduces the return type from the type of the return expression. Otherwise, the compiler deduces the return type to be `void`. Consider the following example code snippets that illustrate this principle.  
+ You can omit the return-type part of a lambda expression if the lambda body contains just one return statement or the expression does not return a value. If the lambda body contains one return statement, the compiler deduces the return type from the type of the return expression. Otherwise, the compiler deduces the return type to be **void**. Consider the following example code snippets that illustrate this principle.  
   
 ```cpp  
 auto x1 = [](int i){ return i; }; // OK: return type is int  
@@ -185,7 +185,7 @@ auto x2 = []{ return{ 1, 2 }; };  // ERROR: return type is void, deducing
   
 -   Locally-declared variables  
   
--   Class data members, when declared inside a class and `this` is captured  
+-   Class data members, when declared inside a class and **this** is captured  
   
 -   Any variable that has static storage duration—for example, global variables  
   
@@ -211,7 +211,7 @@ int main()
 0  
 ```  
   
- Because the variable `n` is captured by value, its value remains `0` after the call to the lambda expression. The `mutable` specification allows `n` to be modified within the lambda.  
+ Because the variable `n` is captured by value, its value remains `0` after the call to the lambda expression. The **mutable** specification allows `n` to be modified within the lambda.  
   
  Although a lambda expression can only capture variables that have automatic storage duration, you can use variables that have static storage duration in the body of a lambda expression. The following example uses the `generate` function and a lambda expression to assign a value to each element in a `vector` object. The lambda expression modifies the static variable to generate the value of the next element.  
   
@@ -231,7 +231,7 @@ void fillVector(vector<int>& v)
   
  For more information, see [generate](../standard-library/algorithm-functions.md#generate).  
   
- The following code example uses the function from the previous example, and adds an example of a lambda expression that uses the C++ Standard Library algorithm `generate_n`. This lambda expression assigns an element of a `vector` object to the sum of the previous two elements. The `mutable` keyword is used so that the body of the lambda expression can modify its copies of the external variables `x` and `y`, which the lambda expression captures by value. Because the lambda expression captures the original variables `x` and `y` by value, their values remain `1` after the lambda executes.  
+ The following code example uses the function from the previous example, and adds an example of a lambda expression that uses the C++ Standard Library algorithm `generate_n`. This lambda expression assigns an element of a `vector` object to the sum of the previous two elements. The **mutable** keyword is used so that the body of the lambda expression can modify its copies of the external variables `x` and `y`, which the lambda expression captures by value. Because the lambda expression captures the original variables `x` and `y` by value, their values remain `1` after the lambda executes.  
   
 ```cpp  
 // compile with: /W4 /EHsc  
@@ -351,7 +351,7 @@ If a lambda is implicitly or explicitly `constexpr`, conversion to a function po
 ```
   
 ## Microsoft-Specific  
- Lambdas are not supported in the following common language runtime (CLR) managed entities: `ref class`, `ref struct`, `value class`, or `value struct`.  
+ Lambdas are not supported in the following common language runtime (CLR) managed entities: **ref class**, **ref struct**, **value class**, or **value struct**.  
   
  If you are using a Microsoft-specific modifier such as [__declspec](../cpp/declspec.md), you can insert it into a lambda expression immediately after the `parameter-declaration-clause`—for example:  
   

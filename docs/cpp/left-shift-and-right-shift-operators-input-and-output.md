@@ -160,7 +160,7 @@ int main() {
 ## Shifts and Promotions  
  The expressions on both sides of a shift operator must be integral types. Integral promotions are performed according to the rules described in [Standard Conversions](standard-conversions.md). The type of the result is the same as the type of the promoted *shift-expression*.  
   
- In the following example, a variable of type `char` is promoted to an `int`.  
+ In the following example, a variable of type **char** is promoted to an **int**.  
   
 ```cpp  
 #include <iostream>  
@@ -208,9 +208,9 @@ int main() {
 ## Footnotes  
  1 The following is the description of the shift operators in the C++11 ISO specification (INCITS/ISO/IEC 14882-2011[2012]), sections 5.8.2 and 5.8.3.  
   
- The value of **E1 << E2** is **E1** left-shifted **E2** bit positions; vacated bits are zero-filled. If **E1** has an unsigned type, the value of the result is **E1 × 2**<sup>**E2**</sup>, reduced modulo one more than the maximum value representable in the result type. Otherwise, if **E1** has a signed type and non-negative value, and **E1 × 2**<sup>**E2**</sup> is representable in the corresponding unsigned type of the result type, then that value, converted to the result type, is the resulting value; otherwise, the behavior is undefined.  
+ The value of `E1 << E2` is `E1` left-shifted `E2` bit positions; vacated bits are zero-filled. If `E1` has an unsigned type, the value of the result is **E1 × 2**<sup>**E2**</sup>, reduced modulo one more than the maximum value representable in the result type. Otherwise, if `E1` has a signed type and non-negative value, and **E1 × 2**<sup>**E2**</sup> is representable in the corresponding unsigned type of the result type, then that value, converted to the result type, is the resulting value; otherwise, the behavior is undefined.  
   
- The value of **E1 >> E2** is **E1** right-shifted **E2** bit positions. If **E1** has an unsigned type or if **E1** has a signed type and a non-negative value, the value of the result is the integral part of the quotient of **E1/2**<sup>**E2**</sup>. If **E1** has a signed type and a negative value, the resulting value is implementation-defined.  
+ The value of `E1 >> E2` is `E1` right-shifted `E2` bit positions. If `E1` has an unsigned type or if `E1` has a signed type and a non-negative value, the value of the result is the integral part of the quotient of **E1/2**<sup>**E2**</sup>. If `E1` has a signed type and a negative value, the resulting value is implementation-defined.  
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
