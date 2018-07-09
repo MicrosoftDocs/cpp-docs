@@ -108,7 +108,7 @@ void func( long double );
 ```  
   
 ## Boolean literals  
- The boolean literals are TRUE and FALSE.  
+ The boolean literals are **true** and **false**.  
   
 ## Pointer literal (C++11)  
  C++ introduces the [nullptr](../cpp/nullptr.md) literal to specify a zero-initialized pointer. In portable code, **nullptr** should be used instead of integral-type zero or macros such as NULL.  
