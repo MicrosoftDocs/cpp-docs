@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.  
   
 > [!NOTE]
->  Microsoft C++ Component Extensions provides support for the `new` keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)  
+>  Microsoft C++ Component Extensions provides support for the **new** keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)  
   
 ## Syntax  
   
@@ -40,7 +40,7 @@ char (*pchar)[10] = new char[dim][10];
 delete [] pchar;  
 ```  
   
- The *type-name* cannot contain **const**, `volatile`, class declarations, or enumeration declarations. Therefore, the following expression is illegal:  
+ The *type-name* cannot contain **const**, **volatile**, class declarations, or enumeration declarations. Therefore, the following expression is illegal:  
   
 ```cpp 
 volatile char *vch = new volatile char[20];  
@@ -182,7 +182,7 @@ int main()
   
  No explicit per-element initialization can be done when allocating arrays using the **new** operator; only the default constructor, if present, is called. See [Default Arguments](../cpp/default-arguments.md) for more information.  
   
- If the memory allocation fails (`operator new` returns a value of 0), no initialization is performed. This protects against attempts to initialize data that does not exist.  
+ If the memory allocation fails (**operator new** returns a value of 0), no initialization is performed. This protects against attempts to initialize data that does not exist.  
   
  As with function calls, the order in which initialized expressions are evaluated is not defined. Furthermore, you should not rely on these expressions being completely evaluated before the memory allocation is performed. If the memory allocation fails and the **new** operator returns zero, some expressions in the initializer may not be completely evaluated.  
   
@@ -223,21 +223,21 @@ int main()
   
 -   Returns a pointer to the object(s) of a pointer type derived from *new-type-name* or *type-name*. The program uses this pointer to access the newly allocated object.  
   
- The **new** operator invokes the function `operator new`. For arrays of any type, and for objects that are not of **class**, `struct`, or **union** types, a global function, **::operator new**, is called to allocate storage. Class-type objects can define their own `operator new` static member function on a per-class basis.  
+ The **new** operator invokes the function **operator new**. For arrays of any type, and for objects that are not of **class**, **struct**, or **union** types, a global function, **::operator new**, is called to allocate storage. Class-type objects can define their own **operator new** static member function on a per-class basis.  
   
- When the compiler encounters the **new** operator to allocate an object of type `type`, it issues a call to `type`**::operator new( sizeof(** `type` **) )** or, if no user-defined `operator new` is defined, **::operator new( sizeof(** `type` **) )**. Therefore, the **new** operator can allocate the correct amount of memory for the object.  
+ When the compiler encounters the **new** operator to allocate an object of type **type**, it issues a call to `type`**::operator new( sizeof(** `type` **) )** or, if no user-defined **operator new** is defined, **::operator new( sizeof(** `type` **) )**. Therefore, the **new** operator can allocate the correct amount of memory for the object.  
   
 > [!NOTE]
->  The argument to `operator new` is of type **size_t**. This type is defined in \<direct.h>, \<malloc.h>, \<memory.h>, \<search.h>, \<stddef.h>, \<stdio.h>, \<stdlib.h>, \<string.h>, and \<time.h>.  
+>  The argument to **operator new** is of type `size_t`. This type is defined in \<direct.h>, \<malloc.h>, \<memory.h>, \<search.h>, \<stddef.h>, \<stdio.h>, \<stdlib.h>, \<string.h>, and \<time.h>.  
   
- An option in the grammar allows specification of *placement* (see the Grammar for [new Operator](../cpp/new-operator-cpp.md)). The *placement* parameter can be used only for user-defined implementations of `operator new`; it allows extra information to be passed to `operator new`. An expression with a *placement* field such as `T *TObject = new ( 0x0040 ) T;` is translated to `T *TObject = T::operator new( sizeof( T ), 0x0040 );` if class T has member operator new, otherwise to `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
+ An option in the grammar allows specification of *placement* (see the Grammar for [new Operator](../cpp/new-operator-cpp.md)). The *placement* parameter can be used only for user-defined implementations of **operator new**; it allows extra information to be passed to **operator new**. An expression with a *placement* field such as `T *TObject = new ( 0x0040 ) T;` is translated to `T *TObject = T::operator new( sizeof( T ), 0x0040 );` if class T has member operator new, otherwise to `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
   
  The original intention of the *placement* field was to allow hardware-dependent objects to be allocated at user-specified addresses.  
   
 > [!NOTE]
->  Although the preceding example shows only one argument in the *placement* field, there is no restriction on how many extra arguments can be passed to `operator new` this way.  
+>  Although the preceding example shows only one argument in the *placement* field, there is no restriction on how many extra arguments can be passed to **operator new** this way.  
   
- Even when `operator new` has been defined for a class type, the global operator can be used by using the form of this example:  
+ Even when **operator new** has been defined for a class type, the global operator can be used by using the form of this example:  
   
 ```cpp 
 T *TObject =::new TObject;  

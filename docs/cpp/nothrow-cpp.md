@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-A `__declspec` extended attribute which can be used in the declaration of functions.
+A **__declspec** extended attribute which can be used in the declaration of functions.
 
 ## Syntax  
   

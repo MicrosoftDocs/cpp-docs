@@ -27,25 +27,25 @@ Pointers are declared using the following sequence.
   
  1. The declaration specifiers:  
   
--   An optional storage class specifier. For more information, see [Specifiers](../cpp/specifiers.md).  
+    - An optional storage class specifier. For more information, see [Specifiers](../cpp/specifiers.md).  
   
--   An optional `const` or `volatile` keyword applying to the type of the object to be pointed to.  
+    - An optional **const** or **volatile** keyword applying to the type of the object to be pointed to.  
   
--   The type specifier: the name of a type representing the type of the object to be pointed to.  
+    - The type specifier: the name of a type representing the type of the object to be pointed to.  
   
  2. The declarator:  
   
--   An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
+    - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
   
--   The `*` operator.  
+    - The `*` operator.  
   
--   An optional `const` or `volatile` keyword applying to the pointer itself.  
+    - An optional **const** or **volatile** keyword applying to the pointer itself.  
   
--   The identifier.  
+    - The identifier.  
   
--   An optional initializer.  
+    - An optional initializer.  
   
- The declarator for a pointer to function looks like this:  
+     The declarator for a pointer to function looks like this:  
   
 ```  
 (* [cv-qualifiers] identifier )( argument-list ) [cv-qualifers]  
@@ -66,7 +66,7 @@ Pointers are declared using the following sequence.
 char *pch;  
 ```  
   
- The preceding declaration specifies that `pch` points to an object of type `char`.  
+ The preceding declaration specifies that `pch` points to an object of type **char**.  
   
  A more complex example is  
   
@@ -74,7 +74,7 @@ char *pch;
 static unsigned int * const ptr;  
 ```  
   
- The preceding declaration specifies that `ptr` is a constant pointer to an object of type `unsigned` `int` with static storage duration.  
+ The preceding declaration specifies that `ptr` is a constant pointer to an object of type **unsigned** **int** with static storage duration.  
   
  The next example shows how multiple pointers are declared and initialized:  
   
@@ -82,7 +82,7 @@ static unsigned int * const ptr;
 static int *p = &i, *q = &j;  
 ```  
   
- In the preceding example, pointers p and q both point to objects of type `int` and are initialized to the addresses of i and j respectively.  The storage class specifier `static` applies to both pointers.  
+ In the preceding example, pointers p and q both point to objects of type **int** and are initialized to the addresses of i and j respectively.  The storage class specifier **static** applies to both pointers.  
   
 ## Example  
   
