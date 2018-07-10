@@ -143,7 +143,7 @@ bool valid() noexcept;
 
 ### Return Value
 
-`true` if the object has an associated asynchronous state; otherwise, `false`.
+**true** if the object has an associated asynchronous state; otherwise, **false**.
 
 ## <a name="wait"></a>  future::wait
 

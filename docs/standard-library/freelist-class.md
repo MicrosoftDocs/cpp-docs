@@ -96,11 +96,11 @@ bool push(void* ptr);
 
 ### Return Value
 
-`true` if the `full` function of the max class returns `false`; otherwise, the `push` function returns `false`.
+**true** if the `full` function of the max class returns **false**; otherwise, the `push` function returns **false**.
 
 ### Remarks
 
-If the `full` function of the max class returns `false`, this member function adds the memory block pointed to by *ptr* to the head of the list.
+If the `full` function of the max class returns **false**, this member function adds the memory block pointed to by *ptr* to the head of the list.
 
 ## See also
 

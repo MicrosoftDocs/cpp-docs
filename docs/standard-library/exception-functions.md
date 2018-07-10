@@ -214,7 +214,7 @@ See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) 
 
 ## <a name="uncaught_exception"></a>  uncaught_exception
 
-Returns `true` only if a thrown exception is being currently processed.
+Returns **true** only if a thrown exception is being currently processed.
 
 ```cpp
 bool uncaught_exception();
@@ -222,7 +222,7 @@ bool uncaught_exception();
 
 ### Return Value
 
-Returns `true` after completing evaluation of a throw expression and before completing initialization of the exception declaration in the matching handler or calling [unexpected](../standard-library/exception-functions.md#unexpected) as a result of the throw expression. In particular, `uncaught_exception` will return `true` when called from a destructor that is being invoked during an exception unwind. On devices, `uncaught_exception` is only supported on Windows CE 5.00 and higher versions, including Windows Mobile 2005 platforms.
+Returns **true** after completing evaluation of a throw expression and before completing initialization of the exception declaration in the matching handler or calling [unexpected](../standard-library/exception-functions.md#unexpected) as a result of the throw expression. In particular, `uncaught_exception` will return **true** when called from a destructor that is being invoked during an exception unwind. On devices, `uncaught_exception` is only supported on Windows CE 5.00 and higher versions, including Windows Mobile 2005 platforms.
 
 ### Example
 

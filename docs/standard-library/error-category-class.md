@@ -97,7 +97,7 @@ virtual bool equivalent(const error_code& _Code,
 
 ### Return Value
 
-`true` if the category and value are equal; otherwise, `false`.
+**true** if the category and value are equal; otherwise, `false`.
 
 ### Remarks
 

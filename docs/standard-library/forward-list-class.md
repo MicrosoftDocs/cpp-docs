@@ -363,7 +363,7 @@ bool empty() const;
 
 ### Return Value
 
-`true` if the forward list is empty; otherwise, `false`.
+**true** if the forward list is empty; otherwise, **false**.
 
 ## <a name="end"></a>  forward_list::end
 

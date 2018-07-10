@@ -273,7 +273,7 @@ The Boolean value of the `error_code` object.
 
 ### Remarks
 
-The operator returns a value convertible to `true` only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
+The operator returns a value convertible to **true** only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
 
 ## <a name="value"></a>  error_code::value
 
