@@ -77,13 +77,8 @@ HRESULT Attach(VARIANT* pSrc);
 ```  
   
 ### Parameters  
-<<<<<<< HEAD
- `pSrc`  
- [in] Points to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.  
-=======
  *pSrc*  
- [in] Points to the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) to be attached to the object.  
->>>>>>> master
+ [in] Points to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.  
   
 ### Return Value  
  A standard HRESULT value.  
