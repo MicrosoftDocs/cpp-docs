@@ -53,29 +53,29 @@ template <class Tuple>
 
 ### Parameters
 
-*Tuple*
+*Tuple*  
 The type of the tuple.
 
-*Elem*
+*Elem*  
 The type of the array elements.
 
-*Size*
+*Size*  
 The size of the array.
 
-*T1*
+*T1*  
 The type of the first member of the pair.
 
-*T2*
+*T2*  
 The type of the second member of the pair.
 
-*Types*
+*Types*  
 The types of the tuple elements.
 
 ## Remarks
 
-The template class has a member `value` that is an integral constant expression whose value is the extent of the tuple type `Tuple`.
+The template class has a member `value` that is an integral constant expression whose value is the extent of the tuple type *Tuple*.
 
-The template specialization for arrays has a member `value` that is an integral constant expression whose value is `Size`, which is the size of the array.
+The template specialization for arrays has a member `value` that is an integral constant expression whose value is *Size*, which is the size of the array.
 
 The template specialization for pair has a member `value` that is an integral constant expression whose value is 2.
 

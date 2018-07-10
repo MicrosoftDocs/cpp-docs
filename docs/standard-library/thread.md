@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # &lt;thread&gt;
 
-Include the standard header \<thread> to define the class `thread` and various supporting functions.
+Include the standard header \<thread> to define the class **thread** and various supporting functions.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ The `__STDCPP_THREADS__` macro is defined as a nonzero value to indicate that th
 |[get_id](../standard-library/thread-functions.md#get_id)|Uniquely identifies the current thread of execution.|
 |[sleep_for](../standard-library/thread-functions.md#sleep_for)|Blocks the calling thread.|
 |[sleep_until](../standard-library/thread-functions.md#sleep_until)|Blocks the calling thread at least until the specified time.|
-|[swap](../standard-library/thread-functions.md#swap)|Exchanges the states of two `thread` objects.|
+|[swap](../standard-library/thread-functions.md#swap)|Exchanges the states of two **thread** objects.|
 |[yield](../standard-library/thread-functions.md#yield)|Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.|
 
 ### Public Operators
