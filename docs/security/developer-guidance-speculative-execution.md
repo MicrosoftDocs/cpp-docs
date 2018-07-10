@@ -1,7 +1,7 @@
 ---
 title: "C++ Developer Guidance for Speculative Execution Side Channels | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/21/2018"
+ms.date: "07/10/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
