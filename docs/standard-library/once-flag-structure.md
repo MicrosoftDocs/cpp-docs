@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # once_flag Structure
 
-Represents a `struct` that is used with the template function [call_once](../standard-library/mutex-functions.md#call_once) to ensure that initialization code is called only once, even in the presence of multiple threads of execution.
+Represents a **struct** that is used with the template function [call_once](../standard-library/mutex-functions.md#call_once) to ensure that initialization code is called only once, even in the presence of multiple threads of execution.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ struct once_flag
 
 ## Remarks
 
-The `once_flag` `struct` has only a default constructor.
+The `once_flag` **struct** has only a default constructor.
 
 Objects of type `once_flag` can be created, but they cannot be copied.
 

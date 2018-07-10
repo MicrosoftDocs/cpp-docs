@@ -59,8 +59,8 @@ public:
 
 ### Parameters
 
-`RealType`
- The floating point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).
+*RealType*
+ The floating point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -250,7 +250,7 @@ The lowest value in the distribution range.
 The highest value in the distribution range. Must be greater than *xmin*.
 
 *weightfunc*
-The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to `double`.
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
 *parm*
 The parameter structure used to construct the distribution.
@@ -269,7 +269,7 @@ piecewise_linear_distribution(
     InputIteratorW firstW);
 ```
 
-constructs a distribution object with itnervals from iterators over the sequence [ `firstI`, `lastI`) and a matching weight sequence starting at `firstW`.
+constructs a distribution object with itnervals from iterators over the sequence [ `firstI`, `lastI`) and a matching weight sequence starting at *firstW*.
 
 The initializer list constructor
 
@@ -280,7 +280,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-constructs a distribution object with intervals from the intializer list `intervals` and weights generated from the function `weightfunc`.
+constructs a distribution object with intervals from the intializer list *intervals* and weights generated from the function *weightfunc*.
 
 The constructor defined as
 
@@ -293,7 +293,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-constructs a distribution object with `count` intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function `weightfunc`, and `weightfunc` must accept one parameter and have a return value, both of which are convertible to `double`. **Precondition:**`xmin < xmax`.
+constructs a distribution object with *count* intervals distributed uniformly over [ `xmin,xmax`], assigning each interval weights according to the function *weightfunc*, and *weightfunc* must accept one parameter and have a return value, both of which are convertible to `double`. **Precondition:**`xmin < xmax`.
 
 The constructor defined as
 
@@ -301,7 +301,7 @@ The constructor defined as
 explicit piecewise_linear_distribution(const param_type& parm);
 ```
 
-constructs a distribution object using `parm` as the stored parameter structure.
+constructs a distribution object using *parm* as the stored parameter structure.
 
 ## <a name="param_type"></a>  piecewise_linear_distribution::param_type
 
