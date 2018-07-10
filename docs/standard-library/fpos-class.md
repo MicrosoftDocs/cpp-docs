@@ -18,7 +18,7 @@ The template class describes an object that can store all the information needed
 
 - A byte offset, of type [streamoff](../standard-library/ios-typedefs.md#streamoff).
 
-- A conversion state, for use by an object of class basic_filebuf, of type **St**, typically `mbstate_t`.
+- A conversion state, for use by an object of class basic_filebuf, of type `St`, typically `mbstate_t`.
 
 It can also store an arbitrary file position, for use by an object of class [basic_filebuf](../standard-library/basic-filebuf-class.md), of type `fpos_t`. For an environment with limited file size, however, `streamoff` and `fpos_t` may sometimes be used interchangeably. For an environment with no streams that have a state-dependent encoding, `mbstate_t` may actually be unused. Therefore, the number of member objects stored may vary.
 
@@ -77,10 +77,10 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### Parameters
 
-`_Off`
+*_Off*
  The offset into the stream.
 
-`_State`
+*_State*
  The starting state of the `fpos` object.
 
 *_Filepos*
@@ -88,9 +88,9 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### Remarks
 
-The first constructor stores the offset `_Off`, relative to the beginning of file and in the initial conversion state (if that matters). If `_Off` is -1, the resulting object represents an invalid stream position.
+The first constructor stores the offset *_Off*, relative to the beginning of file and in the initial conversion state (if that matters). If *_Off* is -1, the resulting object represents an invalid stream position.
 
-The second constructor stores a zero offset and the object `_State`.
+The second constructor stores a zero offset and the object *_State*.
 
 ## <a name="op_neq"></a>  fpos::operator!=
 
@@ -102,7 +102,7 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-`right`
+*right*
  The file-position indicator against which to compare.
 
 ### Return Value
@@ -175,7 +175,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### Parameters
 
-`_Off`
+*_Off*
  The offset by which you want to increment the file-position indicator.
 
 ### Return Value
@@ -200,7 +200,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### Parameters
 
-`_Off`
+*_Off*
  The offset by which you want to increment the file-position indicator.
 
 ### Return Value
@@ -209,7 +209,7 @@ The position in the file.
 
 ### Remarks
 
-The member function adds `_Off` to the stored offset member object and then returns **\*this**. For positioning within a file, the result is generally valid only for binary streams that do not have a state-dependent encoding.
+The member function adds *_Off* to the stored offset member object and then returns **\*this**. For positioning within a file, the result is generally valid only for binary streams that do not have a state-dependent encoding.
 
 ### Example
 
@@ -227,10 +227,10 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### Parameters
 
-`right`
+*right*
  File position.
 
-`_Off`
+*_Off*
  Stream offset.
 
 ### Return Value
@@ -251,7 +251,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### Parameters
 
-`_Off`
+*_Off*
  Stream offset.
 
 ### Return Value
@@ -276,7 +276,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-`right`
+*right*
  The file-position indicator against which to compare.
 
 ### Return Value
@@ -350,7 +350,7 @@ void state(Statetype _State);
 
 ### Parameters
 
-`_State`
+*_State*
  The new conversion state.
 
 ### Return Value
@@ -359,7 +359,7 @@ The conversion state.
 
 ### Remarks
 
-The first member function returns the value stored in the **St** member object. The second member function stores `_State` in the **St** member object.
+The first member function returns the value stored in the `St` member object. The second member function stores *_State* in the `St` member object.
 
 ### Example
 

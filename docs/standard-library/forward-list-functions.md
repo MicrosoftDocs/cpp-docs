@@ -26,8 +26,8 @@ void swap(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Remarks
 
