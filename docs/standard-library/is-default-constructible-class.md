@@ -25,12 +25,12 @@ struct is_default_constructible;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `T` is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type `T` must be a complete type, `void`, or an array of unknown bound.
+An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **void**, or an array of unknown bound.
 
 ## Example
 
