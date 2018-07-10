@@ -29,8 +29,8 @@ bool operator==(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Remarks
 
@@ -50,8 +50,8 @@ bool operator!=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
@@ -75,8 +75,8 @@ bool operator<(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
@@ -100,8 +100,8 @@ bool operator<=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
@@ -125,8 +125,8 @@ bool operator>(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
@@ -150,8 +150,8 @@ bool operator>=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 

@@ -67,7 +67,7 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Errval`|The error code value to store in the [error_condition](../standard-library/error-condition-class.md).|
+|*_Errval*|The error code value to store in the [error_condition](../standard-library/error-condition-class.md).|
 
 ### Return Value
 
@@ -91,9 +91,9 @@ virtual bool equivalent(const error_code& _Code,
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Errval`|The error code value to compare.|
-|`_Cond`|The [error_condition](../standard-library/error-condition-class.md) object to compare.|
-|`_Code`|The [error_code](../standard-library/error-code-class.md) object to compare.|
+|*_Errval*|The error code value to compare.|
+|*_Cond*|The [error_condition](../standard-library/error-condition-class.md) object to compare.|
+|*_Code*|The [error_code](../standard-library/error-code-class.md) object to compare.|
 
 ### Return Value
 
@@ -117,11 +117,11 @@ virtual string message(error_code::value_type val) const = 0;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`val`|The error code value to describe.|
+|*val*|The error code value to describe.|
 
 ### Return Value
 
-Returns a descriptive name of the error code `val` for the category.
+Returns a descriptive name of the error code *val* for the category.
 
 ### Remarks
 
@@ -151,7 +151,7 @@ bool operator==(const error_category& right) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The object to be tested for equality.|
+|*right*|The object to be tested for equality.|
 
 ### Return Value
 
@@ -173,11 +173,11 @@ bool operator!=(const error_category& right) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The object to be tested for inequality.|
+|*right*|The object to be tested for inequality.|
 
 ### Return Value
 
-**true** if the `error_category` object is not equal to the `error_category` object passed in `right`; otherwise **false**.
+**true** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **false**.
 
 ### Remarks
 
@@ -195,7 +195,7 @@ bool operator<(const error_category& right) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The `error_category` object to be compared.|
+|*right*|The `error_category` object to be compared.|
 
 ### Return Value
 
@@ -215,7 +215,7 @@ typedef int value_type;
 
 ### Remarks
 
-This type definition is a synonym for `int`.
+This type definition is a synonym for **int**.
 
 ## See also
 

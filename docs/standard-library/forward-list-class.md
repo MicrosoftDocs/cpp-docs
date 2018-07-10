@@ -28,12 +28,12 @@ class forward_list
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|The element data type to be stored in the forward_list.|
-|`Allocator`|The stored allocator object that encapsulates details about the  forward_list allocation and deallocation of memory. This parameter is optional. The default value is allocator< `Type`>.|
+|*Type*|The element data type to be stored in the forward_list.|
+|*Allocator*|The stored allocator object that encapsulates details about the  forward_list allocation and deallocation of memory. This parameter is optional. The default value is allocator< `Type`>.|
 
 ## Remarks
 
-A `forward_list` object allocates and frees storage for the sequence it controls through a stored object of class `Allocator` that is based on [allocator Class](../standard-library/allocator-class.md) (commonly known as `std::allocator)`. For more information, see [Allocators](../standard-library/allocators.md). An allocator object must have the same external interface as an object of template class `allocator`.
+A `forward_list` object allocates and frees storage for the sequence it controls through a stored object of class *Allocator* that is based on [allocator Class](../standard-library/allocator-class.md) (commonly known as `std::allocator)`. For more information, see [Allocators](../standard-library/allocators.md). An allocator object must have the same external interface as an object of template class `allocator`.
 
 > [!NOTE]
 > The stored allocator object is not copied when the container object is assigned.
@@ -54,7 +54,7 @@ Additions to the controlled sequence might occur by calls to [forward_list::inse
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the allocator class for a forward list object.|
 |[const_iterator](#const_iterator)|A type that provides a constant iterator for the forward list.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a `const` element in a forward list.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a forward list.|
 |[const_reference](#const_reference)|A type that provides a constant reference to an element in the forward list.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a forward list in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides an iterator for the forward list.|
@@ -139,12 +139,12 @@ void assign(InputIterator First, InputIterator Last);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`first`|The beginning of the replacement range.|
-|`last`|The end of the replacement range.|
-|`count`|The number of elements to assign.|
-|`val`|The value to assign each element.|
-|`Type`|The type of the value.|
-|`IList`|The initializer_list to copy.|
+|*first*|The beginning of the replacement range.|
+|*last*|The end of the replacement range.|
+|*count*|The number of elements to assign.|
+|*val*|The value to assign each element.|
+|*Type*|The type of the value.|
+|*IList`|The initializer_list to copy.|
 
 ### Remarks
 
@@ -200,7 +200,7 @@ A forward iterator that points just before the first element of the sequence (or
 
 ## <a name="cbegin"></a>  forward_list::cbegin
 
-Returns a `const` iterator that addresses the first element in the range.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -208,13 +208,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A `const` forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **const** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -225,7 +225,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  forward_list::cend
 
-Returns a `const` iterator that addresses the location just beyond the last element in a range.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -239,7 +239,7 @@ A forward-access iterator that points just beyond the end of the range.
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -277,7 +277,7 @@ typedef implementation-defined const_iterator;
 
 ## <a name="const_pointer"></a>  forward_list::const_pointer
 
-A type that provides a pointer to a `const` element in a forward list.
+A type that provides a pointer to a **const** element in a forward list.
 
 ```cpp
 typedef typename Allocator::const_pointer
@@ -321,8 +321,8 @@ iterator emplace_after(const_iterator Where, Type&& val);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Where`|The position in the target forward list where the new element is constructed.|
-|`val`|The constructor argument.|
+|*Where*|The position in the target forward list where the new element is constructed.|
+|*val*|The constructor argument.|
 
 ### Return Value
 
@@ -330,7 +330,7 @@ An iterator that designates the newly inserted element.
 
 ### Remarks
 
-This member function inserts an element with the constructor arguments `val` just after the element pointed to by `Where` in the controlled sequence. Its behavior is otherwise the same as [forward_list::insert_after](#insert_after).
+This member function inserts an element with the constructor arguments *val* just after the element pointed to by *Where* in the controlled sequence. Its behavior is otherwise the same as [forward_list::insert_after](#insert_after).
 
 ## <a name="emplace_front"></a>  forward_list::emplace_front
 
@@ -345,7 +345,7 @@ void emplace_front(Type&& val);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`val`|The element added to the beginning of the forward list.|
+|*val*|The element added to the beginning of the forward list.|
 
 ### Remarks
 
@@ -391,9 +391,9 @@ iterator erase_after(const_iterator first, const_iterator last);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Where`|The position in the target forward list where the element is erased.|
-|`first`|The beginning of the range to erase.|
-|`last`|The end of the range to erase.|
+|*Where*|The position in the target forward list where the element is erased.|
+|*first*|The beginning of the range to erase.|
+|*last*|The end of the range to erase.|
 
 ### Return Value
 
@@ -401,7 +401,7 @@ An iterator that designates the first element remaining beyond any elements remo
 
 ### Remarks
 
-The first member function removes the element of the controlled sequence just after `Where`.
+The first member function removes the element of the controlled sequence just after *Where*.
 
 The second member function removes the elements of the controlled sequence in the range `( first,  last)` (neither end point is included).
 
@@ -434,25 +434,25 @@ forward_list(InputIterator First, InputIterator Last, const Allocator& Al);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Al`|The allocator class to use with this object.|
-|`Count`|The number of elements in the list constructed.|
-|`Val`|The value of the elements in the list constructed.|
-|`Right`|The list of which the constructed list is to be a copy.|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
-|`IList`|The initializer_list to copy.|
+|*Al*|The allocator class to use with this object.|
+|*Count*|The number of elements in the list constructed.|
+|*Val*|The value of the elements in the list constructed.|
+|*Right*|The list of which the constructed list is to be a copy.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
+|*IList*|The initializer_list to copy.|
 
 ### Remarks
 
-All constructors store an [allocator](../standard-library/allocator-class.md) and initialize the controlled sequence. The allocator object is the argument `Al`, if present. For the copy constructor, it is ` right.get_allocator()`. Otherwise, it is `Allocator()`.
+All constructors store an [allocator](../standard-library/allocator-class.md) and initialize the controlled sequence. The allocator object is the argument *Al*, if present. For the copy constructor, it is ` right.get_allocator()`. Otherwise, it is `Allocator()`.
 
 The first two constructors specify an empty initial controlled sequence.
 
-The third constructor specifies a repetition of `Count` elements of value `Type()`.
+The third constructor specifies a repetition of *Count* elements of value `Type()`.
 
-The fourth and fifth constructors specify a repetition of `Count` elements of value `Val`.
+The fourth and fifth constructors specify a repetition of *Count* elements of value *Val*.
 
-The sixth constructor specifies a copy of the sequence controlled by `Right`. If `InputIterator` is an integer type, the next two constructors specify a repetition of `(size_type)First` elements of value `(Type)Last`. Otherwise, the next two constructors specify the sequence `[First, Last)`.
+The sixth constructor specifies a copy of the sequence controlled by *Right*. If `InputIterator` is an integer type, the next two constructors specify a repetition of `(size_type)First` elements of value `(Type)Last`. Otherwise, the next two constructors specify the sequence `[First, Last)`.
 
 The ninth and tenth constructors are the same as the sixth, but with an [rvalue](../cpp/rvalue-reference-declarator-amp-amp.md) reference.
 
@@ -500,12 +500,12 @@ void insert_after(const_iterator Where, InputIterator First, InputIterator Last)
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Where`|The position in the target forward list where the first element is inserted.|
-|`Count`|The number of elements to insert.|
-|`First`|The beginning of the insertion range.|
-|`Last`|The end of the insertion range.|
-|`Val`|The element added to the forward list.|
-|`IList`|The initializer_list to insert.|
+|*Where*|The position in the target forward list where the first element is inserted.|
+|*Count*|The number of elements to insert.|
+|*First*|The beginning of the insertion range.|
+|*Last*|The end of the insertion range.|
+|*Val*|The element added to the forward list.|
+|*IList*|The initializer_list to insert.|
 
 ### Return Value
 
@@ -513,11 +513,11 @@ An iterator that designates the newly inserted element (first and last member fu
 
 ### Remarks
 
-Each of the member functions inserts—just after the element pointed to by `Where` in the controlled sequence—a sequence that' specified by the remaining operands.
+Each of the member functions inserts—just after the element pointed to by *Where* in the controlled sequence—a sequence that' specified by the remaining operands.
 
-The first member function inserts an element that has value `Val` and returns an iterator that designates the newly inserted element.
+The first member function inserts an element that has value *Val* and returns an iterator that designates the newly inserted element.
 
-The second member function inserts a repetition of `Count` elements of value `Val`.
+The second member function inserts a repetition of *Count* elements of value *Val*.
 
 If `InputIterator` is an integer type, the third member function behaves the same as `insert(it, (size_type)First, (Type)Last)`. Otherwise, it inserts the sequence `[First, Last)`, which must not overlap the initial controlled sequence.
 
@@ -569,8 +569,8 @@ void merge(forward_list& right, Predicate comp);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The forward list to merge from.|
-|`comp`|The compare function object that is used to sort elements.|
+|*right*|The forward list to merge from.|
+|*comp*|The compare function object that is used to sort elements.|
 
 ### Remarks
 
@@ -596,12 +596,12 @@ forward_list& operator=(forward_list&& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The forward list being copied into the forward list.|
-|`IList`|A brace-enclosed initializer list, which behaves just like a sequence of elements of type `Type`.|
+|*right*|The forward list being copied into the forward list.|
+|*IList*|A brace-enclosed initializer list, which behaves just like a sequence of elements of type `Type`.|
 
 ### Remarks
 
-The first member operator replaces the controlled sequence with a copy of the sequence controlled by `right`.
+The first member operator replaces the controlled sequence with a copy of the sequence controlled by *right*.
 
 The second member operator replaces the controlled sequence from an object of class `initializer_list<Type>`.
 
@@ -644,7 +644,7 @@ void push_front(Type&& val);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`val`|The element added to the beginning of the forward list.|
+|*val*|The element added to the beginning of the forward list.|
 
 ### Remarks
 
@@ -672,7 +672,7 @@ void remove(const Type& val);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`val`|The value which, if held by an element, will result in that element's removal from the list.|
+|*val*|The value which, if held by an element, will result in that element's removal from the list.|
 
 ### Remarks
 
@@ -693,13 +693,13 @@ void remove_if(Predicate pred);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`pred`|The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.|
+|*pred*|The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.|
 
 ### Remarks
 
 The member function removes from the controlled sequence all elements, designated by the iterator `P`, for which ` pred(*P)` is true.
 
-An exception occurs only if `pred` throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.
+An exception occurs only if *pred* throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.
 
 ## <a name="resize"></a>  forward_list::resize
 
@@ -714,12 +714,12 @@ void resize(size_type _Newsize, const Type& val);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Newsize`|The number of elements in the resized forward list.|
-|`val`|The value to use for padding.|
+|*_Newsize*|The number of elements in the resized forward list.|
+|*val*|The value to use for padding.|
 
 ### Remarks
 
-The member functions both ensure that the number of elements in the list henceforth is `_Newsize`. If it must make the controlled sequence longer, the first member function appends elements with value `Type()`, while the second member function appends elements with value `val`. To make the controlled sequence shorter, both member functions effectively call `erase_after(begin() + _Newsize - 1, end())`.
+The member functions both ensure that the number of elements in the list henceforth is *_Newsize*. If it must make the controlled sequence longer, the first member function appends elements with value `Type()`, while the second member function appends elements with value *val*. To make the controlled sequence shorter, both member functions effectively call `erase_after(begin() + _Newsize - 1, end())`.
 
 ## <a name="reverse"></a>  forward_list::reverse
 
@@ -757,7 +757,7 @@ void sort(Predicate pred);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`pred`|The ordering predicate.|
+|*pred*|The ordering predicate.|
 
 ### Remarks
 
@@ -765,7 +765,7 @@ Both member functions order the elements in the controlled sequence by a predica
 
 For the iterators `Pi` and `Pj` designating elements at positions `i` and `j`, the first member function imposes the order `!(*Pj < *Pi)` whenever `i < j`. (The elements are sorted in `ascending` order.) The member template function imposes the order `! pred(*Pj, *Pi)` whenever `i < j`. No ordered pairs of elements in the original controlled sequence are reversed in the resulting controlled sequence. (The sort is stable.)
 
-An exception occurs only if `pred` throws an exception. In that case, the controlled sequence is left in unspecified order and the exception is rethrown.
+An exception occurs only if *pred* throws an exception. In that case, the controlled sequence is left in unspecified order and the exception is rethrown.
 
 ## <a name="splice_after"></a>  forward_list::splice_after
 
@@ -796,28 +796,28 @@ void splice_after(
 
 ### Parameters
 
-`Where`
+*Where*
  The position in the destination forward_list after which to insert.
 
-`Source`
+*Source*
  The source forward_list that is to be inserted into the destination forward_list.
 
-`Iter`
+*Iter*
  The element to be inserted from the source forward_list.
 
-`First`
+*First*
  The first element in the range to be inserted from source forward_list.
 
-`Last`
+*Last*
  The first position beyond the range to be inserted from the source forward_list.
 
 ### Remarks
 
-The first pair of member functions inserts the sequence controlled by `Source` just after the element in the controlled sequence pointed to by `Where`. It also removes all elements from `Source`. ( `&Source` must not equal `this`.)
+The first pair of member functions inserts the sequence controlled by *Source* just after the element in the controlled sequence pointed to by *Where*. It also removes all elements from *Source*. (`&Source` must not equal **this**.)
 
-The second pair of member functions removes the element just after `Iter` in the sequence controlled by `Source` and inserts it just after the element in the controlled sequence pointed to by `Where`. (If `Where == Iter || Where == ++Iter`, no change occurs.)
+The second pair of member functions removes the element just after *Iter* in the sequence controlled by *Source* and inserts it just after the element in the controlled sequence pointed to by *Where*. (If `Where == Iter || Where == ++Iter`, no change occurs.)
 
-The third pair of member functions (ranged splice) inserts the subrange designated by `(First, Last)` from the sequence controlled by `Source` just after the element in the controlled sequence pointed to by `Where`. It also removes the original subrange from the sequence controlled by `Source`. (If `&Source == this`, the range `(First, Last)` must not include the element pointed to by `Where`.)
+The third pair of member functions (ranged splice) inserts the subrange designated by `(First, Last)` from the sequence controlled by *Source* just after the element in the controlled sequence pointed to by *Where*. It also removes the original subrange from the sequence controlled by *Source*. (If `&Source == this`, the range `(First, Last)` must not include the element pointed to by *Where*.)
 
 If the ranged splice inserts `N` elements, and `&Source != this`, an object of class [iterator](#iterator) is incremented `N` times.
 
@@ -909,11 +909,11 @@ void swap(forward_list& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The forward list providing the elements to be exchanged.|
+|*right*|The forward list providing the elements to be exchanged.|
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and `right`. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between `*this` and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ## <a name="unique"></a>  forward_list::unique
 
@@ -929,7 +929,7 @@ void unique(BinaryPredicate comp);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`comp`|The binary predicate used to compare successive elements.|
+|*comp*|The binary predicate used to compare successive elements.|
 
 ### Remarks
 

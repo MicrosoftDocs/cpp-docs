@@ -37,16 +37,16 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 
 ### Parameters
 
-`Fty`
+*Fty*
  The type of the object to call.
 
-`TN`
+*TN*
  The type of the Nth call argument.
 
-`fn`
+*fn*
  The object to call.
 
-`tN`
+*tN*
  The Nth call argument.
 
 ### Remarks
@@ -136,21 +136,21 @@ binder1st <Operation> bind1st (const Operation& func, const Type& left);
 
 ### Parameters
 
-`func`
+*func*
  The binary function object to be converted to a unary function object.
 
-`left`
+*left*
  The value to which the first argument of the binary function object is to be bound.
 
 ### Return Value
 
-The unary function object that results from binding the first argument of the binary function object to the value `left`.
+The unary function object that results from binding the first argument of the binary function object to the value *left*.
 
 ### Remarks
 
 Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If `func` is an object of type `Operation` and `c` is a constant, then `bind1st` ( `func`, `c`) is equivalent to the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st`< `Operation`> ( `func`, `c`) and is more convenient.
+If *func* is an object of type `Operation` and `c` is a constant, then `bind1st` ( `func`, `c`) is equivalent to the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st`< `Operation`> ( `func`, `c`) and is more convenient.
 
 ### Example
 
@@ -230,21 +230,21 @@ binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 
 ### Parameters
 
-`func`
+*func*
  The binary function object to be converted to a unary function object.
 
-`right`
+*right*
  The value to which the second argument of the binary function object is to be bound.
 
 ### Return Value
 
-The unary function object that results from binding the second argument of the binary function object to the value `right`.
+The unary function object that results from binding the second argument of the binary function object to the value *right*.
 
 ### Remarks
 
 Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If `func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `func`, `c` ) is equivalent to the [binder2nd](../standard-library/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `func`, `c` ) and more convenient.
+If *func* is an object of type `Operation` and `c` is a constant, then `bind2nd` ( `func`, `c` ) is equivalent to the [binder2nd](../standard-library/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `func`, `c` ) and more convenient.
 
 ### Example
 
@@ -337,14 +337,14 @@ struct bit_and<void>
 
 ### Parameters
 
-`Type`, `T`, `U`
+*Type*, *T*, *U*
  Any type that supports an `operator&` that takes operands of the specified or inferred types.
 
-`Left`
- The left operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.
+*Left*
+ The left operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-`Right`
- The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.
+*Right*
+ The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ### Return Value
 
@@ -376,11 +376,11 @@ struct bit_not<void>
 
 ### Parameters
 
-`Type`
+*Type*
  A type that supports a unary `operator~`.
 
-`Right`
- The operand of the bitwise complement operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of an lvalue or rvalue reference argument of inferred type `Type`.
+*Right*
+ The operand of the bitwise complement operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of an lvalue or rvalue reference argument of inferred type *Type*.
 
 ### Return Value
 
@@ -392,7 +392,7 @@ The `bit_not` functor is restricted to integral types for the basic data types, 
 
 ## <a name="bit_or"></a>  bit_or
 
-A predefined function object that performs the bitwise OR operation ( `operator|`) on its arguments.
+A predefined function object that performs the bitwise OR operation (`operator|`) on its arguments.
 
 ```cpp
 template <class Type = void>
@@ -414,14 +414,14 @@ struct bit_or<void>
 
 ### Parameters
 
-`Type`, `T`, `U`
+*Type*, *T*, *U*
  Any type that supports an `operator|` that takes operands of the specified or inferred types.
 
-`Left`
- The left operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.
+*Left*
+ The left operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-`Right`
- The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.
+*Right*
+ The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ### Return Value
 
@@ -455,14 +455,14 @@ struct bit_xor<void>
 
 ### Parameters
 
-`Type`, `T`, `U`
+*Type*, *T*, *U*
  Any type that supports an `operator^` that takes operands of the specified or inferred types.
 
-`Left`
- The left operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.
+*Left*
+ The left operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-`Right`
- The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.
+*Right*
+ The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ### Return Value
 
@@ -486,10 +486,10 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of the argument to wrap.
 
-`arg`
+*arg*
  The argument to wrap.
 
 ### Remarks
@@ -540,19 +540,19 @@ unspecified mem_fn(Ret Ty::*pm);
 
 ### Parameters
 
-`Ret`
+*Ret*
  The return type of the wrapped function.
 
-`Ty`
+*Ty*
  The type of the member function pointer.
 
 ### Remarks
 
 The template function returns a simple call wrapper `cw`, with a weak result type, such that the expression `cw(t, a2, ..., aN)` is equivalent to `INVOKE(pm, t, a2, ..., aN)`. It does not throw any exceptions.
 
-The returned call wrapper is derived from `std::unary_function<cv Ty*, Ret>` (hence defining the nested type `result_type` as a synonym for `Ret` and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type `Ty` is a pointer to member function with cv-qualifier `cv` that takes no arguments.
+The returned call wrapper is derived from `std::unary_function<cv Ty*, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
 
-The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, Ret>` (hence defining the nested type `result_type` as a synonym for `Ret`, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type `Ty` is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
+The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
 
 ### Example
 
@@ -613,8 +613,8 @@ const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg) const);
 
 ### Parameters
 
-`pmem`
- A pointer to the member function of class **Type** to be converted to a function object.
+*pmem*
+ A pointer to the member function of class `Type` to be converted to a function object.
 
 ### Return Value
 
@@ -700,12 +700,12 @@ const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pmem)(Arg) cons
 
 ### Parameters
 
-`pmem`
+*pmem*
  A pointer to the member function of class `Type` to be converted to a function object.
 
 ### Return Value
 
-A `const` or `non_const` function object of type `mem_fun_ref_t` or `mem_fun1_ref_t`.
+A **const** or `non_const` function object of type `mem_fun_ref_t` or `mem_fun1_ref_t`.
 
 ### Example
 
@@ -796,7 +796,7 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
 
 ### Parameters
 
-`pred`
+*pred*
  The unary predicate to be negated.
 
 ### Return Value
@@ -868,7 +868,7 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 
 ### Parameters
 
-`func`
+*func*
  The binary predicate to be negated.
 
 ### Return Value
@@ -947,7 +947,7 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 ### Parameters
 
-`pfunc`
+*pfunc*
  The unary or binary function pointer to be converted to an adaptable function.
 
 ### Return Value
@@ -1067,13 +1067,13 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 
 ### Parameters
 
-`Fty`
+*Fty*
  The type controlled by the function objects.
 
-`f1`
+*f1*
  The first function object.
 
-`f2`
+*f2*
  The second function object.
 
 ### Remarks
