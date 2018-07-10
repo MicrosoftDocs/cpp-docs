@@ -163,10 +163,10 @@ auto operator()(Types&&... args);
 
 ### Parameters
 
-`Types`
+*Types*
  The argument list types.
 
-`args`
+*args*
  The argument list.
 
 ### Remarks
@@ -208,10 +208,10 @@ reference_wrapper(Ty& val) noexcept;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to wrap.
 
-`val`
+*val*
  The value to wrap.
 
 ### Remarks
