@@ -97,11 +97,11 @@ bool full();
 
 ### Return Value
 
-`true` if `Max <= _Nblocks`; otherwise, `false`.
+**true** if `Max <= _Nblocks`; otherwise, **false**.
 
 ### Remarks
 
-This member function is called by `cache_freelist::deallocate`. If the call returns `true`, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
+This member function is called by `cache_freelist::deallocate`. If the call returns **true**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
 
 ## <a name="max_fixed_size"></a>  max_fixed_size::max_fixed_size
 

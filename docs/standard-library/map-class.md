@@ -69,7 +69,7 @@ We recommend that you make the map the associative container of choice when cond
 The map orders the elements it controls by calling a stored function object of type [key_compare](#key_compare). This stored object is a comparison function that is accessed by calling the [key_comp](#key_comp) method. In general, any two given elements are compared to determine whether one is less than the other or whether they are equivalent. As all elements are compared, an ordered sequence of non-equivalent elements is created.
 
 > [!NOTE]
-> The comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x,y) is a function object that has two argument objects x and y, and a return value of `true` or `false`. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive, and if equivalence is transitive, where two objects x and  y are defined to be equivalent when both f(x,y) and f(y,x) are `false`. If the stronger condition of equality between keys replaces that of equivalence, the ordering becomes total (in the sense that all the elements are ordered with regard to one other), and the keys matched will be indiscernible from one other.
+> The comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x,y) is a function object that has two argument objects x and y, and a return value of **true** or **false**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive, and if equivalence is transitive, where two objects x and  y are defined to be equivalent when both f(x,y) and f(y,x) are **false**. If the stronger condition of equality between keys replaces that of equivalence, the ordering becomes total (in the sense that all the elements are ordered with regard to one other), and the keys matched will be indiscernible from one other.
 >
 > In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
@@ -115,7 +115,7 @@ The map orders the elements it controls by calling a stored function object of t
 |[crend](#crend)|Returns a const iterator that points to the location after the last element in a reversed map.|
 |[emplace](#emplace)|Inserts an element constructed in place into the map.|
 |[emplace_hint](#emplace_hint)|Inserts an element constructed in place into the map, with a placement hint.|
-|[empty](#empty)|Returns `true` if a map is empty.|
+|[empty](#empty)|Returns **true** if a map is empty.|
 |[end](#end)|Returns the past-the-end iterator.|
 |[equal_range](#equal_range)|Returns a pair of iterators. The first iterator in the pair points to the first element in a `map` with a key that is greater than a specified key. The second iterator in the pair points to the first element in the `map` with a key that is equal to or greater than the key.|
 |[erase](#erase)|Removes an element or a range of elements in a map from the specified positions.|

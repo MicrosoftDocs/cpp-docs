@@ -157,7 +157,7 @@ bool operator==(
 
 ### Return Value
 
-`true` if the objects are equal, `false` if objects are not equal.
+**true** if the objects are equal, **false** if objects are not equal.
 
 ### Remarks
 

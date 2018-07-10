@@ -84,11 +84,11 @@ bool full();
 
 ### Return Value
 
-The member function always returns `false`.
+The member function always returns **false**.
 
 ### Remarks
 
-This member function is called by `cache_freelist::deallocate`. If the call returns `true`, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
+This member function is called by `cache_freelist::deallocate`. If the call returns **true**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
 
 ## <a name="released"></a>  max_unbounded::released
 

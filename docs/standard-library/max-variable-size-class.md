@@ -90,11 +90,11 @@ bool full();
 
 ### Return Value
 
-`true` if `_Nallocs / 16 + 16 <= _Nblocks`.
+**true** if `_Nallocs / 16 + 16 <= _Nblocks`.
 
 ### Remarks
 
-This member function is called by `cache_freelist::deallocate`. If the call returns `true`, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
+This member function is called by `cache_freelist::deallocate`. If the call returns **true**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
 
 ## <a name="max_variable_size"></a>  max_variable_size::max_variable_size
 

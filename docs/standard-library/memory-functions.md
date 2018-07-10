@@ -592,7 +592,7 @@ When you see error C2280 in connection with a `unique_ptr`, it is almost certain
 
 ## <a name="owner_less"></a>  owner_less
 
-Allows ownership-based mixed comparisons of shared and weak pointers. Returns `true` if the left parameter is ordered before right parameter by the member function `owner_before`.
+Allows ownership-based mixed comparisons of shared and weak pointers. Returns **true** if the left parameter is ordered before right parameter by the member function `owner_before`.
 
 ```cpp
 template <class Type>
