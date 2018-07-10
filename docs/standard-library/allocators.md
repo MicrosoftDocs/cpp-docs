@@ -27,7 +27,7 @@ The C++ Standard Library provides a default implementation for an allocator. In 
 
 ## Writing Your Own Allocator (C++11)
 
-The default allocator uses `new` and `delete` to allocate and deallocate memory. If you want to use a different method of memory allocation, such as using shared memory, then you must create your own allocator. If you are targeting C++11 and you need to write a new custom allocator, make it a minimal allocator if possible. Even if you have already implemented an old-style allocator, consider modifying it to be a *minimal allocator* in order to take advantage of the more efficient `construct()` method that will be provided for you automatically.
+The default allocator uses **new** and **delete** to allocate and deallocate memory. If you want to use a different method of memory allocation, such as using shared memory, then you must create your own allocator. If you are targeting C++11 and you need to write a new custom allocator, make it a minimal allocator if possible. Even if you have already implemented an old-style allocator, consider modifying it to be a *minimal allocator* in order to take advantage of the more efficient `construct()` method that will be provided for you automatically.
 
 A minimal allocator requires much less boilerplate and enable you to focus on the `allocate` and `deallocate` member functions which do all of the work. When creating a minimal allocator, do not implement any members except the ones shown in the example below:
 

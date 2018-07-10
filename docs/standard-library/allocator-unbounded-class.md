@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # allocator_unbounded Class
 
-Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_unbounded](../standard-library/max-unbounded-class.md).
+Describes an object that manages storage allocation and freeing for objects of type *Type* using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_unbounded](../standard-library/max-unbounded-class.md).
 
 ## Syntax
 
@@ -27,11 +27,11 @@ class allocator_unbounded;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|The type of elements allocated by the allocator.|
+|*Type*|The type of elements allocated by the allocator.|
 
 ## Remarks
 
-The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
+The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
 
 ## Requirements
 

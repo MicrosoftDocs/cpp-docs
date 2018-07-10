@@ -27,11 +27,11 @@ class allocator_chunklist;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|The type of elements allocated by the allocator.|
+|*Type*|The type of elements allocated by the allocator.|
 
 ## Remarks
 
-The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
+The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
 
 ## Requirements
 

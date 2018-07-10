@@ -28,12 +28,12 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### Parameters
 
-T
+*T*
  The type to modify.
 
 ## Remarks
 
-The `add_rvalue_reference` class has a member named `type`, which is an alias for the type of an rvalue reference to the template parameter `T`. The semantics of reference collapsing imply that, for non-object and non-function types `T`, `T&&` is a `T`. For example, when `T` is an lvalue reference type, `add_rvalue_reference<T>::type` is the lvalue reference type, not an rvalue reference.
+The `add_rvalue_reference` class has a member named `type`, which is an alias for the type of an rvalue reference to the template parameter *T*. The semantics of reference collapsing imply that, for non-object and non-function types *T*, `T&&` is a *T*. For example, when *T* is an lvalue reference type, `add_rvalue_reference<T>::type` is the lvalue reference type, not an rvalue reference.
 
 For convenience, \<type_traits> defines a helper template, `add_rvalue_reference_t`, that aliases the `type` member of `add_rvalue_reference`.
 

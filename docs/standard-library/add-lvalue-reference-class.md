@@ -28,12 +28,12 @@ using add_lvalue_reference_t = typename add_lvalue_reference<T>::type;
 
 ### Parameters
 
-`T`
+*T*
  The type to modify.
 
 ## Remarks
 
-An instance of the type modifier holds a modified-type that is `T` if `T` is an lvalue reference, otherwise `T&`.
+An instance of the type modifier holds a modified-type that is *T* if *T* is an lvalue reference, otherwise `T&`.
 
 ## Example
 

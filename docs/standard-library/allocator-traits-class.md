@@ -71,13 +71,13 @@ static pointer allocate(Alloc& al, size_type count,
 
 ### Parameters
 
-`al`
+*al*
  An allocator object.
 
-`count`
+*count*
  The number of elements to allocate.
 
-`hint`
+*hint*
  A `const_pointer` that might assist the allocator object in satisfying the request for storage by locating the address of an allocated object prior to the request. A null pointer is treated as no hint.
 
 ### Return Value
@@ -99,13 +99,13 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 ### Parameters
 
-`al`
+*al*
  An allocator object.
 
-`ptr`
+*ptr*
  A pointer to the location where the object is to be constructed.
 
-`args`
+*args*
  A list of arguments that is passed to the object constructor.
 
 ### Remarks
@@ -124,13 +124,13 @@ static void deallocate(Alloc al,
 
 ### Parameters
 
-`al`
+*al*
  An allocator object.
 
-`ptr`
+*ptr*
  A pointer to the starting location of the objects to be deallocated.
 
-`count`
+*count*
  The number of objects to deallocate.
 
 ### Remarks
@@ -150,10 +150,10 @@ static void destroy(Alloc& al, Uty* ptr);
 
 ### Parameters
 
-`al`
+*al*
  An allocator object.
 
-`ptr`
+*ptr*
  A pointer to the location of the object.
 
 ### Remarks
@@ -170,7 +170,7 @@ static size_type max_size(const Alloc& al);
 
 ### Parameters
 
-`al`
+*al*
  An allocator object.
 
 ### Remarks
@@ -187,12 +187,12 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 ### Parameters
 
-`al`
+*al*
  An allocator object.
 
 ### Return Value
 
-This method returns `al.select_on_container_copy_construction()`, if that type is well formed; otherwise it returns `al`.
+This method returns `al.select_on_container_copy_construction()`, if that type is well formed; otherwise it returns *al*.
 
 ### Remarks
 
