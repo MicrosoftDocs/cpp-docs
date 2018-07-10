@@ -138,7 +138,7 @@ Notice that this example uses the lambda expression `[] (int& elem) { elem *= 2;
 
 ## Example
 
-Debug iterator checks also cause an iterator variable that's declared in a `for` loop to be out of scope when the `for` loop scope ends.
+Debug iterator checks also cause an iterator variable that's declared in a **for** loop to be out of scope when the **for** loop scope ends.
 
 ```cpp
 // iterator_debugging_4.cpp

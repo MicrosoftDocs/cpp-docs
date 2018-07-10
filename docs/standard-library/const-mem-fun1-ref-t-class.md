@@ -30,14 +30,14 @@ class const_mem_fun1_ref_t
 
 ### Parameters
 
-`Pm`
- A pointer to the member function of class **Type** to be converted to a function object.
+*Pm*
+ A pointer to the member function of class `Type` to be converted to a function object.
 
-`left`
- The **const** object that the `Pm` member function is called on.
+*left*
+ The **const** object that the *Pm* member function is called on.
 
-`right`
- The argument that is being given to `Pm`.
+*right*
+ The argument that is being given to *Pm*.
 
 ## Return Value
 
@@ -45,7 +45,7 @@ An adaptable binary function.
 
 ## Remarks
 
-The template class stores a copy of `Pm`, which must be a pointer to a member function of class **Type**, in a private member object. It defines its member function `operator()` as returning ( `left`.\* *Pm*)( `right`) **const**.
+The template class stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning ( `left`.\* *Pm*)( `right`) **const**.
 
 ## Example
 
