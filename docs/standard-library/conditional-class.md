@@ -28,18 +28,18 @@ using conditional_t = typename conditional<_Test, _T1, _T2>::type;
 
 ### Parameters
 
-`B`
+*B*
  The value that determines the selected type.
 
-`T1`
+*T1*
  The type result when B is true.
 
-`T2`
+*T2*
  The type result when B is false.
 
 ## Remarks
 
-The template member typedef `conditional<B, T1, T2>::type` evaluates to `T1` when `B` evaluates to `true`, and evaluates to `T2` when `B` evaluates to `false`.
+The template member typedef `conditional<B, T1, T2>::type` evaluates to *T1* when *B* evaluates to **true**, and evaluates to *T2* when *B* evaluates to **false**.
 
 ## Requirements
 

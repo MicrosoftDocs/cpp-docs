@@ -29,11 +29,11 @@ class const_mem_fun_t : public unary_function <Type *, Result>
 
 ### Parameters
 
-`Pm`
- A pointer to the member function of class **Type** to be converted to a function object.
+*Pm*
+ A pointer to the member function of class `Type` to be converted to a function object.
 
-`Pleft`
- The object that the `Pm` member function is called on.
+*Pleft*
+ The object that the *Pm* member function is called on.
 
 ## Return Value
 
@@ -41,7 +41,7 @@ An adaptable unary function.
 
 ## Remarks
 
-The template class stores a copy of `Pm`, which must be a pointer to a member function of class **Type**, in a private member object. It defines its member function `operator()` as returning ( `Pleft`->\* `Pm`)() **const**.
+The template class stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning ( `Pleft`->\* `Pm`)() **const**.
 
 ## Example
 
