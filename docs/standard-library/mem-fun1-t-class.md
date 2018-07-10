@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # mem_fun1_t Class
 
-An adapter class that allows a **non_const** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument.
+An adapter class that allows a `non_const` member function that takes a single argument to be called as a binary function object when initialized with a pointer argument.
 
 ## Syntax
 
@@ -33,14 +33,14 @@ class mem_fun1_t : public binary_function<Type *, Arg, Result> {
 
 ### Parameters
 
-`_Pm`
- A pointer to the member function of class **Type** to be converted to a function object.
+*_Pm*
+ A pointer to the member function of class `Type` to be converted to a function object.
 
-`_Pleft`
- The object that the `_Pm` member function is called on.
+*_Pleft*
+ The object that the *_Pm* member function is called on.
 
-`right`
- The argument that is being given to `_Pm`.
+*right*
+ The argument that is being given to *_Pm*.
 
 ## Return Value
 
@@ -48,7 +48,7 @@ An adaptable binary function.
 
 ## Remarks
 
-The template class stores a copy of `_Pm`, which must be a pointer to a member function of class **Type**, in a private member object. It defines its member function `operator()` as returning ( **_Pleft**->\* `_Pm`)( **right**).
+The template class stores a copy of *_Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning ( **_Pleft**->\* `_Pm`)( **right**).
 
 ## Example
 

@@ -41,16 +41,16 @@ bool operator!=(
 
 ### Parameters
 
-`left`
+*left*
  One of the objects to be tested for inequality.
 
-`right`
+*right*
  One of the objects to be tested for inequality.
 
-`Ty1`
+*Ty1*
  The type controlled by the left shared pointer.
 
-`Ty2`
+*Ty2*
  The type controlled by the right shared pointer.
 
 ### Return Value
@@ -143,16 +143,16 @@ bool operator==(
 
 ### Parameters
 
-`left`
+*left*
  One of the objects to be tested for equality.
 
-`right`
+*right*
  One of the objects to be tested for equality.
 
-`Ty1`
+*Ty1*
  The type controlled by the left shared pointer.
 
-`Ty2`
+*Ty2*
  The type controlled by the right shared pointer.
 
 ### Return Value
@@ -163,7 +163,7 @@ bool operator==(
 
 The first template operator returns true. (All default allocators are equal.)
 
-The second and third template operators return ` left.get() ==  right.get()`.
+The second and third template operators return `left.get() ==  right.get()`.
 
 ### Example
 
@@ -251,16 +251,16 @@ bool operator>=(
 
 ### Parameters
 
-`left`
+*left*
  One of the objects to be compared.
 
-`right`
+*right*
  One of the objects to be compared.
 
-`Ty1`
+*Ty1*
  The type controlled by the left shared pointer.
 
-`Ty2`
+*Ty2*
  The type controlled by the right shared pointer.
 
 ### Remarks
@@ -285,16 +285,16 @@ bool operator<(
 
 ### Parameters
 
-`left`
+*left*
  One of the objects to be compared.
 
-`right`
+*right*
  One of the objects to be compared.
 
-`Ty1`
+*Ty1*
  The type controlled by the left pointer.
 
-`Ty2`
+*Ty2*
  The type controlled by the right pointer.
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
@@ -315,16 +315,16 @@ bool operator<=(
 
 ### Parameters
 
-`left`
+*left*
  One of the objects to be compared.
 
-`right`
+*right*
  One of the objects to be compared.
 
-`Ty1`
+*Ty1*
  The type controlled by the left shared pointer.
 
-`Ty2`
+*Ty2*
  The type controlled by the right shared pointer.
 
 ### Remarks
@@ -349,16 +349,16 @@ bool operator>(
 
 ### Parameters
 
-`left`
+*left*
  One of the objects to be compared.
 
-`right`
+*right*
  One of the objects to be compared.
 
-`Ty1`
+*Ty1*
  The type controlled by the left shared pointer.
 
-`Ty2`
+*Ty2*
  The type controlled by the right shared pointer.
 
 ## <a name="op_lt_lt"></a>  operator&lt;&lt;
@@ -373,19 +373,19 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### Parameters
 
-`Elem`
+*Elem*
  The type of the stream element.
 
-`Tr`
+*Tr*
  The type the stream element traits.
 
-`Ty`
+*Ty*
  The type controlled by the shared pointer.
 
-`out`
+*out*
  The output stream.
 
-`sp`
+*sp*
  The shared pointer.
 
 ### Remarks

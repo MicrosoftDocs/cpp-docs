@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # moneypunct Class
 
-The template class describes an object that can serve as a locale facet to describe the sequences of type `CharType` used to represent a monetary input field or a monetary output field. If the template parameter `Intl` is `true`, international conventions are observed.
+The template class describes an object that can serve as a locale facet to describe the sequences of type *CharType* used to represent a monetary input field or a monetary output field. If the template parameter *Intl* is *true*, international conventions are observed.
 
 ## Syntax
 
@@ -25,17 +25,17 @@ class moneypunct;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type used within a program to encode characters.
 
-`Intl`
+*Intl*
  A flag specifying whether international conventions are to be observed.
 
 ## Remarks
 
 As with any locale facet, the static object ID has an initial stored value of zero. The first attempt to access its stored value stores a unique positive value in **id.**
 
-The const static object intl stores the value of the template parameter **Intl**.
+The const static object intl stores the value of the template parameter *Intl*.
 
 ### Constructors
 
@@ -236,7 +236,7 @@ A locale-specific rule for determining how digits are grouped to the left of any
 
 ### Example
 
-See the example for [grouping](#grouping), where the virtual member function is called by **grouping**.
+See the example for [grouping](#grouping), where the virtual member function is called by `grouping`.
 
 ## <a name="do_neg_format"></a>  moneypunct::do_neg_format
 
@@ -248,19 +248,19 @@ virtual pattern do_neg_format() const;
 
 ### Return Value
 
-The protected virtual member function returns a locale-specific rule for determining how to generate a monetary output field for a negative amount. Each of the four elements of **pattern::field** can have the values:
+The protected virtual member function returns a locale-specific rule for determining how to generate a monetary output field for a negative amount. Each of the four elements of `pattern::field` can have the values:
 
-- **none** to match zero or more spaces or generate nothing.
+- `none` to match zero or more spaces or generate nothing.
 
-- **sign** to match or generate a positive or negative sign.
+- `sign` to match or generate a positive or negative sign.
 
-- **space** to match zero or more spaces or generate a space.
+- `space` to match zero or more spaces or generate a space.
 
-- **symbol** to match or generate a currency symbol.
+- `symbol` to match or generate a currency symbol.
 
-- **value** to match or generate a monetary value.
+- `value` to match or generate a monetary value.
 
-Components of a monetary output field are generated and components of a monetary input field are matched in the order in which these elements appear in **pattern::field**. Each of the values **sign**, **symbol**, **value**, and either **none** or **space** must appear exactly once. The value **none** must not appear first. The value space **must** not appear first or last. If **Intl** is true, the order is **symbol**, **sign**, **none**, then **value**.
+Components of a monetary output field are generated and components of a monetary input field are matched in the order in which these elements appear in `pattern::field`. Each of the values `sign`, `symbol`, `value`, and either `none` or `space` must appear exactly once. The value `none` must not appear first. The value space **must** not appear first or last. If `Intl` is true, the order is `symbol`, `sign`, `none`, then `value`.
 
 The template version of `moneypunct`\< **CharType**, **Intl**> returns `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`.
 
@@ -482,12 +482,12 @@ explicit moneypunct(size_t _Refs = 0);
 
 ### Parameters
 
-`_Refs`
+*_Refs*
  Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
-The possible values for the `_Refs` parameter and their significance are:
+The possible values for the *_Refs* parameter and their significance are:
 
 - 0: The lifetime of the object is managed by the locales that contain it.
 

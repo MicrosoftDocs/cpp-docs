@@ -56,11 +56,11 @@ void allocated(std::size_t _Nx = 1);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Nx`|The increment value.|
+|*_Nx*|The increment value.|
 
 ### Remarks
 
-This member function adds `_Nx` to the stored value `_Nallocs`. This member function is called after each successful call by `cache_freelist::allocate` to operator `new`. The argument `_Nx` is the number of memory blocks in the chunk allocated by operator `new`.
+This member function adds *_Nx* to the stored value `_Nallocs`. This member function is called after each successful call by `cache_freelist::allocate` to operator **new**. The argument *_Nx* is the number of memory blocks in the chunk allocated by operator **new**.
 
 ## <a name="deallocated"></a>  max_variable_size::deallocated
 
@@ -74,11 +74,11 @@ void deallocated(std::size_t _Nx = 1);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Nx`|The increment value.|
+|*_Nx*|The increment value.|
 
 ### Remarks
 
-The member function subtracts `_Nx` from the stored value `_Nallocs`. This member function is called after each call by `cache_freelist::deallocate` to operator `delete`. The argument `_Nx` is the number of memory blocks in the chunk deallocated by operator `delete`.
+The member function subtracts *_Nx* from the stored value `_Nallocs`. This member function is called after each call by `cache_freelist::deallocate` to operator **delete**. The argument *_Nx* is the number of memory blocks in the chunk deallocated by operator **delete**.
 
 ## <a name="full"></a>  max_variable_size::full
 
@@ -94,7 +94,7 @@ bool full();
 
 ### Remarks
 
-This member function is called by `cache_freelist::deallocate`. If the call returns `true`, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator `delete` to deallocate the block.
+This member function is called by `cache_freelist::deallocate`. If the call returns `true`, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
 
 ## <a name="max_variable_size"></a>  max_variable_size::max_variable_size
 

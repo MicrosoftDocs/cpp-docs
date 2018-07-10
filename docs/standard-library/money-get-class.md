@@ -25,10 +25,10 @@ class money_get : public locale::facet;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type used within a program to encode characters in a locale.
 
-`InputIterator`
+*InputIterator*
  The type of iterator from which the get functions read their input.
 
 ## Remarks
@@ -72,7 +72,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **CharType**.
+The type is a synonym for the template parameter *CharType*.
 
 ## <a name="do_get"></a>  money_get::do_get
 
@@ -94,22 +94,22 @@ virtual iter_type do_get(iter_type first,
 
 ### Parameters
 
-`first`
+*first*
  Input iterator addressing the beginning of the sequence to be converted.
 
-`last`
+*last*
  Input iterator addressing the end of the sequence to be converted.
 
-`Intl`
+*Intl*
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-`Iosbase`
+*Iosbase*
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
-`State`
+*State*
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded or not.
 
-`val`
+*val*
  A string storing the converted sequence.
 
 ### Return Value
@@ -118,9 +118,9 @@ An input iterator addressing the first element beyond the monetary input field.
 
 ### Remarks
 
-The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `-`), to represent the amount and stores the result in the [string_type](#string_type) object `val`. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in `val` and sets `ios_base::failbit` in `State`. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.
+The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `-`), to represent the amount and stores the result in the [string_type](#string_type) object *val*. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in *val* and sets `ios_base::failbit` in *State*. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.
 
-The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type `long double` and stores that value in `val`.
+The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type **long double** and stores that value in *val*.
 
 The format of a monetary input field is determined by the [locale facet](../standard-library/locale-class.md#facet_class)**fac** returned by the effective call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
@@ -176,22 +176,22 @@ iter_type get(iter_type first,
 
 ### Parameters
 
-`first`
+*first*
  Input iterator addressing the beginning of the sequence to be converted.
 
-`last`
+*last*
  Input iterator addressing the end of the sequence to be converted.
 
-`Intl`
+*Intl*
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-`Iosbase`
+*Iosbase*
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-`State`
+*State*
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
-`val`
+*val*
  A string storing the converted sequence.
 
 ### Return Value
@@ -273,12 +273,12 @@ explicit money_get(size_t _Refs = 0);
 
 ### Parameters
 
-`_Refs`
+*_Refs*
  Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
-The possible values for the `_Refs` parameter and their significance are:
+The possible values for the *_Refs* parameter and their significance are:
 
 - 0: The lifetime of the object is managed by the locales that contain it.
 
