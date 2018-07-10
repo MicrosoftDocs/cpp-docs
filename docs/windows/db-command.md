@@ -1,7 +1,7 @@
 ---
 title: "db_command | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/10/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_command"]
