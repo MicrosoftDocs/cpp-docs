@@ -145,7 +145,7 @@ bool operator==(
 
 ### Return Value
 
-`true` if the iterator objects are equal; `false` if the iterator objects are not equal.
+**true** if the iterator objects are equal; **false** if the iterator objects are not equal.
 
 ### Remarks
 
