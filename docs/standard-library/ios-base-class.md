@@ -65,7 +65,7 @@ An object of class ios_base also stores stream state information, in an object o
 |[basefield](#fmtflags)|A bitmask defined as `dec` &#124; `hex` &#124; `oct`.|
 |[beg](#seekdir)|Specifies seeking relative to the beginning of a sequence.|
 |[binary](#openmode)|Specifies that a file should be read as a binary stream, rather than as a text stream.|
-|[boolalpha](#fmtflags)|Specifies insertion or extraction of objects of type **bool** as names (such as `true` and `false`) rather than as numeric values.|
+|[boolalpha](#fmtflags)|Specifies insertion or extraction of objects of type **bool** as names (such as **true** and **false**) rather than as numeric values.|
 |[cur](#seekdir)|Specifies seeking relative to the current position within a sequence.|
 |[dec](#fmtflags)|Specifies insertion or extraction of integer values in decimal format.|
 |[end](#seekdir)|Specifies seeking relative to the end of a sequence.|
@@ -324,7 +324,7 @@ The type is a bitmask type that describes an object that can store format flags.
 
 - `right`, to pad to a field width as needed by inserting fill characters at the beginning of a generated field (right justification).
 
-- `boolalpha`, to insert or extract objects of type **bool** as names (such as `true` and `false`) rather than as numeric values.
+- `boolalpha`, to insert or extract objects of type **bool** as names (such as **true** and **false**) rather than as numeric values.
 
 - `fixed`, to insert floating-point values in fixed-point format (with no exponent field).
 

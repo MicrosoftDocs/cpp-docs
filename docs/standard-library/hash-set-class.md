@@ -726,7 +726,7 @@ emplace(
 
 ### Return Value
 
-The `emplace` member function returns a pair whose **bool** component returns `true` if an insertion was make and `false` if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
+The `emplace` member function returns a pair whose **bool** component returns **true** if an insertion was make and **false** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
 ### Remarks
 
@@ -1401,7 +1401,7 @@ void insert(
 
 ### Return Value
 
-The first `insert` member function returns a pair whose **bool** component returns `true` if an insertion was make and `false` if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
+The first `insert` member function returns a pair whose **bool** component returns **true** if an insertion was make and **false** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
 To access the iterator component of a pair `pr` returned by this member function, use `pr.first` and to dereference it, use `*(pr.first)`. To access the **bool** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `*(pr.second)`.
 
