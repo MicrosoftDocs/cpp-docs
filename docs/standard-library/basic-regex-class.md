@@ -73,21 +73,21 @@ class basic_regex {
 
 ### Parameters
 
-`Elem`
+*Elem*
  The type of elements to match.
 
-`RXtraits`
+*RXtraits*
  Traits class for elements.
 
 ## Remarks
 
-The template class describes an object that holds a regular expression. Objects of this template class can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this template class, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type `char`, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type `wchar_t`.
+The template class describes an object that holds a regular expression. Objects of this template class can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this template class, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **char**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **wchar_t**.
 
-The template argument `RXtraits` describes various important properties of the syntax of the regular expressions that the template class supports. A class that specifies these regular expression traits must have the same external interface as an object of template class [regex_traits Class](../standard-library/regex-traits-class.md).
+The template argument *RXtraits* describes various important properties of the syntax of the regular expressions that the template class supports. A class that specifies these regular expression traits must have the same external interface as an object of template class [regex_traits Class](../standard-library/regex-traits-class.md).
 
 Some functions take an operand sequence that defines a regular expression. You can specify such an operand sequence several ways:
 
-`ptr` -- a null-terminated sequence (such as a C string, for `Elem` of type `char`) beginning at `ptr` (which must not be a null pointer), where the terminating element is the value `value_type()` and is not part of the operand sequence
+`ptr` -- a null-terminated sequence (such as a C string, for *Elem* of type **char**) beginning at `ptr` (which must not be a null pointer), where the terminating element is the value `value_type()` and is not part of the operand sequence
 
 `ptr`, `count` -- a sequence of `count` elements beginning at `ptr` (which must not be a null pointer)
 
@@ -97,7 +97,7 @@ Some functions take an operand sequence that defines a regular expression. You c
 
 `right` -- the `basic_regex` object `right`
 
-These member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to those described by the `RXtraits` type.
+These member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to those described by the *RXtraits* type.
 
 ## Requirements
 
@@ -139,37 +139,37 @@ basic_regex& assign(
 
 ### Parameters
 
-`STtraits`
+*STtraits*
  Traits class for a string source.
 
-`STalloc`
+*STalloc*
  Allocator class for a string source.
 
-`InIt`
+*InIt*
  Input iterator type for a range source.
 
-`right`
+*right*
  Regex source to copy.
 
-`ptr`
+*ptr*
  Pointer to beginning of sequence to copy.
 
-`flags`
+*flags*
  Syntax option flags to add while copying.
 
-`len/TD>`
+*len/TD>*
  Length of sequence to copy.
 
-`str`
+*str*
  String to copy.
 
-`first`
+*first*
  Beginning of sequence to copy.
 
-`last`
+*last*
  End of sequence to copy.
 
-`IList`
+*IList*
  The initializer_list to copy.
 
 ### Remarks
@@ -295,37 +295,37 @@ explicit basic_regex(
 
 ### Parameters
 
-`STtraits`
+*STtraits*
  Traits class for a string source.
 
-`STalloc`
+*STalloc*
  Allocator class for a string source.
 
-`InIt`
+*InIt*
  Input iterator type for a range source.
 
-`right`
+*right*
  Regex source to copy.
 
-`ptr`
+*ptr*
  Pointer to beginning of sequence to copy.
 
-`flags`
+*flags*
  Syntax option flags to add while copying.
 
-`len/TD>`
+*len/TD>*
  Length of sequence to copy.
 
-`str`
+*str*
  String to copy.
 
-`first`
+*first*
  Beginning of sequence to copy.
 
-`last`
+*last*
  End of sequence to copy.
 
-`IList`
+*IList*
  The initializer_list to copy.
 
 ### Remarks
@@ -719,7 +719,7 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-`loc`
+*loc*
  The locale object to store.
 
 ### Remarks
@@ -1020,16 +1020,16 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### Parameters
 
-`STtraits`
+*STtraits*
  Traits class for a string source.
 
-`STalloc`
+*STalloc*
  Allocator class for a string source.
 
-`right`
+*right*
  Regex source to copy.
 
-`str`
+*str*
  String to copy.
 
 ### Remarks
@@ -1131,12 +1131,12 @@ void swap(basic_regex& right) throw();
 
 ### Parameters
 
-`right`
+*right*
  The regular expression object to swap with.
 
 ### Remarks
 
-The member function swaps the regular expressions between `*this` and `right`. It does so in constant time and throws no exceptions.
+The member function swaps the regular expressions between `*this` and *right*. It does so in constant time and throws no exceptions.
 
 ### Example
 
@@ -1233,7 +1233,7 @@ typedef Elem value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter `Elem`.
+The type is a synonym for the template parameter *Elem*.
 
 ### Example
 
