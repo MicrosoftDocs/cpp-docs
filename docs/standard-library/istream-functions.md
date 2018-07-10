@@ -33,10 +33,10 @@ void swap(
 
 ### Parameters
 
-`left`
+*left*
  A stream.
 
-`right`
+*right*
  A stream.
 
 ## <a name="ws"></a>  ws
@@ -49,7 +49,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 ### Parameters
 
-`_Istr`
+*_Istr*
  A stream.
 
 ### Return Value
@@ -60,7 +60,7 @@ The stream.
 
 The manipulator extracts and discards any elements `ch` for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **Elem**> >( [getloc](../standard-library/ios-base-class.md#getloc)). **is**( **ctype**\< **Elem**>:: **space**, **ch**) is true.
 
-The function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns `_Istr`.
+The function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns *_Istr*.
 
 ### Example
 

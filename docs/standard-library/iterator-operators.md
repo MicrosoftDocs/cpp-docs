@@ -33,11 +33,11 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 ### Parameters
 
-`left`
- An object of type **iterator**.
+*left*
+ An object of type `iterator`.
 
-`right`
- An object of type **iterator**.
+*right*
+ An object of type `iterator`.
 
 ### Return Value
 
@@ -137,10 +137,10 @@ bool operator==(
 
 ### Parameters
 
-`left`
+*left*
  An object of type iterator.
 
-`right`
+*right*
  An object of type iterator.
 
 ### Return Value
@@ -151,7 +151,7 @@ bool operator==(
 
 One iterator object is equal to another if they address the same elements in a container. If two iterators point to different elements in a container, then they are not equal.
 
-The first two template operators return true only if both `left` and `right` store the same iterator. The third template operator returns true only if both `left` and `right` store the same stream pointer. The fourth template operator returns ` left.equal ( right)`.
+The first two template operators return true only if both *left* and *right* store the same iterator. The third template operator returns true only if both *left* and *right* store the same stream pointer. The fourth template operator returns ` left.equal ( right)`.
 
 ### Example
 
@@ -226,11 +226,11 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### Parameters
 
-`left`
- An object of type **iterator**.
+*left*
+ An object of type `iterator`.
 
-`right`
- An object of type **iterator**.
+*right*
+ An object of type `iterator`.
 
 ### Return Value
 
@@ -317,10 +317,10 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### Parameters
 
-`left`
+*left*
  An object of type iterator.
 
-`right`
+*right*
  An object of type iterator.
 
 ### Return Value
@@ -412,10 +412,10 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### Parameters
 
-`left`
+*left*
  An object of type iterator.
 
-`right`
+*right*
  An object of type iterator.
 
 ### Return Value
@@ -501,10 +501,10 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### Parameters
 
-`left`
+*left*
  An object of type iterator.
 
-`right`
+*right*
  An object of type iterator.
 
 ### Return Value
@@ -605,15 +605,15 @@ operator+(
 
 ### Parameters
 
-`_Off`
+*_Off*
  The number of positions the const move_iterator or const reverse_iterator is to be offset.
 
-`right`
+*right*
  The iterator to be offset.
 
 ### Return Value
 
-Returns the sum `right` + `_Off`.
+Returns the sum *right* + *_Off*.
 
 ### Example
 
@@ -682,10 +682,10 @@ Tdiff operator-(
 
 ### Parameters
 
-`left`
+*left*
  An iterator.
 
-`right`
+*right*
  An iterator.
 
 ### Return Value

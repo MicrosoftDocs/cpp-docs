@@ -59,14 +59,14 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 
 ### Parameters
 
-`Mtx`
+*Mtx*
  A *mutex type* object.
 
 ### Remarks
 
-The first constructor constructs an object of type `lock_guard` and locks `Mtx`. If `Mtx` is not a recursive mutex, it must be unlocked when this constructor is called.
+The first constructor constructs an object of type `lock_guard` and locks *Mtx*. If *Mtx* is not a recursive mutex, it must be unlocked when this constructor is called.
 
-The second constructor does not lock `Mtx`. `Mtx` must be locked when this constructor is called. The constructor throws no exceptions.
+The second constructor does not lock *Mtx*. *Mtx* must be locked when this constructor is called. The constructor throws no exceptions.
 
 ## <a name="dtorlock_guard_destructor"></a>  lock_guard::~lock_guard Destructor
 
