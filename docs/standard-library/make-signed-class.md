@@ -28,12 +28,12 @@ using make_signed_t = typename make_signed<T>::type;
 
 ### Parameters
 
-`T`
+*T*
  The type to modify.
 
 ## Remarks
 
-An instance of the type modifier holds a modified-type that is `T` if `is_signed<T>` holds true. Otherwise it is the smallest unsigned type `UT` for which `sizeof (T) <= sizeof (UT)`.
+An instance of the type modifier holds a modified-type that is *T* if `is_signed<T>` holds true. Otherwise it is the smallest unsigned type `UT` for which `sizeof (T) <= sizeof (UT)`.
 
 ## Requirements
 

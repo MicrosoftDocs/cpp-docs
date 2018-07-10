@@ -30,19 +30,19 @@ void advance(
 
 ### Parameters
 
-`InIt`
+*InIt*
  The iterator that is to be incremented and that must satisfy the requirements for an input iterator.
 
-`Off`
+*Off*
  An integral type that is convertible to the iterator's difference type and that specifies the number of increments the position of the iterator is to be advanced.
 
 ### Remarks
 
 The range advanced through must be nonsingular, where the iterators must be dereferenceable or past the end.
 
-If the **InputIterator** satisfies the requirements for a bidirectional iterator type, then `Off` may be negative. If **InputIterator** is an input or forward iterator type, `Off` must be nonnegative.
+If the `InputIterator` satisfies the requirements for a bidirectional iterator type, then *Off* may be negative. If `InputIterator` is an input or forward iterator type, *Off* must be nonnegative.
 
-The advance function has constant complexity when **InputIterator** satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.
+The advance function has constant complexity when `InputIterator` satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.
 
 ### Example
 
@@ -102,12 +102,12 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
 
 ### Parameters
 
-`_Cont`
+*_Cont*
  The container into which the back insertion is to be executed.
 
 ### Return Value
 
-A `back_insert_iterator` associated with the container object `_Cont`.
+A `back_insert_iterator` associated with the container object *_Cont*.
 
 ### Remarks
 
@@ -181,17 +181,17 @@ Ty *begin(Ty (& array)[Size]);
 
 ### Parameters
 
-`cont`
+*cont*
  A container.
 
-`array`
+*array*
  An array of objects of type `Ty`.
 
 ### Return Value
 
 The first two template functions return `cont.begin()`. The first function is non-constant; the second one is constant.
 
-The third template function returns `array`.
+The third template function returns *array*.
 
 ### Example
 
@@ -276,7 +276,7 @@ auto cbegin(const Container& cont)
 
 ### Parameters
 
-`cont`
+*cont*
  A container or initializer_list.
 
 ### Return Value
@@ -287,7 +287,7 @@ A constant `cont.begin()`.
 
 This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
 
-You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -309,7 +309,7 @@ auto cend(const Container& cont)
 
 ### Parameters
 
-`cont`
+*cont*
  A container or initializer_list.
 
 ### Return Value
@@ -320,7 +320,7 @@ A constant `cont.end()`.
 
 This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
 
-You can use this member function in place of the [end()](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container or `initializer_list` of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the [end()](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container or `initializer_list` of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -341,19 +341,19 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### Parameters
 
-`first`
+*first*
  The first iterator whose distance from the second is to be determined.
 
-`last`
+*last*
  The second iterator whose distance from the first is to be determined.
 
 ### Return Value
 
-The number of times that `first` must be incremented until it equal `last`.
+The number of times that *first* must be incremented until it equal *last*.
 
 ### Remarks
 
-The distance function has constant complexity when **InputIterator** satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.
+The distance function has constant complexity when `InputIterator` satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.
 
 ### Example
 
@@ -422,10 +422,10 @@ Ty *end(Ty (& array)[Size]);
 
 ### Parameters
 
-`cont`
+*cont*
  A container.
 
-`array`
+*array*
  An array of objects of type `Ty`.
 
 ### Return Value
@@ -449,12 +449,12 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### Parameters
 
-`_Cont`
+*_Cont*
  The container object whose front is having an element inserted.
 
 ### Return Value
 
-A `front_insert_iterator` associated with the container object `_Cont`.
+A `front_insert_iterator` associated with the container object *_Cont*.
 
 ### Remarks
 
@@ -523,10 +523,10 @@ inserter(
 
 ### Parameters
 
-`_Cont`
+*_Cont*
  The container to which new elements are to be added.
 
-`_Where`
+*_Where*
  An iterator locating the point of insertion.
 
 ### Remarks
@@ -598,13 +598,13 @@ checked_array_iterator<Iter>
 
 ### Parameters
 
-`Ptr`
+*Ptr*
  A pointer to the destination array.
 
-`Size`
+*Size*
  The size of the destination array.
 
-`Index`
+*Index*
  Optional index into the array.
 
 ### Return Value
@@ -687,7 +687,7 @@ make_move_iterator(const Iterator& _It);
 
 ### Parameters
 
-`_It`
+*_It*
  The iterator stored in the new move iterator.
 
 ### Remarks
@@ -709,7 +709,7 @@ unchecked_array_iterator<Iter>
 
 ### Parameters
 
-`Ptr`
+*Ptr*
  A pointer to the destination array.
 
 ### Return Value
@@ -787,19 +787,19 @@ InputIterator next(
 
 ### Parameters
 
-`first`
+*first*
  The current position.
 
-`_Off`
+*_Off*
  The number of times to iterate.
 
 ### Return Value
 
-Returns the new iterator position after iterating `_Off` times.
+Returns the new iterator position after iterating *_Off* times.
 
 ### Remarks
 
-The template function returns `next` incremented `_Off` times
+The template function returns `next` incremented *_Off* times
 
 ## <a name="prev"></a>  prev
 
@@ -814,10 +814,10 @@ BidirectionalIterator prev(
 
 ### Parameters
 
-`first`
+*first*
  The current position.
 
-`_Off`
+*_Off*
  The number of times to iterate.
 
 ### Remarks
