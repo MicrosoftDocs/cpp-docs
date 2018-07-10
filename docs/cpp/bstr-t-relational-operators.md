@@ -31,7 +31,7 @@ bool operator>=(const _bstr_t& str) const throw( );
 ```  
   
 ## Remarks  
- These operators compare two `_bstr_t` objects lexicographically. The operators return **true** if the comparisons hold, otherwise return **false**.  
+ These operators compare two `_bstr_t` objects lexicographically. The operators return TRUE if the comparisons hold, otherwise return FALSE.  
   
  **END Microsoft Specific**  
   

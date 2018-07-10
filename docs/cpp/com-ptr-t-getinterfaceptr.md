@@ -26,7 +26,7 @@ Interface*& GetInterfacePtr() throw();
 ```  
   
 ## Remarks  
- Returns the encapsulated interface pointer, which may be **NULL**.  
+ Returns the encapsulated interface pointer, which may be NULL.  
   
  **END Microsoft Specific**  
   

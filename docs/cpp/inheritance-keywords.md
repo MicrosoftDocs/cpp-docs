@@ -41,7 +41,7 @@ int S::*p;
   
 -   Using the [pointers_to_members](../preprocessor/pointers-to-members.md) pragma  
   
--   Using the inheritance keywords `__single_inheritance`, `__multiple_inheritance`, and `__virtual_inheritance`. This technique controls the inheritance model on a per-class basis.  
+-   Using the inheritance keywords **__single_inheritance**, **__multiple_inheritance**, and **__virtual_inheritance**. This technique controls the inheritance model on a per-class basis.  
   
     > [!NOTE]
     >  If you always declare a pointer to a member of a class after defining the class, you don't need to use any of these options.  

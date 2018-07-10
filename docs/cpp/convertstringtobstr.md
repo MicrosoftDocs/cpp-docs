@@ -25,7 +25,7 @@ BSTR __stdcall ConvertStringToBSTR(const char* pSrc)
 ```  
   
 #### Parameters  
- `pSrc`  
+ *pSrc*  
  A **char \*** variable.  
   
 ## Example  

@@ -28,7 +28,7 @@ Run-time type information (RTTI) is a mechanism that allows the type of an objec
   
 -   The [type_info](../cpp/type-info-class.md) class.  
   
-     Used to hold the type information returned by the `typeid` operator.  
+     Used to hold the type information returned by the **typeid** operator.  
   
 ## See Also  
  [Casting](../cpp/casting.md)

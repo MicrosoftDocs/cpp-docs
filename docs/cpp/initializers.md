@@ -111,7 +111,7 @@ int main() {
 ```  
   
 ### <a name="default_initialization"></a> Default initialization  
- Default initialization for classes, structs, and unions is initialization with a default constructor. The default constructor can be called with no initialization expression or with the `new` keyword:  
+ Default initialization for classes, structs, and unions is initialization with a default constructor. The default constructor can be called with no initialization expression or with the **new** keyword:  
   
 ```cpp  
 MyClass mc1;  
@@ -175,7 +175,7 @@ int main() {
   
 -   an anonymous temporary object is initialized using empty parentheses or braces  
   
--   an object is initialized with the `new` keyword plus empty parentheses or braces  
+-   an object is initialized with the **new** keyword plus empty parentheses or braces  
   
  Value initialization does the following:  
   
@@ -265,9 +265,9 @@ shared_ptr<int> sp = new int(1729); // the constructor is explicit; same error
   
 -   a variable is initialized with non-empty braces or parentheses  
   
--   a variable is initialized with the `new` keyword plus non-empty braces or parentheses  
+-   a variable is initialized with the **new** keyword plus non-empty braces or parentheses  
   
--   a variable is initialized with `static_cast`  
+-   a variable is initialized with **static_cast**  
   
 -   in a constructor, base classes and non-static members are initialized with an initializer list  
   
@@ -307,7 +307,7 @@ int main(){
   
 -   a variable is initialized  
   
--   a class is initialized with the `new` keyword  
+-   a class is initialized with the **new** keyword  
   
 -   an object is returned from a function  
   
@@ -502,7 +502,7 @@ int main()
     class c {public:   int& i;};  
     ```  
   
--   Declaration of a variable explicitly specified as `extern`. For example:  
+-   Declaration of a variable explicitly specified as **extern**. For example:  
   
     ```  
     extern int& iVal;  
@@ -513,10 +513,10 @@ int main()
  ![Decision graph for initialization of ref types](../cpp/media/vc38s71.gif "vc38S71")  
 Decision Graph for Initialization of Reference Types  
   
- References to `volatile` types (declared as `volatile` *typename***&** *identifier*) can be initialized with `volatile` objects of the same type or with objects that have not been declared as `volatile`. They cannot, however, be initialized with **const** objects of that type. Similarly, references to **const** types (declared as **const** *typename***&** *identifier*) can be initialized with **const** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **const**). They cannot, however, be initialized with `volatile` objects of that type.  
+ References to **volatile** types (declared as **volatile** *typename***&** *identifier*) can be initialized with **volatile** objects of the same type or with objects that have not been declared as **volatile**. They cannot, however, be initialized with **const** objects of that type. Similarly, references to **const** types (declared as **const** *typename***&** *identifier*) can be initialized with **const** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **const**). They cannot, however, be initialized with **volatile** objects of that type.  
   
- References that are not qualified with either the **const** or `volatile` keyword can be initialized only with objects declared as neither **const** nor `volatile`.  
+ References that are not qualified with either the **const** or **volatile** keyword can be initialized only with objects declared as neither **const** nor **volatile**.  
   
 ### Initialization of external variables  
- Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`.
+ Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as **extern**.
   

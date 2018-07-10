@@ -140,7 +140,7 @@ extern const int i;
 extern const int i = 2;  
 ```  
   
- If you wish to declare an `extern` variable in a C++ source code file for use in a C source code file, use:  
+ If you wish to declare an **extern** variable in a C++ source code file for use in a C source code file, use:  
   
 ```cpp 
 extern "C" const int x=10;  

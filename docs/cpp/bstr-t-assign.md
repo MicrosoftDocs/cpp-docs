@@ -26,7 +26,7 @@ void Assign(
 ```  
   
 #### Parameters  
- `s`  
+ *s*  
  A `BSTR` to be copied into the `BSTR` wrapped by a `_bstr_t`.  
   
 ## Remarks  

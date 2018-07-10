@@ -58,7 +58,7 @@ Func(mgr);
 ```  
   
 ## <a id="using_directives"></a> using directives  
- The `using` directive allows all the names in a **namespace** to be used without the *namespace-name* as an explicit qualifier. Use a using directive in an implementation file (i.e. *.cpp) if you are using several different identifiers in a namespace; if you are just using one or two identifiers, then consider a using declaration to only bring those identifiers into scope and not all the identifiers in the namespace. If a local variable has the same name as a namespace variable, the namespace variable is hidden. It is an error to have a namespace variable with the same name as a global variable.  
+ The **using** directive allows all the names in a **namespace** to be used without the *namespace-name* as an explicit qualifier. Use a using directive in an implementation file (i.e. *.cpp) if you are using several different identifiers in a namespace; if you are just using one or two identifiers, then consider a using declaration to only bring those identifiers into scope and not all the identifiers in the namespace. If a local variable has the same name as a namespace variable, the namespace variable is hidden. It is an error to have a namespace variable with the same name as a global variable.  
   
 > [!NOTE]
 >  A using directive can be placed at the top of a .cpp file (at file scope), or inside a class or function definition.  

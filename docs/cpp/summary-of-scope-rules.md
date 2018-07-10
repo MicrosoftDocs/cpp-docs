@@ -49,9 +49,9 @@ The use of a name must be unambiguous within its scope (up to the point where ov
   
 1.  Names preceded by `::` force the search to begin at global scope.  
   
-2.  Names preceded by the **class**, `struct`, and **union** keywords force the compiler to search only for **class**, `struct`, or **union** names.  
+2.  Names preceded by the **class**, **struct**, and **union** keywords force the compiler to search only for **class**, **struct**, or **union** names.  
   
-3.  Names on the left side of the scope-resolution operator (`::`) can be only **class**, `struct`, **namespace**, or **union** names.  
+3.  Names on the left side of the scope-resolution operator (`::`) can be only **class**, **struct**, **namespace**, or **union** names.  
   
  If the name refers to a nonstatic member but is used in a static member function, an error message is generated. Similarly, if the name refers to any nonstatic member in an enclosing class, an error message is generated because enclosed classes do not have enclosing-class **this** pointers.  
   

@@ -31,7 +31,7 @@ Specifiers, Modifiers, and Declarators
 const char *pch, ch;  
 ```  
   
- In the preceding declaration, the keywords **const** and `char` make up the list of specifiers. Two declarators are listed: `*pch` and `ch`.  A declaration that declares multiple entities consists of a type specifier followed by a comma-separated list of declarators, terminated with a semicolon.  
+ In the preceding declaration, the keywords **const** and **char** make up the list of specifiers. Two declarators are listed: `*pch` and `ch`.  A declaration that declares multiple entities consists of a type specifier followed by a comma-separated list of declarators, terminated with a semicolon.  
   
  **Declarators for Simple Objects**  
   
@@ -51,7 +51,7 @@ int **i; // declarator is **i;
 int &i = x; // declaratory is &i  
 ```  
   
- Appending `const` or `volatile` give the pointer these special properties.  The use of these specifiers in a declarator (as opposed to in the type specifier) modifies the properties of the pointer, not the object pointed to:  
+ Appending **const** or **volatile** give the pointer these special properties.  The use of these specifiers in a declarator (as opposed to in the type specifier) modifies the properties of the pointer, not the object pointed to:  
   
 ```cpp 
 char *const cpc; // const pointer to char   
@@ -80,7 +80,7 @@ int i[2][2]; // two dimensional array
   
  **Declarators for Functions**  
   
- Parentheses containing the argument list are used after the name to declare a function.  The following declares a function of return type `int` and three arguments of type `int`.  
+ Parentheses containing the argument list are used after the name to declare a function.  The following declares a function of return type **int** and three arguments of type **int**.  
   
 ```cpp 
 int f(int a, int b, int c);  
@@ -117,11 +117,11 @@ int i, *j, f(int k);  // int, pointer to int, function returning int
 int* i, f(int k);  // pointer to int, function returning int (not int*)  
 ```  
   
- may look like the declaration of an `int` pointer and a function returning `int*`, but it is not.  That's because the * is part of the declarator for `i`, not part of the declarator for `f`.  
+ may look like the declaration of an **int** pointer and a function returning `int*`, but it is not.  That's because the * is part of the declarator for `i`, not part of the declarator for `f`.  
   
  **Simplifying declarator syntax with typedef**  
   
- A better technique, however, is to use a `typedef` or a combination of parentheses and the `typedef` keyword. Consider declaring an array of pointers to functions:  
+ A better technique, however, is to use a **typedef** or a combination of parentheses and the **typedef** keyword. Consider declaring an array of pointers to functions:  
   
 ```cpp 
 //  Function returning type int that takes one   
@@ -133,7 +133,7 @@ typedef int (*PIFN)( char * );
 PIFN pifnDispatchArray[7];  
 ```  
   
- The equivalent declaration can be written without the `typedef` declaration, but it is so complicated that the potential for error exceeds any benefits:  
+ The equivalent declaration can be written without the **typedef** declaration, but it is so complicated that the potential for error exceeds any benefits:  
   
 ```cpp 
 int ( *pifnDispatchArray[7] )( char * );  

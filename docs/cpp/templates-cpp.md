@@ -26,7 +26,7 @@ T minimum(const T& lhs, const T& rhs)
 }  
 ```  
   
- The above code describes a template for a generic function with a single type parameter `T`, whose return value and call parameters (lhs and rhs) are all of this type. You can name a type parameter anything you like, but by convention single upper case letters are most commonly used. `T` is a template parameter; the `typename` keyword says that this parameter is a placeholder for a type. When the function is called, the compiler will replace every instance of `T` with the concrete type argument that is either specified by the user or deduced by the compiler. The process in which the compiler generates a class or function from a template is referred to as  *template instantiation*;   `minimum<int>` is an instantiation of the template `minimum<T>`.  
+ The above code describes a template for a generic function with a single type parameter `T`, whose return value and call parameters (lhs and rhs) are all of this type. You can name a type parameter anything you like, but by convention single upper case letters are most commonly used. `T` is a template parameter; the **typename** keyword says that this parameter is a placeholder for a type. When the function is called, the compiler will replace every instance of `T` with the concrete type argument that is either specified by the user or deduced by the compiler. The process in which the compiler generates a class or function from a template is referred to as  *template instantiation*;   `minimum<int>` is an instantiation of the template `minimum<T>`.  
   
  Elsewhere, a user can declare an instance of the template  that is specialized for int. Assume that get_a() and get_b() are functions that return an int:  
   
@@ -42,7 +42,7 @@ int i = minimum<int>(a, b);
 int i = minimum(a, b);  
 ```  
   
- When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with `int`:  
+ When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with **int**:  
   
 ```cpp 
   
@@ -64,7 +64,7 @@ template <typename T, typename U, typename V> class Foo{};
   
 ```  
   
- The keyword `class` is equivalent to `typename` in this context. You can express the previous example as:  
+ The keyword **class** is equivalent to **typename** in this context. You can express the previous example as:  
   
 ```cpp 
 template <class T, class U, class V> class Foo{};   

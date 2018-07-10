@@ -27,8 +27,8 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[__interface](../cpp/interface.md)|[__leave](../cpp/try-finally-statement.md)|[__m128](../cpp/m128.md)|  
 |[__m128d](../cpp/m128d.md)|[__m128i](../cpp/m128i.md)|[__m64](../cpp/m64.md)|  
 |[__multiple_inheritance](../cpp/inheritance-keywords.md)|[__nogc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|[__noop](../intrinsics/noop.md)|  
-|`__pin` <sup>2</sup>|`__property` <sup>2</sup>|[__raise](../cpp/raise.md)|  
-|`__sealed` <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
+|**__pin** <sup>2</sup>|**__property** <sup>2</sup>|[__raise](../cpp/raise.md)|  
+|**__sealed** <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
 |[__super](../cpp/super.md)|[__thiscall](../cpp/thiscall.md)|[__try/\__except](../cpp/try-except-statement.md), [__try/\__finally](../cpp/try-finally-statement.md)|  
 |[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](../cpp/unaligned.md)|[__unhook](../cpp/unhook.md) <sup>3</sup>|  
 |[__uuidof](../cpp/uuidof-operator.md)|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__virtual_inheritance](../cpp/inheritance-keywords.md)|  
@@ -67,7 +67,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[value class](../windows/classes-and-structs-cpp-component-extensions.md)|[value struct](../windows/classes-and-structs-cpp-component-extensions.md)|[virtual](../cpp/virtual-cpp.md)|  
 |[void](../cpp/void-cpp.md)|[volatile](../cpp/volatile-cpp.md)|[while](../cpp/while-statement-cpp.md)|  
   
- 1   Extended attributes for the `__declspec` keyword.  
+ 1   Extended attributes for the **__declspec** keyword.  
   
  2   Applicable to Managed Extensions for C++ only. This syntax is now deprecated.  
   
@@ -80,11 +80,11 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
  Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the ANSI-compatible [/Za](../build/reference/za-ze-disable-language-extensions.md) command-line option (compile for ANSI compatibility) during compilation. When you do this, Microsoft-specific keywords are disabled.  
   
- When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI compliance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of all the double-underscored keywords except `__except`, `__finally`, `__leave`, and `__try` are supported. In addition, `__cdecl` is available with no leading underscore.  
+ When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI compliance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of all the double-underscored keywords except **__except**, **__finally**, **__leave**, and **__try** are supported. In addition, **__cdecl** is available with no leading underscore.  
   
- The `__asm` keyword replaces C++ `asm` syntax. `asm` is reserved for compatibility with other C++ implementations, but not implemented. Use `__asm`.  
+ The **__asm** keyword replaces C++ `asm` syntax. `asm` is reserved for compatibility with other C++ implementations, but not implemented. Use **__asm**.  
   
- The `__based` keyword has limited uses for 32-bit and 64-bit target compilations.  
+ The **__based** keyword has limited uses for 32-bit and 64-bit target compilations.  
   
 **END Microsoft Specific**  
   

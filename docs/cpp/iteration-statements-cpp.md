@@ -20,7 +20,7 @@ Iteration statements cause statements (or compound statements) to be executed ze
   
 |Statement|Evaluated At|Initialization|Increment|  
 |---------------|------------------|--------------------|---------------|  
-|`while`|Top of loop|No|No|  
+|**while**|Top of loop|No|No|  
 |**do**|Bottom of loop|No|No|  
 |**for**|Top of loop|Yes|Yes|  
 |**range-based for**|Top of loop|Yes|Yes|  
