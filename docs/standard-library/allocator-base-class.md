@@ -106,7 +106,7 @@ void _Chardealloc(void* ptr, size_type count);
 
 ### Remarks
 
-This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to ***this**, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
+This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to `*this`, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
 
 ## <a name="address"></a>  allocator_base::address
 
