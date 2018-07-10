@@ -100,10 +100,10 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 
 ### Parameters
 
-`Lck`
+*Lck*
  A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
-`Pred`
+*Pred*
  Any expression that returns `true` or `false`.
 
 ### Remarks
@@ -136,24 +136,24 @@ bool wait_for(
 
 ### Parameters
 
-`Lck`
+*Lck*
  A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
-`Rel_time`
+*Rel_time*
  A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
-`Pred`
+*Pred*
  Any expression that returns `true` or `false`.
 
 ### Return Value
 
-The first method returns `cv_status::timeout` if the wait terminates when `Rel_time` has elapsed. Otherwise, the method returns `cv_status::no_timeout`.
+The first method returns `cv_status::timeout` if the wait terminates when *Rel_time* has elapsed. Otherwise, the method returns `cv_status::no_timeout`.
 
-The second method returns the value of `Pred`.
+The second method returns the value of *Pred*.
 
 ### Remarks
 
-The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#notify_one) or [notify_all](#notify_all) or until the time interval `Rel_time` has elapsed. It can also wake up spuriously.
+The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#notify_one) or [notify_all](#notify_all) or until the time interval *Rel_time* has elapsed. It can also wake up spuriously.
 
 In effect, the second method executes the following code.
 
@@ -194,20 +194,20 @@ bool wait_until(
 
 ### Parameters
 
-`Lck`
+*Lck*
  A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
-`Abs_time`
+*Abs_time*
  A [chrono::time_point](../standard-library/time-point-class.md) object.
 
-`Pred`
+*Pred*
  Any expression that returns `true` or `false`.
 
 ### Return Value
 
-Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when `Abs_time` elapses. Otherwise, the methods return `cv_status::no_timeout`.
+Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when *Abs_time* elapses. Otherwise, the methods return `cv_status::no_timeout`.
 
-Methods that return a `bool` return the value of `Pred`.
+Methods that return a **bool** return the value of *Pred*.
 
 ### Remarks
 

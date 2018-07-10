@@ -42,17 +42,17 @@ protected:
 
 ### Parameters
 
-`_Locname`
+*_Locname*
  A named locale.
 
-`_Refs`
+*_Refs*
  An initial reference count.
 
 ## Remarks
 
 Byname facets are automatically created when a named locale is constructed.
 
-Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType>( `_Refs`).
+Its behavior is determined by the named locale *_Locname*. Each constructor initializes its base object with [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType>( `_Refs`).
 
 ## Requirements
 

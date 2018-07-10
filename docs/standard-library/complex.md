@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # &lt;complex&gt;
 
-Defines the container template class **complex** and its supporting templates.
+Defines the container template class `complex` and its supporting templates.
 
 ## Syntax
 

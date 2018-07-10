@@ -25,12 +25,12 @@ struct char_traits;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The element data type.
 
 ## Remarks
 
-The template struct describes various character traits for type **CharType**. The template class [basic_string](../standard-library/basic-string-class.md) as well as several iostream template classes, including [basic_ios](../standard-library/basic-ios-class.md), use this information to manipulate elements of type **CharType**. Such an element type must not require explicit construction or destruction. It must supply a default constructor, a copy constructor, and an assignment operator, with the expected semantics. A bitwise copy must have the same effect as an assignment. None of the member functions of struct char_traits can throw exceptions.
+The template struct describes various character traits for type `CharType`. The template class [basic_string](../standard-library/basic-string-class.md) as well as several iostream template classes, including [basic_ios](../standard-library/basic-ios-class.md), use this information to manipulate elements of type `CharType`. Such an element type must not require explicit construction or destruction. It must supply a default constructor, a copy constructor, and an assignment operator, with the expected semantics. A bitwise copy must have the same effect as an assignment. None of the member functions of struct char_traits can throw exceptions.
 
 ### Typedefs
 
@@ -92,12 +92,12 @@ static char_type *assign(char_type* strTo,
 * strTo*
  The string or character array whose initial elements are to be assigned character values.
 
-`_Num`
+*_Num*
  The number of elements that are going to be assigned values.
 
 ### Return Value
 
-The second member function returns a pointer to the string whose first `_Num` elements have been assigned values of *_CharFrom*.
+The second member function returns a pointer to the string whose first *_Num* elements have been assigned values of *_CharFrom*.
 
 ### Example
 
@@ -150,7 +150,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **CharType**.
+The type is a synonym for the template parameter `CharType`.
 
 ### Example
 
@@ -174,7 +174,7 @@ static int compare(const char_type* str1,
 * str2*
  The second of two strings to be compared to each other.
 
-`_Num`
+*_Num*
  The number of elements in the strings to be compared.
 
 ### Return Value
@@ -234,13 +234,13 @@ static char_type *copy(char_type* _To,
 
 ### Parameters
 
-`_To`
+*_To*
  The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
-`_From`
+*_From*
  The element at the beginning of the source string or character array to be copied.
 
-`_Num`
+*_Num*
  The number of elements to be copied.
 
 ### Return Value
@@ -296,16 +296,16 @@ static char_type *_Copy_s(
 
 ### Parameters
 
-`dest`
+*dest*
  The string or character array targeted to receive the copied sequence of characters.
 
-`dest_size`
- The size of `dest`. If `char_type` is `char`, then this size is in bytes. If `char_type` is `wchar_t`, then this size is in words.
+*dest_size*
+ The size of *dest*. If `char_type` is **char**, then this size is in bytes. If `char_type` is **wchar_t**, then this size is in words.
 
-`_From`
+*_From*
  The source string or character array to be copied.
 
-`count`
+*count*
  The number of elements to be copied.
 
 ### Return Value
@@ -361,9 +361,9 @@ The EOF character.
 
 ### Remarks
 
-A value that represents end of file (such as `EOF` or `WEOF`).
+A value that represents end of file (such as EOF or WEOF).
 
-The C++ standard states that this value must not correspond to a valid `char_type` value. The Visual C++ compiler enforces this constraint for type `char`, but not for type `wchar_t`. The example below demonstrates this.
+The C++ standard states that this value must not correspond to a valid `char_type` value. The Visual C++ compiler enforces this constraint for type **char**, but not for type **wchar_t**. The example below demonstrates this.
 
 ### Example
 
@@ -408,10 +408,10 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
 
 ### Parameters
 
-`_Ch1`
+*_Ch1*
  The first of two characters to be tested for equality.
 
-`_Ch2`
+*_Ch2*
  The second of two characters to be tested for equality.
 
 ### Return Value
@@ -468,10 +468,10 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
 
 ### Parameters
 
-`_Ch1`
- The first of the two characters to be tested for equality as **int_type**s.
+*_Ch1*
+ The first of the two characters to be tested for equality as `int_type`s.
 
-`_Ch2`
+*_Ch2*
  The second of the two characters to be tested for equality as `int_type`s.
 
 ### Return Value
@@ -555,13 +555,13 @@ static const char_type* find(const char_type* str,
 
 ### Parameters
 
-`str`
+*str*
  The first character in the string to be searched.
 
-`_Num`
+*_Num*
  The number of positions, counting from the first, in the range to be searched.
 
-`_Ch`
+*_Ch*
  The character to be searched for in the range.
 
 ### Return Value
@@ -620,7 +620,7 @@ typedef long int_type;
 
 ### Remarks
 
-It must be possible to type cast a value of type **CharType** to `int_type` then back to **CharType** without altering the original value.
+It must be possible to type cast a value of type `CharType` to `int_type` then back to `CharType` without altering the original value.
 
 ### Example
 
@@ -636,7 +636,7 @@ static size_t length(const char_type* str);
 
 ### Parameters
 
-`str`
+*str*
  The C-string whose length is to be measured.
 
 ### Return Value
@@ -679,10 +679,10 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
 
 ### Parameters
 
-`_Ch1`
+*_Ch1*
  The first of two characters to be tested for less than.
 
-`_Ch2`
+*_Ch2*
  The second of two characters to be tested for less than.
 
 ### Return Value
@@ -742,18 +742,18 @@ static char_type *move(char_type* _To,
 
 ### Parameters
 
-`_To`
+*_To*
  The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
-`_From`
+*_From*
  The element at the beginning of the source string or character array to be copied.
 
-`_Num`
+*_Num*
  The number of elements to be copied from the source string.
 
 ### Return Value
 
-The first element `_To` copied into the string or character array targeted to receive the copied sequence of characters.
+The first element *_To* copied into the string or character array targeted to receive the copied sequence of characters.
 
 ### Remarks
 
@@ -819,21 +819,21 @@ static char_type *_Move_s(
 
 ### Parameters
 
-`dest`
+*dest*
  The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
-`dest_size`
- The size of `dest`. If `char_type` is `char`, then this is in bytes. If `char_type` is `wchar_t`, then this is in words.
+*dest_size*
+ The size of *dest*. If `char_type` is **char**, then this is in bytes. If `char_type` is **wchar_t**, then this is in words.
 
-`_From`
+*_From*
  The element at the beginning of the source string or character array to be copied.
 
-`count`
+*count*
  The number of elements to be copied from the source string.
 
 ### Return Value
 
-The first element `dest` copied into the string or character array targeted to receive the copied sequence of characters.
+The first element *dest* copied into the string or character array targeted to receive the copied sequence of characters.
 
 ### Remarks
 
@@ -895,12 +895,12 @@ static int_type not_eof(const int_type& _Ch);
 
 ### Parameters
 
-`_Ch`
+*_Ch*
  The character represented as an `int_type` to be tested for whether it is the EOF character or not.
 
 ### Return Value
 
-The `int_type` representation of the character tested, if the **int_type** of the character is not equal to that of the EOF character.
+The `int_type` representation of the character tested, if the `int_type` of the character is not equal to that of the EOF character.
 
 If the character `int_type` value is equal to the EOF `int_type` value, then **false**.
 
@@ -1003,14 +1003,14 @@ static char_type to_char_type(const int_type& _Ch);
 
 ### Parameters
 
-`_Ch`
+*_Ch*
  The `int_type` character to be represented as a `char_type`.
 
 ### Return Value
 
 The `char_type` character corresponding to the `int_type` character.
 
-A value of `_Ch` that cannot be represented as such yields an unspecified result.
+A value of *_Ch* that cannot be represented as such yields an unspecified result.
 
 ### Remarks
 
@@ -1109,7 +1109,7 @@ static int_type to_int_type(const char_type& _Ch);
 
 ### Parameters
 
-`_Ch`
+*_Ch*
  The `char_type` character to be represented as an `int_type`.
 
 ### Return Value

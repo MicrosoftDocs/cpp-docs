@@ -25,12 +25,12 @@ class collate : public locale::facet;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type used within a program to encode characters.
 
 ## Remarks
 
-As with any locale facet, the static object ID has an initial stored value of zero. The first attempt to access its stored value stores a unique positive value in **id.** In some languages, characters are grouped and treated as a single character, and in others, individual characters are treated as if they were two characters. The collating services provided by the collate class provide the way to sort these cases.
+As with any locale facet, the static object ID has an initial stored value of zero. The first attempt to access its stored value stores a unique positive value in `id`. In some languages, characters are grouped and treated as a single character, and in others, individual characters are treated as if they were two characters. The collating services provided by the collate class provide the way to sort these cases.
 
 ### Constructors
 
@@ -64,7 +64,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 ## <a name="char_type"></a>  collate::char_type
 
-A type that describes a character of type **CharType**.
+A type that describes a character of type `CharType`.
 
 ```cpp
 typedef CharType char_type;
@@ -72,7 +72,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **CharType**.
+The type is a synonym for the template parameter `CharType`.
 
 ## <a name="collate"></a>  collate::collate
 
@@ -91,15 +91,15 @@ protected:
 
 ### Parameters
 
-`_Refs`
+*_Refs*
  Integer value used to specify the type of memory management for the object.
 
-`_Locname`
+*_Locname*
  The name of the locale.
 
 ### Remarks
 
-The possible values for the `_Refs` parameter and their significance are:
+The possible values for the *_Refs* parameter and their significance are:
 
 - 0: The lifetime of the object is managed by the locales that contain it.
 
@@ -122,16 +122,16 @@ int compare(const CharType* first1,
 
 ### Parameters
 
-`first1`
+*first1*
  Pointer to the first element in the first sequence to be compared.
 
-`last1`
+*last1*
  Pointer to the last element in the first sequence to be compared.
 
-`first2`
+*first2*
  Pointer to the first element in the second sequence to be compared.
 
-`last2`
+*last2*
  Pointer to the last element in the second sequence to be compared.
 
 ### Return Value
@@ -188,16 +188,16 @@ virtual int do_compare(const CharType* first1,
 
 ### Parameters
 
-`first1`
+*first1*
  Pointer to the first element in the first sequence to be compared.
 
-`last1`
+*last1*
  Pointer to the last element in the first sequence to be compared.
 
-`first2`
+*first2*
  Pointer to the first element in the second sequence to be compared.
 
-`last2`
+*last2*
  Pointer to the last element in the second sequence to be compared.
 
 ### Return Value
@@ -212,7 +212,7 @@ The member function returns:
 
 ### Remarks
 
-The protected virtual member function compares the sequence at [ * first1, Last1)* with the sequence at *[ first2,  last2*). It compares values by applying **operator<** between pairs of corresponding elements of type **CharType**. The first sequence compares less if it has the smaller element in the earliest unequal pair in the sequences or if no unequal pairs exist but the first sequence is shorter.
+The protected virtual member function compares the sequence at [ * first1, Last1)* with the sequence at *[ first2,  last2*). It compares values by applying `operator<` between pairs of corresponding elements of type `CharType`. The first sequence compares less if it has the smaller element in the earliest unequal pair in the sequences or if no unequal pairs exist but the first sequence is shorter.
 
 ### Example
 
@@ -228,10 +228,10 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-`first`
+*first*
  A pointer to the first character in the sequence whose has value is to be determined.
 
-`last`
+*last*
  A pointer to the last character in the sequence whose has value is to be determined.
 
 ### Return Value
@@ -256,10 +256,10 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### Parameters
 
-`first`
+*first*
  A pointer to the first character in the sequence to be converted.
 
-`last`
+*last*
  A pointer to the last character in the sequence to be converted.
 
 ### Return Value
@@ -284,10 +284,10 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-`first`
+*first*
  A pointer to the first character in the sequence whose has value is to be determined.
 
-`last`
+*last*
  A pointer to the last character in the sequence whose has value is to be determined.
 
 ### Return Value
@@ -330,7 +330,7 @@ int main( )
 
 ## <a name="string_type"></a>  collate::string_type
 
-A type that describes a string of type `basic_string` containing characters of type **CharType**.
+A type that describes a string of type `basic_string` containing characters of type `CharType`.
 
 ```cpp
 typedef basic_string<CharType> string_type;
@@ -354,10 +354,10 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-`first`
+*first*
  A pointer to the first character in the sequence to be converted.
 
-`last`
+*last*
  A pointer to the last character in the sequence to be converted.
 
 ### Return Value
@@ -366,7 +366,7 @@ A string that contains the transformed character sequence.
 
 ### Remarks
 
-The member function returns [do_transform](#do_transform)( `first`, `last`).
+The member function returns [do_transform](#do_transform)(`first`, `last`).
 
 ### Example
 
