@@ -436,7 +436,7 @@ const CharType *is(
 
 ### Return Value
 
-The first member function returns `true` if the character tested has the attribute described by the mask value; `false` if it fails to have the attribute.
+The first member function returns **true** if the character tested has the attribute described by the mask value; **false** if it fails to have the attribute.
 
 The second member function returns a pointer to the last character in the range whose attributes are to be classified.
 

@@ -88,7 +88,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 |[emplace](#emplace)|Inserts an element constructed in place into the `deque` at a specified position.|
 |[emplace_back](#emplace_back)|Adds an element constructed in place to the end of the `deque`.|
 |[emplace_front](#emplace_front)|Adds an element constructed in place to the start of the `deque`.|
-|[empty](#empty)|Returns `true` if the `deque` contains zero elements, and `false` if it contains one or more elements.|
+|[empty](#empty)|Returns **true** if the `deque` contains zero elements, and **false** if it contains one or more elements.|
 |[end](#end)|Returns a random-access iterator that points just beyond the end of the `deque`.|
 |[erase](#erase)|Removes an element or a range of elements in a `deque` from specified positions.|
 |[front](#front)|Returns a reference to the first element in a `deque`.|

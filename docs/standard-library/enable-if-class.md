@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # enable_if Class
 
-Conditionally makes an instance of a type for SFINAE overload resolution. The nested typedef `enable_if<Condition,Type>::type` exists—and is a synonym for `Type`—if and only if `Condition` is `true`.
+Conditionally makes an instance of a type for SFINAE overload resolution. The nested typedef `enable_if<Condition,Type>::type` exists—and is a synonym for `Type`—if and only if `Condition` is **true**.
 
 ## Syntax
 
