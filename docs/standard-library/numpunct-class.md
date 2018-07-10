@@ -25,7 +25,7 @@ class numpunct : public locale::facet;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type used within a program to encode characters in a locale.
 
 ## Remarks
@@ -51,14 +51,14 @@ As with any locale facet, the static object ID has an initial stored value of ze
 |-|-|
 |[decimal_point](#decimal_point)|Returns a locale-specific element to use as a decimal point.|
 |[do_decimal_point](#do_decimal_point)|A protected virtual member function that is called to return a locale-specific element to use as a decimal point.|
-|[do_falsename](#do_falsename)|A protected virtual member function that is called to return a string to use as a text representation of the value `false`.|
+|[do_falsename](#do_falsename)|A protected virtual member function that is called to return a string to use as a text representation of the value **false**.|
 |[do_grouping](#do_grouping)|A protected virtual member function that is called to return a locale-specific rule for determining how digits are grouped to the left of any decimal point.|
 |[do_thousands_sep](#do_thousands_sep)|A protected virtual member function that is called to return a locale-specific element to use as a thousands separator.|
-|[do_truename](#do_truename)|A protected virtual member function that is called to return a string to use as a text representation of the value `true`.|
-|[falsename](#falsename)|Returns a string to use as a text representation of the value `false`.|
+|[do_truename](#do_truename)|A protected virtual member function that is called to return a string to use as a text representation of the value **true**.|
+|[falsename](#falsename)|Returns a string to use as a text representation of the value **false**.|
 |[grouping](#grouping)|Returns a locale-specific rule for determining how digits are grouped to the left of any decimal point.|
 |[thousands_sep](#thousands_sep)|Returns a locale-specific element to use as a thousands separator.|
-|[truename](#truename)|Returns a string to use as a text representation of the value `true`.|
+|[truename](#truename)|Returns a string to use as a text representation of the value **true**.|
 
 ## Requirements
 
@@ -175,7 +175,7 @@ The protected virtual member function returns a locale-specific rule for determi
 
 ### Example
 
-See the example for [grouping](#grouping), where the virtual member function is called by **grouping**.
+See the example for [grouping](#grouping), where the virtual member function is called by `grouping`.
 
 ## <a name="do_thousands_sep"></a>  numpunct::do_thousands_sep
 
@@ -191,7 +191,7 @@ Returns a locale-specific element to use as a thousands separator.
 
 ### Remarks
 
-The protected virtual member function returns a locale-specific element of type **CharType** to use as a group separator to the left of any decimal point.
+The protected virtual member function returns a locale-specific element of type `CharType` to use as a group separator to the left of any decimal point.
 
 ### Example
 
@@ -225,7 +225,7 @@ string_type falsename() const;
 
 ### Return Value
 
-A string containing a sequence of **CharType**s to use as a text representation of the value **false**.
+A string containing a sequence of `CharType`s to use as a text representation of the value **false**.
 
 ### Remarks
 
@@ -320,12 +320,12 @@ explicit numpunct(size_t _Refs = 0);
 
 ### Parameters
 
-`_Refs`
+*_Refs*
  Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
-The possible values for the `_Refs` parameter and their significance are:
+The possible values for the *_Refs* parameter and their significance are:
 
 - 0: The lifetime of the object is managed by the locales that contain it.
 
@@ -335,7 +335,7 @@ The possible values for the `_Refs` parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
+The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
 ## <a name="string_type"></a>  numpunct::string_type
 

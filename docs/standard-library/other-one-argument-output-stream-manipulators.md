@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Other One-Argument Output Stream Manipulators
 
-The following example uses a class `money`, which is a `long` type. The `setpic` manipulator attaches a formatting "picture" string to the class that can be used by the overloaded stream insertion operator of the class `money`. The picture string is stored as a static variable in the `money` class rather than as data member of a stream class, so you do not have to derive a new output stream class.
+The following example uses a class `money`, which is a **long** type. The `setpic` manipulator attaches a formatting "picture" string to the class that can be used by the overloaded stream insertion operator of the class `money`. The picture string is stored as a static variable in the `money` class rather than as data member of a stream class, so you do not have to derive a new output stream class.
 
 ## Example
 

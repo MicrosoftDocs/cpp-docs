@@ -98,7 +98,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### Parameters
 
-`Right`
+*Right*
  A `packaged_task` object.
 
 ### Return Value
@@ -107,7 +107,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### Remarks
 
-After the operation, `Right` no longer has an associated asynchronous state.
+After the operation, *Right* no longer has an associated asynchronous state.
 
 ## <a name="op_call"></a>  packaged_task::operator()
 
@@ -135,7 +135,7 @@ operator bool() const noexcept;
 
 ### Return Value
 
-`true` if the object has an associated asynchronous state; otherwise, `false`.
+**true** if the object has an associated asynchronous state; otherwise, **false**.
 
 ## <a name="packaged_task"></a>  packaged_task::packaged_task Constructor
 
@@ -154,24 +154,24 @@ template <class Fn, class Alloc>
 
 ### Parameters
 
-`Right`
+*Right*
  A `packaged_task` object.
 
-`alloc`
+*alloc*
  A memory allocator. For more information, see [\<allocators>](../standard-library/allocators-header.md).
 
-`fn`
+*fn*
  A function object.
 
 ### Remarks
 
 The first constructor constructs a `packaged_task` object that has no *associated asynchronous state*.
 
-The second constructor constructs a `packaged_task` object and transfers the associated asynchronous state from `Right`. After the operation, `Right` no longer has an associated asynchronous state.
+The second constructor constructs a `packaged_task` object and transfers the associated asynchronous state from *Right*. After the operation, *Right* no longer has an associated asynchronous state.
 
-The third constructor constructs a `packaged_task` object that has a copy of `fn` stored in its associated asynchronous state.
+The third constructor constructs a `packaged_task` object that has a copy of *fn* stored in its associated asynchronous state.
 
-The fourth constructor constructs a `packaged_task` object that has a copy of `fn` stored in its associated asynchronous state, and uses `alloc` for memory allocation.
+The fourth constructor constructs a `packaged_task` object that has a copy of *fn* stored in its associated asynchronous state, and uses `alloc` for memory allocation.
 
 ## <a name="dtorpackaged_task_destructor"></a>  packaged_task::~packaged_task Destructor
 
@@ -207,7 +207,7 @@ void swap(packaged_task& Right) noexcept;
 
 ### Parameters
 
-`Right`
+*Right*
  A `packaged_task` object.
 
 ## <a name="valid"></a>  packaged_task::valid
@@ -220,7 +220,7 @@ bool valid() const;
 
 ### Return Value
 
-`true` if the object has an associated asynchronous state; otherwise, `false`.
+**true** if the object has an associated asynchronous state; otherwise, **false**.
 
 ## See also
 

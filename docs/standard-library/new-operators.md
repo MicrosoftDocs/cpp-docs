@@ -29,22 +29,22 @@ void operator delete(void* ptr,
 
 ### Parameters
 
-`ptr`
+*ptr*
  The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
 
-The first function is called by a delete expression to render the value of `ptr` invalid. The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of `ptr` that is null or that was returned by an earlier call to [operator new](../standard-library/new-operators.md#op_new)( **size_t**).
+The first function is called by a delete expression to render the value of *ptr* invalid. The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of *ptr* that is null or that was returned by an earlier call to [operator new](../standard-library/new-operators.md#op_new)(**size_t**).
 
-The default behavior for a null value of `ptr` is to do nothing. Any other value of `ptr` must be a value returned earlier by a call as previously described. The default behavior for such a nonnull value of `ptr` is to reclaim storage allocated by the earlier call. It is unspecified under what conditions part or all of such reclaimed storage is allocated by a subsequent call to `operator new`( **size_t**), or to any of `calloc`( **size_t**), `malloc`( **size_t**), or `realloc`( **void\***, **size_t**).
+The default behavior for a null value of *ptr* is to do nothing. Any other value of *ptr* must be a value returned earlier by a call as previously described. The default behavior for such a nonnull value of *ptr* is to reclaim storage allocated by the earlier call. It is unspecified under what conditions part or all of such reclaimed storage is allocated by a subsequent call to `operator new`(**size_t**), or to any of `calloc`( **size_t**), `malloc`( **size_t**), or `realloc`( **void\***, **size_t**).
 
 The second function is called by a placement delete expression corresponding to a new expression of the form **new**( **std::size_t**). It does nothing.
 
-The third function is called by a placement delete expression corresponding to a new expression of the form **new**( **std::size_t**, **conststd::nothrow_t&**). The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of `ptr` that is null or that was returned by an earlier call to `operator new`( **size_t**). The default behavior is to evaluate **delete**( `ptr`).
+The third function is called by a placement delete expression corresponding to a new expression of the form **new**( **std::size_t**, **conststd::nothrow_t&**). The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of `ptr` that is null or that was returned by an earlier call to `operator new`( **size_t**). The default behavior is to evaluate **delete**(`ptr`).
 
 ### Example
 
-See [operator new](../standard-library/new-operators.md#op_new) for an example that use `operator delete`.
+See [operator new](../standard-library/new-operators.md#op_new) for an example that use **operator delete**.
 
 ## <a name="op_delete_arr"></a>  operator delete[]
 
@@ -62,16 +62,16 @@ void operator delete[](void* ptr,
 
 ### Parameters
 
-`ptr`
+*ptr*
  The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
 
-The first function is called by an `delete[]` expression to render the value of `ptr` invalid. The function is replaceable because the program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of `ptr` that is null or that was returned by an earlier call to [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)( **size_t**). The default behavior for a null value of `ptr` is to do nothing. Any other value of `ptr` must be a value returned earlier by a call as previously described. The default behavior for such a nonnull value of `ptr` is to reclaim storage allocated by the earlier call. It is unspecified under what conditions part or all of such reclaimed storage is allocated by a subsequent call to [operator new](../standard-library/new-operators.md#op_new)( **size_t**), or to any of `calloc`( **size_t**), `malloc`( **size_t**), or `realloc`( **void\***, **size_t**).
+The first function is called by an `delete[]` expression to render the value of *ptr* invalid. The function is replaceable because the program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of *ptr* that is null or that was returned by an earlier call to [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). The default behavior for a null value of *ptr* is to do nothing. Any other value of *ptr* must be a value returned earlier by a call as previously described. The default behavior for such a nonnull value of *ptr* is to reclaim storage allocated by the earlier call. It is unspecified under what conditions part or all of such reclaimed storage is allocated by a subsequent call to [operator new](../standard-library/new-operators.md#op_new)(**size_t**), or to any of `calloc`(**size_t**), `malloc`(**size_t**), or `realloc`( **void\***, **size_t**).
 
-The second function is called by a placement `delete[]` expression corresponding to a `new[]` expression of the form `new[]`( **std::size_t**). It does nothing.
+The second function is called by a placement `delete[]` expression corresponding to a `new[]` expression of the form `new[]`(**std::size_t**). It does nothing.
 
-The third function is called by a placement delete expression corresponding to a `new[]` expression of the form `new[]`( **std::size_t**, **const std::nothrow_t&**). The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of `ptr` that is null or that was returned by an earlier call to operator `new[]`( **size_t**). The default behavior is to evaluate `delete[]`( `ptr`).
+The third function is called by a placement delete expression corresponding to a `new[]` expression of the form `new[]`( **std::size_t**, **const std::nothrow_t&**). The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of *ptr* that is null or that was returned by an earlier call to operator `new[]`(**size_t**). The default behavior is to evaluate `delete[]`( `ptr`).
 
 ### Example
 
@@ -93,15 +93,15 @@ void* operator new(std::size_t count,
 
 ### Parameters
 
-`count`
+*count*
  The number of bytes of storage to be allocated.
 
-`ptr`
+*ptr*
  The pointer to be returned.
 
 ### Return Value
 
-A pointer to the lowest byte address of the newly-allocated storage. Or `ptr.`
+A pointer to the lowest byte address of the newly-allocated storage. Or *ptr*.
 
 ### Remarks
 
@@ -115,21 +115,21 @@ The required behavior of a new handler is to perform one of the following operat
 
 - Make more storage available for allocation and then return.
 
-- Call either **abort** or **exit**( `int`).
+- Call either **abort** or **exit**(`int`).
 
 - Throw an object of type **bad_alloc.**
 
 The default behavior of a [new handler](../standard-library/new-typedefs.md#new_handler) is to throw an object of type `bad_alloc`. A null pointer designates the default new handler.
 
-The order and contiguity of storage allocated by successive calls to `operator new`( **size_t**) is unspecified, as are the initial values stored there.
+The order and contiguity of storage allocated by successive calls to `operator new`(**size_t**) is unspecified, as are the initial values stored there.
 
 The second function is called by a placement new expression to allocate `count` bytes of storage suitably aligned to represent any object of that size. The program can define an alternate function with this function signature that replaces the default version defined by the C++ Standard Library and so is replaceable.
 
-The default behavior is to return `operator new`( `count`) if that function succeeds. Otherwise, it returns a null pointer.
+The default behavior is to return `operator new`(`count`) if that function succeeds. Otherwise, it returns a null pointer.
 
 The third function is called by a placement **new** expression, of the form **new** ( *args*) T. Here, *args* consists of a single object pointer. This can be useful for constructing an object at a known address. The function returns *ptr*.
 
-To free storage allocated by `operator new`, call [operator delete](../standard-library/new-operators.md#op_delete).
+To free storage allocated by **operator new**, call [operator delete](../standard-library/new-operators.md#op_delete).
 
 For information on throwing or nonthrowing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 
@@ -192,21 +192,21 @@ void* operator new[](std::size_t count,
 
 ### Parameters
 
-`count`
+*count*
  The number of bytes of storage to be allocated for the array object.
 
-`ptr`
+*ptr*
  The pointer to be returned.
 
 ### Return Value
 
-A pointer to the lowest byte address of the newly-allocated storage. Or `ptr.`
+A pointer to the lowest byte address of the newly-allocated storage. Or *ptr*.
 
 ### Remarks
 
-The first function is called by a `new[]` expression to allocate `count` bytes of storage suitably aligned to represent any array object of that size or smaller. The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is the same as for [operator new](../standard-library/new-operators.md#op_new)( **size_t**). The default behavior is to return `operator new`( `count`).
+The first function is called by a `new[]` expression to allocate `count` bytes of storage suitably aligned to represent any array object of that size or smaller. The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is the same as for [operator new](../standard-library/new-operators.md#op_new)(**size_t**). The default behavior is to return `operator new`( `count`).
 
-The second function is called by a placement `new[]` expression to allocate `count` bytes of storage suitably aligned to represent any array object of that size. The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The default behavior is to return **operatornew**( `count`) if that function succeeds. Otherwise, it returns a null pointer.
+The second function is called by a placement `new[]` expression to allocate `count` bytes of storage suitably aligned to represent any array object of that size. The program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The default behavior is to return **operatornew**(`count`) if that function succeeds. Otherwise, it returns a null pointer.
 
 The third function is called by a placement `new[]` expression, of the form **new** ( *args*) **T**[ **N**]. Here, *args* consists of a single object pointer. The function returns `ptr`.
 
