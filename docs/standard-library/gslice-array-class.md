@@ -65,15 +65,15 @@ public:
 
 ## Remarks
 
-The class describes an object that stores a reference to an object **va** of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object **gs** of class [gslice](../standard-library/gslice-class.md) which describes the sequence of elements to select from the **valarray\<Type>** object.
+The class describes an object that stores a reference to an object `va` of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object `gs` of class [gslice](../standard-library/gslice-class.md) which describes the sequence of elements to select from the `valarray<Type>` object.
 
-You construct a **gslice_array\<Type>** object only by writing an expression of the form [va&#91;gs&#93;](../standard-library/valarray-class.md#op_at). The member functions of class gslice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.
+You construct a `gslice_array<Type>` object only by writing an expression of the form [va&#91;gs&#93;](../standard-library/valarray-class.md#op_at). The member functions of class gslice_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
 The template class is created indirectly by certain valarray operations and cannot be used directly in the program. An internal auxiliary template class instead is used by the slice subscript operator:
 
 `gslice_array`\< **Type**> `valarray`\< **Type**>:: `operator[]` ( **constgslice&**).
 
-You construct a **gslice_array\<Type>** object only by writing an expression of the form **va[gsl]**, for a slice **gsl** of valarray **va**. The member functions of class gslice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected. The sequence controlled by the gslice_array is defined by the three parameters of the slice constructor, the index of the first element in the first slice, the number of elements in each slice, and the distance between the elements in each slice.
+You construct a `gslice_array<Type>` object only by writing an expression of the form `va[gsl]`, for a slice `gsl` of valarray `va`. The member functions of class gslice_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected. The sequence controlled by the gslice_array is defined by the three parameters of the slice constructor, the index of the first element in the first slice, the number of elements in each slice, and the distance between the elements in each slice.
 
 In the following example:
 

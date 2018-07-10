@@ -31,16 +31,16 @@ class hash_multimap
 
 ### Parameters
 
-`Key`
+*Key*
  The key data type to be stored in the hash_multimap.
 
-`Type`
+*Type*
  The element data type to be stored in the hash_multimap.
 
-`Traits`
- The type that includes two function objects, one of class `Traits` that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
+*Traits*
+ The type that includes two function objects, one of class *Traits* that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
 
-`Allocator`
+*Allocator*
  The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.
 
 ## Remarks
@@ -85,9 +85,9 @@ The iterator provided by the hash_multimap class is a bidirectional iterator, bu
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_multimap` object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `hash_multimap`.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a `const` element in a `hash_multimap`.|
-|[const_reference](#const_reference)|A type that provides a reference to a `const` element stored in a `hash_multimap` for reading and performing `const` operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any `const` element in the `hash_multimap`.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a `hash_multimap`.|
+|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a `hash_multimap` for reading and performing **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in the `hash_multimap`.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a `hash_multimap` in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a `hash_multimap`.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the `hash_multimap`.|
@@ -181,7 +181,7 @@ A bidirectional iterator addressing the first element in the hash_multimap or th
 
 ### Remarks
 
-If the return value of **begin** is assigned to a `const_iterator`, the elements in the hash_multimap object cannot be modified. If the return value of **begin** is assigned to an **iterator**, the elements in the hash_multimap object can be modified.
+If the return value of `begin` is assigned to a `const_iterator`, the elements in the hash_multimap object cannot be modified. If the return value of `begin` is assigned to an `iterator`, the elements in the hash_multimap object can be modified.
 
 ### Example
 
@@ -389,7 +389,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 The `const_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***constKey, Type***>*. The value of the key is available through the first member pair, and the value of the mapped element is available through the second member of the pair.
 
-To dereference a `const_iterator` `cIter` pointing to an element in a hash_multimap, use the **->** operator.
+To dereference a `const_iterator` `cIter` pointing to an element in a hash_multimap, use the `->` operator.
 
 To access the value of the key for the element, use `cIter` -> **first**, which is equivalent to (\* `cIter`). **first**. To access the value of the mapped datum for the element, use `cIter` -> **second**, which is equivalent to (\* `cIter`). **first**.
 
@@ -487,7 +487,7 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 
 The `const_reverse_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key, Type>**, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference a `const_reverse_iterator` `crIter` pointing to an element in a hash_multimap, use the **->** operator.
+To dereference a `const_reverse_iterator` `crIter` pointing to an element in a hash_multimap, use the `->` operator.
 
 To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`). **first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.
 
@@ -508,7 +508,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The key of the elements to be matched from the hash_multimap.
 
 ### Return Value
@@ -521,7 +521,7 @@ The member function returns the number of elements in the range
 
 **[lower_bound (** `key` **), upper_bound (** `key` **) )**
 
-which have a key value `key`.
+which have a key value *key*.
 
 ### Example
 
@@ -768,7 +768,7 @@ iterator emplace(ValTy&& val);
 
 |Parameter|Description|
 |-|-|
-|`val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).|
+|*val*|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).|
 
 ### Return Value
 
@@ -825,8 +825,8 @@ iterator emplace_hint(
 
 |Parameter|Description|
 |-|-|
-|`val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|`_Where`|A hint regarding the place to start searching for the correct point of insertion.|
+|*val*|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).|
+|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
 
 ### Return Value
 
@@ -836,7 +836,7 @@ The [hash_multimap::emplace](#emplace) member function returns an iterator that 
 
 The [hash_multimap::value_type](#value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.
 
-Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.
+Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows *_Where*.
 
 ### Example
 
@@ -937,9 +937,9 @@ A bidirectional iterator that addresses the location succeeding the last element
 
 ### Remarks
 
-**end** is used to test whether an iterator has reached the end of its hash_multimap.
+`end` is used to test whether an iterator has reached the end of its hash_multimap.
 
-The value returned by **end** should not be dereferenced.
+The value returned by `end` should not be dereferenced.
 
 ### Example
 
@@ -1004,7 +1004,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-`key`
+*key*
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
@@ -1095,16 +1095,16 @@ size_type erase(const key_type& key);
 
 ### Parameters
 
-`_Where`
+*_Where*
  Position of the element to be removed from the hash_multimap.
 
-`first`
+*first*
  Position of the first element removed from the hash_multimap.
 
-`last`
+*last*
  Position just beyond the last element removed from the hash_multimap.
 
-`key`
+*key*
  The key of the elements to be removed from the hash_multimap.
 
 ### Return Value
@@ -1219,7 +1219,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The key to be matched by the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
@@ -1228,9 +1228,9 @@ An iterator that addresses the first location of an element with a specified key
 
 ### Remarks
 
-The member function returns an iterator that addresses an element in the hash_multimap whose sort key is **equivalent** to the argument key under a binary predicate that induces an ordering based on a less than comparability relation.
+The member function returns an iterator that addresses an element in the hash_multimap whose sort key is `equivalent` to the argument key under a binary predicate that induces an ordering based on a less than comparability relation.
 
-If the return value of **find** is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of **find** is assigned to an **iterator**, the hash_multimap object can be modified.
+If the return value of `find` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `find` is assigned to an `iterator`, the hash_multimap object can be modified.
 
 ### Example
 
@@ -1435,12 +1435,12 @@ hash_multimap(
 
 |Parameter|Description|
 |-|-|
-|`Al`|The storage allocator class to be used for this hash_multimap object, which defaults to `Allocator`.|
-|`Comp`|The comparison function of type `const Traits` used to order the elements in the map, which defaults to `Traits`.|
-|`Right`|The map of which the constructed set is to be a copy.|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
-|`IList`|The initializer_list to copy from.|
+|*Al*|The storage allocator class to be used for this hash_multimap object, which defaults to `Allocator`.|
+|*Comp*|The comparison function of type `const Traits` used to order the elements in the map, which defaults to `Traits`.|
+|*Right*|The map of which the constructed set is to be a copy.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
+|*IList*|The initializer_list to copy from.|
 
 ### Remarks
 
@@ -1450,11 +1450,11 @@ All constructors initialize their hash_multimap.
 
 All constructors store a function object of type `Traits` that is used to establish an order among the keys of the hash_multimap and can later be returned by calling [key_comp](#key_comp).
 
-The first three constructors specify an empty initial hash_multimap; the second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements and the third explicitly specifies the allocator type ( `_Al`) to be used. The keyword `explicit` suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial hash_multimap; the second specifies the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifies the allocator type (`_Al`) to be used. The keyword `explicit` suppresses certain kinds of automatic type conversion.
 
 The fourth constructor specifies a copy of the hash_multimap `Right`.
 
-The next three constructors copy the range `First, Last)` of a map with increasing explicitness in specifying the type of comparison function of class **Traits** and allocator.
+The next three constructors copy the range `First, Last)` of a map with increasing explicitness in specifying the type of comparison function of class `Traits` and allocator.
 
 The eighth constructor moves the hash_multimap `Right`.
 
@@ -1495,10 +1495,10 @@ iterator insert(
 
 |Parameter|Description|
 |-|-|
-|`Val`|The value of an element to be inserted into the hash_multimap unless it already contains that element, or more generally, unless it already contains an element whose key is equivalently ordered.|
-|`Where`|A hint about where to start searching for the correct point of insertion.|
-|`First`|The position of the first element to be copied from a map.|
-|`Last`|The position just beyond the last element to be copied from a map.|
+|*Val*|The value of an element to be inserted into the hash_multimap unless it already contains that element, or more generally, unless it already contains an element whose key is equivalently ordered.|
+|*Where*|A hint about where to start searching for the correct point of insertion.|
+|*First*|The position of the first element to be copied from a map.|
+|*Last*|The position just beyond the last element to be copied from a map.|
 
 ### Return Value
 
@@ -1514,7 +1514,7 @@ The last two `insert` member functions behave the same as the first two, except 
 
 The [value_type](#value_type) of an element is a pair, so that the value of an element will be an ordered pair in which the first component is equal to the key value and the second component is equal to the data value of the element.
 
-Insertion can occur in amortized constant time for the hint version of `insert`, instead of logarithmic time, if the insertion point immediately follows `Where`.
+Insertion can occur in amortized constant time for the hint version of `insert`, instead of logarithmic time, if the insertion point immediately follows *Where*.
 
 ## <a name="iterator"></a>  hash_multimap::iterator
 
@@ -1529,17 +1529,17 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### Remarks
 
-The **iterator** defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`\< **const Key, Type**>, whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`\< **const Key, Type**>, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference an **iterator**`Iter` pointing to an element in a hash_multimap, use the **->** operator.
+To dereference an **iterator**`Iter` pointing to an element in a hash_multimap, use the `->` operator.
 
 To access the value of the key for the element, use `Iter` -> **first**, which is equivalent to (\* `Iter`). **first**. To access the value of the mapped datum for the element, use `Iter` -> **second**, which is equivalent to (\* `Iter`). **first**.
 
-A type **iterator** can be used to modify the value of an element.
+A type `iterator` can be used to modify the value of an element.
 
 ### Example
 
-See the example for [begin](#begin) for an example of how to declare and use **iterator**.
+See the example for [begin](#begin) for an example of how to declare and use `iterator`.
 
 ## <a name="key_comp"></a>  hash_multimap::key_comp
 
@@ -1626,9 +1626,9 @@ typedef Traits key_compare;
 
 ### Remarks
 
-**key_compare** is a synonym for the template parameter `Traits`.
+`key_compare` is a synonym for the template parameter *Traits*.
 
-For more information on `Traits` see the [hash_multimap Class](../standard-library/hash-multimap-class.md) topic.
+For more information on *Traits* see the [hash_multimap Class](../standard-library/hash-multimap-class.md) topic.
 
 ### Example
 
@@ -1647,9 +1647,9 @@ typedef Key key_type;
 
 ### Remarks
 
-`key_type` is a synonym for the template parameter `Key`.
+`key_type` is a synonym for the template parameter *Key*.
 
-For more information on `Key`, see the Remarks section of the [hash_multimap Class](../standard-library/hash-multimap-class.md) topic.
+For more information on *Key*, see the Remarks section of the [hash_multimap Class](../standard-library/hash-multimap-class.md) topic.
 
 ### Example
 
@@ -1670,14 +1670,14 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of an element in a hash_multimap with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the hash_multimap if no match is found for the key.
 
-If the return value of `lower_bound` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `lower_bound` is assigned to an **iterator**, the hash_multimap object can be modified.
+If the return value of `lower_bound` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `lower_bound` is assigned to an `iterator`, the hash_multimap object can be modified.
 
 ### Remarks
 
@@ -1763,9 +1763,9 @@ typedef Type mapped_type;
 
 ### Remarks
 
-`mapped_type` is a synonym for the template parameter `Type`.
+`mapped_type` is a synonym for the template parameter *Type*.
 
-For more information on `Type` see the [hash_multimap Class](../standard-library/hash-multimap-class.md) topic.
+For more information on *Type* see the [hash_multimap Class](../standard-library/hash-multimap-class.md) topic.
 
 ### Example
 
@@ -1826,11 +1826,11 @@ hash_multimap& operator=(hash_multimap&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.|
+|*right*|The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.|
 
 ### Remarks
 
-After erasing any existing elements in a `hash_multimap`, `operator=` either copies or moves the contents of `right` into the `hash_multimap`.
+After erasing any existing elements in a `hash_multimap`, `operator=` either copies or moves the contents of *right* into the `hash_multimap`.
 
 ### Example
 
@@ -1883,7 +1883,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::po
 
 ### Remarks
 
-A type **pointer** can be used to modify the value of an element.
+A type `pointer` can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a hash_multimap object.
 
@@ -2224,7 +2224,7 @@ void swap(hash_multimap& right);
 
 ### Parameters
 
-`right`
+*right*
  The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.
 
 ### Remarks
@@ -2298,14 +2298,14 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of an element in a hash_multimap with a key that is greater than the argument key, or that addresses the location succeeding the last element in the hash_multimap if no match is found for the key.
 
-If the return value of `upper_bound` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `upper_bound` is assigned to a **iterator**, the hash_multimap object can be modified.
+If the return value of `upper_bound` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `upper_bound` is assigned to a `iterator`, the hash_multimap object can be modified.
 
 ### Remarks
 

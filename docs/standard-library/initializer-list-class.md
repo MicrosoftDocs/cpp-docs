@@ -27,7 +27,7 @@ class initializer_list
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|The element data type to be stored in the `initializer_list`.|
+|*Type*|The element data type to be stored in the `initializer_list`.|
 
 
 ## Remarks
@@ -110,8 +110,8 @@ initializer_list(const InputIterator First, const InputIterator Last);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
 
 ### Remarks
 

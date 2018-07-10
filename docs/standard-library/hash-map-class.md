@@ -31,16 +31,16 @@ class hash_map
 
 ### Parameters
 
-`Key`
+*Key*
  The key data type to be stored in the hash_map.
 
-`Type`
+*Type*
  The element data type to be stored in the hash_map.
 
-`Traits`
- The type which includes two function objects, one of class compare able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and hash_compare< `Key`, less< `Key`> > is the default value.
+*Traits*
+ The type which includes two function objects, one of class compare able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and hash_compare<`Key`, less<`Key`> > is the default value.
 
-`Allocator`
+*Allocator*
  The type that represents the stored allocator object that encapsulates details about the hash_map's allocation and deallocation of memory. This argument is optional, and the default value is allocator<pair <const `Key`, `Type`>>.
 
 ## Remarks
@@ -65,7 +65,7 @@ The choice of container type should be based in general on the type of searching
 
 The hash_map should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. A model for this type of structure is an ordered list of uniquely occurring keywords with associated string values providing, say, definitions. If, instead, the words had more than one correct definition, so that keys were not unique, then a hash_multimap would be the container of choice. If, on the other hand, just the list of words were being stored, then a hash_set would be the correct container. If multiple occurrences of the words were allowed, then a hash_multiset would be the appropriate container structure.
 
-The hash_map orders the sequence it controls by calling a stored hash `Traits` object of class [value_compare](../standard-library/value-compare-class.md). This stored object may be accessed by calling the member function [key_comp](#key_comp). Such a function object must behave the same as an object of class [hash_compare](../standard-library/hash-compare-class.md)<Key, less\<Key>>. Specifically, for all values `Key` of type `Key`, the call `Traits`( `Key` ) yields a distribution of values of type `size_t`.
+The hash_map orders the sequence it controls by calling a stored hash *Traits* object of class [value_compare](../standard-library/value-compare-class.md). This stored object may be accessed by calling the member function [key_comp](#key_comp). Such a function object must behave the same as an object of class [hash_compare](../standard-library/hash-compare-class.md)<Key, less\<Key>>. Specifically, for all values *Key* of type *Key*, the call `Traits`( `Key` ) yields a distribution of values of type `size_t`.
 
 In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x y) is a function object that has two argument objects `x` and `y` and a return value of `true` or `false`. An ordering imposed on a hash_map is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both f(x, y) and f(y, x) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
@@ -85,9 +85,9 @@ The iterator provided by the hash_map class is a bidirectional iterator, but the
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_map` object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `hash_map`.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a `const` element in a `hash_map`.|
-|[const_reference](#const_reference)|A type that provides a reference to a `const` element stored in a `hash_map` for reading and performing `const` operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any `const` element in the `hash_map`.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a `hash_map`.|
+|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a `hash_map` for reading and performing **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in the `hash_map`.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a `hash_map` in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a `hash_map`.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the `hash_map`.|
@@ -175,7 +175,7 @@ const Type& at(const Key& key) const;
 
 |Parameter|Description|
 |-|-|
-|`key`|The key value of the element that is to be found.|
+|*key*|The key value of the element that is to be found.|
 
 ### Return Value
 
@@ -436,7 +436,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 The `const_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***const Key, Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference a `const_iterator` `cIter` pointing to an element in a hash_map, use the **->** operator.
+To dereference a `const_iterator` `cIter` pointing to an element in a hash_map, use the `->` operator.
 
 To access the value of the key for the element, use `cIter` **-> first**, which is equivalent to (\* `cIter`) **.first**. To access the value of the mapped datum for the element, use `cIter` **-> second**, which is equivalent to (\* `cIter`) **.second**.
 
@@ -555,7 +555,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The key value of the elements to be matched from the hash_map.
 
 ### Return Value
@@ -809,13 +809,13 @@ emplace(
 
 |Parameter|Description|
 |-|-|
-|`val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
+|*val*|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
 
 ### Return Value
 
 The `emplace` member function returns a pair whose bool component returns true if an insertion was made and false if the `hash_map` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `*(pr.first)`. To access the `bool` component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `*(pr.second)`.
+To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `*(pr.first)`. To access the **bool** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `*(pr.second)`.
 
 ### Remarks
 
@@ -868,8 +868,8 @@ iterator emplace_hint(
 
 |Parameter|Description|
 |-|-|
-|`val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|`_Where`|A hint regarding the place to start searching for the correct point of insertion.|
+|*val*|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|
+|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
 
 ### Return Value
 
@@ -879,7 +879,7 @@ The [hash_multimap::emplace](../standard-library/hash-multimap-class.md#emplace)
 
 The [hash_map::value_type](#value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.
 
-Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.
+Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows *_Where*.
 
 ### Example
 
@@ -980,9 +980,9 @@ A bidirectional iterator that addresses the location succeeding the last element
 
 ### Remarks
 
-**end** is used to test whether an iterator has reached the end of its hash_map.
+`end` is used to test whether an iterator has reached the end of its hash_map.
 
-The value returned by **end** should not be dereferenced.
+The value returned by `end` should not be dereferenced.
 
 ### Example
 
@@ -1047,7 +1047,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-`key`
+*key*
  The argument key value to be compared with the sort key of an element from the hash_map being searched.
 
 ### Return Value
@@ -1136,16 +1136,16 @@ size_type erase(const key_type& key);
 
 ### Parameters
 
-`_Where`
+*_Where*
  Position of the element to be removed from the hash_map.
 
-`first`
+*first*
  Position of the first element removed from the hash_map.
 
-`last`
+*last*
  Position just beyond the last element removed from the hash_map.
 
-`key`
+*key*
  The key value of the elements to be removed from the hash_map.
 
 ### Return Value
@@ -1258,7 +1258,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The key value to be matched by the sort key of an element from the hash_map being searched.
 
 ### Return Value
@@ -1267,9 +1267,9 @@ An iterator that addresses the location of an element with a specified key, or t
 
 ### Remarks
 
-**find** returns an iterator that addresses an element in the hash_map whose sort key is equivalent to the argument key under a binary predicate that induces an ordering based on a less than comparability relation.
+`find` returns an iterator that addresses an element in the hash_map whose sort key is equivalent to the argument key under a binary predicate that induces an ordering based on a less than comparability relation.
 
-If the return value of **find** is assigned to a [const_iterator](#const_iterator), the hash_map object cannot be modified. If the return value of **find** is assigned to an [iterator](#iterator), the hash_map object can be modified
+If the return value of `find` is assigned to a [const_iterator](#const_iterator), the hash_map object cannot be modified. If the return value of `find` is assigned to an [iterator](#iterator), the hash_map object can be modified
 
 ### Example
 
@@ -1453,12 +1453,12 @@ hash_map(
 
 |Parameter|Description|
 |-|-|
-|`Al`|The storage allocator class to be used for this hash_map object, which defaults to **Allocator**.|
-|`Comp`|The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.|
-|`Right`|The hash_map of which the constructed map is to be a copy.|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
-|`IList`|The initializer_list|
+|*Al*|The storage allocator class to be used for this hash_map object, which defaults to `Allocator`.|
+|*Comp*|The comparison function of type const `Traits` used to order the elements in the hash_map, which defaults to `hash_compare`.|
+|*Right*|The hash_map of which the constructed map is to be a copy.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
+|*IList*|The initializer_list|
 
 ### Remarks
 
@@ -1468,13 +1468,13 @@ All constructors initialize their hash_map.
 
 All constructors store a function object of type `Traits` that is used to establish an order among the keys of the hash_map and that can later be returned by calling [key_comp](#key_comp).
 
-The first three constructors specify an empty initial hash_map, in addition, the second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements and the third explicitly specifies the allocator type ( `Al`) to be used. The keyword `explicit` suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial hash_map, in addition, the second specifies the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifies the allocator type (*Al*) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
 
-The fourth constructor specifies a copy of the hash_map `Right`.
+The fourth constructor specifies a copy of the hash_map *Right*.
 
 The next three constructors copy the range `[First, Last)` of a hash_map with increasing explicitness in specifying the type of comparison function of class `Traits` and allocator.
 
-The last constructor moves the hash_map `Right`.
+The last constructor moves the hash_map *Right*.
 
 ## <a name="insert"></a>  hash_map::insert
 
@@ -1511,26 +1511,26 @@ iterator insert(
 
 |Parameter|Description|
 |-|-|
-|`val`|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|
-|`_Where`|A hint regarding the place to start searching for the correct point of insertion.|
-|`first`|The position of the first element to be copied from a hash_map.|
-|`last`|The position just beyond the last element to be copied from a hash_map.|
+|*val*|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|
+|*_Where*|A hint regarding the place to start searching for the correct point of insertion.|
+|*first*|The position of the first element to be copied from a hash_map.|
+|*last*|The position just beyond the last element to be copied from a hash_map.|
 
 ### Return Value
 
-The first **insert** member function returns a pair whose bool component returns true if an insertion was made and false if the hash_map already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
+The first `insert` member function returns a pair whose bool component returns true if an insertion was made and false if the hash_map already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-To access the iterator component of a pair `pr` returned by this member function, use `pr`. **first**, and to dereference it, use \*( `pr`. **first**). To access the `bool` component of a pair `pr` returned by this member function, use `pr`. **second**, and to dereference it, use \*( `pr`. **second**).
+To access the iterator component of a pair `pr` returned by this member function, use `pr`. **first**, and to dereference it, use \*( `pr`. **first**). To access the **bool** component of a pair `pr` returned by this member function, use `pr`. **second**, and to dereference it, use \*( `pr`. **second**).
 
-The second **insert** member function, the hint version, returns an iterator that points to the position where the new element was inserted into the hash_map.
+The second `insert` member function, the hint version, returns an iterator that points to the position where the new element was inserted into the hash_map.
 
-The last two **insert** member functions behave the same as the first two, except that they move construct the inserted value.
+The last two `insert` member functions behave the same as the first two, except that they move construct the inserted value.
 
 ### Remarks
 
 The [value_type](../standard-library/map-class.md#value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.
 
-Insertion can occur in amortized constant time for the hint version of insert, instead of logarithmic time, if the insertion point immediately follows `_Where`.
+Insertion can occur in amortized constant time for the hint version of insert, instead of logarithmic time, if the insertion point immediately follows *_Where*.
 
 The third member function inserts the sequence of element values into a hash_map corresponding to each element addressed by an iterator of in the range *[First, Last)* of a specified set.
 
@@ -1654,17 +1654,17 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### Remarks
 
-The **iterator** defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type **pair\<const Key, Type>,** whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type **pair\<const Key, Type>,** whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference an **iterator**`Iter` pointing to an element in a multimap, use the **->** operator.
+To dereference an **iterator**`Iter` pointing to an element in a multimap, use the `->` operator.
 
 To access the value of the key for the element, use `Iter` -> **first**, which is equivalent to (\* `Iter`). **first**. To access the value of the mapped datum for the element, use `Iter` -> **second**, which is equivalent to (\* `Iter`). **second**.
 
-A type **iterator** can be used to modify the value of an element.
+A type `iterator` can be used to modify the value of an element.
 
 ### Example
 
-See example for [begin](#begin) for an example of how to declare and use the **iterator**.
+See example for [begin](#begin) for an example of how to declare and use the `iterator`.
 
 ## <a name="key_comp"></a>  hash_map::key_comp
 
@@ -1799,14 +1799,14 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The argument key value to be compared with the sort key of an element from the hash_map being searched.
 
 ### Return Value
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of an element in a hash_map that with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the hash_map if no match is found for the key.
 
-If the return value of `lower_bound` is assigned to a `const_iterator`, the hash_map object cannot be modified. If the return value of `lower_bound` is assigned to a **iterator**, the hash_map object can be modified.
+If the return value of `lower_bound` is assigned to a `const_iterator`, the hash_map object cannot be modified. If the return value of `lower_bound` is assigned to a `iterator`, the hash_map object can be modified.
 
 ### Remarks
 
@@ -1938,7 +1938,7 @@ Type& operator[](Key&& key);
 
 |Parameter|Description|
 |-|-|
-|`key`|The key value of the element that is to be inserted.|
+|*key*|The key value of the element that is to be inserted.|
 
 ### Return Value
 
@@ -1952,7 +1952,7 @@ If the argument key value is not found, then it is inserted along with the defau
 
 `m[ key] = DataValue`;
 
-where DataValue is the value of the `mapped_type` of the element with a key value of `key`.
+where DataValue is the value of the `mapped_type` of the element with a key value of *key*.
 
 When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a preexisting element or creating a new one. The member functions [find](../standard-library/map-class.md#find) and [insert](../standard-library/map-class.md#insert) can be used to determine whether an element with a specified key is already present before an insertion.
 
@@ -2035,11 +2035,11 @@ hash_map& operator=(hash_map&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|
+|*right*|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|
 
 ### Remarks
 
-After erasing any existing elements in a `hash_map`, `operator=` either copies or moves the contents of `right` into the `hash_map`.
+After erasing any existing elements in a `hash_map`, `operator=` either copies or moves the contents of *right* into the `hash_map`.
 
 ### Example
 
@@ -2092,7 +2092,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::po
 
 ### Remarks
 
-A type **pointer** can be used to modify the value of an element.
+A type `pointer` can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a hash_map object.
 
@@ -2438,7 +2438,7 @@ void swap(hash_map& right);
 
 ### Parameters
 
-`right`
+*right*
  The argument hash_map providing the elements to be swapped with the target hash_map.
 
 ### Remarks
@@ -2514,14 +2514,14 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The argument key value to be compared with the sort key value of an element from the hash_map being searched.
 
 ### Return Value
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of an element in a hash_map that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the hash_map if no match is found for the key.
 
-If the return value is assigned to a `const_iterator`, the hash_map object cannot be modified. If the return value is assigned to an **iterator**, the hash_map object can be modified.
+If the return value is assigned to a `const_iterator`, the hash_map object cannot be modified. If the return value is assigned to an `iterator`, the hash_map object can be modified.
 
 ### Remarks
 
