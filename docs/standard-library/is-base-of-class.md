@@ -25,15 +25,15 @@ struct is_base_of;
 
 ### Parameters
 
-`Base`
+*Base*
  The base class to test for.
 
-`Derived`
+*Derived*
  The derived type to test for.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Base` is a base class of the type `Derived`, otherwise it holds false.
+An instance of the type predicate holds true if the type *Base* is a base class of the type *Derived*, otherwise it holds false.
 
 ## Example
 
