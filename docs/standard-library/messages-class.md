@@ -27,7 +27,7 @@ class messages : public messages_base;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type used within a program to encode characters in a locale.
 
 ## Remarks
@@ -88,7 +88,7 @@ void close(catalog _Catval) const;
 
 ### Parameters
 
-`_Catval`
+*_Catval*
  The catalog to be closed.
 
 ### Remarks
@@ -105,12 +105,12 @@ virtual void do_close(catalog _Catval) const;
 
 ### Parameters
 
-`_Catval`
+*_Catval*
  The catalog to be closed.
 
 ### Remarks
 
-The protected member function closes the message catalog `_Catval`, which must have been opened by an earlier call to [do_open](#do_open).
+The protected member function closes the message catalog *_Catval*, which must have been opened by an earlier call to [do_open](#do_open).
 
 *_Catval* must be obtained from a previously opened catalog that is not closed.
 
@@ -132,25 +132,25 @@ virtual string_type do_get(
 
 ### Parameters
 
-`_Catval`
+*_Catval*
  The identification value specifying the message catalog to be searched.
 
-`_Set`
+*_Set*
  The first identified used to locate a message in a message catalog.
 
-`_Message`
+*_Message*
  The second identified used to locate a message in a message catalog.
 
-`_Dfault`
+*_Dfault*
  The string to be returned on failure.
 
 ### Return Value
 
-It returns a copy of `_Dfault` on failure. Otherwise, it returns a copy of the specified message sequence.
+It returns a copy of *_Dfault* on failure. Otherwise, it returns a copy of the specified message sequence.
 
 ### Remarks
 
-The protected member function tries to obtain a message sequence from the message catalog `_Catval`. It may make use of `_Set`, `_Message`, and `_Dfault` in doing so.
+The protected member function tries to obtain a message sequence from the message catalog *_Catval*. It may make use of *_Set*, *_Message*, and *_Dfault* in doing so.
 
 ### Example
 
@@ -168,10 +168,10 @@ virtual catalog do_open(
 
 ### Parameters
 
-`_Catname`
+*_Catname*
  The name of the catalog to be searched.
 
-`_Loc`
+*_Loc*
  The locale being searched for in the catalog.
 
 ### Return Value
@@ -180,7 +180,7 @@ It returns a value that compares less than zero on failure. Otherwise, the retur
 
 ### Remarks
 
-The protected member function tries to open a message catalog whose name is `_Catname`. It may make use of the locale `_Loc` in doing so
+The protected member function tries to open a message catalog whose name is *_Catname*. It may make use of the locale *_Loc* in doing so
 
 The return value should be used as the argument on a later call to [close](#close).
 
@@ -202,21 +202,21 @@ string_type get(
 
 ### Parameters
 
-`_Catval`
+*_Catval*
  The identification value specifying the message catalog to be searched.
 
-`_Set`
+*_Set*
  The first identified used to locate a message in a message catalog.
 
-`_Message`
+*_Message*
  The second identified used to locate a message in a message catalog.
 
-`_Dfault`
+*_Dfault*
  The string to be returned on failure.
 
 ### Return Value
 
-It returns a copy of `_Dfault` on failure. Otherwise, it returns a copy of the specified message sequence.
+It returns a copy of *_Dfault* on failure. Otherwise, it returns a copy of the specified message sequence.
 
 ### Remarks
 
@@ -237,15 +237,15 @@ protected: messages(
 
 ### Parameters
 
-`_Refs`
+*_Refs*
  Integer value used to specify the type of memory management for the object.
 
-`_Locname`
+*_Locname*
  The name of the locale.
 
 ### Remarks
 
-The possible values for the `_Refs` parameter and their significance are:
+The possible values for the *_Refs* parameter and their significance are:
 
 - 0: The lifetime of the object is managed by the locales that contain it.
 
@@ -269,10 +269,10 @@ catalog open(
 
 ### Parameters
 
-`_Catname`
+*_Catname*
  The name of the catalog to be searched.
 
-`_Loc`
+*_Loc*
  The locale being searched for in the catalog.
 
 ### Return Value
@@ -285,7 +285,7 @@ The member function returns [do_open](#do_open)( `_Catname`, `_Loc`).
 
 ## <a name="string_type"></a>  messages::string_type
 
-A type that describes a string of type `basic_string` containing characters of type **CharType**.
+A type that describes a string of type `basic_string` containing characters of type `CharType`.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;

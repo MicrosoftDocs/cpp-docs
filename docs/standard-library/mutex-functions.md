@@ -34,18 +34,18 @@ void call_once(once_flag& Flag,
 
 ### Parameters
 
-`Flag`
+*Flag*
  A [once_flag](../standard-library/once-flag-structure.md) object that ensures that the callable object is only called once.
 
-`F`
+*F*
  A callable object.
 
-`A`
+*A*
  An argument list.
 
 ### Remarks
 
-If `Flag` is not valid, the function throws a [system_error](../standard-library/system-error-class.md) that has an error code of `invalid_argument`. Otherwise, the template function uses its `Flag` argument to ensure that it calls `F(A...)` successfully exactly once, regardless of how many times the template function is called. If `F(A...)` exits by throwing an exception, the call was not successful.
+If *Flag* is not valid, the function throws a [system_error](../standard-library/system-error-class.md) that has an error code of `invalid_argument`. Otherwise, the template function uses its *Flag* argument to ensure that it calls `F(A...)` successfully exactly once, regardless of how many times the template function is called. If `F(A...)` exits by throwing an exception, the call was not successful.
 
 ## <a name="defer_lock"></a>  defer_lock Variable
 

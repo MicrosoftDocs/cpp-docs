@@ -33,7 +33,7 @@ class multiset
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-`Allocator`
+*Allocator*
  The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is **allocator***\<Key>.*
 
 ## Remarks
@@ -58,7 +58,7 @@ The choice of container type should be based in general on the type of searching
 
 The multiset should be the associative container of choice when the conditions associating the values with their keys are satisfies by the application. The elements of a multiset may be multiple and serve as their own sort keys, so keys are not unique. A model for this type of structure is an ordered list of, say, words in which the words may occur more than once. Had multiple occurrences of the words not been allowed, then a set would have been the appropriate container structure. If unique definitions were attached as values to the list of unique key words, then a map would be an appropriate structure to contain this data. If instead the definitions were not unique, then a multimap would be the container of choice.
 
-The multiset orders the sequence it controls by calling a stored function object of type `Compare`. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **true** or **false**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
+The multiset orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **true** or **false**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
@@ -73,10 +73,10 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A typedef for the `allocator` class for the `multiset` object.|
-|[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a `const` element in the `multiset`.|
-|[const_pointer](#const_pointer)|A typedef for a pointer to a `const` element in a `multiset`.|
-|[const_reference](#const_reference)|A typedef for a reference to a `const` element stored in a `multiset` for reading and performing `const` operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A typedef for a bidirectional iterator that can read any `const` element in the `multiset`.|
+|[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a **const** element in the `multiset`.|
+|[const_pointer](#const_pointer)|A typedef for a pointer to a **const** element in a `multiset`.|
+|[const_reference](#const_reference)|A typedef for a reference to a **const** element stored in a `multiset` for reading and performing **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A typedef for a bidirectional iterator that can read any **const** element in the `multiset`.|
 |[difference_type](#difference_type)|A signed integer typedef for the number of elements of a `multiset` in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A typedef for a bidirectional iterator that can read or modify any element in a `multiset`.|
 |[key_compare](#key_compare)|A typedef for a function object that can compare two keys to determine the relative order of two elements in the `multiset`.|
@@ -203,7 +203,7 @@ The first element of ms1 is now 2
 
 ## <a name="cbegin"></a>  multiset::cbegin
 
-Returns a `const` iterator that addresses the first element in the range.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -211,13 +211,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A `const` bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **const** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -229,7 +229,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  multiset::cend
 
-Returns a `const` iterator that addresses the location just beyond the last element in a range.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -237,13 +237,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A `const` bidirectional-access iterator that points just beyond the end of the range.
+A **const** bidirectional-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -390,7 +390,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The key of the elements to be matched from the multiset.
 
 ### Return Value
@@ -624,7 +624,7 @@ iterator emplace(Args&&... args);
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the multiset.|
+|*args*|The arguments forwarded to construct an element to be inserted into the multiset.|
 
 ### Return Value
 
@@ -693,8 +693,8 @@ iterator emplace_hint(
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the multiset.|
-|`where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `where`, insertion can occur in amortized constant time instead of logarithmic time.)|
+|*args*|The arguments forwarded to construct an element to be inserted into the multiset.|
+|*where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)|
 
 ### Return Value
 
@@ -786,7 +786,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-`key`
+*key*
  The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -871,16 +871,16 @@ size_type erase(
 
 ### Parameters
 
-`Where`
+*Where*
  Position of the element to be removed.
 
-`First`
+*First*
  Position of the first element to be removed.
 
-`Last`
+*Last*
  Position just beyond the last element to be removed.
 
-`Key`
+*Key*
  The key value of the elements to be removed.
 
 ### Return Value
@@ -906,7 +906,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-`key`
+*key*
  The key value to be matched by the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -915,9 +915,9 @@ An iterator that refers to the location of an element with a specified key, or t
 
 ### Remarks
 
-The member function returns an iterator that refers to an element in the multiset whose key is equivalent to the argument `key` under a binary predicate that induces an ordering based on a less than comparability relation.
+The member function returns an iterator that refers to an element in the multiset whose key is equivalent to the argument *key* under a binary predicate that induces an ordering based on a less than comparability relation.
 
-If the return value of **find** is assigned to a **const_iterator**, the multiset object cannot be modified. If the return value of **find** is assigned to an **iterator**, the multiset object can be modified
+If the return value of `find` is assigned to a `const_iterator`, the multiset object cannot be modified. If the return value of `find` is assigned to an `iterator`, the multiset object can be modified
 
 ### Example
 
@@ -1095,13 +1095,13 @@ IList);
 
 |Parameter|Description|
 |-|-|
-|`Val`|The value of an element to be inserted into the multiset.|
-|`Where`|The place to start searching for the correct point of insertion. (If that point immediately precedes `Where`, insertion can occur in amortized constant time instead of logarithmic time.)|
-|`ValTy`|Template parameter that specifies the argument type that the multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
-|`First`|The position of the first element to be copied.|
-|`Last`|The position just beyond the last element to be copied.|
-|`InputIterator`|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|`IList`|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+|*Val*|The value of an element to be inserted into the multiset.|
+|*Where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)|
+|*ValTy*|Template parameter that specifies the argument type that the multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
+|*First*|The position of the first element to be copied.|
+|*Last*|The position just beyond the last element to be copied.|
+|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
+|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
 
 ### Return Value
 
@@ -1224,7 +1224,7 @@ typedef implementation-defined iterator;
 
 ### Example
 
-See the example for [begin](#begin) for an example of how to declare and use an **iterator**.
+See the example for [begin](#begin) for an example of how to declare and use an `iterator`.
 
 ## <a name="key_comp"></a>  multiset::key_comp
 
@@ -1311,7 +1311,7 @@ typedef Compare key_compare;
 
 ### Remarks
 
-**key_compare** is a synonym for the template parameter `Compare`.
+`key_compare` is a synonym for the template parameter `Compare`.
 
 For more information on `Compare`, see the Remarks section of the [multiset Class](../standard-library/multiset-class.md) topic.
 
@@ -1349,12 +1349,12 @@ iterator lower_bound(const Key& key);
 
 ### Parameters
 
-`key`
+*key*
  The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
 
-An **iterator** or `const_iterator` that addresses the location of an element in a multiset that with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the multiset if no match is found for the key.
+An `iterator` or `const_iterator` that addresses the location of an element in a multiset that with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the multiset if no match is found for the key.
 
 ### Example
 
@@ -1493,12 +1493,12 @@ multiset (
 
 |Parameter|Description|
 |-|-|
-|`Al`|The storage allocator class to be used for this multiset object, which defaults to `Allocator`.|
-|`Comp`|The comparison function of type `const Compare` used to order the elements in the multiset, which defaults to `Compare`.|
-|`Right`|The multiset of which the constructed multiset is to be a copy.|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
-|`IList`|The initializer_list from which to copy the elements.|
+|*Al*|The storage allocator class to be used for this multiset object, which defaults to `Allocator`.|
+|*Comp*|The comparison function of type `const Compare` used to order the elements in the multiset, which defaults to `Compare`.|
+|*Right*|The multiset of which the constructed multiset is to be a copy.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
+|*IList*|The initializer_list from which to copy the elements.|
 
 ### Remarks
 
@@ -1508,11 +1508,11 @@ All constructors initialize their multiset.
 
 All constructors store a function object of type Compare that is used to establish an order among the keys of the multiset and that can later be returned by calling [key_comp](#key_comp).
 
-The first three constructors specify an empty initial multiset, the second specifying the type of comparison function ( `Comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type ( `Al`) to be used. The keyword `explicit` suppresses certain kinds of automatic type conversion.
+The first three constructors specify an empty initial multiset, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.
 
-The fourth constructor specifies a copy of the multiset `Right`.
+The fourth constructor specifies a copy of the multiset *Right*.
 
-The fifth constructor specifies a copy of the multiset by moving `Right`.
+The fifth constructor specifies a copy of the multiset by moving *Right*.
 
 The sixth, seventh, and eighth constructors specify an initializer_list from which to copy the elements.
 
@@ -1633,11 +1633,11 @@ multiset& operator=(multiset&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The `multiset` from which elements are copied or moved.|
+|*right*|The `multiset` from which elements are copied or moved.|
 
 ### Remarks
 
-`operator=` copies or moves the elements in `right` into this `multiset`, depending on the reference type (lvalue or rvalue) used. Elements that are in this `multiset` before `operator=` executes are discarded.
+`operator=` copies or moves the elements in *right* into this `multiset`, depending on the reference type (lvalue or rvalue) used. Elements that are in this `multiset` before `operator=` executes are discarded.
 
 ### Example
 
@@ -1956,7 +1956,7 @@ void swap(
 
 ### Parameters
 
-`right`
+*right*
  The argument multiset providing the elements to be swapped with the target multiset.
 
 ### Remarks
@@ -2025,7 +2025,7 @@ iterator upper_bound(const Key& key);
 
 ### Parameters
 
-`key`
+*key*
  The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -2168,7 +2168,7 @@ typedef key_compare value_compare;
 
 `value_compare` is a synonym for the template parameter `Compare`.
 
-Note that both [key_compare](#key_compare) and **value_compare** are synonyms for the template parameter `Compare`. Both types are provided for the classes set and multiset, where they are identical, for compatibility with the classes map and multimap, where they are distinct.
+Note that both [key_compare](#key_compare) and `value_compare` are synonyms for the template parameter `Compare`. Both types are provided for the classes set and multiset, where they are identical, for compatibility with the classes map and multimap, where they are distinct.
 
 For more information on `Compare`, see the Remarks section of the [multiset Class](../standard-library/multiset-class.md) topic.
 
@@ -2188,7 +2188,7 @@ typedef Key value_type;
 
 `value_type` is a synonym for the template parameter `Key`.
 
-Note that both [key_type](#key_type) and `value_type` are synonyms for the template parameter **Key**. Both types are provided for the classes set and multiset, where they are identical, for compatibility with the classes map and multimap, where they are distinct.
+Note that both [key_type](#key_type) and `value_type` are synonyms for the template parameter `Key`. Both types are provided for the classes set and multiset, where they are identical, for compatibility with the classes map and multimap, where they are distinct.
 
 For more information on `Key`, see the Remarks section of the topic.
 
