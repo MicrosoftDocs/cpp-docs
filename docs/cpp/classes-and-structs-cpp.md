@@ -44,7 +44,7 @@ This section introduces C++ classes and structs. The two constructs are identica
   
 -   [C++ Bit Fields](../cpp/cpp-bit-fields.md)  
   
- The three class types are structure, class, and union. They are declared using the [struct](../cpp/struct-cpp.md), [class](../cpp/class-cpp.md), and [union](../cpp/unions.md) keywords (see [Defining Class Types](http://msdn.microsoft.com/en-us/e8c65425-0f3a-4dca-afc2-418c3b1e57da)). The following table shows the differences among the three class types.  
+ The three class types are structure, class, and union. They are declared using the [struct](../cpp/struct-cpp.md), [class](../cpp/class-cpp.md), and [union](../cpp/unions.md) keywords. The following table shows the differences among the three class types.  
   
  For more information on unions, see [Unions](../cpp/unions.md). For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
   

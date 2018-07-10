@@ -73,7 +73,7 @@ class COleDateTime
 ## Remarks  
  `COleDateTime` does not have a base class.  
   
- It is one of the possible types for the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) data type of OLE automation. A `COleDateTime` value represents an absolute date and time value.  
+ It is one of the possible types for the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type of OLE automation. A `COleDateTime` value represents an absolute date and time value.  
   
  The `DATE` type is implemented as a floating-point value. Days are measured from December 30, 1899, at midnight. The following table shows some dates and their associated values:  
   
@@ -727,7 +727,7 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator =(** `dateSrc` **)** The value and status of the operand are copied into this `COleDateTime` object.  
   
-- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.  
+- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.  
   
 - **operator =(** `dtSrc` **)** The `DATE` value is copied into this `COleDateTime` object and its status is set to valid.  
   
@@ -735,11 +735,11 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator =(** *systimeSrc* **)** The [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.  
   
-- **operator =(** `udate` **)** The `UDATE` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A `UDATE` structure represents an "unpacked" date. See the function [VarDateFromUdate](http://msdn.microsoft.com/en-us/1c924ac5-b896-49e1-9ccf-825ac7a030c8) for more details.  
+- **operator =(** `udate` **)** The `UDATE` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A `UDATE` structure represents an "unpacked" date. See the function [VarDateFromUdate](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) for more details.  
   
 - **operator =(** `filetimeSrc` **)** The [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entry in the Windows SDK.  
+ For more information, see the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entry in the Windows SDK.  
   
  For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.  
   
@@ -962,7 +962,7 @@ int SetDateTime(
 |*nMin*|0 - 59|  
 |*nSec*|0 - 59|  
   
- If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](http://msdn.microsoft.com/en-us/d9d69521-9b33-4fc5-8a1c-929f216db450).  
+ If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime).  
   
  If the date or time value specified by the parameters is not valid, the status of this object is set to invalid and the value of this object is not changed.  
   

@@ -76,7 +76,7 @@ class CComBSTR
 ## Remarks  
  The `CComBSTR` class is a wrapper for BSTRs, which are length-prefixed strings. The length is stored as an integer at the memory location preceding the data in the string.  
   
- A [BSTR](http://msdn.microsoft.com/en-us/1b2d7d2c-47af-4389-a6b6-b01b7e915228) is null-terminated after the last counted character but may also contain null characters embedded within the string. The string length is determined by the character count, not the first null character.  
+ A [BSTR](/previous-versions/windows/desktop/automat/bstr) is null-terminated after the last counted character but may also contain null characters embedded within the string. The string length is determined by the character count, not the first null character.  
   
 > [!NOTE]
 >  The `CComBSTR` class provides a number of members (constructors, assignment operators, and comparison operators) that take either ANSI or Unicode strings as arguments. The ANSI versions of these functions are less efficient than their Unicode counterparts because temporary Unicode strings are often created internally. For efficiency, use the Unicode versions where possible.  
