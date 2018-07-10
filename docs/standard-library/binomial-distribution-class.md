@@ -51,21 +51,21 @@ public:
 ### Parameters
 
 *IntType*
-The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
+The template class describes a distribution that produces values of a user-specified integral type, or type **int** if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
 
 ||||
 |-|-|-|
 |[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
 |`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
 
-The property members `t()` and `p()` return the currently stored distribution parameter values `t` and `p` respectively.
+The property members `t()` and `p()` return the currently stored distribution parameter values *t* and *p* respectively.
 
 The property member `param()` sets or returns the `param_type` stored distribution parameter package.
 
@@ -234,7 +234,7 @@ The `param_type` structure used to construct the distribution.
 
 **Precondition:** `0 ≤ t` and `0.0 ≤ p ≤ 1.0`
 
-The first constructor constructs an object whose stored `p` value holds the value *p* and whose stored `t` value holds the value *t*.
+The first constructor constructs an object whose stored *p* value holds the value *p* and whose stored *t* value holds the value *t*.
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # basic_ios Class
 
-The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters. (The class [ios_base](../standard-library/ios-base-class.md) describes what is common and not dependent on template parameters.) An object of class **basic_ios\<class Elem, class Traits>** helps control a stream with elements of type **Elem**, whose character traits are determined by the class **Traits**.
+The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters. (The class [ios_base](../standard-library/ios-base-class.md) describes what is common and not dependent on template parameters.) An object of class **basic_ios\<class Elem, class Traits>** helps control a stream with elements of type `Elem`, whose character traits are determined by the class `Traits`.
 
 ## Syntax
 
@@ -26,10 +26,10 @@ class basic_ios : public ios_base
 
 ### Parameters
 
-`Elem`
+*Elem*
  A type.
 
-`Traits`
+*Traits*
  A variable of type `char_traits`.
 
 ## Remarks
@@ -90,7 +90,7 @@ An object of class **basic_ios\<class Elem, class Traits>** stores:
 
 |Operator|Description|
 |-|-|
-|[explicit operator bool](#op_bool)|Allows use of a `basic_ios` object as a `bool`. Automatic type conversion is disabled to prevent common, unintended side effects.|
+|[explicit operator bool](#op_bool)|Allows use of a `basic_ios` object as a **bool**. Automatic type conversion is disabled to prevent common, unintended side effects.|
 |[operator void *](#op_void_star)|Indicates if the stream is still good.|
 |[operator!](#op_not)|Indicates if the stream is not bad.|
 
@@ -110,7 +110,7 @@ bool bad() const;
 
 ### Return Value
 
-`true` if `rdstate & badbit` is nonzero; otherwise `false`.
+**true** if `rdstate & badbit` is nonzero; otherwise **false**.
 
 For more information on `badbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -144,16 +144,16 @@ basic_ios();
 
 ### Parameters
 
-`sb`
+*sb*
  Standard buffer to store input or output elements.
 
 ### Remarks
 
-The first constructor initializes its member objects by calling [init](#init)(_ *Sb*). The second (protected) constructor leaves its member objects uninitialized. A later call to **init** must initialize the object before it can be safely destroyed.
+The first constructor initializes its member objects by calling [init](#init)(_ *Sb*). The second (protected) constructor leaves its member objects uninitialized. A later call to `init` must initialize the object before it can be safely destroyed.
 
 ## <a name="char_type"></a>  basic_ios::char_type
 
-A synonym for the template parameter **Elem**.
+A synonym for the template parameter `Elem`.
 
 ```cpp
 typedef Elem char_type;
@@ -170,15 +170,15 @@ void clear(io_state state);
 
 ### Parameters
 
-`state` (optional)
+*state* (optional)
  The flags you want to set after clearing all flags. Defaults to `goodbit`.
 
-`reraise` (optional)
- Specifies whether the exception should be re-raised. Defaults to `false` (will not re-raise the exception).
+*reraise* (optional)
+ Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
 
 ### Remarks
 
-The flags are **goodbit**, **failbit**, **eofbit**, and **badbit**. Test for these flags with [good](#good), [bad](#bad), [eof](#eof), and [fail](#fail)
+The flags are `goodbit`, `failbit`, `eofbit`, and `badbit`. Test for these flags with [good](#good), [bad](#bad), [eof](#eof), and [fail](#fail)
 
 The member function replaces the stored stream state information with:
 
@@ -188,7 +188,7 @@ If `state`**&**[exceptions](#exceptions) is nonzero, it then throws an object of
 
 ### Example
 
-See [rdstate](#rdstate) and [getline](../standard-library/string-functions.md#getline) for examples using **clear**.
+See [rdstate](#rdstate) and [getline](../standard-library/string-functions.md#getline) for examples using `clear`.
 
 ## <a name="copyfmt"></a>  basic_ios::copyfmt
 
@@ -201,7 +201,7 @@ const basic_ios<Elem, Traits>& right);
 
 ### Parameters
 
-`right`
+*right*
  The stream whose flags you want to copy.
 
 ### Return Value
@@ -210,7 +210,7 @@ The **this** object for the stream to which you are copying the flags.
 
 ### Remarks
 
-The member function reports the callback event **erase\_event**. It then copies from `right` into **\*this** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event **copyfmt_event**. If, after the copy is complete, **state &**[exceptions](#exceptions) is nonzero, the function effectively calls [clear](#clear) with the argument [rdstate](#rdstate). It returns **\*this**.
+The member function reports the callback event **erase\_event**. It then copies from *right* into **\*this** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event `copyfmt_event`. If, after the copy is complete, **state &**[exceptions](#exceptions) is nonzero, the function effectively calls [clear](#clear) with the argument [rdstate](#rdstate). It returns **\*this**.
 
 ### Example
 
@@ -244,11 +244,11 @@ bool eof() const;
 
 ### Return Value
 
-`true` if the end of the stream has been reached, `false` otherwise.
+**true** if the end of the stream has been reached, **false** otherwise.
 
 ### Remarks
 
-The member function returns `true` if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+The member function returns **true** if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
 ### Example
 
@@ -341,7 +341,7 @@ bool fail() const;
 
 ### Return Value
 
-`true` if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise `false`.
+**true** if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise **false**.
 
 For more information on `failbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -373,7 +373,7 @@ char_type fill(char_type Char);
 
 ### Parameters
 
-`Char`
+*Char*
  The character you want as the fill character.
 
 ### Return Value
@@ -382,7 +382,7 @@ The current fill character.
 
 ### Remarks
 
-The first member function returns the stored fill character. The second member function stores `Char` in the fill character and returns its previous stored value.
+The first member function returns the stored fill character. The second member function stores *Char* in the fill character and returns its previous stored value.
 
 ### Example
 
@@ -419,7 +419,7 @@ bool good() const;
 
 ### Return Value
 
-`true` if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, `false`.
+**true** if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, **false**.
 
 For more information on `goodbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -437,7 +437,7 @@ locale imbue(const locale& Loc);
 
 ### Parameters
 
-`Loc`
+*Loc*
  A locale string.
 
 ### Return Value
@@ -480,10 +480,10 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 ### Parameters
 
-`_Sb`
+*_Sb*
  Standard buffer to store input or output elements.
 
-`_Isstd`
+*_Isstd*
  Specifies whether this is a standard stream.
 
 ### Remarks
@@ -494,9 +494,9 @@ The member function stores values in all member objects, so that:
 
 - [tie](#tie) returns a null pointer.
 
-- [rdstate](#rdstate) returns [goodbit](../standard-library/ios-base-class.md#iostate) if `_Sb` is nonzero; otherwise, it returns [badbit](../standard-library/ios-base-class.md#iostate).
+- [rdstate](#rdstate) returns [goodbit](../standard-library/ios-base-class.md#iostate) if *_Sb* is nonzero; otherwise, it returns [badbit](../standard-library/ios-base-class.md#iostate).
 
-- [exceptions](#exceptions) returns **goodbit**.
+- [exceptions](#exceptions) returns `goodbit`.
 
 - [flags](../standard-library/ios-base-class.md#flags) returns [skipws](../standard-library/ios-base-class.md#fmtflags) &#124; [dec](../standard-library/ios-base-class.md#fmtflags).
 
@@ -512,7 +512,7 @@ The member function stores values in all member objects, so that:
 
 ## <a name="int_type"></a>  basic_ios::int_type
 
-A synonym for **traits_type::int_type**.
+A synonym for `traits_type::int_type`.
 
 ```cpp
 typedef typename traits_type::int_type int_type;
@@ -528,12 +528,12 @@ void move(basic_ios&& right);
 
 ### Parameters
 
-`right`
+*right*
  The `ios_base` object to move values from.
 
 ### Remarks
 
-The protected member function moves all the values stored in `right` to `*this` except the stored `stream buffer pointer`, which is unchanged in `right` and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in `right`.
+The protected member function moves all the values stored in *right* to `*this` except the stored `stream buffer pointer`, which is unchanged in *right* and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in *right*.
 
 ## <a name="narrow"></a>  basic_ios::narrow
 
@@ -545,15 +545,15 @@ char narrow(char_type Char, char Default = '\0') const;
 
 ### Parameters
 
-`Char`
- The `char` to convert.
+*Char*
+ The **char** to convert.
 
-`Default`
- The `char` that you want returned if no equivalent is found.
+*Default*
+ The **char** that you want returned if no equivalent is found.
 
 ### Return Value
 
-The equivalent `char` to a given `char_type`.
+The equivalent **char** to a given `char_type`.
 
 ### Remarks
 
@@ -582,7 +582,7 @@ int main( )
 
 ## <a name="off_type"></a>  basic_ios::off_type
 
-A synonym for **traits_type::off_type**.
+A synonym for `traits_type::off_type`.
 
 ```cpp
 typedef typename traits_type::off_type off_type;
@@ -650,7 +650,7 @@ int main( )
 
 ## <a name="op_bool"></a>  basic_ios::operator bool
 
-Allows use of a `basic_ios` object as a `bool`. Automatic type conversion is disabled to prevent common, unintended side effects.
+Allows use of a `basic_ios` object as a **bool**. Automatic type conversion is disabled to prevent common, unintended side effects.
 
 ```cpp
 explicit operator bool() const;
@@ -658,11 +658,11 @@ explicit operator bool() const;
 
 ### Remarks
 
-The operator returns a value convertible to `false` only if `fail()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.
+The operator returns a value convertible to **false** only if `fail()`. The return type is convertible only to **bool**, not to `void *` or other known scalar type.
 
 ## <a name="pos_type"></a>  basic_ios::pos_type
 
-A synonym for **traits_type::pos_type**.
+A synonym for `traits_type::pos_type`.
 
 ```cpp
 typedef typename traits_type::pos_type pos_type;
@@ -680,14 +680,14 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 ### Parameters
 
-`_Sb`
+*_Sb*
  A stream.
 
 ### Remarks
 
 The first member function returns the stored stream buffer pointer.
 
-The second member function stores `_Sb` in the stored stream buffer pointer and returns the previously stored value.
+The second member function stores *_Sb* in the stored stream buffer pointer and returns the previously stored value.
 
 ### Example
 
@@ -772,7 +772,7 @@ void setstate(iostate _State);
 
 ### Parameters
 
-`_State`
+*_State*
  Additional flags to set.
 
 ### Remarks
@@ -822,12 +822,12 @@ basic_streambuf<Elem, Tr>* strbuf)
 
 ### Parameters
 
-`strbuf`
+*strbuf*
  The stream buffer to become the read buffer.
 
 ### Remarks
 
-The protected member function stores `strbuf` in the `stream buffer pointer`.It does not call `clear`.
+The protected member function stores *strbuf* in the `stream buffer pointer`.It does not call `clear`.
 
 ## <a name="tie"></a>  basic_ios::tie
 
@@ -841,12 +841,12 @@ basic_ostream<Elem, Traits>* str);
 
 ### Parameters
 
-`str`
+*str*
  A stream.
 
 ### Return Value
 
-The first member function returns the stored tie pointer. The second member function stores `str` in the tie pointer and returns its previous stored value.
+The first member function returns the stored tie pointer. The second member function stores *str* in the tie pointer and returns its previous stored value.
 
 ### Remarks
 
@@ -872,7 +872,7 @@ int main( )
 
 ## <a name="traits_type"></a>  basic_ios::traits_type
 
-A synonym for the template parameter **Traits**.
+A synonym for the template parameter `Traits`.
 
 ```cpp
 typedef Traits traits_type;
@@ -880,7 +880,7 @@ typedef Traits traits_type;
 
 ## <a name="widen"></a>  basic_ios::widen
 
-Finds the equivalent `char_type` to a given `char`.
+Finds the equivalent `char_type` to a given **char**.
 
 ```cpp
 char_type widen(char Char) const;
@@ -888,12 +888,12 @@ char_type widen(char Char) const;
 
 ### Parameters
 
-`Char`
+*Char*
  The character to convert.
 
 ### Return Value
 
-Finds the equivalent `char_type` to a given `char`.
+Finds the equivalent `char_type` to a given **char**.
 
 ### Remarks
 
@@ -930,12 +930,12 @@ void swap(basic_ios&& right);
 
 ### Parameters
 
-`right`
+*right*
  The `basic_ios` object that is used to exchange values.
 
 ### Remarks
 
-The protected member function exchanges all the values stored in `right` with `*this` except the stored `stream buffer pointer`.
+The protected member function exchanges all the values stored in *right* with `*this` except the stored `stream buffer pointer`.
 
 ## See also
 

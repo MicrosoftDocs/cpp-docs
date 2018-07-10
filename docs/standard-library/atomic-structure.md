@@ -52,9 +52,9 @@ struct atomic;
 
 ## Remarks
 
-The type *Ty* must be *trivially copyable*. That is, using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) to copy its bytes must produce a valid *Ty* object that compares equal to the original object. The [compare_exchange_weak](#compare_exchange_weak) and [compare_exchange_strong](#compare_exchange_strong) member functions use [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) to determine whether two *Ty* values are equal. These functions will not use a *Ty*-defined **operator==**. The member functions of **atomic** use **memcpy** to copy values of type *Ty*.
+The type *Ty* must be *trivially copyable*. That is, using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) to copy its bytes must produce a valid *Ty* object that compares equal to the original object. The [compare_exchange_weak](#compare_exchange_weak) and [compare_exchange_strong](#compare_exchange_strong) member functions use [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) to determine whether two *Ty* values are equal. These functions will not use a *Ty*-defined `operator==`. The member functions of `atomic` use `memcpy` to copy values of type *Ty*.
 
-A partial specialization, **atomic\<Ty \*>**, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type **ptrdiff_t** and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
+A partial specialization, **atomic\<Ty \*>**, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type `ptrdiff_t` and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
 
 A specialization exists for every integral type except **bool**. Each specialization provides a rich set of methods for atomic arithmetic and logical operations.
 
@@ -66,7 +66,7 @@ A specialization exists for every integral type except **bool**. Each specializa
 |**atomic\<unsigned int>**|**atomic\<long>**|**atomic\<unsigned long>**|
 |**atomic\<long long>**|**atomic\<unsigned long long>**|
 
-Integral specializations are derived from corresponding **atomic_integral** types. For example, **atomic\<unsigned int>** is derived from **atomic_uint**.
+Integral specializations are derived from corresponding `atomic_integral` types. For example, **atomic\<unsigned int>** is derived from `atomic_uint`.
 
 ## Requirements
 
@@ -111,7 +111,7 @@ atomic<Ty>::operator Ty() const noexcept;
 
 ### Remarks
 
-This operator applies the **memory_order_seq_cst** [memory_order](atomic-enums.md).
+This operator applies the `memory_order_seq_cst` [memory_order](atomic-enums.md).
 
 ## <a name="op_eq"></a> atomic::operator=
 
@@ -148,7 +148,7 @@ Ty atomic<Ty>::operator++() noexcept;
 
 ### Return Value
 
-The first two operators return the incremented value; the last two operators return the value before the increment. The operators use the **memory_order_seq_cst** [memory_order](atomic-enums.md).
+The first two operators return the incremented value; the last two operators return the value before the increment. The operators use the `memory_order_seq_cst` [memory_order](atomic-enums.md).
 
 ## <a name="op_add_eq"></a> atomic::operator+=
 
@@ -174,7 +174,7 @@ A *Ty* object that contains the result of the addition.
 
 ### Remarks
 
-This operator uses the **memory_order_seq_cst** [memory_order](atomic-enums.md).
+This operator uses the `memory_order_seq_cst` [memory_order](atomic-enums.md).
 
 ## <a name="op_dec"></a> atomic::operator--
 
@@ -189,7 +189,7 @@ Ty atomic<Ty>::operator--() noexcept;
 
 ### Return Value
 
-The first two operators return the decremented value; the last two operators return the value before the decrement. The operators use the **memory_order_seq_cst** [memory_order](atomic-enums.md).
+The first two operators return the decremented value; the last two operators return the value before the decrement. The operators use the `memory_order_seq_cst` [memory_order](atomic-enums.md).
 
 ## <a name="op_sub_eq"></a> atomic::operator-=
 
@@ -215,7 +215,7 @@ A *Ty* object that contains the result of the subtraction.
 
 ### Remarks
 
-This operator uses the **memory_order_seq_cst** [memory_order](atomic-enums.md).
+This operator uses the `memory_order_seq_cst` [memory_order](atomic-enums.md).
 
 ## <a name="op_and_eq"></a> atomic::operator&=
 
@@ -241,7 +241,7 @@ The result of the bitwise and.
 
 ### Remarks
 
-This operator performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise and of *Value* and the current value that is stored in **\*this**, within the constraints of the **memory_order_seq_cst** [memory_order](atomic-enums.md).
+This operator performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise and of *Value* and the current value that is stored in **\*this**, within the constraints of the `memory_order_seq_cst` [memory_order](atomic-enums.md).
 
 ## <a name="op_or_eq"></a> atomic::operator&#124;=
 
@@ -267,7 +267,7 @@ The result of the bitwise or.
 
 ### Remarks
 
-This operator performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise or of *Value* and the current value that is stored in **\*this**, within the constraints of the **memory_order_seq_cst** [memory_order](atomic-enums.md) constraints.
+This operator performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise or of *Value* and the current value that is stored in **\*this**, within the constraints of the `memory_order_seq_cst` [memory_order](atomic-enums.md) constraints.
 
 ## <a name="op_xor_eq"></a> atomic::operator^=
 
@@ -293,7 +293,7 @@ The result of the bitwise exclusive or.
 
 ### Remarks
 
-This operator performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise exclusive or of *Value* and the current value that is stored in **\*this**, within the constraints of the **memory_order_seq_cst** [memory_order](atomic-enums.md) constraints.
+This operator performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise exclusive or of *Value* and the current value that is stored in **\*this**, within the constraints of the `memory_order_seq_cst` [memory_order](atomic-enums.md) constraints.
 
 ## <a name="compare_exchange_strong"></a> atomic::compare_exchange_strong
 
@@ -333,10 +333,10 @@ A value of type *Ty*.
 A value of type *Ty*.
 
 *Order1*<br/>
-First **memory_order** argument.
+First `memory_order` argument.
 
 *Order2*<br/>
-Second **memory_order** argument.
+Second `memory_order` argument.
 
 ### Return Value
 
@@ -346,9 +346,9 @@ A **bool** that indicates the result of the value comparison.
 
 This atomic compare and exchange operation compares the value that is stored in **\*this** with *Exp*. If the values are equal, the operation replaces the value that is stored in **\*this** with *Value* by using a read-modify-write operation and applying the memory order constraints that are specified by *Order1*. If the values are not equal, the operation uses the value that is stored in **\*this** to replace *Exp* and applies the memory order constraints that are specified by *Order2*.
 
-Overloads that do not have a second **memory_order** use an implicit *Order2* that is based on the value of *Order1*. If *Order1* is **memory_order_acq_rel**, *Order2* is **memory_order_acquire**. If *Order1* is **memory_order_release**, *Order2* is **memory_order_relaxed**. In all other cases, *Order2* is equal to *Order1*.
+Overloads that do not have a second `memory_order` use an implicit *Order2* that is based on the value of *Order1*. If *Order1* is `memory_order_acq_rel`, *Order2* is `memory_order_acquire`. If *Order1* is `memory_order_release`, *Order2* is `memory_order_relaxed`. In all other cases, *Order2* is equal to *Order1*.
 
-For overloads that take two **memory_order** parameters, the value of *Order2* must not be **memory_order_release** or **memory_order_acq_rel**, and must not be stronger than the value of *Order1*.
+For overloads that take two `memory_order` parameters, the value of *Order2* must not be `memory_order_release` or `memory_order_acq_rel`, and must not be stronger than the value of *Order1*.
 
 ## <a name="compare_exchange_weak"></a> atomic::compare_exchange_weak
 
@@ -388,10 +388,10 @@ A value of type *Ty*.
 A value of type *Ty*.
 
 *Order1*<br/>
-First **memory_order** argument.
+First `memory_order` argument.
 
 *Order2*<br/>
-Second **memory_order** argument.
+Second `memory_order` argument.
 
 ### Return Value
 
@@ -403,9 +403,9 @@ This atomic compare and exchange operation compares the value that is stored in 
 
 A weak atomic compare and exchange operation performs an exchange if the compared values are equal. If the values are not equal, the operation is not guaranteed to perform an exchange.
 
-Overloads that do not have a second **memory_order** use an implicit *Order2* that is based on the value of *Order1*. If *Order1* is **memory_order_acq_rel**, *Order2* is **memory_order_acquire**. If *Order1* is **memory_order_release**, *Order2* is **memory_order_relaxed**. In all other cases, *Order2* is equal to *Order1*.
+Overloads that do not have a second `memory_order` use an implicit *Order2* that is based on the value of *Order1*. If *Order1* is `memory_order_acq_rel`, *Order2* is `memory_order_acquire`. If *Order1* is `memory_order_release`, *Order2* is `memory_order_relaxed`. In all other cases, *Order2* is equal to *Order1*.
 
-For overloads that take two **memory_order** parameters, the value of *Order2* must not be **memory_order_release** or **memory_order_acq_rel**, and must not be stronger than the value of *Order1*.
+For overloads that take two `memory_order` parameters, the value of *Order2* must not be `memory_order_release` or `memory_order_acq_rel`, and must not be stronger than the value of *Order1*.
 
 ## <a name="exchange"></a> atomic::exchange
 
@@ -428,7 +428,7 @@ Ty atomic<Ty>::exchange(
 A value of type *Ty*.
 
 *Order*<br/>
-A **memory_order**.
+A `memory_order`.
 
 ### Return Value
 
@@ -459,7 +459,7 @@ Ty atomic<Ty>::fetch_add (
 A value of type *Ty*.
 
 *Order*<br/>
-A **memory_order**.
+A `memory_order`.
 
 ### Return Value
 
@@ -467,7 +467,7 @@ A *Ty* object that contains the value stored in **\*this** prior to the addition
 
 ### Remarks
 
-The **fetch_add** method performs a read-modify-write operation to atomically add *Value* to the stored value in **\*this**, and applies the memory constraints that are specified by *Order*.
+The `fetch_add` method performs a read-modify-write operation to atomically add *Value* to the stored value in **\*this**, and applies the memory constraints that are specified by *Order*.
 
 ## <a name="fetch_and"></a> atomic::fetch_and
 
@@ -490,7 +490,7 @@ Ty atomic<Ty>::fetch_and (
 A value of type *Ty*.
 
 *Order*<br/>
-A **memory_order**.
+A `memory_order`.
 
 ### Return Value
 
@@ -498,7 +498,7 @@ A *Ty* object that contains the result of the bitwise and.
 
 ### Remarks
 
-The **fetch_and** method performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise and of *Value* and the current value that is stored in **\*this**, within the memory constraints that are specified by *Order*.
+The `fetch_and` method performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise and of *Value* and the current value that is stored in **\*this**, within the memory constraints that are specified by *Order*.
 
 ## <a name="fetch_or"></a> atomic::fetch_or
 
@@ -521,7 +521,7 @@ Ty atomic<Ty>::fetch_or (
 A value of type *Ty*.
 
 *Order*<br/>
-A **memory_order**.
+A `memory_order`.
 
 ### Return Value
 
@@ -529,7 +529,7 @@ A *Ty* object that contains the result of the bitwise or.
 
 ### Remarks
 
-The **fetch_or** method performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise or of *Value* and the current value that is stored in **\*this**, within the memory constraints that are specified by *Order*.
+The `fetch_or` method performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise or of *Value* and the current value that is stored in **\*this**, within the memory constraints that are specified by *Order*.
 
 ## <a name="fetch_sub"></a> atomic::fetch_sub
 
@@ -552,7 +552,7 @@ Ty atomic<Ty>::fetch_sub (
 A value of type *Ty*.
 
 *Order*<br/>
-A **memory_order**.
+A `memory_order`.
 
 ### Return Value
 
@@ -560,7 +560,7 @@ A *Ty* object that contains the result of the subtraction.
 
 ### Remarks
 
-The **fetch_sub** method performs a read-modify-write operation to atomically subtract *Value* from the stored value in **\*this**, within the memory constraints that are specified by *Order*.
+The `fetch_sub` method performs a read-modify-write operation to atomically subtract *Value* from the stored value in **\*this**, within the memory constraints that are specified by *Order*.
 
 ## <a name="fetch_xor"></a> atomic::fetch_xor
 
@@ -583,7 +583,7 @@ Ty atomic<Ty>::fetch_xor (
 A value of type *Ty*.
 
 *Order*<br/>
-A **memory_order**.
+A `memory_order`.
 
 ### Return Value
 
@@ -591,7 +591,7 @@ A *Ty* object that contains the result of the bitwise exclusive or.
 
 ### Remarks
 
-The **fetch_xor** method performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise exclusive or of *Value* and the current value that is stored in **\*this**, and applies the memory constraints that are specified by *Order*.
+The `fetch_xor` method performs a read-modify-write operation to replace the stored value of **\*this** with a bitwise exclusive or of *Value* and the current value that is stored in **\*this**, and applies the memory constraints that are specified by *Order*.
 
 ## <a name="is_lock_free"></a> atomic::is_lock_free
 
@@ -625,7 +625,7 @@ Ty atomic::load(
 ### Parameters
 
 *Order*<br/>
-A **memory_order**. *Order* must not be **memory_order_release** or **memory_order_acq_rel**.
+A `memory_order`. *Order* must not be `memory_order_release` or `memory_order_acq_rel`.
 
 ### Return Value
 
@@ -652,7 +652,7 @@ void atomic<Ty>::store(
 A *Ty* object.
 
 *Order*<br/>
-A **memory_order** constraint.
+A `memory_order` constraint.
 
 ### Remarks
 

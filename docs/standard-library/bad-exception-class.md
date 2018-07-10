@@ -26,7 +26,7 @@ class bad_exception    : public exception {};
 
 [unexpected](../standard-library/exception-functions.md#unexpected) will throw a `bad_exception` instead of terminating or instead of calling another function specified with [set_unexpected](../standard-library/exception-functions.md#set_unexpected) if `bad_exception` is included in the throw list of a function.
 
-The value returned by **what** is an implementation-defined C string. None of the member functions throw any exceptions.
+The value returned by `what` is an implementation-defined C string. None of the member functions throw any exceptions.
 
 For a list of members inherited by the `bad_exception` class, see [exception Class](../standard-library/exception-class.md).
 
