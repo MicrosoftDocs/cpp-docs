@@ -142,7 +142,7 @@ basic_ostream(basic_ostream&& right);
  An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
 *_Isstd*
- `true` if this is a standard stream; otherwise, `false`.
+ **true** if this is a standard stream; otherwise, **false**.
 
 *right*
  An rvalue reference to an object of type `basic_ostream`.

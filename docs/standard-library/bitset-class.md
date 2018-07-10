@@ -50,7 +50,7 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 |Member function|Description|
 |-|-|
-|[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to `true`.|
+|[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **true**.|
 |[any](#any)|The member function tests whether any bit in the sequence is set to 1.|
 |[count](#count)|The member function returns the number of bits set in the bit sequence.|
 |[flip](#flip)|Inverts the value of all the bits in a `bitset` or inverts a single bit at a specified position.|

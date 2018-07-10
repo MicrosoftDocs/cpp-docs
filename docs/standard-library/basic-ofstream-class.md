@@ -178,7 +178,7 @@ bool is_open() const;
 
 ### Return Value
 
-`true` if the file is open, `false` otherwise.
+**true** if the file is open, **false** otherwise.
 
 ### Remarks
 

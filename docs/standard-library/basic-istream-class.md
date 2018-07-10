@@ -158,7 +158,7 @@ basic_istream(basic_istream&& right);
  An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
 *_Isstd*
- `true` if this is a standard stream; otherwise, `false`.
+ **true** if this is a standard stream; otherwise, **false**.
 
 *right*
  A `basic_istream` object to copy.

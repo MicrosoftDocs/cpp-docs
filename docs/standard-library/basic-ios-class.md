@@ -110,7 +110,7 @@ bool bad() const;
 
 ### Return Value
 
-`true` if `rdstate & badbit` is nonzero; otherwise `false`.
+**true** if `rdstate & badbit` is nonzero; otherwise **false**.
 
 For more information on `badbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -174,7 +174,7 @@ void clear(io_state state);
  The flags you want to set after clearing all flags. Defaults to `goodbit`.
 
 *reraise* (optional)
- Specifies whether the exception should be re-raised. Defaults to `false` (will not re-raise the exception).
+ Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
 
 ### Remarks
 
@@ -244,11 +244,11 @@ bool eof() const;
 
 ### Return Value
 
-`true` if the end of the stream has been reached, `false` otherwise.
+**true** if the end of the stream has been reached, **false** otherwise.
 
 ### Remarks
 
-The member function returns `true` if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+The member function returns **true** if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
 ### Example
 
@@ -341,7 +341,7 @@ bool fail() const;
 
 ### Return Value
 
-`true` if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise `false`.
+**true** if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise **false**.
 
 For more information on `failbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -419,7 +419,7 @@ bool good() const;
 
 ### Return Value
 
-`true` if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, `false`.
+**true** if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, **false**.
 
 For more information on `goodbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
 
@@ -658,7 +658,7 @@ explicit operator bool() const;
 
 ### Remarks
 
-The operator returns a value convertible to `false` only if `fail()`. The return type is convertible only to **bool**, not to `void *` or other known scalar type.
+The operator returns a value convertible to **false** only if `fail()`. The return type is convertible only to **bool**, not to `void *` or other known scalar type.
 
 ## <a name="pos_type"></a>  basic_ios::pos_type
 
