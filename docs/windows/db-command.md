@@ -46,33 +46,33 @@ The *command* syntax is as follows:
 > binding parameter block 3  
 > ...  
   
- A *binding parameter block* is defined as follows:  
+A *binding parameter block* is defined as follows:  
   
- **(\[** `bindtype` **]** *szVar1* \[, *szVar2* \[, *nVar3* \[, ...]]] **)**  
+> **(\[** *bindtype* **]** *szVar1* \[, *szVar2* \[, *nVar3* \[, ...]]] **)**  
   
  where:  
   
- **(** marks the start of the data binding block.  
+- **(** marks the start of the data binding block.  
   
- **\[** `bindtype` **]** is one of the following case-insensitive strings:  
+- **\[** *bindtype* **]** is one of the following case-insensitive strings:  
   
--   **\[db_column]** binds each of the member variables to a column in a rowset.  
+  -   **\[db_column]** binds each of the member variables to a column in a rowset.  
   
--   **\[bindto]** (same as **\[db_column]**).  
+  -   **\[bindto]** (same as **\[db_column]**).  
   
--   **\[in]** binds member variables as input parameters.  
+  -   **\[in]** binds member variables as input parameters.  
   
--   **\[out]** binds member variables as output parameters.  
+  -   **\[out]** binds member variables as output parameters.  
   
--   **\[in,out]** binds member variables as input/output parameters.  
+  -   **\[in,out]** binds member variables as input/output parameters.  
   
- *SzVarX* resolves to a member variable within the current scope.  
+- *szVarX*, *nVarX* resolves to a member variable within the current scope.  
   
- **)** marks the end of the data binding block.  
+- **)** marks the end of the data binding block.  
   
- If the command string contains one or more specifiers such as \[in], \[out], or \[in/out], **db_command** builds a parameter map.  
+If the command string contains one or more specifiers such as \[in], \[out], or \[in/out], **db_command** builds a parameter map.  
   
- If the command string contains one or more parameters such as \[db_column] or \[bindto], **db_command** generates a rowset and an accessor map to service these bound variables. See [db_accessor](../windows/db-accessor.md) for more information.  
+If the command string contains one or more parameters such as \[db_column] or \[bindto], **db_command** generates a rowset and an accessor map to service these bound variables. See [db_accessor](../windows/db-accessor.md) for more information.  
   
 > [!NOTE]
 > \[*bindtype*] syntax and the *bindings* parameter are not valid when using **db_command** at the class level.  
@@ -107,7 +107,7 @@ Allows you to separate the binding parameters from the OLE DB command.
   
 If you specify a value for *bindings*, **db_command** will parse the associated value and will not parse the \[*bindtype*] parameter. This usage allows you to use OLE DB provider syntax. To disable parsing, without binding parameters, specify **Bindings=""**.  
   
-If you do not specify a value for *bindings*, **db_command** will parse the binding parameter block, looking for '**(**', followed by **\[**`bindtype`**]** in brackets, followed by one or more previously declared C++ member variables, followed by '**)**'. All text between the parentheses will be stripped from the resulting command, and these parameters will be used to construct column and parameter bindings for this command.  
+If you do not specify a value for *bindings*, **db_command** will parse the binding parameter block, looking for '**(**', followed by **\[**_bindtype_**]** in brackets, followed by one or more previously declared C++ member variables, followed by '**)**'. All text between the parentheses will be stripped from the resulting command, and these parameters will be used to construct column and parameter bindings for this command.  
   
 *bulk_fetch* (optional)  
 An integer value that specifies the number of rows to fetch.  
@@ -121,7 +121,7 @@ If *bulk_fetch* is less than one, `SetRows` will return zero.
 ## Remarks  
 **db_command** creates a [CCommand](../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.  
   
-You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class **CCommand<>**, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an **Accessor** that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.  
+You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class **CCommand\<>**, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an **Accessor** that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.  
   
 **db_command** can be used to execute commands that do not return a result set.  
   
