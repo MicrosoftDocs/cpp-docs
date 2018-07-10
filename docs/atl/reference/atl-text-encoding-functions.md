@@ -46,7 +46,7 @@ inline char AtlGetHexValue(char chIn) throw();
 ```  
   
 ### Parameters  
- `chIn`  
+ *chIn*  
  The hexadecimal character '0'-'9', 'A'-'F', or 'a'-'f'.  
   
 ### Return Value  
@@ -60,11 +60,11 @@ ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 ```  
   
 ### Parameters  
- `pReserved`  
+ *pReserved*  
  A reserved pointer.  
   
 ### Return Value  
- Returns a `DWORD` integer value of the version of the ATL library that you are compiling or running.  
+ Returns a DWORD integer value of the version of the ATL library that you are compiling or running.  
   
 ## Example  
  The function should be called as follows.  
@@ -86,20 +86,20 @@ inline BOOL AtlHexDecode(
 ```  
   
 ### Parameters  
- `pSrcData`  
+ *pSrcData*  
  The string containing the data to be decoded.  
   
- `nSrcLen`  
- The length in characters of `pSrcData`.  
+ *nSrcLen*  
+ The length in characters of *pSrcData*.  
   
- `pbDest`  
+ *pbDest*  
  Caller-allocated buffer to receive the decoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in bytes of `pbDest`. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in bytes of *pbDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ## <a name="atlhexdecodegetrequiredlength"></a> AtlHexDecodeGetRequiredLength
 Call this function to get the size in bytes of a buffer that could contain data decoded from a hex-encoded string of the specified length.  
@@ -109,11 +109,11 @@ inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of characters in the encoded string.  
   
 ### Return Value  
- The number of bytes required for a buffer that could hold a decoded string of `nSrcLen` characters.  
+ The number of bytes required for a buffer that could hold a decoded string of *nSrcLen* characters.  
   
 ## <a name="atlhexencode"></a> AtlHexEncode
 Call this function to encode some data as a string of hexadecimal text.  
@@ -127,20 +127,20 @@ int * pnDestLen) throw();
 ```  
   
 ### Parameters  
- `pbSrcData`  
+ *pbSrcData*  
  The buffer containing the data to be encoded.  
   
- `nSrcLen`  
+ *nSrcLen*  
  The length in bytes of the data to be encoded.  
   
- `szDest`  
+ *szDest*  
  Caller-allocated buffer to receive the encoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in characters of *szDest*. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  Each byte of source data is encoded as 2 hexadecimal characters.  
@@ -153,11 +153,11 @@ inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of bytes of data to be encoded.  
   
 ### Return Value  
- The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
+ The number of characters required for a buffer that could hold encoded data of *nSrcLen* bytes.  
   
 ## <a name="atlhexvalue"></a> AtlHexValue
 Call this function to get the numeric value of a hexadecimal digit.  
@@ -167,7 +167,7 @@ inline short AtlHexValue(char chIn) throw();
 ```  
   
 ### Parameters  
- `chIn`  
+ *chIn*  
  The hexadecimal character '0'-'9', 'A'-'F', or 'a'-'f'.  
   
 ### Return Value  
@@ -188,20 +188,20 @@ ATL_NOINLINE inline int AtlUnicodeToUTF8(
  *wszSrc*  
  The Unicode string to be converted  
   
- `nSrc`  
+ *nSrc*  
  The length in characters of the Unicode string.  
   
- `szDest`  
+ *szDest*  
  Caller-allocated buffer to receive the converted string.  
   
- `nDest`  
+ *nDest*  
  The length in bytes of the buffer.  
   
 ### Return Value  
  Returns the number of characters for the converted string.  
   
 ### Remarks  
- To determine the size of the buffer required for the converted string, call this function passing 0 for `szDest` and `nDest`.  
+ To determine the size of the buffer required for the converted string, call this function passing 0 for *szDest* and *nDest*.  
   
 ## <a name="bencode"></a> BEncode  
 Call this function to convert some data using the "B" encoding.  
@@ -216,23 +216,23 @@ inline BOOL BEncode(
 ```  
   
 ### Parameters  
- `pbSrcData`  
+ *pbSrcData*  
  The buffer containing the data to be encoded.  
   
- `nSrcLen`  
+ *nSrcLen*  
  The length in bytes of the data to be encoded.  
   
- `szDest`  
+ *szDest*  
  Caller-allocated buffer to receive the encoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in characters of *szDest*. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
- `pszCharSet`  
+ *pszCharSet*  
  The character set to use for the conversion.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
@@ -245,14 +245,14 @@ inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of bytes of data to be encoded.  
   
- `nCharsetLen`  
+ *nCharsetLen*  
  The length in characters of the character set to use for the conversion.  
   
 ### Return Value  
- The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
+ The number of characters required for a buffer that could hold encoded data of *nSrcLen* bytes.  
   
 ### Remarks  
  The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
@@ -270,7 +270,7 @@ inline int EscapeXML(
 ```  
   
 ### Parameters  
- `szIn`  
+ *szIn*  
  The string to be converted.  
   
  *nSrclen*  
@@ -282,11 +282,11 @@ inline int EscapeXML(
  *nDestLen*  
  The length in characters of the caller-allocated buffer.  
   
- `dwFlags`  
+ *dwFlags*  
  ATL_ESC Flags describing how the conversion is to be performed. 
 
-- `ATL_ESC_FLAG_NONE` Default behavior. Quote marks and apostrophes are not converted.
-- `ATL_ESC_FLAG_ATTR` Quote marks and apostrophes are converted to `&quot;` and `&apos;` respectively.
+- ATL_ESC_FLAG_NONE Default behavior. Quote marks and apostrophes are not converted.
+- ATL_ESC_FLAG_ATTR Quote marks and apostrophes are converted to `&quot;` and `&apos;` respectively.
 
 
   
@@ -312,10 +312,10 @@ inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 ```  
   
 ### Parameters  
- `szSrc`  
+ *szSrc*  
  The string to be analyzed.  
   
- `nSrcLen`  
+ *nSrcLen*  
  The length of the string in characters.  
   
 ### Return Value  
@@ -333,7 +333,7 @@ inline int IsExtendedChar(char ch) throw();
  The character to be tested  
   
 ### Return Value  
- **TRUE** if the character is extended, **FALSE** otherwise.  
+ TRUE if the character is extended, FALSE otherwise.  
   
 ## <a name="qencode"></a> QEncode
 Call this function to convert some data using the "Q" encoding.  
@@ -349,26 +349,26 @@ inline BOOL QEncode(
 ```  
   
 ### Parameters  
- `pbSrcData`  
+ *pbSrcData*  
  The buffer containing the data to be encoded.  
   
- `nSrcLen`  
+ *nSrcLen*  
  The length in bytes of the data to be encoded.  
   
- `szDest`  
+ *szDest*  
  Caller-allocated buffer to receive the encoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in characters of *szDest*. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
- `pszCharSet`  
+ *pszCharSet*  
  The character set to use for the conversion.  
   
  *pnNumEncoded*  
  A pointer to a variable that on return contains the number of unsafe characters that had to be converted.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  The "Q" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
@@ -381,14 +381,14 @@ inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of bytes of data to be encoded.  
   
- `nCharsetLen`  
+ *nCharsetLen*  
  The length in characters of the character set to use for the conversion.  
   
 ### Return Value  
- The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
+ The number of characters required for a buffer that could hold encoded data of *nSrcLen* bytes.  
   
 ### Remarks  
  The "Q" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
@@ -406,23 +406,23 @@ inline BOOL QPDecode(
 ```  
   
 ### Parameters  
- [in] `pbSrcData`  
+ [in] *pbSrcData*  
  The buffer containing the data to be decoded.  
   
- [in] `nSrcLen`  
- The length in bytes of `pbSrcData`.  
+ [in] *nSrcLen*  
+ The length in bytes of *pbSrcData*.  
   
- [out] `szDest`  
+ [out] *szDest*  
  Caller-allocated buffer to receive the decoded data.  
   
- [out] `pnDestLen`  
- Pointer to a variable that contains the length in bytes of `szDest`. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
+ [out] *pnDestLen*  
+ Pointer to a variable that contains the length in bytes of *szDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
   
 ### Return Value  
- Returns `TRUE` on success, `FALSE` on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
@@ -435,11 +435,11 @@ inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of characters in the encoded string.  
   
 ### Return Value  
- The number of bytes required for a buffer that could hold a decoded string of `nSrcLen` characters.  
+ The number of bytes required for a buffer that could hold a decoded string of *nSrcLen* characters.  
   
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
@@ -457,27 +457,27 @@ inline BOOL QPEncode(
 ```  
   
 ### Parameters  
- `pbSrcData`  
+ *pbSrcData*  
  The buffer containing the data to be encoded.  
   
- `nSrcLen`  
+ *nSrcLen*  
  The length in bytes of the data to be encoded.  
   
- `szDest`  
+ *szDest*  
  Caller-allocated buffer to receive the encoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in characters of *szDest*. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
- `dwFlags`  
+ *dwFlags*  
  ATLSMTP_QPENCODE flags describing how the conversion is to be performed. 
-- `ATLSMTP_QPENCODE_DOT` If a period appears at the start of a line, it is added to the output as well as encoded.
-- `ATLSMTP_QPENCODE_TRAILING_SOFT` Appends `=\r\n` to the encoded string.
+- ATLSMTP_QPENCODE_DOT If a period appears at the start of a line, it is added to the output as well as encoded.
+- ATLSMTP_QPENCODE_TRAILING_SOFT Appends `=\r\n` to the encoded string.
 
 The quoted-printable encoding scheme is described in [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt).
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
@@ -490,11 +490,11 @@ inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of bytes of data to be encoded.  
   
 ### Return Value  
- The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
+ The number of characters required for a buffer that could hold encoded data of *nSrcLen* bytes.  
   
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
@@ -511,20 +511,20 @@ inline BOOL UUDecode(
 ```  
   
 ### Parameters  
- `pbSrcData`  
+ *pbSrcData*  
  The string containing the data to be decoded.  
   
- `nSrcLen`  
- The length in bytes of `pbSrcData`.  
+ *nSrcLen*  
+ The length in bytes of *pbSrcData*.  
   
- `pbDest`  
+ *pbDest*  
  Caller-allocated buffer to receive the decoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in bytes of `pbDest`. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in bytes of *pbDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
@@ -537,11 +537,11 @@ inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of characters in the encoded string.  
   
 ### Return Value  
- The number of bytes required for a buffer that could hold a decoded string of `nSrcLen` characters.  
+ The number of bytes required for a buffer that could hold a decoded string of *nSrcLen* characters.  
   
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
@@ -560,29 +560,29 @@ inline BOOL UUEncode(
 ```  
   
 ### Parameters  
- `pbSrcData`  
+ *pbSrcData*  
  The buffer containing the data to be encoded.  
   
- `nSrcLen`  
+ *nSrcLen*  
  The length in bytes of the data to be encoded.  
   
- `szDest`  
+ *szDest*  
  Caller-allocated buffer to receive the encoded data.  
   
- `pnDestLen`  
- Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
+ *pnDestLen*  
+ Pointer to a variable that contains the length in characters of *szDest*. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
  *lpszFile*  
- The file to be added to the header when ATLSMTP_UUENCODE_HEADER is specified in `dwFlags`.  
+ The file to be added to the header when ATLSMTP_UUENCODE_HEADER is specified in *dwFlags*.  
   
- `dwFlags`  
+ *dwFlags*  
  Flags controlling the behavior of this function. 
-- `ATLSMTP_UUENCODE_HEADE` The header will be encoded.
-- `ATLSMTP_UUENCODE_END` The end will be encoded.
-- `ATLSMTP_UUENCODE_DOT` Data stuffing will be performed.  
+- ATLSMTP_UUENCODE_HEADE The header will be encoded.
+- ATLSMTP_UUENCODE_END The end will be encoded.
+- ATLSMTP_UUENCODE_DOT Data stuffing will be performed.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
@@ -595,11 +595,11 @@ inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
 ```  
   
 ### Parameters  
- `nSrcLen`  
+ *nSrcLen*  
  The number of bytes of data to be encoded.  
   
 ### Return Value  
- The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
+ The number of characters required for a buffer that could hold encoded data of *nSrcLen* bytes.  
   
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  

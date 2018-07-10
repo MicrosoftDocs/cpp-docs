@@ -97,7 +97,7 @@ HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
  *pFunc*  
  Pointer to the function to add.  
   
- `dw`  
+ *dw*  
  User-defined data, passed to the function.  
   
 ### Return Value  
@@ -131,16 +131,16 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 ```  
   
 ### Parameters  
- `ppGIT`  
+ *ppGIT*  
  Pointer to the variable which will receive the pointer to the Global Interface Table.  
   
 ### Return Value  
- Returns S_OK on success, or an error code on failure. E_POINTER is returned if `ppGIT` is equal to NULL.  
+ Returns S_OK on success, or an error code on failure. E_POINTER is returned if *ppGIT* is equal to NULL.  
   
 ### Remarks  
  If the Global Interface Table object does not exist, it is created, and its address is stored in the member variable [CAtlModule::m_pGIT](#m_pgit).  
   
- In debug builds, an assertion error will occur if `ppGIT` is equal to NULL, or if the Global Interface Table pointer cannot be obtained.  
+ In debug builds, an assertion error will occur if *ppGIT* is equal to NULL, or if the Global Interface Table pointer cannot be obtained.  
   
  See [IGlobalInterfaceTable](http://msdn.microsoft.com/library/windows/desktop/ms678517) for information on the Global Interface Table.  
   
@@ -214,23 +214,23 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 ```  
   
 ### Parameters  
- `lpszRes`  
+ *lpszRes*  
  A resource name.  
   
- `nResID`  
+ *nResID*  
  A resource ID.  
   
- `bRegister`  
- **TRUE** if the object should be registered; **FALSE** otherwise.  
+ *bRegister*  
+ TRUE if the object should be registered; FALSE otherwise.  
   
- `pMapEntries`  
- A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
+ *pMapEntries*  
+ A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the NULL default value.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Runs the script contained in the resource specified by *lpszRes or nResID*. If `bRegister` is **TRUE**, this method registers the object in the system registry; otherwise it removes the object from the registry.  
+ Runs the script contained in the resource specified by *lpszRes or nResID*. If *bRegister* is TRUE, this method registers the object in the system registry; otherwise it removes the object from the registry.  
   
  To statically link to the ATL Registry Component (Registrar), see [CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources).  
   
@@ -247,14 +247,14 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 ```  
   
 ### Parameters  
- `lpszRes`  
+ *lpszRes*  
  A resource name.  
   
- `bRegister`  
+ *bRegister*  
  Indicates whether the object should be registered.  
   
- `pMapEntries`  
- A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
+ *pMapEntries*  
+ A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the NULL default value.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -278,17 +278,17 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 ```  
   
 ### Parameters  
- `nResID`  
+ *nResID*  
  A resource ID.  
   
- `lpszRes`  
+ *lpszRes*  
  A resource name.  
   
- `bRegister`  
+ *bRegister*  
  Indicates whether the resource script should be registered.  
   
- `pMapEntries`  
- A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
+ *pMapEntries*  
+ A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the NULL default value.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

@@ -67,13 +67,13 @@ CDiscreteTransition(
 ```  
   
 ### Parameters  
- `delay`  
+ *delay*  
  The amount of time by which to delay the instantaneous switch to the final value.  
   
- `dblFinalValue`  
+ *dblFinalValue*  
  The value of the animation variable at the end of the transition.  
   
- `hold`  
+ *hold*  
  The amount of time by which to hold the variable at its final value.  
   
 ##  <a name="create"></a>  CDiscreteTransition::Create  
@@ -85,7 +85,7 @@ virtual BOOL Create(
     IUIAnimationTransitionFactory* \*not used*\);
 ```  
   
-`pLibrary`  
+*pLibrary*  
  A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
 
   

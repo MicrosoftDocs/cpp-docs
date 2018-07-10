@@ -30,9 +30,9 @@ class CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::CAccessMaskArray](#caccessmaskarray)|An array of `ACCESS_MASK`s.|  
-|[CAcl::CAceFlagArray](#caceflagarray)|An array of `BYTE`s.|  
-|[CAcl::CAceTypeArray](#cacetypearray)|An array of `BYTE`s.|  
+|[CAcl::CAccessMaskArray](#caccessmaskarray)|An array of ACCESS_MASKs.|  
+|[CAcl::CAceFlagArray](#caceflagarray)|An array of BYTEs.|  
+|[CAcl::CAceTypeArray](#cacetypearray)|An array of BYTEs.|  
   
 ### Public Constructors  
   
@@ -55,7 +55,7 @@ class CAcl
 |[CAcl::RemoveAce](#removeace)|Removes a specific ACE (access-control entry) from the `CAcl` object.|  
 |[CAcl::RemoveAces](#removeaces)|Removes all ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.|  
 |[CAcl::SetEmpty](#setempty)|Marks the `CAcl` object as empty.|  
-|[CAcl::SetNull](#setnull)|Marks the `CAcl` object as `NULL`.|  
+|[CAcl::SetNull](#setnull)|Marks the `CAcl` object as NULL.|  
   
 ### Public Operators  
   
@@ -65,7 +65,7 @@ class CAcl
 |[CAcl::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- The **ACL** structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.  
+ The `ACL` structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.  
   
  There are two ACL types:  
   
@@ -73,7 +73,7 @@ class CAcl
   
 -   System  
   
- A discretionary ACL is controlled by the owner of an object or anyone granted **WRITE_DAC** access to the object. It specifies the access particular users and groups can have to an object. For example, the owner of a file can use a discretionary ACL to control which users and groups can and cannot have access to the file.  
+ A discretionary ACL is controlled by the owner of an object or anyone granted WRITE_DAC access to the object. It specifies the access particular users and groups can have to an object. For example, the owner of a file can use a discretionary ACL to control which users and groups can and cannot have access to the file.  
   
  An object can also have system-level security information associated with it, in the form of a system ACL controlled by a system administrator. A system ACL can allow the system administrator to audit any attempts to gain access to an object.  
   
@@ -123,7 +123,7 @@ CAcl(const CAcl& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  An existing `CAcl` object.  
   
 ### Remarks  
@@ -161,20 +161,20 @@ void GetAclEntries(
 ```  
   
 ### Parameters  
- `pSids`  
+ *pSids*  
  A pointer to an array of [CSid](../../atl/reference/csid-class.md) objects.  
   
  *pAccessMasks*  
  The access masks.  
   
  *pAceTypes*  
- The access-control entry ( **ACE**) types.  
+ The access-control entry (ACE) types.  
   
  *pAceFlags*  
- The **ACE** flags.  
+ The ACE flags.  
   
 ### Remarks  
- This method fills the array parameters with the details of every **ACE** object contained in the `CAcl` object. Use NULL when the details for that particular array are not required.  
+ This method fills the array parameters with the details of every ACE object contained in the `CAcl` object. Use NULL when the details for that particular array are not required.  
   
  The contents of each array correspond to each other, that is, the first element of the `CAccessMaskArray` array corresponds to the first element in the `CSidArray` array, and so on.  
   
@@ -195,25 +195,25 @@ void GetAclEntry(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index to the ACL entry to retrieve.  
   
- `pSid`  
+ *pSid*  
  The [CSid](../../atl/reference/csid-class.md) object to which the ACL entry applies.  
   
  *pMask*  
  The mask specifying permissions to grant or deny access.  
   
- `pType`  
+ *pType*  
  The ACE type.  
   
- `pFlags`  
+ *pFlags*  
  The ACE flags.  
   
- `pObjectType`  
+ *pObjectType*  
  The object type. This will be set to GUID_NULL if the object type is not specified in the ACE, or if the ACE is not an OBJECT ACE.  
   
- `pInheritedObjectType`  
+ *pInheritedObjectType*  
  The inherited object type. This will be set to GUID_NULL if the inherited object type is not specified in the ACE, or if the ACE is not an OBJECT ACE.  
   
 ### Remarks  
@@ -229,7 +229,7 @@ UINT GetLength() const throw();
 ```  
   
 ### Return Value  
- Returns the required length in bytes necessary to hold the **ACL** structure.  
+ Returns the required length in bytes necessary to hold the `ACL` structure.  
   
 ##  <a name="getpacl"></a>  CAcl::GetPACL  
  Returns a pointer to an access-control list (ACL).  
@@ -239,7 +239,7 @@ const ACL* GetPACL() const throw(...);
 ```  
   
 ### Return Value  
- Returns a pointer to the **ACL** structure.  
+ Returns a pointer to the `ACL` structure.  
   
 ##  <a name="isempty"></a>  CAcl::IsEmpty  
  Tests the `CAcl` object for entries.  
@@ -249,7 +249,7 @@ bool IsEmpty() const throw();
 ```  
   
 ### Remarks  
- Returns **true** if the `CAcl` object is not NULL, and contains no entries. Returns **false** if the `CAcl` object is either NULL, or contains at least one entry.  
+ Returns TRUE if the `CAcl` object is not NULL, and contains no entries. Returns FALSE if the `CAcl` object is either NULL, or contains at least one entry.  
   
 ##  <a name="isnull"></a>  CAcl::IsNull  
  Returns the status of the `CAcl` object.  
@@ -259,17 +259,17 @@ bool IsNull() const throw();
 ```  
   
 ### Return Value  
- Returns **true** if the `CAcl` object is NULL, **false** otherwise.  
+ Returns TRUE if the `CAcl` object is NULL, FALSE otherwise.  
   
 ##  <a name="operator_const_acl__star"></a>  CAcl::operator const ACL *  
- Casts a `CAcl` object to an **ACL** (access-control list) structure.  
+ Casts a `CAcl` object to an `ACL` (access-control list) structure.  
   
 ```  
 operator const ACL *() const throw(...);
 ```  
   
 ### Remarks  
- Returns the address of the **ACL** structure.  
+ Returns the address of the `ACL` structure.  
   
 ##  <a name="operator_eq"></a>  CAcl::operator =  
  Assignment operator.  
@@ -279,21 +279,21 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `CAcl` to assign to the existing object.  
   
 ### Return Value  
  Returns a reference to the updated `CAcl` object.  
   
 ##  <a name="removeace"></a>  CAcl::RemoveAce  
- Removes a specific ACE (access-control entry) from the **CAcl** object.  
+ Removes a specific ACE (access-control entry) from the `CAcl` object.  
   
 ```
 void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index to the ACE entry to remove.  
   
 ### Remarks  
@@ -307,7 +307,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  A reference to a `CSid` object.  
   
 ##  <a name="setempty"></a>  CAcl::SetEmpty  

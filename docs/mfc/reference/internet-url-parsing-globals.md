@@ -44,7 +44,7 @@ BOOL AFXAPI AfxParseURL(
  *pstrURL*  
  A pointer to a string containing the URL to be parsed.  
   
- `dwServiceType`  
+ *dwServiceType*  
  Indicates the type of Internet service. Possible values are as follows:  
   
 -   AFX_INET_SERVICE_FTP  
@@ -77,13 +77,13 @@ BOOL AFXAPI AfxParseURL(
   
 -   AFX_INET_SERVICE_UNK  
   
- `strServer`  
+ *strServer*  
  The first segment of the URL following the service type.  
   
- `strObject`  
+ *strObject*  
  An object that the URL refers to (may be empty).  
   
- `nPort`  
+ *nPort*  
  Determined from either the Server or Object portions of the URL, if either exists.  
   
 ### Return Value  
@@ -92,15 +92,15 @@ BOOL AFXAPI AfxParseURL(
 ### Remarks  
  It parses a URL string and returns the type of service and its components.  
   
- For example, `AfxParseURL` parses URLs of the form **service://server/dir/dir/object.ext:port** and returns its components stored as follows:  
+ For example, `AfxParseURL` parses URLs of the form *service://server/dir/dir/object.ext:port* and returns its components stored as follows:  
   
- `strServer` == "server"  
+ *strServer* == "server"  
   
- `strObject` == "/dir/dir/object/object.ext"  
+ *strObject* == "/dir/dir/object/object.ext"  
   
- `nPort` == #port  
+ *nPort* == #port  
   
- `dwServiceType` == #service  
+ *dwServiceType* == #service  
   
 > [!NOTE]
 >  To call this function, your project must include AFXINET.H.  
@@ -127,7 +127,7 @@ BOOL AFXAPI AfxParseURLEx(
  *pstrURL*  
  A pointer to a string containing the URL to be parsed.  
   
- `dwServiceType`  
+ *dwServiceType*  
  Indicates the type of Internet service. Possible values are as follows:  
   
 -   AFX_INET_SERVICE_FTP  
@@ -160,31 +160,31 @@ BOOL AFXAPI AfxParseURLEx(
   
 -   AFX_INET_SERVICE_UNK  
   
- `strServer`  
+ *strServer*  
  The first segment of the URL following the service type.  
   
- `strObject`  
+ *strObject*  
  An object that the URL refers to (may be empty).  
   
- `nPort`  
+ *nPort*  
  Determined from either the Server or Object portions of the URL, if either exists.  
   
  *strUsername*  
  A reference to a `CString` object containing the name of the user.  
   
- `strPassword`  
+ *strPassword*  
  A reference to a `CString` object containing the password of the user.  
   
- `dwFlags`  
+ *dwFlags*  
  The flags controlling how to parse the URL. Can be a combination of the following values:  
   
 |Value|Meaning|  
 |-----------|-------------|  
-|**ICU_DECODE**|Convert %XX escape sequences to characters.|  
-|**ICU_NO_ENCODE**|Do not convert unsafe characters to escape sequence.|  
-|**ICU_NO_META**|Do not remove meta sequences (such as "\ ." and "\ ..") from the URL.|  
-|**ICU_ENCODE_SPACES_ONLY**|Encode spaces only.|  
-|**ICU_BROWSER_MODE**|Do not encode or decode characters after '#' or '', and do not remove trailing white space after ''. If this value is not specified, the entire URL is encoded and trailing white space is removed.|  
+|ICU_DECODE|Convert %XX escape sequences to characters.|  
+|ICU_NO_ENCODE|Do not convert unsafe characters to escape sequence.|  
+|ICU_NO_META|Do not remove meta sequences (such as "\ ." and "\ ..") from the URL.|  
+|ICU_ENCODE_SPACES_ONLY|Encode spaces only.|  
+|ICU_BROWSER_MODE|Do not encode or decode characters after '#' or '', and do not remove trailing white space after ''. If this value is not specified, the entire URL is encoded and trailing white space is removed.|  
   
  If you use the MFC default, which is no flags, the function converts all unsafe characters and meta sequences (such as \\.,\ .., and \\...) to escape sequences.  
   
@@ -211,7 +211,7 @@ Use this global function to determine the type of an Internet handle.
 DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );  
 ```
 ### Parameters  
- `hQuery`  
+ *hQuery*  
  A handle to an Internet query.  
    
 ### Return Value  
@@ -264,10 +264,10 @@ Throws an Internet exception.
    void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );  
 ```
 ### Parameters  
- `dwContext`  
- The context identifier for the operation that caused the error. The default value of `dwContext` is specified originally in [CInternetSession](cinternetsession-class.md) and is passed to [CInternetConnection](cinternetconnection-class.md)- and [CInternetFile](cinternetfile-class.md)-derived classes. For specific operations performed on a connection or a file, you usually override the default with a `dwContext` of your own. This value then is returned to [CInternetSession::OnStatusCallback](cinternetsession-class.md#onstatuscallback) to identify the specific operation's status. 
+ *dwContext*  
+ The context identifier for the operation that caused the error. The default value of *dwContext* is specified originally in [CInternetSession](cinternetsession-class.md) and is passed to [CInternetConnection](cinternetconnection-class.md)- and [CInternetFile](cinternetfile-class.md)-derived classes. For specific operations performed on a connection or a file, you usually override the default with a *dwContext* of your own. This value then is returned to [CInternetSession::OnStatusCallback](cinternetsession-class.md#onstatuscallback) to identify the specific operation's status. 
   
- `dwError`  
+ *dwError*  
  The error that caused the exception.  
    
 ### Remarks  

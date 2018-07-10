@@ -20,9 +20,9 @@ Whether you use file-based I/O or not depends on how you respond to the question
   
      **Does the application read the whole file into memory on File Open and write the whole file back to disk on File Save**  
   
-    -   Yes: This is the default MFC document case. Use **CDocument** serialization.  
+    -   Yes: This is the default MFC document case. Use `CDocument` serialization.  
   
-    -   No: This is typically the case of transaction-based updating of the file. You update the file on a per-transaction basis and don't need **CDocument** serialization.  
+    -   No: This is typically the case of transaction-based updating of the file. You update the file on a per-transaction basis and don't need `CDocument` serialization.  
   
 -   No, the primary data doesn't reside in a disk file:  
   
@@ -36,7 +36,7 @@ Whether you use file-based I/O or not depends on how you respond to the question
   
          Examples of this case: the data resides in a non-ODBC DBMS; the data is read via some other mechanism, such as OLE or DDE.  
   
-         In such cases, you won't use serialization, and your application won't have Open and Save menu items. You might still want to use a **CDocument** as a home base, just as an MFC ODBC application uses the document to store `CRecordset` objects. But you won't use the framework's default File Open/Save document serialization.  
+         In such cases, you won't use serialization, and your application won't have Open and Save menu items. You might still want to use a `CDocument` as a home base, just as an MFC ODBC application uses the document to store `CRecordset` objects. But you won't use the framework's default File Open/Save document serialization.  
   
  To support the Open, Save, and Save As commands on the File menu, the framework provides document serialization. Serialization reads and writes data, including objects derived from class `CObject`, to permanent storage, normally a disk file. Serialization is easy to use and serves many of your needs, but it may be inappropriate in many data-access applications. Data-access applications typically update data on a per-transaction basis. They update the records affected by the transaction rather than reading and writing a whole data file at once.  
   

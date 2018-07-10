@@ -27,7 +27,7 @@ This article explains the serialization mechanism provided in the Microsoft Foun
 > [!NOTE]
 >  Do not confuse the `CArchive` class with general-purpose iostream classes, which are for formatted text only. The `CArchive` class is for binary-format serialized objects.  
   
- If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) of the `ID_FILE_OPEN`, **ID_FILE_SAVE**, and **ID_FILE_SAVE_AS** standard commands.  
+ If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) of the ID_FILE_OPEN, ID_FILE_SAVE, and ID_FILE_SAVE_AS standard commands.  
   
  The following articles cover the two main tasks required for serialization:  
   

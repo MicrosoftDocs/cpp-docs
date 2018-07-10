@@ -1,7 +1,7 @@
 ---
 title: "CDaoRelationInfo Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDaoRelationInfo"]
@@ -17,22 +17,23 @@ The `CDaoRelationInfo` structure contains information about a relation defined b
   
 ## Syntax  
   
-```  
+```cpp
 struct CDaoRelationInfo  
 {  
-    CDaoRelationInfo();
-*// Constructor  
-    CString m_strName;      // Primary  
-    CString m_strTable;     // Primary  
+    CDaoRelationInfo();                     // Constructor  
+    CString m_strName;                      // Primary  
+    CString m_strTable;                     // Primary  
     CString m_strForeignTable;              // Primary  
-    long m_lAttributes;     // Secondary  
+    long m_lAttributes;                     // Secondary  
     CDaoRelationFieldInfo* m_pFieldInfos;   // Secondary  
-    short m_nFields;        // Secondary *// Below the // Implementation comment: *// Destructor, not otherwise documented  
+    short m_nFields;                        // Secondary
+    // Below the // Implementation comment:
+    // Destructor, not otherwise documented  
 };  
 ```  
   
 #### Parameters  
- `m_strName`  
+*m_strName*  
  Uniquely names the relation object. For more information, see the topic "Name Property" in DAO Help.  
   
  *m_strTable*  
@@ -41,27 +42,27 @@ struct CDaoRelationInfo
  *m_strForeignTable*  
  Names the foreign table in the relation. A foreign table is a table used to contain foreign keys. Generally, you use a foreign table to establish or enforce referential integrity. The foreign table is usually on the many side of a one-to-many relationship. Examples of foreign tables include tables containing codes for the American states or Canadian provinces or customer orders.  
   
- `m_lAttributes`  
+ *m_lAttributes*  
  Contains information about the relation type. The value of this member can be any of the following:  
   
-- **dbRelationUnique** Relationship is one-to-one.  
+- `dbRelationUnique` Relationship is one-to-one.  
   
-- **dbRelationDontEnforce** Relationship is not enforced (no referential integrity).  
+- `dbRelationDontEnforce` Relationship is not enforced (no referential integrity).  
   
-- **dbRelationInherited** Relationship exists in a noncurrent database that contains the two attached tables.  
+- `dbRelationInherited` Relationship exists in a noncurrent database that contains the two attached tables.  
   
-- **dbRelationLeft** The relationship is a left join. A left outer join includes all of the records from the first (left-hand) of two tables, even if there are no matching values for records in the second (right-hand) table.  
+- `dbRelationLeft` The relationship is a left join. A left outer join includes all of the records from the first (left-hand) of two tables, even if there are no matching values for records in the second (right-hand) table.  
   
-- **dbRelationRight** The relationship is a right join. A right outer join includes all of the records from the second (right-hand) of two tables, even if there are no matching values for records in the first (left-hand) table.  
+- `dbRelationRight` The relationship is a right join. A right outer join includes all of the records from the second (right-hand) of two tables, even if there are no matching values for records in the first (left-hand) table.  
   
-- **dbRelationUpdateCascade** Updates will cascade.  
+- `dbRelationUpdateCascade` Updates will cascade.  
   
-- **dbRelationDeleteCascade** Deletions will cascade.  
+- `dbRelationDeleteCascade` Deletions will cascade.  
   
- `m_pFieldInfos`  
+*m_pFieldInfos*  
  A pointer to an array of [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) structures. The array contains one object for each field in the relation. The `m_nFields` data member gives a count of the array elements.  
   
- `m_nFields`  
+*m_nFields*  
  The number of `CDaoRelationFieldInfo` objects in the `m_pFieldInfos` data member.  
   
 ## Remarks  

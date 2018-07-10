@@ -96,16 +96,16 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pLeftTransition`  
+ *pLeftTransition*  
  Specifies transition for the left side.  
   
- `pTopTransition`  
+ *pTopTransition*  
  Specifies transition for the top side.  
   
- `pRightTransition`  
+ *pRightTransition*  
  Specifies transition for the right side.  
   
- `pBottomTransition`  
+ *pBottomTransition*  
  Specifies transition for the bottom side.  
   
 ### Remarks  
@@ -144,34 +144,34 @@ CAnimationRect(
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Specifies default rectangle.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
- `pt`  
+ *pt*  
  Coordinate of top-left corner.  
   
- `sz`  
+ *sz*  
  Size of rectangle.  
   
- `nLeft`  
+ *nLeft*  
  Specifies coordinate of left bound.  
   
- `nTop`  
+ *nTop*  
  Specifies coordinate of top bound.  
   
- `nRight`  
+ *nRight*  
  Specifies coordinate of right bound.  
   
- `nBottom`  
+ *nBottom*  
  Specifies coordinate of bottom bound.  
   
 ### Remarks  
@@ -187,7 +187,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to four CAnimationVariable objects representing coordinates of rectangle.  
   
 ##  <a name="getbottom"></a>  CAnimationRect::GetBottom  
@@ -263,7 +263,7 @@ BOOL GetValue(CRect& rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -338,7 +338,7 @@ void operator=(const RECT& rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  The new value of animation rectangle.  
   
 ### Remarks  
@@ -352,7 +352,7 @@ void SetDefaultValue(const CRect& rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Specifies new default values for left, top, right and bottom.  
   
 ### Remarks  

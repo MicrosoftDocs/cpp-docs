@@ -13,15 +13,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # try, throw, and catch Statements (C++)
-To implement exception handling in C++, you use `try`, `throw`, and `catch` expressions.  
+To implement exception handling in C++, you use **try**, **throw**, and **catch** expressions.  
   
- First, use a `try` block to enclose one or more statements that might throw an exception.  
+ First, use a **try** block to enclose one or more statements that might throw an exception.  
   
- A `throw` expression signals that an exceptional condition—often, an error—has occurred in a `try` block. You can use an object of any type as the operand of a `throw` expression. Typically, this object is used to communicate information about the error. In most cases, we recommend that you use the [std::exception](../standard-library/exception-class.md) class or one of the derived classes that are defined in the standard library. If one of those is not appropriate, we recommend that you derive your own exception class from  `std::exception`.  
+ A **throw** expression signals that an exceptional condition—often, an error—has occurred in a **try** block. You can use an object of any type as the operand of a **throw** expression. Typically, this object is used to communicate information about the error. In most cases, we recommend that you use the [std::exception](../standard-library/exception-class.md) class or one of the derived classes that are defined in the standard library. If one of those is not appropriate, we recommend that you derive your own exception class from  `std::exception`.  
   
- To handle exceptions that may be thrown, implement one or more `catch` blocks immediately following a `try` block. Each `catch` block specifies the type of exception it can handle.  
+ To handle exceptions that may be thrown, implement one or more **catch** blocks immediately following a **try** block. Each **catch** block specifies the type of exception it can handle.  
   
- This example shows a `try` block and its handlers. Assume that `GetNetworkResource()` acquires data over a network connection and that the two exception types are user-defined classes that derive from `std::exception`. Notice that the exceptions are caught by `const` reference in the `catch` statement. We recommend that you throw exceptions by value and catch them by const reference.  
+ This example shows a **try** block and its handlers. Assume that `GetNetworkResource()` acquires data over a network connection and that the two exception types are user-defined classes that derive from `std::exception`. Notice that the exceptions are caught by **const** reference in the **catch** statement. We recommend that you throw exceptions by value and catch them by const reference.  
   
 ## Example  
   
@@ -59,9 +59,9 @@ MyData GetNetworkResource()
 ```  
   
 ## Remarks  
- The code after the `try` clause is the guarded section of code. The `throw` expression *throws*—that is, raises—an exception. The code block after the `catch` clause is the exception handler. This is the handler that *catches* the exception that's thrown if the types in the `throw` and `catch` expressions are compatible. For a list of rules that govern type-matching in `catch` blocks, see [How Catch Blocks are Evaluated](../cpp/how-catch-blocks-are-evaluated-cpp.md). If the `catch` statement specifies an ellipsis (...) instead of a type, the `catch` block handles every type of exception. When you compile with the [/EHa](../build/reference/eh-exception-handling-model.md) option, these can include C structured exceptions and system-generated or application-generated asynchronous exceptions such as memory protection, divide-by-zero, and floating-point violations. Because `catch` blocks are processed in program order to find a matching type, an ellipsis handler must be the last handler for the associated `try` block. Use `catch(...)` with caution; do not allow a program to continue unless the catch block knows how to handle the specific exception that is caught. Typically, a `catch(...)` block is used to log errors and perform special cleanup before program execution is stopped.  
+ The code after the **try** clause is the guarded section of code. The **throw** expression *throws*—that is, raises—an exception. The code block after the **catch** clause is the exception handler. This is the handler that *catches* the exception that's thrown if the types in the **throw** and **catch** expressions are compatible. For a list of rules that govern type-matching in **catch** blocks, see [How Catch Blocks are Evaluated](../cpp/how-catch-blocks-are-evaluated-cpp.md). If the **catch** statement specifies an ellipsis (...) instead of a type, the **catch** block handles every type of exception. When you compile with the [/EHa](../build/reference/eh-exception-handling-model.md) option, these can include C structured exceptions and system-generated or application-generated asynchronous exceptions such as memory protection, divide-by-zero, and floating-point violations. Because **catch** blocks are processed in program order to find a matching type, an ellipsis handler must be the last handler for the associated **try** block. Use `catch(...)` with caution; do not allow a program to continue unless the catch block knows how to handle the specific exception that is caught. Typically, a `catch(...)` block is used to log errors and perform special cleanup before program execution is stopped.  
   
- A `throw` expression that has no operand re-throws the exception currently being handled. We recommend this form when re-throwing the exception, because this preserves the original exception’s polymorphic type information. Such an expression should only be used in a `catch` handler or in a function that's called from a `catch` handler. The re-thrown exception object is the original exception object, not a copy.  
+ A **throw** expression that has no operand re-throws the exception currently being handled. We recommend this form when re-throwing the exception, because this preserves the original exception’s polymorphic type information. Such an expression should only be used in a **catch** handler or in a function that's called from a **catch** handler. The re-thrown exception object is the original exception object, not a copy.  
   
 ```cpp 
 try {  

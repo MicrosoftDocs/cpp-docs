@@ -69,10 +69,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppHandler`  
+ *ppHandler*  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
@@ -89,16 +89,16 @@ IFACEMETHOD(OnIntegerValueChanged) (
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  The storyboard that is animating the variable.  
   
- `variable`  
+ *variable*  
  The animation variable that was updated.  
   
- `newValue`  
+ *newValue*  
  The new rounded value.  
   
- `previousValue`  
+ *previousValue*  
  The previous rounded value.  
   
 ### Return Value  
@@ -112,7 +112,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

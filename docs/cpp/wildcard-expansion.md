@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 ## Microsoft Specific  
  You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command-line.  
   
- Command-line arguments are handled by a routine called **_setargv** (or **_wsetargv** in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, refer to [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).  
+ Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv` in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, refer to [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).  
   
 **END Microsoft Specific**  
   

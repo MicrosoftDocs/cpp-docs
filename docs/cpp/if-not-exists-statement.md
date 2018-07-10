@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # __if_not_exists Statement
-The `__if_not_exists` statement tests whether the specified identifier exists. If the identifier does not exist, the specified statement block is executed.  
+The **__if_not_exists** statement tests whether the specified identifier exists. If the identifier does not exist, the specified statement block is executed.  
   
 ## Syntax  
   
@@ -33,20 +33,20 @@ statements
 ## Remarks  
   
 > [!CAUTION]
->  To achieve the most reliable results, use the `__if_not_exists` statement under the following constraints.  
+>  To achieve the most reliable results, use the **__if_not_exists** statement under the following constraints.  
   
--   Apply the `__if_not_exists` statement to only simple types, not templates.  
+-   Apply the **__if_not_exists** statement to only simple types, not templates.  
   
--   Apply the `__if_not_exists` statement to identifiers both inside or outside a class. Do not apply the `__if_not_exists` statement to local variables.  
+-   Apply the **__if_not_exists** statement to identifiers both inside or outside a class. Do not apply the **__if_not_exists** statement to local variables.  
   
--   Use the `__if_not_exists` statement only in the body of a function. Outside of the body of a function, the `__if_not_exists` statement can test only fully defined types.  
+-   Use the **__if_not_exists** statement only in the body of a function. Outside of the body of a function, the **__if_not_exists** statement can test only fully defined types.  
   
 -   When you test for overloaded functions, you cannot test for a specific form of the overload.  
   
- The complement to the `__if_not_exists` statement is the [__if_exists](../cpp/if-exists-statement.md) statement.  
+ The complement to the **__if_not_exists** statement is the [__if_exists](../cpp/if-exists-statement.md) statement.  
   
 ## Example  
- For an example about how to use `__if_not_exists`, see [__if_exists Statement](../cpp/if-exists-statement.md).  
+ For an example about how to use **__if_not_exists**, see [__if_exists Statement](../cpp/if-exists-statement.md).  
   
 ## See Also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   

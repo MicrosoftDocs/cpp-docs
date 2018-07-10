@@ -77,7 +77,7 @@ bool Allocate(size_t nElements) throw();
 ```  
   
 ### Parameters  
- `nElements`  
+ *nElements*  
  The number of elements in the array.  
   
 ### Return Value  
@@ -94,7 +94,7 @@ void Attach(T* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  The `CAutoVectorPtr` object will take ownership of this pointer.  
   
 ### Remarks  
@@ -112,7 +112,7 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  An existing pointer.  
   
 ### Remarks  
@@ -139,7 +139,7 @@ T* Detach() throw();
  Returns a copy of the pointer.  
   
 ### Remarks  
- Releases ownership of a pointer, sets the [CAutoVectorPtr::m_p](#m_p) member variable to NULL, and returns a copy of the pointer. After calling **Detach**, it is up to the programmer to free any allocated resources over which the `CAutoVectorPtr` object may have previously assumed responsibility.  
+ Releases ownership of a pointer, sets the [CAutoVectorPtr::m_p](#m_p) member variable to NULL, and returns a copy of the pointer. After calling `Detach`, it is up to the programmer to free any allocated resources over which the `CAutoVectorPtr` object may have previously assumed responsibility.  
   
 ##  <a name="free"></a>  CAutoVectorPtr::Free  
  Call this method to delete an object pointed to by a `CAutoVectorPtr`.  
@@ -169,14 +169,14 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  A pointer.  
   
 ### Return Value  
  Returns a reference to a **CAutoVectorPtr\< T >**.  
   
 ### Remarks  
- The assignment operator detaches the `CAutoVectorPtr` object from any current pointer and attaches the new pointer, `p`, in its place.  
+ The assignment operator detaches the `CAutoVectorPtr` object from any current pointer and attaches the new pointer, *p*, in its place.  
   
 ##  <a name="operator_t__star"></a>  CAutoVectorPtr::operator T *  
  The cast operator.  

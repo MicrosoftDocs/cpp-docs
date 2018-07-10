@@ -29,7 +29,7 @@ These functions provide support for creating dialog boxes, and for creating, hos
 |[AtlAxAttachControl](#atlaxattachcontrol)|Attaches a previously created control to the specified window.|  
 |[AtlAxGetHost](#atlaxgethost)|Used to obtain a direct interface pointer to the container for a specified window (if any), given its handle.|  
 |[AtlAxGetControl](#atlaxgetcontrol)|Used to obtain a direct interface pointer to the control contained inside a specified window (if any), given its handle.|  
-|[AtlSetChildSite](#atlsetchildsite)|Initializes the **IUnknown** of the child site.|  
+|[AtlSetChildSite](#atlsetchildsite)|Initializes the `IUnknown` of the child site.|  
 |[AtlAxWinInit](#atlaxwininit)|Initializes the hosting code for AxWin objects.|  
 |[AtlAxWinTerm](#atlaxwinterm)|Uninitializes the hosting code for AxWin objects.|  
 |[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Returns information about the default source interface of an object.|  
@@ -50,26 +50,26 @@ ATLAPI_(int) AtlAxDialogBox(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  [in] Identifies an instance of the module whose executable file contains the dialog box template.  
   
- `lpTemplateName`  
+ *lpTemplateName*  
  [in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms648029) macro to create this value.  
   
- `hWndParent`  
+ *hWndParent*  
  [in] Identifies the window that owns the dialog box.  
   
- `lpDialogProc`  
+ *lpDialogProc*  
  [in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](http://msdn.microsoft.com/library/windows/desktop/ms645469).  
   
- `dwInitParam`  
- [in] Specifies the value to pass to the dialog box in the **lParam** parameter of the **WM_INITDIALOG** message.  
+ *dwInitParam*  
+ [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
  One of the standard HRESULT values.  
   
 ### Remarks  
- To use **AtlAxDialogBox** with a dialog template that contains an ActiveX control, specify a valid **CLSID**, **APPID** or URL string as the *text* field of the **CONTROL** section of the dialog resource, along with "AtlAxWin80" as the *class name* field under the same section. The following demonstrates what a valid **CONTROL** section might look like:  
+ To use `AtlAxDialogBox` with a dialog template that contains an ActiveX control, specify a valid CLSID, APPID or URL string as the *text* field of the **CONTROL** section of the dialog resource, along with "AtlAxWin80" as the *class name* field under the same section. The following demonstrates what a valid **CONTROL** section might look like:  
   
 ```  
 CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,  
@@ -93,20 +93,20 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  [in] Identifies an instance of the module whose executable file contains the dialog box template.  
   
- `lpTemplateName`  
+ *lpTemplateName*  
  [in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms648029) macro to create this value.  
   
- `hWndParent`  
+ *hWndParent*  
  [in] Identifies the window that owns the dialog box.  
   
- `lpDialogProc`  
+ *lpDialogProc*  
  [in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](http://msdn.microsoft.com/library/windows/desktop/ms645469).  
   
- `dwInitParam`  
- [in] Specifies the value to pass to the dialog box in the **lParam** parameter of the **WM_INITDIALOG** message.  
+ *dwInitParam*  
+ [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
  One of the standard HRESULT values.  
@@ -129,7 +129,7 @@ ATLAPI AtlAxCreateControl(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string to be passed to the control. Must be formatted in one of the following ways:  
   
 -   A ProgID such as "MSCAL.Calendar.7"  
@@ -145,20 +145,20 @@ ATLAPI AtlAxCreateControl(
     > [!NOTE]
     >  "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.  
   
- `hWnd`  
+ *hWnd*  
  [in] Handle to the window that the control will be attached to.  
   
- `pStream`  
- [in] A pointer to a stream that is used to initialize the properties of the control. Can be **NULL**.  
+ *pStream*  
+ [in] A pointer to a stream that is used to initialize the properties of the control. Can be NULL.  
   
- `ppUnkContainer`  
- [out] The address of a pointer that will receive the **IUnknown** of the container. Can be **NULL**.  
+ *ppUnkContainer*  
+ [out] The address of a pointer that will receive the `IUnknown` of the container. Can be NULL.  
   
 ### Return Value  
  One of the standard HRESULT values.  
   
 ### Remarks  
- This global function gives you the same result as calling [AtlAxCreateControlEx](#atlaxcreatecontrolex)( `lpszName`**,** `hWnd`**,** `pStream`**, NULL, NULL, NULL, NULL** );.  
+ This global function gives you the same result as calling [AtlAxCreateControlEx](#atlaxcreatecontrolex)(*lpszName*, *hWnd*, *pStream*, NULL, NULL, NULL, NULL);.  
   
  To create a licensed ActiveX control, see [AtlAxCreateControlLic](#atlaxcreatecontrollic).  
   
@@ -177,7 +177,7 @@ ATLAPI AtlAxCreateControlEx(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string to be passed to the control. Must be formatted in one of the following ways:  
   
 -   A ProgID such as "MSCAL.Calendar.7"  
@@ -193,23 +193,23 @@ ATLAPI AtlAxCreateControlEx(
     > [!NOTE]
     >  "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.  
   
- `hWnd`  
+ *hWnd*  
  [in] Handle to the window that the control will be attached to.  
   
- `pStream`  
- [in] A pointer to a stream that is used to initialize the properties of the control. Can be **NULL**.  
+ *pStream*  
+ [in] A pointer to a stream that is used to initialize the properties of the control. Can be NULL.  
   
- `ppUnkContainer`  
- [out] The address of a pointer that will receive the **IUnknown** of the container. Can be **NULL**.  
+ *ppUnkContainer*  
+ [out] The address of a pointer that will receive the `IUnknown` of the container. Can be NULL.  
   
- `ppUnkControl`  
- [out] The address of a pointer that will receive the **IUnknown** of the created control. Can be **NULL**.  
+ *ppUnkControl*  
+ [out] The address of a pointer that will receive the `IUnknown` of the created control. Can be NULL.  
   
- `iidSink`  
+ *iidSink*  
  The interface identifier of an outgoing interface on the contained object.  
   
  *punkSink*  
- A pointer to the **IUnknown** interface of the sink object to be connected to the connection point specified by `iidSink` on the contained object after the contained object has been successfully created.  
+ A pointer to the `IUnknown` interface of the sink object to be connected to the connection point specified by *iidSink* on the contained object after the contained object has been successfully created.  
   
 ### Return Value  
  One of the standard HRESULT values.  
@@ -232,7 +232,7 @@ ATLAPI AtlAxCreateControlLic(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string to be passed to the control. Must be formatted in one of the following ways:  
   
 -   A ProgID such as "MSCAL.Calendar.7"  
@@ -248,16 +248,16 @@ ATLAPI AtlAxCreateControlLic(
     > [!NOTE]
     >  "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.  
   
- `hWnd`  
+ *hWnd*  
  Handle to the window that the control will be attached to.  
   
- `pStream`  
- A pointer to a stream that is used to initialize the properties of the control. Can be **NULL**.  
+ *pStream*  
+ A pointer to a stream that is used to initialize the properties of the control. Can be NULL.  
   
- `ppUnkContainer`  
- The address of a pointer that will receive the **IUnknown** of the container. Can be **NULL**.  
+ *ppUnkContainer*  
+ The address of a pointer that will receive the `IUnknown` of the container. Can be NULL.  
   
- `bstrLic`  
+ *bstrLic*  
  The BSTR containing the license for the control.  
   
 ### Return Value  
@@ -282,7 +282,7 @@ ATLAPI AtlAxCreateControlLicEx(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A pointer to a string to be passed to the control. Must be formatted in one of the following ways:  
   
 -   A ProgID such as "MSCAL.Calendar.7"  
@@ -298,25 +298,25 @@ ATLAPI AtlAxCreateControlLicEx(
     > [!NOTE]
     >  "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.  
   
- `hWnd`  
+ *hWnd*  
  Handle to the window that the control will be attached to.  
   
- `pStream`  
- A pointer to a stream that is used to initialize the properties of the control. Can be **NULL**.  
+ *pStream*  
+ A pointer to a stream that is used to initialize the properties of the control. Can be NULL.  
   
- `ppUnkContainer`  
- The address of a pointer that will receive the **IUnknown** of the container. Can be **NULL**.  
+ *ppUnkContainer*  
+ The address of a pointer that will receive the `IUnknown` of the container. Can be NULL.  
   
- `ppUnkControl`  
- [out] The address of a pointer that will receive the **IUnknown** of the created control. Can be **NULL**.  
+ *ppUnkControl*  
+ [out] The address of a pointer that will receive the `IUnknown` of the created control. Can be NULL.  
   
- `iidSink`  
+ *iidSink*  
  The interface identifier of an outgoing interface on the contained object.  
   
  *punkSink*  
- A pointer to the **IUnknown** interface of the sink object to be connected to the connection point specified by `iidSink` on the contained object after the contained object has been successfully created.  
+ A pointer to the `IUnknown` interface of the sink object to be connected to the connection point specified by *iidSink* on the contained object after the contained object has been successfully created.  
   
- `bstrLic`  
+ *bstrLic*  
  The BSTR containing the license for the control.  
   
 ### Return Value  
@@ -339,14 +339,14 @@ ATLAPI AtlAxAttachControl(
 ```  
   
 ### Parameters  
- `pControl`  
- [in] A pointer to the **IUnknown** of the control.  
+ *pControl*  
+ [in] A pointer to the `IUnknown` of the control.  
   
- `hWnd`  
+ *hWnd*  
  [in] Handle to the window that will host the control.  
   
- `ppUnkContainer`  
- [out] A pointer to a pointer to the **IUnknown** of the container object.  
+ *ppUnkContainer*  
+ [out] A pointer to a pointer to the `IUnknown` of the container object.  
   
 ### Return Value  
  One of the standard HRESULT values.  
@@ -365,11 +365,11 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 ```  
   
 ### Parameters  
- `h`  
+ *h*  
  [in] A handle to the window that is hosting the control.  
   
- `pp`  
- [out] The **IUnknown** of the container of the control.  
+ *pp*  
+ [out] The `IUnknown` of the container of the control.  
   
 ### Return Value  
  One of the standard HRESULT values.  
@@ -382,17 +382,17 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 ```  
   
 ### Parameters  
- `h`  
+ *h*  
  [in] A handle to the window that is hosting the control.  
   
- `pp`  
- [out] The **IUnknown** of the control being hosted.  
+ *pp*  
+ [out] The `IUnknown` of the control being hosted.  
   
 ### Return Value  
  One of the standard HRESULT values.  
   
 ##  <a name="atlsetchildsite"></a>  AtlSetChildSite  
- Call this function to set the site of the child object to the **IUnknown** of the parent object.  
+ Call this function to set the site of the child object to the `IUnknown` of the parent object.  
   
 ```
 HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
@@ -400,10 +400,10 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
   
 ### Parameters  
  *punkChild*  
- [in] A pointer to the **IUnknown** interface of the child.  
+ [in] A pointer to the `IUnknown` interface of the child.  
   
- `punkParent`  
- [in] A pointer to the **IUnknown** interface of the parent.  
+ *punkParent*  
+ [in] A pointer to the `IUnknown` interface of the parent.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -416,7 +416,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
 ```  
   
 ### Return Value  
- Nonzero if the initialization of the control hosting code was successful; otherwise **FALSE**.  
+ Nonzero if the initialization of the control hosting code was successful; otherwise FALSE.  
   
 ### Remarks  
  This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) or [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680), as described in the Windows SDK.  
@@ -429,7 +429,7 @@ inline BOOL AtlAxWinTerm();
 ```  
   
 ### Return Value  
- Always returns **TRUE**.  
+ Always returns TRUE.  
   
 ### Remarks  
  This function simply calls [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the Windows SDK.  
@@ -449,13 +449,13 @@ ATLAPI AtlGetObjectSourceInterface(
 ```  
   
 ### Parameters  
- `punkObj`  
+ *punkObj*  
  [in] A pointer to the object for which information is to be returned.  
   
- `plibid`  
+ *plibid*  
  [out] A pointer to the LIBID of the type library containing the definition of the source interface.  
   
- `piid`  
+ *piid*  
  [out] A pointer to the interface ID of the object's default source interface.  
   
  *pdwMajor*  
@@ -471,7 +471,7 @@ ATLAPI AtlGetObjectSourceInterface(
  `AtlGetObjectSourceInterface` can provide you with the interface ID of the default source interface, along with the LIBID and major and minor version numbers of the type library describing that interface.  
   
 > [!NOTE]
->  For this function to successfully retrieve the requested information, the object represented by `punkObj` must implement `IDispatch` (and return type information through **IDispatch::GetTypeInfo**) plus it must also implement either `IProvideClassInfo2` or `IPersist`. The type information for the source interface must be in the same type library as the type information for `IDispatch`.  
+>  For this function to successfully retrieve the requested information, the object represented by *punkObj* must implement `IDispatch` (and return type information through `IDispatch::GetTypeInfo`) plus it must also implement either `IProvideClassInfo2` or `IPersist`. The type information for the source interface must be in the same type library as the type information for `IDispatch`.  
   
 ### Example  
  The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) members before calling [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) or [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise).  

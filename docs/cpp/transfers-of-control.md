@@ -12,9 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Transfers of Control
-You can use the `goto` statement or a **case** label in a `switch` statement to specify a program that branches past an initializer. Such code is illegal unless the declaration that contains the initializer is in a block enclosed by the block in which the jump statement occurs.  
+You can use the **goto** statement or a **case** label in a **switch** statement to specify a program that branches past an initializer. Such code is illegal unless the declaration that contains the initializer is in a block enclosed by the block in which the jump statement occurs.  
   
- The following example shows a loop that declares and initializes the objects `total`, `ch`, and `i`. There is also an erroneous `goto` statement that transfers control past an initializer.  
+ The following example shows a loop that declares and initializes the objects `total`, `ch`, and `i`. There is also an erroneous **goto** statement that transfers control past an initializer.  
   
 ```cpp 
 // transfers_of_control.cpp  
@@ -46,7 +46,7 @@ int main()
 }  
 ```  
   
- In the preceding example, the `goto` statement tries to transfer control past the initialization of `i`. However, if `i` were declared but not initialized, the transfer would be legal.  
+ In the preceding example, the **goto** statement tries to transfer control past the initialization of `i`. However, if `i` were declared but not initialized, the transfer would be legal.  
   
- The objects `total` and `ch`, declared in the block that serves as the *statement* of the `while` statement, are destroyed when that block is exited using the `break` statement.  
+ The objects `total` and `ch`, declared in the block that serves as the *statement* of the **while** statement, are destroyed when that block is exited using the **break** statement.  
   

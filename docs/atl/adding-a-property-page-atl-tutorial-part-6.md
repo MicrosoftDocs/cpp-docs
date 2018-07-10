@@ -30,7 +30,7 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
 3.  From the list of templates, select **ATL Property Page** and click **Add**.  
   
-4.  When the ATL Property Page Wizard appears, enter `PolyProp` as the **Short** name.  
+4.  When the ATL Property Page Wizard appears, enter *PolyProp* as the **Short** name.  
   
 5.  Click **Strings** to open the **Strings** page and enter **&Polygon** as the **Title**.  
   
@@ -87,11 +87,11 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
      [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_1.h)]  
   
- A property page can have more than one client attached to it at a time, so the `Apply` function loops around and calls `put_Sides` on each client with the value retrieved from the edit box. You are using the [CComQIPtr](../atl/reference/ccomqiptr-class.md) class, which performs the `QueryInterface` on each object to obtain the `IPolyCtl` interface from the **IUnknown** interface (stored in the `m_ppUnk` array).  
+ A property page can have more than one client attached to it at a time, so the `Apply` function loops around and calls `put_Sides` on each client with the value retrieved from the edit box. You are using the [CComQIPtr](../atl/reference/ccomqiptr-class.md) class, which performs the `QueryInterface` on each object to obtain the `IPolyCtl` interface from the `IUnknown` interface (stored in the `m_ppUnk` array).  
   
- The code now checks that setting the `Sides` property actually worked. If it fails, the code displays a message box displaying error details from the **IErrorInfo** interface. Typically, a container asks an object for the **ISupportErrorInfo** interface and calls `InterfaceSupportsErrorInfo` first, to determine whether the object supports setting error information. You can skip this task.  
+ The code now checks that setting the `Sides` property actually worked. If it fails, the code displays a message box displaying error details from the `IErrorInfo` interface. Typically, a container asks an object for the `ISupportErrorInfo` interface and calls `InterfaceSupportsErrorInfo` first, to determine whether the object supports setting error information. You can skip this task.  
   
- [CComPtr](../atl/reference/ccomptr-class.md) helps you by automatically handling the reference counting, so you do not need to call `Release` on the interface. `CComBSTR` helps you with `BSTR` processing, so you do not have to perform the final `SysFreeString` call. You also use one of the various string conversion classes, so you can convert the `BSTR` if necessary (this is why the `USES_CONVERSION` macro is at the start of the function).  
+ [CComPtr](../atl/reference/ccomptr-class.md) helps you by automatically handling the reference counting, so you do not need to call `Release` on the interface. `CComBSTR` helps you with BSTR processing, so you do not have to perform the final `SysFreeString` call. You also use one of the various string conversion classes, so you can convert the BSTR if necessary (this is why the USES_CONVERSION macro is at the start of the function).  
   
  You also need to set the property page's dirty flag to indicate that the **Apply** button should be enabled. This occurs when the user changes the value in the **Sides** edit box.  
   
@@ -113,7 +113,7 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
      [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]  
   
- `OnEnChangeSides` will be called when a **WM_COMMAND** message is sent with the **EN_CHANGE** notification for the `IDC_SIDES` control. `OnEnChangeSides` then calls `SetDirty` and passes `TRUE` to indicate the property page is now dirty and the **Apply** button should be enabled.  
+ `OnEnChangeSides` will be called when a WM_COMMAND message is sent with the EN_CHANGE notification for the `IDC_SIDES` control. `OnEnChangeSides` then calls `SetDirty` and passes TRUE to indicate the property page is now dirty and the **Apply** button should be enabled.  
   
 ## Adding the Property Page to the Control  
  The ATL Add Class Wizard and the ATL Property Page Wizard do not add the property page to your control for you automatically, because there could be multiple controls in your project. You will need to add an entry to the control's property map.  
@@ -128,7 +128,7 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
  [!code-cpp[NVC_ATL_Windowing#61](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_4.h)]  
   
- You could have added a `PROP_PAGE` macro with the CLSID of your property page, but if you use the `PROP_ENTRY` macro as shown, the `Sides` property value is also saved when the control is saved.  
+ You could have added a PROP_PAGE macro with the CLSID of your property page, but if you use the PROP_ENTRY macro as shown, the `Sides` property value is also saved when the control is saved.  
   
  The three parameters to the macro are the property description, the DISPID of the property, and the CLSID of the property page that has the property on it. This is useful if, for example, you load the control into Visual Basic and set the number of Sides at design time. Because the number of Sides is saved, when you reload your Visual Basic project, the number of Sides will be restored.  
   

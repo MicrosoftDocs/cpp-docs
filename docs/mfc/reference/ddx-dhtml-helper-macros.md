@@ -44,13 +44,13 @@ DDX_DHtml_Anchor_Href(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
@@ -67,13 +67,13 @@ DDX_DHtml_Anchor_Target(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
@@ -92,13 +92,13 @@ DDX_DHtml_ElementInnerHtml(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
@@ -118,13 +118,13 @@ DDX_DHtml_ElementInnerText(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
@@ -141,13 +141,13 @@ DDX_DHtml_ElementValue(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged. See *value* in [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).  
   
 ## Remarks  
@@ -166,13 +166,13 @@ DDX_DHtml_Frame_Src(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
@@ -191,13 +191,13 @@ DDX_DHtml_IFrame_Src(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
@@ -214,17 +214,17 @@ DDX_DHtml_Img_Src(
 ```  
   
 #### Parameters  
- `dx`  
+ *dx*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `name`  
+ *name*  
  The value that you specified for the HTML control's ID parameter.  
   
- `var`  
+ *var*  
  The value being exchanged.  
   
 ## Remarks  
- When using the `DDX_DHtml_Img_Src` macro to retrieve the src property for an IMAGE element, the Internet Explorer image object will return the fully escaped URL for the image source. For example, if you use the `DDX_DHtml_Img_Src` macro to set the src property of an IMAGE element to the string "some interesting picture," when you retrieve that property, Internet Explorer will return the string "res://d:\myapplication\myapp.exe/some%20interesting%20picture."  
+ When using the DDX_DHtml_Img_Src macro to retrieve the src property for an IMAGE element, the Internet Explorer image object will return the fully escaped URL for the image source. For example, if you use the DDX_DHtml_Img_Src macro to set the src property of an IMAGE element to the string "some interesting picture," when you retrieve that property, Internet Explorer will return the string "res://d:\myapplication\myapp.exe/some%20interesting%20picture."  
   
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLIMGELEMENT_SRC dispatch ID.  
 

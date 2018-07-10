@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _com_ptr_t Relational Operators
 **Microsoft Specific**  
   
- Compare the smart pointer object to another smart pointer, raw interface pointer, or **NULL**.  
+ Compare the smart pointer object to another smart pointer, raw interface pointer, or NULL.  
   
 ## Syntax  
   
@@ -90,7 +90,7 @@ bool operator>=( _InterfaceType* p );
 ```  
   
 ## Remarks  
- Compares a smart pointer object to another smart pointer, raw interface pointer, or **NULL**. Except for the **NULL** pointer tests, these operators first query both pointers for **IUnknown**, and compare the results.  
+ Compares a smart pointer object to another smart pointer, raw interface pointer, or NULL. Except for the NULL pointer tests, these operators first query both pointers for `IUnknown`, and compare the results.  
   
  **END Microsoft Specific**  
   

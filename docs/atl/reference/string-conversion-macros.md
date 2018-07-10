@@ -37,9 +37,9 @@ and:
   
 [!code-cpp[NVC_ATL_Utilities#129](../../atl/codesnippet/cpp/string-conversion-macros_2.cpp)]  
   
-In the macro names, the string type in the source structure is on the left (for example, **A**) and the string type in the destination structure is on the right (for example, **W**). **A** stands for `LPSTR`, **OLE** stands for `LPOLESTR`, **T** stands for `LPTSTR`, and **W** stands for `LPWSTR`.  
+In the macro names, the string type in the source structure is on the left (for example, **A**) and the string type in the destination structure is on the right (for example, **W**). **A** stands for LPSTR, **OLE** stands for LPOLESTR, **T** stands for LPTSTR, and **W** stands for LPWSTR.  
   
-Thus, **DEVMODEA2W** copies a `DEVMODE` structure with `LPSTR` strings into a `DEVMODE` structure with `LPWSTR` strings, **TEXTMETRICOLE2T** copies a `TEXTMETRIC` structure with `LPOLESTR` strings into a `TEXTMETRIC` structure with `LPTSTR` strings, and so on.  
+Thus, DEVMODEA2W copies a `DEVMODE` structure with LPSTR strings into a `DEVMODE` structure with LPWSTR strings, TEXTMETRICOLE2T copies a `TEXTMETRIC` structure with LPOLESTR strings into a `TEXTMETRIC` structure with LPTSTR strings, and so on.  
   
 The two strings converted in the `DEVMODE` structure are the device name (`dmDeviceName`) and the form name (`dmFormName`). The `DEVMODE` string conversion macros also update the structure size (`dmSize`).  
   
@@ -58,10 +58,10 @@ The behavior of the `DEVMODE` and `TEXTMETRIC` string conversion macros depends 
   
 |||  
 |-|-|  
-|`DEVMODEA2W`|`TEXTMETRICA2W`|  
-|`DEVMODEOLE2T`|`TEXTMETRICOLE2T`|  
-|`DEVMODET2OLE`|`TEXTMETRICT2OLE`|  
-|`DEVMODEW2A`|`TEXTMETRICW2A`|  
+|DEVMODEA2W|TEXTMETRICA2W|  
+|DEVMODEOLE2T|TEXTMETRICOLE2T|  
+|DEVMODET2OLE|TEXTMETRICT2OLE|  
+|DEVMODEW2A|TEXTMETRICW2A|  
 
 ## See Also
 

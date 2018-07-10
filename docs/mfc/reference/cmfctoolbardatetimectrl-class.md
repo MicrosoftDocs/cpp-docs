@@ -51,7 +51,7 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 |`CMFCToolBarDateTimeCtrl::OnCalculateSize`|Called by the framework to calculate the size of the button for the specified device context and docking state. (Overrides [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
 |[CMFCToolBarDateTimeCtrl::OnChangeParentWnd](#onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
 |[CMFCToolBarDateTimeCtrl::OnClick](#onclick)|Called by the framework when the user clicks the control. (Overrides [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|  
-|[CMFCToolBarDateTimeCtrl::OnCtlColor](#onctlcolor)|Called by the framework when the parent toolbar handles a `WM_CTLCOLOR` message. (Overrides [CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).)|  
+|[CMFCToolBarDateTimeCtrl::OnCtlColor](#onctlcolor)|Called by the framework when the parent toolbar handles a WM_CTLCOLOR message. (Overrides [CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).)|  
 |`CMFCToolBarDateTimeCtrl::OnDraw`|Called by the framework to draw the button by using the specified styles and options. (Overrides [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|  
 |`CMFCToolBarDateTimeCtrl::OnDrawOnCustomizeList`|Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box. (Overrides [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|  
 |[CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged](#onglobalfontschanged)|Called by the framework when the global font has changed. (Overrides [CMFCToolBarButton::OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged).)|  
@@ -85,7 +85,7 @@ virtual BOOL CanBeStretched() const;
 ```  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
  By default, the framework does not allow the user to stretch a toolbar button during customization. This method extends the base class implementation ( [CMFCToolBarButton::CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)) by allowing the user to stretch a date and time toolbar button during customization.  
@@ -102,20 +102,20 @@ CMFCToolBarDateTimeCtrl(
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  The control ID.  
   
- [in] `iImage`  
+ [in] *iImage*  
  The index of the image in the toolbar's `CMFCToolBarImages` object.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The style of the `CMFCToolBarDateTimeCtrlImpl` window that is created when a user clicks the button.  
   
- [in] `iWidth`  
+ [in] *iWidth*  
  The width of the control, in pixels.  
   
 ### Remarks  
- This object is initialized to the system date and time. The window style of the internal `CMFCToolBarDateTimeCtrlImpl` object includes the `dwStyle` parameter and the `WS_CHILD` and `WS_VISIBLE` styles. You cannot change these styles by using `CMFCToolBarDateTimeCtrl::SetStyle`. Use `SetStyle` to change the style of the `CMFCToolBarDateTimeCtrl` control.  
+ This object is initialized to the system date and time. The window style of the internal `CMFCToolBarDateTimeCtrlImpl` object includes the *dwStyle* parameter and the WS_CHILD and WS_VISIBLE styles. You cannot change these styles by using `CMFCToolBarDateTimeCtrl::SetStyle`. Use `SetStyle` to change the style of the `CMFCToolBarDateTimeCtrl` control.  
   
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarDateTimeCtrl` class. This code snippet is part of the [Toolbar Date Time Picker sample](../../visual-cpp-samples.md).  
@@ -130,11 +130,11 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  A reference to the source button from which to copy.  
   
 ### Remarks  
- Call this method to copy another toolbar button to this toolbar button. `src` must be of type `CMFCToolBarDateTimeCtrl`.  
+ Call this method to copy another toolbar button to this toolbar button. *src* must be of type `CMFCToolBarDateTimeCtrl`.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarDateTimeCtrl::ExportToMenuButton  
  Copies text from the toolbar button to a menu.  
@@ -144,11 +144,11 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### Parameters  
- [in] `menuButton`  
+ [in] *menuButton*  
  A reference to the target menu button.  
   
 ### Return Value  
- This method returns `TRUE`.  
+ This method returns TRUE.  
   
 ### Remarks  
  This method overrides the base class implementation ( [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)) by loading the string resource that is associated with the command ID of the control. For more information about string resources, see [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring).  
@@ -161,11 +161,11 @@ static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The command ID of the button to retrieve.  
   
 ### Return Value  
- The first `CMFCToolBarDateTimeCtrl` object in the application that has the specified command ID, or `NULL` if no `CMFCToolBarDateTimeCtrl` objects have the specified command ID.  
+ The first `CMFCToolBarDateTimeCtrl` object in the application that has the specified command ID, or NULL if no `CMFCToolBarDateTimeCtrl` objects have the specified command ID.  
   
 ### Remarks  
  This shared utility method is used by methods such as [CMFCToolBarDateTimeCtrl::SetTimeAll](#settimeall) and [CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall) to set or get the time and date of all instances of the time picker control that have a specified command ID.  
@@ -178,7 +178,7 @@ CDateTimeCtrl* GetDateTimeCtrl() const;
 ```  
   
 ### Return Value  
- A pointer to date and time picker control; or `NULL` if the control does not exist.  
+ A pointer to date and time picker control; or NULL if the control does not exist.  
   
 ### Remarks  
  The `CMFCToolBarDateTimeCtrl` class initializes the `m_pWndDateTime` data member when you insert a `CMFCToolBarDateTimeCtrl` object into a toolbar.  
@@ -206,14 +206,14 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 ```  
   
 ### Parameters  
- `[out] timeDest`  
+ [out] *timeDest*  
  In the first overload, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second overload, a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.  
   
- `[out] pTimeDest`  
- A pointer to the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be `NULL`.  
+ [out] *pTimeDest*  
+ A pointer to the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be NULL.  
   
 ### Return Value  
- In the first overload, nonzero if the time is successfully written to the [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object; otherwise 0. In the second and third overloads, the return value is a `DWORD` that is equal to the dwFlag member that was set in the [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) structure.  
+ In the first overload, nonzero if the time is successfully written to the [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object; otherwise 0. In the second and third overloads, the return value is a DWORD that is equal to the dwFlag member that was set in the [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) structure.  
   
 ### Remarks  
  The method sets the [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) structure member dwFlags to indicate whether the date and time picker is set to a date and time. If the value equals GDT_NONE, the control is set to `no date` status, and uses the DTS_SHOWNONE style. If the value returned equals GDT_VALID, the system time is successfully stored in the destination location.  
@@ -236,17 +236,17 @@ static DWORD GetTimeAll(
 ```  
   
 ### Parameters  
- `[in] uiCmd`  
+ [in] *uiCmd*  
  Specifies a toolbar button's command ID.  
   
- `[out] timeDest`  
+ [out] *timeDest*  
  In the first overload, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second overload, a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.  
   
- `[out] pTimeDest`  
- A pointer to the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be `NULL`.  
+ [out] *pTimeDest*  
+ A pointer to the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be NULL.  
   
 ### Return Value  
- If the framework cannot find a toolbar button that matches the command ID `uiCmd`, the return value is zero in the first overload, and GDT_NONE in the other overloads. If the toolbar button is found, the return value is the same as the return value from a call to [CMFCToolBarDateTimeCtrl::GetTime](#gettime) on that button. A return value of zero or GDT_NONE can occur when the button is found, which indicates that the call to `GetTime` did not return a valid date for some other reason.  
+ If the framework cannot find a toolbar button that matches the command ID *uiCmd*, the return value is zero in the first overload, and GDT_NONE in the other overloads. If the toolbar button is found, the return value is the same as the return value from a call to [CMFCToolBarDateTimeCtrl::GetTime](#gettime) on that button. A return value of zero or GDT_NONE can occur when the button is found, which indicates that the call to `GetTime` did not return a valid date for some other reason.  
   
 ### Remarks  
  This method looks for a toolbar button that has the specified command ID and calls [CMFCToolBarDateTimeCtrl::GetTime](#gettime) method on that button.  
@@ -272,11 +272,11 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### Parameters  
- [in] `iNotifyCode`  
+ [in] *iNotifyCode*  
  The notification message that is associated with the command.  
   
 ### Return Value  
- `TRUE` if the button processes the `WM_COMMAND` message, or `FALSE` to indicate that the message should be handled by the parent toolbar.  
+ TRUE if the button processes the WM_COMMAND message, or FALSE to indicate that the message should be handled by the parent toolbar.  
   
 ### Remarks  
  The framework calls this method when it is about to send a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message to the parent window.  
@@ -303,7 +303,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  The new parent window.  
   
 ### Remarks  
@@ -319,10 +319,10 @@ virtual BOOL OnClick(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  Unused.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  Unused.  
   
 ### Return Value  
@@ -332,7 +332,7 @@ virtual BOOL OnClick(
  This method overrides the base class implementation, [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick), by returning a nonzero value if the internal `CMFCToolBarDateTimeCtrlImpl` object is visible.  
   
 ##  <a name="onctlcolor"></a>  CMFCToolBarDateTimeCtrl::OnCtlColor  
- Called by the framework when the parent toolbar handles a `WM_CTLCOLOR` message.  
+ Called by the framework when the parent toolbar handles a WM_CTLCOLOR message.  
   
 ```  
 virtual HBRUSH OnCtlColor(
@@ -341,10 +341,10 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The device context that displays the button.  
   
- [in] `nCtlColor`  
+ [in] *nCtlColor*  
  Unused.  
   
 ### Return Value  
@@ -385,11 +385,11 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
- Specifies whether the button is visible. If this parameter is `TRUE`, the button is visible. Otherwise, the button is not visible.  
+ [in] *bShow*  
+ Specifies whether the button is visible. If this parameter is TRUE, the button is visible. Otherwise, the button is not visible.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) by displaying the button if `bShow` is `TRUE`. Otherwise, this method hides the button.  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) by displaying the button if *bShow* is TRUE. Otherwise, this method hides the button.  
   
 ##  <a name="onsize"></a>  CMFCToolBarDateTimeCtrl::OnSize  
  Called by the framework when the parent toolbar changes its size or position and this change causes the button to change size.  
@@ -399,7 +399,7 @@ virtual void OnSize(int iSize);
 ```  
   
 ### Parameters  
- [in] `iSize`  
+ [in] *iSize*  
  The new width of the button, in pixels.  
   
 ### Remarks  
@@ -417,23 +417,23 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  The parent window.  
   
- [in] `iButtonIndex`  
+ [in] *iButtonIndex*  
  The zero-based index of the button in the parent button collection.  
   
- [in] `wndToolTip`  
+ [in] *wndToolTip*  
  The control that displays the tooltip text.  
   
- [out] `str`  
+ [out] *str*  
  A `CString` object that receives the updated tooltip text.  
   
 ### Return Value  
  Nonzero if the method updates the tooltip text; otherwise 0.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)) by displaying the tooltip text that is associated with the button. If the button is not docked horizontally, this method does nothing and returns `FALSE`.  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)) by displaying the tooltip text that is associated with the button. If the button is not docked horizontally, this method does nothing and returns FALSE.  
   
 ##  <a name="settime"></a>  CMFCToolBarDateTimeCtrl::SetTime  
  Sets the time and date in the time picker control.  
@@ -445,10 +445,10 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 ```  
   
 ### Parameters  
- `[in] timeNew`  
+ [in] *timeNew*  
  In the first version, a reference to a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the time to which the control will be set. In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that contains the time to which the control will be set.  
   
- `[in] pTimeNew`  
+ [in] *pTimeNew*  
  A pointer to the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the time to which the control will be set.  
   
 ### Return Value  
@@ -475,13 +475,13 @@ static BOOL SetTimeAll(
 ```  
   
 ### Parameters  
- `[in] uiCmd`  
+ [in] *uiCmd*  
  Specifies a toolbar button's command ID.  
   
- `[in] timeNew`  
+ [in] *timeNew*  
  In the first version, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the time to which the control will be set. In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that contains the time to which the control will be set.  
   
- `[in] pTimeNew`  
+ [in] *pTimeNew*  
  A pointer to the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the time to which the control will be set.  
   
 ### Return Value  

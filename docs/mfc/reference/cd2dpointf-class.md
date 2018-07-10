@@ -54,13 +54,13 @@ CD2DPointF(FLOAT fX = 0., FLOAT fY = 0.);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  source point  
   
- `fX`  
+ *fX*  
  source X  
   
- `fY`  
+ *fY*  
  source Y  
   
 ##  <a name="operator_cpoint"></a>  CD2DPointF::operator CPoint  

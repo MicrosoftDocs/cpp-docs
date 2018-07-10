@@ -85,7 +85,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Remarks  
   
@@ -109,22 +109,22 @@ CMFCRibbonGalleryMenuButton(
 ```  
   
 ### Parameters  
- `uiID`  
- The command ID of the button. This is the value sent in the **WM_COMMAND** message when the user clicks this button.  
+ *uiID*  
+ The command ID of the button. This is the value sent in the WM_COMMAND message when the user clicks this button.  
   
- `iImage`  
- The index of the image to display with the gallery menu button. The images are stored in the `imagesPalette` parameter.  
+ *iImage*  
+ The index of the image to display with the gallery menu button. The images are stored in the *imagesPalette* parameter.  
   
- `lpszText`  
+ *lpszText*  
  The text to display on the menu button.  
   
- `imagesPalette`  
+ *imagesPalette*  
  Contains the list of images to display on the gallery.  
   
- `uiImagesPaletteResID`  
+ *uiImagesPaletteResID*  
  The resource ID of the image list for the images to display on the gallery.  
   
- `cxPaletteImage`  
+ *cxPaletteImage*  
  Specifies the width in pixels of the image to display on the gallery.  
   
 ### Remarks  

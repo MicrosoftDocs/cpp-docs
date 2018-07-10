@@ -62,16 +62,16 @@ explicit CFolderPickerDialog(
 ```  
   
 ### Parameters  
- `lpszFolder`  
+ *lpszFolder*  
  Initial folder.  
   
- `dwFlags`  
+ *dwFlags*  
  A combination of one or more flags that allow you to customize the dialog box.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box object's parent or owner window.  
   
- `dwSize`  
+ *dwSize*  
  The size of the OPENFILENAME structure.  
   
 ### Remarks  

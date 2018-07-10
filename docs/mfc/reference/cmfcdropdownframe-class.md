@@ -86,16 +86,16 @@ virtual BOOL Create(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWndParent`|The parent window of the drop-down frame.|  
-|[in] `x`|The horizontal screen coordinate for the location of the down-down frame.|  
-|[in] `y`|The vertical screen coordinate for the location of the down-down frame.|  
-|[in] `pWndOriginToolbar`|The toolbar that has the drop-down buttons that this method uses to populate the new drop-down frame object.|  
+|[in] *pWndParent*|The parent window of the drop-down frame.|  
+|[in] *x*|The horizontal screen coordinate for the location of the down-down frame.|  
+|[in] *y*|The vertical screen coordinate for the location of the down-down frame.|  
+|[in] *pWndOriginToolbar*|The toolbar that has the drop-down buttons that this method uses to populate the new drop-down frame object.|  
   
 ### Return Value  
- `TRUE` if the drop-down frame was successfully created; otherwise `FALSE`.  
+ TRUE if the drop-down frame was successfully created; otherwise FALSE.  
   
 ### Remarks  
- This method calls the base [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) method to create the drop-down frame window with the `WS_POPUP` style. The drop-down frame window appears at the specified screen coordinates. This method fails if the [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) method returns `FALSE`.  
+ This method calls the base [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) method to create the drop-down frame window with the WS_POPUP style. The drop-down frame window appears at the specified screen coordinates. This method fails if the [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) method returns FALSE.  
   
  The `CMFCDropDownFrame` class creates a copy of the provided `CMFCDropDownToolBar` parameter. This method copies the button images and button states from the `pWndOriginToolbar` parameter to the `m_pWndOriginToolbar` data member.  
   
@@ -107,10 +107,10 @@ CMFCMenuBar* GetParentMenuBar() const;
 ```  
   
 ### Return Value  
- A pointer to the parent menu bar of the drop-down frame, or `NULL` if the frame has no parent.  
+ A pointer to the parent menu bar of the drop-down frame, or NULL if the frame has no parent.  
   
 ### Remarks  
- This method retrieves the parent menu bar from the parent button. This method returns `NULL` if the drop-down frame has no parent button or the parent button has no parent menu bar.  
+ This method retrieves the parent menu bar from the parent button. This method returns NULL if the drop-down frame has no parent button or the parent button has no parent menu bar.  
   
 ##  <a name="getparentpopupmenu"></a>  CMFCDropDownFrame::GetParentPopupMenu  
  Retrieves the parent pop-up menu of the drop-down frame.  
@@ -120,10 +120,10 @@ CMFCDropDownFrame* GetParentPopupMenu() const;
 ```  
   
 ### Return Value  
- A pointer to the parent drop-down menu of the drop-down frame, or `NULL` if the frame has no parent.  
+ A pointer to the parent drop-down menu of the drop-down frame, or NULL if the frame has no parent.  
   
 ### Remarks  
- This method retrieves the parent menu from the parent button. This method returns `NULL` if the drop-down frame has no parent button or the parent button has no parent menu.  
+ This method retrieves the parent menu from the parent button. This method returns NULL if the drop-down frame has no parent button or the parent button has no parent menu.  
   
 ##  <a name="recalclayout"></a>  CMFCDropDownFrame::RecalcLayout  
  Repositions the drop-down frame.  
@@ -137,7 +137,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `bNotify`|Unused.|  
+|[in] *bNotify*|Unused.|  
   
 ### Remarks  
  The framework calls this method when the drop-down frame is created or the parent window is resized. This method calculates the position and size of the drop-down frame by using the position and size of the parent window.  
@@ -150,11 +150,11 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### Parameters  
- [in] `bAutoDestroy`  
- `TRUE` to automatically destroy the associated drop-down toolbar window; otherwise, `FALSE`.  
+ [in] *bAutoDestroy*  
+ TRUE to automatically destroy the associated drop-down toolbar window; otherwise, FALSE.  
   
 ### Remarks  
- If `bAutoDestroy` is `TRUE`, then the `CMFCDropDownFrame` destructor destroys the associated drop-down toolbar window. The default value is `TRUE`.  
+ If *bAutoDestroy* is TRUE, then the `CMFCDropDownFrame` destructor destroys the associated drop-down toolbar window. The default value is TRUE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

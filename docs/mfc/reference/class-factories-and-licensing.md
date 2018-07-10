@@ -78,10 +78,10 @@ IMPLEMENT_OLECREATE_EX(
  The object name exposed to applications.  
   
  *l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8*  
- Components of the class's **CLSID**. For more information on these parameters, see the Remarks for [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate).  
+ Components of the class's CLSID. For more information on these parameters, see the Remarks for [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate).  
   
 ### Remarks  
- This macro must appear in the implementation file for any control class that uses the `DECLARE_OLECREATE_EX` macro or the `BEGIN_OLEFACTORY` and `END_OLEFACTORY` macros. The external name is the identifier of the OLE control that is exposed to other applications. Containers use this name to request an object of this control class.  
+ This macro must appear in the implementation file for any control class that uses the DECLARE_OLECREATE_EX macro or the BEGIN_OLEFACTORY and END_OLEFACTORY macros. The external name is the identifier of the OLE control that is exposed to other applications. Containers use this name to request an object of this control class.  
   
 ### Requirements  
   **Header** afxctl.h  
@@ -98,7 +98,7 @@ BEGIN_OLEFACTORY(class_name)
  Specifies the name of the control class whose class factory this is.  
   
 ### Remarks  
- Declarations of class factory licensing functions should begin immediately after `BEGIN_OLEFACTORY`.  
+ Declarations of class factory licensing functions should begin immediately after BEGIN_OLEFACTORY.  
   
 ### Requirements  
   **Header** afxctl.h  
@@ -129,23 +129,23 @@ BOOL AFXAPI AfxVerifyLicFile(
 ```  
   
 ### Parameters  
- `hInstance`  
+ *hInstance*  
  The instance handle of the DLL associated with the licensed control.  
   
- `pszLicFileName`  
+ *pszLicFileName*  
  Points to a null-terminated character string containing the license filename.  
   
- `pszLicFileContents`  
+ *pszLicFileContents*  
  Points to a byte sequence that must match the sequence found at the beginning of the license file.  
   
- `cch`  
- Number of characters in `pszLicFileContents`.  
+ *cch*  
+ Number of characters in *pszLicFileContents*.  
   
 ### Return Value  
- Nonzero if the license file exists and begins with the character sequence in `pszLicFileContents`; otherwise 0.  
+ Nonzero if the license file exists and begins with the character sequence in *pszLicFileContents*; otherwise 0.  
   
 ### Remarks  
- If `cch` is -1, this function uses:  
+ If *cch* is -1, this function uses:  
   
  [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]  
 

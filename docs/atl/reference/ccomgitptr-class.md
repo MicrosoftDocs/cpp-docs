@@ -77,10 +77,10 @@ HRESULT Attach(DWORD dwCookie) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  The interface pointer to be added to the GIT.  
   
- `dwCookie`  
+ *dwCookie*  
  The cookie used to identify the interface pointer.  
   
 ### Return Value  
@@ -101,22 +101,22 @@ CComGITPtr(CComGITPtr&& rv);
 ```  
   
 ### Parameters  
- [in] `p`  
+ [in] *p*  
  An interface pointer to be stored in the global interface table (GIT).  
   
- [in] `git`  
+ [in] *git*  
  A reference to an existing `CComGITPtr` object.  
   
- [in] `dwCookie`  
+ [in] *dwCookie*  
  A cookie used to identify the interface pointer.  
   
- [in] `rv`  
+ [in] *rv*  
  The source `CComGITPtr` object to move data from.  
   
 ### Remarks  
  Creates a new `CComGITPtr` object, optionally using an existing `CComGITPtr` object.  
   
- The constructor utilizing `rv` is a move constructor. The data is moved from the source, `rv`, and then `rv` is cleared.  
+ The constructor utilizing *rv* is a move constructor. The data is moved from the source, *rv*, and then *rv* is cleared.  
   
 ##  <a name="dtor"></a>  CComGITPtr::~CComGITPtr  
  The destructor.  
@@ -136,7 +136,7 @@ HRESULT CopyTo(T** pp) const throw();
 ```  
   
 ### Parameters  
- `pp`  
+ *pp*  
  The pointer which is to receive the interface.  
   
 ### Return Value  
@@ -192,16 +192,16 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 ```  
   
 ### Parameters  
- [in] `p`  
+ [in] *p*  
  A pointer to an interface.  
   
- [in] `git`  
+ [in] *git*  
  A reference to a `CComGITPtr` object.  
   
- [in] `dwCookie`  
+ [in] *dwCookie*  
  A cookie used to identify the interface pointer.  
   
- [in] `rv`  
+ [in] *rv*  
  The `CComGITPtr` to move data from.  
   
 ### Return Value  

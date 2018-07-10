@@ -68,7 +68,7 @@ class COleDateTimeSpan
   
  A `COleDateTimeSpan` keeps time in days.  
   
- `COleDateTimeSpan` is used with its companion class [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` encapsulates the **DATE** data type of OLE automation. `COleDateTime` represents absolute time values. All `COleDateTime` calculations involve `COleDateTimeSpan` values. The relation between these classes is analogous to the one between [CTime](../../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
+ `COleDateTimeSpan` is used with its companion class [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` encapsulates the `DATE` data type of OLE automation. `COleDateTime` represents absolute time values. All `COleDateTime` calculations involve `COleDateTimeSpan` values. The relation between these classes is analogous to the one between [CTime](../../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
   
  For more information on the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
@@ -92,7 +92,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
  The `COleDateTimeSpan` to compare.  
   
 ### Return Value  
- These operators compare two date/time-span values and return **true** if the condition is true; otherwise **false**.  
+ These operators compare two date/time-span values and return TRUE if the condition is true; otherwise FALSE.  
   
 ### Remarks  
   
@@ -114,10 +114,10 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```  
   
 ### Parameters  
- `dblSpanSrc`  
+ *dblSpanSrc*  
  The number of days to be copied into the new `COleDateTimeSpan` object.  
   
- `lDays`, `nHours`, `nMins`, `nSecs`  
+ *lDays*, *nHours*, *nMins*, *nSecs*  
  Indicate the day and time values to be copied into the new `COleDateTimeSpan` object.  
   
 ### Remarks  
@@ -145,8 +145,8 @@ CString Format(UINT nID) const;
 ```  
   
 ### Parameters  
- `pFormat`  
- A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent ( `%`) sign, are replaced by the corresponding `COleDateTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for **Format** are listed below:  
+ *pFormat*  
+ A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `COleDateTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for `Format` are listed below:  
   
 - **%H** Hours in the current day  
   
@@ -160,21 +160,21 @@ CString Format(UINT nID) const;
   
 -  
   
- `nID`  
+ *nID*  
  The resource ID for the format-control string.  
   
 ### Return Value  
  A `CString` that contains the formatted date/time-span value.  
   
 ### Remarks  
- Call these functions to create a formatted representation of the time-span value. If the status of this `COleDateTimeSpan` object is null, the return value is an empty string. If the status is invalid, the return string is specified by the string resource **IDS_INVALID_DATETIMESPAN**.  
+ Call these functions to create a formatted representation of the time-span value. If the status of this `COleDateTimeSpan` object is null, the return value is an empty string. If the status is invalid, the return string is specified by the string resource IDS_INVALID_DATETIMESPAN.  
   
  A brief description of the forms for this function follows:  
   
- **Format(** `pFormat` **)**  
+ **Format(** *pFormat* **)**  
  This form formats the value using the format string that contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is passed as a parameter to the function.  
   
- **Format(** `nID` **)**  
+ **Format(** *nID* **)**  
  This form formats the value using the format string that contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is a resource. The ID of this string resource is passed as the parameter.  
   
 ### Example  
@@ -319,7 +319,7 @@ DateTimeSpanStatus GetStatus() const throw();
  The status of this `COleDateTimeSpan` value.  
   
 ### Remarks  
- The return value is defined by the **DateTimeSpanStatus** enumerated type, which is defined within the `COleDateTimeSpan` class.  
+ The return value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.  
   
 ```  
 enum DateTimeSpanStatus{  
@@ -331,11 +331,11 @@ enum DateTimeSpanStatus{
   
  For a brief description of these status values, see the following list:  
   
-- **COleDateTimeSpan::valid** Indicates that this `COleDateTimeSpan` object is valid.  
+- `COleDateTimeSpan::valid` Indicates that this `COleDateTimeSpan` object is valid.  
   
-- **COleDateTimeSpan::invalid** Indicates that this `COleDateTimeSpan` object is invalid; that is, its value may be incorrect.  
+- `COleDateTimeSpan::invalid` Indicates that this `COleDateTimeSpan` object is invalid; that is, its value may be incorrect.  
   
-- **COleDateTimeSpan::null** Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- `COleDateTimeSpan::null` Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
  The status of a `COleDateTimeSpan` object is invalid in the following cases:  
   
@@ -491,7 +491,7 @@ double m_span;
 >  Changing the value in the **double** data member will change the value of this `COleDateTimeSpan` object. It does not change the status of this `COleDateTimeSpan` object.  
   
 ##  <a name="m_status"></a>  COleDateTimeSpan::m_status  
- The type for this data member is the enumerated type **DateTimeSpanStatus**, which is defined within the `COleDateTimeSpan` class.  
+ The type for this data member is the enumerated type `DateTimeSpanStatus`, which is defined within the `COleDateTimeSpan` class.  
   
 ```
 DateTimeSpanStatus m_status;
@@ -509,11 +509,11 @@ enum DateTimeSpanStatus{
   
  For a brief description of these status values, see the following list:  
   
-- **COleDateTimeSpan::valid** Indicates that this `COleDateTimeSpan` object is valid.  
+- `COleDateTimeSpan::valid` Indicates that this `COleDateTimeSpan` object is valid.  
   
-- **COleDateTimeSpan::invalid** Indicates that this `COleDateTimeSpan` object is invalid; that is, its value may be incorrect.  
+- `COleDateTimeSpan::invalid` Indicates that this `COleDateTimeSpan` object is invalid; that is, its value may be incorrect.  
   
-- **COleDateTimeSpan::null** Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- `COleDateTimeSpan::null` Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
  The status of a `COleDateTimeSpan` object is invalid in the following cases:  
   
@@ -597,7 +597,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```  
   
 ### Parameters  
- `lDays`, `nHours`, `nMins`, `nSecs`  
+ *lDays*, *nHours*, *nMins*, *nSecs*  
  Indicate the date-span and time-span values to be copied into this `COleDateTimeSpan` object.  
   
 ### Remarks  
@@ -634,7 +634,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
  The new status value for this `COleDateTimeSpan` object.  
   
 ### Remarks  
- The *Status* parameter value is defined by the **DateTimeSpanStatus** enumerated type, which is defined within the `COleDateTimeSpan` class.  
+ The *Status* parameter value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.  
   
 ```  
 enum DateTimeSpanStatus{  
@@ -646,14 +646,14 @@ enum DateTimeSpanStatus{
   
  For a brief description of these status values, see the following list:  
   
-- **COleDateTimeSpan::valid** Indicates that this `COleDateTimeSpan` object is valid.  
+- `COleDateTimeSpan::valid` Indicates that this `COleDateTimeSpan` object is valid.  
   
-- **COleDateTimeSpan::invalid** Indicates that this `COleDateTimeSpan` object is invalid; that is, its value may be incorrect.  
+- `COleDateTimeSpan::invalid` Indicates that this `COleDateTimeSpan` object is invalid; that is, its value may be incorrect.  
   
-- **COleDateTimeSpan::null** Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- `COleDateTimeSpan::null` Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
     > [!CAUTION]
-    >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to `null` or **invalid**. Note that the assignment operator ( [operator =](#eq)) and [SetDateTimeSpan](#setdatetimespan) do set the status of the object based on the source value(s).  
+    >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to **null** or **invalid**. Note that the assignment operator ( [operator =](#eq)) and [SetDateTimeSpan](#setdatetimespan) do set the status of the object based on the source value(s).  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#22](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_13.cpp)]  

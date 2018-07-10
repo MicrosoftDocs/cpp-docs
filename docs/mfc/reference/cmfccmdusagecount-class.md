@@ -79,7 +79,7 @@ void AddCmd(UINT uiCmd);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `uiCmd`|Specifies the command counter to increment.|  
+|[in] *uiCmd*|Specifies the command counter to increment.|  
   
 ### Remarks  
  This method adds a new entry to the map structure of command counts, `m_CmdUsage`, if the entry does not already exist.  
@@ -88,9 +88,9 @@ void AddCmd(UINT uiCmd);
   
 -   The toolbar framework is in customization mode (the [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode) method returns a nonzero value).  
   
--   The command refers to a submenu or menu separator ( `uiCmd` equals 0 or -1).  
+-   The command refers to a submenu or menu separator ( *uiCmd* equals 0 or -1).  
   
-- `uiCmd` refers to a standard command (the global `IsStandardCommand` function returns a nonzero value).  
+- *uiCmd* refers to a standard command (the global `IsStandardCommand` function returns a nonzero value).  
   
 ##  <a name="getcount"></a>  CMFCCmdUsageCount::GetCount  
  Retrieves the usage count that is associated with the given command ID.  
@@ -104,7 +104,7 @@ UINT GetCount(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `uiCmd`|The ID of the command counter to retrieve.|  
+|[in] *uiCmd*|The ID of the command counter to retrieve.|  
   
 ### Return Value  
  The usage count that is associated with the given command ID.  
@@ -136,7 +136,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `uiCmd`|Specifies the command to check.|  
+|[in] *uiCmd*|Specifies the command to check.|  
   
 ### Return Value  
  Nonzero if the command is frequently used; otherwise 0.  
@@ -168,7 +168,7 @@ virtual void Serialize(CArchive& ar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `ar`|A `CArchive` object to serialize from or to.|  
+|[in] *ar*|A `CArchive` object to serialize from or to.|  
   
 ### Remarks  
  This method serializes the map structure of command counts, `m_CmdUsage`, and the total command usage, `m_nTotalUsage`, counter from or to the specified archive.  
@@ -189,16 +189,16 @@ static BOOL __stdcall SetOptions(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `nStartCount`|The new initial count of all tracked commands.|  
-|[in] `nMinUsagePercentage`|The new minimum usage percentage.|  
+|[in] *nStartCount*|The new initial count of all tracked commands.|  
+|[in] *nMinUsagePercentage*|The new minimum usage percentage.|  
   
 ### Return Value  
- `TRUE` if the method succeeds, `FALSE` if the `nMinUsagePercentage` parameter is larger than or equal to 100.  
+ TRUE if the method succeeds, FALSE if the *nMinUsagePercentage* parameter is larger than or equal to 100.  
   
 ### Remarks  
- This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCount` and `m_nMinUsagePercentage` to `nStartCount` and `nMinUsagePercentage`, respectively. `m_nStartCount` is used by the [CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation) method to determine whether this object has collected the minimum amount of tracking data. `m_nMinUsagePercentage` is used by the [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) method to determine whether a given command is frequently used.  
+ This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCount` and `m_nMinUsagePercentage` to *nStartCount* and *nMinUsagePercentage*, respectively. `m_nStartCount` is used by the [CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation) method to determine whether this object has collected the minimum amount of tracking data. `m_nMinUsagePercentage` is used by the [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) method to determine whether a given command is frequently used.  
   
- In Debug builds this method generates an assertion failure if the `nMinUsagePercentage` parameter is larger than or equal to 100.  
+ In Debug builds this method generates an assertion failure if the *nMinUsagePercentage* parameter is larger than or equal to 100.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

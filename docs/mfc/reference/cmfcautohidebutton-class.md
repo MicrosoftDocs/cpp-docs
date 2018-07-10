@@ -89,13 +89,13 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `pParentBar`  
+ [in] *pParentBar*  
  A pointer to the parent toolbar.  
   
- [in] `pAutoHideWnd`  
+ [in] *pAutoHideWnd*  
  A pointer to a [CDockablePane](../../mfc/reference/cdockablepane-class.md) object. This auto-hide button hides and shows that `CDockablePane`.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  A value that specifies the alignment of the button with the main frame window.  
   
 ### Return Value  
@@ -104,15 +104,15 @@ virtual BOOL Create(
 ### Remarks  
  When you create a `CMFCAutoHideButton` object, you must associate the auto-hide button with a specific `CDockablePane`. The user can use the auto-hide button to hide and show the associated `CDockablePane`.  
   
- The `dwAlignment` parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
+ The *dwAlignment* parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CBRS_ALIGN_TOP`  
+- CBRS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="getalignment"></a>  CMFCAutoHideButton::GetAlignment  
  Retrieves the alignment of the auto-hide button.  
@@ -122,18 +122,18 @@ DWORD GetAlignment() const;
 ```  
   
 ### Return Value  
- A `DWORD` value that contains the current alignment of the auto-hide button.  
+ A DWORD value that contains the current alignment of the auto-hide button.  
   
 ### Remarks  
  The alignment of the auto-hide button indicates where the button resides on the application. It can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CRBS_ALIGN_TOP`  
+- CRBS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="getautohidewindow"></a>  CMFCAutoHideButton::GetAutoHideWindow  
  Returns the [CDockablePane](../../mfc/reference/cdockablepane-class.md) object associated with the auto-hide button.  
@@ -201,7 +201,7 @@ BOOL IsActive() const;
 ```  
   
 ### Return Value  
- `TRUE` if the auto-hide button is active; `FALSE` otherwise.  
+ TRUE if the auto-hide button is active; FALSE otherwise.  
   
 ### Remarks  
  An auto-hide button is active when the associated [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) window is shown.  
@@ -217,7 +217,7 @@ BOOL IsHorizontal() const;
  Nonzero if the button is horizontal; 0 otherwise.  
   
 ### Remarks  
- The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
+ The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the *dwAlignment* parameter in the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
 
@@ -238,7 +238,7 @@ virtual BOOL IsVisible() const;
 ```  
   
 ### Return Value  
- `TRUE` if the button is visible; `FALSE` otherwise.  
+ TRUE if the button is visible; FALSE otherwise.  
   
 ##  <a name="ondraw"></a>  CMFCAutoHideButton::OnDraw  
  The framework calls this method when it draws the auto-hide button.  
@@ -248,7 +248,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -265,13 +265,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectBounds`  
+ [in] *rectBounds*  
  The bounding rectangle of the auto-hide button.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  The border thickness for each side of the auto-hide button.  
   
 ### Remarks  
@@ -287,10 +287,10 @@ virtual void OnFillBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the auto-hide button.  
   
 ### Remarks  
@@ -304,7 +304,7 @@ void ShowAttachedWindow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  A Boolean that specifies whether this method shows the attached `CDockablePane`.  
   
 ##  <a name="showbutton"></a>  CMFCAutoHideButton::ShowButton  
@@ -315,7 +315,7 @@ virtual void ShowButton(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  A Boolean that specifies whether to show the auto-hide button.  
   
 ##  <a name="move"></a>  CMFCAutoHideButton::Move  
@@ -326,7 +326,7 @@ void Move(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
   
 ### Remarks  
   
@@ -338,7 +338,7 @@ void ReplacePane(CDockablePane* pNewBar);
 ```  
   
 ### Parameters  
- [in] `pNewBar`  
+ [in] *pNewBar*  
   
 ### Remarks  
   
@@ -350,7 +350,7 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 ```  
   
 ### Parameters  
- [in] `pFirstBarInGroup`  
+ [in] *pFirstBarInGroup*  
  A pointer to the first bar in the group.  
   
 ### Remarks  
@@ -363,8 +363,8 @@ virtual void HighlightButton(BOOL bHighlight);
 ```  
   
 ### Parameters  
- `bHighlight`  
- Specifies the new auto hide button state. `TRUE` indicates the button is highlighted, `FALSE` indicates the button is not highlighted.  
+ *bHighlight*  
+ Specifies the new auto hide button state. TRUE indicates the button is highlighted, FALSE indicates the button is not highlighted.  
   
 ### Remarks  
   
@@ -376,7 +376,7 @@ virtual BOOL IsHighlighted() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if the auto hide button is highlighted; otherwise `FALSE`.  
+ Returns TRUE if the auto hide button is highlighted; otherwise FALSE.  
   
 ### Remarks  
   

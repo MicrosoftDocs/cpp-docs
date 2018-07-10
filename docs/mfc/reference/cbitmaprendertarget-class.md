@@ -68,7 +68,7 @@ void Attach(ID2D1BitmapRenderTarget* pTarget);
 ```  
   
 ### Parameters  
- `pTarget`  
+ *pTarget*  
  Existing render target interface. Cannot be NULL  
   
 ##  <a name="cbitmaprendertarget"></a>  CBitmapRenderTarget::CBitmapRenderTarget  
@@ -96,7 +96,7 @@ BOOL GetBitmap(CD2DBitmap& bitmap);
 ```  
   
 ### Parameters  
- `bitmap`  
+ *bitmap*  
  When this method returns, contains the valid bitmap for this render target. This bitmap can be used for drawing operations.  
   
 ### Return Value  

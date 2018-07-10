@@ -93,24 +93,24 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ```  
   
 ### Parameters  
- [in] `pAutoHideWnd`  
+ [in] *pAutoHideWnd*  
  The window that you want to hide.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  A value that specifies the alignment of the auto-hide button with the application window.  
   
 ### Return Value  
   
 ### Remarks  
- The `dwAlignment` parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
+ The *dwAlignment* parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CBRS_ALIGN_TOP`  
+- CBRS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu  
 
@@ -133,8 +133,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -164,13 +164,13 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `lpszClassName`  
- [in] `dwStyle`  
- [in] `rect`  
- [in] `pParentWnd`  
- [in] `nID`  
- [in] `dwControlBarStyle`  
- [in] `pContext`  
+ [in] *lpszClassName*  
+ [in] *dwStyle*  
+ [in] *rect*  
+ [in] *pParentWnd*  
+ [in] *nID*  
+ [in] *dwControlBarStyle*  
+ [in] *pContext*  
   
 ### Return Value  
   
@@ -218,7 +218,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### Parameters  
- [in] `CPoint`  
+ [in] *CPoint*  
   
 ### Return Value  
   
@@ -232,7 +232,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### Parameters  
- CDockablePane* `pAutoHideWnd`  
+ CDockablePane* *pAutoHideWnd*  
  The auto-hide window to remove.  
   
 ### Return Value  
@@ -248,7 +248,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 ```  
   
 ### Parameters  
- [in] BOOL `bActive`  
+ [in] BOOL *bActive*  
  TRUE to set to active; otherwise FALSE.  
   
 ### Remarks  
@@ -262,7 +262,7 @@ void SetRecentVisibleState(BOOL bState);
 ```  
   
 ### Parameters  
- [in] `bState`  
+ [in] *bState*  
   
 ### Remarks  
   
@@ -277,11 +277,11 @@ BOOL ShowAutoHideWindow(
 ```  
   
 ### Parameters  
- [in] CDockablePane* `pAutoHideWnd`  
- [in] BOOL `bShow`  
+ [in] CDockablePane* *pAutoHideWnd*  
+ [in] BOOL *bShow*  
  TRUE to show the window.  
   
- [in] BOOL `bDelay`  
+ [in] BOOL *bDelay*  
  This parameter is ignored.  
   
 ### Return Value  
@@ -299,11 +299,11 @@ virtual CSize StretchPane(
 ```  
   
 ### Parameters  
- [in] `nLength`  
+ [in] *nLength*  
  The value is unused in the base implementation. In derived implementations, use this value to indicate the length of the resized pane.  
   
- [in] `bVert`  
- The value is unused in the base implementation. In derived implementations, use `TRUE` to handle the case where the auto-hide bar is collapsed vertically, and `FALSE` for the case where the auto-hide bar is collapsed horizontally.  
+ [in] *bVert*  
+ The value is unused in the base implementation. In derived implementations, use TRUE to handle the case where the auto-hide bar is collapsed vertically, and FALSE for the case where the auto-hide bar is collapsed horizontally.  
   
 ### Return Value  
  The resulting size of the resized pane.  

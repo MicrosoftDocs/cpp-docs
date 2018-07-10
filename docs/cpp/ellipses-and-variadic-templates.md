@@ -73,7 +73,7 @@ template <typename... Arguments> returntype functionname(Arguments&&... args);
 template <typename... Arguments> returntype functionname(Arguments*... args);  
 ```  
   
- Specifiers like `const` are also allowed:  
+ Specifiers like **const** are also allowed:  
   
 ```cpp  
 template <typename... Arguments> returntype functionname(const Arguments&... args);  

@@ -84,7 +84,7 @@ CMFCFontInfo* GetSelFont() const;
 ```  
   
 ### Return Value  
- A pointer to [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md) object that describes a font. It can be `NULL` if no font is selected in the combo box.  
+ A pointer to [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md) object that describes a font. It can be NULL if no font is selected in the combo box.  
   
 ### Remarks  
   
@@ -96,7 +96,7 @@ static BOOL m_bDrawUsingFont;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to direct the framework to use the same font to draw each item label. Set this member to `FALSE` to direct the framework to draw each item label with the font whose name is the same as the label. The default value of this member is `FALSE`.  
+ Set this member to TRUE to direct the framework to use the same font to draw each item label. Set this member to FALSE to direct the framework to draw each item label with the font whose name is the same as the label. The default value of this member is FALSE.  
   
 ##  <a name="selectfont"></a>  CMFCFontComboBox::SelectFont  
  Selects the font that matches the specified criteria from the font combo box.  
@@ -111,17 +111,17 @@ BOOL SelectFont(
 ```  
   
 ### Parameters  
- [in] `pDesc`  
+ [in] *pDesc*  
  Points to a font description object.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Specifies a font name.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the `lfCharSet` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
   
 ### Return Value  
- `TRUE` if an item in the font combo box matches the specified font description object or font name and charset; otherwise, `FALSE`.  
+ TRUE if an item in the font combo box matches the specified font description object or font name and charset; otherwise, FALSE.  
   
 ### Remarks  
  Use this method to select and scroll to the item in the font combo box that corresponds to the specified font.  
@@ -143,17 +143,17 @@ BOOL Setup(
 ```  
   
 ### Parameters  
- [in] `nFontType`  
+ [in] *nFontType*  
  Specifies the font type. The default value is the bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Specifies the font character set. The default value is DEFAULT_CHARSET.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Specifies the font pitch and family. The default value is DEFAULT_PITCH.  
   
 ### Return Value  
- `TRUE` if the font combo box was initialized successfully; otherwise, `FALSE`.  
+ TRUE if the font combo box was initialized successfully; otherwise, FALSE.  
   
 ### Remarks  
  This method initializes the font combo box by enumerating the currently installed fonts that match the specified parameters and inserting those font names in the font combo box.  

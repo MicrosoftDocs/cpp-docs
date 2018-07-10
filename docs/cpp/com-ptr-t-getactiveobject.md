@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _com_ptr_t::GetActiveObject
 **Microsoft Specific**  
   
- Attaches to an existing instance of an object given a **CLSID** or **ProgID**.  
+ Attaches to an existing instance of an object given a `CLSID` or `ProgID`.  
   
 ## Syntax  
   
@@ -33,23 +33,23 @@ HRESULT GetActiveObject(
 ```  
   
 #### Parameters  
- `rclsid`  
- The **CLSID** of an object.  
+ *rclsid*  
+ The `CLSID` of an object.  
   
- `clsidString`  
- A Unicode string that holds either a **CLSID** (starting with "**{**") or a **ProgID**.  
+ *clsidString*  
+ A Unicode string that holds either a `CLSID` (starting with "**{**") or a `ProgID`.  
   
- `clsidStringA`  
- A multibyte string, using the ANSI code page, that holds either a **CLSID** (starting with "**{**") or a **ProgID**.  
+ *clsidStringA*  
+ A multibyte string, using the ANSI code page, that holds either a `CLSID` (starting with "**{**") or a `ProgID`.  
   
 ## Remarks  
- These member functions call `GetActiveObject` to retrieve a pointer to a running object that has been registered with OLE and then queries for this smart pointer's interface type. The resulting pointer is then encapsulated within this `_com_ptr_t` object. **Release** is called to decrement the reference count for the previously encapsulated pointer. This routine returns the `HRESULT` to indicate success or failure.  
+ These member functions call `GetActiveObject` to retrieve a pointer to a running object that has been registered with OLE and then queries for this smart pointer's interface type. The resulting pointer is then encapsulated within this `_com_ptr_t` object. `Release` is called to decrement the reference count for the previously encapsulated pointer. This routine returns the HRESULT to indicate success or failure.  
   
--   **GetActiveObject(**  `rclsid`  **)** Attaches to an existing instance of an object given a **CLSID**.  
+-   **GetActiveObject(**  `rclsid`  **)** Attaches to an existing instance of an object given a `CLSID`.  
   
--   **GetActiveObject(**  `clsidString`  **)** Attaches to an existing instance of an object given a Unicode string that holds either a **CLSID** (starting with "**{**") or a **ProgID**.  
+-   **GetActiveObject(**  `clsidString`  **)** Attaches to an existing instance of an object given a Unicode string that holds either a `CLSID` (starting with "**{**") or a `ProgID`.  
   
--   **GetActiveObject(**  `clsidStringA`  **)** Attaches to an existing instance of an object given a multibyte character string that holds either a **CLSID** (starting with "**{**") or a **ProgID**. Calls [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), which assumes that the string is in the ANSI code page rather than an OEM code page.  
+-   **GetActiveObject(**  `clsidStringA`  **)** Attaches to an existing instance of an object given a multibyte character string that holds either a `CLSID` (starting with "**{**") or a `ProgID`. Calls [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), which assumes that the string is in the ANSI code page rather than an OEM code page.  
   
  **END Microsoft Specific**  
   

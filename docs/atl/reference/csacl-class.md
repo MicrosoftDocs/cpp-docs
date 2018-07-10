@@ -39,7 +39,7 @@ class CSacl : public CAcl
 |----------|-----------------|  
 |[CSacl::AddAuditAce](#addauditace)|Adds an audit access-control entry (ACE) to the `CSacl` object.|  
 |[CSacl::GetAceCount](#getacecount)|Returns the number of access-control entries (ACEs) in the `CSacl` object.|  
-|[CSacl::RemoveAce](#removeace)|Removes a specific ACE (access-control entry) from the **CSacl** object.|  
+|[CSacl::RemoveAce](#removeace)|Removes a specific ACE (access-control entry) from the `CSacl` object.|  
 |[CSacl::RemoveAllAces](#removeallaces)|Removes all of the ACEs contained in the `CSacl` object.|  
   
 ### Public Operators  
@@ -53,7 +53,7 @@ class CSacl : public CAcl
   
  To set or retrieve the SACL in an object's security descriptor, the SE_SECURITY_NAME privilege must be enabled in the access token of the requesting thread. The administrators group has this privilege granted by default, and it can be granted to other users or groups. Having the privilege granted is not all that is required: before the operation defined by the privilege can be performed, the privilege must be enabled in the security access token in order to take effect. The model allows privileges to be enabled only for specific system operations, and then disabled when they are no longer needed. See [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl) for examples of enabling SE_SECURITY_NAME.  
   
- Use the class methods provided to add, remove, create, and delete ACEs from the **SACL** object. See also [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl).  
+ Use the class methods provided to add, remove, create, and delete ACEs from the `SACL` object. See also [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl).  
   
  For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
@@ -87,34 +87,34 @@ bool AddAuditAce(
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  The [CSid](../../atl/reference/csid-class.md) object.  
   
- `AccessMask`  
+ *AccessMask*  
  Specifies the mask of access rights to be audited for the specified `CSid` object.  
   
- `bSuccess`  
+ *bSuccess*  
  Specifies whether allowed access attempts are to be audited. Set this flag to true to enable auditing; otherwise, set it to false.  
   
  *bFailure*  
  Specifies whether denied access attempts are to be audited. Set this flag to true to enable auditing; otherwise, set it to false.  
   
- `AceFlags`  
+ *AceFlags*  
  A set of bit flags that control ACE inheritance.  
   
- `pObjectType`  
+ *pObjectType*  
  The object type.  
   
- `pInheritedObjectType`  
+ *pInheritedObjectType*  
  The inherited object type.  
   
 ### Return Value  
- Returns **true** if the ACE is added to the `CSacl` object, **false** on failure.  
+ Returns TRUE if the ACE is added to the `CSacl` object, FALSE on failure.  
   
 ### Remarks  
  A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.  
   
- See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
+ See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the *AceFlags* parameter.  
   
 ##  <a name="csacl"></a>  CSacl::CSacl  
  The constructor.  
@@ -125,11 +125,11 @@ CSacl(const ACL& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
- An existing **ACL** (access-control list) structure.  
+ *rhs*  
+ An existing `ACL` (access-control list) structure.  
   
 ### Remarks  
- The `CSacl` object can be optionally created using an existing **ACL** structure. Ensure that this parameter is a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds, if a DACL is supplied an assertion will occur. In release builds any entries from a DACL are ignored.  
+ The `CSacl` object can be optionally created using an existing `ACL` structure. Ensure that this parameter is a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds, if a DACL is supplied an assertion will occur. In release builds any entries from a DACL are ignored.  
   
 ##  <a name="dtor"></a>  CSacl::~CSacl  
  The destructor.  
@@ -159,21 +159,21 @@ CSacl& operator=(const ACL& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
- The **ACL** (access-control list) to assign to the existing object.  
+ *rhs*  
+ The `ACL` (access-control list) to assign to the existing object.  
   
 ### Return Value  
- Returns a reference to the updated `CSacl` object. Ensure that the **ACL** parameter is actually a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds an assertion will occur, and in release builds the **ACL** parameter will be ignored.  
+ Returns a reference to the updated `CSacl` object. Ensure that the `ACL` parameter is actually a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds an assertion will occur, and in release builds the `ACL` parameter will be ignored.  
   
 ##  <a name="removeace"></a>  CSacl::RemoveAce  
- Removes a specific ACE (access-control entry) from the **CSacl** object.  
+ Removes a specific ACE (access-control entry) from the `CSacl` object.  
   
 ```
 void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index to the ACE entry to remove.  
   
 ### Remarks  
@@ -187,7 +187,7 @@ void RemoveAllAces() throw();
 ```  
   
 ### Remarks  
- Removes every **ACE** structure (if any) in the `CSacl` object.  
+ Removes every `ACE` structure (if any) in the `CSacl` object.  
   
 ## See Also  
  [CAcl Class](../../atl/reference/cacl-class.md)   

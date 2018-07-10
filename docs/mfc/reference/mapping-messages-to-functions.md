@@ -31,7 +31,7 @@ The Properties window enables you to bind message handlers (member functions of 
   
      If your project has a handler for a message, then the name of the handler appears in the right column next to the message.  
   
-3.  If the message has no handler, then click the cell in the right column in the Properties window to display the suggested name of the handler as \<add>*HandlerName*. (For example, the `WM_TIMER` message handler suggests \<add>`OnTimer`).  
+3.  If the message has no handler, then click the cell in the right column in the Properties window to display the suggested name of the handler as \<add>*HandlerName*. (For example, the WM_TIMER message handler suggests \<add>`OnTimer`).  
   
 4.  Click the suggested name to add stub code for the function.  
   

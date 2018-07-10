@@ -20,7 +20,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 1.  Open Notepad or any plain text editor.  
   
-2.  From the **File** menu, choose `New`.  
+2.  From the **File** menu, choose **New**.  
   
 3.  Type the following lines:  
   
@@ -34,7 +34,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 4.  From the **File** menu, choose **Save**, and save the file as c:\webpages\First.htm. Leave the file open in the editor.  
   
-5.  Switch to your browser, and from the **File** menu, choose **Open**, or type `file://C:/webpages/first.htm` in the browser's URL edit box. You should see a blank page with the window caption "Top HTML Tags."  
+5.  Switch to your browser, and from the **File** menu, choose **Open**, or type *file://C:/webpages/first.htm* in the browser's URL edit box. You should see a blank page with the window caption "Top HTML Tags."  
   
      Notice the tags are paired and are included in angle brackets. Tags are not case-sensitive, but capitalization is often used to make tags stand out.  
   

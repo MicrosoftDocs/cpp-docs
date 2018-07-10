@@ -26,7 +26,7 @@ const DHtmlEventMapEntry *pEventMap;
 ```  
   
 #### Parameters  
- `szUrl`  
+ *szUrl*  
  The URL.  
   
  *pEventMap*  

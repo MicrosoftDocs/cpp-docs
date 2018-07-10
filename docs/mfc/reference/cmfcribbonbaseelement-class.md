@@ -186,7 +186,7 @@ virtual void AddToKeyList(
 ```  
   
 ### Parameters  
- [in] `arElems`  
+ [in] *arElems*  
  Reference to a [CArray](../../mfc/reference/carray-class.md) of keytips.  
   
 ### Remarks  
@@ -202,10 +202,10 @@ virtual int AddToListBox(
 ```  
   
 ### Parameters  
- [in] `pWndListBox`  
+ [in] *pWndListBox*  
  Pointer to a commands list box.  
   
- [in] `bDeep`  
+ [in] *bDeep*  
  This parameter is not used.  
   
 ### Return Value  
@@ -222,7 +222,7 @@ virtual BOOL CanBeAddedToQuickAccessToolBar() const;
 ```  
   
 ### Return Value  
- `TRUE` if the element can be added; otherwise, `FALSE`.  
+ TRUE if the element can be added; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -234,7 +234,7 @@ virtual BOOL CanBeCompacted() const;
 ```  
   
 ### Return Value  
- `TRUE` if the size of the ribbon element can be compact; otherwise, `FALSE`.  
+ TRUE if the size of the ribbon element can be compact; otherwise, FALSE.  
   
 ### Remarks  
  The size of a ribbon element can be compact, intermediate, or large.  
@@ -247,10 +247,10 @@ virtual BOOL CanBeStretched();
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method always returns `TRUE`. Override this method to indicate whether the height of the ribbon element can increase vertically to the height of a ribbon row.  
+ By default this method always returns TRUE. Override this method to indicate whether the height of the ribbon element can increase vertically to the height of a ribbon row.  
   
 ##  <a name="canbestretchedhorizontally"></a>  CMFCRibbonBaseElement::CanBeStretchedHorizontally  
  Indicates whether the width of the ribbon element can change.  
@@ -260,10 +260,10 @@ virtual BOOL CanBeStretchedHorizontally();
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to indicate whether the width of the ribbon element can change.  
+ By default this method always returns FALSE. Override this method to indicate whether the width of the ribbon element can change.  
   
 ##  <a name="cleanupsizes"></a>  CMFCRibbonBaseElement::CleanUpSizes  
  Cleans up the dimension settings for the ribbon element.  
@@ -292,7 +292,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  The source [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) object.  
   
 ### Remarks  
@@ -318,19 +318,19 @@ virtual void DrawImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `type`  
+ [in] *type*  
  An image type enumerated value. See the Remarks section for a list of possible values.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  The image rectangle.  
   
 ### Remarks  
  By default this method does nothing. Override this method in a derived class to draw the image for the ribbon element.  
   
- The following table lists possible values for the `type` parameter:  
+ The following table lists possible values for the *type* parameter:  
   
  `RibbonImageLarge`  
  Large 32x32 pixel image size.  
@@ -346,11 +346,11 @@ virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] `pElement`  
+ [in] *pElement*  
  Pointer to a ribbon element.  
   
 ### Return Value  
- A pointer to the ribbon element if `pElement` points to the current object; otherwise `NULL`.  
+ A pointer to the ribbon element if *pElement* points to the current object; otherwise NULL.  
   
 ### Remarks  
   
@@ -362,11 +362,11 @@ virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] `dwData`  
+ [in] *dwData*  
  The data associated with a ribbon element.  
   
 ### Return Value  
- A pointer to the ribbon element if it contains the specified data; otherwise `NULL`.  
+ A pointer to the ribbon element if it contains the specified data; otherwise NULL.  
   
 ### Remarks  
   
@@ -378,11 +378,11 @@ virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Command ID for a ribbon element.  
   
 ### Return Value  
- A pointer to the ribbon element if that element is identified by the specified command ID; otherwise `NULL`.  
+ A pointer to the ribbon element if that element is identified by the specified command ID; otherwise NULL.  
   
 ### Remarks  
   
@@ -394,11 +394,11 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### Parameters  
- [in] `pOriginal`  
+ [in] *pOriginal*  
  Pointer to a ribbon element.  
   
 ### Return Value  
- A pointer to the ribbon element if its original ribbon element matches the specified ribbon element; otherwise `NULL`.  
+ A pointer to the ribbon element if its original ribbon element matches the specified ribbon element; otherwise NULL.  
   
 ### Remarks  
  Ribbon elements that are copied to another container retain a pointer to the original ribbon element.  
@@ -411,7 +411,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Return Value  
@@ -448,7 +448,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 ```  
   
 ### Return Value  
- A pointer to the ribbon element if its pop-up menu is dropped down; otherwise `NULL`.  
+ A pointer to the ribbon element if its pop-up menu is dropped down; otherwise NULL.  
   
 ### Remarks  
   
@@ -461,7 +461,7 @@ virtual void GetElements(
 ```  
   
 ### Parameters  
- [in, out] `arElements`  
+ [in, out] *arElements*  
  An array of ribbon elements.  
   
 ### Remarks  
@@ -476,10 +476,10 @@ virtual void GetElementsByID(
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Command ID of a ribbon element.  
   
- [in] `arElements`  
+ [in] *arElements*  
  An array of ribbon elements.  
   
 ### Remarks  
@@ -492,7 +492,7 @@ virtual CMFCRibbonBaseElement* GetHighlighted();
 ```  
   
 ### Return Value  
- A pointer to the ribbon element if it is highlighted; otherwise `NULL`.  
+ A pointer to the ribbon element if it is highlighted; otherwise NULL.  
   
 ### Remarks  
   
@@ -524,7 +524,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Return Value  
@@ -550,11 +550,11 @@ virtual CRect GetKeyTipRect(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `bIsMenu`  
- `TRUE` if the ribbon element displays a pop-up menu; otherwise `FALSE`.  
+ [in] *bIsMenu*  
+ TRUE if the ribbon element displays a pop-up menu; otherwise FALSE.  
   
 ### Return Value  
  Always returns a rectangle with 0 values.  
@@ -570,7 +570,7 @@ virtual CSize GetKeyTipSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
 ### Return Value  
@@ -681,7 +681,7 @@ virtual CWnd* GetParentWnd() const;
 ```  
   
 ### Return Value  
- A pointer to the parent window for the ribbon element if the method was successful; otherwise, `NULL`.  
+ A pointer to the parent window for the ribbon element if the method was successful; otherwise, NULL.  
   
 ### Remarks  
  The parent window for a ribbon element is a [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md) or a [CMFCRibbonPanelMenuBar](http://msdn.microsoft.com/en-us/7bd4b986-8b7b-493e-9746-bd3161b78581).  
@@ -694,7 +694,7 @@ virtual CMFCRibbonBaseElement* GetPressed();
 ```  
   
 ### Return Value  
- A pointer to the ribbon element if the user currently presses it; otherwise, `NULL`.  
+ A pointer to the ribbon element if the user currently presses it; otherwise, NULL.  
   
 ### Remarks  
   
@@ -728,7 +728,7 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Return Value  
@@ -747,7 +747,7 @@ virtual CSize GetSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Return Value  
@@ -781,7 +781,7 @@ CMFCRibbonBar* GetTopLevelRibbonBar() const;
 ```  
   
 ### Return Value  
- A pointer to the top level ribbon bar for the ribbon element if the method was successful; otherwise, `NULL`.  
+ A pointer to the top level ribbon bar for the ribbon element if the method was successful; otherwise, NULL.  
   
 ### Remarks  
   
@@ -793,7 +793,7 @@ virtual BOOL HasCompactMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element has a compact mode. `FALSE` otherwise.  
+ TRUE if the ribbon element has a compact mode. FALSE otherwise.  
   
 ### Remarks  
   
@@ -808,7 +808,7 @@ virtual BOOL HasIntermediateMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element has an intermediate mode, `FALSE` otherwise. In the intermediate mode, an element displays a small image and text on the right of the image.  
+ TRUE if the ribbon element has an intermediate mode, FALSE otherwise. In the intermediate mode, an element displays a small image and text on the right of the image.  
   
 ### Remarks  
   
@@ -820,7 +820,7 @@ virtual BOOL HasLargeMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element has a large mode. `FALSE` otherwise.  
+ TRUE if the ribbon element has a large mode. FALSE otherwise.  
   
 ### Remarks  
  In the large mode, an element can take the full height of the parent panel.  
@@ -833,10 +833,10 @@ virtual BOOL HasMenu() const;
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method in a derived class to indicate whether the ribbon element has a menu.  
+ By default this method always returns FALSE. Override this method in a derived class to indicate whether the ribbon element has a menu.  
   
 ##  <a name="hittest"></a>  CMFCRibbonBaseElement::HitTest  
  Retrieves a pointer to the ribbon element if the specified point is located in it.  
@@ -846,11 +846,11 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  This parameter is not used.  
   
 ### Return Value  
- A pointer to the ribbon element if it exists; otherwise `FALSE`.  
+ A pointer to the ribbon element if it exists; otherwise FALSE.  
   
 ### Remarks  
  By default this method always returns a valid pointer to the ribbon element when it exists. Override this method to indicate if the point resides in the ribbon element.  
@@ -863,10 +863,10 @@ virtual BOOL IsAlignByColumn() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method always returns `TRUE`. Override this method in a derived class to indicate whether the derived ribbon element is aligned vertically with other ribbon elements.  
+ By default this method always returns TRUE. Override this method in a derived class to indicate whether the derived ribbon element is aligned vertically with other ribbon elements.  
   
 ##  <a name="isalwayslargeimage"></a>  CMFCRibbonBaseElement::IsAlwaysLargeImage  
  Indicates whether the ribbon element image size is always large.  
@@ -876,7 +876,7 @@ virtual BOOL IsAlwaysLargeImage() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element image size is always large; otherwise `FALSE`.  
+ TRUE if the ribbon element image size is always large; otherwise FALSE.  
   
 ### Remarks  
  Large image size is 32 x 32 pixels.  
@@ -889,14 +889,14 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
 ```  
   
 ### Parameters  
- [in] `nDelay`  
+ [in] *nDelay*  
  This parameter is not used.  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to indicate whether the ribbon element is in auto repeat mode.  
+ By default this method always returns FALSE. Override this method to indicate whether the ribbon element is in auto repeat mode.  
   
  In auto repeat mode, the ribbon element responds at a set interval, measured in milliseconds, to sustained user input.  
   
@@ -908,7 +908,7 @@ virtual BOOL IsChecked() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is checked; otherwise `FALSE`.  
+ TRUE if the ribbon element is checked; otherwise FALSE.  
   
 ##  <a name="iscompactmode"></a>  CMFCRibbonBaseElement::IsCompactMode  
  Specifies whether the ribbon element is in a compact mode.  
@@ -918,7 +918,7 @@ BOOL IsCompactMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is in a compact mode; otherwise `FALSE`.  
+ TRUE if the ribbon element is in a compact mode; otherwise FALSE.  
   
 ##  <a name="isdefaultmenulook"></a>  CMFCRibbonBaseElement::IsDefaultMenuLook  
  Indicates whether the ribbon element is set to appear as a pop-up command.  
@@ -928,7 +928,7 @@ BOOL IsDefaultMenuLook() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is set to appear as a pop-up command; otherwise `FALSE`.  
+ TRUE if the ribbon element is set to appear as a pop-up command; otherwise FALSE.  
   
 ### Remarks  
   
@@ -940,7 +940,7 @@ virtual BOOL IsDisabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is disabled; otherwise `FALSE`.  
+ TRUE if the ribbon element is disabled; otherwise FALSE.  
   
 ##  <a name="isdroppeddown"></a>  CMFCRibbonBaseElement::IsDroppedDown  
  Specifies whether the ribbon element displays a pop-up menu and is dropped down.  
@@ -950,7 +950,7 @@ virtual BOOL IsDroppedDown() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is dropped down and displays a pop-up menu; otherwise `FALSE`.  
+ TRUE if the ribbon element is dropped down and displays a pop-up menu; otherwise FALSE.  
   
 ##  <a name="isfocused"></a>  CMFCRibbonBaseElement::IsFocused  
  Specifies whether the ribbon element has the focus.  
@@ -960,7 +960,7 @@ virtual BOOL IsFocused() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element has the focus; otherwise `FALSE`.  
+ TRUE if the ribbon element has the focus; otherwise FALSE.  
   
 ##  <a name="isgalleryicon"></a>  CMFCRibbonBaseElement::IsGalleryIcon  
  Indicates whether the ribbon element is contained in a ribbon gallery.  
@@ -970,10 +970,10 @@ virtual BOOL IsGalleryIcon() const;
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method in a derived class to indicate whether the ribbon element is contained in a ribbon gallery.  
+ By default this method always returns FALSE. Override this method in a derived class to indicate whether the ribbon element is contained in a ribbon gallery.  
   
 ##  <a name="ishighlighted"></a>  CMFCRibbonBaseElement::IsHighlighted  
  Specifies whether ribbon element is highlighted.  
@@ -983,7 +983,7 @@ virtual BOOL IsHighlighted() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is highlighted; otherwise `FALSE`.  
+ TRUE if the ribbon element is highlighted; otherwise FALSE.  
   
 ### Remarks  
   
@@ -995,7 +995,7 @@ BOOL IsIntermediateMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the image for the ribbon element is intermediate size; otherwise `FALSE`.  
+ TRUE if the image for the ribbon element is intermediate size; otherwise FALSE.  
   
 ### Remarks  
  Intermediate image size is 16 x 16 pixels.  
@@ -1008,7 +1008,7 @@ BOOL IsLargeMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the image for the ribbon element is large size; otherwise `FALSE`.  
+ TRUE if the image for the ribbon element is large size; otherwise FALSE.  
   
 ### Remarks  
  Large image size is 32 x 32 pixels.  
@@ -1021,7 +1021,7 @@ BOOL IsMenuMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is contained in a menu; otherwise, `FALSE`.  
+ TRUE if the ribbon element is contained in a menu; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1033,7 +1033,7 @@ virtual BOOL IsPressed() const;
 ```  
   
 ### Return Value  
- `TRUE` if the user has clicked the ribbon element; otherwise `FALSE`.  
+ TRUE if the user has clicked the ribbon element; otherwise FALSE.  
   
 ##  <a name="isqatmode"></a>  CMFCRibbonBaseElement::IsQATMode  
  Indicates whether the ribbon element is contained in the quick access toolbar.  
@@ -1043,7 +1043,7 @@ BOOL IsQATMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is contained in the quick access toolbar; otherwise, `FALSE`.  
+ TRUE if the ribbon element is contained in the quick access toolbar; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1055,7 +1055,7 @@ virtual BOOL IsSeparator() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is a display separator; otherwise `FALSE`.  
+ TRUE if the ribbon element is a display separator; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1067,7 +1067,7 @@ BOOL IsShowGroupBorder() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is contained in a group that displays a common border; otherwise, `FALSE`.  
+ TRUE if the ribbon element is contained in a group that displays a common border; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1079,7 +1079,7 @@ virtual BOOL IsShowTooltipOnBottom() const;
 ```  
   
 ### Return Value  
- `TRUE` if the tooltip is displayed under the ribbon element; `FALSE` if the tooltip is displayed near the pointer.  
+ TRUE if the tooltip is displayed under the ribbon element; FALSE if the tooltip is displayed near the pointer.  
   
 ### Remarks  
   
@@ -1091,10 +1091,10 @@ virtual BOOL IsTabStop() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method always returns `TRUE`. Override this method to indicate whether the ribbon element can be selected with the keyboard.  
+ By default this method always returns TRUE. Override this method to indicate whether the ribbon element can be selected with the keyboard.  
   
 ##  <a name="istextalwaysonright"></a>  CMFCRibbonBaseElement::IsTextAlwaysOnRight  
  Indicates whether the text for the ribbon element is displayed on the right.  
@@ -1104,7 +1104,7 @@ BOOL IsTextAlwaysOnRight() const;
 ```  
   
 ### Return Value  
- `TRUE` if the text for the ribbon element is displayed on the right; otherwise, `FALSE`.  
+ TRUE if the text for the ribbon element is displayed on the right; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1116,7 +1116,7 @@ BOOL IsVisible() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is currently displayed; otherwise, `FALSE`.  
+ TRUE if the ribbon element is currently displayed; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1128,10 +1128,10 @@ virtual BOOL IsWholeRowHeight() const;
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to indicate whether the display height of the ribbon element is the same as the display height of the ribbon panel that contains it.  
+ By default this method always returns FALSE. Override this method to indicate whether the display height of the ribbon element is the same as the display height of the ribbon panel that contains it.  
   
 ##  <a name="notifycommand"></a>  CMFCRibbonBaseElement::NotifyCommand  
  Sends a command notification to the parent window of the ribbon element.  
@@ -1141,11 +1141,11 @@ BOOL NotifyCommand(BOOL bWithDelay = FALSE);
 ```  
   
 ### Parameters  
- [in] `bWithDelay`  
- `TRUE` to add the command notification to the message queue of the parent window; `FALSE` to send the message immediately to the parent window.  
+ [in] *bWithDelay*  
+ TRUE to add the command notification to the message queue of the parent window; FALSE to send the message immediately to the parent window.  
   
 ### Return Value  
- `TRUE` if the message was sent; otherwise, `FALSE`.  
+ TRUE if the message was sent; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1157,7 +1157,7 @@ virtual void NotifyHighlightListItem(int nIndex);
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The index of the ribbon element in the list.  
   
 ### Remarks  
@@ -1170,11 +1170,11 @@ virtual BOOL OnAddToQAToolbar(CMFCRibbonQuickAccessToolBar& qat);
 ```  
   
 ### Parameters  
- [in] `qat`  
+ [in] *qat*  
  The quick access toolbar.  
   
 ### Return Value  
- Always returns `TRUE` indicating the ribbon element was added to the quick access toolbar.  
+ Always returns TRUE indicating the ribbon element was added to the quick access toolbar.  
   
 ### Remarks  
   
@@ -1186,7 +1186,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1200,10 +1200,10 @@ virtual BOOL OnAutoRepeat();
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always return `FALSE`. Override this method to process sustained user input.  
+ By default this method always return FALSE. Override this method to process sustained user input.  
   
 ##  <a name="oncalctextsize"></a>  CMFCRibbonBaseElement::OnCalcTextSize  
  Calculates the size of the text for the ribbon element.  
@@ -1213,7 +1213,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1228,10 +1228,10 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 ```  
   
 ### Parameters  
- [in] `pPanelMenuBar`  
+ [in] *pPanelMenuBar*  
  This parameter is not used.  
   
- [in] `pHot`  
+ [in] *pHot*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1245,7 +1245,7 @@ virtual void OnDraw(CDC* pDC) = 0;
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -1262,14 +1262,14 @@ virtual void OnDrawKeyTip(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  Boundary rectangle for the keytip.  
   
- [in] `bIsMenu`  
- `TRUE` if the keytip is for a pop-up menu button; otherwise, `FALSE`.  
+ [in] *bIsMenu*  
+ TRUE if the keytip is for a pop-up menu button; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1283,14 +1283,14 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  Menu image rectangle.  
   
 ### Return Value  
- Always returns `TRUE` to indicate the image was drawn.  
+ Always returns TRUE to indicate the image was drawn.  
   
 ### Remarks  
   
@@ -1308,22 +1308,22 @@ virtual void OnDrawOnList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the ribbon element.  
   
- [in] `strText`  
+ [in] *strText*  
  The display text.  
   
- [in] `nTextOffset`  
+ [in] *nTextOffset*  
  Distance, in pixels, from the left side of the list box to the display text.  
   
- [in] `rect`  
+ [in] *rect*  
  The display rectangle for the ribbon element.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  This parameter is not used.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1337,11 +1337,11 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### Parameters  
- [in] `bIsMenuKey`  
- `TRUE` if the keytip displays a pop-up menu; otherwise, `FALSE`.  
+ [in] *bIsMenuKey*  
+ TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
   
 ### Return Value  
- `TRUE` if the event was handled; otherwise `FALSE`.  
+ TRUE if the event was handled; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1353,14 +1353,14 @@ virtual BOOL OnMenuKey(UINT nUpperChar);
 ```  
   
 ### Parameters  
- [in] `nUpperChar`  
+ [in] *nUpperChar*  
  This parameter is not used.  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to respond when a user presses a menu keytip on the main panel.  
+ By default this method always returns FALSE. Override this method to respond when a user presses a menu keytip on the main panel.  
   
 ##  <a name="onprocesskey"></a>  CMFCRibbonBaseElement::OnProcessKey  
  Called by the framework when the user presses a shortcut key.  
@@ -1370,11 +1370,11 @@ virtual BOOL OnProcessKey(UINT nChar);
 ```  
   
 ### Parameters  
- [in] `nChar`  
+ [in] *nChar*  
  This parameter is not used.  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
  Override this method if you want the ribbon element to process a shortcut key.  
@@ -1387,7 +1387,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] `bIsRTL`  
+ [in] *bIsRTL*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1411,7 +1411,7 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
+ [in] *bShow*  
  This parameter is not used.  
   
 ### Remarks  
@@ -1435,7 +1435,7 @@ void PostMenuCommand(UINT uiCmdId);
 ```  
   
 ### Parameters  
- [in] `uiCmdId`  
+ [in] *uiCmdId*  
  The parameter is not used.  
   
 ### Remarks  
@@ -1449,7 +1449,7 @@ virtual void Redraw();
 ```  
   
 ### Remarks  
- This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the `RDW_INVALIDATE`, `RDW_ERASE`, and `RDW_UPDATENOW` flags set.  
+ This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData  
  Sets the accessibility data for the ribbon element.  
@@ -1461,17 +1461,17 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  The parent window for the ribbon element.  
   
- `data`  
+ *data*  
  The accessibility data for the ribbon element.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method sets the accessibility data for the ribbon element and always returns `TRUE`. Override this method to set the accessibility data and return a value that indicates success or failure.  
+ By default this method sets the accessibility data for the ribbon element and always returns TRUE. Override this method to set the accessibility data and return a value that indicates success or failure.  
   
 ##  <a name="setcompactmode"></a>  CMFCRibbonBaseElement::SetCompactMode  
  Sets the display size for the ribbon element.  
@@ -1481,18 +1481,18 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 ```  
   
 ### Parameters  
- [in] `bCompactMode`  
- `TRUE` to reduce the display size of the ribbon element; `FALSE` to increase the display size of the ribbon element.  
+ [in] *bCompactMode*  
+ TRUE to reduce the display size of the ribbon element; FALSE to increase the display size of the ribbon element.  
   
 ### Remarks  
  The following table summarizes the logic for this method.  
   
-|`bCompactMode`|Current ribbon element size|New ribbon element size|  
+|*bCompactMode*|Current ribbon element size|New ribbon element size|  
 |--------------------|---------------------------------|-----------------------------|  
-|`TRUE`|Compact|No change.|  
-|`TRUE`|Intermediate|Compact if it is possible.|  
-|`TRUE`|Large|Intermediate if it is possible.|  
-|`FALSE`|Compact|Intermediate if it is possible; otherwise large.|  
+|TRUE|Compact|No change.|  
+|TRUE|Intermediate|Compact if it is possible.|  
+|TRUE|Large|Intermediate if it is possible.|  
+|FALSE|Compact|Intermediate if it is possible; otherwise large.|  
   
 ##  <a name="setdata"></a>  CMFCRibbonBaseElement::SetData  
  Associates a data item with the ribbon element.  
@@ -1502,7 +1502,7 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] `dwData`  
+ [in] *dwData*  
  The data value.  
   
 ##  <a name="setdefaultmenulook"></a>  CMFCRibbonBaseElement::SetDefaultMenuLook  
@@ -1513,8 +1513,8 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 ```  
   
 ### Parameters  
- [in] `bIsDefaultMenuLook`  
- `TRUE` to set the ribbon element to appear as a pop-up command; otherwise `FALSE`.  
+ [in] *bIsDefaultMenuLook*  
+ TRUE to set the ribbon element to appear as a pop-up command; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1526,7 +1526,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
  The description for the ribbon element.  
   
 ### Remarks  
@@ -1540,7 +1540,7 @@ virtual void SetID(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The command ID.  
   
 ##  <a name="setinitialmode"></a>  CMFCRibbonBaseElement::SetInitialMode  
@@ -1551,8 +1551,8 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 ```  
   
 ### Parameters  
- [in] `bOneRow`  
- `TRUE` to limit the display size for the ribbon element to compact or intermediate; otherwise, `FALSE`.  
+ [in] *bOneRow*  
+ TRUE to limit the display size for the ribbon element to compact or intermediate; otherwise, FALSE.  
   
 ### Remarks  
  The display size of ribbon elements can be compact, intermediate, or large.  
@@ -1567,10 +1567,10 @@ virtual void SetKeys(
 ```  
   
 ### Parameters  
- [in] `lpszKeys`  
+ [in] *lpszKeys*  
  The keytip for the ribbon element.  
   
- [in] `lpszMenuKeys`  
+ [in] *lpszMenuKeys*  
  The keytip for the pop-up menu of the ribbon element.  
   
 ##  <a name="setoriginal"></a>  CMFCRibbonBaseElement::SetOriginal  
@@ -1581,7 +1581,7 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### Parameters  
- [in] `pOriginal`  
+ [in] *pOriginal*  
  Pointer to a ribbon element.  
   
 ### Remarks  
@@ -1595,7 +1595,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  Pointer to a ribbon category.  
   
 ### Remarks  
@@ -1609,7 +1609,7 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 ```  
   
 ### Parameters  
- [in] `pMenuBar`  
+ [in] *pMenuBar*  
  The parent menu.  
   
 ### Remarks  
@@ -1622,7 +1622,7 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 ```  
   
 ### Parameters  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  Pointer to the parent ribbon bar.  
   
 ### Remarks  
@@ -1635,7 +1635,7 @@ void SetRect(CRect rect);
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
  The dimensions of the rectangle.  
   
 ### Remarks  
@@ -1648,11 +1648,11 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
  The text and keytip for the ribbon element.  
   
 ### Remarks  
- To set the keytip for the ribbon element, append the newline escape sequence followed by the keytip characters to `lpszText`.  
+ To set the keytip for the ribbon element, append the newline escape sequence followed by the keytip characters to *lpszText*.  
   
 ### Example  
   
@@ -1673,8 +1673,8 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- `TRUE` to display the text on the right; otherwise `FALSE`.  
+ [in] *bSet*  
+ TRUE to display the text on the right; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1686,7 +1686,7 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
  The tooltip text.  
   
 ##  <a name="setvisible"></a>  CMFCRibbonBaseElement::SetVisible  
@@ -1697,8 +1697,8 @@ void SetVisible(BOOL bIsVisible);
 ```  
   
 ### Parameters  
- [in] `bIsVisible`  
- `TRUE` to display the ribbon element; `FALSE` to hide the ribbon element.  
+ [in] *bIsVisible*  
+ TRUE to display the ribbon element; FALSE to hide the ribbon element.  
   
 ### Remarks  
   
@@ -1722,14 +1722,14 @@ virtual BOOL StretchToWholeRow(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  This parameter is not used.  
   
- [in] `nHeight`  
+ [in] *nHeight*  
  The height of the row.  
   
 ### Return Value  
- `TRUE` if the display height was set; otherwise, `FALSE`.  
+ TRUE if the display height was set; otherwise, FALSE.  
   
 ### Remarks  
  Override this method to change the display height of the ribbon element to the specified row height.  
@@ -1751,7 +1751,7 @@ virtual BOOL HasFocus() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon element is focused; otherwise `FALSE`.  
+ TRUE if the ribbon element is focused; otherwise FALSE.  
   
 ### Remarks  
   

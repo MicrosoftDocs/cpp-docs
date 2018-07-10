@@ -88,10 +88,10 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pBar`|The base pane that the framework tests.|  
+|[in] *pBar*|The base pane that the framework tests.|  
   
 ### Return Value  
- `TRUE` if `pBar` is derived from `CMFCAutoHideBar`; `FALSE` otherwise.  
+ TRUE if *pBar* is derived from `CMFCAutoHideBar`; FALSE otherwise.  
   
 ### Remarks  
  If a base pane object is derived from `CMFCAutoHideBar`, it can contain a `CAutoHideDockSite`.  
@@ -111,14 +111,14 @@ virtual void DockPane(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWnd`|The pane that the framework docks.|  
-|[in] `dockMethod`|Docking options for the pane.|  
-|[in] `lpRect`|A rectangle that specifies the boundaries for the docked pane.|  
+|[in] *pWnd*|The pane that the framework docks.|  
+|[in] *dockMethod*|Docking options for the pane.|  
+|[in] *lpRect*|A rectangle that specifies the boundaries for the docked pane.|  
   
 ### Remarks  
- The default implementation does not use the parameter `dockMethod`, which is provided for future use.  
+ The default implementation does not use the parameter *dockMethod*, which is provided for future use.  
   
- If `lpRect` is `NULL`, the framework puts the pane in the default location on the dock site. If the dock site is horizontal, the default location is at the far left of the dock site. Otherwise, the default location is at the top of the dock site.  
+ If *lpRect* is NULL, the framework puts the pane in the default location on the dock site. If the dock site is horizontal, the default location is at the far left of the dock site. Otherwise, the default location is at the top of the dock site.  
   
 ##  <a name="getalignrect"></a>  CAutoHideDockSite::GetAlignRect  
  Retrieves the size of the dock site in screen coordinates.  
@@ -132,7 +132,7 @@ void GetAlignRect(CRect& rect) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `rect`|A reference to a rectangle. The method stores the size of the dock site in this rectangle.|  
+|[in] *rect*|A reference to a rectangle. The method stores the size of the dock site in this rectangle.|  
   
 ### Remarks  
  The rectangle is adjusted for the offset margins so that they are not included.  
@@ -155,7 +155,7 @@ void SetOffsetLeft(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
  The new offset.  
   
 ### Remarks  
@@ -169,7 +169,7 @@ void SetOffsetRight(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
  The new offset.  
   
 ### Remarks  
@@ -187,10 +187,10 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `rectNewClientArea`|A reserved value.|  
+|[in] *rectNewClientArea*|A reserved value.|  
   
 ### Remarks  
- The default implementation does not use `rectNewClientArea`. It redraws the panes with the global toolbar margins and button spacing.  
+ The default implementation does not use *rectNewClientArea*. It redraws the panes with the global toolbar margins and button spacing.  
   
 ##  <a name="unsetautohidemode"></a>  CAutoHideDockSite::UnSetAutoHideMode  
  Calls [CMFCAutoHideBar::UnSetAutoHideMode](../../mfc/reference/cmfcautohidebar-class.md#unsetautohidemode) for objects on the dock site.  
@@ -204,10 +204,10 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pAutoHideToolbar`|A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|  
+|[in] *pAutoHideToolbar*|A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|  
   
 ### Remarks  
- This method searches for the row that contains `pAutoHideToolbar`. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If `pAutoHideToolbar` is not found or it is `NULL`, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.  
+ This method searches for the row that contains *pAutoHideToolbar*. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If *pAutoHideToolbar* is not found or it is NULL, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

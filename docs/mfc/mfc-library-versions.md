@@ -73,7 +73,7 @@ The MFC ANSI/MBCS library versions support both single-byte character sets such 
 
 To set your project configuration to use single-byte, multibyte, or wide-character Unicode string and character support in the IDE, use the **Project Properties** dialog. In the **Configuration Properties** > **General** page, set the **Character Set** property to **Not Set** to use a single-byte character set. Set the property to **Use Multi-Byte Character Set** to use a multibyte character set, or to **Use Unicode Character Set** to use Unicode encoded as UTF-16.
 
-MFC projects use the preprocessor symbol **\_UNICODE** to indicate UTF-16 wide-character Unicode support, and **\_MBCS** to indicate MBCS support. These options are mutually exclusive in a project.
+MFC projects use the preprocessor symbol \_UNICODE to indicate UTF-16 wide-character Unicode support, and \_MBCS to indicate MBCS support. These options are mutually exclusive in a project.
 
 ## MFC static library naming conventions
 

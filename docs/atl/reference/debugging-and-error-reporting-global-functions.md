@@ -19,7 +19,7 @@ These functions provide useful debugging and trace facilities.
 |-|-|  
 |[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|Returns a `GetLastError` error code in the form of an HRESULT.|  
 |[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Converts a Win32 error code into an HRESULT.|  
-|[AtlReportError](debugging-and-error-reporting-global-functions.md#atlreporterror)|Sets up **IErrorInfo** to provide error details to a client.|  
+|[AtlReportError](debugging-and-error-reporting-global-functions.md#atlreporterror)|Sets up `IErrorInfo` to provide error details to a client.|  
 |[AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)|Throws a `CAtlException`.|  
 |[AtlThrowLastWin32](debugging-and-error-reporting-global-functions.md#atlthrowlastwin32)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
   
@@ -31,7 +31,7 @@ HRESULT AtlHresultFromLastError();
 ```  
   
 ### Remarks  
- `AtlHresultFromLastError` calls `GetLastError` to obtain the last error and returns the error after converting it to an HRESULT using the **HRESULT_FROM_WIN32** macro.  
+ `AtlHresultFromLastError` calls `GetLastError` to obtain the last error and returns the error after converting it to an HRESULT using the HRESULT_FROM_WIN32 macro.  
 
 ### Requirements  
  **Header:** atlcomcli.h  
@@ -48,10 +48,10 @@ AtlHresultFromWin32(DWORD error);
  The error value to convert.  
   
 ### Remarks  
- Converts a Win32 error code into an HRESULT, using the macro **HRESULT_FROM_WIN32**.  
+ Converts a Win32 error code into an HRESULT, using the macro HRESULT_FROM_WIN32.  
   
 > [!NOTE]
->  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
+>  Instead of using `HRESULT_FROM_WIN32(GetLastError())`, use the function [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
 
 ### Requirements  
  **Header:** atlcomcli.h  
@@ -106,35 +106,35 @@ HRESULT WINAPI AtlReportError(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  [in] The CLSID of the object reporting the error.  
   
- `lpszDesc`  
- [in] The string describing the error. The Unicode versions specify that `lpszDesc` is of type **LPCOLESTR**; the ANSI version specifies a type of `LPCSTR`.  
+ *lpszDesc*  
+ [in] The string describing the error. The Unicode versions specify that *lpszDesc* is of type LPCOLESTR; the ANSI version specifies a type of LPCSTR.  
   
- `iid`  
- [in] The IID of the interface defining the error or `GUID_NULL` if the error is defined by the operating system.  
+ *iid*  
+ [in] The IID of the interface defining the error or GUID_NULL if the error is defined by the operating system.  
   
- `hRes`  
- [in] The `HRESULT` you want returned to the caller.  
+ *hRes*  
+ [in] The HRESULT you want returned to the caller.  
   
- `nID`  
- [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if `nID` does not index a valid string. In release builds, the error description string will be set to "Unknown Error."  
+ *nID*  
+ [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if *nID* does not index a valid string. In release builds, the error description string will be set to "Unknown Error."  
   
- `dwHelpID`  
+ *dwHelpID*  
  [in] The help context identifier for the error.  
   
- `lpszHelpFile`  
+ *lpszHelpFile*  
  [in] The path and name of the help file describing the error.  
   
- `hInst`  
- [in] The handle to the resource. By default, this parameter is **__AtlBaseModuleModule::GetResourceInstance**, where **__AtlBaseModuleModule** is the global instance of [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) or a class derived from it.  
+ *hInst*  
+ [in] The handle to the resource. By default, this parameter is `__AtlBaseModuleModule::GetResourceInstance`, where `__AtlBaseModuleModule` is the global instance of [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) or a class derived from it.  
   
 ### Return Value  
- If the `hRes` parameter is nonzero, returns the value of `hRes`. If `hRes` is zero, then the first four versions of `AtlReportError` return `DISP_E_EXCEPTION`. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** `nID` **)**.  
+ If the *hRes* parameter is nonzero, returns the value of *hRes*. If *hRes* is zero, then the first four versions of `AtlReportError` return DISP_E_EXCEPTION. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** `nID` **)**.  
   
 ### Remarks  
- The string *lpszDesc* is used as the text description of the error. When the client receives the `hRes` you return from `AtlReportError`, the client can access the **IErrorInfo** structure for details about the error.  
+ The string *lpszDesc* is used as the text description of the error. When the client receives the *hRes* you return from `AtlReportError`, the client can access the `IErrorInfo` structure for details about the error.  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]  
@@ -146,28 +146,28 @@ HRESULT WINAPI AtlReportError(
  **Header:** atlcom.h  
     
 ##  <a name="atlthrow"></a>  AtlThrow  
- Call this function to signal an error based on a `HRESULT` status code.  
+ Call this function to signal an error based on a HRESULT status code.  
   
 ```
 __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 ```  
   
 ### Parameters  
- `hr`  
+ *hr*  
  Standard HRESULT value.  
   
 ### Remarks  
- This function is used by ATL and MFC code in the event of an error condition. It can also be called from your own code. The default implementation of this function depends on the definition of the symbol **_ATL_NO_EXCEPTIONS** and on the type of project, MFC or ATL.  
+ This function is used by ATL and MFC code in the event of an error condition. It can also be called from your own code. The default implementation of this function depends on the definition of the symbol _ATL_NO_EXCEPTIONS and on the type of project, MFC or ATL.  
   
  In all cases, this function traces the HRESULT to the debugger.  
   
  In Visual Studio 2015 Update 3 and later, this function is attributed __declspec(noreturn) to avoid spurious SAL warnings.  
   
- If **_ATL_NO_EXCEPTIONS** is not defined in an MFC project, this function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or a [COleException](../../mfc/reference/coleexception-class.md) based on the value of the HRESULT.  
+ If _ATL_NO_EXCEPTIONS is not defined in an MFC project, this function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or a [COleException](../../mfc/reference/coleexception-class.md) based on the value of the HRESULT.  
   
- If **_ATL_NO_EXCEPTIONS** is not defined in an ATL project, the function throws a [CAtlException](../../atl/reference/catlexception-class.md).  
+ If _ATL_NO_EXCEPTIONS is not defined in an ATL project, the function throws a [CAtlException](../../atl/reference/catlexception-class.md).  
   
- If **_ATL_NO_EXCEPTIONS** is defined, the function causes an assertion failure instead of throwing an exception.  
+ If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure instead of throwing an exception.  
   
  For ATL projects, it is possible to provide your own implementation of this function to be used by ATL in the event of a failure. To do this, define your own function with the same signature as `AtlThrow` and #define `AtlThrow` to be the name of your function. This must be done before including atlexcept.h (which means that it must be done prior to including any ATL headers since atlbase.h includes atlexcept.h). Attribute your function `__declspec(noreturn)` to avoid spurious SAL warnings.  
   
@@ -187,11 +187,11 @@ inline void AtlThrowLastWin32();
 ### Remarks  
  This function traces the result of `GetLastError` to the debugger.  
   
- If **_ATL_NO_EXCEPTIONS** is not defined in an MFC project, this function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or a [COleException](../../mfc/reference/coleexception-class.md) based on the value returned by `GetLastError`.  
+ If _ATL_NO_EXCEPTIONS is not defined in an MFC project, this function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or a [COleException](../../mfc/reference/coleexception-class.md) based on the value returned by `GetLastError`.  
   
- If **_ATL_NO_EXCEPTIONS** is not defined in an ATL project, the function throws a [CAtlException](../../atl/reference/catlexception-class.md).  
+ If _ATL_NO_EXCEPTIONS is not defined in an ATL project, the function throws a [CAtlException](../../atl/reference/catlexception-class.md).  
   
- If **_ATL_NO_EXCEPTIONS** is defined, the function causes an assertion failure instead of throwing an exception.  
+ If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure instead of throwing an exception.  
 
 ## Requirements  
  **Header:** atldef.h  

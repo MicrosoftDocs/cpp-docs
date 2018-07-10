@@ -69,7 +69,7 @@ CAtlFileMappingBase() throw();
 ```  
   
 ### Parameters  
- `orig`  
+ *orig*  
  The original file-mapping object to copy to create the new object.  
   
 ### Remarks  
@@ -96,11 +96,11 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 ```  
   
 ### Parameters  
- `orig`  
+ *orig*  
  The original file-mapping object to copy from.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ##  <a name="getdata"></a>  CAtlFileMappingBase::GetData  
  Call this method to get the data from a file-mapping object.  
@@ -148,23 +148,23 @@ HRESULT MapFile(
 ```  
   
 ### Parameters  
- `hFile`  
- Handle to the file from which to create a mapping object. `hFile` must be valid and cannot be set to INVALID_HANDLE_VALUE.  
+ *hFile*  
+ Handle to the file from which to create a mapping object. *hFile* must be valid and cannot be set to INVALID_HANDLE_VALUE.  
   
- `nMappingSize`  
+ *nMappingSize*  
  The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file identified by *hFile.*  
   
- `nOffset`  
+ *nOffset*  
  The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.  
   
- `dwMappingProtection`  
- The protection desired for the file view when the file is mapped. See `flProtect` in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the Windows SDK.  
+ *dwMappingProtection*  
+ The protection desired for the file view when the file is mapped. See *flProtect* in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the Windows SDK.  
   
- `dwViewDesiredAccess`  
- Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
+ *dwViewDesiredAccess*  
+ Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) and [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
@@ -186,29 +186,29 @@ HRESULT MapSharedMem(
 ```  
   
 ### Parameters  
- `nMappingSize`  
- The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file-mapping object identified by `szName.`  
+ *nMappingSize*  
+ The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file-mapping object identified by *szName*.  
   
- `szName`  
+ *szName*  
  The name of the mapping object.  
   
  *pbAlreadyExisted*  
  Points to a BOOL value that is set to TRUE if the mapping object already existed.  
   
- `lpsa`  
- The pointer to a **SECURITY_ATTRIBUTES** structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the Windows SDK.  
+ *lpsa*  
+ The pointer to a `SECURITY_ATTRIBUTES` structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the Windows SDK.  
   
- `dwMappingProtection`  
- The protection desired for the file view, when the file is mapped. See `flProtect` in **CreateFileMapping** in the Windows SDK.  
+ *dwMappingProtection*  
+ The protection desired for the file view, when the file is mapped. See *flProtect* in `CreateFileMapping` in the Windows SDK.  
   
- `dwViewDesiredAccess`  
- Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
+ *dwViewDesiredAccess*  
+ Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- **MapShareMem** allows an existing file-mapping object, created by [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537), to be shared between processes.  
+ `MapShareMem` allows an existing file-mapping object, created by [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537), to be shared between processes.  
   
 ##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping  
  Call this method to open a named file-mapping object for the specified file.  
@@ -222,20 +222,20 @@ HRESULT OpenMapping(
 ```  
   
 ### Parameters  
- `szName`  
- The name of the mapping object. If there is an open handle to a file-mapping object by this name and the security descriptor on the mapping object does not conflict with the `dwViewDesiredAccess` parameter, the open operation succeeds.  
+ *szName*  
+ The name of the mapping object. If there is an open handle to a file-mapping object by this name and the security descriptor on the mapping object does not conflict with the *dwViewDesiredAccess* parameter, the open operation succeeds.  
   
- `nMappingSize`  
- The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file-mapping object identified by `szName.`  
+ *nMappingSize*  
+ The mapping size. If 0, the maximum size of the file-mapping object is equal to the current size of the file-mapping object identified by *szName*.  
   
- `nOffset`  
+ *nOffset*  
  The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.  
   
- `dwViewDesiredAccess`  
- Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
+ *dwViewDesiredAccess*  
+ Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  In debug builds, an assertion error will occur if the input parameters are invalid.  
@@ -248,7 +248,7 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 ```  
   
 ### Parameters  
- `orig`  
+ *orig*  
  The current file-mapping object.  
   
 ### Return Value  
@@ -262,7 +262,7 @@ HRESULT Unmap() throw();
 ```  
   
 ### Return Value  
- Returns `S_OK` on success, or an error `HRESULT` on failure.  
+ Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
  See [UnmapViewOfFile](http://msdn.microsoft.com/library/windows/desktop/aa366882) in the Windows SDK for more details.  

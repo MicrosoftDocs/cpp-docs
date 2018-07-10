@@ -26,7 +26,7 @@ This article discusses procedures for localizing ActiveX control interfaces.
     > [!NOTE]
     >  This will not work correctly in some cases, if future instances have different locales.  
   
--   Use the **OnAmbientChanged** notification function to dynamically load the proper resources for the container's locale.  
+-   Use the `OnAmbientChanged` notification function to dynamically load the proper resources for the container's locale.  
   
     > [!NOTE]
     >  This will work for the control, but the run-time DLL will not dynamically update its own resources when the ambient LocaleID property changes. In addition, run-time DLLs for ActiveX controls use the thread locale to determine the locale for its resources.  
@@ -83,7 +83,7 @@ This article discusses procedures for localizing ActiveX control interfaces.
   
  [!code-cpp[NVC_MFC_AxLoc#4](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_4.cpp)]  
   
- Place the code sample above into a member function of the control, such as an override of [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#onsetclientsite). In addition, `m_hResDLL` should be a member variable of the control class.  
+ Place the code sample above into a member function of the control, such as an override of [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#onsetclientsite). In addition, *m_hResDLL* should be a member variable of the control class.  
   
  You can use similar logic for localizing a control's property page. To localize the property page, add code similar to the following sample to your property page's implementation file (in an override of [COlePropertyPage::OnSetPageSite](../mfc/reference/colepropertypage-class.md#onsetpagesite)):  
   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # final Specifier
-You can use the `final` keyword to designate virtual functions that cannot be overridden in a derived class. You can also use it to designate classes that cannot be inherited.  
+You can use the **final** keyword to designate virtual functions that cannot be overridden in a derived class. You can also use it to designate classes that cannot be inherited.  
   
 ## Syntax  
   
@@ -24,12 +24,12 @@ class class-name final base-classes
 ```  
   
 ## Remarks  
- `final` is context-sensitive and has special meaning only when it's used after a function declaration or class name; otherwise, it's not a reserved keyword.  
+ **final** is context-sensitive and has special meaning only when it's used after a function declaration or class name; otherwise, it's not a reserved keyword.  
   
- When `final` is used in class declarations, `base-classes` is an optional part of the declaration.  
+ When **final** is used in class declarations, `base-classes` is an optional part of the declaration.  
   
 ## Example  
- The following example uses the `final` keyword to specify that a virtual function cannot be overridden.  
+ The following example uses the **final** keyword to specify that a virtual function cannot be overridden.  
   
 ```cpp  
 class BaseClass  
@@ -46,7 +46,7 @@ class DerivedClass: public BaseClass
   
  For information about how to specify that member functions can be overridden, see [override Specifier](../cpp/override-specifier.md).  
   
- The next example uses the `final` keyword to specify that a class cannot be inherited.  
+ The next example uses the **final** keyword to specify that a class cannot be inherited.  
   
 ```cpp  
 class BaseClass final   

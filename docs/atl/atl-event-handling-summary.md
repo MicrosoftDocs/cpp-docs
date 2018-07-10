@@ -30,7 +30,7 @@ In general, handling COM events is a relatively simple process. There are three 
 |[IDispEventImpl](../atl/reference/idispeventimpl-class.md)|Dispinterface|No|Yes|  
 |[IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|Dispinterface|No|No|  
   
- \* When using ATL support classes, you are never required to implement the **IUnknown** or `IDispatch` methods manually.  
+ \* When using ATL support classes, you are never required to implement the `IUnknown` or `IDispatch` methods manually.  
   
 ## Advising and Unadvising the Event Source  
  There are three main ways of advising and unadvising an event source using ATL.  

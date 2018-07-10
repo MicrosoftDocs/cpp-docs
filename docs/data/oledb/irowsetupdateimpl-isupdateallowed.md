@@ -1,7 +1,7 @@
 ---
 title: "IRowsetUpdateImpl::IsUpdateAllowed | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/25/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
 f1_keywords: ["IRowsetUpdateImpl::IsUpdateAllowed", "IRowsetUpdateImpl.IsUpdateAllowed", "IsUpdateAllowed"]
@@ -18,9 +18,9 @@ Override this method to check for security, integrity, and so on before updates.
 ## Syntax  
   
 ```cpp
-HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] *//* status */,  
-   HROW /* [in] *//* hRowUpdate */,  
-   DBROWSTATUS* /* [out] *//* pRowStatus */);  
+HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,  
+   HROW /* [in] */ /* hRowUpdate */,  
+   DBROWSTATUS* /* [out] */ /* pRowStatus */);  
 ```  
   
 #### Parameters  

@@ -79,11 +79,11 @@ CMFCKeyMapDialog(
 ```  
   
 ### Parameters  
- [in] `pWndParentFrame`  
+ [in] *pWndParentFrame*  
  A pointer to the parent window of the `CMFCKeyMapDialog` object.  
   
- [in] `bEnablePrint`  
- `TRUE` if the list of accelerator keys can be printed; otherwise, `FALSE`. The default is `FALSE`.  
+ [in] *bEnablePrint*  
+ TRUE if the list of accelerator keys can be printed; otherwise, FALSE. The default is FALSE.  
   
 ### Remarks  
   
@@ -100,7 +100,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- A signed integer, such as `IDOK` or `IDCANCEL`, that is passed to the [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) method. The method, in turn, closes the dialog box. For more information, see [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal).  
+ A signed integer, such as IDOK or IDCANCEL, that is passed to the [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) method. The method, in turn, closes the dialog box. For more information, see [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal).  
   
 ### Remarks  
  The keyboard mapping dialog box enables you to select and assign accelerator keys to various categories of commands. In addition, you can copy the selected accelerator keys and their description to the clipboard.  
@@ -113,7 +113,7 @@ virtual CString FormatItem(int nItem) const;
 ```  
   
 ### Parameters  
- [in] `nItem`  
+ [in] *nItem*  
  The zero-based index of an item in the internal list of key mappings.  
   
 ### Return Value  
@@ -129,7 +129,7 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  A command ID.  
   
 ### Return Value  
@@ -147,10 +147,10 @@ virtual void OnInsertItem(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a toolbar button that is used to map a keyboard key combination to a command name and description. The key map item is stored in an internal list control.  
   
- [in] `nItem`  
+ [in] *nItem*  
  A zero-based index that specifies where to insert the new key map item in the internal list control.  
   
 ### Remarks  
@@ -166,13 +166,13 @@ virtual int OnPrintHeader(
 ```  
   
 ### Parameters  
- [in] `dc`  
+ [in] *dc*  
  The device context for the printer.  
   
- [in] `nPage`  
+ [in] *nPage*  
  The page number to print.  
   
- [in] `cx`  
+ [in] *cx*  
  The horizontal offset of the header, in pixels.  
   
 ### Return Value  
@@ -194,20 +194,20 @@ virtual int OnPrintItem(
 ```  
   
 ### Parameters  
- [in] `dc`  
+ [in] *dc*  
  The device context of the printer.  
   
- [in] `nItem`  
+ [in] *nItem*  
  The zero-based index of the item to print.  
   
- [in] `y`  
+ [in] *y*  
  The vertical offset between the top of the page and the position of the item.  
   
- [in] `cx`  
+ [in] *cx*  
  The horizontal offset between the left of the page and the position of the item.  
   
- [in] `bCalcHeight`  
- `TRUE` to calculate the best height for the print item; `FALSE` to truncate the print item so that it fits the default space.  
+ [in] *bCalcHeight*  
+ TRUE to calculate the best height for the print item; FALSE to truncate the print item so that it fits the default space.  
   
 ### Return Value  
  The height of the printed item.  

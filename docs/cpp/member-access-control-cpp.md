@@ -33,14 +33,14 @@ protected:      // Declare protected function for derived classes only.
   
 ``` 
   
- The default access is `private` in a class, and `public` in a struct or union. Access specifiers in a class can be used any number of times in any order. The allocation of storage for objects of class types is implementation dependent, but members are guaranteed to be assigned successively higher memory addresses between access specifiers.  
+ The default access is **private** in a class, and **public** in a struct or union. Access specifiers in a class can be used any number of times in any order. The allocation of storage for objects of class types is implementation dependent, but members are guaranteed to be assigned successively higher memory addresses between access specifiers.  
   
 ### Member-Access Control  
   
 |Type of Access|Meaning|  
 |--------------------|-------------|  
-|[private](../cpp/private-cpp.md)|Class members declared as `private` can be used only by member functions and friends (classes or functions) of the class.|  
-|[protected](../cpp/protected-cpp.md)|Class members declared as `protected` can be used by member functions and friends (classes or functions) of the class. Additionally, they can be used by classes derived from the class.|  
+|[private](../cpp/private-cpp.md)|Class members declared as **private** can be used only by member functions and friends (classes or functions) of the class.|  
+|[protected](../cpp/protected-cpp.md)|Class members declared as **protected** can be used by member functions and friends (classes or functions) of the class. Additionally, they can be used by classes derived from the class.|  
 |[public](../cpp/public-cpp.md)|Class members declared as **public** can be used by any function.|  
   
  Access control helps prevent you from using objects in ways they were not intended to be used. This protection is lost when explicit type conversions (casts) are performed.  
@@ -97,7 +97,7 @@ int main()
   
  In `DerivedClass2`, the functions `PublicFunc` and `ProtectedFunc` are considered private members because `BaseClass` is a private base class. Again, `PrivateFunc` is private to `BaseClass`, and it is inaccessible to any derived classes.  
   
- You can declare a derived class without a base-class access specifier. In such a case, the derivation is considered private if the derived class declaration uses the **class** keyword. The derivation is considered public if the derived class declaration uses the `struct` keyword. For example, the following code:  
+ You can declare a derived class without a base-class access specifier. In such a case, the derivation is considered private if the derived class declaration uses the **class** keyword. The derivation is considered public if the derived class declaration uses the **struct** keyword. For example, the following code:  
   
 ```cpp 
 class Derived : Base  
@@ -125,15 +125,15 @@ struct Derived : public Base
 ...  
 ```  
   
- Note that members declared as having private access are not accessible to functions or derived classes unless those functions or classes are declared using the `friend` declaration in the base class.  
+ Note that members declared as having private access are not accessible to functions or derived classes unless those functions or classes are declared using the **friend** declaration in the base class.  
   
  A **union** type cannot have a base class.  
   
 > [!NOTE]
->  When specifying a private base class, it is advisable to explicitly use the `private` keyword so users of the derived class understand the member access.  
+>  When specifying a private base class, it is advisable to explicitly use the **private** keyword so users of the derived class understand the member access.  
   
 ## Access control and static members  
- When you specify a base class as `private`, it affects only nonstatic members. Public static members are still accessible in the derived classes. However, accessing members of the base class using pointers, references, or objects can require a conversion, at which time access control is again applied. Consider the following example:  
+ When you specify a base class as **private**, it affects only nonstatic members. Public static members are still accessible in the derived classes. However, accessing members of the base class using pointers, references, or objects can require a conversion, at which time access control is again applied. Consider the following example:  
   
 ```cpp 
 // access_control.cpp  

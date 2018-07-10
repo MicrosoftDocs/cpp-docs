@@ -63,10 +63,10 @@ CMFCWindowsManagerDialog(
 ```  
   
 ### Parameters  
- [in] `pMDIFrame`  
+ [in] *pMDIFrame*  
  A pointer to the parent or owner window.  
   
- [in] `bHelpButton`  
+ [in] *bHelpButton*  
  A Boolean parameter that specifies whether the framework displays a **Help** button.  
   
 ### Remarks  

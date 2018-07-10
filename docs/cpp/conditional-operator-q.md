@@ -23,7 +23,7 @@ expression ? expression : expression
 ## Remarks  
  The conditional operator (**? :**) is a ternary operator (it takes three operands). The conditional operator works as follows:  
   
--   The first operand is implicitly converted to `bool`. It is evaluated and all side effects are completed before continuing.  
+-   The first operand is implicitly converted to **bool**. It is evaluated and all side effects are completed before continuing.  
   
 -   If the first operand evaluates to **true** (1), the second operand is evaluated.  
   

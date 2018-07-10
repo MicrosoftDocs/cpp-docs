@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Updating the Text of a Status-Bar Pane
 This article explains how to change the text that appears in an MFC status bar pane. A status bar — a window object of class [CStatusBar](../mfc/reference/cstatusbar-class.md) — contains several "panes." Each pane is a rectangular area of the status bar that you can use to display information. For example, many applications display the status of the CAPS LOCK, NUM LOCK, and other keys in the rightmost panes. Applications also often display informative text in the leftmost pane (pane 0), sometimes called the "message pane." For example, the default MFC status bar uses the message pane to display a string explaining the currently selected menu item or toolbar button. The figure in [Status Bars](../mfc/status-bar-implementation-in-mfc.md) shows a status bar from an Application Wizard-created MFC application.  
   
- By default, MFC does not enable a `CStatusBar` pane when it creates the pane. To activate a pane, you must use the `ON_UPDATE_COMMAND_UI` macro for each pane on the status bar and update the panes. Because panes do not send **WM_COMMAND** messages (they aren't like toolbar buttons), you must type the code manually.  
+ By default, MFC does not enable a `CStatusBar` pane when it creates the pane. To activate a pane, you must use the ON_UPDATE_COMMAND_UI macro for each pane on the status bar and update the panes. Because panes do not send WM_COMMAND messages (they aren't like toolbar buttons), you must type the code manually.  
   
  For example, suppose one pane has `ID_INDICATOR_PAGE` as its command identifier and that it contains the current page number in a document. The following procedure describes how to create a new pane in the status bar.  
   
@@ -28,16 +28,16 @@ This article explains how to change the text that appears in an MFC status bar p
   
      With Resource View open, double-click **String Table** in the window that lists resource types for your application. With the **String Table** editor open, choose **New String** from the **Insert** menu. In the String Properties window, select your pane's command ID (for example, `ID_INDICATOR_PAGE`) and type a default string value, such as "Page   ". Close the string editor. (You need a default string to avoid a compiler error.)  
   
-3.  Add the pane to the **indicators** array.  
+3.  Add the pane to the *indicators* array.  
   
-     In file MAINFRM.CPP, locate the **indicators** array. This array lists command IDs for all of the status bar's indicators, in order from left to right. At the appropriate point in the array, enter your pane's command ID, as shown here for `ID_INDICATOR_PAGE`:  
+     In file MAINFRM.CPP, locate the *indicators* array. This array lists command IDs for all of the status bar's indicators, in order from left to right. At the appropriate point in the array, enter your pane's command ID, as shown here for `ID_INDICATOR_PAGE`:  
   
      [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]  
   
- The recommended way to display text in a pane is to call the **SetText** member function of class `CCmdUI` in an update handler function for the pane. For example, you might want to set up an integer variable `m_nPage` that contains the current page number and use **SetText** to set the pane's text to a string version of that number.  
+ The recommended way to display text in a pane is to call the `SetText` member function of class `CCmdUI` in an update handler function for the pane. For example, you might want to set up an integer variable *m_nPage* that contains the current page number and use `SetText` to set the pane's text to a string version of that number.  
   
 > [!NOTE]
->  The **SetText** approach is recommended. It is possible to perform this task at a slightly lower level by calling the `CStatusBar` member function `SetPaneText`. Even so, you still need an update handler. Without such a handler for the pane, MFC automatically disables the pane, erasing its content.  
+>  The `SetText` approach is recommended. It is possible to perform this task at a slightly lower level by calling the `CStatusBar` member function `SetPaneText`. Even so, you still need an update handler. Without such a handler for the pane, MFC automatically disables the pane, erasing its content.  
   
  The following procedure shows how to use an update handler function to display text in a pane.  
   
@@ -55,11 +55,11 @@ This article explains how to change the text that appears in an MFC status bar p
   
      The last three lines of this handler are the code that displays your text.  
   
-3.  In the appropriate message map, add the `ON_UPDATE_COMMAND_UI` macro, as shown here for `ID_INDICATOR_PAGE` (in MAINFRM.CPP):  
+3.  In the appropriate message map, add the ON_UPDATE_COMMAND_UI macro, as shown here for `ID_INDICATOR_PAGE` (in MAINFRM.CPP):  
   
      [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]  
   
- Once you define the value of the `m_nPage` member variable (of class `CMainFrame`), this technique causes the page number to appear in the pane during idle processing in the same manner that the application updates other indicators. If `m_nPage` changes, the display changes during the next idle loop.  
+ Once you define the value of the *m_nPage* member variable (of class `CMainFrame`), this technique causes the page number to appear in the pane during idle processing in the same manner that the application updates other indicators. If *m_nPage* changes, the display changes during the next idle loop.  
   
 ### What do you want to know more about  
   

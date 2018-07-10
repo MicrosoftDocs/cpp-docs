@@ -66,7 +66,7 @@ class LunchQueue : virtual public Queue {};
 class LunchCashierQueue : public LunchQueue, public CashierQueue {};  
 ```  
   
- The `virtual` keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
+ The **virtual** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
   
  ![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "vc38XP3")  
 Simulated Lunch-Line Object with Virtual Base Classes  

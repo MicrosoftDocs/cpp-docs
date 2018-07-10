@@ -22,7 +22,7 @@ expression && expression
 ```  
   
 ## Remarks  
- The logical AND operator (**&&**) returns the boolean value **true** if both operands are **true** and returns **false** otherwise. The operands are implicitly converted to type `bool` prior to evaluation, and the result is of type `bool`. Logical AND has left-to-right associativity.  
+ The logical AND operator (**&&**) returns the boolean value TRUE if both operands are TRUE and returns FALSE otherwise. The operands are implicitly converted to type **bool** prior to evaluation, and the result is of type **bool**. Logical AND has left-to-right associativity.  
   
  The operands to the logical AND operator need not be of the same type, but they must be of integral or pointer type. The operands are commonly relational or equality expressions.  
   

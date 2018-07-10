@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Interface Elements
-This document describes interface elements that were introduced in [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] SP1, and also describes differences with the earlier version of the library.  
+This document describes interface elements that were introduced in Visual Studio 2008 SP1, and also describes differences with the earlier version of the library.  
   
  The following illustration shows an application that was built by using the new interface elements.  
   

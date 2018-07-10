@@ -25,7 +25,7 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
   
 2.  Click the **Visual C++ Projects** folder and select **ATL Project**.  
   
-3.  Type `Polygon` as the project name.  
+3.  Type *Polygon* as the project name.  
   
      The location for the source code will usually default to My Documents\Visual Studio Projects, and a new folder will be created automatically.  
   

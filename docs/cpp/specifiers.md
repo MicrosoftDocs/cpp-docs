@@ -33,12 +33,12 @@ This topic describes the *decl-specifiers* (declaration specifiers) component of
   
 |Declaration|*decl-specifiers*|`declarator`|  
 |-----------------|------------------------|------------------|  
-|`char *lpszAppName;`|`char`|`*lpszAppName`|  
-|`typedef char * LPSTR;`|`char`|`*LPSTR`|  
-|`const int func1();`|`const int`|`func1`|  
-|`volatile void *pvvObj;`|`volatile void`|`*pvvObj`|  
+|`char *lpszAppName;`|**char**|`*lpszAppName`|  
+|`typedef char * LPSTR;`|**char**|`*LPSTR`|  
+|`const int func1();`|**const int**|`func1`|  
+|`volatile void *pvvObj;`|**volatile void**|`*pvvObj`|  
   
- Because `signed`, `unsigned`, `long`, and `short` all imply `int`, a `typedef` name following one of these keywords is taken to be a member of *declarator-list,* not of *decl-specifiers*.  
+ Because **signed**, **unsigned**, **long**, and **short** all imply **int**, a **typedef** name following one of these keywords is taken to be a member of *declarator-list,* not of *decl-specifiers*.  
   
 > [!NOTE]
 >  Because a name can be redeclared, its interpretation is subject to the most recent declaration in the current scope. Redeclaration can affect how names are interpreted by the compiler, especially `typedef` names.  

@@ -23,7 +23,7 @@ class CComPtrBase
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The object type to be referenced by the smart pointer.  
   
 ## Members  
@@ -43,10 +43,10 @@ class CComPtrBase
 |[CComPtrBase::CoCreateInstance](#cocreateinstance)|Call this method to create an object of the class associated with a specified Class ID or Program ID.|  
 |[CComPtrBase::CopyTo](#copyto)|Call this method to copy the `CComPtrBase` pointer to another pointer variable.|  
 |[CComPtrBase::Detach](#detach)|Call this method to release ownership of a pointer.|  
-|[CComPtrBase::IsEqualObject](#isequalobject)|Call this method to check if the specified **IUnknown** points to the same object associated with the `CComPtrBase` object.|  
+|[CComPtrBase::IsEqualObject](#isequalobject)|Call this method to check if the specified `IUnknown` points to the same object associated with the `CComPtrBase` object.|  
 |[CComPtrBase::QueryInterface](#queryinterface)|Call this method to return a pointer to a specified interface.|  
 |[CComPtrBase::Release](#release)|Call this method to release the interface.|  
-|[CComPtrBase::SetSite](#setsite)|Call this method to set the site of the `CComPtrBase` object to the **IUnknown** of the parent object.|  
+|[CComPtrBase::SetSite](#setsite)|Call this method to set the site of the `CComPtrBase` object to the `IUnknown` of the parent object.|  
   
 ### Public Operators  
   
@@ -84,12 +84,12 @@ HRESULT Advise(
   
 ### Parameters  
  *pUnk*  
- A pointer to the client's **IUnknown**.  
+ A pointer to the client's `IUnknown`.  
   
- `iid`  
+ *iid*  
  The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.  
   
- `pdw`  
+ *pdw*  
  A pointer to the cookie that uniquely identifies the connection.  
   
 ### Return Value  
@@ -106,11 +106,11 @@ void Attach(T* p2) throw();
 ```  
   
 ### Parameters  
- `p2`  
+ *p2*  
  The `CComPtrBase` object will take ownership of this pointer.  
   
 ### Remarks  
- **Attach** calls [CComPtrBase::Release](#release) on the existing [CComPtrBase::p](#p) member variable and then assigns `p2` to `CComPtrBase::p`. When a `CComPtrBase` object takes ownership of a pointer, it will automatically call `Release` on the pointer which will delete the pointer and any allocated data if the reference count on the object goes to 0.  
+ `Attach` calls [CComPtrBase::Release](#release) on the existing [CComPtrBase::p](#p) member variable and then assigns *p2* to `CComPtrBase::p`. When a `CComPtrBase` object takes ownership of a pointer, it will automatically call `Release` on the pointer which will delete the pointer and any allocated data if the reference count on the object goes to 0.  
   
 ##  <a name="dtor"></a>  CComPtrBase::~CComPtrBase  
  The destructor.  
@@ -138,16 +138,16 @@ HRESULT CoCreateInstance(
 ```  
   
 ### Parameters  
- `szProgID`  
+ *szProgID*  
  Pointer to a ProgID, used to recover the CLSID.  
   
- `pUnkOuter`  
- If **NULL**, indicates that the object is not being created as part of an aggregate. If non- **NULL**, is a pointer to the aggregate object's **IUnknown** interface (the controlling **IUnknown**).  
+ *pUnkOuter*  
+ If NULL, indicates that the object is not being created as part of an aggregate. If non- NULL, is a pointer to the aggregate object's `IUnknown` interface (the controlling `IUnknown`).  
   
- `dwClsContext`  
+ *dwClsContext*  
  Context in which the code that manages the newly created object will run.  
   
- `rclsid`  
+ *rclsid*  
  CLSID associated with the data and code that will be used to create the object.  
   
 ### Return Value  
@@ -191,15 +191,15 @@ T* Detach() throw();
  Releases ownership of a pointer, sets the [CComPtrBase::p](#p) data member variable to NULL, and returns a copy of the pointer.  
   
 ##  <a name="isequalobject"></a>  CComPtrBase::IsEqualObject  
- Call this method to check if the specified **IUnknown** points to the same object associated with the `CComPtrBase` object.  
+ Call this method to check if the specified `IUnknown` points to the same object associated with the `CComPtrBase` object.  
   
 ```
 bool IsEqualObject(IUnknown* pOther) throw();
 ```  
   
 ### Parameters  
- `pOther`  
- The **IUnknown \*** to compare.  
+ *pOther*  
+ The `IUnknown *` to compare.  
   
 ### Return Value  
  Returns true if the objects are identical, false otherwise.  
@@ -307,10 +307,10 @@ template <class Q> HRESULT QueryInterface(Q
 ```  
   
 ### Parameters  
- `Q`  
+ *Q*  
  The object type whose interface pointer is required.  
   
- `pp`  
+ *pp*  
  Address of output variable that receives the requested interface pointer.  
   
 ### Return Value  
@@ -332,15 +332,15 @@ void Release() throw();
  The interface is released, and [CComPtrBase::p](#p) is set to NULL.  
   
 ##  <a name="setsite"></a>  CComPtrBase::SetSite  
- Call this method to set the site of the `CComPtrBase` object to the **IUnknown** of the parent object.  
+ Call this method to set the site of the `CComPtrBase` object to the `IUnknown` of the parent object.  
   
 ```
 HRESULT SetSite(IUnknown* punkParent) throw();
 ```  
   
 ### Parameters  
- `punkParent`  
- A pointer to the **IUnknown** interface of the parent.  
+ *punkParent*  
+ A pointer to the `IUnknown` interface of the parent.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

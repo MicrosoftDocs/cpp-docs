@@ -64,7 +64,7 @@ class CGopherFileFind : public CFileFind
   
 - [GetFileURL](../../mfc/reference/cfilefind-class.md#getfileurl)  
   
- In addition, when used with `CGopherFileFind`, the `CFileFind` member function [IsDots](../../mfc/reference/cfilefind-class.md#isdots) is always **FALSE**.  
+ In addition, when used with `CGopherFileFind`, the `CFileFind` member function [IsDots](../../mfc/reference/cfilefind-class.md#isdots) is always FALSE.  
   
  For more information about how to use `CGopherFileFind` and the other WinInet classes, see the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md).  
   
@@ -88,14 +88,14 @@ explicit CGopherFileFind(
 ```  
   
 ### Parameters  
- `pConnection`  
+ *pConnection*  
  A pointer to a [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) object.  
   
- `dwContext`  
- The context identifier for the operation. See **Remarks** for more information about `dwContext`.  
+ *dwContext*  
+ The context identifier for the operation. See **Remarks** for more information about *dwContext*.  
   
 ### Remarks  
- The default value for `dwContext` is sent by MFC to the `CGopherFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CGopherFileFind` object. When you construct a `CGopherFileFind` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for *dwContext* is sent by MFC to the `CGopherFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CGopherFileFind` object. When you construct a `CGopherFileFind` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
 ##  <a name="findfile"></a>  CGopherFileFind::FindFile  
  Call this member function to find a gopher file.  
@@ -113,13 +113,13 @@ virtual BOOL FindFile(
 ```  
   
 ### Parameters  
- `refLocator`  
+ *refLocator*  
  A reference to a [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) object.  
   
  *pstrString*  
  A pointer to a string containing the file name.  
   
- `dwFlags`  
+ *dwFlags*  
  The flags describing how to handle this session. The valid flags are:  
   
 -   INTERNET_FLAG_RELOAD   Get the data from the remote server even if it is locally cached.  
@@ -128,13 +128,13 @@ virtual BOOL FindFile(
   
 -   INTERNET_FLAG_SECURE   Request secure transactions on the wire with Secure Sockets Layer or PCT. This flag is applicable to HTTP requests only.  
   
--   INTERNET_FLAG_USE_EXISTING   If possible, reuse the existing connections to the server for new **FindFile** requests, instead of creating a new session for each request.  
+-   INTERNET_FLAG_USE_EXISTING   If possible, reuse the existing connections to the server for new `FindFile` requests, instead of creating a new session for each request.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- After calling **FindFile** to retrieve the first gopher object, you can call [FindNextFile](#findnextfile) to retrieve subsequent gopher files.  
+ After calling `FindFile` to retrieve the first gopher object, you can call [FindNextFile](#findnextfile) to retrieve subsequent gopher files.  
   
 ##  <a name="findnextfile"></a>  CGopherFileFind::FindNextFile  
  Call this member function to continue a file search begun with a call to [CGopherFileFind::FindFile](#findfile).  
@@ -155,10 +155,10 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ```  
   
 ### Parameters  
- `pTimeStamp`  
+ *pTimeStamp*  
  A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was created.  
   
- `refTime`  
+ *refTime*  
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
 ### Return Value  
@@ -179,10 +179,10 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 ```  
   
 ### Parameters  
- `refTime`  
+ *refTime*  
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
- `pTimeStamp`  
+ *pTimeStamp*  
  A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last accessed.  
   
 ### Return Value  
@@ -203,10 +203,10 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ```  
   
 ### Parameters  
- `pTimeStamp`  
+ *pTimeStamp*  
  A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last written to.  
   
- `refTime`  
+ *refTime*  
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
 ### Return Value  

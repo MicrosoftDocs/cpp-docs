@@ -40,7 +40,7 @@ class CComSingleThreadModel
 ## Remarks  
  `CComSingleThreadModel` provides methods for incrementing and decrementing the value of a variable. Unlike [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) and [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), these methods are not thread-safe.  
 
- Typically, you use `CComSingleThreadModel` through one of two `typedef` names, either [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:  
+ Typically, you use `CComSingleThreadModel` through one of two **typedef** names, either [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). The class referenced by each **typedef** depends on the threading model used, as shown in the following table:  
 
   
 |typedef|Single threading model|Apartment threading model|Free threading model|  
@@ -50,13 +50,13 @@ class CComSingleThreadModel
   
  S= `CComSingleThreadModel`; M= `CComMultiThreadModel`  
   
- `CComSingleThreadModel` itself defines three `typedef` names. `ThreadModelNoCS` references `CComSingleThreadModel`. `AutoCriticalSection` and `CriticalSection` reference class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md), which provides empty methods associated with obtaining and releasing ownership of a critical section.  
+ `CComSingleThreadModel` itself defines three **typedef** names. `ThreadModelNoCS` references `CComSingleThreadModel`. `AutoCriticalSection` and `CriticalSection` reference class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md), which provides empty methods associated with obtaining and releasing ownership of a critical section.  
   
 ## Requirements  
  **Header:** atlbase.h  
   
 ##  <a name="autocriticalsection"></a>  CComSingleThreadModel::AutoCriticalSection  
- When using `CComSingleThreadModel`, the `typedef` name `AutoCriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
+ When using `CComSingleThreadModel`, the **typedef** name `AutoCriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
   
 ```
 typedef CComFakeCriticalSection AutoCriticalSection;
@@ -73,13 +73,13 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 |`CComMultiThreadModel`|`CComAutoCriticalSection`|  
 |`CComMultiThreadModelNoCS`|`CComFakeCriticalSection`|  
   
- In addition to `AutoCriticalSection`, you can use the `typedef` name [CriticalSection](#criticalsection). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
+ In addition to `AutoCriticalSection`, you can use the **typedef** name [CriticalSection](#criticalsection). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
   
 ### Example  
  See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
 ##  <a name="criticalsection"></a>  CComSingleThreadModel::CriticalSection  
- When using `CComSingleThreadModel`, the `typedef` name `CriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
+ When using `CComSingleThreadModel`, the **typedef** name `CriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
   
 ```
 typedef CComFakeCriticalSection CriticalSection;
@@ -96,41 +96,41 @@ typedef CComFakeCriticalSection CriticalSection;
 |`CComMultiThreadModel`|`CComCriticalSection`|  
 |`CComMultiThreadModelNoCS`|`CComFakeCriticalSection`|  
   
- In addition to `CriticalSection`, you can use the `typedef` name [AutoCriticalSection](#autocriticalsection). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
+ In addition to `CriticalSection`, you can use the **typedef** name [AutoCriticalSection](#autocriticalsection). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
   
 ### Example  
  See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
 ##  <a name="decrement"></a>  CComSingleThreadModel::Decrement  
- This static function decrements the value of the variable pointed to by `p`.  
+ This static function decrements the value of the variable pointed to by *p*.  
   
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  [in] Pointer to the variable to be decremented.  
   
 ### Return Value  
  The result of the decrement.  
   
 ##  <a name="increment"></a>  CComSingleThreadModel::Increment  
- This static function decrements the value of the variable pointed to by `p`.  
+ This static function decrements the value of the variable pointed to by *p*.  
   
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  [in] Pointer to the variable to be incremented.  
   
 ### Return Value  
  The result of the increment.  
   
 ##  <a name="threadmodelnocs"></a>  CComSingleThreadModel::ThreadModelNoCS  
- When using `CComSingleThreadModel`, the `typedef` name `ThreadModelNoCS` simply references `CComSingleThreadModel`.  
+ When using `CComSingleThreadModel`, the **typedef** name `ThreadModelNoCS` simply references `CComSingleThreadModel`.  
   
 ```
 typedef CComSingleThreadModel ThreadModelNoCS;

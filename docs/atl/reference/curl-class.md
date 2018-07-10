@@ -109,8 +109,8 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 ```  
   
 ### Parameters  
- `dwFlags`  
- The flags that control canonicalization. If no flags are specified ( `dwFlags` = 0), the method converts all unsafe characters and meta sequences (such as \\.,\ .., and \\...) to escape sequences. `dwFlags` can be one of the following values:  
+ *dwFlags*  
+ The flags that control canonicalization. If no flags are specified (*dwFlags* = 0), the method converts all unsafe characters and meta sequences (such as \\.,\ .., and \\...) to escape sequences. *dwFlags* can be one of the following values:  
   
 -   ATL_URL_BROWSER_MODE: Does not encode or decode characters after "#" or "" and does not remove trailing white space after "". If this value is not specified, the entire URL is encoded and trailing white space is removed.  
   
@@ -145,11 +145,11 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 ```  
   
 ### Parameters  
- `lpszUrl`  
+ *lpszUrl*  
  The URL.  
   
- `dwFlags`  
- Specify ATL_URL_DECODE or ATL_URL_ESCAPE to convert all escape characters in `lpszUrl` to their real values after parsing. (Before Visual C++ 2005, ATL_URL_DECODE converted all escape characters before parsing.)  
+ *dwFlags*  
+ Specify ATL_URL_DECODE or ATL_URL_ESCAPE to convert all escape characters in *lpszUrl* to their real values after parsing. (Before Visual C++ 2005, ATL_URL_DECODE converted all escape characters before parsing.)  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -168,10 +168,10 @@ inline BOOL CreateUrl(
  *lpszUrl*  
  A string buffer to hold the complete URL string.  
   
- `pdwMaxLength`  
+ *pdwMaxLength*  
  The maximum length of the *lpszUrl* string buffer.  
   
- `dwFlags`  
+ *dwFlags*  
  Specify ATL_URL_ESCAPE to convert all escape characters in *lpszUrl* to their real values.  
   
 ### Return Value  
@@ -182,7 +182,7 @@ inline BOOL CreateUrl(
   
  **\<scheme>://\<user>:\<pass>@\<domain>:\<port>\<path>\<extra>**  
   
- When calling this method, the `pdwMaxLength` parameter should initially contain the maximum length of the string buffer referenced by the *lpszUrl* parameter. The value of the `pdwMaxLength` parameter will be updated with the actual length of the URL string.  
+ When calling this method, the *pdwMaxLength* parameter should initially contain the maximum length of the string buffer referenced by the *lpszUrl* parameter. The value of the *pdwMaxLength* parameter will be updated with the actual length of the URL string.  
   
 ### Example  
  This sample demonstrates creation of a CUrl object and retrieving its URL string  
@@ -198,7 +198,7 @@ CUrl(const CUrl& urlThat) throw();
 ```  
   
 ### Parameters  
- `urlThat`  
+ *urlThat*  
  The `CUrl` object to copy to create the URL.  
   
 ##  <a name="dtor"></a>  CUrl::~CUrl  
@@ -366,7 +366,7 @@ CUrl& operator= (const CUrl& urlThat) throw();
 ```  
   
 ### Parameters  
- `urlThat`  
+ *urlThat*  
  The `CUrl` object to copy into the current object.  
   
 ### Return Value  
@@ -394,7 +394,7 @@ inline BOOL SetHostName(LPCTSTR lpszHost) throw();
 ```  
   
 ### Parameters  
- `lpszHost`  
+ *lpszHost*  
  The host name.  
   
 ### Return Value  
@@ -436,7 +436,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
 ```  
   
 ### Parameters  
- `nScheme`  
+ *nScheme*  
  One of the [ATL_URL_SCHEME](atl-url-scheme-enum.md) values for the scheme.  
   
 ### Return Value  
@@ -470,7 +470,7 @@ inline BOOL SetUrlPath(LPCTSTR lpszPath) throw();
 ```  
   
 ### Parameters  
- `lpszPath`  
+ *lpszPath*  
  The URL path.  
   
 ### Return Value  

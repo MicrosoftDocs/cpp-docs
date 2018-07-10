@@ -56,7 +56,7 @@ void Attach(const CAccessToken* pAT) throw();
 ```  
   
 ### Parameters  
- `pAT`  
+ *pAT*  
  The address of the [CAccessToken](../../atl/reference/caccesstoken-class.md) object to be reverted automatically  
   
 ### Remarks  
@@ -70,7 +70,7 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 ```  
   
 ### Parameters  
- `pAT`  
+ *pAT*  
  The address of the [CAccessToken](../../atl/reference/caccesstoken-class.md) object to be reverted automatically.  
   
 ### Remarks  

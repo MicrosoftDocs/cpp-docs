@@ -74,7 +74,7 @@ This article describes how MFC performs frame allocations and heap allocations f
   
      [!code-cpp[NVC_MFC_Utilities#7](../mfc/codesnippet/cpp/memory-management-examples_7.cpp)]  
   
-     If the argument for the `CPerson` constructor is a pointer to `char`, the statement for frame allocation is:  
+     If the argument for the `CPerson` constructor is a pointer to **char**, the statement for frame allocation is:  
   
      [!code-cpp[NVC_MFC_Utilities#8](../mfc/codesnippet/cpp/memory-management-examples_8.cpp)]  
   

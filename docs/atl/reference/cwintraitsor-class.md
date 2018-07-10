@@ -28,10 +28,10 @@ class CWinTraitsOR
 ```  
   
 #### Parameters  
- `t_dwStyle`  
+ *t_dwStyle*  
  Default window styles.  
   
- `t_dwExStyle`  
+ *t_dwExStyle*  
  Default extended window styles.  
   
 ## Members  
@@ -54,18 +54,18 @@ class CWinTraitsOR
  **Header:** atlwin.h  
   
 ##  <a name="getwndstyle"></a>  CWinTraitsOR::GetWndStyle  
- Call this function to retrieve a combination (using the logical OR operator) of the standard styles of the `CWinTraits` object and the default styles specified by `t_dwStyle`.  
+ Call this function to retrieve a combination (using the logical OR operator) of the standard styles of the `CWinTraits` object and the default styles specified by *t_dwStyle*.  
   
 ```
 static DWORD GetWndStyle(DWORD dwStyle);
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Styles used for creation of a window.  
   
 ### Return Value  
- A combination of styles that are passed in `dwStyle` and the default ones specified by `t_dwStyle`, using the logical OR operator.  
+ A combination of styles that are passed in *dwStyle* and the default ones specified by `t_dwStyle`, using the logical OR operator.  
   
 ##  <a name="getwndexstyle"></a>  CWinTraitsOR::GetWndExStyle  
  Call this function to retrieve a combination (using the logical OR operator) of the extended styles of the `CWinTraits` object and the default styles specified by `t_dwStyle`.  
@@ -75,11 +75,11 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 ```  
   
 ### Parameters  
- `dwExStyle`  
+ *dwExStyle*  
  Extended styles used for creation of a window.  
   
 ### Return Value  
- A combination of extended styles that are passed in `dwExStyle` and default ones specified by `t_dwExStyle`, using the logical OR operator  
+ A combination of extended styles that are passed in *dwExStyle* and default ones specified by `t_dwExStyle`, using the logical OR operator  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   

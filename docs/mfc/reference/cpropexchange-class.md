@@ -68,22 +68,22 @@ virtual BOOL ExchangeBlobProp(
 ```  
   
 ### Parameters  
- `pszPropName`  
+ *pszPropName*  
  The name of the property being exchanged.  
   
- `phBlob`  
+ *phBlob*  
  Pointer to a variable pointing to where the property is stored (variable is typically a member of your class).  
   
- `hBlobDefault`  
+ *hBlobDefault*  
  Default value for the property.  
   
 ### Return Value  
  Nonzero if the exchange was successful; 0 if unsuccessful.  
   
 ### Remarks  
- The property's value is read from or written to, as appropriate, the variable referenced by `phBlob`. If `hBlobDefault` is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization fails.  
+ The property's value is read from or written to, as appropriate, the variable referenced by *phBlob*. If *hBlobDefault* is specified, it will be used as the property's default value. This value is used if, for any reason, the control's serialization fails.  
   
- The functions **CArchivePropExchange::ExchangeBlobProp**, **CResetPropExchange::ExchangeBlobProp**, and **CPropsetPropExchange::ExchangeBlobProp** override this pure virtual function.  
+ The functions `CArchivePropExchange::ExchangeBlobProp`, `CResetPropExchange::ExchangeBlobProp`, and `CPropsetPropExchange::ExchangeBlobProp` override this pure virtual function.  
   
 ##  <a name="exchangefontprop"></a>  CPropExchange::ExchangeFontProp  
  Exchanges a font property between a storage medium and the control.  
@@ -97,25 +97,25 @@ virtual BOOL ExchangeFontProp(
 ```  
   
 ### Parameters  
- `pszPropName`  
+ *pszPropName*  
  The name of the property being exchanged.  
   
- `font`  
+ *font*  
  A reference to a [CFontHolder](../../mfc/reference/cfontholder-class.md) object that contains the font property.  
   
- `pFontDesc`  
- A pointer to a [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782) structure containing values for initializing the default state of the font property when `pFontDispAmbient` is **NULL**.  
+ *pFontDesc*  
+ A pointer to a [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782) structure containing values for initializing the default state of the font property when *pFontDispAmbient* is NULL.  
   
- `pFontDispAmbient`  
- A pointer to the **IFontDisp** interface of a font to be used for initializing the default state of the font property.  
+ *pFontDispAmbient*  
+ A pointer to the `IFontDisp` interface of a font to be used for initializing the default state of the font property.  
   
 ### Return Value  
  Nonzero if the exchange was successful; 0 if unsuccessful.  
   
 ### Remarks  
- If the font property is being loaded from the medium to the control, the font's characteristics are retrieved from the medium and the `CFontHolder` object referenced by `font` is initialized with them. If the font property is being stored, the characteristics in the font object are written to the medium.  
+ If the font property is being loaded from the medium to the control, the font's characteristics are retrieved from the medium and the `CFontHolder` object referenced by *font* is initialized with them. If the font property is being stored, the characteristics in the font object are written to the medium.  
   
- The functions **CArchivePropExchange::ExchangeFontProp**, **CResetPropExchange::ExchangeFontProp**, and **CPropsetPropExchange::ExchangeFontProp** override this pure virtual function.  
+ The functions `CArchivePropExchange::ExchangeFontProp`, `CResetPropExchange::ExchangeFontProp`, and `CPropsetPropExchange::ExchangeFontProp` override this pure virtual function.  
   
 ##  <a name="exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp  
  Exchanges a property between the control and a file.  
@@ -129,16 +129,16 @@ virtual BOOL ExchangePersistentProp(
 ```  
   
 ### Parameters  
- `pszPropName`  
+ *pszPropName*  
  The name of the property being exchanged.  
   
- `ppUnk`  
- A pointer to a variable containing a pointer to the property's **IUnknown** interface (this variable is typically a member of your class).  
+ *ppUnk*  
+ A pointer to a variable containing a pointer to the property's `IUnknown` interface (this variable is typically a member of your class).  
   
- `iid`  
+ *iid*  
  Interface ID of the interface on the property that the control will use.  
   
- `pUnkDefault`  
+ *pUnkDefault*  
  Default value for the property.  
   
 ### Return Value  
@@ -147,7 +147,7 @@ virtual BOOL ExchangePersistentProp(
 ### Remarks  
  If the property is being loaded from the file to the control, the property is created and initialized from the file. If the property is being stored, its value is written to the file.  
   
- The functions **CArchivePropExchange::ExchangePersistentProp**, **CResetPropExchange::ExchangePersistentProp**, and **CPropsetPropExchange::ExchangePersistentProp** override this pure virtual function.  
+ The functions `CArchivePropExchange::ExchangePersistentProp`, `CResetPropExchange::ExchangePersistentProp`, and `CPropsetPropExchange::ExchangePersistentProp` override this pure virtual function.  
   
 ##  <a name="exchangeprop"></a>  CPropExchange::ExchangeProp  
  Exchanges a property between a storage medium and the control.  
@@ -161,23 +161,23 @@ virtual BOOL ExchangeProp(
 ```  
   
 ### Parameters  
- `pszPropName`  
+ *pszPropName*  
  The name of the property being exchanged.  
   
- `vtProp`  
+ *vtProp*  
  A symbol specifying the type of the property being exchanged. Possible values are:  
   
 |Symbol|Property Type|  
 |------------|-------------------|  
-|`VT_I2`|**short**|  
-|`VT_I4`|**long**|  
-|`VT_BOOL`|**BOOL**|  
-|`VT_BSTR`|`CString`|  
-|`VT_CY`|**CY**|  
-|`VT_R4`|**float**|  
-|`VT_R8`|**double**|  
+|VT_I2|**short**|  
+|VT_I4|**long**|  
+|VT_BOOL|**BOOL**|  
+|VT_BSTR|`CString`|  
+|VT_CY|**CY**|  
+|VT_R4|**float**|  
+|VT_R8|**double**|  
   
- `pvProp`  
+ *pvProp*  
  A pointer to the property's value.  
   
  *pvDefault*  
@@ -187,9 +187,9 @@ virtual BOOL ExchangeProp(
  Nonzero if the exchange was successful; 0 if unsuccessful.  
   
 ### Remarks  
- If the property is being loaded from the medium to the control, the property's value is retrieved from the medium and stored in the object pointed to by `pvProp`. If the property is being stored to the medium, the value of the object pointed to by `pvProp` is written to the medium.  
+ If the property is being loaded from the medium to the control, the property's value is retrieved from the medium and stored in the object pointed to by *pvProp*. If the property is being stored to the medium, the value of the object pointed to by *pvProp* is written to the medium.  
   
- The functions **CArchivePropExchange::ExchangeProp**, **CResetPropExchange::ExchangeProp**, and **CPropsetPropExchange::ExchangeProp** override this pure virtual function.  
+ The functions `CArchivePropExchange::ExchangeProp`, `CResetPropExchange::ExchangeProp`, and `CPropsetPropExchange::ExchangeProp` override this pure virtual function.  
   
 ##  <a name="exchangeversion"></a>  CPropExchange::ExchangeVersion  
  Called by the framework to handle persistence of a version number.  
@@ -205,10 +205,10 @@ virtual BOOL ExchangeVersion(
  *dwVersionLoaded*  
  Reference to a variable where the version number of the persistent data being loaded will be stored.  
   
- `dwVersionDefault`  
+ *dwVersionDefault*  
  The current version number of the control.  
   
- `bConvert`  
+ *bConvert*  
  Indicates whether to convert persistent data to the current version or keep it at the same version that was loaded.  
   
 ### Return Value  

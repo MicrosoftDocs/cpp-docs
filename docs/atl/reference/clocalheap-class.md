@@ -60,7 +60,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  
@@ -69,7 +69,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Call [CLocalHeap::Free](#free) or [CLocalHeap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
- Implemented using [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) with a flag parameter of **LMEM_FIXED**.  
+ Implemented using [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) with a flag parameter of LMEM_FIXED.  
   
 ##  <a name="free"></a>  CLocalHeap::Free  
  Call this method to free a block of memory allocated by this memory manager.  
@@ -79,7 +79,7 @@ virtual void Free(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager. NULL is a valid value and does nothing.  
   
 ### Remarks  
@@ -93,7 +93,7 @@ virtual size_t GetSize(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
 ### Return Value  
@@ -110,10 +110,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  
