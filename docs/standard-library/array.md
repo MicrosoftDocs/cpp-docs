@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # &lt;array&gt;
 
-Defines the container template class `array` and several supporting templates.
+Defines the container template class **array** and several supporting templates.
 
 ## Syntax
 

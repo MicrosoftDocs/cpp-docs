@@ -25,12 +25,12 @@ struct add_const;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to modify.
 
 ## Remarks
 
-An instance of the type modifier holds a modified-type that is `Ty` if `Ty` is a reference, a function, or a const-qualified type, otherwise `const Ty`.
+An instance of the type modifier holds a modified-type that is *Ty* if *Ty* is a reference, a function, or a const-qualified type, otherwise `const Ty`.
 
 ## Example
 

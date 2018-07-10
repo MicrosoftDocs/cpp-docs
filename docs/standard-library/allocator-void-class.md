@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # allocator&lt;void&gt; Class
 
-A specialization of the template class allocator to type `void`, defining the types that make sense in this context.
+A specialization of the template class allocator to type **void**, defining the types that make sense in this context.
 
 ## Syntax
 
@@ -39,7 +39,7 @@ class allocator<void> {
 
 ## Remarks
 
-The class explicitly specializes template class [allocator](../standard-library/allocator-class.md) for type *void.* Its constructors and assignment operator behave the same as for the template class, but it defines only the following types:
+The class explicitly specializes template class [allocator](../standard-library/allocator-class.md) for type **void**. Its constructors and assignment operator behave the same as for the template class, but it defines only the following types:
 
 - [const_pointer](../standard-library/allocator-class.md#const_pointer).
 
