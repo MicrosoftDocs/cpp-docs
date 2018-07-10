@@ -25,12 +25,12 @@ struct is_volatile;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if `Ty` is `volatile-qualified`.
+An instance of the type predicate holds true if *Ty* is `volatile-qualified`.
 
 ## Example
 
