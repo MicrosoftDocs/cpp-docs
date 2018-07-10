@@ -27,8 +27,8 @@ Include the iostreams standard header \<streambuf> to define the template class 
 
 |Type name|Description|
 |-|-|
-|[streambuf](../standard-library/streambuf-typedefs.md#streambuf)|A specialization of `basic_streambuf` that uses `char` as the template parameters.|
-|[wstreambuf](../standard-library/streambuf-typedefs.md#wstreambuf)|A specialization of `basic_streambuf` that uses `wchar_t` as the template parameters.|
+|[streambuf](../standard-library/streambuf-typedefs.md#streambuf)|A specialization of `basic_streambuf` that uses **char** as the template parameters.|
+|[wstreambuf](../standard-library/streambuf-typedefs.md#wstreambuf)|A specialization of `basic_streambuf` that uses **wchar_t** as the template parameters.|
 
 ### Classes
 
