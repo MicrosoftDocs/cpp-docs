@@ -49,12 +49,12 @@ public:
 
 ### Parameters
 
-`Elem`
+*Elem*
  The character element type to describe.
 
 ## Remarks
 
-The template class describes various regular expression traits for type `Elem`. The template class [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type `Elem`.
+The template class describes various regular expression traits for type *Elem*. The template class [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type *Elem*.
 
 Each `regex_traits` object holds an object of type `regex_traits::locale` which is used by some of its member functions. The default locale is a copy of `regex_traits::locale()`. The member function `imbue` replaces the locale object, and the member function `getloc` returns a copy of the locale object.
 
@@ -323,12 +323,12 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-`loc`
+*loc*
  The locale object to store.
 
 ### Remarks
 
-The member function copies `loc` to the stored `locale` object and returns a copy of the previous value of the stored `locale` object.
+The member function copies *loc* to the stored `locale` object and returns a copy of the previous value of the stored `locale` object.
 
 ### Example
 
@@ -411,15 +411,15 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### Parameters
 
-`ch`
+*ch*
  The element to test.
 
-`cls`
+*cls*
  The classes to test for.
 
 ### Remarks
 
-The member function returns true only if the character `ch` is in the character class designated by `cls`.
+The member function returns true only if the character *ch* is in the character class designated by *cls*.
 
 ### Example
 
@@ -502,7 +502,7 @@ static size_type length(const char_type *str);
 
 ### Parameters
 
-`str`
+*str*
 
 The null-terminated sequence.
 
@@ -675,10 +675,10 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-`first`
+*first*
  Beginning of sequence to look up.
 
-`last`
+*last*
  End of sequence to look up.
 
 ### Remarks
@@ -771,10 +771,10 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-`first`
+*first*
  Beginning of sequence to look up.
 
-`last`
+*last*
  End of sequence to look up.
 
 ### Remarks
@@ -1114,10 +1114,10 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-`first`
+*first*
  Beginning of sequence to transform.
 
-`last`
+*last*
  End of sequence to transform.
 
 ### Remarks
@@ -1206,10 +1206,10 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-`first`
+*first*
  Beginning of sequence to transform.
 
-`last`
+*last*
  End of sequence to transform.
 
 ### Remarks
@@ -1297,7 +1297,7 @@ char_type translate(char_type ch) const;
 
 ### Parameters
 
-`ch`
+*ch*
  The element to convert.
 
 ### Remarks
@@ -1385,7 +1385,7 @@ char_type translate_nocase(char_type ch) const;
 
 ### Parameters
 
-`ch`
+*ch*
  The element to convert.
 
 ### Remarks
@@ -1473,15 +1473,15 @@ int value(Elem ch, int radix) const;
 
 ### Parameters
 
-`ch`
+*ch*
  The element to convert.
 
-`radix`
+*radix*
  The arithmetic base to use.
 
 ### Remarks
 
-The member function returns the value represented by the character `ch` in the base `radix`, or -1 if `ch` is not a valid digit in the base `radix`. The function will only be called with a `radix` argument of 8, 10, or 16.
+The member function returns the value represented by the character *ch* in the base *radix*, or -1 if *ch* is not a valid digit in the base *radix*. The function will only be called with a *radix* argument of 8, 10, or 16.
 
 ### Example
 

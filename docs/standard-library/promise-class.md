@@ -82,7 +82,7 @@ promise& operator=(promise&& Other) noexcept;
 
 ### Parameters
 
-`Other`
+*Other*
  A `promise` object.
 
 ### Return Value
@@ -91,7 +91,7 @@ promise& operator=(promise&& Other) noexcept;
 
 ### Remarks
 
-This operator transfers the associated asynchronous state from `Other`. After the transfer, `Other` is *empty*.
+This operator transfers the associated asynchronous state from *Other*. After the transfer, *Other* is *empty*.
 
 ## <a name="promise"></a>  promise::promise Constructor
 
@@ -106,19 +106,19 @@ promise(promise&& Other) noexcept;
 
 ### Parameters
 
-`Al`
+*Al*
  A memory allocator. See [\<allocators>](../standard-library/allocators-header.md) for more information.
 
-`Other`
+*Other*
  A `promise` object.
 
 ### Remarks
 
 The first constructor constructs an *empty*`promise` object.
 
-The second constructor constructs an empty `promise` object and uses `Al` for memory allocation.
+The second constructor constructs an empty `promise` object and uses *Al* for memory allocation.
 
-The third constructor constructs a `promise` object and transfers the associated asynchronous state from `Other`, and leaves `Other` empty.
+The third constructor constructs a `promise` object and transfers the associated asynchronous state from *Other*, and leaves *Other* empty.
 
 ## <a name="set_exception"></a>  promise::set_exception
 
@@ -130,7 +130,7 @@ void set_exception(exception_ptr Exc);
 
 ### Parameters
 
-`Exc`
+*Exc*
  An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) that's stored by this method as the exception result.
 
 ### Remarks
@@ -151,7 +151,7 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### Parameters
 
-`Exc`
+*Exc*
  An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) that's stored by this method as the exception result.
 
 ### Remarks
@@ -175,7 +175,7 @@ void promise<void>::set_value();
 
 ### Parameters
 
-`Val`
+*Val*
  The value to be stored as the result.
 
 ### Remarks
@@ -186,11 +186,11 @@ If [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exceptio
 
 As a result of this method, any threads that are blocked on the associated asynchronous state become unblocked.
 
-The first method also throws any exception that is thrown when `Val` is copied into the associated asynchronous state. In this situation, the associated asynchronous state is not set to ready.
+The first method also throws any exception that is thrown when *Val* is copied into the associated asynchronous state. In this situation, the associated asynchronous state is not set to ready.
 
-The second method also throws any exception that is thrown when `Val` is moved into the associated asynchronous state. In this situation, the associated asynchronous state is not set to ready.
+The second method also throws any exception that is thrown when *Val* is moved into the associated asynchronous state. In this situation, the associated asynchronous state is not set to ready.
 
-For the partial specialization `promise<Ty&>`, the stored value is in effect a reference to `Val`.
+For the partial specialization `promise<Ty&>`, the stored value is in effect a reference to *Val*.
 
 For the specialization `promise<void>`, no stored value exists.
 
@@ -207,7 +207,7 @@ void promise<void>::set_value_at_thread_exit();
 
 ### Parameters
 
-`Val`
+*Val*
  The value to be stored as the result.
 
 ### Remarks
@@ -218,11 +218,11 @@ If [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exceptio
 
 In contrast to `set_value`, the associated asynchronous state is not set to ready until after all thread-local objects in the current thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state are not unblocked until the current thread exits.
 
-The first method also throws any exception that is thrown when `Val` is copied into the associated asynchronous state.
+The first method also throws any exception that is thrown when *Val* is copied into the associated asynchronous state.
 
-The second method also throws any exception that is thrown when `Val` is moved into the associated asynchronous state.
+The second method also throws any exception that is thrown when *Val* is moved into the associated asynchronous state.
 
-For the partial specialization `promise<Ty&>`, the stored value is effectively a reference to `Val`.
+For the partial specialization `promise<Ty&>`, the stored value is effectively a reference to *Val*.
 
 For the specialization `promise<void>`, no stored value exists.
 
@@ -236,7 +236,7 @@ void swap(promise& Other) noexcept;
 
 ### Parameters
 
-`Other`
+*Other*
  A `promise` object.
 
 ## See also
