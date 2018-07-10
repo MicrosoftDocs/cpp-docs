@@ -92,7 +92,7 @@ void wait(Lock& Lck, Predicate Pred);
  A `mutex` object of any type.
 
 *Pred*
- Any expression that returns `true` or `false`.
+ Any expression that returns **true** or **false**.
 
 ### Remarks
 
@@ -126,7 +126,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
  A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
 *Pred*
- Any expression that returns `true` or `false`.
+ Any expression that returns **true** or **false**.
 
 ### Return Value
 
@@ -181,7 +181,7 @@ void wait_until(
  A [chrono::time_point](../standard-library/time-point-class.md) object.
 
 *Pred*
- Any expression that returns `true` or `false`.
+ Any expression that returns **true** or **false**.
 
 ### Return Value
 

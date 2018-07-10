@@ -241,9 +241,9 @@ constexpr bool operator<(
 
 ### Return Value
 
-The first function returns `true` if the interval length of *Left* is less than the interval length of *Right*. Otherwise, the function returns `false`.
+The first function returns **true** if the interval length of *Left* is less than the interval length of *Right*. Otherwise, the function returns **false**.
 
-The second function returns `true` if *Left* precedes *Right*. Otherwise, the function returns `false`.
+The second function returns **true** if *Left* precedes *Right*. Otherwise, the function returns **false**.
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
 
@@ -299,9 +299,9 @@ constexpr bool operator==(
 
 ### Return Value
 
-The first function returns `true` if *Left* and *Right* represent time intervals that have the same length. Otherwise, the function returns `false`.
+The first function returns **true** if *Left* and *Right* represent time intervals that have the same length. Otherwise, the function returns **false**.
 
-The second function returns `true` if *Left* and *Right* represent the same point in time. Otherwise, the function returns `false`.
+The second function returns **true** if *Left* and *Right* represent the same point in time. Otherwise, the function returns **false**.
 
 ## <a name="op_gt"></a>  operator&gt;
 

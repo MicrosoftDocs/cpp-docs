@@ -104,7 +104,7 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
  A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
 *Pred*
- Any expression that returns `true` or `false`.
+ Any expression that returns **true** or **false**.
 
 ### Remarks
 
@@ -143,7 +143,7 @@ bool wait_for(
  A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
 *Pred*
- Any expression that returns `true` or `false`.
+ Any expression that returns **true** or **false**.
 
 ### Return Value
 
@@ -201,7 +201,7 @@ bool wait_until(
  A [chrono::time_point](../standard-library/time-point-class.md) object.
 
 *Pred*
- Any expression that returns `true` or `false`.
+ Any expression that returns **true** or **false**.
 
 ### Return Value
 
