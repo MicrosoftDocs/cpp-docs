@@ -23,7 +23,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type `char` with default character traits.
+The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="streamoff"></a>  streamoff
 
@@ -39,7 +39,7 @@ Supports internal operations.
 
 ### Remarks
 
-The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. Its representation has at least 32 value bits. It is not necessarily large enough to represent an arbitrary byte position within a stream. The value **streamoff(-1)** generally indicates an erroneous offset.
+The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. Its representation has at least 32 value bits. It is not necessarily large enough to represent an arbitrary byte position within a stream. The value `streamoff(-1)` generally indicates an erroneous offset.
 
 ## <a name="streampos"></a>  streampos
 
@@ -122,7 +122,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type `wchar_t` with default character traits.
+The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## <a name="wstreampos"></a>  wstreampos
 
