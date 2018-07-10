@@ -634,7 +634,7 @@ The `atomic_fetch_xor_explicit` function performs a `read-modify-write` operatio
 
 ## <a name="atomic_flag_clear"></a>  atomic_flag_clear
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `false`, within the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **false**, within the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline void atomic_flag_clear(volatile atomic_flag* Flag) noexcept;
@@ -648,7 +648,7 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
 
 ## <a name="atomic_flag_clear_explicit"></a>  atomic_flag_clear_explicit
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `false`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
+Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **false**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
 ```cpp
 inline void atomic_flag_clear_explicit(volatile atomic_flag* Flag, memory_order Order) noexcept;
@@ -665,7 +665,7 @@ inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) no
 
 ## <a name="atomic_flag_test_and_set"></a>  atomic_flag_test_and_set
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `true`, within the constraints of the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **true**, within the constraints of the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag,) noexcept;
@@ -683,7 +683,7 @@ The initial value of *Flag*.
 
 ## <a name="atomic_flag_test_and_set_explicit"></a>  atomic_flag_test_and_set_explicit
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `true`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
+Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **true**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
 ```cpp
 inline bool atomic_flag_test_and_set_explicit(volatile atomic_flag* Flag, memory_order Order) noexcept;
@@ -743,7 +743,7 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 
 ### Return Value
 
-`true` if atomic operations on *Atom* are lock-free; otherwise, `false`.
+**true** if atomic operations on *Atom* are lock-free; otherwise, **false**.
 
 ### Remarks
 

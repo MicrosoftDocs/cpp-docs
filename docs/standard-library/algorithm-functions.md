@@ -147,7 +147,7 @@ There are two adjacent elements where the second is twice the first.
 
 ## <a name="all_of"></a>  all_of
 
-Returns `true` when a condition is present at each element in the given range.
+Returns **true** when a condition is present at each element in the given range.
 
 ```cpp
 template<class InputIterator, class Predicate>
@@ -166,19 +166,19 @@ template<class InputIterator, class Predicate>
  An input iterator that indicates the end of the range of elements to check for a condition.
 
 *comp*
- A condition to test for. This is a user-defined predicate function object that defines the condition to be satisfied by an element being checked. A predicate takes a single argument and returns `true` or `false`.
+ A condition to test for. This is a user-defined predicate function object that defines the condition to be satisfied by an element being checked. A predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
-Returns `true` if the condition is detected at each element in the indicated range, and `false` if the condition is not detected at least one time.
+Returns **true** if the condition is detected at each element in the indicated range, and **false** if the condition is not detected at least one time.
 
 ### Remarks
 
-The template function returns `true` only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is `true`.
+The template function returns **true** only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is **true**.
 
 ## <a name="any_of"></a>  any_of
 
-Returns `true` when a condition is present at least once in the specified range of elements.
+Returns **true** when a condition is present at least once in the specified range of elements.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -197,15 +197,15 @@ template<class InputIterator, class UnaryPredicate>
  An input iterator that indicates the end of the range of elements to check for a condition.
 
 *comp*
- A condition to test for. This is provided by a user-defined predicate function object. The predicate defines the condition to be satisfied by the element being tested. A predicate takes a single argument and returns `true` or `false`.
+ A condition to test for. This is provided by a user-defined predicate function object. The predicate defines the condition to be satisfied by the element being tested. A predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
-Returns `true` if the condition is detected at least once in the indicated range, `false` if the condition is never detected.
+Returns **true** if the condition is detected at least once in the indicated range, **false** if the condition is never detected.
 
 ### Remarks
 
-The template function returns `true` only if, for some `N` in the range
+The template function returns **true** only if, for some `N` in the range
 
 `[0, last - first)`, the predicate `comp(*(first + N))` is true.
 
@@ -241,11 +241,11 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
  The value required to be matched by the value of the element or that must satisfy the condition with the element value specified by the binary predicate.
 
 *comp*
- User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.
+ User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
 
 ### Return Value
 
-`true` if an element is found in the range that is equal or equivalent to the specified value; otherwise, `false`.
+**true** if an element is found in the range that is equal or equivalent to the specified value; otherwise, **false**.
 
 ### Remarks
 
@@ -526,7 +526,7 @@ int main() {
 
 ## <a name="copy_if"></a>  copy_if
 
-In a range of elements, copies the elements that are `true` for the specified condition.
+In a range of elements, copies the elements that are **true** for the specified condition.
 
 ```cpp
 template<class InputIterator, class OutputIterator, class BinaryPredicate>
@@ -549,7 +549,7 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
  The output iterator that indicates the destination for the copied elements.
 
 *_Pred*
- The condition against which every element in the range is tested. This condition is provided by a user-defined predicate function object. A predicate takes one argument and returns `true` or `false`.
+ The condition against which every element in the range is tested. This condition is provided by a user-defined predicate function object. A predicate takes one argument and returns **true** or **false**.
 
 ### Return Value
 
@@ -801,7 +801,7 @@ bool equal(
 
 The range to be searched must be valid; all iterators must be dereferenceable and the last position is reachable from the first by incrementation.
 
-If the two ranges are equal length, then the time complexity of the algorithm is linear in the number of elements contained in the range. Otherwise the function immediately returns `false`.
+If the two ranges are equal length, then the time complexity of the algorithm is linear in the number of elements contained in the range. Otherwise the function immediately returns **false**.
 
 Neither the `operator==` nor the user-defined predicate is required to impose an equivalence relation that symmetric, reflexive and transitive between its operands.
 
@@ -1499,11 +1499,11 @@ InputIterator find_if(
  An input iterator addressing the position one past the final element in the range to be searched.
 
 *pred*
- User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be satisfied by the element being searched for. A predicate takes single argument and returns `true` (satisfied) or `false` (not satisfied). The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **const** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
+ User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be satisfied by the element being searched for. A predicate takes single argument and returns **true** (satisfied) or **false** (not satisfied). The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **const** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
 
 ### Return Value
 
-An input iterator that refers to the first element in the range that satisfies the condition specified by the predicate (the predicate results in `true`). If no element is found to satisfy the predicate, returns *last*.
+An input iterator that refers to the first element in the range that satisfies the condition specified by the predicate (the predicate results in **true**). If no element is found to satisfy the predicate, returns *last*.
 
 ### Remarks
 
@@ -1616,11 +1616,11 @@ InputIterator find_if_not(
  An input iterator addressing the position one past the final element in the range to be searched.
 
 *pred*
- User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be not satisfied by the element being searched for. A predicate takes single argument and returns `true` (satisfied) or `false` (not satisfied). The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **const** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
+ User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be not satisfied by the element being searched for. A predicate takes single argument and returns **true** (satisfied) or **false** (not satisfied). The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **const** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
 
 ### Return Value
 
-An input iterator that refers to the first element in the range that does not satisfy the condition specified by the predicate (the predicate results in `false`). If all elements satisfy the predicate (the predicate results in `true` for every element), returns *last*.
+An input iterator that refers to the first element in the range that does not satisfy the condition specified by the predicate (the predicate results in **false**). If all elements satisfy the predicate (the predicate results in **true** for every element), returns *last*.
 
 ### Remarks
 
@@ -2284,7 +2284,7 @@ Merged inplace with binary predicate mod_lesser specified,
 
 ## <a name="is_heap"></a>  is_heap
 
-Returns `true` if the elements in the specified range form a heap.
+Returns **true** if the elements in the specified range form a heap.
 
 ```cpp
 template<class RandomAccessIterator>
@@ -2308,11 +2308,11 @@ bool is_heap(
  A random access iterator that indicates the end of a range.
 
 *comp*
- A condition to test to order elements. A binary predicate takes a single argument and returns `true` or `false`.
+ A condition to test to order elements. A binary predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
-Returns `true` if the elements in the specified range form a heap, `false` if they do not.
+Returns **true** if the elements in the specified range form a heap, **false** if they do not.
 
 ### Remarks
 
@@ -2362,7 +2362,7 @@ The second template function behaves the same as the first, except that it uses 
 
 ## <a name="is_partitioned"></a>  is_partitioned
 
-Returns `true` if all the elements in the given range that test `true` for a condition come before any elements that test `false`.
+Returns **true** if all the elements in the given range that test **true** for a condition come before any elements that test **false**.
 
 ```cpp
 template<class InputIterator, class BinaryPredicate>
@@ -2381,15 +2381,15 @@ bool is_partitioned(
  An input iterator that indicates the end of a range.
 
 *comp*
- The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true` or `false`.
+ The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
-Returns true when all of the elements in the given range that test `true` for a condition come before any elements that test `false`, and otherwise returns `false`.
+Returns true when all of the elements in the given range that test **true** for a condition come before any elements that test **false**, and otherwise returns **false**.
 
 ### Remarks
 
-The template function returns `true` only if all elements in `[` `first ,` `last )` are partitioned by *comp*; that is, all elements `X` in `[` `first ,` `last )` for which `comp (X)` is true occur before all elements `Y` for which `comp (Y)` is `false`.
+The template function returns **true** only if all elements in `[` `first ,` `last )` are partitioned by *comp*; that is, all elements `X` in `[` `first ,` `last )` for which `comp (X)` is true occur before all elements `Y` for which `comp (Y)` is **false**.
 
 ## <a name="is_permutation"></a>  is_permutation
 
@@ -2445,13 +2445,13 @@ bool is_permutation(
 
 ### Return Value
 
-`true` when the ranges can be rearranged so as to be identical according to the comparator predicate; otherwise, `false`.
+**true** when the ranges can be rearranged so as to be identical according to the comparator predicate; otherwise, **false**.
 
 ### Remarks
 
 `is_permutation` has quadratic complexity in the worst case.
 
-The first template function assumes that there are as many elements in the range beginning at *First2* as there are in the range designated by [ `First1`, `Last1`). If there are more elements in the second range, they are ignored; if there are less, undefined behavior will occur. The third template function (C++14 and later) does not make this assumption.  Both return `true` only if, for each element X in the range designated by [ `First1`, `Last1`) there are as many elements Y in the same range for which X == Y as there are in the range beginning at *First2* or [ `First2, Last2).` Here, `operator==` must perform a pairwise comparison between its operands.
+The first template function assumes that there are as many elements in the range beginning at *First2* as there are in the range designated by [ `First1`, `Last1`). If there are more elements in the second range, they are ignored; if there are less, undefined behavior will occur. The third template function (C++14 and later) does not make this assumption.  Both return **true** only if, for each element X in the range designated by [ `First1`, `Last1`) there are as many elements Y in the same range for which X == Y as there are in the range beginning at *First2* or [ `First2, Last2).` Here, `operator==` must perform a pairwise comparison between its operands.
 
 The second and fourth template functions behave the same, except that they replace `operator==(X, Y)` with `Pred(X, Y)`. To behave correctly, the predicate must be symmetric, reflexive and transitive.
 
@@ -2514,7 +2514,7 @@ int main()
 
 ## <a name="is_sorted"></a>  is_sorted
 
-Returns `true` if the elements in the specified range are in sorted order.
+Returns **true** if the elements in the specified range are in sorted order.
 
 ```cpp
 template<class ForwardIterator>
@@ -2538,7 +2538,7 @@ bool is_sorted(
  A forward iterator that indicates the end of a range.
 
 *comp*
- The condition to test to determine an order between two elements. A predicate takes a single argument and returns `true` or `false`. This performs the same task as `operator<`.
+ The condition to test to determine an order between two elements. A predicate takes a single argument and returns **true** or **false**. This performs the same task as `operator<`.
 
 ### Remarks
 
@@ -2550,7 +2550,7 @@ The second template function returns `is_sorted_until( first, last , comp ) == l
 
 Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.
 
-The second version lets you provide a `BinaryPredicate` function that returns `true` when two given elements are in sorted order, and `false` otherwise.
+The second version lets you provide a `BinaryPredicate` function that returns **true** when two given elements are in sorted order, and **false** otherwise.
 
 ```cpp
 template<class ForwardIterator>
@@ -2575,7 +2575,7 @@ template<class ForwardIterator, class BinaryPredicate>
  A forward iterator that indicates the end of a range.
 
 *comp*
- The condition to test to determine an order between two elements. A predicate takes a single argument and returns `true` or `false`.
+ The condition to test to determine an order between two elements. A predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
@@ -4609,7 +4609,7 @@ int main() {
 
 ## <a name="none_of"></a>  none_of
 
-Returns `true` when a condition is never present among elements in the given range.
+Returns **true** when a condition is never present among elements in the given range.
 
 ```cpp
 template<class InputIterator, class BinaryPredicate>
@@ -4625,15 +4625,15 @@ bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
  An input iterator that indicates the end of a range of elements.
 
 *comp*
- The condition to test for. This is provided by a user-defined predicate function object that defines the condition. A predicate takes a single argument and returns `true` or `false`.
+ The condition to test for. This is provided by a user-defined predicate function object that defines the condition. A predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
-Returns `true` if the condition is not detected at least once in the indicated range, and `false` if the condition is detected.
+Returns **true** if the condition is not detected at least once in the indicated range, and **false** if the condition is detected.
 
 ### Remarks
 
-The template function returns `true` only if, for some `N` in the range `[0, last - first)`, the predicate `comp(*(first + N))` is always `false`.
+The template function returns **true** only if, for some `N` in the range `[0, last - first)`, the predicate `comp(*(first + N))` is always **false**.
 
 ## <a name="partial_sort"></a>  partial_sort
 
@@ -4786,7 +4786,7 @@ RandomAccessIterator partial_sort_copy(
  A random-access iterator addressing the position one past the final element in the sorted destination range.
 
 *comp*
- User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.
+ User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
 
 ### Return Value
 
@@ -4951,7 +4951,7 @@ int main( ) {
 
 ## <a name="partition_copy"></a>  partition_copy
 
-Copies elements for which a condition is `true` to one destination, and for which the condition is `false` to another. The elements must come from a specified range.
+Copies elements for which a condition is **true** to one destination, and for which the condition is **false** to another. The elements must come from a specified range.
 
 ```cpp
 template<class InputIterator, class OutputIterator1, class OutputIterator2, class Predicate>
@@ -4980,7 +4980,7 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
  An output iterator used to copy elements that return false for a condition tested by using *_Pred*.
 
 *_Pred*
- The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A predicate takes a single argument and returns `true` or `false`.
+ The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A predicate takes a single argument and returns **true** or **false**.
 
 ### Remarks
 
@@ -5008,7 +5008,7 @@ template<class ForwardIterator, class Predicate>
  A `ForwardIterator` that indicates the end of a range.
 
 *comp*
- The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true` or `false`.
+ The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns **true** or **false**.
 
 ### Return Value
 
@@ -5016,7 +5016,7 @@ Returns a `ForwardIterator` that refers to the first element that does not fulfi
 
 ### Remarks
 
-The template function finds the first iterator `it` in `[first, last)` for which `comp(*it)` is `false`. The sequence must be ordered by *comp*.
+The template function finds the first iterator `it` in `[first, last)` for which `comp(*it)` is **false**. The sequence must be ordered by *comp*.
 
 ## <a name="pop_heap"></a>  pop_heap
 
@@ -5149,11 +5149,11 @@ template<class BidirectionalIterator, class BinaryPredicate>
  A bidirectional iterator pointing to the position one past the final element in the range to be permuted.
 
 *comp*
- User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.
+ User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
 
 ### Return Value
 
-`true` if the lexicographically previous permutation exists and has replaced the original ordering of the range; otherwise `false`, in which case the ordering is transformed into the lexicographically largest permutation.
+**true** if the lexicographically previous permutation exists and has replaced the original ordering of the range; otherwise **false**, in which case the ordering is transformed into the lexicographically largest permutation.
 
 ### Remarks
 
@@ -7504,7 +7504,7 @@ template<class RandomAccessIterator, class Predicate>
  A random-access iterator addressing the position one past the final element in the range to be sorted.
 
 *comp*
- User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns `true` if the two arguments are in order and `false` otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](../standard-library/algorithms.md).
+ User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns **true** if the two arguments are in order and **false** otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](../standard-library/algorithms.md).
 
 ### Remarks
 
