@@ -63,7 +63,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 ## <a name="from_time_t"></a>  system_clock::from_time_t
 
-Static method that returns a [time_point](../standard-library/time-point-class.md) that most closely approximates the time that is represented by `Tm`.
+Static method that returns a [time_point](../standard-library/time-point-class.md) that most closely approximates the time that is represented by *Tm*.
 
 ```cpp
 static time_point from_time_t(time_t Tm) noexcept;
@@ -71,7 +71,7 @@ static time_point from_time_t(time_t Tm) noexcept;
 
 ### Parameters
 
-`Tm`
+*Tm*  
  A [time_t](../c-runtime-library/standard-types.md) object.
 
 ## <a name="is_monotonic_constant"></a>  system_clock::is_monotonic Constant
@@ -84,7 +84,7 @@ static const bool is_monotonic = false;
 
 ### Return Value
 
-In this implementation, `system_clock::is_monotonic` always returns `false`.
+In this implementation, `system_clock::is_monotonic` always returns **false**.
 
 ### Remarks
 
@@ -100,7 +100,7 @@ static const bool is_steady = false;
 
 ### Return Value
 
-In this implementation, `system_clock::is_steady` always returns `false`.
+In this implementation, `system_clock::is_steady` always returns **false**.
 
 ### Remarks
 
@@ -120,7 +120,7 @@ A [time_point](../standard-library/time-point-class.md) object that represents t
 
 ## <a name="to_time_t"></a>  system_clock::to_time_t
 
-Static method that returns a [time_t](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by `Time`.
+Static method that returns a [time_t](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
 
 ```cpp
 static time_t to_time_t(const time_point& Time) noexcept;
@@ -128,7 +128,7 @@ static time_t to_time_t(const time_point& Time) noexcept;
 
 ### Parameters
 
-`Time`
+*Time*  
  A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also

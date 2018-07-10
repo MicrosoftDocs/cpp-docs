@@ -49,11 +49,11 @@ public:
 ### Parameters
 
 *RealType*
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).
+ The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
+The template class describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|
@@ -158,7 +158,7 @@ explicit student_t_distribution(const param_type& parm);
 
 ### Parameters
 
-*n*
+*n*  
  The `n` distribution parameter.
 
 *parm*
@@ -189,10 +189,10 @@ struct param_type {
 
 ### Parameters
 
-*n*
+*n*  
 The `n` distribution parameter.
 
-*right*
+*right*  
 The `param_type` object to compare to this.
 
 ### Remarks
