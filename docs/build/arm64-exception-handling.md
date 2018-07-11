@@ -206,7 +206,7 @@ With the current implementation, functions which have rfg enabled are required t
 
 ## ARM64 Exception Handling Information
 
-###.pdata Records
+### .pdata Records
 
 The .pdata records are an ordered array of fixed-length items which describe every stack-manipulating function in a PE binary. Note carefully the phrase "stack-manipulating": leaf functions which do not require any local storage and which do not need to save/restore non-volatile registers do not require a .pdata record; these should be explicitly omitted to save space. A unwind from one of these functions can simply get the return address from LR to move up to the caller.
 
@@ -232,7 +232,7 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
 
 This data is broken into four sections:
 
-1. A 1 or 2-word header describing the overall size of the structure and providing key function data. The second word is only present if both the Epilog Count and Code Words fields are set to 0. The bits are broken out as:
+1. A 1 or 2-word header describing the overall size of the structure and providing key function data. The second word is only present if both the **Epilog Count** and **Code Words** fields are set to 0. These are the bit fields in the header:
 
    a. **Function Length** is an 18-bit field indicating the total length of the function in bytes, divided by 4. If a function is larger than 1M, then multiple pdata and xdata records must be used to describe the function. See the [Large functions](#large-functions) section for more details.
 
