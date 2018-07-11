@@ -2659,7 +2659,7 @@ int main( )
 
 ## See also
 
-[\<map> Members](http://msdn.microsoft.com/en-us/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
+[\<map> Members](http://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [Containers](../cpp/containers-modern-cpp.md)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
