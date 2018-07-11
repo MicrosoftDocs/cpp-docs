@@ -25,19 +25,29 @@ EXPORTS
   
  The syntax for an export `definition` is:  
   
-```  
-  
-entryname[=internalname] [@ordinal [NONAME]] [[PRIVATE] | [DATA]]  
-```  
-  
- `entryname` is the function or variable name that you want to export. This is required. If the name that you export differs from the name in the DLL, specify the export's name in the DLL by using `internalname`. For example, if your DLL exports a function `func1` and you want callers to use it as `func2`, you would specify:  
-  
-```  
-EXPORTS  
-   func2=func1  
-```  
-  
- Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name as the `entryname` or `internalname`, or define the exported functions by using `extern "C"` in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (_) prefix and a suffix composed of the at sign (@) followed by the number of bytes (in decimal) in the argument list.  
+```
+
+entryname[=internal_name|other_module.another_exported_name] [@Ordinal [NONAME]] [[PRIVATE] | [DATA]]
+
+```
+
+`entryname` is the function or variable name that you want to export. This is required. If the name that you export differs from the name in the DLL, specify the export's name in the DLL by using internal_name. For example, if your DLL exports a function `func1` and you want callers to use it as `func2`, you would specify:
+
+```
+EXPORTS
+func2=func1
+```
+
+If the name that you export is from other module, specify the export's name in the DLL by using *other_module.exported_name*. For example, if your DLL exports a function `other_module.func1` and you want callers to use it as `func2`, you would specify:
+
+```
+
+EXPORTS
+func2=other_module.func1
+
+```
+
+Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name internal_name or define the exported functions by using extern "C" in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (_) prefix and a suffix composed of the at sign (@) followed by the number of bytes (in decimal) in the argument list.  
   
  To find the decorated names produced by the compiler, use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool or the linker [/MAP](../../build/reference/map-generate-mapfile.md) option. The decorated names are compiler-specific. If you export the decorated names in the .DEF file, executables that link to the DLL must also be built by using the same version of the compiler. This ensures that the decorated names in the caller match the exported names in the .DEF file.  
   
