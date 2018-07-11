@@ -229,11 +229,11 @@ virtual BOOL OnDrop(
  *dropEffect*  
  The effect that the user chose for the drop operation. It can be one or more of the following:  
   
-  - DROPEFFECT_COPY A copy operation would be performed.  
+ - DROPEFFECT_COPY A copy operation would be performed.  
       
-  - DROPEFFECT_MOVE A move operation would be performed.  
+ - DROPEFFECT_MOVE A move operation would be performed.  
       
-  - DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
+ - DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
   
  *point*  
  Contains the location of the cursor, in pixels, relative to the screen.  

@@ -16,23 +16,23 @@ A *constant* value is one that doesn't change. C++ provides two keywords to enab
   
  C++ requires constant expressions — expressions that evaluate to a constant — for declarations of:  
   
-  -   Array bounds  
+ -   Array bounds  
       
-  -   Selectors in case statements  
+ -   Selectors in case statements  
       
-  -   Bit-field length specification  
+ -   Bit-field length specification  
       
-  -   Enumeration initializers  
+ -   Enumeration initializers  
   
  The only operands that are legal in constant expressions are:  
   
-  -   Literals  
+ -   Literals  
       
-  -   Enumeration constants  
+ -   Enumeration constants  
       
-  -   Values declared as const that are initialized with constant expressions  
+ -   Values declared as const that are initialized with constant expressions  
       
-  -   **sizeof** expressions  
+ -   **sizeof** expressions  
   
  Nonintegral constants must be converted (either explicitly or implicitly) to integral types to be legal in a constant expression. Therefore, the following code is legal:  
   

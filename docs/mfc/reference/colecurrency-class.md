@@ -226,35 +226,35 @@ enum CurrencyStatus{
 ### Remarks  
  For a brief description of these status values, see the following list:  
   
-   - `COleCurrency::valid` Indicates that this `COleCurrency` object is valid.  
+ - `COleCurrency::valid` Indicates that this `COleCurrency` object is valid.  
       
-   - `COleCurrency::invalid` Indicates that this `COleCurrency` object is invalid; that is, its value may be incorrect.  
+ - `COleCurrency::invalid` Indicates that this `COleCurrency` object is invalid; that is, its value may be incorrect.  
       
-   - `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
+ - `COleCurrency::null` Indicates that this `COleCurrency` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)  
   
  The status of a `COleCurrency` object is invalid in the following cases:  
   
-    - If its value is set from a VARIANT or `COleVariant` value that could not be converted to a currency value.  
+  - If its value is set from a VARIANT or `COleVariant` value that could not be converted to a currency value.  
       
-    - If this object has experienced an overflow or underflow during an arithmetic assignment operation, for example `+=` or **\*=**.  
+  - If this object has experienced an overflow or underflow during an arithmetic assignment operation, for example `+=` or **\*=**.  
       
-    - If an invalid value was assigned to this object.  
+  - If an invalid value was assigned to this object.  
       
-    - If the status of this object was explicitly set to invalid using [SetStatus](#setstatus).  
+  - If the status of this object was explicitly set to invalid using [SetStatus](#setstatus).  
   
  For more information on operations that may set the status to invalid, see the following member functions:  
   
-   - [COleCurrency](#colecurrency)  
+ - [COleCurrency](#colecurrency)  
       
-   - [operator =](#operator_eq)  
+ - [operator =](#operator_eq)  
       
-   - [operator +, -](#operator_plus_minus)  
+ - [operator +, -](#operator_plus_minus)  
       
-   - [operator +=, -=](#operator_plus_minus_eq)  
+ - [operator +=, -=](#operator_plus_minus_eq)  
       
-   - [operator */](#operator_star)  
+ - [operator */](#operator_star)  
       
-   - [operator *=, /=](#operator_star_div_eq)  
+ - [operator *=, /=](#operator_star_div_eq)  
   
  > [!CAUTION]
  >  This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.  

@@ -76,11 +76,11 @@ class CSplitterWnd : public CWnd
   
  A `CSplitterWnd` object is usually embedded in a parent [CFrameWnd](../../mfc/reference/cframewnd-class.md) or [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) object. Create a `CSplitterWnd` object using the following steps:  
   
-1.  Embed a `CSplitterWnd` member variable in the parent frame.  
+  1.  Embed a `CSplitterWnd` member variable in the parent frame.  
   
-2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function.  
+  2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function.  
   
-3.  From within the overridden `OnCreateClient`, call the [Create](#create) or [CreateStatic](#createstatic) member function of `CSplitterWnd`.  
+  3.  From within the overridden `OnCreateClient`, call the [Create](#create) or [CreateStatic](#createstatic) member function of `CSplitterWnd`.  
   
  Call the `Create` member function to create a dynamic splitter window. A dynamic splitter window typically is used to create and scroll a number of individual panes, or views, of the same document. The framework automatically creates an initial pane for the splitter; then the framework creates, resizes, and disposes of additional panes as the user operates the splitter window's controls.  
   
@@ -104,15 +104,15 @@ class CSplitterWnd : public CWnd
   
  For further information on splitter windows, see:  
   
-    - [Technical Note 29](../../mfc/tn029-splitter-windows.md)  
+ - [Technical Note 29](../../mfc/tn029-splitter-windows.md)  
   
-    - Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd  
+ - Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd  
   
-    For more information on how to create dynamic splitter windows, see:  
+ For more information on how to create dynamic splitter windows, see:  
   
-    - MFC sample [Scribble](../../visual-cpp-samples.md)  
+ - MFC sample [Scribble](../../visual-cpp-samples.md)  
   
-    - MFC sample [VIEWEX](../../visual-cpp-samples.md).  
+ - MFC sample [VIEWEX](../../visual-cpp-samples.md).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
