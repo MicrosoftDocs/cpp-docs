@@ -19,13 +19,13 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 >  This wizard requires you to click the **Data Source** button to select a data source before entering names in the `Class` and **.h file** fields.  
   
 ## UIElement List  
- **Data Source**  
- The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the Windows SDK documentation.  
+**Data Source**  
+The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the Windows SDK documentation.  
   
 > [!NOTE]
 >  In previous releases, Shift-clicking the **Data Source** button opened a File Open dialog to allow you to select a Data Link (.udl) file. This functionality is no longer supported.  
   
- The dialog box has four tabs:  
+The dialog box has four tabs:  
   
  - **Provider** tab  
   
@@ -37,7 +37,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
 The following additional information describes the tabs in the **Data Link Properties** dialog box.  
   
- Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  
+Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  
   
  **Provider**  
    Select an appropriate provider to manage the connection to the data source. The type of provider is typically determined by the type of database to which you are connecting. Click the **Next** button or click the **Connection** tab.  
@@ -83,14 +83,14 @@ The following additional information describes the tabs in the **Data Link Prope
   
      4. Click **Test Connection**; if the test succeeds, click **OK**. If not, check your logon information, try another database, or try another data server.  
   
- **Advanced**  
+**Advanced**  
   **Network settings:** Specify the **Impersonation level** (the level of impersonation that the server is allowed to use when impersonating the client; corresponds directly to RPC impersonation levels) and **Protection level** (the level of protection of data sent between client and server; corresponds directly to RPC protection levels).  
   
   **Other:** In **Connect timeout**, specify the number of seconds of idle time allowed before a timeout occurs. In **Access permissions**, specify the access permissions on the data connection.  
   
     For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.  
   
- **All**  
+**All**  
      This tab displays a summary of the initialization properties for the data source and connection you have specified. You can edit these values.  
   
      Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  

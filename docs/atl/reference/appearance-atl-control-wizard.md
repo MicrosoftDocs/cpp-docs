@@ -18,8 +18,8 @@ Insert "Search Results" summary here.
  Use this page of the wizard to identify additional user element options for the control. This page is available for controls identified as **Standard controls** under **Control type** on the [Options, ATL Control Wizard](../../atl/reference/options-atl-control-wizard.md) page.  
   
 ## UIElement List  
- **View status**  
- Sets the appearance of the control within the container.  
+**View status**  
+Sets the appearance of the control within the container.  
   
  -   **Opaque**: Sets the VIEWSTATUS_OPAQUE bit in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration and draws the entire control rectangle passed to the [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) method. The control appears completely opaque, and none of the container shows behind the control boundaries.      
       
@@ -31,8 +31,8 @@ Insert "Search Results" summary here.
       
   This option is available only if the **Opaque** option is also selected.  
   
- **Add control based on**  
- Sets the control to be based on a Windows control type by adding a [CContainedWindow](ccontainedwindowt-class.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
+**Add control based on**  
+Sets the control to be based on a Windows control type by adding a [CContainedWindow](ccontainedwindowt-class.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
 
  -   `Button`  
       
@@ -66,8 +66,8 @@ Insert "Search Results" summary here.
       
  -   `SysTreeView32`  
   
- **Misc status**  
- Sets additional appearance and behavior options for the control.  
+**Misc status**  
+Sets additional appearance and behavior options for the control.  
   
  -   **Invisible at run-time**: Sets the control to be invisible at run time. You can use invisible controls to perform operations in the background, such as firing events at timed intervals.  
       
@@ -75,8 +75,8 @@ Insert "Search Results" summary here.
       
   -   **Acts like label**: Sets the OLEMISC_ACTSLIKELABEL bit in the OLEMISC enumeration to enable a control to replace the container's native label. The container determines what to do with this flag, if anything.  
   
- **Other**  
- Sets additional behavior options for the control.  
+**Other**  
+Sets additional behavior options for the control.  
   
  -   **Normalized DC**: Sets the control to create a normalized device context when it is called to draw itself. This action standardizes the control's appearance, but it makes drawing less efficient.  
       
