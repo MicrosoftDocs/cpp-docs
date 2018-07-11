@@ -330,7 +330,7 @@ Unwind code|Bits and interpretation
 `nop`|            11100011: no unwind operation is required.
 `end`|            11100100: end of unwind code. Implies ret in epilog.
 `end_c`|        11100101: end of unwind code in current chained scope.
-`save_next`|        11100110: save next non-volatile Int or FP register pair.**
+`save_next`|        11100110: save next non-volatile Int or FP register pair.
 `arithmetic(add)`|    11100111\| 000zxxxx: add cookie reg(z) to lr (0=x28, 1=sp); add lr, lr, reg(z)
 `arithmetic(sub)`|    11100111\| 001zxxxx: sub cookie reg(z) from lr (0=x28, 1=sp); sub lr, lr, reg(z)
 `arithmetic(eor)`|    11100111\| 010zxxxx: eor lr with cookie reg(z) (0=x28, 1=sp); eor lr, lr, reg(z)
@@ -382,36 +382,36 @@ The fields are as follows:
 
 Canonical prologs that fall into categories 1, 2 (without outgoing parameter area), 3 and 4 in section above can be represented by packed unwind format.  The epilogs for canonical functions follow a very similar form, except **H** has no effect, the `set_fp` instruction is omitted, and the order of steps as well as instructions in each step are reversed in epilog. The algorithm for packed xdata follows these steps, detailed in the following table:
 
-Step 0: perform the pre-computation of the size of each area.
+Step 0: Perform the pre-computation of the size of each area.
 
-Step 1: save Int callee-saved registers.
+Step 1: Save Int callee-saved registers.
 
-Step 2: is specific for type 4 in early section. lr is saved at the end of Int area.
+Step 2: This step is specific for type 4 in early sections. lr is saved at the end of Int area.
 
-Step 3: save FP callee-saved registers.
+Step 3: Save FP callee-saved registers.
 
-Step 4: save input arguments in home parameter area.
+Step 4: Save input arguments in the home parameter area.
 
-Step 5: allocate remaining stack, including local area, \<r29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
+Step 5: Allocate remaining stack, including local area, \<r29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
 
 Step #|Flag values|# of instructions|Opcode|Unwind Code
 -|-|-|-|-
 0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
 1|0 < **RegI** <= 10|RegI / 2 + **RegI** % 2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
-2|**CR**==01*|1|`str lr,[sp, #intsz-8]`*|`save_reg`
-3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp, #intsz]`**<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
+2|**CR**==01*|1|`str lr,[sp, #intsz-8]`\*|`save_reg`
+3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
 4|**H** == 1|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
-5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`***|`save_fplr_x`<br/>`set_fp`
+5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
 5b|**CR** == 11 &&<br/>512 < #locsz <= 4088|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
 5c|**CR** == 11 && #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
 5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4088|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
 5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
-*: If **CR** == 01 and **RegI** is an odd number, Step 2 and last save_rep in step 1 are merged into one save_regp.
+\*: If **CR** == 01 and **RegI** is an odd number, Step 2 and last save_rep in step 1 are merged into one save_regp.
 
-** If **RegI** == **CR** == 0, and **RegF** != 0, the first stp for the floating-point does the predecrement.
+\*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first stp for the floating-point does the predecrement.
 
-*** No instruction corresponding to `mov r29, sp` is present in the epilog. If a function requires restoration of sp from r29 then we cannot use packed unwind data.
+\*\*\* No instruction corresponding to `mov r29, sp` is present in the epilog. If a function requires restoration of sp from r29 then we cannot use packed unwind data.
 
 ### Unwinding partial prologs and epilogs
 
@@ -426,7 +426,7 @@ For example, take this prolog and epilog sequence:
 0004:    stp    d8,d9,[sp,224]              // save_fregp 0, 224
 0008:    stp    r19,r20,[sp,240]            // save_regp 0, 240
 000c:    mov    r29,sp                      // set_fp
-...
+         ...
 0100:    mov    sp,r29                      // set_fp
 0104:    ldp    r19,r20,[sp,240]            // save_regp 0, 240
 0108:    ldp    d8,d9,[sp,224]              // save_fregp 0, 224
