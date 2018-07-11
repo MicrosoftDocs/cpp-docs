@@ -25,12 +25,12 @@ struct is_fundamental;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a fundamental type, that is, `void`, an integral type, an floating point type, or a `cv-qualified` form of one of them, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a fundamental type, that is, **void**, an integral type, an floating point type, or a `cv-qualified` form of one of them, otherwise it holds false.
 
 ## Example
 

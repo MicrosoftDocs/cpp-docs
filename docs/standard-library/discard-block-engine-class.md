@@ -25,14 +25,14 @@ class discard_block_engine;
 
 ### Parameters
 
-`Engine`
+*Engine*
  The base engine type.
 
-`P`
+*P*
  **Block size**. The number of values in each block.
 
-`R`
- **Used block**. The number of values in each block that are used. The rest are discarded ( `P` - `R`). **Precondition**: `0 < R ≤ P`
+*R*
+ **Used block**. The number of values in each block that are used. The rest are discarded (`P` - `R`). **Precondition**: `0 < R ≤ P`
 
 ## Members
 

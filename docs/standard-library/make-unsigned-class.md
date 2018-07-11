@@ -30,11 +30,11 @@ using make_unsigned_t = typename make_unsigned<T>::type;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`T`|The type to modify.|
+|*T*|The type to modify.|
 
 ## Remarks
 
-An instance of the type modifier holds a modified-type that is `T` if `is_unsigned<T>` holds true. Otherwise it is the smallest signed type `ST` for which `sizeof (T) <= sizeof (ST)`.
+An instance of the type modifier holds a modified-type that is *T* if `is_unsigned<T>` holds true. Otherwise it is the smallest signed type `ST` for which `sizeof (T) <= sizeof (ST)`.
 
 ## Requirements
 

@@ -28,10 +28,10 @@ bool operator>= (
 
 ### Parameters
 
-`Left`
+*Left*  
  The left `thread::id` object.
 
-`Right`
+*Right*  
  The right `thread::id` object.
 
 ### Return Value
@@ -54,10 +54,10 @@ bool operator> (
 
 ### Parameters
 
-`Left`
+*Left*  
  The left `thread::id` object.
 
-`Right`
+*Right*  
  The right `thread::id` object.
 
 ### Return Value
@@ -80,10 +80,10 @@ bool operator<= (
 
 ### Parameters
 
-`Left`
+*Left*  
  The left `thread::id` object.
 
-`Right`
+*Right*  
  The right `thread::id` object.
 
 ### Return Value
@@ -106,15 +106,15 @@ bool operator<(
 
 ### Parameters
 
-`Left`
+*Left*  
  The left `thread::id` object.
 
-`Right`
+*Right*  
  The right `thread::id` object.
 
 ### Return Value
 
-`true` if `Left` precedes `Right` in the total ordering; otherwise, `false`.
+**true** if *Left* precedes *Right* in the total ordering; otherwise, **false**.
 
 ### Remarks
 
@@ -134,10 +134,10 @@ bool operator!= (
 
 ### Parameters
 
-`Left`
+*Left*  
  The left `thread::id` object.
 
-`Right`
+*Right*  
  The right `thread::id` object.
 
 ### Return Value
@@ -159,16 +159,16 @@ bool operator== (
 ```
 
 ### Parameters
-
-`Left`
+ 
+*Left*  
  The left `thread::id` object.
 
-`Right`
+*Right*  
  The right `thread::id` object.
 
 ### Return Value
 
-`true` if the two objects represent the same thread of execution or if neither object represents a thread of execution; otherwise, `false`.
+**true** if the two objects represent the same thread of execution or if neither object represents a thread of execution; otherwise, **false**.
 
 ### Remarks
 
@@ -186,19 +186,19 @@ basic_ostream<Elem, Tr>& operator<<(
 
 ### Parameters
 
-`Ostr`
+*Ostr*  
  A [basic_ostream](../standard-library/basic-ostream-class.md) object.
 
-`Id`
+*Id*  
  A `thread::id` object.
 
 ### Return Value
 
-`Ostr`.
+*Ostr*.
 
 ### Remarks
 
-This function inserts `Id` into `Ostr`.
+This function inserts *Id* into *Ostr*.
 
 If two `thread::id` objects compare equal, the inserted text representations of those objects are the same.
 

@@ -30,7 +30,6 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
  **Header:** atlcom.h  
   
 ## See Also  
- [CComObjectRootEx Class Members](http://msdn.microsoft.com/en-us/e3ce9c3d-9c8e-4fe5-b682-8e56740a0164)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComObject Class](../../atl/reference/ccomobject-class.md)   

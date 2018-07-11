@@ -23,15 +23,15 @@ bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### Parameters
 
-`left`
+*left*  
  An object of type `unordered_map`.
 
-`right`
+*right*  
  An object of type `unordered_map`.
 
 ### Return Value
 
-`true` if the unordered_maps are not equal; `false` if they are equal.
+**true** if the unordered_maps are not equal; **false** if they are equal.
 
 ### Remarks
 
@@ -88,15 +88,15 @@ bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### Parameters
 
-`left`
+*left*  
  An object of type `unordered_map`.
 
-`right`
+*right*  
  An object of type `unordered_map`.
 
 ### Return Value
 
-`true` if the unordered_maps are equal; `false` if they are not equal.
+**true** if the unordered_maps are equal; **false** if they are not equal.
 
 ### Remarks
 
@@ -153,15 +153,15 @@ bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### Parameters
 
-`left`
+*left*  
  An object of type `unordered_multimap`.
 
-`right`
+*right*  
  An object of type `unordered_multimap`.
 
 ### Return Value
 
-`true` if the unordered_multimaps are not equal; `false` if they are equal.
+**true** if the unordered_multimaps are not equal; **false** if they are equal.
 
 ### Remarks
 
@@ -219,15 +219,15 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### Parameters
 
-`left`
+*left*  
  An object of type `unordered_multimap`.
 
-`right`
+*right*  
  An object of type `unordered_multimap`.
 
 ### Return Value
 
-`true` if the unordered_multimaps are equal; `false` if they are not equal.
+**true** if the unordered_multimaps are equal; **false** if they are not equal.
 
 ### Remarks
 

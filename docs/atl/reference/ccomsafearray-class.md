@@ -75,7 +75,7 @@ class CComSafeArray
 |[CComSafeArray::m_psa](#m_psa)|This data member holds the address of the `SAFEARRAY` structure.|  
   
 ## Remarks  
- `CComSafeArray` provides a wrapper for the [SAFEARRAY Data Type](http://msdn.microsoft.com/en-us/9ec8025b-4763-4526-ab45-390c5d8b3b1e) class, making it a simple matter to create and manage single- and multidimensional arrays of almost any of the VARIANT-supported types.  
+ `CComSafeArray` provides a wrapper for the [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) class, making it a simple matter to create and manage single- and multidimensional arrays of almost any of the VARIANT-supported types.  
   
  `CComSafeArray` simplifies passing arrays between processes, and in addition provides extra security by checking array index values against upper and lower bounds.  
   
@@ -555,7 +555,7 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
  The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are added to an array. The default value of TRUE ensures that a new copy is made of the data when the element is added to the array.  
   
 ## See Also  
- [SAFEARRAY Data Type](http://msdn.microsoft.com/en-us/9ec8025b-4763-4526-ab45-390c5d8b3b1e)   
+ [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)   
  [CComSafeArray::Create](#create)   
  [CComSafeArray::Destroy](#destroy)   
  [Class Overview](../../atl/atl-class-overview.md)

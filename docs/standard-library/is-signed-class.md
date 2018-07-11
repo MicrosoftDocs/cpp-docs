@@ -25,12 +25,12 @@ struct is_signed;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a signed integral type or a `cv-qualified` signed integral type, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a signed integral type or a `cv-qualified` signed integral type, otherwise it holds false.
 
 ## Example
 

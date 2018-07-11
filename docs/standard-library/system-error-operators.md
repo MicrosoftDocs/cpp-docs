@@ -29,8 +29,8 @@ bool operator==(const error_condition& left,
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|The object to be tested for equality.|
-|`right`|The object to be tested for equality.|
+|*left*|The object to be tested for equality.|
+|*right*|The object to be tested for equality.|
 
 ### Return Value
 
@@ -56,12 +56,12 @@ bool operator!=(const error_condition& left,
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|The object to be tested for inequality.|
-|`right`|The object to be tested for inequality.|
+|*left*|The object to be tested for inequality.|
+|*right*|The object to be tested for inequality.|
 
 ### Return Value
 
-**true** if the object passed in `left` is not equal to the object passed in `right`; otherwise **false**.
+**true** if the object passed in *left* is not equal to the object passed in *right*; otherwise **false**.
 
 ### Remarks
 
@@ -99,12 +99,12 @@ inline bool operator<(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|The object to be compared.|
-|`right`|The object to be compared.|
+|*left*|The object to be compared.|
+|*right*|The object to be compared.|
 
 ### Return Value
 
-**true** if the object passed in `left` is less than the object passed in `right`; Otherwise, **false**.
+**true** if the object passed in *left* is less than the object passed in *right*; Otherwise, **false**.
 
 ### Remarks
 

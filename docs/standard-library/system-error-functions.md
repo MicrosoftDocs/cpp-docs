@@ -38,7 +38,7 @@ error_code make_error_code(generic_errno _Errno);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Errno`|The enumeration value to store in the error code object.|
+|*_Errno*|The enumeration value to store in the error code object.|
 
 ### Return Value
 
@@ -58,7 +58,7 @@ error_condition make_error_condition(generic_errno _Errno);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Errno`|The enumeration value to store in the error condition object.|
+|*_Errno*|The enumeration value to store in the error condition object.|
 
 ### Return Value
 

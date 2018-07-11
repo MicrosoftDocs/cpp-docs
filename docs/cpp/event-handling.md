@@ -32,4 +32,3 @@ Event handling is primarily supported for COM classes (C++ classes that implemen
 ## See Also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [Event Handling Samples](http://msdn.microsoft.com/en-us/cc0287d4-f92b-4da5-85fc-a0f186e16424)

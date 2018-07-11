@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt;::reference::operator bool
 
-Provides an implicit conversion from `vector<bool>::reference` to `bool`.
+Provides an implicit conversion from `vector<bool>::reference` to **bool**.
 
 ## Syntax
 

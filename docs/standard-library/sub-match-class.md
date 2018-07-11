@@ -40,7 +40,7 @@ public:
 
 ### Parameters
 
-`BidIt`
+*BidIt*  
  The iterator type for submatches.
 
 ## Remarks
@@ -73,13 +73,13 @@ int compare(const value_type *ptr) const;
 
 ### Parameters
 
-`right`
+*right*  
  The submatch to compare to.
 
-`str`
+*str*  
  The string to compare to.
 
-`ptr`
+*ptr*  
  The null-terminated sequence to compare to.
 
 ### Remarks
@@ -352,7 +352,7 @@ bool matched;
 
 ### Remarks
 
-The member holds `true` only if the capture group associated with `*this` was part of the regular expression match.
+The member holds **true** only if the capture group associated with `*this` was part of the regular expression match.
 
 ### Example
 

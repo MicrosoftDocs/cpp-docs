@@ -18,7 +18,7 @@ helpviewer_keywords: ["std::is_assignable", "std::is_copy_assignable", "std::is_
 
 ## <a name="is_assignable"></a>  is_assignable
 
-Tests whether a value of `From` type can be assigned to a `To` type.
+Tests whether a value of *From* type can be assigned to a *To* type.
 
 ```cpp
 template <class To, class From>
@@ -27,15 +27,15 @@ struct is_assignable;
 
 ### Parameters
 
-To
+*To*  
  The type of the object that receives the assignment.
 
-From
+*From*  
  The type of the object that provides the value.
 
 ### Remarks
 
-The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both `From` and `To` must be complete types, `void`, or arrays of unknown bound.
+The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both *From* and *To* must be complete types, **void**, or arrays of unknown bound.
 
 ## <a name="is_copy_assignable"></a>  is_copy_assignable
 
@@ -48,12 +48,12 @@ struct is_copy_assignable;
 
 ### Parameters
 
-`Ty`
+*Ty*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that has a copy assignment operator, otherwise it holds false. Equivalent to is_assignable\<Ty&, const Ty&>.
+An instance of the type predicate holds true if the type *Ty* is a class that has a copy assignment operator, otherwise it holds false. Equivalent to is_assignable\<Ty&, const Ty&>.
 
 ## <a name="is_copy_constructible"></a>  is_copy_constructible
 
@@ -66,12 +66,12 @@ struct is_copy_constructible;
 
 ### Parameters
 
-`Ty`
+*Ty*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that has a copy constructor, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a class that has a copy constructor, otherwise it holds false.
 
 ### Example
 
@@ -119,12 +119,12 @@ struct is_default_constructible;
 
 ### Parameters
 
-`T`
+*T*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `T` is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type `T` must be a complete type, `void`, or an array of unknown bound.
+An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **void**, or an array of unknown bound.
 
 ### Example
 
@@ -172,7 +172,7 @@ struct is_move_assignable;
 
 ### Parameters
 
-`T`
+*T*  
  The type to query.
 
 ### Remarks
@@ -190,12 +190,12 @@ struct is_move_constructible;
 
 ### Parameters
 
-T
+*T*  
  The type to be evaluated
 
 ### Remarks
 
-A type predicate that evaluates to true if the type `T` can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.
+A type predicate that evaluates to true if the type *T* can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.
 
 ## <a name="is_nothrow_move_assignable"></a>  is_nothrow_move_assignable
 
@@ -208,12 +208,12 @@ struct is_nothrow_move_assignable;
 
 ### Parameters
 
-`Ty`
+*Ty*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `Ty` has a nothrow move assignment operator, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* has a nothrow move assignment operator, otherwise it holds false.
 
 ## <a name="is_trivially_copy_assignable"></a>  is_trivially_copy_assignable
 
@@ -226,14 +226,14 @@ struct is_trivially_copy_assignable;
 
 ### Parameters
 
-`T`
+*T*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `T` is a class that has a trivial copy assignment operator, otherwise it holds false.
+An instance of the type predicate holds true if the type *T* is a class that has a trivial copy assignment operator, otherwise it holds false.
 
-An assignment constructor for a class `T` is trivial if it is implicitly provided, the class `T` has no virtual functions, the class `T` has no virtual bases, the classes of all the non-static data members of class type have trivial assignment operators, and the classes of all the non-static data members of type array of class have trivial assignment operators.
+An assignment constructor for a class *T* is trivial if it is implicitly provided, the class *T* has no virtual functions, the class *T* has no virtual bases, the classes of all the non-static data members of class type have trivial assignment operators, and the classes of all the non-static data members of type array of class have trivial assignment operators.
 
 ## <a name="is_trivially_move_assignable"></a>  is_trivially_move_assignable
 
@@ -246,20 +246,20 @@ struct is_trivially_move_assignable;
 
 ### Parameters
 
-`Ty`
+*Ty*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that has a trivial move assignment operator, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a class that has a trivial move assignment operator, otherwise it holds false.
 
-A move assignment operator for a class `Ty` is trivial if:
+A move assignment operator for a class *Ty* is trivial if:
 
 it is implicitly provided
 
-the class `Ty` has no virtual functions
+the class *Ty* has no virtual functions
 
-the class `Ty` has no virtual bases
+the class *Ty* has no virtual bases
 
 the classes of all the non-static data members of class type have trivial move assignment operators
 
@@ -276,26 +276,26 @@ struct is_trivially_move_constructible;
 
 ### Parameters
 
-`Ty`
+*Ty*  
  The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that has a trivial move constructor, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a class that has a trivial move constructor, otherwise it holds false.
 
-A move constructor for a class `Ty` is trivial if:
+A move constructor for a class *Ty* is trivial if:
 
 it is implicitly declared
 
 its parameter types are equivalent to those of an implicit declaration
 
-the class `Ty` has no virtual functions
+the class *Ty* has no virtual functions
 
-the class `Ty` has no virtual bases
+the class *Ty* has no virtual bases
 
 the class has no volatile non-static data members
 
-all the direct bases of the class `Ty` have trivial move constructors
+all the direct bases of the class *Ty* have trivial move constructors
 
 the classes of all the non-static data members of class type have trivial move constructors
 

@@ -30,7 +30,7 @@ class insert_iterator;
 
 ## Remarks
 
-The container of type **Container** must satisfy the requirements for a variable-sized container and have a two-argument insert member function where the parameters are of type **Container::iterator** and **Container::value_type** and that returns a type **Container::iterator**. C++ Standard Library sequence and sorted associative containers satisfy these requirements and can be adapted to use with `insert_iterator`s. For associative containers, the position argument is treated as a hint, which has the potential to improve or degrade performance depending on how good the hint is. An `insert_iterator` must always be initialized with its container.
+The container of type `Container` must satisfy the requirements for a variable-sized container and have a two-argument insert member function where the parameters are of type `Container::iterator` and `Container::value_type` and that returns a type `Container::iterator`. C++ Standard Library sequence and sorted associative containers satisfy these requirements and can be adapted to use with `insert_iterator`s. For associative containers, the position argument is treated as a hint, which has the potential to improve or degrade performance depending on how good the hint is. An `insert_iterator` must always be initialized with its container.
 
 ### Constructors
 
@@ -69,7 +69,7 @@ typedef Container container_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Container**.
+The type is a synonym for the template parameter *Container*.
 
 ### Example
 
@@ -111,10 +111,10 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 
 ### Parameters
 
-`_Cont`
+*_Cont*
  The container into which the `insert_iterator` is to insert elements.
 
-`_It`
+*_It*
  The position for the insertion.
 
 ### Remarks
@@ -181,7 +181,7 @@ The member function returns the value of the element addressed.
 
 ### Remarks
 
-Used to implement the output iterator expression **\*Iter** = **value**. If **Iter** is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
+Used to implement the output iterator expression **\*Iter** = **value**. If `Iter` is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
 
 ### Example
 
@@ -229,7 +229,7 @@ After the insertions, the list L is:
 
 ## <a name="op_add_add"></a>  insert_iterator::operator++
 
-Increments the **insert_iterator** to the next location into which a value may be stored.
+Increments the `insert_iterator` to the next location into which a value may be stored.
 
 ```cpp
 insert_iterator<Container>& operator++();
@@ -305,7 +305,7 @@ insert_iterator<Container>& operator=(
 
 ### Parameters
 
-`val`
+*val*
  The value to be assigned to the container.
 
 ### Return Value

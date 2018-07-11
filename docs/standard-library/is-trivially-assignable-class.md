@@ -33,7 +33,7 @@ From
 
 ## Remarks
 
-The expression `declval<To>() = declval<From>()` must be well-formed, and must be known to the compiler to require no non-trivial operations. Both `From` and `To` must be complete types, `void`, or arrays of unknown bound.
+The expression `declval<To>() = declval<From>()` must be well-formed, and must be known to the compiler to require no non-trivial operations. Both `From` and `To` must be complete types, **void**, or arrays of unknown bound.
 
 ## Requirements
 

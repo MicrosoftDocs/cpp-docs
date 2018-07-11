@@ -20,11 +20,11 @@ An internal, auxiliary template class that supports objects that are subsets of 
 
 ## Remarks
 
-The class describes an object that stores a reference to an object **va** of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object **xa** of class **valarray<size_t>**, which describes the sequence of elements to select from the **valarray\<Type>** object.
+The class describes an object that stores a reference to an object `va` of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object `xa` of class `valarray<size_t>`, which describes the sequence of elements to select from the `valarray<Type>` object.
 
-You construct an **indirect_array\<Type>** object only by writing an expression of the form **va[xa]**. The member functions of class indirect_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.
+You construct an `indirect_array<Type>` object only by writing an expression of the form `va[xa]`. The member functions of class indirect_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
-The sequence consists of **xa.**[size](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.
+The sequence consists of **xa.**[size](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index **xa**[ `I`] within `va`.
 
 ## Example:
 

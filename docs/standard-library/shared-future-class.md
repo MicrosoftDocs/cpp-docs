@@ -79,7 +79,7 @@ Before it retrieves the result, this method blocks the current thread until the 
 
 For the partial specialization `shared_future<Ty&>`, the stored value is effectively a reference to the object that was passed to the *asynchronous provider* as the return value.
 
-Because no stored value exists for the specialization `shared_future<void>`, the method returns `void`.
+Because no stored value exists for the specialization `shared_future<void>`, the method returns **void**.
 
 ## <a name="op_eq"></a>  shared_future::operator=
 
@@ -92,7 +92,7 @@ shared_future& operator=(const shared_future& Right);
 
 ### Parameters
 
-`Right`
+*Right*
  A `shared_future` object.
 
 ### Return Value
@@ -101,9 +101,9 @@ shared_future& operator=(const shared_future& Right);
 
 ### Remarks
 
-For the first operator, `Right` no longer has an associated asynchronous state after the operation.
+For the first operator, *Right* no longer has an associated asynchronous state after the operation.
 
-For the second method, `Right` maintains its associated asynchronous state.
+For the second method, *Right* maintains its associated asynchronous state.
 
 ## <a name="shared_future"></a>  shared_future::shared_future Constructor
 
@@ -118,16 +118,16 @@ shared_future(const shared_future& Right);
 
 ### Parameters
 
-`Right`
+*Right*
  A [future](../standard-library/future-class.md) or `shared_future` object.
 
 ### Remarks
 
 The first constructor constructs a `shared_future` object that has no *associated asynchronous state*.
 
-The second and third constructors construct a `shared_future` object and transfer the associated asynchronous state from `Right`. `Right` no longer has an associated asynchronous state.
+The second and third constructors construct a `shared_future` object and transfer the associated asynchronous state from *Right*. *Right* no longer has an associated asynchronous state.
 
-The fourth constructor constructs a `shared_future` object that has the same associated asynchronous state as `Right`.
+The fourth constructor constructs a `shared_future` object that has the same associated asynchronous state as *Right*.
 
 ## <a name="valid"></a>  shared_future::valid
 
@@ -139,7 +139,7 @@ bool valid() noexcept;
 
 ### Return Value
 
-`true` if the object has an associated asynchronous state; otherwise, `false`.
+**true** if the object has an associated asynchronous state; otherwise, **false**.
 
 ## <a name="wait"></a>  shared_future::wait
 
@@ -165,7 +165,7 @@ future_status wait_for(
 
 ### Parameters
 
-`Rel_time`
+*Rel_time*
  A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
 
 ### Return Value
@@ -188,7 +188,7 @@ future_status wait_until(
 
 ### Parameters
 
-`Abs_time`
+*Abs_time*
  A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
 
 ### Return Value

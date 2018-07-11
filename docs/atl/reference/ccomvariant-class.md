@@ -78,7 +78,7 @@ HRESULT Attach(VARIANT* pSrc);
   
 ### Parameters  
  *pSrc*  
- [in] Points to the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) to be attached to the object.  
+ [in] Points to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -206,7 +206,7 @@ HRESULT Copy(const VARIANT* pSrc);
   
 ### Parameters  
  *pSrc*  
- [in] A pointer to the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) to be copied.  
+ [in] A pointer to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be copied.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -292,7 +292,7 @@ CComVariant& operator=(char cSrc) throw();
   
 ### Parameters  
  *varSrc*  
- [in] The `CComVariant` or [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.  
+ [in] The `CComVariant` or [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.  
   
  *bstrSrc*  
  [in] The BSTR to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_BSTR.  

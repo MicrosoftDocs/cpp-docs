@@ -32,13 +32,13 @@ bool operator==(null_ptr_type npc, const function<Fty>& f);
 
 ### Parameters
 
-`Fty`
+*Fty*
  The function type to wrap.
 
-`f`
+*f*
  The function object
 
-`npc`
+*npc*
  A null pointer.
 
 ### Remarks
@@ -92,13 +92,13 @@ bool operator!=(null_ptr_type npc, const function<Fty>& f);
 
 ### Parameters
 
-`Fty`
+*Fty*
  The function type to wrap.
 
-`f`
+*f*
  The function object
 
-`npc`
+*npc*
  A null pointer.
 
 ### Remarks

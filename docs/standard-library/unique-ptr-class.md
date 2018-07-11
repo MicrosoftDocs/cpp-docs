@@ -77,16 +77,16 @@ public:
 
 ### Parameters
 
-`Right`
+*Right*  
  A `unique_ptr`.
 
-`Nptr`
+*Nptr*  
  An `rvalue` of type `std::nullptr_t`.
 
-`Ptr`
+*Ptr*  
  A `pointer`.
 
-`Deleter`
+*Deleter*  
  A `deleter` function that is bound to a `unique_ptr`.
 
 ## Exceptions
@@ -135,7 +135,7 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 |Operator|Description|
 |-|-|
-|`operator bool`|The operator returns a value of a type that is convertible to `bool`. The result of the conversion to `bool` is `true` when `get() != pointer()`, otherwise `false`.|
+|**operator bool**|The operator returns a value of a type that is convertible to **bool**. The result of the conversion to **bool** is **true** when `get() != pointer()`, otherwise **false**.|
 |`operator->`|The member function returns `stored_ptr`.|
 |`operator*`|The member function returns `*stored_ptr`.|
 |[unique_ptr operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|
@@ -229,7 +229,7 @@ The type is a synonym for `Del::pointer` if defined, otherwise `Type *`.
 
 ## <a name="release"></a>  unique_ptr::release
 
-Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to `nullptr`.
+Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to **nullptr**.
 
 ```cpp
 pointer release();
@@ -292,7 +292,7 @@ Deleting Sample(3)
 
 ## <a name="reset"></a>  unique_ptr::reset
 
-Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to `nullptr`.
+Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to **nullptr**.
 
 ```cpp
 void reset(pointer ptr = pointer());
@@ -303,13 +303,13 @@ void reset(nullptr_t ptr);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the resource to take ownership of.|
+|*ptr*|A pointer to the resource to take ownership of.|
 
 ### Remarks
 
-Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to `ptr` and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#get_deleter) on the original stored pointer.
+Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to *ptr* and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#get_deleter) on the original stored pointer.
 
-Because `reset` first stores the new pointer `ptr`, and then deletes the original stored pointer, it's possible for `reset` to immediately delete `ptr` if it is the same as the original stored pointer.
+Because `reset` first stores the new pointer *ptr*, and then deletes the original stored pointer, it's possible for `reset` to immediately delete *ptr* if it is the same as the original stored pointer.
 
 ## <a name="swap"></a>  unique_ptr::swap
 
@@ -321,7 +321,7 @@ void swap(unique_ptr& right);
 
 ### Parameters
 
-`right`
+*right*  
  A `unique_ptr` used to swap pointers.
 
 ### Remarks
@@ -355,15 +355,15 @@ unique_ptr(unique_ptr<Ty2, Del2>&& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the resource to be assigned to a `unique_ptr.`|
-|`_Deleter`|A `deleter` to be assigned to a `unique_ptr`.|
-|`right`|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|
+|*ptr*|A pointer to the resource to be assigned to a `unique_ptr.`|
+|*_Deleter*|A `deleter` to be assigned to a `unique_ptr`.|
+|*right*|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|
 
 ### Remarks
 
-The first two constructors construct an object that manages no resource. The third constructor stores `ptr` in `stored_ptr`. The fourth constructor stores `ptr` in `stored_ptr` and `deleter` in `stored_deleter`.
+The first two constructors construct an object that manages no resource. The third constructor stores *ptr* in `stored_ptr`. The fourth constructor stores *ptr* in `stored_ptr` and `deleter` in `stored_deleter`.
 
-The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.release()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.
+The fifth constructor stores *ptr* in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.release()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.
 
 ## <a name="dtorunique_ptr"></a>  unique_ptr ~unique_ptr
 

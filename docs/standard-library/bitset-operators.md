@@ -32,15 +32,15 @@ operator&(
 
 ### Parameters
 
-`left`
+*left*
  The first of the two bitsets whose respective elements are to be combined with the bitwise `AND`.
 
-`right`
+*right*
  The second of the two valarrays whose respective elements are to be combined with the bitwise `AND`.
 
 ### Return Value
 
-A bitset whose elements are the result of performing the `AND` operation on the corresponding elements of `left` and `right`.
+A bitset whose elements are the result of performing the `AND` operation on the corresponding elements of *left* and *right*.
 
 ### Example
 
@@ -84,16 +84,16 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-`right`
+*right*
  An object of type **bitset\<N>** that is to be inserted into the output stream as a string.
 
 ### Return Value
 
-A text representation of the bit sequence in **ostr**.
+A text representation of the bit sequence in `ostr`.
 
 ### Remarks
 
-The template function overloads **operator<<**, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:
+The template function overloads `operator<<`, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:
 
 **ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )
 
@@ -144,21 +144,21 @@ _Istr,
 
 ### Parameters
 
-`_Istr`
+*_Istr*
  The string that is entered into the input stream to be inserted into the bitset.
 
-`right`
+*right*
  The bitset that is receiving the bits from the input stream.
 
 ### Return Value
 
-The template function returns the string `_Istr`.
+The template function returns the string *_Istr*.
 
 ### Remarks
 
-The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](basic-string-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.
+The template function overloads `operator>>` to store in the bitset _ *Right* the value bitset(`str`), where `str` is an object of type [basic_string](basic-string-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from *_Istr*.
 
-The template function extracts elements from `_Istr` and inserts them into the bitset until:
+The template function extracts elements from *_Istr* and inserts them into the bitset until:
 
 - All the bit elements have been extracted from the input stream and stored in the bitset.
 
@@ -229,15 +229,15 @@ operator^(
 
 ### Parameters
 
-`left`
+*left*
  The first of the two bitsets whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
 
-`right`
+*right*
  The second of the two valarrays whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
 
 ### Return Value
 
-A bitset whose elements are the result of performing the `EXCLUSIVE-OR` operation on the corresponding elements of `left` and `right`.
+A bitset whose elements are the result of performing the `EXCLUSIVE-OR` operation on the corresponding elements of *left* and *right*.
 
 ### Example
 
@@ -281,15 +281,15 @@ operator|(
 
 ### Parameters
 
-`left`
+*left*
  The first of the two bitsets whose respective elements are to be combined with the bitwise `OR`.
 
-`right`
+*right*
  The second of the two valarrays whose respective elements are to be combined with the bitwise `OR`.
 
 ### Return Value
 
-A bitset whose elements are the result of performing the `OR` operation on the corresponding elements of `left` and `right`.
+A bitset whose elements are the result of performing the `OR` operation on the corresponding elements of *left* and *right*.
 
 ### Example
 

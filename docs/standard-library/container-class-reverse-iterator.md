@@ -27,7 +27,7 @@ typedef T7 reverse_iterator;
 
 ## Remarks
 
-It is described here as a synonym for the unspecified type **T7** (typically `reverse_iterator` **\<**[iterator](../standard-library/container-class-iterator.md)**>**).
+It is described here as a synonym for the unspecified type `T7` (typically `reverse_iterator` **\<**[iterator](../standard-library/container-class-iterator.md)**>**).
 
 ## See also
 

@@ -69,14 +69,14 @@ future(future&& Other) noexcept;
 
 ### Parameters
 
-`Other`
+*Other*
  A `future` object.
 
 ### Remarks
 
 The first constructor constructs a `future` object that has no associated asynchronous state.
 
-The second constructor constructs a `future` object and transfers the associated asynchronous state from `Other`. `Other` no longer has an associated asynchronous state.
+The second constructor constructs a `future` object and transfers the associated asynchronous state from *Other*. *Other* no longer has an associated asynchronous state.
 
 ## <a name="get"></a>  future::get
 
@@ -96,7 +96,7 @@ Before it retrieves the result, this method blocks the current thread until the 
 
 For the partial specialization `future<Ty&>`, the stored value is effectively a reference to the object that was passed to the asynchronous provider as the return value.
 
-Because no stored value exists for the specialization `future<void>`, the method returns `void`.
+Because no stored value exists for the specialization `future<void>`, the method returns **void**.
 
 In other specializations, the method moves its return value from the stored value. Therefore, call this method only once.
 
@@ -110,7 +110,7 @@ future& operator=(future&& Right) noexcept;
 
 ### Parameters
 
-`Right`
+*Right*
  A `future` object.
 
 ### Return Value
@@ -119,7 +119,7 @@ future& operator=(future&& Right) noexcept;
 
 ### Remarks
 
-After the transfer, `Right` no longer has an associated asynchronous state.
+After the transfer, *Right* no longer has an associated asynchronous state.
 
 ## <a name="share"></a>  future::share
 
@@ -143,7 +143,7 @@ bool valid() noexcept;
 
 ### Return Value
 
-`true` if the object has an associated asynchronous state; otherwise, `false`.
+**true** if the object has an associated asynchronous state; otherwise, **false**.
 
 ## <a name="wait"></a>  future::wait
 
@@ -168,7 +168,7 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 
 ### Parameters
 
-`Rel_time`
+*Rel_time*
  A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
 
 ### Return Value
@@ -190,7 +190,7 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 ### Parameters
 
-`Abs_time`
+*Abs_time*
  A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
 
 ### Return Value

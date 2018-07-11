@@ -60,8 +60,8 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-`_Freezeit`
- A `bool` indicating whether you want the stream to be frozen.
+*_Freezeit*  
+ A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
 
@@ -69,7 +69,7 @@ The member function calls [rdbuf](#rdbuf) -> [freeze](../standard-library/strstr
 
 ### Example
 
-See [strstreambuf::freeze](../standard-library/strstreambuf-class.md#freeze) for an example that uses **freeze**.
+See [strstreambuf::freeze](../standard-library/strstreambuf-class.md#freeze) for an example that uses `freeze`.
 
 ## <a name="pcount"></a>  strstream::pcount
 
@@ -105,7 +105,7 @@ A pointer to the stream's associated strstreambuf object.
 
 ### Remarks
 
-The member function returns the address of the stored stream buffer of type **pointer** to [strstreambuf](../standard-library/strstreambuf-class.md).
+The member function returns the address of the stored stream buffer of type `pointer` to [strstreambuf](../standard-library/strstreambuf-class.md).
 
 ### Example
 
@@ -129,7 +129,7 @@ The member function returns [rdbuf](#rdbuf) -> [str](../standard-library/strstre
 
 ### Example
 
-See [strstreambuf::str](../standard-library/strstreambuf-class.md#str) for a sample that uses **str**.
+See [strstreambuf::str](../standard-library/strstreambuf-class.md#str) for a sample that uses `str`.
 
 ## <a name="strstream"></a>  strstream::strstream
 
@@ -145,22 +145,22 @@ strstream(char* ptr,
 
 ### Parameters
 
-`count`
+*count*  
  The size of the buffer.
 
-`_Mode`
+*_Mode*  
  The input and output mode of the buffer. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for more information.
 
-`ptr`
+*ptr*  
  The buffer.
 
 ### Remarks
 
-Both constructors initialize the base class by calling [streambuf](../standard-library/streambuf-typedefs.md#streambuf)( **sb**), where **sb** is the stored object of class [strstreambuf](../standard-library/strstreambuf-class.md). The first constructor also initializes **sb** by calling [strstreambuf](../standard-library/strstreambuf-class.md#strstreambuf). The second constructor initializes the base class one of two ways:
+Both constructors initialize the base class by calling [streambuf](../standard-library/streambuf-typedefs.md#streambuf)( **sb**), where `sb` is the stored object of class [strstreambuf](../standard-library/strstreambuf-class.md). The first constructor also initializes `sb` by calling [strstreambuf](../standard-library/strstreambuf-class.md#strstreambuf). The second constructor initializes the base class one of two ways:
 
-- If `_Mode` & **ios_base::app**== 0, then `ptr` must designate the first element of an array of `count` elements, and the constructor calls `strstreambuf`( `ptr`, `count`, `ptr`).
+- If `_Mode` & **ios_base::app**== 0, then *ptr* must designate the first element of an array of `count` elements, and the constructor calls `strstreambuf`( `ptr`, `count`, `ptr`).
 
-- Otherwise, `ptr` must designate the first element of an array of count elements that contains a C string whose first element is designated by `ptr`, and the constructor calls `strstreambuf`( `ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
+- Otherwise, *ptr* must designate the first element of an array of count elements that contains a C string whose first element is designated by *ptr*, and the constructor calls `strstreambuf`( `ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
 
 ## See also
 

@@ -25,12 +25,12 @@ struct is_final;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `T` is a class type marked `final`, otherwise it holds false. If `T` is a class type, it must be a complete type.
+An instance of the type predicate holds true if the type *T* is a class type marked `final`, otherwise it holds false. If *T* is a class type, it must be a complete type.
 
 ## Requirements
 

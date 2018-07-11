@@ -35,14 +35,14 @@ constexpr explicit complex(const complex<long double>& complexNum);
 
 ### Parameters
 
-`RealVal`
+*RealVal*
  The value of type **double** for the real part of the complex number being constructed.
 
-`ImagVal`
+*ImagVal*
  The value of type **double** for the imaginary part of the complex number being constructed.
 
-`complexNum`
- The complex number of type **float** or of type `long double` whose real and imaginary parts are used to initialize a complex number of type **double** being constructed.
+*complexNum*
+ The complex number of type **float** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **double** being constructed.
 
 ## Return Value
 
@@ -50,7 +50,7 @@ A complex number of type **double**.
 
 ## Remarks
 
-The explicit specialization of the template class complex to a complex class of type **double** differs from the template class only in the constructors it defines. The conversion from **float** to **double** is allowed to be implicit, but the conversion from `long double` to **double** is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
+The explicit specialization of the template class complex to a complex class of type **double** differs from the template class only in the constructors it defines. The conversion from **float** to **double** is allowed to be implicit, but the conversion from **long double** to **double** is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
 
 For more information on the template class `complex`, see [complex Class](../standard-library/complex-class.md). For a list of members of the template class `complex`, see .
 

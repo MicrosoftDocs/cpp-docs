@@ -89,7 +89,7 @@ bool try_lock();
 
 ### Return Value
 
-`true` if the method successfully obtains ownership of the `mutex`; otherwise, `false`.
+**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
 
 ### Remarks
 
@@ -106,12 +106,12 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### Parameters
 
-`Rel_time`
+*Rel_time*  
  A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
 
 ### Return Value
 
-`true` if the method successfully obtains ownership of the `mutex`; otherwise, `false`.
+**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
 
 ### Remarks
 
@@ -130,12 +130,12 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### Parameters
 
-`Abs_time`
+*Abs_time*  
  A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
 
 ### Return Value
 
-`true` if the method successfully obtains ownership of the `mutex`; otherwise, `false`.
+**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
 
 ### Remarks
 

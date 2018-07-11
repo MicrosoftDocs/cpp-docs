@@ -19,7 +19,7 @@ To add an ATL (Active Template Library) object to your project, your project mus
   
 ### To add an ATL simple object to your ATL COM project  
   
-1.  In either **Solution Explorer** or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the project to which you want to add the ATL simple object.  
+1.  In either **Solution Explorer** or [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the name of the project to which you want to add the ATL simple object.  
   
 2.  From the shortcut menu, click **Add**, and then click **Add Class**.  
   

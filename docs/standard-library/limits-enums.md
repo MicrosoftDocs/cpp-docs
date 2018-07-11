@@ -27,11 +27,11 @@ enum float_denorm_style {
 
 The enumeration returns:
 
-- **denorm_indeterminate** if the presence or absence of denormalized forms cannot be determined at translation time.
+- `denorm_indeterminate` if the presence or absence of denormalized forms cannot be determined at translation time.
 
-- **denorm_absent** if denormalized forms are absent.
+- `denorm_absent` if denormalized forms are absent.
 
-- **denorm_present** if denormalized forms are present.
+- `denorm_present` if denormalized forms are present.
 
 ### Example
 
@@ -54,15 +54,15 @@ enum float_round_style {
 
 The enumeration returns:
 
-- **round_indeterminate** if the rounding method cannot be determined.
+- `round_indeterminate` if the rounding method cannot be determined.
 
-- **round_toward_zero** if the round toward zero.
+- `round_toward_zero` if the round toward zero.
 
-- **round_to_nearest** if the round to nearest integer.
+- `round_to_nearest` if the round to nearest integer.
 
-- **round_toward_infinity** if the round away from zero.
+- `round_toward_infinity` if the round away from zero.
 
-- **round_toward_neg_infinity** if the round to more negative integer.
+- `round_toward_neg_infinity` if the round to more negative integer.
 
 ### Example
 

@@ -45,10 +45,10 @@ operator!=(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be tested for inequality.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be tested for inequality.
 
 ### Return Value
@@ -140,15 +140,15 @@ operator%(
 
 ### Parameters
 
-`left`
+*left*  
  A value or valarray that serves as the dividend into which another value or valarray is to be divided.
 
-`right`
+*right*  
  A value or valarray that serves as the divisor and that divides another value or valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise remainders of `left` divided by `right`.
+A valarray whose elements are the element-wise remainders of *left* divided by *right*.
 
 ### Example
 
@@ -223,21 +223,21 @@ operator&(
 
 ### Parameters
 
-`left`
- The first of the two valarrays whose respective elements are to be combined with the bitwise **AND** or a specified value of the element type to be combined bitwise with each element of a valarray.
+*left*  
+ The first of the two valarrays whose respective elements are to be combined with the bitwise `AND` or a specified value of the element type to be combined bitwise with each element of a valarray.
 
-`right`
- The second of the two valarrays whose respective elements are to be combined with the bitwise **AND** or a specified value of the element type to be combined bitwise with each element of a valarray.
+*right*  
+ The second of the two valarrays whose respective elements are to be combined with the bitwise `AND` or a specified value of the element type to be combined bitwise with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise combination of the bitwise AND operation of `left` and `right`.
+A valarray whose elements are the element-wise combination of the bitwise AND operation of *left* and *right*.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool` or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
 
-The bitwise **AND** has the same truth table as the logical **AND** but applies to the data type on the level of the individual bits. The [operator&&](../standard-library/valarray-operators.md#amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise **ANDoperator&**, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The bitwise `AND` has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. The [operator&&](../standard-library/valarray-operators.md#amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise **ANDoperator&**, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
 
 ### Example
 
@@ -312,19 +312,19 @@ operator&&(
 
 ### Parameters
 
-`left`
- The first of the two valarrays whose respective elements are to be combined with the logical **AND** or a specified value of the element type to be combined with each element of a valarray.
+*left*  
+ The first of the two valarrays whose respective elements are to be combined with the logical `AND` or a specified value of the element type to be combined with each element of a valarray.
 
-`right`
- The second of the two valarrays whose respective elements are to be combined with the logical **AND** or a specified value of the element type to be combined with each element of a valarray.
+*right*  
+ The second of the two valarrays whose respective elements are to be combined with the logical `AND` or a specified value of the element type to be combined with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are of type bool and are the element-wise combination of the logical **AND** operation of `left` and `right`.
+A valarray whose elements are of type bool and are the element-wise combination of the logical `AND` operation of *left* and *right*.
 
 ### Remarks
 
-The logical **ANDoperator&&** applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise version of **AND**, [operator&,](../standard-library/valarray-operators.md#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
+The logical `ANDoperator&&` applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise version of `AND`, [operator&,](../standard-library/valarray-operators.md#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 
@@ -399,19 +399,19 @@ operator>(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
 ### Return Value
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the `left` element or value is greater than the corresponding `right` element or value.
+- **true** if the *left* element or value is greater than the corresponding *right* element or value.
 
-- **false** if the `left` element or value is not greater than the corresponding `right` element or value.
+- **false** if the *left* element or value is not greater than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -490,19 +490,19 @@ operator>=(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
 ### Return Value
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the `left` element or value is greater than or equal to the corresponding `right` element or value.
+- **true** if the *left* element or value is greater than or equal to the corresponding *right* element or value.
 
-- **false** if the `left` element or value is less than the corresponding `right` element or value.
+- **false** if the *left* element or value is less than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -581,10 +581,10 @@ operator>>(
 
 ### Parameters
 
-`left`
+*left*  
  The value to be shifted or the valarray whose elements are to be shifted.
 
-`right`
+*right*  
  The value indicating the amount of right shift or valarray whose elements indicate the element-wise amount of right shift.
 
 ### Return Value
@@ -668,19 +668,19 @@ operator<(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
 ### Return Value
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the `left` element or value is less than the corresponding `right` element or value.
+- **true** if the *left* element or value is less than the corresponding *right* element or value.
 
-- **false** if the `left` element or value is not less than the corresponding `right` element or value.
+- **false** if the *left* element or value is not less than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -759,19 +759,19 @@ operator<=(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
 
 ### Return Value
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the `left` element or value is less than or equal to the corresponding `right` element or value.
+- **true** if the *left* element or value is less than or equal to the corresponding *right* element or value.
 
-- **false** if the `left` element or value is greater than the corresponding `right` element or value.
+- **false** if the *left* element or value is greater than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -850,10 +850,10 @@ operator<<(
 
 ### Parameters
 
-`left`
+*left*  
  The value to be shifted or the valarray whose elements are to be shifted.
 
-`right`
+*right*  
  The value indicating the amount of left shift or valarray whose elements indicate the element-wise amount of left shift.
 
 ### Return Value
@@ -937,15 +937,15 @@ operator*(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be multiplied or a specified value to be multiplied with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be multiplied or a specified value to be multiplied with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise product of `left` and `right`.
+A valarray whose elements are the element-wise product of *left* and *right*.
 
 ### Example
 
@@ -1020,15 +1020,15 @@ operator+(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be added or a specified value to be added with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be added or a specified value to be added with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise sum of `left` and `right`.
+A valarray whose elements are the element-wise sum of *left* and *right*.
 
 ### Example
 
@@ -1103,15 +1103,15 @@ operator-(
 
 ### Parameters
 
-`left`
+*left*  
  A value or valarray that serves as the minuend from which other values or valarrays are to be subtracted in forming the difference.
 
-`right`
+*right*  
  A value or valarray that serves as the subtrahend that is to be subtracted from other values or valarrays in forming the difference.
 
 ### Return Value
 
-A valarray whose elements are the element-wise difference of `left` and `right`.
+A valarray whose elements are the element-wise difference of *left* and *right*.
 
 ### Remarks
 
@@ -1192,15 +1192,15 @@ operator/(
 
 ### Parameters
 
-`left`
+*left*  
  A value or valarray that serves as the dividend into which another value or valarray is to be divided in forming the quotient.
 
-`right`
+*right*  
  A value or valarray that serves as the divisor and that divides another value or valarray in forming the quotient.
 
 ### Return Value
 
-A valarray whose elements are the element-wise quotient of `left` divided by `right`.
+A valarray whose elements are the element-wise quotient of *left* divided by *right*.
 
 ### Remarks
 
@@ -1281,10 +1281,10 @@ operator==(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose elements are to be tested for equality.
 
-`right`
+*right*  
  The second of the two valarrays whose elements are to be tested for equality.
 
 ### Return Value
@@ -1372,19 +1372,19 @@ operator^(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose respective elements are to be combined with the bitwise **XOR** or a specified value of the element type to be combined bitwise with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose respective elements are to be combined with the bitwise **XOR** or a specified value of the element type to be combined bitwise with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise combination of the bitwise **XOR** operation of `left` and `right`.
+A valarray whose elements are the element-wise combination of the bitwise **XOR** operation of *left* and *right*.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, `long double`, `void`, `bool` or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **long double**, **void**, **bool** or other, more complex data types.
 
 The bitwise exclusive `OR` ( **XOR**) has the following semantics: Given bits *b*1 and *b*2, *b*1 **XOR** *b*2 is **true** if exactly one of the bits is true; **false** if both bits are false or if both bits are true.
 
@@ -1465,19 +1465,19 @@ operator|(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose respective elements are to be combined with the bitwise `OR` or a specified value of the element type to be combined bitwise with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `OR` or a specified value of the element type to be combined bitwise with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise combination of the bitwise `OR` operation of `left` and `right`.
+A valarray whose elements are the element-wise combination of the bitwise `OR` operation of *left* and *right*.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool` or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
 
 The bitwise OR has the same truth table as the logical `OR`, but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **true** if at least one of the bits is true or **false** if both bits are false. The logical `OR`[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor) applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise OR `operator|`, by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
@@ -1558,15 +1558,15 @@ operator||(
 
 ### Parameters
 
-`left`
+*left*  
  The first of the two valarrays whose respective elements are to be combined with the logical `OR` or a specified value of the element type to be combined with each element of a valarray.
 
-`right`
+*right*  
  The second of the two valarrays whose respective elements are to be combined with the logical `OR` or a specified value of the element type to be combined with each element of a valarray.
 
 ### Return Value
 
-A valarray whose elements are of type `bool` and are the element-wise combination of the logical OR operation of `left` and `right`.
+A valarray whose elements are of type **bool** and are the element-wise combination of the logical OR operation of *left* and *right*.
 
 ### Remarks
 

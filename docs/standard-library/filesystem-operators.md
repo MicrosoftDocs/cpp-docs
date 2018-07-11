@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt; operators
 
-The operators perform a lexical comparison of two paths as strings. Use the **equivalent** function to determine whether two paths (for example a relative path and an absolute path) refer to the same file or directory on disk.
+The operators perform a lexical comparison of two paths as strings. Use the `equivalent` function to determine whether two paths (for example a relative path and an absolute path) refer to the same file or directory on disk.
 
 For more information, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # logical_not Struct
 
-A predefined function object that performs the logical not operation ( `operator!`) on its argument.
+A predefined function object that performs the logical not operation (`operator!`) on its argument.
 
 ## Syntax
 
@@ -37,11 +37,11 @@ struct logical_not<void>
 
 ### Parameters
 
-`Type`
+*Type*
  Any type that supports an `operator!` that takes an operand of the specified or inferred type.
 
-`Left`
- The operand of the logical not operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `Type`.
+*Left*
+ The operand of the logical not operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
 
 ## Return Value
 

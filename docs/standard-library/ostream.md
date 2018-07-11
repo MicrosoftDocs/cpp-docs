@@ -27,8 +27,8 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
 
 |Type name|Description|
 |-|-|
-|[ostream](../standard-library/ostream-typedefs.md#ostream)|Creates a type from `basic_ostream` that is specialized on `char` and `char_traits` specialized on `char`.|
-|[wostream](../standard-library/ostream-typedefs.md#wostream)|Creates a type from `basic_ostream` that is specialized on `wchar_t` and `char_traits` specialized on `wchar_t`.|
+|[ostream](../standard-library/ostream-typedefs.md#ostream)|Creates a type from `basic_ostream` that is specialized on **char** and `char_traits` specialized on **char**.|
+|[wostream](../standard-library/ostream-typedefs.md#wostream)|Creates a type from `basic_ostream` that is specialized on **wchar_t** and `char_traits` specialized on **wchar_t**.|
 
 ### Manipulators
 

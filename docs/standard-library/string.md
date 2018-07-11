@@ -30,14 +30,14 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 - Null-terminated character arrays often referred to as C strings.
 
-- Template class objects, of type `basic_string`, that handle all `char`-like template arguments.
+- Template class objects, of type `basic_string`, that handle all **char**-like template arguments.
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the template class `basic_string` with elements of type `char` as a `string`.|
-|[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the template class `basic_string` with elements of type `wchar_t` as a `wstring`.|
+|[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the template class `basic_string` with elements of type **char** as a `string`.|
+|[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the template class `basic_string` with elements of type **wchar_t** as a `wstring`.|
 |[u16string](../standard-library/string-typedefs.md#u16string)|A type that describes a specialization of the template class `basic_string` based on elements of type `char16_t`.|
 |[u32string](../standard-library/string-typedefs.md#u32string)|A type that describes a specialization of the template class `basic_string` based on elements of type `char32_t`.|
 
@@ -60,13 +60,13 @@ The C++ language and the C++ Standard Library support two types of strings:
 |||
 |-|-|
 |[swap](../standard-library/string-functions.md#swap)|Exchanges the arrays of characters of two strings.|
-|[stod](../standard-library/string-functions.md#stod)|Converts a character sequence to a `double.`|
-|[stof](../standard-library/string-functions.md#stof)|Converts a character sequence to a `float`.|
+|[stod](../standard-library/string-functions.md#stod)|Converts a character sequence to a **double**.|
+|[stof](../standard-library/string-functions.md#stof)|Converts a character sequence to a **float**.|
 |[stoi](../standard-library/string-functions.md#stoi)|Converts a character sequence to an integer.|
-|[stold](../standard-library/string-functions.md#stold)|Converts a character sequence to a `long double`.|
-|[stoll](../standard-library/string-functions.md#stoll)|Converts a character sequence to a `long long`.|
-|[stoul](../standard-library/string-functions.md#stoul)|Converts a character sequence to an `unsigned long`.|
-|[stoull](../standard-library/string-functions.md#stoull)|Converts a character sequence to an `unsigned long long`.|
+|[stold](../standard-library/string-functions.md#stold)|Converts a character sequence to a **long double**.|
+|[stoll](../standard-library/string-functions.md#stoll)|Converts a character sequence to a **long long**.|
+|[stoul](../standard-library/string-functions.md#stoul)|Converts a character sequence to an **unsigned long**.|
+|[stoull](../standard-library/string-functions.md#stoull)|Converts a character sequence to an **unsigned long long**.|
 |[to_string](../standard-library/string-functions.md#to_string)|Converts a value to a `string`.|
 |[to_wstring](../standard-library/string-functions.md#to_wstring)|Converts a value to a wide `string`.|
 
