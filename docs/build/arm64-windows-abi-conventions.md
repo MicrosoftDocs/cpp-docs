@@ -121,7 +121,9 @@ For non-variadic functions, the Windows ABI follows the rules specified by ARM f
 This stage is performed exactly once, before processing of the arguments commences.
 
 1. The Next General-purpose Register Number (NGRN) is set to zero.
+
 2. The Next SIMD and Floating-point Register Number (NSRN) is set to zero.
+
 3. The next stacked argument address (NSAA) is set to the current stack-pointer value (SP).
 
 ### Stage B – Pre-padding and extension of arguments
@@ -129,8 +131,11 @@ This stage is performed exactly once, before processing of the arguments commenc
 For each argument in the list the first matching rule from the following list is applied. If no rule matches the argument is used unmodified.
 
 1. If the argument type is a Composite Type whose size cannot be statically determined by both the caller and the callee, the argument is copied to memory and the argument is replaced by a pointer to the copy. (There are no such types in C/C++ but they exist in other languages or in language extensions).
+
 2. If the argument type is an HFA or an HVA, then the argument is used unmodified.
+
 3. If the argument type is a Composite Type that is larger than 16 bytes, then the argument is copied to memory allocated by the caller and the argument is replaced by a pointer to the copy.
+
 4. If the argument type is a Composite Type then the size of the argument is rounded up to the nearest multiple of 8 bytes.
 
 ### Stage C – Assignment of arguments to registers and stack
@@ -138,19 +143,33 @@ For each argument in the list the first matching rule from the following list is
 For each argument in the list the following rules are applied in turn until the argument has been allocated. When an argument is assigned to a register any unused bits in the register have unspecified value. When an argument is assigned to a stack slot any unused padding bytes have unspecified value.
 
 1. If the argument is a Half-, Single-, Double- or Quad- precision Floating-point or Short Vector Type and the NSRN is less than 8, then the argument is allocated to the least significant bits of register v[NSRN]. The NSRN is incremented by one. The argument has now been allocated.
+
 2. If the argument is an HFA or an HVA and there are sufficient unallocated SIMD and Floating-point registers (NSRN + number of members ≤ 8), then the argument is allocated to SIMD and Floating-point Registers (with one register per member of the HFA or HVA). The NSRN is incremented by the number of registers used. The argument has now been allocated.
+
 3. If the argument is an HFA or an HVA then the NSRN is set to 8 and the size of the argument is rounded up to the nearest multiple of 8 bytes.
+
 4. If the argument is an HFA, an HVA, a Quad-precision Floating-point or Short Vector Type then the NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument’s type.
+
 5. If the argument is a Half- or Single- precision Floating Point type, then the size of the argument is set to 8 bytes. The effect is as if the argument had been copied to the least significant bits of a 64-bit register and the remaining bits filled with unspecified values.
+
 6. If the argument is an HFA, an HVA, a Half-, Single-, Double- or Quad- precision Floating-point or Short Vector Type, then the argument is copied to memory at the adjusted NSAA. The NSAA is incremented by the size of the argument. The argument has now been allocated.
+
 7. If the argument is an Integral or Pointer Type, the size of the argument is less than or equal to 8 bytes and the NGRN is less than 8, the argument is copied to the least significant bits in x[NGRN]. The NGRN is incremented by one. The argument has now been allocated.
+
 8. If the argument has an alignment of 16 then the NGRN is rounded up to the next even number.
+
 9. If the argument is an Integral Type, the size of the argument is equal to 16 and the NGRN is less than 7, the argument is copied to x[NGRN] and x[NGRN+1]. x[NGRN] shall contain the lower addressed double-word of the memory representation of the argument. The NGRN is incremented by two. The argument has now been allocated.
+
 10. If the argument is a Composite Type and the size in double-words of the argument is not more than 8 minus NGRN, then the argument is copied into consecutive general-purpose registers, starting at x[NGRN]. The argument is passed as though it had been loaded into the registers from a double-word-aligned address with an appropriate sequence of LDR instructions loading consecutive registers from memory (the contents of any unused parts of the registers are unspecified by this standard). The NGRN is incremented by the number of registers used. The argument has now been allocated.
+
 11. The NGRN is set to 8.
+
 12. The NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument’s type.. 
+
 13. If the argument is a composite type then the argument is copied to memory at the adjusted NSAA. The NSAA is incremented by the size of the argument. The argument has now been allocated.
+
 14. If the size of the argument is less than 8 bytes then the size of the argument is set to 8 bytes. The effect is as if the argument was copied to the least significant bits of a 64-bit register and the remaining bits filled with unspecified values.
+
 15. The argument is copied to memory at the adjusted NSAA. The NSAA is incremented by the size of the argument. The argument has now been allocated.
 
 ### Addendum: Variadic functions
@@ -158,6 +177,7 @@ For each argument in the list the following rules are applied in turn until the 
 Functions that take a variable number of arguments are handled differently than above, as follows:
 
 1. All composites are treated alike; no special treatment of HFAs or HVAs.
+
 2. SIMD and Floating-point Registers are not used.
 
 Effectively this equates to following rules C.12–C.15 to allocate arguments to an imaginary stack, where the first 64 bytes of the stack are loaded into x0-x7, and any remaining stack arguments are placed normally. 
@@ -188,7 +208,7 @@ Code within Windows is compiled with frame pointers enabled ([/Oy-](../build/ref
 
 ## Exception unwinding
 
-Unwinding during exception handling is assisted through the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable that describe the operation of the prologue and epilogue in an abstract manner such that the effects of a function’s prologue can be undone in preparation for backing up to the caller’s stack frame. For more information on the unwind codes, see [Windows ARM64 exception data]().
+Unwinding during exception handling is assisted through the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable that describe the operation of the prologue and epilogue in an abstract manner such that the effects of a function’s prologue can be undone in preparation for backing up to the caller’s stack frame. For more information on the unwind codes, see [ARM64 exception handling](arm64-exception-handling.md).
 
 The ARM EABI also specifies an exception unwinding model that leverages unwind codes. However, the specification as presented is not sufficient for unwinding in Windows, which must handle cases where the PC is in the middle of the prologue or epilogue of a function.
 
