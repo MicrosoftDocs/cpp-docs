@@ -308,4 +308,4 @@ MemoryBlock(MemoryBlock&& other)
   
 ## See Also  
  [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)   
- [\<utility> move](http://msdn.microsoft.com/en-us/abef7e85-9dd6-4724-85da-d7f7fe95dca9)
+ [\<utility> move](http://msdn.microsoft.com/abef7e85-9dd6-4724-85da-d7f7fe95dca9)
