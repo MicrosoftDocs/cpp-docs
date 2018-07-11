@@ -25,12 +25,12 @@ struct underlying_type;
 
 ### Parameters
 
-`T`
+*T*  
  The type to modify.
 
 ## Remarks
 
-The `type` member typedef of the template class names the underlying integral type of `T`, when `T` is an enumeration type, otherwise there is no member typedef `type`.
+The `type` member typedef of the template class names the underlying integral type of *T*, when *T* is an enumeration type, otherwise there is no member typedef `type`.
 
 ## Requirements
 
