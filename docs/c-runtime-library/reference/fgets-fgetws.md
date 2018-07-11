@@ -78,9 +78,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ```C
 // crt_fgets.c
-// This program uses fgets to display
-// a line from a file on the screen.
-//
+// This program uses fgets to display 
+// the first line from a file.
 
 #include <stdio.h>
 
