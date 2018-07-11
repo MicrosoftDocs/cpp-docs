@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # divides Struct
 
-A predefined function object that performs the division operation ( `operator/`) on its arguments.
+A predefined function object that performs the division operation (`operator/`) on its arguments.
 
 ## Syntax
 
@@ -37,14 +37,14 @@ struct divides<void>
 
 ### Parameters
 
-`Type`, `T`, `U`
+*Type*, *T*, *U*
  A type that supports an `operator/` that takes operands of the specified or inferred types.
 
-`Left`
- The left operand of the division operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.
+*Left*
+ The left operand of the division operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-`Right`
- The right operand of the division operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.
+*Right*
+ The right operand of the division operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
 

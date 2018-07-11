@@ -26,10 +26,10 @@ class money_put : public locale::facet;
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type used within a program to encode characters in a locale.
 
-`OutputIterator`
+*OutputIterator*
  The type of iterator to which the monetary put functions write their output.
 
 ## Remarks
@@ -98,19 +98,19 @@ virtual iter_type do_put(
 
 ### Parameters
 
-`next`
+*next*
  An iterator addressing the first element of the inserted string.
 
-`_Intl`
+*_Intl*
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-`_Iosbase`
+*_Iosbase*
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-`_Fill`
+*_Fill*
  A character which is used for spacing.
 
-`val`
+*val*
  A string object to be converted.
 
 ### Return Value
@@ -119,9 +119,9 @@ An output iterator the addresses the position one beyond the last element produc
 
 ### Remarks
 
-The first virtual protected member function generates sequential elements beginning at `next` to produce a monetary output field from the [string_type](#string_type) object `val`. The sequence controlled by `val` must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.
+The first virtual protected member function generates sequential elements beginning at *next* to produce a monetary output field from the [string_type](#string_type) object *val*. The sequence controlled by *val* must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.
 
-The second virtual protected member function behaves the same as the first, except that it effectively first converts `val` to a sequence of decimal digits, optionally preceded by a minus sign, then converts that sequence as above.
+The second virtual protected member function behaves the same as the first, except that it effectively first converts *val* to a sequence of decimal digits, optionally preceded by a minus sign, then converts that sequence as above.
 
 The format of a monetary output field is determined by the [locale facet](../standard-library/locale-class.md#facet_class) fac returned by the (effective) call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
@@ -181,12 +181,12 @@ explicit money_put(size_t _Refs = 0);
 
 ### Parameters
 
-`_Refs`
+*_Refs*
  Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 
-The possible values for the `_Refs` parameter and their significance are:
+The possible values for the *_Refs* parameter and their significance are:
 
 - 0: the lifetime of the object is managed by the locales that contain it.
 
@@ -221,19 +221,19 @@ iter_type put(
 
 ### Parameters
 
-`next`
+*next*
  An iterator addressing the first element of the inserted string.
 
-`_Intl`
+*_Intl*
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-`_Iosbase`
+*_Iosbase*
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-`_Fill`
+*_Fill*
  A character which is used for spacing.
 
-`val`
+*val*
  A string object to be converted.
 
 ### Return Value
@@ -278,7 +278,7 @@ money_put( ) = "CAD1,000.12"
 
 ## <a name="string_type"></a>  money_put::string_type
 
-A type that describes a string containing characters of type **CharType**.
+A type that describes a string containing characters of type `CharType`.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;

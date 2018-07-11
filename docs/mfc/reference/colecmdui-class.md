@@ -38,7 +38,7 @@ class COleCmdUI : public CCmdUI
 |[COleCmdUI::SetText](#settext)|Returns a text name or status string for a command.|  
   
 ## Remarks  
- In an application that is not enabled for DocObjects, when the user views a menu in the application, MFC processes **UPDATE_COMMAND_UI** notifcations. Each notification is given a [CCmdUI](../../mfc/reference/ccmdui-class.md) object that can be manipulated to reflect the state of a particular command. However, when your application is enabled for DocObjects, MFC processes **UPDATE_OLE_COMMAND_UI** notifications and assigns `COleCmdUI` objects.  
+ In an application that is not enabled for DocObjects, when the user views a menu in the application, MFC processes UPDATE_COMMAND_UI notifcations. Each notification is given a [CCmdUI](../../mfc/reference/ccmdui-class.md) object that can be manipulated to reflect the state of a particular command. However, when your application is enabled for DocObjects, MFC processes UPDATE_OLE_COMMAND_UI notifications and assigns `COleCmdUI` objects.  
   
  `COleCmdUI` allows a DocObject to receive commands that originate in its container's user interface (such as FileNew, Open, Print, and so on), and allows a container to receive commands that originate in the DocObject's user interface. Although `IDispatch` could be used to dispatch the same commands, `IOleCommandTarget` provides a simpler way to query and execute because it relies on a standard set of commands, usually without arguments, and no type information is involved. `COleCmdUI` can be used to enable, update, and set other properties of DocObject user interface commands. When you want to invoke the command, call [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).  
   
@@ -63,27 +63,27 @@ COleCmdUI(
 ```  
   
 ### Parameters  
- `rgCmds`  
- A list of supported commands associated with the given GUID. The **OLECMD** structure associates commands with command flags.  
+ *rgCmds*  
+ A list of supported commands associated with the given GUID. The `OLECMD` structure associates commands with command flags.  
   
  *cCmds*  
- The count of commands in `rgCmds`.  
+ The count of commands in *rgCmds*.  
   
- `pGroup`  
+ *pGroup*  
  A pointer to a GUID that identifies a set of commands.  
   
 ### Remarks  
  The `COleCmdUI` object provides a programmatic interface for updating DocObject user-interface objects such as menu items or control-bar buttons. The user-interface objects can be enabled, disabled, checked, and/or cleared through the `COleCmdUI` object.  
   
 ##  <a name="enable"></a>  COleCmdUI::Enable  
- Call this function to set the command flag of the `COleCmdUI` object to **OLECOMDF_ENABLED**, which tells the interface the command is available and enabled, or to clear the command flag.  
+ Call this function to set the command flag of the `COleCmdUI` object to OLECOMDF_ENABLED, which tells the interface the command is available and enabled, or to clear the command flag.  
   
 ```  
 virtual void Enable(BOOL bOn);
 ```  
   
 ### Parameters  
- `bOn`  
+ *bOn*  
  Indicates whether the command associated with the `COleCmdUI` object should be enabled or disabled. Nonzero enables the command; 0 disables the command.  
   
 ##  <a name="setcheck"></a>  COleCmdUI::SetCheck  
@@ -94,7 +94,7 @@ virtual void SetCheck(int nCheck);
 ```  
   
 ### Parameters  
- `nCheck`  
+ *nCheck*  
  A value determining the state to set an on/off toggle command. Values are:  
   
 |Value|Description|  
@@ -111,7 +111,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  A pointer to the text to be used with the command.  
   
 ## See Also  

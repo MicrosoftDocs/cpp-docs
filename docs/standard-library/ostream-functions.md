@@ -79,14 +79,14 @@ basic_ostream<Elem, Tr>& ends(
 The element type.
 
 *Ostr*
-An object of type **basic_ostream**.
+An object of type `basic_ostream`.
 
 *Tr*
 Character traits.
 
 ### Return Value
 
-An object of type **basic_ostream**.
+An object of type `basic_ostream`.
 
 ### Remarks
 
@@ -128,14 +128,14 @@ basic_ostream<Elem, Tr>& flush(
 The element type.
 
 *Ostr*
-An object of type **basic_ostream**.
+An object of type `basic_ostream`.
 
 *Tr*
 Character traits.
 
 ### Return Value
 
-An object of type **basic_ostream**.
+An object of type `basic_ostream`.
 
 ### Remarks
 
@@ -161,7 +161,7 @@ testing
 
 ## swap
 
-Exchanges the values of two **basic_ostream** objects.
+Exchanges the values of two `basic_ostream` objects.
 
 ```cpp
 template <class Elem, class Tr>
@@ -179,14 +179,14 @@ The element type.
 Character traits.
 
 *left*
-An lvalue reference to a **basic_ostream** object.
+An lvalue reference to a `basic_ostream` object.
 
 *right*
-An lvalue reference to a **basic_ostream** object.
+An lvalue reference to a `basic_ostream` object.
 
 ### Remarks
 
-The template function **swap** executes `left.swap(right)`.
+The template function `swap` executes `left.swap(right)`.
 
 ## See also
 

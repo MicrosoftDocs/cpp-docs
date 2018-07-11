@@ -28,13 +28,13 @@ struct identity {
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|The value to identify.|
+|*left*|The value to identify.|
 
 ## Remarks
 
 The class contains the public type definition `type`, which is the same as the template parameter Type. It is used in conjunction with template function [forward](../standard-library/utility-functions.md#forward) to ensure that a function parameter has the desired type.
 
-For compatibility with older code, the class also defines the identity function `operator()` which returns its argument `left`.
+For compatibility with older code, the class also defines the identity function `operator()` which returns its argument *left*.
 
 ## Requirements
 

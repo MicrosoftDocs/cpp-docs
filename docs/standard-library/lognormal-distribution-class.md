@@ -48,11 +48,11 @@ public:
 ### Parameters
 
 *RealType*
-The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.
+The template class describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

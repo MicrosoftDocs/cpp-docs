@@ -39,7 +39,7 @@ class CSingleLock
 ## Remarks  
  `CSingleLock` does not have a base class.  
   
- In order to use the synchronization classes [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), and [CEvent](../../mfc/reference/cevent-class.md), you must create either a `CSingleLock` or [CMultiLock](../../mfc/reference/cmultilock-class.md) object to wait on and release the synchronization object. Use `CSingleLock` when you only need to wait on one object at a time. Use **CMultiLock** when there are multiple objects that you could use at a particular time.  
+ In order to use the synchronization classes [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), and [CEvent](../../mfc/reference/cevent-class.md), you must create either a `CSingleLock` or [CMultiLock](../../mfc/reference/cmultilock-class.md) object to wait on and release the synchronization object. Use `CSingleLock` when you only need to wait on one object at a time. Use `CMultiLock` when there are multiple objects that you could use at a particular time.  
   
  To use a `CSingleLock` object, call its constructor inside a member function in the controlled resource's class. Then call the [IsLocked](#islocked) member function to determine if the resource is available. If it is, continue with the remainder of the member function. If the resource is unavailable, either wait for a specified amount of time for the resource to be released, or return failure. After use of the resource is complete, either call the [Unlock](#unlock) function if the `CSingleLock` object is to be used again, or allow the `CSingleLock` object to be destroyed.  
   
@@ -61,10 +61,10 @@ explicit CSingleLock(
 ```  
   
 ### Parameters  
- `pObject`  
- Points to the synchronization object to be accessed. Cannot be **NULL**.  
+ *pObject*  
+ Points to the synchronization object to be accessed. Cannot be NULL.  
   
- `bInitialLock`  
+ *bInitialLock*  
  Specifies whether to initially attempt to access the supplied object.  
   
 ### Remarks  
@@ -95,7 +95,7 @@ BOOL Lock(DWORD dwTimeOut = INFINITE);
   
 ### Parameters  
  *dwTimeOut*  
- Specifies the amount of time to wait for the synchronization object to be available (signaled). If **INFINITE**, `Lock` will wait until the object is signaled before returning.  
+ Specifies the amount of time to wait for the synchronization object to be available (signaled). If INFINITE, `Lock` will wait until the object is signaled before returning.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  
@@ -119,11 +119,11 @@ BOOL Unlock(
 ```  
   
 ### Parameters  
- `lCount`  
- Number of accesses to release. Must be greater than 0. If the specified amount would cause the object's count to exceed its maximum, the count is not changed and the function returns **FALSE**.  
+ *lCount*  
+ Number of accesses to release. Must be greater than 0. If the specified amount would cause the object's count to exceed its maximum, the count is not changed and the function returns FALSE.  
   
- `lPrevCount`  
- Points to a variable to receive the previous count of the synchronization object. If **NULL**, the previous count is not returned.  
+ *lPrevCount*  
+ Points to a variable to receive the previous count of the synchronization object. If NULL, the previous count is not returned.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  

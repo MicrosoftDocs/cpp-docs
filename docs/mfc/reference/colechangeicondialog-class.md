@@ -44,7 +44,7 @@ class COleChangeIconDialog : public COleDialog
 |[COleChangeIconDialog::m_ci](#m_ci)|A structure that controls the behavior of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COleChangeIconDialog` when you want to call this dialog box. After a `COleChangeIconDialog` object has been constructed, you can use the [m_ci](#m_ci) structure to initialize the values or states of controls in the dialog box. The `m_ci` structure is of type **OLEUICHANGEICON**. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
+ Create an object of class `COleChangeIconDialog` when you want to call this dialog box. After a `COleChangeIconDialog` object has been constructed, you can use the [m_ci](#m_ci) structure to initialize the values or states of controls in the dialog box. The `m_ci` structure is of type OLEUICHANGEICON. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
  For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
   
@@ -79,24 +79,24 @@ explicit COleChangeIconDialog(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item to be converted.  
   
- `dwFlags`  
+ *dwFlags*  
  Creation flag, which contains any number of the following values combined using the bitwise-or operator:  
   
-- **CIF_SELECTCURRENT** Specifies that the Current radio button will be selected initially when the dialog box is called. This is the default.  
+- CIF_SELECTCURRENT Specifies that the Current radio button will be selected initially when the dialog box is called. This is the default.  
   
-- **CIF_SELECTDEFAULT** Specifies that the Default radio button will be selected initially when the dialog box is called.  
+- CIF_SELECTDEFAULT Specifies that the Default radio button will be selected initially when the dialog box is called.  
   
-- **CIF_SELECTFROMFILE** Specifies that the From File radio button will be selected initially when the dialog box is called.  
+- CIF_SELECTFROMFILE Specifies that the From File radio button will be selected initially when the dialog box is called.  
   
-- **CIF_SHOWHELP** Specifies that the Help button will be displayed when the dialog box is called.  
+- CIF_SHOWHELP Specifies that the Help button will be displayed when the dialog box is called.  
   
-- **CIF_USEICONEXE** Specifies that the icon should be extracted from the executable specified in the **szIconExe** field of [m_ci](#m_ci) instead of retrieved from the type. This is useful for embedding or linking to non-OLE files.  
+- CIF_USEICONEXE Specifies that the icon should be extracted from the executable specified in the `szIconExe` field of [m_ci](#m_ci) instead of retrieved from the type. This is useful for embedding or linking to non-OLE files.  
   
- `pParentWnd`  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
+ *pParentWnd*  
+ Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
@@ -104,14 +104,14 @@ explicit COleChangeIconDialog(
  For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
   
 ##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon  
- Call this function to change the icon representing the item to the one selected in the dialog box after [DoModal](#domodal) returns **IDOK**.  
+ Call this function to change the icon representing the item to the one selected in the dialog box after [DoModal](#domodal) returns IDOK.  
   
 ```  
 BOOL DoChangeIcon(COleClientItem* pItem);
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Points to the item whose icon is changing.  
   
 ### Return Value  
@@ -127,16 +127,16 @@ virtual INT_PTR DoModal();
 ### Return Value  
  Completion status for the dialog box. One of the following values:  
   
-- **IDOK** if the dialog box was successfully displayed.  
+- IDOK if the dialog box was successfully displayed.  
   
-- **IDCANCEL** if the user canceled the dialog box.  
+- IDCANCEL if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_ci](#m_ci) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- If `DoModal` returns **IDOK**, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.  
+ If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.  
   
 ##  <a name="geticonicmetafile"></a>  COleChangeIconDialog::GetIconicMetafile  
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
@@ -149,7 +149,7 @@ HGLOBAL GetIconicMetafile() const;
  The handle to the metafile containing the iconic aspect of the new icon, if the dialog box was dismissed by choosing **OK**; otherwise, the icon as it was before the dialog was displayed.  
   
 ##  <a name="m_ci"></a>  COleChangeIconDialog::m_ci  
- Structure of type **OLEUICHANGEICON** used to control the behavior of the Change Icon dialog box.  
+ Structure of type OLEUICHANGEICON used to control the behavior of the Change Icon dialog box.  
   
 ```  
 OLEUICHANGEICON m_ci;  

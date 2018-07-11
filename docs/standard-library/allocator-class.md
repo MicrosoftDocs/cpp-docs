@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # allocator Class
 
-The template class describes an object that manages storage allocation and freeing for arrays of objects of type **Type**. An object of class **allocator** is the default allocator object specified in the constructors for several container template classes in the C++ Standard Library.
+The template class describes an object that manages storage allocation and freeing for arrays of objects of type `Type`. An object of class `allocator` is the default allocator object specified in the constructors for several container template classes in the C++ Standard Library.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ class allocator
 
 ## Remarks
 
-All the C++ Standard Library containers have a template parameter that defaults to **allocator**. Constructing a container with a custom allocator provide control over allocation and freeing of that container's elements.
+All the C++ Standard Library containers have a template parameter that defaults to `allocator`. Constructing a container with a custom allocator provide control over allocation and freeing of that container's elements.
 
 For example, an allocator object might allocate storage on a private heap or in shared memory, or it might optimize for small or large object sizes. It might also specify, through the type definitions it supplies, that elements be accessed through special accessor objects that manage shared memory, or perform automatic garbage collection. Hence, a class that allocates storage using an allocator object should use these types for declaring pointer and reference objects, as the containers in the C++ Standard Library do.
 
@@ -38,15 +38,15 @@ For example, an allocator object might allocate storage on a private heap or in 
 
 Thus, an allocator defines the following types:
 
-- [pointer](#pointer) behaves like a pointer to **Type**.
+- [pointer](#pointer) behaves like a pointer to `Type`.
 
-- [const_pointer](#const_pointer) behaves like a const pointer to **Type**.
+- [const_pointer](#const_pointer) behaves like a const pointer to `Type`.
 
-- [reference](#reference) behaves like a reference to **Type**.
+- [reference](#reference) behaves like a reference to `Type`.
 
-- [const_reference](#const_reference) behaves like a const reference to **Type**.
+- [const_reference](#const_reference) behaves like a const reference to `Type`.
 
-These **Type**s specify the form that pointers and references must take for allocated elements. ( [allocator::pointer](#pointer) is not necessarily the same as **Type**\* for all allocator objects, even though it has this obvious definition for class **allocator**.)
+These `Type`s specify the form that pointers and references must take for allocated elements. ( [allocator::pointer](#pointer) is not necessarily the same as `Type*` for all allocator objects, even though it has this obvious definition for class `allocator`.)
 
 **C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](../standard-library/allocators.md)
 
@@ -105,7 +105,7 @@ const_pointer address(const_reference val) const;
 
 ### Parameters
 
-`val`
+*val*
  The const or nonconst value of the object whose address is being searched for.
 
 ### Return Value
@@ -114,7 +114,7 @@ A const or nonconst pointer to the object found of, respectively, const or nonco
 
 ### Remarks
 
-The member functions return the address of `val`, in the form that pointers must take for allocated elements.
+The member functions return the address of *val*, in the form that pointers must take for allocated elements.
 
 ### Example
 
@@ -170,7 +170,7 @@ pointer allocate(size_type count, const void* _Hint);
 
 ### Parameters
 
-`count`
+*count*
  The number of elements for which sufficient storage is to be allocated.
 
 *_Hint*
@@ -182,7 +182,7 @@ A pointer to the allocated object or null if memory was not allocated.
 
 ### Remarks
 
-The member function allocates storage for an array of count elements of type **Type**, by calling operator new( `count`). It returns a pointer to the allocated object. The hint argument helps some allocators in improving locality of reference; a valid choice is the address of an object earlier allocated by the same allocator object and not yet deallocated. To supply no hint, use a null pointer argument instead.
+The member function allocates storage for an array of count elements of type `Type`, by calling operator new(*count*). It returns a pointer to the allocated object. The hint argument helps some allocators in improving locality of reference; a valid choice is the address of an object earlier allocated by the same allocator object and not yet deallocated. To supply no hint, use a null pointer argument instead.
 
 ### Example
 
@@ -233,7 +233,7 @@ allocator(const allocator<Other>& right);
 
 ### Parameters
 
-`right`
+*right*
  The allocator object to be copied.
 
 ### Remarks
@@ -313,7 +313,7 @@ typedef const value_type *const_pointer;
 
 ### Remarks
 
-The pointer type describes an object **ptr** that can designate, through the expression **\*ptr**, any const object that an object of template class allocator can allocate.
+The pointer type describes an object `ptr` that can designate, through the expression `*ptr`, any const object that an object of template class allocator can allocate.
 
 ### Example
 
@@ -437,10 +437,10 @@ void construct(pointer ptr, _Other&&...   val);
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer to the location where the object is to be constructed.
 
-`val`
+*val*
  The value with which the object being constructed is to be initialized.
 
 ### Remarks
@@ -506,15 +506,15 @@ void deallocate(pointer ptr, size_type count);
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer to the first object to be deallocated from storage.
 
-`count`
+*count*
  The number of objects to be deallocated from storage.
 
 ### Remarks
 
-The member function frees storage for the array of count objects of type **Type** beginning at `ptr`, by calling `operator delete(ptr)`. The pointer `ptr` must have been returned earlier by a call to [allocate](#allocate) for an allocator object that compares equal to **\*this**, allocating an array object of the same size and type. `deallocate` never throws an exception.
+The member function frees storage for the array of count objects of type `Type` beginning at *ptr*, by calling `operator delete(ptr)`. The pointer *ptr* must have been returned earlier by a call to [allocate](#allocate) for an allocator object that compares equal to **\*this**, allocating an array object of the same size and type. `deallocate` never throws an exception.
 
 ### Example
 
@@ -530,12 +530,12 @@ void destroy(pointer ptr);
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer designating the address of the object to be destroyed.
 
 ### Remarks
 
-The member function destroys the object designated by `ptr`, by calling the destructor `ptr->`**Type**::**~Type**.
+The member function destroys the object designated by *ptr*, by calling the destructor `ptr->`**Type**::**~Type**.
 
 ### Example
 
@@ -649,7 +649,7 @@ The difference between the integer's addresses is: 8.
 
 ## <a name="max_size"></a>  allocator::max_size
 
-Returns the number of elements of type **Type** that could be allocated by an object of class allocator before the free memory is used up.
+Returns the number of elements of type `Type` that could be allocated by an object of class allocator before the free memory is used up.
 
 ```cpp
 size_type max_size() const;
@@ -727,7 +727,7 @@ allocator<Type>& operator=(const allocator<Other>& right);
 
 ### Parameters
 
-`right`
+*right*
  An allocator object to be assigned to another such object.
 
 ### Return Value
@@ -789,7 +789,7 @@ typedef value_type *pointer;
 
 ### Remarks
 
-The pointer type describes an object **ptr** that can designate, through the expression **\*ptr**, any object that an object of template class allocator can allocate.
+The pointer type describes an object `ptr` that can designate, through the expression **\*ptr**, any object that an object of template class allocator can allocate.
 
 ### Example
 
@@ -851,7 +851,7 @@ This structure is useful for allocating memory for type that differs from the el
 
 The member template class defines the type other. Its sole purpose is to provide the type name **allocator**\<_ **Other**>, given the type name **allocator**\< **Type**>.
 
-For example, given an allocator object **al** of type **A**, you can allocate an object of type **_Other** with the expression:
+For example, given an allocator object `al` of type `A`, you can allocate an object of type `_Other` with the expression:
 
 ```cpp
 A::rebind<Other>::other(al).allocate(1, (Other *)0)
@@ -1003,7 +1003,7 @@ typedef Type value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Type**.
+The type is a synonym for the template parameter `Type`.
 
 ### Example
 

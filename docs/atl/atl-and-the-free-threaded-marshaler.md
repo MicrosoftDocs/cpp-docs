@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # ATL and the Free Threaded Marshaler
 The ATL Simple Object Wizard's Attributes page provides an option that allows your class to aggregate the free threaded marshaler (FTM).  
   
- The wizard generates code to create an instance of the free threaded marshaler in `FinalConstruct` and release that instance in `FinalRelease`. A `COM_INTERFACE_ENTRY_AGGREGATE` macro is automatically added to the COM map to ensure that `QueryInterface` requests for [IMarshal](http://msdn.microsoft.com/library/windows/desktop/dd542707) are handled by the free threaded marshaler.  
+ The wizard generates code to create an instance of the free threaded marshaler in `FinalConstruct` and release that instance in `FinalRelease`. A COM_INTERFACE_ENTRY_AGGREGATE macro is automatically added to the COM map to ensure that `QueryInterface` requests for [IMarshal](http://msdn.microsoft.com/library/windows/desktop/dd542707) are handled by the free threaded marshaler.  
   
  The free threaded marshaler allows direct access to interfaces on your object from any thread in the same process, speeding up cross-apartment calls. This option is intended for classes that use the Both threading model.  
   

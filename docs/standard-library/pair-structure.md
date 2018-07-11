@@ -43,28 +43,28 @@ struct pair
 
 ### Parameters
 
-`Val1`
+*Val1*
  Value initializing the first element of `pair`.
 
-`Val2`
+*Val2*
  Value initializing the second element of `pair`.
 
-`Right`
+*Right*
  A pair whose values are to be used to initialize the elements of another pair.
 
 ## Return Value
 
-The first (default) constructor initializes first element of the pair to the default of type **T1** and second element to default of type **T2**.
+The first (default) constructor initializes first element of the pair to the default of type `T1` and second element to default of type `T2`.
 
-The second constructor initializes first element of the pair to `Val1` and second to *Val2.*
+The second constructor initializes first element of the pair to *Val1* and second to *Val2.*
 
 The third (template) constructor initializes first element of the pair to `Right`. **first** and second to `Right`. **second**.
 
-The fourth constructor initializes first element of the pair to `Val1` and second to *Val2* using [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+The fourth constructor initializes first element of the pair to *Val1* and second to *Val2* using [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## Remarks
 
-The template struct stores a pair of objects of type **T1** and **T2**, respectively. The type **first_type** is the same as the template parameter **T1** and the type **second_type** is the same as the template parameter **T2**. **T1** and **T2** each need supply only a default constructor, a single-argument constructor, and a destructor. All members of the type `pair` are public, because the type is declared as a `struct` rather than as a **class**. The two most common uses for a pair are as return types for functions that return two values and as elements for the associative container classes [map Class](../standard-library/map-class.md) and [multimap Class](../standard-library/multimap-class.md) that have both a key and a value type associated with each element. The latter satisfies the requirements for a pair associative container and has a value type of the form `pair`< **const**`key_type`, `mapped_type`>.
+The template struct stores a pair of objects of type `T1` and `T2`, respectively. The type `first_type` is the same as the template parameter `T1` and the type `second_type` is the same as the template parameter `T2`. `T1` and `T2` each need supply only a default constructor, a single-argument constructor, and a destructor. All members of the type `pair` are public, because the type is declared as a `struct` rather than as a **class**. The two most common uses for a pair are as return types for functions that return two values and as elements for the associative container classes [map Class](../standard-library/map-class.md) and [multimap Class](../standard-library/multimap-class.md) that have both a key and a value type associated with each element. The latter satisfies the requirements for a pair associative container and has a value type of the form `pair`< **const**`key_type`, `mapped_type`>.
 
 ## Example
 

@@ -35,12 +35,12 @@ T* addressof(T& Val);
 
 ### Parameters
 
-`Val`
+*Val*
  The object or function for which to obtain the true address.
 
 ### Return Value
 
-The actual address of the object or function referenced by `Val`, even if an overloaded `operator&()` exists.
+The actual address of the object or function referenced by *Val*, even if an overloaded `operator&()` exists.
 
 ### Remarks
 
@@ -59,27 +59,27 @@ void* align(
 
 ### Parameters
 
-`Alignment`
+*Alignment*
  The alignment bound to attempt.
 
-`Size`
+*Size*
  The size in bytes for the aligned storage.
 
-`Ptr`
+*Ptr*
  The starting address of the available contiguous storage pool to use. This parameter is also an output parameter, and is set to contain the new starting address if the alignment is successful. If `align()` is unsuccessful, this parameter is not modified.
 
-`Space`
+*Space*
  The total space available to `align()` to use in creating the aligned storage. This parameter is also an output parameter, and contains the adjusted space left in the storage buffer after the aligned storage and any associated overhead is subtracted.
 
 If `align()` is unsuccessful, this parameter is not modified.
 
 ### Return Value
 
-A null pointer if the requested aligned buffer would not fit into the available space; otherwise, the new value of `Ptr`.
+A null pointer if the requested aligned buffer would not fit into the available space; otherwise, the new value of *Ptr*.
 
 ### Remarks
 
-The modified `Ptr` and `Space` parameters enable you to call `align()` repeatedly on the same buffer, possibly with different values for `Alignment` and `Size`. The following code snippet shows one use of `align()`.
+The modified *Ptr* and *Space* parameters enable you to call `align()` repeatedly on the same buffer, possibly with different values for *Alignment* and *Size*. The following code snippet shows one use of `align()`.
 
 ```cpp
 #include <type_traits> // std::alignment_of()
@@ -116,15 +116,15 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 
 ### Parameters
 
-`Alloc`
+*Alloc*
  The allocator used to create objects.
 
-`Args`
+*Args*
  The zero or more arguments that become the objects.
 
 ### Remarks
 
-The function creates the object `shared_ptr<Type>`, a pointer to `Type(Args...)` as allocated and constructed by `Alloc`.
+The function creates the object `shared_ptr<Type>`, a pointer to `Type(Args...)` as allocated and constructed by *Alloc*.
 
 ## <a name="const_pointer_cast"></a>  const_pointer_cast
 
@@ -138,13 +138,13 @@ const_pointer_cast(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type controlled by the returned shared pointer.
 
-`Other`
+*Other*
  The type controlled by the argument shared pointer.
 
-`Other`
+*Other*
  The argument shared pointer.
 
 ### Remarks
@@ -190,8 +190,8 @@ void declare_no_pointers(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|Address of first character that no longer contains traceable pointers.|
-|`_Size`|Size of block that starts at `ptr` that contains no traceable pointers.|
+|*ptr*|Address of first character that no longer contains traceable pointers.|
+|*_Size*|Size of block that starts at *ptr* that contains no traceable pointers.|
 
 ### Remarks
 
@@ -207,16 +207,16 @@ void declare_reachable(void* ptr);
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer to a reachable, allocated, valid storage area.
 
 ### Remarks
 
-If `ptr` is not null, the function informs any garbage collector that `ptr` is hereafter reachable (points to valid allocated storage).
+If *ptr* is not null, the function informs any garbage collector that *ptr* is hereafter reachable (points to valid allocated storage).
 
 ## <a name="default_delete"></a>  default_delete
 
-Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.
+Deletes objects allocated with **operator new**. Suitable for use with `unique_ptr`.
 
 ```cpp
 struct default_delete {
@@ -229,7 +229,7 @@ struct default_delete {
 
 ### Parameters
 
-`Ptr`
+*Ptr*
  Pointer to the object to delete.
 
 Other
@@ -237,7 +237,7 @@ Other
 
 ### Remarks
 
-The template class describes a `deleter` that deletes scalar objects allocated with `operator new`, suitable for use with template class `unique_ptr`. It also has the explicit specialization `default_delete<Type[]>`.
+The template class describes a `deleter` that deletes scalar objects allocated with **operator new**, suitable for use with template class `unique_ptr`. It also has the explicit specialization `default_delete<Type[]>`.
 
 ## <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast
 
@@ -251,18 +251,18 @@ dynamic_pointer_cast(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type controlled by the returned shared pointer.
 
-`Other`
+*Other*
  The type controlled by the argument shared pointer.
 
-`sp`
+*sp*
  The argument shared pointer.
 
 ### Remarks
 
-The template function returns an empty shared_ptr object if `dynamic_cast<Ty*>(sp.get())` returns a null pointer; otherwise it returns a [shared_ptr Class](../standard-library/shared-ptr-class.md)\<Ty> object that owns the resource that is owned by `sp`. The expression `dynamic_cast<Ty*>(sp.get())` must be valid.
+The template function returns an empty shared_ptr object if `dynamic_cast<Ty*>(sp.get())` returns a null pointer; otherwise it returns a [shared_ptr Class](../standard-library/shared-ptr-class.md)\<Ty> object that owns the resource that is owned by *sp*. The expression `dynamic_cast<Ty*>(sp.get())` must be valid.
 
 ### Example
 
@@ -311,18 +311,18 @@ D* get_deleter(const shared_ptr<Ty>& sp);
 
 ### Parameters
 
-`D`
+*D*
  The type of the deleter.
 
-`Ty`
+*Ty*
  The type controlled by the shared pointer.
 
-`sp`
+*sp*
  The shared pointer.
 
 ### Remarks
 
-The template function returns a pointer to the deleter of type `D` that belongs to the [shared_ptr Class](../standard-library/shared-ptr-class.md) object `sp`. If `sp` has no deleter or if its deleter is not of type `D` the function returns 0.
+The template function returns a pointer to the deleter of type *D* that belongs to the [shared_ptr Class](../standard-library/shared-ptr-class.md) object *sp*. If *sp* has no deleter or if its deleter is not of type *D* the function returns 0.
 
 ### Example
 
@@ -392,7 +392,7 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
 
 ### Parameters
 
-`count`
+*count*
  The maximum number of elements requested for which memory is to be allocated.
 
 ### Return Value
@@ -452,7 +452,7 @@ make_shared(Types&&... _Args);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Args`|Zero or more constructor arguments. The function infers which constructor overload to invoke based on the arguments that are provided.|
+|*_Args*|Zero or more constructor arguments. The function infers which constructor overload to invoke based on the arguments that are provided.|
 
 ### Remarks
 
@@ -561,19 +561,19 @@ make_unique(Types&&...) = delete;
 
 ### Parameters
 
-`T`
+*T*
  The type of the object that the `unique_ptr` will point to.
 
-`Types`
- The types of the constructor arguments specified by `Args`.
+*Types*
+ The types of the constructor arguments specified by *Args*.
 
-`Args`
- The arguments to be passed to the constructor of the object of type `T`.
+*Args*
+ The arguments to be passed to the constructor of the object of type *T*.
 
-`Elem`
- An array of elements of type `T`.
+*Elem*
+ An array of elements of type *T*.
 
-`Size`
+*Size*
  The number of elements to allocate space for in the new array.
 
 ### Remarks
@@ -592,7 +592,7 @@ When you see error C2280 in connection with a `unique_ptr`, it is almost certain
 
 ## <a name="owner_less"></a>  owner_less
 
-Allows ownership-based mixed comparisons of shared and weak pointers. Returns `true` if the left parameter is ordered before right parameter by the member function `owner_before`.
+Allows ownership-based mixed comparisons of shared and weak pointers. Returns **true** if the left parameter is ordered before right parameter by the member function `owner_before`.
 
 ```cpp
 template <class Type>
@@ -631,10 +631,10 @@ struct owner_less<weak_ptr<Type>>
 
 ### Parameters
 
-`_left`
+*_left*
  A shared or weak pointer.
 
-`right`
+*right*
  A shared or weak pointer.
 
 ### Remarks
@@ -709,13 +709,13 @@ static_pointer_cast(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type controlled by the returned shared pointer.
 
-`Other`
+*Other*
  The type controlled by the argument shared pointer.
 
-`Other`
+*Other*
  The argument shared pointer.
 
 ### Remarks
@@ -771,16 +771,16 @@ void swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type controlled by the left shared/weak pointer.
 
-`Other`
+*Other*
  The type controlled by the right shared/weak pointer.
 
-`left`
+*left*
  The left shared/weak pointer.
 
-`right`
+*right*
  The right shared/weak pointer.
 
 ### Remarks
@@ -867,11 +867,11 @@ Type *undeclare_reachable(Type* ptr);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the memory address to be declared not reachable.|
+|*ptr*|A pointer to the memory address to be declared not reachable.|
 
 ### Remarks
 
-If `ptr` is not `nullptr`, the function informs any garbage collector that `ptr` is no longer reachable. It returns a safely-derived pointer that compares equal to `ptr`.
+If *ptr* is not **nullptr**, the function informs any garbage collector that *ptr* is no longer reachable. It returns a safely-derived pointer that compares equal to *ptr*.
 
 ## <a name="uninitialized_copy"></a>  uninitialized_copy
 
@@ -884,13 +884,13 @@ ForwardIterator uninitialized_copy(InputIterator first, InputIterator last, Forw
 
 ### Parameters
 
-`first`
+*first*
  An input iterator addressing the first element in the source range.
 
-`last`
+*last*
  An input iterator addressing the last element in the source range.
 
-`dest`
+*dest*
  A forward iterator addressing the first element in the destination range.
 
 ### Return Value
@@ -992,18 +992,18 @@ ForwardIterator uninitialized_copy_n(
 
 ### Parameters
 
-`first`
+*first*
  An input iterator that refers to the object to copy.
 
-`count`
+*count*
  A signed or unsigned integer type specifying the number of times to copy the object.
 
-`dest`
+*dest*
  A forward iterator that refers to where the new copies go.
 
 ### Return Value
 
-A forward iterator that addresses the first position beyond the destination. If the source range was empty, the iterator addresses `first`.
+A forward iterator that addresses the first position beyond the destination. If the source range was empty, the iterator addresses *first*.
 
 ### Remarks
 
@@ -1029,13 +1029,13 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
 
 ### Parameters
 
-`first`
+*first*
  A forward iterator addressing the first element in the destination range that is to be initiated.
 
-`last`
+*last*
  A forward iterator addressing the last element in the destination range that is to be initiated.
 
-`val`
+*val*
  The value to be used to initialize the destination range.
 
 ### Remarks
@@ -1101,13 +1101,13 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
 
 ### Parameters
 
-`first`
+*first*
  A forward iterator addressing the first element in the destination range to be initiated.
 
-`count`
+*count*
  The number of elements to be initialized.
 
-`val`
+*val*
  The value to be used to initialize the destination range.
 
 ### Remarks

@@ -25,26 +25,26 @@ struct is_trivially_move_constructible;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that has a trivial move constructor, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a class that has a trivial move constructor, otherwise it holds false.
 
-A move constructor for a class `Ty` is trivial if:
+A move constructor for a class *Ty* is trivial if:
 
 it is implicitly declared
 
 its parameter types are equivalent to those of an implicit declaration
 
-the class `Ty` has no virtual functions
+the class *Ty* has no virtual functions
 
-the class `Ty` has no virtual bases
+the class *Ty* has no virtual bases
 
 the class has no volatile non-static data members
 
-all the direct bases of the class `Ty` have trivial move constructors
+all the direct bases of the class *Ty* have trivial move constructors
 
 the classes of all the non-static data members of class type have trivial move constructors
 

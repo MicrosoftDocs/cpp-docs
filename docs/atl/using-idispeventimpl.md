@@ -26,7 +26,7 @@ When using `IDispEventImpl` to handle events, you will need to:
 -   Advise and unadvise the event source.  
   
 ## Example  
- The example below shows how to handle the **DocumentChange** event fired by Word's **Application** object. This event is defined as a method on the **ApplicationEvents** dispinterface.  
+ The example below shows how to handle the `DocumentChange` event fired by Word's **Application** object. This event is defined as a method on the `ApplicationEvents` dispinterface.  
   
  The example is from the [ATLEventHandling sample](../visual-cpp-samples.md).  
   

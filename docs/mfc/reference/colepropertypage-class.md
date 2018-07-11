@@ -97,11 +97,11 @@ BOOL GetControlStatus(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Resource ID of a property page control.  
   
 ### Return Value  
- **TRUE** if the control value has been modified; otherwise **FALSE**.  
+ TRUE if the control value has been modified; otherwise FALSE.  
   
 ##  <a name="getobjectarray"></a>  COlePropertyPage::GetObjectArray  
  Returns the array of objects being edited by the property page.  
@@ -111,14 +111,14 @@ LPDISPATCH* GetObjectArray(ULONG* pnObjects);
 ```  
   
 ### Parameters  
- `pnObjects`  
+ *pnObjects*  
  Pointer to an unsigned long integer that will receive the number of objects being edited by the page.  
   
 ### Return Value  
  Pointer to an array of `IDispatch` pointers, which are used to access the properties of each control on the property page. The caller must not release these interface pointers.  
   
 ### Remarks  
- Each property page object maintains an array of pointers to the `IDispatch` interfaces of the objects being edited by the page. This function sets its `pnObjects` argument to the number of elements in that array and returns a pointer to the first element of the array.  
+ Each property page object maintains an array of pointers to the `IDispatch` interfaces of the objects being edited by the page. This function sets its *pnObjects* argument to the number of elements in that array and returns a pointer to the first element of the array.  
   
 ##  <a name="getpagesite"></a>  COlePropertyPage::GetPageSite  
  Gets a pointer to the property page's `IPropertyPageSite` interface.  
@@ -141,7 +141,7 @@ void IgnoreApply(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  ID of the control to be ignored.  
   
 ### Remarks  
@@ -155,7 +155,7 @@ BOOL IsModified();
 ```  
   
 ### Return Value  
- **TRUE** if the property page has been modified.  
+ TRUE if the property page has been modified.  
   
 ##  <a name="oneditproperty"></a>  COlePropertyPage::OnEditProperty  
  The framework calls this function when a specific property is to be edited.  
@@ -165,14 +165,14 @@ virtual BOOL OnEditProperty(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  Dispatch ID of the property being edited.  
   
 ### Return Value  
- The default implementation returns **FALSE**. Overrides of this function should return **TRUE**.  
+ The default implementation returns FALSE. Overrides of this function should return TRUE.  
   
 ### Remarks  
- You can override it to set the focus to the appropriate control on the page. The default implementation does nothing and returns **FALSE**.  
+ You can override it to set the focus to the appropriate control on the page. The default implementation does nothing and returns FALSE.  
   
 ##  <a name="onhelp"></a>  COlePropertyPage::OnHelp  
  The framework calls this function when the user requests online help.  
@@ -186,10 +186,10 @@ virtual BOOL OnHelp(LPCTSTR lpszHelpDir);
  Directory containing the property page's help file.  
   
 ### Return Value  
- The default implementation returns **FALSE**.  
+ The default implementation returns FALSE.  
   
 ### Remarks  
- Override it if your property page must perform any special action when the user accesses help. The default implementation does nothing and returns **FALSE**, which instructs the framework to call WinHelp.  
+ Override it if your property page must perform any special action when the user accesses help. The default implementation does nothing and returns FALSE, which instructs the framework to call WinHelp.  
   
 ##  <a name="oninitdialog"></a>  COlePropertyPage::OnInitDialog  
  The framework calls this function when the property page's dialog is initialized.  
@@ -199,10 +199,10 @@ virtual BOOL OnInitDialog();
 ```  
   
 ### Return Value  
- The default implementation returns **FALSE**.  
+ The default implementation returns FALSE.  
   
 ### Remarks  
- Override it if any special action is required when the dialog is initialized. The default implementation calls `CDialog::OnInitDialog` and returns **FALSE**.  
+ Override it if any special action is required when the dialog is initialized. The default implementation calls `CDialog::OnInitDialog` and returns FALSE.  
   
 ##  <a name="onobjectschanged"></a>  COlePropertyPage::OnObjectsChanged  
  Called by the framework when another OLE control, with new properties, is chosen.  
@@ -236,14 +236,14 @@ BOOL SetControlStatus(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Contains the ID of a property page control.  
   
- `bDirty`  
- Specifies if a field of the property page has been modified. Set to **TRUE** if the field has been modified, **FALSE** if it has not been modified.  
+ *bDirty*  
+ Specifies if a field of the property page has been modified. Set to TRUE if the field has been modified, FALSE if it has not been modified.  
   
 ### Return Value  
- **TRUE**, if the specified control was set; otherwise **FALSE**.  
+ TRUE, if the specified control was set; otherwise FALSE.  
   
 ### Remarks  
  If the status of a property page control is dirty when the property page is closed or the Apply button is chosen, the control's property will be updated with the appropriate value.  
@@ -273,7 +273,7 @@ void SetHelpInfo(
  *lpszDocString*  
  A string containing brief help information for display in a status bar or other location.  
   
- `lpszHelpFile`  
+ *lpszHelpFile*  
  Name of the property page's help file.  
   
  *dwHelpContext*  
@@ -287,7 +287,7 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 ```  
   
 ### Parameters  
- `bModified`  
+ *bModified*  
  Specifies the new value for the property page's modified flag.  
   
 ##  <a name="setpagename"></a>  COlePropertyPage::SetPageName  

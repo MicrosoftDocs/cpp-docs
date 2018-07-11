@@ -25,10 +25,10 @@ class wstring_convert
 
 ### Parameters
 
-`Codecvt`
+*Codecvt*  
  The [locale](../standard-library/locale-class.md) facet that represents the conversion object.
 
-`Elem`
+*Elem*  
  The wide-character element type.
 
 ## Remarks
@@ -120,11 +120,11 @@ wide_string from_bytes(const char* first, const char* last);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Byte`|The single-element byte sequence to be converted.|
-|`ptr`|The C-style, null-terminated sequence of characters to be converted.|
-|`Bstr`|The [byte_string](#byte_string) to be converted.|
-|`first`|The first character in a range of characters to be converted.|
-|`last`|The last character in a range of characters to be converted.|
+|*Byte*|The single-element byte sequence to be converted.|
+|*ptr*|The C-style, null-terminated sequence of characters to be converted.|
+|*Bstr*|The [byte_string](#byte_string) to be converted.|
+|*first*|The first character in a range of characters to be converted.|
+|*last*|The last character in a range of characters to be converted.|
 
 ### Return Value
 
@@ -132,7 +132,7 @@ A wide string object resulting from the conversion.
 
 ### Remarks
 
-If the [conversion state](../standard-library/wstring-convert-class.md) object was `not` constructed with an explicit value, it is set to its default value (the initial conversion state) before the conversion begins. Otherwise it is left unchanged.
+If the [conversion state](../standard-library/wstring-convert-class.md) object was *not* constructed with an explicit value, it is set to its default value (the initial conversion state) before the conversion begins. Otherwise it is left unchanged.
 
 The number of input elements successfully converted is stored in the conversion count object. If no conversion error occurs, the member function returns the converted wide string. Otherwise, if the object was constructed with an initializer for the wide-string error message, the member function returns the wide-string error message object. Otherwise, the member function throws an object of class [range_error](../standard-library/range-error-class.md).
 
@@ -189,15 +189,15 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Char`|The wide character to be converted.|
-|`Wptr`|The C-style, null-terminated sequence, beginning at `wptr`, to be converted.|
-|`Wstr`|The [wide_string](#wide_string) to be converted.|
-|`first`|The first element in a range of elements to be converted.|
-|`last`|The last element in a range of elements to be converted.|
+|*Char*|The wide character to be converted.|
+|*Wptr*|The C-style, null-terminated sequence, beginning at `wptr`, to be converted.|
+|*Wstr*|The [wide_string](#wide_string) to be converted.|
+|*first*|The first element in a range of elements to be converted.|
+|*last*|The last element in a range of elements to be converted.|
 
 ### Remarks
 
-If the [conversion state](../standard-library/wstring-convert-class.md) object was `not` constructed with an explicit value, it is set to its default value (the initial conversion state) before the conversion begins. Otherwise it is left unchanged.
+If the [conversion state](../standard-library/wstring-convert-class.md) object was *not* constructed with an explicit value, it is set to its default value (the initial conversion state) before the conversion begins. Otherwise it is left unchanged.
 
 The number of input elements successfully converted is stored in the conversion count object. If no conversion error occurs, the member function returns the converted byte string. Otherwise, if the object was constructed with an initializer for the byte-string error message, the member function returns the byte-string error message object. Otherwise, the member function throws an object of class [range_error](../standard-library/range-error-class.md).
 
@@ -227,10 +227,10 @@ wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`*Pcvt`|The object of type `Codecvt` to perform the conversion.|
-|`_State`|The object of type [state_type](#state_type) representing the conversion state.|
-|`_Berr`|The [byte_string](#byte_string) to display on errors.|
-|`Werr`|The [wide_string](#wide_string) to display on errors.|
+|*\*Pcvt*|The object of type `Codecvt` to perform the conversion.|
+|*_State*|The object of type [state_type](#state_type) representing the conversion state.|
+|*_Berr*|The [byte_string](#byte_string) to display on errors.|
+|*Werr*|The [wide_string](#wide_string) to display on errors.|
 
 ### Remarks
 

@@ -36,7 +36,7 @@ Windows provides a variety of drawing tools to use in device contexts. It provid
   
  Each graphic-object class in the class library has a constructor that allows you to create graphic objects of that class, which you must then initialize with the appropriate create function, such as `CreatePen`.  
   
- Each graphic-object class in the class library has a cast operator that will cast an MFC object to the associated Windows handle. The resulting handle is valid until the associated object detaches it. Use the object's **Detach** member function to detach the handle.  
+ Each graphic-object class in the class library has a cast operator that will cast an MFC object to the associated Windows handle. The resulting handle is valid until the associated object detaches it. Use the object's `Detach` member function to detach the handle.  
   
  The following code casts a `CPen` object to a Windows handle:  
   

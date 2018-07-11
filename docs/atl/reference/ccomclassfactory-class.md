@@ -33,13 +33,13 @@ class CComClassFactory
 |[CComClassFactory::LockServer](#lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
- `CComClassFactory` implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. **IClassFactory** must be implemented for every class that you register in the system registry and to which you assign a CLSID.  
+ `CComClassFactory` implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.  
   
  ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), which declares `CComClassFactory` as the default class factory. To override this default, specify one of the `DECLARE_CLASSFACTORY`*XXX* macros in your class definition. For example, the [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) macro uses the specified class for the class factory:  
   
  [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/ccomclassfactory-class_1.h)]  
   
- The above class definition specifies that **CMyClassFactory** will be used as the object's default class factory. **CMyClassFactory** must derive from `CComClassFactory` and override `CreateInstance`.  
+ The above class definition specifies that `CMyClassFactory` will be used as the object's default class factory. `CMyClassFactory` must derive from `CComClassFactory` and override `CreateInstance`.  
   
  ATL provides three other macros that declare a class factory:  
   
@@ -60,34 +60,34 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### Parameters  
- `pUnkOuter`  
- [in] If the object is being created as part of an aggregate, then `pUnkOuter` must be the outer unknown. Otherwise, `pUnkOuter` must be **NULL**.  
+ *pUnkOuter*  
+ [in] If the object is being created as part of an aggregate, then *pUnkOuter* must be the outer unknown. Otherwise, *pUnkOuter* must be NULL.  
   
- `riid`  
- [in] The IID of the requested interface. If `pUnkOuter` is non- **NULL**, `riid` must be **IID_IUnknown**.  
+ *riid*  
+ [in] The IID of the requested interface. If *pUnkOuter* is non- NULL, *riid* must be `IID_IUnknown`.  
   
- `ppvObj`  
- [out] A pointer to the interface pointer identified by `riid`. If the object does not support this interface, `ppvObj` is set to **NULL**.  
+ *ppvObj*  
+ [out] A pointer to the interface pointer identified by *riid*. If the object does not support this interface, *ppvObj* is set to NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="lockserver"></a>  CComClassFactory::LockServer  
- Increments and decrements the module lock count by calling **_Module::Lock** and **_Module::Unlock**, respectively.  
+ Increments and decrements the module lock count by calling `_Module::Lock` and `_Module::Unlock`, respectively.  
   
 ```
 STDMETHOD(LockServer)(BOOL fLock);
 ```  
   
 ### Parameters  
- `fLock`  
- [in] If **TRUE**, the lock count is incremented; otherwise, the lock count is decremented.  
+ *fLock*  
+ [in] If TRUE, the lock count is incremented; otherwise, the lock count is decremented.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- **_Module** refers to the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
+ `_Module` refers to the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
   
  Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be created quickly.  
   

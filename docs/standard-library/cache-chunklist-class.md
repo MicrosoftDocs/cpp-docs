@@ -27,13 +27,13 @@ class cache_chunklist
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Sz`|The number of elements in the array to be allocated.|
+|*Sz*|The number of elements in the array to be allocated.|
 
 ## Remarks
 
-This template class uses `operator new` to allocate chunks of raw memory, suballocating blocks to allocate storage for a memory block when needed; it stores deallocated memory blocks in a separate free list for each chunk, and uses `operator delete` to deallocate a chunk when none of its memory blocks is in use.
+This template class uses **operator new** to allocate chunks of raw memory, suballocating blocks to allocate storage for a memory block when needed; it stores deallocated memory blocks in a separate free list for each chunk, and uses **operator delete** to deallocate a chunk when none of its memory blocks is in use.
 
-Each memory block holds `Sz` bytes of usable memory and a pointer to the chunk that it belongs to. Each chunk holds `Nelts` memory blocks, three pointers, an int and the data that `operator new` and `operator delete` require.
+Each memory block holds *Sz* bytes of usable memory and a pointer to the chunk that it belongs to. Each chunk holds `Nelts` memory blocks, three pointers, an int and the data that **operator new** and **operator delete** require.
 
 ### Constructors
 
@@ -66,7 +66,7 @@ void *allocate(std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`count`|The number of elements in the array to be allocated.|
+|*count*|The number of elements in the array to be allocated.|
 
 ### Return Value
 
@@ -96,8 +96,8 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the first object to be deallocated from storage.|
-|`count`|The number of objects to be deallocated from storage.|
+|*ptr*|A pointer to the first object to be deallocated from storage.|
+|*count*|The number of objects to be deallocated from storage.|
 
 ### Remarks
 

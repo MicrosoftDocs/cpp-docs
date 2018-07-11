@@ -25,11 +25,11 @@ class CInterfaceList
 ```  
   
 #### Parameters  
- `I`  
+ *I*  
  A COM interface specifying the type of pointer to be stored.  
   
- `piid`  
- A pointer to the IID of `I`.  
+ *piid*  
+ A pointer to the IID of *I*.  
   
 ## Members  
   
@@ -60,7 +60,7 @@ CInterfaceList(UINT nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The block size, with a default of 10.  
   
 ### Remarks  

@@ -68,7 +68,7 @@ void AddUndoAction(LPCTSTR lpszLabel);
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The action label that will be displayed in the drop-down list.  
   
 ##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList  
@@ -96,19 +96,19 @@ CMFCRibbonUndoButton(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies the command identifier.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Specifies the text label of the button.  
   
- [in] `nSmallImageIndex`  
+ [in] *nSmallImageIndex*  
  Zero-based index in the image list of the parent object for the button's small image.  
   
- [in] `nLargeImageIndex`  
+ [in] *nLargeImageIndex*  
  Zero-based index in the image list of the parent object for the of button's large image.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  A handle to an icon that you can use as a button's image.  
   
 ##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber  
@@ -129,7 +129,7 @@ virtual BOOL HasMenu() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
   

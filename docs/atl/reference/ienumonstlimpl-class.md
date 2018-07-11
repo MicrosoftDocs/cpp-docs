@@ -24,19 +24,19 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ```  
   
 #### Parameters  
- `Base`  
+ *Base*  
  A COM enumerator ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) interface.  
   
- `piid`  
+ *piid*  
  A pointer to the interface ID of the enumerator interface.  
   
- `T`  
+ *T*  
  The type of item exposed by the enumerator interface.  
   
- `Copy`  
+ *Copy*  
  A [copy policy class](../../atl/atl-copy-policy-classes.md).  
   
- `CollType`  
+ *CollType*  
  A C++ Standard Library container class.  
   
 ## Members  
@@ -57,7 +57,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 |----------|-----------------|  
 |[IEnumOnSTLImpl::m_iter](#m_iter)|The iterator that represents the enumerator's current position within the collection.|  
 |[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|A pointer to the C++ Standard Library container holding the items to be enumerated.|  
-|[IEnumOnSTLImpl::m_spUnk](#m_spunk)|The **IUnknown** pointer of the object supplying the collection.|  
+|[IEnumOnSTLImpl::m_spUnk](#m_spunk)|The `IUnknown` pointer of the object supplying the collection.|  
   
 ## Remarks  
  `IEnumOnSTLImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in a C++ Standard Library-compatible container. This class is analogous to the [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) class, which provides an implementation for an enumerator interface based on an array.  
@@ -87,17 +87,17 @@ HRESULT Init(
 ```  
   
 ### Parameters  
- `pUnkForRelease`  
- [in] The **IUnknown** pointer of an object that must be kept alive during the lifetime of the enumerator. Pass **NULL** if no such object exists.  
+ *pUnkForRelease*  
+ [in] The `IUnknown` pointer of an object that must be kept alive during the lifetime of the enumerator. Pass NULL if no such object exists.  
   
- `collection`  
+ *collection*  
  A reference to the C++ Standard Library container that holds the items to be enumerated.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- If you pass `Init` a reference to a collection held in another object, you can use the `pUnkForRelease` parameter to ensure that the object, and the collection it holds, is available for as long as the enumerator needs it.  
+ If you pass `Init` a reference to a collection held in another object, you can use the *pUnkForRelease* parameter to ensure that the object, and the collection it holds, is available for as long as the enumerator needs it.  
   
  You must call this method before passing a pointer to the enumerator interface back to any clients.  
   
@@ -109,14 +109,14 @@ STDMETHOD(Clone)(Base** ppEnum);
 ```  
   
 ### Parameters  
- `ppEnum`  
+ *ppEnum*  
  [out] The enumerator interface on a newly created object cloned from the current enumerator.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk  
- The **IUnknown** pointer of the object supplying the collection.  
+ The `IUnknown` pointer of the object supplying the collection.  
   
 ```
 CComPtr<IUnknown> m_spUnk;
@@ -153,17 +153,17 @@ STDMETHOD(Next)(
 ```  
   
 ### Parameters  
- `celt`  
+ *celt*  
  [in] The number of elements requested.  
   
- `rgelt`  
+ *rgelt*  
  [out] The array to be filled in with the elements.  
   
- `pceltFetched`  
- [out] The number of elements actually returned in `rgelt`. This can be less than `celt` if fewer than `celt` elements remain in the list.  
+ *pceltFetched*  
+ [out] The number of elements actually returned in *rgelt*. This can be less than *celt* if fewer than *celt* elements remain in the list.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="reset"></a>  IEnumOnSTLImpl::Reset  
  This method provides the implementation of the [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) method.  
@@ -173,7 +173,7 @@ STDMETHOD(Reset)(void);
 ```  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="skip"></a>  IEnumOnSTLImpl::Skip  
  This method provides the implementation of the [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) method.  
@@ -183,11 +183,11 @@ STDMETHOD(Skip)(ULONG celt);
 ```  
   
 ### Parameters  
- `celt`  
+ *celt*  
  [in] The number of elements to skip.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

@@ -61,8 +61,8 @@ void AdjustRectToworkArea(
 ```  
   
 ### Parameters  
- [in, out] `rect`  
- [in] `pRectDelta`  
+ [in, out] *rect*  
+ [in] *pRectDelta*  
   
 ### Remarks  
   
@@ -80,12 +80,12 @@ void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
- [in] `pWndTodock`  
- [in] `ptMouse`  
- [out] `rectResult`  
- [out] `bDrawTab`  
- [out] `ppTargetBar`  
+ [in] *barContainerManager*  
+ [in] *pWndTodock*  
+ [in] *ptMouse*  
+ [out] *rectResult*  
+ [out] *bDrawTab*  
+ [out] *ppTargetBar*  
   
 ### Remarks  
   
@@ -97,7 +97,7 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -111,7 +111,7 @@ BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -133,14 +133,14 @@ BOOL CheckAlignment(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `pBar`  
- [in] `nSensitivity`  
- [in] `pDockManager`  
- [in] `bOuterEdge`  
- [out] `dwAlignment`  
- [in] `dwEnabledDockBars`  
- [in] `lpRectBounds`  
+ [in] *point*  
+ [in] *pBar*  
+ [in] *nSensitivity*  
+ [in] *pDockManager*  
+ [in] *bOuterEdge*  
+ [out] *dwAlignment*  
+ [in] *dwEnabledDockBars*  
+ [in] *lpRectBounds*  
   
 ### Return Value  
   
@@ -156,8 +156,8 @@ BOOL CyFromString(
 ```  
   
 ### Parameters  
- [out] `cy`  
- [in] `psz`  
+ [out] *cy*  
+ [in] *psz*  
   
 ### Return Value  
   
@@ -173,8 +173,8 @@ BOOL DecimalFromString(
 ```  
   
 ### Parameters  
- [out] `decimal`  
- [in] `psz`  
+ [out] *decimal*  
+ [in] *psz*  
   
 ### Return Value  
   
@@ -190,8 +190,8 @@ void FlipRect(
 ```  
   
 ### Parameters  
- [in, out] `rect`  
- [in] `nDegrees`  
+ [in, out] *rect*  
+ [in] *nDegrees*  
   
 ### Remarks  
   
@@ -206,9 +206,9 @@ void ForceAdjustLayout(
 ```  
   
 ### Parameters  
- [in, out] `pDockManager`  
- [in] `bForce`  
- [in] `bForceInvisible`  
+ [in, out] *pDockManager*  
+ [in] *bForce*  
+ [in] *bForceInvisible*  
   
 ### Remarks  
   
@@ -220,7 +220,7 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -234,7 +234,7 @@ DWORD GetOppositeAlignment(DWORD dwAlign);
 ```  
   
 ### Parameters  
- [in] `dwAlign`  
+ [in] *dwAlign*  
   
 ### Return Value  
   
@@ -254,12 +254,12 @@ BOOL GetPaneAndAlignFromPoint(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
- [in] `pt`  
- [out] `ppTargetControlBar`  
- [out] `dwAlignment`  
- [out] `bTabArea`  
- [out] `bCaption`  
+ [in] *barContainerManager*  
+ [in] *pt*  
+ [out] *ppTargetControlBar*  
+ [out] *dwAlignment*  
+ [out] *bTabArea*  
+ [out] *bCaption*  
   
 ### Return Value  
   
@@ -273,7 +273,7 @@ HICON GetWndIcon(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -290,9 +290,9 @@ void SetNewParent(
 ```  
   
 ### Parameters  
- [in] `lstControlBars`  
- [in] `pNewParent`  
- [in] `bCheckVisibility`  
+ [in] *lstControlBars*  
+ [in] *pNewParent*  
+ [in] *bCheckVisibility*  
   
 ### Remarks  
   
@@ -306,8 +306,8 @@ BOOL StringFromCy(
 ```  
   
 ### Parameters  
- [out] `str`  
- [in] `cy`  
+ [out] *str*  
+ [in] *cy*  
   
 ### Return Value  
   
@@ -323,8 +323,8 @@ BOOL StringFromDecimal(
 ```  
   
 ### Parameters  
- [out] `str`  
- [in] `decimal`  
+ [out] *str*  
+ [in] *decimal*  
   
 ### Return Value  
   

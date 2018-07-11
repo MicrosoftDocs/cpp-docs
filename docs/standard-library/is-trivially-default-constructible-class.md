@@ -25,22 +25,22 @@ struct is_trivially_default_constructible;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that has a trivial constructor, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a class that has a trivial constructor, otherwise it holds false.
 
-A default constructor for a class `Ty` is trivial if:
+A default constructor for a class *Ty* is trivial if:
 
 - it is an implicitly declared default constructor
 
-- the class `Ty` has no virtual functions
+- the class *Ty* has no virtual functions
 
-- the class `Ty` has no virtual bases
+- the class *Ty* has no virtual bases
 
-- all the direct bases of the class `Ty` have trivial constructors
+- all the direct bases of the class *Ty* have trivial constructors
 
 - the classes of all the non-static data members of class type have trivial constructors
 

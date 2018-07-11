@@ -45,7 +45,7 @@ static void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The number of bytes to allocate.  
   
 ### Return Value  
@@ -62,7 +62,7 @@ static void Free(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to the allocated memory.  
   
 ### Remarks  
@@ -76,10 +76,10 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to the allocated memory.  
   
- `nBytes`  
+ *nBytes*  
  The number of bytes to reallocate.  
   
 ### Return Value  

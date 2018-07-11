@@ -32,7 +32,7 @@ class CDockingManager : public CObject
 |[CDockingManager::AddMiniFrame](#addminiframe)|Adds a frame to the list of mini frames.|  
 |[CDockingManager::AddPane](#addpane)|Registers a pane with the docking manager.|  
 |[CDockingManager::AdjustDockingLayout](#adjustdockinglayout)|Recalculates and adjusts the layout of all panes in a frame window.|  
-|[CDockingManager::AdjustPaneFrames](#adjustpaneframes)|Causes the `WM_NCCALCSIZE` message to be sent to all panes and `CPaneFrameWnd` windows.|  
+|[CDockingManager::AdjustPaneFrames](#adjustpaneframes)|Causes the WM_NCCALCSIZE message to be sent to all panes and `CPaneFrameWnd` windows.|  
 |[CDockingManager::AdjustRectToClientArea](#adjustrecttoclientarea)|Adjusts the alignment of a rectangle.|  
 |[CDockingManager::AlignAutoHidePane](#alignautohidepane)|Resizes a docking pane in autohide mode so that it takes the full width or height of the frame’s client area surrounded by dock sites.|  
 |[CDockingManager::AutoHidePane](#autohidepane)|Creates an autohide toolbar.|  
@@ -155,14 +155,14 @@ BOOL AddDockSite(
 ```  
   
 ### Parameters  
- [in] `info`  
+ [in] *info*  
  A reference to an info structure that contains dock pane alignment.  
   
- [out] `ppDockBar`  
+ [out] *ppDockBar*  
  A pointer to a pointer to the new dock pane.  
   
 ### Return Value  
- `TRUE` if the dock pane was created successfully; `FALSE` otherwise.  
+ TRUE if the dock pane was created successfully; FALSE otherwise.  
   
 ##  <a name="addhiddenmditabbedbar"></a>  CDockingManager::AddHiddenMDITabbedBar  
  Adds a handle to a bar pane to the list of hidden MDI tabbed bar panes.  
@@ -172,7 +172,7 @@ void AddHiddenMDITabbedBar(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a bar pane  
   
 ##  <a name="addpane"></a>  CDockingManager::AddPane  
@@ -187,20 +187,20 @@ BOOL AddPane(
 ```  
   
 ### Parameters  
- [in, out] `pWnd`  
+ [in, out] *pWnd*  
  Specifies the pane to add to the docking manager.  
   
- [in] `bTail`  
- `TRUE` to add the pane to the end of the list of panes for the docking manager; otherwise, `FALSE`.  
+ [in] *bTail*  
+ TRUE to add the pane to the end of the list of panes for the docking manager; otherwise, FALSE.  
   
- [in] `bAutoHide`  
- For internal use only. Always use the default value `FALSE`.  
+ [in] *bAutoHide*  
+ For internal use only. Always use the default value FALSE.  
   
- [in] `bInsertForOuterEdge`  
- For internal use only. Always use the default value `FALSE`.  
+ [in] *bInsertForOuterEdge*  
+ For internal use only. Always use the default value FALSE.  
   
 ### Return Value  
- `TRUE` if the pane was successfully registered with the docking manager; otherwise, `FALSE`.  
+ TRUE if the pane was successfully registered with the docking manager; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to register non-floating, non-resizable panes with the docking manager. If you do not register the panes, they will not appear correctly when the docking manager is laid out.  
@@ -213,7 +213,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### Parameters  
- [in] `hdwp`  
+ [in] *hdwp*  
  Specifies the deferred window position structure. For more information, see [Windows Data Types](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
   
 ### Remarks  
@@ -226,14 +226,14 @@ virtual BOOL AddMiniFrame(CPaneFrameWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to a frame.  
   
 ### Return Value  
- `TRUE` if the frame is not in the list of mini frames and was added successfully; `FALSE` otherwise.  
+ TRUE if the frame is not in the list of mini frames and was added successfully; FALSE otherwise.  
   
 ##  <a name="adjustpaneframes"></a>  CDockingManager::AdjustPaneFrames  
- Causes the `WM_NCCALCSIZE` message to be sent to all panes and `CPaneFrameWnd` windows.  
+ Causes the WM_NCCALCSIZE message to be sent to all panes and `CPaneFrameWnd` windows.  
   
 ```  
 virtual void AdjustPaneFrames();
@@ -251,17 +251,17 @@ virtual BOOL AdjustRectToClientArea(
 ```  
   
 ### Parameters  
- [in] `rectResult`  
+ [in] *rectResult*  
  A reference to a `CRect` object  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  The alignment of the `CRect` object  
   
 ### Return Value  
- `TRUE` if the alignment of the `CRect` object was adjusted; `FALSE` otherwise.  
+ TRUE if the alignment of the `CRect` object was adjusted; FALSE otherwise.  
   
 ### Remarks  
- The `dwAlignment` parameter can have one of the following values:  
+ The *dwAlignment* parameter can have one of the following values:  
   
 -   CBRS_ALIGN_TOP  
   
@@ -281,11 +281,11 @@ void AlignAutoHidePane(
 ```  
   
 ### Parameters  
- [in] `pDefaultSlider`  
+ [in] *pDefaultSlider*  
  The docking slider pane.  
   
- [in] `bIsVisible`  
- `TRUE` if the docking pane is visible; `FALSE` otherwise.  
+ [in] *bIsVisible*  
+ TRUE if the docking pane is visible; FALSE otherwise.  
   
 ##  <a name="autohidepane"></a>  CDockingManager::AutoHidePane  
  Creates an autohide toolbar.  
@@ -297,14 +297,14 @@ CMFCAutoHideToolBar* AutoHidePane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the bar pane.  
   
- [in] `pCurrAutoHideToolBar`  
+ [in] *pCurrAutoHideToolBar*  
  A pointer to an auto hide toolbar.  
   
 ### Return Value  
- `NULL` if the auto hide toolbar was not created; otherwise a pointer to the new toolbar.  
+ NULL if the auto hide toolbar was not created; otherwise a pointer to the new toolbar.  
   
 ##  <a name="bringbarstotop"></a>  CDockingManager::BringBarsToTop  
  Brings the docked bars that have the specified alignment to the top.  
@@ -316,11 +316,11 @@ void BringBarsToTop(
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  The alignment of the dock bars that are brought to the top of other windows.  
   
- [in] `bExcludeDockedBars`  
- `TRUE` to exclude the docked bars from being on top; otherwise `FALSE`.  
+ [in] *bExcludeDockedBars*  
+ TRUE to exclude the docked bars from being on top; otherwise FALSE.  
   
 ##  <a name="buildpanesmenu"></a>  CDockingManager::BuildPanesMenu  
  Adds names of docking panes and toolbars to a menu.  
@@ -332,11 +332,11 @@ void BuildPanesMenu(
 ```  
   
 ### Parameters  
- [in] `menu`  
+ [in] *menu*  
  A menu to add the names of docking panes and toolbars to.  
   
- [in] `bToolbarsOnly`  
- `TRUE` to add only toolbar names to the menu; `FALSE` otherwise.  
+ [in] *bToolbarsOnly*  
+ TRUE to add only toolbar names to the menu; FALSE otherwise.  
   
 ##  <a name="calcexpecteddockedrect"></a>  CDockingManager::CalcExpectedDockedRect  
  Calculates the expected rectangle of a docked window.  
@@ -351,23 +351,23 @@ void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the window to dock.  
   
- [in] `ptMouse`  
+ [in] *ptMouse*  
  The mouse location.  
   
- [out] `rectResult`  
+ [out] *rectResult*  
  The calculated rectangle.  
   
- [in] `bDrawTab`  
- `TRUE` to draw a tab; otherwise `FALSE`.  
+ [in] *bDrawTab*  
+ TRUE to draw a tab; otherwise FALSE.  
   
- [out] `ppTargetBar`  
+ [out] *ppTargetBar*  
  A pointer to a pointer to the target pane.  
   
 ### Remarks  
- This method calculates the rectangle that a window would occupy if a user dragged the window to the point specified by `ptMouse` and docked it there.  
+ This method calculates the rectangle that a window would occupy if a user dragged the window to the point specified by *ptMouse* and docked it there.  
   
 ##  <a name="create"></a>  CDockingManager::Create  
  Creates a docking manager.  
@@ -377,11 +377,11 @@ BOOL Create(CFrameWnd* pParentWnd);
 ```  
   
 ### Parameters  
- [in] `pParentWnd`  
- A pointer to the parent frame of the docking manager. This value must not be `NULL`.  
+ [in] *pParentWnd*  
+ A pointer to the parent frame of the docking manager. This value must not be NULL.  
   
 ### Return Value  
- `TRUE` always.  
+ TRUE always.  
   
 ##  <a name="determinepaneandstatus"></a>  CDockingManager::DeterminePaneAndStatus  
  Determines the pane that contains a given point and its docking status.  
@@ -397,22 +397,22 @@ virtual AFX_CS_STATUS DeterminePaneAndStatus(
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
  The location of the pane to check.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  The value to increase the window rectangle of each checked pane. A pane satisfies the search criteria if the given point is in this increased region.  
   
- [in] `dwEnabledAlignment`  
+ [in] *dwEnabledAlignment*  
  The alignment of the docking pane.  
   
- [out] `ppTargetBar`  
+ [out] *ppTargetBar*  
  A pointer to a pointer to the target pane.  
   
- [in] `pBarToIgnore`  
+ [in] *pBarToIgnore*  
  The pane that the method ignores.  
   
- [in] `pBarToDock`  
+ [in] *pBarToDock*  
  The pane that is docked.  
   
 ### Return Value  
@@ -436,8 +436,8 @@ void DisableRestoreDockState(BOOL bDisable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bDisable`  
- `TRUE` to disable loading of docking layout from the registry; otherwise, `FALSE`.  
+ [in] *bDisable*  
+ TRUE to disable loading of docking layout from the registry; otherwise, FALSE.  
   
 ### Remarks  
  Call this method when you must preserve the current layout of docking panes and toolbars when the application state is loading.  
@@ -453,13 +453,13 @@ void DockPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a bar pane to dock to.  
   
- [in] `nDockBarID`  
+ [in] *nDockBarID*  
  The id of the bar to dock.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  The destination rectangle.  
   
 ##  <a name="dockpaneleftof"></a>  CDockingManager::DockPaneLeftOf  
@@ -472,14 +472,14 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### Parameters  
- [in] `pBarToDock`  
- A pointer to the pane to be docked to the left of `pTargetBar`.  
+ [in] *pBarToDock*  
+ A pointer to the pane to be docked to the left of *pTargetBar*.  
   
- [in] `pTargetBar`  
+ [in] *pTargetBar*  
  A pointer to the target pane.  
   
 ### Return Value  
- `TRUE` if the pane was docked successfully; otherwise, `FALSE`.  
+ TRUE if the pane was docked successfully; otherwise, FALSE.  
   
 ##  <a name="enableautohidepanes"></a>  CDockingManager::EnableAutoHidePanes  
  Enables docking of the pane to the main frame, creates a dock pane, and adds it to the list of control bars.  
@@ -489,11 +489,11 @@ BOOL EnableAutoHidePanes(DWORD dwStyle);
 ```  
   
 ### Parameters  
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The docking alignment.  
   
 ### Return Value  
- `TRUE` if the dock pane was created successfully; `FALSE` otherwise.  
+ TRUE if the dock pane was created successfully; FALSE otherwise.  
   
 ##  <a name="enabledocking"></a>  CDockingManager::EnableDocking  
  Creates a dock pane and enables docking of the pane to the main frame.  
@@ -503,11 +503,11 @@ BOOL EnableDocking(DWORD dwStyle);
 ```  
   
 ### Parameters  
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The docking alignment.  
   
 ### Return Value  
- `TRUE` if the dock pane was created successfully; `FALSE` otherwise.  
+ TRUE if the dock pane was created successfully; FALSE otherwise.  
   
 ##  <a name="enabledocksitemenu"></a>  CDockingManager::EnableDockSiteMenu  
  Displays an additional button that opens a pop-up menu on the captions of all docking panes.  
@@ -517,8 +517,8 @@ static void EnableDockSiteMenu(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the dock site menu; otherwise, `FALSE`.  
+ [in] *bEnable*  
+ TRUE to enable the dock site menu; otherwise, FALSE.  
   
 ### Remarks  
  The dock site menu displays the following options for changing the docking state of the pane:  
@@ -545,17 +545,17 @@ void EnablePaneContextMenu(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- If `TRUE`, the library turns on the support for automatic context menu; if `FALSE` the library turns off the support for automatic context menu.  
+ [in] *bEnable*  
+ If TRUE, the library turns on the support for automatic context menu; if FALSE the library turns off the support for automatic context menu.  
   
- [in] `uiCustomizeCmd`  
+ [in] *uiCustomizeCmd*  
  A command id for the **Customize** item in the menu.  
   
- [in] `strCustomizeText`  
+ [in] *strCustomizeText*  
  The text of the **Customize** item.  
   
- [in] `bToolbarsOnly`  
- If `TRUE`, the menu displays only a list of application toolbars; if `FALSE`, the library adds application docking panes to this list.  
+ [in] *bToolbarsOnly*  
+ If TRUE, the menu displays only a list of application toolbars; if FALSE, the library adds application docking panes to this list.  
   
 ##  <a name="finddocksite"></a>  CDockingManager::FindDockSite  
  Retrieves the bar pane that is at the specified position and that has the specified alignment.  
@@ -567,14 +567,14 @@ virtual CDockSite* FindDockSite(
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  The alignment of the bar pane.  
   
- [in] `bOuter`  
- If `TRUE`, retrieve the bar in the head position in the list of control bars. Otherwise, retrieve the bar in the tail position in the list of control bars.  
+ [in] *bOuter*  
+ If TRUE, retrieve the bar in the head position in the list of control bars. Otherwise, retrieve the bar in the tail position in the list of control bars.  
   
 ### Return Value  
- The docking pane that has the specified alignment; `NULL` otherwise.  
+ The docking pane that has the specified alignment; NULL otherwise.  
   
 ##  <a name="findpanebyid"></a>  CDockingManager::FindPaneByID  
  Finds a pane by the specified control ID.  
@@ -586,14 +586,14 @@ virtual CBasePane* FindPaneByID(
 ```  
   
 ### Parameters  
- [in] `uBarID`  
+ [in] *uBarID*  
  Specifies the control ID of the pane to find.  
   
- [in] `bSearchMiniFrames`  
- `TRUE` to include all floating panes in the search. `FALSE` to include only the docked panes.  
+ [in] *bSearchMiniFrames*  
+ TRUE to include all floating panes in the search. FALSE to include only the docked panes.  
   
 ### Return Value  
- The [CBasePane](../../mfc/reference/cbasepane-class.md) object that has the specified control ID, or `NULL` if the specified pane cannot be found.  
+ The [CBasePane](../../mfc/reference/cbasepane-class.md) object that has the specified control ID, or NULL if the specified pane cannot be found.  
   
 ### Remarks  
   
@@ -605,11 +605,11 @@ virtual CDockSite* FindDockSiteByPane(CPane* pTargetBar);
 ```  
   
 ### Parameters  
- [in] `pTargetBar`  
+ [in] *pTargetBar*  
  A pointer to the target bar pane.  
   
 ### Return Value  
- The bar pane that has the id of the target bar pane; `NULL` if no such bar pane exists.  
+ The bar pane that has the id of the target bar pane; NULL if no such bar pane exists.  
   
 ##  <a name="fixupvirtualrects"></a>  CDockingManager::FixupVirtualRects  
  Commits all current toolbar positions to virtual rectangles.  
@@ -632,17 +632,17 @@ virtual CPaneFrameWnd* FrameFromPoint(
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
  Specifies the point, in screen coordinates, to check.  
   
- [in] `pFrameToExclude`  
+ [in] *pFrameToExclude*  
  A pointer to a frame to exclude.  
   
- [in] `bFloatMultiOnly`  
- `TRUE` to exclude frames that are not instances of `CMultiPaneFrameWnd`; `FALSE` otherwise.  
+ [in] *bFloatMultiOnly*  
+ TRUE to exclude frames that are not instances of `CMultiPaneFrameWnd`; FALSE otherwise.  
   
 ### Return Value  
- The frame that contains the given point; `NULL` otherwise.  
+ The frame that contains the given point; NULL otherwise.  
   
 ##  <a name="getclientareabounds"></a>  CDockingManager::GetClientAreaBounds  
  Gets the rectangle that contains the bounds of the client area.  
@@ -650,10 +650,11 @@ virtual CPaneFrameWnd* FrameFromPoint(
 ```  
 CRect GetClientAreaBounds() const;
 
-void GetClientAreaBounds(CRect& rcClient);```  
+void GetClientAreaBounds(CRect& rcClient);
+```  
   
 ### Parameters  
- [out] `rcClient`  
+ [out] *rcClient*  
  A reference to the rectangle that contains the bounds of the client area.  
   
 ### Return Value  
@@ -669,11 +670,11 @@ static AFX_DOCK_TYPE GetDockingMode();
 ### Return Value  
  An enumerator value that represents the current docking mode. It can be one of the following values:  
   
-- `DT_STANDARD`  
+- DT_STANDARD  
   
-- `DT_IMMEDIATE`  
+- DT_IMMEDIATE  
   
-- `DT_SMART`  
+- DT_SMART  
   
 ### Remarks  
  To set the docking mode, call [CDockingManager::SetDockingMode](#setdockingmode).  
@@ -696,7 +697,7 @@ DWORD GetEnabledAutoHideAlignment() const;
 ```  
   
 ### Return Value  
- A bitwise combination of `CBRS_ALIGN_` flags, or 0 if autohide panes are not enabled. For more information, see [CFrameWnd::EnableDocking](../../mfc/reference/cframewnd-class.md#enabledocking).  
+ A bitwise combination of CBRS_ALIGN_ flags, or 0 if autohide panes are not enabled. For more information, see [CFrameWnd::EnableDocking](../../mfc/reference/cframewnd-class.md#enabledocking).  
   
 ### Remarks  
  The method returns the enabled alignment for autohide control bars. To enable autohide bars, call [CFrameWndEx::EnableAutoHidePanes](../../mfc/reference/cframewndex-class.md#enableautohidepanes).  
@@ -733,22 +734,22 @@ void GetPaneList(
 ```  
   
 ### Parameters  
- [in, out] `lstBars`  
+ [in, out] *lstBars*  
  Contains all the panes of the current docking manager.  
   
- [in] `bIncludeAutohide`  
- `TRUE` to include the panes that are in autohide mode; otherwise, `FALSE`.  
+ [in] *bIncludeAutohide*  
+ TRUE to include the panes that are in autohide mode; otherwise, FALSE.  
   
- [in] `pRTCFilter`  
- If not `NULL`, the returned list contains panes only of the specified runtime class.  
+ [in] *pRTCFilter*  
+ If not NULL, the returned list contains panes only of the specified runtime class.  
   
- [in] `bIncludeTabs`  
- `TRUE` to include tabs; otherwise, `FALSE`.  
+ [in] *bIncludeTabs*  
+ TRUE to include tabs; otherwise, FALSE.  
   
 ### Remarks  
  If there are any tabbed panes in the docking manager, the method returns pointers to [CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md) objects and you must enumerate the tabs explicitly.  
   
- Use `pRTCFilter` to obtain a particular class of panes. For example, you can obtain only toolbars by setting this value appropriately.  
+ Use *pRTCFilter* to obtain a particular class of panes. For example, you can obtain only toolbars by setting this value appropriately.  
   
 ##  <a name="getsmartdockingmanager"></a>  CDockingManager::GetSmartDockingManager  
  Retrieves a pointer to the smart docking manager.  
@@ -792,11 +793,11 @@ void HideAutoHidePanes(
 ```  
   
 ### Parameters  
- [in] `pBarToExclude`  
+ [in] *pBarToExclude*  
  A pointer to a bar to exclude from hiding.  
   
- [in] `bImmediately`  
- `TRUE` to hide the pane immediately; `FALSE` to hide the pane with the autohide effect.  
+ [in] *bImmediately*  
+ TRUE to hide the pane immediately; FALSE to hide the pane with the autohide effect.  
   
 ##  <a name="insertdocksite"></a>  CDockingManager::InsertDockSite  
  Creates a dock pane and inserts it into the list of control bars.  
@@ -809,17 +810,17 @@ BOOL InsertDockSite(
 ```  
   
 ### Parameters  
- [in] `info`  
+ [in] *info*  
  A structure that contains the alignment information about the dock pane.  
   
- [in] `dwAlignToInsertAfter`  
+ [in] *dwAlignToInsertAfter*  
  Alignment of the dock pane.  
   
- [out] `ppDockBar`  
+ [out] *ppDockBar*  
  A pointer to a pointer to a dock pane.  
   
 ### Return Value  
- `TRUE` if the dock pane was created successfully; `FALSE` otherwise.  
+ TRUE if the dock pane was created successfully; FALSE otherwise.  
   
 ##  <a name="insertpane"></a>  CDockingManager::InsertPane  
  Inserts a control pane into the list of control bars.  
@@ -832,17 +833,17 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to a control pane.  
   
- [in] `pTarget`  
+ [in] *pTarget*  
  A pointer to a target pane.  
   
- [in] `bAfter`  
- `TRUE` to insert the pane after the position of the target pane; `FALSE` otherwise.  
+ [in] *bAfter*  
+ TRUE to insert the pane after the position of the target pane; FALSE otherwise.  
   
 ### Return Value  
- `TRUE` if the control pane is successfully added to the list of control bars; `FALSE` otherwise.  
+ TRUE if the control pane is successfully added to the list of control bars; FALSE otherwise.  
   
 ### Remarks  
  This method returns false if the control pane is already in the list of control bars or if the target pane does not exist in the list of control bars.  
@@ -855,7 +856,7 @@ static BOOL IsDockSiteMenu();
 ```  
   
 ### Return Value  
- `TRUE` if a dock site menu is displayed on the captions of all docking panes; otherwise `FALSE`.  
+ TRUE if a dock site menu is displayed on the captions of all docking panes; otherwise FALSE.  
   
 ### Remarks  
  You can enable the dock site menu by calling [CDockingManager::EnableDockSiteMenu](#enabledocksitemenu).  
@@ -868,7 +869,7 @@ BOOL IsInAdjustLayout() const;
 ```  
   
 ### Return Value  
- `TRUE` if the layouts of all panes are adjusted; `FALSE` otherwise.  
+ TRUE if the layouts of all panes are adjusted; FALSE otherwise.  
   
 ##  <a name="isolecontainermode"></a>  CDockingManager::IsOLEContainerMode  
  Specifies whether the docking manager is in OLE container mode.  
@@ -878,10 +879,10 @@ BOOL IsOLEContainerMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the docking manager is in OLE container mode; otherwise, `FALSE`.  
+ TRUE if the docking manager is in OLE container mode; otherwise, FALSE.  
   
 ### Remarks  
- In OLE container mode, all docking panes and application toolbars are hidden. The panes are also hidden in this mode if you have set [CDockingManager::m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode) to `TRUE`.  
+ In OLE container mode, all docking panes and application toolbars are hidden. The panes are also hidden in this mode if you have set [CDockingManager::m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode) to TRUE.  
   
 ##  <a name="ispointneardocksite"></a>  CDockingManager::IsPointNearDockSite  
  Determines whether a specified point is near the dock site.  
@@ -894,17 +895,17 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The specified point.  
   
- [out] `dwBarAlignment`  
- Specifies which edge the point is near. Possible values are `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, and `CBRS_ALIGN_BOTTOM`.  
+ [out] *dwBarAlignment*  
+ Specifies which edge the point is near. Possible values are CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, and CBRS_ALIGN_BOTTOM.  
   
- [out] `bOuterEdge`  
- `TRUE` if the point is near the outer border of the dock site; `FALSE` otherwise.  
+ [out] *bOuterEdge*  
+ TRUE if the point is near the outer border of the dock site; FALSE otherwise.  
   
 ### Return Value  
- `TRUE` if the point is near the dock site; otherwise `FALSE`.  
+ TRUE if the point is near the dock site; otherwise FALSE.  
   
 ##  <a name="isprintpreviewvalid"></a>  CDockingManager::IsPrintPreviewValid  
  Determines if the print preview mode is set.  
@@ -914,7 +915,7 @@ BOOL IsPrintPreviewValid() const;
 ```  
   
 ### Return Value  
- `TRUE` if the print preview mode is set; `FALSE` otherwise.  
+ TRUE if the print preview mode is set; FALSE otherwise.  
   
 ##  <a name="loadstate"></a>  CDockingManager::LoadState  
  Loads the docking manager's state from the registry.  
@@ -926,14 +927,14 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profile name.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The id of the docking manager.  
   
 ### Return Value  
- `TRUE` if the docking manager state was loaded successfully; otherwise `FALSE`.  
+ TRUE if the docking manager state was loaded successfully; otherwise FALSE.  
   
 ##  <a name="lockupdate"></a>  CDockingManager::LockUpdate  
  Locks the given window.  
@@ -943,8 +944,8 @@ void LockUpdate(BOOL bLock);
 ```  
   
 ### Parameters  
- [in] `bLock`  
- `TRUE` if the window is locked; `FALSE` otherwise.  
+ [in] *bLock*  
+ TRUE if the window is locked; FALSE otherwise.  
   
 ### Remarks  
  When a window is locked, it cannot be moved and it cannot be redrawn.  
@@ -957,7 +958,7 @@ AFX_IMPORT_DATA static BOOL m_bHideDockingBarsInContainerMode;
 ```  
   
 ### Remarks  
- Set this value to `FALSE` if you want to keep all panes docked to the main frame visible when the application is in OLE container mode. By default, this value is `TRUE`.  
+ Set this value to FALSE if you want to keep all panes docked to the main frame visible when the application is in OLE container mode. By default, this value is TRUE.  
   
 ##  <a name="m_dockmodeglobal"></a>  CDockingManager::m_dockModeGlobal  
  Specifies the global docking mode.  
@@ -1007,8 +1008,8 @@ virtual void OnActivateFrame(BOOL bActivate);
 ```  
   
 ### Parameters  
- [in] `bActivate`  
- If `TRUE`, the frame window is made active; if `FALSE`, the frame window is deactivated.  
+ [in] *bActivate*  
+ If TRUE, the frame window is made active; if FALSE, the frame window is deactivated.  
   
 ##  <a name="onclosepopupmenu"></a>  CDockingManager::OnClosePopupMenu  
  Called by the framework when an active pop-up menu processes a WM_DESTROY message.  
@@ -1018,7 +1019,7 @@ void OnClosePopupMenu();
 ```  
   
 ### Remarks  
- The framework sends a WM_DESTROY message when it is about to close the current main window. Override this method to handle notifications from `CMFCPopupMenu` objects that belong to the frame window when a `CMFCPopupMenu` object processes a `WM_DESTROY` message.  
+ The framework sends a WM_DESTROY message when it is about to close the current main window. Override this method to handle notifications from `CMFCPopupMenu` objects that belong to the frame window when a `CMFCPopupMenu` object processes a WM_DESTROY message.  
   
 ##  <a name="onmoveminiframe"></a>  CDockingManager::OnMoveMiniFrame  
  Called by the framework to move a mini-frame window.  
@@ -1028,11 +1029,11 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] `pFrame`  
+ [in] *pFrame*  
  A pointer to a mini-frame window.  
   
 ### Return Value  
- `TRUE` if the method succeeds; otherwise `FALSE`.  
+ TRUE if the method succeeds; otherwise FALSE.  
   
 ##  <a name="onpanecontextmenu"></a>  CDockingManager::OnPaneContextMenu  
  Called by the framework when it builds a menu that has a list of panes.  
@@ -1042,7 +1043,7 @@ void OnPaneContextMenu(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  Specifies the location of the menu.  
   
 ##  <a name="panefrompoint"></a>  CDockingManager::PaneFromPoint  
@@ -1066,32 +1067,32 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  Specifies the point, in screen coordinates, to check.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  The value to inflate the window rectangle of each checked pane. A pane satisfies the search criteria if the given point is in this inflated region.  
   
- [in] `bExactBar`  
- `TRUE` to ignore the `nSensitivity` parameter; otherwise, `FALSE`.  
+ [in] *bExactBar*  
+ TRUE to ignore the *nSensitivity* parameter; otherwise, FALSE.  
   
- [in] `pRTCBarType`  
- If not `NULL`, the method searches only the panes of the specified type.  
+ [in] *pRTCBarType*  
+ If not NULL, the method searches only the panes of the specified type.  
   
- [in] `bCheckVisibility`  
- `TRUE` to check only visible panes; otherwise, `FALSE`.  
+ [in] *bCheckVisibility*  
+ TRUE to check only visible panes; otherwise, FALSE.  
   
- [out] `dwAlignment`  
+ [out] *dwAlignment*  
  If a pane is found at the specified point, this parameter contains the side of the pane that was closest to the specified point. For more information, see the Remarks section.  
   
- [in] `pBarToIgnore`  
- If not `NULL`, the method ignores panes specified by this parameter.  
+ [in] *pBarToIgnore*  
+ If not NULL, the method ignores panes specified by this parameter.  
   
 ### Return Value  
- The [CBasePane](../../mfc/reference/cbasepane-class.md)-derived object that contains the given point, or `NULL` if no pane was found.  
+ The [CBasePane](../../mfc/reference/cbasepane-class.md)-derived object that contains the given point, or NULL if no pane was found.  
   
 ### Remarks  
- When the function returns and a pane was found, `dwAlignment` contains the alignment of the specified point. For example, if the point was closest to the top of the pane, `dwAlignment` is set to `CBRS_ALIGN_TOP`.  
+ When the function returns and a pane was found, *dwAlignment* contains the alignment of the specified point. For example, if the point was closest to the top of the pane, *dwAlignment* is set to CBRS_ALIGN_TOP.  
   
 ##  <a name="processpanecontextmenucommand"></a>  CDockingManager::ProcessPaneContextMenuCommand  
  Called by the framework to select or to clear a check box for the specified command and recalculate the layout of a shown pane.  
@@ -1105,20 +1106,20 @@ BOOL ProcessPaneContextMenuCommand(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The id of a control bar in the menu.  
   
- [in] `nCode`  
+ [in] *nCode*  
  The command notification code.  
   
- [in] `pExtra`  
- A pointer to void that is casted to a pointer to `CCmdUI` if `nCode` is CN_UPDATE_COMMAND_UI.  
+ [in] *pExtra*  
+ A pointer to void that is casted to a pointer to `CCmdUI` if *nCode* is CN_UPDATE_COMMAND_UI.  
   
- [in] `pHandlerInfo`  
+ [in] *pHandlerInfo*  
  A pointer to an info structure. This parameter is not used.  
   
 ### Return Value  
- `TRUE` if `pEXtra` is not NULL and `nCode` equals CN_UPDATE_COMMAND_UI, or if there is a control bar with the specified `nID`.  
+ TRUE if *pEXtra* is not NULL and *nCode* equals CN_UPDATE_COMMAND_UI, or if there is a control bar with the specified *nID*.  
   
 ##  <a name="recalclayout"></a>  CDockingManager::RecalcLayout  
  Recalculates the internal layout of the controls present in the list of controls.  
@@ -1128,7 +1129,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- [in] `bNotify`  
+ [in] *bNotify*  
  This parameter is not used.  
   
 ##  <a name="releaseemptypanecontainers"></a>  CDockingManager::ReleaseEmptyPaneContainers  
@@ -1146,7 +1147,7 @@ void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a bar pane to remove.  
   
 ##  <a name="removeminiframe"></a>  CDockingManager::RemoveMiniFrame  
@@ -1157,11 +1158,11 @@ virtual BOOL RemoveMiniFrame(CPaneFrameWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to a frame to remove.  
   
 ### Return Value  
- `TRUE` if the specified frame is removed; `FALSE` otherwise.  
+ TRUE if the specified frame is removed; FALSE otherwise.  
   
 ##  <a name="removepanefromdockmanager"></a>  CDockingManager::RemovePaneFromDockManager  
  Unregisters a pane and removes it from the list in the docking manager.  
@@ -1176,19 +1177,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to a pane to be removed.  
   
- [in] `bDestroy`  
- If `TRUE`, the removed pane is destroyed.  
+ [in] *bDestroy*  
+ If TRUE, the removed pane is destroyed.  
   
- [in] `bAdjustLayout`  
- If `TRUE`, adjust the docking layout immediately.  
+ [in] *bAdjustLayout*  
+ If TRUE, adjust the docking layout immediately.  
   
- [in] `bAutoHide`  
- If `TRUE`, the pane is removed from the list of autohide bars. If `FALSE`, the pane is removed from the list of regular panes.  
+ [in] *bAutoHide*  
+ If TRUE, the pane is removed from the list of autohide bars. If FALSE, the pane is removed from the list of regular panes.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  A pointer to a pane that replaces the removed pane.  
   
 ##  <a name="replacepane"></a>  CDockingManager::ReplacePane  
@@ -1201,14 +1202,14 @@ BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pOriginalBar`  
+ [in] *pOriginalBar*  
  A pointer to the original pane.  
   
- [in] `pNewBar`  
+ [in] *pNewBar*  
  A pointer to the pane that replaces the original pane.  
   
 ### Return Value  
- `TRUE` if the pane is successfully replaced; `FALSE` otherwise.  
+ TRUE if the pane is successfully replaced; FALSE otherwise.  
   
 ##  <a name="resortminiframesforzorder"></a>  CDockingManager::ResortMiniFramesForZOrder  
  Resorts the frames in the list of mini frames.  
@@ -1227,14 +1228,14 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  A path to a registry key.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The docking manager ID.  
   
 ### Return Value  
- `TRUE` if the state was saved successfully; otherwise `FALSE`.  
+ TRUE if the state was saved successfully; otherwise FALSE.  
   
 ### Remarks  
  Saving the docking manager's state to the registry involves saving the states of the control bars, the states of the autohide bars, and the states of the mini frames present in the docking manager.  
@@ -1250,17 +1251,17 @@ BOOL SendMessageToMiniFrames(
 ```  
   
 ### Parameters  
- [in] `uMessage`  
+ [in] *uMessage*  
  The message to be sent.  
   
- [in] `wParam`  
+ [in] *wParam*  
  Additional message dependent information.  
   
- [in] `lParam`  
+ [in] *lParam*  
  Additional message dependent information.  
   
 ### Return Value  
- `TRUE` always.  
+ TRUE always.  
   
 ##  <a name="serialize"></a>  CDockingManager::Serialize  
  Writes the docking manager to an archive.  
@@ -1270,7 +1271,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
  A reference to an archive object.  
   
 ### Remarks  
@@ -1284,7 +1285,7 @@ void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 ```  
   
 ### Parameters  
- [in] `pAHDockingBar`  
+ [in] *pAHDockingBar*  
  A pointer to a dockable pane.  
   
 ##  <a name="setdockingmode"></a>  CDockingManager::SetDockingMode  
@@ -1297,22 +1298,22 @@ static void SetDockingMode(
 ```  
   
 ### Parameters  
- `dockMode`  
+ *dockMode*  
  Specifies the new docking mode. For more information, see the Remarks section.  
   
- `theme`  
+ *theme*  
  Specifies the theme to be used for smart docking markers. It can be  one of the following enumerated values: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.  
   
 ### Remarks  
  Call this static method to set the docking mode.  
   
- `dockMode` can be one of following values:  
+ *dockMode* can be one of following values:  
   
-- `DT_STANDARD` - Standard docking mode as implemented in Visual Studio .NET 2003. Panes are dragged without a dragging context.  
+- DT_STANDARD - Standard docking mode as implemented in Visual Studio .NET 2003. Panes are dragged without a dragging context.  
   
-- `DT_IMMEDIATE` - Immediate docking mode as implemented in Microsoft Visio. Panes are dragged with a dragging context, but no markers are displayed.  
+- DT_IMMEDIATE - Immediate docking mode as implemented in Microsoft Visio. Panes are dragged with a dragging context, but no markers are displayed.  
   
-- `DT_SMART` - Smart docking mode as implemented in Visual Studio 2005. Panes are dragged with a dragging context and smart markers are displayed that show where the pane can be docked.  
+- DT_SMART - Smart docking mode as implemented in Visual Studio 2005. Panes are dragged with a dragging context and smart markers are displayed that show where the pane can be docked.  
   
 ##  <a name="setdockstate"></a>  CDockingManager::SetDockState  
  Sets the docking state of the control bars, the mini frames, and the autohide bars.  
@@ -1331,10 +1332,10 @@ void SetPrintPreviewMode(
 ```  
   
 ### Parameters  
- [in] `bPreview`  
- `TRUE` if print preview mode is set; `FALSE` otherwise.  
+ [in] *bPreview*  
+ TRUE if print preview mode is set; FALSE otherwise.  
   
- [in] `pState`  
+ [in] *pState*  
  A pointer to a preview state. This parameter is not used.  
   
 ##  <a name="setsmartdockingparams"></a>  CDockingManager::SetSmartDockingParams  
@@ -1345,13 +1346,13 @@ static void SetSmartDockingParams(CSmartDockingInfo& params);
 ```  
   
 ### Parameters  
- [in, out] `params`  
+ [in, out] *params*  
  Defines the parameters for smart docking.  
   
 ### Remarks  
  Call this method if you want to customize the appearance, color, or shape of the smart docking markers.  
   
- To use the default look for smart docking markers, pass an uninitialized instance of [CSmartDockingInfo Class](../../mfc/reference/csmartdockinginfo-class.md) to `params`.  
+ To use the default look for smart docking markers, pass an uninitialized instance of [CSmartDockingInfo Class](../../mfc/reference/csmartdockinginfo-class.md) to *params*.  
   
 ##  <a name="showdelayshowminiframes"></a>  CDockingManager::ShowDelayShowMiniFrames  
  Shows or hides the windows of the mini frames.  
@@ -1361,8 +1362,8 @@ void ShowDelayShowMiniFrames(BOOL bshow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
- `TRUE` to make the window of the shown frame active; `FALSE to` hide the window of the frame.  
+ [in] *bShow*  
+ TRUE to make the window of the shown frame active; FALSE to hide the window of the frame.  
   
 ##  <a name="showpanes"></a>  CDockingManager::ShowPanes  
  Shows or hides the panes of the control and autohide bars.  
@@ -1372,11 +1373,11 @@ virtual BOOL ShowPanes(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
- `TRUE` to show the panes; `FALSE to` hide the panes.  
+ [in] *bShow*  
+ TRUE to show the panes; FALSE to hide the panes.  
   
 ### Return Value  
- Always `FALSE`.  
+ Always FALSE.  
   
 ##  <a name="startsdocking"></a>  CDockingManager::StartSDocking  
  Starts the smart docking of the specified window according to the alignment of the smart docking manager.  
@@ -1386,7 +1387,7 @@ void StartSDocking(CWnd* pDockingWnd);
 ```  
   
 ### Parameters  
- [in] `pDockingWnd`  
+ [in] *pDockingWnd*  
  A pointer to a window to dock.  
   
 ##  <a name="stopsdocking"></a>  CDockingManager::StopSDocking  

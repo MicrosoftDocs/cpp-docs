@@ -28,10 +28,10 @@ class CHeapPtrList
 ```  
   
 #### Parameters  
- `E`  
+ *E*  
  The object type to be stored in the collection class.  
   
- `Allocator`  
+ *Allocator*  
  The memory allocation class to use. The default is [CCRTAllocator](../../atl/reference/ccrtallocator-class.md).  
   
 ## Members  
@@ -61,7 +61,7 @@ CHeapPtrList(UINT nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The block size.  
   
 ### Remarks  

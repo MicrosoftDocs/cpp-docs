@@ -73,10 +73,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pInterpolator`  
+ *pInterpolator*  
  A pointer to custom interpolator.  
   
- `ppHandler`  
+ *ppHandler*  
  Output. Contains a pointer to instance of CInterpolatorBase when the function returns.  
   
 ### Return Value  
@@ -92,13 +92,13 @@ IFACEMETHOD(GetDependencies)(
 ```  
   
 ### Parameters  
- `initialValueDependencies`  
+ *initialValueDependencies*  
  Output. Aspects of the interpolator that depend on the initial value passed to SetInitialValueAndVelocity.  
   
- `initialVelocityDependencies`  
+ *initialVelocityDependencies*  
  Output. Aspects of the interpolator that depend on the initial velocity passed to SetInitialValueAndVelocity.  
   
- `durationDependencies`  
+ *durationDependencies*  
  Output. Aspects of the interpolator that depend on the duration passed to SetDuration.  
   
 ### Return Value  
@@ -112,7 +112,7 @@ IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  Output. The duration of the transition, in seconds.  
   
 ### Return Value  
@@ -126,7 +126,7 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 ```  
   
 ### Parameters  
- `value`  
+ *value*  
  Output. The final value of a variable at the end of the transition.  
   
 ### Return Value  
@@ -142,10 +142,10 @@ IFACEMETHOD(InterpolateValue)(
 ```  
   
 ### Parameters  
- `offset`  
+ *offset*  
  The offset from the start of the transition. The offset is always greater than or equal to zero and less than the duration of the transition. This method is not called if the duration of the transition is zero.  
   
- `value`  
+ *value*  
  Output. The interpolated value.  
   
 ### Return Value  
@@ -161,10 +161,10 @@ IFACEMETHOD(InterpolateVelocity)(
 ```  
   
 ### Parameters  
- `offset`  
+ *offset*  
  The offset from the start of the transition. The offset is always greater than or equal to zero and less than or equal to the duration of the transition. This method is not called if the duration of the transition is zero.  
   
- `velocity`  
+ *velocity*  
  Output. The velocity of the variable at the offset.  
   
 ### Return Value  
@@ -178,7 +178,7 @@ void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 ```  
   
 ### Parameters  
- `pInterpolator`  
+ *pInterpolator*  
  A pointer to custom interpolator.  
   
 ##  <a name="setduration"></a>  CInterpolatorBase::SetDuration  
@@ -189,7 +189,7 @@ IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
 ### Return Value  
@@ -205,10 +205,10 @@ IFACEMETHOD(SetInitialValueAndVelocity)(
 ```  
   
 ### Parameters  
- `initialValue`  
+ *initialValue*  
  The value of the variable at the start of the transition.  
   
- `initialVelocity`  
+ *initialVelocity*  
  The velocity of the variable at the start of the transition.  
   
 ### Return Value  

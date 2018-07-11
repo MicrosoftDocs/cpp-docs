@@ -88,19 +88,19 @@ void Add(
 ```  
   
 ### Parameters  
- `lpszPathName`  
+ *lpszPathName*  
  Specifies pathname to be added to the list.  
   
- `lpszAppID`  
+ *lpszAppID*  
  Specifies Application User Model ID for the application.  
   
- `pItem`  
+ *pItem*  
  Specifies a pointer to Shell Item to be added to the list.  
   
- `pLink`  
+ *pLink*  
  Specifies a pointer to Shell Link to be added to the list.  
   
- `pidl`  
+ *pidl*  
  Specifies the IDLIST for the shell item that should be added to the recent docs folder.  
   
 ### Remarks  
@@ -119,23 +119,23 @@ CRecentFileList(
 ```  
   
 ### Parameters  
- `nStart`  
+ *nStart*  
  Offset for the numbering in the menu display of the MRU (most recently used) file list.  
   
- `lpszSection`  
+ *lpszSection*  
  Points to the name of the section of the registry or the application's .INI file where the MRU file list is read and/or written.  
   
- `lpszEntryFormat`  
+ *lpszEntryFormat*  
  Points to a format string to be used for the names of the entries stored in the registry or the application's .INI file.  
   
- `nSize`  
+ *nSize*  
  Maximum number of files in the MRU file list.  
   
- `nMaxDispLen`  
+ *nMaxDispLen*  
  Maximum length, in characters, available for the menu display of a filename in the MRU file list.  
   
 ### Remarks  
- The format string pointed to by `lpszEntryFormat` should contain "%d", which will be used for substituting the index of each MRU item. For example, if the format string is `"file%d"` then the entries will be named `file0`, `file1`, and so on.  
+ The format string pointed to by *lpszEntryFormat* should contain "%d", which will be used for substituting the index of each MRU item. For example, if the format string is `"file%d"` then the entries will be named `file0`, `file1`, and so on.  
   
 ##  <a name="getdisplayname"></a>  CRecentFileList::GetDisplayName  
  Obtains a display name for a file in the MRU file list, for use in the menu display of the MRU list.  
@@ -150,10 +150,10 @@ virtual BOOL GetDisplayName(
 ```  
   
 ### Parameters  
- `strName`  
+ *strName*  
  Full path of the file whose name is to be displayed in the menu list of MRU files.  
   
- `nIndex`  
+ *nIndex*  
  Zero-based index of the file in the MRU file list.  
   
  *lpszCurDir*  
@@ -162,14 +162,14 @@ virtual BOOL GetDisplayName(
  *nCurDir*  
  Length of the current directory string.  
   
- `bAtLeastName`  
- If nonzero, indicates that the base name of the file should be returned, even if it exceeds the maximum display length (passed as the `nMaxDispLen` parameter to the `CRecentFileList` constructor).  
+ *bAtLeastName*  
+ If nonzero, indicates that the base name of the file should be returned, even if it exceeds the maximum display length (passed as the *nMaxDispLen* parameter to the `CRecentFileList` constructor).  
   
 ### Return Value  
  **FALSE** if there is no filename at the specified index in the most recently used (MRU) file list.  
   
 ### Remarks  
- If the file is in the current directory, the function leaves the directory off the display. If the filename is too long, the directory and extension are stripped. If the filename is still too long, the display name is set to an empty string unless `bAtLeastName` is nonzero.  
+ If the file is in the current directory, the function leaves the directory off the display. If the filename is too long, the directory and extension are stripped. If the filename is still too long, the display name is set to an empty string unless *bAtLeastName* is nonzero.  
   
 ##  <a name="getsize"></a>  CRecentFileList::GetSize  
  Retrieves the number of files in the MRU file list.  
@@ -182,14 +182,14 @@ int GetSize() const;
  The number of files in the current most recently used (MRU) file list.  
   
 ##  <a name="operator_at"></a>  CRecentFileList::operator [ ]  
- The overloaded subscript ( `[]`) operator returns a single `CString` specified by the zero-based index in `nIndex`.  
+ The overloaded subscript (`[]`) operator returns a single `CString` specified by the zero-based index in *nIndex*.  
   
 ```  
 CString& operator[ ](int nindex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of a `CString` in a set of `CString`s.  
   
 ##  <a name="readlist"></a>  CRecentFileList::ReadList  
@@ -207,7 +207,7 @@ virtual void Remove(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of the file to be removed from the most recently used (MRU) file list.  
   
 ##  <a name="updatemenu"></a>  CRecentFileList::UpdateMenu  
@@ -218,7 +218,7 @@ virtual void UpdateMenu(CCmdUI* pCmdUI);
 ```  
   
 ### Parameters  
- `pCmdUI`  
+ *pCmdUI*  
  A pointer to the [CCmdUI](../../mfc/reference/ccmdui-class.md) object for the most recently used (MRU) file list menu.  
   
 ##  <a name="writelist"></a>  CRecentFileList::WriteList  

@@ -85,7 +85,7 @@ virtual BOOL CanBeStretched();
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
   
@@ -103,16 +103,16 @@ CMFCRibbonEdit();
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Command ID for the `CMFCRibbonEdit` control.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  The width, in pixels, of the text box for the `CMFCRibbonEdit` control.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The label for the `CMFCRibbonEdit` control.  
   
- [in] `nImage`  
+ [in] *nImage*  
  Index of the small image to use for the `CMFCRibbonEdit` control. The collection of small images is maintained by the parent ribbon category.  
   
 ### Remarks  
@@ -126,11 +126,11 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  The source `CMFCRibbonEdit` object.  
   
 ### Remarks  
- The `src` parameter must be of type `CMFCRibbonEdit`.  
+ The *src* parameter must be of type `CMFCRibbonEdit`.  
   
 ##  <a name="createedit"></a>  CMFCRibbonEdit::CreateEdit  
  Creates a new text box for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
@@ -142,14 +142,14 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  A pointer to the parent window of the `CMFCRibbonEdit` object.  
   
- [in] `dwEditStyle`  
+ [in] *dwEditStyle*  
  Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](http://msdn.microsoft.com/library/windows/desktop/bb775464) that are described in the Windows SDK.  
   
 ### Return Value  
- A pointer to the new text box if the method was successful; otherwise, `NULL`.  
+ A pointer to the new text box if the method was successful; otherwise, NULL.  
   
 ### Remarks  
  Override this method in a derived class to create a custom text box.  
@@ -195,10 +195,10 @@ void EnableSpinButtons(
 ```  
   
 ### Parameters  
- [in] `nMin`  
+ [in] *nMin*  
  The minimum value of the spin button.  
   
- [in] `nMax`  
+ [in] *nMax*  
  The maximum value of the spin button.  
   
 ### Remarks  
@@ -212,7 +212,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the `CMFCRibbonEdit` object.  
   
 ### Return Value  
@@ -240,7 +240,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the `CMFCRibbonEdit` object.  
   
 ### Return Value  
@@ -277,8 +277,8 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```  
   
 ### Parameters  
- [in] `bInFloatyMode`  
- `TRUE` if the `CMFCRibbonEdit` control is in floating mode; otherwise, `FALSE`.  
+ [in] *bInFloatyMode*  
+ TRUE if the `CMFCRibbonEdit` control is in floating mode; otherwise, FALSE.  
   
 ### Return Value  
  The width, in pixels, of the `CMFCRibbonEdit` control.  
@@ -293,10 +293,10 @@ virtual BOOL HasCompactMode() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method always returns `TRUE`. Override this method to indicate whether the display size can be compact.  
+ By default this method always returns TRUE. Override this method to indicate whether the display size can be compact.  
   
 ##  <a name="hasfocus"></a>  CMFCRibbonEdit::HasFocus  
  Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.  
@@ -306,7 +306,7 @@ virtual BOOL HasFocus() const;
 ```  
   
 ### Return Value  
- `TRUE` if the `CMFCRibbonEdit` control has the focus; otherwise `FALSE`.  
+ TRUE if the `CMFCRibbonEdit` control has the focus; otherwise FALSE.  
   
 ### Remarks  
   
@@ -318,10 +318,10 @@ virtual BOOL HasLargeMode() const;
 ```  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to indicate whether the display size can be large.  
+ By default this method always returns FALSE. Override this method to indicate whether the display size can be large.  
   
 ##  <a name="hasspinbuttons"></a>  CMFCRibbonEdit::HasSpinButtons  
  Indicates whether the text box has a spin button.  
@@ -331,7 +331,7 @@ virtual BOOL HasSpinButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if the text box has a spin button; otherwise `FALSE`.  
+ TRUE if the text box has a spin button; otherwise FALSE.  
   
 ### Remarks  
   
@@ -343,7 +343,7 @@ virtual BOOL IsHighlighted() const;
 ```  
   
 ### Return Value  
- `TRUE` if the `CMFCRibbonEdit` control is highlighted; otherwise `FALSE`.  
+ TRUE if the `CMFCRibbonEdit` control is highlighted; otherwise FALSE.  
   
 ### Remarks  
   
@@ -355,7 +355,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the `CMFCRibbonEdit` control.  
   
 ### Remarks  
@@ -368,7 +368,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the `CMFCRibbonEdit` control.  
   
 ### Remarks  
@@ -381,7 +381,7 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the `CMFCRibbonEdit` control.  
   
 ### Remarks  
@@ -400,22 +400,22 @@ virtual void OnDrawOnList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the `CMFCRibbonEdit` control.  
   
- [in] `strText`  
+ [in] *strText*  
  The display text [](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit class").  
   
- [in] `nTextOffset`  
+ [in] *nTextOffset*  
  Distance, in pixels, from the left side of the list box to the display text.  
   
- [in] `rect`  
+ [in] *rect*  
  The display rectangle for the `CMFCRibbonEdit` control.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  This parameter is not used.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  This parameter is not used.  
   
 ### Remarks  
@@ -429,8 +429,8 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the control; `FALSE` to disable the control.  
+ [in] *bEnable*  
+ TRUE to enable the control; FALSE to disable the control.  
   
 ### Remarks  
   
@@ -442,8 +442,8 @@ virtual void OnHighlight(BOOL bHighlight);
 ```  
   
 ### Parameters  
- [in] `bHighlight`  
- `TRUE` if the pointer is in the bounds of the `CMFCRibbonEdit` control; otherwise, `FALSE`.  
+ [in] *bHighlight*  
+ TRUE if the pointer is in the bounds of the `CMFCRibbonEdit` control; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -455,11 +455,11 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### Parameters  
- [in] `bIsMenuKey`  
- `TRUE` if the keytip displays a pop-up menu; otherwise, `FALSE`.  
+ [in] *bIsMenuKey*  
+ TRUE if the keytip displays a pop-up menu; otherwise, FALSE.  
   
 ### Return Value  
- `TRUE` if the event was handled; otherwise, `FALSE`.  
+ TRUE if the event was handled; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -471,7 +471,7 @@ virtual void OnLButtonDown(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  This parameter is not used.  
   
 ### Remarks  
@@ -484,7 +484,7 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  This parameter is not used.  
   
 ### Remarks  
@@ -497,8 +497,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] `bIsRTL`  
- `TRUE` if the layout is right-to-left; `FALSE` if the layout is left-to-right.  
+ [in] *bIsRTL*  
+ TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
   
@@ -510,8 +510,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
- `TRUE` to show the control; `FALSE` to hide the control.  
+ [in] *bShow*  
+ TRUE to show the control; FALSE to hide the control.  
   
 ### Remarks  
   
@@ -523,7 +523,7 @@ virtual void Redraw();
 ```  
   
 ### Remarks  
- This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the `RDW_INVALIDATE`, `RDW_ERASE`, and `RDW_UPDATENOW` flags set.  
+ This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData  
  Sets the accessibility data for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
@@ -535,14 +535,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- `pParent`  
+ *pParent*  
  Pointer to the parent window for the `CMFCRibbonEdit` object.  
   
- `data`  
+ *data*  
  The accessibility data for the `CMFCRibbonEdit` object.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
   
@@ -554,7 +554,7 @@ void SetEditText(CString strText);
 ```  
   
 ### Parameters  
- [in] `strText`  
+ [in] *strText*  
  The text for the text box.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonEdit::SetTextAlign  
@@ -565,17 +565,17 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### Parameters  
- [in] `nAlign`  
+ [in] *nAlign*  
  A text alignment enumerated value. See the Remarks section for possible values.  
   
 ### Remarks  
- The parameter `nAlign` is one of the following edit control styles:  
+ The parameter *nAlign* is one of the following edit control styles:  
   
-- **ES_LEFT** for left alignment  
+- ES_LEFT for left alignment  
   
-- **ES_CENTER** for center alignment  
+- ES_CENTER for center alignment  
   
-- **ES_RIGHT** for right alignment  
+- ES_RIGHT for right alignment  
   
  For more information about these styles, see [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
@@ -589,11 +589,11 @@ void SetWidth(
 ```  
   
 ### Parameters  
- [in] `nWidth`  
+ [in] *nWidth*  
  The width, in pixels, of the text box.  
   
- `bInFloatyMode`  
- `TRUE` to set the width for floating mode; `FALSE` to set the width for regular mode.  
+ *bInFloatyMode*  
+ TRUE to set the width for floating mode; FALSE to set the width for regular mode.  
   
 ### Remarks  
  The `CMFCRibbonEdit` control has two widths depending on its display mode: floating mode and regular mode.  

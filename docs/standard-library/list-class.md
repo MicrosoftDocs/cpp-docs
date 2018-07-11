@@ -28,7 +28,7 @@ class list
 *Type*
  The element data type to be stored in the list.
 
-`Allocator`
+*Allocator*
  The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is **allocator**\<*Type*>.
 
 ## Remarks
@@ -52,14 +52,14 @@ Include the C++ Standard Library standard header \<list> to define the [containe
 |Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for a list object.|
-|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in a list.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a `const` element in a list.|
-|[const_reference](#const_reference)|A type that provides a reference to a `const` element stored in a list for reading and performing `const` operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any `const` element in a list.|
+|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **const** element in a list.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a list.|
+|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a list for reading and performing **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in a list.|
 |[difference_type](#difference_type)|A type that provides the difference between two iterators that refer to elements within the same list.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a list.|
 |[pointer](#pointer)|A type that provides a pointer to an element in a list.|
-|[reference](#reference)|A type that provides a reference to a `const` element stored in a list for reading and performing `const` operations.|
+|[reference](#reference)|A type that provides a reference to a **const** element stored in a list for reading and performing **const** operations.|
 |[reverse_iterator](#reverse_iterator)|A type that provides a bidirectional iterator that can read or modify an element in a reversed list.|
 |[size_type](#size_type)|A type that counts the number of elements in a list.|
 |[value_type](#value_type)|A type that represents the data type stored in a list.|
@@ -123,7 +123,7 @@ typedef Allocator allocator_type;
 
 ### Remarks
 
-`allocator_type` is a synonym for the template parameter **Allocator.**
+`allocator_type` is a synonym for the template parameter *Allocator*.
 
 ### Example
 
@@ -149,19 +149,19 @@ void assign(
 
 ### Parameters
 
-`First`
+*First*
  Position of the first element in the range of elements to be copied from the argument list.
 
-`Last`
+*Last*
  Position of the first element just beyond the range of elements to be copied from the argument list.
 
-`Count`
+*Count*
  The number of copies of an element being inserted into the list.
 
-`Val`
+*Val*
  The value of the element being inserted into the list.
 
-`IList`
+*IList*
  The initializer_list that contains the elements to be inserted.
 
 ### Remarks
@@ -234,7 +234,7 @@ The last element of the list. If the list is empty, the return value is undefine
 
 ### Remarks
 
-If the return value of **back** is assigned to a `const_reference`, the list object cannot be modified. If the return value of **back** is assigned to a **reference**, the list object can be modified.
+If the return value of `back` is assigned to a `const_reference`, the list object cannot be modified. If the return value of `back` is assigned to a `reference`, the list object can be modified.
 
 When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty list.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -284,7 +284,7 @@ A bidirectional iterator addressing the first element in the list or to the loca
 
 ### Remarks
 
-If the return value of **begin** is assigned to a `const_iterator`, the elements in the list object cannot be modified. If the return value of **begin** is assigned to an **iterator**, the elements in the list object can be modified.
+If the return value of `begin` is assigned to a `const_iterator`, the elements in the list object cannot be modified. If the return value of `begin` is assigned to an `iterator`, the elements in the list object can be modified.
 
 ### Example
 
@@ -323,7 +323,7 @@ The first element of c1 is now 20
 
 ## <a name="cbegin"></a>  list::cbegin
 
-Returns a `const` iterator that addresses the first element in the range.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -331,13 +331,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A `const` bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **const** bidirectional-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -363,7 +363,7 @@ A `const` bidirectional-access iterator that points just beyond the end of the r
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -428,7 +428,7 @@ See the example for [back](#back).
 
 ## <a name="const_pointer"></a>  list::const_pointer
 
-Provides a pointer to a `const` element in a list.
+Provides a pointer to a **const** element in a list.
 
 ```cpp
 typedef typename Allocator::const_pointer const_pointer;
@@ -664,8 +664,8 @@ void emplace(iterator Where, Type&& val);
 
 |Parameter|Description|
 |-|-|
-|`Where`|The position in the target [list](../standard-library/list-class.md) where the first element is inserted.|
-|`val`|The element added to the end of the `list`.|
+|*Where*|The position in the target [list](../standard-library/list-class.md) where the first element is inserted.|
+|*val*|The element added to the end of the `list`.|
 
 ### Remarks
 
@@ -707,7 +707,7 @@ void emplace_back(Type&& val);
 
 |Parameter|Description|
 |-|-|
-|`val`|The element added to the end of the [list](../standard-library/list-class.md).|
+|*val*|The element added to the end of the [list](../standard-library/list-class.md).|
 
 ### Remarks
 
@@ -749,7 +749,7 @@ void emplace_front(Type&& val);
 
 |Parameter|Description|
 |-|-|
-|`val`|The element added to the beginning of the [list](../standard-library/list-class.md).|
+|*val*|The element added to the beginning of the [list](../standard-library/list-class.md).|
 
 ### Remarks
 
@@ -831,7 +831,7 @@ A bidirectional iterator that addresses the location succeeding the last element
 
 ### Remarks
 
-**end** is used to test whether an iterator has reached the end of its list.
+`end` is used to test whether an iterator has reached the end of its list.
 
 ### Example
 
@@ -887,13 +887,13 @@ iterator erase(iterator first, iterator last);
 
 ### Parameters
 
-`Where`
+*Where*
  Position of the element to be removed from the list.
 
-`first`
+*first*
  Position of the first element removed from the list.
 
-`last`
+*last*
  Position just beyond the last element removed from the list.
 
 ### Return Value
@@ -904,7 +904,7 @@ A bidirectional iterator that designates the first element remaining beyond any 
 
 No reallocation occurs, so iterators and references become invalid only for the erased elements.
 
-**erase** never throws an exception.
+`erase` never throws an exception.
 
 ### Example
 
@@ -966,7 +966,7 @@ If the list is empty, the return is undefined.
 
 ### Remarks
 
-If the return value of `front` is assigned to a `const_reference`, the list object cannot be modified. If the return value of `front` is assigned to a **reference**, the list object can be modified.
+If the return value of `front` is assigned to a `const_reference`, the list object cannot be modified. If the return value of `front` is assigned to a `reference`, the list object can be modified.
 
 When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty list.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -1057,11 +1057,11 @@ void insert(iterator Where, InputIterator First, InputIterator Last);
 
 |Parameter|Description|
 |-|-|
-|`Where`|The position in the target list where the first element is inserted.|
-|`Val`|The value of the element being inserted into the list.|
-|`Count`|The number of elements being inserted into the list.|
-|`First`|The position of the first element in the range of elements in the argument list to be copied.|
-|`Last`|The position of the first element beyond the range of elements in the argument list to be copied.|
+|*Where*|The position in the target list where the first element is inserted.|
+|*Val*|The value of the element being inserted into the list.|
+|*Count*|The number of elements being inserted into the list.|
+|*First*|The position of the first element in the range of elements in the argument list to be copied.|
+|*Last*|The position of the first element beyond the range of elements in the argument list to be copied.|
 
 ### Return Value
 
@@ -1147,7 +1147,7 @@ typedef implementation-defined iterator;
 
 ### Remarks
 
-A type **iterator** can be used to modify the value of an element.
+A type `iterator` can be used to modify the value of an element.
 
 ### Example
 
@@ -1179,29 +1179,29 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 
 |Parameter|Description|
 |-|-|
-|`Al`|The allocator class to use with this object.|
-|`Count`|The number of elements in the list constructed.|
-|`Val`|The value of the elements in the list.|
-|`Right`|The list of which the constructed list is to be a copy.|
-|`First`|The position of the first element in the range of elements to be copied.|
-|`Last`|The position of the first element beyond the range of elements to be copied.|
-|`IList`|The initializer_list that contains the elements to be copied.|
+|*Al*|The allocator class to use with this object.|
+|*Count*|The number of elements in the list constructed.|
+|*Val*|The value of the elements in the list.|
+|*Right*|The list of which the constructed list is to be a copy.|
+|*First*|The position of the first element in the range of elements to be copied.|
+|*Last*|The position of the first element beyond the range of elements to be copied.|
+|*IList*|The initializer_list that contains the elements to be copied.|
 
 ### Remarks
 
-All constructors store an allocator object ( `Al`) and initialize the list.
+All constructors store an allocator object (*Al*) and initialize the list.
 
 [get_allocator](#get_allocator) returns a copy of the allocator object used to construct a list.
 
-The first two constructors specify an empty initial list, the second specifying the allocator type ( `Al`) to be used.
+The first two constructors specify an empty initial list, the second specifying the allocator type (*Al*) to be used.
 
-The third constructor specifies a repetition of a specified number ( `Count`) of elements of the default value for class **Type**.
+The third constructor specifies a repetition of a specified number (*Count*) of elements of the default value for class `Type`.
 
-The fourth and fifth constructors specify a repetition of ( `Count`) elements of value `Val`.
+The fourth and fifth constructors specify a repetition of (*Count*) elements of value *Val*.
 
-The sixth constructor specifies a copy of the list `Right`.
+The sixth constructor specifies a copy of the list *Right*.
 
-The seventh constructor moves the list `Right`.
+The seventh constructor moves the list *Right*.
 
 The eighth constructor uses an initializer_list to specify the elements.
 
@@ -1344,17 +1344,17 @@ void merge(list<Type, Allocator>& right, Traits comp);
 
 ### Parameters
 
-`right`
+*right*
  The argument list to be merged with the target list.
 
-`comp`
+*comp*
  The comparison operator used to order the elements of the target list.
 
 ### Remarks
 
-The argument list `right` is merged with the target list.
+The argument list *right* is merged with the target list.
 
-Both argument and target lists must be ordered with the same comparison relation by which the resulting sequence is to be ordered. The default order for the first member function is ascending order. The second member function imposes the user-specified comparison operation `comp` of class **Traits**.
+Both argument and target lists must be ordered with the same comparison relation by which the resulting sequence is to be ordered. The default order for the first member function is ascending order. The second member function imposes the user-specified comparison operation *comp* of class `Traits`.
 
 ### Example
 
@@ -1428,11 +1428,11 @@ list& operator=(list&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The [list](../standard-library/list-class.md) being copied into the `list`.|
+|*right*|The [list](../standard-library/list-class.md) being copied into the `list`.|
 
 ### Remarks
 
-After erasing any existing elements in a `list`, the operator either copies or moves the contents of `right` into the `list`.
+After erasing any existing elements in a `list`, the operator either copies or moves the contents of *right* into the `list`.
 
 ### Example
 
@@ -1485,7 +1485,7 @@ typedef typename Allocator::pointer pointer;
 
 ### Remarks
 
-A type **pointer** can be used to modify the value of an element.
+A type `pointer` can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a list object.
 
@@ -1585,7 +1585,7 @@ void push_back(void push_back(Type&& val);
 
 |Parameter|Description|
 |-|-|
-|`val`|The element added to the end of the list.|
+|*val*|The element added to the end of the list.|
 
 ### Remarks
 
@@ -1641,7 +1641,7 @@ void push_front(Type&& val);
 
 |Parameter|Description|
 |-|-|
-|`val`|The element added to the beginning of the list.|
+|*val*|The element added to the beginning of the list.|
 
 ### Remarks
 
@@ -1801,7 +1801,7 @@ void remove(const Type& val);
 
 ### Parameters
 
-`val`
+*val*
  The value which, if held by an element, will result in that element's removal from the list.
 
 ### Remarks
@@ -1859,7 +1859,7 @@ void remove_if(Predicate pred)
 
 ### Parameters
 
-`pred`
+*pred*
  The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.
 
 ### Example
@@ -2010,17 +2010,17 @@ void resize(size_type _Newsize, Type val);
 
 ### Parameters
 
-`_Newsize`
+*_Newsize*
  The new size of the list.
 
-`val`
+*val*
  The value of the new elements to be added to the list if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.
 
 ### Remarks
 
-If the list's size is less than the requested size, `_Newsize`, elements are added to the list until it reaches the requested size.
+If the list's size is less than the requested size, *_Newsize*, elements are added to the list until it reaches the requested size.
 
-If the list's size is larger than the requested size, the elements closest to the end of the list are deleted until the list reaches the size `_Newsize`.
+If the list's size is larger than the requested size, the elements closest to the end of the list are deleted until the list reaches the size *_Newsize*.
 
 If the present size of the list is the same as the requested size, no action is taken.
 
@@ -2192,14 +2192,14 @@ void sort(Traits comp);
 
 ### Parameters
 
-`comp`
+*comp*
  The comparison operator used to order successive elements.
 
 ### Remarks
 
 The first member function puts the elements in ascending order by default.
 
-The member template function orders the elements according to the user-specified comparison operation `comp` of class **Traits**.
+The member template function orders the elements according to the user-specified comparison operation *comp* of class `Traits`.
 
 ### Example
 
@@ -2264,28 +2264,28 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 ### Parameters
 
-`Where`
+*Where*
  The position in the destination list before which to insert.
 
-`Source`
+*Source*
  The source list that is to be inserted into the destination list.
 
-`Iter`
+*Iter*
  The element to be inserted from the source list.
 
-`First`
+*First*
  The first element in the range to be inserted from the source list.
 
-`Last`
+*Last*
  The first position beyond the last element in the range to be inserted from the source list.
 
 ### Remarks
 
-The first pair of member functions inserts all elements in the source list into the destination list before the position referred to by `Where` and removes all elements from the source list. ( `&Source` must not equal `this`.)
+The first pair of member functions inserts all elements in the source list into the destination list before the position referred to by *Where* and removes all elements from the source list. (`&Source` must not equal `this`.)
 
-The second pair of member functions inserts the element referred to by `Iter` before the position in the destination list referred to by `Where` and removes `Iter` from the source list. (If `Where == Iter || Where == ++Iter`, no change occurs.)
+The second pair of member functions inserts the element referred to by *Iter* before the position in the destination list referred to by *Where* and removes *Iter* from the source list. (If `Where == Iter || Where == ++Iter`, no change occurs.)
 
-The third pair of member functions inserts the range designated by [ `First`, `Last`) before the element in the destination list referred to by `Where` and removes that range of elements from the source list. (If `&Source == this`, the range `[First, Last)` must not include the element pointed to by `Where`.)
+The third pair of member functions inserts the range designated by [ `First`, `Last`) before the element in the destination list referred to by *Where* and removes that range of elements from the source list. (If `&Source == this`, the range `[First, Last)` must not include the element pointed to by *Where*.)
 
 If the ranged splice inserts `N` elements, and `&Source != this`, an object of class [iterator](../standard-library/forward-list-class.md#iterator) is incremented `N` times.
 
@@ -2379,11 +2379,11 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 
 ### Parameters
 
-`right`
- The list providing the elements to be swapped, or the list whose elements are to be exchanged with those of the list `left`.
+*right*
+ The list providing the elements to be swapped, or the list whose elements are to be exchanged with those of the list *left*.
 
-`left`
- A list whose elements are to be exchanged with those of the list `right`.
+*left*
+ A list whose elements are to be exchanged with those of the list *right*.
 
 ### Example
 
@@ -2446,7 +2446,7 @@ void unique(BinaryPredicate pred);
 
 ### Parameters
 
-`pred`
+*pred*
  The binary predicate used to compare successive elements.
 
 ### Remarks
@@ -2516,7 +2516,7 @@ typedef typename Allocator::value_type value_type;
 
 ### Remarks
 
-`value_type` is a synonym for the template parameter **Type**.
+`value_type` is a synonym for the template parameter *Type*.
 
 ### Example
 

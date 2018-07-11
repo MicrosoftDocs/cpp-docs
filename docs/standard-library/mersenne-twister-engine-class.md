@@ -28,31 +28,31 @@ class mersenne_twister_engine;
 
 ### Parameters
 
-`UIntType`
+*UIntType*
  The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
-`W`
+*W*
  **Word size**. Size of each word, in bits, of the state sequence. **Precondition**: `2u < W ≤ numeric_limits<UIntType>::digits`
 
-`N`
+*N*
  **State size**. The number of elements (values) in the state sequence.
 
-`M`
+*M*
  **Shift size**. The number of elements to skip during each twist. **Precondition**: `0 < M ≤ N`
 
-`R`
+*R*
  **Mask bits**. **Precondition**: `R ≤ W`
 
-`A`
+*A*
  **XOR mask**. **Precondition**: `A ≤ (1u<<W) - 1u`
 
-`U`, `S`, `T`, `L`
+*U*, *S*, *T*, *L*
  **Tempering shift parameters**. Used as shift values during scrambling (tempering). Precondition: `U,S,T,L ≤ W`
 
-`D`, `B`, `C`
+*D*, *B*, *C*
  **Tempering bit mask parameters**. Used as bit mask values during scrambling (tempering). Precondition: `D,B,C ≤ (1u<<W) - 1u`
 
-`F`
+*F*
  **Initialization multiplier**. Used to help with initialization of the sequence. Precondition: `F ≤ (1u<<W) - 1u`
 
 ## Members
@@ -68,9 +68,9 @@ For more information about engine members, see [\<random>](../standard-library/r
 
 ## Remarks
 
-This template class describes a random number engine, returning values on the closed interval [ `0`, `2`<sup>W</sup> - `1`]. It holds a large integral value with `W * (N - 1) + R` bits. It extracts `W` bits at a time from this large value, and when it has used all the bits it twists the large value by shifting and mixing the bits so that it has a new set of bits to extract from. The engine's state is the last `N` `W`-bit values used if `operator()` has been called at least `N` times, otherwise the `M` `W`-bit values that have been used and the last `N - M` values of the seed.
+This template class describes a random number engine, returning values on the closed interval [ `0`, `2`<sup>W</sup> - `1`]. It holds a large integral value with `W * (N - 1) + R` bits. It extracts *W* bits at a time from this large value, and when it has used all the bits it twists the large value by shifting and mixing the bits so that it has a new set of bits to extract from. The engine's state is the last `N` `W`-bit values used if `operator()` has been called at least *N* times, otherwise the `M` `W`-bit values that have been used and the last `N - M` values of the seed.
 
-The generator twists the large value that it holds by using a twisted generalized feedback shift register defined by shift values `N` and `M`, a twist value `R`, and a conditional XOR-mask `A`. Additionally, the bits of the raw shift register are scrambled (tempered) according to a bit-scrambling matrix defined by values `U`, `D`, `S`, `B`, `T`, `C`, and `L`.
+The generator twists the large value that it holds by using a twisted generalized feedback shift register defined by shift values *N* and *M*, a twist value *R*, and a conditional XOR-mask *A*. Additionally, the bits of the raw shift register are scrambled (tempered) according to a bit-scrambling matrix defined by values *U*, *D*, *S*, *B*, *T*, *C*, and *L*.
 
 The template argument `UIntType` must be large enough to hold values up to `2`<sup>W</sup> - `1`. The values of the other template arguments must satisfy the following requirements: `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u`.
 

@@ -82,7 +82,7 @@ void AddArc(const D2D1_ARC_SEGMENT& arc);
 ```  
   
 ### Parameters  
- `arc`  
+ *arc*  
  The arc segment to add to the figure  
   
 ##  <a name="addbezier"></a>  CD2DGeometrySink::AddBezier  
@@ -93,7 +93,7 @@ void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 ```  
   
 ### Parameters  
- `bezier`  
+ *bezier*  
  A structure that describes the control points and end point of the Bezier curve to add.  
   
 ##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers  
@@ -106,7 +106,7 @@ void AddBeziers(
 ```  
   
 ### Parameters  
- `beziers`  
+ *beziers*  
  An array of Bezier segments that describes the Bezier curves to create. A curve is drawn from the geometry sink's current point (the end point of the last segment drawn or the location specified by BeginFigure) to the end point of the first Bezier segment in the array. if the array contains additional Bezier segments, each subsequent Bezier segment uses the end point of the preceding Bezier segment as its start point.  
   
 ##  <a name="addline"></a>  CD2DGeometrySink::AddLine  
@@ -117,7 +117,7 @@ void AddLine(CD2DPointF point);
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The end point of the line to draw.  
   
 ##  <a name="addlines"></a>  CD2DGeometrySink::AddLines  
@@ -130,7 +130,7 @@ void AddLines(
 ```  
   
 ### Parameters  
- `points`  
+ *points*  
  An array of one or more points that describe the lines to draw. A line is drawn from the geometry sink's current point (the end point of the last segment drawn or the location specified by BeginFigure) to the first point in the array. if the array contains additional points, a line is drawn from the first point to the second point in the array, from the second point to the third point, and so on. An array of a sequence of the end points of the lines to draw.  
   
 ##  <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier  
@@ -141,7 +141,7 @@ void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 ```  
   
 ### Parameters  
- `bezier`  
+ *bezier*  
  A structure that describes the control point and the end point of the quadratic Bezier curve to add.  
   
 ##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers  
@@ -154,7 +154,7 @@ void AddQuadraticBeziers(
 ```  
   
 ### Parameters  
- `beziers`  
+ *beziers*  
  An array of a sequence of quadratic Bezier segments.  
   
 ##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure  
@@ -167,10 +167,10 @@ void BeginFigure(
 ```  
   
 ### Parameters  
- `startPoint`  
+ *startPoint*  
  The point at which to begin the new figure.  
   
- `figureBegin`  
+ *figureBegin*  
  Whether the new figure should be hollow or filled.  
   
 ##  <a name="cd2dgeometrysink"></a>  CD2DGeometrySink::CD2DGeometrySink  
@@ -181,7 +181,7 @@ CD2DGeometrySink(CD2DPathGeometry& pathGeometry);
 ```  
   
 ### Parameters  
- `pathGeometry`  
+ *pathGeometry*  
  An existing CD2DPathGeometry object.  
   
 ##  <a name="close"></a>  CD2DGeometrySink::Close  
@@ -202,7 +202,7 @@ void EndFigure(D2D1_FIGURE_END figureEnd);
 ```  
   
 ### Parameters  
- `figureEnd`  
+ *figureEnd*  
  A value that indicates whether the current figure is closed. If the figure is closed, a line is drawn between the current point and the start point specified by BeginFigure.  
   
 ##  <a name="get"></a>  CD2DGeometrySink::Get  
@@ -250,7 +250,7 @@ void SetFillMode(D2D1_FILL_MODE fillMode);
 ```  
   
 ### Parameters  
- `fillMode`  
+ *fillMode*  
  The method used to determine whether a given point is part of the geometry.  
   
 ##  <a name="setsegmentflags"></a>  CD2DGeometrySink::SetSegmentFlags  
@@ -261,7 +261,7 @@ void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 ```  
   
 ### Parameters  
- `vertexFlags`  
+ *vertexFlags*  
  Stroke and join options to be applied to new segments added to the geometry sink.  
   
 ## See Also  

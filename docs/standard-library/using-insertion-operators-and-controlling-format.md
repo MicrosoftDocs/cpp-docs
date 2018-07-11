@@ -27,7 +27,7 @@ You can control the format with the following options:
 
 ## <a name="vclrfoutputwidthanchor3"></a> Output Width
 
-To align output, you specify the output width for each item by placing the `setw` manipulator in the stream or by calling the **width** member function. This example right-aligns the values in a column at least 10 characters wide:
+To align output, you specify the output width for each item by placing the `setw` manipulator in the stream or by calling the `width` member function. This example right-aligns the values in a column at least 10 characters wide:
 
 ```cpp
 // output_width.cpp
@@ -55,7 +55,7 @@ int main( )
 
 Leading blanks are added to any value fewer than 10 characters wide.
 
-To pad a field, use the **fill** member function, which sets the value of the padding character for fields that have a specified width. The default is a blank. To pad the column of numbers with asterisks, modify the previous **for** loop as follows:
+To pad a field, use the `fill` member function, which sets the value of the padding character for fields that have a specified width. The default is a blank. To pad the column of numbers with asterisks, modify the previous **for** loop as follows:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -94,7 +94,7 @@ int main( )
 }
 ```
 
-The **width** member function is declared in \<iostream>. If you use `setw` or any other manipulator with arguments, you must include \<iomanip>. In the output, strings are printed in a field of width 6 and integers in a field of width 10:
+The `width` member function is declared in \<iostream>. If you use `setw` or any other manipulator with arguments, you must include \<iomanip>. In the output, strings are printed in a field of width 6 and integers in a field of width 10:
 
 ```Output
   Zoot      1.23
@@ -103,7 +103,7 @@ The **width** member function is declared in \<iostream>. If you use `setw` or a
   Stan   4358.24
 ```
 
-Neither `setw` nor **width** truncates values. If formatted output exceeds the width, the entire value prints, subject to the stream's precision setting. Both `setw` and **width** affect the following field only. Field width reverts to its default behavior (the necessary width) after one field has been printed. However, the other stream format options remain in effect until changed.
+Neither `setw` nor `width` truncates values. If formatted output exceeds the width, the entire value prints, subject to the stream's precision setting. Both `setw` and `width` affect the following field only. Field width reverts to its default behavior (the necessary width) after one field has been printed. However, the other stream format options remain in effect until changed.
 
 ## <a name="vclrfalignmentanchor4"></a> Alignment
 
@@ -126,11 +126,11 @@ Al         653.7
 Stan     4358.24
 ```
 
-The left-align flag is set by using the [setiosflags](../standard-library/iomanip-functions.md#setiosflags) manipulator with the `left` enumerator. This enumerator is defined in the [ios](../standard-library/basic-ios-class.md) class, so its reference must include the **ios::** prefix. The [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) manipulator turns off the left-align flag. Unlike **width** and `setw`, the effect of `setiosflags` and `resetiosflags` is permanent.
+The left-align flag is set by using the [setiosflags](../standard-library/iomanip-functions.md#setiosflags) manipulator with the `left` enumerator. This enumerator is defined in the [ios](../standard-library/basic-ios-class.md) class, so its reference must include the **ios::** prefix. The [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) manipulator turns off the left-align flag. Unlike `width` and `setw`, the effect of `setiosflags` and `resetiosflags` is permanent.
 
 ## <a name="vclrfprecisionanchor5"></a> Precision
 
-The default value for floating-point precision is six. For example, the number 3466.9768 prints as 3466.98. To change the way this value prints, use the [setprecision](../standard-library/iomanip-functions.md#setprecision) manipulator. The manipulator has two flags: [fixed](../standard-library/ios-functions.md#fixed) and [scientific](../standard-library/ios-functions.md#scientific). If [fixed](../standard-library/ios-functions.md#fixed) is set, the number prints as 3466.976800. If **scientific** is set, it prints as 3.4669773+003.
+The default value for floating-point precision is six. For example, the number 3466.9768 prints as 3466.98. To change the way this value prints, use the [setprecision](../standard-library/iomanip-functions.md#setprecision) manipulator. The manipulator has two flags: [fixed](../standard-library/ios-functions.md#fixed) and [scientific](../standard-library/ios-functions.md#scientific). If [fixed](../standard-library/ios-functions.md#fixed) is set, the number prints as 3466.976800. If `scientific` is set, it prints as 3.4669773+003.
 
 To display the floating-point numbers shown in [Alignment](#vclrfalignmentanchor4) with one significant digit, replace the **for** loop as follows:
 
@@ -170,7 +170,7 @@ Al         653.7
 Stan      4358.2
 ```
 
-If you change the **ios::fixed** flag to **ios::scientific**, the program prints this:
+If you change the `ios::fixed` flag to `ios::scientific`, the program prints this:
 
 ```cpp
 Zoot    1.2e+00
@@ -179,11 +179,11 @@ Al      6.5e+02
 Stan    4.4e+03
 ```
 
-Again, the program prints one digit after the decimal point. If either **ios::fixed** or **ios::scientific** is set, the precision value determines the number of digits after the decimal point. If neither flag is set, the precision value determines the total number of significant digits. The `resetiosflags` manipulator clears these flags.
+Again, the program prints one digit after the decimal point. If either `ios::fixed` or `ios::scientific` is set, the precision value determines the number of digits after the decimal point. If neither flag is set, the precision value determines the total number of significant digits. The `resetiosflags` manipulator clears these flags.
 
 ## <a name="vclrfradixanchor6"></a> Radix
 
-The **dec**, **oct**, and **hex** manipulators set the default radix for input and output. For example, if you insert the **hex** manipulator into the output stream, the object correctly translates the internal data representation of integers into a hexadecimal output format. The numbers are displayed with digits a through f in lower case if the [uppercase](../standard-library/ios-functions.md#uppercase) flag is clear (the default); otherwise, they are displayed in upper case. The default radix is **dec** (decimal).
+The `dec`, `oct`, and `hex` manipulators set the default radix for input and output. For example, if you insert the `hex` manipulator into the output stream, the object correctly translates the internal data representation of integers into a hexadecimal output format. The numbers are displayed with digits a through f in lower case if the [uppercase](../standard-library/ios-functions.md#uppercase) flag is clear (the default); otherwise, they are displayed in upper case. The default radix is `dec` (decimal).
 
 ## Quoted strings (C++14)
 

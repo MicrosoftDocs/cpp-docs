@@ -39,15 +39,15 @@ protected:
 
 ### Parameters
 
-`_Locname`
+*_Locname*  
  A locale name.
 
-`_Refs`
+*_Refs*  
  An initial reference count.
 
 ## Remarks
 
-Its behavior is determined by the [named](../standard-library/locale-class.md#name) locale `_Locname`. Each constructor initializes its base object with [time_put](../standard-library/time-put-class.md#time_put)\<CharType, OutputIterator>( `_Refs`).
+Its behavior is determined by the [named](../standard-library/locale-class.md#name) locale *_Locname*. Each constructor initializes its base object with [time_put](../standard-library/time-put-class.md#time_put)\<CharType, OutputIterator>(`_Refs`).
 
 ## Requirements
 

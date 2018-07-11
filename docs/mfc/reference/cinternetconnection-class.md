@@ -70,17 +70,17 @@ CInternetConnection(
 ```  
   
 ### Parameters  
- `pSession`  
+ *pSession*  
  A pointer to a [CInternetSession](../../mfc/reference/cinternetsession-class.md) object.  
   
- `pstrServer`  
+ *pstrServer*  
  A pointer to a string containing the server name.  
   
- `nPort`  
+ *nPort*  
  The number that identifies the Internet port for this connection.  
   
- `dwContext`  
- The context identifier for the `CInternetConnection` object. See **Remarks** for more information about `dwContext`.  
+ *dwContext*  
+ The context identifier for the `CInternetConnection` object. See **Remarks** for more information about *dwContext*.  
   
 ### Remarks  
  You never call `CInternetConnection` yourself; instead, call the [CInternetSession](../../mfc/reference/cinternetsession-class.md) member function for the type of connection you want to establish:  
@@ -91,7 +91,7 @@ CInternetConnection(
   
 - [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)  
   
- The default value for `dwContext` is sent by MFC to the `CInternetConnection`-derived object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the **InternetConnection**-derived object. The default is set to 1; however, you can explicitly assign a specific context identifier in the [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) constructor for the connection. The object and any work it does will be associated with that context ID. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for *dwContext* is sent by MFC to the `CInternetConnection`-derived object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the **InternetConnection**-derived object. The default is set to 1; however, you can explicitly assign a specific context identifier in the [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) constructor for the connection. The object and any work it does will be associated with that context ID. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
 ##  <a name="getcontext"></a>  CInternetConnection::GetContext  
  Call this member function to get the context ID for this session.  
@@ -106,7 +106,7 @@ DWORD_PTR GetContext() const;
 ### Remarks  
  The context ID is originally specified in [CInternetSession](../../mfc/reference/cinternetsession-class.md) and propagates to `CInternetConnection`- and [CInternetFile](../../mfc/reference/cinternetfile-class.md)-derived classes, unless specified differently in the call to a function that opens the connection. The context ID is associated with any operation of the given object and identifies the operation's status information returned by [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).  
   
- For more information about how **GetContext** works with other WinInet classes to give the user status information, see the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ For more information about how `GetContext` works with other WinInet classes to give the user status information, see the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
 ##  <a name="getservername"></a>  CInternetConnection::GetServerName  
  Call this member function to get the name of the server associated with this Internet connection.  

@@ -40,7 +40,7 @@ b = a;
   
  The preceding code could mean "copy the contents of FILE1.DAT to FILE2.DAT" or it could mean "ignore FILE2.DAT and make `b` a second handle to FILE1.DAT." You must attach appropriate copying semantics to each class, as follows.  
   
--   By using the assignment operator `operator=` together with a reference to the class type as the return type and the parameter that is passed by `const` reference—for example `ClassName& operator=(const ClassName& x);`.  
+-   By using the assignment operator **operator=** together with a reference to the class type as the return type and the parameter that is passed by **const** reference—for example `ClassName& operator=(const ClassName& x);`.  
   
 -   By using the copy constructor.   
   

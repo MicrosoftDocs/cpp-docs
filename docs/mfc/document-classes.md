@@ -18,7 +18,7 @@ Document class objects, created by document-template objects, manage the applica
  Document class objects interact with view objects. View objects represent the client area of a window, display a document's data, and allow users to interact with it. Documents and views are created by a document-template object.  
   
  [CDocument](../mfc/reference/cdocument-class.md)  
- The base class for application-specific documents. Derive your document class or classes from **CDocument**.  
+ The base class for application-specific documents. Derive your document class or classes from `CDocument`.  
   
  [COleDocument](../mfc/reference/coledocument-class.md)  
  Used for compound document implementation, as well as basic container support. Serves as a container for classes derived from [CDocItem](../mfc/reference/cdocitem-class.md). This class can be used as the base class for container documents and is the base class for `COleServerDoc`.  

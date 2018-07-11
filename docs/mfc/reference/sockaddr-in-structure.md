@@ -28,7 +28,7 @@ struct in_addr sin_addr;
   
 #### Parameters  
  *sin_family*  
- Address family (must be **AF_INET**).  
+ Address family (must be AF_INET).  
   
  *sin_port*  
  IP port.  
@@ -42,7 +42,7 @@ struct in_addr sin_addr;
 ## Remarks  
  This is the form of the `SOCKADDR` structure specific to the Internet address family and can be cast to `SOCKADDR`.  
   
- The IP address component of this structure is of type **IN_ADDR**. The **IN_ADDR** structure is defined in Windows Sockets header file WINSOCK.H as follows:  
+ The IP address component of this structure is of type `IN_ADDR`. The `IN_ADDR` structure is defined in Windows Sockets header file WINSOCK.H as follows:  
   
 ```  
 struct in_addr {

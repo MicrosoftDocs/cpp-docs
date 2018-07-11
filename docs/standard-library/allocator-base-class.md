@@ -27,8 +27,8 @@ class allocator_base
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|The type of elements allocated by the allocator.|
-|`Sync`|The synchronization policy for the allocator, which is [sync_none Class](../standard-library/sync-none-class.md), [sync_per_container Class](../standard-library/sync-per-container-class.md), [sync_per_thread Class](../standard-library/sync-per-thread-class.md), or [sync_shared Class](../standard-library/sync-shared-class.md).|
+|*Type*|The type of elements allocated by the allocator.|
+|*Sync*|The synchronization policy for the allocator, which is [sync_none Class](../standard-library/sync-none-class.md), [sync_per_container Class](../standard-library/sync-per-container-class.md), [sync_per_thread Class](../standard-library/sync-per-thread-class.md), or [sync_shared Class](../standard-library/sync-shared-class.md).|
 
 ### Constructors
 
@@ -52,14 +52,14 @@ class allocator_base
 
 |Member function|Description|
 |-|-|
-|[_Charalloc](#charalloc)|Allocates storage for an array of type `char`.|
-|[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type `char`.|
+|[_Charalloc](#charalloc)|Allocates storage for an array of type **char**.|
+|[_Chardealloc](#chardealloc)|Frees storage for the array containing elements of type **char**.|
 |[address](#address)|Finds the address of an object whose value is specified.|
 |[allocate](#allocate)|Allocates a block of memory large enough to store at least some specified number of elements.|
 |[construct](#construct)|Constructs a specific type of object at a specified address that is initialized with a specified value.|
 |[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|
 |[destroy](#destroy)|Calls an objects destructor without deallocating the memory where the object was stored.|
-|[max_size](#max_size)|Returns the number of elements of type `Type` that could be allocated by an object of class allocator before the free memory is used up.|
+|[max_size](#max_size)|Returns the number of elements of type *Type* that could be allocated by an object of class allocator before the free memory is used up.|
 
 ## Requirements
 
@@ -69,7 +69,7 @@ class allocator_base
 
 ## <a name="charalloc"></a>  allocator_base::_Charalloc
 
-Allocates storage for an array of type `char`.
+Allocates storage for an array of type **char**.
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -79,7 +79,7 @@ char *_Charalloc(size_type count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`count`|The number of elements in the array to be allocated.|
+|*count*|The number of elements in the array to be allocated.|
 
 ### Return Value
 
@@ -91,7 +91,7 @@ This member function is used by containers when compiled with a compiler that ca
 
 ## <a name="chardealloc"></a>  allocator_base::_Chardealloc
 
-Frees storage for the array containing elements of type `char`.
+Frees storage for the array containing elements of type **char**.
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);
@@ -101,8 +101,8 @@ void _Chardealloc(void* ptr, size_type count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the first object to be deallocated from storage.|
-|`count`|The number of objects to be deallocated from storage.|
+|*ptr*|A pointer to the first object to be deallocated from storage.|
+|*count*|The number of objects to be deallocated from storage.|
 
 ### Remarks
 
@@ -120,7 +120,7 @@ const_pointer address(const_reference val);
 
 ### Parameters
 
-`val`
+*val*
  The const or nonconst value of the object whose address is being searched for.
 
 ### Return Value
@@ -146,8 +146,8 @@ pointer allocate(size_type _Nx);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Nx`|The number of elements in the array to be allocated.|
-|`_Hint`|This parameter is ignored.|
+|*_Nx*|The number of elements in the array to be allocated.|
+|*_Hint*|This parameter is ignored.|
 
 ### Return Value
 
@@ -172,7 +172,7 @@ allocator_base(const allocator_base<Other, Sync>& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The allocator object to be copied.|
+|*right*|The allocator object to be copied.|
 
 ### Remarks
 
@@ -206,8 +206,8 @@ void construct(pointer ptr, const Type& val);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the location where the object is to be constructed.|
-|`val`|The value with which the object being constructed is to be initialized.|
+|*ptr*|A pointer to the location where the object is to be constructed.|
+|*val*|The value with which the object being constructed is to be initialized.|
 
 ### Remarks
 
@@ -225,8 +225,8 @@ void deallocate(pointer ptr, size_type _Nx);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the first object to be deallocated from storage.|
-|`_Nx`|The number of objects to be deallocated from storage.|
+|*ptr*|A pointer to the first object to be deallocated from storage.|
+|*_Nx*|The number of objects to be deallocated from storage.|
 
 ### Remarks
 
@@ -244,7 +244,7 @@ void destroy(pointer ptr);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer designating the address of the object to be destroyed.|
+|*ptr*|A pointer designating the address of the object to be destroyed.|
 
 ### Remarks
 

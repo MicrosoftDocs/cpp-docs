@@ -25,12 +25,12 @@ struct is_nothrow_copy_constructible;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` has a nothrow copy constructor, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* has a nothrow copy constructor, otherwise it holds false.
 
 ## Requirements
 

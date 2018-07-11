@@ -27,11 +27,11 @@ struct CDaoParameterInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the parameter object. For more information, see the topic "Name Property" in DAO Help.  
   
- `m_nType`  
- A value that indicates the data type of a parameter object. For a list of the possible values, see the `m_nType` member of the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. For more information, see the topic "Type Property" in DAO Help.  
+ *m_nType*  
+ A value that indicates the data type of a parameter object. For a list of the possible values, see the *m_nType* member of the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. For more information, see the topic "Type Property" in DAO Help.  
   
  *m_varValue*  
  The value of the parameter, stored in a [COleVariant](../../mfc/reference/colevariant-class.md) object.  

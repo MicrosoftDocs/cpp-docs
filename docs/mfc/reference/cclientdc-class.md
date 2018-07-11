@@ -33,7 +33,7 @@ class CClientDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CClientDC::m_hWnd](#m_hwnd)|The `HWND` of the window for which this `CClientDC` is valid.|  
+|[CClientDC::m_hWnd](#m_hwnd)|The HWND of the window for which this `CClientDC` is valid.|  
   
 ## Remarks  
  This means that the device context associated with a `CClientDC` object is the client area of a window.  
@@ -51,14 +51,14 @@ class CClientDC : public CDC
  **Header:** afxwin.h  
   
 ##  <a name="cclientdc"></a>  CClientDC::CClientDC  
- Constructs a `CClientDC` object that accesses the client area of the [CWnd](../../mfc/reference/cwnd-class.md) pointed to by `pWnd`.  
+ Constructs a `CClientDC` object that accesses the client area of the [CWnd](../../mfc/reference/cwnd-class.md) pointed to by *pWnd*.  
   
 ```  
 explicit CClientDC(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  The window whose client area the device context object will access.  
   
 ### Remarks  
@@ -77,7 +77,7 @@ HWND m_hWnd;
 ```  
   
 ### Remarks  
- `m_hWnd` is a protected variable.  
+ *m_hWnd* is a protected variable.  
   
 ### Example  
   See the example for [CClientDC::CClientDC](#cclientdc).  

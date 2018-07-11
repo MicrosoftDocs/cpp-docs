@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # strstreambuf Class
 
-Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a `char` array object.
+Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a **char** array object.
 
 ## Syntax
 
@@ -78,12 +78,12 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-`_Freezeit`
- A `bool` indicating whether you want the stream to be frozen.
+*_Freezeit*  
+ A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
 
-If `_Freezeit` is true, the function alters the stored `strstreambuf` mode to make the controlled sequence frozen. Otherwise, it makes the controlled sequence not frozen.
+If *_Freezeit* is true, the function alters the stored `strstreambuf` mode to make the controlled sequence frozen. Otherwise, it makes the controlled sequence not frozen.
 
 [str](#str) implies `freeze`.
 
@@ -166,7 +166,7 @@ virtual int overflow(int _Meta = EOF);
 
 ### Parameters
 
-`_Meta`
+*_Meta*  
  The character to insert into the buffer, or `EOF`.
 
 ### Return Value
@@ -191,7 +191,7 @@ virtual int pbackfail(int _Meta = EOF);
 
 ### Parameters
 
-`_Meta`
+*_Meta*  
  The character to insert into the buffer, or `EOF`.
 
 ### Return Value
@@ -204,9 +204,9 @@ The protected virtual member function tries to put back an element into the inpu
 
 If _ *Meta* == `EOF`, the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **ch** = ( `char`)\_ *Meta*. The function can put back an element in various ways:
 
-- If a putback position is available, and the element stored there compares equal to **ch**, it can decrement the next pointer for the input buffer.
+- If a putback position is available, and the element stored there compares equal to `ch`, it can decrement the next pointer for the input buffer.
 
-- If a putback position is available, and if the strstreambuf mode says the controlled sequence is modifiable, the function can store **ch** into the putback position and decrement the next pointer for the input buffer.
+- If a putback position is available, and if the strstreambuf mode says the controlled sequence is modifiable, the function can store `ch` into the putback position and decrement the next pointer for the input buffer.
 
 ## <a name="pcount"></a>  strstreambuf::pcount
 
@@ -255,13 +255,13 @@ virtual streampos seekoff(streamoff _Off,
 
 ### Parameters
 
-`_Off`
- The position to seek for relative to `_Way`.
+*_Off*  
+ The position to seek for relative to *_Way*.
 
-`_Way`
+*_Way*  
  The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-`_Which`
+*_Which*  
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -294,10 +294,10 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 
 ### Parameters
 
-`_Sp`
+*_Sp*  
  The position to seek for.
 
-`_Which`
+*_Which*  
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -364,24 +364,24 @@ strstreambuf(const unsigned char* _Getptr,
 
 ### Parameters
 
-*_Allocfunc*
+*_Allocfunc*  
  The function used to allocate buffer memory.
 
-`count`
- Determines the length of the buffer pointed to by `_Getptr`. If `_Getptr` is not an argument (first constructor form), a suggested allocation size for the buffers.
+*count*  
+ Determines the length of the buffer pointed to by *_Getptr*. If *_Getptr* is not an argument (first constructor form), a suggested allocation size for the buffers.
 
-*_Freefunc*
+*_Freefunc*  
  The function used to free buffer memory.
 
-`_Getptr`
+*_Getptr*  
  A buffer used for input.
 
-`_Putptr`
+*_Putptr*  
  A buffer used for output.
 
 ### Remarks
 
-The first constructor stores a null pointer in all the pointers controlling the input buffer, the output buffer, and strstreambuf allocation. It sets the stored strstreambuf mode to make the controlled sequence modifiable and extendable. It also accepts `count` as a suggested initial allocation size.
+The first constructor stores a null pointer in all the pointers controlling the input buffer, the output buffer, and strstreambuf allocation. It sets the stored strstreambuf mode to make the controlled sequence modifiable and extendable. It also accepts *count* as a suggested initial allocation size.
 
 The second constructor behaves like the first, except that it stores _ *Allocfunc* as the pointer to the function to call to allocate storage and \_ *Freefunc* as the pointer to the function to call to free that storage.
 
@@ -465,7 +465,7 @@ If the function cannot succeed, it returns `EOF`. Otherwise, it returns the curr
 
 ### Remarks
 
-The protected virtual member function endeavors to extract the current element **ch** from the input buffer, then advance the current stream position, and return the element as (`int`)(`unsigned char`) **ch**. It can do so in only one way: if a read position is available, it takes **ch** as the element stored in the read position and advances the next pointer for the input buffer.
+The protected virtual member function endeavors to extract the current element `ch` from the input buffer, then advance the current stream position, and return the element as (`int`)(`unsigned char`) **ch**. It can do so in only one way: if a read position is available, it takes `ch` as the element stored in the read position and advances the next pointer for the input buffer.
 
 ## See also
 

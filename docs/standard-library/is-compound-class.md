@@ -25,12 +25,12 @@ struct is_compound;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds `false` if the type of `Ty` is a fundamental type (that is, if [is_fundamental](../standard-library/is-fundamental-class.md)\<Ty> holds `true`); otherwise, it holds `true`. Thus, the predicate holds `true` if `Ty` is an array type, a function type, a pointer to `void` or an object or a function, a reference, a class, a union, an enumeration, or a pointer to non-static class member, or a *cv-qualified* form of one of them.
+An instance of the type predicate holds **false** if the type of *Ty* is a fundamental type (that is, if [is_fundamental](../standard-library/is-fundamental-class.md)\<Ty> holds **true**); otherwise, it holds **true**. Thus, the predicate holds **true** if *Ty* is an array type, a function type, a pointer to **void** or an object or a function, a reference, a class, a union, an enumeration, or a pointer to non-static class member, or a *cv-qualified* form of one of them.
 
 ## Example
 

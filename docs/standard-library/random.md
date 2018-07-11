@@ -299,7 +299,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 |||
 |-|-|
-|[bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of `bool` values.|
+|[bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of **bool** values.|
 |[binomial_distribution Class](../standard-library/binomial-distribution-class.md)|Produces a binomial distribution of integer values.|
 |[geometric_distribution Class](../standard-library/geometric-distribution-class.md)|Produces a geometric distribution of integer values.|
 |[negative_binomial_distribution Class](../standard-library/negative-binomial-distribution-class.md)|Produces a negative binomial distribution of integer values.|
@@ -364,11 +364,11 @@ This section lists the operators provided in the \<random> header.
 
 Refer to the following sections for information about each of these template class categories defined in \<random>. Both of these template class categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
 
-- `IntType` indicates a `short`, `int`, `long`, `long long`, `unsigned short`, `unsigned int`, `unsigned long`, or `unsigned long long`.
+- `IntType` indicates a **short**, **int**, **long**, **long long**, **unsigned short**, **unsigned int**, **unsigned long**, or **unsigned long long**.
 
-- `UIntType` indicates `unsigned short`, `unsigned int`, `unsigned long`, or `unsigned long long`.
+- `UIntType` indicates **unsigned short**, **unsigned int**, **unsigned long**, or **unsigned long long**.
 
-- `RealType` indicates a `float`, `double`, or `long double`.
+- `RealType` indicates a **float**, **double**, or **long double**.
 
 ### Engines
 

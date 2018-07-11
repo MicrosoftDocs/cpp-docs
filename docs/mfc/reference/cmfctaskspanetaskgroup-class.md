@@ -61,7 +61,7 @@ class CMFCTasksPaneTaskGroup : public CObject
   
  ![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")  
   
- The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to `TRUE`, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:  
+ The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to TRUE, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:  
   
  ![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")  
   
@@ -87,22 +87,22 @@ CMFCTasksPaneTaskGroup(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  Specifies the name of the group in the group caption.  
   
- `bIsBottom`  
+ *bIsBottom*  
  Specifies whether the group is aligned to the bottom of the task pane control.  
   
- `bIsSpecial`  
+ *bIsSpecial*  
  Specifies whether the group is designated as *special* and thus, whether the group caption is filled with a different color.  
   
- `bIsCollapsed`  
+ *bIsCollapsed*  
  Specifies whether the group is collapsed.  
   
- `pPage`  
+ *pPage*  
  Specifies the property page that this task group belongs to.  
   
- `hIcon`  
+ *hIcon*  
  Specifies the icon that displays in the group caption.  
   
 ### Remarks  
@@ -135,7 +135,7 @@ BOOL m_bIsSpecial;
 ```  
   
 ### Remarks  
- If your application is using the Windows XP visual theme and `m_bIsSpecial` is `FALSE`, the framework calls `DrawThemeBackground` with the `EBP_NORMALGROUPBACKGROUND` flag. If `m_bIsSpecial` is `TRUE`, the framework calls `DrawThemeBackground` with the `EBP_SPECIALGROUPBACKGROUND` flag.  
+ If your application is using the Windows XP visual theme and `m_bIsSpecial` is FALSE, the framework calls `DrawThemeBackground` with the EBP_NORMALGROUPBACKGROUND flag. If `m_bIsSpecial` is TRUE, the framework calls `DrawThemeBackground` with the EBP_SPECIALGROUPBACKGROUND flag.  
   
 ##  <a name="m_lsttasks"></a>  CMFCTasksPaneTaskGroup::m_lstTasks  
  Contains the internal list of tasks.  
@@ -187,14 +187,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  Represents the parent window of the current task group.  
   
- [out] `data`  
+ [out] *data*  
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current task group.  
   
 ### Return Value  
- `TRUE` if the `data` parameter was successfully populated with the accessibility data of the current task group; otherwise, `FALSE`.  
+ TRUE if the *data* parameter was successfully populated with the accessibility data of the current task group; otherwise, FALSE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

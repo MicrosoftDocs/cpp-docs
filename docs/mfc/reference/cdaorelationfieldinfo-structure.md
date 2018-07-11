@@ -26,10 +26,10 @@ struct CDaoRelationFieldInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  The name of the field in the primary table of the relation.  
   
- `m_strForeignName`  
+ *m_strForeignName*  
  The name of the field in the foreign table of the relation.  
   
 ## Remarks  

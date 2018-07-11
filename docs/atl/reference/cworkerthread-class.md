@@ -26,7 +26,7 @@ class CWorkerThread
 ```  
   
 #### Parameters  
- `ThreadTraits`  
+ *ThreadTraits*  
  The class providing the thread creation function, such as [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) or [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md).  
   
 ## Members  
@@ -90,20 +90,20 @@ HRESULT AddHandle(
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  The handle to a waitable object.  
   
- `pClient`  
+ *pClient*  
  The pointer to the [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) interface on the object to be called when the handle is signaled.  
   
- `dwParam`  
+ *dwParam*  
  The parameter to be passed to [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) when the handle is signaled.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) will be called through `pClient` when the handle, `hObject`, is signaled.  
+ [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) will be called through *pClient* when the handle, *hObject*, is signaled.  
   
 ##  <a name="addtimer"></a>  CWorkerThread::AddTimer  
  Call this method to add a periodic waitable timer to the list maintained by the worker thread.  
@@ -120,22 +120,22 @@ HRESULT AddTimer(
  *dwInterval*  
  Specifies the period of the timer in milliseconds.  
   
- `pClient`  
+ *pClient*  
  The pointer to the [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) interface on the object to be called when the handle is signaled.  
   
- `dwParam`  
+ *dwParam*  
  The parameter to be passed to [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) when the handle is signaled.  
   
- `phTimer`  
+ *phTimer*  
  [out] Address of the HANDLE variable that, on success, receives the handle to the newly created timer.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) will be called through `pClient` when the timer is signaled.  
+ [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) will be called through *pClient* when the timer is signaled.  
   
- Pass the timer handle from `phTimer` to [CWorkerThread::RemoveHandle](#removehandle) to close the timer.  
+ Pass the timer handle from *phTimer* to [CWorkerThread::RemoveHandle](#removehandle) to close the timer.  
   
 ##  <a name="cworkerthread"></a>  CWorkerThread::CWorkerThread  
  The constructor.  
@@ -184,7 +184,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 ```  
   
 ### Parameters  
- `pThread`  
+ *pThread*  
  An existing worker thread.  
   
 ### Return Value  
@@ -205,7 +205,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 ```  
   
 ### Parameters  
- `hObject`  
+ *hObject*  
  The handle to remove.  
   
 ### Return Value  
@@ -222,16 +222,16 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 ```  
   
 ### Parameters  
- `dwWait`  
+ *dwWait*  
  The time in milliseconds to wait for the worker thread to shut down. ATL_WORKER_THREAD_WAIT defaults to 10 seconds. If necessary, you can define your own value for this symbol before including atlutil.h. 
   
 ### Return Value  
- Returns S_OK on success, or an error HRESULT on failure, such as if the timeout value, `dwWait`, is exceeded.  
+ Returns S_OK on success, or an error HRESULT on failure, such as if the timeout value, *dwWait*, is exceeded.  
   
 ### Remarks  
  To reuse the object, call [CWorkerThread::Initialize](#initialize) after calling this method.  
   
- Note that calling **Shutdown** on an object initialized with a pointer to another `CWorkerThread` object has no effect and always returns S_OK.  
+ Note that calling `Shutdown` on an object initialized with a pointer to another `CWorkerThread` object has no effect and always returns S_OK.  
   
 ## See Also  
  [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   

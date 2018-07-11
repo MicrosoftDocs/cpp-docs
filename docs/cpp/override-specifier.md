@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # override Specifier
-You can use the `override` keyword to designate member functions that override a virtual function in a base class.  
+You can use the **override** keyword to designate member functions that override a virtual function in a base class.  
   
 ## Syntax  
   
@@ -22,10 +22,10 @@ function-declaration override;
 ```  
   
 ## Remarks  
- `override` is context-sensitive and has special meaning only when it's used after a member function declaration; otherwise, it's not a reserved keyword.  
+ **override** is context-sensitive and has special meaning only when it's used after a member function declaration; otherwise, it's not a reserved keyword.  
   
 ## Example  
- Use `override` to help prevent inadvertent inheritance behavior in your code. The following example shows where, without using `override`, the member function behavior of the derived class may not have been intended. The compiler doesn't emit any errors for this code.  
+ Use **override** to help prevent inadvertent inheritance behavior in your code. The following example shows where, without using **override**, the member function behavior of the derived class may not have been intended. The compiler doesn't emit any errors for this code.  
   
 ```cpp  
 class BaseClass  
@@ -51,7 +51,7 @@ class DerivedClass: public BaseClass
   
 ```  
   
- When you use `override`, the compiler generates errors instead of silently creating new member functions.  
+ When you use **override**, the compiler generates errors instead of silently creating new member functions.  
   
 ```cpp  
 class BaseClass  

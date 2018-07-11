@@ -77,11 +77,11 @@ class CMFCCaptionBar : public CPane
   
 3.  Call [CMFCCaptionBar::SetButton](#setbutton), [CMFCCaptionBar::SetText](#settext), [CMFCCaptionBar::SetIcon](#seticon), and [CMFCCaptionBar::SetBitmap](#setbitmap) to set the caption bar elements.  
   
- When you set the button element, you must assign a command ID to the button. When the user clicks the button, the caption bar routes the `WM_COMMAND` messages that have this ID to the parent frame window.  
+ When you set the button element, you must assign a command ID to the button. When the user clicks the button, the caption bar routes the WM_COMMAND messages that have this ID to the parent frame window.  
   
  The caption bar can also work in message bar mode, which emulates the message bar that appears in Microsoft Office 2007 applications. In message bar mode, the caption bar displays a bitmap, a message, and a button (which typically opens a dialog box.) You can assign a tooltip to the bitmap.  
   
- To enable message bar mode, call [CMFCCaptionBar::Create](#create) and set the fourth parameter (bIsMessageBarMode) to `TRUE`.  
+ To enable message bar mode, call [CMFCCaptionBar::Create](#create) and set the fourth parameter (bIsMessageBarMode) to TRUE.  
   
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCCaptionBar` class. The example shows how to create the caption bar control, set a 3D border of the caption bar, set the distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control, set the button for the caption bar, set the tooltip for the button, set the text label for the caption bar, set the bitmap image for the caption bar, and set the tooltip for the image in the caption bar. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
@@ -118,23 +118,23 @@ BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  The logical OR combination of the caption bar styles.  
   
- `pParentWnd`  
+ *pParentWnd*  
  The parent window of the caption bar control.  
   
- `uID`  
+ *uID*  
  The ID of caption bar control.  
   
- `nHeight`  
+ *nHeight*  
  The height, in pixels, of the caption bar control. If it is -1, the height is calculated according to the height of the icon, the text and the button that the caption bar control displays.  
   
- `bIsMessageBarMode`  
- `TRUE` if the caption bar is in the message bar mode; `FALSE` otherwise.  
+ *bIsMessageBarMode*  
+ TRUE if the caption bar is in the message bar mode; FALSE otherwise.  
   
 ### Return Value  
- `TRUE` if the caption bar control is created successfully; `FALSE` otherwise.  
+ TRUE if the caption bar control is created successfully; FALSE otherwise.  
   
 ### Remarks  
  You construct a `CMFCCaptionBar` object in two steps. First you call the constructor, and then you call the `Create` method, which creates the Windows control and attaches it to the `CMFCCaptionBar` object.  
@@ -147,7 +147,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 ```  
   
 ### Return Value  
- Returns `FALSE` unless overridden.  
+ Returns FALSE unless overridden.  
   
 ### Remarks  
   
@@ -159,8 +159,8 @@ void EnableButton(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the button, `FALSE` to disable the button.  
+ [in] *bEnable*  
+ TRUE to enable the button, FALSE to disable the button.  
   
 ##  <a name="getalignment"></a>  CMFCCaptionBar::GetAlignment  
  Returns the alignment of the specified element.  
@@ -170,7 +170,7 @@ BarElementAlignment GetAlignment(BarElement elem);
 ```  
   
 ### Parameters  
- [in] `elem`  
+ [in] *elem*  
  A caption bar element for which to retrieve alignment.  
   
 ### Return Value  
@@ -225,7 +225,7 @@ BOOL IsMessageBarMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the caption bar is in the message bar mode; `FALSE` otherwise.  
+ TRUE if the caption bar is in the message bar mode; FALSE otherwise.  
   
 ### Remarks  
  In the message bar mode, the caption bar displays an image with a tooltip, a message text, and a button.  
@@ -261,10 +261,10 @@ virtual void OnDrawBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of the caption bar.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle to fill.  
   
 ### Remarks  
@@ -282,10 +282,10 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A device context that is used to display the borders.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle.  
   
 ### Remarks  
@@ -305,17 +305,17 @@ virtual void OnDrawButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context that is used to display the button.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the button.  
   
- [in] `strButton`  
+ [in] *strButton*  
  The button's text label.  
   
- [in] `bEnabled`  
- `TRUE` if the button is enabled; `FALSE` otherwise.  
+ [in] *bEnabled*  
+ TRUE if the button is enabled; FALSE otherwise.  
   
 ### Remarks  
  Override this method in a `CMFCCaptionBar` derived class to customize the appearance of the caption bar's button.  
@@ -330,10 +330,10 @@ virtual void OnDrawImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context that is used to display the image.  
   
- [in] `rect`  
+ [in] *rect*  
  Specifies the bounding rectangle of the image.  
   
 ### Remarks  
@@ -350,13 +350,13 @@ virtual void OnDrawText(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context that is used to display the button.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the text.  
   
- [in] `strText`  
+ [in] *strText*  
  The text string to display.  
   
 ### Remarks  
@@ -414,16 +414,16 @@ void SetBitmap(
 ```  
   
 ### Parameters  
- [in] `hBitmap`  
+ [in] *hBitmap*  
  The handle to the bitmap to set.  
   
- [in] `clrTransparent`  
+ [in] *clrTransparent*  
  An RGB value that specifies the transparent color of the bitmap.  
   
- [in] `bStretch`  
- If `TRUE`, the bitmap is stretched if it does not fit to the image bounding rectangle. Otherwise the bitmap is not stretched.  
+ [in] *bStretch*  
+ If TRUE, the bitmap is stretched if it does not fit to the image bounding rectangle. Otherwise the bitmap is not stretched.  
   
- [in] `bmpAlignment`  
+ [in] *bmpAlignment*  
  The alignment of the bitmap.  
   
 ### Remarks  
@@ -431,7 +431,7 @@ void SetBitmap(
   
  The previous bitmap is destroyed automatically. If the caption bar displays an icon because you called the [CMFCCaptionBar::SetIcon](#seticon) method, the bitmap will not be displayed unless you remove the icon by calling [CMFCCaptionBar::RemoveIcon](#removeicon).  
   
- The bitmap is aligned as specified by the `bmpAlignment` parameter.  This parameter can be one of the following `BarElementAlignment` values:  
+ The bitmap is aligned as specified by the *bmpAlignment* parameter.  This parameter can be one of the following `BarElementAlignment` values:  
   
 -   ALIGN_INVALID  
   
@@ -449,7 +449,7 @@ void SetBorderSize(int nSize);
 ```  
   
 ### Parameters  
- [in] `nSize`  
+ [in] *nSize*  
  The new size, in pixels, of the caption bar border.  
   
 ##  <a name="setbutton"></a>  CMFCCaptionBar::SetButton  
@@ -464,17 +464,17 @@ void SetButton(
 ```  
   
 ### Parameters  
- `lpszLabel`  
+ *lpszLabel*  
  The button's command label.  
   
- `uiCmdUI`  
+ *uiCmdUI*  
  The button's command ID.  
   
- `btnAlignmnet`  
+ *btnAlignmnet*  
  The button's alignment.  
   
- `bHasDropDownArrow`  
- `TRUE` if the button displays a drop down arrow, `FALSE` otherwise.  
+ *bHasDropDownArrow*  
+ TRUE if the button displays a drop down arrow, FALSE otherwise.  
   
 ##  <a name="setbuttonpressed"></a>  CMFCCaptionBar::SetButtonPressed  
  Specifies whether the button stays pressed.  
@@ -484,8 +484,8 @@ void SetButtonPressed(BOOL bPresed=TRUE);
 ```  
   
 ### Parameters  
- `bPresed`  
- `TRUE` if the button keeps its pressed state, `FALSE` otherwise.  
+ *bPresed*  
+ TRUE if the button keeps its pressed state, FALSE otherwise.  
   
 ##  <a name="setbuttontooltip"></a>  CMFCCaptionBar::SetButtonToolTip  
  Sets the tooltip for the button.  
@@ -497,10 +497,10 @@ void SetButtonToolTip(
 ```  
   
 ### Parameters  
- [in] `lpszToolTip`  
+ [in] *lpszToolTip*  
  The tooltip caption.  
   
- [in] `lpszDescription`  
+ [in] *lpszDescription*  
  The tooltip description.  
   
 ##  <a name="setflatborder"></a>  CMFCCaptionBar::SetFlatBorder  
@@ -511,8 +511,8 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 ```  
   
 ### Parameters  
- [in] `bFlat`  
- `TRUE` if the border of a caption bar is flat. `FALSE` if the border is 3D.  
+ [in] *bFlat*  
+ TRUE if the border of a caption bar is flat. FALSE if the border is 3D.  
   
 ##  <a name="seticon"></a>  CMFCCaptionBar::SetIcon  
  Sets the icon for a caption bar.  
@@ -524,16 +524,16 @@ void SetIcon(
 ```  
   
 ### Parameters  
- [in] `hIcon`  
+ [in] *hIcon*  
  The handle to the icon to set.  
   
- [in] `iconAlignment`  
+ [in] *iconAlignment*  
  The alignment of the icon.  
   
 ### Remarks  
  Caption bars can display either icons or bitmaps. See [CMFCCaptionBar::SetBitmap](#setbitmap) to find out how to display a bitmap. If you set both an icon and a bitmap, the icon is always displayed. Call [CMFCCaptionBar::RemoveIcon](#removeicon) to remove an icon from the caption bar.  
   
- The icon is aligned according to the `iconAlignment` parameter. It can be one of the following `BarElementAlignment` values:  
+ The icon is aligned according to the *iconAlignment* parameter. It can be one of the following `BarElementAlignment` values:  
   
 -   ALIGN_INVALID  
   
@@ -553,10 +553,10 @@ void SetImageToolTip(
 ```  
   
 ### Parameters  
- [in] `lpszToolTip`  
+ [in] *lpszToolTip*  
  The text of the tooltip.  
   
- [in] `lpszDescription`  
+ [in] *lpszDescription*  
  The tooltip description.  
   
 ##  <a name="setmargin"></a>  CMFCCaptionBar::SetMargin  
@@ -567,7 +567,7 @@ void SetMargin(int nMargin);
 ```  
   
 ### Parameters  
- [in] `nMargin`  
+ [in] *nMargin*  
  The distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control.  
   
 ##  <a name="settext"></a>  CMFCCaptionBar::SetText  
@@ -580,14 +580,14 @@ void SetText(
 ```  
   
 ### Parameters  
- [in] `strText`  
+ [in] *strText*  
  The text string to set.  
   
- [in] `textAlignment`  
+ [in] *textAlignment*  
  The text alignment.  
   
 ### Remarks  
- The text label is aligned as specified by the `textAlignment` parameter. It can be one of the following `BarElementAlignment` values:  
+ The text label is aligned as specified by the *textAlignment* parameter. It can be one of the following `BarElementAlignment` values:  
   
 -   ALIGN_INVALID  
   

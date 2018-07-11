@@ -27,10 +27,10 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### Parameters
 
-`left`
+*left*
  An object of type `hash_map`.
 
-`right`
+*right*
  An object of type `hash_map`.
 
 ### Return Value
@@ -96,10 +96,10 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### Parameters
 
-`left`
+*left*
  An object of type `hash_map`.
 
-`right`
+*right*
  An object of type `hash_map`.
 
 ### Return Value
@@ -163,10 +163,10 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### Parameters
 
-`left`
+*left*
  An object of type `hash_multimap`.
 
-`right`
+*right*
  An object of type `hash_multimap`.
 
 ### Return Value
@@ -230,10 +230,10 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### Parameters
 
-`left`
+*left*
  An object of type `hash_multimap`.
 
-`right`
+*right*
  An object of type `hash_multimap`.
 
 ### Return Value

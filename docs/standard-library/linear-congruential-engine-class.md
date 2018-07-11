@@ -44,16 +44,16 @@ class linear_congruential_engine{
 
 ### Parameters
 
-`UIntType`
+*UIntType*
  The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
-`A`
+*A*
  **Multiplier**. **Precondition**: See Remarks section.
 
-`C`
+*C*
  **Increment**. **Precondition**: See Remarks section.
 
-`M`
+*M*
  **Modulus**. **Precondition**: See remarks.
 
 ## Members
@@ -73,9 +73,9 @@ The `linear_congruential_engine` template class is the simplest generator engine
 
 This engine produces values of a user-specified unsigned integral type using the recurrence relation ( *period*) `x(i) = (A * x(i-1) + C) mod M`.
 
-If `M` is zero, the value used for this modulus operation is `numeric_limits<result_type>::max() + 1`. The engine's state is the last value returned, or the seed value if no call has been made to `operator()`.
+If *M* is zero, the value used for this modulus operation is `numeric_limits<result_type>::max() + 1`. The engine's state is the last value returned, or the seed value if no call has been made to `operator()`.
 
-If `M` is not zero, the values of the template arguments `A` and `C` must be less than `M`.
+If *M* is not zero, the values of the template arguments *A* and *C* must be less than *M*.
 
 Although you can construct a generator from this engine directly, you can also use one of these predefined typedefs.
 

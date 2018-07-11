@@ -32,25 +32,25 @@ Type accumulate(
 
 ### Parameters
 
-`first`
+*first*
  An input iterator addressing the first element in the range to be summed or combined according to a specified binary operation.
 
-`last`
+*last*
  An input iterator addressing the last element in the range to be summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
 
-`val`
+*val*
  An initial value to which each element is in turn added or combined with according to a specified binary operation.
 
-`binary_op`
+*binary_op*
  The binary operation that is to be applied to the each element in the specified range and the result of its previous applications.
 
 ### Return Value
 
-The sum of `val` and all the elements in the specified range for the first template function, or, for the second template function, the result of applying the binary operation specified, instead of the sum operation, to ( *PartialResult, \*Iter*), where *PartialResult* is the result of previous applications of the operation and `Iter` is an iterator pointing to an element in the range.
+The sum of *val* and all the elements in the specified range for the first template function, or, for the second template function, the result of applying the binary operation specified, instead of the sum operation, to ( *PartialResult, \*Iter*), where *PartialResult* is the result of previous applications of the operation and `Iter` is an iterator pointing to an element in the range.
 
 ### Remarks
 
-The initial value insures that there will be a well-defined result when the range is empty, in which case `val` is returned. The binary operation does not need to be associative or commutative. The result is initialized to the initial value `val` and then *result* = `binary_op` ( *result*, **\***`Iter`) is calculated iteratively through the range, where `Iter` is an iterator pointing to successive element in the range. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
+The initial value insures that there will be a well-defined result when the range is empty, in which case *val* is returned. The binary operation does not need to be associative or commutative. The result is initialized to the initial value *val* and then *result* = `binary_op` ( *result*, **\***`Iter`) is calculated iteratively through the range, where `Iter` is an iterator pointing to successive element in the range. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
 
 ### Example
 
@@ -172,16 +172,16 @@ OutputIterator adjacent_difference(
 
 ### Parameters
 
-`first`
+*first*
  An input iterator addressing the first element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
 
-`last`
+*last*
  An input iterator addressing the last element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
 
-`result`
+*result*
  An output iterator addressing the first element a destination range where the series of differences or the results of the specified operation is to be stored.
 
-`binary_op`
+*binary_op*
  The binary operation that is to be applied in the generalized operation replacing the operation of subtraction in the differencing procedure.
 
 ### Return Value
@@ -192,9 +192,9 @@ An output iterator addressing the end of the destination range: `result` + ( `la
 
 The output iterator _ *result* is allowed to be the same iterator as the input iterator * first,* so that `adjacent_difference`s may be computed in place.
 
-For a sequence of values *a*1, *a*2, *a*3, in an input range, the first template function stores successive **partial_difference**s *a*1, *a*2 - *a*1, a3 - *a*2, in the destination range.
+For a sequence of values *a*1, *a*2, *a*3, in an input range, the first template function stores successive `partial_difference`s *a*1, *a*2 - *a*1, a3 - *a*2, in the destination range.
 
-For a sequence of values *a*1, *a*2, *a*3, in an input range, the second template function stores successive **partial_difference**s *a*1, *a*2 `binary_op` *a*1, *a*3 `binary_op` *a*2, in the destination range.
+For a sequence of values *a*1, *a*2, *a*3, in an input range, the second template function stores successive `partial_difference`s *a*1, *a*2 `binary_op` *a*1, *a*3 `binary_op` *a*2, in the destination range.
 
 The binary operation `binary_op` is not required to be either associative or commutative, because the order of operations applies is completely specified.
 
@@ -283,16 +283,16 @@ Type inner_product(
 
 ### Parameters
 
-`first1`
+*first1*
  An input iterator addressing the first element in the first range whose inner product or generalized inner product with the second range is to be computed.
 
-`last1`
+*last1*
  An input iterator addressing the last element in the first range whose inner product or generalized inner product with the second range is to be computed.
 
-`first2`
+*first2*
  An input iterator addressing the first element in the second range whose inner product or generalized inner product with the first range is to be computed.
 
-`val`
+*val*
  An initial value to which the inner product or generalized inner product between the ranges is to be added.
 
 *binary_op1*
@@ -307,17 +307,17 @@ The first member function returns the sum of the element-wise products and adds 
 
 `val` + ( *a*1 \* *b*1 ) + ( *a*2 \* *b*2 ) + ... + ( *a*n \* *b*n )
 
-by iteratively replacing `val` with `val` + ( *a*i \* *b*i ).
+by iteratively replacing *val* with `val` + ( *a*i \* *b*i ).
 
 The second member function returns:
 
 `val` *binary_op1* ( *a*1 *binary_op2* *b*1 ) *binary_op1* ( *a*2 *binary_op2* *b*2 ) *binary_op1* ... *binary_op1* ( *a*n *binary_op2* *b*n )
 
-by iteratively replacing `val` with `val` *binary_op1* ( *a*i *binary_op2* *b*i ).
+by iteratively replacing *val* with `val` *binary_op1* ( *a*i *binary_op2* *b*i ).
 
 ### Remarks
 
-The initial value ensures that there will be a well-defined result when the range is empty, in which case `val` is returned. The binary operations do not need to be associative or commutative. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
+The initial value ensures that there will be a well-defined result when the range is empty, in which case *val* is returned. The binary operations do not need to be associative or commutative. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
 
 ### Example
 
@@ -411,7 +411,7 @@ int main()
 
 ## <a name="iota"></a>  iota
 
-Stores a starting value, beginning with the first element and filling with successive increments of that value ( ` value++`) in each of the elements in the interval `[ first,  last)`.
+Stores a starting value, beginning with the first element and filling with successive increments of that value (` value++`) in each of the elements in the interval `[ first,  last)`.
 
 ```cpp
 template <class ForwardIterator, class Type>
@@ -420,13 +420,13 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### Parameters
 
-`first`
+*first*
  An input iterator that addresses the first element in the range to be filled.
 
-`last`
+*last*
  An input iterator that addresses the last element in the range to be filled.
 
-`value`
+*value*
  The starting value to store in the first element and to successively increment for subsequent elements.
 
 ### Remarks
@@ -494,31 +494,31 @@ OutputIterator partial_sum(
 
 ### Parameters
 
-`first`
+*first*
  An input iterator addressing the first element in the range to be partially summed or combined according to a specified binary operation.
 
-`last`
+*last*
  An input iterator addressing the last element in the range to be partially summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
 
-`result`
+*result*
  An output iterator addressing the first element a destination range where the series of partial sums or the results of the specified operation is to be stored.
 
-`binary_op`
+*binary_op*
  The binary operation that is to be applied in the generalized operation replacing the operation of sum in the partial sum procedure.
 
 ### Return Value
 
-An output iterator addressing the end of the destination range: `result` + ( `last` - `first`),
+An output iterator addressing the end of the destination range: `result` + (`last` - `first`),
 
 ### Remarks
 
-The output iterator `result` is allowed to be the same iterator as the input iterator `first`, so that partial sums may be computed in place.
+The output iterator *result* is allowed to be the same iterator as the input iterator *first*, so that partial sums may be computed in place.
 
 For a sequence of values *a*1, *a*2, *a*3,  in an input range, the first template function stores successive partial sums in the destination range, where the *i*th element is given by (  ( ( *a*1 + *a*2) + *a*3) *a*i).
 
 For a sequence of values *a*1, *a*2, *a*3,  in an input range, the second template function stores successive partial sums in the destination range, where the ith element is given by (  ( ( *a*1 `binary_op` *a*2 ) `binary_op` *a*3 ) *a*i).
 
-The binary operation `binary_op` is not required to be either associative or commutative, because the order of operations applies is completely specified.
+The binary operation *binary_op* is not required to be either associative or commutative, because the order of operations applies is completely specified.
 
 ### Example
 

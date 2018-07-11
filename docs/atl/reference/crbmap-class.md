@@ -26,16 +26,16 @@ class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
 #### Parameters  
- `K`  
+ *K*  
  The key element type.  
   
  *V*  
  The value element type.  
   
- `KTraits`  
+ *KTraits*  
  The code used to copy or move key elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.  
   
- `VTraits`  
+ *VTraits*  
  The code used to copy or move value elements.  
   
 ## Members  
@@ -60,7 +60,7 @@ class CRBMap : public CRBTree<K, V, KTraits, VTraits>
   
  Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue).  
   
- The `KTraits` and `VTraits` parameters are traits classes that contain any supplemental code needed to copy or move elements.  
+ The *KTraits* and *VTraits* parameters are traits classes that contain any supplemental code needed to copy or move elements.  
   
  `CRBMap` is derived from [CRBTree](../../atl/reference/crbtree-class.md), which implements a binary tree using the Red-Black algorithm. [CRBMultiMap](../../atl/reference/crbmultimap-class.md) is a variation that allows multiple values for each key. It too is derived from `CRBTree`, and so shares many features with `CRBMap`.  
   
@@ -84,11 +84,11 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The block size.  
   
 ### Remarks  
- The `nBlockSize` parameter is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources. The default will allocate space for 10 elements at a time.  
+ The *nBlockSize* parameter is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources. The default will allocate space for 10 elements at a time.  
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
@@ -117,7 +117,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  Specifies the key that identifies the element to be looked up.  
   
  *value*  
@@ -140,7 +140,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key corresponding to the element pair you want to remove.  
   
 ### Return Value  
@@ -162,7 +162,7 @@ POSITION SetAt(
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key value to add to the `CRBMap` object.  
   
  *value*  

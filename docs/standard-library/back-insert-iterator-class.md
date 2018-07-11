@@ -25,7 +25,7 @@ class back_insert_iterator;
 
 ### Parameters
 
-`Container`
+*Container*
  The type of container into the back of which elements are to be inserted by a `back_insert_iterator`.
 
 ## Remarks
@@ -69,7 +69,7 @@ explicit back_insert_iterator(Container& _Cont);
 
 ### Parameters
 
-`_Cont`
+*_Cont*
  The container that the `back_insert_iterator` is to insert an element into.
 
 ### Return Value
@@ -310,7 +310,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 ### Parameters
 
-`val`
+*val*
  The value to be inserted into the container.
 
 ### Return Value

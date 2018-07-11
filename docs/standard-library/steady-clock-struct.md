@@ -48,7 +48,7 @@ A clock is *monotonic* if the value that is returned by a first call to `now` is
 
 |Name|Description|
 |----------|-----------------|
-|`steady_clock::is_steady`|Holds `true`. A `steady_clock` is *steady*.|
+|`steady_clock::is_steady`|Holds **true**. A `steady_clock` is *steady*.|
 
 ## Requirements
 

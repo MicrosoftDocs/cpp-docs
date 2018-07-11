@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # add_cv Class
 
-Makes const volatile type from type.
+Makes **const volatile** type from type.
 
 ## Syntax
 
@@ -33,7 +33,7 @@ The type to modify.
 
 ## Remarks
 
-An instance of the modified type `add_cv<T>` has a `type` member typedef equivalent to *T* modified by both [add_volatile](../standard-library/add-volatile-class.md) and [add_const](../standard-library/add-const-class.md), unless *T* already has the cv-qualifiers, is a reference, or is a function.
+An instance of the modified type `add_cv<T>` has a `type` member **typedef** equivalent to *T* modified by both [add_volatile](../standard-library/add-volatile-class.md) and [add_const](../standard-library/add-const-class.md), unless *T* already has the cv-qualifiers, is a reference, or is a function.
 
 The `add_cv_t<T>` helper type is a shortcut to access the `add_cv<T>` member typedef `type`.
 

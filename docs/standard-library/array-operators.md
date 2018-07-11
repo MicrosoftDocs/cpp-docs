@@ -9,7 +9,7 @@ ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
 ---
 # &lt;array&gt; operators
 
-The \<array> header includes these `array` non-member comparison template functions.
+The \<array> header includes these **array** non-member comparison template functions.
 
 ||||
 |-|-|-|
@@ -29,16 +29,16 @@ bool operator!=(
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of an element.
 
-`N`
+*N*
  The size of the array.
 
-`left`
+*left*
  Left container to compare.
 
-`right`
+*right*
  Right container to compare.
 
 ### Remarks
@@ -102,16 +102,16 @@ bool operator<(
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of an element.
 
-`N`
+*N*
  The size of the array.
 
-`left`
+*left*
  Left container to compare.
 
-`right`
+*right*
  Right container to compare.
 
 ### Remarks
@@ -176,16 +176,16 @@ bool operator<=(
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of an element.
 
-`N`
+*N*
  The size of the array.
 
-`left`
+*left*
  Left container to compare.
 
-`right`
+*right*
  Right container to compare.
 
 ### Remarks
@@ -250,16 +250,16 @@ bool operator==(
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of an element.
 
-`N`
+*N*
  The size of the array.
 
-`left`
+*left*
  Left container to compare.
 
-`right`
+*right*
  Right container to compare.
 
 ### Remarks
@@ -324,16 +324,16 @@ bool operator>(
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of an element.
 
-`N`
+*N*
  The size of the array.
 
-`left`
+*left*
  Left container to compare.
 
-`right`
+*right*
  Right container to compare.
 
 ### Remarks
@@ -398,16 +398,16 @@ bool operator>=(
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type of an element.
 
-`N`
+*N*
  The size of the array.
 
-`left`
+*left*
  Left container to compare.
 
-`right`
+*right*
  Right container to compare.
 
 ### Remarks

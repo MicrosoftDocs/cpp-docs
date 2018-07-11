@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Windows
 This family of articles covers window objects in the MFC framework. All MFC windows derive from class [CWnd](../mfc/reference/cwnd-class.md), including frame windows, views, dialog boxes, and controls.  
   
- The first group of articles describes [window objects](../mfc/window-objects.md) in general. Refer to this group for general information about C++ window objects, how they encapsulate an HWND, and how you use them when creating your own windows, such as child windows.  
+ The first group of articles describes [window objects](../mfc/window-objects.md) in general. Refer to this group for general information about C++ window objects, how they encapsulate an `HWND`, and how you use them when creating your own windows, such as child windows.  
   
  The second group of articles describes [frame windows](../mfc/frame-windows.md)—windows that put a frame around content — in particular. Refer to this group for information about how the MFC framework manages frame windows and the contents that they frame, including control bars and views.  
   

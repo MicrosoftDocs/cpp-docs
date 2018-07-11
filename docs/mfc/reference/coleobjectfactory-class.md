@@ -96,29 +96,29 @@ COleObjectFactory(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  Reference to the OLE class ID this object factory represents.  
   
- `pRuntimeClass`  
+ *pRuntimeClass*  
  Pointer to the run-time class of the C++ objects this factory can create.  
   
- `bMultiInstance`  
- Indicates whether a single instance of the application can support multiple instantiations. If **TRUE**, multiple instances of the application are launched for each request to create an object.  
+ *bMultiInstance*  
+ Indicates whether a single instance of the application can support multiple instantiations. If TRUE, multiple instances of the application are launched for each request to create an object.  
   
- `nFlags`  
+ *nFlags*  
  Contains one or more of the following flags:  
   
-- **afxRegDefault** Sets the threading model to ThreadingModel=Apartment.  
+- `afxRegDefault` Sets the threading model to ThreadingModel=Apartment.  
   
-- **afxRegInsertable** Allows the control to appear in the **Insert Object** dialog box for OLE objects.  
+- `afxRegInsertable` Allows the control to appear in the **Insert Object** dialog box for OLE objects.  
   
 - `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.  
   
-- **afxRegFreeThreading** Sets the threading model in the registry to ThreadingModel=Free.  
+- `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
   
      You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.  
   
- `lpszProgID`  
+ *lpszProgID*  
  Pointer to a string containing a verbal program identifier, such as "Microsoft Excel."  
   
 ### Remarks  
@@ -140,7 +140,7 @@ REFCLSID GetClassID() const;
  For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
   
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
- Requests a unique license key from the control's DLL and stores it in the `BSTR` pointed to by `pbstrKey`.  
+ Requests a unique license key from the control's DLL and stores it in the BSTR pointed to by *pbstrKey*.  
   
 ```  
 virtual BOOL GetLicenseKey(
@@ -149,17 +149,17 @@ virtual BOOL GetLicenseKey(
 ```  
   
 ### Parameters  
- `dwReserved`  
+ *dwReserved*  
  Reserved for future use.  
   
- `pbstrKey`  
- Pointer to a `BSTR` that will store the license key.  
+ *pbstrKey*  
+ Pointer to a BSTR that will store the license key.  
   
 ### Return Value  
- Nonzero if the license-key string is not **NULL**; otherwise 0.  
+ Nonzero if the license-key string is not NULL; otherwise 0.  
   
 ### Remarks  
- The default implementation of this function returns 0 and stores nothing in the `BSTR`. If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override that retrieves the control's license key.  
+ The default implementation of this function returns 0 and stores nothing in the BSTR. If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override that retrieves the control's license key.  
   
 ##  <a name="islicensevalid"></a>  COleObjectFactory::IsLicenseValid  
  Determines if the license of the control is valid.  
@@ -255,13 +255,14 @@ static BOOL PASCAL UnregisterAll();
   
 ```  
 void UpdateRegistry(LPCTSTR lpszProgID = NULL);  
-virtual BOOL UpdateRegistry(BOOL bRegister);```  
+virtual BOOL UpdateRegistry(BOOL bRegister);
+```  
   
 ### Parameters  
- `lpszProgID`  
+ *lpszProgID*  
  Pointer to a string containing the human-readable program identifier, such as "Excel.Document.5."  
   
- `bRegister`  
+ *bRegister*  
  Determines whether the control class's object factory is to be registered.  
   
 ### Remarks  
@@ -269,7 +270,7 @@ virtual BOOL UpdateRegistry(BOOL bRegister);```
   
 - **UpdateRegistry(** `lpszProgID` **)** Registers this object factory with the OLE system registry. This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) when the application is launched.  
   
-- **UpdateRegistry(** `bRegister` **)** This form of the function is overridable. If `bRegister` is **TRUE**, this function registers the control class with the system registry. Otherwise, it unregisters the class.  
+- **UpdateRegistry(** `bRegister` **)** This form of the function is overridable. If *bRegister* is TRUE, this function registers the control class with the system registry. Otherwise, it unregisters the class.  
   
      If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override to this pure virtual function.  
   
@@ -281,7 +282,7 @@ static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
 ```  
   
 ### Parameters  
- `bRegister`  
+ *bRegister*  
  Determines whether the control class's object factory is to be registered.  
   
 ### Return Value  
@@ -298,14 +299,14 @@ virtual BOOL VerifyLicenseKey(BSTR bstrKey);
 ```  
   
 ### Parameters  
- `bstrKey`  
- A `BSTR` storing the container's version of the license string.  
+ *bstrKey*  
+ A BSTR storing the container's version of the license string.  
   
 ### Return Value  
  Nonzero if the run-time license is valid; otherwise 0.  
   
 ### Remarks  
- The default version calls [GetLicenseKey](#getlicensekey) to get a copy of the control's license string and compares it with the string in `bstrKey`. If the two strings match, the function returns a nonzero value; otherwise it returns 0.  
+ The default version calls [GetLicenseKey](#getlicensekey) to get a copy of the control's license string and compares it with the string in *bstrKey*. If the two strings match, the function returns a nonzero value; otherwise it returns 0.  
   
  You can override this function to provide customized verification of the license.  
   

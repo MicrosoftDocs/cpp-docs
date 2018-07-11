@@ -73,7 +73,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  
@@ -92,14 +92,14 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 ```  
   
 ### Parameters  
- `hHeap`  
+ *hHeap*  
  An existing heap handle.  
   
- `bTakeOwnership`  
+ *bTakeOwnership*  
  A flag indicating if the `CWin32Heap` object is to take ownership over the resources of the heap.  
   
 ### Remarks  
- If `bTakeOwnership` is TRUE, the `CWin32Heap` object is responsible for deleting the heap handle.  
+ If *bTakeOwnership* is TRUE, the `CWin32Heap` object is responsible for deleting the heap handle.  
   
 ##  <a name="cwin32heap"></a>  CWin32Heap::CWin32Heap  
  The constructor.  
@@ -114,16 +114,16 @@ CWin32Heap(
 ```  
   
 ### Parameters  
- `hHeap`  
+ *hHeap*  
  An existing heap object.  
   
- `dwFlags`  
+ *dwFlags*  
  Flags used in creating the heap.  
   
  *nInitialSize*  
  The initial size of the heap.  
   
- `nMaxSize`  
+ *nMaxSize*  
  The maximum size of the heap.  
   
 ### Remarks  
@@ -139,7 +139,7 @@ CWin32Heap(
   
  [!code-cpp[NVC_ATL_Utilities#93](../../atl/codesnippet/cpp/cwin32heap-class_2.cpp)]  
   
- The parameter **HEAP_NO_SERIALIZE** specifies that mutual exclusion will not be used when the heap functions allocate and free memory, with an according increase in performance.  
+ The parameter HEAP_NO_SERIALIZE specifies that mutual exclusion will not be used when the heap functions allocate and free memory, with an according increase in performance.  
   
  The third parameter defaults to 0, which allows the heap to grow as required. See [HeapCreate](http://msdn.microsoft.com/library/windows/desktop/aa366599\(v=vs.85\).aspx) for an explanation of the memory sizes and flags.  
   
@@ -171,7 +171,7 @@ virtual void Free(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to the block of memory to free. NULL is a valid value and does nothing.  
   
 ##  <a name="getsize"></a>  CWin32Heap::GetSize  
@@ -182,7 +182,7 @@ virtual size_t GetSize(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to the memory block whose size the method will obtain. This is a pointer returned by [CWin32Heap::Allocate](#allocate) or [CWin32Heap::Reallocate](#reallocate).  
   
 ### Return Value  
@@ -213,17 +213,17 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to the block of memory to reallocate.  
   
- `nBytes`  
+ *nBytes*  
  The new size in bytes of the allocated block. The block can be made larger or smaller.  
   
 ### Return Value  
  Returns a pointer to the newly allocated memory block.  
   
 ### Remarks  
- If `p` is NULL, it's assumed that the memory block has not yet been allocated and [CWin32Heap::Allocate](#allocate) is called, with an argument of `nBytes`.  
+ If *p* is NULL, it's assumed that the memory block has not yet been allocated and [CWin32Heap::Allocate](#allocate) is called, with an argument of *nBytes*.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   

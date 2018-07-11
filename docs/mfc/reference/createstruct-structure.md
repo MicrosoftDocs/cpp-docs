@@ -35,40 +35,40 @@ typedef struct tagCREATESTRUCT {
 ```  
   
 #### Parameters  
- `lpCreateParams`  
+ *lpCreateParams*  
  Points to data to be used to create the window.  
   
- `hInstance`  
+ *hInstance*  
  Identifies the module-instance handle of the module that owns the new window.  
   
- `hMenu`  
+ *hMenu*  
  Identifies the menu to be used by the new window. If a child window, contains the integer ID.  
   
- `hwndParent`  
- Identifies the window that owns the new window. This member is **NULL** if the new window is a top-level window.  
+ *hwndParent*  
+ Identifies the window that owns the new window. This member is NULL if the new window is a top-level window.  
   
- `cy`  
+ *cy*  
  Specifies the height of the new window.  
   
- `cx`  
+ *cx*  
  Specifies the width of the new window.  
   
- `y`  
+ *y*  
  Specifies the y-coordinate of the upper left corner of the new window. Coordinates are relative to the parent window if the new window is a child window; otherwise coordinates are relative to the screen origin.  
   
- `x`  
+ *x*  
  Specifies the x-coordinate of the upper left corner of the new window. Coordinates are relative to the parent window if the new window is a child window; otherwise coordinates are relative to the screen origin.  
   
- `style`  
+ *style*  
  Specifies the new window's [style](../../mfc/reference/styles-used-by-mfc.md).  
   
- `lpszName`  
+ *lpszName*  
  Points to a null-terminated string that specifies the new window's name.  
   
- `lpszClass`  
+ *lpszClass*  
  Points to a null-terminated string that specifies the new window's Windows class name (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure; for more information, see the Windows SDK).  
   
- `dwExStyle`  
+ *dwExStyle*  
  Specifies the [extended style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) for the new window.  
   
 ## Requirements  

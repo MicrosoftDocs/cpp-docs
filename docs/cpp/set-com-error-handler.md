@@ -28,13 +28,13 @@ void __stdcall _set_com_error_handler(
 ```  
   
 #### Parameters  
- `pHandler`  
+ *pHandler*  
  Pointer to the replacement function.  
   
- `hr`  
- `HRESULT` information.  
+ *hr*  
+ HRESULT information.  
   
- `perrinfo`  
+ *perrinfo*  
  `IErrorInfo` object.  
   
 ## Remarks  

@@ -22,7 +22,7 @@ This article demonstrates the syntax and structural elements of lambda expressio
  The following examples compare the use of a lambda to the use of a function object. The first example uses a lambda to print to the console whether each element in a `vector` object is even or odd. The second example uses a function object to accomplish the same task.  
   
 ## Example 1: Using a Lambda  
- This example passes a lambda to the `for_each` function. The lambda prints a result that states whether each element in a `vector` object is even or odd.  
+ This example passes a lambda to the **for_each** function. The lambda prints a result that states whether each element in a `vector` object is even or odd.  
   
 ### Code  
   
@@ -78,12 +78,12 @@ There are 4 even numbers in the vector.
 ```  
   
 ### Comments  
- In the example, the third argument to the `for_each` function is a lambda. The `[&evenCount]` part specifies the capture clause of the expression, `(int n)` specifies the parameter list, and remaining part specifies the body of the expression.  
+ In the example, the third argument to the **for_each** function is a lambda. The `[&evenCount]` part specifies the capture clause of the expression, `(int n)` specifies the parameter list, and remaining part specifies the body of the expression.  
   
 ## Example 2: Using a Function Object  
- Sometimes a lambda would be too unwieldy to extend much further than the previous example. The next example uses a function object instead of a lambda, together with the `for_each` function, to produce the same results as Example 1. Both examples store the count of even numbers in a `vector` object. To maintain the state of the operation, the `FunctorClass` class stores the `m_evenCount` variable by reference as a member variable. To perform the operation, `FunctorClass` implements the function-call operator, `operator()`. The Visual C++ compiler generates code that is comparable in size and performance to the lambda code in Example 1. For a basic problem like the one in this article, the simpler lambda design is probably better than the function-object design. However, if you think that the functionality might require significant expansion in the future, then use a function object design so that code maintenance will be easier.  
+ Sometimes a lambda would be too unwieldy to extend much further than the previous example. The next example uses a function object instead of a lambda, together with the **for_each** function, to produce the same results as Example 1. Both examples store the count of even numbers in a `vector` object. To maintain the state of the operation, the `FunctorClass` class stores the `m_evenCount` variable by reference as a member variable. To perform the operation, `FunctorClass` implements the function-call operator, `operator()`. The Visual C++ compiler generates code that is comparable in size and performance to the lambda code in Example 1. For a basic problem like the one in this article, the simpler lambda design is probably better than the function-object design. However, if you think that the functionality might require significant expansion in the future, then use a function object design so that code maintenance will be easier.  
   
- For more information about the `operator()`, see [Function Call](../cpp/function-call-cpp.md). For more information about the `for_each` function, see [for_each](../standard-library/algorithm-functions.md#for_each).  
+ For more information about the `operator()`, see [Function Call](../cpp/function-call-cpp.md). For more information about the **for_each** function, see [for_each](../standard-library/algorithm-functions.md#for_each).  
   
 ### Code  
   

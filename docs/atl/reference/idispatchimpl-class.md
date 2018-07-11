@@ -31,23 +31,23 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 ```  
   
 #### Parameters  
- [in] `T`  
+ [in] *T*  
  A dual interface.  
   
- [in] `piid`  
- A pointer to the IID of `T`.  
+ [in] *piid*  
+ A pointer to the IID of *T*.  
   
- [in] `plibid`  
+ [in] *plibid*  
  A pointer to the LIBID of the type library that contains information about the interface. By default, the server-level type library is passed.  
   
- [in] `wMajor`  
+ [in] *wMajor*  
  The major version of the type library. By default, the value is 1.  
   
- [in] `wMinor`  
+ [in] *wMinor*  
  The minor version of the type library. By default, the value is 0.  
   
- [in] `tihclass`  
- The class used to manage the type information for `T`. By default, the value is `CComTypeInfoHolder`.  
+ [in] *tihclass*  
+ The class used to manage the type information for *T*. By default, the value is `CComTypeInfoHolder`.  
   
 ## Members  
   
@@ -73,7 +73,7 @@ class ATL_NO_VTABLE IDispatchImpl : public T
   
  [!code-cpp[NVC_ATL_COM#47](../../atl/codesnippet/cpp/idispatchimpl-class_1.h)]  
   
- By default, the `IDispatchImpl` class looks up the type information for `T` in the registry. To implement an unregistered interface, you can use the `IDispatchImpl` class without accessing the registry by using a predefined version number. If you create an `IDispatchImpl` object that has 0xFFFF as the value for `wMajor` and 0xFFFF as the value for `wMinor`, the `IDispatchImpl` class retrieves the type library from the .dll file instead of the registry.  
+ By default, the `IDispatchImpl` class looks up the type information for *T* in the registry. To implement an unregistered interface, you can use the `IDispatchImpl` class without accessing the registry by using a predefined version number. If you create an `IDispatchImpl` object that has 0xFFFF as the value for *wMajor* and 0xFFFF as the value for *wMinor*, the `IDispatchImpl` class retrieves the type library from the .dll file instead of the registry.  
   
  `IDispatchImpl` contains a static member of type `CComTypeInfoHolder` that manages the type information for the dual interface. If you have multiple objects that implement the same dual interface, only one instance of `CComTypeInfoHolder` is used.  
   
@@ -98,7 +98,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
+ See [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo  
  Retrieves the type information for the dual interface.  
@@ -111,7 +111,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
+ See [IDispatch::GetTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.  
   
 ##  <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount  
  Determines whether there is type information available for the dual interface.  
@@ -124,7 +124,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
  See `IDispatch::GetTypeInfoCount` in the Windows SDK.  
   
 ##  <a name="idispatchimpl"></a>  IDispatchImpl::IDispatchImpl  
- The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls **Release**.  
+ The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls `Release`.  
   
 ```
 IDispatchImpl();
@@ -146,7 +146,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### Remarks  
- See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) in the Windows SDK.  
+ See [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

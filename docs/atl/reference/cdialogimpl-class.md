@@ -29,7 +29,7 @@ template <class T,
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `CDialogImpl`.  
   
  *TBase*  
@@ -52,7 +52,7 @@ template <class T,
 |-|-|  
 |[GetDialogProc](#getdialogproc)|Returns the current dialog box procedure.|  
 |[MapDialogRect](#mapdialogrect)|Maps the dialog-box units of the specified rectangle to screen units (pixels).|  
-|[OnFinalMessage](#onfinalmessage)|Called after receiving the last message, typically `WM_NCDESTROY`.|  
+|[OnFinalMessage](#onfinalmessage)|Called after receiving the last message, typically WM_NCDESTROY.|  
   
 ### Static Functions  
   
@@ -64,12 +64,12 @@ template <class T,
 ## Remarks  
  With `CDialogImpl` you can create a modal or modeless dialog box. `CDialogImpl` provides the dialog box procedure, which uses the default message map to direct messages to the appropriate handlers.  
   
- The base class destructor **~CWindowImplRoot** ensures that the window is gone before destroying the object.  
+ The base class destructor `~CWindowImplRoot` ensures that the window is gone before destroying the object.  
   
- `CDialogImpl` derives from **CDialogImplBaseT**, which in turn derives from **CWindowImplRoot**.  
+ `CDialogImpl` derives from `CDialogImplBaseT`, which in turn derives from `CWindowImplRoot`.  
   
 > [!NOTE]
->  Your class must define an **IDD** member that specifies the dialog template resource ID. For example, the ATL Project Wizard automatically adds the following line to your class:  
+>  Your class must define an `IDD` member that specifies the dialog template resource ID. For example, the ATL Project Wizard automatically adds the following line to your class:  
   
  [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/cpp/cdialogimpl-class_1.h)]  
   
@@ -100,14 +100,14 @@ HWND Create(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  [in] The handle to the owner window.  
   
- **RECT&** `rect`  
+ **RECT&** *rect*  
  [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.  
   
- `dwInitParam`  
- [in] Specifies the value to pass to the dialog box in the **lParam** parameter of the **WM_INITDIALOG** message.  
+ *dwInitParam*  
+ [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
  The handle to the newly created dialog box.  
@@ -126,10 +126,10 @@ BOOL DestroyWindow();
 ```  
   
 ### Return Value  
- **TRUE** if the dialog box was successfully destroyed; otherwise **FALSE**.  
+ TRUE if the dialog box was successfully destroyed; otherwise FALSE.  
   
 ### Remarks  
- Returns **TRUE** if the dialog box was successfully destroyed; otherwise **FALSE**.  
+ Returns TRUE if the dialog box was successfully destroyed; otherwise FALSE.  
   
 ##  <a name="dialogproc"></a>  CDialogImpl::DialogProc  
  This static function implements the dialog box procedure.  
@@ -146,20 +146,20 @@ static LRESULT CALLBACK DialogProc(
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] The handle to the dialog box.  
   
- `uMsg`  
+ *uMsg*  
  [in] The message sent to the dialog box.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
 ### Return Value  
- **TRUE** if the message is processed; otherwise, **FALSE**.  
+ TRUE if the message is processed; otherwise, FALSE.  
   
 ### Remarks  
  `DialogProc` uses the default message map to direct messages to the appropriate handlers.  
@@ -176,14 +176,14 @@ INT_PTR DoModal(
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.  
   
- `dwInitParam`  
- [in] Specifies the value to pass to the dialog box in the **lParam** parameter of the **WM_INITDIALOG** message.  
+ *dwInitParam*  
+ [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
- If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](#enddialog). Otherwise, -1.  
+ If successful, the value of the *nRetCode* parameter specified in the call to [EndDialog](#enddialog). Otherwise, -1.  
   
 ### Remarks  
  This dialog box is automatically attached to the `CDialogImpl` object.  
@@ -198,14 +198,14 @@ BOOL EndDialog(int nRetCode);
 ```  
   
 ### Parameters  
- `nRetCode`  
+ *nRetCode*  
  [in] The value to be returned by [CDialogImpl::DoModal](#domodal).  
   
 ### Return Value  
- **TRUE** if the dialog box is destroyed; otherwise, **FALSE**.  
+ TRUE if the dialog box is destroyed; otherwise, FALSE.  
   
 ### Remarks  
- `EndDialog` must be called through the dialog procedure. After the dialog box is destroyed, Windows uses the value of `nRetCode` as the return value for `DoModal`, which created the dialog box.  
+ `EndDialog` must be called through the dialog procedure. After the dialog box is destroyed, Windows uses the value of *nRetCode* as the return value for `DoModal`, which created the dialog box.  
   
 > [!NOTE]
 >  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#destroywindow) instead.  
@@ -231,7 +231,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure1.md) structure that is to receive the client coordinates of the update that encloses the update region.  
   
 ### Return Value  
@@ -248,11 +248,11 @@ virtual void OnFinalMessage(HWND hWnd);
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] A handle to the window being destroyed.  
   
 ### Remarks  
- Note that if you want to automatically delete your object upon the window destruction, you can call `delete this;` here.  
+ Note that if you want to automatically delete your object upon the window destruction, you can call **delete this;** here.  
   
 ##  <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc  
  Called only once, when the first message is received, to process messages sent to the dialog box.  
@@ -266,16 +266,16 @@ static LRESULT CALLBACK StartDialogProc(
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] The handle to the dialog box.  
   
- `uMsg`  
+ *uMsg*  
  [in] The message sent to the dialog box.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
 ### Return Value  

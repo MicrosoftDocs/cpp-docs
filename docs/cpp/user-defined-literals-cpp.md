@@ -94,7 +94,7 @@ int main(int argc, char* argv[])
 }  
 ```  
   
- Note that the literal number must use a decimal, otherwise the number would be interpreted as an integer and the type would not be compatible with the operator. Also note that for floating point input, the type must be `long double`, and for integral types it must be `long long`.  
+ Note that the literal number must use a decimal, otherwise the number would be interpreted as an integer and the type would not be compatible with the operator. Also note that for floating point input, the type must be **long double**, and for integral types it must be **long long**.  
   
 ## Raw literals  
  In a raw user-defined literal, the operator that you define accepts the literal as a sequence of char values and it is up to you to interpret that sequence as a number or string or other type. In the list of operators shown earlier in this page, `_r` and `_t` can be used to define raw literals:  

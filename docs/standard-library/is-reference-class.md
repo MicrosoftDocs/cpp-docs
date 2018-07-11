@@ -25,12 +25,12 @@ struct is_reference;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a reference to an object or to a function, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a reference to an object or to a function, otherwise it holds false.
 
 ## Example
 

@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _com_error Member Functions
-For information about the **_com_error** member functions, see [_com_error Class](../cpp/com-error-class.md).  
+For information about the `_com_error` member functions, see [_com_error Class](../cpp/com-error-class.md).  
   
 ## See Also  
  [_com_error Class](../cpp/com-error-class.md)

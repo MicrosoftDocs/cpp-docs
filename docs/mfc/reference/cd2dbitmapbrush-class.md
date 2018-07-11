@@ -95,7 +95,7 @@ void Attach(ID2D1BitmapBrush* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dbitmapbrush"></a>  CD2DBitmapBrush::CD2DBitmapBrush  
@@ -129,28 +129,28 @@ CD2DBitmapBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `pBitmapBrushProperties`  
+ *pBitmapBrushProperties*  
  A pointer to the extend modes and the interpolation mode of a bitmap brush.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
- `uiResID`  
+ *uiResID*  
  The resource ID number of the resource.  
   
- `lpszType`  
+ *lpszType*  
  Pointer to a null-terminated string that contains the resource type.  
   
- `sizeDest`  
+ *sizeDest*  
  Destination size of the bitmap.  
   
- `lpszImagePath`  
+ *lpszImagePath*  
  Pointer to a null-terminated string that contains the name of file.  
   
 ##  <a name="commoninit"></a>  CD2DBitmapBrush::CommonInit  
@@ -161,7 +161,7 @@ void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 ```  
   
 ### Parameters  
- `pBitmapBrushProperties`  
+ *pBitmapBrushProperties*  
  A pointer to the bitmap brush properties.  
   
 ##  <a name="create"></a>  CD2DBitmapBrush::Create  
@@ -172,7 +172,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -284,7 +284,7 @@ void SetBitmap(CD2DBitmap* pBitmap);
 ```  
   
 ### Parameters  
- `pBitmap`  
+ *pBitmap*  
  The bitmap source used by the brush  
   
 ##  <a name="setextendmodex"></a>  CD2DBitmapBrush::SetExtendModeX  
@@ -295,7 +295,7 @@ void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 ```  
   
 ### Parameters  
- `extendModeX`  
+ *extendModeX*  
  A value that specifies how the brush horizontally tiles those areas that extend past its bitmap  
   
 ##  <a name="setextendmodey"></a>  CD2DBitmapBrush::SetExtendModeY  
@@ -306,7 +306,7 @@ void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 ```  
   
 ### Parameters  
- `extendModeY`  
+ *extendModeY*  
  A value that specifies how the brush vertically tiles those areas that extend past its bitmap  
   
 ##  <a name="setinterpolationmode"></a>  CD2DBitmapBrush::SetInterpolationMode  
@@ -317,7 +317,7 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 ```  
   
 ### Parameters  
- `interpolationMode`  
+ *interpolationMode*  
  The interpolation mode used when the brush bitmap is scaled or rotated  
   
 ## See Also  

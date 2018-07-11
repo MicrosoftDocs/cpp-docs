@@ -71,7 +71,7 @@ class CWinThread : public CCmdTarget
   
  There are two general types of threads that `CWinThread` supports: worker threads and user-interface threads. Worker threads have no message pump: for example, a thread that performs background calculations in a spreadsheet application. User-interface threads have a message pump and process messages received from the system. [CWinApp](../../mfc/reference/cwinapp-class.md) and classes derived from it are examples of user-interface threads. Other user-interface threads can also be derived directly from `CWinThread`.  
   
- Objects of class `CWinThread` typically exist for the duration of the thread. If you wish to modify this behavior, set [m_bAutoDelete](#m_bautodelete) to **FALSE**.  
+ Objects of class `CWinThread` typically exist for the duration of the thread. If you wish to modify this behavior, set [m_bAutoDelete](#m_bautodelete) to FALSE.  
   
  The `CWinThread` class is necessary to make your code and MFC fully thread-safe. Thread-local data used by the framework to maintain thread-specific information is managed by `CWinThread` objects. Because of this dependence on `CWinThread` to handle thread-local data, any thread that uses MFC must be created by MFC. For example, a thread created by the run-time function [_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) cannot use any MFC APIs.  
   
@@ -102,17 +102,17 @@ BOOL CreateThread(
 ```  
   
 ### Parameters  
- `dwCreateFlags`  
+ *dwCreateFlags*  
  Specifies an additional flag that controls the creation of the thread. This flag can contain one of two values:  
   
-- **CREATE_SUSPENDED** Start the thread with a suspend count of one. Use **CREATE_SUSPENDED** if you want to initialize any member data of the `CWinThread` object, such as [m_bAutoDelete](#m_bautodelete) or any members of your derived class, before the thread starts running. Once your initialization is complete, use the [CWinThread::ResumeThread](#resumethread) to start the thread running. The thread will not execute until `CWinThread::ResumeThread` is called.  
+- CREATE_SUSPENDED Start the thread with a suspend count of one. Use CREATE_SUSPENDED if you want to initialize any member data of the `CWinThread` object, such as [m_bAutoDelete](#m_bautodelete) or any members of your derived class, before the thread starts running. Once your initialization is complete, use the [CWinThread::ResumeThread](#resumethread) to start the thread running. The thread will not execute until `CWinThread::ResumeThread` is called.  
   
 - **0** Start the thread immediately after creation.  
   
- `nStackSize`  
+ *nStackSize*  
  Specifies the size in bytes of the stack for the new thread. If **0**, the stack size defaults to the same size as that of the process's primary thread.  
   
- `lpSecurityAttrs`  
+ *lpSecurityAttrs*  
  Points to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread.  
   
 ### Return Value  
@@ -142,9 +142,9 @@ virtual int ExitInstance();
  The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190).  
   
 ### Remarks  
- Do not call this member function from anywhere but within the **Run** member function. This member function is used only in user-interface threads.  
+ Do not call this member function from anywhere but within the `Run` member function. This member function is used only in user-interface threads.  
   
- The default implementation of this function deletes the `CWinThread` object if [m_bAutoDelete](#m_bautodelete) is **TRUE**. Override this function if you wish to perform additional clean-up when your thread terminates. Your implementation of `ExitInstance` should call the base class's version after your code is executed.  
+ The default implementation of this function deletes the `CWinThread` object if [m_bAutoDelete](#m_bautodelete) is TRUE. Override this function if you wish to perform additional clean-up when your thread terminates. Your implementation of `ExitInstance` should call the base class's version after your code is executed.  
   
 ##  <a name="getmainwnd"></a>  CWinThread::GetMainWnd  
  If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application instead of directly referring to the `m_pMainWnd` member of the application object.  
@@ -175,19 +175,19 @@ int GetThreadPriority();
 ### Return Value  
  The current thread priority level within its priority class. The value returned will be one of the following, listed from highest priority to lowest:  
   
-- **THREAD_PRIORITY_TIME_CRITICAL**  
+- THREAD_PRIORITY_TIME_CRITICAL  
   
-- **THREAD_PRIORITY_HIGHEST**  
+- THREAD_PRIORITY_HIGHEST  
   
-- **THREAD_PRIORITY_ABOVE_NORMAL**  
+- THREAD_PRIORITY_ABOVE_NORMAL  
   
-- **THREAD_PRIORITY_NORMAL**  
+- THREAD_PRIORITY_NORMAL  
   
-- **THREAD_PRIORITY_BELOW_NORMAL**  
+- THREAD_PRIORITY_BELOW_NORMAL  
   
-- **THREAD_PRIORITY_LOWEST**  
+- THREAD_PRIORITY_LOWEST  
   
-- **THREAD_PRIORITY_IDLE**  
+- THREAD_PRIORITY_IDLE  
   
  For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   
@@ -207,27 +207,27 @@ virtual BOOL InitInstance();
  This member function is used only in user-interface threads. Perform initialization of worker threads in the controlling function passed to [AfxBeginThread](application-information-and-management.md#afxbeginthread).  
   
 ##  <a name="isidlemessage"></a>  CWinThread::IsIdleMessage  
- Override this function to keep **OnIdle** from being called after specific messages are generated.  
+ Override this function to keep `OnIdle` from being called after specific messages are generated.  
   
 ```  
 virtual BOOL IsIdleMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- `pMsg`  
+ *pMsg*  
  Points to the current message being processed.  
   
 ### Return Value  
  Nonzero if `OnIdle` should be called after processing message; otherwise 0.  
   
 ### Remarks  
- The default implementation does not call **OnIdle** after redundant mouse messages and messages generated by blinking carets.  
+ The default implementation does not call `OnIdle` after redundant mouse messages and messages generated by blinking carets.  
   
- If an application has created a short timer, **OnIdle** will be called frequently, causing performance problems. To improve such an application's performance, override `IsIdleMessage` in the application's `CWinApp`-derived class to check for `WM_TIMER` messages as follows:  
+ If an application has created a short timer, `OnIdle` will be called frequently, causing performance problems. To improve such an application's performance, override `IsIdleMessage` in the application's `CWinApp`-derived class to check for WM_TIMER messages as follows:  
   
  [!code-cpp[NVC_MFCDocView#189](../../mfc/codesnippet/cpp/cwinthread-class_1.cpp)]  
   
- Handling `WM_TIMER` in this fashion will improve performance of applications that use short timers.  
+ Handling WM_TIMER in this fashion will improve performance of applications that use short timers.  
   
 ##  <a name="m_bautodelete"></a>  CWinThread::m_bAutoDelete  
  Specifies whether the `CWinThread` object should be automatically deleted at thread termination.  
@@ -237,7 +237,7 @@ BOOL m_bAutoDelete;
 ```  
   
 ### Remarks  
- The `m_bAutoDelete` data member is a public variable of type **BOOL**.  
+ The `m_bAutoDelete` data member is a public variable of type BOOL.  
   
  The value of `m_bAutoDelete` does not affect how the underlying thread handle is closed. The thread handle is always closed when the `CWinThread` object is destroyed.  
   
@@ -249,7 +249,7 @@ HANDLE m_hThread;
 ```  
   
 ### Remarks  
- The `m_hThread` data member is a public variable of type `HANDLE`. It is only valid if underlying thread currently exists.  
+ The `m_hThread` data member is a public variable of type HANDLE. It is only valid if underlying thread currently exists.  
   
 ##  <a name="m_nthreadid"></a>  CWinThread::m_nThreadID  
  ID of the thread attached to this `CWinThread`.  
@@ -259,7 +259,7 @@ DWORD m_nThreadID;
 ```  
   
 ### Remarks  
- The **m_nThreadID** data member is a public variable of type `DWORD`. It is only valid if underlying thread currently exists.  
+ The `m_nThreadID` data member is a public variable of type DWORD. It is only valid if underlying thread currently exists.  
   
 ### Example  
   See the example for [AfxGetThread](application-information-and-management.md#afxgetthread).  
@@ -272,7 +272,7 @@ CWnd* m_pActiveWnd;
 ```  
   
 ### Remarks  
- The Microsoft Foundation Class Library will automatically terminate your thread when the window referred to by `m_pActiveWnd` is closed. If this thread is the primary thread for an application, the application will also be terminated. If this data member is **NULL**, the active window for the application's `CWinApp` object will be inherited. `m_pActiveWnd` is a public variable of type **CWnd\***.  
+ The Microsoft Foundation Class Library will automatically terminate your thread when the window referred to by `m_pActiveWnd` is closed. If this thread is the primary thread for an application, the application will also be terminated. If this data member is NULL, the active window for the application's `CWinApp` object will be inherited. `m_pActiveWnd` is a public variable of type `CWnd*`.  
   
  Typically, you set this member variable when you override `InitInstance`. In a worker thread, the value of this data member is inherited from its parent thread.  
   
@@ -284,7 +284,7 @@ CWnd* m_pMainWnd;
 ```  
   
 ### Remarks  
- The Microsoft Foundation Class Library will automatically terminate your thread when the window referred to by `m_pMainWnd` is closed. If this thread is the primary thread for an application, the application will also be terminated. If this data member is **NULL**, the main window for the application's `CWinApp` object will be used to determine when to terminate the thread. `m_pMainWnd` is a public variable of type **CWnd\***.  
+ The Microsoft Foundation Class Library will automatically terminate your thread when the window referred to by `m_pMainWnd` is closed. If this thread is the primary thread for an application, the application will also be terminated. If this data member is NULL, the main window for the application's `CWinApp` object will be used to determine when to terminate the thread. `m_pMainWnd` is a public variable of type `CWnd*`.  
   
  Typically, you set this member variable when you override `InitInstance`. In a worker thread, the value of this data member is inherited from its parent thread.  
   
@@ -296,8 +296,8 @@ virtual BOOL OnIdle(LONG lCount);
 ```  
   
 ### Parameters  
- `lCount`  
- A counter incremented each time `OnIdle` is called when the thread's message queue is empty. This count is reset to 0 each time a new message is processed. You can use the `lCount` parameter to determine the relative length of time the thread has been idle without processing a message.  
+ *lCount*  
+ A counter incremented each time `OnIdle` is called when the thread's message queue is empty. This count is reset to 0 each time a new message is processed. You can use the *lCount* parameter to determine the relative length of time the thread has been idle without processing a message.  
   
 ### Return Value  
  Nonzero to receive more idle processing time; 0 if no more idle processing time is needed.  
@@ -305,7 +305,7 @@ virtual BOOL OnIdle(LONG lCount);
 ### Remarks  
  `OnIdle` is called in the default message loop when the thread's message queue is empty. Use your override to call your own background idle-handler tasks.  
   
- `OnIdle` should return 0 to indicate that no additional idle processing time is required. The `lCount` parameter is incremented each time `OnIdle` is called when the message queue is empty and is reset to 0 each time a new message is processed. You can call your different idle routines based on this count.  
+ `OnIdle` should return 0 to indicate that no additional idle processing time is required. The *lCount* parameter is incremented each time `OnIdle` is called when the message queue is empty and is reset to 0 each time a new message is processed. You can call your different idle routines based on this count.  
   
  The default implementation of this member function frees temporary objects and unused dynamic link libraries from memory.  
   
@@ -321,7 +321,7 @@ operator HANDLE() const;
 ```  
   
 ### Return Value  
- If successful, the handle of the thread object; otherwise, **NULL**.  
+ If successful, the handle of the thread object; otherwise, NULL.  
   
 ### Remarks  
  Use the handle to directly call Windows APIs.  
@@ -337,20 +337,20 @@ BOOL PostThreadMessage(
 ```  
   
 ### Parameters  
- `message`  
+ *message*  
  ID of the user-defined message.  
   
- `wParam`  
+ *wParam*  
  First message parameter.  
   
- `lParam`  
+ *lParam*  
  Second message parameter.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The posted message is mapped to the proper message handler by the message map macro `ON_THREAD_MESSAGE`.  
+ The posted message is mapped to the proper message handler by the message map macro ON_THREAD_MESSAGE.  
   
 > [!NOTE]
 >  When calling the Windows [PostThreadMessage](http://msdn.microsoft.com/library/windows/desktop/ms644946) function within an MFC application, the MFC message handlers are not called. For more information, see the Knowledge Base article, "PRB: MFC Message Handler Not Called with PostThreadMessage()" (Q142415).  
@@ -363,7 +363,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- `pMsg`  
+ *pMsg*  
  Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing the message to process.  
   
 ### Return Value  
@@ -382,10 +382,10 @@ virtual BOOL ProcessMessageFilter(
 ```  
   
 ### Parameters  
- `code`  
- Specifies a hook code. This member function uses the code to determine how to process `lpMsg.`  
+ *code*  
+ Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*  
   
- `lpMsg`  
+ *lpMsg*  
  A pointer to a Windows [MSG structure](../../mfc/reference/msg-structure1.md).  
   
 ### Return Value  
@@ -409,11 +409,11 @@ virtual LRESULT ProcessWndProcException(
  *e*  
  Points to an unhandled exception.  
   
- `pMsg`  
+ *pMsg*  
  Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.  
   
 ### Return Value  
- -1 if a `WM_CREATE` exception is generated; otherwise 0.  
+ -1 if a WM_CREATE exception is generated; otherwise 0.  
   
 ### Remarks  
  Do not call this member function directly.  
@@ -422,8 +422,8 @@ virtual LRESULT ProcessWndProcException(
   
 |Command|Action|  
 |-------------|------------|  
-|`WM_CREATE`|Fail.|  
-|`WM_PAINT`|Validate the affected window, thus preventing another `WM_PAINT` message from being generated.|  
+|WM_CREATE|Fail.|  
+|WM_PAINT|Validate the affected window, thus preventing another WM_PAINT message from being generated.|  
   
  Override this member function to provide global handling of your exceptions. Call the base functionality only if you wish to display the default behavior.  
   
@@ -437,12 +437,12 @@ virtual BOOL PumpMessage();
 ```  
   
 ### Remarks  
- `PumpMessage` contains the thread's message loop. **PumpMessage** is called by `CWinThread` to pump the thread's messages. You can call `PumpMessage` directly to force messages to be processed, or you can override `PumpMessage` to change its default behavior.  
+ `PumpMessage` contains the thread's message loop. `PumpMessage` is called by `CWinThread` to pump the thread's messages. You can call `PumpMessage` directly to force messages to be processed, or you can override `PumpMessage` to change its default behavior.  
   
  Calling `PumpMessage` directly and overriding its default behavior is recommended for advanced users only.  
   
 ##  <a name="resumethread"></a>  CWinThread::ResumeThread  
- Called to resume execution of a thread that was suspended by the [SuspendThread](#suspendthread) member function, or a thread created with the **CREATE_SUSPENDED** flag.  
+ Called to resume execution of a thread that was suspended by the [SuspendThread](#suspendthread) member function, or a thread created with the CREATE_SUSPENDED flag.  
   
 ```  
 DWORD ResumeThread();
@@ -462,12 +462,12 @@ virtual int Run();
 ```  
   
 ### Return Value  
- An `int` value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190).  
+ An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190).  
   
 ### Remarks  
- **Run** acquires and dispatches Windows messages until the application receives a [WM_QUIT](http://msdn.microsoft.com/library/windows/desktop/ms632641) message. If the thread's message queue currently contains no messages, **Run** calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
+ `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](http://msdn.microsoft.com/library/windows/desktop/ms632641) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
   
- **Run** is rarely overridden, but you can override it to implement special behavior.  
+ `Run` is rarely overridden, but you can override it to implement special behavior.  
   
  This member function is used only in user-interface threads.  
   
@@ -479,22 +479,22 @@ BOOL SetThreadPriority(int nPriority);
 ```  
   
 ### Parameters  
- `nPriority`  
+ *nPriority*  
  Specifies the new thread priority level within its priority class. This parameter must be one of the following values, listed from highest priority to lowest:  
   
-- **THREAD_PRIORITY_TIME_CRITICAL**  
+- THREAD_PRIORITY_TIME_CRITICAL  
   
-- **THREAD_PRIORITY_HIGHEST**  
+- THREAD_PRIORITY_HIGHEST  
   
-- **THREAD_PRIORITY_ABOVE_NORMAL**  
+- THREAD_PRIORITY_ABOVE_NORMAL  
   
-- **THREAD_PRIORITY_NORMAL**  
+- THREAD_PRIORITY_NORMAL  
   
-- **THREAD_PRIORITY_BELOW_NORMAL**  
+- THREAD_PRIORITY_BELOW_NORMAL  
   
-- **THREAD_PRIORITY_LOWEST**  
+- THREAD_PRIORITY_LOWEST  
   
-- **THREAD_PRIORITY_IDLE**  
+- THREAD_PRIORITY_IDLE  
   
  For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   

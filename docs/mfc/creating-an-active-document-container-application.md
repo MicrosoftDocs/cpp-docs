@@ -22,7 +22,7 @@ The simplest and most recommended way to create an active document container app
   
 3.  Select **MFC Application** from the right pane.  
   
-4.  Name the project `MyProj`, click **OK**.  
+4.  Name the project *MyProj*, click **OK**.  
   
 5.  Select the **Compound Document Support** page.  
   
@@ -34,9 +34,9 @@ The simplest and most recommended way to create an active document container app
   
 9. When the MFC Application Wizard finishes generating the application, open the following files using Solution Explorer:  
   
-    -   MyProjview.cpp  
+    -   *MyProjview.cpp*  
   
-10. In MyProjview.cpp, make the following changes:  
+10. In *MyProjview.cpp*, make the following changes:  
   
     -   In `CMyProjView::OnPreparePrinting`, replace the function contents with the following code:  
   

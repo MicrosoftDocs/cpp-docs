@@ -44,7 +44,7 @@ public:
 
 ### Parameters
 
-`Ty`
+*Ty*  
  The type controlled by the weak pointer.
 
 ## Remarks
@@ -72,7 +72,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 |[element_type](#element_type)|The type of the element.|
 |[expired](#expired)|Tests if ownership has expired.|
 |[lock](#lock)|Obtains exclusive ownership of a resource.|
-|[owner_before](#owner_before)|Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.|
+|[owner_before](#owner_before)|Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.|
 |[reset](#reset)|Releases owned resource.|
 |[swap](#swap)|Swaps two `weak_ptr` objects.|
 |[use_count](#use_count)|Counts number of designated `shared_ptr` objects.|
@@ -136,7 +136,7 @@ bool expired() const;
 
 ### Remarks
 
-The member function returns `true` if `*this` has expired, otherwise `false`.
+The member function returns **true** if `*this` has expired, otherwise **false**.
 
 ### Example
 
@@ -257,13 +257,13 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-`Other`
+*Other*  
  The type controlled by the argument shared/weak pointer.
 
-`wp`
+*wp*  
  The weak pointer to copy.
 
-`sp`
+*sp*  
  The shared pointer to copy.
 
 ### Remarks
@@ -304,7 +304,7 @@ int main()
 
 ## <a name="owner_before"></a>  owner_before
 
-Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.
+Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.
 
 ```cpp
 template <class Other>
@@ -316,12 +316,12 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### Parameters
 
-`ptr`
+*ptr*  
  An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
-The template member function returns `true` if `*this` is `ordered before` `ptr`.
+The template member function returns **true** if `*this` is `ordered before` `ptr`.
 
 ## <a name="reset"></a>  reset
 
@@ -376,12 +376,12 @@ void swap(weak_ptr& wp);
 
 ### Parameters
 
-`wp`
+*wp*  
  The weak pointer to swap with.
 
 ### Remarks
 
-The member function leaves the resource originally pointed to by `*this` subsequently pointed to by `wp`, and the resource originally pointed to by `wp` subsequently pointed to by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+The member function leaves the resource originally pointed to by `*this` subsequently pointed to by *wp*, and the resource originally pointed to by *wp* subsequently pointed to by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
 
 ### Example
 
@@ -496,13 +496,13 @@ weak_ptr(const shared_ptr<Other>& sp);
 
 ### Parameters
 
-`Other`
+*Other*  
  The type controlled by the argument shared/weak pointer.
 
-`wp`
+*wp*  
  The weak pointer to copy.
 
-`sp`
+*sp*  
  The shared pointer to copy.
 
 ### Remarks

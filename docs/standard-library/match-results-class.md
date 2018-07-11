@@ -58,10 +58,10 @@ class match_results {
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type for submatches.
 
-`Alloc`
+*Alloc*
  The type of an allocator for managing storage.
 
 ## Remarks
@@ -84,7 +84,7 @@ typedef Alloc allocator_type;
 
 ### Remarks
 
-The typedef is a synonym for the template argument `Alloc`.
+The typedef is a synonym for the template argument *Alloc*.
 
 ### Example
 
@@ -1057,21 +1057,21 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### Parameters
 
-`OutIt`
+*OutIt*
  The output iterator type.
 
-`out`
+*out*
  The output stream to write to.
 
-`fmt`
+*fmt*
  The format string.
 
-`flags`
+*flags*
  The format flags.
 
 ### Remarks
 
-Each member function generates formatted text under the control of the format `fmt`. The first member function writes the formatted text to the sequence defined by its argument `out` and returns `out`. The second member function returns a string object holding a copy of the formatted text.
+Each member function generates formatted text under the control of the format *fmt*. The first member function writes the formatted text to the sequence defined by its argument *out* and returns *out*. The second member function returns a string object holding a copy of the formatted text.
 
 To generate formatted text. literal text in the format string is ordinarily copied to the target sequence. Each escape sequence in the format string is replaced by the text that it represents. The details of the copying and replacement are controlled by the format flags passed to the function.
 
@@ -1436,7 +1436,7 @@ difference_type length(size_type sub = 0) const;
 
 ### Parameters
 
-`sub`
+*sub*
  The index of the submatch.
 
 ### Remarks
@@ -1564,15 +1564,15 @@ match_results(const match_results& right);
 
 ### Parameters
 
-`alloc`
+*alloc*
  The allocator object to store.
 
-`right`
+*right*
  The match_results object to copy.
 
 ### Remarks
 
-The first constructor constructs a `match_results` object that holds no submatches. The second constructor constructs a `match_results` object that is a copy of `right`.
+The first constructor constructs a `match_results` object that holds no submatches. The second constructor constructs a `match_results` object that is a copy of *right*.
 
 ### Example
 
@@ -1814,12 +1814,12 @@ match_results& operator=(const match_results& right);
 
 ### Parameters
 
-`right`
+*right*
  The match_results object to copy.
 
 ### Remarks
 
-The member operator replaces the sequence controlled by `*this` with a copy of the sequence controlled by `right`.
+The member operator replaces the sequence controlled by `*this` with a copy of the sequence controlled by *right*.
 
 ### Example
 
@@ -1940,12 +1940,12 @@ const_reference operator[](size_type n) const;
 
 ### Parameters
 
-`n`
+*n*
  Index of the submatch.
 
 ### Remarks
 
-The member function returns a reference to element `n` of the controlled sequence, or a reference to an empty `sub_match` object if `size() <= n` or if capture group `n` was not part of the match.
+The member function returns a reference to element *n* of the controlled sequence, or a reference to an empty `sub_match` object if `size() <= n` or if capture group *n* was not part of the match.
 
 ### Example
 
@@ -2066,7 +2066,7 @@ difference_type position(size_type sub = 0) const;
 
 ### Parameters
 
-`sub`
+*sub*
  Index of the submatch.
 
 ### Remarks
@@ -2676,7 +2676,7 @@ string_type str(size_type sub = 0) const;
 
 ### Parameters
 
-`sub`
+*sub*
  Index of the submatch.
 
 ### Remarks
@@ -3044,12 +3044,12 @@ void swap(const match_results& right) throw();
 
 ### Parameters
 
-`right`
+*right*
  The match_results object to swap with.
 
 ### Remarks
 
-The member function swaps the contents of `*this` and `right` in constant time and does not throw exceptions.
+The member function swaps the contents of `*this` and *right* in constant time and does not throw exceptions.
 
 ### Example
 

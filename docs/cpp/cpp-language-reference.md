@@ -48,9 +48,6 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [Declarations and Definitions](declarations-and-definitions-cpp.md)  
  Storage-class specifiers, function definitions, initializations, enumerations, class, struct, and union declarations, and typedef declarations. Also, inline functions, const keyword, namespaces.  
   
- [Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)  
- The portion of a declaration statement that names an object, type, or function. Abstract declarators, type names, initializers, function declarations and definitions, arrays, references.  
-  
  [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)  
  Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, this pointer, nested classes.  
   
@@ -67,7 +64,7 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  C++ exception handling, structured exception handling (SEH), keywords used in writing exception handling statements.  
   
  [Assertion and User-Supplied Messages](../cpp/assertion-and-user-supplied-messages-cpp.md)  
- `#error` directive, the `static_assert` keyword, the `assert` macro.  
+ `#error` directive, the **static_assert** keyword, the `assert` macro.  
   
  [Templates](../cpp/templates-cpp.md)  
  Template specifications, function templates, class templates, typename keyword, templates vs. macros, templates and smart pointers.  

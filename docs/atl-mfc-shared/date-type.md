@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # DATE Type
-The **DATE** type is implemented using an 8-byte floating-point number. Days are represented by whole number increments starting with 30 December 1899, midnight as time zero. Hour values are expressed as the absolute value of the fractional part of the number. The following table illustrates several dates along with their **DATE** type numeric equivalent:  
+The DATE type is implemented using an 8-byte floating-point number. Days are represented by whole number increments starting with 30 December 1899, midnight as time zero. Hour values are expressed as the absolute value of the fractional part of the number. The following table illustrates several dates along with their DATE type numeric equivalent:  
   
 |Date and time|Representation|  
 |-------------------|--------------------|  
@@ -24,7 +24,7 @@ The **DATE** type is implemented using an 8-byte floating-point number. Days are
 |4 January 1900, noon|5.50|  
 |4 January 1900, 9 P.M.|5.875|  
   
- The **DATE** date type, as well as the `COleDateTime` class, represents dates and times as a classic number line. The `COleDateTime` class contains several methods for manipulating DATE values, including conversion to and from other common date formats.  
+ The DATE date type, as well as the `COleDateTime` class, represents dates and times as a classic number line. The `COleDateTime` class contains several methods for manipulating DATE values, including conversion to and from other common date formats.  
   
  The following points should be noted when working with these date and time formats in Automation:  
   
@@ -53,9 +53,9 @@ The **DATE** type is implemented using an 8-byte floating-point number. Days are
 |2 January 1900, midnight|3.00|  
   
 > [!CAUTION]
->  Note that because 6:00 AM is always represented by a fractional value 0.25 regardless of whether the integer representing the day is positive (after December 30, 1899) or negative (before December 30, 1899), a simple floating point comparison would erroneously sort any **DATE** representing 6:00 AM on a day earlier than 12/30/1899 as *later* than a **DATE** representing 7:00 AM on that same day.  
+>  Note that because 6:00 AM is always represented by a fractional value 0.25 regardless of whether the integer representing the day is positive (after December 30, 1899) or negative (before December 30, 1899), a simple floating point comparison would erroneously sort any DATE representing 6:00 AM on a day earlier than 12/30/1899 as *later* than a DATE representing 7:00 AM on that same day.  
   
- More information on issues related to the **DATE** and `COleDateTime` types can be found under [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md) and [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md).  
+ More information on issues related to the DATE and `COleDateTime` types can be found under [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md) and [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ## See Also  
  [Date and Time](../atl-mfc-shared/date-and-time.md)   

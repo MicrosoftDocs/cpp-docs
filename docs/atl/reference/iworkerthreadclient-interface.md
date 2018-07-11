@@ -69,10 +69,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 ```  
   
 ### Parameters  
- `dwParam`  
+ *dwParam*  
  The user parameter.  
   
- `hObject`  
+ *hObject*  
  The handle that has become signaled.  
   
 ### Return Value  

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/30/2018"
+ms.date: "07/03/2018"
 ms.technology: ["devlang-cpp"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
@@ -385,7 +385,7 @@ C4678|base class '*declaration*' is less accessible than '*name*'
 C4679|'*description*': could not import member
 C4687|'*type*': a sealed abstract class cannot implement an interface '*type*'
 C4688|'*name*': constraint list contains assembly private type '*declaration*'
-C4690|[ emitidl( pop ) ]: more pops than pushes
+C4690|\[ emitidl( pop ) ]: more pops than pushes
 C4691|'*type*': type referenced was expected in unreferenced *module* '*description*', type defined in current translation unit used instead
 C4692|'*name*': signature of non-private member contains assembly private native type '*declaration*'
 C4693|'*type*': a sealed abstract class cannot have any instance members '*name*'

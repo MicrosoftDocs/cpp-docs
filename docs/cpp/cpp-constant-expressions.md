@@ -32,7 +32,7 @@ A *constant* value is one that doesn't change. C++ provides two keywords to enab
   
 -   Values declared as const that are initialized with constant expressions  
   
--   `sizeof` expressions  
+-   **sizeof** expressions  
   
  Nonintegral constants must be converted (either explicitly or implicitly) to integral types to be legal in a constant expression. Therefore, the following code is legal:  
   
@@ -41,7 +41,7 @@ const double Size = 11.0;
 char chArray[(int)Size];  
 ```  
   
- Explicit conversions to integral types are legal in constant expressions; all other types and derived types are illegal except when used as operands to the `sizeof` operator.  
+ Explicit conversions to integral types are legal in constant expressions; all other types and derived types are illegal except when used as operands to the **sizeof** operator.  
   
  The comma operator and assignment operators cannot be used in constant expressions.  
   

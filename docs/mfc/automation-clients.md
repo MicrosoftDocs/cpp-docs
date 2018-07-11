@@ -25,7 +25,7 @@ Automation makes it possible for your application to manipulate objects implemen
   
  Static bound clients use a proxy class that is statically linked with the client application. This class provides a type-safe C++ encapsulation of the server application's properties and operations.  
   
- The class `COleDispatchDriver` provides the principal support for the client side of Automation. Using the `Add New Item` dialog box, you create a class derived from `COleDispatchDriver`.  
+ The class `COleDispatchDriver` provides the principal support for the client side of Automation. Using the **Add New Item** dialog box, you create a class derived from `COleDispatchDriver`.  
   
  You then specify the type-library file describing the properties and functions of the server application's object. The Add Item dialog box reads this file and creates the `COleDispatchDriver`-derived class, with member functions that your application can call to access the server application's objects in C++ in a type-safe manner. Additional functionality inherited from `COleDispatchDriver` simplifies the process of calling the proper Automation server.  
   

@@ -20,17 +20,17 @@ C++ enables you to throw exceptions of any type, although in general it is recom
   
 -   A handler that can accept any type (using the ellipsis syntax).  
   
--   A handler that accepts the same type as the exception object; because it is a copy, **const** and `volatile` modifiers are ignored.  
+-   A handler that accepts the same type as the exception object; because it is a copy, **const** and **volatile** modifiers are ignored.  
   
 -   A handler that accepts a reference to the same type as the exception object.  
   
--   A handler that accepts a reference to a **const** or `volatile` form of the same type as the exception object.  
+-   A handler that accepts a reference to a **const** or **volatile** form of the same type as the exception object.  
   
--   A handler that accepts a base class of the same type as the exception object; since it is a copy, **const** and `volatile` modifiers are ignored. The **catch** handler for a base class must not precede the **catch** handler for the derived class.  
+-   A handler that accepts a base class of the same type as the exception object; since it is a copy, **const** and **volatile** modifiers are ignored. The **catch** handler for a base class must not precede the **catch** handler for the derived class.  
   
 -   A handler that accepts a reference to a base class of the same type as the exception object.  
   
--   A handler that accepts a reference to a **const** or `volatile` form of a base class of the same type as the exception object.  
+-   A handler that accepts a reference to a **const** or **volatile** form of a base class of the same type as the exception object.  
   
 -   A handler that accepts a pointer to which a thrown pointer object can be converted via standard pointer conversion rules.  
   

@@ -32,7 +32,7 @@ Conceptual Diagram of a Data-Bound Control
  It is possible to create a data-bound stock property, although it is more likely that you will want a [bindable get/set method](#vchowcreatingbindablegetsetmethod).  
   
 > [!NOTE]
->  Stock properties have the **bindable** and **requestedit** attributes by default.  
+>  Stock properties have the `bindable` and `requestedit` attributes by default.  
   
 #### To add a bindable stock property using the Add Property Wizard  
   

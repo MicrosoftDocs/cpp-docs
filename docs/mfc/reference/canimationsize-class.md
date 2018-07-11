@@ -83,10 +83,10 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pCXTransition`  
+ *pCXTransition*  
  A pointer to transition for Width.  
   
- `pCYTransition`  
+ *pCYTransition*  
  A pointer to transition for Height.  
   
 ### Remarks  
@@ -107,16 +107,16 @@ CAnimationSize(
 ```  
   
 ### Parameters  
- `szDefault`  
+ *szDefault*  
  Specifies default size.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
 ### Remarks  
@@ -132,7 +132,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to two CAnimationVariable objects representing the width and height.  
   
 ##  <a name="getcx"></a>  CAnimationSize::GetCX  
@@ -182,7 +182,7 @@ BOOL GetValue(CSize& szValue);
 ```  
   
 ### Parameters  
- `szValue`  
+ *szValue*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -226,7 +226,7 @@ void operator=(const CSize& szSrc);
 ```  
   
 ### Parameters  
- `szSrc`  
+ *szSrc*  
  Refers to CSize or SIZE.  
   
 ### Remarks  
@@ -240,7 +240,7 @@ void SetDefaultValue(const CSize& szDefault);
 ```  
   
 ### Parameters  
- `szDefault`  
+ *szDefault*  
  Specifies new default size.  
   
 ### Remarks  

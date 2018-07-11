@@ -71,11 +71,11 @@ class CHeaderCtrl : public CWnd
   
 -   Header item custom ordering.  
   
--   Header item drag and drop, for reordering of header items. Use the `HDS_DRAGDROP` style when you create the `CHeaderCtrl` object.  
+-   Header item drag and drop, for reordering of header items. Use the HDS_DRAGDROP style when you create the `CHeaderCtrl` object.  
   
--   Header column text constantly viewable during column resizing. Use the `HDS_FULLDRAG` style when you create a `CHeaderCtrl` object.  
+-   Header column text constantly viewable during column resizing. Use the HDS_FULLDRAG style when you create a `CHeaderCtrl` object.  
   
--   Header hot tracking, which highlights the header item when the pointer is hovering over it. Use the `HDS_HOTTRACK` style when you create the `CHeaderCtrl` object.  
+-   Header hot tracking, which highlights the header item when the pointer is hovering over it. Use the HDS_HOTTRACK style when you create the `CHeaderCtrl` object.  
   
 -   Image list support. Header items can contain images stored in a `CImageList` object or text.  
   
@@ -111,7 +111,7 @@ BOOL ClearAllFilters();
 ```  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) with a column value of -1, as described in the Windows SDK.  
@@ -127,11 +127,11 @@ BOOL ClearFilter(int nColumn);
 ```  
   
 ### Parameters  
- `nColumn`  
+ *nColumn*  
  Column value indicating which filter to clear.  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306), as described in the Windows SDK.  
@@ -151,51 +151,51 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the header control's style. For a description of header control styles, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241) in the Windows SDK.  
   
- `rect`  
+ *rect*  
  Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
- `pParentWnd`  
- Specifies the header control's parent window, usually a `CDialog`. It must not be **NULL**.  
+ *pParentWnd*  
+ Specifies the header control's parent window, usually a `CDialog`. It must not be NULL.  
   
- `nID`  
+ *nID*  
  Specifies the header control's ID.  
   
 ### Return Value  
  Nonzero if initialization was successful; otherwise zero.  
   
 ### Remarks  
- You construct a `CHeaderCtrl` object in two steps. First, call the constructor and then call **Create**, which creates the header control and attaches it to the `CHeaderCtrl` object.  
+ You construct a `CHeaderCtrl` object in two steps. First, call the constructor and then call `Create`, which creates the header control and attaches it to the `CHeaderCtrl` object.  
   
  In addition to the header control styles, you can use the following common control styles to determine how the header control positions and resizes itself (see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) for more information):  
   
-- `CCS_BOTTOM` Causes the control to position itself at the bottom of the parent window's client area and sets the width to be the same as the parent window's width.  
+- CCS_BOTTOM Causes the control to position itself at the bottom of the parent window's client area and sets the width to be the same as the parent window's width.  
   
-- `CCS_NODIVIDER` Prevents a two-pixel highlight from being drawn at the top of the control.  
+- CCS_NODIVIDER Prevents a two-pixel highlight from being drawn at the top of the control.  
   
-- `CCS_NOMOVEY` Causes the control to resize and move itself horizontally, but not vertically, in response to a `WM_SIZE` message. If the `CCS_NORESIZE` style is used, this style does not apply. Header controls have this style by default.  
+- CCS_NOMOVEY Causes the control to resize and move itself horizontally, but not vertically, in response to a WM_SIZE message. If the CCS_NORESIZE style is used, this style does not apply. Header controls have this style by default.  
   
-- `CCS_NOPARENTALIGN` Prevents the control from automatically moving to the top or bottom of the parent window. Instead, the control keeps its position within the parent window despite changes to the size of the parent window. If the `CCS_TOP` or `CCS_BOTTOM` style is also used, the height is adjusted to the default, but the position and width remain unchanged.  
+- CCS_NOPARENTALIGN Prevents the control from automatically moving to the top or bottom of the parent window. Instead, the control keeps its position within the parent window despite changes to the size of the parent window. If the CCS_TOP or CCS_BOTTOM style is also used, the height is adjusted to the default, but the position and width remain unchanged.  
   
-- `CCS_NORESIZE` Prevents the control from using the default width and height when setting its initial size or a new size. Instead, the control uses the width and height specified in the request for creation or sizing.  
+- CCS_NORESIZE Prevents the control from using the default width and height when setting its initial size or a new size. Instead, the control uses the width and height specified in the request for creation or sizing.  
   
-- `CCS_TOP` Causes the control to position itself at the top of the parent window's client area and sets the width to be the same as the parent window's width.  
+- CCS_TOP Causes the control to position itself at the top of the parent window's client area and sets the width to be the same as the parent window's width.  
   
  You can also apply the following window styles to a header control (see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) for more information):  
   
-- **WS_CHILD** Creates a child window. Cannot be used with the `WS_POPUP` style.  
+- WS_CHILD Creates a child window. Cannot be used with the WS_POPUP style.  
   
-- **WS_VISIBLE** Creates a window that is initially visible.  
+- WS_VISIBLE Creates a window that is initially visible.  
   
-- **WS_DISABLED** Creates a window that is initially disabled.  
+- WS_DISABLED Creates a window that is initially disabled.  
   
-- **WS_GROUP** Specifies the first control of a group of controls in which the user can move from one control to the next with the arrow keys. All controls defined with the **WS_GROUP** style after the first control belong to the same group. The next control with the **WS_GROUP** style ends the style group and starts the next group (that is, one group ends where the next begins).  
+- WS_GROUP Specifies the first control of a group of controls in which the user can move from one control to the next with the arrow keys. All controls defined with the WS_GROUP style after the first control belong to the same group. The next control with the WS_GROUP style ends the style group and starts the next group (that is, one group ends where the next begins).  
   
-- **WS_TABSTOP** Specifies one of any number of controls through which the user can move by using the TAB key. The TAB key moves the user to the next control specified by the **WS_TABSTOP** style.  
+- WS_TABSTOP Specifies one of any number of controls through which the user can move by using the TAB key. The TAB key moves the user to the next control specified by the WS_TABSTOP style.  
   
- If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
+ If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of `Create`.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_4.cpp)]  
@@ -213,26 +213,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  The header control's style. For a description of header control styles, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241) in the Windows SDK. See [Create](#create) for a list of additional styles.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of **Create** to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of `Create` to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
 ##  <a name="createdragimage"></a>  CHeaderCtrl::CreateDragImage  
  Creates a transparent version of an item's image within a header control.  
@@ -242,11 +242,11 @@ CImageList* CreateDragImage(int nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the item within the header control. The image assigned to this item is the basis for the transparent image.  
   
 ### Return Value  
- A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object if successful; otherwise **NULL**. The returned list contains only one image.  
+ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object if successful; otherwise NULL. The returned list contains only one image.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [HDM_CREATEDRAGIMAGE](http://msdn.microsoft.com/library/windows/desktop/bb775308), as described in the Windows SDK. It is provided to support header item drag and drop.  
@@ -261,7 +261,7 @@ BOOL DeleteItem(int nPos);
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  Specifies the zero-based index of the item to delete.  
   
 ### Return Value  
@@ -278,15 +278,15 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### Parameters  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  A pointer to a [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) structure describing the item to be painted.  
   
 ### Remarks  
- The **itemAction** member of the `DRAWITEMSTRUCT` structure defines the drawing action that is to be performed.  
+ The `itemAction` member of the `DRAWITEMSTRUCT` structure defines the drawing action that is to be performed.  
   
  By default, this member function does nothing. Override this member function to implement drawing for an owner-draw `CHeaderCtrl` object.  
   
- The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before this member function terminates.  
+ The application should restore all graphics device interface (GDI) objects selected for the display context supplied in *lpDrawItemStruct* before this member function terminates.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_6.cpp)]  
@@ -301,16 +301,16 @@ BOOL EditFilter(
 ```  
   
 ### Parameters  
- `nColumn`  
+ *nColumn*  
  The column to edit.  
   
- `bDiscardChanges`  
+ *bDiscardChanges*  
  A value that specifies how to handle the user's editing changes if the user is in the process of editing the filter when the [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312) message is sent.  
   
- Specify `true` to discard the changes made by the user, or `false` to accept the changes made by the user.  
+ Specify TRUE to discard the changes made by the user, or FALSE to accept the changes made by the user.  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ `true` if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method implements the behavior of the Win32 message [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312), as described in the Windows SDK.  
@@ -383,11 +383,11 @@ BOOL GetItem(
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  Specifies the zero-based index of the item to retrieve.  
   
- `pHeaderItem`  
- Pointer to an [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure that receives the new item. This structure is used with the `InsertItem` and `SetItem` member functions. Any flags set in the **mask** element ensure that values in the corresponding elements are properly filled in upon return. If the **mask** element is set to zero, values in the other structure elements are meaningless.  
+ *pHeaderItem*  
+ Pointer to an [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure that receives the new item. This structure is used with the `InsertItem` and `SetItem` member functions. Any flags set in the `mask` element ensure that values in the corresponding elements are properly filled in upon return. If the `mask` element is set to zero, values in the other structure elements are meaningless.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -421,11 +421,11 @@ BOOL GetItemDropDownRect(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iItem`|Zero-based index of a header item whose style is `HDF_SPLITBUTTON`. For more information, see the `fmt` member of the [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure.|  
-|[out] `lpRect`|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.|  
+|[in] *iItem*|Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure.|  
+|[out] *lpRect*|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.|  
   
 ### Return Value  
- `true` if this function is successful; otherwise, `false`.  
+ TRUE if this function is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [HDM_GETITEMDROPDOWNRECT](http://msdn.microsoft.com/library/windows/desktop/bb775339) message, which is described in the Windows SDK.  
@@ -450,10 +450,10 @@ BOOL GetItemRect(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the header control item.  
   
- `lpRect`  
+ *lpRect*  
  A pointer to the address of a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.  
   
 ### Return Value  
@@ -472,10 +472,10 @@ BOOL GetOrderArray(
 ```  
   
 ### Parameters  
- `piArray`  
+ *piArray*  
  A pointer to the address of a buffer that receives the index values of the items in the header control, in the order in which they appear from left to right.  
   
- `iCount`  
+ *iCount*  
  The number of header control items. Must be non-negative.  
   
 ### Return Value  
@@ -498,13 +498,13 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[out] `lpRect`|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.|  
+|[out] *lpRect*|Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.|  
   
 ### Return Value  
- `true` if this function is successful; otherwise, `false`.  
+ TRUE if this function is successful; otherwise, FALSE.  
   
 ### Remarks  
- If the header control contains more items than can be simultaneously displayed, the control can display an overflow button that scrolls to items that are not visible. The header control must have the `HDS_OVERFLOW` and `HDF_SPLITBUTTON` styles to display the overflow button. The bounding rectangle encloses the overflow button and exists only when the overflow button is displayed. For more information, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241).  
+ If the header control contains more items than can be simultaneously displayed, the control can display an overflow button that scrolls to items that are not visible. The header control must have the HDS_OVERFLOW and HDF_SPLITBUTTON styles to display the overflow button. The bounding rectangle encloses the overflow button and exists only when the overflow button is displayed. For more information, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241).  
   
  This method sends the [HDM_GETOVERFLOWRECT](http://msdn.microsoft.com/library/windows/desktop/bb775345) message, which is described in the Windows SDK.  
   
@@ -529,7 +529,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in, out] `phdhti`|Pointer to a [HDHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb775245) structure that specifies the point to test and receives the results of the test.|  
+|[in, out] *phdhti*|Pointer to a [HDHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb775245) structure that specifies the point to test and receives the results of the test.|  
   
 ### Return Value  
  The zero-based index of the header item, if any, at the specified position; otherwise, -1.  
@@ -557,7 +557,7 @@ int InsertItem(
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The zero-based index of the item to be inserted. If the value is zero, the item is inserted at the beginning of the header control. If the value is greater than the maximum value, the item is inserted at the end of the header control.  
   
  *phdi*  
@@ -614,7 +614,7 @@ int SetBitmapMargin(int nWidth);
 ```  
   
 ### Parameters  
- `nWidth`  
+ *nWidth*  
  Width, specified in pixels, of the margin that surrounds a bitmap within an existing header control.  
   
 ### Return Value  
@@ -657,10 +657,10 @@ BOOL SetFocusedItem(int iItem);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iItem`|Zero-based index of a header item.|  
+|[in] *iItem*|Zero-based index of a header item.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [HDM_SETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775361) message, which is described in the Windows SDK.  
@@ -684,10 +684,10 @@ int SetHotDivider(int nIndex);
 ```  
   
 ### Parameters  
- `pt`  
+ *pt*  
  The position of the pointer. The header control highlights the appropriate divider based on the pointer's position.  
   
- `nIndex`  
+ *nIndex*  
  The index of the highlighted divider.  
   
 ### Return Value  
@@ -707,7 +707,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ```  
   
 ### Parameters  
- `pImageList`  
+ *pImageList*  
  A pointer to a `CImageList` object containing the image list to be assigned to the header control.  
   
 ### Return Value  
@@ -729,10 +729,10 @@ BOOL SetItem(
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  The zero-based index of the item to be manipulated.  
   
- `pHeaderItem`  
+ *pHeaderItem*  
  Pointer to an [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure that contains information about the new item.  
   
 ### Return Value  
@@ -751,10 +751,10 @@ BOOL SetOrderArray(
 ```  
   
 ### Parameters  
- `iCount`  
+ *iCount*  
  The number of header control items.  
   
- `piArray`  
+ *piArray*  
  A pointer to the address of a buffer that receives the index values of the items in the header control, in the order in which they appear from left to right.  
   
 ### Return Value  

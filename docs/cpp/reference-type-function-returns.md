@@ -82,7 +82,7 @@ y = 9
   
  Declarations of reference types must contain initializers except in the following cases:  
   
--   Explicit `extern` declaration  
+-   Explicit **extern** declaration  
   
 -   Declaration of a class member  
   

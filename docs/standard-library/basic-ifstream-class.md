@@ -25,10 +25,10 @@ class basic_ifstream : public basic_istream<Elem, Tr>
 
 ### Parameters
 
-`Elem`
+*Elem*
  The basic element of the file buffer.
 
-`Tr`
+*Tr*
  The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
@@ -122,13 +122,13 @@ basic_ifstream(basic_ifstream&& right);
 
 ### Parameters
 
-`_Filename`
+*_Filename*
  The name of the file to open.
 
-`_Mode`
+*_Mode*
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`_Prot`
+*_Prot*
  The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
@@ -178,7 +178,7 @@ The member function calls [rdbuf](#rdbuf) **->** [close](../standard-library/bas
 
 ### Example
 
-See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses **close**.
+See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `close`.
 
 ## <a name="is_open"></a>  basic_ifstream::is_open
 
@@ -226,22 +226,22 @@ void open(
 
 ### Parameters
 
-`_Filename`
+*_Filename*
  The name of the file to open.
 
-`_Mode`
+*_Mode*
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`_Prot`
+*_Prot*
  The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
-The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; **ios_base::in**). If open fails, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**), which may throw an ios_base::failure exception.
+The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; **ios_base::in**). If open fails, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`), which may throw an ios_base::failure exception.
 
 ### Example
 
-See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses **open**.
+See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses `open`.
 
 ## <a name="op_eq"></a>  basic_ifstream::operator=
 
@@ -253,7 +253,7 @@ basic_ifstream& operator=(basic_ifstream&& right);
 
 ### Parameters
 
-`right`
+*right*
  An rvalue reference to a `basic_ifstream` object.
 
 ### Return Value
@@ -262,7 +262,7 @@ Returns `*this`.
 
 ### Remarks
 
-The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference. For more information, see [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md).
+The member operator replaces the contents of the object by using the contents of *right*, treated as an rvalue reference. For more information, see [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md).
 
 ## <a name="rdbuf"></a>  basic_ifstream::rdbuf
 
@@ -290,12 +290,12 @@ void swap(basic_ifstream& right);
 
 ### Parameters
 
-`right`
+*right*
  A reference to another stream buffer.
 
 ### Remarks
 
-The member function exchanges the contents of this object for the contents of `right`.
+The member function exchanges the contents of this object for the contents of *right*.
 
 ## See also
 

@@ -17,7 +17,7 @@ You can use the progress control to indicate the progress of a lengthy operation
   
  The progress control is represented in MFC by class [CProgressCtrl](../mfc/reference/cprogressctrl-class.md).  
   
- When you initially create the progress control, you specify its size and position, parent window (usually a dialog box), and ID. By using the `dwStyle` parameter, you can also specify various window styles for the control and styles for how it fills.  
+ When you initially create the progress control, you specify its size and position, parent window (usually a dialog box), and ID. By using the *dwStyle* parameter, you can also specify various window styles for the control and styles for how it fills.  
   
 ## What do you want to know more about  
   

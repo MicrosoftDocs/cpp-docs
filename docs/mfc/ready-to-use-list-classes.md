@@ -19,7 +19,7 @@ The following classes are ready-to-use list classes.
  Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in a linked list.  
   
  [CPtrList](../mfc/reference/cptrlist-class.md)  
- Stores pointers to `void` (generic pointers) in a linked list.  
+ Stores pointers to **void** (generic pointers) in a linked list.  
   
  [CStringList](../mfc/reference/cstringlist-class.md)  
  Stores `CString` objects in a linked list.  
