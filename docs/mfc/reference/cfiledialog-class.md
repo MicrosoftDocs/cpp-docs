@@ -1261,7 +1261,7 @@ BOOL SetProperties(LPCWSTR lpszPropList);
   
 ### Parameters  
  *lpszPropList*  
- A list of predefined properties separated by ";". For a list of the flags, see the **Flags** section of [OPENFILENAME](http://msdn.microsoft.com/en-us/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104).  
+ A list of predefined properties separated by ";". For a list of the flags, see the **Flags** section of [OPENFILENAME](http://msdn.microsoft.com/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104).  
   
 ### Remarks  
   
