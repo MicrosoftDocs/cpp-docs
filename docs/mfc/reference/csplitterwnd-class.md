@@ -158,7 +158,7 @@ virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
  This member function is a high level command that is used by the [CView](../../mfc/reference/cview-class.md) class to delegate to the `CSplitterWnd` implementation.  
   
 ##  <a name="create"></a>  CSplitterWnd::Create  
- To create a dynamic splitter window, call the **Create** member function.  
+ To create a dynamic splitter window, call the `Create` member function.  
   
 ```  
 virtual BOOL Create(
@@ -414,17 +414,17 @@ virtual BOOL DoScroll(
  *nScrollCode*  
  A scroll-bar code that indicates the user's scrolling request. This parameter is composed of two parts: a low-order byte, which determines the type of scrolling occurring horizontally, and a high-order byte, which determines the type of scrolling occurring vertically:  
   
-- SB_BOTTOM Scrolls to bottom.  
-  
-- SB_LINEDOWN Scrolls one line down.  
-  
-- SB_LINEUP Scrolls one line up.  
-  
-- SB_PAGEDOWN Scrolls one page down.  
-  
-- SB_PAGEUP Scrolls one page up.  
-  
-- SB_TOP Scrolls to top.  
+    - SB_BOTTOM Scrolls to bottom.  
+      
+    - SB_LINEDOWN Scrolls one line down.  
+      
+    - SB_LINEUP Scrolls one line up.  
+      
+    - SB_PAGEDOWN Scrolls one page down.  
+      
+    - SB_PAGEUP Scrolls one page up.  
+      
+    - SB_TOP Scrolls to top.  
   
  *bDoScroll*  
  Determines whether the specified scrolling action occurs. If *bDoScroll* is TRUE (that is, if a child window exists, and if the split windows have a scroll range), then the specified scrolling action can take place; if *bDoScroll* is FALSE (that is, if no child window exists, or the split views have no scroll range), then scrolling does not occur.  
@@ -577,9 +577,9 @@ DWORD GetScrollStyle() const;
 ### Return Value  
  One or more of the following windows style flags, if successful:  
   
-- WS_HSCROLL If the splitter currently manages shared horizontal scroll bars.  
-  
-- WS_VSCROLL If the splitter currently manages shared vertical scroll bars.  
+    - WS_HSCROLL If the splitter currently manages shared horizontal scroll bars.  
+      
+    - WS_VSCROLL If the splitter currently manages shared vertical scroll bars.  
   
  If zero, the splitter window does not currently manage any shared scroll bars.  
   
@@ -665,13 +665,13 @@ virtual void OnDrawSplitter(
  *nType*  
  A value of the `enum ESplitType`, which can be one of the following:  
   
-- `splitBox` The splitter drag box.  
-  
-- `splitBar` The bar that appears between the two split windows.  
-  
-- `splitIntersection` The intersection of the split windows. This element will not be called when running on Windows 95/98.  
-  
-- `splitBorder` The split window borders.  
+    - `splitBox` The splitter drag box.  
+      
+    - `splitBar` The bar that appears between the two split windows.  
+      
+    - `splitIntersection` The intersection of the split windows. This element will not be called when running on Windows 95/98.  
+      
+    - `splitBorder` The split window borders.  
   
  *rect*  
  A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the size and shape of the split windows.  

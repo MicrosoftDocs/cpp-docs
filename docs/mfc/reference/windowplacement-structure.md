@@ -35,9 +35,9 @@ typedef struct tagWINDOWPLACEMENT {     /* wndpl */
  *flags*  
  Specifies flags that control the position of the minimized window and the method by which the window is restored. This member can be one or both of the following flags:  
   
-- WPF_SETMINPOSITION Specifies that the x- and y-positions of the minimized window can be specified. This flag must be specified if the coordinates are set in the `ptMinPosition` member.  
-  
-- WPF_RESTORETOMAXIMIZED Specifies that the restored window will be maximized, regardless of whether it was maximized before it was minimized. This setting is valid only the next time the window is restored. It does not change the default restoration behavior. This flag is valid only when the SW_SHOWMINIMIZED value is specified for the `showCmd` member.  
+    - WPF_SETMINPOSITION Specifies that the x- and y-positions of the minimized window can be specified. This flag must be specified if the coordinates are set in the `ptMinPosition` member.  
+      
+    - WPF_RESTORETOMAXIMIZED Specifies that the restored window will be maximized, regardless of whether it was maximized before it was minimized. This setting is valid only the next time the window is restored. It does not change the default restoration behavior. This flag is valid only when the SW_SHOWMINIMIZED value is specified for the `showCmd` member.  
   
  *showCmd*  
  Specifies the current show state of the window. This member can be one of the following values:  

@@ -35,62 +35,62 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
 - **All** tab  
   
-     The following additional information describes the tabs in the **Data Link Properties** dialog box.  
+The following additional information describes the tabs in the **Data Link Properties** dialog box.  
   
-     Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  
+    Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  
   
  **Provider**  
      Select an appropriate provider to manage the connection to the data source. The type of provider is typically determined by the type of database to which you are connecting. Click the **Next** button or click the **Connection** tab.  
   
  **Connection**  
-     The contents of this tab depend on the provider you selected. Although there are many types of providers, this section covers connections for the two most common: SQL and ODBC data. The others are similar variations on the fields described here.  
+    The contents of this tab depend on the provider you selected. Although there are many types of providers, this section covers connections for the two most common: SQL and ODBC data. The others are similar variations on the fields described here.  
   
      For SQL data:  
   
-    1. **Select or enter a server name:** Click the drop-down list menu to display all registered data servers on the network, and select one.  
+   1. **Select or enter a server name:** Click the drop-down list menu to display all registered data servers on the network, and select one.  
   
-    2. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.  
+   2. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.  
   
-    3. **Select the database on the server:** Click the drop-down list menu to display all registered databases on the data server, and select one.  
+   3. **Select the database on the server:** Click the drop-down list menu to display all registered databases on the data server, and select one.  
   
          -or-  
   
- **Attach a database file as a database name:** Specify a file to be used as the database; enter the explicit pathname.  
+    **Attach a database file as a database name:** Specify a file to be used as the database; enter the explicit pathname.  
   
-        > [!NOTE]
-        >  There is a security problem with the "Allow saving of password" feature of the Data Link Properties dialog box. In "Enter information to log on to the server," there are two radio buttons:  
+    > [!NOTE]
+    >  There is a security problem with the "Allow saving of password" feature of the Data Link Properties dialog box. In "Enter information to log on to the server," there are two radio buttons:  
   
- **Use Windows NT integrated security**  
+    **Use Windows NT integrated security**  
   
- **Use a specific user name and password**  
+    **Use a specific user name and password**  
   
-         If you select **Use a specific user name and password**, you have the option of saving the password (using the check box for "Allow saving password"); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option is secure because it encrypts the password.  
+     If you select **Use a specific user name and password**, you have the option of saving the password (using the check box for "Allow saving password"); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option is secure because it encrypts the password.  
   
-         There might be situations in which you want to select "Allow saving password." For example, if you are releasing a library with a private database solution, you should not access the database directly but instead use a middle-tier application to verify the user (through whatever authentication scheme you choose) and then limit the sort of data available to the user.  
+     There might be situations in which you want to select "Allow saving password." For example, if you are releasing a library with a private database solution, you should not access the database directly but instead use a middle-tier application to verify the user (through whatever authentication scheme you choose) and then limit the sort of data available to the user.  
   
-         For ODBC data:  
+     For ODBC data:  
   
-         1. **Specify the source of data:** You can use a data source name or a connection string.  
+     1. **Specify the source of data:** You can use a data source name or a connection string.  
   
- **Use data source name:** This drop-down list displays data sources registered in your machine. You can set up data sources ahead of time using the ODBC Data Source Administrator-or-**Use connection string:** Either enter a connection string you have already obtained, or click the **Build** button; the **Select Data Source** dialog box appears. Select a file or machine data source and click **OK**.  
+    **Use data source name:** This drop-down list displays data sources registered in your machine. You can set up data sources ahead of time using the ODBC Data Source Administrator-or-**Use connection string:** Either enter a connection string you have already obtained, or click the **Build** button; the **Select Data Source** dialog box appears. Select a file or machine data source and click **OK**.  
   
-        > [!NOTE]
-        >  You can obtain a connection string by viewing the properties of an existing connection in Server Explorer, or you can create a connection by double-clicking **Add Connection** in Server Explorer.  
+     > [!NOTE]
+     >  You can obtain a connection string by viewing the properties of an existing connection in Server Explorer, or you can create a connection by double-clicking **Add Connection** in Server Explorer.  
   
-         2. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.  
+     2. **Enter information to log on to the server:** Enter a user name and password to log on to the data server.  
   
-         3. Enter the initial catalog to use.  
+     3. Enter the initial catalog to use.  
   
-         4. Click **Test Connection**; if the test succeeds, click **OK**. If not, check your logon information, try another database, or try another data server.  
+     4. Click **Test Connection**; if the test succeeds, click **OK**. If not, check your logon information, try another database, or try another data server.  
   
- **Advanced**  
- **Network settings:** Specify the **Impersonation level** (the level of impersonation that the server is allowed to use when impersonating the client; corresponds directly to RPC impersonation levels) and **Protection level** (the level of protection of data sent between client and server; corresponds directly to RPC protection levels).  
+    **Advanced**  
+      **Network settings:** Specify the **Impersonation level** (the level of impersonation that the server is allowed to use when impersonating the client; corresponds directly to RPC impersonation levels) and **Protection level** (the level of protection of data sent between client and server; corresponds directly to RPC protection levels).  
   
- **Other:** In **Connect timeout**, specify the number of seconds of idle time allowed before a timeout occurs. In **Access permissions**, specify the access permissions on the data connection.  
+      **Other:** In **Connect timeout**, specify the number of seconds of idle time allowed before a timeout occurs. In **Access permissions**, specify the access permissions on the data connection.  
   
-     For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.  
+       For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.  
   
- **All**  
+    **All**  
      This tab displays a summary of the initialization properties for the data source and connection you have specified. You can edit these values.  
   
      Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  
@@ -104,7 +104,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  **Attributed**  
  This option specifies whether the wizard will create consumer classes using attributes or template declarations. When you select this option, the wizard uses attributes instead of template declarations (this is the default option). When you deselect this option, the wizard uses template declarations instead of attributes.  
   
--   If you select a consumer **Type** of Table, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses `db_column` to create the column map, for example:  
+ -   If you select a consumer **Type** of Table, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses `db_column` to create the column map, for example:  
   
 ```
  // Inject table class and table accessor class declarations  
@@ -116,7 +116,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  ...
 ```
   
-     instead of using the `CTable` template class to declare the table and table accessor class, and the BEGIN_COLUMN_MAP and END_COLUMN_MAP macros to create the column map, for example:  
+   instead of using the `CTable` template class to declare the table and table accessor class, and the BEGIN_COLUMN_MAP and END_COLUMN_MAP macros to create the column map, for example:  
   
 ``` 
  // Table accessor class  
@@ -139,7 +139,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  // Column map using db_column is the same as for consumer type of 'table'  
 ```  
   
-     instead of using the command and command accessor class declarations in the command class' .h file, for example:  
+   instead of using the command and command accessor class declarations in the command class' .h file, for example:  
   
 ```  
     Command accessor class:  
