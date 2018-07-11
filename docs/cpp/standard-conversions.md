@@ -35,7 +35,7 @@ The C++ language defines conversions between its fundamental types. It also defi
     > [!NOTE]
     >  User-defined types can specify their own conversions. Conversion of user-defined types is covered in [Constructors](../cpp/constructors-cpp.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md).  
   
- The following code causes conversions (in this example, integral promotions):  
+The following code causes conversions (in this example, integral promotions):  
   
 ```cpp 
 long  long_num1, long_num2;  

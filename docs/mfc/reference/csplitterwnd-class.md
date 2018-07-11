@@ -72,47 +72,47 @@ class CSplitterWnd : public CWnd
 |[CSplitterWnd::OnInvertTracker](#oninverttracker)|Renders the image of a split window to be the same size and shape as the frame window.|  
   
 ## Remarks  
- A pane is usually an application-specific object derived from [CView](../../mfc/reference/cview-class.md), but it can be any [CWnd](../../mfc/reference/cwnd-class.md) object that has the appropriate child window ID.  
+A pane is usually an application-specific object derived from [CView](../../mfc/reference/cview-class.md), but it can be any [CWnd](../../mfc/reference/cwnd-class.md) object that has the appropriate child window ID.  
   
  A `CSplitterWnd` object is usually embedded in a parent [CFrameWnd](../../mfc/reference/cframewnd-class.md) or [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) object. Create a `CSplitterWnd` object using the following steps:  
   
-1.  Embed a `CSplitterWnd` member variable in the parent frame.  
+ 1. Embed a `CSplitterWnd` member variable in the parent frame.  
   
-2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function.  
+ 2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function.  
   
-3.  From within the overridden `OnCreateClient`, call the [Create](#create) or [CreateStatic](#createstatic) member function of `CSplitterWnd`.  
+ 3.  From within the overridden `OnCreateClient`, call the [Create](#create) or [CreateStatic](#createstatic) member function of `CSplitterWnd`.  
   
- Call the `Create` member function to create a dynamic splitter window. A dynamic splitter window typically is used to create and scroll a number of individual panes, or views, of the same document. The framework automatically creates an initial pane for the splitter; then the framework creates, resizes, and disposes of additional panes as the user operates the splitter window's controls.  
+Call the `Create` member function to create a dynamic splitter window. A dynamic splitter window typically is used to create and scroll a number of individual panes, or views, of the same document. The framework automatically creates an initial pane for the splitter; then the framework creates, resizes, and disposes of additional panes as the user operates the splitter window's controls.  
   
- When you call `Create`, you specify a minimum row height and column width that determine when the panes are too small to be fully displayed. After you call `Create`, you can adjust these minimums by calling the [SetColumnInfo](#setcolumninfo) and [SetRowInfo](#setrowinfo) member functions.  
+When you call `Create`, you specify a minimum row height and column width that determine when the panes are too small to be fully displayed. After you call `Create`, you can adjust these minimums by calling the [SetColumnInfo](#setcolumninfo) and [SetRowInfo](#setrowinfo) member functions.  
   
- Also use the `SetColumnInfo` and `SetRowInfo` member functions to set an "ideal" width for a column and "ideal" height for a row. When the framework displays a splitter window, it first displays the parent frame, then the splitter window. The framework then lays out the panes in columns and rows according to their ideal dimensions, working from the upper-left to the lower-right corner of the splitter window's client area.  
+Also use the `SetColumnInfo` and `SetRowInfo` member functions to set an "ideal" width for a column and "ideal" height for a row. When the framework displays a splitter window, it first displays the parent frame, then the splitter window. The framework then lays out the panes in columns and rows according to their ideal dimensions, working from the upper-left to the lower-right corner of the splitter window's client area.  
   
- All panes in a dynamic splitter window must be of the same class. Familiar applications that support dynamic splitter windows include Microsoft Word and Microsoft Excel.  
+All panes in a dynamic splitter window must be of the same class. Familiar applications that support dynamic splitter windows include Microsoft Word and Microsoft Excel.  
   
- Use the `CreateStatic` member function to create a static splitter window. The user can change only the size of the panes in a static splitter window, not their number or order.  
+Use the `CreateStatic` member function to create a static splitter window. The user can change only the size of the panes in a static splitter window, not their number or order.  
   
- You must specifically create all the static splitter's panes when you create the static splitter. Make sure you create all the panes before the parent frame's `OnCreateClient` member function returns, or the framework will not display the window correctly.  
+You must specifically create all the static splitter's panes when you create the static splitter. Make sure you create all the panes before the parent frame's `OnCreateClient` member function returns, or the framework will not display the window correctly.  
   
- The `CreateStatic` member function automatically initializes a static splitter with a minimum row height and column width of 0. After you call `Create`, adjust these minimums by calling the [SetColumnInfo](#setcolumninfo) and [SetRowInfo](#setrowinfo) member functions. Also use `SetColumnInfo` and `SetRowInfo` after you call `CreateStatic` to indicate desired ideal pane dimensions.  
+The `CreateStatic` member function automatically initializes a static splitter with a minimum row height and column width of 0. After you call `Create`, adjust these minimums by calling the [SetColumnInfo](#setcolumninfo) and [SetRowInfo](#setrowinfo) member functions. Also use `SetColumnInfo` and `SetRowInfo` after you call `CreateStatic` to indicate desired ideal pane dimensions.  
   
- The individual panes of a static splitter often belong to different classes. For examples of static splitter windows, see the graphics editor and the Windows File Manager.  
+The individual panes of a static splitter often belong to different classes. For examples of static splitter windows, see the graphics editor and the Windows File Manager.  
   
- A splitter window supports special scroll bars (apart from the scroll bars that panes may have). These scroll bars are children of the `CSplitterWnd` object and are shared with the panes.  
+A splitter window supports special scroll bars (apart from the scroll bars that panes may have). These scroll bars are children of the `CSplitterWnd` object and are shared with the panes.  
   
- You create these special scroll bars when you create the splitter window. For example, a `CSplitterWnd` that has one row, two columns, and the WS_VSCROLL style will display a vertical scroll bar that is shared by the two panes. When the user moves the scroll bar, WM_VSCROLL messages are sent to both panes. When the panes set the scroll-bar position, the shared scroll bar is set.  
+You create these special scroll bars when you create the splitter window. For example, a `CSplitterWnd` that has one row, two columns, and the WS_VSCROLL style will display a vertical scroll bar that is shared by the two panes. When the user moves the scroll bar, WM_VSCROLL messages are sent to both panes. When the panes set the scroll-bar position, the shared scroll bar is set.  
   
- For further information on splitter windows, see:  
+For further information on splitter windows, see:  
   
-- [Technical Note 29](../../mfc/tn029-splitter-windows.md)  
+ - [Technical Note 29](../../mfc/tn029-splitter-windows.md)  
   
--   Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd  
+ - Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd  
   
- For more information on how to create dynamic splitter windows, see:  
+For more information on how to create dynamic splitter windows, see:  
   
--   MFC sample [Scribble](../../visual-cpp-samples.md)  
+ - MFC sample [Scribble](../../visual-cpp-samples.md)  
   
--   MFC sample [VIEWEX](../../visual-cpp-samples.md).  
+ - MFC sample [VIEWEX](../../visual-cpp-samples.md).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -158,7 +158,7 @@ virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
  This member function is a high level command that is used by the [CView](../../mfc/reference/cview-class.md) class to delegate to the `CSplitterWnd` implementation.  
   
 ##  <a name="create"></a>  CSplitterWnd::Create  
- To create a dynamic splitter window, call the **Create** member function.  
+ To create a dynamic splitter window, call the `Create` member function.  
   
 ```  
 virtual BOOL Create(
@@ -414,17 +414,17 @@ virtual BOOL DoScroll(
  *nScrollCode*  
  A scroll-bar code that indicates the user's scrolling request. This parameter is composed of two parts: a low-order byte, which determines the type of scrolling occurring horizontally, and a high-order byte, which determines the type of scrolling occurring vertically:  
   
-- SB_BOTTOM Scrolls to bottom.  
-  
-- SB_LINEDOWN Scrolls one line down.  
-  
-- SB_LINEUP Scrolls one line up.  
-  
-- SB_PAGEDOWN Scrolls one page down.  
-  
-- SB_PAGEUP Scrolls one page up.  
-  
-- SB_TOP Scrolls to top.  
+    - SB_BOTTOM Scrolls to bottom.  
+      
+    - SB_LINEDOWN Scrolls one line down.  
+      
+    - SB_LINEUP Scrolls one line up.  
+      
+    - SB_PAGEDOWN Scrolls one page down.  
+      
+    - SB_PAGEUP Scrolls one page up.  
+      
+    - SB_TOP Scrolls to top.  
   
  *bDoScroll*  
  Determines whether the specified scrolling action occurs. If *bDoScroll* is TRUE (that is, if a child window exists, and if the split windows have a scroll range), then the specified scrolling action can take place; if *bDoScroll* is FALSE (that is, if no child window exists, or the split views have no scroll range), then scrolling does not occur.  
@@ -577,9 +577,9 @@ DWORD GetScrollStyle() const;
 ### Return Value  
  One or more of the following windows style flags, if successful:  
   
-- WS_HSCROLL If the splitter currently manages shared horizontal scroll bars.  
-  
-- WS_VSCROLL If the splitter currently manages shared vertical scroll bars.  
+    - WS_HSCROLL If the splitter currently manages shared horizontal scroll bars.  
+      
+    - WS_VSCROLL If the splitter currently manages shared vertical scroll bars.  
   
  If zero, the splitter window does not currently manage any shared scroll bars.  
   
@@ -665,13 +665,13 @@ virtual void OnDrawSplitter(
  *nType*  
  A value of the `enum ESplitType`, which can be one of the following:  
   
-- `splitBox` The splitter drag box.  
-  
-- `splitBar` The bar that appears between the two split windows.  
-  
-- `splitIntersection` The intersection of the split windows. This element will not be called when running on Windows 95/98.  
-  
-- `splitBorder` The split window borders.  
+    - `splitBox` The splitter drag box.  
+      
+    - `splitBar` The bar that appears between the two split windows.  
+      
+    - `splitIntersection` The intersection of the split windows. This element will not be called when running on Windows 95/98.  
+      
+    - `splitBorder` The split window borders.  
   
  *rect*  
  A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the size and shape of the split windows.  

@@ -169,7 +169,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
+ See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo  
  This implementation of `IDispatch::GetTypeInfo` returns E_NOTIMPL.  
@@ -182,7 +182,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
+ See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
   
 ##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount  
  This implementation of `IDispatch::GetTypeInfoCount` returns E_NOTIMPL.  
@@ -192,7 +192,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
+ See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
   
 ##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke  
  This implementation of `IDispatch::Invoke` calls the event handlers listed in the event sink map.  
@@ -210,7 +210,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### Remarks  
- See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
+ See [IDispatch::Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
   
 ##  <a name="unadvise"></a>  IDispEventSimpleImpl::Unadvise  
  Breaks the connection with the event source represented by *pUnk*.  

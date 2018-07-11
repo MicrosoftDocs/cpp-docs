@@ -1082,7 +1082,7 @@ BOOL GetAmbientProperty(
  Nonzero if the ambient property is supported; otherwise 0.  
   
 ### Remarks  
- If you use `GetAmbientProperty` to retrieve the ambient DisplayName and ScaleUnits properties, set *vtProp* to VT_BSTR and *pvProp* to **CString\***. If you are retrieving the ambient Font property, set *vtProp* to VT_FONT and *pvProp* to LPFONTDISP*.  
+ If you use `GetAmbientProperty` to retrieve the ambient DisplayName and ScaleUnits properties, set *vtProp* to VT_BSTR and *pvProp* to `CString*`. If you are retrieving the ambient Font property, set *vtProp* to VT_FONT and *pvProp* to LPFONTDISP*.  
   
  Note that functions have already been provided for common ambient properties, such as [AmbientBackColor](#ambientbackcolor) and [AmbientFont](#ambientfont).  
   

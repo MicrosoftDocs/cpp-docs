@@ -25,6 +25,6 @@ The ATL Project Wizard creates two project configurations by default:
 ## See Also  
  [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [Working with Project Properties](../../ide/working-with-project-properties.md)   
- [Configuration Manager Dialog Box](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)   
+ [Configuration Manager Dialog Box](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)   
  [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

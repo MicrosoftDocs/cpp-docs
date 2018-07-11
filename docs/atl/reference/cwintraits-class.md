@@ -90,6 +90,6 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
  The extended window styles of the object.  
   
 ## See Also  
- [Class Members](http://msdn.microsoft.com/en-us/dbe6a147-3f01-4aea-a3fb-fe6ebadc31f8)   
+ [Class Members](http://msdn.microsoft.com/dbe6a147-3f01-4aea-a3fb-fe6ebadc31f8)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Understanding Window Traits](../../atl/understanding-window-traits.md)
