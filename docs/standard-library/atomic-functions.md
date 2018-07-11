@@ -1,7 +1,7 @@
 ---
 title: "&lt;atomic&gt; functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/11/2018"
 ms.topic: "reference"
 f1_keywords: ["atomic/std::atomic_compare_exchange_strong", "atomic/std::atomic_compare_exchange_strong_explicit", "atomic/std::atomic_compare_exchange_weak", "atomic/std::atomic_compare_exchange_weak_explicit", "atomic/std::atomic_exchange", "atomic/std::atomic_exchange_explicit", "atomic/std::atomic_fetch_add", "atomic/std::atomic_fetch_add_explicit", "atomic/std::atomic_fetch_and", "atomic/std::atomic_fetch_and_explicit", "atomic/std::atomic_fetch_or", "atomic/std::atomic_fetch_or_explicit", "atomic/std::atomic_fetch_sub", "atomic/std::atomic_fetch_sub_explicit", "atomic/std::atomic_fetch_xor", "atomic/std::atomic_fetch_xor_explicit", "atomic/std::atomic_flag_clear", "atomic/std::atomic_flag_clear_explicit", "atomic/std::atomic_flag_test_and_set", "atomic/std::atomic_flag_test_and_set_explicit", "atomic/std::atomic_init", "atomic/std::atomic_is_lock_free", "atomic/std::atomic_load", "atomic/std::atomic_load_explicit", "atomic/std::atomic_signal_fence", "atomic/std::atomic_store", "atomic/std::atomic_store_explicit", "atomic/std::atomic_thread_fence", "atomic/std::kill_dependency"]
 ms.assetid: 5c53b4f8-6ff5-47d7-beb2-2d6ee3c6ea89
@@ -56,7 +56,7 @@ inline bool atomic_compare_exchange_strong(
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+**true** if the values are equal, otherwise **false**.
 
 ### Remarks
 
@@ -103,7 +103,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+**true** if the values are equal, otherwise **false**.
 
 ### Remarks
 
@@ -142,7 +142,7 @@ inline bool atomic_compare_exchange_strong(
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+**true** if the values are equal, otherwise **false**.
 
 ### Remarks
 
@@ -189,13 +189,11 @@ inline bool atomic_compare_exchange_weak_explicit(
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+**true** if the values are equal, otherwise **false**.
 
 ### Remarks
 
-An *atomic compare and exchange operation* compares the value that is stored in the object that is pointed to by *Atom* with the value that is pointed to by *Exp*. If the values are equal, the operation replaces the value that is stored in the object that is pointed to by *Atom* with `Val` by using a `read-modify-write` operation and applying the memory-order constraints that are specified by *Order1*. If the values are not equal, the operation replaces the value that is pointed to by *Exp* with the value that is stored in the object that is pointed to by *Atom* and applies the memory-order constraints that are specified by *Order2*.
-
-A *weak* atomic compare and exchange operation performs an exchange if the compared values are equal. However, if the values are not equal, the operation is not guaranteed to perform an exchange.
+Both the strong and weak flavors of an *atomic compare and exchange operation* guarantee that they do not store the new value if the expected and current values are not equal. The strong flavor guarantees that it will store the new value if the expected and current values are equal. The weak flavor may sometimes return **false** and not store the new value even if the current and expected values are equal. In other words, the function will return **false**, but a later examination of the expected value might reveal that it did not change, and therefore should have compared as equal.
 
 ## <a name="atomic_exchange"></a>  atomic_exchange
 
