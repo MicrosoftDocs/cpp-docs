@@ -20,7 +20,7 @@ The sample in this topic shows how to create AXHost and how to host an ActiveX c
   
 -   For values of USE_METHOD between 1 and 4, access to the control and sinking of events are accomplished in the call that also creates the host. Values between 5 and 8 query the host for interfaces and hook the sink.  
   
- Here's a summary:  
+Here's a summary:  
   
 |USE_METHOD|Host|Control access and event sinking|Function demonstrated|  
 |-----------------|----------|--------------------------------------|---------------------------|  

@@ -42,25 +42,25 @@ typedef struct tagWINDOWPLACEMENT {     /* wndpl */
  *showCmd*  
  Specifies the current show state of the window. This member can be one of the following values:  
   
-- SW_HIDE Hides the window and passes activation to another window.  
-  
-- SW_MINIMIZE Minimizes the specified window and activates the top-level window in the system's list.  
-  
-- SW_RESTORE Activates and displays a window. If the window is minimized or maximized, Windows restores it to its original size and position (same as SW_SHOWNORMAL).  
-  
-- SW_SHOW Activates a window and displays it in its current size and position.  
-  
-- SW_SHOWMAXIMIZED Activates a window and displays it as a maximized window.  
-  
-- SW_SHOWMINIMIZED Activates a window and displays it as an icon.  
-  
-- SW_SHOWMINNOACTIVE Displays a window as an icon. The window that is currently active remains active.  
-  
-- SW_SHOWNA Displays a window in its current state. The window that is currently active remains active.  
-  
-- SW_SHOWNOACTIVATE Displays a window in its most recent size and position. The window that is currently active remains active.  
-  
-- SW_SHOWNORMAL Activates and displays a window. If the window is minimized or maximized, Windows restores it to its original size and position (same as SW_RESTORE).  
+    - SW_HIDE Hides the window and passes activation to another window.  
+      
+    - SW_MINIMIZE Minimizes the specified window and activates the top-level window in the system's list.  
+      
+    - SW_RESTORE Activates and displays a window. If the window is minimized or maximized, Windows restores it to its original size and position (same as SW_SHOWNORMAL).  
+      
+    - SW_SHOW Activates a window and displays it in its current size and position.  
+      
+    - SW_SHOWMAXIMIZED Activates a window and displays it as a maximized window.  
+      
+    - SW_SHOWMINIMIZED Activates a window and displays it as an icon.  
+      
+    - SW_SHOWMINNOACTIVE Displays a window as an icon. The window that is currently active remains active.  
+      
+    - SW_SHOWNA Displays a window in its current state. The window that is currently active remains active.  
+      
+    - SW_SHOWNOACTIVATE Displays a window in its most recent size and position. The window that is currently active remains active.  
+      
+    - SW_SHOWNORMAL Activates and displays a window. If the window is minimized or maximized, Windows restores it to its original size and position (same as SW_RESTORE).  
   
  *ptMinPosition*  
  Specifies the position of the window's top-left corner when the window is minimized.  

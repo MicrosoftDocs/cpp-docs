@@ -151,7 +151,7 @@ inline BOOL Canonicalize(wchar_t* pszDest, const wchar_t* pszSrc);
   
 
 ## <a name="combine"></a> ATLPath::Combine 
-This function is an overloaded wrapper for [PathCombine](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773571).  
+This function is an overloaded wrapper for [PathCombine](https://msdn.microsoft.com/library/windows/desktop/bb773571).  
 
 ### Syntax  
 ```
@@ -306,7 +306,7 @@ inline int GetDriveNumber(const wchar_t* pszPath);
 
 
 ## <a name="isdirectory"></a>  ATLPath::IsDirectory 
-This function is an overloaded wrapper for [PathIsDirectory](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773621).
+This function is an overloaded wrapper for [PathIsDirectory](https://msdn.microsoft.com/library/windows/desktop/bb773621).
 
 ```  
 inline BOOL IsDirectory(const char* pszPath);

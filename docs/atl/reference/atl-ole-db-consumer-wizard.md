@@ -40,7 +40,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
      Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.  
   
  **Provider**  
-     Select an appropriate provider to manage the connection to the data source. The type of provider is typically determined by the type of database to which you are connecting. Click the `Next` button or click the **Connection** tab.  
+     Select an appropriate provider to manage the connection to the data source. The type of provider is typically determined by the type of database to which you are connecting. Click the **Next** button or click the **Connection** tab.  
   
  **Connection**  
      The contents of this tab depend on the provider you selected. Although there are many types of providers, this section covers connections for the two most common: SQL and ODBC data. The others are similar variations on the fields described here.  
@@ -104,21 +104,21 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  **Attributed**  
  This option specifies whether the wizard will create consumer classes using attributes or template declarations. When you select this option, the wizard uses attributes instead of template declarations (this is the default option). When you deselect this option, the wizard uses template declarations instead of attributes.  
   
--   If you select a consumer **Type** of Table, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses **db_column** to create the column map, for example:  
+-   If you select a consumer **Type** of Table, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses `db_column` to create the column map, for example:  
   
- ``` 
+```
  // Inject table class and table accessor class declarations  
  [db_source("<initialization_string>"), db_table("dbo.Orders")]  
  ... 
  // Column map  
  [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;  
  [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
- ...  
- ```  
+ ...
+```
   
      instead of using the `CTable` template class to declare the table and table accessor class, and the BEGIN_COLUMN_MAP and END_COLUMN_MAP macros to create the column map, for example:  
   
- ``` 
+``` 
  // Table accessor class  
     class COrdersAccessor; // Table class  
     class COrders : public CTable<CAccessor<COrdersAccessor>>;  
@@ -129,19 +129,19 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
     COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)  
  ...  
     END_COLUMN_MAP() 
- ```  
+```  
   
 -   If you select a consumer **Type** of Command, the wizard uses the `db_source` and `db_command` attributes, and uses `db_column` to create the column map, for example:  
   
- ```  
+```  
  [db_source("<initialization_string>"), db_command("SQL_command")]  
  ... 
  // Column map using db_column is the same as for consumer type of 'table'  
- ```  
+```  
   
      instead of using the command and command accessor class declarations in the command class' .h file, for example:  
   
- ```  
+```  
     Command accessor class:  
     class CListOrdersAccessor;  
     Command class:  
@@ -149,7 +149,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  ... 
  // Column map using BEGIN_COLUMN_MAP ... END_COLUMN_MAP is the same as
  // for consumer type of 'table'  
- ```  
+```  
   
  See [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.  
   

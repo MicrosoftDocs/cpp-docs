@@ -36,7 +36,8 @@ In general, handling COM events is a relatively simple process. There are three 
  There are three main ways of advising and unadvising an event source using ATL.  
   
 |Advise function|Unadvise function|Most suitable for use with|Requires you to keep track of a cookie|Comments|  
-|---------------------|-----------------------|--------------------------------|---------------------------------------------|--------------|  
+|---------------------|-----------------------|--------------------------------|---------------------------------------------|--------------|
+| | | | | |  
 
 |[AtlAdvise](reference/connection-point-global-functions.md#atladvise), [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise)|[AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise)|Vtable or dual interfaces|Yes|`AtlAdvise` is a global ATL function. `CComPtrBase::Advise` is used by [CComPtr](../atl/reference/ccomptr-class.md) and [CComQIPtr](../atl/reference/ccomqiptr-class.md).|  
 

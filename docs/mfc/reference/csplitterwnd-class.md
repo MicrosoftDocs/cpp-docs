@@ -104,15 +104,15 @@ class CSplitterWnd : public CWnd
   
  For further information on splitter windows, see:  
   
-- [Technical Note 29](../../mfc/tn029-splitter-windows.md)  
+    - [Technical Note 29](../../mfc/tn029-splitter-windows.md)  
   
--   Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd  
+    - Knowledge Base article Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd  
   
- For more information on how to create dynamic splitter windows, see:  
+    For more information on how to create dynamic splitter windows, see:  
   
--   MFC sample [Scribble](../../visual-cpp-samples.md)  
+    - MFC sample [Scribble](../../visual-cpp-samples.md)  
   
--   MFC sample [VIEWEX](../../visual-cpp-samples.md).  
+    - MFC sample [VIEWEX](../../visual-cpp-samples.md).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

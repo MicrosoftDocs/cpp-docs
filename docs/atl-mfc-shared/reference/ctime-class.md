@@ -269,7 +269,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
  A reference to a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.  
   
 ### Return Value  
- True if successful; otherwise false.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  `GetAsSystemTime` stores the resulting time in the referenced *timeDest* structure. The `SYSTEMTIME` data structure initialized by this function will have its `wMilliseconds` member set to zero.  
