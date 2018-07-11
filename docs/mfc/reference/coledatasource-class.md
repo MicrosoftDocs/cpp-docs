@@ -225,13 +225,13 @@ DROPEFFECT DoDragDrop(
  *dwEffects*  
  Drag-and-drop operations that are allowed on this data source. Can be one or more of the following:  
   
-  - DROPEFFECT_COPY A copy operation could be performed.  
+- DROPEFFECT_COPY A copy operation could be performed.  
       
-  - DROPEFFECT_MOVE A move operation could be performed.  
+- DROPEFFECT_MOVE A move operation could be performed.  
       
-  - DROPEFFECT_LINK A link from the dropped data to the original data could be established.  
+- DROPEFFECT_LINK A link from the dropped data to the original data could be established.  
       
-  - DROPEFFECT_SCROLL Indicates that a drag scroll operation could occur.  
+- DROPEFFECT_SCROLL Indicates that a drag scroll operation could occur.  
   
  *lpRectStartDrag*  
  Pointer to the rectangle that defines where the drag actually starts. For more information, see the following Remarks section.  
