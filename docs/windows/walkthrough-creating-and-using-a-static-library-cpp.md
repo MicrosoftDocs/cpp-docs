@@ -43,7 +43,7 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 5. Under **Application type**, select Static Library (.lib).  
   
-6. Under **Additioal Options**, un-check the **Precompiled header** check box.
+6. Under **Additional Options**, un-check the **Precompiled header** check box.
   
 7. Choose **OK** to create the project.  
  
