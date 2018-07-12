@@ -11,7 +11,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Use the Windows 10 SDK in a Windows Desktop Application
-When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the version of the Windows 10 SDK that was installed when the C++ Desktop workload was installed or last updated. This version of the Windows SDK is compatible with all recent Windows releases. If you want to target an earlier version of the SDK, you can open Project | Properties and choose from the other SDK versions available in the Windows SDK Version dropdown.  
+When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the version of the Windows 10 SDK that was installed when the C++ Desktop workload was installed or last updated. This version of the Windows SDK is compatible with Windows 7 and later. See [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers) for more information about targeting specific versions of Windows.
+
+If you want to target an earlier version of the SDK, you can open **Project | Properties** and choose from the other SDK versions available in the Windows SDK Version dropdown.
   
  Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was separated into two parts, one (ucrtbase) that contains the functions that are acceptable to be used in Universal Windows Apps, and one that contains everything else (vcruntime140). Since the Windows 10 SDK contains new functions, such as many C99 functions, you need to follow these steps in order to use those functions. See [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
