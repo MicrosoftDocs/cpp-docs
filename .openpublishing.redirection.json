@@ -3821,6 +3821,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-for-simple-matching-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_simple",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-extract-data-fields-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_extract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-rearrange-data-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_rearrange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-search-and-replace-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_search",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-validate-data-formatting-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_validate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-parse-strings-using-the-split-method-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#parse_split",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-parse-strings-using-regular-expressions-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#parse_regex",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
