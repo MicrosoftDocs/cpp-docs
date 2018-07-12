@@ -1,7 +1,7 @@
 ---
 title: "How to: Create and Use weak_ptr Instances | Microsoft Docs"
 ms.custom: "how-to"
-ms.date: "11/04/2016"
+ms.date: "07/12/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
