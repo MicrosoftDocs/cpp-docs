@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Creating and Using a Static Library (C++) | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "07/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -16,40 +16,38 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
  This walkthrough covers these tasks:  
   
--   [Creating a static library project](#BKMK_CreateLibProject)  
+-   [Creating a static library project](#CreateLibProject)  
   
--   [Adding a class to the static library](#BKMK_AddClassToLib)  
+-   [Adding a class to the static library](#AddClassToLib)  
   
--   [Creating a C++ console app that references the static library](#BKMK_CreateAppToRefTheLib)  
+-   [Creating a C++ console app that references the static library](#CreateAppToRefTheLib)  
   
--   [Using the functionality from the static library in the app](#BKMK_UseLibInApp)  
+-   [Using the functionality from the static library in the app](#UseLibInApp)  
   
--   [Running the app](#BKMK_RunApp)  
+-   [Running the app](#RunApp)  
   
 ## Prerequisites  
  An understanding of the fundamentals of the C++ language.  
   
-##  <a name="BKMK_CreateLibProject"></a> Creating a static library project  
+##  <a name="CreateLibProject"></a> Creating a static library project  
   
 #### To create a static library project  
   
 1.  On the menu bar, choose **File**, **New**, **Project**.  
   
-2.  In the left pane of the **New Project** dialog box, expand **Installed**, **Templates**, **Visual C++**, and then select **Win32**.  
+2. In the left pane of the **New Project** dialog box, expand **Installed, Visual C++**, and then select **Windows Desktop**.
   
-3.  In the center pane, select **Win32 Console Application**.  
+3. In the center pane, select **Windows Desktop Wizard**.  
   
 4.  Specify a name for the project—for example, **MathFuncsLib**—in the **Name** box. Specify a name for the solution—for example, **StaticLibrary**—in the **Solution Name** box. Choose the **OK** button.  
   
-5.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button.  
+5. Under **Application type**, select Static Library (.lib).  
   
-6.  On the **Application Settings** page, under **Application type**, select **Static library.**  
+6. Under **Additioal Options**, un-check the **Precompiled header** check box.
   
-7.  On the **Application Settings** page, under **Additional options**, clear the **Precompiled header** check box.  
-  
-8.  Choose the **Finish** button to create the project.  
-  
-##  <a name="BKMK_AddClassToLib"></a> Adding a class to the static library  
+7. Choose **OK** to create the project.  
+ 
+##  <a name="AddClassToLib"></a> Adding a class to the static library  
   
 #### To add a class to the static library  
   
@@ -70,33 +68,30 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
     > [!NOTE]
     >  When you build on the Visual Studio command line, you must build the program in two steps. First, run **cl /c /EHsc MathFuncsLib.cpp** to compile the code and create an object file that's named **MathFuncsLib.obj**. (The **cl** command invokes the compiler, Cl.exe, and the **/c** option specifies compile without linking. For more information, see [/c (Compile Without Linking)](../build/reference/c-compile-without-linking.md).) Second, run **lib MathFuncsLib.obj** to link the code and create the static library **MathFuncsLib.lib**. (The **lib** command invokes the Library Manager, Lib.exe. For more information, see [LIB Reference](../build/reference/lib-reference.md).)  
   
-##  <a name="BKMK_CreateAppToRefTheLib"></a> Creating a C++ console app that references the static library  
+##  <a name="CreateAppToRefTheLib"></a> Creating a C++ console app that references the static library  
   
 #### To create a C++ console app that references the static library  
   
 1.  On the menu bar, choose **File**, **New**, **Project**.  
   
-2.  In the left pane, under **Visual C++**, select **Win32**.  
-  
-3.  In the center pane, select **Win32 Console Application**.  
+2. In the left pane of the **New Project** dialog box, expand **Installed, Visual C++**, and then select **Windows Desktop**.  
+
+3. In the center pane, select **Windows Desktop Wizard**.  
   
 4.  Specify a name for the project—for example, **MyExecRefsLib**—in the **Name** box. In the drop-down list next to **Solution**, select **Add to Solution**. This adds the new project to the solution that contains the static library. Choose the **OK** button.  
+5. Under **Application type**, select **Console Application (.exe)**.
+
+6. Under **Additioal Options**, un-check the **Precompiled header** check box.
+
+7. Choose **OK** to create the project.  
   
-5.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button.  
-  
-6.  On the **Application Settings** page, under **Application type**, select **Console application**.  
-  
-7.  On the **Application Settings** page, under **Additional options**, clear the **Precompiled header** check box.  
-  
-8.  Choose the **Finish** button to create the project.  
-  
-##  <a name="BKMK_UseLibInApp"></a> Using the functionality from the static library in the app  
+##  <a name="UseLibInApp"></a> Using the functionality from the static library in the app  
   
 #### To use the functionality from the static library in the app  
   
 1.  After you create a console app, an empty program is created for you. The name for the source file is the same as the name that you chose earlier. In this example, it's named **MyExecRefsLib.cpp**.  
   
-2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the **MyExecRefsLib** project in **Solution Explorer**, and then choose **References**. In the **MyExecRefsLibProperty Pages** dialog box, expand the **Common Properties** node, select **Framework and References**, and then choose the **Add New Reference** button. For more information about the **References** dialog box, see [Adding references](../ide/adding-references-in-visual-cpp-projects.md).  
+2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the MyExecRefsLib project in **Solution Explorer**, and then choose **Add, Reference**.  
   
 3.  The **Add Reference** dialog box lists the libraries that you can reference. The **Projects** tab lists the projects in the current solution and any libraries that they contain. On the **Projects** tab, select the **MathFuncsLib** check box, and then choose the **OK** button.  
   
@@ -110,7 +105,7 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 6.  Build the executable by choosing **Build**, **Build Solution** on the menu bar.  
   
-##  <a name="BKMK_RunApp"></a> Running the app  
+##  <a name="RunApp"></a> Running the app  
   
 #### To run the app  
   
