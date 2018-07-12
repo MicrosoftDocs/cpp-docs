@@ -22,7 +22,7 @@ Demonstrates various string operations using regular expressions classes in the 
   
  The following topics demonstrate the use of the .NET Framework <xref:System.Text.RegularExpressions> namespace (and in one case the <xref:System.String.Split%2A?displayProperty=fullName> method) to search, parse, and modify strings.  
 
-## <a name="parse_regex"></a> How to: Parse Strings Using Regular Expressions (C++/CLI)
+## <a name="parse_regex"></a> Parse Strings Using Regular Expressions (C++/CLI)
 The following code example demonstrates simple string parsing using the <xref:System.Text.RegularExpressions.Regex> class in the <xref:System.Text.RegularExpressions?displayProperty=fullName> namespace. A string containing multiple types of word delineators is constructed. The string is then parsed using the <xref:System.Text.RegularExpressions.Regex> class in conjunction with the <xref:System.Text.RegularExpressions.Match> class. Then, each word in the sentence is displayed separately.  
   
 ### Example  
@@ -59,7 +59,7 @@ int main( )
 }  
 ```  
 
-## <a name="parse_split"></a> How to: Parse Strings Using the Split Method (C++/CLI)
+## <a name="parse_split"></a> Parse Strings Using the Split Method (C++/CLI)
 The following code example demonstrates using the <xref:System.String.Split%2A?displayProperty=fullName> method to extract each word from a string. A string containing multiple types of word delineators is constructed and then parsed by calling <xref:System.String.Split%2A> with a list of the delineators. Then, each word in the sentence is displayed separately.  
   
 ### Example  
@@ -87,7 +87,7 @@ int main()
 }  
 ```  
 
-## <a name="regex_simple"></a> How to: Use Regular Expressions for Simple Matching (C++/CLI)
+## <a name="regex_simple"></a> Use Regular Expressions for Simple Matching (C++/CLI)
 The following code example uses regular expressions to look for exact substring matches. The search is performed by the static <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> method, which takes two strings as input. The first is the string to be searched, and the second is the pattern to be searched for.  
   
 ### Example  
@@ -124,7 +124,7 @@ int main()
 }  
 ```  
 
-## <a name="regex_extract"></a> How to: Use Regular Expressions to Extract Data Fields (C++/CLI)
+## <a name="regex_extract"></a> Use Regular Expressions to Extract Data Fields (C++/CLI)
 The following code example demonstrates the use of regular expressions to extract data from a formatted string. The following code example uses the <xref:System.Text.RegularExpressions.Regex> class to specify a pattern that corresponds to an e-mail address. This patter includes field identifiers that can be used to retrieve the user and host name portions of each e-mail address. The <xref:System.Text.RegularExpressions.Match> class is used to perform the actual pattern matching. If the given e-mail address is valid, the user name and host names are extracted and displayed.  
   
 ### Example  
@@ -170,7 +170,7 @@ int main()
 }  
 ```  
 
-## <a name="regex_rearrange"></a> How to: Use Regular Expressions to Rearrange Data (C++/CLI)
+## <a name="regex_rearrange"></a> Use Regular Expressions to Rearrange Data (C++/CLI)
 The following code example demonstrates how the .NET Framework regular expression support can be used to rearrange, or reformat data. The following code example uses the <xref:System.Text.RegularExpressions.Regex> and <xref:System.Text.RegularExpressions.Match> classes to extract first and last names from a string and then display these name elements in reverse order.  
   
  The <xref:System.Text.RegularExpressions.Regex> class is used to construct a regular expression that describes the current format of the data. The two names are assumed to be separated by a comma and can use any amount of white-space around the comma. The <xref:System.Text.RegularExpressions.Match> method is then used to analyze each string. If successful, first and last names are retrieved from the <xref:System.Text.RegularExpressions.Match> object and displayed.  
@@ -213,7 +213,7 @@ int main()
 }  
 ```  
 
-## <a name="regex_search"></a> How to: Use Regular Expressions to Search and Replace (C++/CLI)
+## <a name="regex_search"></a> Use Regular Expressions to Search and Replace (C++/CLI)
 The following code example demonstrates how the regular expression class <xref:System.Text.RegularExpressions.Regex> can be used to perform search and replace. This is done with the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method. The version used takes two strings as input: the string to be modified, and the string to be inserted in place of the sections (if any) that match the pattern given to the <xref:System.Text.RegularExpressions.Regex> object.  
   
  This code replaces all the digits in a string with underscores (_) and then replaces those with an empty string, effectively removing them. The same effect can be accomplished in a single step, but two steps are used here for demonstration purposes.  
@@ -244,7 +244,7 @@ int main()
 }  
 ```  
 
-## <a name="regex_validate"></a> How to: Use Regular Expressions to Validate Data Formatting (C++/CLI)
+## <a name="regex_validate"></a> Use Regular Expressions to Validate Data Formatting (C++/CLI)
 The following code example demonstrates the use of regular expressions to verify the formatting of a string. In the following code example, the string should contain a valid phone number. The following code example uses the string "\d{3}-\d{3}-\d{4}" to indicate that each field represents a valid phone number. The "d" in the string indicates a digit, and the argument after each "d" indicates the number of digits that must be present. In this case, the number is required to be separated by dashes.  
   
 ### Example  
