@@ -42,6 +42,8 @@ This table lists the libraries that implement the vcruntime library.
 |vcruntime.lib|vcruntime\<version>.dll|DLL import library for the vcruntime.|**/MD**|_MT, _DLL|
 |vcruntimed.lib|vcruntime\<version>d.dll|DLL import library for the Debug vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|
 
+> [!NOTE] Although not strictly a part of the vcruntime library, concrt140.dll is included in the Visual C++ resistributable package to support synchronization primitives with [ConcRT](../parallel/concrt/concurrency-runtime.md) on Windows XP.
+
 The code that initializes the CRT is in one of several libraries, based on whether the CRT library is statically or dynamically linked, or native, managed, or mixed code. This code handles CRT startup, internal per-thread data initialization, and termination. It is specific to the version of the compiler used. This library is always statically linked, even when using a dynamically linked UCRT.
 
 This table lists the libraries that implement CRT initialization and termination.
