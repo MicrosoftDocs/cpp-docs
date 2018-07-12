@@ -2542,7 +2542,7 @@ bool is_sorted(
 
 ### Remarks
 
-The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`( first, last ) == last`. The `operator<` function performs the order comparison.
+The first template function returns [is_sorted_until](http://msdn.microsoft.com/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`( first, last ) == last`. The `operator<` function performs the order comparison.
 
 The second template function returns `is_sorted_until( first, last , comp ) == last`. The *comp* predicate function performs the order comparison.
 

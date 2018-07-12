@@ -317,11 +317,12 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
  *nFlags*  
  Contains one or more of the following flags:  
   
--   `afxRegInsertable` Allows the control to appear in the Insert Object dialog box for OLE objects.    
--   `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.    
--   `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
-  
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.    
+    -   `afxRegInsertable` Allows the control to appear in the Insert Object dialog box for OLE objects.    
+    -   `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.    
+    -   `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
+      
+         You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration. 
+   
  *l*, *w1*, *w2*, *b1*, *b2*, *b3*, *b4*, *b5*, *b6*, *b7*, *b8*  
  Components of the class's CLSID.  
    

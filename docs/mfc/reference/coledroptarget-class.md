@@ -220,23 +220,23 @@ virtual BOOL OnDrop(
 ```  
   
 ### Parameters  
- *pWnd*  
+*pWnd*  
  Points to the window the cursor is currently over.  
   
- *pDataObject*  
- Points to the data object that contains the data to be dropped.  
+*pDataObject*  
+Points to the data object that contains the data to be dropped.  
   
- *dropEffect*  
- The effect that the user chose for the drop operation. It can be one or more of the following:  
+*dropEffect*  
+The effect that the user chose for the drop operation. It can be one or more of the following:  
   
-- DROPEFFECT_COPY A copy operation would be performed.  
+ - DROPEFFECT_COPY A copy operation would be performed.  
+       
+ - DROPEFFECT_MOVE A move operation would be performed.  
+      
+ - DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
   
-- DROPEFFECT_MOVE A move operation would be performed.  
-  
-- DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
-  
- *point*  
- Contains the location of the cursor, in pixels, relative to the screen.  
+*point*  
+Contains the location of the cursor, in pixels, relative to the screen.  
   
 ### Return Value  
  Nonzero if the drop is successful; otherwise 0.  
@@ -286,15 +286,15 @@ virtual DROPEFFECT OnDropEx(
   
  Drop effects describe the action associated with a drop operation. See the following list of drop effects:  
   
-- DROPEFFECT_NONE A drop would not be allowed.  
+ - DROPEFFECT_NONE A drop would not be allowed.  
   
-- DROPEFFECT_COPY A copy operation would be performed.  
+ - DROPEFFECT_COPY A copy operation would be performed.  
   
-- DROPEFFECT_MOVE A move operation would be performed.  
+ - DROPEFFECT_MOVE A move operation would be performed.  
   
-- DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
+ - DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
   
-- DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target.  
+ - DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target.  
   
  For more information, see [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) in the Windows SDK.  
   

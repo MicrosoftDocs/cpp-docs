@@ -25,9 +25,9 @@ ms.workload: ["cplusplus"]
   
 -   [Create objects dynamically](../mfc/dynamic-object-creation.md)  
   
--   [Dump the object's data for diagnostic purposes](http://msdn.microsoft.com/en-us/727855b1-5a83-44bd-9fe3-f1d535584b59)  
+-   [Dump the object's data for diagnostic purposes](http://msdn.microsoft.com/727855b1-5a83-44bd-9fe3-f1d535584b59)  
   
--   Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](http://msdn.microsoft.com/en-us/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
+-   Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](http://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
   
 -   [Have the class serialize itself to persistent storage](../mfc/serialization-in-mfc.md)  
   
