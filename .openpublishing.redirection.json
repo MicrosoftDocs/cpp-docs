@@ -3856,6 +3856,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-enumerate-files-in-a-directory-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#enumerate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-monitor-file-system-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#monitor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-a-binary-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#read_binary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-a-text-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#read_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-file-information-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#retrieve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-a-binary-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#write_binary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-a-text-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#write_text",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
