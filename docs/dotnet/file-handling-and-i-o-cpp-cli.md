@@ -316,4 +316,4 @@ int main()
 
  [File and Stream I-O](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)
 
- [System.IO namespace](https://msdn.microsoft.com/en-us/library/system.io.aspx)
+ [System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)
