@@ -3911,6 +3911,66 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-determine-if-shutdown-has-started-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#determine_shutdown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-determine-the-user-interactive-state-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#determine_user",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-data-from-the-windows-registry-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#read_registry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-windows-performance-counters-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#read_performance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-text-from-the-clipboard-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-dotnet-framework-version-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_dotnet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-current-username-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_current",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-local-machine-name-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_local",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-windows-version-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_version",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-time-elapsed-since-startup-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-store-text-in-the-clipboard-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#store_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#write_data",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
