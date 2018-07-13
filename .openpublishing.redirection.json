@@ -3891,6 +3891,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-convert-image-file-formats-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#convert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-display-images-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#display",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-draw-shapes-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#draw",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-rotate-images-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#rotate",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
