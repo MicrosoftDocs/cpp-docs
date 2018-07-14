@@ -29,6 +29,13 @@ Markdown uses special characters such as \*, \`, and \# for formatting. If you w
 - Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
 - Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
 
+## Markdown editing tools
+
+You can use [Visual Studio Code](https://code.visualstudio.com/) to edit Markdown documents. VS Code has many helpful Markdown extensions, such as:
+
+- [docs-markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) by Microsoft
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
 ## File name
 
 File names use the following rules:
@@ -53,13 +60,20 @@ There **must** be only one first-level heading (H1) in your topic, which will be
 
 If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.     
 
+There should always be one blank line after and before a heading (except for fist-level headings).
+
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
+```markdown
 ### Third-level heading
+
 #### Fourth-level heading
+
 ##### Fifth level heading
+
 ###### Sixth-level heading
- 
+```
+
 ## Text styling
 
 *Italics*
@@ -88,13 +102,13 @@ To link to a header in a Markdown file in the same repo, use relative linking + 
 
 ### External Links
 
-To link to an external file, use the full URL as the link.
+To link to an external file, use the full URL as the link. Use HTTPS URL if applicable.
 
-- Example: [GitHub](http://www.github.com)
+- Example: [GitHub](https://www.github.com)
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: http://www.github.com
+- Example: https://www.github.com
 
 ### Links to APIs
 
@@ -111,13 +125,15 @@ You can use one of the following syntax:
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
 
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repository: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
 
 When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
 - Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
 - Example: @System.Exception.\#ctor becomes `@System.Exception.%23ctor`
 
 ## Lists
+
+Lists should be surrounded by blank lines.
 
 ### Ordered lists
 
@@ -175,7 +191,7 @@ When the UID contains the special characters \` or \#, the UID value needs to be
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
 
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
+You can use a [Markdown table generator tool](https://www.tablesgenerator.com/markdown_tables) to help creating them more easily. See also [Markdown editing tools](#markdown-editing-tools).
 
 ## Code
 
@@ -300,11 +316,13 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ### Channel 9
 
-<iframe src="https://channel9.msdn.com/Shows/On-NET/Shipping-NET-Core-RC2--Tools-Preview-1/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+[![Larry Osterman - His one interaction with Bill Gates (over DOS networking stack)](https://sec.ch9.ms/ch9/caf5/f8657a22-5b83-47a3-9748-4c1be9fecaf5/Larry-Osterman-His-one-interaction-with-Bill-Gate_960.jpg)
+](https://channel9.msdn.com/Blogs/TheChannel9Team/Larry-Osterman-His-one-interaction-with-Bill-Gates-over-DOS-networking-stack)
 
 ### YouTube
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
+[![On .NET 2/4/2016 - Scott Hunter](https://img.youtube.com/vi/g2a4W6Q7aRw/0.jpg)
+](https://www.youtube.com/watch?v=g2a4W6Q7aRw)
 
 ## docs.microsoft extensions
 
