@@ -23,7 +23,7 @@ The bitwise shift operators are the right-shift operator (>>), which moves the b
 ## Remarks  
   
 > [!IMPORTANT]
-> The following descriptions and examples are valid on Windows for X86 and x64 architectures. The implementation of left-shift and right-shift operators is significantly different on Windows RT for ARM devices. For more information, see the "Shift Operators" section of the [Hello ARM](http://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog post.  
+> The following descriptions and examples are valid on Windows for x86 and x64 architectures. The implementation of left-shift and right-shift operators is significantly different on Windows RT for ARM devices. For more information, see the "Shift Operators" section of the [Hello ARM](http://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog post.
   
 ## Left Shifts  
  The left-shift operator causes the bits in *shift-expression* to be shifted to the left by the number of positions specified by *additive-expression*. The bit positions that have been vacated by the shift operation are zero-filled. A left shift is a logical shift (the bits that are shifted off the end are discarded, including the sign bit). For more information about the kinds of bitwise shifts, see [Bitwise shifts](http://en.wikipedia.org/wiki/Bitwise_shift).  
@@ -33,6 +33,7 @@ The bitwise shift operators are the right-shift operator (>>), which moves the b
 ```cpp  
 #include <iostream>  
 #include <bitset>  
+
 using namespace std;  
   
 int main() {  
@@ -48,7 +49,6 @@ int main() {
     bitset<16> bitset3{short3};  
     cout << bitset3 << endl;  // 0000000000010000  
 }  
-  
 ```  
   
  If you left-shift a signed number so that the sign bit is affected, the result is undefined. The following example shows what happens in Visual C++ when a 1 bit is left-shifted into the sign bit position.  
@@ -56,19 +56,20 @@ int main() {
 ```cpp  
 #include <iostream>  
 #include <bitset>  
+
 using namespace std;  
   
 int main() {  
     short short1 = 16384;      
-    bitset<16> bitset1{short2};  
+    bitset<16> bitset1(short1);
     cout << bitset1 << endl;  // 0100000000000000   
   
     short short3 = short1 << 1;  
-    bitset<16> bitset3{short3};  // 16384 left-shifted by 1 = -32768  
+    bitset<16> bitset3(short3);  // 16384 left-shifted by 1 = -32768
     cout << bitset3 << endl;  // 100000000000000  
   
     short short4 = short1 << 14;  
-    bitset<16> bitset4{short4};  // 4 left-shifted by 14 = 0  
+    bitset<16> bitset4(short4);  // 4 left-shifted by 14 = 0
     cout << bitset4 << endl;  // 000000000000000    
 }  
 ```  
@@ -84,6 +85,7 @@ int main() {
 ```cpp  
 #include <iostream>  
 #include <bitset>  
+
 using namespace std;  
   
 int main() {  
@@ -101,7 +103,7 @@ int main() {
   
     unsigned short short14 = short11 >> 11;  // 0  
     bitset<16> bitset14{short14};  
-    cout << bitset14 << endl;     // 0000000000000000}  
+    cout << bitset14 << endl;     // 0000000000000000
 }  
 ```  
   
@@ -110,19 +112,20 @@ int main() {
 ```cpp  
 #include <iostream>  
 #include <bitset>  
+
 using namespace std;  
   
 int main() {  
     short short1 = 1024;  
-    bitset<16> bitset1{short1};  
+    bitset<16> bitset1(short1);
     cout << bitset1 << endl;     // 0000010000000000  
   
     short short2 = short1 >> 1;  // 512  
-    bitset<16> bitset2{short2};  
+    bitset<16> bitset2(short2);
     cout << bitset2 << endl;     // 0000001000000000  
   
     short short3 = short1 >> 11;  // 0  
-    bitset<16> bitset3{short3};     
+    bitset<16> bitset3(short3);
     cout << bitset3 << endl;     // 0000000000000000  
 }  
 ```  
@@ -132,27 +135,28 @@ int main() {
 ```cpp  
 #include <iostream>  
 #include <bitset>  
+
 using namespace std;  
   
 int main() {  
     short neg1 = -16;  
-    bitset<16> bn1{neg1};  
+    bitset<16> bn1(neg1);
     cout << bn1 << endl;  // 1111111111110000  
   
     short neg2 = neg1 >> 1; // -8  
-    bitset<16> bn2{neg2};  
+    bitset<16> bn2(neg2);
     cout << bn2 << endl;  // 1111111111111000  
   
     short neg3 = neg1 >> 2; // -4  
-    bitset<16> bn3{neg3};  
+    bitset<16> bn3(neg3);
     cout << bn3 << endl;  // 1111111111111100  
   
     short neg4 = neg1 >> 4; // -1  
-    bitset<16> bn4{neg4};      
+    bitset<16> bn4(neg4);
     cout << bn4 << endl;  // 1111111111111111  
   
     short neg5 = neg1 >> 5; // -1   
-    bitset<16> bn5{neg5};      
+    bitset<16> bn5(neg5);
     cout << bn5 << endl;  // 1111111111111111  
 }  
 ```  
@@ -185,6 +189,7 @@ int main() {
 ```cpp  
 #include <iostream>  
 #include <bitset>  
+
 using namespace std;  
   
 int main() {  
@@ -201,7 +206,7 @@ int main() {
   
     unsigned int int6 = int1 << 0;  
     bitset<32> b6{int6};  
-    cout << b6 << endl;    // 00000000000000000000000000000100 (no change)}  
+    cout << b6 << endl;    // 00000000000000000000000000000100 (no change)
 }  
 ```  
   
