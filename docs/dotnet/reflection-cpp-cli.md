@@ -384,4 +384,3 @@ int main() {
 ## See also
 
 - [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-- [Reflection (C++/CLI)](../dotnet/reflection-cpp-cli.md)
