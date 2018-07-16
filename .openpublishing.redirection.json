@@ -3996,6 +3996,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-implement-is-and-as-csharp-keywords-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#implement_isas",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-implement-the-lock-csharp-keyword-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#implement_lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#consume_indexer",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
