@@ -3971,6 +3971,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-marshal-ansi-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_ansi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-bstr-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_bstr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-unicode-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_unicode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-a-variant-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_variant",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-a-safearray-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_safearray",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
