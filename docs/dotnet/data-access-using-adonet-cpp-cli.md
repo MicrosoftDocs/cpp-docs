@@ -701,8 +701,12 @@ int main()
 |[ADO.NET](/dotnet/framework/data/adonet/index)|Provides an overview of ADO.NET, a set of classes that expose data access services to the .NET programmer.|  
   
 ## See Also  
- [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   
+ [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+   
  [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
+
  <xref:System.Runtime.InteropServices>   
+
  [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md)   
+
  [Interoperability](http://msdn.microsoft.com/afcc2e7d-3f32-48d2-8141-1c42acf29084)   
