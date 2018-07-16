@@ -4011,6 +4011,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/managed-types-and-the-main-function-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#main_functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#dotnet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/version-issues-for-value-types-nested-in-native-types-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#version_issues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-test-for-equality-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#test_equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-diagnose-and-fix-assembly-compatibility-problems-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#diagnose_fix",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
