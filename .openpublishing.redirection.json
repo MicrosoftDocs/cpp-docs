@@ -3856,6 +3856,186 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-enumerate-files-in-a-directory-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#enumerate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-monitor-file-system-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#monitor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-a-binary-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#read_binary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-a-text-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#read_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-file-information-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#retrieve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-a-binary-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#write_binary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-a-text-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#write_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-convert-image-file-formats-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#convert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-display-images-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#display",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-draw-shapes-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#draw",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-rotate-images-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#rotate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-determine-if-shutdown-has-started-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#determine_shutdown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-determine-the-user-interactive-state-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#determine_user",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-data-from-the-windows-registry-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#read_registry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-windows-performance-counters-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#read_performance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-text-from-the-clipboard-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-dotnet-framework-version-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_dotnet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-current-username-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_current",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-local-machine-name-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_local",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-windows-version-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_version",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-time-elapsed-since-startup-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-store-text-in-the-clipboard-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#store_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#write_data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-ansi-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_ansi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-bstr-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_bstr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-unicode-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_unicode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-a-variant-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_variant",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-a-safearray-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_safearray",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-implement-is-and-as-csharp-keywords-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#implement_isas",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-implement-the-lock-csharp-keyword-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#implement_lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#consume_indexer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/managed-types-and-the-main-function-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#main_functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#dotnet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/version-issues-for-value-types-nested-in-native-types-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#version_issues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-test-for-equality-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#test_equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-diagnose-and-fix-assembly-compatibility-problems-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#diagnose_fix",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
