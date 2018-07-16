@@ -118,8 +118,6 @@
 ## [Friend Assemblies (C++)](friend-assemblies-cpp.md)
 ## [Managed Types (C++/CLI)](managed-types-cpp-cli.md)
 ## [Reflection (C++/CLI)](reflection-cpp-cli.md)
-### [How to: Implement a Plug-In Component Architecture using Reflection (C++/CLI)](how-to-implement-a-plug-in-component-architecture-using-reflection-cpp-cli.md)
-### [How to: Enumerate Data Types in Assemblies using Reflection (C++/CLI)](how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md)
 ## [Strong Name Assemblies (Assembly Signing) (C++/CLI)](strong-name-assemblies-assembly-signing-cpp-cli.md)
 ## [Debug Class (C++/CLI)](debug-class-cpp-cli.md)
 ## [STL/CLR Library Reference](stl-clr-library-reference.md)
