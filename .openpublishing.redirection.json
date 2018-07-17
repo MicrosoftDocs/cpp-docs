@@ -4036,6 +4036,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/how-to-implement-a-plug-in-component-architecture-using-reflection-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/reflection-cpp-cli#implement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md.md",
+            "redirect_url": "/cpp/dotnet/reflection-cpp-cli#enumerate",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
             "redirect_document_id": false
