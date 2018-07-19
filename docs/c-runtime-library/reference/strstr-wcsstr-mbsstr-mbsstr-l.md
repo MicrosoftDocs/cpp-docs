@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 Returns a pointer to the first occurrence of a search string in a string.
 
 > [!IMPORTANT]
-> **_mbsstr** and **_mbsstr_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbsstr` and `_mbsstr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -90,33 +90,33 @@ Locale to use.
 
 ## Return Value
 
-Returns a pointer to the first occurrence of *strSearch* in *str*, or **NULL** if *strSearch* does not appear in *str*. If *strSearch* points to a string of zero length, the function returns *str*.
+Returns a pointer to the first occurrence of *strSearch* in *str*, or NULL if *strSearch* does not appear in *str*. If *strSearch* points to a string of zero length, the function returns *str*.
 
 ## Remarks
 
-The **strstr** function returns a pointer to the first occurrence of *strSearch* in *str*. The search does not include terminating null characters. **wcsstr** is the wide-character version of **strstr** and **_mbsstr** is the multibyte-character version. The arguments and return value of **wcsstr** are wide-character strings; those of **_mbsstr** are multibyte-character strings. **_mbsstr** validates its parameters. If *str* or *strSearch* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, **_mbsstr** sets **errno** to **EINVAL** and returns 0. **strstr** and **wcsstr** do not validate their parameters. These three functions behave identically otherwise.
+The `strstr` function returns a pointer to the first occurrence of *strSearch* in *str*. The search does not include terminating null characters. `wcsstr` is the wide-character version of `strstr` and `_mbsstr` is the multibyte-character version. The arguments and return value of `wcsstr` are wide-character strings; those of `_mbsstr` are multibyte-character strings. `_mbsstr` validates its parameters. If *str* or *strSearch* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `_mbsstr` sets `errno` to EINVAL and returns 0. `strstr` and `wcsstr` do not validate their parameters. These three functions behave identically otherwise.
 
 > [!IMPORTANT]
 > These functions might incur a threat from a buffer overrun problem. Buffer overrun problems can be used to attack a system because they can allow the execution of arbitrary code, which can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload that takes a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro **_CRT_CONST_CORRECT_OVERLOADS** is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads, define the symbol **_CONST_RETURN**.
+In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload that takes a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads, define the symbol _CONST_RETURN.
 
-The output value is affected by the locale-category setting of **LC_CTYPE**; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for this locale-dependent behavior; the versions that have the **_l** suffix are identical except that they instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the locale-category setting of LC_CTYPE; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for this locale-dependent behavior; the versions that have the **_l** suffix are identical except that they instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsstr**|**strstr**|**_mbsstr**|**wcsstr**|
-|**n/a**|**n/a**|**_mbsstr_l**|**n/a**|
+|`_tcsstr`|`strstr`|`_mbsstr`|`wcsstr`|
+|**n/a**|**n/a**|`_mbsstr_l`|**n/a**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strstr**|\<string.h>|
-|**wcsstr**|\<string.h> or \<wchar.h>|
-|**_mbsstr**, **_mbsstr_l**|\<mbstring.h>|
+|`strstr`|\<string.h>|
+|`wcsstr`|\<string.h> or \<wchar.h>|
+|`_mbsstr`, `_mbsstr_l`|\<mbstring.h>|
 
 For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
 
