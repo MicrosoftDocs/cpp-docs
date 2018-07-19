@@ -103,7 +103,7 @@ The **strpbrk** function returns a pointer to the first occurrence of a characte
 
 **_mbspbrk** is similar to **_mbscspn** except that **_mbspbrk** returns a pointer rather than a value of type [size_t](../../c-runtime-library/standard-types.md).
 
-In C, these functions take a **const ** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **const ** returns a pointer to **const **; the version that takes a pointer to non-**const ** returns a pointer to non-**const **. The macro **_CRT_CONST_CORRECT_OVERLOADS** is defined if both the **const ** and non-**const ** versions of these functions are available. If you require the non-**const ** behavior for both C++ overloads, define the symbol **_CONST_RETURN**.
+In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro **_CRT_CONST_CORRECT_OVERLOADS** is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads, define the symbol **_CONST_RETURN**.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
