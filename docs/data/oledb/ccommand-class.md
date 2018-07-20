@@ -174,13 +174,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
  [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  *pRowsAffected*  
- [in/out] A pointer to memory where the count of rows affected by a command is returned. If *\*pRowsAffected* is NULL, no row count is returned. Otherwise, `Open` sets *`pRowsAffected` according to the following conditions:  
+ [in/out] A pointer to memory where the count of rows affected by a command is returned. If *\*pRowsAffected* is NULL, no row count is returned. Otherwise, `Open` sets *\*pRowsAffected* according to the following conditions:  
   
 |If|Then|  
 |--------|----------|  
-|The `cParamSets` element of `pParams` is greater than 1|*`pRowsAffected` represents the total number of rows affected by all of the parameter sets specified in the execution.|  
-|The number of affected rows is not available|*`pRowsAffected` is set to -1.|  
-|The command does not update, delete, or insert rows|*`pRowsAffected` is undefined.|  
+|The `cParamSets` element of `pParams` is greater than 1|*\*pRowsAffected* represents the total number of rows affected by all of the parameter sets specified in the execution.|  
+|The number of affected rows is not available|*\*pRowsAffected* is set to -1.|  
+|The command does not update, delete, or insert rows|*\*pRowsAffected* is undefined.|  
   
  *guidCommand*  
  [in] A GUID that specifies the syntax and general rules for the provider to use in parsing the command text. See [ICommandText::GetCommandText](https://msdn.microsoft.com/library/ms709825.aspx) and [ICommandText::SetCommandText](https://msdn.microsoft.com/library/ms709757.aspx) in the *OLE DB Programmer's Reference* for details.  
