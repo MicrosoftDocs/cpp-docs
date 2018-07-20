@@ -42,7 +42,7 @@ class CDBPropSet : public tagDBPROPSET
   
 |||  
 |-|-|  
-|[operator =](../../data/oledb/cdbpropset-operator-equal.md)|Assigns the contents of one property set to another.|  
+|[operator =](#op_equal)|Assigns the contents of one property set to another.|  
   
 ## Remarks  
  OLE DB providers and consumers use `DBPROPSET` structures to pass arrays of `DBPROP` structures. Each `DBPROP` structure represents a single property that can be set.  
