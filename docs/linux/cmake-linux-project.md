@@ -21,7 +21,7 @@ When you install the Linux C++ workload, CMake support for Linux is selected by 
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]  
-> The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. If your package manager provides an older version of CMake, you can work around it by [building CMake from source](#build-a-supported-cmake release-from-source) or downloading it from the official [CMake download page](https://cmake.org/download/).
+> The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. If your package manager provides an older version of CMake, you can work around it by [building CMake from source](#build-a-supported-cmake release-from-source) or downloading it from the official [CMake download page](https://cmake.org/download/). For a Microsoft-provided CMake variant that supports the [CMake Targets View](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) pane in Visual Studio, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
 ## Open a folder
 
@@ -135,7 +135,7 @@ Next, run this command to verify the version is >= 3.8 and that server mode is e
 cmake -E capabilities
 ```
 
-## See also
+## See Also
 
 [Working with Project Properties](../ide/working-with-project-properties.md)  
 [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)  
