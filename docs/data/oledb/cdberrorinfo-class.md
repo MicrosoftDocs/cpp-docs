@@ -87,7 +87,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
  S_OK if successful. See [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) in the *OLE DB Programmer's Reference* for other return values.  
   
 ### Remarks  
- The output value of *pbstrDescription* is obtained internally by calling IErrorInfo::GetDescription, which sets the value to NULL if the locale is not supported, or if both of the following conditions are true:  
+ The output value of *pbstrDescription* is obtained internally by calling `IErrorInfo::GetDescription`, which sets the value to NULL if the locale is not supported, or if both of the following conditions are true:  
   
 1.  the value of *lcid* is NOT U.S. English and  
   
