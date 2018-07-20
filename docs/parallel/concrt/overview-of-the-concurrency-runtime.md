@@ -33,11 +33,11 @@ This document provides an overview of the Concurrency Runtime. It describes the 
 
 In Visual Studio 2010 through 2013, the Concurrency Runtime was incorporated within msvcr100.dll through msvcr120.dll.  When the UCRT refactoring occurred in Visual Studio 2015, that DLL was refactored into three parts:
 
-1. ucrtbase.dll – C API, shipped in Windows 10 and serviced downlevel via Windows Update
+- ucrtbase.dll – C API, shipped in Windows 10 and serviced downlevel via Windows Update- 
 
-1. vcruntime140.dll – Compiler support functions and EH runtime, shipped via Visual Studio
+- vcruntime140.dll – Compiler support functions and EH runtime, shipped via Visual Studio
 
-1. concrt140.dll – Concurrency Runtime, shipped via Visual Studio. Required for parallel containers and algorithms such as `concurrency::parallel_for`. Also, the STL requires this DLL on Windows XP to power synchronization primitives, because Windows XP does not have condition variables. 
+- concrt140.dll – Concurrency Runtime, shipped via Visual Studio. Required for parallel containers and algorithms such as `concurrency::parallel_for`. Also, the STL requires this DLL on Windows XP to power synchronization primitives, because Windows XP does not have condition variables. 
 
 In Visual Studio 2015 and later, the Concurrency Runtime Task Scheduler is no longer the scheduler for the task class and related types in ppltasks.h. Those types now use the Windows ThreadPool for better performance and interoperability with Windows synchronization primitives.  
   
