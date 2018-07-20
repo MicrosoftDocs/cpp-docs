@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "linux"]
 
 # Connect to Your remote Linux computer
 
-When building a C++ Linux project in Visuaql Studio, Linux code is copied to your remote Linux computer and then compiled based on settings in Visual Studio. To setup this remote connection:
+When building a C++ Linux project in Visual Studio, Linux code is copied to your remote Linux computer and then compiled based on Visual Studio settings. To set up this remote connection:
 
 1. Build the project for the first time or manually create a new entry by selecting **Tools > Options** and then open the **Cross Platform > Connection Manager** node and click the **Add** button.
 
