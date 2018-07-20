@@ -661,6 +661,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cdberrorinfo-getallerrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#getallerrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-getbasicerrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#getbasicerrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-getcustomerrorobject.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#getcustomerrorobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-geterrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#geterrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-geterrorparameters.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#geterrorparameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-geterrorrecords.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#geterrorrecords",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
