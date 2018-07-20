@@ -262,7 +262,7 @@ HRESULT CCommandBase::CreateCommand(const CSession& session) throw ();
 ### Remarks  
  This method creates a command using the specified session object.  
 
-## <a name="getparameterinfo"></a> Command::GetParameterInfo
+## <a name="getparameterinfo"></a> CCommand::GetParameterInfo
 Gets a list of the command's parameters, their names, and their types.  
   
 ### Syntax  
