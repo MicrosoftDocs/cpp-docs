@@ -361,6 +361,66 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/caccessorbase-close.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-gethaccessor.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#geth",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-getnumaccessors.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#getnum",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-isautoaccessor.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#isauto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-releaseaccessors.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-members.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-methods.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-bind.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#bind",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-caccessorrowset.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#caccessorrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-close.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-freerecordmemory.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#freerecordmemory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
