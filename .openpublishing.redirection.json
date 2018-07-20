@@ -566,6 +566,56 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cdataconnection-cdataconnection.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#cdataconnection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-copy.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#copy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-open.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-opennewsession.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#opennewsession",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-bool.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_bool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-bool-ole-db.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_bool_ole",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-cdatasource-amp.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_cdata_amp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-cdatasource-star.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_cdata_star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-csession-amp.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_csession_amp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-csession-star.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_csession_star",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
