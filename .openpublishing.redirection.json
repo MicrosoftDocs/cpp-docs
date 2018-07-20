@@ -421,6 +421,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/carrayrowset-carrayrowset.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#carrayrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-m-nrowsread.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#nrowsread",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-operator.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-snapshot.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#snapshot",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
