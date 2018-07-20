@@ -25,12 +25,12 @@ struct is_null_pointer;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `T` is `std::nullptr_t`, otherwise it holds false.
+An instance of the type predicate holds true if the type *T* is `std::nullptr_t`, otherwise it holds false.
 
 ## Requirements
 

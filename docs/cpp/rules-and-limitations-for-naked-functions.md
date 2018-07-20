@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 ## Microsoft Specific  
  The following rules and limitations apply to naked functions:  
   
--   The `return` statement is not permitted.  
+-   The **return** statement is not permitted.  
   
 -   Structured Exception Handling and C++ Exception Handling constructs are not permitted because they must unwind across the stack frame.  
   
@@ -29,7 +29,7 @@ ms.workload: ["cplusplus"]
   
 -   You cannot declare C++ class objects at the function lexical scope. You can, however, declare objects in a nested block.  
   
--   The `naked` keyword is ignored when compiling with [/clr](../build/reference/clr-common-language-runtime-compilation.md).  
+-   The **naked** keyword is ignored when compiling with [/clr](../build/reference/clr-common-language-runtime-compilation.md).  
   
 -   For [__fastcall](../cpp/fastcall.md) naked functions, whenever there is a reference in C/C++ code to one of the register arguments, the prolog code should store the values of that register into the stack location for that variable. For example:  
   

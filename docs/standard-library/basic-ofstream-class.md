@@ -25,15 +25,15 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 
 ### Parameters
 
-`Elem`
+*Elem*
  The basic element of the file buffer.
 
-`Tr`
+*Tr*
  The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
 
-When the `wchar_t` specialization of `basic_ofstream` writes to the file, if the file is opened in text mode it will write a MBCS sequence. The internal representation will use a buffer of `wchar_t` characters.
+When the **wchar_t** specialization of `basic_ofstream` writes to the file, if the file is opened in text mode it will write a MBCS sequence. The internal representation will use a buffer of `wchar_t` characters.
 
 The object stores an object of class `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -110,25 +110,25 @@ basic_ofstream(
 
 ### Parameters
 
-`_Filename`
+*_Filename*
  The name of the file to open.
 
-`_Mode`
+*_Mode*
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`_Prot`
+*_Prot*
  The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-`right`
+*right*
  The rvalue reference to the `basic_ofstream` object being used to initialize this `basic_ofstream` object.
 
 ### Remarks
 
-The first constructor initializes the base class by calling [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), where **sb** is the stored object of class [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>. It also initializes **sb** by calling `basic_filebuf`< `Elem`, `Tr`>.
+The first constructor initializes the base class by calling [basic_ostream](../standard-library/basic-ostream-class.md)(`sb`), where `sb` is the stored object of class [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>. It also initializes `sb` by calling `basic_filebuf`< `Elem`, `Tr`>.
 
-The second and third constructors initializes the base class by calling `basic_ostream`( **sb**). It also initializes **sb** by calling `basic_filebuf`< `Elem`, `Tr`> and then **sb**. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). If the latter function returns a null pointer, the constructor calls [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**).
+The second and third constructors initializes the base class by calling `basic_ostream`( **sb**). It also initializes `sb` by calling `basic_filebuf`< `Elem`, `Tr`> and then `sb`. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). If the latter function returns a null pointer, the constructor calls [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
 
-The fourth constructor is a copy function. It initializes the object with the contents of `right`, treated as an rvalue reference.
+The fourth constructor is a copy function. It initializes the object with the contents of *right*, treated as an rvalue reference.
 
 ### Example
 
@@ -166,7 +166,7 @@ The member function calls [rdbuf](../standard-library/basic-ifstream-class.md#rd
 
 ### Example
 
-See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses **close**.
+See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `close`.
 
 ## <a name="is_open"></a>  basic_ofstream::is_open
 
@@ -178,7 +178,7 @@ bool is_open() const;
 
 ### Return Value
 
-`true` if the file is open, `false` otherwise.
+**true** if the file is open, **false** otherwise.
 
 ### Remarks
 
@@ -232,22 +232,22 @@ void open(
 
 ### Parameters
 
-`_Filename`
+*_Filename*
  The name of the file to open.
 
-`_Mode`
+*_Mode*
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`_Prot`
+*_Prot*
  The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
-The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; `ios_base::out`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**).
+The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; `ios_base::out`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
 
 ### Example
 
-See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses **open**.
+See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses `open`.
 
 ## <a name="op_eq"></a>  basic_ofstream::operator=
 
@@ -259,7 +259,7 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 ### Parameters
 
-`right`
+*right*
  An rvalue reference to a `basic_ofstream` object.
 
 ### Return Value
@@ -268,7 +268,7 @@ Returns `*this`.
 
 ### Remarks
 
-The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference.
+The member operator replaces the contents of the object by using the contents of *right*, treated as an rvalue reference.
 
 ## <a name="rdbuf"></a>  basic_ofstream::rdbuf
 
@@ -296,12 +296,12 @@ void swap(basic_ofstream& right);
 
 ### Parameters
 
-`right`
+*right*
  An `lvalue` reference to another `basic_ofstream` object.
 
 ### Remarks
 
-The member function exchanges the contents of this object for the contents of `right`.
+The member function exchanges the contents of this object for the contents of *right*.
 
 ## See also
 

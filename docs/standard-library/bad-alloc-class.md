@@ -28,7 +28,7 @@ virtual ~bad_alloc();
 
 ## Remarks
 
-The value returned by **what** is an implementation-defined C string. None of the member functions throw any exceptions.
+The value returned by `what` is an implementation-defined C string. None of the member functions throw any exceptions.
 
 ## Requirements
 

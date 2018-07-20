@@ -33,7 +33,7 @@ The type to modify.
 
 ## Remarks
 
-The member typedef `type` names the same type as `remove_reference<T>::type*`. The alias `add_pointer_t` is a shortcut to access the member typedef `type`.
+The member **typedef** `type` names the same type as `remove_reference<T>::type*`. The alias `add_pointer_t` is a shortcut to access the member **typedef** `type`.
 
 Because it is invalid to make a pointer from a reference, `add_pointer` removes the reference, if any, from the specified type before it makes a pointer-to-type. Consequently, you can use a type with `add_pointer` without being concerned about whether the type is a reference.
 

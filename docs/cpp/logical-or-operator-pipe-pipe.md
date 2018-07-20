@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 
 ## Remarks
 
-The logical OR operator (**||**) returns the boolean value **true** if either or both operands is **true** and returns **false** otherwise. The operands are implicitly converted to type **bool** prior to evaluation, and the result is of type **bool**. Logical OR has left-to-right associativity.
+The logical OR operator (**||**) returns the boolean value TRUE if either or both operands is TRUE and returns FALSE otherwise. The operands are implicitly converted to type **bool** prior to evaluation, and the result is of type **bool**. Logical OR has left-to-right associativity.
 
 The operands to the logical OR operator need not be of the same type, but they must be of integral or pointer type. The operands are commonly relational or equality expressions.
 
@@ -32,7 +32,7 @@ The second operand is evaluated only if the first operand evaluates to false (0)
 printf( "%d" , (x == w || x == y || x == z) );
 ```
 
-In the above example, if `x` is equal to either `w`, `y`, or `z`, the second argument to the **printf** function evaluates to true and the value 1 is printed. Otherwise, it evaluates to false and the value 0 is printed. As soon as one of the conditions evaluates to true, evaluation ceases.
+In the above example, if `x` is equal to either `w`, `y`, or `z`, the second argument to the `printf` function evaluates to true and the value 1 is printed. Otherwise, it evaluates to false and the value 0 is printed. As soon as one of the conditions evaluates to true, evaluation ceases.
 
 ## Operator Keyword for &#124;&#124;
 

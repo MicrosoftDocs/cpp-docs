@@ -49,7 +49,7 @@ public:
 ### Parameters
 
 *IntType*
-The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).

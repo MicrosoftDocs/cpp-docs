@@ -25,8 +25,8 @@ BSTR copy( bool fCopy = true ) const;
 ```  
   
 #### Parameters  
- `fCopy`  
- If **true**, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.  
+ *fCopy*  
+ If TRUE, `copy` returns a copy of the contained `BSTR`, otherwise `copy` returns the actual BSTR.  
   
 ## Remarks  
  Returns a newly allocated copy of the encapsulated `BSTR` object.  

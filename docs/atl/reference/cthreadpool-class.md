@@ -26,7 +26,7 @@ class CThreadPool : public IThreadPoolConfig
  *Worker*  
  The class conforming to the [worker archetype](../../atl/reference/worker-archetype.md) providing the code used to process work items queued on the thread pool.  
   
- `ThreadTraits`  
+ *ThreadTraits*  
  The class providing the function used to create the threads in the pool.  
   
 ## Members  
@@ -48,7 +48,7 @@ class CThreadPool : public IThreadPoolConfig
 |[CThreadPool::GetSize](#getsize)|Call this method to get the number of threads in the pool.|  
 |[CThreadPool::GetTimeout](#gettimeout)|Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|  
 |[CThreadPool::Initialize](#initialize)|Call this method to initialize the thread pool.|  
-|[CThreadPool::QueryInterface](#queryinterface)|Implementation of **IUnknown::QueryInterface**.|  
+|[CThreadPool::QueryInterface](#queryinterface)|Implementation of `IUnknown::QueryInterface`.|  
 |[CThreadPool::QueueRequest](#queuerequest)|Call this method to queue a work item to be handled by a thread in the pool.|  
 |[CThreadPool::Release](#release)|Implementation of `IUnknown::Release`.|  
 |[CThreadPool::SetSize](#setsize)|Call this method to set the number of threads in the pool.|  
@@ -58,11 +58,11 @@ class CThreadPool : public IThreadPoolConfig
 ## Remarks  
  Threads in the pool are created and destroyed when the pool is initialized, resized, or shut down. An instance of class *Worker* will be created on the stack of each worker thread in the pool. Each instance will live for the lifetime of the thread.  
   
- Immediately after creation of a thread, *Worker*:: `Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*:: `Terminate` will be called. Both methods must accept a **void\*** argument. The value of this argument is passed to the thread pool through the `pvWorkerParam` parameter of [CThreadPool::Initialize](#initialize).  
+ Immediately after creation of a thread, *Worker*:: `Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*:: `Terminate` will be called. Both methods must accept a **void\*** argument. The value of this argument is passed to the thread pool through the *pvWorkerParam* parameter of [CThreadPool::Initialize](#initialize).  
   
- When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the **Execute** method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used for the IO completion port queue.  
+ When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the `Execute` method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used for the IO completion port queue.  
   
- The *Worker* class declares the type of the items that will be queued on the thread pool by providing a typedef, *Worker*:: `RequestType`. This type must be capable of being cast to and from a **ULONG_PTR**.  
+ The *Worker* class declares the type of the items that will be queued on the thread pool by providing a typedef, *Worker*:: `RequestType`. This type must be capable of being cast to and from a ULONG_PTR.  
   
  An example of a *Worker* class is [CNonStatelessWorker Class](../../atl/reference/cnonstatelessworker-class.md).  
   
@@ -97,7 +97,7 @@ CThreadPool() throw();
 ```  
   
 ### Remarks  
- Initializes the timeout value to `ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT`. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.  
+ Initializes the timeout value to ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.  
   
 ##  <a name="dtor"></a>  CThreadPool::~CThreadPool  
  The destructor for the thread pool.  
@@ -137,7 +137,7 @@ HRESULT STDMETHODCALLTYPE GetSize(int* pnNumThreads) throw();
 ```  
   
 ### Parameters  
- `pnNumThreads`  
+ *pnNumThreads*  
  [out] Address of the variable that, on success, receives the number of threads in the pool.  
   
 ### Return Value  
@@ -151,7 +151,7 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
 ```  
   
 ### Parameters  
- `pdwMaxWait`  
+ *pdwMaxWait*  
  [out] Address of the variable that, on success, receives the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
   
 ### Return Value  
@@ -172,17 +172,17 @@ HRESULT Initialize(
 ```  
   
 ### Parameters  
- `pvWorkerParam`  
- The worker parameter to be passed to the worker thread object's `Initialize`, **Execute**, and `Terminate` methods.  
+ *pvWorkerParam*  
+ The worker parameter to be passed to the worker thread object's `Initialize`, `Execute`, and `Terminate` methods.  
   
- `nNumThreads`  
+ *nNumThreads*  
  The requested number of threads in the pool.  
   
- If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, `ATLS_DEFAULT_THREADSPERPROC` will be multiplied by the number of processors in the machine to get the total number of threads.  The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
+ If *nNumThreads* is zero, ATLS_DEFAULT_THREADSPERPROC will be multiplied by the number of processors in the machine to get the total number of threads.  The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
   
- `dwStackSize`  
+ *dwStackSize*  
  The stack size for each thread in the pool.  
   
  *hCompletion*  
@@ -192,14 +192,14 @@ HRESULT Initialize(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ##  <a name="queryinterface"></a>  CThreadPool::QueryInterface  
- Implementation of **IUnknown::QueryInterface**.  
+ Implementation of `IUnknown::QueryInterface`.  
   
 ```
 HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
 ```  
   
 ### Remarks  
- Objects of this class can be successfully queried for the **IUnknown** and [IThreadPoolConfig](../../atl/reference/ithreadpoolconfig-interface.md) interfaces.  
+ Objects of this class can be successfully queried for the `IUnknown` and [IThreadPoolConfig](../../atl/reference/ithreadpoolconfig-interface.md) interfaces.  
   
 ##  <a name="queuerequest"></a>  CThreadPool::QueueRequest  
  Call this method to queue a work item to be handled by a thread in the pool.  
@@ -209,7 +209,7 @@ BOOL QueueRequest(Worker::RequestType request) throw();
 ```  
   
 ### Parameters  
- `request`  
+ *request*  
  The request to be queued.  
   
 ### Return Value  
@@ -239,18 +239,18 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 ```  
   
 ### Parameters  
- `nNumThreads`  
+ *nNumThreads*  
  The requested number of threads in the pool.  
   
- If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, `ATLS_DEFAULT_THREADSPERPROC` will be multiplied by the number of processors in the machine to get the total number of threads. The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
+ If *nNumThreads* is zero, ATLS_DEFAULT_THREADSPERPROC will be multiplied by the number of processors in the machine to get the total number of threads. The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- If the number of threads specified is less than the number of threads currently in the pool, the object puts a shutdown message on the queue to be picked up by a waiting thread. When a waiting thread pulls the message off the queue, it notifies the thread pool and exits the thread procedure. This process is repeated until the number of threads in the pool reaches the specified number or until no thread has exited within the period specified by [GetTimeout](#gettimeout)/ [SetTimeout](#settimeout). In this situation the method will return an HRESULT corresponding to **WAIT_TIMEOUT** and the pending shutdown message is canceled.  
+ If the number of threads specified is less than the number of threads currently in the pool, the object puts a shutdown message on the queue to be picked up by a waiting thread. When a waiting thread pulls the message off the queue, it notifies the thread pool and exits the thread procedure. This process is repeated until the number of threads in the pool reaches the specified number or until no thread has exited within the period specified by [GetTimeout](#gettimeout)/ [SetTimeout](#settimeout). In this situation the method will return an HRESULT corresponding to WAIT_TIMEOUT and the pending shutdown message is canceled.  
   
 ##  <a name="settimeout"></a>  CThreadPool::SetTimeout  
  Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
@@ -260,16 +260,16 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
 ```  
   
 ### Parameters  
- `dwMaxWait`  
+ *dwMaxWait*  
  The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The timeout is initialized to `ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT`. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h. 
+ The timeout is initialized to ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h. 
   
- Note that `dwMaxWait` is the time that the pool will wait for a single thread to shut down. The maximum time that could be taken to remove multiple threads from the pool could be slightly less than `dwMaxWait` multiplied by the number of threads.  
+ Note that *dwMaxWait* is the time that the pool will wait for a single thread to shut down. The maximum time that could be taken to remove multiple threads from the pool could be slightly less than *dwMaxWait* multiplied by the number of threads.  
   
 ##  <a name="shutdown"></a>  CThreadPool::Shutdown  
  Call this method to shut down the thread pool.  
@@ -279,7 +279,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 ```  
   
 ### Parameters  
- `dwMaxWait`  
+ *dwMaxWait*  
  The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down. If 0 or no value is supplied, this method will use the timeout set by [CThreadPool::SetTimeout](#settimeout).  
   
 ### Remarks  

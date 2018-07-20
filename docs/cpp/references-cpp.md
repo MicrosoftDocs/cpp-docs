@@ -34,7 +34,7 @@ A reference, like a pointer, stores the address of an object that is located els
   
 -   An optional storage class specifier.  
   
--   Optional **const** and/or `volatile` qualifiers.  
+-   Optional **const** and/or **volatile** qualifiers.  
   
 -   The type specifier: the name of a type.  
   
@@ -44,13 +44,13 @@ A reference, like a pointer, stores the address of an object that is located els
   
 -   The & operator or && operator.  
   
--   Optional **const** and/or `volatile` qualifers.  
+-   Optional **const** and/or **volatile** qualifers.  
   
 -   The identifier.  
   
  3. An optional initializer.  
   
- The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md) and [declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838).  
+ The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md).  
   
  Multiple declarators and initializers may appear in a comma-separated list following a single declaration specifier. For example:  
   

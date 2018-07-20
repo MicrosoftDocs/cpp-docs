@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Anonymous Class Types
-Classes can be anonymous — that is, they can be declared without an *identifier*. This is useful when you replace a class name with a `typedef` name, as in the following:  
+Classes can be anonymous — that is, they can be declared without an *identifier*. This is useful when you replace a class name with a **typedef** name, as in the following:  
   
 ```cpp 
 typedef struct  
@@ -23,7 +23,7 @@ typedef struct
 ```  
   
 > [!NOTE]
->  The use of anonymous classes shown in the previous example is useful for preserving compatibility with existing C code. In some C code, the use of `typedef` in conjunction with anonymous structures is prevalent.  
+>  The use of anonymous classes shown in the previous example is useful for preserving compatibility with existing C code. In some C code, the use of **typedef** in conjunction with anonymous structures is prevalent.  
   
  Anonymous classes are also useful when you want a reference to a class member to appear as though it were not contained in a separate class, as in the following:  
   

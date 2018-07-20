@@ -15,7 +15,7 @@ ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
 
 ## <a name="string"></a>  string
 
-A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `char`.
+A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type **char**.
 
 Other typedefs that specialize `basic_string` include [wstring](../standard-library/string-typedefs.md#wstring), [u16string](../standard-library/string-typedefs.md#u16string), and [u32string](../standard-library/string-typedefs.md#u32string).
 
@@ -65,7 +65,7 @@ For a list of string constructors, see [basic_string::basic_string](../standard-
 
 ## <a name="wstring"></a>  wstring
 
-A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `wchar_t`.
+A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type **wchar_t**.
 
 Other typedefs that specialize `basic_string` include [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string), and [u32string](../standard-library/string-typedefs.md#u32string).
 
@@ -86,7 +86,7 @@ basic_string<wchar_t> wstr(L"");
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
 > [!NOTE]
-> The size of `wchar_t` is implementation-defined. If your code depends on `wchar_t` to be a certain size, check your platform's implementation (for example, with `sizeof(wchar_t)`). If you need a string character type with a width that is guaranteed to remain the same on all platforms, use [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string), or [u32string](../standard-library/string-typedefs.md#u32string).
+> The size of **wchar_t** is implementation-defined. If your code depends on **wchar_t** to be a certain size, check your platform's implementation (for example, with `sizeof(wchar_t)`). If you need a string character type with a width that is guaranteed to remain the same on all platforms, use [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string), or [u32string](../standard-library/string-typedefs.md#u32string).
 
 ## See also
 

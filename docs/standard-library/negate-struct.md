@@ -37,11 +37,11 @@ struct negate<void>
 
 ### Parameters
 
-`Type`
+*Type*
  Any type that supports an `operator-` that takes an operand of the specified or inferred type.
 
-`Left`
- The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `Type`.
+*Left*
+ The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
 
 ## Return Value
 

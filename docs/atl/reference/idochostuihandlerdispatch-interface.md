@@ -29,7 +29,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 ### Public Methods  
   
 > [!NOTE]
->  The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface. `IDocHostUIHandlerDispatch` has the same functionality as **IDocUIHostHandler**, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas **IDocUIHostHandler** is a custom interface.  
+>  The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface. `IDocHostUIHandlerDispatch` has the same functionality as `IDocUIHostHandler`, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas `IDocUIHostHandler` is a custom interface.  
   
 |||  
 |-|-|  

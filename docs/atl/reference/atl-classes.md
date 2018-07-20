@@ -23,11 +23,11 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md)|Contains type information used to describe a method or property on a dispinterface.|atlcom.h|  
 |[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)|Contains data used by every ATL module.|atlbase.h|  
 |[_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)|Used by windowing code in ATL.|atlbase.h|  
-|[CA2AEX](../../atl/reference/ca2aex-class.md)|This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and the typedef **CA2A**.|atlconv.h|  
-|[CA2CAEX](../../atl/reference/ca2caex-class.md)|This class is used by string conversion macros `CA2CTEX` and `CT2CAEX`, and the typedef **CA2CA**.|atlconv.h|  
-|[CA2WEX](../../atl/reference/ca2wex-class.md)|This class is used by the string conversion macros `CA2TEX`, `CA2CTEX`, `CT2WEX`, and `CT2CWEX`, and the typedef **CA2W**.|atlconv.h|  
+|[CA2AEX](../../atl/reference/ca2aex-class.md)|This class is used by the string conversion macros CA2TEX and CT2AEX, and the typedef CA2A.|atlconv.h|  
+|[CA2CAEX](../../atl/reference/ca2caex-class.md)|This class is used by string conversion macros CA2CTEX and CT2CAEX, and the typedef CA2CA.|atlconv.h|  
+|[CA2WEX](../../atl/reference/ca2wex-class.md)|This class is used by the string conversion macros CA2TEX, CA2CTEX, CT2WEX, and CT2CWEX, and the typedef CA2W.|atlconv.h|  
 |[CAccessToken](../../atl/reference/caccesstoken-class.md)|This class is a wrapper for an access token.|atlsecurity.h|  
-|[CAcl](../../atl/reference/cacl-class.md)|This class is a wrapper for an **ACL** (access-control list) structure.|atlsecurity.h|  
+|[CAcl](../../atl/reference/cacl-class.md)|This class is a wrapper for an ACL (access-control list) structure.|atlsecurity.h|  
 |[CAdapt](../../atl/reference/cadapt-class.md)|This template is used to wrap classes that redefine the address-of operator to return something other than the address of the object.|atlcomcli.h|  
 |[CAtlArray](../../atl/reference/catlarray-class.md)|This class implements an array object.|atlcoll.h|  
 |[CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md)|This class implements a thread-pooled, apartment-model COM server.|atlbase.h|  
@@ -65,7 +65,7 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[CComApartment](../../atl/reference/ccomapartment-class.md)|This class provides support for managing an apartment in a thread-pooled EXE module.|atlbase.h|  
 |[CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md)|This class provides methods for obtaining and releasing ownership of a critical section object.|atlcore.h|  
 |[CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)|As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Modules](../../atl/atl-module-classes.md) for more details.|atlbase.h|  
-|[CComBSTR](../../atl/reference/ccombstr-class.md)|This class is a wrapper for `BSTR`s.|atlbase.h|  
+|[CComBSTR](../../atl/reference/ccombstr-class.md)|This class is a wrapper for BSTRs.|atlbase.h|  
 |[CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)|This class implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a tear-off interface.|atlcom.h|  
 |[CComClassFactory](../../atl/reference/ccomclassfactory-class.md)|This class implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface.|atlcom.h|  
 |[CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md)|This class implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface.|atlcom.h|  
@@ -73,13 +73,13 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md)|This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object.|atlcom.h|  
 |[CComCoClass](../../atl/reference/ccomcoclass-class.md)|This class provides methods for creating instances of a class and obtaining its properties.|atlcom.h|  
 |[CComCompositeControl](../../atl/reference/ccomcompositecontrol-class.md)|This class provides the methods required to implement a composite control.|atlctl.h|  
-|[CComContainedObject](../../atl/reference/ccomcontainedobject-class.md)|This class implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's **IUnknown**.|atlcom.h|  
+|[CComContainedObject](../../atl/reference/ccomcontainedobject-class.md)|This class implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's `IUnknown`.|atlcom.h|  
 |[CComControl](../../atl/reference/ccomcontrol-class.md)|This class provides methods for creating and managing ATL controls.|atlctl.h|  
 |[CComControlBase](../../atl/reference/ccomcontrolbase-class.md)|This class provides methods for creating and managing ATL controls.|atlctl.h|  
 |[CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)|This class provides methods for obtaining and releasing ownership of a critical section object.|atlcore.h|  
 |[CComCritSecLock](../../atl/reference/ccomcritseclock-class.md)|This class provides methods for locking and unlocking a critical section object.|atlbase.h|  
-|[CComCurrency](../../atl/reference/ccomcurrency-class.md)|This class has methods and operators for creating and managing a `CURRENCY` object.|atlcur.h|  
-|[CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)|This class stores an array of **IUnknown** pointers.|atlcom.h|  
+|[CComCurrency](../../atl/reference/ccomcurrency-class.md)|This class has methods and operators for creating and managing a CURRENCY object.|atlcur.h|  
+|[CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)|This class stores an array of `IUnknown` pointers.|atlcom.h|  
 |[CComEnum](../../atl/reference/ccomenum-class.md)|This class defines a COM enumerator object based on an array.|atlcom.h|  
 |[CComEnumImpl](../../atl/reference/ccomenumimpl-class.md)|This class provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array.|atlcom.h|  
 |[CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)|This class defines a COM enumerator object based on a C++ Standard Library collection.|atlcom.h|  
@@ -90,13 +90,13 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[CComModule](../../atl/reference/ccommodule-class.md)|As of ATL 7.0, `CComModule` is obsolete: see [ATL Modules](../../atl/atl-module-classes.md) for more details.|atlbase.h|  
 |[CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)|This class provides thread-safe methods for incrementing and decrementing the value of a variable.|atlbase.h|  
 |[CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)|This class provides thread-safe methods for incrementing and decrementing the value of a variable, without critical section locking or unlocking functionality.|atlbase.h|  
-|[CComObject](../../atl/reference/ccomobject-class.md)|This class implements **IUnknown** for a nonaggregated object.|atlcom.h|  
+|[CComObject](../../atl/reference/ccomobject-class.md)|This class implements `IUnknown` for a nonaggregated object.|atlcom.h|  
 |[CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md)|This class manages a reference count on the module containing your `Base` object.|atlcom.h|  
-|[CComObjectNoLock](../../atl/reference/ccomobjectnolock-class.md)|This class implements **IUnknown** for a nonaggregated object, but does not increment the module lock count in the constructor.|atlcom.h|  
+|[CComObjectNoLock](../../atl/reference/ccomobjectnolock-class.md)|This class implements `IUnknown` for a nonaggregated object, but does not increment the module lock count in the constructor.|atlcom.h|  
 |[CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)|This typedef of [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) is templatized on the default threading model of the server.|atlcom.h|  
 |[CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)|This class provides methods to handle object reference count management for both nonaggregated and aggregated objects.|atlcom.h|  
-|[CComObjectStack](../../atl/reference/ccomobjectstack-class.md)|This class creates a temporary COM object and provides it with a skeletal implementation of **IUnknown**.|atlcom.h|  
-|[CComPolyObject](../../atl/reference/ccompolyobject-class.md)|This class implements **IUnknown** for an aggregated or nonaggregated object.|atlcom.h|  
+|[CComObjectStack](../../atl/reference/ccomobjectstack-class.md)|This class creates a temporary COM object and provides it with a skeletal implementation of `IUnknown`.|atlcom.h|  
+|[CComPolyObject](../../atl/reference/ccompolyobject-class.md)|This class implements `IUnknown` for an aggregated or nonaggregated object.|atlcom.h|  
 |[CComPtr](../../atl/reference/ccomptr-class.md)|A smart pointer class for managing COM interface pointers.|atlcomcli.h|  
 |[CComPtrBase](../../atl/reference/ccomptrbase-class.md)|This class provides a basis for smart pointer classes using COM-based memory routines.|atlcomcli.h|  
 |[CComQIPtr](../../atl/reference/ccomqiptr-class.md)|A smart pointer class for managing COM interface pointers.|atlcomcli.h|  
@@ -106,7 +106,7 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md)|This class manages thread selection for the class [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).|atlbase.h|  
 |[CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md)|This class provides methods for incrementing and decrementing the value of a variable.|atlbase.h|  
 |[CComTearOffObject](../../atl/reference/ccomtearoffobject-class.md)|This class implements a tear-off interface.|atlcom.h|  
-|[CComUnkArray](../../atl/reference/ccomunkarray-class.md)|This class stores **IUnknown** pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.|atlcom.h|  
+|[CComUnkArray](../../atl/reference/ccomunkarray-class.md)|This class stores `IUnknown` pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.|atlcom.h|  
 |[CComVariant](../../atl/reference/ccomvariant-class.md)|This class wraps the VARIANT type, providing a member indicating the type of data stored.|atlcomcli.h|  
 |[CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)|This class implements a window contained within another object.|atlwin.h|  
 |[CCRTAllocator](../../atl/reference/ccrtallocator-class.md)|This class provides methods for managing memory using CRT memory routines.|atlcore.h|  
@@ -144,8 +144,8 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[CRegKey](../../atl/reference/cregkey-class.md)|This class provides methods for manipulating entries in the system registry.|atlbase.h|  
 |[CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md)|This class provides the creation function for a CRT thread. Use this class if the thread will use CRT functions.|atlbase.h|  
 |[CSacl](../../atl/reference/csacl-class.md)|This class is a wrapper for a SACL (system access-control list) structure.|atlsecurity.h|  
-|[CSecurityAttributes](../../atl/reference/csecurityattributes-class.md)|This class is a thin wrapper for the **SECURITY_ATTRIBUTES** structure.|atlsecurity.h|  
-|[CSecurityDesc](../../atl/reference/csecuritydesc-class.md)|This class is a wrapper for the **SECURITY_DESCRIPTOR** structure.|atlsecurity.h|  
+|[CSecurityAttributes](../../atl/reference/csecurityattributes-class.md)|This class is a thin wrapper for the `SECURITY_ATTRIBUTES` structure.|atlsecurity.h|  
+|[CSecurityDesc](../../atl/reference/csecuritydesc-class.md)|This class is a wrapper for the `SECURITY_DESCRIPTOR` structure.|atlsecurity.h|  
 |[CSid](../../atl/reference/csid-class.md)|This class is a wrapper for a `SID` (security identifier) structure.|atlsecurity.h|  
 |[CSimpleArray](../../atl/reference/csimplearray-class.md)|This class provides methods for managing a simple array.|atlsimpcoll.h|  
 |[CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md)|This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-class.md) class.|atlsimpcoll.h|  
@@ -161,12 +161,12 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md)|This class provides static functions related to strings stored in collection class objects. It is similar to [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), but performs case-insensitive comparisons.|atlcoll.h|  
 |[CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md)|This class provides static functions related to strings stored in collection class objects. The string objects are dealt with as references.|atlcoll.h|  
 |[CThreadPool Class](../../atl/reference/cthreadpool-class.md)|This class provides a pool of worker threads that process a queue of work items.|atlutil.h|  
-|[CTokenGroups](../../atl/reference/ctokengroups-class.md)|This class is a wrapper for the **TOKEN_GROUPS** structure.|atlsecurity.h|  
-|[CTokenPrivileges](../../atl/reference/ctokenprivileges-class.md)|This class is a wrapper for the **TOKEN_PRIVILEGES** structure.|atlsecurity.h|  
+|[CTokenGroups](../../atl/reference/ctokengroups-class.md)|This class is a wrapper for the `TOKEN_GROUPS` structure.|atlsecurity.h|  
+|[CTokenPrivileges](../../atl/reference/ctokenprivileges-class.md)|This class is a wrapper for the `TOKEN_PRIVILEGES` structure.|atlsecurity.h|  
 |[CUrl Class](../../atl/reference/curl-class.md)|This class represents a URL. It allows you to manipulate each element of the URL independently of the others whether parsing an existing URL string or building a string from scratch.|atlutil.h|  
-|[CW2AEX](../../atl/reference/cw2aex-class.md)|This class is used by the string conversion macros `CT2AEX`, `CW2TEX`, `CW2CTEX`, and `CT2CAEX`, and the typedef **CW2A**.|atlconv.h|  
-|[CW2CWEX](../../atl/reference/cw2cwex-class.md)|This class is used by the string conversion macros `CW2CTEX` and `CT2CWEX`, and the typedef **CW2CW**.|atlconv.h|  
-|[CW2WEX](../../atl/reference/cw2wex-class.md)|This class is used by the string conversion macros `CW2TEX` and `CT2WEX`, and the typedef `CW2W`.|atlconv.h|  
+|[CW2AEX](../../atl/reference/cw2aex-class.md)|This class is used by the string conversion macros CT2AEX, CW2TEX, CW2CTEX, and CT2CAEX, and the typedef CW2A.|atlconv.h|  
+|[CW2CWEX](../../atl/reference/cw2cwex-class.md)|This class is used by the string conversion macros CW2CTEX and CT2CWEX, and the typedef CW2CW.|atlconv.h|  
+|[CW2WEX](../../atl/reference/cw2wex-class.md)|This class is used by the string conversion macros CW2TEX and CT2WEX, and the typedef CW2W.|atlconv.h|  
 |[CWin32Heap](../../atl/reference/cwin32heap-class.md)|This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 heap allocation functions.|atlmem.h|  
 |[CWindow](../../atl/reference/cwindow-class.md)|This class provides methods for manipulating a window.|atlwin.h|  
 |[CWindowImpl](../../atl/reference/cwindowimpl-class.md)|This class provides methods for creating or subclassing a window.|atlwin.h|  
@@ -191,30 +191,30 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)|This class defines an enumerator interface based on a C++ Standard Library collection.|atlcom.h|  
 |[IObjectSafetyImpl](../../atl/reference/iobjectsafetyimpl-class.md)|This class provides a default implementation of the `IObjectSafety` interface to allow a client to retrieve and set an object's safety levels.|atlctl.h|  
 |[IObjectWithSiteImpl](../../atl/reference/iobjectwithsiteimpl-class.md)|This class provides methods allowing an object to communicate with its site.|atlcom.h|  
-|[IOleControlImpl](../../atl/reference/iolecontrolimpl-class.md)|This class provides a default implementation of the **IOleControl** interface and implements **IUnknown**.|atlctl.h|  
+|[IOleControlImpl](../../atl/reference/iolecontrolimpl-class.md)|This class provides a default implementation of the `IOleControl` interface and implements `IUnknown`.|atlctl.h|  
 |[IOleInPlaceActiveObjectImpl](../../atl/reference/ioleinplaceactiveobjectimpl-class.md)|This class provides methods for assisting communication between an in-place control and its container.|atlctl.h|  
-|[IOleInPlaceObjectWindowlessImpl](../../atl/reference/ioleinplaceobjectwindowlessimpl-class.md)|This class implements **IUnknown** and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.|atlctl.h|  
-|[IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)|This class implements **IUnknown** and is the principal interface through which a container communicates with a control.|atlctl.h|  
-|[IPerPropertyBrowsingImpl](../../atl/reference/iperpropertybrowsingimpl-class.md)|This class implements **IUnknown** and allows a client to access the information in an object's property pages.|atlctl.h|  
-|[IPersistPropertyBagImpl](../../atl/reference/ipersistpropertybagimpl-class.md)|This class implements **IUnknown** and allows an object to save its properties to a client-supplied property bag.|atlcom.h|  
+|[IOleInPlaceObjectWindowlessImpl](../../atl/reference/ioleinplaceobjectwindowlessimpl-class.md)|This class implements `IUnknown` and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.|atlctl.h|  
+|[IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)|This class implements `IUnknown` and is the principal interface through which a container communicates with a control.|atlctl.h|  
+|[IPerPropertyBrowsingImpl](../../atl/reference/iperpropertybrowsingimpl-class.md)|This class implements `IUnknown` and allows a client to access the information in an object's property pages.|atlctl.h|  
+|[IPersistPropertyBagImpl](../../atl/reference/ipersistpropertybagimpl-class.md)|This class implements `IUnknown` and allows an object to save its properties to a client-supplied property bag.|atlcom.h|  
 |[IPersistStorageImpl](../../atl/reference/ipersiststorageimpl-class.md)|This class implements the [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) interface.|atlcom.h|  
-|[IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)|This class implements **IUnknown** and provides a default implementation of the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.|atlcom.h|  
-|[IPointerInactiveImpl](../../atl/reference/ipointerinactiveimpl-class.md)|This class implements **IUnknown** and the [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface methods.|atlctl.h|  
+|[IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)|This class implements `IUnknown` and provides a default implementation of the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.|atlcom.h|  
+|[IPointerInactiveImpl](../../atl/reference/ipointerinactiveimpl-class.md)|This class implements `IUnknown` and the [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface methods.|atlctl.h|  
 |[IPropertyNotifySinkCP](../../atl/reference/ipropertynotifysinkcp-class.md)|This class exposes the [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interface as an outgoing interface on a connectable object.|atlctl.h|  
-|[IPropertyPage2Impl](../../atl/reference/ipropertypage2impl-class.md)|This class implements **IUnknown** and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).|atlctl.h|  
-|[IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)|This class implements **IUnknown** and provides a default implementation of the [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface.|atlctl.h|  
+|[IPropertyPage2Impl](../../atl/reference/ipropertypage2impl-class.md)|This class implements `IUnknown` and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).|atlctl.h|  
+|[IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)|This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface.|atlctl.h|  
 |[IProvideClassInfo2Impl](../../atl/reference/iprovideclassinfo2impl-class.md)|This class provides a default implementation of the [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) and [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) methods.|atlcom.h|  
 |[IQuickActivateImpl](../../atl/reference/iquickactivateimpl-class.md)|This class combines containers' control initialization into a single call.|atlctl.h|  
-|[IRunnableObjectImpl](../../atl/reference/irunnableobjectimpl-class.md)|This class implements **IUnknown** and provides a default implementation of the [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface.|atlctl.h|  
+|[IRunnableObjectImpl](../../atl/reference/irunnableobjectimpl-class.md)|This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface.|atlctl.h|  
 |[IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md)|This class provides a default implementation of the `IServiceProvider` interface.|atlcom.h|  
-|[ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|This class implements **IUnknown** and provides a default implementation of the [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface.|atlcom.h|  
+|[ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|This class implements `IUnknown` and provides a default implementation of the [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface.|atlcom.h|  
 |[ISupportErrorInfoImpl](../../atl/reference/isupporterrorinfoimpl-class.md)|This class provides a default implementation of the `ISupportErrorInfo Interface` interface and can be used when only a single interface generates errors on an object.|atlcom.h|  
 |[IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)|This interface provides methods for configuring a thread pool.|atlutil.h|  
-|[IViewObjectExImpl](../../atl/reference/iviewobjecteximpl-class.md)|This class implements **IUnknown** and provides default implementations of the [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces.|atlctl.h|  
+|[IViewObjectExImpl](../../atl/reference/iviewobjecteximpl-class.md)|This class implements `IUnknown` and provides default implementations of the [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces.|atlctl.h|  
 |[IWorkerThreadClient Interface](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient` is the interface implemented by clients of the [CWorkerThread](../../atl/reference/cworkerthread-class.md) class.|atlutil.h|  
-|[_U_MENUorID](../../atl/reference/u-menuorid-class.md)|This class provides wrappers for **CreateWindow** and **CreateWindowEx**.|atlwin.h|  
+|[_U_MENUorID](../../atl/reference/u-menuorid-class.md)|This class provides wrappers for `CreateWindow` and `CreateWindowEx`.|atlwin.h|  
 |[_U_RECT](../../atl/reference/u-rect-class.md)|This argument adapter class allows either `RECT` pointers or references to be passed to a function that is implemented in terms of pointers.|atlwin.h|  
-|[_U_STRINGorID](../../atl/reference/u-stringorid-class.md)|This argument adapter class allows either resource names (`LPCTSTR`s) or resource IDs (**UINT**s) to be passed to a function without requiring the caller to convert the ID to a string using the **MAKEINTRESOURCE** macro.|atlwin.h|  
+|[_U_STRINGorID](../../atl/reference/u-stringorid-class.md)|This argument adapter class allows either resource names (LPCTSTRs) or resource IDs (UINTs) to be passed to a function without requiring the caller to convert the ID to a string using the MAKEINTRESOURCE macro.|atlwin.h|  
 |[Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)|This class provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.|atlbase.h|  
   
 ## See Also  

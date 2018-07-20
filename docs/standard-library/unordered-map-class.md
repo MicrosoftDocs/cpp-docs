@@ -31,11 +31,11 @@ class unordered_map;
 
 |Parameter|Description|
 |-|-|
-|`Key`|The key type.|
-|`Ty`|The mapped type.|
-|`Hash`|The hash function object type.|
-|`Pred`|The equality comparison function object type.|
-|`Alloc`|The allocator class.|
+|*Key*|The key type.|
+|*Ty*|The mapped type.|
+|*Hash*|The hash function object type.|
+|*Pred*|The equality comparison function object type.|
+|*Alloc*|The allocator class.|
 
 ## Members
 
@@ -162,7 +162,7 @@ const Ty& at(const Key& key) const;
 
 |Parameter|Description|
 |-|-|
-|`key`|The key value to find.|
+|*key*|The key value to find.|
 
 ### Return Value
 
@@ -214,11 +214,11 @@ const_local_iterator begin(size_type nbucket) const;
 
 |Parameter|Description|
 |-|-|
-|`nbucket`|The bucket number.|
+|*nbucket*|The bucket number.|
 
 ### Remarks
 
-The first two member functions return a forward iterator that points at the first element of the sequence (or just beyond the end of an empty sequence). The last two member functions return a forward iterator that points at the first element of bucket `nbucket` (or just beyond the end of an empty bucket).
+The first two member functions return a forward iterator that points at the first element of the sequence (or just beyond the end of an empty sequence). The last two member functions return a forward iterator that points at the first element of bucket *nbucket* (or just beyond the end of an empty bucket).
 
 ### Example
 
@@ -274,12 +274,12 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-`keyval`
+*keyval*
  The key value to map.
 
 ### Remarks
 
-The member function returns the bucket number currently corresponding to the key value `keyval`.
+The member function returns the bucket number currently corresponding to the key value *keyval*.
 
 ### Example
 
@@ -418,12 +418,12 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-`nbucket`
+*nbucket*  
  The bucket number.
 
 ### Remarks
 
-The member functions returns the size of bucket number `nbucket`.
+The member functions returns the size of bucket number *nbucket*.
 
 ### Example
 
@@ -466,7 +466,7 @@ bucket_size(7) == 1
 
 ## <a name="cbegin"></a>  unordered_map::cbegin
 
-Returns a `const` iterator that addresses the first element in the range.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -474,13 +474,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A `const` forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **const** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -492,7 +492,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  unordered_map::cend
 
-Returns a `const` iterator that addresses the location just beyond the last element in a range.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -500,13 +500,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A `const` forward-access iterator that points just beyond the end of the range.
+A **const** forward-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -782,7 +782,7 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-`keyval`
+*keyval*  
  Key value to search for.
 
 ### Remarks
@@ -900,13 +900,13 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the unordered_map unless it already contains an element whose value is equivalently ordered.|
+|*args*|The arguments forwarded to construct an element to be inserted into the unordered_map unless it already contains an element whose value is equivalently ordered.|
 
 ### Return Value
 
-A `pair` whose `bool` component returns true if an insertion was made and false if the `unordered_map` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
+A `pair` whose **bool** component returns true if an insertion was made and false if the `unordered_map` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `*(pr.first)`. To access the `bool` component of a pair `pr` returned by this member function, use `pr.second`.
+To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `*(pr.first)`. To access the **bool** component of a pair `pr` returned by this member function, use `pr.second`.
 
 ### Remarks
 
@@ -929,8 +929,8 @@ iterator emplace_hint(const_iterator where, Args&&... args);
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
-|`where`|A hint regarding the place to start searching for the correct point of insertion.|
+|*args*|The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
+|*where*|A hint regarding the place to start searching for the correct point of insertion.|
 
 ### Return Value
 
@@ -1030,11 +1030,11 @@ const_local_iterator end(size_type nbucket) const;
 
 |Parameter|Description|
 |-|-|
-|`nbucket`|The bucket number.|
+|*nbucket*|The bucket number.|
 
 ### Remarks
 
-The first two member functions return a forward iterator that points just beyond the end of the sequence. The last two member functions return a forward iterator that points just beyond the end of bucket `nbucket`.
+The first two member functions return a forward iterator that points just beyond the end of the sequence. The last two member functions return a forward iterator that points just beyond the end of bucket *nbucket*.
 
 ## <a name="equal_range"></a>  unordered_map::equal_range
 
@@ -1047,12 +1047,12 @@ std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 
 ### Parameters
 
-`keyval`
+*keyval*  
  Key value to search for.
 
 ### Remarks
 
-The member function returns a pair of iterators `X` such that `[X.first, X.second)` delimits just those elements of the controlled sequence that have equivalent ordering with `keyval`. If no such elements exist, both iterators are `end()`.
+The member function returns a pair of iterators `X` such that `[X.first, X.second)` delimits just those elements of the controlled sequence that have equivalent ordering with *keyval*. If no such elements exist, both iterators are `end()`.
 
 ### Example
 
@@ -1117,16 +1117,16 @@ size_type erase(const key_type& Key);
 
 ### Parameters
 
-`Where`
+*Where*  
  Position of the element to be removed.
 
-`First`
+*First*  
  Position of the first element to be removed.
 
-`Last`
+*Last*  
  Position just beyond the last element to be removed.
 
-`Key`
+*Key*  
  The key value of the elements to be removed.
 
 ### Return Value
@@ -1149,7 +1149,7 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-`keyval`
+*keyval*  
  Key value to search for.
 
 ### Remarks
@@ -1358,17 +1358,17 @@ IList);
 
 |Parameter|Description|
 |-|-|
-|`Val`|The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.|
-|`Where`|The place to start searching for the correct point of insertion.|
-|`ValTy`|Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
-|`First`|The position of the first element to be copied.|
-|`Last`|The position just beyond the last element to be copied.|
-|`InputIterator`|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|`IList`|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+|*Val*|The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.|
+|*Where*|The place to start searching for the correct point of insertion.|
+|*ValTy*|Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
+|*First*|The position of the first element to be copied.|
+|*Last*|The position just beyond the last element to be copied.|
+|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
+|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
 
 ### Return Value
 
-The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose `bool` component is true if an insertion was made, and false if the unordered_map already contained an element whose key had an equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the `bool` component is true, or to the existing element if the `bool` component is false.
+The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose **bool** component is true if an insertion was made, and false if the unordered_map already contained an element whose key had an equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the **bool** component is true, or to the existing element if the **bool** component is false.
 
 The single-element-with-hint member functions, (3) and (4), return an iterator that points to the position where the new element was inserted into the unordered_map or, if an element with an equivalent key already exists, to the existing element.
 
@@ -1378,7 +1378,7 @@ No iterators, pointers, or references are invalidated by this function.
 
 During the insertion of just one element, if an exception is thrown but does not occur in the container's hash function, the container's state is not modified. If the exception is thrown in the hash function, the result is undefined. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.
 
-To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.
+To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the **bool** component, use `pr.second`. For an example, see the sample code later in this article.
 
 The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and for map, `map<K, V>::value_type` is `pair<const K, V>`. The value of an element is an ordered pair in which the first component is equal to the key value and the second component is equal to the data value of the element.
 
@@ -1866,12 +1866,12 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-`factor`
+*factor*  
  The new maximum load factor.
 
 ### Remarks
 
-The first member function returns the stored maximum load factor. The second member function replaces the stored maximum load factor with `factor`.
+The first member function returns the stored maximum load factor. The second member function replaces the stored maximum load factor with *factor*.
 
 ### Example
 
@@ -1999,7 +1999,7 @@ Ty& operator[](Key&& keyval);
 
 |Parameter|Description|
 |-|-|
-|`Keyval`|The key value to find or insert.|
+|*Keyval*|The key value to find or insert.|
 
 ### Return Value
 
@@ -2087,13 +2087,13 @@ unordered_map& operator=(unordered_map&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The unordered_map that the operator function assigns content from.|
+|*right*|The unordered_map that the operator function assigns content from.|
 
 ### Remarks
 
-The first version copies all of the elements from `right` to this unordered_map.
+The first version copies all of the elements from *right* to this unordered_map.
 
-The second version moves all of the elements from `right` to this unordered_map.
+The second version moves all of the elements from *right* to this unordered_map.
 
 Any elements that are in this unordered_map before `operator`= executes are discarded.
 
@@ -2238,12 +2238,12 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-`nbuckets`
+*nbuckets*  
  The requested number of buckets.
 
 ### Remarks
 
-The member function alters the number of buckets to be at least `nbuckets` and rebuilds the hash table as needed.
+The member function alters the number of buckets to be at least *nbuckets* and rebuilds the hash table as needed.
 
 ### Example
 
@@ -2422,12 +2422,12 @@ void swap(unordered_map& right);
 
 ### Parameters
 
-`right`
+*right*  
  The container to swap with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and `right`. If [unordered_map::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between `*this` and *right*. If [unordered_map::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ### Example
 
@@ -2534,28 +2534,28 @@ unordered_map(
 
 |Parameter|Description|
 |-|-|
-|`Al`|The allocator object to store.|
-|`Comp`|The comparison function object to store.|
-|`Hash`|The hash function object to store.|
-|`Bucket_count`|The minimum number of buckets.|
-|`Right`|The container to copy.|
-|`First`||
-|`Last`||
-|`IList`|The initializer_list that contains the elements to be copied.|
+|*Al*|The allocator object to store.|
+|*Comp*|The comparison function object to store.|
+|*Hash*|The hash function object to store.|
+|*Bucket_count*|The minimum number of buckets.|
+|*Right*|The container to copy.|
+|*First*||
+|*Last*||
+|*IList*|The initializer_list that contains the elements to be copied.|
 
 ### Remarks
 
 The first constructor specifies a copy of the sequence controlled by `right`. The second constructor specifies an empty controlled sequence. The third constructor inserts the sequence of element values `[first, last)`. The fourth constructor specifies a copy of the sequence by moving `right`.
 
-All constructors also initialize several stored values. For the copy constructor, the values are obtained from `Right`. Otherwise:
+All constructors also initialize several stored values. For the copy constructor, the values are obtained from *Right*. Otherwise:
 
-the minimum number of buckets is the argument `Bucket_count`, if present; otherwise it is a default value described here as the implementation-defined value `N0`.
+the minimum number of buckets is the argument *Bucket_count*, if present; otherwise it is a default value described here as the implementation-defined value `N0`.
 
-the hash function object is the argument `Hash`, if present; otherwise it is `Hash()`.
+the hash function object is the argument *Hash*, if present; otherwise it is `Hash()`.
 
-The comparison function object is the argument `Comp`, if present; otherwise it is `Pred()`.
+The comparison function object is the argument *Comp*, if present; otherwise it is `Pred()`.
 
-The allocator object is the argument `Al`, if present; otherwise, it is `Alloc()`.
+The allocator object is the argument *Al*, if present; otherwise, it is `Alloc()`.
 
 ### Example
 

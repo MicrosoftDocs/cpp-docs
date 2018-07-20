@@ -48,8 +48,8 @@ class CSid
 |[CSid::EqualPrefix](#equalprefix)|Tests `SID` (security identifier) prefixes for equality.|  
 |[CSid::GetLength](#getlength)|Returns the length of the `CSid` object.|  
 |[CSid::GetPSID](#getpsid)|Returns a pointer to a `SID` structure.|  
-|[CSid::GetPSID_IDENTIFIER_AUTHORITY](#getpsid_identifier_authority)|Returns a pointer to the **SID_IDENTIFIER_AUTHORITY** structure.|  
-|[CSid::GetSubAuthority](#getsubauthority)|Returns a specified subauthority in a **SID** structure.|  
+|[CSid::GetPSID_IDENTIFIER_AUTHORITY](#getpsid_identifier_authority)|Returns a pointer to the `SID_IDENTIFIER_AUTHORITY` structure.|  
+|[CSid::GetSubAuthority](#getsubauthority)|Returns a specified subauthority in a `SID` structure.|  
 |[CSid::GetSubAuthorityCount](#getsubauthoritycount)|Returns the subauthority count.|  
 |[CSid::IsValid](#isvalid)|Tests the `CSid` object for validity.|  
 |[CSid::LoadAccount](#loadaccount)|Updates the `CSid` object given the account name and domain, or an existing `SID` structure.|  
@@ -92,7 +92,7 @@ LPCTSTR AccountName() const throw(...);
 ```  
   
 ### Return Value  
- Returns the `LPCTSTR` pointing to the name of the account.  
+ Returns the LPCTSTR pointing to the name of the account.  
   
 ### Remarks  
  This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166).  
@@ -122,7 +122,7 @@ explicit CSid(
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  An existing `CSid` object or `SID` (security identifier) structure.  
   
  *IdentifierAuthority*  
@@ -131,13 +131,13 @@ explicit CSid(
  *nSubAuthorityCount*  
  The subauthority count.  
   
- `pszAccountName`  
+ *pszAccountName*  
  The account name.  
   
- `pszSystem`  
+ *pszSystem*  
  The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.  
   
- `pSid`  
+ *pSid*  
  A pointer to a `SID` structure.  
   
 ### Remarks  
@@ -178,7 +178,7 @@ LPCTSTR Domain() const throw(...);
 ### Remarks  
  This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166).  
   
- If no account name for the `SID` can be found, **Domain** returns the domain as an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as a logon `SID` that identifies a logon session.  
+ If no account name for the `SID` can be found, `Domain` returns the domain as an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as a logon `SID` that identifies a logon session.  
   
 ##  <a name="equalprefix"></a>  CSid::EqualPrefix  
  Tests `SID` (security identifier) prefixes for equality.  
@@ -189,11 +189,11 @@ bool EqualPrefix(const CSid& rhs) const throw();
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) structure or `CSid` object to compare.  
   
 ### Return Value  
- Returns **true** on success, **false** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  See [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) in the Windows SDK for more details.  
@@ -225,14 +225,14 @@ const SID* GetPSID() const throw(...);
  Returns the address of the `CSid` object's underlying `SID` structure.  
   
 ##  <a name="getpsid_identifier_authority"></a>  CSid::GetPSID_IDENTIFIER_AUTHORITY  
- Returns a pointer to the **SID_IDENTIFIER_AUTHORITY** structure.  
+ Returns a pointer to the `SID_IDENTIFIER_AUTHORITY` structure.  
   
 ```
 const SID_IDENTIFIER_AUTHORITY* GetPSID_IDENTIFIER_AUTHORITY() const throw();
 ```  
   
 ### Return Value  
- If the method succeeds, it returns the address of the **SID_IDENTIFIER_AUTHORITY** structure. If it fails, the return value is undefined. Failure may occur if the `CSid` object is not valid, in which case the [CSid::IsValid](#isvalid) method returns **false**. The function `GetLastError` can be called for extended error information.  
+ If the method succeeds, it returns the address of the `SID_IDENTIFIER_AUTHORITY` structure. If it fails, the return value is undefined. Failure may occur if the `CSid` object is not valid, in which case the [CSid::IsValid](#isvalid) method returns FALSE. The function `GetLastError` can be called for extended error information.  
   
 > [!NOTE]
 >  Under debug builds the function will cause an ASSERT if the `CSid` object is not valid.  
@@ -280,7 +280,7 @@ bool IsValid() const throw();
 ```  
   
 ### Return Value  
- Returns **true** if the `CSid` object is valid, **false** if not. There is no extended error information for this method; do not call `GetLastError`.  
+ Returns TRUE if the `CSid` object is valid, FALSE if not. There is no extended error information for this method; do not call `GetLastError`.  
   
 ### Remarks  
  The `IsValid` method validates the `CSid` object by verifying that the revision number is within a known range and that the number of subauthorities is less than the maximum.  
@@ -299,17 +299,17 @@ bool LoadAccount(
 ```  
   
 ### Parameters  
- `pszAccountName`  
+ *pszAccountName*  
  The account name.  
   
- `pszSystem`  
+ *pszSystem*  
  The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.  
   
- `pSid`  
+ *pSid*  
  A pointer to a [SID](http://msdn.microsoft.com/library/windows/desktop/aa379594\(v=vs.85\).aspx) structure.  
   
 ### Return Value  
- Returns **true** on success, **false** on failure. To get extended error information, call `GetLastError`.  
+ Returns TRUE on success, FALSE on failure. To get extended error information, call `GetLastError`.  
   
 ### Remarks  
  `LoadAccount` attempts to find a security identifier for the specified name. See [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) for more details.  
@@ -323,7 +323,7 @@ CSid& operator= (const SID& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` to assign to the `CSid` object.  
   
 ### Return Value  
@@ -339,14 +339,14 @@ bool operator==(
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The `SID` (security identifier) or `CSid` that appears on the left side of the == operator.  
   
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` that appears on the right side of the == operator.  
   
 ### Return Value  
- **true** if the security descriptors are equal, otherwise **false**.  
+ TRUE if the security descriptors are equal, otherwise FALSE.  
   
 ##  <a name="operator_neq"></a>  CSid::operator !=  
  Tests two security descriptor objects for inequality.  
@@ -358,14 +358,14 @@ bool operator!=(
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.  
   
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.  
   
 ### Return Value  
- **true** if the security descriptors are not equal, otherwise **false**.  
+ TRUE if the security descriptors are not equal, otherwise FALSE.  
   
 ##  <a name="operator_lt"></a>  CSid::operator &lt;  
  Compares relative value of two security descriptor objects.  
@@ -377,14 +377,14 @@ bool operator<(
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.  
   
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.  
   
 ### Return Value  
- **true** if `lhs` is less than `rhs`, otherwise **false**.  
+ TRUE if *lhs* is less than *rhs*, otherwise FALSE.  
   
 ##  <a name="operator_lt__eq"></a>  CSid::operator &lt;=  
  Compares relative value of two security descriptor objects.  
@@ -396,14 +396,14 @@ bool operator<=(
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.  
   
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.  
   
 ### Return Value  
- **true** if `lhs` is less than or equal to `rhs`, otherwise **false**.  
+ TRUE if *lhs* is less than or equal to *rhs*, otherwise FALSE.  
   
 ##  <a name="operator_gt"></a>  CSid::operator &gt;  
  Compares relative value of two security descriptor objects.  
@@ -415,14 +415,14 @@ bool operator>(
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.  
   
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.  
   
 ### Return Value  
- **true** if `lhs` is greater than `rhs`, otherwise **false**.  
+ TRUE if *lhs* is greater than *rhs*, otherwise FALSE.  
   
 ##  <a name="operator_gt__eq"></a>  CSid::operator &gt;=  
  Compares relative value of two security descriptor objects.  
@@ -434,14 +434,14 @@ bool operator>=(
 ```  
   
 ### Parameters  
- `lhs`  
+ *lhs*  
  The `SID` (security identifier) or `CSid` that appears on the left side of the != operator.  
   
- `rhs`  
+ *rhs*  
  The `SID` (security identifier) or `CSid` that appears on the right side of the != operator.  
   
 ### Return Value  
- **true** if `lhs` is greater than or equal to `rhs`, otherwise **false**.  
+ TRUE if *lhs* is greater than or equal to *rhs*, otherwise FALSE.  
   
 ##  <a name="operator_const_sid__star"></a>  CSid::operator const SID \*  
  Casts a `CSid` object to a pointer to a `SID` (security identifier) structure.  
@@ -486,7 +486,7 @@ SID_NAME_USE SidNameUse() const throw();
 |SidTypeComputer|Indicates a `SID` for a computer.|  
   
 ### Remarks  
- Call [CSid::LoadAccount](#loadaccount) to update the `CSid` object before calling `SidNameUse` to return its state. `SidNameUse` does not change the state of the object (by calling to **LookupAccountName** or **LookupAccountSid**), but only returns the current state.  
+ Call [CSid::LoadAccount](#loadaccount) to update the `CSid` object before calling `SidNameUse` to return its state. `SidNameUse` does not change the state of the object (by calling to `LookupAccountName` or `LookupAccountSid`), but only returns the current state.  
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   

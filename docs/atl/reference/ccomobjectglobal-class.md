@@ -23,7 +23,7 @@ class CComObjectGlobal : public Base
 ```  
   
 #### Parameters  
- `Base`  
+ *Base*  
  Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), as well as from any other interface you want to support on the object.  
   
 ## Members  
@@ -41,13 +41,13 @@ class CComObjectGlobal : public Base
 |----------|-----------------|  
 |[CComObjectGlobal::AddRef](#addref)|Implements a global `AddRef`.|  
 |[CComObjectGlobal::QueryInterface](#queryinterface)|Implements a global `QueryInterface`.|  
-|[CComObjectGlobal::Release](#release)|Implements a global **Release**.|  
+|[CComObjectGlobal::Release](#release)|Implements a global `Release`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectGlobal` object.|  
+|[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|Contains the HRESULT returned during construction of the `CComObjectGlobal` object.|  
   
 ## Remarks  
  `CComObjectGlobal` manages a reference count on the module containing your `Base` object. `CComObjectGlobal` ensures your object will not be deleted as long as the module is not released. Your object will only be removed when the reference count on the entire module goes to zero.  
@@ -73,7 +73,7 @@ STDMETHOD_(ULONG, AddRef)();
  A value that may be useful for diagnostics and testing.  
   
 ### Remarks  
- By default, `AddRef` calls **_Module::Lock**, where **_Module** is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
+ By default, `AddRef` calls `_Module::Lock`, where `_Module` is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
   
 ##  <a name="ccomobjectglobal"></a>  CComObjectGlobal::CComObjectGlobal  
  The constructor. Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`.  
@@ -96,7 +96,7 @@ CComObjectGlobal();
  Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
 ##  <a name="m_hresfinalconstruct"></a>  CComObjectGlobal::m_hResFinalConstruct  
- Contains the `HRESULT` from calling `FinalConstruct` during construction of the `CComObjectGlobal` object.  
+ Contains the HRESULT from calling `FinalConstruct` during construction of the `CComObjectGlobal` object.  
   
 ```
 HRESULT m_hResFinalConstruct;
@@ -110,14 +110,14 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The GUID of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer identified by iid, or **NULL** if the interface is not found.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer identified by iid, or NULL if the interface is not found.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  `QueryInterface` only handles interfaces in the COM map table.  
@@ -130,10 +130,10 @@ STDMETHOD_(ULONG, Release)();
 ```  
   
 ### Return Value  
- In debug builds, **Release** returns a value that may be useful for diagnostics and testing. In non-debug builds, **Release** always returns 0.  
+ In debug builds, `Release` returns a value that may be useful for diagnostics and testing. In non-debug builds, `Release` always returns 0.  
   
 ### Remarks  
- By default, **Release** calls **_Module::Unlock**, where **_Module** is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
+ By default, `Release` calls `_Module::Unlock`, where `_Module` is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
   
 ## See Also  
  [CComObjectStack Class](../../atl/reference/ccomobjectstack-class.md)   

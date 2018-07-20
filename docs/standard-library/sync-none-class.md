@@ -55,7 +55,7 @@ void *allocate(std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`count`|The number of elements in the array to be allocated.|
+|*count*|The number of elements in the array to be allocated.|
 
 ### Remarks
 
@@ -73,8 +73,8 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the first object to be deallocated from storage.|
-|`count`|The number of objects to be deallocated from storage.|
+|*ptr*|A pointer to the first object to be deallocated from storage.|
+|*count*|The number of objects to be deallocated from storage.|
 
 ### Remarks
 
@@ -92,12 +92,12 @@ bool equals(const sync<Cache>& Other) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Cache`|The cache object of the synchronization filter.|
-|`Other`|The cache object to compare for equality.|
+|*Cache*|The cache object of the synchronization filter.|
+|*Other*|The cache object to compare for equality.|
 
 ### Return Value
 
-The member function always returns `true`.
+The member function always returns **true**.
 
 ### Remarks
 

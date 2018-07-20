@@ -69,11 +69,11 @@ class CAtlArray
 |[OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the array.|  
   
 ## Remarks  
- **CAtlArray** provides methods for creating and managing an array of elements of a user-defined type. Although similar to standard C arrays, the **CAtlArray** object can dynamically shrink and grow as necessary. The array index always starts at position 0, and the upper bound can be fixed, or allowed to expand as new elements are added.  
+ `CAtlArray` provides methods for creating and managing an array of elements of a user-defined type. Although similar to standard C arrays, the `CAtlArray` object can dynamically shrink and grow as necessary. The array index always starts at position 0, and the upper bound can be fixed, or allowed to expand as new elements are added.  
   
  For arrays with a small number of elements, the ATL class [CSimpleArray](../../atl/reference/csimplearray-class.md) can be used.  
   
- **CAtlArray** is closely related to MFC's **CArray** class and will work in an MFC project, albeit without serialization support.  
+ `CAtlArray` is closely related to MFC's `CArray` class and will work in an MFC project, albeit without serialization support.  
   
  For more information, see [ATL Collection Classes](../../atl/atl-collection-classes.md).  
   
@@ -89,7 +89,7 @@ size_t Add();
 ```  
   
 ### Parameters  
- `element`  
+ *element*  
  The element to be added to the array.  
   
 ### Return Value  
@@ -109,7 +109,7 @@ size_t Append(const CAtlArray<E, ETraits>& aSrc);
 ```  
   
 ### Parameters  
- `aSrc`  
+ *aSrc*  
  The array to append.  
   
 ### Return Value  
@@ -120,7 +120,7 @@ size_t Append(const CAtlArray<E, ETraits>& aSrc);
   
  The arrays must be of the same type, and it is not possible to append an array to itself.  
   
- In debug builds, an ATLASSERT will be raised if the `CAtlArray` argument is not a valid array or if `aSrc` refers to the same object. In release builds, invalid arguments may lead to unpredictable behavior.  
+ In debug builds, an ATLASSERT will be raised if the `CAtlArray` argument is not a valid array or if *aSrc* refers to the same object. In release builds, invalid arguments may lead to unpredictable behavior.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#2](../../atl/codesnippet/cpp/catlarray-class_2.cpp)]  
@@ -133,7 +133,7 @@ void AssertValid() const;
 ```  
   
 ### Remarks  
- If the array object is not valid, `ATLASSERT` will throw an assertion. This method is available only if _DEBUG is defined.  
+ If the array object is not valid, ATLASSERT will throw an assertion. This method is available only if _DEBUG is defined.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#3](../../atl/codesnippet/cpp/catlarray-class_3.cpp)]  
@@ -169,7 +169,7 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
 ```  
   
 ### Parameters  
- `aSrc`  
+ *aSrc*  
  The source of the elements to copy to an array.  
   
 ### Remarks  
@@ -177,7 +177,7 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
   
  If the existing contents of the array are to be retained, use [CAtlArray::Append](#append) instead.  
   
- In debug builds, an ATLASSERT will be raised if the existing `CAtlArray` object is not valid, or if `aSrc` refers to the same object. In release builds, invalid arguments may lead to unpredictable behavior.  
+ In debug builds, an ATLASSERT will be raised if the existing `CAtlArray` object is not valid, or if *aSrc* refers to the same object. In release builds, invalid arguments may lead to unpredictable behavior.  
   
 > [!NOTE]
 > `CAtlArray::Copy` does not support arrays consisting of elements created with the [CAutoPtr](../../atl/reference/cautoptr-class.md) class.  
@@ -206,14 +206,14 @@ E& GetAt(size_t iElement) throw();
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The index value of the array element to return.  
   
 ### Return Value  
  Returns a reference to the required array element.  
   
 ### Remarks  
- In debug builds, an ATLASSERT will be raised if `iElement` exceeds the number of elements in the array. In release builds, an invalid argument may lead to unpredictable behavior.  
+ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the number of elements in the array. In release builds, an invalid argument may lead to unpredictable behavior.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#6](../../atl/codesnippet/cpp/catlarray-class_6.cpp)]  
@@ -263,16 +263,16 @@ void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 ```  
   
 ### Parameters  
- `iStart`  
+ *iStart*  
  The index at which the array is to be inserted.  
   
- `paNew`  
+ *paNew*  
  The array to be inserted.  
   
 ### Remarks  
- Elements from the array `paNew` are copied into the array object, beginning at element `iStart`. The existing array elements are moved to avoid being overwritten.  
+ Elements from the array *paNew* are copied into the array object, beginning at element *iStart*. The existing array elements are moved to avoid being overwritten.  
   
- In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid, or if the `paNew` pointer is NULL or invalid.  
+ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid, or if the *paNew* pointer is NULL or invalid.  
   
 > [!NOTE]
 > `CAtlArray::InsertArrayAt` does not support arrays consisting of elements created with the [CAutoPtr](../../atl/reference/cautoptr-class.md) class.  
@@ -288,17 +288,17 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The index where the element or elements are to be inserted.  
   
- `element`  
+ *element*  
  The value of the element or elements to be inserted.  
   
- `nCount`  
+ *nCount*  
  The number of elements to add.  
   
 ### Remarks  
- Inserts one or more elements into the array, starting at index `iElement`. Existing elements are moved to avoid being overwritten.  
+ Inserts one or more elements into the array, starting at index *iElement*. Existing elements are moved to avoid being overwritten.  
   
  In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is invalid, the number of elements to be added is zero, or the combined number of elements is too large for the array to contain. In retail builds, passing invalid parameters may cause unpredictable results.  
   
@@ -330,7 +330,7 @@ const E& operator[](size_t ielement) const throw();
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The index value of the array element to return.  
   
 ### Return Value  
@@ -339,7 +339,7 @@ const E& operator[](size_t ielement) const throw();
 ### Remarks  
  Performs a similar function to [CAtlArray::GetAt](#getat). Unlike the MFC class [CArray](../../mfc/reference/carray-class.md), this operator cannot be used as a substitute for [CAtlArray::SetAt](#setat).  
   
- In debug builds, an ATLASSERT will be raised if `iElement` exceeds the total number of elements in the array. In retail builds, an invalid parameter may cause unpredictable results.  
+ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the total number of elements in the array. In retail builds, an invalid parameter may cause unpredictable results.  
   
 ##  <a name="outargtype"></a>  CAtlArray::OUTARGTYPE  
  The data type to use for retrieving elements from the array.  
@@ -371,16 +371,16 @@ void RemoveAt(size_t iElement, size_t nCount = 1);
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The index of the first element to remove.  
   
- `nCount`  
+ *nCount*  
  The number of elements to remove.  
   
 ### Remarks  
  Removes one or more elements from the array. Any remaining elements are shifted down. The upper bound is decremented, but memory is not freed until a call to [CAtlArray::FreeExtra](#freeextra) is made.  
   
- In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid, or if the combined total of `iElement` and `nCount` exceeds the total number of elements in the array. In retail builds, invalid parameters may cause unpredictable results.  
+ In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid, or if the combined total of *iElement* and *nCount* exceeds the total number of elements in the array. In retail builds, invalid parameters may cause unpredictable results.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#11](../../atl/codesnippet/cpp/catlarray-class_11.cpp)]  
@@ -393,14 +393,14 @@ void SetAt(size_t iElement, INARGTYPE element);
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The index pointing to the array element to set.  
   
- `element`  
+ *element*  
  The new value of the specified element.  
   
 ### Remarks  
- In debug builds, an ATLASSERT will be raised if `iElement` exceeds the number of elements in the array. In retail builds, an invalid parameter may result in unpredictable results.  
+ In debug builds, an ATLASSERT will be raised if *iElement* exceeds the number of elements in the array. In retail builds, an invalid parameter may result in unpredictable results.  
   
 ### Example  
  See the example for [CAtlArray::GetAt](#getat).  
@@ -413,10 +413,10 @@ bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 ```  
   
 ### Parameters  
- `nNewSize`  
+ *nNewSize*  
  The required size of the array.  
   
- `nGrowBy`  
+ *nGrowBy*  
  A value used to determine how large to make the buffer. A value of -1 causes an internally calculated value to be used.  
   
 ### Return Value  
@@ -438,14 +438,14 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The index pointing to the array element to set.  
   
- `element`  
+ *element*  
  The new value of the specified element.  
   
 ### Remarks  
- Replaces the value of the element pointed to by the index. If `iElement` is larger than the current size of the array, the array is automatically increased using a call to [CAtlArray::SetCount](#setcount). In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid. In retail builds, invalid parameters may cause unpredictable results.  
+ Replaces the value of the element pointed to by the index. If *iElement* is larger than the current size of the array, the array is automatically increased using a call to [CAtlArray::SetCount](#setcount). In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid. In retail builds, invalid parameters may cause unpredictable results.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/cpp/catlarray-class_12.cpp)]  

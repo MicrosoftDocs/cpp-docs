@@ -31,26 +31,26 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```  
   
 #### Parameters  
- `nID`  
+ *nID*  
  A unique identifier for the source object. When `IDispEventImpl` is the base class for a composite control, use the resource ID of the desired contained control for this parameter. In other cases, use an arbitrary positive integer.  
   
- `T`  
+ *T*  
  The user's class, which is derived from `IDispEventImpl`.  
   
- `pdiid`  
- The pointer to the IID of the event dispinterface implemented by this class. This interface must be defined in the type library denoted by `plibid`, `wMajor`, and `wMinor`.  
+ *pdiid*  
+ The pointer to the IID of the event dispinterface implemented by this class. This interface must be defined in the type library denoted by *plibid*, *wMajor*, and *wMinor*.  
   
- `plibid`  
- A pointer to the type library that defines the dispatch interface pointed to by `pdiid`. If **&GUID_NULL**, the type library will be loaded from the object sourcing the events.  
+ *plibid*  
+ A pointer to the type library that defines the dispatch interface pointed to by *pdiid*. If **&GUID_NULL**, the type library will be loaded from the object sourcing the events.  
   
- `wMajor`  
+ *wMajor*  
  The major version of the type library. The default value is 0.  
   
- `wMinor`  
+ *wMinor*  
  The minor version of the type library. The default value is 0.  
   
- `tihclass`  
- The class used to manage the type information for `T`. The default value is a class of type `CComTypeInfoHolder`; however, you can override this template parameter by providing a class of a type other than `CComTypeInfoHolder`.  
+ *tihclass*  
+ The class used to manage the type information for *T*. The default value is a class of type `CComTypeInfoHolder`; however, you can override this template parameter by providing a class of a type other than `CComTypeInfoHolder`.  
   
 ## Members  
   
@@ -85,12 +85,12 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
  Add a [SINK_ENTRY](composite-control-macros.md#sink_entry) or [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
 
   
- You must derive from `IDispEventImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventImpl` base classes.  
+ You must derive from `IDispEventImpl` (using a unique value for *nID*) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventImpl` base classes.  
   
  `IDispEventImpl` provides the same functionality as [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md), except it gets type information about the interface from a type library rather than having it supplied as a pointer to an [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) structure. Use `IDispEventSimpleImpl` when you do not have a type library describing the event interface or want to avoid the overhead associated with using the type library.  
   
 > [!NOTE]
-> `IDispEventImpl` and `IDispEventSimpleImpl` provide their own implementation of **IUnknown::QueryInterface** enabling each `IDispEventImpl` and `IDispEventSimpleImpl` base class to act as a separate COM identity while still allowing direct access to class members in your main COM object.  
+> `IDispEventImpl` and `IDispEventSimpleImpl` provide their own implementation of `IUnknown::QueryInterface` enabling each `IDispEventImpl` and `IDispEventSimpleImpl` base class to act as a separate COM identity while still allowing direct access to class members in your main COM object.  
   
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
   
@@ -120,23 +120,23 @@ HRESULT GetFuncInfoFromId(
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] A reference to the ID of the function.  
   
  *dispidMember*  
  [in] The dispatch ID of the function.  
   
- `lcid`  
+ *lcid*  
  [in] The locale context of the function ID.  
   
- `info`  
+ *info*  
  [in] The structure indicating how the function is called.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="getidsofnames"></a>  IDispEventImpl::GetIDsOfNames  
- Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
+ Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).  
   
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -148,7 +148,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
+ See [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo  
  Retrieves the type information for an object, which can then be used to get the type information for an interface.  
@@ -170,7 +170,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
+ See [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.  
   
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType  
  Retrieves the basic type of a user-defined type.  
@@ -182,8 +182,8 @@ VARTYPE GetUserDefinedType(
 ```  
   
 ### Parameters  
- `pTI`  
- [in] A pointer to the [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) interface containing the user-defined type.  
+ *pTI*  
+ [in] A pointer to the [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface containing the user-defined type.  
   
  *hrt*  
  [in] A handle to the type description to be retrieved.  
@@ -192,17 +192,17 @@ VARTYPE GetUserDefinedType(
  The type of variant.  
   
 ### Remarks  
- See [ITypeInfo::GetRefTypeInfo](http://msdn.microsoft.com/en-us/61d3b31d-6591-4e55-9e82-5246a168be00).  
+ See [ITypeInfo::GetRefTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).  
   
 ##  <a name="idispeventimpl"></a>  IDispEventImpl::IDispEventImpl  
- The constructor. Stores the values of the class template parameters `plibid`, `pdiid`, `wMajor`, and `wMinor`.  
+ The constructor. Stores the values of the class template parameters *plibid*, *pdiid*, *wMajor*, and *wMinor*.  
   
 ```
 IDispEventImpl();
 ```  
   
 ##  <a name="tihclass"></a>  IDispEventImpl::tihclass  
- This typedef is an instance of the class template parameter `tihclass`.  
+ This typedef is an instance of the class template parameter *tihclass*.  
   
 ```
 typedef tihclass _tihclass;

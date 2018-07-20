@@ -23,7 +23,7 @@ class CStringRefElementTraits : public CElementTraitsBase<T>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  
@@ -37,7 +37,7 @@ class CStringRefElementTraits : public CElementTraitsBase<T>
 |[CStringRefElementTraits::Hash](#hash)|Call this static function to calculate a hash value for the given string element.|  
   
 ## Remarks  
- This class provides static functions for comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Unlike [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` causes the `CString` arguments to be passed as **const CString&** references.  
+ This class provides static functions for comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Unlike [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` causes the `CString` arguments to be passed as **const** `CString&` references.  
   
  For more information, see [ATL Collection Classes](../../atl/atl-collection-classes.md).  
   
@@ -57,10 +57,10 @@ static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
 ```  
   
 ### Parameters  
- `element1`  
+ *element1*  
  The first string element.  
   
- `element2`  
+ *element2*  
  The second string element.  
   
 ### Return Value  
@@ -74,14 +74,14 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 ```  
   
 ### Parameters  
- `str1`  
+ *str1*  
  The first string element.  
   
- `str2`  
+ *str2*  
  The second string element.  
   
 ### Return Value  
- Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
+ Zero if the strings are identical, < 0 if *str1* is less than *str2*, or > 0 if *str1* is greater than *str2*. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
   
 ##  <a name="hash"></a>  CStringRefElementTraits::Hash  
  Call this static function to calculate a hash value for the given string element.  
@@ -91,7 +91,7 @@ static ULONG Hash(INARGTYPE str) throw();
 ```  
   
 ### Parameters  
- `str`  
+ *str*  
  The string element.  
   
 ### Return Value  

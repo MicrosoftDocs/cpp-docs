@@ -29,7 +29,7 @@ To minimize the potential for errors, C++ has adopted the convention of using *h
 
 ## Example
 
-The following example shows a common way to declare a class and then use it in a different source file. We'll start with the header file, **my_class.h**. It contains a class definition, but note that the definition is incomplete; the member function `do_something` is not defined:
+The following example shows a common way to declare a class and then use it in a different source file. We'll start with the header file, `my_class.h`. It contains a class definition, but note that the definition is incomplete; the member function `do_something` is not defined:
 
 ```cpp
 // my_class.h
@@ -44,7 +44,7 @@ namespace N
 }
 ```
 
-Next, create an implementation file (typically with a .cpp or similar extension). We'll call the file my_class.cpp and provide a definition for the member declaration. We add an `#include` directive for "my_class.h" file in order to have the my_class declaration inserted at this point in the .cpp file, and we include **\<iostream>** to pull in the declaration for `std::cout`. Note that quotes are used for header files in the same directory as the source file, and angle brackets are used for standard library headers. Also, many standard library headers do not have .h or any other file extension.
+Next, create an implementation file (typically with a .cpp or similar extension). We'll call the file my_class.cpp and provide a definition for the member declaration. We add an `#include` directive for "my_class.h" file in order to have the my_class declaration inserted at this point in the .cpp file, and we include `<iostream>` to pull in the declaration for `std::cout`. Note that quotes are used for header files in the same directory as the source file, and angle brackets are used for standard library headers. Also, many standard library headers do not have .h or any other file extension.
 
 In the implementation file, we can optionally use a **using** statement to avoid having to qualify every mention of "my_class" or "cout" with "N::" or "std::".  Don't put **using** statements in your header files!
 

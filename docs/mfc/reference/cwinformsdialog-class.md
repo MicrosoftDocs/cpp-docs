@@ -97,7 +97,7 @@ virtual BOOL OnInitDialog();
 ```  
   
 ### Return Value  
- A boolean value that specifies whether the application has set the input focus to one of the controls in the dialog box. If `OnInitDialog` returns nonzero, Windows sets the input focus to the first control in the dialog box. This method can return 0 only if the application has explicitly set the input focus to one of the controls in the dialog box.  
+ A Boolean value that specifies whether the application has set the input focus to one of the controls in the dialog box. If `OnInitDialog` returns nonzero, Windows sets the input focus to the first control in the dialog box. This method can return 0 only if the application has explicitly set the input focus to one of the controls in the dialog box.  
   
 ### Remarks  
  When the MFC dialog box is created (using the [Create](../../mfc/reference/cdialog-class.md#create), [CreateIndirect](../../mfc/reference/cdialog-class.md#createindirect), or [DoModal](../../mfc/reference/cdialog-class.md#domodal) method inherited from [CDialog](../../mfc/reference/cdialog-class.md)), a WM_INITDIALOG message is sent and this method is called. It creates an instance of a Windows Forms control on the dialog box and adjusts the size of the dialog box to accommodate for the size of the user control. Then it hosts the new control in the MFC dialog box.  

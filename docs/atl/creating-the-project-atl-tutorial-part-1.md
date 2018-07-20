@@ -25,7 +25,7 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
   
 2.  Click the **Visual C++ Projects** folder and select **ATL Project**.  
   
-3.  Type `Polygon` as the project name.  
+3.  Type *Polygon* as the project name.  
   
      The location for the source code will usually default to My Documents\Visual Studio Projects, and a new folder will be created automatically.  
   
@@ -39,17 +39,17 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
   
  The ATL Project Wizard will create the project by generating several files. You can view these files in Solution Explorer by expanding the Polygon object. The files are listed below.  
   
-|File|Description|  
-|----------|-----------------|  
-|Polygon.cpp|Contains the implementation of `DllMain`, `DllCanUnloadNow`, `DllGetClassObject`, `DllRegisterServer`, and `DllUnregisterServer`. Also contains the object map, which is a list of the ATL objects in your project. This is initially blank.|  
-|Polygon.def|This module-definition file provides the linker with information about the exports required by your DLL.|  
-|Polygon.idl|The interface definition language file, which describes the interfaces specific to your objects.|  
-|Polygon.rgs|This registry script contains information for registering your program's DLL.|  
-|Polygon.rc|The resource file, which initially contains the version information and a string containing the project name.|  
-|Resource.h|The header file for the resource file.|  
-|Polygonps.def|This module definition file provides the linker with information about the exports required by the proxy and stub code that support calls across apartments.|  
-|stdafx.cpp|The file that will `#include` the ATL implementation files.|  
-|stdafx.h|The file that will `#include` the ATL header files.|  
+    |File|Description|  
+    |----------|-----------------|  
+    |Polygon.cpp|Contains the implementation of `DllMain`, `DllCanUnloadNow`, `DllGetClassObject`, `DllRegisterServer`, and `DllUnregisterServer`. Also contains the object map, which is a list of the ATL objects in your project. This is initially blank.|  
+    |Polygon.def|This module-definition file provides the linker with information about the exports required by your DLL.|  
+    |Polygon.idl|The interface definition language file, which describes the interfaces specific to your objects.|  
+    |Polygon.rgs|This registry script contains information for registering your program's DLL.|  
+    |Polygon.rc|The resource file, which initially contains the version information and a string containing the project name.|  
+    |Resource.h|The header file for the resource file.|  
+    |Polygonps.def|This module definition file provides the linker with information about the exports required by the proxy and stub code that support calls across apartments.|  
+    |stdafx.cpp|The file that will `#include` the ATL implementation files.|  
+    |stdafx.h|The file that will `#include` the ATL header files.|  
   
 1.  In Solution Explorer, right-click the `Polygon` project.  
   

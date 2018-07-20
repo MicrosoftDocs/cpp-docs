@@ -26,7 +26,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPersistStorageImpl`.  
   
 ## Members  
@@ -36,12 +36,12 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 |Name|Description|  
 |----------|-----------------|  
 |[IPersistStorageImpl::GetClassID](#getclassid)|Retrieves the object's CLSID.|  
-|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Instructs the object to release all storage objects and enter HandsOff mode. The ATL implementation returns `S_OK`.|  
+|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Instructs the object to release all storage objects and enter HandsOff mode. The ATL implementation returns S_OK.|  
 |[IPersistStorageImpl::InitNew](#initnew)|Initializes a new storage.|  
 |[IPersistStorageImpl::IsDirty](#isdirty)|Checks whether the object's data has changed since it was last saved.|  
 |[IPersistStorageImpl::Load](#load)|Loads the object's properties from the specified storage.|  
 |[IPersistStorageImpl::Save](#save)|Saves the object's properties to the specified storage.|  
-|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Notifies an object that it can return to Normal mode to write to its storage object. The ATL implementation returns `S_OK`.|  
+|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Notifies an object that it can return to Normal mode to write to its storage object. The ATL implementation returns S_OK.|  
   
 ## Remarks  
  `IPersistStorageImpl` implements the [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) interface, which allows a client to request that your object load and save its persistent data using a storage.  
@@ -76,7 +76,7 @@ STDMETHOD(HandsOffStorage)(void);
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  See [IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/windows/desktop/ms679742) in the Windows SDK.  
@@ -113,7 +113,7 @@ STDMETHOD(Load)(IStorage* pStorage);
 ```  
   
 ### Remarks  
- The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. **Load** uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.  
+ The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. `Load` uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.  
   
  See [IPersistStorage:Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) in the Windows SDK.  
   
@@ -125,7 +125,7 @@ STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 ```  
   
 ### Remarks  
- The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. When **Save** is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to **Save** and in calls to [Load](#load).  
+ The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. When `Save` is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to `Save` and in calls to [Load](#load).  
   
  See [IPersistStorage:Save](http://msdn.microsoft.com/library/windows/desktop/ms680680) in the Windows SDK.  
   
@@ -137,7 +137,7 @@ STDMETHOD(SaveCompleted)(IStorage*);
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  See [IPersistStorage:SaveCompleted](http://msdn.microsoft.com/library/windows/desktop/ms679713) in the Windows SDK.  

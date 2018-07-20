@@ -26,7 +26,7 @@ __raise method-declarator;
 ## Remarks  
  From managed code, an event can only be raised from within the class where it is defined. See [event](../windows/event-cpp-component-extensions.md) for more information.  
   
- The keyword `__raise` causes an error to be emitted if you call a non-event.  
+ The keyword **__raise** causes an error to be emitted if you call a non-event.  
   
 > [!NOTE]
 >  A templated class or struct cannot contain events.  

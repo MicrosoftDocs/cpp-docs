@@ -131,7 +131,7 @@ void Attach(VARIANT& varSrc);
   
 ### Parameters  
  *varSrc*  
- A `VARIANT` object. The *varSrc* parameter must have the [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4)VT_ARRAY.  
+ A `VARIANT` object. The *varSrc* parameter must have the [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4)VT_ARRAY.  
   
 ### Remarks  
  The source `VARIANT`'s type is set to VT_EMPTY. This function clears the current array data, if any.  
@@ -188,7 +188,7 @@ COleSafeArray(const COleVariant& varSrc);
  A pointer to a `VARIANT` object to be copied into the new `COleSafeArray` object.  
   
 ### Remarks  
- All of these constructors create new `COleSafeArray` objects. If there is no parameter, an empty `COleSafeArray` object is created (VT_EMPTY). If the `COleSafeArray` is copied from another array whose [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) is known implicitly (a `COleSafeArray`, `COleVariant`, or `VARIANT`), the VARTYPE of the source array is retained and need not be specified. If the `COleSafeArray` is copied from another array whose VARTYPE is not known (`SAFEARRAY`), the VARTYPE must be specified in the *vtSrc* parameter.  
+ All of these constructors create new `COleSafeArray` objects. If there is no parameter, an empty `COleSafeArray` object is created (VT_EMPTY). If the `COleSafeArray` is copied from another array whose [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) is known implicitly (a `COleSafeArray`, `COleVariant`, or `VARIANT`), the VARTYPE of the source array is retained and need not be specified. If the `COleSafeArray` is copied from another array whose VARTYPE is not known (`SAFEARRAY`), the VARTYPE must be specified in the *vtSrc* parameter.  
   
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -314,7 +314,7 @@ VARIANT Detach();
  The underlying `VARIANT` value in the `COleSafeArray` object.  
   
 ### Remarks  
- The function detaches the data in a safe array by setting the [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) of the object to VT_EMPTY. It is the caller's responsibility to free the array by calling the Windows function [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835).  
+ The function detaches the data in a safe array by setting the [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) of the object to VT_EMPTY. It is the caller's responsibility to free the array by calling the Windows function [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835).  
   
  On error, the function throws a [COleException](../../mfc/reference/coleexception-class.md).  
   

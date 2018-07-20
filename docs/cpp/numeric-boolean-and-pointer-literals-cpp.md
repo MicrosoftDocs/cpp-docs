@@ -24,14 +24,14 @@ MyClass* mc = nullptr;      // pointer literal
   
 ```  
   
- Sometimes it's important to tell the compiler how to interpret a literal, or what specific type to give to it. You do this by appending prefixes or suffixes to the literal. For example, the  prefix 0x tells the compiler to interpret the number that follows it as a hexadecimal value, for example 0x35. The ULL suffix tells the compiler to treat the value as an `unsigned long long` type, as in 5894345ULL. See the following sections for the complete list of prefixes and suffixes for each literal type.  
+ Sometimes it's important to tell the compiler how to interpret a literal, or what specific type to give to it. You do this by appending prefixes or suffixes to the literal. For example, the  prefix 0x tells the compiler to interpret the number that follows it as a hexadecimal value, for example 0x35. The ULL suffix tells the compiler to treat the value as an **unsigned long long** type, as in 5894345ULL. See the following sections for the complete list of prefixes and suffixes for each literal type.  
   
 ## Syntax  
   
 ## Integer literals  
  Integer literals begin with a digit and have no fractional parts or exponents. You can specify integer literals in decimal, octal, or hexadecimal form. They can specify signed or unsigned types and long or short types.  
   
- When no prefix or suffix is present, the compiler will give an integral literal value type `int` (32 bits), if the value will fit, otherwise it will give it type `long long` (64 bits).  
+ When no prefix or suffix is present, the compiler will give an integral literal value type **int** (32 bits), if the value will fit, otherwise it will give it type **long long** (64 bits).  
   
  To specify a decimal integral literal, begin the specification with a nonzero digit. For example:  
   
@@ -57,7 +57,7 @@ int i = 0x3fff;   // Hexadecimal literal
 int j = 0X3FFF;        // Equal to i  
 ```  
   
- To specify an unsigned type, use either the **u** or **U** suffix. To specify a long type, use either the **l** or **L** suffix. To specify a 64-bit integral type, use the LL, or ll suffix. The i64 suffix is still supported but should be avoided because it is specific to Microsoft and is not portable. For example:  
+ To specify an unsigned type, use either the `u` or `U` suffix. To specify a long type, use either the `l` or `L` suffix. To specify a 64-bit integral type, use the LL, or ll suffix. The i64 suffix is still supported but should be avoided because it is specific to Microsoft and is not portable. For example:  
   
 ```cpp 
 unsigned val_1 = 328u;             // Unsigned value  
@@ -91,11 +91,11 @@ long long i = 24'847'458'121
 18.46e1           // 184.6  
 ```  
   
- The exponent may be specified using **e** or **E**, which have the same meaning, followed by an optional sign (+ or -) and a sequence of digits.  If an exponent is present, the trailing decimal point is unnecessary in whole numbers such as `18E0`.  
+ The exponent may be specified using `e` or `E`, which have the same meaning, followed by an optional sign (+ or -) and a sequence of digits.  If an exponent is present, the trailing decimal point is unnecessary in whole numbers such as `18E0`.  
   
- Floating-point literals default to type **double**. By using the suffixes **f** or **l** (or **F** or **L** — the suffix is not case sensitive), the literal can be specified as **float** or `long double`, respectively.  
+ Floating-point literals default to type **double**. By using the suffixes `f` or `l` (or `F` or `L` — the suffix is not case sensitive), the literal can be specified as **float** or **long double**, respectively.  
   
- Although `long double` and **double** have the same representation, they are not the same type. For example, you can have overloaded functions like  
+ Although **long double** and **double** have the same representation, they are not the same type. For example, you can have overloaded functions like  
   
 ```cpp 
 void func( double );  
@@ -108,10 +108,10 @@ void func( long double );
 ```  
   
 ## Boolean literals  
- The boolean literals are `true` and `false`.  
+ The boolean literals are **true** and **false**.  
   
 ## Pointer literal (C++11)  
- C++ introduces the [nullptr](../cpp/nullptr.md) literal to specify a zero-initialized pointer. In portable code, `nullptr` should be used instead of integral-type zero or macros such as NULL.  
+ C++ introduces the [nullptr](../cpp/nullptr.md) literal to specify a zero-initialized pointer. In portable code, **nullptr** should be used instead of integral-type zero or macros such as NULL.  
   
 ## Binary literals (C++14)  
  A binary literal can be specified by the use of the `0B` or `0b` prefix, followed by a sequence of 1's and 0's:  

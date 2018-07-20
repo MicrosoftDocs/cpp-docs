@@ -51,14 +51,14 @@ public:
 ### Parameters
 
 *RealType*
-The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*
 The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified floating-point type, or type `double` if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
+The template class describes a distribution that produces values of a user-specified floating-point type, or type **double** if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

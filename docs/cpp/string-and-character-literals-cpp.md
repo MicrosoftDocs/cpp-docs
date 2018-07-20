@@ -63,9 +63,9 @@ int main()
 ## Character literals  
  A *character literal* is composed of a constant character. It is represented by the character surrounded by single quotation marks. There are five kinds of character literals:  
   
--   Ordinary character literals of type `char`, for example `'a'`  
+-   Ordinary character literals of type **char**, for example `'a'`  
   
--   UTF-8 character literals of type `char`, for example `u8'a'`  
+-   UTF-8 character literals of type **char**, for example `u8'a'`  
   
 -   Wide-character literals of type `wchar_t`, for example `L'a'`  
   
@@ -125,7 +125,7 @@ int main() {
   
  **Microsoft Specific**  
   
- To create a value from an ordinary character literal (those without a prefix), the compiler converts the character  or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. To create a `char` value, the compiler takes the low-order byte. To create a `wchar_t` or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.  
+ To create a value from an ordinary character literal (those without a prefix), the compiler converts the character  or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. To create a **char** value, the compiler takes the low-order byte. To create a `wchar_t` or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.  
   
 ```cpp  
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'  
@@ -298,14 +298,14 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
   
  **Microsoft Specific**  
   
- In Visual C++ you can use a string literal to initialize a pointer to non-const `char` or `wchar_t`. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:  
+ In Visual C++ you can use a string literal to initialize a pointer to non-const **char** or `wchar_t`. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:  
   
 ```cpp  
 wchar_t* str = L"hello";  
 str[2] = L'a'; // run-time error: access violation  
 ```  
   
- You can cause the compiler to emit an error when a string literal is converted to a non_const character pointer when you set the [/Zc:strictStrings (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It is also a good practice to use the `auto` keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:  
+ You can cause the compiler to emit an error when a string literal is converted to a non_const character pointer when you set the [/Zc:strictStrings (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It is also a good practice to use the **auto** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:  
   
 ```cpp  
 auto str = L"hello";  

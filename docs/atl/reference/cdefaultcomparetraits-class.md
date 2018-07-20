@@ -23,7 +23,7 @@ class CDefaultCompareTraits
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  
@@ -51,17 +51,17 @@ static bool CompareElements(const T& element1, const T& element2);
 ```  
   
 ### Parameters  
- `element1`  
+ *element1*  
  The first element.  
   
- `element2`  
+ *element2*  
  The second element.  
   
 ### Return Value  
  Returns true if the elements are equal, false otherwise.  
   
 ### Remarks  
- The default implementation of this function is the equality ( `==`) operator. For objects other than simple data types, this function may need to be overridden.  
+ The default implementation of this function is the equality (**==**) operator. For objects other than simple data types, this function may need to be overridden.  
   
 ##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered  
  Call this function to determine the greater and lesser element.  
@@ -71,10 +71,10 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 ```  
   
 ### Parameters  
- `element1`  
+ *element1*  
  The first element.  
   
- `element2`  
+ *element2*  
  The second element.  
   
 ### Return Value  
@@ -82,12 +82,12 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
   
 |Condition|Return value|  
 |---------------|------------------|  
-|`element1` < `element2`|<0|  
-|`element1` == `element2`|0|  
-|`element1` > `element2`|>0|  
+|*element1* < *element2*|<0|  
+|*element1* == *element2*|0|  
+|*element1* > *element2*|>0|  
   
 ### Remarks  
- The default implementation of this function uses the `==`, **\<**, and **>** operators. For objects other than simple data types, this function may need to be overridden.  
+ The default implementation of this function uses the **==**, **\<**, and **>** operators. For objects other than simple data types, this function may need to be overridden.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
   
 4.  In the drop-down list of property types, select `SHORT`.  
   
-5.  Type `Sides` as the **Property name.**  
+5.  Type *Sides* as the **Property name.**  
   
 6.  Click **Finish** to finish adding the property.  
   

@@ -28,12 +28,12 @@ using remove_reference_t = typename remove_reference<T>::type;
 
 ### Parameters
 
-`T`
+*T*
  The type to modify.
 
 ## Remarks
 
-An instance of `remove_reference<T>` holds a modified-type that is `T1` when `T` is of the form `T1&`, otherwise `T`.
+An instance of `remove_reference<T>` holds a modified-type that is `T1` when *T* is of the form `T1&`, otherwise *T*.
 
 ## Example
 

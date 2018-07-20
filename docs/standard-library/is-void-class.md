@@ -25,12 +25,12 @@ struct is_void;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `T` is `void` or a cv-qualified form of `void`, otherwise it holds false.
+An instance of the type predicate holds true if the type *T* is **void** or a cv-qualified form of **void**, otherwise it holds false.
 
 ## Example
 

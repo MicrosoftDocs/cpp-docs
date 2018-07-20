@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # not_equal_to Struct
 
-A binary predicate that performs the inequality operation ( `operator!=`) on its arguments.
+A binary predicate that performs the inequality operation (`operator!=`) on its arguments.
 
 ## Syntax
 
@@ -37,14 +37,14 @@ struct not_equal_to<void>
 
 ### Parameters
 
-`Type`, `T`, `U`
+*Type*, *T*, *U*
  Any type that supports an `operator!=` that takes operands of the specified or inferred types.
 
-`Left`
- The left operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.
+*Left*
+ The left operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-`Right`
- The right operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.
+*Right*
+ The right operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
 
@@ -52,7 +52,7 @@ The result of `Left != Right`. The specialized template does perfect forwarding 
 
 ## Remarks
 
-The objects of type `Type` must be equality-comparable. This requires that the `operator!=` defined on the set of objects satisfies the mathematical properties of an equivalence relation. All of the built-in numeric and pointer types satisfy this requirement.
+The objects of type *Type* must be equality-comparable. This requires that the `operator!=` defined on the set of objects satisfies the mathematical properties of an equivalence relation. All of the built-in numeric and pointer types satisfy this requirement.
 
 ## Example
 

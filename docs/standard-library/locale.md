@@ -48,17 +48,17 @@ Defines template classes and functions that C++ programs can use to encapsulate 
 |Class|Description|
 |-|-|
 |[codecvt](../standard-library/codecvt-class.md)|A template class that provides a facet used to convert between internal and external character encodings.|
-|[codecvt_base](../standard-library/codecvt-base-class.md)|A base class for the codecvt class that is used to define an enumeration type referred to as **result**, used as the return type for the facet member functions to indicate the result of a conversion.|
+|[codecvt_base](../standard-library/codecvt-base-class.md)|A base class for the codecvt class that is used to define an enumeration type referred to as `result`, used as the return type for the facet member functions to indicate the result of a conversion.|
 |[codecvt_byname](../standard-library/codecvt-byname-class.md)|A derived template class that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning conversions.|
 |[collate](../standard-library/collate-class.md)|A collate template class that provides a facet that handles string sorting conventions.|
 |[collate_byname](../standard-library/collate-byname-class.md)|A derived template class that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning string sorting conventions.|
 |[ctype](../standard-library/ctype-class.md)|A template class that provides a facet that is used to classify characters, convert from upper- and lowercase and between the native character set and that set used by the locale.|
-|[ctype\<char>](../standard-library/ctype-char-class.md)|A class that is an explicit specialization of template class **ctype\<CharType**> to type `char`, describing an object that can serve as a locale facet to characterize various properties of a character of type `char`.|
+|[ctype\<char>](../standard-library/ctype-char-class.md)|A class that is an explicit specialization of template class `ctype<CharType>` to type **char**, describing an object that can serve as a locale facet to characterize various properties of a character of type **char**.|
 |[ctype_base](../standard-library/ctype-base-class.md)|A base class for the ctype class that is used to define enumeration types used to classify or test characters either individually or within entire ranges.|
 |[ctype_byname](../standard-library/ctype-byname-class.md)|A derived template class that describes an object that can serve as a ctype facet of a given locale, enabling the classification of characters and conversion of characters between case and native and locale specified character sets.|
 |[locale](../standard-library/locale-class.md)|A class that describes a locale object that encapsulates culture-specific information as a set of facets that collectively define a specific localized environment.|
 |[messages](../standard-library/messages-class.md)|A template class that describes an object that can serve as a locale facet to retrieve localized messages from a catalog of internationalized messages for a given locale.|
-|[messages_base](../standard-library/messages-base-class.md)|A base class that describes an `int` type for the catalog of messages.|
+|[messages_base](../standard-library/messages-base-class.md)|A base class that describes an **int** type for the catalog of messages.|
 |[messages_byname](../standard-library/messages-byname-class.md)|A derived template class that describes an object that can serve as a message facet of a given locale, enabling the retrieval of localized messages.|
 |[money_base](../standard-library/money-base-class.md)|A base class for the ctype class that is used to define enumeration types used to classify or test characters either individually or within entire ranges.|
 |[money_get](../standard-library/money-get-class.md)|A template class that describes an object that can serve as a locale facet to control conversions of sequences of type **CharType** to monetary values.|

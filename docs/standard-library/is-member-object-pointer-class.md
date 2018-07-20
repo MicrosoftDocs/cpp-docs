@@ -25,12 +25,12 @@ struct is_member_object_pointer;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a pointer to member object or a `cv-qualified` pointer to member object, otherwise it holds false. Note that `is_member_object_pointer` holds false if `Ty` is a pointer to member function.
+An instance of the type predicate holds true if the type *Ty* is a pointer to member object or a `cv-qualified` pointer to member object, otherwise it holds false. Note that `is_member_object_pointer` holds false if *Ty* is a pointer to member function.
 
 ## Example
 

@@ -46,7 +46,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 |[CSnapInPropertyPageImpl::OnSetActive](#onsetactive)|Called by the framework when the current page becomes active.|  
 |[CSnapInPropertyPageImpl::OnWizardBack](#onwizardback)|Called by the framework when the user clicks the **Back** button while using a wizard-type property sheet.|  
 |[CSnapInPropertyPageImpl::OnWizardFinish](#onwizardfinish)|Called by the framework when the user clicks the **Finish** button while using a wizard-type property sheet.|  
-|[CSnapInPropertyPageImpl::OnWizardNext](#onwizardnext)|Called by the framework when the user clicks the `Next` button while using a wizard-type property sheet.|  
+|[CSnapInPropertyPageImpl::OnWizardNext](#onwizardnext)|Called by the framework when the user clicks the **Next** button while using a wizard-type property sheet.|  
 |[CSnapInPropertyPageImpl::QuerySiblings](#querysiblings)|Forwards the current message to all pages of the property sheet.|  
 |[CSnapInPropertyPageImpl::SetModified](#setmodified)|Call to activate or deactivate the **Apply Now** button.|  
   
@@ -54,7 +54,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInPropertyPageImpl::m_psp](#m_psp)|The Windows **PROPSHEETPAGE** structure used by the `CSnapInPropertyPageImpl` object.|  
+|[CSnapInPropertyPageImpl::m_psp](#m_psp)|The Windows `PROPSHEETPAGE` structure used by the `CSnapInPropertyPageImpl` object.|  
   
 ## Remarks  
  `CSnapInPropertyPageImpl` provides a basic implementation for a snap-in property page object. The basic features of a snap-in property page are implemented using several different interfaces and map types.  
@@ -87,7 +87,7 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 ```  
   
 ### Parameters  
- `lpszTitle`  
+ *lpszTitle*  
  [in] The title of the property page.  
   
 ### Remarks  
@@ -101,13 +101,13 @@ HPROPSHEETPAGE Create();
 ```  
   
 ### Return Value  
- A handle to a **PROPSHEETPAGE** structure containing the attributes of the newly created property sheet.  
+ A handle to a `PROPSHEETPAGE` structure containing the attributes of the newly created property sheet.  
   
 ### Remarks  
  You should first call [CSnapInPropertyPageImpl::CSnapInPropertyPageImpl](#csnapinpropertypageimpl) before calling this function.  
   
 ##  <a name="m_psp"></a>  CSnapInPropertyPageImpl::m_psp  
- `m_psp` is a structure whose members store the characteristics of **PROPSHEETPAGE**.  
+ `m_psp` is a structure whose members store the characteristics of `PROPSHEETPAGE`.  
   
 ```
 PROPSHEETPAGE m_psp;
@@ -129,11 +129,11 @@ BOOL OnApply();
  Nonzero if the changes are accepted; otherwise 0.  
   
 ### Remarks  
- Before `OnApply` can be called by the framework, you must have called `SetModified` and set its parameter to **TRUE**. This will activate the **Apply Now** button as soon as the user makes a change on the property page.  
+ Before `OnApply` can be called by the framework, you must have called `SetModified` and set its parameter to TRUE. This will activate the **Apply Now** button as soon as the user makes a change on the property page.  
   
- Override this member function to specify what action your program takes when the user clicks the **Apply Now** button. When overriding, the function should return **TRUE** to accept changes and **FALSE** to prevent changes from taking effect.  
+ Override this member function to specify what action your program takes when the user clicks the **Apply Now** button. When overriding, the function should return TRUE to accept changes and FALSE to prevent changes from taking effect.  
   
- The default implementation of `OnApply` returns **TRUE**.  
+ The default implementation of `OnApply` returns TRUE.  
   
 ##  <a name="onhelp"></a>  CSnapInPropertyPageImpl::OnHelp  
  This member function is called when the user clicks the **Help** button for the property page.  
@@ -171,7 +171,7 @@ BOOL OnQueryCancel();
 ### Remarks  
  Override this member function to specify an action the program takes when the user clicks the **Cancel** button.  
   
- The default implementation of `OnQueryCancel` returns **TRUE**.  
+ The default implementation of `OnQueryCancel` returns TRUE.  
   
 ##  <a name="onreset"></a>  CSnapInPropertyPageImpl::OnReset  
  This member function is called when the user clicks the **Cancel** button.  
@@ -198,7 +198,7 @@ BOOL OnSetActive();
 ### Remarks  
  Override this member function to perform tasks when a page is activated. Your override of this member function should call the default version before any other processing is done.  
   
- The default implementation returns **TRUE**.  
+ The default implementation returns TRUE.  
   
 ##  <a name="onwizardback"></a>  CSnapInPropertyPageImpl::OnWizardBack  
  This member function is called when the user clicks the **Back** button in a wizard.  
@@ -232,7 +232,7 @@ BOOL OnWizardFinish();
  Override this member function to specify some action the user must take when the **Finish** button is clicked.  
   
 ##  <a name="onwizardnext"></a>  CSnapInPropertyPageImpl::OnWizardNext  
- This member function is called when the user clicks the `Next` button in a wizard.  
+ This member function is called when the user clicks the **Next** button in a wizard.  
   
 ```
 BOOL OnWizardNext();
@@ -247,7 +247,7 @@ BOOL OnWizardNext();
  To jump to a page other than the next one, return the identifier of the dialog box to be displayed.  
   
 ### Remarks  
- Override this member function to specify some action the user must take when the `Next` button is clicked.  
+ Override this member function to specify some action the user must take when the **Next** button is clicked.  
   
 ##  <a name="querysiblings"></a>  CSnapInPropertyPageImpl::QuerySiblings  
  Call this member function to forward a message to each page in the property sheet.  
@@ -257,10 +257,10 @@ LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 ```  
   
 ### Parameters  
- `wParam`  
+ *wParam*  
  [in] Specifies additional message-dependent information.  
   
- `lParam`  
+ *lParam*  
  [in] Specifies additional message-dependent information.  
   
 ### Return Value  
@@ -277,11 +277,11 @@ void SetModified(BOOL bChanged = TRUE);
 ```  
   
 ### Parameters  
- `bChanged`  
- [in] **TRUE** to indicate that the property page settings have been modified since the last time they were applied; **FALSE** to indicate that the property page settings have been applied, or should be ignored.  
+ *bChanged*  
+ [in] TRUE to indicate that the property page settings have been modified since the last time they were applied; FALSE to indicate that the property page settings have been applied, or should be ignored.  
   
 ### Remarks  
- The property sheet keeps track of which pages are "dirty," that is, property pages for which you have called **SetModified( TRUE )**. The **Apply Now** button will always be enabled if you call **SetModified( TRUE )** for one of the pages. The **Apply Now** button will be disabled when you call **SetModified( FALSE )** for one of the pages, but only if none of the other pages is "dirty."  
+ The property sheet keeps track of which pages are "dirty," that is, property pages for which you have called `SetModified( TRUE )`. The **Apply Now** button will always be enabled if you call `SetModified( TRUE )` for one of the pages. The **Apply Now** button will be disabled when you call `SetModified( FALSE )` for one of the pages, but only if none of the other pages is "dirty."  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

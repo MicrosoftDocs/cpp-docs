@@ -14,23 +14,23 @@ ms.workload: ["cplusplus"]
 ---
 # valarray Class
 
-The template class describes an object that controls a sequence of elements of type **Type** that are stored as an array, designed for performing high-speed mathematical operations, and optimized for computational performance.
+The template class describes an object that controls a sequence of elements of type `Type` that are stored as an array, designed for performing high-speed mathematical operations, and optimized for computational performance.
 
 ## Remarks
 
 The class is a representation of the mathematical concept of an ordered set of values and the elements are numbered sequentially from zero. The class is described as a near container because it supports some, but not all, of the capabilities that first-class sequence containers, such as [vector](../standard-library/vector-class.md), support. It differs from template class vector in two important ways:
 
-- It defines numerous arithmetic operations between corresponding elements of **valarray\<Type>** objects of the same type and length, such as *xarr* = cos( *yarr*) + sin( *zarr*).
+- It defines numerous arithmetic operations between corresponding elements of `valarray<Type>` objects of the same type and length, such as *xarr* = cos( *yarr*) + sin( *zarr*).
 
-- It defines a variety of interesting ways to subscript a **valarray\<Type>** object, by overloading [operator&#91;&#93;](#op_at).
+- It defines a variety of interesting ways to subscript a `valarray<Type>` object, by overloading [operator&#91;&#93;](#op_at).
 
-An object of class **Type**:
+An object of class `Type`:
 
 - Has a public default constructor, destructor, copy constructor, and assignment operator, with conventional behavior.
 
 - Defines the arithmetic operators and math functions, as needed, that are defined for the floating-point types, with conventional behavior.
 
-In particular, no subtle differences may exist between copy construction and default construction followed by assignment. None of the operations on objects of class **Type** may throw exceptions.
+In particular, no subtle differences may exist between copy construction and default construction followed by assignment. None of the operations on objects of class `Type` may throw exceptions.
 
 ### Constructors
 
@@ -171,18 +171,18 @@ valarray<Type> cshift(int count) const;
 
 ### Parameters
 
-`count`
+*count*  
  The number of places the elements are to be shifted forward.
 
 ### Return Value
 
-A new valarray in which all the elements have been moved `count` positions cyclically toward the front of the valarray, left with respect to their positions in the operand valarray.
+A new valarray in which all the elements have been moved *count* positions cyclically toward the front of the valarray, left with respect to their positions in the operand valarray.
 
 ### Remarks
 
-A positive value of `count` shifts the elements cyclically left `count` places.
+A positive value of *count* shifts the elements cyclically left *count* places.
 
-A negative value of `count` shifts the elements cyclically right `count` places.
+A negative value of *count* shifts the elements cyclically right *count* places.
 
 ### Example
 
@@ -271,7 +271,7 @@ The maximum value of the elements in the operand valarray.
 
 ### Remarks
 
-The member function compares values by applying **operator\<** or **operator>** between pairs of elements of class **Type**, for which operators must be provided for the element **Type**.
+The member function compares values by applying **operator\<** or **operator>** between pairs of elements of class `Type`, for which operators must be provided for the element `Type`.
 
 ### Example
 
@@ -323,7 +323,7 @@ The minimum value of the elements in the operand valarray.
 
 ### Remarks
 
-The member function compares values by applying **operator\<** or **operator>** between pairs of elements of class **Type**, for which operators must be provided for the element **Type**.
+The member function compares values by applying **operator\<** or **operator>** between pairs of elements of class `Type`, for which operators must be provided for the element `Type`.
 
 ### Example
 
@@ -377,7 +377,7 @@ The valarray of Boolean values that are the negation of the element values of th
 
 The logical operation **NOT** negates the elements because it converts all zeros into ones and regards all nonzero values as ones and converts them into zeros. The returned valarray of Boolean values is of the same size as the operand valarray.
 
-There is also a bitwise **NOT**[valarray::operator~](#op_dtor) that negates on the level of individual bits within the binary representation of `char` and `int` elements of a valarray.
+There is also a bitwise **NOT**[valarray::operator~](#op_dtor) that negates on the level of individual bits within the binary representation of **char** and **int** elements of a valarray.
 
 ### Example
 
@@ -430,12 +430,12 @@ valarray<Type>& operator%=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to divide, element-wise, the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the remainder from the element-wise division of the operand valarray by `right`
+A valarray whose elements are the remainder from the element-wise division of the operand valarray by *right*
 
 ### Example
 
@@ -495,18 +495,18 @@ valarray<Type>& operator&=(const Type& right);
 
 ### Parameters
 
-`right`
- The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the logical **AND** with the operand valarray.
+*right*  
+ The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the logical `AND` with the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise logical **AND** of the operand valarray by `right`
+A valarray whose elements are the element-wise logical `AND` of the operand valarray by *right*
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool`, or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool**, or other, more complex data types.
 
-The bitwise AND has the same truth table as the logical **AND** but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 **AND** *b*2 is **true** if both bits are true; **false** if at least one is false.
+The bitwise AND has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `AND` *b*2 is **true** if both bits are true; **false** if at least one is false.
 
 ### Example
 
@@ -566,12 +566,12 @@ valarray<Type>& operator>>=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The value indicating the amount of right shift or valarray whose elements indicate the element-wise amount of right shift.
 
 ### Return Value
 
-A valarray whose elements have been shifted right the amount specified in `right`.
+A valarray whose elements have been shifted right the amount specified in *right*.
 
 ### Remarks
 
@@ -635,12 +635,12 @@ valarray<Type>& operator<<=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The value indicating the amount of left shift or valarray whose elements indicate the element-wise amount of left shift.
 
 ### Return Value
 
-A valarray whose elements have been shifted left the amount specified in `right`.
+A valarray whose elements have been shifted left the amount specified in *right*.
 
 ### Remarks
 
@@ -705,12 +705,12 @@ valarray<Type>& operator*=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to multiply, element-wise, the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise product of the operand valarray and `right`.
+A valarray whose elements are the element-wise product of the operand valarray and *right*.
 
 ### Example
 
@@ -821,12 +821,12 @@ valarray<Type>& operator+=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to be added, element-wise, to the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise sum of the operand valarray and `right`.
+A valarray whose elements are the element-wise sum of the operand valarray and *right*.
 
 ### Example
 
@@ -937,12 +937,12 @@ valarray<Type>& operator-=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to be subtracted, element-wise, from the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise difference of the operand valarray and `right`.
+A valarray whose elements are the element-wise difference of the operand valarray and *right*.
 
 ### Example
 
@@ -1002,12 +1002,12 @@ valarray<Type>& operator/=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to be divided, element-wise, into the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise quotient of the operand valarray divided by `right`.
+A valarray whose elements are the element-wise quotient of the operand valarray divided by *right*.
 
 ### Example
 
@@ -1077,31 +1077,31 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray to be copied into the operand valarray.
 
-`val`
+*val*  
  The value to be assigned to the elements of the operand valarray.
 
-`_Slicearray`
+*_Slicearray*  
  The slice_array to be copied into the operand valarray.
 
-`_Gslicearray`
+*_Gslicearray*  
  The gslice_array to be copied into the operand valarray.
 
-`_Maskarray`
+*_Maskarray*  
  The mask_array to be copied into the operand valarray.
 
-`_Indarray`
+*_Indarray*  
  The indirect_array to be copied into the operand valarray.
 
 ### Return Value
 
-The first member operator replaces the controlled sequence with a copy of the sequence controlled by `right`.
+The first member operator replaces the controlled sequence with a copy of the sequence controlled by *right*.
 
 The second member operator is the same as the first, but with an [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-The third member operator replaces each element of the controlled sequence with a copy of `val`.
+The third member operator replaces each element of the controlled sequence with a copy of *val*.
 
 The remaining member operators replace those elements of the controlled sequence selected by their arguments, which are generated only by [operator&#91;&#93;](#op_at).
 
@@ -1195,19 +1195,19 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 
 ### Parameters
 
-`_Off`
+*_Off*  
  The index of the element to be assigned a value.
 
-`_Slicearray`
+*_Slicearray*  
  A slice_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
-`_Gslicearray`
+*_Gslicearray*  
  A gslice_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
-*_Boolarray*
+*_Boolarray*  
  A bool_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
-`_Indarray`
+*_Indarray*  
  An indirect_array of a valarray that specifies a subset to be selected or returned to a new valarray.
 
 ### Return Value
@@ -1236,12 +1236,12 @@ valarray<Type>& operator|=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the exclusive logical **XOR** with the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise, exclusive logical **XOR** of the operand valarray and `right`.
+A valarray whose elements are the element-wise, exclusive logical **XOR** of the operand valarray and *right*.
 
 ### Remarks
 
@@ -1309,16 +1309,16 @@ valarray<Type>& operator|=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*  
  The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the bitwise `OR` with the operand valarray.
 
 ### Return Value
 
-A valarray whose elements are the element-wise bitwise `OR` of the operand valarray by `right`.
+A valarray whose elements are the element-wise bitwise `OR` of the operand valarray by *right*.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool`, or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool**, or other, more complex data types.
 
 The bitwise `OR` has the same truth table as the logical `OR` but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **true** if at least one of the bits is true; **false** if both bits are false.
 
@@ -1377,7 +1377,7 @@ The element-by-element result of the logical OR
 
 ## <a name="op_dtor"></a>  valarray::operator~
 
-A unary operator that obtains the bitwise **NOT** values of each element in a valarray.
+A unary operator that obtains the bitwise `NOT` values of each element in a valarray.
 
 ```cpp
 valarray<Type> operator~() const;
@@ -1385,13 +1385,13 @@ valarray<Type> operator~() const;
 
 ### Return Value
 
-The valarray of Boolean values that are the bitwise **NOT** of the element values of the operand valarray.
+The valarray of Boolean values that are the bitwise `NOT` of the element values of the operand valarray.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool` or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
 
-The bitwise **NOT** has the same truth table as the logical **NOT** but applies to the data type on the level of the individual bits. Given bit *b*, ~ *b* is true if *b* is false and false if *b* is true. The logical **NOT**[operator!](#op_not) applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise **NOToperator~**, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The bitwise `NOT` has the same truth table as the logical `NOT` but applies to the data type on the level of the individual bits. Given bit *b*, ~ *b* is true if *b* is false and false if *b* is true. The logical **NOT**[operator!](#op_not) applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise `NOToperator~`, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
 
 ### Example
 
@@ -1484,10 +1484,10 @@ void resize(
 
 ### Parameters
 
-`_Newsize`
+*_Newsize*  
  The number of elements in the resized valarray.
 
-`val`
+*val*  
  The value to be given to the elements of the resized valarray.
 
 ### Remarks
@@ -1555,18 +1555,18 @@ valarray<Type> shift(int count) const;
 
 ### Parameters
 
-`count`
+*count*  
  The number of places the elements are to be shifted forward.
 
 ### Return Value
 
-A new valarray in which all the elements have been moved `count` positions toward the front of the valarray, left with respect to their positions in the operand valarray.
+A new valarray in which all the elements have been moved *count* positions toward the front of the valarray, left with respect to their positions in the operand valarray.
 
 ### Remarks
 
-A positive value of `count` shifts the elements left `count` places, with zero fill.
+A positive value of *count* shifts the elements left *count* places, with zero fill.
 
-A negative value of `count` shifts the elements right `count` places, with zero fill.
+A negative value of *count* shifts the elements right *count* places, with zero fill.
 
 ### Example
 
@@ -1710,7 +1710,7 @@ The sum of the elements of the operand valarray.
 
 ### Remarks
 
-If the length is greater than one, the member function adds values to the sum by applying `operator+=` between pairs of elements of class **Type**, which operator, consequently, needs be provided for elements of type **Type**.
+If the length is greater than one, the member function adds values to the sum by applying `operator+=` between pairs of elements of class `Type`, which operator, consequently, needs be provided for elements of type `Type`.
 
 ### Example
 
@@ -1757,11 +1757,11 @@ void swap(valarray& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|A `valarray` providing the elements to be swapped.|
+|*right*|A `valarray` providing the elements to be swapped.|
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and `right`. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
+The member function swaps the controlled sequences between `*this` and *right*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
 
 ## <a name="valarray"></a>  valarray::valarray
 
@@ -1805,40 +1805,40 @@ valarray(
 
 ### Parameters
 
-`Count`
+*Count*  
  The number of elements to be in the valarray.
 
-`Val`
+*Val*  
  The value to be used in initializing the elements in the valarray.
 
-`Ptr`
+*Ptr*  
  Pointer to the values to be used to initialize the elements in the valarray.
 
-`Right`
+*Right*  
  An existing valarray to initialize the new valarray.
 
-`SliceArray`
+*SliceArray*  
  A slice_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-`GsliceArray`
+*GsliceArray*  
  A gslice_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-`MaskArray`
+*MaskArray*  
  A mask_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-`IndArray`
+*IndArray*  
  A indirect_array whose element values are to be used in initializing the elements of the valarray being constructed.
 
-`IList`
+*IList*  
  The initializer_list containing the elements to copy.
 
 ### Remarks
 
-The first (default) constructor initializes the object to an empty array. The next three constructors each initialize the object to an array of `Count` elements as follows:
+The first (default) constructor initializes the object to an empty array. The next three constructors each initialize the object to an array of *Count* elements as follows:
 
 - For explicit `valarray(size_t Count)`, each element is initialized with the default constructor.
 
-- For `valarray(const Type& Val, Count)`, each element is initialized with `Val`.
+- For `valarray(const Type& Val, Count)`, each element is initialized with *Val*.
 
 - For `valarray(const Type* Ptr, Count)`, the element at position `I` is initialized with `Ptr`[ `I`].
 
@@ -1906,7 +1906,7 @@ typedef Type value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Type**.
+The type is a synonym for the template parameter `Type`.
 
 ### Example
 

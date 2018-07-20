@@ -35,28 +35,28 @@ struct _ATL_BASE_MODULE70 {
  The size of the structure, used for versioning.  
   
  `m_hInst`  
- The **hInstance** for this module (either exe or dll).  
+ The `hInstance` for this module (either exe or dll).  
   
  `m_hInstResource`  
  Default instance resource handle.  
   
- **m_bNT5orWin98**  
+ `m_bNT5orWin98`  
  Operating system version information. Used internally by ATL.  
   
- **dwAtlBuildVer**  
+ `dwAtlBuildVer`  
  Stores the version of ATL. Currently 0x0700.  
   
- **pguidVer**  
+ `pguidVer`  
  ATL's internal GUID.  
   
- **m_csResource**  
- Used to synchronize access to the **m_rgResourceInstance** array. Used internally by ATL.  
+ `m_csResource`  
+ Used to synchronize access to the `m_rgResourceInstance` array. Used internally by ATL.  
   
- **m_rgResourceInstance**  
+ `m_rgResourceInstance`  
  Array used to search for resources in all the resource instances of which ATL is aware. Used internally by ATL.  
   
 ## Remarks  
- [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module) is defined as a typedef of `_ATL_BASE_MODULE70`.  
+ [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module) is defined as a typedef of _ATL_BASE_MODULE70.  
   
 ## Requirements  
  **Header:** atlcore.h  

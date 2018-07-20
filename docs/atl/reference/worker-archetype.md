@@ -65,13 +65,13 @@ void Execute(
 ```  
   
 #### Parameters  
- `request`  
+ *request*  
  The work item to be processed. The work item is of the same type as `RequestType`.  
   
- `pvWorkerParam`  
+ *pvWorkerParam*  
  A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `Terminate`.  
   
- `pOverlapped`  
+ *pOverlapped*  
  A pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used to create the queue on which work items were queued.  
   
 ## <a name="initialize"></a> WorkerArchetype::Initialize
@@ -81,11 +81,11 @@ BOOL Initialize(void* pvParam) throw();
 ```  
   
 #### Parameters  
- `pvParam`  
+ *pvParam*  
  A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Terminate` and `WorkerArchetype::Execute`.  
   
 ### Return Value  
- Return **TRUE** on success, **FALSE** on failure.  
+ Return TRUE on success, FALSE on failure.  
   
 ## <a name="requesttype"></a> WorkerArchetype::RequestType
 A typedef for the type of work item that can be processed by the worker class.  
@@ -105,7 +105,7 @@ void Terminate(void* pvParam) throw();
 ```  
   
 #### Parameters  
- `pvParam`  
+ *pvParam*  
  A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `WorkerArchetype::Execute`.  
   
 ## See Also  

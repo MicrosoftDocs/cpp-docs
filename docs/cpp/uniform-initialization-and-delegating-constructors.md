@@ -82,7 +82,7 @@ int main()
 }  
 ```  
   
- You can use brace initialization anywhere you would typically do initialization—for example, as a function parameter or a return value, or with the `new` keyword:  
+ You can use brace initialization anywhere you would typically do initialization—for example, as a function parameter or a return value, or with the **new** keyword:  
   
 ```cpp  
 class_d* cf = new class_d{4.5};  

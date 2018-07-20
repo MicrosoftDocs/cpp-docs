@@ -23,7 +23,7 @@ class CComPtr
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  A COM interface specifying the type of pointer to be stored.  
   
 ## Members  
@@ -43,7 +43,7 @@ class CComPtr
 ## Remarks  
  ATL uses `CComPtr` and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) to manage COM interface pointers. Both are derived from [CComPtrBase](../../atl/reference/ccomptrbase-class.md), and both perform automatic reference counting.  
   
- The **CComPtr** and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) classes can help eliminate memory leaks by performing automatic reference counting.  The following functions both perform the same logical operations; however, note how the second version may be less error-prone by using the **CComPtr** class:  
+ The `CComPtr` and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) classes can help eliminate memory leaks by performing automatic reference counting.  The following functions both perform the same logical operations; however, note how the second version may be less error-prone by using the `CComPtr` class:  
   
  [!code-cpp[NVC_ATL_Utilities#130](../../atl/codesnippet/cpp/ccomptr-class_1.cpp)]  
   
@@ -69,10 +69,10 @@ CComPtr (const CComPtr<T>& lp) throw ();
 ```  
   
 ### Parameters  
- `lp`  
+ *lp*  
  Used to initialize the interface pointer.  
   
- `T`  
+ *T*  
  A COM interface.  
   
 ##  <a name="operator_eq"></a>  CComPtr::operator =  

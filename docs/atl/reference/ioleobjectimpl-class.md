@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IOleObjectImpl Class
-This class implements **IUnknown** and is the principal interface through which a container communicates with a control.  
+This class implements `IUnknown` and is the principal interface through which a container communicates with a control.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IOleObjectImpl`.  
   
 ## Members  
@@ -48,14 +48,14 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 |[IOleObjectImpl::EnumAdvise](#enumadvise)|Enumerates the control's advisory connections.|  
 |[IOleObjectImpl::EnumVerbs](#enumverbs)|Enumerates actions for the control.|  
 |[IOleObjectImpl::GetClientSite](#getclientsite)|Retrieves the control's client site.|  
-|[IOleObjectImpl::GetClipboardData](#getclipboarddata)|Retrieves data from the Clipboard. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::GetClipboardData](#getclipboarddata)|Retrieves data from the Clipboard. The ATL implementation returns E_NOTIMPL.|  
 |[IOleObjectImpl::GetExtent](#getextent)|Retrieves the extent of the control's display area.|  
 |[IOleObjectImpl::GetMiscStatus](#getmiscstatus)|Retrieves the status of the control.|  
-|[IOleObjectImpl::GetMoniker](#getmoniker)|Retrieves the control's moniker. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::GetMoniker](#getmoniker)|Retrieves the control's moniker. The ATL implementation returns E_NOTIMPL.|  
 |[IOleObjectImpl::GetUserClassID](#getuserclassid)|Retrieves the control's class identifier.|  
 |[IOleObjectImpl::GetUserType](#getusertype)|Retrieves the control's user-type name.|  
-|[IOleObjectImpl::InitFromData](#initfromdata)|Initializes the control from selected data. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleObjectImpl::IsUpToDate](#isuptodate)|Checks if the control is up to date. The ATL implementation returns `S_OK`.|  
+|[IOleObjectImpl::InitFromData](#initfromdata)|Initializes the control from selected data. The ATL implementation returns E_NOTIMPL.|  
+|[IOleObjectImpl::IsUpToDate](#isuptodate)|Checks if the control is up to date. The ATL implementation returns S_OK.|  
 |[IOleObjectImpl::OnPostVerbDiscardUndo](#onpostverbdiscardundo)|Called by [DoVerbDiscardUndo](#doverbdiscardundo) after the undo state is discarded.|  
 |[IOleObjectImpl::OnPostVerbHide](#onpostverbhide)|Called by [DoVerbHide](#doverbhide) after the control is hidden.|  
 |[IOleObjectImpl::OnPostVerbInPlaceActivate](#onpostverbinplaceactivate)|Called by [DoVerbInPlaceActivate](#doverbinplaceactivate) after the control is activated in place.|  
@@ -69,15 +69,15 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 |[IOleObjectImpl::OnPreVerbShow](#onpreverbshow)|Called by [DoVerbShow](#doverbshow) before the control has been made visible.|  
 |[IOleObjectImpl::OnPreVerbUIActivate](#onpreverbuiactivate)|Called by [DoVerbUIActivate](#doverbuiactivate) before the control's user interface has been activated.|  
 |[IOleObjectImpl::SetClientSite](#setclientsite)|Tells the control about its client site in the container.|  
-|[IOleObjectImpl::SetColorScheme](#setcolorscheme)|Recommends a color scheme to the control's application, if any. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::SetColorScheme](#setcolorscheme)|Recommends a color scheme to the control's application, if any. The ATL implementation returns E_NOTIMPL.|  
 |[IOleObjectImpl::SetExtent](#setextent)|Sets the extent of the control's display area.|  
 |[IOleObjectImpl::SetHostNames](#sethostnames)|Tells the control the names of the container application and container document.|  
-|[IOleObjectImpl::SetMoniker](#setmoniker)|Tells the control what its moniker is. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::SetMoniker](#setmoniker)|Tells the control what its moniker is. The ATL implementation returns E_NOTIMPL.|  
 |[IOleObjectImpl::Unadvise](#unadvise)|Deletes an advisory connection with the control.|  
-|[IOleObjectImpl::Update](#update)|Updates the control. The ATL implementation returns `S_OK`.|  
+|[IOleObjectImpl::Update](#update)|Updates the control. The ATL implementation returns S_OK.|  
   
 ## Remarks  
- The [IOleObject](http://msdn.microsoft.com/library/windows/desktop/dd542709) interface is the principal interface through which a container communicates with a control. Class `IOleObjectImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IOleObject](http://msdn.microsoft.com/library/windows/desktop/dd542709) interface is the principal interface through which a container communicates with a control. Class `IOleObjectImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -109,9 +109,9 @@ STDMETHOD(Close)(DWORD dwSaveOption);
 ```  
   
 ### Remarks  
- Deactivates the control and destroys the control window if it exists. If the control class data member [CComControlBase::m_bRequiresSave](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) is **TRUE** and the `dwSaveOption` parameter is either `OLECLOSE_SAVEIFDIRTY` or `OLECLOSE_PROMPTSAVE`, the control properties are saved before closing.  
+ Deactivates the control and destroys the control window if it exists. If the control class data member [CComControlBase::m_bRequiresSave](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) is TRUE and the *dwSaveOption* parameter is either OLECLOSE_SAVEIFDIRTY or OLECLOSE_PROMPTSAVE, the control properties are saved before closing.  
   
- The pointers held in the control class data members [CComControlBase::m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) and [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) are released, and the data members [CComControlBase::m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase::m_bWndless](../../atl/reference/ccomcontrolbase-class.md#m_bwndless), and [CComControlBase::m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) are set to **FALSE**.  
+ The pointers held in the control class data members [CComControlBase::m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) and [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) are released, and the data members [CComControlBase::m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase::m_bWndless](../../atl/reference/ccomcontrolbase-class.md#m_bwndless), and [CComControlBase::m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) are set to FALSE.  
   
  See [IOleObject::Close](http://msdn.microsoft.com/library/windows/desktop/ms683922) in the Windows SDK.  
   
@@ -133,14 +133,14 @@ STDMETHOD(DoVerb)(
   
 |*iVerb* Value|DoVerb helper function called|  
 |-------------------|-----------------------------------|  
-|**OLEIVERB_DISCARDUNDOSTATE**|[DoVerbDiscardUndo](#doverbdiscardundo)|  
-|`OLEIVERB_HIDE`|[DoVerbHide](#doverbhide)|  
-|**OLEIVERB_INPLACEACTIVATE**|[DoVerbInPlaceActivate](#doverbinplaceactivate)|  
-|`OLEIVERB_OPEN`|[DoVerbOpen](#doverbopen)|  
-|`OLEIVERB_PRIMARY`|[DoVerbPrimary](#doverbprimary)|  
-|**OLEIVERB_PROPERTIES**|[CComControlBase::DoVerbProperties](../../atl/reference/ccomcontrolbase-class.md#doverbproperties)|  
-|`OLEIVERB_SHOW`|[DoVerbShow](#doverbshow)|  
-|`OLEIVERB_UIACTIVATE`|[DoVerbUIActivate](#doverbuiactivate)|  
+|OLEIVERB_DISCARDUNDOSTATE|[DoVerbDiscardUndo](#doverbdiscardundo)|  
+|OLEIVERB_HIDE|[DoVerbHide](#doverbhide)|  
+|OLEIVERB_INPLACEACTIVATE|[DoVerbInPlaceActivate](#doverbinplaceactivate)|  
+|OLEIVERB_OPEN|[DoVerbOpen](#doverbopen)|  
+|OLEIVERB_PRIMARY|[DoVerbPrimary](#doverbprimary)|  
+|OLEIVERB_PROPERTIES|[CComControlBase::DoVerbProperties](../../atl/reference/ccomcontrolbase-class.md#doverbproperties)|  
+|OLEIVERB_SHOW|[DoVerbShow](#doverbshow)|  
+|OLEIVERB_UIACTIVATE|[DoVerbUIActivate](#doverbuiactivate)|  
   
  See [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
@@ -152,14 +152,14 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ##  <a name="doverbhide"></a>  IOleObjectImpl::DoVerbHide  
  Deactivates and removes the control's user interface, and hides the control.  
@@ -169,14 +169,14 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control. Not used in the ATL implementation.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ##  <a name="doverbinplaceactivate"></a>  IOleObjectImpl::DoVerbInPlaceActivate  
  Runs the control and installs its window, but does not install the control's user interface.  
@@ -186,17 +186,17 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control. Not used in the ATL implementation.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
- Activates the control in place by calling [CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate). Unless the control class's data member `m_bWindowOnly` is **TRUE**, `DoVerbInPlaceActivate` first attempts to activate the control as a windowless control (possible only if the container supports [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300)). If that fails, the function attempts to activate the control with extended features (possible only if the container supports [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461)). If that fails, the function attempts to activate the control with no extended features (possible only if the container supports [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)). If activation succeeds, the function notifies the container the control has been activated.  
+ Activates the control in place by calling [CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate). Unless the control class's data member `m_bWindowOnly` is TRUE, `DoVerbInPlaceActivate` first attempts to activate the control as a windowless control (possible only if the container supports [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300)). If that fails, the function attempts to activate the control with extended features (possible only if the container supports [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461)). If that fails, the function attempts to activate the control with no extended features (possible only if the container supports [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)). If activation succeeds, the function notifies the container the control has been activated.  
   
 ##  <a name="doverbopen"></a>  IOleObjectImpl::DoVerbOpen  
  Causes the control to be open-edited in a separate window.  
@@ -206,14 +206,14 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control.  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ##  <a name="doverbprimary"></a>  IOleObjectImpl::DoVerbPrimary  
  Defines the action taken when the user double-clicks the control.  
@@ -223,14 +223,14 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  By default, set to display the property pages. You can override this in your control class to invoke a different behavior on double-click; for example, play a video or go in-place active.  
@@ -243,14 +243,14 @@ HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control. Not used in the ATL implementation.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ##  <a name="doverbuiactivate"></a>  IOleObjectImpl::DoVerbUIActivate  
  Activates the control's user interface and notifies the container that its menus are being replaced by composite menus.  
@@ -260,14 +260,14 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
- `prcPosRec`  
+ *prcPosRec*  
  [in] Pointer to the rectangle the container wants the control to draw into.  
   
  *hwndParent*  
  [in] Handle of the window containing the control. Not used in the ATL implementation.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ##  <a name="enumadvise"></a>  IOleObjectImpl::EnumAdvise  
  Supplies an enumeration of registered advisory connections for this control.  
@@ -280,7 +280,7 @@ STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
  See [IOleObject::EnumAdvise](http://msdn.microsoft.com/library/windows/desktop/ms682355) in the Windows SDK.  
   
 ##  <a name="enumverbs"></a>  IOleObjectImpl::EnumVerbs  
- Supplies an enumeration of registered actions (verbs) for this control by calling **OleRegEnumVerbs**.  
+ Supplies an enumeration of registered actions (verbs) for this control by calling `OleRegEnumVerbs`.  
   
 ```
 STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
@@ -311,7 +311,7 @@ STDMETHOD(GetClipboardData)(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IOleObject::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms682288) in the Windows SDK.  
@@ -331,7 +331,7 @@ STDMETHOD(GetExtent)(
  See [IOleObject::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms692325) in the Windows SDK.  
   
 ##  <a name="getmiscstatus"></a>  IOleObjectImpl::GetMiscStatus  
- Returns a pointer to registered status information for the control by calling **OleRegGetMiscStatus**.  
+ Returns a pointer to registered status information for the control by calling `OleRegGetMiscStatus`.  
   
 ```
 STDMETHOD(GetMiscStatus)(
@@ -355,7 +355,7 @@ STDMETHOD(GetMoniker)(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IOleObject::GetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms686576) in the Windows SDK.  
@@ -371,7 +371,7 @@ STDMETHOD(GetUserClassID)(CLSID* pClsid);
  See [IOleObject::GetUserClassID](http://msdn.microsoft.com/library/windows/desktop/ms682313) in the Windows SDK.  
   
 ##  <a name="getusertype"></a>  IOleObjectImpl::GetUserType  
- Returns the control's user-type name by calling **OleRegGetUserType**.  
+ Returns the control's user-type name by calling `OleRegGetUserType`.  
   
 ```
 STDMETHOD(GetUserType)(
@@ -395,7 +395,7 @@ STDMETHOD(InitFromData)(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) in the Windows SDK.  
@@ -408,7 +408,7 @@ STDMETHOD(IsUpToDate)(void);
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  See [IOleObject::IsUpToDate](http://msdn.microsoft.com/library/windows/desktop/ms686624) in the Windows SDK.  
@@ -421,7 +421,7 @@ HRESULT OnPostVerbDiscardUndo();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Override this method with code you want executed after the undo state is discarded.  
@@ -434,7 +434,7 @@ HRESULT OnPostVerbHide();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Override this method with code you want executed after the control is hidden.  
@@ -447,7 +447,7 @@ HRESULT OnPostVerbInPlaceActivate();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Override this method with code you want executed after the control is activated in place.  
@@ -460,7 +460,7 @@ HRESULT OnPostVerbOpen();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Override this method with code you want executed after the control has been opened for editing in a separate window.  
@@ -473,7 +473,7 @@ HRESULT OnPostVerbShow();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Override this method with code you want executed after the control has been made visible.  
@@ -486,7 +486,7 @@ HRESULT OnPostVerbUIActivate();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  Override this method with code you want executed after the control's user interface has been activated.  
@@ -499,7 +499,7 @@ HRESULT OnPreVerbDiscardUndo();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To prevent the undo state from being discarded, override this method to return an error HRESULT.  
@@ -512,7 +512,7 @@ HRESULT OnPreVerbHide();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To prevent the control from being hidden, override this method to return an error HRESULT.  
@@ -525,7 +525,7 @@ HRESULT OnPreVerbInPlaceActivate();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To prevent the control from being activated in place, override this method to return an error HRESULT.  
@@ -538,7 +538,7 @@ HRESULT OnPreVerbOpen();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To prevent the control from being opened for editing in a separate window, override this method to return an error HRESULT.  
@@ -551,7 +551,7 @@ HRESULT OnPreVerbShow();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To prevent the control from being made visible, override this method to return an error HRESULT.  
@@ -564,7 +564,7 @@ HRESULT OnPreVerbUIActivate();
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  To prevent the control's user interface from being activated, override this method to return an error HRESULT.  
@@ -577,7 +577,7 @@ STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
 ```  
   
 ### Remarks  
- The method then returns `S_OK`.  
+ The method then returns S_OK.  
   
  See [IOleObject::SetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms684013) in the Windows SDK.  
   
@@ -589,7 +589,7 @@ STDMETHOD(SetColorScheme)(LOGPALETTE* /* pLogPal */);
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) in the Windows SDK.  
@@ -606,9 +606,9 @@ STDMETHOD(SetExtent)(
 ### Remarks  
  Otherwise, `SetExtent` stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent). This value is in HIMETRIC units (0.01 millimeter per unit).  
   
- If the control class data member [CComControlBase::m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_bresizenatural) is **TRUE**, `SetExtent` also stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural).  
+ If the control class data member [CComControlBase::m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_bresizenatural) is TRUE, `SetExtent` also stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural).  
   
- If the control class data member [CComControlBase::m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) is **TRUE**, `SetExtent` calls `SendOnDataChange` and `SendOnViewChange` to notify all advisory sinks registered with the advise holder that the control size has changed.  
+ If the control class data member [CComControlBase::m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) is TRUE, `SetExtent` calls `SendOnDataChange` and `SendOnViewChange` to notify all advisory sinks registered with the advise holder that the control size has changed.  
   
  See [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330) in the Windows SDK.  
   
@@ -620,7 +620,7 @@ STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */, LPCOLESTR /* szContainer
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  See [IOleObject::SetHostNames](http://msdn.microsoft.com/library/windows/desktop/ms680642) in the Windows SDK.  
@@ -635,7 +635,7 @@ STDMETHOD(SetMoniker)(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IOleObject::SetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679671) in the Windows SDK.  
@@ -658,7 +658,7 @@ STDMETHOD(Update)(void);
 ```  
   
 ### Return Value  
- Returns `S_OK`.  
+ Returns S_OK.  
   
 ### Remarks  
  See [IOleObject::Update](http://msdn.microsoft.com/library/windows/desktop/ms679699) in the Windows SDK.  

@@ -36,7 +36,7 @@ class CComHeap : public IAtlMemMgr
 |[CComHeap::Reallocate](#reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
   
 ## Remarks  
- `CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722), [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226), and [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280). The maximum amount of memory that can be allocated is equal to **INT_MAX** (2147483647) bytes.  
+ `CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722), [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226), and [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280). The maximum amount of memory that can be allocated is equal to INT_MAX (2147483647) bytes.  
   
 ## Example  
  See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -57,7 +57,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  
@@ -76,7 +76,7 @@ virtual void Free(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager. NULL is a valid value and does nothing.  
   
 ### Remarks  
@@ -90,7 +90,7 @@ virtual size_t GetSize(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
 ### Return Value  
@@ -107,10 +107,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  

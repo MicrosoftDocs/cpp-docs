@@ -30,7 +30,7 @@ ms.workload: ["cplusplus"]
 |[reference](../standard-library/container-class-reference.md)|Describes an object that can serve as a reference to an element of the controlled sequence.|
 |[reverse_iterator](../standard-library/container-class-reverse-iterator.md)|Describes an object that can serve as a reverse iterator for the controlled sequence.|
 |[size_type](../standard-library/container-class-size-type.md)|Describes an object that can represent the length of any controlled sequence.|
-|[value_type](../standard-library/container-class-value-type.md)|Acts a synonym for the template parameter **Ty**.|
+|[value_type](../standard-library/container-class-value-type.md)|Acts a synonym for the template parameter `Ty`.|
 
 ## Member Functions
 

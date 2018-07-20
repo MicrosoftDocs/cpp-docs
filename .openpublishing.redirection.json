@@ -361,6 +361,161 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/caccessorbase-close.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-gethaccessor.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#geth",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-getnumaccessors.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#getnum",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-isautoaccessor.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#isauto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorbase-releaseaccessors.md",
+            "redirect_url": "/cpp/data/oledb/caccessorbase-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-members.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-methods.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-bind.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#bind",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-caccessorrowset.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#caccessorrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-close.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-freerecordmemory.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#freerecordmemory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/caccessorrowset-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/caccessorrowset-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-carrayrowset.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#carrayrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-m-nrowsread.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#nrowsread",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-operator.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-snapshot.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#snapshot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-cbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#cbookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-getbuffer.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#getbuffer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-getsize.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#getsize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-setbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#setbookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-addrefrows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#addrefrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-cbulkrowset.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#cbulkrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movefirst.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movefirst",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movelast.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movelast",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movenext.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movenext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-moveprev.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#moveprev",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movetobookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movetobookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movetoratio.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movetoratio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-releaserows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#releaserows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-setrows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#setrows",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
@@ -3818,6 +3973,231 @@
         {
             "source_path": "docs/dotnet/vector-vector-stl-clr.md",
             "redirect_url": "/cpp/dotnet/vector-stl-clr#vector",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-for-simple-matching-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_simple",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-extract-data-fields-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_extract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-rearrange-data-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_rearrange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-search-and-replace-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_search",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-use-regular-expressions-to-validate-data-formatting-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#regex_validate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-parse-strings-using-the-split-method-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#parse_split",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-parse-strings-using-regular-expressions-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/regular-expressions-cpp-cli#parse_regex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-enumerate-files-in-a-directory-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#enumerate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-monitor-file-system-changes-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#monitor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-a-binary-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#read_binary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-a-text-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#read_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-file-information-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#retrieve",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-a-binary-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#write_binary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-a-text-file-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/file-handling-and-i-o-cpp-cli#write_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-convert-image-file-formats-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#convert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-display-images-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#display",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-draw-shapes-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#draw",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-rotate-images-with-the-dotnet-framework.md",
+            "redirect_url": "/cpp/dotnet/graphics-operations-cpp-cli#rotate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-determine-if-shutdown-has-started-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#determine_shutdown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-determine-the-user-interactive-state-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#determine_user",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-data-from-the-windows-registry-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#read_registry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-read-windows-performance-counters-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#read_performance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-text-from-the-clipboard-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-dotnet-framework-version-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_dotnet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-current-username-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_current",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-local-machine-name-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_local",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-the-windows-version-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_version",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-retrieve-time-elapsed-since-startup-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#retrieve_time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-store-text-in-the-clipboard-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#store_text",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/windows-operations-cpp-cli#write_data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-ansi-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_ansi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-bstr-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_bstr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-unicode-strings-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_unicode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-a-variant-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_variant",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-marshal-a-safearray-for-adonet-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/data-access-using-adonet-cpp-cli#marshal_safearray",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-implement-is-and-as-csharp-keywords-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#implement_isas",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-implement-the-lock-csharp-keyword-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#implement_lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/interoperability-with-other-dotnet-languages-cpp-cli#consume_indexer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/managed-types-and-the-main-function-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#main_functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#dotnet",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/version-issues-for-value-types-nested-in-native-types-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#version_issues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-test-for-equality-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#test_equality",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-diagnose-and-fix-assembly-compatibility-problems-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/managed-types-cpp-cli#diagnose_fix",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-implement-a-plug-in-component-architecture-using-reflection-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/reflection-cpp-cli#implement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md.md",
+            "redirect_url": "/cpp/dotnet/reflection-cpp-cli#enumerate",
             "redirect_document_id": false
         },
         {

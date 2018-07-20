@@ -28,7 +28,7 @@ When using `IDispEventSimpleImpl` to handle events, you will need to:
 -   Advise and unadvise the event source.  
   
 ## Example  
- The example below shows you how to handle the **DocumentChange** event fired by Word's **Application** object. This event is defined as a method on the **ApplicationEvents** dispinterface.  
+ The example below shows you how to handle the `DocumentChange` event fired by Word's **Application** object. This event is defined as a method on the `ApplicationEvents` dispinterface.  
   
  The example is from the [ATLEventHandling sample](../visual-cpp-samples.md).  
   
@@ -64,7 +64,7 @@ When using `IDispEventSimpleImpl` to handle events, you will need to:
   
  [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventsimpleimpl_1.h)]  
   
- The only information from the type library actually used in this example is the CLSID of the Word **Application** object and the IID of the **ApplicationEvents** interface. This information is only used at compile time.  
+ The only information from the type library actually used in this example is the CLSID of the Word `Application` object and the IID of the `ApplicationEvents` interface. This information is only used at compile time.  
   
  The following code appears in Simple.h. The relevant code is noted by comments:  
   

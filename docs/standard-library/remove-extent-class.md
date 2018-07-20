@@ -28,12 +28,12 @@ using remove_extent_t = typename remove_extent<T>::type;
 
 ### Parameters
 
-`T`
+*T*
  The type to modify.
 
 ## Remarks
 
-An instance of `remove_extent<T>` holds a modified-type that is `T1` when `T` is of the form `T1[N]`, otherwise `T`.
+An instance of `remove_extent<T>` holds a modified-type that is `T1` when *T* is of the form `T1[N]`, otherwise *T*.
 
 ## Example
 

@@ -21,11 +21,11 @@ void swap(vector<Type, Allocator>& left, vector<Type, Allocator>& right);
 
 ### Parameters
 
-`right`
- The vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the vector `left`.
+*right*  
+ The vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the vector *left*.
 
-`left`
- The vector whose elements are to be exchanged with those of the vector `right`.
+*left*  
+ The vector whose elements are to be exchanged with those of the vector *right*.
 
 ### Remarks
 

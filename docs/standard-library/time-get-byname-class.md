@@ -39,15 +39,15 @@ protected:
 
 ### Parameters
 
-`_Locname`
+*_Locname*  
  A named locale.
 
-`_Refs`
+*_Refs*  
  An initial reference count.
 
 ## Requirements
 
-Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [time_get](../standard-library/time-get-class.md#time_get)\<CharType, InputIterator>( `_Refs`).
+Its behavior is determined by the named locale *_Locname*. Each constructor initializes its base object with [time_get](../standard-library/time-get-class.md#time_get)\<CharType, InputIterator>( `_Refs`).
 
 ## Requirements
 

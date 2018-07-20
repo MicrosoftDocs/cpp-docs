@@ -23,7 +23,7 @@ The C++ language supports three error handling mechanisms that help you debug yo
   
      The `static_assert` declaration is especially useful for debugging templates because template arguments can be included in the user-specified expression.  
   
--   The [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) macro is in effect at run time. It evaluates a user-specified expression, and if the result is zero, the system issues a diagnostic message and closes your application. Many other macros, such as[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) and `_ASSERTE`, resemble this macro but issue different system-defined or user-defined diagnostic messages.  
+-   The [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) macro is in effect at run time. It evaluates a user-specified expression, and if the result is zero, the system issues a diagnostic message and closes your application. Many other macros, such as[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) and _ASSERTE, resemble this macro but issue different system-defined or user-defined diagnostic messages.  
   
 ## See Also  
  [#error Directive (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)   

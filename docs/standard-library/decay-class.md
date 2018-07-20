@@ -28,7 +28,7 @@ using decay_t = typename decay<T>::type;
 
 ### Parameters
 
-`T`
+*T*
  The type to modify.
 
 ## Remarks

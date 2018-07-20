@@ -28,15 +28,15 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
 
 ### Parameters
 
-`Len`
+*Len*
  The object size.
 
-`Align`
+*Align*
  The object alignment.
 
 ## Remarks
 
-The template member typedef `type` is a synonym for a POD type with alignment `Align` and size `Len`. `Align` must be equal to `alignment_of<T>::value` for some type `T`, or to the default alignment.
+The template member typedef `type` is a synonym for a POD type with alignment *Align* and size *Len*. *Align* must be equal to `alignment_of<T>::value` for some type `T`, or to the default alignment.
 
 ## Example
 

@@ -52,11 +52,11 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ```  
   
 ### Parameters  
- [out] `pEnabled`  
- `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
+ [out] *pEnabled*  
+ TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
   
 ### Return Value  
- `S_OK` if the method is successful, otherwise the `HRESULT` error code if an error occurs.  
+ S_OK if the method is successful, otherwise the HRESULT error code if an error occurs.  
   
 ### Remarks  
  Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
@@ -76,16 +76,16 @@ LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTr
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  A handle to an open registry key.  
   
- `lpSubKey`  
+ *lpSubKey*  
  The name of a key that this function opens or creates.  
   
- `phkResult`  
+ *phkResult*  
  A pointer to a variable that receives a handle to the opened or created key.  
   
- `pTM`  
+ *pTM*  
  Pointer to a `CAtlTransactionManager` object.  
   
 ### Return Value  
@@ -104,13 +104,13 @@ LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager*
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  A handle to an open registry key.  
   
- `lpSubKey`  
+ *lpSubKey*  
  The name of the key to be deleted.  
   
- `pTM`  
+ *pTM*  
  Pointer to a `CAtlTransactionManager` object.  
   
 ### Return Value  
@@ -129,13 +129,13 @@ BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeNa
 ```  
   
 ### Parameters  
- `lpszCLSID`  
+ *lpszCLSID*  
  Specifies the CLSID of handler.  
   
- `lpszShortTypeName`  
+ *lpszShortTypeName*  
  Specifies the ProgID of handler.  
   
- `lpszFilterExt`  
+ *lpszFilterExt*  
  Specifies the file extension registered with this handler.  
   
 ### Requirements  
@@ -150,10 +150,10 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 ```  
   
 ### Parameters  
- `hInstTypeLib`  
+ *hInstTypeLib*  
  The handle to the module instance.  
   
- `lpszIndex`  
+ *lpszIndex*  
  String in the format "\\\N", where N is the integer index of the type library resource. Can be NULL if no index is required.  
   
 ### Return Value  
@@ -174,16 +174,16 @@ LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTran
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  A handle to an open registry key.  
   
- `lpSubKey`  
+ *lpSubKey*  
  The name of a key that this function opens or creates.  
   
- `phkResult`  
+ *phkResult*  
  A pointer to a variable that receives a handle to the created key.  
   
- `pTM`  
+ *pTM*  
  Pointer to a `CAtlTransactionManager` object.  
   
 ### Return Value  
@@ -202,22 +202,22 @@ LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  A handle to an open registry key.  
   
- `lpSubKey`  
+ *lpSubKey*  
  The name of a key that this function opens or creates.  
   
- `ulOptions`  
+ *ulOptions*  
  This parameter is reserved and must be zero.  
   
- `samDesired`  
+ *samDesired*  
  A mask that specifies the desired access rights to the key.  
   
- `phkResult`  
+ *phkResult*  
  A pointer to a variable that receives a handle to the opened key.  
   
- `pTM`  
+ *pTM*  
  Pointer to a `CAtlTransactionManager` object.  
   
 ### Return Value  
@@ -236,7 +236,7 @@ BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 ```  
   
 ### Parameters  
- `lpszCLSID`  
+ *lpszCLSID*  
  Specifies the CLSID of the handler to be unregistered.  
   
 ### Requirements  
@@ -252,11 +252,11 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
+ [in] *bEnable*  
+ TRUE indicates that the registry information is directed to the **HKCU** node; FALSE indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
   
 ### Return Value  
- `S_OK` if the method is successful, otherwise the `HRESULT` error code if an error occurs.  
+ S_OK if the method is successful, otherwise the HRESULT error code if an error occurs.  
   
 ### Remarks  
  Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
@@ -276,10 +276,10 @@ ATLAPI AtlUnRegisterTypeLib(
 ```  
   
 ### Parameters  
- `hInstTypeLib`  
+ *hInstTypeLib*  
  The handle to the module instance.  
   
- `lpszIndex`  
+ *lpszIndex*  
  String in the format "\\\N", where N is the integer index of the type library resource. Can be NULL if no index is required.  
   
 ### Return Value  
@@ -303,16 +303,16 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 ```  
   
 ### Parameters  
- `hInstTypeLib`  
+ *hInstTypeLib*  
  Handle to the module associated with the type library.  
   
- `lpszIndex`  
+ *lpszIndex*  
  String in the format "\\\N", where N is the integer index of the type library resource. Can be NULL if no index is required.  
   
  *pbstrPath*  
  On successful return, contains the full path of the module associated with the type library.  
   
- `ppTypeLib`  
+ *ppTypeLib*  
  On successful return, contains a pointer to a pointer to the loaded type library.  
   
 ### Return Value  
@@ -348,7 +348,7 @@ HRESULT RegistryDataExchange(
  *rdxOp*  
  An enum value that indicates which operation the function should perform. See the table in the Remarks section for the allowed values.  
   
- `pItem`  
+ *pItem*  
  Pointer to the data that is to be read from, or written to, the registry. The data can also represent a key to be deleted from the registry. The default value is NULL.  
   
 ### Return Value  

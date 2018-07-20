@@ -25,7 +25,7 @@ The Active Template Library includes the following typedefs.
 |[CComDispatchDriver](#ccomdispatchdriver)|This class manages COM interface pointers.|  
 |[CComGlobalsThreadModel](#ccomglobalsthreadmodel)|Calls the appropriate thread model methods, regardless of the threading model being used.|  
 |[CComObjectThreadModel](#ccomobjectthreadmodel)|Calls the appropriate thread model methods, regardless of the threading model being used.|  
-|[CContainedWindow](#ccontainedwindow)|This class is a specialization of **CContainedWindowT.**|  
+|[CContainedWindow](#ccontainedwindow)|This class is a specialization of `CContainedWindowT`.|  
 |[CPath](#cpath)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CString`.|  
 |[CPathA](#cpatha)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.|  
 |[CPathW](#cpathw)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.|  
@@ -122,14 +122,14 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 ```  
   
 ### Remarks  
- Depending on the threading model used by your application, the `typedef` name `CComGlobalsThreadModel` references either [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md). These classes provide additional `typedef` names to reference a critical section class.  
+ Depending on the threading model used by your application, the **typedef** name `CComGlobalsThreadModel` references either [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) or [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md). These classes provide additional `typedef` names to reference a critical section class.  
   
 > [!NOTE]
 > `CComGlobalsThreadModel` does not reference class [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md).  
   
  Using `CComGlobalsThreadModel` frees you from specifying a particular threading model class. Regardless of the threading model being used, the appropriate methods will be called.  
   
- In addition to `CComGlobalsThreadModel`, ATL provides the `typedef` name [CComObjectThreadModel](#ccomobjectthreadmodel). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:  
+ In addition to `CComGlobalsThreadModel`, ATL provides the **typedef** name [CComObjectThreadModel](#ccomobjectthreadmodel). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:  
   
 |typedef|Single threading|Apartment threading|Free threading|  
 |-------------|----------------------|-------------------------|--------------------|  
@@ -166,7 +166,7 @@ typedef CComMultiThreadModel CComObjectThreadModel;
   
  Using `CComObjectThreadModel` frees you from specifying a particular threading model class. Regardless of the threading model being used, the appropriate methods will be called.  
   
- In addition to `CComObjectThreadModel`, ATL provides the `typedef` name [CComGlobalsThreadModel](#ccomglobalsthreadmodel). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:  
+ In addition to `CComObjectThreadModel`, ATL provides the **typedef** name [CComGlobalsThreadModel](#ccomglobalsthreadmodel). The class referenced by each **typedef** depends on the threading model used, as shown in the following table:  
   
 |typedef|Single threading|Apartment threading|Free threading|  
 |-------------|----------------------|-------------------------|--------------------|  
@@ -181,7 +181,7 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 **Header:** atlbase.h
   
 ##  <a name="ccontainedwindow"></a>  CContainedWindow  
- This class is a specialization of **CContainedWindowT.**  
+ This class is a specialization of `CContainedWindowT`.  
   
 ```   
 typedef CContainedWindowT<CWindow> CContainedWindow;   

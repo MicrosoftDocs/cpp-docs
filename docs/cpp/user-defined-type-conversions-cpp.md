@@ -46,14 +46,14 @@ A *conversion* produces a new value of some type from a value of a different typ
 ## The explicit keyword and problems with implicit conversion  
  By default when you create a user-defined conversion, the compiler can use it to perform implicit conversions. Sometimes this is what you want, but other times the simple rules that guide the compiler in making implicit conversions can lead it to accept code that you don't want it to.  
   
- One well-known example of an implicit conversion that can cause problems is the conversion to `bool`. There are many reasons that you might want to create a class type that can be used in a Boolean context—for example, so that it can be used to control an `if` statement or loop—but when the compiler performs a user-defined conversion to a built-in type, the compiler is allowed to apply an additional standard conversion afterwards. The intent of this additional standard conversion is to allow for things like promotion from `short` to `int`, but it also opens the door for less-obvious conversions—for example, from `bool` to `int`, which allows your class type to be used in integer contexts you never intended. This particular problem is known as the *Safe Bool Problem*. This kind of problem is where the `explicit` keyword can help.  
+ One well-known example of an implicit conversion that can cause problems is the conversion to **bool**. There are many reasons that you might want to create a class type that can be used in a Boolean context—for example, so that it can be used to control an **if** statement or loop—but when the compiler performs a user-defined conversion to a built-in type, the compiler is allowed to apply an additional standard conversion afterwards. The intent of this additional standard conversion is to allow for things like promotion from **short** to **int**, but it also opens the door for less-obvious conversions—for example, from **bool** to **int**, which allows your class type to be used in integer contexts you never intended. This particular problem is known as the *Safe Bool Problem*. This kind of problem is where the **explicit** keyword can help.  
   
- The `explicit` keyword tells the compiler that the specified conversion can't be used to perform implicit conversions. If you wanted the syntactic convenience of implicit conversions before the `explicit` keyword was introduced, you had to either accept the unintended consequences that implicit conversion sometimes created or use less-convenient, named conversion functions as a workaround. Now, by using the `explicit` keyword, you can create convenient conversions that can only be used to perform explicit casts or direct initialization, and that won't lead to the kind of problems exemplified by the Safe Bool Problem.  
+ The **explicit** keyword tells the compiler that the specified conversion can't be used to perform implicit conversions. If you wanted the syntactic convenience of implicit conversions before the **explicit** keyword was introduced, you had to either accept the unintended consequences that implicit conversion sometimes created or use less-convenient, named conversion functions as a workaround. Now, by using the **explicit** keyword, you can create convenient conversions that can only be used to perform explicit casts or direct initialization, and that won't lead to the kind of problems exemplified by the Safe Bool Problem.  
   
- The `explicit` keyword can be applied to conversion constructors since C++98, and to conversion functions since C++11. The following sections contain more information about how to use the `explicit` keyword.  
+ The **explicit** keyword can be applied to conversion constructors since C++98, and to conversion functions since C++11. The following sections contain more information about how to use the **explicit** keyword.  
   
 ##  <a name="ConvCTOR"></a> Conversion constructors  
- Conversion constructors define conversions from user-defined or built-in types to a user-defined type. The following example demonstrates a conversion constructor that converts from the built-in type `double` to a user-defined type `Money`.  
+ Conversion constructors define conversions from user-defined or built-in types to a user-defined type. The following example demonstrates a conversion constructor that converts from the built-in type **double** to a user-defined type `Money`.  
   
 ```cpp 
 #include <iostream>  
@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
 }  
 ```  
   
- Notice that the first call to the function `display_balance`, which takes an argument of type `Money`, doesn't require a conversion because its argument is the correct type. However, on the second call to `display_balance`, a conversion is needed because the type of the argument, a `double` with a value of `49.95`, is not what the function expects. The function can't use this value directly, but because there's a conversion from the type of the argument—`double`—to the type of the matching parameter—`Money`—a temporary value of type `Money` is constructed from the argument and used to complete the function call. In the third call to `display_balance`, notice that the argument is not a `double`, but is instead a `float` with a value of `9.99`—and yet the function call can still be completed because the compiler can perform a standard conversion—in this case, from `float` to `double`—and then perform the user-defined conversion from `double` to `Money` to complete the necessary conversion.  
+ Notice that the first call to the function `display_balance`, which takes an argument of type `Money`, doesn't require a conversion because its argument is the correct type. However, on the second call to `display_balance`, a conversion is needed because the type of the argument, a **double** with a value of `49.95`, is not what the function expects. The function can't use this value directly, but because there's a conversion from the type of the argument—**double**—to the type of the matching parameter—`Money`—a temporary value of type `Money` is constructed from the argument and used to complete the function call. In the third call to `display_balance`, notice that the argument is not a **double**, but is instead a **float** with a value of `9.99`—and yet the function call can still be completed because the compiler can perform a standard conversion—in this case, from **float** to **double**—and then perform the user-defined conversion from **double** to `Money` to complete the necessary conversion.  
   
 ### Declaring conversion constructors  
  The following rules apply to declaring a conversion constructor:  
@@ -98,7 +98,7 @@ int main(int argc, char* argv[])
 -   Conversion constructors can be explicit.  
   
 ### Explicit conversion constructors  
- By declaring a conversion constructor to be `explicit`, it can only be used to perform direct initialization of an object or to perform an explicit cast. This prevents functions that accept an argument of the class type from also implicitly accepting arguments of the conversion constructor's source type, and prevents the class type from being copy-initialized from a value of the source type. The following example demonstrates how to define an explicit conversion constructor, and the effect it has on what code is well-formed.  
+ By declaring a conversion constructor to be **explicit**, it can only be used to perform direct initialization of an object or to perform an explicit cast. This prevents functions that accept an argument of the class type from also implicitly accepting arguments of the conversion constructor's source type, and prevents the class type from being copy-initialized from a value of the source type. The following example demonstrates how to define an explicit conversion constructor, and the effect it has on what code is well-formed.  
   
 ```cpp 
 #include <iostream>  
@@ -129,12 +129,12 @@ int main(int argc, char* argv[])
 }  
 ```  
   
- In this example, notice that you can still use the explicit conversion constructor to perform direct initialization of `payable`. If instead you were to copy-initialize `Money payable = 79.99;`, it would be an error. The first call to `display_balance` is unaffected because the argument is the correct type. The second call to `display_balance` is an error, because the conversion constructor can't be used to perform implicit conversions. The third call to `display_balance` is legal because of the explicit cast to `Money`, but notice that the compiler still helped complete the cast by inserting an implicit cast from `float` to `double`.  
+ In this example, notice that you can still use the explicit conversion constructor to perform direct initialization of `payable`. If instead you were to copy-initialize `Money payable = 79.99;`, it would be an error. The first call to `display_balance` is unaffected because the argument is the correct type. The second call to `display_balance` is an error, because the conversion constructor can't be used to perform implicit conversions. The third call to `display_balance` is legal because of the explicit cast to `Money`, but notice that the compiler still helped complete the cast by inserting an implicit cast from **float** to **double**.  
   
  Although the convenience of allowing implicit conversions can be tempting, doing so can introduce hard-to-find bugs. The rule of thumb is to make all conversion constructors explicit except when you're sure that you want a specific conversion to occur implicitly.  
   
 ##  <a name="ConvFunc"></a> Conversion functions  
- Conversion functions define conversions from a user-defined type to other types. These functions are sometimes referred to as "cast operators" because they, along with conversion constructors, are called when a value is cast to a different type. The following example demonstrates a conversion function that converts from the user-defined type, `Money`, to a built-in type, `double`:  
+ Conversion functions define conversions from a user-defined type to other types. These functions are sometimes referred to as "cast operators" because they, along with conversion constructors, are called when a value is cast to a different type. The following example demonstrates a conversion function that converts from the user-defined type, `Money`, to a built-in type, **double**:  
   
 ```cpp 
 #include <iostream>  
@@ -157,9 +157,9 @@ void display_balance(const Money balance)
   
 ```  
   
- Notice that the member variable `amount` is made private and that a public conversion function to type `double` is introduced just to return the value of `amount`. In the function `display_balance`, an implicit conversion occurs when the value of `balance` is streamed to standard output by using the stream insertion operator `<<`. Because no stream-insertion operator is defined for the user-defined type `Money`, but there is one for built-in type `double`, the compiler can use the conversion function from `Money` to `double` to satisfy the stream-insertion operator.  
+ Notice that the member variable `amount` is made private and that a public conversion function to type **double** is introduced just to return the value of `amount`. In the function `display_balance`, an implicit conversion occurs when the value of `balance` is streamed to standard output by using the stream insertion operator `<<`. Because no stream-insertion operator is defined for the user-defined type `Money`, but there is one for built-in type **double**, the compiler can use the conversion function from `Money` to **double** to satisfy the stream-insertion operator.  
   
- Conversion functions are inherited by derived classes. Conversion functions in a derived class only override an inherited conversion function when they convert to exactly the same type. For example, a user-defined conversion function of the derived class `operator int` does not override—or even influence—a user-defined conversion function of the base class `operator short`, even though the standard conversions define a conversion relationship between `int` and `short`.  
+ Conversion functions are inherited by derived classes. Conversion functions in a derived class only override an inherited conversion function when they convert to exactly the same type. For example, a user-defined conversion function of the derived class **operator int** does not override—or even influence—a user-defined conversion function of the base class **operator short**, even though the standard conversions define a conversion relationship between **int** and **short**.  
   
 ### Declaring conversion functions  
  The following rules apply to declaring a conversion function:  
@@ -202,5 +202,5 @@ void display_balance(const Money balance)
   
 ```  
   
- Here the conversion function `operator double` has been made explicit, and an explicit cast to type `double` has been introduced in the function `display_balance` to perform the conversion. If this cast were omitted, the compiler would be unable to locate a suitable stream-insertion operator `<<` for type `Money` and an error would occur.  
+ Here the conversion function **operator double** has been made explicit, and an explicit cast to type **double** has been introduced in the function `display_balance` to perform the conversion. If this cast were omitted, the compiler would be unable to locate a suitable stream-insertion operator `<<` for type `Money` and an error would occur.  
   

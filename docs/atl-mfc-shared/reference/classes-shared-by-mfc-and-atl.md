@@ -20,9 +20,9 @@ The following table lists the classes shared between MFC and ATL.
 |[CFileTimeSpan](../../atl-mfc-shared/reference/cfiletimespan-class.md)|Provides methods for managing relative date and time values associated with a file.|atltime.h|  
 |[CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md)|Represents a string object with a fixed character buffer.|cstringt.h|  
 |[CImage](../../atl-mfc-shared/reference/cimage-class.md)|Provides enhanced bitmap support, including the ability to load and save images in JPEG, GIF, BMP, and Portable Network Graphics (PNG) formats.|atlimage.h|  
-|[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|Encapsulates the **DATE** data type used in OLE automation.|atlcomtime.h|  
+|[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|Encapsulates the DATE data type used in OLE automation.|atlcomtime.h|  
 |[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|Represents a relative time, a time span.|atlcomtime.h|  
-|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|A class similar to the Windows [POINT](../../mfc/reference/point-structure1.md) structure that also includes member functions to manipulate `CPoint` and **POINT** structures.|atltypes.h|  
+|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|A class similar to the Windows [POINT](../../mfc/reference/point-structure1.md) structure that also includes member functions to manipulate `CPoint` and `POINT` structures.|atltypes.h|  
 |[CRect](../../atl-mfc-shared/reference/crect-class.md)|A class similar to a Windows [RECT](../../mfc/reference/rect-structure1.md) structure that also includes member functions to manipulate `CRect` objects and Windows `RECT` structures.|atltypes.h|  
 |[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|Represents a `CSimpleStringT` object.|atlsimpstr.h|  
 |[CSize](../../atl-mfc-shared/reference/csize-class.md)|A class similar to the Windows SIZE structure, which implements a relative coordinate or position.|atltypes.h|  

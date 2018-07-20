@@ -24,7 +24,7 @@ class pointer_safety {
 
 ### Remarks
 
-The scoped `enum` defines the values that can be returned by `get_pointer_safety()`:
+The scoped **enum** defines the values that can be returned by `get_pointer_safety()`:
 
 `relaxed` -- pointers not safely derived (obviously pointers to declared or allocated objects) are treated the same as those safely derived.
 

@@ -25,12 +25,12 @@ struct is_rvalue_reference;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of this type predicate holds true if the type `Ty` is an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md).
+An instance of this type predicate holds true if the type *Ty* is an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## Requirements
 

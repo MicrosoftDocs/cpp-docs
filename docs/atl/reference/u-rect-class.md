@@ -21,7 +21,8 @@ This argument adapter class allows either `RECT` pointers or references to be pa
 ## Syntax  
   
 ```
-class _U_RECT```  
+class _U_RECT
+```  
   
 ## Members  
   
@@ -59,10 +60,10 @@ _U_RECT(LPRECT lpRect);
 ```  
   
 ### Parameters  
- `rc`  
+ *rc*  
  A `RECT` reference.  
   
- `lpRect`  
+ *lpRect*  
  A `RECT` pointer.  
   
 ### Remarks  

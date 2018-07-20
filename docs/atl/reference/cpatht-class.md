@@ -26,7 +26,7 @@ class CPathT
 ```  
   
 #### Parameters  
- `StringType`  
+ *StringType*  
  The ATL/MFC string class to use for the path (see [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)).  
   
 ## Members  
@@ -65,7 +65,7 @@ class CPathT
 |[CPathT::GetExtension](#getextension)|Call this method to get the file extension from the path.|  
 |[CPathT::IsDirectory](#isdirectory)|Call this method to check whether the path is a valid directory.|  
 |[CPathT::IsFileSpec](#isfilespec)|Call this method to search a path for any path-delimiting characters (for example, ':' or '\\' ). If there are no path-delimiting characters present, the path is considered to be a File Spec path.|  
-|[CPathT::IsPrefix](#isprefix)|Call this method to determine whether a path contains a valid prefix of the type passed by `pszPrefix`.|  
+|[CPathT::IsPrefix](#isprefix)|Call this method to determine whether a path contains a valid prefix of the type passed by *pszPrefix*.|  
 |[CPathT::IsRelative](#isrelative)|Call this method to determine if the path is relative.|  
 |[CPathT::IsRoot](#isroot)|Call this method to determine if the path is a directory root.|  
 |[CPathT::IsSameRoot](#issameroot)|Call this method to determine whether another path has a common root component with the current path.|  
@@ -132,7 +132,7 @@ BOOL AddExtension(PCXSTR pszExtension);
 ```  
   
 ### Parameters  
- `pszExtension`  
+ *pszExtension*  
  The file extension to add.  
   
 ### Return Value  
@@ -149,7 +149,7 @@ BOOL Append(PCXSTR pszMore);
 ```  
   
 ### Parameters  
- `pszMore`  
+ *pszMore*  
  The string to append.  
   
 ### Return Value  
@@ -190,7 +190,7 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 ```  
   
 ### Parameters  
- `pszDir`  
+ *pszDir*  
  The directory path.  
   
  *pszFile*  
@@ -207,7 +207,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 ```  
   
 ### Parameters  
- `pszOther`  
+ *pszOther*  
  The path to compare to the current one.  
   
 ### Return Value  
@@ -224,10 +224,10 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
 ```  
   
 ### Parameters  
- `hDC`  
+ *hDC*  
  The device context used for font metrics.  
   
- `nWidth`  
+ *nWidth*  
  The width, in pixels, that the string will be forced to fit in.  
   
 ### Return Value  
@@ -244,10 +244,10 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 ```  
   
 ### Parameters  
- `nMaxChars`  
+ *nMaxChars*  
  The maximum number of characters to be contained in the new string, including the terminating NULL character.  
   
- `dwFlags`  
+ *dwFlags*  
  Reserved.  
   
 ### Return Value  
@@ -342,7 +342,7 @@ BOOL IsDirectory() const;
 ```  
   
 ### Return Value  
- Returns a non-zero value (16) if the path is a directory, `FALSE` otherwise.  
+ Returns a non-zero value (16) if the path is a directory, FALSE otherwise.  
   
 ### Remarks  
  For more information, see [PathIsDirectory](http://msdn.microsoft.com/library/windows/desktop/bb773621).  
@@ -361,14 +361,14 @@ BOOL IsFileSpec() const;
  For more information, see [PathIsFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773627).  
   
 ##  <a name="isprefix"></a>  CPathT::IsPrefix  
- Call this method to determine whether a path contains a valid prefix of the type passed by `pszPrefix`.  
+ Call this method to determine whether a path contains a valid prefix of the type passed by *pszPrefix*.  
   
 ```
 BOOL IsPrefix(PCXSTR pszPrefix) const;
 ```  
   
 ### Parameters  
- `pszPrefix`  
+ *pszPrefix*  
  The prefix for which to search. A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\".  
   
 ### Return Value  
@@ -411,7 +411,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
 ```  
   
 ### Parameters  
- `pszOther`  
+ *pszOther*  
  The other path.  
   
 ### Return Value  
@@ -490,8 +490,8 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 ```  
   
 ### Parameters  
- `pszSpec`  
- Pointer to a null-terminated string with the file type for which to search. For example, to test whether the file at the current path is a DOC file, `pszSpec` should be set to "*.doc".  
+ *pszSpec*  
+ Pointer to a null-terminated string with the file type for which to search. For example, to test whether the file at the current path is a DOC file, *pszSpec* should be set to "*.doc".  
   
 ### Return Value  
  Returns TRUE if the string matches, or FALSE otherwise.  
@@ -507,7 +507,7 @@ CPathT<StringType>& operator+=(PCXSTR pszMore);
 ```  
   
 ### Parameters  
- `pszMore`  
+ *pszMore*  
  The string to append.  
   
 ### Return Value  
@@ -585,17 +585,17 @@ BOOL RelativePathTo(
 ```  
   
 ### Parameters  
- `pszFrom`  
+ *pszFrom*  
  The start of the relative path.  
   
  *dwAttrFrom*  
- The File attributes of `pszFrom`. If this value contains FILE_ATTRIBUTE_DIRECTORY, `pszFrom` is assumed to be a directory; otherwise, `pszFrom` is assumed to be a file.  
+ The File attributes of *pszFrom*. If this value contains FILE_ATTRIBUTE_DIRECTORY, *pszFrom* is assumed to be a directory; otherwise, *pszFrom* is assumed to be a file.  
   
- `pszTo`  
+ *pszTo*  
  The end point of the relative path.  
   
  *dwAttrTo*  
- The File attributes of `pszTo`. If this value contains FILE_ATTRIBUTE_DIRECTORY, `pszTo` is assumed to be a directory; otherwise, `pszTo` is assumed to be a file.  
+ The File attributes of *pszTo*. If this value contains FILE_ATTRIBUTE_DIRECTORY, *pszTo* is assumed to be a directory; otherwise, *pszTo* is assumed to be a file.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -664,7 +664,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
 ```  
   
 ### Parameters  
- `pszExtension`  
+ *pszExtension*  
  The new file name extension, preceded by a "." character.  
   
 ### Return Value  

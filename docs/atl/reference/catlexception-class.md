@@ -58,8 +58,8 @@ CAtlException() throw();
 ```  
   
 ### Parameters  
- `hr`  
- The `HRESULT` error code.  
+ *hr*  
+ The HRESULT error code.  
   
 ##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT 
  Casts the current object to an HRESULT value.  
@@ -69,7 +69,7 @@ operator HRESULT() const throw ();
 ```  
   
 ##  <a name="m_hr"></a>  CAtlException::m_hr  
- The `HRESULT` data member.  
+ The HRESULT data member.  
   
 ```
 HRESULT m_hr;

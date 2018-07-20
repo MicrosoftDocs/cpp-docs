@@ -27,18 +27,18 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
   
 ### Parameters  
  *hdc*  
- [in] The existing handle of a device context, or **NULL**.  
+ [in] The existing handle of a device context, or NULL.  
   
- `ptd`  
- [in] A pointer to the **DVTARGETDEVICE** structure that contains information about the target device.  
+ *ptd*  
+ [in] A pointer to the `DVTARGETDEVICE` structure that contains information about the target device.  
   
 ### Return Value  
- Returns the handle to a device context for the device specified in the **DVTARGETDEVICE**. If no device is specified, returns the handle to the default display device.  
+ Returns the handle to a device context for the device specified in the `DVTARGETDEVICE`. If no device is specified, returns the handle to the default display device.  
   
 ### Remarks  
- If the structure is **NULL** and *hdc* is **NULL**, creates a device context for the default display device.  
+ If the structure is NULL and *hdc* is NULL, creates a device context for the default display device.  
   
- If *hdc* is not **NULL** and `ptd` is **NULL**, the function returns the existing *hdc*.  
+ If *hdc* is not NULL and *ptd* is NULL, the function returns the existing *hdc*.  
 
 ## Requirements  
  **Header:** atlwin.h  

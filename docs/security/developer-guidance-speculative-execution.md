@@ -1,7 +1,7 @@
 ---
 title: "C++ Developer Guidance for Speculative Execution Side Channels | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/21/2018"
+ms.date: "07/10/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -16,7 +16,7 @@ This article contains guidance for developers to assist with identifying and mit
 
 The guidance provided by this article is related to the classes of vulnerabilities represented by:
 
-1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage.
+1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
 
 2. CVE-2018-3639, also known as [Speculative Store Bypass (SSB)](https://aka.ms/sescsrdssb). This hardware vulnerability class is related to side channels that can arise due to speculative execution of a load ahead of a dependent store as a result of a memory access misprediction.
 
@@ -74,7 +74,7 @@ Applications that have attack surface exposed to any of the above trust boundari
 
 ## Potentially vulnerable coding patterns
 
-Speculative execution side channel vulnerabilities can arise as a consequence of multiple coding patterns. This section describes potentially vulnerable coding patterns and provides examples for each, but it should be recognized that variations on these themes may exist. As such, developers are advised to take these patterns as examples and not as an exhaustive list of all potentially vulnerable coding patterns.
+Speculative execution side channel vulnerabilities can arise as a consequence of multiple coding patterns. This section describes potentially vulnerable coding patterns and provides examples for each, but it should be recognized that variations on these themes may exist. As such, developers are advised to take these patterns as examples and not as an exhaustive list of all potentially vulnerable coding patterns. The same classes of memory safety vulnerabilities that can exist in software today may also exist along speculative and out-of-order paths of execution, including but not limited to buffer overruns, out-of-bounds array accesses, uninitialized memory use, type confusion, and so on. The same primitives that attackers can use to exploit memory safety vulnerabilities along architectural paths may also apply to speculative paths.
 
 In general, speculative execution side channels related to conditional branch misprediction can arise when a conditional expression operates on data that can be controlled or influenced by a less-trusted context. For example, this can include conditional expressions used in `if`, `for`, `while`, `switch`, or ternary statements. For each of these statements, the compiler may generate a conditional branch that the CPU may then predict the branch target for at runtime.
 
@@ -110,7 +110,7 @@ unsigned char *shared_buffer;
 unsigned char ReadBytes(unsigned char *buffer, unsigned int buffer_size) {
     for (unsigned int x = 0; x < buffer_size; x++) {
         // SPECULATION BARRIER
-        unsigned char value = buffer[untrusted_index];
+        unsigned char value = buffer[x];
         return shared_buffer[value * 4096];
     }
 }
@@ -138,6 +138,38 @@ void DispatchMessage(unsigned int untrusted_message_id, unsigned char *buffer, u
 ```
 
 As with the case of an array out-of-bounds load feeding another load, this condition may also arise in conjunction with a loop that exceeds its terminating condition due to a misprediction.
+
+### Array out-of-bounds store feeding an indirect branch
+
+While the previous example showed how a speculative out-of-bounds load can influence an indirect branch target, it is also possible for an out-of-bounds store to modify an indirect branch target, such as a function pointer or a return address. This can potentially lead to speculative execution from an attacker-specified address.
+
+In this example, an untrusted index is passed through the `untrusted_index` parameter. If `untrusted_index` is less than the element count of the `pointers` array (256 elements), then the provided pointer value in `ptr` is written to the `pointers` array. This code is safe architecturally, but if the CPU mispredicts the conditional branch, it could result in `ptr` being speculatively written beyond the bounds of the stack-allocated `pointers` array. This could lead to speculative corruption of the return address for `WriteSlot`. If an attacker can control the value of `ptr`, they may be able to cause speculative execution from an arbitrary address when `WriteSlot` returns along the speculative path.
+
+```cpp
+unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
+    void *pointers[256];
+    if (untrusted_index < 256) {
+        // SPECULATION BARRIER
+        pointers[untrusted_index] = ptr;
+    }
+}
+```
+
+Similarly, if a function pointer local variable named `func` were allocated on the stack, then it may be possible to speculatively modify the address that `func` refers to when the conditional branch misprediction occurs. This could result in speculative execution from an arbitrary address when the function pointer is called through.
+
+```cpp
+unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
+    void *pointers[256];
+    void (*func)() = &callback;
+    if (untrusted_index < 256) {
+        // SPECULATION BARRIER
+        pointers[untrusted_index] = ptr;
+    }
+    func();
+}
+```
+
+It should be noted that both of these examples involve speculative modification of stack-allocated indirect branch pointers. It is possible that speculative modification could also occur for global variables, heap-allocated memory, and even read-only memory on some CPUs. For stack-allocated memory, the Visual C++ compiler already takes steps to make it more difficult to speculatively modify stack-allocated indirect branch targets, such as by reordering local variables such that buffers are placed adjacent to a security cookie as part of the [/GS](https://docs.microsoft.com/en-us/cpp/build/reference/gs-buffer-security-check) compiler security feature.
 
 ## Speculative type confusion
 
@@ -296,7 +328,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
 
-## Masking array indices
+### Masking array indices
 
 In cases where a speculative out-of-bounds load may occur, the array index can be strongly bounded on both the architectural and non-architectural path by adding logic to explicitly bound the array index. For example, if an array can be allocated to a size that is aligned to a power of two, then a simple mask can be introduced. This is illustrated in the sample below where it is assumed that `buffer_size` is aligned to a power of two. This ensures that `untrusted_index` is always less than `buffer_size`, even if a conditional branch misprediction occurs and `untrusted_index` was passed in with a value greater than or equal to `buffer_size`.
 
@@ -315,11 +347,12 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-## Removing sensitive information from memory
+### Removing sensitive information from memory
 
 Another technique that can be used to mitigate speculative execution side channel vulnerabilities is to remove sensitive information from memory. Software developers can look for opportunities to refactor their application such that sensitive information is not accessible during speculative execution. This can be accomplished by refactoring the design of an application to isolate sensitive information into separate processes. For example, a web browser application can attempt to isolate the data associated with each web origin into separate processes, thus preventing one process from being able to access cross-origin data through speculative execution.
 
 ## See Also
 
 [Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)
+
 [Mitigating speculative execution side channel hardware vulnerabilities](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)
