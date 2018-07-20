@@ -53,7 +53,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
  Class `TAccessor` manages the accessor. Class *TRowset* manages the rowset.  
 
 ## <a name="bind"></a> CAccessorRowset::Bind
-Creates the bindings if you specified `bBind` as false in [CCommand::Open](../../data/oledb/ccommand-open.md).  
+Creates the bindings if you specified `bBind` as **false** in [CCommand::Open](../../data/oledb/ccommand-open.md).  
   
 ### Syntax  
   
