@@ -616,6 +616,51 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cdatasource-close.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-getinitializationstring.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#getinitializationstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-getproperty.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#getproperty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-open.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openfromfilename.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openfromfilename",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openfrominitializationstring.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openfrominitializationstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openwithpromptfilename.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openwithpromptfilename",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openwithservicecomponents.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openwithservicecomponents",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
