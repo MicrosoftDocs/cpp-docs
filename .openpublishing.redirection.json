@@ -441,6 +441,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cbookmark-cbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#cbookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-getbuffer.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#getbuffer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-getsize.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#getsize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-setbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#setbookmark",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
