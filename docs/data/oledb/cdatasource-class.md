@@ -39,7 +39,7 @@ class CDataSource
 |||  
 |-|-|  
 |[Close](#close)|Closes the connection.|  
-|[GetInitializationString](#getintitializationstring)|Retrieves the initialization string of the data source that is currently open.|  
+|[GetInitializationString](#getinitializationstring)|Retrieves the initialization string of the data source that is currently open.|  
 |[GetProperties](#getproperties)|Gets the values of properties currently set for the connected data source.|  
 |[GetProperty](#getproperty)|Gets the value of a single property currently set for the connected data source.|  
 |[Open](#open)|Creates a connection to a provider (data source) using either a `CLSID`, `ProgID`, or a `CEnumerator` moniker provided by the caller.|  
@@ -81,7 +81,7 @@ HRESULT GetInitializationString(BSTR* pInitializationString, 
  [in] **true** if string includes a password; otherwise **false**.  
   
 ### Return Value  
- A standard `HRESULT`.  
+ A standard HRESULT.  
   
 ### Remarks  
  The resulting initialization string can be used to later reopen this data source connection. 
@@ -102,7 +102,7 @@ HRESULT GetProperties(ULONG ulPropIDSets, 
  See [IDBProperties::GetProperties](https://msdn.microsoft.com/library/ms714344.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ### Return Value  
- A standard `HRESULT`.  
+ A standard HRESULT.  
   
 ### Remarks  
  To get a single property, use [GetProperty](../../data/oledb/cdatasource-getproperty.md).
