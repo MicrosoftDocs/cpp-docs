@@ -516,6 +516,56 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/ccommand-close.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-create.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-createcommand.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#createcommand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-getnextresult.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#getnextresult",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-getparameterinfo.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#getparameterinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-open.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-prepare.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#prepare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-releasecommand.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#releasecommand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-setparameterinfo.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#setparameterinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-unprepare.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#unprepare",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
