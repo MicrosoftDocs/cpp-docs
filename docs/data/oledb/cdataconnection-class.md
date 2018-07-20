@@ -147,7 +147,7 @@ operator BOOL() throw();
 ```  
   
 ### Remarks  
- Returns **bool** (MFC typedef) value. **true** means the current session is open; **false** means the current session is closed. 
+ Returns **BOOL** (MFC typedef) value. **TRUE** means the current session is open; **FALSE** means the current session is closed. 
 
 ## <a name="op_bool_ole"></a> CDataConnection::operator bool (OLE DB)
 Determines whether the current session is open or not.  
