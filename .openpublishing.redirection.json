@@ -466,6 +466,56 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cbulkrowset-addrefrows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#addrefrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-cbulkrowset.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#cbulkrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movefirst.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movefirst",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movelast.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movelast",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movenext.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movenext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-moveprev.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#moveprev",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movetobookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movetobookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movetoratio.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movetoratio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-releaserows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#releaserows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-setrows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#setrows",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
