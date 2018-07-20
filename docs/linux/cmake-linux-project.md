@@ -1,7 +1,8 @@
 ---
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
+description: "How to configure a Linux CMake project in Visual Studio"
 ms.custom: ""
-ms.date: "04/28/2018"
+ms.date: "07/20/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]

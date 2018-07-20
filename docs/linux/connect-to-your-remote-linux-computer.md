@@ -1,7 +1,8 @@
 ---
-title: "Connect to your remote Linux computer | Microsoft Docs"
+title: "Connect to your remote Linux computer  in Visual Studio | Microsoft Docs"
+description: "How to connect to a remote Linux machine from inside a Visual Studio C++ project."
 ms.custom: ""
-ms.date: "11/06/2017"
+ms.date: "07/20/2018"
 ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
@@ -13,7 +14,7 @@ ms.workload: ["cplusplus", "linux"]
 
 # Connect to Your remote Linux computer
 
-When building, Linux code is copied to your remote Linux computer and then compiled on that system according to the settings chosen in Visual Studio.  To setup this remote connection:
+When building a C++ Linux project in Visuaql Studio, Linux code is copied to your remote Linux computer and then compiled based on settings in Visual Studio. To setup this remote connection:
 
 1. Build the project for the first time or manually create a new entry by selecting **Tools > Options** and then open the **Cross Platform > Connection Manager** node and click the **Add** button.
 
