@@ -249,7 +249,7 @@ A pointer to the first character in a range that does match a specified mask. If
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, * `ptr`) is true.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is true.
 
 ### Example
 
@@ -283,7 +283,7 @@ A pointer to the first character in a range that doesn't match a specified mask.
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, * `ptr`) is false.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is false.
 
 ### Example
 

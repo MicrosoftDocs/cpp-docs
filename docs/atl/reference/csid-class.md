@@ -443,7 +443,7 @@ bool operator>=(
 ### Return Value  
  TRUE if *lhs* is greater than or equal to *rhs*, otherwise FALSE.  
   
-##  <a name="operator_const_sid__star"></a>  CSid::operator const SID *  
+##  <a name="operator_const_sid__star"></a>  CSid::operator const SID \*  
  Casts a `CSid` object to a pointer to a `SID` (security identifier) structure.  
   
 ```  

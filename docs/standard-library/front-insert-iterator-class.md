@@ -49,9 +49,9 @@ The container must satisfy the requirements for a front insertion sequence where
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a front insertion.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x` for a front insertion.|
 |[operator++](#op_add_add)|Increments the `front_insert_iterator` to the next location into which a value may be stored.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a front insertion.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for a front insertion.|
 
 ## Requirements
 
@@ -164,7 +164,7 @@ After the front insertions, the list L is:
 *\
 ```
 
-## <a name="op_star"></a>  front_insert_iterator::operator*
+## <a name="op_star"></a>  front_insert_iterator::operator\*
 
 Dereferences the insert iterator returning the element it addresses.
 

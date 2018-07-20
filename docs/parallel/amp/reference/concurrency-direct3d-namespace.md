@@ -52,7 +52,7 @@ namespace direct3d;
 |[imax](concurrency-direct3d-namespace-functions-amp.md#imax)|Compares two values, returning the value which is greater.|  
 |[imin](concurrency-direct3d-namespace-functions-amp.md#imin)|Compares two values, returning the value which is smaller.|  
 |[is_timeout_disabled](concurrency-direct3d-namespace-functions-amp.md#is_timeout_disabled)|Returns a boolean flag indicating if timeout is disabled for the specified accelerator_view.|  
-|[mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Overloaded. Performs an arithmetic multiply/add operation on three arguments: _X * _Y + _Z|  
+|[mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Overloaded. Performs an arithmetic multiply/add operation on three arguments: _X \* _Y + _Z|  
 |[make_array](concurrency-direct3d-namespace-functions-amp.md#make_array)|Create an array from a D3D buffer interface pointer.|  
 |[noise](concurrency-direct3d-namespace-functions-amp.md#noise)|Generates a random value by using the Perlin noise algorithm|  
 |[radians](concurrency-direct3d-namespace-functions-amp.md#radians)|Converts _X from degrees to radians|  
