@@ -1,5 +1,5 @@
 ---
-title: "#using Directive (C++/CLR) | Microsoft Docs"
+title: "#using Directive (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
@@ -12,7 +12,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# #using Directive (C++/CLR)
+# #using Directive (C++/CLI)
 Imports metadata into a program compiled with [/clr](../build/reference/clr-common-language-runtime-compilation.md).  
   
 ## Syntax  
