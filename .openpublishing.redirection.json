@@ -691,6 +691,46 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cdbpropidset-addpropertyid.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#addpropertyid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-cdbpropidset.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#cdbpropidset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#op_equal",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-setguid.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#setguid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-addproperty.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#addproperty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-cdbpropset.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#cdbpropset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#op_equal",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-setguid.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#setguid",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
