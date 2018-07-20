@@ -43,11 +43,11 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
   
 |||  
 |-|-|  
-|[Bind](../../data/oledb/caccessorrowset-bind.md)|Creates bindings (used when `bBind` is specified as **false** in [CCommand::Open](../../data/oledb/ccommand-open.md)).|  
-|[CAccessorRowset](../../data/oledb/caccessorrowset-caccessorrowset.md)|Constructor.|  
-|[Close](../../data/oledb/caccessorrowset-close.md)|Closes the rowset and any accessors.|  
-|[FreeRecordMemory](../../data/oledb/caccessorrowset-freerecordmemory.md)|Frees any columns in the current record that need to be freed.|  
-|[GetColumnInfo](../../data/oledb/caccessorrowset-getcolumninfo.md)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx).|  
+|[Bind](#bind)|Creates bindings (used when `bBind` is specified as **false** in [CCommand::Open](../../data/oledb/ccommand-open.md)).|  
+|[CAccessorRowset](#caccessorrowset)|Constructor.|  
+|[Close](#close)|Closes the rowset and any accessors.|  
+|[FreeRecordMemory](#freerecordmemory)|Frees any columns in the current record that need to be freed.|  
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx).|  
   
 ## Remarks  
  Class `TAccessor` manages the accessor. Class *TRowset* manages the rowset.  
