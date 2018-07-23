@@ -387,7 +387,7 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
   
 #### Parameters  
  *ctype*  
- [in] A templated parameter that handles any data type except string types (**CHAR\***, **WCHAR\***), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
+ [in] A templated parameter that handles any data type except string types (`CHAR*`, `WCHAR*`), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
   
  *nColumn*  
  [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
@@ -399,7 +399,7 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
  [out] The pointer to the contents of the specified column.  
   
 ### Return Value  
- If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **void\***, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
+ If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
   
  For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.  
   
@@ -532,7 +532,7 @@ bool SetValue(
   
 #### Parameters  
  *ctype*  
- [in] A templated parameter that handles any data type except string types (**CHAR\***, **WCHAR\***), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
+ [in] A templated parameter that handles any data type except string types (`CHAR*`, `WCHAR*`), which require special handling. `GetValue` uses the appropriate data type based on what you specify here.  
   
  *pColumnName*  
  [in] A pointer to a character string containing the column name.  
@@ -544,7 +544,7 @@ bool SetValue(
  [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
 ### Return Value  
- If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **void\***, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
+ If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.  
   
  For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.  
 
