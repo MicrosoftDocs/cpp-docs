@@ -830,7 +830,6 @@
             "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#setvalue",
             "redirect_document_id": false
         },
-        },
         {
             "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamio.md",
             "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamio",
