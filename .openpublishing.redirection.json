@@ -731,6 +731,106 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cdynamicaccessor-addbindentry.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#addbindentry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-cdynamicaccessor.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#cdynamicaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-close.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getblobhandling.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getblobhandling",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getblobsizelimit.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getblobsizelimit",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getbookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getcolumncount.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getcolumncount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getcolumnflags.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getcolumnflags",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getcolumnname.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getcolumnname",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getcolumntype.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getcolumntype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getlength.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getlength",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getordinal.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getordinal",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getstatus.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-getvalue.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#getvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-setblobhandling.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#setblobhandling",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-setblobsizelimit.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#setblobsizelimit",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-setlength.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#setlength",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-setstatus.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#setstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdynamicaccessor-setvalue.md",
+            "redirect_url": "/cpp/data/oledb/cdynamicaccessor-class#setvalue",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
