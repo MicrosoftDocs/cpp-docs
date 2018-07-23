@@ -906,6 +906,71 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cenumerator-find.md",
+            "redirect_url": "/cpp/data/oledb/cenumerator-class#find",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumerator-getmoniker.md",
+            "redirect_url": "/cpp/data/oledb/cenumerator-class#getmoniker",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumerator-open.md",
+            "redirect_url": "/cpp/data/oledb/cenumerator-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumeratoraccessor-m-bisparent.md",
+            "redirect_url": "/cpp/data/oledb/cenumeratoraccessor-class#bisparent",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumeratoraccessor-m-ntype.md",
+            "redirect_url": "/cpp/data/oledb/cenumeratoraccessor-class#ntype",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumeratoraccessor-m-szdescription.md",
+            "redirect_url": "/cpp/data/oledb/cenumeratoraccessor-class#szdescription",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumeratoraccessor-m-szname.md",
+            "redirect_url": "/cpp/data/oledb/cenumeratoraccessor-class#szname",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumeratoraccessor-m-szparsename.md",
+            "redirect_url": "/cpp/data/oledb/cenumeratoraccessor-class#szparsename",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-addbindentry.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#addbindentry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-addparameterentry.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#addparameterentry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-createaccessor.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#createaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-createparameteraccessor.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#createparameteraccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crestrictions-open.md",
+            "redirect_url": "/cpp/data/oledb/crestrictions-class#open",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
