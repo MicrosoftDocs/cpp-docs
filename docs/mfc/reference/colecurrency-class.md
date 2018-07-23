@@ -323,7 +323,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]  
   
-##  <a name="operator_star"></a>  COleCurrency::operator * and /  
+##  <a name="operator_star"></a>  COleCurrency::operator \* and /  
  Allow you to scale a `COleCurrency` value by an integral value.  
   
 ```  
@@ -343,7 +343,7 @@ COleCurrency operator/(long nOperand) const;
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
-##  <a name="operator_star_div_eq"></a>  COleCurrency::operator *=, /=  
+##  <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, /=  
  Allow you to scale this `COleCurrency` value by an integral value.  
   
 ```  

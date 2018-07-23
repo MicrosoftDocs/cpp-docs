@@ -421,6 +421,316 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/carrayrowset-carrayrowset.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#carrayrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-m-nrowsread.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#nrowsread",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-operator.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/carrayrowset-snapshot.md",
+            "redirect_url": "/cpp/data/oledb/carrayrowset-class#snapshot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-cbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#cbookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-getbuffer.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#getbuffer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-getsize.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#getsize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbookmark-setbookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbookmark-class#setbookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-addrefrows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#addrefrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-cbulkrowset.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#cbulkrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movefirst.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movefirst",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movelast.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movelast",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movenext.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movenext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-moveprev.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#moveprev",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movetobookmark.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movetobookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-movetoratio.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#movetoratio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-releaserows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#releaserows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cbulkrowset-setrows.md",
+            "redirect_url": "/cpp/data/oledb/cbulkrowset-class#setrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-close.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-create.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-createcommand.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#createcommand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-getnextresult.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#getnextresult",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-getparameterinfo.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#getparameterinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-open.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-prepare.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#prepare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-releasecommand.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#releasecommand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-setparameterinfo.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#setparameterinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ccommand-unprepare.md",
+            "redirect_url": "/cpp/data/oledb/ccommand-class#unprepare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-cdataconnection.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#cdataconnection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-copy.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#copy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-open.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-opennewsession.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#opennewsession",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-bool.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_bool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-bool-ole-db.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_bool_ole",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-cdatasource-amp.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_cdata_amp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-cdatasource-star.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_cdata_star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-csession-amp.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_csession_amp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdataconnection-operator-csession-star.md",
+            "redirect_url": "/cpp/data/oledb/cdataconnection-class#op_csession_star",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-close.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-getinitializationstring.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#getinitializationstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-getproperty.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#getproperty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-open.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openfromfilename.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openfromfilename",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openfrominitializationstring.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openfrominitializationstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openwithpromptfilename.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openwithpromptfilename",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdatasource-openwithservicecomponents.md",
+            "redirect_url": "/cpp/data/oledb/cdatasource-class#openwithservicecomponents",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-getallerrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#getallerrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-getbasicerrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#getbasicerrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-getcustomerrorobject.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#getcustomerrorobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-geterrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#geterrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-geterrorparameters.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#geterrorparameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdberrorinfo-geterrorrecords.md",
+            "redirect_url": "/cpp/data/oledb/cdberrorinfo-class#geterrorrecords",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-addpropertyid.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#addpropertyid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-cdbpropidset.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#cdbpropidset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#op_equal",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropidset-setguid.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropidset-class#setguid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-addproperty.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#addproperty",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-cdbpropset.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#cdbpropset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-operator-equal.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#op_equal",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cdbpropset-setguid.md",
+            "redirect_url": "/cpp/data/oledb/cdbpropset-class#setguid",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false

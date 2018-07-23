@@ -1,7 +1,8 @@
 ---
 title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
+description: "How to configure a Linux CMake project in Visual Studio"
 ms.custom: ""
-ms.date: "04/28/2018"
+ms.date: "07/20/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -16,7 +17,7 @@ ms.workload: ["cplusplus", "linux"]
 # Configure a Linux CMake project
 
 **Visual Studio 2017 version 15.4 and later**  
-When you install the Linux C++ workload, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
+When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
 
 This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 

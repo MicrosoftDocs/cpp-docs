@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # How to: Convert Between Various String Types
 This topic demonstrates how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.  
   
-## Converting from char *  
+## Converting from char \*  
   
 ## Example  
   
@@ -116,7 +116,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)  
 ```  
   
-## Converting from wchar_t *  
+## Converting from wchar_t \*  
   
 ## Example  
   

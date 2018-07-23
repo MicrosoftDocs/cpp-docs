@@ -31,7 +31,7 @@ typeid(expression)
   
 -   A reference to a class  
   
--   A pointer, dereferenced with *  
+-   A pointer, dereferenced with \*  
   
 -   A subscripted pointer (i.e. [ ]). (Note that it is generally not safe to use a subscript with a pointer to a polymorphic type.)  
   

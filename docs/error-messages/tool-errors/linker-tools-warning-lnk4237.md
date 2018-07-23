@@ -23,6 +23,6 @@ ms.workload: ["cplusplus"]
   
 -   user32.dll  
   
--   one of the msvcrt* dlls.  
+-   one of the msvcrt\* dlls.  
   
  Resolve this warning by not specifying **/SUBSYSTEM:NATIVE**.

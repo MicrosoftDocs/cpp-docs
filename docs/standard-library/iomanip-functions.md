@@ -122,7 +122,7 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 ### Parameters
 
 *str*
- A std::string, char*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
+ A std::string, char\*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
 
 *delimiter*
  A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.

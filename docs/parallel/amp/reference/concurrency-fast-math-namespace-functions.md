@@ -565,7 +565,7 @@ inline float ldexp(
  Integer exponent  
   
 ### Return Value  
- Returns _X * 2^_Exp  
+ Returns _X \* 2^_Exp  
   
 ##  <a name="ldexpf"></a>  ldexpf  
  Computes a real number from the mantissa and exponent  
@@ -584,7 +584,7 @@ inline float ldexpf(
  Integer exponent  
   
 ### Return Value  
- Returns _X * 2^_Exp  
+ Returns _X \* 2^_Exp  
   
 ##  <a name="log"></a>  log  
  Calculates the base-e logarithm of the argument  

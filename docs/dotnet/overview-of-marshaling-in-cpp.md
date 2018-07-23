@@ -33,12 +33,12 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\Preview\\Enterprise\\VC\\Tools
   
 |From type|To type|Marshal method|Include file|  
 |---------------|-------------|--------------------|------------------|  
-|System::String^|const char *|marshal_context|marshal.h|  
-|const char *|System::String^|marshal_as|marshal.h|  
-|char *|System::String^|marshal_as|marshal.h|  
-|System::String^|const wchar_t*|marshal_context|marshal.h|  
-|const wchar_t *|System::String^|marshal_as|marshal.h|  
-|wchar_t *|System::String^|marshal_as|marshal.h|  
+|System::String^|const char \*|marshal_context|marshal.h|  
+|const char \*|System::String^|marshal_as|marshal.h|  
+|char \*|System::String^|marshal_as|marshal.h|  
+|System::String^|const wchar_t\*|marshal_context|marshal.h|  
+|const wchar_t \*|System::String^|marshal_as|marshal.h|  
+|wchar_t \*|System::String^|marshal_as|marshal.h|  
 |System::IntPtr|HANDLE|marshal_as|marshal_windows.h|  
 |HANDLE|System::IntPtr|marshal_as|marshal_windows.h|  
 |System::String^|BSTR|marshal_context|marshal_windows.h|  

@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# ComPtrRef::operator void** Operator
+# ComPtrRef::operator void\*\* Operator
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
