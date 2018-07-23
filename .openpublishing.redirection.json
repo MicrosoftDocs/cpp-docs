@@ -946,6 +946,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cmanualaccessor-addbindentry.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#addbindentry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-addparameterentry.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#addparameterentry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-createaccessor.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#createaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cmanualaccessor-createparameteraccessor.md",
+            "redirect_url": "/cpp/data/oledb/cmanualaccessor-class#createparameteraccessor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
